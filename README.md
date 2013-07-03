@@ -1,4 +1,4 @@
-responsive_2012
+Reece Responsive
 ===============
 
 Reece Responsive

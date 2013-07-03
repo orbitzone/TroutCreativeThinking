@@ -1,0 +1,33 @@
+// //Set up guarded mixins
+// .setHeight(@h) when (ispercentage(@h)) { 
+//    @height: 1024px;
+// }
+
+// .setHeight(@h) when not (ispercentage(@h)) { 
+//    @height: @h;
+// }
+
+// //set up main height
+// @mainHeight: 50%;
+// body { height: @mainHeight;}
+
+// //call it by itself to make global
+// //.setHeight(@mainHeight); <-this failed (appears to be a bug)
+// .setHeight(50%); // <-this worked
+
+// .subsection { height: @height; /* just to show it is setting it */}
+
+// //use it for other globals
+// @textAreaHeight: 0.5 * @height;
+// @buttonHeight: 0.2 * @height;
+
+// textarea { height: @textAreaHeight}
+// button { height: @buttonHeight}
+
+// //override it locally
+// body.fixedHeight {
+//     .setHeight(300px);
+//     @textAreaHeight: 0.333 * @height;
+//     height: @height;
+//     textarea { height: @textAreaHeight}
+// }

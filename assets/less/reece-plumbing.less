@@ -1,0 +1,376 @@
+// Core variables and mixins
+@import "variables.less"; // Modify this for custom colors, font-sizes, etc
+@import "mixins.less";
+@import "reece-ocnav.less";
+
+@plumbingPrimary:                 #0D2E56;
+@plumbingPrimaryHighlight:        darken(@plumbingPrimary,10%);
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1; 
+}
+.bottom-space {
+    margin-bottom: @baseLineHeight;
+}
+.top-space {
+    margin-top: @baseLineHeight;
+}
+
+body.grey-bg {
+    background-color: #454545;
+}
+body.grey-bg .content-container {
+    color: @white;
+}
+
+.main-header {
+    background-color: @plumbingPrimary;
+    #gradient > .vertical(@plumbingPrimary,  @plumbingPrimaryHighlight);
+    color: #FFF;
+    position: relative;
+    padding: 60px 0 @baseLineHeight;
+}
+.main-header .header-container, 
+.main-footer .footer-container,
+.masonry-container,
+.content-container
+{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.main-header .title-wrapper,
+.content-container .inner-wrapper
+{
+    margin: 0 20px;
+}
+.main-header h1 {
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.35);
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
+    width: 70%;
+}
+.main-header h1 img {
+    width: 100%;
+    height: auto;
+}
+.main-header .top-highlight {
+    position: absolute;
+    top: 42px;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid lighten(@plumbingPrimary, 20%);
+}
+.sub-header {
+    margin: 20px 0;
+}
+.navbar-fixed-top .brand {
+    margin-left: 0;
+}
+
+
+/*
+----------------------------------------------
+FOOTER
+----------------------------------------------
+*/
+
+.main-footer {
+    margin: 20px 0 0;
+    min-height: 80px;
+    padding: 20px 0;
+    background: #FFF;
+}
+.main-footer .nav {
+    margin: 0 20px 5px;
+}
+.main-footer .nav li {
+    display: inline-block;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.main-footer .nav li a {
+    padding: 0 7px;
+    border-right: 1px solid #CCC;
+    color: @gray;
+    font-size: @fontSizeSmall;
+}
+.main-footer .nav-social {
+    clear: both;
+    min-height: 22px;
+}
+.main-footer .nav-social li a {
+    padding: 0 0 0 7px;
+    line-height: 1;
+    font-size: @fontSizeLarge;
+    border-right: none !important;
+}
+.main-footer .nav-social li a,
+.main-footer .nav li a.no-border,
+.main-footer .nav li:last-child a 
+{
+    border-right: none !important;
+}
+.main-footer .nav li a:hover {
+    background: none;
+}
+.main-footer .footer-right .nav {
+    float: right;
+}
+.main-footer .icon-facebook-sign {
+    color: #3B5998;
+    width: auto !important;
+}
+.main-footer .icon-twitter-sign {
+    color: #42c8f4;
+    width: auto !important;
+}
+
+/*
+----------------------------------------------
+STACKED SUBNAV
+----------------------------------------------
+*/
+.nav-pills-span4 {
+    margin-bottom: 20px;
+}
+.nav-pills-span4 li {
+    display: inline-block;
+    float: left;
+    width: 30%;
+    margin-right: 2.5%;
+    margin-top: -1px;
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+}
+.nav-pills-span4 li a {
+    padding: 5px 0;
+    overflow: hidden;
+    display: block;
+    white-space: nowrap;
+}
+.main-header ul.nav li {
+    border-top-color: lighten(@plumbingPrimary, 20%);
+    border-bottom-color: lighten(@plumbingPrimary, 20%);
+}
+.main-header ul.nav li a {
+    color: lighten(@plumbingPrimary, 40%);
+}
+.no-touch .main-header ul.nav li a:hover,
+.main-header ul.nav li.active a
+{
+    color: #FFF;
+    background: none;
+}
+
+
+
+/*
+----------------------------------------------
+COMMON SECTION ELEMENTS
+----------------------------------------------
+*/
+
+body.light-bg,
+body.light-bg .ocmain-wrapper
+{
+    background: #eaeaea; /* Old browsers */
+    background: -moz-linear-gradient(top,  #eaeaea 50%, #cccccc 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#eaeaea), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #eaeaea 50%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #eaeaea 50%,#cccccc 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #eaeaea 50%,#cccccc 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #eaeaea 50%,#cccccc 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+    background-repeat: repeat-x;
+}
+
+.main-item {
+    background: @white;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.35);
+}
+.main-item .inner-wrapper {
+    margin: 0;
+    padding: 20px;
+}
+
+.feature-panel {
+    background: #bbb;
+    padding: 20px;
+}
+.feature-panel .thumbnail {
+    border-color: transparent;
+}
+
+
+/*
+----------------------------------------------
+CAROUSEL OVERRIDES
+----------------------------------------------
+*/
+
+.carousel2 /* Carousel 2 - Trends */
+{
+    .item {
+    .transition(.7s ease-in-out opacity);
+    left: 0 !important;
+}
+.next.left, .prev.right {
+    opacity: 1;
+    z-index: 1;
+}
+.active.left, .active.right {
+    opacity: 0;
+    z-index: 2;
+}
+}
+
+/*
+----------------------------------------------
+SOCIAL MEDIA
+----------------------------------------------
+*/
+
+.fb-comments, 
+.fb-comments iframe[style], 
+.fb-comments span 
+{
+    width: 100% !important;
+}
+
+
+/*
+----------------------------------------------
+RESPONSIVE OVERRIDES
+----------------------------------------------
+*/
+@media (min-width: 1200px) { }
+@media (max-width: 1199px) {
+    .main-header ul.nav li a {
+	font-size: 12px;
+    }   
+}
+@media (max-width: 979px) {
+    .navbar-fixed-top {
+	margin: 0;
+    }
+    .main-header {
+	padding-top: 10px;
+    }
+    .main-header .top-highlight {
+	top: 1px;
+    }
+    .content-container {
+	min-height: 600px;
+    }
+    .ocmain-wrapper {
+	position: absolute;
+	top: 0;
+    }
+    .ocmain-wrapper {
+	background-color: #fff;
+    }
+    .grey-bg .ocmain-wrapper {
+	background-color: #454545;
+    }
+    .ocnav-wrapper .nav li > .nav li a i {
+	color: @plumbingPrimary;
+    }
+    .ocnav-wrapper .nav li > .nav li.active a {
+	.buttonBackground( @plumbingPrimaryHighlight,  @plumbingPrimary);
+	border: 1px solid @plumbingPrimary;
+    }
+    .ocnav-wrapper .nav li > .nav li.active a i {
+	color: #FFF;
+    }
+}
+@media (max-width: 767px) {
+    body {
+	padding: 0;
+    }
+    .main-header h1 {
+	width: auto;
+	max-width: 510px;
+    }
+    .main-footer .footer-right .nav {
+	float: none;
+    }
+
+    .row-fluid .phone-column[class*="span"] {
+	float: left;
+	margin-left: @fluidGridGutterWidth;
+        *margin-left: @fluidGridGutterWidth - (.5 / @gridRowWidth * 100 * 1%);
+    }
+    .row-fluid .phone-column[class*="span"]:first-child {
+	margin-left: 0;
+	*margin-left: 0;
+    }
+    .row-fluid .phone-column.span1 {
+	width: (@fluidGridColumnWidth * 1) + (@fluidGridGutterWidth * (1 - 1));
+	*width: (@fluidGridColumnWidth * 1) + (@fluidGridGutterWidth * (1 - 1)) - (.5 / @gridRowWidth * 100 * 1%);
+    }
+    .row-fluid .phone-column.span2 {
+	width: (@fluidGridColumnWidth * 2) + (@fluidGridGutterWidth * (2 - 1));
+	*width: (@fluidGridColumnWidth * 2) + (@fluidGridGutterWidth * (2 - 1)) - (.5 / @gridRowWidth * 100 * 1%);
+    }
+    .row-fluid .phone-column.span3 {
+	width: (@fluidGridColumnWidth * 3) + (@fluidGridGutterWidth * (3 - 1));
+	*width: (@fluidGridColumnWidth * 3) + (@fluidGridGutterWidth * (3 - 1)) - (.5 / @gridRowWidth * 100 * 1%);
+    }
+    .row-fluid .phone-column.span4 {
+	width: (@fluidGridColumnWidth * 4) + (@fluidGridGutterWidth * (4 - 1));
+	*width: (@fluidGridColumnWidth * 4) + (@fluidGridGutterWidth * (4 - 1)) - (.5 / @gridRowWidth * 100 * 1%);
+    }
+    .row-fluid .phone-column.span5 {
+	width: (@fluidGridColumnWidth * 5) + (@fluidGridGutterWidth * (5 - 1));
+	*width: (@fluidGridColumnWidth * 5) + (@fluidGridGutterWidth * (5 - 1)) - (.5 / @gridRowWidth * 100 * 1%);
+    }
+    .row-fluid .phone-column.span6 {
+	width: (@fluidGridColumnWidth * 6) + (@fluidGridGutterWidth * (6 - 1));
+	*width: (@fluidGridColumnWidth * 6) + (@fluidGridGutterWidth * (6 - 1)) - (.5 / @gridRowWidth * 100 * 1%);
+    }
+    .row-fluid .phone-column.span7 {
+	width: (@fluidGridColumnWidth * 7) + (@fluidGridGutterWidth * (7 - 1));
+	*width: (@fluidGridColumnWidth * 7) + (@fluidGridGutterWidth * (7 - 1)) - (.5 / @gridRowWidth * 100 * 1%);
+    }
+    .row-fluid .phone-column.span8 {
+	width: (@fluidGridColumnWidth * 8) + (@fluidGridGutterWidth * (8 - 1));
+	*width: (@fluidGridColumnWidth * 8) + (@fluidGridGutterWidth * (8 - 1)) - (.5 / @gridRowWidth * 100 * 1%);
+    }
+    .row-fluid .phone-column.span9 {
+	width: (@fluidGridColumnWidth * 9) + (@fluidGridGutterWidth * (9 - 1));
+	*width: (@fluidGridColumnWidth * 9) + (@fluidGridGutterWidth * (9 - 1)) - (.5 / @gridRowWidth * 100 * 1%);
+    }
+    .row-fluid .phone-column.span10 {
+	width: (@fluidGridColumnWidth * 10) + (@fluidGridGutterWidth * (10 - 1));
+	*width: (@fluidGridColumnWidth * 10) + (@fluidGridGutterWidth * (10 - 1)) - (.5 / @gridRowWidth * 100 * 1%);
+    }
+    .row-fluid .phone-column.span11 {
+	width: (@fluidGridColumnWidth * 11) + (@fluidGridGutterWidth * (11 - 1));
+	*width: (@fluidGridColumnWidth * 11) + (@fluidGridGutterWidth * (11 - 1)) - (.5 / @gridRowWidth * 100 * 1%);
+    }
+    .row-fluid .phone-column.span12 {
+	width: (@fluidGridColumnWidth * 12) + (@fluidGridGutterWidth * (12 - 1));
+	*width: (@fluidGridColumnWidth * 12) + (@fluidGridGutterWidth * (12 - 1)) - (.5 / @gridRowWidth * 100 * 1%);
+    }
+
+    .grey-bg .main-item .inner-wrapper {
+	margin: 0;
+	padding: 0;
+	border: none;
+    }
+}
+@media (max-width: 640px) {
+}
+@media (max-width: 480px) {
+}
+@media (max-width: 320px) {
+
+    /* Footer Fix */
+    .main-footer .nav {
+        height: 25px;
+        clear: left
+    }
+}

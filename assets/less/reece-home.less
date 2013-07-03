@@ -1,0 +1,615 @@
+
+//Bootstrap imports
+@import "bootstrap/mixins.less";
+@import "bootstrap/variables.less";
+
+//Application imports
+@import "reece-variables.less";
+
+// Content Wrapper Module (Define)
+//====================================================================================================================================
+//====================================================================================================================================
+
+.main-header .header-container,
+.main-footer .footer-container,
+.masonry-container,
+.content-container,
+.navbar-container {
+	max-width: 1200px;
+}
+
+.content-container .inner-wrapper {
+	position: relative;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+// Carousel Module
+//====================================================================================================================================
+//====================================================================================================================================
+
+#headCarousel {
+	padding-top: 41px;
+	max-width: 1500px;
+	margin: auto;
+}
+
+.carousel-control {
+	outline: none;
+}
+
+.carousel .item > img {
+	margin: auto;
+}
+
+.carousel-control {
+	top: 50%;
+}
+
+// Title item Module
+//====================================================================================================================================
+//====================================================================================================================================
+
+.tile-item {
+	position: relative;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.35);
+	-webkit-transition: .25s box-shadow ease-in-out;
+	-moz-transition: .25s box-shadow ease-in-out;
+	-o-transition: .25s box-shadow ease-in-out;
+	-ms-transition: .25s box-shadow ease-in-out;
+	transition: .25s box-shadow ease-in-out;
+
+	a.primary-link {
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 100;
+	}	
+}
+
+// Feature Item Module
+//====================================================================================================================================
+//====================================================================================================================================
+
+.feature-item {
+	position: relative;
+	border: 3px solid #fff;
+
+	&.last {
+		margin-right: none !important;
+	}
+
+	.caption {
+		position: absolute;	
+		bottom: -1px; 
+		left: 0;
+		right: 0;
+		background-color: #000;
+		padding: 12px 15px 12px 15px;
+		height: 18px;
+		color: #fff;
+		text-align: center;
+
+		h4 {
+			position: absolute;
+			width: 100%; 
+			bottom: 12px;
+			left: 0;
+			margin: 0;
+			font-size: 16px;
+			text-align: center;
+			color: white;
+		}
+	}
+
+	&:hover .caption {
+		height: 30px;
+		-webkit-transition: height 200ms ease-out;
+		-moz-transition: height 200ms ease-out;
+	    -ms-transition: height 200ms ease-out;
+	    -o-transition: height 200ms ease-out;
+		transition: height 200ms ease-out;		
+	}
+
+	.form-wrapper {
+		position: absolute;
+		z-index: 10;
+		top: 50%;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		height: 120px;
+		margin-top: -60px;
+
+		h4 {
+			color: white;
+		}		
+	}
+
+	.caption.no-border {
+		border: none;
+	}
+
+	.form-wrapper select {
+		margin: 0 auto 10px auto !important;		
+	}
+}
+
+.feature-hvacr .caption {
+	background-color: @brandingHvacr;
+}
+.feature-bathrooms .caption {
+	background-color: @brandingBathrooms;
+}
+.feature-plumbing .caption {
+	background-color: @brandingPlumbing;
+}
+.feature-irrigation .caption {
+	background-color: @brandingIrrigation;
+}
+.feature-onsite .caption {
+	background-color: @brandingOnsite;
+}
+.feature-civil .caption {
+	background-color: @brandingCivil;
+}
+
+// Specialised Item Module (Sub module styles for .featured-item)
+//====================================================================================================================================
+//====================================================================================================================================
+
+.specialised  {
+
+	.bottom-space {
+		margin-bottom: 11px;
+	}
+
+	.feature-item {
+		position: relative;
+		margin-right: 3px;
+	}
+
+	.feature-item.last{
+		margin-left: 3px;
+		margin-right: 0;
+	}	
+}
+
+// Storefinder Module (Sub module styles for .featured-item)
+//====================================================================================================================================
+//====================================================================================================================================
+
+.feature-storefinder .caption {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 65px;
+	bottom: auto;
+	height: auto;
+	padding: 5px 15px;
+	color: white;
+	text-align: center;
+	background-color: transparent;
+
+	&:hover .caption {
+		height: auto;			
+	}
+
+	h4 {
+		font-size: 16px;
+		color: #fff;
+		padding: 0 0 15px 0;
+		margin: 0;		
+	}
+}
+
+
+
+// Home Page Mobile Styles
+//====================================================================================================================================
+//====================================================================================================================================
+//====================================================================================================================================
+
+
+
+// Main Options List Module
+//====================================================================================================================================
+//====================================================================================================================================
+
+.main-options-list {
+	list-style: none; 
+	padding: 0; 
+	margin: 0; 
+
+	li {
+		margin: 0; 
+		position: relative;
+		border-bottom: 1px solid #333333; 
+		width: 50%; 
+		float: left; 
+		background-repeat: no-repeat;
+
+		a {
+			display: block; 
+			position: relative; 
+			padding: 1em 1em 1em 0.5em; 
+			border-left: 5px solid red; 
+			font-size: 1.4em; 
+			font-weight: bold; 
+			color: white; 
+			-webkit-transition: all 0.2s ease-out;
+			-moz-transition: all 0.2s ease-out;
+	        -ms-transition: all 0.2s ease-out;
+	        -o-transition: all 0.2s ease-out;
+			transition: all 0.2s ease-out;		
+
+			&:hover, &:focus, &:active {
+				text-decoration: none; 
+				border-width: 1em;
+			}
+		}	
+
+		span {
+			display: block; 
+			position: absolute; 
+			right: 5px; 
+			margin-top: -10px; 
+			top: 50%; 
+			width: 20px; 
+			height: 20px; 
+			background: url('../images/home-2013/arrow.png') 0 0 no-repeat scroll; 
+			background-size: 100%;
+		}	
+
+		&.account {
+			width: 100%;
+
+			a {
+				border-left: none; border-top: 1px solid #999; text-align: center; padding: 0.3em; color: #fff; font-size: 1.2em;
+				background: #848484;
+				background: -moz-linear-gradient(top,  #848484 0%, #555555 100%);
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#848484), color-stop(100%,#555555));
+				background: -webkit-linear-gradient(top,  #848484 0%,#555555 100%);
+				background: -o-linear-gradient(top,  #848484 0%,#555555 100%);
+				background: -ms-linear-gradient(top,  #848484 0%,#555555 100%);
+				background: linear-gradient(to bottom,  #848484 0%,#555555 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#848484', endColorstr='#555555',GradientType=0);		
+			}
+
+			span {
+				position: static; 
+				margin-top: 0; 
+				margin-right: 10px; 
+				float: none; 
+				display: inline-block; 
+				height: 44px; 
+				width: 44px; 
+				vertical-align: middle; 
+				background-image: url('../images/home-2013/account-icon.png'); 
+				background-color: transparent;
+			}
+		}
+
+		&.cat-block {
+			position: relative; 
+			overflow: hidden;
+
+			a {
+				position: absolute; 
+				width: 100%; 
+				bottom: 0; 
+				padding: 1em 0em 1em 1em;
+				border-left: 0; 
+			}
+
+			span {
+				right: 25px;
+			}
+		}
+
+		&.hvacr.cat-block a { 
+			background-color: @brandingHvacr; 
+			background: fade(@brandingHvacr, 90%);
+		}				
+
+		&.bathrooms.cat-block a { 
+			background-color: @brandingBathrooms; 
+			background: fade(@brandingBathrooms, 90%);			
+		}
+
+		&.plumbing.cat-block a { 
+			background-color: @brandingPlumbing; 
+			background: fade(@brandingPlumbing, 90%);			
+		}		
+
+		&.irrigation.cat-block a { 
+			background-color: @brandingIrrigation; 
+			background: fade(@brandingIrrigation, 90%);			
+		}
+
+		&.onsite.cat-block a { 
+			background-color: @brandingOnsite; 
+			background: fade(@brandingOnsite, 90%);			
+		}
+
+		&.civil.cat-block a { 
+			background-color: @brandingCivil; 
+			background: fade(@brandingCivil, 90%);			
+		}	
+
+		&.find-store {
+			width: 100%; 
+			font-size: 1.4em;
+
+			h2 {
+				display: inline-block; 
+				width: 100%; 
+				margin-top: 0;
+				font-size: 1.0em;
+				color: @white;
+
+				span {
+					float:left; 
+					width:auto; 
+					height: auto; 
+					background: none;
+				}
+			}
+
+			h3 {
+				margin: 0.8em 0 0.5em 0;
+				font-size: 0.8em;
+			}
+
+			h4 {
+				font-size: 0.8em;
+			}
+
+			button {
+				display: block; 
+				margin-bottom: 10px; 
+				font-size: 12px; 
+				border: 0; 
+				padding: 4px 10px; 
+				color: @white; 
+				background: @grayDark; 
+			}
+
+			a span {
+				display: inline-block; 
+				float: none; 
+				margin-bottom: -5px;
+			}
+
+			p {
+				font-size: 0.7em; margin: 0.5em 0;
+			}
+
+			form { 
+				margin-bottom: 30px; 
+			}
+
+			.more-options {
+				padding: 4px 18px;
+			}	
+
+			.use-location {
+				background-color: @brandingBathrooms;
+			}	
+
+			.top {
+				padding: 1em;
+				background: #848484;
+				background-image: url('../images/home-2013/au-map-mini.png');
+				background-image: url('../images/home-2013/au-map-mini.png'), -webkit-gradient(linear, left top, left bottom, from(#848484), to(#555555));
+				background-image: url('../images/home-2013/au-map-mini.png'), -webkit-linear-gradient(top, #848484, #555555);
+				background-image: url('../images/home-2013/au-map-mini.png'),    -moz-linear-gradient(top, #848484, #555555);
+				background-image: url('../images/home-2013/au-map-mini.png'),     -ms-linear-gradient(top, #848484, #555555);
+				background-image: url('../images/home-2013/au-map-mini.png'),      -o-linear-gradient(top, #848484, #555555);
+				background-image: url('../images/home-2013/au-map-mini.png'),         linear-gradient(top, #848484, #555555);
+				background-position: 95% center; 
+				background-repeat: no-repeat; 				
+			}	
+		}
+
+		.more-options-menu {
+			padding: 0 1em; 
+			text-align: center; 
+
+			span {
+				float: none; 
+				position: static; 
+				width: 100%;
+				margin-top: 0;
+			}
+		}
+	}
+}
+
+// Mobile Carousel Module
+//====================================================================================================================================
+//====================================================================================================================================
+
+#mobCarousel {
+	margin-bottom: 0;
+}
+
+
+// Grid Module (Redefine)
+//====================================================================================================================================
+//====================================================================================================================================
+
+#grid > .fluid(7.508333333%, 0.9%);
+
+// Media Queries
+//====================================================================================================================================
+//====================================================================================================================================
+
+@media (min-width: 1200px) {
+	#grid > .fluid(7.508333333%, 0.9%);
+
+	hr { margin: 12px 0; }
+	
+	.bottom-space { margin-bottom: 14px; }
+
+}
+
+@media (max-width:979px) {
+
+	.toolbox .toolbox-button { top: -36px; right: 50px; }
+	.content-container {  min-height: 0; }
+
+	#headCarousel {padding-top: 0;}
+	
+	.feature-item .caption h4 {font-size: 14px;}
+	
+	.specialised .feature-item .caption {height: 12px;}
+	.specialised .feature-item:hover .caption {height: 20px;}
+	.specialised .feature-item .caption h4 {font-size: 12px;}
+	
+
+	.feature-item .form-wrapper {height: 100px; margin-top: -50px;}
+	.feature-storefinder h4 {font-size: 14px;}
+
+	.form-wrapper select, .form-wrapper input {font-size: 11px;}
+	
+	footer {margin-top: 25px;}
+
+}
+
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+   // Fluid grid
+   #grid > .fluid(7.508333333%, 0.9%);
+
+	hr { margin: 4px 0; }
+
+}
+
+
+@media (max-width:768px) {
+
+	.content-container { margin-top: 0; min-height: 0; }
+
+	.bottom-space { margin-bottom: 9px; }
+
+
+	.feature-storefinder .caption {top: 25px;}
+
+}
+
+@media (max-width: 767px)
+{
+
+	// GRID & CONTAINERS
+	// -----------------
+	// Remove width from containers
+	.container {
+		width: auto;
+	}
+	
+	// Fluid rows
+	.row-fluid {
+		width: 100%;
+	}
+	
+	// Undo negative margin on rows and thumbnails
+	.row,
+	.thumbnails {
+		margin-left: 0;
+	}
+	.thumbnails > li {
+		float: none;
+		margin-left: 0; // Reset the default margin for all li elements when no .span* classes are present
+	}
+	
+	// Make all grid-sized elements block level again
+	[class*="span"],
+	.uneditable-input[class*="span"], // Makes uneditable inputs full-width when using grid sizing
+	.row-fluid [class*="span"] {
+		float: none;
+		display: block;
+		width: 100%;
+		margin-left: 0;
+		.box-sizing(border-box);
+	}
+	
+	.span12,
+	.row-fluid .span12 {
+		width: 100%;
+		.box-sizing(border-box);
+	}
+	
+	.row-fluid [class*="offset"]:first-child {
+		margin-left: 0;
+	}
+
+
+	.feature-item .form-wrapper {
+		top: 110px;
+		left: 10px !important;
+	}
+	
+	.sitemap-footer ul, .sitemap-footer h4 {margin-right: 0;}
+	footer {margin-top: 0;}
+	
+	//.sitemap-footer li {float: left; width: 30%; margin-right: 3%; }
+
+	.main-options-list li.bathrooms.cat-block { background-image: url('../images/home-2013/feature-bathrooms-mobile.jpg'); background-size: cover; height: 150px; }
+	.main-options-list li.plumbing.cat-block { background-image: url('../images/home-2013/feature-plumbing.jpg'); background-size: cover; height: 150px; } 
+	.main-options-list li.irrigation.cat-block { background-image: url('../images/home-2013/feature-irrigation-mobile.jpg'); background-size: cover; height: 150px; }
+	.main-options-list li.onsite.cat-block { background-image: url('../images/home-2013/feature-onsite-mobile.jpg'); background-size: cover; height: 150px; }
+	.main-options-list li.civil.cat-block { background-image: url('../images/home-2013/feature-civil-mobile.jpg'); background-size: cover; height: 150px; }
+	.main-options-list li.hvacr.cat-block { background-image: url('../images/home-2013/feature-hvacr-mobile.jpg'); background-size: cover; height: 150px; }	
+
+}
+
+
+@media (max-width: 639px)
+{
+
+	.feature-item, .specialised .feature-item
+	{
+		margin-right: 0 !important;
+		margin-bottom: 10px;
+	}
+
+	.specialised .feature-item .caption
+	{
+		bottom: 23px;
+	}
+
+	.specialised .feature-item .caption h4
+	{
+		font-size: 21px;
+	}
+	.feature-item h4 {
+		color: white;
+	}
+
+}
+
+@media (max-width: 320px)
+{
+	.feature-item i
+	{
+		display: none;
+	}
+
+	#social-footer {
+		li {
+			margin: 0;
+		}
+		a {
+			padding: 2px;
+		}
+	}
+}
+
+@import "reece-ie.less";

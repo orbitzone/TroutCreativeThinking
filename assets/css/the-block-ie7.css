@@ -1,0 +1,10 @@
+.the-block .modal-header { 
+    width: 770px;
+}
+.the-block .fancybox-inner {
+    overflow-x: hidden !important;
+}
+.the-block .carousel-control {
+    line-height: 1;
+    font-size: 30px;
+}

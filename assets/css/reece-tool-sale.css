@@ -1,0 +1,854 @@
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.ocnav-wrapper {
+  display: none;
+  position: fixed;
+  right: 0;
+  width: 250px;
+  padding: 20px 0 20px 30px;
+  top: 0;
+  bottom: 0;
+  overflow: auto;
+  z-index: 999;
+  background: #333333;
+  box-shadow: inset 20px 0 15px -15px rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+}
+.ocmain-wrapper {
+  -webkit-transition: 0.5s left ease-in-out;
+  -moz-transition: 0.5s left ease-in-out;
+  -o-transition: 0.5s left ease-in-out;
+  transition: 0.5s left ease-in-out;
+}
+.ocnav-wrapper {
+  -webkit-transition: 0.5s right ease-in-out;
+  -moz-transition: 0.5s right ease-in-out;
+  -o-transition: 0.5s right ease-in-out;
+  transition: 0.5s right ease-in-out;
+}
+.ocmain-wrapper {
+  width: 100%;
+  position: relative;
+  z-index: 1001;
+  left: 0;
+}
+.ui-loader {
+  display: none;
+}
+@media (max-width: 979px) {
+  .ocnav-wrapper {
+    display: block;
+  }
+  .off-canvas-open .ocnav-wrapper {
+    right: 0;
+  }
+  .off-canvas-open .ocmain-wrapper {
+    left: -280px;
+  }
+  .ocnav-wrapper .nav {
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #4d4d4d;
+  }
+  .ocnav-wrapper .nav li {
+    border-top: 1px solid #4d4d4d;
+    border-bottom: 1px solid #000000;
+  }
+  .ocnav-wrapper .nav li a {
+    color: #ffffff;
+    text-shadow: 0 -1px 1px #000000;
+    padding: 10px 0;
+    font-size: 17.5px;
+  }
+  .ocnav-wrapper .nav li a:hover {
+    background: none;
+  }
+  .ocnav-wrapper .nav li > .nav li,
+  .ocnav-wrapper .nav li > .nav {
+    border-top: none;
+    border-bottom: none;
+  }
+  .ocnav-wrapper .nav li > .nav li a {
+    padding: 7px 10px;
+    border-radius: 5px 0 0 5px;
+  }
+  .ocnav-wrapper .nav li > .nav li a:hover {
+    background: #2b2b2b;
+  }
+}
+a {
+  color: #db2020;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+}
+.bottom-space {
+  margin-bottom: 20px;
+}
+.top-space {
+  margin-top: 20px;
+}
+body {
+  background-color: #FFFFFF !important;
+}
+body.grey-bg {
+  background-color: #FFFFFF;
+}
+body.grey-bg .content-container {
+  color: #ffffff;
+}
+.main-header {
+  padding-top: 60px;
+  background-color: #db2020;
+  background-color: #c91d1d;
+  background-image: -moz-linear-gradient(top, #db2020, #af1919);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#db2020), to(#af1919));
+  background-image: -webkit-linear-gradient(top, #db2020, #af1919);
+  background-image: -o-linear-gradient(top, #db2020, #af1919);
+  background-image: linear-gradient(to bottom, #db2020, #af1919);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdb2020', endColorstr='#ffaf1919', GradientType=0);
+  color: #FFF;
+  position: relative;
+}
+.main-header .header-container,
+.main-footer .footer-container,
+.masonry-container,
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.main-header .title-wrapper,
+.content-container .inner-wrapper {
+  margin: 0 20px;
+}
+.main-header h1 {
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.35);
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  max-width: 400px;
+  width: 70%;
+  margin-top: 0;
+}
+.main-header h1 img {
+  width: 100%;
+  height: auto;
+}
+.main-header .top-highlight {
+  position: absolute;
+  top: 42px;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid #eb7676;
+}
+.sub-header {
+  margin: 20px 0;
+}
+.navbar-fixed-top .brand {
+  margin-left: 0;
+}
+/*
+----------------------------------------------
+TOOL SALE STUFF
+----------------------------------------------
+*/
+.toolSaleContainer {
+  margin: 20px auto;
+  background: url(../images/tool-sale/bg.jpg);
+  z-index: 8500;
+  max-width: 1200px;
+}
+.toolSaleContainerRomax {
+  background: url(../images/tool-sale/bg-romax.jpg);
+  min-height: 800px;
+}
+.toolSaleContainer p {
+  color: #FFFFFF;
+  font-size: 13px;
+  text-align: center;
+}
+.catalogueCoverContainer {
+  margin-top: 25%;
+  background: url("../images/tool-sale/black-70.png") no-repeat;
+  background-position: 0px 30px;
+}
+.catalogueToolSaleContainer {
+  background: url("../images/tool-sale/black-70.png") repeat-x;
+  background-position: 0px 30px;
+  max-height: 220px;
+}
+.catalogueToolSaleContainerTS {
+  background: url("../images/tool-sale/black-70.png") repeat-x;
+  background-position: 0px 30px;
+  max-height: 215px;
+}
+.catalogueToolSaleContainer p {
+  text-align: left;
+}
+.catalogueCover {
+  text-align: center;
+}
+.catalogueCover h4 {
+  color: #FFFFFF;
+  font-size: 16px;
+}
+.hvacr {
+  color: #0397D7 !important;
+}
+.irrigation {
+  color: #5E792D !important;
+}
+.civil {
+  color: #B65312 !important;
+}
+.toolHero img {
+  padding-top: 20px;
+  padding-left: 30px;
+}
+.masonry-container {
+  margin: 1% auto !important;
+  width: 98.5% !important;
+  height: 100% !important;
+}
+.toolNavContainer {
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 10px;
+}
+.toolNav {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 7px;
+  margin-left: 20px !important;
+  line-height: 100%;
+}
+.toolNav a {
+  color: #000000;
+  font-size: 15px;
+}
+.toolNav a:hover {
+  color: red;
+}
+.toolNav .current {
+  color: red;
+}
+.bannerPC {
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 10px;
+}
+.socialButtons {
+  float: right;
+  padding: 6px 0 0 6px;
+  font-weight: bold;
+  z-index: 9000;
+  color: red;
+}
+.nameStrip {
+  background: #d1d3d4;
+  padding: 6px 0 0 6px;
+  font-weight: bold;
+  clear: both;
+}
+.videoBlock {
+  background: #EFEFEF;
+  padding: 10px;
+  width: 30% !important;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  z-index: 9000;
+}
+.margin30 {
+  margin-left: 30px !important;
+}
+.navDivider {
+  border-right: 2px solid black !important;
+  border-bottom: 0px solid black !important;
+}
+.navDividerSize {
+  border-right: 0px solid black !important;
+  border-bottom: 0px solid black !important;
+}
+.leftContent {
+  color: #FFFFFF;
+  padding: 40px 40px 40px 80px;
+  /*     margin-left:20px !important;
+    background:url("../images/tool-sale/black-70.png") ;*/
+
+}
+.leftContent p {
+  text-align: left;
+  font-size: 14px;
+}
+.leftContent h2 {
+  text-align: left;
+  font-size: 22px;
+}
+.leftContent h3 {
+  text-align: left;
+  font-size: 18px;
+}
+.rightContent img {
+  padding-top: 30px;
+}
+.rightContent .inputWide {
+  width: 70%;
+}
+.rightContent .checkbox {
+  color: #FFFFFF !important;
+  padding: 20px;
+}
+.enterFormToolSale {
+  margin: 50px 0 0 40px;
+}
+.enterFormToolSale h3 {
+  color: white;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+.tipStrip {
+  color: #666666;
+}
+.tipStrip p {
+  color: #666666;
+  text-align: left;
+  light-height: 110%;
+  font-size: 14px;
+}
+.tipStrip h3 {
+  font-size: 16px;
+}
+.tipBlock {
+  background: #EFEFEF;
+  padding: 10px;
+  width: 46% !important;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  margin-bottom: 20px;
+}
+.controllerPosition {
+  float: left;
+  border: none;
+  position: relative;
+  bottom: 30px;
+}
+.controllerPosition p {
+  text-align: left;
+}
+.controllerPosition a {
+  color: #fff;
+}
+.toolNavContainer .span2 {
+  margin: 0px !important;
+  width: 16.6%;
+}
+.videoTips p {
+  color: white;
+  text-align: left;
+  font-size: 14px;
+}
+.videoTips H3 {
+  color: white;
+  font-size: 22px;
+}
+.germanypagination {
+  width: 95%;
+  float: left;
+  margin: auto;
+  color: #FFFFFF;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.germanypagination .current {
+  background: red;
+}
+.pagination {
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 3px;
+}
+.toolWidthFix {
+  margin: 1% auto !important;
+  width: 98.5% !important;
+  height: 100% !important;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+/*
+----------------------------------------------
+RESPONSIVE OVERRIDES
+----------------------------------------------
+*/
+@media (min-width: 1200px) {
+  
+}
+@media (max-width: 1199px) {
+  .main-header ul.nav li a {
+    font-size: 12px;
+  }
+  .toolSaleContainerRomax {
+    background: url(../images/tool-sale/bg-romax1024.jpg);
+  }
+}
+@media (max-width: 979px) {
+  /*
+    .toolNav a {
+      font-size: 11px;
+    }
+    .toolNav {
+      text-align: center;
+      font-weight: bold;
+      padding-top: 7px;
+      margin-left: 15px !important;
+      line-height: 90%;
+    }
+    */
+  .toolNavContainer .span2 {
+    margin: 0px !important;
+    width: 20%;
+  }
+  .toolsubnav .span2 {
+    width: 20% !important;
+  }
+  #toolsubnav a {
+    color: black;
+    font-weight: bold;
+    font-size: 12px!important;
+  }
+  .navbar-fixed-top {
+    margin: 0;
+  }
+  .main-header {
+    padding-top: 10px;
+  }
+  .main-header .top-highlight {
+    top: 1px;
+  }
+  .masonry-container .width2 {
+    width: 32%;
+  }
+  .masonry-container .width4 {
+    width: 65%;
+  }
+  .masonry-container .width6,
+  .masonry-container .width8 {
+    width: 98%;
+  }
+  .content-container {
+    min-height: 600px;
+  }
+  .ocmain-wrapper {
+    position: absolute;
+    top: 0;
+  }
+  .ocmain-wrapper {
+    background-color: #fff;
+  }
+  .main-header h1 {
+    width: auto;
+  }
+  .grey-bg .ocmain-wrapper {
+    background-color: #FFFFFF;
+  }
+  .ocnav-wrapper .nav li > .nav li a i {
+    color: #db2020;
+  }
+  .ocnav-wrapper {
+    z-index: -500;
+  }
+  .ocnav-wrapper .nav li > .nav li.active a {
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #c01c1c;
+    background-image: -moz-linear-gradient(top, #af1919, #db2020);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#af1919), to(#db2020));
+    background-image: -webkit-linear-gradient(top, #af1919, #db2020);
+    background-image: -o-linear-gradient(top, #af1919, #db2020);
+    background-image: linear-gradient(to bottom, #af1919, #db2020);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffaf1919', endColorstr='#ffdb2020', GradientType=0);
+    border-color: #db2020 #db2020 #981616;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    *background-color: #db2020;
+    /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    border: 1px solid #db2020;
+  }
+  .ocnav-wrapper .nav li > .nav li.active a:hover,
+  .ocnav-wrapper .nav li > .nav li.active a:active,
+  .ocnav-wrapper .nav li > .nav li.active a.active,
+  .ocnav-wrapper .nav li > .nav li.active a.disabled,
+  .ocnav-wrapper .nav li > .nav li.active a[disabled] {
+    color: #ffffff;
+    background-color: #db2020;
+    *background-color: #c51d1d;
+  }
+  .ocnav-wrapper .nav li > .nav li.active a:active,
+  .ocnav-wrapper .nav li > .nav li.active a.active {
+    background-color: #af1919 \9;
+  }
+  .ocnav-wrapper .nav li > .nav li.active a i {
+    color: #FFF;
+  }
+  .margin30 {
+    margin-left: 20px !important;
+  }
+}
+@media (max-width: 979px) and (min-width: 768px) {
+  .toolSaleContainerRomax {
+    background: url(../images/tool-sale/bg-romax780.jpg) no-repeat !important;
+  }
+  .toolSaleContainer {
+    margin-top: 20px;
+    background: url(../images/tool-sale/bg.jpg);
+    z-index: 8500;
+    max-width: 1200px;
+    min-height: 700px;
+  }
+  .toolNavContainer .span2 {
+    width: 16.6%;
+  }
+  .toolsubnav .span2 {
+    width: 20% !important;
+  }
+  .catalogueCoverContainer {
+    padding-top: 50px;
+    background: url("../images/tool-sale/black-70.png") repeat-x;
+    background-position: 0px 80px;
+  }
+  .catalogueCover h4 {
+    font-size: 12px;
+    text-align: center;
+  }
+  .catalogueCover img {
+    text-align: center;
+    width: 90%;
+  }
+}
+@media (max-width: 767px) {
+  body {
+    padding: 0;
+  }
+  .main-header h1 {
+    width: auto;
+    max-width: 255px;
+  }
+  .masonry-container {
+    margin: 2% 0;
+    margin: 1%;
+  }
+  .masonry-container .masonry-item {
+    margin: 0 0 14px 2%;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+  }
+  .masonry-container .width2 {
+    width: 47.5%;
+  }
+  .masonry-container .width4,
+  .masonry-container .width6,
+  .masonry-container .width8 {
+    width: 97%;
+  }
+  .masonry-container .masonry-item .caption {
+    padding: 20px 5px 3px;
+  }
+  .masonry-container .masonry-item .caption p {
+    display: none;
+  }
+  .main-footer .footer-right .nav {
+    float: none;
+  }
+  .row-fluid .phone-column[class*="span"] {
+    float: left;
+    margin-left: 2.127659574468085%;
+    *margin-left: 2.074468085106383%;
+  }
+  .row-fluid .phone-column[class*="span"]:first-child {
+    margin-left: 0;
+    *margin-left: 0;
+  }
+  .row-fluid .phone-column.span1 {
+    width: 6.382978723404255%;
+    *width: 6.329787234042553%;
+  }
+  .row-fluid .phone-column.span2 {
+    width: 14.893617021276595%;
+    *width: 14.840425531914894%;
+  }
+  .row-fluid .phone-column.span3 {
+    width: 23.404255319148934%;
+    *width: 23.351063829787233%;
+  }
+  .row-fluid .phone-column.span4 {
+    width: 31.914893617021278%;
+    *width: 31.861702127659576%;
+  }
+  .row-fluid .phone-column.span5 {
+    width: 40.42553191489362%;
+    *width: 40.37234042553192%;
+  }
+  .row-fluid .phone-column.span6 {
+    width: 48.93617021276595%;
+    *width: 48.88297872340425%;
+  }
+  .row-fluid .phone-column.span7 {
+    width: 57.44680851063829%;
+    *width: 57.39361702127659%;
+  }
+  .row-fluid .phone-column.span8 {
+    width: 65.95744680851064%;
+    *width: 65.90425531914893%;
+  }
+  .row-fluid .phone-column.span9 {
+    width: 74.46808510638297%;
+    *width: 74.41489361702126%;
+  }
+  .row-fluid .phone-column.span10 {
+    width: 82.97872340425532%;
+    *width: 82.92553191489361%;
+  }
+  .row-fluid .phone-column.span11 {
+    width: 91.48936170212765%;
+    *width: 91.43617021276594%;
+  }
+  .row-fluid .phone-column.span12 {
+    width: 100%;
+    *width: 99.94680851063829%;
+  }
+  .toolHero {
+    padding-left: 0px;
+    text-align: center;
+    margin: auto;
+  }
+  .toolHero img {
+    padding-top: 50px;
+    padding-left: 0px;
+    text-align: center;
+    margin: auto;
+  }
+  .toolNavContainer {
+    padding-bottom: 10px;
+  }
+  .toolNav {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 7px;
+    margin-left: 0px !important;
+  }
+  .toolNav a {
+    font-size: 16px;
+    color: #000000 !important;
+  }
+  .toolNav a:visited,
+  a:active {
+    color: #000000 !important;
+  }
+  .toolNav a {
+    font-size: 14px !important;
+  }
+  .nameStrip {
+    background: #d1d3d4;
+    padding: 15px 10px 10px 15px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .videoBlock {
+    margin-bottom: 50px;
+  }
+  .videoBlock {
+    width: 95% !important;
+  }
+  .margin30 {
+    margin-left: 20px !important;
+  }
+  .navDivider {
+    border-right: 0px solid black !important;
+  }
+  .navDividerSize {
+    border-right: 0px solid black !important;
+  }
+  .toolSaleContainer {
+    padding-top: 15px !important;
+  }
+  .rightContent .inputWide {
+    width: 90%;
+  }
+  .enterFormToolSale {
+    margin: 00px 0 0 40px;
+  }
+  .tipBlock {
+    background: #EFEFEF;
+    padding: 10px;
+    width: 95% !important;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+  }
+  .toolNavContainer .span2 {
+    margin: 0px !important;
+    width: 50% !important;
+    float: left;
+    background: #EFEFEF;
+    border: 4px solid white;
+    min-height: 30px;
+  }
+  .rightContent img {
+    padding-top: 0px;
+    margin: auto;
+  }
+  .toolSaleContainerRomax {
+    background: url(../images/tool-sale/bg-romax780.jpg);
+  }
+  .leftContent {
+    padding: 0px 20px 20px 20px;
+  }
+  .catalogueCoverContainer {
+    padding-top: 50px;
+    background: url("../images/tool-sale/black-70.png");
+    background-position: 0px 0px;
+  }
+  .catalogueCoverContainer .span3 {
+    width: 25%;
+    float: left;
+  }
+  .catalogueToolSaleContainerTS {
+    background: url("../images/tool-sale/black-70.png");
+    background-position: 0px 0px;
+    max-height: 100%;
+  }
+  .controllerPosition {
+    width: 60%;
+    margin: 70px 0 0 20%;
+  }
+  .controllerPosition p {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+@media (max-width: 640px) {
+  .masonry-container .masonry-item {
+    margin-bottom: 13px;
+  }
+  .toolNav {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 7px;
+    margin-left: 0px !important;
+  }
+  .toolNav a {
+    font-size: 16px;
+  }
+  .nameStrip {
+    background: #d1d3d4;
+    padding: 15px 10px 10px 15px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .socialButtons {
+    padding: 15px 10px 10px 15px;
+    font-weight: bold;
+  }
+  .toolSaleContainer {
+    z-index: 8500;
+    padding: 0px;
+    padding-top: 15px !important;
+  }
+  .dropdown-menu {
+    left: -80px !important;
+  }
+  .videoBlock {
+    width: 95% !important;
+  }
+  .margin30 {
+    padding-left: 10px !important;
+    margin-left: 0px !important;
+  }
+  .rightContent img {
+    padding-top: 0px;
+    margin: auto;
+  }
+}
+@media (max-width: 480px) {
+  .masonry-container .masonry-item {
+    margin-bottom: 10px;
+  }
+  .toolSaleContainerRomax {
+    background: url(../images/tool-sale/bg.jpg);
+  }
+  .toolNav a {
+    font-size: 10px !important;
+  }
+  .toolSaleContainerRomax {
+    background: url(../images/tool-sale/bg-romax-mobile.jpg) !important;
+  }
+}
+@media (max-width: 320px) {
+  .masonry-container .masonry-item {
+    margin-bottom: 7px;
+  }
+  /* Footer Fix */
+  .main-footer .nav {
+    height: 25px;
+    clear: left;
+  }
+  .rightContent .inputWide {
+    width: 75%;
+  }
+  .catalogueCoverContainer {
+    padding-top: 30px;
+  }
+  .catalogueCover h4 {
+    font-size: 10px;
+    text-align: center;
+  }
+  .catalogueCover img {
+    text-align: center;
+    width: 50%;
+  }
+  .toolSaleContainer p {
+    font-size: 15px;
+    font-weight: normal;
+  }
+  .toolSaleContainer {
+    z-index: 8500;
+    padding-top: 15px !important;
+  }
+}

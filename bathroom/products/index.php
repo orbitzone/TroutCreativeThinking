@@ -32,7 +32,23 @@
 
 				    <!-- CONTENT FOR MOBILE -->
 
+				    	<div id="products-mobile-carousel" class="carousel slide visible-phone">
+					    	<div class="carousel-inner">
+					    		<div class="item">
+									<a href="#">
+										<img src="/assets/images/products_2013/products-plumbing-fresh-approach-mobile.jpg" alt="Fresh Approach" />
+									</a>
+					    		</div>
+					    		<div class="item active">
+									<a href="#">
+										<img src="/assets/images/products_2013/products-plumbing-fresh-approach-mobile.jpg" alt="Fresh Approach" />
+									</a>
+					    		</div>
+					    	</div>
 
+							<a class="carousel-control left" href="#products-mobile-carousel" data-slide="prev">‹</a>
+							<a class="carousel-control right" href="#products-mobile-carousel" data-slide="next">›</a>
+			    		</div>
 
 				    <!-- CONTENT FOR DESKTOP -->
 
@@ -113,8 +129,183 @@
 
 						    <hr>
 
+					    	<h3>Latest Releases</h3>
+							<div id="latest-releases-carousel" class="carousel slide top-carousel-control">
+						        <div class="carousel-inner">
 
-						
+						        	<div class="active item">					    	
+								    	<div class="products-list">
+										    <div class="row-fluid">
+										    	<div class="product-block span3">
+													<a href="#"><img src="/assets/images/products_2013/products-bathroom-latest-product-1.jpg" /></a>
+													<div class="product-info">
+														<h4>
+															<a class="product-title" href="#">Caroma Pearl</a>
+															<span class="product-desc">Freestanding bath</span>
+															<span class="product-price">$xxx.xx</span>
+														</h4>
+													</div>
+										    	</div>
+										    	<div class="product-block span3">
+										    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-latest-product-1.jpg" /></a>
+													<div class="product-info">
+														<h4>
+															<a class="product-title" href="#">Caroma Pearl</a>
+															<span class="product-desc">Freestanding bath</span>
+															<span class="product-price">$xxx.xx</span>
+														</h4>
+													</div>							    		
+										    	</div>
+										    	<div class="product-block span3">
+										    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-latest-product-1.jpg" /></a>
+													<div class="product-info">
+														<h4>
+															<a class="product-title" href="#">Caroma Pearl</a>
+															<span class="product-desc">Freestanding bath</span>
+															<span class="product-price">$xxx.xx</span>
+														</h4>
+													</div>							    		
+										    	</div>
+										    	<div class="product-block span3">
+										    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-latest-product-1.jpg" /></a>
+													<div class="product-info">
+														<h4>
+															<a class="product-title" href="#">Caroma Pearl</a>
+															<span class="product-desc">Freestanding bath</span>
+															<span class="product-price">$xxx.xx</span>
+														</h4>
+													</div>							    		
+										    	</div>					    							    							    	
+										    </div>
+										</div>	
+									</div>
+
+						        	<div class="item">					    	
+								    	<div class="products-list">
+										    <div class="row-fluid">
+										    	<div class="product-block span3">
+													<a href="#"><img src="/assets/images/products_2013/products-bathroom-latest-product-1.jpg" /></a>
+													<div class="product-info">
+														<h4>
+															<a class="product-title" href="#">Caroma Pearl</a>
+															<span class="product-desc">Freestanding bath</span>
+															<span class="product-price">$xxx.xx</span>
+														</h4>
+													</div>
+										    	</div>
+										    	<div class="product-block span3">
+										    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-latest-product-1.jpg" /></a>
+													<div class="product-info">
+														<h4>
+															<a class="product-title" href="#">Caroma Pearl</a>
+															<span class="product-desc">Freestanding bath</span>
+															<span class="product-price">$xxx.xx</span>
+														</h4>
+													</div>							    		
+										    	</div>
+										    	<div class="product-block span3">
+										    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-latest-product-1.jpg" /></a>
+													<div class="product-info">
+														<h4>
+															<a class="product-title" href="#">Caroma Pearl</a>
+															<span class="product-desc">Freestanding bath</span>
+															<span class="product-price">$xxx.xx</span>
+														</h4>
+													</div>							    		
+										    	</div>				    							    							    	
+										    </div>
+										</div>	
+									</div>									
+
+								</div>
+								<a class="carousel-control left page-branding text-brand" href="#latest-releases-carousel" data-slide="prev">‹</a>
+					        	<a class="carousel-control right page-branding text-brand" href="#latest-releases-carousel" data-slide="next">›</a>	
+							</div>
+
+						    <hr>
+
+					    	<h3>Winter Warmers - Heated Towel Rails</h3>
+							<div id="winter-warmers-carousel" class="carousel slide top-carousel-control">
+						        <div class="carousel-inner">
+
+						        	<div class="active item">					    	
+								    	<div class="products-list">
+										    <div class="row-fluid">
+										    	<div class="product-block span3">
+													<a href="#"><img src="/assets/images/products_2013/products-bathroom-winter-warmers-product-1.jpg" /></a>
+													<div class="product-info">
+														<h4>
+															<a class="product-title" href="#">Caroma Pearl</a>
+															<span class="product-desc">Freestanding bath</span>
+															<span class="product-price">$xxx.xx</span>
+														</h4>
+													</div>
+										    	</div>
+										    	<div class="product-block span3">
+										    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-winter-warmers-product-1.jpg" /></a>
+													<div class="product-info">
+														<h4>
+															<a class="product-title" href="#">Caroma Pearl</a>
+															<span class="product-desc">Freestanding bath</span>
+															<span class="product-price">$xxx.xx</span>
+														</h4>
+													</div>							    		
+										    	</div>
+										    	<div class="product-block span3">
+										    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-winter-warmers-product-1.jpg" /></a>
+													<div class="product-info">
+														<h4>
+															<a class="product-title" href="#">Caroma Pearl</a>
+															<span class="product-desc">Freestanding bath</span>
+															<span class="product-price">$xxx.xx</span>
+														</h4>
+													</div>							    		
+										    	</div>
+										    	<div class="product-block span3">
+										    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-winter-warmers-product-1.jpg" /></a>
+													<div class="product-info">
+														<h4>
+															<a class="product-title" href="#">Caroma Pearl</a>
+															<span class="product-desc">Freestanding bath</span>
+															<span class="product-price">$xxx.xx</span>
+														</h4>
+													</div>							    		
+										    	</div>					    							    							    	
+										    </div>
+										</div>	
+									</div>
+
+						        	<div class="item">					    	
+								    	<div class="products-list">
+										    <div class="row-fluid">
+										    	<div class="product-block span3">
+													<a href="#"><img src="/assets/images/products_2013/products-bathroom-winter-warmers-product-1.jpg" /></a>
+													<div class="product-info">
+														<h4>
+															<a class="product-title" href="#">Caroma Pearl</a>
+															<span class="product-desc">Freestanding bath</span>
+															<span class="product-price">$xxx.xx</span>
+														</h4>
+													</div>
+										    	</div>
+										    	<div class="product-block span3">
+										    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-winter-warmers-product-1.jpg" /></a>
+													<div class="product-info">
+														<h4>
+															<a class="product-title" href="#">Caroma Pearl</a>
+															<span class="product-desc">Freestanding bath</span>
+															<span class="product-price">$xxx.xx</span>
+														</h4>
+													</div>							    		
+										    	</div>				    							    							    	
+										    </div>
+										</div>	
+									</div>									
+
+								</div>
+								<a class="carousel-control left page-branding text-brand" href="#winter-warmers-carousel" data-slide="prev">‹</a>
+					        	<a class="carousel-control right page-branding text-brand" href="#winter-warmers-carousel" data-slide="next">›</a>	
+							</div>							
 
 						</section>
 
@@ -139,10 +330,10 @@
 
 		<?php 
 			$jsScriptPaths = [
-				"/assets/js/jquery.lazyload.min.js", 
+				"/assets/js/jquery.lazyload.min.js",
+				"/assets/js/bootstrap-transition.js", 
 				"/assets/js/bootstrap-carousel.js",
 				"/assets/js/bootstrap-collapse.js",
-				"/assets/js/bootstrap-transition.js",
 				"/assets/js/reece-ocnav.js"
 			]; 
 		   	include_once($serverBase."/includes/foot/scripts.php");

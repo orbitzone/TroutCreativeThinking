@@ -277,20 +277,6 @@
 	.btn-block + .btn-block {
 		margin-top: 10px;
 	}
-
-	.dropdown-menu {
-		min-width: 200%; //Double min width of dropdown
-		left: -110%; //Move it back half that amount + padding
-		padding: 5%;
-
-		@media (max-width: 767px) {
-			width: 100%;
-			min-width: 0;
-			left: 0;
-			padding: 5% 0;
-			text-align: center;
-		}
-	}
 }
 
 // Button Group Styles (Bootstrap Extention)
@@ -407,12 +393,46 @@
 //====================================================================================================================================
 //====================================================================================================================================
 
+.product-variation-list {
+	min-width: 200%; //Double min width of dropdown
+	left: -140%; //Move it back half that amount + padding because box sizing is not enabled
+	padding: 20%;
+
+	@media (max-width: 767px) {
+		position: static;
+		width: 100%;
+		min-width: 0;
+		margin-bottom: 5%;
+		left: 0;
+		padding: 5% 0;
+		text-align: center;
+	}
+
+	.product-variation-block {
+		@media (max-width: 767px) {
+			float: left;
+			max-width: 44%;
+			margin-left: 4%;
+
+			&:first-child {
+				margin-left: 4%;
+			}	
+		}
+	}	
+}
+
+// Carousel Mini Controls Module
+//====================================================================================================================================
+//====================================================================================================================================
+
 .carousel-controls-mini {
 	display: block;
 	width: 100%;
+	margin-bottom: 0;
 
 	li {
 		float: left;
+		margin-bottom: 0;
 		.custom-column-item(2);
 
 		&:first-child {
@@ -420,7 +440,7 @@
 		}
 	}
 	@media (max-width: 767px) {
-
+		margin-bottom: 20px;
 	}	
 }
 
@@ -471,8 +491,9 @@
 	#gradient > .vertical(lighten(black, 5%), lighten(black, 50%));
 	color: white;
 
-	& > .active > a, & > .active > a:hover, & > .active > a:focus {
+	&:hover {
 		color: white;
+		#gradient > .vertical(lighten(black, 20%), lighten(black, 65%));
 	}
 }
 

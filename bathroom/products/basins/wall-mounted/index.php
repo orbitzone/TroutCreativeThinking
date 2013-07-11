@@ -51,86 +51,44 @@
 
 								</div>
 
-								
-									<ul class="thumbnails carousel-controls-mini">
-										<li>
-											<a class="thumbnail" href="#product-shots-carousel" data-carousel-slide="0">
-												<!-- Replace with smaller thumbnails -->
-												<img src="/assets/images/products_2013/products-product-shot-1.jpg" alt="Laufen ILBAGNOALESSI One" />
-											</a>
-										</li>
-										<li>
-											<a class="thumbnail" href="#product-shots-carousel" data-carousel-slide="1">
-												<!-- Replace with smaller thumbnails -->
-												<img src="/assets/images/products_2013/products-plumbing-latest-releases-1.jpg" alt="Laufen ILBAGNOALESSI One" />
-											</a>
-										</li>
-										<li class="">
-											<a class="thumbnail" href="#product-shots-carousel" data-carousel-slide="2">
-												<!-- Replace with smaller thumbnails -->
-												<img src="/assets/images/products_2013/products-product-shot-1.jpg" alt="Laufen ILBAGNOALESSI One" />
-											</a>
-										</li>
-										<li class="">
-											<a class="thumbnail" href="#product-shots-carousel" data-carousel-slide="0">
-												<!-- Replace with smaller thumbnails -->
-												<img src="/assets/images/products_2013/products-product-shot-1.jpg" alt="Laufen ILBAGNOALESSI One" />
-											</a>
-										</li>
-										<li class="">
-											<a class="thumbnail" href="#product-shots-carousel" data-carousel-slide="1">
-												<!-- Replace with smaller thumbnails -->
-												<img src="/assets/images/products_2013/products-plumbing-latest-releases-1.jpg" alt="Laufen ILBAGNOALESSI One" />
-											</a>
-										</li>
-										<li class="">
-											<a class="thumbnail" href="#product-shots-carousel" data-carousel-slide="2">
-												<!-- Replace with smaller thumbnails -->
-												<img src="/assets/images/products_2013/products-product-shot-1.jpg" alt="Laufen ILBAGNOALESSI One" />
-											</a>
-										</li>										
-									</ul>
-								
-
-<!-- 								<div id="latest-releases-carousel" class="carousel slide">
-							        <div class="carousel-inner">
-
-							        	<div class="active item">					    	
-									    	<div class="products-list">
-											    <div class="row-fluid">
-											    	<div class="span3">
-														<a href="#"><img src="/assets/images/products_2013/products-bathroom-latest-product-1.jpg" /></a>
-											    	</div>
-											    	<div class="product-block span3">
-											    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-latest-product-1.jpg" /></a>							    		
-											    	</div>
-											    	<div class="span3">
-											    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-latest-product-1.jpg" /></a>							    		
-											    	</div>
-											    	<div class="span3">
-											    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-latest-product-1.jpg" /></a>						    		
-											    	</div>					    							    							    	
-											    </div>
-											</div>	
-										</div>	
-
-							        	<div class="item">					    	
-									    	<div class="products-list">
-											    <div class="row-fluid">
-											    	<div class="span3">
-														<a href="#"><img src="/assets/images/products_2013/products-bathroom-latest-product-1.jpg" /></a>
-											    	</div>
-											    	<div class="product-block span3">
-											    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-latest-product-1.jpg" /></a>							    		
-											    	</div>				    							    							    	
-											    </div>
-											</div>	
-										</div>									
-
-									</div>
-									<a class="carousel-control left page-branding text-brand" href="#latest-releases-carousel" data-slide="prev">‹</a>
-						        	<a class="carousel-control right page-branding text-brand" href="#latest-releases-carousel" data-slide="next">›</a>	
-								</div> -->
+								<ul class="thumbnails carousel-controls-mini">
+									<li>
+										<a class="thumbnail" href="#product-shots-carousel" data-carousel-slide="0">
+											<!-- Replace with smaller thumbnails -->
+											<img src="/assets/images/products_2013/products-product-shot-1.jpg" alt="Laufen ILBAGNOALESSI One" />
+										</a>
+									</li>
+									<li>
+										<a class="thumbnail" href="#product-shots-carousel" data-carousel-slide="1">
+											<!-- Replace with smaller thumbnails -->
+											<img src="/assets/images/products_2013/products-plumbing-latest-releases-1.jpg" alt="Laufen ILBAGNOALESSI One" />
+										</a>
+									</li>
+									<li>
+										<a class="thumbnail" href="#product-shots-carousel" data-carousel-slide="2">
+											<!-- Replace with smaller thumbnails -->
+											<img src="/assets/images/products_2013/products-product-shot-1.jpg" alt="Laufen ILBAGNOALESSI One" />
+										</a>
+									</li>
+									<li>
+										<a class="thumbnail" href="#product-shots-carousel" data-carousel-slide="0">
+											<!-- Replace with smaller thumbnails -->
+											<img src="/assets/images/products_2013/products-product-shot-1.jpg" alt="Laufen ILBAGNOALESSI One" />
+										</a>
+									</li>
+									<li>
+										<a class="thumbnail" href="#product-shots-carousel" data-carousel-slide="1">
+											<!-- Replace with smaller thumbnails -->
+											<img src="/assets/images/products_2013/products-plumbing-latest-releases-1.jpg" alt="Laufen ILBAGNOALESSI One" />
+										</a>
+									</li>
+									<li>
+										<a class="thumbnail" href="#product-shots-carousel" data-carousel-slide="2">
+											<!-- Replace with smaller thumbnails -->
+											<img src="/assets/images/products_2013/products-product-shot-1.jpg" alt="Laufen ILBAGNOALESSI One" />
+										</a>
+									</li>																			
+								</ul>
 
 							</div>
 							<div class="span5">
@@ -146,19 +104,17 @@
 								<div class="row-fluid">
 									<div class="span7 text-center">
 		
-										<!-- <img src="/assets/images/products_2013/products-seven-year-warranty.jpg" /> -->
-										<img src="/assets/images/products_2013/products-three-year-warranty.jpg" />
-										<img src="/assets/images/products_2013/products-three-year-warranty.jpg" />
-										<img src="/assets/images/products_2013/products-three-year-warranty.jpg" />
-										<img src="/assets/images/products_2013/products-three-year-warranty.jpg" />
+										<img src="/assets/images/products_2013/products-seven-year-warranty.jpg" />
+										<!-- <img style="padding-top: 20%;" src="/assets/images/products_2013/products-warranty-collection.jpg" /> -->
 
 									</div>
 									<div class="span5 text-right">
 										<div class="dropdown">
 											<button type="button" data-toggle="dropdown" class="btn text-left btn-large btn-block">Variations <i class="caret pull-right"></i></button>
-											<div class="dropdown-menu">
+											<div class="product-variation-list dropdown-menu">
+
 												<div class="row-fluid">
-													<div class="span6">
+													<div class="product-variation-block span6">
 												    	<div class="product-block">
 															<a href="#"><img src="/assets/images/products_2013/products-bathroom-latest-product-1.jpg" /></a>
 															<div class="product-info">
@@ -170,7 +126,7 @@
 															</div>
 												    	</div>
 													</div>
-													<div class="span6">
+													<div class="product-variation-block span6">
 												    	<div class="product-block">
 															<a href="#"><img src="/assets/images/products_2013/products-bathroom-latest-product-1.jpg" /></a>
 															<div class="product-info">
@@ -185,6 +141,7 @@
 												</div>
 											</div>
 										</div>
+
 										<button type="button" class="btn btn-danger btn-large btn-block">Add to Cart</button>
 										<button type="button" class="btn btn-large btn-block">Add to My List</button>
 										
@@ -204,6 +161,8 @@
 						</div>
 
 					</section>
+
+					<hr>
 
 					<ul class="products-tab-nav hidden-phone">
 						<li class="active"><a href="#details" data-toggle="tab">Details</a></li>
@@ -287,6 +246,8 @@
 							</div>							
 						</div>					
 					</div>  
+
+					<hr>
 
 			    	<div class="products-list">
 					    <div class="row-fluid">

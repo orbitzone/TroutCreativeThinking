@@ -211,20 +211,6 @@
 .products-content-single .btn-block + .btn-block {
   margin-top: 10px;
 }
-.products-content-single .dropdown-menu {
-  min-width: 200%;
-  left: -110%;
-  padding: 5%;
-}
-@media (max-width: 767px) {
-  .products-content-single .dropdown-menu {
-    width: 100%;
-    min-width: 0;
-    left: 0;
-    padding: 5% 0;
-    text-align: center;
-  }
-}
 .btn-bar {
   display: inline-block;
   *display: inline;
@@ -337,12 +323,40 @@
     border-bottom: 1px solid #d1d1d1;
   }
 }
+.product-variation-list {
+  min-width: 200%;
+  left: -140%;
+  padding: 20%;
+}
+@media (max-width: 767px) {
+  .product-variation-list {
+    position: static;
+    width: 100%;
+    min-width: 0;
+    margin-bottom: 5%;
+    left: 0;
+    padding: 5% 0;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .product-variation-list .product-variation-block {
+    float: left;
+    max-width: 44%;
+    margin-left: 4%;
+  }
+  .product-variation-list .product-variation-block:first-child {
+    margin-left: 4%;
+  }
+}
 .carousel-controls-mini {
   display: block;
   width: 100%;
+  margin-bottom: 0;
 }
 .carousel-controls-mini li {
   float: left;
+  margin-bottom: 0;
   margin-left: 2.127659574468085%;
   *margin-left: 2.074468085106383%;
   width: 14.893617021276595%;
@@ -352,7 +366,9 @@
   margin-left: 0;
 }
 @media (max-width: 767px) {
-  
+  .carousel-controls-mini {
+    margin-bottom: 20px;
+  }
 }
 .products-tab-nav {
   display: table;
@@ -420,10 +436,16 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0d0d0d', endColorstr='#ff808080', GradientType=0);
   color: white;
 }
-.products-collapse-nav > .active > a,
-.products-collapse-nav > .active > a:hover,
-.products-collapse-nav > .active > a:focus {
+.products-collapse-nav:hover {
   color: white;
+  background-color: #616161;
+  background-image: -moz-linear-gradient(top, #333333, #a6a6a6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#333333), to(#a6a6a6));
+  background-image: -webkit-linear-gradient(top, #333333, #a6a6a6);
+  background-image: -o-linear-gradient(top, #333333, #a6a6a6);
+  background-image: linear-gradient(to bottom, #333333, #a6a6a6);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff333333', endColorstr='#ffa6a6a6', GradientType=0);
 }
 .products-content {
   margin: 0 0 20px;

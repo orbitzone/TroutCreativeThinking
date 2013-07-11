@@ -136,8 +136,8 @@
 							<div class="span5">
 								<h3>
 									$2245.00
-									<p><small>gst inclusive</small></p>
 								</h3>
+								<p><small>gst inclusive</small></p>
 
 								<hr>
 

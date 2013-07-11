@@ -51,46 +51,46 @@
 
 								</div>
 
-								<div class="row-fluid">
+								
 									<ul class="thumbnails carousel-controls-mini">
-										<li class="span2">
+										<li>
 											<a class="thumbnail" href="#product-shots-carousel" data-carousel-slide="0">
 												<!-- Replace with smaller thumbnails -->
 												<img src="/assets/images/products_2013/products-product-shot-1.jpg" alt="Laufen ILBAGNOALESSI One" />
 											</a>
 										</li>
-										<li class="span2">
+										<li>
 											<a class="thumbnail" href="#product-shots-carousel" data-carousel-slide="1">
 												<!-- Replace with smaller thumbnails -->
 												<img src="/assets/images/products_2013/products-plumbing-latest-releases-1.jpg" alt="Laufen ILBAGNOALESSI One" />
 											</a>
 										</li>
-										<li class="span2">
+										<li class="">
 											<a class="thumbnail" href="#product-shots-carousel" data-carousel-slide="2">
 												<!-- Replace with smaller thumbnails -->
 												<img src="/assets/images/products_2013/products-product-shot-1.jpg" alt="Laufen ILBAGNOALESSI One" />
 											</a>
 										</li>
-										<li class="span2">
+										<li class="">
 											<a class="thumbnail" href="#product-shots-carousel" data-carousel-slide="0">
 												<!-- Replace with smaller thumbnails -->
 												<img src="/assets/images/products_2013/products-product-shot-1.jpg" alt="Laufen ILBAGNOALESSI One" />
 											</a>
 										</li>
-										<li class="span2">
+										<li class="">
 											<a class="thumbnail" href="#product-shots-carousel" data-carousel-slide="1">
 												<!-- Replace with smaller thumbnails -->
 												<img src="/assets/images/products_2013/products-plumbing-latest-releases-1.jpg" alt="Laufen ILBAGNOALESSI One" />
 											</a>
 										</li>
-										<li class="span2">
+										<li class="">
 											<a class="thumbnail" href="#product-shots-carousel" data-carousel-slide="2">
 												<!-- Replace with smaller thumbnails -->
 												<img src="/assets/images/products_2013/products-product-shot-1.jpg" alt="Laufen ILBAGNOALESSI One" />
 											</a>
 										</li>										
 									</ul>
-								</div>
+								
 
 <!-- 								<div id="latest-releases-carousel" class="carousel slide">
 							        <div class="carousel-inner">
@@ -205,7 +205,7 @@
 
 					</section>
 
-					<ul class="products-tab-nav">
+					<ul class="products-tab-nav hidden-phone">
 						<li class="active"><a href="#details" data-toggle="tab">Details</a></li>
 						<li><a href="#video" data-toggle="tab">Video</a></li>
 						<li><a href="#tech-info" data-toggle="tab">Tech Info</a></li>
@@ -215,67 +215,78 @@
 						<li><a href="#reviews" data-toggle="tab">Reviews</a></li>
 					</ul>
 
-					<div class="products-tab tab-content">
-						<div class="tab-pane in active" id="details">
-
-							<div class="row-fluid">
-								<div class="span4">
-									<ul class="nav nav-list">
-										<li class="nav-header">Features</li>
-										<li><a href="#">Laufen Clean Coat - abrasion resistant finish.</a></li>
-										<li><a href="#">Reduces cleaning effort, increases product life and improves hygiene.</a></li>
-										<li><a href="#">One tap hole.</a></li>
-										<li><a href="#">Also available with no tap hole.</a></li>
-										<li class="nav-header">Finish</li>
-										<li><a href="#">White.</a></li>
-										<li><a href="#">Vitreous china</a></li>
-									</ul>
+					<div id="accordion" class="products-tab tab-content">
+						<a class="products-collapse-nav accordion-toggle visible-phone" data-toggle="collapse" data-parent="#accordion" href="#details">
+							Details
+						</a>
+					
+						<div class="accordion tab-pane in collapse active" id="details">
+							<div class="accordion-inner">
+								<div class="row-fluid">
+									<div class="span4">
+										<ul class="nav nav-list">
+											<li class="nav-header">Features</li>
+											<li><a href="#">Laufen Clean Coat - abrasion resistant finish.</a></li>
+											<li><a href="#">Reduces cleaning effort, increases product life and improves hygiene.</a></li>
+											<li><a href="#">One tap hole.</a></li>
+											<li><a href="#">Also available with no tap hole.</a></li>
+											<li class="nav-header">Finish</li>
+											<li><a href="#">White.</a></li>
+											<li><a href="#">Vitreous china</a></li>
+										</ul>
+									</div>
+									<div class="span4">
+										<ul class="nav nav-list">
+											<li class="nav-header">Tech Info</li>
+											<li><a href="#">Width: 1600mm.</a></li>
+											<li><a href="#">Depth: 350/500mm.</a></li>
+											<li><a href="#">Height: 165mm.</a></li>
+											<li><a href="#">Capacity: 7.5L.</a></li>
+										</ul>
+										<br>
+										<a class="muted" href="#">More information</a>
+									</div>
+									<div class="span4">
+										<img src="/assets/images/products_2013/products-pdf-sample.jpg" alt="Download PDF" />
+										<a class="btn btn-inverse">Download <b class="caret"></b></a>
+									</div>																		
 								</div>
-								<div class="span4">
-									<ul class="nav nav-list">
-										<li class="nav-header">Tech Info</li>
-										<li><a href="#">Width: 1600mm.</a></li>
-										<li><a href="#">Depth: 350/500mm.</a></li>
-										<li><a href="#">Height: 165mm.</a></li>
-										<li><a href="#">Capacity: 7.5L.</a></li>
-									</ul>
-									<br>
-									<a class="muted" href="#">More information</a>
-								</div>
-								<div class="span4">
-									<img src="/assets/images/products_2013/products-pdf-sample.jpg" alt="Download PDF" />
-									<a class="btn btn-inverse">Download <b class="caret"></b></a>
-								</div>																		
 							</div>
-
 						</div>
-						<div class="tab-pane fade" id="video">
-							<div class="row-fluid">
-								<div class="span4">
-									<ul class="nav nav-list">
-										<li class="nav-header">Features</li>
-										<li><a href="#">Laufen Clean Coat - abrasion resistant finish.</a></li>
-										<li><a href="#">Reduces cleaning effort, increases product life and improves hygiene.</a></li>
-										<li><a href="#">One tap hole.</a></li>
-										<li><a href="#">Also available with no tap hole.</a></li>
-									</ul>
-								</div>
-								<div class="span4">
-									<ul class="nav nav-list">
-										<li class="nav-header">Tech Info</li>
-										<li><a href="#">Width: 1600mm.</a></li>
-										<li><a href="#">Depth: 350/500mm.</a></li>
-									</ul>
-									<br>
-									<a class="muted" href="#">More information</a>
-								</div>
-								<div class="span4">
-									<img src="/assets/images/products_2013/products-pdf-sample.jpg" alt="Download PDF" />
-									<a class="btn btn-inverse">Download <b class="caret"></b></a>
-								</div>																		
-							</div>								
-						</div>							
-					</div>            
+
+						<a class="products-collapse-nav accordion-toggle visible-phone" data-toggle="collapse" data-parent="#accordion" href="#video">
+							Video
+						</a>
+
+						<div class="accordion tab-pane fade collapse" id="video">
+							<div class="accordion-inner">
+								<div class="row-fluid">
+									<div class="span4">
+										<ul class="nav nav-list">
+											<li class="nav-header">Features</li>
+											<li><a href="#">Laufen Clean Coat - abrasion resistant finish.</a></li>
+											<li><a href="#">Reduces cleaning effort, increases product life and improves hygiene.</a></li>
+											<li><a href="#">One tap hole.</a></li>
+											<li><a href="#">Also available with no tap hole.</a></li>
+										</ul>
+									</div>
+									<div class="span4">
+										<ul class="nav nav-list">
+											<li class="nav-header">Tech Info</li>
+											<li><a href="#">Width: 1600mm.</a></li>
+											<li><a href="#">Depth: 350/500mm.</a></li>
+										</ul>
+										<br>
+										<a class="muted" href="#">More information</a>
+									</div>
+									<div class="span4">
+										<img src="/assets/images/products_2013/products-pdf-sample.jpg" alt="Download PDF" />
+										<a class="btn btn-inverse">Download <b class="caret"></b></a>
+									</div>																		
+								</div>	
+							</div>							
+						</div>					
+					</div>  
 
 			    	<div class="products-list">
 					    <div class="row-fluid">
@@ -341,7 +352,7 @@
 
 		<?php 
 			$jsScriptPaths = [
-				"/assets/js/jquery.lazyload.min.js",
+				"/assets/js/jquery.mobile.custom.min.js",
 				"/assets/js/bootstrap-transition.js", 
 				"/assets/js/bootstrap-carousel.js",
 				"/assets/js/bootstrap-collapse.js",
@@ -349,10 +360,21 @@
 				"/assets/js/bootstrap-dropdown.js",
 				"/assets/js/reece-ocnav.js",
 				"/assets/js/reece-ajax-content-loader.js",
-				"/assets/js/reece-carousel.js"
+				"/assets/js/reece-carousel.js",
 			]; 
 		   	include_once($serverBase."/includes/foot/scripts.php");
 		?>				
+
+		<script>  
+			$(document).ready(function() {  
+			   $(".carousel").swiperight(function() {  
+			      $(".carousel").carousel('prev');  
+			    });  
+			   $(".carousel").swipeleft(function() {  
+			      $(".carousel").carousel('next');  
+			   });  
+			});  
+		</script> 
 
     </body>
 </html>

@@ -5,6 +5,7 @@
 
 //Application imports
 @import "reece-variables.less";
+@import "reece-mixins.less";
 
 // Branding Module (Customize)
 //====================================================================================================================================
@@ -237,76 +238,6 @@
 // 	}
 // }
 
-// Products Tabbed Interface Module
-//====================================================================================================================================
-//====================================================================================================================================
-
-.products-tab-nav {
-    display: table;
-    width: 100%;
-    margin: 0;
-    border-top: 1px solid darken(@lightBackground, 10%);
-
-	> li {
-		float: none;
-		display: table-cell;
-
-		> a {
-			display: block;
-			padding: 10px 0;
-			color: white;
-			text-align: center;
-			border-left: 1px solid white;
-			.border-radius(0);
-			#gradient > .vertical(lighten(black, 5%), lighten(black, 50%));
-
-			&:first-child {
-				border-left: 1px solid darken(@lightBackground, 10%);
-			}
-
-			&:hover {
-				color: white;
-				#gradient > .vertical(lighten(black, 20%), lighten(black, 65%));
-			}
-		}		
-	}
-
-	& > .active > a, & > .active > a:hover, & > .active > a:focus {
-		color: black;
-		background-color: white;
-		background-image: none;
-		.reset-filter();
-		border-top: 0;
-		border-left: 1px solid darken(@lightBackground, 10%);
-		border-right: 1px solid darken(@lightBackground, 10%);
-		border-bottom: 0;
-	}	
-}
-
-.products-tab {
-	margin: 0 0 20px;	
-	padding: 20px;
-	border-right: 1px solid darken(@lightBackground, 10%);
-	border-left: 1px solid darken(@lightBackground, 10%);
-	border-bottom: 1px solid darken(@lightBackground, 10%);
-	.box-shadow(0px 5px 10px darken(@lightBackground, 20%));
-
-	.nav-header {
-		text-transform: none;
-		font-size: 16px;
-		color: black;
-	}
-
-	.nav-list {
-		padding-left: 0;
-		padding-right: 0;
-		a {
-			font-size: 14px;
-			color: darken(@lightBackground, 25%);
-		}
-	}
-}
-
 // Main Product Content Module
 //====================================================================================================================================
 //====================================================================================================================================
@@ -438,5 +369,133 @@
 	}
 }
 
+// Products Tabbed/Accordian Interface Module
+//====================================================================================================================================
+//====================================================================================================================================
 
+.products-tab {
 
+	.accordion {
+		margin-bottom: 10px;
+	}
+
+	.tab-pane {
+		border: 1px solid darken(@lightBackground, 10%);
+	}
+
+	@media (min-width: 767px) {
+		.collapse {
+			height: auto!important; //Important declarations to override inline JS styles to make sure user always sees something
+		}
+	}
+	@media (max-width: 767px) {
+		.tab-pane {
+			display: block!important; //Important declarations to override inline JS styles to make sure user always sees something
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"!important;
+			filter: alpha(opacity=100)!important;		
+			opacity: 1!important; //Important declarations to override inline JS styles to make sure user always sees something
+		}
+		.nav {
+			margin-bottom: 10px;
+			padding-bottom: 10px;
+			border-bottom: 1px solid darken(@lightBackground, 10%);
+		}
+	}	
+}
+
+// Carousel Mini Controls Module
+//====================================================================================================================================
+//====================================================================================================================================
+
+.carousel-controls-mini {
+	display: block;
+	width: 100%;
+
+	li {
+		float: left;
+		.custom-column-item(2);
+
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+	@media (max-width: 767px) {
+
+	}	
+}
+
+.products-tab-nav {
+    display: table;
+    width: 100%;
+    margin: 0;
+    border-top: 1px solid darken(@lightBackground, 10%);
+
+	> li {
+		float: none;
+		display: table-cell;
+
+		> a {
+			display: block;
+			padding: 10px 0;
+			color: white;
+			text-align: center;
+			border-left: 1px solid white;
+			.border-radius(0);
+			#gradient > .vertical(lighten(black, 5%), lighten(black, 50%));
+
+			&:first-child {
+				border-left: 1px solid darken(@lightBackground, 10%);
+			}
+
+			&:hover {
+				color: white;
+				#gradient > .vertical(lighten(black, 20%), lighten(black, 65%));
+			}
+		}		
+	}
+
+	& > .active > a, & > .active > a:hover, & > .active > a:focus {
+		border-top: 0;
+		border-left: 1px solid darken(@lightBackground, 10%);
+		border-right: 1px solid darken(@lightBackground, 10%);
+		border-bottom: 0;
+		color: black;
+		background-color: white;
+		background-image: none;
+		.reset-filter();		
+	}
+}
+
+.products-collapse-nav {
+	padding: 10px 20px;
+	#gradient > .vertical(lighten(black, 5%), lighten(black, 50%));
+	color: white;
+
+	& > .active > a, & > .active > a:hover, & > .active > a:focus {
+		color: white;
+	}
+}
+
+.products-content {
+	margin: 0 0 20px;	
+	padding: 20px;
+	border-right: 1px solid darken(@lightBackground, 10%);
+	border-left: 1px solid darken(@lightBackground, 10%);
+	border-bottom: 1px solid darken(@lightBackground, 10%);
+	.box-shadow(0px 5px 10px darken(@lightBackground, 20%));
+
+	.nav-header {
+		text-transform: none;
+		font-size: 16px;
+		color: black;
+	}
+
+	.nav-list {
+		padding-left: 0;
+		padding-right: 0;
+		a {
+			font-size: 14px;
+			color: darken(@lightBackground, 25%);
+		}
+	}
+}

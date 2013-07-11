@@ -1,0 +1,1 @@
+!function(e){"use strict";e(document).on("click.carousel-slide.data-api","[data-carousel-slide]",function(t){t.preventDefault();var n=e(t.currentTarget),r,i=e(n.attr("data-target")||(r=n.attr("href"))&&r.replace(/.*(?=#[^\s]+$)/,"")),s=n.data("carouselSlide"),o=parseInt(s);i.carousel(o)})}(window.jQuery);

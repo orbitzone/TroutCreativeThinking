@@ -45,7 +45,7 @@
 									</a>
 					    		</div>
 					    	</div>
-
+					    	
 							<a class="carousel-control left" href="#products-mobile-carousel" data-slide="prev">‹</a>
 							<a class="carousel-control right" href="#products-mobile-carousel" data-slide="next">›</a>
 			    		</div>

@@ -9289,3 +9289,21 @@ h6 {
     padding: 0;
   }
 }
+.lt-ie9 #headCarousel {
+  padding-top: 0;
+}
+.lt-ie9 .navbar-fixed-top {
+  position: static;
+}
+.lt-ie9 .navbar-fixed-top .brand {
+  background-image: url(../images/home-2013/reece-logo-ie.png);
+  background-repeat: no-repeat;
+  background-color: white;
+  background-position: 2px center;
+}
+.lt-ie9 body {
+  min-width: 1600px;
+}
+.lt-ie9 body.home {
+  min-width: 1200px;
+}

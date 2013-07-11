@@ -379,3 +379,13 @@
 .products-list img:hover {
   box-shadow: 0 1px 7px rgba(0, 0, 0, 0.6);
 }
+.top-carousel-control .carousel-control {
+  width: auto;
+  top: -50px;
+  font-size: 80px;
+  left: auto;
+  right: 0;
+}
+.top-carousel-control .carousel-control.left {
+  right: 20px;
+}

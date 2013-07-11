@@ -1,0 +1,441 @@
+
+//Bootstrap imports
+@import "bootstrap/mixins.less";
+@import "bootstrap/variables.less";
+
+//Application imports
+@import "reece-variables.less";
+
+// Branding Module (Customize)
+//====================================================================================================================================
+//====================================================================================================================================
+
+.page-branding {
+    &.text-brand {
+        color: darken(@lightBackground, 10%);
+    }
+    &.sale-branding {
+        background-repeat: no-repeat;
+    }    
+}
+
+// Product List Module
+//====================================================================================================================================
+//====================================================================================================================================
+
+.product-filter {
+	margin-top: 10px;
+	padding: 10px;
+	background-color: @lightBackground;
+
+	&:first-child {
+		margin-top: 0;
+	}
+
+	.product-filter-head {
+		padding-bottom: 5px;
+		border-bottom: 1px solid darken(@lightBackground, 10%);
+		font-weight: bold;
+		cursor: pointer;
+
+	}
+
+	.filter-options {
+		a {
+			font-size: 11px;
+			float: right;
+
+			&:first-child {
+				font-size: inherit;
+				float: left;
+			}
+		}		
+	}
+
+	.nav {
+		margin: 0;
+
+		li {
+			margin-top: 5px;
+		}
+
+		@media (max-width: 767px) {
+			height: 0;
+			margin: 0;
+
+			li a {
+				padding: 5px;
+				margin-top: 5px;
+				text-align: center;			
+			}
+		}
+
+		@media (min-width: 767px) {
+			height: auto!important; //Override inline JS to make sure filter list is always open on desktop and tablet
+		}
+	}
+	.subnav {
+		margin-bottom: 0;
+	}
+}
+
+// Product List Column Structure Module
+//====================================================================================================================================
+//====================================================================================================================================
+
+.products-list {
+
+	// .product-block {
+	// 	position: relative;
+	// 	margin-top: @fluidGridGutterWidth;
+	// }
+
+	.row-fluid:first-child {
+		.product-block {
+			margin-top: 0;
+		}
+	}	
+
+	// .product-title, .product-desc, .product-price {
+	// 	display: block;
+	// 	margin-bottom: 5px;
+	// 	font-size: 12px;
+	// 	font-weight: normal;
+	// }
+
+	// .product-title {
+	// 	font-weight: bold;
+	// }	
+
+	@media (max-width: 767px) {
+
+		.product-block {
+			display: none; //Only show the first row on mobile view
+		}	
+		.row-fluid:first-child {
+			.product-block {
+				display: block;
+				margin-top: @fluidGridGutterWidth;
+			}
+		}		
+	}
+}
+
+// Product Block Structure Module
+//====================================================================================================================================
+//====================================================================================================================================
+
+.product-block {
+	position: relative;
+	margin-top: @fluidGridGutterWidth / 2;
+}
+.product-title, .product-desc, .product-price {
+	display: block;
+	margin-bottom: 5px;
+	font-size: 12px;
+	font-weight: normal;
+}
+.product-title {
+	font-weight: bold;
+}	
+
+// Sort Filter Module
+//====================================================================================================================================
+//====================================================================================================================================
+
+.sort-filter {	
+	margin: 20px 0;
+	//border-bottom: 1px solid darken(@lightBackground, 10%);
+
+	.dropdown { 
+		padding: 10px;	
+		border: 1px solid darken(@lightBackground, 10%);
+	}
+
+	.dropdown-menu {
+  		.border-radius(0);	
+	}
+}
+
+// More Products Button Module
+//====================================================================================================================================
+//====================================================================================================================================
+
+.more-products-button {
+	display: block;
+	position: relative;
+	padding: 10px 0;
+	text-align: center;
+	color: white;
+	#gradient > .vertical(lighten(@productsButtonBackground, 30%), @productsButtonBackground);
+
+	&:hover {
+		color: white;
+		text-decoration: none;
+		#gradient > .vertical(lighten(@productsButtonBackground, 35%), lighten(@productsButtonBackground, 5%));
+
+		&:after {
+			border-top-color: lighten(@productsButtonBackground, 5%);
+		}
+	}
+
+	//We Can't extend correctly because less fails so lets refine..
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		bottom: -10px;
+		right: 50%;
+		margin-right: -10px;
+		width: 0;
+		height: 0;
+		vertical-align: top;
+		border-top: 10px solid white;
+		border-right: 10px solid transparent;
+		border-left: 10px solid transparent;
+		z-index: 9999;
+	}
+
+	//We Can't extend correctly because less fails so lets refine..
+	&:after {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		bottom: -20px;
+		right: 50%;
+		margin-right: -40px;
+		width: 0;
+		height: 0;
+		vertical-align: top;
+		border-top: 20px solid #747171;
+		border-right: 40px solid transparent;
+		border-left: 40px solid transparent;
+	}
+
+	.more-products-information {
+		position: absolute;
+		right: 10px;
+	}
+
+	@media (max-width: 767px) {
+		text-align: left;
+		padding-left: 10px;	
+	}	
+}
+
+// Center Image Module
+//====================================================================================================================================
+//====================================================================================================================================
+
+// .image-center {
+// 	position: relative;
+
+// 	&.vertical {
+// 		min-height: 300px;
+// 		display: table-cell;
+// 		vertical-align: middle
+// 	}
+// }
+
+// Products Tabbed Interface Module
+//====================================================================================================================================
+//====================================================================================================================================
+
+.products-tab-nav {
+    display: table;
+    width: 100%;
+    margin: 0;
+    border-top: 1px solid darken(@lightBackground, 10%);
+
+	> li {
+		float: none;
+		display: table-cell;
+
+		> a {
+			display: block;
+			padding: 10px 0;
+			color: white;
+			text-align: center;
+			border-left: 1px solid white;
+			.border-radius(0);
+			#gradient > .vertical(lighten(black, 5%), lighten(black, 50%));
+
+			&:first-child {
+				border-left: 1px solid darken(@lightBackground, 10%);
+			}
+
+			&:hover {
+				color: white;
+				#gradient > .vertical(lighten(black, 20%), lighten(black, 65%));
+			}
+		}		
+	}
+
+	& > .active > a, & > .active > a:hover, & > .active > a:focus {
+		color: black;
+		background-color: white;
+		background-image: none;
+		border-top: 0;
+		border-left: 1px solid darken(@lightBackground, 10%);
+		border-right: 1px solid darken(@lightBackground, 10%);
+		border-bottom: 0;
+	}	
+}
+
+.products-tab {
+	margin: 0 0 20px;	
+	padding: 20px;
+	border-right: 1px solid darken(@lightBackground, 10%);
+	border-left: 1px solid darken(@lightBackground, 10%);
+	border-bottom: 1px solid darken(@lightBackground, 10%);
+	.box-shadow(0px 5px 10px darken(@lightBackground, 20%));
+
+	.nav-header {
+		text-transform: none;
+		font-size: 16px;
+		color: black;
+	}
+
+	.nav-list {
+		padding-left: 0;
+		padding-right: 0;
+		a {
+			font-size: 14px;
+			color: darken(@lightBackground, 25%);
+		}
+	}
+}
+
+// Main Product Content Module
+//====================================================================================================================================
+//====================================================================================================================================
+
+.products-content {
+	h2, h3 {
+		margin-top: 0;
+	}
+}
+
+// Main Product Content Single Module
+//====================================================================================================================================
+//====================================================================================================================================
+
+.products-content-single {
+	margin-bottom: 20px;
+
+	h2, h3 {
+		margin: 0;
+	}
+
+	.btn {
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-top: 10px;
+	}
+
+	.btn-bar {
+		.btn {
+			margin-top: 0;
+		}
+		.btn-block {
+			margin-top: 10px;
+		}
+	}
+
+	.btn-block + .btn-block {
+		margin-top: 10px;
+	}
+
+	.dropdown-menu {
+		min-width: 200%; //Double min width of dropdown
+		left: -110%; //Move it back half that amount + padding
+		padding: 5%;
+
+		@media (max-width: 767px) {
+			width: 100%;
+			min-width: 0;
+			left: 0;
+			padding: 5% 0;
+			text-align: center;
+		}
+	}
+}
+
+// Button Group Styles (Bootstrap Extention)
+//====================================================================================================================================
+//====================================================================================================================================
+
+.btn-bar {
+	display: inline-block;
+	.ie7-inline-block();
+	padding: 4px 12px;
+	margin-bottom: 0; // For input.btn
+	font-size: @baseFontSize;
+	line-height: @baseLineHeight;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	.buttonBackground(@btnBackground, @btnBackgroundHighlight, @grayDark, 0 1px 1px rgba(255,255,255,.75));
+	border: 1px solid @btnBorder;
+	*border: 0; // Remove the border to prevent IE7's black border on input:focus
+	border-bottom-color: darken(@btnBorder, 10%);
+	.border-radius(@baseBorderRadius);
+	.ie7-restore-left-whitespace(); // Give IE7 some love
+	.box-shadow(~"inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05)");
+}
+
+// Button Group Styles (Bootstrap Extention)
+//====================================================================================================================================
+//====================================================================================================================================
+
+//Override specificity
+.btn.text-left {
+	&.text-left {
+		text-align: left;
+	}
+	&.text-right {
+		text-align: right;
+	}
+	&.text-center {
+		text-align: center;
+	}		
+}
+
+// Image Hover Effects
+//====================================================================================================================================
+//====================================================================================================================================
+
+.carousel-hover, .products-list img {
+	-webkit-transition: 0.25s box-shadow ease-in-out;
+	-moz-transition: 0.25s box-shadow ease-in-out;
+	-o-transition: 0.25s box-shadow ease-in-out;
+	-ms-transition: 0.25s box-shadow ease-in-out;
+	transition: 0.25s box-shadow ease-in-out;	
+	
+	&:hover {
+		box-shadow: 0 1px 7px rgba(0, 0, 0, 0.6);
+	}					
+}
+
+// Custom Carousel Control Module
+//====================================================================================================================================
+//====================================================================================================================================
+
+.top-carousel-control {
+
+	//Need to use some magic numbers here as the layout does not accommodate 'special buttons' very well
+	.carousel-control {
+		width: auto;
+		top: -50px;
+		font-size: 80px;
+		left: auto;
+		right: 0;
+
+		&.left {
+			right: 20px;
+		}
+	}
+}
+
+
+

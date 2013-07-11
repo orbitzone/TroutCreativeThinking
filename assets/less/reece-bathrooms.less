@@ -10,19 +10,37 @@
 //====================================================================================================================================
 //====================================================================================================================================
 
-body.happy-tips,
-body.bathroom-moments,
-body.light-gradient,
-body.light-gradient .ocmain-wrapper {
-    background: #eaeaea;
-    background: -moz-linear-gradient(top,  #eaeaea 50%, #cccccc 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#eaeaea), color-stop(100%,#cccccc));
-    background: -webkit-linear-gradient(top,  #eaeaea 50%,#cccccc 100%);
-    background: -o-linear-gradient(top,  #eaeaea 50%,#cccccc 100%);
-    background: -ms-linear-gradient(top,  #eaeaea 50%,#cccccc 100%);
-    background: linear-gradient(to bottom,  #eaeaea 50%,#cccccc 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#cccccc',GradientType=0 );
-    background-repeat: repeat-x;
+// body.happy-tips,
+// body.bathroom-moments,
+// body.light-gradient,
+// body.light-gradient .ocmain-wrapper {
+//     background: @lightBackground;
+//     background: -moz-linear-gradient(top, @lightBackground 50%, darken(@lightBackground, 15%) 100%);
+//     background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#eaeaea), color-stop(100%,darken(@lightBackground, 15%)));
+//     background: -webkit-linear-gradient(top, @lightBackground 50%, darken(@lightBackground, 15%) 100%);
+//     background: -o-linear-gradient(top, @lightBackground 50%, darken(@lightBackground, 15%) 100%);
+//     background: -ms-linear-gradient(top, @lightBackground 50%, darken(@lightBackground, 15%) 100%);
+//     background: linear-gradient(to bottom, @lightBackground 50%, darken(@lightBackground, 15%) 100%);
+//     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#cccccc',GradientType=0 );
+//     background-repeat: repeat-x;
+// }
+
+// Branding Module (Customize)
+//====================================================================================================================================
+//====================================================================================================================================
+
+.page-branding {
+    &.text-brand {
+        color: @brandingBathrooms;
+    }
+    &.sale-branding {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        width: 77px;
+        height: 32px;
+        background-image: url("@{baseImagePath}/products_2013/products-bathroom-sale-icon.png");
+    }    
 }
 
 // Main Item Module
@@ -569,10 +587,10 @@ RESPONSIVE OVERRIDES
     .main-header h1 {
         width: auto;
     }
-    .happy-tips .ocmain-wrapper,
-    .bathroom-moments .ocmain-wrapper {
-        background-color: #eaeaea;
-    }
+    // .happy-tips .ocmain-wrapper,
+    // .bathroom-moments .ocmain-wrapper {
+    //     background-color: #eaeaea;
+    // }
     .ocnav-wrapper .nav li > .nav li a i {
         color: @hzPrimary;
     }

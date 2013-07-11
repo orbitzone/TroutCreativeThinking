@@ -1,33 +1,34 @@
-// //Set up guarded mixins
-// .setHeight(@h) when (ispercentage(@h)) { 
-//    @height: 1024px;
-// }
+	
+	//Unused
+	.custom-column (@columns: 3) {
+		.clearfix();
+		width: 100%;
+		margin: 0;
+		list-style-type: none;		
 
-// .setHeight(@h) when not (ispercentage(@h)) { 
-//    @height: @h;
-// }
+		li {
+			float: left;
+			.custom-column-item(@columns);
 
-// //set up main height
-// @mainHeight: 50%;
-// body { height: @mainHeight;}
+			&:first-child {
+				margin-left: 0;
+			}
 
-// //call it by itself to make global
-// //.setHeight(@mainHeight); <-this failed (appears to be a bug)
-// .setHeight(50%); // <-this worked
+			@media (max-width: 979px) {
+				margin-left: 0;
+				.custom-column-item(@columns + 3);
 
-// .subsection { height: @height; /* just to show it is setting it */}
+				& + li {
+					margin-left: 0;
+				}	
+			}			
+		}
+	}
 
-// //use it for other globals
-// @textAreaHeight: 0.5 * @height;
-// @buttonHeight: 0.2 * @height;
-
-// textarea { height: @textAreaHeight}
-// button { height: @buttonHeight}
-
-// //override it locally
-// body.fixedHeight {
-//     .setHeight(300px);
-//     @textAreaHeight: 0.333 * @height;
-//     height: @height;
-//     textarea { height: @textAreaHeight}
-// }
+	//Unused
+	.custom-column-item (@columns: 3) {
+		margin-left: @fluidGridGutterWidth;
+		*margin-left: @fluidGridGutterWidth - (.5 / @gridRowWidth * 100 * 1%);			
+		width: (@fluidGridColumnWidth * @columns) + (@fluidGridGutterWidth * (@columns - 1));
+		*width: (@fluidGridColumnWidth * @columns) + (@fluidGridGutterWidth * (@columns - 1)) - (.5 / @gridRowWidth * 100 * 1%);
+	}

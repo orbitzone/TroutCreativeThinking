@@ -134,12 +134,10 @@
 
 							</div>
 							<div class="span5">
-								<hgroup class="clearfix">
-									<h3 class="pull-left">
-										$2245.00
-										<small class="pull-left">gst inclusive</small>
-									</h3>
-								</hgroup>
+								<h3>
+									$2245.00
+									<p><small>gst inclusive</small></p>
+								</h3>
 
 								<hr>
 

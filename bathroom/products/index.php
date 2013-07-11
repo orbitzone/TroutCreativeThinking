@@ -77,13 +77,13 @@
 						        <div class="carousel-inner">
 						            
 								    <div class="active item">
-								        <a href="/the-block">
+								        <a href="#">
 								            <img src="/assets/images/products_2013/products-bathroom-be-free.jpg" alt="Be Free" />
 								        </a>
 								    </div>
 
 								    <div class="item">
-								        <a href="/the-block">
+								        <a href="#">
 								            <img src="/assets/images/products_2013/products-plumbing-fresh-approach-mobile.jpg" alt="Be Free" />
 								        </a>
 								    </div>
@@ -229,7 +229,7 @@
 
 								</div>
 								<a class="carousel-control left page-branding text-brand" href="#latest-releases-carousel" data-slide="prev">‹</a>
-					        	<a class="carousel-control right page-branding text-brand" href="#latest-releases-carousel" data-slid e="next">›</a>	
+					        	<a class="carousel-control right page-branding text-brand" href="#latest-releases-carousel" data-slide="next">›</a>	
 							</div>
 
 						    <hr>

@@ -84,7 +84,7 @@
 
 								    <div class="item">
 								        <a href="/the-block">
-								            <img src="/assets/images/products_2013/products-bathroom-be-free.jpg" alt="Be Free" />
+								            <img src="/assets/images/products_2013/products-plumbing-fresh-approach-mobile.jpg" alt="Be Free" />
 								        </a>
 								    </div>
 						            

@@ -339,5 +339,11 @@
 		   	include_once($serverBase."/includes/foot/scripts.php");
 		?>			
 
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#products-carousel').carousel();
+			});			
+		</script>
+
     </body>
 </html>

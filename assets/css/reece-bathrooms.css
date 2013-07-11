@@ -25,19 +25,16 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-body.happy-tips,
-body.bathroom-moments,
-body.light-gradient,
-body.light-gradient .ocmain-wrapper {
-  background: #eaeaea;
-  background: -moz-linear-gradient(top, #eaeaea 50%, #cccccc 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #eaeaea), color-stop(100%, #cccccc));
-  background: -webkit-linear-gradient(top, #eaeaea 50%, #cccccc 100%);
-  background: -o-linear-gradient(top, #eaeaea 50%, #cccccc 100%);
-  background: -ms-linear-gradient(top, #eaeaea 50%, #cccccc 100%);
-  background: linear-gradient(to bottom, #eaeaea 50%, #cccccc 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eaeaea', endColorstr='#cccccc', GradientType=0);
-  background-repeat: repeat-x;
+.page-branding.text-brand {
+  color: #db1e24;
+}
+.page-branding.sale-branding {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 77px;
+  height: 32px;
+  background-image: url("../images/products_2013/products-bathroom-sale-icon.png");
 }
 .main-item {
   background: #fff;
@@ -514,10 +511,6 @@ RESPONSIVE OVERRIDES
   }
   .main-header h1 {
     width: auto;
-  }
-  .happy-tips .ocmain-wrapper,
-  .bathroom-moments .ocmain-wrapper {
-    background-color: #eaeaea;
   }
   .ocnav-wrapper .nav li > .nav li a i {
     color: #db2020;

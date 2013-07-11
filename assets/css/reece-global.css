@@ -9023,6 +9023,13 @@ h6 {
     background: #2b2b2b;
   }
 }
+.breadcrumb {
+  margin-top: 20px;
+  background-color: #eaeaea;
+}
+.breadcrumb a {
+  color: #b7b7b7;
+}
 .main-header .header-container,
 .main-footer .footer-container,
 .masonry-container,
@@ -9175,6 +9182,11 @@ h6 {
 }
 .social-footer li.plumbing a:hover {
   color: #0d2e56;
+}
+@media (max-width: 480px) {
+  .social-footer li {
+    margin: 0 -1px 0 0;
+  }
 }
 .social-footer a {
   font-size: 12px;

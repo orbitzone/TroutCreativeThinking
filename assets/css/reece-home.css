@@ -32,10 +32,6 @@
 .navbar-container {
   max-width: 1200px;
 }
-.navbar-fixed-top .brand {
-  background-image: url('../images/home-2013/reece-logo-mobile.png');
-  background-size: 82% auto;
-}
 .content-container .inner-wrapper {
   position: relative;
   margin: 0 10px;

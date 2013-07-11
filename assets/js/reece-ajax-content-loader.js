@@ -67,8 +67,7 @@ $(document).ready(function(){
             },
 
             //Templating function
-            createMarkup: function (event, data, $clickedEl) {
-                event.preventDefault();
+            createMarkup: function (data, $clickedEl) {
                 var productBlockTemplate = tmpl("product_block_template"),
                     productBlockWrap = $('<div style="display: none;" class="row-fluid"/>'),
                     html = "";

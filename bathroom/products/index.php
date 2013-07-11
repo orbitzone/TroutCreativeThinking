@@ -212,17 +212,7 @@
 															<span class="product-price">$xxx.xx</span>
 														</h4>
 													</div>							    		
-										    	</div>
-										    	<div class="product-block span3">
-										    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-latest-product-1.jpg" /></a>
-													<div class="product-info">
-														<h4>
-															<a class="product-title" href="#">Caroma Pearl</a>
-															<span class="product-desc">Freestanding bath</span>
-															<span class="product-price">$xxx.xx</span>
-														</h4>
-													</div>							    		
-										    	</div>					    							    							    	
+										    	</div>				    							    							    	
 										    </div>
 										</div>	
 									</div>									
@@ -307,27 +297,7 @@
 															<span class="product-price">$xxx.xx</span>
 														</h4>
 													</div>							    		
-										    	</div>
-										    	<div class="product-block span3">
-										    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-winter-warmers-product-1.jpg" /></a>
-													<div class="product-info">
-														<h4>
-															<a class="product-title" href="#">Caroma Pearl</a>
-															<span class="product-desc">Freestanding bath</span>
-															<span class="product-price">$xxx.xx</span>
-														</h4>
-													</div>							    		
-										    	</div>
-										    	<div class="product-block span3">
-										    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-winter-warmers-product-1.jpg" /></a>
-													<div class="product-info">
-														<h4>
-															<a class="product-title" href="#">Caroma Pearl</a>
-															<span class="product-desc">Freestanding bath</span>
-															<span class="product-price">$xxx.xx</span>
-														</h4>
-													</div>							    		
-										    	</div>					    							    							    	
+										    	</div>				    							    							    	
 										    </div>
 										</div>	
 									</div>									

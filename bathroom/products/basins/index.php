@@ -33,7 +33,7 @@
 
 				    <!-- CONTENT FOR MOBILE -->
 
-				    	<div id="products-mobile-carousel" class="carousel slide visible-phone">
+				    	<div id="products-mobile-carousel" data-bs-carousel="carousel" data-bs-carousel-interval="0" class="carousel slide visible-phone">
 					    	<div class="carousel-inner">
 					    		<div class="item">
 									<a href="#">
@@ -125,7 +125,7 @@
 
 						<section class="products-content span9">
 							<h2>Basins</h2>
-							<div id="products-carousel" class="carousel slide carousel-hover hidden-phone">
+							<div id="products-carousel" class="carousel slide carousel-hover hidden-phone" data-bs-carousel="carousel" data-bs-carousel-interval="0" >
 						        <div class="carousel-inner">
 						            
 								    <div class="active item">
@@ -251,7 +251,7 @@
 							    	</div>					    							    							    	
 							    </div>
 
-							    <a class="more-products-button" href="javascript:void(0)">Show more basins</span><span class="more-products-information">Viewing 1 - 25 of 350</span></a>
+							    <a data-load-content="products" class="more-products-button" href="javascript:void(0)">Show more basins</span><span class="more-products-information">Viewing 1 - 25 of 350</span></a>
 
 							</div>	
 
@@ -278,18 +278,21 @@
 
 		<?php 
 			$jsScriptPaths = [
-				"/assets/js/jquery.lazyload.min.js",
+				"/assets/js/jquery.mobile.custom.min.js",
 				"/assets/js/bootstrap-transition.js", 
 				"/assets/js/bootstrap-carousel.js",
 				"/assets/js/bootstrap-collapse.js",
 				"/assets/js/bootstrap-dropdown.js",
 				"/assets/js/reece-ocnav.js",
-				"/assets/js/reece-ajax-content-loader.js"
+				"/assets/js/micro-template.js",
+				"/assets/js/reece-ajax-content-loader.js",
+				"/assets/js/reece-carousel.js"
 			]; 
 		   	include_once($serverBase."/includes/foot/scripts.php");
 		?>
 
 		<script type="text/html" id="product_block_template">
+
 			<div class="product-block span3">
 				<a href="#">
 					<img src="<%=image%>">
@@ -300,6 +303,7 @@
 					<span class="product-price"><%=productPrice%></span>
 				</h4>
 			</div>
+
 		</script>				
 
     </body>

@@ -16,13 +16,9 @@
 
 		<link href="/assets/css/font-awesome.css" rel="stylesheet">
 
-		<!-- [if lt IE 9]>
-			<link href="/assets/css/reece-ie.css" rel="stylesheet" type="text/css">
-		<![endif]-->
+		<!-- [if lt IE 9]><link href="/assets/css/reece-ie.css" rel="stylesheet" type="text/css"><![endif]-->
 
-		<!-- [if IE 7]>
-			<link href="/assets/css/font-awesome-ie7.css" rel="stylesheet" type="text/css">
-		<![endif] -->
+		<!-- [if IE 7]><link href="/assets/css/font-awesome-ie7.css" rel="stylesheet" type="text/css"><![endif] -->
 
 		<script src="/assets/js/modernizr-2.6.2.js" type="text/javascript"></script>
 

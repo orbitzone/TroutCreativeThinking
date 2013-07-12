@@ -18,7 +18,7 @@
 
 		<!-- [if lt IE 9]>
 			<link href="/assets/css/reece-ie.css" rel="stylesheet" type="text/css">
-		<!--<![endif]-->
+		<![endif]-->
 
 		<!-- [if IE 7]>
 			<link href="/assets/css/font-awesome-ie7.css" rel="stylesheet" type="text/css">

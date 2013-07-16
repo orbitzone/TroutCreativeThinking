@@ -37,12 +37,12 @@
 					    	<div class="carousel-inner">
 					    		<div class="item">
 									<a href="#">
-										<img src="/assets/images/products_2013/products-plumbing-fresh-approach-mobile.jpg" alt="Fresh Approach" />
+										<img src="/assets/images/products_2013/products-plumbing-be-free-mobile.jpg" alt="Fresh Approach" />
 									</a>
 					    		</div>
 					    		<div class="item active">
 									<a href="#">
-										<img src="/assets/images/products_2013/products-plumbing-fresh-approach-mobile.jpg" alt="Fresh Approach" />
+										<img src="/assets/images/products_2013/products-plumbing-be-free-mobile.jpg" alt="Fresh Approach" />
 									</a>
 					    		</div>
 					    	</div>

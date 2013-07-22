@@ -8,7 +8,7 @@
 		"Bathroom Basins" => "/bathroom/products/basins"
 	);
 
-	$navigationItems = [
+	$navigationItems = array(
 		"Bathrooms",
 		"Plumbing",
 		"Specialised Solutions",
@@ -16,9 +16,9 @@
 		"About Us",
 		"Store Finder",
 		"My Account"
-	];
+	);
 
-	$happyzoneNavigationItems = [
+	$happyzoneNavigationItems = array(
 		"Products",
 		"Bathroom Planner",
 		"Brochures",
@@ -27,7 +27,7 @@
 		"Events",
 		"Bathroom Moments",
 		"News"
-	];
+	);
 
 	$mobileNavigationItems = array (
 		"Bathrooms" => array (

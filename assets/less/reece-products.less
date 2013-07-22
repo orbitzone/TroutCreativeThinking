@@ -38,6 +38,10 @@
 	padding: 10px;
 	background-color: @lightBackground;
 
+	a {
+		color: darken(@lightBackground, 45%);
+	}
+
 	&:first-child {
 		margin-top: 0;
 	}
@@ -48,6 +52,9 @@
 		font-weight: bold;
 		cursor: pointer;
 
+		@media (max-width: 767px) {
+			border-bottom: 0;
+		}
 	}
 
 	.filter-options {
@@ -59,7 +66,7 @@
 				font-size: inherit;
 				float: left;
 			}
-		}		
+		}
 	}
 
 	.nav {
@@ -74,9 +81,11 @@
 			margin: 0;
 
 			li a {
-				padding: 5px;
+				padding: 10px;
 				margin-top: 5px;
-				text-align: center;			
+				//text-align: center;	
+				#gradient > .vertical(darken(@lightBackground, 5%), darken(@lightBackground, 10%));
+				.border-radius(4px);
 			}
 		}
 

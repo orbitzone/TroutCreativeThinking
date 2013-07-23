@@ -2,11 +2,11 @@
 	<?php include_once($_SERVER['DOCUMENT_ROOT']."/includes/variables/variables.php"); ?>
 
 	<?php 
-		$cssScriptPaths = [
-			"/assets/css/reece-products.css",
-			"/assets/css/reece-bathrooms.css"			
-		]; 
-	   	include_once($serverBase."/includes/head/head-generic.php");
+	  	$cssScriptPaths = array(
+	  		"/assets/css/reece-products.css",
+	  		"/assets/css/reece-bathrooms.css"			
+	  	); 
+	  	include_once($serverBase."/includes/head/head-generic.php");
 	?>		
 
     <body>
@@ -88,18 +88,18 @@
 		?>	
 
 		<?php 
-			$jsScriptPaths = [
-				"/assets/js/jquery.mobile.custom.min.js",
-				"/assets/js/bootstrap-transition.js", 
-				"/assets/js/bootstrap-carousel.js",
-				"/assets/js/bootstrap-collapse.js",
-				"/assets/js/bootstrap-tab.js",
-				"/assets/js/bootstrap-dropdown.js",
-				"/assets/js/reece-ocnav.js",
-				"/assets/js/reece-ajax-content-loader.js",
-				"/assets/js/reece-carousel.js",
-			]; 
-		   	include_once($serverBase."/includes/foot/scripts.php");
+		  	$jsScriptPaths = array(
+		  		"/assets/js/jquery.mobile.custom.min.js",
+		  		"/assets/js/bootstrap-transition.js", 
+		  		"/assets/js/bootstrap-carousel.js",
+		  		"/assets/js/bootstrap-collapse.js",
+		  		"/assets/js/bootstrap-tab.js",
+		  		"/assets/js/bootstrap-dropdown.js",
+		  		"/assets/js/reece-ocnav.js",
+		  		"/assets/js/reece-ajax-content-loader.js",
+		  		"/assets/js/reece-carousel.js",
+		  	); 
+		  	include_once($serverBase."/includes/foot/scripts.php");
 		?>				
 
 		<script>  

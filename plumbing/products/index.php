@@ -2,11 +2,11 @@
 	<?php include_once($_SERVER['DOCUMENT_ROOT']."/includes/variables/variables.php"); ?>
 
 	<?php 
-		$cssScriptPaths = [
-			"/assets/css/reece-products.css",
-			"/assets/css/reece-plumbing.css"			
-		]; 
-	   	include_once($serverBase."/includes/head/head-generic.php");
+	  	$cssScriptPaths = array(
+	  		"/assets/css/reece-products.css",
+	  		"/assets/css/reece-plumbing.css"			
+	  	); 
+	  	include_once($serverBase."/includes/head/head-generic.php");
 	?>		
 
     <body>
@@ -367,15 +367,15 @@
 		?>
 
 		<?php 
-			$jsScriptPaths = [
-				"/assets/js/jquery.lazyload.min.js", 
-				"/assets/js/bootstrap-carousel.js",
-				"/assets/js/bootstrap-collapse.js",
-				"/assets/js/bootstrap-transition.js",
-				"/assets/js/reece-ocnav.js"
-			]; 
-		   	include_once($serverBase."/includes/foot/scripts.php");
-		?>
+		  	$jsScriptPaths = array(
+		  		"/assets/js/jquery.lazyload.min.js", 
+		  		"/assets/js/bootstrap-carousel.js",
+		  		"/assets/js/bootstrap-collapse.js",
+		  		"/assets/js/bootstrap-transition.js",
+		  		"/assets/js/reece-ocnav.js"
+		  	); 
+		  	include_once($serverBase."/includes/foot/scripts.php");
+		?>			
 
     </body>
 </html>

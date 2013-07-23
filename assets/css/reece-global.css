@@ -7466,7 +7466,12 @@ h6 {
   margin: 0 20px;
 }
 .navbar-fixed-top .brand {
-  margin-left: 0;
+  margin-left: 20px;
+}
+@media (max-width: 979px) {
+  .navbar-fixed-top .brand {
+    margin-left: 0;
+  }
 }
 .navbar-inner {
   background: #555;
@@ -7560,6 +7565,10 @@ h6 {
 }
 .subnavbar ul.nav li {
   display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
   padding: 0 15px 0 0;
 }
 .subnavbar ul.nav li a {

@@ -156,7 +156,11 @@ h1, h2, h3, h4, h5, h6 {
 //====================================================================================================================================
 
 .navbar-fixed-top .brand {
-    margin-left: 0;
+    margin-left: 20px;
+
+    @media (max-width: 979px) {
+        margin-left: 0;
+    }       
 }
 
 // Navigation Modules
@@ -256,6 +260,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .subnavbar ul.nav li {
     display: inline-block;
+    .ie7-inline-block();
     padding: 0 15px 0 0;
 }
 .subnavbar ul.nav li a {

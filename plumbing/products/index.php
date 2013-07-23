@@ -352,9 +352,9 @@
 				</div>
 		    </div>
 
-			<?php 
+			<?php
 			   	include_once($serverBase."/includes/foot/foot-generic.php");
-			?>		
+			?>
 
 		</div>
 
@@ -364,7 +364,7 @@
 	   			"activeMenuItem" => "Bathroom Moments"
 	   		);
 		   	include_once($serverBase."/includes/nav/nav-mobile.php");
-		?>	
+		?>
 
 		<?php 
 			$jsScriptPaths = [
@@ -375,7 +375,7 @@
 				"/assets/js/reece-ocnav.js"
 			]; 
 		   	include_once($serverBase."/includes/foot/scripts.php");
-		?>			
+		?>
 
     </body>
 </html>

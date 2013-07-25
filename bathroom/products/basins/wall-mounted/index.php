@@ -45,7 +45,7 @@
 									
 									<div class="carousel-inner">
 										<div class="active item" data-slide-number="0"><img src="/assets/images/products_2013/products-product-shot-1.jpg" alt="Laufen ILBAGNOALESSI One" /></div>
-										<div class="item" data-slide-number="1"><img src="/assets/images/products_2013/products-plumbing-latest-releases-1.jpg" alt="Laufen ILBAGNOALESSI One" /></div>
+										<div class="item" data-slide-number="1"><img src="/assets/images/products_2013/products-product-shot-1.jpg" alt="Laufen ILBAGNOALESSI One" /></div>
 										<div class="item" data-slide-number="2"><img src="/assets/images/products_2013/products-product-shot-1.jpg" alt="Laufen ILBAGNOALESSI One" /></div>
 									</div>
 
@@ -54,37 +54,31 @@
 								<ul class="thumbnails carousel-controls-mini">
 									<li>
 										<a class="thumbnail" href="#product-shots-carousel" data-carousel-slide="0">
-											<!-- Replace with smaller thumbnails -->
 											<img src="/assets/images/products_2013/products-product-shot-1.jpg" alt="Laufen ILBAGNOALESSI One" />
 										</a>
 									</li>
 									<li>
 										<a class="thumbnail" href="#product-shots-carousel" data-carousel-slide="1">
-											<!-- Replace with smaller thumbnails -->
-											<img src="/assets/images/products_2013/products-plumbing-latest-releases-1.jpg" alt="Laufen ILBAGNOALESSI One" />
+											<img src="/assets/images/products_2013/products-product-shot-1.jpg" alt="Laufen ILBAGNOALESSI One" />
 										</a>
 									</li>
 									<li>
 										<a class="thumbnail" href="#product-shots-carousel" data-carousel-slide="2">
-											<!-- Replace with smaller thumbnails -->
 											<img src="/assets/images/products_2013/products-product-shot-1.jpg" alt="Laufen ILBAGNOALESSI One" />
 										</a>
 									</li>
 									<li>
 										<a class="thumbnail" href="#product-shots-carousel" data-carousel-slide="0">
-											<!-- Replace with smaller thumbnails -->
 											<img src="/assets/images/products_2013/products-product-shot-1.jpg" alt="Laufen ILBAGNOALESSI One" />
 										</a>
 									</li>
 									<li>
 										<a class="thumbnail" href="#product-shots-carousel" data-carousel-slide="1">
-											<!-- Replace with smaller thumbnails -->
-											<img src="/assets/images/products_2013/products-plumbing-latest-releases-1.jpg" alt="Laufen ILBAGNOALESSI One" />
+											<img src="/assets/images/products_2013/products-product-shot-1.jpg" alt="Laufen ILBAGNOALESSI One" />
 										</a>
 									</li>
 									<li>
 										<a class="thumbnail" href="#product-shots-carousel" data-carousel-slide="2">
-											<!-- Replace with smaller thumbnails -->
 											<img src="/assets/images/products_2013/products-product-shot-1.jpg" alt="Laufen ILBAGNOALESSI One" />
 										</a>
 									</li>																			
@@ -100,12 +94,21 @@
 								<hr>
 
 								<p>The gentle, rounded shapes of ILBAGNOALESSI One reflect the work of nature itself - inspired by the idea of a stone that has been smoothed by water over time.</p>
+								<p>The gentle, rounded shapes of ILBAGNOALESSI One reflect the work of nature itself.</p>
+
+								<p>The gentle, rounded shapes of ILBAGNOALESSI One reflect.</p>
 
 								<div class="row-fluid">
 									<div class="span7 text-center">
 		
-										<img src="/assets/images/products_2013/products-seven-year-warranty.jpg" />
-										<!-- <img style="padding-top: 20%;" src="/assets/images/products_2013/products-warranty-collection.jpg" /> -->
+										<div class="image-center">
+										<!-- <img src="/assets/images/products_2013/products-three-year-warranty.jpg" />
+											<img src="/assets/images/products_2013/products-three-year-warranty.jpg" />
+											<img src="/assets/images/products_2013/products-three-year-warranty.jpg" />
+											<img src="/assets/images/products_2013/products-three-year-warranty.jpg" /> -->
+											<!-- <img src="/assets/images/products_2013/products-seven-year-warranty.jpg" /> -->
+											<img src="/assets/images/products_2013/products-warranty-collection.jpg" />
+										</div>
 
 									</div>
 									<div class="span5 text-right">
@@ -142,7 +145,7 @@
 											</div>
 										</div>
 
-										<button type="button" class="btn btn-danger btn-large btn-block">Add to Cart</button>
+										<button type="button" class="btn btn-cart btn-large btn-block">Add to Cart</button>
 										<button type="button" class="btn btn-large btn-block">Add to My List</button>
 										
 										<div class="btn-bar btn-block">
@@ -150,7 +153,7 @@
 											<div class="btn-group">
 												<a class="btn btn-small"><i class="icon-facebook"></i></a>
 												<a class="btn btn-small" href="#"><i class="icon-twitter"></i></a>
-												<a class="btn btn-small" href="#"><i class="icon-align-right"></i></a>
+												<a class="btn btn-small" href="#"><i class="icon-pinterest"></i></a>
 											</div>
 										</div>
 
@@ -161,8 +164,6 @@
 						</div>
 
 					</section>
-
-					<hr>
 
 					<ul class="products-tab-nav hidden-phone">
 						<li class="active"><a href="#details" data-toggle="tab">Details</a></li>
@@ -249,11 +250,12 @@
 
 					<hr>
 
+					<h2>You may also need</h2>
 			    	<div class="products-list">
 					    <div class="row-fluid">
-					    	<div class="product-block span3">
+					    	<div class="product-block span4">
 					    		<span class="page-branding sale-branding"></span>
-								<a href="#"><img src="/assets/images/products_2013/products-bathroom-latest-product-1.jpg" /></a>
+								<a href="#"><img src="/assets/images/products_2013/products-bathroom-sample-product500x300.jpg" /></a>
 								<div class="product-info">
 									<h4>
 										<a class="product-title" href="#">Caroma Pearl</a>
@@ -262,8 +264,8 @@
 									</h4>
 								</div>
 					    	</div>
-					    	<div class="product-block span3">
-					    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-latest-product-1.jpg" /></a>
+					    	<div class="product-block span4">
+					    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-sample-product500x300.jpg" /></a>
 								<div class="product-info">
 									<h4>
 										<a class="product-title" href="#">Caroma Pearl</a>
@@ -272,8 +274,8 @@
 									</h4>
 								</div>							    		
 					    	</div>
-					    	<div class="product-block span3">
-					    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-latest-product-1.jpg" /></a>
+					    	<div class="product-block span4">
+					    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-sample-product500x300.jpg" /></a>
 								<div class="product-info">
 									<h4>
 										<a class="product-title" href="#">Caroma Pearl</a>
@@ -281,17 +283,7 @@
 										<span class="product-price">$xxx.xx</span>
 									</h4>
 								</div>							    		
-					    	</div>
-					    	<div class="product-block span3">
-					    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-latest-product-1.jpg" /></a>
-								<div class="product-info">
-									<h4>
-										<a class="product-title" href="#">Caroma Pearl</a>
-										<span class="product-desc">Freestanding bath</span>
-										<span class="product-price">$xxx.xx</span>
-									</h4>
-								</div>							    		
-					    	</div>					    							    							    	
+					    	</div>				    							    							    	
 					    </div>
 					</div>	
 				</div>
@@ -320,22 +312,10 @@
 				"/assets/js/bootstrap-tab.js",
 				"/assets/js/bootstrap-dropdown.js",
 				"/assets/js/reece-ocnav.js",
-				"/assets/js/reece-ajax-content-loader.js",
-				"/assets/js/reece-carousel.js",
+				"/assets/js/reece-carousel.js"
 			]; 
 		   	include_once($serverBase."/includes/foot/scripts.php");
 		?>				
-
-		<script>  
-			$(document).ready(function() {  
-			   $(".carousel").swiperight(function() {  
-			      $(".carousel").carousel('prev');  
-			    });  
-			   $(".carousel").swipeleft(function() {  
-			      $(".carousel").carousel('next');  
-			   });  
-			});  
-		</script> 
 
     </body>
 </html>

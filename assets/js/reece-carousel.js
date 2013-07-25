@@ -1,15 +1,38 @@
 
-!function ($) {
+	$(document).ready(function() {
 
-  "use strict"; // jshint ;_;
+		var $carousel = $('[data-bs-carousel]');
 
-  $(document).on('click.carousel-slide.data-api', '[data-carousel-slide]', function (e) {
-    e.preventDefault();
-    var $clicked = $(e.currentTarget), href;
-    var $target = $($clicked.attr('data-target') || (href = $clicked.attr('href')) && href.replace(/.*(?=#[^\s]+$)/, '')); //strip for ie7
-    var id_selector = $clicked.data("carouselSlide"),
-        id = parseInt(id_selector);
-    $target.carousel(id);
-  });
+		if ($carousel.length != 0) {
+			$carousel.swiperight(function() {  
+				$carousel.carousel('prev');  
+			});
+			$carousel.swipeleft(function() {
+				$carousel.carousel('next');
+			});		
 
-}(window.jQuery);
+			$.each($carousel, function(index) {
+				var interval = $(this).data('bs-carousel-interval');
+				console.log()
+				if (interval) {
+					$(this).carousel();
+				}
+				else {
+					$(this).carousel({
+						interval: parseInt(interval)
+					});
+				}
+			});
+		}
+
+		$(document).on('click.carousel-slide.data-api', '[data-carousel-slide]', function (e) {
+			e.preventDefault();
+			var $clicked = $(e.currentTarget), href,
+				$target = $($clicked.attr('data-target') || (href = $clicked.attr('href')) && href.replace(/.*(?=#[^\s]+$)/, '')),
+				id_selector = $clicked.data("carouselSlide");
+			   
+			id = parseInt(id_selector);
+			$target.carousel(id);
+		});		
+
+	});  

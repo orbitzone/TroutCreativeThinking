@@ -164,12 +164,19 @@
   display: block;
   white-space: nowrap;
 }
+.nav-pills-span3 li a:hover,
+.nav-pills-span4 li a:hover {
+  background-color: transparent;
+}
 .main-header ul.nav li {
   border-top-color: #eb7676;
   border-bottom-color: #eb7676;
 }
 .main-header ul.nav li a {
   color: #f8cfcf;
+}
+.main-header ul.nav li a:hover {
+  color: white;
 }
 .no-touch .main-header ul.nav li a:hover,
 .main-header ul.nav li.active a {
@@ -397,6 +404,9 @@ a.item-video .video-title {
   background: rgba(128, 128, 128, 0.5);
   padding: 2px 5px;
   font-size: 12px;
+}
+a.item-video + a.item-video {
+  margin-top: 20px;
 }
 .fb-comments,
 .fb-comments iframe[style],

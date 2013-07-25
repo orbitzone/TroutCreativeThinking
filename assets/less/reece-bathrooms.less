@@ -196,6 +196,10 @@
     overflow: hidden;
     display: block;
     white-space: nowrap;
+
+    &:hover {
+        background-color: transparent;
+    }
 }
 .main-header ul.nav li {
     border-top-color: lighten(@hzPrimary, 20%);
@@ -203,6 +207,10 @@
 }
 .main-header ul.nav li a {
     color: lighten(@hzPrimary, 40%);
+
+    &:hover {
+        color: white;
+    }
 }
 .no-touch .main-header ul.nav li a:hover,
 .main-header ul.nav li.active a
@@ -457,6 +465,9 @@ a.item-video .video-title {
     background: rgba(128,128,128,0.5);
     padding: 2px 5px;
     font-size: 12px;
+}
+a.item-video + a.item-video {
+    margin-top: 20px;
 }
 
 // Social Media (Overrides)

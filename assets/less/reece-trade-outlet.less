@@ -18,6 +18,9 @@
 .sub-header {
 	padding: 20px 0;
 }
+.subnavbar {
+	margin-bottom: 20px; //Temporary until login module is added
+}
 
 // Account Details Summary Module
 //====================================================================================================================================
@@ -105,6 +108,10 @@
 //====================================================================================================================================
 
 .article-main, .article-secondary {
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid lighten(@reeceGrey, 60%);	
+
 	h3 {
 		margin: 0 0 6px;
 	}
@@ -134,23 +141,28 @@
 	}
 
 	article {
-		margin-bottom: 20px;
-		padding-bottom: 20px;
-		border-bottom: 1px solid lighten(@reeceGrey, 60%);	
+		margin-top: 20px;
+		padding-top: 20px;
+		border-top: 1px solid lighten(@reeceGrey, 60%);	
+
+		&:first-child {
+			margin-top: 0;
+			padding-top: 0;
+			border-top: 0;
+		}
 	}
 	img {
 		float: left;
 		max-width: 50%;
 		margin-right: 13px;
 	}
-	// small, p, h3, .read-more {
-	// 	display: block;
-	// 	float: right;
-	// 	width: 40%;
-	// }
 
 	.read-more {
 		float: right;
+	}
+
+	.article-body {
+		overflow: hidden;
 	}
 }
 
@@ -159,7 +171,6 @@
 //====================================================================================================================================
 
 .article-main {
-	background-color: lighten(@reeceGrey, 60%);
 
 	h3 {
 		font-size: 52px;
@@ -176,6 +187,12 @@
 	h3, p, small {
 		padding-right: 15px;
 	}	
+
+	@media (max-width: 768px) {
+		h3 {
+			margin-top: 10px;
+		}
+	}
 }
 
 // Blog Article Secondary Module
@@ -183,10 +200,8 @@
 //====================================================================================================================================
 
 .article-secondary {
-	margin-top: 20px;
-	padding-top: 20px;
-	border-top: 1px solid lighten(@reeceGrey, 60%);	
-	
+	font-size: 12px;
+
 	.clearfix;
 
 	h3 {
@@ -194,64 +209,69 @@
 	}
 
 	p {
-		font-size: 11px;
-		line-height: 15px;
+		line-height: 1.2;
 	}
 
 	small {
 		display: block;
 		margin-top: 5px;
-		font-size: 9px;
 	}
 
 	@media (max-width: 768px) {
-		
 		.break-single-article;
 	}		
 
 	// Blog Article Secondary Large (Sub Module)
 	//====================================================================================================================================
 	//====================================================================================================================================
-	&.article-bar-large {
-		@media (min-width: 979px) {
+	// &.article-bar-large {
+	// 	@media (min-width: 979px) {
 
-			.row-fluid {
-				width: 49.43617021276595%;
-				float: left;
-				margin-left: 1.127659574468085%;
+	// 		.row-fluid {
+	// 			width: 49.43617021276595%;
+	// 			float: left;
+	// 			margin-left: 1.127659574468085%;
 
-				&:first-child {
-					margin-left: 0;
-				}
-			}
-		}
-	}
+	// 			&:first-child {
+	// 				margin-left: 0;
+	// 			}
+	// 		}
+	// 	}
+	// }
 
 	// Blog Article Secondary Small (Sub Module)
 	//====================================================================================================================================
 	//====================================================================================================================================
-	&.article-bar-small {	
-		@media (max-width: 979px) {
+	// &.article-bar-small {
+	// 	@media (max-width: 979px) {
 
-			.break-single-article;
+	// 		.break-single-article;
 
-			.span4 {
-				width: 100%;
-				margin-left: 0;
-			}
-		}	
-	}	
+	// 		.span4 {
+	// 			width: 100%;
+	// 			margin-left: 0;
+	// 		}
+	// 	}	
+	// }	
 }
 
 //====================================================================================================================================
-// Todo: Shame - Add To Global;
-//====================================================================================================================================
-//====================================================================================================================================
-// Button Container Module
+// Recent Stories Module
 //====================================================================================================================================
 //====================================================================================================================================
 
-// Article Break Points
+.recent-stories {
+	overflow: hidden;
+	background-color: lighten(@reeceGrey, 60%);
+
+	.article-secondary {
+		margin-bottom: 0;
+		border-bottom: 0;
+	}
+}
+
+//====================================================================================================================================
+// Button Container Module
 //====================================================================================================================================
 //====================================================================================================================================
 
@@ -274,9 +294,3 @@
 	background-color: lighten(@accountButton, 15%);
 }
 
-@media (min-width: 768px) {
-
-	.navbar .navbar-container {
-		max-width: 1520px;
-	}
-}	

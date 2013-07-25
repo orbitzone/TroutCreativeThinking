@@ -4,7 +4,7 @@
 	<?php 
 		$cssScriptPaths = [
 			"/assets/css/reece-trade-outlet.css",
-			"/assets/css/reece-plumbing.css"
+			"/assets/css/reece-civil.css"
 		]; 
 	   	include_once($serverBase."/includes/head/head-generic.php");
 	?>		
@@ -12,17 +12,26 @@
     <body class="no-touch bathroom-moments account-details-summary">
 		<div class="ocmain-wrapper">
 
-			<?php
-				$genericNavActiveMenuItem = "Plumbing";
+			<?php 
+				$genericNavActiveMenuItem = "Civil";
 			   	include_once($serverBase."/includes/nav/nav-generic.php");
-			?>
+			?>				    
 
-			<?php
+			<?php 
 			   	include_once($serverBase."/includes/nav/nav-subnavbar.php");
-			?>
+			?>	
 
 	    <div class="content-container">
 			<div class="inner-wrapper">
+
+				<div class="headline row-fluid">
+					<div class="span9">
+						<h2 class="headline-title page-branding text-brand">Reece Civil</h2>
+						<p class="headline-description">Reece Civil is dedicated to supplying only the best products and service for all underground pipe networks including water mains, gas mains, sewer mains, telecommunications, electrical and fire services. With our growing national network of dedicated Civil branches, we have the resources to service your business, from the smallest company to the largest contractor. Our staff offer a wide range of industry experience and can help you source and specify the most appropriate products for any development.</p>
+					</div>
+				</div>
+
+				<hr>
 
 			    <article class="article-main row-fluid">
 			    	<div class="span8">
@@ -35,7 +44,7 @@
     					<p>
 							A big part of being a licensed plumber is certifying the quality of work you do. That’s why warranties are so important. Boria de volorio omnis as periae pra que eserepe rumqui officiasit pos dicil explant ommolorem harchicia qui nonsequia plignam sim esequib usaped et veliquam fuga. Ut seria quis dunoptatum sit dollabo. Ut faccus.
 						</p>
-						<a class="read-more page-branding text-brand page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
+						<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 					</div>			    		
 				</article>				
 
@@ -47,7 +56,7 @@
 						<p>
 							The best, brightest young tradies compete for a world title.
 						</p>
-						<a class="read-more page-branding text-brand page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
+						<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 					</article>
 
 					<article class="article span3">
@@ -57,7 +66,7 @@
     					<p>
 							Conex Bänninger has just added a new fitting to their quality range of products.
 						</p>
-						<a class="read-more page-branding text-brand page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
+						<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 					</article>
 
 					<article class="article span3">
@@ -67,7 +76,7 @@
 	    				<p>
 							Conex Bänninger has just added a new fitting to their quality range of products.
 						</p>
-						<a class="read-more page-branding text-brand page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
+						<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 					</article>	
 
 					<article class="article span3">
@@ -77,7 +86,7 @@
     					<p>
 							Conex Bänninger has just added a new fitting to their quality range of products.
 						</p>
-						<a class="read-more page-branding text-brand page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
+						<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 					</article>							
 				</div>	
 
@@ -96,7 +105,7 @@
 			    				<small>1 June 2013</small>
 			    				<h3>The peace of mind in having the right connections</h3>
 
-								<a class="read-more page-branding text-brand page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
+								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 							</div>
 						</article>
 
@@ -105,7 +114,7 @@
 		    				<div class="article-body">
 			    				<small>1 July 2013</small>
 			    				<h3>Rothenberger World Series Competition</h3>
-								<a class="read-more page-branding text-brand page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
+								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 							</div>
 						</article>
 
@@ -114,7 +123,7 @@
 		    				<div class="article-body">
 			    				<small>11 September 2013</small>
 			    				<h3>Where did my warranty go?</h3>
-								<a class="read-more page-branding text-brand page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
+								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 							</div>
 						</article>
 						<article class="article span2">
@@ -122,7 +131,7 @@
 		    				<div class="article-body">
 			    				<small>1 June 2013</small>
 			    				<h3>The peace of mind in having the right connections</h3>
-								<a class="read-more page-branding text-brand page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
+								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 							</div>
 						</article>
 
@@ -131,7 +140,7 @@
 		    				<div class="article-body">
 			    				<small>1 July 2013</small>
 			    				<h3>Rothenberger World Series Competition</h3>
-								<a class="read-more page-branding text-brand page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
+								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 							</div>
 						</article>
 
@@ -140,7 +149,7 @@
 		    				<div class="article-body">
 			    				<small>11 September 2013</small>
 			    				<h3>Where did my warranty go?</h3>
-								<a class="read-more page-branding text-brand page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
+								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 							</div>
 						</article>							
 					</div>

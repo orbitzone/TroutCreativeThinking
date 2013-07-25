@@ -40,7 +40,7 @@
 
 				<div class="article-secondary row-fluid">
 					<article class="span3">
-						<a href="#"><img src="/assets/images/trade_2013/trade_article_sample_small.jpg" alt="Trade Sample Mini" /></a>
+						<a href="#"><img src="http://placehold.it/400x250" alt="Trade Sample Mini" /></a>
 						<div class="article-body">
     						<small>9 June 2013</small>
     						<h3>Worldskills team 2013 – Meet Alex De Koeyer</h3>
@@ -52,7 +52,7 @@
 					</article>
 
 					<article class="span3">
-						<a href="#"><img src="/assets/images/trade_2013/trade_article_sample_small_02.jpg" alt="Trade Sample Mini" /></a>
+						<a href="#"><img src="http://placehold.it/400x250" alt="Trade Sample Mini" /></a>
 						<div class="article-body">
 	    					<small>20 May 2013</small>
 	    					<h3>Conex launches hot new fitting</h3>
@@ -64,7 +64,7 @@
 					</article>
 
 					<article class="span3">
-						<a href="#"><img src="/assets/images/trade_2013/trade_article_sample_small_03.jpg" alt="Trade Sample Mini" /></a>
+						<a href="#"><img src="http://placehold.it/400x250" alt="Trade Sample Mini" /></a>
 	    				<div class="article-body">
 		    				<small>1 May 2013</small>
 		    				<h3>The peace of mind in having the right connections</h3>
@@ -76,7 +76,7 @@
 					</article>	
 
 					<article class="span3">
-						<a href="#"><img src="/assets/images/trade_2013/trade_article_sample_small_03.jpg" alt="Trade Sample Mini" /></a>
+						<a href="#"><img src="http://placehold.it/400x250" alt="Trade Sample Mini" /></a>
 						<div class="article-body">
 	    					<small>1 May 2013</small>
 	    					<h3>The peace of mind in having the right connections</h3>
@@ -101,9 +101,7 @@
 		    				<div class="article-body">
 			    				<small>1 June 2013</small>
 			    				<h3>The peace of mind in having the right connections</h3>
-			    				<p>
-									This program is designed to give you absolute confidence in the quality of products you’re buying and ultimately help to protect your reputation.
-								</p>
+
 								<a class="read-more" href="#">Read More<i class="icon-arrow-right"></i></a>
 							</div>
 						</article>
@@ -113,9 +111,6 @@
 		    				<div class="article-body">
 			    				<small>1 July 2013</small>
 			    				<h3>Rothenberger World Series Competition</h3>
-			    				<p>
-									Achance to win an amazing trip to the ROTEC Centre in Germany.
-								</p>
 								<a class="read-more" href="#">Read More<i class="icon-arrow-right"></i></a>
 							</div>
 						</article>
@@ -125,9 +120,6 @@
 		    				<div class="article-body">
 			    				<small>11 September 2013</small>
 			    				<h3>Where did my warranty go?</h3>
-			    				<p>
-									A big part of being a licensed plumber is certifying the quality of work you do. That’s why warranties are so important.
-								</p>
 								<a class="read-more" href="#">Read More<i class="icon-arrow-right"></i></a>
 							</div>
 						</article>	
@@ -136,9 +128,6 @@
 		    				<div class="article-body">
 			    				<small>1 June 2013</small>
 			    				<h3>The peace of mind in having the right connections</h3>
-			    				<p>
-									This program is designed to give you absolute confidence in the quality of products you’re buying and ultimately help to protect your reputation.
-								</p>
 								<a class="read-more" href="#">Read More<i class="icon-arrow-right"></i></a>
 							</div>
 						</article>
@@ -148,9 +137,6 @@
 		    				<div class="article-body">
 			    				<small>1 July 2013</small>
 			    				<h3>Rothenberger World Series Competition</h3>
-			    				<p>
-									Achance to win an amazing trip to the ROTEC Centre in Germany.
-								</p>
 								<a class="read-more" href="#">Read More<i class="icon-arrow-right"></i></a>
 							</div>
 						</article>
@@ -160,9 +146,6 @@
 		    				<div class="article-body">
 			    				<small>11 September 2013</small>
 			    				<h3>Where did my warranty go?</h3>
-			    				<p>
-									A big part of being a licensed plumber is certifying the quality of work you do. That’s why warranties are so important.
-								</p>
 								<a class="read-more" href="#">Read More<i class="icon-arrow-right"></i></a>
 							</div>
 						</article>							

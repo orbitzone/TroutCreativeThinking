@@ -516,10 +516,10 @@
 }
 .products-tab {
   float: left;
-  width: 31.57216358%;
+  width: 29.9999999%;
   border-left: 1px solid #d1d1d1;
-  margin-left: 1.28205128%;
-  padding-left: 1.28205128%;
+  margin-left: 2.28205128%;
+  padding-left: 2.28205128%;
 }
 .products-tab:first-child {
   margin-left: 0;

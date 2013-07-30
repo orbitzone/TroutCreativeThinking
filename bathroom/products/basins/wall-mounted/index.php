@@ -122,8 +122,8 @@
 															<a href="#"><img src="/assets/images/products_2013/products-bathroom-latest-product-1.jpg" /></a>
 															<div class="product-info">
 																<h4>
-																	<a class="product-title" href="#">Caroma Pearl</a>
-																	<span class="product-desc">Freestanding bath</span>
+																	<a class="product-title" href="#">Product</a>
+																	<span class="product-desc">Description</span>
 																	<span class="product-price">$xxx.xx</span>
 																</h4>
 															</div>
@@ -134,8 +134,8 @@
 															<a href="#"><img src="/assets/images/products_2013/products-bathroom-latest-product-1.jpg" /></a>
 															<div class="product-info">
 																<h4>
-																	<a class="product-title" href="#">Caroma Pearl</a>
-																	<span class="product-desc">Freestanding bath</span>
+																	<a class="product-title" href="#">Product</a>
+																	<span class="product-desc">Description</span>
 																	<span class="product-price">$xxx.xx</span>
 																</h4>
 															</div>
@@ -175,42 +175,39 @@
 						<li><a href="#reviews" data-toggle="tab">Reviews</a></li>
 					</ul>
 
-					<div id="accordion" class="products-tab tab-content">
+					<div id="accordion" class="products-tabs tab-content clearfix">
 						<a class="products-collapse-nav accordion-toggle visible-phone" data-toggle="collapse" data-parent="#accordion" href="#details">
 							Details
 						</a>
 					
 						<div class="accordion tab-pane in collapse active" id="details">
 							<div class="accordion-inner">
-								<div class="row-fluid">
-									<div class="span4">
-										<ul class="nav nav-list">
-											<li class="nav-header">Features</li>
-											<li><a href="#">Laufen Clean Coat - abrasion resistant finish.</a></li>
-											<li><a href="#">Reduces cleaning effort, increases product life and improves hygiene.</a></li>
-											<li><a href="#">One tap hole.</a></li>
-											<li><a href="#">Also available with no tap hole.</a></li>
-											<li class="nav-header">Finish</li>
-											<li><a href="#">White.</a></li>
-											<li><a href="#">Vitreous china</a></li>
-										</ul>
-									</div>
-									<div class="span4">
-										<ul class="nav nav-list">
-											<li class="nav-header">Tech Info</li>
-											<li><a href="#">Width: 1600mm.</a></li>
-											<li><a href="#">Depth: 350/500mm.</a></li>
-											<li><a href="#">Height: 165mm.</a></li>
-											<li><a href="#">Capacity: 7.5L.</a></li>
-										</ul>
-										<br>
-										<a class="muted" href="#">More information</a>
-									</div>
-									<div class="span4">
-										<img src="/assets/images/products_2013/products-pdf-sample.jpg" alt="Download PDF" />
-										<a class="btn btn-inverse">Download <b class="caret"></b></a>
-									</div>																		
+								<div class="products-tab">
+									<ul class="nav nav-list">
+										<li class="nav-header">Features</li>
+										<li><a href="#">Laufen Clean Coat - abrasion resistant finish.</a></li>
+										<li><a href="#">Reduces cleaning effort, increases product life and improves hygiene.</a></li>
+										<li><a href="#">One tap hole.</a></li>
+										<li><a href="#">Also available with no tap hole.</a></li>
+										<li class="nav-header">Finish</li>
+										<li><a href="#">White.</a></li>
+										<li><a href="#">Vitreous china</a></li>
+									</ul>
 								</div>
+								<div class="products-tab">
+									<ul class="nav nav-list">
+										<li class="nav-header">Tech Info</li>
+										<li><a href="#">Width: 1600mm.</a></li>
+										<li><a href="#">Depth: 350/500mm.</a></li>
+										<li><a href="#">Height: 165mm.</a></li>
+										<li><a href="#">Capacity: 7.5L.</a></li>
+									</ul>
+									<a class="muted" href="#">More information</a>
+								</div>
+								<div class="products-tab">
+									<img src="/assets/images/products_2013/products-pdf-sample.jpg" alt="Download PDF" />
+									<a class="btn btn-inverse">Download <b class="caret"></b></a>
+								</div>																		
 							</div>
 						</div>
 
@@ -220,30 +217,27 @@
 
 						<div class="accordion tab-pane fade collapse" id="video">
 							<div class="accordion-inner">
-								<div class="row-fluid">
-									<div class="span4">
-										<ul class="nav nav-list">
-											<li class="nav-header">Features</li>
-											<li><a href="#">Laufen Clean Coat - abrasion resistant finish.</a></li>
-											<li><a href="#">Reduces cleaning effort, increases product life and improves hygiene.</a></li>
-											<li><a href="#">One tap hole.</a></li>
-											<li><a href="#">Also available with no tap hole.</a></li>
-										</ul>
-									</div>
-									<div class="span4">
-										<ul class="nav nav-list">
-											<li class="nav-header">Tech Info</li>
-											<li><a href="#">Width: 1600mm.</a></li>
-											<li><a href="#">Depth: 350/500mm.</a></li>
-										</ul>
-										<br>
-										<a class="muted" href="#">More information</a>
-									</div>
-									<div class="span4">
-										<img src="/assets/images/products_2013/products-pdf-sample.jpg" alt="Download PDF" />
-										<a class="btn btn-inverse">Download <b class="caret"></b></a>
-									</div>																		
-								</div>	
+								<div class="products-tab">
+									<ul class="nav nav-list">
+										<li class="nav-header">Features</li>
+										<li><a href="#">Laufen Clean Coat - abrasion resistant finish.</a></li>
+										<li><a href="#">Reduces cleaning effort, increases product life and improves hygiene.</a></li>
+										<li><a href="#">One tap hole.</a></li>
+										<li><a href="#">Also available with no tap hole.</a></li>
+									</ul>
+								</div>
+								<div class="products-tab">
+									<ul class="nav nav-list">
+										<li class="nav-header">Tech Info</li>
+										<li><a href="#">Width: 1600mm.</a></li>
+										<li><a href="#">Depth: 350/500mm.</a></li>
+									</ul>
+									<a class="muted" href="#">More information</a>
+								</div>
+								<div class="products-tab">
+									<img src="/assets/images/products_2013/products-pdf-sample.jpg" alt="Download PDF" />
+									<a class="btn btn-inverse">Download <b class="caret"></b></a>
+								</div>																		
 							</div>							
 						</div>					
 					</div>  
@@ -258,8 +252,8 @@
 								<a href="#"><img src="/assets/images/products_2013/products-bathroom-sample-product500x300.jpg" /></a>
 								<div class="product-info">
 									<h4>
-										<a class="product-title" href="#">Caroma Pearl</a>
-										<span class="product-desc">Freestanding bath</span>
+										<a class="product-title" href="#">Product</a>
+										<span class="product-desc">Description</span>
 										<span class="product-price">$xxx.xx</span>
 									</h4>
 								</div>
@@ -268,8 +262,8 @@
 					    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-sample-product500x300.jpg" /></a>
 								<div class="product-info">
 									<h4>
-										<a class="product-title" href="#">Caroma Pearl</a>
-										<span class="product-desc">Freestanding bath</span>
+										<a class="product-title" href="#">Product</a>
+										<span class="product-desc">Description</span>
 										<span class="product-price">$xxx.xx</span>
 									</h4>
 								</div>							    		
@@ -278,8 +272,8 @@
 					    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-sample-product500x300.jpg" /></a>
 								<div class="product-info">
 									<h4>
-										<a class="product-title" href="#">Caroma Pearl</a>
-										<span class="product-desc">Freestanding bath</span>
+										<a class="product-title" href="#">Product</a>
+										<span class="product-desc">Description</span>
 										<span class="product-price">$xxx.xx</span>
 									</h4>
 								</div>							    		

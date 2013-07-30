@@ -171,8 +171,8 @@
 										<a href="#"><img src="/assets/images/products_2013/products-bathroom-latest-product-1.jpg" /></a>
 										<div class="product-info">
 											<h4>
-												<a class="product-title" href="#">Caroma Pearl</a>
-												<span class="product-desc">Freestanding bath</span>
+												<a class="product-title" href="#">Product</a>
+												<span class="product-desc">Description</span>
 												<span class="product-price">$xxx.xx</span>
 											</h4>
 										</div>
@@ -181,8 +181,8 @@
 							    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-latest-product-1.jpg" /></a>
 										<div class="product-info">
 											<h4>
-												<a class="product-title" href="#">Caroma Pearl</a>
-												<span class="product-desc">Freestanding bath</span>
+												<a class="product-title" href="#">Product</a>
+												<span class="product-desc">Description</span>
 												<span class="product-price">$xxx.xx</span>
 											</h4>
 										</div>							    		
@@ -191,8 +191,8 @@
 							    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-latest-product-1.jpg" /></a>
 										<div class="product-info">
 											<h4>
-												<a class="product-title" href="#">Caroma Pearl</a>
-												<span class="product-desc">Freestanding bath</span>
+												<a class="product-title" href="#">Product</a>
+												<span class="product-desc">Description</span>
 												<span class="product-price">$xxx.xx</span>
 											</h4>
 										</div>							    		
@@ -201,8 +201,8 @@
 							    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-latest-product-1.jpg" /></a>
 										<div class="product-info">
 											<h4>
-												<a class="product-title" href="#">Caroma Pearl</a>
-												<span class="product-desc">Freestanding bath</span>
+												<a class="product-title" href="#">Product</a>
+												<span class="product-desc">Description</span>
 												<span class="product-price">$xxx.xx</span>
 											</h4>
 										</div>							    		
@@ -213,8 +213,8 @@
 										<a href="#"><img src="/assets/images/products_2013/products-bathroom-latest-product-1.jpg" /></a>
 										<div class="product-info">
 											<h4>
-												<a class="product-title" href="#">Caroma Pearl</a>
-												<span class="product-desc">Freestanding bath</span>
+												<a class="product-title" href="#">Product</a>
+												<span class="product-desc">Description</span>
 												<span class="product-price">$xxx.xx</span>
 											</h4>
 										</div>
@@ -223,8 +223,8 @@
 							    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-latest-product-1.jpg" /></a>
 										<div class="product-info">
 											<h4>
-												<a class="product-title" href="#">Caroma Pearl</a>
-												<span class="product-desc">Freestanding bath</span>
+												<a class="product-title" href="#">Product</a>
+												<span class="product-desc">Description</span>
 												<span class="product-price">$xxx.xx</span>
 											</h4>
 										</div>							    		
@@ -233,8 +233,8 @@
 							    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-latest-product-1.jpg" /></a>
 										<div class="product-info">
 											<h4>
-												<a class="product-title" href="#">Caroma Pearl</a>
-												<span class="product-desc">Freestanding bath</span>
+												<a class="product-title" href="#">Product</a>
+												<span class="product-desc">Description</span>
 												<span class="product-price">$xxx.xx</span>
 											</h4>
 										</div>							    		
@@ -243,8 +243,8 @@
 							    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-latest-product-1.jpg" /></a>
 										<div class="product-info">
 											<h4>
-												<a class="product-title" href="#">Caroma Pearl</a>
-												<span class="product-desc">Freestanding bath</span>
+												<a class="product-title" href="#">Product</a>
+												<span class="product-desc">Description</span>
 												<span class="product-price">$xxx.xx</span>
 											</h4>
 										</div>							    		

@@ -147,18 +147,26 @@
 
 .products-list {
 
-	.row-fluid:first-child {
-		.product-block {
-			margin-top: 0;
-		}
-	}	
+	// .row-fluid:first-child {
+	// 	.product-block {
+	// 		margin-top: 0;
+	// 	}
+	// }	
+
+	// @media (max-width: 767px) {
+	// 	.row-fluid:first-child {
+	// 		.product-block {
+	// 			margin-top: @fluidGridGutterWidth;
+	// 		}
+	// 	}		
+	// }
 
 	@media (max-width: 767px) {
-		.row-fluid:first-child {
-			.product-block {
-				margin-top: @fluidGridGutterWidth;
-			}
-		}		
+		.product-block, .row-fluid [class*="span"] {
+			float: left;
+			width: 48.93617021276595%;
+			margin: 0.53191489361702%;
+		}
 	}
 }
 
@@ -479,7 +487,7 @@
 //====================================================================================================================================
 //====================================================================================================================================
 
-.products-tab {
+.products-tabs {
 	margin: 0 0 20px;	
 	padding: 20px;
 	border-right: 1px solid darken(@lightBackground, 10%);
@@ -492,6 +500,7 @@
 	}
 
 	.accordion-inner {
+		padding: 0; //Bootstrao override
 		border-top: 0;
 	}
 
@@ -533,6 +542,36 @@
 	}	
 }
 
+.products-tab {
+	float: left;
+	width: 31.57216358%;
+	border-left: 1px solid darken(@lightBackground, 10%);
+	//margin-left: 2.56410256%;
+	margin-left: 1.28205128%;
+	padding-left: 1.28205128%;
+
+	&:first-child {
+		margin-left: 0;
+		padding-left: 0;
+		border-left: 0;
+	}
+
+	@media (max-width: 767px) {
+		float: none;
+		width: auto;
+		margin: 20px 0;
+		padding-left: 20px;
+		padding-right: 20px;
+
+		&:first-child {
+			margin-left: 0;
+			padding-left: 20px;
+			padding-right: 20px;
+			border-left: 0;
+		}		
+	}	
+}
+
 .products-tab-nav {
     display: table;
     width: 100%;
@@ -541,6 +580,7 @@
 
 	> li {
 		float: none;
+		width: 15%; //Acts as a max-width
 		display: table-cell;
 
 		> a {
@@ -560,7 +600,7 @@
 				color: white;
 				#gradient > .vertical(lighten(black, 20%), lighten(black, 65%));
 			}
-		}		
+		}	
 	}
 
 	& > .active > a, & > .active > a:hover, & > .active > a:focus {

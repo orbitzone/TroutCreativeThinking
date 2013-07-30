@@ -1,43 +1,90 @@
 
-	.lt-ie9 {
+//Application imports
+@import "reece-variables.less";
+@import "reece-mixins.less";
 
-		#headCarousel {
-			padding-top: 0;
-		}
+// Global
+//====================================================================================================================================
+//====================================================================================================================================
 
-		.navbar-fixed-top {
-			position: static;
+.lt-ie9 {
 
-			.brand { 
-				background-image: url(../images/home-2013/reece-logo-ie.png); //Fix retina icon for IE
-				background-repeat: no-repeat;
-				background-color: white;
-				background-position: 2px center;	
-			}
-		}
-
-		.subnavbar {
-			margin-top: 0;
-		}
-
-		.product-filter	{
-			.collapse {
-				height: auto;
-			}
-		}
-
-		body {
-			min-width: 1600px;
-		}
-		body.home {
-			min-width: 1200px;
-		}	
-
-		.main-header {
-	        padding-top:20px;
-
-	        .top-highlight {
-	            top:0;
-	        }
-        }	
+	#headCarousel {
+		padding-top: 0;
 	}
+
+	.navbar-fixed-top {
+		position: static;
+
+		.brand { 
+			background-image: url(../images/home-2013/reece-logo-ie.png); //Fix retina icon for IE
+			background-repeat: no-repeat;
+			background-color: white;
+			background-position: 2px center;	
+		}
+	}
+
+	.subnavbar {
+		margin-top: 0;
+	}
+
+	body {
+		min-width: 1600px;
+	}
+	body.home {
+		min-width: 1200px;
+	}	
+
+	.main-header {
+        padding-top:20px;
+
+        .top-highlight {
+            top:0;
+        }
+    }	
+}
+
+// Products
+//====================================================================================================================================
+//====================================================================================================================================
+
+.lt-ie9 {	
+
+	//Fix product pages collapse class
+	#accordion .collapse {
+		position: static;
+		height: auto;
+		overflow: visible;	
+	}
+
+	.product-filter	{
+		.collapse {
+			height: auto;
+		}
+	}
+}
+
+.lt-ie8 {	
+
+	//No support for 'display: table-cell'
+	.products-tab-nav {
+		overflow: hidden;
+		zoom: 1;
+
+		li {
+			width: auto;
+		    float: left;
+		    margin: 0;
+		    padding: 0;
+		}
+
+		a {
+			padding: 10px 20px;
+		}
+	}
+
+	.btn-bar {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}

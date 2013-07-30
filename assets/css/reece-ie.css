@@ -13,12 +13,40 @@
 .lt-ie9 .subnavbar {
   margin-top: 0;
 }
-.lt-ie9 .product-filter .collapse {
-  height: auto;
-}
 .lt-ie9 body {
   min-width: 1600px;
 }
 .lt-ie9 body.home {
   min-width: 1200px;
+}
+.lt-ie9 .main-header {
+  padding-top: 20px;
+}
+.lt-ie9 .main-header .top-highlight {
+  top: 0;
+}
+.lt-ie9 #accordion .collapse {
+  position: static;
+  height: auto;
+  overflow: visible;
+}
+.lt-ie9 .product-filter .collapse {
+  height: auto;
+}
+.lt-ie8 .products-tab-nav {
+  overflow: hidden;
+  zoom: 1;
+}
+.lt-ie8 .products-tab-nav li {
+  width: auto;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+.lt-ie8 .products-tab-nav a {
+  padding: 10px 20px;
+}
+.lt-ie8 .btn-bar {
+  padding-left: 0;
+  padding-right: 0;
 }

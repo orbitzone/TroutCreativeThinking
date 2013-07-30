@@ -113,8 +113,8 @@
 													<a href="#"><img src="/assets/images/products_2013/products-plumbing-latest-releases-1.jpg" /></a>
 													<div class="product-info">
 														<h4>
-															<a class="product-title" href="#">Caroma Pearl</a>
-															<span class="product-desc">Freestanding bath</span>
+															<a class="product-title" href="#">Product</a>
+															<span class="product-desc">Description</span>
 															<span class="product-price">$xxx.xx</span>
 														</h4>
 													</div>
@@ -123,8 +123,8 @@
 										    		<a href="#"><img src="/assets/images/products_2013/products-plumbing-latest-releases-1.jpg" /></a>
 													<div class="product-info">
 														<h4>
-															<a class="product-title" href="#">Caroma Pearl</a>
-															<span class="product-desc">Freestanding bath</span>
+															<a class="product-title" href="#">Product</a>
+															<span class="product-desc">Description</span>
 															<span class="product-price">$xxx.xx</span>
 														</h4>
 													</div>							    		
@@ -133,8 +133,8 @@
 										    		<a href="#"><img src="/assets/images/products_2013/products-plumbing-latest-releases-1.jpg" /></a>
 													<div class="product-info">
 														<h4>
-															<a class="product-title" href="#">Caroma Pearl</a>
-															<span class="product-desc">Freestanding bath</span>
+															<a class="product-title" href="#">Product</a>
+															<span class="product-desc">Description</span>
 															<span class="product-price">$xxx.xx</span>
 														</h4>
 													</div>							    		
@@ -143,8 +143,8 @@
 										    		<a href="#"><img src="/assets/images/products_2013/products-plumbing-latest-releases-1.jpg" /></a>
 													<div class="product-info">
 														<h4>
-															<a class="product-title" href="#">Caroma Pearl</a>
-															<span class="product-desc">Freestanding bath</span>
+															<a class="product-title" href="#">Product</a>
+															<span class="product-desc">Description</span>
 															<span class="product-price">$xxx.xx</span>
 														</h4>
 													</div>							    		
@@ -161,7 +161,7 @@
 													<div class="product-info">
 														<h4>
 															<a class="product-title" href="#">Thermann</a>
-															<span class="product-desc">Continuous Flow Hot Water Units</span>
+															<span class="product-desc">Description</span>
 															<span class="product-price">$100.00</span>
 														</h4>
 													</div>
@@ -170,8 +170,8 @@
 										    		<a href="#"><img src="/assets/images/products_2013/products-plumbing-latest-releases-1.jpg" /></a>
 													<div class="product-info">
 														<h4>
-															<a class="product-title" href="#">Caroma Pearl</a>
-															<span class="product-desc">Freestanding bath</span>
+															<a class="product-title" href="#">Product</a>
+															<span class="product-desc">Description</span>
 															<span class="product-price">$xxx.xx</span>
 														</h4>
 													</div>							    		
@@ -180,8 +180,8 @@
 										    		<a href="#"><img src="/assets/images/products_2013/products-plumbing-latest-releases-1.jpg" /></a>
 													<div class="product-info">
 														<h4>
-															<a class="product-title" href="#">Caroma Pearl</a>
-															<span class="product-desc">Freestanding bath</span>
+															<a class="product-title" href="#">Product</a>
+															<span class="product-desc">Description</span>
 															<span class="product-price">$xxx.xx</span>
 														</h4>
 													</div>							    		
@@ -190,8 +190,8 @@
 										    		<a href="#"><img src="/assets/images/products_2013/products-plumbing-latest-releases-1.jpg" /></a>
 													<div class="product-info">
 														<h4>
-															<a class="product-title" href="#">Caroma Pearl</a>
-															<span class="product-desc">Freestanding bath</span>
+															<a class="product-title" href="#">Product</a>
+															<span class="product-desc">Description</span>
 															<span class="product-price">$xxx.xx</span>
 														</h4>
 													</div>							    		
@@ -253,8 +253,8 @@
 													<a href="#"><img src="/assets/images/products_2013/products-plumbing-hot-water-season-1.jpg" /></a>
 													<div class="product-info">
 														<h4>
-															<a class="product-title" href="#">Caroma Pearl</a>
-															<span class="product-desc">Freestanding bath</span>
+															<a class="product-title" href="#">Product</a>
+															<span class="product-desc">Description</span>
 															<span class="product-price">$xxx.xx</span>
 														</h4>
 													</div>
@@ -263,8 +263,8 @@
 										    		<a href="#"><img src="/assets/images/products_2013/products-plumbing-hot-water-season-1.jpg" /></a>
 													<div class="product-info">
 														<h4>
-															<a class="product-title" href="#">Caroma Pearl</a>
-															<span class="product-desc">Freestanding bath</span>
+															<a class="product-title" href="#">Product</a>
+															<span class="product-desc">Description</span>
 															<span class="product-price">$xxx.xx</span>
 														</h4>
 													</div>							    		
@@ -273,8 +273,8 @@
 										    		<a href="#"><img src="/assets/images/products_2013/products-plumbing-hot-water-season-1.jpg" /></a>
 													<div class="product-info">
 														<h4>
-															<a class="product-title" href="#">Caroma Pearl</a>
-															<span class="product-desc">Freestanding bath</span>
+															<a class="product-title" href="#">Product</a>
+															<span class="product-desc">Description</span>
 															<span class="product-price">$xxx.xx</span>
 														</h4>
 													</div>							    		
@@ -283,8 +283,8 @@
 										    		<a href="#"><img src="/assets/images/products_2013/products-plumbing-hot-water-season-1.jpg" /></a>
 													<div class="product-info">
 														<h4>
-															<a class="product-title" href="#">Caroma Pearl</a>
-															<span class="product-desc">Freestanding bath</span>
+															<a class="product-title" href="#">Product</a>
+															<span class="product-desc">Description</span>
 															<span class="product-price">$xxx.xx</span>
 														</h4>
 													</div>							    		
@@ -300,8 +300,8 @@
 													<a href="#"><img src="/assets/images/products_2013/products-plumbing-hot-water-season-1.jpg" /></a>
 													<div class="product-info">
 														<h4>
-															<a class="product-title" href="#">Caroma Pearl</a>
-															<span class="product-desc">Freestanding bath</span>
+															<a class="product-title" href="#">Product</a>
+															<span class="product-desc">Description</span>
 															<span class="product-price">$xxx.xx</span>
 														</h4>
 													</div>
@@ -310,8 +310,8 @@
 										    		<a href="#"><img src="/assets/images/products_2013/products-plumbing-hot-water-season-1.jpg" /></a>
 													<div class="product-info">
 														<h4>
-															<a class="product-title" href="#">Caroma Pearl</a>
-															<span class="product-desc">Freestanding bath</span>
+															<a class="product-title" href="#">Product</a>
+															<span class="product-desc">Description</span>
 															<span class="product-price">$xxx.xx</span>
 														</h4>
 													</div>							    		
@@ -320,8 +320,8 @@
 										    		<a href="#"><img src="/assets/images/products_2013/products-plumbing-hot-water-season-1.jpg" /></a>
 													<div class="product-info">
 														<h4>
-															<a class="product-title" href="#">Caroma Pearl</a>
-															<span class="product-desc">Freestanding bath</span>
+															<a class="product-title" href="#">Product</a>
+															<span class="product-desc">Description</span>
 															<span class="product-price">$xxx.xx</span>
 														</h4>
 													</div>							    		
@@ -330,8 +330,8 @@
 										    		<a href="#"><img src="/assets/images/products_2013/products-plumbing-hot-water-season-1.jpg" /></a>
 													<div class="product-info">
 														<h4>
-															<a class="product-title" href="#">Caroma Pearl</a>
-															<span class="product-desc">Freestanding bath</span>
+															<a class="product-title" href="#">Product</a>
+															<span class="product-desc">Description</span>
 															<span class="product-price">$xxx.xx</span>
 														</h4>
 													</div>							    		
@@ -372,7 +372,8 @@
 		  		"/assets/js/bootstrap-carousel.js",
 		  		"/assets/js/bootstrap-collapse.js",
 		  		"/assets/js/bootstrap-transition.js",
-		  		"/assets/js/reece-ocnav.js"
+		  		"/assets/js/reece-ocnav.js",
+				"/assets/js/reece-carousel.js"		  		
 		  	); 
 		  	include_once($serverBase."/includes/foot/scripts.php");
 		?>			

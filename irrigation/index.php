@@ -26,7 +26,7 @@
 
 				<div class="headline clearfix">
 					<h2 class="headline-title page-branding text-brand">Reece <br>Irrigation</h2>
-					<p class="headline-description">With 34 irrigation stores around Australia and a dedicated design department, Reece Irrigation has introduced unrivalled service standards to the landscape, commercial and agricultural industries. Reece Irrigation stores stock a large range of products, including turf, agricultural sprays and drippers, valves, pipe and fittings, pumps, automatic controllers, professional outdoor lighting and a range of water saving products.</p>
+					<p class="headline-description">With over 30 stores nationally and a dedicated design department, Reece Irrigation delivers unrivalled service to the landscape, commercial and agricultural industries. We stock a large range of products, including turf, sprays and drippers, valves, pipe and fittings, pumps, automatic controllers, outdoor lighting and water saving products.</p>
 				</div>
 
 				<hr class="page-branding border-brand headline-border">

@@ -26,7 +26,7 @@
 
 				<div class="headline clearfix">
 					<h2 class="headline-title page-branding text-brand">Reece <br>Civil</h2>
-					<p class="headline-description">Reece Civil is dedicated to supplying only the best products and service for all underground pipe networks including water mains, gas mains, sewer mains, telecommunications, electrical and fire services. With our growing national network of dedicated Civil branches, we have the resources to service your business, from the smallest company to the largest contractor. Our staff offer a wide range of industry experience and can help you source and specify the most appropriate products for any development.</p>
+					<p class="headline-description">We're dedicated to supplying only the best products and service for all underground pipe networks including water mains, gas mains, sewer mains, telecommunications, electrical and fire services.</p>
 				</div>
 
 				<hr class="page-branding border-brand headline-border">

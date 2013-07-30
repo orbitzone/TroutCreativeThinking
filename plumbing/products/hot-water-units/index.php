@@ -36,12 +36,12 @@
 					    	<div class="carousel-inner">
 					    		<div class="item">
 									<a href="#">
-										<img src="/assets/images/products_2013/products-plumbing-fresh-approach-mobile.jpg" alt="Fresh Approach" />
+										<img src="/assets/images/products_2013/products-plumbing-hot-water-decisions-mobile.jpg" alt="Hot Water Decisions Guide" />
 									</a>
 					    		</div>
 					    		<div class="item active">
 									<a href="#">
-										<img src="/assets/images/products_2013/products-plumbing-fresh-approach-mobile.jpg" alt="Fresh Approach" />
+										<img src="/assets/images/products_2013/products-plumbing-hot-water-decisions-mobile.jpg" alt="Hot Water Decisions Guide" />
 									</a>
 					    		</div>
 					    	</div>
@@ -117,13 +117,13 @@
 						            
 								    <div class="active item">
 								        <a href="/the-block">
-								            <img src="/assets/images/products_2013/products-bathroom-be-free.jpg" alt="Be Free" />
+								            <img src="/assets/images/products_2013/products-plumbing-hot-water-decisions.jpg" alt="Hot Water Decisions Guide" />
 								        </a>
 								    </div>
 
 								    <div class="item">
 								        <a href="/the-block">
-								            <img src="/assets/images/products_2013/products-bathroom-be-free.jpg" alt="Be Free" />
+								            <img src="/assets/images/products_2013/products-plumbing-hot-water-decisions.jpg" alt="Hot Water Decisions Guide" />
 								        </a>
 								    </div>
 						            

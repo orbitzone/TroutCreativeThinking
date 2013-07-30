@@ -11,8 +11,10 @@
 	$navigationItems = array(
 		"Bathrooms",
 		"Plumbing",
-		"Specialised Solutions",
-		"Sustainability",
+		"Irrigation",
+		"Civil",
+		"Onsite",
+		"HVAC-R",
 		"About Us",
 		"Store Finder",
 		"My Account"
@@ -39,10 +41,15 @@
 			"Happy Tips",
 			"News",
 			"Brochures",
-			"Events"			
+			"Events"
 		),
 		"Plumbing" => array (
-
+			"DIY Disasters",
+			"Promotions",
+			"Tech Tools",
+			"Outlet",
+			"My Account",
+			"How Reece works for you"
 		),
 		"Specialised Solutions" => array (
 

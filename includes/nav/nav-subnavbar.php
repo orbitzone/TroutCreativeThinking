@@ -1,5 +1,5 @@
 		    
-			<div class="subnavbar">
+			<div class="subnavbar visible-desktop">
 				<div class="navbar-container">
 		    		<ul class="nav">
 						<li><a href="#" title="Products">Products</a></li>

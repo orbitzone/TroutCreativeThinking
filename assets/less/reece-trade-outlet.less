@@ -12,17 +12,55 @@
 
 .headline {
 	.headline-title {
-		font-size: 32px;
+		float: left;
+		margin-top: 0;
+		margin-bottom: 0;
+		margin-right: 50px;
+		font-size: 42px;
 	}
+
 	.headline-description {
 		margin-bottom: 0;
+		overflow: hidden;
+		max-width: 800px;
 	}
+
+	@media (max-width: 769px) {
+
+		.headline-title {
+			float: none;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}	
+	}
+
+	@media (min-width: 769px) {
+		margin-top: 20px;
+	}
+}
+
+// Headline Border Module (Designed to be used on a hr)
+//====================================================================================================================================
+//====================================================================================================================================
+
+.headline-border {
+	border-width: 10px;
+	border-bottom: 0;
 }
 
 .subnavbar {
 	@media (min-width: 769px) {
 		margin-bottom: 20px;
 	}
+}
+
+// Account Details Summary Module
+//====================================================================================================================================
+//====================================================================================================================================
+
+.headline-border {
+	border-width: 10px;
+	border-bottom: 0;
 }
 
 // Account Details Summary Module
@@ -156,11 +194,14 @@
 	}	
 
 	@media (max-width: 767px) {
-		margin-top: 20px;
+		//margin-top: 20px;
 
 		h3 {
 			margin-top: 10px;
 		}
+	}
+	@media only screen and (max-width : 979px) {
+		margin-top: 20px;
 	}
 }
 

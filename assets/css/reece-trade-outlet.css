@@ -26,15 +26,41 @@
   box-sizing: border-box;
 }
 .headline .headline-title {
-  font-size: 32px;
+  float: left;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 50px;
+  font-size: 42px;
 }
 .headline .headline-description {
   margin-bottom: 0;
+  overflow: hidden;
+  max-width: 800px;
+}
+@media (max-width: 769px) {
+  .headline .headline-title {
+    float: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 769px) {
+  .headline {
+    margin-top: 20px;
+  }
+}
+.headline-border {
+  border-width: 10px;
+  border-bottom: 0;
 }
 @media (min-width: 769px) {
   .subnavbar {
     margin-bottom: 20px;
   }
+}
+.headline-border {
+  border-width: 10px;
+  border-bottom: 0;
 }
 .article-main,
 .article-secondary,

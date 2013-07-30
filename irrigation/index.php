@@ -24,14 +24,12 @@
 	    <div class="content-container">
 			<div class="inner-wrapper">
 
-				<div class="headline row-fluid">
-					<div class="span9">
-						<h2 class="headline-title page-branding text-brand">Reece Irrigation</h2>
-						<p class="headline-description">With 34 irrigation stores around Australia and a dedicated design department, Reece Irrigation has introduced unrivalled service standards to the landscape, commercial and agricultural industries. Reece Irrigation stores stock a large range of products, including turf, agricultural sprays and drippers, valves, pipe and fittings, pumps, automatic controllers, professional outdoor lighting and a range of water saving products.</p>
-					</div>
+				<div class="headline clearfix">
+					<h2 class="headline-title page-branding text-brand">Reece <br>Irrigation</h2>
+					<p class="headline-description">With 34 irrigation stores around Australia and a dedicated design department, Reece Irrigation has introduced unrivalled service standards to the landscape, commercial and agricultural industries. Reece Irrigation stores stock a large range of products, including turf, agricultural sprays and drippers, valves, pipe and fittings, pumps, automatic controllers, professional outdoor lighting and a range of water saving products.</p>
 				</div>
 
-				<hr>
+				<hr class="page-branding border-brand headline-border">
 
 			    <article class="article-main row-fluid">
 			    	<div class="span8">

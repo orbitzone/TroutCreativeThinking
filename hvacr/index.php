@@ -24,14 +24,12 @@
 	    <div class="content-container">
 			<div class="inner-wrapper">
 
-				<div class="headline row-fluid">
-					<div class="span9">
-						<h2 class="headline-title page-branding text-brand">Reece hvac-r</h2>
-						<p class="headline-description">With 36 stores around Australia Reece hvac-r offers dedicated support, stock and expertise including climate solutions, piping, ventilation, refrigeration and heating. Our Reece hvac-r stores offer unrivalled service and are located in all capital cities and major regional centres. Our range of products includes pipe, fittings, refrigerant gas, valves, tools, evaporators, air conditioners, pipe supports, insulation and a range of spare parts and accessories.</p>
-					</div>
+				<div class="headline clearfix">
+					<h2 class="headline-title page-branding text-brand">Reece <br>Hvac-r</h2>
+					<p class="headline-description">With 36 stores around Australia Reece hvac-r offers dedicated support, stock and expertise including climate solutions, piping, ventilation, refrigeration and heating. Our Reece hvac-r stores offer unrivalled service and are located in all capital cities and major regional centres. Our range of products includes pipe, fittings, refrigerant gas, valves, tools, evaporators, air conditioners, pipe supports, insulation and a range of spare parts and accessories.</p>
 				</div>
 
-				<hr>
+				<hr class="page-branding border-brand headline-border">
 
 			    <article class="article-main row-fluid">
 			    	<div class="span8">

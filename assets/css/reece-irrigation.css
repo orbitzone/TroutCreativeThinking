@@ -28,3 +28,6 @@
 .page-branding.text-brand {
   color: #5e792d;
 }
+.page-branding.border-brand {
+  border-color: #5e792d;
+}

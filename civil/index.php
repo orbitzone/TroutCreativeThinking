@@ -24,14 +24,12 @@
 	    <div class="content-container">
 			<div class="inner-wrapper">
 
-				<div class="headline row-fluid">
-					<div class="span9">
-						<h2 class="headline-title page-branding text-brand">Reece Civil</h2>
-						<p class="headline-description">Reece Civil is dedicated to supplying only the best products and service for all underground pipe networks including water mains, gas mains, sewer mains, telecommunications, electrical and fire services. With our growing national network of dedicated Civil branches, we have the resources to service your business, from the smallest company to the largest contractor. Our staff offer a wide range of industry experience and can help you source and specify the most appropriate products for any development.</p>
-					</div>
+				<div class="headline clearfix">
+					<h2 class="headline-title page-branding text-brand">Reece <br>Civil</h2>
+					<p class="headline-description">Reece Civil is dedicated to supplying only the best products and service for all underground pipe networks including water mains, gas mains, sewer mains, telecommunications, electrical and fire services. With our growing national network of dedicated Civil branches, we have the resources to service your business, from the smallest company to the largest contractor. Our staff offer a wide range of industry experience and can help you source and specify the most appropriate products for any development.</p>
 				</div>
 
-				<hr>
+				<hr class="page-branding border-brand headline-border">
 
 			    <article class="article-main row-fluid">
 			    	<div class="span8">

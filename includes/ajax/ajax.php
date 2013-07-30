@@ -2,28 +2,28 @@
 
 	$arr = array (
 	  array (
-	  	'image' => '/assets/images/products_2013/products-bathroom-latest-product-1.jpg',
-	  	'productTitle' => 'Caroma Pearl',
-	  	'productDesc' => 'Freestanding bath',
-	  	'productPrice' => '$120.00'		
+	  	'image' => 'http://placehold.it/280x193',
+	  	'productTitle' => 'Product',
+	  	'productDesc' => 'Description',
+	  	'productPrice' => '$xxx.xx'		
 	  	),
 	  array (
-	  	'image' => '/assets/images/products_2013/products-bathroom-latest-product-1.jpg',
-	  	'productTitle' => 'Caroma Pearl',
-	  	'productDesc' => 'Freestanding bath',
-	  	'productPrice' => '$160.00'		
+	  	'image' => 'http://placehold.it/280x193',
+	  	'productTitle' => 'Product',
+	  	'productDesc' => 'Description',
+	  	'productPrice' => '$xxx.xx'		
 	  	),
 	  array (
-	  	'image' => '/assets/images/products_2013/products-bathroom-latest-product-1.jpg',
-	  	'productTitle' => 'Caroma Pearl',
-	  	'productDesc' => 'Freestanding bath',
-	  	'productPrice' => '$150.00'		
+	  	'image' => 'http://placehold.it/280x193',
+	  	'productTitle' => 'Product',
+	  	'productDesc' => 'Description',
+	  	'productPrice' => '$xxx.xx'		
 	  	),
 	  array (
-	  	'image' => '/assets/images/products_2013/products-bathroom-latest-product-1.jpg',
-	  	'productTitle' => 'Caroma Pearl',
-	  	'productDesc' => 'Freestanding bath',
-	  	'productPrice' => '$120.00'		
+	  	'image' => 'http://placehold.it/280x193',
+	  	'productTitle' => 'Product',
+	  	'productDesc' => 'Description',
+	  	'productPrice' => '$xxx.xx'		
 	  	)
 	);
 

@@ -24,9 +24,9 @@
 	    <div class="content-container">
 			<div class="inner-wrapper">
 
-				<div class="headline clearfix">
-					<h2 class="headline-title page-branding text-brand">Reece <br>Civil</h2>
-					<p class="headline-description">We're dedicated to supplying only the best products and service for all underground pipe networks including water mains, gas mains, sewer mains, telecommunications, electrical and fire services.</p>
+				<div class="article-headline clearfix">
+					<h2 class="article-headline-title pull-left page-branding text-brand">Reece <br>Civil</h2>
+					<p class="article-headline-description">We're dedicated to supplying only the best products and service for all underground pipe networks including water mains, gas mains, sewer mains, telecommunications, electrical and fire services.</p>
 				</div>
 
 				<hr class="page-branding border-brand headline-border">

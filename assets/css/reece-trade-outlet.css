@@ -25,27 +25,26 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.headline .headline-title {
-  float: left;
+.article-headline .article-headline-title {
   margin-top: 0;
   margin-bottom: 0;
   margin-right: 50px;
   font-size: 42px;
 }
-.headline .headline-description {
+.article-headline .article-headline-description {
   margin-bottom: 0;
   overflow: hidden;
   max-width: 800px;
 }
 @media (max-width: 769px) {
-  .headline .headline-title {
+  .article-headline .article-headline-title {
     float: none;
     margin-top: 10px;
     margin-bottom: 10px;
   }
 }
 @media (min-width: 769px) {
-  .headline {
+  .article-headline {
     margin-top: 20px;
   }
 }

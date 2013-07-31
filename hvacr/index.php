@@ -24,9 +24,9 @@
 	    <div class="content-container">
 			<div class="inner-wrapper">
 
-				<div class="headline clearfix">
-					<h2 class="headline-title page-branding text-brand">Reece <br>Hvac-r</h2>
-					<p class="headline-description">With 36 stores around Australia Reece hvac-r offers dedicated support, stock and expertise including climate solutions, piping, ventilation, refrigeration and heating.</p>
+				<div class="article-headline clearfix">
+					<h2 class="article-headline-title pull-left page-branding text-brand">Reece <br>Hvac-r</h2>
+					<p class="article-headline-description">With 36 stores around Australia Reece hvac-r offers dedicated support, stock and expertise including climate solutions, piping, ventilation, refrigeration and heating.</p>
 				</div>
 
 				<hr class="page-branding border-brand headline-border">

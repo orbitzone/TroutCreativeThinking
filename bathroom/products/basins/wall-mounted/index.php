@@ -276,10 +276,23 @@
 										<span class="product-desc">Description</span>
 										<span class="product-price">$xxx.xx</span>
 									</h4>
-								</div>							    		
-					    	</div>				    							    							    	
+								</div>
+					    	</div>
 					    </div>
 					</div>	
+
+					<hr>
+
+					<h2>Complete the look</h2>
+					<div class="products-list">
+					    <img src="/assets/images/products_2013/products-single-product-shot-two.jpg" />
+					</div>
+
+					<h2>Learn more about Laufen</h2>
+					<div class="products-list">
+					    <img src="/assets/images/products_2013/products-single-product-shot-one.jpg" />
+					</div>					
+
 				</div>
 		    </div>
 

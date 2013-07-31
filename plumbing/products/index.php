@@ -53,11 +53,13 @@
 
 				    <div class="row-fluid">
 						<aside class="span3">
-							<div class="product-filter">
-								<header class="product-filter-head hidden-phone">Product Category</header>
-								<header class="product-filter-head visible-phone" data-toggle="collapse" data-target="#product-caregory">Product Category<i class="icon-angle-down icon-large pull-right"></i></header>
 
-								<ul id="product-caregory" class="nav collapse">
+							<div class="product-filters-wrap">
+								<div class="product-filter">
+									<header class="product-filter-head visible-phone" data-toggle="collapse" data-target="#product-filters">Product Category<i class="icon-angle-down icon-large pull-right"></i></header>
+									<header class="product-filter-head hidden-phone">Product Category</header>
+									<div id="product-filters" class="product-filters collapse">
+										<ul id="product-caregory" class="nav">
 									<li><a href="#">Hot Water Units</a></li>
 									<li><a href="#">Rainwater Tanks</a></li>
 									<li><a href="#">Hydronic Heating</a></li>
@@ -76,8 +78,11 @@
 									<li><a href="#">Tap & Cistern Spares</a></li>
 									<li><a href="#">Gas Spares</a></li>
 									<li><a href="#">Trade Bathroom ware</a></li>
-								</ul>
-							</div>
+										</ul>	
+									</div>
+								</div>																
+							</div>	
+
 						</aside>
 
 						<section class="products-content span9">

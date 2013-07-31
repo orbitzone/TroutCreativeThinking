@@ -25,13 +25,10 @@
 .lt-ie9 .main-header .top-highlight {
   top: 0;
 }
-.lt-ie9 #accordion .collapse {
+.lt-ie9 #product-filters.collapse {
   position: static;
   height: auto;
   overflow: visible;
-}
-.lt-ie9 .product-filter .collapse {
-  height: auto;
 }
 .lt-ie8 .products-tab-nav {
   overflow: hidden;

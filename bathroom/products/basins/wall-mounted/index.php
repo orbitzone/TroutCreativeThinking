@@ -205,7 +205,7 @@
 									<a class="muted" href="#">More information</a>
 								</div>
 								<div class="products-tab">
-									<img src="/assets/images/products_2013/products-pdf-sample.jpg" alt="Download PDF" />
+									<img class="products-tab-media" src="/assets/images/products_2013/products-pdf-sample.jpg" alt="Download PDF" />
 									<a class="btn btn-inverse">Download <b class="caret"></b></a>
 								</div>																		
 							</div>
@@ -235,7 +235,7 @@
 									<a class="muted" href="#">More information</a>
 								</div>
 								<div class="products-tab">
-									<img src="/assets/images/products_2013/products-pdf-sample.jpg" alt="Download PDF" />
+									<img class="products-tab-media" src="/assets/images/products_2013/products-pdf-sample.jpg" alt="Download PDF" />
 									<a class="btn btn-inverse">Download <b class="caret"></b></a>
 								</div>																		
 							</div>							

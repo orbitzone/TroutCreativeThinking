@@ -55,7 +55,82 @@
 				    <div class="row-fluid">
 						<aside class="span3">
 
-							<div class="product-filter">
+
+
+
+
+
+
+
+							<div class="product-filters-wrap">
+
+								<div class="product-filter">
+									<header class="product-filter-head visible-phone" data-toggle="collapse" data-target="#product-filters">Product Category<i class="icon-angle-down icon-large pull-right"></i></header>
+
+									<header class="product-filter-head hidden-phone" data-toggle="collapse" data-target="#product-category">Product Category</header>
+
+									<ul id="product-category" class="nav">									
+										<li class="filter-options clearfix"><a class="page-branding text-brand" href="#">Hot Water Units</a><a data-toggle="collapse" href="#product-category-sub">Change</a></li>
+									</ul>	
+
+									<ul id="product-category-sub" class="subnav collapse">
+										<li><a href="#">Rainwater Tanks</a></li>
+										<li><a href="#">Hydronic Heating</a></li>
+										<li><a href="#">Pipe & Fittings</a></li>
+										<li><a href="#">Clips & Pipe Supports</a></li>
+										<li><a href="#">Valves</a></li>
+										<li><a href="#">Pumps</a></li>
+										<li><a href="#">Flashing</a></li>
+										<li><a href="#">Tools & Hardware</a></li>
+										<li><a href="#">Workware & Safety Gear</a></li>
+										<li><a href="#">Macerators</a></li>
+										<li><a href="#">Water Filters</a></li>
+										<li><a href="#">Air Conditioning Units</a></li>
+										<li><a href="#">Ducting and Ventilation</a></li>
+										<li><a href="#">Fire Services</a></li>
+										<li><a href="#">Tap & Cistern Spares</a></li>
+										<li><a href="#">Gas Spares</a></li>
+										<li><a href="#">Trade Bathroom ware</a></li>
+									</ul>																
+								</div>								
+
+								<div id="product-filters" class="product-filters collapse">
+
+
+									<div class="product-filter">
+										<header class="product-filter-head">Product Type</header>
+
+										<ul id="product-type" class="nav">
+											<li><a href="#">Counter</a></li>
+											<li><a href="#">Wall Mounted</a></li>
+											<li><a href="#">Floor Mounted</a></li>
+											<li><a href="#">Semi Recessed</a></li>
+										</ul>
+									</div>	
+
+									<div class="product-filter">
+										<header class="product-filter-head">Brand</header>
+
+										<ul id="brands" class="nav">
+											<li><a href="#">Counter</a></li>
+											<li><a href="#">Wall Mounted</a></li>
+											<li><a href="#">Floor Mounted</a></li>
+											<li><a href="#">Semi Recessed</a></li>
+										</ul>
+									</div>										
+
+								</div>
+
+							</div>	
+
+
+
+
+
+
+
+
+<!-- 							<div class="product-filter">
 								<header class="product-filter-head hidden-phone">Product Category</header>
 								<header class="product-filter-head visible-phone" data-toggle="collapse" data-target="#product-caregory">Product Category<i class="icon-angle-down icon-large pull-right"></i></header>
 
@@ -106,7 +181,7 @@
 									<li><a href="#">Thermann</a></li>
 									<li><a href="#">Everhot</a></li>
 								</ul>
-							</div>							
+							</div>	 -->						
 
 						</aside>
 
@@ -261,9 +336,9 @@
 	   			"activeMenuItem" => "Bathroom Moments"
 	   		);
 		   	include_once($serverBase."/includes/nav/nav-mobile.php");
-		?>	
+		?>
 
-		<?php 
+		<?php
 			$jsScriptPaths = [
 				"/assets/js/jquery.mobile.custom.min.js",
 				"/assets/js/bootstrap-transition.js", 
@@ -274,10 +349,10 @@
 				"/assets/js/micro-template.js",
 				"/assets/js/reece-ajax-content-loader.js",
 				"/assets/js/reece-carousel.js"
-			]; 
+			];
 
 		   	include_once($serverBase."/includes/foot/scripts.php");
-		?>	
+		?>
 
 		<script type="text/html" id="product_block_template">
 

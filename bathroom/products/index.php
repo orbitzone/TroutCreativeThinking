@@ -54,22 +54,27 @@
 
 				    <div class="row-fluid">
 						<aside class="span3">
-							<div class="product-filter">
-								<header class="product-filter-head hidden-phone">Product Category</header>
-								<header class="product-filter-head visible-phone" data-toggle="collapse" data-target="#product-caregory">Product Category<i class="icon-angle-down icon-large pull-right"></i></header>
 
-								<ul id="product-caregory" class="nav collapse">
-									<li><a href="#">Accessories</a></li>
-									<li><a href="#">Toilets</a></li>
-									<li><a href="#">Basins</a></li>
-									<li><a href="#">Tapware</a></li>
-									<li><a href="#">Baths & Spas</a></li>
-									<li><a href="#">Showers</a></li>
-									<li><a href="#">Vanity Furniture</a></li>
-									<li><a href="#">Wastes</a></li>
-									<li><a href="#">Commercial</a></li>
-								</ul>
-							</div>
+							<div class="product-filters-wrap">
+								<div class="product-filter">
+									<header class="product-filter-head visible-phone" data-toggle="collapse" data-target="#product-filters">Product Category<i class="icon-angle-down icon-large pull-right"></i></header>
+									<header class="product-filter-head hidden-phone">Product Category</header>
+									<div id="product-filters" class="product-filters collapse">
+										<ul id="product-caregory" class="nav">
+											<li><a href="#">Accessories</a></li>
+											<li><a href="#">Toilets</a></li>
+											<li><a href="#">Basins</a></li>
+											<li><a href="#">Tapware</a></li>
+											<li><a href="#">Baths & Spas</a></li>
+											<li><a href="#">Showers</a></li>
+											<li><a href="#">Vanity Furniture</a></li>
+											<li><a href="#">Wastes</a></li>
+											<li><a href="#">Commercial</a></li>
+										</ul>	
+									</div>
+								</div>																
+							</div>	
+
 						</aside>
 
 						<section class="products-content span9">

@@ -37,22 +37,43 @@
         },
 
         removeContentLoader: function ($clickedEl) {
-            console.log('remove');
             $clickedEl.removeClass('ajax-preloader');
         },        
 
-        //Templating function
         fetchTemplate: function (data, $clickedEl) {
-            var $templateWrap = $('<div style="display: none;" class="row-fluid"/>'),
-                html = "";
+            var increment = 4,
+                counter = increment, 
+                html = "",
+                $templateWrap = $('<div style="display: none;" class="row-fluid"/>'),
+                templateMarkup = [];
 
+            //Loop through our returned data and process
             for ( var i = 0; i < data.length; i++ ) {
-                html += tmpl("product_block_template", data[i]);
+                //Check if we have reached a row of '4' if we have - append our last iteration, create a new row and reset our variables for the next row
+                if (i === counter) {
+                    templateMarkup.push($templateWrap.append(html));
+                    html = "";
+                    html += tmpl("product_block_template", data[i]);
+                    $templateWrap = $('<div style="display: none;" class="row-fluid"/>');
+                    counter = counter + increment;
+                }
+                else {
+                    html += tmpl("product_block_template", data[i]);
+                }
             }
 
-            $templateWrap = $templateWrap.append(html);
-            $clickedEl.before($templateWrap);
-            $templateWrap.slideDown();
+            //Push our final iteration into the array before we append our data
+            templateMarkup.push($templateWrap.append(html));
+            this.appendTemplate(templateMarkup, $clickedEl);
+        },
+
+        appendTemplate: function(templateMarkup, $clickedEl) {
+
+            //Loop through our array of rows and append each to the dom (it would be better to loop through each item and save to a local variables but this is only a sample)
+            for ( var i = 0; i < templateMarkup.length; i++ ) {
+                $clickedEl.before(templateMarkup[i]);
+                templateMarkup[i].slideDown();
+            }
         }
     };
 })();
@@ -60,3 +81,4 @@
 $(function(){
     window.ajaxContentLoader.init();
 });
+

@@ -33,68 +33,84 @@
 //====================================================================================================================================
 //====================================================================================================================================
 
+.product-filters-wrap {
+
+	@media (max-width: 767px) {
+		background-color: @lightBackground;
+		.border-radius(4px);
+	}		
+}
+
+.product-filters {
+
+	@media (min-width: 767px) {
+		height: auto!important; //Override inline JS to make sure filter list is always open on desktop and tablet
+	}
+}
+
 .product-filter {
-	margin-top: 10px;
-	padding: 10px;
+	margin-bottom: 10px;
+	padding: 20px;
+	.border-radius(4px);
 	background-color: @lightBackground;
 
 	a {
 		color: darken(@lightBackground, 45%);
 	}
 
-	&:first-child {
-		margin-top: 0;
-	}
-
-	.product-filter-head {
-		padding-bottom: 5px;
-		border-bottom: 1px solid darken(@lightBackground, 10%);
-		font-weight: bold;
-		cursor: pointer;
-
-		@media (max-width: 767px) {
-			border-bottom: 0;
-		}
-	}
-
-	.filter-options {
-		a {
-			font-size: 11px;
-			float: right;
-
-			&:first-child {
-				font-size: inherit;
-				float: left;
-			}
-		}
-	}
-
 	.nav {
 		margin: 0;
+	}
+	.subnav {
+		margin-left: 10px;
+		margin-bottom: 0;
+	}	
 
-		li {
-			margin-top: 5px;
-		}
+	.nav, .subnav {
 
 		@media (max-width: 767px) {
-			height: 0;
 			margin: 0;
 
 			li a {
-				padding: 10px;
+				display: block;
 				margin-top: 5px;
-				//text-align: center;	
-				#gradient > .vertical(darken(@lightBackground, 5%), darken(@lightBackground, 10%));
+				padding: 10px;
 				.border-radius(4px);
+				#gradient > .vertical(darken(@lightBackground, 5%), darken(@lightBackground, 10%));
 			}
 		}
-
-		@media (min-width: 767px) {
-			height: auto!important; //Override inline JS to make sure filter list is always open on desktop and tablet
-		}
 	}
-	.subnav {
+
+	@media (max-width: 767px) {
 		margin-bottom: 0;
+	}		
+}
+
+.product-filter-head {
+	padding-bottom: 10px;
+	border-bottom: 1px solid darken(@lightBackground, 10%);
+	font-weight: bold;
+	cursor: pointer;
+
+	@media (max-width: 767px) {
+		padding-bottom: 0;
+		border-bottom: 0;
+	}
+
+	@media (min-width: 767px) {
+		margin-bottom: 10px;
+	}
+}
+
+.filter-options {
+	a {
+		font-size: 11px;
+		float: right;
+
+		&:first-child {
+			font-size: inherit;
+			float: left;
+		}
 	}
 }
 
@@ -147,25 +163,11 @@
 
 .products-list {
 
-	// .row-fluid:first-child {
-	// 	.product-block {
-	// 		margin-top: 0;
-	// 	}
-	// }	
-
-	// @media (max-width: 767px) {
-	// 	.row-fluid:first-child {
-	// 		.product-block {
-	// 			margin-top: @fluidGridGutterWidth;
-	// 		}
-	// 	}		
-	// }
-
 	@media (max-width: 767px) {
 		.product-block, .row-fluid [class*="span"] {
 			float: left;
-			width: 48.93617021276595%;
-			margin: 0.53191489361702%;
+			width: 46.93617021276595%;
+			margin: 1.53191489361702%;
 		}
 	}
 }
@@ -542,11 +544,14 @@
 	}	
 }
 
+.products-tab-media {
+	display: block; //Set media to block to give more control when styling
+}
+
 .products-tab {
 	float: left;
 	width: 29.9999999%;
 	border-left: 1px solid darken(@lightBackground, 10%);
-	//margin-left: 2.56410256%;
 	margin-left: 2.28205128%;
 	padding-left: 2.28205128%;
 

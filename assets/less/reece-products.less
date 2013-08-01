@@ -71,7 +71,7 @@
 		@media (max-width: 767px) {
 			margin: 0;
 
-			li a {
+			a {
 				display: block;
 				margin-top: 5px;
 				padding: 10px;
@@ -103,14 +103,12 @@
 }
 
 .filter-options {
-	a {
-		font-size: 11px;
-		float: right;
+	a.filter-option {
+		display: inline-block;
+	}
 
-		&:first-child {
-			font-size: inherit;
-			float: left;
-		}
+	i {
+		margin-left: 10px;		
 	}
 }
 
@@ -405,7 +403,7 @@
 	}					
 }
 
-// Custom Carousel Control Module
+// Carousel Control Modules
 //====================================================================================================================================
 //====================================================================================================================================
 
@@ -414,19 +412,21 @@
 	//Need to use some magic numbers here as the layout does not accommodate 'special buttons' very well
 	.carousel-control {
 		width: auto;
-		top: -50px;
+		top: -40px;
 		font-size: 80px;
 		left: auto;
 		right: 0;
 
 		&.left {
 			right: 20px;
-		}
-
-		@media (max-width: 767px) {
-			display: none;
-		}		
+		}	
 	}
+}
+
+.carousel-control {
+	@media (max-width: 767px) {
+		display: none;
+	}	
 }
 
 // Product Variation Module

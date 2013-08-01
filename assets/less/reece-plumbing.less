@@ -5,6 +5,7 @@
 
 //Application imports
 @import "reece-variables.less";
+@import "reece-mixins.less";
 
 // Branding Module (Customize)
 //====================================================================================================================================
@@ -17,9 +18,10 @@
     &.sale-branding {
         position: absolute;
         top: 5%;
-        right: 5%;
+        left: 5%;
         width: 41px;
         height: 40px;
-        background-image: url("@{baseImagePath}/products_2013/products-plumbing-sale-icon.png");
+        background: url("@{baseImagePath}/products_2013/products-plumbing-sale-iconx1.png") no-repeat 0 0;
+        .image-2x("@{baseImagePath}/products_2013/products-plumbing-sale-iconx2.png", 41px, 40px);
     }
 }

@@ -298,6 +298,28 @@
   padding-bottom: 20px;
   border-bottom: 1px solid #e5e5e5;
 }
+.article-list {
+  *zoom: 1;
+}
+.article-list:before,
+.article-list:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.article-list:after {
+  clear: both;
+}
+@media only screen and (min-width: 979px) {
+  .article-list .article-list-row {
+    float: left;
+    width: 47.9361702%;
+    margin-left: 1.41843971%;
+  }
+  .article-list .article-list-row:first-child {
+    margin-left: 0;
+  }
+}
 .recent-stories {
   overflow: hidden;
   background-color: #e5e5e5;

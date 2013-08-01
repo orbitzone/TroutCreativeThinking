@@ -60,11 +60,10 @@
 
 								<div class="product-filter">
 									<header class="product-filter-head visible-phone" data-toggle="collapse" data-target="#product-filters">Product Category<i class="icon-angle-down icon-large pull-right"></i></header>
-
 									<header class="product-filter-head hidden-phone" data-toggle="collapse" data-target="#product-category">Product Category</header>
 
 									<ul id="product-category" class="nav">									
-										<li class="filter-options clearfix"><a class="page-branding text-brand" href="#">Basins</a><a data-toggle="collapse" href="#product-category-sub">Change</a></li>
+										<li class="filter-options clearfix"><a data-toggle="collapse" href="#product-category-sub" class="filter-option page-branding text-brand" href="#">Basins <i class="icon-angle-down icon-large"></i></a></li>
 									</ul>	
 
 									<ul id="product-category-sub" class="subnav collapse">

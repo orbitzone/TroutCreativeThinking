@@ -44,9 +44,9 @@
 								<div id="product-shots-carousel" class="carousel slide">
 									
 									<div class="carousel-inner">
-										<div class="active item" data-slide-number="0"><img src="/assets/images/products_2013/products-product-shot-1.jpg" alt="Laufen ILBAGNOALESSI One" /></div>
-										<div class="item" data-slide-number="1"><img src="/assets/images/products_2013/products-product-shot-1.jpg" alt="Laufen ILBAGNOALESSI One" /></div>
-										<div class="item" data-slide-number="2"><img src="/assets/images/products_2013/products-product-shot-1.jpg" alt="Laufen ILBAGNOALESSI One" /></div>
+										<div class="active item" data-slide-number="0"><img src="/assets/images/products_2013/products-product-shot-1.jpg" alt="Laufen ILBAGNOALESSI One"></div>
+										<div class="item" data-slide-number="1"><img src="/assets/images/products_2013/products-product-shot-1.jpg" alt="Laufen ILBAGNOALESSI One"></div>
+										<div class="item" data-slide-number="2"><img src="/assets/images/products_2013/products-product-shot-1.jpg" alt="Laufen ILBAGNOALESSI One"></div>
 									</div>
 
 								</div>
@@ -54,32 +54,32 @@
 								<ul class="thumbnails carousel-controls-mini">
 									<li>
 										<a class="thumbnail" href="#product-shots-carousel" data-carousel-slide="0">
-											<img src="/assets/images/products_2013/products-product-shot-1.jpg" alt="Laufen ILBAGNOALESSI One" />
+											<img src="/assets/images/products_2013/products-product-shot-1.jpg" alt="Laufen ILBAGNOALESSI One">
 										</a>
 									</li>
 									<li>
 										<a class="thumbnail" href="#product-shots-carousel" data-carousel-slide="1">
-											<img src="/assets/images/products_2013/products-product-shot-1.jpg" alt="Laufen ILBAGNOALESSI One" />
+											<img src="/assets/images/products_2013/products-product-shot-1.jpg" alt="Laufen ILBAGNOALESSI One">
 										</a>
 									</li>
 									<li>
 										<a class="thumbnail" href="#product-shots-carousel" data-carousel-slide="2">
-											<img src="/assets/images/products_2013/products-product-shot-1.jpg" alt="Laufen ILBAGNOALESSI One" />
+											<img src="/assets/images/products_2013/products-product-shot-1.jpg" alt="Laufen ILBAGNOALESSI One">
 										</a>
 									</li>
 									<li>
 										<a class="thumbnail" href="#product-shots-carousel" data-carousel-slide="0">
-											<img src="/assets/images/products_2013/products-product-shot-1.jpg" alt="Laufen ILBAGNOALESSI One" />
+											<img src="/assets/images/products_2013/products-product-shot-1.jpg" alt="Laufen ILBAGNOALESSI One">
 										</a>
 									</li>
 									<li>
 										<a class="thumbnail" href="#product-shots-carousel" data-carousel-slide="1">
-											<img src="/assets/images/products_2013/products-product-shot-1.jpg" alt="Laufen ILBAGNOALESSI One" />
+											<img src="/assets/images/products_2013/products-product-shot-1.jpg" alt="Laufen ILBAGNOALESSI One">
 										</a>
 									</li>
 									<li>
 										<a class="thumbnail" href="#product-shots-carousel" data-carousel-slide="2">
-											<img src="/assets/images/products_2013/products-product-shot-1.jpg" alt="Laufen ILBAGNOALESSI One" />
+											<img src="/assets/images/products_2013/products-product-shot-1.jpg" alt="Laufen ILBAGNOALESSI One">
 										</a>
 									</li>																			
 								</ul>
@@ -119,7 +119,7 @@
 												<div class="row-fluid">
 													<div class="product-variation-block span6">
 												    	<div class="product-block">
-															<a href="#"><img src="/assets/images/products_2013/products-bathroom-latest-product-1.jpg" /></a>
+															<a href="#"><img src="/assets/images/products_2013/products-bathroom-latest-product-1.jpg"></a>
 															<div class="product-info">
 																<h4>
 																	<a class="product-title" href="#">Product</a>
@@ -131,7 +131,7 @@
 													</div>
 													<div class="product-variation-block span6">
 												    	<div class="product-block">
-															<a href="#"><img src="/assets/images/products_2013/products-bathroom-latest-product-1.jpg" /></a>
+															<a href="#"><img src="/assets/images/products_2013/products-bathroom-latest-product-1.jpg"></a>
 															<div class="product-info">
 																<h4>
 																	<a class="product-title" href="#">Product</a>
@@ -205,7 +205,7 @@
 									<a class="muted" href="#">More information</a>
 								</div>
 								<div class="products-tab">
-									<img class="products-tab-media" src="/assets/images/products_2013/products-pdf-sample.jpg" alt="Download PDF" />
+									<img class="products-tab-media" src="/assets/images/products_2013/products-pdf-sample.jpg" alt="Download PDF">
 									<a class="btn btn-inverse">Download <b class="caret"></b></a>
 								</div>																		
 							</div>
@@ -235,7 +235,7 @@
 									<a class="muted" href="#">More information</a>
 								</div>
 								<div class="products-tab">
-									<img class="products-tab-media" src="/assets/images/products_2013/products-pdf-sample.jpg" alt="Download PDF" />
+									<img class="products-tab-media" src="/assets/images/products_2013/products-pdf-sample.jpg" alt="Download PDF">
 									<a class="btn btn-inverse">Download <b class="caret"></b></a>
 								</div>																		
 							</div>							
@@ -244,12 +244,12 @@
 
 					<hr>
 
-					<h2>You may also need</h2>
+					<h2>Complete the look</h2>
 			    	<div class="products-list">
 					    <div class="row-fluid">
 					    	<div class="product-block span4">
 					    		<span class="page-branding sale-branding"></span>
-								<a href="#"><img src="/assets/images/products_2013/products-bathroom-sample-product500x300.jpg" /></a>
+								<a href="#"><img src="/assets/images/products_2013/products-bathroom-sample-product500x300.jpg"></a>
 								<div class="product-info">
 									<h4>
 										<a class="product-title" href="#">Product</a>
@@ -259,7 +259,7 @@
 								</div>
 					    	</div>
 					    	<div class="product-block span4">
-					    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-sample-product500x300.jpg" /></a>
+					    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-sample-product500x300.jpg"></a>
 								<div class="product-info">
 									<h4>
 										<a class="product-title" href="#">Product</a>
@@ -269,7 +269,7 @@
 								</div>							    		
 					    	</div>
 					    	<div class="product-block span4">
-					    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-sample-product500x300.jpg" /></a>
+					    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-sample-product500x300.jpg"></a>
 								<div class="product-info">
 									<h4>
 										<a class="product-title" href="#">Product</a>
@@ -283,15 +283,35 @@
 
 					<hr>
 
-					<h2>Complete the look</h2>
-					<div class="products-list">
-					    <img src="/assets/images/products_2013/products-single-product-shot-two.jpg" />
-					</div>
-
 					<h2>Learn more about Laufen</h2>
-					<div class="products-list">
-					    <img src="/assets/images/products_2013/products-single-product-shot-one.jpg" />
-					</div>					
+			    	<div class="products-list">
+					    <div class="row-fluid">
+					    	<div class="product-block span4">
+								<a href="#"><img src="/assets/images/products_2013/products-laufen-shot.jpg"></a>
+					    	</div>
+					    	<div class="product-block span4">
+					    		<a href="#"><img src="/assets/images/products_2013/products-laufen-text.jpg"></a>							    		
+					    	</div>
+					    	<div class="product-block span4">
+					    		<a href="#"><img src="/assets/images/products_2013/products-laufen-bathroom-shot.jpg"></a>
+					    	</div>
+					    </div>
+					</div>	
+
+					<h2>See this product featured in</h2>
+			    	<div class="products-list">
+					    <div class="row-fluid">
+					    	<div class="product-block span4">
+								<a href="#"><img src="/assets/images/products_2013/products-hotel-shot-one.jpg"></a>
+					    	</div>
+					    	<div class="product-block span4">
+					    		<a href="#"><img src="/assets/images/products_2013/products-hotel-shot-two.jpg"></a>
+					    	</div>
+					    	<div class="product-block span4">
+					    		<a href="#"><img src="/assets/images/products_2013/products-hotel-shot-three.jpg"></a>
+					    	</div>
+					    </div>
+					</div>				
 
 				</div>
 		    </div>

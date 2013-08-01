@@ -373,12 +373,13 @@
 
 		<?php 
 		  	$jsScriptPaths = array(
+				"/assets/js/jquery.mobile.custom.min.js",		  		
 		  		"/assets/js/jquery.lazyload.min.js", 
 		  		"/assets/js/bootstrap-carousel.js",
 		  		"/assets/js/bootstrap-collapse.js",
 		  		"/assets/js/bootstrap-transition.js",
 		  		"/assets/js/reece-ocnav.js",
-				"/assets/js/reece-carousel.js"		  		
+				"/assets/js/reece-carousel.js"  		
 		  	); 
 		  	include_once($serverBase."/includes/foot/scripts.php");
 		?>			

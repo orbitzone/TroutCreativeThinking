@@ -59,12 +59,12 @@
 							<div class="product-filters-wrap">
 
 								<div class="product-filter">
-									<header class="product-filter-head visible-phone" data-toggle="collapse" data-target="#product-filters">Product Category<i class="icon-angle-down icon-large pull-right"></i></header>
-									<header class="product-filter-head hidden-phone" data-toggle="collapse" data-target="#product-category">Product Category</header>
+									<header class="product-filter-head visible-phone" data-toggle="collapse" data-target="#product-category-sub">Product Category: <span class="page-branding text-brand">Basins</span><i class="pull-right icon-angle-down icon-large"></i></header>
+									<header class="product-filter-head hidden-phone" data-toggle="collapse" data-target="#product-category">Product Category:</header>
 
-									<ul id="product-category" class="nav">									
+									<ul id="product-category" class="nav hidden-phone">
 										<li class="filter-options clearfix"><a data-toggle="collapse" href="#product-category-sub" class="filter-option page-branding text-brand" href="#">Basins <i class="icon-angle-down icon-large"></i></a></li>
-									</ul>	
+									</ul>
 
 									<ul id="product-category-sub" class="subnav collapse">
 										<li><a href="#">Accessories</a></li>
@@ -76,54 +76,59 @@
 										<li><a href="#">Vanity Furniture</a></li>
 										<li><a href="#">Wastes</a></li>
 										<li><a href="#">Commercial</a></li>
-									</ul>																
-								</div>								
+									</ul>
 
-								<div id="product-filters" class="product-filters collapse">
+								</div>																				
 
-									<div class="product-filter">
-										<header class="product-filter-head">Product Type</header>
+							</div>		
 
-										<ul id="product-type" class="nav">
-											<li><a href="#">Counter</a></li>
-											<li><a href="#">Wall Mounted</a></li>
-											<li><a href="#">Floor Mounted</a></li>
-											<li><a href="#">Semi Recessed</a></li>
-										</ul>
-									</div>	
+							<div class="filter-options product-filter visible-phone">
+								<header data-toggle="collapse" data-target="#product-filters" class="product-filter-head">Product Filter <i class="pull-right icon-angle-down icon-large"></i></header>
+							</div>
 
-									<div class="product-filter">
-										<header class="product-filter-head">Trends</header>
+							<div id="product-filters" class="product-filters collapse">
 
-										<ul id="trends" class="nav">
-											<li><a href="#">Day Spa</a></li>
-											<li><a href="#">Hotel Inspired</a></li>
-										</ul>
-									</div>	
+								<div class="product-filter">
+									<header class="product-filter-head">Product Type</header>
 
-									<div class="product-filter">
-										<header class="product-filter-head">Width</header>
-
-										<ul id="width" class="nav">
-											<li><a href="#">< 500mm</a></li>
-											<li><a href="#">500 - 700mm</a></li>
-											<li><a href="#">> 700mm</a></li>									
-										</ul>
-									</div>	
-
-									<div class="product-filter">
-										<header class="product-filter-head">Tapholes</header>
-
-										<ul id="tapholes" class="nav">
-											<li><a href="#">0</a></li>
-											<li><a href="#">1</a></li>
-											<li><a href="#">2+</a></li>									
-										</ul>
-									</div>	
-
+									<ul id="product-type" class="nav">
+										<li><a href="#">Counter</a></li>
+										<li><a href="#">Wall Mounted</a></li>
+										<li><a href="#">Floor Mounted</a></li>
+										<li><a href="#">Semi Recessed</a></li>
+									</ul>
 								</div>
 
-							</div>													
+								<div class="product-filter">
+									<header class="product-filter-head">Trends</header>
+
+									<ul id="trends" class="nav">
+										<li><a href="#">Day Spa</a></li>
+										<li><a href="#">Hotel Inspired</a></li>
+									</ul>
+								</div>
+
+								<div class="product-filter">
+									<header class="product-filter-head">Width</header>
+
+									<ul id="width" class="nav">
+										<li><a href="#">< 500mm</a></li>
+										<li><a href="#">500 - 700mm</a></li>
+										<li><a href="#">> 700mm</a></li>
+									</ul>
+								</div>
+
+								<div class="product-filter">
+									<header class="product-filter-head">Tapholes</header>
+
+									<ul id="tapholes" class="nav">
+										<li><a href="#">0</a></li>
+										<li><a href="#">1</a></li>
+										<li><a href="#">2+</a></li>
+									</ul>
+								</div>
+
+							</div>																		
 
 						</aside>
 

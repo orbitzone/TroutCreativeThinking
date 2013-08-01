@@ -74,7 +74,7 @@
 									</div>
 								</div>																
 							</div>	
-
+							
 						</aside>
 
 						<section class="products-content span9">

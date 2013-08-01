@@ -111,11 +111,8 @@
     margin-bottom: 10px;
   }
 }
-.filter-options a.filter-option {
-  display: inline-block;
-}
-.filter-options i {
-  margin-left: 10px;
+.filter-options {
+  margin-top: 10px;
 }
 .product-section-lead-links {
   margin: 0 0 20px;

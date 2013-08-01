@@ -13,7 +13,6 @@
 
 			$.each($carousel, function(index) {
 				var interval = $(this).data('bs-carousel-interval');
-				console.log()
 				if (interval) {
 					$(this).carousel();
 				}

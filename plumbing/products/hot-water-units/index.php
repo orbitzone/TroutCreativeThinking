@@ -58,13 +58,12 @@
 							<div class="product-filters-wrap">
 
 								<div class="product-filter">
-									<header class="product-filter-head visible-phone" data-toggle="collapse" data-target="#product-filters">Product Category<i class="icon-angle-down icon-large pull-right"></i></header>
+									<header class="product-filter-head visible-phone" data-toggle="collapse" data-target="#product-category-sub">Product Category: <span class="page-branding text-brand">Hot Water Units</span><i class="pull-right icon-angle-down icon-large"></i></header>
+									<header class="product-filter-head hidden-phone" data-toggle="collapse" data-target="#product-category">Product Category:</header>
 
-									<header class="product-filter-head hidden-phone" data-toggle="collapse" data-target="#product-category">Product Category</header>
-
-									<ul id="product-category" class="nav">									
-										<li class="filter-options clearfix"><a class="page-branding text-brand" href="#">Hot Water Units</a><a data-toggle="collapse" href="#product-category-sub">Change</a></li>
-									</ul>	
+									<ul id="product-category" class="nav hidden-phone">
+										<li class="filter-options clearfix"><a data-toggle="collapse" href="#product-category-sub" class="filter-option page-branding text-brand" href="#">Hot Water Units <i class="icon-angle-down icon-large"></i></a></li>
+									</ul>
 
 									<ul id="product-category-sub" class="subnav collapse">
 										<li><a href="#">Rainwater Tanks</a></li>
@@ -84,97 +83,42 @@
 										<li><a href="#">Tap & Cistern Spares</a></li>
 										<li><a href="#">Gas Spares</a></li>
 										<li><a href="#">Trade Bathroom ware</a></li>
-									</ul>																
-								</div>								
+									</ul>
 
-								<div id="product-filters" class="product-filters collapse">
+								</div>																				
 
+							</div>		
 
-									<div class="product-filter">
-										<header class="product-filter-head">Product Type</header>
-
-										<ul id="product-type" class="nav">
-											<li><a href="#">Counter</a></li>
-											<li><a href="#">Wall Mounted</a></li>
-											<li><a href="#">Floor Mounted</a></li>
-											<li><a href="#">Semi Recessed</a></li>
-										</ul>
-									</div>	
-
-									<div class="product-filter">
-										<header class="product-filter-head">Brand</header>
-
-										<ul id="brands" class="nav">
-											<li><a href="#">Counter</a></li>
-											<li><a href="#">Wall Mounted</a></li>
-											<li><a href="#">Floor Mounted</a></li>
-											<li><a href="#">Semi Recessed</a></li>
-										</ul>
-									</div>										
-
-								</div>
-
-							</div>	
-
-
-
-
-
-
-
-
-<!-- 							<div class="product-filter">
-								<header class="product-filter-head hidden-phone">Product Category</header>
-								<header class="product-filter-head visible-phone" data-toggle="collapse" data-target="#product-caregory">Product Category<i class="icon-angle-down icon-large pull-right"></i></header>
-
-								<ul id="product-caregory" class="nav collapse">									
-									<li class="filter-options"><a class="page-branding text-brand" href="#">Hot Water Units</a><a data-toggle="collapse" href="#product-caregory-sub">Change</a></li>
-								</ul>
-
-								<ul id="product-caregory-sub" class="subnav collapse">
-									<li><a href="#">Rainwater Tanks</a></li>
-									<li><a href="#">Hydronic Heating</a></li>
-									<li><a href="#">Pipe & Fittings</a></li>
-									<li><a href="#">Clips & Pipe Supports</a></li>
-									<li><a href="#">Valves</a></li>
-									<li><a href="#">Pumps</a></li>
-									<li><a href="#">Flashing</a></li>
-									<li><a href="#">Tools & Hardware</a></li>
-									<li><a href="#">Workware & Safety Gear</a></li>
-									<li><a href="#">Macerators</a></li>
-									<li><a href="#">Water Filters</a></li>
-									<li><a href="#">Air Conditioning Units</a></li>
-									<li><a href="#">Ducting and Ventilation</a></li>
-									<li><a href="#">Fire Services</a></li>
-									<li><a href="#">Tap & Cistern Spares</a></li>
-									<li><a href="#">Gas Spares</a></li>
-									<li><a href="#">Trade Bathroom ware</a></li>
-								</ul>
+							<div class="filter-options product-filter visible-phone">
+								<header data-toggle="collapse" data-target="#product-filters" class="product-filter-head">Product Filter <i class="pull-right icon-angle-down icon-large"></i></header>
 							</div>
 
-							<div class="product-filter">
-								<header class="product-filter-head hidden-phone">Product Type</header>
-								<header class="product-filter-head visible-phone" data-toggle="collapse" data-target="#product-type">Product Type<i class="icon-angle-down icon-large pull-right"></i></header>
+							<div id="product-filters" class="product-filters collapse">
 
-								<ul id="product-type" class="nav collapse">
-									<li><a href="#">Continuous flow</a></li>
-									<li><a href="#">Electric Storage</a></li>
-									<li><a href="#">Gas Storage</a></li>
-									<li><a href="#">Evacuated Tube Solar</a></li>
-									<li><a href="#">Solar - Gas Boosted</a></li>
-									<li><a href="#">Solar - Electric Boosted</a></li>
-								</ul>
-							</div>	
+								<div class="product-filter">
+									<header class="product-filter-head">Product Type</header>
 
-							<div class="product-filter">
-								<header class="product-filter-head hidden-phone">Brand</header>
-								<header class="product-filter-head visible-phone" data-toggle="collapse" data-target="#trends">Brand<i class="icon-angle-down icon-large pull-right"></i></header>
+									<ul id="product-type" class="nav">
+										<li><a href="#">Counter</a></li>
+										<li><a href="#">Wall Mounted</a></li>
+										<li><a href="#">Floor Mounted</a></li>
+										<li><a href="#">Semi Recessed</a></li>
+									</ul>
+								</div>
 
-								<ul id="trends" class="nav collapse">
-									<li><a href="#">Thermann</a></li>
-									<li><a href="#">Everhot</a></li>
-								</ul>
-							</div>	 -->						
+								<div class="product-filter">
+									<header class="product-filter-head">Brand</header>
+
+									<ul id="brands" class="nav">
+										<li><a href="#">Counter</a></li>
+										<li><a href="#">Wall Mounted</a></li>
+										<li><a href="#">Floor Mounted</a></li>
+										<li><a href="#">Semi Recessed</a></li>
+									</ul>
+								</div>
+
+							</div>
+
 
 						</aside>
 

@@ -25,7 +25,8 @@
 .lt-ie9 .main-header .top-highlight {
   top: 0;
 }
-.lt-ie9 #product-filters.collapse {
+.lt-ie9 #product-filters.collapse,
+.lt-ie9 .products-tabs .collapse {
   position: static;
   height: auto;
   overflow: visible;

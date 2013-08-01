@@ -32,7 +32,7 @@
 
 				    <!-- CONTENT FOR MOBILE -->
 
-				    	<div id="products-mobile-carousel" class="carousel slide visible-phone">
+				    	<div id="products-mobile-carousel" data-bs-carousel="carousel" data-bs-carousel-interval="0" class="carousel slide visible-phone">
 					    	<div class="carousel-inner">
 					    		<div class="item">
 									<a href="#">
@@ -54,13 +54,6 @@
 
 				    <div class="row-fluid">
 						<aside class="span3">
-
-
-
-
-
-
-
 
 							<div class="product-filters-wrap">
 

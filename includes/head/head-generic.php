@@ -8,11 +8,15 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-		<link href="/assets/css/reece-global.css" rel="stylesheet" type="text/css">
+		<link href="/assets/css/reece-global.css" rel="stylesheet" type="text/css" media="screen, projection">
 
 		<?php foreach ($cssScriptPaths as $value) : ?>
-			<link href="<?php print $value; ?>" rel="stylesheet" type="text/css">
+			<link href="<?php print $value; ?>" rel="stylesheet" type="text/css" media="screen, projection">
 		<?php endforeach; ?>
+
+		<?php if ($cssPrintStyle) : ?>
+			<link href="<?php print $cssPrintStyle; ?>" rel="stylesheet" type="text/css" media="print">
+		<?php endif; ?>
 
         <!--[if lt IE 9]>
             <link href="/assets/css/reece-ie.css" rel="stylesheet" type="text/css">

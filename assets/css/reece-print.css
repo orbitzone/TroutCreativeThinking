@@ -25,6 +25,11 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.page-branding.text-brand {
-  color: #0d2e56;
+.article-banner,
+.site-footer,
+.article-summary-secondary,
+.ocnav-wrapper,
+.subnavbar,
+.navbar {
+  display: none;
 }

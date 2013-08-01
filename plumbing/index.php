@@ -24,22 +24,22 @@
 	    <div class="content-container">
 			<div class="inner-wrapper">
 
-			    <article class="article-main row-fluid">
+			    <article class="article-summary-main row-fluid">
 			    	<div class="span8">
 			    		<img src="/assets/images/trade_2013/trade_article_sample.jpg" alt="Trade sample" />
 			    	</div>
 			    	<div class="span4">
-    					<h3>The smart way to keep your business moving</h3>
+    					<h3 class="headline article-headline">The smart way to keep your business moving</h3>
     					<hr>
     					<small class="page-branding text-brand">1 June 2013</small>
     					<p>
 							A big part of being a licensed plumber is certifying the quality of work you do. That’s why warranties are so important. Boria de volorio omnis as periae pra que eserepe rumqui officiasit pos dicil explant ommolorem harchicia qui nonsequia plignam sim esequib usaped et veliquam fuga. Ut seria quis dunoptatum sit dollabo. Ut faccus.
 						</p>
-						<a class="read-more page-branding text-brand page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
+						<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 					</div>			    		
 				</article>				
 
-				<div class="article-secondary row-fluid">
+				<div class="article-summary-secondary row-fluid">
 					<article class="article span3">
 						<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
 						<small>9 June 2013</small>
@@ -47,7 +47,7 @@
 						<p>
 							The best, brightest young tradies compete for a world title.
 						</p>
-						<a class="read-more page-branding text-brand page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
+						<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 					</article>
 
 					<article class="article span3">
@@ -57,7 +57,7 @@
     					<p>
 							Conex Bänninger has just added a new fitting to their quality range of products.
 						</p>
-						<a class="read-more page-branding text-brand page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
+						<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 					</article>
 
 					<article class="article span3">
@@ -67,7 +67,7 @@
 	    				<p>
 							Conex Bänninger has just added a new fitting to their quality range of products.
 						</p>
-						<a class="read-more page-branding text-brand page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
+						<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 					</article>	
 
 					<article class="article span3">
@@ -77,7 +77,7 @@
     					<p>
 							Conex Bänninger has just added a new fitting to their quality range of products.
 						</p>
-						<a class="read-more page-branding text-brand page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
+						<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 					</article>							
 				</div>	
 
@@ -88,7 +88,7 @@
 	    	<div class="content-container">
 				<div class="inner-wrapper">
 					<h3>Recent Stories</h3>
-					<div class="article-preview row-fluid">
+					<div class="article-summary-preview row-fluid">
 
 						<article class="article span2">
 							<a class="article-image" href="#"><img src="/assets/images/trade_2013/trade_article_sample_small_04.jpg" alt="Trade Sample Mini" /></a>
@@ -96,7 +96,7 @@
 			    				<small>1 June 2013</small>
 			    				<h3>The peace of mind in having the right connections</h3>
 
-								<a class="read-more page-branding text-brand page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
+								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 							</div>
 						</article>
 
@@ -105,7 +105,7 @@
 		    				<div class="article-body">
 			    				<small>1 July 2013</small>
 			    				<h3>Rothenberger World Series Competition</h3>
-								<a class="read-more page-branding text-brand page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
+								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 							</div>
 						</article>
 
@@ -114,15 +114,16 @@
 		    				<div class="article-body">
 			    				<small>11 September 2013</small>
 			    				<h3>Where did my warranty go?</h3>
-								<a class="read-more page-branding text-brand page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
+								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 							</div>
 						</article>
+
 						<article class="article span2">
 							<a class="article-image" href="#"><img src="/assets/images/trade_2013/trade_article_sample_small_04.jpg" alt="Trade Sample Mini" /></a>
 		    				<div class="article-body">
 			    				<small>1 June 2013</small>
 			    				<h3>The peace of mind in having the right connections</h3>
-								<a class="read-more page-branding text-brand page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
+								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 							</div>
 						</article>
 
@@ -131,7 +132,7 @@
 		    				<div class="article-body">
 			    				<small>1 July 2013</small>
 			    				<h3>Rothenberger World Series Competition</h3>
-								<a class="read-more page-branding text-brand page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
+								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 							</div>
 						</article>
 
@@ -140,9 +141,10 @@
 		    				<div class="article-body">
 			    				<small>11 September 2013</small>
 			    				<h3>Where did my warranty go?</h3>
-								<a class="read-more page-branding text-brand page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
+								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 							</div>
-						</article>							
+						</article>	
+
 					</div>
 				</div>	
 

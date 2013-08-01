@@ -6,19 +6,19 @@
 //Application imports
 @import "reece-variables.less";
 
-// Trade Global Styles
+// Article Headline Module
 //====================================================================================================================================
 //====================================================================================================================================
 
-.article-headline {
-	.article-headline-title {
+.article-banner {
+	.article-banner-title {
 		margin-top: 0;
 		margin-bottom: 0;
 		margin-right: 50px;
 		font-size: 42px;
 	}
 
-	.article-headline-description {
+	.article-banner-description {
 		margin-bottom: 0;
 		overflow: hidden;
 		max-width: 800px;
@@ -26,7 +26,7 @@
 
 	@media (max-width: 769px) {
 
-		.article-headline-title {
+		.article-banner-title {
 			float: none;
 			margin-top: 10px;
 			margin-bottom: 10px;
@@ -38,11 +38,22 @@
 	}
 }
 
-// Headline Border Module (Designed to be used on a hr)
+// Headline Module (Heading tag style variations)
 //====================================================================================================================================
 //====================================================================================================================================
 
-.headline-border {
+.headline {
+	&.article-headline {
+		font-size: 52px;
+		color: @reeceGrey;
+	}
+}
+
+// Banner Border Module (Designed to be used on a hr)
+//====================================================================================================================================
+//====================================================================================================================================
+
+.banner-border {
 	border-width: 10px;
 	border-bottom: 0;
 }
@@ -62,93 +73,74 @@
 	border-bottom: 0;
 }
 
-// Account Details Summary Module
+// Trade Navigation Module
 //====================================================================================================================================
 //====================================================================================================================================
 
-// .account-details {
-// 	padding: 20px 0;
-// 	background-color: @accountBackground;
+.trade-navigation {
+	width: 100%;
+	margin-bottom: 0;
 
-// 	//Override bootstrap default
-// 	select {
-// 		width: auto;
-// 	}
+	> li {
+		width: 20%;
+	}
 
-// 	h3 {
-// 		margin: 0;
-// 		font-size: 18px;
-// 		color: @reeceGrey;
+	> li > a {
+		display: block;
+		text-align: center;
+		.transition(background-color);
+		.transition-duration(0.5s);		
+		color: white;
 
-// 		span {
-// 			display: block;
-// 			color: @reeceBlue;
-// 		}
-// 	}
+		@media (max-width: 769px) {
+			.border-radius(0);
+		}
+	}
 
-// 	.account-block {
-// 		border-right: 1px solid @reeceGrey;
+	.plumbing a {
+		background-color: @brandingPlumbing;
 
-// 		&:last-child {
-// 			border-right: 0;
+		&:hover {
+			background-color: darken(@brandingPlumbing, 10%);
+		}
+	}
+	.irrigation a {
+		background-color: @brandingIrrigation;
 
-// 			.acc-details {
-// 				max-width: none;
-// 			}
-// 		}
+		&:hover {
+			background-color: darken(@brandingIrrigation, 10%);
+		}		
+	}
+	.civil a {
+		background-color: @brandingCivil;
 
-// 		.acc-details {
-// 			font-size: 12px;
-// 			display: block;
-// 			max-width: 85%;
-// 		}
+		&:hover {
+			background-color: darken(@brandingCivil, 10%);
+		}		
+	}
+	.hvacr a {
+		background-color: @brandingHvacr;
 
-// 		.acc-text {
-// 			margin-right: 5px;
-// 		}
-// 	}
+		&:hover {
+			background-color: darken(@brandingHvacr, 10%);
+		}		
+	}
 
-// 	@media (max-width: 767px) {
-
-// 		h3 {
-// 			display: block;
-// 			text-align: center;
-// 		}
-// 		#account-details-summary {
-// 			.collapse;
-
-// 			min-height: 0;
-// 			border-right: 0;
-// 		}
-// 		.btn-group-wrapper {
-// 			margin-top: 5px;
-// 			text-align: center;
-// 		}
-// 	}	
-
-// }
-
-// Account Sub Details (Sub Module)
-//====================================================================================================================================
-//====================================================================================================================================
-
-// .account-sub-details {
-// 	padding: 10px 0;
-// 	#gradient > .vertical(@accountBackgroundDark, @accountBackground);
-
-// 	ul {
-// 		margin-bottom: 0;
-// 	}
-// }
+	@media (max-width: 769px) {
+		li {
+			width: 100%;
+		}
+	}	
+}
 
 // Blog Article Modules And Base Classes
 //====================================================================================================================================
 //====================================================================================================================================
 
-.article-main, .article-secondary {
+.article-summary-main, .article-summary-secondary {
 	margin-bottom: 20px;
 	padding-bottom: 20px;
-	border-bottom: 1px solid lighten(@reeceGrey, 60%);
+	border-bottom: 1px solid lighten(@reeceGrey, 60%);	
 
 	h3 {
 		margin: 0 0 6px;
@@ -156,17 +148,32 @@
 	small {
 		margin-bottom: 3px;
 	}
-	.read-more {
-		font-weight: bold;
-		text-transform: uppercase;
+}
+
+// Read More Link Module
+//====================================================================================================================================
+//====================================================================================================================================
+
+.read-more {
+	font-weight: bold;
+	text-transform: uppercase;
+
+	i {
+		margin: 2px 0 2px 8px;
+		.transition(margin-left);
+		.transition-duration(0.5s);
+	}
+
+	&:hover {
+		text-decoration: none;
 
 		i {
-			margin: 2px 0 2px 8px;
+			margin-left: 15px;
 		}
+	}
 
-		&:hover {
-			text-decoration: none;
-		}
+	&.large {
+		font-size: 16px;
 	}
 }
 
@@ -174,12 +181,7 @@
 //====================================================================================================================================
 //====================================================================================================================================
 
-.article-main {
-
-	h3 {
-		font-size: 52px;
-		color: @reeceGrey;
-	}
+.article-summary-main {
 	p {
 		font-size: 15px;
 		color: @reeceGrey;
@@ -208,7 +210,7 @@
 //====================================================================================================================================
 //====================================================================================================================================
 
-.article-secondary {
+.article-summary-secondary {
 	font-size: 12px;	
 
 	h3 {
@@ -240,7 +242,7 @@
 //====================================================================================================================================
 //====================================================================================================================================
 
-.article-preview:extend(.article-secondary all) {
+.article-summary-preview:extend(.article-summary-secondary all) {
 
 	@media (max-width: 767px) {
 		.article-image {
@@ -254,6 +256,67 @@
 			margin-top: 0;
 		}
 	}	
+
+	@media (max-width: 481px) {
+		.article-image {
+			max-width: 50%;
+		}
+	}	
+}
+
+// Blog Article Article (Submodule)
+//====================================================================================================================================
+//====================================================================================================================================
+
+.article-main {
+	.article-media {
+		margin-bottom: 10px;
+	}
+	.article-actions {
+		margin-top: 20px;
+		list-style-type: none;
+
+		li {
+			margin-top: 10px;
+
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+	}
+	.label {
+		margin: 3px;
+	}
+}
+
+// Latest News Module (Submodule)
+//====================================================================================================================================
+//====================================================================================================================================
+
+.latest-news:extend(.article-summary-main all) {
+	margin-bottom: 0;
+	padding-bottom: 0;	
+	border-bottom: 0;
+
+	h3 {
+		margin-top: 10px;
+	}
+}
+
+// Recommended Stories (Submodule)
+//====================================================================================================================================
+//====================================================================================================================================
+
+.recommended-stories:extend(.article-summary-secondary all) {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	border-bottom: 0;
+
+	.article {
+		margin-bottom: 20px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid lighten(@reeceGrey, 60%);	
+	}
 }
 
 // Recent Stories Module
@@ -264,7 +327,7 @@
 	overflow: hidden;
 	background-color: lighten(@reeceGrey, 60%);
 
-	.article-secondary {
+	.article-summary-secondary {
 		margin-bottom: 0;
 		border-bottom: 0;
 	}
@@ -292,3 +355,12 @@
 	background-color: lighten(@accountButton, 15%);
 }
 
+// Facebook iframe Widget Hack
+//====================================================================================================================================
+//====================================================================================================================================
+
+.fb_iframe_widget,
+.fb_iframe_widget span,
+.fb_iframe_widget iframe[style] {
+	width: 100% !important;
+}

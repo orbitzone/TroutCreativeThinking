@@ -24,19 +24,19 @@
 	    <div class="content-container">
 			<div class="inner-wrapper">
 
-				<div class="article-headline clearfix">
-					<h2 class="article-headline-title pull-left page-branding text-brand">Reece <br>Civil</h2>
-					<p class="article-headline-description">We're dedicated to supplying only the best products and service for all underground pipe networks including water mains, gas mains, sewer mains, telecommunications, electrical and fire services.</p>
+				<div class="article-banner clearfix">
+					<h2 class="article-banner-title pull-left page-branding text-brand">Reece <br>Civil</h2>
+					<p class="article-banner-description">We're dedicated to supplying only the best products and service for all underground pipe networks including water mains, gas mains, sewer mains, telecommunications, electrical and fire services.</p>
 				</div>
 
-				<hr class="page-branding border-brand headline-border">
+				<hr class="page-branding border-brand banner-border">
 
-			    <article class="article-main row-fluid">
+			    <article class="article-summary-main row-fluid">
 			    	<div class="span8">
 			    		<img src="/assets/images/trade_2013/trade_article_sample.jpg" alt="Trade sample" />
 			    	</div>
 			    	<div class="span4">
-    					<h3>The smart way to keep your business moving</h3>
+    					<h3 class="headline article-headline">The smart way to keep your business moving</h3>
     					<hr>
     					<small class="page-branding text-brand">1 June 2013</small>
     					<p>
@@ -46,7 +46,7 @@
 					</div>			    		
 				</article>				
 
-				<div class="article-secondary row-fluid">
+				<div class="article-summary-secondary row-fluid">
 					<article class="article span3">
 						<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
 						<small>9 June 2013</small>
@@ -95,7 +95,7 @@
 	    	<div class="content-container">
 				<div class="inner-wrapper">
 					<h3>Recent Stories</h3>
-					<div class="article-preview row-fluid">
+					<div class="article-summary-preview row-fluid">
 
 						<article class="article span2">
 							<a class="article-image" href="#"><img src="/assets/images/trade_2013/trade_article_sample_small_04.jpg" alt="Trade Sample Mini" /></a>

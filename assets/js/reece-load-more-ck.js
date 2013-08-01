@@ -1,1 +1,0 @@
-!function(e){window.ajaxLoader={$el:e(".video-main"),init:function(){(matchMedia("only screen and (min-width: 480px)").matches||Modernizr.mq("only all")==0)&&e(".video-thumb").on("click",".video-block",e.proxy(this.swapVideo,this))}};ajaxLoader.init()}(window.jQuery);

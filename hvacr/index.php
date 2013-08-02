@@ -15,21 +15,19 @@
 			<?php 
 				$genericNavActiveMenuItem = "HVAC-R";
 			   	include_once($serverBase."/includes/nav/nav-generic.php");
-			?>				    
+			?>
 
 			<?php 
 			   	include_once($serverBase."/includes/nav/nav-subnavbar.php");
-			?>	
+			?>
 
 	    <div class="content-container">
 			<div class="inner-wrapper">
 
-				<div class="article-banner clearfix">
-					<h2 class="article-banner-title pull-left page-branding text-brand">Reece <br>Hvac-r</h2>
+				<div class="article-banner page-branding box-brand clearfix">
+					<h2 class="article-banner-title pull-left">hvac-r</h2>
 					<p class="article-banner-description">With 36 stores around Australia Reece hvac-r offers dedicated support, stock and expertise including climate solutions, piping, ventilation, refrigeration and heating.</p>
 				</div>
-
-				<hr class="page-branding border-brand banner-border">
 
 			    <article class="article-summary-main row-fluid">
 			    	<div class="span8">

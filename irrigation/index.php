@@ -24,8 +24,8 @@
 	    <div class="content-container">
 			<div class="inner-wrapper">
 
-				<div class="article-banner clearfix">
-					<h2 class="article-banner-title pull-left page-branding text-brand">Reece <br>Irrigation</h2>
+				<div class="article-banner page-branding box-brand clearfix">
+					<h2 class="article-banner-title pull-left">irrigation</h2>
 					<p class="article-banner-description">With over 30 stores nationally and a dedicated design department, Reece Irrigation delivers unrivalled service to the landscape, commercial and agricultural industries. We stock a large range of products, including turf, sprays and drippers, valves, pipe and fittings, pumps, automatic controllers, outdoor lighting and water saving products.</p>
 				</div>
 

@@ -24,8 +24,8 @@
 	    <div class="content-container">
 			<div class="inner-wrapper">
 
-				<div class="article-banner clearfix">
-					<h2 class="article-banner-title pull-left page-branding text-brand">Reece <br>Civil</h2>
+				<div class="article-banner page-branding box-brand clearfix">
+					<h2 class="article-banner-title pull-left">civil</h2>
 					<p class="article-banner-description">We're dedicated to supplying only the best products and service for all underground pipe networks including water mains, gas mains, sewer mains, telecommunications, electrical and fire services.</p>
 				</div>
 

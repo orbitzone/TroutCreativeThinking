@@ -24,20 +24,58 @@
 	    <div class="content-container">
 			<div class="inner-wrapper">
 
-			    <article class="article-summary-main row-fluid">
-			    	<div class="span8">
-			    		<img src="/assets/images/trade_2013/trade_article_sample.jpg" alt="Trade sample" />
-			    	</div>
-			    	<div class="span4">
-    					<h3 class="headline article-headline">The smart way to keep your business moving</h3>
-    					<hr>
-    					<small class="page-branding text-brand">1 June 2013</small>
-    					<p>
-							A big part of being a licensed plumber is certifying the quality of work you do. That’s why warranties are so important. Boria de volorio omnis as periae pra que eserepe rumqui officiasit pos dicil explant ommolorem harchicia qui nonsequia plignam sim esequib usaped et veliquam fuga. Ut seria quis dunoptatum sit dollabo. Ut faccus.
-						</p>
-						<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
-					</div>			    		
-				</article>				
+				<div class="article-banner page-branding box-brand clearfix">
+					<h2 class="article-banner-title pull-left">plumbing</h2>
+					<p class="article-banner-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+
+
+
+
+
+
+				<div id="article-carousel" data-bs-carousel="carousel" data-bs-carousel-interval="0" class="carousel slide hidden-phone">
+			        <div class="carousel-inner">
+			            
+					    <div class="active item">
+						    <article class="article-summary-main row-fluid">
+						    	<div class="span8">
+						    		<img src="/assets/images/trade_2013/trade_article_sample.jpg" alt="Trade sample" />
+						    	</div>
+						    	<div class="span4">
+			    					<h3 class="headline article-headline">The smart way to keep your business moving</h3>
+			    					<hr>
+			    					<small class="page-branding text-brand">1 June 2013</small>
+			    					<p>
+										A big part of being a licensed plumber is certifying the quality of work you do. That’s why warranties are so important. Boria de volorio omnis as periae pra que eserepe rumqui officiasit pos dicil explant ommolorem harchicia qui nonsequia plignam sim esequib usaped et veliquam fuga. Ut seria quis dunoptatum sit dollabo. Ut faccus.
+									</p>
+									<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
+								</div>			    		
+							</article>
+					    </div>
+
+					    <div class="item">
+						    <article class="article-summary-main row-fluid">
+						    	<div class="span8">
+						    		<img src="/assets/images/trade_2013/trade_article_sample.jpg" alt="Trade sample" />
+						    	</div>
+						    	<div class="span4">
+			    					<h3 class="headline article-headline">The smart way to keep your business moving</h3>
+			    					<hr>
+			    					<small class="page-branding text-brand">1 June 2013</small>
+			    					<p>
+										A big part of being a licensed plumber is certifying the quality of work you do. That’s why warranties are so important. Boria de volorio omnis as periae pra que eserepe rumqui officiasit pos dicil explant ommolorem harchicia qui nonsequia plignam sim esequib usaped et veliquam fuga. Ut seria quis dunoptatum sit dollabo. Ut faccus.
+									</p>
+									<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
+								</div>			    		
+							</article>
+					    </div>
+			            
+			        </div>
+			        <!-- Carousel nav -->
+			        <a class="carousel-control left" href="#article-carousel" data-slide="prev">‹</a>
+			        <a class="carousel-control right" href="#article-carousel" data-slide="next">›</a>
+			    </div>
 
 				<div class="article-summary-secondary row-fluid">
 					<article class="article span3">
@@ -169,13 +207,13 @@
 	<?php 
 		$jsScriptPaths = [
 			"/assets/js/jquery.lazyload.min.js", 
-			"/assets/js/mediaelement-and-player.min.js",
 			"/assets/js/bootstrap-collapse.js",
+			"/assets/js/bootstrap-carousel.js",
 			"/assets/js/bootstrap-dropdown.js",
 			"/assets/js/bootstrap-transition.js",
 			"/assets/js/jquery.mobile.custom.min.js",
 			"/assets/js/reece-ocnav.js",
-
+			"/assets/js/reece-carousel.js"
 		]; 
 	   	include_once($serverBase."/includes/foot/scripts.php");
 	?>

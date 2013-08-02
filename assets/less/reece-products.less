@@ -413,30 +413,18 @@
 	}					
 }
 
-// Carousel Control Modules
+// Carousel Control Modules (Override)
 //====================================================================================================================================
 //====================================================================================================================================
 
-.top-carousel-control {
+.custom-carousel-control {
 
-	//Need to use some magic numbers here as the layout does not accommodate 'special buttons' very well
 	.carousel-control {
-		width: auto;
-		top: -40px;
-		font-size: 80px;
-		left: auto;
-		right: 0;
 
-		&.left {
-			right: 20px;
+		&.top {
+			top: -40px;
 		}	
 	}
-}
-
-.carousel-control {
-	@media (max-width: 767px) {
-		display: none;
-	}	
 }
 
 // Product Variation Module

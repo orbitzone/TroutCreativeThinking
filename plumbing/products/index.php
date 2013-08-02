@@ -35,12 +35,14 @@
 					    	<div class="carousel-inner">
 					    		<div class="item">
 									<a href="#">
-										<img src="/assets/images/products_2013/products-plumbing-fresh-approach-mobile.jpg" alt="Fresh Approach" />
+										<!-- <img src="/assets/images/products_2013/products-plumbing-fresh-approach-mobile.jpg" alt="Fresh Approach" /> -->
+										<img src="http://placehold.it/730x500" alt="Place holder" />
 									</a>
 					    		</div>
 					    		<div class="item active">
 									<a href="#">
-										<img src="/assets/images/products_2013/products-plumbing-fresh-approach-mobile.jpg" alt="Fresh Approach" />
+										<!-- <img src="/assets/images/products_2013/products-plumbing-fresh-approach-mobile.jpg" alt="Fresh Approach" /> -->
+										<img src="http://placehold.it/730x500" alt="Place holder" />
 									</a>
 					    		</div>
 					    	</div>
@@ -91,13 +93,15 @@
 						            
 								    <div class="active item">
 								        <a href="/the-block">
-								            <img src="/assets/images/products_2013/products-plumbing-fresh-approach.jpg" alt="Fresh Approach" />
+								            <!-- <img src="/assets/images/products_2013/products-plumbing-fresh-approach.jpg" alt="Fresh Approach" /> -->
+								            <img src="http://placehold.it/970x334" alt="Place holder" />
 								        </a>
 								    </div>
 
 								    <div class="item">
 								        <a href="/the-block">
-								            <img src="/assets/images/products_2013/products-plumbing-fresh-approach.jpg" alt="Fresh Approach" />
+								            <!-- <img src="/assets/images/products_2013/products-plumbing-fresh-approach.jpg" alt="Fresh Approach" /> -->
+								            <img src="http://placehold.it/970x334" alt="Place holder" />
 								        </a>
 								    </div>
 						            
@@ -108,7 +112,7 @@
 						    </div>
 
 					    	<h3>Latest Releases</h3>
-							<div id="latest-releases-carousel" class="carousel slide top-carousel-control">
+							<div id="latest-releases-carousel" class="carousel slide custom-carousel-control">
 						        <div class="carousel-inner">
 
 						        	<div class="active item">					    	
@@ -206,8 +210,8 @@
 									</div>									
 
 								</div>
-								<a class="carousel-control left page-branding text-brand" href="#latest-releases-carousel" data-slide="prev">‹</a>
-					        	<a class="carousel-control right page-branding text-brand" href="#latest-releases-carousel" data-slide="next">›</a>	
+								<a class="carousel-control top left page-branding text-brand" href="#latest-releases-carousel" data-slide="prev">‹</a>
+					        	<a class="carousel-control top right page-branding text-brand" href="#latest-releases-carousel" data-slide="next">›</a>	
 							</div>
 
 							<hr>
@@ -248,7 +252,7 @@
 						    <hr>
 
 					    	<h3>Hot Water Season</h3>
-							<div id="winter-warmers-carousel" class="carousel slide top-carousel-control">
+							<div id="winter-warmers-carousel" class="carousel slide custom-carousel-control">
 						        <div class="carousel-inner">
 
 						        	<div class="active item">					    	
@@ -346,8 +350,8 @@
 									</div>									
 
 								</div>
-								<a class="carousel-control left page-branding text-brand" href="#winter-warmers-carousel" data-slide="prev">‹</a>
-					        	<a class="carousel-control right page-branding text-brand" href="#winter-warmers-carousel" data-slide="next">›</a>	
+								<a class="carousel-control top left page-branding text-brand" href="#winter-warmers-carousel" data-slide="prev">‹</a>
+					        	<a class="carousel-control top right page-branding text-brand" href="#winter-warmers-carousel" data-slide="next">›</a>	
 							</div>							
 
 						</section>

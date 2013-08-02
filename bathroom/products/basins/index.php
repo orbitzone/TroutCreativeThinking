@@ -37,12 +37,14 @@
 					    	<div class="carousel-inner">
 					    		<div class="item">
 									<a href="#">
-										<img src="/assets/images/products_2013/products-plumbing-be-free-mobile.jpg" alt="Fresh Approach" />
+										<!-- <img src="/assets/images/products_2013/products-plumbing-be-free-mobile.jpg" alt="Fresh Approach" /> -->
+										<img src="http://placehold.it/730x500" alt="Place holder" />
 									</a>
 					    		</div>
 					    		<div class="item active">
 									<a href="#">
-										<img src="/assets/images/products_2013/products-plumbing-be-free-mobile.jpg" alt="Fresh Approach" />
+										<!-- <img src="/assets/images/products_2013/products-plumbing-be-free-mobile.jpg" alt="Fresh Approach" /> -->
+										<img src="http://placehold.it/730x500" alt="Place holder" />
 									</a>
 					    		</div>
 					    	</div>
@@ -139,13 +141,15 @@
 						            
 								    <div class="active item">
 								        <a href="/the-block">
-								            <img src="/assets/images/products_2013/products-bathroom-be-free.jpg" alt="Be Free" />
+								            <!-- <img src="/assets/images/products_2013/products-bathroom-be-free.jpg" alt="Be Free" /> -->
+								            <img src="http://placehold.it/970x334" alt="Place holder" />
 								        </a>
 								    </div>
 
 								    <div class="item">
 								        <a href="/the-block">
-								            <img src="/assets/images/products_2013/products-bathroom-be-free.jpg" alt="Be Free" />
+								            <!-- <img src="/assets/images/products_2013/products-bathroom-be-free.jpg" alt="Be Free" /> -->
+								            <img src="http://placehold.it/970x334" alt="Place holder" />
 								        </a>
 								    </div>
 						            

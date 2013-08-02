@@ -247,7 +247,7 @@
 					<h2>Complete the look</h2>
 			    	<div class="products-list">
 					    <div class="row-fluid">
-					    	<div class="product-block span4">
+					    	<div class="product-block span3">
 					    		<span class="page-branding sale-branding"></span>
 								<a href="#"><img src="/assets/images/products_2013/products-bathroom-sample-product500x300.jpg"></a>
 								<div class="product-info">
@@ -258,7 +258,7 @@
 									</h4>
 								</div>
 					    	</div>
-					    	<div class="product-block span4">
+					    	<div class="product-block span3">
 					    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-sample-product500x300.jpg"></a>
 								<div class="product-info">
 									<h4>
@@ -268,7 +268,7 @@
 									</h4>
 								</div>							    		
 					    	</div>
-					    	<div class="product-block span4">
+					    	<div class="product-block span3">
 					    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-sample-product500x300.jpg"></a>
 								<div class="product-info">
 									<h4>
@@ -278,6 +278,16 @@
 									</h4>
 								</div>
 					    	</div>
+					    	<div class="product-block span3">
+					    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-sample-product500x300.jpg"></a>
+								<div class="product-info">
+									<h4>
+										<a class="product-title" href="#">Product</a>
+										<span class="product-desc">Description</span>
+										<span class="product-price">$xxx.xx</span>
+									</h4>
+								</div>
+					    	</div>					    	
 					    </div>
 					</div>	
 
@@ -285,23 +295,30 @@
 
 					<h2>Learn more about Laufen</h2>
 			    	<div class="products-list">
-						<a href="#"><img src="/assets/images/products_2013/products-laufen-shot.jpg"></a>
+			    		<div class="product-block">
+							<a href="#"><img src="/assets/images/products_2013/products-laufen-shot.jpg"></a>
+						</div>
 					</div>	
+
+					<hr>
 
 					<h2>See this product featured in</h2>
 			    	<div class="products-list">
 					    <div class="row-fluid">
 					    	<div class="product-block span4">
-								<a href="#"><img src="/assets/images/products_2013/products-hotel-shot-one.jpg"></a>
+								<!-- <a href="#"><img src="/assets/images/products_2013/products-hotel-shot-one.jpg"></a> -->
+								<img src="http://placehold.it/500x350" alt="Place holder" />
 					    	</div>
 					    	<div class="product-block span4">
-					    		<a href="#"><img src="/assets/images/products_2013/products-hotel-shot-two.jpg"></a>
+					    		<!-- <a href="#"><img src="/assets/images/products_2013/products-hotel-shot-two.jpg"></a> -->
+					    		<img src="http://placehold.it/500x350" alt="Place holder" />
 					    	</div>
 					    	<div class="product-block span4">
-					    		<a href="#"><img src="/assets/images/products_2013/products-hotel-shot-three.jpg"></a>
+					    		<!-- <a href="#"><img src="/assets/images/products_2013/products-hotel-shot-three.jpg"></a> -->
+					    		<img src="http://placehold.it/500x350" alt="Place holder" />
 					    	</div>
 					    </div>
-					</div>				
+					</div>
 
 				</div>
 		    </div>

@@ -36,12 +36,14 @@
 					    	<div class="carousel-inner">
 					    		<div class="item">
 									<a href="#">
-										<img src="/assets/images/products_2013/products-plumbing-hot-water-decisions-mobile.jpg" alt="Hot Water Decisions Guide" />
+										<!-- <img src="/assets/images/products_2013/products-plumbing-hot-water-decisions-mobile.jpg" alt="Hot Water Decisions Guide" /> -->
+										<img src="http://placehold.it/730x500" alt="Place holder" />
 									</a>
 					    		</div>
 					    		<div class="item active">
 									<a href="#">
-										<img src="/assets/images/products_2013/products-plumbing-hot-water-decisions-mobile.jpg" alt="Hot Water Decisions Guide" />
+										<!-- <img src="/assets/images/products_2013/products-plumbing-hot-water-decisions-mobile.jpg" alt="Hot Water Decisions Guide" /> -->
+										<img src="http://placehold.it/730x500" alt="Place holder" />
 									</a>
 					    		</div>
 					    	</div>
@@ -129,13 +131,15 @@
 						            
 								    <div class="active item">
 								        <a href="/the-block">
-								            <img src="/assets/images/products_2013/products-plumbing-hot-water-decisions.jpg" alt="Hot Water Decisions Guide" />
+								            <!-- <img src="/assets/images/products_2013/products-plumbing-hot-water-decisions.jpg" alt="Hot Water Decisions Guide" /> -->
+								            <img src="http://placehold.it/970x334" alt="Place holder" />
 								        </a>
 								    </div>
 
 								    <div class="item">
 								        <a href="/the-block">
-								            <img src="/assets/images/products_2013/products-plumbing-hot-water-decisions.jpg" alt="Hot Water Decisions Guide" />
+								            <!-- <img src="/assets/images/products_2013/products-plumbing-hot-water-decisions.jpg" alt="Hot Water Decisions Guide" /> -->
+								            <img src="http://placehold.it/970x334" alt="Place holder" />
 								        </a>
 								    </div>
 						            

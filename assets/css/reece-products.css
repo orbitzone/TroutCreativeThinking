@@ -435,20 +435,8 @@
 .products-list img:hover {
   box-shadow: 0 1px 7px rgba(0, 0, 0, 0.6);
 }
-.top-carousel-control .carousel-control {
-  width: auto;
+.custom-carousel-control .carousel-control.top {
   top: -40px;
-  font-size: 80px;
-  left: auto;
-  right: 0;
-}
-.top-carousel-control .carousel-control.left {
-  right: 20px;
-}
-@media (max-width: 767px) {
-  .carousel-control {
-    display: none;
-  }
 }
 .product-variation-list {
   min-width: 200%;

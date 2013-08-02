@@ -29,12 +29,7 @@
 					<p class="article-banner-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				</div>
 
-
-
-
-
-
-				<div id="article-carousel" data-bs-carousel="carousel" data-bs-carousel-interval="0" class="carousel slide hidden-phone">
+				<div id="article-carousel" data-bs-carousel="carousel" data-bs-carousel-interval="0" class="custom-carousel-control carousel slide hidden-phone">
 			        <div class="carousel-inner">
 			            
 					    <div class="active item">
@@ -73,8 +68,8 @@
 			            
 			        </div>
 			        <!-- Carousel nav -->
-			        <a class="carousel-control left" href="#article-carousel" data-slide="prev">‹</a>
-			        <a class="carousel-control right" href="#article-carousel" data-slide="next">›</a>
+			        <a class="carousel-control left bottom" href="#article-carousel" data-slide="prev">‹</a>
+			        <a class="carousel-control right bottom" href="#article-carousel" data-slide="next">›</a>
 			    </div>
 
 				<div class="article-summary-secondary row-fluid">

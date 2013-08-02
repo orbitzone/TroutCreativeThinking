@@ -34,14 +34,16 @@
 
 				    	<div id="products-mobile-carousel" class="carousel slide visible-phone">
 					    	<div class="carousel-inner">
-					    		<div class="item">
-									<a href="#">
-										<img src="/assets/images/products_2013/products-plumbing-be-free-mobile.jpg" alt="Fresh Approach" />
-									</a>
-					    		</div>
 					    		<div class="item active">
 									<a href="#">
-										<img src="/assets/images/products_2013/products-plumbing-be-free-mobile.jpg" alt="Fresh Approach" />
+										<!-- <img src="/assets/images/products_2013/products-plumbing-be-free-mobile.jpg" alt="Fresh Approach" /> -->
+										<img src="http://placehold.it/730x500" alt="Place holder" />
+									</a>
+					    		</div>
+					    		<div class="item">
+									<a href="#">
+										<!-- <img src="/assets/images/products_2013/products-plumbing-be-free-mobile.jpg" alt="Fresh Approach" /> -->
+										<img src="http://placehold.it/730x500" alt="Place holder" />
 									</a>
 					    		</div>
 					    	</div>
@@ -83,13 +85,15 @@
 						            
 								    <div class="active item">
 								        <a href="#">
-								            <img src="/assets/images/products_2013/products-bathroom-be-free.jpg" alt="Be Free" />
+								            <!--<img src="/assets/images/products_2013/products-bathroom-be-free.jpg" alt="Be Free" />-->
+								            <img src="http://placehold.it/970x334" alt="Place holder" />
 								        </a>
 								    </div>
 
 								    <div class="item">
 								        <a href="#">
-								            <img src="/assets/images/products_2013/products-bathroom-be-free.jpg" alt="Be Free" />
+								            <!--<img src="/assets/images/products_2013/products-bathroom-be-free.jpg" alt="Be Free" />-->
+								            <img src="http://placehold.it/970x334" alt="Place holder" />
 								        </a>
 								    </div>
 						            
@@ -103,16 +107,16 @@
 					    	<div class="products-list">
 							    <div class="row-fluid">
 							    	<div class="product-block span3">
-										<a href="#"><img src="/assets/images/products_2013/products-bathroom-popular-product-1.jpg" /></a>
+										<a href="#"><img src="/assets/images/products_2013/products-bathroom-popular-product-1-dark.jpg" /></a>
 							    	</div>
 							    	<div class="product-block span3">
-							    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-popular-product-1.jpg" /></a>
+							    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-popular-product-1-dark.jpg" /></a>
 							    	</div>
 							    	<div class="product-block span3">
-							    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-popular-product-1.jpg" /></a>
+							    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-popular-product-1-dark.jpg" /></a>
 							    	</div>
 							    	<div class="product-block span3">
-							    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-popular-product-1.jpg" /></a>
+							    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-popular-product-1-dark.jpg" /></a>
 							    	</div>						    							    							    	
 							    </div>
 
@@ -135,7 +139,7 @@
 						    <hr>
 
 					    	<h3>Latest Releases</h3>
-							<div id="latest-releases-carousel" class="carousel slide top-carousel-control">
+							<div id="latest-releases-carousel" class="carousel slide custom-carousel-control">
 						        <div class="carousel-inner">
 
 						        	<div class="active item">					    	
@@ -223,14 +227,14 @@
 									</div>									
 
 								</div>
-								<a class="carousel-control left page-branding text-brand" href="#latest-releases-carousel" data-slide="prev">‹</a>
-					        	<a class="carousel-control right page-branding text-brand" href="#latest-releases-carousel" data-slide="next">›</a>	
+								<a class="carousel-control top left page-branding text-brand" href="#latest-releases-carousel" data-slide="prev">‹</a>
+					        	<a class="carousel-control top right page-branding text-brand" href="#latest-releases-carousel" data-slide="next">›</a>	
 							</div>
 
 						    <hr>
 
 					    	<h3>Winter Warmers - Heated Towel Rails</h3>
-							<div id="winter-warmers-carousel" class="carousel slide top-carousel-control">
+							<div id="winter-warmers-carousel" class="carousel slide custom-carousel-control">
 						        <div class="carousel-inner">
 
 						        	<div class="active item">					    	
@@ -308,8 +312,8 @@
 									</div>									
 
 								</div>
-								<a class="carousel-control left page-branding text-brand" href="#winter-warmers-carousel" data-slide="prev">‹</a>
-					        	<a class="carousel-control right page-branding text-brand" href="#winter-warmers-carousel" data-slide="next">›</a>	
+								<a class="carousel-control top left page-branding text-brand" href="#winter-warmers-carousel" data-slide="prev">‹</a>
+					        	<a class="carousel-control top right page-branding text-brand" href="#winter-warmers-carousel" data-slide="next">›</a>	
 							</div>							
 
 						</section>

@@ -7613,6 +7613,27 @@ h6 {
     margin-top: 0;
   }
 }
+.custom-carousel-control .carousel-control {
+  width: auto;
+  top: auto;
+  font-size: 80px;
+  left: auto;
+  right: 0;
+}
+.custom-carousel-control .carousel-control.top {
+  top: -10px;
+}
+.custom-carousel-control .carousel-control.bottom {
+  bottom: -10px;
+}
+.custom-carousel-control .carousel-control.left {
+  right: 20px;
+}
+@media (max-width: 767px) {
+  .custom-carousel-control .carousel-control {
+    display: none;
+  }
+}
 .site-footer {
   background: white;
   margin-top: 35px;

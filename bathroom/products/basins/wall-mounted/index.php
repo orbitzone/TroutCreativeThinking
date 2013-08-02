@@ -185,22 +185,22 @@
 								<div class="products-tab">
 									<ul class="nav nav-list">
 										<li class="nav-header">Features</li>
-										<li><a href="#">Laufen Clean Coat - abrasion resistant finish.</a></li>
-										<li><a href="#">Reduces cleaning effort, increases product life and improves hygiene.</a></li>
-										<li><a href="#">One tap hole.</a></li>
-										<li><a href="#">Also available with no tap hole.</a></li>
+										<li>Laufen Clean Coat - abrasion resistant finish.</li>
+										<li>Reduces cleaning effort, increases product life and improves hygiene.</li>
+										<li>One tap hole.</a></li>
+										<li>Also available with no tap hole.</li>
 										<li class="nav-header">Finish</li>
-										<li><a href="#">White.</a></li>
-										<li><a href="#">Vitreous china</a></li>
+										<li>White.</a></li>
+										<li>Vitreous china</li>
 									</ul>
 								</div>
 								<div class="products-tab">
 									<ul class="nav nav-list">
 										<li class="nav-header">Tech Info</li>
-										<li><a href="#">Width: 1600mm.</a></li>
-										<li><a href="#">Depth: 350/500mm.</a></li>
-										<li><a href="#">Height: 165mm.</a></li>
-										<li><a href="#">Capacity: 7.5L.</a></li>
+										<li>Width: 1600mm.</li>
+										<li>Depth: 350/500mm.</li>
+										<li>Height: 165mm.</li>
+										<li>Capacity: 7.5L.</li>
 									</ul>
 									<a class="muted" href="#">More information</a>
 								</div>
@@ -220,17 +220,17 @@
 								<div class="products-tab">
 									<ul class="nav nav-list">
 										<li class="nav-header">Features</li>
-										<li><a href="#">Laufen Clean Coat - abrasion resistant finish.</a></li>
-										<li><a href="#">Reduces cleaning effort, increases product life and improves hygiene.</a></li>
-										<li><a href="#">One tap hole.</a></li>
-										<li><a href="#">Also available with no tap hole.</a></li>
+										<li>Laufen Clean Coat - abrasion resistant finish.</li>
+										<li>Reduces cleaning effort, increases product life and improves hygiene.</li>
+										<li>One tap hole.</li>
+										<li>Also available with no tap hole.</li>
 									</ul>
 								</div>
 								<div class="products-tab">
 									<ul class="nav nav-list">
 										<li class="nav-header">Tech Info</li>
-										<li><a href="#">Width: 1600mm.</a></li>
-										<li><a href="#">Depth: 350/500mm.</a></li>
+										<li>Width: 1600mm.</li>
+										<li>Depth: 350/500mm.</li>
 									</ul>
 									<a class="muted" href="#">More information</a>
 								</div>
@@ -285,17 +285,7 @@
 
 					<h2>Learn more about Laufen</h2>
 			    	<div class="products-list">
-					    <div class="row-fluid">
-					    	<div class="product-block span4">
-								<a href="#"><img src="/assets/images/products_2013/products-laufen-shot.jpg"></a>
-					    	</div>
-					    	<div class="product-block span4">
-					    		<a href="#"><img src="/assets/images/products_2013/products-laufen-text.jpg"></a>							    		
-					    	</div>
-					    	<div class="product-block span4">
-					    		<a href="#"><img src="/assets/images/products_2013/products-laufen-bathroom-shot.jpg"></a>
-					    	</div>
-					    </div>
+						<a href="#"><img src="/assets/images/products_2013/products-laufen-shot.jpg"></a>
 					</div>	
 
 					<h2>See this product featured in</h2>

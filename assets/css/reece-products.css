@@ -56,8 +56,12 @@
   border-radius: 4px;
   background-color: #eaeaea;
 }
-.product-filter a {
+.product-filter li a {
   color: #777777;
+}
+.product-filter li a:hover {
+  background-color: transparent;
+  text-decoration: underline;
 }
 .product-filter .nav {
   margin: 0;
@@ -88,6 +92,10 @@
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdddddd', endColorstr='#ffd1d1d1', GradientType=0);
   }
+  .product-filter .nav a:hover,
+  .product-filter .subnav a:hover {
+    text-decoration: none;
+  }
 }
 @media (max-width: 767px) {
   .product-filter {
@@ -113,6 +121,9 @@
 }
 .filter-options {
   margin-top: 10px;
+}
+.filter-options a:hover i {
+  text-decoration: none;
 }
 .product-section-lead-links {
   margin: 0 0 20px;
@@ -145,6 +156,11 @@
 .product-section-lead-links .active a:hover {
   color: #aaaaaa;
   background-color: white;
+}
+@media (min-width: 767px) {
+  .products-list {
+    margin: 0 4px;
+  }
 }
 @media (max-width: 767px) {
   .products-list .product-block,

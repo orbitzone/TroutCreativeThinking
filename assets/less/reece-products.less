@@ -42,7 +42,6 @@
 }
 
 .product-filters {
-
 	@media (min-width: 767px) {
 		height: auto!important; //Override inline JS to make sure filter list is always open on desktop and tablet
 	}
@@ -54,8 +53,13 @@
 	.border-radius(4px);
 	background-color: @lightBackground;
 
-	a {
+	li a {
 		color: darken(@lightBackground, 45%);
+
+		&:hover {
+			background-color: transparent;
+			text-decoration: underline;
+		}
 	}
 
 	.nav {
@@ -64,7 +68,7 @@
 	.subnav {
 		margin-left: 10px;
 		margin-bottom: 0;
-	}	
+	}
 
 	.nav, .subnav {
 
@@ -77,6 +81,10 @@
 				padding: 10px;
 				.border-radius(4px);
 				#gradient > .vertical(darken(@lightBackground, 5%), darken(@lightBackground, 10%));
+
+				&:hover {
+					text-decoration: none;
+				}
 			}
 		}
 	}
@@ -104,6 +112,10 @@
 
 .filter-options {
 	margin-top: 10px;
+
+	a:hover i {
+		text-decoration: none;
+	}
 }
 
 // Product Section Lead Links Module
@@ -154,6 +166,10 @@
 //====================================================================================================================================
 
 .products-list {
+
+	@media (min-width: 767px) {
+		margin: 0 4px; //Quick fix for image hover effect being cut off by carousel class.
+	}
 
 	@media (max-width: 767px) {
 		.product-block, .row-fluid [class*="span"] {

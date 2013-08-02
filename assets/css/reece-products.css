@@ -59,7 +59,8 @@
 .product-filter li a {
   color: #777777;
 }
-.product-filter li a:hover {
+.product-filter li a:hover,
+.product-filter li a:focus {
   background-color: transparent;
   text-decoration: underline;
 }
@@ -93,7 +94,9 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdddddd', endColorstr='#ffd1d1d1', GradientType=0);
   }
   .product-filter .nav a:hover,
-  .product-filter .subnav a:hover {
+  .product-filter .subnav a:hover,
+  .product-filter .nav a:focus,
+  .product-filter .subnav a:focus {
     text-decoration: none;
   }
 }
@@ -122,7 +125,8 @@
 .filter-options {
   margin-top: 10px;
 }
-.filter-options a:hover i {
+.filter-options a:hover i,
+.filter-options:focus i {
   text-decoration: none;
 }
 .product-section-lead-links {
@@ -143,7 +147,8 @@
   transition: 0.15s background-color ease-in-out;
   text-decoration: none;
 }
-.product-section-lead-links a:hover {
+.product-section-lead-links a:hover,
+.product-section-lead-links a:focus {
   color: white;
   background-color: #aaaaaa;
 }
@@ -153,7 +158,8 @@
 .product-section-lead-links .active a {
   color: white;
 }
-.product-section-lead-links .active a:hover {
+.product-section-lead-links .active a:hover,
+.product-section-lead-links .active a:focus {
   color: #aaaaaa;
   background-color: white;
 }
@@ -172,7 +178,7 @@
 }
 .product-block {
   position: relative;
-  margin-top: 1.0638297872340425%;
+  margin-top: 2.127659574468085%;
 }
 .product-title,
 .product-desc,
@@ -212,7 +218,8 @@
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc0bebe', endColorstr='#ff747171', GradientType=0);
 }
-.more-products-button:hover {
+.more-products-button:hover,
+.more-products-button:focus {
   color: white;
   text-decoration: none;
   background-color: #aeacac;
@@ -224,7 +231,8 @@
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffcccbcb', endColorstr='#ff817e7e', GradientType=0);
 }
-.more-products-button:hover:after {
+.more-products-button:hover:after,
+.more-products-button:focus:after {
   border-top-color: #817e7e;
 }
 .more-products-button:before {
@@ -606,7 +614,8 @@
 .products-tab-nav > li > a:first-child {
   border-left: 1px solid #d1d1d1;
 }
-.products-tab-nav > li > a:hover {
+.products-tab-nav > li > a:hover,
+.products-tab-nav > li > a:focus {
   color: white;
   background-color: #616161;
   background-image: -moz-linear-gradient(top, #333333, #a6a6a6);
@@ -641,7 +650,8 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0d0d0d', endColorstr='#ff808080', GradientType=0);
   color: white;
 }
-.products-collapse-nav:hover {
+.products-collapse-nav:hover,
+.products-collapse-nav:focus {
   color: white;
   background-color: #616161;
   background-image: -moz-linear-gradient(top, #333333, #a6a6a6);

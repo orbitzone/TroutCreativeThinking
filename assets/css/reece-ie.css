@@ -14,9 +14,6 @@
   margin-top: 0;
 }
 .lt-ie9 body {
-  min-width: 1600px;
-}
-.lt-ie9 body.home {
   min-width: 1200px;
 }
 .lt-ie9 .main-header {

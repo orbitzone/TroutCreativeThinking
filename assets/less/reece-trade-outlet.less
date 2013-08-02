@@ -265,31 +265,6 @@
 	}	
 }
 
-// Blog Article Article (Submodule)
-//====================================================================================================================================
-//====================================================================================================================================
-
-.article-main {
-	.article-media {
-		margin-bottom: 10px;
-	}
-	.article-actions {
-		margin-top: 20px;
-		list-style-type: none;
-
-		li {
-			margin-top: 10px;
-
-			&:first-child {
-				margin-top: 0;
-			}
-		}
-	}
-	.label {
-		margin: 3px;
-	}
-}
-
 // Latest News Module (Submodule)
 //====================================================================================================================================
 //====================================================================================================================================
@@ -320,6 +295,31 @@
 	}
 }
 
+// Blog Article Main
+//====================================================================================================================================
+//====================================================================================================================================
+
+.article-main {
+	.article-media {
+		margin-bottom: 10px;
+	}
+	.article-actions {
+		margin-top: 20px;
+		list-style-type: none;
+
+		li {
+			margin-top: 10px;
+
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+	}
+	.label {
+		margin: 3px;
+	}
+}
+
 // Article List Module (A full page list of articles)
 //====================================================================================================================================
 //====================================================================================================================================
@@ -328,16 +328,19 @@
 	.clearfix;
 
 	@media only screen and (min-width : 979px) {
-		.article-list-row {
-			float: left;
-			//Custom column mixin is not used because the percentage values needed to be tweaked slightly to make everything align
-			//.custom-column-item(6);
-			width: 47.9361702%; //Match Bootstrap styles
-			margin-left: 1.41843971%;  //Match Bootstrap styles
 
-			&:first-child {
+		.article-list-row {
+			.row-fluid:first-child {
 				margin-left: 0;
-			}
+			}		
+		}
+
+		.row-fluid {
+			float: left;
+			//TODO: Add functionality to custom-column-item mixin to allow tweaking of column sizes;
+			//.custom-column-item(6);
+			width: 49.39%; //Match Bootstrap styles
+			margin-left: 1.21%;  //Match Bootstrap styles
 		}
 	}
 }

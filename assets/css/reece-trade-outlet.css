@@ -185,6 +185,11 @@
 .article-carousel {
   margin-bottom: 0;
 }
+@media (max-width: 767px) {
+  .article-carousel .carousel-control {
+    display: none;
+  }
+}
 .article-summary-main p,
 .latest-news p {
   font-size: 15px;

@@ -435,6 +435,11 @@
 .products-list img:hover {
   box-shadow: 0 1px 7px rgba(0, 0, 0, 0.6);
 }
+@media (max-width: 767px) {
+  .carousel-control {
+    display: none;
+  }
+}
 .custom-carousel-control .carousel-control.top {
   top: -40px;
 }

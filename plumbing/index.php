@@ -24,12 +24,12 @@
 	    <div class="content-container">
 			<div class="inner-wrapper">
 
-				<div class="article-banner page-branding box-brand clearfix">
+				<div class="article-banner-trade page-branding box-brand clearfix">
 					<h2 class="article-banner-title pull-left">plumbing</h2>
 					<p class="article-banner-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				</div>
 
-				<div id="article-carousel" data-bs-carousel="carousel" data-bs-carousel-interval="0" class="custom-carousel-control carousel slide hidden-phone">
+				<div id="article-carousel" data-bs-carousel="carousel" data-bs-carousel-interval="0" class="article-carousel custom-carousel-control carousel slide">
 			        <div class="carousel-inner">
 			            
 					    <div class="active item">
@@ -72,44 +72,28 @@
 			        <a class="carousel-control right bottom" href="#article-carousel" data-slide="next">›</a>
 			    </div>
 
-				<div class="article-summary-secondary row-fluid">
+				<div class="article-gateway row-fluid">
 					<article class="article span3">
 						<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
-						<small>9 June 2013</small>
-						<h3>Worldskills team 2013 – Meet Alex De Koeyer</h3>
-						<p>
-							The best, brightest young tradies compete for a world title.
-						</p>
+						<h3>Hot water decisions guide</h3>
 						<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 					</article>
 
 					<article class="article span3">
 						<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
-    					<small>20 May 2013</small>
-    					<h3>Conex launches hot new fitting</h3>
-    					<p>
-							Conex Bänninger has just added a new fitting to their quality range of products.
-						</p>
+    					<h3>Rothenberger World Series Competition</h3>
 						<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 					</article>
 
 					<article class="article span3">
 						<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
-	    				<small>1 May 2013</small>
-	    				<h3>The peace of mind in having the right connections</h3>
-	    				<p>
-							Conex Bänninger has just added a new fitting to their quality range of products.
-						</p>
-						<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
+	    				<h3>Reece Footy Tipping Competition</h3>
+						<a class="read-more page-branding text-brand" href="#">Log in to your footy tipping<i class="icon-arrow-right"></i></a>
 					</article>	
 
 					<article class="article span3">
 						<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
-    					<small>1 May 2013</small>
-    					<h3>The peace of mind in having the right connections</h3>
-    					<p>
-							Conex Bänninger has just added a new fitting to their quality range of products.
-						</p>
+    					<h3>Discover Thermann Hot Water Units</h3>
 						<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 					</article>							
 				</div>	

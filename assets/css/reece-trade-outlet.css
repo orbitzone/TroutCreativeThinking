@@ -25,41 +25,46 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.article-banner {
+.article-banner,
+.article-banner-trade {
   margin-bottom: 20px;
+}
+.article-banner-trade {
   padding: 40px;
 }
-.article-banner .article-banner-title,
-.article-banner .article-banner-description {
+.article-banner-trade .article-banner-title,
+.article-banner-trade .article-banner-description {
   color: white;
 }
-.article-banner .article-banner-title {
+.article-banner-trade .article-banner-title {
   margin: 0 20px 0 0;
-  line-height: 1.3;
+  line-height: 0.8;
   font-weight: normal;
 }
-.article-banner .article-banner-description {
+.article-banner-trade .article-banner-description {
   overflow: hidden;
   padding-left: 20px;
   border-left: 5px solid white;
   max-width: 600px;
 }
 @media only screen and (max-width: 979px) {
-  .article-banner {
+  .article-banner-trade {
     margin-top: 20px;
   }
 }
 @media (max-width: 769px) {
-  .article-banner .article-banner-title {
-    float: none;
-    margin: 0 0 10px;
-    padding-bottom: 5px;
-    border-right: 0;
-    border-bottom: 5px solid white;
-  }
-  .article-banner .article-banner-title,
-  .article-banner .article-banner-description {
+  .article-banner-trade .article-banner-title,
+  .article-banner-trade .article-banner-description {
     text-align: center;
+  }
+  .article-banner-trade .article-banner-title {
+    float: none;
+    margin: 0;
+  }
+  .article-banner-trade .article-banner-description {
+    border-left: 0;
+    padding-left: 0;
+    margin: 20px 0 0;
   }
 }
 .headline.article-headline {
@@ -131,7 +136,8 @@
 .article-summary-secondary,
 .article-summary-preview,
 .latest-news,
-.recommended-stories {
+.recommended-stories,
+.article-gateway {
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #e5e5e5;
@@ -140,14 +146,16 @@
 .article-summary-secondary h3,
 .article-summary-preview h3,
 .latest-news h3,
-.recommended-stories h3 {
+.recommended-stories h3,
+.article-gateway h3 {
   margin: 0 0 6px;
 }
 .article-summary-main small,
 .article-summary-secondary small,
 .article-summary-preview small,
 .latest-news small,
-.recommended-stories small {
+.recommended-stories small,
+.article-gateway small {
   margin-bottom: 3px;
 }
 .read-more {
@@ -173,6 +181,9 @@
 }
 .read-more.large {
   font-size: 16px;
+}
+.article-carousel {
+  margin-bottom: 0;
 }
 .article-summary-main p,
 .latest-news p {
@@ -206,29 +217,34 @@
 }
 .article-summary-secondary,
 .article-summary-preview,
-.recommended-stories {
+.recommended-stories,
+.article-gateway {
   font-size: 12px;
 }
 .article-summary-secondary h3,
 .article-summary-preview h3,
-.recommended-stories h3 {
+.recommended-stories h3,
+.article-gateway h3 {
   font-size: 15px;
 }
 .article-summary-secondary p,
 .article-summary-preview p,
-.recommended-stories p {
+.recommended-stories p,
+.article-gateway p {
   line-height: 1.2;
 }
 .article-summary-secondary small,
 .article-summary-preview small,
-.recommended-stories small {
+.recommended-stories small,
+.article-gateway small {
   display: block;
   margin-top: 5px;
 }
 @media (max-width: 767px) {
   .article-summary-secondary .article,
   .article-summary-preview .article,
-  .recommended-stories .article {
+  .recommended-stories .article,
+  .article-gateway .article {
     margin-top: 20px;
     *zoom: 1;
   }
@@ -237,19 +253,23 @@
   .article-summary-preview .article:before,
   .article-summary-preview .article:after,
   .recommended-stories .article:before,
-  .recommended-stories .article:after {
+  .recommended-stories .article:after,
+  .article-gateway .article:before,
+  .article-gateway .article:after {
     display: table;
     content: "";
     line-height: 0;
   }
   .article-summary-secondary .article:after,
   .article-summary-preview .article:after,
-  .recommended-stories .article:after {
+  .recommended-stories .article:after,
+  .article-gateway .article:after {
     clear: both;
   }
   .article-summary-secondary .article:first-child,
   .article-summary-preview .article:first-child,
-  .recommended-stories .article:first-child {
+  .recommended-stories .article:first-child,
+  .article-gateway .article:first-child {
     margin-top: 0;
   }
 }
@@ -287,6 +307,20 @@
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #e5e5e5;
+}
+.article-gateway {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+.article-gateway .article {
+  padding: 10px;
+  background-color: #beb6ac;
+}
+.article-gateway h3 {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: normal;
+  color: white;
 }
 .article-main .article-media {
   margin-bottom: 10px;
@@ -332,7 +366,8 @@
 }
 .recent-stories .article-summary-secondary,
 .recent-stories .article-summary-preview,
-.recent-stories .recommended-stories {
+.recent-stories .recommended-stories,
+.recent-stories .article-gateway {
   margin-bottom: 0;
   border-bottom: 0;
 }

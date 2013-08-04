@@ -24,7 +24,7 @@
 	    <div class="content-container">
 			<div class="inner-wrapper">
 
-				<div class="article-banner page-branding box-brand clearfix">
+				<div class="article-banner-trade page-branding box-brand clearfix">
 					<h2 class="article-banner-title pull-left">irrigation</h2>
 					<p class="article-banner-description">With over 30 stores nationally and a dedicated design department, Reece Irrigation delivers unrivalled service to the landscape, commercial and agricultural industries. We stock a large range of products, including turf, sprays and drippers, valves, pipe and fittings, pumps, automatic controllers, outdoor lighting and water saving products.</p>
 				</div>
@@ -46,44 +46,28 @@
 					</div>			    		
 				</article>				
 
-				<div class="article-summary-secondary row-fluid">
+				<div class="article-gateway row-fluid">
 					<article class="article span3">
 						<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
-						<small>9 June 2013</small>
-						<h3>Worldskills team 2013 – Meet Alex De Koeyer</h3>
-						<p>
-							The best, brightest young tradies compete for a world title.
-						</p>
+						<h3>Hot water decisions guide</h3>
 						<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 					</article>
 
 					<article class="article span3">
 						<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
-    					<small>20 May 2013</small>
-    					<h3>Conex launches hot new fitting</h3>
-    					<p>
-							Conex Bänninger has just added a new fitting to their quality range of products.
-						</p>
+    					<h3>Rothenberger World Series Competition</h3>
 						<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 					</article>
 
 					<article class="article span3">
 						<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
-	    				<small>1 May 2013</small>
-	    				<h3>The peace of mind in having the right connections</h3>
-	    				<p>
-							Conex Bänninger has just added a new fitting to their quality range of products.
-						</p>
-						<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
+	    				<h3>Reece Footy Tipping Competition</h3>
+						<a class="read-more page-branding text-brand" href="#">Log in to your footy tipping<i class="icon-arrow-right"></i></a>
 					</article>	
 
 					<article class="article span3">
 						<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
-    					<small>1 May 2013</small>
-    					<h3>The peace of mind in having the right connections</h3>
-    					<p>
-							Conex Bänninger has just added a new fitting to their quality range of products.
-						</p>
+    					<h3>Discover Thermann Hot Water Units</h3>
 						<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 					</article>							
 				</div>	

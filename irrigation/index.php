@@ -28,7 +28,7 @@
 					<div class="banner-branding-block page-branding box-brand pull-left">
 						<h3 class="banner-branding-title">irrigation</h3>
 					</div>
-					<p class="article-banner-description">With 34 irrigation stores around Australia and a dedicated design department, we deliver unrivalled service standards to the landscape, commercial and agricultural industries.</p>
+					<p class="article-banner-description">With 34 irrigation stores around Australia and a dedicated design department, we deliver<br> unrivalled service standards to the landscape, commercial and agricultural industries.</p>
 				</div>
 
 				<hr class="page-branding border-brand banner-border">

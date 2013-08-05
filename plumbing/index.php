@@ -28,7 +28,7 @@
 					<div class="banner-branding-block page-branding box-brand pull-left">
 						<h3 class="banner-branding-title">plumbing</h3>
 					</div>
-					<p class="article-banner-description">Thousands of plumbers turn to Reece because of our reputation for “having what you need, when you need it, where you need it.” It's all about delivering the best service possible. A commitment we live by every day.</p>
+					<p class="article-banner-description">Thousands of plumbers turn to Reece because of our reputation for “having what you need, when you need <br>it, where you need it.” It's all about delivering the best service possible. A commitment we live by every day.</p>
 				</div>
 
 				<div id="article-carousel" data-bs-carousel="carousel" data-bs-carousel-interval="0" class="article-carousel custom-carousel-control carousel slide">

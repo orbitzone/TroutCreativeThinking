@@ -368,14 +368,24 @@
   padding: 10px;
   background-color: #beb6ac;
 }
+.article-gateway img,
+.article-gateway h3,
+.article-gateway p,
+.article-gateway .read-more {
+  margin: 0 0 10px 0;
+}
 .article-gateway h3 {
-  margin-top: 10px;
   font-size: 20px;
   font-weight: normal;
   color: white;
 }
-.article-gateway h3:first-child {
-  margin-top: 0;
+.article-gateway p {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.article-gateway p span {
+  display: block;
+  color: white;
 }
 .article-main .article-media {
   margin-bottom: 10px;

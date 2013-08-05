@@ -28,7 +28,7 @@
 					<div class="banner-branding-block page-branding box-brand pull-left">
 						<h3 class="banner-branding-title">hvac-r</h3>
 					</div>
-					<p class="article-banner-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+					<p class="article-banner-description">With 36 stores around Australia Reece hvac-r offers dedicated support, stock and expertise including climate solutions, piping, ventilation, refrigeration and heating.</p>
 				</div>
 
 			    <article class="article-summary-main row-fluid">

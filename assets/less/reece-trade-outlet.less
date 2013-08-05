@@ -25,6 +25,20 @@
 			color: white;
 			text-align: center;
 		}
+
+		@media (max-width: 769px) {	
+			float: none;
+			width: 100%;
+			padding: 0;
+
+			.banner-branding-title {
+				margin: 10px auto;
+				padding-bottom: 10px;
+				max-width: 90%;
+				line-height: normal;
+				border-bottom: 3px solid white;
+			}
+		}
 	}	
 }
 
@@ -49,8 +63,8 @@
 	@media (max-width: 769px) {
 
 		.article-banner-description {
-			margin: 20px 0 0;
-			padding-left: 0;
+			margin: 10px 0 0;
+			padding: 0 0 10px 0;
 			text-align: center;
 		}
 	}
@@ -251,6 +265,7 @@
 //====================================================================================================================================
 
 .article-summary-secondary {
+
 	font-size: 12px;	
 
 	h3 {
@@ -265,6 +280,12 @@
 		display: block;
 		margin-top: 5px;
 	}
+
+	.article-topic-heading {
+		font-size: 20px;
+		color: lighten(@reeceGrey, 10%);
+		margin-bottom: 15px;
+	}	
 
 	@media (max-width: 767px) {
 		.article {
@@ -354,6 +375,10 @@
 		font-size: 20px;
 		font-weight: normal;
 		color: white;
+
+		&:first-child {
+			margin-top: 0; //If a heading tag is the first to appear remove the top margin
+		}
 	}
 }
 

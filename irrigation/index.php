@@ -28,7 +28,7 @@
 					<div class="banner-branding-block page-branding box-brand pull-left">
 						<h3 class="banner-branding-title">irrigation</h3>
 					</div>
-					<p class="article-banner-description">With over 30 stores nationally and a dedicated design department, Reece Irrigation delivers unrivalled service to the landscape, commercial and agricultural industries. We stock a large range of products.</p>
+					<p class="article-banner-description">With 34 irrigation stores around Australia and a dedicated design department, we deliver unrivalled service standards to the landscape, commercial and agricultural industries.</p>
 				</div>
 
 				<hr class="page-branding border-brand banner-border">

@@ -178,6 +178,7 @@
 					<div id="accordion" class="products-tabs tab-content clearfix">
 						<a class="products-collapse-nav accordion-toggle visible-phone" data-toggle="collapse" data-parent="#accordion" href="#details">
 							Details
+							<i class="pull-right icon-angle-down icon-large"></i>
 						</a>
 					
 						<div class="accordion tab-pane in collapse active" id="details">
@@ -213,6 +214,7 @@
 
 						<a class="products-collapse-nav accordion-toggle visible-phone" data-toggle="collapse" data-parent="#accordion" href="#video">
 							Video
+							<i class="pull-right icon-angle-down icon-large"></i>
 						</a>
 
 						<div class="accordion tab-pane fade collapse" id="video">

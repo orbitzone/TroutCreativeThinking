@@ -659,3 +659,7 @@
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff333333', endColorstr='#ffa6a6a6', GradientType=0);
 }
+.products-collapse-nav:hover i,
+.products-collapse-nav:focus i {
+  text-decoration: none;
+}

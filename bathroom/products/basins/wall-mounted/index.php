@@ -41,7 +41,7 @@
 								<h3>Wall Basin 1600</h3>
 
 		
-								<div id="product-shots-carousel" class="carousel slide">
+								<div id="product-shots-carousel" data-bs-carousel="carousel" data-bs-carousel-interval="0" class="carousel slide">
 									
 									<div class="carousel-inner">
 										<div class="active item" data-slide-number="0"><img src="/assets/images/products_2013/products-product-shot-1.jpg" alt="Laufen ILBAGNOALESSI One"></div>

@@ -25,8 +25,10 @@
 			<div class="inner-wrapper">
 
 				<div class="article-banner-trade page-branding box-brand clearfix">
-					<h2 class="article-banner-title pull-left">plumbing</h2>
-					<p class="article-banner-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<div class="banner-branding-block page-branding box-brand pull-left">
+						<h3 class="banner-branding-title">Plumbing</h3>
+					</div>
+					<p class="article-banner-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
 				</div>
 
 				<div id="article-carousel" data-bs-carousel="carousel" data-bs-carousel-interval="0" class="article-carousel custom-carousel-control carousel slide">

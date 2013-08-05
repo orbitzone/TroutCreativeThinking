@@ -25,8 +25,10 @@
 			<div class="inner-wrapper">
 
 				<div class="article-banner-trade page-branding box-brand clearfix">
-					<h2 class="article-banner-title pull-left">irrigation</h2>
-					<p class="article-banner-description">With over 30 stores nationally and a dedicated design department, Reece Irrigation delivers unrivalled service to the landscape, commercial and agricultural industries. We stock a large range of products, including turf, sprays and drippers, valves, pipe and fittings, pumps, automatic controllers, outdoor lighting and water saving products.</p>
+					<div class="banner-branding-block page-branding box-brand pull-left">
+						<h3 class="banner-branding-title">Irrigation</h3>
+					</div>
+					<p class="article-banner-description">With over 30 stores nationally and a dedicated design department, Reece Irrigation delivers unrivalled service to the landscape, commercial and agricultural industries. We stock a large range of products.</p>
 				</div>
 
 				<hr class="page-branding border-brand banner-border">
@@ -46,26 +48,26 @@
 					</div>			    		
 				</article>				
 
-				<div class="article-gateway row-fluid">
-					<article class="article span3">
+				<div data-resize-group="gateway" class="article-gateway row-fluid">
+					<article data-resize="height" class="article span3">
 						<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
 						<h3>Hot water decisions guide</h3>
 						<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 					</article>
 
-					<article class="article span3">
+					<article data-resize="height" class="article span3">
 						<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
     					<h3>Rothenberger World Series Competition</h3>
 						<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 					</article>
 
-					<article class="article span3">
+					<article data-resize="height" class="article span3">
 						<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
 	    				<h3>Reece Footy Tipping Competition</h3>
 						<a class="read-more page-branding text-brand" href="#">Log in to your footy tipping<i class="icon-arrow-right"></i></a>
 					</article>	
 
-					<article class="article span3">
+					<article data-resize="height" class="article span3">
 						<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
     					<h3>Discover Thermann Hot Water Units</h3>
 						<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
@@ -164,6 +166,7 @@
 			"/assets/js/bootstrap-transition.js",
 			"/assets/js/jquery.mobile.custom.min.js",
 			"/assets/js/reece-ocnav.js",
+			"/assets/js/reece-match-height.js"
 
 		]; 
 	   	include_once($serverBase."/includes/foot/scripts.php");

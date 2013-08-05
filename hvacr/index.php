@@ -25,8 +25,10 @@
 			<div class="inner-wrapper">
 
 				<div class="article-banner-trade page-branding box-brand clearfix">
-					<h2 class="article-banner-title pull-left">hvac-r</h2>
-					<p class="article-banner-description">With 36 stores around Australia Reece hvac-r offers dedicated support, stock and expertise including climate solutions, piping, ventilation, refrigeration and heating.</p>
+					<div class="banner-branding-block page-branding box-brand pull-left">
+						<h3 class="banner-branding-title">Hvac-r</h3>
+					</div>
+					<p class="article-banner-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
 				</div>
 
 			    <article class="article-summary-main row-fluid">
@@ -44,26 +46,26 @@
 					</div>			    		
 				</article>				
 
-				<div class="article-gateway row-fluid">
-					<article class="article span3">
+				<div data-resize-group="gateway" class="article-gateway row-fluid">
+					<article data-resize="height" class="article span3">
 						<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
 						<h3>Hot water decisions guide</h3>
 						<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 					</article>
 
-					<article class="article span3">
+					<article data-resize="height" class="article span3">
 						<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
     					<h3>Rothenberger World Series Competition</h3>
 						<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 					</article>
 
-					<article class="article span3">
+					<article data-resize="height" class="article span3">
 						<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
 	    				<h3>Reece Footy Tipping Competition</h3>
 						<a class="read-more page-branding text-brand" href="#">Log in to your footy tipping<i class="icon-arrow-right"></i></a>
 					</article>	
 
-					<article class="article span3">
+					<article data-resize="height" class="article span3">
 						<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
     					<h3>Discover Thermann Hot Water Units</h3>
 						<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
@@ -162,6 +164,7 @@
 			"/assets/js/bootstrap-transition.js",
 			"/assets/js/jquery.mobile.custom.min.js",
 			"/assets/js/reece-ocnav.js",
+			"/assets/js/reece-match-height.js"
 
 		]; 
 	   	include_once($serverBase."/includes/foot/scripts.php");

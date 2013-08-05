@@ -31,19 +31,19 @@
 					</div>
 				</div>
 
-				<hr>
-
-				<h3>Latest News</h3>
+				<ul class="breadcrumb">
+					<li class="active page-branding text-brand">Latest News</li>
+				</ul>
 
 				<div class="row-fluid">
 				    <article class="latest-news span6">
 				    	<img src="/assets/images/trade_2013/trade_article_sample.jpg" alt="Trade sample" />
-    					<h3>Reece Tool Catalogue</h3>
-    					<hr>
+    					<h3>The smart way to keep your business moving</h3>
     					<small class="page-branding text-brand">1 June 2013</small>
     					<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non ornare arcu. Curabitur dui est, semper ac faucibus vel, iaculis condimentum odio. Etiam eget felis neque. Phasellus hendrerit ante nec ante cursus eget pellentesque tortor rhoncus. Duis
 						</p>
+						<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 					</article>
 
 					<div class="span6">
@@ -197,69 +197,7 @@
 				</div>
 
 			</div>
-	    </div>					
-
-	    <div class="recent-stories">
-	    	<div class="content-container">
-				<div class="inner-wrapper">
-					<h3>Recent Stories</h3>
-					<div class="article-summary-preview row-fluid">
-
-						<article class="article span3">
-							<a class="article-image" href="#"><img src="http://placehold.it/360x250" alt="Trade Sample Mini" /></a>
-		    				<div class="article-body">
-			    				<small>1 June 2013</small>
-			    				<h3>The peace of mind in having the right connections</h3>
-			    				<p>
-									Conex Bänninger has just added a new fitting to their quality range of products.
-								</p>
-								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
-							</div>
-						</article>
-
-						<article class="article span3"> 
-							<a class="article-image" href="#"><img src="http://placehold.it/360x250" alt="Trade Sample Mini" /></a>
-		    				<div class="article-body">
-			    				<small>1 July 2013</small>
-			    				<h3>Rothenberger World Series Competition</h3>
-			    				<p>
-									Conex Bänninger has just added a new fitting to their quality range of products.
-								</p>			    				
-								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
-							</div>
-						</article>
-
-						<article class="article span3">
-							<a class="article-image" href="#"><img src="http://placehold.it/360x250" alt="Trade Sample Mini" /></a>
-		    				<div class="article-body">
-			    				<small>11 September 2013</small>
-			    				<h3>Where did my warranty go?</h3>
-			    				<p>
-									Conex Bänninger has just added a new fitting to their quality range of products.
-								</p>			    				
-								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
-							</div>
-						</article>
-
-						<article class="article span3">
-							<a class="article-image" href="#"><img src="http://placehold.it/360x250" alt="Trade Sample Mini" /></a>
-		    				<div class="article-body">
-			    				<small>1 June 2013</small>
-			    				<h3>The peace of mind in having the right connections</h3>
-			    				<p>
-									Conex Bänninger has just added a new fitting to their quality range of products.
-								</p>			    				
-								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
-							</div>
-						</article>
-
-					</div>
-				</div>	
-
-			    <!-- END CONTENT -->
-
-			</div>
-	    </div>				
+	    </div>								
 
 	    <?php 
 			include_once($serverBase."/includes/foot/foot-generic.php");

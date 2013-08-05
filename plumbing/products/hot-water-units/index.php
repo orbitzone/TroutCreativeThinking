@@ -67,7 +67,7 @@
 										<li class="filter-options clearfix"><a data-toggle="collapse" href="#product-category-sub" class="filter-option page-branding text-brand" href="#">Hot Water Units <i class="icon-angle-down icon-large"></i></a></li>
 									</ul>
 
-									<ul id="product-category-sub" class="subnav collapse">
+									<ul id="product-category-sub" class="subnav nav collapse">
 										<li><a href="#">Rainwater Tanks</a></li>
 										<li><a href="#">Hydronic Heating</a></li>
 										<li><a href="#">Pipe & Fittings</a></li>

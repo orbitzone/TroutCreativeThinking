@@ -35,13 +35,11 @@
 					    	<div class="carousel-inner">
 					    		<div class="item">
 									<a href="#">
-										<!-- <img src="/assets/images/products_2013/products-plumbing-fresh-approach-mobile.jpg" alt="Fresh Approach" /> -->
 										<img src="http://placehold.it/730x500" alt="Place holder" />
 									</a>
 					    		</div>
 					    		<div class="item active">
 									<a href="#">
-										<!-- <img src="/assets/images/products_2013/products-plumbing-fresh-approach-mobile.jpg" alt="Fresh Approach" /> -->
 										<img src="http://placehold.it/730x500" alt="Place holder" />
 									</a>
 					    		</div>

@@ -125,8 +125,7 @@
 .filter-options {
   margin-top: 10px;
 }
-.filter-options a:hover i,
-.filter-options:focus i {
+.filter-options a:hover i {
   text-decoration: none;
 }
 .product-section-lead-links {
@@ -168,7 +167,7 @@
 }
 @media (min-width: 767px) {
   .products-list {
-    margin: 0 4px;
+    margin: 4px;
   }
 }
 @media (max-width: 767px) {
@@ -436,6 +435,9 @@
 .carousel-hover:hover,
 .products-list img:hover {
   box-shadow: 0 1px 7px rgba(0, 0, 0, 0.6);
+}
+.carousel-control {
+  outline: none;
 }
 @media (max-width: 767px) {
   .carousel-control {

@@ -112,7 +112,7 @@
 .filter-options {
 	margin-top: 10px;
 
-	a:hover i, &:focus i {
+	a:hover i {
 		text-decoration: none;
 	}
 }
@@ -171,7 +171,7 @@
 	}
 
 	@media (min-width: 767px) {
-		margin: 0 4px; //Quick fix for image hover effect being cut off by carousel class.
+		margin: 4px; //Quick fix for image hover effect being cut off by carousel class.
 	}
 
 	@media (max-width: 767px) {
@@ -421,15 +421,15 @@
 //====================================================================================================================================
 
 .carousel-control {
+	outline: none;
+
 	@media (max-width: 767px) {
 		display: none;
 	}
 }
 
 .custom-carousel-control {
-
 	.carousel-control {
-
 		&.top {
 			top: -45px; //Ensure the controls align with the heading tag as per design.
 		}	

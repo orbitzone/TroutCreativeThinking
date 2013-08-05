@@ -27,6 +27,7 @@
 }
 .article-banner,
 .article-banner-trade {
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 .article-banner-trade {
@@ -212,12 +213,6 @@
   .article-summary-main h3,
   .latest-news h3 {
     margin-top: 10px;
-  }
-}
-@media only screen and (max-width: 979px) {
-  .article-summary-main,
-  .latest-news {
-    margin-top: 20px;
   }
 }
 .article-summary-secondary,

@@ -45,3 +45,11 @@
   padding-left: 0;
   padding-right: 0;
 }
+.lt-ie8 .article-gateway .article {
+  padding: 0 0 10px 0;
+}
+.lt-ie8 .article-gateway .article h3,
+.lt-ie8 .article-gateway .article .read-more {
+  padding-left: 10px;
+  padding-right: 10px;
+}

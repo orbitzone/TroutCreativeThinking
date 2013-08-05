@@ -166,6 +166,10 @@
 
 .products-list {
 
+	.row-fluid + .row-fluid {
+		margin-top: @fluidGridGutterWidth; //Add margin to multi row products lists
+	}
+
 	@media (min-width: 767px) {
 		margin: 0 4px; //Quick fix for image hover effect being cut off by carousel class.
 	}
@@ -185,7 +189,7 @@
 
 .product-block {
 	position: relative;
-	margin-top: @fluidGridGutterWidth;
+	//margin-top: @fluidGridGutterWidth;
 }
 .product-title, .product-desc, .product-price {
 	display: block;
@@ -588,7 +592,7 @@
 
 	> li {
 		float: none;
-		width: 15%; //Acts as a max-width
+		width: 14%; //Acts as a max-width
 		display: table-cell;
 
 		> a {

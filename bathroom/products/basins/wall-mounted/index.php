@@ -294,28 +294,20 @@
 					<hr>
 
 					<h2>Learn more about Laufen</h2>
-			    	<div class="products-list">
-			    		<div class="product-block">
-							<a href="#"><img src="/assets/images/products_2013/products-laufen-shot.jpg"></a>
-						</div>
-					</div>	
-
+					<a href="#"><img src="/assets/images/products_2013/products-laufen-shot.jpg"></a>
 					<hr>
 
 					<h2>See this product featured in</h2>
 			    	<div class="products-list">
 					    <div class="row-fluid">
 					    	<div class="product-block span4">
-								<!-- <a href="#"><img src="/assets/images/products_2013/products-hotel-shot-one.jpg"></a> -->
-								<img src="http://placehold.it/500x350" alt="Place holder" />
+								<a href="#"><img src="http://placehold.it/500x350" alt="Place holder" /></a>
 					    	</div>
 					    	<div class="product-block span4">
-					    		<!-- <a href="#"><img src="/assets/images/products_2013/products-hotel-shot-two.jpg"></a> -->
-					    		<img src="http://placehold.it/500x350" alt="Place holder" />
+					    		<a href="#"><img src="http://placehold.it/500x350" alt="Place holder" /></a>
 					    	</div>
 					    	<div class="product-block span4">
-					    		<!-- <a href="#"><img src="/assets/images/products_2013/products-hotel-shot-three.jpg"></a> -->
-					    		<img src="http://placehold.it/500x350" alt="Place holder" />
+					    		<a href="#"><img src="http://placehold.it/500x350" alt="Place holder" /></a>
 					    	</div>
 					    </div>
 					</div>

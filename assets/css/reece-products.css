@@ -163,6 +163,9 @@
   color: #aaaaaa;
   background-color: white;
 }
+.products-list .row-fluid + .row-fluid {
+  margin-top: 2.127659574468085%;
+}
 @media (min-width: 767px) {
   .products-list {
     margin: 0 4px;
@@ -178,7 +181,6 @@
 }
 .product-block {
   position: relative;
-  margin-top: 2.127659574468085%;
 }
 .product-title,
 .product-desc,
@@ -583,7 +585,7 @@
 }
 .products-tab-nav > li {
   float: none;
-  width: 15%;
+  width: 14%;
   display: table-cell;
 }
 .products-tab-nav > li > a {

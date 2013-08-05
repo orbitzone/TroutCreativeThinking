@@ -34,6 +34,7 @@
 .article-banner .banner-branding-block,
 .article-banner-trade .banner-branding-block,
 .article-banner-outlet .banner-branding-block {
+  min-width: 9%;
   padding: 0 30px;
 }
 .article-banner .banner-branding-block .banner-branding-title,
@@ -42,6 +43,7 @@
   line-height: 3.1;
   font-weight: normal;
   color: white;
+  text-align: center;
 }
 .article-banner-trade .banner-branding-block {
   border-right: 3px solid white;
@@ -74,6 +76,9 @@
   background-image: linear-gradient(to right, #0d2e56, #06162a);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0d2e56', endColorstr='#ff06162a', GradientType=1);
+}
+.article-banner-outlet .banner-branding-block {
+  border-left: 3px solid white;
 }
 .article-banner-outlet .banner-logo {
   margin-left: 20px;
@@ -169,7 +174,8 @@
 .article-gateway small {
   margin-bottom: 3px;
 }
-.read-more {
+.read-more,
+.more-articles {
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -190,8 +196,16 @@
 .read-more:hover i {
   margin-left: 15px;
 }
-.read-more.large {
-  font-size: 16px;
+.more-articles {
+  display: block;
+  padding: 10px;
+  background-color: #eaeaea;
+  color: #848484;
+  text-decoration: none;
+}
+.more-articles:hover {
+  background-color: #d1d1d1;
+  color: #6a6a6a;
 }
 .article-carousel {
   margin-bottom: 0;
@@ -308,7 +322,7 @@
 .latest-news h3 {
   margin-top: 10px;
   font-size: 26px;
-  color: #4c4c4c;
+  color: #666666;
 }
 .recommended-stories {
   margin-bottom: 0;

@@ -26,7 +26,7 @@
 
 				<div class="article-banner-trade page-branding box-brand clearfix">
 					<div class="banner-branding-block page-branding box-brand pull-left">
-						<h3 class="banner-branding-title">Hvac-r</h3>
+						<h3 class="banner-branding-title">hvac-r</h3>
 					</div>
 					<p class="article-banner-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
 				</div>

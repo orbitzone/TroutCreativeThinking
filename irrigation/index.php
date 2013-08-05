@@ -26,7 +26,7 @@
 
 				<div class="article-banner-trade page-branding box-brand clearfix">
 					<div class="banner-branding-block page-branding box-brand pull-left">
-						<h3 class="banner-branding-title">Irrigation</h3>
+						<h3 class="banner-branding-title">irrigation</h3>
 					</div>
 					<p class="article-banner-description">With over 30 stores nationally and a dedicated design department, Reece Irrigation delivers unrivalled service to the landscape, commercial and agricultural industries. We stock a large range of products.</p>
 				</div>

@@ -26,7 +26,7 @@
 
 				<div class="article-banner-trade page-branding box-brand clearfix">
 					<div class="banner-branding-block page-branding box-brand pull-left">
-						<h3 class="banner-branding-title">Civil</h3>
+						<h3 class="banner-branding-title">civil</h3>
 					</div>
 					<p class="article-banner-description">We're dedicated to supplying only the best products and service for all underground pipe networks including water mains, gas mains, sewer mains.</p>
 				</div>				

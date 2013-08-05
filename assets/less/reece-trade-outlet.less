@@ -16,12 +16,14 @@
 	margin-bottom: 20px;
 
 	.banner-branding-block {
+		min-width: 9%; //Ensure all boxes are roughly the same width
 		padding: 0 30px;
 
 		.banner-branding-title {
 			line-height: 3.1; //Fill the entire block and center text
 			font-weight: normal;
 			color: white;
+			text-align: center;
 		}
 	}	
 }
@@ -57,20 +59,13 @@
 .article-banner-outlet:extend(.article-banner all) {
 	#gradient > .horizontal(@brandingPlumbing, darken(@brandingPlumbing, 10%));
 
+	.banner-branding-block {
+		border-left: 3px solid white;
+	}
+
 	.banner-logo {
 		margin-left: 20px;
 	}
-
-	// .banner-branding-block {
-	// 	padding: 0 30px;
-	// 	border-left: 3px solid white;
-
-	// 	.banner-branding-title {
-	// 		line-height: 3.1; //Fill the entire block and center text
-	// 		font-weight: normal;
-	// 		color: white;
-	// 	}
-	// }
 }
 
 // Headline Module (Heading tag style variations)
@@ -192,9 +187,22 @@
 			margin-left: 15px;
 		}
 	}
+}
 
-	&.large {
-		font-size: 16px;
+// More Articles Module (Submodule)
+//====================================================================================================================================
+//====================================================================================================================================
+
+.more-articles:extend(.read-more) {
+	display: block;
+	padding: 10px;
+	background-color: @lightBackground;
+	color: darken(@lightBackground, 40%);
+	text-decoration: none;
+
+	&:hover {
+		background-color: darken(@lightBackground, 10%);
+		color: darken(@lightBackground, 50%);
 	}
 }
 
@@ -308,7 +316,7 @@
 	h3 {
 		margin-top: 10px;
 		font-size: 26px;
-		color: @reeceGrey;
+		color: lighten(@reeceGrey, 10%);
 	}
 }
 

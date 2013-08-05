@@ -26,12 +26,13 @@
   box-sizing: border-box;
 }
 .article-banner,
-.article-banner-trade {
+.article-banner-trade,
+.article-banner-outlet {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 .article-banner-trade {
-  padding: 40px;
+  padding: 30px;
 }
 .article-banner-trade .article-banner-title,
 .article-banner-trade .article-banner-description {
@@ -44,8 +45,9 @@
 }
 .article-banner-trade .article-banner-description {
   overflow: hidden;
+  margin-bottom: 0;
   padding-left: 20px;
-  border-left: 5px solid white;
+  border-left: 3px solid white;
   max-width: 600px;
 }
 @media only screen and (max-width: 979px) {
@@ -67,6 +69,29 @@
     padding-left: 0;
     margin: 20px 0 0;
   }
+}
+.article-banner-outlet {
+  background-color: #06162a;
+  background-image: -moz-linear-gradient(left, #0d2e56, #06162a);
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#0d2e56), to(#06162a));
+  background-image: -webkit-linear-gradient(left, #0d2e56, #06162a);
+  background-image: -o-linear-gradient(left, #0d2e56, #06162a);
+  background-image: linear-gradient(to right, #0d2e56, #06162a);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0d2e56', endColorstr='#ff06162a', GradientType=1);
+}
+.article-banner-outlet .banner-logo {
+  margin-left: 20px;
+}
+.article-banner-outlet .banner-branding-block {
+  float: right;
+  padding: 0 30px;
+  border-left: 3px solid white;
+}
+.article-banner-outlet .banner-branding-block .banner-branding-title {
+  line-height: 3.1;
+  font-weight: normal;
+  color: white;
 }
 .headline.article-headline {
   font-size: 52px;

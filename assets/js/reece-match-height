@@ -1,0 +1,22 @@
+//Dynamically load images by swapping out the blank.gif in an images tag with the data-src
+window.ImageLoader = window.ImageLoader || (function(doc, $) {
+
+    "use strict";
+
+    var imgsSelector = '[data-src]',
+        images, $this;
+
+    return function($el){
+        
+        images = $el.find($(imgsSelector));
+        $.each(images, function(i, el) {
+            $this = $(this);
+            $this.attr("src", $this.data("src"));
+        });
+
+        return {
+            el: $el
+        };
+    };
+
+}(document, jQuery));

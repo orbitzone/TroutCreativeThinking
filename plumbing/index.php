@@ -72,26 +72,26 @@
 			        <a class="carousel-control right bottom" href="#article-carousel" data-slide="next">›</a>
 			    </div>
 
-				<div class="article-gateway row-fluid">
-					<article class="article span3">
+				<div data-resize-group="gateway" class="article-gateway row-fluid">
+					<article data-resize="height" class="article span3">
 						<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
 						<h3>Hot water decisions guide</h3>
 						<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 					</article>
 
-					<article class="article span3">
+					<article data-resize="height" class="article span3">
 						<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
     					<h3>Rothenberger World Series Competition</h3>
 						<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 					</article>
 
-					<article class="article span3">
+					<article data-resize="height" class="article span3">
 						<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
 	    				<h3>Reece Footy Tipping Competition</h3>
 						<a class="read-more page-branding text-brand" href="#">Log in to your footy tipping<i class="icon-arrow-right"></i></a>
 					</article>	
 
-					<article class="article span3">
+					<article data-resize="height" class="article span3">
 						<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
     					<h3>Discover Thermann Hot Water Units</h3>
 						<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
@@ -192,7 +192,8 @@
 			"/assets/js/bootstrap-transition.js",
 			"/assets/js/jquery.mobile.custom.min.js",
 			"/assets/js/reece-ocnav.js",
-			"/assets/js/reece-carousel.js"
+			"/assets/js/reece-carousel.js",
+			"/assets/js/reece-match-height.js"
 		]; 
 	   	include_once($serverBase."/includes/foot/scripts.php");
 	?>

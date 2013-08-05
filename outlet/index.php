@@ -24,31 +24,19 @@
 	    <div class="content-container">
 			<div class="inner-wrapper">
 
-				<div class="article-banner row-fluid">
-					<div class="span6">
-						<h2 class="article-banner-title">Outlet</h2>
-						<h3>The Official Reece Customer Update</h3>
-					</div>
-					<div class="span6">
-						<h3>What are you intrested in?</h3>
-
-						<ul class="trade-navigation nav nav-tabs pull-right">
-							<li class="active"><a href="#">All Stories</a></li>
-							<li class="plumbing"><a href="#">Plumbing</a></li>
-							<li class="irrigation"><a href="#">Irrigation</a></li>
-							<li class="civil"><a href="#">Civil</a></li>
-							<li class="hvacr"><a href="#">HVAC-R</a></li>
-						</ul>
-
+				<div class="article-banner-outlet row-fluid">
+					<img class="banner-logo" src="/assets/images/outlet_2013/outlet-banner-logo.png" alt="Outlet">
+					<div class="banner-branding-block page-branding box-brand">
+						<h3 class="banner-branding-title">Plumbing</h3>
 					</div>
 				</div>
 
 				<hr>
 
+				<h3>Latest News</h3>
+
 				<div class="row-fluid">
 				    <article class="latest-news span6">
-						<h2>Latest News</h2>
-
 				    	<img src="/assets/images/trade_2013/trade_article_sample.jpg" alt="Trade sample" />
     					<h3>Reece Tool Catalogue</h3>
     					<hr>

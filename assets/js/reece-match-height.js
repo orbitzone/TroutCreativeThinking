@@ -35,7 +35,7 @@
 
 //     });
 
-    $(window).on("load resize", function() {
+    $(window).on("load", function() {
         //Todo: Create a better data-api plugin for this
         var maxHeight = 0;
 
@@ -44,7 +44,6 @@
                 if ($(this).innerHeight() > maxHeight) maxHeight = $(this).innerHeight();
             });
             $(this).find('[data-resize="height"]').css('min-height', maxHeight+'px');
-            //console.log($(this));
         });  
     });  
 

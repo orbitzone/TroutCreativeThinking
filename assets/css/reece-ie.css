@@ -49,7 +49,22 @@
   padding: 0 0 10px 0;
 }
 .lt-ie8 .article-gateway .article h3,
-.lt-ie8 .article-gateway .article .read-more {
+.lt-ie8 .article-gateway .article p,
+.lt-ie8 .article-gateway .article .read-more,
+.lt-ie8 .article-gateway .article .btn {
   padding-left: 10px;
   padding-right: 10px;
+}
+.lt-ie8 .article-gateway .article .btn,
+.lt-ie8 .article-gateway .article .read-more {
+  position: relative;
+  left: 5px;
+}
+.lt-ie8 .trade-navigation ul {
+  display: block;
+  width: 70%;
+}
+.lt-ie8 .trade-navigation li {
+  float: left;
+  width: 20%;
 }

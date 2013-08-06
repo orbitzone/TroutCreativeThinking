@@ -29,6 +29,7 @@
 						<h3 class="banner-branding-title">plumbing</h3>
 					</div>
 					<p class="article-banner-description">Thousands of plumbers turn to Reece because of our reputation for “having what you need, when you need <br>it, where you need it.” It's all about delivering the best service possible. A commitment we live by every day.</p>
+					<p class="article-banner-description-trimmed">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				</div>
 
 				<div id="article-carousel" data-bs-carousel="carousel" data-bs-carousel-interval="0" class="article-carousel custom-carousel-control carousel slide">
@@ -47,7 +48,7 @@
 										A big part of being a licensed plumber is certifying the quality of work you do. That’s why warranties are so important. Boria de volorio omnis as periae pra que eserepe rumqui officiasit pos dicil explant ommolorem harchicia qui nonsequia plignam sim esequib usaped et veliquam fuga. Ut seria quis dunoptatum sit dollabo. Ut faccus.
 									</p>
 									<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
-								</div>			    		
+								</div>
 							</article>
 					    </div>
 
@@ -112,7 +113,7 @@
 						<article class="article span2">
 							<a class="article-image" href="#"><img src="/assets/images/trade_2013/trade_article_sample_small_04.jpg" alt="Trade Sample Mini" /></a>
 		    				<div class="article-body">
-			    				<small>1 June 2013</small>
+			    				<small class="page-branding text-brand">1 June 2013</small>
 			    				<h3>The peace of mind in having the right connections</h3>
 
 								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
@@ -122,7 +123,7 @@
 						<article class="article span2"> 
 							<a class="article-image" href="#"><img src="/assets/images/trade_2013/trade_article_sample_small_05.jpg" alt="Trade Sample Mini" /></a>
 		    				<div class="article-body">
-			    				<small>1 July 2013</small>
+			    				<small class="page-branding text-brand">1 July 2013</small>
 			    				<h3>Rothenberger World Series Competition</h3>
 								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 							</div>
@@ -131,7 +132,7 @@
 						<article class="article span2">
 							<a class="article-image" href="#"><img src="/assets/images/trade_2013/trade_article_sample_small_06.jpg" alt="Trade Sample Mini" /></a>
 		    				<div class="article-body">
-			    				<small>11 September 2013</small>
+			    				<small class="page-branding text-brand">11 September 2013</small>
 			    				<h3>Where did my warranty go?</h3>
 								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 							</div>
@@ -140,7 +141,7 @@
 						<article class="article span2">
 							<a class="article-image" href="#"><img src="/assets/images/trade_2013/trade_article_sample_small_04.jpg" alt="Trade Sample Mini" /></a>
 		    				<div class="article-body">
-			    				<small>1 June 2013</small>
+			    				<small class="page-branding text-brand">1 June 2013</small>
 			    				<h3>The peace of mind in having the right connections</h3>
 								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 							</div>
@@ -149,7 +150,7 @@
 						<article class="article span2">
 							<a class="article-image" href="#"><img src="/assets/images/trade_2013/trade_article_sample_small_05.jpg" alt="Trade Sample Mini" /></a>
 		    				<div class="article-body">
-			    				<small>1 July 2013</small>
+			    				<small class="page-branding text-brand">1 July 2013</small>
 			    				<h3>Rothenberger World Series Competition</h3>
 								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 							</div>
@@ -158,7 +159,7 @@
 						<article class="article span2">
 							<a class="article-image" href="#"><img src="/assets/images/trade_2013/trade_article_sample_small_06.jpg" alt="Trade Sample Mini" /></a>
 		    				<div class="article-body">
-			    				<small>11 September 2013</small>
+			    				<small class="page-branding text-brand">11 September 2013</small>
 			    				<h3>Where did my warranty go?</h3>
 								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 							</div>

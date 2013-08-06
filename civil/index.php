@@ -29,9 +29,8 @@
 						<h3 class="banner-branding-title">civil</h3>
 					</div>
 					<p class="article-banner-description">We're dedicated to supplying only the best products and service for all underground pipe networks<br> including water mains, gas mains, sewer mains, telecommunications, electrical and fire services.</p>
+					<p class="article-banner-description-trimmed">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				</div>				
-
-				<hr class="page-branding border-brand banner-border">
 
 			    <article class="article-summary-main row-fluid">
 			    	<div class="span8">
@@ -71,7 +70,7 @@
 						<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
     					<h3>Discover Thermann Hot Water Units</h3>
 						<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
-					</article>							
+					</article>
 				</div>	
 				
 			</div>
@@ -86,7 +85,7 @@
 						<article class="article span2">
 							<a class="article-image" href="#"><img src="/assets/images/trade_2013/trade_article_sample_small_04.jpg" alt="Trade Sample Mini" /></a>
 		    				<div class="article-body">
-			    				<small>1 June 2013</small>
+			    				<small class="page-branding text-brand">1 June 2013</small>
 			    				<h3>The peace of mind in having the right connections</h3>
 
 								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
@@ -96,7 +95,7 @@
 						<article class="article span2"> 
 							<a class="article-image" href="#"><img src="/assets/images/trade_2013/trade_article_sample_small_05.jpg" alt="Trade Sample Mini" /></a>
 		    				<div class="article-body">
-			    				<small>1 July 2013</small>
+			    				<small class="page-branding text-brand">1 July 2013</small>
 			    				<h3>Rothenberger World Series Competition</h3>
 								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 							</div>
@@ -105,7 +104,7 @@
 						<article class="article span2">
 							<a class="article-image" href="#"><img src="/assets/images/trade_2013/trade_article_sample_small_06.jpg" alt="Trade Sample Mini" /></a>
 		    				<div class="article-body">
-			    				<small>11 September 2013</small>
+			    				<small class="page-branding text-brand">11 September 2013</small>
 			    				<h3>Where did my warranty go?</h3>
 								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 							</div>
@@ -113,7 +112,7 @@
 						<article class="article span2">
 							<a class="article-image" href="#"><img src="/assets/images/trade_2013/trade_article_sample_small_04.jpg" alt="Trade Sample Mini" /></a>
 		    				<div class="article-body">
-			    				<small>1 June 2013</small>
+			    				<small class="page-branding text-brand">1 June 2013</small>
 			    				<h3>The peace of mind in having the right connections</h3>
 								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 							</div>
@@ -122,7 +121,7 @@
 						<article class="article span2">
 							<a class="article-image" href="#"><img src="/assets/images/trade_2013/trade_article_sample_small_05.jpg" alt="Trade Sample Mini" /></a>
 		    				<div class="article-body">
-			    				<small>1 July 2013</small>
+			    				<small class="page-branding text-brand">1 July 2013</small>
 			    				<h3>Rothenberger World Series Competition</h3>
 								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 							</div>
@@ -131,7 +130,7 @@
 						<article class="article span2">
 							<a class="article-image" href="#"><img src="/assets/images/trade_2013/trade_article_sample_small_06.jpg" alt="Trade Sample Mini" /></a>
 		    				<div class="article-body">
-			    				<small>11 September 2013</small>
+			    				<small class="page-branding text-brand">11 September 2013</small>
 			    				<h3>Where did my warranty go?</h3>
 								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 							</div>

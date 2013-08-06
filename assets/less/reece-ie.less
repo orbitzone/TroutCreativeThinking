@@ -47,8 +47,7 @@
 
 .lt-ie9 {	
 
-	//Fix product pages collapse class
-	#product-filters.collapse, .products-tabs .collapse {
+	#product-filters.collapse, .products-tabs .collapse { //Fix product pages collapse class
 		position: static;
 		height: auto;
 		overflow: visible;
@@ -56,9 +55,7 @@
 }
 
 .lt-ie8 {	
-
-	//No support for 'display: table-cell'
-	.products-tab-nav {
+	.products-tab-nav { //No support for 'display: table-cell'
 		overflow: hidden;
 		zoom: 1;
 
@@ -88,9 +85,25 @@
 	.article-gateway .article { //No box-sizing support
 		padding: 0 0 10px 0;
 
-		h3, .read-more {
+		h3, p, .read-more, .btn {
 			padding-left: 10px;
 			padding-right: 10px;
+		}
+		.btn, .read-more {
+			position: relative;
+			left: 5px;
+		}
+	}
+
+	.trade-navigation { //No support for 'display: table-cell'
+		ul {
+			display: block;
+			width: 70%;
+		}
+
+		li {
+			float: left;
+			width: 20%;
 		}
 	}
 }

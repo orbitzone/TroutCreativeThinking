@@ -521,7 +521,8 @@
 }
 .previous-articles .previous-article-tag {
   display: block;
-  margin: 10px 0 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .previous-articles .accordion-heading.active {
   background-color: #eaeaea;

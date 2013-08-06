@@ -29,6 +29,7 @@
 						<h3 class="banner-branding-title">hvac-r</h3>
 					</div>
 					<p class="article-banner-description">With 36 stores around Australia Reece hvac-r offers dedicated support, stock and <br>expertise including climate solutions, piping, ventilation, refrigeration and heating.</p>
+					<p class="article-banner-description-trimmed">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				</div>
 
 			    <article class="article-summary-main row-fluid">
@@ -84,7 +85,7 @@
 						<article class="article span2">
 							<a class="article-image" href="#"><img src="/assets/images/trade_2013/trade_article_sample_small_04.jpg" alt="Trade Sample Mini" /></a>
 		    				<div class="article-body">
-			    				<small>1 June 2013</small>
+			    				<small class="page-branding text-brand">1 June 2013</small>
 			    				<h3>The peace of mind in having the right connections</h3>
 
 								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
@@ -94,7 +95,7 @@
 						<article class="article span2"> 
 							<a class="article-image" href="#"><img src="/assets/images/trade_2013/trade_article_sample_small_05.jpg" alt="Trade Sample Mini" /></a>
 		    				<div class="article-body">
-			    				<small>1 July 2013</small>
+			    				<small class="page-branding text-brand">1 July 2013</small>
 			    				<h3>Rothenberger World Series Competition</h3>
 								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 							</div>
@@ -103,7 +104,7 @@
 						<article class="article span2">
 							<a class="article-image" href="#"><img src="/assets/images/trade_2013/trade_article_sample_small_06.jpg" alt="Trade Sample Mini" /></a>
 		    				<div class="article-body">
-			    				<small>11 September 2013</small>
+			    				<small class="page-branding text-brand">11 September 2013</small>
 			    				<h3>Where did my warranty go?</h3>
 								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 							</div>
@@ -111,7 +112,7 @@
 						<article class="article span2">
 							<a class="article-image" href="#"><img src="/assets/images/trade_2013/trade_article_sample_small_04.jpg" alt="Trade Sample Mini" /></a>
 		    				<div class="article-body">
-			    				<small>1 June 2013</small>
+			    				<small class="page-branding text-brand">1 June 2013</small>
 			    				<h3>The peace of mind in having the right connections</h3>
 								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 							</div>
@@ -120,7 +121,7 @@
 						<article class="article span2">
 							<a class="article-image" href="#"><img src="/assets/images/trade_2013/trade_article_sample_small_05.jpg" alt="Trade Sample Mini" /></a>
 		    				<div class="article-body">
-			    				<small>1 July 2013</small>
+			    				<small class="page-branding text-brand">1 July 2013</small>
 			    				<h3>Rothenberger World Series Competition</h3>
 								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 							</div>
@@ -129,7 +130,7 @@
 						<article class="article span2">
 							<a class="article-image" href="#"><img src="/assets/images/trade_2013/trade_article_sample_small_06.jpg" alt="Trade Sample Mini" /></a>
 		    				<div class="article-body">
-			    				<small>11 September 2013</small>
+			    				<small class="page-branding text-brand">11 September 2013</small>
 			    				<h3>Where did my warranty go?</h3>
 								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 							</div>

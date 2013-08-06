@@ -36,34 +36,23 @@
 	    <div class="content-container">
 			<div class="inner-wrapper">
 
-				<div class="article-banner row-fluid">
-					<div class="span6">
-						<h2 class="article-banner-title">Outlet</h2>
-						<h3>The Official Reece Customer Update</h3>
+				<div class="article-banner-outlet row-fluid">
+					<img class="banner-logo pull-left" src="/assets/images/outlet_2013/outlet-banner-logo.png" alt="Outlet">
+					<div class="banner-branding-block page-branding box-brand pull-right">
+						<h3 class="banner-branding-title">Plumbing</h3>
 					</div>
-					<div class="span6">
-						<h3>What are you intrested in?</h3>
+				</div>		
 
-						<ul class="trade-navigation nav nav-tabs pull-right">
-							<li class="active"><a href="#">All Stories</a></li>
-							<li class="plumbing"><a href="#">Plumbing</a></li>
-							<li class="irrigation"><a href="#">Irrigation</a></li>
-							<li class="civil"><a href="#">Civil</a></li>
-							<li class="hvacr"><a href="#">HVAC-R</a></li>
-						</ul>
-
-					</div>
-				</div>
-
-				<hr>
+				<ul class="breadcrumb">
+					<li class="active page-branding text-brand">Latest News</li>
+				</ul>
 
 				<div class="row-fluid">
-				    <article class="article-main span8">
-						<h3>Latest News > Article Title</h3>
+				    <article class="article-main span9">
 				    	<img src="/assets/images/trade_2013/trade_article_sample.jpg" alt="Trade sample" />
 				    	<div class="row-fluid">
 				    		<div class="span9">
-						    	<h2 class="headline article-headline">Reece Tool Catalogue</h2>
+						    	<h2 class="article-title">Reece Tool Catalogue</h2>
 						    	<small class="page-branding text-brand">1 June 2013</small>
 								<p class="lead">
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -101,40 +90,53 @@
 
 					</article>
 
-					<aside class="span4">
-						<h3>Recommended Stories</h3>
-						<div class="recommended-stories">
+		    		<aside class="recent-stories span3">
+
+						<div class="article-summary-secondary article-sidebar">
+
+							<h3 class="article-topic-heading">Recommended Stories</h3>
+
 							<article class="article">
-								<a href="#"><img src="http://placehold.it/480x200" alt="Trade Sample Mini" /></a>
-								<small>9 June 2013</small>
-								<h3>Worldskills team 2013 – Meet Alex De Koeyer</h3>
-								<p>
-									The best, brightest young tradies compete for a world title.
-								</p>
-								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
+								<a class="article-image" href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini"></a>
+			    				<div class="article-body">
+				    				<small class="page-branding text-brand">1 June 2013</small>
+				    				<h3>The peace of mind in having the right connections</h3>
+
+									<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
+								</div>
+							</article>
+
+							<article class="article"> 
+								<a class="article-image" href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini"></a>
+			    				<div class="article-body">
+				    				<small class="page-branding text-brand">1 July 2013</small>
+				    				<h3>Rothenberger World Series Competition</h3>
+									<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
+								</div>
 							</article>
 
 							<article class="article">
-								<a href="#"><img src="http://placehold.it/480x200" alt="Trade Sample Mini" /></a>
-		    					<small>20 May 2013</small>
-		    					<h3>Conex launches hot new fitting</h3>
-		    					<p>
-									Conex Bänninger has just added a new fitting to their quality range of products.
-								</p>
-								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
+								<a class="article-image" href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini"></a>
+			    				<div class="article-body">
+				    				<small class="page-branding text-brand">11 September 2013</small>
+				    				<h3>Where did my warranty go?</h3>
+									<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
+								</div>
 							</article>
 
 							<article class="article">
-								<a href="#"><img src="http://placehold.it/480x200" alt="Trade Sample Mini" /></a>
-			    				<small>1 May 2013</small>
-			    				<h3>The peace of mind in having the right connections</h3>
-			    				<p>
-									Conex Bänninger has just added a new fitting to their quality range of products.
-								</p>
-								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
-							</article>	
+								<a class="article-image" href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini"></a>
+			    				<div class="article-body">
+				    				<small class="page-branding text-brand">1 June 2013</small>
+				    				<h3>The peace of mind in having the right connections</h3>
+									<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
+								</div>
+							</article>
+
 						</div>
-					</aside>
+
+		   			</aside>
+
 				</div>	
 
 			</div>

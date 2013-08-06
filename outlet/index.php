@@ -25,11 +25,19 @@
 			<div class="inner-wrapper">
 
 				<div class="article-banner-outlet row-fluid">
-					<img class="banner-logo" src="/assets/images/outlet_2013/outlet-banner-logo.png" alt="Outlet">
-					<div class="banner-branding-block page-branding box-brand pull-right">
-						<h3 class="banner-branding-title">Plumbing</h3>
-					</div>
+					<img class="banner-logo pull-left" src="/assets/images/outlet_2013/outlet-banner-logo.png" alt="Outlet">
 				</div>
+
+				<div class="trade-navigation clearfix">
+					<span class="pull-left nav-guide"><b>What are you interested in?</b></span>
+					<ul class="pull-right">
+						<li><a href="#">All Stories</a></li>
+						<li class="plumbing"><a href="#">Plumbing</a></li>
+						<li class="irrigation"><a href="#">Irrigation</a></li>
+						<li class="civil"><a href="#">Civil</a></li>
+						<li class="hvacr"><a href="#">HVAC-R</a></li>
+					</ul>
+				</div>				
 
 				<ul class="breadcrumb">
 					<li class="active page-branding text-brand">Latest News</li>
@@ -50,7 +58,7 @@
 						<div class="article-summary-secondary row-fluid">
 							<article class="article span4">
 								<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
-								<small>9 June 2013</small>
+								<small class="page-branding text-brand">9 June 2013</small>
 								<h3>Worldskills team 2013 – Meet Alex De Koeyer</h3>
 								<p>
 									The best, brightest young tradies compete for a world title.
@@ -60,7 +68,7 @@
 
 							<article class="article span4">
 								<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
-		    					<small>20 May 2013</small>
+		    					<small class="page-branding text-brand">20 May 2013</small>
 		    					<h3>Conex launches hot new fitting</h3>
 		    					<p>
 									Conex Bänninger has just added a new fitting to their quality range of products.
@@ -70,7 +78,7 @@
 
 							<article class="article span4">
 								<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
-			    				<small>1 May 2013</small>
+			    				<small class="page-branding text-brand">1 May 2013</small>
 			    				<h3>The peace of mind in having the right connections</h3>
 			    				<p>
 									Conex Bänninger has just added a new fitting to their quality range of products.
@@ -78,10 +86,10 @@
 								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 							</article>	
 						</div>
-						<div class="article-summary-secondary row-fluid">
+						<div class="latest-news-list article-summary-secondary row-fluid">
 							<article class="article span4">
 								<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
-								<small>9 June 2013</small>
+								<small class="page-branding text-brand">9 June 2013</small>
 								<h3>Worldskills team 2013 – Meet Alex De Koeyer</h3>
 								<p>
 									The best, brightest young tradies compete for a world title.
@@ -91,7 +99,7 @@
 
 							<article class="article span4">
 								<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
-		    					<small>20 May 2013</small>
+		    					<small class="page-branding text-brand">20 May 2013</small>
 		    					<h3>Conex launches hot new fitting</h3>
 		    					<p>
 									Conex Bänninger has just added a new fitting to their quality range of products.
@@ -101,7 +109,7 @@
 
 							<article class="article span4">
 								<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
-			    				<small>1 May 2013</small>
+			    				<small class="page-branding text-brand">1 May 2013</small>
 			    				<h3>The peace of mind in having the right connections</h3>
 			    				<p>
 									Conex Bänninger has just added a new fitting to their quality range of products.
@@ -123,9 +131,9 @@
 							<h3 class="article-topic-heading">What's Hot</h3>
 							<div class="row-fluid">
 
-								<article class="article span4">
+								<article class="article span6">
 									<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
-									<small>9 June 2013</small>
+									<small class="page-branding text-brand">9 June 2013</small>
 									<h3>Worldskills team 2013 – Meet Alex De Koeyer</h3>
 									<p>
 										The best, brightest young tradies compete for a world title.
@@ -133,9 +141,9 @@
 									<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 								</article>
 
-								<article class="article span4">
+								<article class="article span6">
 									<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
-			    					<small>20 May 2013</small>
+			    					<small class="page-branding text-brand">20 May 2013</small>
 			    					<h3>Conex launches hot new fitting</h3>
 			    					<p>
 										Conex Bänninger has just added a new fitting to their quality range of products.
@@ -143,15 +151,6 @@
 									<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 								</article>
 
-								<article class="article span4">
-									<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
-				    				<small>1 May 2013</small>
-				    				<h3>The peace of mind in having the right connections</h3>
-				    				<p>
-										Conex Bänninger has just added a new fitting to their quality range of products.
-									</p>
-									<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
-								</article>	
 							</div>
 						</div>
 					</div>
@@ -161,9 +160,9 @@
 							<h3 class="article-topic-heading">Industry Focus</h3>
 
 							<div class="row-fluid">
-								<article class="article span4">
+								<article class="article span6">
 									<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
-									<small>9 June 2013</small>
+									<small class="page-branding text-brand">9 June 2013</small>
 									<h3>Worldskills team 2013 – Meet Alex De Koeyer</h3>
 									<p>
 										The best, brightest young tradies compete for a world title.
@@ -171,9 +170,9 @@
 									<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 								</article>
 
-								<article class="article span4">
+								<article class="article span6">
 									<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
-			    					<small>20 May 2013</small>
+			    					<small class="page-branding text-brand"20 May 2013</small>
 			    					<h3>Conex launches hot new fitting</h3>
 			    					<p>
 										Conex Bänninger has just added a new fitting to their quality range of products.
@@ -181,15 +180,6 @@
 									<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 								</article>
 
-								<article class="article span4">
-									<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
-				    				<small>1 May 2013</small>
-				    				<h3>The peace of mind in having the right connections</h3>
-				    				<p>
-										Conex Bänninger has just added a new fitting to their quality range of products.
-									</p>
-									<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
-								</article>	
 							</div>
 
 						</div>
@@ -210,7 +200,7 @@
 
 					<article data-resize="height" class="article span3">
 						<h3>The Crack</h3>
-						<p>A collection of fun stories from the world of plumbing</p>
+						<p>Fun stories from the world of plumbing</p>
 						<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
 						<p>
 							Featured Story:
@@ -220,25 +210,21 @@
 					</article>
 
 					<article data-resize="height" class="article span3">
-						<h3>In the Pipeline</h3>
-						<p>Keeping you up-to-date on a wide range of products.</p>
+						<h3>Price Changes</h3>
+						<p>The latest monthly price changes for 2013</p>
 						<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
 						<p>
-							Featured Product:
-							<span>Raupiano Plus 87° Bends</span>
+							Month:
+							<span>August 2013</span>
 						</p>
-						<a class="btn btn-inverse" href="#">Archive</a>
+						<a class="btn btn-inverse" href="#">Details</a>
 					</article>
 
 					<article data-resize="height" class="article span3">
-						<h3>In the Pipeline</h3>
-						<p>Keeping you up-to-date on a wide range of products.</p>
+						<h3>New Stores</h3>
+						<p>Latest stores added to the reece network.</p>
 						<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
-						<p>
-							Featured Product:
-							<span>Raupiano Plus 87° Bends</span>
-						</p>
-						<a class="btn btn-inverse" href="#">Archive</a>
+						<a class="btn btn-inverse" href="#">Details</a>
 					</article>						
 				</div>					
 

@@ -24,28 +24,27 @@
 	    <div class="content-container">
 			<div class="inner-wrapper">
 
-				<div class="article-banner row-fluid">
-					<div class="span6">
-						<h2 class="article-banner-title">Outlet</h2>
-						<h3>The Official Reece Customer Update</h3>
-					</div>
-					<div class="span6">
-						<h3>What are you intrested in?</h3>
-
-						<ul class="trade-navigation nav nav-tabs pull-right">
-							<li class="active"><a href="#">All Stories</a></li>
-							<li class="plumbing"><a href="#">Plumbing</a></li>
-							<li class="irrigation"><a href="#">Irrigation</a></li>
-							<li class="civil"><a href="#">Civil</a></li>
-							<li class="hvacr"><a href="#">HVAC-R</a></li>
-						</ul>
-
-					</div>
+				<div class="article-banner-outlet row-fluid">
+					<img class="banner-logo pull-left" src="/assets/images/outlet_2013/outlet-banner-logo.png" alt="Outlet">
 				</div>
 
+				<div class="trade-navigation clearfix">
+					<span class="pull-left nav-guide"><b>What are you interested in?</b></span>
+					<ul class="pull-right">
+						<li><a href="#">All Stories</a></li>
+						<li class="plumbing"><a href="#">Plumbing</a></li>
+						<li class="irrigation"><a href="#">Irrigation</a></li>
+						<li class="civil"><a href="#">Civil</a></li>
+						<li class="hvacr"><a href="#">HVAC-R</a></li>
+					</ul>
+				</div>	
+
+				<ul class="breadcrumb">
+					<li><a href="#">Outlet</a> <span class="divider">/</span></li>
+					<li class="active page-branding text-brand">Previous Issues</li>
+				</ul>
+
 				<hr>
-				
-				<h3>Outlet > Previous Issues</h3>
 
 				<ul class="unstyled inline">
 					<li><a href="#">2012</a></li>

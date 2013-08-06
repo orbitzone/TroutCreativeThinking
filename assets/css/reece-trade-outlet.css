@@ -515,6 +515,17 @@
     margin-left: 1.21%;
   }
 }
+.previous-articles .previous-article {
+  margin: 10px 0;
+  text-align: center;
+}
+.previous-articles .previous-article-tag {
+  display: block;
+  margin: 10px 0 0;
+}
+.previous-articles .accordion-heading.active {
+  background-color: #eaeaea;
+}
 .recent-stories {
   overflow: hidden;
   background-color: #e5e5e5;

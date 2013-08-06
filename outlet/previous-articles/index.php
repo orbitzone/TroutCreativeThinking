@@ -44,97 +44,142 @@
 					<li class="active page-branding text-brand">Previous Issues</li>
 				</ul>
 
-				<hr>
-
-				<ul class="unstyled inline">
-					<li><a href="#">2012</a></li>
-					<li><a href="#">2011</a></li>
-					<li><a href="#">2010</a></li>
-					<li><a href="#">2009</a></li>
-					<li><a href="#">2008</a></li>
-					<li><a href="#">2007</a></li>
-					<li><a href="#">2006</a></li>
-					<li><a href="#">2005</a></li>
-					<li><a href="#">2004</a></li>
-					<li><a href="#">2003</a></li>
-					<li><a href="#">2002</a></li>
-					<li><a href="#">2001</a></li>
-					<li><a href="#">2000</a></li>
-					<li><a href="#">1999</a></li>
-				</ul>					
-
-				<hr>
-
-				<div class="article-list">
-					<div class="article-list-row">
-						<div class="article-summary-secondary row-fluid">
-							<article class="article span4">
-								<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
-								<small>9 June 2013</small>
-								<h3>Worldskills team 2013 – Meet Alex De Koeyer</h3>
-								<p>
-									The best, brightest young tradies compete for a world title.
-								</p>
-								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
-							</article>
-
-							<article class="article span4">
-								<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
-		    					<small>20 May 2013</small>
-		    					<h3>Conex launches hot new fitting</h3>
-		    					<p>
-									Conex Bänninger has just added a new fitting to their quality range of products.
-								</p>
-								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
-							</article>
-
-							<article class="article span4">
-								<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
-			    				<small>1 May 2013</small>
-			    				<h3>The peace of mind in having the right connections</h3>
-			    				<p>
-									Conex Bänninger has just added a new fitting to their quality range of products.
-								</p>
-								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
-							</article>	
-
+				<div class="previous-articles accordion" id="previous-articles-accordion">
+					<div class="accordion-group">
+						<div class="active accordion-heading">
+							<a class="accordion-toggle" data-toggle="collapse" data-parent="#previous-articles-accordion" href="#previous-articles-one">
+							2012
+							</a>
 						</div>
-						<div class="article-summary-secondary row-fluid">
-
-							<article class="article span4">
-								<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
-			    				<small>1 May 2013</small>
-			    				<h3>The peace of mind in having the right connections</h3>
-			    				<p>
-									Conex Bänninger has just added a new fitting to their quality range of products.
-								</p>
-								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
-							</article>	
-
-							<article class="article span4">
-								<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
-			    				<small>1 May 2013</small>
-			    				<h3>The peace of mind in having the right connections</h3>
-			    				<p>
-									Conex Bänninger has just added a new fitting to their quality range of products.
-								</p>
-								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
-							</article>		
-							
-							<article class="article span4">
-								<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
-			    				<small>1 May 2013</small>
-			    				<h3>The peace of mind in having the right connections</h3>
-			    				<p>
-									Conex Bänninger has just added a new fitting to their quality range of products.
-								</p>
-								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
-							</article>		
-
+						<div id="previous-articles-one" class="accordion-body collapse in">
+							<div class="accordion-inner">
+								<div class="row-fluid">
+									<div class="previous-article span2">
+										<img src="/assets/images/outlet_2013/outlet-previous-article.jpg" alt="Outlet Article">
+										<span class="previous-article-tag">Jan 2012</span>
+									</div>
+									<div class="previous-article span2">
+										<img src="/assets/images/outlet_2013/outlet-previous-article.jpg" alt="Outlet Article">
+										<span class="previous-article-tag">Feb 2012</span>
+									</div>		
+									<div class="previous-article span2">
+										<img src="/assets/images/outlet_2013/outlet-previous-article.jpg" alt="Outlet Article">
+										<span class="previous-article-tag">March 2012</span>
+									</div>	
+									<div class="previous-article span2">
+										<img src="/assets/images/outlet_2013/outlet-previous-article.jpg" alt="Outlet Article">
+										<span class="previous-article-tag">Apr 2012</span>
+									</div>
+									<div class="previous-article span2">
+										<img src="/assets/images/outlet_2013/outlet-previous-article.jpg" alt="Outlet Article">
+										<span class="previous-article-tag">May 2012</span>
+									</div>
+									<div class="previous-article span2">
+										<img src="/assets/images/outlet_2013/outlet-previous-article.jpg" alt="Outlet Article">
+										<span class="previous-article-tag">June 2012</span>
+									</div>
+								</div>
+								<div class="row-fluid">
+									<div class="previous-article span2">
+										<img src="/assets/images/outlet_2013/outlet-previous-article.jpg" alt="Outlet Article">
+										<span class="previous-article-tag">July 2012</span>
+									</div>
+									<div class="previous-article span2">
+										<img src="/assets/images/outlet_2013/outlet-previous-article.jpg" alt="Outlet Article">
+										<span class="previous-article-tag">Aug 2012</span>
+									</div>		
+									<div class="previous-article span2">
+										<img src="/assets/images/outlet_2013/outlet-previous-article.jpg" alt="Outlet Article">
+										<span class="previous-article-tag">Sep 2012</span>
+									</div>	
+									<div class="previous-article span2">
+										<img src="/assets/images/outlet_2013/outlet-previous-article.jpg" alt="Outlet Article">
+										<span class="previous-article-tag">Oct 2012</span>
+									</div>
+									<div class="previous-article span2">
+										<img src="/assets/images/outlet_2013/outlet-previous-article.jpg" alt="Outlet Article">
+										<span class="previous-article-tag">Nov 2012</span>
+									</div>	
+									<div class="previous-article span2">
+										<img src="/assets/images/outlet_2013/outlet-previous-article.jpg" alt="Outlet Article">
+										<span class="previous-article-tag">Dec 2012</span>
+									</div>										
+								</div>								
+							</div>
 						</div>
 					</div>
-
-				</div>		
+					<div class="accordion-group">
+						<div class="accordion-heading">
+							<a class="accordion-toggle" data-toggle="collapse" data-parent="#previous-articles-accordion" href="#previous-articles-two">
+							2011
+							</a>
+						</div>
+						<div id="previous-articles-two" class="accordion-body collapse">
+							<div class="accordion-inner">
+								<div class="row-fluid">
+									<div class="previous-article span2">
+										<img src="/assets/images/outlet_2013/outlet-previous-article.jpg" alt="Outlet Article">
+										<span class="previous-article-tag">July 2011</span>
+									</div>
+									<div class="previous-article span2">
+										<img src="/assets/images/outlet_2013/outlet-previous-article.jpg" alt="Outlet Article">
+										<span class="previous-article-tag">Aug 2011</span>
+									</div>									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-group">
+						<div class="accordion-heading">
+							<a class="accordion-toggle" data-toggle="collapse" data-parent="#previous-articles-accordion" href="#previous-articles-three">
+							2010
+							</a>
+						</div>
+						<div id="previous-articles-three" class="accordion-body collapse">
+							<div class="accordion-inner">
+								<div class="row-fluid">
+									<div class="previous-article span2">
+										<img src="/assets/images/outlet_2013/outlet-previous-article.jpg" alt="Outlet Article">
+										<span class="previous-article-tag">July 2010</span>
+									</div>
+									<div class="previous-article span2">
+										<img src="/assets/images/outlet_2013/outlet-previous-article.jpg" alt="Outlet Article">
+										<span class="previous-article-tag">Aug 2010</span>
+									</div>									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-group">
+						<div class="accordion-heading">
+							<a class="accordion-toggle" data-toggle="collapse" data-parent="#previous-articles-accordion" href="#previous-articles-four">
+							2009
+							</a>
+						</div>
+						<div id="previous-articles-four" class="accordion-body collapse">
+							<div class="accordion-inner">
+								<div class="row-fluid">
+									<div class="previous-article span2">
+										<img src="/assets/images/outlet_2013/outlet-previous-article.jpg" alt="Outlet Article">
+										<span class="previous-article-tag">July 2009</span>
+									</div>
+									<div class="previous-article span2">
+										<img src="/assets/images/outlet_2013/outlet-previous-article.jpg" alt="Outlet Article">
+										<span class="previous-article-tag">Aug 2009</span>
+									</div>
+									<div class="previous-article span2">
+										<img src="/assets/images/outlet_2013/outlet-previous-article.jpg" alt="Outlet Article">
+										<span class="previous-article-tag">Aug 2009</span>
+									</div>		
+									<div class="previous-article span2">
+										<img src="/assets/images/outlet_2013/outlet-previous-article.jpg" alt="Outlet Article">
+										<span class="previous-article-tag">Aug 2009</span>
+									</div>																											
+								</div>
+							</div>
+						</div>
+					</div>											
+				</div>
 				
 			</div>
 	    </div>								
@@ -161,6 +206,7 @@
 			"/assets/js/bootstrap-transition.js",
 			"/assets/js/jquery.mobile.custom.min.js",
 			"/assets/js/reece-ocnav.js",
+			"/assets/js/reece-collapse.js"
 
 		]; 
 	   	include_once($serverBase."/includes/foot/scripts.php");

@@ -81,7 +81,33 @@
 							</div>
 							<ul class="article-actions span3">
 								<li><a href="javascript:window.print()" class="btn btn-large btn-block"><i class="icon-print"></i> Print</a></li>
-								<li><a href="#" type="button" class="btn btn-large btn-block"><i class="icon-share-sign"></i> Share</a></li>
+
+
+
+
+								<li>
+									<!-- <a href="#" type="button" data-toggle="dropdown" class="btn btn-large btn-block"><i class="icon-share-sign"></i> Share</a> -->
+									<div class="btn-group btn-block">
+									    <a class="btn btn-large btn-block" data-toggle="dropdown" href="/bathrooms/happy-tips/avoid-the-headbutt#">
+									        <i class="icon-share-alt"></i> Share
+									        <span class="caret"></span>
+									    </a>
+									    <!-- <div class="btn-group"> -->
+									    <ul class="dropdown-menu">
+									        <li><a href="http://www.facebook.com/share.php?u=http://www.reece.com.au/bathrooms/happy-tips/avoid-the-headbutt" onclick="return fbs_click()" title="Facebook" rel="nofollow"><i class="icon-facebook icon-large"></i> Facebook</a></li>
+									        <li><a href="https://twitter.com/intent/tweet?url=http://www.reece.com.au/bathrooms/happy-tips/avoid-the-headbutt" title="Twitter" data-count="none"><i class="icon-twitter icon-large"></i> Twitter</a></li>
+									        <li><a href="/bathrooms/happy-tips/avoid-the-headbutt#" class="pinterest"><i class="icon-pinterest icon-large"></i> Pinterest</a></li>
+									    </ul>    
+									</div>
+								</li>
+
+
+
+
+
+
+
+
 								<li><a href="#" class="label">Plumbing</a><a href="#" class="label">Catalogue</a><a href="#" class="label">Tool</a><a href="#" class="label">Media</a><a href="#" class="label">Tag Six</a><a href="#" class="label">Tag Five</a></li>
 							</ul>
 						</div>

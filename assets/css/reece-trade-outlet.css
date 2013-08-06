@@ -525,7 +525,10 @@
   margin: 10px 0 0;
 }
 .previous-articles .accordion-heading.active {
-  background-color: #eaeaea;
+  background-color: #beb6ac;
+}
+.previous-articles .accordion-heading.active a {
+  color: white;
 }
 .recent-stories {
   overflow: hidden;

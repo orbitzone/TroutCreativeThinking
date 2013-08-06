@@ -161,7 +161,7 @@
 		.transition-duration(0.5s);		
 		color: white;
 		.border-radius(0);
-		background-color: @articleHighlightBackground;
+		background-color: @warmHighlightBackground;
 	}
 
 	.nav-guide {
@@ -443,7 +443,7 @@
 	.article {
 		position: relative;
 		padding: 10px 10px 40px 10px; //Give the buttons at the bottom of each box some space
-		background-color: @articleHighlightBackground;
+		background-color: @warmHighlightBackground;
 	}
 
 	img, h3, p, .read-more, .btn {
@@ -552,10 +552,14 @@
 	.previous-article-tag {
 		display: block;
 		margin: 10px 0 0;
-	}	
+	}
 
 	.accordion-heading.active {
-		background-color: @lightBackground;
+		background-color: @warmHighlightBackground;
+		
+		a {
+			color: white;
+		}
 	}
 }
 

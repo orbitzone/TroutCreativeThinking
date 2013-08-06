@@ -8,20 +8,20 @@ The javascript has been split into modules that you can include in a page if you
 we can move to something a little more powerful in the future such as backbone and require.js but implementing this would
 be a bit of work on both ends so I think we'll have to hold off for a bit.
 
-I've left all of the javascript and unminified and in seperate files in case you would like to change something. I would 
-suggest that the javascript and css should be minified and concatenated into single files on production.
+I've left all of the javascript unminified and in seperate files in case you would like to change something. I would 
+suggest that the javascript and css should be minified and concatenated into single files for production.
 
 
-Most of the javascript plugins for reece contain small data apis to help with event binding a to help bootstrap 
+Most of the javascript plugins for reece contain small data apis to help with event binding and to help bootstrap 
 bootstrap. Below are some examples of how to use them. 
 
 Usually bootstrap plugins requires that carousels be explicitly instantiated with something like:
 
     $('.carousel').carousel();
 
-A simple data-api has been added to allow you to bootstrap components directly. This api can be used like the following:
+A simple data-api has been added to allow you to bootstrap components directly within the markup. This api can be used like the following:
 
-    <div id="article-carousel" data-bs-carousel="carousel" data-bs-carousel-interval="0" class="article-carousel custom-carousel-control carousel slide">
+    <div id="article-carousel" data-bs-carousel="carousel" data-bs-carousel-interval="0" class="carousel slide">
         ...
     </div>
 

@@ -30,7 +30,6 @@
 						<img src="/assets/images/outlet_2013/outlet-previous-article.jpg" alt="Outlet Article">
 						<span class="banner-news-alert-title"><b>Latest issue</b></span>
 						<span class="banner-news-alert-title">#138 Aug 2013</span>
-						
 						<a class="btn btn-highlight btn-mini" href="#">Download PDF</a>
 						<a class="btn btn-highlight btn-mini" href="#">Previous issues</a>
 					</div>

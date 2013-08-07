@@ -48,6 +48,7 @@
 .article-banner .banner-news-alert-block,
 .article-banner-trade .banner-news-alert-block,
 .article-banner-outlet .banner-news-alert-block {
+  max-width: 185px;
   padding: 10px;
   text-transform: uppercase;
   color: white;
@@ -74,6 +75,7 @@
   .article-banner-trade .banner-news-alert-block,
   .article-banner-outlet .banner-news-alert-block {
     float: none;
+    max-width: none;
     text-align: center;
     background: white;
     color: black;

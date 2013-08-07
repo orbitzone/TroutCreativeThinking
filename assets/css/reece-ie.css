@@ -60,11 +60,6 @@
   position: relative;
   left: 5px;
 }
-.lt-ie8 .trade-navigation ul {
-  display: block;
-  width: 70%;
-}
 .lt-ie8 .trade-navigation li {
   float: left;
-  width: 20%;
 }

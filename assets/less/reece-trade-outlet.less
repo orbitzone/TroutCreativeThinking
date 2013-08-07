@@ -28,6 +28,7 @@
 	}
 
 	.banner-news-alert-block {
+		max-width: 185px; //Fix IE9 inline-block rendering issue
 		padding: 10px;
 		text-transform: uppercase;
 		color: white;
@@ -48,6 +49,7 @@
 	
 		@media only screen and (max-width : 979px) {
 			float: none;
+			max-width: none;
 			text-align: center;
 			background: white;
 			color: black;

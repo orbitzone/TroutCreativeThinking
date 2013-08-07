@@ -32,8 +32,9 @@
 				</div>		
 
 				<ul class="breadcrumb">
-					<li class="active page-branding text-brand">Latest News</li>
-				</ul>			
+					<li><a href="#">Outlet</a> <span class="divider">/</span></li>
+					<li class="active page-branding text-brand">Civil</li>
+				</ul>	
 
 				<div class="row-fluid">
 				    <article class="latest-news span6">

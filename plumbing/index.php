@@ -32,48 +32,48 @@
 					<p class="article-banner-description-trimmed">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				</div>
 
-				<div id="article-carousel" data-bs-carousel="carousel" data-bs-carousel-interval="0" class="article-carousel custom-carousel-control carousel slide">
-			        <div class="carousel-inner">
-			            
-					    <div class="active item">
-						    <article class="article-summary-main row-fluid">
-						    	<div class="span8">
-						    		<img src="/assets/images/trade_2013/trade_article_sample.jpg" alt="Trade sample" />
-						    	</div>
-						    	<div class="span4">
-			    					<h3 class="headline article-headline">The smart way to keep your business moving</h3>
-			    					<hr>
-			    					<small class="page-branding text-brand">1 June 2013</small>
-			    					<p>
-										A big part of being a licensed plumber is certifying the quality of work you do. That’s why warranties are so important. Boria de volorio omnis as periae pra que eserepe rumqui officiasit pos dicil explant ommolorem harchicia qui nonsequia plignam sim esequib usaped et veliquam fuga. Ut seria quis dunoptatum sit dollabo. Ut faccus.
-									</p>
-									<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
-								</div>
-							</article>
-					    </div>
-
-					    <div class="item">
-						    <article class="article-summary-main row-fluid">
-						    	<div class="span8">
-						    		<img src="/assets/images/trade_2013/trade_article_sample.jpg" alt="Trade sample" />
-						    	</div>
-						    	<div class="span4">
-			    					<h3 class="headline article-headline">The smart way to keep your business moving</h3>
-			    					<hr>
-			    					<small class="page-branding text-brand">1 June 2013</small>
-			    					<p>
-										A big part of being a licensed plumber is certifying the quality of work you do. That’s why warranties are so important. Boria de volorio omnis as periae pra que eserepe rumqui officiasit pos dicil explant ommolorem harchicia qui nonsequia plignam sim esequib usaped et veliquam fuga. Ut seria quis dunoptatum sit dollabo. Ut faccus.
-									</p>
-									<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
-								</div>			    		
-							</article>
-					    </div>
-			            
-			        </div>
-			        <!-- Carousel nav -->
-			        <a class="carousel-control left bottom" href="#article-carousel" data-slide="prev">‹</a>
-			        <a class="carousel-control right bottom" href="#article-carousel" data-slide="next">›</a>
+			    <div class="active item">
+				    <article class="article-summary-main row-fluid">
+				    	<div class="span8">
+				    		<img src="/assets/images/trade_2013/trade_article_sample.jpg" alt="Trade sample" />
+				    	</div>
+				    	<div class="span4">
+	    					<h3 class="headline article-headline">The smart way to keep your business moving</h3>
+	    					<hr>
+	    					<small class="page-branding text-brand">1 June 2013</small>
+	    					<p>
+								A big part of being a licensed plumber is certifying the quality of work you do. That’s why warranties are so important. Boria de volorio omnis as periae pra que eserepe rumqui officiasit pos dicil explant ommolorem harchicia qui nonsequia plignam sim esequib usaped et veliquam fuga. Ut seria quis dunoptatum sit dollabo. Ut faccus.
+							</p>
+							<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
+						</div>
+					</article>
 			    </div>
+
+				<div class="article-summary-secondary">
+					<div class="row-fluid">
+
+						<article class="article span6">
+							<a href="#"><img src="http://placehold.it/566x250" alt="Trade Sample Mini" /></a>
+							<small class="page-branding text-brand">9 June 2013</small>
+							<h3>Worldskills team 2013 – Meet Alex De Koeyer</h3>
+							<p>
+								The best, brightest young tradies compete for a world title.
+							</p>
+							<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
+						</article>
+
+						<article class="article span6">
+							<a href="#"><img src="http://placehold.it/566x250" alt="Trade Sample Mini" /></a>
+	    					<small class="page-branding text-brand">20 May 2013</small>
+	    					<h3>Conex launches hot new fitting</h3>
+	    					<p>
+								Conex Bänninger has just added a new fitting to their quality range of products.
+							</p>
+							<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
+						</article>
+
+					</div>
+				</div>		    
 
 				<div data-resize-group="gateway" class="article-gateway row-fluid">
 					<article data-resize="height" class="article span3">

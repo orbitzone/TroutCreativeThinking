@@ -123,12 +123,10 @@
 						<div data-resize="height" class="article-summary-list">
 							<h3 class="article-topic-heading">What's Hot</h3>
 							<ul class="nav">
-								<li><i class="icon-arrow-right"></i><h3><a href="#">Worldskills team 2013 - Meet Alex De Koeyer.</a></h3></li>
-								<li><i class="icon-arrow-right"></i><h3><a href="#">Conex launches hot new fitting.</a></h3></li>
-								<li><i class="icon-arrow-right"></i><h3><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h3></li>
-								<li><i class="icon-arrow-right"></i><h3><a href="#">Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</a></h3></li>
-								<li><i class="icon-arrow-right"></i><h3><a href="#">Et dolore magna aliqua. Ut enim ad minim veniam, quis.</a></h3></li>
-								<li><i class="icon-arrow-right"></i><h3><a href="#">Ut labore et dolore magna aliqua. Ut enim ad.</a></h3></li>
+								<li><h3><a href="#">Worldskills team 2013 - Meet Alex De Koeyer. <i class="icon-arrow-right"></i></a></h3></li>
+								<li><h3><a href="#">Conex launches hot new fitting. <i class="icon-arrow-right"></i></a></h3></li>
+								<li><h3><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <i class="icon-arrow-right"></i></a></h3></li>
+								<li><h3><a href="#">Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis. <i class="icon-arrow-right"></i></a></h3></li>
 							</ul>
 						</div>
 					</div>

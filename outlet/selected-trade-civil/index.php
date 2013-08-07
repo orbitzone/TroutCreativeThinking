@@ -164,7 +164,7 @@
 
 								<article class="article span6">
 									<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
-			    					<small class="page-branding text-brand"20 May 2013</small>
+			    					<small class="page-branding text-brand">20 May 2013</small>
 			    					<h3>Conex launches hot new fitting</h3>
 			    					<p>
 										Conex Bänninger has just added a new fitting to their quality range of products.
@@ -180,7 +180,7 @@
 
 				<div data-resize-group="gateway" class="article-gateway row-fluid">
 					<article data-resize="height" class="article span3">
-						<h3>In the Pipeline</h3>
+						<h3>In The Pipeline</h3>
 						<p>Keeping you up-to-date on a wide range of products.</p>
 						<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
 						<p>

@@ -7,20 +7,52 @@
 @import "reece-variables.less";
 @import "reece-mixins.less";
 
-// Gas Track Logo
+// Headline
 //====================================================================================================================================
 //====================================================================================================================================
 
-.gas-track-logo {
-	background: url("@{baseImagePath}/products_2013/products-plumbing-sale-iconx1.png") no-repeat 0 0;
-	.image-2x("@{baseImagePath}/products_2013/products-plumbing-sale-iconx2.png", 41px, 40px);
+.headline {
+	color: lighten(black, 60%);
+
+	&.tagline {
+		font-size: 25px;
+		text-transform: uppercase;
+	}
 }
 
-// Products Lead Module
+// Gas Track Navigation
 //====================================================================================================================================
 //====================================================================================================================================
 
-.product-lead {
-	margin: 20px 0 0;
-	font-size: 18px;
+.gas-track-navigation {
+
+	> li > a {
+		padding: 15px;
+		.border-radius(0);
+		background-color: lighten(@warmHighlightBackground, 25%);
+		color: black;
+
+		&:hover {
+			background-color: @warmHighlightBackground;
+		}
+	}
+}
+
+// Gas Track Content
+//====================================================================================================================================
+//====================================================================================================================================
+
+.gas-track-content {
+	.headline {
+		margin-top: 0;
+	}
+}
+
+// Custom Button Module
+//====================================================================================================================================
+//====================================================================================================================================
+
+.btn-highlight {
+	.buttonBackground(@warmHighlightBackground, @warmHighlightBackground);
+	.border-radius(0);
 }

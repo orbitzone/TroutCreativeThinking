@@ -440,6 +440,7 @@
 .article-gateway .article {
   position: relative;
   padding: 10px 10px 40px 10px;
+  color: #003767;
   background-color: #beb6ac;
 }
 .article-gateway img,

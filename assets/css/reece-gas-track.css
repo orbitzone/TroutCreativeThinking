@@ -25,19 +25,59 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.gas-track-logo {
-  background: url("../images/products_2013/products-plumbing-sale-iconx1.png") no-repeat 0 0;
+.headline {
+  color: #999999;
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 13/10), only screen and (min-resolution: 120dpi) {
-  .gas-track-logo {
-    background-image: url("../images/products_2013/products-plumbing-sale-iconx2.png");
-    -webkit-background-size: 41px 40px;
-    -moz-background-size: 41px 40px;
-    -o-background-size: 41px 40px;
-    background-size: 41px 40px;
-  }
+.headline.tagline {
+  font-size: 25px;
+  text-transform: uppercase;
 }
-.product-lead {
-  margin: 20px 0 0;
-  font-size: 18px;
+.gas-track-navigation > li > a {
+  padding: 15px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background-color: #f6f5f4;
+  color: black;
+}
+.gas-track-navigation > li > a:hover {
+  background-color: #beb6ac;
+}
+.gas-track-content .headline {
+  margin-top: 0;
+}
+.btn-highlight {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #beb6ac;
+  background-image: -moz-linear-gradient(top, #beb6ac, #beb6ac);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#beb6ac), to(#beb6ac));
+  background-image: -webkit-linear-gradient(top, #beb6ac, #beb6ac);
+  background-image: -o-linear-gradient(top, #beb6ac, #beb6ac);
+  background-image: linear-gradient(to bottom, #beb6ac, #beb6ac);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffbeb6ac', endColorstr='#ffbeb6ac', GradientType=0);
+  border-color: #beb6ac #beb6ac #9c9081;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #beb6ac;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.btn-highlight:hover,
+.btn-highlight:focus,
+.btn-highlight:active,
+.btn-highlight.active,
+.btn-highlight.disabled,
+.btn-highlight[disabled] {
+  color: #ffffff;
+  background-color: #beb6ac;
+  *background-color: #b3a99e;
+}
+.btn-highlight:active,
+.btn-highlight.active {
+  background-color: #a89d8f \9;
 }

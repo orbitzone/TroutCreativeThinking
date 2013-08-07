@@ -38,6 +38,7 @@
 
 		.btn {
 			margin-top: 5px;
+			min-width: 97px; //Make sure both boxes are the same width
 		}
 		
 		img {
@@ -66,12 +67,12 @@
 	}
 
 	.article-banner-description-trimmed { //Art directions solution was to show a trimmed down version of the summary in tablet view
-		display: none;	
+		display: none;
 	}	
 
 	.article-banner-description, .article-banner-description-trimmed {
 		overflow: hidden;
-		margin: 30px 0 0;
+		margin: 35px 0 0;
 		padding: 0 20px;
 		max-width: 700px;
 		color: white;
@@ -421,28 +422,18 @@
 
 .article-summary-list:extend(.article-summary-secondary all) {
 
-	i {
-		float: left;
-		margin-right: 10px;
-	}
-
 	ul {
 		margin-bottom: 0;
 	}
 
 	li {
 		margin-top: 10px;
-		padding-top: 10px;
-		border-top: 1px solid lighten(@reeceGrey, 60%);	
-
-		&:first-child {
-			margin-top: 10px;
-			padding-top: 0;
-			border-top: 0;
-		}
+		padding: 10px;
+		background-color: lighten(@reeceGrey, 60%);
 	}
-	h3 {
-		overflow: hidden;
+
+	a:hover {
+		text-decoration: none;
 	}
 }
 

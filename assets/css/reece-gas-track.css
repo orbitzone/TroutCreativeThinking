@@ -25,14 +25,38 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.headline {
+.headline,
+.gt-content h1,
+.gt-content h2,
+.gt-content h3,
+.gt-content h4,
+.gt-content h5,
+.gt-content h6 {
+  margin-top: 0;
   color: #999999;
 }
-.headline.tagline {
+.headline.tagline,
+.gt-content h1.tagline,
+.gt-content h2.tagline,
+.gt-content h3.tagline,
+.gt-content h4.tagline,
+.gt-content h5.tagline,
+.gt-content h6.tagline {
   font-size: 25px;
   text-transform: uppercase;
 }
-.gas-track-navigation > li > a {
+.lead {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #6cb33f;
+}
+.gt-navigation > li.active > a,
+.gt-navigation > li.active > a:hover,
+.gt-navigation > li > a:hover {
+  color: black;
+  background-color: #beb6ac;
+}
+.gt-navigation > li > a {
   padding: 15px;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -40,11 +64,252 @@
   background-color: #f6f5f4;
   color: black;
 }
-.gas-track-navigation > li > a:hover {
-  background-color: #beb6ac;
+.gt-banner-ig {
+  position: relative;
+  width: 100%;
+  margin: 0 0 20px 0;
 }
-.gas-track-content .headline {
+.gt-banner-ig .gt-ig-caption {
+  position: absolute;
+  left: 3%;
+  bottom: 3%;
+  color: white;
+}
+.gt.ig-sprite,
+.gt-ig-person,
+.gt-ig-store,
+.gt-ig-bottle,
+.gt-ig-scan,
+.gt-ig-screen,
+.gt-ig-truck {
+  position: absolute;
+  background: url("../images/gastrack_2013/gas-track-infographic-spritex1.png") no-repeat 0 0;
+}
+.gt.ig-sprite:hover,
+.gt-ig-person:hover,
+.gt-ig-store:hover,
+.gt-ig-bottle:hover,
+.gt-ig-scan:hover,
+.gt-ig-screen:hover,
+.gt-ig-truck:hover {
+  -webkit-transform: scale(1);
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 500ms;
+}
+.gt-ig-person {
+  left: 10%;
+  top: 8%;
+  width: 38px;
+  height: 96px;
+  background-position: -229px 0;
+}
+.gt-ig-store {
+  left: 27%;
+  top: 7%;
+  width: 117px;
+  height: 98px;
+  background-position: 0 -88px;
+}
+@media (max-width: 769px) {
+  .gt-ig-store {
+    left: 25%;
+  }
+}
+.gt-ig-bottle {
+  left: 50%;
+  top: 8%;
+  width: 77px;
+  height: 110px;
+  background-position: -148px 0;
+}
+.gt-ig-scan {
+  left: 80%;
+  top: 12%;
+  width: 51px;
+  height: 83px;
+  background-position: -145px -114px;
+}
+.gt-ig-screen {
+  left: 80%;
+  top: 55%;
+  width: 102px;
+  height: 90px;
+  background-position: -227px -108px;
+}
+.gt-ig-truck {
+  left: 50%;
+  top: 65%;
+  width: 143px;
+  height: 85px;
+  background-position: 0 0;
+}
+.gt-sidebar .headline,
+.gt-sidebar .gt-content h1,
+.gt-sidebar .gt-content h2,
+.gt-sidebar .gt-content h3,
+.gt-sidebar .gt-content h4,
+.gt-sidebar .gt-content h5,
+.gt-sidebar .gt-content h6 {
+  margin-top: 10px;
+}
+.gt-latest-news .gt-latest-news-block {
+  margin-top: 20px;
+}
+@media (max-width: 979px) {
+  .gt-latest-news .gt-latest-news-block {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+.gt-latest-news .focus-link {
+  display: block;
+}
+.gt-content .gt-product-description,
+.gt-content .r22.gt-product-block,
+.gt-content .r407f.gt-product-block,
+.gt-content .r134a.gt-product-block,
+.gt-content .r410a.gt-product-block,
+.gt-content .r404a.gt-product-block,
+.gt-content .r438a.gt-product-block,
+.gt-content .r407c.gt-product-block,
+.gt-content .r507a.gt-product-block {
+  margin-top: 10px;
+}
+.gt-media-object {
+  margin-bottom: 20px;
+}
+.gt-media-object.pull-left {
+  margin-right: 20px;
+}
+.gt-media-object.pull-right {
+  margin-left: 20px;
+}
+.gt-content-head {
+  margin-bottom: 10px;
+}
+.gt-content-head .headline,
+.gt-content-head .gt-content h1,
+.gt-content-head .gt-content h2,
+.gt-content-head .gt-content h3,
+.gt-content-head .gt-content h4,
+.gt-content-head .gt-content h5,
+.gt-content-head .gt-content h6 {
   margin-top: 0;
+}
+.gt-product-range-list {
+  margin-bottom: 20px;
+}
+.gt-product-range-list .gt-product-range-row {
+  text-align: center;
+}
+@media (min-width: 979px) {
+  .gt-product-range-list .gt-product-range-row {
+    float: left;
+    margin-left: 2.127659574468085%;
+    *margin-left: 2.074468085106383%;
+    width: 48.93617021276595%;
+    *width: 48.88297872340425%;
+  }
+  .gt-product-range-list .gt-product-range-row:first-child {
+    margin-left: 0;
+  }
+}
+@media (max-width: 979px) {
+  .gt-product-range-list .gt-product-range-row + .gt-product-range-row {
+    margin-top: 20px;
+  }
+}
+.gt-product-range-list .carousel a,
+.gt-product-range-list .carousel img {
+  display: block;
+  margin: 0 auto;
+}
+.gt-store-finder-list .gt-store-finder-row {
+  font-size: 12px;
+}
+.gt-store-finder-list .gt-store-finder-row .vcard {
+  margin-bottom: 20px;
+}
+@media (min-width: 979px) {
+  .gt-store-finder-list .gt-store-finder-row {
+    float: left;
+    margin-left: 2.127659574468085%;
+    *margin-left: 2.074468085106383%;
+    width: 48.93617021276595%;
+    *width: 48.88297872340425%;
+  }
+  .gt-store-finder-list .gt-store-finder-row:first-child {
+    margin-left: 0;
+  }
+}
+.gt-store-finder-list .focus-link {
+  display: block;
+}
+#product-range-content .accordion-group {
+  margin-bottom: 0;
+  border: 0;
+}
+.product-range-content dt,
+.product-range-content dd {
+  padding: 5px 0;
+}
+.product-range-content dt {
+  width: auto;
+  text-align: left;
+  border-top: 1px solid #e5e5e5;
+}
+.product-range-content dt:first-child {
+  border-top: 0;
+}
+.product-range-content dd {
+  margin-left: 120px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.product-range-content dd:last-child {
+  border-bottom: 0;
+}
+@media (max-width: 767px) {
+  .product-range-content dd {
+    margin-left: 0;
+  }
+}
+.product-range-content .gt-product-block {
+  margin-bottom: 20px;
+}
+.product-range-content .table td {
+  border-top: 0;
+  background-color: #f6f5f4;
+}
+.product-range-content .table-striped tbody > tr:nth-child(odd) > td {
+  background-color: #beb6ac;
+  font-weight: bold;
+}
+.media-file {
+  display: inline-block;
+}
+.media-file span {
+  display: block;
+}
+.gt-product-description,
+.r22.gt-product-block,
+.r407f.gt-product-block,
+.r134a.gt-product-block,
+.r410a.gt-product-block,
+.r404a.gt-product-block,
+.r438a.gt-product-block,
+.r407c.gt-product-block,
+.r507a.gt-product-block {
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 5px 0;
+}
+.focus-link {
+  text-transform: uppercase;
+  color: #6cb33f;
+}
+.focus-link:hover {
+  color: #558d32;
 }
 .btn-highlight {
   color: #ffffff;
@@ -80,4 +345,100 @@
 .btn-highlight:active,
 .btn-highlight.active {
   background-color: #a89d8f \9;
+}
+.r22.gt-product-block {
+  background: #bae0c9;
+  color: black;
+}
+.r22.gt-product-link {
+  background: #bae0c9;
+  color: black;
+}
+.r22.gt-product-link:hover {
+  color: black;
+  background-color: #ddf0e5;
+}
+.r407f.gt-product-block {
+  background: #dae7a2;
+  color: black;
+}
+.r407f.gt-product-link {
+  background: #dae7a2;
+  color: black;
+}
+.r407f.gt-product-link:hover {
+  color: black;
+  background-color: #eaf1cb;
+}
+.r134a.gt-product-block {
+  background: #addfed;
+  color: black;
+}
+.r134a.gt-product-link {
+  background: #addfed;
+  color: black;
+}
+.r134a.gt-product-link:hover {
+  color: black;
+  background-color: #d7eff6;
+}
+.r410a.gt-product-block {
+  background: #dd9ba5;
+  color: black;
+}
+.r410a.gt-product-link {
+  background: #dd9ba5;
+  color: black;
+}
+.r410a.gt-product-link:hover {
+  color: black;
+  background-color: #eac1c7;
+}
+.r404a.gt-product-block {
+  background: #f68e1e;
+  color: black;
+}
+.r404a.gt-product-link {
+  background: #f68e1e;
+  color: black;
+}
+.r404a.gt-product-link:hover {
+  color: black;
+  background-color: #f8a74f;
+}
+.r438a.gt-product-block {
+  background: #4e84c4;
+  color: black;
+}
+.r438a.gt-product-link {
+  background: #4e84c4;
+  color: black;
+}
+.r438a.gt-product-link:hover {
+  color: black;
+  background-color: #749fd1;
+}
+.r407c.gt-product-block {
+  background: #ce6f18;
+  color: white;
+}
+.r407c.gt-product-link {
+  background: #ce6f18;
+  color: white;
+}
+.r407c.gt-product-link:hover {
+  color: white;
+  background-color: #e78932;
+}
+.r507a.gt-product-block {
+  background: #00b1af;
+  color: white;
+}
+.r507a.gt-product-link {
+  background: #00b1af;
+  color: white;
+}
+.r507a.gt-product-link:hover {
+  color: white;
+  background-color: #00e4e1;
 }

@@ -39,28 +39,7 @@
 						</aside>
 
 						<section class="gt-content span9">
-
-							<figure class="gt-banner-ig hidden-phone">
-								<a data-toggle="tooltip" data-placement="right" href="#" data-original-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore" class="gt-ig-person"></a>
-								<a data-toggle="tooltip" data-placement="bottom" href="#" data-original-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore" class="gt-ig-store"></a>
-								<a data-toggle="tooltip" data-placement="bottom" href="#" data-original-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore" class="gt-ig-bottle"></a>
-								<a data-toggle="tooltip" data-placement="left" href="#" data-original-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore" class="gt-ig-scan"></a>
-								<a data-toggle="tooltip" data-placement="left" href="#" data-original-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore" class="gt-ig-screen"></a>
-								<a data-toggle="tooltip" data-placement="top" href="#" data-original-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore" class="gt-ig-truck"></a>
-								<h2 class="gt-ig-caption">
-									How<br>
-									GasTrack<br>
-									works<br>
-									for you.
-								</h2>								
-								<img src="/assets/images/gastrack_2013/gas-track-infographic-bg.jpg" src="Gas Track Infographic">
-							</figure>
-
-							<figure class="visible-phone">
-								<b>Mobile Link Goes Here</b>
-							</figure>
-
-							<h3 class="headline">GasTrack Range</h3>
+							<h3 class="headline">Project Range</h3>
 							<hr>
 							<div class="gt-product-range-list clearfix">
 
@@ -150,64 +129,116 @@
 
 							</div>	
 
-							<hr>
-
-							<h3 class="headline">Latest GasTrack news</h3>
-
-							<div class="gt-latest-news">
-								<div class="row-fluid">
-									<div class="gt-latest-news-block span6">
-										<div class="media">
-											<a class="pull-left" href="#">
-												<img class="media-object" src="http://placehold.it/150x160" alt="Placeholder">
-											</a>
-											<div class="media-body">
-												<h4 class="media-heading">Latest GasTrack news</h4>
-												<p>Ribus vid quae sunt prorenima dipicab ius. Pariae. Ut ute is qui cuptatiis ariatium eiciissequi ut reperi ommo vendi venist ea ipid quuntem.</p>
-												<a class="focus-link" href="#">Read more</a>
+							<div id="product-range-content">
+								<div class="accordion-group">
+									<div id="product-category-r22" class="product-range-content in collapse">
+										<div class="gt-product-block r22"><b>R22 - Methane Series Refrigerant</b/> HCFC (partly chlorinated) (single component)</div>
+										<div class="row-fluid">
+											<div class="span6">
+												<p>R22 is a HCFC and is partly chlorinated and has ozone depleting potential. R22 is compatible with mineral oil. Import quotas 
+												   apply and it will be phased out (as other chlorinated refrigerants have been) over the next 10 years. This means that 
+												   availability will become unreliable in future.
+												</p>
+												<dl class="dl-horizontal">
+													<dt>Replaces</dt>
+													<dd>R505 (Replaces R12 in some applications)</dd>
+													<dt>Name</dt>
+													<dd>Chlorodifluoromethane</dd>
+													<dt>Applications</dt>
+													<dd>Medium & low temperature commercial equipment, large commercial & industrial equipment, mobile refrigeration and air conditioning.</dd>																				
+												</dl>
+												<a class="media-file" href="#">
+													<img src="http://placehold.it/80x110" alt="PDF">
+													<span>MSDA Sheets <br>PDF</span>
+												</a>
+												<a class="media-file" href="#">
+													<img src="http://placehold.it/80x110" alt="PDF">
+													<span>Pressure Chart <br>PDF</span>
+												</a>
 											</div>
-										</div>
-									</div>
-									<div class="gt-latest-news-block span6">
-										<div class="media">
-											<a class="pull-left" href="#">
-												<img class="media-object" src="http://placehold.it/150x160" alt="Placeholder">
-											</a>
-											<div class="media-body">
-												<h4 class="media-heading">Latest GasTrack news</h4>
-												<p>Ribus vid quae sunt prorenima dipicab ius. Pariae. Ut ute is qui cuptatiis ariatium eiciissequi ut reperi ommo vendi venist ea ipid quuntem.</p>
-												<a class="focus-link" href="#">Read more</a>
-											</div>
+											<div class="span6">
+												<hr class="visible-phone">
+												<h4 class="headline">Import quotas apply, <br>mineral oil compatible</h4>
+												<table class="table table-striped">
+													<tbody>
+														<tr>
+															<td>ODP</td>
+															<td>Temp Glide °C (-15/30)</td>
+														</tr>
+														<tr>
+															<td>0.055</td>
+															<td>0</td>
+														</tr>
+														<tr>
+															<td>GWP (100 yrs)</td>
+															<td>Larry</td>
+														</tr>
+														<tr>
+															<td>1,700</td>
+															<td>A1</td>
+														</tr>
+													</tbody>
+												</table>										
+											</div>									
 										</div>
 									</div>
 								</div>
 
-								<div class="row-fluid">
-									<div class="gt-latest-news-block span6">
-										<div class="media">
-											<a class="pull-left" href="#">
-												<img class="media-object" src="http://placehold.it/150x160" alt="Placeholder">
-											</a>
-											<div class="media-body">
-												<h4 class="media-heading">Latest GasTrack news</h4>
-												<p>Ribus vid quae sunt prorenima dipicab ius. Pariae. Ut ute is qui cuptatiis ariatium eiciissequi ut reperi ommo vendi venist ea ipid quuntem.</p>
-												<a class="focus-link" href="#">Read more</a>
+								<div class="accordion-group">
+									<div id="product-category-r407f" class="product-range-content collapse">
+										<div class="gt-product-block r407f"><b>R407F - Methane Series Refrigerant</b/> HCFC (partly chlorinated) (single component)</div>
+										<div class="row-fluid">
+											<div class="span6">
+												<p>R407F iLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+												   enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+												   labore et dolore magna aliqua.
+												</p>
+												<dl class="dl-horizontal">
+													<dt>Lorem</dt>
+													<dd>Lorem ipsum dolor sit amet</dd>
+													<dt>Lorem</dt>
+													<dd>adipisicing</dd>
+													<dt>Adipisicing</dt>
+													<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</dd>																				
+												</dl>
+												<a class="media-file" href="#">
+													<img src="http://placehold.it/80x110" alt="PDF">
+													<span>Lorem ipsum <br>PDF</span>
+												</a>
+												<a class="media-file" href="#">
+													<img src="http://placehold.it/80x110" alt="PDF">
+													<span>Lorem ipsum <br>PDF</span>
+												</a>
 											</div>
+											<div class="span6">
+												<hr class="visible-phone">
+												<h4 class="headline">Lorem ipsum dolor, <br>consectetur adipisicing</h4>
+												<table class="table table-striped">
+													<tbody>
+														<tr>
+															<td>Tempor</td>
+															<td>Magna aliqua °C (-15/30)</td>
+														</tr>
+														<tr>
+															<td>0.021</td>
+															<td>1</td>
+														</tr>
+														<tr>
+															<td>GWP (100 yrs)</td>
+															<td>Larry</td>
+														</tr>
+														<tr>
+															<td>1,700</td>
+															<td>A1</td>
+														</tr>
+													</tbody>
+												</table>										
+											</div>									
 										</div>
-									</div>
-									<div class="gt-latest-news-block span6">
-										<div class="media">
-											<a class="pull-left" href="#">
-												<img class="media-object" src="http://placehold.it/150x160" alt="Placeholder">
-											</a>
-											<div class="media-body">
-												<h4 class="media-heading">Latest GasTrack news</h4>
-												<p>Ribus vid quae sunt prorenima dipicab ius. Pariae. Ut ute is qui cuptatiis ariatium eiciissequi ut reperi ommo vendi venist ea ipid quuntem.</p>
-												<a class="focus-link" href="#">Read more</a>
-											</div>
-										</div>
-									</div>
+									</div>	
 								</div>							
+
+							</div>
 
 						</section>
 					</div>
@@ -231,15 +262,13 @@
 	<?php 
 		$jsScriptPaths = [
 			"/assets/js/jquery.lazyload.min.js",
-			"/assets/js/bootstrap-transition.js",
 			"/assets/js/bootstrap-collapse.js",
 			"/assets/js/bootstrap-dropdown.js",
 			"/assets/js/bootstrap-carousel.js",
-			"/assets/js/bootstrap-tooltip.js",
+			"/assets/js/bootstrap-transition.js",
 			"/assets/js/jquery.mobile.custom.min.js",
 			"/assets/js/reece-ocnav.js",  		
-	  		"/assets/js/reece-carousel.js",
-	  		"/assets/js/reece-tooltip.js"
+	  		"/assets/js/reece-carousel.js"
 		]; 
 	   	include_once($serverBase."/includes/foot/scripts.php");
 	?>

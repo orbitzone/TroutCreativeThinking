@@ -68,4 +68,13 @@
 		)								
 	);
 
+	$gtNavigationItems = array(
+		"Features & Quality",
+		"Reclaim System",
+		"Project Gallery",
+		"Product Range",
+		"Technical Data",
+		"Storefinder"
+	);	
+
 ?>

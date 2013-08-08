@@ -22,13 +22,6 @@
 			   	include_once($serverBase."/includes/banners/banner-happyzone.php");
 			?>	
 
-
-
-
-
-
-
-
 		    <div class="content-container">
 				<div class="inner-wrapper">
 
@@ -45,11 +38,23 @@
 						<p class="product-lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					</section>
 
-				    <hr>
+					<div class="sort-filter clearfix">
+						<div class="dropdown pull-right">
+							<a class="dropdown-toggle" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html">
+								Sort by
+								<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+								<li role="filter"><a href="#">Price</a></li>
+								<li role="filter"><a href="#">Most Popular</a></li>
+								<li role="filter"><a href="#">Newest Releases</a></li>
+								<li role="filter"><a href="#">Our Picks</a></li>									
+							</ul>
+						</div>
+						<hr>
+				    </div>
 
 			    	<h3>Basins</h3>
-
-
 				    	
 			    	<div class="products-list">
 					    <div class="row-fluid">
@@ -99,86 +104,50 @@
 				    <hr>
 
 			    	<h3>Toilets</h3>
-					<div id="winter-warmers-carousel" class="carousel slide custom-carousel-control">
-				        <div class="carousel-inner">
-
-				        	<div class="active item">					    	
-						    	<div class="products-list">
-								    <div class="row-fluid">
-								    	<div class="product-block span3">
-											<a href="#"><img src="/assets/images/products_2013/products-bathroom-winter-warmers-product-1.jpg" /></a>
-											<div class="product-info">
-												<h4>
-													<a class="product-title" href="#">Product</a>
-													<span class="product-desc">Freestanding bath</span>
-													<span class="product-price">$xxx.xx</span>
-												</h4>
-											</div>
-								    	</div>
-								    	<div class="product-block span3">
-								    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-winter-warmers-product-1.jpg" /></a>
-											<div class="product-info">
-												<h4>
-													<a class="product-title" href="#">Product</a>
-													<span class="product-desc">Freestanding bath</span>
-													<span class="product-price">$xxx.xx</span>
-												</h4>
-											</div>							    		
-								    	</div>
-								    	<div class="product-block span3">
-								    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-winter-warmers-product-1.jpg" /></a>
-											<div class="product-info">
-												<h4>
-													<a class="product-title" href="#">Product</a>
-													<span class="product-desc">Freestanding bath</span>
-													<span class="product-price">$xxx.xx</span>
-												</h4>
-											</div>							    		
-								    	</div>
-								    	<div class="product-block span3">
-								    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-winter-warmers-product-1.jpg" /></a>
-											<div class="product-info">
-												<h4>
-													<a class="product-title" href="#">Product</a>
-													<span class="product-desc">Freestanding bath</span>
-													<span class="product-price">$xxx.xx</span>
-												</h4>
-											</div>							    		
-								    	</div>					    							    							    	
-								    </div>
-								</div>	
-							</div>
-
-				        	<div class="item">					    	
-						    	<div class="products-list">
-								    <div class="row-fluid">
-								    	<div class="product-block span3">
-											<a href="#"><img src="/assets/images/products_2013/products-bathroom-winter-warmers-product-1.jpg" /></a>
-											<div class="product-info">
-												<h4>
-													<a class="product-title" href="#">Product</a>
-													<span class="product-desc">Freestanding bath</span>
-													<span class="product-price">$xxx.xx</span>
-												</h4>
-											</div>
-								    	</div>
-								    	<div class="product-block span3">
-								    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-winter-warmers-product-1.jpg" /></a>
-											<div class="product-info">
-												<h4>
-													<a class="product-title" href="#">Product</a>
-													<span class="product-desc">Freestanding bath</span>
-													<span class="product-price">$xxx.xx</span>
-												</h4>
-											</div>							    		
-								    	</div>				    							    							    	
-								    </div>
-								</div>	
-							</div>									
-
-						</div>
-						<a class="carousel-control top left page-branding text-brand" href="#winter-warmers-carousel" data-slide="prev">‹</a>
-			        	<a class="carousel-control top right page-branding text-brand" href="#winter-warmers-carousel" data-slide="next">›</a>	
+				    	
+			    	<div class="products-list">
+					    <div class="row-fluid">
+					    	<div class="product-block span3">
+								<a href="#"><img src="/assets/images/products_2013/products-bathroom-winter-warmers-product-1.jpg" /></a>
+								<div class="product-info">
+									<h4>
+										<a class="product-title" href="#">Product</a>
+										<span class="product-desc">Freestanding bath</span>
+										<span class="product-price">$xxx.xx</span>
+									</h4>
+								</div>
+					    	</div>
+					    	<div class="product-block span3">
+					    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-winter-warmers-product-1.jpg" /></a>
+								<div class="product-info">
+									<h4>
+										<a class="product-title" href="#">Product</a>
+										<span class="product-desc">Freestanding bath</span>
+										<span class="product-price">$xxx.xx</span>
+									</h4>
+								</div>							    		
+					    	</div>
+					    	<div class="product-block span3">
+					    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-winter-warmers-product-1.jpg" /></a>
+								<div class="product-info">
+									<h4>
+										<a class="product-title" href="#">Product</a>
+										<span class="product-desc">Freestanding bath</span>
+										<span class="product-price">$xxx.xx</span>
+									</h4>
+								</div>							    		
+					    	</div>
+					    	<div class="product-block span3">
+					    		<a href="#"><img src="/assets/images/products_2013/products-bathroom-winter-warmers-product-1.jpg" /></a>
+								<div class="product-info">
+									<h4>
+										<a class="product-title" href="#">Product</a>
+										<span class="product-desc">Freestanding bath</span>
+										<span class="product-price">$xxx.xx</span>
+									</h4>
+								</div>							    		
+					    	</div>					    							    							    	
+					    </div>
 					</div>	
 
 				</div>

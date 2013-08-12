@@ -45,9 +45,6 @@
   color: white;
   text-align: center;
 }
-@media (max-width: 979px) {
-  
-}
 .article-banner-trade .banner-branding-block {
   border-right: 3px solid white;
 }

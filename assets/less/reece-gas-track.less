@@ -64,8 +64,8 @@
 }
 
 // Gas Track Infographic Module
-//====================================================================================================================================
-//====================================================================================================================================
+// ====================================================================================================================================
+// ====================================================================================================================================
 
 .gt-banner-ig {
 	position: relative;
@@ -81,62 +81,99 @@
 		z-index: 9999;
 	}
 
-	.tooltip .tooltip-inner, .tooltip .tooltip-arrow {
-		@media (max-width: 767px) {
-			display: none; //Ensure tooltips are disabled on mobile (there are only 6 in this case so we are okay to hide them instead of unbinding the events)
-		}			
-	}
-
 	.btn-highlight {
 		margin: 20px auto 0;
 	}
 
-	.gt-ig-caption { //These captions only appear on mobile
-		position: relative;
-		max-width: 80%;
-		margin: 20px auto 0;
-		padding: 10px;
+	.popover {
+		background-color: black;
+		color: white;
 		.box-shadow(0px 5px 10px darken(@lightBackground, 70%));
-		background-color: white;
+		z-index: 9999;
 
-		&:before, &:after {
-			content: "";
-			position: absolute;
-			border-style: solid;
-		}
-
-		&.left {
-			&:before {
-				top: -40px;
-				left: 40px;
-				border-width: 40px 40px 0 0;
-				border-color: transparent white;		
-			}
-
-			&:after {
-				top: -40px;
-				left: 75px;
-				border-width: 40px 5px 0 0;
-				border-color: transparent lighten(@gasTownBrand, 5%); //Match with gradient as best we can
+		.popover-content {
+			p {
+				margin: 0;
 			}
 		}
 
-		&.right {
-			&:before {
-				top: -40px;
-				right: 40px;
-				border-width: 40px 0 0 40px;
-				border-color: transparent white;		
+		.popover-title {
+			display: none;
+		}
+
+		&.right, &.right .arrow:after {
+			border-right-color: black;
+		}
+		&.left, &.left .arrow:after {
+			border-left-color: black;
+		}	
+		&.top, &.top .arrow:after {
+			border-top-color: black;
+		}		
+		&.bottom, &.bottom .arrow:after {
+			border-bottom-color: black;
+		}	
+
+		@media (max-width: 767px) {
+			display: none!important; //Ensure popovers are disabled on mobile (there are only 6 in this case so we are okay to hide them instead of unbinding the events)
+		}					
+	}	
+
+	.gt-ig-caption {
+
+		@media (max-width: 767px) {
+			position: relative;
+			max-width: 80%;
+			margin: 20px auto 0;
+			padding: 10px;
+			.box-shadow(0px 5px 10px darken(@lightBackground, 70%));
+			background-color: white;
+
+
+			&:before, &:after {
+				content: "";
+				position: absolute;
+				border-style: solid;
 			}
 
-			&:after {
-				top: -40px;
-				right: 75px;
-				border-width: 40px 0 0 5px;
-				border-color: transparent lighten(@gasTownBrand, 1%); //Match with gradient as best we can
+			&.left {
+				&:before {
+					top: -40px;
+					left: 40px;
+					border-width: 40px 40px 0 0;
+					border-color: transparent white;		
+				}
+
+				&:after {
+					top: -40px;
+					left: 75px;
+					border-width: 40px 5px 0 0;
+					border-color: transparent lighten(@gasTownBrand, 5%); //Match with gradient as best we can
+				}
 			}
-		}			
+
+			&.right {
+				&:before {
+					top: -40px;
+					right: 40px;
+					border-width: 40px 0 0 40px;
+					border-color: transparent white;		
+				}
+
+				&:after {
+					top: -40px;
+					right: 75px;
+					border-width: 40px 0 0 5px;
+					border-color: transparent lighten(@gasTownBrand, 1%); //Match with gradient as best we can
+				}
+			}		
+		}	
 	}
+
+	.gt-ig-reveal {
+		left: 10%;
+		padding-left: 3%;
+	}	
 
 	@media (max-width: 767px) {
 		padding: 20px 0;
@@ -156,7 +193,7 @@
 }
 
 .gt-ig-items {
-	@media (min-width: 769px) {
+	@media (min-width: 767px) {
 		height: auto!important; //Override inline styles to force navigation to always be visible on desktop
 	}	
 }
@@ -178,7 +215,6 @@
 	width: 38px;
 	height: 96px;
 	background-position: -229px 0;
-	z-index: 9999; //This element is not hidden in mobile version by default so make sure it's visible in desktop
 }
 
 .gt-ig-store:extend(.gt.ig-sprite all) {
@@ -194,7 +230,7 @@
 }
 
 .gt-ig-bottle:extend(.gt.ig-sprite all) {
-	left: 50%;
+	left: 54%;
 	top: 8%;
 	width: 77px;
 	height: 110px;
@@ -284,26 +320,6 @@
 		}	
 	}
 
-	// Gas Track Content Head Module
-	//====================================================================================================================================
-	//====================================================================================================================================
-
-	.gt-content-head {
-		margin-bottom: 10px;
-
-		.headline {
-			margin-top: 0;
-		}
-
-		@media (max-width: 769px) {
-			text-align: center;
-
-			.headline, .btn-highlight {
-				float: none;
-			}
-		}			
-	}
-
 	// Gas Track Product Range List Module
 	//====================================================================================================================================
 	//====================================================================================================================================
@@ -323,7 +339,7 @@
 					margin-left: 0;
 				}
 			}	
-			@media (max-width: 979px) {
+			@media (max-width: 977px) {
 				& + .gt-product-range-row {
 					margin-top: 20px;
 				}
@@ -406,6 +422,7 @@
 
 			@media (max-width: 767px) {
 				margin-left: 0;
+				padding-top: 0;
 			}
 		}
 

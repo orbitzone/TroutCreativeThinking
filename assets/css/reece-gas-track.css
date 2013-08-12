@@ -81,54 +81,89 @@
   color: white;
   z-index: 9999;
 }
-@media (max-width: 767px) {
-  .gt-banner-ig .tooltip .tooltip-inner,
-  .gt-banner-ig .tooltip .tooltip-arrow {
-    display: none;
-  }
-}
 .gt-banner-ig .btn-highlight {
   margin: 20px auto 0;
 }
-.gt-banner-ig .gt-ig-caption {
-  position: relative;
-  max-width: 80%;
-  margin: 20px auto 0;
-  padding: 10px;
+.gt-banner-ig .popover {
+  background-color: black;
+  color: white;
   -webkit-box-shadow: 0px 5px 10px #383838;
   -moz-box-shadow: 0px 5px 10px #383838;
   box-shadow: 0px 5px 10px #383838;
-  background-color: white;
+  z-index: 9999;
 }
-.gt-banner-ig .gt-ig-caption:before,
-.gt-banner-ig .gt-ig-caption:after {
-  content: "";
-  position: absolute;
-  border-style: solid;
+.gt-banner-ig .popover .popover-content p {
+  margin: 0;
 }
-.gt-banner-ig .gt-ig-caption.left:before {
-  top: -40px;
-  left: 40px;
-  border-width: 40px 40px 0 0;
-  border-color: transparent white;
+.gt-banner-ig .popover .popover-title {
+  display: none;
 }
-.gt-banner-ig .gt-ig-caption.left:after {
-  top: -40px;
-  left: 75px;
-  border-width: 40px 5px 0 0;
-  border-color: transparent #79c04c;
+.gt-banner-ig .popover.right,
+.gt-banner-ig .popover.right .arrow:after {
+  border-right-color: black;
 }
-.gt-banner-ig .gt-ig-caption.right:before {
-  top: -40px;
-  right: 40px;
-  border-width: 40px 0 0 40px;
-  border-color: transparent white;
+.gt-banner-ig .popover.left,
+.gt-banner-ig .popover.left .arrow:after {
+  border-left-color: black;
 }
-.gt-banner-ig .gt-ig-caption.right:after {
-  top: -40px;
-  right: 75px;
-  border-width: 40px 0 0 5px;
-  border-color: transparent #6eb740;
+.gt-banner-ig .popover.top,
+.gt-banner-ig .popover.top .arrow:after {
+  border-top-color: black;
+}
+.gt-banner-ig .popover.bottom,
+.gt-banner-ig .popover.bottom .arrow:after {
+  border-bottom-color: black;
+}
+@media (max-width: 767px) {
+  .gt-banner-ig .popover {
+    display: none!important;
+  }
+}
+@media (max-width: 767px) {
+  .gt-banner-ig .gt-ig-caption {
+    position: relative;
+    max-width: 80%;
+    margin: 20px auto 0;
+    padding: 10px;
+    -webkit-box-shadow: 0px 5px 10px #383838;
+    -moz-box-shadow: 0px 5px 10px #383838;
+    box-shadow: 0px 5px 10px #383838;
+    background-color: white;
+  }
+  .gt-banner-ig .gt-ig-caption:before,
+  .gt-banner-ig .gt-ig-caption:after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+  }
+  .gt-banner-ig .gt-ig-caption.left:before {
+    top: -40px;
+    left: 40px;
+    border-width: 40px 40px 0 0;
+    border-color: transparent white;
+  }
+  .gt-banner-ig .gt-ig-caption.left:after {
+    top: -40px;
+    left: 75px;
+    border-width: 40px 5px 0 0;
+    border-color: transparent #79c04c;
+  }
+  .gt-banner-ig .gt-ig-caption.right:before {
+    top: -40px;
+    right: 40px;
+    border-width: 40px 0 0 40px;
+    border-color: transparent white;
+  }
+  .gt-banner-ig .gt-ig-caption.right:after {
+    top: -40px;
+    right: 75px;
+    border-width: 40px 0 0 5px;
+    border-color: transparent #6eb740;
+  }
+}
+.gt-banner-ig .gt-ig-reveal {
+  left: 10%;
+  padding-left: 3%;
 }
 @media (max-width: 767px) {
   .gt-banner-ig {
@@ -152,7 +187,7 @@
     text-align: center;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 767px) {
   .gt-ig-items {
     height: auto!important;
   }
@@ -186,7 +221,6 @@
   width: 38px;
   height: 96px;
   background-position: -229px 0;
-  z-index: 9999;
 }
 .gt-ig-store {
   left: 27%;
@@ -201,7 +235,7 @@
   }
 }
 .gt-ig-bottle {
-  left: 50%;
+  left: 54%;
   top: 8%;
   width: 77px;
   height: 110px;
@@ -271,21 +305,6 @@
 .gt-media-object.pull-right {
   margin-left: 20px;
 }
-.gt-content-head {
-  margin-bottom: 10px;
-}
-.gt-content-head .headline {
-  margin-top: 0;
-}
-@media (max-width: 769px) {
-  .gt-content-head {
-    text-align: center;
-  }
-  .gt-content-head .headline,
-  .gt-content-head .btn-highlight {
-    float: none;
-  }
-}
 .gt-product-range-list {
   margin-bottom: 20px;
 }
@@ -304,7 +323,7 @@
     margin-left: 0;
   }
 }
-@media (max-width: 979px) {
+@media (max-width: 977px) {
   .gt-product-range-list .gt-product-range-row + .gt-product-range-row {
     margin-top: 20px;
   }
@@ -361,6 +380,7 @@
 @media (max-width: 767px) {
   .product-range-content dd {
     margin-left: 0;
+    padding-top: 0;
   }
 }
 .product-range-content .gt-product-block {

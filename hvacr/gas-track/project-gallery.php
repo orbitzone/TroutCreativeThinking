@@ -39,10 +39,8 @@
 						</aside>
 
 						<section class="gt-content span9">
-							<header class="gt-content-head clearfix">
-								<h3 class="headline pull-left">Project Gallery</h3>
-								<a class="btn btn-highlight pull-right" href="#">View by Gas Type <i class="icon-caret-right icon-large"></i></a>
-							</header>
+							<h3 class="headline">Project Gallery</h3>
+								
 							<hr>
 							<div class="row-fluid">
 								<div class="span4">

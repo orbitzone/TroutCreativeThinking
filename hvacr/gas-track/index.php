@@ -46,21 +46,20 @@
 									works for you.
 								</h2>
 
-								<a data-toggle="tooltip" data-placement="right" href="#" data-original-title="You need to be a Reece hvac-r customer and ARC registered." class="gt-ig-person"></a>
-								<div class="gt-ig-caption left visible-phone">You need to be a Reece hvac-r customer and ARC registered.</div>
-
 								<div id="gt-ig-items" class="gt-ig-items collapse">
-									<a data-toggle="tooltip" data-placement="bottom" href="#" data-original-title="61 convenient locations stock a full range of Refrigerant Gases and Re-Claim bottles." class="gt-ig-store"></a>
+									<a href="#" class="gt-ig-person" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="You need to be a Reece hvac-r customer and ARC registered."></a>
+									<div class="gt-ig-caption left visible-phone">You need to be a Reece hvac-r customer and ARC registered.</div>									
+									<a href="#" class="gt-ig-store" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="61 convenient locations stock a full range of Refrigerant Gases and Re-Claim bottles."></a>
 									<div class="gt-ig-caption right visible-phone">61 convenient locations stock a full range of Refrigerant Gases and Re-Claim bottles.</div>
-									<a data-toggle="tooltip" data-placement="bottom" href="#" data-original-title="Purchase the refrigerant from your selected Reece hvac-r branch." class="gt-ig-bottle"></a>
+									<a href="#" class="gt-ig-bottle" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Purchase the refrigerant from your selected Reece hvac-r branch."></a>
 									<div class="gt-ig-caption left visible-phone">Purchase the refrigerant from your selected Reece hvac-r branch.</div>
-									<a data-toggle="tooltip" data-placement="left" href="#" data-original-title="Bottles are scanned with a unique code creating a history of the bottles’ life from purchase to return." class="gt-ig-scan"></a>
+									<a href="#" class="gt-ig-scan" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="Bottles are scanned with a unique code creating a history of the bottles’ life from purchase to return."></a>
 									<div class="gt-ig-caption right visible-phone">Bottles are scanned with a unique code creating a history of the bottles’ life from purchase to return.</div>
-									<a data-toggle="tooltip" data-placement="left" href="#" data-original-title="Each scan records quantity, bottle number, size, Refrigerant gas, your order and job number and who purchased the cylinder." class="gt-ig-screen"></a>
+									<a href="#" class="gt-ig-screen" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="Each scan records quantity, bottle number, size, Refrigerant gas, your order and job number and who purchased the cylinder."></a>
 									<div class="gt-ig-caption left visible-phone">Each scan records quantity, bottle number, size, Refrigerant gas, your order and job number and who purchased the cylinder.</div>
-									<a data-toggle="tooltip" data-placement="top" href="#" data-original-title="We can deliver cylinders with our Reece Rapid Delivery. No need to leave site." class="gt-ig-truck"></a>
+									<a href="#" class="gt-ig-truck" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="We can deliver cylinders with our Reece Rapid Delivery. No need to leave site."></a>
 									<div class="gt-ig-caption right visible-phone">We can deliver cylinders with our Reece Rapid Delivery. No need to leave site.</div>
-									<a data-toggle="tooltip" data-placement="bottom" href="#" data-original-title="Return Bottle and collect replacement." class="gt-ig-store visible-phone"></a>
+									<a href="#" class="gt-ig-store visible-phone" =></a>
 									<div class="gt-ig-caption left visible-phone">Return Bottle and collect replacement.</div>								
 
 									<img class="gt-ig-map" src="/assets/images/gastrack_2013/gas-track-infographic-bg.jpg" src="Gas Track Infographic">
@@ -68,27 +67,7 @@
 
 								<button type="button" class="btn btn-highlight btn-large visible-phone" data-toggle="collapse" data-target="#gt-ig-items">Next <i class="icon-chevron-down"></i></button>
 
-							</figure>
-
-
-<!-- 							<button type="button" class="visible-phone" data-toggle="collapse" data-target="#gt-navigation">
-								Navigation
-							</button>
-							 
-							<ul id="gt-navigation" class="gt-navigation nav nav-pills nav-stacked collapse">
-
-								<?php foreach ($gtNavigationItems as $item) : ?>
-
-									<?php if ($item == $gtNavActiveMenuItem) : ?>
-										<li class="active"><a href="#"><?php print $item; ?></a></li>
-									<?php else : ?>
-										<li><a href="#"><?php print $item; ?></a></li>
-									<?php endif; ?>
-
-								<?php endforeach; ?>
-
-							</ul> -->
-
+							</figure>						
 
 							<h3 class="headline">GasTrack Range</h3>
 							<hr>
@@ -278,10 +257,11 @@
 			"/assets/js/bootstrap-dropdown.js",
 			"/assets/js/bootstrap-carousel.js",
 			"/assets/js/bootstrap-tooltip.js",
+			"/assets/js/bootstrap-popover.js",
 			"/assets/js/jquery.mobile.custom.min.js",
-			"/assets/js/reece-ocnav.js",  		
+			"/assets/js/reece-ocnav.js",
 	  		"/assets/js/reece-carousel.js",
-	  		"/assets/js/reece-tooltip.js"
+	  		"/assets/js/reece-popover.js"
 		]; 
 	   	include_once($serverBase."/includes/foot/scripts.php");
 	?>

@@ -65,7 +65,7 @@
 									<img class="gt-ig-map" src="/assets/images/gastrack_2013/gas-track-infographic-bg.jpg" src="Gas Track Infographic">
 								</div>
 
-								<button type="button" class="btn btn-highlight btn-large visible-phone" data-toggle="collapse" data-target="#gt-ig-items">Next <i class="icon-chevron-down"></i></button>
+								<button type="button" class="btn btn-highlight btn-large visible-phone" data-toggle="collapse" data-target="#gt-ig-items">More <i class="icon-chevron-down"></i></button>
 
 							</figure>						
 

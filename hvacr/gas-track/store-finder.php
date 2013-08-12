@@ -1,23 +1,23 @@
 
 	<?php include_once($_SERVER['DOCUMENT_ROOT']."/includes/variables/variables.php"); ?>
 
-	<?php 
+	<?php
 		$cssScriptPaths = [
 			"/assets/css/reece-hvac-r.css",
 			"/assets/css/reece-gas-track.css"
-		]; 
+		];
 	   	include_once($serverBase."/includes/head/head-generic.php");
-	?>		
+	?>
 
     <body>
 		<div class="ocmain-wrapper">
 
-			<?php 
+			<?php
 				$genericNavActiveMenuItem = "HVAC-R";
 			   	include_once($serverBase."/includes/nav/nav-generic.php");
 			?>
 
-			<?php 
+			<?php
 			   	include_once($serverBase."/includes/nav/nav-subnavbar.php");
 			?>
 
@@ -29,11 +29,11 @@
 						<li class="active page-branding text-brand">Store Finder</li>
 					</ul>
 
-					<div class="row-fluid">			
-						
-						<aside class="gt-sidebar span3">						
-							<?php 
-								$gtNavActiveMenuItem = "Technical Data";
+					<div class="row-fluid">
+
+						<aside class="gt-sidebar span3">
+							<?php
+								$gtNavActiveMenuItem = "Storefinder";
 							   	include_once($serverBase."/includes/nav/nav-gt-nav.php");
 							?>
 						</aside>
@@ -84,7 +84,7 @@
 										<span class="tel">Tel <span class="value">00 0000 0000</span></span><br>
 										<span class="tel"><span class="type">Fax</span>: <span class="value">00 0000 0000</span></span>
 										<a class="focus-link" href="mailto:someone@example.com">Email us</a>
-									</div>	
+									</div>
 
 								</div>
 								<div class="gt-store-finder-row row-fluid">
@@ -127,7 +127,7 @@
 										<span class="tel">Tel <span class="value">00 0000 0000</span></span><br>
 										<span class="tel"><span class="type">Fax</span>: <span class="value">00 0000 0000</span></span>
 										<a class="focus-link" href="mailto:someone@example.com">Email us</a>
-									</div>	
+									</div>
 
 								</div>
 							</div>
@@ -173,13 +173,13 @@
 										<span class="tel">Tel <span class="value">00 0000 0000</span></span><br>
 										<span class="tel"><span class="type">Fax</span>: <span class="value">00 0000 0000</span></span>
 										<a class="focus-link" href="mailto:someone@example.com">Email us</a>
-									</div>	
+									</div>
 
 								</div>
-							</div>			
+							</div>
 
 							<h3 class="headline">New South Wales</h3>
-							<hr>				
+							<hr>
 
 							<div class="gt-store-finder-list clearfix">
 								<div class="gt-store-finder-row row-fluid">
@@ -222,7 +222,7 @@
 										<span class="tel">Tel <span class="value">00 0000 0000</span></span><br>
 										<span class="tel"><span class="type">Fax</span>: <span class="value">00 0000 0000</span></span>
 										<a class="focus-link" href="mailto:someone@example.com">Email us</a>
-									</div>	
+									</div>
 
 								</div>
 								<div class="gt-store-finder-row row-fluid">
@@ -265,13 +265,13 @@
 										<span class="tel">Tel <span class="value">00 0000 0000</span></span><br>
 										<span class="tel"><span class="type">Fax</span>: <span class="value">00 0000 0000</span></span>
 										<a class="focus-link" href="mailto:someone@example.com">Email us</a>
-									</div>	
+									</div>
 
 								</div>
-							</div>	
+							</div>
 
 							<h3 class="headline">Queensland</h3>
-							<hr>				
+							<hr>
 
 							<div class="gt-store-finder-list clearfix">
 								<div class="gt-store-finder-row row-fluid">
@@ -314,7 +314,7 @@
 										<span class="tel">Tel <span class="value">00 0000 0000</span></span><br>
 										<span class="tel"><span class="type">Fax</span>: <span class="value">00 0000 0000</span></span>
 										<a class="focus-link" href="mailto:someone@example.com">Email us</a>
-									</div>	
+									</div>
 
 								</div>
 								<div class="gt-store-finder-row row-fluid">
@@ -334,18 +334,18 @@
 									</div>
 
 								</div>
-							</div>													
+							</div>
 
 						</section>
 
 					</div>
 
 				</div>
-		    </div>	
+		    </div>
 
-	    <?php 
+	    <?php
 			include_once($serverBase."/includes/foot/foot-generic.php");
-		?>	
+		?>
 
 	</div>
 
@@ -354,9 +354,9 @@
    			"activeMenu" => "Plumbing"
    		);
 	   	include_once($serverBase."/includes/nav/nav-mobile.php");
-	?>	
+	?>
 
-	<?php 
+	<?php
 		$jsScriptPaths = [
 			"/assets/js/jquery.lazyload.min.js",
 			"/assets/js/bootstrap-collapse.js",
@@ -364,9 +364,9 @@
 			"/assets/js/bootstrap-carousel.js",
 			"/assets/js/bootstrap-transition.js",
 			"/assets/js/jquery.mobile.custom.min.js",
-			"/assets/js/reece-ocnav.js",  		
+			"/assets/js/reece-ocnav.js",
 	  		"/assets/js/reece-carousel.js"
-		]; 
+		];
 	   	include_once($serverBase."/includes/foot/scripts.php");
 	?>
 

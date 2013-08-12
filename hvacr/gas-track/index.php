@@ -40,25 +40,55 @@
 
 						<section class="gt-content span9">
 
-							<figure class="gt-banner-ig hidden-phone">
-								<a data-toggle="tooltip" data-placement="right" href="#" data-original-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore" class="gt-ig-person"></a>
-								<a data-toggle="tooltip" data-placement="bottom" href="#" data-original-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore" class="gt-ig-store"></a>
-								<a data-toggle="tooltip" data-placement="bottom" href="#" data-original-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore" class="gt-ig-bottle"></a>
-								<a data-toggle="tooltip" data-placement="left" href="#" data-original-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore" class="gt-ig-scan"></a>
-								<a data-toggle="tooltip" data-placement="left" href="#" data-original-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore" class="gt-ig-screen"></a>
-								<a data-toggle="tooltip" data-placement="top" href="#" data-original-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore" class="gt-ig-truck"></a>
-								<h2 class="gt-ig-caption">
-									How<br>
-									GasTrack<br>
-									works<br>
-									for you.
-								</h2>								
-								<img src="/assets/images/gastrack_2013/gas-track-infographic-bg.jpg" src="Gas Track Infographic">
+							<figure class="gt-banner-ig">
+								<h2 class="gt-ig-heading">
+									How GasTrack
+									works for you.
+								</h2>
+
+								<a data-toggle="tooltip" data-placement="right" href="#" data-original-title="You need to be a Reece hvac-r customer and ARC registered." class="gt-ig-person"></a>
+								<div class="gt-ig-caption left visible-phone">You need to be a Reece hvac-r customer and ARC registered.</div>
+
+								<div id="gt-ig-items" class="gt-ig-items collapse">
+									<a data-toggle="tooltip" data-placement="bottom" href="#" data-original-title="61 convenient locations stock a full range of Refrigerant Gases and Re-Claim bottles." class="gt-ig-store"></a>
+									<div class="gt-ig-caption right visible-phone">61 convenient locations stock a full range of Refrigerant Gases and Re-Claim bottles.</div>
+									<a data-toggle="tooltip" data-placement="bottom" href="#" data-original-title="Purchase the refrigerant from your selected Reece hvac-r branch." class="gt-ig-bottle"></a>
+									<div class="gt-ig-caption left visible-phone">Purchase the refrigerant from your selected Reece hvac-r branch.</div>
+									<a data-toggle="tooltip" data-placement="left" href="#" data-original-title="Bottles are scanned with a unique code creating a history of the bottles’ life from purchase to return." class="gt-ig-scan"></a>
+									<div class="gt-ig-caption right visible-phone">Bottles are scanned with a unique code creating a history of the bottles’ life from purchase to return.</div>
+									<a data-toggle="tooltip" data-placement="left" href="#" data-original-title="Each scan records quantity, bottle number, size, Refrigerant gas, your order and job number and who purchased the cylinder." class="gt-ig-screen"></a>
+									<div class="gt-ig-caption left visible-phone">Each scan records quantity, bottle number, size, Refrigerant gas, your order and job number and who purchased the cylinder.</div>
+									<a data-toggle="tooltip" data-placement="top" href="#" data-original-title="We can deliver cylinders with our Reece Rapid Delivery. No need to leave site." class="gt-ig-truck"></a>
+									<div class="gt-ig-caption right visible-phone">We can deliver cylinders with our Reece Rapid Delivery. No need to leave site.</div>
+									<a data-toggle="tooltip" data-placement="bottom" href="#" data-original-title="Return Bottle and collect replacement." class="gt-ig-store visible-phone"></a>
+									<div class="gt-ig-caption left visible-phone">Return Bottle and collect replacement.</div>								
+
+									<img class="gt-ig-map" src="/assets/images/gastrack_2013/gas-track-infographic-bg.jpg" src="Gas Track Infographic">
+								</div>
+
+								<button type="button" class="btn btn-highlight btn-large visible-phone" data-toggle="collapse" data-target="#gt-ig-items">Next <i class="icon-chevron-down"></i></button>
+
 							</figure>
 
-							<figure class="visible-phone">
-								<b>Mobile Link Goes Here</b>
-							</figure>
+
+<!-- 							<button type="button" class="visible-phone" data-toggle="collapse" data-target="#gt-navigation">
+								Navigation
+							</button>
+							 
+							<ul id="gt-navigation" class="gt-navigation nav nav-pills nav-stacked collapse">
+
+								<?php foreach ($gtNavigationItems as $item) : ?>
+
+									<?php if ($item == $gtNavActiveMenuItem) : ?>
+										<li class="active"><a href="#"><?php print $item; ?></a></li>
+									<?php else : ?>
+										<li><a href="#"><?php print $item; ?></a></li>
+									<?php endif; ?>
+
+								<?php endforeach; ?>
+
+							</ul> -->
+
 
 							<h3 class="headline">GasTrack Range</h3>
 							<hr>
@@ -68,34 +98,46 @@
 
 								<div class="gt-product-range-row row-fluid hidden-phone">
 									<div class="span3">
-										<a data-toggle="collapse" data-parent="#product-range-content" href="#product-category-r22">
+										<a href="#">
 											<img src="/assets/images/gastrack_2013/gas-track-product-r22.png" alt="r22">
 										</a>
 									</div>
 									<div class="span3">
-										<a data-toggle="collapse" data-parent="#product-range-content" href="#product-category-r407f">
+										<a href="#">
 											<img src="/assets/images/gastrack_2013/gas-track-product-r407f.png" alt="r407f">
 										</a>
 									</div>
 									<div class="span3">
-										<img src="/assets/images/gastrack_2013/gas-track-product-r134a.png" alt="r134a">
+										<a href="#">
+											<img src="/assets/images/gastrack_2013/gas-track-product-r134a.png" alt="r134a">
+										</a>
 									</div>
 									<div class="span3">
-										<img src="/assets/images/gastrack_2013/gas-track-product-r410a.png" alt="r410a">
+										<a href="#">
+											<img src="/assets/images/gastrack_2013/gas-track-product-r410a.png" alt="r410a">
+										</a>
 									</div>																								
 								</div>
 								<div class="gt-product-range-row row-fluid hidden-phone">
 									<div class="span3">
-										<img src="/assets/images/gastrack_2013/gas-track-product-r404a.png" alt="r404a">
+										<a href="#">
+											<img src="/assets/images/gastrack_2013/gas-track-product-r404a.png" alt="r404a">
+										</a>											
 									</div>
 									<div class="span3">
-										<img src="/assets/images/gastrack_2013/gas-track-product-r438a.png" alt="r438a">
+										<a href="#">
+											<img src="/assets/images/gastrack_2013/gas-track-product-r438a.png" alt="r438a">
+										</a>											
 									</div>
 									<div class="span3">
-										<img src="/assets/images/gastrack_2013/gas-track-product-r407c.png" alt="r407c">
+										<a href="#">
+											<img src="/assets/images/gastrack_2013/gas-track-product-r407c.png" alt="r407c">
+										</a>										
 									</div>
 									<div class="span3">
-										<img src="/assets/images/gastrack_2013/gas-track-product-r507a.png" alt="r507a">
+										<a href="#">
+											<img src="/assets/images/gastrack_2013/gas-track-product-r507a.png" alt="r507a">
+										</a>											
 									</div>																								
 								</div>								
 
@@ -104,12 +146,12 @@
 								<div id="gt-products-mobile-carousel" data-bs-carousel="carousel" data-bs-carousel-interval="0" class="carousel slide visible-phone">
 							    	<div class="carousel-inner">
 							    		<div class="item active">
-											<a data-toggle="collapse" data-parent="#product-range-content" href="#product-category-r22">
+											<a href="#">
 												<img src="/assets/images/gastrack_2013/gas-track-product-r22.png" alt="r22">
 											</a>
 							    		</div>
 							    		<div class="item">
-											<a data-toggle="collapse" data-parent="#product-range-content" href="#product-category-r407f">
+											<a href="#">
 												<img src="/assets/images/gastrack_2013/gas-track-product-r134a.png" alt="r134a">
 											</a>
 							    		</div>

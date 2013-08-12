@@ -25,23 +25,11 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.headline,
-.gt-content h1,
-.gt-content h2,
-.gt-content h3,
-.gt-content h4,
-.gt-content h5,
-.gt-content h6 {
+.headline {
   margin-top: 0;
   color: #999999;
 }
-.headline.tagline,
-.gt-content h1.tagline,
-.gt-content h2.tagline,
-.gt-content h3.tagline,
-.gt-content h4.tagline,
-.gt-content h5.tagline,
-.gt-content h6.tagline {
+.headline.tagline {
   font-size: 25px;
   text-transform: uppercase;
 }
@@ -64,16 +52,110 @@
   background-color: #f6f5f4;
   color: black;
 }
+@media (min-width: 769px) {
+  .gt-navigation {
+    height: auto!important;
+  }
+}
+.gt-navigation-toggle {
+  margin-top: 15px;
+  padding: 15px;
+  color: black;
+  background-color: #f6f5f4;
+}
+.gt-navigation-toggle:hover {
+  color: black;
+  background-color: #beb6ac;
+  text-decoration: none;
+}
 .gt-banner-ig {
   position: relative;
   width: 100%;
   margin: 0 0 20px 0;
 }
-.gt-banner-ig .gt-ig-caption {
+.gt-banner-ig .gt-ig-heading {
   position: absolute;
+  max-width: 144px;
   left: 3%;
   bottom: 3%;
   color: white;
+  z-index: 9999;
+}
+@media (max-width: 767px) {
+  .gt-banner-ig .tooltip .tooltip-inner,
+  .gt-banner-ig .tooltip .tooltip-arrow {
+    display: none;
+  }
+}
+.gt-banner-ig .btn-highlight {
+  margin: 20px auto 0;
+}
+.gt-banner-ig .gt-ig-caption {
+  position: relative;
+  max-width: 80%;
+  margin: 20px auto 0;
+  padding: 10px;
+  -webkit-box-shadow: 0px 5px 10px #383838;
+  -moz-box-shadow: 0px 5px 10px #383838;
+  box-shadow: 0px 5px 10px #383838;
+  background-color: white;
+}
+.gt-banner-ig .gt-ig-caption:before,
+.gt-banner-ig .gt-ig-caption:after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+}
+.gt-banner-ig .gt-ig-caption.left:before {
+  top: -40px;
+  left: 40px;
+  border-width: 40px 40px 0 0;
+  border-color: transparent white;
+}
+.gt-banner-ig .gt-ig-caption.left:after {
+  top: -40px;
+  left: 75px;
+  border-width: 40px 5px 0 0;
+  border-color: transparent #79c04c;
+}
+.gt-banner-ig .gt-ig-caption.right:before {
+  top: -40px;
+  right: 40px;
+  border-width: 40px 0 0 40px;
+  border-color: transparent white;
+}
+.gt-banner-ig .gt-ig-caption.right:after {
+  top: -40px;
+  right: 75px;
+  border-width: 40px 0 0 5px;
+  border-color: transparent #6eb740;
+}
+@media (max-width: 767px) {
+  .gt-banner-ig {
+    padding: 20px 0;
+    background-color: #7bb754;
+    background-image: -webkit-gradient(left, linear, 0 0, 0 100%, from(#6cb33f), color-stop(55%, #87c75e), to(#4a7a2b));
+    background-image: -webkit-linear-gradient(left, #6cb33f, #87c75e 55%, #4a7a2b);
+    background-image: -moz-linear-gradient(left, #6cb33f, #87c75e 55%, #4a7a2b);
+    background-image: -o-linear-gradient(left, #6cb33f, #87c75e 55%, #4a7a2b);
+    background-image: linear-gradient(to right, #6cb33f, #87c75e 55%, #4a7a2b);
+    background-repeat: no-repeat;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6cb33f', endColorstr='#ff4a7a2b', GradientType=0);
+  }
+  .gt-banner-ig .gt-ig-map {
+    display: none;
+  }
+  .gt-banner-ig .gt-ig-heading {
+    position: static;
+    max-width: 221px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+@media (min-width: 769px) {
+  .gt-ig-items {
+    height: auto!important;
+  }
 }
 .gt.ig-sprite,
 .gt-ig-person,
@@ -82,19 +164,21 @@
 .gt-ig-scan,
 .gt-ig-screen,
 .gt-ig-truck {
+  display: block;
   position: absolute;
   background: url("../images/gastrack_2013/gas-track-infographic-spritex1.png") no-repeat 0 0;
 }
-.gt.ig-sprite:hover,
-.gt-ig-person:hover,
-.gt-ig-store:hover,
-.gt-ig-bottle:hover,
-.gt-ig-scan:hover,
-.gt-ig-screen:hover,
-.gt-ig-truck:hover {
-  -webkit-transform: scale(1);
-  -webkit-transition-timing-function: ease-out;
-  -webkit-transition-duration: 500ms;
+@media (max-width: 767px) {
+  .gt.ig-sprite,
+  .gt-ig-person,
+  .gt-ig-store,
+  .gt-ig-bottle,
+  .gt-ig-scan,
+  .gt-ig-screen,
+  .gt-ig-truck {
+    position: static;
+    margin: 20px auto 0;
+  }
 }
 .gt-ig-person {
   left: 10%;
@@ -102,6 +186,7 @@
   width: 38px;
   height: 96px;
   background-position: -229px 0;
+  z-index: 9999;
 }
 .gt-ig-store {
   left: 27%;
@@ -112,7 +197,7 @@
 }
 @media (max-width: 769px) {
   .gt-ig-store {
-    left: 25%;
+    left: 23.5%;
   }
 }
 .gt-ig-bottle {
@@ -143,13 +228,7 @@
   height: 85px;
   background-position: 0 0;
 }
-.gt-sidebar .headline,
-.gt-sidebar .gt-content h1,
-.gt-sidebar .gt-content h2,
-.gt-sidebar .gt-content h3,
-.gt-sidebar .gt-content h4,
-.gt-sidebar .gt-content h5,
-.gt-sidebar .gt-content h6 {
+.gt-sidebar .headline {
   margin-top: 10px;
 }
 .gt-latest-news .gt-latest-news-block {
@@ -163,6 +242,14 @@
 }
 .gt-latest-news .focus-link {
   display: block;
+}
+.gt-content h1,
+.gt-content h2,
+.gt-content h3,
+.gt-content h4,
+.gt-content h5,
+.gt-content h6 {
+  color: #999999;
 }
 .gt-content .gt-product-description,
 .gt-content .r22.gt-product-block,
@@ -187,14 +274,17 @@
 .gt-content-head {
   margin-bottom: 10px;
 }
-.gt-content-head .headline,
-.gt-content-head .gt-content h1,
-.gt-content-head .gt-content h2,
-.gt-content-head .gt-content h3,
-.gt-content-head .gt-content h4,
-.gt-content-head .gt-content h5,
-.gt-content-head .gt-content h6 {
+.gt-content-head .headline {
   margin-top: 0;
+}
+@media (max-width: 769px) {
+  .gt-content-head {
+    text-align: center;
+  }
+  .gt-content-head .headline,
+  .gt-content-head .btn-highlight {
+    float: none;
+  }
 }
 .gt-product-range-list {
   margin-bottom: 20px;

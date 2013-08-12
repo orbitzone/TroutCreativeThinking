@@ -68,3 +68,7 @@
   float: left;
   width: 20%;
 }
+.lt-ie9 .gt-navigation,
+.lt-ie9 .gt-ig-items {
+  height: auto!important;
+}

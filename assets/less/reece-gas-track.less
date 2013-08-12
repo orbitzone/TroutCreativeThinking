@@ -44,6 +44,23 @@
 			color: black;
 		}
 	}
+
+	@media (min-width: 769px) {
+		height: auto!important; //Override inline styles to force navigation to always be visible on desktop
+	}	
+}
+
+.gt-navigation-toggle {
+	margin-top: 15px;
+	padding: 15px;
+	color: black;
+	background-color: lighten(@warmHighlightBackground, 25%);
+
+	&:hover {
+		color: black;
+		background-color: @warmHighlightBackground;
+		text-decoration: none;
+	}
 }
 
 // Gas Track Infographic Module
@@ -55,51 +72,113 @@
 	width: 100%;
 	margin: 0 0 20px 0;
 
-	.gt-ig-caption {
+	.gt-ig-heading {
 		position: absolute;
+		max-width: 144px; //Preserve formatting to comply with design
 		left: 3%;
 		bottom: 3%;
 		color: white;
+		z-index: 9999;
 	}
 
-	// .tooltip {
-	// 	&.top .tooltip-arrow {
-	// 		margin-top: -@tooltipArrowWidth;
-	// 		border-width: (@tooltipArrowWidth * 2) (@tooltipArrowWidth * 2) 0;
-	// 	}
-	// 	&.right .tooltip-arrow {
-	// 		margin-left: -@tooltipArrowWidth;
-	// 		border-width: (@tooltipArrowWidth * 2) (@tooltipArrowWidth * 2) (@tooltipArrowWidth * 2) 0;
-	// 	}
-	// 	&.left .tooltip-arrow {
-	// 		margin: -@tooltipArrowWidth;
-	// 		border-width: (@tooltipArrowWidth * 2) 0 (@tooltipArrowWidth * 2) (@tooltipArrowWidth * 2);
-	// 	}
+	.tooltip .tooltip-inner, .tooltip .tooltip-arrow {
+		@media (max-width: 767px) {
+			display: none; //Ensure tooltips are disabled on mobile (there are only 6 in this case so we are okay to hide them instead of unbinding the events)
+		}			
+	}
 
-	//   	&.bottom .tooltip-arrow {
-	//   		margin-top: -@tooltipArrowWidth;
-	// 		border-width: 0 (@tooltipArrowWidth * 2) (@tooltipArrowWidth * 2);
-	// 	}
-	// }
+	.btn-highlight {
+		margin: 20px auto 0;
+	}
+
+	.gt-ig-caption { //These captions only appear on mobile
+		position: relative;
+		max-width: 80%;
+		margin: 20px auto 0;
+		padding: 10px;
+		.box-shadow(0px 5px 10px darken(@lightBackground, 70%));
+		background-color: white;
+
+		&:before, &:after {
+			content: "";
+			position: absolute;
+			border-style: solid;
+		}
+
+		&.left {
+			&:before {
+				top: -40px;
+				left: 40px;
+				border-width: 40px 40px 0 0;
+				border-color: transparent white;		
+			}
+
+			&:after {
+				top: -40px;
+				left: 75px;
+				border-width: 40px 5px 0 0;
+				border-color: transparent lighten(@gasTownBrand, 5%); //Match with gradient as best we can
+			}
+		}
+
+		&.right {
+			&:before {
+				top: -40px;
+				right: 40px;
+				border-width: 40px 0 0 40px;
+				border-color: transparent white;		
+			}
+
+			&:after {
+				top: -40px;
+				right: 75px;
+				border-width: 40px 0 0 5px;
+				border-color: transparent lighten(@gasTownBrand, 1%); //Match with gradient as best we can
+			}
+		}			
+	}
+
+	@media (max-width: 767px) {
+		padding: 20px 0;
+		#gradient > .horizontal-three-colors(@gasTownBrand, lighten(@gasTownBrand, 10%), 55%, darken(@gasTownBrand, 15%));
+
+		.gt-ig-map {
+			display: none;
+		}
+
+		.gt-ig-heading {
+			position: static;
+			max-width: 221px; //Preserve formatting to comply with design
+			margin: 0 auto;
+			text-align: center;
+		}
+	}
+}
+
+.gt-ig-items {
+	@media (min-width: 769px) {
+		height: auto!important; //Override inline styles to force navigation to always be visible on desktop
+	}	
 }
 
 .gt.ig-sprite {
+	display: block;
 	position: absolute;
 	background: url("@{baseImagePath}/gastrack_2013/gas-track-infographic-spritex1.png") no-repeat 0 0;
 
-	&:hover {
-		-webkit-transform: scale(1);
-		-webkit-transition-timing-function: ease-out;
-		-webkit-transition-duration: 500ms;		
-	}
+	@media (max-width: 767px) {
+		position: static;
+		margin: 20px auto 0;
+	}	
 }
 
 .gt-ig-person:extend(.gt.ig-sprite all) {
 	left: 10%;
-	top: 8%;	
+	top: 8%;
 	width: 38px;
 	height: 96px;
 	background-position: -229px 0;
+	z-index: 9999; //This element is not hidden in mobile version by default so make sure it's visible in desktop
 }
 
 .gt-ig-store:extend(.gt.ig-sprite all) {
@@ -110,7 +189,7 @@
 	background-position: 0 -88px;
 
 	@media (max-width: 769px) {
-		left: 25%;
+		left: 23.5%; //Make sure store icon is aligned on tablet
 	}
 }
 
@@ -182,7 +261,7 @@
 
 .gt-content {
 	h1, h2, h3, h4, h5, h6 {
-		&:extend(.headline all);
+		color: lighten(black, 60%);
 	}
 
 	.gt-product-description {
@@ -215,6 +294,14 @@
 		.headline {
 			margin-top: 0;
 		}
+
+		@media (max-width: 769px) {
+			text-align: center;
+
+			.headline, .btn-highlight {
+				float: none;
+			}
+		}			
 	}
 
 	// Gas Track Product Range List Module
@@ -277,7 +364,7 @@
 
 		.focus-link {
 			display: block;
-		}
+		}	
 	}	
 
 	// Gas Track Bootstrap Accordian Override

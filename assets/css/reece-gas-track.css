@@ -201,7 +201,7 @@
 .gt-ig-truck {
   display: block;
   position: absolute;
-  background: url("../images/gastrack_2013/gas-track-infographic-spritex1.png") no-repeat 0 0;
+  background: url("../images/gastrack_2013/gas-track-infographic-spritex1-new.png") no-repeat 0 0;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 13/10), only screen and (min-resolution: 120dpi) {
   .gt.ig-sprite,
@@ -211,7 +211,7 @@
   .gt-ig-scan,
   .gt-ig-screen,
   .gt-ig-truck {
-    background-image: url("../images/gastrack_2013/gas-track-infographic-spritex2.png");
+    background-image: url("../images/gastrack_2013/gas-track-infographic-spritex2.png-new");
     -webkit-background-size: 328px 204px;
     -moz-background-size: 328px 204px;
     -o-background-size: 328px 204px;

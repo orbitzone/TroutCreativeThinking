@@ -49,8 +49,8 @@
 								<div id="gt-ig-items" class="gt-ig-items collapse">
 									<a href="#" class="gt-ig-person" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="You need to be a Reece customer and ARC registered."></a>
 									<div class="gt-ig-caption left visible-phone">You need to be a Reece customer and ARC registered.</div>									
-									<a href="#" class="gt-ig-store" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="61 convenient locations stock a full range of Refrigerant Gases and Re-Claim bottles."></a>
-									<div class="gt-ig-caption right visible-phone">61 convenient locations stock a full range of Refrigerant Gases and Re-Claim bottles.</div>
+									<a href="#" class="gt-ig-store" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="61 convenient locations Australia wide stock a full range of Refrigerant Gases and Re-Claim bottles."></a>
+									<div class="gt-ig-caption right visible-phone">61 convenient locations Australia wide stock a full range of Refrigerant Gases and Re-Claim bottles.</div>
 									<a href="#" class="gt-ig-bottle" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Purchase the refrigerant from your selected Reece branch."></a>
 									<div class="gt-ig-caption left visible-phone">Purchase the refrigerant from your selected Reece branch.</div>
 									<a href="#" class="gt-ig-scan" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="Bottles are scanned with a unique code creating a history of the bottles’ life from purchase to return."></a>

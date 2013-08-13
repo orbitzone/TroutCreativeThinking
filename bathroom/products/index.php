@@ -36,13 +36,11 @@
 					    	<div class="carousel-inner">
 					    		<div class="item active">
 									<a href="#">
-										<!-- <img src="/assets/images/products_2013/products-plumbing-be-free-mobile.jpg" alt="Fresh Approach" /> -->
 										<img src="http://placehold.it/730x500" alt="Place holder" />
 									</a>
 					    		</div>
 					    		<div class="item">
 									<a href="#">
-										<!-- <img src="/assets/images/products_2013/products-plumbing-be-free-mobile.jpg" alt="Fresh Approach" /> -->
 										<img src="http://placehold.it/730x500" alt="Place holder" />
 									</a>
 					    		</div>
@@ -347,12 +345,6 @@
 		  	); 
 		  	include_once($serverBase."/includes/foot/scripts.php");
 		?>			
-
-		<script type="text/javascript">
-			$(document).ready(function() {
-				$('#products-carousel').carousel();
-			});			
-		</script>
 
     </body>
 </html>

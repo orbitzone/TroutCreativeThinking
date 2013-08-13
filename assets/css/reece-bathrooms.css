@@ -442,19 +442,18 @@ a.item-video + a.item-video {
   text-align: center;
   min-height: 225px;
   background-color: #479cc0;
-  color: #fff;
   position: relative;
+}
+#landingTiles [class*="span"] a {
+  color: #fff;
+  text-decoration: none;
 }
 .no-touch #landingTiles [class*="span"]:hover,
 #happiness-carousel:hover {
   box-shadow: 0 1px 7px rgba(0, 0, 0, 0.6);
 }
 #landingTiles [class*="span"] a {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
+  display: block;
 }
 #landingTiles [class*="span"] hr {
   margin: 5px auto;
@@ -466,6 +465,8 @@ a.item-video + a.item-video {
 }
 #landingTiles .row-fluid .alt1 {
   background-color: #b1cdb7;
+}
+#landingTiles .row-fluid .alt1 a {
   color: #333;
 }
 #landingTiles .row-fluid .alt1 hr {

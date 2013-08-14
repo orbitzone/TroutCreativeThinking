@@ -26,14 +26,13 @@
 
 				<div class="article-banner-outlet row-fluid">
 					<img class="banner-logo pull-left" src="/assets/images/outlet_2013/outlet-banner-logo.png" alt="Outlet">
-					<div class="banner-news-alert-block pull-right">
-						<img src="/assets/images/outlet_2013/outlet-previous-article.jpg" alt="Outlet Article">
-						<span class="banner-news-alert-title"><b>Latest issue</b></span>
-						<span class="banner-news-alert-title">#138 Aug 2013</span>
-						<a class="btn btn-highlight btn-mini" href="#">Download PDF</a>
-						<a class="btn btn-highlight btn-mini" href="#">Previous issues</a>
-					</div>
 				</div>
+
+				<div class="news-alert-block">
+					<span class="news-alert-block-title">Latest issue / #138 / <b>Aug 2013</b></span>
+					<a class="btn btn-highlight-alternate btn-mini" href="#">Download PDF</a>
+					<a class="btn btn-highlight-alternate btn-mini" href="#">Previous issues</a>
+				</div>				
 
 				<div class="trade-navigation clearfix">
 					<span class="pull-left nav-guide"><b>What are you interested in?</b></span>

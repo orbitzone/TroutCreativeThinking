@@ -26,40 +26,18 @@
 			text-align: center;
 		}
 	}
+}
 
-	.banner-news-alert-block {
-		max-width: 185px; //Fix IE9 inline-block rendering issue
-		padding: 10px;
-		text-transform: uppercase;
-		color: white;
+.news-alert-block {
+	margin-top: -10px; //Suck news alert backup to be visually more related to the above module
+	margin-bottom: 20px;
+	padding: 5px 10px;
+	#gradient > .horizontal(lighten(@reeceGrey, 30%), @reeceGrey);
+	color: white;
 
-		.banner-news-alert-title {
-			display: block;
-		}
-
-		.btn {
-			margin-top: 5px;
-			min-width: 97px; //Make sure both boxes are the same width
-		}
-		
-		img {
-			float: left;
-			margin-right: 10px;
-		}
-	
-		@media only screen and (max-width : 979px) {
-			float: none;
-			max-width: none;
-			text-align: center;
-			background: white;
-			color: black;
-			border-bottom: 1px solid black;		
-
-			img {
-				display: none;
-			}
-		}
-	}	
+	.news-alert-block-title {
+		margin-right: 20px;
+	}
 }
 
 .article-banner-trade:extend(.article-banner all) {

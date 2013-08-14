@@ -28,6 +28,12 @@
 					<img class="banner-logo pull-left" src="/assets/images/outlet_2013/outlet-banner-logo.png" alt="Outlet">
 				</div>
 
+				<div class="news-alert-block">
+					<span class="news-alert-block-title">Latest issue / #138 / <b>Aug 2013</b></span>
+					<a class="btn btn-highlight-alternate btn-mini" href="#">Download PDF</a>
+					<a class="btn btn-highlight-alternate btn-mini" href="#">Previous issues</a>
+				</div>				
+
 				<div class="trade-navigation clearfix">
 					<span class="pull-left nav-guide"><b>What are you interested in?</b></span>
 					<ul class="pull-right">

@@ -45,47 +45,22 @@
   color: white;
   text-align: center;
 }
-.article-banner .banner-news-alert-block,
-.article-banner-trade .banner-news-alert-block,
-.article-banner-outlet .banner-news-alert-block {
-  max-width: 185px;
-  padding: 10px;
-  text-transform: uppercase;
+.news-alert-block {
+  margin-top: -10px;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  background-color: #4c4c4c;
+  background-image: -moz-linear-gradient(left, #999999, #4c4c4c);
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#999999), to(#4c4c4c));
+  background-image: -webkit-linear-gradient(left, #999999, #4c4c4c);
+  background-image: -o-linear-gradient(left, #999999, #4c4c4c);
+  background-image: linear-gradient(to right, #999999, #4c4c4c);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff999999', endColorstr='#ff4c4c4c', GradientType=1);
   color: white;
 }
-.article-banner .banner-news-alert-block .banner-news-alert-title,
-.article-banner-trade .banner-news-alert-block .banner-news-alert-title,
-.article-banner-outlet .banner-news-alert-block .banner-news-alert-title {
-  display: block;
-}
-.article-banner .banner-news-alert-block .btn,
-.article-banner-trade .banner-news-alert-block .btn,
-.article-banner-outlet .banner-news-alert-block .btn {
-  margin-top: 5px;
-  min-width: 97px;
-}
-.article-banner .banner-news-alert-block img,
-.article-banner-trade .banner-news-alert-block img,
-.article-banner-outlet .banner-news-alert-block img {
-  float: left;
-  margin-right: 10px;
-}
-@media only screen and (max-width: 979px) {
-  .article-banner .banner-news-alert-block,
-  .article-banner-trade .banner-news-alert-block,
-  .article-banner-outlet .banner-news-alert-block {
-    float: none;
-    max-width: none;
-    text-align: center;
-    background: white;
-    color: black;
-    border-bottom: 1px solid black;
-  }
-  .article-banner .banner-news-alert-block img,
-  .article-banner-trade .banner-news-alert-block img,
-  .article-banner-outlet .banner-news-alert-block img {
-    display: none;
-  }
+.news-alert-block .news-alert-block-title {
+  margin-right: 20px;
 }
 .article-banner-trade .banner-branding-block {
   border-right: 3px solid white;

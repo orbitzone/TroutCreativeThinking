@@ -7,33 +7,6 @@
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
-.clearfix {
-  *zoom: 1;
-}
-.clearfix:before,
-.clearfix:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.clearfix:after {
-  clear: both;
-}
-.hide-text {
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
-}
-.input-block-level {
-  display: block;
-  width: 100%;
-  min-height: 30px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
 article,
 aside,
 details,
@@ -6293,6 +6266,33 @@ a.badge:focus {
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 @-ms-viewport {
   width: device-width;
 }
@@ -7425,6 +7425,41 @@ h6 {
 .btn-highlight:active,
 .btn-highlight.active {
   background-color: #a89d8f \9;
+}
+.btn-highlight-alternate {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #666666;
+  background-image: -moz-linear-gradient(top, #666666, #666666);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#666666), to(#666666));
+  background-image: -webkit-linear-gradient(top, #666666, #666666);
+  background-image: -o-linear-gradient(top, #666666, #666666);
+  background-image: linear-gradient(to bottom, #666666, #666666);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff666666', endColorstr='#ff666666', GradientType=0);
+  border-color: #666666 #666666 #3f3f3f;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #666666;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.btn-highlight-alternate:hover,
+.btn-highlight-alternate:focus,
+.btn-highlight-alternate:active,
+.btn-highlight-alternate.active,
+.btn-highlight-alternate.disabled,
+.btn-highlight-alternate[disabled] {
+  color: #ffffff;
+  background-color: #666666;
+  *background-color: #595959;
+}
+.btn-highlight-alternate:active,
+.btn-highlight-alternate.active {
+  background-color: #4c4c4c \9;
 }
 .ocnav-wrapper {
   display: none;

@@ -29,7 +29,13 @@
 					<div class="banner-branding-block page-branding box-brand pull-right">
 						<h3 class="banner-branding-title">Civil</h3>
 					</div>
-				</div>		
+				</div>	
+
+				<div class="news-alert-block">
+					<span class="news-alert-block-title">Latest issue / #138 / <b>Aug 2013</b></span>
+					<a class="btn btn-highlight-alternate btn-mini" href="#">Download PDF</a>
+					<a class="btn btn-highlight-alternate btn-mini" href="#">Previous issues</a>
+				</div>						
 
 				<ul class="breadcrumb">
 					<li><a href="#">Outlet</a> <span class="divider">/</span></li>

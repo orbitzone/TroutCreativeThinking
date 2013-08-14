@@ -96,14 +96,8 @@
 	}
 
 	.trade-navigation { //No support for 'display: table-cell'
-		ul {
-			display: block;
-			width: 70%;
-		}
-
 		li {
 			float: left;
-			width: 20%;
 		}
 	}
 }
@@ -115,5 +109,20 @@
 .lt-ie9 {
 	.gt-navigation, .gt-ig-items {
 		height: auto!important; //Items not displaying due to lack of media queries
+	}
+}
+
+// Happiness Zone
+//====================================================================================================================================
+//====================================================================================================================================
+
+.lt-ie8 {
+	#landingTiles [class*="span"] {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	#landingTiles [class*="span"] a {
+		padding: 10px;
 	}
 }

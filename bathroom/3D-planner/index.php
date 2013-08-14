@@ -57,6 +57,7 @@
 	<video style="width:100%; height:auto" width="744" height="310" autoplay>
 		<source type="video/mp4"  src="../../assets/video/ThreeDPlanner/bathroom_planner.mp4" />
 	</video></div>
+	<!-- that's a whacky folder name -->
 
 
 

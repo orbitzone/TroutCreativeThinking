@@ -63,3 +63,14 @@
 .lt-ie8 .trade-navigation li {
   float: left;
 }
+.lt-ie9 .gt-navigation,
+.lt-ie9 .gt-ig-items {
+  height: auto!important;
+}
+.lt-ie8 #landingTiles [class*="span"] {
+  padding-left: 0;
+  padding-right: 0;
+}
+.lt-ie8 #landingTiles [class*="span"] a {
+  padding: 10px;
+}

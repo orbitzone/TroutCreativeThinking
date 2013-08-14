@@ -7,11 +7,12 @@
 @import "reece-variables.less";
 @import "reece-mixins.less";
 
-// Headline
+// Headline Module
 //====================================================================================================================================
 //====================================================================================================================================
 
 .headline {
+	margin-top: 0;
 	color: lighten(black, 60%);
 
 	&.tagline {
@@ -20,30 +21,546 @@
 	}
 }
 
-// Gas Track Navigation
+.lead {
+	font-size: 16px;
+	line-height: 1.5;
+	color: @gasTownBrand;
+}
+
+// Gas Track Navigation Module
 //====================================================================================================================================
 //====================================================================================================================================
 
-.gas-track-navigation {
-
-	> li > a {
-		padding: 15px;
-		.border-radius(0);
-		background-color: lighten(@warmHighlightBackground, 25%);
-		color: black;
-
-		&:hover {
+.gt-navigation {
+	> li {
+		&.active > a,&.active > a:hover, & > a:hover {
+			color: black;
 			background-color: @warmHighlightBackground;
+		}
+		> a {
+			padding: 15px;
+			.border-radius(0);
+			background-color: lighten(@warmHighlightBackground, 25%);
+			color: black;
+		}
+	}
+
+	@media (min-width: 769px) {
+		height: auto!important; //Override inline styles to force navigation to always be visible on desktop
+	}	
+}
+
+.gt-navigation-toggle {
+	margin-top: 15px;
+	padding: 15px;
+	color: black;
+	background-color: lighten(@warmHighlightBackground, 25%);
+
+	&:hover {
+		color: black;
+		background-color: @warmHighlightBackground;
+		text-decoration: none;
+	}
+}
+
+// Gas Track Infographic Module
+// ====================================================================================================================================
+// ====================================================================================================================================
+
+.gt-banner-ig {
+	position: relative;
+	width: 100%;
+	margin: 0 0 20px 0;
+
+	.gt-ig-heading {
+		position: absolute;
+		max-width: 144px; //Preserve formatting to comply with design
+		left: 3%;
+		bottom: 3%;
+		color: white;
+		z-index: 9999;
+	}
+
+	.btn-highlight {
+		margin: 20px auto 0;
+	}
+
+	.popover {
+		background-color: black;
+		color: white;
+		.box-shadow(0px 5px 10px darken(@lightBackground, 70%));
+		z-index: 9999;
+
+		.popover-content {
+			p {
+				margin: 0;
+			}
+		}
+
+		.popover-title {
+			display: none;
+		}
+
+		&.right, &.right .arrow:after {
+			border-right-color: black;
+		}
+		&.left, &.left .arrow:after {
+			border-left-color: black;
+		}	
+		&.top, &.top .arrow:after {
+			border-top-color: black;
+		}		
+		&.bottom, &.bottom .arrow:after {
+			border-bottom-color: black;
+		}	
+
+		@media (max-width: 767px) {
+			display: none!important; //Ensure popovers are disabled on mobile (there are only 6 in this case so we are okay to hide them instead of unbinding the events)
+		}					
+	}	
+
+	.gt-ig-caption {
+
+		@media (max-width: 767px) {
+			position: relative;
+			max-width: 80%;
+			margin: 20px auto 0;
+			padding: 10px;
+			.box-shadow(0px 5px 10px darken(@lightBackground, 70%));
+			background-color: white;
+
+
+			&:before, &:after {
+				content: "";
+				position: absolute;
+				border-style: solid;
+			}
+
+			&.left {
+				&:before {
+					top: -40px;
+					left: 40px;
+					border-width: 40px 40px 0 0;
+					border-color: transparent white;		
+				}
+
+				&:after {
+					top: -40px;
+					left: 75px;
+					border-width: 40px 5px 0 0;
+					border-color: transparent lighten(@gasTownBrand, 5%); //Match with gradient as best we can
+				}
+			}
+
+			&.right {
+				&:before {
+					top: -40px;
+					right: 40px;
+					border-width: 40px 0 0 40px;
+					border-color: transparent white;		
+				}
+
+				&:after {
+					top: -40px;
+					right: 75px;
+					border-width: 40px 0 0 5px;
+					border-color: transparent lighten(@gasTownBrand, 1%); //Match with gradient as best we can
+				}
+			}		
+		}	
+	}
+
+	.gt-ig-reveal {
+		left: 10%;
+		padding-left: 3%;
+	}	
+
+	@media (max-width: 767px) {
+		padding: 20px 0;
+		#gradient > .horizontal-three-colors(@gasTownBrand, lighten(@gasTownBrand, 10%), 55%, darken(@gasTownBrand, 15%));
+
+		.gt-ig-map {
+			display: none;
+		}
+
+		.gt-ig-heading {
+			position: static;
+			max-width: 221px; //Preserve formatting to comply with design
+			margin: 0 auto;
+			text-align: center;
 		}
 	}
 }
 
-// Gas Track Content
+.gt-ig-items {
+	@media (min-width: 767px) {
+		height: auto!important; //Override inline styles to force navigation to always be visible on desktop
+	}	
+}
+
+.gt.ig-sprite {
+	display: block;
+	position: absolute;
+	//background: url("@{baseImagePath}/gastrack_2013/gas-track-infographic-spritex1.png") no-repeat 0 0;
+    background: url("@{baseImagePath}/gastrack_2013/gas-track-infographic-spritex1.png") no-repeat 0 0;
+    .image-2x("@{baseImagePath}/gastrack_2013/gas-track-infographic-spritex2.png", 328px, 204px);
+
+	@media (max-width: 767px) {
+		position: static;
+		margin: 20px auto 0;
+	}	
+}
+
+.gt-ig-person:extend(.gt.ig-sprite all) {
+	left: 10%;
+	top: 8%;
+	width: 38px;
+	height: 96px;
+	background-position: -229px 0;
+}
+
+.gt-ig-store:extend(.gt.ig-sprite all) {
+	left: 27%;
+	top: 7%;
+	width: 128px;
+	height: 100px;
+	background-position: 0 -88px;
+
+	@media (max-width: 769px) {
+		left: 23.5%; //Make sure store icon is aligned on tablet
+	}
+}
+
+.gt-ig-bottle:extend(.gt.ig-sprite all) {
+	left: 54%;
+	top: 8%;
+	width: 77px;
+	height: 110px;
+	background-position: -148px 0;	
+}
+
+.gt-ig-scan:extend(.gt.ig-sprite all) {
+	left: 80%;
+	top: 12%;
+	width: 51px;
+	height: 83px;
+	background-position: -145px -114px;
+}
+
+.gt-ig-screen:extend(.gt.ig-sprite all) {
+	left: 80%;
+	top: 55%;
+	width: 102px;
+	height: 90px;
+	background-position: -227px -108px;
+}
+
+.gt-ig-truck:extend(.gt.ig-sprite all) {
+	left: 50%;
+	top: 65%;
+	width: 143px;
+	height: 85px;
+	background-position: 0 0;
+}
+
+// Gas Track Sidebar Modules
 //====================================================================================================================================
 //====================================================================================================================================
 
-.gas-track-content {
+.gt-sidebar {
 	.headline {
-		margin-top: 0;
+		margin-top: 10px;
 	}
+}
+
+// Gas Track Sidebar Modules
+//====================================================================================================================================
+//====================================================================================================================================
+
+.gt-latest-news {
+
+	.gt-latest-news-block {
+		margin-top: 20px;
+
+		@media (max-width: 979px) {
+			margin-left: 0;
+			width: 100%;
+		}		
+	}
+
+	.focus-link {
+		display: block;
+	}
+}
+
+// Gas Track Content Modules
+//====================================================================================================================================
+//====================================================================================================================================
+
+.gt-content {
+	h1, h2, h3, h4, h5, h6 {
+		color: lighten(black, 60%);
+	}
+
+	.gt-product-description {
+		margin-top: 10px;
+	}
+}
+
+	// Gas Track Media Object Module
+	//====================================================================================================================================
+	//====================================================================================================================================
+
+	.gt-media-object {
+		margin-bottom: 20px;
+
+		&.pull-left {
+			margin-right: 20px;
+		}
+		&.pull-right {
+			margin-left: 20px;
+		}	
+	}
+
+	// Gas Track Product Range List Module
+	//====================================================================================================================================
+	//====================================================================================================================================
+
+	.gt-product-range-list {
+		margin-bottom: 20px;
+
+		.gt-product-range-row {
+			text-align: center;
+
+			//As we can't extend correctly and we don't have access to column variations in Bootstrap 2.3.2 (fail) we'll need to manually create them
+			@media (min-width: 979px) {
+				float: left;
+				.custom-column-item(6);
+
+				&:first-child {
+					margin-left: 0;
+				}
+			}	
+			@media (max-width: 977px) {
+				& + .gt-product-range-row {
+					margin-top: 20px;
+				}
+			}
+		}
+		.carousel {
+			a, img {
+				display: block;
+				margin: 0 auto;
+			}
+		}	
+	}
+
+
+	// Gas Track Store Finder Module
+	//====================================================================================================================================
+	//====================================================================================================================================
+
+	.gt-store-finder-list {
+
+		.gt-store-finder-row {
+			font-size: 12px;
+
+			.vcard {
+				margin-bottom: 20px;
+			}
+
+			//As we can't extend correctly and we don't have access to column variations in Bootstrap 2.3.2 (fail) we'll need to manually create them
+			@media (min-width: 979px) {
+				float: left;
+				.custom-column-item(6);
+
+				&:first-child {
+					margin-left: 0;
+				}
+			}	
+		}
+
+		.focus-link {
+			display: block;
+		}	
+	}	
+
+	// Gas Track Bootstrap Accordian Override
+	//====================================================================================================================================
+	//====================================================================================================================================
+
+	//Removed accordian-group default styles
+	#product-range-content .accordion-group {
+		margin-bottom: 0;
+		border: 0;
+	}
+
+	// Gas Track Product Range Content Module
+	//====================================================================================================================================
+	//====================================================================================================================================
+
+	.product-range-content {
+		dt, dd {
+			padding: 5px 0;
+		}
+
+		dt {
+			width: auto;
+			text-align: left;
+			border-top: 1px solid lighten(@reeceGrey, 60%);
+
+			&:first-child {
+				border-top: 0;
+			}
+		}
+
+		dd {
+			margin-left: 120px;
+			border-bottom: 1px solid lighten(@reeceGrey, 60%);
+
+			&:last-child {
+				border-bottom: 0;
+			}
+
+			@media (max-width: 767px) {
+				margin-left: 0;
+				padding-top: 0;
+			}
+		}
+
+		.gt-product-block {
+			margin-bottom: 20px;
+		}
+
+		.table {
+			td {
+				border-top: 0;
+				background-color: lighten(@warmHighlightBackground, 25%);
+			}
+		}
+		.table-striped tbody > tr:nth-child(odd) > td {
+			background-color: @warmHighlightBackground;
+			font-weight: bold;
+		}	
+	}
+
+// Media File Module
+//====================================================================================================================================
+//====================================================================================================================================
+
+.media-file {
+	display: inline-block;
+
+	span {
+		display: block;
+	}
+}
+
+// Product Block Module
+//====================================================================================================================================
+//====================================================================================================================================
+
+.gt-product-description {
+	display: block;
+	text-align: center;
+	width: 100%;
+	padding: 5px 0;
+}
+
+// Read More Module
+//====================================================================================================================================
+//====================================================================================================================================
+
+.focus-link {
+	text-transform: uppercase;
+	color: @gasTownBrand;
+
+	&:hover {
+		color: darken(@gasTownBrand, 10%);
+	}
+}
+
+// Custom Button Module
+//====================================================================================================================================
+//====================================================================================================================================
+
+.btn-highlight {
+	.buttonBackground(@warmHighlightBackground, @warmHighlightBackground);
+	.border-radius(0);
+}
+
+// Product Branding Modules
+//====================================================================================================================================
+//====================================================================================================================================
+
+.r22 {
+	&.gt-product-block:extend(.gt-product-description all) {
+		.gt-branding-block(@r22);
+	}
+	&.gt-product-link {		
+		.gt-branding-link(@r22);
+	}	
+}
+
+.r407f {
+	&.gt-product-block:extend(.gt-product-description all) {
+		.gt-branding-block(@r407f);
+	}
+	&.gt-product-link {		
+		.gt-branding-link(@r407f);
+	}		
+}
+
+.r134a {
+	&.gt-product-block:extend(.gt-product-description all) {
+		.gt-branding-block(@r134a);
+	}
+	&.gt-product-link {		
+		.gt-branding-link(@r134a);
+	}		
+}
+
+.r410a {
+	&.gt-product-block:extend(.gt-product-description all) {
+		.gt-branding-block(@r410a);
+	}
+	&.gt-product-link {		
+		.gt-branding-link(@r410a);
+	}		
+}
+
+.r404a {
+	&.gt-product-block:extend(.gt-product-description all) {
+		.gt-branding-block(@r404a);
+	}
+	&.gt-product-link {		
+		.gt-branding-link(@r404a);
+	}	
+}
+
+.r438a {
+	&.gt-product-block:extend(.gt-product-description all) {
+		.gt-branding-block(@r438a);
+	}
+	&.gt-product-link {		
+		.gt-branding-link(@r438a);
+	}		
+}
+
+.r407c {
+	&.gt-product-block:extend(.gt-product-description all) {
+		.gt-branding-block(@r407c);
+	}
+	&.gt-product-link {
+		.gt-branding-link(@r407c);	
+	}
+}
+
+.r507a {
+	&.gt-product-block:extend(.gt-product-description all) {
+		.gt-branding-block(@r507a);
+	}
+	&.gt-product-link {		
+		.gt-branding-link(@r507a);
+	}		
 }

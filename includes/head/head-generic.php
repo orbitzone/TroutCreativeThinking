@@ -14,10 +14,10 @@
 			<link href="<?php print $value; ?>" rel="stylesheet" type="text/css" media="screen, projection">
 		<?php endforeach; ?>
 
-		<?php if ($cssPrintStyle) : ?>
+		<?php if (isset($cssPrintStyle)) : ?>
 			<link href="<?php print $cssPrintStyle; ?>" rel="stylesheet" type="text/css" media="print">
-		<?php endif; ?>
-
+		<?php endif; ?> 
+		
         <!--[if lt IE 9]>
             <link href="/assets/css/reece-ie.css" rel="stylesheet" type="text/css">
         <![endif]-->

@@ -1,37 +1,13 @@
 	
-	//Unused
-	.custom-column (@columns: 3) {
-		.clearfix();
-		width: 100%;
-		margin: 0;
-		list-style-type: none;		
-
-		li {
-			float: left;
-			.custom-column-item(@columns);
-
-			&:first-child {
-				margin-left: 0;
-			}
-
-			@media (max-width: 979px) {
-				margin-left: 0;
-				.custom-column-item(@columns + 3);
-
-				& + li {
-					margin-left: 0;
-				}	
-			}			
-		}
-	}
-
+	//Create a column based on bootstrap variables
 	.custom-column-item (@columns: 3) {
 		margin-left: @fluidGridGutterWidth;
 		*margin-left: @fluidGridGutterWidth - (.5 / @gridRowWidth * 100 * 1%);			
 		width: (@fluidGridColumnWidth * @columns) + (@fluidGridGutterWidth * (@columns - 1));
 		*width: (@fluidGridColumnWidth * @columns) + (@fluidGridGutterWidth * (@columns - 1)) - (.5 / @gridRowWidth * 100 * 1%);
-	}
+	}	
 
+	//Generate a background retina image
 	.image-2x (@image, @width: auto, @height: @width) {
 		@media only screen and (-webkit-min-device-pixel-ratio: 1.3),
 	    only screen and (-o-min-device-pixel-ratio: 13/10),
@@ -42,4 +18,42 @@
 		    -o-background-size: @width @height;
 		    background-size: @width @height;
 		}
+	}
+
+	//Generate a link based on a color
+	.gt-branding-link (@color: white) {
+		background: @color;
+	    .text-lightness-true() {}
+	    .text-lightness-true() when (lightness(@color) >= 50%) {
+	    	color: black;
+	      	&:hover {
+		    	color: black;
+				background-color: lighten(@color, 10%);
+	      	}
+	    }
+	    .text-lightness-true;
+	    .text-lightness-false() {}
+	    .text-lightness-false() when (lightness(@color) < 50%) {
+	    	color: white;
+	      	&:hover {
+		    	color: white;
+				background-color: lighten(@color, 10%);
+	      	}
+	    }
+	    .text-lightness-false; 
+	}	
+
+	//Generate a block based on a color
+	.gt-branding-block (@color: white) {
+		background: @color;
+	    .text-lightness-true() {}
+	    .text-lightness-true() when (lightness(@color) >= 50%) {
+	    	color: black;
+	    }
+	    .text-lightness-true;
+	    .text-lightness-false() {}
+	    .text-lightness-false() when (lightness(@color) < 50%) {
+	    	color: white;
+	    }
+	    .text-lightness-false; 
 	}		

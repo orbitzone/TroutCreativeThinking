@@ -53,14 +53,19 @@
 
 
 
-	<div id="videoframe">     
-	<video style="width:100%; height:auto" width="744" height="310" autoplay>
+	<div id="videoframe" class="visible-tablet">     
+	<video style="width:100%; background-color:#FFFFFF;" width="744" height="191" bgcolor="#FFFFFF" autoplay>
 		<source type="video/mp4"  src="../../assets/video/ThreeDPlanner/bathroom_planner.mp4" />
-	</video></div>
-	<!-- that's a whacky folder name -->
+	</video>
+</div>
 
 
 
+	<div id="videoframe2" class="visible-desktop visible-phone">     
+	<video style="width:100%; height:auto; background-color:#FFFFFF;" width="744" height="390" bgcolor="#FFFFFF" autoplay>
+		<source type="video/mp4"  src="../../assets/video/ThreeDPlanner/bathroom_planner.mp4" />
+	</video>
+</div>
 
 
 
@@ -77,36 +82,48 @@
 									Whether you&rsquo;re designing a brand new bathroom or planning a renovation,&nbsp;the Reece 3D Bathroom Planner will help you create the ultimate look.
 								</p>
 							</div>
+
+
+
 							<div class="span4 plannerSteps">
 								<h4>
 									<i class="icon-pencil">
 									</i>
 									&nbsp;How to plan your perfect bathroom
 								</h4>
-								<div class="strip">
-									<span class="badge badge-important">
-										1</span><strong>Set up
-									</strong>
-									and design your room
+
+									
+	
+
+
+
+
+
+
+		
+
+
+					<div class="strip">
+									<span class="badge badge-important">1</span><span class="step"><strong>Set up</strong> and design your room</span>
 								</div>
 								<div class="strip">
-									<span class="badge badge-important">
-										2</span><strong>Select
-									</strong>
-									your favourite Reece product
+									<span class="badge badge-important">2</span><span class="step"><strong>Select</strong> your favourite Reece product</span>
 								</div>
 								<div class="strip">
-									<span class="badge badge-important">
-										3</span><strong>Add
-									</strong>
-									your finishing touches
+									<span class="badge badge-important">3</span><span class="step"><strong>Add</strong> your finishing touches</span>
 								</div>
 								<div class="strip">
-									<span class="badge badge-important">
-										4</span><strong>Review
-									</strong>
-									your room in 3d
+									<span class="badge badge-important">4</span><span class="step"><strong>Review</strong> your room in 3d</span>
 								</div>
+
+
+
+
+
+
+
+
+
 								<a href="http://www.reece.com.au:8080/vp" class="btn btn-danger btn-large btn-block visible-desktop" style="margin-auto">
 									Start Planning
 									<i class="icon-play">
@@ -114,6 +131,10 @@
 								</a>
 							</div>
 						</div>
+
+
+
+
 					</div>
 					<div class="main-item plannerThumbs visible-desktop visible-tablet">
 						<div class="row-fluid">
@@ -128,22 +149,22 @@
 						</div>
 						<div class="row-fluid">
 							<div class="span2">
-								  <a data-toggle="modal" href="#myModal" ><img src="../../assets/images/ThreeDPlanner/thumb.jpg" alt=""></a>
+								 <img src="../../assets/images/ThreeDPlanner/picture1.jpg" alt="">
 								</div>
 								<div class="span2">
-									 <a data-toggle="modal" href="#myModal" ><img src="../../assets/images/ThreeDPlanner/thumb.jpg" alt=""></a>
+									<img src="../../assets/images/ThreeDPlanner/picture2.jpg" alt="">
 									</div>
 									<div class="span2">
-										 <a data-toggle="modal" href="#myModal" ><img src="../../assets/images/ThreeDPlanner/thumb.jpg" alt=""></a>
+										<img src="../../assets/images/ThreeDPlanner/picture3.jpg" alt="">
 										</div>
 										<div class="span2">
-											 <a data-toggle="modal" href="#myModal" ><img src="../../assets/images/ThreeDPlanner/thumb.jpg" alt=""></a>
+											 <img src="../../assets/images/ThreeDPlanner/picture4.jpg" alt="">
 											</div>
 											<div class="span2">
-												 <a data-toggle="modal" href="#myModal" ><img src="../../assets/images/ThreeDPlanner/thumb.jpg" alt=""></a>
+												 <img src="../../assets/images/ThreeDPlanner/picture5.jpg" alt="">
 												</div>
 												<div class="span2">
-													 <a data-toggle="modal" href="#myModal" ><img src="../../assets/images/ThreeDPlanner/thumb.jpg" alt=""></a>
+													 <img src="../../assets/images/ThreeDPlanner/picture6.jpg" alt="">
 													</div>
 												</div>
 											</div>
@@ -164,8 +185,12 @@
                          <div id="winnersCarousel" class="carousel slide" data-bs-carousel="carousel" data-bs-carousel-interval="50" >
 
                           <div class="carousel-inner">
-                            <div class="active item"><img src="../../assets/images/ThreeDPlanner/gallery_image.jpg" alt=""></div>
-                            <div class="item"><img src="../../assets/images/ThreeDPlanner/gallery_image.jpg" alt=""></div>
+                            <div class="active item"> <img src="../../assets/images/ThreeDPlanner/picture1.jpg" alt=""></div>
+                            <div class="item"> <img src="../../assets/images/ThreeDPlanner/picture2.jpg" alt=""></div>
+                             <div class="item"> <img src="../../assets/images/ThreeDPlanner/picture3.jpg" alt=""></div>
+                              <div class="item"> <img src="../../assets/images/ThreeDPlanner/picture4.jpg" alt=""></div>
+                               <div class="item"> <img src="../../assets/images/ThreeDPlanner/picture5.jpg" alt=""></div>
+                                <div class="item"> <img src="../../assets/images/ThreeDPlanner/picture6.jpg" alt=""></div>
                           </div>
                           <a class="carousel-control left" href="#winnersCarousel" data-slide="prev">&lsaquo;</a>
                           <a class="carousel-control right" href="#winnersCarousel" data-slide="next">&rsaquo;</a>
@@ -285,10 +310,10 @@ if (document.images) {
 	<script>
 	$('video,audio').mediaelementplayer({
 		features: [],
-		iPadUseNativeControls: false,
-   		iPhoneUseNativeControls: false,
-   		iPadForceNativeControls:false,
-   		iPhoneForceNativeControls:false,
+		iPadUseNativeControls: true,
+   		iPhoneUseNativeControls: true,
+   		iPadForceNativeControls:true,
+   		iPhoneForceNativeControls:true,
 		loop: false,
 		success: function (mediaElement, domObject) { 
 			mediaElement.addEventListener('ended', function(e)
@@ -299,6 +324,7 @@ if (document.images) {
 			if($.browser.safari)
 			{
 			mediaElement.play();
+			player.play();
 			}
 
  

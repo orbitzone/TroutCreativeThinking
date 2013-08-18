@@ -45,7 +45,7 @@
 						<div class="span8">
 
 							<div id="videoframe" >
-								<video style="width:100%; height:100%  background-color:#FFFFFF;" width="100%" height="100%" bgcolor="#FFFFFF" poster="../../assets/images/ThreeDPlanner/poster.jpg" autoplay>
+								<video style="width:100%; height:100%; border: none;  background-color:#FFFFFF;" width="100%" height="100%" bgcolor="#FFFFFF" poster="../../assets/images/ThreeDPlanner/poster.jpg" autoplay="autoplay">
 									<source type="video/mp4" src="../../assets/video/ThreeDPlanner/bathroom_planner.mp4" />
 								</video>
 							</div>
@@ -254,7 +254,8 @@ if (document.images) {
    		iPadForceNativeControls:true,
    		iPhoneForceNativeControls:true,
 		loop: false,
-		success: function (mediaElement, domObject) { 
+		success: function (mediaElement, domObject) {
+			/* 
 			mediaElement.addEventListener('ended', function(e)
 			{
 				$("#videoframe").html("<img style='border:none; ' src='../../assets/images/ThreeDPlanner/end_frame.jpg' />");
@@ -263,8 +264,8 @@ if (document.images) {
 			if($.browser.safari)
 			{
 			mediaElement.play();
-			player.play();
 			}
+			*/
 
  
         }

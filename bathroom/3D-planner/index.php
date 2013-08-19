@@ -255,7 +255,7 @@ if (document.images) {
    		iPhoneForceNativeControls:true,
 		loop: false,
 		success: function (mediaElement, domObject) {
-			/* 
+			 
 			mediaElement.addEventListener('ended', function(e)
 			{
 				$("#videoframe").html("<img style='border:none; ' src='../../assets/images/ThreeDPlanner/end_frame.jpg' />");
@@ -265,7 +265,7 @@ if (document.images) {
 			{
 			mediaElement.play();
 			}
-			*/
+			
 
  
         }

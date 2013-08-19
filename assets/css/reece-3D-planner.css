@@ -27,6 +27,7 @@
 }
 body {
   background-color: #EAEAEA !important;
+  font-family: arial !important;
 }
 .ocmain-wrapper {
   /*z-index: auto !important;*/
@@ -113,6 +114,20 @@ body {
   background-color: #FFFFFF;
   padding: 12px 10px;
 }
+.mejs-overlay {
+  width: 100% !important;
+  height: 100% !important;
+}
+.mejs-controls {
+  display: none !important;
+}
+.mejs-overlay-button {
+  display: none !important;
+}
+#ThreeDPlannerWrapper .step {
+  position: absolute;
+  margin-top: 17px;
+}
 /*
 ----------------------------------------------
 RESPONSIVE OVERRIDES
@@ -125,6 +140,22 @@ RESPONSIVE OVERRIDES
   #ThreeDPlannerWrapper .badge {
     font-size: 14px;
     padding: 10px;
+  }
+  #ThreeDPlannerWrapper .step {
+    position: absolute;
+    margin-top: 11px;
+  }
+}
+@media (max-width: 769px) and (min-width: 600px) {
+  #videoframe {
+    border: 0px solid blue;
+    height: 190px;
+  }
+}
+@media (max-width: 1024px) and (min-width: 1000px) {
+  #videoframe {
+    border: 0px solid red;
+    height: 265px;
   }
 }
 @media (max-width: 979px) {
@@ -163,6 +194,10 @@ RESPONSIVE OVERRIDES
   #ThreeDPlannerWrapper .step {
     position: absolute;
     margin-top: 17px;
+  }
+  #videoframe {
+    border: 0px solid red;
+    height: 98px;
   }
   .icon-warning-sign {
     float: left;

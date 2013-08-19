@@ -9,8 +9,11 @@
 
 
 
+
+
 body{
     background-color: #EAEAEA !important;
+    font-family:arial !important;
 }
 
 
@@ -123,6 +126,27 @@ line-height:100%;
 }
 
 
+
+.mejs-overlay{
+    width:100% !important;
+    height:100% !important;
+
+}
+
+
+.mejs-controls{
+  display:none !important;
+}
+
+.mejs-overlay-button{
+      display:none !important;
+}
+
+#ThreeDPlannerWrapper .step {
+    position:absolute;  
+    margin-top:17px;
+}
+
 /*
 ----------------------------------------------
 RESPONSIVE OVERRIDES
@@ -141,7 +165,42 @@ padding:10px;
 }
 
 
+#ThreeDPlannerWrapper .step {
+    position:absolute;  
+    margin-top:11px;
 }
+
+
+
+}
+
+
+
+@media (max-width: 769px) and (min-width: 600px) {
+  
+#videoframe{
+    border: 0px solid blue;
+    height:190px;
+}
+
+
+}
+
+
+
+@media (max-width: 1024px) and (min-width: 1000px) {
+  
+#videoframe{
+    border: 0px solid red;
+    height:265px;
+}
+
+
+}
+
+
+
+
 
 @media (max-width: 979px) {
   
@@ -204,7 +263,10 @@ height:44px;
 }
 
 
-
+#videoframe{
+    border: 0px solid red;
+    height:98px;
+}
 
 
 

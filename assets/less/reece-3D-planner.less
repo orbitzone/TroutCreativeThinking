@@ -92,7 +92,8 @@ background-color: #DB1E23;
 background-color: #FFFFFF;
 width:100%;
 -webkit-border-radius: 30px 0px 0px 30px !important;
-border-radius: 30px px px 30px !important;
+border-radius: 30px 0px 0px 30px !important;
+border-radius: 30px 0px 0px 30px !important;
 margin-bottom:15px;
 color:#555555;
 line-height:100%;
@@ -126,11 +127,15 @@ line-height:100%;
 
 
 
+
+
 .mejs-overlay{
     width:100% !important;
     height:100% !important;
 
 }
+
+
 
 
 .mejs-controls{
@@ -160,7 +165,7 @@ RESPONSIVE OVERRIDES
 
 #ThreeDPlannerWrapper .badge {
 font-size:14px;
-padding:10px;
+padding:10px 13px;
 }
 
 
@@ -184,6 +189,9 @@ padding:10px;
 }
 
 
+
+
+
 }
 
 
@@ -197,6 +205,8 @@ padding:10px;
 }
 
 
+
+
 }
 
 
@@ -207,6 +217,17 @@ padding:10px;
 
 
 @media (max-width: 979px) {
+
+
+.main-item .span8{
+    width:100% !important;
+}
+
+.main-item .span4{
+    width:100% !important;
+    margin-left:0px !important;
+}
+
   
   .icon-warning-sign{
     float:left; 
@@ -215,18 +236,38 @@ padding:10px;
 }
 
 #ThreeDPlannerWrapper .strip {
-font-size: 10px;
+font-size: 14px;
 height:34px;
 }
 
 
 #ThreeDPlannerWrapper .badge {
 margin-right:5px;
+padding:10px 13px;
+}
+
+#ThreeDPlannerWrapper .step {
+    position:absolute;  
+    margin-top:10px;
+}
+
+
+#videoframe{
+    border: 0px solid blue;
+     height:291px;
+
 }
 
 
 
+
 }
+
+
+
+
+
+
 
 @media (max-width: 767px) {
   
@@ -234,13 +275,13 @@ margin-right:5px;
 
 
 #ThreeDPlannerWrapper .strip {
-font-size: 10px;
+font-size: 16px;
 height:44px;
 }
 
 #ThreeDPlannerWrapper .badge {
 font-size:18px;
-padding:15px;
+padding:15px 17px;
 }
 
 
@@ -248,12 +289,60 @@ padding:15px;
     position:absolute;  
     margin-top:17px;
 }
+
+#videoframe{
+    border: 0px solid red;
+    margin-bottom:40px;
+    height:251px;
+
+
+}
+
+
 }
 
 
 
 
-@media (max-width: 320px) {
+
+
+@media (max-width: 640px) {
+
+
+#videoframe{
+    border: 0px solid blue;
+     height:211px;
+
+}
+
+
+}
+
+
+
+@media (max-width: 480px) {
+
+
+
+#videoframe{
+    border: 0px solid red;
+    height:98px;
+    margin-bottom:60px;
+}
+
+#ThreeDPlannerWrapper .strip {
+font-size: 14px;
+height:44px;
+}
+
+
+
+}
+
+
+
+
+@media (max-width: 380px) {
 
 #ThreeDPlannerWrapper .strip {
 font-size: 10px;
@@ -270,6 +359,7 @@ height:44px;
 #videoframe{
     border: 0px solid red;
     height:98px;
+    margin-bottom:0px;
 }
 
 

@@ -109,7 +109,8 @@
 					</div>
 					<div class="row-fluid">
 						<div class="span2">
-							<img src="../../assets/images/ThreeDPlanner/picture1.jpg" alt="">
+							<a data-toggle="modal" href="#myModal">
+							<img src="../../assets/images/ThreeDPlanner/picture1.jpg" alt=""></a>
 							</div>
 							<div class="span2">
 								<img src="../../assets/images/ThreeDPlanner/picture2.jpg" alt="">
@@ -138,6 +139,8 @@
 													<div id="winnersCarousel" class="carousel slide" data-bs-carousel="carousel" data-bs-carousel-interval="50">
 														<div class="carousel-inner">
 															<div class="active item">
+
+
 																<img src="../../assets/images/ThreeDPlanner/picture1.jpg" alt="">
 																</div>
 																<div class="item">

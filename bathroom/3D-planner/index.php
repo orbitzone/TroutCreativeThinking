@@ -45,7 +45,7 @@
 						<div class="span8">
 
 							<div id="videoframe" >
-								<video style="width:100%; height:100%; border: none;  background-color:#FFFFFF;" width="100%" height="100%" bgcolor="#FFFFFF" poster="../../assets/images/ThreeDPlanner/poster.jpg" autoplay="autoplay">
+								<video  style="width:100%; height:100%; border: none;  background-color:#FFFFFF;" width="100%" height="100%" bgcolor="#FFFFFF" poster="../../assets/images/ThreeDPlanner/poster.jpg" autoplay="autoplay">
 									<source type="video/mp4" src="../../assets/video/ThreeDPlanner/bathroom_planner.mp4" />
 								</video>
 							</div>
@@ -169,16 +169,18 @@
 																		</div>
 																	</div>
 																</div>
-																<div class="main-item main-item-grey visible-desktop">
+																<div class="main-item main-item-grey">
 																	<div class="row-fluid">
 																		<div class="span3">
 																			<img src="../../assets/images/ThreeDPlanner/2d-layout.png" alt="">
+																			<br /><br />
 																			</div>
 																			<div class="span7">
 																				<h5>
 																					Visit the 2D Bathroom Planner and grab your plans. 
 																				</h5>
 																				<p>
+																				
 																					If you've used the previous version of our Bathroom Planner, you can visit this page to view your previously created plans.This tool will be retired on DD Month YYYY So, if you'd like to keep this information for your reference please log in and download or print out your plans before then. Your plans will not be usable in the new 3D Planner. 
 																				</p>
 																			</div>
@@ -253,10 +255,9 @@ if (document.images) {
 	$('video,audio').mediaelementplayer({
 		features: [],
 		iPadUseNativeControls: true,
-   		iPhoneUseNativeControls: true,
-   		iPadForceNativeControls:true,
-   		iPhoneForceNativeControls:true,
-		loop: false,
+ 		 iPhoneUseNativeControls: true,
+
+		loop: true,
 		success: function (mediaElement, domObject) {
 			 
 			mediaElement.addEventListener('ended', function(e)

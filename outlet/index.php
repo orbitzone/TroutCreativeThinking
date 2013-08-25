@@ -252,6 +252,7 @@
 			"/assets/js/bootstrap-transition.js",
 			"/assets/js/jquery.mobile.custom.min.js",
 			"/assets/js/reece-ocnav.js",
+			"/assets/js/matchMedia.js",
 			"/assets/js/reece-match-height.js"
 
 		]; 

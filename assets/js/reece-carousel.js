@@ -1,6 +1,8 @@
 
 	$(document).ready(function() {
 
+     //TODO: Rewrite this to be more modular and namespace
+
 		var $carousel = $('[data-bs-carousel]');
 
 		if ($carousel.length != 0) {

@@ -7728,7 +7728,10 @@ h6 {
 }
 @media (max-width: 480px) {
   .social-footer li {
-    margin: 0 -1px 0 0;
+    margin: 0 0 0 5px;
+  }
+  .social-footer li:first-child {
+    margin: 0;
   }
 }
 .social-footer a {

@@ -1,50 +1,28 @@
 
-+function ($) { "use strict";
++function ($) { 
 
-//     var MatchHeight = function (element, options) {
-//         this.$element    = $(element);
-//         this.$indicators = this.$element.find('.carousel-indicators');
-//     }  
+     //TODO: Rewrite this to be more modular and namespace
 
-//     var old = $.fn.carousel
+    "use strict";
 
-//     $.fn.matchHeight = function (option) {
+    $(window).on("load resize", function() {
 
-//         }     
-
-//     $(window).on('load resize', function (e) {
-//         var groupsCol = new Array();
-
-//         $('[data-resize="height"]').each(function () {
-
-//             groupsCol[$(this).attr('data-group')] = ( typeof x != 'undefined' && x instanceof Array ) ? x : [];
-
-//             //console.log(groupsCol);
-
-//             groupsCol[$(this).attr('data-group')].push($(this));
-//             //groupsCol[$(this).attr('data-group')].els.push($(this));
-//         });
-
-//         console.log(groupsCol);
-
-//         var groups = new Array();
-
-//         for (var i = 0; i < groupsCol.length; i++) {
-//             //console.log(groupsCol[i]);
-//         }
-
-//     });
-
-    $(window).on("load", function() {
-        //Todo: Create a better data-api plugin for this
-        var maxHeight = 0;
-
-        $('[data-resize-group]').each(function() {
+        if (matchMedia('(min-width: 767px)').matches) {
+            $('[data-resize-group]').each(function() {
+                var maxHeight = 0;
+                $(this).find('[data-resize="height"]').each(function() {
+                    $(this).css('min-height', '0px');    
+                    if ($(this).innerHeight() > maxHeight) maxHeight = $(this).innerHeight();
+                });
+                $(this).find('[data-resize="height"]').css('min-height', maxHeight+'px');
+            }); 
+        }
+        else {
             $(this).find('[data-resize="height"]').each(function() {
-                if ($(this).innerHeight() > maxHeight) maxHeight = $(this).innerHeight();
-            });
-            $(this).find('[data-resize="height"]').css('min-height', maxHeight+'px');
-        });  
+                $(this).css('min-height', '0px');    
+            });            
+        }
+ 
     });  
 
 }(window.jQuery);

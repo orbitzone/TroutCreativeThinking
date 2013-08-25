@@ -153,10 +153,6 @@
 				</div>
 		    </div>
 
-
-
-
-
 			<?php 
 			   	include_once($serverBase."/includes/foot/foot-generic.php");
 			?>		
@@ -179,27 +175,10 @@
 				"/assets/js/bootstrap-collapse.js",
 				"/assets/js/bootstrap-dropdown.js",
 				"/assets/js/reece-ocnav.js",
-				"/assets/js/micro-template.js",
-				"/assets/js/reece-ajax-content-loader.js",
 				"/assets/js/reece-carousel.js"
 			]; 
 		   	include_once($serverBase."/includes/foot/scripts.php");
-		?>
-
-		<script type="text/html" id="product_block_template">
-
-			<div class="product-block span3">
-				<a href="#">
-					<img src="<%=image%>">
-				</a>
-				<h4>
-					<a class="product-title" href="#"><%=productTitle%></a>
-					<span class="product-desc"><%=productDesc%></span>
-					<span class="product-price"><%=productPrice%></span>
-				</h4>
-			</div>
-
-		</script>				
+		?>			
 
     </body>
 </html>

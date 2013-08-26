@@ -95,25 +95,19 @@
 				&:hover, &:focus {
 					text-decoration: none;
 				}
-			}
-
-			label {
-				width: 50%;
-				float: left;
-			}
-
-			input[type=checkbox] {
-				width: 100%; 
-				height: 44px;
-				-webkit-border-radius: 22px; -moz-border-radius: 22px; border-radius: 22px;
-				border: 1px solid #bbb;
-			}			
+			}		
 		}
 	}
 
 	@media (max-width: 767px) {
 		margin-bottom: 0;
-	}		
+	}
+
+	&.dynamic-filter {
+		@media (max-width: 767px) {
+			display: none;
+		}
+	}
 }
 
 .product-filter-head {
@@ -197,7 +191,7 @@
 	}
 
 	@media (max-width: 767px) {
-		.product-block, .row-fluid [class*="span"] {
+		.row-fluid [class*="span"] {
 			float: left;
 			width: 46.93617021276595%;
 			margin: 1.53191489361702%;
@@ -209,28 +203,32 @@
 //====================================================================================================================================
 //====================================================================================================================================
 
-.products-list:extend(.items-list all) { }
+.products-list:extend(.items-list all) { 
+
+	@media (max-width: 767px) {
+		.product-block {
+			float: left;
+			width: 46.93617021276595%;
+			margin: 1.53191489361702%;
+		}
+	}
+}
 
 // Brands List Module (Submodule)
 //====================================================================================================================================
 //====================================================================================================================================
 
-.brands-list:extend(.items-list all) { }
+.brands-list:extend(.items-list all) {
 
-// .brands-list {
-// 	margin-left: 0;
-// 	list-style-type: none;
+	@media (max-width: 767px) {
+		.row-fluid [class*="span"] {
+			float: left;
+			width: 100%;
+			margin: auto;
+		}
+	}
+}
 
-// 	li {
-// 		float: left;
-// 		width: 50%;
-
-// 		@media (max-width: 767px) {
-// 			float: none;
-// 			width: auto;
-// 		}
-// 	}
-// }
 
 // Product Block Module
 //====================================================================================================================================
@@ -259,8 +257,8 @@
 	padding-right: 20px;
 	font-size: 12px;
 
-	@media (max-width: 767px) {
-		padding-right: 0;
+	.brand-title a {
+		color: black;
 	}
 }
 

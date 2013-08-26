@@ -55,7 +55,7 @@
 				    <div class="row-fluid">
 
 						<aside class="span3">
-							<form id="filter-form" class="product-filter" method="POST">
+							<form id="filter-form" class="product-filter dynamic-filter" method="POST">
 								<header class="product-filter-head">Brand Type</header>
 								<ul id="product-type" class="nav clearfix">
 									<li><label for="accessories"><input id="accessories" name="accessories" value="accessories" type="checkbox">Accessories</label></li>
@@ -98,7 +98,7 @@
 
 							    <div class="row-fluid">
 							    	<div class="brand-block span6">
-										<h3>
+										<h3 class="brand-title">
 											<a href="#">Laufen</a>
 										</h3>							    		
 										<a class="brand-media" href="#"><img src="http://placehold.it/165x165"></a>
@@ -108,7 +108,7 @@
 										</p>
 							    	</div>
 							    	<div class="brand-block span6">
-										<h3>
+										<h3 class="brand-title">
 											<a href="#">Roca</a>
 										</h3>								    		
 							    		<a class="brand-media" href="#"><img src="http://placehold.it/165x165"></a>					    		
@@ -121,7 +121,7 @@
 
 							    <div class="row-fluid">
 							    	<div class="brand-block span6">
-										<h3>
+										<h3 class="brand-title">
 											<a href="#">Caroma</a>
 										</h3>							    		
 										<a class="brand-media" href="#"><img src="http://placehold.it/165x165"></a>
@@ -130,7 +130,7 @@
 										</p>
 							    	</div>
 							    	<div class="brand-block span6">
-										<h3>
+										<h3 class="brand-title">
 											<a href="#">Whitestone</a>
 										</h3>								    		
 							    		<a class="brand-media" href="#"><img src="http://placehold.it/165x165"></a>					    		
@@ -142,7 +142,7 @@
 
 							    <div class="row-fluid">
 							    	<div class="brand-block span6">
-										<h3>
+										<h3 class="brand-title">
 											<a href="#">Axa</a>
 										</h3>							    		
 										<a class="brand-media" href="#"><img src="http://placehold.it/165x165"></a>
@@ -152,7 +152,7 @@
 										</p>
 							    	</div>
 							    	<div class="brand-block span6">
-										<h3>
+										<h3 class="brand-title">
 											<a href="#">Kado</a>
 										</h3>								    		
 							    		<a class="brand-media" href="#"><img src="http://placehold.it/165x165"></a>					    		
@@ -165,7 +165,7 @@
 							    
 							    <div class="row-fluid">
 							    	<div class="brand-block span6">
-										<h3>
+										<h3 class="brand-title">
 											<a href="#">Alape</a>
 										</h3>							    		
 										<a class="brand-media" href="#"><img src="http://placehold.it/165x165"></a>
@@ -175,7 +175,7 @@
 										</p>
 							    	</div>
 							    	<div class="brand-block span6">
-										<h3>
+										<h3 class="brand-title">
 											<a href="#">Porcher</a>
 										</h3>								    		
 							    		<a class="brand-media" href="#"><img src="http://placehold.it/165x165"></a>					    		
@@ -187,7 +187,7 @@
 
 							    <div class="row-fluid">
 							    	<div class="brand-block span6">
-										<h3>
+										<h3 class="brand-title">
 											<a href="#">Posh</a>
 										</h3>							    		
 										<a class="brand-media" href="#"><img src="http://placehold.it/165x165"></a>
@@ -196,7 +196,7 @@
 										</p>
 							    	</div>
 							    	<div class="brand-block span6">
-										<h3>
+										<h3 class="brand-title">
 											<a href="#">Sonia</a>
 										</h3>								    		
 							    		<a class="brand-media" href="#"><img src="http://placehold.it/165x165"></a>					    		
@@ -208,7 +208,7 @@
 
 							    <div class="row-fluid">
 							    	<div class="brand-block span6">
-										<h3>
+										<h3 class="brand-title">
 											<a href="#">Ideal Standard</a>
 										</h3>							    		
 										<a class="brand-media" href="#"><img src="http://placehold.it/165x165"></a>
@@ -218,7 +218,7 @@
 										</p>
 							    	</div>
 							    	<div class="brand-block span6">
-										<h3>
+										<h3 class="brand-title">
 											<a href="#">Omvivo</a>
 										</h3>								    		
 							    		<a class="brand-media" href="#"><img src="http://placehold.it/165x165"></a>					    		
@@ -270,7 +270,7 @@
 		<script type="text/html" id="filter_block_template">
 
 	    	<div class="brand-block span6">
-				<h3>
+				<h3 class="brand-title">
 					<a href="#"><%=title%></a>
 				</h3>							    		
 				<a class="brand-media" href="#"><img src="<%=media%>"></a>

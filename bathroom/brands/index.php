@@ -56,7 +56,7 @@
 
 						<aside class="span3">
 							<form id="filter-form" class="product-filter dynamic-filter" method="POST">
-								<header class="product-filter-head">Brand Type</header>
+								<header class="product-filter-head">Product Category</header>
 								<ul id="product-type" class="nav clearfix">
 									<li><label for="accessories"><input id="accessories" name="accessories" value="accessories" type="checkbox">Accessories</label></li>
 									<li><label for="toilets"><input id="toilets" name="toilets" value="toilets" type="checkbox">Toilets</label></li>
@@ -71,28 +71,35 @@
 							</form>								
 						</aside>
 
-						<section class="brands-content span9">
+						<section class="products-content span9">
 
-							<div id="products-carousel" class="carousel slide carousel-hover hidden-phone">
-						        <div class="carousel-inner">
-						            
-								    <div class="active item">
-								        <a href="#">
-								            <img src="http://placehold.it/970x334" alt="Place holder" />
-								        </a>
-								    </div>
+							<div id="products-content" class="collapse in">
 
-								    <div class="item">
-								        <a href="#">
-								            <img src="http://placehold.it/970x334" alt="Place holder" />
-								        </a>
-								    </div>
-						            
-						        </div>
-						        <!-- Carousel nav -->
-						        <a class="carousel-control left" href="#products-carousel" data-slide="prev">‹</a>
-						        <a class="carousel-control right" href="#products-carousel" data-slide="next">›</a>
-						    </div>							
+								<h2>Brands</h2>
+								<div id="products-carousel" class="carousel slide carousel-hover hidden-phone" data-bs-carousel="carousel" data-bs-carousel-interval="0">
+							        <div class="carousel-inner">
+							            
+									    <div class="active item">
+									        <a href="/the-block">
+									            <img src="http://placehold.it/970x334" alt="Place holder">
+									        </a>
+									    </div>
+
+									    <div class="item">
+									        <a href="/the-block">
+									            <img src="http://placehold.it/970x334" alt="Place holder">
+									        </a>
+									    </div>
+							            
+							        </div>
+							        <!-- Carousel nav -->
+							        <a class="carousel-control left" href="#products-carousel" data-slide="prev">‹</a>
+							        <a class="carousel-control right" href="#products-carousel" data-slide="next">›</a>
+							    </div>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+							</div>						    
 
 						    <div id="item-list" class="brands-list">
 
@@ -262,7 +269,8 @@
 				"/assets/js/micro-template.js",
 				"/assets/js/reece-ajax-filter.js",
 				"/assets/js/reece-ocnav.js",
-				"/assets/js/reece-carousel.js"
+				"/assets/js/reece-carousel.js",
+				"/assets/js/reece-products.js"
 			]; 
 		   	include_once($serverBase."/includes/foot/scripts.php");
 		?>		

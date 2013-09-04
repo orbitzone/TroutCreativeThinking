@@ -12,7 +12,6 @@
         $content: $('#item-list'),
 
         init: function() {
-
             this.$el.find('input[type="checkbox"]').on("change.ajax.filter", $.proxy(this.requestData, this));
         },
 

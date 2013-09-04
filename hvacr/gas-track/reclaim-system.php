@@ -44,9 +44,15 @@
 							<img class="gt-media-object pull-right" src="/assets/images/gastrack_2013/gas-track-product-one.jpg" alt="Gas Track">
 							<p class="lead">Every Reece hvac-r branch now offers a full Refrigerant Reclamation and Recycling Service. We take all the hassle out of recycling refrigerant, so you stay legally compliant. And best of all, our service is fast, safe and free.</p>
 							<p>Legislation in Australia prohibits the venting of refrigerants into the atmosphere. To make it easy for you to operate sustainably, the Reece hvac-r network now supplies <b>Reclaim</b> and <b>Pump Down</b> cylinders so you can capture refrigerant and return it to us for recycling - which is great for the environment and ultimately helps to protect your business reputation.</p>
- 							<p><b>Reclaim</b> cylinders are used for the sole purpose of returning used and/or contaminated refrigerant for responsible disposal.</p>
- 							<p><b>Pump Down</b> cylinders are guaranteed to be internally clean and can be used for temporary refrigerant storage while a system is being serviced or repaired.</p>
- 							<h4>We make refrigerant recycling easy.</h4>
+ 							
+ 							<div class="well">
+ 								<p><b>Reclaim</b> cylinders are used for the sole purpose of returning used and/or contaminated refrigerant for responsible disposal.</p>
+ 							</div>
+ 							<div class="well">
+ 								<p><b>Pump Down</b> cylinders are guaranteed to be internally clean and can be used for temporary refrigerant storage while a system is being serviced or repaired.</p>
+ 							 </div>
+ 							
+ 							<h4 class="section-head">We make refrigerant recycling easy.</h4>
  							<p>Reece hvac-r provides you with everything you need to meet the requirements of the Australia and New Zealand Refrigerant Handling Code of Practice 2007. Our comprehensive service includes:</p>
  							<ul>
  								<li>Complete refrigerant lifecycle stewardship.</li>
@@ -55,7 +61,8 @@
  								<li>Our service network provides access to a fully equipped laboratory able to offer customers a refrigerant analysis service to test for acidity, moisture, purity, etc.</li>
  								<li>Cyltrak® cylinder tracking technology ensures that cylinders are regularly serviced and maintained for optimum safety.</li>
  							</ul>
- 							<h4>Usage Instructions</h4>
+ 							
+ 							<h4 class="section-head">Usage Instructions</h4>
  							<ul>
  								<li>Reclaim and Pump down cylinders should never be used to reclaim ammonia (R717).</li>
  								<li>Reclaim and Pump down cylinders should not be used to reclaim flammable hydrocarbon refrigerants such as R600a, R290, R1270.</li>

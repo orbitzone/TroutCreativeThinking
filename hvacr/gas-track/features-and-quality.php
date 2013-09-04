@@ -46,7 +46,8 @@
 							<p>We are committed to continuous improvement of our safety, quality and environmental performance through the involvement of our people, customers, contractors and suppliers.</p>
 							<p>We build strategic partnerships with our customers and we’re always looking to provide a total package solution to them, including a comprehensive product portfolio, inventory management, cylinder fleet management, technical support and ancillary services.</p>
 							<p>We work with our Refrigerant Gas provider to ensure you are provided with benchmark standards in product ‘life cycle’ employing sophisticated reclamation, recovery, cylinder management and laboratory facilities and we are fully committed to the sustainability of the environment. And we achieve this in a number of ways.</p>
-							<h4>Product Integrity</h4>
+
+							<h4 class="section-head">Product Integrity</h4>
 							<ul>
 								<li>All bulk product imported into Australia are tested through an on-site laboratory prior to decanting into bulk storage or cylinders.</li>
 								<li>All cylinders are externally cleaned upon return and internally cleaned if the refill protection device (RPD) is missing.</li>
@@ -54,18 +55,21 @@
 								<li>Following filling, each cylinder is leak tested before shrink wrapping is applied to the valve.</li>
 								<li>All cylinders are guaranteed to be dispatched within test date.</li>
 							</ul>
-							<h4>Reece hvac-r provides refrigerant gas compliance to the following certifications:</h4>
+
+							<h4 class="section-head">Reece hvac-r provides refrigerant gas compliance to the following certifications:</h4>
 							<ul>
 								<li>AS/NZS ISO 9001:2008 (Quality)</li>
 								<li>AS/NZS 4801:2001 (Safety)</li>
 								<li>AS/NZS ISO 14001:2004</li>
 							</ul>
-							<h4>(Environmental)</h4>
+
+							<h4 class="section-head">(Environmental)</h4>
 							<ul>
 								<li>AS 2337.1: 2004 (Test Station for Inspection & Testing of Gas Cylinders or Vessels)</li>
 							</ul>
 							<p>With integrated management system regularly audited and certified by NCSI, a third party certification body.</p>
-							<h4>Cylinder Tracking</h4>
+
+							<h4 class="section-head">Cylinder Tracking</h4>
 							<ul>
 								<li>All cylinders are individually bar-coded.</li>
 								<li>Reece hvac-r tracks its cylinder fleet from dispatch to return via our in-house tracking system GasTrack.</li>

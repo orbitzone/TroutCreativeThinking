@@ -18,9 +18,12 @@
             }); 
         }
         else {
-            $(this).find('[data-resize="height"]').each(function() {
-                $(this).css('min-height', '0px');    
-            });            
+            $('[data-resize-group]').each(function() {
+                console.log($(this));
+                $(this).find('[data-resize="height"]').each(function() {
+                    $(this).css('min-height', '0px');    
+                });
+            });
         }
  
     });  

@@ -39,18 +39,42 @@
 						</aside>
 
 						<section class="gt-content span9">
-							<h3 class="headline">Convenient, safe and enviromentally compliant</h3>
+							<h3 class="headline">A total quality approach to gas tracking and recycling.</h3>
 							<hr>
 							<img class="gt-media-object pull-right" src="/assets/images/gastrack_2013/gas-track-product-one.jpg" alt="Gas Track">
-							<p class="lead">Em nonsectatur aut est officiis exceperum endaerum sed que voluptu reperumet ut latem repudit qui dolorro videb ut latem repudit qui dolorro videbitist por rectur, et ra prernatatet, omnimpore itist por rectur, et ra prernatatet, omnimpore cus, quam quiae esed mi, id enda dis ditam eiur magnima volorat quunt.</p>
-							<p>Enectat faccaep ellorpos nonetur asperat. Ficae verferi bustia sa que vent ea consece atioremped que quodias incilit hitatur, senihil ictures dolo blatem fuga. Ga. Nem a nonsecto dus, voloreh enissin ullaut lam, core natia sequias auditatiatur sante aci nonse verumet untoruptia pernatus, quo int ut volliat urioreius.
-							   adi aut rerum ratur, suntium et mod quatur, imus debit as ipieniet esed erumqua estecum voluptia nullabo resequae mo dolorum volorit ipsuntissus, consequi opta venturiatusa nes solupta tempori tatiatur sitiam cus, omnihillorum accument omnitiis eum es dipid qui temoluptate pro dollaci lluptaquia doluptia pratesto tem exerrum eari veliqui blandes eos volo ium incim res providunt.
-							   Evereiurepe doleni vellabo restis eaquos audam, quia dolestisquod utem qui vel id maios iunt, et modipsunt aut hari to omniae sum volenimus, et esequam in repedit a pra plante milique volenem oluptat inusapicita sectore preruptur?
-							   Ut labo. Moluptaqui nonsequis aboremquia nati deliquatur am, tecus dolupta tiones et quatusa cus aut facepuda inienitat.
-							   Elit reptam ea nobitiorios quostis simusci tempost, quis quias aut reprece atiatem lab ipsapieture lab id quas sit voluptatur at.
-							   Aperferumque modipsant eossinv eligendelit endemol oribus sum autenda epedit mint aperfer speribusto ent.
-							   Magniss imagnat et, quibus idit adiciendi a simpos ad ma qui suntorrovid qui rerio. Ficiis quam, volupta es est idebist, siminis ut ma volupta sitiaspid minum quam aut labo. Et volor mos prat pre et doluptatur? Quia eturiatis dolupta eptatat empost, eniate nonsere nobitia speditatur, non endaepe rchiliqui qui reptae.
-							</p>
+							<p class="lead">Reece hvac-r is a leading supplier of refrigerants to the refrigeration and air conditioning markets. We recognise our responsibility in managing safety, quality and environmental matters that form an integral part of our business.</p>
+							<p>We are committed to continuous improvement of our safety, quality and environmental performance through the involvement of our people, customers, contractors and suppliers.</p>
+							<p>We build strategic partnerships with our customers and we’re always looking to provide a total package solution to them, including a comprehensive product portfolio, inventory management, cylinder fleet management, technical support and ancillary services.</p>
+							<p>We work with our Refrigerant Gas provider to ensure you are provided with benchmark standards in product ‘life cycle’ employing sophisticated reclamation, recovery, cylinder management and laboratory facilities and we are fully committed to the sustainability of the environment. And we achieve this in a number of ways.</p>
+
+							<h4 class="section-head">Product Integrity</h4>
+							<ul>
+								<li>All bulk product imported into Australia are tested through an on-site laboratory prior to decanting into bulk storage or cylinders.</li>
+								<li>All cylinders are externally cleaned upon return and internally cleaned if the refill protection device (RPD) is missing.</li>
+								<li>Automated filling equipment is used to fill cylinders and generate cylinder labeling.</li>
+								<li>Following filling, each cylinder is leak tested before shrink wrapping is applied to the valve.</li>
+								<li>All cylinders are guaranteed to be dispatched within test date.</li>
+							</ul>
+
+							<h4 class="section-head">Reece hvac-r provides refrigerant gas compliance to the following certifications:</h4>
+							<ul>
+								<li>AS/NZS ISO 9001:2008 (Quality)</li>
+								<li>AS/NZS 4801:2001 (Safety)</li>
+								<li>AS/NZS ISO 14001:2004</li>
+							</ul>
+
+							<h4 class="section-head">(Environmental)</h4>
+							<ul>
+								<li>AS 2337.1: 2004 (Test Station for Inspection & Testing of Gas Cylinders or Vessels)</li>
+							</ul>
+							<p>With integrated management system regularly audited and certified by NCSI, a third party certification body.</p>
+
+							<h4 class="section-head">Cylinder Tracking</h4>
+							<ul>
+								<li>All cylinders are individually bar-coded.</li>
+								<li>Reece hvac-r tracks its cylinder fleet from dispatch to return via our in-house tracking system GasTrack.</li>
+								<li>Data on each cylinder is maintained throughout its 10 year test period, including the logging of any warranty issues (etc).</li>
+							</ul>
 						</section>
 					</div>
 

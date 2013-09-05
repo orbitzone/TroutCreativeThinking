@@ -1,50 +1,55 @@
 (function(){
 
-    window.ajaxContentLoader = {};
+    window.reece = window.reece || {};
+
+    window.reece.ajaxFilter = {};
 
     //Load ajax data to be used in a template
-    window.ajaxContentLoader = {
+    window.reece.ajaxFilter = {
 
-        $el: $('[data-load-content]'),
-        offset: 8,
+        $el: $('#filter-form'),
+
+        $content: $('#item-list'),
 
         init: function() {
-            this.$el.on("click.contentload.data-api", $.proxy(this.requestData, this));
+            this.$el.find('input[type="checkbox"]').on("change.ajax.filter", $.proxy(this.requestData, this));
         },
 
         requestData: function (event) {
-            event.preventDefault();
             var instance = this,
-                $clickedEl = $(event.currentTarget);
-            instance.offset += 4;
+                $clicked = $(event.currentTarget);
+                category = $clicked.val().trim();
+
+            event.preventDefault();
+
             jQuery.ajax({
                 type: "POST",
-                beforeSend: this.addContentLoader($clickedEl),
-                url: "/includes/ajax/ajax.php",
+                beforeSend: this.addContentLoader(this.$content),
+                url: "/includes/ajax/ajax-filter.php",
                 data: {
-                    offset: instance.offset
+                    category: category
                 },
                 dataType: "JSON",
                 success: function (data) {
-                    instance.removeContentLoader($clickedEl);
-                    instance.fetchTemplate(data, $clickedEl);
+                    instance.removeContentLoader(this.$content);
+                    instance.fetchTemplate(data, $clicked);
                 }
             });
         },
 
-        addContentLoader: function ($clickedEl) {
-            $clickedEl.addClass('ajax-preloader');
+        addContentLoader: function ($content) {
+
         },
 
-        removeContentLoader: function ($clickedEl) {
-            $clickedEl.removeClass('ajax-preloader');
+        removeContentLoader: function ($content) {
+
         },        
 
-        fetchTemplate: function (data, $clickedEl) {
-            var increment = 4,
+        fetchTemplate: function (data, $clicked) {
+            var increment = 2,
                 counter = increment, 
                 html = "",
-                $templateWrap = $('<div style="display: none;" class="row-fluid"/>'),
+                $templateWrap = $('<div class="row-fluid"/>'),
                 templateMarkup = [];
 
             //Loop through our returned data and process
@@ -53,32 +58,33 @@
                 if (i === counter) {
                     templateMarkup.push($templateWrap.append(html));
                     html = "";
-                    html += tmpl("product_block_template", data[i]);
-                    $templateWrap = $('<div style="display: none;" class="row-fluid"/>');
+                    html += tmpl("filter_block_template", data[i]);
+                    $templateWrap = $('<div class="row-fluid"/>');
                     counter = counter + increment;
                 }
                 else {
-                    html += tmpl("product_block_template", data[i]);
+                    html += tmpl("filter_block_template", data[i]);
                 }
             }
 
             //Push our final iteration into the array before we append our data
             templateMarkup.push($templateWrap.append(html));
-            this.appendTemplate(templateMarkup, $clickedEl);
+            this.appendTemplate(templateMarkup);
         },
 
-        appendTemplate: function(templateMarkup, $clickedEl) {
+        appendTemplate: function(templateMarkup) {
+            //Empty our container
+            this.$content.empty();
 
             //Loop through our array of rows and append each to the dom (it would be better to loop through each item and save to a local variables but this is only a sample)
             for ( var i = 0; i < templateMarkup.length; i++ ) {
-                $clickedEl.before(templateMarkup[i]);
-                templateMarkup[i].slideDown();
+                this.$content.append(templateMarkup[i]);
             }
         }
     };
 })();
 
 $(function(){
-    window.ajaxContentLoader.init();
+    window.reece.ajaxFilter.init();
 });
 

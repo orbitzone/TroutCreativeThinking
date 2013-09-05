@@ -311,6 +311,27 @@
 .gt-content .r507a.gt-product-block {
   margin-top: 10px;
 }
+.gt-content .section-head {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.gt-content .well {
+  border: 0;
+  -webkit-border-radius: none;
+  -moz-border-radius: none;
+  border-radius: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.gt-content .well p {
+  margin-bottom: 0;
+}
+.gt-content ul {
+  margin-bottom: 0;
+}
 .gt-media-object {
   margin-bottom: 20px;
 }

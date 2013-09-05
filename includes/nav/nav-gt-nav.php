@@ -7,12 +7,12 @@
 							 
 							<ul id="gt-navigation" class="gt-navigation nav nav-pills nav-stacked collapse">
 
-								<?php foreach ($gtNavigationItems as $item) : ?>
+								<?php foreach ($gtNavigationItems as $key => $item) : ?>
 
 									<?php if ($item == $gtNavActiveMenuItem) : ?>
-										<li class="active"><a href="#"><?php print $item; ?></a></li>
+										<li class="active"><a href="<?php print $item; ?>"><?php print $key; ?></a></li>
 									<?php else : ?>
-										<li><a href="#"><?php print $item; ?></a></li>
+										<li><a href="<?php print $item; ?>"><?php print $key; ?></a></li>
 									<?php endif; ?>
 
 								<?php endforeach; ?>

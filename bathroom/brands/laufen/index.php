@@ -96,22 +96,10 @@
 		  		"/assets/js/bootstrap-tab.js",
 		  		"/assets/js/bootstrap-dropdown.js",
 		  		"/assets/js/reece-ocnav.js",
-		  		"/assets/js/reece-ajax-content-loader.js",
 		  		"/assets/js/reece-carousel.js",
 		  	); 
 		  	include_once($serverBase."/includes/foot/scripts.php");
 		?>				
-
-		<script>  
-			$(document).ready(function() {  
-			   $(".carousel").swiperight(function() {  
-			      $(".carousel").carousel('prev');  
-			    });  
-			   $(".carousel").swipeleft(function() {  
-			      $(".carousel").carousel('next');  
-			   });  
-			});  
-		</script> 
 
     </body>
 </html>

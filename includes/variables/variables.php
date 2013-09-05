@@ -68,13 +68,13 @@
 		)								
 	);
 
-	$gtNavigationItems = array(
-		"Features & Quality",
-		"Reclaim System",
-		"Project Gallery",
-		"Product Range",
-		"Technical Data",
-		"Storefinder"
+	$gtNavigationItems = array (
+		"Features & Quality" => 'features-and-quality.php',
+		"Reclaim System" => 'reclaim-system.php',
+		"Project Gallery" => 'project-gallery.php',
+		"Product Range" => 'product-range.php',
+		"Technical Data" => 'technical-data.php',
+		"Storefinder" => 'store-finder.php'
 	);	
 
 ?>

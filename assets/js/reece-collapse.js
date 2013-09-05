@@ -1,6 +1,8 @@
   
 !function ($) {
 
+     //TODO: Rewrite this to be more modular and namespace
+
     //Help the bootstrap API by appending and removing active classes on the currently open accordian
     window.collapseHelper = {
 

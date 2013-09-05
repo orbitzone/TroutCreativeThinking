@@ -52,9 +52,20 @@
 	.border-radius(4px);
 	background-color: @lightBackground;
 
-	li a {
+	li a, label {
 		color: darken(@lightBackground, 45%);
+	}
 
+	label {
+		margin-bottom: 0;
+
+		input[type="checkbox"] {
+			margin-top: 0;
+			margin-right: 10px;
+		}		
+	}
+
+	li a {
 		&:hover, &:focus {
 			background-color: transparent;
 			text-decoration: underline;
@@ -84,13 +95,19 @@
 				&:hover, &:focus {
 					text-decoration: none;
 				}
-			}
+			}		
 		}
 	}
 
 	@media (max-width: 767px) {
 		margin-bottom: 0;
-	}		
+	}
+
+	&.dynamic-filter {
+		@media (max-width: 767px) {
+			display: none;
+		}
+	}
 }
 
 .product-filter-head {
@@ -160,12 +177,11 @@
 	}
 }
 
-// Product List Column Structure Module
+// Items List Module
 //====================================================================================================================================
 //====================================================================================================================================
 
-.products-list {
-
+.items-list {
 	.row-fluid + .row-fluid {
 		margin-top: @fluidGridGutterWidth; //Add margin to multi row products lists
 	}
@@ -175,7 +191,7 @@
 	}
 
 	@media (max-width: 767px) {
-		.product-block, .row-fluid [class*="span"] {
+		.row-fluid [class*="span"] {
 			float: left;
 			width: 46.93617021276595%;
 			margin: 1.53191489361702%;
@@ -183,23 +199,74 @@
 	}
 }
 
-// Product Block Structure Module
+// Product List Module
+//====================================================================================================================================
+//====================================================================================================================================
+
+.products-list:extend(.items-list all) { 
+
+	@media (max-width: 767px) {
+		.product-block {
+			float: left;
+			width: 46.93617021276595%;
+			margin: 1.53191489361702%;
+		}
+	}
+}
+
+// Brands List Module (Submodule)
+//====================================================================================================================================
+//====================================================================================================================================
+
+.brands-list:extend(.items-list all) {
+
+	@media (max-width: 767px) {
+		.row-fluid [class*="span"] {
+			float: left;
+			width: 100%;
+			margin: auto;
+		}
+	}
+}
+
+
+// Product Block Module
 //====================================================================================================================================
 //====================================================================================================================================
 
 .product-block {
 	position: relative;
-	//margin-top: @fluidGridGutterWidth;
 }
+
 .product-title, .product-desc, .product-price {
 	display: block;
 	margin-bottom: 5px;
 	font-size: 12px;
 	font-weight: normal;
 }
+
 .product-title {
 	font-weight: bold;
 }	
+
+// Brand Block Module
+//====================================================================================================================================
+//====================================================================================================================================
+
+.brand-block {
+	padding-right: 20px;
+	font-size: 12px;
+
+	.brand-title a {
+		color: black;
+	}
+}
+
+.brand-media {
+	display: block;
+	float: left;
+	margin-right: 20px;
+}
 
 // Sort Filter Module
 //====================================================================================================================================

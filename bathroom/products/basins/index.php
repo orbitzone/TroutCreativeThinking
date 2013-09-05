@@ -37,13 +37,11 @@
 					    	<div class="carousel-inner">
 					    		<div class="item">
 									<a href="#">
-										<!-- <img src="/assets/images/products_2013/products-plumbing-be-free-mobile.jpg" alt="Fresh Approach" /> -->
 										<img src="http://placehold.it/730x500" alt="Place holder" />
 									</a>
 					    		</div>
 					    		<div class="item active">
 									<a href="#">
-										<!-- <img src="/assets/images/products_2013/products-plumbing-be-free-mobile.jpg" alt="Fresh Approach" /> -->
 										<img src="http://placehold.it/730x500" alt="Place holder" />
 									</a>
 					    		</div>
@@ -296,14 +294,13 @@
 				"/assets/js/bootstrap-dropdown.js",
 				"/assets/js/reece-ocnav.js",
 				"/assets/js/micro-template.js",
-				"/assets/js/reece-ajax-content-loader.js",
+				"/assets/js/reece-ajax-products.js",
 				"/assets/js/reece-carousel.js"
 			]; 
 		   	include_once($serverBase."/includes/foot/scripts.php");
 		?>
 
 		<script type="text/html" id="product_block_template">
-
 			<div class="product-block span3">
 				<a href="#">
 					<img src="<%=image%>">
@@ -314,7 +311,6 @@
 					<span class="product-price"><%=productPrice%></span>
 				</h4>
 			</div>
-
 		</script>				
 
     </body>

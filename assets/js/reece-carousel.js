@@ -14,14 +14,17 @@
 			});		
 
 			$.each($carousel, function(index) {
-				var interval = $(this).data('bs-carousel-interval');
-				if (interval) {
+				var interval = $(this).data('bs-carousel-interval'),
+					undefined;
+				if (interval === undefined) {
+					console.log('undefined');
 					$(this).carousel();
 				}
 				else {
+					console.log('defined' + interval);
 					$(this).carousel({
 						interval: parseInt(interval)
-					});
+					});					
 				}
 			});
 		}

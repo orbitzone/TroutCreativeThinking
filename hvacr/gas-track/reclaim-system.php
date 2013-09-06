@@ -41,7 +41,6 @@
 						<section class="gt-content span9">
 							<h3 class="headline">At Reece hvac-r, we’ll recycle your refrigerant, so you’re 100% compliant.</h3>
 							<hr>
-							<img class="gt-media-object pull-right" src="/assets/images/gastrack_2013/gas-track-product-one.jpg" alt="Gas Track">
 							<p class="lead">Every Reece hvac-r branch now offers a full Refrigerant Reclamation and Recycling Service. We take all the hassle out of recycling refrigerant, so you stay legally compliant. And best of all, our service is fast, safe and free.</p>
 							<p>Legislation in Australia prohibits the venting of refrigerants into the atmosphere. To make it easy for you to operate sustainably, the Reece hvac-r network now supplies <b>Reclaim</b> and <b>Pump Down</b> cylinders so you can capture refrigerant and return it to us for recycling - which is great for the environment and ultimately helps to protect your business reputation.</p>
  							

@@ -1,0 +1,109 @@
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.srl-header {
+  margin-bottom: 30px !important;
+}
+.srl-content h3 {
+  color: #DB1E23;
+}
+.srl-content span {
+  color: #DB1E23;
+}
+.creatingHeading {
+  margin-bottom: 10px;
+}
+.srl-gallery {
+  padding: 30px;
+  background-color: #EEE;
+}
+.srl-gallery img {
+  margin-bottom: 15px;
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/*
+----------------------------------------------
+RESPONSIVE OVERRIDES
+----------------------------------------------
+*/
+@media (min-width: 1200px) {
+  
+}
+@media (max-width: 1199px) {
+  
+}
+@media (max-width: 1024px) and (min-width: 1000px) {
+  
+}
+@media (max-width: 769px) and (min-width: 600px) {
+  
+}
+@media (max-width: 979px) {
+  
+}
+@media (max-width: 767px) {
+  
+}
+@media (min-width: 500px) and (max-width: 767px) {
+  .srl-gallery .span4 {
+    width: 30% !important;
+    float: left !important;
+    margin: 0px 9px !important;
+  }
+}
+@media (max-width: 640px) {
+  
+}
+@media (max-width: 480px) {
+  .srl-gallery .span4 {
+    width: 45% !important;
+    float: left !important;
+    margin: 0px 9px !important;
+  }
+}
+@media (max-width: 380px) {
+  .srl-gallery .span4 {
+    width: 108% !important;
+    float: left !important;
+    margin: -10px !important;
+  }
+}

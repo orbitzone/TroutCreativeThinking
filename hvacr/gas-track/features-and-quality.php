@@ -41,7 +41,6 @@
 						<section class="gt-content span9">
 							<h3 class="headline">A total quality approach to gas tracking and recycling.</h3>
 							<hr>
-							<img class="gt-media-object pull-right" src="/assets/images/gastrack_2013/gas-track-product-one.jpg" alt="Gas Track">
 							<p class="lead">Reece hvac-r is a leading supplier of refrigerants to the refrigeration and air conditioning markets. We recognise our responsibility in managing safety, quality and environmental matters that form an integral part of our business.</p>
 							<p>We are committed to continuous improvement of our safety, quality and environmental performance through the involvement of our people, customers, contractors and suppliers.</p>
 							<p>We build strategic partnerships with our customers and we’re always looking to provide a total package solution to them, including a comprehensive product portfolio, inventory management, cylinder fleet management, technical support and ancillary services.</p>

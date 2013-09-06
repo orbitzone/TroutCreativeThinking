@@ -49,19 +49,19 @@
 						<div class="row-fluid">
 
 							<div class="span4">
-								<a data-toggle="modal" href="#galleryPic1"><img src="http://placehold.it/300x300" alt></a>
-								<img src="http://placehold.it/300x300" alt>
-								<img src="http://placehold.it/300x300" alt>
+								<a data-toggle="modal" href="#galleryPic1"><img src="http://placehold.it/300x300" alt=""></a>
+								<img src="http://placehold.it/300x300" alt="">
+								<img src="http://placehold.it/300x300" alt="">
 							</div>
 							<div class="span4">
-								<img src="http://placehold.it/300x300" alt>
-								<img src="http://placehold.it/300x300" alt>
-								<img src="http://placehold.it/300x300" alt>
+								<img src="http://placehold.it/300x300" alt="">
+								<img src="http://placehold.it/300x300" alt="">
+								<img src="http://placehold.it/300x300" alt="">
 							</div>
 							<div class="span4">
-								<img src="http://placehold.it/300x300" alt>
-								<img src="http://placehold.it/300x300" alt>
-								<img src="http://placehold.it/300x300" alt>
+								<img src="http://placehold.it/300x300" alt="">
+								<img src="http://placehold.it/300x300" alt="">
+								<img src="http://placehold.it/300x300" alt="">
 							</div>
 						</div>	
 

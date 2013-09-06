@@ -37,9 +37,17 @@
 						    <span class="caret"></span>
 						  </a>
 							  <ul class="dropdown-menu">
-							   <li><a href="#">link 1</a></li>
-							   <li><a href="#">link 2</a></li>
-							   <li><a href="#">link 3</a></li>
+							           <li class="border"><a href="/bathrooms/events">Sydney Indesign 2013</a></li>         
+								        <li class="border"><a href="/bathrooms/events/you-deserve-happiness-winners">You Deserve Happiness Winners</a></li> 
+								        <li class="border"><a href="/bathrooms/events/saturdayindesign-2012-wrapup">Saturday in Design Wrap-up 2012</a></li>         
+								        <li class="border"><a href="/bathrooms/events/saturdayindesign-2012">Saturday in Design 2012</a></li>        
+								        <li class="border"><a href="/bathrooms/events/brisbaneindesign">Brisbane in Design</a></li>
+								        <li class="border"><a href="/bathrooms/events/saturdayindesign-2011">Saturday in Design 2011</a></li>
+										<li class="border"><a href="/bathrooms/events/methven-competition">Methven Winner</a></li>
+								        <li class="border"><a href="/bathrooms/events/nikles-competition">Nikles Pure Winner</a></li>
+								        <li class="border"><a href="/bathrooms/events/pink-ribbon-fundraiser">Pink Ribbon Fundraiser</a></li>
+								        <li class="border"><a href="/bathrooms/events/competitionwinners">Competition Winners</a></li>
+								        <li><a href="/bathrooms/events/saturdayindesign">Saturday in Design 2010</a></li>
 							  </ul>
 						</div>
 					</div>
@@ -129,8 +137,8 @@
 
 	                    <div id="TipsCarousel1" class="carousel slide" data-bs-carousel="carousel" data-bs-carousel-interval="3000" >
                           <div class="carousel-inner">
-                            <div class="active item"><img src="../../assets/images/srl-event/tip-1.jpg" alt=""></div>
-                            <div class="item"><img src="../../assets/images/srl-event/tip-3.jpg" alt=""></div>
+                            <div class="active item"><img src="../../assets/images/srl-event/tips/tip-1.jpg" alt=""></div>
+                            <div class="item"><img src="../../assets/images/srl-event/tips/tip-2.jpg" alt=""></div>
                           </div>
                           <a class="carousel-control left" href="#TipsCarousel1" data-slide="prev">&lsaquo;</a>
                           <a class="carousel-control right" href="#TipsCarousel1" data-slide="next">&rsaquo;</a>
@@ -144,8 +152,9 @@
 						
 							<div id="TipsCarousel2" class="carousel slide" data-bs-carousel="carousel" data-bs-carousel-interval="3000" >
 	                          <div class="carousel-inner">
-	                            <div class="active item"><img src="../../assets/images/srl-event/tip-1.jpg" alt=""></div>
-	                            <div class="item"><img src="../../assets/images/srl-event/tip-3.jpg" alt=""></div>
+	                            <div class="active item"><img src="../../assets/images/srl-event/tips/tip-3.jpg" alt=""></div>
+	                            <div class="item"><img src="../../assets/images/srl-event/tips/tip-4.jpg" alt=""></div>
+	                            <div class="item"><img src="../../assets/images/srl-event/tips/tip-5.jpg" alt=""></div>
 	                          </div>
 	                          <a class="carousel-control left" href="#TipsCarousel2" data-slide="prev">&lsaquo;</a>
 	                          <a class="carousel-control right" href="#TipsCarousel2" data-slide="next">&rsaquo;</a>

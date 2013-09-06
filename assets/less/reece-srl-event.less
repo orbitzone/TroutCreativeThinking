@@ -57,11 +57,11 @@ z-index: 1000;
 display: none;
 float: left;
 min-width: 149px;
-padding: 7px 15px !important;
+padding: 7px 4px !important;
 margin: 0px 0 0 !important;
 list-style: none;
-color: #FFFFFF !important;
-background-color: #DB1E23 !important;
+color: #000000 !important;
+background-color: #FFFFFF !important;
 border: none !important;
 border: none !important;
 -webkit-border-radius: 0px !important;
@@ -76,15 +76,21 @@ background-clip: padding-box;
 }
 
 
+.border{
+  border-bottom:1px solid black;
+}
+
 .dropdown-menu a{
-color: #FFFFFF !important;
+color: #000000 !important;
+
 }
 
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-submenu:hover > a, .dropdown-submenu:focus > a {
-background-color: #b41217 !important;
+background-color: #DB1E23 !important;
 background-image: none !important;
 background-repeat: repeat-x;
 filter: none !important;
+color: #FFFFFF !important;
 }
 
 .modal-body {
@@ -129,6 +135,12 @@ font-size:18px;
 .srl-gallery img{
     margin-bottom:15px;
 }
+
+
+.btn-group {
+width: 48% !important;
+}
+
 
 
 
@@ -176,8 +188,17 @@ RESPONSIVE OVERRIDES
 
 
 
-@media (max-width: 1024px) and (min-width: 1000px) {
+@media (max-width: 1024px){
   
+
+  .srl-titleBar .btn {
+padding: 10px 8px !important;
+}
+
+.btn-group {
+width: 44% !important;
+}
+
 
 }
 
@@ -199,6 +220,13 @@ RESPONSIVE OVERRIDES
 
 @media (max-width: 979px) {
 
+.srl-titleBar .btn {
+padding: 10px 8px !important;
+}
+
+.btn-group {
+width: 60% !important;
+}
 
 
 
@@ -236,7 +264,9 @@ margin: 0px 9px !important;
 @media (max-width: 640px) {
 
 
-
+.btn-group {
+width: 23% !important;
+}
 
 
 }
@@ -253,12 +283,24 @@ margin: 0px 9px !important;
 
 }
 
+
+.btn-group {
+width: 32% !important;
+}
+
+
+
 }
 
 
 
 
 @media (max-width: 380px) {
+
+.btn-group {
+width: 50% !important;
+}
+
 
 .srl-gallery .span4 {
 width: 108% !important;

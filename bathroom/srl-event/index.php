@@ -21,10 +21,35 @@
 			?>
 		<div class="content-container">
 			<div class="inner-wrapper">
+
+				<div class="row-fluid  srl-titleBar">
+
+
+					<div class="span8">
+						<p>School of Real Living</p>
+					</div>
+
+
+					<div class="span4">
+						<div class="btn-group pull-right">
+						  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+						    View Past Events
+						    <span class="caret"></span>
+						  </a>
+							  <ul class="dropdown-menu">
+							   <li><a href="#">link 1</a></li>
+							   <li><a href="#">link 2</a></li>
+							   <li><a href="#">link 3</a></li>
+							  </ul>
+						</div>
+					</div>
+				</div>
+
+
 				<div class="row-fluid">
 					<div class="span12 srl-header">
-						<div class="">
-							<img src="http://placehold.it/1200x500">
+						<div>
+							<img src="../../assets/images/srl-event/slr-header.jpg">
 						</div>
 					</div>
 				</div>
@@ -49,25 +74,87 @@
 						<div class="row-fluid">
 
 							<div class="span4">
-								<a data-toggle="modal" href="#galleryPic1"><img src="http://placehold.it/300x300" alt=""></a>
-								<img src="http://placehold.it/300x300" alt="">
-								<img src="http://placehold.it/300x300" alt="">
+								<a href="/bathrooms/3d-bathroom-planner#" class="showWindow" data-large="http://placehold.it/900x300">
+									<img src="http://placehold.it/300x300" alt="">
+                            	</a>
+									<a href="/bathrooms/3d-bathroom-planner#" class="showWindow" data-large="http://placehold.it/900x500">
+									<img src="http://placehold.it/300x300" alt="">
+                            	</a>
+									<a href="/bathrooms/3d-bathroom-planner#" class="showWindow" data-large="http://placehold.it/900x450">
+									<img src="http://placehold.it/300x300" alt="">
+                            	</a>
 							</div>
 							<div class="span4">
-								<img src="http://placehold.it/300x300" alt="">
-								<img src="http://placehold.it/300x300" alt="">
-								<img src="http://placehold.it/300x300" alt="">
+									<a href="/bathrooms/3d-bathroom-planner#" class="showWindow" data-large="http://placehold.it/900x300">
+									<img src="http://placehold.it/300x300" alt="">
+                            	</a>
+									<a href="/bathrooms/3d-bathroom-planner#" class="showWindow" data-large="http://placehold.it/900x530">
+									<img src="http://placehold.it/300x300" alt="">
+                            	</a>
+									<a href="/bathrooms/3d-bathroom-planner#" class="showWindow" data-large="http://placehold.it/900x450">
+									<img src="http://placehold.it/300x300" alt="">
+                            	</a>
 							</div>
 							<div class="span4">
-								<img src="http://placehold.it/300x300" alt="">
-								<img src="http://placehold.it/300x300" alt="">
-								<img src="http://placehold.it/300x300" alt="">
+									<a href="/bathrooms/3d-bathroom-planner#" class="showWindow" data-large="http://placehold.it/900x300">
+									<img src="http://placehold.it/300x300" alt="">
+                            	</a>
+									<a href="/bathrooms/3d-bathroom-planner#" class="showWindow" data-large="http://placehold.it/900x500">
+									<img src="http://placehold.it/300x300" alt="">
+                            	</a>
+									<a href="/bathrooms/3d-bathroom-planner#" class="showWindow" data-large="http://placehold.it/900x450">
+									<img src="http://placehold.it/300x300" alt="">
+                            	</a>
 							</div>
+
 						</div>	
+
+
+						
+							
+						
+
+
 
 					</div>
 
 				</div>
+
+				<br />
+
+				<div class="row-fluid">
+
+					<div class="span6">
+
+
+
+	                    <div id="winnersCarousel" class="carousel slide" data-bs-carousel="carousel" data-bs-carousel-interval="5000" >
+                          <div class="carousel-inner">
+                            <div class="active item"><img src="../../assets/images/srl-event/tip-1.jpg" alt=""></div>
+                            <div class="item"><img src="../../assets/images/srl-event/tip-3.jpg" alt=""></div>
+                          </div>
+                          <a class="carousel-control left" href="#winnersCarousel" data-slide="prev">&lsaquo;</a>
+                          <a class="carousel-control right" href="#winnersCarousel" data-slide="next">&rsaquo;</a>
+                        </div>
+
+
+
+
+
+
+							<!-- <a href="#"><img src="../../assets/images/srl-event/tip-1.jpg"></a> -->
+						</div>
+
+					<div class="span6">
+						
+							<a href="#"><img src="../../assets/images/srl-event/tip-3.jpg"></a>
+					
+					</div>
+				</div>
+
+
+
+
 
 			</div>	
 		</div>													
@@ -79,14 +166,11 @@
 
 
 
-																	<div id="galleryPic1" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-body">
 
-																		<div class="modal-body">
-																			content
-																			</div>
-																		</div>
-
-																	</div>	
+	</div>
+</div>
 <?php 
 			   	include_once($serverBase."/includes/foot/foot-generic.php");
 			?>
@@ -106,6 +190,7 @@
 				"/assets/js/bootstrap-collapse.js",
 				"/assets/js/bootstrap-dropdown.js",
 				"/assets/js/bootstrap-modal.js",
+				"/assets/js/modal-window-fix.js",
 				"/assets/js/reece-ocnav.js",
 				"/assets/js/reece-carousel.js"
 			]; 

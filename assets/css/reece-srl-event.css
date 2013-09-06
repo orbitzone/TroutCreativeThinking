@@ -93,6 +93,9 @@
   background-repeat: repeat-x;
   filter: none !important;
 }
+.modal-body {
+  max-height: 800px;
+}
 .srl-titleBar p {
   padding: 10px 0 0 10px;
   font-size: 18px;

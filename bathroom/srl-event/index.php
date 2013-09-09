@@ -135,7 +135,7 @@
 
 
 
-	                    <div id="TipsCarousel1" class="carousel slide" data-bs-carousel="carousel" data-bs-carousel-interval="3000" >
+	                    <div id="TipsCarousel1" class="carousel slide" data-bs-carousel="carousel" data-bs-carousel-interval="5000" >
                           <div class="carousel-inner">
                             <div class="active item"><img src="../../assets/images/srl-event/tips/tip-1.jpg" alt=""></div>
                             <div class="item"><img src="../../assets/images/srl-event/tips/tip-2.jpg" alt=""></div>
@@ -150,7 +150,7 @@
 
 					<div class="span6">
 						
-							<div id="TipsCarousel2" class="carousel slide" data-bs-carousel="carousel" data-bs-carousel-interval="3000" >
+							<div id="TipsCarousel2" class="carousel slide" data-bs-carousel="carousel" data-bs-carousel-interval="5000" >
 	                          <div class="carousel-inner">
 	                            <div class="active item"><img src="../../assets/images/srl-event/tips/tip-3.jpg" alt=""></div>
 	                            <div class="item"><img src="../../assets/images/srl-event/tips/tip-4.jpg" alt=""></div>

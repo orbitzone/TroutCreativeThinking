@@ -135,13 +135,13 @@
 
 
 
-	                    <div id="TipsCarousel1" class="carousel slide" data-bs-carousel="carousel" data-bs-carousel-interval="5000" >
+	                    <div id="tipsCarousel1" class="carousel slide" data-bs-carousel="carousel" >
                           <div class="carousel-inner">
                             <div class="active item"><img src="../../assets/images/srl-event/tips/tip-1.jpg" alt=""></div>
                             <div class="item"><img src="../../assets/images/srl-event/tips/tip-2.jpg" alt=""></div>
                           </div>
-                          <a class="carousel-control left" href="#TipsCarousel1" data-slide="prev">&lsaquo;</a>
-                          <a class="carousel-control right" href="#TipsCarousel1" data-slide="next">&rsaquo;</a>
+                          <a class="carousel-control left" href="#tipsCarousel1" data-slide="prev">&lsaquo;</a>
+                          <a class="carousel-control right" href="#tipsCarousel1" data-slide="next">&rsaquo;</a>
                         </div>
 
 
@@ -150,14 +150,14 @@
 
 					<div class="span6">
 						
-							<div id="TipsCarousel2" class="carousel slide" data-bs-carousel="carousel" data-bs-carousel-interval="5000" >
+							<div id="tipsCarousel2" class="carousel slide" data-bs-carousel="carousel" >
 	                          <div class="carousel-inner">
 	                            <div class="active item"><img src="../../assets/images/srl-event/tips/tip-3.jpg" alt=""></div>
 	                            <div class="item"><img src="../../assets/images/srl-event/tips/tip-4.jpg" alt=""></div>
 	                            <div class="item"><img src="../../assets/images/srl-event/tips/tip-5.jpg" alt=""></div>
 	                          </div>
-	                          <a class="carousel-control left" href="#TipsCarousel2" data-slide="prev">&lsaquo;</a>
-	                          <a class="carousel-control right" href="#TipsCarousel2" data-slide="next">&rsaquo;</a>
+	                          <a class="carousel-control left" href="#tipsCarousel2" data-slide="prev">&lsaquo;</a>
+	                          <a class="carousel-control right" href="#tipsCarousel2" data-slide="next">&rsaquo;</a>
 	                        </div>
 					
 					</div>
@@ -205,9 +205,33 @@
 				"/assets/js/bootstrap-modal.js",
 				"/assets/js/modal-window-fix.js",
 				"/assets/js/reece-ocnav.js",
-				"/assets/js/reece-carousel.js"
+				//"/assets/js/reece-carousel.js"
 			]; 
 		   	include_once($serverBase."/includes/foot/scripts.php");
 		?>
+
+		<script type="text/javascript">
+
+			$(document).ready(function() {
+				var $carousel = $('[data-bs-carousel]');
+				if ($carousel.length != 0) {
+					$carousel.swiperight(function() {  
+						$carousel.carousel('prev');  
+					});
+					$carousel.swipeleft(function() {
+						$carousel.carousel('next');
+					});
+				}
+				$('#tipsCarousel1').carousel({
+					interval: 5000
+				});
+				//Custom slide interval
+				setTimeout(function() { 
+					$('#tipsCarousel2').carousel({
+						interval: 5000
+					});
+				}, 2500);
+			});
+		</script>
 																</body>
 															</html>

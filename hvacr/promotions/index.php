@@ -39,7 +39,7 @@
 					</div>
 
 					<div class="row-fluid hitachi-intro">
-					<h3>Congratulations on buying a Hitachi air conditioner. Simply fill in your details and tell us why you like Hitachi for your opportunity to win.</h3>
+					<h3>Congratulations on buying a Hitachi air conditioner. Simply fill in your details and tell us your favourite Hitachi Air Conditioner feature for your opportunity to win.</h3>
 					</div>
 
 					<form class="form-stacked hitachi-form" action="submit.php" method="POST">
@@ -49,6 +49,7 @@
 							<fieldset>
 							<legend>Entry Form</legend>
 							</fieldset>
+							<br>
 						</div>
 					</div>
 
@@ -82,7 +83,7 @@
 								</div>
 
 								<div class="control-group">
-									<label class="control-label" for="favourite-feature">Tell us your favourite Hitachi Air Conditioner Feature and why.</label>
+									<label class="control-label" for="favourite-feature">Tell us your favourite Hitachi Air Conditioner feature and why.</label>
 									<div class="controls">
 										<textarea class="field span12" rows="4" id="favourite-feature" name="favourite-feature"></textarea>
 									</div>
@@ -206,7 +207,7 @@
 						</form>
 					</div>
 					<div class="row-fluid">
-						<img src="/assets/images/promotions/hitachi-logo.png" width="200" class="pull-right" />
+						<img src="/assets/images/promotions/hitachi-logo.png" style="width: 200px; height: 93px;" class="pull-right" />
 					</div>
 				</div>
 			</div>

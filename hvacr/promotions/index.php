@@ -71,7 +71,7 @@
 								<div class="control-group">
 									<label class="control-label" for="reece-account-number">Reece Account Number</label>
 									<div class="controls">
-									<input id="reece-account-number" name="reece-account-number" type="text" placeholder="" class="input-xlarge">
+									<input id="reece-account-number" name="reece-account-number" type="text" placeholder="" class="input-xlarge" required="">
 									</div>
 								</div>
 
@@ -83,7 +83,7 @@
 								</div>
 
 								<div class="control-group">
-									<label class="control-label" for="favourite-feature">Tell us your favourite Hitachi Air Conditioner feature and why.</label>
+									<label class="control-label" for="favourite-feature"><strong>Tell us your favourite Hitachi Air Conditioner feature and why.</strong></label>
 									<div class="controls">
 										<textarea class="field span12" rows="4" id="favourite-feature" name="favourite-feature"></textarea>
 									</div>
@@ -188,7 +188,7 @@
 								<div class="span8">
 								<div class="controls">
 									<label class="checkbox" for="terms-agree">
-									<input type="checkbox" name="terms-agree" id="terms-agree" value="I Agree">
+									<input type="checkbox" name="terms-agree" id="terms-agree" value="I Agree" required="">
 									I agree to the <a href="terms.php" class="terms">terms and conditions</a> of this offer.
 									</label>
 								</div>

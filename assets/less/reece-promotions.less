@@ -1,0 +1,51 @@
+.gradient(@color: #F5F5F5, @start: #EEE, @stop: #FFF) {
+  background: @color;
+  background: -webkit-gradient(linear,
+                               left bottom,
+                               left top,
+                               color-stop(0, @start),
+                               color-stop(1, @stop));
+  background: -ms-linear-gradient(bottom,
+                                  @start,
+                                  @stop);
+  background: -moz-linear-gradient(center bottom,
+                                   @start 0%,
+                                   @stop 100%);
+  background: -o-linear-gradient(@stop,
+                                 @start);
+  filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@stop,@start));
+}
+
+.hitachi-bg
+{
+	background: url('/assets/images/promotions/hitachi-bg.jpg') no-repeat;
+	background-size: auto 100%;
+}
+
+.hitachi-bg div
+{
+	padding: 30px 20px;
+}
+
+.hitachi-intro h3
+{
+	color: #db1e24;
+	margin: 20px 0;
+}
+
+.hitachi-select
+{
+	padding: 15px;
+	.gradient(#4871b4, #638cc4, #4871b4);
+}
+
+.hitachi-select  label
+{
+	padding-top: 3px;
+	color: white;
+}
+
+a.terms
+{
+	color: #db1e24;
+}

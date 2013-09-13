@@ -1,0 +1,27 @@
+.hitachi-bg {
+  background: url('/assets/images/promotions/hitachi-bg.jpg') no-repeat;
+  background-size: auto 100%;
+}
+.hitachi-bg div {
+  padding: 30px 20px;
+}
+.hitachi-intro h3 {
+  color: #db1e24;
+  margin: 20px 0;
+}
+.hitachi-select {
+  padding: 15px;
+  background: #4871b4;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #638cc4), color-stop(1, #4871b4));
+  background: -ms-linear-gradient(bottom, #638cc4, #4871b4);
+  background: -moz-linear-gradient(center bottom, #638cc4 0%, #4871b4 100%);
+  background: -o-linear-gradient(#4871b4, #638cc4);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4871b4', endColorstr='#638cc4', GradientType=0);
+}
+.hitachi-select label {
+  padding-top: 3px;
+  color: white;
+}
+a.terms {
+  color: #db1e24;
+}

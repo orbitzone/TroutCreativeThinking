@@ -29,12 +29,5 @@
   color: #b65312;
 }
 .page-branding.box-brand {
-  background-color: #883e0d;
-  background-image: -moz-linear-gradient(left, #b65312, #883e0d);
-  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#b65312), to(#883e0d));
-  background-image: -webkit-linear-gradient(left, #b65312, #883e0d);
-  background-image: -o-linear-gradient(left, #b65312, #883e0d);
-  background-image: linear-gradient(to right, #b65312, #883e0d);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffb65312', endColorstr='#ff883e0d', GradientType=1);
+  background: #b65312;
 }

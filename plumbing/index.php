@@ -48,33 +48,6 @@
 						</div>
 					</article>
 			    </div>
-
-				<div class="article-summary-secondary">
-					<div class="row-fluid">
-
-						<article class="article span6">
-							<a href="#"><img src="http://placehold.it/566x250" alt="Trade Sample Mini" /></a>
-							<small class="page-branding text-brand">9 June 2013</small>
-							<h3>Worldskills team 2013 – Meet Alex De Koeyer</h3>
-							<p>
-								The best, brightest young tradies compete for a world title.
-							</p>
-							<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
-						</article>
-
-						<article class="article span6">
-							<a href="#"><img src="http://placehold.it/566x250" alt="Trade Sample Mini" /></a>
-	    					<small class="page-branding text-brand">20 May 2013</small>
-	    					<h3>Conex launches hot new fitting</h3>
-	    					<p>
-								Conex Bänninger has just added a new fitting to their quality range of products.
-							</p>
-							<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
-						</article>
-
-					</div>
-				</div>		    
-
 				<div data-resize-group="gateway" class="article-gateway row-fluid">
 					<article data-resize="height" class="article span3">
 						<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>

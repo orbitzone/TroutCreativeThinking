@@ -7827,6 +7827,8 @@ h6 {
   }
   .ocmain-wrapper {
     background-color: #ffffff;
+    position: absolute;
+    min-height: 100%;
   }
 }
 @media (max-width: 767px) {

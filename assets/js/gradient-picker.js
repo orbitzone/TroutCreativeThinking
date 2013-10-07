@@ -971,6 +971,7 @@ function removeStop(obj) {
 var markup, gecko, oldwebkit, newwebkit, opera, base64url, ms, w3c;
 
 function getMarkup(inputPos, inputSize, inputWidth, inputHeight) {
+		gradientType = "linear";
     if (gradientType == "linear"){
         //alert(inputPos);
 		w3c = lineargradient_w3c(inputPos);

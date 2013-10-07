@@ -1,6 +1,6 @@
 		    
 		    <div class="navbar navbar-fixed-top">
-				<div class="navbar-inner">
+				<div id="navbar-inner" class="navbar-inner">
 				    <div class="navbar-container">
 						<a class="btn btn-navbar hidden-desktop">
 						    <span class="icon-bar"></span>

@@ -7,10 +7,24 @@
 						    <span class="icon-bar"></span>
 						    <span class="icon-bar"></span>
 						</a>
-						<a class="brand" href="#">Reece</a>
+						<a class="brand hidden-desktop" href="#">Reece</a>
 						<div class="visible-desktop">
-						    <ul class="nav">
+								<div class="row-fluid">
+								<div class="span6">
+									<a class="brand" href="#" title="Reece">Reece</a>
 
+									<div id="product-search-form">
+										<input type="search" placeholder="Search Products...">
+									</div>
+								</div>
+								<div class="span6">
+									<div id="account-tools" class="accountTools">
+										<a href="#cart"><i class="icon-shopping-cart"></i> Shopping Cart (8 Items)</a> | <a href="#myaccount"><i class="icon-user"></i> My Account</a>
+									</div>
+								</div>
+							</div>
+								<div class="row-fluid">
+								<ul class="nav">
 								<?php foreach ($navigationItems as $item) : ?>
 
 									<?php if ($item == $genericNavActiveMenuItem) : ?>
@@ -20,8 +34,8 @@
 									<?php endif; ?>
 
 								<?php endforeach; ?>
-
-						    </ul>
+								</ul>
+							</div>
 						</div>
 				    </div>
 				</div>

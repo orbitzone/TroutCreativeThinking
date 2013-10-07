@@ -7555,7 +7555,7 @@ h6 {
   margin: 0 20px;
 }
 .navbar-fixed-top .brand {
-  margin-left: 20px;
+  margin-left: 0px;
 }
 @media (max-width: 979px) {
   .navbar-fixed-top .brand {

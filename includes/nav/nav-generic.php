@@ -24,17 +24,19 @@
 								</div>
 							</div>
 								<div class="row-fluid">
-								<ul class="nav">
-								<?php foreach ($navigationItems as $item) : ?>
-
-									<?php if ($item == $genericNavActiveMenuItem) : ?>
-										<li class="active"><a href="#"><?php print $item; ?></a></li>
-									<?php else : ?>
-										<li><a href="#"><?php print $item; ?></a></li>
-									<?php endif; ?>
-
-								<?php endforeach; ?>
-								</ul>
+										<div class="span12">
+												<ul class="nav">
+												<?php foreach ($navigationItems as $item) : ?>
+				
+													<?php if ($item == $genericNavActiveMenuItem) : ?>
+														<li class="active"><a href="#"><?php print $item; ?></a></li>
+													<?php else : ?>
+														<li><a href="#"><?php print $item; ?></a></li>
+													<?php endif; ?>
+				
+												<?php endforeach; ?>
+												</ul>												
+										</div>
 							</div>
 						</div>
 				    </div>

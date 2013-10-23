@@ -561,14 +561,18 @@ hr {
 .diyEntryPage .entryPagingBottom {
   margin-bottom: 6px;
 }
-.diyEntryPage .entryInfo {
-  padding: 20px 40px;
+.diyEntryPage .entryContent {
+  padding: 20px 20px 15px 20px;
 }
-.diyEntryPage .entryInfo .posterName,
-.diyEntryPage .entryInfo .posterCity {
+.diyEntryPage .entryContent .entryInfo {
+  padding: 10px 20px;
+  background: #f2f0ee;
+}
+.diyEntryPage .entryContent .posterName,
+.diyEntryPage .entryContent .posterCity {
   color: #0d2e56;
 }
-.diyEntryPage .entryInfo .posterComment {
+.diyEntryPage .entryContent .posterComment {
   padding: 20px 0;
 }
 .entryPageImages {

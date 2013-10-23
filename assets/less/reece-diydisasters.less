@@ -540,6 +540,90 @@ hr {
 
 }
 
+.diyEntryPage{
+	margin-left:0 !important;
 
+	.entryPaging{
+		color:@white;
+		margin: 3px 0;
+		background: @redColor;
+		overflow: hidden;
+		padding:4px 8px;
+
+		a{
+			color: @white;
+			text-decoration: none;
+			cursor: pointer;
+		}
+		.pagingLeft{
+			float: left;
+			padding-top: 5px;
+		}
+		.pagingRight{
+			float: right;
+			position: relative;
+			top: -2px;
+		}
+		.leftArrow,
+		.rightArrow{
+			font-size: 40px;
+			font-weight: 100;
+			position: relative;
+			top: 4px
+		}
+		.seperator{
+			position: relative;
+			top: -3px
+		}
+		.pagingVal{
+			font-size: 18px;
+		}
+
+		.pagingLable
+		{
+			font-family: veneerregular;
+			font-weight: normal;
+			font-size: 20px;
+			padding: 0 5px
+		}
+
+	}
+	.entryPagingTop{
+		margin-top: 6px;
+	}
+	.entryPagingBottom{
+		margin-bottom: 6px
+	}
+
+
+	.entryPageImages{
+		margin:0;
+		overflow: hidden;
+		li{
+			display: block;
+			float: left;
+			list-style: none;
+			width: 50%;
+			border: solid 3px @white;
+			box-sizing:border-box;
+			text-align: center;
+		}
+		li.odd{border-left: none;}
+		li.even{ border-right: none;}
+
+		
+	}
+	.entryInfo{
+		padding: 20px 40px;
+
+		.posterName,
+		.posterCity{
+			color:#0d2e56
+		}
+		.posterComment{
+			padding: 20px 0;
+		}
+	}
+}
 
 

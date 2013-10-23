@@ -510,3 +510,82 @@ hr {
     max-width: 290px;
   }
 }
+.diyEntryPage {
+  margin-left: 0 !important;
+}
+.diyEntryPage .entryPaging {
+  color: #ffffff;
+  margin: 3px 0;
+  background: #da291c;
+  overflow: hidden;
+  padding: 4px 8px;
+}
+.diyEntryPage .entryPaging a {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.diyEntryPage .entryPaging .pagingLeft {
+  float: left;
+  padding-top: 5px;
+}
+.diyEntryPage .entryPaging .pagingRight {
+  float: right;
+  position: relative;
+  top: -2px;
+}
+.diyEntryPage .entryPaging .leftArrow,
+.diyEntryPage .entryPaging .rightArrow {
+  font-size: 40px;
+  font-weight: 100;
+  position: relative;
+  top: 4px;
+}
+.diyEntryPage .entryPaging .seperator {
+  position: relative;
+  top: -3px;
+}
+.diyEntryPage .entryPaging .pagingVal {
+  font-size: 18px;
+}
+.diyEntryPage .entryPaging .pagingLable {
+  font-family: veneerregular;
+  font-weight: normal;
+  font-size: 20px;
+  padding: 0 5px;
+}
+.diyEntryPage .entryPagingTop {
+  margin-top: 6px;
+}
+.diyEntryPage .entryPagingBottom {
+  margin-bottom: 6px;
+}
+.diyEntryPage .entryPageImages {
+  margin: 0;
+  overflow: hidden;
+}
+.diyEntryPage .entryPageImages li {
+  display: block;
+  float: left;
+  list-style: none;
+  width: 50%;
+  border: solid 3px #ffffff;
+  box-sizing: border-box;
+  text-align: center;
+}
+.diyEntryPage .entryPageImages li.odd {
+  border-left: none;
+}
+.diyEntryPage .entryPageImages li.even {
+  border-right: none;
+}
+.diyEntryPage .entryInfo {
+  padding: 20px 40px;
+}
+.diyEntryPage .entryInfo .posterName,
+.diyEntryPage .entryInfo .posterCity {
+  color: #0d2e56;
+}
+.diyEntryPage .entryInfo .posterComment {
+  padding: 20px 0;
+}

@@ -596,23 +596,7 @@ hr {
 	}
 
 
-	.entryPageImages{
-		margin:0;
-		overflow: hidden;
-		li{
-			display: block;
-			float: left;
-			list-style: none;
-			width: 50%;
-			border: solid 3px @white;
-			box-sizing:border-box;
-			text-align: center;
-		}
-		li.odd{border-left: none;}
-		li.even{ border-right: none;}
 
-		
-	}
 	.entryInfo{
 		padding: 20px 40px;
 
@@ -625,5 +609,26 @@ hr {
 		}
 	}
 }
+
+.entryPageImages {
+    -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.entryPageImages .item {
+  width:  446px;
+  height: 335px;
+  float: left;
+  border: 2px solid #fff;
+
+    -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+.item.h2 { height: 595px; }
+
 
 

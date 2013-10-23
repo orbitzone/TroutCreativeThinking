@@ -560,25 +560,6 @@ hr {
 .diyEntryPage .entryPagingBottom {
   margin-bottom: 6px;
 }
-.diyEntryPage .entryPageImages {
-  margin: 0;
-  overflow: hidden;
-}
-.diyEntryPage .entryPageImages li {
-  display: block;
-  float: left;
-  list-style: none;
-  width: 50%;
-  border: solid 3px #ffffff;
-  box-sizing: border-box;
-  text-align: center;
-}
-.diyEntryPage .entryPageImages li.odd {
-  border-left: none;
-}
-.diyEntryPage .entryPageImages li.even {
-  border-right: none;
-}
 .diyEntryPage .entryInfo {
   padding: 20px 40px;
 }
@@ -588,4 +569,21 @@ hr {
 }
 .diyEntryPage .entryInfo .posterComment {
   padding: 20px 0;
+}
+.entryPageImages {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.entryPageImages .item {
+  width: 446px;
+  height: 335px;
+  float: left;
+  border: 2px solid #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.item.h2 {
+  height: 595px;
 }

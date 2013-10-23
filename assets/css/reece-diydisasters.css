@@ -575,7 +575,7 @@ hr {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.entryPageImages .item {
+.entryPageImages .entryImage {
   width: 446px;
   height: 335px;
   float: left;
@@ -584,6 +584,6 @@ hr {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.item.h2 {
+.entryImage.portrait {
   height: 595px;
 }

@@ -210,10 +210,13 @@ h1, h2, h3, h4, h5, h6 {
 // Navigation Modules
 //====================================================================================================================================
 //====================================================================================================================================
-
-.navbar-inner {
+.topNav{
     background: #29303a;
-    border: none;
+    border-bottom: solid 1px #48515f;
+    .clearfix;
+}
+.navHeader{
+    padding-bottom: 25px;
 }
 .navbar-container {
     max-width: 1200px;
@@ -223,6 +226,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #898c90;
     text-shadow: none;
     padding: 15px 20px;
+    font-size: 15px;
 }
 .navbar .nav > li > a:hover, 
 .navbar .nav > li > a:focus {
@@ -236,14 +240,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
     box-shadow: none;
 }
-.navbar .brand {
-    overflow: hidden;
-    text-indent: 10em;
-    width: 104px;
-    height: 50px;
-    background-image: url('../images/reece-logo.png'); 
-    background-repeat: no-repeat;
-}
+
 
 .navbar .sub-brand {
     display: block;
@@ -258,20 +255,51 @@ h1, h2, h3, h4, h5, h6 {
 .navbar .sub-brand:hover {
     text-decoration: none;
 }
-.headeNav{
-    padding-bottom: 25px;
-}
+
 /* product-search-form */
 #product-search-form {
     float: left;
     padding: 5px 0 0 10px;
 }
-.accountTools {
+.headerUtilityLinks{
+    color: #d3d4d5;
+    font-size: 12px;
+    font-weight: 200;
+    background: #23272d;
     float: right;
-    padding: 10px 10px 0 0;
-    color: #ffffff;
+    padding:5px 15px;
+    a{
+        color: #d3d4d5;
+    }
+    
 }
-.accountTools a,.accountTools a:hover{ color:#fff;text-decoration:none}
+
+.headerNavSearchForm{
+    display: inline-block;
+    margin: 0;
+    padding-right: 10px;
+    input{
+        background: none;
+        border: none;
+        margin: 0;
+        padding:0;
+        color: #d3d4d5;
+        width: 110px;
+        font-size: 12px;
+        border-bottom: solid 1px #d3d4d5;
+        .border-radius(0);
+        &:focus{
+            box-shadow: none;
+            border-color: #d3d4d5;
+        }
+    }
+    label{
+        display: inline-block;
+        width: auto !important;
+    }
+}
+
+
 .navbar .btn-navbar {
     background: #555; 
     background: -moz-linear-gradient(top,  #cccccc 0%, #6d6d6d 50%, #555555 51%, #555555 100%);
@@ -284,10 +312,9 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid #444;
 }
 .subnavbar {
-    padding: 10px 0;
-    margin: 145px 0 0;
+    
+    margin: 146px 0 0;
     background: #384251;
-    border-top: solid 1px #48515f;
 }
 .subnavbar ul.nav {
     margin: 0 20px;
@@ -295,11 +322,10 @@ h1, h2, h3, h4, h5, h6 {
 .subnavbar ul.nav li {
     display: inline-block;
     .ie7-inline-block();
-    padding: 0 15px 0 0;
 }
 .subnavbar ul.nav li a {
     color: #ddd;
-    text-shadow: 0 -1px 0 #000;
+    padding: 10px 15px 10px 0;
     font-size: 12px;
 }
 .subnavbar ul.nav li a:hover, 
@@ -307,7 +333,43 @@ h1, h2, h3, h4, h5, h6 {
     background: none;
     color: #fff;
 }
+/* Happiness */
+.happiness-subNav{
+    background: #c91d1d;
+    ul.nav li a {
+        color: #ee8f8f;
+        font-size: 16px;
+        font-weight: 200;
+    }
 
+    .active{
+        background: #d63232;
+    }
+    ul.nav li a {
+        padding:  15px 20px;
+
+    }
+    ul.nav{
+        margin: 0;
+        position: relative;
+    }
+
+    .subNavDropDown{
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        background: #fff;
+        display: none;
+    }
+    li:hover .subNavDropDown{
+        display: block;
+    }
+    .subNavDropDownInner{
+        padding: 20px;
+    }
+}
+/* */
 @media (max-width: 979px) {
     .navbar-fixed-top .navbar-inner, 
     .navbar-fixed-bottom .navbar-inner {

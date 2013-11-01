@@ -1,42 +1,49 @@
-<div class="navbar navbar-fixed-top">
-	<div id="navbar-inner" class="navbar-inner">
-		<div class="navbar-container">
-			<a class="btn btn-navbar hidden-desktop">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</a>
-			<a class="brand hidden-desktop" href="#">Reece</a>
-			<div class="visible-desktop">
-				<div class="row-fluid headeNav">
-					<div class="span6">
-						<a class="brand" href="#" title="Reece">Reece</a>
-					</div>
-					<div class="span6">
-						<div id="product-search-form">
-							<input type="search" placeholder="Search Products...">
-						</div>					
-						<div id="account-tools" class="accountTools">
-							<a href="#cart"><i class="icon-shopping-cart"></i> Shopping Cart (8 Items)</a> | <a href="#myaccount"><i class="icon-user"></i> My Account</a>
-						</div>
-					</div>
+<div class="navbar navbar-fixed-top topNav">
+	<div class="navbar-container">
+		<a class="btn btn-navbar hidden-desktop">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</a>
+		<a class="brand hidden-desktop" href="#">Reece</a>
+		<div class="visible-desktop">
+			<div class="row-fluid navHeader">
+				<div class="span5">
+					<a class="brand" href="#" title="Reece">Reece</a>
 				</div>
-				<div class="row-fluid">
-					<div class="span12">
-						<ul class="nav">
-						<?php foreach ($navigationItems as $item) : ?>
-
-							<?php if ($item == $genericNavActiveMenuItem) : ?>
-								<li class="active"><a href="#"><?php print $item; ?></a></li>
-							<?php else : ?>
-								<li><a href="#"><?php print $item; ?></a></li>
-							<?php endif; ?>
-
-						<?php endforeach; ?>
-						</ul>												
+				<div class="span7">
+					<div class="headerUtilityLinks">
+					<form class="headerNavSearchForm">
+						<label for="headerSearchInput"><i class="icon-search icon">&nbsp;</i></label>
+						<input type="search" placeholder="Search Products..." id="headerSearchInput">
+					</form>
+						
+						
+						<i class="icon-map-marker icon">&nbsp;</i>
+						Collingwood
+						|
+						<a href="#">
+							<i class="icon-shopping-cart">&nbsp;</i> Shopping Cart (0)
+						</a>
+						|
+						<a href="#">
+							<i class="icon-user">&nbsp;</i> My Account
+						</a>
 					</div>
 				</div>
 			</div>
-	    </div>
+			<nav>
+				<ul class="nav">
+				<?php foreach ($navigationItems as $item) : ?>
+					<?php if ($item == $genericNavActiveMenuItem) : ?>
+						<li class="active"><a href="#"><?php print $item; ?></a></li>
+					<?php else : ?>
+						<li><a href="#"><?php print $item; ?></a></li>
+					<?php endif; ?>
+
+				<?php endforeach; ?>
+				</ul>
+			</nav>
+		</div>	
 	</div>
 </div>

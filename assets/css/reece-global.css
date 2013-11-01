@@ -5493,12 +5493,11 @@ input[type="submit"].btn.btn-mini {
 .navbar .brand {
   float: left;
   display: block;
-  padding: 10px 20px 10px;
-  margin-left: -20px;
-  font-size: 20px;
-  font-weight: 200;
-  color: #777777;
-  text-shadow: 0 1px 0 #ffffff;
+  overflow: hidden;
+  text-indent: 100em;
+  width: 144px;
+  height: 71px;
+  background: url('../images/reece-logo.png') no-repeat;
 }
 .navbar .brand:hover,
 .navbar .brand:focus {
@@ -9166,9 +9165,31 @@ h6 {
     margin-left: 0;
   }
 }
-.navbar-inner {
+.topNav {
   background: #29303a;
-  border: none;
+  border-bottom: solid 1px #48515f;
+  *zoom: 1;
+}
+.topNav:before,
+.topNav:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.topNav:after {
+  clear: both;
+}
+.topNav:before,
+.topNav:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.topNav:after {
+  clear: both;
+}
+.navHeader {
+  padding-bottom: 25px;
 }
 .navbar-container {
   max-width: 1200px;
@@ -9178,6 +9199,7 @@ h6 {
   color: #898c90;
   text-shadow: none;
   padding: 15px 20px;
+  font-size: 15px;
 }
 .navbar .nav > li > a:hover,
 .navbar .nav > li > a:focus {
@@ -9190,14 +9212,6 @@ h6 {
   background: none;
   color: #fff;
   box-shadow: none;
-}
-.navbar .brand {
-  overflow: hidden;
-  text-indent: 10em;
-  width: 104px;
-  height: 50px;
-  background-image: url('../images/reece-logo.png');
-  background-repeat: no-repeat;
 }
 .navbar .sub-brand {
   display: block;
@@ -9212,23 +9226,47 @@ h6 {
 .navbar .sub-brand:hover {
   text-decoration: none;
 }
-.headeNav {
-  padding-bottom: 25px;
-}
 /* product-search-form */
 #product-search-form {
   float: left;
   padding: 5px 0 0 10px;
 }
-.accountTools {
+.headerUtilityLinks {
+  color: #d3d4d5;
+  font-size: 12px;
+  font-weight: 200;
+  background: #23272d;
   float: right;
-  padding: 10px 10px 0 0;
-  color: #ffffff;
+  padding: 5px 15px;
 }
-.accountTools a,
-.accountTools a:hover {
-  color: #fff;
-  text-decoration: none;
+.headerUtilityLinks a {
+  color: #d3d4d5;
+}
+.headerNavSearchForm {
+  display: inline-block;
+  margin: 0;
+  padding-right: 10px;
+}
+.headerNavSearchForm input {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  color: #d3d4d5;
+  width: 110px;
+  font-size: 12px;
+  border-bottom: solid 1px #d3d4d5;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.headerNavSearchForm input:focus {
+  box-shadow: none;
+  border-color: #d3d4d5;
+}
+.headerNavSearchForm label {
+  display: inline-block;
+  width: auto !important;
 }
 .navbar .btn-navbar {
   background: #555;
@@ -9242,10 +9280,8 @@ h6 {
   border: 1px solid #444;
 }
 .subnavbar {
-  padding: 10px 0;
-  margin: 145px 0 0;
+  margin: 146px 0 0;
   background: #384251;
-  border-top: solid 1px #48515f;
 }
 .subnavbar ul.nav {
   margin: 0 20px;
@@ -9256,11 +9292,10 @@ h6 {
   /* IE7 inline-block hack */
 
   *zoom: 1;
-  padding: 0 15px 0 0;
 }
 .subnavbar ul.nav li a {
   color: #ddd;
-  text-shadow: 0 -1px 0 #000000;
+  padding: 10px 15px 10px 0;
   font-size: 12px;
 }
 .subnavbar ul.nav li a:hover,
@@ -9268,6 +9303,40 @@ h6 {
   background: none;
   color: #fff;
 }
+/* Happiness */
+.happiness-subNav {
+  background: #c91d1d;
+}
+.happiness-subNav ul.nav li a {
+  color: #ee8f8f;
+  font-size: 16px;
+  font-weight: 200;
+}
+.happiness-subNav .active {
+  background: #d63232;
+}
+.happiness-subNav ul.nav li a {
+  padding: 15px 20px;
+}
+.happiness-subNav ul.nav {
+  margin: 0;
+  position: relative;
+}
+.happiness-subNav .subNavDropDown {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  background: #fff;
+  display: none;
+}
+.happiness-subNav li:hover .subNavDropDown {
+  display: block;
+}
+.happiness-subNav .subNavDropDownInner {
+  padding: 20px;
+}
+/* */
 @media (max-width: 979px) {
   .navbar-fixed-top .navbar-inner,
   .navbar-fixed-bottom .navbar-inner {

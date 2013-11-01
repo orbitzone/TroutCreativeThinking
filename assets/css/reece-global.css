@@ -9220,8 +9220,9 @@ h6 {
   width: 110px;
   font-size: 12px;
   border-bottom: solid 1px #d3d4d5;
-  -webkit-border-radius: 0;
   -moz-border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
   border-radius: 0;
 }
 .headerNavSearchForm input:focus {

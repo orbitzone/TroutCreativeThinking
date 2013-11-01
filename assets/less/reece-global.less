@@ -229,6 +229,11 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 15px;
     font-weight: 200;
 }
+.navbar .brand{
+  width: 145px;
+  height: 70px;
+  background: url('../images/reece-logo.png') no-repeat;     
+}
 @media (min-width: @navbarCollapseDesktopWidth) and (max-width: 1200px){
     .navbar .nav > li > a {
         padding: 15px;
@@ -306,19 +311,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.navbar .btn-navbar {
-    background: #555; 
-    background: -moz-linear-gradient(top,  #cccccc 0%, #6d6d6d 50%, #555555 51%, #555555 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cccccc), color-stop(50%,#6d6d6d), color-stop(51%,#555555), color-stop(100%,#555555));
-    background: -webkit-linear-gradient(top,  #cccccc 0%,#6d6d6d 50%,#555555 51%,#555555 100%);
-    background: -o-linear-gradient(top,  #cccccc 0%,#6d6d6d 50%,#555555 51%,#555555 100%);
-    background: -ms-linear-gradient(top,  #cccccc 0%,#6d6d6d 50%,#555555 51%,#555555 100%);
-    background: linear-gradient(to bottom,  #cccccc 0%,#6d6d6d 50%,#555555 51%,#555555 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#555555',GradientType=0 ); 
-    border: 1px solid #444;
+.navbar .btn-navbar,.navbar .btn-navbar:hover{
+    margin: 20px 15px 0 0;
+
+    background: #384251;
+    border: 1px solid #48515f;
 }
 .subnavbar {
-    
     margin: 146px 0 0;
     background: #384251;
 }
@@ -380,10 +379,6 @@ h1, h2, h3, h4, h5, h6 {
     .navbar-fixed-top .navbar-inner, 
     .navbar-fixed-bottom .navbar-inner {
 	   padding: 0;
-    }
-    .navbar .brand {
-	   padding-left: 20px;
-	   padding-right: 20px;
     }
     .subnavbar {
 	   margin-top: 0;

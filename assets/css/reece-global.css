@@ -5495,9 +5495,6 @@ input[type="submit"].btn.btn-mini {
   display: block;
   overflow: hidden;
   text-indent: 100em;
-  width: 144px;
-  height: 71px;
-  background: url('../images/reece-logo.png') no-repeat;
 }
 .navbar .brand:hover,
 .navbar .brand:focus {
@@ -5694,60 +5691,16 @@ input[type="submit"].btn.btn-mini {
 .navbar .btn-navbar {
   display: none;
   float: right;
-  padding: 7px 10px;
+  padding: 8px 10px;
   margin-left: 5px;
   margin-right: 5px;
-  color: #ffffff;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #ededed;
-  background-image: -moz-linear-gradient(top, #f2f2f2, #e5e5e5);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#e5e5e5));
-  background-image: -webkit-linear-gradient(top, #f2f2f2, #e5e5e5);
-  background-image: -o-linear-gradient(top, #f2f2f2, #e5e5e5);
-  background-image: linear-gradient(to bottom, #f2f2f2, #e5e5e5);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff2f2f2', endColorstr='#ffe5e5e5', GradientType=0);
-  border-color: #e5e5e5 #e5e5e5 #bfbfbf;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #e5e5e5;
-  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
-
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.075);
-  -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.075);
-  box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.075);
-}
-.navbar .btn-navbar:hover,
-.navbar .btn-navbar:focus,
-.navbar .btn-navbar:active,
-.navbar .btn-navbar.active,
-.navbar .btn-navbar.disabled,
-.navbar .btn-navbar[disabled] {
-  color: #ffffff;
-  background-color: #e5e5e5;
-  *background-color: #d9d9d9;
-}
-.navbar .btn-navbar:active,
-.navbar .btn-navbar.active {
-  background-color: #cccccc \9;
-}
-.navbar .btn-navbar:hover,
-.navbar .btn-navbar:focus,
-.navbar .btn-navbar:active,
-.navbar .btn-navbar.active,
-.navbar .btn-navbar.disabled,
-.navbar .btn-navbar[disabled] {
-  color: #ffffff;
-  background-color: #e5e5e5;
-  *background-color: #d9d9d9;
-}
-.navbar .btn-navbar:active,
-.navbar .btn-navbar.active {
-  background-color: #cccccc \9;
+  -webkit-box-shadow: 0 0 0;
+  -moz-box-shadow: 0 0 0;
+  box-shadow: 0 0 0;
 }
 .navbar .btn-navbar .icon-bar {
   display: block;
-  width: 18px;
+  width: 14px;
   height: 2px;
   background-color: #f5f5f5;
   -webkit-border-radius: 1px;
@@ -9202,6 +9155,11 @@ h6 {
   font-size: 15px;
   font-weight: 200;
 }
+.navbar .brand {
+  width: 145px;
+  height: 70px;
+  background: url('../images/reece-logo.png') no-repeat;
+}
 @media (min-width: 980px) and (max-width: 1200px) {
   .navbar .nav > li > a {
     padding: 15px;
@@ -9274,16 +9232,11 @@ h6 {
   display: inline-block;
   width: auto !important;
 }
-.navbar .btn-navbar {
-  background: #555;
-  background: -moz-linear-gradient(top, #cccccc 0%, #6d6d6d 50%, #555555 51%, #555555 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cccccc), color-stop(50%, #6d6d6d), color-stop(51%, #555555), color-stop(100%, #555555));
-  background: -webkit-linear-gradient(top, #cccccc 0%, #6d6d6d 50%, #555555 51%, #555555 100%);
-  background: -o-linear-gradient(top, #cccccc 0%, #6d6d6d 50%, #555555 51%, #555555 100%);
-  background: -ms-linear-gradient(top, #cccccc 0%, #6d6d6d 50%, #555555 51%, #555555 100%);
-  background: linear-gradient(to bottom, #cccccc 0%, #6d6d6d 50%, #555555 51%, #555555 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#555555', GradientType=0);
-  border: 1px solid #444;
+.navbar .btn-navbar,
+.navbar .btn-navbar:hover {
+  margin: 20px 15px 0 0;
+  background: #384251;
+  border: 1px solid #48515f;
 }
 .subnavbar {
   margin: 146px 0 0;
@@ -9347,10 +9300,6 @@ h6 {
   .navbar-fixed-top .navbar-inner,
   .navbar-fixed-bottom .navbar-inner {
     padding: 0;
-  }
-  .navbar .brand {
-    padding-left: 20px;
-    padding-right: 20px;
   }
   .subnavbar {
     margin-top: 0;

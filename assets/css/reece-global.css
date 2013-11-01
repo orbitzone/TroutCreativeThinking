@@ -9291,6 +9291,9 @@ h6 {
 .happiness-subNav {
   background: #c91d1d;
 }
+.happiness-subNav .navbar-container {
+  background: url('../images/happiness-logo.png') right center no-repeat;
+}
 .happiness-subNav ul.nav li a {
   color: #ee8f8f;
   font-size: 16px;

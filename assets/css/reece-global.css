@@ -9198,13 +9198,13 @@ h6 {
 .navbar .nav > li > a {
   color: #898c90;
   text-shadow: none;
-  padding: 15px;
+  padding: 15px 20px;
   font-size: 15px;
   font-weight: 200;
 }
 @media (min-width: 980px) and (max-width: 1200px) {
   .navbar .nav > li > a {
-    font-size: 13px;
+    padding: 15px;
   }
 }
 .navbar .nav > li > a:hover,

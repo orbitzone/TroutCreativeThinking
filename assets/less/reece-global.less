@@ -225,8 +225,14 @@ h1, h2, h3, h4, h5, h6 {
 .navbar .nav > li > a {
     color: #898c90;
     text-shadow: none;
-    padding: 15px 20px;
+    padding: 15px;
     font-size: 15px;
+    font-weight: 200;
+}
+@media (min-width: @navbarCollapseDesktopWidth) and (max-width: 1200px){
+    .navbar .nav > li > a {
+        font-size: 13px;
+    }
 }
 .navbar .nav > li > a:hover, 
 .navbar .nav > li > a:focus {

@@ -9298,12 +9298,10 @@ h6 {
   color: #ee8f8f;
   font-size: 16px;
   font-weight: 200;
+  padding: 15px 20px;
 }
 .happiness-subNav .active {
   background: #d63232;
-}
-.happiness-subNav ul.nav li a {
-  padding: 15px 20px;
 }
 .happiness-subNav ul.nav {
   margin: 0;
@@ -9313,7 +9311,7 @@ h6 {
   position: absolute;
   top: 100%;
   width: 100%;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
   background: #fff;
   display: none;
 }
@@ -9331,10 +9329,12 @@ h6 {
   display: block !important;
   float: none;
 }
-.happiness-subNav .subNavDropDownInner a {
+.happiness-subNav .subNavDropDownInner ul li a {
   color: #444 !important;
   display: block;
   padding: 3px 0 !important;
+  font-size: 13px;
+  font-weight: normal;
 }
 .happiness-subNav h3 {
   color: #c81818;

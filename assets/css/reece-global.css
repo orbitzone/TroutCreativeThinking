@@ -9159,6 +9159,7 @@ h6 {
   width: 145px;
   height: 70px;
   background: url('../images/reece-logo.png') no-repeat;
+  float: left;
 }
 @media (min-width: 980px) and (max-width: 1200px) {
   .navbar .nav > li > a {
@@ -9195,7 +9196,7 @@ h6 {
   float: left;
   padding: 5px 0 0 10px;
 }
-.headerUtilityLinks {
+.headerUtilityBar {
   color: #d3d4d5;
   font-size: 12px;
   font-weight: 200;
@@ -9203,8 +9204,31 @@ h6 {
   float: right;
   padding: 5px 15px;
 }
-.headerUtilityLinks a {
+.headerUtilityBar a {
   color: #d3d4d5;
+}
+.headerUtilityBar a:hover,
+.headerUtilityBar a:focus {
+  text-decoration: none;
+}
+.headerUtilityBar .caret {
+  border-top-color: #ffffff;
+}
+.headerUtilityBar .headerUtilityLink {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.headerUtilityBar .headerUtilityLink > li {
+  display: inline-block;
+  list-style: none;
+}
+.headerUtilityBar .headerUtilityLink > li:before {
+  content: '|';
+  padding: 0 5px;
+}
+.headerUtilityBar .headerUtilityLink > li:first-child:before {
+  display: none;
 }
 .headerNavSearchForm {
   display: inline-block;
@@ -9295,6 +9319,26 @@ h6 {
 }
 .happiness-subNav .subNavDropDownInner {
   padding: 20px;
+}
+.happiness-subNav .subNavDropDownInner ul {
+  margin: 0;
+  padding: 0;
+}
+.happiness-subNav .subNavDropDownInner li {
+  display: block !important;
+  float: none;
+}
+.happiness-subNav .subNavDropDownInner a {
+  color: #444 !important;
+  display: block;
+  padding: 3px 0 !important;
+}
+.happiness-subNav h3 {
+  color: #c81818;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: solid 1px #c81818;
+  padding-bottom: 10px;
 }
 /* */
 @media (max-width: 979px) {

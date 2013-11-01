@@ -8,28 +8,38 @@
 		<a class="brand hidden-desktop" href="#">Reece</a>
 		<div class="visible-desktop">
 			<div class="row-fluid navHeader">
-				<div class="span5">
-					<a class="brand" href="#" title="Reece">Reece</a>
-				</div>
-				<div class="span7">
-					<div class="headerUtilityLinks">
+				<a class="brand" href="#" title="Reece">Reece</a>
+				<div class="headerUtilityBar">
 					<form class="headerNavSearchForm">
 						<label for="headerSearchInput"><i class="icon-search icon">&nbsp;</i></label>
 						<input type="search" placeholder="Search Products..." id="headerSearchInput">
 					</form>
-						
-						
-						<i class="icon-map-marker icon">&nbsp;</i>
-						Collingwood
-						|
-						<a href="#">
-							<i class="icon-shopping-cart">&nbsp;</i> Shopping Cart (0)
-						</a>
-						|
-						<a href="#">
-							<i class="icon-user">&nbsp;</i> My Account
-						</a>
-					</div>
+					<ul class="headerUtilityLink">
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+								<i class="icon-map-marker icon">&nbsp;</i>
+								<span class="location">Collingwood 3066</span>
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+								<li><a href="#">Collingwood</a></li>
+								<li><a href="#">Richmond</a></li>
+								<li><a href="#">Hawthorn</a></li>
+								<li><a href="#">Sprinvale</a></li>
+								<li><a href="#">Toorak</a></li>
+							</ul>						
+						</li>
+						<li>
+							<a href="#">
+								<i class="icon-shopping-cart">&nbsp;</i> Shopping Cart (0)
+							</a>						
+						</li>
+						<li>
+							<a href="#">
+								<i class="icon-user">&nbsp;</i> My Account
+							</a>						
+						</li>					
+					</ul>
 				</div>
 			</div>
 			<nav>

@@ -19,6 +19,7 @@
 
 	    <div class="content-container">
 			<div class="inner-wrapper">
+<br><br><br><br><br><br><br><br>        
 					<div class="row-fluid">
 						<h2>Lorem ipsum dolor sit</h2>
 						<div>

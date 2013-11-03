@@ -13,7 +13,7 @@
 		<div class="ocmain-wrapper">
 
 			<?php
-				$genericNavActiveMenuItem = "Plumbing";
+
 			   	include_once($serverBase."/includes/nav/nav-generic.php");
 			?>
 

@@ -12,7 +12,7 @@
 				<div class="headerUtilityBar">
 					<form class="headerNavSearchForm">
 						<label for="headerSearchInput"><i class="icon-search icon">&nbsp;</i></label>
-						<input type="search" placeholder="Search Products..." id="headerSearchInput">
+						<input type="search" id="headerSearchInput">
 					</form>
 					<ul class="headerUtilityLink">
 						<li class="dropdown">

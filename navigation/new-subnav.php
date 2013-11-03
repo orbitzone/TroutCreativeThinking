@@ -17,6 +17,10 @@
 			   	include_once($serverBase."/includes/nav/nav-generic.php");
 			?>
 
+			<?php
+			   	include_once($serverBase."/includes/nav/nav-subnavbar.php");
+			?>
+
 	    <div class="content-container">
 			<div class="inner-wrapper">
 					<div class="row-fluid">

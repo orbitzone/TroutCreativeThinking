@@ -9195,7 +9195,6 @@ h6 {
 .headerUtilityBar {
   color: #d3d4d5;
   font-size: 12px;
-  font-weight: 200;
   background: #23272d;
   float: right;
   padding: 5px 15px;
@@ -9263,6 +9262,9 @@ h6 {
   margin: 140px 0 0;
   background: #384251;
 }
+#headCarousel {
+  padding-top: 130px !important;
+}
 .subnavbar ul.nav {
   margin: 0 20px;
 }
@@ -9277,6 +9279,8 @@ h6 {
   color: #ddd;
   padding: 10px 15px 10px 0;
   font-size: 12px;
+  font-weight: 200;
+  letter-spacing: 1px;
 }
 .subnavbar ul.nav li a:hover,
 .subnavbar ul.nav li.active a {

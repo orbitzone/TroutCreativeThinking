@@ -18,10 +18,8 @@
 			   	include_once($serverBase."/includes/nav/nav-generic.php");
 			?>
 
-	    <div class="content-container">
-			<div class="inner-wrapper">
-
-<div id="headCarousel" class="carousel  slide hidden-phone" data-bs-carousel="carousel" data-bs-carousel-interval="0">
+      
+      <div id="headCarousel" class="carousel  slide hidden-phone" data-bs-carousel="carousel" data-bs-carousel-interval="0">
 	<!-- Carousel items -->
 	<div class="carousel-inner">
         
@@ -45,10 +43,12 @@
         
 	</div>
     
-		<a class="carousel-control left background--light" href="/#headCarousel" data-slide="prev">&lsaquo;</a>
-		<a class="carousel-control right background--light" href="/#headCarousel" data-slide="next">&rsaquo;</a>
-    
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 </div>
+      
+
+
 
 
 
@@ -203,9 +203,7 @@
         </div>
     </div>
 </div>
-		</div>
-	    </div>	
-	    
+    
     <?php 
 			include_once($serverBase."/includes/foot/foot-generic.php");
 		?>	

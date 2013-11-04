@@ -9,9 +9,9 @@
 	  	include_once($serverBase."/includes/head/head-generic.php");
 	?>		
 
-    <body>
+    <body class="withSubNav">
 		<div class="ocmain-wrapper">
-
+			<div class="navbar navbar-fixed-top topNav">
 			<?php 
 				$genericNavActiveMenuItem = "Bathrooms";
 			   	include_once($serverBase."/includes/nav/nav-generic.php");
@@ -20,7 +20,7 @@
 			<?php 
 			   	include_once($serverBase."/includes/nav/nav-subnavbar.php");
 			?>				
-
+			</div>
 		    <div class="content-container">
 				<div class="inner-wrapper">
 

@@ -23,7 +23,7 @@ $(function() {
 });
 </script>
 </head>
-<body>
+<body class="withSubNav">
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -33,52 +33,60 @@ $(function() {
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 <div class="ocmain-wrapper">
-  <div class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
-      <div class="navbar-container"> <a class="btn btn-navbar hidden-desktop"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> <a href="" class="brand">Reece</a>
-        <div class="visible-desktop">
-          <ul class="nav">
-            <li class="link first item-1" id="btn-bathrooms"> <a href="#" id="nav-bathrooms">Bathrooms</a> </li>
-            <li class="link  item-2" id="btn-plumbing"> <a href="#" id="nav-plumbing">Plumbing</a> </li>
-            <li class="link  item-3" id="btn-irrigation"> <a href="#" id="nav-irrigation">Irrigation</a> </li>
-            <li class="link  item-4" id="btn-civil"> <a href="#" id="nav-civil">Civil</a> </li>
-            <li class="link  item-5" id="btn-onsite"> <a href="#" id="nav-onsite">Onsite</a> </li>
-            <li class="link  item-6" id="btn-hvacr"> <a href="#" id="nav-hvacr">HVAC-R</a> </li>
-            <li class="link  item-7" id="btn-about-us"> <a href="#" id="nav-about-us">About Us</a> </li>
-            <li class="link  item-8" id="btn-storefinder"> <a href="#" id="nav-storefinder">Store Finder</a> </li>
-            <li class="link last item-9" id="btn-my-account"> <a href="#" id="nav-my-account">My Account</a> </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="subnavbar visible-desktop">
-	<div class="navbar-container">
-	<ul class="nav">
-	<li>
-	<a title="Products" href="#">Products</a>
-	</li>
-	<li>
-	<a title="DIY Disasters" href="#">DIY Disasters</a>
-	</li>
-	<li>
-	<a title="Promotions" href="#">Promotions</a>
-	</li>
-	<li>
-	<a title="Tech Tools" href="#">Tech Tools</a>
-	</li>
-	<li>
-	<a title="Outlet" href="#">Outlet</a>
-	</li>
-	<li>
-	<a title="My Account" href="#">My Account</a>
-	</li>
-	<li>
-	<a title="How Reece works for you" href="#">How Reece works for you</a>
-	</li>
-	</ul>
-	</div>
+	<div class="navbar navbar-fixed-top topNav">
+	  <div class="navbar-container"> <a class="btn btn-navbar hidden-desktop"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> <a class="brand hidden-desktop mobile-logo" href="#">Reece</a>
+	    <div class=" visible-desktop">
+	      <div class="row-fluid navHeader"> <a class="brand" href="#" title="Reece">Reece</a>
+	        <div class="headerUtilityBar">
+	          <form class="headerNavSearchForm">
+	            <label for="headerSearchInput"><i class="icon-search icon">&nbsp;</i></label>
+	            <input type="search" id="headerSearchInput">
+	          </form>
+	          <ul class="headerUtilityLink">
+	            <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#"> <i class="icon-map-marker icon">&nbsp;</i> <span class="location">Collingwood 3066</span> <span class="caret"></span> </a>
+	              <div class="dropdown-menu locationDropDown">
+	                <input type="text" class="input-medium">
+	                <ul>
+	                  <li><a href="#">Collingwood</a></li>
+	                  <li><a href="#">Richmond</a></li>
+	                  <li><a href="#">Hawthorn</a></li>
+	                  <li><a href="#">Toorak</a></li>
+	                </ul>
+	              </div>
+	            </li>
+	            <li> <a href="#"> <i class="icon-shopping-cart">&nbsp;</i> Shopping Cart (0) </a> </li>
+	            <li> <a href="#"> <i class="icon-user">&nbsp;</i> My Account </a> </li>
+	          </ul>
+	        </div>
+	      </div>
+	      <nav class="navWrap">
+	        <ul class="nav">
+	          <li><a href="#">Bathrooms</a></li>
+	          <li class="active"><a href="#">Plumbing</a></li>
+	          <li><a href="#">Irrigation</a></li>
+	          <li><a href="#">Civil</a></li>
+	          <li><a href="#">Onsite</a></li>
+	          <li><a href="#">HVAC-R</a></li>
+	          <li><a href="#">About Us</a></li>
+	          <li><a href="#">Store Finder</a></li>
+	          <li><a href="#">My Account</a></li>
+	        </ul>
+	      </nav>
+	    </div>
+	  </div>
+	  <div class="subnavbar visible-desktop">
+	    <div class="navbar-container">
+	      <ul class="nav">
+	        <li><a title="Products" href="#">Products</a></li>
+	        <li class="active"><a title="DIY Disasters" href="#">DIY Disasters</a></li>
+	        <li><a title="Promotions" href="#">Promotions</a></li>
+	        <li><a title="Tech Tools" href="#">Tech Tools</a></li>
+	        <li><a title="Outlet" href="#">Outlet</a></li>
+	        <li><a title="My Account" href="#">My Account</a></li>
+	        <li><a title="How Reece works for you" href="#">How Reece works for you</a></li>
+	      </ul>
+	    </div>
+	  </div>
 	</div>
   
   <div class="content-container">

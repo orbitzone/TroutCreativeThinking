@@ -9,7 +9,7 @@
 	   	include_once($serverBase."/includes/head/head-generic.php");
 	?>		
 
-    <body class="no-touch bathroom-moments account-details-summary">
+    <body class="no-touch bathroom-moments account-details-summary withSubNav">
 		<div class="ocmain-wrapper">
 			<div class="navbar navbar-fixed-top topNav">
 			<?php

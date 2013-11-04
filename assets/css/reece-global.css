@@ -9109,17 +9109,17 @@ h6 {
 }
 @media (min-width: 980px) {
   body {
-    padding-top: 142px;
+    padding-top: 131px;
   }
   body.withSubNav {
-    padding-top: 182px;
+    padding-top: 171px;
   }
   body.withHappinessSubNav {
-    padding-top: 202px;
+    padding-top: 171px;
   }
 }
 .topNav {
-  background: #29303a;
+  background: #3f3f3f;
   *zoom: 1;
 }
 .topNav:before,
@@ -9141,7 +9141,7 @@ h6 {
   clear: both;
 }
 .navHeader {
-  padding-bottom: 21px;
+  padding-bottom: 10px;
 }
 .navbar-container {
   max-width: 1200px;
@@ -9290,7 +9290,7 @@ h6 {
   clear: both;
 }
 .subnavbar {
-  background: #384251;
+  background: #999999;
   *zoom: 1;
   margin: 0 !important;
 }
@@ -9313,7 +9313,7 @@ h6 {
   clear: both;
 }
 .subnavbar ul.nav {
-  margin: 0 20px;
+  margin: 0 15px;
 }
 .subnavbar ul.nav li {
   display: inline-block;
@@ -9373,13 +9373,13 @@ h6 {
 }
 .happiness-subNav .navbar-container {
   background: url('../images/happiness-logo.png') right center no-repeat;
-  background-size: 220px 30px;
+  background-size: 154px 21px;
 }
 .happiness-subNav ul.nav li a {
   color: #ee8f8f;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 200;
-  padding: 20px 15px;
+  padding: 10px 15px;
   letter-spacing: 1px;
 }
 .happiness-subNav .active {

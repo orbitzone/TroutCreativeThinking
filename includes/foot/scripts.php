@@ -3,4 +3,12 @@
 
 	<?php foreach ($jsScriptPaths as $value) : ?>
 		<script src="<?php print $value; ?>" type="text/javascript"></script>
-	<?php endforeach; ?>	
+	<?php endforeach; ?>
+
+	<script type="text/javascript">
+		$(function(){
+			$('.headerUtilityLink input').click(function(e){
+				e.stopPropagation();
+			})
+		})
+	</script>

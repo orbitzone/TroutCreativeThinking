@@ -9119,7 +9119,7 @@ h6 {
   }
 }
 .topNav {
-  background: #3f3f3f;
+  background: #60605B;
   *zoom: 1;
 }
 .topNav:before,
@@ -9200,7 +9200,7 @@ h6 {
 .headerUtilityBar {
   color: #d3d4d5;
   font-size: 12px;
-  background: #23272d;
+  background: #454545;
   float: right;
   padding: 8px 15px 5px;
 }

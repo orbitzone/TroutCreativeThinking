@@ -20,13 +20,16 @@
 							<span class="location">Collingwood 3066</span>
 							<span class="caret"></span>
 						</a>
-						<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-							<li><a href="#">Collingwood</a></li>
-							<li><a href="#">Richmond</a></li>
-							<li><a href="#">Hawthorn</a></li>
-							<li><a href="#">Sprinvale</a></li>
-							<li><a href="#">Toorak</a></li>
-						</ul>						
+						<div class="dropdown-menu locationDropDown">
+						<input type="text" class="input-medium">
+							<ul>
+								<li><a href="#">Collingwood</a></li>
+								<li><a href="#">Richmond</a></li>
+								<li><a href="#">Hawthorn</a></li>
+								<li><a href="#">Toorak</a></li>
+							</ul>						
+						</div>
+						
 					</li>
 					<li>
 						<a href="#">

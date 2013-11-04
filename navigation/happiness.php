@@ -23,27 +23,130 @@
 			</div>
 	    <div class="content-container">
 			<div class="inner-wrapper">
-					<div class="row-fluid">
-						<h2>Lorem ipsum dolor sit</h2>
-						<div>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur volutpat pulvinar neque, quis congue turpis. Suspendisse sit amet tristique leo. Quisque auctor ac elit vel adipiscing. Aliquam erat volutpat. Donec eu dolor id odio malesuada semper sed vitae magna. Mauris convallis ac eros et ultricies. Vivamus eu odio eu nulla tincidunt rhoncus. Vivamus faucibus lectus id turpis laoreet, et pretium odio tincidunt. Duis ac elit sagittis, malesuada magna eget, lacinia ante.
-							</p>
-							<p>
-								Vivamus posuere erat in mollis feugiat. Nullam facilisis lacus vel massa aliquam, id eleifend diam posuere. Praesent sollicitudin sapien nibh, ut commodo nibh scelerisque sit amet. Vivamus bibendum mauris eget nulla tempor, sit amet ornare lorem vulputate. Phasellus tincidunt, dolor id molestie luctus, nunc lorem dignissim nisi, ut tempor turpis tellus quis nisl. Curabitur accumsan et enim sit amet luctus. Ut condimentum lobortis vestibulum. Maecenas in interdum dolor, a feugiat felis. Cras eu laoreet tortor, non cursus ante.
-							</p>
-							<p>
-								Fusce porttitor erat et eros feugiat, ut fermentum ante eleifend. Nullam commodo nisi nec velit laoreet porta. Aliquam erat dolor, porta non lectus nec, dapibus malesuada turpis. Vivamus placerat ut urna at viverra. Suspendisse fringilla metus vel mi fermentum viverra. Donec aliquet urna eros, congue molestie purus mollis non. Aliquam luctus sit amet eros quis sollicitudin. Vestibulum quis quam nisi. Suspendisse dictum rhoncus augue, non aliquet massa elementum et. Suspendisse sed vestibulum lorem, nec rhoncus felis. Fusce vitae sapien ullamcorper, fermentum eros at, faucibus mi. Nulla quis lectus felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam ut nulla ac sapien dignissim fringilla id a urna. Fusce ultrices sit amet turpis in fringilla.
-							</p>
-							<p>
-								Praesent luctus pretium placerat. Aenean quis augue luctus nisi tristique tristique vitae a ipsum. Proin est arcu, dapibus sed pellentesque sit amet, aliquam non dolor. Nam non ligula quis magna aliquet tincidunt. Morbi dignissim, nulla sed vestibulum fringilla, nunc massa luctus urna, et porttitor eros nulla feugiat mauris. Aenean vitae velit sed eros aliquet malesuada. Nulla non blandit elit. Proin in mauris in augue volutpat feugiat. Ut in turpis at ante pellentesque lobortis sit amet non augue. Etiam vehicula pretium neque, tincidunt semper ipsum accumsan eu. Morbi commodo posuere mauris, a porta magna vehicula a. Curabitur eget neque dolor. Duis dictum sit amet est quis venenatis. Aliquam neque nibh, placerat sit amet consequat in, tristique in mauris.
-							</p>
-							<p>
-								Suspendisse potenti. Praesent tellus orci, euismod id sem in, molestie lobortis erat. Proin sagittis eget massa nec auctor. Vivamus augue ipsum, ultrices pharetra blandit molestie, aliquam in tellus. In at fringilla metus. Sed aliquet venenatis diam et pulvinar. Vivamus lobortis euismod tempor. Phasellus nec aliquet enim. Nunc ultricies erat ante, non scelerisque odio accumsan nec.
-							</p>
-						</div>
+<div class="row-fluid">
+            
+                <div id="headCarousel" class="carousel  slide" data-bs-carousel="carousel" data-bs-carousel-interval="0">
+	<div class="carousel-inner">
+        
+			<div class="item active">
+				<a href="/bathroom-sale">
+					<img src="http://www.reece.com.au/assets/pages/thumbnails/sale-bathroom-luxury-trend.jpg" alt="Sale-boho" class="hidden-phone">
+                    
+						<img src="http://www.reece.com.au/assets/pages/thumbnails/happiness-zone-hotel-mobile.jpg" alt="Sale-boho" class="visible-phone">
+                    
+				</a>
+			</div>
+        
+	</div>
+    
+</div>
+            
+		</div>
 
-					</div>
+		<div class="content-container">
+    <div class="inner-wrapper">
+
+            <div id="landingTiles" class="top-space">
+                <div class="row-fluid hidden-tablet">
+                    
+                    
+                    <div class="tile-1811 span3 bottom-space ">
+                        
+<a href="/bathrooms/products"></a>
+<img src="http://www.reece.com.au/assets/Uploads/discover-620x275.jpg" alt="Discover Products">
+<div class="caption"><h4>Discover Products</h4><hr>
+    <p>Browse over 1500 products designed to help you create the perfect bathroom</p>
+</div>
+                    </div>
+                    
+                    <div class="tile-1812 span3 bottom-space alt1">
+                        
+<a href="http://www.reece.com.au/bathroom-inspiration"></a>
+<img src="http://www.reece.com.au/assets/Uploads/inspired-620x275.jpg" alt="Be Inspired">
+<div class="caption"><h4>Be Inspired</h4><hr>
+    <p>Checkout the photo gallery for all the latest looks and hottest bathroom trends</p>
+</div>
+                    </div>
+                    
+                    <div class="tile-1813 span3 bottom-space alt2">
+                        
+<a href="/bathrooms/happy-tips"></a>
+<img src="http://www.reece.com.au/assets/Uploads/tips-620x275.jpg" alt="Happy Tips">
+<div class="caption"><h4>Happy Tips</h4><hr>
+    <p>Simple solutions to help make your bathroom a happy place</p>
+</div>
+                    </div>
+                    
+                    <div class="tile-1810 span3 bottom-space alt3">
+                        
+<a href="/laufen"></a>
+<img src="http://www.reece.com.au/assets/Uploads/laufen-hz2.jpg" alt="Laufen">
+<div class="caption"><h4>Laufen</h4><hr>
+    <p>At the heart of Swiss bathroom culture since 1892, discover Laufen.</p>
+</div>
+                    </div>
+                    
+                    
+                </div>
+
+                
+                <div class="row-fluid visible-tablet">
+                            
+                    <div class="tile-1811 span6 bottom-space ">
+                        
+<a href="/bathrooms/products"></a>
+<img src="http://www.reece.com.au/assets/Uploads/discover-620x275.jpg" alt="Discover Products">
+<div class="caption"><h4>Discover Products</h4><hr>
+    <p>Browse over 1500 products designed to help you create the perfect bathroom</p>
+</div>
+                    </div> 
+                    
+                            
+                    <div class="tile-1812 span6 bottom-space alt1">
+                        
+<a href="http://www.reece.com.au/bathroom-inspiration"></a>
+<img src="http://www.reece.com.au/assets/Uploads/inspired-620x275.jpg" alt="Be Inspired">
+<div class="caption"><h4>Be Inspired</h4><hr>
+    <p>Checkout the photo gallery for all the latest looks and hottest bathroom trends</p>
+</div>
+                    </div> 
+                    
+                </div>
+                <div class="row-fluid visible-tablet">
+                    
+                            
+                    <div class="tile-1813 span6 bottom-space alt2">
+                        
+<a href="/bathrooms/happy-tips"></a>
+<img src="http://www.reece.com.au/assets/Uploads/tips-620x275.jpg" alt="Happy Tips">
+<div class="caption"><h4>Happy Tips</h4><hr>
+    <p>Simple solutions to help make your bathroom a happy place</p>
+</div>
+                    </div> 
+                    
+                            
+                    <div class="tile-1810 span6 bottom-space alt3">
+                        
+<a href="/laufen"></a>
+<img src="http://www.reece.com.au/assets/Uploads/laufen-hz2.jpg" alt="Laufen">
+<div class="caption"><h4>Laufen</h4><hr>
+    <p>At the heart of Swiss bathroom culture since 1892, discover Laufen.</p>
+</div>
+                    </div> 
+                    
+                </div>
+                <div class="row-fluid visible-tablet">
+                    
+                    
+                </div>
+            </div>
+
+            
+   
+
+        
+    </div>
+</div>
 			</div>
 	    </div>	
 	    

@@ -1,67 +1,110 @@
-
-	<?php include_once($_SERVER['DOCUMENT_ROOT']."/includes/variables/variables.php"); ?>
-
-	<?php 
+<?php include_once($_SERVER['DOCUMENT_ROOT']."/includes/variables/variables.php"); ?>
+<?php 
 		$cssScriptPaths = [
 			"/assets/css/reece-trade-outlet.css",
-			"/assets/css/reece-nav-updated.css"
+			"/assets/css/reece-nav-updated.css",
+			"http://www.reece.com.au/new/css/products.css"
 		]; 
 	   	include_once($serverBase."/includes/head/head-generic.php");
-	?>		
+	?>
 
-    <body class="no-touch bathroom-moments account-details-summary withSubNav">
-		<div class="ocmain-wrapper">
-			<div class="navbar navbar-fixed-top topNav">
-					<?php
+<body class="no-touch bathroom-moments account-details-summary withSubNav">
+<div class="ocmain-wrapper">
+  <div class="navbar navbar-fixed-top topNav">
+    <?php
 						$genericNavActiveMenuItem = "Plumbing";
 					   	include_once($serverBase."/includes/nav/nav-generic.php");
 					?>
-
-					<?php
+    <?php
 					   	include_once($serverBase."/includes/nav/nav-subnavbar.php");
 					?>
-			</div>
+  </div>
+  <div class="content-container">
+    <div class="inner-wrapper">
+      <div id="main" class="plumbing " style="padding-top:10px;"  >
+        <style>
 
-	    <div class="content-container">
-			<div class="inner-wrapper">
-					<div class="row-fluid">
-						<h2>Lorem ipsum dolor sit</h2>
-						<div>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur volutpat pulvinar neque, quis congue turpis. Suspendisse sit amet tristique leo. Quisque auctor ac elit vel adipiscing. Aliquam erat volutpat. Donec eu dolor id odio malesuada semper sed vitae magna. Mauris convallis ac eros et ultricies. Vivamus eu odio eu nulla tincidunt rhoncus. Vivamus faucibus lectus id turpis laoreet, et pretium odio tincidunt. Duis ac elit sagittis, malesuada magna eget, lacinia ante.
-							</p>
-							<p>
-								Vivamus posuere erat in mollis feugiat. Nullam facilisis lacus vel massa aliquam, id eleifend diam posuere. Praesent sollicitudin sapien nibh, ut commodo nibh scelerisque sit amet. Vivamus bibendum mauris eget nulla tempor, sit amet ornare lorem vulputate. Phasellus tincidunt, dolor id molestie luctus, nunc lorem dignissim nisi, ut tempor turpis tellus quis nisl. Curabitur accumsan et enim sit amet luctus. Ut condimentum lobortis vestibulum. Maecenas in interdum dolor, a feugiat felis. Cras eu laoreet tortor, non cursus ante.
-							</p>
-							<p>
-								Fusce porttitor erat et eros feugiat, ut fermentum ante eleifend. Nullam commodo nisi nec velit laoreet porta. Aliquam erat dolor, porta non lectus nec, dapibus malesuada turpis. Vivamus placerat ut urna at viverra. Suspendisse fringilla metus vel mi fermentum viverra. Donec aliquet urna eros, congue molestie purus mollis non. Aliquam luctus sit amet eros quis sollicitudin. Vestibulum quis quam nisi. Suspendisse dictum rhoncus augue, non aliquet massa elementum et. Suspendisse sed vestibulum lorem, nec rhoncus felis. Fusce vitae sapien ullamcorper, fermentum eros at, faucibus mi. Nulla quis lectus felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam ut nulla ac sapien dignissim fringilla id a urna. Fusce ultrices sit amet turpis in fringilla.
-							</p>
-							<p>
-								Praesent luctus pretium placerat. Aenean quis augue luctus nisi tristique tristique vitae a ipsum. Proin est arcu, dapibus sed pellentesque sit amet, aliquam non dolor. Nam non ligula quis magna aliquet tincidunt. Morbi dignissim, nulla sed vestibulum fringilla, nunc massa luctus urna, et porttitor eros nulla feugiat mauris. Aenean vitae velit sed eros aliquet malesuada. Nulla non blandit elit. Proin in mauris in augue volutpat feugiat. Ut in turpis at ante pellentesque lobortis sit amet non augue. Etiam vehicula pretium neque, tincidunt semper ipsum accumsan eu. Morbi commodo posuere mauris, a porta magna vehicula a. Curabitur eget neque dolor. Duis dictum sit amet est quis venenatis. Aliquam neque nibh, placerat sit amet consequat in, tristique in mauris.
-							</p>
-							<p>
-								Suspendisse potenti. Praesent tellus orci, euismod id sem in, molestie lobortis erat. Proin sagittis eget massa nec auctor. Vivamus augue ipsum, ultrices pharetra blandit molestie, aliquam in tellus. In at fringilla metus. Sed aliquet venenatis diam et pulvinar. Vivamus lobortis euismod tempor. Phasellus nec aliquet enim. Nunc ultricies erat ante, non scelerisque odio accumsan nec.
-							</p>
-						</div>
+  .all {background:#707070;color:#ffffff}
 
-					</div>
-			</div>
-	    </div>	
-	    
-    <?php 
+  .all a {color:#ffffff !important}
+
+
+
+  .all:hover {background:#dedede;}
+
+  .all a:hover{color:#3f3f3f !important;}
+
+</style>
+        <div id="leftMenu" style="float:left;width:220px;">
+          <h2 class="prodnav-head">Plumbing</h2>
+          <ul id="nav-bathrooms" class="prodnav">
+            <li><a href="/plumbing/products/hot_water_units" >Hot Water Units</a></li>
+            <li><a href="/plumbing/products/rainwater_tanks" >Rainwater Tanks</a></li>
+            <li><a href="/plumbing/products/hydronic_heating" >Hydronic Heating</a></li>
+            <li><a href="/plumbing/products/pipe_%26_fittings" >Pipe & Fittings</a></li>
+            <li><a href="/plumbing/products/clips_%26_pipe_supports" >Clips & Pipe Supports</a></li>
+            <li><a href="/plumbing/products/valves" >Valves</a></li>
+            <li><a href="/plumbing/products/pumps" >Pumps</a></li>
+            <li><a href="/plumbing/products/flashing" >Flashing</a></li>
+            <li><a href="/plumbing/products/tools_and_hardware" >Tools and Hardware</a></li>
+            <li><a href="/plumbing/products/workwear" >Workwear</a></li>
+            <li><a href="/plumbing/products/macerators" >Macerators</a></li>
+            <li><a href="/plumbing/products/water_filters" >Water Filters</a></li>
+            <li><a href="/plumbing/products/air_conditioning_units" >Air Conditioning Units</a></li>
+            <li><a href="/plumbing/products/ducting_%26_ventilation" >Ducting & Ventilation</a></li>
+            <li><a href="/plumbing/products/fire_service" >Fire Service</a></li>
+            <li><a href="/plumbing/products/tap_%26_cistern_spares" >Tap & Cistern Spares</a></li>
+            <li><a href="/plumbing/products/gas_spares" >Gas Spares</a></li>
+            <li><a href="/plumbing/products/trade_bathroom_ware" >Trade Bathroom Ware</a></li>
+            <li><a href="/plumbing/products/material_safety_data_sheets" >Material Safety Data Sheets</a></li>
+          </ul>
+          <div id="clearance" class="prodnav-btn"><a href="/bathrooms/products" style="font-size:13px;">Bathroom & Kitchen Products</a></div>
+          <div class="prodnav-btn plumnavbtn" style="margin-top:10px"><a href="/plumbing/products/quality-guarantee"  style='font-size:13px'>Product Quality Guarantee</a></div>
+        </div>
+        <div class="rightCol">
+          <br clear="all">
+          <h2>Plumbing News</h2>
+          <div id="newProducts">
+            <div class="item"> <a href="/outlet"><img src="http://www.reece.com.au//new/images/plumbingcounter/outlet_small/2013Nov_sml.png"/>
+              <h3>Outlet Nov 2013</h3>
+              The latest on <br />
+              plumbing industry <br />
+              news and views.</a> </div>
+            <div class="item"> <a href="/plumbing/promotions"><img src="http://www.reece.com.au/products/showroom_thumb/7627467.jpg" alt="" />
+              <h3>Plumbing Promotion</h3>
+              View the Monthly<br />
+              Plumbing Promotion</a> </div>
+          </div>
+        </div>
+        <div id="products">
+          <h2>Plumbing Products</h2>
+          <p>For over 80 years Reece have supplied plumbers with a huge range of quality plumbing products. From pipes and fittings to tools and hot water units, we've got everything you need to get the job done. Here is just a selection of our product range for you to view.</p>
+          <p><img src="http://www.reece.com.au/new/productMenus/plumbing/banner.jpg" width="530" height="230" /></p>
+          <div class="warrantyBlock">
+            <div id="badgeCycle">
+              <div class="cItem"> <img src="http://www.reece.com.au/new/images/prodTemplate/ProductWarranty/title-badge.png"> </div>
+            </div>
+            <div class="textBlock"> <span>Our Product Quality Guarantee</span><br>
+              We stand behind the quality of the products we sell. Read more about our product testing, replacement warranties and after sales care. And remember, to receive the full benefit of our quality Guarantee, ensure the products are installed by a licensed plumber. <br>
+              <a style="color: #FFFFFF;" href="/plumbing/products/quality-guarantee">Learn more here &raquo;</a> </div>
+          </div>
+        </div>
+        <br clear="all" />
+        <br clear="all" />
+      </div>
+    </div>
+  </div>
+  <?php 
 			include_once($serverBase."/includes/foot/foot-generic.php");
-		?>	
-
-	</div>
-
-   	<?php
+		?>
+</div>
+<?php
    		$mobileNavActiveMenu = array(
    			"activeMenu" => "Plumbing"
    		);
 	   	include_once($serverBase."/includes/nav/nav-mobile.php");
-	?>	
-
-	<?php 
+	?>
+<?php 
 		$jsScriptPaths = [
 			"/assets/js/jquery.lazyload.min.js", 
 			"/assets/js/bootstrap-collapse.js",
@@ -75,6 +118,5 @@
 		]; 
 	   	include_once($serverBase."/includes/foot/scripts.php");
 	?>
-	
-    </body>
+</body>
 </html>

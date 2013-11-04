@@ -9340,6 +9340,25 @@ h6 {
 .happiness-subNav .navbar-container {
   background: url('../images/happiness-logo.png') right center no-repeat;
   background-size: 220px 30px;
+  *zoom: 1;
+}
+.happiness-subNav .navbar-container:before,
+.happiness-subNav .navbar-container:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.happiness-subNav .navbar-container:after {
+  clear: both;
+}
+.happiness-subNav .navbar-container:before,
+.happiness-subNav .navbar-container:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.happiness-subNav .navbar-container:after {
+  clear: both;
 }
 .happiness-subNav ul.nav li a {
   color: #ee8f8f;

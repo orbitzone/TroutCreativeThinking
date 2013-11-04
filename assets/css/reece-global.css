@@ -9109,13 +9109,13 @@ h6 {
 }
 @media (min-width: 980px) {
   body {
-    padding-top: 131px;
+    padding-top: 116px;
   }
   body.withSubNav {
-    padding-top: 171px;
+    padding-top: 156px;
   }
   body.withHappinessSubNav {
-    padding-top: 171px;
+    padding-top: 156px;
   }
 }
 .topNav {
@@ -9156,8 +9156,8 @@ h6 {
   letter-spacing: 1px;
 }
 .navbar .brand {
-  width: 145px;
-  height: 70px;
+  width: 120px;
+  height: 55px;
   margin-bottom: 1px;
   background: url('../images/reece-logo.png') no-repeat;
   background-size: 100%;

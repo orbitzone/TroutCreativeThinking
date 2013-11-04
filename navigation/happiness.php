@@ -9,18 +9,18 @@
 	   	include_once($serverBase."/includes/head/head-generic.php");
 	?>		
 
-    <body class="no-touch bathroom-moments account-details-summary">
+    <body class="no-touch bathroom-moments account-details-summary withHappinessSubNav">
 		<div class="ocmain-wrapper">
+			<div class="navbar navbar-fixed-top topNav">
+				<?php
+					$genericNavActiveMenuItem = "Bathrooms";
+				   	include_once($serverBase."/includes/nav/nav-generic.php");
+				?>
 
-			<?php
-				$genericNavActiveMenuItem = "Bathrooms";
-			   	include_once($serverBase."/includes/nav/nav-generic.php");
-			?>
-
-			<?php
-			   	include_once($serverBase."/includes/nav/nav-happiness.php");
-			?>
-
+				<?php
+				   	include_once($serverBase."/includes/nav/nav-happiness.php");
+				?>
+			</div>
 	    <div class="content-container">
 			<div class="inner-wrapper">
 					<div class="row-fluid">

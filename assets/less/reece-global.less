@@ -210,6 +210,17 @@ h1, h2, h3, h4, h5, h6 {
 // Navigation Modules
 //====================================================================================================================================
 //====================================================================================================================================
+@media (min-width:980px){
+    body{
+        padding-top: 142px;
+    }
+    body.withSubNav{
+        padding-top: 182px
+    }
+    body.withHappinessSubNav{
+        padding-top: 202px;
+    }
+}
 .topNav{
     background: #29303a;
     .clearfix;
@@ -224,7 +235,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar .nav > li > a {
     color: #898c90;
     text-shadow: none;
-    padding: 15px 20px;
+    padding:15px;
     font-size: 15px;
     font-weight: 200;
     letter-spacing: 1px;
@@ -232,9 +243,14 @@ h1, h2, h3, h4, h5, h6 {
 .navbar .brand{
   width: 145px;
   height: 70px;
+  margin-bottom: 1px;
   background: url('../images/reece-logo.png') no-repeat;
   background-size: 100%;
   float: left;  
+}
+.navbar .mobile-logo{
+    height: 49px;
+    width: 101.5px
 }
 @media (min-width: @navbarCollapseDesktopWidth) and (max-width: 1200px){
     .navbar .nav > li > a {
@@ -274,9 +290,11 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 12px;
     background: #23272d;
     float: right;
-    padding:5px 15px;
+    padding:8px 15px 5px;
     a{
         color: #d3d4d5;
+        font-weight: 200;
+        letter-spacing: 1px;
         &:hover,&:focus{
             text-decoration: none;
         }
@@ -315,6 +333,8 @@ h1, h2, h3, h4, h5, h6 {
         color: #d3d4d5;
         width: 110px;
         font-size: 12px;
+        position: relative;
+        top:-3px;
         border-bottom: solid 1px #d3d4d5;
         .border-radius(0);
         -webkit-appearance: none;
@@ -331,19 +351,19 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-
 .navbar .btn-navbar,.navbar .btn-navbar:hover{
-    margin: 20px 15px 0 0;
+    margin: 5px 5px;
+    background: none;
+    border: none;
+}
 
-    background: #384251;
-    border: 1px solid #48515f;
+.navWrap{
+    .clearfix;
 }
 .subnavbar {
-    margin: 140px 0 0;
     background: #384251;
-}
-#headCarousel{
-    padding-top: 140px !important;
+    .clearfix;
+    margin: 0 !important;
 }
 .subnavbar ul.nav {
     margin: 0 20px;

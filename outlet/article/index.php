@@ -11,7 +11,7 @@
 	   	include_once($serverBase."/includes/head/head-generic.php");
 	?>		
 
-    <body class="no-touch bathroom-moments account-details-summary">
+    <body class="no-touch bathroom-moments account-details-summary withSubNav">
 
 		<div id="fb-root"></div>
 		<script>(function(d, s, id) {
@@ -23,7 +23,7 @@
 		}(document, 'script', 'facebook-jssdk'));</script>
 
 		<div class="ocmain-wrapper">
-
+		<div class="navbar navbar-fixed-top topNav">
 			<?php
 				$genericNavActiveMenuItem = "Plumbing";
 			   	include_once($serverBase."/includes/nav/nav-generic.php");
@@ -32,6 +32,7 @@
 			<?php
 			   	include_once($serverBase."/includes/nav/nav-subnavbar.php");
 			?>
+			</div>
 
 	    <div class="content-container">
 			<div class="inner-wrapper">

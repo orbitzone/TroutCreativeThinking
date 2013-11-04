@@ -11,7 +11,7 @@
 
     <body class="no-touch bathroom-moments account-details-summary">
 		<div class="ocmain-wrapper">
-
+			<div class="navbar navbar-fixed-top topNav">
 			<?php
 				$genericNavActiveMenuItem = "Plumbing";
 			   	include_once($serverBase."/includes/nav/nav-generic.php");
@@ -20,6 +20,7 @@
 			<?php
 			   	include_once($serverBase."/includes/nav/nav-subnavbar.php");
 			?>
+			</div>
 
 	    <div class="content-container">
 			<div class="inner-wrapper">

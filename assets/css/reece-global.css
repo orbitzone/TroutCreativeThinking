@@ -9374,25 +9374,6 @@ h6 {
 .happiness-subNav .navbar-container {
   background: url('../images/happiness-logo.png') right center no-repeat;
   background-size: 220px 30px;
-  *zoom: 1;
-}
-.happiness-subNav .navbar-container:before,
-.happiness-subNav .navbar-container:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.happiness-subNav .navbar-container:after {
-  clear: both;
-}
-.happiness-subNav .navbar-container:before,
-.happiness-subNav .navbar-container:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.happiness-subNav .navbar-container:after {
-  clear: both;
 }
 .happiness-subNav ul.nav li a {
   color: #ee8f8f;
@@ -9406,7 +9387,27 @@ h6 {
 }
 .happiness-subNav ul.nav {
   margin: 0;
+  float: none;
+  *zoom: 1;
   position: relative;
+}
+.happiness-subNav ul.nav:before,
+.happiness-subNav ul.nav:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.happiness-subNav ul.nav:after {
+  clear: both;
+}
+.happiness-subNav ul.nav:before,
+.happiness-subNav ul.nav:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.happiness-subNav ul.nav:after {
+  clear: both;
 }
 .happiness-subNav .subNavDropDown {
   position: absolute;

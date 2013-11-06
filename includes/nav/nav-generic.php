@@ -14,14 +14,14 @@
 					<input type="search" id="headerSearchInput">
 				</form>
 				<ul class="headerUtilityLink">
-					<li class="dropdown">
+					<li class="dropdown locationDropDown">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
 							<i class="icon-map-marker icon">&nbsp;</i>
 							<span class="location">Collingwood 3066</span>
 							<span class="caret"></span>
 						</a>
-						<div class="dropdown-menu locationDropDown">
-						<input type="text" class="input-medium">
+						<div class="dropdown-menu">
+						<input type="text">
 							<ul>
 								<li><a href="#">Collingwood</a></li>
 								<li><a href="#">Richmond</a></li>

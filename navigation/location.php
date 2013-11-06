@@ -123,7 +123,7 @@
             <span class="caret"></span>
           </a>
           <div class="dropdown-menu">
-          <input type="text">
+          <input type="text" placeholder="New Location">
             <ul>
               <li><a href="#">Collingwood</a></li>
               <li><a href="#">Richmond</a></li>

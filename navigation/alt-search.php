@@ -11,6 +11,8 @@
 .headerNavSearchForm input{
   background: #fff;
   top: -1px;
+  padding: 1px 5px;
+  color: #333
 }
 </style>
 <body class="no-touch bathroom-moments account-details-summary withSubNav">

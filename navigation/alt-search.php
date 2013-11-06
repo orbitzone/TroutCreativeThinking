@@ -93,9 +93,6 @@
               We stand behind the quality of the products we sell. Read more about our product testing, replacement warranties and after sales care. And remember, to receive the full benefit of our quality Guarantee, ensure the products are installed by a licensed plumber. <br>
               <a style="color: #FFFFFF;" href="/plumbing/products/quality-guarantee">Learn more here &raquo;</a>
             </div>
-            <div style="padding-top:20px; clear:both">
-              <a href="#locationModal" role="button" class="btn" data-toggle="modal">Launch demo modal</a>
-            </div>
           </div>
         </div>
         <br clear="all" />
@@ -115,35 +112,6 @@
 	?>
 
 
-<!-- Modal -->
-<div id="locationModal" class="modal hide fade locationModal" tabindex="-1" role="dialog" aria-labelledby="locationModalLabel" aria-hidden="true">
-  <div class="modal-body">
-    <h3>Select your location</h3>
-    <form class="form-inline">
-      <label>Your Location</label>
-      <div class="dropdown locationDropDown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-            <i class="icon-map-marker icon">&nbsp;</i>
-            <span class="location">Collingwood 3066</span>
-            <span class="caret"></span>
-          </a>
-          <div class="dropdown-menu">
-          <input type="text">
-            <ul>
-              <li><a href="#">Collingwood</a></li>
-              <li><a href="#">Richmond</a></li>
-              <li><a href="#">Hawthorn</a></li>
-              <li><a href="#">Toorak</a></li>
-            </ul>           
-          </div>
-      </div>
-      <div>
-      <button class="btn-modal" data-dismiss="modal">Ok</button>
-      <button class="btn-modal" data-dismiss="modal">No Thanks</button>
-      </div>
-    </form>
-  </div>
-</div><!-- /#locationModal -->  
 
 
 <?php 

@@ -89,7 +89,7 @@
               <a style="color: #FFFFFF;" href="/plumbing/products/quality-guarantee">Learn more here &raquo;</a>
             </div>
             <div style="padding-top:20px; clear:both">
-              <a href="#locationModal" role="button" class="btn" data-toggle="modal">Launch demo modal</a>
+              <a href="#locationModal" role="button" class="btn" data-toggle="modal">Change Location</a>
             </div>
           </div>
         </div>

@@ -132,7 +132,7 @@
             </ul>           
           </div>
       </div>
-      <div>
+      <div class="actionWrap">
       <button class="btn-modal" data-dismiss="modal">Ok</button>
       <button class="btn-modal" data-dismiss="modal">No Thanks</button>
       </div>

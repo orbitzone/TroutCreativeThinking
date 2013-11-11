@@ -76,9 +76,11 @@
 // Main Header Module
 //====================================================================================================================================
 //====================================================================================================================================
-
+body{
+    padding-top: 233px;
+}
 .main-header {
-    padding-top: 60px;
+    padding-top: 20px;
     background-color: @hzPrimary;
     #gradient > .vertical(@hzPrimary,  @hzPrimaryHighlight);
     color: #FFF;
@@ -111,7 +113,9 @@
 .sub-header {
     margin: 20px 0;
 }
-
+.breadcrumb{
+    background: none;
+}
 // Bathroom Footer Module
 //====================================================================================================================================
 //====================================================================================================================================
@@ -194,7 +198,8 @@
 .nav-pills-span3 li a,
 .nav-pills-span4 li a
 {
-    padding: 5px 0;
+    padding: 5px 0 !important;
+    font-size: 12px !important;
     overflow: hidden;
     display: block;
     white-space: nowrap;
@@ -585,7 +590,7 @@ RESPONSIVE OVERRIDES
         margin: 0;
     }
     .main-header {
-        padding-top: 10px;
+        margin-top: 46px;
     }
     .main-header .top-highlight {
         top: 1px;
@@ -668,5 +673,82 @@ RESPONSIVE OVERRIDES
     .main-footer .nav {
         height: 25px;
         clear: left
+    }
+}
+
+//======================
+// Brand page
+//======================
+
+.brandPage{
+    background: #fafafa;
+    border: solid 1px #d7e7ee
+}
+.brandImageWrap{
+    padding: 75px 0 60px;
+    text-align: center;
+}
+.brandTabWrap{
+    padding: 20px 0
+}
+.brandTabList{
+    margin: 0;
+    text-align: center;
+    position: relative;
+    margin-bottom: -20px;
+    li{
+        list-style: none;
+        display: inline-block;
+        border:solid 1px #a2b8c1;
+        margin-left: -1px;
+        z-index: 1;
+        position: relative;
+        background: @white;
+        a{
+            padding: 10px 25px;
+            display: block;
+            color: #8a999f;
+        }
+        &.active {
+            border-color: #e29da5;
+            background: #ffd9dd;
+            z-index: 2;
+            a{
+                color: #e2001a;
+            }
+        }
+    }
+}
+.brandTabContentWrap{
+    border-top: solid 1px #a2b8c1;
+    min-height: 200px;
+}
+.brandTabContent{
+    padding: 50px;
+    margin: 0 auto;
+    max-width: 700px;
+    font-size: 13px;
+    p{
+        color: #717070;
+    }
+    
+}
+.brandTabIntro{
+    border-bottom: dotted 1px #a2b8c1;
+    padding-bottom: 30px;
+    
+    text-align: center;
+    h3{
+        padding-bottom: 20px;
+    }
+}
+.brandTabFeatures{
+    padding: 20px 0;
+    h4{
+        font-weight: 200;
+        font-size: 1.5em
+    }
+    p{
+        padding-bottom: 20px
     }
 }

@@ -23,5 +23,4 @@
 					</ul>
 				    </div>
 				</div>
-			<div class="top-highlight"></div>
 		    </div>

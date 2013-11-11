@@ -34,9 +34,23 @@
 				    <!-- CONTENT FOR DESKTOP -->
 				    <section class="brandPage">
 				    	<h2 class="brandImageWrap">
-				    		<img src="/assets/images/laufen-logo.png" alt="Laufen" />
+				    		<img src="/assets/images/hz-brand/laufen-logo.png" alt="Laufen" />
 				    	</h2>
-				    	<img src="/assets/images/hz-brand/brandCarousel1.jpg" alt="Laufen" />
+				    	
+<div id="productCarousel" class="carousel slide">
+  <ol class="carousel-indicators">
+    <li data-target="#productCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#productCarousel" data-slide-to="1"></li>
+  </ol>
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <div class="active item"><img src="/assets/images/hz-brand/brandCarousel1.jpg" alt="Laufen" /></div>
+    <div class="item"><img src="/assets/images/hz-brand/brandCarousel2.jpg" alt="Laufen" /></div>
+  </div>
+  <!-- Carousel nav -->
+  <a class="carousel-control left" href="#productCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#productCarousel" data-slide="next">&rsaquo;</a>
+</div>				    	
 				    	<div class="brandTabWrap">
 					    	<ul class="brandTabList">
 					    		<li class="active">
@@ -58,41 +72,44 @@
 					    			<div class="brandTabIntro">
 							    		<h3>Creating Bathroom Culture Since 1892</h3>
 							    		<p>
-							    			At the heart of Swiss bathroom culture since 1892, the LAUFEN name is synonymous with beauty, craftsmanship and perfection of form qualities that continue to define LAUFEN as one of the world’s most desired bathroom brands. Partnering with outstanding architects and designers, LAUFEN creates bathroom products that express emotion, purity and harmony, while continually pushing the limits of technical possibility to create ground-breaking new ideas expressed through ceramics.
+							    			At the heart of Swiss bathroom culture since 1892, the LAUFEN name is synonymous with beauty, craftsmanship and perfection of form qualities that continue to define LAUFEN as one of the world’s most desired bathroom brands. Partnering with outstanding architects and designers, LAUFEN creates bathroom products that express emotion, purity and harmony, while continually pushing the limits of technical possibility to create ground-breaking new ideas expressed through ceramics.
 							    		</p>
 						    		</div>
 						    		<div class="row-fluid brandTabFeatures">
-										<article class="span6">
-											<h4>Swissness</h4>
-											<p>‘Swissness’ is a word that defines LAUFEN’s innovative approach to creating beautiful bathroom ceramics. It stands for many different things, but always embraces the concepts of outstanding quality, superb design, precise engineering and a passion 
-											for environmental sustainability.</p>
+						    			<div class="span6">
+											<article class="brandTabFeatureDesc">
+												<h4>Swissness</h4>
+												<p>‘Swissness’ is a word that defines LAUFEN’s innovative approach to creating beautiful bathroom ceramics. It stands for many different things, but always embraces the concepts of outstanding quality, superb design, precise engineering and a passion 
+												for environmental sustainability.</p>
 
-											<h4>Quality</h4>
-											<p>LAUFEN continually pushes the limits of technical possibility to create ground-breaking new ideas expressed through ceramics. Sophisticated production processes are balanced with a human touch. Each piece is hand finished to ensure the highest standards of finish are achieved.</p>
+												<h4>Quality</h4>
+												<p>LAUFEN continually pushes the limits of technical possibility to create ground-breaking new ideas expressed through ceramics. Sophisticated production processes are balanced with a human touch. Each piece is hand finished to ensure the highest standards of finish are achieved.</p>
 
-											<h4>Design</h4>
-											<p>At LAUFEN, design is at the heart of every product. LAUFEN 
-											treats ceramics as an art form, collaborating with many of the world’s leading international architects and designers to make exciting new concepts a reality. Each design is brought to life 
-											using only natural raw materials such as china clay and quartz.</p>
-										</article>
+												<h4>Design</h4>
+												<p>At LAUFEN, design is at the heart of every product. LAUFEN 
+												treats ceramics as an art form, collaborating with many of the world’s leading international architects and designers to make exciting new concepts a reality. Each design is brought to life 
+												using only natural raw materials such as china clay and quartz.</p>
+											</article>
+						    			</div>
+
 										<div class="span6">
-											<div class="introVideoWrap">
-												<a title="Watch Video">
-													<img src="http://reece.trout.com.au/responsive_2012/assets/images/moments/still-number-one-thumb.jpg" alt="Im her number one">
-												</a>
-												<span class="">Pillars</span>
-												<h5>Lorem Libero Vulputate </h5>
-												<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
+											<div class="brandTabCarouselWrap">
+												<div class="introVideoWrap">
+													<a title="Watch Video">
+														<img src="http://reece.trout.com.au/responsive_2012/assets/images/moments/still-number-one-thumb.jpg" alt="Im her number one">
+													</a>
+													<span class="">Pillars</span>
+													<h5>Lorem Libero Vulputate </h5>
+													<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
+												</div>
+												<div class="introBrochureWrap">
+													<a href="#">
+														<i class="icon-download icon-large"></i>
+														<strong>Laufen Brochures</strong>
+														<small>Download pdf document</small>
+													</a>													
+												</div>											
 											</div>
-											<div class="introBrochureWrap">
-												<a href="#">
-													<i class="icon-download icon-large"></i>
-													<strong>Laufen Brochures</strong>
-													<small>Download pdf document</small>
-												</a>
-												
-											</div>
-
 										</div>				    		
 						    		</div>
 					    		</div>
@@ -130,6 +147,10 @@
 		  	); 
 		  	include_once($serverBase."/includes/foot/scripts.php");
 		?>				
-
+		<script type="text/javascript">
+			$(function(){
+				$('.carousel').carousel()
+			})
+		</script>
     </body>
 </html>

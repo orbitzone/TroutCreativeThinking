@@ -634,6 +634,23 @@ RESPONSIVE OVERRIDES
   padding: 75px 0 60px;
   text-align: center;
 }
+/* */
+#productCarousel .carousel-indicators {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: auto;
+  text-align: center;
+  padding: 10px;
+}
+#productCarousel .carousel-indicators li {
+  float: none;
+  display: inline-block;
+}
+#productCarousel .carousel-control {
+  color: #ffffff;
+}
+/* */
 .brandTabWrap {
   padding: 20px 0;
 }
@@ -656,6 +673,10 @@ RESPONSIVE OVERRIDES
   padding: 10px 25px;
   display: block;
   color: #8a999f;
+  cursor: pointer;
+}
+.brandTabList li a:hover {
+  text-decoration: none;
 }
 .brandTabList li.active {
   border-color: #e29da5;
@@ -672,7 +693,7 @@ RESPONSIVE OVERRIDES
 .brandTabContent {
   padding: 50px;
   margin: 0 auto;
-  max-width: 700px;
+  max-width: 780px;
   font-size: 13px;
 }
 .brandTabContent p {
@@ -687,12 +708,28 @@ RESPONSIVE OVERRIDES
   padding-bottom: 20px;
 }
 .brandTabFeatures {
-  padding: 20px 0;
+  padding: 40px 0 20px;
 }
 .brandTabFeatures h4 {
   font-weight: 200;
   font-size: 1.5em;
+  margin-top: 0;
 }
 .brandTabFeatures p {
   padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .brandTabFeatures .span6 {
+    margin-left: 0;
+    width: 50%;
+    margin-right: -1px;
+  }
+}
+.brandTabFeatureDesc {
+  padding-right: 40px;
+  border-right: solid 1px #acc0c8;
+}
+.brandTabCarouselWrap {
+  padding: 0 40px;
+  border-left: solid 1px #acc0c8;
 }

@@ -652,7 +652,7 @@ RESPONSIVE OVERRIDES
 }
 /* */
 .brandTabWrap {
-  padding: 20px 0;
+  padding: 20px 0 0;
 }
 .brandTabList {
   margin: 0;
@@ -690,17 +690,18 @@ RESPONSIVE OVERRIDES
   border-top: solid 1px #a2b8c1;
   min-height: 200px;
 }
-.brandTabContent {
+.tab-pane {
   padding: 50px;
   margin: 0 auto;
-  max-width: 780px;
   font-size: 13px;
 }
-.brandTabContent p {
+.tab-pane p {
   color: #717070;
 }
+#about.tab-pane {
+  max-width: 780px;
+}
 .brandTabIntro {
-  border-bottom: dotted 1px #a2b8c1;
   padding-bottom: 30px;
   text-align: center;
 }
@@ -708,6 +709,7 @@ RESPONSIVE OVERRIDES
   padding-bottom: 20px;
 }
 .brandTabFeatures {
+  border-top: dotted 1px #a2b8c1;
   padding: 40px 0 20px;
 }
 .brandTabFeatures h4 {
@@ -718,13 +720,6 @@ RESPONSIVE OVERRIDES
 .brandTabFeatures p {
   padding-bottom: 20px;
 }
-@media (min-width: 768px) {
-  .brandTabFeatures .span6 {
-    margin-left: 0;
-    width: 50%;
-    margin-right: -1px;
-  }
-}
 .brandTabFeatureDesc {
   padding-right: 40px;
   border-right: solid 1px #acc0c8;
@@ -732,4 +727,70 @@ RESPONSIVE OVERRIDES
 .brandTabCarouselWrap {
   padding: 0 40px;
   border-left: solid 1px #acc0c8;
+}
+/* Designer Info Tab */
+.designerInfoWrap {
+  border: solid 1px #dedede;
+  margin-top: 30px;
+}
+.designerInfoThumb {
+  padding: 30px;
+}
+.designerInfoContent {
+  padding: 30px;
+}
+.viewRangeLink {
+  background: #e2001a;
+  display: block;
+  padding: 10px 20px;
+  color: #ffffff;
+  margin-top: 20px;
+  text-align: center;
+}
+.viewRangeLink:hover {
+  text-decoration: none;
+}
+@media (min-width: 768px) {
+  .brandTabFeatures .span6 {
+    margin-left: 0;
+    width: 50%;
+    margin-right: -1px;
+  }
+  .designerInfoThumb {
+    float: left;
+  }
+}
+#products.tab-pane {
+  background: #000000;
+}
+/* */
+.brandPressReleases {
+  margin: 0;
+  border-top: solid 1px #c5d2d8;
+}
+.brandPressReleases li {
+  display: table;
+  width: 100%;
+  padding: 20px 0;
+  list-style: none;
+  border-bottom: solid 1px #c5d2d8;
+}
+.brandPressReleases li p {
+  margin-bottom: 0;
+}
+.brandPressReleases .brandPressDate,
+.brandPressReleases .brandPressDesc,
+.brandPressReleases .brandPressDownloadLink {
+  display: table-cell;
+}
+.brandPressReleases .brandPressDate {
+  color: #717070;
+  font-size: 14px;
+}
+.brandPressReleases .brandPressDate span {
+  display: block;
+}
+.brandPressReleases .brandPressDownloadLink {
+  color: #e2001a;
+  font-size: 14px;
 }

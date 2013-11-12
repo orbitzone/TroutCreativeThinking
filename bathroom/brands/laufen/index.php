@@ -139,7 +139,7 @@
 																	The expressive creations of award winning designer and architect, Stefano Giovannoni, have cast a spell over the design world for many years. His works even form part of a permanent archive at the Museum of Modern Art in New York. Stefano has collaborated with many famous names and none bigger than Alessi – the king of designer homewares. For Alberto Alessi, Giovannoni is one of the few designers capable of combining the extraordinary with the popular. This is indeed the reason why he commissioned him to develop ALESSI’s first complete bathroom collection in conjunction with Laufen - ILBAGNOALESSI One. Characterised by organic forms that each speak the same sensuous design language, ILBAGNOALESSI One is a winner of Europe’s prestigious Design Plus Award. The gentle, rounded shapes of ILBAGNOALESSI One reflect the work of nature itself – inspired by the idea of a stone that has been smoothed by water over time.
 																</p>
 																<p>
-																	<img src="/assets/images/hz-brand/rangeLogo.jpg" alt="Stefano" />
+																	<img src="/assets/images/hz-brand/rangeLogo.jpg" alt="One ILBAGNOALESSI" />
 																</p>
 																<p>
 																	The works of award winning designer, Stefano Giovannoni, tell stories that fascinate and enthral with their beautiful narrative qualities.
@@ -154,7 +154,29 @@
 									?>
 								</div><!-- /#designers -->
 								<div class="tab-pane fade" id="products">
-									<p>Products</p>
+									<ul class="brandProdRangeList">
+										<?php
+											for($i=0; $i <4; $i++){
+												?>
+											<li>
+												<img src="/assets/images/hz-brand/brandCarousel1.jpg" alt="Laufen" />
+												<div class="brandProdRangeLogoWrap">
+													<img src="/assets/images/hz-brand/rangeLogo.jpg" alt="One ILBAGNOALESSI" />
+													<a class="viewRangeLink">View this Range</a>
+												</div>
+												<div class="brandProdRangeDesc">
+													<h4>Stefano Giovannoni from Italy</h4>
+													<p>
+														consectetur adipiscing elit. Phasellus risus mauris, blandit non pharetra at, viverra non augue. In hac habitasse platea dictumst.
+													</p>
+												</div>
+												
+											</li>
+												<?php
+											}
+										?>										
+
+									</ul>
 								</div><!-- /#products -->
 								<div class="tab-pane fade" id="selector">
 									<p>Selector</p>

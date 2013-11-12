@@ -803,15 +803,20 @@ RESPONSIVE OVERRIDES
 }
 .viewRangeLink{
     background: #e2001a;
-    display: block;
+    display: inline-block;
     padding: 10px 20px;
     color: @white;
-    margin-top: 20px;
+    cursor: pointer;
     text-align: center;
 
     &:hover{
         text-decoration: none;
+        color: @white;
     }
+}
+.designerInfoThumb .viewRangeLink{
+    display: block;
+    margin-top: 20px;
 }
 @media (min-width: 768px) {
     .brandTabFeatures{
@@ -859,5 +864,30 @@ RESPONSIVE OVERRIDES
     .brandPressDownloadLink{
         color: #e2001a;
         font-size: 14px
+    }
+}
+/* Product Range List */
+.brandProdRangeList{
+    margin: 0;
+    li{
+        list-style: none;
+        &+li{
+            padding-top: 30px;
+        }
+    }
+    .brandProdRangeLogoWrap{
+        background: @white;
+        padding: 20px;
+        .clearfix;
+        .viewRangeLink{
+            float: right;
+        }
+    }
+    .brandProdRangeDesc{
+        padding:20px;
+        background: #616161;
+        *{
+            color: #fff;
+        }
     }
 }

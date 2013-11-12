@@ -94,10 +94,13 @@
 
 										<div class="span6">
 											<div class="brandTabCarouselWrap">
-												<div class="introVideoWrap">
-													<a title="Watch Video">
-														<img src="http://reece.trout.com.au/responsive_2012/assets/images/moments/still-number-one-thumb.jpg" alt="Im her number one">
-													</a>
+												<div class="videoThumbWrap">
+														<a class="videoThumb" title="Watch Video">
+															<img src="http://reece.trout.com.au/responsive_2012/assets/images/moments/still-number-one-thumb.jpg" alt="Im her number one" />
+															<span class="playIconWrap">
+																<i class="icon-play icon-large"></i>
+															</span>
+														</a>
 													<span class="">Pillars</span>
 													<h5>Lorem Libero Vulputate </h5>
 													<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
@@ -194,7 +197,14 @@
 													for($j=0; $j <3; $j++){
 														?>
 														<div class="span4">
-															<img src="http://reece.trout.com.au/responsive_2012/assets/images/moments/still-number-one-thumb.jpg" alt="Im her number one">
+															<div class="videoThumbWrap">
+																<a class="videoThumb">
+																	<img src="http://reece.trout.com.au/responsive_2012/assets/images/moments/still-number-one-thumb.jpg" alt="Im her number one" />
+																	<span class="playIconWrap">
+																		<i class="icon-play icon-large"></i>
+																	</span>
+																</a>															
+															</div>
 														</div>
 														<?php
 													}

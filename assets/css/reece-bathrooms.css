@@ -833,3 +833,31 @@ RESPONSIVE OVERRIDES
 .brandProdRangeList .brandProdRangeDesc * {
   color: #fff;
 }
+.videoThumbWrap {
+  padding-bottom: 10px;
+}
+.videoThumb {
+  position: relative;
+  cursor: pointer;
+}
+.videoThumb .playIconWrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.videoThumb .playIconWrap .icon-play {
+  padding: 10px;
+  height: 10px;
+  width: 10px;
+  font-size: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  color: #444;
+}

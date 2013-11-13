@@ -52,7 +52,8 @@
 						  <a class="carousel-control right" href="#productCarousel" data-slide="next">&rsaquo;</a>
 						</div>				    	
 				    	<div class="brandTabWrap">
-					    	<ul class="brandTabList">
+				    		<a id="showBrandMenu" class="visible-phone collapsed" data-toggle="collapse" href="#brandNav">Menu<span class="icon"><span class="caret"></span></span></a>
+					    	<ul id="brandNav" class="brandTabList collapse">
 					    		<li class="active">
 					    			<a href="#about" data-toggle="tab"> About Laufen</a>
 					    		</li><li>
@@ -93,25 +94,82 @@
 										</div>
 
 										<div class="span6">
-											<div class="brandTabCarouselWrap">
-												<div class="videoThumbWrap">
-														<a class="videoThumb" title="Watch Video">
-															<img src="http://reece.trout.com.au/responsive_2012/assets/images/moments/still-number-one-thumb.jpg" alt="Im her number one" />
-															<span class="playIconWrap">
-																<i class="icon-play icon-large"></i>
-															</span>
-														</a>
-													<span class="">Pillars</span>
-													<h5>Lorem Libero Vulputate </h5>
-													<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
+
+											<div id="aboutBrandCarousel" class="carousel slide">
+											  <!-- Carousel items -->
+												<div class="carousel-inner">
+													<div class="active item">
+														<div class="brandTabCarouselWrap">
+															<div class="videoThumbWrap">
+																	<a class="videoThumb" title="Watch Video" href="http://www.youtube.com/embed/JnHXACIzeKk?rel=0" target="_blank">
+																		<img src="http://www.reece.com.au/assets/pages/thumbnails/video-thumb-three-pillars.jpg" alt="Im her number one" />
+																		<span class="playIconWrap">
+																			<i class="icon-play icon-large"></i>
+																		</span>
+																	</a>
+																<span class="videoThumbSubBrand">Pillars</span>
+																<h5>Lorem Libero Vulputate </h5>
+																<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
+															</div>
+															<div class="introBrochureWrap">
+																<a href="#">
+																	<i class="icon-download icon-large"></i>
+																	<strong>Laufen Brochures</strong>
+																	<small>Download pdf document</small>
+																</a>
+															</div>
+														</div>	
+													</div>
+													<div class="item">
+														<div class="brandTabCarouselWrap">
+															<div class="videoThumbWrap">
+																	<a class="videoThumb" title="Watch Video" href="http://www.youtube.com/embed/231_3HKnAl4?rel=0" target="_blank">
+																		<img src="http://www.reece.com.au/assets/pages/thumbnails/video-thumb-overview.jpg" alt="Im her number one" />
+																		<span class="playIconWrap">
+																			<i class="icon-play icon-large"></i>
+																		</span>
+																	</a>
+																<span class="videoThumbSubBrand">Pillars</span>
+																<h5>Lorem Libero Vulputate </h5>
+																<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
+															</div>
+															<div class="introBrochureWrap">
+																<a href="#">
+																	<i class="icon-download icon-large"></i>
+																	<strong>Laufen Brochures</strong>
+																	<small>Download pdf document</small>
+																</a>
+															</div>
+														</div>													
+													</div>
+													<div class="item">
+														<div class="brandTabCarouselWrap">
+															<div class="videoThumbWrap">
+																	<a class="videoThumb" title="Watch Video" href="http://www.youtube.com/embed/MeJRi35fh9Y?rel=0 " target="_blank">
+																		<img src="http://www.reece.com.au/assets/pages/thumbnails/video-thumb-designers2.jpg" alt="Im her number one" />
+																		<span class="playIconWrap">
+																			<i class="icon-play icon-large"></i>
+																		</span>
+																	</a>
+																<span class="videoThumbSubBrand">Pillars</span>
+																<h5>Lorem Libero Vulputate </h5>
+																<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
+															</div>
+															<div class="introBrochureWrap">
+																<a href="#">
+																	<i class="icon-download icon-large"></i>
+																	<strong>Laufen Brochures</strong>
+																	<small>Download pdf document</small>
+																</a>
+															</div>
+														</div>													
+													</div>
 												</div>
-												<div class="introBrochureWrap">
-													<a href="#">
-														<i class="icon-download icon-large"></i>
-														<strong>Laufen Brochures</strong>
-														<small>Download pdf document</small>
-													</a>
-												</div>
+												<ol class="carousel-indicators">
+													<li data-target="#aboutBrandCarousel" data-slide-to="0" class="active"></li>
+													<li data-target="#aboutBrandCarousel" data-slide-to="1"></li>
+													<li data-target="#aboutBrandCarousel" data-slide-to="2"></li>
+												</ol>  
 											</div>
 										</div>
 									</div>
@@ -162,17 +220,19 @@
 											for($i=0; $i <4; $i++){
 												?>
 											<li>
-												<img src="/assets/images/hz-brand/brandCarousel1.jpg" alt="Laufen" />
-												<div class="brandProdRangeLogoWrap">
-													<img src="/assets/images/hz-brand/rangeLogo.jpg" alt="One ILBAGNOALESSI" />
-													<a class="viewRangeLink">View this Range</a>
-												</div>
-												<div class="brandProdRangeDesc">
-													<h4>Stefano Giovannoni from Italy</h4>
-													<p>
-														consectetur adipiscing elit. Phasellus risus mauris, blandit non pharetra at, viverra non augue. In hac habitasse platea dictumst.
-													</p>
-												</div>
+
+														<img src="/assets/images/hz-brand/brandCarousel1.jpg" alt="Laufen" />
+
+														<div class="brandProdRangeLogoWrap">
+															<img class="brandImg" src="/assets/images/hz-brand/rangeLogo.jpg" alt="One ILBAGNOALESSI" />
+															<a class="viewRangeLink">View this Range</a>
+														</div>
+														<div class="brandProdRangeDesc">
+															<h4>Stefano Giovannoni from Italy</h4>
+															<p>
+																consectetur adipiscing elit. Phasellus risus mauris, blandit non pharetra at, viverra non augue. In hac habitasse platea dictumst.
+															</p>
+														</div>
 												
 											</li>
 												<?php
@@ -189,14 +249,14 @@
 										<h3>Video</h3>
 									</div>
 									<?php
-										for($i=0; $i <3; $i++){
+										for($i=0; $i <2; $i++){
 											?>
 											<div class="row-fluid">
 
 												<?php
-													for($j=0; $j <3; $j++){
+													for($j=0; $j <2; $j++){
 														?>
-														<div class="span4">
+														<div class="span6">
 															<div class="videoThumbWrap">
 																<a class="videoThumb">
 																	<img src="http://reece.trout.com.au/responsive_2012/assets/images/moments/still-number-one-thumb.jpg" alt="Im her number one" />
@@ -289,7 +349,13 @@
 					{
 						$('#productCarousel').hide();
 					}
-				})				
+				});
+				/*$('#brandNav a').click(function(){
+					if(('#showBrandMenu').is(":visible")){
+						$('#brandNav').collapse('hide');
+					}
+
+				});*/
 			})
 		</script>
     </body>

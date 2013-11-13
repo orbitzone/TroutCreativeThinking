@@ -658,13 +658,13 @@ RESPONSIVE OVERRIDES
   margin: 0;
   text-align: center;
   position: relative;
-  margin-bottom: -20px;
+  margin: 0 20px -20px;
 }
 .brandTabList li {
   list-style: none;
-  display: inline-block;
+  display: block;
   border: solid 1px #a2b8c1;
-  margin-left: -1px;
+  margin-top: -1px;
   z-index: 1;
   position: relative;
   background: #ffffff;
@@ -686,16 +686,36 @@ RESPONSIVE OVERRIDES
 .brandTabList li.active a {
   color: #e2001a;
 }
+#showBrandMenu {
+  border: solid 1px #a2b8c1;
+  display: block;
+  padding: 10px 15px;
+  margin: 0 20px;
+  background: #ffffff;
+  position: relative;
+  z-index: 2;
+}
+#showBrandMenu .icon {
+  float: right;
+  padding: 5px;
+  display: inline-block;
+}
+#showBrandMenu .icon .caret {
+  border-width: 8px;
+}
+#showBrandMenu:hover {
+  text-decoration: none;
+}
 .brandTabContentWrap {
   border-top: solid 1px #a2b8c1;
   min-height: 200px;
 }
-.tab-pane {
+.brandTabContentWrap .tab-pane {
   padding: 50px;
   margin: 0 auto;
   font-size: 13px;
 }
-.tab-pane p {
+.brandTabContentWrap .tab-pane p {
   color: #717070;
 }
 #about.tab-pane {
@@ -722,22 +742,52 @@ RESPONSIVE OVERRIDES
 }
 .brandTabFeatureDesc {
   padding-right: 40px;
-  border-right: solid 1px #acc0c8;
 }
-.brandTabCarouselWrap {
+#aboutBrandCarousel .brandTabCarouselWrap {
   padding: 0 40px;
-  border-left: solid 1px #acc0c8;
+}
+#aboutBrandCarousel .carousel-indicators {
+  margin: 10px 40px;
+  position: static;
+  border-top: dotted 1px #a2b8c1;
+  border-bottom: dotted 1px #a2b8c1;
+  padding: 10px;
+  text-align: center;
+}
+#aboutBrandCarousel .carousel-indicators li {
+  float: none;
+  display: inline-block;
+  border: solid 1px #a2b8c1;
+}
+#aboutBrandCarousel .carousel-indicators li.active {
+  background: #4f4141;
 }
 /* Designer Info Tab */
 .designerInfoWrap {
   border: solid 1px #dedede;
   margin-top: 30px;
 }
-.designerInfoThumb {
-  padding: 30px;
+.designerInfoWrap .span8 {
+  margin-left: 0;
 }
-.designerInfoContent {
+.designerInfoWrap .designerInfoThumb {
   padding: 30px;
+  border-right: solid 1px #dedede;
+}
+.designerInfoWrap .designerInfoContent {
+  padding: 30px;
+  border-left: solid 1px #dedede;
+  margin-left: -1px;
+}
+.designerInfoWrap .designerInfoContent h4 {
+  margin-top: 0;
+  color: #e2001a;
+  font-weight: 400;
+  font-size: 22px;
+  padding-bottom: 5px;
+}
+.designerInfoWrap .designerInfoContent p {
+  padding-bottom: 10px;
 }
 .viewRangeLink {
   background: #e2001a;
@@ -753,20 +803,12 @@ RESPONSIVE OVERRIDES
 }
 .designerInfoThumb .viewRangeLink {
   display: block;
-  margin-top: 20px;
-}
-@media (min-width: 768px) {
-  .brandTabFeatures .span6 {
-    margin-left: 0;
-    width: 50%;
-    margin-right: -1px;
-  }
-  .designerInfoThumb {
-    float: left;
-  }
+  margin-top: 20px ;
+  max-width: 210px;
 }
 #products.tab-pane {
   background: #000000;
+  padding: 50px 30px 30px;
 }
 /* */
 .brandPressReleases {
@@ -782,11 +824,6 @@ RESPONSIVE OVERRIDES
 }
 .brandPressReleases li p {
   margin-bottom: 0;
-}
-.brandPressReleases .brandPressDate,
-.brandPressReleases .brandPressDesc,
-.brandPressReleases .brandPressDownloadLink {
-  display: table-cell;
 }
 .brandPressReleases .brandPressDate {
   color: #717070;
@@ -823,22 +860,32 @@ RESPONSIVE OVERRIDES
 .brandProdRangeList .brandProdRangeLogoWrap:after {
   clear: both;
 }
-.brandProdRangeList .brandProdRangeLogoWrap .viewRangeLink {
-  float: right;
+.brandProdRangeList .brandProdRangeLogoWrap .brandImg {
+  margin: 5px 0 10px;
 }
 .brandProdRangeList .brandProdRangeDesc {
   padding: 20px;
   background: #616161;
+  color: #ffffff;
 }
-.brandProdRangeList .brandProdRangeDesc * {
-  color: #fff;
+.brandProdRangeList .brandProdRangeDesc p {
+  color: #ffffff;
 }
 .videoThumbWrap {
   padding-bottom: 10px;
 }
+.videoThumbWrap .videoThumbSubBrand {
+  color: #e2001a;
+  padding-top: 20px;
+  display: block;
+}
+.videoThumbWrap h5 {
+  margin: 3px 0;
+}
 .videoThumb {
   position: relative;
   cursor: pointer;
+  display: block;
 }
 .videoThumb .playIconWrap {
   position: absolute;
@@ -846,8 +893,7 @@ RESPONSIVE OVERRIDES
   left: 0;
   right: 0;
   bottom: 0;
-  display: table-cell;
-  vertical-align: middle;
+  display: block;
   text-align: center;
 }
 .videoThumb .playIconWrap .icon-play {
@@ -855,9 +901,68 @@ RESPONSIVE OVERRIDES
   height: 10px;
   width: 10px;
   font-size: 10px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -5px;
+  margin-left: -5px;
   background: rgba(255, 255, 255, 0.5);
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
   color: #444;
+}
+@media (min-width: 768px) {
+  .brandTabFeatures .span6 {
+    margin-left: 0;
+    width: 50%;
+    margin-right: -1px;
+  }
+  .brandTabList {
+    height: auto;
+  }
+  .brandTabFeatureDesc {
+    border-right: solid 1px #acc0c8;
+  }
+  .brandTabCarouselWrap {
+    border-left: solid 1px #acc0c8;
+  }
+  .brandPressReleases .brandPressDate,
+  .brandPressReleases .brandPressDesc,
+  .brandPressReleases .brandPressDownloadLink {
+    display: table-cell;
+    padding: 0 10px;
+  }
+  .brandTabList {
+    text-align: center;
+  }
+  .brandTabList li {
+    display: inline-block;
+    margin: 0 0 0 -1px;
+    z-index: 1;
+    position: relative;
+    background: #ffffff;
+  }
+  .brandProdRangeList .brandProdRangeLogoWrap .viewRangeLink {
+    float: right;
+  }
+}
+@media (max-width: 767px) {
+  .brandPressReleases .brandPressDate {
+    float: left;
+    margin-right: 10px;
+  }
+  .brandPressReleases .brandPressDesc {
+    margin-left: 50px;
+  }
+  .brandPressReleases .brandPressDesc h4 {
+    margin-top: 0;
+  }
+  .brandTabContentWrap .tab-pane {
+    padding: 50px 20px 20px;
+  }
+  .designerInfoWrap .designerInfoContent {
+    padding-top: 0;
+  }
 }

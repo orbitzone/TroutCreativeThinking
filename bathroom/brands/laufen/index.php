@@ -79,14 +79,14 @@
 									<div class="row-fluid brandTabFeatures">
 										<div class="span6">
 											<article class="brandTabFeatureDesc">
-												<h4>Swissness</h4>
+												<h4 class="brandPageHeader">Swissness</h4>
 												<p>‘Swissness’ is a word that defines LAUFEN’s innovative approach to creating beautiful bathroom ceramics. It stands for many different things, but always embraces the concepts of outstanding quality, superb design, precise engineering and a passion 
 												for environmental sustainability.</p>
 
-												<h4>Quality</h4>
+												<h4 class="brandPageHeader">Quality</h4>
 												<p>LAUFEN continually pushes the limits of technical possibility to create ground-breaking new ideas expressed through ceramics. Sophisticated production processes are balanced with a human touch. Each piece is hand finished to ensure the highest standards of finish are achieved.</p>
 
-												<h4>Design</h4>
+												<h4 class="brandPageHeader">Design</h4>
 												<p>At LAUFEN, design is at the heart of every product. LAUFEN 
 												treats ceramics as an art form, collaborating with many of the world’s leading international architects and designers to make exciting new concepts a reality. Each design is brought to life 
 												using only natural raw materials such as china clay and quartz.</p>
@@ -108,14 +108,17 @@
 																		</span>
 																	</a>
 																<span class="videoThumbSubBrand">Pillars</span>
-																<h5>Lorem Libero Vulputate </h5>
+																<h4 class="brandPageHeader">Lorem Libero Vulputate </h4>
 																<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
 															</div>
-															<div class="introBrochureWrap">
-																<a href="#">
-																	<i class="icon-download icon-large"></i>
-																	<strong>Laufen Brochures</strong>
-																	<small>Download pdf document</small>
+															<div class="introBrochureDownloadWrap">
+																<a class="introBrochureDownload" href="#">
+																	<img src="/assets/images/hz-brand/brochure-front.png" alt="brochure" />
+																	<span class="introBrochureDownloadText">
+																		<i class="icon-download icon-large"></i>
+																		<strong class="brandPageHeader">Laufen Brochures</strong>
+																		<small>Download pdf document</small>																		
+																	</span>
 																</a>
 															</div>
 														</div>	
@@ -130,14 +133,17 @@
 																		</span>
 																	</a>
 																<span class="videoThumbSubBrand">Pillars</span>
-																<h5>Lorem Libero Vulputate </h5>
+																<h4 class="brandPageHeader">Lorem Libero Vulputate </h4>
 																<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
 															</div>
-															<div class="introBrochureWrap">
-																<a href="#">
-																	<i class="icon-download icon-large"></i>
-																	<strong>Laufen Brochures</strong>
-																	<small>Download pdf document</small>
+															<div class="introBrochureDownloadWrap">
+																<a class="introBrochureDownload" href="#">
+																	<img src="/assets/images/hz-brand/brochure-front.png" alt="brochure" />
+																	<span class="introBrochureDownloadText">
+																		<i class="icon-download icon-large"></i>
+																		<strong class="brandPageHeader">Laufen Brochures</strong>
+																		<small>Download pdf document</small>																		
+																	</span>
 																</a>
 															</div>
 														</div>													
@@ -152,14 +158,17 @@
 																		</span>
 																	</a>
 																<span class="videoThumbSubBrand">Pillars</span>
-																<h5>Lorem Libero Vulputate </h5>
+																<h4 class="brandPageHeader">Lorem Libero Vulputate </h4>
 																<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
 															</div>
-															<div class="introBrochureWrap">
-																<a href="#">
-																	<i class="icon-download icon-large"></i>
-																	<strong>Laufen Brochures</strong>
-																	<small>Download pdf document</small>
+															<div class="introBrochureDownloadWrap">
+																<a class="introBrochureDownload" href="#">
+																	<img src="/assets/images/hz-brand/brochure-front.png" alt="brochure" />
+																	<span class="introBrochureDownloadText">
+																		<i class="icon-download icon-large"></i>
+																		<strong class="brandPageHeader">Laufen Brochures</strong>
+																		<small>Download pdf document</small>																		
+																	</span>
 																</a>
 															</div>
 														</div>													
@@ -244,35 +253,23 @@
 								<div class="tab-pane fade" id="selector">
 									<p>Selector</p>
 								</div><!-- /#selector -->
-								<div class="tab-pane fade" id="video">
+								<div class="tab-pane fade brandVideoTab" id="video">
 									<div class="brandTabIntro">
 										<h3>Video</h3>
 									</div>
-									<?php
-										for($i=0; $i <2; $i++){
-											?>
-											<div class="row-fluid">
-
-												<?php
-													for($j=0; $j <2; $j++){
-														?>
-														<div class="span6">
-															<div class="videoThumbWrap">
-																<a class="videoThumb">
-																	<img src="http://reece.trout.com.au/responsive_2012/assets/images/moments/still-number-one-thumb.jpg" alt="Im her number one" />
-																	<span class="playIconWrap">
-																		<i class="icon-play icon-large"></i>
-																	</span>
-																</a>															
-															</div>
-														</div>
-														<?php
-													}
-												?>											
+										<div class="row-fluid">
+											<div class="span6">
+												<iframe width="560" height="315" src="//www.youtube.com/embed/JnHXACIzeKk" frameborder="0" allowfullscreen></iframe>
 											</div>
-											<?php
-										}
-									?>
+											<div class="span6">
+												<iframe width="560" height="315" src="//www.youtube.com/embed/231_3HKnAl4" frameborder="0" allowfullscreen></iframe>
+											</div>											
+										</div>
+										<div class="row-fluid">
+											<div class="span6">
+												<iframe width="560" height="315" src="//www.youtube.com/embed/MeJRi35fh9Y" frameborder="0" allowfullscreen></iframe>
+											</div>											
+										</div>										
 								</div><!-- /#video -->
 								<div class="tab-pane fade" id="press">
 									<div class="brandTabIntro">

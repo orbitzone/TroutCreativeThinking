@@ -630,6 +630,11 @@ RESPONSIVE OVERRIDES
   background: #fafafa;
   border: solid 1px #d7e7ee;
 }
+.brandPageHeader {
+  font-weight: 200;
+  font-size: 20px;
+  color: #333;
+}
 .brandImageWrap {
   padding: 75px 0 60px;
   text-align: center;
@@ -646,6 +651,16 @@ RESPONSIVE OVERRIDES
 #productCarousel .carousel-indicators li {
   float: none;
   display: inline-block;
+  border: solid 1px #a2b8c1;
+  height: 15px;
+  width: 15px;
+  background: #ffffff;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+#productCarousel .carousel-indicators li.active {
+  background: #534545;
 }
 #productCarousel .carousel-control {
   color: #ffffff;
@@ -733,8 +748,6 @@ RESPONSIVE OVERRIDES
   padding: 40px 0 20px;
 }
 .brandTabFeatures h4 {
-  font-weight: 200;
-  font-size: 1.5em;
   margin-top: 0;
 }
 .brandTabFeatures p {
@@ -760,7 +773,91 @@ RESPONSIVE OVERRIDES
   border: solid 1px #a2b8c1;
 }
 #aboutBrandCarousel .carousel-indicators li.active {
-  background: #4f4141;
+  background: #534545;
+}
+.videoThumbWrap {
+  padding-bottom: 10px;
+}
+.videoThumbWrap .videoThumbSubBrand {
+  color: #e2001a;
+  padding-top: 20px;
+  display: block;
+}
+.videoThumbWrap h4 {
+  margin: 3px 0;
+}
+.videoThumb {
+  position: relative;
+  cursor: pointer;
+  display: block;
+}
+.videoThumb .playIconWrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  text-align: center;
+}
+.videoThumb .playIconWrap .icon-play {
+  padding: 10px;
+  height: 10px;
+  width: 10px;
+  font-size: 10px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -5px;
+  margin-left: -5px;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  color: #444;
+}
+.introBrochureDownloadWrap {
+  text-align: center;
+  border-top: solid 1px #bec2c5;
+  padding: 20px 0;
+}
+.introBrochureDownload {
+  display: inline-block;
+}
+.introBrochureDownload:hover {
+  text-decoration: none;
+}
+.introBrochureDownload .introBrochureDownloadText {
+  display: block;
+  *zoom: 1;
+}
+.introBrochureDownload .introBrochureDownloadText:before,
+.introBrochureDownload .introBrochureDownloadText:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.introBrochureDownload .introBrochureDownloadText:after {
+  clear: both;
+}
+.introBrochureDownload i {
+  display: block;
+  font-size: 30px;
+  float: left;
+  color: #a5a5a5;
+  position: relative;
+  top: -5px;
+}
+.introBrochureDownload strong,
+.introBrochureDownload small {
+  display: block;
+  margin-left: 45px;
+}
+.introBrochureDownload small {
+  color: #e2001a;
+  padding-top: 5px;
+  font-size: 1em;
 }
 /* Designer Info Tab */
 .designerInfoWrap {
@@ -871,48 +968,14 @@ RESPONSIVE OVERRIDES
 .brandProdRangeList .brandProdRangeDesc p {
   color: #ffffff;
 }
-.videoThumbWrap {
-  padding-bottom: 10px;
+/* Video  Tab*/
+.brandVideoTab .span6 {
+  padding-bottom: 20px;
 }
-.videoThumbWrap .videoThumbSubBrand {
-  color: #e2001a;
-  padding-top: 20px;
-  display: block;
+.brandVideoTab iframe {
+  max-width: 100%;
 }
-.videoThumbWrap h5 {
-  margin: 3px 0;
-}
-.videoThumb {
-  position: relative;
-  cursor: pointer;
-  display: block;
-}
-.videoThumb .playIconWrap {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: block;
-  text-align: center;
-}
-.videoThumb .playIconWrap .icon-play {
-  padding: 10px;
-  height: 10px;
-  width: 10px;
-  font-size: 10px;
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -5px;
-  margin-left: -5px;
-  background: rgba(255, 255, 255, 0.5);
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
-  color: #444;
-}
+/* */
 @media (min-width: 768px) {
   .brandTabFeatures .span6 {
     margin-left: 0;
@@ -946,6 +1009,9 @@ RESPONSIVE OVERRIDES
   }
   .brandProdRangeList .brandProdRangeLogoWrap .viewRangeLink {
     float: right;
+  }
+  .designerInfoWrap .designerInfoThumb {
+    border-right: solid 1px #dedede;
   }
 }
 @media (max-width: 767px) {

@@ -29,6 +29,28 @@
 						<li><a href="#">Bathroom</a> <span class="divider">/</span></li>
 						<li><a href="#">Brands</a> <span class="divider">/</span></li>
 						<li class="active page-branding text-brand">Laufen</li>
+						<li class="pull-right visible-desktop">
+							<div class="dropdown locationDropDown  pull-right">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+									<i class="icon-map-marker icon">&nbsp;</i>
+									<span class="location">Collingwood 3066</span>
+									<span class="caret"></span>
+								</a>
+								<div class="dropdown-menu">
+								<input type="text" placeholder="New Location">
+									<ul>
+										<li><a href="#">Collingwood</a></li>
+										<li><a href="#">Richmond</a></li>
+										<li><a href="#">Hawthorn</a></li>
+										<li><a href="#">Toorak</a></li>
+									</ul>						
+								</div>
+							</div>						
+							<form class="headerNavSearchForm">
+								<label for="headerSearchInput"><i class="icon-search icon">&nbsp;</i></label>
+								<input type="search" id="headerSearchInput" placeholder="Search">
+							</form>
+						</li>						
 					</ul>
 
 				    <!-- CONTENT FOR DESKTOP -->

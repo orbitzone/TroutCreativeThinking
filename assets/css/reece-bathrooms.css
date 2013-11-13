@@ -830,6 +830,7 @@ RESPONSIVE OVERRIDES
 }
 .introBrochureDownload .introBrochureDownloadText {
   display: block;
+  padding-top: 10px;
   *zoom: 1;
 }
 .introBrochureDownload .introBrochureDownloadText:before,
@@ -872,7 +873,7 @@ RESPONSIVE OVERRIDES
   border-right: solid 1px #dedede;
 }
 .designerInfoWrap .designerInfoContent {
-  padding: 30px;
+  padding: 30px 30px 10px ;
   border-left: solid 1px #dedede;
   margin-left: -1px;
 }

@@ -940,30 +940,32 @@ RESPONSIVE OVERRIDES
 }
 .brandProdRangeList li {
   list-style: none;
+  background: #616161;
+  overflow: hidden;
 }
 .brandProdRangeList li + li {
-  padding-top: 30px;
+  margin-top: 30px;
+}
+.brandProdRangeList .productImage {
+  width: 400px;
+  float: left;
+}
+.brandProdRangeList .brandProdRangeLogoWrap,
+.brandProdRangeList .brandProdRangeDesc {
+  margin-left: 400px;
 }
 .brandProdRangeList .brandProdRangeLogoWrap {
   background: #ffffff;
   padding: 20px;
-  *zoom: 1;
-}
-.brandProdRangeList .brandProdRangeLogoWrap:before,
-.brandProdRangeList .brandProdRangeLogoWrap:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.brandProdRangeList .brandProdRangeLogoWrap:after {
-  clear: both;
 }
 .brandProdRangeList .brandProdRangeLogoWrap .brandImg {
   margin: 5px 0 10px;
 }
+.brandProdRangeList .brandProdRangeLogoWrap .viewRangeLink {
+  float: right;
+}
 .brandProdRangeList .brandProdRangeDesc {
   padding: 20px;
-  background: #616161;
   color: #ffffff;
 }
 .brandProdRangeList .brandProdRangeDesc p {
@@ -977,6 +979,45 @@ RESPONSIVE OVERRIDES
   max-width: 100%;
 }
 /* */
+@media (max-width: 979px) {
+  .brandProdRangeList .productImage {
+    width: 300px;
+    float: left;
+  }
+  .brandProdRangeList .brandProdRangeLogoWrap,
+  .brandProdRangeList .brandProdRangeDesc {
+    margin-left: 300px;
+  }
+  .brandProdRangeList .brandProdRangeLogoWrap .viewRangeLink {
+    float: none;
+  }
+}
+@media (max-width: 767px) {
+  .brandPressReleases .brandPressDate {
+    float: left;
+    margin-right: 10px;
+  }
+  .brandPressReleases .brandPressDesc {
+    margin-left: 50px;
+  }
+  .brandPressReleases .brandPressDesc h4 {
+    margin-top: 0;
+  }
+  .brandContentWrap .brandContent {
+    padding: 50px 20px 20px;
+  }
+  .designerInfoWrap .designerInfoContent {
+    padding-top: 0;
+  }
+  .brandProdRangeList .productImage {
+    width: auto;
+    float: none;
+  }
+  .brandProdRangeList .brandProdRangeLogoWrap,
+  .brandProdRangeList .brandProdRangeDesc {
+    margin-left: 0;
+  }
+}
 @media (min-width: 768px) {
   .brandFeatures .span6 {
     margin-left: 0;
@@ -1008,28 +1049,7 @@ RESPONSIVE OVERRIDES
     position: relative;
     background: #ffffff;
   }
-  .brandProdRangeList .brandProdRangeLogoWrap .viewRangeLink {
-    float: right;
-  }
   .designerInfoWrap .designerInfoThumb {
     border-right: solid 1px #dedede;
-  }
-}
-@media (max-width: 767px) {
-  .brandPressReleases .brandPressDate {
-    float: left;
-    margin-right: 10px;
-  }
-  .brandPressReleases .brandPressDesc {
-    margin-left: 50px;
-  }
-  .brandPressReleases .brandPressDesc h4 {
-    margin-top: 0;
-  }
-  .brandContentWrap .brandContent {
-    padding: 50px 20px 20px;
-  }
-  .designerInfoWrap .designerInfoContent {
-    padding-top: 0;
   }
 }

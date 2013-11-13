@@ -994,22 +994,32 @@ RESPONSIVE OVERRIDES
     margin: 0;
     li{
         list-style: none;
+        background: #616161;
+        overflow: hidden;
         &+li{
-            padding-top: 30px;
+            margin-top: 30px;
         }
     }
-
+    .productImage{
+        width: 400px;
+        float: left;
+    }
+    .brandProdRangeLogoWrap,
+    .brandProdRangeDesc{
+        margin-left: 400px;
+    }
     .brandProdRangeLogoWrap{
-        background: @white;
+        background: @white;        
         padding: 20px;
-        .clearfix;
         .brandImg{
             margin: 5px 0 10px;
         }
+        .viewRangeLink{
+            float: right;
+        }         
     }
     .brandProdRangeDesc{
         padding:20px;
-        background: #616161;
         color: @white;
         p{
             color: @white;
@@ -1026,6 +1036,54 @@ RESPONSIVE OVERRIDES
     }    
 }
 /* */
+
+@media (max-width:979px){
+    .brandProdRangeList{
+        .productImage{
+            width: 300px;
+            float: left;
+        }
+        .brandProdRangeLogoWrap,
+        .brandProdRangeDesc{
+            margin-left: 300px;
+        }
+        .brandProdRangeLogoWrap .viewRangeLink{
+            float: none;
+        }
+    }
+}
+
+@media (max-width:767px){
+    .brandPressReleases{
+        .brandPressDate{
+                float: left;
+                margin-right: 10px;
+        }
+        .brandPressDesc {
+            margin-left: 50px;
+            h4{
+                margin-top: 0
+            } 
+        }
+
+    }
+    .brandContentWrap .brandContent{
+        padding:50px 20px 20px;
+    }
+    .designerInfoWrap .designerInfoContent{
+        padding-top: 0
+    }
+    .brandProdRangeList{
+        .productImage{
+            width: auto;
+            float: none;
+        }
+        .brandProdRangeLogoWrap,
+        .brandProdRangeDesc{
+            margin-left: 0
+        }
+    }      
+}
 @media (min-width: 768px) {
     .brandFeatures{
         .span6{
@@ -1062,36 +1120,8 @@ RESPONSIVE OVERRIDES
             background: @white;
         }
     }
-    .brandProdRangeList .brandProdRangeLogoWrap .viewRangeLink{
-        float: right;
-    } 
     .designerInfoWrap .designerInfoThumb{
         border-right: solid 1px #dedede;
-    }           
-}
-
-
-@media (max-width:767px){
-    .brandPressReleases{
-        .brandPressDate{
-                float: left;
-                margin-right: 10px;
-        }
-        .brandPressDesc {
-            margin-left: 50px;
-            h4{
-                margin-top: 0
-            } 
-        }
-
     }
-    .brandContentWrap .brandContent{
-        padding:50px 20px 20px;
-    }
-    .designerInfoWrap .designerInfoContent{
-        padding-top: 0
-    }
-
-
-
+          
 }

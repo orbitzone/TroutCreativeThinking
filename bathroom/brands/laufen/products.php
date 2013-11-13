@@ -57,32 +57,70 @@
 
 								<div class="brandContent" id="products">
 									<ul class="brandProdRangeList">
-										<?php
-											for($i=0; $i <4; $i++){
-												?>
-											<li>
-
-														<img src="/assets/images/hz-brand/brandCarousel1.jpg" alt="Laufen" />
-
-														<div class="brandProdRangeLogoWrap">
-															<img class="brandImg" src="/assets/images/hz-brand/rangeLogo.jpg" alt="One ILBAGNOALESSI" />
-															<a class="viewRangeLink">View this Range</a>
-														</div>
-														<div class="brandProdRangeDesc">
-															<h4>Stefano Giovannoni from Italy</h4>
-															<p>
-																consectetur adipiscing elit. Phasellus risus mauris, blandit non pharetra at, viverra non augue. In hac habitasse platea dictumst.
-															</p>
-														</div>
-												
-											</li>
-												<?php
-											}
-										?>										
-
+										<li>
+											<div class="productImage">
+												<img src="/assets/images/hz-brand/oneilbagno.jpg" alt="Laufen" />
+											</div>
+											<div class="brandProdRangeLogoWrap">
+												<img class="brandImg" src="/assets/images/hz-brand/rangeLogo.jpg" alt="One ILBAGNOALESSI" />
+												<a class="viewRangeLink">View this Range</a>
+											</div>
+											<div class="brandProdRangeDesc">
+												<h4>Stefano Giovannoni from Italy</h4>
+												<p>
+													consectetur adipiscing elit. Phasellus risus mauris, blandit non pharetra at, viverra non augue. In hac habitasse platea dictumst.
+												</p>
+											</div>
+										</li>
+										<li>
+											<div class="productImage">
+												<img src="/assets/images/hz-brand/palomba.jpg" alt="Laufen" />
+											</div>
+											
+											<div class="brandProdRangeLogoWrap">
+												<img class="brandImg" src="/assets/images/hz-brand/rangeLogo.jpg" alt="One ILBAGNOALESSI" />
+												<a class="viewRangeLink">View this Range</a>
+											</div>
+											<div class="brandProdRangeDesc">
+												<h4>Stefano Giovannoni from Italy</h4>
+												<p>
+													consectetur adipiscing elit. Phasellus risus mauris, blandit non pharetra at, viverra non augue. In hac habitasse platea dictumst.
+												</p>
+											</div>
+										</li>
+										<li>
+											<div class="productImage">
+												<img src="/assets/images/hz-brand/mimo.jpg" alt="Laufen" />
+											</div>
+											<div class="brandProdRangeLogoWrap">
+												<img class="brandImg" src="/assets/images/hz-brand/rangeLogo.jpg" alt="One ILBAGNOALESSI" />
+												<a class="viewRangeLink">View this Range</a>
+											</div>
+											<div class="brandProdRangeDesc">
+												<h4>Stefano Giovannoni from Italy</h4>
+												<p>
+													consectetur adipiscing elit. Phasellus risus mauris, blandit non pharetra at, viverra non augue. In hac habitasse platea dictumst.
+												</p>
+											</div>
+										</li>
+										<li>
+											<div class="productImage">
+												<img src="/assets/images/hz-brand/laufenpro.jpg" alt="Laufen" />
+											</div>
+											<div class="brandProdRangeLogoWrap">
+												<img class="brandImg" src="/assets/images/hz-brand/rangeLogo.jpg" alt="One ILBAGNOALESSI" />
+												<a class="viewRangeLink">View this Range</a>
+											</div>
+											<div class="brandProdRangeDesc">
+												<h4>Stefano Giovannoni from Italy</h4>
+												<p>
+													consectetur adipiscing elit. Phasellus risus mauris, blandit non pharetra at, viverra non augue. In hac habitasse platea dictumst.
+												</p>
+											</div>
+										</li>
 									</ul>
 								</div><!-- /#products -->
-								
+
 							</div>
 				    	</div>
 				    </section>

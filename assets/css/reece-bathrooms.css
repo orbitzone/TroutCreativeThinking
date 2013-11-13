@@ -666,16 +666,16 @@ RESPONSIVE OVERRIDES
   color: #ffffff;
 }
 /* */
-.brandTabWrap {
+.brandWrap {
   padding: 20px 0 0;
 }
-.brandTabList {
+.brandList {
   margin: 0;
   text-align: center;
   position: relative;
   margin: 0 20px -20px;
 }
-.brandTabList li {
+.brandList li {
   list-style: none;
   display: block;
   border: solid 1px #a2b8c1;
@@ -684,21 +684,21 @@ RESPONSIVE OVERRIDES
   position: relative;
   background: #ffffff;
 }
-.brandTabList li a {
+.brandList li a {
   padding: 10px 25px;
   display: block;
   color: #8a999f;
   cursor: pointer;
 }
-.brandTabList li a:hover {
+.brandList li a:hover {
   text-decoration: none;
 }
-.brandTabList li.active {
+.brandList li.active {
   border-color: #e29da5;
   background: #ffd9dd;
   z-index: 2;
 }
-.brandTabList li.active a {
+.brandList li.active a {
   color: #e2001a;
 }
 #showBrandMenu {
@@ -721,42 +721,42 @@ RESPONSIVE OVERRIDES
 #showBrandMenu:hover {
   text-decoration: none;
 }
-.brandTabContentWrap {
+.brandContentWrap {
   border-top: solid 1px #a2b8c1;
   min-height: 200px;
 }
-.brandTabContentWrap .tab-pane {
+.brandContentWrap .brandContent {
   padding: 50px;
   margin: 0 auto;
   font-size: 13px;
 }
-.brandTabContentWrap .tab-pane p {
+.brandContentWrap .brandContent p {
   color: #717070;
 }
-#about.tab-pane {
+#about.brandContent {
   max-width: 780px;
 }
-.brandTabIntro {
+.brandIntro {
   padding-bottom: 30px;
   text-align: center;
 }
-.brandTabIntro h3 {
+.brandIntro h3 {
   padding-bottom: 20px;
 }
-.brandTabFeatures {
+.brandFeatures {
   border-top: dotted 1px #a2b8c1;
   padding: 40px 0 20px;
 }
-.brandTabFeatures h4 {
+.brandFeatures h4 {
   margin-top: 0;
 }
-.brandTabFeatures p {
+.brandFeatures p {
   padding-bottom: 20px;
 }
-.brandTabFeatureDesc {
+.brandFeatureDesc {
   padding-right: 40px;
 }
-#aboutBrandCarousel .brandTabCarouselWrap {
+#aboutBrandCarousel .brandCarouselWrap {
   padding: 0 40px;
 }
 #aboutBrandCarousel .carousel-indicators {
@@ -903,7 +903,7 @@ RESPONSIVE OVERRIDES
   margin-top: 20px ;
   max-width: 210px;
 }
-#products.tab-pane {
+#products.brandContent {
   background: #000000;
   padding: 50px 30px 30px;
 }
@@ -977,18 +977,18 @@ RESPONSIVE OVERRIDES
 }
 /* */
 @media (min-width: 768px) {
-  .brandTabFeatures .span6 {
+  .brandFeatures .span6 {
     margin-left: 0;
     width: 50%;
     margin-right: -1px;
   }
-  .brandTabList {
+  .brandList {
     height: auto;
   }
-  .brandTabFeatureDesc {
+  .brandFeatureDesc {
     border-right: solid 1px #acc0c8;
   }
-  .brandTabCarouselWrap {
+  .brandCarouselWrap {
     border-left: solid 1px #acc0c8;
   }
   .brandPressReleases .brandPressDate,
@@ -997,10 +997,10 @@ RESPONSIVE OVERRIDES
     display: table-cell;
     padding: 0 10px;
   }
-  .brandTabList {
+  .brandList {
     text-align: center;
   }
-  .brandTabList li {
+  .brandList li {
     display: inline-block;
     margin: 0 0 0 -1px;
     z-index: 1;
@@ -1025,7 +1025,7 @@ RESPONSIVE OVERRIDES
   .brandPressReleases .brandPressDesc h4 {
     margin-top: 0;
   }
-  .brandTabContentWrap .tab-pane {
+  .brandContentWrap .brandContent {
     padding: 50px 20px 20px;
   }
   .designerInfoWrap .designerInfoContent {

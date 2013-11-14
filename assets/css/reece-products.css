@@ -851,11 +851,17 @@ LocationDropDown
   .breadcrumb > li.locationAnSearch {
     display: block;
     text-align: right;
-    margin: 5px 0 0;
+    margin: 5px -5px 0;
     padding-top: 5px;
     clear: both;
   }
   .breadcrumb > li.locationAnSearch * {
     text-align: left;
+  }
+  .breadcrumb > li.locationAnSearch .headerNavSearchForm {
+    padding: 5px 0;
+  }
+  .breadcrumb > li.locationAnSearch .headerNavSearchForm input {
+    width: 80px;
   }
 }

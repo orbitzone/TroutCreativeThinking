@@ -321,11 +321,14 @@ h1, h2, h3, h4, h5, h6 {
             }
         }
     }
+    .headerNavSearchForm{
+        float: left;
+        display: block;
+    }
 }
 
 .headerNavSearchForm{
-    display: block;
-    float: left;
+    display: inline-block;
     margin: 0;
     padding:5px 10px;
     input{
@@ -397,7 +400,7 @@ h1, h2, h3, h4, h5, h6 {
     padding:5px 10px !important;
     font-size: 12px;
     width: 145px;
-
+    position: relative;
     a:focus, a:hover{
         text-decoration: none;
     }
@@ -410,8 +413,6 @@ h1, h2, h3, h4, h5, h6 {
             color: #333;
         }
     }
-    
-    position: relative;
     .dropdown-menu{
         margin: 0;
         padding: 0 0 5px 0;

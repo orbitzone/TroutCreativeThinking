@@ -4,7 +4,7 @@
 	<?php 
 	  	$cssScriptPaths = array(
 	  		"/assets/css/reece-products.css",
-	  		"/assets/css/reece-bathrooms.css"			
+	  		"/assets/css/reece-bathrooms.css"		
 	  	); 
 	  	include_once($serverBase."/includes/head/head-generic.php");
 	?>		
@@ -28,7 +28,29 @@
 					<ul class="breadcrumb">
 						<li><a href="#">Bathroom</a> <span class="divider">/</span></li>
 						<li><a href="#">Brands</a> <span class="divider">/</span></li>
-						<li class="active page-branding text-brand">Laufen</li>						
+						<li class="active page-branding text-brand">Laufen</li>
+						<li class="locationAnSearch visible-desktop">
+							<div class="dropdown locationDropDown">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+									<i class="icon-map-marker icon">&nbsp;</i>
+									<span class="location">Collingwood 3066</span>
+									<span class="caret"></span>
+								</a>
+								<div class="dropdown-menu">
+									<input type="text" placeholder="New Location">
+									<ul>
+										<li><a href="#">Collingwood</a></li>
+										<li><a href="#">Richmond</a></li>
+										<li><a href="#">Hawthorn</a></li>
+										<li><a href="#">Toorak</a></li>
+									</ul>						
+								</div>
+							</div>
+							<form class="headerNavSearchForm">
+								<label for="breadcrumbSearchInput"><i class="icon-search icon">&nbsp;</i></label>
+								<input type="search" id="breadcrumbSearchInput" placeholder="Search">
+							</form>							
+						</li>						
 					</ul>
 
 				    <!-- CONTENT FOR DESKTOP -->

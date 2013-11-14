@@ -9234,9 +9234,12 @@ h6 {
 .headerUtilityBar .headerUtilityLink > li:first-child:before {
   display: none;
 }
-.headerNavSearchForm {
-  display: block;
+.headerUtilityBar .headerNavSearchForm {
   float: left;
+  display: block;
+}
+.headerNavSearchForm {
+  display: inline-block;
   margin: 0;
   padding: 5px 10px;
 }

@@ -712,6 +712,7 @@ RESPONSIVE OVERRIDES
   padding: 10px 15px;
   margin: 0 20px;
   background: #ffffff;
+  color: #717070;
   position: relative;
   z-index: 2;
 }
@@ -820,8 +821,8 @@ RESPONSIVE OVERRIDES
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: -5px;
-  margin-left: -5px;
+  margin-top: -10px;
+  margin-left: -10px;
   background: rgba(255, 255, 255, 0.5);
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -830,8 +831,7 @@ RESPONSIVE OVERRIDES
 }
 .introBrochureDownloadWrap {
   text-align: center;
-  border-top: solid 1px #bec2c5;
-  padding: 20px 0;
+  padding: 20px 0 5px;
 }
 .introBrochureDownload {
   display: inline-block;
@@ -905,6 +905,9 @@ RESPONSIVE OVERRIDES
 .designerInfoWrap .designerInfoContent p {
   padding-bottom: 10px;
 }
+.designerInfoWrap .designerInfoContent .brandProdRangeLogoWrap {
+  padding: 0 0 20px;
+}
 .viewRangeLink {
   background: #e2001a;
   display: inline-block;
@@ -953,6 +956,16 @@ RESPONSIVE OVERRIDES
   font-size: 14px;
 }
 /* Product Range List */
+.brandProdRangeLogoWrap {
+  background: #ffffff;
+  padding: 20px;
+}
+.brandProdRangeLogoWrap .brandImg {
+  margin: 5px 0 15px;
+}
+.brandProdRangeLogoWrap .viewRangeLink {
+  float: right;
+}
 .brandProdRangeList {
   margin: 0;
 }
@@ -972,16 +985,6 @@ RESPONSIVE OVERRIDES
 .brandProdRangeList .brandProdRangeDesc {
   margin-left: 400px;
 }
-.brandProdRangeList .brandProdRangeLogoWrap {
-  background: #ffffff;
-  padding: 20px;
-}
-.brandProdRangeList .brandProdRangeLogoWrap .brandImg {
-  margin: 5px 0 10px;
-}
-.brandProdRangeList .brandProdRangeLogoWrap .viewRangeLink {
-  float: right;
-}
 .brandProdRangeList .brandProdRangeDesc {
   padding: 20px;
   color: #ffffff;
@@ -998,6 +1001,9 @@ RESPONSIVE OVERRIDES
 }
 /* */
 @media (max-width: 979px) {
+  .brandProdRangeLogoWrap .viewRangeLink {
+    float: none;
+  }
   .brandProdRangeList .productImage {
     width: 300px;
     float: left;
@@ -1006,17 +1012,16 @@ RESPONSIVE OVERRIDES
   .brandProdRangeList .brandProdRangeDesc {
     margin-left: 300px;
   }
-  .brandProdRangeList .brandProdRangeLogoWrap .viewRangeLink {
-    float: none;
-  }
 }
 @media (max-width: 767px) {
   .brandPressReleases .brandPressDate {
     float: left;
     margin-right: 10px;
   }
-  .brandPressReleases .brandPressDesc {
+  .brandPressReleases .brandPressDesc,
+  .brandPressReleases .brandPressDownloadLinkwrap {
     margin-left: 50px;
+    margin-bottom: 5px;
   }
   .brandPressReleases .brandPressDesc h4 {
     margin-top: 0;
@@ -1058,7 +1063,7 @@ RESPONSIVE OVERRIDES
   }
   .brandPressReleases .brandPressDate,
   .brandPressReleases .brandPressDesc,
-  .brandPressReleases .brandPressDownloadLink {
+  .brandPressReleases .brandPressDownloadLinkwrap {
     display: table-cell;
     padding: 0 10px;
     vertical-align: middle;

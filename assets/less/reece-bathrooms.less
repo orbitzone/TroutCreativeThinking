@@ -764,6 +764,7 @@ RESPONSIVE OVERRIDES
     padding: 10px 15px;
     margin: 0 20px;
     background: @white;
+    color: #717070;
     position: relative;
     z-index: 2;
     .icon{
@@ -873,8 +874,8 @@ RESPONSIVE OVERRIDES
             position: absolute;
             top: 50%;
             left: 50%;
-            margin-top: -5px;
-            margin-left: -5px;
+            margin-top: -10px;
+            margin-left: -10px;
             background: rgba(255,255,255,0.5);
             .border-radius(20px;);
             color: #444;
@@ -883,8 +884,7 @@ RESPONSIVE OVERRIDES
 }
 .introBrochureDownloadWrap{
     text-align: center;
-    border-top: solid 1px #bec2c5;
-    padding: 20px 0
+    padding: 20px 0 5px;
 }
 .introBrochureDownload{
     display: inline-block;
@@ -945,6 +945,9 @@ RESPONSIVE OVERRIDES
         p{
             padding-bottom: 10px;
         }
+        .brandProdRangeLogoWrap{
+            padding: 0 0 20px;
+        }        
     }
 }
 .viewRangeLink{
@@ -999,6 +1002,17 @@ RESPONSIVE OVERRIDES
     }
 }
 /* Product Range List */
+.brandProdRangeLogoWrap{
+    background: @white;        
+    padding: 20px;
+    .brandImg{
+        margin: 5px 0 15px;
+    }
+    .viewRangeLink{
+        float: right;
+    }         
+}
+
 .brandProdRangeList{
     margin: 0;
     li{
@@ -1016,16 +1030,6 @@ RESPONSIVE OVERRIDES
     .brandProdRangeLogoWrap,
     .brandProdRangeDesc{
         margin-left: 400px;
-    }
-    .brandProdRangeLogoWrap{
-        background: @white;        
-        padding: 20px;
-        .brandImg{
-            margin: 5px 0 10px;
-        }
-        .viewRangeLink{
-            float: right;
-        }         
     }
     .brandProdRangeDesc{
         padding:20px;
@@ -1047,6 +1051,9 @@ RESPONSIVE OVERRIDES
 /* */
 
 @media (max-width:979px){
+    .brandProdRangeLogoWrap .viewRangeLink{
+        float: none;
+    }    
     .brandProdRangeList{
         .productImage{
             width: 300px;
@@ -1055,9 +1062,6 @@ RESPONSIVE OVERRIDES
         .brandProdRangeLogoWrap,
         .brandProdRangeDesc{
             margin-left: 300px;
-        }
-        .brandProdRangeLogoWrap .viewRangeLink{
-            float: none;
         }
     }
 }
@@ -1068,11 +1072,14 @@ RESPONSIVE OVERRIDES
                 float: left;
                 margin-right: 10px;
         }
-        .brandPressDesc {
+        .brandPressDesc,.brandPressDownloadLinkwrap {
             margin-left: 50px;
+            margin-bottom: 5px;
+        }
+        .brandPressDesc{
             h4{
                 margin-top: 0
-            } 
+            }             
         }
 
     }
@@ -1118,7 +1125,7 @@ RESPONSIVE OVERRIDES
     .brandPressReleases{
         .brandPressDate,
         .brandPressDesc, 
-        .brandPressDownloadLink{
+        .brandPressDownloadLinkwrap{
             display: table-cell;
             padding: 0 10px;
             vertical-align: middle;

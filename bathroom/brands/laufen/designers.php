@@ -28,29 +28,7 @@
 					<ul class="breadcrumb">
 						<li><a href="#">Bathroom</a> <span class="divider">/</span></li>
 						<li><a href="#">Brands</a> <span class="divider">/</span></li>
-						<li class="active page-branding text-brand">Laufen</li>
-						<li class="pull-right visible-desktop">
-							<div class="dropdown locationDropDown  pull-right">
-								<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-									<i class="icon-map-marker icon">&nbsp;</i>
-									<span class="location">Collingwood 3066</span>
-									<span class="caret"></span>
-								</a>
-								<div class="dropdown-menu">
-								<input type="text" placeholder="New Location">
-									<ul>
-										<li><a href="#">Collingwood</a></li>
-										<li><a href="#">Richmond</a></li>
-										<li><a href="#">Hawthorn</a></li>
-										<li><a href="#">Toorak</a></li>
-									</ul>						
-								</div>
-							</div>						
-							<form class="headerNavSearchForm">
-								<label for="headerSearchInput"><i class="icon-search icon">&nbsp;</i></label>
-								<input type="search" id="headerSearchInput" placeholder="Search">
-							</form>
-						</li>						
+						<li class="active page-branding text-brand">Laufen</li>						
 					</ul>
 
 				    <!-- CONTENT FOR DESKTOP -->
@@ -90,9 +68,6 @@
 													<div class="span4">
 														<div class="designerInfoThumb">
 															<img src="/assets/images/hz-brand/stefano.jpg" alt="Stefano" />
-															<a class="viewRangeLink">
-																View this Range
-															</a>
 														</div>													
 													</div>
 													<div class="span8">
@@ -102,9 +77,10 @@
 																<p>
 																	The expressive creations of award winning designer and architect, Stefano Giovannoni, have cast a spell over the design world for many years. His works even form part of a permanent archive at the Museum of Modern Art in New York. Stefano has collaborated with many famous names and none bigger than Alessi – the king of designer homewares. For Alberto Alessi, Giovannoni is one of the few designers capable of combining the extraordinary with the popular. This is indeed the reason why he commissioned him to develop ALESSI’s first complete bathroom collection in conjunction with Laufen - ILBAGNOALESSI One. Characterised by organic forms that each speak the same sensuous design language, ILBAGNOALESSI One is a winner of Europe’s prestigious Design Plus Award. The gentle, rounded shapes of ILBAGNOALESSI One reflect the work of nature itself – inspired by the idea of a stone that has been smoothed by water over time.
 																</p>
-																<p>
-																	<img src="/assets/images/hz-brand/rangeLogo.jpg" alt="One ILBAGNOALESSI" />
-																</p>
+															<div class="brandProdRangeLogoWrap">
+																<img class="brandImg" src="/assets/images/hz-brand/rangeLogo.jpg" alt="One ILBAGNOALESSI" />
+																<a class="viewRangeLink" href="#">View this Range</a>
+															</div>
 																<p>
 																	The works of award winning designer, Stefano Giovannoni, tell stories that fascinate and enthral with their beautiful narrative qualities.
 																</p>

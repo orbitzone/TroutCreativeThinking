@@ -29,28 +29,6 @@
 						<li><a href="#">Bathroom</a> <span class="divider">/</span></li>
 						<li><a href="#">Brands</a> <span class="divider">/</span></li>
 						<li class="active page-branding text-brand">Laufen</li>
-						<li class="pull-right visible-desktop">
-							<form class="headerNavSearchForm" style="float:right">
-								<label for="headerSearchInput"><i class="icon-search icon">&nbsp;</i></label>
-								<input type="search" id="headerSearchInput" placeholder="Search">
-							</form>						
-							<div class="dropdown locationDropDown pull-right">
-								<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-									<i class="icon-map-marker icon">&nbsp;</i>
-									<span class="location">Collingwood 3066</span>
-									<span class="caret"></span>
-								</a>
-								<div class="dropdown-menu">
-								<input type="text" placeholder="New Location">
-									<ul>
-										<li><a href="#">Collingwood</a></li>
-										<li><a href="#">Richmond</a></li>
-										<li><a href="#">Hawthorn</a></li>
-										<li><a href="#">Toorak</a></li>
-									</ul>						
-								</div>
-							</div>
-						</li>
 					</ul>
 
 				    <!-- CONTENT FOR DESKTOP -->
@@ -116,86 +94,66 @@
 										</div>
 
 										<div class="span6">
-										<div class="aboutBrandCarouselWrap">
-											<div id="aboutBrandCarousel" class="carousel slide">
-											  <!-- Carousel items -->
-												<div class="carousel-inner">
-													<div class="active item">
-															<div class="videoThumbWrap">
-																<a class="videoThumb" title="Watch Video" href="http://www.youtube.com/embed/JnHXACIzeKk?rel=0">
-																	<img src="http://www.reece.com.au/assets/pages/thumbnails/video-thumb-three-pillars.jpg" alt="Im her number one" />
-																	<span class="playIconWrap">
-																		<i class="icon-play icon-large"></i>
-																	</span>
-																</a>
-																<span class="brandPageSubHeader">Pillars</span>
-																<h4 class="brandPageHeader">Lorem Libero Vulputate </h4>
-																<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
-															</div>
-															<div class="introBrochureDownloadWrap">
-																<a class="introBrochureDownload" href="#">
-																	<img src="/assets/images/hz-brand/brochure-front.png" alt="brochure" />
-																	<span class="introBrochureDownloadText">
-																		<i class="icon-download icon-large"></i>
-																		<strong class="brandPageHeader">Laufen Brochures</strong>
-																		<small>Download pdf document</small>																		
-																	</span>
-																</a>
-															</div>
+											<div class="aboutBrandCarouselWrap">
+												<div id="aboutBrandCarousel" class="carousel slide">
+												  <!-- Carousel items -->
+													<div class="carousel-inner">
+														<div class="active item">
+																<div class="videoThumbWrap">
+																	<a class="videoThumb" title="Watch Video" href="http://www.youtube.com/embed/JnHXACIzeKk?rel=0">
+																		<img src="http://www.reece.com.au/assets/pages/thumbnails/video-thumb-three-pillars.jpg" alt="Im her number one" />
+																		<span class="playIconWrap">
+																			<i class="icon-play icon-large"></i>
+																		</span>
+																	</a>
+																	<span class="brandPageSubHeader">Pillars</span>
+																	<h4 class="brandPageHeader">Lorem Libero Vulputate </h4>
+																	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
+																</div>
+														</div>
+														<div class="item">
+																<div class="videoThumbWrap">
+																	<a class="videoThumb" title="Watch Video" href="http://www.youtube.com/embed/231_3HKnAl4?rel=0">
+																		<img src="http://www.reece.com.au/assets/pages/thumbnails/video-thumb-overview.jpg" alt="Im her number one" />
+																		<span class="playIconWrap">
+																			<i class="icon-play icon-large"></i>
+																		</span>
+																	</a>
+																	<span class="brandPageSubHeader">Pillars</span>
+																	<h4 class="brandPageHeader">Lorem Libero Vulputate </h4>
+																	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
+																</div>												
+														</div>
+														<div class="item">
+																<div class="videoThumbWrap">
+																	<a class="videoThumb" title="Watch Video" href="http://www.youtube.com/embed/MeJRi35fh9Y?rel=0">
+																		<img src="http://www.reece.com.au/assets/pages/thumbnails/video-thumb-designers2.jpg" alt="Im her number one" />
+																		<span class="playIconWrap">
+																			<i class="icon-play icon-large"></i>
+																		</span>
+																	</a>
+																	<span class="brandPageSubHeader">Pillars</span>
+																	<h4 class="brandPageHeader">Lorem Libero Vulputate </h4>
+																	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
+																</div>											
+														</div>
 													</div>
-													<div class="item">
-															<div class="videoThumbWrap">
-																<a class="videoThumb" title="Watch Video" href="http://www.youtube.com/embed/231_3HKnAl4?rel=0">
-																	<img src="http://www.reece.com.au/assets/pages/thumbnails/video-thumb-overview.jpg" alt="Im her number one" />
-																	<span class="playIconWrap">
-																		<i class="icon-play icon-large"></i>
-																	</span>
-																</a>
-																<span class="brandPageSubHeader">Pillars</span>
-																<h4 class="brandPageHeader">Lorem Libero Vulputate </h4>
-																<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
-															</div>
-															<div class="introBrochureDownloadWrap">
-																<a class="introBrochureDownload" href="#">
-																	<img src="/assets/images/hz-brand/brochure-front.png" alt="brochure" />
-																	<span class="introBrochureDownloadText">
-																		<i class="icon-download icon-large"></i>
-																		<strong class="brandPageHeader">Laufen Brochures</strong>
-																		<small>Download pdf document</small>																		
-																	</span>
-																</a>
-															</div>													
-													</div>
-													<div class="item">
-															<div class="videoThumbWrap">
-																<a class="videoThumb" title="Watch Video" href="http://www.youtube.com/embed/MeJRi35fh9Y?rel=0">
-																	<img src="http://www.reece.com.au/assets/pages/thumbnails/video-thumb-designers2.jpg" alt="Im her number one" />
-																	<span class="playIconWrap">
-																		<i class="icon-play icon-large"></i>
-																	</span>
-																</a>
-																<span class="brandPageSubHeader">Pillars</span>
-																<h4 class="brandPageHeader">Lorem Libero Vulputate </h4>
-																<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
-															</div>
-															<div class="introBrochureDownloadWrap">
-																<a class="introBrochureDownload" href="#">
-																	<img src="/assets/images/hz-brand/brochure-front.png" alt="brochure" />
-																	<span class="introBrochureDownloadText">
-																		<i class="icon-download icon-large"></i>
-																		<strong class="brandPageHeader">Laufen Brochures</strong>
-																		<small>Download pdf document</small>																		
-																	</span>
-																</a>
-															</div>												
-													</div>
+													<ol class="carousel-indicators">
+														<li data-target="#aboutBrandCarousel" data-slide-to="0" class="active"></li>
+														<li data-target="#aboutBrandCarousel" data-slide-to="1"></li>
+														<li data-target="#aboutBrandCarousel" data-slide-to="2"></li>
+													</ol>  
 												</div>
-												<ol class="carousel-indicators">
-													<li data-target="#aboutBrandCarousel" data-slide-to="0" class="active"></li>
-													<li data-target="#aboutBrandCarousel" data-slide-to="1"></li>
-													<li data-target="#aboutBrandCarousel" data-slide-to="2"></li>
-												</ol>  
-											</div>
+												<div class="introBrochureDownloadWrap">
+													<a class="introBrochureDownload" href="#">
+														<img src="/assets/images/hz-brand/brochure-front.png" alt="brochure" />
+														<span class="introBrochureDownloadText">
+															<i class="icon-download icon-large"></i>
+															<strong class="brandPageHeader">Laufen Brochures</strong>
+															<small>Download pdf document</small>																		
+														</span>
+													</a>
+												</div>											
 											</div>
 										</div>
 									</div>

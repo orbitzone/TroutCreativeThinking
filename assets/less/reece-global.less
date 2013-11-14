@@ -175,13 +175,19 @@ h1, h2, h3, h4, h5, h6 {
 //====================================================================================================================================
 
 .breadcrumb {
+    /* floating breadcrumb elements to add the search and location to it. */
+    .clearfix;
     margin-top: 20px;
     background-color: @lightBackground;
-
+    li{
+        display: block;
+        float: left;
+    }
     a {
         color: darken(@lightBackground, 20%);
     }
 }
+
 
 // Content Wrapper Modules
 //====================================================================================================================================

@@ -81,20 +81,33 @@
 										<h3>Video</h3>
 									</div>
 										<div class="row-fluid">
-											<div class="span6">
-												<iframe width="560" height="315" src="//www.youtube.com/embed/JnHXACIzeKk" frameborder="0" allowfullscreen></iframe>
+											<div class="span4">
+												<a class="videoThumb" title="Watch Video" href="http://www.youtube.com/embed/JnHXACIzeKk?rel=0" target="_blank">
+													<img src="http://www.reece.com.au/assets/pages/thumbnails/video-thumb-three-pillars.jpg" alt="Im her number one" />
+													<span class="playIconWrap">
+														<i class="icon-play icon-large"></i>
+													</span>
+												</a>
 												<h4 class="brandPageHeader">Lorem Libero Vulputate </h4>
 												<span class="brandPageSubHeader">Watch Video</span>
 											</div>
-											<div class="span6">
-												<iframe width="560" height="315" src="//www.youtube.com/embed/231_3HKnAl4" frameborder="0" allowfullscreen></iframe>
+											<div class="span4">
+												<a class="videoThumb" title="Watch Video" href="http://www.youtube.com/embed/231_3HKnAl4?rel=0" target="_blank">
+													<img src="http://www.reece.com.au/assets/pages/thumbnails/video-thumb-overview.jpg" alt="Im her number one" />
+													<span class="playIconWrap">
+														<i class="icon-play icon-large"></i>
+													</span>
+												</a>
 												<h4 class="brandPageHeader">Lorem Libero Vulputate </h4>
 												<span class="brandPageSubHeader">Watch Video</span>												
-											</div>											
-										</div>
-										<div class="row-fluid">
-											<div class="span6">
-												<iframe id="MeJRi35fh9Y" width="560" height="315" src="//www.youtube.com/embed/MeJRi35fh9Y" frameborder="0" allowfullscreen></iframe>
+											</div>
+											<div class="span4">
+												<a class="videoThumb" title="Watch Video" href="http://www.youtube.com/embed/MeJRi35fh9Y?rel=0 " target="_blank">
+													<img src="http://www.reece.com.au/assets/pages/thumbnails/video-thumb-designers2.jpg" alt="Im her number one" />
+													<span class="playIconWrap">
+														<i class="icon-play icon-large"></i>
+													</span>
+												</a>
 												<h4 class="brandPageHeader">Lorem Libero Vulputate </h4>
 												<span class="brandPageSubHeader">Watch Video</span>												
 											</div>											
@@ -135,5 +148,6 @@
 		  	); 
 		  	include_once($serverBase."/includes/foot/scripts.php");
 		?>
+
     </body>
 </html>

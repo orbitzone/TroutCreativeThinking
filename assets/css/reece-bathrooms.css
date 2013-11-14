@@ -990,7 +990,7 @@ RESPONSIVE OVERRIDES
   color: #ffffff;
 }
 /* Video  Tab*/
-.brandVideoTab .span6 {
+.brandVideoTab [class*="span"] {
   padding-bottom: 40px;
 }
 .brandVideoTab iframe {
@@ -1034,6 +1034,11 @@ RESPONSIVE OVERRIDES
   .brandProdRangeList .brandProdRangeLogoWrap,
   .brandProdRangeList .brandProdRangeDesc {
     margin-left: 0;
+  }
+}
+@media (max-width: 480px) {
+  .aboutBrandCarouselWrap {
+    padding: 0;
   }
 }
 @media (min-width: 768px) {

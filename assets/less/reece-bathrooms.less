@@ -1037,7 +1037,7 @@ RESPONSIVE OVERRIDES
 }
 /* Video  Tab*/
 .brandVideoTab{
-    .span6{
+    [class*="span"] {
         padding-bottom: 40px;
     }
     iframe{
@@ -1092,6 +1092,11 @@ RESPONSIVE OVERRIDES
             margin-left: 0
         }
     }      
+}
+@media (max-width:480px){
+    .aboutBrandCarouselWrap{
+        padding: 0
+    }
 }
 @media (min-width: 768px) {
     .brandFeatures{

@@ -30,7 +30,11 @@
 						<li><a href="#">Brands</a> <span class="divider">/</span></li>
 						<li class="active page-branding text-brand">Laufen</li>
 						<li class="pull-right visible-desktop">
-							<div class="dropdown locationDropDown">
+							<form class="headerNavSearchForm" style="float:right">
+								<label for="headerSearchInput"><i class="icon-search icon">&nbsp;</i></label>
+								<input type="search" id="headerSearchInput" placeholder="Search">
+							</form>						
+							<div class="dropdown locationDropDown pull-right">
 								<a class="dropdown-toggle" data-toggle="dropdown" href="#">
 									<i class="icon-map-marker icon">&nbsp;</i>
 									<span class="location">Collingwood 3066</span>
@@ -45,11 +49,7 @@
 										<li><a href="#">Toorak</a></li>
 									</ul>						
 								</div>
-							</div>						
-							<form class="headerNavSearchForm">
-								<label for="headerSearchInput"><i class="icon-search icon">&nbsp;</i></label>
-								<input type="search" id="headerSearchInput" placeholder="Search">
-							</form>
+							</div>
 						</li>
 					</ul>
 
@@ -122,7 +122,7 @@
 												<div class="carousel-inner">
 													<div class="active item">
 															<div class="videoThumbWrap">
-																<a class="videoThumb" title="Watch Video" href="http://www.youtube.com/embed/JnHXACIzeKk?rel=0" target="_blank">
+																<a class="videoThumb" title="Watch Video" href="http://www.youtube.com/embed/JnHXACIzeKk?rel=0">
 																	<img src="http://www.reece.com.au/assets/pages/thumbnails/video-thumb-three-pillars.jpg" alt="Im her number one" />
 																	<span class="playIconWrap">
 																		<i class="icon-play icon-large"></i>
@@ -145,7 +145,7 @@
 													</div>
 													<div class="item">
 															<div class="videoThumbWrap">
-																<a class="videoThumb" title="Watch Video" href="http://www.youtube.com/embed/231_3HKnAl4?rel=0" target="_blank">
+																<a class="videoThumb" title="Watch Video" href="http://www.youtube.com/embed/231_3HKnAl4?rel=0">
 																	<img src="http://www.reece.com.au/assets/pages/thumbnails/video-thumb-overview.jpg" alt="Im her number one" />
 																	<span class="playIconWrap">
 																		<i class="icon-play icon-large"></i>
@@ -168,12 +168,12 @@
 													</div>
 													<div class="item">
 															<div class="videoThumbWrap">
-																	<a class="videoThumb" title="Watch Video" href="http://www.youtube.com/embed/MeJRi35fh9Y?rel=0 " target="_blank">
-																		<img src="http://www.reece.com.au/assets/pages/thumbnails/video-thumb-designers2.jpg" alt="Im her number one" />
-																		<span class="playIconWrap">
-																			<i class="icon-play icon-large"></i>
-																		</span>
-																	</a>
+																<a class="videoThumb" title="Watch Video" href="http://www.youtube.com/embed/MeJRi35fh9Y?rel=0">
+																	<img src="http://www.reece.com.au/assets/pages/thumbnails/video-thumb-designers2.jpg" alt="Im her number one" />
+																	<span class="playIconWrap">
+																		<i class="icon-play icon-large"></i>
+																	</span>
+																</a>
 																<span class="brandPageSubHeader">Pillars</span>
 																<h4 class="brandPageHeader">Lorem Libero Vulputate </h4>
 																<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>

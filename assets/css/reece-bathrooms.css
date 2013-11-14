@@ -676,16 +676,17 @@ RESPONSIVE OVERRIDES
 }
 .brandList {
   margin: 0;
-  text-align: center;
   position: relative;
   margin: 0 20px -20px;
+  height: auto;
+  text-align: center;
 }
 .brandList li {
   list-style: none;
-  display: block;
   border: solid 1px #a2b8c1;
-  margin-top: -1px;
+  margin: 0 0 0 -1px;
   z-index: 1;
+  display: inline-block;
   position: relative;
   background: #ffffff;
 }
@@ -1014,6 +1015,13 @@ RESPONSIVE OVERRIDES
   }
 }
 @media (max-width: 767px) {
+  .brandList {
+    height: 0;
+  }
+  .brandList li {
+    display: block;
+    margin: -1px 0 0 0;
+  }
   .brandPressReleases .brandPressDate {
     float: left;
     margin-right: 10px;
@@ -1052,9 +1060,6 @@ RESPONSIVE OVERRIDES
     width: 50%;
     margin-right: -1px;
   }
-  .brandList {
-    height: auto;
-  }
   .brandFeatureDesc {
     border-right: solid 1px #acc0c8;
   }
@@ -1070,16 +1075,7 @@ RESPONSIVE OVERRIDES
   }
   .brandPressReleases .brandPressDownloadLinkwrap {
     width: 170px;
-  }
-  .brandList {
-    text-align: center;
-  }
-  .brandList li {
-    display: inline-block;
-    margin: 0 0 0 -1px;
-    z-index: 1;
-    position: relative;
-    background: #ffffff;
+    text-align: right;
   }
   .designerInfoWrap .designerInfoThumb {
     border-right: solid 1px #dedede;

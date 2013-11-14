@@ -731,12 +731,14 @@ RESPONSIVE OVERRIDES
     text-align: center;
     position: relative;
     margin:0 20px -20px;
+    height: auto;
+    text-align: center;  
     li{
         list-style: none;
-        display: block;
         border:solid 1px #a2b8c1;
-        margin-top: -1px;
+        margin:0 0 0 -1px;
         z-index: 1;
+        display: inline-block;
         position: relative;
         background: @white;
         a{
@@ -1067,6 +1069,13 @@ RESPONSIVE OVERRIDES
 }
 
 @media (max-width:767px){
+    .brandList{
+        height: 0;
+        li{
+            display: block;
+            margin:-1px 0 0 0;
+        }
+    }
     .brandPressReleases{
         .brandPressDate{
                 float: left;
@@ -1113,9 +1122,7 @@ RESPONSIVE OVERRIDES
             margin-right: -1px
         }
     }
-    .brandList{
-        height: auto;
-    }
+
     .brandFeatureDesc{
         border-right: solid 1px #acc0c8;
     }
@@ -1131,20 +1138,11 @@ RESPONSIVE OVERRIDES
             vertical-align: middle;
         }
         .brandPressDownloadLinkwrap{
-            width: 170px
+            width: 170px;
+            text-align: right;
         }
     }
 
-    .brandList{
-        text-align: center;
-        li{
-            display: inline-block;
-            margin:0 0 0 -1px;
-            z-index: 1;
-            position: relative;
-            background: @white;
-        }
-    }
     .designerInfoWrap .designerInfoThumb{
         border-right: solid 1px #dedede;
     }

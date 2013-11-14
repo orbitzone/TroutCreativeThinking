@@ -8,10 +8,15 @@
   margin: 0 0 @baseLineHeight;
   list-style: none;
   background-color: #f5f5f5;
+  /* clearfix since floating children */
+  .clearfix;
   .border-radius(@baseBorderRadius);
   > li {
-    display: inline-block;
-    .ie7-inline-block();
+    //display: inline-block;
+    //.ie7-inline-block();
+    /* floating breadcrumb elements to add the search and location to it. */
+    display: block;
+    float: left;
     text-shadow: 0 1px 0 @white;
     > .divider {
       padding: 0 5px;

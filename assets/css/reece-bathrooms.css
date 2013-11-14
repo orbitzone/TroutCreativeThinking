@@ -1068,6 +1068,9 @@ RESPONSIVE OVERRIDES
     padding: 0 10px;
     vertical-align: middle;
   }
+  .brandPressReleases .brandPressDownloadLinkwrap {
+    width: 170px;
+  }
   .brandList {
     text-align: center;
   }

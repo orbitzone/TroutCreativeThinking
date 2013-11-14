@@ -635,6 +635,11 @@ RESPONSIVE OVERRIDES
   font-size: 20px;
   color: #333;
 }
+.brandPageSubHeader {
+  color: #e2001a;
+  display: block;
+  font-size: 15px;
+}
 .brandImageWrap {
   padding: 75px 0 60px;
   text-align: center;
@@ -778,10 +783,8 @@ RESPONSIVE OVERRIDES
 .videoThumbWrap {
   padding-bottom: 10px;
 }
-.videoThumbWrap .videoThumbSubBrand {
-  color: #e2001a;
+.videoThumbWrap .brandPageSubHeader {
   padding-top: 20px;
-  display: block;
 }
 .videoThumbWrap h4 {
   margin: 3px 0;
@@ -864,6 +867,13 @@ RESPONSIVE OVERRIDES
 .designerInfoWrap {
   border: solid 1px #dedede;
   margin-top: 30px;
+  background: #ffffff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 .designerInfoWrap .span8 {
   margin-left: 0;
@@ -973,7 +983,7 @@ RESPONSIVE OVERRIDES
 }
 /* Video  Tab*/
 .brandVideoTab .span6 {
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 .brandVideoTab iframe {
   max-width: 100%;
@@ -1038,6 +1048,7 @@ RESPONSIVE OVERRIDES
   .brandPressReleases .brandPressDownloadLink {
     display: table-cell;
     padding: 0 10px;
+    vertical-align: middle;
   }
   .brandList {
     text-align: center;

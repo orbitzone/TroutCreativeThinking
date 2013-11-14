@@ -83,14 +83,20 @@
 										<div class="row-fluid">
 											<div class="span6">
 												<iframe width="560" height="315" src="//www.youtube.com/embed/JnHXACIzeKk" frameborder="0" allowfullscreen></iframe>
+												<h4 class="brandPageHeader">Lorem Libero Vulputate </h4>
+												<span class="brandPageSubHeader">Watch Video</span>
 											</div>
 											<div class="span6">
 												<iframe width="560" height="315" src="//www.youtube.com/embed/231_3HKnAl4" frameborder="0" allowfullscreen></iframe>
+												<h4 class="brandPageHeader">Lorem Libero Vulputate </h4>
+												<span class="brandPageSubHeader">Watch Video</span>												
 											</div>											
 										</div>
 										<div class="row-fluid">
 											<div class="span6">
-												<iframe width="560" height="315" src="//www.youtube.com/embed/MeJRi35fh9Y" frameborder="0" allowfullscreen></iframe>
+												<iframe id="MeJRi35fh9Y" width="560" height="315" src="//www.youtube.com/embed/MeJRi35fh9Y" frameborder="0" allowfullscreen></iframe>
+												<h4 class="brandPageHeader">Lorem Libero Vulputate </h4>
+												<span class="brandPageSubHeader">Watch Video</span>												
 											</div>											
 										</div>										
 								</div><!-- /#video -->

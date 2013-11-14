@@ -129,7 +129,7 @@
 																			<i class="icon-play icon-large"></i>
 																		</span>
 																	</a>
-																<span class="videoThumbSubBrand">Pillars</span>
+																<span class="brandPageSubHeader">Pillars</span>
 																<h4 class="brandPageHeader">Lorem Libero Vulputate </h4>
 																<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
 															</div>
@@ -154,7 +154,7 @@
 																			<i class="icon-play icon-large"></i>
 																		</span>
 																	</a>
-																<span class="videoThumbSubBrand">Pillars</span>
+																<span class="brandPageSubHeader">Pillars</span>
 																<h4 class="brandPageHeader">Lorem Libero Vulputate </h4>
 																<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
 															</div>
@@ -179,7 +179,7 @@
 																			<i class="icon-play icon-large"></i>
 																		</span>
 																	</a>
-																<span class="videoThumbSubBrand">Pillars</span>
+																<span class="brandPageSubHeader">Pillars</span>
 																<h4 class="brandPageHeader">Lorem Libero Vulputate </h4>
 																<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
 															</div>

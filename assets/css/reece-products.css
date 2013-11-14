@@ -826,8 +826,9 @@ LocationDropDown
   background: #eaeaea;
   color: #333 !important;
 }
-.breadcrumb > li.locationAnSearch .locationDropDown.open {
-  border-color: rgba(0, 0, 0, 0.2);
+.breadcrumb > li.locationAnSearch .locationDropDown.open,
+.breadcrumb > li.locationAnSearch .locationDropDown .dropdown-menu {
+  border-color: #ccc;
 }
 .breadcrumb > li.locationAnSearch .locationDropDown input {
   width: 110px;

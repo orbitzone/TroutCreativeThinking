@@ -706,11 +706,12 @@ RESPONSIVE OVERRIDES
 }
 .brandList li.active {
   border-color: #e29da5;
-  background: #ffd9dd;
   z-index: 2;
 }
-.brandList li.active a {
+.brandList li.active a,
+.brandList li.active a:hover {
   color: #e2001a;
+  background: #ffd9dd;
 }
 #showBrandMenu {
   border: solid 1px #a2b8c1;

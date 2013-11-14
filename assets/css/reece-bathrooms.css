@@ -761,10 +761,10 @@ RESPONSIVE OVERRIDES
 .brandFeatureDesc {
   padding-right: 40px;
 }
-#aboutBrandCarousel .brandCarouselWrap {
+.aboutBrandCarouselWrap {
   padding: 0 40px;
 }
-#aboutBrandCarousel .carousel-indicators {
+.aboutBrandCarouselWrap .carousel-indicators {
   margin: 10px 40px;
   position: static;
   border-top: dotted 1px #a2b8c1;
@@ -772,12 +772,12 @@ RESPONSIVE OVERRIDES
   padding: 10px;
   text-align: center;
 }
-#aboutBrandCarousel .carousel-indicators li {
+.aboutBrandCarouselWrap .carousel-indicators li {
   float: none;
   display: inline-block;
   border: solid 1px #a2b8c1;
 }
-#aboutBrandCarousel .carousel-indicators li.active {
+.aboutBrandCarouselWrap .carousel-indicators li.active {
   background: #534545;
 }
 .videoThumbWrap {
@@ -793,6 +793,14 @@ RESPONSIVE OVERRIDES
   position: relative;
   cursor: pointer;
   display: block;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.videoThumb img {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
 }
 .videoThumb .playIconWrap {
   position: absolute;
@@ -1040,7 +1048,7 @@ RESPONSIVE OVERRIDES
   .brandFeatureDesc {
     border-right: solid 1px #acc0c8;
   }
-  .brandCarouselWrap {
+  .aboutBrandCarouselWrap {
     border-left: solid 1px #acc0c8;
   }
   .brandPressReleases .brandPressDate,

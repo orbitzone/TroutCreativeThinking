@@ -30,7 +30,7 @@
 						<li><a href="#">Brands</a> <span class="divider">/</span></li>
 						<li class="active page-branding text-brand">Laufen</li>
 						<li class="pull-right visible-desktop">
-							<div class="dropdown locationDropDown  pull-right">
+							<div class="dropdown locationDropDown">
 								<a class="dropdown-toggle" data-toggle="dropdown" href="#">
 									<i class="icon-map-marker icon">&nbsp;</i>
 									<span class="location">Collingwood 3066</span>
@@ -116,19 +116,18 @@
 										</div>
 
 										<div class="span6">
-
+										<div class="aboutBrandCarouselWrap">
 											<div id="aboutBrandCarousel" class="carousel slide">
 											  <!-- Carousel items -->
 												<div class="carousel-inner">
 													<div class="active item">
-														<div class="brandCarouselWrap">
 															<div class="videoThumbWrap">
-																	<a class="videoThumb" title="Watch Video" href="http://www.youtube.com/embed/JnHXACIzeKk?rel=0" target="_blank">
-																		<img src="http://www.reece.com.au/assets/pages/thumbnails/video-thumb-three-pillars.jpg" alt="Im her number one" />
-																		<span class="playIconWrap">
-																			<i class="icon-play icon-large"></i>
-																		</span>
-																	</a>
+																<a class="videoThumb" title="Watch Video" href="http://www.youtube.com/embed/JnHXACIzeKk?rel=0" target="_blank">
+																	<img src="http://www.reece.com.au/assets/pages/thumbnails/video-thumb-three-pillars.jpg" alt="Im her number one" />
+																	<span class="playIconWrap">
+																		<i class="icon-play icon-large"></i>
+																	</span>
+																</a>
 																<span class="brandPageSubHeader">Pillars</span>
 																<h4 class="brandPageHeader">Lorem Libero Vulputate </h4>
 																<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
@@ -143,17 +142,15 @@
 																	</span>
 																</a>
 															</div>
-														</div>	
 													</div>
 													<div class="item">
-														<div class="brandCarouselWrap">
 															<div class="videoThumbWrap">
-																	<a class="videoThumb" title="Watch Video" href="http://www.youtube.com/embed/231_3HKnAl4?rel=0" target="_blank">
-																		<img src="http://www.reece.com.au/assets/pages/thumbnails/video-thumb-overview.jpg" alt="Im her number one" />
-																		<span class="playIconWrap">
-																			<i class="icon-play icon-large"></i>
-																		</span>
-																	</a>
+																<a class="videoThumb" title="Watch Video" href="http://www.youtube.com/embed/231_3HKnAl4?rel=0" target="_blank">
+																	<img src="http://www.reece.com.au/assets/pages/thumbnails/video-thumb-overview.jpg" alt="Im her number one" />
+																	<span class="playIconWrap">
+																		<i class="icon-play icon-large"></i>
+																	</span>
+																</a>
 																<span class="brandPageSubHeader">Pillars</span>
 																<h4 class="brandPageHeader">Lorem Libero Vulputate </h4>
 																<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
@@ -167,11 +164,9 @@
 																		<small>Download pdf document</small>																		
 																	</span>
 																</a>
-															</div>
-														</div>													
+															</div>													
 													</div>
 													<div class="item">
-														<div class="brandCarouselWrap">
 															<div class="videoThumbWrap">
 																	<a class="videoThumb" title="Watch Video" href="http://www.youtube.com/embed/MeJRi35fh9Y?rel=0 " target="_blank">
 																		<img src="http://www.reece.com.au/assets/pages/thumbnails/video-thumb-designers2.jpg" alt="Im her number one" />
@@ -192,8 +187,7 @@
 																		<small>Download pdf document</small>																		
 																	</span>
 																</a>
-															</div>
-														</div>													
+															</div>												
 													</div>
 												</div>
 												<ol class="carousel-indicators">
@@ -201,6 +195,7 @@
 													<li data-target="#aboutBrandCarousel" data-slide-to="1"></li>
 													<li data-target="#aboutBrandCarousel" data-slide-to="2"></li>
 												</ol>  
+											</div>
 											</div>
 										</div>
 									</div>

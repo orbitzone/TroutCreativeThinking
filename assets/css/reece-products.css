@@ -705,6 +705,12 @@
 LocationDropDown
 ===================================	*/
 /* Search form */
+.tranparentButton {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
 .headerNavSearchForm {
   display: inline-block;
   margin: 0;
@@ -812,8 +818,15 @@ LocationDropDown
 .breadcrumb > li.locationAnSearch .locationDropDown a.dropdown-toggle {
   color: #333;
 }
+.breadcrumb > li.locationAnSearch .locationDropDown .dropdown-menu a:hover {
+  background: #eaeaea;
+  color: #333 !important;
+}
 .breadcrumb > li.locationAnSearch .locationDropDown.open {
   border: solid 1px rgba(0, 0, 0, 0.2);
+}
+.breadcrumb > li.locationAnSearch .locationDropDown input {
+  width: 110px;
 }
 .breadcrumb > li.locationAnSearch .headerNavSearchForm {
   display: inline-block;
@@ -822,4 +835,15 @@ LocationDropDown
   background: #ffffff;
   padding-left: 5px;
   width: 120px;
+  top: 0;
+  color: #333;
+}
+@media (max-width: 767px) {
+  .breadcrumb > li.locationAnSearch {
+    float: none;
+    display: block;
+    margin: 5px 0 0;
+    border-top: solid 1px #ddd;
+    padding-top: 5px;
+  }
 }

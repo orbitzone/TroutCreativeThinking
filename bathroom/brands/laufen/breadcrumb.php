@@ -29,7 +29,7 @@
 						<li><a href="#">Bathroom</a> <span class="divider">/</span></li>
 						<li><a href="#">Brands</a> <span class="divider">/</span></li>
 						<li class="active page-branding text-brand">Laufen</li>
-						<li class="locationAnSearch visible-desktop">
+						<li class="locationAnSearch">
 							<div class="dropdown locationDropDown">
 								<a class="dropdown-toggle" data-toggle="dropdown" href="#">
 									<i class="icon-map-marker icon">&nbsp;</i>
@@ -47,8 +47,11 @@
 								</div>
 							</div>
 							<form class="headerNavSearchForm">
-								<label for="breadcrumbSearchInput"><i class="icon-search icon">&nbsp;</i></label>
-								<input type="search" id="breadcrumbSearchInput" placeholder="Search">
+
+								<input type="search" placeholder="Search">
+								<button class="tranparentButton">
+									<i class="icon-search icon">&nbsp;</i>
+								</button>
 							</form>							
 						</li>						
 					</ul>
@@ -115,5 +118,10 @@
 		  	); 
 		  	include_once($serverBase."/includes/foot/scripts.php");
 		?>
+		<script type="text/javascript">
+			$('.locationDropDown input').click(function(e){
+				e.stopPropagation();
+			})
+		</script>
     </body>
 </html>

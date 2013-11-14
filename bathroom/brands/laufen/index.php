@@ -34,7 +34,7 @@
 				    <!-- CONTENT FOR DESKTOP -->
 				    <section class="brandPage">
 				    	<h2 class="brandImageWrap">
-				    		<img src="/assets/images/hz-brand/laufen-logo.png" alt="Laufen" />
+				    		<img src="/assets/images/hz-brand/laufen-logo.png" width="230px" alt="Laufen" />
 				    	</h2>
 				    	
 						<div id="productCarousel" class="carousel slide">

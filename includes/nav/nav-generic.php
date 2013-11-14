@@ -21,7 +21,9 @@
 							<span class="caret"></span>
 						</a>
 						<div class="dropdown-menu">
-						<input type="text" placeholder="New Location">
+							<form>
+								<input type="text" placeholder="New Location">
+							</form>
 							<ul>
 								<li><a href="#">Collingwood</a></li>
 								<li><a href="#">Richmond</a></li>

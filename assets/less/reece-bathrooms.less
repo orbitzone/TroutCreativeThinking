@@ -1263,9 +1263,54 @@ RESPONSIVE OVERRIDES
         font-size: 18px;
          .inspirationBannerText{
             margin-top: 5%
+        } 
+        .inspirationBannerCaption{
+            display: none;
+        }      
+    }
+    .inspirationBannerWrap{
+        .inspirationBannerImageWrap{
+            img{
+                width: 120%;
+                max-width: 120%;
+                margin: 0 -10%
+            }
+        }
+    }
+}
+@media (max-width:767px){
+    .inspirationBannerTextWrap{
+        font-size: 15px;
+         .inspirationBannerText{
+            margin-top: 20px
         }        
     }
-
+    .inspirationBannerWrap{
+        .inspirationBannerImageWrap{
+            img{
+                width: 140%;
+                max-width: 140%;
+                margin: 0 -20%
+            }
+        }
+    }    
+}
+@media (max-width:480px){
+    .inspirationBannerTextWrap{ 
+        font-size: 8px; 
+        .inspirationBannerViewLink{
+            font-size: 12px
+        }  
+    }
+    .inspirationBannerWrap{
+        .inspirationBannerImageWrap{
+            img{
+                width: 200%;
+                max-width: 200%;
+                margin: 0 -50%
+            }
+        }
+    }    
 }
 /* Colored Panels */
 .coloredPanelLink{

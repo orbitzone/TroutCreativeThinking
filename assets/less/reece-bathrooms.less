@@ -1178,6 +1178,17 @@ RESPONSIVE OVERRIDES
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'sofia_pro_semi_boldregular';
+    src: url('@{FontPath}/SofiaProSemiBold-webfont.eot');
+    src: url('@{FontPath}/SofiaProSemiBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('@{FontPath}/SofiaProSemiBold-webfont.woff') format('woff'),
+         url('@{FontPath}/SofiaProSemiBold-webfont.ttf') format('truetype'),
+         url('@{FontPath}/SofiaProSemiBold-webfont.svg#sofia_pro_semi_boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 @inspirationTeal :#6cc3bb;
 @inspirationLightPurple : #766baf;
@@ -1210,8 +1221,8 @@ RESPONSIVE OVERRIDES
         h2{
             font-size: 72px;
             text-decoration: underline;
-            font-family: sofia_pro_boldregular;
-            font-weight: normal;
+            font-family: sofia_pro_semi_boldregular;
+            font-weight: 200;
         }
         h3{
             color: @inspirationSalmon;
@@ -1263,15 +1274,26 @@ RESPONSIVE OVERRIDES
     right: @inspirationCaretWidth
 }
 
-.inspirationCaretBottom{
-    bottom: -2*@inspirationCaretWidth;
-}
+
 .inspirationCaretTop{
     top: -2*@inspirationCaretWidth;
 }
+.inspirationCaretRight{
+    right: -2*@inspirationCaretWidth;
+}
+.inspirationCaretBottom{
+    bottom: -2*@inspirationCaretWidth;
+}
+.inspirationCaretLeft{
+    left: -2*@inspirationCaretWidth;
+}
 
 .inspirationSocialPanelWrap{
+
     padding-bottom: 20px;
+    .inspirationCaretBottom,.inspirationCaretTop {
+        right: @inspirationCaretWidth
+    }    
     .socialPanel{
         margin-top: 20px;
         .socialPaneltext{
@@ -1350,28 +1372,28 @@ RESPONSIVE OVERRIDES
     background: @black;
     padding: 10px 20px;
     color: @white;
+    margin-top: 20px;
+    &:hover{
+        color: #aaa;
+    }
 }
-.panelTeal {
-    background: @inspirationTeal ;
-}
-.panelLightPurple{
-    background: @inspirationLightPurple
-}
-.panelLightPink{
-    background: @inspirationLightPink
-}
-.panelSalmon {
-    background: @inspirationSalmon
-}
+
 .inspirationPagePanels{
     text-align: center;
     font-family: sofia_pro_lightregular;
+    .inspirationCaretBottom,.inspirationCaretTop {
+        left: @inspirationCaretWidth
+    }
+    .inspirationCaretRight, .inspirationCaretLeft{
+        top: @inspirationCaretWidth
+    }
     .coloredPanel{
         margin-top: 20px;
-        color: @white;
+        color: @white;      
     }
     .coloredPanelText{
         padding: 20px;
+        position: relative;
     }
     .coloredPanelThumb{
         img{
@@ -1379,8 +1401,147 @@ RESPONSIVE OVERRIDES
         }
     }
 
+
 }
-.panelRTL [class*="span"]{
+.caretTop, .caretRight,.caretBottom, .caretLeft{
+    .coloredPanelThumb{
+        position: relative;
+        &:after{
+            content: '';
+            border: @inspirationCaretWidth solid transparent;
+            display: block;
+            height: 0; 
+            width: 0;
+            position: absolute; 
+            z-index: 2;
+        }
+    }
+}
+.caretTop,.caretBottom,{
+    .coloredPanelThumb:after{
+            left: @inspirationCaretWidth;
+    }
+}
+.caretTop{
+    .coloredPanelThumb:after{
+            top: 0;
+    }
+}
+.caretBottom,{
+    .coloredPanelThumb:after{
+            bottom: 0;
+    }
+}
+.caretRight, .caretLeft{
+    .coloredPanelThumb:after{
+            top: @inspirationCaretWidth;
+    }
+}
+.caretRight{
+    .coloredPanelThumb:after{
+            right: 0;
+    }
+}
+.caretLeft{
+    .coloredPanelThumb:after{
+            left: 0;
+    }
+}
+
+.panelTeal {
+    background: @inspirationTeal ;
+    &.caretTop{
+        .coloredPanelThumb:after{
+            border-top-color: @inspirationTeal 
+        }
+    }
+    &.caretRight{
+        .coloredPanelThumb:after{
+            border-right-color: @inspirationTeal 
+        }
+    }
+    &.caretBottom{
+        .coloredPanelThumb:after{
+            border-bottom-color: @inspirationTeal 
+        }
+    }
+    &.caretLeft{
+        .coloredPanelThumb:after{
+            border-left-color: @inspirationTeal 
+        }
+    }            
+}
+.panelLightPurple{
+    background: @inspirationLightPurple;
+    &.caretTop{
+        .coloredPanelThumb:after{
+            border-top-color: @inspirationLightPurple 
+        }
+    }
+    &.caretRight{
+        .coloredPanelThumb:after{
+            border-right-color: @inspirationLightPurple 
+        }
+    }
+    &.caretBottom{
+        .coloredPanelThumb:after{
+            border-bottom-color: @inspirationLightPurple 
+        }
+    }
+    &.caretLeft{
+        .coloredPanelThumb:after{
+            border-left-color: @inspirationLightPurple 
+        }
+    }  
+}
+.panelLightPink{
+    background: @inspirationLightPink;
+    &.caretTop{
+        .coloredPanelThumb:after{
+            border-top-color: @inspirationLightPink 
+        }
+    }
+    &.caretRight{
+        .coloredPanelThumb:after{
+            border-right-color: @inspirationLightPink 
+        }
+    }
+    &.caretBottom{
+        .coloredPanelThumb:after{
+            border-bottom-color: @inspirationLightPink 
+        }
+    }
+    &.caretLeft{
+        .coloredPanelThumb:after{
+            border-left-color: @inspirationLightPink 
+        }
+    }     
+}
+.panelSalmon {
+    background: @inspirationSalmon;
+    &.caretTop{
+        .coloredPanelThumb:after{
+            border-top-color: @inspirationSalmon 
+        }
+    }
+    &.caretRight{
+        .coloredPanelThumb:after{
+            border-right-color: @inspirationSalmon 
+        }
+    }
+    &.caretBottom{
+        .coloredPanelThumb:after{
+            border-bottom-color: @inspirationSalmon 
+        }
+    }
+    &.caretLeft{
+        .coloredPanelThumb:after{
+            border-left-color: @inspirationSalmon 
+        }
+    }     
+}
+
+.panelAlt [class*="span"]{
     float: right;
 }
 
@@ -1392,5 +1553,43 @@ RESPONSIVE OVERRIDES
                 margin: -25% 0
             }
         }    
-}    
+    }
+    .caretTop, .caretRight,.caretBottom, .caretLeft{
+        .coloredPanelThumb:after{
+                left: @inspirationCaretWidth;
+                bottom: 0;
+                top: auto;
+                right: auto;
+                border-color: transparent !important;
+        }        
+    }
+    .panelTeal{
+        &.caretTop, &.caretRight, &.caretBottom, &.caretLeft{
+            .coloredPanelThumb:after{
+                    border-bottom-color: @inspirationTeal  !important;
+            }        
+        }        
+    }
+    .panelLightPurple{
+        &.caretTop, &.caretRight, &.caretBottom, &.caretLeft{
+            .coloredPanelThumb:after{
+                    border-bottom-color: @inspirationLightPurple  !important;
+            }        
+        }        
+    }
+    .panelLightPink{
+        &.caretTop, &.caretRight, &.caretBottom, &.caretLeft{
+            .coloredPanelThumb:after{
+                    border-bottom-color: @inspirationLightPink !important;
+            }        
+        }        
+    } 
+    .panelSalmon {
+        &.caretTop, &.caretRight, &.caretBottom, &.caretLeft{
+            .coloredPanelThumb:after{
+                    border-bottom-color: @inspirationSalmon !important;
+            }        
+        }        
+    }            
+
 }

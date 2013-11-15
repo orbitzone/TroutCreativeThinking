@@ -51,8 +51,9 @@
 
 						<div class="row-fluid">
 							<div class="span4">
-								<div class="coloredPanel panelTeal portraitPanel">
+								<div class="coloredPanel panelTeal portraitPanel caretBottom">
 									<div class="coloredPanelThumb">
+										<span class="before"></span>
 										<img src="/assets/images/hz-inspiration/portrait.jpg" alt="Boho" />
 									</div>										
 									<div class="coloredPanelText">
@@ -67,10 +68,11 @@
 								</div>
 							</div>
 							<div class="span8">
-								<div class="coloredPanel panelLightPurple panelRTL">
+								<div class="coloredPanel panelLightPurple panelAlt caretLeft">
 									<div class="row-fluid">
 										<div class="span7">
 											<div class="coloredPanelThumb">
+												<span class="before"></span>
 												<img src="/assets/images/hz-inspiration/landscape1.jpg" alt="Boho" />
 											</div>
 										</div>									
@@ -87,10 +89,11 @@
 										</div>
 									</div>
 								</div>
-								<div class="coloredPanel panelLightPink">
+								<div class="coloredPanel panelLightPink caretRight">
 									<div class="row-fluid">
 										<div class="span7">
 											<div class="coloredPanelThumb">
+												<span class="before"></span>
 												<img src="/assets/images/hz-inspiration/landscape2.jpg" alt="Boho" />
 											</div>
 										</div>

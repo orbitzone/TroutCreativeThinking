@@ -1104,6 +1104,13 @@ RESPONSIVE OVERRIDES
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'sofia_pro_semi_boldregular';
+  src: url('../font/SofiaProSemiBold-webfont.eot');
+  src: url('../font/SofiaProSemiBold-webfont.eot?#iefix') format('embedded-opentype'), url('../font/SofiaProSemiBold-webfont.woff') format('woff'), url('../font/SofiaProSemiBold-webfont.ttf') format('truetype'), url('../font/SofiaProSemiBold-webfont.svg#sofia_pro_semi_boldregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 .inspirationBannerWrap {
   position: relative;
   overflow: hidden;
@@ -1130,8 +1137,8 @@ RESPONSIVE OVERRIDES
 .inspirationBannerWrap .inspirationBannerTextWrap h2 {
   font-size: 72px;
   text-decoration: underline;
-  font-family: sofia_pro_boldregular;
-  font-weight: normal;
+  font-family: sofia_pro_semi_boldregular;
+  font-weight: 200;
 }
 .inspirationBannerWrap .inspirationBannerTextWrap h3 {
   color: #ff655b;
@@ -1181,14 +1188,24 @@ RESPONSIVE OVERRIDES
 .inspirationCaretTop {
   right: 30px;
 }
-.inspirationCaretBottom {
-  bottom: -60px;
-}
 .inspirationCaretTop {
   top: -60px;
 }
+.inspirationCaretRight {
+  right: -60px;
+}
+.inspirationCaretBottom {
+  bottom: -60px;
+}
+.inspirationCaretLeft {
+  left: -60px;
+}
 .inspirationSocialPanelWrap {
   padding-bottom: 20px;
+}
+.inspirationSocialPanelWrap .inspirationCaretBottom,
+.inspirationSocialPanelWrap .inspirationCaretTop {
+  right: 30px;
 }
 .inspirationSocialPanelWrap .socialPanel {
   margin-top: 20px;
@@ -1263,22 +1280,22 @@ RESPONSIVE OVERRIDES
   background: #000000;
   padding: 10px 20px;
   color: #ffffff;
+  margin-top: 20px;
 }
-.panelTeal {
-  background: #6cc3bb;
-}
-.panelLightPurple {
-  background: #766baf;
-}
-.panelLightPink {
-  background: #f199c3;
-}
-.panelSalmon {
-  background: #ff655b;
+.coloredPanelLink:hover {
+  color: #aaa;
 }
 .inspirationPagePanels {
   text-align: center;
   font-family: sofia_pro_lightregular;
+}
+.inspirationPagePanels .inspirationCaretBottom,
+.inspirationPagePanels .inspirationCaretTop {
+  left: 30px;
+}
+.inspirationPagePanels .inspirationCaretRight,
+.inspirationPagePanels .inspirationCaretLeft {
+  top: 30px;
 }
 .inspirationPagePanels .coloredPanel {
   margin-top: 20px;
@@ -1286,11 +1303,110 @@ RESPONSIVE OVERRIDES
 }
 .inspirationPagePanels .coloredPanelText {
   padding: 20px;
+  position: relative;
 }
 .inspirationPagePanels .coloredPanelThumb img {
   width: 100%;
 }
-.panelRTL [class*="span"] {
+.caretTop .coloredPanelThumb,
+.caretRight .coloredPanelThumb,
+.caretBottom .coloredPanelThumb,
+.caretLeft .coloredPanelThumb {
+  position: relative;
+}
+.caretTop .coloredPanelThumb:after,
+.caretRight .coloredPanelThumb:after,
+.caretBottom .coloredPanelThumb:after,
+.caretLeft .coloredPanelThumb:after {
+  content: '';
+  border: 30px solid transparent;
+  display: block;
+  height: 0;
+  width: 0;
+  position: absolute;
+  z-index: 2;
+}
+.caretTop .coloredPanelThumb:after,
+.caretBottom .coloredPanelThumb:after {
+  left: 30px;
+}
+.caretTop .coloredPanelThumb:after {
+  top: 0;
+}
+.caretBottom .coloredPanelThumb:after {
+  bottom: 0;
+}
+.caretRight .coloredPanelThumb:after,
+.caretLeft .coloredPanelThumb:after {
+  top: 30px;
+}
+.caretRight .coloredPanelThumb:after {
+  right: 0;
+}
+.caretLeft .coloredPanelThumb:after {
+  left: 0;
+}
+.panelTeal {
+  background: #6cc3bb;
+}
+.panelTeal.caretTop .coloredPanelThumb:after {
+  border-top-color: #6cc3bb;
+}
+.panelTeal.caretRight .coloredPanelThumb:after {
+  border-right-color: #6cc3bb;
+}
+.panelTeal.caretBottom .coloredPanelThumb:after {
+  border-bottom-color: #6cc3bb;
+}
+.panelTeal.caretLeft .coloredPanelThumb:after {
+  border-left-color: #6cc3bb;
+}
+.panelLightPurple {
+  background: #766baf;
+}
+.panelLightPurple.caretTop .coloredPanelThumb:after {
+  border-top-color: #766baf;
+}
+.panelLightPurple.caretRight .coloredPanelThumb:after {
+  border-right-color: #766baf;
+}
+.panelLightPurple.caretBottom .coloredPanelThumb:after {
+  border-bottom-color: #766baf;
+}
+.panelLightPurple.caretLeft .coloredPanelThumb:after {
+  border-left-color: #766baf;
+}
+.panelLightPink {
+  background: #f199c3;
+}
+.panelLightPink.caretTop .coloredPanelThumb:after {
+  border-top-color: #f199c3;
+}
+.panelLightPink.caretRight .coloredPanelThumb:after {
+  border-right-color: #f199c3;
+}
+.panelLightPink.caretBottom .coloredPanelThumb:after {
+  border-bottom-color: #f199c3;
+}
+.panelLightPink.caretLeft .coloredPanelThumb:after {
+  border-left-color: #f199c3;
+}
+.panelSalmon {
+  background: #ff655b;
+}
+.panelSalmon.caretTop .coloredPanelThumb:after {
+  border-top-color: #ff655b;
+}
+.panelSalmon.caretRight .coloredPanelThumb:after {
+  border-right-color: #ff655b;
+}
+.panelSalmon.caretBottom .coloredPanelThumb:after {
+  border-bottom-color: #ff655b;
+}
+.panelSalmon.caretLeft .coloredPanelThumb:after {
+  border-left-color: #ff655b;
+}
+.panelAlt [class*="span"] {
   float: right;
 }
 @media (max-width: 767px) {
@@ -1299,5 +1415,39 @@ RESPONSIVE OVERRIDES
   }
   .inspirationPagePanels .portraitPanel .coloredPanelThumb img {
     margin: -25% 0;
+  }
+  .caretTop .coloredPanelThumb:after,
+  .caretRight .coloredPanelThumb:after,
+  .caretBottom .coloredPanelThumb:after,
+  .caretLeft .coloredPanelThumb:after {
+    left: 30px;
+    bottom: 0;
+    top: auto;
+    right: auto;
+    border-color: transparent !important;
+  }
+  .panelTeal.caretTop .coloredPanelThumb:after,
+  .panelTeal.caretRight .coloredPanelThumb:after,
+  .panelTeal.caretBottom .coloredPanelThumb:after,
+  .panelTeal.caretLeft .coloredPanelThumb:after {
+    border-bottom-color: #6cc3bb !important;
+  }
+  .panelLightPurple.caretTop .coloredPanelThumb:after,
+  .panelLightPurple.caretRight .coloredPanelThumb:after,
+  .panelLightPurple.caretBottom .coloredPanelThumb:after,
+  .panelLightPurple.caretLeft .coloredPanelThumb:after {
+    border-bottom-color: #766baf !important;
+  }
+  .panelLightPink.caretTop .coloredPanelThumb:after,
+  .panelLightPink.caretRight .coloredPanelThumb:after,
+  .panelLightPink.caretBottom .coloredPanelThumb:after,
+  .panelLightPink.caretLeft .coloredPanelThumb:after {
+    border-bottom-color: #f199c3 !important;
+  }
+  .panelSalmon.caretTop .coloredPanelThumb:after,
+  .panelSalmon.caretRight .coloredPanelThumb:after,
+  .panelSalmon.caretBottom .coloredPanelThumb:after,
+  .panelSalmon.caretLeft .coloredPanelThumb:after {
+    border-bottom-color: #ff655b !important;
   }
 }

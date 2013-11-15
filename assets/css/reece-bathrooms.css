@@ -1087,3 +1087,149 @@ RESPONSIVE OVERRIDES
     border-right: solid 1px #dedede;
   }
 }
+/* ========================================
+ INSPIRATION PAGES
+ ========================================== */
+.inspirationBannerWrap {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.inspirationBannerWrap .inspirationBannerImageWrap {
+  overflow: hidden;
+}
+.inspirationBannerWrap .inspirationBannerImageWrap img {
+  vertical-align: top;
+}
+.inspirationBannerWrap .inspirationBannerTextWrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: #ffffff;
+}
+.inspirationBannerWrap .inspirationBannerTextWrap .inspirationBannerText {
+  margin-top: 15%;
+}
+.inspirationBannerWrap .inspirationBannerTextWrap h2 {
+  font-size: 72px;
+  text-decoration: underline;
+}
+.inspirationBannerWrap .inspirationBannerTextWrap h3 {
+  color: #ff655b;
+  font-size: 48px;
+  font-weight: 200;
+}
+.inspirationBannerWrap .inspirationBannerTextWrap .inspirationBannerCaption {
+  font-size: 20px;
+  font-weight: 200;
+  max-width: 700px;
+  margin: 40px auto 0;
+  line-height: 1.3em;
+}
+.inspirationBannerWrap .inspirationBannerTextWrap .inspirationBannerViewLink {
+  margin-top: 30px;
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ffffff;
+  color: #333;
+  border: solid 2px #333;
+}
+.inspirationBathroomFiles {
+  background: #dbdadb;
+  text-align: center;
+}
+.inspirationBathroomFiles h2 {
+  background: #ff655b;
+  padding: 10px;
+  color: #ffffff;
+  text-decoration: underline;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+.inspirationCaretTop,
+.inspirationCaretRight,
+.inspirationCaretBottom,
+.inspirationCaretLeft,
+.inspirationCaretShadow {
+  border: 30px solid transparent;
+  display: block;
+  height: 0;
+  width: 0;
+  position: absolute;
+}
+.inspirationCaretBottom,
+.inspirationCaretTop {
+  right: 30px;
+}
+.inspirationCaretBottom {
+  bottom: -60px;
+}
+.inspirationCaretTop {
+  top: -60px;
+}
+.inspirationSocialPanelWrap {
+  padding-bottom: 20px;
+}
+.inspirationSocialPanelWrap .socialPanel {
+  margin-top: 20px;
+}
+.inspirationSocialPanelWrap .socialPanel .socialPaneltext {
+  border: solid 2px #ffffff;
+  padding: 20px;
+  min-height: 14em;
+  color: #8c8c8c;
+  position: relative;
+}
+.inspirationSocialPanelWrap .socialPanel .socialPaneltext .inspirationCaretBottom {
+  border-top-color: #ffffff;
+}
+.inspirationSocialPanelWrap .socialPanel .socialPaneltext .inspirationCaretBottom .inspirationCaretShadow {
+  border-top-color: #dbdadb;
+  position: absolute;
+  left: -30px;
+  top: -32px;
+}
+.inspirationSocialPanelWrap .socialPanel h3 {
+  font-weight: 200;
+  font-size: 38px;
+}
+.inspirationSocialPanelWrap .socialPanel h3 small {
+  display: block;
+}
+.inspirationSocialPanelWrap .socialPanel h3 .icon-large {
+  font-size: 20px;
+  display: block;
+  padding-bottom: 10px;
+}
+.inspirationSocialPanelWrap .socialPanel .socialPanelLink {
+  border: solid 2px #ffffff;
+  display: inline-block;
+  padding: 5px 20px;
+  text-transform: uppercase;
+  color: #8c8c8c;
+}
+.inspirationSocialPanelWrap .pinterestPanel .socialPaneltext {
+  border: none;
+  background: #ff655b;
+  text-align: left;
+  min-height: 1em !important;
+  color: #ffffff;
+}
+.inspirationSocialPanelWrap .pinterestPanel .socialPaneltext .inspirationCaretTop {
+  border-bottom-color: #ff655b;
+}
+.inspirationSocialPanelWrap .socialPanelThumb img {
+  width: 100%;
+}
+@media (max-width: 979px) {
+  .inspirationSocialPanelWrap .socialPanel .socialPaneltext {
+    min-height: 16em;
+  }
+}
+@media (max-width: 767px) {
+  .inspirationSocialPanelWrap .socialPanel .socialPaneltext {
+    min-height: 1em;
+  }
+}

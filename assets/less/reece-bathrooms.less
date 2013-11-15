@@ -1150,3 +1150,162 @@ RESPONSIVE OVERRIDES
     }
           
 }
+
+/* ========================================
+ INSPIRATION PAGES
+ ========================================== */
+@inspirationTeal :#6cc3bb;
+@inspirationLightPurple : #766baf;
+@inspirationLightPink : #f199c3;
+@inspirationSalmon : #ff655b;
+@inspirationSocialBG : #dbdadb;
+@inspirationSocialColor : #8c8c8c;
+@inspirationCaretWidth :30px;
+.inspirationBannerWrap{
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    .inspirationBannerImageWrap{
+        overflow: hidden;
+        img{
+            vertical-align: top;
+        }
+    }
+    .inspirationBannerTextWrap{
+        position: absolute;
+        top:0;
+        right:0;
+        bottom:0;
+        left: 0;
+        color:@white;
+        .inspirationBannerText{
+            margin-top: 15%;
+        }        
+        h2{
+            font-size: 72px;
+            text-decoration: underline;
+        }
+        h3{
+            color: @inspirationSalmon;
+            font-size: 48px;
+            font-weight: 200;
+        }
+        .inspirationBannerCaption{
+            font-size: 20px;
+            font-weight: 200;
+            max-width: 700px;
+            margin: 40px auto 0;
+            line-height: 1.3em;
+        }
+        .inspirationBannerViewLink{
+            margin-top: 30px;
+            display: inline-block;
+            padding: 10px 20px;
+            background:@white;
+            color: #333;
+            border:solid 2px #333;
+
+        }
+
+    }
+}
+.inspirationBathroomFiles{
+    background: @inspirationSocialBG;
+    text-align: center;
+    h2{
+        background: @inspirationSalmon ;
+        padding: 10px;
+        color: @white;
+        text-decoration: underline;
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+
+}
+.inspirationCaretTop, .inspirationCaretRight, .inspirationCaretBottom, .inspirationCaretLeft,.inspirationCaretShadow{
+    border: @inspirationCaretWidth solid transparent;
+    display: block;
+    height: 0; 
+    width: 0;
+    position: absolute;
+}
+.inspirationCaretBottom,.inspirationCaretTop {
+    right: @inspirationCaretWidth
+}
+
+.inspirationCaretBottom{
+    bottom: -2*@inspirationCaretWidth;
+}
+.inspirationCaretTop{
+    top: -2*@inspirationCaretWidth;
+}
+
+.inspirationSocialPanelWrap{
+    padding-bottom: 20px;
+    .socialPanel{
+        margin-top: 20px;
+        .socialPaneltext{
+            border: solid 2px @white;
+            padding: 20px;
+            min-height: 14em;
+            color: @inspirationSocialColor;
+            position: relative;
+            .inspirationCaretBottom{
+                border-top-color: @white;
+                .inspirationCaretShadow{
+                    border-top-color: @inspirationSocialBG;
+                    position: absolute;
+                    left: -@inspirationCaretWidth;
+                    top: -@inspirationCaretWidth - 2;
+                }
+            }
+        }
+        h3{
+            font-weight: 200;
+            font-size: 38px;
+            small{
+                display: block;
+            }
+            .icon-large{
+                font-size: 20px;
+                display: block;
+                padding-bottom: 10px
+            }
+        }
+        .socialPanelLink{
+            border:solid 2px @white;
+            display: inline-block;
+            padding: 5px 20px;
+            text-transform: uppercase;
+            color: @inspirationSocialColor;
+        }
+    }
+    .pinterestPanel .socialPaneltext{
+        border:none;
+        background: @inspirationSalmon;
+        text-align: left;
+        min-height: 1em !important;
+        color: @white;
+        .inspirationCaretTop{
+            border-bottom-color: @inspirationSalmon;
+        }
+    }
+    .socialPanelThumb{
+        img{
+            width: 100%
+        }
+    }
+}
+@media (max-width:979px){
+    .inspirationSocialPanelWrap .socialPanel .socialPaneltext{
+        min-height: 16em;
+    }
+}
+@media (max-width:767px){
+    .inspirationSocialPanelWrap .socialPanel .socialPaneltext{
+        min-height: 1em;
+    }
+}
+
+
+

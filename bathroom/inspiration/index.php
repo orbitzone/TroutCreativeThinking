@@ -118,9 +118,12 @@
 				</div>
 			</div>
 			<section class="inspirationBathroomFiles">
+			<header class="header">
 				<h2>
 		    		The Bathroom Files
-		    	</h2>
+		    	</h2>				
+			</header>
+
 		    	<div class="content-container">
 					<div class="inner-wrapper">
 						<section class="inspirationPage">

@@ -1152,7 +1152,7 @@ RESPONSIVE OVERRIDES
 }
 
 /* ========================================
- INSPIRATION PAGES
+ INSPIRATION PAGE
  ========================================== */
 @FontPath:    "../font";
 
@@ -1197,6 +1197,9 @@ RESPONSIVE OVERRIDES
 @inspirationSocialBG : #dbdadb;
 @inspirationSocialColor : #8c8c8c;
 @inspirationCaretWidth :30px;
+
+/* Inspiration Banner */
+
 .inspirationBannerWrap{
     position: relative;
     overflow: hidden;
@@ -1220,7 +1223,8 @@ RESPONSIVE OVERRIDES
         }        
         h2{
             font-size: 72px;
-            text-decoration: underline;
+            border-bottom: solid .07em;
+            display: inline-block;
             font-family: sofia_pro_semi_boldregular;
             font-weight: 200;
         }
@@ -1249,125 +1253,9 @@ RESPONSIVE OVERRIDES
 
     }
 }
-.inspirationBathroomFiles{
-    background: @inspirationSocialBG;
-    text-align: center;
-    font-family: sofia_pro_lightregular;
-    h2{
-        background: @inspirationSalmon ;
-        padding: 10px;
-        color: @white;
-        text-decoration: underline;
-        font-size: 30px;
-        margin-bottom: 0;
-    }
 
-}
-.inspirationCaretTop, .inspirationCaretRight, .inspirationCaretBottom, .inspirationCaretLeft,.inspirationCaretShadow{
-    border: @inspirationCaretWidth solid transparent;
-    display: block;
-    height: 0; 
-    width: 0;
-    position: absolute;
-}
-.inspirationCaretBottom,.inspirationCaretTop {
-    right: @inspirationCaretWidth
-}
-
-
-.inspirationCaretTop{
-    top: -2*@inspirationCaretWidth;
-}
-.inspirationCaretRight{
-    right: -2*@inspirationCaretWidth;
-}
-.inspirationCaretBottom{
-    bottom: -2*@inspirationCaretWidth;
-}
-.inspirationCaretLeft{
-    left: -2*@inspirationCaretWidth;
-}
-
-.inspirationSocialPanelWrap{
-
-    padding-bottom: 20px;
-    .inspirationCaretBottom,.inspirationCaretTop {
-        right: @inspirationCaretWidth
-    }    
-    .socialPanel{
-        margin-top: 20px;
-        .socialPaneltext{
-            border: solid 2px @white;
-            padding: 20px;
-            min-height: 14em;
-            color: @inspirationSocialColor;
-            position: relative;
-            .inspirationCaretBottom{
-                border-top-color: @white;
-                .inspirationCaretShadow{
-                    border-top-color: @inspirationSocialBG;
-                    position: absolute;
-                    left: -@inspirationCaretWidth;
-                    top: -@inspirationCaretWidth - 2;
-                }
-            }
-        }
-        h3{
-            font-weight: 200;
-            font-size: 38px;
-            small{
-                display: block;
-            }
-            .icon-large{
-                font-size: 20px;
-                display: block;
-                padding-bottom: 10px
-            }
-        }
-        .socialPanelLink{
-            border:solid 2px @white;
-            display: inline-block;
-            padding: 5px 20px;
-            text-transform: uppercase;
-            color: @inspirationSocialColor;
-        }
-    }
-    .pinterestPanel .socialPaneltext{
-        border:none;
-        background: @inspirationSalmon;
-        text-align: left;
-        min-height: 1em !important;
-        color: @white;
-        h3{
-            margin: 0 0 0 5px;
-            .icon-large{
-                padding: 0
-            }
-        }
-        .inspirationCaretTop{
-            border-bottom-color: @inspirationSalmon;
-        }
-    }
-    .socialPanelThumb{
-        img{
-            width: 100%
-        }
-    }
-}
-@media (max-width:979px){
-    .inspirationSocialPanelWrap .socialPanel .socialPaneltext{
-        min-height: 16em;
-    }
-}
-@media (max-width:767px){
-    .inspirationSocialPanelWrap .socialPanel .socialPaneltext{
-        min-height: 1em;
-    }
-}
-
-/*************************/
+/* Colored Panels */
 .coloredPanelLink{
-
     display: inline-block;
     background: @black;
     padding: 10px 20px;
@@ -1381,12 +1269,7 @@ RESPONSIVE OVERRIDES
 .inspirationPagePanels{
     text-align: center;
     font-family: sofia_pro_lightregular;
-    .inspirationCaretBottom,.inspirationCaretTop {
-        left: @inspirationCaretWidth
-    }
-    .inspirationCaretRight, .inspirationCaretLeft{
-        top: @inspirationCaretWidth
-    }
+    padding-bottom: 20px;
     .coloredPanel{
         margin-top: 20px;
         color: @white;      
@@ -1400,9 +1283,8 @@ RESPONSIVE OVERRIDES
             width: 100%
         }
     }
-
-
 }
+
 .caretTop, .caretRight,.caretBottom, .caretLeft{
     .coloredPanelThumb{
         position: relative;
@@ -1593,3 +1475,126 @@ RESPONSIVE OVERRIDES
     }            
 
 }
+
+/* Social Panels */
+.inspirationBathroomFiles{
+    background: @inspirationSocialBG;
+    text-align: center;
+    font-family: sofia_pro_lightregular;
+    .header{
+        background: @inspirationSalmon ;
+        padding: 12px;
+
+        h2{
+        color: @white;
+        font-size: 30px;
+        margin: 0;
+        border-bottom: solid .07em;
+        display: inline-block;
+        padding: 2px;            
+        }
+    }
+
+}
+.inspirationCaretTop, .inspirationCaretRight, .inspirationCaretBottom, .inspirationCaretLeft,.inspirationCaretShadow{
+    border: @inspirationCaretWidth solid transparent;
+    display: block;
+    height: 0; 
+    width: 0;
+    position: absolute;
+}
+.inspirationCaretBottom,.inspirationCaretTop {
+    right: @inspirationCaretWidth
+}
+
+
+.inspirationCaretTop{
+    top: -2*@inspirationCaretWidth;
+}
+.inspirationCaretRight{
+    right: -2*@inspirationCaretWidth;
+}
+.inspirationCaretBottom{
+    bottom: -2*@inspirationCaretWidth;
+}
+.inspirationCaretLeft{
+    left: -2*@inspirationCaretWidth;
+}
+
+.inspirationSocialPanelWrap{
+
+    padding-bottom: 20px;
+    .inspirationCaretBottom,.inspirationCaretTop {
+        right: @inspirationCaretWidth
+    }    
+    .socialPanel{
+        margin-top: 20px;
+        .socialPaneltext{
+            border: solid 2px @white;
+            padding: 20px;
+            min-height: 14em;
+            color: @inspirationSocialColor;
+            position: relative;
+            .inspirationCaretBottom{
+                border-top-color: @white;
+                .inspirationCaretShadow{
+                    border-top-color: @inspirationSocialBG;
+                    position: absolute;
+                    left: -@inspirationCaretWidth;
+                    top: -@inspirationCaretWidth - 2;
+                }
+            }
+        }
+        h3{
+            font-weight: 200;
+            font-size: 38px;
+            small{
+                display: block;
+            }
+            .icon-large{
+                font-size: 20px;
+                display: block;
+                padding-bottom: 10px
+            }
+        }
+        .socialPanelLink{
+            border:solid 2px @white;
+            display: inline-block;
+            padding: 5px 20px;
+            text-transform: uppercase;
+            color: @inspirationSocialColor;
+        }
+    }
+    .pinterestPanel .socialPaneltext{
+        border:none;
+        background: @inspirationSalmon;
+        text-align: left;
+        min-height: 1em !important;
+        color: @white;
+        h3{
+            margin: 0 0 0 5px;
+            .icon-large{
+                padding: 0
+            }
+        }
+        .inspirationCaretTop{
+            border-bottom-color: @inspirationSalmon;
+        }
+    }
+    .socialPanelThumb{
+        img{
+            width: 100%
+        }
+    }
+}
+@media (max-width:979px){
+    .inspirationSocialPanelWrap .socialPanel .socialPaneltext{
+        min-height: 16em;
+    }
+}
+@media (max-width:767px){
+    .inspirationSocialPanelWrap .socialPanel .socialPaneltext{
+        min-height: 1em;
+    }
+}
+

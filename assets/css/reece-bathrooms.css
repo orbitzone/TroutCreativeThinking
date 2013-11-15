@@ -1123,7 +1123,7 @@ RESPONSIVE OVERRIDES
 .inspirationBannerWrap .inspirationBannerImageWrap img {
   vertical-align: top;
 }
-.inspirationBannerWrap .inspirationBannerTextWrap {
+.inspirationBannerTextWrap {
   position: absolute;
   top: 0;
   right: 0;
@@ -1131,36 +1131,50 @@ RESPONSIVE OVERRIDES
   left: 0;
   color: #ffffff;
   font-family: sofia_pro_lightregular;
+  font-size: 20px;
 }
-.inspirationBannerWrap .inspirationBannerTextWrap .inspirationBannerText {
-  margin-top: 15%;
+.inspirationBannerTextWrap .inspirationBannerText {
+  margin-top: 13%;
 }
-.inspirationBannerWrap .inspirationBannerTextWrap h2 {
-  font-size: 72px;
+.inspirationBannerTextWrap h2 {
+  font-size: 3.5em;
   border-bottom: solid .07em;
   display: inline-block;
   font-family: sofia_pro_semi_boldregular;
   font-weight: 200;
 }
-.inspirationBannerWrap .inspirationBannerTextWrap h3 {
+.inspirationBannerTextWrap h3 {
   color: #ff655b;
-  font-size: 48px;
+  font-size: 2.5em;
   font-weight: 200;
 }
-.inspirationBannerWrap .inspirationBannerTextWrap .inspirationBannerCaption {
-  font-size: 20px;
+.inspirationBannerTextWrap .inspirationBannerCaption {
+  font-size: 1em;
   font-weight: 200;
   max-width: 700px;
-  margin: 40px auto 0;
+  margin: 2em auto 0;
   line-height: 1.3em;
 }
-.inspirationBannerWrap .inspirationBannerTextWrap .inspirationBannerViewLink {
-  margin-top: 30px;
+.inspirationBannerTextWrap .inspirationBannerViewLink {
+  margin-top: 1.5em;
   display: inline-block;
-  padding: 10px 20px;
+  padding: .5em 1em;
   background: #ffffff;
   color: #333;
   border: solid 2px #333;
+}
+@media (max-width: 1200px) {
+  .inspirationBannerTextWrap .inspirationBannerText {
+    margin-top: 8%;
+  }
+}
+@media (max-width: 979px) {
+  .inspirationBannerTextWrap {
+    font-size: 18px;
+  }
+  .inspirationBannerTextWrap .inspirationBannerText {
+    margin-top: 5%;
+  }
 }
 /* Colored Panels */
 .coloredPanelLink {

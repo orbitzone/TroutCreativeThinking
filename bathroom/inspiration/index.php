@@ -37,23 +37,85 @@
 									A collection of amazing bathrooms that demonstrate what you can achieve with a little imagination and quality Reece products.
 								</p>
 								<div>
-									<a class="inspirationBannerViewLink">VIEW THE GALLERY</a>
+									<a class="inspirationBannerViewLink" href="#">VIEW THE GALLERY</a>
 								</div>
 							</div>
 						</div>
 					</div>				
 				</div>
 			</section>
-		    <div class="content-container">
+			<div class="content-container">
 				<div class="inner-wrapper">
-				    <section class="inspirationPage">
-				    
-				    </section>
+					<section class="inspirationPagePanels">
 
+
+						<div class="row-fluid">
+							<div class="span4">
+								<div class="coloredPanel panelTeal portraitPanel">
+									<div class="coloredPanelThumb">
+										<img src="/assets/images/hz-inspiration/portrait.jpg" alt="Boho" />
+									</div>										
+									<div class="coloredPanelText">
+										<h3>Designer Looks</h3>
+										<p>
+											Take a journey as we partner with worlds best designers and editor to bring you innovative bathroom ideas from the best in the industry.
+										</p>
+										<div>
+											<a class="coloredPanelLink" href="#">VIEW THE GALLERY</a>
+										</div>										
+									</div>
+								</div>
+							</div>
+							<div class="span8">
+								<div class="coloredPanel panelLightPurple panelRTL">
+									<div class="row-fluid">
+										<div class="span7">
+											<div class="coloredPanelThumb">
+												<img src="/assets/images/hz-inspiration/landscape1.jpg" alt="Boho" />
+											</div>
+										</div>									
+										<div class="span5">
+											<div class="coloredPanelText">
+												<h3>Bathroom Trends</h3>
+												<p>
+													Here are 12 trends set to make a big impact in the coming seasons.
+												</p>
+												<div>
+													<a class="coloredPanelLink" href="#">EXPLORE TRENDS!</a>
+												</div>												
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="coloredPanel panelLightPink">
+									<div class="row-fluid">
+										<div class="span7">
+											<div class="coloredPanelThumb">
+												<img src="/assets/images/hz-inspiration/landscape2.jpg" alt="Boho" />
+											</div>
+										</div>
+										<div class="span5">
+											<div class="coloredPanelText">
+												<h3>
+													Reece at SiD
+												</h3>
+												<p>
+													See the winning entries and highlights from The Reece Bathroom Innovation Award 2013.
+												</p>
+												<div>
+													<a class="coloredPanelLink" href="#">SEE HIGHLIGHTS</a>
+												</div>												
+											</div>
+										</div>										
+									</div>
+								</div>								
+							</div>
+						</div>
+					</section>
 				</div>
-		    </div>
-		    <section class="inspirationBathroomFiles">
-		    	<h2>
+			</div>
+			<section class="inspirationBathroomFiles">
+				<h2>
 		    		The Bathroom Files
 		    	</h2>
 		    	<div class="content-container">
@@ -86,7 +148,9 @@
 										<div class="socialPaneltext">
 											<span class="inspirationCaretTop">
 											</span>
-											<i class="icon-pinterest icon-large"></i>
+											<h3>
+												<i class="icon-pinterest icon-large"></i>
+											</h3>
 										</div>
 									</div>
 									<div class="socialPanel">

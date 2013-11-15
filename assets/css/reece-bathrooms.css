@@ -1217,6 +1217,12 @@ RESPONSIVE OVERRIDES
   min-height: 1em !important;
   color: #ffffff;
 }
+.inspirationSocialPanelWrap .pinterestPanel .socialPaneltext h3 {
+  margin: 0 0 0 5px;
+}
+.inspirationSocialPanelWrap .pinterestPanel .socialPaneltext h3 .icon-large {
+  padding: 0;
+}
 .inspirationSocialPanelWrap .pinterestPanel .socialPaneltext .inspirationCaretTop {
   border-bottom-color: #ff655b;
 }
@@ -1231,5 +1237,48 @@ RESPONSIVE OVERRIDES
 @media (max-width: 767px) {
   .inspirationSocialPanelWrap .socialPanel .socialPaneltext {
     min-height: 1em;
+  }
+}
+/*************************/
+.coloredPanelLink {
+  display: inline-block;
+  background: #000000;
+  padding: 10px 20px;
+  color: #ffffff;
+}
+.panelTeal {
+  background: #6cc3bb;
+}
+.panelLightPurple {
+  background: #766baf;
+}
+.panelLightPink {
+  background: #f199c3;
+}
+.panelSalmon {
+  background: #ff655b;
+}
+.inspirationPagePanels {
+  text-align: center;
+}
+.inspirationPagePanels .coloredPanel {
+  margin-top: 20px;
+  color: #ffffff;
+}
+.inspirationPagePanels .coloredPanelText {
+  padding: 20px;
+}
+.inspirationPagePanels .coloredPanelThumb img {
+  width: 100%;
+}
+.panelRTL [class*="span"] {
+  float: right;
+}
+@media (max-width: 767px) {
+  .inspirationPagePanels .portraitPanel .coloredPanelThumb {
+    overflow: hidden;
+  }
+  .inspirationPagePanels .portraitPanel .coloredPanelThumb img {
+    margin: -25% 0;
   }
 }

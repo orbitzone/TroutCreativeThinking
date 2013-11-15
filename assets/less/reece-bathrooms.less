@@ -1286,6 +1286,12 @@ RESPONSIVE OVERRIDES
         text-align: left;
         min-height: 1em !important;
         color: @white;
+        h3{
+            margin: 0 0 0 5px;
+            .icon-large{
+                padding: 0
+            }
+        }
         .inspirationCaretTop{
             border-bottom-color: @inspirationSalmon;
         }
@@ -1307,5 +1313,52 @@ RESPONSIVE OVERRIDES
     }
 }
 
+/*************************/
+.coloredPanelLink{
+    display: inline-block;
+    background: @black;
+    padding: 10px 20px;
+    color: @white;
+}
+.panelTeal {
+    background: @inspirationTeal ;
+}
+.panelLightPurple{
+    background: @inspirationLightPurple
+}
+.panelLightPink{
+    background: @inspirationLightPink
+}
+.panelSalmon {
+    background: @inspirationSalmon
+}
+.inspirationPagePanels{
+    text-align: center;
+    .coloredPanel{
+        margin-top: 20px;
+        color: @white;
+    }
+    .coloredPanelText{
+        padding: 20px;
+    }
+    .coloredPanelThumb{
+        img{
+            width: 100%
+        }
+    }
 
+}
+.panelRTL [class*="span"]{
+    float: right;
+}
 
+@media (max-width:767px){
+    .inspirationPagePanels{
+        .portraitPanel .coloredPanelThumb{
+            overflow: hidden;
+            img{
+                margin: -25% 0
+            }
+        }    
+}    
+}

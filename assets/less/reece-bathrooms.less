@@ -1154,6 +1154,31 @@ RESPONSIVE OVERRIDES
 /* ========================================
  INSPIRATION PAGES
  ========================================== */
+@FontPath:    "../font";
+
+@font-face {
+    font-family: 'sofia_pro_boldregular';
+    src: url('@{FontPath}/SofiaProBold-webfont.eot');
+    src: url('@{FontPath}/SofiaProBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('@{FontPath}/SofiaProBold-webfont.woff') format('woff'),
+         url('@{FontPath}/SofiaProBold-webfont.ttf') format('truetype'),
+         url('@{FontPath}/SofiaProBold-webfont.svg#sofia_pro_boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'sofia_pro_lightregular';
+    src: url('@{FontPath}/SofiaProLight-webfont.eot');
+    src: url('@{FontPath}/SofiaProLight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('@{FontPath}/SofiaProLight-webfont.woff') format('woff'),
+         url('@{FontPath}/SofiaProLight-webfont.ttf') format('truetype'),
+         url('@{FontPath}/SofiaProLight-webfont.svg#sofia_pro_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 @inspirationTeal :#6cc3bb;
 @inspirationLightPurple : #766baf;
 @inspirationLightPink : #f199c3;
@@ -1178,12 +1203,15 @@ RESPONSIVE OVERRIDES
         bottom:0;
         left: 0;
         color:@white;
+        font-family: sofia_pro_lightregular;
         .inspirationBannerText{
             margin-top: 15%;
         }        
         h2{
             font-size: 72px;
             text-decoration: underline;
+            font-family: sofia_pro_boldregular;
+            font-weight: normal;
         }
         h3{
             color: @inspirationSalmon;
@@ -1192,6 +1220,7 @@ RESPONSIVE OVERRIDES
         }
         .inspirationBannerCaption{
             font-size: 20px;
+
             font-weight: 200;
             max-width: 700px;
             margin: 40px auto 0;
@@ -1212,6 +1241,7 @@ RESPONSIVE OVERRIDES
 .inspirationBathroomFiles{
     background: @inspirationSocialBG;
     text-align: center;
+    font-family: sofia_pro_lightregular;
     h2{
         background: @inspirationSalmon ;
         padding: 10px;
@@ -1315,6 +1345,7 @@ RESPONSIVE OVERRIDES
 
 /*************************/
 .coloredPanelLink{
+
     display: inline-block;
     background: @black;
     padding: 10px 20px;
@@ -1334,6 +1365,7 @@ RESPONSIVE OVERRIDES
 }
 .inspirationPagePanels{
     text-align: center;
+    font-family: sofia_pro_lightregular;
     .coloredPanel{
         margin-top: 20px;
         color: @white;

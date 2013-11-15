@@ -1090,6 +1090,20 @@ RESPONSIVE OVERRIDES
 /* ========================================
  INSPIRATION PAGES
  ========================================== */
+@font-face {
+  font-family: 'sofia_pro_boldregular';
+  src: url('../font/SofiaProBold-webfont.eot');
+  src: url('../font/SofiaProBold-webfont.eot?#iefix') format('embedded-opentype'), url('../font/SofiaProBold-webfont.woff') format('woff'), url('../font/SofiaProBold-webfont.ttf') format('truetype'), url('../font/SofiaProBold-webfont.svg#sofia_pro_boldregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'sofia_pro_lightregular';
+  src: url('../font/SofiaProLight-webfont.eot');
+  src: url('../font/SofiaProLight-webfont.eot?#iefix') format('embedded-opentype'), url('../font/SofiaProLight-webfont.woff') format('woff'), url('../font/SofiaProLight-webfont.ttf') format('truetype'), url('../font/SofiaProLight-webfont.svg#sofia_pro_lightregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 .inspirationBannerWrap {
   position: relative;
   overflow: hidden;
@@ -1108,6 +1122,7 @@ RESPONSIVE OVERRIDES
   bottom: 0;
   left: 0;
   color: #ffffff;
+  font-family: sofia_pro_lightregular;
 }
 .inspirationBannerWrap .inspirationBannerTextWrap .inspirationBannerText {
   margin-top: 15%;
@@ -1115,6 +1130,8 @@ RESPONSIVE OVERRIDES
 .inspirationBannerWrap .inspirationBannerTextWrap h2 {
   font-size: 72px;
   text-decoration: underline;
+  font-family: sofia_pro_boldregular;
+  font-weight: normal;
 }
 .inspirationBannerWrap .inspirationBannerTextWrap h3 {
   color: #ff655b;
@@ -1139,6 +1156,7 @@ RESPONSIVE OVERRIDES
 .inspirationBathroomFiles {
   background: #dbdadb;
   text-align: center;
+  font-family: sofia_pro_lightregular;
 }
 .inspirationBathroomFiles h2 {
   background: #ff655b;
@@ -1260,6 +1278,7 @@ RESPONSIVE OVERRIDES
 }
 .inspirationPagePanels {
   text-align: center;
+  font-family: sofia_pro_lightregular;
 }
 .inspirationPagePanels .coloredPanel {
   margin-top: 20px;

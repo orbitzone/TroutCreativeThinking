@@ -1222,13 +1222,18 @@ RESPONSIVE OVERRIDES
     font-size: 20px;
     .inspirationBannerText{
         margin-top: 13%;
-    }        
+    }
+    a,a:hover{
+        color:@white;
+        text-decoration: none;
+    }    
     h2{
         font-size: 3.5em;
         border-bottom: solid .07em;
         display: inline-block;
         font-family: sofia_pro_semi_boldregular;
         font-weight: 200;
+
     }
     h3{
         color: @inspirationSalmon;
@@ -1282,7 +1287,7 @@ RESPONSIVE OVERRIDES
     .inspirationBannerTextWrap{
         font-size: 15px;
          .inspirationBannerText{
-            margin-top: 20px
+            margin-top: 30px
         }        
     }
     .inspirationBannerWrap{
@@ -1297,9 +1302,26 @@ RESPONSIVE OVERRIDES
 }
 @media (max-width:480px){
     .inspirationBannerTextWrap{ 
-        font-size: 8px; 
+        font-size: 11px; 
         .inspirationBannerViewLink{
             font-size: 12px
+        }  
+    }
+    .inspirationBannerWrap{
+        .inspirationBannerImageWrap{
+            img{
+                width: 160%;
+                max-width: 160%;
+                margin: 0 -30%
+            }
+        }
+    }    
+}
+@media (max-width:400px){
+    .inspirationBannerTextWrap{ 
+        font-size: 8px; 
+        .inspirationBannerViewLink{
+            font-size: 11px
         }  
     }
     .inspirationBannerWrap{
@@ -1330,7 +1352,14 @@ RESPONSIVE OVERRIDES
     padding-bottom: 20px;
     .coloredPanel{
         margin-top: 20px;
-        color: @white;      
+        color: @white;
+        h3{
+            font-weight: normal;
+        }
+        a,a:hover{
+            color:@white;
+            text-decoration: none;
+        }
     }
     .coloredPanelText{
         padding: 20px;

@@ -30,7 +30,7 @@
 					<div class="content-container">
 						<div class="inner-wrapper">
 							<div class="inspirationBannerText">
-								<h2>Bathroom Gallery</h2>
+								<h2><a href = "#">Bathroom Gallery</a></h2>
 								<h3>Trends, ideas and stories to inspire</h3>
 
 								<p class="inspirationBannerCaption">
@@ -57,7 +57,7 @@
 										<img src="/assets/images/hz-inspiration/portrait.jpg" alt="Boho" />
 									</div>										
 									<div class="coloredPanelText">
-										<h3>Designer Looks</h3>
+										<h3><a href = "#">Designer Looks</a></h3>
 										<p>
 											Take a journey as we partner with worlds best designers and editor to bring you innovative bathroom ideas from the best in the industry.
 										</p>
@@ -78,7 +78,7 @@
 										</div>									
 										<div class="span5">
 											<div class="coloredPanelText">
-												<h3>Bathroom Trends</h3>
+												<h3><a href = "#">Bathroom Trends</a></h3>
 												<p>
 													Here are 12 trends set to make a big impact in the coming seasons.
 												</p>
@@ -100,7 +100,7 @@
 										<div class="span5">
 											<div class="coloredPanelText">
 												<h3>
-													Reece at SiD
+													<a href = "#">Reece at SiD</a>
 												</h3>
 												<p>
 													See the winning entries and highlights from The Reece Bathroom Innovation Award 2013.

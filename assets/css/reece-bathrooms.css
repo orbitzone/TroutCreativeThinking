@@ -1136,6 +1136,11 @@ RESPONSIVE OVERRIDES
 .inspirationBannerTextWrap .inspirationBannerText {
   margin-top: 13%;
 }
+.inspirationBannerTextWrap a,
+.inspirationBannerTextWrap a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
 .inspirationBannerTextWrap h2 {
   font-size: 3.5em;
   border-bottom: solid .07em;
@@ -1189,7 +1194,7 @@ RESPONSIVE OVERRIDES
     font-size: 15px;
   }
   .inspirationBannerTextWrap .inspirationBannerText {
-    margin-top: 20px;
+    margin-top: 30px;
   }
   .inspirationBannerWrap .inspirationBannerImageWrap img {
     width: 140%;
@@ -1199,10 +1204,23 @@ RESPONSIVE OVERRIDES
 }
 @media (max-width: 480px) {
   .inspirationBannerTextWrap {
-    font-size: 8px;
+    font-size: 11px;
   }
   .inspirationBannerTextWrap .inspirationBannerViewLink {
     font-size: 12px;
+  }
+  .inspirationBannerWrap .inspirationBannerImageWrap img {
+    width: 160%;
+    max-width: 160%;
+    margin: 0 -30%;
+  }
+}
+@media (max-width: 400px) {
+  .inspirationBannerTextWrap {
+    font-size: 8px;
+  }
+  .inspirationBannerTextWrap .inspirationBannerViewLink {
+    font-size: 11px;
   }
   .inspirationBannerWrap .inspirationBannerImageWrap img {
     width: 200%;
@@ -1229,6 +1247,14 @@ RESPONSIVE OVERRIDES
 .inspirationPagePanels .coloredPanel {
   margin-top: 20px;
   color: #ffffff;
+}
+.inspirationPagePanels .coloredPanel h3 {
+  font-weight: normal;
+}
+.inspirationPagePanels .coloredPanel a,
+.inspirationPagePanels .coloredPanel a:hover {
+  color: #ffffff;
+  text-decoration: none;
 }
 .inspirationPagePanels .coloredPanelText {
   padding: 20px;

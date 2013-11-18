@@ -68,6 +68,7 @@
 													<div class="span4">
 														<div class="designerInfoThumb">
 															<img src="/assets/images/hz-brand/stefano.jpg" alt="Stefano" />
+															<a class="viewRangeLink" href="#">View this Range</a>
 														</div>													
 													</div>
 													<div class="span8">
@@ -79,11 +80,12 @@
 																</p>
 															<div class="brandProdRangeLogoWrap">
 																<img class="brandImg" src="/assets/images/hz-brand/rangeLogo.jpg" alt="One ILBAGNOALESSI" />
-																<a class="viewRangeLink" href="#">View this Range</a>
+																
 															</div>
 																<p>
 																	The works of award winning designer, Stefano Giovannoni, tell stories that fascinate and enthral with their beautiful narrative qualities.
 																</p>
+																<a class="viewRangeLink" href="#">View this Range</a>
 															</div>
 														</div>									    		
 													</div>														

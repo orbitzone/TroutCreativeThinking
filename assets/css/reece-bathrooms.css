@@ -1047,8 +1047,14 @@ RESPONSIVE OVERRIDES
   .brandContentWrap .brandContent {
     padding: 50px 20px 20px;
   }
+  .designerInfoWrap {
+    margin: 0 -21px;
+  }
   .designerInfoWrap .designerInfoContent {
     padding-top: 0;
+  }
+  .designerInfoWrap .designerInfoThumb {
+    border-right: none;
   }
   .brandProdRangeList .productImage {
     width: auto;

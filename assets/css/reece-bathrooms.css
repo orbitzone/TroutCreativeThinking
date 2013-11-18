@@ -1250,6 +1250,7 @@ RESPONSIVE OVERRIDES
 }
 .inspirationPagePanels .coloredPanel h3 {
   font-weight: normal;
+  font-size: 32px;
 }
 .inspirationPagePanels .coloredPanel a,
 .inspirationPagePanels .coloredPanel a:hover {
@@ -1263,16 +1264,48 @@ RESPONSIVE OVERRIDES
 .inspirationPagePanels .coloredPanelThumb img {
   width: 100%;
 }
+.landscapePanel h3 {
+  margin-top: 20px;
+}
+@media (min-width: 1200px) {
+  .landscapePanel h3 {
+    margin-top: 40px;
+  }
+  .inspirationPagePanels .coloredPanel h3 {
+    font-size: 38px;
+  }
+}
+@media (max-width: 979px) {
+  .landscapePanel h3 {
+    margin: 10px -10px;
+  }
+  .inspirationPagePanels .coloredPanel h3 {
+    font-size: 25px;
+  }
+  .coloredPanelLink {
+    padding: 5px 15px;
+    font-size: .9em;
+    margin-top: 10px;
+  }
+}
 .caretTop .coloredPanelThumb,
 .caretRight .coloredPanelThumb,
 .caretBottom .coloredPanelThumb,
-.caretLeft .coloredPanelThumb {
+.caretLeft .coloredPanelThumb,
+.caretTop .socialPanelThumb,
+.caretRight .socialPanelThumb,
+.caretBottom .socialPanelThumb,
+.caretLeft .socialPanelThumb {
   position: relative;
 }
-.caretTop .coloredPanelThumb:after,
-.caretRight .coloredPanelThumb:after,
-.caretBottom .coloredPanelThumb:after,
-.caretLeft .coloredPanelThumb:after {
+.caretTop .coloredPanelThumb:before,
+.caretRight .coloredPanelThumb:before,
+.caretBottom .coloredPanelThumb:before,
+.caretLeft .coloredPanelThumb:before,
+.caretTop .socialPanelThumb:before,
+.caretRight .socialPanelThumb:before,
+.caretBottom .socialPanelThumb:before,
+.caretLeft .socialPanelThumb:before {
   content: '';
   border: 30px solid transparent;
   display: block;
@@ -1281,84 +1314,122 @@ RESPONSIVE OVERRIDES
   position: absolute;
   z-index: 2;
 }
-.caretTop .coloredPanelThumb:after,
-.caretBottom .coloredPanelThumb:after {
+.caretTop .socialPanelThumb:after,
+.caretBottom .socialPanelThumb:after {
+  content: '';
+  border: 30px solid transparent;
+  display: block;
+  height: 0;
+  width: 0;
+  position: absolute;
+  z-index: 3;
+}
+.caretTop .coloredPanelThumb:before,
+.caretBottom .coloredPanelThumb:before {
   left: 30px;
 }
-.caretTop .coloredPanelThumb:after {
+.caretTop .socialPanelThumb:before,
+.caretBottom .socialPanelThumb:before,
+.caretTop .socialPanelThumb:after,
+.caretBottom .socialPanelThumb:after {
+  right: 30px;
+}
+.caretTop .coloredPanelThumb:before,
+.caretTop .socialPanelThumb:before {
   top: 0;
 }
-.caretBottom .coloredPanelThumb:after {
+.caretTop .socialPanelThumb:after {
+  top: -2px;
+  border-top-color: #dbdadb;
+}
+.caretBottom .coloredPanelThumb:before,
+.caretBottom .socialPanelThumb:before {
   bottom: 0;
 }
-.caretRight .coloredPanelThumb:after,
-.caretLeft .coloredPanelThumb:after {
+.caretBottom .socialPanelThumb:after {
+  bottom: -2px;
+  border-bottom-color: #dbdadb;
+}
+.caretBottom.pinterestPanel .socialPanelThumb:before {
+  border-bottom-color: #ff655b;
+}
+.caretBottom.pinterestPanel .socialPanelThumb:after {
+  display: none;
+}
+.caretRight .coloredPanelThumb:before,
+.caretLeft .coloredPanelThumb:before {
   top: 30px;
 }
-.caretRight .coloredPanelThumb:after {
+.caretRight .coloredPanelThumb:before {
   right: 0;
 }
-.caretLeft .coloredPanelThumb:after {
+.caretLeft .coloredPanelThumb:before {
   left: 0;
+}
+.caretTop .socialPanelThumb:before {
+  border-top-color: #fff;
+}
+.caretBottom .socialPanelThumb:before {
+  border-bottom-color: #fff;
 }
 .panelTeal {
   background: #6cc3bb;
 }
-.panelTeal.caretTop .coloredPanelThumb:after {
+.panelTeal.caretTop .coloredPanelThumb:before {
   border-top-color: #6cc3bb;
 }
-.panelTeal.caretRight .coloredPanelThumb:after {
+.panelTeal.caretRight .coloredPanelThumb:before {
   border-right-color: #6cc3bb;
 }
-.panelTeal.caretBottom .coloredPanelThumb:after {
+.panelTeal.caretBottom .coloredPanelThumb:before {
   border-bottom-color: #6cc3bb;
 }
-.panelTeal.caretLeft .coloredPanelThumb:after {
+.panelTeal.caretLeft .coloredPanelThumb:before {
   border-left-color: #6cc3bb;
 }
 .panelLightPurple {
   background: #766baf;
 }
-.panelLightPurple.caretTop .coloredPanelThumb:after {
+.panelLightPurple.caretTop .coloredPanelThumb:before {
   border-top-color: #766baf;
 }
-.panelLightPurple.caretRight .coloredPanelThumb:after {
+.panelLightPurple.caretRight .coloredPanelThumb:before {
   border-right-color: #766baf;
 }
-.panelLightPurple.caretBottom .coloredPanelThumb:after {
+.panelLightPurple.caretBottom .coloredPanelThumb:before {
   border-bottom-color: #766baf;
 }
-.panelLightPurple.caretLeft .coloredPanelThumb:after {
+.panelLightPurple.caretLeft .coloredPanelThumb:before {
   border-left-color: #766baf;
 }
 .panelLightPink {
   background: #f199c3;
 }
-.panelLightPink.caretTop .coloredPanelThumb:after {
+.panelLightPink.caretTop .coloredPanelThumb:before {
   border-top-color: #f199c3;
 }
-.panelLightPink.caretRight .coloredPanelThumb:after {
+.panelLightPink.caretRight .coloredPanelThumb:before {
   border-right-color: #f199c3;
 }
-.panelLightPink.caretBottom .coloredPanelThumb:after {
+.panelLightPink.caretBottom .coloredPanelThumb:before {
   border-bottom-color: #f199c3;
 }
-.panelLightPink.caretLeft .coloredPanelThumb:after {
+.panelLightPink.caretLeft .coloredPanelThumb:before {
   border-left-color: #f199c3;
 }
 .panelSalmon {
   background: #ff655b;
 }
-.panelSalmon.caretTop .coloredPanelThumb:after {
+.panelSalmon.caretTop .coloredPanelThumb:before {
   border-top-color: #ff655b;
 }
-.panelSalmon.caretRight .coloredPanelThumb:after {
+.panelSalmon.caretRight .coloredPanelThumb:before {
   border-right-color: #ff655b;
 }
-.panelSalmon.caretBottom .coloredPanelThumb:after {
+.panelSalmon.caretBottom .coloredPanelThumb:before {
   border-bottom-color: #ff655b;
 }
-.panelSalmon.caretLeft .coloredPanelThumb:after {
+.panelSalmon.caretLeft .coloredPanelThumb:before {
   border-left-color: #ff655b;
 }
 .panelAlt [class*="span"] {
@@ -1371,38 +1442,38 @@ RESPONSIVE OVERRIDES
   .inspirationPagePanels .portraitPanel .coloredPanelThumb img {
     margin: -25% 0;
   }
-  .caretTop .coloredPanelThumb:after,
-  .caretRight .coloredPanelThumb:after,
-  .caretBottom .coloredPanelThumb:after,
-  .caretLeft .coloredPanelThumb:after {
+  .caretTop .coloredPanelThumb:before,
+  .caretRight .coloredPanelThumb:before,
+  .caretBottom .coloredPanelThumb:before,
+  .caretLeft .coloredPanelThumb:before {
     left: 30px;
     bottom: 0;
     top: auto;
     right: auto;
     border-color: transparent !important;
   }
-  .panelTeal.caretTop .coloredPanelThumb:after,
-  .panelTeal.caretRight .coloredPanelThumb:after,
-  .panelTeal.caretBottom .coloredPanelThumb:after,
-  .panelTeal.caretLeft .coloredPanelThumb:after {
+  .panelTeal.caretTop .coloredPanelThumb:before,
+  .panelTeal.caretRight .coloredPanelThumb:before,
+  .panelTeal.caretBottom .coloredPanelThumb:before,
+  .panelTeal.caretLeft .coloredPanelThumb:before {
     border-bottom-color: #6cc3bb !important;
   }
-  .panelLightPurple.caretTop .coloredPanelThumb:after,
-  .panelLightPurple.caretRight .coloredPanelThumb:after,
-  .panelLightPurple.caretBottom .coloredPanelThumb:after,
-  .panelLightPurple.caretLeft .coloredPanelThumb:after {
+  .panelLightPurple.caretTop .coloredPanelThumb:before,
+  .panelLightPurple.caretRight .coloredPanelThumb:before,
+  .panelLightPurple.caretBottom .coloredPanelThumb:before,
+  .panelLightPurple.caretLeft .coloredPanelThumb:before {
     border-bottom-color: #766baf !important;
   }
-  .panelLightPink.caretTop .coloredPanelThumb:after,
-  .panelLightPink.caretRight .coloredPanelThumb:after,
-  .panelLightPink.caretBottom .coloredPanelThumb:after,
-  .panelLightPink.caretLeft .coloredPanelThumb:after {
+  .panelLightPink.caretTop .coloredPanelThumb:before,
+  .panelLightPink.caretRight .coloredPanelThumb:before,
+  .panelLightPink.caretBottom .coloredPanelThumb:before,
+  .panelLightPink.caretLeft .coloredPanelThumb:before {
     border-bottom-color: #f199c3 !important;
   }
-  .panelSalmon.caretTop .coloredPanelThumb:after,
-  .panelSalmon.caretRight .coloredPanelThumb:after,
-  .panelSalmon.caretBottom .coloredPanelThumb:after,
-  .panelSalmon.caretLeft .coloredPanelThumb:after {
+  .panelSalmon.caretTop .coloredPanelThumb:before,
+  .panelSalmon.caretRight .coloredPanelThumb:before,
+  .panelSalmon.caretBottom .coloredPanelThumb:before,
+  .panelSalmon.caretLeft .coloredPanelThumb:before {
     border-bottom-color: #ff655b !important;
   }
 }
@@ -1426,39 +1497,8 @@ RESPONSIVE OVERRIDES
   font-weight: normal;
   font-family: sofia_pro_semi_boldregular;
 }
-.inspirationCaretTop,
-.inspirationCaretRight,
-.inspirationCaretBottom,
-.inspirationCaretLeft,
-.inspirationCaretShadow {
-  border: 30px solid transparent;
-  display: block;
-  height: 0;
-  width: 0;
-  position: absolute;
-}
-.inspirationCaretBottom,
-.inspirationCaretTop {
-  right: 30px;
-}
-.inspirationCaretTop {
-  top: -60px;
-}
-.inspirationCaretRight {
-  right: -60px;
-}
-.inspirationCaretBottom {
-  bottom: -60px;
-}
-.inspirationCaretLeft {
-  left: -60px;
-}
 .inspirationSocialPanelWrap {
   padding-bottom: 20px;
-}
-.inspirationSocialPanelWrap .inspirationCaretBottom,
-.inspirationSocialPanelWrap .inspirationCaretTop {
-  right: 30px;
 }
 .inspirationSocialPanelWrap .socialPanel {
   margin-top: 20px;
@@ -1469,15 +1509,6 @@ RESPONSIVE OVERRIDES
   min-height: 14em;
   color: #8c8c8c;
   position: relative;
-}
-.inspirationSocialPanelWrap .socialPanel .socialPaneltext .inspirationCaretBottom {
-  border-top-color: #ffffff;
-}
-.inspirationSocialPanelWrap .socialPanel .socialPaneltext .inspirationCaretBottom .inspirationCaretShadow {
-  border-top-color: #dbdadb;
-  position: absolute;
-  left: -30px;
-  top: -32px;
 }
 .inspirationSocialPanelWrap .socialPanel h3 {
   font-weight: 200;
@@ -1510,9 +1541,6 @@ RESPONSIVE OVERRIDES
 }
 .inspirationSocialPanelWrap .pinterestPanel .socialPaneltext h3 .icon-large {
   padding: 0;
-}
-.inspirationSocialPanelWrap .pinterestPanel .socialPaneltext .inspirationCaretTop {
-  border-bottom-color: #ff655b;
 }
 .inspirationSocialPanelWrap .socialPanelThumb img {
   width: 100%;

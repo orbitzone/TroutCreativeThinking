@@ -68,7 +68,7 @@
 								</div>
 							</div>
 							<div class="span8">
-								<div class="coloredPanel panelLightPurple panelAlt caretLeft">
+								<div class="coloredPanel panelLightPurple landscapePanel panelAlt caretLeft">
 									<div class="row-fluid">
 										<div class="span7">
 											<div class="coloredPanelThumb">
@@ -89,7 +89,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="coloredPanel panelLightPink caretRight">
+								<div class="coloredPanel panelLightPink landscapePanel caretRight">
 									<div class="row-fluid">
 										<div class="span7">
 											<div class="coloredPanelThumb">
@@ -129,7 +129,7 @@
 						<section class="inspirationPage">
 							<div class="row-fluid inspirationSocialPanelWrap">
 								<div class="span4">
-									<div class="socialPanel">
+									<div class="socialPanel caretTop">
 										<div class="socialPaneltext">
 											<h3>
 												<i class="icon-facebook icon-large"></i>
@@ -137,9 +137,6 @@
 											<p>
 												Another finalist in the #Bathroom #Innovation Award - a #toilet that will only flush when the seat is down. This aims to reduce the spread of infection and bacteria. It would also make sure the toilet seat is always down - looking at you, boys!
 											</p>
-											<span class="inspirationCaretBottom">
-												<span class="inspirationCaretShadow"></span>
-											</span>
 										</div>
 										<div class="socialPanelThumb">
 											<img src="/assets/images/hz-inspiration/FBImage.jpg" alt="FB" />
@@ -147,13 +144,11 @@
 									</div>
 								</div>
 								<div class="span4">
-									<div class="socialPanel pinterestPanel">
+									<div class="socialPanel pinterestPanel caretBottom">
 										<div class="socialPanelThumb">
 											<img src="/assets/images/hz-inspiration/PinterestImage.jpg" alt="Pinterest" />
 										</div>
 										<div class="socialPaneltext">
-											<span class="inspirationCaretTop">
-											</span>
 											<h3>
 												<i class="icon-pinterest icon-large"></i>
 											</h3>
@@ -176,17 +171,14 @@
 									</div>
 								</div>
 								<div class="span4">
-									<div class="socialPanel">
+									<div class="socialPanel caretTop">
 										<div class="socialPaneltext">
 											<h3>
 												Watch
 											</h3>
 											<p>
 												Recreating the luxury experience of a high-end hotel bathroom within the home. Watch our video with Shayna Blaze to find out more.
-											</p>
-											<span class="inspirationCaretBottom">
-												<span class="inspirationCaretShadow"></span>
-											</span>											
+											</p>									
 										</div>
 										<div class="socialPanelThumb">
 											<a href="#">

@@ -1355,6 +1355,7 @@ RESPONSIVE OVERRIDES
         color: @white;
         h3{
             font-weight: normal;
+            font-size: 32px;
         }
         a,a:hover{
             color:@white;
@@ -1371,11 +1372,40 @@ RESPONSIVE OVERRIDES
         }
     }
 }
-
+.landscapePanel{
+        h3{
+            margin-top: 20px
+        }
+    } 
+@media (min-width:1200px){
+    .landscapePanel{
+        h3{
+            margin-top: 40px
+        }
+    } 
+    .inspirationPagePanels .coloredPanel h3{
+        font-size: 38px;
+    }
+}
+@media (max-width:979px){
+    .landscapePanel{
+        h3{
+            margin: 10px -10px ;
+        }
+    }
+    .inspirationPagePanels .coloredPanel h3{
+        font-size: 25px;
+    }
+    .coloredPanelLink{
+        padding: 5px 15px;
+        font-size: .9em;
+        margin-top: 10px;
+    }  
+}
 .caretTop, .caretRight,.caretBottom, .caretLeft{
-    .coloredPanelThumb{
+    .coloredPanelThumb,.socialPanelThumb{
         position: relative;
-        &:after{
+        &:before{
             content: '';
             border: @inspirationCaretWidth solid transparent;
             display: block;
@@ -1386,56 +1416,94 @@ RESPONSIVE OVERRIDES
         }
     }
 }
-.caretTop,.caretBottom,{
-    .coloredPanelThumb:after{
-            left: @inspirationCaretWidth;
+.caretTop,.caretBottom{
+    .socialPanelThumb:after{
+            content: '';
+            border: @inspirationCaretWidth solid transparent;
+            display: block;
+            height: 0; 
+            width: 0;
+            position: absolute; 
+            z-index: 3
+    }
+}
+.caretTop,.caretBottom{
+    .coloredPanelThumb:before{
+        left: @inspirationCaretWidth;
+    }
+    .socialPanelThumb:before,.socialPanelThumb:after{
+        right: @inspirationCaretWidth;
     }
 }
 .caretTop{
-    .coloredPanelThumb:after{
+    .coloredPanelThumb:before,.socialPanelThumb:before{
             top: 0;
+    }
+    .socialPanelThumb:after{
+        top: -2px;
+        border-top-color: @inspirationSocialBG;
+
     }
 }
 .caretBottom,{
-    .coloredPanelThumb:after{
+    .coloredPanelThumb:before,.socialPanelThumb:before{
             bottom: 0;
+    }
+    .socialPanelThumb:after{
+        bottom: -2px;
+        border-bottom-color: @inspirationSocialBG;
+    }
+    &.pinterestPanel .socialPanelThumb{
+        &:before{
+            border-bottom-color: @inspirationSalmon;
+        }
+        &:after{
+            display: none;
+        }        
     }
 }
 .caretRight, .caretLeft{
-    .coloredPanelThumb:after{
-            top: @inspirationCaretWidth;
+    .coloredPanelThumb:before{
+        top: @inspirationCaretWidth;
     }
 }
 .caretRight{
-    .coloredPanelThumb:after{
-            right: 0;
+    .coloredPanelThumb:before{
+        right: 0;
     }
 }
 .caretLeft{
-    .coloredPanelThumb:after{
-            left: 0;
+    .coloredPanelThumb:before{
+        left: 0;
     }
+}
+
+.caretTop .socialPanelThumb:before{
+    border-top-color:#fff;
+}
+.caretBottom .socialPanelThumb:before{
+    border-bottom-color:#fff;
 }
 
 .panelTeal {
     background: @inspirationTeal ;
     &.caretTop{
-        .coloredPanelThumb:after{
+        .coloredPanelThumb:before{
             border-top-color: @inspirationTeal 
         }
     }
     &.caretRight{
-        .coloredPanelThumb:after{
+        .coloredPanelThumb:before{
             border-right-color: @inspirationTeal 
         }
     }
     &.caretBottom{
-        .coloredPanelThumb:after{
+        .coloredPanelThumb:before{
             border-bottom-color: @inspirationTeal 
         }
     }
     &.caretLeft{
-        .coloredPanelThumb:after{
+        .coloredPanelThumb:before{
             border-left-color: @inspirationTeal 
         }
     }            
@@ -1443,22 +1511,22 @@ RESPONSIVE OVERRIDES
 .panelLightPurple{
     background: @inspirationLightPurple;
     &.caretTop{
-        .coloredPanelThumb:after{
+        .coloredPanelThumb:before{
             border-top-color: @inspirationLightPurple 
         }
     }
     &.caretRight{
-        .coloredPanelThumb:after{
+        .coloredPanelThumb:before{
             border-right-color: @inspirationLightPurple 
         }
     }
     &.caretBottom{
-        .coloredPanelThumb:after{
+        .coloredPanelThumb:before{
             border-bottom-color: @inspirationLightPurple 
         }
     }
     &.caretLeft{
-        .coloredPanelThumb:after{
+        .coloredPanelThumb:before{
             border-left-color: @inspirationLightPurple 
         }
     }  
@@ -1466,22 +1534,22 @@ RESPONSIVE OVERRIDES
 .panelLightPink{
     background: @inspirationLightPink;
     &.caretTop{
-        .coloredPanelThumb:after{
+        .coloredPanelThumb:before{
             border-top-color: @inspirationLightPink 
         }
     }
     &.caretRight{
-        .coloredPanelThumb:after{
+        .coloredPanelThumb:before{
             border-right-color: @inspirationLightPink 
         }
     }
     &.caretBottom{
-        .coloredPanelThumb:after{
+        .coloredPanelThumb:before{
             border-bottom-color: @inspirationLightPink 
         }
     }
     &.caretLeft{
-        .coloredPanelThumb:after{
+        .coloredPanelThumb:before{
             border-left-color: @inspirationLightPink 
         }
     }     
@@ -1489,22 +1557,22 @@ RESPONSIVE OVERRIDES
 .panelSalmon {
     background: @inspirationSalmon;
     &.caretTop{
-        .coloredPanelThumb:after{
+        .coloredPanelThumb:before{
             border-top-color: @inspirationSalmon 
         }
     }
     &.caretRight{
-        .coloredPanelThumb:after{
+        .coloredPanelThumb:before{
             border-right-color: @inspirationSalmon 
         }
     }
     &.caretBottom{
-        .coloredPanelThumb:after{
+        .coloredPanelThumb:before{
             border-bottom-color: @inspirationSalmon 
         }
     }
     &.caretLeft{
-        .coloredPanelThumb:after{
+        .coloredPanelThumb:before{
             border-left-color: @inspirationSalmon 
         }
     }     
@@ -1524,7 +1592,7 @@ RESPONSIVE OVERRIDES
         }    
     }
     .caretTop, .caretRight,.caretBottom, .caretLeft{
-        .coloredPanelThumb:after{
+        .coloredPanelThumb:before{
                 left: @inspirationCaretWidth;
                 bottom: 0;
                 top: auto;
@@ -1534,28 +1602,28 @@ RESPONSIVE OVERRIDES
     }
     .panelTeal{
         &.caretTop, &.caretRight, &.caretBottom, &.caretLeft{
-            .coloredPanelThumb:after{
+            .coloredPanelThumb:before{
                     border-bottom-color: @inspirationTeal  !important;
             }        
         }        
     }
     .panelLightPurple{
         &.caretTop, &.caretRight, &.caretBottom, &.caretLeft{
-            .coloredPanelThumb:after{
+            .coloredPanelThumb:before{
                     border-bottom-color: @inspirationLightPurple  !important;
             }        
         }        
     }
     .panelLightPink{
         &.caretTop, &.caretRight, &.caretBottom, &.caretLeft{
-            .coloredPanelThumb:after{
+            .coloredPanelThumb:before{
                     border-bottom-color: @inspirationLightPink !important;
             }        
         }        
     } 
     .panelSalmon {
         &.caretTop, &.caretRight, &.caretBottom, &.caretLeft{
-            .coloredPanelThumb:after{
+            .coloredPanelThumb:before{
                     border-bottom-color: @inspirationSalmon !important;
             }        
         }        
@@ -1585,37 +1653,11 @@ RESPONSIVE OVERRIDES
     }
 
 }
-.inspirationCaretTop, .inspirationCaretRight, .inspirationCaretBottom, .inspirationCaretLeft,.inspirationCaretShadow{
-    border: @inspirationCaretWidth solid transparent;
-    display: block;
-    height: 0; 
-    width: 0;
-    position: absolute;
-}
-.inspirationCaretBottom,.inspirationCaretTop {
-    right: @inspirationCaretWidth
-}
 
-
-.inspirationCaretTop{
-    top: -2*@inspirationCaretWidth;
-}
-.inspirationCaretRight{
-    right: -2*@inspirationCaretWidth;
-}
-.inspirationCaretBottom{
-    bottom: -2*@inspirationCaretWidth;
-}
-.inspirationCaretLeft{
-    left: -2*@inspirationCaretWidth;
-}
 
 .inspirationSocialPanelWrap{
 
-    padding-bottom: 20px;
-    .inspirationCaretBottom,.inspirationCaretTop {
-        right: @inspirationCaretWidth
-    }    
+    padding-bottom: 20px;   
     .socialPanel{
         margin-top: 20px;
         .socialPaneltext{
@@ -1624,15 +1666,6 @@ RESPONSIVE OVERRIDES
             min-height: 14em;
             color: @inspirationSocialColor;
             position: relative;
-            .inspirationCaretBottom{
-                border-top-color: @white;
-                .inspirationCaretShadow{
-                    border-top-color: @inspirationSocialBG;
-                    position: absolute;
-                    left: -@inspirationCaretWidth;
-                    top: -@inspirationCaretWidth - 2;
-                }
-            }
         }
         h3{
             font-weight: 200;
@@ -1665,9 +1698,6 @@ RESPONSIVE OVERRIDES
             .icon-large{
                 padding: 0
             }
-        }
-        .inspirationCaretTop{
-            border-bottom-color: @inspirationSalmon;
         }
     }
     .socialPanelThumb{

@@ -988,14 +988,6 @@ RESPONSIVE OVERRIDES
 .brandProdRangeList li + li {
   margin-top: 30px;
 }
-.brandProdRangeList .productImage {
-  width: 400px;
-  float: left;
-}
-.brandProdRangeList .brandProdRangeLogoWrap,
-.brandProdRangeList .brandProdRangeDesc {
-  margin-left: 400px;
-}
 .brandProdRangeList .brandProdRangeDesc {
   padding: 20px;
   color: #ffffff;
@@ -1014,14 +1006,6 @@ RESPONSIVE OVERRIDES
 @media (max-width: 979px) {
   .brandProdRangeLogoWrap .viewRangeLink {
     float: none;
-  }
-  .brandProdRangeList .productImage {
-    width: 300px;
-    float: left;
-  }
-  .brandProdRangeList .brandProdRangeLogoWrap,
-  .brandProdRangeList .brandProdRangeDesc {
-    margin-left: 300px;
   }
 }
 @media (max-width: 767px) {
@@ -1055,14 +1039,6 @@ RESPONSIVE OVERRIDES
   }
   .designerInfoWrap .designerInfoThumb {
     border-right: none;
-  }
-  .brandProdRangeList .productImage {
-    width: auto;
-    float: none;
-  }
-  .brandProdRangeList .brandProdRangeLogoWrap,
-  .brandProdRangeList .brandProdRangeDesc {
-    margin-left: 0;
   }
   .designerInfoThumb .viewRangeLink {
     display: none;

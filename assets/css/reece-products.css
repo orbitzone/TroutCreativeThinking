@@ -929,18 +929,12 @@ LocationDropDown
 .myProductListTable .myProductActions {
   padding: 0;
 }
+.myProductListTable .myProductActions:before {
+  display: none !important;
+}
 .myProductActionsList {
   margin: 0;
-  *zoom: 1;
-}
-.myProductActionsList:before,
-.myProductActionsList:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.myProductActionsList:after {
-  clear: both;
+  overflow: hidden;
 }
 .myProductActionsList li {
   list-style: none;

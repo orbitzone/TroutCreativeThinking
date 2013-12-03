@@ -937,11 +937,14 @@ LocationDropDown
     }
     .myProductActions{
         padding: 0;
+        &:before{
+        	display: none !important;
+        }
     }
 }
 .myProductActionsList{
     margin: 0;
-    .clearfix;
+    overflow: hidden;
     li{
         list-style: none;
         display: block;

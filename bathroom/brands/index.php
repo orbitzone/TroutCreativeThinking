@@ -9,7 +9,7 @@
 	   	include_once($serverBase."/includes/head/head-generic.php");
 	?>		
 
-    <body class="withSubNav">
+    <body>
 		<div class="ocmain-wrapper">
 		<div class="navbar navbar-fixed-top topNav">
 			<?php 
@@ -21,7 +21,7 @@
 				$happyZoneNavActiveMenuItem = "Bathroom Moments";
 			   	include_once($serverBase."/includes/banners/banner-happyzone.php");
 			?>	
-			</div>
+		</div>
 		    <div class="content-container">
 				<div class="inner-wrapper">
 

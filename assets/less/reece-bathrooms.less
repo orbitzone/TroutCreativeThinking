@@ -1705,3 +1705,200 @@ RESPONSIVE OVERRIDES
     }
 }
 
+/* ===================================================
+    Inspiration Gallery
+   =================================================== */
+.galleryFilter{
+    h3{
+        padding-bottom: 10px
+    }
+    h4{
+        padding-bottom: 5px;
+    }
+    .filterList{
+        margin: 0;
+        border-bottom: solid 2px #ddd;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+        li{
+            list-style: none;
+        }
+        &.last{
+            border-bottom: none;
+        }        
+    }
+
+}
+/* Thumb List Layout */ 
+.galleryThumbList{
+    margin: 0 -10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    figure{
+        margin: 10px
+    }
+    figcaption{
+        background: #eee;
+        padding: 10px;
+        .galleryThumbPlace{
+            display: block;
+        }
+    }     
+    li.galleryThumbItem{
+        list-style: none;
+        width: 33.33%;
+        float: left;
+         margin: 10px 0 0;
+        &:nth-child(3n+1){
+            clear: left;
+        }
+        &.active{
+
+            .galleryDetailPage{
+                display: block;
+            }
+            figcaption{
+                background: black;
+                color: white
+            }
+        } 
+    }
+   
+}
+/* Details */
+.galleryDetailPage{
+    position: absolute;
+    display: none;
+    left: 10px;
+    right: 10px;
+    border:solid 1px #ddd;
+    padding: 0 10px;
+    .carousel{
+        margin-top: 10px;
+    }
+    .galleryThumbContentWrap{
+        width: 40%;
+        float: left;
+    }
+    .galleryThumbTabsWrap{
+        float: left;
+        width: 60%;
+        .tab-content{
+            padding: 10px;
+            border:solid 1px #ddd;
+        }
+    }
+}
+/* Thumb detail text */
+.galleryThumbContent{
+    padding:0 10px 10px;
+    h4{
+        margin-top: 0;
+        .galleryThumbPlace{
+            font-size: 1.5em;
+            display: block;
+        }
+        .galleryThumbState{
+            display: block;
+            font-weight: normal;
+            padding-top: 3px;
+        }
+    }
+}
+/* Tabs */
+.galleryThumbTabs{
+    margin: 0;
+    .clearfix;
+    li{
+        float: left;
+        width: 32%;
+        text-align: center;
+        display: block;
+        margin: 0 2% -1px 0 !important;
+        background: #eee;
+        a{
+            display: block;
+            padding: 5px 10px;
+            border:solid 1px #ddd;
+            .border-radius(3px 3px 0 0);
+            color: #333;
+            font-weight: bold;
+        }
+        &.active{
+            
+            z-index: 10;
+            background: white;
+            a{
+                border-bottom:solid 1px white;
+            }
+        }
+        &:last-child{
+            margin-right: 0 !important;
+        }
+    }
+}
+/* Products Used */
+.productsUsed{
+    clear: both;
+    padding:10px;
+}
+.productsUsedList{
+    margin: 0;
+    overflow: hidden;
+    padding-bottom: 10px;
+    li{
+        list-style: none;
+        display: block;
+        width: 120px;
+        padding: 10px 20px;
+        float: left;
+
+        img{
+            border:solid 1px #ddd;
+            margin-bottom: 10px;
+        }
+    }
+}
+/* Gallery Detail Footer */
+.galleryDetailFooter{
+    margin: 0;
+    overflow: hidden;
+
+    li{
+        float: left;
+        width: 33.33%;
+        display: block;
+        list-style: none;
+    }
+    .galleryDetailFooterItem{
+        padding: 10px;
+    }
+}
+/* commentsSection */
+.commentsSection{
+    margin: 0 10px;
+    border-top:solid 1px #ddd;
+    border-bottom:solid 1px #ddd;
+    padding: 10px 0;
+    margin-bottom: 10px;
+
+}
+@media (max-width:768px){
+    .galleryThumbList li.galleryThumbItem{
+        float: none;
+        width: auto;
+    }
+    .galleryDetailPage{
+        position: static;
+        margin: 0 10px 10px;
+        .galleryThumbContentWrap,
+        .galleryThumbTabsWrap{
+            float: none;
+            width: auto;
+        }
+    }
+    .active{
+        margin-bottom: 0 !important;
+    }
+}

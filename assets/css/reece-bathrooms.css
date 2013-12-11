@@ -1568,6 +1568,26 @@ RESPONSIVE OVERRIDES
 .galleryFilter .filterList.last {
   border-bottom: none;
 }
+.galleryFilter .showFilter {
+  display: none;
+  cursor: pointer;
+  float: right;
+  border: solid 1px #ccc;
+  padding: 8px 8px 5px;
+  width: 18px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.galleryFilter .showFilter .icon-bar {
+  height: 3px;
+  display: block;
+  margin-bottom: 3px;
+  background: #aaa;
+}
+.galleryFilter #galleryFilter {
+  overflow: visible;
+}
 /* Thumb List Layout */.galleryThumbList {
   margin: 0 -10px;
   padding-bottom: 10px;
@@ -1576,6 +1596,7 @@ RESPONSIVE OVERRIDES
 }
 .galleryThumbList figure {
   margin: 10px;
+  cursor: pointer;
 }
 .galleryThumbList figcaption {
   background: #eee;
@@ -1599,6 +1620,13 @@ RESPONSIVE OVERRIDES
 .galleryThumbList li.galleryThumbItem.active figcaption {
   background: black;
   color: #ffffff;
+}
+.galleryThumbList #thumbCaretWrap {
+  margin: -10px 10px 0;
+  text-align: center;
+}
+.galleryThumbList #thumbCaretWrap .caret {
+  border-width: 10px;
 }
 /* Details */
 .galleryDetailPage {
@@ -1695,9 +1723,12 @@ RESPONSIVE OVERRIDES
 .productsUsedList li {
   list-style: none;
   display: block;
-  width: 120px;
+  width: 20%;
   padding: 10px 20px;
   float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .productsUsedList li img {
   border: solid 1px #ddd;
@@ -1725,11 +1756,29 @@ RESPONSIVE OVERRIDES
   padding: 10px 0;
   margin-bottom: 10px;
 }
-@media (max-width: 768px) {
+@media (max-width: 979px) {
+  .productsUsedList li {
+    width: 33%;
+  }
+}
+@media (max-width: 767px) {
+  /* Gallery Filter */
+  .galleryFilter .showFilter {
+    display: block;
+  }
+  .galleryFilter #galleryFilter {
+    height: 0;
+    overflow: hidden;
+  }
+  /* Thumbs */
   .galleryThumbList li.galleryThumbItem {
     float: none;
     width: auto;
   }
+  .galleryThumbList li.galleryThumbItem.active {
+    margin-bottom: 0 !important;
+  }
+  /* Details */
   .galleryDetailPage {
     position: static;
     margin: 0 10px 10px;
@@ -1739,7 +1788,16 @@ RESPONSIVE OVERRIDES
     float: none;
     width: auto;
   }
-  .active {
-    margin-bottom: 0 !important;
+  /* Products Used */
+  .productsUsedList li {
+    width: 50%;
+    padding: 5px;
+  }
+  .galleryDetailFooter {
+    padding-bottom: 10px;
+  }
+  .galleryDetailFooter li {
+    float: none;
+    width: auto;
   }
 }

@@ -40,7 +40,14 @@
 					<div class="row-fluid">
 						<div class="span3">
 							<div class="galleryFilter">
-								<h3> Gallery Filter </h3>
+								<h3>
+								<a class="showFilter show-mobile" data-toggle="collapse" href="#galleryFilter">
+								 <span class="icon-bar"></span>
+								 <span class="icon-bar"></span>
+								 <span class="icon-bar"></span>	
+								</a>
+								Gallery Filter </h3>
+								<div id="galleryFilter" class="collapse">
 								<h4>Style</h4>
 								<ul class="filterList">
 									<li><label class="checkbox"><input type="checkbox" name="style" value="Classic">Classic</label></li>
@@ -68,7 +75,8 @@
 									<li><label class="checkbox"><input type="checkbox" name="style" value="Twin Basins">Twin Basins</label></li>
 									<li><label class="checkbox"><input type="checkbox" name="style" value="Twin Showers">Twin Showers</label></li>
 									<li><label class="checkbox"><input type="checkbox" name="style" value="Heated Towel rails">Heated Towel rails</label></li>
-								</ul>								
+								</ul>
+								</div>								
 							</div><!-- /.galleryFilter -->
 						</div>
 						<div class="span9">
@@ -82,8 +90,6 @@
 											<span class="galleryThumbState">Victoria</span>
 										</figcaption>
 									</figure>
-
-
 
 								</li>
 								<?php } ?>
@@ -121,29 +127,37 @@
 		  	include_once($serverBase."/includes/foot/scripts.php");
 		?>
 		<script type="text/javascript">
-			$('.galleryThumbList li.galleryThumbItem').click(function(){
-
-				$('.galleryThumbList li.galleryThumbItem').removeClass('active').css({'margin-bottom':'0px'});
-				$('#galleryDetailPage').remove();
-				$(this).addClass('active');
-				$(this).append('<div id="galleryDetailPage" class="galleryDetailPage"></div>')
-				$('#galleryDetailPage').click(function(e){
-					e.stopPropagation();
-				})
-				$( "#galleryDetailPage" ).load( "detailspage.php", function(){
-					fixThumbHeight();
-					$( "#galleryDetailPage img").load(fixThumbHeight);
-					$('.carousel').carousel();
-					$('#galleryThumbTabs3 a').click(function(e){
+			var $ajaxURL = "detailspage.php";
+			$('.galleryThumbList li.galleryThumbItem figure').click(function(){
+				if ( $(this).parent('li').hasClass('active') ) return;// avoid reload
+				$('.galleryThumbList li.galleryThumbItem').removeClass('active').css({'margin-bottom':'0px'});// Remove the active class and the margin used to display details
+				$('#galleryDetailPage').remove(); // Removing the details
+				$('#thumbCaretWrap').remove(); // Removing the caret
+				var $thisEl = $(this).parent('li.galleryThumbItem');
+				$thisEl.addClass('active').append('<div id="thumbCaretWrap"><span class="caret"></span></div><div id="galleryDetailPage" class="galleryDetailPage"></div>');
+				$.get($ajaxURL,function(data){
+					$("#galleryDetailPage").html(data);// load data
+					$( "#galleryDetailPage img").load(fixThumbHeight);// Fix height after all images load
+					$('#galleryDetailPage .galleryThumbTabs a').click(function(e){// initiate tabs
 						e.preventDefault();
 						$(this).tab('show');
 					});
-				});
-				
-			})
-
+					$('.carousel').carousel(); // initiate carousel after ajax content load
+					/* function from bootstrap-carousel.js after ajax content load */
+					$('#galleryDetailPage').on('click.carousel.data-api', '[data-slide]', function (e) {
+						var $this = $(this), href
+						  , $target = $($this.attr('data-target') || (href = $this.attr('href')) && href.replace(/.*(?=#[^\s]+$)/, '')) //strip for ie7
+						  , options = $.extend({}, $target.data(), $this.data())
+						  , slideIndex
+						$target.carousel(options)
+						if (slideIndex = $this.attr('data-slide-to')) {
+						  $target.data('carousel').pause().to(slideIndex).cycle()
+						}
+						e.preventDefault()
+					});										
+				});				
+			});
 			function fixThumbHeight(){
-				console.log($('li.galleryThumbItem.active .galleryDetailPage').height());
 				$('li.galleryThumbItem.active').css({'margin-bottom':$('li.galleryThumbItem.active .galleryDetailPage').height()});;
 			}
 		</script>

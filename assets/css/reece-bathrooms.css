@@ -1823,3 +1823,125 @@ RESPONSIVE OVERRIDES
     margin-top: 0;
   }
 }
+/* Quote to Order */
+.retailQuoteRedHeader {
+  color: #c91d1d;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 0;
+  padding-bottom: 20px;
+}
+.retailQuoteRedBtn {
+  background: #c91d1d;
+  padding: 8px 25px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.retailQuoteBanner {
+  position: relative;
+  overflow: hidden;
+}
+.retailQuoteBanner img {
+  min-width: 1160px;
+}
+.retailQuoteBanner .retailQuoteBannerTextWrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.retailQuoteBanner .retailQuoteBannerTextWrap .retailQuoteBannerText {
+  margin: 0 50px;
+  background: #f2f2f2;
+  padding: 20px;
+  color: #c91d1d;
+  font-size: 28px;
+  font-weight: 200;
+}
+.retailQuoteInner {
+  padding: 50px;
+}
+.retailQuoteMessage {
+  font-size: 20px;
+  font-weight: 200;
+  color: black;
+  padding-bottom: 20px;
+}
+.retailQuotePointers {
+  margin: 0;
+}
+.retailQuotePointers li {
+  list-style: none;
+  padding-left: 50px;
+  background: url("../images/hz-quote-order/pointer.png") no-repeat 0 0;
+  padding-bottom: 20px;
+  color: #818181;
+  font-size: 16px;
+  font-weight: 200;
+}
+/* */
+.retailQuoteForm input[type="text"],
+.retailQuoteForm input[type="email"],
+.retailQuoteForm input[type="password"] {
+  width: 96%;
+  padding: 10px 2%;
+  background: #f2f2f2;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.retailQuoteForm .forgotPassword {
+  color: #ff8c8c;
+  line-height: 30px;
+  float: left;
+}
+/* Login Page */
+.createAccount {
+  border: solid 1px;
+  clear: both;
+  margin-top: 40px;
+  border-color: #ccc transparent;
+  padding: 40px 20px;
+}
+.createAccount p {
+  padding-bottom: 25px;
+  color: #818181;
+}
+.createAccount .retailQuoteMessage {
+  padding-bottom: 0;
+  color: #000000;
+}
+/* My Quote Page */
+.progressWizzard {
+  margin: 0;
+  text-align: center;
+  margin-top: 20px;
+  border-top: solid 1px #d4d4d4;
+}
+.progressWizzard li {
+  display: inline-block;
+  margin: 0 10px;
+  position: relative;
+  top: -22px;
+  border: solid 1px #d4d4d4;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+.progressWizzard li a {
+  color: #b2b2b2;
+}
+.progressWizzard li.active {
+  background: #f2dcdc;
+}
+.progressWizzard li.active a {
+  color: #c91d1d;
+}

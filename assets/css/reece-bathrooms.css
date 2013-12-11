@@ -1621,6 +1621,9 @@ RESPONSIVE OVERRIDES
   background: black;
   color: #ffffff;
 }
+.galleryThumbList .clearFloat {
+  clear: left;
+}
 .galleryThumbList #thumbCaretWrap {
   margin: -10px 10px 0;
   text-align: center;

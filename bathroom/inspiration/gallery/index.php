@@ -90,8 +90,16 @@
 						</div>
 						<div class="span9">
 							<ul class="galleryThumbList">
-							<?php for ($i = 1; $i < 13 ; $i++) { ?>
+							<?php for ($i = 1; $i < 13 ; $i++) {
+
+								if( $i%3 == 1){
+									?>
+									<li class="galleryThumbItem clearFloat">
+									<?php
+								}else{
+								?>
 								<li class="galleryThumbItem">
+								<?php } ?>
 									<figure>
 										<img src="http://placehold.it/750x500.png/999/000" alt="placeholder">
 										<figcaption>

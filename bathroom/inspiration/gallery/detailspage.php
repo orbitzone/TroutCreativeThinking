@@ -91,4 +91,5 @@
 	</ul><!-- /.galleryDetailFooter -->
 	<section class="commentsSection">
 		<h4>Comments</h4>
+		
 	</section>

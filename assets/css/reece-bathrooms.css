@@ -1791,7 +1791,7 @@ RESPONSIVE OVERRIDES
   /* Products Used */
   .productsUsedList li {
     width: 50%;
-    padding: 5px;
+    padding: 5px 10px;
   }
   .galleryDetailFooter {
     padding-bottom: 10px;
@@ -1799,5 +1799,24 @@ RESPONSIVE OVERRIDES
   .galleryDetailFooter li {
     float: none;
     width: auto;
+  }
+}
+@media (max-width: 400px) {
+  /* Products Used */
+  .productsUsed {
+    padding-bottom: 0;
+  }
+  .productsUsedList {
+    padding-bottom: 0;
+  }
+  .productsUsedList li {
+    width: auto;
+    padding: 0 0 15px;
+  }
+  .galleryDetailFooterItem {
+    padding-top: 0;
+  }
+  .galleryDetailFooterItem h4 {
+    margin-top: 0;
   }
 }

@@ -10,6 +10,15 @@
 	?>		
 
     <body>
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 		<div class="ocmain-wrapper">
 			<div class="navbar navbar-fixed-top topNav">
 			<?php 
@@ -94,6 +103,7 @@
 								</li>
 								<?php } ?>
 							</ul>
+							<div class="fb-comments" data-href="http://example.com/comments" data-numposts="1" data-colorscheme="light"></div>
 						</div>
 					</div>
 				</div>
@@ -137,11 +147,13 @@
 				$thisEl.addClass('active').append('<div id="thumbCaretWrap"><span class="caret"></span></div><div id="galleryDetailPage" class="galleryDetailPage"></div>');
 				$.get($ajaxURL,function(data){
 					$("#galleryDetailPage").html(data);// load data
+					$( window ).resize(fixThumbHeight);// fix height on resize
 					$( "#galleryDetailPage img").load(fixThumbHeight);// Fix height after all images load
 					$('#galleryDetailPage .galleryThumbTabs a').click(function(e){// initiate tabs
 						e.preventDefault();
 						$(this).tab('show');
 					});
+					$('#galleryDetailPage .galleryThumbTabs a').on('shown', fixThumbHeight);
 					$('.carousel').carousel(); // initiate carousel after ajax content load
 					/* function from bootstrap-carousel.js after ajax content load */
 					$('#galleryDetailPage').on('click.carousel.data-api', '[data-slide]', function (e) {

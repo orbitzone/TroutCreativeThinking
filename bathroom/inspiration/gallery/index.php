@@ -36,10 +36,10 @@
 					<div id="galleryCarousel" class="carousel slide" data-bs-carousel="carousel">
 						<div class="carousel-inner">
 							<div class="active item">
-								<img src="http://placehold.it/1440x700.png/999/000" alt="placeholder">
+								<img src="http://placehold.it/1440x700.png/ccc/aaa" alt="placeholder">
 							</div>
 							<div class="item">
-								<img src="http://placehold.it/1440x700.png/999/000" alt="placeholder">
+								<img src="http://placehold.it/1440x700.png/ccc/aaa" alt="placeholder">
 							</div>
 						</div>
 						<!-- Carousel nav -->
@@ -101,7 +101,7 @@
 								<li class="galleryThumbItem">
 								<?php } ?>
 									<figure>
-										<img src="http://placehold.it/750x500.png/999/000" alt="placeholder">
+										<img src="http://placehold.it/750x500.png/ccc/aaa" alt="placeholder">
 										<figcaption>
 											<strong class="galleryThumbPlace">Elsternwick</strong>
 											<span class="galleryThumbState">Victoria</span>

@@ -68,7 +68,7 @@
 							<div class="createAccount">
 								<h4 class="retailQuoteRedHeader">Create a new account</h4>
 								<p class="retailQuoteMessage">It only takes a few minutes to sign up for an online customer account.</p>
-								<p>If you've already received a quote in-store and provided your email address to the showroom consultant, we'll verify that email account in order to provide access to your quotes.</p>
+								<p class="retailQuoteGraytext">If you've already received a quote in-store and provided your email address to the showroom consultant, we'll verify that email account in order to provide access to your quotes.</p>
 								<button class="retailQuoteRedBtn">Register Now</button>
 							</div>
 						</div>

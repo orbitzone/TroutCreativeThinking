@@ -41,14 +41,101 @@
 						</div>
 					</div>
 					<div class="retailQuoteInner">
-						<div class="retailQuoteLogin">
+						<div class="retailQuoteMyQuotes">
 							<ul class="progressWizzard">
 								<li class="active"><a>1</a></li>
 								<li><a>2</a></li>
 								<li><a>3</a></li>
 								<li><a>4</a></li>
-								<li><a>5</a></li>
 							</ul>
+							<p class="retailQuoteMessage">Welcome John, we've listed all quotes you currently have in progress with your local Reece showroom.</p>
+							<p class="retailQuoteGraytext">If you can't find a quote, please <a href="#">contact us</a> for assistance.</p>
+
+							<div class="retailQuoteShadowBox">
+								<div class="row-fluid">
+									<div class="span2">
+									<span class="quoteIcon">
+										<span class="quoteIconInner">Q</span>
+									</span>
+									</div>
+									<div class="span10 retailQuoteInfoWrap">
+										<h3 class="retailQuoteRedHeader">Quote #123456</h3>
+										<div class="row-fluid retailQuoteInfo">
+											<div class="span4">
+												<dl class="quoteInfodl">
+													<dt>Store Name</dt>
+													<dd>Reece Bathroom Life, Burwood</dd>
+												</dl>
+											</div>
+											<div class="span4">
+												<dl class="quoteInfodl">
+													<dt>Contacts Number</dt>
+													<dd>03 9274 0000</dd>
+												</dl>
+											</div>
+											<div class="span4">
+												<dl class="quoteInfodl">
+													<dt>Expires</dt>
+													<dd>2 December 2013</dd>
+												</dl>
+											</div>
+										</div><!-- /.retailQuoteInfo -->
+										<div class="row-fluid myQuoteActions">
+											<div class="span4">
+												<a href="#quoteMoreInfoWrap"  data-toggle="collapse"><i class="icon-caret-down icon-large">&nbsp;</i> SHOW MORE</a>
+											</div>
+											<div class="span4">
+												<a href="#"><i class="icon-file icon-large">&nbsp;</i>DOWNLOAD PDF</a>
+											</div>
+											<div class="span4">
+												<button class="retailQuoteRedBtnLarge"><i class="icon-shopping-cart icon-large">&nbsp;</i> ORDER</button>
+											</div>
+										</div><!-- /.myQuoteActions -->
+									</div><!-- /.retailQuoteInfoWrap -->
+								</div>
+								<div class="collapse" id="quoteMoreInfoWrap" class="quoteMoreInfoWrap">
+									<div class="quoteMoreInfo">
+										<div class="row-fluid">
+											<div class="span3">
+												<h4 class="retailThinRedHeader">Branch Contact</h4>
+												<dl class="quoteInfodl">
+													<dt>Name</dt>
+													<dd>Lisa Smith</dd>
+													<dt>Contact Number</dt>
+													<dd>03 9274 0000</dd>													
+												</dl>
+											</div>
+											<div class="span3">
+												<h4 class="retailThinRedHeader">Order Details</h4>
+												<dl class="quoteInfodl">
+													<dt>Job Name</dt>
+													<dd>Bathroom Renovation</dd>
+													<dt>Order Number</dt>
+													<dd>0000 8272 6352</dd>
+													<dt>Address</dt>
+													<dd>118 Burwood Hwy  <br>Burwood VIC 3125</dd>
+												</dl>
+											</div>
+											<div class="span3">
+												<h4 class="retailThinRedHeader">Orders from this Quote</h4>
+												<dl class="quoteInfodl">
+													<dt>07 Nov 2013 </dt>
+													<dd>Order No. 328985627<br>15 items<br>Reece Brunswick</dd>
+													<dt>03 Nov 2013</dt>
+													<dd>Order No. 328985627<br>8 items<br>Reece Brunswick</dd>
+												</dl>
+											</div>
+											<div class="span3">
+												<h4 class="retailThinRedHeader">Quote History</h4>
+												<dl class="quoteInfodl">
+													<dt>11 Sep 2013</dt>
+													<dd>Order No. 328985627<br>Reece Brunswick</dd>
+												</dl>
+											</div>
+										</div><!-- /.row-fluid -->
+									</div>
+								</div>
+							</div><!-- /.retailQuoteShadowBox -->
 						</div>
 					</div>
 				</div>

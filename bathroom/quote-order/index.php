@@ -54,7 +54,7 @@
 								</div>
 								<div class="span5 offset1">
 
-									<div class="retailQuoteForm">
+									<form id="retailQuoteForm" class="retailQuoteForm">
 										<h4 class="retailQuoteRedHeader">Login</h4>
 										<p class="retailQuoteMessage">Welcome back to online ordering, enter your details below to access your quotes.</p>
 										<div class="controls">
@@ -65,14 +65,14 @@
 										</div>
 										<a href="forgot.php" class="forgotPassword">Forgot your password</a>
 										<button class="retailQuoteRedBtn pull-right">Login</button>
-									</div>
+									</form>
 								</div>
 							</div>
 
 							<div class="createAccount">
 								<h4 class="retailQuoteRedHeader">Create a new account</h4>
 								<p class="retailQuoteMessage">It only takes a few minutes to sign up for an online customer account.</p>
-								<p>If you've already received a quote in-store and provided your email address to the showroom consultant, we'll verify that email account in order to provide access to your quotes.</p>
+								<p class="retailQuoteGraytext">If you've already received a quote in-store and provided your email address to the showroom consultant, we'll verify that email account in order to provide access to your quotes.</p>
 								<button class="retailQuoteRedBtn">Register Now</button>
 							</div>
 						</div>
@@ -107,5 +107,14 @@
 		  	); 
 		  	include_once($serverBase."/includes/foot/scripts.php");
 		?>
+		<!-- Script to redirect for the demo only -->
+		<script type="text/javascript">
+		$(function(){
+			$('#retailQuoteForm').submit(function(e){
+				e.preventDefault();
+				window.location='myquotes.php';
+			})
+		});
+		</script>
     </body>
 </html>

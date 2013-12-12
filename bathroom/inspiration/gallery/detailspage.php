@@ -2,10 +2,10 @@
 	<div id="galleryCarousel<?= $i ?>" class="carousel slide">
 		<div class="carousel-inner">
 			<div class="active item">
-				<img src="http://placehold.it/850x500.png/999/000" alt="placeholder">
+				<img src="http://placehold.it/850x500.png/ccc/aaa" alt="placeholder">
 			</div>
 			<div class="item">
-				<img src="http://placehold.it/850x500.png/999/000" alt="placeholder">
+				<img src="http://placehold.it/850x500.png/ccc/aaa" alt="placeholder">
 			</div>
 		</div>
 		<!-- Carousel nav -->
@@ -37,7 +37,7 @@
 		</ul>
 		<div class="tab-content">
 		<div id="floorPlan<?= $i ?>" class="tab-pane fade active in">
-		<img src="http://placehold.it/750x500.png/999/000" alt="placeholder">
+		<img src="http://placehold.it/750x500.png/ccc/aaa" alt="placeholder">
 		</div>
 		<div id="moreDetails<?= $i ?>" class="tab-pane fade">
 		More Details
@@ -52,19 +52,19 @@
 		<h4>Products Used</h4>
 		<ul class="productsUsedList">
 			<li>
-				<img src="http://placehold.it/350x300.png/999/000" alt="placeholder">
+				<img src="http://placehold.it/350x300.png/ccc/aaa" alt="placeholder">
 				<strong>Lorem ipsum dolor sit amet</strong>
 			</li>
 			<li>
-				<img src="http://placehold.it/350x300.png/999/000" alt="placeholder">
+				<img src="http://placehold.it/350x300.png/ccc/aaa" alt="placeholder">
 				<strong>Lorem ipsum dolor sit amet</strong>
 			</li>
 			<li>
-				<img src="http://placehold.it/350x300.png/999/000" alt="placeholder">
+				<img src="http://placehold.it/350x300.png/ccc/aaa" alt="placeholder">
 				<strong>Lorem ipsum dolor sit amet</strong>
 			</li>
 			<li>
-				<img src="http://placehold.it/350x300.png/999/000" alt="placeholder">
+				<img src="http://placehold.it/350x300.png/ccc/aaa" alt="placeholder">
 				<strong>Lorem ipsum dolor sit amet</strong>
 			</li>																																				
 		</ul>
@@ -73,19 +73,19 @@
 		<li>
 			<div class="galleryDetailFooterItem">
 			<h4>Get The Look</h4>
-			<img src="http://placehold.it/350x200.png/999/000" alt="placeholder">
+			<img src="http://placehold.it/350x200.png/ccc/aaa" alt="placeholder">
 			</div>
 		</li>
 		<li>
 			<div class="galleryDetailFooterItem">
 			<h4>Featured Brand</h4>
-			<img src="http://placehold.it/350x200.png/999/000" alt="placeholder">
+			<img src="http://placehold.it/350x200.png/ccc/aaa" alt="placeholder">
 			</div>
 		</li>
 		<li>
 			<div class="galleryDetailFooterItem">
 			<h4>As Seen In</h4>
-			<img src="http://placehold.it/350x200.png/999/000" alt="placeholder">
+			<img src="http://placehold.it/350x200.png/ccc/aaa" alt="placeholder">
 			</div>
 		</li>
 	</ul><!-- /.galleryDetailFooter -->

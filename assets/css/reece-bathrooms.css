@@ -1547,9 +1547,9 @@ RESPONSIVE OVERRIDES
     min-height: 1em;
   }
 }
-/* ===================================================
+/* =======================================================================================
     Inspiration Gallery
-   =================================================== */
+   ======================================================================================= */
 .galleryFilter h3 {
   padding-bottom: 10px;
 }
@@ -1823,7 +1823,10 @@ RESPONSIVE OVERRIDES
     margin-top: 0;
   }
 }
-/* Quote to Order */
+/* =========================================================================================
+    Quote to Order
+   ========================================================================================= */
+/* Headers */
 .retailQuoteRedHeader {
   color: #c91d1d;
   font-size: 20px;
@@ -1831,7 +1834,15 @@ RESPONSIVE OVERRIDES
   margin-top: 0;
   padding-bottom: 20px;
 }
-.retailQuoteRedBtn {
+.retailThinRedHeader {
+  color: #c91d1d;
+  font-weight: 200;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+/* Buttons */
+.retailQuoteRedBtn,
+.retailQuoteRedBtnLarge {
   background: #c91d1d;
   padding: 8px 25px;
   border: none;
@@ -1839,6 +1850,39 @@ RESPONSIVE OVERRIDES
   font-size: 16px;
   text-transform: uppercase;
 }
+.retailQuoteRedBtnLarge {
+  padding: 20px 40px;
+}
+/* Formatted Text */
+.retailQuoteMessage {
+  font-size: 20px;
+  font-weight: 200;
+  color: black;
+  padding-bottom: 20px;
+}
+.retailQuoteGraytext {
+  color: #818181;
+  font-size: 16px;
+  font-weight: 200;
+}
+.retailQuoteGraytext a {
+  color: #818181;
+  text-decoration: underline;
+}
+/* Pointer List */
+.retailQuotePointers {
+  margin: 0;
+}
+.retailQuotePointers li {
+  list-style: none;
+  padding-left: 50px;
+  background: url("../images/hz-quote-order/pointer.png") no-repeat 0 0;
+  padding-bottom: 20px;
+  color: #818181;
+  font-size: 16px;
+  font-weight: 200;
+}
+/* Banner */
 .retailQuoteBanner {
   position: relative;
   overflow: hidden;
@@ -1854,34 +1898,18 @@ RESPONSIVE OVERRIDES
 }
 .retailQuoteBanner .retailQuoteBannerTextWrap .retailQuoteBannerText {
   margin: 0 50px;
+  border: solid 1px #d5d7d9;
   background: #f2f2f2;
   padding: 20px;
   color: #c91d1d;
   font-size: 28px;
   font-weight: 200;
 }
+/*  */
 .retailQuoteInner {
   padding: 50px;
 }
-.retailQuoteMessage {
-  font-size: 20px;
-  font-weight: 200;
-  color: black;
-  padding-bottom: 20px;
-}
-.retailQuotePointers {
-  margin: 0;
-}
-.retailQuotePointers li {
-  list-style: none;
-  padding-left: 50px;
-  background: url("../images/hz-quote-order/pointer.png") no-repeat 0 0;
-  padding-bottom: 20px;
-  color: #818181;
-  font-size: 16px;
-  font-weight: 200;
-}
-/* */
+/* Retail Quote Form */
 .retailQuoteForm input[type="text"],
 .retailQuoteForm input[type="email"],
 .retailQuoteForm input[type="password"] {
@@ -1907,7 +1935,6 @@ RESPONSIVE OVERRIDES
 }
 .createAccount p {
   padding-bottom: 25px;
-  color: #818181;
 }
 .createAccount .retailQuoteMessage {
   padding-bottom: 0;
@@ -1917,18 +1944,16 @@ RESPONSIVE OVERRIDES
 .progressWizzard {
   margin: 0;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 25px;
+  padding-bottom: 40px;
   border-top: solid 1px #d4d4d4;
 }
 .progressWizzard li {
   display: inline-block;
   margin: 0 10px;
   position: relative;
-  top: -22px;
+  top: -22.5px;
   border: solid 1px #d4d4d4;
-  height: 45px;
-  width: 45px;
-  line-height: 45px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   border-radius: 25px;
@@ -1938,10 +1963,95 @@ RESPONSIVE OVERRIDES
 }
 .progressWizzard li a {
   color: #b2b2b2;
+  cursor: pointer;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  display: block;
+}
+.progressWizzard li a:hover {
+  text-decoration: none;
 }
 .progressWizzard li.active {
   background: #f2dcdc;
 }
 .progressWizzard li.active a {
   color: #c91d1d;
+}
+/* Shadow Box */
+.retailQuoteShadowBox {
+  border: solid 1px #d4d4d4;
+  margin-top: 50px;
+  padding: 20px;
+  -webkit-box-shadow: -20px 20px 0 #f2f2f2;
+  -moz-box-shadow: -20px 20px 0 #f2f2f2;
+  box-shadow: -20px 20px 0 #f2f2f2;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+/* My Quotes */
+.quoteIcon {
+  background: #f3d5d3;
+  display: inline-block;
+  color: #fdf7f6;
+  font-weight: bold;
+  border: solid 1px #dedada;
+  margin: 40px 0 0 10px;
+}
+.quoteIcon .quoteIconInner {
+  font-size: 70px;
+  line-height: 80px;
+  padding: 5px 15px;
+  display: block;
+  border: solid 5px #fdf7f6;
+}
+.quoteIcon .quoteIconInner:after {
+  content: '';
+  display: block;
+  background: #fdf7f6;
+  margin: 5px 0;
+  height: 10px;
+}
+@media (max-width: 979px) {
+  .quoteIcon .quoteIconInner {
+    font-size: 60px;
+    line-height: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .quoteIcon {
+    margin: 10px 0 20px;
+  }
+}
+.retailQuoteInfoWrap .retailQuoteRedHeader {
+  border-bottom: solid 1px #d4d4d4;
+}
+.quoteInfodl {
+  margin: 5px 0;
+  font-size: 16px;
+}
+.quoteInfodl dt {
+  font-weight: normal;
+  color: black;
+  padding-bottom: 5px;
+}
+.quoteInfodl dd {
+  color: #818181;
+  margin-left: 0;
+  font-weight: 200;
+  padding-bottom: 25px;
+}
+.myQuoteActions a {
+  margin-top: 30px;
+  display: inline-block;
+  color: #797979;
+}
+.myQuoteActions a:hover {
+  text-decoration: none;
+}
+.quoteMoreInfo {
+  margin-top: 30px;
+  border-top: solid 1px #d4d4d4;
+  padding: 20px;
 }

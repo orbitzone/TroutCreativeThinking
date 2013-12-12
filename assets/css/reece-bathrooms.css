@@ -2013,17 +2013,6 @@ RESPONSIVE OVERRIDES
   margin: 5px 0;
   height: 10px;
 }
-@media (max-width: 979px) {
-  .quoteIcon .quoteIconInner {
-    font-size: 60px;
-    line-height: 50px;
-  }
-}
-@media (max-width: 767px) {
-  .quoteIcon {
-    margin: 10px 0 20px;
-  }
-}
 .retailQuoteInfoWrap .retailQuoteRedHeader {
   border-bottom: solid 1px #d4d4d4;
 }
@@ -2054,4 +2043,84 @@ RESPONSIVE OVERRIDES
   margin-top: 30px;
   border-top: solid 1px #d4d4d4;
   padding: 20px;
+}
+/* */
+@media (max-width: 979px) {
+  .quoteIcon .quoteIconInner {
+    font-size: 60px;
+    line-height: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .retailQuoteInner {
+    padding: 20px;
+  }
+  .quoteIcon {
+    margin: 10px 0 20px;
+  }
+  .myQuoteActions .retailQuoteRedBtnLarge {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .retailQuoteBanner .retailQuoteBannerTextWrap .retailQuoteBannerText {
+    margin: 0 20px;
+  }
+  .progressWizzard li {
+    margin: 0 3px;
+    font-size: 16px;
+    top: -15px;
+  }
+  .progressWizzard li a {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+  }
+  .quoteMoreInfo {
+    padding: 20px 0;
+  }
+}
+/* retailQuoteCart */
+.quoteCartTable {
+  width: 100%;
+}
+.quoteCartTable th {
+  color: #c91d1d;
+  font-weight: 200;
+  font-size: 20px;
+  padding-bottom: 5px;
+  text-align: left;
+  padding: 20px;
+}
+.quoteCartTable tbody tr {
+  border-top: solid 1px #d4d4d4;
+}
+.quoteCartTable td {
+  padding: 20px;
+}
+@media (max-width: 979px) {
+  .quoteCartTable thead {
+    display: none;
+  }
+  .quoteCartTable tr,
+  .quoteCartTable td {
+    display: block;
+    clear: left;
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .quoteCartTable tr {
+    width: 100%;
+  }
+  .quoteCartTable td:before {
+    content: attr(data-th);
+    color: #c91d1d;
+    font-weight: 200;
+    font-size: 20px;
+    padding-bottom: 5px;
+    float: left;
+    width: 150px;
+  }
 }

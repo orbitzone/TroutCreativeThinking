@@ -43,9 +43,9 @@
 					<div class="retailQuoteInner">
 						<div class="retailQuoteMyQuotes">
 							<ul class="progressWizzard">
-								<li class="active"><a>1</a></li>
-								<li><a>2</a></li>
-								<li><a>3</a></li>
+								<li class="active"><a href="myquotes.php">1</a></li>
+								<li><a href="selectItems.php">2</a></li>
+								<li><a href="delivery.php">3</a></li>
 								<li><a>4</a></li>
 							</ul>
 							<p class="retailQuoteMessage">Welcome John, we've listed all quotes you currently have in progress with your local Reece showroom.</p>

@@ -1547,9 +1547,9 @@ RESPONSIVE OVERRIDES
     min-height: 1em;
   }
 }
-/* =======================================================================================
+/* ===========================================================================================================================================
     Inspiration Gallery
-   ======================================================================================= */
+   =========================================================================================================================================== */
 .galleryFilter h3 {
   padding-bottom: 10px;
 }
@@ -1823,9 +1823,9 @@ RESPONSIVE OVERRIDES
     margin-top: 0;
   }
 }
-/* =========================================================================================
+/* ===============================================================================================================================
     Quote to Order
-   ========================================================================================= */
+   =============================================================================================================================== */
 /* Headers */
 .retailQuoteRedHeader {
   color: #c91d1d;
@@ -1857,6 +1857,10 @@ RESPONSIVE OVERRIDES
   font-size: 16px;
   text-transform: uppercase;
 }
+.retailQuoteRedBtn:hover,
+.retailQuoteRedBtnLarge:hover {
+  background: #3f3f3f;
+}
 .retailQuoteRedBtnLarge {
   padding: 20px 40px;
 }
@@ -1875,6 +1879,9 @@ RESPONSIVE OVERRIDES
 .retailQuoteGraytext a {
   color: #818181;
   text-decoration: underline;
+}
+.retailQuoteGraytext a:hover {
+  color: #c91d1d;
 }
 /* Pointer List */
 .retailQuotePointers {
@@ -2048,6 +2055,7 @@ RESPONSIVE OVERRIDES
 }
 .myQuoteActions a:hover {
   text-decoration: none;
+  color: #c91d1d;
 }
 .quoteMoreInfo {
   margin-top: 30px;
@@ -2090,6 +2098,27 @@ RESPONSIVE OVERRIDES
     padding: 20px 0;
   }
 }
+/* Check icons */
+.quoteCheckIcon {
+  height: 40px;
+  width: auto;
+  line-height: 40px;
+  padding-left: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-block;
+  background: url("../images/hz-quote-order/check-icons.png") no-repeat 0 0;
+}
+.quoteUnchecked {
+  background-position: 0 -40px;
+}
+.quoteRemove {
+  background-position: 0 -80px;
+  color: #c91d1d;
+}
+.quoteRemove:hover {
+  color: #c91d1d;
+}
 /* retailQuoteCart */
 .quoteCartTable {
   width: 100%;
@@ -2114,6 +2143,9 @@ RESPONSIVE OVERRIDES
 .quoteCartTable tfoot td {
   padding: 10px;
 }
+.quoteCartTable tfoot tr:last-child td {
+  padding-bottom: 30px;
+}
 .quoteCartTable .quoteQuantity {
   background: #f2f2f2;
   padding: 15px 20px;
@@ -2126,35 +2158,83 @@ RESPONSIVE OVERRIDES
 }
 .quoteCartTable .quantityHistoryWrap {
   margin-top: 5px;
+  height: 40px;
 }
-.quoteCartTable .quantityHistoryWrap a {
+.quoteCartTable .quantityHistoryWrap a.dropdown-toggle {
   display: block;
   padding: 10px;
+  border: solid 1px white;
+  border-bottom: none;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
 }
-.quoteCartTable .quantityHistoryWrap a .caret {
-  position: relative;
-  top: 8px;
+.quoteCartTable .quantityHistoryWrap .dropdown-menu {
+  -webkit-border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
+  border-color: #d4d4d4;
+  margin: 0;
+  padding: 0;
+  width: 320px;
 }
-/* Check icons */
-.quoteCheckIcon {
-  height: 40px;
-  width: auto;
-  line-height: 40px;
-  padding-left: 50px;
-  cursor: pointer;
-  font-size: 16px;
-  display: inline-block;
-  background: url("../images/hz-quote-order/check-icons.png") no-repeat 0 0;
+.quoteCartTable .open a.dropdown-toggle {
+  border-color: #d4d4d4 #d4d4d4 transparent;
+  background: white;
+  z-index: 100;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  width: 300px;
+  top: 0;
+  left: 0;
 }
-.quoteUnchecked {
-  background-position: 0 -40px;
+.quoteCartTable .quantityHistoryInfo {
+  margin: 0;
+  display: table;
+  width: 100%;
+  border-bottom: solid 1px #d4d4d4;
 }
-.quoteRemove {
-  background-position: 0 -80px;
+.quoteCartTable .quantityHistoryInfo li {
+  list-style: none;
+  display: table-cell;
+  padding: 10px;
+}
+.quoteCartTable .quantityHistoryInfo li.remaining {
+  color: #c91d1d;
+  font-weight: bold;
+}
+.quoteCartTable .quantityHistoryAction {
+  padding: 10px;
+}
+.quoteCartTable .quantityHistoryAction a {
+  text-transform: uppercase;
+  color: #797979;
+}
+.quoteCartTable .quantityHistoryAction a:hover {
   color: #c91d1d;
 }
-.quoteRemove:hover {
-  color: #c91d1d;
+.quoteProductInfo {
+  display: table;
+  clear: both;
+}
+.quoteProductInfo .quoteProductInfoThumb,
+.quoteProductInfo .quoteProductInfoDesc {
+  display: table-cell;
+  vertical-align: middle;
+  width: 50%;
+  padding: 10px;
+}
+.quoteProductInfo .quoteProductInfoThumb span,
+.quoteProductInfo .quoteProductInfoDesc span {
+  display: block;
+}
+.quoteProductInfo .quoteProductInfoThumb {
+  max-width: 200px;
+}
+.quantityHistoryContent {
+  clear: both;
 }
 /* Media Queries */
 @media (max-width: 979px) {
@@ -2173,7 +2253,10 @@ RESPONSIVE OVERRIDES
   .quoteCartTable tr {
     width: 100%;
   }
-  .quoteCartTable td:before {
+  .quoteCartTable tbody td {
+    padding: 10px;
+  }
+  .quoteCartTable tbody td:before {
     content: attr(data-th);
     color: #c91d1d;
     font-weight: 200;
@@ -2181,6 +2264,9 @@ RESPONSIVE OVERRIDES
     padding-bottom: 5px;
     float: left;
     width: 150px;
+  }
+  .quoteCartTable .quoteCartTableContent {
+    margin-left: 160px;
   }
 }
 /* Delivery Options */
@@ -2232,6 +2318,7 @@ RESPONSIVE OVERRIDES
 }
 .retailQuoteDeliveryOptions .retailQuoteDeliveryOption {
   display: table-cell;
+  padding-bottom: 30px;
 }
 /* */
 .deliverOptionDL {

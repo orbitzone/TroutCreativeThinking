@@ -78,20 +78,79 @@
 									</tfoot>
 									<tbody>
 										<tr>
-											<td data-th="Include"><a class="quoteCheckIcon"></a></td>
+											<td data-th="Include"><div class="quoteCartTableContent"><a class="quoteCheckIcon"></a></div></td>
 											<td data-th="Product Details">
-												Product Name
+													<div class="quoteProductInfo">
+														<div class="quoteProductInfoThumb">
+															<img src="http://placehold.it/180x120.png/eee/eee" alt="placeholder">
+														</div>
+														<div class="quoteProductInfoDesc">Product Name
+															<span class="retailQuoteGraytext">Product Description</span>
+															<span class="retailQuoteGraytext">#Code</span>
+															<span class="retailQuoteGraytext"><a href="#">Product Details</a></span>
+														</div>
+													</div>
 											</td>
 											<td data-th="Quantity">
+											<div class="quantityHistoryContent">
 												<span class="quoteQuantity">4</span>
-												<div class="quantityHistoryWrap">
-													<a herf="#">Quantity History <span class="caret"></span></a>
+												<div class="quantityHistoryWrap dropdown">
+													<a herf="#"class="dropdown-toggle" data-toggle="dropdown">Quantity History <span class="caret"></span></a>
+													<div class="dropdown-menu">
+														<ul class="quantityHistoryInfo">
+															<li>Quoted <span class="retailQuoteGraytext">6</span></li>
+															<li>Ordered <span class="retailQuoteGraytext">2</span></li>
+															<li class="remaining">Remaining 4</li>
+														</ul>
 
+														<div class="quantityHistoryAction clearfix">
+															<a class="pull-left" href="#">Order All</a>
+															<a class="pull-right" href="#">Order None</a>
+														</div>
+													</div>
 												</div>
+											</div>
 											</td>
-											<td data-th="Unit Cost">$300.12</td>
-											<td data-th="Sub Cost">$1,200.48</td>
+											<td data-th="Unit Cost"><div class="quoteCartTableContent">$300.12</div></td>
+											<td data-th="Sub Cost"><div class="quoteCartTableContent">$1,200.48</div></td>
 										</tr>
+										<tr>
+											<td data-th="Include"><div class="quoteCartTableContent"><a class="quoteCheckIcon"></a></div></td>
+											<td data-th="Product Details">
+													<div class="quoteProductInfo">
+														<div class="quoteProductInfoThumb">
+															<img src="http://placehold.it/180x120.png/eee/eee" alt="placeholder">
+														</div>
+														<div class="quoteProductInfoDesc">Product Name
+															<span class="retailQuoteGraytext">Product Description</span>
+															<span class="retailQuoteGraytext">#Code</span>
+															<span class="retailQuoteGraytext"><a href="#">Product Details</a></span>
+														</div>
+													</div>
+											</td>
+											<td data-th="Quantity">
+											<div class="quantityHistoryContent">
+												<span class="quoteQuantity">4</span>
+												<div class="quantityHistoryWrap dropdown">
+													<a herf="#"class="dropdown-toggle" data-toggle="dropdown">Quantity History <span class="caret"></span></a>
+													<div class="dropdown-menu">
+														<ul class="quantityHistoryInfo">
+															<li>Quoted <span class="retailQuoteGraytext">6</span></li>
+															<li>Ordered <span class="retailQuoteGraytext">2</span></li>
+															<li class="remaining">Remaining 4</li>
+														</ul>
+
+														<div class="quantityHistoryAction clearfix">
+															<a class="pull-left" href="#">Order All</a>
+															<a class="pull-right" href="#">Order None</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											</td>
+											<td data-th="Unit Cost"><div class="quoteCartTableContent">$300.12</div></td>
+											<td data-th="Sub Cost"><div class="quoteCartTableContent">$1,200.48</div></td>
+										</tr>									
 										<tr>
 											<td data-th="Include"><a class="quoteCheckIcon quoteUnchecked"></a></td>
 											<td data-th="Product Details">Product Name</td>
@@ -137,5 +196,13 @@
 		  	); 
 		  	include_once($serverBase."/includes/foot/scripts.php");
 		?>
+		<script type="text/javascript">
+			$(function(){
+				$('.quoteCartTable tbody .quoteCheckIcon').click(function(){
+					$(this).toggleClass('quoteUnchecked');
+				});
+				$('.dropdown-toggle').dropdown();
+			});
+		</script>
     </body>
 </html>

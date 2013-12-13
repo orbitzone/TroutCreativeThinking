@@ -1705,9 +1705,9 @@ RESPONSIVE OVERRIDES
     }
 }
 
-/* =======================================================================================
+/* ===========================================================================================================================================
     Inspiration Gallery
-   ======================================================================================= */
+   =========================================================================================================================================== */
 .galleryFilter{
     h3{
         padding-bottom: 10px
@@ -1985,9 +1985,9 @@ RESPONSIVE OVERRIDES
     }
 }
 
-/* =========================================================================================
+/* ===============================================================================================================================
     Quote to Order
-   ========================================================================================= */
+   =============================================================================================================================== */
 /* Headers */
 .retailQuoteRedHeader{
     color:#c91d1d;
@@ -2017,6 +2017,9 @@ RESPONSIVE OVERRIDES
     color: white;
     font-size: 16px;
     text-transform: uppercase;
+    &:hover{
+        background: #3f3f3f;
+    }
 }
 .retailQuoteRedBtnLarge{
     padding: 20px 40px;
@@ -2035,6 +2038,9 @@ RESPONSIVE OVERRIDES
     a{
         color: #818181;
         text-decoration: underline;
+        &:hover{
+            color: #c91d1d;
+        }
     }
 }
 /* Pointer List */
@@ -2214,6 +2220,7 @@ RESPONSIVE OVERRIDES
 
         &:hover{
             text-decoration: none;
+            color: #c91d1d;
         }
     }
 }
@@ -2266,50 +2273,7 @@ RESPONSIVE OVERRIDES
     }
 }
 
-/* retailQuoteCart */
-.retailQuoteCart{
 
-}
-.quoteCartTable{
-    width: 100%;
-    font-size: 16px;
-    th{
-        .retailThinRedHeader;
-        text-align: left;
-        padding: 20px 10px;
-    }
-    tbody tr,thead tr{
-        border-bottom:solid 1px #d4d4d4;
-    }
-    td{
-        padding: 20px 10px;
-        vertical-align: middle;        
-    }
-    tfoot{
-        td{
-            padding: 10px; 
-        }
-    }    
-    .quoteQuantity{
-        background: #f2f2f2;
-        padding: 15px 20px;
-        display: inline-block;
-        border:solid 1px #d4d4d4;
-        font-size: 20px;
-        .border-radius(5px)
-    }
-    .quantityHistoryWrap{
-        margin-top: 5px;
-        a{
-            display: block;
-            padding: 10px;
-            .caret{
-                position: relative;
-                top: 8px;
-            }
-        }
-    }  
-}
 /* Check icons */
 .quoteCheckIcon{
     height: 40px;
@@ -2331,6 +2295,118 @@ RESPONSIVE OVERRIDES
         color: #c91d1d;
     }
 }
+/* retailQuoteCart */
+.quoteCartTable{
+    width: 100%;
+    font-size: 16px;
+    th{
+        .retailThinRedHeader;
+        text-align: left;
+        padding: 20px 10px;
+    }
+    tbody tr,thead tr{
+        border-bottom:solid 1px #d4d4d4;
+    }
+    td{
+        padding: 20px 10px;
+        vertical-align: middle;        
+    }
+    tfoot{
+        td{
+            padding: 10px; 
+        }
+        tr:last-child td{
+            padding-bottom: 30px;
+        }
+    }    
+    .quoteQuantity{
+        background: #f2f2f2;
+        padding: 15px 20px;
+        display: inline-block;
+        border:solid 1px #d4d4d4;
+        font-size: 20px;
+        .border-radius(5px)
+    }
+    .quantityHistoryWrap{
+        margin-top: 5px;
+        height: 40px;
+        a.dropdown-toggle{
+            display: block;
+
+            padding: 10px;
+            
+            border:solid 1px white;
+            border-bottom: none;
+            .border-radius(5px 5px 0 0);
+        }
+        .dropdown-menu{
+            .border-radius(0 0 5px 5px);
+            border-color: #d4d4d4;
+            margin: 0;
+            padding: 0;
+            width: 320px;
+        }
+    } 
+    .open{
+        a.dropdown-toggle{
+            border-color: #d4d4d4 #d4d4d4 transparent;
+            background: white;
+            z-index: 100;
+            .box-shadow(0 5px 10px rgba(0, 0, 0, 0.2));
+            position: absolute;
+            width: 300px;
+            top: 0;
+            left: 0;            
+        }
+    }
+    .quantityHistoryInfo{
+        margin: 0;
+        display: table;
+        width: 100%;
+        border-bottom: solid 1px #d4d4d4;
+        li{
+            list-style: none;
+            display: table-cell;
+            padding: 10px;
+        }
+        li.remaining{
+            color: #c91d1d;
+            font-weight: bold;
+        }
+    }
+    .quantityHistoryAction{
+        padding: 10px;
+        a{
+            text-transform: uppercase;
+            color:#797979;
+
+            &:hover{
+                color: #c91d1d
+            }
+        }
+    }
+}
+.quoteProductInfo{
+    display: table;
+    clear: both;
+    .quoteProductInfoThumb,
+    .quoteProductInfoDesc{
+        display: table-cell;
+        vertical-align: middle;
+        width: 50%;
+        padding: 10px;
+        span{
+            display: block;
+        }
+    }
+    .quoteProductInfoThumb{
+        max-width: 200px;
+    }
+}
+.quantityHistoryContent{
+    clear: both;
+}
+
 /* Media Queries */
 @media (max-width:979px){
     .quoteCartTable{
@@ -2346,7 +2422,8 @@ RESPONSIVE OVERRIDES
         tr{
             width: 100%;
         }        
-        td{
+        tbody td{
+            padding: 10px;
             &:before{
                 content: attr(data-th);
                 .retailThinRedHeader;
@@ -2354,6 +2431,9 @@ RESPONSIVE OVERRIDES
                 width: 150px;
 
             }
+        }
+        .quoteCartTableContent{
+            margin-left: 160px;
         }
     }
 }
@@ -2395,7 +2475,7 @@ RESPONSIVE OVERRIDES
     width: 100%;
     .retailQuoteDeliveryOption{
         display: table-cell;
-
+        padding-bottom: 30px
     }
 }
 /* */

@@ -82,7 +82,7 @@
 										</div><!-- /.retailQuoteInfo -->
 										<div class="row-fluid myQuoteActions">
 											<div class="span4">
-												<a href="#quoteMoreInfoWrap"  data-toggle="collapse"><i class="icon-caret-down icon-large">&nbsp;</i> SHOW MORE</a>
+												<a href="#quoteMoreInfoWrap" id="showQuoteMoreInfo"  data-toggle="collapse"><i class="icon-caret-down icon-large">&nbsp;</i> SHOW MORE</a>
 											</div>
 											<div class="span4">
 												<a href="#"><i class="icon-file icon-large">&nbsp;</i>DOWNLOAD PDF</a>
@@ -168,5 +168,15 @@
 		  	); 
 		  	include_once($serverBase."/includes/foot/scripts.php");
 		?>
+		<script type="text/javascript">
+			$(function(){
+				$('#quoteMoreInfoWrap').on('hide', function () {
+					$('#showQuoteMoreInfo').html('<i class="icon-caret-down icon-large">&nbsp;</i> Show More');
+				});
+				$('#quoteMoreInfoWrap').on('show', function () {
+					$('#showQuoteMoreInfo').html('<i class="icon-caret-up icon-large">&nbsp;</i> Show Less');
+				});	
+			});
+		</script>
     </body>
 </html>

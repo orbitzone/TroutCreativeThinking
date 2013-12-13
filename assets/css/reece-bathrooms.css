@@ -2132,6 +2132,7 @@ RESPONSIVE OVERRIDES
   -webkit-border-radius: 5px 5px 0 0;
   -moz-border-radius: 5px 5px 0 0;
   border-radius: 5px 5px 0 0;
+  min-width: 200px;
 }
 .quoteCartTable .quantityHistoryWrap .dropdown-menu {
   -webkit-border-radius: 0 0 5px 5px;
@@ -2301,6 +2302,8 @@ RESPONSIVE OVERRIDES
     padding-bottom: 5px;
     float: left;
     width: 150px;
+    padding-bottom: 10px;
+    display: block;
   }
   .quoteCartTable .quoteCartTableContent {
     margin-left: 160px;

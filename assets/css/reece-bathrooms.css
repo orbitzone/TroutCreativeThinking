@@ -2276,16 +2276,8 @@ RESPONSIVE OVERRIDES
   .retailQuoteRedBtnLarge {
     padding: 10px 20px;
   }
-  .myQuoteActions .myquoteDownloadOrder,
-  .myQuoteActions .myquoteDownloadOrder li {
-    float: none;
-    width: auto;
-  }
-  .myQuoteActions .myquoteDownloadOrder li {
-    padding-bottom: 20px;
-  }
   .myQuoteActions a {
-    margin-top: 0;
+    margin-top: 12px;
   }
   .quoteIcon {
     margin: 40px 10px 0 0;
@@ -2344,8 +2336,16 @@ RESPONSIVE OVERRIDES
   .quoteIcon {
     margin: 10px 0 20px;
   }
-  .myQuoteActions .retailQuoteRedBtnLarge {
-    margin-top: 30px;
+  .myQuoteActions .myquoteDownloadOrder,
+  .myQuoteActions .myquoteDownloadOrder li {
+    float: none;
+    width: auto;
+  }
+  .myQuoteActions .myquoteDownloadOrder li {
+    padding-bottom: 20px;
+  }
+  .myQuoteActions a {
+    margin-top: 0;
   }
   .retailQuoteOrderSummary {
     margin-bottom: 20px;

@@ -80,16 +80,12 @@
 												</dl>
 											</div>
 										</div><!-- /.retailQuoteInfo -->
-										<div class="row-fluid myQuoteActions">
-											<div class="span4">
-												<a href="#quoteMoreInfoWrap" id="showQuoteMoreInfo"  data-toggle="collapse"><i class="icon-caret-down icon-large">&nbsp;</i> SHOW MORE</a>
-											</div>
-											<div class="span4">
-												<a href="#"><i class="icon-file icon-large">&nbsp;</i>DOWNLOAD PDF</a>
-											</div>
-											<div class="span4">
-												<button class="retailQuoteRedBtnLarge"><i class="icon-shopping-cart icon-large">&nbsp;</i> ORDER</button>
-											</div>
+										<div class="myQuoteActions">
+											<ul class="myquoteDownloadOrder">
+												<li><a href="#"><i class="icon-file icon-large">&nbsp;</i>DOWNLOAD PDF</a></li>
+												<li><button class="retailQuoteRedBtnLarge"><i class="icon-shopping-cart icon-large">&nbsp;</i> ORDER</button></li>
+											</ul>
+											<a href="#quoteMoreInfoWrap" id="showQuoteMoreInfo" class="pull-left"  data-toggle="collapse"><i class="icon-caret-down icon-large">&nbsp;</i> SHOW MORE</a>
 										</div><!-- /.myQuoteActions -->
 									</div><!-- /.retailQuoteInfoWrap -->
 								</div>

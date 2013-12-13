@@ -2223,7 +2223,19 @@ RESPONSIVE OVERRIDES
             color: #c91d1d;
         }
     }
+    .myquoteDownloadOrder{
+        margin: 0;
+        float: right;
+        width: 70%;
+        overflow: hidden;
+        li{
+            list-style: none;
+            float: left;
+            width: 50%;
+        }
+    }
 }
+
 .quoteMoreInfo{
     margin-top: 30px;
     border-top:solid 1px #d4d4d4;
@@ -2421,9 +2433,18 @@ RESPONSIVE OVERRIDES
     .retailQuoteRedBtnLarge{
         padding: 10px 20px;
     }
-    .myQuoteActions a{
-        margin-top: 12px;
-    }    
+    .myQuoteActions{
+        .myquoteDownloadOrder,.myquoteDownloadOrder li{
+            float: none;
+            width: auto;
+        }
+        .myquoteDownloadOrder li{
+            padding-bottom: 20px
+        }
+        a{
+            margin-top: 0
+        }        
+    }     
     .quoteIcon{
         margin: 40px 10px 0 0;
         .quoteIconInner{

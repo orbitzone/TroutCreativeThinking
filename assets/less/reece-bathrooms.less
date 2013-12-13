@@ -2042,6 +2042,8 @@ RESPONSIVE OVERRIDES
         font-weight: 200;
     }
 }
+
+
 /* Banner */
 .retailQuoteBanner{
     position: relative;
@@ -2072,6 +2074,9 @@ RESPONSIVE OVERRIDES
 
 /* Retail Quote Form */
 .retailQuoteForm{
+    .controls{
+        padding-bottom: 10px;
+    }
     input[type="text"], input[type="email"], input[type="password"]{
         width: 96%;
         padding: 10px 2%;
@@ -2260,20 +2265,61 @@ RESPONSIVE OVERRIDES
 }
 .quoteCartTable{
     width: 100%;
+    font-size: 16px;
     th{
         .retailThinRedHeader;
         text-align: left;
-        padding: 20px;
+        padding: 20px 10px;
     }
-    tbody tr{
-        border-top:solid 1px #d4d4d4;
+    tbody tr,thead tr{
+        border-bottom:solid 1px #d4d4d4;
     }
     td{
-        padding: 20px;
-        
+        padding: 20px 10px;
+        vertical-align: middle;        
+    }
+    .quoteQuantity{
+        background: #f2f2f2;
+        padding: 15px 20px;
+        display: inline-block;
+        border:solid 1px #d4d4d4;
+        font-size: 20px;
+        .border-radius(5px)
+    }
+    .quantityHistoryWrap{
+        margin-top: 5px;
+        a{
+            display: block;
+            padding: 10px;
+            .caret{
+                position: relative;
+                top: 8px;
+            }
+        }
+    }  
+}
+/* Check icons */
+.quoteCheckIcon{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    display: inline-block;
+    background:  url("@{baseImagePath}/hz-quote-order/check-icons.png") no-repeat 0 0;
+}
+.quoteUnchecked{
+    background-position: 0 -40px;
+}
+.quoteRemove{
+    background-position: 0 -80px;
+    width: auto;
+    line-height: 40px;
+    padding-left: 50px;
+    color: #c91d1d;
+    &:hover{
+        color: #c91d1d;
     }
 }
-
+/* Media Queries */
 @media (max-width:979px){
     .quoteCartTable{
         thead{
@@ -2283,14 +2329,12 @@ RESPONSIVE OVERRIDES
             display: block;
             clear: left;
             float: left;
-            
             .box-sizing(border-box)     
         }
         tr{
             width: 100%;
         }        
         td{
-
             &:before{
                 content: attr(data-th);
                 .retailThinRedHeader;
@@ -2298,6 +2342,38 @@ RESPONSIVE OVERRIDES
                 width: 150px;
 
             }
+        }
+    }
+}
+/* Delivery Options */
+.retailQuoteDeliveryWrap{
+    padding: 20px;
+}
+.retailQuoteOrderSummary{
+    border:solid 1px #c91d1d;
+    .retailThinRedHeader{
+        padding: 20px 20px 0;
+       margin: 0;
+    }
+    dl{
+        padding: 20px;
+         margin: 0;
+        .clearfix;
+    }
+    dt,dd{
+        float: left;
+        width: 50%;
+        margin: 0;
+        padding: 3px 0;
+    }
+    dt{
+        clear: left;
+    }
+    .summaryGrandTotal{
+        border-top:solid 1px #c91d1d;
+        color:#c91d1d;
+        dd{
+            font-size: 20px
         }
     }
 }

@@ -51,8 +51,89 @@
 							<h2 class="retailQuoteRedHeader">Delivery Options</h2>
 
 							<div class="retailQuoteShadowBox">
-								<div class="row-fluid">
+								<div class="retailQuoteDeliveryWrap">
+									<div class="row-fluid">
+										<div class="span8">
+											<h3 class="retailThinRedHeader">Select your delivery process</h3>
+											<p class="retailQuoteMessage">How would you like to receive your goods?</p>
+											<div class="">
+												<div class="">
+													Delivery
+												</div>
+												<div class="">
+													Pick Up
+												</div>
+											</div>
+										</div>
+										<div class="span4">
+											<div class="retailQuoteOrderSummary">
+												<h4 class="retailThinRedHeader">
+													Order Summary
+												</h4>
+												<dl>
+													<dt>Product Total</dt>
+													<dd>$1505.95</dd>
+													<dt>Delivery</dt>
+													<dd>$50</dd>
+												</dl>
+												<dl class="summaryGrandTotal">
+													<dt>Grand Total</dt>
+													<dd>$1555.95</dd>
+												</dl>
+											</div>
+										</div>
+									</div>
+									<div >
+										<p class="retailQuoteGraytext">Delivery will incur a cost $50 per delivery. Some more copy on delivery. This is when you need to order it, we will ensure it comes in this time frame etc.</p>
+										<hr>
+										<div id="retailQuoteDeliveryOptions" class="row-fluid">
+											<div class="span6">
+												<dl>
+													<dt>Quote Branch</dt>
+													<dd>123 Fake Street</dd>
+												</dl>
 
+												<h4 class="retailQuoteRedHeader">Delivery Contact Details</h4>
+												<form class="retailQuoteForm">
+													<div class="controls">
+														<input placeholder="Name" type="text">
+													</div>
+													<div class="controls">
+														<input placeholder="Number" type="text">
+													</div>													
+												</form>
+											</div>
+											<div class="span6">
+												<dl>
+													<dt>Order Number</dt>
+													<dd>123 Fake Street</dd>
+												</dl>
+												<h4 class="retailQuoteRedHeader">Delivery Address</h4>
+												<form class="retailQuoteForm">
+													<div class="controls">
+														<input placeholder="Address" type="text">
+													</div>
+													<div class="controls">
+														<input placeholder="Suburb" type="text">
+													</div>													
+												</form>
+											</div>
+										</div><!-- /#retailQuoteDeliveryOptions -->
+										<div class="row-fluid">
+											<div class="span3">
+												<h5 class="retailThinRedHeader">Quote Branch </h5>
+												<p class="retailQuoteGraytext">Bathroom Life Burwood</p>
+											</div>
+											<div class="span3">
+												<h5 class="retailThinRedHeader">Pick Up Branch</h5>
+												<p class="retailQuoteGraytext">Bathroom Life Burwood<br>118 Burwood Highway, Burwood<br>Victoria, 3125<br>9274 0000</p>
+												<a href="">Change</a>
+											</div>
+										</div>
+										<div class="clearfix">
+										<button class="retailQuoteRedBtnLarge pull-right"><i class="icon-shopping-cart icon-large">&nbsp;</i> Proceed to Payment</button>
+										</div>
+									</div>
 								</div>
 							</div><!-- /.retailQuoteShadowBox -->
 						</div>

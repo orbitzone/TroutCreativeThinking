@@ -1910,6 +1910,9 @@ RESPONSIVE OVERRIDES
   padding: 50px;
 }
 /* Retail Quote Form */
+.retailQuoteForm .controls {
+  padding-bottom: 10px;
+}
 .retailQuoteForm input[type="text"],
 .retailQuoteForm input[type="email"],
 .retailQuoteForm input[type="password"] {
@@ -2083,6 +2086,7 @@ RESPONSIVE OVERRIDES
 /* retailQuoteCart */
 .quoteCartTable {
   width: 100%;
+  font-size: 16px;
 }
 .quoteCartTable th {
   color: #c91d1d;
@@ -2090,14 +2094,59 @@ RESPONSIVE OVERRIDES
   font-size: 20px;
   padding-bottom: 5px;
   text-align: left;
-  padding: 20px;
+  padding: 20px 10px;
 }
-.quoteCartTable tbody tr {
-  border-top: solid 1px #d4d4d4;
+.quoteCartTable tbody tr,
+.quoteCartTable thead tr {
+  border-bottom: solid 1px #d4d4d4;
 }
 .quoteCartTable td {
-  padding: 20px;
+  padding: 20px 10px;
+  vertical-align: middle;
 }
+.quoteCartTable .quoteQuantity {
+  background: #f2f2f2;
+  padding: 15px 20px;
+  display: inline-block;
+  border: solid 1px #d4d4d4;
+  font-size: 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.quoteCartTable .quantityHistoryWrap {
+  margin-top: 5px;
+}
+.quoteCartTable .quantityHistoryWrap a {
+  display: block;
+  padding: 10px;
+}
+.quoteCartTable .quantityHistoryWrap a .caret {
+  position: relative;
+  top: 8px;
+}
+/* Check icons */
+.quoteCheckIcon {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  display: inline-block;
+  background: url("../images/hz-quote-order/check-icons.png") no-repeat 0 0;
+}
+.quoteUnchecked {
+  background-position: 0 -40px;
+}
+.quoteRemove {
+  background-position: 0 -80px;
+  width: auto;
+  line-height: 40px;
+  padding-left: 50px;
+  color: #c91d1d;
+}
+.quoteRemove:hover {
+  color: #c91d1d;
+}
+/* Media Queries */
 @media (max-width: 979px) {
   .quoteCartTable thead {
     display: none;
@@ -2123,4 +2172,46 @@ RESPONSIVE OVERRIDES
     float: left;
     width: 150px;
   }
+}
+/* Delivery Options */
+.retailQuoteDeliveryWrap {
+  padding: 20px;
+}
+.retailQuoteOrderSummary {
+  border: solid 1px #c91d1d;
+}
+.retailQuoteOrderSummary .retailThinRedHeader {
+  padding: 20px 20px 0;
+  margin: 0;
+}
+.retailQuoteOrderSummary dl {
+  padding: 20px;
+  margin: 0;
+  *zoom: 1;
+}
+.retailQuoteOrderSummary dl:before,
+.retailQuoteOrderSummary dl:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.retailQuoteOrderSummary dl:after {
+  clear: both;
+}
+.retailQuoteOrderSummary dt,
+.retailQuoteOrderSummary dd {
+  float: left;
+  width: 50%;
+  margin: 0;
+  padding: 3px 0;
+}
+.retailQuoteOrderSummary dt {
+  clear: left;
+}
+.retailQuoteOrderSummary .summaryGrandTotal {
+  border-top: solid 1px #c91d1d;
+  color: #c91d1d;
+}
+.retailQuoteOrderSummary .summaryGrandTotal dd {
+  font-size: 20px;
 }

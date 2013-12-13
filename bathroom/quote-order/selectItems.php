@@ -61,23 +61,49 @@
 											<th>Sub Cost</th>
 										</tr>
 									</thead>
+									<tfoot>
+										<tr>
+											<td colspan="5"><a class="quoteCheckIcon quoteRemove">Clear Order</a></td>
+										</tr>
+										<tr>
+											<td colspan="3"></td>
+											<td> Includes GST</td>
+											<td> <span class="GST">$136.42</span> </td>
+										</tr>
+										<tr>
+											<td colspan="3"></td>
+											<td> <strong>Total</strong></td>
+											<td>$1,500.60 </td>
+										</tr>										
+									</tfoot>
 									<tbody>
 										<tr>
-											<td data-th="Include">Check</td>
-											<td data-th="Product Details">Product Name</td>
-											<td data-th="Quantity">4</td>
+											<td data-th="Include"><a><span class="quoteCheckIcon"></span></a></td>
+											<td data-th="Product Details">
+												Product Name
+											</td>
+											<td data-th="Quantity">
+												<span class="quoteQuantity">4</span>
+												<div class="quantityHistoryWrap">
+													<a herf="#">Quanity History <span class="caret"></span></a>
+
+												</div>
+											</td>
 											<td data-th="Unit Cost">$300.12</td>
 											<td data-th="Sub Cost">$1,200.48</td>
 										</tr>
 										<tr>
-											<td data-th="Include">Check</td>
+											<td data-th="Include"><a><span class="quoteCheckIcon quoteUnchecked"></span></a></td>
 											<td data-th="Product Details">Product Name</td>
-											<td data-th="Quantity">4</td>
+											<td data-th="Quantity"><span class="quoteQuantity">4</span></td>
 											<td data-th="Unit Cost">$300.12</td>
 											<td data-th="Sub Cost">$1,200.48</td>
 										</tr>										
 									</tbody>
 								</table>
+								<div class="clearfix">
+									<button class="retailQuoteRedBtnLarge pull-right"><i class="icon-shopping-cart icon-large">&nbsp;</i> Checkout</button>
+								</div>
 							</div>	
 						</div>
 					</div>

@@ -2062,42 +2062,6 @@ RESPONSIVE OVERRIDES
   border-top: solid 1px #d4d4d4;
   padding: 20px;
 }
-/* */
-@media (max-width: 979px) {
-  .quoteIcon .quoteIconInner {
-    font-size: 60px;
-    line-height: 50px;
-  }
-}
-@media (max-width: 767px) {
-  .retailQuoteInner {
-    padding: 20px;
-  }
-  .quoteIcon {
-    margin: 10px 0 20px;
-  }
-  .myQuoteActions .retailQuoteRedBtnLarge {
-    margin-top: 30px;
-  }
-}
-@media (max-width: 480px) {
-  .retailQuoteBanner .retailQuoteBannerTextWrap .retailQuoteBannerText {
-    margin: 0 20px;
-  }
-  .progressWizzard li {
-    margin: 0 3px;
-    font-size: 16px;
-    top: -15px;
-  }
-  .progressWizzard li a {
-    height: 30px;
-    width: 30px;
-    line-height: 30px;
-  }
-  .quoteMoreInfo {
-    padding: 20px 0;
-  }
-}
 /* Check icons */
 .quoteCheckIcon {
   height: 40px;
@@ -2236,56 +2200,6 @@ RESPONSIVE OVERRIDES
 .quantityHistoryContent {
   clear: both;
 }
-/* Media Queries */
-@media (max-width: 979px) {
-  .quoteCartTable thead {
-    display: none;
-  }
-  .quoteCartTable tr,
-  .quoteCartTable td {
-    display: block;
-    clear: left;
-    float: left;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  .quoteCartTable tr {
-    width: 100%;
-  }
-  .quoteCartTable tbody td {
-    padding: 10px;
-  }
-  .quoteCartTable tbody td:before {
-    content: attr(data-th);
-    color: #c91d1d;
-    font-weight: 200;
-    font-size: 20px;
-    padding-bottom: 5px;
-    float: left;
-    width: 150px;
-  }
-  .quoteCartTable .quoteCartTableContent {
-    margin-left: 160px;
-  }
-}
-@media (max-width: 480px) {
-  .quoteCartTable tbody td:before {
-    display: block;
-    float: none;
-    width: auto;
-    padding-bottom: 10px;
-  }
-  .quoteCartTable .quoteCartTableContent {
-    margin-left: 0;
-  }
-  .quoteCartTable .quoteProductInfoThumb,
-  .quoteCartTable .quoteProductInfoDesc,
-  .quoteCartTable .quoteProductInfoThumb {
-    display: block;
-    width: auto;
-  }
-}
 /* Delivery Options */
 .retailQuoteDeliveryWrap {
   padding: 20px;
@@ -2344,4 +2258,98 @@ RESPONSIVE OVERRIDES
 .deliverOptionDL dd {
   margin: 0;
   padding: 0;
+}
+/* Media Queries */
+@media (max-width: 979px) {
+  .retailQuoteRedBtnLarge {
+    padding: 10px 20px;
+  }
+  .myQuoteActions a {
+    margin-top: 12px;
+  }
+  .quoteIcon {
+    margin: 40px 10px 0 0;
+  }
+  .quoteIcon .quoteIconInner {
+    font-size: 60px;
+    line-height: 50px;
+  }
+  .quoteCartTable thead {
+    display: none;
+  }
+  .quoteCartTable tr,
+  .quoteCartTable td {
+    display: block;
+    clear: left;
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .quoteCartTable tr {
+    width: 100%;
+    padding: 20px 0;
+  }
+  .quoteCartTable tbody td {
+    padding: 10px;
+  }
+  .quoteCartTable tbody td:before {
+    content: attr(data-th);
+    color: #c91d1d;
+    font-weight: 200;
+    font-size: 20px;
+    padding-bottom: 5px;
+    float: left;
+    width: 150px;
+  }
+  .quoteCartTable .quoteCartTableContent {
+    margin-left: 160px;
+  }
+}
+@media (max-width: 767px) {
+  .retailQuoteInner {
+    padding: 20px;
+  }
+  .quoteIcon {
+    margin: 10px 0 20px;
+  }
+  .myQuoteActions .retailQuoteRedBtnLarge {
+    margin-top: 30px;
+  }
+  .retailQuoteOrderSummary {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .retailQuoteBanner .retailQuoteBannerTextWrap .retailQuoteBannerText {
+    margin: 0 20px;
+  }
+  .progressWizzard li {
+    margin: 0 3px;
+    font-size: 16px;
+    top: -15px;
+  }
+  .progressWizzard li a {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+  }
+  .quoteMoreInfo {
+    padding: 20px 0;
+  }
+  .quoteCartTable tbody td:before {
+    display: block;
+    float: none;
+    width: auto;
+    padding-bottom: 10px;
+  }
+  .quoteCartTable .quoteCartTableContent {
+    margin-left: 0;
+  }
+  .quoteCartTable .quoteProductInfoThumb,
+  .quoteCartTable .quoteProductInfoDesc,
+  .quoteCartTable .quoteProductInfoThumb {
+    display: block;
+    width: auto;
+  }
 }

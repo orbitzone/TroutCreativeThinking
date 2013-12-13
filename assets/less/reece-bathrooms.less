@@ -2230,48 +2230,7 @@ RESPONSIVE OVERRIDES
     padding: 20px;
 }
 
-/* */
-@media (max-width:979px){
-    .quoteIcon{
-        .quoteIconInner{
-            font-size: 60px;
-            line-height:50px;
-        }
-    }
-}
-@media (max-width:767px){
-    .retailQuoteInner{
-        padding: 20px;
-    }
-    .quoteIcon{
-        margin: 10px 0 20px;
-        .quoteIconInner{
 
-        }
-    }
-    .myQuoteActions .retailQuoteRedBtnLarge{
-        margin-top: 30px;
-    }
-}
-@media (max-width:480px){
-    .retailQuoteBanner .retailQuoteBannerTextWrap .retailQuoteBannerText{
-        margin: 0 20px;
-    }
-    .progressWizzard li{
-        margin: 0 3px;
-        font-size: 16px;
-        top: -15px;
-        a{
-            height: 30px;
-            width: 30px;
-            line-height: 30px;
-
-        }
-    }
-    .quoteMoreInfo{
-        padding: 20px 0
-    }
-}
 
 
 /* Check icons */
@@ -2407,58 +2366,7 @@ RESPONSIVE OVERRIDES
     clear: both;
 }
 
-/* Media Queries */
-@media (max-width:979px){
-    .quoteCartTable{
-        thead{
-            display: none;
-        }
-        tr,td{
-            display: block;
-            clear: left;
-            float: left;
-            .box-sizing(border-box)     
-        }
-        tr{
-            width: 100%;
-        }        
-        tbody td{
-            padding: 10px;
-            &:before{
-                content: attr(data-th);
-                .retailThinRedHeader;
-                float: left;
-                width: 150px;
 
-            }
-        }
-        .quoteCartTableContent{
-            margin-left: 160px;
-        }
-    }
-}
-@media (max-width:480px){
-    .quoteCartTable{
-        
-        tbody td{
-
-            &:before{
-                display: block;
-                float: none;
-                width: auto;
-                padding-bottom: 10px;
-
-            }
-        }
-        .quoteCartTableContent{
-            margin-left:0
-        }
-        .quoteProductInfoThumb, .quoteProductInfoDesc, .quoteProductInfoThumb{
-            display: block;
-            width: auto;
-        }
-    }
-}
 /* Delivery Options */
 .retailQuoteDeliveryWrap{
     padding: 20px;
@@ -2507,5 +2415,106 @@ RESPONSIVE OVERRIDES
     dd{
         margin: 0;
         padding: 0
+    }
+}
+/* Media Queries */
+@media (max-width:979px){
+    .retailQuoteRedBtnLarge{
+        padding: 10px 20px;
+    }
+    .myQuoteActions a{
+        margin-top: 12px;
+    }    
+    .quoteIcon{
+        margin: 40px 10px 0 0;
+        .quoteIconInner{
+            font-size: 60px;
+            line-height:50px;
+        }
+    }
+    .quoteCartTable{
+        thead{
+            display: none;
+        }
+        tr,td{
+            display: block;
+            clear: left;
+            float: left;
+            .box-sizing(border-box)     
+        }
+        tr{
+            width: 100%;
+            padding: 20px 0;
+        }        
+        tbody td{
+            padding: 10px;
+            &:before{
+                content: attr(data-th);
+                .retailThinRedHeader;
+                float: left;
+                width: 150px;
+
+            }
+        }
+        .quoteCartTableContent{
+            margin-left: 160px;
+        }
+    }    
+}
+@media (max-width:767px){
+    .retailQuoteInner{
+        padding: 20px;
+    }
+    .quoteIcon{
+        margin: 10px 0 20px;
+        .quoteIconInner{
+
+        }
+    }
+    .myQuoteActions .retailQuoteRedBtnLarge{
+        margin-top: 30px;
+    }
+    .retailQuoteOrderSummary{
+        margin-bottom: 20px;
+    }
+
+}
+@media (max-width:480px){
+    .retailQuoteBanner .retailQuoteBannerTextWrap .retailQuoteBannerText{
+        margin: 0 20px;
+    }
+    .progressWizzard li{
+        margin: 0 3px;
+        font-size: 16px;
+        top: -15px;
+        a{
+            height: 30px;
+            width: 30px;
+            line-height: 30px;
+
+        }
+    }
+    .quoteMoreInfo{
+        padding: 20px 0
+    }
+    .quoteCartTable{
+        
+        tbody td{
+
+            &:before{
+                display: block;
+                float: none;
+                width: auto;
+                padding-bottom: 10px;
+
+            }
+        }
+        .quoteCartTableContent{
+            margin-left:0
+        }
+        .quoteProductInfoThumb, .quoteProductInfoDesc, .quoteProductInfoThumb{
+            display: block;
+            width: auto;
+        }
     }
 }

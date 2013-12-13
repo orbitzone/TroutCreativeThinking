@@ -171,10 +171,10 @@
 		<script type="text/javascript">
 			$(function(){
 				$('#quoteMoreInfoWrap').on('hide', function () {
-					$('#showQuoteMoreInfo').html('<i class="icon-caret-down icon-large">&nbsp;</i> Show More');
+					$('#showQuoteMoreInfo').html('<i class="icon-caret-down icon-large">&nbsp;</i> SHOW MORE');
 				});
 				$('#quoteMoreInfoWrap').on('show', function () {
-					$('#showQuoteMoreInfo').html('<i class="icon-caret-up icon-large">&nbsp;</i> Show Less');
+					$('#showQuoteMoreInfo').html('<i class="icon-caret-up icon-large">&nbsp;</i> SHOW LESS');
 				});	
 			});
 		</script>

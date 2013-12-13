@@ -53,7 +53,7 @@
 							<div class="retailQuoteShadowBox">
 								<div class="retailQuoteDeliveryWrap">
 									<div class="row-fluid">
-										<div class="span8">
+										<div class="span7">
 											<h3 class="retailThinRedHeader">Select your delivery process</h3>
 											<p class="retailQuoteMessage">How would you like to receive your goods?</p>
 											<div class="retailQuoteDeliveryOptions">
@@ -65,7 +65,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="span4">
+										<div class="span5">
 											<div class="retailQuoteOrderSummary">
 												<h4 class="retailThinRedHeader">
 													Order Summary

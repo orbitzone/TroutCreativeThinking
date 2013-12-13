@@ -56,12 +56,12 @@
 										<div class="span8">
 											<h3 class="retailThinRedHeader">Select your delivery process</h3>
 											<p class="retailQuoteMessage">How would you like to receive your goods?</p>
-											<div class="">
-												<div class="">
-													Delivery
+											<div class="retailQuoteDeliveryOptions">
+												<div class="retailQuoteDeliveryOption">
+													<a id="retailQuoteSelectDelivery" class="quoteCheckIcon quoteUnchecked" href="#">Delivery</a>
 												</div>
-												<div class="">
-													Pick Up
+												<div class="retailQuoteDeliveryOption">
+													<a id="retailQuoteSelectPickup"  class="quoteCheckIcon quoteUnchecked" href="#">Pick Up</a>
 												</div>
 											</div>
 										</div>
@@ -83,14 +83,18 @@
 											</div>
 										</div>
 									</div>
-									<div >
-										<p class="retailQuoteGraytext">Delivery will incur a cost $50 per delivery. Some more copy on delivery. This is when you need to order it, we will ensure it comes in this time frame etc.</p>
+									<div id="retailQuoteDeliveryPickupOptions" class="collapse">
+										<div class="row-fluid">
+											<div class="span6">
+											<p class="retailQuoteGraytext">Delivery will incur a cost $50 per delivery. Some more copy on delivery. This is when you need to order it, we will ensure it comes in this time frame etc.</p>
+											</div>
+										</div>
 										<hr>
 										<div id="retailQuoteDeliveryOptions" class="row-fluid">
 											<div class="span6">
-												<dl>
-													<dt>Quote Branch</dt>
-													<dd>123 Fake Street</dd>
+												<dl class="deliverOptionDL">
+													<dt class="retailThinRedHeader">Quote Branch</dt>
+													<dd class="retailQuoteGraytext">123 Fake Street</dd>
 												</dl>
 
 												<h4 class="retailQuoteRedHeader">Delivery Contact Details</h4>
@@ -104,9 +108,9 @@
 												</form>
 											</div>
 											<div class="span6">
-												<dl>
-													<dt>Order Number</dt>
-													<dd>123 Fake Street</dd>
+												<dl class="deliverOptionDL">
+													<dt class="retailThinRedHeader">Order Number</dt>
+													<dd class="retailQuoteGraytext">123 Fake Street</dd>
 												</dl>
 												<h4 class="retailQuoteRedHeader">Delivery Address</h4>
 												<form class="retailQuoteForm">
@@ -119,7 +123,7 @@
 												</form>
 											</div>
 										</div><!-- /#retailQuoteDeliveryOptions -->
-										<div class="row-fluid">
+										<div id="retailQuotePickupOptions" class="row-fluid">
 											<div class="span3">
 												<h5 class="retailThinRedHeader">Quote Branch </h5>
 												<p class="retailQuoteGraytext">Bathroom Life Burwood</p>
@@ -127,7 +131,7 @@
 											<div class="span3">
 												<h5 class="retailThinRedHeader">Pick Up Branch</h5>
 												<p class="retailQuoteGraytext">Bathroom Life Burwood<br>118 Burwood Highway, Burwood<br>Victoria, 3125<br>9274 0000</p>
-												<a href="">Change</a>
+												<a class="retailQuoteRedLink" href="#">Change</a>
 											</div>
 										</div>
 										<div class="clearfix">
@@ -168,5 +172,26 @@
 		  	); 
 		  	include_once($serverBase."/includes/foot/scripts.php");
 		?>
+		<script type="text/javascript">
+			$(function(){
+				$('#retailQuoteSelectDelivery').click(function(e){
+					e.preventDefault();
+					$('#retailQuoteSelectDelivery').removeClass('quoteUnchecked');
+					$('#retailQuoteSelectPickup').addClass('quoteUnchecked');
+					$('#retailQuoteDeliveryOptions').show();
+					$('#retailQuotePickupOptions').hide();
+					$('#retailQuoteDeliveryPickupOptions').collapse('show');
+				});
+				$('#retailQuoteSelectPickup').click(function(e){
+					e.preventDefault();
+					$('#retailQuoteSelectDelivery').addClass('quoteUnchecked');
+					$('#retailQuoteSelectPickup').removeClass('quoteUnchecked');					
+					$('#retailQuoteDeliveryOptions').hide();
+					$('#retailQuotePickupOptions').show();
+					$('#retailQuoteDeliveryPickupOptions').collapse('show');
+					console.log(this)
+				});				
+			})
+		</script>
     </body>
 </html>

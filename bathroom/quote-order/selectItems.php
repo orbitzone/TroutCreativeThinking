@@ -78,14 +78,14 @@
 									</tfoot>
 									<tbody>
 										<tr>
-											<td data-th="Include"><a><span class="quoteCheckIcon"></span></a></td>
+											<td data-th="Include"><a class="quoteCheckIcon"></a></td>
 											<td data-th="Product Details">
 												Product Name
 											</td>
 											<td data-th="Quantity">
 												<span class="quoteQuantity">4</span>
 												<div class="quantityHistoryWrap">
-													<a herf="#">Quanity History <span class="caret"></span></a>
+													<a herf="#">Quantity History <span class="caret"></span></a>
 
 												</div>
 											</td>
@@ -93,7 +93,7 @@
 											<td data-th="Sub Cost">$1,200.48</td>
 										</tr>
 										<tr>
-											<td data-th="Include"><a><span class="quoteCheckIcon quoteUnchecked"></span></a></td>
+											<td data-th="Include"><a class="quoteCheckIcon quoteUnchecked"></a></td>
 											<td data-th="Product Details">Product Name</td>
 											<td data-th="Quantity"><span class="quoteQuantity">4</span></td>
 											<td data-th="Unit Cost">$300.12</td>

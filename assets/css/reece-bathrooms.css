@@ -2191,6 +2191,12 @@ RESPONSIVE OVERRIDES
 .quoteCartTable .quantityHistoryAction a:hover {
   color: #c91d1d;
 }
+.quoteCartTable .quantityHistoryAction .quantityHistoryOrderNone {
+  float: left;
+}
+.quoteCartTable .quantityHistoryAction .quantityHistoryOrderAll {
+  float: right;
+}
 .quoteProductInfo {
   display: table;
   clear: both;
@@ -2315,6 +2321,7 @@ RESPONSIVE OVERRIDES
     width: 150px;
     padding-bottom: 10px;
     display: block;
+    font-size: 16px;
   }
   .quoteCartTable tfoot td[colspan="3"] {
     display: none;
@@ -2368,6 +2375,9 @@ RESPONSIVE OVERRIDES
   .quoteMoreInfo {
     padding: 20px 0;
   }
+  .quoteCartTable tbody td {
+    padding: 10px 0;
+  }
   .quoteCartTable tbody td:before {
     display: block;
     float: none;
@@ -2377,10 +2387,32 @@ RESPONSIVE OVERRIDES
   .quoteCartTable .quoteCartTableContent {
     margin-left: 0;
   }
-  .quoteCartTable .quoteProductInfoThumb,
+  .quoteCartTable .quoteProductInfo,
   .quoteCartTable .quoteProductInfoDesc,
   .quoteCartTable .quoteProductInfoThumb {
     display: block;
     width: auto;
+  }
+  .quoteCartTable .quoteProductInfoDesc,
+  .quoteCartTable .quoteProductInfoThumb {
+    padding: 10px 0;
+  }
+  .quoteCartTable .quantityHistoryWrap a.dropdown-toggle {
+    width: 180px;
+    min-width: auto;
+  }
+  .quoteCartTable .quantityHistoryWrap .dropdown-menu {
+    width: 200px;
+  }
+  .quoteCartTable .quantityHistoryInfo,
+  .quoteCartTable .quantityHistoryInfo li {
+    display: block;
+    width: auto;
+  }
+  .quoteCartTable .quantityHistoryAction .quantityHistoryOrderNone,
+  .quoteCartTable .quantityHistoryAction .quantityHistoryOrderAll {
+    float: none;
+    padding: 5px 0;
+    display: block;
   }
 }

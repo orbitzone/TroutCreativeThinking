@@ -35,9 +35,9 @@
 					<div class="retailQuoteBanner">
 						<img src="/assets/images/hz-quote-order/quote-banner.jpg" alt="banner" />
 						<div class="retailQuoteBannerTextWrap">
-							<div class="retailQuoteBannerText">
+							<h2 class="retailQuoteBannerText">
 								My Quotes
-							</div>
+							</h2>
 						</div>
 					</div>
 					<div class="retailQuoteInner">

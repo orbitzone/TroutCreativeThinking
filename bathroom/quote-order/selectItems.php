@@ -35,9 +35,9 @@
 					<div class="retailQuoteBanner">
 						<img src="/assets/images/hz-quote-order/quote-banner.jpg" alt="banner" />
 						<div class="retailQuoteBannerTextWrap">
-							<div class="retailQuoteBannerText">
+							<h2 class="retailQuoteBannerText">
 								Quote Details
-							</div>
+							</h2>
 						</div>
 					</div>
 					<div class="retailQuoteInner">
@@ -93,19 +93,19 @@
 											</td>
 											<td data-th="Quantity">
 											<div class="quantityHistoryContent">
-												<span class="quoteQuantity">4</span>
+												<span class="quoteQuantity">3</span>
 												<div class="quantityHistoryWrap dropdown">
 													<a herf="#"class="dropdown-toggle" data-toggle="dropdown">Quantity History <span class="caret"></span></a>
 													<div class="dropdown-menu">
 														<ul class="quantityHistoryInfo">
 															<li>Quoted <span class="retailQuoteGraytext">6</span></li>
 															<li>Ordered <span class="retailQuoteGraytext">2</span></li>
-															<li class="remaining">Remaining 4</li>
+															<li class="remaining">Remaining <span class="quantityHistoryRemaining">4</span></li>
 														</ul>
 
 														<div class="quantityHistoryAction clearfix">
-															<a class="pull-left" href="#">Order All</a>
-															<a class="pull-right" href="#">Order None</a>
+															<a class="quantityHistoryOrderNone" href="#">Order None</a>
+															<a class="quantityHistoryOrderAll" href="#">Order All</a>
 														</div>
 													</div>
 												</div>
@@ -130,19 +130,18 @@
 											</td>
 											<td data-th="Quantity">
 											<div class="quantityHistoryContent">
-												<span class="quoteQuantity">4</span>
+												<span class="quoteQuantity">1</span>
 												<div class="quantityHistoryWrap dropdown">
 													<a herf="#"class="dropdown-toggle" data-toggle="dropdown">Quantity History <span class="caret"></span></a>
 													<div class="dropdown-menu">
 														<ul class="quantityHistoryInfo">
 															<li>Quoted <span class="retailQuoteGraytext">6</span></li>
 															<li>Ordered <span class="retailQuoteGraytext">2</span></li>
-															<li class="remaining">Remaining 4</li>
+															<li class="remaining">Remaining <span class="quantityHistoryRemaining">4</span></li>
 														</ul>
-
 														<div class="quantityHistoryAction clearfix">
-															<a class="pull-left" href="#">Order All</a>
-															<a class="pull-right" href="#">Order None</a>
+															<a class="quantityHistoryOrderNone" href="#">Order None</a>
+															<a class="quantityHistoryOrderAll" href="#">Order All</a>
 														</div>
 													</div>
 												</div>
@@ -202,6 +201,17 @@
 					$(this).toggleClass('quoteUnchecked');
 				});
 				$('.dropdown-toggle').dropdown();
+
+
+				$('.quantityHistoryOrderNone').click(function(e){
+					e.preventDefault();
+					$(this).closest('.quantityHistoryContent').find('.quoteQuantity').html('0');
+				})
+
+				$('.quantityHistoryOrderAll').click(function(e){
+					e.preventDefault();
+					$(this).closest('.quantityHistoryContent').find('.quoteQuantity').html($(this).closest('.quantityHistoryContent').find('.quantityHistoryRemaining').html());
+				})
 			});
 		</script>
     </body>

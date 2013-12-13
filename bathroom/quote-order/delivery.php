@@ -35,9 +35,9 @@
 					<div class="retailQuoteBanner">
 						<img src="/assets/images/hz-quote-order/quote-banner.jpg" alt="banner" />
 						<div class="retailQuoteBannerTextWrap">
-							<div class="retailQuoteBannerText">
+							<h2 class="retailQuoteBannerText">
 								Quote Details
-							</div>
+							</h2>
 						</div>
 					</div>
 					<div class="retailQuoteInner">
@@ -180,7 +180,10 @@
 					$('#retailQuoteSelectPickup').addClass('quoteUnchecked');
 					$('#retailQuoteDeliveryOptions').show();
 					$('#retailQuotePickupOptions').hide();
-					$('#retailQuoteDeliveryPickupOptions').collapse('show');
+					if (! $('#retailQuoteDeliveryPickupOptions').height()){
+						$('#retailQuoteDeliveryPickupOptions').collapse('show');
+					}
+					
 				});
 				$('#retailQuoteSelectPickup').click(function(e){
 					e.preventDefault();
@@ -188,10 +191,13 @@
 					$('#retailQuoteSelectPickup').removeClass('quoteUnchecked');					
 					$('#retailQuoteDeliveryOptions').hide();
 					$('#retailQuotePickupOptions').show();
-					$('#retailQuoteDeliveryPickupOptions').collapse('show');
-					console.log(this)
+					if (! $('#retailQuoteDeliveryPickupOptions').height()){
+						$('#retailQuoteDeliveryPickupOptions').collapse('show');
+					}
 				});				
 			})
+
+
 		</script>
     </body>
 </html>

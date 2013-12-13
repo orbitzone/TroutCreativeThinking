@@ -2354,6 +2354,8 @@ RESPONSIVE OVERRIDES
                 color: #c91d1d
             }
         }
+        .quantityHistoryOrderNone{ float: left;}
+        .quantityHistoryOrderAll{float: right}
     }
 }
 .quoteProductInfo{
@@ -2467,7 +2469,7 @@ RESPONSIVE OVERRIDES
                 width: 150px;
                 padding-bottom: 10px;
                 display: block;
-
+                font-size: 16px;
             }
         }
         tfoot{
@@ -2533,21 +2535,43 @@ RESPONSIVE OVERRIDES
     .quoteCartTable{
         
         tbody td{
+            padding: 10px 0;
 
             &:before{
                 display: block;
                 float: none;
                 width: auto;
                 padding-bottom: 10px;
-
             }
         }
         .quoteCartTableContent{
             margin-left:0
         }
-        .quoteProductInfoThumb, .quoteProductInfoDesc, .quoteProductInfoThumb{
+        .quoteProductInfo, .quoteProductInfoDesc, .quoteProductInfoThumb{
             display: block;
             width: auto;
         }
-    }
+        .quoteProductInfoDesc, .quoteProductInfoThumb{
+            padding: 10px 0
+        }
+        .quantityHistoryWrap{
+
+            a.dropdown-toggle{
+                width: 180px;
+                min-width: auto;
+
+            }
+            .dropdown-menu{
+                width: 200px;
+            }
+        }
+        .quantityHistoryInfo,.quantityHistoryInfo li{
+            display: block;
+            width: auto;
+        } 
+        .quantityHistoryAction{
+
+            .quantityHistoryOrderNone, .quantityHistoryOrderAll{float: none;padding: 5px 0; display: block;}
+        }              
+    }    
 }

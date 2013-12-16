@@ -81,7 +81,7 @@
 							</div>
 						</div>
 						<div class="span4">
-							<div class="promo"> <a href="http://www.reece.com.au/bathroom-inspiration/trends"><img src="/assets/images/the-block-skyhigh/placeholder-promo-trends.jpg" /></a>
+							<div class="promo"> <a href="http://www.reece.com.au/bathroom-inspiration/trends"><img src="/assets/images/the-block-skyhigh/promo-trends.jpg" /></a>
 								<div class="copy">
 									<h4>Bathroom Trends</h4>
 									<h5>Get the look</h5>
@@ -90,7 +90,7 @@
 							</div>
 						</div>
 						<div class="span4">
-							<div class="promo"> <a href="http://www.reece.com.au/bathrooms/happy-tips/avoid-the-headbutt"><img src="/assets/images/the-block-skyhigh/placeholder-promo-tip.jpg" /></a>
+							<div class="promo"> <a href="http://www.reece.com.au/bathrooms/happy-tips/avoid-the-headbutt"><img src="/assets/images/the-block-skyhigh/promo-tip.jpg" /></a>
 								<div class="copy">
 									<h4>Happy Tip #1</h4>
 									<h5>Avoid the headbutt</h5>

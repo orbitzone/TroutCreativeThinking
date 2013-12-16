@@ -26,7 +26,7 @@
 				<!-- content here -->
 <div class="main-wrapper">
 	<div class="row-fluid sub-header">
-		<div class="span3 block-logo"> <img src="/assets/images/the-block-skyhigh/the-block-logo.jpg" /> </div>
+		<div class="span3 block-logo"> <a href="index.php"><img src="/assets/images/the-block-skyhigh/the-block-logo.jpg" /></a></div>
 		<div class="span9">
 			<h2>Reece on The Block</h2>
 			<h3 class="pull-right">The biggest Block EVER is here, this time we are going higher than ever before!</h3>
@@ -36,11 +36,11 @@
 		<div class="span12 bottom-space">
 			<div class="row-fluid">
 				<ul class="nav nav-couples">
-					<li class="vic"><a href="couple.php" title="">VIC<span>Bec &amp; George</span></a></li>
-					<li class="nsw inactive"><a href="couple.php" title="">NSW<span>Madi &amp; Jarrod</span></a></li>
-					<li class="qld inactive"><a href="couple.php" title="">QLD<span>Trixie &amp; Johnno</span></a></li>
-					<li class="sa inactive"><a href="couple.php" title="">SA<span>Alisa &amp; Lysandra</span></a></li>
-					<li class="wa inactive"><a href="couple.php" title="">WA<span>Kim &amp; Matt</span></a></li>
+					<li class="vic"><a href="couple-all-rooms.php" class="active" title="">VIC<span>Bec &amp; George</span></a></li>
+					<li class="nsw inactive"><a href="couple-all-rooms.php" title="">NSW<span>Madi &amp; Jarrod</span></a></li>
+					<li class="qld inactive"><a href="couple-all-rooms.php" title="">QLD<span>Trixie &amp; Johnno</span></a></li>
+					<li class="sa inactive"><a href="couple-all-rooms.php" title="">SA<span>Alisa &amp; Lysandra</span></a></li>
+					<li class="wa inactive"><a href="couple-all-rooms.php" title="">WA<span>Kim &amp; Matt</span></a></li>
 				</ul>
 			</div>
 		</div>
@@ -55,7 +55,7 @@
 				<div class="span4 bottom-space"> <img src="http://placehold.it/320x200" /> </div>
 			</div>
 		</div>
-		<div class="span3"> <a href="#qa" class="qa-trigger"><img src="/assets/images/the-block-skyhigh/qa-circle-vic.png" /></a> </div>
+		<div class="span3"> <a href="couple.php#qa" class="qa-trigger"><img src="/assets/images/the-block-skyhigh/qa-circle-vic.png" /></a> </div>
 	</div>
 	<div class="row-fluid">
 		<div class="span12">

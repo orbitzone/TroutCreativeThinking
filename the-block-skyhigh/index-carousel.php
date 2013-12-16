@@ -36,11 +36,11 @@
 		<div class="span12 bottom-space">
 			<div class="row-fluid">
 				<ul class="nav nav-couples">
-					<li class="vic"><a href="couple.php" title="">VIC<span>Bec &amp; George</span></a></li>
-					<li class="nsw"><a href="couple.php" title="">NSW<span>Madi &amp; Jarrod</span></a></li>
-					<li class="qld"><a href="couple.php" title="">QLD<span>Trixie &amp; Johnno</span></a></li>
-					<li class="sa"><a href="couple.php" title="">SA<span>Alisa &amp; Lysandra</span></a></li>
-					<li class="wa"><a href="couple.php" title="">WA<span>Kim &amp; Matt</span></a></li>
+					<li class="vic"><a href="couple-all-rooms.php" title="">VIC<span>Bec &amp; George</span></a></li>
+					<li class="nsw"><a href="couple-all-rooms.php" title="">NSW<span>Madi &amp; Jarrod</span></a></li>
+					<li class="qld"><a href="couple-all-rooms.php" title="">QLD<span>Trixie &amp; Johnno</span></a></li>
+					<li class="sa"><a href="couple-all-rooms.php" title="">SA<span>Alisa &amp; Lysandra</span></a></li>
+					<li class="wa"><a href="couple-all-rooms.php" title="">WA<span>Kim &amp; Matt</span></a></li>
 				</ul>
 			</div>
 		</div>

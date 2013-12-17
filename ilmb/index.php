@@ -31,43 +31,41 @@
 							<div class="span12 ajax-target" id="AjaxTargetWrapper">
 								<div id="AjaxTarget">
 								<!-- INITIAL HOME CONTENT -->
-									<div class="row-fluid">
-										<div class="span12 home-wrapper">
-										<img class="visible-desktop" src="/assets/images/ilmb/home-main.jpg" alt="I love my bathroom" />
-										<img class="hidden-desktop" src="/assets/images/ilmb/home-devices.jpg" alt="I love my bathroom" />
-											<div class="home-content">
-												<div class="bottom-space home-menu">
-													<div class="btn-group">
-														<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-															<span class="hidden-phone">Competition</span> Menu
-															<span class="caret"></span>
-														</a>
-														<ul class="dropdown-menu pull-right">
-															<li class="active"><a href="sub/home.html" title="Home" class="ajax-load">Home</a></li>
-															<li><a href="sub/winner.html" title="Winner" class="ajax-load">2013 Winner</a></li>
-															<li><a href="sub/previous.html" title="Previous Winners" class="ajax-load">Previous Winners</a></li>
-															<li><a href="sub/prizes.html" title="Prizes" class="ajax-load">Prizes</a></li>
-															<li><a href="sub/judging.html" title="Judging" class="ajax-load">Judging</a></li>
-															<li><a href="sub/terms.html" title="Terms &amp; Conditions" class="ajax-load">Terms &amp; Conditions</a></li>
-															<li><a href="sub/contact.html" title="Contact" class="ajax-load">Contact</a></li>
-															<li><a href="sub/submit.html" title="Submit Your Bathroom" class="ajax-load"><i class="icon-heart"></i> Submit Your Bathroom</a></li>
-															<li><a href="sub/voting.html" title="Vote &amp; Win" class="ajax-load"><i class="icon-thumbs-up"></i> Vote &amp; Win</a></li>
-														</ul>
-													</div>
+									<div class="home-wrapper">
+									<img class="visible-desktop" src="/assets/images/ilmb/home-main.jpg" alt="I love my bathroom" />
+									<img class="hidden-desktop" src="/assets/images/ilmb/home-devices.jpg" alt="I love my bathroom" />
+										<div class="home-content">
+											<div class="bottom-space home-menu">
+												<div class="btn-group">
+													<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+														<span class="hidden-phone">Competition</span> Menu
+														<span class="caret"></span>
+													</a>
+													<ul class="dropdown-menu pull-right">
+														<li class="active"><a href="sub/home.html" title="Home" class="ajax-load">Home</a></li>
+														<!--<li><a href="sub/winner.html" title="Winner" class="ajax-load">2013 Winner</a></li>-->
+														<li><a href="sub/previous.html" title="Previous Winners" class="ajax-load">Previous Winners</a></li>
+														<li><a href="sub/prizes.html" title="Prizes" class="ajax-load">Prizes</a></li>
+														<li><a href="sub/judging.html" title="Judging" class="ajax-load">Judging</a></li>
+														<li><a href="sub/terms.html" title="Terms &amp; Conditions" class="ajax-load">Terms &amp; Conditions</a></li>
+														<li><a href="sub/contact.html" title="Contact" class="ajax-load">Contact</a></li>
+														<!--<li><a href="sub/submit.html" title="Submit Your Bathroom" class="ajax-load"><i class="icon-heart"></i> Submit Your Bathroom</a></li>
+														<li><a href="sub/voting.html" title="Vote &amp; Win" class="ajax-load"><i class="icon-thumbs-up"></i> Vote &amp; Win</a></li>-->
+													</ul>
 												</div>
-											<div class="scroll-content">
-												<p class="lead">Inside and out, this incredible creation by Kerrie and Gerard Maggs, takes beautiful bathroom design further than ever before.</p>
-												<hr>
-												<h3><i class="icon-thumbs-up"></i> Vote to win</h3>
-												<p>Register to vote. You could win a <br />$5,000 Reece Voucher</p>
-												<a href="sub/voting.html" class="ajax-load btn btn-danger" title="Vote to win">Vote Now</a>
-												<hr>
-												<h3><i class="icon-calendar"></i> Key Dates</h3>
-												<p><strong>1 May 2013</strong> - Voting Opens</p>
-												<p><strong>26 May 2013</strong> - Voting Closes</p>
-												<p><strong>3 Jun 2013</strong> - Winners Announced</p>
 											</div>
-											</div>
+										<div class="scroll-content">
+											<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fringilla, quam iaculis venenatis tincidunt, purus est tincidunt nibh, et placerat est eros at arcu.</p>
+											<hr>
+											<!--<h3><i class="icon-thumbs-up"></i> Vote to win</h3>
+											<p>Register to vote. You could win a <br />$5,000 Reece Voucher</p>
+											<a href="sub/voting.html" class="ajax-load btn btn-danger" title="Vote to win">Vote Now</a>
+											<hr>-->
+											<h3><i class="icon-calendar"></i> Key Dates</h3>
+											<p><strong>1 May 2013</strong> - Voting Opens</p>
+											<p><strong>26 May 2013</strong> - Voting Closes</p>
+											<p><strong>3 Jun 2013</strong> - Winners Announced</p>
+										</div>
 										</div>
 									</div>
 								</div>

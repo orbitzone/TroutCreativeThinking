@@ -93,7 +93,7 @@
 											</td>
 											<td data-th="Quantity">
 											<div class="quantityHistoryContent">
-												<span class="quoteQuantity">3</span>
+												<input type="text" class="quoteQuantity" value="3">
 												<div class="quantityHistoryWrap dropdown">
 													<a herf="#"class="dropdown-toggle" data-toggle="dropdown">Quantity History <span class="caret"></span></a>
 													<div class="dropdown-menu">
@@ -130,7 +130,7 @@
 											</td>
 											<td data-th="Quantity">
 											<div class="quantityHistoryContent">
-												<span class="quoteQuantity">1</span>
+												<input type="text" class="quoteQuantity" value="1">
 												<div class="quantityHistoryWrap dropdown">
 													<a herf="#"class="dropdown-toggle" data-toggle="dropdown">Quantity History <span class="caret"></span></a>
 													<div class="dropdown-menu">
@@ -153,7 +153,7 @@
 										<tr>
 											<td data-th="Include"><a class="quoteCheckIcon quoteUnchecked"></a></td>
 											<td data-th="Product Details">Product Name</td>
-											<td data-th="Quantity"><span class="quoteQuantity">4</span></td>
+											<td data-th="Quantity"><input type="text" class="quoteQuantity" value="4"></td>
 											<td data-th="Unit Cost">$300.12</td>
 											<td data-th="Sub Cost">$1,200.48</td>
 										</tr>										
@@ -205,12 +205,12 @@
 
 				$('.quantityHistoryOrderNone').click(function(e){
 					e.preventDefault();
-					$(this).closest('.quantityHistoryContent').find('.quoteQuantity').html('0');
+					$(this).closest('.quantityHistoryContent').find('.quoteQuantity').val('0');
 				})
 
 				$('.quantityHistoryOrderAll').click(function(e){
 					e.preventDefault();
-					$(this).closest('.quantityHistoryContent').find('.quoteQuantity').html($(this).closest('.quantityHistoryContent').find('.quantityHistoryRemaining').html());
+					$(this).closest('.quantityHistoryContent').find('.quoteQuantity').val($(this).closest('.quantityHistoryContent').find('.quantityHistoryRemaining').html());
 				})
 			});
 		</script>

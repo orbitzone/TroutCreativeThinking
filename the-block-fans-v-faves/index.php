@@ -10,7 +10,7 @@
 	  	include_once($serverBase."/includes/head/head-generic.php");
 	?>		
 
-    <body>
+    <body class="fansVFaves">
 		<div class="ocmain-wrapper">
 			<div class="navbar navbar-fixed-top topNav">
 			<?php 
@@ -25,14 +25,37 @@
 				<div class="inner-wrapper">
 
 <div class="main-wrapper">
-	<div class="row-fluid sub-header">
-		<div class="span3 block-logo"> <a href="index.php"><img src="/assets/images/the-block-skyhigh/the-block-logo.jpg" /></a> </div>
-		<div class="span9">
-			<h2>Reece on The Block</h2>
-			<h3 class="pull-right">The biggest Block EVER is here, this time we are going higher than ever before!</h3>
+	<div class="theBlockBanner">
+		<div class="theBlockLogoWrap">
+			<img src="/assets/images/the-block-fans-V-faves/the-blogk-logo.png" />
+		</div>
+		<div class="theBlockBannerCaption">
+			<h2>Love a bathroom on The Block?</h2>
+			<p>Learn more about the products and inspiration behind it right here. </p>
+			<a class="theBlockredBtnBig">Explore</a>
 		</div>
 	</div>
 
+	<div class="theBlockSubscribe">
+	<div class="theBlockSubscribeInner">
+		<form class="row-fluid">
+			<div class="span4">
+				<label>Subscribe for updates </label>
+			</div>
+			<div class="span3">
+				<input type="text"  placeholder="Name">
+			</div>
+			<div class="span3">
+				<input type="email" placeholder="Email">
+			</div>
+			<div class="span2">
+				<button class="theBlockredBtn" type="submit">Submit</button>
+			</div>
+		</form>
+		</div>
+	</div>
+
+<!--
 	<div class="row-fluid">
 		<div class="span12">
 			<div class="row-fluid">
@@ -130,7 +153,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>-->
 </div>
 
 				</div>

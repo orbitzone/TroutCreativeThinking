@@ -675,3 +675,125 @@ background: @wa url('../images/the-block-skyhigh/bg_grad.png') repeat-x 0px -10p
 		font-size: 24px;
 	}
 }
+
+
+/* New Layout */
+@theblockMaroon : #461716;
+@theBlockRed: #d83234;
+
+@font-face {
+    font-family: 'arvobold';
+    src: url('../font/arvo-bold-webfont.eot');
+    src: url('../font/arvo-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/arvo-bold-webfont.woff') format('woff'),
+         url('../font/arvo-bold-webfont.ttf') format('truetype'),
+         url('../font/arvo-bold-webfont.svg#arvobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body.fansVFaves{
+	.main-wrapper{
+		margin-top: 0;
+		padding-top: 40px;
+	}
+	.ocmain-wrapper{
+		background: #c6e7ee url('../images/the-block-fans-V-faves/bg.jpg') center 0 no-repeat;
+	}
+}
+
+
+/* Buttons */
+.theBlockredBtn,.theBlockredBtnBig{
+	background: @theBlockRed;
+	padding: 10px 40px;
+	display: inline-block;
+	border:solid 1px #981c27;
+	color: white;
+	cursor: pointer;
+	text-transform: uppercase;
+	.border-radius(3px);
+	&:hover{
+		color: white;
+		text-decoration: none;
+		background: @theblockMaroon;
+	}
+}
+.theBlockredBtnBig{
+	padding: 15px 30px;
+	
+	font-size: 18px;
+}
+
+.theBlockBanner{
+	display: table;
+	padding-top: 40px;
+	.theBlockLogoWrap,.theBlockBannerCaption{
+		display: table-cell;
+		vertical-align: middle;
+		padding: 20px;
+	}
+	.theBlockLogoWrap{
+		width: 40%;
+	}
+	.theBlockBannerCaption{
+
+	}
+	h2{
+		font-family: 'arvobold';
+		color: @theblockMaroon;
+		font-size: 70px
+	}
+	p{
+		color: @theBlockRed;
+		padding: .5em 0;
+		font-size: 30px;
+		line-height: 1.1em;
+	}
+}
+.theBlockSubscribe{
+	margin: 40px 0 50px;
+	position: relative;
+	.theBlockSubscribeInner{
+		background: @theblockMaroon;
+		padding: 20px 50px;	
+		position: relative;
+		z-index: 10;	
+	}
+	form{
+		margin-bottom: 0
+	}
+	input[type="text"],input[type="email"]{
+		padding: 10px;
+		margin: 0;
+		.border-radius(0);
+	}
+	label{
+		color: white;
+		font-family: 'arvobold';
+		font-size: 22px;
+		padding: 8px 0;
+		display: block;
+		text-align: right;
+	}
+	&:after{
+		content: '';
+		position: absolute;
+		height: 100%;
+		top: 0;
+		left: 20px;
+		right: 20px;
+		background: rgba(0,0,0,0.3);
+		.box-shadow(0 20px 5px rgba(0,0,0,0.3))
+	}
+}
+@media (max-width:767px){
+	.theBlockBanner{
+		display: block;
+		.theBlockLogoWrap,.theBlockBannerCaption{
+			display: block;
+			width: auto
+		}
+	}
+}

@@ -184,7 +184,9 @@
 		  		"/assets/js/reece-ocnav.js",
 		  		"/assets/js/reece-carousel.js",
 		  		"/assets/js/fancybox/jquery.fancybox.js",
+		  		"/assets/js/placeholder.js",
 		  		"/assets/js/reece-the-block-skyhigh.js"
+
 		  	); 
 		  	include_once($serverBase."/includes/foot/scripts.php");
 		?>			

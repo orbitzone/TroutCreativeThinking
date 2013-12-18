@@ -757,7 +757,7 @@ body.fansVFaves{
 	position: relative;
 	.theBlockSubscribeInner{
 		background: @theblockMaroon;
-		padding: 20px 50px;	
+		padding: 20px 50px 10px;	
 		position: relative;
 		z-index: 10;	
 	}
@@ -766,7 +766,8 @@ body.fansVFaves{
 	}
 	input[type="text"],input[type="email"]{
 		padding: 10px;
-		margin: 0;
+		margin-right: 0;
+		width: 90%;
 		.border-radius(0);
 	}
 	label{
@@ -794,6 +795,15 @@ body.fansVFaves{
 		.theBlockLogoWrap,.theBlockBannerCaption{
 			display: block;
 			width: auto
+		}
+	}
+	.theBlockSubscribe{
+		.theBlockSubscribeInner{
+			padding-bottom: 20px;
+		}
+		
+		label{
+			text-align: left;
 		}
 	}
 }

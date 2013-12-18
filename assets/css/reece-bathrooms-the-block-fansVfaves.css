@@ -494,7 +494,7 @@ body.fansVFaves .ocmain-wrapper {
 }
 .theBlockSubscribe .theBlockSubscribeInner {
   background: #461716;
-  padding: 20px 50px;
+  padding: 20px 50px 10px;
   position: relative;
   z-index: 10;
 }
@@ -504,7 +504,8 @@ body.fansVFaves .ocmain-wrapper {
 .theBlockSubscribe input[type="text"],
 .theBlockSubscribe input[type="email"] {
   padding: 10px;
-  margin: 0;
+  margin-right: 0;
+  width: 90%;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
@@ -537,5 +538,11 @@ body.fansVFaves .ocmain-wrapper {
   .theBlockBanner .theBlockBannerCaption {
     display: block;
     width: auto;
+  }
+  .theBlockSubscribe .theBlockSubscribeInner {
+    padding-bottom: 20px;
+  }
+  .theBlockSubscribe label {
+    text-align: left;
   }
 }

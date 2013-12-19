@@ -8,10 +8,29 @@
 	 * {
 	font-family: 'Helvetica Neue', Arial;
 	}
+
+	ul li
+	{
+		list-style: none;
+		line-height: 1.2em;
+	}
+	ul li:before
+	{
+		content: '\2713';
+		margin: 0 1em 0 0;
+	}
+
+	.wip li:before, li.wip:before
+	{
+		content: '\1F354';
+	}
+
 	.wip a
 	{
 		color: red !important;
 	}
+
+
 	</style>
 </head>
 <body>

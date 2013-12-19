@@ -9,53 +9,6 @@
 
 // Block colors
 // -------------------------
-@vic:              #589537;
-@nsw:              #e55854;
-@qld:              #fc7d46;
-@sa:               #1a81f4;
-@wa:               #ecd65b;
-
-.bg-vic
-{
-	background-color: @vic;
-}
-.bg-nsw
-{
-	background-color: @nsw;
-}
-.bg-qld
-{
-	background-color: @qld;
-}
-.bg-sa
-{
-	background-color: @sa;
-}
-.bg-wa
-{
-	background-color: @wa;
-}
-
-.bg-vic.faded
-{
-	background-color: lighten(@vic, 25%);
-}
-.bg-nsw.faded
-{
-	background-color: lighten(@nsw, 25%);
-}
-.bg-qld.faded
-{
-	background-color: lighten(@qld, 25%);
-}
-.bg-sa.faded
-{
-	background-color: lighten(@sa, 25%);
-}
-.bg-wa.faded
-{
-	background-color: lighten(@wa, 25%);
-}
 
 .main-wrapper
 {
@@ -63,54 +16,6 @@
 }
 
 /* Header */
-
-.sub-header h2, .sub-header h3
-{
-	text-align: right;
-}
-
-.sub-header h2
-{
-	font-size: 48px;
-	color: black;
-	border-bottom: 1px solid black;
-	margin-top: 40px;
-}
-.sub-header h3
-{
-	font-size: 24px;
-	width: 50%;
-	margin-top: 0;
-
-	background-image: -webkit-gradient(
-	linear,
-	left top, right top,
-	from(rgba(167, 167, 167, 1)),
-	to(rgba(77, 77, 77, 1)));
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	padding-bottom: 2px;
-}
-
-.couple-profile
-{
-	padding: 20px 20px 0 20px;
-	margin-bottom:20px;
-}
-
-.couple-profile h2
-{
-	font-size: 36px;
-	color: white;
-	margin-bottom:0px;
-}
-.couple-profile p
-{
-	color: #5c5c52;
-	font-size: 18px;
-	line-height: 140%;
-}
-
 
 
 .room-thumb .header
@@ -134,11 +39,9 @@
 {
 	background: #000;
 	color: white;
-}
-
-.room-caption p
-{
-	padding: 5px 10px 0;
+	p{
+		padding: 5px 10px 0;
+	}
 }
 .span3 .back, .visible-phone .back
 {
@@ -153,194 +56,92 @@
 {
 	padding: 20px 0;
 	border-bottom: 1px solid #9f8f71;
-}
+	a i	{
+		font-size: 48px;
+		color: black;
+		padding: 0 10px;
+	}
 
-.voting a i
-{
-	font-size: 48px;
-	color: black;
-	padding: 0 10px;
-}
+	a i.icon-thumbs-up 	{
+		color: green;
+	}
 
-.voting a i.icon-thumbs-up
-{
-	color: green;
-}
+	a i.icon-thumbs-down {
+		color: red;
+	}
 
-.voting a i.icon-thumbs-down
-{
-	color: red;
+	h5{
+		font-size: 20px;
+	}
 }
-
-.voting h5
-{
-	font-size: 20px;
-}
-
 .related-room .copy
 {
 	padding: 10px 0 1px 0;
 	text-align: center;
-}
-.related-room .copy h4 ,
-.related-room .copy h5
-{
-	margin: 0;
-	color: white;
-}
-.related-room .copy a
-{
-	color: white;
-}
-
-.social h4
-{
-	font-size: 24px;
-	background-image: -webkit-gradient(
-	linear,
-	right top, left top,
-	from(rgba(167, 167, 167, 1)),
-	to(rgba(77, 77, 77, 1)));
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	padding: 2px 0;
-}
-
-.twitter
-{
-	background-color: #c8c8c8;
-	font-size: 14px;
-	color: #5c5c52;
-	padding: 10px;
-}
-
-.social .header
-{
-	border-bottom: 1px solid #333;
-	padding-bottom: 10px;
-	margin-bottom: 10px;
-}
-
-.twitter .header img
-{
-	padding: 3px;
-}
-
-.facebook .header img
-{
-	padding-bottom: 3px;
-}
-
-.twitter a
-{
-	color: #156398 !important;
-}
-
-.twitter .tweet
-{
-	margin-bottom: 10px;
-}
-
-.social .ts
-{
-	font-size: 9px;
-}
-
-.facebook
-{
-	background-color: #c8e6e6;
-	font-size: 14px;
-	color: #5d5d5d;
-	padding: 10px;
-}
-
-.facebook a
-{
-	color: #3b57a0;
-}
-
-/* Couples Nav */
-
-.nav-couples li
-{
-	float: left;
-	width: 50%;
-	text-align: center;
+	h4 , h5{
+		margin: 0;
+		color: white;
+	}
 	a{
-		padding:20px
+		color: white;
+	}
+
+}
+
+
+.promo{
+	background: #EEE;
+
+	a img{
+		margin: 0;
+	}
+
+	div.copy
+	{
+		background-image: -webkit-gradient(
+		linear,
+		left top, left bottom,
+		from(rgba(235, 235, 235, 1)),
+		to(rgba(170, 170, 170, 1)));
+			margin: 0;
+		text-align: center;
+		h4{
+			color: black;
+			font-size: 20px;
+			margin: 15px 0 0 0;
+		}
+		h5{
+			font-size: 20px;
+			background-image: -webkit-gradient(
+			linear,
+			right top, left top,
+			from(rgba(167, 167, 167, 1)),
+			to(rgba(77, 77, 77, 1)));
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			margin: 0;
+			padding-bottom: 2px;
+		}
+
+		p{
+			font-variant: italic;
+			padding-bottom: 10px;
+			font-style: italic;
+			text-transform: uppercase;
+		}
+		p a {
+			color: white;
+			text-decoration: none;
+		}
+	}
+
+	div:hover p a
+	{
+		color: red;
 	}
 }
 
 
-.promo
-{
-	background: #EEE;
-}
-
-.promo a img
-{
-	margin: 0;
-}
-
-.promo div.copy
-{
-	background-image: -webkit-gradient(
-	linear,
-	left top, left bottom,
-	from(rgba(235, 235, 235, 1)),
-	to(rgba(170, 170, 170, 1)));
-		margin: 0;
-	text-align: center;
-}
-
-.promo div.copy h4
-{
-	color: black;
-	font-size: 20px;
-	margin: 15px 0 0 0;
-}
-
-.promo div.copy h5
-{
-	font-size: 20px;
-	background-image: -webkit-gradient(
-	linear,
-	right top, left top,
-	from(rgba(167, 167, 167, 1)),
-	to(rgba(77, 77, 77, 1)));
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	margin: 0;
-	padding-bottom: 2px;
-}
-
-.promo div.copy p
-{
-	font-variant: italic;
-	padding-bottom: 10px;
-	font-style: italic;
-	text-transform: uppercase;
-}
-.promo div.copy p a
-{
-	color: white;
-	text-decoration: none;
-}
-
-.promos div:hover p a
-{
-	color: red;
-}
-
-/* Social Plugz */
-
-.fb_iframe_widget,
-.fb_iframe_widget span,
-.fb_iframe_widget iframe,
-.fb-comments
-{
-    width: 100% !important;
-}
 
 .video-container {
     position: relative;
@@ -364,7 +165,6 @@
 {
 	top: 45%;
 }
-
 .carousel {
 
 margin-bottom: 0px;
@@ -372,309 +172,54 @@ margin-bottom: 0px;
 }
 
 
-/* Responsive */
-
-@media (min-width: 1568px)
-{
-
-	.nav-couples li a
-{
-
-	margin: 60% 6px;
-
-}
-
-
-}
-
-
-@media (max-width: 1199px)
-{
-	.sub-header h3
-	{
-		width: 70%;
-	}
-	.sub-header h2
-	{
-		margin-top: 10px;
-	}
-
-	.nav-couples li
-	{
-		background-position: top center;
-	}
-
-
-
-}
-
-
-@media (max-width: 1199px)
-{
-
-	.nav-couples li a
-{
-
-
-
-}
-
-
-}
-
-
-@media (max-width: 1200px) and (min-width: 978px){
-.nav-couples li {
-background-size: 92%;
-background-position:0px 40px;
-}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 979px) {
-
-}
-
-
-
 
 @media (max-width: 979px)
 {
-	.sub-header h2
-	{
-		font-size: 36px;
-	}
-	.sub-header h3
-	{
-		font-size: 18px;
-	}
 
-	.nav-couples li
-	{
-		/*height: 100px;*/
-	}
 
-	.nav-couples li a
-	{
-		margin-left: 0;
-		margin-right: 0;
-		margin-top:110px;
-	}
-
-	.nav-couples li
-	{
-		/*margin-bottom: 30px;*/
-	}
-
-	.promo div.copy h5, .promo div.copy h4
-	{
+	.promo div.copy h5, .promo div.copy h4{
 		font-size: 14px;
 	}
-	.promo div.copy p a
-	{
+	.promo div.copy p a{
 		font-size: 12px;
 	}
-
-
-.nav-couples li.vic
-{
-
 }
-
-
-.nav-couples li
-{
-	float: left;
-	width: 20%;
-	text-align: center;
-	max-height:190px;
-	background-repeat: no-repeat;
-	background-size:90%;
-	background-position:0px 30% !important;
-}
-
-
-
-
-
-
-
-}
-
-
-
-
-
 
 @media (max-width: 767px)
 {
-	.sub-header h2
-	{
-		text-align: left;
-	}
-	.sub-header h3
-	{
-		width: 100%;
-		font-size: 16px;
-		text-align: left;
-	}
-	.nav-couples li
-	{
-		margin-bottom: 0;
-	}
 
-	.block-logo img
-	{
+	.block-logo img{
 		width: 50%;
 		margin: auto;
 		display: block;
 	}
+	.couple-profile h2{
+		font-size: 24px;
+		color: white;
+		margin:0px;
+		margin-bottom:5px;
 
-
-.couple-profile h2
-{
-	font-size: 24px;
-	color: white;
-	margin:0px;
-	margin-bottom:5px;
-
-}
-.couple-profile p
-{
-	color: #5c5c52;
-	font-size: 14px;
-	line-height: 140%;
-	padding-bottom:15px;
-}
-
-
-
-.nav-couples li
-{
-	float: left;
-	width: 20%;
-	text-align: center;
-
-	background-repeat: no-repeat;
-	 background-size:100%;
-	 background-position:0px 30% !important;
-}
-
-
-
-
+	}
+	.couple-profile p{
+		color: #5c5c52;
+		font-size: 14px;
+		line-height: 140%;
+		padding-bottom:15px;
+	}
 
 }
-
-
-
-
-
 
 
 @media (max-width: 640px)
 {
-	.nav-couples li
-	{
-		float: none;
-		background: none;
-		display: list-item;
-		width: 100%;
-		background: red;
-		padding: 0;
-		height: auto;
+	.marginFix{
+		margin-bottom:0px;
 	}
-
-	.nav-couples li a
-	{
-		margin: 0;
-		font-size: 15px;
-	}
-
-	.nav-couples li a span
-	{
-		display: inline;
-		margin-left: 20px;
-	}
-
-
-
-.nav-couples li.vic a { 
-
-
-border:2px solid @vic;
-background: @vic url('../images/the-block-skyhigh/bg_grad.png')  repeat-x 0px -10px;
-
-
-}
-
-
-.nav-couples li.nsw a { 
- 
-border:2px solid @nsw;
-background: @nsw url('../images/the-block-skyhigh/bg_grad.png') repeat-x 0px -10px;
-}
-
-.nav-couples li.qld a { 
- 
-border:2px solid @qld;
-background: @qld url('../images/the-block-skyhigh/bg_grad.png') repeat-x 0px -10px;
-}
-
-
-.nav-couples li.sa a { 
-
-border:2px solid @sa;
-background: @sa url('../images/the-block-skyhigh/bg_grad.png') repeat-x 0px -10px;
-}
-
-.nav-couples li.wa a { 
-
-border:2px solid @wa;
-background: @wa url('../images/the-block-skyhigh/bg_grad.png') repeat-x 0px -10px;
-}
-
-.marginFix{
-	margin-bottom:0px;
-}
-
-
-
-.nav{
-	margin-bottom:0px !important;
-}
-
-
-
-}
-@media (max-width: 480px)
-{
-
-}
-
-@media (max-width: 320px)
-{
-	.sub-header h2
-	{
-		font-size: 24px;
+	.nav{
+		margin-bottom:0px !important;
 	}
 }
+
 
 
 /* New Layout */
@@ -690,7 +235,6 @@ background: @wa url('../images/the-block-skyhigh/bg_grad.png') repeat-x 0px -10p
          url('../font/arvo-bold-webfont.svg#arvobold') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 body.fansVFaves{
@@ -701,11 +245,16 @@ body.fansVFaves{
 	.ocmain-wrapper{
 		background: #c6e7ee url('../images/the-block-fans-V-faves/bg.jpg') center 0 no-repeat;
 	}
+
+	.thumbnail{
+		border:none !important;
+		padding: 0;
+		.box-shadow(none);
+	}
 }
 
-
 /* Buttons */
-.theBlockredBtn,.theBlockredBtnBig{
+.theBlockredBtn{
 	background: @theBlockRed;
 	padding: 10px 40px;
 	display: inline-block;
@@ -718,12 +267,16 @@ body.fansVFaves{
 		color: white;
 		text-decoration: none;
 		background: @theblockMaroon;
+		background: darken(@theBlockRed, 20%);
 	}
 }
 .theBlockredBtnBig{
 	padding: 15px 30px;
-	
 	font-size: 18px;
+}
+.theBlockredBtnSmall{
+	padding: 5px 15px;
+	font-size: .8em;
 }
 
 .theBlockBanner{
@@ -742,8 +295,8 @@ body.fansVFaves{
 	}
 	h2{
 		font-family: 'arvobold';
+		font-size: 70px;
 		color: @theblockMaroon;
-		font-size: 70px
 	}
 	p{
 		color: @theBlockRed;
@@ -752,14 +305,61 @@ body.fansVFaves{
 		line-height: 1.1em;
 	}
 }
+.theBlockBannerSmall{
+	margin: 0 10%;
+	padding-top: 0;
+	.theBlockLogoWrap{
+		width: 20%
+	}
+	h2{
+		font-size: 30px;
+	}
+	p{
+		font-size: 15px
+	}
+}
+/* Shadow Block */
+.theBlockShadowBlocks{
+	position: relative;
+	margin-bottom: 20px;
+	.theBlockShadowBlocksInner{
+		background: white;
+		position: relative;
+		z-index: 10;		
+	}
+	h3{
+		font-size: 16px;
+		padding: 20px;
+		text-transform: uppercase;
+		margin:0;
+	}	
+	&:after{
+		content: '';
+		position: absolute;
+		height: 100%;
+		top: 0;
+		left: 5px;
+		right: 5px;
+		background: rgba(0,0,0,0.3);
+		.box-shadow(0 20px 5px rgba(0,0,0,0.3))
+	}	
+}
+.shadowRight{
+	&:after{
+		left: 20px;
+	}
+}
+.shadowLeft{
+	&:after{
+		right: 20px;
+	}
+}
+/* Subscribe Block */
 .theBlockSubscribe{
 	margin: 40px 0 50px;
-	position: relative;
-	.theBlockSubscribeInner{
+	.theBlockShadowBlocksInner{
 		background: @theblockMaroon;
-		padding: 20px 50px 10px;	
-		position: relative;
-		z-index: 10;	
+		padding: 20px 50px 10px;
 	}
 	form{
 		margin-bottom: 0
@@ -778,16 +378,84 @@ body.fansVFaves{
 		display: block;
 		text-align: right;
 	}
-	&:after{
-		content: '';
-		position: absolute;
-		height: 100%;
-		top: 0;
-		left: 20px;
-		right: 20px;
-		background: rgba(0,0,0,0.3);
-		.box-shadow(0 20px 5px rgba(0,0,0,0.3))
+
+}
+/* Couples Wrap */
+.nav-couples{
+	background: white;
+	ul{
+		margin: 0;
 	}
+	li {
+		float: left;
+		display: block;
+		list-style: none;
+		width: 50%;
+		padding: 20px 0;
+		text-align: center;
+		a{
+			color: @theBlockRed;
+			margin: 0 10px;
+			display: block;
+			&:hover{
+				text-decoration:none;
+				color: darken(@theBlockRed, 20%);
+			}
+		}
+	}
+	.coupleNames{
+		font-family: 'arvobold';
+		font-size: 30px;
+	}
+}
+
+.theBlockHomeBanner{
+	margin-top: 20px;
+
+	.theBlockShadowBlocksInner{
+		overflow: hidden;
+	}
+	.bannerTextWrap{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		padding: 20px;
+	}
+	.bannerText{
+		font-family: 'arvobold';
+		color: @theblockMaroon;
+		text-transform: uppercase;
+		font-size: 18px;
+		line-height: 1.3em;
+	}
+}
+.theBlockHomeBannerLarge{
+	.bannerTextWrap{
+		padding-right: 40%;
+	}
+	img{
+		float: left;
+		margin:-10px 0;
+	}	
+} 
+.theBlockHomeBannerSmall {
+
+	.bannerTextWrap{
+		padding-left: 35%;
+	}
+}
+
+@media (max-width:979px){
+	.theBlockBanner{
+		h2{
+			font-size: 40px;
+		}
+		p{
+			font-size: 24px;
+		}
+	}	
 }
 @media (max-width:767px){
 	.theBlockBanner{
@@ -796,6 +464,7 @@ body.fansVFaves{
 			display: block;
 			width: auto
 		}
+
 	}
 	.theBlockSubscribe{
 		.theBlockSubscribeInner{
@@ -806,4 +475,117 @@ body.fansVFaves{
 			text-align: left;
 		}
 	}
+	.nav-couples{
+		li{
+			width: auto;
+			float: none;
+		}
+	}
+	.theBlockHomeBannerLarge{
+		img{
+			margin: 0;
+			min-width: 800px;
+			float: right;
+		}
+	}
+	.theBlockHomeBannerSmall{
+		img{
+			margin:-40px 0 -120px;
+			width: 100%
+		}
+	}
 }
+@media (max-width:480px){
+	.theBlockBanner{
+		h2{
+			font-size: 26px
+		}
+		p{
+			font-size: 18px
+		}
+	}
+	.theBlockHomeBannerLarge{
+		img{
+
+		}
+	}
+	.theBlockHomeBannerSmall{
+		img{
+			margin:0;
+		}
+	}
+}
+
+/* Social */
+
+/* Social Plugz */
+
+.fb_iframe_widget,
+.fb_iframe_widget span,
+.fb_iframe_widget iframe,
+.fb-comments
+{
+    width: 100% !important;
+}
+
+#twitterWidget{
+	padding-bottom: 20px;
+	 iframe{
+		width: 100%;
+		.customisable-border{
+			border:none !important;
+		}
+	}	
+}
+
+
+/* Couple Page */
+.couple-profile
+{
+
+	.theBlockShadowBlocksInner{
+		padding: 20px;
+	}
+	.coupleNames{
+		font-family: 'arvobold';
+		font-size: 30px;
+		color: @theBlockRed;
+	}
+	p{
+		color: #5c5c52;
+		font-size: 18px;
+		line-height: 140%;
+	}	
+}
+
+.couple-profile h2
+{
+	font-size: 36px;
+	color: white;
+	margin-bottom:0px;
+}
+
+.roomList,.otherTeams, .facebookComments{
+	&.theBlockShadowBlocks,.theBlockShadowBlocks{
+		margin-top: 30px;
+	}	
+	.theBlockShadowBlocksInner{
+		padding: 20px;
+		h2,h3{
+			margin: 0 0 20px;
+			padding: 0;
+			text-transform: uppercase;
+			font-size: 16px;
+		}
+	}
+}
+
+.relatedTeam{
+	text-align: center;
+	.coupleNames{
+		font-family: 'arvobold';
+		font-size: 20px;
+		color: @theBlockRed;
+	}
+}
+

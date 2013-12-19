@@ -1,17 +1,16 @@
 $(document).ready(function()
 {
 
-    $('#room-thumbs a.thumbnail').live('click', function(e)
+    $('.room-thumbs a.thumbnail').live('click', function(e)
     {
 		e.preventDefault();
-
-		$MediaView = $('#MediaView');
+		$MediaView = $(this).closest('.theBlockShadowBlocksInner').find('.MediaView');
 		$MediaLoading = $('<div />').attr('id', 'MediaLoading');
 		$MediaView.append($MediaLoading);
 		$MediaLoading.show();
 
 		$MediaView.find('.heroImage').attr("src",$(this).attr("href"));
-		$MediaView.find('.caption').text($(this).attr("title"));
+		/*$MediaView.find('.caption').text($(this).attr("title"));*/
 
 		/*
 		$MediaView.find('.inner-content').html

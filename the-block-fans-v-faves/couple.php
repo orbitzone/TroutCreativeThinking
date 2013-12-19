@@ -36,7 +36,7 @@
 					<div class="main-wrapper">
 						<div class="theBlockBanner theBlockBannerSmall">
 							<div class="theBlockLogoWrap">
-								<img src="/assets/images/the-block-fans-V-faves/the-blogk-logo.png" />
+								<a href="/the-block-fans-v-faves"><img src="/assets/images/the-block-fans-V-faves/the-blogk-logo.png" /></a>
 							</div>
 							<div class="theBlockBannerCaption">
 								<h2>Love a bathroom on The Block?</h2>

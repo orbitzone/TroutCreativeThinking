@@ -191,6 +191,13 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'arvoregular';
+  src: url('../font/arvo-regular-webfont.eot');
+  src: url('../font/arvo-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../font/arvo-regular-webfont.woff') format('woff'), url('../font/arvo-regular-webfont.ttf') format('truetype'), url('../font/arvo-regular-webfont.svg#arvoregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 body.fansVFaves .main-wrapper {
   margin-top: 0;
   padding-top: 40px;
@@ -208,7 +215,7 @@ body.fansVFaves .thumbnail {
 /* Buttons */
 .theBlockredBtn {
   background: #d83234;
-  padding: 10px 40px;
+  padding: 8px 40px;
   display: inline-block;
   border: solid 1px #981c27;
   color: white;
@@ -222,15 +229,14 @@ body.fansVFaves .thumbnail {
   color: white;
   text-decoration: none;
   background: #461716;
-  background: #8a1a1c;
+  background: #902126;
 }
 .theBlockredBtnBig {
   padding: 15px 30px;
   font-size: 18px;
 }
 .theBlockredBtnSmall {
-  padding: 5px 15px;
-  font-size: .8em;
+  padding: 8px 15px;
 }
 .theBlockBanner {
   display: table;
@@ -272,7 +278,7 @@ body.fansVFaves .thumbnail {
 /* Shadow Block */
 .theBlockShadowBlocks {
   position: relative;
-  margin-bottom: 20px;
+  margin-top: 40px;
 }
 .theBlockShadowBlocks .theBlockShadowBlocksInner {
   background: white;
@@ -305,7 +311,7 @@ body.fansVFaves .thumbnail {
 }
 /* Subscribe Block */
 .theBlockSubscribe {
-  margin: 40px 0 50px;
+  margin: 40px 0 10px;
 }
 .theBlockSubscribe .theBlockShadowBlocksInner {
   background: #461716;
@@ -316,7 +322,7 @@ body.fansVFaves .thumbnail {
 }
 .theBlockSubscribe input[type="text"],
 .theBlockSubscribe input[type="email"] {
-  padding: 10px;
+  padding: 8px;
   margin-right: 0;
   width: 90%;
   -webkit-border-radius: 0;
@@ -325,9 +331,9 @@ body.fansVFaves .thumbnail {
 }
 .theBlockSubscribe label {
   color: white;
-  font-family: 'arvobold';
+  font-family: 'arvoregular';
   font-size: 22px;
-  padding: 8px 0;
+  padding: 6px 0;
   display: block;
   text-align: right;
 }
@@ -342,8 +348,8 @@ body.fansVFaves .thumbnail {
   float: left;
   display: block;
   list-style: none;
-  width: 50%;
-  padding: 20px 0;
+  width: 40%;
+  padding: 20px 5%;
   text-align: center;
 }
 .nav-couples li a {
@@ -358,9 +364,6 @@ body.fansVFaves .thumbnail {
 .nav-couples .coupleNames {
   font-family: 'arvobold';
   font-size: 30px;
-}
-.theBlockHomeBanner {
-  margin-top: 20px;
 }
 .theBlockHomeBanner .theBlockShadowBlocksInner {
   overflow: hidden;
@@ -474,14 +477,6 @@ body.fansVFaves .thumbnail {
   color: white;
   margin-bottom: 0px;
 }
-.roomList.theBlockShadowBlocks,
-.otherTeams.theBlockShadowBlocks,
-.facebookComments.theBlockShadowBlocks,
-.roomList .theBlockShadowBlocks,
-.otherTeams .theBlockShadowBlocks,
-.facebookComments .theBlockShadowBlocks {
-  margin-top: 30px;
-}
 .roomList .theBlockShadowBlocksInner,
 .otherTeams .theBlockShadowBlocksInner,
 .facebookComments .theBlockShadowBlocksInner {
@@ -497,6 +492,9 @@ body.fansVFaves .thumbnail {
   padding: 0;
   text-transform: uppercase;
   font-size: 16px;
+}
+.facebookComments {
+  margin-bottom: 30px;
 }
 .relatedTeam {
   text-align: center;

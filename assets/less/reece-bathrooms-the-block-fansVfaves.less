@@ -236,6 +236,17 @@ margin-bottom: 0px;
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'arvoregular';
+    src: url('../font/arvo-regular-webfont.eot');
+    src: url('../font/arvo-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/arvo-regular-webfont.woff') format('woff'),
+         url('../font/arvo-regular-webfont.ttf') format('truetype'),
+         url('../font/arvo-regular-webfont.svg#arvoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 body.fansVFaves{
 	.main-wrapper{
@@ -256,7 +267,7 @@ body.fansVFaves{
 /* Buttons */
 .theBlockredBtn{
 	background: @theBlockRed;
-	padding: 10px 40px;
+	padding: 8px 40px;
 	display: inline-block;
 	border:solid 1px #981c27;
 	color: white;
@@ -267,7 +278,7 @@ body.fansVFaves{
 		color: white;
 		text-decoration: none;
 		background: @theblockMaroon;
-		background: darken(@theBlockRed, 20%);
+		background: #902126
 	}
 }
 .theBlockredBtnBig{
@@ -275,8 +286,7 @@ body.fansVFaves{
 	font-size: 18px;
 }
 .theBlockredBtnSmall{
-	padding: 5px 15px;
-	font-size: .8em;
+	padding: 8px 15px;
 }
 
 .theBlockBanner{
@@ -321,7 +331,7 @@ body.fansVFaves{
 /* Shadow Block */
 .theBlockShadowBlocks{
 	position: relative;
-	margin-bottom: 20px;
+	margin-top: 40px;
 	.theBlockShadowBlocksInner{
 		background: white;
 		position: relative;
@@ -356,7 +366,7 @@ body.fansVFaves{
 }
 /* Subscribe Block */
 .theBlockSubscribe{
-	margin: 40px 0 50px;
+	margin: 40px 0 10px;
 	.theBlockShadowBlocksInner{
 		background: @theblockMaroon;
 		padding: 20px 50px 10px;
@@ -365,16 +375,16 @@ body.fansVFaves{
 		margin-bottom: 0
 	}
 	input[type="text"],input[type="email"]{
-		padding: 10px;
+		padding: 8px;
 		margin-right: 0;
 		width: 90%;
 		.border-radius(0);
 	}
 	label{
 		color: white;
-		font-family: 'arvobold';
+		font-family: 'arvoregular';
 		font-size: 22px;
-		padding: 8px 0;
+		padding: 6px 0;
 		display: block;
 		text-align: right;
 	}
@@ -390,8 +400,8 @@ body.fansVFaves{
 		float: left;
 		display: block;
 		list-style: none;
-		width: 50%;
-		padding: 20px 0;
+		width: 40%;
+		padding: 20px 5%;
 		text-align: center;
 		a{
 			color: @theBlockRed;
@@ -410,7 +420,6 @@ body.fansVFaves{
 }
 
 .theBlockHomeBanner{
-	margin-top: 20px;
 
 	.theBlockShadowBlocksInner{
 		overflow: hidden;
@@ -565,10 +574,7 @@ body.fansVFaves{
 	margin-bottom:0px;
 }
 
-.roomList,.otherTeams, .facebookComments{
-	&.theBlockShadowBlocks,.theBlockShadowBlocks{
-		margin-top: 30px;
-	}	
+.roomList,.otherTeams, .facebookComments{	
 	.theBlockShadowBlocksInner{
 		padding: 20px;
 		h2,h3{
@@ -578,6 +584,9 @@ body.fansVFaves{
 			font-size: 16px;
 		}
 	}
+}
+.facebookComments{
+	margin-bottom: 30px
 }
 
 .relatedTeam{

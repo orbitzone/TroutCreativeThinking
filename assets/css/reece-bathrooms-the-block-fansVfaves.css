@@ -448,6 +448,9 @@ a:hover .coupleNames {
   .featuredInBathroom li {
     width: 31%;
   }
+  .featuredInBathroom li:nth-child(3n+1) {
+    clear: both;
+  }
   .theBlockHomeBannerSmall .bannerTextWrap {
     padding: 10% 0 0 30%;
   }

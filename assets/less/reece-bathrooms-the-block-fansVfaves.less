@@ -55,6 +55,9 @@ body.fansVFaves{
 	.ocmain-wrapper{
 		background: @theBlockBg url('../images/the-block-fans-V-faves/bg.jpg') center 0 no-repeat;
 	}
+	.site-footer{
+		margin-top: 95px;
+	}
 }
 
 /* Buttons */
@@ -166,7 +169,7 @@ body.fansVFaves{
 		color: white;
 		font-family: 'arvoregular';
 		font-size: 22px;
-		padding: 6px 0;
+		padding: 9px 0;
 		display: block;
 		text-align: right;
 	}
@@ -217,6 +220,10 @@ a:hover .coupleNames{
 		top: 0;
 		bottom: 0;
 		padding: 20px;
+		.theBlockredBtn{
+			position: absolute;
+			bottom: 20px;
+		}		
 	}
 	.bannerText{
 		font-family: 'arvobold';
@@ -256,12 +263,12 @@ a:hover .coupleNames{
 	.couplePageTheBlockLogo,.coupleProfile{
 		display: table-cell;
 		vertical-align: middle;
-		padding: 10px;
 	}
 	.couplePageTheBlockLogo{
 		text-align: center;
+		padding: 20px;
 		img{
-			max-width: 200px;
+			max-width: 220px;
 		}
 	}
 }
@@ -291,7 +298,7 @@ a:hover .coupleNames{
 .coupleProfile
 {
 	.theBlockShadowBlocks{
-		margin-top: 10px;
+		margin-top: 0
 	}
 	.theBlockShadowBlocksInner{
 		display: table;
@@ -333,7 +340,8 @@ a:hover .coupleNames{
 	a.thumbnail{
 		padding: 0;
 		.border-radius(0);
-		border:none;
+		.box-shadow(none);
+		border-color:#fff;
 	}
 }
 .room-thumbs{
@@ -355,11 +363,10 @@ a:hover .coupleNames{
 		.border-radius(100% 0 0 100%);
 	}
 	a.thumbnail{
-		overflow: hidden;
+
 	}
 	a.thumbnail:hover img,a.active img{
-		margin: -2%;
-		max-width: 104%;
+
 	}
 }
 
@@ -377,7 +384,10 @@ a:hover .coupleNames{
 	margin: 0;
 	li{
 		list-style: none;
-		padding:0 10px 10px;
+		padding:0 0 16px;
+	}
+	a.thumbnail:hover{
+		border-color:@theBlockRed;
 	}
 }
 /* Products Featured in Bathroom */

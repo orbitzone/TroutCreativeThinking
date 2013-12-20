@@ -4,12 +4,12 @@ $(document).ready(function()
 		socialHeight = $('.theBlocksocialFeed').height();
 		navCouplesHeight = $('.nav-couples').height();
 		console.log(navCouplesHeight);
-		if(socialHeight < navCouplesHeight){
+		if(socialHeight < navCouplesHeight && $(window).width() > 767){
 			$('.theBlocksocialFeed .theBlockShadowBlocksInner').height(navCouplesHeight);
 		}
 
 	});
-	
+
     $('.room-thumbs a.thumbnail').live('click', function(e)
     {
 		e.preventDefault();

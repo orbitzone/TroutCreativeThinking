@@ -1,7 +1,5 @@
 $(document).ready(function()
 {
-	$('.featuredInBathroom li:nth-child(3n+1)').addClass('threenplus1');
-
     $('.room-thumbs a.thumbnail').live('click', function(e)
     {
 		e.preventDefault();

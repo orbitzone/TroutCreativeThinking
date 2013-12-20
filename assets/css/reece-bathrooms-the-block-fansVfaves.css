@@ -355,10 +355,6 @@ a:hover .coupleNames {
 .featuredInBathroom {
   padding-top: 20px;
   clear: both;
-  /*li:nth-child(3n+1),li.threenplus1{
-		clear: both;
-	}*/
-
 }
 .featuredInBathroom ul {
   margin: 0;
@@ -448,6 +444,9 @@ a:hover .coupleNames {
   .room-thumbs a.active img {
     margin: 0;
     max-width: 100%;
+  }
+  .featuredInBathroom li {
+    width: 31%;
   }
   .theBlockHomeBannerSmall .bannerTextWrap {
     padding: 10% 0 0 30%;

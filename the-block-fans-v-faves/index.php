@@ -36,7 +36,7 @@
 					<div class="main-wrapper">
 						<div class="theBlockBanner">
 							<div class="theBlockLogoWrap">
-								<img src="/assets/images/the-block-fans-V-faves/the-blogk-logo.png" />
+								<img alt="The Block" src="/assets/images/the-block-fans-V-faves/the-blogk-logo.png" />
 							</div>
 							<div class="theBlockBannerCaption">
 								<h2>Love a bathroom on The Block?</h2>
@@ -70,28 +70,28 @@
 										<ul class="clearfix">
 											<li>
 												<a href="couple.php" title="">
-													<img src="http://placehold.it/300x300.png/eee/eee" alt="placeholder">
+													<img src="/assets/images/the-block-fans-V-faves/couple1.jpg" alt="Couple" />
 													<h4 class="coupleNames">Name &amp; Name</h4>
 												</a>
 												<p class="coupleDesc">orem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus cursus lectus, nec blandit nisie.</p>
 											</li>
 											<li>
 												<a href="couple.php" title="">
-													<img src="http://placehold.it/300x300.png/eee/eee" alt="placeholder">
+													<img src="/assets/images/the-block-fans-V-faves/couple2.jpg" alt="Couple" />
 													<h4 class="coupleNames">Name &amp; Name</h4>
 												</a>
 												<p class="coupleDesc">orem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus cursus lectus, nec blandit nisie.</p>
 											</li>
 											<li>
 												<a href="couple.php" title="">
-													<img src="http://placehold.it/300x300.png/eee/eee" alt="placeholder">
+													<img src="/assets/images/the-block-fans-V-faves/couple3.jpg" alt="Couple" />
 													<h4 class="coupleNames">Name &amp; Name</h4>
 												</a>
 												<p class="coupleDesc">orem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus cursus lectus, nec blandit nisie.</p>
 											</li>
 											<li>
 												<a href="couple.php" title="">
-													<img src="http://placehold.it/300x300.png/eee/eee" alt="placeholder">
+													<img src="/assets/images/the-block-fans-V-faves/couple4.jpg" alt="Couple" />
 													<h4 class="coupleNames">Name &amp; Name</h4>
 												</a>
 												<p class="coupleDesc">orem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus cursus lectus, nec blandit nisie.</p>
@@ -101,7 +101,7 @@
 								</div><!-- /.nav-couples -->
 							</div><!-- /.span9 -->
 							<div class="span3">
-								<div class="theBlockShadowBlocks shadowLeft">
+								<div class="theBlockShadowBlocks theBlocksocialFeed shadowLeft">
 									<div class="theBlockShadowBlocksInner">
 										<div id="twitterWidget">
 											<a class="twitter-timeline" href="https://twitter.com/ReeceBathrooms" data-widget-id="332270994104401920">Tweets by @ReeceBathrooms</a>

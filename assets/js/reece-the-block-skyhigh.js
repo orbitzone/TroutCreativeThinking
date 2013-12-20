@@ -1,5 +1,15 @@
 $(document).ready(function()
 {
+	$('.nav-couples img').load(function(){
+		socialHeight = $('.theBlocksocialFeed').height();
+		navCouplesHeight = $('.nav-couples').height();
+		console.log(navCouplesHeight);
+		if(socialHeight < navCouplesHeight){
+			$('.theBlocksocialFeed .theBlockShadowBlocksInner').height(navCouplesHeight);
+		}
+
+	});
+	
     $('.room-thumbs a.thumbnail').live('click', function(e)
     {
 		e.preventDefault();

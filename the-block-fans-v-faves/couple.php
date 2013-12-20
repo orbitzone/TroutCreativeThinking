@@ -47,7 +47,7 @@
 								<div class="theBlockShadowBlocks shadowRight shadowLeft">
 									<div class="theBlockShadowBlocksInner">
 										<div class="coupleProfileThumb">
-											<img src="http://placehold.it/300x300.png/eee/eee" alt="placeholder">
+											<img src="/assets/images/the-block-fans-V-faves/couple1.jpg" alt="Couple" />
 										</div>
 										<div class="coupleProfileText">
 											<h4 class="coupleNames">Name &amp; Name</h4>

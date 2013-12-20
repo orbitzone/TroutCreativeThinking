@@ -56,6 +56,11 @@ body.fansVFaves .ocmain-wrapper {
 body.fansVFaves .site-footer {
   margin-top: 95px;
 }
+.comingSoon {
+  font-family: 'arvobold';
+  color: #d83234;
+  font-size: 40px;
+}
 /* Buttons */
 .theBlockredBtn {
   background: #d83234;
@@ -494,8 +499,7 @@ a:hover .coupleNames {
     width: 48%;
     margin: 0 1%;
   }
-  .featuredInBathroom li:nth-child(3n+1),
-  .featuredInBathroom li.threenplus1 {
+  .featuredInBathroom li:nth-child(5n+1) {
     clear: none;
   }
   .featuredInBathroom li:nth-child(2n+1) {

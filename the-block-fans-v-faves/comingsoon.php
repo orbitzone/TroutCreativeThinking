@@ -41,6 +41,7 @@
 							<div class="theBlockBannerCaption">
 								<h2>Love a bathroom on The Block?</h2>
 								<p>Learn more about the products and inspiration behind it right here. </p>
+								<h3 class="comingSoon">Coming Soon</h3>
 							</div>
 						</div>
 						<div class="theBlockSubscribe theBlockShadowBlocks  shadowRight shadowLeft">

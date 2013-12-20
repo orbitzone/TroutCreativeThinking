@@ -369,6 +369,12 @@ a:hover .coupleNames {
   width: 18% ;
   margin: 0 1%;
 }
+.featuredInBathroom .media-thumbnails h6 small {
+  display: block;
+  font-weight: normal;
+  font-size: inherit;
+  padding-top: 5px;
+}
 .room-thumbs .theBlockShadowBlocksInner,
 .otherTeams .theBlockShadowBlocksInner,
 .facebookComments .theBlockShadowBlocksInner {

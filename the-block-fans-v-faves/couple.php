@@ -84,28 +84,28 @@
 											<h3> Products featured in this bathroom </h3>
 											<ul class="thumbnails media-thumbnails">
 												<li> <a href="http://www.reece.com.au/bathrooms/products/ideal-standard-tonic-toilet-roll-holder" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-9500978.jpg" alt="thumb"></a>
-													<h6> Ideal Standard Tonic Toilet Roll Holder </h6>
+													<h6> Ideal Standard Tonic <small>Toilet Roll Holder </small></h6>
 												</li>
 												<li> <a href="http://www.reece.com.au/bathrooms/products/ideal-standard-tonic-glass-shelf" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-9500981.jpg" alt="thumb"></a>
-													<h6> Ideal Standard Tonic Glass Shelf </h6>
+													<h6> Ideal Standard Tonic <small>Glass Shelf</small> </h6>
 												</li>
 												<li> <a href="http://www.reece.com.au/bathrooms/products/caroma-pearl-btw-inwall-toilet-pan" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-9503593.jpg" alt="thumb"></a>
-													<h6> Caroma Pearl BTW Inwall Toilet Pan </h6>
+													<h6> Caroma Pearl BTW Inwall <small>Toilet Pan </small></h6>
 												</li>
 												<li> <a href="http://www.reece.com.au/bathrooms/products/methven-aroha-shower-mixer" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-2285431.jpg" alt="thumb"></a>
-													<h6> Methven Aroha Shower Mixer </h6>
+													<h6> Methven Aroha <small>Shower Mixer </small></h6>
 												</li>
 												<li> <a href="http://www.reece.com.au/bathrooms/products/ideal-standard-tonic-toilet-roll-holder" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-9500978.jpg" alt="thumb"></a>
-													<h6> Ideal Standard Tonic Toilet Roll Holder </h6>
+													<h6> Ideal Standard Tonic <small>Toilet Roll Holder </small></h6>
 												</li>
 												<li> <a href="http://www.reece.com.au/bathrooms/products/ideal-standard-tonic-glass-shelf" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-9500981.jpg" alt="thumb"></a>
-													<h6> Ideal Standard Tonic Glass Shelf </h6>
+													<h6> Ideal Standard Tonic <small>Glass Shelf </small></h6>
 												</li>
 												<li> <a href="http://www.reece.com.au/bathrooms/products/caroma-pearl-btw-inwall-toilet-pan" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-9503593.jpg" alt="thumb"></a>
-													<h6> Caroma Pearl BTW Inwall Toilet Pan </h6>
+													<h6> Caroma Pearl BTW <small>Inwall Toilet Pan </small></h6>
 												</li>
 												<li> <a href="http://www.reece.com.au/bathrooms/products/methven-aroha-shower-mixer" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-2285431.jpg" alt="thumb"></a>
-													<h6> Methven Aroha Shower Mixer </h6>
+													<h6> Methven Aroha <small>Shower Mixer </small></h6>
 												</li>												
 											</ul>										
 										</div>
@@ -137,16 +137,16 @@
 											<h3> Products featured in this bathroom </h3>
 											<ul class="thumbnails media-thumbnails">
 												<li> <a href="http://www.reece.com.au/bathrooms/products/ideal-standard-tonic-toilet-roll-holder" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-9500978.jpg" alt="thumb"></a>
-													<h6> Ideal Standard Tonic Toilet Roll Holder </h6>
+													<h6> Ideal Standard Tonic <small>Toilet Roll Holder</small> </h6>
 												</li>
 												<li> <a href="http://www.reece.com.au/bathrooms/products/ideal-standard-tonic-glass-shelf" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-9500981.jpg" alt="thumb"></a>
-													<h6> Ideal Standard Tonic Glass Shelf </h6>
+													<h6> Ideal Standard Tonic <small>Glass Shelf </small></h6>
 												</li>
 												<li> <a href="http://www.reece.com.au/bathrooms/products/caroma-pearl-btw-inwall-toilet-pan" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-9503593.jpg" alt="thumb"></a>
-													<h6> Caroma Pearl BTW Inwall Toilet Pan </h6>
+													<h6> Caroma Pearl BTW <small>Inwall Toilet Pan </small></h6>
 												</li>
 												<li> <a href="http://www.reece.com.au/bathrooms/products/methven-aroha-shower-mixer" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-2285431.jpg" alt="thumb"></a>
-													<h6> Methven Aroha Shower Mixer </h6>
+													<h6> Methven Aroha <small>Shower Mixer </small></h6>
 												</li>
 											</ul>										
 										</div>
@@ -178,18 +178,18 @@
 											<h3> Products featured in this bathroom </h3>
 											<ul class="thumbnails media-thumbnails">
 												<li> <a href="http://www.reece.com.au/bathrooms/products/ideal-standard-tonic-toilet-roll-holder" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-9500978.jpg" alt="thumb"></a>
-													<h6> Ideal Standard Tonic Toilet Roll Holder </h6>
+													<h6> Ideal Standard Tonic <small>Toilet Roll Holder</small> </h6>
 												</li>
 												<li> <a href="http://www.reece.com.au/bathrooms/products/ideal-standard-tonic-glass-shelf" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-9500981.jpg" alt="thumb"></a>
-													<h6> Ideal Standard Tonic Glass Shelf </h6>
+													<h6> Ideal Standard Tonic <small>Glass Shelf </small></h6>
 												</li>
 												<li> <a href="http://www.reece.com.au/bathrooms/products/caroma-pearl-btw-inwall-toilet-pan" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-9503593.jpg" alt="thumb"></a>
-													<h6> Caroma Pearl BTW Inwall Toilet Pan </h6>
+													<h6> Caroma Pearl BTW <small>Inwall Toilet Pan </small></h6>
 												</li>
 												<li> <a href="http://www.reece.com.au/bathrooms/products/methven-aroha-shower-mixer" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-2285431.jpg" alt="thumb"></a>
-													<h6> Methven Aroha Shower Mixer </h6>
+													<h6> Methven Aroha <small>Shower Mixer </small></h6>
 												</li>
-											</ul>										
+											</ul>											
 										</div>
 
 									</div>

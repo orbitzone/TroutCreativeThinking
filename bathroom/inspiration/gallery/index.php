@@ -58,58 +58,37 @@
 								Gallery Filter </h3>
 								<div id="galleryFilter" class="collapse">
 								<h4>Style</h4>
-								<ul class="filterList">
-									<li><label class="checkbox"><input type="checkbox" name="style" value="Classic">Classic</label></li>
-									<li><label class="checkbox"><input type="checkbox" name="style" value="Contemporary">Contemporary</label></li>
-									<li><label class="checkbox"><input type="checkbox" name="style" value="Colourful">Colourful</label></li>
-									<li><label class="checkbox"><input type="checkbox" name="style" value="Family">Family Space</label></li>
-									<li><label class="checkbox"><input type="checkbox" name="style" value="View">Room with a View</label></li>
-									<li><label class="checkbox"><input type="checkbox" name="style" value="Retreat">Retreat</label></li>
+								<ul id="filterStyle" class="filterList">
+									<li><label class="checkbox"><input type="checkbox" name="style" value="classic">Classic</label></li>
+									<li><label class="checkbox"><input type="checkbox" name="style" value="contemporary">Contemporary</label></li>
+									<li><label class="checkbox"><input type="checkbox" name="style" value="colourful">Colourful</label></li>
+									<li><label class="checkbox"><input type="checkbox" name="style" value="family">Family Space</label></li>
+									<li><label class="checkbox"><input type="checkbox" name="style" value="view">Room with a View</label></li>
+									<li><label class="checkbox"><input type="checkbox" name="style" value="retreat">Retreat</label></li>
 									<li><label class="checkbox"><input type="checkbox" name="style" value="CompetitionWinners">Previous Competition Winners</label></li>
 								</ul>
 								<h4>Trends</h4>
-								<ul class="filterList">
-									<li><label class="checkbox"><input type="checkbox" name="style" value="Classic">Hotel Inspired</label></li>
-									<li><label class="checkbox"><input type="checkbox" name="style" value="Contemporary">Black &amp; White</label></li>
-									<li><label class="checkbox"><input type="checkbox" name="style" value="Colourful">Powder Room</label></li>
-									<li><label class="checkbox"><input type="checkbox" name="style" value="Family">Organic</label></li>
-									<li><label class="checkbox"><input type="checkbox" name="style" value="View">Neoclassic</label></li>
-									<li><label class="checkbox"><input type="checkbox" name="style" value="Retreat">Retreat</label></li>
-									<li><label class="checkbox"><input type="checkbox" name="style" value="CompetitionWinners">Previous Competition Winners</label></li>
+								<ul id="filterTrend" class="filterList">
+									<li><label class="checkbox"><input type="checkbox" name="trends" value="hotel">Hotel Inspired</label></li>
+									<li><label class="checkbox"><input type="checkbox" name="trends" value="black">Black &amp; White</label></li>
+									<li><label class="checkbox"><input type="checkbox" name="trends" value="powder">Powder Room</label></li>
+									<li><label class="checkbox"><input type="checkbox" name="trends" value="organic">Organic</label></li>
+									<li><label class="checkbox"><input type="checkbox" name="trends" value="neo">Neoclassic</label></li>
 								</ul>							
 								<h4>Features</h4>
-								<ul class="filterList last">
-									<li><label class="checkbox"><input type="checkbox" name="style" value="Ensuite">Ensuite</label></li>
-									<li><label class="checkbox"><input type="checkbox" name="style" value="Bathtub">Bathtub</label></li>
-									<li><label class="checkbox"><input type="checkbox" name="style" value="Twin Basins">Twin Basins</label></li>
-									<li><label class="checkbox"><input type="checkbox" name="style" value="Twin Showers">Twin Showers</label></li>
-									<li><label class="checkbox"><input type="checkbox" name="style" value="Heated Towel rails">Heated Towel rails</label></li>
+								<ul id="filterFeature" class="filterList last">
+									<li><label class="checkbox"><input type="checkbox" name="features" value="ensuite">Ensuite</label></li>
+									<li><label class="checkbox"><input type="checkbox" name="features" value="bathtub">Bathtub</label></li>
+									<li><label class="checkbox"><input type="checkbox" name="features" value="twinBasin">Twin Basins</label></li>
+									<li><label class="checkbox"><input type="checkbox" name="features" value="TwinShower">Twin Showers</label></li>
+									<li><label class="checkbox"><input type="checkbox" name="features" value="heatedrails">Heated Towel rails</label></li>
 								</ul>
 								</div>								
 							</div><!-- /.galleryFilter -->
 						</div>
 						<div class="span9">
-							<ul class="galleryThumbList">
-							<?php for ($i = 1; $i < 13 ; $i++) {
-
-								if( $i%3 == 1){
-									?>
-									<li class="galleryThumbItem clearFloat">
-									<?php
-								}else{
-								?>
-								<li class="galleryThumbItem">
-								<?php } ?>
-									<figure>
-										<img src="http://placehold.it/750x500.png/ccc/aaa" alt="placeholder">
-										<figcaption>
-											<strong class="galleryThumbPlace">Elsternwick</strong>
-											<span class="galleryThumbState">Victoria</span>
-										</figcaption>
-									</figure>
-
-								</li>
-								<?php } ?>
+							<ul class="galleryThumbList" id="galleryThumbList">
+								<?php include("gallerylist.php") ?>
 							</ul>
 							<div class="fb-comments" data-href="http://example.com/comments" data-numposts="1" data-colorscheme="light"></div>
 						</div>
@@ -119,8 +98,7 @@
 
 			<?php 
 			   	include_once($serverBase."/includes/foot/foot-generic.php");
-			?>		
-
+			?>
 		</div>		
 
 	   	<?php
@@ -146,7 +124,26 @@
 		?>
 		<script type="text/javascript">
 			var $ajaxURL = "detailspage.php";
-			$('.galleryThumbList li.galleryThumbItem figure').click(function(){
+			$(function(){
+				$('.galleryThumbList li.galleryThumbItem figure').click(loadDetailPage);
+
+				$( "#filterStyle input[type=checkbox]" ).on( "click", checkChanged );
+
+			});
+			
+
+			function checkChanged(){
+				parameter = { style : $(this).val()}
+				$.get('galleryList.php',parameter,function(data){
+					$('#galleryThumbList').html(data);
+					$('#galleryThumbList li.galleryThumbItem figure').click(loadDetailPage);
+				});
+			}
+
+			function fixThumbHeight(){
+				$('li.galleryThumbItem.active').css({'margin-bottom':$('li.galleryThumbItem.active .galleryDetailPage').height()});;
+			}
+			function loadDetailPage(){
 				if ( $(this).parent('li').hasClass('active') ) return;// avoid reload
 				$('.galleryThumbList li.galleryThumbItem').removeClass('active').css({'margin-bottom':'0px'});// Remove the active class and the margin used to display details
 				$('#galleryDetailPage').remove(); // Removing the details
@@ -175,10 +172,7 @@
 						}
 						e.preventDefault()
 					});										
-				});				
-			});
-			function fixThumbHeight(){
-				$('li.galleryThumbItem.active').css({'margin-bottom':$('li.galleryThumbItem.active .galleryDetailPage').height()});;
+				});	
 			}
 		</script>
     </body>

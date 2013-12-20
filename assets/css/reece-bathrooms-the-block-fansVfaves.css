@@ -50,13 +50,6 @@ body.fansVFaves .main-wrapper {
 body.fansVFaves .ocmain-wrapper {
   background: #c6e7ee url('../images/the-block-fans-V-faves/bg.jpg') center 0 no-repeat;
 }
-body.fansVFaves .thumbnail {
-  border: none !important;
-  padding: 0;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
 /* Buttons */
 .theBlockredBtn {
   background: #d83234;
@@ -183,6 +176,13 @@ body.fansVFaves .thumbnail {
   text-align: right;
 }
 /* Couples Wrap */
+.coupleNames {
+  color: #d83234;
+  font-family: 'arvobold';
+}
+a:hover .coupleNames {
+  color: #8a1a1c;
+}
 .nav-couples {
   background: white;
 }
@@ -198,16 +198,10 @@ body.fansVFaves .thumbnail {
   text-align: center;
 }
 .nav-couples li a {
-  color: #d83234;
   margin: 0 10px;
   display: block;
 }
-.nav-couples li a:hover {
-  text-decoration: none;
-  color: #8a1a1c;
-}
 .nav-couples .coupleNames {
-  font-family: 'arvobold';
   font-size: 30px;
 }
 .theBlockHomeBanner .theBlockShadowBlocksInner {
@@ -243,9 +237,7 @@ body.fansVFaves .thumbnail {
   padding: 20px;
 }
 .couple-profile .coupleNames {
-  font-family: 'arvobold';
   font-size: 30px;
-  color: #d83234;
 }
 .couple-profile p {
   color: #5c5c52;
@@ -256,6 +248,25 @@ body.fansVFaves .thumbnail {
   font-size: 36px;
   color: white;
   margin-bottom: 0px;
+}
+/* Thumb Nails */
+.theBlockShadowBlocksInner a.thumbnail {
+  padding: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  border: none;
+}
+.room-thumbs a.thumbnail:hover img,
+.room-thumbs a.active img {
+  margin: -2%;
+  max-width: 106%;
+}
+/* Products Featured in Bathroom */
+.featuredInBathroom li:nth-child(3n+1),
+.featuredInBathroom li.threenplus1 {
+  margin-left: 0;
+  clear: both;
 }
 .roomList .theBlockShadowBlocksInner,
 .otherTeams .theBlockShadowBlocksInner,
@@ -280,9 +291,10 @@ body.fansVFaves .thumbnail {
   text-align: center;
 }
 .relatedTeam .coupleNames {
-  font-family: 'arvobold';
   font-size: 20px;
-  color: #d83234;
+}
+.relatedTeam a:hover {
+  text-decoration: none;
 }
 @media (max-width: 979px) {
   .theBlockBanner h2 {
@@ -293,6 +305,10 @@ body.fansVFaves .thumbnail {
   }
 }
 @media (max-width: 767px) {
+  .theBlockShadowBlocks:after {
+    left: 20px;
+    right: 20px;
+  }
   .theBlockBanner {
     display: block;
   }

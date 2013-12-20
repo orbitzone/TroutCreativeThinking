@@ -55,12 +55,6 @@ body.fansVFaves{
 	.ocmain-wrapper{
 		background: @theBlockBg url('../images/the-block-fans-V-faves/bg.jpg') center 0 no-repeat;
 	}
-
-	.thumbnail{
-		border:none !important;
-		padding: 0;
-		.box-shadow(none);
-	}
 }
 
 /* Buttons */
@@ -164,6 +158,7 @@ body.fansVFaves{
 		right: 20px;
 	}
 }
+
 /* Subscribe Block */
 .theBlockSubscribe{
 	margin: 40px 0 10px;
@@ -191,6 +186,14 @@ body.fansVFaves{
 
 }
 /* Couples Wrap */
+
+.coupleNames{
+	color: @theBlockRed;
+	font-family: 'arvobold';
+}
+a:hover .coupleNames{
+	color: darken(@theBlockRed, 20%);	
+}
 .nav-couples{
 	background: white;
 	ul{
@@ -204,17 +207,11 @@ body.fansVFaves{
 		padding: 20px 5%;
 		text-align: center;
 		a{
-			color: @theBlockRed;
 			margin: 0 10px;
 			display: block;
-			&:hover{
-				text-decoration:none;
-				color: darken(@theBlockRed, 20%);
-			}
 		}
 	}
 	.coupleNames{
-		font-family: 'arvobold';
 		font-size: 30px;
 	}
 }
@@ -257,14 +254,11 @@ body.fansVFaves{
 /* Couple Page */
 .couple-profile
 {
-
 	.theBlockShadowBlocksInner{
 		padding: 20px;
 	}
 	.coupleNames{
-		font-family: 'arvobold';
 		font-size: 30px;
-		color: @theBlockRed;
 	}
 	p{
 		color: @theblockTextGray;
@@ -279,6 +273,28 @@ body.fansVFaves{
 	color: white;
 	margin-bottom:0px;
 }
+/* Thumb Nails */
+.theBlockShadowBlocksInner{
+	a.thumbnail{
+		padding: 0;
+		.border-radius(0);
+		border:none;
+	}
+}
+.room-thumbs{
+	a.thumbnail:hover img,a.active img{
+		margin: -2%;
+		max-width: 106%;
+	}
+}
+/* Products Featured in Bathroom */
+.featuredInBathroom{
+	li:nth-child(3n+1),li.threenplus1{
+			margin-left: 0;
+			clear: both;
+	}
+}
+
 
 .roomList,.otherTeams, .facebookComments{	
 	.theBlockShadowBlocksInner{
@@ -298,9 +314,10 @@ body.fansVFaves{
 .relatedTeam{
 	text-align: center;
 	.coupleNames{
-		font-family: 'arvobold';
 		font-size: 20px;
-		color: @theBlockRed;
+	}
+	a:hover{
+		text-decoration: none;
 	}
 }
 @media (max-width:979px){
@@ -314,6 +331,10 @@ body.fansVFaves{
 	}	
 }
 @media (max-width:767px){
+	.theBlockShadowBlocks:after{
+		left: 20px;
+		right: 20px;
+	}	
 	.theBlockBanner{
 		display: block;
 		.theBlockLogoWrap,.theBlockBannerCaption{

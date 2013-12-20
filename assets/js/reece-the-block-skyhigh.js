@@ -1,24 +1,18 @@
 $(document).ready(function()
 {
+	$('.featuredInBathroom li:nth-child(3n+1)').addClass('threenplus1');
 
     $('.room-thumbs a.thumbnail').live('click', function(e)
     {
 		e.preventDefault();
-		$MediaView = $(this).closest('.theBlockShadowBlocksInner').find('.MediaView');
+		$parent = $(this).closest('.theBlockShadowBlocksInner')
+		$parent.find('a.thumbnail').removeClass('active');
+		$(this).addClass('active');
+		$MediaView = $parent.find('.MediaView');
 		$MediaLoading = $('<div />').attr('id', 'MediaLoading');
 		$MediaView.append($MediaLoading);
 		$MediaLoading.show();
-
 		$MediaView.find('.heroImage').attr("src",$(this).attr("href"));
-		/*$MediaView.find('.caption').text($(this).attr("title"));*/
-
-		/*
-		$MediaView.find('.inner-content').html
-		(
-	    	'<img src="'+$('img',this).attr('data-original')+'" alt="thumb" />'+
-	    	'<div class="caption"><p>'+$('img',this).attr('alt')+'</p></div>'
-	    );
-	*/
 		$MediaLoading.fadeOut(function(){
 		    $(this).remove();
 		});

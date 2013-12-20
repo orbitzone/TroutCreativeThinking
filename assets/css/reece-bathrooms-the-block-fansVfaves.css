@@ -293,6 +293,14 @@ a:hover .coupleNames {
   color: #461716;
   font-size: 1.5em;
 }
+@media (max-width: 480px) {
+  .coupleProfile .theBlockShadowBlocksInner,
+  .coupleProfile .coupleProfileThumb,
+  .coupleProfile .coupleProfileText {
+    display: block;
+    width: auto;
+  }
+}
 /* Thumb Nails */
 .theBlockShadowBlocksInner a.thumbnail {
   padding: 0;
@@ -314,7 +322,7 @@ a:hover .coupleNames {
   line-height: 80px;
   text-align: center;
   background: #d83234;
-  display: block;
+  display: none;
   font-family: 'arvobold';
   color: white;
   font-size: 30px;
@@ -329,6 +337,11 @@ a:hover .coupleNames {
 .room-thumbs a.active img {
   margin: -2%;
   max-width: 104%;
+}
+@media (min-width: 1200px) {
+  .room-thumbs .roomSNo {
+    display: block;
+  }
 }
 /* */
 .heroThumbs {

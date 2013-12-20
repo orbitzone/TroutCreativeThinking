@@ -288,14 +288,12 @@ a:hover .coupleNames{
 }
 
 
-
 .coupleProfile
 {
 	.theBlockShadowBlocks{
 		margin-top: 10px;
 	}
 	.theBlockShadowBlocksInner{
-		
 		display: table;
 	}
 	.coupleNames{
@@ -320,6 +318,16 @@ a:hover .coupleNames{
 		font-size: 1.5em
 	}
 }
+@media (max-width:480px){
+	.coupleProfile{
+		.theBlockShadowBlocksInner,.coupleProfileThumb,.coupleProfileText{
+			display: block;
+			width: auto;
+		}
+
+	}
+}
+
 /* Thumb Nails */
 .theBlockShadowBlocksInner{
 	a.thumbnail{
@@ -340,7 +348,7 @@ a:hover .coupleNames{
 		line-height: 80px;
 		text-align: center;
 		background: @theBlockRed;
-		display: block;
+		display: none;
 		font-family: 'arvobold';
 		color: white;
 		font-size: 30px;
@@ -352,6 +360,14 @@ a:hover .coupleNames{
 	a.thumbnail:hover img,a.active img{
 		margin: -2%;
 		max-width: 104%;
+	}
+}
+
+@media(min-width:1200px){
+	.room-thumbs{
+		.roomSNo{
+			display: block;
+		}
 	}
 }
 

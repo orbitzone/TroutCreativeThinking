@@ -36,160 +36,166 @@
 				<div class="inner-wrapper">
 				<!-- content here -->
 					<div class="main-wrapper">
-						<div class="theBlockBanner theBlockBannerSmall">
-							<div class="theBlockLogoWrap">
+						<div class="backLink">
+							<a href="/the-block-fans-v-faves"><i class="icon-caret-left icon-large">&nbsp;</i> <span>Back</span></a>
+						</div>
+						<div class="couplePageHeader">
+							<div class="couplePageTheBlockLogo">
 								<a href="/the-block-fans-v-faves"><img src="/assets/images/the-block-fans-V-faves/the-blogk-logo.png" /></a>
 							</div>
-							<div class="theBlockBannerCaption">
-								<h2>Love a bathroom on The Block?</h2>
-								<p>Learn more about the products and inspiration behind it right here. </p>
+							<div class="coupleProfile">						
+								<div class="theBlockShadowBlocks shadowRight shadowLeft">
+									<div class="theBlockShadowBlocksInner">
+										<div class="coupleProfileThumb">
+											<img src="http://placehold.it/300x300.png/eee/eee" alt="placeholder">
+										</div>
+										<div class="coupleProfileText">
+											<h4 class="coupleNames">Name &amp; Name</h4>
+											<p class="coupleCaption">Learn more about the products and inspiration behind it right here.</p>
+											<p class="coupleDesc">orem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus cursus lectus, nec blandit nisie.orem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus cursus lectus, nec blandit nisie.</p>
+										</div>
+									</div>
+								</div><!-- /.couple-profile -->							
 							</div>
 						</div>
 
-						<div class="couple-profile theBlockShadowBlocks shadowRight shadowLeft">
-							<div class="theBlockShadowBlocksInner">
-								<div class="row-fluid">
-									<div class="span3">
-										<img src="http://placehold.it/300x300.png/eee/eee" alt="placeholder">
-									</div>
-									<div class="span9">
-										<h4 class="coupleNames">Name &amp; Name</h4>
-										<p class="coupleDesc">orem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus cursus lectus, nec blandit nisie.orem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus cursus lectus, nec blandit nisie.</p>
-									</div>
-								</div>
-							</div>
+								<div class="theBlockShadowBlocks shadowRight shadowLeft room-thumbs">
+									<span class="roomSNo">1</span>
+									<div class="theBlockShadowBlocksInner">
 
-						</div><!-- /.couple-profile -->
+										<h2> Lorem ipsum dolor sit amet</h2>
+										<div class="row-fluid">
+											<div class="span10">
+												<div class="MediaView hidden-phone">
+													<img class="heroImage" src="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_1.jpg">
+												</div>											
+											</div>
+											<div class="span2">
+												<ul class="heroThumbs">
+													<li><a href="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_1.jpg" class="thumbnail active" title="Caption 4"><img src="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_1.jpg"></a></li>
+													<li><a href="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_2.jpg" class="thumbnail" title="Caption 2"><img src="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_2.jpg"></a></li>
+													<li><a href="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_3.jpg" class="thumbnail" title="Caption 3"><img src="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_3.jpg"></a></li>
+													<li><a href="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_4.jpg" class="thumbnail" title="Caption 4"><img src="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_4.jpg"></a></li>
+													<li><a href="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_PLAN.png" class="thumbnail" title="Floor Plan"><img src="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_PLAN.png"></a> </li>													
+												</ul>										
+											</div>
+										</div>
+										<div class="featuredInBathroom">
+											<h3> Products featured in this bathroom </h3>
+											<ul class="thumbnails media-thumbnails">
+												<li> <a href="http://www.reece.com.au/bathrooms/products/ideal-standard-tonic-toilet-roll-holder" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-9500978.jpg" alt="thumb"></a>
+													<h6> Ideal Standard Tonic Toilet Roll Holder </h6>
+												</li>
+												<li> <a href="http://www.reece.com.au/bathrooms/products/ideal-standard-tonic-glass-shelf" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-9500981.jpg" alt="thumb"></a>
+													<h6> Ideal Standard Tonic Glass Shelf </h6>
+												</li>
+												<li> <a href="http://www.reece.com.au/bathrooms/products/caroma-pearl-btw-inwall-toilet-pan" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-9503593.jpg" alt="thumb"></a>
+													<h6> Caroma Pearl BTW Inwall Toilet Pan </h6>
+												</li>
+												<li> <a href="http://www.reece.com.au/bathrooms/products/methven-aroha-shower-mixer" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-2285431.jpg" alt="thumb"></a>
+													<h6> Methven Aroha Shower Mixer </h6>
+												</li>
+												<li> <a href="http://www.reece.com.au/bathrooms/products/ideal-standard-tonic-toilet-roll-holder" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-9500978.jpg" alt="thumb"></a>
+													<h6> Ideal Standard Tonic Toilet Roll Holder </h6>
+												</li>
+												<li> <a href="http://www.reece.com.au/bathrooms/products/ideal-standard-tonic-glass-shelf" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-9500981.jpg" alt="thumb"></a>
+													<h6> Ideal Standard Tonic Glass Shelf </h6>
+												</li>
+												<li> <a href="http://www.reece.com.au/bathrooms/products/caroma-pearl-btw-inwall-toilet-pan" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-9503593.jpg" alt="thumb"></a>
+													<h6> Caroma Pearl BTW Inwall Toilet Pan </h6>
+												</li>
+												<li> <a href="http://www.reece.com.au/bathrooms/products/methven-aroha-shower-mixer" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-2285431.jpg" alt="thumb"></a>
+													<h6> Methven Aroha Shower Mixer </h6>
+												</li>												
+											</ul>										
+										</div>
 
-						<div class="row-fluid roomList">
-							<div class="span7 room-thumbs">
-								<div class="theBlockShadowBlocks shadowRight">
+									</div>
+								</div>
+
+								<div class="theBlockShadowBlocks shadowRight shadowLeft room-thumbs">
+								<span class="roomSNo">2</span>
 									<div class="theBlockShadowBlocksInner">
 										<h2> Lorem ipsum dolor sit amet</h2>
-										<div class="MediaView  bottom-space hidden-phone">
-											<img class="heroImage" src="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_1.jpg">
-										</div>
 										<div class="row-fluid">
-											<div class="span4 bottom-space"> <a href="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_1.jpg" class="thumbnail active" title="Caption 4"><img src="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_1.jpg"></a> </div>
-											<div class="span4 bottom-space"> <a href="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_2.jpg" class="thumbnail" title="Caption 2"><img src="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_2.jpg"></a> </div>
-											<div class="span4 bottom-space"> <a href="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_3.jpg" class="thumbnail" title="Caption 3"><img src="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_3.jpg"></a> </div>
+											<div class="span10">
+												<div class="MediaView hidden-phone">
+													<img class="heroImage" src="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_1.jpg">
+												</div>											
+											</div>
+											<div class="span2">
+												<ul class="heroThumbs">
+													<li><a href="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_1.jpg" class="thumbnail active" title="Caption 4"><img src="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_1.jpg"></a></li>
+													<li><a href="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_2.jpg" class="thumbnail" title="Caption 2"><img src="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_2.jpg"></a></li>
+													<li><a href="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_3.jpg" class="thumbnail" title="Caption 3"><img src="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_3.jpg"></a></li>
+													<li><a href="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_4.jpg" class="thumbnail" title="Caption 4"><img src="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_4.jpg"></a></li>
+													<li><a href="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_PLAN.png" class="thumbnail" title="Floor Plan"><img src="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_PLAN.png"></a> </li>													
+												</ul>										
+											</div>
 										</div>
-										<div class="row-fluid">
-											<div class="span4 bottom-space"> <a href="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_4.jpg" class="thumbnail" title="Caption 4"><img src="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_4.jpg"></a> </div>										
-											<div class="span4 bottom-space"> <a href="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_1.jpg" class="thumbnail" title="Caption 1"><img src="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_1.jpg"></a> </div>
-											<div class="span4 bottom-space"> <a href="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_PLAN.png" class="thumbnail" title="Floor Plan"><img src="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_PLAN.png"></a> </div>
+										<div class="featuredInBathroom">
+											<h3> Products featured in this bathroom </h3>
+											<ul class="thumbnails media-thumbnails">
+												<li> <a href="http://www.reece.com.au/bathrooms/products/ideal-standard-tonic-toilet-roll-holder" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-9500978.jpg" alt="thumb"></a>
+													<h6> Ideal Standard Tonic Toilet Roll Holder </h6>
+												</li>
+												<li> <a href="http://www.reece.com.au/bathrooms/products/ideal-standard-tonic-glass-shelf" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-9500981.jpg" alt="thumb"></a>
+													<h6> Ideal Standard Tonic Glass Shelf </h6>
+												</li>
+												<li> <a href="http://www.reece.com.au/bathrooms/products/caroma-pearl-btw-inwall-toilet-pan" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-9503593.jpg" alt="thumb"></a>
+													<h6> Caroma Pearl BTW Inwall Toilet Pan </h6>
+												</li>
+												<li> <a href="http://www.reece.com.au/bathrooms/products/methven-aroha-shower-mixer" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-2285431.jpg" alt="thumb"></a>
+													<h6> Methven Aroha Shower Mixer </h6>
+												</li>
+											</ul>										
 										</div>
+
 									</div>
 								</div>
-							</div><!-- /.room-thumbs -->
-							<div class="span5 related">
-								<div class="theBlockShadowBlocks featuredInBathroom shadowLeft">
-									<div class="theBlockShadowBlocksInner">							
-										<h3> Products featured in this bathroom </h3>
-										<ul class="thumbnails media-thumbnails">
-											<li> <a href="http://www.reece.com.au/bathrooms/products/ideal-standard-tonic-toilet-roll-holder" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-9500978.jpg" alt="thumb"></a>
-												<h6> Ideal Standard Tonic Toilet Roll Holder </h6>
-											</li>
-											<li> <a href="http://www.reece.com.au/bathrooms/products/ideal-standard-tonic-glass-shelf" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-9500981.jpg" alt="thumb"></a>
-												<h6> Ideal Standard Tonic Glass Shelf </h6>
-											</li>
-											<li> <a href="http://www.reece.com.au/bathrooms/products/caroma-pearl-btw-inwall-toilet-pan" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-9503593.jpg" alt="thumb"></a>
-												<h6> Caroma Pearl BTW Inwall Toilet Pan </h6>
-											</li>
-											<li> <a href="http://www.reece.com.au/bathrooms/products/methven-aroha-shower-mixer" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-2285431.jpg" alt="thumb"></a>
-												<h6> Methven Aroha Shower Mixer </h6>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div><!-- /.span5 -->
-						</div><!-- /.row-fluid -->
-						<div class="row-fluid roomList">
-							<div class="span7 room-thumbs">
-								<div class="theBlockShadowBlocks shadowRight">
+
+								<div class="theBlockShadowBlocks shadowRight shadowLeft room-thumbs">
+								<span class="roomSNo">3</span>
 									<div class="theBlockShadowBlocksInner">
 										<h2> Lorem ipsum dolor sit amet</h2>
-										<div class="MediaView  bottom-space hidden-phone">
-											<img class="heroImage" src="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_1.jpg">
-										</div>
 										<div class="row-fluid">
-											<div class="span4 bottom-space"> <a href="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_1.jpg" class="thumbnail active" title="Caption 4"><img src="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_1.jpg"></a> </div>
-											<div class="span4 bottom-space"> <a href="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_2.jpg" class="thumbnail" title="Caption 2"><img src="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_2.jpg"></a> </div>
-											<div class="span4 bottom-space"> <a href="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_3.jpg" class="thumbnail" title="Caption 3"><img src="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_3.jpg"></a> </div>
+											<div class="span10">
+												<div class="MediaView hidden-phone">
+													<img class="heroImage" src="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_1.jpg">
+												</div>											
+											</div>
+											<div class="span2">
+												<ul class="heroThumbs">
+													<li><a href="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_1.jpg" class="thumbnail active" title="Caption 4"><img src="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_1.jpg"></a></li>
+													<li><a href="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_2.jpg" class="thumbnail" title="Caption 2"><img src="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_2.jpg"></a></li>
+													<li><a href="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_3.jpg" class="thumbnail" title="Caption 3"><img src="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_3.jpg"></a></li>
+													<li><a href="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_4.jpg" class="thumbnail" title="Caption 4"><img src="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_4.jpg"></a></li>
+													<li><a href="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_PLAN.png" class="thumbnail" title="Floor Plan"><img src="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_PLAN.png"></a> </li>													
+												</ul>										
+											</div>
 										</div>
-										<div class="row-fluid">
-											<div class="span4 bottom-space"> <a href="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_4.jpg" class="thumbnail" title="Caption 4"><img src="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_4.jpg"></a> </div>										
-											<div class="span4 bottom-space"> <a href="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_1.jpg" class="thumbnail" title="Caption 1"><img src="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_1.jpg"></a> </div>
-											<div class="span4 bottom-space"> <a href="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_PLAN.png" class="thumbnail" title="Floor Plan"><img src="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_PLAN.png"></a> </div>
+										<div class="featuredInBathroom">
+											<h3> Products featured in this bathroom </h3>
+											<ul class="thumbnails media-thumbnails">
+												<li> <a href="http://www.reece.com.au/bathrooms/products/ideal-standard-tonic-toilet-roll-holder" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-9500978.jpg" alt="thumb"></a>
+													<h6> Ideal Standard Tonic Toilet Roll Holder </h6>
+												</li>
+												<li> <a href="http://www.reece.com.au/bathrooms/products/ideal-standard-tonic-glass-shelf" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-9500981.jpg" alt="thumb"></a>
+													<h6> Ideal Standard Tonic Glass Shelf </h6>
+												</li>
+												<li> <a href="http://www.reece.com.au/bathrooms/products/caroma-pearl-btw-inwall-toilet-pan" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-9503593.jpg" alt="thumb"></a>
+													<h6> Caroma Pearl BTW Inwall Toilet Pan </h6>
+												</li>
+												<li> <a href="http://www.reece.com.au/bathrooms/products/methven-aroha-shower-mixer" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-2285431.jpg" alt="thumb"></a>
+													<h6> Methven Aroha Shower Mixer </h6>
+												</li>
+											</ul>										
 										</div>
+
 									</div>
 								</div>
-							</div><!-- /.room-thumbs -->
-							<div class="span5 related">
-								<div class="theBlockShadowBlocks featuredInBathroom shadowLeft">
-									<div class="theBlockShadowBlocksInner">							
-										<h3> Products featured in this bathroom </h3>
-										<ul class="thumbnails media-thumbnails">
-											<li> <a href="http://www.reece.com.au/bathrooms/products/ideal-standard-tonic-toilet-roll-holder" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-9500978.jpg" alt="thumb"></a>
-												<h6> Ideal Standard Tonic Toilet Roll Holder </h6>
-											</li>
-											<li> <a href="http://www.reece.com.au/bathrooms/products/ideal-standard-tonic-glass-shelf" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-9500981.jpg" alt="thumb"></a>
-												<h6> Ideal Standard Tonic Glass Shelf </h6>
-											</li>
-											<li> <a href="http://www.reece.com.au/bathrooms/products/caroma-pearl-btw-inwall-toilet-pan" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-9503593.jpg" alt="thumb"></a>
-												<h6> Caroma Pearl BTW Inwall Toilet Pan </h6>
-											</li>
-											<li> <a href="http://www.reece.com.au/bathrooms/products/methven-aroha-shower-mixer" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-2285431.jpg" alt="thumb"></a>
-												<h6> Methven Aroha Shower Mixer </h6>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div><!-- /.span5 -->
-						</div><!-- /.row-fluid -->
-						<div class="row-fluid roomList">
-							<div class="span7 room-thumbs">
-								<div class="theBlockShadowBlocks shadowRight">
-									<div class="theBlockShadowBlocksInner">
-										<h2> Lorem ipsum dolor sit amet</h2>
-										<div class="MediaView  bottom-space hidden-phone">
-											<img class="heroImage" src="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_1.jpg">
-										</div>
-										<div class="row-fluid">
-											<div class="span4 bottom-space"> <a href="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_1.jpg" class="thumbnail active" title="Caption 4"><img src="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_1.jpg"></a> </div>
-											<div class="span4 bottom-space"> <a href="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_2.jpg" class="thumbnail" title="Caption 2"><img src="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_2.jpg"></a> </div>
-											<div class="span4 bottom-space"> <a href="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_3.jpg" class="thumbnail" title="Caption 3"><img src="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_3.jpg"></a> </div>
-										</div>
-										<div class="row-fluid">
-											<div class="span4 bottom-space"> <a href="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_4.jpg" class="thumbnail" title="Caption 4"><img src="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_4.jpg"></a> </div>										
-											<div class="span4 bottom-space"> <a href="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_1.jpg" class="thumbnail" title="Caption 1"><img src="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_1.jpg"></a> </div>
-											<div class="span4 bottom-space"> <a href="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_PLAN.png" class="thumbnail" title="Floor Plan"><img src="/assets/images/the-block-skyhigh/rooms/week1/vic/GB_APT3_WEEK1_PLAN.png"></a> </div>
-										</div>
-									</div>
-								</div>
-							</div><!-- /.room-thumbs -->
-							<div class="span5 related">
-								<div class="theBlockShadowBlocks featuredInBathroom shadowLeft">
-									<div class="theBlockShadowBlocksInner">							
-										<h3> Products featured in this bathroom </h3>
-										<ul class="thumbnails media-thumbnails">
-											<li> <a href="http://www.reece.com.au/bathrooms/products/ideal-standard-tonic-toilet-roll-holder" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-9500978.jpg" alt="thumb"></a>
-												<h6> Ideal Standard Tonic Toilet Roll Holder </h6>
-											</li>
-											<li> <a href="http://www.reece.com.au/bathrooms/products/ideal-standard-tonic-glass-shelf" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-9500981.jpg" alt="thumb"></a>
-												<h6> Ideal Standard Tonic Glass Shelf </h6>
-											</li>
-											<li> <a href="http://www.reece.com.au/bathrooms/products/caroma-pearl-btw-inwall-toilet-pan" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-9503593.jpg" alt="thumb"></a>
-												<h6> Caroma Pearl BTW Inwall Toilet Pan </h6>
-											</li>
-											<li> <a href="http://www.reece.com.au/bathrooms/products/methven-aroha-shower-mixer" title="more" class="thumbnail"><img src="http://www.reece.com.au/assets/product-images/_resampled/SetSize300300-2285431.jpg" alt="thumb"></a>
-												<h6> Methven Aroha Shower Mixer </h6>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div><!-- /.span5 -->
-						</div><!-- /.row-fluid -->
+
+
 						<div class="theBlockShadowBlocks otherTeams shadowRight shadowLeft">
 							<div class="theBlockShadowBlocksInner">
 								<h2> Other Teams </h2>

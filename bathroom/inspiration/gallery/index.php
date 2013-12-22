@@ -122,7 +122,7 @@
 		  	include_once($serverBase."/includes/foot/scripts.php");
 		?>
 		<script type="text/javascript">
-			var $ajaxURL = "detailspage.php";
+			var $detailaPage = "detailspage.php";
 			$(function(){
 				$('.galleryThumbList li.galleryThumbItem figure').click(loadDetailPage);
 
@@ -156,13 +156,15 @@
 				$('li.galleryThumbItem.active').css({'margin-bottom':$('li.galleryThumbItem.active .galleryDetailPage').height()});;
 			}
 			function loadDetailPage(){
-				if ( $(this).parent('li').hasClass('active') ) return;// avoid reload
+				parentLi = $(this).parent('li');
+				if ( parentLi.hasClass('active') ) return;// avoid reload
+				uniqueAjaxURL = parentLi.attr('data-ajaxUrl');
 				$('.galleryThumbList li.galleryThumbItem').removeClass('active').css({'margin-bottom':'0px'});// Remove the active class and the margin used to display details
 				$('#galleryDetailPage').remove(); // Removing the details
 				$('#thumbCaretWrap').remove(); // Removing the caret
 				var $thisEl = $(this).parent('li.galleryThumbItem');
 				$thisEl.addClass('active').append('<div id="thumbCaretWrap"><span class="caret"></span></div><div id="galleryDetailPage" class="galleryDetailPage"></div>');
-				$.get($ajaxURL,function(data){
+				$.get($detailaPage,{url:uniqueAjaxURL},function(data){
 					$("#galleryDetailPage").html(data);// load data
 					$( window ).resize(fixThumbHeight);// fix height on resize
 					$( "#galleryDetailPage img").load(fixThumbHeight);// Fix height after all images load

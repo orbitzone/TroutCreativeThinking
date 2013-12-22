@@ -98,6 +98,10 @@ for ($i = 0; $i < count($parts) - 1; $i++) {
  $currentDir .= $parts[$i] . "/";
 }
 $ajaxURL = $currentDir;
+
+if (isset($_GET['url'])){
+	$ajaxURL = $currentDir.stripslashes($_GET['url']);
+}
 ?>
 		<div id="galleryPageComments" class="fb-comments" data-href="<?php echo $ajaxURL; ?>" data-numposts="1" data-colorscheme="light"></div>	
 	<!--<section class="commentsSection">

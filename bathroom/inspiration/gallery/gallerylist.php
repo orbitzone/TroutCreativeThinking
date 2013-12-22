@@ -1,35 +1,35 @@
 <?php 
 
 $galleryList=array(
-		array("place"=>"Malvern","state"=>"Victoria","style"=>"classic","trend"=>"hotel","features"=>"ensuite"),
-		array("place"=>"Woodvale","state"=>"Western Australia","style"=>"classic","trend"=>"hotel","features"=>"bathtub"),
-		array("place"=>"Brighton","state"=>"Victoria","style"=>"classic","trend"=>"hotel","features"=>"twinBasin"),
-		array("place"=>"Malvern","state"=>"Victoria","style"=>"classic","trend"=>"hotel","features"=>"TwinShower"),
+		array("place"=>"Malvern","state"=>"Victoria","style"=>"classic","trend"=>"hotel","features"=>"ensuite","url"=>"gallerypage01"),
+		array("place"=>"Woodvale","state"=>"Western Australia","style"=>"classic","trend"=>"hotel","features"=>"bathtub","url"=>"gallerypage02"),
+		array("place"=>"Brighton","state"=>"Victoria","style"=>"classic","trend"=>"hotel","features"=>"twinBasin","url"=>"gallerypage03"),
+		array("place"=>"Malvern","state"=>"Victoria","style"=>"classic","trend"=>"hotel","features"=>"TwinShower","url"=>"gallerypage04"),
 
-		array("place"=>"Balgowlah","state"=>"New South Wales","style"=>"classic","trend"=>"black","features"=>"ensuite"),
-		array("place"=>"Thornleigh","state"=>"New South Wales","style"=>"classic","trend"=>"black","features"=>"bathtub"),
-		array("place"=>"Tamworth","state"=>"New South Wales","style"=>"classic","trend"=>"black","features"=>"twinBasin"),
-		array("place"=>"Windsor","state"=>"Victoria","style"=>"classic","trend"=>"black","features"=>"TwinShower"),
+		array("place"=>"Balgowlah","state"=>"New South Wales","style"=>"classic","trend"=>"black","features"=>"ensuite","url"=>"gallerypage05"),
+		array("place"=>"Thornleigh","state"=>"New South Wales","style"=>"classic","trend"=>"black","features"=>"bathtub","url"=>"gallerypage06"),
+		array("place"=>"Tamworth","state"=>"New South Wales","style"=>"classic","trend"=>"black","features"=>"twinBasin","url"=>"gallerypage07"),
+		array("place"=>"Windsor","state"=>"Victoria","style"=>"classic","trend"=>"black","features"=>"TwinShower","url"=>"gallerypage08"),
 
-		array("place"=>"Balgowlah","state"=>"New South Wales","style"=>"classic","trend"=>"powder","features"=>"ensuite"),
-		array("place"=>"Thornleigh","state"=>"New South Wales","style"=>"classic","trend"=>"powder","features"=>"bathtub"),
-		array("place"=>"Tamworth","state"=>"New South Wales","style"=>"classic","trend"=>"powder","features"=>"twinBasin"),
-		array("place"=>"Windsor","state"=>"Victoria","style"=>"classic","trend"=>"powder","features"=>"TwinShower"),			
+		array("place"=>"Balgowlah","state"=>"New South Wales","style"=>"classic","trend"=>"powder","features"=>"ensuite","url"=>"gallerypage09"),
+		array("place"=>"Thornleigh","state"=>"New South Wales","style"=>"classic","trend"=>"powder","features"=>"bathtub","url"=>"gallerypage10"),
+		array("place"=>"Tamworth","state"=>"New South Wales","style"=>"classic","trend"=>"powder","features"=>"twinBasin","url"=>"gallerypage11"),
+		array("place"=>"Windsor","state"=>"Victoria","style"=>"classic","trend"=>"powder","features"=>"TwinShower","url"=>"gallerypage12"),			
 
-		array("place"=>"Malvern","state"=>"Victoria","style"=>"contemporary","trend"=>"hotel","features"=>"ensuite"),
-		array("place"=>"Woodvale","state"=>"Western Australia","style"=>"contemporary","trend"=>"hotel","features"=>"bathtub"),
-		array("place"=>"Brighton","state"=>"Victoria","style"=>"contemporary","trend"=>"hotel","features"=>"twinBasin"),
-		array("place"=>"Malvern","state"=>"Victoria","style"=>"contemporary","trend"=>"hotel","features"=>"TwinShower"),
+		array("place"=>"Malvern","state"=>"Victoria","style"=>"contemporary","trend"=>"hotel","features"=>"ensuite","url"=>"gallerypage13"),
+		array("place"=>"Woodvale","state"=>"Western Australia","style"=>"contemporary","trend"=>"hotel","features"=>"bathtub","url"=>"gallerypage14"),
+		array("place"=>"Brighton","state"=>"Victoria","style"=>"contemporary","trend"=>"hotel","features"=>"twinBasin","url"=>"gallerypage15"),
+		array("place"=>"Malvern","state"=>"Victoria","style"=>"contemporary","trend"=>"hotel","features"=>"TwinShower","url"=>"gallerypage01"),
 
-		array("place"=>"Balgowlah","state"=>"New South Wales","style"=>"contemporary","trend"=>"black","features"=>"ensuite"),
-		array("place"=>"Thornleigh","state"=>"New South Wales","style"=>"contemporary","trend"=>"black","features"=>"bathtub"),
-		array("place"=>"Tamworth","state"=>"New South Wales","style"=>"contemporary","trend"=>"black","features"=>"twinBasin"),
-		array("place"=>"Windsor","state"=>"Victoria","style"=>"contemporary","trend"=>"black","features"=>"TwinShower"),	
+		array("place"=>"Balgowlah","state"=>"New South Wales","style"=>"contemporary","trend"=>"black","features"=>"ensuite","url"=>"gallerypage16"),
+		array("place"=>"Thornleigh","state"=>"New South Wales","style"=>"contemporary","trend"=>"black","features"=>"bathtub","url"=>"gallerypage17"),
+		array("place"=>"Tamworth","state"=>"New South Wales","style"=>"contemporary","trend"=>"black","features"=>"twinBasin","url"=>"gallerypage18"),
+		array("place"=>"Windsor","state"=>"Victoria","style"=>"contemporary","trend"=>"black","features"=>"TwinShower","url"=>"gallerypage19"),	
 
-		array("place"=>"Malvern","state"=>"Victoria","style"=>"contemporary","trend"=>"powder","features"=>"ensuite"),
-		array("place"=>"Woodvale","state"=>"Western Australia","style"=>"contemporary","trend"=>"powder","features"=>"bathtub"),
-		array("place"=>"Brighton","state"=>"Victoria","style"=>"contemporary","trend"=>"powder","features"=>"twinBasin"),
-		array("place"=>"Malvern","state"=>"Victoria","style"=>"contemporary","trend"=>"powder","features"=>"TwinShower"),
+		array("place"=>"Malvern","state"=>"Victoria","style"=>"contemporary","trend"=>"powder","features"=>"ensuite","url"=>"gallerypage20"),
+		array("place"=>"Woodvale","state"=>"Western Australia","style"=>"contemporary","trend"=>"powder","features"=>"bathtub","url"=>"gallerypage21"),
+		array("place"=>"Brighton","state"=>"Victoria","style"=>"contemporary","trend"=>"powder","features"=>"twinBasin","url"=>"gallerypage22"),
+		array("place"=>"Malvern","state"=>"Victoria","style"=>"contemporary","trend"=>"powder","features"=>"TwinShower","url"=>"gallerypage23"),
 		);
 $styleArray = array();
 $trendArray = array();
@@ -75,7 +75,7 @@ if(! count($galleryListPopulate)){
 $j = 0;
 $output = '';
 foreach ($galleryListPopulate as $value) {
-    $output = '<li class="galleryThumbItem">';
+    $output = '<li class="galleryThumbItem" data-ajaxUrl="'.$value['url'].'">';
     $output .= '<figure>';
     $output .= '	<img src="http://placehold.it/750x500.png/ccc/aaa" alt="placeholder">';
     $output .= '	<figcaption>';

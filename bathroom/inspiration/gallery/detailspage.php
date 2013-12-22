@@ -89,7 +89,18 @@
 			</div>
 		</li>
 	</ul><!-- /.galleryDetailFooter -->
-	<section class="commentsSection">
+
+<?php
+$url = $_SERVER['REQUEST_URI']; //returns the current URL
+$parts = explode('/',$url);
+$currentDir = $_SERVER['SERVER_NAME'];
+for ($i = 0; $i < count($parts) - 1; $i++) {
+ $currentDir .= $parts[$i] . "/";
+}
+$ajaxURL = $currentDir;
+?>
+		<div id="galleryPageComments" class="fb-comments" data-href="<?php echo $ajaxURL; ?>" data-numposts="1" data-colorscheme="light"></div>	
+	<!--<section class="commentsSection">
 		<h4>Comments</h4>
-		
-	</section>
+
+	</section>-->

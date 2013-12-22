@@ -89,8 +89,7 @@
 						<div class="span9">
 							<ul class="galleryThumbList" id="galleryThumbList">
 								<?php include("gallerylist.php") ?>
-							</ul>
-							<div class="fb-comments" data-href="http://example.com/comments" data-numposts="1" data-colorscheme="light"></div>
+							</ul>							
 						</div>
 					</div>
 				</div>
@@ -167,6 +166,8 @@
 					$("#galleryDetailPage").html(data);// load data
 					$( window ).resize(fixThumbHeight);// fix height on resize
 					$( "#galleryDetailPage img").load(fixThumbHeight);// Fix height after all images load
+					FB.XFBML.parse();
+
 					$('#galleryDetailPage .galleryThumbTabs a').click(function(e){// initiate tabs
 						e.preventDefault();
 						$(this).tab('show');

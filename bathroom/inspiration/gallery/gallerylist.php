@@ -80,7 +80,7 @@ foreach ($galleryListPopulate as $value) {
     $output .= '	<img src="http://placehold.it/750x500.png/ccc/aaa" alt="placeholder">';
     $output .= '	<figcaption>';
     $output .= '		<strong class="galleryThumbPlace">'.$value['place'].'</strong>';
-    $output .= '		<span class="galleryThumbState">'.$value['state'].$j.'</span>';
+    $output .= '		<span class="galleryThumbState">'.$value['state'].'</span>';
     $output .= '	</figcaption>';
     $output .= '</figure>';
     $output .= '</li>';

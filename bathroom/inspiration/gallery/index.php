@@ -127,13 +127,26 @@
 			$(function(){
 				$('.galleryThumbList li.galleryThumbItem figure').click(loadDetailPage);
 
-				$( "#filterStyle input[type=checkbox]" ).on( "click", checkChanged );
+				$( "input[type=checkbox]" ).on( "click", checkChanged );
 
 			});
-			
 
 			function checkChanged(){
-				parameter = { style : $(this).val()}
+				var styles = [],trends = [], features = [];
+				$('#filterStyle input:checked').each(function() {
+					styles.push($(this).val());
+				});
+				$('#filterTrend input:checked').each(function() {
+					trends.push($(this).val());
+				});
+				$('#filterFeature input:checked').each(function() {
+					features.push($(this).val());
+				});
+				var styleString = JSON.stringify(styles);
+				var trendString = JSON.stringify(trends);
+				var featureString = JSON.stringify(features);
+				parameter = { style : styleString , trends : trendString, features : featureString};
+
 				$.get('galleryList.php',parameter,function(data){
 					$('#galleryThumbList').html(data);
 					$('#galleryThumbList li.galleryThumbItem figure').click(loadDetailPage);

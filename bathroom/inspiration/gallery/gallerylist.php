@@ -31,53 +31,56 @@ $galleryList=array(
 		array("place"=>"Brighton","state"=>"Victoria","style"=>"contemporary","trend"=>"powder","features"=>"twinBasin"),
 		array("place"=>"Malvern","state"=>"Victoria","style"=>"contemporary","trend"=>"powder","features"=>"TwinShower"),
 		);
+$styleArray = array();
+$trendArray = array();
+$featuresrray = array();
 $galleryListPopulate = array();
 
 
-$style = $_GET['style'];
-$trend = $_GET['trend'];
-$features = $_GET['features'];
-//var_dump($galleryList);
+if (isset($_GET['style'])){
+	$styleArray = json_decode(stripslashes($_GET['style']));
+}
+
+if (isset($_GET['trends'])){
+	$trendArray = json_decode(stripslashes($_GET['trends']));
+}
+
+if (isset($_GET['features'])){
+	$featuresrray = json_decode(stripslashes($_GET['features']));
+}
+
 
 $i = 0;
 
 foreach ($galleryList as $value) {
-	//echo $value[place];
 
-	//echo '<br>'.$i.' '.$value['place'];
-
-	if (isset($style)){
-		if($value['style'] != $style){
-			unset($galleryList[$i]);
-		}
+	if(in_array($value['style'], $styleArray)){
+		array_push($galleryListPopulate,$value);
 	}
-	if (isset($trend)){
-		if($value['trend'] != $trend){
-			unset($galleryList[$i]);
-		}
+	elseif(in_array($value['trend'], $trendArray)){
+		array_push($galleryListPopulate,$value);
 	}
-	if (isset($features)){
-		if($value['features'] != $features){
-			unset($galleryList[$i]);
-		}
+	elseif(in_array($value['features'], $featuresrray)){
+		array_push($galleryListPopulate,$value);		
 	}
-
 $i++;
-
 }
 
 
+if(! count($galleryListPopulate)){
+	$galleryListPopulate = $galleryList;
+}
 
 
 $j = 0;
 $output = '';
-foreach ($galleryList as $value) {
+foreach ($galleryListPopulate as $value) {
     $output = '<li class="galleryThumbItem">';
     $output .= '<figure>';
     $output .= '	<img src="http://placehold.it/750x500.png/ccc/aaa" alt="placeholder">';
     $output .= '	<figcaption>';
     $output .= '		<strong class="galleryThumbPlace">'.$value['place'].'</strong>';
-    $output .= '		<span class="galleryThumbState">'.$value['state'].'</span>';
+    $output .= '		<span class="galleryThumbState">'.$value['state'].$j.'</span>';
     $output .= '	</figcaption>';
     $output .= '</figure>';
     $output .= '</li>';
@@ -85,5 +88,6 @@ foreach ($galleryList as $value) {
 
     print $output;
 }
+
 
 ?>

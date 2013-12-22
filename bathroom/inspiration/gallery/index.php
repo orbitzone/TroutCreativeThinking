@@ -169,7 +169,7 @@
 					$( window ).resize(fixThumbHeight);// fix height on resize
 					$( "#galleryDetailPage img").load(fixThumbHeight);// Fix height after all images load
 					FB.XFBML.parse();
-
+					fixThumbHeight();
 					$('#galleryDetailPage .galleryThumbTabs a').click(function(e){// initiate tabs
 						e.preventDefault();
 						$(this).tab('show');

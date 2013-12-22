@@ -1587,6 +1587,7 @@ RESPONSIVE OVERRIDES
 }
 .galleryFilter #galleryFilter {
   overflow: visible;
+  height: auto;
 }
 /* Thumb List Layout */.galleryThumbList {
   margin: 0 -10px;

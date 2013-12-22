@@ -52,20 +52,28 @@
 		<h4>Products Used</h4>
 		<ul class="productsUsedList">
 			<li>
-				<img src="http://placehold.it/350x300.png/ccc/aaa" alt="placeholder">
-				<strong>Lorem ipsum dolor sit amet</strong>
+				<a href="#">
+					<img src="http://placehold.it/350x300.png/ccc/aaa" alt="placeholder">
+					<strong>Lorem ipsum dolor sit amet</strong>
+				</a>
 			</li>
 			<li>
-				<img src="http://placehold.it/350x300.png/ccc/aaa" alt="placeholder">
-				<strong>Lorem ipsum dolor sit amet</strong>
+				<a href="#">
+					<img src="http://placehold.it/350x300.png/ccc/aaa" alt="placeholder">
+					<strong>Lorem ipsum dolor sit amet</strong>
+				</a>
 			</li>
 			<li>
-				<img src="http://placehold.it/350x300.png/ccc/aaa" alt="placeholder">
-				<strong>Lorem ipsum dolor sit amet</strong>
+				<a href="#">
+					<img src="http://placehold.it/350x300.png/ccc/aaa" alt="placeholder">
+					<strong>Lorem ipsum dolor sit amet</strong>
+				</a>
 			</li>
 			<li>
-				<img src="http://placehold.it/350x300.png/ccc/aaa" alt="placeholder">
-				<strong>Lorem ipsum dolor sit amet</strong>
+				<a href="#">
+					<img src="http://placehold.it/350x300.png/ccc/aaa" alt="placeholder">
+					<strong>Lorem ipsum dolor sit amet</strong>
+				</a>
 			</li>																																				
 		</ul>
 	</div><!-- /.productsUsed -->
@@ -73,19 +81,25 @@
 		<li>
 			<div class="galleryDetailFooterItem">
 			<h4>Get The Look</h4>
+			<a href="#">
 			<img src="http://placehold.it/350x200.png/ccc/aaa" alt="placeholder">
+			</a>
 			</div>
 		</li>
 		<li>
 			<div class="galleryDetailFooterItem">
 			<h4>Featured Brand</h4>
+			<a href="#">
 			<img src="http://placehold.it/350x200.png/ccc/aaa" alt="placeholder">
+			</a>
 			</div>
 		</li>
 		<li>
 			<div class="galleryDetailFooterItem">
 			<h4>As Seen In</h4>
+			<a href="#">
 			<img src="http://placehold.it/350x200.png/ccc/aaa" alt="placeholder">
+			</a>
 			</div>
 		</li>
 	</ul><!-- /.galleryDetailFooter -->

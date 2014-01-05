@@ -118,6 +118,8 @@
 		  		"/assets/js/bootstrap-dropdown.js",
 		  		"/assets/js/reece-ocnav.js",
 		  		"/assets/js/reece-carousel.js",
+		  		"/assets/js/jquery.ba-resize.min.js"
+		  		
 		  	); 
 		  	include_once($serverBase."/includes/foot/scripts.php");
 		?>
@@ -173,6 +175,9 @@
 					$( "#galleryDetailPage img").load(fixThumbHeight);// Fix height after all images load
 					FB.XFBML.parse();
 					fixThumbHeight();
+					$("#galleryPageComments").resize(function(e){
+						fixThumbHeight();
+					});
 					$('#galleryDetailPage .galleryThumbTabs a').click(function(e){// initiate tabs
 						e.preventDefault();
 						$(this).tab('show');

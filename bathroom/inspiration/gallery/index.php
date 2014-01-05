@@ -132,6 +132,7 @@
 
 			function checkChanged(){
 				var styles = [],trends = [], features = [];
+				$('#galleryThumbList').append('<li class="galleryOverlay"></li>'); // Overlay with a loader and transparent background
 				$('#filterStyle input:checked').each(function() {
 					styles.push($(this).val());
 				});

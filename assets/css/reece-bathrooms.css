@@ -1622,6 +1622,18 @@ RESPONSIVE OVERRIDES
   background: black;
   color: #ffffff;
 }
+.galleryThumbList li.galleryOverlay {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.6) url("../images/ajax-loader-white.gif") no-repeat center;
+}
 .galleryThumbList .clearFloat {
   clear: left;
 }

@@ -158,6 +158,8 @@
 			}
 			function loadDetailPage(){
 				parentLi = $(this).parent('li');
+				galleryThumbPlace = parentLi.find('.galleryThumbPlace').html();
+				galleryThumbState = parentLi.find('.galleryThumbState').html();
 				if ( parentLi.hasClass('active') ) return;// avoid reload
 				uniqueAjaxURL = parentLi.attr('data-ajaxUrl');
 				$('.galleryThumbList li.galleryThumbItem').removeClass('active').css({'margin-bottom':'0px'});// Remove the active class and the margin used to display details
@@ -165,7 +167,7 @@
 				$('#thumbCaretWrap').remove(); // Removing the caret
 				var $thisEl = $(this).parent('li.galleryThumbItem');
 				$thisEl.addClass('active').append('<div id="thumbCaretWrap"><span class="caret"></span></div><div id="galleryDetailPage" class="galleryDetailPage"></div>');
-				$.get($detailaPage,{url:uniqueAjaxURL},function(data){
+				$.get($detailaPage,{url:uniqueAjaxURL,place:galleryThumbPlace,state:galleryThumbState},function(data){
 					$("#galleryDetailPage").html(data);// load data
 					$( window ).resize(fixThumbHeight);// fix height on resize
 					$( "#galleryDetailPage img").load(fixThumbHeight);// Fix height after all images load

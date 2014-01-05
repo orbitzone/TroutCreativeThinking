@@ -1,4 +1,11 @@
-<?php $i = 3 ?>
+<?php $i = 1;
+
+$place = (isset($_GET['place']))?$_GET['place']:'Elsternwick';
+$state = (isset($_GET['state']))?$_GET['state']:'Victoria';
+
+
+
+ ?>
 	<div id="galleryCarousel<?= $i ?>" class="carousel slide">
 		<div class="carousel-inner">
 			<div class="active item">
@@ -15,8 +22,8 @@
 	<div class="galleryThumbContentWrap">
 		<div class="galleryThumbContent">
 			<h4 class="galleryThumbPlace">
-				<strong class="galleryThumbPlace">Elsternwick</strong>
-				<span class="galleryThumbState">Victoria</span>
+				<strong class="galleryThumbPlace"><?= $place ?></strong>
+				<span class="galleryThumbState"><?= $state ?></span>
 			</h4>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada sed massa eget vestibulum. Vivamus quis ligula non eros placerat ullamcorper. Aenean dictum porttitor elementum. Nulla at urna placerat quam luctus rutrum nec sed dui. Nam consequat libero in gravida pulvinar

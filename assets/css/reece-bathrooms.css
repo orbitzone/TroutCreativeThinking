@@ -1729,7 +1729,7 @@ RESPONSIVE OVERRIDES
 }
 @media (min-width: 768px) and (max-width: 979px) {
   .galleryThumbTabs li a {
-    padding: 5px 30px;
+    padding: 5px 35px;
   }
 }
 /* Products Used */

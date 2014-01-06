@@ -40,11 +40,18 @@
 				</div><!-- /.inner-wrapper -->
 			</div><!-- /.content-container -->	
 			<hr class="doubleRedLine">
-
-
-
 			<div class="content-container">
 				<div class="inner-wrapper">
+					<div class="designerLooksIntro">
+						<div class="designerLooksIntroThumb">
+							<img src="http://placehold.it/300x300.png/ccc/aaa" alt="placeholder">
+						</div>
+						<div class="designerLooksIntroText">
+							<h3 class="designerLooksIntroName">See Richard Waller’s dream bathroom</h3>
+							<h4 class="designerLooksIntroRole">Former Editor of Inside Out</h4>
+							<p class="designerLooksIntroDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis molestie porta mi et congue. Proin tristique, velit vestibulum faucibus semper, est orci mattis elit, a porta erat turpis vitae libero. </p>
+						</div>
+					</div>
 					<div id="designerLooksCarousel" class="carousel slide" data-bs-carousel="carousel">
 						<div class="carousel-inner">
 							<div class="active item">
@@ -63,19 +70,27 @@
 					<h3 class="designerLooksStoryHead">The Design Story</h3>
 					<div class="designerLooksStory">
 						<div class="designerLooksEditorContent">
-							Richard Waller Former Editor of Inside Out
-
+							<div class="designerLooksEditorThumb">
+								<img src="http://placehold.it/300x300.png/ccc/aaa" alt="placeholder">
+							</div>
+							<div class="designerLooksEditorInfo">
+								<h4 class="designerLooksStoryName">Richard Waller</h4>
+								<h5 class="designerLooksStoryRole">Former Editor of Inside Out</h5>
+							</div>
 							<p>“When the idea of creating my own ‘daream bathroom’ first arose, one name immediately sprung to mind: the visionary Sydney architect, Ian Moore. I’ve always admired his perspective on design and knew he would be able to turn my vision of a bathroom space that connects the inside and out into a work of art. I’m delighted with the way Ian has brought this conceptual bathroom to glorious virtual life.”</p>
 							<p>Read more about Richard and Ian’s journey in the March/April Inside Out issue featuring the Kitchen and Bathroom special which is out now.</p>
 						</div>
 						<div class="designerLooksArchitectContent">
-							Ian Moore Architect
+							<div class="designerLooksArchitectInfo">
+								<h4 class="designerLooksStoryName">Ian Moore</h4>
+								<h5 class="designerLooksStoryRole">Architect</h5>
+							</div>
 							<p>“This room has been designed in response to Richard’s brief for a space that connects inside and out. A large single sheet of glass allows total integration of the courtyard into the bathroom space. Materials were chosen for their longevity, timelessness and minimal maintenance: light-grey for flooring, seamless warm grey for the walls, a wall of mirror to reflect the landscaped courtyard and frameless sliding-glass doors. One element of surprise is a lilac-lined interior to the mirrored storage cabinets – a special request from Richard to incorporate his favourite colour in a discreet manner.” </p>
 							<p>Ian Moore is director and principal architect of his own award-winning practice, Ian Moore Architects. Visit www.ianmoorearchitects.com or contact Ian Moore Architects via email, info@ianmoorearchitects.com, or phone, 02 8354 1887</p>
 						</div>
 					</div>
 
-					<div class="row-fluid">
+					<div class="row-fluid designerLooksWorkImages">
 						<div class="span4">
 							<img src="http://placehold.it/700x500.png/ccc/aaa" alt="placeholder">
 						</div>

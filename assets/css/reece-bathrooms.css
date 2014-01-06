@@ -2497,17 +2497,70 @@ RESPONSIVE OVERRIDES
   font: italic 28px Georgia, Times, "Times New Roman", serif;
   text-align: center;
   color: #67626a;
+  margin: 30px 0;
 }
+.designerLooksIntro {
+  *zoom: 1;
+  padding-bottom: 40px;
+}
+.designerLooksIntro:before,
+.designerLooksIntro:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.designerLooksIntro:after {
+  clear: both;
+}
+.designerLooksIntro .designerLooksIntroThumb {
+  float: left;
+  width: 180px;
+}
+.designerLooksIntro .designerLooksIntroText {
+  margin-left: 220px;
+  color: #67626a;
+}
+.designerLooksIntro .designerLooksIntroName {
+  font-weight: 200;
+  font-size: 32px;
+  padding-top: 20px;
+}
+.designerLooksIntro .designerLooksIntroRole {
+  font: italic 22px Georgia, Times, "Times New Roman", serif;
+}
+.designerLooksIntro .designerLooksIntroDesc {
+  color: #818181;
+  font-size: 16px;
+}
+/* */
 .designerLooksStory {
   display: table;
-  margin: -10px;
-  border-spacing: 10px;
+  margin: -15px;
+  border-spacing: 15px;
   border-collapse: separate;
+}
+.designerLooksStory .designerLooksStoryName {
+  font-size: 35px;
+  font-weight: normal;
+}
+.designerLooksStory .designerLooksStoryRole {
+  font: italic 25px Georgia, Times, "Times New Roman", serif;
+}
+.designerLooksStory .designerLooksArchitectInfo,
+.designerLooksStory .designerLooksEditorInfo {
+  padding: 10px 0 30px;
+}
+.designerLooksStory .designerLooksEditorThumb {
+  float: right;
+  width: 120px;
+}
+.designerLooksStory .designerLooksEditorInfo {
+  margin-right: 120px;
 }
 .designerLooksStory .designerLooksEditorContent,
 .designerLooksStory .designerLooksArchitectContent {
   display: table-cell;
-  padding: 30px;
+  padding: 40px;
   color: white;
   width: 50%;
 }
@@ -2517,6 +2570,9 @@ RESPONSIVE OVERRIDES
 .designerLooksStory .designerLooksArchitectContent {
   background: #878787;
 }
+.designerLooksWorkImages .span4 {
+  padding-top: 15px;
+}
 @media (max-width: 767px) {
   .designerLooksList li {
     float: none;
@@ -2525,5 +2581,15 @@ RESPONSIVE OVERRIDES
   .designerLooksList li:nth-child(2n+1),
   .designerLooksList li:nth-child(2n) {
     margin: 0;
+  }
+  .designerLooksStory {
+    margin: 0;
+    display: block;
+  }
+  .designerLooksStory .designerLooksEditorContent,
+  .designerLooksStory .designerLooksArchitectContent {
+    display: block;
+    width: auto;
+    margin-bottom: 20px;
   }
 }

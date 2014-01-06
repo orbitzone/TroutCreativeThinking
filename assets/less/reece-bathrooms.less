@@ -2666,17 +2666,63 @@ RESPONSIVE OVERRIDES
     font: italic 28px @fontGeorgia;
     text-align: center;
     color: @designerLooksHeaderColor ;
+    margin:30px 0;
 }
+.designerLooksIntro{
+    .clearfix;
+    padding-bottom: 40px;
+    .designerLooksIntroThumb{
+        float: left;
+        width: 180px
+    }
+    .designerLooksIntroText{
+        margin-left: 220px;
+        color: @designerLooksHeaderColor;
+    }
+    .designerLooksIntroName{
+        font-weight: 200;
+        font-size: 32px;
+        padding-top: 20px;
+    }
+    .designerLooksIntroRole{
+        font: italic 22px @fontGeorgia;
+
+    }
+    .designerLooksIntroDesc{
+        color: #818181;
+        font-size: 16px;
+    }
+
+}
+/* */
 .designerLooksStory{
     display: table;
-    margin: -10px;
-    border-spacing: 10px;
+    margin: -15px;
+    border-spacing: 15px;
     border-collapse: separate;
 
+    .designerLooksStoryName{
+        font-size: 35px;
+        font-weight: normal;
+    }
+    .designerLooksStoryRole{
+        font: italic 25px @fontGeorgia;
+    }
+    .designerLooksArchitectInfo,
+    .designerLooksEditorInfo{
+        padding: 10px 0 30px;
+    }
+    .designerLooksEditorThumb{
+        float: right;
+        width: 120px;
+    }
+    .designerLooksEditorInfo{
+        margin-right: 120px;
+    }
     .designerLooksEditorContent,
     .designerLooksArchitectContent{
         display: table-cell;
-        padding: 30px;
+        padding: 40px;
         color: white;
         width: 50%;
     }
@@ -2687,17 +2733,30 @@ RESPONSIVE OVERRIDES
         background: @designerLooksGrey;
     }
 }
-
+.designerLooksWorkImages{
+    .span4{
+        padding-top: 15px;
+    }
+}
 @media (max-width:767px){
     .designerLooksList{
         li{
             float: none;
             width: auto;
-            
             &:nth-child(2n+1),&:nth-child(2n){
                 margin: 0;
             }
         }
+    }
+    .designerLooksStory{
+        margin: 0;
+        display: block;
+        .designerLooksEditorContent,
+        .designerLooksArchitectContent{
+            display: block;
+            width: auto;
+            margin-bottom: 20px;
+        }        
     }
 }
 

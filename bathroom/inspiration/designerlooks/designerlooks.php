@@ -58,6 +58,103 @@
 						<a class="carousel-control left" href="#designerLooksCarousel" data-slide="prev">&lsaquo;</a>
 						<a class="carousel-control right" href="#designerLooksCarousel" data-slide="next">&rsaquo;</a>
 					</div><!-- /.carousel -->
+
+
+					<h3 class="designerLooksStoryHead">The Design Story</h3>
+					<div class="designerLooksStory">
+						<div class="designerLooksEditorContent">
+							Richard Waller Former Editor of Inside Out
+
+							<p>“When the idea of creating my own ‘daream bathroom’ first arose, one name immediately sprung to mind: the visionary Sydney architect, Ian Moore. I’ve always admired his perspective on design and knew he would be able to turn my vision of a bathroom space that connects the inside and out into a work of art. I’m delighted with the way Ian has brought this conceptual bathroom to glorious virtual life.”</p>
+							<p>Read more about Richard and Ian’s journey in the March/April Inside Out issue featuring the Kitchen and Bathroom special which is out now.</p>
+						</div>
+						<div class="designerLooksArchitectContent">
+							Ian Moore Architect
+							<p>“This room has been designed in response to Richard’s brief for a space that connects inside and out. A large single sheet of glass allows total integration of the courtyard into the bathroom space. Materials were chosen for their longevity, timelessness and minimal maintenance: light-grey for flooring, seamless warm grey for the walls, a wall of mirror to reflect the landscaped courtyard and frameless sliding-glass doors. One element of surprise is a lilac-lined interior to the mirrored storage cabinets – a special request from Richard to incorporate his favourite colour in a discreet manner.” </p>
+							<p>Ian Moore is director and principal architect of his own award-winning practice, Ian Moore Architects. Visit www.ianmoorearchitects.com or contact Ian Moore Architects via email, info@ianmoorearchitects.com, or phone, 02 8354 1887</p>
+						</div>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span4">
+							<img src="http://placehold.it/700x500.png/ccc/aaa" alt="placeholder">
+						</div>
+						<div class="span4">
+							<img src="http://placehold.it/700x500.png/ccc/aaa" alt="placeholder">
+						</div>
+						<div class="span4">
+							<img src="http://placehold.it/700x500.png/ccc/aaa" alt="placeholder">
+						</div>
+					</div>
+
+
+					<h3 class="designerLooksStoryHead">Products Used</h3>
+
+					<div class="row-fluid">
+						<div class="span6">
+							<div class="accordion" id="designerLooksProducts">
+								<div class="accordion-group">
+									<div class="accordion-heading">
+										<a class="accordion-toggle" data-toggle="collapse" data-parent="#designerLooksProducts" href="#collapse1">
+											1. Alape Metaphor 750 Above Counter Basin
+										</a>
+									</div>
+									<div id="collapse1" class="accordion-body collapse in">
+										<div class="accordion-inner">
+											<a href="http://www.reece.com.au/bathrooms/products/9502507">
+												<img src="http://www.reece.com.au/products/showroom_main/9502507.jpg" alt="Kado Lure Freestanding Oval Bath Black">
+											</a>
+										</div>
+									</div>
+								</div><!-- /.accordion-group -->
+								<div class="accordion-group">
+									<div class="accordion-heading">
+										<a class="accordion-toggle" data-toggle="collapse" data-parent="#designerLooksProducts" href="#collapse2">
+											2. Sussex Pol 150 Wall Bath Set
+										</a>
+									</div>
+									<div id="collapse2" class="accordion-body collapse">
+										<div class="accordion-inner">
+											<a href="http://www.reece.com.au/bathrooms/products/2262206">
+											  <img src="http://www.reece.com.au/products/showroom_main/2262206.jpg" alt="Sussex Pol Floor Mount Mixer - Handshower in Black/Chrome">
+											</a>
+										</div>
+									</div>
+								</div><!-- /.accordion-group -->
+								<div class="accordion-group">
+									<div class="accordion-heading">
+										<a class="accordion-toggle" data-toggle="collapse" data-parent="#designerLooksProducts" href="#collapse3">
+											3. Axa Uno Wall Hung Inwall Toilet Pan
+										</a>
+									</div>
+									<div id="collapse3" class="accordion-body collapse">
+										<div class="accordion-inner">
+											<a href="http://www.reece.com.au/bathrooms/products/9502795">
+											<img src="http://www.reece.com.au/products/showroom_main/9502795.jpg" alt="Alape White WTPR Wall Basin with shelf">
+											</a>
+										</div>
+									</div>
+								</div><!-- /.accordion-group -->
+								<div class="accordion-group">
+									<div class="accordion-heading">
+										<a class="accordion-toggle" data-toggle="collapse" data-parent="#designerLooksProducts" href="#collapse4">
+											4. Alape Metaphor 750 Above Counter Basin
+										</a>
+									</div>
+									<div id="collapse4" class="accordion-body collapse">
+										<div class="accordion-inner">
+											<a href="http://www.reece.com.au/bathrooms/products/2262315">
+											  <img src="http://www.reece.com.au/products/showroom_main/2262315.jpg" alt="Nobili New Road Basin Mixer Black Chrome">
+											</a>
+										</div>
+									</div>
+								</div><!-- /.accordion-group -->
+							</div>
+						</div>
+						<div class="span6">
+							<img src="http://placehold.it/700x700.png/ccc/aaa" alt="placeholder">
+						</div>
+					</div>					
 				</div>
 			</div>
 

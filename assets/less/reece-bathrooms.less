@@ -2738,6 +2738,26 @@ RESPONSIVE OVERRIDES
         padding-top: 15px;
     }
 }
+.designerLooksProductsAccordion{
+    padding: 20px;
+    background: #f3f3f4;
+    .accordion-group{
+        display: block;
+        .border-radius(0);
+        border:none;
+        border-top: solid 1px #bfbbc1;
+
+        &:first-child{
+            border-top:none;
+        }
+        .accordion-heading .accordion-toggle{
+            padding: 12px 15px;
+        }
+        .accordion-inner{
+            border-top: none;
+        }
+    }
+}
 @media (max-width:767px){
     .designerLooksList{
         li{

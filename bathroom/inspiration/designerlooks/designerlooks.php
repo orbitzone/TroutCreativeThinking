@@ -107,7 +107,7 @@
 
 					<div class="row-fluid">
 						<div class="span6">
-							<div class="accordion" id="designerLooksProducts">
+							<div class="designerLooksProductsAccordion" id="designerLooksProducts">
 								<div class="accordion-group">
 									<div class="accordion-heading">
 										<a class="accordion-toggle" data-toggle="collapse" data-parent="#designerLooksProducts" href="#collapse1">

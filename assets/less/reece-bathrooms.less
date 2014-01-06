@@ -2590,3 +2590,87 @@ RESPONSIVE OVERRIDES
         }              
     }    
 }
+
+/* ===============================================================================================================================
+    Designer Looks
+   =============================================================================================================================== */
+
+@designerLooksHeaderColor : #67626a;
+@fontGeorgia : Georgia, Times, "Times New Roman", serif;
+@lineColor : #d44a4a;
+
+.designerLooksHeader{
+    font: italic 60px @fontGeorgia;
+    color: @designerLooksHeaderColor;   
+}
+.doubleRedLine{
+    border-top:solid 1px @lineColor;
+    border-bottom: solid 1px @lineColor;
+    height: 4px;
+}
+.designerLooksText{
+    color: #818181;
+    font-size: 16px;
+    padding: 10px 0;
+}
+.designerLooksList{
+    margin: 0;
+    li{
+        list-style: none;
+        float: left;
+        width: 45%;
+        padding: 35px 0;
+
+        &:nth-child(2n+1){
+            margin-right: 5%;
+        }
+        &:nth-child(2n){
+            margin-left: 5%;
+        }
+    }
+    a{
+        color: @designerLooksHeaderColor;
+    }
+    a:hover{
+        text-decoration: none;
+    }
+    .designerName,.designName{
+        display: block;
+    }
+    .designerName{
+        font-size: 25px;
+        padding-top: 20px;
+        font-weight: 200;
+    }
+    .designName{
+        font: italic 20px @fontGeorgia;
+        padding-top: 5px;
+    }
+}
+
+.designerLooksIndexLink{
+    text-align: right;
+    padding-top: 48px;
+    text-transform: uppercase;
+    font-size: 16px;
+    
+    a{
+        color: @designerLooksHeaderColor;
+        font-weight: 500;
+    }
+    
+}
+@media (max-width:767px){
+    .designerLooksList{
+        li{
+            float: none;
+            width: auto;
+            
+            &:nth-child(2n+1),&:nth-child(2n){
+                margin: 0;
+            }
+        }
+    }
+}
+
+

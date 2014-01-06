@@ -4,7 +4,7 @@
 	<?php 
 	  	$cssScriptPaths = array(
 	  		"/assets/css/reece-products.css",
-	  		"/assets/css/reece-bathrooms.css"		
+	  		"/assets/css/reece-bathrooms.css"
 	  	); 
 	  	include_once($serverBase."/includes/head/head-generic.php");
 	?>		
@@ -156,7 +156,7 @@
 			}
 
 			function fixThumbHeight(){
-				$('li.galleryThumbItem.active').css({'margin-bottom':$('li.galleryThumbItem.active .galleryDetailPage').height()});;
+				$('li.galleryThumbItem.active').css({'margin-bottom':$('li.galleryThumbItem.active .galleryDetailPage').height()});
 			}
 			function loadDetailPage(){
 				parentLi = $(this).parent('li');
@@ -175,7 +175,7 @@
 					$( "#galleryDetailPage img").load(fixThumbHeight);// Fix height after all images load
 					FB.XFBML.parse();
 					fixThumbHeight();
-					$("#galleryPageComments").resize(function(e){
+					$("#galleryPageCommentsWrap").resize(function(e){
 						fixThumbHeight();
 					});
 					$('#galleryDetailPage .galleryThumbTabs a').click(function(e){// initiate tabs
@@ -195,7 +195,7 @@
 						  $target.data('carousel').pause().to(slideIndex).cycle()
 						}
 						e.preventDefault()
-					});										
+					});
 				});	
 			}
 		</script>

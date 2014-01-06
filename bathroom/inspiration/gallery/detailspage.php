@@ -81,7 +81,7 @@ $state = (isset($_GET['state']))?$_GET['state']:'Victoria';
 					<img src="http://placehold.it/350x300.png/ccc/aaa" alt="placeholder">
 					<strong>Lorem ipsum dolor sit amet</strong>
 				</a>
-			</li>																																				
+			</li>
 		</ul>
 	</div><!-- /.productsUsed -->
 	<ul class="galleryDetailFooter">
@@ -124,7 +124,9 @@ if (isset($_GET['url'])){
 	$ajaxURL = $currentDir.stripslashes($_GET['url']);
 }
 ?>
-		<div id="galleryPageComments" class="fb-comments" data-href="<?php echo $ajaxURL; ?>" data-numposts="1" data-colorscheme="light"></div>	
+<div id="galleryPageCommentsWrap">
+		<div id="galleryPageComments"  class="fb-comments" data-href="<?php echo $ajaxURL; ?>" data-numposts="1" data-colorscheme="light"></div>	
+</div>
 	<!--<section class="commentsSection">
 		<h4>Comments</h4>
 

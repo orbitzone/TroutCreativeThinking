@@ -43,12 +43,12 @@
 						<li>
 							<a href="designerlooks.php">
 							<img src="http://placehold.it/750x500.png/eee/eee" alt="placeholder">
-							<span class="designerName">
+							<h3 class="designerLooksEditorName">
 								Name Surname
-							</span>
-							<span class="designName">
+							</h3>
+							<h4 class="designerLooksPublicationName">
 								Publication Name
-							</span>
+							</h4>
 							</a>
 						</li>
 						<?php } ?>

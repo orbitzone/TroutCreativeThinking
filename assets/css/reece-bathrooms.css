@@ -2500,16 +2500,17 @@ RESPONSIVE OVERRIDES
 .designerLooksList a:hover {
   text-decoration: none;
 }
-.designerLooksList .designerName,
-.designerLooksList .designName {
+.designerLooksList .designerLooksEditorName,
+.designerLooksList .designerLooksPublicationName {
   display: block;
+  margin: 0;
 }
-.designerLooksList .designerName {
+.designerLooksList .designerLooksEditorName {
   font-size: 25px;
   padding-top: 20px;
   font-weight: 200;
 }
-.designerLooksList .designName {
+.designerLooksList .designerLooksPublicationName {
   font: italic 20px Georgia, Times, "Times New Roman", serif;
   padding-top: 5px;
 }
@@ -2655,6 +2656,9 @@ RESPONSIVE OVERRIDES
   border: none;
   border-top: solid 1px #bfbbc1;
 }
+.designerLooksProductsAccordion .accordion-group a:hover {
+  text-decoration: none;
+}
 .designerLooksProductsAccordion .accordion-group:first-child {
   border-top: none;
 }
@@ -2666,11 +2670,11 @@ RESPONSIVE OVERRIDES
 .designerLooksProductsAccordion .accordion-group .accordion-heading .accordion-toggle .icon-chevron-up {
   float: right;
 }
-.designerLooksProductsAccordion .accordion-group .accordion-heading .accordion-toggle:hover {
-  text-decoration: none;
-}
 .designerLooksProductsAccordion .accordion-group .accordion-inner {
   border-top: none;
+}
+.designerLooksProductsAccordion .accordion-group .accordionAction {
+  padding-top: 10px;
 }
 @media (max-width: 767px) {
   .designerLooksIndexLink {

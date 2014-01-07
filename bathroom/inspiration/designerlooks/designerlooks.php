@@ -121,14 +121,17 @@
 								<div class="accordion-group">
 									<div class="accordion-heading">
 										<a class="accordion-toggle" data-toggle="collapse" data-parent="#designerLooksProducts" href="#collapse1">
-											<i class="icon-chevron-up">&nbsp;</i> 1. Alape Metaphor 750 Above Counter Basin
+											<i class="icon-chevron-down">&nbsp;</i> 1. Alape Metaphor 750 Above Counter Basin
 										</a>
 									</div>
-									<div id="collapse1" class="accordion-body collapse in">
+									<div id="collapse1" class="accordion-body collapse ">
 										<div class="accordion-inner">
 											<a href="http://www.reece.com.au/bathrooms/products/9502507">
 												<img src="http://www.reece.com.au/products/showroom_main/9502507.jpg" alt="Kado Lure Freestanding Oval Bath Black">
 											</a>
+											<div class="accordionAction">
+											<a href="http://www.reece.com.au/bathrooms/products/9502507" class="btn">Product Details</a>
+											</div>
 										</div>
 									</div>
 								</div><!-- /.accordion-group -->
@@ -143,6 +146,9 @@
 											<a href="http://www.reece.com.au/bathrooms/products/2262206">
 											  <img src="http://www.reece.com.au/products/showroom_main/2262206.jpg" alt="Sussex Pol Floor Mount Mixer - Handshower in Black/Chrome">
 											</a>
+											<div class="accordionAction">
+											<a href="http://www.reece.com.au/bathrooms/products/2262206" class="btn">Product Details</a>
+											</div>
 										</div>
 									</div>
 								</div><!-- /.accordion-group -->
@@ -157,6 +163,9 @@
 											<a href="http://www.reece.com.au/bathrooms/products/9502795">
 											<img src="http://www.reece.com.au/products/showroom_main/9502795.jpg" alt="Alape White WTPR Wall Basin with shelf">
 											</a>
+											<div class="accordionAction">
+											<a href="http://www.reece.com.au/bathrooms/products/9502795" class="btn">Product Details</a>
+											</div>
 										</div>
 									</div>
 								</div><!-- /.accordion-group -->
@@ -171,6 +180,9 @@
 											<a href="http://www.reece.com.au/bathrooms/products/2262315">
 											  <img src="http://www.reece.com.au/products/showroom_main/2262315.jpg" alt="Nobili New Road Basin Mixer Black Chrome">
 											</a>
+											<div class="accordionAction">
+											<a href="http://www.reece.com.au/bathrooms/products/2262315" class="btn">Product Details</a>
+											</div>
 										</div>
 									</div>
 								</div><!-- /.accordion-group -->
@@ -212,10 +224,10 @@
 		<script type="text/javascript">
 			$(function(){
 				$('#designerLooksProducts .accordion-body').on('hide', function () {
-					$(this).parent('.accordion-group').find('i').removeClass('icon-chevron-up').addClass('icon-chevron-down')
+					$(this).parent('.accordion-group').find('i.icon-chevron-up').removeClass('icon-chevron-up').addClass('icon-chevron-down')
 				});
 				$('#designerLooksProducts .accordion-body').on('show', function () {
-					$(this).parent('.accordion-group').find('i').removeClass('icon-chevron-down').addClass('icon-chevron-up')
+					$(this).parent('.accordion-group').find('i.icon-chevron-down').removeClass('icon-chevron-down').addClass('icon-chevron-up')
 				});	
 			});		
 		</script>		

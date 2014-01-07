@@ -2671,15 +2671,16 @@ RESPONSIVE OVERRIDES
     a:hover{
         text-decoration: none;
     }
-    .designerName,.designName{
+    .designerLooksEditorName,.designerLooksPublicationName{
         display: block;
+        margin: 0;
     }
-    .designerName{
+    .designerLooksEditorName{
         font-size: 25px;
         padding-top: 20px;
         font-weight: 200;
     }
-    .designName{
+    .designerLooksPublicationName{
         font: italic 20px @fontGeorgia;
         padding-top: 5px;
     }
@@ -2817,7 +2818,9 @@ RESPONSIVE OVERRIDES
         .border-radius(0);
         border:none;
         border-top: solid 1px #bfbbc1;
-
+        a:hover{
+            text-decoration: none;
+        }
         &:first-child{
             border-top:none;
         }
@@ -2827,12 +2830,12 @@ RESPONSIVE OVERRIDES
             .icon-chevron-down,.icon-chevron-up{
                 float: right;
             }
-            &:hover{
-                text-decoration: none;
-            }
         }
         .accordion-inner{
             border-top: none;
+        }
+        .accordionAction{
+            padding-top: 10px;
         }
     }
 }

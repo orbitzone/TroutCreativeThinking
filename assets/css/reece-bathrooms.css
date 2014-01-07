@@ -2471,6 +2471,16 @@ RESPONSIVE OVERRIDES
 }
 .designerLooksList {
   margin: 0;
+  *zoom: 1;
+}
+.designerLooksList:before,
+.designerLooksList:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.designerLooksList:after {
+  clear: both;
 }
 .designerLooksList li {
   list-style: none;

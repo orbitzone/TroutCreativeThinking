@@ -47,21 +47,15 @@
 								Name Surname
 							</span>
 							<span class="designName">
-								Real Living
+								Publication Name
 							</span>
 							</a>
 						</li>
 						<?php } ?>
 					</ul><!-- /.designerLooksList -->
 				</div><!-- /.inner-wrapper -->
-			</div><!-- /.content-container -->		
-		</div>
-					<div class="row-fluid">
-						<div class="span3">
-						</div>
-						<div class="span9">
-						</div>
-					</div>
+			</div><!-- /.content-container -->
+
 			<?php 
 			   	include_once($serverBase."/includes/foot/foot-generic.php");
 			?>

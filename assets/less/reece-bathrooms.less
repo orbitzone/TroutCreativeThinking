@@ -2620,6 +2620,10 @@ RESPONSIVE OVERRIDES
 @designerLooksPurple : #a99eb0;
 @designerLooksGrey : #878787;
 
+
+@carouselIndicatorColor : #c0bec3;
+@carouselIndicatorActiveColor : #67626a;
+
 .designerLooksHeader{
     font: italic 60px @fontGeorgia;
     color: @designerLooksHeaderColor;   
@@ -2713,7 +2717,57 @@ RESPONSIVE OVERRIDES
     }
 
 }
+/* Carousel */
+.designerLooksCarousel{
+    .carousel-indicators{
+        left: 0;
+        bottom: 10px;
+        right: 0;
+        top: auto;
+        text-align: center;
 
+        li{
+            float: none;
+            display: inline-block;
+            background-color: @carouselIndicatorColor ;
+        }
+        li.active{
+            background-color: @carouselIndicatorActiveColor ;
+        }
+    }
+    a:hover{
+        text-decoration: none;
+    }
+    .carouselTitle{
+        background: #a99eb0;
+        
+        font: italic 28px @fontGeorgia;
+        position: absolute;
+        left: 0;
+        top: 15px;
+        padding: 20px;
+        z-index: 10;
+        .border-radius(0 3px 3px 0);
+        a{
+            color: white;
+        }
+    }
+    .viewProductsLink{
+        background: white;
+        position: absolute;
+        right: 0;
+        bottom: 10px;
+        z-index: 10;
+        text-transform: uppercase;
+        padding: 15px;
+        font-size: 16px;
+        font-weight: normal;
+        .border-radius(5px 0 0 5px);
+        a{
+            color: @designerLooksPurple;
+        }
+    }
+}
 /* */
 .designerLooksStory{
     display: table;
@@ -2794,6 +2848,13 @@ RESPONSIVE OVERRIDES
         }
         .accordion-heading .accordion-toggle{
             padding: 12px 15px;
+            color: @designerLooksGrey;
+            .icon-chevron-down,.icon-chevron-up{
+                float: right;
+            }
+            &:hover{
+                text-decoration: none;
+            }
         }
         .accordion-inner{
             border-top: none;
@@ -2801,6 +2862,12 @@ RESPONSIVE OVERRIDES
     }
 }
 @media (max-width:767px){
+    .designerLooksCarousel{
+        .carouselTitle,
+        .viewProductsLink{
+            display: none;
+        }
+    }
     .designerLooksList{
         li{
             float: none;

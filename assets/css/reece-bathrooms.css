@@ -2543,6 +2543,57 @@ RESPONSIVE OVERRIDES
   color: #818181;
   font-size: 16px;
 }
+/* Carousel */
+.designerLooksCarousel .carousel-indicators {
+  left: 0;
+  bottom: 10px;
+  right: 0;
+  top: auto;
+  text-align: center;
+}
+.designerLooksCarousel .carousel-indicators li {
+  float: none;
+  display: inline-block;
+  background-color: #c0bec3;
+}
+.designerLooksCarousel .carousel-indicators li.active {
+  background-color: #67626a;
+}
+.designerLooksCarousel a:hover {
+  text-decoration: none;
+}
+.designerLooksCarousel .carouselTitle {
+  background: #a99eb0;
+  font: italic 28px Georgia, Times, "Times New Roman", serif;
+  position: absolute;
+  left: 0;
+  top: 15px;
+  padding: 20px;
+  z-index: 10;
+  -webkit-border-radius: 0 3px 3px 0;
+  -moz-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+}
+.designerLooksCarousel .carouselTitle a {
+  color: white;
+}
+.designerLooksCarousel .viewProductsLink {
+  background: white;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  z-index: 10;
+  text-transform: uppercase;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: normal;
+  -webkit-border-radius: 5px 0 0 5px;
+  -moz-border-radius: 5px 0 0 5px;
+  border-radius: 5px 0 0 5px;
+}
+.designerLooksCarousel .viewProductsLink a {
+  color: #a99eb0;
+}
 /* */
 .designerLooksStory {
   display: table;
@@ -2618,11 +2669,23 @@ RESPONSIVE OVERRIDES
 }
 .designerLooksProductsAccordion .accordion-group .accordion-heading .accordion-toggle {
   padding: 12px 15px;
+  color: #878787;
+}
+.designerLooksProductsAccordion .accordion-group .accordion-heading .accordion-toggle .icon-chevron-down,
+.designerLooksProductsAccordion .accordion-group .accordion-heading .accordion-toggle .icon-chevron-up {
+  float: right;
+}
+.designerLooksProductsAccordion .accordion-group .accordion-heading .accordion-toggle:hover {
+  text-decoration: none;
 }
 .designerLooksProductsAccordion .accordion-group .accordion-inner {
   border-top: none;
 }
 @media (max-width: 767px) {
+  .designerLooksCarousel .carouselTitle,
+  .designerLooksCarousel .viewProductsLink {
+    display: none;
+  }
   .designerLooksList li {
     float: none;
     width: auto;

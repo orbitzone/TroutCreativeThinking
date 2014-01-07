@@ -29,10 +29,10 @@
 						<li class="active page-branding text-brand">Designer Looks</li>
 					</ul>
 					<div class="row-fluid">
-						<div class="span9">
+						<div class="span7">
 							<h2 class="designerLooksHeader">Designer Looks</h2>
 						</div>
-						<div class="span3 designerLooksIndexLink">
+						<div class="span5 designerLooksIndexLink">
 							<a href="index.php">More Designer Bathrooms</a>
 						</div>
 					</div>
@@ -52,7 +52,9 @@
 							<p class="designerLooksIntroDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis molestie porta mi et congue. Proin tristique, velit vestibulum faucibus semper, est orci mattis elit, a porta erat turpis vitae libero. </p>
 						</div>
 					</div>
-					<div id="designerLooksCarousel" class="carousel slide" data-bs-carousel="carousel">
+					<div id="designerLooksCarousel" class="carousel slide designerLooksCarousel" data-bs-carousel="carousel">
+						<h3 class="carouselTitle"><a href="#designerLooksStoryHead">Richard Waller’s Vision</a></h3>
+						<h4 class="viewProductsLink"><a href="#designerLooksProducts">View Products &nbsp;<i class="icon-caret-right icon-large">&nbsp;</i></a></h4>
 						<div class="carousel-inner">
 							<div class="active item">
 								<img src="http://placehold.it/1440x700.png/ccc/aaa" alt="placeholder">
@@ -60,14 +62,22 @@
 							<div class="item">
 								<img src="http://placehold.it/1440x700.png/ccc/aaa" alt="placeholder">
 							</div>
+							<div class="item">
+								<img src="http://placehold.it/1440x700.png/ccc/aaa" alt="placeholder">
+							</div>							
 						</div>
+						<ol class="carousel-indicators">
+							<li data-target="#designerLooksCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#designerLooksCarousel" data-slide-to="1"></li>
+							<li data-target="#designerLooksCarousel" data-slide-to="2"></li>
+						</ol>						
 						<!-- Carousel nav -->
 						<a class="carousel-control left" href="#designerLooksCarousel" data-slide="prev">&lsaquo;</a>
 						<a class="carousel-control right" href="#designerLooksCarousel" data-slide="next">&rsaquo;</a>
 					</div><!-- /.carousel -->
 
 
-					<h3 class="designerLooksStoryHead">The Design Story</h3>
+					<h3 id="designerLooksStoryHead" class="designerLooksStoryHead">The Design Story</h3>
 					<div class="designerLooksStory">
 						<div class="designerLooksEditorContent">
 							<div class="designerLooksEditorThumb">
@@ -111,7 +121,7 @@
 								<div class="accordion-group">
 									<div class="accordion-heading">
 										<a class="accordion-toggle" data-toggle="collapse" data-parent="#designerLooksProducts" href="#collapse1">
-											1. Alape Metaphor 750 Above Counter Basin
+											<i class="icon-chevron-up">&nbsp;</i> 1. Alape Metaphor 750 Above Counter Basin
 										</a>
 									</div>
 									<div id="collapse1" class="accordion-body collapse in">
@@ -125,7 +135,7 @@
 								<div class="accordion-group">
 									<div class="accordion-heading">
 										<a class="accordion-toggle" data-toggle="collapse" data-parent="#designerLooksProducts" href="#collapse2">
-											2. Sussex Pol 150 Wall Bath Set
+											<i class="icon-chevron-down">&nbsp;</i> 2. Sussex Pol 150 Wall Bath Set
 										</a>
 									</div>
 									<div id="collapse2" class="accordion-body collapse">
@@ -139,7 +149,7 @@
 								<div class="accordion-group">
 									<div class="accordion-heading">
 										<a class="accordion-toggle" data-toggle="collapse" data-parent="#designerLooksProducts" href="#collapse3">
-											3. Axa Uno Wall Hung Inwall Toilet Pan
+											<i class="icon-chevron-down">&nbsp;</i> 3. Axa Uno Wall Hung Inwall Toilet Pan
 										</a>
 									</div>
 									<div id="collapse3" class="accordion-body collapse">
@@ -153,7 +163,7 @@
 								<div class="accordion-group">
 									<div class="accordion-heading">
 										<a class="accordion-toggle" data-toggle="collapse" data-parent="#designerLooksProducts" href="#collapse4">
-											4. Alape Metaphor 750 Above Counter Basin
+											<i class="icon-chevron-down">&nbsp;</i> 4. Alape Metaphor 750 Above Counter Basin
 										</a>
 									</div>
 									<div id="collapse4" class="accordion-body collapse">
@@ -199,6 +209,16 @@
 		  	); 
 		  	include_once($serverBase."/includes/foot/scripts.php");
 		?>
+		<script type="text/javascript">
+			$(function(){
+				$('#designerLooksProducts .accordion-body').on('hide', function () {
+					$(this).parent('.accordion-group').find('i').removeClass('icon-chevron-up').addClass('icon-chevron-down')
+				});
+				$('#designerLooksProducts .accordion-body').on('show', function () {
+					$(this).parent('.accordion-group').find('i').removeClass('icon-chevron-down').addClass('icon-chevron-up')
+				});	
+			});		
+		</script>		
 
     </body>
 </html>

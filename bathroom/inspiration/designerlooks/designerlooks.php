@@ -167,7 +167,7 @@
 							</div>
 						</div>
 						<div class="span6">
-							<img src="http://placehold.it/700x700.png/ccc/aaa" alt="placeholder">
+							<img src="http://placehold.it/700x600.png/ccc/aaa" alt="placeholder">
 						</div>
 					</div>					
 				</div>

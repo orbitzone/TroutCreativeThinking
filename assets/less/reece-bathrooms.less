@@ -2713,6 +2713,7 @@ RESPONSIVE OVERRIDES
     }
 
 }
+
 /* */
 .designerLooksStory{
     display: table;
@@ -2752,6 +2753,27 @@ RESPONSIVE OVERRIDES
         background: @designerLooksGrey;
     }
 }
+@media(max-width:480px){
+    .designerLooksIntro{
+
+        .designerLooksIntroThumb{
+            float: none;
+            width: auto;
+        }
+        .designerLooksIntroText{
+            margin-left: 0;
+        }
+    }
+    .designerLooksStory{
+        .designerLooksEditorThumb{
+            float: none;
+            width: auto;
+        }
+        .designerLooksEditorInfo{
+            margin-right: 0;
+        }
+    }
+}
 .designerLooksWorkImages{
     .span4{
         padding-top: 15px;
@@ -2759,6 +2781,7 @@ RESPONSIVE OVERRIDES
 }
 .designerLooksProductsAccordion{
     padding: 20px;
+    margin-bottom: 20px;
     background: #f3f3f4;
     .accordion-group{
         display: block;

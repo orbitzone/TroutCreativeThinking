@@ -2581,11 +2581,28 @@ RESPONSIVE OVERRIDES
 .designerLooksStory .designerLooksArchitectContent {
   background: #878787;
 }
+@media (max-width: 480px) {
+  .designerLooksIntro .designerLooksIntroThumb {
+    float: none;
+    width: auto;
+  }
+  .designerLooksIntro .designerLooksIntroText {
+    margin-left: 0;
+  }
+  .designerLooksStory .designerLooksEditorThumb {
+    float: none;
+    width: auto;
+  }
+  .designerLooksStory .designerLooksEditorInfo {
+    margin-right: 0;
+  }
+}
 .designerLooksWorkImages .span4 {
   padding-top: 15px;
 }
 .designerLooksProductsAccordion {
   padding: 20px;
+  margin-bottom: 20px;
   background: #f3f3f4;
 }
 .designerLooksProductsAccordion .accordion-group {

@@ -41,7 +41,7 @@
 						</div>
 						<div class="couplePageHeader">
 							<div class="couplePageTheBlockLogo">
-								<a href="/the-block-fans-v-faves"><img src="/assets/images/the-block-fans-V-faves/the-blogk-logo.png" /></a>
+								<a href="/the-block-fans-v-faves"><img src="/assets/images/the-block-fans-V-faves/the-block-logo.png" /></a>
 							</div>
 							<div class="coupleProfile">						
 								<div class="theBlockShadowBlocks shadowRight shadowLeft">

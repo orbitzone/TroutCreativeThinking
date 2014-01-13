@@ -43,12 +43,8 @@
   font-weight: normal;
   font-style: normal;
 }
-body.fansVFaves {
-  padding-top: 223px;
-}
 body.fansVFaves .main-wrapper {
   margin-top: 0;
-  padding-top: 40px;
 }
 body.fansVFaves .ocmain-wrapper {
   background: #dcf1f6 url('../images/the-block-fans-V-faves/clouds.jpg') center 0 repeat-x;
@@ -60,6 +56,7 @@ body.fansVFaves .site-footer {
   font-family: 'arvobold';
   color: #d83234;
   font-size: 40px;
+  margin-top: 20px;
 }
 /* Buttons */
 .theBlockredBtn {
@@ -94,7 +91,7 @@ body.fansVFaves .site-footer {
 .theBlockBanner .theBlockLogoWrap,
 .theBlockBanner .theBlockBannerCaption {
   display: table-cell;
-  vertical-align: middle;
+  vertical-align: top;
   padding: 20px;
 }
 .theBlockBanner .theBlockLogoWrap {
@@ -103,7 +100,7 @@ body.fansVFaves .site-footer {
 }
 .theBlockBanner h2 {
   font-family: 'arvobold';
-  font-size: 70px;
+  font-size: 65px;
   color: #461716;
 }
 .theBlockBanner p {
@@ -173,6 +170,10 @@ body.fansVFaves .site-footer {
   padding: 9px 0;
   display: block;
   text-align: right;
+  cursor: text;
+}
+.subscripeThankyou label {
+  text-align: center;
 }
 /* Couples Wrap */
 .coupleNames {
@@ -420,7 +421,7 @@ a:hover .coupleNames {
 }
 @media (max-width: 979px) {
   .theBlockBanner h2 {
-    font-size: 40px;
+    font-size: 43px;
   }
   .theBlockBanner p {
     font-size: 24px;

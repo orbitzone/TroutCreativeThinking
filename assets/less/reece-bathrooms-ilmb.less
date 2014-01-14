@@ -12,40 +12,9 @@
 
 .ilmb .main-wrapper {
     background: #fff;
-    box-shadow: 0 1px 15px rgba(0,0,0,0.15);
 }
-.ilmb .inner-content h1,
-.ilmb .inner-content h2,
-.ilmb .inner-content h3,
-.ilmb .inner-content h4,
-.ilmb .inner-content h5,
-.ilmb .inner-content h6,
-.ilmb .inner-content a,
-.ilmb .feature-footer i
-{
-    color: #bd8eaa;
-}
-.ilmb .feature-gradient {
-    color: #fff;
-    background: #eeac8c; /* Old browsers */
-    background: -moz-linear-gradient(left,  #bd8eaa 0%, #eeac8c 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#bd8eaa), color-stop(100%,#eeac8c)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left,  #bd8eaa 0%,#eeac8c 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left,  #bd8eaa 0%,#eeac8c 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(left,  #bd8eaa 0%,#eeac8c 100%); /* IE10+ */
-    background: linear-gradient(to right,  #bd8eaa 0%,#eeac8c 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bd8eaa', endColorstr='#eeac8c',GradientType=1 ); /* IE6-9 */
-}
-.ilmb .feature-gradient h1,
-.ilmb .feature-gradient h2,
-.ilmb .feature-gradient h3,
-.ilmb .feature-gradient h4,
-.ilmb .feature-gradient h5,
-.ilmb .feature-gradient h6,
-.ilmb .feature-gradient p
-{
-    color: #fff;
-}
+
+
 .ilmb p.lead {
     line-height: 1.1;
 }
@@ -83,30 +52,64 @@
     margin: 0;
     border: none;
 }
-.ilmb .sub-header {
-    margin: 20px;
-    position: relative;
-}
-.ilmb .sub-header .main-logo {
-    max-width: 50%;
-}
-.ilmb .section-menu {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-.ilmb .section-menu .dropdown-menu a:hover,
-.ilmb .section-menu .dropdown-menu .active a,
-.ilmb .section-menu .dropdown-menu .active a:hover,
-.ilmb .home-content .dropdown-menu a:hover,
-.ilmb .home-content .dropdown-menu .active a,
-.ilmb .home-content .dropdown-menu .active a:hover
-{
-    background: #bd8eaa;
-    color: #fff;
-}
-/* Home Page */
+
+
+
+
 .ilmb{
+  /* Nav */
+  .ilmbNav{
+    background: #fff;
+    margin-bottom: 20px;
+    .listItem{
+      text-transform: uppercase;
+      #gradient > .vertical(#fbfcfd, #eff1f4);
+      a{
+        display: block;
+        padding: 30px 25px;
+        color: black;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+      &.active{
+        background: #fdefee;
+        a{
+          color: #cc2518;
+        }
+      }
+      .icon-large{
+        font-size: 20px;
+        display: block;
+        float: left;
+        margin-right: 5px;
+      }
+      .ilmbnavLinktext{
+        display: block;
+        height: 30px;
+        line-height: 30px;
+        margin-left: 30px;
+      }
+    }
+  }
+  /* Dates */
+  .ilmbDates{
+    background: #000;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    h3{
+      font-family: TimesNewRoman, "Times New Roman", Times, serif;
+      font-weight: normal;
+      font-style: italic;
+      font-size: 26px;
+    }
+    dt{
+      text-transform: uppercase;
+      padding-top: 10px;
+    }
+  }
+  /* Home Page */
   .home-wrapper{
     position: relative;
     overflow: hidden;
@@ -134,6 +137,7 @@
     left: 50px;
     right: 50px;
   }
+  /* Home Content */
   .home-content{
     margin-top: 15%;
     display: table;
@@ -146,9 +150,8 @@
       vertical-align: top;
     }
     .ilmbNav{
-      background: #fff;
-      width: 20%;
       position: relative;
+       width: 20%;
       .listItem{
         display: table-cell;
         position: absolute;
@@ -156,28 +159,6 @@
         height: 25%;
         vertical-align: middle;
         width: 100%;
-        text-transform: uppercase;
-        #gradient > .vertical(#fbfcfd, #eff1f4);
-        a{
-          display: block;
-          padding: 30px 25px;
-          color: black;
-          &:hover{
-            text-decoration: none;
-          }
-        }
-        .icon-large{
-          font-size: 20px;
-          display: block;
-          float: left;
-          margin-right: 5px;
-        }
-        .ilmbnavLinktext{
-          display: block;
-          height: 30px;
-          line-height: 30px;
-          margin-left: 30px;
-        }
         &.linkPrizes{
           top: 25%;
         }
@@ -186,6 +167,8 @@
         }
         &.linkTerms{
           top: 75%;
+        }
+        &.linkTerms{
           a{
             padding: 25px;
           }
@@ -213,6 +196,7 @@
         font-size: 20px;
         text-align: left;
         margin: 20px 0;
+        padding-left: 30px;
       }
     }
     .ilmbLogoWrap{
@@ -241,24 +225,67 @@
       }
     }
     .ilmbDates{
-      background: #000;
-      text-align: center;
       width: 20%;
-      color: #fff;
-      padding: 20px;
-      h3{
+    }
+  }
+  /* Other Pages */
+  /* ilmb Page Header */
+  .ilmbPageHeader{
+    max-width: 480px;
+    margin: 20px auto 0;
+    .pageTitle{
+      font-family: TimesNewRoman, "Times New Roman", Times, serif;
+      color: #cc2518;
+      font-size: 37px;
+      padding-left: 40%;
+      font-weight: normal;
+      font-style: italic;
+    }
+  }
+  /* past winners */
+  .thumbnails > li{
+    margin-bottom: 40px;
+  }
+  a.ilmbReadStoryLink{
+    color: #cc2518;
+     text-transform: uppercase;
+     float: right;
+     margin-top: 10px;
+     padding-top: 18px;
+  }
+  .ilmbThumb{
+    position: relative;
+    .ilmbWinnerBadge{
+      position: absolute;
+      left: 20px;
+      bottom: 20px;
+      background:black;
+      height: 30px;
+      width: 70px;
+      padding: 40px 20px;
+      color: white;
+      text-align: center;
+      .border-radius(50%);
+      .ilmbYear{
+        display: block;
+        font-size: 26px;
         font-family: TimesNewRoman, "Times New Roman", Times, serif;
         font-weight: normal;
         font-style: italic;
-        font-size: 26px;
       }
-      dt{
-        text-transform: uppercase;
-        padding-top: 10px;
-      }
-      dd{
-
-      }
+    }
+  }
+  .ilmbThumbHd{
+    margin-right: 130px;
+    margin-bottom: 30px;
+    .ilmbEntryName,.ilmbEntryPlace{
+      display: block;
+      color: black;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+    .ilmbEntryName{
+      padding-bottom: 3px;
     }
   }
 }
@@ -318,6 +345,11 @@
 
 @media (max-width:480px){
   .ilmb{
+    .ilmbPageHeader{
+      .pageTitle{
+        font-size: 25px;
+      }
+    }
     .homeBannerImage{
       max-width: 2500px;
       width: 2500px;
@@ -351,33 +383,8 @@
     }
   }
 }
-/*
-.ilmb .home-content {
-    position: absolute;
-    top: 20px;
-    right: 2.5%;
-    width: 25%;
-    color: #fff;
-    height: 95%;
-}
-.ilmb .home-content .scroll-content {
-    position: absolute;
-    top: 50px;
-    width: 100%;
-    max-height: 90%;
-    overflow: auto;
-}
-.ilmb .home-content h3 {
-    color: @hzPrimary;
-}
-.ilmb .home-content h3 i {
-    color: @white;
-}
-.ilmb .home-content hr {
-    border-top: 1px dotted #fff;
-    border-bottom: 0;
-}
-*/
+
+
 .ilmb .winnerSideBar {
     color:#FFFFFF;
     padding:20px;

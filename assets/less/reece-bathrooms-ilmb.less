@@ -105,9 +105,253 @@
     background: #bd8eaa;
     color: #fff;
 }
-.ilmb .home-wrapper {
+/* Home Page */
+.ilmb{
+  .home-wrapper{
     position: relative;
+    overflow: hidden;
+  }
+  .ilmbSubscribeInput{
+    .border-radius(0);
+    border:solid 1px #000;
+    width: 35%;
+    padding: 10px 5px;
+  }
+  .ilmbSubscribeBtn{
+    background: #c81f1f;
+    border:none;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .homeBannerImage{
+    max-width: 1160px;
+  }
+  .home-content-wrapper{
+    position: absolute;
+    top: 0;
+    left: 50px;
+    right: 50px;
+  }
+  .home-content{
+    margin-top: 15%;
+    display: table;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px;
+
+    .ilmbNav,.ilmbBanner,.ilmbDates{
+      display: table-cell;
+      vertical-align: top;
+    }
+    .ilmbNav{
+      background: #fff;
+      width: 20%;
+      position: relative;
+      .listItem{
+        display: table-cell;
+        position: absolute;
+        top: 0;
+        height: 25%;
+        vertical-align: middle;
+        width: 100%;
+        text-transform: uppercase;
+        #gradient > .vertical(#fbfcfd, #eff1f4);
+        a{
+          display: block;
+          padding: 30px 25px;
+          color: black;
+          &:hover{
+            text-decoration: none;
+          }
+        }
+        .icon-large{
+          font-size: 20px;
+          display: block;
+          float: left;
+          margin-right: 5px;
+        }
+        .ilmbnavLinktext{
+          display: block;
+          height: 30px;
+          line-height: 30px;
+          margin-left: 30px;
+        }
+        &.linkPrizes{
+          top: 25%;
+        }
+        &.linkContact{
+          top: 50%;
+        }
+        &.linkTerms{
+          top: 75%;
+          a{
+            padding: 25px;
+          }
+          .icon-large{
+            position: relative;
+            top: 3px;
+          }
+          .ilmbnavLinktext{
+            line-height: 17px;
+          }
+        }
+      }
+    }
+    .ilmbBanner{
+      background: #fff;
+      text-align: center;
+      padding: 20px;
+      p.ilmbBannerDesc{
+        padding: 0 40px;
+      }
+      h3{
+        clear: both;
+        color: #c91e1e;
+        font-family: TimesNewRoman, "Times New Roman", Times, serif;
+        font-size: 20px;
+        text-align: left;
+        margin: 20px 0;
+      }
+    }
+    .ilmbLogoWrap{
+      padding: 50px 20px 20px;
+      position: relative;
+    }
+    .ilmbBannerPrize{
+      background: #c92020;
+      height: 100px;
+      width: 160px;
+      padding:50px 20px;
+      color:white;
+      font-family: TimesNewRoman, "Times New Roman", Times, serif;
+      text-transform: uppercase;
+      font-size: 20px;
+      .border-radius(50%);
+      position: absolute;
+      top: -100px;
+      right: 1%;
+      strong{
+        display: block;
+        padding: 15px 0;
+        font-style: italic;
+        font-size: 40px;
+        font-weight: normal;
+      }
+    }
+    .ilmbDates{
+      background: #000;
+      text-align: center;
+      width: 20%;
+      color: #fff;
+      padding: 20px;
+      h3{
+        font-family: TimesNewRoman, "Times New Roman", Times, serif;
+        font-weight: normal;
+        font-style: italic;
+        font-size: 26px;
+      }
+      dt{
+        text-transform: uppercase;
+        padding-top: 10px;
+      }
+      dd{
+
+      }
+    }
+  }
 }
+@media (max-width:979px){
+  .ilmb{
+      .homeBannerImage{
+        max-width: 2200px;
+        width: 2200px;
+        margin-left: -40%;
+      }
+    .home-content{
+      display: block;
+      margin-top: 20px;
+      .ilmbNav,
+      .ilmbBanner,
+      .ilmbDates{
+        display: block;
+        width: auto;
+      }
+      .ilmbBanner,
+      .ilmbDates{
+        margin-top: 20px;
+      }
+      .ilmbNav{
+        height: 200px;
+        .listItem{
+          a{
+            padding: 10px 15px !important;
+          }
+          &.linkTerms{
+            .icon-large{
+              position: static;
+            }
+            .ilmbnavLinktext{
+              line-height: 30px;
+            }
+          }
+        }
+      }
+      .ilmbBannerPrize{
+        margin: 20px 0 20px 20px;
+        position: static;
+        float: right;
+      }
+    }
+  }
+
+}
+@media (max-width:767px){
+  .ilmb{
+    .home-content-wrapper{
+      left: 20px;
+      right: 20px;
+    }
+  }
+}
+
+@media (max-width:480px){
+  .ilmb{
+    .homeBannerImage{
+      max-width: 2500px;
+      width: 2500px;
+      margin-left: -50%;
+    }
+    .ilmbSubscribeInput{
+      width: 95%
+    }
+    .home-content{
+      .ilmbNav{
+        .listItem{
+          .ilmbnavLinktext{
+            font-size: 12px;
+          }
+        }
+      }
+      .ilmbBannerPrize{
+        float: none;
+        margin:20px 0 0;
+      }
+    }
+  }
+}
+@media (max-width:350px){
+  .ilmb{
+    .home-content{
+      .ilmbBannerPrize{
+        float: none;
+        margin:20px -40px 0;
+      }
+    }
+  }
+}
+/*
 .ilmb .home-content {
     position: absolute;
     top: 20px;
@@ -133,6 +377,7 @@
     border-top: 1px dotted #fff;
     border-bottom: 0;
 }
+*/
 .ilmb .winnerSideBar {
     color:#FFFFFF;
     padding:20px;
@@ -226,32 +471,6 @@ font-weight:normal !important;
     }
     .ilmb .ajax-target .inner-content {
 	   margin: 20px;
-    }
-    .ilmb .home-content {
-    	position: relative;
-    	top: auto;
-    	right: auto;
-    	padding: 20px;
-    	width: auto;
-    	background: #eeac8c; /* Old browsers */
-    	background: -moz-linear-gradient(left,  #eeac8c 0%, #bd8eaa 100%); /* FF3.6+ */
-    	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#eeac8c), color-stop(100%,#bd8eaa)); /* Chrome,Safari4+ */
-    	background: -webkit-linear-gradient(left,  #eeac8c 0%,#bd8eaa 100%); /* Chrome10+,Safari5.1+ */
-    	background: -o-linear-gradient(left,  #eeac8c 0%,#bd8eaa 100%); /* Opera 11.10+ */
-    	background: -ms-linear-gradient(left,  #eeac8c 0%,#bd8eaa 100%); /* IE10+ */
-    	background: linear-gradient(to right,  #eeac8c 0%,#bd8eaa 100%); /* W3C */
-    	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeac8c', endColorstr='#bd8eaa',GradientType=1 ); /* IE6-9 */
-    	max-height: 1000px;
-    }
-    .ilmb .home-content .scroll-content {
-		position: relative;
-		top: 0;
-    }
-    .ilmb .home-content .home-menu {
-		text-align: right;
-    }
-    .ilmb .home-content .home-menu .dropdown-menu {
-		text-align: left;
     }
     .ilmb .winnerSideBar img {
         width: 100%;

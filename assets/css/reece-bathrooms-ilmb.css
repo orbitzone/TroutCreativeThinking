@@ -131,34 +131,264 @@
   background: #bd8eaa;
   color: #fff;
 }
+/* Home Page */
 .ilmb .home-wrapper {
   position: relative;
+  overflow: hidden;
+}
+.ilmb .ilmbSubscribeInput {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  border: solid 1px #000;
+  width: 35%;
+  padding: 10px 5px;
+}
+.ilmb .ilmbSubscribeBtn {
+  background: #c81f1f;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.ilmb .homeBannerImage {
+  max-width: 1160px;
+}
+.ilmb .home-content-wrapper {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  right: 50px;
 }
 .ilmb .home-content {
+  margin-top: 15%;
+  display: table;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+.ilmb .home-content .ilmbNav,
+.ilmb .home-content .ilmbBanner,
+.ilmb .home-content .ilmbDates {
+  display: table-cell;
+  vertical-align: top;
+}
+.ilmb .home-content .ilmbNav {
+  background: #fff;
+  width: 20%;
+  position: relative;
+}
+.ilmb .home-content .ilmbNav .listItem {
+  display: table-cell;
   position: absolute;
-  top: 20px;
-  right: 2.5%;
-  width: 25%;
+  top: 0;
+  height: 25%;
+  vertical-align: middle;
+  width: 100%;
+  text-transform: uppercase;
+  background-color: #f6f8f9;
+  background-image: -moz-linear-gradient(top, #fbfcfd, #eff1f4);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbfcfd), to(#eff1f4));
+  background-image: -webkit-linear-gradient(top, #fbfcfd, #eff1f4);
+  background-image: -o-linear-gradient(top, #fbfcfd, #eff1f4);
+  background-image: linear-gradient(to bottom, #fbfcfd, #eff1f4);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffbfcfd', endColorstr='#ffeff1f4', GradientType=0);
+}
+.ilmb .home-content .ilmbNav .listItem a {
+  display: block;
+  padding: 30px 25px;
+  color: black;
+}
+.ilmb .home-content .ilmbNav .listItem a:hover {
+  text-decoration: none;
+}
+.ilmb .home-content .ilmbNav .listItem .icon-large {
+  font-size: 20px;
+  display: block;
+  float: left;
+  margin-right: 5px;
+}
+.ilmb .home-content .ilmbNav .listItem .ilmbnavLinktext {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  margin-left: 30px;
+}
+.ilmb .home-content .ilmbNav .listItem.linkPrizes {
+  top: 25%;
+}
+.ilmb .home-content .ilmbNav .listItem.linkContact {
+  top: 50%;
+}
+.ilmb .home-content .ilmbNav .listItem.linkTerms {
+  top: 75%;
+}
+.ilmb .home-content .ilmbNav .listItem.linkTerms a {
+  padding: 25px;
+}
+.ilmb .home-content .ilmbNav .listItem.linkTerms .icon-large {
+  position: relative;
+  top: 3px;
+}
+.ilmb .home-content .ilmbNav .listItem.linkTerms .ilmbnavLinktext {
+  line-height: 17px;
+}
+.ilmb .home-content .ilmbBanner {
+  background: #fff;
+  text-align: center;
+  padding: 20px;
+}
+.ilmb .home-content .ilmbBanner p.ilmbBannerDesc {
+  padding: 0 40px;
+}
+.ilmb .home-content .ilmbBanner h3 {
+  clear: both;
+  color: #c91e1e;
+  font-family: TimesNewRoman, "Times New Roman", Times, serif;
+  font-size: 20px;
+  text-align: left;
+  margin: 20px 0;
+}
+.ilmb .home-content .ilmbLogoWrap {
+  padding: 50px 20px 20px;
+  position: relative;
+}
+.ilmb .home-content .ilmbBannerPrize {
+  background: #c92020;
+  height: 100px;
+  width: 160px;
+  padding: 50px 20px;
+  color: white;
+  font-family: TimesNewRoman, "Times New Roman", Times, serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  top: -100px;
+  right: 1%;
+}
+.ilmb .home-content .ilmbBannerPrize strong {
+  display: block;
+  padding: 15px 0;
+  font-style: italic;
+  font-size: 40px;
+  font-weight: normal;
+}
+.ilmb .home-content .ilmbDates {
+  background: #000;
+  text-align: center;
+  width: 20%;
   color: #fff;
-  height: 95%;
+  padding: 20px;
+}
+.ilmb .home-content .ilmbDates h3 {
+  font-family: TimesNewRoman, "Times New Roman", Times, serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 26px;
+}
+.ilmb .home-content .ilmbDates dt {
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+@media (max-width: 979px) {
+  .ilmb .homeBannerImage {
+    max-width: 2200px;
+    width: 2200px;
+    margin-left: -40%;
+  }
+  .ilmb .home-content {
+    display: block;
+    margin-top: 20px;
+  }
+  .ilmb .home-content .ilmbNav,
+  .ilmb .home-content .ilmbBanner,
+  .ilmb .home-content .ilmbDates {
+    display: block;
+    width: auto;
+  }
+  .ilmb .home-content .ilmbBanner,
+  .ilmb .home-content .ilmbDates {
+    margin-top: 20px;
+  }
+  .ilmb .home-content .ilmbNav {
+    height: 200px;
+  }
+  .ilmb .home-content .ilmbNav .listItem a {
+    padding: 10px 15px !important;
+  }
+  .ilmb .home-content .ilmbNav .listItem.linkTerms .icon-large {
+    position: static;
+  }
+  .ilmb .home-content .ilmbNav .listItem.linkTerms .ilmbnavLinktext {
+    line-height: 30px;
+  }
+  .ilmb .home-content .ilmbBannerPrize {
+    margin: 20px 0 20px 20px;
+    position: static;
+    float: right;
+  }
+}
+@media (max-width: 767px) {
+  .ilmb .home-content-wrapper {
+    left: 20px;
+    right: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .ilmb .homeBannerImage {
+    max-width: 2500px;
+    width: 2500px;
+    margin-left: -50%;
+  }
+  .ilmb .ilmbSubscribeInput {
+    width: 95%;
+  }
+  .ilmb .home-content .ilmbNav .listItem .ilmbnavLinktext {
+    font-size: 12px;
+  }
+  .ilmb .home-content .ilmbBannerPrize {
+    float: none;
+    margin: 20px 0 0;
+  }
+}
+@media (max-width: 350px) {
+  .ilmb .home-content .ilmbBannerPrize {
+    float: none;
+    margin: 20px -40px 0;
+  }
+}
+/*
+.ilmb .home-content {
+    position: absolute;
+    top: 20px;
+    right: 2.5%;
+    width: 25%;
+    color: #fff;
+    height: 95%;
 }
 .ilmb .home-content .scroll-content {
-  position: absolute;
-  top: 50px;
-  width: 100%;
-  max-height: 90%;
-  overflow: auto;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    max-height: 90%;
+    overflow: auto;
 }
 .ilmb .home-content h3 {
-  color: #db2020;
+    color: @hzPrimary;
 }
 .ilmb .home-content h3 i {
-  color: #ffffff;
+    color: @white;
 }
 .ilmb .home-content hr {
-  border-top: 1px dotted #fff;
-  border-bottom: 0;
+    border-top: 1px dotted #fff;
+    border-bottom: 0;
 }
+*/
 .ilmb .winnerSideBar {
   color: #FFFFFF;
   padding: 20px;
@@ -240,48 +470,6 @@
   }
   .ilmb .ajax-target .inner-content {
     margin: 20px;
-  }
-  .ilmb .home-content {
-    position: relative;
-    top: auto;
-    right: auto;
-    padding: 20px;
-    width: auto;
-    background: #eeac8c;
-    /* Old browsers */
-  
-    background: -moz-linear-gradient(left, #eeac8c 0%, #bd8eaa 100%);
-    /* FF3.6+ */
-  
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #eeac8c), color-stop(100%, #bd8eaa));
-    /* Chrome,Safari4+ */
-  
-    background: -webkit-linear-gradient(left, #eeac8c 0%, #bd8eaa 100%);
-    /* Chrome10+,Safari5.1+ */
-  
-    background: -o-linear-gradient(left, #eeac8c 0%, #bd8eaa 100%);
-    /* Opera 11.10+ */
-  
-    background: -ms-linear-gradient(left, #eeac8c 0%, #bd8eaa 100%);
-    /* IE10+ */
-  
-    background: linear-gradient(to right, #eeac8c 0%, #bd8eaa 100%);
-    /* W3C */
-  
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeac8c', endColorstr='#bd8eaa', GradientType=1);
-    /* IE6-9 */
-  
-    max-height: 1000px;
-  }
-  .ilmb .home-content .scroll-content {
-    position: relative;
-    top: 0;
-  }
-  .ilmb .home-content .home-menu {
-    text-align: right;
-  }
-  .ilmb .home-content .home-menu .dropdown-menu {
-    text-align: left;
   }
   .ilmb .winnerSideBar img {
     width: 100%;

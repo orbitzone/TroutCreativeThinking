@@ -63,10 +63,13 @@
   margin: 0;
   border: none;
 }
+/* ILMB New Changes */
 .ilmb {
   /* Nav */
 
   /* Dates */
+
+  /* Forms */
 
   /* Home Page */
 
@@ -162,9 +165,8 @@
   text-transform: uppercase;
   padding-top: 10px;
 }
-.ilmb .home-wrapper {
-  position: relative;
-  overflow: hidden;
+.ilmb .actions {
+  text-align: right;
 }
 .ilmb .ilmbSubscribeInput {
   -webkit-border-radius: 0;
@@ -180,6 +182,10 @@
   padding: 10px;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+.ilmb .home-wrapper {
+  position: relative;
+  overflow: hidden;
 }
 .ilmb .homeBannerImage {
   max-width: 1160px;
@@ -314,8 +320,7 @@
   color: #cc2518;
   text-transform: uppercase;
   float: right;
-  margin-top: 10px;
-  padding-top: 18px;
+  padding-top: 13px;
 }
 .ilmb .ilmbThumb {
   position: relative;
@@ -344,6 +349,7 @@
 .ilmb .ilmbThumbHd {
   margin-right: 130px;
   margin-bottom: 30px;
+  margin-top: 0;
 }
 .ilmb .ilmbThumbHd .ilmbEntryName,
 .ilmb .ilmbThumbHd .ilmbEntryPlace {
@@ -454,14 +460,26 @@
     width: 2500px;
     margin-left: -50%;
   }
+  .ilmb .ilmbThumb .ilmbWinnerBadge {
+    height: 30px;
+    width: 50px;
+    padding: 20px 10px;
+    font-size: 11px;
+  }
+  .ilmb .ilmbThumb .ilmbWinnerBadge .ilmbYear {
+    font-size: 18px;
+  }
   .ilmb .home-content .ilmbLogoWrap {
     padding: 10px;
   }
-  .ilmb .home-content .ilmbBannerDesc {
-    padding: 0 20px;
-  }
   .ilmb .home-content .ilmbBanner {
     margin-top: 10px;
+  }
+  .ilmb .home-content .ilmbBanner p.ilmbBannerDesc {
+    padding: 0 20px;
+  }
+  .ilmb .home-content .ilmbBanner h3 {
+    padding-left: 0;
   }
   .ilmb .home-content .ilmbBannerPrize {
     margin: 20px 0 20px 20px;
@@ -481,10 +499,10 @@
 }
 @media (max-width: 350px) {
   .ilmb .home-content .ilmbBannerPrize {
-    float: none;
-    margin: 20px -40px 0;
+    padding: 40px 10px;
   }
 }
+/* End of New Changes */
 .ilmb .winnerSideBar {
   padding: 20px;
   height: auto;

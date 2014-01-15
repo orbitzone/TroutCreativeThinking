@@ -53,7 +53,7 @@
     border: none;
 }
 
-
+/* ILMB New Changes */
 .ilmb{
   h3{
     font-size: 20px;
@@ -131,10 +131,9 @@
       padding-top: 10px;
     }
   }
-  /* Home Page */
-  .home-wrapper{
-    position: relative;
-    overflow: hidden;
+  /* Forms */
+  .actions{
+    text-align: right;
   }
   .ilmbSubscribeInput{
     .border-radius(0);
@@ -148,6 +147,11 @@
     padding: 10px;
     text-transform: uppercase;
     margin-bottom: 10px;
+  }
+  /* Home Page */
+  .home-wrapper{
+    position: relative;
+    overflow: hidden;
   }
   .homeBannerImage{
     max-width: 1160px;
@@ -284,8 +288,7 @@
     color: #cc2518;
      text-transform: uppercase;
      float: right;
-     margin-top: 10px;
-     padding-top: 18px;
+     padding-top: 13px;
   }
   .ilmbThumb{
     position: relative;
@@ -312,6 +315,7 @@
   .ilmbThumbHd{
     margin-right: 130px;
     margin-bottom: 30px;
+    margin-top: 0;
     .ilmbEntryName,.ilmbEntryPlace{
       display: block;
       color: black;
@@ -436,16 +440,29 @@
       width: 2500px;
       margin-left: -50%;
     }
-
+  .ilmbThumb{
+    .ilmbWinnerBadge{
+      height: 30px;
+      width: 50px;
+      padding: 20px 10px;
+      font-size: 11px;
+      .ilmbYear{
+        font-size: 18px;
+      }
+    }
+  }
     .home-content{
       .ilmbLogoWrap{
         padding: 10px;
       }
-      .ilmbBannerDesc{
-        padding: 0 20px;
-      }
       .ilmbBanner{
         margin-top: 10px;
+        p.ilmbBannerDesc{
+          padding: 0 20px;
+        }
+        h3{
+          padding-left: 0;
+        }
       }
       .ilmbBannerPrize{
         margin: 20px 0 20px 20px;
@@ -473,13 +490,12 @@
   .ilmb{
     .home-content{
       .ilmbBannerPrize{
-        float: none;
-        margin:20px -40px 0;
+        padding: 40px 10px;
       }
     }
   }
 }
-
+/* End of New Changes */
 .ilmb .winnerSideBar {
     padding:20px;
     height:auto;

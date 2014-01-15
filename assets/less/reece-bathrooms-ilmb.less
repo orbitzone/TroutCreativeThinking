@@ -54,19 +54,41 @@
 }
 
 
-
-
 .ilmb{
+  h3{
+    font-size: 20px;
+  }
   /* Nav */
+  .ilmbNavWrap{
+    padding: 0;
+    margin-top: 20px;
+    background: #fff;
+    img{
+      margin: 20px;
+    }
+  }
+  a.showIlmbMenu{
+    display: block;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background: black;
+    text-transform: uppercase;
+    &:hover{
+      text-decoration: none;
+    }
+  }
   .ilmbNav{
     background: #fff;
     margin-bottom: 20px;
+    overflow: visible;
+    height: auto;
     .listItem{
       text-transform: uppercase;
       #gradient > .vertical(#fbfcfd, #eff1f4);
       a{
         display: block;
-        padding: 30px 25px;
+        padding: 20px;
         color: black;
         &:hover{
           text-decoration: none;
@@ -117,7 +139,6 @@
   .ilmbSubscribeInput{
     .border-radius(0);
     border:solid 1px #000;
-    width: 35%;
     padding: 10px 5px;
   }
   .ilmbSubscribeBtn{
@@ -144,7 +165,9 @@
     width: 100%;
     border-collapse: separate;
     border-spacing: 10px;
-
+    .ilmbSubscribeInput{
+      width: 35%;
+    }
     .ilmbNav,.ilmbBanner,.ilmbDates{
       display: table-cell;
       vertical-align: top;
@@ -152,6 +175,7 @@
     .ilmbNav{
       position: relative;
        width: 20%;
+       min-width: 200px;
       .listItem{
         display: table-cell;
         position: absolute;
@@ -159,6 +183,9 @@
         height: 25%;
         vertical-align: middle;
         width: 100%;
+        a{
+          padding: 33px 25px;
+        }
         &.linkPrizes{
           top: 25%;
         }
@@ -186,6 +213,7 @@
       background: #fff;
       text-align: center;
       padding: 20px;
+      position: relative;
       p.ilmbBannerDesc{
         padding: 0 40px;
       }
@@ -231,20 +259,26 @@
   /* Other Pages */
   /* ilmb Page Header */
   .ilmbPageHeader{
-    max-width: 480px;
-    margin: 20px auto 0;
+    text-align: center;
+    margin: 25px 25px 5px;
+    img{
+      width: 300px;
+    }
     .pageTitle{
-      font-family: TimesNewRoman, "Times New Roman", Times, serif;
       color: #cc2518;
-      font-size: 37px;
-      padding-left: 40%;
+      font-size: 20px;
+      text-transform: uppercase;
       font-weight: normal;
-      font-style: italic;
+      display: block;
+      padding-top: 20px;
     }
   }
   /* past winners */
   .thumbnails > li{
     margin-bottom: 40px;
+    &:last-child{
+      margin-bottom: 10px;
+    }
   }
   a.ilmbReadStoryLink{
     color: #cc2518;
@@ -288,9 +322,30 @@
       padding-bottom: 3px;
     }
   }
+  /* Prizes */
+  .prizeBanner{
+    font-family: TimesNewRoman, "Times New Roman", Times, serif;
+    font-weight: normal;
+    font-style: italic;
+    color: #cc2518;
+    padding: 20px 5%;
+    text-align: center;
+    .prizeBannertext{
+      font-size: 25px;
+      line-height: 1em;
+      width: 85px;
+      display: inline-block;
+    }
+    .prizeBannerAmount{
+      font-size: 50px;
+      line-height: 1em;
+      display: inline-block;
+    }
+  }
 }
 @media (max-width:979px){
   .ilmb{
+
       .homeBannerImage{
         max-width: 2200px;
         width: 2200px;
@@ -305,15 +360,33 @@
         display: block;
         width: auto;
       }
-      .ilmbBanner,
+
+      .ilmbBanner{
+        margin-top: 120px;
+      }
       .ilmbDates{
         margin-top: 20px;
       }
+      .ilmbHomeTopNav{
+        display: none;
+      }
       .ilmbNav{
-        height: 200px;
+        position: static;
+        text-align: center;
         .listItem{
+          position: static;
+          display: block;
+          height: auto;
+          .icon-large{
+            float: none;
+            display: inline-block;
+          }
+          .ilmbnavLinktext{
+            margin: 0;
+            display: inline-block;
+          }
           a{
-            padding: 10px 15px !important;
+            padding: 20px 15px !important;
           }
           &.linkTerms{
             .icon-large{
@@ -325,40 +398,63 @@
           }
         }
       }
-      .ilmbBannerPrize{
-        margin: 20px 0 20px 20px;
-        position: static;
-        float: right;
-      }
+
     }
   }
 
 }
 @media (max-width:767px){
   .ilmb{
+    .inner-content{
+      margin: 20px 0;
+    }
     .home-content-wrapper{
       left: 20px;
       right: 20px;
     }
+
+    .ilmbNav {
+      height: 0;
+      overflow: hidden;
+      .listItem{
+      text-align: center;
+      .icon-large,.ilmbnavLinktext{
+        display: inline-block;
+        float: none;
+        margin: 0
+      }
+    }
+  }
   }
 }
 
 @media (max-width:480px){
   .ilmb{
-    .ilmbPageHeader{
-      .pageTitle{
-        font-size: 25px;
-      }
-    }
+
     .homeBannerImage{
       max-width: 2500px;
       width: 2500px;
       margin-left: -50%;
     }
-    .ilmbSubscribeInput{
-      width: 95%
-    }
+
     .home-content{
+      .ilmbLogoWrap{
+        padding: 10px;
+      }
+      .ilmbBannerDesc{
+        padding: 0 20px;
+      }
+      .ilmbBanner{
+        margin-top: 10px;
+      }
+      .ilmbBannerPrize{
+        margin: 20px 0 20px 20px;
+        position: static;
+        float: right;
+      }
+      .ilmbSubscribeInput{
+        width: 95%
+      }
       .ilmbNav{
         .listItem{
           .ilmbnavLinktext{
@@ -368,7 +464,7 @@
       }
       .ilmbBannerPrize{
         float: none;
-        margin:20px 0 0;
+        margin:20px auto;
       }
     }
   }
@@ -384,17 +480,11 @@
   }
 }
 
-
 .ilmb .winnerSideBar {
-    color:#FFFFFF;
     padding:20px;
     height:auto;
 }
-.ilmb .winnerSideBar img{
-    float:left;
-    margin-right:10px;
-    width:120px;
-}
+
 .ilmb .winnerSideBar p{
 font-size:13px;
 line-height:120%;

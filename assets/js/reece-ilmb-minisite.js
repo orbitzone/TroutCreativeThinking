@@ -15,7 +15,7 @@ $(document).ready(function(){
 	    overflow: 'hidden'
 	});
 	$target.fadeOut(function(){
-	    $target.load($link.attr('href')+'?load=1', function(){
+	    $target.load($link.attr('href'), function(){
 		$('.device-sub-menu').collapse('hide');
 		$target.fadeIn(function(){
 		    $wrapper.animate({

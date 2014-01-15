@@ -217,25 +217,8 @@
   width: 20%;
   min-width: 200px;
 }
-.ilmb .home-content .ilmbNav .listItem {
-  display: table-cell;
-  position: absolute;
-  top: 0;
-  height: 25%;
-  vertical-align: middle;
-  width: 100%;
-}
 .ilmb .home-content .ilmbNav .listItem a {
-  padding: 33px 25px;
-}
-.ilmb .home-content .ilmbNav .listItem.linkPrizes {
-  top: 25%;
-}
-.ilmb .home-content .ilmbNav .listItem.linkContact {
-  top: 50%;
-}
-.ilmb .home-content .ilmbNav .listItem.linkTerms {
-  top: 75%;
+  padding: 40px 25px;
 }
 .ilmb .home-content .ilmbNav .listItem.linkTerms a {
   padding: 25px;

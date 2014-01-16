@@ -348,13 +348,12 @@
   font-weight: normal;
   font-style: italic;
   color: #cc2518;
-  padding: 20px 5%;
   text-align: center;
 }
 .ilmb .prizeBanner .prizeBannertext {
   font-size: 30px;
   line-height: 1em;
-  width: 85px;
+  width: 100px;
   display: inline-block;
 }
 .ilmb .prizeBanner .prizeBannerAmount {
@@ -418,6 +417,11 @@
   .ilmb .ilmbNav .listItem a {
     font-size: 13px;
     padding: 20px 15px;
+  }
+  .ilmb .prizeBanner .prizeBannertext,
+  .ilmb .prizeBanner .prizeBannerAmount {
+    display: block;
+    width: auto;
   }
 }
 @media (max-width: 767px) {
@@ -488,6 +492,14 @@
 @media (max-width: 350px) {
   .ilmb .home-content .ilmbBannerPrize {
     padding: 40px 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .ilmb .prizeBanner .prizeBannertext {
+    font-size: 35px;
+  }
+  .ilmb .prizeBanner .prizeBannerAmount {
+    font-size: 85px;
   }
 }
 /* End of New Changes */

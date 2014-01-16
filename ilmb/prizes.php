@@ -59,7 +59,7 @@
                   <div class="row-fluid top-space">
                     <div class="inner-content">
                       <div class="row-fluid bottom-space">
-                        <div class="span6">
+                        <div class="span7">
                           <div class="prizeBanner">
                             <span class="prizeBannertext">
                               enter to win
@@ -69,14 +69,14 @@
                             </span>
                           </div>
                         </div>
-                        <div class="span6">
+                        <div class="span5">
                           <h3>Entrants</h3>
                           <p>The competition winner will receive a prize of $5,000 cash! Enter from 4th February 2013.</p>
                         </div>
                       </div>
                       <hr>
                       <div class="row-fluid bottom-space">
-                        <div class="span6">
+                        <div class="span7">
                           <div class="prizeBanner">
                             <span class="prizeBannertext">
                               vote to share
@@ -86,7 +86,7 @@
                             </span>
                           </div>
                         </div>
-                        <div class="span6">
+                        <div class="span5">
                           <h3>Voters</h3>
                           <p>Two voting winners will each receive a $5,000 voucher that can be used at any Reece branch.</p>
                         </div>

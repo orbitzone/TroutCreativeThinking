@@ -314,12 +314,11 @@
     font-weight: normal;
     font-style: italic;
     color: #cc2518;
-    padding: 20px 5%;
     text-align: center;
     .prizeBannertext{
       font-size: 30px;
       line-height: 1em;
-      width: 85px;
+      width: 100px;
       display: inline-block;
     }
     .prizeBannerAmount{
@@ -391,6 +390,13 @@
     .ilmbNav .listItem a{
       font-size: 13px;
       padding: 20px 15px;
+    }
+    .prizeBanner{
+      .prizeBannertext,.prizeBannerAmount{
+        display: block;
+        width: auto;
+      }
+
     }
   }
 }
@@ -481,6 +487,19 @@
       }
     }
   }
+}
+@media (min-width:1200px){
+ .ilmb{
+  .prizeBanner{
+    .prizeBannertext{
+      font-size: 35px;
+    }
+    .prizeBannerAmount{
+      font-size: 85px;
+
+    }
+  }
+ }
 }
 /* End of New Changes */
 .ilmb .winnerSideBar {

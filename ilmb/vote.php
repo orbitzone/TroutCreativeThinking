@@ -23,26 +23,18 @@
           include_once($serverBase."/includes/banners/banner-happyzone.php");
       ?>  
       </div>
-      <div class="content-container">
-        <div class="inner-wrapper ">
-          <div class="main-wrapper  top-space">
-            <div class="home-wrapper"> <img class="homeBannerImage" src="/assets/images/ilmb/home-bg.jpg" alt="I love my bathroom" />
-              <div class="home-content-wrapper">
-                <div class="home-content"> <a class="showIlmbMenu hidden-desktop" href="#ilmbMobileNav" data-toggle="collapse">Menu</a>
+        <div class="content-container">
+          <div class="inner-wrapper ">
+            <div class="main-wrapper  top-space">
+              <div class="row-fluid">
+                <div class="span4"> <a href="#ilmbMobileNav" class="showIlmbMenu visible-phone" data-toggle="collapse">Menu</a>
                   <div class="ilmbNav collapse" id="ilmbMobileNav">
-                  <?php
-                    $ilmbPage = 'index';
-                    include ('navigation.php');
-                  ?>
+                    <?php
+                      $ilmbPage = 'vote';
+                      include_once('navigation.php');
+                    ?>
                   </div>
-                  <div class="ilmbBanner">
-                    <div class="ilmbBannerInner">
-                      <div class="ilmbLogoWrap"> <img src="/assets/images/ilmb/ilmb-logo.png" alt="I love my bathroom" /> </div>
-                      <div class="ilmbBannerPrize"> Share In <strong>$ 15,000</strong> Worth of Prizes </div>
-                      <p class="ilmbBannerDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare velit sit amet tempor fermentum. Donec nec blandit enim. Morbi tellus nunc, iaculis facilisis accumsane.</p>
-                    </div>
-                  </div>
-                  <div class="ilmbDates">
+                  <div class="ilmbDates hidden-phone">
                     <h3>competition dates</h3>
                     <dl>
                       <dt>Comp opens</dt>
@@ -58,12 +50,35 @@
                     </dl>
                   </div>
                 </div>
+                <div class="span8">
+                  <h3 class="ilmbPageHeader"> <img src="/assets/images/ilmb/ilmb-logo.png" alt="I love my bathroom" /> <span class="pageTitle">Vote &amp; Win</span> </h3>
+                  <div class="row-fluid feature-gradient">
+                    <div class="inner-content">
+                      <p>From May 1 you can view the inspiring bathroom entries. Simply cast your vote, and explain, in 25 words or less,
+                        what you love about the bathroom you&rsquo;ve selected. The best two entries will each receive a $5,000 Reece voucher to
+                        spend on the bathroom products of your choice.</p>
+                      <p class="highlight"> Register now and we&rsquo;ll send you a reminder email when voting opens so you don&rsquo;t miss out.<br />
+                      </p>
+                      <form action="" method="post" name="voteRegister" id="submitForm">
+                        <div class="row-fluid">
+                          <label>Name:</label>
+                          <input type="text" name="name" class="span12 ilmbFormInput" />
+                          <label>Email:</label>
+                          <input type="text" name="email" class="span12 ilmbFormInput" />
+                          <div class="actions">
+                            <input type="submit" name="submit" value="Register" class="btn ilmbRedBtn" />
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
               </div>
+
             </div>
+
           </div>
         </div>
-      </div>
-
 
       <?php 
           include_once($serverBase."/includes/foot/foot-generic.php");

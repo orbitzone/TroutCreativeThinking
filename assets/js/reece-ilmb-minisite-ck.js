@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".entry-details .thumbs a").live("click",function(e){e.preventDefault();tg=$(this).parent().parent().find(".details-target");tg.attr("src",$(this).attr("href"))});$(".winnerImages .thumbs a").live("click",function(e){e.preventDefault();tg=$("#winner-target");tg.attr("src",$(this).attr("href"))})});

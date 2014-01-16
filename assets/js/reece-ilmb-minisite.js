@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+/*
    // ILMB AJAX Navigation
 
     $('a.ajax-load').live('click', function(e){
@@ -15,7 +15,7 @@ $(document).ready(function(){
 	    overflow: 'hidden'
 	});
 	$target.fadeOut(function(){
-	    $target.load($link.attr('href'), function(){
+	    $target.load($link.attr('href')+'?load='+Math.random(), function(){
 		$('.device-sub-menu').collapse('hide');
 		$target.fadeIn(function(){
 		    $wrapper.animate({
@@ -30,7 +30,7 @@ $(document).ready(function(){
 		});
 	    });
 	});
-    });
+    });*/
 
     //$(".triggerme").trigger("click");
 

@@ -87,14 +87,6 @@
 .ilmb h3 {
   font-size: 20px;
 }
-.ilmb .ilmbNavWrap {
-  padding: 0;
-  margin-top: 20px;
-  background: #fff;
-}
-.ilmb .ilmbNavWrap img {
-  margin: 20px;
-}
 .ilmb a.showIlmbMenu {
   display: block;
   padding: 20px;
@@ -107,7 +99,7 @@
   text-decoration: none;
 }
 .ilmb .ilmbNav {
-  background: #fff;
+  background: #eff1f4;
   margin-bottom: 20px;
   overflow: visible;
   height: auto;
@@ -168,20 +160,27 @@
 .ilmb .actions {
   text-align: right;
 }
-.ilmb .ilmbSubscribeInput {
+.ilmb .ilmbFormInput {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
   border: solid 1px #000;
   padding: 10px 5px;
 }
-.ilmb .ilmbSubscribeBtn {
+.ilmb .ilmbRedBtn {
   background: #c81f1f;
   border: none;
   color: white;
   padding: 10px;
   text-transform: uppercase;
   margin-bottom: 10px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  text-shadow: none;
+}
+.ilmb .ilmbRedBtn .caret {
+  border-top-color: white;
 }
 .ilmb .home-wrapper {
   position: relative;
@@ -203,7 +202,7 @@
   border-collapse: separate;
   border-spacing: 10px;
 }
-.ilmb .home-content .ilmbSubscribeInput {
+.ilmb .home-content .ilmbFormInput {
   width: 35%;
 }
 .ilmb .home-content .ilmbNav,
@@ -213,25 +212,21 @@
   vertical-align: top;
 }
 .ilmb .home-content .ilmbNav {
-  position: relative;
   width: 20%;
   min-width: 200px;
 }
 .ilmb .home-content .ilmbNav .listItem a {
-  padding: 40px 25px;
+  padding: 20px 25px;
 }
-.ilmb .home-content .ilmbNav .listItem.linkTerms a {
-  padding: 25px;
-}
-.ilmb .home-content .ilmbNav .listItem.linkTerms .icon-large {
+.ilmb .home-content .ilmbNav .listItem.longNavLink .icon-large {
   position: relative;
   top: 3px;
 }
-.ilmb .home-content .ilmbNav .listItem.linkTerms .ilmbnavLinktext {
+.ilmb .home-content .ilmbNav .listItem.longNavLink .ilmbnavLinktext {
   line-height: 17px;
 }
 .ilmb .home-content .ilmbBanner {
-  background: #fff;
+  background-color: white;
   text-align: center;
   padding: 20px;
   position: relative;
@@ -249,7 +244,7 @@
   padding-left: 30px;
 }
 .ilmb .home-content .ilmbLogoWrap {
-  padding: 50px 20px 20px;
+  padding: 100px 20px 20px;
   position: relative;
 }
 .ilmb .home-content .ilmbBannerPrize {
@@ -265,8 +260,8 @@
   -moz-border-radius: 50%;
   border-radius: 50%;
   position: absolute;
-  top: -100px;
-  right: 1%;
+  top: -30px;
+  right: 40px;
 }
 .ilmb .home-content .ilmbBannerPrize strong {
   display: block;
@@ -280,10 +275,11 @@
 }
 .ilmb .ilmbPageHeader {
   text-align: center;
-  margin: 25px 25px 5px;
+  margin: 5px 25px 5px;
 }
 .ilmb .ilmbPageHeader img {
   width: 300px;
+  margin-top: 20px;
 }
 .ilmb .ilmbPageHeader .pageTitle {
   color: #cc2518;
@@ -353,20 +349,20 @@
   text-align: center;
 }
 .ilmb .prizeBanner .prizeBannertext {
-  font-size: 25px;
+  font-size: 30px;
   line-height: 1em;
   width: 85px;
   display: inline-block;
 }
 .ilmb .prizeBanner .prizeBannerAmount {
-  font-size: 50px;
+  font-size: 75px;
   line-height: 1em;
   display: inline-block;
 }
 @media (max-width: 979px) {
   .ilmb .homeBannerImage {
-    max-width: 2200px;
-    width: 2200px;
+    max-width: 2000px;
+    width: 2000px;
     margin-left: -40%;
   }
   .ilmb .home-content {
@@ -379,9 +375,10 @@
     display: block;
     width: auto;
   }
-  .ilmb .home-content .ilmbBanner {
-    margin-top: 120px;
+  .ilmb .home-content .ilmbBannerInner {
+    position: relative;
   }
+  .ilmb .home-content .ilmbBanner,
   .ilmb .home-content .ilmbDates {
     margin-top: 20px;
   }
@@ -391,6 +388,8 @@
   .ilmb .home-content .ilmbNav {
     position: static;
     text-align: center;
+    height: 0;
+    overflow: hidden;
   }
   .ilmb .home-content .ilmbNav .listItem {
     position: static;
@@ -408,11 +407,17 @@
   .ilmb .home-content .ilmbNav .listItem a {
     padding: 20px 15px !important;
   }
-  .ilmb .home-content .ilmbNav .listItem.linkTerms .icon-large {
+  .ilmb .home-content .ilmbNav .listItem.longNavLink .icon-large {
     position: static;
   }
-  .ilmb .home-content .ilmbNav .listItem.linkTerms .ilmbnavLinktext {
+  .ilmb .home-content .ilmbNav .listItem.longNavLink .ilmbnavLinktext {
     line-height: 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .ilmb .ilmbNav .listItem a {
+    font-size: 13px;
+    padding: 20px 15px;
   }
 }
 @media (max-width: 767px) {
@@ -439,8 +444,8 @@
 }
 @media (max-width: 480px) {
   .ilmb .homeBannerImage {
-    max-width: 2500px;
-    width: 2500px;
+    max-width: 2200px;
+    width: 2200px;
     margin-left: -50%;
   }
   .ilmb .ilmbThumb .ilmbWinnerBadge {
@@ -469,7 +474,7 @@
     position: static;
     float: right;
   }
-  .ilmb .home-content .ilmbSubscribeInput {
+  .ilmb .home-content .ilmbFormInput {
     width: 95%;
   }
   .ilmb .home-content .ilmbNav .listItem .ilmbnavLinktext {

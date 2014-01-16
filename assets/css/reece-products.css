@@ -175,30 +175,36 @@
   color: #aaaaaa;
   background-color: white;
 }
-.items-list .row-fluid + .row-fluid {
+.items-list .row-fluid + .row-fluid,
+.products-list .row-fluid + .row-fluid,
+.brands-list .row-fluid + .row-fluid {
   margin-top: 2.127659574468085%;
 }
 @media (min-width: 767px) {
-  .items-list {
+  .items-list,
+  .products-list,
+  .brands-list {
     margin: 4px;
   }
 }
 @media (max-width: 767px) {
-  .items-list .row-fluid [class*="span"] {
+  .items-list .row-fluid [class*="span"],
+  .products-list .row-fluid [class*="span"],
+  .brands-list .row-fluid [class*="span"] {
     float: left;
     width: 46.93617021276595%;
     margin: 1.53191489361702%;
   }
 }
 @media (max-width: 767px) {
-  .products-list:extend(.items-list all) .product-block {
+  .products-list .product-block {
     float: left;
     width: 46.93617021276595%;
     margin: 1.53191489361702%;
   }
 }
 @media (max-width: 767px) {
-  .brands-list:extend(.items-list all) .row-fluid [class*="span"] {
+  .brands-list .row-fluid [class*="span"] {
     float: left;
     width: 100%;
     margin: auto;
@@ -748,7 +754,7 @@ LocationDropDown
 .locationDropDown {
   padding: 5px 10px !important;
   font-size: 12px;
-  width: 145px;
+  width: 160px;
   position: relative;
 }
 .locationDropDown a:focus,
@@ -767,6 +773,8 @@ LocationDropDown
 .locationDropDown .dropdown-menu {
   margin: 0;
   padding: 0 0 5px 0;
+  -webkit-border-radius: 0 0 10px 10px;
+  -moz-border-radius: 0 0 10px 10px;
   border-radius: 0 0 10px 10px;
   border-top: none;
   left: -1px;

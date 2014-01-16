@@ -39,15 +39,15 @@
                     <h3>competition dates</h3>
                     <dl>
                       <dt>Comp opens</dt>
-                      <dd>March 1</dd>
+                      <dd>March 1st</dd>
                       <dt>Entries close</dt>
                       <dd>May 30th</dd>
                       <dt>Voting Opens</dt>
                       <dd>June 7th</dd>
                       <dt>Voting closes</dt>
-                      <dd>June 30th.</dd>
+                      <dd>June 30th</dd>
                       <dt>Winner announced</dt>
-                      <dd>August 5 </dd>
+                      <dd>August 5th </dd>
                     </dl>
                   </div>
                 </div>
@@ -56,6 +56,7 @@
                     <img src="/assets/images/ilmb/ilmb-logo.png" alt="I love my bathroom" />
                     <span class="pageTitle">prizes</span>
                   </h3>
+                  <hr>
                   <div class="row-fluid top-space">
                     <div class="inner-content">
                       <div class="row-fluid bottom-space">
@@ -101,6 +102,7 @@
                           Judging
                         </span>
                       </h3>
+                      <hr>
                       <h4>Submit Your Bathroom</h4>
                       <p>The inspiring bathroom winner will be chosen by a judging panel comprising of representatives from Reece,
                         Australia's leading supplier of bathroom products.</p>
@@ -123,15 +125,15 @@
                 <h3>competition dates</h3>
                 <dl>
                   <dt>Comp opens</dt>
-                  <dd>March 1</dd>
+                  <dd>March 1st</dd>
                   <dt>Entries close</dt>
                   <dd>May 30th</dd>
                   <dt>Voting Opens</dt>
                   <dd>June 7th</dd>
                   <dt>Voting closes</dt>
-                  <dd>June 30th.</dd>
+                  <dd>June 30th</dd>
                   <dt>Winner announced</dt>
-                  <dd>August 5 </dd>
+                  <dd>August 5th </dd>
                 </dl>
               </div>
 

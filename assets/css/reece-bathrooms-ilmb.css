@@ -230,6 +230,7 @@
 }
 .ilmb .home-content .ilmbBanner {
   background-color: white;
+  background: rgba(255, 255, 255, 0.7);
   text-align: center;
   padding: 20px;
   position: relative;
@@ -254,7 +255,7 @@
   background: #c92020;
   height: 100px;
   width: 160px;
-  padding: 50px 20px;
+  padding: 40px 10px;
   color: white;
   font-family: TimesNewRoman, "Times New Roman", Times, serif;
   text-transform: uppercase;
@@ -263,8 +264,8 @@
   -moz-border-radius: 50%;
   border-radius: 50%;
   position: absolute;
-  top: -30px;
-  right: 40px;
+  top: -60px;
+  right: 1%;
 }
 .ilmb .home-content .ilmbBannerPrize strong {
   display: block;
@@ -345,7 +346,7 @@
 }
 .ilmb .prizeBanner {
   font-family: TimesNewRoman, "Times New Roman", Times, serif;
-  font-weight: normal;
+  font-weight: bold;
   font-style: italic;
   color: #cc2518;
   text-align: center;
@@ -416,7 +417,7 @@
 @media (min-width: 768px) and (max-width: 979px) {
   .ilmb .ilmbNav .listItem a {
     font-size: 13px;
-    padding: 20px 15px;
+    padding: 20px 10px;
   }
   .ilmb .prizeBanner .prizeBannertext,
   .ilmb .prizeBanner .prizeBannerAmount {

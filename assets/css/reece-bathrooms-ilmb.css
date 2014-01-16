@@ -211,6 +211,9 @@
   display: table-cell;
   vertical-align: top;
 }
+.ilmb .home-content .ilmbBannerInner {
+  position: relative;
+}
 .ilmb .home-content .ilmbNav {
   width: 20%;
   min-width: 200px;
@@ -374,9 +377,6 @@
   .ilmb .home-content .ilmbDates {
     display: block;
     width: auto;
-  }
-  .ilmb .home-content .ilmbBannerInner {
-    position: relative;
   }
   .ilmb .home-content .ilmbBanner,
   .ilmb .home-content .ilmbDates {

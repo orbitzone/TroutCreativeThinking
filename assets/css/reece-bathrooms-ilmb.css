@@ -87,6 +87,21 @@
 .ilmb h3 {
   font-size: 20px;
 }
+.ilmb .breadcrumb {
+  background: black;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.ilmb .breadcrumb > li {
+  text-shadow: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.ilmb .breadcrumb a {
+  color: #ffffff;
+}
 .ilmb a.showIlmbMenu {
   display: block;
   padding: 20px;

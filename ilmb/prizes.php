@@ -25,6 +25,10 @@
       </div>
         <div class="content-container">
           <div class="inner-wrapper ">
+            <ul class="breadcrumb">
+              <li><a href="index.php">Home</a><span class="divider"> / </span></li>
+              <li class="active page-branding text-brand"> Prizes</li>
+            </ul>
             <div class="main-wrapper  top-space">
               <div class="row-fluid">
                 <div class="span4">
@@ -54,7 +58,7 @@
                 <div class="span8">
                   <h3 class="ilmbPageHeader">
                     <img src="/assets/images/ilmb/ilmb-logo.png" alt="I love my bathroom" />
-                    <span class="pageTitle">prizes</span>
+                    <span class="pageTitle">Prizes</span>
                   </h3>
                   <hr>
                   <div class="row-fluid top-space">

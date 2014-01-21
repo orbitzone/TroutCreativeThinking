@@ -185,6 +185,8 @@
 .ilmb .home-wrapper {
   position: relative;
   overflow: hidden;
+  border-top: solid 32px black;
+  border-bottom: solid 32px black;
 }
 .ilmb .homeBannerImage {
   max-width: 1160px;

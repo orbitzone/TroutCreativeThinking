@@ -9,7 +9,6 @@
 // I Love My Bathroom (ILMB)
 //====================================================================================================================================
 //====================================================================================================================================
-@ilmbserifFont :  TimesNewRoman, "Times New Roman", Times, serif;
 .ilmb .main-wrapper {
     background: #fff;
 }
@@ -124,10 +123,9 @@
     color: #fff;
     padding: 20px;
     h3{
-      font-family: @ilmbserifFont;
       font-weight: normal;
-      font-style: italic;
-      font-size: 26px;
+      font-size: 18px;
+      text-transform: uppercase;
     }
     dt{
       text-transform: uppercase;
@@ -215,40 +213,16 @@
       p.ilmbBannerDesc{
         padding: 0 40px;
       }
-      h3{
-        clear: both;
-        color: #c91e1e;
-        font-family: @ilmbserifFont;
-        font-size: 20px;
-        text-align: left;
-        margin: 20px 0;
-        padding-left: 30px;
-      }
     }
     .ilmbLogoWrap{
       padding: 100px 20px 20px;
       position: relative;
     }
     .ilmbBannerPrize{
-      background: #c92020;
-      height: 100px;
-      width: 160px;
-      padding:40px 10px;
-      color:white;
-      font-family: @ilmbserifFont;
-      text-transform: uppercase;
-      font-size: 20px;
-      .border-radius(50%);
+      width: 190px;
       position: absolute;
       top: -60px;
       right: 1%;
-      strong{
-        display: block;
-        padding: 15px 0;
-        font-style: italic;
-        font-size: 40px;
-        font-weight: normal;
-      }
     }
     .ilmbDates{
       width: 20%;
@@ -301,7 +275,6 @@
       .ilmbYear{
         display: block;
         font-size: 26px;
-        font-family: @ilmbserifFont;
         font-weight: normal;
         font-style: italic;
       }
@@ -323,7 +296,6 @@
   }
   /* Prizes */
   .prizeBanner{
-    font-family: @ilmbserifFont;
     font-weight: bold;
     font-style: italic;
     color: #cc2518;
@@ -495,7 +467,7 @@
   .ilmb{
     .home-content{
       .ilmbBannerPrize{
-        padding: 40px 10px;
+        width: auto;
       }
     }
   }
@@ -510,6 +482,9 @@
       font-size: 85px;
 
     }
+  }
+  .home-content .ilmbBannerPrize{
+    width: 209px
   }
  }
 }

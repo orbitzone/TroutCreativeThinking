@@ -38,7 +38,7 @@
                   <div class="ilmbBanner">
                     <div class="ilmbBannerInner">
                       <div class="ilmbLogoWrap"> <img src="/assets/images/ilmb/ilmb-logo.png" alt="I love my bathroom" /> </div>
-                      <div class="ilmbBannerPrize"> Share In <strong>$ 15,000</strong> Worth of Prizes </div>
+                      <div class="ilmbBannerPrize"><img src="/assets/images/ilmb/prize-badge.png" alt="$15000 worth of prizes" /></div>
                       <p class="ilmbBannerDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare velit sit amet tempor fermentum. Donec nec blandit enim. Morbi tellus nunc, iaculis facilisis accumsane.</p>
                     </div>
                   </div>

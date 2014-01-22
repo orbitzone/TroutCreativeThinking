@@ -163,10 +163,9 @@
   padding: 20px;
 }
 .ilmb .ilmbDates h3 {
-  font-family: TimesNewRoman, "Times New Roman", Times, serif;
   font-weight: normal;
-  font-style: italic;
-  font-size: 26px;
+  font-size: 18px;
+  text-transform: uppercase;
 }
 .ilmb .ilmbDates dt {
   text-transform: uppercase;
@@ -254,41 +253,15 @@
 .ilmb .home-content .ilmbBanner p.ilmbBannerDesc {
   padding: 0 40px;
 }
-.ilmb .home-content .ilmbBanner h3 {
-  clear: both;
-  color: #c91e1e;
-  font-family: TimesNewRoman, "Times New Roman", Times, serif;
-  font-size: 20px;
-  text-align: left;
-  margin: 20px 0;
-  padding-left: 30px;
-}
 .ilmb .home-content .ilmbLogoWrap {
   padding: 100px 20px 20px;
   position: relative;
 }
 .ilmb .home-content .ilmbBannerPrize {
-  background: #c92020;
-  height: 100px;
-  width: 160px;
-  padding: 40px 10px;
-  color: white;
-  font-family: TimesNewRoman, "Times New Roman", Times, serif;
-  text-transform: uppercase;
-  font-size: 20px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
+  width: 190px;
   position: absolute;
   top: -60px;
   right: 1%;
-}
-.ilmb .home-content .ilmbBannerPrize strong {
-  display: block;
-  padding: 15px 0;
-  font-style: italic;
-  font-size: 40px;
-  font-weight: normal;
 }
 .ilmb .home-content .ilmbDates {
   width: 20%;
@@ -341,7 +314,6 @@
 .ilmb .ilmbThumb .ilmbWinnerBadge .ilmbYear {
   display: block;
   font-size: 26px;
-  font-family: TimesNewRoman, "Times New Roman", Times, serif;
   font-weight: normal;
   font-style: italic;
 }
@@ -361,7 +333,6 @@
   padding-bottom: 3px;
 }
 .ilmb .prizeBanner {
-  font-family: TimesNewRoman, "Times New Roman", Times, serif;
   font-weight: bold;
   font-style: italic;
   color: #cc2518;
@@ -507,7 +478,7 @@
 }
 @media (max-width: 350px) {
   .ilmb .home-content .ilmbBannerPrize {
-    padding: 40px 10px;
+    width: auto;
   }
 }
 @media (min-width: 1200px) {
@@ -516,6 +487,9 @@
   }
   .ilmb .prizeBanner .prizeBannerAmount {
     font-size: 85px;
+  }
+  .ilmb .home-content .ilmbBannerPrize {
+    width: 209px;
   }
 }
 /* End of New Changes */

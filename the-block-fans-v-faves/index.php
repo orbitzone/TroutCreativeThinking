@@ -87,7 +87,7 @@
 													<img src="/assets/images/the-block-fans-V-faves/team3-coming-soon.png" alt="Couple" />
 													<h4 class="coupleNames">Kyal &amp; Kara</h4>
 												</a>
-												<p class="coupleDesc">Hailing from the Sunshine coast, seasoned renovators, Kyal &amp; Kara are the new young guns of the series.</p>
+												<p class="coupleDesc">Hailing from the Sunshine coast, seasoned renovators Kyal &amp; Kara are the new young guns of the series.</p>
 											</li>
 											<li>
 												<a href="couple.php" title="">

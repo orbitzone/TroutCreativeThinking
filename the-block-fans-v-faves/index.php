@@ -70,28 +70,28 @@
 										<ul class="clearfix">
 											<li>
 												<a href="couple.php" title="">
-													<img src="/assets/images/the-block-fans-V-faves/couple1.jpg" alt="Couple" />
+													<img src="/assets/images/the-block-fans-V-faves/team1-coming-soon.png" alt="Couple" />
 													<h4 class="coupleNames">Name &amp; Name</h4>
 												</a>
 												<p class="coupleDesc">orem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus cursus lectus, nec blandit nisie.</p>
 											</li>
 											<li>
 												<a href="couple.php" title="">
-													<img src="/assets/images/the-block-fans-V-faves/couple2.jpg" alt="Couple" />
+													<img src="/assets/images/the-block-fans-V-faves/team2-coming-soon.png" alt="Couple" />
 													<h4 class="coupleNames">Name &amp; Name</h4>
 												</a>
 												<p class="coupleDesc">orem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus cursus lectus, nec blandit nisie.</p>
 											</li>
 											<li>
 												<a href="couple.php" title="">
-													<img src="/assets/images/the-block-fans-V-faves/couple3.jpg" alt="Couple" />
+													<img src="/assets/images/the-block-fans-V-faves/team3-coming-soon.png" alt="Couple" />
 													<h4 class="coupleNames">Name &amp; Name</h4>
 												</a>
 												<p class="coupleDesc">orem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus cursus lectus, nec blandit nisie.</p>
 											</li>
 											<li>
 												<a href="couple.php" title="">
-													<img src="/assets/images/the-block-fans-V-faves/couple4.jpg" alt="Couple" />
+													<img src="/assets/images/the-block-fans-V-faves/team4-coming-soon.png" alt="Couple" />
 													<h4 class="coupleNames">Name &amp; Name</h4>
 												</a>
 												<p class="coupleDesc">orem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus cursus lectus, nec blandit nisie.</p>

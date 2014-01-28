@@ -1160,6 +1160,10 @@ RESPONSIVE OVERRIDES
   color: #333;
   border: solid 2px #333;
 }
+.inspirationBannerTextWrap .inspirationBannerViewLink:hover {
+  color: #4d4d4d;
+  background: #e6e6e6;
+}
 @media (max-width: 1200px) {
   .inspirationBannerTextWrap .inspirationBannerText {
     margin-top: 8%;
@@ -1236,24 +1240,42 @@ RESPONSIVE OVERRIDES
   font-family: sofia_pro_lightregular;
   padding-bottom: 20px;
 }
-.inspirationPagePanels .coloredPanel {
+.coloredPanel {
   margin-top: 20px;
   color: #ffffff;
 }
-.inspirationPagePanels .coloredPanel h3 {
+.coloredPanel h3 {
   font-weight: normal;
   font-size: 32px;
 }
-.inspirationPagePanels .coloredPanel a,
-.inspirationPagePanels .coloredPanel a:hover {
+.coloredPanel a,
+.coloredPanel a:hover {
   color: #ffffff;
   text-decoration: none;
 }
-.inspirationPagePanels .coloredPanelText {
+.coloredPanel .row-fluid [class*="span"] {
+  margin: 0;
+}
+.coloredPanel .row-fluid .span8 {
+  width: 66.66666666666667%;
+}
+.coloredPanel .row-fluid .span7 {
+  width: 58.333333333333336%;
+}
+.coloredPanel .row-fluid .span6 {
+  width: 50%;
+}
+.coloredPanel .row-fluid .span5 {
+  width: 41.666666666666664%;
+}
+.coloredPanel .row-fluid .span4 {
+  width: 33.333333333333336%;
+}
+.coloredPanelText {
   padding: 20px;
   position: relative;
 }
-.inspirationPagePanels .coloredPanelThumb img {
+.coloredPanelThumb img {
   width: 100%;
 }
 .landscapePanel h3 {
@@ -1263,7 +1285,7 @@ RESPONSIVE OVERRIDES
   .landscapePanel h3 {
     margin-top: 40px;
   }
-  .inspirationPagePanels .coloredPanel h3 {
+  .coloredPanel h3 {
     font-size: 38px;
   }
 }
@@ -1271,13 +1293,18 @@ RESPONSIVE OVERRIDES
   .landscapePanel h3 {
     margin: 10px -10px;
   }
-  .inspirationPagePanels .coloredPanel h3 {
+  .coloredPanel h3 {
     font-size: 25px;
   }
   .coloredPanelLink {
     padding: 5px 15px;
     font-size: .9em;
     margin-top: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .coloredPanel .row-fluid [class*="span"] {
+    width: 100%;
   }
 }
 .caretTop .coloredPanelThumb,
@@ -1424,8 +1451,53 @@ RESPONSIVE OVERRIDES
 .panelSalmon.caretLeft .coloredPanelThumb:before {
   border-left-color: #ff655b;
 }
+.panelWhite {
+  background: #ffffff;
+  color: #5e5d5d;
+}
+.panelWhite a {
+  color: #e50066;
+  cursor: pointer;
+}
+.panelWhite a:hover {
+  color: #cc005b;
+}
+.panelWhite h3 {
+  font-family: sofia_pro_lightregular;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+}
+.panelWhite .inspSocialBlockDesc {
+  padding: 20px 0;
+}
+.panelWhite .inspSocialBlockDesc strong {
+  color: #333;
+}
+.panelWhite.caretTop .coloredPanelThumb:before {
+  border-top-color: #ffffff;
+}
+.panelWhite.caretRight .coloredPanelThumb:before {
+  border-right-color: #ffffff;
+}
+.panelWhite.caretBottom .coloredPanelThumb:before {
+  border-bottom-color: #ffffff;
+}
+.panelWhite.caretLeft .coloredPanelThumb:before {
+  border-left-color: #ffffff;
+}
 .panelAlt [class*="span"] {
   float: right;
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .panelWhite .coloredPanelThumb {
+    overflow: hidden;
+  }
+  .panelWhite .coloredPanelThumb img {
+    max-width: 140%;
+    width: 140%;
+    margin: 0 -20%;
+  }
 }
 @media (max-width: 767px) {
   .inspirationPagePanels .portraitPanel .coloredPanelThumb {
@@ -1468,84 +1540,183 @@ RESPONSIVE OVERRIDES
   .panelSalmon.caretLeft .coloredPanelThumb:before {
     border-bottom-color: #ff655b !important;
   }
+  .panelWhite.caretTop .coloredPanelThumb:before,
+  .panelWhite.caretRight .coloredPanelThumb:before,
+  .panelWhite.caretBottom .coloredPanelThumb:before,
+  .panelWhite.caretLeft .coloredPanelThumb:before {
+    border-bottom-color: #ffffff !important;
+  }
 }
-/* Social Panels */
-.inspirationBathroomFiles {
-  background: #dbdadb;
-  text-align: center;
-  font-family: sofia_pro_lightregular;
-}
-.inspirationBathroomFiles .header {
-  background: #ff655b;
-  padding: 12px;
-}
-.inspirationBathroomFiles .header h2 {
-  color: #ffffff;
-  font-size: 30px;
-  margin: 0;
-  border-bottom: solid .07em;
-  display: inline-block;
-  padding: 2px;
-  font-weight: normal;
-  font-family: sofia_pro_semi_boldregular;
-}
-.inspirationSocialPanelWrap {
-  padding-bottom: 20px;
-}
-.inspirationSocialPanelWrap .socialPanel {
-  margin-top: 20px;
-}
-.inspirationSocialPanelWrap .socialPanel .socialPaneltext {
-  border: solid 2px #ffffff;
-  padding: 20px;
-  min-height: 14em;
-  color: #8c8c8c;
+/*************************************************************/
+/*                   Social Wall                             */
+/*************************************************************/
+.inspWallHeader {
   position: relative;
+  z-index: 10;
+  background: #222222;
+  margin-top: 120px;
+  color: white;
 }
-.inspirationSocialPanelWrap .socialPanel h3 {
+.prLogoWrap {
+  float: left;
+  font-size: 16px;
   font-weight: 200;
-  font-size: 38px;
+  padding: 10px 0;
 }
-.inspirationSocialPanelWrap .socialPanel h3 small {
+.prLogoLarge {
+  height: 222px;
+  width: 222px;
+  background: url('../images/hz-inspiration/header-logo.png');
   display: block;
+  float: left;
+  margin: -100px 10px -100px 0;
 }
-.inspirationSocialPanelWrap .socialPanel h3 .icon-large {
+.inspWallFilter {
+  float: right;
+  background: #3d3c3c;
+  font-family: sofia_pro_lightregular;
   font-size: 20px;
-  display: block;
-  padding-bottom: 10px;
-}
-.inspirationSocialPanelWrap .socialPanel .socialPanelLink {
-  border: solid 2px #ffffff;
-  display: inline-block;
-  padding: 5px 20px;
   text-transform: uppercase;
-  color: #8c8c8c;
 }
-.inspirationSocialPanelWrap .pinterestPanel .socialPaneltext {
-  border: none;
-  background: #ff655b;
-  text-align: left;
-  min-height: 1em !important;
-  color: #ffffff;
+.inspWallFilter a {
+  color: white;
+  padding: 10px 30px;
+  display: block;
 }
-.inspirationSocialPanelWrap .pinterestPanel .socialPaneltext h3 {
-  margin: 0 0 0 5px;
+.inspWallFilter a:hover {
+  text-decoration: none;
 }
-.inspirationSocialPanelWrap .pinterestPanel .socialPaneltext h3 .icon-large {
-  padding: 0;
+.inspWallFilter :focus {
+  text-decoration: none;
+  outline: none;
 }
-.inspirationSocialPanelWrap .socialPanelThumb img {
+.inspWallFilter i {
+  margin-left: 10px;
+}
+.inspWallFilter .dropdown-menu {
+  background: #3d3c3c;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
   width: 100%;
+  margin-top: 0;
+  padding: 0;
+  border: none;
 }
-@media (max-width: 979px) {
-  .inspirationSocialPanelWrap .socialPanel .socialPaneltext {
-    min-height: 16em;
-  }
+.inspWallFilter .dropdown-menu label {
+  padding: 10px 5px;
+  display: block;
+  margin: 0;
 }
-@media (max-width: 767px) {
-  .inspirationSocialPanelWrap .socialPanel .socialPaneltext {
-    min-height: 1em;
-  }
+.inspWallFilter .dropdown-menu label:before {
+  content: '';
+  display: block;
+  float: right;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  margin-right: 5px;
+  text-align: center;
+  background: #d3d1d1;
+  font-family: Fontawesome;
+}
+.inspWallFilter .dropdown-menu label.checked {
+  background: black;
+}
+.inspWallFilter .dropdown-menu label.checked:before {
+  content: "\f00c";
+  color: #e50066;
+}
+.inspWallFilter .dropdown-menu input[type="checkbox"] {
+  visibility: hidden;
+}
+.inspWallwrapper {
+  min-height: 500px;
+  padding: 40px 0;
+  background: #e2e7db;
+}
+.inspSocialBlockContent {
+  padding: 40px;
+}
+.inspSocialBlockSource .inspSocialBlockSourceName {
+  color: #333;
+}
+/* InspirationLoader */
+#inspWallLoad {
+  background: #222;
+  padding: 20px;
+  text-align: center;
+}
+#inspWallLoadLink {
+  color: white;
+  background: #3d3c3c;
+  display: inline-block;
+  padding: 15px 20px;
+}
+#inspWallLoadLink:hover {
+  text-decoration: none;
+}
+#inspWallLoaderIcon {
+  background: #000000 url('../images/hz-inspiration/ajaxloader.gif') center no-repeat;
+  display: none;
+  height: 32px;
+  width: 32px;
+  padding: 20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+#inspWallLoaderIcon.show {
+  display: inline-block;
+}
+/* Social Icons */
+.socialIcon {
+  height: 50px;
+  width: 50px;
+  clear: both;
+  display: block;
+  padding: 25px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #ccc;
+  position: relative;
+  margin: 30px auto 20px;
+  color: white;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+}
+.landscapePanel .socialIcon {
+  margin-top: 70px;
+}
+.prIcon {
+  background: #e50066;
+}
+.fbIcon {
+  background: #425f9e;
+}
+.twitterIcon {
+  background: #4eaaf0;
+}
+.instagramIcon {
+  background: #9b6657;
+}
+.pinterestIcon {
+  background: #f74444;
+}
+.socialIcon:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 7px;
+  right: 7px;
+  top: 7px;
+  bottom: 7px;
+  border: dotted 2px #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
 }
 /* ===========================================================================================================================================
     Inspiration Gallery

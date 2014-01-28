@@ -7,7 +7,7 @@
 	  		"/assets/css/reece-bathrooms.css"		
 	  	); 
 	  	include_once($serverBase."/includes/head/head-generic.php");
-	?>		
+	?>
 
     <body>
 		<div class="ocmain-wrapper">
@@ -15,7 +15,7 @@
 			<?php 
 				$genericNavActiveMenuItem = "Bathrooms";
 			   	include_once($serverBase."/includes/nav/nav-generic.php");
-			?>				    
+			?>
 
 		   	<?php 
 				$happyZoneNavActiveMenuItem = "Bathroom Moments";
@@ -32,7 +32,6 @@
 							<div class="inspirationBannerText">
 								<h2><a href = "#">Bathroom Gallery</a></h2>
 								<h3>Trends, ideas and stories to inspire</h3>
-
 								<p class="inspirationBannerCaption">
 									A collection of amazing bathrooms that demonstrate what you can achieve with a little imagination and quality Reece products.
 								</p>
@@ -41,21 +40,18 @@
 								</div>
 							</div>
 						</div>
-					</div>				
+					</div>
 				</div>
 			</section>
 			<div class="content-container">
 				<div class="inner-wrapper">
 					<section class="inspirationPagePanels">
-
-
 						<div class="row-fluid">
 							<div class="span4">
 								<div class="coloredPanel panelTeal portraitPanel caretBottom">
 									<div class="coloredPanelThumb">
-										<span class="before"></span>
 										<img src="/assets/images/hz-inspiration/portrait.jpg" alt="Boho" />
-									</div>										
+									</div>
 									<div class="coloredPanelText">
 										<h3><a href = "#">Designer Looks</a></h3>
 										<p>
@@ -63,7 +59,7 @@
 										</p>
 										<div>
 											<a class="coloredPanelLink" href="#">VIEW THE GALLERY</a>
-										</div>										
+										</div>
 									</div>
 								</div>
 							</div>
@@ -72,10 +68,9 @@
 									<div class="row-fluid">
 										<div class="span7">
 											<div class="coloredPanelThumb">
-												<span class="before"></span>
 												<img src="/assets/images/hz-inspiration/landscape1.jpg" alt="Boho" />
 											</div>
-										</div>									
+										</div>
 										<div class="span5">
 											<div class="coloredPanelText">
 												<h3><a href = "#">Bathroom Trends</a></h3>
@@ -84,7 +79,7 @@
 												</p>
 												<div>
 													<a class="coloredPanelLink" href="#">EXPLORE TRENDS!</a>
-												</div>												
+												</div>
 											</div>
 										</div>
 									</div>
@@ -93,7 +88,6 @@
 									<div class="row-fluid">
 										<div class="span7">
 											<div class="coloredPanelThumb">
-												<span class="before"></span>
 												<img src="/assets/images/hz-inspiration/landscape2.jpg" alt="Boho" />
 											</div>
 										</div>
@@ -107,95 +101,57 @@
 												</p>
 												<div>
 													<a class="coloredPanelLink" href="#">SEE HIGHLIGHTS</a>
-												</div>												
+												</div>
 											</div>
-										</div>										
+										</div>
 									</div>
-								</div>								
+								</div>
 							</div>
 						</div>
 					</section>
 				</div>
 			</div>
-			<section class="inspirationBathroomFiles">
-			<header class="header">
-				<h2>
-		    		The Bathroom Files
-		    	</h2>				
-			</header>
-
-		    	<div class="content-container">
-					<div class="inner-wrapper">
-						<section class="inspirationPage">
-							<div class="row-fluid inspirationSocialPanelWrap">
-								<div class="span4">
-									<div class="socialPanel caretTop">
-										<div class="socialPaneltext">
-											<h3>
-												<i class="icon-facebook icon-large"></i>
-											</h3>
-											<p>
-												Another finalist in the #Bathroom #Innovation Award - a #toilet that will only flush when the seat is down. This aims to reduce the spread of infection and bacteria. It would also make sure the toilet seat is always down - looking at you, boys!
-											</p>
-										</div>
-										<div class="socialPanelThumb">
-											<img src="/assets/images/hz-inspiration/FBImage.jpg" alt="FB" />
-										</div>										
-									</div>
-								</div>
-								<div class="span4">
-									<div class="socialPanel pinterestPanel caretBottom">
-										<div class="socialPanelThumb">
-											<img src="/assets/images/hz-inspiration/PinterestImage.jpg" alt="Pinterest" />
-										</div>
-										<div class="socialPaneltext">
-											<h3>
-												<i class="icon-pinterest icon-large"></i>
-											</h3>
-										</div>
-									</div>
-									<div class="socialPanel">
-										<div class="socialPaneltext">
-											<h3>
-												<i class="icon-twitter icon-large"></i>
-												<small>@reecebathrooms</small>
-											</h3>
-
-											<p>
-												Another great student finalist from the Reece Bathroom Innovation Award! The ultimate showering experience by...
-											</p>
-											<a href="#" class="socialPanelLink">
-												Follow Us
-											</a>
-										</div>
-									</div>
-								</div>
-								<div class="span4">
-									<div class="socialPanel caretTop">
-										<div class="socialPaneltext">
-											<h3>
-												Watch
-											</h3>
-											<p>
-												Recreating the luxury experience of a high-end hotel bathroom within the home. Watch our video with Shayna Blaze to find out more.
-											</p>									
-										</div>
-										<div class="socialPanelThumb">
-											<a href="#">
-												<img src="/assets/images/hz-inspiration/youtubeImage.jpg" alt="Youtube" />
-											</a>
-										</div>
-									</div>								
-								</div>
+			<section class="inspWall">
+				<header class="inspWallHeader">
+					<div class=" content-container">
+						<div class="inner-wrapper clearfix">
+							<div class="prLogoWrap">
+								<span class="prLogoLarge"></span>
+								Latest trends brought to you by Reece.
 							</div>
-						</section>
+							<div class="inspWallFilter dropdown">
+								<a data-toggle="dropdown" href="#">Filter Articles <i class="icon-star-empty"></i></a>
+								<ul class="dropdown-menu">
+									<li><label><input type="checkbox" name="inspWallFilter" value="productNews" />Product News</label></li>
+									<li><label><input type="checkbox" name="inspWallFilter" value="waterSavings" />Water Saving</label></li>
+									<li><label><input type="checkbox" name="inspWallFilter" value="theBlock" />The Block</label></li>
+									<li><label><input type="checkbox" name="inspWallFilter" value="events" />Events</label></li>
+									<li><label><input type="checkbox" name="inspWallFilter" value="trends" />Trends</label></li>
+									<li><label><input type="checkbox" name="inspWallFilter" value="designers" />Designers</label></li>
+									<li><label><input type="checkbox" name="inspWallFilter" value="planning" />Planning</label></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</header>
+				<div class="inspWallwrapper">
+					<div class=" content-container">
+						<div class="inner-wrapper" id="wallContent">
+							<?php include ('wall.php') ?>
+						</div>
+					</div>
+					<div id="inspWallLoad">
+						<a href="#" id="inspWallLoadLink">
+							Load More <i class="icon-chevron-down"></i>
+						</a>
+						<span id="inspWallLoaderIcon"></span>
 					</div>
 				</div>
-		    </section>
+			</section>
 
 			<?php 
 			   	include_once($serverBase."/includes/foot/foot-generic.php");
-			?>		
+			?>
 
 		</div>		
 
@@ -220,5 +176,32 @@
 		  	); 
 		  	include_once($serverBase."/includes/foot/scripts.php");
 		?>
+		<script type="text/javascript">
+		function populateWall(data){
+			$('#wallContent').html(data);
+		}
+
+		$(function(){
+
+			/* Script for Filtering content */
+			var inspFilterArray = [];
+			$('input[name="inspWallFilter"]').change(function(){
+				$(this).parent('label').toggleClass('checked');
+				inspFilterArray = [];
+				$.each($('input[name="inspWallFilter"]:checked'),function(){
+					inspFilterArray.push(this.value)
+				});
+				data = {filter:JSON.stringify(inspFilterArray)};
+				$.get('wall.php',data,populateWall);
+			});
+			/* Load More */
+			$('#inspWallLoadLink').click(function(e){
+				e.preventDefault();
+				$('#inspWallLoadLink').hide();
+				$('#inspWallLoaderIcon').addClass('show');
+			});
+
+		});
+		</script>
     </body>
 </html>

@@ -50,9 +50,9 @@
 											<img src="/assets/images/the-block-fans-V-faves/team1-landing-page.png" alt="Couple" />
 										</div>
 										<div class="coupleProfileText">
-											<h4 class="coupleNames">Name &amp; Name</h4>
-											<p class="coupleCaption">Learn more about the products and inspiration behind it right here.</p>
-											<p class="coupleDesc">orem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus cursus lectus, nec blandit nisie.orem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus cursus lectus, nec blandit nisie.</p>
+											<h4 class="coupleNames">Brad &amp; Dale</h4>
+											<p class="coupleCaption">Previously competing against each other, funny men Brand and Dale have formed a dynamic duo for their return.</p>
+											<p class="coupleDesc">Mine worker Brad and Landscaper Dale have ditched their womenfolk and are teaming up for a boy-power assault on The Block crown. ‘We may have stripped off the dead wood with the girls not being here this time,’ Brad says with a laugh. ‘Dale and I might flourish and realise it was the girls who were holding us back’. With Dale assigned to styling duties, Brad will stay on the tools to create what he describes as a ‘modern and pretty minimal home.’ Two blokes - one who snores - sharing a bed. What could possibly go wrong?</p>
 										</div>
 									</div>
 								</div><!-- /.couple-profile -->							

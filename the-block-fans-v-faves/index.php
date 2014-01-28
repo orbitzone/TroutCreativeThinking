@@ -71,31 +71,31 @@
 											<li>
 												<a href="couple.php" title="">
 													<img src="/assets/images/the-block-fans-V-faves/team1-coming-soon.png" alt="Couple" />
-													<h4 class="coupleNames">Name &amp; Name</h4>
+													<h4 class="coupleNames">Brad &amp; Dale</h4>
 												</a>
-												<p class="coupleDesc">orem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus cursus lectus, nec blandit nisie.</p>
+												<p class="coupleDesc">Previously competing against each other, funny men Brand and Dale have formed a dynamic duo for their return.</p>
 											</li>
 											<li>
 												<a href="couple.php" title="">
 													<img src="/assets/images/the-block-fans-V-faves/team2-coming-soon.png" alt="Couple" />
-													<h4 class="coupleNames">Name &amp; Name</h4>
+													<h4 class="coupleNames">Chantelle &amp; Steve</h4>
 												</a>
-												<p class="coupleDesc">orem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus cursus lectus, nec blandit nisie.</p>
+												<p class="coupleDesc">With no previous renovating experience, Victorian couple Chantelle &amp; Steve are hoping to succeed on enthusiasm alone.</p>
 											</li>
 											<li>
 												<a href="couple.php" title="">
 													<img src="/assets/images/the-block-fans-V-faves/team3-coming-soon.png" alt="Couple" />
-													<h4 class="coupleNames">Name &amp; Name</h4>
+													<h4 class="coupleNames">Kyal &amp; Kara</h4>
 												</a>
-												<p class="coupleDesc">orem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus cursus lectus, nec blandit nisie.</p>
+												<p class="coupleDesc">Hailing from the Sunshine coast, seasoned renovators, Kyal &amp; Kara are the new young guns of the series.</p>
 											</li>
 											<li>
 												<a href="couple.php" title="">
 													<img src="/assets/images/the-block-fans-V-faves/team4-coming-soon.png" alt="Couple" />
-													<h4 class="coupleNames">Name &amp; Name</h4>
+													<h4 class="coupleNames">Alisa &amp; Lysandra</h4>
 												</a>
-												<p class="coupleDesc">orem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus cursus lectus, nec blandit nisie.</p>
-											</li>														
+												<p class="coupleDesc">A powerful combination of creativity and cunning, twins Alisa &amp; Lysandra spell double trouble for the other couples.</p>
+											</li>
 										</ul>
 										</div>
 								</div><!-- /.nav-couples -->
@@ -128,7 +128,8 @@
 									<div class="theBlockShadowBlocksInner">
 										<img src="/assets/images/the-block-fans-V-faves/homeBanner1.jpg" />
 										<div class="bannerTextWrap">
-											<h4 class="bannerText">View The Block bathrooms in our new 3D planner</h4>
+											<h4 class="bannerText">Check out our new 3D Planner </h4>
+											<p>Stay tuned for interactive versions of all The Block bathrooms as they're revealed</p>
 											<a href="#" class="theBlockredBtn theBlockredBtnSmall">Explore</a>
 										</div>
 									</div>

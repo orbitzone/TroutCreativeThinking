@@ -245,14 +245,15 @@ a:hover .coupleNames{
 	}
 }
 .theBlockHomeBannerLarge{
-	.bannerTextWrap{
-		padding-right: 40%;
-	}
 	img{
 		float: right;
 		margin:-10px 0;
 		min-width: 800px;
-	}	
+	}
+	.bannerText{
+		padding-top: 10px;
+		font-size: 24px;
+	}
 } 
 .theBlockHomeBannerSmall {
 	.theBlockShadowBlocksInner{
@@ -284,6 +285,7 @@ a:hover .coupleNames{
 }
 .backLink{
 	text-align: right;
+	padding: 10px 0;
 	a{
 		color: @theBlockRed;
 		font-family: 'arvobold';
@@ -318,13 +320,13 @@ a:hover .coupleNames{
 	}
 	p{
 		color: @theblockTextGray;
-		font-size: 18px;
+		font-size: 14px;
 		line-height: 140%;
 	}
 	.coupleProfileThumb,
 	.coupleProfileText{
 		display: table-cell;
-		padding: 20px;
+		padding: 25px 20px;
 		vertical-align: middle;
 	}
 	.coupleProfileThumb{
@@ -332,7 +334,8 @@ a:hover .coupleNames{
 	}
 	.coupleCaption{
 		color: @theblockMaroon;
-		font-size: 1.5em
+		font-size: 1.5em;
+		line-height: 120%;
 	}
 }
 @media (max-width:480px){
@@ -567,8 +570,9 @@ a:hover .coupleNames{
 	}
 
 	.theBlockHomeBannerLarge{
-		.bannerTextWrap{
-			padding-right: 30%;
+		.bannerText{
+			font-size: 18px;
+			padding-top:0;
 		}
 		img{
 			margin: 0 -30% 0 0;

@@ -10,6 +10,7 @@
 	?>
 
     <body>
+
 		<div class="ocmain-wrapper">
 			<div class="navbar navbar-fixed-top topNav">
 			<?php 
@@ -117,19 +118,27 @@
 						<div class="inner-wrapper clearfix">
 							<div class="prLogoWrap">
 								<span class="prLogoLarge"></span>
-								Latest trends brought to you by Reece.
+								<span class="prLogoCaption">Latest trends brought to you by Reece.</span>
 							</div>
-							<div class="inspWallFilter dropdown">
-								<a data-toggle="dropdown" href="#">Filter Articles <i class="icon-star-empty"></i></a>
-								<ul class="dropdown-menu">
-									<li><label><input type="checkbox" name="inspWallFilter" value="productNews" />Product News</label></li>
-									<li><label><input type="checkbox" name="inspWallFilter" value="waterSavings" />Water Saving</label></li>
-									<li><label><input type="checkbox" name="inspWallFilter" value="theBlock" />The Block</label></li>
-									<li><label><input type="checkbox" name="inspWallFilter" value="events" />Events</label></li>
-									<li><label><input type="checkbox" name="inspWallFilter" value="trends" />Trends</label></li>
-									<li><label><input type="checkbox" name="inspWallFilter" value="designers" />Designers</label></li>
-									<li><label><input type="checkbox" name="inspWallFilter" value="planning" />Planning</label></li>
-								</ul>
+							<div class="inspWallFilter">
+								<a href="#filterFormWrap" data-toggle="collapse">Filter Articles<i class="icon-star"></i><i class="icon-star-empty"></i></a>
+								<div id="filterFormWrap" class="collapse">
+								<form id="inspWallFilterForm">
+									<ul>
+										<li><label><input type="checkbox" name="inspWallFilter" value="productNews" />Product News</label></li>
+										<li><label><input type="checkbox" name="inspWallFilter" value="waterSavings" />Water Saving</label></li>
+										<li><label><input type="checkbox" name="inspWallFilter" value="theBlock" />The Block</label></li>
+										<li><label><input type="checkbox" name="inspWallFilter" value="events" />Events</label></li>
+										<li><label><input type="checkbox" name="inspWallFilter" value="trends" />Trends</label></li>
+										<li><label><input type="checkbox" name="inspWallFilter" value="designers" />Designers</label></li>
+										<li><label><input type="checkbox" name="inspWallFilter" value="planning" />Planning</label></li>
+									</ul>
+									<div class="inspWallFilterAction">
+										<button>Apply</button>
+										<button type="reset" id="inspWallClearFilter">Clear</button>
+									</div>
+									</form>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -139,13 +148,15 @@
 						<div class="inner-wrapper" id="wallContent">
 							<?php include ('wall.php') ?>
 						</div>
+						<div class="inner-wrapper" id="overlayContent" style="display:none">
+						</div>
 					</div>
-					<div id="inspWallLoad">
-						<a href="#" id="inspWallLoadLink">
-							Load More <i class="icon-chevron-down"></i>
-						</a>
-						<span id="inspWallLoaderIcon"></span>
-					</div>
+				</div>
+				<div id="inspWallLoad">
+					<a href="#" id="inspWallLoadLink">
+						Show More <i class="icon-chevron-down"></i>
+					</a>
+					<span id="inspWallLoaderIcon"></span>
 				</div>
 			</section>
 
@@ -153,7 +164,7 @@
 			   	include_once($serverBase."/includes/foot/foot-generic.php");
 			?>
 
-		</div>		
+		</div>
 
 	   	<?php
 	   		$mobileNavActiveMenu = array(
@@ -177,30 +188,77 @@
 		  	include_once($serverBase."/includes/foot/scripts.php");
 		?>
 		<script type="text/javascript">
-		function populateWall(data){
+		function populateWall(data){//populate data into wallContent
 			$('#wallContent').html(data);
 		}
+		function hideBlog(){// hide blog content
+			$('#overlayContent').html('').hide();
+			$('#wallContent').show();
+		}
+		function showOverlay(url){// show blog overlay
+			$('#overlayContent').load(url,function(){
+				$('#closeBlog').click(function(){// attach event for closing
+					hideBlog();
+				})
+			}).show();
+			$('#wallContent').hide();
+		}
 
+		function panelAction(){
+			$('.socialWallPanel').click(function(e){
+				if(this.getAttribute('data-url')){
+					e.preventDefault();
+					if (this.getAttribute('data-window-type') == 'overlay'){
+						showOverlay(this.getAttribute('data-url'));
+					}
+					else if (this.getAttribute('data-window-type') == 'blank'){
+						window.open(this.getAttribute('data-url'),'_blank')
+					}
+				}
+			});
+		}
 		$(function(){
-
 			/* Script for Filtering content */
 			var inspFilterArray = [];
 			$('input[name="inspWallFilter"]').change(function(){
 				$(this).parent('label').toggleClass('checked');
+				if($('input[name="inspWallFilter"]:checked').length){
+					$('.inspWallFilter').addClass('filtered')
+				}else{
+					$('.inspWallFilter').removeClass('filtered')
+				}
+			});
+			/* Filter Form Submit */
+			$('#inspWallFilterForm').submit(function(e){
+				e.preventDefault();
 				inspFilterArray = [];
 				$.each($('input[name="inspWallFilter"]:checked'),function(){
 					inspFilterArray.push(this.value)
 				});
 				data = {filter:JSON.stringify(inspFilterArray)};
 				$.get('wall.php',data,populateWall);
+				$('#filterFormWrap').collapse('hide');
+			})
+			/* Clear Filter Form */
+			$('#inspWallClearFilter').click(function(){
+				$('input[name="inspWallFilter"]:checked').click();
+				$('#filterFormWrap').collapse('hide');
 			});
+			/* Attach events to panels */
+			panelAction();
 			/* Load More */
 			$('#inspWallLoadLink').click(function(e){
 				e.preventDefault();
 				$('#inspWallLoadLink').hide();
 				$('#inspWallLoaderIcon').addClass('show');
+				
+				$.get('wall.php?filter=1',function(data){
+					$('#wallContent').append(data);
+					$('#inspWallLoadLink').show();
+					$('#inspWallLoaderIcon').removeClass('show');
+					panelAction();
+				});
 			});
-
 		});
 		</script>
     </body>

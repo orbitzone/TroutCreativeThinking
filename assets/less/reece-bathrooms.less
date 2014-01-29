@@ -1405,7 +1405,7 @@ RESPONSIVE OVERRIDES
 @media (max-width:979px){
     .landscapePanel{
         h3{
-            margin: 10px -10px ;
+            margin: 10px 0 ;
         }
     }
     .coloredPanel h3{
@@ -1597,8 +1597,9 @@ RESPONSIVE OVERRIDES
         }
     }     
 }
-.panelWhite {
+.socialWallPanel {
     background: @white;
+    margin-top: 5px;
     color: #5e5d5d;
     a{
         color: #e50066;
@@ -1618,6 +1619,9 @@ RESPONSIVE OVERRIDES
         strong{
             color: #333;
         }
+    }
+    &[data-url]{
+        cursor: pointer;
     }
     &.caretTop{
         .coloredPanelThumb:before{
@@ -1640,18 +1644,28 @@ RESPONSIVE OVERRIDES
         }
     }     
 }
+.socialTwoColGrid>.span6{
+    width: 49.75%;
+    margin-left: .5%;
+}
 .panelAlt [class*="span"]{
     float: right;
 }
-@media (min-width:768px) and (max-width:979px){
-    .panelWhite{
-        .coloredPanelThumb{
-            overflow: hidden;
-            img{
-                max-width: 140%;
-                width:140%;
-                margin: 0 -20%;
+
+@media (max-width:979px){
+    .socialWallPanel {
+        &.caretTop, &.caretRight, &.caretBottom, &.caretLeft{
+            .coloredPanelThumb:before{
+                left: @inspirationCaretWidth;
+                bottom: 0;
+                top: auto;
+                right: auto;
+                border-color: transparent !important;
+                border-bottom-color: @white !important;
             }
+        }
+        [class*="span"]{
+            float: none;width: auto;margin: 0;
         }
     }
 }
@@ -1663,6 +1677,10 @@ RESPONSIVE OVERRIDES
                 margin: -25% 0
             }
         }
+    }
+    .socialTwoColGrid>.span6{
+        width: 100%;
+        margin-left: 0;
     }
     .caretTop, .caretRight,.caretBottom, .caretLeft{
         .coloredPanelThumb:before{
@@ -1701,13 +1719,6 @@ RESPONSIVE OVERRIDES
             }        
         }
     }
-    .panelWhite {
-        &.caretTop, &.caretRight, &.caretBottom, &.caretLeft{
-            .coloredPanelThumb:before{
-                    border-bottom-color: @white !important;
-            }        
-        }
-    }
 
 }
 
@@ -1729,14 +1740,18 @@ RESPONSIVE OVERRIDES
     font-size: 16px;
     font-weight: 200;
     padding: 10px 0;
-}
-.prLogoLarge{
-    height: 222px;
-    width: 222px;
-    background: url('../images/hz-inspiration/header-logo.png');
-    display: block;
-    float: left;
-    margin: -100px 10px -100px 0;
+    .prLogoLarge{
+        height: 222px;
+        width: 222px;
+        background: url('../images/hz-inspiration/header-logo.png');
+        display: block;
+        float: left;
+        margin: -100px 10px -100px 0;
+    }
+    .prLogoCaption{
+        float: left;
+    }
+
 }
 .inspWallFilter{
     float: right;
@@ -1744,10 +1759,12 @@ RESPONSIVE OVERRIDES
     font-family: sofia_pro_lightregular;
     font-size: 20px;
     text-transform: uppercase;
+    position: relative;
     a{
         color: white;
-        padding: 10px 30px;
+        padding: 11px 50px 11px 20px;
         display: block;
+        position: relative;
         &:hover{
             text-decoration: none;
         }
@@ -1756,14 +1773,33 @@ RESPONSIVE OVERRIDES
         text-decoration: none;
         outline: none;
     }
-    i{ margin-left: 10px;}
-    .dropdown-menu{
+    i{
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        &.icon-star{
+            display: none;
+            color: #e50066;
+        }
+    }
+    &.filtered i.icon-star{
+        display: block;
+    }
+    #filterFormWrap{
         background: #3d3c3c;
-        .border-radius(0);
+        position: absolute;
+        left: 0;
         width: 100%;
-        margin-top: 0;
-        padding: 0;
-        border:none;
+        top:100%;
+        form{
+            margin: 0
+        }
+        ul{
+            margin: 0
+        }
+        li{
+            list-style: none;
+        }
         label{
             padding: 10px 5px;
             display: block;
@@ -1775,7 +1811,7 @@ RESPONSIVE OVERRIDES
                 height: 20px;
                 width: 20px;
                 line-height: 20px;
-                margin-right: 5px;
+                margin-right: 15px;
                 text-align: center;
                 background: #d3d1d1;
                 font-family: Fontawesome;
@@ -1791,6 +1827,41 @@ RESPONSIVE OVERRIDES
         input[type="checkbox"]{
             visibility: hidden;
         }
+        .inspWallFilterAction{
+            padding: 5px 15px 15px;
+            button{
+                background: none;
+                border:none;
+                text-transform: uppercase;
+                display: inline-block;
+                padding: 8px 15px;
+                color: white;
+                &:first-child{
+                    background: #e50066;
+                }
+            }
+        }
+    }
+}
+@media (max-width:979px){
+    .inspWallHeader{
+        margin-top: 0
+    }
+    .prLogoWrap{
+        float: none;
+        .prLogoLarge{
+            float: none;
+            margin: 0 auto;
+        }
+        .prLogoCaption{
+            display: block;
+            float: none;
+            padding: 10px 0;
+            text-align: center;
+        }
+    }
+    .inspWallFilter{
+        float: none;
     }
 }
 .inspWallwrapper{
@@ -1804,6 +1875,9 @@ RESPONSIVE OVERRIDES
 .inspSocialBlockSource{
     .inspSocialBlockSourceName{
         color:#333;
+        &:hover{
+            color: #555;
+        }
     }
 }
 /* InspirationLoader */
@@ -1855,6 +1929,11 @@ RESPONSIVE OVERRIDES
 .landscapePanel .socialIcon{
     margin-top: 70px
 }
+@media (max-width:979px){
+    .landscapePanel .socialIcon{
+        margin-top: 30px;
+    }
+}
 .prIcon{
     background: @prIconBG
 }
@@ -1883,7 +1962,65 @@ RESPONSIVE OVERRIDES
     border: dotted 2px #fff;
     .border-radius(50%);
 }
-
+/* The Wall - Blog overlay */
+.inspBlogWrap{
+    padding: 85px 120px;
+    background: white;
+    position: relative;
+    h2{
+        font-family: sofia_pro_semi_boldregular;
+    }
+    p{
+        padding: 20px 0 10px;
+    }
+}
+@media(max-width:979px){
+    .inspBlogWrap{
+        padding: 35px 30px;
+    }
+}
+.inspBlogThumbs{
+    img{
+        margin: 10px 0
+    }
+}
+.inspBlogCommentWrap{
+    padding-top: 20px;
+}
+.closeBlog{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    background: #e50066;
+    font-size: 25px;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    &:hover{
+        text-decoration: none;
+        color: white;
+        background: lighten(#e50066, 10%)
+    }
+}
+p.inspBlogDate{
+    padding: 5px 0 30px;
+    color: #e50066;
+}
+.socialShareLinks{
+    margin: 5px 0;
+    .clearfix;
+    li{
+        float: left;
+        display: block;
+        list-style: none;
+        padding-right: 10px;
+    }
+}
 
 /* ===========================================================================================================================================
     Inspiration Gallery

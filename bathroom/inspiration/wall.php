@@ -1,4 +1,4 @@
-<div class="socialWallPanel caretRight landscapePanel" data-window-type="overlay" data-url="blog.php">
+<div class="socialWallPanel caretRight landscapePanel">
   <div class="row-fluid">
     <div class="span8">
       <div class="coloredPanelThumb">
@@ -8,7 +8,7 @@
     <div class="span4">
       <div class="inspSocialBlockContent">
         <span class="inspSocialBlockSource pull-left">Via <span class="inspSocialBlockSourceName">powder room</span></span>
-        <span class="inspSocialBlockSource pull-right">1 h</span>
+        <span class="inspSocialBlockSource pull-right">1 h ago</span>
         <div class="socialIcon prIcon">
           <svg>
             <image xlink:href="/assets/images/hz-inspiration/pr.svg" src="/assets/images/hz-inspiration/pr.png" width="50" height="50"/>
@@ -22,7 +22,7 @@ Australia. The Australian
 architectural and design community
 turned out for what was a truly
 spectacular series of events.</p>
-        <a href="#">read more</a>
+        <a href="#kartell-by-laufen-australia-shores" class="overlayLink">read more</a>
       </div>
     </div>
   </div>
@@ -50,7 +50,7 @@ spectacular series of events.</p>
 <div class="socialWallPanel">
   <div class="inspSocialBlockContent">
     <span class="inspSocialBlockSource pull-left">Via <a href="https://www.facebook.com/photo.php?fbid=651777858197402&set=a.163202293721630.28062.152665911441935" target="_blank" class="inspSocialBlockSourceName">facebook</a></span>
-    <span class="inspSocialBlockSource pull-right">1 h</span>
+    <span class="inspSocialBlockSource pull-right">1 h ago</span>
     <div class="socialIcon fbIcon"><i class="icon-facebook"></i></div>
     <p class="inspSocialBlockDesc text-center">
       <strong>Reece</strong>@ReeceBathrooms<br/>
@@ -61,7 +61,7 @@ spectacular series of events.</p>
 <div class="socialWallPanel">
   <div class="inspSocialBlockContent">
     <span class="inspSocialBlockSource pull-left">Via <a href="https://twitter.com/ReeceBathrooms/status/428100192575827968" target="_blank" class="inspSocialBlockSourceName">twitter</a></span>
-    <span class="inspSocialBlockSource pull-right">1 h</span>
+    <span class="inspSocialBlockSource pull-right">1 h ago</span>
     <div class="socialIcon twitterIcon"><i class="icon-twitter"></i></div>
     <p class="inspSocialBlockDesc text-center">
       <strong>Reece</strong>@ReeceBathrooms<br/>
@@ -79,7 +79,7 @@ spectacular series of events.</p>
     <div class="span4">
       <div class="inspSocialBlockContent">
         <span class="inspSocialBlockSource pull-left">Via <a href="http://instagram.com/p/iUs_2kj3JW/" target="_blank" class="inspSocialBlockSourceName">instagram</a></span>
-        <span class="inspSocialBlockSource pull-right">1 h</span>
+        <span class="inspSocialBlockSource pull-right">1 h ago</span>
         <div class="socialIcon instagramIcon"><i class="icon-instagram"></i></div>
         <p class="inspSocialBlockDesc text-center"><strong>Reece</strong>@ReeceBathrooms <br/>#bathrooms #blue #reece #wishlistlook2014</p>
       </div>
@@ -92,7 +92,7 @@ spectacular series of events.</p>
     <div class="socialWallPanel">
       <div class="inspSocialBlockContent">
         <span class="inspSocialBlockSource pull-left">Via <a href="https://www.facebook.com/photo.php?fbid=651777858197402&set=a.163202293721630.28062.152665911441935" target="_blank" class="inspSocialBlockSourceName">facebook</a></span>
-        <span class="inspSocialBlockSource pull-right">1 h</span>
+        <span class="inspSocialBlockSource pull-right">1 h ago</span>
         <div class="socialIcon fbIcon"><i class="icon-facebook"></i></div>
         <p class="inspSocialBlockDesc text-center">
           <strong>Reece</strong>@ReeceBathrooms<br/>
@@ -103,7 +103,7 @@ spectacular series of events.</p>
     <div class="socialWallPanel">
       <div class="inspSocialBlockContent">
         <span class="inspSocialBlockSource pull-left">Via <a href="https://twitter.com/ReeceBathrooms/status/428100192575827968" target="_blank" class="inspSocialBlockSourceName">twitter</a></span>
-        <span class="inspSocialBlockSource pull-right">1 h</span>
+        <span class="inspSocialBlockSource pull-right">1 h ago</span>
         <div class="socialIcon twitterIcon"><i class="icon-twitter"></i></div>
         <p class="inspSocialBlockDesc text-center">
           <strong>Reece</strong>@ReeceBathrooms<br/>
@@ -127,7 +127,7 @@ spectacular series of events.</p>
   </div>
 </div>
 <?php } ?>
-<div class="socialWallPanel caretLeft panelAlt landscapePanel" data-window-type="overlay" data-url="blog.php">
+<div class="socialWallPanel caretLeft panelAlt landscapePanel">
   <div class="row-fluid">
     <div class="span8">
       <div class="coloredPanelThumb">
@@ -145,7 +145,7 @@ spectacular series of events.</p>
         </div>
         <h3>Lorem ipsum dolor</h3>
         <p class="inspSocialBlockDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque sed tortor vehicula feugiat id eget elit. Proin semper tempor nunc sed vehicula. Nullam ut eros neque. </p>
-        <a href="#">read more</a>
+        <a href="#lorem-ipsum-dolor" class="overlayLink">read more</a>
       </div>
     </div>
   </div>
@@ -166,7 +166,7 @@ spectacular series of events.</p>
     </div>
   </div>
 </div>
-<div class="socialWallPanel caretLeft panelAlt landscapePanel" data-window-type="overlay" data-url="blog.php">
+<div class="socialWallPanel caretLeft panelAlt landscapePanel">
   <div class="row-fluid">
     <div class="span8">
       <div class="coloredPanelThumb">
@@ -184,6 +184,7 @@ spectacular series of events.</p>
         </div>
         <h3>Lorem ipsum dolor sit</h3>
         <p class="inspSocialBlockDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque sed tortor vehicula feugiat id eget elit. </p>
+        <a href="#lorem-ipsum-dolor" class="overlayLink">read more</a>
       </div>
     </div>
   </div>

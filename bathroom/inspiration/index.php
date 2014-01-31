@@ -1,10 +1,11 @@
 
 	<?php include_once($_SERVER['DOCUMENT_ROOT']."/includes/variables/variables.php"); ?>
-
+<!-- before head -->
 	<?php 
 	  	$cssScriptPaths = array(
 	  		"/assets/css/reece-products.css",
-	  		"/assets/css/reece-bathrooms.css"		
+	  		"/assets/css/reece-bathrooms.css",
+	  		"/assets/css/smoothness/jquery-ui-1.10.4.custom.min.css"
 	  	); 
 	  	include_once($serverBase."/includes/head/head-generic.php");
 	?>
@@ -112,30 +113,52 @@
 					</section>
 				</div>
 			</div>
+
 			<section class="inspWall">
+
 				<header class="inspWallHeader">
+				<span  id="powder-room" ></span>
 					<div class=" content-container">
 						<div class="inner-wrapper clearfix">
 							<div class="prLogoWrap">
-								<span class="prLogoLarge"></span>
+								<h2 class="prLogoLarge"><a href="#powder-room">the Powder room</a></h2>
 								<span class="prLogoCaption">Latest trends brought to you by Reece.</span>
 							</div>
+
 							<div class="inspWallFilter">
+
 								<a href="#filterFormWrap" data-toggle="collapse">Filter Articles<i class="icon-star"></i><i class="icon-star-empty"></i></a>
 								<div id="filterFormWrap" class="collapse">
+
 								<form id="inspWallFilterForm">
 									<ul>
-										<li><label><input type="checkbox" name="inspWallFilter" value="productNews" />Product News</label></li>
-										<li><label><input type="checkbox" name="inspWallFilter" value="waterSavings" />Water Saving</label></li>
-										<li><label><input type="checkbox" name="inspWallFilter" value="theBlock" />The Block</label></li>
-										<li><label><input type="checkbox" name="inspWallFilter" value="events" />Events</label></li>
-										<li><label><input type="checkbox" name="inspWallFilter" value="trends" />Trends</label></li>
-										<li><label><input type="checkbox" name="inspWallFilter" value="designers" />Designers</label></li>
-										<li><label><input type="checkbox" name="inspWallFilter" value="planning" />Planning</label></li>
+										<li><label class="filterCheckboxLabel"><input type="checkbox" class="inspWallFilterInput" name="inspWallFilter" value="productNews" />Product News</label></li>
+										<li><label class="filterCheckboxLabel"><input type="checkbox" class="inspWallFilterInput" name="inspWallFilter" value="waterSavings" />Water Saving</label></li>
+										<li><label class="filterCheckboxLabel"><input type="checkbox" class="inspWallFilterInput" name="inspWallFilter" value="theBlock" />The Block</label></li>
+										<li><label class="filterCheckboxLabel"><input type="checkbox" class="inspWallFilterInput" name="inspWallFilter" value="events" />Events</label></li>
+										<li><label class="filterCheckboxLabel"><input type="checkbox" class="inspWallFilterInput" name="inspWallFilter" value="trends" />Trends</label></li>
+										<li><label class="filterCheckboxLabel"><input type="checkbox" class="inspWallFilterInput" name="inspWallFilter" value="designers" />Designers</label></li>
+										<li><label class="filterCheckboxLabel"><input type="checkbox" class="inspWallFilterInput" name="inspWallFilter" value="planning" />Planning</label></li>
+										<li class="filterDateLabels">
+											<label class="filterDateLabel">
+												<span>From</span>
+												<span class="inspWallFilterDateWrap">
+													<input type="date" class="inspWallFilterInput inspWallFilterDate" placeholder="mm/dd/yyyy" id="inspWallFilterFrom">
+													<i class="icon-calendar"></i>
+												</span>
+											</label>
+											<label class="filterDateLabel">
+												<span>To</span>
+												<span class="inspWallFilterDateWrap">
+													<input type="date" class="inspWallFilterInput inspWallFilterDate" placeholder="mm/dd/yyyy" id="inspWallFilterTo">
+													<i class="icon-calendar"></i>
+												</span>
+											</label>
+										</li>
 									</ul>
 									<div class="inspWallFilterAction">
-										<button>Apply</button>
 										<button type="reset" id="inspWallClearFilter">Clear</button>
+										<button class="inspWallFilterActionPrimary">Apply</button>
 									</div>
 									</form>
 								</div>
@@ -148,7 +171,7 @@
 						<div class="inner-wrapper" id="wallContent">
 							<?php include ('wall.php') ?>
 						</div>
-						<div class="inner-wrapper" id="overlayContent" style="display:none">
+						<div class="inner-wrapper inspBlogWrap" id="overlayContent" style="display:none">
 						</div>
 					</div>
 				</div>
@@ -184,45 +207,75 @@
 		  		"/assets/js/bootstrap-dropdown.js",
 		  		"/assets/js/reece-ocnav.js",
 		  		"/assets/js/reece-carousel.js",
+		  		"/assets/js/jquery-ui-1.10.4.custom.min.js"
 		  	); 
 		  	include_once($serverBase."/includes/foot/scripts.php");
 		?>
 		<script type="text/javascript">
+	  function resizeIframe(obj) {
+	    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+	  }
 		function populateWall(data){//populate data into wallContent
 			$('#wallContent').html(data);
 		}
 		function hideBlog(){// hide blog content
 			$('#overlayContent').html('').hide();
 			$('#wallContent').show();
+			window.location.hash = 'powder-room';
 		}
 		function showOverlay(url){// show blog overlay
-			$('#overlayContent').load(url,function(){
+			$('#overlayContent').html('<a class="closeBlog" id="closeBlog"><i class="icon-remove"></i></a><iframe id="inspBlogArticle" src="'+url+'.php" width="100%"  scrolling="no" frameborder="0" onload="javascript:resizeIframe(this);"></iframe>').show();
+			$('#inspWallLoad').hide();
 				$('#closeBlog').click(function(){// attach event for closing
 					hideBlog();
 				})
-			}).show();
 			$('#wallContent').hide();
 		}
-
-		function panelAction(){
-			$('.socialWallPanel').click(function(e){
-				if(this.getAttribute('data-url')){
-					e.preventDefault();
-					if (this.getAttribute('data-window-type') == 'overlay'){
-						showOverlay(this.getAttribute('data-url'));
-					}
-					else if (this.getAttribute('data-window-type') == 'blank'){
-						window.open(this.getAttribute('data-url'),'_blank')
-					}
-				}
+		function hashChanged(hashVal){
+			hashArray = [];
+			$.each($('.overlayLink'),function(){
+				hashArray.push(this.hash.substr(1));
 			});
+			if(hashArray.indexOf(hashVal) != -1){
+				showOverlay(hashVal);
+		    $('html, body').animate({
+		        scrollTop: $("#powder-room").offset().top
+		    }, 500);
+			}
 		}
 		$(function(){
+			/* Check hashtag change */
+			if(window.location.hash != ''){
+				hashChanged(location.hash.slice(1));
+			}
+			$(window).on('hashchange',function(){ 
+			    hashChanged(location.hash.slice(1));
+			});
+			/* Initialize date filter */
+			/* JQuery Selective DatePicker for IE, Chrome, Safari, iPad,iPhone */
+        var device = {};
+        device.Html5 = false;
+        device.UA = navigator.userAgent;
+        device.Types = ["iPhone", "iPad", "Chrome"];
+        for (var d = 0; d < device.Types.length; d++) {
+            var t = device.Types[d];
+            device[t] = !!device.UA.match(new RegExp(t, "i"));
+            device.Html5 = device.Html5 || device[t];
+        }
+        if (device.Html5 == false) {
+            $(".datepicker").datepicker();
+        }
+        else {
+            $("input[type='text'].datepicker").datepicker();
+        }
 			/* Script for Filtering content */
 			var inspFilterArray = [];
-			$('input[name="inspWallFilter"]').change(function(){
-				$(this).parent('label').toggleClass('checked');
-				if($('input[name="inspWallFilter"]:checked').length){
+			$('input.inspWallFilterInput').change(function(){
+				if ($(this).is(':checkbox')){
+					$(this).parent('label').toggleClass('checked');
+				}
+				
+				if($('input[name="inspWallFilter"]:checked').length + $('input.inspWallFilterDate[value!=""]').length){
 					$('.inspWallFilter').addClass('filtered')
 				}else{
 					$('.inspWallFilter').removeClass('filtered')
@@ -242,10 +295,12 @@
 			/* Clear Filter Form */
 			$('#inspWallClearFilter').click(function(){
 				$('input[name="inspWallFilter"]:checked').click();
+				$('input.inspWallFilterDate').val('');
+				$('.inspWallFilter').removeClass('filtered')
 				$('#filterFormWrap').collapse('hide');
 			});
-			/* Attach events to panels */
-			panelAction();
+			/* Attach event for overlay*/
+
 			/* Load More */
 			$('#inspWallLoadLink').click(function(e){
 				e.preventDefault();
@@ -256,7 +311,6 @@
 					$('#wallContent').append(data);
 					$('#inspWallLoadLink').show();
 					$('#inspWallLoaderIcon').removeClass('show');
-					panelAction();
 				});
 			});
 		});

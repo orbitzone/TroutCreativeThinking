@@ -1571,6 +1571,11 @@ RESPONSIVE OVERRIDES
   margin-top: 120px;
   color: white;
 }
+.inspWallHeader #powder-room {
+  position: absolute;
+  display: block;
+  top: -350px;
+}
 .prLogoWrap {
   float: left;
   font-size: 16px;
@@ -1584,6 +1589,13 @@ RESPONSIVE OVERRIDES
   display: block;
   float: left;
   margin: -100px 10px -100px 0;
+}
+.prLogoWrap .prLogoLarge a {
+  display: block;
+  height: 222px;
+  width: 222px;
+  overflow: hidden;
+  text-indent: -100em;
 }
 .prLogoWrap .prLogoCaption {
   float: left;
@@ -1609,12 +1621,14 @@ RESPONSIVE OVERRIDES
   text-decoration: none;
   outline: none;
 }
-.inspWallFilter i {
+.inspWallFilter i.icon-star-empty,
+.inspWallFilter i.icon-star {
   position: absolute;
   right: 20px;
   top: 10px;
 }
-.inspWallFilter i.icon-star {
+.inspWallFilter i.icon-star-empty.icon-star,
+.inspWallFilter i.icon-star.icon-star {
   display: none;
   color: #e50066;
 }
@@ -1637,53 +1651,115 @@ RESPONSIVE OVERRIDES
 .inspWallFilter #filterFormWrap li {
   list-style: none;
 }
+.inspWallFilter #filterFormWrap li.filterDateLabels {
+  background: #5c5c5c;
+  padding: 5px 0 10px;
+  *zoom: 1;
+}
+.inspWallFilter #filterFormWrap li.filterDateLabels:before,
+.inspWallFilter #filterFormWrap li.filterDateLabels:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.inspWallFilter #filterFormWrap li.filterDateLabels:after {
+  clear: both;
+}
 .inspWallFilter #filterFormWrap label {
-  padding: 10px 5px;
+  padding: 10px 18px 10px 5px;
   display: block;
   margin: 0;
 }
-.inspWallFilter #filterFormWrap label:before {
+.inspWallFilter #filterFormWrap label.filterCheckboxLabel:before {
   content: '';
   display: block;
   float: right;
   height: 20px;
   width: 20px;
   line-height: 20px;
-  margin-right: 15px;
   text-align: center;
   background: #d3d1d1;
   font-family: Fontawesome;
 }
-.inspWallFilter #filterFormWrap label.checked {
+.inspWallFilter #filterFormWrap label.filterCheckboxLabel:hover {
   background: black;
 }
 .inspWallFilter #filterFormWrap label.checked:before {
   content: "\f00c";
   color: #e50066;
 }
+.inspWallFilter #filterFormWrap label.filterDateLabel {
+  padding: 5px 18px 5px 15px;
+  *zoom: 1;
+}
+.inspWallFilter #filterFormWrap label.filterDateLabel:before,
+.inspWallFilter #filterFormWrap label.filterDateLabel:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.inspWallFilter #filterFormWrap label.filterDateLabel:after {
+  clear: both;
+}
+.inspWallFilter #filterFormWrap label.filterDateLabel span {
+  display: block;
+  clear: both;
+}
 .inspWallFilter #filterFormWrap input[type="checkbox"] {
   visibility: hidden;
 }
+.inspWallFilter #filterFormWrap input[type="date"] {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  width: auto;
+  margin: 0;
+}
+.inspWallFilter #filterFormWrap input[type="date"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  display: none;
+}
 .inspWallFilter #filterFormWrap .inspWallFilterAction {
-  padding: 5px 15px 15px;
+  padding: 15px;
+  *zoom: 1;
+}
+.inspWallFilter #filterFormWrap .inspWallFilterAction:before,
+.inspWallFilter #filterFormWrap .inspWallFilterAction:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.inspWallFilter #filterFormWrap .inspWallFilterAction:after {
+  clear: both;
 }
 .inspWallFilter #filterFormWrap .inspWallFilterAction button {
   background: none;
   border: none;
   text-transform: uppercase;
   display: inline-block;
-  padding: 8px 15px;
+  padding: 3px 10px;
+  font-size: 11px;
+  letter-spacing: 1px;
   color: white;
+  float: left;
 }
-.inspWallFilter #filterFormWrap .inspWallFilterAction button:first-child {
+.inspWallFilter #filterFormWrap .inspWallFilterAction button.inspWallFilterActionPrimary {
   background: #e50066;
+  float: right;
+}
+.ui-datepicker {
+  z-index: 1001 !important;
 }
 @media (max-width: 979px) {
   .inspWallHeader {
     margin-top: 0;
   }
+  .inspWallHeader #powder-room {
+    top: 0;
+  }
   .prLogoWrap {
     float: none;
+    padding-top: 20px;
   }
   .prLogoWrap .prLogoLarge {
     float: none;
@@ -1697,6 +1773,15 @@ RESPONSIVE OVERRIDES
   }
   .inspWallFilter {
     float: none;
+  }
+}
+@media (max-width: 979px) and (min-width: 500px) {
+  .inspWallFilter #filterFormWrap .filterDateLabels {
+    display: table;
+  }
+  .inspWallFilter #filterFormWrap .filterDateLabels .filterDateLabel {
+    display: table-cell;
+    width: 50%;
   }
 }
 .inspWallwrapper {
@@ -1817,6 +1902,9 @@ RESPONSIVE OVERRIDES
 }
 .inspBlogCommentWrap {
   padding-top: 20px;
+}
+.inspBlogWrap {
+  position: relative;
 }
 .closeBlog {
   position: absolute;

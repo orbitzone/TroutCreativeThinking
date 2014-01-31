@@ -172,6 +172,25 @@
 							<?php include ('wall.php') ?>
 						</div>
 						<div class="inner-wrapper inspBlogWrap" id="overlayContent" style="display:none">
+							<a class="closeBlog" id="closeBlog"><i class="icon-remove"></i></a>
+							<iframe id="inspBlogArticle" width="100%"  scrolling="no" frameborder="0"></iframe>
+							<div class="inspBlogCommentWrap" id="disqus_thread"></div>
+							<script type="text/javascript">
+								/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+								var disqus_shortname = 'reecetest'; // Required - Replace example with your forum shortname
+								//var disqus_identifier = 'a unique identifier for each page where Disqus is present';
+								//var disqus_title = 'a unique title for each page where Disqus is present';
+								//var disqus_url = 'a unique URL for each page where Disqus is present';
+
+								/* * * DON'T EDIT BELOW THIS LINE * * */
+								(function() {
+									var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+									dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+									(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+								})();
+							</script>
+							<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+							<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 						</div>
 					</div>
 				</div>
@@ -212,19 +231,38 @@
 		  	include_once($serverBase."/includes/foot/scripts.php");
 		?>
 		<script type="text/javascript">
-	  function resizeIframe(obj) {
-	    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+	  function resizeIframe() {
+	    document.getElementById('inspBlogArticle').style.height = document.getElementById('inspBlogArticle').contentWindow.document.body.scrollHeight + 'px';
+
 	  }
 		function populateWall(data){//populate data into wallContent
 			$('#wallContent').html(data);
 		}
 		function hideBlog(){// hide blog content
-			$('#overlayContent').html('').hide();
+			$('#overlayContent').hide();
 			$('#wallContent').show();
 			window.location.hash = 'powder-room';
 		}
 		function showOverlay(url){// show blog overlay
-			$('#overlayContent').html('<a class="closeBlog" id="closeBlog"><i class="icon-remove"></i></a><iframe id="inspBlogArticle" src="'+url+'.php" width="100%"  scrolling="no" frameborder="0" onload="javascript:resizeIframe(this);"></iframe>').show();
+			$('#overlayContent').show();
+			$('#inspBlogArticle').attr('src',url+'.php');
+			$('#inspBlogArticle').load(function(){
+				console.log('calling load');
+				resizeIframe();
+			/* Change Disqus URL*/ 
+			if(typeof DISQUS != 'undefined'){
+			DISQUS.reset({
+				reload: true,
+				config: function () {  
+					this.page.identifier = '#!'+url;  
+					this.page.url = "http://reece-responsive.trout.com.au/bathroom/inspiration/#"+url;
+				}
+			});
+			console.log('reset Disqus');
+		}
+
+			});
+
 			$('#inspWallLoad').hide();
 				$('#closeBlog').click(function(){// attach event for closing
 					hideBlog();

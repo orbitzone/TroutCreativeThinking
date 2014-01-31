@@ -143,9 +143,9 @@ spectacular series of events.</p>
             <image xlink:href="/assets/images/hz-inspiration/pr.svg" src="/assets/images/hz-inspiration/pr.png" width="50" height="50"/>
           </svg>
         </div>
-        <h3>Lorem ipsum dolor</h3>
+        <h3>Dummy Blog</h3>
         <p class="inspSocialBlockDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque sed tortor vehicula feugiat id eget elit. Proin semper tempor nunc sed vehicula. Nullam ut eros neque. </p>
-        <a href="#lorem-ipsum-dolor" class="overlayLink">read more</a>
+        <a href="#dummy-blog" class="overlayLink">read more</a>
       </div>
     </div>
   </div>

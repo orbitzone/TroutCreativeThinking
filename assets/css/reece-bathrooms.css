@@ -1108,6 +1108,7 @@ RESPONSIVE OVERRIDES
   position: relative;
   overflow: hidden;
   text-align: center;
+  margin-top: -10px;
 }
 .inspirationBannerWrap .inspirationBannerImageWrap {
   overflow: hidden;
@@ -1126,7 +1127,7 @@ RESPONSIVE OVERRIDES
   font-size: 20px;
 }
 .inspirationBannerTextWrap .inspirationBannerText {
-  margin-top: 13%;
+  margin-top: 6%;
 }
 .inspirationBannerTextWrap a,
 .inspirationBannerTextWrap a:hover {
@@ -1163,11 +1164,6 @@ RESPONSIVE OVERRIDES
 .inspirationBannerTextWrap .inspirationBannerViewLink:hover {
   color: #4d4d4d;
   background: #e6e6e6;
-}
-@media (max-width: 1200px) {
-  .inspirationBannerTextWrap .inspirationBannerText {
-    margin-top: 8%;
-  }
 }
 @media (max-width: 979px) {
   .inspirationBannerTextWrap {
@@ -1224,6 +1220,34 @@ RESPONSIVE OVERRIDES
     margin: 0 -50%;
   }
 }
+@media (min-width: 1200px) {
+  .inspirationBannerTextWrap .inspirationBannerText {
+    margin-top: 11%;
+  }
+}
+@media (min-width: 1400px) {
+  .inspirationBannerWrap {
+    max-height: 600px;
+  }
+  .inspirationBannerWrap .inspirationBannerImageWrap img {
+    width: 100%;
+  }
+}
+@media (min-width: 1500px) {
+  .inspirationBannerWrap .inspirationBannerImageWrap img {
+    margin: -3% 0;
+  }
+}
+@media (min-width: 2000px) {
+  .inspirationBannerWrap .inspirationBannerImageWrap img {
+    margin: -5% 0;
+  }
+}
+@media (min-width: 2500px) {
+  .inspirationBannerWrap .inspirationBannerImageWrap img {
+    margin: -8% 0;
+  }
+}
 /* Colored Panels */
 .coloredPanelLink {
   display: inline-block;
@@ -1275,8 +1299,20 @@ RESPONSIVE OVERRIDES
   padding: 20px;
   position: relative;
 }
-.coloredPanelThumb img {
-  width: 100%;
+.coloredPanelThumb {
+  text-align: center;
+}
+.instagramImage {
+  overflow: hidden;
+}
+.instagramImage img {
+  margin: -20% 0;
+}
+.pinterestImage {
+  overflow: hidden;
+}
+.pinterestImage img {
+  margin: -5% 0;
 }
 .landscapePanel h3 {
   margin-top: 20px;
@@ -1583,19 +1619,14 @@ RESPONSIVE OVERRIDES
   padding: 10px 0;
 }
 .prLogoWrap .prLogoLarge {
-  height: 222px;
   width: 222px;
-  background: url('../images/hz-inspiration/header-logo.png');
+  height: 222px;
   display: block;
   float: left;
   margin: -100px 10px -100px 0;
 }
 .prLogoWrap .prLogoLarge a {
   display: block;
-  height: 222px;
-  width: 222px;
-  overflow: hidden;
-  text-indent: -100em;
 }
 .prLogoWrap .prLogoCaption {
   float: left;
@@ -1787,7 +1818,7 @@ RESPONSIVE OVERRIDES
 .inspWallwrapper {
   min-height: 500px;
   padding: 40px 0;
-  background: #e2e7db;
+  background: url('../images/hz-inspiration/the-wall-bg.jpg') repeat;
 }
 .inspSocialBlockContent {
   padding: 40px;

@@ -1192,6 +1192,7 @@ RESPONSIVE OVERRIDES
     position: relative;
     overflow: hidden;
     text-align: center;
+    margin-top: -10px;
     .inspirationBannerImageWrap{
         overflow: hidden;
         img{
@@ -1209,7 +1210,7 @@ RESPONSIVE OVERRIDES
     font-family: sofia_pro_lightregular;
     font-size: 20px;
     .inspirationBannerText{
-        margin-top: 13%;
+        margin-top: 6%;
     }
     a,a:hover{
         color:@white;
@@ -1248,13 +1249,7 @@ RESPONSIVE OVERRIDES
         }
     }
 }
-@media (max-width:1200px){
-    .inspirationBannerTextWrap{
-         .inspirationBannerText{
-            margin-top: 8%
-        }        
-    }
-}
+
 @media (max-width:979px){
     .inspirationBannerTextWrap{
         font-size: 18px;
@@ -1326,6 +1321,50 @@ RESPONSIVE OVERRIDES
         }
     }    
 }
+@media (min-width:1200px){
+    .inspirationBannerTextWrap{
+         .inspirationBannerText{
+            margin-top: 11%
+        }        
+    }
+}
+@media (min-width:1400px){
+    .inspirationBannerWrap{
+        max-height: 600px;
+        .inspirationBannerImageWrap{
+            img{
+                width:100%;
+            }
+        }
+    }
+}
+@media (min-width:1500px){
+    .inspirationBannerWrap{
+        .inspirationBannerImageWrap{
+            img{
+                margin: -3% 0;
+            }
+        }
+    }
+}
+@media (min-width:2000px){
+    .inspirationBannerWrap{
+        .inspirationBannerImageWrap{
+            img{
+                margin: -5% 0;
+            }
+        }
+    }
+}
+@media (min-width:2500px){
+    .inspirationBannerWrap{
+        .inspirationBannerImageWrap{
+            img{
+                margin: -8% 0;
+            }
+        }
+    }
+}
 /* Colored Panels */
 .coloredPanelLink{
     display: inline-block;
@@ -1382,11 +1421,20 @@ RESPONSIVE OVERRIDES
     position: relative;
 }
 .coloredPanelThumb{
+    text-align: center;
+}
+.instagramImage{
+    overflow: hidden;
     img{
-        width: 100%
+        margin:-20% 0;
     }
 }
-
+.pinterestImage{
+    overflow: hidden;
+    img{
+        margin:-5% 0;
+    }
+}
 .landscapePanel{
         h3{
             margin-top: 20px
@@ -1746,18 +1794,13 @@ RESPONSIVE OVERRIDES
     font-weight: 200;
     padding: 10px 0;
     .prLogoLarge{
-        height: 222px;
         width: 222px;
-        background: url('../images/hz-inspiration/header-logo.png');
+        height: 222px;
         display: block;
         float: left;
         margin: -100px 10px -100px 0;
         a{
             display: block;
-            height: 222px;
-            width: 222px;
-            overflow: hidden;
-            text-indent: -100em;
         }
     }
     .prLogoCaption{
@@ -1927,7 +1970,7 @@ RESPONSIVE OVERRIDES
 .inspWallwrapper{
     min-height: 500px;
     padding: 40px 0;
-    background: #e2e7db;
+    background: url('../images/hz-inspiration/the-wall-bg.jpg') repeat;
 }
 .inspSocialBlockContent{
     padding:40px;

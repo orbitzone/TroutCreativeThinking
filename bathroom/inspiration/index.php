@@ -121,7 +121,13 @@
 					<div class=" content-container">
 						<div class="inner-wrapper clearfix">
 							<div class="prLogoWrap">
-								<h2 class="prLogoLarge"><a href="#powder-room">the Powder room</a></h2>
+								<h2 class="prLogoLarge">
+									<a href="#powder-room">
+										<svg>
+											<image xlink:href="/assets/images/hz-inspiration/powder-room-logo.svg" src="/assets/images/hz-inspiration/header-logo.png" width="220" height="220"/>
+										</svg>
+									</a>
+								</h2>
 								<span class="prLogoCaption">Latest trends brought to you by Reece.</span>
 							</div>
 
@@ -139,7 +145,7 @@
 										<li><label class="filterCheckboxLabel"><input type="checkbox" class="inspWallFilterInput" name="inspWallFilter" value="trends" />Trends</label></li>
 										<li><label class="filterCheckboxLabel"><input type="checkbox" class="inspWallFilterInput" name="inspWallFilter" value="designers" />Designers</label></li>
 										<li><label class="filterCheckboxLabel"><input type="checkbox" class="inspWallFilterInput" name="inspWallFilter" value="planning" />Planning</label></li>
-										<li class="filterDateLabels">
+										<!--<li class="filterDateLabels">
 											<label class="filterDateLabel">
 												<span>From</span>
 												<span class="inspWallFilterDateWrap">
@@ -154,7 +160,7 @@
 													<i class="icon-calendar"></i>
 												</span>
 											</label>
-										</li>
+										</li>-->
 									</ul>
 									<div class="inspWallFilterAction">
 										<button type="reset" id="inspWallClearFilter">Clear</button>
@@ -258,7 +264,6 @@
 					this.page.url = "http://reece-responsive.trout.com.au/bathroom/inspiration/#"+url;
 				}
 			});
-			console.log('reset Disqus');
 		}
 
 			});

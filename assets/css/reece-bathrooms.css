@@ -1871,7 +1871,7 @@ RESPONSIVE OVERRIDES
   display: inline-block;
 }
 /* Social Icons */
-.socialIcon {
+.socialWallPanel .socialIcon {
   height: 50px;
   width: 50px;
   clear: both;
@@ -1883,10 +1883,14 @@ RESPONSIVE OVERRIDES
   background: #ccc;
   position: relative;
   margin: 30px auto 20px;
-  color: white;
   font-size: 40px;
   line-height: 50px;
   text-align: center;
+  color: white;
+}
+.socialWallPanel .socialIcon:hover {
+  color: white;
+  text-decoration: none;
 }
 .landscapePanel .socialIcon {
   margin-top: 70px;
@@ -1896,19 +1900,19 @@ RESPONSIVE OVERRIDES
     margin-top: 30px;
   }
 }
-.prIcon {
+.socialWallPanel .prIcon {
   background: #e50066;
 }
-.fbIcon {
+.socialWallPanel .fbIcon {
   background: #425f9e;
 }
-.twitterIcon {
+.socialWallPanel .twitterIcon {
   background: #4eaaf0;
 }
-.instagramIcon {
+.socialWallPanel .instagramIcon {
   background: #9b6657;
 }
-.pinterestIcon {
+.socialWallPanel .pinterestIcon {
   background: #f74444;
 }
 .socialIcon:after {

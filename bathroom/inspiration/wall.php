@@ -9,9 +9,9 @@
       <div class="inspSocialBlockContent">
         <span class="inspSocialBlockSource pull-left">Via <span class="inspSocialBlockSourceName">powder room</span></span>
         <span class="inspSocialBlockSource pull-right">1 h ago</span>
-        <div class="socialIcon prIcon">
+        <a href="#kartell-by-laufen-australia-shores" class="socialIcon prIcon overlayLink">
           <i class="icon-pencil"></i>
-        </div>
+        </a>
         <h3>Kartell by Laufen hits Australian
 shores</h3>
         <p class="inspSocialBlockDesc">Tuesday 12 November marked the
@@ -36,7 +36,7 @@ spectacular series of events.</p>
       <div class="inspSocialBlockContent">
         <span class="inspSocialBlockSource pull-left">Via <a href="https://www.facebook.com/photo.php?fbid=625429600828295&set=a.195012217203371.40246.194926313878628&type=1&relevant_count=1" class="inspSocialBlockSourceName" target="_blank">facebook</a></span>
         <span class="inspSocialBlockSource pull-right">Jan 21 2014</span>
-        <div class="socialIcon fbIcon"><i class="icon-facebook"></i></div>
+        <a href="https://www.facebook.com/photo.php?fbid=625429600828295&set=a.195012217203371.40246.194926313878628&type=1&relevant_count=1" target="_blank" class="socialIcon fbIcon"><i class="icon-facebook"></i></a>
         <h3>Which do you prefer for the #bathroom? Rustic vs. White!</h3>
         <p class="inspSocialBlockDesc">Rustic or white for your bathroom? <a href="http://indesignlive.com">indesignlive.com</a></p>
       </div>
@@ -50,7 +50,7 @@ spectacular series of events.</p>
       <div class="inspSocialBlockContent">
         <span class="inspSocialBlockSource pull-left">Via <a href="https://twitter.com/ReeceBathrooms/status/415631854122053632" target="_blank" class="inspSocialBlockSourceName">twitter</a></span>
         <span class="inspSocialBlockSource pull-right">Dec 24 2013</span>
-        <div class="socialIcon twitterIcon"><i class="icon-twitter"></i></div>
+        <a href="https://twitter.com/ReeceBathrooms/status/415631854122053632" target="_blank" class="socialIcon twitterIcon"><i class="icon-twitter"></i></a>
         <p class="inspSocialBlockDesc text-center">
           Have a very merry and safe #christmas, everyone! http://fb.me/2jxGIAuyc 
         </p>
@@ -60,7 +60,7 @@ spectacular series of events.</p>
       <div class="inspSocialBlockContent">
         <span class="inspSocialBlockSource pull-left">Via <a href="https://twitter.com/ReeceBathrooms/status/428100192575827968" target="_blank" class="inspSocialBlockSourceName">twitter</a></span>
         <span class="inspSocialBlockSource pull-right">1 h ago</span>
-        <div class="socialIcon twitterIcon"><i class="icon-twitter"></i></div>
+        <a href="https://twitter.com/ReeceBathrooms/status/428100192575827968" target="_blank" class="socialIcon twitterIcon"><i class="icon-twitter"></i></a>
         <p class="inspSocialBlockDesc text-center">
           <strong>Reece</strong>@ReeceBathrooms<br/>
           Can't wait to hear your commentary @nealewhitaker @ShaynnaBlaze @darrenpalmerint 3 of the best judges we know!
@@ -76,7 +76,7 @@ spectacular series of events.</p>
       <div class="inspSocialBlockContent">
         <span class="inspSocialBlockSource pull-left">Via <a href="http://instagram.com/p/iUs_2kj3JW/" target="_blank" class="inspSocialBlockSourceName">instagram</a></span>
         <span class="inspSocialBlockSource pull-right">Dec 25 2013</span>
-        <div class="socialIcon instagramIcon"><i class="icon-instagram"></i></div>
+        <a href="http://instagram.com/p/iUs_2kj3JW/" target="_blank" class="socialIcon instagramIcon"><i class="icon-instagram"></i></a>
         <p class="inspSocialBlockDesc text-center">From the team at Reece, we hope everyone has a very merry and safe #christmas!</p>
       </div>
     </div>
@@ -91,9 +91,9 @@ spectacular series of events.</p>
     </div>
     <div class="span4">
       <div class="inspSocialBlockContent">
-        <span class="inspSocialBlockSource pull-left">Via <a class="inspSocialBlockSourceName" href="https://www.facebook.com/media/set/?set=a.647576548617533.1073741830.152665911441935&type=1">Facebook</a></span>
+        <span class="inspSocialBlockSource pull-left">Via <a class="inspSocialBlockSourceName" href="https://www.facebook.com/media/set/?set=a.647576548617533.1073741830.152665911441935&type=1" target="_blank">Facebook</a></span>
         <span class="inspSocialBlockSource pull-right">Jan 15 2014</span>
-        <div class="socialIcon fbIcon"><i class="icon-facebook"></i></div>
+        <a href="https://www.facebook.com/media/set/?set=a.647576548617533.1073741830.152665911441935&type=1" target="_blank" class="socialIcon fbIcon"><i class="icon-facebook"></i></a>
          <h3>Bathroom Trends: Organic</h3>
         <p class="inspSocialBlockDesc">One of the most popular trends in the bathroom and design, the Organic trend is defined by gentle curves and unique arcs. Smooth and fluid, the Organic trend is here to stay!</p>
       </div>
@@ -112,9 +112,9 @@ spectacular series of events.</p>
       <div class="inspSocialBlockContent">
         <span class="inspSocialBlockSource pull-left">Via <span class="inspSocialBlockSourceName">Reece blog</span></span>
         <span class="inspSocialBlockSource pull-right">Jan 15 2014</span>
-        <div class="socialIcon prIcon">
+        <a  href="#dummy-blog" class="socialIcon prIcon a">
           <i class="icon-pencil"></i>
-        </div>
+        </a>
         <h3>Dummy Blog</h3>
         <p class="inspSocialBlockDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque sed tortor vehicula feugiat id eget elit. Proin semper tempor nunc sed vehicula. Nullam ut eros neque. </p>
         <a href="#dummy-blog" class="overlayLink">read more</a>
@@ -133,7 +133,7 @@ spectacular series of events.</p>
       <div class="inspSocialBlockContent">
         <span class="inspSocialBlockSource pull-left">Via <a href="http://www.pinterest.com/pin/140315344610776664/" target="_blank" class="inspSocialBlockSourceName">pinterest</a></span>
         <span class="inspSocialBlockSource pull-right">Jan 15 2014</span>
-        <div class="socialIcon pinterestIcon"><i class="icon-pinterest"></i></div>
+        <a  href="http://www.pinterest.com/pin/140315344610776664/" target="_blank" class="socialIcon pinterestIcon"><i class="icon-pinterest"></i></a>
       </div>
     </div>
   </div>
@@ -149,9 +149,9 @@ spectacular series of events.</p>
       <div class="inspSocialBlockContent">
         <span class="inspSocialBlockSource pull-left">Via <span class="inspSocialBlockSourceName">Reece blog</span></span>
         <span class="inspSocialBlockSource pull-right">Jan 15 2014</span>
-        <div class="socialIcon prIcon">
+        <a href="#lorem-ipsum-dolor" class="socialIcon prIcon overlayLink">
           <i class="icon-pencil"></i>
-        </div>
+        </a>
         <h3>Lorem ipsum dolor sit</h3>
         <p class="inspSocialBlockDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque sed tortor vehicula feugiat id eget elit. </p>
         <a href="#lorem-ipsum-dolor" class="overlayLink">read more</a>

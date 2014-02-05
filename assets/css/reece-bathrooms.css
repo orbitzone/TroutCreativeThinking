@@ -1277,22 +1277,28 @@ RESPONSIVE OVERRIDES
   color: #ffffff;
   text-decoration: none;
 }
-.coloredPanel .row-fluid [class*="span"] {
+.coloredPanel .row-fluid [class*="span"],
+.socialWallPanel .row-fluid [class*="span"] {
   margin: 0;
 }
-.coloredPanel .row-fluid .span8 {
+.coloredPanel .row-fluid .span8,
+.socialWallPanel .row-fluid .span8 {
   width: 66.66666666666667%;
 }
-.coloredPanel .row-fluid .span7 {
+.coloredPanel .row-fluid .span7,
+.socialWallPanel .row-fluid .span7 {
   width: 58.333333333333336%;
 }
-.coloredPanel .row-fluid .span6 {
+.coloredPanel .row-fluid .span6,
+.socialWallPanel .row-fluid .span6 {
   width: 50%;
 }
-.coloredPanel .row-fluid .span5 {
+.coloredPanel .row-fluid .span5,
+.socialWallPanel .row-fluid .span5 {
   width: 41.666666666666664%;
 }
-.coloredPanel .row-fluid .span4 {
+.coloredPanel .row-fluid .span4,
+.socialWallPanel .row-fluid .span4 {
   width: 33.333333333333336%;
 }
 .coloredPanelText {
@@ -1647,7 +1653,8 @@ RESPONSIVE OVERRIDES
 }
 .inspWallFilter a {
   color: white;
-  padding: 11px 50px 11px 20px;
+  padding: 11px 50px 11px 15px;
+  min-width: 150px;
   display: block;
   position: relative;
 }

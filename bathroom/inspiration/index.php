@@ -133,7 +133,7 @@
 
 							<div class="inspWallFilter">
 
-								<a href="#filterFormWrap" data-toggle="collapse">Sort by &nbsp;&nbsp;&nbsp;&nbsp;<i class="icon-star"></i><i class="icon-star-empty"></i></a>
+								<a href="#filterFormWrap" data-toggle="collapse">Sort by <i class="icon-star"></i><i class="icon-star-empty"></i></a>
 								<div id="filterFormWrap" class="collapse">
 
 								<form id="inspWallFilterForm">

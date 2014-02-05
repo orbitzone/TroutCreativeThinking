@@ -2,7 +2,7 @@
   <div class="row-fluid">
     <div class="span8">
       <div class="coloredPanelThumb">
-        <img src="http://placehold.it/780x600.png/eee/ccc" alt="placeholder">
+        <img src="/assets/images/hz-inspiration/kartell-blog.jpg" alt="placeholder">
       </div>
     </div>
     <div class="span4">
@@ -105,7 +105,7 @@ spectacular series of events.</p>
   <div class="row-fluid">
     <div class="span8">
       <div class="coloredPanelThumb">
-        <img src="http://placehold.it/780x600.png/eee/ccc" alt="placeholder">
+        <img src="/assets/images/hz-inspiration/blog1.jpg" alt="placeholder">
       </div>
     </div>
     <div class="span4">
@@ -134,6 +134,7 @@ spectacular series of events.</p>
         <span class="inspSocialBlockSource pull-left">Via <a href="http://www.pinterest.com/pin/140315344610776664/" target="_blank" class="inspSocialBlockSourceName">pinterest</a></span>
         <span class="inspSocialBlockSource pull-right">Jan 15 2014</span>
         <a  href="http://www.pinterest.com/pin/140315344610776664/" target="_blank" class="socialIcon pinterestIcon"><i class="icon-pinterest"></i></a>
+        <p>This bathroom demonstrates that the open look can work spectacularly well in the modern home. Quality and luxury extends from the stone flooring to the incredible full height towel rail. The large mirror recessed into the cabinetry also shows a lot of thought went into this design for striking effect.</p>
       </div>
     </div>
   </div>
@@ -142,7 +143,7 @@ spectacular series of events.</p>
   <div class="row-fluid">
     <div class="span8">
       <div class="coloredPanelThumb">
-        <img src="http://placehold.it/780x550.png/eee/ccc" alt="placeholder">
+        <img src="/assets/images/hz-inspiration/blog2.jpg" alt="placeholder">
       </div>
     </div>
     <div class="span4">

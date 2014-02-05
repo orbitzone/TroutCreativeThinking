@@ -247,6 +247,7 @@
 		function hideBlog(){// hide blog content
 			$('#overlayContent').hide();
 			$('#wallContent').show();
+			$('#inspWallLoad').show();
 			window.location.hash = 'powder-room';
 		}
 		function showOverlay(url){// show blog overlay
@@ -259,7 +260,7 @@
 					DISQUS.reset({
 						reload: true,
 						config: function () {
-							this.page.identifier = '#!'+url;  
+							this.page.identifier = '#!'+url;
 							this.page.url = "http://reece-responsive.trout.com.au/bathroom/inspiration/#"+url;
 						}
 					});
@@ -267,9 +268,9 @@
 			});
 
 			$('#inspWallLoad').hide();
-				$('#closeBlog').click(function(){// attach event for closing
-					hideBlog();
-				})
+			$('#closeBlog').click(function(){// attach event for closing
+				hideBlog();
+			})
 			$('#wallContent').hide();
 		}
 		function hashChanged(hashVal){

@@ -1320,12 +1320,6 @@ RESPONSIVE OVERRIDES
 .instagramImage img {
   margin: -20% 0;
 }
-.pinterestImage {
-  overflow: hidden;
-}
-.pinterestImage img {
-  margin: -5% 0;
-}
 .landscapePanel h3 {
   margin-top: 20px;
 }
@@ -1559,7 +1553,7 @@ RESPONSIVE OVERRIDES
   }
   .socialWallPanel [class*="span"] {
     float: none;
-    width: auto;
+    width: auto !important;
     margin: 0;
   }
 }

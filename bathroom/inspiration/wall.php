@@ -88,15 +88,16 @@ spectacular series of events.</p>
   <div class="row-fluid">
     <div class="span8">
       <div class="coloredPanelThumb">
-        <img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-prn1/t1/q74/1524702_643480385693816_195788417_n.jpg" alt="placeholder">
+        <img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-prn1/t1/1526319_647576605284194_1092590954_n.jpg" alt="placeholder">
       </div>
     </div>
     <div class="span4">
       <div class="inspSocialBlockContent">
-        <span class="inspSocialBlockSource pull-left">Via <a class="inspSocialBlockSourceName" href="https://www.facebook.com/photo.php?fbid=643480385693816&set=a.163202293721630.28062.152665911441935&type=1">Facebook</a></span>
+        <span class="inspSocialBlockSource pull-left">Via <a class="inspSocialBlockSourceName" href="https://www.facebook.com/media/set/?set=a.647576548617533.1073741830.152665911441935&type=1">Facebook</a></span>
         <span class="inspSocialBlockSource pull-right">Jan 15 2014</span>
         <div class="socialIcon fbIcon"><i class="icon-facebook"></i></div>
-        <p class="inspSocialBlockDesc">It's the first #Monday back for a lot of people, or a regular old Monday for others. Either way, we hope you (and this kid) made it through unscathed </p>
+         <h3>Bathroom Trends: Organic</h3>
+        <p class="inspSocialBlockDesc">One of the most popular trends in the bathroom and design, the Organic trend is defined by gentle curves and unique arcs. Smooth and fluid, the Organic trend is here to stay!</p>
       </div>
     </div>
   </div>

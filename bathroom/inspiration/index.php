@@ -133,7 +133,7 @@
 
 							<div class="inspWallFilter">
 
-								<a href="#filterFormWrap" data-toggle="collapse">Filter Articles<i class="icon-star"></i><i class="icon-star-empty"></i></a>
+								<a href="#filterFormWrap" data-toggle="collapse">Sort by &nbsp;&nbsp;&nbsp;&nbsp;<i class="icon-star"></i><i class="icon-star-empty"></i></a>
 								<div id="filterFormWrap" class="collapse">
 
 								<form id="inspWallFilterForm">
@@ -253,19 +253,17 @@
 			$('#overlayContent').show();
 			$('#inspBlogArticle').attr('src',url+'.php');
 			$('#inspBlogArticle').load(function(){
-				console.log('calling load');
 				resizeIframe();
-			/* Change Disqus URL*/ 
-			if(typeof DISQUS != 'undefined'){
-			DISQUS.reset({
-				reload: true,
-				config: function () {  
-					this.page.identifier = '#!'+url;  
-					this.page.url = "http://reece-responsive.trout.com.au/bathroom/inspiration/#"+url;
+				/* Change Disqus URL*/ 
+				if(typeof DISQUS != 'undefined'){
+					DISQUS.reset({
+						reload: true,
+						config: function () {
+							this.page.identifier = '#!'+url;  
+							this.page.url = "http://reece-responsive.trout.com.au/bathroom/inspiration/#"+url;
+						}
+					});
 				}
-			});
-		}
-
 			});
 
 			$('#inspWallLoad').hide();

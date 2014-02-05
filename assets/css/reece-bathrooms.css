@@ -1302,6 +1302,12 @@ RESPONSIVE OVERRIDES
 .coloredPanelThumb {
   text-align: center;
 }
+.coloredPanelThumb img {
+  width: 100%;
+}
+.socialWallPanel {
+  text-align: center;
+}
 .instagramImage {
   overflow: hidden;
 }
@@ -1633,7 +1639,7 @@ RESPONSIVE OVERRIDES
 }
 .inspWallFilter {
   float: right;
-  background: #3d3c3c;
+  background: #555;
   font-family: sofia_pro_lightregular;
   font-size: 20px;
   text-transform: uppercase;
@@ -1667,7 +1673,7 @@ RESPONSIVE OVERRIDES
   display: block;
 }
 .inspWallFilter #filterFormWrap {
-  background: #3d3c3c;
+  background: #555;
   position: absolute;
   left: 0;
   width: 100%;

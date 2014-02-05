@@ -10,9 +10,7 @@
         <span class="inspSocialBlockSource pull-left">Via <span class="inspSocialBlockSourceName">powder room</span></span>
         <span class="inspSocialBlockSource pull-right">1 h ago</span>
         <div class="socialIcon prIcon">
-          <svg>
-            <image xlink:href="/assets/images/hz-inspiration/pr.svg" src="/assets/images/hz-inspiration/pr.png" width="50" height="50"/>
-          </svg>
+          <i class="icon-pencil"></i>
         </div>
         <h3>Kartell by Laufen hits Australian
 shores</h3>
@@ -115,9 +113,7 @@ spectacular series of events.</p>
         <span class="inspSocialBlockSource pull-left">Via <span class="inspSocialBlockSourceName">Reece blog</span></span>
         <span class="inspSocialBlockSource pull-right">Jan 15 2014</span>
         <div class="socialIcon prIcon">
-          <svg>
-            <image xlink:href="/assets/images/hz-inspiration/pr.svg" src="/assets/images/hz-inspiration/pr.png" width="50" height="50"/>
-          </svg>
+          <i class="icon-pencil"></i>
         </div>
         <h3>Dummy Blog</h3>
         <p class="inspSocialBlockDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque sed tortor vehicula feugiat id eget elit. Proin semper tempor nunc sed vehicula. Nullam ut eros neque. </p>
@@ -154,9 +150,7 @@ spectacular series of events.</p>
         <span class="inspSocialBlockSource pull-left">Via <span class="inspSocialBlockSourceName">Reece blog</span></span>
         <span class="inspSocialBlockSource pull-right">Jan 15 2014</span>
         <div class="socialIcon prIcon">
-          <svg>
-            <image xlink:href="/assets/images/hz-inspiration/pr.svg" src="/assets/images/hz-inspiration/pr.png" width="50" height="50"/>
-          </svg>
+          <i class="icon-pencil"></i>
         </div>
         <h3>Lorem ipsum dolor sit</h3>
         <p class="inspSocialBlockDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque sed tortor vehicula feugiat id eget elit. </p>

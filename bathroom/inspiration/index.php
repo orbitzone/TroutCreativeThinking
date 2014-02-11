@@ -138,13 +138,14 @@
 
 								<form id="inspWallFilterForm">
 									<ul>
-										<li><label class="filterCheckboxLabel"><input type="checkbox" class="inspWallFilterInput" name="inspWallFilter" value="productNews" />Product News</label></li>
-										<li><label class="filterCheckboxLabel"><input type="checkbox" class="inspWallFilterInput" name="inspWallFilter" value="waterSavings" />Water Saving</label></li>
-										<li><label class="filterCheckboxLabel"><input type="checkbox" class="inspWallFilterInput" name="inspWallFilter" value="theBlock" />The Block</label></li>
-										<li><label class="filterCheckboxLabel"><input type="checkbox" class="inspWallFilterInput" name="inspWallFilter" value="events" />Events</label></li>
 										<li><label class="filterCheckboxLabel"><input type="checkbox" class="inspWallFilterInput" name="inspWallFilter" value="trends" />Trends</label></li>
-										<li><label class="filterCheckboxLabel"><input type="checkbox" class="inspWallFilterInput" name="inspWallFilter" value="designers" />Designers</label></li>
 										<li><label class="filterCheckboxLabel"><input type="checkbox" class="inspWallFilterInput" name="inspWallFilter" value="planning" />Planning</label></li>
+										<li><label class="filterCheckboxLabel"><input type="checkbox" class="inspWallFilterInput" name="inspWallFilter" value="productNews" />Product News</label></li>
+										<li><label class="filterCheckboxLabel"><input type="checkbox" class="inspWallFilterInput" name="inspWallFilter" value="designers" />Designers</label></li>
+										<li><label class="filterCheckboxLabel"><input type="checkbox" class="inspWallFilterInput" name="inspWallFilter" value="waterSavings" />Water Saving</label></li>
+										<li><label class="filterCheckboxLabel"><input type="checkbox" class="inspWallFilterInput" name="inspWallFilter" value="events" />Events</label></li>
+										<li><label class="filterCheckboxLabel"><input type="checkbox" class="inspWallFilterInput" name="inspWallFilter" value="theBlock" />The Block</label></li>
+										
 										<!--<li class="filterDateLabels">
 											<label class="filterDateLabel">
 												<span>From</span>
@@ -179,7 +180,8 @@
 						</div>
 						<div class="inner-wrapper inspBlogWrap" id="overlayContent" style="display:none">
 							<a class="closeBlog" id="closeBlog"><i class="icon-remove"></i></a>
-							<iframe id="inspBlogArticle" width="100%"  scrolling="no" frameborder="0"></iframe>
+							<div id="socialOverlay"></div>
+							<iframe id="inspBlogArticle" style="display:none" width="100%"  scrolling="no" frameborder="0"></iframe>
 							<div class="inspBlogCommentWrap" id="disqus_thread"></div>
 							<script type="text/javascript">
 								/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -232,130 +234,13 @@
 		  		"/assets/js/bootstrap-dropdown.js",
 		  		"/assets/js/reece-ocnav.js",
 		  		"/assets/js/reece-carousel.js",
-		  		"/assets/js/jquery-ui-1.10.4.custom.min.js"
+		  		"/assets/js/jquery-ui-1.10.4.custom.min.js",
+		  		"/assets/js/reece-inspiration.js"
 		  	); 
 		  	include_once($serverBase."/includes/foot/scripts.php");
 		?>
 		<script type="text/javascript">
-	  function resizeIframe() {
-	    document.getElementById('inspBlogArticle').style.height = document.getElementById('inspBlogArticle').contentWindow.document.body.scrollHeight + 'px';
 
-	  }
-		function populateWall(data){//populate data into wallContent
-			$('#wallContent').html(data);
-		}
-		function hideBlog(){// hide blog content
-			$('#overlayContent').hide();
-			$('#wallContent').show();
-			$('#inspWallLoad').show();
-			window.location.hash = 'powder-room';
-		}
-		function showOverlay(url){// show blog overlay
-			$('#overlayContent').show();
-			$('#inspBlogArticle').attr('src',url+'.php');
-			$('#inspBlogArticle').load(function(){
-				resizeIframe();
-				/* Change Disqus URL*/ 
-				if(typeof DISQUS != 'undefined'){
-					DISQUS.reset({
-						reload: true,
-						config: function () {
-							this.page.identifier = '#!'+url;
-							this.page.url = "http://reece-responsive.trout.com.au/bathroom/inspiration/#"+url;
-						}
-					});
-				}
-			});
-
-			$('#inspWallLoad').hide();
-			$('#closeBlog').click(function(){// attach event for closing
-				hideBlog();
-			})
-			$('#wallContent').hide();
-		}
-		function hashChanged(hashVal){
-			hashArray = [];
-			$.each($('.overlayLink'),function(){
-				hashArray.push(this.hash.substr(1));
-			});
-			if(hashArray.indexOf(hashVal) != -1){
-				showOverlay(hashVal);
-		    $('html, body').animate({
-		        scrollTop: $("#powder-room").offset().top
-		    }, 500);
-			}
-		}
-		$(function(){
-			/* Check hashtag change */
-			if(window.location.hash != ''){
-				hashChanged(location.hash.slice(1));
-			}
-			$(window).on('hashchange',function(){ 
-			    hashChanged(location.hash.slice(1));
-			});
-			/* Initialize date filter */
-			/* JQuery Selective DatePicker for IE, Chrome, Safari, iPad,iPhone */
-        var device = {};
-        device.Html5 = false;
-        device.UA = navigator.userAgent;
-        device.Types = ["iPhone", "iPad", "Chrome"];
-        for (var d = 0; d < device.Types.length; d++) {
-            var t = device.Types[d];
-            device[t] = !!device.UA.match(new RegExp(t, "i"));
-            device.Html5 = device.Html5 || device[t];
-        }
-        if (device.Html5 == false) {
-            $(".datepicker").datepicker();
-        }
-        else {
-            $("input[type='text'].datepicker").datepicker();
-        }
-			/* Script for Filtering content */
-			var inspFilterArray = [];
-			$('input.inspWallFilterInput').change(function(){
-				if ($(this).is(':checkbox')){
-					$(this).parent('label').toggleClass('checked');
-				}
-				
-				if($('input[name="inspWallFilter"]:checked').length + $('input.inspWallFilterDate[value!=""]').length){
-					$('.inspWallFilter').addClass('filtered')
-				}else{
-					$('.inspWallFilter').removeClass('filtered')
-				}
-			});
-			/* Filter Form Submit */
-			$('#inspWallFilterForm').submit(function(e){
-				e.preventDefault();
-				inspFilterArray = [];
-				$.each($('input[name="inspWallFilter"]:checked'),function(){
-					inspFilterArray.push(this.value)
-				});
-				data = {filter:JSON.stringify(inspFilterArray)};
-				$.get('wall.php',data,populateWall);
-				$('#filterFormWrap').collapse('hide');
-			})
-			/* Clear Filter Form */
-			$('#inspWallClearFilter').click(function(){
-				$('input[name="inspWallFilter"]:checked').click();
-				$('input.inspWallFilterDate').val('');
-				$('.inspWallFilter').removeClass('filtered')
-				$('#filterFormWrap').collapse('hide');
-			});
-			/* Attach event for overlay*/
-
-			/* Load More */
-			$('#inspWallLoadLink').click(function(e){
-				e.preventDefault();
-				$('#inspWallLoadLink').hide();
-				$('#inspWallLoaderIcon').addClass('show');
-				
-				$.get('wall.php?filter=1',function(data){
-					$('#wallContent').append(data);
-					$('#inspWallLoadLink').show();
-					$('#inspWallLoaderIcon').removeClass('show');
-				});
-			});
-		});
 		</script>
     </body>
 </html>

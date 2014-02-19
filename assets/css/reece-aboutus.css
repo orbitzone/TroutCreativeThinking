@@ -1,0 +1,10 @@
+.about-us h3,
+.about-us h4 {
+  margin: 1em 0;
+}
+.about-us p {
+  color: #666666;
+}
+.about-us .subnavbar {
+  background: #003767;
+}

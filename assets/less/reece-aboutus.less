@@ -7,14 +7,98 @@
 //@import "reece-mixins.less";
 
 .about-us {
-	h3, h4 {
-		margin: 1em 0;
-	}
 	p {
 		color: #666666;
+		margin-bottom: 2em;
 	}
 	.subnavbar {
 		background: @reeceBlue
 	}
+	.content-container img {
+		margin: 1em 0
+	}
+	.middle-section {
+		border-top: 1px solid lighten(@reeceGrey, 60%);
+		padding-top: 1.5em;
+		margin-top: 1.5em;
+	}
 }
+.actrol {
+	.inside {
+		padding: 0 1.5em;
+		border: 1px solid lighten(@reeceGrey, 60%);
+	}
+	h4 {
+		padding: 0 0 1em 130px;
+		border-bottom: 1px solid lighten(@reeceGrey, 60%);
+		background: url(../images/aboutus/logo-actrol.png) no-repeat left top;
+	}
+}
+.grey-bg {
+	background: @lightBackground;
+}
+.inner-wrapper {
+	padding: 0.8em 0 2.5em;
+}
+
+.site-footer {
+	margin-top: 0
+}
+
+.read-more,
+.more-articles {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.read-more i {
+  margin: 2px 0 2px 8px;
+  -webkit-transition: margin-left;
+  -moz-transition: margin-left;
+  -o-transition: margin-left;
+  transition: margin-left;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.read-more:hover {
+  text-decoration: none;
+}
+.read-more:hover i {
+  margin-left: 15px;
+}
+
+/*
+----------------------------------------------
+RESPONSIVE OVERRIDES
+----------------------------------------------
+*/
+@media (min-width: 767px) {
+
+	.about-us {
+		h3, h4 {
+			margin: 1em 0;
+		}
+	}
+
+}	
+
+@media (max-width: 767px) {
+
+	.about-us {
+		p {
+			margin-bottom: 1em;
+		}
+		.grey-bg .row-fluid > div {
+			margin-bottom: 2.5em;
+		}
+		.actrol h4 {
+			background-position: 0 50%;
+			padding-top: 0.5em
+		}
+	}
+
+}
+
+
 

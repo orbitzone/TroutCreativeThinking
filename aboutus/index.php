@@ -35,10 +35,15 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.</p>
                         </div>
 
-                        <div class="span4">Actrol...</div>
+                        <div class="span4 actrol">
+                            <div class="inside">
+                                <h4>A Cool New Addition For Reece</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo.  Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. </p>
+                            </div>
+                        </div>
                     </section>
 
-                    <section class="row-fluid">
+                    <section class="row-fluid middle-section">
                         <div class="span4">
                             <img src="http://placehold.it/357x195" alt="don't forget alt text!">
                             <h4>History</h4>
@@ -63,8 +68,18 @@
                 <div class="content-container">
                     <div class="inner-wrapper">
                         <section class="row-fluid">
-                            <div class="span6">Sustainability...</div>
-                            <div class="span6">Careers..gg.</div>
+                            <div class="span6">
+                                <h4>Sustainability</h4>
+                                <img src="http://placehold.it/550x135" alt="Don't forget alt text">
+                                <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                <a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
+                            </div>
+                            <div class="span6">
+                                <h4>Careers</h4>
+                                <img src="http://placehold.it/550x135" alt="Don't forget alt text">
+                                <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                <a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
+                            </div>
                         </section>
                     </div>
                 </div>

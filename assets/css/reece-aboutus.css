@@ -58,6 +58,130 @@ RESPONSIVE OVERRIDES
 .read-more:hover i {
   margin-left: 15px;
 }
+#about-us-carousel .item {
+  position: relative;
+  float: left;
+  min-height: 300px;
+}
+#about-us-carousel .item h1 {
+  font-size: 4em;
+}
+#about-us-carousel .item p {
+  font-size: 16px;
+  line-height: 1.2em;
+}
+#about-us-carousel .plumbing h1 {
+  color: #0d2e56;
+}
+#about-us-carousel .plumbing .coloredPanelLink,
+#about-us-carousel .plumbing.carousel-link-item {
+  background: #0d2e56;
+}
+#about-us-carousel .bathrooms h1 {
+  color: #db1e24;
+}
+#about-us-carousel .bathrooms .coloredPanelLink,
+#about-us-carousel .bathrooms.carousel-link-item {
+  background: #db1e24;
+}
+#about-us-carousel .irrigation h1 {
+  color: #5e792d;
+}
+#about-us-carousel .irrigation .coloredPanelLink,
+#about-us-carousel .irrigation.carousel-link-item {
+  background: #5e792d;
+}
+#about-us-carousel .civil h1 {
+  color: #b65312;
+}
+#about-us-carousel .civil .coloredPanelLink,
+#about-us-carousel .civil.carousel-link-item {
+  background: #b65312;
+}
+#about-us-carousel .hvac-r h1 {
+  color: #0397d7;
+}
+#about-us-carousel .hvac-r .coloredPanelLink,
+#about-us-carousel .hvac-r.carousel-link-item {
+  background: #0397d7;
+}
+#about-us-carousel .onsite h1 {
+  color: #f47836;
+}
+#about-us-carousel .onsite .coloredPanelLink,
+#about-us-carousel .onsite.carousel-link-item {
+  background: #f47836;
+}
+#about-us-carousel .bg-image {
+  display: block;
+  margin: 0;
+}
+#about-us-carousel .content {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 370px;
+  padding: 3em;
+}
+#about-us-carousel .carousel-links {
+  position: absolute;
+  text-align: center;
+  right: 0;
+  top: 50%;
+  z-index: 4;
+  padding: 0 7px;
+  margin-top: -180px;
+  background: rgba(255, 255, 255, 0.3);
+}
+#about-us-carousel .carousel-links ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#about-us-carousel .carousel-links .heading {
+  color: white;
+  font-size: 15px;
+  margin: 15px 0;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+#about-us-carousel .carousel-link-item {
+  width: 160px;
+  color: white;
+  padding: 0.85em 0;
+  margin-bottom: 7px;
+  cursor: pointer;
+  font-size: 15px;
+}
+#about-us-carousel .carousel-indicators {
+  position: static;
+}
+#about-us-carousel .carousel-indicators li {
+  border-radius: 0;
+  float: none;
+  text-indent: 0;
+  line-height: 0.5em;
+  -webkit-transition: all 0.7s ease-out;
+  -moz-transition: all 0.7s ease-out;
+  -o-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
+}
+#about-us-carousel .carousel-indicators li.active {
+  margin-left: -40px;
+  padding-left: 45px;
+}
+.coloredPanelLink {
+  display: inline-block;
+  background: #000000;
+  padding: 15px 30px;
+  color: #ffffff;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+.coloredPanelLink:hover {
+  color: #aaa;
+}
 /*
 ----------------------------------------------
 RESPONSIVE OVERRIDES
@@ -79,5 +203,8 @@ RESPONSIVE OVERRIDES
   .about-us .actrol h4 {
     background-position: 0 50%;
     padding-top: 0.5em;
+  }
+  #about-us-carousel .content {
+    width: 60%;
   }
 }

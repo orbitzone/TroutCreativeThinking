@@ -3,7 +3,7 @@
 
     <?php 
         $cssScriptPaths = [
-            "/assets/css/reece-aboutus.css",    
+            "/assets/css/reece-aboutus.css"   
         ]; 
         include_once($serverBase."/includes/head/head-generic.php");
     ?>      
@@ -26,7 +26,77 @@
                 <div class="inner-wrapper">
                     <h3>About Us</h3>
                     <section class="row-fluid">
-                        <div class="span12">Banner</div>
+                        <div class="span12">
+                            <div id="about-us-carousel" class="carousel">
+                                <div class="carousel-links">
+                                    <h5 class="heading">Our Businesses</h5>
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#about-us-carousel" data-slide-to="0" class="carousel-link-item active plumbing">Plumbing</li>
+                                        <li data-target="#about-us-carousel" data-slide-to="1" class="carousel-link-item bathrooms">Bathrooms</li>
+                                        <li data-target="#about-us-carousel" data-slide-to="2" class="carousel-link-item irrigation">Irrigation</li>
+                                        <li data-target="#about-us-carousel" data-slide-to="3" class="carousel-link-item civil">Civil</li>
+                                        <li data-target="#about-us-carousel" data-slide-to="4" class="carousel-link-item hvac-r">hvac-r</li>
+                                        <li data-target="#about-us-carousel" data-slide-to="5" class="carousel-link-item onsite">Onsite</li>
+                                    </ol>
+                                </div>
+                                <!-- Carousel items -->
+                                <div class="carousel-inner">
+                                    <div class="active item plumbing">
+                                        <img src="/assets/images/aboutus/banner-plumbing.jpg" alt=" " class="bg-image">
+                                        <div class="content">
+                                            <h1>Plumbing</h1>
+                                            <p>Thousands of plumbers turn to Reece because of our reputation for “having what you need, when you need it, where you need it.” It's all about delivering the best service possible. A commitment we live by every day.</p>
+                                            <a class="coloredPanelLink" href="#">Discover more</a>
+                                        </div>
+                                    </div>
+                                    <div class="item bathrooms">
+                                        <img src="/assets/images/aboutus/banner-bathroom.jpg" alt=" " class="bg-image">
+                                        <div class="content">
+                                            <h1>Bathrooms</h1>
+                                            <p>Lipsum sit dolor amet igo what you need, when you need it, where you need it.” It's all about delivering the best service possible. A commitment we live by every day.</p>
+                                            <a class="coloredPanelLink" href="#">Discover more</a>
+                                        </div>
+                                    </div>
+                                    <div class="item irrigation">
+                                        <img src="/assets/images/aboutus/banner-plumbing.jpg" alt=" " class="bg-image">
+                                        <div class="content">
+                                            <h1>Irrigation</h1>
+                                            <p>Lipsum sit dolor amet igo what you need, when you need it, where you need it.” It's all about delivering the best service possible. A commitment we live by every day.</p>
+                                            <a class="coloredPanelLink" href="#">Discover more</a>
+                                        </div>
+                                    </div>
+                                    <div class="item civil">
+                                        <img src="/assets/images/aboutus/banner-plumbing.jpg" alt=" " class="bg-image">
+                                        <div class="content">
+                                            <h1>Civil</h1>
+                                            <p>Lipsum sit dolor amet igo what you need, when you need it, where you need it.” It's all about delivering the best service possible. A commitment we live by every day.</p>
+                                            <a class="coloredPanelLink" href="#">Discover more</a>
+                                        </div>
+                                    </div>
+                                    <div class="item hvac-r">
+                                        <img src="/assets/images/aboutus/banner-plumbing.jpg" alt=" " class="bg-image">
+                                        <div class="content">
+                                            <h1>HVAC-R</h1>
+                                            <p>Lipsum sit dolor amet igo what you need, when you need it, where you need it.” It's all about delivering the best service possible. A commitment we live by every day.</p>
+                                            <a class="coloredPanelLink" href="#">Discover more</a>
+                                        </div>
+                                    </div>
+                                    <div class="item onsite">
+                                        <img src="/assets/images/aboutus/banner-plumbing.jpg" alt=" " class="bg-image">
+                                        <div class="content">
+                                            <h1>Onsite</h1>
+                                            <p>Lipsum sit dolor amet igo what you need, when you need it, where you need it.” It's all about delivering the best service possible. A commitment we live by every day.</p>
+                                            <a class="coloredPanelLink" href="#">Discover more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            <!-- Carousel nav
+                            <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                            <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+                             -->
+                            </div>
+
+                        </div>
                     </section>
                     <section class="row-fluid">
                         <div class="span8">
@@ -93,8 +163,7 @@
 
         <?php
             $mobileNavActiveMenu = array(
-                "activeMenu" => "Bathrooms",
-                "activeMenuItem" => "Bathroom Moments"
+                "activeMenu" => "About Us"
             );
             include_once($serverBase."/includes/nav/nav-mobile.php");
         ?>  
@@ -103,14 +172,15 @@
             $jsScriptPaths = [
                 "/assets/js/jquery.mobile.custom.min.js",
                 "/assets/js/bootstrap-transition.js", 
-                "/assets/js/bootstrap-carousel.js",             
-                "/assets/js/bootstrap-collapse.js",
-                "/assets/js/bootstrap-dropdown.js",
-                "/assets/js/micro-template.js",
-                "/assets/js/reece-ajax-filter.js",
-                "/assets/js/reece-ocnav.js",
-                "/assets/js/reece-carousel.js",
-                "/assets/js/reece-products.js"
+                "/assets/js/bootstrap-carousel.js",
+                "/assets/js/reece-aboutus.js",         
+                "/assets/js/reece-ocnav.js"
+                // "/assets/js/bootstrap-collapse.js",
+                // "/assets/js/bootstrap-dropdown.js"
+                //"/assets/js/micro-template.js",
+                //"/assets/js/reece-ajax-filter.js",
+                //"/assets/js/reece-carousel.js",
+                //"/assets/js/reece-products.js"
             ]; 
             include_once($serverBase."/includes/foot/scripts.php");
         ?>      

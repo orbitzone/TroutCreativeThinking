@@ -45,6 +45,8 @@
 	margin-top: 0
 }
 
+// Read more link with animated arrow - copied from reece-aboutus.less
+
 .read-more,
 .more-articles {
   font-weight: bold;
@@ -68,6 +70,142 @@
   margin-left: 15px;
 }
 
+#about-us-carousel {
+	.item {
+		h1 {
+			font-size: 4em;
+		}
+		p {
+			font-size: 16px;
+			line-height: 1.2em;
+		}
+		position: relative;
+		float: left;
+		min-height:300px;
+	}
+	.plumbing {
+		h1 {
+			color: @brandingPlumbing;
+		}
+		.coloredPanelLink, &.carousel-link-item {
+			background: @brandingPlumbing;
+		}
+	}
+	.bathrooms {
+		h1 {
+			color: @brandingBathrooms;
+		}
+		.coloredPanelLink, &.carousel-link-item {
+			background: @brandingBathrooms;
+		}
+	}		
+	.irrigation {
+		h1 {
+			color: @brandingIrrigation;
+		}
+		.coloredPanelLink, &.carousel-link-item {
+			background: @brandingIrrigation;
+		}
+	}
+	.civil {
+		h1 {
+			color: @brandingCivil;
+		}
+		.coloredPanelLink, &.carousel-link-item {
+			background: @brandingCivil;
+		}
+	}
+	.hvac-r { 
+		h1 {
+			color: @brandingHvacr;
+		}
+		.coloredPanelLink, &.carousel-link-item {
+			background: @brandingHvacr;
+		}
+	}
+	.onsite {
+		h1 {
+			color: @brandingOnsite;
+		}
+		.coloredPanelLink, &.carousel-link-item {
+			background: @brandingOnsite;
+		}
+	}
+
+	.bg-image {
+		display: block;
+		margin: 0
+	}
+	.content {
+		position: absolute;
+		z-index: 2;
+		top: 0;
+		left: 0;
+		width: 370px;
+		padding: 3em 
+	}
+
+	.carousel-links {
+		position: absolute;
+		text-align: center;
+		right: 0;
+		top: 50%;
+		z-index: 4;
+		padding: 0 7px;
+		margin-top: -180px;
+		background: rgba(255, 255, 255, 0.3);
+		ol {
+			list-style: none;
+			margin: 0;
+			padding: 0
+		}
+		.heading {
+			color: white;
+			font-size: 15px;
+			margin: 15px 0;
+			text-transform: uppercase;
+			text-shadow: 1px 1px 2px fade(black, 40%)
+		}
+	}
+	.carousel-link-item {
+		width: 160px;
+		color: white;
+		padding: 0.85em 0;
+		margin-bottom: 7px;
+		cursor: pointer;
+		font-size: 15px;
+	}
+	.carousel-indicators {
+		position: static;
+		li {
+			border-radius: 0;
+			float: none;
+			text-indent: 0;
+			line-height: 0.5em;
+			//.transition(all 1s ease-out); should convert to mixin
+			-webkit-transition: all 0.7s ease-out;
+		       -moz-transition: all 0.7s ease-out;
+		         -o-transition: all 0.7s ease-out;
+		            transition: all 0.7s ease-out;
+
+			&.active {
+				margin-left: -40px;
+				padding-left: 45px;
+			}
+		}
+	}
+}
+.coloredPanelLink{
+    display: inline-block;
+    background: @black;
+    padding: 15px 30px;
+    color: @white;
+    margin-top: 20px;
+    text-transform: uppercase;
+    &:hover{
+        color: #aaa;
+    }
+}
 /*
 ----------------------------------------------
 RESPONSIVE OVERRIDES
@@ -97,7 +235,9 @@ RESPONSIVE OVERRIDES
 			padding-top: 0.5em
 		}
 	}
-
+	#about-us-carousel .content {
+		width: 60%
+	}
 }
 
 

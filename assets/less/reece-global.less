@@ -88,6 +88,34 @@ h1, h2, h3, h4, h5, h6 {
     .border-radius(0);
 }
 
+// Read more link with animated arrow - copied from reece-aboutus.less
+//====================================================================================================================================
+//====================================================================================================================================
+
+.read-more,
+.more-articles {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.read-more i {
+  margin: 2px 0 2px 8px;
+  -webkit-transition: margin-left;
+  -moz-transition: margin-left;
+  -o-transition: margin-left;
+  transition: margin-left;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.read-more:hover {
+  text-decoration: none;
+}
+.read-more:hover i {
+  margin-left: 15px;
+}
+
+
 // Page Wrapper Module
 //====================================================================================================================================
 //====================================================================================================================================

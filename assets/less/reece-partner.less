@@ -1,0 +1,71 @@
+//Bootstrap imports
+@import "bootstrap/variables.less";
+@import "bootstrap/mixins.less";
+
+//Application imports
+@import "reece-variables.less";
+@import "reece-mixins.less";
+
+
+p {
+	color: #666666;
+	margin-bottom: 2em;
+}
+
+a:hover p, a:focus p {
+	text-decoration: none !important;
+}
+
+.grey-bg {
+	background: @lightBackground;
+}
+
+.inner-wrapper {
+	padding: 0.8em 0 2.5em;
+}
+
+.site-footer {
+	margin-top: 0
+}
+.brand {
+	.brand-logo {
+		float: left;
+		margin-right: 1.5em
+	}
+	.brand-name {
+		font-size: 1.5em;
+		font-weight: normal;
+	}
+	margin: 2em 0;
+}
+.brand-expand {
+	max-height: 0;
+	background: @reeceGrey;
+	overflow: hidden;
+	position: relative;
+	.transition(0.6s max-height ease-out);
+	
+	.row-fluid {
+		padding: 2em;
+		.box-sizing(border-box);
+	}
+	p, .heading {
+		color: @ocnavTextColor
+	}
+	&.expanded {
+		max-height: 1000px;
+	}
+	.brand-close {
+		position: absolute;
+		top: 15px;
+		right: 15px;
+		color: @ocnavTextColor;
+		font-size: 2em;
+		cursor: pointer;
+	}
+}
+.why-partner-intro {
+	p {
+		margin-bottom: 0
+	}
+}

@@ -1,10 +1,10 @@
 //Bootstrap imports
-//@import "bootstrap/mixins.less";
 @import "bootstrap/variables.less";
+@import "bootstrap/mixins.less";
 
 //Application imports
 @import "reece-variables.less";
-//@import "reece-mixins.less";
+@import "reece-mixins.less";
 
 .about-us {
 	p {
@@ -83,54 +83,6 @@
 		float: left;
 		min-height:300px;
 	}
-	.plumbing {
-		h1 {
-			color: @brandingPlumbing;
-		}
-		.coloredPanelLink, &.carousel-link-item {
-			background: @brandingPlumbing;
-		}
-	}
-	.bathrooms {
-		h1 {
-			color: @brandingBathrooms;
-		}
-		.coloredPanelLink, &.carousel-link-item {
-			background: @brandingBathrooms;
-		}
-	}		
-	.irrigation {
-		h1 {
-			color: @brandingIrrigation;
-		}
-		.coloredPanelLink, &.carousel-link-item {
-			background: @brandingIrrigation;
-		}
-	}
-	.civil {
-		h1 {
-			color: @brandingCivil;
-		}
-		.coloredPanelLink, &.carousel-link-item {
-			background: @brandingCivil;
-		}
-	}
-	.hvac-r { 
-		h1 {
-			color: @brandingHvacr;
-		}
-		.coloredPanelLink, &.carousel-link-item {
-			background: @brandingHvacr;
-		}
-	}
-	.onsite {
-		h1 {
-			color: @brandingOnsite;
-		}
-		.coloredPanelLink, &.carousel-link-item {
-			background: @brandingOnsite;
-		}
-	}
 
 	.bg-image {
 		display: block;
@@ -183,15 +135,94 @@
 			text-indent: 0;
 			line-height: 0.5em;
 			//.transition(all 1s ease-out); should convert to mixin
-			-webkit-transition: all 0.7s linear;
-		       -moz-transition: all 0.7s linear;
-		         -o-transition: all 0.7s linear;
-		            transition: all 0.7s linear;
+			.transition(all 0.3s linear);
 
 			&.active {
 				margin-left: -30px;
 				padding-left: 35px;
 			}
+		}
+	}
+}
+#about-us-carousel-mobile {
+	border: 1px solid lighten(@reeceGrey, 50%);
+	h1 {
+		margin-top: 0;
+		padding-top: 1em;
+		font-size: 2em;
+	}
+	p {
+		margin-right: 3em;
+	}
+	.content {
+		min-height: 320px;
+		padding-left: 170px;
+		line-height: 1.5em;
+	}
+	.plumbing .content {
+		background: url(../images/aboutus/banner-plumbing-mob.jpg) no-repeat top left;
+		.image-2x('../images/aboutus/banner-plumbing-mob-2x.jpg', 150px, 320px);
+	}
+	.bathrooms .content {
+		background: url(../images/aboutus/banner-bathroom-mob.jpg) no-repeat top left;
+		.image-2x('../images/aboutus/banner-bathroom-mob-2x.jpg', 150px, 320px);
+
+	}
+	.carousel-control.right {
+		right: 7px;
+	}
+	.carousel-control.left {
+		left: 7px;
+	}
+}
+.carousel {
+
+	.plumbing {
+		h1 {
+			color: @brandingPlumbing;
+		}
+		.coloredPanelLink, &.carousel-link-item {
+			background: @brandingPlumbing;
+		}
+	}
+	.bathrooms {
+		h1 {
+			color: @brandingBathrooms;
+		}
+		.coloredPanelLink, &.carousel-link-item {
+			background: @brandingBathrooms;
+		}
+	}		
+	.irrigation {
+		h1 {
+			color: @brandingIrrigation;
+		}
+		.coloredPanelLink, &.carousel-link-item {
+			background: @brandingIrrigation;
+		}
+	}
+	.civil {
+		h1 {
+			color: @brandingCivil;
+		}
+		.coloredPanelLink, &.carousel-link-item {
+			background: @brandingCivil;
+		}
+	}
+	.hvac-r { 
+		h1 {
+			color: @brandingHvacr;
+		}
+		.coloredPanelLink, &.carousel-link-item {
+			background: @brandingHvacr;
+		}
+	}
+	.onsite {
+		h1 {
+			color: @brandingOnsite;
+		}
+		.coloredPanelLink, &.carousel-link-item {
+			background: @brandingOnsite;
 		}
 	}
 }
@@ -240,5 +271,30 @@ RESPONSIVE OVERRIDES
 	}
 }
 
+@media (min-width: 768px) and (max-width: 979px) {
+	
+	.carousel-links {
+		margin-top: -150px !important
+	}
 
+}
+
+@media (max-width: 480px) {
+	#about-us-carousel-mobile {
+		h1 {
+			padding-top: 0.5em;
+		}
+		.content {
+			padding-left: 3em;
+			background: none !important;
+			padding-bottom: 1em;
+		}
+		.carousel-control.right {
+			right: 0px;
+		}
+		.carousel-control.left {
+			left: 0px;
+		}
+	}
+}
 

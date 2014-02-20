@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".carousel").carousel({interval:3e3,pause:"hover"});$("#about-us-carousel-mobile").swiperight(function(){$(this).carousel("prev")});$("#about-us-carousel-mobile").swipeleft(function(){$(this).carousel("next")})});

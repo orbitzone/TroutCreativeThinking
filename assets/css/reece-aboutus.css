@@ -1,8 +1,30 @@
-/*
-----------------------------------------------
-RESPONSIVE OVERRIDES
-----------------------------------------------
-*/
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 .about-us p {
   color: #666666;
   margin-bottom: 2em;
@@ -70,48 +92,6 @@ RESPONSIVE OVERRIDES
   font-size: 16px;
   line-height: 1.2em;
 }
-#about-us-carousel .plumbing h1 {
-  color: #0d2e56;
-}
-#about-us-carousel .plumbing .coloredPanelLink,
-#about-us-carousel .plumbing.carousel-link-item {
-  background: #0d2e56;
-}
-#about-us-carousel .bathrooms h1 {
-  color: #db1e24;
-}
-#about-us-carousel .bathrooms .coloredPanelLink,
-#about-us-carousel .bathrooms.carousel-link-item {
-  background: #db1e24;
-}
-#about-us-carousel .irrigation h1 {
-  color: #5e792d;
-}
-#about-us-carousel .irrigation .coloredPanelLink,
-#about-us-carousel .irrigation.carousel-link-item {
-  background: #5e792d;
-}
-#about-us-carousel .civil h1 {
-  color: #b65312;
-}
-#about-us-carousel .civil .coloredPanelLink,
-#about-us-carousel .civil.carousel-link-item {
-  background: #b65312;
-}
-#about-us-carousel .hvac-r h1 {
-  color: #0397d7;
-}
-#about-us-carousel .hvac-r .coloredPanelLink,
-#about-us-carousel .hvac-r.carousel-link-item {
-  background: #0397d7;
-}
-#about-us-carousel .onsite h1 {
-  color: #f47836;
-}
-#about-us-carousel .onsite .coloredPanelLink,
-#about-us-carousel .onsite.carousel-link-item {
-  background: #f47836;
-}
 #about-us-carousel .bg-image {
   display: block;
   margin: 0;
@@ -162,14 +142,102 @@ RESPONSIVE OVERRIDES
   float: none;
   text-indent: 0;
   line-height: 0.5em;
-  -webkit-transition: all 0.7s linear;
-  -moz-transition: all 0.7s linear;
-  -o-transition: all 0.7s linear;
-  transition: all 0.7s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 #about-us-carousel .carousel-indicators li.active {
   margin-left: -30px;
   padding-left: 35px;
+}
+#about-us-carousel-mobile {
+  border: 1px solid #cccccc;
+}
+#about-us-carousel-mobile h1 {
+  margin-top: 0;
+  padding-top: 1em;
+  font-size: 2em;
+}
+#about-us-carousel-mobile p {
+  margin-right: 3em;
+}
+#about-us-carousel-mobile .content {
+  min-height: 320px;
+  padding-left: 170px;
+  line-height: 1.5em;
+}
+#about-us-carousel-mobile .plumbing .content {
+  background: url(../images/aboutus/banner-plumbing-mob.jpg) no-repeat top left;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 13/10), only screen and (min-resolution: 120dpi) {
+  #about-us-carousel-mobile .plumbing .content {
+    background-image: url('../images/aboutus/banner-plumbing-mob-2x.jpg');
+    -webkit-background-size: 150px 320px;
+    -moz-background-size: 150px 320px;
+    -o-background-size: 150px 320px;
+    background-size: 150px 320px;
+  }
+}
+#about-us-carousel-mobile .bathrooms .content {
+  background: url(../images/aboutus/banner-bathroom-mob.jpg) no-repeat top left;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 13/10), only screen and (min-resolution: 120dpi) {
+  #about-us-carousel-mobile .bathrooms .content {
+    background-image: url('../images/aboutus/banner-bathroom-mob-2x.jpg');
+    -webkit-background-size: 150px 320px;
+    -moz-background-size: 150px 320px;
+    -o-background-size: 150px 320px;
+    background-size: 150px 320px;
+  }
+}
+#about-us-carousel-mobile .carousel-control.right {
+  right: 7px;
+}
+#about-us-carousel-mobile .carousel-control.left {
+  left: 7px;
+}
+.carousel .plumbing h1 {
+  color: #0d2e56;
+}
+.carousel .plumbing .coloredPanelLink,
+.carousel .plumbing.carousel-link-item {
+  background: #0d2e56;
+}
+.carousel .bathrooms h1 {
+  color: #db1e24;
+}
+.carousel .bathrooms .coloredPanelLink,
+.carousel .bathrooms.carousel-link-item {
+  background: #db1e24;
+}
+.carousel .irrigation h1 {
+  color: #5e792d;
+}
+.carousel .irrigation .coloredPanelLink,
+.carousel .irrigation.carousel-link-item {
+  background: #5e792d;
+}
+.carousel .civil h1 {
+  color: #b65312;
+}
+.carousel .civil .coloredPanelLink,
+.carousel .civil.carousel-link-item {
+  background: #b65312;
+}
+.carousel .hvac-r h1 {
+  color: #0397d7;
+}
+.carousel .hvac-r .coloredPanelLink,
+.carousel .hvac-r.carousel-link-item {
+  background: #0397d7;
+}
+.carousel .onsite h1 {
+  color: #f47836;
+}
+.carousel .onsite .coloredPanelLink,
+.carousel .onsite.carousel-link-item {
+  background: #f47836;
 }
 .coloredPanelLink {
   display: inline-block;
@@ -206,5 +274,26 @@ RESPONSIVE OVERRIDES
   }
   #about-us-carousel .content {
     width: 60%;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .carousel-links {
+    margin-top: -150px !important;
+  }
+}
+@media (max-width: 480px) {
+  #about-us-carousel-mobile h1 {
+    padding-top: 0.5em;
+  }
+  #about-us-carousel-mobile .content {
+    padding-left: 3em;
+    background: none !important;
+    padding-bottom: 1em;
+  }
+  #about-us-carousel-mobile .carousel-control.right {
+    right: 0px;
+  }
+  #about-us-carousel-mobile .carousel-control.left {
+    left: 0px;
   }
 }

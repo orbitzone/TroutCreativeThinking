@@ -27,7 +27,7 @@
                     <h3>About Us</h3>
                     <section class="row-fluid">
                         <div class="span12">
-                            <div id="about-us-carousel" class="carousel">
+                            <div id="about-us-carousel" class="carousel hidden-phone">
                                 <div class="carousel-links">
                                     <h5 class="heading">Our Businesses</h5>
                                     <ol class="carousel-indicators">
@@ -94,6 +94,59 @@
                             <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
                             <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
                              -->
+                            </div>
+
+                            <div id="about-us-carousel-mobile" class="carousel hidden-desktop slide">
+                                
+                                <!-- Carousel items -->
+                                <div class="carousel-inner">
+                                    <div class="active item plumbing">
+                                        <div class="content">
+                                            <h1>Plumbing</h1>
+                                            <p>Thousands of plumbers turn to Reece because of our reputation for “having what you need, when you need it, where you need it.” It's all about delivering the best service possible. A commitment we live by every day.</p>
+                                            <a class="coloredPanelLink" href="#">Discover more</a>
+                                        </div>
+                                    </div>
+                                    <div class="item bathrooms">
+                                        <div class="content">
+                                            <h1>Bathrooms</h1>
+                                            <p>Lipsum sit dolor amet igo what you need, when you need it, where you need it.” It's all about delivering the best service possible. A commitment we live by every day.</p>
+                                            <a class="coloredPanelLink" href="#">Discover more</a>
+                                        </div>
+                                    </div>
+                                    <div class="item irrigation">
+                                        <div class="content">
+                                            <h1>Irrigation</h1>
+                                            <p>Lipsum sit dolor amet igo what you need, when you need it, where you need it.” It's all about delivering the best service possible. A commitment we live by every day.</p>
+                                            <a class="coloredPanelLink" href="#">Discover more</a>
+                                        </div>
+                                    </div>
+                                    <div class="item civil">
+                                        <div class="content">
+                                            <h1>Civil</h1>
+                                            <p>Lipsum sit dolor amet igo what you need, when you need it, where you need it.” It's all about delivering the best service possible. A commitment we live by every day.</p>
+                                            <a class="coloredPanelLink" href="#">Discover more</a>
+                                        </div>
+                                    </div>
+                                    <div class="item hvac-r">
+                                        <div class="content">
+                                            <h1>HVAC-R</h1>
+                                            <p>Lipsum sit dolor amet igo what you need, when you need it, where you need it.” It's all about delivering the best service possible. A commitment we live by every day.</p>
+                                            <a class="coloredPanelLink" href="#">Discover more</a>
+                                        </div>
+                                    </div>
+                                    <div class="item onsite">
+                                        <div class="content">
+                                            <h1>Onsite</h1>
+                                            <p>Lipsum sit dolor amet igo what you need, when you need it, where you need it.” It's all about delivering the best service possible. A commitment we live by every day.</p>
+                                            <a class="coloredPanelLink" href="#">Discover more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <a class="carousel-control left" href="#about-us-carousel-mobile" data-slide="prev">&lsaquo;</a>
+                                <a class="carousel-control right" href="#about-us-carousel-mobile" data-slide="next">&rsaquo;</a>
+                             
                             </div>
 
                         </div>

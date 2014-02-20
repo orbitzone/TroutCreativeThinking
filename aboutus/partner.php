@@ -28,7 +28,25 @@
                     <h3>Partner With Reece</h3>
                     <section class="row-fluid">
                         <div class="span12">
-                            carousel
+                            <div id="carousel-partner" class="carousel slide" data-ride="carousel">
+
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                      <img src="http://placehold.it/1163x523&text=Slide-1" alt="dont forget alt text">
+                                    </div>
+                                    <div class="item">
+                                      <img src="http://placehold.it/1163x523&text=Slide-two" alt="dont forget alt text">
+                                    </div>
+                                </div>
+
+                                <!-- Controls -->
+
+                                <a class="carousel-control left" href="#carousel-partner" data-slide="prev">&lsaquo;</a>
+                                <a class="carousel-control right" href="#carousel-partner" data-slide="next">&rsaquo;</a>
+
+                            </div>
+
 
                         </div>
                     </section>
@@ -59,7 +77,7 @@
                             </article>
                             <!--end brand-->
                             <!--Brand start-->
-                            <article class="span4 brand">
+                            <article class="span4 brand brand-expand-2-parent">
                                 <div class="row-fluid">
                                     <div class="span5">
                                         <a href="#brand-expand-2">
@@ -77,7 +95,7 @@
                             </article>
                             <!--end brand-->
                             <!--Brand start-->
-                            <article class="span4 brand">
+                            <article class="span4 brand brand-expand-3-parent">
                                 <div class="row-fluid">
                                     <div class="span5">
                                         <a href="#brand-expand-3">
@@ -96,7 +114,7 @@
                             <!--end brand-->
                         </div>
                         <!--collapsible brand 1-->
-                        <div class="brand-expand" id="brand-expand-1">
+                        <div class="brand-expand hidden-phone" id="brand-expand-1">
                             <div class="row-fluid">
                                 <div class="span5">
                                     <img src="http://placehold.it/500x410" alt="ALt text">

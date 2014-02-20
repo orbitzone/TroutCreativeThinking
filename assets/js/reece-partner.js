@@ -1,6 +1,6 @@
 $(document).ready(function(){
     //Carousel
-    $('.carousel').carousel({
+    $('#carousel-partner').carousel({
         interval: 3000,
         pause: 'hover'
     });
@@ -14,4 +14,9 @@ $(document).ready(function(){
     $(".brand-close").click(function(){
         $('.brand-expand').removeClass('expanded');
     });
+
+    // $('.brand-expand').each(function(){
+    
+    //     //$(this).clone().insertAfter("#"+parent+"-parent");
+    // });
 });

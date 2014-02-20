@@ -45,10 +45,6 @@ a:focus p {
 .brand {
   margin: 2em 0;
 }
-.brand .brand-logo {
-  float: left;
-  margin-right: 1.5em;
-}
 .brand .brand-name {
   font-size: 1.5em;
   font-weight: normal;

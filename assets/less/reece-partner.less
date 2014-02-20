@@ -18,6 +18,9 @@ a:hover p, a:focus p {
 
 .grey-bg {
 	background: @lightBackground;
+	img {
+		margin-bottom: 1em;
+	}
 }
 
 .inner-wrapper {
@@ -27,13 +30,22 @@ a:hover p, a:focus p {
 .site-footer {
 	margin-top: 0
 }
-.brand {
-
-	.brand-name {
-		font-size: 1.5em;
-		font-weight: normal;
+.why-partner-brands{
+	.clearfix;
+	.brand {
+		
+		.brand-name {
+			font-size: 1.5em;
+			font-weight: normal;
+		}
+		margin-top: 2em;
+		margin-bottom: 2em;
 	}
-	margin: 2em 0;
+	@media (min-width: 767px) {
+		button {
+			width: 80%
+		}
+	}
 }
 .brand-expand {
 	max-height: 0;
@@ -51,6 +63,7 @@ a:hover p, a:focus p {
 	}
 	&.expanded {
 		max-height: 1000px;
+		overflow: visible;
 	}
 	.brand-close {
 		position: absolute;
@@ -60,9 +73,39 @@ a:hover p, a:focus p {
 		font-size: 2em;
 		cursor: pointer;
 	}
+	&:after {
+		content: " ";
+		display: block;
+		position: absolute;
+		border-top: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-left: 20px solid transparent;
+		border-bottom: 20px solid @reeceGrey;
+		top: -40px;
+	}
+	&:nth-child(1n+0):after {
+		left: 3.5%;
+	}	
+	&:nth-child(2n+0):after {
+		left: 37.5%;
+	}
+	&:nth-child(3n+0):after {
+		left: 72%;
+	}
+}
+.collapsible-brands {
+
 }
 .why-partner-intro {
 	p {
 		margin-bottom: 0
+	}
+}
+
+@media (max-width: 979px) {
+	.why-partner-brands .brand {
+		p {
+			margin-bottom: 1em
+		}
 	}
 }

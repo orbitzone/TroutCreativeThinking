@@ -57,7 +57,7 @@
                             <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                         </div>
                         <!--ROW 1 Brands-->
-                        <div class="row-fluid">
+                        <div class="row-fluid why-partner-brands">
                             <!--Brand start-->
                             <article class="span4 brand">
                                 <div class="row-fluid">
@@ -77,7 +77,7 @@
                             </article>
                             <!--end brand-->
                             <!--Brand start-->
-                            <article class="span4 brand brand-expand-2-parent">
+                            <article class="span4 brand">
                                 <div class="row-fluid">
                                     <div class="span5">
                                         <a href="#brand-expand-2">
@@ -95,7 +95,7 @@
                             </article>
                             <!--end brand-->
                             <!--Brand start-->
-                            <article class="span4 brand brand-expand-3-parent">
+                            <article class="span4 brand">
                                 <div class="row-fluid">
                                     <div class="span5">
                                         <a href="#brand-expand-3">
@@ -113,58 +113,61 @@
                             </article>
                             <!--end brand-->
                         </div>
-                        <!--collapsible brand 1-->
-                        <div class="brand-expand hidden-phone" id="brand-expand-1">
-                            <div class="row-fluid">
-                                <div class="span5">
-                                    <img src="http://placehold.it/500x410" alt="ALt text">
-                                </div>
-                                <div class="span7">
-                                    <h3 class="heading">Brand One</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit. </p>
-                                    <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.</p>
-                                    <button class="btn btn-medium" type="button">See Brand 1 Page</button>
-                                    <button class="btn btn-medium" type="button">See Reece Finance Reports</button>
-                                    <a class="brand-close">x</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!--collapsible brand 2-->
-                        <div class="brand-expand" id="brand-expand-2">
-                            <div class="row-fluid">
-                                <div class="span5">
-                                    <img src="http://placehold.it/500x410" alt="ALt text">
-                                </div>
-                                <div class="span7">
-                                    <h3 class="heading">Brand Two</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit. </p>
-                                    <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.</p>
-                                    <button class="btn btn-medium" type="button">See Brand 2 Page</button>
-                                    <button class="btn btn-medium" type="button">See Reece Finance Reports</button>
-                                    <a class="brand-close">x</a>
-                                </div>
-                            </div>
-                        </div>                        
 
-                        <!--collapsible brand 3-->
-                        <div class="brand-expand" id="brand-expand-3">
-                            <div class="row-fluid">
-                                <div class="span5">
-                                    <img src="http://placehold.it/500x410" alt="ALt text">
+                        <div class="collapsible-brands hidden-phone">
+                            <!--collapsible brand 1-->
+                            <div class="brand-expand" id="brand-expand-1">
+                                <div class="row-fluid">
+                                    <div class="span5">
+                                        <img src="http://placehold.it/500x410" alt="ALt text">
+                                    </div>
+                                    <div class="span7">
+                                        <h3 class="heading">Brand One</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit. </p>
+                                        <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.</p>
+                                        <button class="btn btn-medium" type="button">See Brand 1 Page</button>
+                                        <button class="btn btn-medium" type="button">See Reece Finance Reports</button>
+                                        <a class="brand-close">x</a>
+                                    </div>
                                 </div>
-                                <div class="span6">
-                                    <h3 class="heading">Brand Three</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit. </p>
-                                    <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.</p>
-                                    <button class="btn btn-medium" type="button">See Brand 3 Page</button>
-                                    <button class="btn btn-medium" type="button">See Reece Finance Reports</button>
-                                    <a class="brand-close">X</a>
+                            </div>
+                            <!--collapsible brand 2-->
+                            <div class="brand-expand" id="brand-expand-2">
+                                <div class="row-fluid">
+                                    <div class="span5">
+                                        <img src="http://placehold.it/500x410" alt="ALt text">
+                                    </div>
+                                    <div class="span7">
+                                        <h3 class="heading">Brand Two</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit. </p>
+                                        <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.</p>
+                                        <button class="btn btn-medium" type="button">See Brand 2 Page</button>
+                                        <button class="btn btn-medium" type="button">See Reece Finance Reports</button>
+                                        <a class="brand-close">x</a>
+                                    </div>
+                                </div>
+                            </div>                        
+
+                            <!--collapsible brand 3-->
+                            <div class="brand-expand" id="brand-expand-3">
+                                <div class="row-fluid">
+                                    <div class="span5">
+                                        <img src="http://placehold.it/500x410" alt="ALt text">
+                                    </div>
+                                    <div class="span6">
+                                        <h3 class="heading">Brand Three</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit. </p>
+                                        <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.</p>
+                                        <button class="btn btn-medium" type="button">See Brand 3 Page</button>
+                                        <button class="btn btn-medium" type="button">See Reece Finance Reports</button>
+                                        <a class="brand-close">X</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <!--ROW 2 Brands-->
-                        <div class="row-fluid">
+                        <div class="row-fluid why-partner-brands">
                             <!--Brand start-->
                             <article class="span4 brand">
                                 <div class="row-fluid">
@@ -192,7 +195,7 @@
                                         </a>
                                     </div>
                                     <div class="span7">
-                                        <a href="#brand-expand-4">
+                                        <a href="#brand-expand-5">
                                             <h5 class="brand-name">Brand five</h5>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                             <button class="btn btn-medium" type="button">Read more</button>
@@ -221,55 +224,57 @@
                             <!--end brand-->
                         </div>
 
-                        <!--collapsible brand 4-->
-                        <div class="brand-expand" id="brand-expand-4">
-                            <div class="row-fluid">
-                                <div class="span5">
-                                    <img src="http://placehold.it/500x410" alt="ALt text">
-                                </div>
-                                <div class="span7">
-                                    <h3 class="heading">Brand fourr</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit. </p>
-                                    <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.</p>
-                                    <button class="btn btn-medium" type="button">See Brand 1 Page</button>
-                                    <button class="btn btn-medium" type="button">See Reece Finance Reports</button>
-                                    <a class="brand-close">x</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!--collapsible brand 5-->
-                        <div class="brand-expand" id="brand-expand-5">
-                            <div class="row-fluid">
-                                <div class="span5">
-                                    <img src="http://placehold.it/500x410" alt="ALt text">
-                                </div>
-                                <div class="span7">
-                                    <h3 class="heading">Brand fiveee</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit. </p>
-                                    <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.</p>
-                                    <button class="btn btn-medium" type="button">See Brand 2 Page</button>
-                                    <button class="btn btn-medium" type="button">See Reece Finance Reports</button>
-                                    <a class="brand-close">x</a>
+                        <div class="collapsible-brands hidden-phone">
+                            <!--collapsible brand 4-->
+                            <div class="brand-expand" id="brand-expand-4">
+                                <div class="row-fluid">
+                                    <div class="span5">
+                                        <img src="http://placehold.it/500x410" alt="ALt text">
+                                    </div>
+                                    <div class="span7">
+                                        <h3 class="heading">Brand fourr</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit. </p>
+                                        <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.</p>
+                                        <button class="btn btn-medium" type="button">See Brand 1 Page</button>
+                                        <button class="btn btn-medium" type="button">See Reece Finance Reports</button>
+                                        <a class="brand-close">x</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>                        
+                            <!--collapsible brand 5-->
+                            <div class="brand-expand" id="brand-expand-5">
+                                <div class="row-fluid">
+                                    <div class="span5">
+                                        <img src="http://placehold.it/500x410" alt="ALt text">
+                                    </div>
+                                    <div class="span7">
+                                        <h3 class="heading">Brand fiveee</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit. </p>
+                                        <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.</p>
+                                        <button class="btn btn-medium" type="button">See Brand 2 Page</button>
+                                        <button class="btn btn-medium" type="button">See Reece Finance Reports</button>
+                                        <a class="brand-close">x</a>
+                                    </div>
+                                </div>
+                            </div>                        
 
-                        <!--collapsible brand 6-->
-                        <div class="brand-expand" id="brand-expand-6">
-                            <div class="row-fluid">
-                                <div class="span5">
-                                    <img src="http://placehold.it/500x410" alt="ALt text">
-                                </div>
-                                <div class="span6">
-                                    <h3 class="heading">Brand Sixx</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit. </p>
-                                    <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.</p>
-                                    <button class="btn btn-medium" type="button">See Brand 3 Page</button>
-                                    <button class="btn btn-medium" type="button">See Reece Finance Reports</button>
-                                    <a class="brand-close">x</a>
+                            <!--collapsible brand 6-->
+                            <div class="brand-expand" id="brand-expand-6">
+                                <div class="row-fluid">
+                                    <div class="span5">
+                                        <img src="http://placehold.it/500x410" alt="ALt text">
+                                    </div>
+                                    <div class="span6">
+                                        <h3 class="heading">Brand Sixx</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit. </p>
+                                        <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.</p>
+                                        <button class="btn btn-medium" type="button">See Brand 3 Page</button>
+                                        <button class="btn btn-medium" type="button">See Reece Finance Reports</button>
+                                        <a class="brand-close">x</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>                        
+                        </div>                    
                     </section>
 
                 </div>

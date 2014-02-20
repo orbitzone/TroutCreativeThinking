@@ -36,18 +36,39 @@ a:focus p {
 .grey-bg {
   background: #eaeaea;
 }
+.grey-bg img {
+  margin-bottom: 1em;
+}
 .inner-wrapper {
   padding: 0.8em 0 2.5em;
 }
 .site-footer {
   margin-top: 0;
 }
-.brand {
-  margin: 2em 0;
+.why-partner-brands {
+  *zoom: 1;
 }
-.brand .brand-name {
+.why-partner-brands:before,
+.why-partner-brands:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.why-partner-brands:after {
+  clear: both;
+}
+.why-partner-brands .brand {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.why-partner-brands .brand .brand-name {
   font-size: 1.5em;
   font-weight: normal;
+}
+@media (min-width: 767px) {
+  .why-partner-brands button {
+    width: 80%;
+  }
 }
 .brand-expand {
   max-height: 0;
@@ -71,6 +92,7 @@ a:focus p {
 }
 .brand-expand.expanded {
   max-height: 1000px;
+  overflow: visible;
 }
 .brand-expand .brand-close {
   position: absolute;
@@ -80,6 +102,30 @@ a:focus p {
   font-size: 2em;
   cursor: pointer;
 }
+.brand-expand:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  border-top: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+  border-bottom: 20px solid #4c4c4c;
+  top: -40px;
+}
+.brand-expand:nth-child(1n+0):after {
+  left: 3.5%;
+}
+.brand-expand:nth-child(2n+0):after {
+  left: 37.5%;
+}
+.brand-expand:nth-child(3n+0):after {
+  left: 72%;
+}
 .why-partner-intro p {
   margin-bottom: 0;
+}
+@media (max-width: 979px) {
+  .why-partner-brands .brand p {
+    margin-bottom: 1em;
+  }
 }

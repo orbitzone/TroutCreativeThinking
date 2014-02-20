@@ -7,9 +7,9 @@ $(document).ready(function(){
 
     $(".brand a").click(function(e){
         e.preventDefault();
-        $('.brand-expand').removeClass('expanded');
+        $('.brand-expand').hide().removeClass('expanded');
         var target = $(this).attr('href');
-        $(target).addClass('expanded');
+        $(target).show().addClass('expanded');
     });
     $(".brand-close").click(function(){
         $('.brand-expand').removeClass('expanded');

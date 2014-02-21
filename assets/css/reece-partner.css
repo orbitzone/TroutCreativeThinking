@@ -75,6 +75,7 @@ a:focus p {
   background: #4c4c4c;
   overflow: hidden;
   position: relative;
+  clear: both;
   -webkit-transition: 0.6s max-height ease-out;
   -moz-transition: 0.6s max-height ease-out;
   -o-transition: 0.6s max-height ease-out;
@@ -120,6 +121,20 @@ a:focus p {
 }
 .brand-expand:nth-child(3n+0):after {
   left: 72%;
+}
+@media (max-width: 768px) {
+  .brand-expand:after {
+    left: 3.5% !important;
+  }
+  .brand-expand .brand-close {
+    top: 10px;
+    right: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .brand-expand.hidden-desktop {
+    display: none !important;
+  }
 }
 .why-partner-intro p {
   margin-bottom: 0;

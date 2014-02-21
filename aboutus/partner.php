@@ -59,7 +59,7 @@
                         <!--ROW 1 Brands-->
                         <div class="row-fluid why-partner-brands">
                             <!--Brand start-->
-                            <article class="span4 brand">
+                            <article class="span4 brand brand-1">
                                 <div class="row-fluid">
                                     <div class="span5">
                                         <a href="#brand-expand-1">
@@ -77,7 +77,7 @@
                             </article>
                             <!--end brand-->
                             <!--Brand start-->
-                            <article class="span4 brand">
+                            <article class="span4 brand brand-2">
                                 <div class="row-fluid">
                                     <div class="span5">
                                         <a href="#brand-expand-2">
@@ -95,7 +95,7 @@
                             </article>
                             <!--end brand-->
                             <!--Brand start-->
-                            <article class="span4 brand">
+                            <article class="span4 brand brand-3">
                                 <div class="row-fluid">
                                     <div class="span5">
                                         <a href="#brand-expand-3">
@@ -116,7 +116,7 @@
 
                         <div class="collapsible-brands hidden-phone">
                             <!--collapsible brand 1-->
-                            <div class="brand-expand" id="brand-expand-1">
+                            <div class="brand-expand" data-brand-number="brand-expand-1">
                                 <div class="row-fluid">
                                     <div class="span5">
                                         <img src="http://placehold.it/500x410" alt="ALt text">
@@ -132,7 +132,7 @@
                                 </div>
                             </div>
                             <!--collapsible brand 2-->
-                            <div class="brand-expand" id="brand-expand-2">
+                            <div class="brand-expand" data-brand-number="brand-expand-2">
                                 <div class="row-fluid">
                                     <div class="span5">
                                         <img src="http://placehold.it/500x410" alt="ALt text">
@@ -149,7 +149,7 @@
                             </div>                        
 
                             <!--collapsible brand 3-->
-                            <div class="brand-expand" id="brand-expand-3">
+                            <div class="brand-expand" data-brand-number="brand-expand-3">
                                 <div class="row-fluid">
                                     <div class="span5">
                                         <img src="http://placehold.it/500x410" alt="ALt text">
@@ -169,7 +169,7 @@
                         <!--ROW 2 Brands-->
                         <div class="row-fluid why-partner-brands">
                             <!--Brand start-->
-                            <article class="span4 brand">
+                            <article class="span4 brand brand-4">
                                 <div class="row-fluid">
                                     <div class="span5">
                                         <a href="#brand-expand-4">
@@ -187,7 +187,7 @@
                             </article>
                             <!--end brand-->
                             <!--Brand start-->
-                            <article class="span4 brand">
+                            <article class="span4 brand brand-5">
                                 <div class="row-fluid">
                                     <div class="span5">
                                         <a href="#brand-expand-5">
@@ -205,7 +205,7 @@
                             </article>
                             <!--end brand-->
                             <!--Brand start-->
-                            <article class="span4 brand">
+                            <article class="span4 brand brand-6">
                                 <div class="row-fluid">
                                     <div class="span5">
                                         <a href="#brand-expand-6">
@@ -226,7 +226,7 @@
 
                         <div class="collapsible-brands hidden-phone">
                             <!--collapsible brand 4-->
-                            <div class="brand-expand" id="brand-expand-4">
+                            <div class="brand-expand" data-brand-number="brand-expand-4">
                                 <div class="row-fluid">
                                     <div class="span5">
                                         <img src="http://placehold.it/500x410" alt="ALt text">
@@ -242,7 +242,7 @@
                                 </div>
                             </div>
                             <!--collapsible brand 5-->
-                            <div class="brand-expand" id="brand-expand-5">
+                            <div class="brand-expand" data-brand-number="brand-expand-5">
                                 <div class="row-fluid">
                                     <div class="span5">
                                         <img src="http://placehold.it/500x410" alt="ALt text">
@@ -259,7 +259,7 @@
                             </div>                        
 
                             <!--collapsible brand 6-->
-                            <div class="brand-expand" id="brand-expand-6">
+                            <div class="brand-expand" data-brand-number="brand-expand-6">
                                 <div class="row-fluid">
                                     <div class="span5">
                                         <img src="http://placehold.it/500x410" alt="ALt text">

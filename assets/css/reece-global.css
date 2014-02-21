@@ -6130,7 +6130,7 @@ a.badge:focus {
 }
 .carousel-control:hover,
 .carousel-control:focus {
-  color: #ffffff;
+  color: #999999;
   text-decoration: none;
   opacity: 0.9;
   filter: alpha(opacity=90);

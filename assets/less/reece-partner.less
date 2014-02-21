@@ -52,6 +52,7 @@ a:hover p, a:focus p {
 	background: @reeceGrey;
 	overflow: hidden;
 	position: relative;
+	clear: both;
 	.transition(0.6s max-height ease-out);
 	
 	.row-fluid {
@@ -91,6 +92,20 @@ a:hover p, a:focus p {
 	}
 	&:nth-child(3n+0):after {
 		left: 72%;
+	}
+	@media (max-width: 768px) {
+		&:after {
+			left: 3.5% !important
+		}
+		.brand-close {
+			top: 10px;
+			right: 10px;
+		}
+	}
+	&.hidden-desktop {
+		@media (min-width: 768px) {
+			display: none !important
+		}
 	}
 }
 .collapsible-brands {

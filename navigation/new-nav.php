@@ -3,8 +3,6 @@
 
 	<?php 
 		$cssScriptPaths = [
-			"/assets/css/reece-trade-outlet.css",
-			"/assets/css/reece-nav-updated.css",
       "/assets/css/reece-home.css"
 		]; 
 	   	include_once($serverBase."/includes/head/head-generic.php");
@@ -56,7 +54,7 @@
         <li class="cat-block onsite"><a href="/onsite"><span></span>Onsite</a></li>
         <li class="cat-block civil"><a href="/civil"><span></span>Civil</a></li>
         <li class="cat-block hvacr"><a href="/hvacr"><span></span>HVAC-R</a></li>
-        <li class="account"><a href="https://www.reece.com.au/cc/myaccount/m/content/login"><span></span>My Account</a></li>
+        <li class="account"><a href="../my_account/mobile_login.php"><span></span>Login</a></li>
     </ul>
     
     

@@ -1,62 +1,119 @@
-<div class="navbar-container">	
-	<a class="btn btn-navbar hidden-desktop">
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-	</a>
-	<a class="brand hidden-desktop mobile-logo" href="#">Reece</a>
-	<div class=" visible-desktop">
-		<div class="row-fluid navHeader">
-			<a class="brand" href="#" title="Reece">Reece</a>
-			<div class="headerUtilityBar">
-				<form class="headerNavSearchForm">
-					<label for="headerSearchInput"><i class="icon-search icon">&nbsp;</i></label>
-					<input type="search" id="headerSearchInput" placeholder="Search">
-				</form>
-				<ul class="headerUtilityLink">
-					<li class="dropdown locationDropDown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-							<i class="icon-map-marker icon">&nbsp;</i>
-							<span class="location">Collingwood 3066</span>
-							<span class="caret"></span>
-						</a>
-						<div class="dropdown-menu">
-							<form>
-								<input type="text" placeholder="New Location">
-							</form>
-							<ul>
-								<li><a href="#">Collingwood</a></li>
-								<li><a href="#">Richmond</a></li>
-								<li><a href="#">Hawthorn</a></li>
-								<li><a href="#">Toorak</a></li>
-							</ul>						
-						</div>
-						
-					</li>
-					<li>
-						<a href="#">
-							<i class="icon-shopping-cart">&nbsp;</i> Shopping Cart (0)
-						</a>						
-					</li>
-					<li>
-						<a href="#">
-							<i class="icon-user">&nbsp;</i> My Account
-						</a>						
-					</li>					
-				</ul>
-			</div>
-		</div>
-		<nav class="navWrap">
-			<ul class="nav">
-			<?php foreach ($navigationItems as $item) : ?>
-				<?php if ($item == $genericNavActiveMenuItem) : ?>
-					<li class="active"><a href="#"><?php print $item; ?></a></li>
-				<?php else : ?>
-					<li><a href="#"><?php print $item; ?></a></li>
-				<?php endif; ?>
+<?php
+$state = $_GET['state'];
+$retailItems = array(
+    "My Details",
+    "(Order History)",
+    "3D Bathroom Plans",
+    "Product Lines",
+    "Logout",
+);
 
-			<?php endforeach; ?>
-			</ul>
-		</nav>
-	</div>
+if ($state == "loggedIn") {
+    $message = '<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-user">&nbsp;</i> My Account<i class="icon-arrow-down"></i></a>';
+    $box = <<<HTML
+    <div class="dropdown-menu">
+        <span class="message">Welcome Back, Bob </span>
+    </div>
+HTML;
+} elseif ($state == "retail") {
+    $message = '<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-user">&nbsp;</i>Bob, My Account <i class="icon-arrow-down"></i></a>';
+    $box = <<<HTML3
+
+        <div class="dropdown-menu">
+
+HTML3;
+    foreach ($retailItems as $reItems) {
+        $box .= '<a href="#" class="btn btn-reece-primary btn-retail">'.$reItems. '</a> <br />';
+    }
+
+    $box .= "</div></li>";
+} elseif($state == 'register')
+{
+    $message = '<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+    <i class="icon-user">&nbsp;</i> Login <i class="icon-arrow-down"></i></a>';
+    $box = <<<HTML
+<div class="dropdown-menu">
+    <p>Regsiter for a new Reece Account<a href="#" class="btn btn-default btn-login btn-reece-primary ">< Back to log in</a> <br /> </p>
+    <p class="loginDisclaimer clearfix">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non ornare arcu. Curabitur dui est, semper ac faucibus vel, iaculis condimentum odio. Etiam eget felis neque.</p>
+    <form>
+        <input type="radio" name="accType" value="trade" class="left"/> Trade
+        <input type="radio" name="accType" value="retail" class="right"/> Retail
+        <input type="text" placeholder="Email Address" >
+        <input type="text" placeholder="Postcode" >
+        <input type="text" placeholder="Password">
+
+        <a href="#" class="btn btn-reece-secondary">Create Account</a>
+</div>
+HTML;
+}
+elseif ($state == null) {
+    $message = '<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+    <i class="icon-user">&nbsp;</i> Login <i class="icon-arrow-down"></i></a>';
+    $box = <<<HTML
+<div class="dropdown-menu">
+    <p>Login to your <strong>Reece account</strong> </p>
+    <form>
+        <input type="text" placeholder="Email Address">
+        <input type="text" placeholder="Password"> <br />
+
+        <a href="#" class="forgotLink">Forgot you password?</a>
+        <a href="#" class="btn btn-default btn-login btn-reece-primary">Log In</a> <br /> <br />
+
+        <p class="loginDisclaimer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non ornare arcu. Curabitur dui est, semper ac faucibus vel, iaculis condimentum odio. Etiam eget felis neque.</p>
+    </form>
+    <span class="loginNoAccount">Dont have an account?</span> <a href="#" class="btn btn-reece-secondary">Sign up now</a>
+</div>
+HTML;
+}
+
+
+?>
+
+
+<div class="navbar-container">
+    <a class="btn btn-navbar hidden-desktop">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </a>
+    <a class="brand hidden-desktop mobile-logo" href="#">Reece</a>
+
+    <div class=" visible-desktop">
+        <div class="row-fluid navHeader">
+            <a class="brand" href="#" title="Reece">Reece</a>
+
+            <form class="headerNavSearchForm">
+                <input type="search" id="headerSearchInput" placeholder="Search">
+                <label for="headerSearchInput"><i class="icon-search icon">&nbsp;</i></label>
+            </form>
+            <div class="headerUtilityBar">
+
+                <ul class="headerUtilityLink">
+                    <li>
+                        <a href="#">
+                            <i class="icon-shopping-cart">&nbsp;</i> Shopping Cart (0)
+                        </a>
+                    </li>
+
+                    <li class="dropdown locationDropDown">
+                        <?php echo $message; ?>
+                        <?php echo $box; ?>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <nav class="navWrap">
+            <ul class="nav">
+                <?php foreach ($navigationItems as $item) : ?>
+                    <?php if ($item == $genericNavActiveMenuItem) : ?>
+                        <li class="active"><a href="#"><?php print $item; ?></a></li>
+                    <?php else : ?>
+                        <li><a href="#"><?php print $item; ?></a></li>
+                    <?php endif; ?>
+
+                <?php endforeach; ?>
+            </ul>
+        </nav>
+    </div>
 </div>

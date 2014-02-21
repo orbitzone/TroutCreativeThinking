@@ -63,7 +63,7 @@
 		"Store Finder" => array (
 
 		),	
-		"My Account" => array (
+		"Login" => array (
 
 		)								
 	);

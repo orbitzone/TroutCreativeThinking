@@ -6,6 +6,7 @@
 //Application imports
 @import "reece-variables.less";
 
+
 // Global Declarations
 //====================================================================================================================================
 //====================================================================================================================================
@@ -340,7 +341,7 @@ h1, h2, h3, h4, h5, h6 {
         display: block;
         float: left;
         margin: 0;
-        padding: 0 10px 0 5px;
+        padding: 0 0px 0 5px;
         &>li{
             display: block;
             float: left;
@@ -365,6 +366,7 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
     margin: 0;
     padding:5px 10px;
+    background:@ocnavHighlight;
     input{
         background: none;
         border: none;
@@ -393,6 +395,7 @@ h1, h2, h3, h4, h5, h6 {
         display: inline-block;
         width: auto !important;
         margin: 0;
+        color:@ocnavTextColor;
     }
 }
 /* Nav Bar */
@@ -449,24 +452,38 @@ h1, h2, h3, h4, h5, h6 {
     }
     .dropdown-menu{
         margin: 0;
-        padding: 0 0 5px 0;
+        padding: 10px;
         .border-radius(0 0 10px 10px);
         border-top:none;
-        left: -1px;
+        left: -141px;
         width: 100%;
-        min-width: 140px;  
+        min-width: 300px;
+        color:@ocnavTextColor;
+        background:@ocnavHighlight;
+      .forgotLink {
+        color:@ocnavTextColor;
+      }
+      .btn-retail
+      {
+        width:90%;
+      }
+      .btn
+      {
+        float:right;
+      }
     }
+
     form{
         margin: 0;
     }
-    input{
+    input[type=text]{
         background: #f7f7f7;
         border: solid 1px #d1d1d1 !important;
         .box-shadow(none);
         .border-radius(0);
-        margin: 0 auto;
+        margin: 5px;
         display: block;
-        width: 130px;
+        width: 90%;
         height: 15px;
         font-size: 12px;
         box-shadow: none !important;

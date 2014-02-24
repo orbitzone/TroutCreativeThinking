@@ -1,0 +1,246 @@
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#TrendsPage {
+  margin-top: 30px;
+}
+#TrendsPage .well {
+  color: #a7a7a7;
+  min-height: 20px;
+  margin-bottom: 20px;
+  background-color: #eaeaea;
+  border: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+#TrendsPage .well a {
+  color: #d11f1f;
+}
+#TrendsPage hr {
+  height: 3px;
+  color: #000000;
+  background: #000000;
+  font-size: 0;
+  border: 0;
+}
+.trendsHeader {
+  text-align: center !important;
+}
+.trendsHeader p {
+  color: #737171;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.trendsHeader .button {
+  text-align: center !important;
+  background-color: #d11f1f;
+  color: #FFFFFF;
+  padding: 10px 28px;
+  margin: 6px 12px;
+  display: inline-block;
+}
+.trendsHeader .button:hover {
+  text-align: center !important;
+  background-color: #666666;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+#TrendsPage .row-fluid [class*="span"] {
+  margin-left: .5%;
+  margin-bottom: 5px !important;
+}
+#TrendsPage .row-fluid [class*="span"] > img + img {
+  margin-top: 5px;
+}
+#TrendsPage .row-fluid [class*="span"]:first-child {
+  margin-left: 0;
+}
+#TrendsPage .span1 {
+  width: 8%;
+  margin-left: .5%;
+}
+#TrendsPage .span2 {
+  width: 16.25%;
+  margin-left: .5%;
+}
+#TrendsPage .span3 {
+  width: 24.6%;
+  margin-left: .5%;
+}
+#TrendsPage .span4 {
+  width: 32.983932%;
+  margin-left: .5%;
+}
+#TrendsPage .span5 {
+  width: 41.3%;
+  margin-left: .5%;
+}
+#TrendsPage .span6 {
+  width: 49.7%;
+  margin-left: .5%;
+}
+#TrendsPage .span7 {
+  width: 58%;
+  margin-left: .5%;
+}
+#TrendsPage .span8 {
+  width: 66.51%;
+  margin-left: .5%;
+}
+#TrendsPage .span9 {
+  width: 74.9%;
+  margin-left: .5%;
+}
+.trendNote {
+  background-color: #5a5a5a;
+  height: 100%;
+  display: block;
+  margin: auto;
+}
+.productBlock {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  height: 100%;
+}
+.productBlock p {
+  display: inline-block;
+  position: absolute;
+  bottom: 1%;
+  right: 13px;
+  /*    width: 40%;*/
+
+  float: right;
+  margin-bottom: 3px;
+}
+.productBlock .productOverlay {
+  right: 0;
+  left: 0;
+  bottom: -100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: block;
+  position: absolute;
+  margin: auto;
+  text-align: center;
+  padding: 30px 0px 30px 0px;
+  -webkit-transition: bottom 0.5s;
+  -moz-transition: bottom 0.5s;
+  -o-transition: bottom 0.5s;
+  transition: bottom 0.5s;
+}
+.productBlock:hover .productOverlay,
+.productBlock:focus .productOverlay {
+  top: auto;
+  bottom: 0;
+}
+.flex-video {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 67.5%;
+  height: 0;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+.flex-video.widescreen {
+  padding-bottom: 57.25%;
+}
+.flex-video.vimeo {
+  padding-top: 0;
+}
+.flex-video iframe,
+.flex-video object,
+.flex-video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.productOverlay .btn-productOverlay {
+  margin: auto;
+  display: block;
+  width: 60%;
+  max-width: 200px;
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 10px;
+  vertical-align: middle;
+}
+.productOverlay .btn-productOverlay:first-child {
+  margin-bottom: -15px;
+  padding: 12px 10px 12px 10px;
+}
+.productOverlay .btn-productOverlay:hover {
+  background-color: #555555;
+  text-decoration: none;
+}
+.productOverlay .btn-productOverlay .icon {
+  font-size: 22px;
+  vertical-align: middle;
+}
+#TrendsPage .row-fluid .fadeUP {
+  opacity: 0.1;
+}
+@media (max-width: 1020px) {
+  
+}
+@media (max-width: 979px) and (min-width: 744px) {
+  
+}
+@media (max-width: 979px) {
+  
+}
+@media (max-width: 767px) {
+  #TrendsPage .row-fluid [class*="span"] {
+    margin-left: 0;
+    width: auto;
+  }
+  .productBlock p {
+    font-size: 24px;
+  }
+}
+@media (max-width: 640px) {
+  .productBlock p {
+    bottom: 6%;
+  }
+}
+@media (max-width: 480px) {
+  
+}
+@media (max-width: 320px) {
+  .productBlock p {
+    font-size: 18px;
+    bottom: 6%;
+    right: -9px;
+    width: 70%;
+  }
+}

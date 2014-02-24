@@ -16,12 +16,13 @@
                     include_once($serverBase."/includes/nav/nav-generic.php");
                 ?>  
 
-                <?php 
-                    include_once($serverBase."/includes/nav/nav-subnavbar.php");
-                ?>  
+                
 
 
             </div>
+            <?php 
+                include_once($serverBase."/includes/nav/nav-subnavbar.php");
+            ?>  
             <div class="content-container">
                 <div class="inner-wrapper">
                     <h3>About Us</h3>
@@ -227,7 +228,8 @@
                 "/assets/js/bootstrap-transition.js", 
                 "/assets/js/bootstrap-carousel.js",
                 "/assets/js/reece-aboutus.js",         
-                "/assets/js/reece-ocnav.js"
+                "/assets/js/reece-ocnav.js",
+                "/assets/js/reece-hidesubnavbar.js"
                 // "/assets/js/bootstrap-collapse.js",
                 // "/assets/js/bootstrap-dropdown.js"
                 //"/assets/js/micro-template.js",

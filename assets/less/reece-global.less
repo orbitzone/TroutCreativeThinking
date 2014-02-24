@@ -410,8 +410,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 .subnavbar {
     background: #999999;
+    .transition(top 0.2s ease-in-out);
     .clearfix;
     margin: 0 !important;
+    position: fixed;
+    top: 116px;
+    width: 100%;
+    z-index: 5;
+    &.nav-up {
+        top: 74px
+    }
 }
 .subnavbar ul.nav {
     margin: 0 15px;

@@ -86,6 +86,9 @@ include_once($serverBase."/includes/head/head-generic.php");
 					<div class="row-fluid">
 						<div class="span6 productBlock fadeUP">
 							<img src="/assets/images/trends/day-spa/4.jpg">
+								<p><strong>LAUFEN
+								</strong><br>
+								pro A Wall Basin 1050</p>
 								<div class="productOverlay">
 									<a href="#" class="btn-productOverlay">See more Mixers</a> <br />
 									<a href="#" class="btn-productOverlay"><i class="icon-share icon">&nbsp;</i>Share</a>
@@ -93,6 +96,9 @@ include_once($serverBase."/includes/head/head-generic.php");
 						</div>
 						<div class="span4 productBlock fadeUP">
 							<img src="/assets/images/trends/day-spa/5.jpg">
+								<p class="productWidth"><strong>Milli Cube
+								</strong><br>
+								1025 x 850  Heated Wall Rail</p>
 								<div class="productOverlay">
 									<a href="#" class="btn-productOverlay">See more Towel Racks</a> <br />
 									<a href="#" class="btn-productOverlay"><i class="icon-share icon">&nbsp;</i>Share</a>
@@ -119,6 +125,9 @@ include_once($serverBase."/includes/head/head-generic.php");
 						</div>
 						<div class="span4 productBlock fadeUP">
 							<img src="/assets/images/trends/day-spa/9.jpg">
+															<p><strong>AXA Uno
+								</strong><br>
+								BTW Close Coupled Toilet Suite</p>
 								<div class="productOverlay">
 									<a href="#" class="btn-productOverlay">See more Toilets</a> <br />
 									<a href="#" class="btn-productOverlay"><i class="icon-share icon">&nbsp;</i>Share</a>
@@ -131,6 +140,9 @@ include_once($serverBase."/includes/head/head-generic.php");
 							<img src="/assets/images/trends/day-spa/10.jpg">
 							<img src="/assets/images/trends/day-spa/11.jpg">
 							<img src="/assets/images/trends/day-spa/12.jpg">
+															<p><strong>Kado Lure
+								</strong><br>
+								1760 Freestanding Oval Bath White</p>
 								<div class="productOverlay">
 									<a href="#" class="btn-productOverlay">See more Baths</a> <br />
 									<a href="#" class="btn-productOverlay"><i class="icon-share icon">&nbsp;</i>Share</a>

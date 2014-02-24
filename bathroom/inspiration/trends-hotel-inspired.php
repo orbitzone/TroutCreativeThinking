@@ -112,7 +112,7 @@ include_once($serverBase."/includes/head/head-generic.php");
 
 							<div class="span3 fadeUP productBlock">
 								<img src="/assets/images/trends/hotel-inspired/9.jpg">
-								<p><strong>Nikles Pure 140
+								<p class="productWidth"><strong>Nikles Pure 140
 </strong><br>
 									Techno 300 Twin Waterrail</p>
 									<div class="productOverlay">

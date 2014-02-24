@@ -94,8 +94,8 @@ include_once($serverBase."/includes/head/head-generic.php");
 
 						<div class="span4 fadeUP productBlock">
 							<img src="/assets/images/trends/hotel-inspired/6.jpg">
-							<p><strong>Product Name</strong><br>
-								Product Description</p>
+							<p><strong>Roca Meridian</strong><br>
+								BTW Inwall Toilet Pan</p>
 								<div class="productOverlay">
 									<a href="#" class="btn-productOverlay">See more Toilets</a> <br />
 									<a href="#" class="btn-productOverlay"><i class="icon-share icon">&nbsp;</i>Share</a>
@@ -106,14 +106,15 @@ include_once($serverBase."/includes/head/head-generic.php");
 						<div class="row-fluid">
 
 							<div class="span4 fadeUP">
-								<div class="flex-video widescreen"><iframe src="//www.youtube.com/embed/K0-VzvdDSaE?rel=0&wmode=transparent" frameborder="0" allowfullscreen></iframe></div>
+								<div class="flex-video widescreen"><iframe src="//www.youtube.com/embed/K0-VzvdDSaE?rel=0&wmode=transparent&showinfo=0&modestbranding=1&controls=2" frameborder="0" allowfullscreen></iframe></div>
 								<img src="/assets/images/trends/hotel-inspired/8.jpg">
 							</div>
 
 							<div class="span3 fadeUP productBlock">
 								<img src="/assets/images/trends/hotel-inspired/9.jpg">
-								<p><strong>Product Name</strong><br>
-									Product Description</p>
+								<p><strong>Nikles Pure 140
+</strong><br>
+									Techno 300 Twin Waterrail</p>
 									<div class="productOverlay">
 										<a href="#" class="btn-productOverlay">See more Showers</a> <br />
 										<a href="#" class="btn-productOverlay"><i class="icon-share icon">&nbsp;</i>Share</a>
@@ -131,8 +132,10 @@ include_once($serverBase."/includes/head/head-generic.php");
 								<div class="span3 productBlock fadeUP">
 									<img src="/assets/images/trends/hotel-inspired/12.jpg">
 									<img src="/assets/images/trends/hotel-inspired/13.jpg">
+									<p><strong>Milli Edge</strong><br>
+								Soap rack</p>
 									<div class="productOverlay">
-										<a href="#" class="btn-productOverlay">See more Basins</a> <br />
+										<a href="#" class="btn-productOverlay">See more Accessories</a> <br />
 										<a href="#" class="btn-productOverlay"><i class="icon-share icon">&nbsp;</i>Share</a>
 									</div>
 								</div>
@@ -154,6 +157,9 @@ include_once($serverBase."/includes/head/head-generic.php");
 								</div>
 								<div class="span9 productBlock fadeUP">
 									<img src="/assets/images/trends/hotel-inspired/16.jpg">
+									<p><strong>LAUFEN
+</strong><br>
+								pro A Wall Basin 1050</p>
 									<div class="productOverlay">
 										<a href="#" class="btn-productOverlay">See more Basins</a> <br />
 										<a href="#" class="btn-productOverlay"><i class="icon-share icon">&nbsp;</i>Share</a>
@@ -166,6 +172,9 @@ include_once($serverBase."/includes/head/head-generic.php");
 								<div class="span3 productBlock fadeUP">
 									<img src="/assets/images/trends/hotel-inspired/17.png">
 									<img src="/assets/images/trends/hotel-inspired/18.jpg">
+									<p><strong>Teknobili Plus
+</strong><br>
+								Twin Overhead Ceiling Shower</p>
 									<div class="productOverlay">
 										<a href="#" class="btn-productOverlay">See more Showers</a> <br />
 										<a href="#" class="btn-productOverlay"><i class="icon-share icon">&nbsp;</i>Share</a>

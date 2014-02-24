@@ -50,8 +50,8 @@ include_once($serverBase."/includes/head/head-generic.php");
 
 					<div class="row-fluid">
 						<div class="span12 trendsHeader"><br />
-							<p>It's making the bathroom a true destination. Recreating the luxury experience of a high-end hotel bathroom within the home. A focus on light, space and finish throughout. Watch our video with Shayna Blaze to find out more.</p>
-							<p>To explore all bathrooms with the hotel inspired look or all products on trend click buttons below.</p>
+							<p>A wellness oasis that insulates you from the stress of the outside world. Warm tones. Natural materials with a soothing touch. Enjoy tranquility surrounded by feel good things.</p>
+							<p>To explore all bathrooms with the day spa look or all products on trend click buttons below.</p>
 
 							<br />
 							<a href="#" class="button">View Bathrooms</a>  <a href="#" class="button">View Products</a>

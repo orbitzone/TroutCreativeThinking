@@ -40,7 +40,7 @@
                             <blockquote>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </blockquote>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.  Lorem ipsum ipsum dolor sit amet, consectetur adipiscing sollicitudindolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit. </p>
                         </div>
-                        <div class="span4">
+                        <div class="span4 share-price">
                             Share price widget
                         </div>
 
@@ -119,24 +119,24 @@
                 </div>
             </div>
 
-
-            <div class="content-container news">
-                <div class="inner-wrapper">
-                
-                    <h3>News</h3>
-                    <section class="row-fluid">
-                        <div class="span5">  
-                           <img src="/assets/images/aboutus/img-news.jpg" alt="Don't forget alt text">
-                        </div>  
-                        <div class="span7">
-                            <p class="date">23rd December 2013</p>
-                            <h2>Reece excited to announce acquisition of Actrol</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.  Lorem ipsum dolor sit amet, <a href="#">consectetur adipiscing</a></p>
-                        </div>
-                    </section>
+            <div class="news">
+                <div class="content-container">
+                    <div class="inner-wrapper">
+                    
+                        <h3 class="heading">News</h3>
+                        <section class="row-fluid">
+                            <div class="span5">  
+                               <img src="/assets/images/aboutus/img-news.jpg" alt="Don't forget alt text">
+                            </div>  
+                            <div class="span7">
+                                <p class="date">23rd December 2013</p>
+                                <h2>Reece excited to announce acquisition of Actrol</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.  Lorem ipsum dolor sit amet, <a href="#">consectetur adipiscing</a></p>
+                            </div>
+                        </section>
+                    </div>
                 </div>
             </div>
-
 
             <?php 
                 include_once($serverBase."/includes/foot/foot-generic.php");

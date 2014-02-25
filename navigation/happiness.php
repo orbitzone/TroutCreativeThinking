@@ -16,10 +16,9 @@
 					$genericNavActiveMenuItem = "Bathrooms";
 				   	include_once($serverBase."/includes/nav/nav-generic.php");
 				?>
-    <?php
-				   	include_once($serverBase."/includes/nav/nav-happiness.php");
-				?>
+
   </div>
+    <?php include_once($serverBase."/includes/nav/nav-happiness.php"); ?>
   <div class="row-fluid">
     <div id="headCarousel" class="carousel  slide" data-bs-carousel="carousel" data-bs-carousel-interval="0">
       <div class="carousel-inner">
@@ -119,7 +118,8 @@
 			"/assets/js/jquery.mobile.custom.min.js",
 			"/assets/js/reece-ocnav.js",
 			"/assets/js/reece-carousel.js",
-			"/assets/js/reece-match-height.js"
+			"/assets/js/reece-match-height.js",
+            "/assets/js/reece-hidesubnavbar.js"
 		]; 
 	   	include_once($serverBase."/includes/foot/scripts.php");
 	?>

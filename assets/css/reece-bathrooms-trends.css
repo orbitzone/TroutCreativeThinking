@@ -138,7 +138,6 @@
   bottom: 1%;
   right: 13px;
   /*    width: 40%;*/
-
   float: right;
   margin-bottom: 3px;
 }
@@ -219,15 +218,6 @@
 #TrendsPage .row-fluid .fadeUP {
   opacity: 0.1;
 }
-@media (max-width: 1020px) {
-  
-}
-@media (max-width: 979px) and (min-width: 744px) {
-  
-}
-@media (max-width: 979px) {
-  
-}
 @media (max-width: 767px) {
   #TrendsPage .row-fluid [class*="span"] {
     margin-left: 0;
@@ -242,9 +232,6 @@
   .productBlock p {
     bottom: 6%;
   }
-}
-@media (max-width: 480px) {
-  
 }
 @media (max-width: 320px) {
   .productBlock p {

@@ -22,10 +22,8 @@
 						$genericNavActiveMenuItem = "Plumbing";
 					   	include_once($serverBase."/includes/nav/nav-generic.php");
 					?>
-    <?php
-					   	include_once($serverBase."/includes/nav/nav-subnavbar.php");
-					?>
-  </div>
+
+  </div><?php include_once($serverBase."/includes/nav/nav-subnavbar.php"); ?>
   <div class="content-container">
     <div class="inner-wrapper">
       <div id="main" class="plumbing " style="padding-top:10px;"  >
@@ -127,7 +125,8 @@
 			"/assets/js/jquery.mobile.custom.min.js",
 			"/assets/js/reece-ocnav.js",
 			"/assets/js/reece-carousel.js",
-			"/assets/js/reece-match-height.js"
+			"/assets/js/reece-match-height.js",
+            "/assets/js/reece-hidesubnavbar.js"
 		]; 
 	   	include_once($serverBase."/includes/foot/scripts.php");
 	?>

@@ -32,18 +32,7 @@ HTML3;
     $message = '<a class="dropdown-toggle" data-toggle="dropdown" href="#">
     <i class="icon-user">&nbsp;</i> Login <i class="icon-arrow-down"></i></a>';
     $box = <<<HTML
-<div class="dropdown-menu">
-    <p>Regsiter for a new Reece Account<a href="#" class="btn btn-default btn-login btn-reece-primary ">< Back to log in</a> <br /> </p>
-    <p class="loginDisclaimer clearfix">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non ornare arcu. Curabitur dui est, semper ac faucibus vel, iaculis condimentum odio. Etiam eget felis neque.</p>
-    <form>
-        <input type="radio" name="accType" value="trade" class="left"/> Trade
-        <input type="radio" name="accType" value="retail" class="right"/> Retail
-        <input type="text" placeholder="Email Address" >
-        <input type="text" placeholder="Postcode" >
-        <input type="text" placeholder="Password">
 
-        <a href="#" class="btn btn-reece-secondary">Create Account</a>
-</div>
 HTML;
 }
 elseif ($state == null) {
@@ -51,17 +40,32 @@ elseif ($state == null) {
     <i class="icon-user">&nbsp;</i> Login <i class="icon-arrow-down"></i></a>';
     $box = <<<HTML
 <div class="dropdown-menu">
+<div class="login">
     <p>Login to your <strong>Reece account</strong> </p>
     <form>
-        <input type="text" placeholder="Email Address">
+        <input type="text" placeholder="Username">
         <input type="text" placeholder="Password"> <br />
 
         <a href="#" class="forgotLink">Forgot you password?</a>
-        <a href="#" class="btn btn-default btn-login btn-reece-primary">Log In</a> <br /> <br />
+        <a href="/navigation/new-nav.php?state=retail" class="btn btn-default btn-login btn-reece-primary">Log In</a> <br /> <br />
 
         <p class="loginDisclaimer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non ornare arcu. Curabitur dui est, semper ac faucibus vel, iaculis condimentum odio. Etiam eget felis neque.</p>
     </form>
-    <span class="loginNoAccount">Dont have an account?</span> <a href="#" class="btn btn-reece-secondary">Sign up now</a>
+    <span class="loginNoAccount">Dont have an account?</span> <a id="no-account" href="#" class="btn btn-reece-secondary">Sign up now</a>
+</div>
+<div class="register">
+    <p>Regsiter for a new Reece Account<a href="#" id="sign-in" class="btn btn-default btn-login btn-reece-primary ">< Back to log in</a> <br /> </p>
+    <p class="loginDisclaimer clearfix">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non ornare arcu. Curabitur dui est, semper ac faucibus vel, iaculis condimentum odio. Etiam eget felis neque.</p>
+    <form>
+        <input type="radio" name="accType" value="trade" class="left"/> Trade
+        <input type="radio" name="accType" value="retail" class="right"/> Retail
+        <input type="text" placeholder="Email Address" >
+        <input type="text" placeholder="Postcode" >
+        <input type="text" placeholder="Account Number">
+        <input type="text" placeholder="Password">
+
+        <a href="#" class="btn btn-reece-secondary">Create Account</a>
+</div>
 </div>
 HTML;
 }

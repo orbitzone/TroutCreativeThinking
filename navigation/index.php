@@ -18,11 +18,9 @@
 				   	include_once($serverBase."/includes/nav/nav-generic.php");
 				?>
 
-				<?php
-				   	include_once($serverBase."/includes/nav/nav-subnavbar.php");
-				?>
-			</div>
 
+			</div>
+            <?php include_once($serverBase."/includes/nav/nav-subnavbar.php"); ?>
 	    <div class="content-container">
 			<div class="inner-wrapper">
 					<div class="row-fluid">
@@ -73,7 +71,9 @@
 			"/assets/js/reece-carousel.js",
 			"/assets/js/reece-match-height.js",
 			"/assets/js/jscolor/jscolor.js",
-			"/assets/js/gradient-picker.js"
+			"/assets/js/gradient-picker.js",
+            "/assets/js/reece-hidesubnavbar.js",
+            "/assets/js/reece-signon.js"
 		]; 
 	   	include_once($serverBase."/includes/foot/scripts.php");
 	?>

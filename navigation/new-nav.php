@@ -12,9 +12,7 @@
 		<div class="ocmain-wrapper">
 			<div class="navbar navbar-fixed-top topNav">
 						
-					<?php
-					   	include_once($serverBase."/includes/nav/nav-generic.php");
-					?>
+					<?php include_once($serverBase."/includes/nav/nav-generic.php"); ?>
 
 			</div>
       <div class="content-container visible-phone">
@@ -212,7 +210,9 @@
 			"/assets/js/jquery.mobile.custom.min.js",
 			"/assets/js/reece-ocnav.js",
 			"/assets/js/reece-carousel.js",
-			"/assets/js/reece-match-height.js"
+			"/assets/js/reece-match-height.js",
+            "/assets/js/reece-hidesubnavbar.js",
+            "/assets/js/reece-signon.js"
 		]; 
 	   	include_once($serverBase."/includes/foot/scripts.php");
 	?>

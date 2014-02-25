@@ -48,6 +48,8 @@
 }
 .finance .content-container p {
   color: #666666;
+  font-size: 15px;
+  font-weight: 300;
 }
 .carousel-inner {
   min-height: 250px;
@@ -137,6 +139,10 @@
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
 }
+.news h2 {
+  font-size: 40px;
+  margin-bottom: 1em;
+}
 .news .date {
   font-style: italic;
   color: #b2b2b2;
@@ -144,6 +150,7 @@
 }
 .news p {
   line-height: 1.6em;
+  font-size: 16px !important;
 }
 .news a:link,
 .news a:active,

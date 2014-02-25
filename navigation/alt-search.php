@@ -126,7 +126,8 @@
 			"/assets/js/reece-ocnav.js",
 			"/assets/js/reece-carousel.js",
 			"/assets/js/reece-match-height.js",
-            "/assets/js/reece-hidesubnavbar.js"
+            "/assets/js/reece-hidesubnavbar.js",
+            "/assets/js/reece-signon.js"
 		]; 
 	   	include_once($serverBase."/includes/foot/scripts.php");
 	?>

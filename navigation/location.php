@@ -153,6 +153,7 @@
 			"/assets/js/reece-carousel.js",
 			"/assets/js/reece-match-height.js",
             "/assets/js/reece-hidesubnavbar.js"
+
 		]; 
 	   	include_once($serverBase."/includes/foot/scripts.php");
 	?>

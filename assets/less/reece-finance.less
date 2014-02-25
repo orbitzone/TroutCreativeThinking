@@ -1,0 +1,133 @@
+//Bootstrap imports
+@import "bootstrap/variables.less";
+@import "bootstrap/mixins.less";
+
+//Application imports
+@import "reece-variables.less";
+@import "reece-mixins.less";
+
+//Finance Page
+.finance { 
+
+	.heading {
+		border-bottom: 1px solid lighten(@reeceGrey, 60%);
+		padding-bottom: 1em;
+	}
+	.banner {
+		margin-bottom: 2em;
+	}
+	h3, h4 {
+		color: @reeceBlue;
+		margin: 1em 0
+	}
+	blockquote {
+		font-size: 20px;
+		color: lighten(@reeceGrey, 20%);
+		font-weight: 200;
+		border: 0;
+		padding: 0;
+		margin: 1.5em 0;
+		line-height: 1.2em;
+	}
+	p {
+		color: lighten(@reeceGrey, 10%);
+	}
+}
+.carousel-inner {
+	min-height: 250px
+}
+.file-download {
+	.inner-wrapper {
+		@media (min-width: 979px) {
+			margin: 0 157px
+		}
+		@media (min-width: 768px) and (max-width: 979px) {
+			margin: 0 50px
+		}
+	}
+	.nav {
+		border-bottom: 1px solid lighten(@reeceGrey, 50%);
+		border-top: 1px solid lighten(@reeceGrey, 50%);
+		border-right: 1px solid lighten(@reeceGrey, 50%);
+		background: @reeceWhite;
+		li {
+			margin: 0;
+			@media (min-width: 768px) {
+				width: 33.33%;
+			}
+		}
+		a {
+			border-left: 1px solid lighten(@reeceGrey, 50%);
+			margin: 0;
+			text-align: center;
+			color: lighten(@reeceGrey, 10%);
+			border-radius: 0;
+			&:hover {
+				border-left: 1px solid lighten(@reeceGrey, 50%);
+			}
+		}
+		.active a {
+			background: @reeceLightBlue;
+			color: @ocnavTextColor;
+		}
+	}
+	.tab-content { overflow: visible; }
+	.carousel-control{
+		width: 46px;
+		text-indent: -999em;
+		&.right {
+			right: -110px;
+			background: url(../images/btn-carousel-right.png) no-repeat top left
+		}
+		&.left {
+			left: -110px;
+			background: url(../images/btn-carousel-left.png) no-repeat top left
+		}
+	}
+	.icon {
+		display: table;
+		background: @reeceWhite;
+		width: 210px;
+		height: 210px;
+		border: 1px solid lighten(@reeceGrey, 50%);
+		margin-bottom: 1.5em;
+		text-align: center;
+		> div {
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
+	.filename {
+		margin-bottom: 1.5em;
+		line-height: 1.5em;
+	}
+}
+.page-branding {
+    &.text-brand {
+        color: @reeceBlue;
+    }
+}
+
+.news {
+	border-top: 1px solid lighten(@reeceGrey, 60%);
+	border-bottom: 1px solid lighten(@reeceGrey, 60%);
+	.date {
+		font-style: italic;
+		color: lighten(@reeceGrey, 40%);
+		font-size: 16px;
+	}
+	p {
+		line-height: 1.6em
+	}
+	a:link, a:active, a:visited {
+		color: @reeceLightBlue;
+	}
+}
+
+.grey-bg {
+    background: @lightBackground;
+    padding: 5em 0;
+    img {
+        margin-bottom: 1em;
+    }
+}

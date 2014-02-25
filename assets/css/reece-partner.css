@@ -64,6 +64,10 @@ a:focus p {
 .why-partner-brands .brand .brand-name {
   font-size: 1.5em;
   font-weight: normal;
+  color: #009ddb;
+}
+.why-partner-brands .brand a {
+  text-decoration: none;
 }
 @media (min-width: 767px) {
   .why-partner-brands button {
@@ -83,6 +87,7 @@ a:focus p {
 }
 .brand-expand .row-fluid {
   padding: 2em;
+  border-bottom: 7px solid #009ddb;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -138,6 +143,9 @@ a:focus p {
 }
 .why-partner-intro p {
   margin-bottom: 0;
+}
+.page-branding.text-brand {
+  color: #003767;
 }
 @media (max-width: 979px) {
   .why-partner-brands .brand p {

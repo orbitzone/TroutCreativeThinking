@@ -1,0 +1,151 @@
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.finance .heading {
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 1em;
+}
+.finance .banner {
+  margin-bottom: 2em;
+}
+.finance h3,
+.finance h4 {
+  color: #003767;
+  margin: 1em 0;
+}
+.finance blockquote {
+  font-size: 20px;
+  color: #7f7f7f;
+  font-weight: 200;
+  border: 0;
+  padding: 0;
+  margin: 1.5em 0;
+  line-height: 1.2em;
+}
+.finance p {
+  color: #666666;
+}
+.carousel-inner {
+  min-height: 250px;
+}
+@media (min-width: 979px) {
+  .file-download .inner-wrapper {
+    margin: 0 157px;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .file-download .inner-wrapper {
+    margin: 0 50px;
+  }
+}
+.file-download .nav {
+  border-bottom: 1px solid #cccccc;
+  border-top: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  background: #ffffff;
+}
+.file-download .nav li {
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .file-download .nav li {
+    width: 33.33%;
+  }
+}
+.file-download .nav a {
+  border-left: 1px solid #cccccc;
+  margin: 0;
+  text-align: center;
+  color: #666666;
+  border-radius: 0;
+}
+.file-download .nav a:hover {
+  border-left: 1px solid #cccccc;
+}
+.file-download .nav .active a {
+  background: #009ddb;
+  color: #ffffff;
+}
+.file-download .tab-content {
+  overflow: visible;
+}
+.file-download .carousel-control {
+  width: 46px;
+  text-indent: -999em;
+}
+.file-download .carousel-control.right {
+  right: -110px;
+  background: url(../images/btn-carousel-right.png) no-repeat top left;
+}
+.file-download .carousel-control.left {
+  left: -110px;
+  background: url(../images/btn-carousel-left.png) no-repeat top left;
+}
+.file-download .icon {
+  display: table;
+  background: #ffffff;
+  width: 210px;
+  height: 210px;
+  border: 1px solid #cccccc;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+.file-download .icon > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+.file-download .filename {
+  margin-bottom: 1.5em;
+  line-height: 1.5em;
+}
+.page-branding.text-brand {
+  color: #003767;
+}
+.news {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+.news .date {
+  font-style: italic;
+  color: #b2b2b2;
+  font-size: 16px;
+}
+.news p {
+  line-height: 1.6em;
+}
+.news a:link,
+.news a:active,
+.news a:visited {
+  color: #009ddb;
+}
+.grey-bg {
+  background: #eaeaea;
+  padding: 5em 0;
+}
+.grey-bg img {
+  margin-bottom: 1em;
+}

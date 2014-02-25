@@ -7409,6 +7409,11 @@ h6 {
 .read-more:hover i {
   margin-left: 15px;
 }
+.download-pdf {
+  color: #009ddb;
+  text-transform: uppercase;
+  font-weight: bold;
+}
 .ocnav-wrapper {
   display: none;
   position: fixed;

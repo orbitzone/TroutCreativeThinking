@@ -367,7 +367,6 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
-
   *zoom: 1;
   padding: 4px 12px;
   margin-bottom: 0;
@@ -389,7 +388,6 @@
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
   *background-color: #e6e6e6;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
-
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   border: 1px solid #cccccc;
   *border: 0;
@@ -434,7 +432,6 @@
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
   *background-color: #bd362f;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
-
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 .btn-cart:hover,
@@ -749,73 +746,6 @@ LocationDropDown
   display: inline-block;
   width: auto !important;
   margin: 0;
-}
-/* location Drop down */
-.locationDropDown {
-  padding: 5px 10px !important;
-  font-size: 12px;
-  width: 160px;
-  position: relative;
-}
-.locationDropDown a:focus,
-.locationDropDown a:hover {
-  text-decoration: none;
-}
-.locationDropDown.open {
-  background: #ffffff;
-}
-.locationDropDown.open .caret {
-  border-top-color: #333;
-}
-.locationDropDown.open a {
-  color: #333;
-}
-.locationDropDown .dropdown-menu {
-  margin: 0;
-  padding: 0 0 5px 0;
-  -webkit-border-radius: 0 0 10px 10px;
-  -moz-border-radius: 0 0 10px 10px;
-  border-radius: 0 0 10px 10px;
-  border-top: none;
-  left: -1px;
-  width: 100%;
-  min-width: 140px;
-}
-.locationDropDown form {
-  margin: 0;
-}
-.locationDropDown input {
-  background: #f7f7f7;
-  border: solid 1px #d1d1d1 !important;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  margin: 0 auto;
-  display: block;
-  width: 130px;
-  height: 15px;
-  font-size: 12px;
-  box-shadow: none !important;
-  -webkit-box-shadow: none !important;
-  -moz-box-shadow: none !important;
-}
-.locationDropDown ul {
-  margin: 0;
-  padding-top: 5px;
-  font-size: 14px;
-}
-.locationDropDown li {
-  list-style: none;
-  display: block;
-}
-.locationDropDown li a {
-  display: block;
-  padding: 3px 3px 3px 15px;
-  color: #7f7f7f !important;
-  font-size: 13px;
 }
 .breadcrumb > li.locationAnSearch {
   float: right;

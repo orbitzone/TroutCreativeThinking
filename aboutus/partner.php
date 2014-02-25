@@ -86,7 +86,7 @@
                                     </div>
                                     <div class="span7">
                                         <a href="#brand-expand-2">
-                                            <h5 class="brand-name">Brand twooo</h5>
+                                            <h5 class="brand-name">Brand two</h5>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                             <button class="btn btn-medium" type="button">Read more</button>
                                         </a>
@@ -214,7 +214,7 @@
                                     </div>
                                     <div class="span7">
                                         <a href="#brand-expand-6">
-                                            <h5 class="brand-name">Brand sixx</h5>
+                                            <h5 class="brand-name">Brand six</h5>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                             <button class="btn btn-medium" type="button">Read more</button>
                                         </a>
@@ -232,7 +232,7 @@
                                         <img src="http://placehold.it/500x410" alt="ALt text">
                                     </div>
                                     <div class="span7">
-                                        <h3 class="heading">Brand fourr</h3>
+                                        <h3 class="heading">Brand four</h3>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit. </p>
                                         <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.</p>
                                         <button class="btn btn-medium" type="button">See Brand 1 Page</button>
@@ -248,7 +248,7 @@
                                         <img src="http://placehold.it/500x410" alt="ALt text">
                                     </div>
                                     <div class="span7">
-                                        <h3 class="heading">Brand fiveee</h3>
+                                        <h3 class="heading">Brand five</h3>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit. </p>
                                         <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.</p>
                                         <button class="btn btn-medium" type="button">See Brand 2 Page</button>
@@ -265,7 +265,7 @@
                                         <img src="http://placehold.it/500x410" alt="ALt text">
                                     </div>
                                     <div class="span6">
-                                        <h3 class="heading">Brand Sixx</h3>
+                                        <h3 class="heading">Brand Six</h3>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit. </p>
                                         <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.</p>
                                         <button class="btn btn-medium" type="button">See Brand 3 Page</button>

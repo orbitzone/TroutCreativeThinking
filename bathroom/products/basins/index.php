@@ -293,6 +293,7 @@
 				"/assets/js/bootstrap-collapse.js",
 				"/assets/js/bootstrap-dropdown.js",
 				"/assets/js/reece-ocnav.js",
+				"/assets/js/reece-signon.js",
 				"/assets/js/micro-template.js",
 				"/assets/js/reece-ajax-products.js",
 				"/assets/js/reece-carousel.js"

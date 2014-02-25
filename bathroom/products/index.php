@@ -341,6 +341,8 @@
 		  		"/assets/js/bootstrap-carousel.js",
 		  		"/assets/js/bootstrap-collapse.js",
 		  		"/assets/js/reece-ocnav.js",
+		  		"/assets/js/bootstrap-dropdown.js",
+                "/assets/js/reece-signon.js",
 		  		"/assets/js/reece-carousel.js"
 		  	); 
 		  	include_once($serverBase."/includes/foot/scripts.php");

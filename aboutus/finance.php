@@ -156,6 +156,8 @@
                 "/assets/js/jquery.mobile.custom.min.js",
                 "/assets/js/bootstrap-tab.js", 
                 "/assets/js/bootstrap-transition.js", 
+                "/assets/js/bootstrap-dropdown.js",
+                "/assets/js/reece-signon.js",
                 "/assets/js/bootstrap-carousel.js",
                 "/assets/js/reece-finance.js",         
                 "/assets/js/reece-ocnav.js"

@@ -25,19 +25,19 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.finance .heading {
+.finance .content-container .heading {
   border-bottom: 1px solid #e5e5e5;
   padding-bottom: 1em;
 }
-.finance .banner {
+.finance .content-container .banner {
   margin-bottom: 2em;
 }
-.finance h3,
-.finance h4 {
+.finance .content-container h3,
+.finance .content-container h4 {
   color: #003767;
   margin: 1em 0;
 }
-.finance blockquote {
+.finance .content-container blockquote {
   font-size: 20px;
   color: #7f7f7f;
   font-weight: 200;
@@ -46,7 +46,7 @@
   margin: 1.5em 0;
   line-height: 1.2em;
 }
-.finance p {
+.finance .content-container p {
   color: #666666;
 }
 .carousel-inner {

@@ -41,7 +41,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.  Lorem ipsum ipsum dolor sit amet, consectetur adipiscing sollicitudindolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit. </p>
                         </div>
                         <div class="span4 share-price">
-                            Share price widget TBC
+                            <img src="/assets/images/aboutus/dummy-shareprice.png">
                         </div>
 
                     </div>

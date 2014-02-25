@@ -39,7 +39,8 @@ elseif ($state == null) {
     $message = '<a class="dropdown-toggle" data-toggle="dropdown" href="#">
     <i class="icon-user">&nbsp;</i> Login <i class="icon-arrow-down"></i></a>';
     $box = <<<HTML
-<div class="dropdown-menu login">
+<div class="dropdown-menu">
+<div class="login">
     <p>Login to your <strong>Reece account</strong> </p>
     <form>
         <input type="text" placeholder="Username">
@@ -52,7 +53,7 @@ elseif ($state == null) {
     </form>
     <span class="loginNoAccount">Dont have an account?</span> <a id="no-account" href="#" class="btn btn-reece-secondary">Sign up now</a>
 </div>
-<div class="dropdown-menu register">
+<div class="register">
     <p>Regsiter for a new Reece Account<a href="#" id="sign-in" class="btn btn-default btn-login btn-reece-primary ">< Back to log in</a> <br /> </p>
     <p class="loginDisclaimer clearfix">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non ornare arcu. Curabitur dui est, semper ac faucibus vel, iaculis condimentum odio. Etiam eget felis neque.</p>
     <form>
@@ -64,6 +65,7 @@ elseif ($state == null) {
         <input type="text" placeholder="Password">
 
         <a href="#" class="btn btn-reece-secondary">Create Account</a>
+</div>
 </div>
 HTML;
 }

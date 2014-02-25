@@ -25,17 +25,17 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.about-us p {
+.about-us .content-container p {
   color: #666666;
   margin-bottom: 2em;
 }
-.about-us .subnavbar {
+.about-us .content-container .subnavbar {
   background: #003767;
 }
-.about-us .content-container img {
+.about-us .content-container .content-container img {
   margin: 1em 0;
 }
-.about-us .middle-section {
+.about-us .content-container .middle-section {
   border-top: 1px solid #e5e5e5;
   padding-top: 1.5em;
   margin-top: 1.5em;

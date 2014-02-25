@@ -256,6 +256,7 @@
 			"/assets/js/bootstrap-transition.js",
 			"/assets/js/bootstrap-collapse.js",
 			"/assets/js/bootstrap-dropdown.js",
+            "/assets/js/reece-signon.js",
 			"/assets/js/bootstrap-carousel.js",
 			"/assets/js/bootstrap-tooltip.js",
 			"/assets/js/bootstrap-popover.js",

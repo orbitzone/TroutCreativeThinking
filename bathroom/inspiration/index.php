@@ -232,6 +232,7 @@
 		  		"/assets/js/bootstrap-collapse.js",
 		  		"/assets/js/bootstrap-tab.js",
 		  		"/assets/js/bootstrap-dropdown.js",
+                "/assets/js/reece-signon.js",
 		  		"/assets/js/reece-ocnav.js",
 		  		"/assets/js/reece-carousel.js",
 		  		"/assets/js/jquery-ui-1.10.4.custom.min.js",

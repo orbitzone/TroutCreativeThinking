@@ -230,6 +230,8 @@
 		$jsScriptPaths = [
 			"/assets/js/jquery.lazyload.min.js",
 			"/assets/js/jquery.mobile.custom.min.js",
+			"/assets/js/bootstrap-dropdown.js",
+            "/assets/js/reece-signon.js",
 			"/assets/js/reece-ocnav.js",
 			"/assets/js/reece-carousel.js",
 			"/assets/js/reece-popover.js"

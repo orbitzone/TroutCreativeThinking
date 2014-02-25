@@ -316,6 +316,8 @@
                 "/assets/js/jquery.mobile.custom.min.js",
                 "/assets/js/bootstrap-transition.js", 
                 "/assets/js/bootstrap-carousel.js",
+                "/assets/js/bootstrap-dropdown.js",
+                "/assets/js/reece-signon.js",
                 "/assets/js/reece-partner.js",         
                 "/assets/js/reece-ocnav.js"
                 // "/assets/js/bootstrap-collapse.js",

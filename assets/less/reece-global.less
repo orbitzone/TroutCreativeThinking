@@ -463,7 +463,7 @@ h1, h2, h3, h4, h5, h6 {
             border-top-color:#333;
         }
         a {
-            color: #333;
+            color: @reeceLightBlue;
         }
     }
     .dropdown-menu{
@@ -476,9 +476,9 @@ h1, h2, h3, h4, h5, h6 {
         min-width: 300px;
         color:@ocnavTextColor;
         background:@ocnavHighlight;
-      .forgotLink {
-        color:@ocnavTextColor;
-      }
+      // .forgotLink {
+      //   color:@ocnavTextColor;
+      // }
       .btn-retail
       {
         width:90%;
@@ -495,14 +495,20 @@ h1, h2, h3, h4, h5, h6 {
     form{
         margin: 0;
     }
-    input[type=text]{
+    label {
+        display: inline-block;
+        input {
+            margin: 0
+        }
+    }
+    input[type=text], input[type=password], input[type=email], input[type=number]{
         background: #f7f7f7;
         border: solid 1px #d1d1d1 !important;
         .box-shadow(none);
         .border-radius(0);
-        margin: 5px;
+        margin: 5px 0;
         display: block;
-        width: 90%;
+        width: 95%;
         height: 15px;
         font-size: 12px;
         box-shadow: none !important;
@@ -524,7 +530,31 @@ h1, h2, h3, h4, h5, h6 {
             font-size: 13px;
         }
     }
+    .login-form {
+        padding-bottom: 10px;
+        margin-bottom: 5px;
+        border-bottom: 1px solid lighten(@reeceGrey, 10%);
+        input {
+            float: left;
+            width: 45%;
+            margin-left: 0; 
+            margin-right: 0;
+        }
+        .clearfix;
+    }
+    .loginNoAccount {
+        float: left
+    }
+    .loginDisclaimer {
+        line-height: 1.2em;
+        margin-bottom: 5px
+    }
+    input.btn-login {
+        width: auto;
+    }
 }
+
+
 
 /* Happiness */
 .happiness-subNav{
@@ -884,4 +914,10 @@ h1, h2, h3, h4, h5, h6 {
   .actionWrap{
     padding-top: 10px
   }
+}
+//Single sign on (SSO)
+.sso {
+    .trade-form {
+        display: none
+    }
 }

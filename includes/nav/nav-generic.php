@@ -39,32 +39,48 @@ elseif ($state == null) {
     $message = '<a class="dropdown-toggle" data-toggle="dropdown" href="#">
     <i class="icon-user">&nbsp;</i> Login <i class="icon-arrow-down"></i></a>';
     $box = <<<HTML
-<div class="dropdown-menu">
+<div class="dropdown-menu sso">
 <div class="login">
-    <p>Login to your <strong>Reece account</strong> </p>
-    <form>
+    <h5>Login to your <strong>Reece account</strong> </h5>
+    <p class="loginDisclaimer">Lorem ipsum dolor sit amet, adipiscing elit. Ut non ornare arcu.</p>
+    <form class="login-form">
         <input type="text" placeholder="Username">
-        <input type="text" placeholder="Password"> <br />
+        <input type="password" placeholder="Password">
+        <input type="submit" class="btn btn-default btn-small btn-login btn-reece-primary" value="Log In">
+        <a href="#" class="forgotLink">Forgot password?</a>
+        
 
-        <a href="#" class="forgotLink">Forgot you password?</a>
-        <a href="/navigation/new-nav.php?state=retail" class="btn btn-default btn-login btn-reece-primary">Log In</a> <br /> <br />
-
-        <p class="loginDisclaimer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non ornare arcu. Curabitur dui est, semper ac faucibus vel, iaculis condimentum odio. Etiam eget felis neque.</p>
+        
     </form>
-    <span class="loginNoAccount">Dont have an account?</span> <a id="no-account" href="#" class="btn btn-reece-secondary">Sign up now</a>
+    <h5 class="loginNoAccount">Don't have an account?</h5> <input type="submit" id="no-account" class="btn btn-reece-secondary btn-small" value="Sign up now">
 </div>
 <div class="register">
-    <p>Regsiter for a new Reece Account<a href="#" id="sign-in" class="btn btn-default btn-login btn-reece-primary ">< Back to log in</a> <br /> </p>
-    <p class="loginDisclaimer clearfix">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non ornare arcu. Curabitur dui est, semper ac faucibus vel, iaculis condimentum odio. Etiam eget felis neque.</p>
+    <a href="#" id="sign-in">< Back to log in</a>
+    <h5>Register for a new Reece Account </h5>
+    <p class="loginDisclaimer">Lorem ipsum dolor sit amet, non ornare arcu. Curabitur dui est, semper ac faucibus vel.<br><br></p>
     <form>
-        <input type="radio" name="accType" value="trade" class="left"/> Trade
-        <input type="radio" name="accType" value="retail" class="right"/> Retail
-        <input type="text" placeholder="Email Address" >
-        <input type="text" placeholder="Postcode" >
-        <input type="text" placeholder="Account Number">
-        <input type="text" placeholder="Password">
+        <label><input type="radio" id="trade-radio" name="accType" value="trade" class="left"/> Trade</label>
+        <label><input type="radio" id="retail-radio" name="accType" value="retail" class="right"/> Retail</label>
 
-        <a href="#" class="btn btn-reece-secondary">Create Account</a>
+        <div class="retail-form">
+            <input type="text" placeholder="Name" >
+            <input type="number" placeholder="Phone" >
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <input type="submit" class="btn btn-reece-secondary btn-small" value="Create Account">
+        </div>
+        <div class="trade-form">
+            <p class="loginDisclaimer">Lorem ipsum sit dolor amet  consectetur adipiscing urabitur dui est semper elit.</p>
+            <input type="text" placeholder="Name" >
+            <input type="text" placeholder="Phone" >
+            <input type="number" placeholder="Business Postcode">
+            <input type="email" placeholder="Email">
+            <p class="loginDisclaimer">Alternatively, urabitur dui est, <a href="#">sempersum</a> dolor sit amet, consectetur adipiscing elit. Ut non ornare arcu.</p>
+            <input type="submit" class="btn btn-reece-secondary btn-small" value="Submit Account Request">
+        </div>
+
+        
+    </form>
 </div>
 </div>
 HTML;

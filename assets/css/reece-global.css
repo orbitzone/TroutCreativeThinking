@@ -7769,7 +7769,7 @@ h6 {
   border-top-color: #333;
 }
 .locationDropDown.open a {
-  color: #333;
+  color: #009ddb;
 }
 .locationDropDown .dropdown-menu {
   margin: 0;
@@ -7784,9 +7784,6 @@ h6 {
   color: #ffffff;
   background: #4d4d4d;
 }
-.locationDropDown .dropdown-menu .forgotLink {
-  color: #ffffff;
-}
 .locationDropDown .dropdown-menu .btn-retail {
   width: 90%;
 }
@@ -7799,7 +7796,16 @@ h6 {
 .locationDropDown form {
   margin: 0;
 }
-.locationDropDown input[type=text] {
+.locationDropDown label {
+  display: inline-block;
+}
+.locationDropDown label input {
+  margin: 0;
+}
+.locationDropDown input[type=text],
+.locationDropDown input[type=password],
+.locationDropDown input[type=email],
+.locationDropDown input[type=number] {
   background: #f7f7f7;
   border: solid 1px #d1d1d1 !important;
   -webkit-box-shadow: none;
@@ -7808,9 +7814,9 @@ h6 {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
-  margin: 5px;
+  margin: 5px 0;
   display: block;
-  width: 90%;
+  width: 95%;
   height: 15px;
   font-size: 12px;
   box-shadow: none !important;
@@ -7831,6 +7837,37 @@ h6 {
   padding: 3px 3px 3px 15px;
   color: #7f7f7f !important;
   font-size: 13px;
+}
+.locationDropDown .login-form {
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #666666;
+  *zoom: 1;
+}
+.locationDropDown .login-form input {
+  float: left;
+  width: 45%;
+  margin-left: 0;
+  margin-right: 0;
+}
+.locationDropDown .login-form:before,
+.locationDropDown .login-form:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.locationDropDown .login-form:after {
+  clear: both;
+}
+.locationDropDown .loginNoAccount {
+  float: left;
+}
+.locationDropDown .loginDisclaimer {
+  line-height: 1.2em;
+  margin-bottom: 5px;
+}
+.locationDropDown input.btn-login {
+  width: auto;
 }
 /* Happiness */
 .happiness-subNav {
@@ -8116,4 +8153,7 @@ h6 {
 }
 .locationModal .actionWrap {
   padding-top: 10px;
+}
+.sso .trade-form {
+  display: none;
 }

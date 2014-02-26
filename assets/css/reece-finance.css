@@ -123,6 +123,11 @@
   display: table-cell;
   vertical-align: middle;
 }
+.file-download .inside {
+  width: 210px;
+  text-align: left;
+  margin: auto;
+}
 .file-download .filename {
   margin-bottom: 1.5em;
   line-height: 1.5em;
@@ -131,6 +136,16 @@
   .file-download .item > div {
     margin-bottom: 3em;
   }
+}
+.file-download .span4:nth-child(2) {
+  text-align: center;
+}
+.file-download .span4:nth-child(3) {
+  text-align: right;
+  padding-left: 2px;
+}
+.file-download .span4:nth-child(3) .inside {
+  float: right;
 }
 .page-branding.text-brand {
   color: #003767;

@@ -7410,6 +7410,9 @@ h6 {
   text-transform: uppercase;
   font-weight: bold;
 }
+.download-pdf:hover {
+  text-decoration: none;
+}
 .ocnav-wrapper {
   display: none;
   position: fixed;

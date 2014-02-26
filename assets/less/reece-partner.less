@@ -7,7 +7,7 @@
 @import "reece-mixins.less";
 
 
-.partner .content-container p {
+.content-container p {
     color: #666666;
     margin-bottom: 2em;
 }
@@ -45,6 +45,10 @@ a:hover p, a:focus p {
         a {
             text-decoration: none;
         }
+        p {
+            height: 45px;
+            overflow: hidden
+        }
     }
     @media (min-width: 767px) {
         button {
@@ -59,8 +63,16 @@ a:hover p, a:focus p {
     position: relative;
     clear: both;
 
-    .transition(0.6s max-height ease-out);
+    .transition(0.8s max-height ease-out);
     
+    .brand-buttons {
+        position: absolute;
+        bottom: 35px;
+    }
+    .brand-desc {
+        max-height: 250px;
+        overflow: hidden
+    }
     .row-fluid {
         padding: 2em;
         border-bottom: 7px solid @reeceLightBlue;

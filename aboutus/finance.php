@@ -67,39 +67,50 @@
                                     <div class="carousel-inner"> 
                                         <div class="item active row-fluid"><!--max 3 span4 per slide item please-->
                                             <div class="span4">
-                                                <div class="icon"><div><img src="/assets/images/aboutus/ico-sharetrading.png" alt="Policy on Share Trading for Directors and Employees"></div></div>
-                                                <p class="filename">Policy on Share Trading for Directors and Employees</p>
-                                                <a href="#" class="download-pdf"><span class="icon-file"></span>
- Download PDF</a>
+                                                <div class="inside">
+                                                    <div class="icon"><div><img src="/assets/images/aboutus/ico-sharetrading.png" alt="Policy on Share Trading for Directors and Employees"></div></div>
+                                                    <p class="filename">Policy on Share Trading for Directors and Employees</p>
+                                                    <a href="#" class="download-pdf"><span class="icon-file"></span>
+     Download PDF</a>
+                                                </div>
                                             </div>
                                             <div class="span4">
-                                                <div class="icon"><div><img src="/assets/images/aboutus/ico-codeconduct.png" alt="Policy on Share Trading for Directors and Employees"></div></div>
-                                                <p class="filename">Code of Conduct for Directors and Senior Executives</p>
-                                                <a href="#" class="download-pdf"><span class="icon-file"></span></span> Download PDF</a>
+                                                <div class="inside">
+                                                    <div class="icon"><div><img src="/assets/images/aboutus/ico-codeconduct.png" alt="Policy on Share Trading for Directors and Employees"></div></div>
+                                                    <p class="filename">Code of Conduct for Directors and Senior Executives</p>
+                                                    <a href="#" class="download-pdf"><span class="icon-file"></span></span> Download PDF</a>
+                                                </div>
                                             </div>
                                             <div class="span4">
-                                                <div class="icon"><div><img src="/assets/images/aboutus/ico-codebusiness.png" alt="Policy on Share Trading for Directors and Employees"></div></div>
-                                                <p class="filename">Code of Business Ethics and Conduct</p>
-                                                <a href="#" class="download-pdf"><span class="icon-file"></span> Download PDF</a>
+                                                <div class="inside">
+                                                    <div class="icon"><div><img src="/assets/images/aboutus/ico-codebusiness.png" alt="Policy on Share Trading for Directors and Employees"></div></div>
+                                                    <p class="filename">Code of Business Ethics and Conduct</p>
+                                                    <a href="#" class="download-pdf"><span class="icon-file"></span> Download PDF</a>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="item row-fluid">
-                                            
                                             <div class="span4">
-                                                <div class="icon"><div><img src="/assets/images/aboutus/ico-codeconduct.png" alt="Policy on Share Trading for Directors and Employees"></div></div>
-                                                <p class="filename">Code of Conduct for Directors and Senior Executives</p>
-                                                <a href="#" class="download-pdf"><span class="icon-file"></span></span> Download PDF</a>
+                                                <div class="inside">
+                                                    <div class="icon"><div><img src="/assets/images/aboutus/ico-codeconduct.png" alt="Policy on Share Trading for Directors and Employees"></div></div>
+                                                    <p class="filename">Code of Conduct for Directors and Senior Executives</p>
+                                                    <a href="#" class="download-pdf"><span class="icon-file"></span></span> Download PDF</a>
+                                                </div>
                                             </div>
                                             <div class="span4">
-                                                <div class="icon"><div><img src="/assets/images/aboutus/ico-codebusiness.png" alt="Policy on Share Trading for Directors and Employees"></div></div>
-                                                <p class="filename">Code of Business Ethics and Conduct</p>
-                                                <a href="#" class="download-pdf"><span class="icon-file"></span> Download PDF</a>
+                                                <div class="inside">
+                                                    <div class="icon"><div><img src="/assets/images/aboutus/ico-codebusiness.png" alt="Policy on Share Trading for Directors and Employees"></div></div>
+                                                    <p class="filename">Code of Business Ethics and Conduct</p>
+                                                    <a href="#" class="download-pdf"><span class="icon-file"></span> Download PDF</a>
+                                                </div>
                                             </div>
                                             <div class="span4">
-                                                <div class="icon"><div><img src="/assets/images/aboutus/ico-sharetrading.png" alt="Policy on Share Trading for Directors and Employees"></div></div>
-                                                <p class="filename">Policy on Share Trading for Directors and Employees</p>
-                                                <a href="#" class="download-pdf"><span class="icon-file"></span>
- Download PDF</a>
+                                                <div class="inside">
+                                                    <div class="icon"><div><img src="/assets/images/aboutus/ico-sharetrading.png" alt="Policy on Share Trading for Directors and Employees"></div></div>
+                                                    <p class="filename">Policy on Share Trading for Directors and Employees</p>
+                                                    <a href="#" class="download-pdf"><span class="icon-file"></span>
+     Download PDF</a>
+                                                </div>
                                             </div>
                                         </div>
 

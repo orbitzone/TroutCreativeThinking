@@ -123,10 +123,14 @@
                                     </div>
                                     <div class="span7">
                                         <h3 class="heading">Brand One</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit. </p>
-                                        <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.</p>
-                                        <button class="btn btn-medium" type="button">See Brand 1 Page</button>
-                                        <button class="btn btn-medium" type="button">See Reece Finance Reports</button>
+                                        <div class="brand-desc">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit. </p>
+                                            <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.</p>
+                                        </div>
+                                        <div class="brand-buttons">
+                                            <button class="btn btn-medium" type="button">See Brand 1 Page</button>
+                                            <button class="btn btn-medium" type="button">See Reece Finance Reports</button>
+                                        </div>
                                         <a class="brand-close">x</a>
                                     </div>
                                 </div>
@@ -139,10 +143,13 @@
                                     </div>
                                     <div class="span7">
                                         <h3 class="heading">Brand Two</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit. </p>
-                                        <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.</p>
-                                        <button class="btn btn-medium" type="button">See Brand 2 Page</button>
-                                        <button class="btn btn-medium" type="button">See Reece Finance Reports</button>
+                                        <div class="brand-desc">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit. </p>
+                                        </div>
+                                        <div class="brand-buttons">
+                                            <button class="btn btn-medium" type="button">See Brand 2 Page</button>
+                                            <button class="btn btn-medium" type="button">See Reece Finance Reports</button>
+                                        </div>
                                         <a class="brand-close">x</a>
                                     </div>
                                 </div>
@@ -156,10 +163,13 @@
                                     </div>
                                     <div class="span6">
                                         <h3 class="heading">Brand Three</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit. </p>
-                                        <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.</p>
-                                        <button class="btn btn-medium" type="button">See Brand 3 Page</button>
-                                        <button class="btn btn-medium" type="button">See Reece Finance Reports</button>
+                                        <div class="brand-desc">
+                                            <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.</p>
+                                        </div>
+                                        <div class="brand-buttons">
+                                            <button class="btn btn-medium" type="button">See Brand 3 Page</button>
+                                            <button class="btn btn-medium" type="button">See Reece Finance Reports</button>
+                                        </div>
                                         <a class="brand-close">X</a>
                                     </div>
                                 </div>
@@ -233,10 +243,14 @@
                                     </div>
                                     <div class="span7">
                                         <h3 class="heading">Brand four</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit. </p>
-                                        <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.</p>
-                                        <button class="btn btn-medium" type="button">See Brand 1 Page</button>
-                                        <button class="btn btn-medium" type="button">See Reece Finance Reports</button>
+                                        <div class="brand-desc">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit. </p>
+                                            <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.</p>
+                                        </div>
+                                        <div class="brand-buttons">
+                                            <button class="btn btn-medium" type="button">See Brand 4 Page</button>
+                                            <button class="btn btn-medium" type="button">See Reece Finance Reports</button>
+                                        </div>
                                         <a class="brand-close">x</a>
                                     </div>
                                 </div>
@@ -249,10 +263,14 @@
                                     </div>
                                     <div class="span7">
                                         <h3 class="heading">Brand five</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit. </p>
-                                        <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.</p>
-                                        <button class="btn btn-medium" type="button">See Brand 2 Page</button>
-                                        <button class="btn btn-medium" type="button">See Reece Finance Reports</button>
+                                        <div class="brand-desc">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit. </p>
+                                            <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.</p>
+                                        </div>
+                                        <div class="brand-buttons">
+                                            <button class="btn btn-medium" type="button">See Brand 5 Page</button>
+                                            <button class="btn btn-medium" type="button">See Reece Finance Reports</button>
+                                        </div>
                                         <a class="brand-close">x</a>
                                     </div>
                                 </div>
@@ -266,10 +284,14 @@
                                     </div>
                                     <div class="span6">
                                         <h3 class="heading">Brand Six</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit. </p>
-                                        <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.</p>
-                                        <button class="btn btn-medium" type="button">See Brand 3 Page</button>
-                                        <button class="btn btn-medium" type="button">See Reece Finance Reports</button>
+                                        <div class="brand-desc">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit. </p>
+                                            <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.</p>
+                                        </div>
+                                        <div class="brand-buttons">
+                                            <button class="btn btn-medium" type="button">See Brand 6 Page</button>
+                                            <button class="btn btn-medium" type="button">See Reece Finance Reports</button>
+                                        </div>
                                         <a class="brand-close">x</a>
                                     </div>
                                 </div>

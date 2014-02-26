@@ -102,6 +102,11 @@
 			vertical-align: middle;
 		}
 	}
+	.inside {
+		width: 210px;
+		text-align: left;
+		margin: auto
+	}
 	.filename {
 		margin-bottom: 1.5em;
 		line-height: 1.5em;
@@ -109,6 +114,16 @@
 	@media (max-width: 768px) {
 		.item > div {
 			margin-bottom: 3em;
+		}
+	}
+	.span4:nth-child(2) {
+		text-align: center;
+	}
+	.span4:nth-child(3) {
+		text-align: right;
+		padding-left: 2px;
+		.inside {
+			float: right
 		}
 	}
 }

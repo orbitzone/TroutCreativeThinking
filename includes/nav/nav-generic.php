@@ -46,7 +46,7 @@ elseif ($state == null) {
     <form class="login-form">
         <input type="text" placeholder="Username">
         <input type="password" placeholder="Password">
-        <input type="submit" class="btn btn-default btn-small btn-login btn-reece-primary" value="Log In">
+        <input type="button" class="btn btn-default btn-small btn-login btn-reece-primary" onclick="window.location.href='?state=retail'" value="Log In">
         <a href="#" class="forgotLink">Forgot password?</a>
         
 

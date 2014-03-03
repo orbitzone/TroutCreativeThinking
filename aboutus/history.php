@@ -17,16 +17,16 @@
                 ?>  
             </div>
         <div class="nav-history">
-            <ul class="nav nav-tabs">
-                <li><a href="#slide-1">dot 1</a></li>
-                <li><a href="#slide-2">dot 2</a></li>
+            <ul class="nav">
+                <li><a href="#slide-1">Title</a></li>
+                <li><a href="#slide-2">1910</a></li>
+                <li><a href="#slide-3">1920</a></li>
             </ul>
         </div>    
 
         <section id="slide-1">
             <div class="content-container">
-                <img src="/assets/images/aboutus/history/logo-reece.png" alt=" " class="reece-logo"
-                    
+                <img src="/assets/images/aboutus/history/logo-reece.png" alt=" " class="reece-logo" 
                     data-0="opacity: 1" 
                     data-100="opacity:0.1"
                 >
@@ -46,13 +46,27 @@
 
             </div>
          </section>
+
         <section id="slide-2">
             <div class="content-container">
                 <h1>1910</h1>
                 <h2>Harold Joseph Reece begins selling goods from the back of his truck.</h2>
 
             </div>
-        </section>    
+        </section> 
+
+        <section id="slide-3">
+         <div class="wave" 
+            data-bottom-top="background-position: 0px 0px"
+            data-top-top="background-position: 500px 0px"
+            data-anchor-target="#slide-3"
+         ></div>
+             <div class="content-container">
+
+                 <h1>1920</h1>
+                 <h2>Lorem ipsum sit dolor amet concesteur.</h2>
+             </div>
+        </section>   
 
 
 

@@ -9,23 +9,46 @@
 .history {
 	section {
 		position: relative;
+		color: @reeceWhite;
 	}
 	.content-container {
 		text-align: center;
 	}
 }
-.water-drop {
-	position: relative;
-	top: 0%;
-	z-index: 10;
-}
+
 .nav-history {
 	position: fixed;
-	right: 0;
-	top: 20%;
-	z-index: 50
+	right: 25px;
+	top: 40%;
+	z-index: 50;
+	li {
+		text-align: center
+	}
+	a, a:link, a:visited, a:active {
+		display: block;
+		text-indent: -999em;
+		background: @reeceGrey;
+		width: 13px;
+		height: 13px;
+		margin: 0 auto 12px auto;
+		border: 2px solid rgba(255, 255, 255, 100%);
+		.border-radius(15px);
+		.transition(0.5s all ease-in)
+	}
+	a:hover {
+		background: lighten(@reeceGrey, 20%)
+	}
+	.active {
+		a, a:link, a:visited, a:active {
+			background: @reeceBlue;
+			width: 17px;
+			height: 17px;
+		}
+
+	}
 }
 #slide-1 {
+	color: @grayDarker;
 	h1 { font-size: 74px;}
 	h3 { 
 		font-size: 32px;
@@ -42,13 +65,17 @@
 		display: inline-block;
 		margin: 3em 0;
 	}
+	.water-drop {
+		position: relative;
+		top: 0%;
+		z-index: 10;
+	}
 }
 
 #slide-2 {
-	background: url(../images/aboutus/history/bg-blue-tools.png) no-repeat top left;
+	background: #142533 url(../images/aboutus/history/bg-blue-tools.png) no-repeat top left;
 	background-size: 100% auto;
-	color: @reeceWhite;
-	height: 1238px;
+	height: 1150px;
 	h1 {
 		font-size: 158px;
 		text-align: center;
@@ -59,5 +86,25 @@
 		font-size: 71px;
 		width: 750px;
 		margin: auto;
+	}
+}
+
+#slide-3 {
+	.wave { 
+		height: 106px;
+		position: relative;
+		top: -156px;
+		background: url(../images/aboutus/history/bg-wave.png) repeat-x;
+	}
+	padding: 4em 0;
+	background: #33424f;
+	h1 {
+		font-size: 158px;
+	}
+	h2 {
+		font-weight: 100;
+		font-size: 71px;
+		width: 750px;
+		margin: auto auto 3em auto;
 	}
 }

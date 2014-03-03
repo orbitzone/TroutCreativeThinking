@@ -44,7 +44,8 @@
 .nav-history a,
 .nav-history a:link,
 .nav-history a:visited,
-.nav-history a:active {
+.nav-history a:active,
+.nav-history a:focus {
   display: block;
   text-indent: -999em;
   background: #4c4c4c;
@@ -52,6 +53,7 @@
   height: 13px;
   margin: 0 auto 12px auto;
   border: 2px solid #ffffff;
+  outline: none;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;

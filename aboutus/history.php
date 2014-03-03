@@ -47,7 +47,10 @@
             </div>
          </section>
 
-        <section id="slide-2">
+        <section id="slide-2"
+            data-bottom-top="left: -80%"
+            data-center-top="left: 0";
+        >
             <div class="content-container">
                 <h1>1910</h1>
                 <h2>Harold Joseph Reece begins selling goods from the back of his truck.</h2>

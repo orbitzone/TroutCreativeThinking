@@ -24,7 +24,7 @@
 	li {
 		text-align: center
 	}
-	a, a:link, a:visited, a:active {
+	a, a:link, a:visited, a:active, a:focus {
 		display: block;
 		text-indent: -999em;
 		background: @reeceGrey;
@@ -32,8 +32,9 @@
 		height: 13px;
 		margin: 0 auto 12px auto;
 		border: 2px solid rgba(255, 255, 255, 100%);
+		outline: none;
 		.border-radius(15px);
-		.transition(0.5s all ease-in)
+		.transition(0.5s all ease-in);
 	}
 	a:hover {
 		background: lighten(@reeceGrey, 20%)
@@ -44,7 +45,6 @@
 			width: 17px;
 			height: 17px;
 		}
-
 	}
 }
 #slide-1 {

@@ -1,0 +1,81 @@
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.history section {
+  position: relative;
+}
+.history .content-container {
+  text-align: center;
+}
+.water-drop {
+  position: relative;
+  top: 0%;
+  z-index: 10;
+}
+.nav-history {
+  position: fixed;
+  right: 0;
+  top: 20%;
+  z-index: 50;
+}
+#slide-1 {
+  padding: 2em 0;
+}
+#slide-1 h1 {
+  font-size: 74px;
+}
+#slide-1 h3 {
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 200;
+}
+#slide-1 p {
+  width: 550px;
+  margin: auto;
+}
+#slide-1 .reece-logo {
+  opacity: 1;
+  display: inline-block;
+  margin: 3em 0;
+}
+#slide-2 {
+  background: url(../images/aboutus/history/bg-blue-tools.png) no-repeat top left;
+  background-size: 100% auto;
+  color: #ffffff;
+  height: 1238px;
+}
+#slide-2 h1 {
+  font-size: 158px;
+  text-align: center;
+  padding-top: 520px;
+}
+#slide-2 h2 {
+  font-weight: 100;
+  font-size: 71px;
+  width: 750px;
+  margin: auto;
+}

@@ -97,21 +97,7 @@
  
             ]; 
             include_once($serverBase."/includes/foot/scripts.php");
-        ?>      
-
-        <script type="text/html" id="filter_block_template">
-
-            <div class="brand-block span6">
-                <h3 class="brand-title">
-                    <a href="#"><%=title%></a>
-                </h3>                                       
-                <a class="brand-media" href="#"><img src="<%=media%>"></a>
-                <p>
-                    <%=content%>
-                </p>
-            </div>
-
-        </script>                   
+        ?>                      
 
     </body>
 </html>

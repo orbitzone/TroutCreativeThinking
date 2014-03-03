@@ -342,29 +342,9 @@
                 "/assets/js/reece-signon.js",
                 "/assets/js/reece-partner.js",         
                 "/assets/js/reece-ocnav.js"
-                // "/assets/js/bootstrap-collapse.js",
-                // "/assets/js/bootstrap-dropdown.js"
-                //"/assets/js/micro-template.js",
-                //"/assets/js/reece-ajax-filter.js",
-                //"/assets/js/reece-carousel.js",
-                //"/assets/js/reece-products.js"
             ]; 
             include_once($serverBase."/includes/foot/scripts.php");
-        ?>      
-
-        <script type="text/html" id="filter_block_template">
-
-            <div class="brand-block span6">
-                <h3 class="brand-title">
-                    <a href="#"><%=title%></a>
-                </h3>                                       
-                <a class="brand-media" href="#"><img src="<%=media%>"></a>
-                <p>
-                    <%=content%>
-                </p>
-            </div>
-
-        </script>                   
+        ?>                       
 
     </body>
 </html>

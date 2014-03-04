@@ -67,7 +67,7 @@
                             <h4>Careers</h4>
                             <p>Reece is a real people business that offers unlimited career possibilities across a wide range of areas. To find out more, visit our <a href="#">careers section</a>. </p>
                         </section>
-                        <section class="span4 careers">
+                        <section class="span4 account-update">
                             <div class="icon"></div>
                             <h4>Account Updates</h4>
                             <p>To update your Reece account information including change of address or phone number details, contact our <a href="#">Accounts team</a>. </p>
@@ -84,7 +84,7 @@
                 </div>
             </div>
 
-            <div class="grey-bg">
+            <div class="grey-bg head-office">
                 <div class="content-container">
                     <div class="inner-wrapper">
                     

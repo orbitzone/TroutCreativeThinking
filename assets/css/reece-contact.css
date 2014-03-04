@@ -25,9 +25,88 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+.contact {
+  color: #555555;
+}
+.contact .contact-sections a,
+.contact .grey-bg a,
+.contact .contact-sections a:link,
+.contact .grey-bg a:link,
+.contact .contact-sections a:visited,
+.contact .grey-bg a:visited,
+.contact .contact-sections a:link,
+.contact .grey-bg a:link {
+  color: #009ddb;
+}
+.contact h3 {
+  margin-bottom: 1em;
+}
+.contact h3,
+.contact h4 {
+  color: #003767;
+}
+.contact .breadcrumb a,
+.contact .breadcrumb a:link,
+.contact .breadcrumb a:visited,
+.contact .breadcrumb a:link {
+  color: #b7b7b7;
+}
 .contact-sections .icon {
   width: 160px;
   height: 130px;
-  margin: auto;
+  margin: auto auto 3em auto;
   background: url(../images/aboutus/contact/contactus-sprite.png) no-repeat;
+}
+.contact-sections .store-finder .icon {
+  background-position: 0 0;
+}
+.contact-sections .product-info .icon {
+  background-position: -218px -11px;
+}
+.contact-sections .customer-care .icon {
+  background-position: -417px 0;
+}
+.contact-sections .cs-feedback .icon {
+  background-position: -15px -216px;
+}
+.contact-sections .login-issues .icon {
+  background-position: -211px -216px;
+}
+.contact-sections .share-info .icon {
+  background-position: -413px -216px;
+}
+.contact-sections .careers .icon {
+  background-position: -15px -413px;
+}
+.contact-sections .account-update .icon {
+  background-position: -215px -414px;
+}
+.contact-sections .suppliers .icon {
+  background-position: -419px -414px;
+}
+.contact-sections section {
+  margin: 2em 0;
+  padding: 0 2.5em;
+}
+@media (min-width: 768px) {
+  .contact-sections .row-fluid {
+    border-top: 1px solid #eaeaea;
+  }
+  .contact-sections .row-fluid:last-child {
+    border-bottom: 1px solid #eaeaea;
+  }
+  .contact-sections .row-fluid section:nth-child(2) {
+    border-left: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+  }
+}
+.head-office {
+  padding: 2em 0;
+}
+.head-office dt {
+  color: #003767;
+}
+.head-office dt,
+.head-office dd {
+  line-height: 2.1em;
 }

@@ -6,11 +6,83 @@
 @import "reece-variables.less";
 @import "reece-mixins.less";
 
+.contact {
+	color: @gray;
+	.contact-sections, .grey-bg {
+		a, a:link, a:visited, a:link {
+			color: @reeceLightBlue
+		}
+	}
+	h3 {
+		margin-bottom: 1em;
+	}
+	h3, h4 {
+		color: @reeceBlue;
+	}
+	.breadcrumb {
+		a, a:link, a:visited, a:link {
+			color: darken(@lightBackground, 20%);
+		}
+	}
+}
 .contact-sections {
 	.icon {
 		width: 160px;
 		height: 130px;
-		margin: auto;
+		margin: auto auto 3em auto;
 		background: url(../images/aboutus/contact/contactus-sprite.png) no-repeat;
 	}
+	.store-finder .icon {
+		background-position: 0 0;
+	}
+	.product-info .icon {
+		background-position: -218px -11px;
+	}
+	.customer-care .icon {
+		background-position: -417px 0;
+	}
+	.cs-feedback .icon {
+		background-position: -15px -216px;
+	}
+	.login-issues .icon {
+		background-position: -211px -216px;
+	}
+	.share-info .icon {
+		background-position: -413px -216px;
+	}
+	.careers .icon {
+		background-position: -15px -413px;
+	}
+	.account-update .icon {
+		background-position: -215px -414px;
+	}
+	.suppliers .icon {
+		background-position: -419px -414px;
+	}
+	section {
+		margin: 2em 0;
+		padding: 0 2.5em;
+	}
+	@media (min-width: 768px) {
+		.row-fluid {
+			border-top: 1px solid @lightBackground;
+			&:last-child {
+				border-bottom: 1px solid @lightBackground;
+			}
+			section:nth-child(2) {
+				border-left: 1px solid @lightBackground;
+				border-right: 1px solid @lightBackground;
+			}
+		}
+	}
 }
+.head-office {
+	padding: 2em 0;
+	dt {
+		color: @reeceBlue;
+	}
+	dt, dd {
+		line-height: 2.1em;
+	}
+}
+

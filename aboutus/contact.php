@@ -27,11 +27,12 @@
                     </ul>
 
                     <h3>Contact Us</h3>
+                    <!--To DO - Fix column width. In browser the 3 columns of sections look uneven-->
 
                     <div class="row-fluid">
                         <section class="span4 store-finder">
                             <div class="icon"></div>
-                            <h4>Find your nearest Store</h4>
+                            <h4>Find Your Nearest Store</h4>
                             <p>Our <a href="#">Store Finder</a> will help you locate your nearest plumbing, bathroom and specialty branch to suit your needs.</p>
                         </section>
                         <section class="span4 product-info">
@@ -132,13 +133,13 @@
                             <dt class="span1">  
                                Phone
                             </dt>  
-                            <dd class="span7">
+                            <dd class="span7" itemprop="telephone">
                                 +613 9274 0000
                             </dd>
                             <dt class="span1">  
                                Fax
                             </dt>  
-                            <dd class="span7">
+                            <dd class="span7" itemprop="fax">
                                 +613 9274 0198
                             </dd>
                         </div>

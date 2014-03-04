@@ -14,7 +14,7 @@
 		}
 	}
 	h3 {
-		margin-bottom: 1em;
+		margin: 2em 0 1em 0;
 	}
 	h3, h4 {
 		color: @reeceBlue;
@@ -26,6 +26,7 @@
 		}
 	}
 }
+//To DO - Fix column width. In browser the 3 columns of sections look uneven
 .contact-sections {
 	.icon {
 		width: 160px;
@@ -63,10 +64,14 @@
 	section {
 		margin: 2em 0;
 		padding: 0 2em;
+		border-top: 1px solid @lightBackground; 
 	}
 	@media (min-width: 768px) {
 		.row-fluid {
 			border-top: 1px solid @lightBackground;
+			section {
+				border-top: 0;
+			}
 			section:nth-child(2) {
 				border-left: 1px solid @lightBackground;
 				border-right: 1px solid @lightBackground;
@@ -84,7 +89,6 @@
 	}
 	.inner-wrapper {
 		border-top: 1px solid @lightBackground;
-		padding: 2em 0;
 	}
 	.placeholder {
 		padding-top: 0 !important;
@@ -128,7 +132,7 @@ input[type="submit"] {
 	.border-radius(0);
 }
 .head-office {
-	padding: 2em 0;
+	padding: 3em 0 4em 0;
 	dt {
 		color: @reeceBlue;
 	}

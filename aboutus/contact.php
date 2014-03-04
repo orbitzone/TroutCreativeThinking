@@ -3,7 +3,8 @@
 
     <?php 
         $cssScriptPaths = [
-            "/assets/css/reece-contact.css"   
+            "/assets/css/reece-contact.css",  
+            "/assets/css/selectric.css"   
         ]; 
         include_once($serverBase."/includes/head/head-generic.php");
     ?>      
@@ -86,7 +87,7 @@
 
             <div class="content-container contact-form">
                 <div class="inner-wrapper">
-                    <h4><i class="icon-envelope"></i> Email us</h4>
+                    <h4 class="heading"><i class="icon-envelope"></i> Email us</h4>
                     <div class="row-fluid">
                         <div class="span6">
                             <div class="row-fluid">
@@ -107,7 +108,10 @@
                                 </select>
                             </div>
                         </div>
-                        <textarea rows="6" class="span6" placeholder="Comments"></textarea>
+                        <div class="span6">
+                        <textarea  placeholder="Comments"></textarea>
+                        <input type="submit" value="Submit" class="submit">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -158,9 +162,7 @@
         <?php 
             $jsScriptPaths = [
                 "/assets/js/jquery.mobile.custom.min.js",
-                "/assets/js/bootstrap-transition.js", 
-                "/assets/js/bootstrap-carousel.js",
-                "/assets/js/bootstrap-dropdown.js",
+                "/assets/js/jquery.selectric.min.js",
                 "/assets/js/reece-signon.js",
                 "/assets/js/reece-contact.js",         
                 "/assets/js/reece-ocnav.js"

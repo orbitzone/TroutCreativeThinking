@@ -74,21 +74,54 @@
 	}
 }
 .contact-form {
-
+	
+	.heading {
+		margin-bottom: 1em;
+	}
+	.row-fluid {
+		margin-bottom: 0.75em;
+	}
 	.inner-wrapper {
 		border-top: 1px solid @lightBackground;
 		padding: 2em 0;
 	}
-	display: none;
-	overflow: hidden;
-	max-height: 600px;
-	//.transition( all 1s ease);
-	@media (min-width: 768px) {
-		select.span12 {
-			width: 98.5%
-		}
-	}
 
+	textarea {
+		height: 186px;
+		width: 100%;
+		.box-sizing(border-box);
+	}
+	display: none;
+
+	@media (min-width: 1200px) {
+		input:first-child {
+			margin-right: 10px;
+		}
+	// 	.selectricWrapper {
+	// 		width: 98.5%
+	// 	}
+	}
+	.submit {
+		float: right;
+	}
+}
+
+//Should this be a global style? Don't know yet, global style has not been defined
+input[type="text"], input [type="email"], input[type="email"],  input[type="password"],
+input[type="number"], textarea, .selectric-label {
+	.border-radius(0);
+	.box-shadow(none);
+	padding: 1em 0.7em;
+	height: auto;
+	background: lighten(@lightBackground, 5%);
+}
+input[type="submit"] {
+	background: #c91d1d;
+	text-transform: uppercase;
+	color: @white;
+	border: 0;
+	padding: 1em 1.8em;
+	.border-radius(0);
 }
 .head-office {
 	padding: 2em 0;

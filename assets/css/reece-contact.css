@@ -99,17 +99,58 @@
 }
 .contact-form {
   display: none;
-  overflow: hidden;
-  max-height: 600px;
+}
+.contact-form .heading {
+  margin-bottom: 1em;
+}
+.contact-form .row-fluid {
+  margin-bottom: 0.75em;
 }
 .contact-form .inner-wrapper {
   border-top: 1px solid #eaeaea;
   padding: 2em 0;
 }
-@media (min-width: 768px) {
-  .contact-form select.span12 {
-    width: 98.5%;
+.contact-form textarea {
+  height: 186px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media (min-width: 1200px) {
+  .contact-form input:first-child {
+    margin-right: 10px;
   }
+}
+.contact-form .submit {
+  float: right;
+}
+input[type="text"],
+input [type="email"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea,
+.selectric-label {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  padding: 1em 0.7em;
+  height: auto;
+  background: #f7f7f7;
+}
+input[type="submit"] {
+  background: #c91d1d;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 0;
+  padding: 1em 1.8em;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 .head-office {
   padding: 2em 0;

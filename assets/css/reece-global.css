@@ -7413,6 +7413,12 @@ h6 {
 .download-pdf:hover {
   text-decoration: none;
 }
+.grey-bg {
+  background: #eaeaea;
+}
+.grey-bg + footer {
+  margin-top: 0;
+}
 .ocnav-wrapper {
   display: none;
   position: fixed;

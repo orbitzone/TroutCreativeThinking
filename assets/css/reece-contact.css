@@ -86,18 +86,29 @@
 }
 .contact-sections section {
   margin: 2em 0;
-  padding: 0 2.5em;
+  padding: 0 2em;
 }
 @media (min-width: 768px) {
   .contact-sections .row-fluid {
     border-top: 1px solid #eaeaea;
   }
-  .contact-sections .row-fluid:last-child {
-    border-bottom: 1px solid #eaeaea;
-  }
   .contact-sections .row-fluid section:nth-child(2) {
     border-left: 1px solid #eaeaea;
     border-right: 1px solid #eaeaea;
+  }
+}
+.contact-form {
+  display: none;
+  overflow: hidden;
+  max-height: 600px;
+}
+.contact-form .inner-wrapper {
+  border-top: 1px solid #eaeaea;
+  padding: 2em 0;
+}
+@media (min-width: 768px) {
+  .contact-form select.span12 {
+    width: 98.5%;
   }
 }
 .head-office {

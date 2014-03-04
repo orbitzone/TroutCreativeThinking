@@ -41,19 +41,19 @@
                         <section class="span4 customer-care">
                             <div class="icon"></div>
                             <h4>Customer Care and Warranties</h4>
-                            <p>Our Customer Care team provides comprehensive after sales assistance in relation to all our products and warranties.  Call 1300 000 000 or <a href="#">contact us online</a>.</p>
+                            <p>Our Customer Care team provides comprehensive after sales assistance in relation to all our products and warranties.  Call 1300 000 000 or <a href="#contact-form">contact us online</a>.</p>
                         </section>
                     </div>
                     <div class="row-fluid">
                         <section class="span4 cs-feedback">
                             <div class="icon"></div>
                             <h4>Customer Service Feedback</h4>
-                            <p>To provide feedback you can contact our marketing team using our <a href="#">online form</a>. We’ll get back you as soon as possible. </p>
+                            <p>To provide feedback you can contact our marketing team using our <a href="#contact-form">online form</a>. We’ll get back you as soon as possible. </p>
                         </section>
                         <section class="span4 login-issues">
                             <div class="icon"></div>
                             <h4>Website Login Issues</h4>
-                            <p>If you're having trouble logging in to your account, the Reece <a href="#">FAQs</a> section may help. Or you can contact our <a href="#">Help Desk.</a></p>
+                            <p>If you're having trouble logging in to your account, the Reece <a href="#">FAQs</a> section may help. Or you can contact our <a href="#contact-form">Help Desk.</a></p>
                         </section>
                         <section class="span4 share-info">
                             <div class="icon"></div>
@@ -70,7 +70,7 @@
                         <section class="span4 account-update">
                             <div class="icon"></div>
                             <h4>Account Updates</h4>
-                            <p>To update your Reece account information including change of address or phone number details, contact our <a href="#">Accounts team</a>. </p>
+                            <p>To update your Reece account information including change of address or phone number details, contact our <a href="#contact-form">Accounts team</a>. </p>
                         </section>
                         <section class="span4 suppliers">
                             <div class="icon"></div>
@@ -84,12 +84,40 @@
                 </div>
             </div>
 
-            <div class="grey-bg head-office">
+            <div class="content-container contact-form">
+                <div class="inner-wrapper">
+                    <h4><i class="icon-envelope"></i> Email us</h4>
+                    <div class="row-fluid">
+                        <div class="span6">
+                            <div class="row-fluid">
+                                <input type="text" class="span6" placeholder="First Name">
+                                <input type="text" class="span6" placeholder="Surname">
+                            </div>
+                            <div class="row-fluid">
+                                <input type="email" class="span6" placeholder="Email adress">
+                                <input type="number" class="span6" placeholder="Phone">
+                            </div>
+                            <div class="row-fluid">
+                                <select class="span12" id="topic">
+                                    <option>General Enquiry</option>
+                                    <option>Customer Care and Warranties</option>
+                                    <option>Customer Service Feedback</option>
+                                    <option>Website Login Issues</option>
+                                    <option>Account Updates</option>
+                                </select>
+                            </div>
+                        </div>
+                        <textarea rows="6" class="span6" placeholder="Comments"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <section class="grey-bg head-office">
                 <div class="content-container">
                     <div class="inner-wrapper">
                     
                         <h4>Contact Head Office</h4>
-                        <section class="row-fluid">
+                        <div class="row-fluid">
                             <dt class="span1">  
                                 Address
                             </dt>  
@@ -109,10 +137,10 @@
                             <dd class="span8">
                                 +613 9274 0198
                             </dd>
-                        </section>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
             <?php 
                 include_once($serverBase."/includes/foot/foot-generic.php");

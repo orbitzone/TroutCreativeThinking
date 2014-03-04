@@ -61,20 +61,34 @@
 	}
 	section {
 		margin: 2em 0;
-		padding: 0 2.5em;
+		padding: 0 2em;
 	}
 	@media (min-width: 768px) {
 		.row-fluid {
 			border-top: 1px solid @lightBackground;
-			&:last-child {
-				border-bottom: 1px solid @lightBackground;
-			}
 			section:nth-child(2) {
 				border-left: 1px solid @lightBackground;
 				border-right: 1px solid @lightBackground;
 			}
 		}
 	}
+}
+.contact-form {
+
+	.inner-wrapper {
+		border-top: 1px solid @lightBackground;
+		padding: 2em 0;
+	}
+	display: none;
+	overflow: hidden;
+	max-height: 600px;
+	//.transition( all 1s ease);
+	@media (min-width: 768px) {
+		select.span12 {
+			width: 98.5%
+		}
+	}
+
 }
 .head-office {
 	padding: 2em 0;

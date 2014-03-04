@@ -4,6 +4,7 @@ $(document).ready(function(){
     //the contact form with the appropriate 'topic' selected
     $('a[href="#contact-form"]').click(function(e){
         $(".contact-form").slideDown();
+        $.placeholder.shim();
         $('html,body').animate({scrollTop: $(".contact-form").offset().top-240},'slow');
         
         var topic = $(this).parent().siblings('h4').html();

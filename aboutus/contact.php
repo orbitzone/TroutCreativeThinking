@@ -125,20 +125,20 @@
                             <dt class="span1">  
                                 Address
                             </dt>  
-                            <dd class="span2">          
-                                118 Burwood Highway
+                            <dd class="span3">          
+                                118 Burwood Highway<br>
                                 Burwood Victoria 3125
                             </dd>
                             <dt class="span1">  
                                Phone
                             </dt>  
-                            <dd class="span8">
+                            <dd class="span7">
                                 +613 9274 0000
                             </dd>
                             <dt class="span1">  
                                Fax
                             </dt>  
-                            <dd class="span8">
+                            <dd class="span7">
                                 +613 9274 0198
                             </dd>
                         </div>
@@ -161,6 +161,7 @@
 
         <?php 
             $jsScriptPaths = [
+                "/assets/js/jquery.html5-placeholder-shim.js",
                 "/assets/js/jquery.mobile.custom.min.js",
                 "/assets/js/jquery.selectric.min.js",
                 "/assets/js/reece-signon.js",

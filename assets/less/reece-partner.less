@@ -7,9 +7,18 @@
 @import "reece-mixins.less";
 
 
+.partner{
+    & .content-container .inner-wrapper {
+    padding-top: 40px;
+}
+
+}
+
+
+
 .content-container p {
     color: #666666;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 a:hover p, a:focus p {
@@ -33,7 +42,7 @@ a:hover p, a:focus p {
 .why-partner-brands{
     .clearfix;
     .brand {
-        
+
         .brand-name {
             font-size: 1.5em;
             font-weight: normal;
@@ -46,7 +55,7 @@ a:hover p, a:focus p {
             text-decoration: none;
         }
         p {
-            height: 45px;
+            height: 60px;
             overflow: hidden
         }
     }
@@ -64,7 +73,7 @@ a:hover p, a:focus p {
     clear: both;
 
     .transition(0.8s max-height ease-out);
-    
+
     .brand-buttons {
         position: absolute;
         bottom: 35px;
@@ -105,7 +114,7 @@ a:hover p, a:focus p {
     }
     &:nth-child(1n+0):after {
         left: 3.5%;
-    }   
+    }
     &:nth-child(2n+0):after {
         left: 37.5%;
     }

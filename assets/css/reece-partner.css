@@ -25,9 +25,12 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+.partner .content-container .inner-wrapper {
+  padding-top: 40px;
+}
 .content-container p {
   color: #666666;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 a:hover p,
 a:focus p {
@@ -70,7 +73,7 @@ a:focus p {
   text-decoration: none;
 }
 .why-partner-brands .brand p {
-  height: 45px;
+  height: 60px;
   overflow: hidden;
 }
 @media (min-width: 767px) {

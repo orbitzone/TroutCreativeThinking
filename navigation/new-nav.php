@@ -1,17 +1,17 @@
 
 	<?php include_once($_SERVER['DOCUMENT_ROOT']."/includes/variables/variables.php"); ?>
 
-	<?php 
+	<?php
 		$cssScriptPaths = [
       "/assets/css/reece-home.css"
-		]; 
+		];
 	   	include_once($serverBase."/includes/head/head-generic.php");
-	?>		
+	?>
 
-    <body class="no-touch bathroom-moments account-details-summary">
+    <body class="no-touch bathroom-moments account-details-summary withHappinessSubNav">
 		<div class="ocmain-wrapper">
 			<div class="navbar navbar-fixed-top topNav">
-						
+
 					<?php include_once($serverBase."/includes/nav/nav-generic.php"); ?>
 
 			</div>
@@ -54,53 +54,53 @@
         <li class="cat-block hvacr"><a href="/hvacr"><span></span>HVAC-R</a></li>
         <li class="account"><a href="../my_account/mobile_login.php"><span></span>Login</a></li>
     </ul>
-    
-    
+
+
     <div id="mobCarousel" class="carousel  slide " data-bs-carousel="carousel" data-bs-carousel-interval="3000">
   <!-- Carousel items -->
   <div class="carousel-inner">
-        
+
         <div class="item active left">
           <a href="http://www.reece.com.au/bathroom-sale">
             <img src="http://www.reece.com.au/assets/pages/thumbnails/bathroom-sale.png" alt="Spring Sale" class="visible-desktop">
-                        
+
               <img src="http://www.reece.com.au/assets/pages/thumbnails/sale-mobile-banner2.png" alt="Spring Sale" class="hidden-desktop">
-                        
+
           </a>
         </div>
-        
+
         <div class="item  next left">
           <a href="http://www.reece.com.au/diydisasters">
             <img src="http://www.reece.com.au/assets/pages/thumbnails/diydisasters.jpg" alt="DIY Disasters" class="visible-desktop">
-                        
+
               <img src="http://www.reece.com.au/assets/pages/thumbnails/15383-mobile-banner-011013.jpg" alt="DIY Disasters" class="hidden-desktop">
-                        
+
           </a>
         </div>
-        
+
         <div class="item ">
           <a href="http://www.reece.com.au/plumbing/products/hot_water_units/hot_water_guide">
             <img src="http://www.reece.com.au/assets/pages/thumbnails/hot-water-guide.jpg" alt="Hot Water Decisions Guide" class="visible-desktop">
-                        
+
               <img src="http://www.reece.com.au/assets/pages/thumbnails/dwdg-mobile.jpg" alt="Hot Water Decisions Guide" class="hidden-desktop">
-                        
+
           </a>
         </div>
-        
+
   </div>
-    
+
     <a class="carousel-control left" href="/#mobCarousel" data-slide="prev">‹</a>
     <a class="carousel-control right" href="/#mobCarousel" data-slide="next">›</a>
-    
+
 </div>
-    
-    
+
+
 </div>
 
 
 
   <div id="headCarousel" class="carousel  slide hidden-phone"
-	 data-bs-carousel="carousel" data-bs-carousel-interval="0"> 
+	 data-bs-carousel="carousel" data-bs-carousel-interval="0">
     <!-- Carousel items -->
     <div class="carousel-inner">
       <div class="item active"> <a href="/bathroom-sale"> <img src="http://www.reece.com.au/assets//pages/thumbnails/bathroom-sale-reece.jpg" alt="Spring Sale" class="visible-desktop"/> <img src="http://www.reece.com.au/assets//pages/thumbnails/bathroom-sale-reece2.jpg" alt="Spring Sale" class="hidden-desktop"/> </a> </div>
@@ -186,10 +186,10 @@
       </div>
     </div>
   </div>
-    
-    <?php 
+
+    <?php
 			include_once($serverBase."/includes/foot/foot-generic.php");
-		?>	
+		?>
 
 	</div>
 
@@ -198,11 +198,11 @@
    			"activeMenu" => "Plumbing"
    		);
 	   	include_once($serverBase."/includes/nav/nav-mobile.php");
-	?>	
+	?>
 
-	<?php 
+	<?php
 		$jsScriptPaths = [
-			"/assets/js/jquery.lazyload.min.js", 
+			"/assets/js/jquery.lazyload.min.js",
 			"/assets/js/bootstrap-collapse.js",
 			"/assets/js/bootstrap-carousel.js",
 			"/assets/js/bootstrap-dropdown.js",
@@ -213,9 +213,9 @@
 			"/assets/js/reece-match-height.js",
             "/assets/js/reece-hidesubnavbar.js",
             "/assets/js/reece-signon.js"
-		]; 
+		];
 	   	include_once($serverBase."/includes/foot/scripts.php");
 	?>
-	
+
     </body>
 </html>

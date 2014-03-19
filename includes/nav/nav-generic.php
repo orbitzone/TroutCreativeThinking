@@ -48,11 +48,11 @@ elseif ($state == null) {
         <input type="password" placeholder="Password">
         <input type="button" class="btn btn-default btn-small btn-login btn-reece-primary" onclick="window.location.href='?state=retail'" value="Log In">
         <a href="#" class="forgotLink">Forgot password?</a>
-        
 
-        
+
+
     </form>
-    <h5 class="loginNoAccount">Don't have an account?</h5> <input type="submit" id="no-account" class="btn btn-reece-secondary btn-small" value="Sign up now">
+    <h5 class="loginNoAccount">Don't have an account?</h5> <input type="submit" id="no-account" class="btn btn-Login btn-reece-secondary btn-small" value="Sign up for a Trade Account"><input type="submit" id="no-account" class="btn btn-Login btn-reece-secondary btn-small" value="Sign up for a Trade Account">
 </div>
 <div class="register">
     <a href="#" id="sign-in">< Back to log in</a>
@@ -79,7 +79,7 @@ elseif ($state == null) {
             <input type="submit" class="btn btn-reece-secondary btn-small" value="Submit Account Request">
         </div>
 
-        
+
     </form>
 </div>
 </div>
@@ -91,6 +91,8 @@ HTML;
 
 
 <div class="navbar-container">
+
+
     <a class="btn btn-navbar hidden-desktop">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -100,29 +102,10 @@ HTML;
 
     <div class=" visible-desktop">
         <div class="row-fluid navHeader">
+
+
             <a class="brand" href="#" title="Reece">Reece</a>
 
-            <form class="headerNavSearchForm">
-                <input type="search" id="headerSearchInput" placeholder="Search">
-                <label for="headerSearchInput"><i class="icon-search icon">&nbsp;</i></label>
-            </form>
-            <div class="headerUtilityBar">
-
-                <ul class="headerUtilityLink">
-                    <li>
-                        <a href="#">
-                            <i class="icon-shopping-cart">&nbsp;</i> Shopping Cart (0)
-                        </a>
-                    </li>
-
-                    <li class="dropdown locationDropDown">
-                        <?php echo $message; ?>
-                        <?php echo $box; ?>
-
-                    </li>
-                </ul>
-            </div>
-        </div>
         <nav class="navWrap">
             <ul class="nav">
                 <?php foreach ($navigationItems as $item) : ?>
@@ -134,6 +117,26 @@ HTML;
 
                 <?php endforeach; ?>
             </ul>
+            <ul class="headerUtilityLinks">
+             <li>
+                 <a href="#">
+                     <i class="icon-shopping-cart">&nbsp;</i>Cart (0)
+                 </a>
+             </li>
+             <li class="dropdown locationDropDown">
+                 <?php echo $message; ?>
+                 <?php echo $box; ?>
+             </li>
+            </ul>
+            <form class="headerNavSearchForm">
+             <input type="search" id="headerSearchInput" placeholder="Search">
+             <label for="headerSearchInput"><i class="icon-search icon">&nbsp;</i></label>
+            </form>
         </nav>
+
+
+
+        </div>
+
     </div>
 </div>

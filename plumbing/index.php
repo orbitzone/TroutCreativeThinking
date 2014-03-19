@@ -1,13 +1,13 @@
 
 	<?php include_once($_SERVER['DOCUMENT_ROOT']."/includes/variables/variables.php"); ?>
 
-	<?php 
+	<?php
 		$cssScriptPaths = [
 			"/assets/css/reece-trade-outlet.css",
 			"/assets/css/reece-plumbing.css"
-		]; 
+		];
 	   	include_once($serverBase."/includes/head/head-generic.php");
-	?>		
+	?>
 
     <body class="no-touch bathroom-moments account-details-summary withSubNav">
 		<div class="ocmain-wrapper">
@@ -16,11 +16,13 @@
 					$genericNavActiveMenuItem = "Plumbing";
 				   	include_once($serverBase."/includes/nav/nav-generic.php");
 				?>
+			</div>
 
 				<?php
 				   	include_once($serverBase."/includes/nav/nav-subnavbar.php");
 				?>
-			</div>
+
+
 	    <div class="content-container">
 			<div class="inner-wrapper">
 
@@ -65,18 +67,18 @@
 						<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
 	    				<h3>Reece Footy Tipping Competition</h3>
 						<a class="read-more page-branding text-brand" href="#">Log in to your footy tipping<i class="icon-arrow-right"></i></a>
-					</article>	
+					</article>
 
 					<article data-resize="height" class="article span3">
 						<a href="#"><img src="http://placehold.it/480x250" alt="Trade Sample Mini" /></a>
     					<h3>Discover Thermann Hot Water Units</h3>
 						<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
-					</article>							
-				</div>	
+					</article>
+				</div>
 
 			</div>
-	    </div>	
-	    
+	    </div>
+
 	    <div class="recent-stories">
 	    	<div class="content-container">
 				<div class="inner-wrapper">
@@ -93,7 +95,7 @@
 							</div>
 						</article>
 
-						<article class="article span2"> 
+						<article class="article span2">
 							<a class="article-image" href="#"><img src="/assets/images/trade_2013/trade_article_sample_small_05.jpg" alt="Trade Sample Mini" /></a>
 		    				<div class="article-body">
 			    				<small class="page-branding text-brand">1 July 2013</small>
@@ -136,19 +138,19 @@
 			    				<h3>Where did my warranty go?</h3>
 								<a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
 							</div>
-						</article>	
+						</article>
 
 					</div>
-				</div>	
+				</div>
 
 			    <!-- END CONTENT -->
 
 			</div>
 	    </div>
 
-	    <?php 
+	    <?php
 			include_once($serverBase."/includes/foot/foot-generic.php");
-		?>	
+		?>
 
 	</div>
 
@@ -157,11 +159,11 @@
    			"activeMenu" => "Plumbing"
    		);
 	   	include_once($serverBase."/includes/nav/nav-mobile.php");
-	?>	
+	?>
 
-	<?php 
+	<?php
 		$jsScriptPaths = [
-			"/assets/js/jquery.lazyload.min.js", 
+			"/assets/js/jquery.lazyload.min.js",
 			"/assets/js/bootstrap-collapse.js",
 			"/assets/js/bootstrap-carousel.js",
 			"/assets/js/bootstrap-dropdown.js",
@@ -170,8 +172,9 @@
 			"/assets/js/jquery.mobile.custom.min.js",
 			"/assets/js/reece-ocnav.js",
 			"/assets/js/reece-carousel.js",
+			 "/assets/js/reece-hidesubnavbar.js",
 			"/assets/js/reece-match-height.js"
-		]; 
+		];
 	   	include_once($serverBase."/includes/foot/scripts.php");
 	?>
 

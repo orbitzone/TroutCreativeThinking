@@ -134,3 +134,26 @@
   width: 750px;
   margin: auto auto 3em auto;
 }
+#slide-4 {
+  padding: 4em 0;
+  background: #142533;
+}
+#slide-4 .wave {
+  height: 106px;
+  position: relative;
+  top: -156px;
+  background: url(../images/aboutus/history/bg-wave-2.png) repeat-x;
+}
+#slide-4 h1 {
+  font-size: 158px;
+}
+#slide-4 h2 {
+  font-weight: 100;
+  font-size: 71px;
+  width: 750px;
+  margin: auto auto 3em auto;
+}
+#FramesAnimation {
+  width: 619px;
+  height: 398px;
+}

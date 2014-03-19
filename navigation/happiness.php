@@ -1,11 +1,11 @@
 <?php include_once($_SERVER['DOCUMENT_ROOT']."/includes/variables/variables.php"); ?>
-<?php 
+<?php
 		$cssScriptPaths = [
 			"/assets/css/reece-trade-outlet.css",
 			"/assets/css/reece-nav-updated.css",
       "/assets/css/reece-home.css",
 			"/assets/css/reece-bathrooms.css"
-		]; 
+		];
 	   	include_once($serverBase."/includes/head/head-generic.php");
 	?>
 
@@ -98,7 +98,7 @@
       </div>
     </div>
   </div>
-  <?php 
+  <?php
 			include_once($serverBase."/includes/foot/foot-generic.php");
 		?>
 </div>
@@ -108,9 +108,9 @@
    		);
 	   	include_once($serverBase."/includes/nav/nav-mobile.php");
 	?>
-<?php 
+<?php
 		$jsScriptPaths = [
-			"/assets/js/jquery.lazyload.min.js", 
+			"/assets/js/jquery.lazyload.min.js",
 			"/assets/js/bootstrap-collapse.js",
 			"/assets/js/bootstrap-carousel.js",
 			"/assets/js/bootstrap-dropdown.js",
@@ -121,7 +121,7 @@
 			"/assets/js/reece-match-height.js",
             "/assets/js/reece-hidesubnavbar.js",
             "/assets/js/reece-signon.js"
-		]; 
+		];
 	   	include_once($serverBase."/includes/foot/scripts.php");
 	?>
 </body>

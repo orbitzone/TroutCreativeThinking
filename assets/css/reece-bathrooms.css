@@ -48,6 +48,7 @@
 .main-item {
   background: #fff;
   /*    padding: 20px 0;*/
+
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.35);
 }
 .main-item .inner-wrapper {
@@ -553,6 +554,7 @@ RESPONSIVE OVERRIDES
     border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
     *background-color: #db2020;
     /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  
     filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
     border: 1px solid #db2020;
   }
@@ -1281,11 +1283,11 @@ RESPONSIVE OVERRIDES
 }
 .coloredPanel .row-fluid .span8,
 .socialWallPanel .row-fluid .span8 {
-  width: 66.66666667%;
+  width: 66.66666666666667%;
 }
 .coloredPanel .row-fluid .span7,
 .socialWallPanel .row-fluid .span7 {
-  width: 58.33333333%;
+  width: 58.333333333333336%;
 }
 .coloredPanel .row-fluid .span6,
 .socialWallPanel .row-fluid .span6 {
@@ -1293,11 +1295,11 @@ RESPONSIVE OVERRIDES
 }
 .coloredPanel .row-fluid .span5,
 .socialWallPanel .row-fluid .span5 {
-  width: 41.66666667%;
+  width: 41.666666666666664%;
 }
 .coloredPanel .row-fluid .span4,
 .socialWallPanel .row-fluid .span4 {
-  width: 33.33333333%;
+  width: 33.333333333333336%;
 }
 .coloredPanelText {
   padding: 20px;
@@ -2884,6 +2886,72 @@ p.inspBlogDate {
     padding: 5px 0;
     display: block;
   }
+}
+/* ===============================================================================================================================
+    Login page
+   =============================================================================================================================== */
+.loginColumn {
+  margin-top: 20px;
+}
+.loginColumn h2 {
+  margin-bottom: 10px;
+}
+.loginColumn .loginBox {
+  padding: 20px;
+  min-height: 194px;
+  position: relative;
+}
+.loginColumn .grey {
+  background: #EFEFEF;
+}
+.loginColumn .grey button {
+  background: #DB1E27;
+  border-radius: 0px ;
+  color: #FFFFFF;
+  text-shadow: none;
+  border: none;
+  padding: 4px 11px;
+}
+.loginColumn .red {
+  background: #DB1E27;
+  color: #FFFFFF;
+}
+.loginColumn .red button {
+  background: #000000;
+  border-radius: 0px ;
+  color: #FFFFFF;
+  text-shadow: none;
+  border: none;
+}
+.loginColumn input {
+  width: 95%;
+  border: none;
+}
+.loginColumn form {
+  margin: 0px;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.loginColumn button {
+  float: right;
+  background: none ;
+}
+.loginColumn .form-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.loginColumn .forgotten {
+  text-transform: uppercase;
+  font-size: 11px;
+  line-height: 12px;
+  color: #FFFFFF;
 }
 /* ===============================================================================================================================
     Designer Looks

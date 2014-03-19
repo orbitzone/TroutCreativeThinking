@@ -24,7 +24,7 @@
 											<li><a href="#">Waste</a></li>
 											<li><a href="#">Commercial</a></li>
 										</ul>
-									</div>									
+									</div>
 								</div>
 							</div>
 							<div class="span3">
@@ -34,12 +34,12 @@
 									<li><a href="#">Toilets</a></li>
 									<li><a href="#">Basins</a></li>
 									<li><a href="#">Tapware</a></li>
-								</ul>							
+								</ul>
 							</div>
 						</div>
-						
+
 					</div>
-					
+
 				</div>
 			</li>
 			<li><a href="#" title="Inspiration">Inspiration</a></li>

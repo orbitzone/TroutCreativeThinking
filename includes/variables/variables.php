@@ -1,5 +1,5 @@
-		    
-<?php 
+
+<?php
 	$serverBase = $_SERVER['DOCUMENT_ROOT'];
 
 	$pageLinks = array (
@@ -16,8 +16,7 @@
 		"Onsite",
 		"HVAC-R",
 		"About Us",
-		"Store Finder",
-		"My Account"
+		"Store Finder"
 	);
 
 	$happyzoneNavigationItems = array(
@@ -62,10 +61,10 @@
 		),
 		"Store Finder" => array (
 
-		),	
+		),
 		"Login" => array (
 
-		)								
+		)
 	);
 
 	$gtNavigationItems = array (
@@ -75,6 +74,6 @@
 		"Product Range" => 'product-range.php',
 		"Technical Data" => 'technical-data.php',
 		"Storefinder" => 'store-finder.php'
-	);	
+	);
 
 ?>

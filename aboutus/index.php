@@ -174,12 +174,12 @@ include_once($serverBase."/includes/head/head-generic.php");
 
             <section class="row-fluid middle-section">
                 <div class="span4">
-                    <img src="../assets/images/aboutus/history/old_photo.jpg" alt="don't forget alt text!">
+                    <img src="../assets/images/aboutus/home/history.jpg" alt="don't forget alt text!">
                     <h4>History</h4>
                     <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                 </div>
                 <div class="span4">
-                    <img src="http://placehold.it/357x195" alt="don't forget alt text!">
+                    <img src="../assets/images/aboutus/home/partner.jpg" alt="don't forget alt text!">
                     <h4>Partner with us</h4>
                     <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                 </div>
@@ -199,13 +199,13 @@ include_once($serverBase."/includes/head/head-generic.php");
                 <section class="row-fluid">
                     <div class="span6">
                         <h4>Sustainability</h4>
-                        <img src="http://placehold.it/550x135" alt="Don't forget alt text">
+                        <img src="../assets/images/aboutus/home/sustainability.jpg" alt="Don't forget alt text">
                         <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                         <a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
                     </div>
                     <div class="span6">
                         <h4>Careers</h4>
-                        <img src="http://placehold.it/550x135" alt="Don't forget alt text">
+                        <img src="../assets/images/aboutus/home/careers.jpg" alt="Don't forget alt text">
                         <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                         <a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
                     </div>

@@ -48,7 +48,7 @@ include_once($serverBase."/includes/head/head-generic.php");
                             <!-- Carousel items -->
                             <div class="carousel-inner">
                                 <div class="active item plumbing">
-                                    <img src="/assets/images/aboutus/banner-plumbing.jpg" alt=" " class="bg-image">
+                                    <img src="/assets/images/aboutus/home/banner-plumbing.jpg" alt=" " class="bg-image">
                                     <div class="content">
                                         <h1>Plumbing</h1>
                                         <p>Thousands of plumbers turn to Reece because of our reputation for “having what you need, when you need it, where you need it.” It's all about delivering the best service possible. A commitment we live by every day.</p>
@@ -56,42 +56,42 @@ include_once($serverBase."/includes/head/head-generic.php");
                                     </div>
                                 </div>
                                 <div class="item bathrooms">
-                                    <img src="/assets/images/aboutus/banner-bathroom.jpg" alt=" " class="bg-image">
+                                    <img src="/assets/images/aboutus/home/banner-bathroom.jpg" alt=" " class="bg-image">
                                     <div class="content">
                                         <h1>Bathrooms</h1>
-                                        <p>Lipsum sit dolor amet igo what you need, when you need it, where you need it.” It's all about delivering the best service possible. A commitment we live by every day.</p>
+                                        <p>The home of bathroom happiness, Reece offers Australia’s largest range of beautiful products matched with the very best advice for creating your perfect bathroom.</p>
                                         <a class="coloredPanelLink" href="#">Discover more</a>
                                     </div>
                                 </div>
                                 <div class="item irrigation">
-                                    <img src="/assets/images/aboutus/banner-plumbing.jpg" alt=" " class="bg-image">
+                                    <img src="/assets/images/aboutus/home/banner-irrigation.jpg" alt=" " class="bg-image">
                                     <div class="content">
                                         <h1>Irrigation</h1>
-                                        <p>Lipsum sit dolor amet igo what you need, when you need it, where you need it.” It's all about delivering the best service possible. A commitment we live by every day.</p>
+                                        <p>From turf to piping, lighting to pumps, Reece Irrigation offers an extensive selection of high quality products to service the landscape, commercial and agricultural industries.</p>
                                         <a class="coloredPanelLink" href="#">Discover more</a>
                                     </div>
                                 </div>
                                 <div class="item civil">
-                                    <img src="/assets/images/aboutus/banner-plumbing.jpg" alt=" " class="bg-image">
+                                    <img src="/assets/images/aboutus/home/banner-civil.jpg" alt=" " class="bg-image">
                                     <div class="content">
                                         <h1>Civil</h1>
-                                        <p>Lipsum sit dolor amet igo what you need, when you need it, where you need it.” It's all about delivering the best service possible. A commitment we live by every day.</p>
+                                        <p>The underground pipe network specialists, Reece Civil can help you source and specify the right products for water, gas, sewer, telecommunications, electrical and fire services.</p>
                                         <a class="coloredPanelLink" href="#">Discover more</a>
                                     </div>
                                 </div>
                                 <div class="item hvac-r">
-                                    <img src="/assets/images/aboutus/banner-plumbing.jpg" alt=" " class="bg-image">
+                                    <img src="/assets/images/aboutus/home/banner-hvacr-2.jpg" alt=" " class="bg-image">
                                     <div class="content">
                                         <h1>HVAC-R</h1>
-                                        <p>Lipsum sit dolor amet igo what you need, when you need it, where you need it.” It's all about delivering the best service possible. A commitment we live by every day.</p>
+                                        <p>With a network of dedicated outlets nationally, Reece HVAC-R offers unrivalled service, support, stock and spare parts for all type of heating, refrigeration, ventilation and climate solutions.</p>
                                         <a class="coloredPanelLink" href="#">Discover more</a>
                                     </div>
                                 </div>
                                 <div class="item onsite">
-                                    <img src="/assets/images/aboutus/banner-plumbing.jpg" alt=" " class="bg-image">
+                                    <img src="/assets/images/aboutus/home/banner-plumbing.jpg" alt=" " class="bg-image">
                                     <div class="content">
                                         <h1>Onsite</h1>
-                                        <p>Lipsum sit dolor amet igo what you need, when you need it, where you need it.” It's all about delivering the best service possible. A commitment we live by every day.</p>
+                                        <p>A specialist business focused on product needs of large domestic builders, commercial plumbers and developers, Reece Onsite helps to drive the success of our customers through end-to-end supply solutions.</p>
                                         <a class="coloredPanelLink" href="#">Discover more</a>
                                     </div>
                                 </div>

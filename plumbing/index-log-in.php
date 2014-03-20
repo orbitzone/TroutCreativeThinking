@@ -12,18 +12,18 @@ include_once($serverBase."/includes/head/head-generic.php");
 ?>
 
 <body class="withSubNav">
-    <div class="ocmain-wrapper">
-        <div class="navbar navbar-fixed-top topNav">
-            <?php
-            $genericNavActiveMenuItem = "Contact Us";
-            include_once($serverBase."/includes/nav/nav-generic.php");
-            ?>
+	<div class="ocmain-wrapper">
+		<div class="navbar navbar-fixed-top topNav">
+			<?php
+			$genericNavActiveMenuItem = "Contact Us";
+			include_once($serverBase."/includes/nav/nav-generic.php");
+			?>
 
-        </div>
+		</div>
 
-        <?php
-        include_once($serverBase."/includes/nav/nav-about-us.php");
-        ?>
+		<?php
+		include_once($serverBase."/includes/nav/nav-about-us.php");
+		?>
 
 
 		<div class="content-container">
@@ -55,11 +55,11 @@ include_once($serverBase."/includes/head/head-generic.php");
 						<div class="span4 loginBox grey hideForm">
 							<form>
 								<div class="controls">
-									<br /><br />
+									<h4>Register interest</h4>
 									<div class="row-fluid">
 										<div class="span3"><img src="../assets/images/MyAccount/man-register.png" />
 										</div>
-										<div class="span9"><p>Existing account customers enter your details to register for access to “My Account”.</p>
+										<div class="span9"><p>Fill in your details and your branch manager will be in touch about signing up to My Account.</p>
 											<div class="formUp"><input type="text" id="inputName" placeholder="Name">
 												<input type="text" id="inputPhone" placeholder="Phone">
 												<input type="email" id="inputEmail" placeholder="Email">
@@ -73,13 +73,30 @@ include_once($serverBase."/includes/head/head-generic.php");
 							</form>
 						</div>
 						<div class="span5 loginBox grey">
+<br />
+							<div class="row-fluid">
+								<div class="span9">
+								<p>You need to be a Reece account customer to use “My Account”. Download an application.</p>
+								</div>
+								<div class="span3">
+									<button type="submit" class="btn">Download Application</button>
+								</div>
+							</div>
+
+							<br />
 
 							<div class="row-fluid">
+								<div class="span9">
+								<p>If you have filled out the application, scan it and upload it or take it to your nearest Reece ranch.</p>
+								</div>
+								<div class="span3">
+									<button type="submit" class="btn">Upload Application</button>
+								</div>
 							</div>
-							<p>You need to be a Reece account customer to use “My Account”. Download an application.</p>
-							<button type="submit" class="btn">Download Application</button><br /><br />
-							<p>If you have filled out the application, scan it and upload it or take it to your nearest Reece ranch.</p>
-							<button type="submit" class="btn">Upload Application</button>
+
+
+
+
 						</div>
 					</div>
 				</article>
@@ -87,12 +104,12 @@ include_once($serverBase."/includes/head/head-generic.php");
 			<div class="loginColumn">
 				<article class=" row-fluid">
 					<div class="span5 loginBox grey">
-							<div class="controls">
-								<h3>How My Account works for your business</h3>
-								<div class="flex-video widescreen"><iframe src="//www.youtube.com/embed/Xxmz6u2r8v4?rel=0&wmode=transparent&showinfo=0&modestbranding=1&controls=2" frameborder="0" allowfullscreen></iframe></div>
-								<p>This overview will give you the general idea of how My Account can be a real asset to your business. And if you want to find out more about any particular feature simple click on any of the box to the right and you’ll understand why this is a business tool you don’t want to be without.</p>
+						<div class="controls">
+							<h3>How My Account works for your business</h3>
+							<div class="flex-video widescreen"><iframe src="//www.youtube.com/embed/Xxmz6u2r8v4?rel=0&wmode=transparent&showinfo=0&modestbranding=1&controls=2" frameborder="0" allowfullscreen></iframe></div>
+							<p>This overview will give you the general idea of how My Account can be a real asset to your business. And if you want to find out more about any particular feature simple click on any of the box to the right and you’ll understand why this is a business tool you don’t want to be without.</p>
 
-							</div>
+						</div>
 					</div>
 					<div class="span7 loginBox">
 						<h3>My Tips</h3>

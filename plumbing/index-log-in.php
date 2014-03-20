@@ -55,7 +55,7 @@ include_once($serverBase."/includes/head/head-generic.php");
 						<div class="span4 loginBox grey hideForm">
 							<form>
 								<div class="controls">
-									<h4>Register interest</h4>
+									<h4>Register Interest</h4>
 									<div class="row-fluid">
 										<div class="span3"><img src="../assets/images/MyAccount/man-register.png" />
 										</div>

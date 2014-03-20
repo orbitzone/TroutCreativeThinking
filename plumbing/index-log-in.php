@@ -73,7 +73,7 @@ include_once($serverBase."/includes/head/head-generic.php");
 							</form>
 						</div>
 						<div class="span5 loginBox grey">
-<br />
+<h4>Apply for a Reece Account</h4>
 							<div class="row-fluid">
 								<div class="span9">
 								<p>You need to be a Reece account customer to use “My Account”. Download an application.</p>

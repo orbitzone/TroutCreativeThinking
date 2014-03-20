@@ -171,7 +171,9 @@
   transition: bottom 0.5s;
 }
 .productBlock:hover .productOverlay,
-.productBlock:focus .productOverlay {
+.productBlock:focus .productOverlay,
+.productBlockWithOverlay:hover .productOverlay,
+.productBlockWithOverlay:focus .productOverlay {
   top: auto;
   bottom: 0;
 }
@@ -282,6 +284,17 @@
   font-weight: normal;
   font-style: italic;
 }
+.overlayCaptionLeft {
+  top: auto;
+  bottom: 30px;
+  left: -90px;
+  right: auto;
+}
+.overlayImage {
+  position: absolute;
+  top: 30px;
+  left: -100px;
+}
 .productBlockWithOverlay {
   position: absolute;
   left: 0;
@@ -293,9 +306,9 @@
 }
 .trendOverlayHeader {
   position: absolute;
-  bottom: -50px;
+  top: 50%;
   right: 0;
-  width: 70%;
+  width: 60%;
   min-width: 500px;
 }
 .trendOverlayHeaderInner {
@@ -323,6 +336,7 @@
   .overlayCaption {
     position: static;
     min-width: auto;
+    max-width: none;
     width: auto;
     display: block;
   }
@@ -332,6 +346,9 @@
   .overlayCaption .trendOverlayHeaderText {
     display: block;
     width: auto;
+  }
+  .overlayImage {
+    position: static;
   }
 }
 /* Temp Fix for Trends */
@@ -346,5 +363,11 @@
 }
 body {
   padding-top: 170px;
+}
+@media (min-width: 1200px) {
+  .trendOverlayHeader {
+    top: auto;
+    bottom: -50px;
+  }
 }
 /* end of fix */

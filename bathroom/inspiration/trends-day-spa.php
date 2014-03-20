@@ -58,19 +58,12 @@ include_once($serverBase."/includes/head/head-generic.php");
 					-->
 					<div class="row-fluid trendOverlayHeaderWrap">
 						<div class="span12">
-						<img src="/assets/images/trends/day-spa/1.jpg">
-						<!--
-							<div class="productBlockWithOverlay">
-								<div class="productOverlay">
-									<a href="#" class="btn-productOverlay">View in bathroom gallery</a> <br />
-									<a href="#" class="btn-productOverlay"><i class="icon-share icon">&nbsp;</i>Share</a>
-								</div>
-							</div> -->
+						<img src="/assets/images/trends/day-spa/3.jpg">
 							<div class="trendOverlayHeader">
 								<div class="trendOverlayHeaderInner">
-									<div class="trendOverlayHeaderCaption">
+									<!--<div class="trendOverlayHeaderCaption">
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod dapibus nunc vel sagittis. Nam mattis ligula massa, ultrices placerat nulla ultricies in. Ut purus libero, laoreet vitae velit in, vestibulum fermentum ipsum.
-									</div>
+									</div>-->
 									<div class="trendOverlayHeaderText">
 									<p><img src="/assets/images/trends/day-spa/title_day_spa.png"></p>
 									<p>A wellness oasis that insulates you from the stress of the outside world. Warm tones. Natural materials with a soothing touch. Enjoy tranquility surrounded by feel good things.</p>
@@ -86,13 +79,26 @@ include_once($serverBase."/includes/head/head-generic.php");
 					<div class="row-fluid">
 						<div class="span4 productBlock">
 							<img src="/assets/images/trends/day-spa/2.jpg">
-							<div class="productOverlay">
-								<a href="#" class="btn-productOverlay">View in bathroom gallery</a> <br />
-								<a href="#" class="btn-productOverlay"><i class="icon-share icon">&nbsp;</i>Share</a>
+							
+								<div class="productOverlay">
+									<a href="#" class="btn-productOverlay">View in bathroom gallery</a> <br />
+									<a href="#" class="btn-productOverlay"><i class="icon-share icon">&nbsp;</i>Share</a>
+								</div>
+							
+						</div>
+						<div class="span8 ">
+
+							<img src="/assets/images/trends/day-spa/1.jpg">
+						<div class="productBlockWithOverlay">
+							<div class="productBlockWithOverlay">
+								<div class="productOverlay">
+									<a href="#" class="btn-productOverlay">View in bathroom gallery</a> <br />
+									<a href="#" class="btn-productOverlay"><i class="icon-share icon">&nbsp;</i>Share</a>
+								</div>
 							</div>
 						</div>
-						<div class="span8 overlayCaptionWrap">
-							<img src="/assets/images/trends/day-spa/3.jpg">
+<div class="overlayCaption overlayCaptionLeft"><h3>Lorem ipsum dolor</h3>Lorem ipsum dolor sit amet.</div>
+							
 						</div>
 					</div>
 
@@ -127,12 +133,15 @@ include_once($serverBase."/includes/head/head-generic.php");
 					</div>
 
 					<div class="row-fluid">
-						<div class="span12 productBlock fadeUP">
+						<div class="span9 productBlock fadeUP">
 							<img src="/assets/images/trends/day-spa/7.jpg">
 							<div class="productOverlay">
 								<a href="#" class="btn-productOverlay">View in bathroom gallery</a> <br />
 								<a href="#" class="btn-productOverlay"><i class="icon-share icon">&nbsp;</i>Share</a>
 							</div>
+						</div>
+						<div class="span3 fadeUP">
+							<img class="overlayImage" src="/assets/images/trends/day-spa/tap.jpg">
 						</div>
 					</div>
 

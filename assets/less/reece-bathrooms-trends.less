@@ -180,7 +180,7 @@ body{
   padding:30px 0px 30px 0px;
   .transition(bottom .5s)
 }
-.productBlock:hover .productOverlay,.productBlock:focus .productOverlay/*,.productBlockWithOverlay:hover .productOverlay,.productBlockWithOverlay:focus .productOverlay*/{
+.productBlock:hover .productOverlay,.productBlock:focus .productOverlay,.productBlockWithOverlay:hover .productOverlay,.productBlockWithOverlay:focus .productOverlay{
   top:auto;
   bottom:0;
 }
@@ -317,7 +317,17 @@ body{
     font-weight: normal;
     font-style: italic;
   }
-
+}
+.overlayCaptionLeft{
+  top: auto;
+  bottom: 30px;
+  left: -90px;
+  right: auto;
+}
+.overlayImage{
+  position:absolute;
+  top:30px;
+  left:-100px;
 }
 .productBlockWithOverlay{
   position: absolute;
@@ -330,9 +340,9 @@ body{
 }
 .trendOverlayHeader{
   position: absolute;
-  bottom: -50px;
+  top: 50%;
   right: 0;
-  width: 70%;
+  width: 60%;
   min-width: 500px;
 }
 .trendOverlayHeaderInner{
@@ -361,12 +371,16 @@ body{
   .trendOverlayHeader,.overlayCaption{
     position: static;
     min-width: auto;
+    max-width: none;
     width: auto;
     display: block;
     .trendOverlayHeaderCaption,.trendOverlayHeaderText{
       display: block;
       width: auto;
     }
+  }
+  .overlayImage{
+    position: static;
   }
 }
 /* Temp Fix for Trends */
@@ -381,5 +395,11 @@ body{
 }
 body{
   padding-top: 170px;
+}
+@media (min-width:1200px){
+  .trendOverlayHeader{
+    top:auto;
+    bottom: -50px;
+  }
 }
 /* end of fix */

@@ -17,7 +17,7 @@
                 ?>
             </div>
             <?php
-                include_once($serverBase."/includes/nav/nav-subnavbar.php");
+                include_once($serverBase."/includes/nav/nav-about-us.php");
             ?>
             <div class="content-container">
                 <div class="inner-wrapper">

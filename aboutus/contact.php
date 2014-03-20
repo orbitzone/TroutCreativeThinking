@@ -1,23 +1,27 @@
 
     <?php include_once($_SERVER['DOCUMENT_ROOT']."/includes/variables/variables.php"); ?>
 
-    <?php 
+    <?php
         $cssScriptPaths = [
-            "/assets/css/reece-contact.css",  
-            "/assets/css/selectric.css"   
-        ]; 
+            "/assets/css/reece-contact.css",
+            "/assets/css/selectric.css"
+        ];
         include_once($serverBase."/includes/head/head-generic.php");
-    ?>      
+    ?>
 
-    <body class="contact">
+    <body class="withSubNav contact">
         <div class="ocmain-wrapper">
             <div class="navbar navbar-fixed-top topNav">
-                <?php 
+                <?php
                     $genericNavActiveMenuItem = "Contact Us";
                     include_once($serverBase."/includes/nav/nav-generic.php");
                 ?>
 
             </div>
+
+                        <?php
+            include_once($serverBase."/includes/nav/nav-about-us.php");
+            ?>
             <div class="content-container contact-sections">
                 <div class="inner-wrapper">
 
@@ -80,7 +84,7 @@
                             <p>Reece is always looking to align itself with suppliers that share our commitment to quality. To find out more visit <a href="partner.php">Partner with Reece</a>.</p>
                         </section>
                     </div>
-                    
+
 
 
                 </div>
@@ -120,25 +124,25 @@
             <section class="grey-bg head-office">
                 <div class="content-container">
                     <div class="inner-wrapper">
-                    
+
                         <h4>Contact Head Office</h4>
                         <div class="row-fluid">
-                            <dt class="span1">  
+                            <dt class="span1">
                                 Address
-                            </dt>  
-                            <dd class="span3">          
+                            </dt>
+                            <dd class="span3">
                                 118 Burwood Highway<br>
                                 Burwood Victoria 3125
                             </dd>
-                            <dt class="span1">  
+                            <dt class="span1">
                                Phone
-                            </dt>  
+                            </dt>
                             <dd class="span7" itemprop="telephone">
                                 +613 9274 0000
                             </dd>
-                            <dt class="span1">  
+                            <dt class="span1">
                                Fax
-                            </dt>  
+                            </dt>
                             <dd class="span7" itemprop="fax">
                                 +613 9274 0198
                             </dd>
@@ -147,30 +151,31 @@
                 </div>
             </section>
 
-            <?php 
+            <?php
                 include_once($serverBase."/includes/foot/foot-generic.php");
-            ?>      
+            ?>
 
-        </div>      
+        </div>
 
         <?php
             $mobileNavActiveMenu = array(
                 "activeMenu" => "About Us"
             );
             include_once($serverBase."/includes/nav/nav-mobile.php");
-        ?>  
+        ?>
 
-        <?php 
+        <?php
             $jsScriptPaths = [
                 "/assets/js/jquery.html5-placeholder-shim.js",
                 "/assets/js/jquery.mobile.custom.min.js",
                 "/assets/js/jquery.selectric.min.js",
                 "/assets/js/reece-signon.js",
-                "/assets/js/reece-contact.js",         
+                "/assets/js/reece-contact.js",
+                "/assets/js/reece-hidesubnavbar.js",
                 "/assets/js/reece-ocnav.js"
-            ]; 
+            ];
             include_once($serverBase."/includes/foot/scripts.php");
-        ?>                       
+        ?>
 
     </body>
 </html>

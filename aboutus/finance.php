@@ -1,22 +1,27 @@
 
     <?php include_once($_SERVER['DOCUMENT_ROOT']."/includes/variables/variables.php"); ?>
 
-    <?php 
+    <?php
         $cssScriptPaths = [
-            "/assets/css/reece-finance.css"   
-        ]; 
+            "/assets/css/reece-finance.css"
+        ];
         include_once($serverBase."/includes/head/head-generic.php");
-    ?>      
+    ?>
 
-    <body class="finance">
+    <body class="withSubNav finance">
         <div class="ocmain-wrapper">
             <div class="navbar navbar-fixed-top topNav">
-                <?php 
+                <?php
                     $genericNavActiveMenuItem = "About Us";
                     include_once($serverBase."/includes/nav/nav-generic.php");
                 ?>
-
             </div>
+
+            <?php
+            include_once($serverBase."/includes/nav/nav-about-us.php");
+            ?>
+
+
             <div class="content-container">
                 <div class="inner-wrapper">
 
@@ -30,7 +35,7 @@
                             <img src="/assets/images/aboutus/banner-finance.jpg" alt="Don't forget alt text">
                         </div>
                     </section>
-                    
+
 
                     <div class="row-fluid">
 
@@ -52,7 +57,7 @@
             <div class="grey-bg file-download">
                 <div class="content-container">
                     <div class="inner-wrapper">
-                    
+
                        <ul class="nav nav-tabs row-fluid">
                             <li class="span4 active"><a href="#asx" data-toggle="tab">ASX Announcement</a></li>
                             <li class="span4"><a href="#corp" data-toggle="tab">Corporate Governance</a></li>
@@ -64,7 +69,7 @@
                             <div class="tab-pane active" id="asx">
                                 <div id="asx-carousel" class="carousel slide">
                                     <!-- Carousel items -->
-                                    <div class="carousel-inner"> 
+                                    <div class="carousel-inner">
                                         <div class="item active row-fluid"><!--max 3 span4 per slide item please-->
                                             <div class="span4">
                                                 <div class="inside">
@@ -132,12 +137,12 @@
             <div class="news">
                 <div class="content-container">
                     <div class="inner-wrapper">
-                    
+
                         <h3 class="heading">News</h3>
                         <section class="row-fluid">
-                            <div class="span5">  
+                            <div class="span5">
                                <img src="/assets/images/aboutus/img-news.jpg" alt="Don't forget alt text">
-                            </div>  
+                            </div>
                             <div class="span7">
                                 <p class="date">23rd December 2013</p>
                                 <h2>Reece excited to announce acquisition of Actrol</h2>
@@ -148,32 +153,33 @@
                 </div>
             </div>
 
-            <?php 
+            <?php
                 include_once($serverBase."/includes/foot/foot-generic.php");
-            ?>      
+            ?>
 
-        </div>      
+        </div>
 
         <?php
             $mobileNavActiveMenu = array(
                 "activeMenu" => "About Us"
             );
             include_once($serverBase."/includes/nav/nav-mobile.php");
-        ?>  
+        ?>
 
-        <?php 
+        <?php
             $jsScriptPaths = [
                 "/assets/js/jquery.mobile.custom.min.js",
-                "/assets/js/bootstrap-tab.js", 
-                "/assets/js/bootstrap-transition.js", 
+                "/assets/js/bootstrap-tab.js",
+                "/assets/js/bootstrap-transition.js",
                 "/assets/js/bootstrap-dropdown.js",
                 "/assets/js/reece-signon.js",
                 "/assets/js/bootstrap-carousel.js",
-                "/assets/js/reece-finance.js",         
+                "/assets/js/reece-finance.js",
+                "/assets/js/reece-hidesubnavbar.js",
                 "/assets/js/reece-ocnav.js"
-            ]; 
+            ];
             include_once($serverBase."/includes/foot/scripts.php");
-        ?>                        
+        ?>
 
     </body>
 </html>

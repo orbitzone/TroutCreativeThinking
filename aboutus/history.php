@@ -8,7 +8,7 @@
         include_once($serverBase."/includes/head/head-generic.php");
     ?>
 
-    <body class="history" data-spy="scroll" data-target=".nav-history">
+    <body class="withSubNav history" data-spy="scroll" data-target=".nav-history">
         <div class="ocmain-wrapper">
             <div class="navbar navbar-fixed-top topNav">
                 <?php
@@ -16,6 +16,13 @@
                     include_once($serverBase."/includes/nav/nav-generic.php");
                 ?>
             </div>
+
+
+            <?php
+            include_once($serverBase."/includes/nav/nav-about-us.php");
+            ?>
+
+
         <div class="nav-history">
             <ul class="nav">
                 <li><a href="#slide-1">Title</a></li>
@@ -107,6 +114,7 @@
                 "/assets/js/bootstrap-scrollspy.js",
                 "/assets/js/reece-ocnav.js",
                 "/assets/js/skrollr.min.js",
+                "/assets/js/reece-hidesubnavbar.js",
                 "/assets/js/reece-history.js"
 
 

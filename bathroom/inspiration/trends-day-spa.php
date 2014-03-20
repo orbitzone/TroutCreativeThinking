@@ -139,7 +139,7 @@ include_once($serverBase."/includes/head/head-generic.php");
 					<div class="row-fluid">
 						<div class="span8 overlayCaptionWrap fadeUP">
 							<img src="/assets/images/trends/day-spa/8.jpg">
-							<div class="overlayCaption overlayCaptionRight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod dapibus nunc vel sagittis. Nam mattis ligula massa, ultrices placerat nulla ultricies in.</div>
+							<div class="overlayCaption"><h3>Lorem ipsum dolor sit amet</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt libero at est fringilla ultrices. Sed nec dignissim massa. Quisque et facilisis mauris, vel consectetur tellus. Ut mollis dui risus, vel auctor justo imperdiet vitae. Duis at vulputate ligula. Integer pellentesque metus risus, vitae viverra metus eleifend mattis.</div>
 						</div>
 						<div class="span4 productBlock fadeUP">
 							<img src="/assets/images/trends/day-spa/9.jpg">
@@ -166,8 +166,9 @@ include_once($serverBase."/includes/head/head-generic.php");
 									<a href="#" class="btn-productOverlay"><i class="icon-share icon">&nbsp;</i>Share</a>
 								</div>
 						</div>
-						<div class="span8 fadeUP">
+						<div class="span8 overlayCaptionWrap fadeUP">
 							<img src="/assets/images/trends/day-spa/13.jpg">
+							<div class="overlayCaption"><h3>Lorem ipsum dolor sit amet</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt libero at est fringilla ultrices. Sed nec dignissim massa. </div>
 						</div>
 
 					</div>

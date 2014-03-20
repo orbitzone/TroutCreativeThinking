@@ -321,3 +321,27 @@
   padding: 6px 15px;
   font-size: 12px;
 }
+@media (max-width: 767px) {
+  .trendOverlayHeader {
+    position: static;
+    min-width: auto;
+    width: auto;
+    display: block;
+  }
+  .trendOverlayHeader .trendOverlayHeaderCaption,
+  .trendOverlayHeader .trendOverlayHeaderText {
+    display: block;
+    width: auto;
+  }
+}
+/* Temp Fix for Trends */
+.topNav {
+  position: fixed;
+  top: 0;
+}
+@media (max-width: 979px) {
+  .topNav {
+    position: static;
+  }
+}
+/* end of fix */

@@ -9453,7 +9453,6 @@ h6 {
 .locationDropDown {
   padding: 5px 10px !important;
   font-size: 12px;
-  width: 90px;
   position: relative;
 }
 .locationDropDown a:focus,

@@ -16,7 +16,7 @@ if ($state == "loggedIn") {
     </div>
 HTML;
 } elseif ($state == "retail") {
-    $message = '<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-user">&nbsp;</i>Bob, My Account <i class="icon-arrow-down"></i></a>';
+    $message = '<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-user">&nbsp;</i>LongFirstName<i class="icon-arrow-down"></i></a>';
     $box = <<<HTML3
 
         <div class="dropdown-menu">
@@ -52,7 +52,7 @@ elseif ($state == null) {
 
 
     </form>
-    <h5 class="loginNoAccount">Don't have an account?</h5> <input type="submit" id="no-account" class="btn btn-Login btn-reece-secondary btn-small" value="Sign up for a Trade Account"><input type="submit" id="no-account" class="btn btn-Login btn-reece-secondary btn-small" value="Sign up for a Trade Account">
+    <h5 class="loginNoAccount">Don't have an account?</h5> <input type="submit" id="" class="btn btn-Login btn-reece-secondary btn-small" value="Sign up for a Trade Account"><input type="submit" id="" class="btn btn-Login btn-reece-secondary btn-small" value="Sign up for a Retail Account">
 </div>
 <div class="register">
     <a href="#" id="sign-in">< Back to log in</a>

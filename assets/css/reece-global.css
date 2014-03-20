@@ -9848,6 +9848,12 @@ h6 {
     position: absolute;
     min-height: 100%;
   }
+  .content-container {
+    margin-top: 80px;
+  }
+  .topNav {
+    top: 0px;
+  }
 }
 @media (max-width: 767px) {
   body {

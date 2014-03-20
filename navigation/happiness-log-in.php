@@ -3,7 +3,6 @@
 $cssScriptPaths = [
 "/assets/css/reece-trade-outlet.css",
 "/assets/css/reece-nav-updated.css",
-"/assets/css/reece-home.css",
 "/assets/css/reece-bathrooms.css"
 ];
 include_once($serverBase."/includes/head/head-generic.php");
@@ -22,16 +21,12 @@ include_once($serverBase."/includes/head/head-generic.php");
 
     <div class="content-container">
       <div class="inner-wrapper">
-
         <ul class="breadcrumb">
           <li><a href="#">Bathrooms</a>  <span class="divider">/</span></li>
           <li class="active page-branding text-brand">Login</li>
         </ul>
-
         <div class="loginColumn">
-
           <h2>Login to Happiness</h2>
-
           <article class="article-summary-main row-fluid">
             <div class="span4 loginBox red">
               <form>
@@ -46,69 +41,73 @@ include_once($serverBase."/includes/head/head-generic.php");
             </div>
             <div class="span8 loginBox grey">
 
-              <form>
-                <div class="controls">
-
-                  <div class="row-fluid">
-                    <div class="span6"><h4>The benefits of signing up</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc odio.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc odio.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc odio.</p>
-                   </div>
-                   <div class="span6">
-                    <br />
-                     <input type="text" id="inputName" placeholder="Name">
-                     <input type="email" id="inputEmail" placeholder="Email">
-                     <button type="submit" class="btn">Register
-                     </button>
-                   </div>
-                 </div>
-               </div>
-             </div>
-           </form>
-
-         </article>
-       </div>
-
-       <div class="loginColumn">
-        <article class=" row-fluid">
-          <div class="span5 loginBox grey">
-            <form>
               <div class="controls">
-                <h3>Spotlight: Kartell by Laufen</h3>
-                <div class="flex-video widescreen"><iframe src="//www.youtube.com/embed/Q-a1dahV-QM?rel=0&wmode=transparent&showinfo=0&modestbranding=1&controls=2" frameborder="0" allowfullscreen></iframe></div>
+                <div class="row-fluid">
+                  <div class="span6"><h4>Sign up with Reece online and you’ll enjoy a host of privileges.</h4>
+                    <ul>
+                      <li>Receive updates and special offers on our latest products
+                      </li>
+                      <li>Get invitations to exclusive in-store events
+                      </li>
+                      <li>Access pricing information for your local branch
+                      </li>
+                      <li>Save your 3D planner designs and share them with others
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="span6">
+                    <form>
+                      <h4>Come on get happy.</h4>
+                      <input type="text" id="inputName" placeholder="Name">
+                      <input type="email" id="inputEmail" placeholder="Email">
+                      <button type="submit" class="btn">Register
+                      </button>
+                    </form>
+                  </div>
+                </div>
               </div>
-
-            </form>
-          </div>
-
-          <div class="span7 loginBox">
-            <h3>What's Hot</h3>
-            <div class="row-fluid">
-              <div class="span4"><img src="../assets/images/hz/login/hot/block.jpg" /><p>Some text about the tip</p></div>
-              <div class="span4"><img src="../assets/images/hz/login/hot/hotel.jpg" /><p>Some text about the tip</p></div>
-              <div class="span4"><img src="../assets/images/hz/login/hot/laufen.jpg" /><p>Some text about the tip</p></div>
             </div>
-            <div class="row-fluid">
-              <div class="span4"><img src="../assets/images/hz/login/hot/3dplanner.jpg" /><p>Some text about the tip</p></div>
-              <div class="span4"><img src="../assets/images/hz/login/hot/ilmb.jpg" /><p>Some text about the tip</p></div>
-              <div class="span4"><img src="../assets/images/hz/login/hot/palomba.jpg" /><p>Some text about the tip</p></div>
+
+          </article>
+        </div>
+        <div class="loginColumn">
+          <article class=" row-fluid">
+            <div class="span5 loginBox grey">
+
+                <div class="controls">
+                  <h3>Spotlight: Kartell by Laufen</h3>
+                  <div class="flex-video widescreen"><iframe src="//www.youtube.com/embed/Q-a1dahV-QM?rel=0&wmode=transparent&showinfo=0&modestbranding=1&controls=2" frameborder="0" allowfullscreen></iframe></div>
+                </div>
+
             </div>
-            <br /><br /><br /><br />
-          </div>
-        </article>
+            <div class="span7 loginBox">
+              <h3>What's Hot</h3>
+              <div class="row-fluid">
+                <div class="span4"><img src="../assets/images/hz/login/hot/block.jpg" /><p>Some text about the tip</p></div>
+                <div class="span4"><img src="../assets/images/hz/login/hot/hotel.jpg" /><p>Some text about the tip</p></div>
+                <div class="span4"><img src="../assets/images/hz/login/hot/laufen.jpg" /><p>Some text about the tip</p></div>
+              </div>
+              <div class="row-fluid">
+                <div class="span4"><img src="../assets/images/hz/login/hot/3dplanner.jpg" /><p>Some text about the tip</p></div>
+                <div class="span4"><img src="../assets/images/hz/login/hot/ilmb.jpg" /><p>Some text about the tip</p></div>
+                <div class="span4"><img src="../assets/images/hz/login/hot/palomba.jpg" /><p>Some text about the tip</p></div>
+              </div>
+              <br /><br /><br /><br />
+            </div>
+          </article>
+        </div>
       </div>
-
-
     </div>
   </div>
-</div>
 
 
 
 
 
 
-<?php
-include_once($serverBase."/includes/foot/foot-generic.php");
-?>
+  <?php
+  include_once($serverBase."/includes/foot/foot-generic.php");
+  ?>
 </div>
 <?php
 $mobileNavActiveMenu = array(

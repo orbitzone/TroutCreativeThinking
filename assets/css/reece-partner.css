@@ -64,6 +64,29 @@ a:focus p {
   margin-top: 2em;
   margin-bottom: 2em;
 }
+.why-partner-brands .brand .btn {
+  display: inline-block;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  color: #FFFFFF;
+  text-shadow: none;
+  background-color: #009ddb;
+  background-image: none;
+  filter: none;
+  border: none;
+  border-bottom-color: none;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
 .why-partner-brands .brand .brand-name {
   font-size: 1.5em;
   font-weight: normal;
@@ -91,6 +114,29 @@ a:focus p {
   -moz-transition: 0.8s max-height ease-out;
   -o-transition: 0.8s max-height ease-out;
   transition: 0.8s max-height ease-out;
+}
+.brand-expand .btn {
+  display: inline-block;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  color: #FFFFFF;
+  text-shadow: none;
+  background-color: #666666;
+  background-image: none;
+  filter: none;
+  border: none;
+  border-bottom-color: none;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 .brand-expand .brand-buttons {
   position: absolute;

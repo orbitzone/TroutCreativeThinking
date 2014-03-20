@@ -4,23 +4,26 @@
 <?php
 $cssScriptPaths = [
 "/assets/css/reece-trade-outlet.css",
+"/assets/css/reece-nav-updated.css",
+"/assets/css/reece-home.css",
 "/assets/css/reece-plumbing.css"
 ];
 include_once($serverBase."/includes/head/head-generic.php");
 ?>
 
-<body class="no-touch bathroom-moments account-details-summary withSubNav">
-	<div class="ocmain-wrapper">
-		<div class="navbar navbar-fixed-top topNav">
-			<?php
-			$genericNavActiveMenuItem = "Plumbing";
-			include_once($serverBase."/includes/nav/nav-generic.php");
-			?>
-		</div>
+<body class="withSubNav">
+    <div class="ocmain-wrapper">
+        <div class="navbar navbar-fixed-top topNav">
+            <?php
+            $genericNavActiveMenuItem = "Contact Us";
+            include_once($serverBase."/includes/nav/nav-generic.php");
+            ?>
 
-		<?php
-		include_once($serverBase."/includes/nav/nav-subnavbar.php");
-		?>
+        </div>
+
+        <?php
+        include_once($serverBase."/includes/nav/nav-about-us.php");
+        ?>
 
 
 		<div class="content-container">
@@ -49,8 +52,6 @@ include_once($serverBase."/includes/head/head-generic.php");
 								</div>
 							</form>
 						</div>
-
-
 						<div class="span4 loginBox grey hideForm">
 							<form>
 								<div class="controls">
@@ -71,9 +72,6 @@ include_once($serverBase."/includes/head/head-generic.php");
 								</div>
 							</form>
 						</div>
-
-
-
 						<div class="span5 loginBox grey">
 
 							<div class="row-fluid">
@@ -82,7 +80,6 @@ include_once($serverBase."/includes/head/head-generic.php");
 							<button type="submit" class="btn">Download Application</button><br /><br />
 							<p>If you have filled out the application, scan it and upload it or take it to your nearest Reece ranch.</p>
 							<button type="submit" class="btn">Upload Application</button>
-
 						</div>
 					</div>
 				</article>
@@ -90,17 +87,13 @@ include_once($serverBase."/includes/head/head-generic.php");
 			<div class="loginColumn">
 				<article class=" row-fluid">
 					<div class="span5 loginBox grey">
-						<form>
 							<div class="controls">
 								<h3>How My Account works for your business</h3>
 								<div class="flex-video widescreen"><iframe src="//www.youtube.com/embed/Xxmz6u2r8v4?rel=0&wmode=transparent&showinfo=0&modestbranding=1&controls=2" frameborder="0" allowfullscreen></iframe></div>
 								<p>This overview will give you the general idea of how My Account can be a real asset to your business. And if you want to find out more about any particular feature simple click on any of the box to the right and you’ll understand why this is a business tool you don’t want to be without.</p>
 
 							</div>
-
-						</form>
 					</div>
-
 					<div class="span7 loginBox">
 						<h3>My Tips</h3>
 						<div class="row-fluid">

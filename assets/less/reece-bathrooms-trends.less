@@ -46,14 +46,12 @@ body{
   text-align:center !important;
 }
 
-
 .trendsHeader p{
   color:#737171;
   width:75%;
   margin-left:auto;
   margin-right:auto;
 }
-
 
 .trendsHeader .button{
   text-align:center !important;
@@ -63,7 +61,6 @@ body{
   margin:6px 12px;
   display: inline-block;
 }
-
 
 .trendsHeader .button:hover{
   text-align:center !important;
@@ -75,9 +72,11 @@ body{
 
 #TrendsPage{
   .row-fluid{
+    position: relative;
     [class*="span"]{
       margin-left: .5%;
       margin-bottom:5px !important;
+      position: relative;
       &>img+img{
         margin-top: 5px;
       }
@@ -87,8 +86,6 @@ body{
     }
   }
 }
-
-
 
 #TrendsPage .span1{
   width: 8%;
@@ -105,7 +102,6 @@ body{
   width: 24.6%;
   margin-left: .5%;
 }
-
 
 #TrendsPage .span4{
   width: 32.983932%;
@@ -127,19 +123,15 @@ body{
   margin-left: .5%;
 }
 
-
 #TrendsPage .span8{
   width: 66.51%;
   margin-left: .5%;
 }
 
-
 #TrendsPage .span9{
   width: 74.9%;
   margin-left: .5%;
 }
-
-
 
 .trendNote{
   background-color:#5a5a5a;
@@ -158,51 +150,40 @@ body{
     position:absolute;
     bottom: 1%;
     right: 13px;
-/*    width: 40%;*/
+    /*width: 40%;*/
     float: right;
     margin-bottom: 3px;
-
   }
-
   .productWidth{
     width:35%;
   }
+}
 
-
-
-  .lt-ie9{
+.lt-ie9{
   .productOverlay {
     background-image: url('../images/trends/overlay_50.png');
     color:FF0000;
     border:5px solid yellow;
   }
-  }
+}
 
-
-
-
-
-
-
-  .productOverlay {
-    right: 0;
-    left: 0;
-    bottom: -100%;
-    background: rgba(0,0,0,0.5);
-    background-image: url('../images/trends/overlay_50.png');
-    display: block;
-    position: absolute;
-    margin:auto;
-    text-align:center;
-    padding:30px 0px 30px 0px;
-    .transition(bottom .5s)
-  }
-  &:hover .productOverlay,&:focus .productOverlay{
-    top:auto;
-    bottom:0;
-  }
-  }
-
+.productOverlay {
+  right: 0;
+  left: 0;
+  bottom: -100%;
+  background: rgba(0,0,0,0.5);
+  background-image: url('../images/trends/overlay_50.png');
+  display: block;
+  position: absolute;
+  margin:auto;
+  text-align:center;
+  padding:30px 0px 30px 0px;
+  .transition(bottom .5s)
+}
+.productBlock:hover .productOverlay,.productBlock:focus .productOverlay/*,.productBlockWithOverlay:hover .productOverlay,.productBlockWithOverlay:focus .productOverlay*/{
+  top:auto;
+  bottom:0;
+}
 
 .flex-video {
   position: relative;
@@ -225,9 +206,6 @@ body{
   width: 100%;
   height: 100%;
 }
-
-
-
 
 .productOverlay{
   .btn-productOverlay{
@@ -267,10 +245,6 @@ body{
 
 }
 
-
-
-
-
 @media (max-width: 979px) and (min-width: 744px) {
   .productBlock {
     p{
@@ -279,36 +253,28 @@ body{
   }
 }
 
-
-
 @media (max-width: 979px) {
 
 }
-
 @media (max-width: 767px) {
   #TrendsPage .row-fluid [class*="span"] {
     margin-left: 0;
     width: auto;
   }
-
   .productBlock {
     p{
       font-size:24px;
       line-height:120%;
     }
   }
-
-
 }
 
 @media (max-width: 640px) {
-
   .productBlock {
     p{
       bottom: 6%;
     }
   }
-
 
 }
 
@@ -327,4 +293,67 @@ body{
     }
   }
 
+}
+/* =================================== */
+/* */
+.trendOverlayHeaderWrap{
+  z-index: 100;
+}
+.overlayCaptionWrap{
+  position: relative;
+  z-index: 50;
+}
+.overlayCaption{
+  position: absolute;
+  padding: 30px;
+  background: #fff;
+  line-height: 1.5em;
+  max-width: 400px;
+  h3{
+    font-size: 1.1em;
+  }
+
+}
+.overlayCaptionLeft{
+  left: -50px;
+  top: -50px;
+}
+.overlayCaptionRight{
+  right: -50px;
+  top: -40px;
+}
+.productBlockWithOverlay{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 10
+}
+.trendOverlayHeader{
+  position: absolute;
+  bottom: -100px;
+  right: 0;
+  width: 70%;
+  min-width: 500px;
+}
+.trendOverlayHeaderInner{
+  background: white;  
+  display: table;
+  text-align: center;
+  .trendOverlayHeaderCaption,.trendOverlayHeaderText{
+    display: table-cell;
+    padding: 20px 30px 10px;
+    vertical-align: middle;
+  }
+  .trendOverlayHeaderCaption{
+    background: #c5c5c5;
+    width: 35%;
+    line-height: 1.5em;
+  }
+  .button{
+    padding: 6px 15px;
+    font-size: 12px;
+  }
 }

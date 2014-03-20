@@ -34,12 +34,8 @@ include_once($serverBase."/includes/head/head-generic.php");
 						<li class="active page-branding text-brand">Day Spa</li>
 					</ul>
 
-
-
 				<section id="TrendsPage">
-
-
-
+				<!--
 					<div class="row-fluid">
 						<div class="span12 trendsHeader">
 							<hr>
@@ -59,31 +55,49 @@ include_once($serverBase."/includes/head/head-generic.php");
 
 						</div>
 					</div>
+					-->
+					<div class="row-fluid trendOverlayHeaderWrap">
+						<div class="span12">
+						<img src="/assets/images/trends/day-spa/1.jpg">
+						<!--
+							<div class="productBlockWithOverlay">
+								<div class="productOverlay">
+									<a href="#" class="btn-productOverlay">View in bathroom gallery</a> <br />
+									<a href="#" class="btn-productOverlay"><i class="icon-share icon">&nbsp;</i>Share</a>
+								</div>
+							</div> -->
+							<div class="trendOverlayHeader">
+								<div class="trendOverlayHeaderInner">
+									<div class="trendOverlayHeaderCaption">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod dapibus nunc vel sagittis. Nam mattis ligula massa, ultrices placerat nulla ultricies in. Ut purus libero, laoreet vitae velit in, vestibulum fermentum ipsum.
+									</div>
+									<div class="trendOverlayHeaderText">
+									<p><img src="/assets/images/trends/day-spa/title_day_spa.png"></p>
+									<p>A wellness oasis that insulates you from the stress of the outside world. Warm tones. Natural materials with a soothing touch. Enjoy tranquility surrounded by feel good things.</p>
+									<p>Explore all bathrooms with the day spa look or all products on trend.</p>
+									<p class="trendsHeader"><a href="#" class="button">View Bathrooms</a>  <a href="#" class="button">View Products</a></p>
 
-					<div class="row-fluid">
-						<div class="span12 productBlock">
-							<img src="/assets/images/trends/day-spa/1.jpg">
-							<div class="productOverlay">
-								<a href="#" class="btn-productOverlay">View in bathroom gallery</a> <br />
-								<a href="#" class="btn-productOverlay"><i class="icon-share icon">&nbsp;</i>Share</a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 
 					<div class="row-fluid">
-						<div class="span4 productBlock fadeUP">
+						<div class="span4 productBlock">
 							<img src="/assets/images/trends/day-spa/2.jpg">
 							<div class="productOverlay">
 								<a href="#" class="btn-productOverlay">View in bathroom gallery</a> <br />
 								<a href="#" class="btn-productOverlay"><i class="icon-share icon">&nbsp;</i>Share</a>
 							</div>
 						</div>
-						<div class="span8 fadeUP">
+						<div class="span8 overlayCaptionWrap">
 							<img src="/assets/images/trends/day-spa/3.jpg">
 						</div>
 					</div>
 
 					<div class="row-fluid">
+					<!--
 						<div class="span6 productBlock fadeUP">
 							<img src="/assets/images/trends/day-spa/4.jpg">
 								<p><strong>LAUFEN
@@ -103,6 +117,9 @@ include_once($serverBase."/includes/head/head-generic.php");
 									<a href="#" class="btn-productOverlay">See more Towel Racks</a> <br />
 									<a href="#" class="btn-productOverlay"><i class="icon-share icon">&nbsp;</i>Share</a>
 								</div>
+						</div>-->
+						<div class="span10 fadeUP">
+							<img src="/assets/images/trends/day-spa/water-therapy.jpg">
 						</div>
 						<div class="span2 fadeUP">
 							<img src="/assets/images/trends/day-spa/6.jpg">
@@ -120,8 +137,9 @@ include_once($serverBase."/includes/head/head-generic.php");
 					</div>
 
 					<div class="row-fluid">
-						<div class="span8 fadeUP">
+						<div class="span8 overlayCaptionWrap fadeUP">
 							<img src="/assets/images/trends/day-spa/8.jpg">
+							<div class="overlayCaption overlayCaptionRight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod dapibus nunc vel sagittis. Nam mattis ligula massa, ultrices placerat nulla ultricies in.</div>
 						</div>
 						<div class="span4 productBlock fadeUP">
 							<img src="/assets/images/trends/day-spa/9.jpg">
@@ -136,7 +154,7 @@ include_once($serverBase."/includes/head/head-generic.php");
 					</div>
 
 					<div class="row-fluid">
-						<div class="span4 productBlock fadeUP">
+						<div class="span4 productBlock  fadeUP">
 							<img src="/assets/images/trends/day-spa/10.jpg">
 							<img src="/assets/images/trends/day-spa/11.jpg">
 							<img src="/assets/images/trends/day-spa/12.jpg">

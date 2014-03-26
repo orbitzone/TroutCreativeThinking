@@ -41,8 +41,8 @@ elseif ($state == null) {
     $box = <<<HTML
 <div class="dropdown-menu sso">
 <div class="login">
-    <h5>Login to your <strong>Reece account</strong> </h5>
-    <p class="loginDisclaimer">Lorem ipsum dolor sit amet, adipiscing elit. Ut non ornare arcu.</p>
+    <h5>Login to your <strong>Reece page</strong> </h5>
+
     <form class="login-form">
         <input type="text" placeholder="Username">
         <input type="password" placeholder="Password">
@@ -52,7 +52,7 @@ elseif ($state == null) {
 
 
     </form>
-    <h5 class="loginNoAccount">Don't have an account?</h5> <a href="http://reece-responsive.trout.com.au/plumbing/index-log-in.php"><input type="submit" id="" class="btn btn-Login btn-reece-secondary btn-small" value="Sign up for a Trade Account"></a><a href="http://reece-responsive.trout.com.au/navigation/happiness-log-in.php"><input type="submit" id="" class="btn btn-Login btn-reece-secondary btn-small" value="Sign up for a Retail Account"></a>
+    <h5 class="loginNoAccount">Don't have a login? Sign up now.</h5> <a href="http://reece-responsive.trout.com.au/plumbing/index-log-in.php"><input type="submit" id="" class="btn btn-Login btn-reece-secondary btn-small andRight tradeButton" value="Trade"></a><a href="http://reece-responsive.trout.com.au/navigation/happiness-log-in.php"><input type="submit" id="" class="btn btn-Login btn-reece-secondary btn-small retailButton" value="Retail"></a>
 </div>
 <div class="register">
     <a href="#" id="sign-in">< Back to log in</a>

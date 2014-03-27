@@ -16,7 +16,7 @@ if ($state == "loggedIn") {
     </div>
 HTML;
 } elseif ($state == "retail") {
-    $message = '<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-user">&nbsp;</i>LongFirstName<i class="icon-arrow-down"></i></a>';
+    $message = '<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-user">&nbsp;</i>LongFirstName</a>&nbsp;&nbsp;<i class="icon-arrow-down"></i>';
     $box = <<<HTML3
 
         <div class="dropdown-menu">
@@ -39,6 +39,10 @@ elseif ($state == null) {
     $message = '<a class="dropdown-toggle" data-toggle="dropdown" href="#">
     <i class="icon-user">&nbsp;</i> Login <i class="icon-arrow-down"></i></a>';
     $box = <<<HTML
+
+
+
+
 <div class="dropdown-menu sso">
 <div class="login">
     <h5>Login to your <strong>Reece page</strong> </h5>
@@ -46,15 +50,19 @@ elseif ($state == null) {
     <form class="login-form">
         <input type="text" placeholder="Username">
         <input type="password" placeholder="Password">
-        <input type="button" class="btn btn-default btn-small btn-login btn-reece-primary" onclick="window.location.href='?state=retail'" value="Log In">
+        <input type="button" class="btn btn-login btn-small loginButton" onclick="window.location.href='?state=retail'" value="Log In">
         <a href="#" class="forgotLink">Forgot password?</a>
-
-
-
     </form>
-    <h5 class="loginNoAccount">Don't have a login? Sign up now.</h5> <a href="http://reece-responsive.trout.com.au/plumbing/index-log-in.php"><input type="submit" id="" class="btn btn-Login btn-reece-secondary btn-small andRight tradeButton" value="Trade"></a><a href="http://reece-responsive.trout.com.au/navigation/happiness-log-in.php"><input type="submit" id="" class="btn btn-Login btn-reece-secondary btn-small retailButton" value="Retail"></a>
-</div>
-<div class="register">
+
+    <div class="dontHave">
+    <h5 class="loginNoAccount">Don't have a login? Sign up now.</h5>
+        <a href="http://reece-responsive.trout.com.au/plumbing/index-log-in.php"><input type="submit" id="" class="btn btn-Login btn-reece-secondary btn-small andRight tradeButton" value="Trade"></a>
+        <a href="http://reece-responsive.trout.com.au/navigation/happiness-log-in.php"><input type="submit" id="" class="btn btn-Login btn-reece-secondary btn-small retailButton" value="Retail"></a></div>
+    </div>
+
+
+
+    <div class="register">
     <a href="#" id="sign-in">< Back to log in</a>
     <h5>Register for a new Reece Account </h5>
     <p class="loginDisclaimer">Lorem ipsum dolor sit amet, non ornare arcu. Curabitur dui est, semper ac faucibus vel.<br><br></p>

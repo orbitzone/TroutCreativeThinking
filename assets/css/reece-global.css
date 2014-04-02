@@ -7,33 +7,6 @@
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
-.clearfix {
-  *zoom: 1;
-}
-.clearfix:before,
-.clearfix:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.clearfix:after {
-  clear: both;
-}
-.hide-text {
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
-}
-.input-block-level {
-  display: block;
-  width: 100%;
-  min-height: 30px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
 article,
 aside,
 details,
@@ -6249,6 +6222,33 @@ a.badge:focus {
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 @-ms-viewport {
   width: device-width;
 }
@@ -7679,7 +7679,6 @@ h6 {
   margin: 0 40px 0 0;
   color: #d3d4d5;
   font-size: 12px;
-  background: #333;
   float: right;
   padding: 10px 3px 10px 16px;
 }
@@ -7836,9 +7835,6 @@ h6 {
 .locationDropDown a:hover {
   text-decoration: none;
 }
-.locationDropDown.open {
-  background: #ffffff;
-}
 .locationDropDown.open .caret {
   border-top-color: #333;
 }
@@ -7853,21 +7849,29 @@ h6 {
   border-radius: 0 0 10px 10px;
   border-top: none;
   left: auto;
-  right: -44px;
+  right: 0px;
   top: 40px;
   width: 100%;
   min-width: 213px;
   color: #ffffff;
   background: #4d4d4d;
+  background: #3f3f3f;
 }
 .locationDropDown .dropdown-menu .btn-retail {
-  width: 70%;
-  margin-right: 29px;
+  float: none !important;
+  display: block;
+  width: auto;
   background: #009DDB;
   color: white;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 .locationDropDown .dropdown-menu .btn-retail:hover {
   background: #42bdee;
+}
+.locationDropDown .dropdown-menu .btn-retail:last-child {
+  background: #555;
 }
 .locationDropDown .dropdown-menu .btn {
   float: right;
@@ -8484,11 +8488,18 @@ h6 {
   padding-left: 40px;
 }
 @media (max-width: 768px) {
-  #registerForm,
-  .applySteps {
+  .myAccountLoginWrap #registerForm,
+  .myAccountLoginWrap .applySteps {
     padding: 10px 40px;
   }
-  .youtubeWrapper .span9 {
+  .myAccountLoginWrap .youtubeWrapper .span9 {
     padding: 20px 0;
+  }
+  .myAccountLoginWrap .myAccountLoginWrapGray .extraFieldsWrap {
+    position: relative;
+  }
+  .myAccountLoginWrap .myAccountLoginWrapGray .extraFieldsWrap .extraFields {
+    position: relative;
+    padding: 0 40px;
   }
 }

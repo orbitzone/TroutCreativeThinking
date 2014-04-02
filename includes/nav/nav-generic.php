@@ -23,7 +23,7 @@ HTML;
 
 HTML3;
     foreach ($retailItems as $reItems) {
-        $box .= '<a href="#" class="btn btn-reece-primary btn-retail">'.$reItems. '</a> <br />';
+        $box .= '<a href="#" class="btn btn-reece-primary btn-retail">'.$reItems. '</a>';
     }
 
     $box .= "</div></li>";

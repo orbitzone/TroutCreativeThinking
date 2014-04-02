@@ -381,7 +381,6 @@ margin: 0 10px 0 12px;
     margin: 0 40px 0 0;
     color: #d3d4d5;
     font-size: 12px;
-    background: #333;
     float: right;
     padding:10px 3px 10px 16px;
     &>li{
@@ -521,7 +520,6 @@ margin: 0 10px 0 12px;
         text-decoration: none;
     }
     &.open{
-        background: @white;
         .caret{
             border-top-color:#333;
         }
@@ -535,23 +533,30 @@ margin: 0 10px 0 12px;
         .border-radius(0 0 10px 10px);
         border-top:none;
         left: auto;
-        right: -44px;
+        right: 0px;
         top: 40px;
         width: 100%;
         min-width: 213px;
         color:@ocnavTextColor;
         background:@ocnavHighlight;
+        background: #3f3f3f;
       // .forgotLink {
       //   color:@ocnavTextColor;
       // }
       .btn-retail
       {
-        width: 70%;
-        margin-right: 29px;
+
+        float: none !important;
+        display: block;;
+        width: auto;
         background: #009DDB;
         color: white;
+        .border-radius(0);
         &:hover{
             background:#42bdee;
+        }
+        &:last-child{
+          background: #555;
         }
       }
       .btn
@@ -1195,17 +1200,17 @@ margin: 0 10px 0 12px;
         padding-bottom: 10px;
       }
     }
-  .extraFieldsWrap{
-    position:relative;
-    .extraFields{
-      position:absolute;
-      top:0;
-      left:-40px;
-      right:-40px;
-      padding:0 40px 20px;
-      background:#f0f0f0;
+    .extraFieldsWrap{
+      position:relative;
+      .extraFields{
+        position:absolute;
+        top:0;
+        left:-40px;
+        right:-40px;
+        padding:0 40px 20px;
+        background:#f0f0f0;
+      }
     }
-  }
   }
   .loginColoredForm{
     
@@ -1263,6 +1268,7 @@ margin: 0 10px 0 12px;
   }
 }
 @media (max-width:768px){
+  .myAccountLoginWrap{
   #registerForm,.applySteps{
     padding: 10px 40px;
   }
@@ -1270,6 +1276,14 @@ margin: 0 10px 0 12px;
   {
     .span9{
       padding: 20px 0;
+    }
+  }
+  .myAccountLoginWrapGray .extraFieldsWrap{
+      position:relative;
+      .extraFields{
+        position:relative;
+        padding:0 40px;
+      }
     }
   }
 }

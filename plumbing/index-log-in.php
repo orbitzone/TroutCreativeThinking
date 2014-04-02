@@ -344,11 +344,7 @@ include_once($serverBase."/includes/foot/scripts.php");
 				player = new YT.Player('registerYoutubePlayer', {
 					height: '540',
 					width: '900',
-					videoId: videoId,
-					events: {
-						'onReady': onPlayerReady,
-						'onStateChange': onPlayerStateChange
-					}
+					videoId: videoId
 				});
 			}
 			else{

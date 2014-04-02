@@ -1191,7 +1191,7 @@ margin: 0 10px 0 12px;
     }
 
     .applySteps{
-      padding: 0 20px 0 60px;
+      padding: 0 10px 0 40px;
       ul{
         margin-left: 15px;
         padding-left: 0;
@@ -1269,6 +1269,10 @@ margin: 0 10px 0 12px;
 }
 @media (max-width:768px){
   .myAccountLoginWrap{
+    .row-fluid [class*="span"]{
+      float: none;
+      width: auto;
+    }
   #registerForm,.applySteps{
     padding: 10px 40px;
   }

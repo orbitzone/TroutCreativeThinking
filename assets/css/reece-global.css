@@ -7925,7 +7925,7 @@ h6 {
 }
 .locationDropDown .dropdown-menu .btn-Login {
   float: left;
-  width: 46%;
+  width: 38%;
 }
 .locationDropDown .dropdown-menu > .register {
   display: none;
@@ -8005,17 +8005,6 @@ h6 {
 }
 .locationDropDown input.btn-login {
   width: auto;
-}
-.login .dontHave {
-  height: 25px;
-  overflow: hidden;
-  -webkit-transition: all 0.4s ease 0s;
-  -moz-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
-}
-.login .dontHave:hover {
-  height: 70px;
 }
 /* Happiness */
 .happiness-subNav {

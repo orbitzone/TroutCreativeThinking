@@ -115,8 +115,7 @@ include_once($serverBase."/includes/head/head-generic.php");
 							<br/>
 							<br/>
 							<div class="forgotLinks">
-								<a class='pull-left' href="#">Forgot Username?</a>
-								<a class='pull-right' href="#">Forgot Password?</a>
+								<a href="#">Forgot Username?</a> | <a href="#">Forgot Password?</a>
 							</div>
 						</form>
 						</div><!-- /.span4 -->

@@ -84,7 +84,6 @@ include_once($serverBase."/includes/head/head-generic.php");
               <div class="actions">
                 <button type="submit" class="largeBtn">Login</button>
               </div>
-              <br/>
               <div class="forgotLinks">
                 <a class='pull-left' href="#">Forgot Username / Password ?</a>
               </div>

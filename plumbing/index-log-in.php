@@ -34,67 +34,102 @@ include_once($serverBase."/includes/head/head-generic.php");
 					<div class="row-fluid">
 					</div>
 						<h2>Discover a better way of doing business</h2>
-						<p>
+						<!--<p>
 							Developed exclusively for Reece account customers this innovative management system gives you access to product pricing, allows you to build product lists, manage your account, generate customer quotes and even order online.<br /><br />
-						</p>
+						</p>-->
 					</div>
 					<div class="row-fluid myAccountLoginWrapGray">
-						<div class="span4">
-								<form id="registerForm">
-								<h3>Register for My Account</h3>
+						<div class="span8">
+						<h3>Register for My Account</h3>
+						<div class="row-fluid">
+								<form id="registerForm" class="span4">
 									<div class="controls">
-										<input type ="text" id="reeceAccount" placeholder="Account Number"> <span href="#" id="accountNumberHelp" class="accountNumberHelp" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." title="Popover on right">?</span>
-										<input type="email" id="inputEmail" placeholder="Email">
-											<div class="collapse" id="registerFormCollapsed">
-												<input type="text" id="inputName" placeholder="Name">
-												<input type="text" id="username" placeholder="Username">
-												<input type="text" id="inputPhone" placeholder="Phone">
-												<input type="text" id="inputPassword" placeholder="Business Postcode">
-											</div>
-											<button type="submit" class="loginBtn">Register</button>
+										<input type="text" id="username" placeholder="Username">
+									</div>
+									<div class="controls">
+										<input type="email" id="inputEmail" placeholder="Email Address">
+									</div>
+									<div class="controls">
+										<input type="password" id="inputPassword" placeholder="Password">
+									</div>
+									<div class="controls">
+										<a data-toggle="collapse" href="#registerFormCollapsed">Link to existing My Account?</a>
+									</div>
+									<div class="extraFieldsWrap" style="">
+									<div class="extraFields" style="">
+									<div class="collapse" id="registerFormCollapsed">
+										<div class="controls">
+											<input type ="text" id="reeceAccount" placeholder="Account Number">
+											<!--<span id="accountNumberHelp" class="accountNumberHelp" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." title="Popover on right">?</span>-->
+										</div>
+										<div class="controls">
+											<input type="text" id="inputName" placeholder="Name">
+										</div>
+
+										<div class="controls">
+											<input type="text" id="inputPhone" placeholder="Phone">
+										</div>
+										<div class="controls">
+											<input type="text" id="inputPassword" placeholder="Business Postcode">
+										</div>
+									</div>
+									<div class="actions">
+										<button type="submit" class="largeBtn">Register</button>
+									</div>
+									</div>
 									</div>
 								</form>
+						<div class="span7">
+						<div class="applySteps">
+							<h4 class="darkBlueLightHd">Sign up for the online Reece Trade Counter and you'll have access to some very useful tools:</h4>
+							<ul class="applySteps" id="applySteps">
+								<li>A subscription to Outlet, with all the latest plumbing industry news and views</li>
+								<li>Receive updates and special offers   on our latest products</li>
+								<li>Access to the online irrigation and bathroom</li>
+								<li>3D planners to save and share</li>
+								<li>Reece account customers also get access  to My Account</li>
+							</ul>
+						</div>
 						</div><!-- /.span4 -->
-						<div class="span4">
-						<h4>Apply for a Reece Trade account</h4>
-						<ul class="unstyled" id="applySteps">
-							<li>
-								<p>You need to be a Reece account customer to use “My Account”. Download an application.</p>
-								<a href="#">Download Application <span class="arrowIcon">&rsaquo;</span></a>
-							</li>
-							<li>
-								<p>If you have filled out the application, scan it and upload it or take it to your nearest Reece branch.</p>
-								<a href="#">Upload Application <span class="arrowIcon">&rsaquo;</span></a>
-							</li>
-						</ul>
+							</div>
+
 						</div><!-- /.span4 -->
+
 						<div class="span4">
-						<form class="loginBlueForm">
-						<h4>Login</h4>
+						<form class="loginBlueForm loginColoredForm">
+						<h3>Login</h3>
 							<div class="controls">
 								<input type="text" id="inputEmail" placeholder="Username">
+							</div>
+							<div class="controls">
 								<input type="password" id="inputPassword" placeholder="Password">
-								<div class="actions">
-								<button type="submit" class="loginBtn">Login</button>
-								</div>
+							</div>
+							<!--<div class="controls">
+								<label class="checkbox">
+									<input type="checkbox"> Remember me
+								</label>
+							</div>-->
+							<div class="actions">
+								<button type="submit" class="largeBtn">Login</button>
+							</div>
+							<br/>
+							<br/>
+							<div class="forgotLinks">
+								<a class='pull-left' href="#">Forgot Username?</a>
+								<a class='pull-right' href="#">Forgot Password?</a>
 							</div>
 						</form>
 						</div><!-- /.span4 -->
 					</div><!-- /.myAccountLoginWrapGray -->
 					<div class="myAccountLoginFooter">
-						<h3>How My Account works for your business</h3>
-						<div id="youtubeWrapper" class="youtubeWrapper collapse1">
-							<div id="registerYoutubePlayer">
-							</div>
-						</div>
+						<h2>How My Account works for your business</h2>
+
 						<div class="row-fluid">
-							<div class="span3">
-								<p>This overview will give you the general idea of how My Account can be a real asset to your business. And if you want to find out more about any particular feature simple click on any of the box to the right and you’ll understand why this is a business tool you don’t want to be without.</p>
-							</div>
+
 							<div class="span3">
 								<figure>
 								<a class="playVideo" href="#" data-video-id="Xxmz6u2r8v4">
-									<img src="../assets/images/MyAccount/my-account.jpg" />
+									<img src="../assets/images/MyAccount/myaccountthumb.jpg" />
 									<figcaption>
 										Overview of My Account
 									</figcaption>
@@ -104,7 +139,7 @@ include_once($serverBase."/includes/head/head-generic.php");
 							<div class="span3">
 								<figure>
 								<a class="playVideo" href="#" data-video-id="M7lc1UVf-VE">
-									<img src="../assets/images/MyAccount/order.jpg" />
+									<img src="../assets/images/MyAccount/orderthumb.jpg" />
 									<figcaption>
 										Online Ordering
 									</figcaption>
@@ -114,14 +149,27 @@ include_once($serverBase."/includes/head/head-generic.php");
 							<div class="span3">
 								<figure>
 								<a class="playVideo" href="#" data-video-id="Xxmz6u2r8v4">
-									<img src="../assets/images/MyAccount/clickandcollect.jpg" />
+									<img src="../assets/images/MyAccount/clickthumb.jpg" />
 									<figcaption>
 										Click and Collect
 									</figcaption>
 									</a>
 								</figure>
 							</div>
-
+							<div class="span3">
+							<h4 class="darkBlueLightHd">Along with all the tools mentioned above you can also get access to this innovative management system. </h4>
+								<p>Developed exclusively for Reece account customers, it gives you access to product pricing, allows you to build product lists, manage your account, generate customer quotes and even order online.</p>
+								<p>Download a Reece Account application </p>
+								<p><a href="#"><strong><i class="icon-file icon-large">&nbsp;</i> DOWNLOAD PDF</strong></a></p>
+							</div>
+						</div>
+						<div id="youtubeWrapper" class="youtubeWrapper collapse">
+							<div class="row-fluid">
+								<div class="span9">
+									<div id="registerYoutubePlayer">
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div><!-- /.myAccountLoginWrap -->
@@ -250,25 +298,6 @@ include_once($serverBase."/includes/foot/scripts.php");
 	var isPlayerHidden = true;
 	jQuery(function(){
 		var isregisterFormShown;
-		$('#registerForm input').focus(function(){
-			if(!isregisterFormShown){
-				$('#registerFormCollapsed').collapse('show');
-				isregisterFormShown = true;
-			}
-		});
-		$('#registerForm input').blur(function(){
-			window.setTimeout( function(){
-			if ($('#registerForm input:focus:visible')){
-				console.log('still in focus');
-			}
-			else{
-				console.log('blurred');
-			} }, 1000 );
-		});
-
-		$('#registerFormCollapsed').on('shown', function () {
-			isregisterFormShown = true;
-		});
 
 		$('.playVideo').click(addVideo);
 
@@ -296,6 +325,9 @@ include_once($serverBase."/includes/foot/scripts.php");
 		if (isPlayerHidden){
 			$('#youtubeWrapper').collapse('show');
 		}
+		$('html,body').animate({
+			scrollTop: $('#youtubeWrapper').offset().top
+		}, 200);
 		// 2. This code loads the IFrame Player API code asynchronously.
 		var tag = document.createElement('script');
 
@@ -310,8 +342,8 @@ include_once($serverBase."/includes/foot/scripts.php");
 		function onYouTubeIframeAPIReady() {
 			if (typeof player === 'undefined') {
 				player = new YT.Player('registerYoutubePlayer', {
-					height: '390',
-					width: '640',
+					height: '540',
+					width: '900',
 					videoId: videoId,
 					events: {
 						'onReady': onPlayerReady,

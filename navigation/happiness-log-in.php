@@ -25,14 +25,38 @@ include_once($serverBase."/includes/head/head-generic.php");
           <li><a href="#">Bathrooms</a>  <span class="divider">/</span></li>
           <li class="active page-branding text-brand">Login</li>
         </ul>
-        <div class="loginColumn">
-          <h2>Login to Happiness</h2>
-          <article class="article-summary-main row-fluid">
-            <div class="span9 loginBox grey">
-              <div class="controls">
-                <div class="row-fluid">
-                  <div class="span8"><h4>Sign up with Reece online and you’ll enjoy a host of privileges.</h4>
-                    <ul>
+        <div class="myAccountLoginWrap">
+          <div class="myAccountLoginWrapHeader">
+          <div class="row-fluid">
+          </div>
+            <h2>Login to Happiness</h2>
+            <!--<p>
+              Developed exclusively for Reece account customers this innovative management system gives you access to product pricing, allows you to build product lists, manage your account, generate customer quotes and even order online.<br /><br />
+            </p>-->
+          </div>
+          <div class="row-fluid myAccountLoginWrapGray">
+            <div class="span8">
+            <h3>Register for My Account</h3>
+            <div class="row-fluid">
+                <form id="registerForm" class="span4">
+                  <div class="controls">
+                    <input type="text" id="username" placeholder="Username">
+                  </div>
+                  <div class="controls">
+                    <input type="email" id="inputEmail" placeholder="Email Address">
+                  </div>
+                  <div class="controls">
+                    <input type="password" id="inputPassword" placeholder="Password">
+                  </div>
+
+                  <div class="actions">
+                    <button type="submit" class="largeBtn">Register</button>
+                  </div>
+                </form>
+            <div class="span7">
+            <div class="applySteps">
+              <h4 class="darkBlueLightHd">Sign up with Reece online and you’ll enjoy a host of privileges.</h4>
+              <ul class="applySteps" id="applySteps">
                       <li>Receive updates and special offers on our latest products
                       </li>
                       <li>Get invitations to exclusive in-store events
@@ -41,35 +65,41 @@ include_once($serverBase."/includes/head/head-generic.php");
                       </li>
                       <li>Save your 3D planner designs and share them with others
                       </li>
-                    </ul>
-                  </div>
-                  <div class="span4">
-                    <form>
-                      <h4>Come on get happy.</h4>
-                      <input type="text" id="inputName" placeholder="Name">
-                      <input type="email" id="inputEmail" placeholder="Email">
-                      <input type="password" id="password" placeholder="Password">
-                      <!--<input type="password" id="confPassword" placeholder="ConfirmPassword">-->
-                      <button type="submit" class="loginBtn primary">Register
-                      </button>
-                    </form>
-                  </div>
-                </div>
+              </ul>
+            </div>
+            </div><!-- /.span4 -->
               </div>
-            </div>
-            <div class="span3 loginBox red">
-              <form>
-                <div class="controls">
-                  <h4>Bathroom login</h4>
-                  <input type="text" id="inputEmail" placeholder="Username">
-                  <input type="password" id="inputPassword" placeholder="Password">
-                  <button type="submit" class="loginBtn">Login</button>
-                  <a class="forgotten" href="#">Forgot username/password?</a><br />
-                </div>
-              </form>
-            </div>
-          </article>
-        </div>
+
+            </div><!-- /.span4 -->
+
+            <div class="span4">
+            <form class="loginRedForm loginColoredForm">
+            <h3>Login</h3>
+              <div class="controls">
+                <input type="text" id="inputEmail" placeholder="Username">
+              </div>
+              <div class="controls">
+                <input type="password" id="inputPassword" placeholder="Password">
+              </div>
+              <div class="controls">
+                <label class="checkbox">
+                  <input type="checkbox"> Remember me
+                </label>
+              </div>
+              <div class="actions">
+                <button type="submit" class="largeBtn">Login</button>
+              </div>
+              <div class="forgotLinks">
+                <a class='pull-left' href="#">Forgot Username / Password ?</a>
+              </div>
+            </form>
+            </div><!-- /.span4 -->
+          </div><!-- /.myAccountLoginWrapGray -->
+        </div><!-- /.myAccountLoginWrap -->
+
+
+
+
         <div class="loginColumn">
           <article class=" row-fluid">
             <div class="span5 loginBox grey">

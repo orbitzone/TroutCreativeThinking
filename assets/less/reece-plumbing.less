@@ -112,125 +112,19 @@
     }
   }
 }
-.flipContainer{
-  height: 100px;
-  transition: height .6s;
-}
 
 
-#card {
-  height: 100px;
-  transform-style: preserve-3d;
-   -webkit-transform-origin: 50% 0;
-     -webkit-transform: perspective( 1800px ) rotateX( 0deg );
-         -moz-transform: perspective( 1800px ) rotateX( 0deg );
-           -o-transform: perspective( 1800px ) rotateX( 0deg );
-              transform: perspective( 1800px ) rotateX( 0deg );
-  transition: -webkit-transform .5s;
-}
-
-.flipContainer.flipped{
-  height: 0;
-  overflow: hidden;
-  #card{
-     -webkit-transform: perspective( 1800px ) rotateX( 90deg );
-         -moz-transform: perspective( 1800px ) rotateX( 90deg );
-           -o-transform: perspective( 1800px ) rotateX( 90deg );
-              transform: perspective( 1800px ) rotateX( 90deg );
+.youtubeWrapper{
+  text-align: center;
+  .span9{
+    height: 560px;
+    padding:20px 20px 20px 0;
+  }
+  iframe{
+    max-width:100%;
   }
 }
 
-
-
-.myAccountLoginWrap{
-  border:solid 1px #e0dfdf;
-  color: #abaaaa;
-  input[type="text"],input[type="password"],input[type="email"]{
-    .border-radius(0);
-    padding: 10px;
-    margin-bottom: 20px;
-  }
-  .accountNumberHelp{
-    display: inline-block;
-    height: 20px;
-    width: 20px;
-    background: #00aeef;
-    margin-left: 10px;
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    line-height: 20px;
-    .border-radius(50%);
-  }
-  h2{
-    color: #5e5e63
-  }
-  .myAccountLoginWrapHeader{
-    padding: 35px 35px 0;
-  }
-  .myAccountLoginWrapGray{
-    background: #f0f0f0;
-    color: #abaaaa;
-    h3{
-      color:#5e5e63;
-    }
-    h3,h4{
-      margin-top: 0;
-      padding-top: 20px;
-      line-height: 30px;
-    }
-    h4{
-      color:#042b4e;
-    }
-    #applySteps{
-      li{
-        padding-bottom: 10px;
-        p{
-          padding-bottom: 5px;
-          margin-bottom: 0;
-          padding-right: 10px;
-        }
-        a{color: #00aeef}
-        .arrowIcon{
-          font-size: 2em;
-          font-weight: 100;
-          position: relative;
-          top: 4px;
-        }
-      }
-    }
-  }
-  .loginBlueForm{
-    background: #042b4e;
-    padding: 1px 40px 20px;
-    margin: 0;
-    h4{
-      color: white;
-    }
-  }
-  .myAccountLoginFooter{
-    padding: 20px;
-    h3{
-      padding: 10px 0;
-      color: #5e5e63;
-      font-size: 17px;
-      font-weight: bold;
-    }
-    figure{
-      margin: 0;
-      padding: 5px 10px 10px;
-      figcaption{
-        color: #042b4e;
-        padding-top: 5px;
-        font-weight: bold;
-      }
-    }
-  }
-}
-
-#registerForm{
-  padding-left: 40px;
-}
 
 .hideForm{
   .formUp{
@@ -249,12 +143,5 @@
     width: auto !important;
     margin: 0;
     color:@ocnavTextColor;
-  }
-}
-.youtubeWrapper{
-  text-align: center;
-  margin: 20px;
-  iframe{
-    max-width: 100%;
   }
 }

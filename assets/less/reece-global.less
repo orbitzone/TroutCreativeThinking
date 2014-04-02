@@ -1101,3 +1101,175 @@ margin: 0 10px 0 12px;
         display: none
     }
 }
+
+// ==========================================
+// new buttons
+// ==========================================
+.largeBtn{
+  border:none;
+  background: #3f3f3f;
+  text-transform: uppercase;
+  color: white;
+  display: inline-block;
+  padding:10px 15px;
+  &:hover{
+    background: #4d4d4d;
+  }
+  &.primary{
+    background: #DB1E27
+  }
+}
+
+// ==========================================
+// Retail and trade login
+// ==========================================
+
+.myAccountLoginWrap{
+  color: #abaaaa;
+  a{
+    color:#bd1f12
+  }
+  input[type="text"],input[type="password"],input[type="email"]{
+    .border-radius(0);
+    padding: 10px;
+    height: 40px;
+    width: 100%;
+    margin-bottom: 0;
+    .box-sizing(border-box);
+  }
+  .controls{
+    padding: 10px 0;
+    position: relative;
+  }
+  .actions{
+    padding-top: 10px;
+  }
+  .darkBlueLightHd{
+    color:#131313;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5em;
+  }
+  .accountNumberHelp{
+    position: absolute;
+    right: 7px;
+    top: 17px;
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background: #00aeef;
+    margin-left: 10px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    line-height: 25px;
+    .border-radius(50%);
+    cursor: pointer;
+  }
+  h2{
+    color: #042b4e;
+    font-size: 25px;
+    padding-bottom: 20px;
+  }
+
+  .myAccountLoginWrapGray{
+    background: #f0f0f0;
+    color: #818181;
+    h3{
+      color:#3f3f3f;
+      padding-top: 30px;
+      padding-left: 40px;
+      font-size: 17px;
+    }
+    h3,h4{
+      margin-top: 0;
+    }
+
+    .applySteps{
+      padding: 0 20px 0 60px;
+      ul{
+        margin-left: 15px;
+        padding-left: 0;
+      }
+      li{
+        padding-bottom: 10px;
+      }
+    }
+  .extraFieldsWrap{
+    position:relative;
+    .extraFields{
+      position:absolute;
+      top:0;
+      left:-40px;
+      right:-40px;
+      padding:0 40px 20px;
+      background:#f0f0f0;
+    }
+  }
+  }
+  .loginColoredForm{
+    
+    padding: 1px 40px 20px;
+    margin: 0;
+    color: white;
+    h3{
+      color: white;
+      padding-left: 0;
+    }
+    .forgotLinks{
+      padding-top: 30px;
+      font-size: 12px;
+      .clearfix;
+      a{
+        color: white;
+      }
+    }
+  }
+  .loginBlueForm{
+    background: #042b4e;
+    padding-bottom: 30px;
+  }
+  .loginRedForm{
+    background: #DB1E27
+  }
+  .myAccountLoginFooter{
+    margin-top: 40px;
+    border-top:solid 1px #d4d4d4;
+    padding: 20px 0;
+    h3{
+      padding: 10px 0;
+      color: #5e5e63;
+      font-size: 17px;
+      font-weight: bold;
+    }
+    a.playVideo{
+      display: block;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+    figure{
+      margin: 0;
+      padding: 5px 20px 10px 0;
+      figcaption{
+        color: #042b4e;
+        padding-top: 25px;
+        font-weight: bold;
+      }
+    }
+  }
+  #registerForm{
+    padding-left: 40px;
+  }
+}
+@media (max-width:768px){
+  #registerForm,.applySteps{
+    padding: 10px 40px;
+  }
+  .youtubeWrapper
+  {
+    .span9{
+      padding: 20px 0;
+    }
+  }
+}

@@ -8316,3 +8316,179 @@ h6 {
 .sso .trade-form {
   display: none;
 }
+.largeBtn {
+  border: none;
+  background: #3f3f3f;
+  text-transform: uppercase;
+  color: white;
+  display: inline-block;
+  padding: 10px 15px;
+}
+.largeBtn:hover {
+  background: #4d4d4d;
+}
+.largeBtn.primary {
+  background: #db1e27;
+}
+.myAccountLoginWrap {
+  color: #abaaaa;
+}
+.myAccountLoginWrap a {
+  color: #bd1f12;
+}
+.myAccountLoginWrap input[type="text"],
+.myAccountLoginWrap input[type="password"],
+.myAccountLoginWrap input[type="email"] {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  padding: 10px;
+  height: 40px;
+  width: 100%;
+  margin-bottom: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.myAccountLoginWrap .controls {
+  padding: 10px 0;
+  position: relative;
+}
+.myAccountLoginWrap .actions {
+  padding-top: 10px;
+}
+.myAccountLoginWrap .darkBlueLightHd {
+  color: #131313;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5em;
+}
+.myAccountLoginWrap .accountNumberHelp {
+  position: absolute;
+  right: 7px;
+  top: 17px;
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  background: #00aeef;
+  margin-left: 10px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  line-height: 25px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.myAccountLoginWrap h2 {
+  color: #042b4e;
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+.myAccountLoginWrap .myAccountLoginWrapGray {
+  background: #f0f0f0;
+  color: #818181;
+}
+.myAccountLoginWrap .myAccountLoginWrapGray h3 {
+  color: #3f3f3f;
+  padding-top: 30px;
+  padding-left: 40px;
+  font-size: 17px;
+}
+.myAccountLoginWrap .myAccountLoginWrapGray h3,
+.myAccountLoginWrap .myAccountLoginWrapGray h4 {
+  margin-top: 0;
+}
+.myAccountLoginWrap .myAccountLoginWrapGray .applySteps {
+  padding: 0 20px 0 60px;
+}
+.myAccountLoginWrap .myAccountLoginWrapGray .applySteps ul {
+  margin-left: 15px;
+  padding-left: 0;
+}
+.myAccountLoginWrap .myAccountLoginWrapGray .applySteps li {
+  padding-bottom: 10px;
+}
+.myAccountLoginWrap .myAccountLoginWrapGray .extraFieldsWrap {
+  position: relative;
+}
+.myAccountLoginWrap .myAccountLoginWrapGray .extraFieldsWrap .extraFields {
+  position: absolute;
+  top: 0;
+  left: -40px;
+  right: -40px;
+  padding: 0 40px 20px;
+  background: #f0f0f0;
+}
+.myAccountLoginWrap .loginColoredForm {
+  padding: 1px 40px 20px;
+  margin: 0;
+  color: white;
+}
+.myAccountLoginWrap .loginColoredForm h3 {
+  color: white;
+  padding-left: 0;
+}
+.myAccountLoginWrap .loginColoredForm .forgotLinks {
+  padding-top: 30px;
+  font-size: 12px;
+  *zoom: 1;
+}
+.myAccountLoginWrap .loginColoredForm .forgotLinks:before,
+.myAccountLoginWrap .loginColoredForm .forgotLinks:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.myAccountLoginWrap .loginColoredForm .forgotLinks:after {
+  clear: both;
+}
+.myAccountLoginWrap .loginColoredForm .forgotLinks a {
+  color: white;
+}
+.myAccountLoginWrap .loginBlueForm {
+  background: #042b4e;
+  padding-bottom: 30px;
+}
+.myAccountLoginWrap .loginRedForm {
+  background: #db1e27;
+}
+.myAccountLoginWrap .myAccountLoginFooter {
+  margin-top: 40px;
+  border-top: solid 1px #d4d4d4;
+  padding: 20px 0;
+}
+.myAccountLoginWrap .myAccountLoginFooter h3 {
+  padding: 10px 0;
+  color: #5e5e63;
+  font-size: 17px;
+  font-weight: bold;
+}
+.myAccountLoginWrap .myAccountLoginFooter a.playVideo {
+  display: block;
+}
+.myAccountLoginWrap .myAccountLoginFooter a.playVideo:hover {
+  text-decoration: none;
+}
+.myAccountLoginWrap .myAccountLoginFooter figure {
+  margin: 0;
+  padding: 5px 20px 10px 0;
+}
+.myAccountLoginWrap .myAccountLoginFooter figure figcaption {
+  color: #042b4e;
+  padding-top: 25px;
+  font-weight: bold;
+}
+.myAccountLoginWrap #registerForm {
+  padding-left: 40px;
+}
+@media (max-width: 768px) {
+  #registerForm,
+  .applySteps {
+    padding: 10px 40px;
+  }
+  .youtubeWrapper .span9 {
+    padding: 20px 0;
+  }
+}

@@ -40,7 +40,7 @@ include_once($serverBase."/includes/head/head-generic.php");
 					</div>
 					<div class="row-fluid myAccountLoginWrapGray">
 						<div class="span8">
-						<h3>Register for My Account</h3>
+						<h3>Register for the Trade Counter</h3>
 						<div class="row-fluid">
 								<form id="registerForm" class="span4">
 									<div class="controls">
@@ -137,7 +137,7 @@ include_once($serverBase."/includes/head/head-generic.php");
 							</div>
 							<div class="span3">
 								<figure>
-								<a class="playVideo" href="#" data-video-id="M7lc1UVf-VE">
+								<a class="playVideo" href="#" data-video-id="REmfHIGdyIA">
 									<img src="../assets/images/MyAccount/orderthumb.jpg" />
 									<figcaption>
 										Online Ordering
@@ -147,7 +147,7 @@ include_once($serverBase."/includes/head/head-generic.php");
 							</div>
 							<div class="span3">
 								<figure>
-								<a class="playVideo" href="#" data-video-id="Xxmz6u2r8v4">
+								<a class="playVideo" href="#" data-video-id="vzv09M75uQM">
 									<img src="../assets/images/MyAccount/clickthumb.jpg" />
 									<figcaption>
 										Click and Collect
@@ -306,13 +306,6 @@ include_once($serverBase."/includes/foot/scripts.php");
 		$('#youtubeWrapper').on('shown', function(){
 			isPlayerHidden = false;
 		})
-
-		$('#accountNumberHelp').popover().click(function(e){
-			e.stopPropagation();
-		});
-		$(document).click(function(){
-			$('#accountNumberHelp').popover('hide');
-		});
 	});
 
 	var player;
@@ -350,26 +343,6 @@ include_once($serverBase."/includes/foot/scripts.php");
 				loadVideoById({'videoId': videoId });
 			}
 
-		}
-
-		// 4. The API will call this function when the video player is ready.
-		function onPlayerReady(event) {
-		  event.target.playVideo();
-		}
-
-		// 5. The API calls this function when the player's state changes.
-		//    The function indicates that when playing a video (state=1),
-		//    the player should play for six seconds and then stop.
-		var done = false;
-		function onPlayerStateChange(event) {
-			/*
-		  if (event.data == YT.PlayerState.PLAYING && !done) {
-		    setTimeout(stopVideo, 6000);
-		    done = true;
-		  }*/
-		}
-		function stopVideo() {
-		  player.stopVideo();
 		}
 </script>
 </body>

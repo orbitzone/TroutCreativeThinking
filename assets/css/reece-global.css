@@ -8403,6 +8403,9 @@ h6 {
 .myAccountLoginWrap .myAccountLoginWrapGray .applySteps {
   padding: 0 10px 0 40px;
 }
+.myAccountLoginWrap .myAccountLoginWrapGray .applySteps h4 {
+  padding-top: 5px;
+}
 .myAccountLoginWrap .myAccountLoginWrapGray .applySteps ul {
   margin-left: 15px;
   padding-left: 0;
@@ -8458,11 +8461,17 @@ h6 {
   border-top: solid 1px #d4d4d4;
   padding: 20px 0;
 }
+.myAccountLoginWrap .myAccountLoginFooter #landingTiles {
+  color: #333;
+}
 .myAccountLoginWrap .myAccountLoginFooter h3 {
   padding: 10px 0;
   color: #5e5e63;
   font-size: 17px;
   font-weight: bold;
+}
+.myAccountLoginWrap .myAccountLoginFooter .darkBlueLightHd {
+  margin-top: 0;
 }
 .myAccountLoginWrap .myAccountLoginFooter a.playVideo {
   display: block;

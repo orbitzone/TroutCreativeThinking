@@ -36,7 +36,7 @@ include_once($serverBase."/includes/head/head-generic.php");
           </div>
           <div class="row-fluid myAccountLoginWrapGray">
             <div class="span8">
-            <h3>Register for My Account</h3>
+            <h3>Register</h3>
             <div class="row-fluid">
                 <form id="registerForm" class="span4">
                   <div class="controls">
@@ -55,23 +55,21 @@ include_once($serverBase."/includes/head/head-generic.php");
                 </form>
             <div class="span7">
             <div class="applySteps">
-              <h4 class="darkBlueLightHd">Sign up with Reece online and you’ll enjoy a host of privileges.</h4>
+              <h4 class="darkBlueLightHd">Sign up and enjoy a host of privileges.</h4>
               <ul class="applySteps" id="applySteps">
-                      <li>Receive updates and special offers on our latest products
-                      </li>
-                      <li>Get invitations to exclusive in-store events
-                      </li>
-                      <li>Access pricing information for your local branch
-                      </li>
-                      <li>Save your 3D planner designs and share them with others
-                      </li>
+                <li>Receive updates and special offers on our latest products
+                </li>
+                <li>Get invitations to exclusive in-store events
+                </li>
+                <li>Access pricing information for your local branch
+                </li>
+                <li>Save your 3D planner designs and share them with others
+                </li>
               </ul>
             </div>
             </div><!-- /.span4 -->
               </div>
-
             </div><!-- /.span4 -->
-
             <div class="span4">
             <form class="loginRedForm loginColoredForm">
             <h3>Login</h3>
@@ -90,46 +88,59 @@ include_once($serverBase."/includes/head/head-generic.php");
             </form>
             </div><!-- /.span4 -->
           </div><!-- /.myAccountLoginWrapGray -->
-        </div><!-- /.myAccountLoginWrap -->
-
-
-
-
-        <div class="loginColumn">
-          <article class=" row-fluid">
-            <div class="span5 loginBox grey">
-
-                <div class="controls">
-                  <h3>Spotlight: Kartell by Laufen</h3>
-                  <div class="flex-video widescreen"><iframe src="//www.youtube.com/embed/Q-a1dahV-QM?rel=0&wmode=transparent&showinfo=0&modestbranding=1&controls=2" frameborder="0" allowfullscreen></iframe></div>
+          <div class="myAccountLoginFooter">
+            
+            <div class="row-fluid">
+              
+              <div class="span4" style="background:#eee">
+              <div style="background:#eee; padding:20px 20px">
+                <a class="playVideo" href="#" data-video-id="Q-a1dahV-QM"><img src="/assets/images/MyAccount/kartelthumb.jpg" alt="Discover Products"></a>
+                <h3>Spotlight: Kartell by Laufen</h3>
+              </div>
+              </div>
+              <div class="span8">
+                <div id="landingTiles">
+                  <div class="row-fluid ">
+                    <div class="tile-1811 span4 bottom-space ">
+                      <a href="http://www.reece.com.au/bathrooms/products">
+                        <img src="http://www.reece.com.au/assets/Uploads/discover-620x275.jpg" alt="Discover Products">
+                      </a>
+                      <div class="caption"><h4>Discover Products</h4><hr>
+                        <p>Browse over 1500 products designed to help you create the perfect bathroom</p>
+                      </div>
+                    </div>
+                    <div class="tile-1812 span4 bottom-space alt1 ">
+                      <a href="http://www.reece.com.au/bathroom-inspiration">
+                        <img src="http://www.reece.com.au/assets/Uploads/inspired-620x275.jpg" alt="Be Inspired">
+                      </a>
+                      <div class="caption"><h4>Be Inspired</h4><hr>
+                        <p>Checkout the photo gallery for all the latest looks and hottest bathroom trends</p>
+                      </div>
+                    </div>
+                    <div class="tile-1810 span4 bottom-space alt2 ">
+                      <a href="http://www.reece.com.au/bathrooms/3d-bathroom-planner">
+                        <img src="http://www.reece.com.au/assets/pages/thumbnails/3d-bathroom-planner-online-free.png" alt="Start Planning">
+                      </a>
+                      <div class="caption"><h4>Start Planning</h4><hr>
+                        <p>Create the ultimate look with this easy to use 3D Bathroom Planner.</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-
-            </div>
-            <div class="span7 loginBox">
-              <h3>What's Hot</h3>
-              <div class="row-fluid">
-                <div class="span4"><img src="../assets/images/hz/login/hot/block.jpg" /><p>Some text about the tip</p></div>
-                <div class="span4"><img src="../assets/images/hz/login/hot/hotel.jpg" /><p>Some text about the tip</p></div>
-                <div class="span4"><img src="../assets/images/hz/login/hot/laufen.jpg" /><p>Some text about the tip</p></div>
               </div>
-              <div class="row-fluid">
-                <div class="span4"><img src="../assets/images/hz/login/hot/3dplanner.jpg" /><p>Some text about the tip</p></div>
-                <div class="span4"><img src="../assets/images/hz/login/hot/ilmb.jpg" /><p>Some text about the tip</p></div>
-                <div class="span4"><img src="../assets/images/hz/login/hot/palomba.jpg" /><p>Some text about the tip</p></div>
-              </div>
-              <br /><br /><br /><br />
             </div>
-          </article>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
+            <div id="youtubeWrapper" class="youtubeWrapper collapse">
+              <div class="row-fluid">
+                <div class="span9">
+                  <div id="registerYoutubePlayer">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- /.myAccountLoginFooter -->
+        </div><!-- /.myAccountLoginWrap -->
+      </div><!-- /.inner-wrapper -->
+    </div><!-- /.content-container -->
   <?php
   include_once($serverBase."/includes/foot/foot-generic.php");
   ?>
@@ -156,5 +167,58 @@ $jsScriptPaths = [
 ];
 include_once($serverBase."/includes/foot/scripts.php");
 ?>
+
+<script>
+  var videoId = 'Q-a1dahV-QM';
+  var isPlayerHidden = true;
+  var player;
+    jQuery(function(){
+    var isregisterFormShown;
+
+    $('.playVideo').click(addVideo);
+
+    $('#youtubeWrapper').on('hidden', function(){
+      isPlayerHidden = true;
+    })
+    $('#youtubeWrapper').on('shown', function(){
+      isPlayerHidden = false;
+    })
+  });
+
+  function addVideo(e){
+    e.preventDefault();
+
+    videoId = $(this).attr('data-video-id');
+    if (isPlayerHidden){
+      $('#youtubeWrapper').collapse('show');
+    }
+    $('html,body').animate({
+      scrollTop: $('#youtubeWrapper').offset().top
+    }, 200);
+    // 2. This code loads the IFrame Player API code asynchronously.
+    var tag = document.createElement('script');
+
+    tag.src = "https://www.youtube.com/iframe_api";
+
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    if(player) {player.loadVideoById({'videoId': videoId });}
+  }
+    // 3. This function creates an <iframe> (and YouTube player)
+    //    after the API code downloads.
+    function onYouTubeIframeAPIReady() {
+      if (typeof player === 'undefined') {
+        player = new YT.Player('registerYoutubePlayer', {
+          height: '540',
+          width: '900',
+          videoId: videoId
+        });
+      }
+      else{
+        loadVideoById({'videoId': videoId });
+      }
+
+    }
+</script>
 </body>
 </html>

@@ -52,12 +52,14 @@ elseif ($state == null) {
         <input type="password" placeholder="Password">
         <input type="button" class="btn btn-login btn-small loginButton" onclick="window.location.href='?state=retail'" value="Log In">
         <a href="#" class="forgotLink">Forgot password?</a>
-    </form>
+    
 
     <div class="dontHave">
     <h5 class="loginNoAccount">Don't have a login? Sign up.</h5>
         <a href="/plumbing/index-log-in.php" class="btn btn-Login btn-reece-secondary btn-small andRight tradeButton">Trade</a>
-        <a href="/navigation/happiness-log-in.php" class="btn btn-Login btn-reece-secondary btn-small retailButton" >Retail</a></div>
+        <a href="/navigation/happiness-log-in.php" class="btn btn-Login btn-reece-secondary btn-small retailButton" >Retail</a>
+    </div>
+    </form>
     </div>
 
 

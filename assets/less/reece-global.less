@@ -1000,6 +1000,7 @@ margin: 0 10px 0 12px;
 
     .navbar-fixed-top {
         margin: 0;
+
     }
 
     .ocmain-wrapper {
@@ -1021,10 +1022,16 @@ margin: 0 10px 0 12px;
 
 }
 
-@media (max-width: 767px) {
-
+@media (max-width: 768px) {
+    .navbar-fixed-top {
+        margin: 0;
+        position: static;
+    }
     body {
         padding: 0;
+    }
+    .content-container{
+      margin-top: 0;
     }
 
 }

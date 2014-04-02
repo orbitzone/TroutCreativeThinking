@@ -62,7 +62,7 @@ include_once($serverBase."/includes/head/head-generic.php");
 											<input type ="text" id="reeceAccount" placeholder="Account Number">
 											<!--<span id="accountNumberHelp" class="accountNumberHelp" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." title="Popover on right">?</span>-->
 										</div>
-										<div class="controls">
+										<!--<div class="controls">
 											<input type="text" id="inputName" placeholder="Name">
 										</div>
 
@@ -71,7 +71,7 @@ include_once($serverBase."/includes/head/head-generic.php");
 										</div>
 										<div class="controls">
 											<input type="text" id="inputPassword" placeholder="Business Postcode">
-										</div>
+										</div>-->
 									</div>
 									<div class="actions">
 										<button type="submit" class="largeBtn">Register</button>

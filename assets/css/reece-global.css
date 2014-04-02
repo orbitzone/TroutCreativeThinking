@@ -8422,11 +8422,11 @@ h6 {
   top: 0;
   left: -40px;
   right: -40px;
-  padding: 0 40px 20px;
+  padding: 0 40px 10px;
   background: #f0f0f0;
 }
 .myAccountLoginWrap .loginColoredForm {
-  padding: 1px 40px 20px;
+  padding: 1px 40px 35px;
   margin: 0;
   color: white;
 }
@@ -8453,7 +8453,6 @@ h6 {
 }
 .myAccountLoginWrap .loginBlueForm {
   background: #042b4e;
-  padding-bottom: 30px;
 }
 .myAccountLoginWrap .loginRedForm {
   background: #db1e27;

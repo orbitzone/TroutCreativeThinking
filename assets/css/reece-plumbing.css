@@ -57,13 +57,26 @@
 .loginColumn {
   margin-top: 0px;
 }
+.loginColumn .breakOut {
+  font-size: 12px;
+}
+.loginColumn .myTips {
+  border: 2px solid #EFEFEF;
+}
 .loginColumn h2 {
   margin-bottom: 10px;
 }
 .loginColumn .loginBox {
   padding: 20px;
-  min-height: 218px;
   position: relative;
+}
+.loginColumn .loginBox ul,
+.loginColumn .loginBox ol {
+  padding: 0;
+  margin: 0 25px 10px 17px;
+}
+.loginColumn .darkGrey {
+  background: #555555;
 }
 .loginColumn .grey {
   background-image: url('../images/MyAccount/lightbox-background.jpg');
@@ -78,6 +91,7 @@
 }
 .loginColumn .blue {
   background: #0d2e56;
+  min-height: 258px;
   color: #FFFFFF;
 }
 .loginColumn .blue button {
@@ -86,6 +100,15 @@
   color: #FFFFFF;
   text-shadow: none;
   border: none;
+}
+.loginColumn .blue form {
+  margin-top: 50px;
+}
+.loginColumn .span6 h4 {
+  max-width: 300px;
+}
+.loginColumn .uploadMargin p {
+  padding-left: 20px;
 }
 .loginColumn input {
   width: 95%;
@@ -118,23 +141,25 @@
   line-height: 12px;
   color: #FFFFFF;
 }
-.hideForm .formUp {
-  height: 30px;
-  overflow: hidden;
-  -webkit-transition: all 0.7s ease 0s;
-  -moz-transition: all 0.7s ease 0s;
-  -o-transition: all 0.7s ease 0s;
-  transition: all 0.7s ease 0s;
-}
-.hideForm .formUp:hover {
-  height: 180px;
-}
-.hideForm label {
-  display: inline-block;
-  width: auto !important;
-  margin: 0;
-  color: #ffffff;
-}
+/*.hideForm{
+    .formUp{
+        height: 30px;
+        overflow:hidden;
+        -webkit-transition: all 0.7s ease 0s;
+        -moz-transition: all 0.7s ease 0s;
+        -o-transition: all 0.7s ease 0s;
+        transition: all 0.7s ease 0s;
+        &:hover{
+            height: 180px;
+        }
+    }
+    label{
+        display: inline-block;
+        width: auto !important;
+        margin: 0;
+        color:@ocnavTextColor;
+    }
+}*/
 @media (max-width: 767px) {
   .loginColumn {
     margin-top: 20px;

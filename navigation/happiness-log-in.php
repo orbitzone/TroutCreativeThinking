@@ -43,7 +43,7 @@ include_once($serverBase."/includes/head/head-generic.php");
 
               <div class="controls">
                 <div class="row-fluid">
-                  <div class="span6"><h4>Sign up with Reece online and you’ll enjoy a host of privileges.</h4>
+                  <div class="span6"><h4>Sign up with Reece online and you&rsquo;ll enjoy a host of privileges.</h4>
                     <ul>
                       <li>Receive updates and special offers on our latest products
                       </li>

@@ -47,9 +47,9 @@ include_once($serverBase."/includes/head/head-generic.php");
                 >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac leo bibendum, suscipit sapien vitae, posuere nulla. Duis vitae neque urna. Cras in sem eu risus blandit congue in et odio. Sed non congue tellus, vel facilisis tortor. Nunc imperdiet semper nibh in vestibulum. Donec a volutpat quam, eget mattis eros. Quisque augue leo, cursus quis venenatis nec, venenatis a quam. Nunc eleifend ipsum ac eros sollicitudin, non accumsan tortor mattis. Etiam eu enim sit amet magna convallis sollicitudin. Fusce porttitor nulla ac nisi accumsan ultrices.</p>
                 <img src="/assets/images/aboutus/history/img-drop.png" alt=" " class="water-drop"
                 data-anchor-target="#slide-1"
-                data-top-top="top: 0%"
-                data-center-bottom="top: 60%; opacity: 1"
-                data--200-top-bottom="opacity: 0; top: 80%"
+                data-top-top="top: 100%"
+                data-center-bottom="top: 120%; opacity: 1"
+                data-200-top-bottom="opacity: 0;"
                 >
 
             </div>

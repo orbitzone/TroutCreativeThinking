@@ -37,22 +37,27 @@
 }
 
 
-
 .loginColumn{
     margin-top: 0px;
-
-
-
-
-
-
+    & .breakOut{
+            font-size:12px;
+    }
+    & .myTips{
+            border:2px solid #EFEFEF;
+    }
     & h2{
     margin-bottom:10px;
     }
     & .loginBox{
     padding:20px;
-    min-height: 218px;
     position: relative;
+       & ul, ol {
+                padding: 0;
+                margin: 0 25px 10px 17px;
+            }
+    }
+    & .darkGrey{
+        background:#555555;
     }
     & .grey{
         background-image: url('../images/MyAccount/lightbox-background.jpg');
@@ -67,6 +72,7 @@
     }
     & .blue{
     background: #0d2e56;
+    min-height: 258px;
     color:#FFFFFF;
     & button{
     background: #000000;
@@ -75,7 +81,23 @@
     text-shadow:none;
     border:none;
     }
+     & form{
+        margin-top:50px;
     }
+    }
+
+    & .span6{
+        & h4{
+            max-width:300px;
+        }
+    }
+    & .uploadMargin{
+        & p{
+            padding-left:20px;
+        }
+    }
+
+
     & input{
     width:95%;
     border:none;
@@ -109,9 +131,7 @@
 }
 
 
-
-.hideForm{
-
+/*.hideForm{
     .formUp{
         height: 30px;
         overflow:hidden;
@@ -129,8 +149,7 @@
         margin: 0;
         color:@ocnavTextColor;
     }
-}
-
+}*/
 
 
 @media (max-width: 767px) {

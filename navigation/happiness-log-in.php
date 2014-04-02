@@ -81,14 +81,10 @@ include_once($serverBase."/includes/head/head-generic.php");
               <div class="controls">
                 <input type="password" id="inputPassword" placeholder="Password">
               </div>
-              <div class="controls">
-                <label class="checkbox">
-                  <input type="checkbox"> Remember me
-                </label>
-              </div>
               <div class="actions">
                 <button type="submit" class="largeBtn">Login</button>
               </div>
+              <br/>
               <div class="forgotLinks">
                 <a class='pull-left' href="#">Forgot Username / Password ?</a>
               </div>

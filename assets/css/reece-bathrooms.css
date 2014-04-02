@@ -2890,6 +2890,20 @@ p.inspBlogDate {
 /* ===============================================================================================================================
     Login page
     =============================================================================================================================== */
+.loginBtn {
+  border: none;
+  background: #6e7378;
+  text-transform: uppercase;
+  color: white;
+  display: inline-block;
+  padding: 10px 15px;
+}
+.loginBtn:hover {
+  background: #4d4d4d;
+}
+.loginBtn.primary {
+  background: #db1e27;
+}
 .loginColumn {
   margin-top: 20px;
 }
@@ -2907,33 +2921,26 @@ p.inspBlogDate {
   margin: 0 25px 10px 17px;
 }
 .loginColumn .loginBox form {
-  margin: 8% 0px 0px 0px;
+  margin: 0;
 }
 .loginColumn .grey {
   background: #EFEFEF;
 }
-.loginColumn .grey button {
-  background: #DB1E27;
-  border-radius: 0px ;
-  color: #FFFFFF;
-  text-shadow: none;
-  border: none;
-  padding: 4px 11px;
+.loginColumn .grey li {
+  padding-top: 10px;
 }
 .loginColumn .red {
   background: #DB1E27;
   color: #FFFFFF;
-}
-.loginColumn .red button {
-  background: #000000;
-  border-radius: 0px ;
-  color: #FFFFFF;
-  text-shadow: none;
-  border: none;
+  min-height: 268px;
 }
 .loginColumn input {
   width: 95%;
   border: none;
+  padding: 10px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 .loginColumn form {
   margin: 0px;
@@ -2946,7 +2953,6 @@ p.inspBlogDate {
 }
 .loginColumn button {
   float: right;
-  background: none ;
 }
 .loginColumn .form-wrapper {
   position: absolute;
@@ -2960,6 +2966,8 @@ p.inspBlogDate {
   font-size: 11px;
   line-height: 12px;
   color: #FFFFFF;
+  display: block;
+  padding-top: 10px;
 }
 /* ===============================================================================================================================
     Designer Looks

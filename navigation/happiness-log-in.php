@@ -28,22 +28,10 @@ include_once($serverBase."/includes/head/head-generic.php");
         <div class="loginColumn">
           <h2>Login to Happiness</h2>
           <article class="article-summary-main row-fluid">
-            <div class="span4 loginBox red">
-              <form>
-                <div class="controls">
-                  <h4>Bathroom login</h4>
-                  <input type="text" id="inputEmail" placeholder="Username">
-                  <input type="password" id="inputPassword" placeholder="Password">
-                  <button type="submit" class="btn">Login</button>
-                  <a class="forgotten" href="#">Forgot username/password?</a><br />
-                </div>
-              </form>
-            </div>
-            <div class="span8 loginBox grey">
-
+            <div class="span9 loginBox grey">
               <div class="controls">
                 <div class="row-fluid">
-                  <div class="span6"><h4>Sign up with Reece online and you’ll enjoy a host of privileges.</h4>
+                  <div class="span8"><h4>Sign up with Reece online and you’ll enjoy a host of privileges.</h4>
                     <ul>
                       <li>Receive updates and special offers on our latest products
                       </li>
@@ -55,19 +43,31 @@ include_once($serverBase."/includes/head/head-generic.php");
                       </li>
                     </ul>
                   </div>
-                  <div class="span6">
+                  <div class="span4">
                     <form>
                       <h4>Come on get happy.</h4>
                       <input type="text" id="inputName" placeholder="Name">
                       <input type="email" id="inputEmail" placeholder="Email">
-                      <button type="submit" class="btn">Register
+                      <input type="password" id="password" placeholder="Password">
+                      <!--<input type="password" id="confPassword" placeholder="ConfirmPassword">-->
+                      <button type="submit" class="loginBtn primary">Register
                       </button>
                     </form>
                   </div>
                 </div>
               </div>
             </div>
-
+            <div class="span3 loginBox red">
+              <form>
+                <div class="controls">
+                  <h4>Bathroom login</h4>
+                  <input type="text" id="inputEmail" placeholder="Username">
+                  <input type="password" id="inputPassword" placeholder="Password">
+                  <button type="submit" class="loginBtn">Login</button>
+                  <a class="forgotten" href="#">Forgot username/password?</a><br />
+                </div>
+              </form>
+            </div>
           </article>
         </div>
         <div class="loginColumn">

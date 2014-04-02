@@ -3053,13 +3053,27 @@ p.inspBlogDate{
 /* ===============================================================================================================================
     Login page
     =============================================================================================================================== */
+.loginBtn{
+  border:none;
+  background: #6e7378;
+  text-transform: uppercase;
+  color: white;
+  display: inline-block;
+  padding:10px 15px;
+  &:hover{
+    background: #4d4d4d;
+  }
+  &.primary{
+    background: #DB1E27
+  }
+}
 
     .loginColumn{
         margin-top: 20px;
-        & h2{
+        h2{
             margin-bottom:10px;
         }
-        & .loginBox{
+        .loginBox{
             padding:20px;
             min-height: 225px;
             position: relative;
@@ -3068,34 +3082,26 @@ p.inspBlogDate{
                 margin: 0 25px 10px 17px;
             }
             & form{
-                margin: 8% 0px 0px 0px;
+                margin: 0;
             }
         }
-        & .grey{
+        .grey{
             background:#EFEFEF;
-            & button{
-                background: #DB1E27;
-                border-radius: 0px ;
-                color:#FFFFFF;
-                text-shadow:none;
-                border:none;
-                padding: 4px 11px;
+            li{
+                padding-top: 10px;
             }
         }
-        & .red{
+        .red{
             background: #DB1E27;
             color:#FFFFFF;
-            & button{
-                background: #000000;
-                border-radius: 0px ;
-                color:#FFFFFF;
-                text-shadow:none;
-                border:none;
-            }
+            min-height: 268px;
+
         }
-        & input{
+        input{
             width:95%;
             border:none;
+            padding: 10px;
+            .border-radius(0);
         }
         form {
             margin: 0px;
@@ -3108,7 +3114,6 @@ p.inspBlogDate{
         }
         button{
             float:right;
-            background: none ;
         }
         .form-wrapper{
             position: absolute;
@@ -3122,6 +3127,9 @@ p.inspBlogDate{
             font-size: 11px;
             line-height: 12px;
             color:#FFFFFF;
+            display: block;
+            padding-top: 10px;
+            //clear: both;
         }
     }
 

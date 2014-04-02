@@ -12,75 +12,67 @@
 //====================================================================================================================================
 
 .page-branding {
-    &.text-brand {
-        color: @brandingPlumbing;
-    }
-    &.sale-branding {
-        position: absolute;
-        top: 5%;
-        left: 5%;
-        width: 41px;
-        height: 40px;
-        background: url("@{baseImagePath}/products_2013/products-plumbing-sale-iconx1.png") no-repeat 0 0;
-        .image-2x("@{baseImagePath}/products_2013/products-plumbing-sale-iconx2.png", 41px, 40px);
-    }
-    &.box-brand {
-        background:@brandingPlumbing;
-    }
+  &.text-brand {
+    color: @brandingPlumbing;
+  }
+  &.sale-branding {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 41px;
+    height: 40px;
+    background: url("@{baseImagePath}/products_2013/products-plumbing-sale-iconx1.png") no-repeat 0 0;
+    .image-2x("@{baseImagePath}/products_2013/products-plumbing-sale-iconx2.png", 41px, 40px);
+  }
+  &.box-brand {
+    background:@brandingPlumbing;
+  }
 }
 .subnavbar{
   background:@brandingPlumbing;
 }
 
 .myAccountTexture{
-    background-image: url('../images/MyAccount/lightbox-background.jpg');
+  background-image: url('../images/MyAccount/lightbox-background.jpg');
 }
 
-
-
-.loginColumn{
-    margin-top: 0px;
-
-
-
-
-
-
-    & h2{
+/*.loginColumn{
+  margin-top: 0px;
+  h2{
     margin-bottom:10px;
-    }
-    & .loginBox{
+  }
+  .loginBox{
     padding:20px;
     min-height: 218px;
     position: relative;
+  }
+  .grey{
+    background-image: url('../images/MyAccount/lightbox-background.jpg');
+    button{
+      background: #0d2e56;
+      border-radius: 0px ;
+      color:#FFFFFF;
+      text-shadow:none;
+      border:none;
+      padding: 4px 11px;
     }
-    & .grey{
-        background-image: url('../images/MyAccount/lightbox-background.jpg');
-    & button{
+  }
+  .blue{
     background: #0d2e56;
-    border-radius: 0px ;
     color:#FFFFFF;
-    text-shadow:none;
-    border:none;
-    padding: 4px 11px;
+    button{
+      background: #000000;
+      border-radius: 0px ;
+      color:#FFFFFF;
+      text-shadow:none;
+      border:none;
     }
-    }
-    & .blue{
-    background: #0d2e56;
-    color:#FFFFFF;
-    & button{
-    background: #000000;
-    border-radius: 0px ;
-    color:#FFFFFF;
-    text-shadow:none;
-    border:none;
-    }
-    }
-    & input{
+  }
+  input{
     width:95%;
     border:none;
-    }
-    form {
+  }
+  form {
     margin: 0px;
     position: relative;
     top: 0;
@@ -88,76 +80,181 @@
     left: 0;
     right: 0;
     margin: auto;
-    }
-    button{
-        float:right;
-        background: none ;
-    }
-    .form-wrapper{
-        position: absolute;
-        top: 50%;
-        left: 0;
-        width: 100%;
-        text-align: center;
-    }
-    & .forgotten{
-/*    text-transform: uppercase;*/
+  }
+  button{
+    float:right;
+    background: none ;
+  }
+  .form-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+  & .forgotten{
+
     font-size: 10px;
     line-height: 12px;
     color:#FFFFFF;
-    }
+  }
 }
-
-
-
-.hideForm{
-
-    .formUp{
-        height: 30px;
-        overflow:hidden;
-        -webkit-transition: all 0.7s ease 0s;
-        -moz-transition: all 0.7s ease 0s;
-        -o-transition: all 0.7s ease 0s;
-        transition: all 0.7s ease 0s;
-        &:hover{
-            height: 180px;
-        }
-    }
-    label{
-        display: inline-block;
-        width: auto !important;
-        margin: 0;
-        color:@ocnavTextColor;
-    }
-}
-
+*/
 
 
 @media (max-width: 767px) {
-
-    .loginColumn{
-        margin-top: 20px;
-        & .loginBox{
-        min-height:0px;
-        padding:50px;
-        margin-bottom:0px;
-        }
-
+  .loginColumn{
+    margin-top: 20px;
+    & .loginBox{
+      min-height:0px;
+      padding:50px;
+      margin-bottom:0px;
     }
+  }
+}
+.flipContainer{
+  height: 100px;
+  transition: height .6s;
+}
+
+
+#card {
+  height: 100px;
+  transform-style: preserve-3d;
+   -webkit-transform-origin: 50% 0;
+     -webkit-transform: perspective( 1800px ) rotateX( 0deg );
+         -moz-transform: perspective( 1800px ) rotateX( 0deg );
+           -o-transform: perspective( 1800px ) rotateX( 0deg );
+              transform: perspective( 1800px ) rotateX( 0deg );
+  transition: -webkit-transform .5s;
+}
+
+.flipContainer.flipped{
+  height: 0;
+  overflow: hidden;
+  #card{
+     -webkit-transform: perspective( 1800px ) rotateX( 90deg );
+         -moz-transform: perspective( 1800px ) rotateX( 90deg );
+           -o-transform: perspective( 1800px ) rotateX( 90deg );
+              transform: perspective( 1800px ) rotateX( 90deg );
+  }
 }
 
 
 
+.myAccountLoginWrap{
+  border:solid 1px #e0dfdf;
+  color: #abaaaa;
+  input[type="text"],input[type="password"],input[type="email"]{
+    .border-radius(0);
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .accountNumberHelp{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background: #00aeef;
+    margin-left: 10px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    line-height: 20px;
+    .border-radius(50%);
+  }
+  h2{
+    color: #5e5e63
+  }
+  .myAccountLoginWrapHeader{
+    padding: 35px 35px 0;
+  }
+  .myAccountLoginWrapGray{
+    background: #f0f0f0;
+    color: #abaaaa;
+    h3{
+      color:#5e5e63;
+    }
+    h3,h4{
+      margin-top: 0;
+      padding-top: 20px;
+      line-height: 30px;
+    }
+    h4{
+      color:#042b4e;
+    }
+    #applySteps{
+      li{
+        padding-bottom: 10px;
+        p{
+          padding-bottom: 5px;
+          margin-bottom: 0;
+          padding-right: 10px;
+        }
+        a{color: #00aeef}
+        .arrowIcon{
+          font-size: 2em;
+          font-weight: 100;
+          position: relative;
+          top: 4px;
+        }
+      }
+    }
+  }
+  .loginBlueForm{
+    background: #042b4e;
+    padding: 1px 40px 20px;
+    margin: 0;
+    h4{
+      color: white;
+    }
+  }
+  .myAccountLoginFooter{
+    padding: 20px;
+    h3{
+      padding: 10px 0;
+      color: #5e5e63;
+      font-size: 17px;
+      font-weight: bold;
+    }
+    figure{
+      margin: 0;
+      padding: 5px 10px 10px;
+      figcaption{
+        color: #042b4e;
+        padding-top: 5px;
+        font-weight: bold;
+      }
+    }
+  }
+}
 
+#registerForm{
+  padding-left: 40px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.hideForm{
+  .formUp{
+    height: 70px;
+    overflow:hidden;
+    -webkit-transition: all 0.7s ease 0s;
+    -moz-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+    &:hover{
+      height: 180px;
+    }
+  }
+  label{
+    display: inline-block;
+    width: auto !important;
+    margin: 0;
+    color:@ocnavTextColor;
+  }
+}
+.youtubeWrapper{
+  text-align: center;
+  margin: 20px;
+  iframe{
+    max-width: 100%;
+  }
+}

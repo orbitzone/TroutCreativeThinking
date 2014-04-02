@@ -54,72 +54,201 @@
 .myAccountTexture {
   background-image: url('../images/MyAccount/lightbox-background.jpg');
 }
-.loginColumn {
+/*.loginColumn{
   margin-top: 0px;
-}
-.loginColumn h2 {
-  margin-bottom: 10px;
-}
-.loginColumn .loginBox {
-  padding: 20px;
-  min-height: 218px;
-  position: relative;
-}
-.loginColumn .grey {
-  background-image: url('../images/MyAccount/lightbox-background.jpg');
-}
-.loginColumn .grey button {
-  background: #0d2e56;
-  border-radius: 0px ;
-  color: #FFFFFF;
-  text-shadow: none;
-  border: none;
-  padding: 4px 11px;
-}
-.loginColumn .blue {
-  background: #0d2e56;
-  color: #FFFFFF;
-}
-.loginColumn .blue button {
-  background: #000000;
-  border-radius: 0px ;
-  color: #FFFFFF;
-  text-shadow: none;
-  border: none;
-}
-.loginColumn input {
-  width: 95%;
-  border: none;
-}
-.loginColumn form {
-  margin: 0px;
-  position: relative;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-.loginColumn button {
-  float: right;
-  background: none ;
-}
-.loginColumn .form-wrapper {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  text-align: center;
-}
-.loginColumn .forgotten {
-  /*    text-transform: uppercase;*/
+  h2{
+    margin-bottom:10px;
+  }
+  .loginBox{
+    padding:20px;
+    min-height: 218px;
+    position: relative;
+  }
+  .grey{
+    background-image: url('../images/MyAccount/lightbox-background.jpg');
+    button{
+      background: #0d2e56;
+      border-radius: 0px ;
+      color:#FFFFFF;
+      text-shadow:none;
+      border:none;
+      padding: 4px 11px;
+    }
+  }
+  .blue{
+    background: #0d2e56;
+    color:#FFFFFF;
+    button{
+      background: #000000;
+      border-radius: 0px ;
+      color:#FFFFFF;
+      text-shadow:none;
+      border:none;
+    }
+  }
+  input{
+    width:95%;
+    border:none;
+  }
+  form {
+    margin: 0px;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  button{
+    float:right;
+    background: none ;
+  }
+  .form-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+  & .forgotten{
 
-  font-size: 10px;
-  line-height: 12px;
-  color: #FFFFFF;
+    font-size: 10px;
+    line-height: 12px;
+    color:#FFFFFF;
+  }
+}
+*/
+@media (max-width: 767px) {
+  .loginColumn {
+    margin-top: 20px;
+  }
+  .loginColumn .loginBox {
+    min-height: 0px;
+    padding: 50px;
+    margin-bottom: 0px;
+  }
+}
+.flipContainer {
+  height: 100px;
+  transition: height .6s;
+}
+#card {
+  height: 100px;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: 50% 0;
+  -webkit-transform: perspective(1800px) rotateX(0deg);
+  -moz-transform: perspective(1800px) rotateX(0deg);
+  -o-transform: perspective(1800px) rotateX(0deg);
+  transform: perspective(1800px) rotateX(0deg);
+  transition: -webkit-transform 0.5s;
+}
+.flipContainer.flipped {
+  height: 0;
+  overflow: hidden;
+}
+.flipContainer.flipped #card {
+  -webkit-transform: perspective(1800px) rotateX(90deg);
+  -moz-transform: perspective(1800px) rotateX(90deg);
+  -o-transform: perspective(1800px) rotateX(90deg);
+  transform: perspective(1800px) rotateX(90deg);
+}
+.myAccountLoginWrap {
+  border: solid 1px #e0dfdf;
+  color: #abaaaa;
+}
+.myAccountLoginWrap input[type="text"],
+.myAccountLoginWrap input[type="password"],
+.myAccountLoginWrap input[type="email"] {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.myAccountLoginWrap .accountNumberHelp {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background: #00aeef;
+  margin-left: 10px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  line-height: 20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.myAccountLoginWrap h2 {
+  color: #5e5e63;
+}
+.myAccountLoginWrap .myAccountLoginWrapHeader {
+  padding: 35px 35px 0;
+}
+.myAccountLoginWrap .myAccountLoginWrapGray {
+  background: #f0f0f0;
+  color: #abaaaa;
+}
+.myAccountLoginWrap .myAccountLoginWrapGray h3 {
+  color: #5e5e63;
+}
+.myAccountLoginWrap .myAccountLoginWrapGray h3,
+.myAccountLoginWrap .myAccountLoginWrapGray h4 {
+  margin-top: 0;
+  padding-top: 20px;
+  line-height: 30px;
+}
+.myAccountLoginWrap .myAccountLoginWrapGray h4 {
+  color: #042b4e;
+}
+.myAccountLoginWrap .myAccountLoginWrapGray #applySteps li {
+  padding-bottom: 10px;
+}
+.myAccountLoginWrap .myAccountLoginWrapGray #applySteps li p {
+  padding-bottom: 5px;
+  margin-bottom: 0;
+  padding-right: 10px;
+}
+.myAccountLoginWrap .myAccountLoginWrapGray #applySteps li a {
+  color: #00aeef;
+}
+.myAccountLoginWrap .myAccountLoginWrapGray #applySteps li .arrowIcon {
+  font-size: 2em;
+  font-weight: 100;
+  position: relative;
+  top: 4px;
+}
+.myAccountLoginWrap .loginBlueForm {
+  background: #042b4e;
+  padding: 1px 40px 20px;
+  margin: 0;
+}
+.myAccountLoginWrap .loginBlueForm h4 {
+  color: white;
+}
+.myAccountLoginWrap .myAccountLoginFooter {
+  padding: 20px;
+}
+.myAccountLoginWrap .myAccountLoginFooter h3 {
+  padding: 10px 0;
+  color: #5e5e63;
+  font-size: 17px;
+  font-weight: bold;
+}
+.myAccountLoginWrap .myAccountLoginFooter figure {
+  margin: 0;
+  padding: 5px 10px 10px;
+}
+.myAccountLoginWrap .myAccountLoginFooter figure figcaption {
+  color: #042b4e;
+  padding-top: 5px;
+  font-weight: bold;
+}
+#registerForm {
+  padding-left: 40px;
 }
 .hideForm .formUp {
-  height: 30px;
+  height: 70px;
   overflow: hidden;
   -webkit-transition: all 0.7s ease 0s;
   -moz-transition: all 0.7s ease 0s;
@@ -135,13 +264,10 @@
   margin: 0;
   color: #ffffff;
 }
-@media (max-width: 767px) {
-  .loginColumn {
-    margin-top: 20px;
-  }
-  .loginColumn .loginBox {
-    min-height: 0px;
-    padding: 50px;
-    margin-bottom: 0px;
-  }
+.youtubeWrapper {
+  text-align: center;
+  margin: 20px;
+}
+.youtubeWrapper iframe {
+  max-width: 100%;
 }

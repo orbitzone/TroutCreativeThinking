@@ -298,17 +298,17 @@ h1, h2, h3, h4, h5, h6 {
         padding-top: 73px;
     }
     body.withSubNav{
-        padding-top: 51px
+        padding-top: 50px
     }
     body.withHappinessSubNav{
-        padding-top: 51px;
+        padding-top: 50px;
     }
 }
 .topNav{
     background: #3f3f3f;
     .clearfix;
     position: absolute;
-    top: -51px;
+    top: -50px;
 }
 .navHeader{
     padding-bottom: 0px;
@@ -415,7 +415,7 @@ margin: 0 10px 0 12px;
     position: absolute;right: 0;
     top: 0;
     margin: 0;
-    padding:14px 12px;
+    padding:12px 7px;
     background:@ocnavHighlight;
     float: right;
 /*    width:242px;*/
@@ -443,7 +443,7 @@ margin: 0 10px 0 12px;
         -o-transition: all 0.7s ease 0s;
         transition: all 0.7s ease 0s;
         &:focus{
-            width: 220px;
+            width: 260px;
             border-color: #d3d4d5;
             color: #d3d4d5;
         }
@@ -454,6 +454,10 @@ margin: 0 10px 0 12px;
         margin: 0;
         color:@ocnavTextColor;
     }
+    .icon{
+        font-size: 22px;
+    }
+
 }
 
 
@@ -530,9 +534,11 @@ margin: 0 10px 0 12px;
         padding: 10px;
         .border-radius(0 0 10px 10px);
         border-top:none;
-        left: -167px;
+        left: auto;
+        right: -44px;
+        top: 40px;
         width: 100%;
-        min-width: 300px;
+        min-width: 213px;
         color:@ocnavTextColor;
         background:@ocnavHighlight;
       // .forgotLink {
@@ -540,17 +546,18 @@ margin: 0 10px 0 12px;
       // }
       .btn-retail
       {
-        width:90%;
+        width: 70%;
+        margin-right: 29px;
+        background: #009DDB;
+        color: white;
+        &:hover{
+            background:#42bdee;
+        }
       }
       .btn
       {
         float:right;
-      }
-        .btn-Login
-      {
-        float:left;
-        width: 100%;
-        /* text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); */
+        text-shadow: none;
         /* background-color: #f5f5f5; */
         background-image: none;
         /* background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6)); */
@@ -564,7 +571,44 @@ margin: 0 10px 0 12px;
         -moz-border-radius: 0px;
         /* border-radius: 0px; */
         -moz-box-shadow: none;
-        /* box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05); */
+         box-shadow: none;
+      }
+       .andRight
+      {
+        margin-right:10px;
+      }
+
+
+         .loginButton
+      {
+        background:#009DDB;
+        color:#FFFFFF;
+          &:hover{
+            background:#42bdee;
+        }
+      }
+
+        .tradeButton
+      {
+        background:#0D2E56;
+        color:#FFFFFF;
+        &:hover{
+            background:#153c6a;
+        }
+      }
+
+        .retailButton
+      {
+        background:#DB1E27;
+        color:#FFFFFF;
+        &:hover{
+            background:#e4484f;
+        }
+      }
+        .btn-Login
+      {
+        float:left;
+        width: 46%;
 
       }
     }
@@ -613,10 +657,10 @@ margin: 0 10px 0 12px;
     .login-form {
         padding-bottom: 10px;
         margin-bottom: 5px;
-        border-bottom: 1px solid lighten(@reeceGrey, 10%);
+        border-bottom: 0px solid lighten(@reeceGrey, 10%);
         input {
             float: left;
-            width: 45%;
+            width: 95%;
             margin-left: 0;
             margin-right: 0;
         }
@@ -633,6 +677,28 @@ margin: 0 10px 0 12px;
         width: auto;
     }
 }
+
+
+
+.login{
+    .dontHave{
+        height: 25px;
+        overflow:hidden;
+        -webkit-transition: all 0.4s ease 0s;
+        -moz-transition: all 0.4s ease 0s;
+        -o-transition: all 0.4s ease 0s;
+        transition: all 0.4s ease 0s;
+        &:hover{
+            height: 70px;
+        }
+    }
+
+}
+
+
+
+
+
 
 
 
@@ -919,7 +985,7 @@ margin: 0 10px 0 12px;
 //====================================================================================================================================
 
 
-@media (max-width: 1160px) {
+@media (max-width: 1180px) {
 
     .navbar .nav {
     width: 594px;

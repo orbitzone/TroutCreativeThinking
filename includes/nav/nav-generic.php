@@ -55,7 +55,7 @@ elseif ($state == null) {
     </form>
 
     <div class="dontHave">
-    <h5 class="loginNoAccount">Don't have a login? Sign up now.</h5>
+    <h5 class="loginNoAccount">Don't have a login? Sign up.</h5>
         <a href="http://reece-responsive.trout.com.au/plumbing/index-log-in.php"><input type="submit" id="" class="btn btn-Login btn-reece-secondary btn-small andRight tradeButton" value="Trade"></a>
         <a href="http://reece-responsive.trout.com.au/navigation/happiness-log-in.php"><input type="submit" id="" class="btn btn-Login btn-reece-secondary btn-small retailButton" value="Retail"></a></div>
     </div>

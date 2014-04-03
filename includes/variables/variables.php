@@ -50,14 +50,45 @@
 			"My Account",
 			"How Reece works for you"
 		),
-		"Specialised Solutions" => array (
-
+		"Irrigation" => array (
+			"Products",
+			"Irrigation Planner",
+			"Pools",
+			"Tech Tools",
+			"My Account",
+			"How Reece Works For You"
 		),
-		"Sustainability" => array (
-
+		"Civil" => array (
+			"Products",
+			"Electrofusion Training & Hire",
+			"Promotions",
+			"Tech Tools",
+			"My Account",
+			"How Reece Works For You"
+		),
+		"Onsite" => array (
+			"Products",
+			"Brochures",
+			"My Account"
+		),
+		"HVAC-R" => array (
+			"Products",
+			"GasTrack",
+			"Promotions",
+			"Tech Tools",
+			"My Account",
+			"Degrees",
+			"How Reece Works For You"
 		),
 		"About Us" => array (
-
+			"What We Do",
+			"History Timeline",
+			"Careers with Reece",
+			"Brands",
+			"Financial Reports",
+			"Investors",
+			"Media Centre",
+			"Sustainability"
 		),
 		"Store Finder" => array (
 

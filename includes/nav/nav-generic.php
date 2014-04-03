@@ -104,6 +104,7 @@ HTML;
 
 
     <a class="btn btn-navbar hidden-desktop">
+        <!--<strong class="btnNavbarText">Menu</strong>-->
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>

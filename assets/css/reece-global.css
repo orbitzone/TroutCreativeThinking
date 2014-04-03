@@ -8516,6 +8516,7 @@ h6 {
   .myAccountLoginWrap .row-fluid [class*="span"] {
     float: none;
     width: auto;
+    margin-left: 0;
   }
   .myAccountLoginWrap #registerForm,
   .myAccountLoginWrap .applySteps {

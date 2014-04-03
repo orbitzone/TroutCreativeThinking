@@ -92,7 +92,7 @@ include_once($serverBase."/includes/head/head-generic.php");
             
             <div class="row-fluid">
               
-              <div class="span4" style="background:#eee">
+              <div class="span4 bottom-space" style="background:#eee">
               <div style="background:#eee; padding:20px 20px">
                 <a class="playVideo" href="#" data-video-id="Q-a1dahV-QM"><img src="/assets/images/MyAccount/kartelthumb.jpg" alt="Discover Products"></a>
                 <h3>Spotlight: Kartell by Laufen</h3>
@@ -147,7 +147,7 @@ include_once($serverBase."/includes/head/head-generic.php");
 </div>
 <?php
 $mobileNavActiveMenu = array(
-  "activeMenu" => "Login"
+  "activeMenu" => "Bathrooms"
   );
 include_once($serverBase."/includes/nav/nav-mobile.php");
 ?>

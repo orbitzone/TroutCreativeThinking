@@ -128,16 +128,6 @@
     margin-bottom: 0px;
   }
 }
-.youtubeWrapper {
-  text-align: center;
-}
-.youtubeWrapper .span9 {
-  height: 560px;
-  padding: 20px 20px 20px 0;
-}
-.youtubeWrapper iframe {
-  max-width: 100%;
-}
 .hideForm .formUp {
   height: 70px;
   overflow: hidden;

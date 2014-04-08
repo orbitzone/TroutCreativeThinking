@@ -147,9 +147,9 @@ HTML;
                     </ul>
                     </div>
                     <div class="locationSelected" style="display:none">
-                        <p>421-427 Bridge Road Richmond, VIC, 3121 <br/>(03) 9429 5800 | (03) 9427 0264 (fax)</p>
-                        <p><a href="#"><i class="icon-map-marker icon">&nbsp;</i> View on map</a></p>
-                        <p><a id="changeStoreLocation" href="#">Change Store</a></p>
+                        <p><strong>Reece Plumbing Centre Richmond</strong><p>
+                        <p>421-427 Bridge Road Richmond, VIC, 3121 <br/>(03) 9429 5800 <br/> (03) 9427 0264 (fax)<br/><a href="http://www.reece.com.au/storefinder/network/plumbing-centre-richmond-3011"><i class="icon-map-marker icon">&nbsp;</i> View on map</a></p>
+                        <p><a id="changeStoreLocation" href="#">Find Another Store</a></p>
                     </div>
 
                 </div>

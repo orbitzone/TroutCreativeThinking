@@ -16,7 +16,6 @@
 					$genericNavActiveMenuItem = "Bathrooms";
 				   	include_once($serverBase."/includes/nav/nav-generic.php");
 				?>
-
   </div>
     <?php include_once($serverBase."/includes/nav/nav-happiness.php"); ?>
   <div class="row-fluid">

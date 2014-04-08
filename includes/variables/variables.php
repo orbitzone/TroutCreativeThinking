@@ -15,8 +15,7 @@
 		"Civil",
 		"Onsite",
 		"HVAC-R",
-		"About Us",
-		"Store Finder"
+		"About Us"
 	);
 
 	$happyzoneNavigationItems = array(

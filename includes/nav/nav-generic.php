@@ -129,18 +129,38 @@ HTML;
                 <?php endforeach; ?>
             </ul>
             <ul class="headerUtilityLinks">
+            <li class="dropdown locationDropDown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <i class="icon-map-marker icon">&nbsp;</i>
+                    <span class="location">Select Store</span>
+                    <span class="caret"></span>
+                </a>
+                <div class="dropdown-menu">
+                    <form>
+                        <input type="text" placeholder="New Location">
+                    </form>
+                    <ul>
+                        <li><a href="#">Collingwood</a></li>
+                        <li><a href="#">Richmond</a></li>
+                        <li><a href="#">Hawthorn</a></li>
+                        <li><a href="#">Toorak</a></li>
+                    </ul>                       
+                </div>
+
+            </li>
+
              <li>
                  <a href="#">
                      <i class="icon-shopping-cart">&nbsp;</i>Cart (0)
                  </a>
              </li>
-             <li class="dropdown locationDropDown">
+             <li class="dropdown userDropDown">
                  <?php echo $message; ?>
                  <?php echo $box; ?>
              </li>
             </ul>
             <form class="headerNavSearchForm">
-             <input type="search" id="headerSearchInput" placeholder="Search">
+             <input type="search" id="headerSearchInput">
              <label for="headerSearchInput"><i class="icon-search icon">&nbsp;</i></label>
             </form>
         </nav>

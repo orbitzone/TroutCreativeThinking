@@ -11,18 +11,15 @@
       include_once($serverBase."/includes/head/head-generic.php");
   ?>    
 
-    <body class="ilmb">
+    <body class="ilmb withHappinessSubNav">
     <div class="ocmain-wrapper">
-      <div class="navbar navbar-fixed-top topNav">
-      <?php 
-        $genericNavActiveMenuItem = "Bathrooms";
-          include_once($serverBase."/includes/nav/nav-generic.php");
-      ?>            
-
-      <?php 
-          include_once($serverBase."/includes/banners/banner-happyzone.php");
-      ?>  
-      </div>
+  <div class="navbar navbar-fixed-top topNav">
+    <?php
+          $genericNavActiveMenuItem = "Bathrooms";
+            include_once($serverBase."/includes/nav/nav-generic.php");
+        ?>
+  </div>
+    <?php include_once($serverBase."/includes/nav/nav-happiness.php"); ?>
       <div class="content-container">
         <div class="inner-wrapper ">
             <ul class="breadcrumb">

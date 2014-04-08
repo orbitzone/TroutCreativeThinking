@@ -7627,7 +7627,7 @@ h6 {
 .navbar .nav > li > a {
   color: #ccc;
   text-shadow: none;
-  padding: 15px;
+  padding: 15px 10px;
   font-size: 15px;
   font-weight: 200;
   letter-spacing: 1px;
@@ -7676,7 +7676,8 @@ h6 {
 }
 .headerUtilityLinks {
   display: block;
-  margin: 0 40px 0 0;
+  margin: 0;
+  margin-right: 70px;
   color: #d3d4d5;
   font-size: 12px;
   float: right;
@@ -7713,8 +7714,9 @@ h6 {
   right: 0;
   top: 0;
   margin: 0;
-  padding: 12px 7px;
-  background: #4d4d4d;
+  padding: 2px 5px 2px 8px;
+  margin: 10px 0;
+  background: #d3d4d5;
   float: right;
   /*    width:242px;*/
 
@@ -7724,13 +7726,13 @@ h6 {
   border: none;
   margin: 0;
   padding: 0;
-  color: #4d4d4d;
-  width: 1px;
+  color: #3f3f3f;
+  width: 30px;
   font-size: 12px;
   position: relative;
   z-index: 9000;
   top: -3px;
-  border-bottom: solid 1px transparent;
+  border-bottom: solid 1px #aaa;
   -moz-border-radius: 0;
   -webkit-appearance: none;
   -webkit-border-radius: 0;
@@ -7744,18 +7746,18 @@ h6 {
   transition: all 0.7s ease 0s;
 }
 .headerNavSearchForm input:focus {
-  width: 260px;
-  border-color: #d3d4d5;
+  width: 200px;
   color: #d3d4d5;
+  border-bottom-color: #aaa;
 }
 .headerNavSearchForm label {
   display: inline-block;
   width: auto !important;
   margin: 0;
-  color: #ffffff;
+  color: #3f3f3f;
 }
 .headerNavSearchForm .icon {
-  font-size: 22px;
+  font-size: 16px;
 }
 /* Nav Bar */
 .navbar .btn-navbar,
@@ -7836,23 +7838,11 @@ h6 {
   background: none;
   color: #fff;
 }
-/* Location DropDown */
-.locationDropDown {
-  padding: 5px 10px !important;
-  font-size: 12px;
-  position: relative;
-}
-.locationDropDown a:focus,
-.locationDropDown a:hover {
-  text-decoration: none;
-}
-.locationDropDown.open .caret {
-  border-top-color: #333;
-}
-.locationDropDown.open a {
+.headerUtilityLinks .locationDropDown.open a,
+.headerUtilityLinks .userDropDown.open a {
   color: #009ddb;
 }
-.locationDropDown .dropdown-menu {
+.headerUtilityLinks .dropdown-menu {
   margin: 0;
   padding: 10px;
   -webkit-border-radius: 0 0 10px 10px;
@@ -7864,11 +7854,9 @@ h6 {
   top: 40px;
   width: 100%;
   min-width: 213px;
-  color: #ffffff;
-  background: #4d4d4d;
   background: #3f3f3f;
 }
-.locationDropDown .dropdown-menu .btn-retail {
+.headerUtilityLinks .dropdown-menu .btn-retail {
   float: none !important;
   display: block;
   width: auto;
@@ -7878,13 +7866,13 @@ h6 {
   -moz-border-radius: 0;
   border-radius: 0;
 }
-.locationDropDown .dropdown-menu .btn-retail:hover {
+.headerUtilityLinks .dropdown-menu .btn-retail:hover {
   background: #42bdee;
 }
-.locationDropDown .dropdown-menu .btn-retail:last-child {
+.headerUtilityLinks .dropdown-menu .btn-retail:last-child {
   background: #555;
 }
-.locationDropDown .dropdown-menu .btn {
+.headerUtilityLinks .dropdown-menu .btn {
   float: right;
   text-shadow: none;
   /* background-color: #f5f5f5; */
@@ -7910,50 +7898,55 @@ h6 {
   -moz-box-shadow: none;
   box-shadow: none;
 }
-.locationDropDown .dropdown-menu .andRight {
+.headerUtilityLinks .dropdown-menu .andRight {
   margin-right: 10px;
 }
-.locationDropDown .dropdown-menu .loginButton {
+.headerUtilityLinks .dropdown-menu .loginButton {
   background: #009DDB;
   color: #FFFFFF;
 }
-.locationDropDown .dropdown-menu .loginButton:hover {
+.headerUtilityLinks .dropdown-menu .loginButton:hover {
   background: #42bdee;
 }
-.locationDropDown .dropdown-menu .tradeButton {
+.headerUtilityLinks .dropdown-menu .tradeButton {
   background: #0D2E56;
   color: #FFFFFF;
 }
-.locationDropDown .dropdown-menu .tradeButton:hover {
+.headerUtilityLinks .dropdown-menu .tradeButton:hover {
   background: #153c6a;
 }
-.locationDropDown .dropdown-menu .retailButton {
+.headerUtilityLinks .dropdown-menu .retailButton {
   background: #DB1E27;
   color: #FFFFFF;
 }
-.locationDropDown .dropdown-menu .retailButton:hover {
+.headerUtilityLinks .dropdown-menu .retailButton:hover {
   background: #e4484f;
 }
-.locationDropDown .dropdown-menu .btn-Login {
+.headerUtilityLinks .dropdown-menu .btn-Login {
   float: left;
   width: 38%;
 }
-.locationDropDown .dropdown-menu > .register {
+.headerUtilityLinks .dropdown-menu > .register {
   display: none;
+}
+/* Location DropDown */
+.locationDropDown {
+  padding: 5px 10px !important;
+  font-size: 12px;
+  position: relative;
+}
+.locationDropDown a:focus,
+.locationDropDown a:hover {
+  text-decoration: none;
+}
+.locationDropDown .dropdown-menu {
+  left: 0;
+  min-width: 145px;
 }
 .locationDropDown form {
   margin: 0;
 }
-.locationDropDown label {
-  display: inline-block;
-}
-.locationDropDown label input {
-  margin: 0;
-}
-.locationDropDown input[type=text],
-.locationDropDown input[type=password],
-.locationDropDown input[type=email],
-.locationDropDown input[type=number] {
+.locationDropDown input {
   background: #f7f7f7;
   border: solid 1px #d1d1d1 !important;
   -webkit-box-shadow: none;
@@ -7962,9 +7955,9 @@ h6 {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
-  margin: 5px 0;
+  margin: 0 auto;
   display: block;
-  width: 95%;
+  width: 130px;
   height: 15px;
   font-size: 12px;
   box-shadow: none !important;
@@ -7982,39 +7975,94 @@ h6 {
 }
 .locationDropDown li a {
   display: block;
+  padding: 3px ;
+  color: #7f7f7f !important;
+  font-size: 13px;
+}
+/* User DropDown */
+.userDropDown {
+  padding: 5px 10px !important;
+  font-size: 12px;
+  position: relative;
+}
+.userDropDown a:focus,
+.userDropDown a:hover {
+  text-decoration: none;
+}
+.userDropDown form {
+  margin: 0;
+}
+.userDropDown label {
+  display: inline-block;
+}
+.userDropDown label input {
+  margin: 0;
+}
+.userDropDown input[type=text],
+.userDropDown input[type=password],
+.userDropDown input[type=email],
+.userDropDown input[type=number] {
+  background: #f7f7f7;
+  border: solid 1px #d1d1d1 !important;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  margin: 5px 0;
+  display: block;
+  width: 95%;
+  height: 15px;
+  font-size: 12px;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+}
+.userDropDown ul {
+  margin: 0;
+  padding-top: 5px;
+  font-size: 14px;
+}
+.userDropDown li {
+  list-style: none;
+  display: block;
+}
+.userDropDown li a {
+  display: block;
   padding: 3px 3px 3px 15px;
   color: #7f7f7f !important;
   font-size: 13px;
 }
-.locationDropDown .login-form {
+.userDropDown .login-form {
   padding-bottom: 10px;
   margin-bottom: 5px;
   border-bottom: 0px solid #666666;
   *zoom: 1;
 }
-.locationDropDown .login-form input {
+.userDropDown .login-form input {
   float: left;
   width: 95%;
   margin-left: 0;
   margin-right: 0;
 }
-.locationDropDown .login-form:before,
-.locationDropDown .login-form:after {
+.userDropDown .login-form:before,
+.userDropDown .login-form:after {
   display: table;
   content: "";
   line-height: 0;
 }
-.locationDropDown .login-form:after {
+.userDropDown .login-form:after {
   clear: both;
 }
-.locationDropDown .loginNoAccount {
+.userDropDown .loginNoAccount {
   float: left;
 }
-.locationDropDown .loginDisclaimer {
+.userDropDown .loginDisclaimer {
   line-height: 1.2em;
   margin-bottom: 5px;
 }
-.locationDropDown input.btn-login {
+.userDropDown input.btn-login {
   width: auto;
 }
 /* Happiness */

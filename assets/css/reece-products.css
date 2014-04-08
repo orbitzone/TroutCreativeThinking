@@ -367,6 +367,7 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
+
   *zoom: 1;
   padding: 4px 12px;
   margin-bottom: 0;
@@ -388,6 +389,7 @@
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
   *background-color: #e6e6e6;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   border: 1px solid #cccccc;
   *border: 0;
@@ -432,6 +434,7 @@
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
   *background-color: #bd362f;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 .btn-cart:hover,
@@ -713,39 +716,6 @@ LocationDropDown
   border: none;
   margin: 0;
   padding: 0;
-}
-.headerNavSearchForm {
-  display: inline-block;
-  margin: 0;
-  padding: 5px 10px;
-}
-.headerNavSearchForm input {
-  background: none;
-  border: none;
-  margin: 0;
-  padding: 0;
-  color: #d3d4d5;
-  width: 110px;
-  font-size: 12px;
-  position: relative;
-  top: -3px;
-  width: 180px;
-  border-bottom: solid 1px #d3d4d5;
-  -moz-border-radius: 0;
-  -webkit-appearance: none;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  box-shadow: none !important;
-  -webkit-box-shadow: none !important;
-  -moz-box-shadow: none !important;
-}
-.headerNavSearchForm input:focus {
-  border-color: #d3d4d5;
-}
-.headerNavSearchForm label {
-  display: inline-block;
-  width: auto !important;
-  margin: 0;
 }
 .breadcrumb > li.locationAnSearch {
   float: right;

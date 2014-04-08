@@ -9,7 +9,7 @@
       include_once($serverBase."/includes/head/head-generic.php");
   ?>
 
-    <body style="padding-top:0">
+    <body class="withHappinessSubNav">
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];

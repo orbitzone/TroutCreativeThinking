@@ -42,6 +42,7 @@ $(document).ready(function() {
     $('#headerLocationList a').click(function(e){
         $('#headerLocationDropDown .location').html($(e.target).html());
         $('#headerLocationDropDown .newLocation').hide();
+        $('#headerLocationList').hide();
         $('#headerLocationDropDown .locationSelected').show();
         $('#headerLocationList').dropdown('toggle');
     });

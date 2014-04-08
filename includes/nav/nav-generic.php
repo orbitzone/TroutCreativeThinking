@@ -129,22 +129,29 @@ HTML;
                 <?php endforeach; ?>
             </ul>
             <ul class="headerUtilityLinks">
-            <li class="dropdown locationDropDown">
+            <li id="headerLocationDropDown" class="dropdown locationDropDown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                     <i class="icon-map-marker icon">&nbsp;</i>
                     <span class="location">Select Store</span>
                     <span class="caret"></span>
                 </a>
                 <div class="dropdown-menu">
+                    <div class="newLocation">
                     <form>
-                        <input type="text" placeholder="New Location">
+                        <input id="headerStoreSearchInput" type="text" placeholder="Search for store">
                     </form>
-                    <ul>
-                        <li><a href="#">Collingwood</a></li>
+                    <ul id="headerLocationList">
                         <li><a href="#">Richmond</a></li>
                         <li><a href="#">Hawthorn</a></li>
                         <li><a href="#">Toorak</a></li>
-                    </ul>                       
+                    </ul>
+                    </div>
+                    <div class="locationSelected" style="display:none">
+                        <p>421-427 Bridge Road Richmond, VIC, 3121 <br/>(03) 9429 5800 | (03) 9427 0264 (fax)</p>
+                        <p><a href="#"><i class="icon-map-marker icon">&nbsp;</i> View on map</a></p>
+                        <p><a id="changeStoreLocation" href="#">Change Store</a></p>
+                    </div>
+
                 </div>
 
             </li>
@@ -164,10 +171,6 @@ HTML;
              <label for="headerSearchInput"><i class="icon-search icon">&nbsp;</i></label>
             </form>
         </nav>
-
-
-
         </div>
-
     </div>
 </div>

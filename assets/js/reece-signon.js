@@ -6,7 +6,6 @@ $(document).ready(function() {
         $('.dropdown-menu > .login').hide();
         $('.dropdown-menu > .register').show();
         return false;
-        //$('.locationDropDown').addClass('open')
     });
 
     $("#sign-in").bind('click', function(){
@@ -33,5 +32,23 @@ $(document).ready(function() {
         }
     });
     $("#retail-radio").prop('checked', true);
+
+    // Code for location dropdown
+
+    $('#headerLocationList').hide();
+    $('#headerStoreSearchInput').focus(function(){
+        $('#headerLocationList').show();
+    });
+    $('#headerLocationList a').click(function(e){
+        $('#headerLocationDropDown .location').html($(e.target).html());
+        $('#headerLocationDropDown .newLocation').hide();
+        $('#headerLocationDropDown .locationSelected').show();
+        $('#headerLocationList').dropdown('toggle');
+    });
+    $('#changeStoreLocation').click(function(){
+        $('#headerLocationDropDown .newLocation').show();
+        $('#headerLocationDropDown .locationSelected').hide();
+        $('#headerLocationDropDown .location').html('Select Store');
+    });
 });
 

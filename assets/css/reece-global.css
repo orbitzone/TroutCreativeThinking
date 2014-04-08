@@ -7875,26 +7875,13 @@ h6 {
 .headerUtilityLinks .dropdown-menu .btn {
   float: right;
   text-shadow: none;
-  /* background-color: #f5f5f5; */
-
   background-image: none;
-  /* background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6)); */
-
-  /* background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6); */
-
-  /* background-image: linear-gradient(to bottom, #ffffff, #e6e6e6); */
-
-  /* background-repeat: repeat-x; */
-
   filter: none;
-  /* border-color: #e6e6e6 #e6e6e6 #bfbfbf; */
-
-  /* border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); */
-
   border: 0px solid #cccccc;
-  -moz-border-radius: 0px;
-  /* border-radius: 0px; */
-
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
@@ -7976,8 +7963,11 @@ h6 {
 .locationDropDown li a {
   display: block;
   padding: 3px ;
-  color: #7f7f7f !important;
+  color: #d3d4d5 !important;
   font-size: 13px;
+}
+.locationDropDown p {
+  margin-bottom: 5px;
 }
 /* User DropDown */
 .userDropDown {

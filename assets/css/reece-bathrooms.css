@@ -48,7 +48,6 @@
 .main-item {
   background: #fff;
   /*    padding: 20px 0;*/
-
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.35);
 }
 .main-item .inner-wrapper {
@@ -554,7 +553,6 @@ RESPONSIVE OVERRIDES
     border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
     *background-color: #db2020;
     /* Darken IE7 buttons by default so they stand out more given they won't have borders */
-  
     filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
     border: 1px solid #db2020;
   }
@@ -1283,11 +1281,11 @@ RESPONSIVE OVERRIDES
 }
 .coloredPanel .row-fluid .span8,
 .socialWallPanel .row-fluid .span8 {
-  width: 66.66666666666667%;
+  width: 66.66666667%;
 }
 .coloredPanel .row-fluid .span7,
 .socialWallPanel .row-fluid .span7 {
-  width: 58.333333333333336%;
+  width: 58.33333333%;
 }
 .coloredPanel .row-fluid .span6,
 .socialWallPanel .row-fluid .span6 {
@@ -1295,11 +1293,11 @@ RESPONSIVE OVERRIDES
 }
 .coloredPanel .row-fluid .span5,
 .socialWallPanel .row-fluid .span5 {
-  width: 41.666666666666664%;
+  width: 41.66666667%;
 }
 .coloredPanel .row-fluid .span4,
 .socialWallPanel .row-fluid .span4 {
-  width: 33.333333333333336%;
+  width: 33.33333333%;
 }
 .coloredPanelText {
   padding: 20px;
@@ -3149,6 +3147,17 @@ p.inspBlogDate {
   padding: 40px;
   color: white;
   width: 50%;
+}
+.designerLooksStory .designerLooksEditorContent a:link,
+.designerLooksStory .designerLooksArchitectContent a:link,
+.designerLooksStory .designerLooksEditorContent a:visited,
+.designerLooksStory .designerLooksArchitectContent a:visited,
+.designerLooksStory .designerLooksEditorContent a:hover,
+.designerLooksStory .designerLooksArchitectContent a:hover,
+.designerLooksStory .designerLooksEditorContent a:active,
+.designerLooksStory .designerLooksArchitectContent a:active {
+  color: #ffffff;
+  font-weight: bold;
 }
 .designerLooksStory .designerLooksEditorContent {
   background: #a99eb0;

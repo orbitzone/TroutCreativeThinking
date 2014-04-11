@@ -12,7 +12,7 @@ $retailItems = array(
 
 ?>
 		<div class="ocnav-wrapper">
-		    <h3>Menu</h3>
+		    <!--h3>Menu</h3-->
 		    <ul class="nav">
 
 		    	<li class="mobileLogin">
@@ -24,7 +24,7 @@ $retailItems = array(
 		    		<?php endforeach; ?>
 		    		</ul>
 		    		<?php else: ?>
-		    		<a href="#" data-toggle="collapse" data-target="#mobile-login">Login</a>
+		    		<a href="#" data-toggle="collapse" data-target="#mobile-login"><i class="icon-user">&nbsp;</i> Login</a>
 		    		<div id="mobile-login" class="collapse">
 		    			<h5>Login to your <strong>Reece page</strong> </h5>
 					    <form class="login-form">

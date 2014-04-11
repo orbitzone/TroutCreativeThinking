@@ -141,7 +141,7 @@ h1, h2, h3, h4, h5, h6 {
     position: fixed;
     right: 0;
     width: 250px;
-    padding: 20px 0 20px 30px;
+    padding: 5px 0 20px 30px;
     top: 0;
     bottom: 0;
     overflow: auto;
@@ -320,7 +320,7 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 .navbar .nav {
-margin: 0 10px 0 12px;
+margin: 0 0 0 12px;
 }
 .navbar .nav > li > a {
     color: #ccc;
@@ -342,6 +342,26 @@ margin: 0 10px 0 12px;
     height: 49px;
     width: 101.5px
 }
+
+.menuButton {
+    color: #ffffff;
+    text-shadow: none;
+    font-size: 14px;
+    background: #272727!important;
+    width: 80px!important;
+    .burger {
+        display: block;
+        float: right;
+        margin-left: 10px;
+        .icon-bar {
+            margin-left: 0!important;
+        }
+    }
+    &:hover {
+        color: #ffffff;
+    }
+}
+
 @media (min-width: @navbarCollapseDesktopWidth) and (max-width: 1200px){
     .navbar .nav > li > a {
         padding: 15px;
@@ -349,7 +369,7 @@ margin: 0 10px 0 12px;
 }
 .navbar .nav > li > a:hover,
 .navbar .nav > li > a:focus {
-    /*color: #fff;*/
+    color: #fff;
     box-shadow: none;
 }
 .navbar .nav > .active > a,
@@ -384,7 +404,7 @@ margin: 0 10px 0 12px;
     color: #d3d4d5;
     font-size: 12px;
     float: right;
-    padding:10px 3px 10px 16px;
+    padding:10px 3px 10px 0;
     &>li{
         display: block;
         float: left;
@@ -408,6 +428,27 @@ margin: 0 10px 0 12px;
         &:hover,&:focus{
             text-decoration: none;
         }
+    }
+}
+
+@media screen and (max-width: 1190px) {
+    .headerUtilityLinks > li > a {
+        font-size: 20px;
+        letter-spacing: -2px;
+    }
+
+    .headerUtilityLinks > li > a .only-icon {
+        display: none;
+    }
+
+    .headerUtilityLinks .locationDropDown .dropdown-menu {
+        right: 0!;
+        left: auto;
+    }
+
+    .cart-count {
+        font-size: 14px;
+        letter-spacing: 1px;
     }
 }
 
@@ -808,7 +849,13 @@ margin: 0 10px 0 12px;
     }
 }
 
+.nav {
+    border-top: 0!important;
+}
+
 .mobileLogin {
+    border-top: 0!important;
+
     form {
         width: 90%;
 

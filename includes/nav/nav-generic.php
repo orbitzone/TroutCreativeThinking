@@ -16,7 +16,7 @@ if ($state == "loggedIn") {
     </div>
 HTML;
 } elseif ($state == "retail") {
-    $message = '<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-user">&nbsp;</i>LongFirstName</a>&nbsp;&nbsp;<i class="icon-arrow-down"></i>';
+    $message = '<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-user">&nbsp;</i><span class="location only-icon">LongFirstName</span></a>&nbsp;&nbsp;<i class="icon-arrow-down"></i>';
     $box = <<<HTML3
 
         <div class="dropdown-menu">
@@ -30,14 +30,14 @@ HTML3;
 } elseif($state == 'register')
 {
     $message = '<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-    <i class="icon-user">&nbsp;</i> Login <i class="icon-arrow-down"></i></a>';
+    <i class="icon-user">&nbsp;</i> <span class="only-icon">Login</span> <!--i class="icon-arrow-down"></i--><span class="caret"></span></a>';
     $box = <<<HTML
 
 HTML;
 }
 elseif ($state == null) {
     $message = '<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-    <i class="icon-user">&nbsp;</i> Login <i class="icon-arrow-down"></i></a>';
+    <i class="icon-user">&nbsp;</i> <span class="only-icon">Login</span> <!--i class="icon-arrow-down"></i--><span class="caret"></span></a>';
     $box = <<<HTML
 
 
@@ -103,11 +103,14 @@ HTML;
 <div class="navbar-container">
 
 
-    <a class="btn btn-navbar hidden-desktop">
+    <a class="menuButton btn btn-navbar hidden-desktop">
         <!--<strong class="btnNavbarText">Menu</strong>-->
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+        <div class="burger">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </div>
+        Menu
     </a>
     <a class="brand hidden-desktop mobile-logo" href="#">Reece</a>
 
@@ -132,13 +135,13 @@ HTML;
             <li id="headerLocationDropDown" class="dropdown locationDropDown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                     <i class="icon-map-marker icon">&nbsp;</i>
-                    <span class="location">Select Store</span>
+                    <span class="location only-icon">Select Store</span>
                     <span class="caret"></span>
                 </a>
                 <div class="dropdown-menu">
                     <div class="newLocation">
                     <form>
-                        <input id="headerStoreSearchInput" type="text" placeholder="Search for store">
+                        <input id="headerStoreSearchInput" type="text" placeholder="Enter Suburb or Postcode">
                     </form>
                     <ul id="headerLocationList">
                         <li><a href="#">Richmond</a></li>
@@ -158,7 +161,7 @@ HTML;
 
              <li>
                  <a href="#">
-                     <i class="icon-shopping-cart">&nbsp;</i>Cart (0)
+                     <i class="icon-shopping-cart">&nbsp;</i><span class="only-icon">Cart</span><span class="cart-count"> (0)</span>
                  </a>
              </li>
              <li class="dropdown userDropDown">

@@ -56,8 +56,8 @@ elseif ($state == null) {
 
     <div class="dontHave">
     <h5 class="loginNoAccount">Don't have a login? Sign up.</h5>
-        <a href="/plumbing/index-log-in.php" class="btn btn-Login btn-reece-secondary btn-small andRight tradeButton">Trade</a>
-        <a href="/navigation/happiness-log-in.php" class="btn btn-Login btn-reece-secondary btn-small retailButton" >Retail</a>
+        <a href="/plumbing/index-log-in.php" class="btn btn-Login btn-reece-secondary btn-small andRight tradeButton">Trade Professional</a>
+        <a href="/navigation/happiness-log-in.php" class="btn btn-Login btn-reece-secondary btn-small retailButton" >Homeowner</a>
     </div>
     </form>
     </div>
@@ -119,11 +119,11 @@ HTML;
 
         <nav class="navWrap">
             <ul class="nav">
-                <?php foreach ($navigationItems as $item) : ?>
+                <?php foreach ($navigationItems as $key => $item) : ?>
                     <?php if ($item == $genericNavActiveMenuItem) : ?>
-                        <li class="active"><a href="#"><?php print $item; ?></a></li>
+                        <li class="active"><a href="<?php print $item; ?>"><?php print $key; ?></a></li>
                     <?php else : ?>
-                        <li><a href="#"><?php print $item; ?></a></li>
+                        <li><a href="<?php print $item; ?>"><?php print $key; ?></a></li>
                     <?php endif; ?>
 
                 <?php endforeach; ?>

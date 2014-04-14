@@ -139,7 +139,7 @@
 												<img src="http://www.reece.com.au/products/showroom_main/119548.jpg" alt="Hydrotherm Milan Floor to Ceiling Heated Rail">
 											</a>
 											<div class="accordionAction">
-											<a href="http://www.reece.com.au/bathrooms/products/119548" class="btn">Product Details</a>
+											<a target="_blank" href="http://www.reece.com.au/bathrooms/products/119548" class="btn">Product Details</a>
 											</div>
 										</div>
 									</div>
@@ -156,7 +156,7 @@
 											  <img src="/assets/images/cameron-bruhn/Kartell-Laufen-Stool-Tangerine-Orange.jpg" alt="Kartell by Laufen Tangerine Orange Stool">
 											</a>
 											<div class="accordionAction">
-											<a href="http://www.reece.com.au/bathrooms/products/9504571" class="btn">Product Details</a>
+											<a target="_blank" href="http://www.reece.com.au/bathrooms/products/9504571" class="btn">Product Details</a>
 											</div>
 										</div>
 									</div>
@@ -173,7 +173,7 @@
 											<img src="http://www.reece.com.au/products/showroom_main/9504385.jpg" alt="Posh Solus 1780 Freestanding Bath">
 											</a>
 											<div class="accordionAction">
-											<a href="http://www.reece.com.au/bathrooms/products/9504385" class="btn">Product Details</a>
+											<a target="_blank" href="http://www.reece.com.au/bathrooms/products/9504385" class="btn">Product Details</a>
 											</div>
 										</div>
 									</div>
@@ -190,7 +190,7 @@
 											  <img src="http://www.reece.com.au/products/showroom_main/2262413.jpg" alt="Sussex Scala Floor Bath Mixer Square">
 											</a>
 											<div class="accordionAction">
-											<a href="http://www.reece.com.au/bathrooms/products/2262413" class="btn">Product Details</a>
+											<a target="_blank" href="http://www.reece.com.au/bathrooms/products/2262413" class="btn">Product Details</a>
 											</div>
 										</div>
 									</div>
@@ -207,7 +207,7 @@
 											  <img src="http://www.reece.com.au/products/showroom_main/9502996.jpg" alt="Ideal Standard Tonic  BTW Close Coupled Toilet Suite">
 											</a>
 											<div class="accordionAction">
-											<a href="http://www.reece.com.au/bathrooms/products/9502996" class="btn">Product Details</a>
+											<a target="_blank" href="http://www.reece.com.au/bathrooms/products/9502996" class="btn">Product Details</a>
 											</div>
 										</div>
 									</div>
@@ -224,7 +224,7 @@
 											  <img src="http://www.reece.com.au/products/showroom_main/9500530.jpg" alt="White Stone Hox Mini Above/Wall Basin Right">
 											</a>
 											<div class="accordionAction">
-											<a href="http://www.reece.com.au/bathrooms/products/9500530" class="btn">Product Details</a>
+											<a target="_blank" href="http://www.reece.com.au/bathrooms/products/9500530" class="btn">Product Details</a>
 											</div>
 										</div>
 									</div>
@@ -241,7 +241,7 @@
 											  <img src="http://www.reece.com.au/products/showroom_main/9502955.jpg" alt="Mizu Drift Basin Mixer">
 											</a>
 											<div class="accordionAction">
-											<a href="http://www.reece.com.au/bathrooms/products/9502955" class="btn">Product Details</a>
+											<a target="_blank" href="http://www.reece.com.au/bathrooms/products/9502955" class="btn">Product Details</a>
 											</div>
 										</div>
 									</div>
@@ -258,7 +258,7 @@
 											  <img src="http://www.reece.com.au/products/showroom_main/2261992.jpg" alt="Mizu Bottle Trap 40mm Round Bottle Trap">
 											</a>
 											<div class="accordionAction">
-											<a href="http://www.reece.com.au/bathrooms/products/2261992" class="btn">Product Details</a>
+											<a  target="_blank" href="http://www.reece.com.au/bathrooms/products/2261992" class="btn">Product Details</a>
 											</div>
 										</div>
 									</div>

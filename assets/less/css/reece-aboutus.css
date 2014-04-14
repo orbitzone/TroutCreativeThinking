@@ -1,0 +1,277 @@
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.about-us .content-container p {
+  color: #666666;
+  margin-bottom: 2em;
+}
+.about-us .content-container .subnavbar {
+  background: #003767;
+}
+.about-us .content-container .content-container img {
+  margin: 1em 0;
+}
+.about-us .content-container .middle-section {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 1.5em;
+  margin-top: 1.5em;
+}
+.actrol .inside {
+  padding: 0 1.5em;
+  border: 1px solid #e5e5e5;
+}
+.actrol h4 {
+  padding: 0 0 1em 130px;
+  border-bottom: 1px solid #e5e5e5;
+  background: url(../images/aboutus/logo-actrol.png) no-repeat left top;
+}
+.grey-bg {
+  background: #eaeaea;
+}
+.inner-wrapper {
+  /*	padding: 0.8em 0 2.5em;*/
+}
+.site-footer {
+  margin-top: 0;
+}
+#about-us-carousel .item {
+  position: relative;
+  float: left;
+  min-height: 300px;
+}
+#about-us-carousel .item h1 {
+  font-size: 4em;
+}
+#about-us-carousel .item p {
+  font-size: 16px;
+  line-height: 1.2em;
+}
+#about-us-carousel .bg-image {
+  display: block;
+  margin: 0;
+}
+#about-us-carousel .content {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 370px;
+  padding: 3em;
+}
+#about-us-carousel .carousel-links {
+  position: absolute;
+  text-align: center;
+  right: 0;
+  top: 50%;
+  z-index: 4;
+  padding: 0 7px;
+  margin-top: -180px;
+  background: rgba(255, 255, 255, 0.3);
+}
+#about-us-carousel .carousel-links ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#about-us-carousel .carousel-links .heading {
+  color: white;
+  font-size: 15px;
+  margin: 15px 0;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+#about-us-carousel .carousel-link-item {
+  width: 160px;
+  color: white;
+  padding: 0.85em 0;
+  margin-bottom: 7px;
+  cursor: pointer;
+  font-size: 15px;
+}
+#about-us-carousel .carousel-indicators {
+  position: static;
+}
+#about-us-carousel .carousel-indicators li {
+  border-radius: 0;
+  float: none;
+  text-indent: 0;
+  line-height: 0.5em;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+#about-us-carousel .carousel-indicators li.active {
+  margin-left: -30px;
+  padding-left: 35px;
+}
+#about-us-carousel-mobile {
+  border: 1px solid #cccccc;
+}
+#about-us-carousel-mobile h1 {
+  margin-top: 0;
+  padding-top: 1em;
+  font-size: 2em;
+}
+#about-us-carousel-mobile p {
+  margin-right: 3em;
+}
+#about-us-carousel-mobile .content {
+  min-height: 320px;
+  padding-left: 170px;
+  line-height: 1.5em;
+}
+#about-us-carousel-mobile .plumbing .content {
+  background: url(../images/aboutus/banner-plumbing-mob.jpg) no-repeat top left;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 13/10), only screen and (min-resolution: 120dpi) {
+  #about-us-carousel-mobile .plumbing .content {
+    background-image: url('../images/aboutus/banner-plumbing-mob-2x.jpg');
+    -webkit-background-size: 150px 320px;
+    -moz-background-size: 150px 320px;
+    -o-background-size: 150px 320px;
+    background-size: 150px 320px;
+  }
+}
+#about-us-carousel-mobile .bathrooms .content {
+  background: url(../images/aboutus/banner-bathroom-mob.jpg) no-repeat top left;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 13/10), only screen and (min-resolution: 120dpi) {
+  #about-us-carousel-mobile .bathrooms .content {
+    background-image: url('../images/aboutus/banner-bathroom-mob-2x.jpg');
+    -webkit-background-size: 150px 320px;
+    -moz-background-size: 150px 320px;
+    -o-background-size: 150px 320px;
+    background-size: 150px 320px;
+  }
+}
+#about-us-carousel-mobile .carousel-control.right {
+  right: 7px;
+}
+#about-us-carousel-mobile .carousel-control.left {
+  left: 7px;
+}
+.carousel .plumbing h1 {
+  color: #0d2e56;
+}
+.carousel .plumbing .coloredPanelLink,
+.carousel .plumbing.carousel-link-item {
+  background: #0d2e56;
+}
+.carousel .bathrooms h1 {
+  color: #db1e24;
+}
+.carousel .bathrooms .coloredPanelLink,
+.carousel .bathrooms.carousel-link-item {
+  background: #db1e24;
+}
+.carousel .irrigation h1 {
+  color: #5e792d;
+}
+.carousel .irrigation .coloredPanelLink,
+.carousel .irrigation.carousel-link-item {
+  background: #5e792d;
+}
+.carousel .civil h1 {
+  color: #b65312;
+}
+.carousel .civil .coloredPanelLink,
+.carousel .civil.carousel-link-item {
+  background: #b65312;
+}
+.carousel .hvac-r h1 {
+  color: #0397d7;
+}
+.carousel .hvac-r .coloredPanelLink,
+.carousel .hvac-r.carousel-link-item {
+  background: #0397d7;
+}
+.carousel .onsite h1 {
+  color: #f47836;
+}
+.carousel .onsite .coloredPanelLink,
+.carousel .onsite.carousel-link-item {
+  background: #f47836;
+}
+.coloredPanelLink {
+  display: inline-block;
+  background: #000000;
+  padding: 15px 30px;
+  color: #ffffff;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+.coloredPanelLink:hover {
+  color: #aaa;
+}
+/*
+----------------------------------------------
+RESPONSIVE OVERRIDES
+----------------------------------------------
+*/
+@media (min-width: 767px) {
+  .about-us h3,
+  .about-us h4 {
+    margin: 1em 0;
+  }
+}
+@media (max-width: 767px) {
+  .about-us p {
+    margin-bottom: 1em;
+  }
+  .about-us .grey-bg .row-fluid > div {
+    margin-bottom: 2.5em;
+  }
+  .about-us .actrol h4 {
+    background-position: 0 50%;
+    padding-top: 0.5em;
+  }
+  #about-us-carousel .content {
+    width: 60%;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .carousel-links {
+    margin-top: -150px !important;
+  }
+}
+@media (max-width: 480px) {
+  #about-us-carousel-mobile h1 {
+    padding-top: 0.5em;
+  }
+  #about-us-carousel-mobile .content {
+    padding-left: 3em;
+    background: none !important;
+    padding-bottom: 1em;
+  }
+  #about-us-carousel-mobile .carousel-control.right {
+    right: 0px;
+  }
+  #about-us-carousel-mobile .carousel-control.left {
+    left: 0px;
+  }
+}

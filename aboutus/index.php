@@ -52,7 +52,7 @@ include_once($serverBase."/includes/head/head-generic.php");
                                     <div class="content">
                                         <h1>Plumbing</h1>
                                         <p>Thousands of plumbers turn to Reece because of our reputation for “having what you need, when you need it, where you need it.” It's all about delivering the best service possible. A commitment we live by every day.</p>
-                                        <a class="coloredPanelLink" href="#">Discover more</a>
+                                        <a class="coloredPanelLink" href="/plumbing/">Discover more</a>
                                     </div>
                                 </div>
                                 <div class="item bathrooms">
@@ -60,7 +60,7 @@ include_once($serverBase."/includes/head/head-generic.php");
                                     <div class="content">
                                         <h1>Bathrooms</h1>
                                         <p>The home of bathroom happiness, Reece offers Australia’s largest range of beautiful products matched with the very best advice for creating your perfect bathroom.</p>
-                                        <a class="coloredPanelLink" href="#">Discover more</a>
+                                        <a class="coloredPanelLink" href="/navigation/happiness.php">Discover more</a>
                                     </div>
                                 </div>
                                 <div class="item irrigation">
@@ -68,7 +68,7 @@ include_once($serverBase."/includes/head/head-generic.php");
                                     <div class="content">
                                         <h1>Irrigation</h1>
                                         <p>From turf to piping, lighting to pumps, Reece Irrigation offers an extensive selection of high quality products to service the landscape, commercial and agricultural industries.</p>
-                                        <a class="coloredPanelLink" href="#">Discover more</a>
+                                        <a class="coloredPanelLink" href="/irrigation/">Discover more</a>
                                     </div>
                                 </div>
                                 <div class="item civil">
@@ -76,7 +76,7 @@ include_once($serverBase."/includes/head/head-generic.php");
                                     <div class="content">
                                         <h1>Civil</h1>
                                         <p>The underground pipe network specialists, Reece Civil can help you source and specify the right products for water, gas, sewer, telecommunications, electrical and fire services.</p>
-                                        <a class="coloredPanelLink" href="#">Discover more</a>
+                                        <a class="coloredPanelLink" href="/civil/">Discover more</a>
                                     </div>
                                 </div>
                                 <div class="item hvac-r">
@@ -84,7 +84,7 @@ include_once($serverBase."/includes/head/head-generic.php");
                                     <div class="content">
                                         <h1>HVAC-R</h1>
                                         <p>With a network of dedicated outlets nationally, Reece HVAC-R offers unrivalled service, support, stock and spare parts for all type of heating, refrigeration, ventilation and climate solutions.</p>
-                                        <a class="coloredPanelLink" href="#">Discover more</a>
+                                        <a class="coloredPanelLink" href="/hvacr/">Discover more</a>
                                     </div>
                                 </div>
                                 <div class="item onsite">
@@ -92,7 +92,7 @@ include_once($serverBase."/includes/head/head-generic.php");
                                     <div class="content">
                                         <h1>Onsite</h1>
                                         <p>A specialist business focused on product needs of large domestic builders, commercial plumbers and developers, Reece Onsite helps to drive the success of our customers through end-to-end supply solutions.</p>
-                                        <a class="coloredPanelLink" href="#">Discover more</a>
+                                        <a class="coloredPanelLink" href="/onsite/">Discover more</a>
                                     </div>
                                 </div>
                             </div>
@@ -110,42 +110,42 @@ include_once($serverBase."/includes/head/head-generic.php");
                                 <div class="content">
                                     <h1>Plumbing</h1>
                                     <p>Thousands of plumbers turn to Reece because of our reputation for “having what you need, when you need it, where you need it.” It's all about delivering the best service possible. A commitment we live by every day.</p>
-                                    <a class="coloredPanelLink" href="#">Discover more</a>
+                                    <a class="coloredPanelLink" href="/plumbing/">Discover more</a>
                                 </div>
                             </div>
                             <div class="item bathrooms">
                                 <div class="content">
                                     <h1>Bathrooms</h1>
                                     <p>Lipsum sit dolor amet igo what you need, when you need it, where you need it.” It's all about delivering the best service possible. A commitment we live by every day.</p>
-                                    <a class="coloredPanelLink" href="#">Discover more</a>
+                                    <a class="coloredPanelLink" href="/navigation/happiness.php">Discover more</a>
                                 </div>
                             </div>
                             <div class="item irrigation">
                                 <div class="content">
                                     <h1>Irrigation</h1>
                                     <p>Lipsum sit dolor amet igo what you need, when you need it, where you need it.” It's all about delivering the best service possible. A commitment we live by every day.</p>
-                                    <a class="coloredPanelLink" href="#">Discover more</a>
+                                    <a class="coloredPanelLink" href="/irrigation/">Discover more</a>
                                 </div>
                             </div>
                             <div class="item civil">
                                 <div class="content">
                                     <h1>Civil</h1>
                                     <p>Lipsum sit dolor amet igo what you need, when you need it, where you need it.” It's all about delivering the best service possible. A commitment we live by every day.</p>
-                                    <a class="coloredPanelLink" href="#">Discover more</a>
+                                    <a class="coloredPanelLink" href="/civil/">Discover more</a>
                                 </div>
                             </div>
                             <div class="item hvac-r">
                                 <div class="content">
                                     <h1>HVAC-R</h1>
                                     <p>Lipsum sit dolor amet igo what you need, when you need it, where you need it.” It's all about delivering the best service possible. A commitment we live by every day.</p>
-                                    <a class="coloredPanelLink" href="#">Discover more</a>
+                                    <a class="coloredPanelLink" href="/hvacr/">Discover more</a>
                                 </div>
                             </div>
                             <div class="item onsite">
                                 <div class="content">
                                     <h1>Onsite</h1>
                                     <p>Lipsum sit dolor amet igo what you need, when you need it, where you need it.” It's all about delivering the best service possible. A commitment we live by every day.</p>
-                                    <a class="coloredPanelLink" href="#">Discover more</a>
+                                    <a class="coloredPanelLink" href="/onsite/">Discover more</a>
                                 </div>
                             </div>
                         </div>
@@ -174,17 +174,23 @@ include_once($serverBase."/includes/head/head-generic.php");
 
             <section class="row-fluid middle-section">
                 <div class="span4">
-                    <img src="../assets/images/aboutus/home/history.jpg" alt="don't forget alt text!">
+                    <a href="/aboutus/history.php">
+                        <img src="../assets/images/aboutus/home/history.jpg" alt="don't forget alt text!">
+                    </a>
                     <h4>History</h4>
                     <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                 </div>
                 <div class="span4">
-                    <img src="../assets/images/aboutus/home/partner.jpg" alt="don't forget alt text!">
+                    <a href="/aboutus/partner.php">
+                        <img src="../assets/images/aboutus/home/partner.jpg" alt="don't forget alt text!">
+                    </a>
                     <h4>Partner with us</h4>
                     <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                 </div>
                 <div class="span4">
-                    <img src="../assets/images/aboutus/partner/finance_357.jpg" alt="don't forget alt text!">
+                    <a href="/aboutus/finance.php">
+                        <img src="../assets/images/aboutus/partner/finance_357.jpg" alt="don't forget alt text!">
+                    </a>
                     <h4>Finance</h4>
                     <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                 </div>
@@ -194,7 +200,7 @@ include_once($serverBase."/includes/head/head-generic.php");
     </div>
 
     <div class="grey-bg">
-        <div class="content-container">
+        <div class="content-container about-footer-module">
             <div class="inner-wrapper">
                 <section class="row-fluid">
                     <div class="span6">
@@ -205,9 +211,11 @@ include_once($serverBase."/includes/head/head-generic.php");
                     </div>
                     <div class="span6">
                         <h4>Careers</h4>
-                        <img src="../assets/images/aboutus/home/careers.jpg" alt="Don't forget alt text">
+                        <a href="/aboutus/contact.php">
+                            <img src="../assets/images/aboutus/home/careers.jpg" alt="Don't forget alt text">
+                        </a>
                         <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                        <a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
+                        <a class="read-more page-branding text-brand" href="/aboutus/contact.php">Read More<i class="icon-arrow-right"></i></a>
                     </div>
                 </section>
             </div>

@@ -120,6 +120,15 @@ include_once($serverBase."/includes/head/head-generic.php");
 						</form>
 						</div><!-- /.span4 -->
 					</div><!-- /.myAccountLoginWrapGray -->
+
+					<!--div class="row-fluid openTradeAccount">
+						<div class="span12">
+								<a href="https://decisionpoint3.com.au/reece/landing/">
+									Open a Trade Account with your local Reece branch
+								</a>
+						</div>
+					</div-->
+
 					<div class="myAccountLoginFooter">
 						<h2>How My Account works for your business</h2>
 

@@ -9,13 +9,14 @@
 	);
 
 	$navigationItems = array(
-		"Bathrooms",
-		"Plumbing",
-		"Irrigation",
-		"Civil",
-		"Onsite",
-		"HVAC-R",
-		"About Us"
+		"Bathrooms" 	=> "/navigation/happiness.php",
+		"Plumbing"		=> '/plumbing/',
+		"Irrigation"	=> '/irrigation/',
+		"Civil"			=> '/civil/',
+		"Onsite"		=> '/onsite/',
+		"HVAC-R"		=> '/hvacr/',
+		"About Us"		=> '/aboutus/',
+		"Store Finder"	=> 'http://www.reece.com.au/storefinder'
 	);
 
 	$happyzoneNavigationItems = array(
@@ -90,9 +91,6 @@
 			"Sustainability"
 		),
 		"Store Finder" => array (
-
-		),
-		"Login" => array (
 
 		)
 	);

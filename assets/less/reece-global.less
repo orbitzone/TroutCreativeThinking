@@ -5,6 +5,7 @@
 
 //Application imports
 @import "reece-variables.less";
+@import "reece-mixins.less";
 
 
 // Global Declarations
@@ -140,7 +141,7 @@ h1, h2, h3, h4, h5, h6 {
     position: fixed;
     right: 0;
     width: 250px;
-    padding: 20px 0 20px 30px;
+    padding: 5px 0 20px 30px;
     top: 0;
     bottom: 0;
     overflow: auto;
@@ -196,7 +197,7 @@ h1, h2, h3, h4, h5, h6 {
 		padding: 10px 0;
 		font-size: @fontSizeLarge;
     }
-    .ocnav-wrapper .nav li a:hover {
+    .ocnav-wrapper .nav li a:hover, .ocnav-wrapper .nav li a:focus {
 		background: none;
     }
     .ocnav-wrapper .nav li > .nav li,
@@ -319,12 +320,12 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 .navbar .nav {
-margin: 0 10px 0 12px;
+margin: 0 0 0 12px;
 }
 .navbar .nav > li > a {
     color: #ccc;
     text-shadow: none;
-    padding:15px 10px;
+    padding:15px 8px;
     font-size: 15px;
     font-weight: 200;
     letter-spacing: 1px;
@@ -341,6 +342,26 @@ margin: 0 10px 0 12px;
     height: 49px;
     width: 101.5px
 }
+
+.menuButton {
+    color: #ffffff;
+    text-shadow: none;
+    font-size: 14px;
+    background: #272727!important;
+    width: 80px!important;
+    .burger {
+        display: block;
+        float: right;
+        margin-left: 10px;
+        .icon-bar {
+            margin-left: 0!important;
+        }
+    }
+    &:hover {
+        color: #ffffff;
+    }
+}
+
 @media (min-width: @navbarCollapseDesktopWidth) and (max-width: 1200px){
     .navbar .nav > li > a {
         padding: 15px;
@@ -383,7 +404,7 @@ margin: 0 10px 0 12px;
     color: #d3d4d5;
     font-size: 12px;
     float: right;
-    padding:10px 3px 10px 16px;
+    padding:10px 3px 10px 0;
     &>li{
         display: block;
         float: left;
@@ -407,6 +428,27 @@ margin: 0 10px 0 12px;
         &:hover,&:focus{
             text-decoration: none;
         }
+    }
+}
+
+@media screen and (max-width: 1190px) {
+    .headerUtilityLinks > li > a {
+        font-size: 20px;
+        letter-spacing: -2px;
+    }
+
+    .headerUtilityLinks > li > a .only-icon {
+        display: none;
+    }
+
+    .headerUtilityLinks .locationDropDown .dropdown-menu {
+        right: 0!;
+        left: auto;
+    }
+
+    .cart-count {
+        font-size: 14px;
+        letter-spacing: 1px;
     }
 }
 
@@ -527,20 +569,50 @@ margin: 0 10px 0 12px;
 
     .locationDropDown.open,.userDropDown.open{
         a {
-            color: @reeceLightBlue;
+            /*color: @reeceLightBlue;*/
         }
     }
     .dropdown-menu{
         margin: 0;
-        padding: 10px;
-        .border-radius(0 0 10px 10px);
+        padding: 10px 20px;
+        .border-radius(0 0 0 0);
         border-top:none;
         left: auto;
         right: 0px;
         top: 40px;
         width: 100%;
-        min-width: 213px;
-        background: #3f3f3f;
+        min-width: 300px;
+        background: #f0f0f0;
+      .login {
+        /*padding: 10px;*/
+        h5 {
+            color: #3f3f3f;
+            font-size: 18px;
+        }
+        .forgotLink {
+            color: #bd1f12;
+            font-size: 14px;
+            font-weight: normal;
+            letter-spacing: 0;
+        }
+      }
+      .dontHave {
+        background: #e2e2e2;
+        width: 340px;
+        height: 115px;
+        margin-top: 38px;
+        margin-left: -20px;
+        border-top: SOLID 1px #d1d1d1;
+        padding: 20px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        h5 {
+            margin: 0 0 10px 0;
+            color: #3F3F3F;
+            font-size: 14px;
+        }
+      }
       .btn-retail
       {
 
@@ -575,6 +647,7 @@ margin: 0 10px 0 12px;
       {
         background:#009DDB;
         color:#FFFFFF;
+        width: 146px;
           &:hover{
             background:#42bdee;
         }
@@ -598,8 +671,12 @@ margin: 0 10px 0 12px;
         .btn-Login
       {
         float:left;
-        width: 38%;
-
+        width: 48%;
+        font-size: 12px;
+        padding: 10px 5px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
       }
     }
     .dropdown-menu > .register {
@@ -626,11 +703,12 @@ margin: 0 10px 0 12px;
         border: solid 1px #d1d1d1 !important;
         .box-shadow(none);
         .border-radius(0);
-        margin: 0 auto;
+        margin: 10px auto 8px auto;
         display: block;
-        width: 190px;
+        width: 95%;
         height: 15px;
         font-size: 12px;
+        padding: 10px 5px;
         box-shadow: none !important;
         -webkit-box-shadow: none !important;
         -moz-box-shadow: none !important;
@@ -646,12 +724,33 @@ margin: 0 10px 0 12px;
         a{
             display: block;
             padding: 3px ;
-            color: #d3d4d5 !important;
+            color: #848484 !important;
             font-size: 13px;
+            border-bottom: SOLID 1px rgba(0,0,0,0.05);
+            display: block;
+            width: 300px;
+            margin-left: -20px;
+            padding: 7px 20px;
+            font-weight: normal;
+            letter-spacing: 0;
+        }
+        &:last-child {
+            a {
+                border-bottom: 0;
+            }
         }
     }
     p{
         margin-bottom: 5px;
+    }
+
+    .locationSelected {
+        font-size: 14px;
+        color: #848484;
+        margin: 5px 0;
+        .btn {
+            margin-top: 15px;
+        }
     }
 }
 /* User DropDown */
@@ -701,19 +800,22 @@ margin: 0 10px 0 12px;
         }
     }
     .login-form {
-        padding-bottom: 10px;
-        margin-bottom: 5px;
+        /*padding-bottom: 10px;*/
+        /*margin-bottom: 5px;*/
         border-bottom: 0px solid lighten(@reeceGrey, 10%);
         input {
             float: left;
             width: 95%;
             margin-left: 0;
             margin-right: 0;
+            margin-bottom: 13px;
+            background: #ffffff;
+            padding: 10px 5px;
         }
         .clearfix;
     }
     .loginNoAccount {
-        float: left
+        /*float: left*/
     }
     .loginDisclaimer {
         line-height: 1.2em;
@@ -721,6 +823,10 @@ margin: 0 10px 0 12px;
     }
     input.btn-login {
         width: auto;
+    }
+
+    .dropdown-menu {
+        padding: 10px 20px 0 20px;
     }
 }
 
@@ -787,6 +893,135 @@ margin: 0 10px 0 12px;
         padding-bottom: 10px;
     }
 }
+
+.nav {
+    border-top: 0!important;
+}
+
+.mobileLogin {
+    border-top: 0!important;
+    #mobile-login {
+        background: #F0F0F0;
+        color: #3F3F3F;
+        width: 240px;
+        margin-left: -30px;
+        margin-top: 4px;
+        border-sizing: border-box;
+        -moz-border-sizing: border-box;
+        -webkit-border-sizing: border-box;
+        padding: 0 20px 0 20px;
+
+        h5 {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        .forgotLink {
+            color: #BD1F12;
+            text-shadow: none;
+        }
+    }
+    form {
+        width: 100%;
+        margin-bottom: 0;
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            height: auto;
+            padding: 10px;
+            border: none;
+            border-radius: 0;
+        }
+
+        .forgotLink {
+            font-size: 14px!important;
+            line-height: 40px;
+            padding: 0!important;
+        }
+
+        .loginButton {
+            background: #009DDB;
+            color: #ffffff;
+            border: 0;
+            border-radius: 0;
+            float: right;
+            width: auto;
+        }
+
+        .btn-lg {
+            font-size: 16px;
+        }
+
+        .dontHave {
+            background: #E2E2E2;
+            padding: 20px 20px;
+            margin: 10px 0 0 -20px;
+            width: 240px;
+
+            h5 {
+                margin: 0  0 15px 0!important;
+                color: #3F3F3F;
+                font-size: 14px!important;
+            }
+
+            .tradeButton {
+                background: #0D2E56;
+                margin-bottom: 10px;
+            }
+
+            .retailButton {
+                background: #DB1E27;
+            }
+
+            .tradeButton:hover {
+                background: #153C6A;
+            }
+
+            .retailButton:hover {
+                background: #E4484F;
+            }
+
+            .btn-Login {
+                width: 100%;
+                box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                font-size: 14px;
+                padding: 5px 10px;
+                border-radius: 0;
+                border: none;
+                box-shadow: none;
+                text-shadow: none;
+            }
+        }
+    }
+
+    .logged-in {
+
+        a {
+            display: block;
+            background: #009DDB;
+            color: #ffffff;
+            margin-top: 5px;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            width: 90%;
+            padding: 10px!important;
+            text-shadow: 0!important;
+        }
+
+    }
+
+    ul {
+        margin-bottom: 0;
+
+    }
+
+}
+
 /* */
 @media (max-width: 979px) {
     .navbar-fixed-top .navbar-inner,
@@ -1154,6 +1389,7 @@ margin: 0 10px 0 12px;
 // Retail and trade login
 // ==========================================
 
+
 .myAccountLoginWrap{
   color: #abaaaa;
   a{
@@ -1200,6 +1436,19 @@ margin: 0 10px 0 12px;
     color: #042b4e;
     font-size: 25px;
     padding-bottom: 20px;
+  }
+
+  .openTradeAccount {
+    margin: 40px 0 0 0;
+    text-align: center;
+    a {
+        display: inline-block;
+        text-align: center;
+        background: #009DDB;
+        color: #ffffff;
+        font-size: 16px;
+        padding: 20px;
+    }
   }
 
   .myAccountLoginWrapGray{

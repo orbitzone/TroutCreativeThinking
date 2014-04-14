@@ -3159,6 +3159,10 @@ p.inspBlogDate {
   color: #ffffff;
   font-weight: bold;
 }
+.designerLooksStory .designerLooksEditorContent .companyInfo,
+.designerLooksStory .designerLooksArchitectContent .companyInfo {
+  font-style: italic;
+}
 .designerLooksStory .designerLooksEditorContent {
   background: #a99eb0;
 }

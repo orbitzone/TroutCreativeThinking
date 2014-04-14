@@ -45,7 +45,7 @@ elseif ($state == null) {
 
 <div class="dropdown-menu sso">
 <div class="login">
-    <h5>Login to your <strong>Reece page</strong> </h5>
+    <h5>Login</h5>
 
     <form class="login-form">
         <input type="text" placeholder="Username">
@@ -144,15 +144,19 @@ HTML;
                         <input id="headerStoreSearchInput" type="text" placeholder="Enter Suburb or Postcode">
                     </form>
                     <ul id="headerLocationList">
-                        <li><a href="#">Richmond</a></li>
-                        <li><a href="#">Hawthorn</a></li>
-                        <li><a href="#">Toorak</a></li>
+                        <li><a href="#" data-location="Richmond">Richmond </a></li>
+                        <li><a href="#" data-location="Kew">Kew</a></li>
+                        <li><a href="#" data-location="Camberwell">Camberwell</a></li>
                     </ul>
                     </div>
                     <div class="locationSelected" style="display:none">
-                        <p><strong>Reece Plumbing Centre Richmond</strong><p>
-                        <p>421-427 Bridge Road Richmond, VIC, 3121 <br/>(03) 9429 5800 <br/> (03) 9427 0264 (fax)<br/><a href="http://www.reece.com.au/storefinder/network/plumbing-centre-richmond-3011"><i class="icon-map-marker icon">&nbsp;</i> View on map</a></p>
-                        <p><a id="changeStoreLocation" href="#">Find Another Store</a></p>
+                        <p><strong>Plumbing Centre</strong><p>
+                        <p>421-427 Bridge Road Richmond, VIC, 3121 <br/><strong>Phone</strong> (03) 9429 5800<br/><strong>Fax</strong> (03) 9427 0264<br /></p>
+                        <p>
+                            <a class="btn btn-Login btn-reece-secondary btn-small andRight tradeButton"><i class="icon-map-marker icon">&nbsp;</i> View On Map</a>
+                            <a id="changeStoreLocation" href="#" class="btn btn-Login btn-reece-secondary btn-small tradeButton">Find Another Store</a>
+                            <div style="clear: both;"></div>
+                        </p>
                     </div>
 
                 </div>

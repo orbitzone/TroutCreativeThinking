@@ -40,7 +40,7 @@ $(document).ready(function() {
         $('#headerLocationList').show();
     });
     $('#headerLocationList a').click(function(e){
-        $('#headerLocationDropDown .location').html($(e.target).html());
+        $('#headerLocationDropDown .location').html($(e.target).attr('data-location'));
         $('#headerLocationDropDown .newLocation').hide();
         $('#headerLocationList').hide();
         $('#headerLocationDropDown .locationSelected').show();

@@ -7,6 +7,33 @@
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 article,
 aside,
 details,
@@ -6195,33 +6222,6 @@ a.badge:focus {
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
-.clearfix {
-  *zoom: 1;
-}
-.clearfix:before,
-.clearfix:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.clearfix:after {
-  clear: both;
-}
-.hide-text {
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
-}
-.input-block-level {
-  display: block;
-  width: 100%;
-  min-height: 30px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
 @-ms-viewport {
   width: device-width;
 }
@@ -7424,7 +7424,7 @@ h6 {
   position: fixed;
   right: 0;
   width: 250px;
-  padding: 20px 0 20px 30px;
+  padding: 5px 0 20px 30px;
   top: 0;
   bottom: 0;
   overflow: auto;
@@ -7478,7 +7478,8 @@ h6 {
     padding: 10px 0;
     font-size: 17.5px;
   }
-  .ocnav-wrapper .nav li a:hover {
+  .ocnav-wrapper .nav li a:hover,
+  .ocnav-wrapper .nav li a:focus {
     background: none;
   }
   .ocnav-wrapper .nav li > .nav li,
@@ -7592,12 +7593,12 @@ h6 {
   margin: 0 auto;
 }
 .navbar .nav {
-  margin: 0 10px 0 12px;
+  margin: 0 0 0 12px;
 }
 .navbar .nav > li > a {
   color: #ccc;
   text-shadow: none;
-  padding: 15px 10px;
+  padding: 15px 8px;
   font-size: 15px;
   font-weight: 200;
   letter-spacing: 1px;
@@ -7613,6 +7614,24 @@ h6 {
 .navbar .mobile-logo {
   height: 49px;
   width: 101.5px;
+}
+.menuButton {
+  color: #ffffff;
+  text-shadow: none;
+  font-size: 14px;
+  background: #272727!important;
+  width: 80px!important;
+}
+.menuButton .burger {
+  display: block;
+  float: right;
+  margin-left: 10px;
+}
+.menuButton .burger .icon-bar {
+  margin-left: 0!important;
+}
+.menuButton:hover {
+  color: #ffffff;
 }
 @media (min-width: 979px + 1) and (max-width: 1200px) {
   .navbar .nav > li > a {
@@ -7651,7 +7670,7 @@ h6 {
   color: #d3d4d5;
   font-size: 12px;
   float: right;
-  padding: 10px 3px 10px 16px;
+  padding: 10px 3px 10px 0;
 }
 .headerUtilityLinks > li {
   display: block;
@@ -7677,6 +7696,23 @@ h6 {
 .headerUtilityLinks a:hover,
 .headerUtilityLinks a:focus {
   text-decoration: none;
+}
+@media screen and (max-width: 1190px) {
+  .headerUtilityLinks > li > a {
+    font-size: 20px;
+    letter-spacing: -2px;
+  }
+  .headerUtilityLinks > li > a .only-icon {
+    display: none;
+  }
+  .headerUtilityLinks .locationDropDown .dropdown-menu {
+    right: 0!;
+    left: auto;
+  }
+  .cart-count {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
 }
 .headerNavSearchForm {
   display: inline-block;
@@ -7808,21 +7844,39 @@ h6 {
 }
 .headerUtilityLinks .locationDropDown.open a,
 .headerUtilityLinks .userDropDown.open a {
-  color: #009ddb;
+  /*color: @reeceLightBlue;*/
 }
 .headerUtilityLinks .dropdown-menu {
   margin: 0;
-  padding: 10px;
-  -webkit-border-radius: 0 0 10px 10px;
-  -moz-border-radius: 0 0 10px 10px;
-  border-radius: 0 0 10px 10px;
+  padding: 10px 20px;
+  -webkit-border-radius: 0 0 0 0;
+  -moz-border-radius: 0 0 0 0;
+  border-radius: 0 0 0 0;
   border-top: none;
   left: auto;
   right: 0px;
   top: 40px;
   width: 100%;
   min-width: 300px;
-  background: #3f3f3f;
+  background: #f0f0f0;
+}
+.headerUtilityLinks .dropdown-menu .login {
+  /*padding: 10px;*/
+}
+.headerUtilityLinks .dropdown-menu .dontHave {
+  width: 340px;
+  height: 75px;
+  margin-top: 15px;
+  margin-left: -20px;
+  border-top: SOLID 1px #d1d1d1;
+  padding: 20px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.headerUtilityLinks .dropdown-menu .dontHave h5 {
+  margin: 0 0 10px 0;
+  color: #3F3F3F;
 }
 .headerUtilityLinks .dropdown-menu .btn-retail {
   float: none !important;
@@ -7879,8 +7933,10 @@ h6 {
 }
 .headerUtilityLinks .dropdown-menu .btn-Login {
   float: left;
-  width: 41.5%;
-  color: #FFFFFF!important;
+  width: 48%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 .headerUtilityLinks .dropdown-menu > .register {
   display: none;
@@ -7912,7 +7968,7 @@ h6 {
   border-radius: 0;
   margin: 0 auto;
   display: block;
-  width: 190px;
+  width: 95%;
   height: 15px;
   font-size: 12px;
   box-shadow: none !important;
@@ -7994,7 +8050,7 @@ h6 {
 }
 .userDropDown .login-form {
   padding-bottom: 10px;
-  margin-bottom: 5px;
+  /*margin-bottom: 5px;*/
   border-bottom: 0px solid #666666;
   *zoom: 1;
 }
@@ -8014,7 +8070,7 @@ h6 {
   clear: both;
 }
 .userDropDown .loginNoAccount {
-  float: left;
+  /*float: left*/
 }
 .userDropDown .loginDisclaimer {
   line-height: 1.2em;
@@ -8091,6 +8147,90 @@ h6 {
   font-weight: bold;
   border-bottom: solid 1px #c81818;
   padding-bottom: 10px;
+}
+.nav {
+  border-top: 0!important;
+}
+.mobileLogin {
+  border-top: 0!important;
+}
+.mobileLogin form {
+  width: 90%;
+}
+.mobileLogin form input {
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  border: none;
+  border-radius: 0;
+}
+.mobileLogin form .forgotLink {
+  font-size: 14px!important;
+  line-height: 40px;
+  padding: 0!important;
+}
+.mobileLogin form .loginButton {
+  background: #009DDB;
+  color: #ffffff;
+  border: 0;
+  border-radius: 0;
+  float: right;
+  width: auto;
+}
+.mobileLogin form .btn-lg {
+  font-size: 16px;
+}
+.mobileLogin form .dontHave {
+  background: #999999;
+  padding: 10px;
+  margin: 10px 0 0 0;
+}
+.mobileLogin form .dontHave h5 {
+  margin: 0  0 15px 0;
+  color: #3F3F3F;
+}
+.mobileLogin form .dontHave .tradeButton {
+  background: #0D2E56;
+  margin-bottom: 10px;
+}
+.mobileLogin form .dontHave .retailButton {
+  background: #DB1E27;
+}
+.mobileLogin form .dontHave .tradeButton:hover {
+  background: #153C6A;
+}
+.mobileLogin form .dontHave .retailButton:hover {
+  background: #E4484F;
+}
+.mobileLogin form .dontHave .btn-Login {
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+.mobileLogin .logged-in a {
+  display: block;
+  background: #009DDB;
+  color: #ffffff;
+  margin-top: 5px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: 90%;
+  padding: 10px!important;
+  text-shadow: 0!important;
+}
+.mobileLogin ul {
+  margin-bottom: 0;
 }
 /* */
 @media (max-width: 979px) {
@@ -8402,6 +8542,18 @@ h6 {
   color: #042b4e;
   font-size: 25px;
   padding-bottom: 20px;
+}
+.myAccountLoginWrap .openTradeAccount {
+  margin: 40px 0 0 0;
+  text-align: center;
+}
+.myAccountLoginWrap .openTradeAccount a {
+  display: inline-block;
+  text-align: center;
+  background: #009DDB;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 20px;
 }
 .myAccountLoginWrap .myAccountLoginWrapGray {
   background: #f0f0f0;

@@ -26,7 +26,7 @@ $retailItems = array(
 		    		<?php else: ?>
 		    		<a href="#" data-toggle="collapse" data-target="#mobile-login"><i class="icon-user">&nbsp;</i> Login</a>
 		    		<div id="mobile-login" class="collapse">
-		    			<h5>Login to your <strong>Reece page</strong> </h5>
+		    			<h5>Login</h5>
 					    <form class="login-form">
 						    <input type="text" placeholder="Username">
 						    <input type="password" placeholder="Password">

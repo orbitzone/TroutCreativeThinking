@@ -85,8 +85,7 @@ include_once($serverBase."/includes/head/head-generic.php");
 							<ul class="applySteps" id="applySteps">
 								<li>A subscription to Outlet, with all the latest plumbing industry news and views</li>
 								<li>Receive updates and special offers   on our latest products</li>
-								<li>Access to the online irrigation and bathroom</li>
-								<li>3D planners to save and share</li>
+								<li>Access to the online irrigation and bathroom 3D planners to save and share</li>
 								<li>Reece account customers also get access  to My Account</li>
 							</ul>
 						</div>

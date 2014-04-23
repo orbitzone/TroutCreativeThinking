@@ -46,7 +46,8 @@ $(document).ready(function() {
         $('#headerLocationDropDown .locationSelected').show();
         $('#headerLocationList').dropdown('toggle');
     });
-    $('#changeStoreLocation').click(function(){
+    $('#changeStoreLocation').click(function(e){
+        e.preventDefault();
         $('#headerLocationDropDown .newLocation').show();
         $('#headerLocationDropDown .locationSelected').hide();
         $('#headerLocationDropDown .location').html('Select Store');

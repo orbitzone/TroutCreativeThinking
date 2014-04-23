@@ -29,53 +29,65 @@
 //To DO - Fix column width. In browser the 3 columns of sections look uneven
 .contact-sections {
 	.icon {
-		width: 160px;
-		height: 130px;
-		margin: auto auto 3em auto;
-		background: url(../images/aboutus/contact/contactus-sprite.png) no-repeat;
+		height: 150px;
+		margin: auto auto 2em auto;
+		background: url(../images/aboutus/contact/contactus-icons.png) no-repeat;
 	}
+	/*
 	.store-finder .icon {
 		background-position: 0 0;
-	}
+	}*/
 	.product-info .icon {
-		background-position: -218px -11px;
+		background-position: 50% 0;
 	}
 	.customer-care .icon {
-		background-position: -417px 0;
+		background-position: 50% -150px;
 	}
 	.cs-feedback .icon {
-		background-position: -15px -216px;
+		background-position: 50% -300px;
+	}
+	.quote-product .icon {
+		background-position: 50% -450px;
 	}
 	.login-issues .icon {
-		background-position: -211px -216px;
+		background-position: 50% -600px;
 	}
 	.share-info .icon {
-		background-position: -413px -216px;
+		background-position: 50% -750px;
 	}
 	.careers .icon {
-		background-position: -15px -413px;
+		background-position: 50% -900px;
 	}
 	.account-update .icon {
-		background-position: -215px -414px;
+		background-position: 50% -1050px;
 	}
 	.suppliers .icon {
-		background-position: -419px -414px;
+		background-position: 50% -1200px;
+	}
+	.headoffice .icon {
+		background-position: 50% -1350px;
 	}
 	section {
-		margin: 2em 0;
+		margin: 1em 0 2em;
 		padding: 0 2em;
 		border-top: 1px solid @lightBackground; 
 	}
 	@media (min-width: 768px) {
 		.row-fluid {
-			border-top: 1px solid @lightBackground;
+			//border-top: 1px solid @lightBackground;
 			section {
 				border-top: 0;
-			}
-			section:nth-child(2) {
-				border-left: 1px solid @lightBackground;
 				border-right: 1px solid @lightBackground;
+				&:nth-child(3n){
+					border-right: none;
+				}
 			}
+
+		}
+		.contactSections{
+			margin-top: 10px;
+			padding-top: 20px;
+			border-top: 1px solid @lightBackground;
 		}
 	}
 }
@@ -131,6 +143,7 @@ input[type="submit"] {
 	padding: 1em 1.8em;
 	.border-radius(0);
 }
+
 .head-office {
 	padding: 3em 0 4em 0;
 	dt {
@@ -138,6 +151,50 @@ input[type="submit"] {
 	}
 	dt, dd {
 		line-height: 2.1em;
+	}
+}
+.storeContactWrap{
+	padding-bottom: 10px;
+	h4,h5{
+		padding-bottom: 15px;
+	}
+	h5{
+		padding-top: 10px;
+		color: #009ddb;
+		 font-weight: normal;
+	}
+
+	.plumbing{
+	  color: #0d2e56;
+	}
+	.bathroom{
+	  color: #db1e24;
+	}
+	.irrigation{
+	  color: #5e792d;
+	}
+	.civil{
+	  color: #b65312;
+	}
+	.hvac{
+	  color: #0397d7;
+	}
+	.onsite{
+	  color: #f47836;
+	}
+}
+.selectStoreType{
+	.clearfix;
+	margin: 0;
+	li{
+		list-style: none;
+		display: block;
+		float: left;
+		width: 32%;
+		padding-right: 1.33%;
+		&:nth-child(3n+1){
+			clear: both;
+		}
 	}
 }
 

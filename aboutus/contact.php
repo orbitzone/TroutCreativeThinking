@@ -132,7 +132,7 @@ include_once($serverBase."/includes/head/head-generic.php");
                     <section class="span4 share-info">
                         <div class="icon"></div>
                         <h4>Shareholder Information</h4>
-                        <p>For investor information and other details relating to the financial performance of Reece, please visit our <a href="#">financial section</a>. </p>
+                        <p>For investor information and other details relating to the financial performance of Reece, please visit our <a href="finance.php">financial section</a>. </p>
                     </section>
                     <section class="span4 careers">
                         <div class="icon"></div>

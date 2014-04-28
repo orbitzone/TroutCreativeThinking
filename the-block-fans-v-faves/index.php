@@ -10,7 +10,7 @@
 	  	include_once($serverBase."/includes/head/head-generic.php");
 	?>		
 
-    <body class="fansVFaves">
+    <body class="fansVFaves withHappinessSubNav">
     <div id="fb-root"></div>
 	<script>(function(d, s, id) {
 		var js, fjs = d.getElementsByTagName(s)[0];
@@ -27,9 +27,7 @@
 				$genericNavActiveMenuItem = "Bathrooms";
 					include_once($serverBase."/includes/nav/nav-generic.php");
 			?>
-			<?php 
-					include_once($serverBase."/includes/banners/banner-happyzone.php");
-			?>	
+			<?php include_once($serverBase."/includes/nav/nav-happiness.php"); ?>	
 			</div>
 		    <div class="content-container">
 				<div class="inner-wrapper">

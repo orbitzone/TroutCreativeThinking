@@ -1,1 +1,652 @@
-.clearfix{*zoom:1}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0}.clearfix:after{clear:both}.hide-text{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.input-block-level{display:block;width:100%;min-height:30px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.ilmb .main-wrapper{background:#fff}.ilmb p.lead{line-height:1.1}.ilmb .tc{text-align:center}.ilmb .inner-content .feature-gradient{padding:20px;margin:0 -20px}.ilmb .feature-footer{padding:10px 20px;background:#454545;color:#999}.ilmb .feature-footer h5{color:#fff}.ilmb .feature-footer i.icon-check{color:#46a546}.ilmb .thumbnails li.flush{margin-left:0}.ilmb .inner-content{margin:20px}.ilmb .accordion-group{margin:0;border:none}.ilmb h3{font-size:20px}.ilmb .breadcrumb{background:#000;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}.ilmb .breadcrumb>li{text-shadow:none;color:#fff;text-transform:uppercase;font-size:12px}.ilmb .breadcrumb a{color:#fff}.ilmb a.showIlmbMenu{display:block;padding:20px;text-align:center;color:#fff;background:#000;text-transform:uppercase}.ilmb a.showIlmbMenu:hover{text-decoration:none}.ilmb .ilmbNav{background:#eff1f4;margin-bottom:20px;overflow:visible;height:auto}.ilmb .ilmbNav .listItem{text-transform:uppercase;background-color:#f6f8f9;background-image:-moz-linear-gradient(top, #fbfcfd, #eff1f4);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#fbfcfd), to(#eff1f4));background-image:-webkit-linear-gradient(top, #fbfcfd, #eff1f4);background-image:-o-linear-gradient(top, #fbfcfd, #eff1f4);background-image:linear-gradient(to bottom, #fbfcfd, #eff1f4);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffbfcfd', endColorstr='#ffeff1f4', GradientType=0)}.ilmb .ilmbNav .listItem a{display:block;padding:20px;color:#000}.ilmb .ilmbNav .listItem a:hover{text-decoration:none}.ilmb .ilmbNav .listItem.active{background:#fdefee}.ilmb .ilmbNav .listItem.active a{color:#cc2518}.ilmb .ilmbNav .listItem .icon-large{font-size:20px;display:block;float:left;margin-right:5px}.ilmb .ilmbNav .listItem .ilmbnavLinktext{display:block;height:30px;line-height:30px;margin-left:30px}.ilmb .ilmbDates{background:#000;text-align:center;color:#fff;padding:20px}.ilmb .ilmbDates h3{font-weight:normal;font-size:18px;text-transform:uppercase}.ilmb .ilmbDates dt{text-transform:uppercase;padding-top:10px}.ilmb .actions{text-align:right}.ilmb .ilmbFormInput{-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;border:solid 1px #000}.ilmb .ilmbRedBtn{background:#c81f1f;border:none;color:#fff;padding:10px;text-transform:uppercase;margin-bottom:10px;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;text-shadow:none}.ilmb .ilmbRedBtn .caret{border-top-color:#fff}.ilmb .home-wrapper{position:relative;overflow:hidden;border-top:solid 32px #000;border-bottom:solid 32px #000}.ilmb .homeBannerImage{max-width:1160px}.ilmb .home-content-wrapper{position:absolute;top:0;left:50px;right:50px}.ilmb .home-content{margin-top:15%;display:table;width:100%;border-collapse:separate;border-spacing:10px}.ilmb .home-content .ilmbFormInput{width:35%}.ilmb .home-content .ilmbNav,.ilmb .home-content .ilmbBanner,.ilmb .home-content .ilmbDates{display:table-cell;vertical-align:top}.ilmb .home-content .ilmbBannerInner{position:relative}.ilmb .home-content .ilmbNav{width:20%;min-width:200px}.ilmb .home-content .ilmbNav .listItem a{padding:20px 25px}.ilmb .home-content .ilmbNav .listItem.longNavLink .icon-large{position:relative;top:3px}.ilmb .home-content .ilmbNav .listItem.longNavLink .ilmbnavLinktext{line-height:17px}.ilmb .home-content .ilmbBanner{background-color:#fff;background:rgba(255,255,255,0.7);text-align:center;padding:20px;position:relative}.ilmb .home-content .ilmbBanner p.ilmbBannerDesc{padding:0 40px}.ilmb .home-content .ilmbLogoWrap{padding:100px 20px 20px;position:relative}.ilmb .home-content .ilmbBannerPrize{width:190px;position:absolute;top:-60px;right:1%}.ilmb .home-content .ilmbDates{width:20%}.ilmb .ilmbPageHeader{text-align:center;margin:5px 25px 5px}.ilmb .ilmbPageHeader img{width:300px;margin-top:20px}.ilmb .ilmbPageHeader .pageTitle{color:#cc2518;font-size:20px;text-transform:uppercase;font-weight:normal;display:block;padding-top:20px}.ilmb .thumbnails>li{margin-bottom:40px}.ilmb .thumbnails>li:last-child{margin-bottom:10px}.ilmb a.ilmbReadStoryLink{color:#cc2518;text-transform:uppercase;float:right;padding-top:13px}.ilmb .ilmbThumb{position:relative}.ilmb .ilmbThumb .ilmbWinnerBadge{position:absolute;left:20px;bottom:20px;background:#000;height:30px;width:70px;padding:40px 20px;color:#fff;text-align:center;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%}.ilmb .ilmbThumb .ilmbWinnerBadge .ilmbYear{display:block;font-size:26px;font-weight:normal;font-style:italic}.ilmb .ilmbThumbHd{margin-right:130px;margin-bottom:30px;margin-top:0}.ilmb .ilmbThumbHd .ilmbEntryName,.ilmb .ilmbThumbHd .ilmbEntryPlace{display:block;color:#000;text-transform:uppercase;font-size:14px}.ilmb .ilmbThumbHd .ilmbEntryName{padding-bottom:3px}.ilmb .prizeBanner{font-weight:bold;font-style:italic;color:#cc2518;text-align:center}.ilmb .prizeBanner .prizeBannertext{font-size:30px;line-height:1em;width:100px;display:inline-block}.ilmb .prizeBanner .prizeBannerAmount{font-size:75px;line-height:1em;display:inline-block}@media (max-width:979px){.ilmb .homeBannerImage{max-width:2000px;width:2000px;margin-left:-40%}.ilmb .home-content{display:block;margin-top:20px}.ilmb .home-content .ilmbNav,.ilmb .home-content .ilmbBanner,.ilmb .home-content .ilmbDates{display:block;width:auto}.ilmb .home-content .ilmbBanner,.ilmb .home-content .ilmbDates{margin-top:20px}.ilmb .home-content .ilmbHomeTopNav{display:none}.ilmb .home-content .ilmbNav{position:static;height:0;overflow:hidden}.ilmb .home-content .ilmbNav .listItem{position:static;display:block;height:auto}.ilmb .home-content .ilmbNav .listItem .icon-large{float:none;display:inline-block}.ilmb .home-content .ilmbNav .listItem .ilmbnavLinktext{margin:0;display:inline-block}.ilmb .home-content .ilmbNav .listItem a{padding:20px 15px !important}.ilmb .home-content .ilmbNav .listItem.longNavLink .icon-large{position:static}.ilmb .home-content .ilmbNav .listItem.longNavLink .ilmbnavLinktext{line-height:30px}}@media (min-width:768px) and (max-width:979px){.ilmb .ilmbNav .listItem a{font-size:13px;padding:20px 10px}.ilmb .prizeBanner .prizeBannertext,.ilmb .prizeBanner .prizeBannerAmount{display:block;width:auto}}@media (max-width:767px){.ilmb .inner-content{margin:20px 0}.ilmb .home-content-wrapper{left:20px;right:20px}.ilmb .ilmbNav{height:0;overflow:hidden}.ilmb .ilmbNav .listItem{text-align:center}.ilmb .ilmbNav .listItem .icon-large,.ilmb .ilmbNav .listItem .ilmbnavLinktext{display:inline-block;float:none;margin:0}}@media (max-width:480px){.ilmb .homeBannerImage{max-width:2200px;width:2200px;margin-left:-50%}.ilmb .ilmbThumb .ilmbWinnerBadge{height:30px;width:50px;padding:20px 10px;font-size:11px}.ilmb .ilmbThumb .ilmbWinnerBadge .ilmbYear{font-size:18px}.ilmb .home-content .ilmbLogoWrap{padding:10px}.ilmb .home-content .ilmbBanner{margin-top:10px}.ilmb .home-content .ilmbBanner p.ilmbBannerDesc{padding:0 20px}.ilmb .home-content .ilmbBanner h3{padding-left:0}.ilmb .home-content .ilmbBannerPrize{margin:20px 0 20px 20px;position:static;float:right}.ilmb .home-content .ilmbFormInput{width:95%}.ilmb .home-content .ilmbNav .listItem .ilmbnavLinktext{font-size:12px}.ilmb .home-content .ilmbBannerPrize{float:none;margin:20px auto}}@media (max-width:350px){.ilmb .home-content .ilmbBannerPrize{width:auto}}@media (min-width:1200px){.ilmb .prizeBanner .prizeBannertext{font-size:35px}.ilmb .prizeBanner .prizeBannerAmount{font-size:85px}.ilmb .home-content .ilmbBannerPrize{width:209px}}.ilmb .winnerSideBar{padding:20px;height:auto}.ilmb .winnerSideBar p{font-size:13px;line-height:120%}.ilmb .winnerSideBar h3{font-size:18px;margin:0 0 5px 0}.ilmb .winnerDetails{padding:20px 0 0 20px}.ilmb .winnerDetails p{font-size:16px;line-height:130%}.ilmb .images{padding:20px 0 0 20px}.ilmb .ilmb-winner h3{font-size:22px;margin-left:30px}.ilmb .ilmb-winner p{font-size:16px;margin-left:30px;line-height:130%}.ilmb .ilmb-winner h3 span{font-weight:normal !important}.ilmb .winnerImages{padding:20px 0 0 0}.ilmb .winnerImages .thumbs img{margin-bottom:10px;width:24% !important}.ilmb .winnerPlan{background:#efefef;margin-top:10px;margin-left:20px;margin-bottom:20px;padding:20px;width:94%}.ilmb .winnerPlan a{color:#666}.video-container{position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden}.video-container iframe,.video-container object,.video-container embed{position:absolute;top:0;left:0;width:100%;height:100%}@media (max-width:979px){.ilmb .ajax-target{width:100%;margin:0}.ilmb .ajax-target .inner-content{margin:20px}.ilmb .winnerSideBar img{width:100%;margin-bottom:10px}}@media (max-width:767px){.ilmb .winnerPlan{margin-left:0}.ilmb .winnerImages{padding:20px 0 0 20px}.ilmb .winnerSideBar img{width:150px;float:none}.ilmb .images{padding:20px 0 0 0}}@media (max-width:640px){.ilmb .winnerPlan{margin-left:0}.ilmb .winnerPlan .ilmb .winnerImages .thumbs img{width:150px !important}}@media (max-width:480px){.ilmb .winnerPlan{margin-left:0;padding:0;width:100%}.ilmb .winnerImages{padding-left:0}.ilmb .winnerImages .thumbs img{margin-bottom:10px;width:100% !important}}@media (max-width:320px){.ilmb .winnerPlan{margin-left:20px;padding:0;width:88% !important}.ilmb .ilmb-winner p{width:80%}.ilmb .ilmb-winner h3{font-size:18px}.ilmb .winnerImages{padding:0 0 0 0}.ilmb .images{padding:0 0 0 0;width:100%}.ilmb .winnerImages .thumbs img{width:100% !important;padding:0 0 0 0}.ilmb .winnerSideBar img{width:100%;margin-bottom:10px}}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.ilmb .main-wrapper {
+  background: #fff;
+}
+.ilmb p.lead {
+  line-height: 1.1;
+}
+.ilmb .tc {
+  text-align: left;
+}
+.ilmb .inner-content .feature-gradient {
+  padding: 20px;
+  margin: 0 -20px;
+}
+.ilmb .feature-footer {
+  padding: 10px 20px;
+  background: #454545;
+  color: #999;
+}
+.ilmb .feature-footer h5 {
+  color: #ffffff;
+}
+.ilmb .feature-footer i.icon-check {
+  color: #46a546;
+}
+.ilmb #AjaxTargetWrapper {
+  /*    background: url(../images/ajax-loader.gif) no-repeat center;*/
+}
+.ilmb .thumbnails li.flush {
+  margin-left: 0;
+}
+.ilmb .inner-content {
+  margin: 20px;
+}
+.ilmb .accordion-group {
+  margin: 0;
+  border: none;
+}
+.details-target {
+  margin-bottom: 10px;
+}
+/* ILMB New Changes */
+.ilmb {
+  /* Nav */
+  /* Dates */
+  /* Forms */
+  /* Home Page */
+  /* Home Content */
+  /* Other Pages */
+  /* ilmb Page Header */
+  /* past winners */
+  /* Prizes */
+}
+.ilmb h3 {
+  font-size: 20px;
+}
+.ilmb .red {
+  color: #c81f1f;
+}
+.ilmb .judge-thumb {
+  float: left;
+  margin: 10px;
+}
+.ilmb .judge-large {
+  float: left;
+  margin: 10px 10px 10px 0px;
+}
+.ilmb .judge {
+  display: block;
+  float: left;
+}
+.ilmb .judge h4 {
+  margin-top: 20px;
+}
+.ilmb .breadcrumb {
+  background: black;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.ilmb .breadcrumb > li {
+  text-shadow: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.ilmb .breadcrumb a {
+  color: #ffffff;
+}
+.ilmb a.showIlmbMenu {
+  display: block;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  background: black;
+  text-transform: uppercase;
+}
+.ilmb a.showIlmbMenu:hover {
+  text-decoration: none;
+}
+.ilmb .ilmbNav {
+  background: #eff1f4;
+  margin-bottom: 20px;
+  overflow: visible;
+  height: auto;
+}
+.ilmb .ilmbNav .listItem {
+  text-transform: uppercase;
+  background-color: #f6f8f9;
+  background-image: -moz-linear-gradient(top, #fbfcfd, #eff1f4);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbfcfd), to(#eff1f4));
+  background-image: -webkit-linear-gradient(top, #fbfcfd, #eff1f4);
+  background-image: -o-linear-gradient(top, #fbfcfd, #eff1f4);
+  background-image: linear-gradient(to bottom, #fbfcfd, #eff1f4);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffbfcfd', endColorstr='#ffeff1f4', GradientType=0);
+}
+.ilmb .ilmbNav .listItem a {
+  display: block;
+  padding: 20px;
+  color: black;
+}
+.ilmb .ilmbNav .listItem a:hover {
+  text-decoration: none;
+}
+.ilmb .ilmbNav .listItem.active {
+  background: #fdefee;
+}
+.ilmb .ilmbNav .listItem.active a {
+  color: #cc2518;
+}
+.ilmb .ilmbNav .listItem .icon-large {
+  font-size: 20px;
+  display: block;
+  float: left;
+  margin-right: 5px;
+}
+.ilmb .ilmbNav .listItem .ilmbnavLinktext {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  margin-left: 30px;
+}
+.ilmb .ilmbDates {
+  background: #000;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+.ilmb .ilmbDates h3 {
+  font-weight: normal;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.ilmb .ilmbDates dt {
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+.ilmb .actions {
+  text-align: left;
+}
+.ilmb .ilmbFormInput {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  border: solid 1px #000;
+}
+.ilmb .ilmbRedBtn {
+  background: #c81f1f;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  text-shadow: none;
+}
+.ilmb .ilmbRedBtn .caret {
+  border-top-color: white;
+}
+.ilmb .home-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-top: solid 32px black;
+  border-bottom: solid 32px black;
+}
+.ilmb .homeBannerImage {
+  max-width: 1160px;
+}
+.ilmb .home-content-wrapper {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  right: 50px;
+}
+.ilmb .home-content {
+  margin-top: 15%;
+  display: table;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+.ilmb .home-content .ilmbFormInput {
+  width: 35%;
+}
+.ilmb .home-content .ilmbNav,
+.ilmb .home-content .ilmbBanner,
+.ilmb .home-content .ilmbDates {
+  display: table-cell;
+  vertical-align: top;
+}
+.ilmb .home-content .ilmbBannerInner {
+  position: relative;
+}
+.ilmb .home-content .ilmbNav {
+  width: 20%;
+  min-width: 200px;
+}
+.ilmb .home-content .ilmbNav .listItem a {
+  padding: 20px 25px;
+}
+.ilmb .home-content .ilmbNav .listItem.longNavLink .icon-large {
+  position: relative;
+  top: 3px;
+}
+.ilmb .home-content .ilmbNav .listItem.longNavLink .ilmbnavLinktext {
+  line-height: 17px;
+}
+.ilmb .home-content .ilmbBanner {
+  background-color: white;
+  background: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+.ilmb .home-content .ilmbBanner p.ilmbBannerDesc {
+  padding: 0 40px;
+}
+.ilmb .home-content .ilmbLogoWrap {
+  padding: 100px 20px 20px;
+  position: relative;
+}
+.ilmb .home-content .ilmbBannerPrize {
+  width: 190px;
+  position: absolute;
+  top: -60px;
+  right: 1%;
+}
+.ilmb .home-content .ilmbDates {
+  width: 20%;
+}
+.ilmb .ilmbPageHeader {
+  text-align: center;
+  margin: 5px 25px 5px;
+}
+.ilmb .ilmbPageHeader img {
+  width: 300px;
+  margin-top: 20px;
+}
+.ilmb .ilmbPageHeader .pageTitle {
+  color: #cc2518;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: normal;
+  display: block;
+  padding-top: 20px;
+}
+.ilmb .thumbnails > li {
+  margin-bottom: 40px;
+}
+.ilmb .thumbnails > li:last-child {
+  margin-bottom: 10px;
+}
+.ilmb a.ilmbReadStoryLink {
+  color: #cc2518;
+  text-transform: uppercase;
+  float: right;
+  padding-top: 13px;
+}
+.ilmb .ilmbThumb {
+  position: relative;
+}
+.ilmb .ilmbThumb .ilmbWinnerBadge {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  background: black;
+  height: 30px;
+  width: 70px;
+  padding: 40px 20px;
+  color: white;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.ilmb .ilmbThumb .ilmbWinnerBadge .ilmbYear {
+  display: block;
+  font-size: 26px;
+  font-weight: normal;
+  font-style: italic;
+}
+.ilmb .ilmbThumbHd {
+  margin-right: 130px;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+.ilmb .ilmbThumbHd .ilmbEntryName,
+.ilmb .ilmbThumbHd .ilmbEntryPlace {
+  display: block;
+  color: black;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.ilmb .ilmbThumbHd .ilmbEntryName {
+  padding-bottom: 3px;
+}
+.ilmb .prizeBanner {
+  font-weight: bold;
+  font-style: italic;
+  color: #cc2518;
+  text-align: center;
+}
+.ilmb .prizeBanner .prizeBannertext {
+  font-size: 30px;
+  line-height: 1em;
+  width: 100px;
+  display: inline-block;
+}
+.ilmb .prizeBanner .prizeBannerAmount {
+  font-size: 75px;
+  line-height: 1em;
+  display: inline-block;
+}
+@media (max-width: 979px) {
+  .ilmb .homeBannerImage {
+    max-width: 2000px;
+    width: 2000px;
+    margin-left: -40%;
+  }
+  .ilmb .home-content {
+    display: block;
+    margin-top: 20px;
+  }
+  .ilmb .home-content .ilmbNav,
+  .ilmb .home-content .ilmbBanner,
+  .ilmb .home-content .ilmbDates {
+    display: block;
+    width: auto;
+  }
+  .ilmb .home-content .ilmbBanner,
+  .ilmb .home-content .ilmbDates {
+    margin-top: 20px;
+  }
+  .ilmb .home-content .ilmbHomeTopNav {
+    display: none;
+  }
+  .ilmb .home-content .ilmbNav {
+    position: static;
+    height: 0;
+    overflow: hidden;
+  }
+  .ilmb .home-content .ilmbNav .listItem {
+    position: static;
+    display: block;
+    height: auto;
+  }
+  .ilmb .home-content .ilmbNav .listItem .icon-large {
+    float: none;
+    display: inline-block;
+  }
+  .ilmb .home-content .ilmbNav .listItem .ilmbnavLinktext {
+    margin: 0;
+    display: inline-block;
+  }
+  .ilmb .home-content .ilmbNav .listItem a {
+    padding: 20px 15px !important;
+  }
+  .ilmb .home-content .ilmbNav .listItem.longNavLink .icon-large {
+    position: static;
+  }
+  .ilmb .home-content .ilmbNav .listItem.longNavLink .ilmbnavLinktext {
+    line-height: 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .ilmb .ilmbNav .listItem a {
+    font-size: 13px;
+    padding: 20px 10px;
+  }
+  .ilmb .prizeBanner .prizeBannertext,
+  .ilmb .prizeBanner .prizeBannerAmount {
+    display: block;
+    width: auto;
+  }
+}
+@media (max-width: 767px) {
+  .ilmb .inner-content {
+    margin: 20px 0;
+  }
+  .ilmb .home-content-wrapper {
+    left: 20px;
+    right: 20px;
+  }
+  .ilmb .ilmbNav {
+    height: 0;
+    overflow: hidden;
+  }
+  .ilmb .ilmbNav .listItem {
+    text-align: center;
+  }
+  .ilmb .ilmbNav .listItem .icon-large,
+  .ilmb .ilmbNav .listItem .ilmbnavLinktext {
+    display: inline-block;
+    float: none;
+    margin: 0;
+  }
+}
+@media (max-width: 480px) {
+  .ilmb .homeBannerImage {
+    max-width: 2200px;
+    width: 2200px;
+    margin-left: -50%;
+  }
+  .ilmb .ilmbThumb .ilmbWinnerBadge {
+    height: 30px;
+    width: 50px;
+    padding: 20px 10px;
+    font-size: 11px;
+  }
+  .ilmb .ilmbThumb .ilmbWinnerBadge .ilmbYear {
+    font-size: 18px;
+  }
+  .ilmb .home-content .ilmbLogoWrap {
+    padding: 10px;
+  }
+  .ilmb .home-content .ilmbBanner {
+    margin-top: 10px;
+  }
+  .ilmb .home-content .ilmbBanner p.ilmbBannerDesc {
+    padding: 0 20px;
+  }
+  .ilmb .home-content .ilmbBanner h3 {
+    padding-left: 0;
+  }
+  .ilmb .home-content .ilmbBannerPrize {
+    margin: 20px 0 20px 20px;
+    position: static;
+    float: right;
+  }
+  .ilmb .home-content .ilmbFormInput {
+    width: 95%;
+  }
+  .ilmb .home-content .ilmbNav .listItem .ilmbnavLinktext {
+    font-size: 12px;
+  }
+  .ilmb .home-content .ilmbBannerPrize {
+    float: none;
+    margin: 20px auto;
+  }
+}
+@media (max-width: 350px) {
+  .ilmb .home-content .ilmbBannerPrize {
+    width: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .ilmb .prizeBanner .prizeBannertext {
+    font-size: 35px;
+  }
+  .ilmb .prizeBanner .prizeBannerAmount {
+    font-size: 85px;
+  }
+  .ilmb .home-content .ilmbBannerPrize {
+    width: 209px;
+  }
+}
+/* End of New Changes */
+.ilmb .winnerSideBar {
+  padding: 20px;
+  height: auto;
+}
+.ilmb .winnerSideBar p {
+  font-size: 13px;
+  line-height: 120%;
+}
+.ilmb .winnerSideBar h3 {
+  font-size: 18px;
+  margin: 0px 0px 5px 0px;
+}
+.ilmb .winnerDetails {
+  padding: 20px 0px 0px 20px;
+}
+.ilmb .winnerDetails p {
+  font-size: 16px;
+  line-height: 130%;
+}
+.ilmb .images {
+  padding: 10px 0px 0px 20px;
+}
+.ilmb .ilmb-winner h3 {
+  font-size: 22px;
+  margin-left: 30px;
+}
+.ilmb .ilmb-winner p {
+  font-size: 16px;
+  margin-left: 30px;
+  line-height: 130%;
+}
+.ilmb .ilmb-winner h3 span {
+  font-weight: normal !important;
+}
+.ilmb .winnerImages {
+  padding: 20px 0px 0px 0px;
+}
+.ilmb .winnerImages .thumbs img {
+  margin-bottom: 10px;
+  width: 24% !important;
+}
+.ilmb .winnerPlan {
+  background: #EFEFEF;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 94%;
+}
+.ilmb .winnerPlan a {
+  color: #666;
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 979px) {
+  .ilmb .ajax-target {
+    width: 100%;
+    margin: 0;
+  }
+  .ilmb .ajax-target .inner-content {
+    margin: 20px;
+  }
+  .ilmb .winnerSideBar img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .ilmb .winnerPlan {
+    margin-left: 0px;
+  }
+  .ilmb .winnerImages {
+    padding: 20px 0px 0px 20px;
+  }
+  .ilmb .winnerSideBar img {
+    width: 150px;
+    float: none;
+  }
+  .ilmb .images {
+    padding: 10px 0px 0px 0px;
+  }
+}
+@media (max-width: 640px) {
+  .ilmb .winnerPlan {
+    margin-left: 0px;
+  }
+  .ilmb .winnerPlan .ilmb .winnerImages .thumbs img {
+    width: 150px !important;
+  }
+}
+@media (max-width: 480px) {
+  .ilmb .winnerPlan {
+    margin-left: 0px;
+    padding: 0px;
+    width: 100%;
+  }
+  .ilmb .winnerImages {
+    padding-left: 0px;
+  }
+  .ilmb .winnerImages .thumbs img {
+    margin-bottom: 10px;
+    width: 100% !important;
+  }
+}
+@media (max-width: 320px) {
+  .ilmb .winnerPlan {
+    margin-left: 20px;
+    padding: 0px;
+    width: 88% !important;
+  }
+  .ilmb .ilmb-winner p {
+    width: 80%;
+  }
+  .ilmb .ilmb-winner h3 {
+    font-size: 18px;
+  }
+  .ilmb .winnerImages {
+    padding: 0px 0px 0px 0px;
+  }
+  .ilmb .images {
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+  }
+  .ilmb .winnerImages .thumbs img {
+    width: 100% !important;
+    padding: 0px 0px 0px 0px;
+  }
+  .ilmb .winnerSideBar img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

@@ -2,7 +2,8 @@
   $pageList = array(
       array("url"=>"index","title"=>"Home","icon"=>"home"),
       array("url"=>"submit","title"=>"Submit Your Bathroom","icon"=>"heart"),
-      array("url"=>"vote","title"=>"Vote &amp; Win","icon"=>"thumbs-up"),
+      array("url"=>"voting","title"=>"Vote &amp; Win","icon"=>"thumbs-up"),
+      array("url"=>"judging","title"=>"Judging","icon"=>"legal"),
       array("url"=>"prizes","title"=>"Prizes","icon"=>"trophy"),
       array("url"=>"previous","title"=>"Past Winners","icon"=>"user"),
       array("url"=>"contact","title"=>"Contact","icon"=>"envelope-alt"),

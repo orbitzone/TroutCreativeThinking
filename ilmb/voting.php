@@ -53,16 +53,16 @@
                   </div>
                 </div>
                 <div class="span8">
-                  <h3 class="ilmbPageHeader"> <img src="/assets/images/ilmb/ilmb-logo.png" alt="I love my bathroom" /> <span class="pageTitle">Vote &amp; Win</span> </h3>
+                  <h3 class="ilmbPageHeader"> <img src="/assets/images/ilmb/ilmb-logo.png" alt="I love my bathroom" /> </h3>
                   <div class="row-fluid">
                     <div class="inner-content">
-                      <h2> Vote &amp; Win </h2>
-                      <p> Here are the finalists in this years I Love My Bathroom competition. For your chance to win one of two $5,000 Reece vouchers, just vote for your favourite bathroom and tell us what you love about it in 25 words or less. We'll pick the two best entries and announce the winners on June 3rd along with the overall winner selected by our judging panel. </p>
+                      <h2>2014 Finalists</h2>
+                      <p>Simply vote for your favourite bathroom  and you’ll be entered in the draw to win one of two $5000 Reece gift vouchers. And if you get a friend to enter, you’ll receive a second entry – doubling you chances of winning.</p>
                       <div class="row-fluid bottom-space">
                         <div class="span6 entry">
                           <h4 class="caption tc"> Richard Noon<br>
                             <small>Location</small>
-                            <label>Votes: <span>9%</span></label>
+
                           </h4>
                           <div class="shots row-fluid">
                             <div id="entryCarousel1" class="carousel slide">
@@ -74,19 +74,19 @@
                               <a class="carousel-control left" href="#entryCarousel1" data-slide="prev">&lsaquo;</a> <a class="carousel-control right" href="#entryCarousel1" data-slide="next">&rsaquo;</a> </div>
                           </div>
                           <div class="buttons"> <a href="#entry1" class="btn ilmbRedBtn fancybox" title="Entry 1 Details">View Details</a> <a href="#vote" class="btn ilmbRedBtn fancybox-vote" title="Vote for Entry 1">Vote</a>
-                            <div class="dropdown"> <a class="btn ilmbRedBtn dropdown-toggle" data-toggle="dropdown" href="#"> <i class="icon-share-alt"></i> Share <span class="caret"></span> </a>
-                              <ul class="dropdown-menu">
-                                <li><a href="#" title="Facebook"><i class="icon-facebook icon-large"></i> Facebook</a></li>
-                                <li><a href="#" title="Twitter"><i class="icon-twitter icon-large"></i> Twitter</a></li>
-                                <li><a href="#" title="Pinterest"><i class="icon-pinterest icon-large"></i> Pinterest</a></li>
-                              </ul>
-                            </div>
+<!--                            <div class="dropdown"> <a class="btn ilmbRedBtn dropdown-toggle" data-toggle="dropdown" href="#"> <i class="icon-share-alt"></i> Share <span class="caret"></span> </a>-->
+<!--                              <ul class="dropdown-menu">-->
+<!--                                <li><a href="#" title="Facebook"><i class="icon-facebook icon-large"></i> Facebook</a></li>-->
+<!--                                <li><a href="#" title="Twitter"><i class="icon-twitter icon-large"></i> Twitter</a></li>-->
+<!--                                <li><a href="#" title="Pinterest"><i class="icon-pinterest icon-large"></i> Pinterest</a></li>-->
+<!--                              </ul>-->
+<!--                            </div>-->
                           </div>
                         </div>
                         <div class="span6 entry">
                           <h4 class="caption tc"> Entry Name<br>
                             <small>Melbourne VIC</small>
-                            <label>Votes: <span>9%</span></label>
+
                           </h4>
                           <div class="shots row-fluid">
                             <div id="entryCarousel2" class="carousel slide">
@@ -97,58 +97,13 @@
                               </div>
                               <a class="carousel-control left" href="#entryCarousel2" data-slide="prev">&lsaquo;</a> <a class="carousel-control right" href="#entryCarousel2" data-slide="next">&rsaquo;</a> </div>
                           </div>
-                          <div class="buttons"> <a href="#entry2" class="btn ilmbRedBtn fancybox" title="Entry 2 Details">View Details</a> <a href="#vote" class="btn ilmbRedBtn fancybox-vote" title="Vote for Entry 2">Vote</a> <a class="btn ilmbRedBtn dropdown-toggle" data-toggle="dropdown" href="#"> <i class="icon-share-alt"></i> Share <span class="caret"></span> </a>
-                            <ul class="dropdown-menu">
-                              <li><a href="#" title="Facebook"><i class="icon-facebook icon-large"></i> Facebook</a></li>
-                              <li><a href="#" title="Twitter"><i class="icon-twitter icon-large"></i> Twitter</a></li>
-                              <li><a href="#" title="Pinterest"><i class="icon-pinterest icon-large"></i> Pinterest</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row-fluid bottom-space">
-                        <div class="span6 entry">
-                          <h4 class="caption tc"> Entry Name<br>
-                            <small>Melbourne VIC</small>
-                            <label>Votes: <span>9%</span></label>
-                          </h4>
-                          <div class="shots row-fluid">
-                            <div id="entryCarousel2" class="carousel slide">
-                              <div class="carousel-inner">
-                                <div class="active item"> <img src="../assets/images/ilmb/voting/placeholder-1.jpg" border="0" /> </div>
-                                <div class="item"> <img src="../assets/images/ilmb/voting/placeholder-2.jpg" border="0" /> </div>
-                                <div class="item"> <img src="../assets/images/ilmb/voting/placeholder-3.jpg" border="0" /> </div>
-                              </div>
-                              <a class="carousel-control left" href="#entryCarousel2" data-slide="prev">&lsaquo;</a> <a class="carousel-control right" href="#entryCarousel2" data-slide="next">&rsaquo;</a> </div>
-                          </div>
-                          <div class="buttons"> <a href="#entry2" class="btn ilmbRedBtn fancybox" title="Entry 2 Details">View Details</a> <a href="#vote" class="btn ilmbRedBtn fancybox-vote" title="Vote for Entry 2">Vote</a> <a class="btn ilmbRedBtn dropdown-toggle" data-toggle="dropdown" href="#"> <i class="icon-share-alt"></i> Share <span class="caret"></span> </a>
-                            <ul class="dropdown-menu">
-                              <li><a href="#" title="Facebook"><i class="icon-facebook icon-large"></i> Facebook</a></li>
-                              <li><a href="#" title="Twitter"><i class="icon-twitter icon-large"></i> Twitter</a></li>
-                              <li><a href="#" title="Pinterest"><i class="icon-pinterest icon-large"></i> Pinterest</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="span6 entry">
-                          <h4 class="caption tc"> Entry Name<br>
-                            <small>Melbourne VIC</small>
-                            <label>Votes: <span>9%</span></label>
-                          </h4>
-                          <div class="shots row-fluid">
-                            <div id="entryCarousel2" class="carousel slide">
-                              <div class="carousel-inner">
-                                <div class="active item"> <img src="../assets/images/ilmb/voting/placeholder-1.jpg" border="0" /> </div>
-                                <div class="item"> <img src="../assets/images/ilmb/voting/placeholder-2.jpg" border="0" /> </div>
-                                <div class="item"> <img src="../assets/images/ilmb/voting/placeholder-3.jpg" border="0" /> </div>
-                              </div>
-                              <a class="carousel-control left" href="#entryCarousel2" data-slide="prev">&lsaquo;</a> <a class="carousel-control right" href="#entryCarousel2" data-slide="next">&rsaquo;</a> </div>
-                          </div>
-                          <div class="buttons"> <a href="#entry2" class="btn ilmbRedBtn fancybox" title="Entry 2 Details">View Details</a> <a href="#vote" class="btn ilmbRedBtn fancybox-vote" title="Vote for Entry 2">Vote</a> <a class="btn ilmbRedBtn dropdown-toggle" data-toggle="dropdown" href="#"> <i class="icon-share-alt"></i> Share <span class="caret"></span> </a>
-                            <ul class="dropdown-menu">
-                              <li><a href="#" title="Facebook"><i class="icon-facebook icon-large"></i> Facebook</a></li>
-                              <li><a href="#" title="Twitter"><i class="icon-twitter icon-large"></i> Twitter</a></li>
-                              <li><a href="#" title="Pinterest"><i class="icon-pinterest icon-large"></i> Pinterest</a></li>
-                            </ul>
+                          <div class="buttons"> <a href="#entry2" class="btn ilmbRedBtn fancybox" title="Entry 2 Details">View Details</a> <a href="#vote" class="btn ilmbRedBtn fancybox-vote" title="Vote for Entry 2">Vote</a>
+<!--                              <a class="btn ilmbRedBtn dropdown-toggle" data-toggle="dropdown" href="#"> <i class="icon-share-alt"></i> Share <span class="caret"></span> </a>-->
+<!--                            <ul class="dropdown-menu">-->
+<!--                              <li><a href="#" title="Facebook"><i class="icon-facebook icon-large"></i> Facebook</a></li>-->
+<!--                              <li><a href="#" title="Twitter"><i class="icon-twitter icon-large"></i> Twitter</a></li>-->
+<!--                              <li><a href="#" title="Pinterest"><i class="icon-pinterest icon-large"></i> Pinterest</a></li>-->
+<!--                            </ul>-->
                           </div>
                         </div>
                       </div>
@@ -156,7 +111,7 @@
                         <div class="span6 entry">
                           <h4 class="caption tc"> Entry Name<br>
                             <small>Melbourne VIC</small>
-                            <label>Votes: <span>9%</span></label>
+
                           </h4>
                           <div class="shots row-fluid">
                             <div id="entryCarousel2" class="carousel slide">
@@ -167,18 +122,19 @@
                               </div>
                               <a class="carousel-control left" href="#entryCarousel2" data-slide="prev">&lsaquo;</a> <a class="carousel-control right" href="#entryCarousel2" data-slide="next">&rsaquo;</a> </div>
                           </div>
-                          <div class="buttons"> <a href="#entry2" class="btn ilmbRedBtn fancybox" title="Entry 2 Details">View Details</a> <a href="#vote" class="btn ilmbRedBtn fancybox-vote" title="Vote for Entry 2">Vote</a> <a class="btn ilmbRedBtn dropdown-toggle" data-toggle="dropdown" href="#"> <i class="icon-share-alt"></i> Share <span class="caret"></span> </a>
-                            <ul class="dropdown-menu">
-                              <li><a href="#" title="Facebook"><i class="icon-facebook icon-large"></i> Facebook</a></li>
-                              <li><a href="#" title="Twitter"><i class="icon-twitter icon-large"></i> Twitter</a></li>
-                              <li><a href="#" title="Pinterest"><i class="icon-pinterest icon-large"></i> Pinterest</a></li>
-                            </ul>
+                          <div class="buttons"> <a href="#entry2" class="btn ilmbRedBtn fancybox" title="Entry 2 Details">View Details</a> <a href="#vote" class="btn ilmbRedBtn fancybox-vote" title="Vote for Entry 2">Vote</a>
+<!--                              <a class="btn ilmbRedBtn dropdown-toggle" data-toggle="dropdown" href="#"> <i class="icon-share-alt"></i> Share <span class="caret"></span> </a>-->
+<!--                            <ul class="dropdown-menu">-->
+<!--                              <li><a href="#" title="Facebook"><i class="icon-facebook icon-large"></i> Facebook</a></li>-->
+<!--                              <li><a href="#" title="Twitter"><i class="icon-twitter icon-large"></i> Twitter</a></li>-->
+<!--                              <li><a href="#" title="Pinterest"><i class="icon-pinterest icon-large"></i> Pinterest</a></li>-->
+<!--                            </ul>-->
                           </div>
                         </div>
                         <div class="span6 entry">
                           <h4 class="caption tc"> Entry Name<br>
                             <small>Melbourne VIC</small>
-                            <label>Votes: <span>9%</span></label>
+
                           </h4>
                           <div class="shots row-fluid">
                             <div id="entryCarousel2" class="carousel slide">
@@ -189,124 +145,184 @@
                               </div>
                               <a class="carousel-control left" href="#entryCarousel2" data-slide="prev">&lsaquo;</a> <a class="carousel-control right" href="#entryCarousel2" data-slide="next">&rsaquo;</a> </div>
                           </div>
-                          <div class="buttons"> <a href="#entry2" class="btn ilmbRedBtn fancybox" title="Entry 2 Details">View Details</a> <a href="#vote" class="btn ilmbRedBtn fancybox-vote" title="Vote for Entry 2">Vote</a> <a class="btn ilmbRedBtn dropdown-toggle" data-toggle="dropdown" href="#"> <i class="icon-share-alt"></i> Share <span class="caret"></span> </a>
-                            <ul class="dropdown-menu">
-                              <li><a href="#" title="Facebook"><i class="icon-facebook icon-large"></i> Facebook</a></li>
-                              <li><a href="#" title="Twitter"><i class="icon-twitter icon-large"></i> Twitter</a></li>
-                              <li><a href="#" title="Pinterest"><i class="icon-pinterest icon-large"></i> Pinterest</a></li>
-                            </ul>
+                          <div class="buttons"> <a href="#entry2" class="btn ilmbRedBtn fancybox" title="Entry 2 Details">View Details</a> <a href="#vote" class="btn ilmbRedBtn fancybox-vote" title="Vote for Entry 2">Vote</a>
+<!--                              <a class="btn ilmbRedBtn dropdown-toggle" data-toggle="dropdown" href="#"> <i class="icon-share-alt"></i> Share <span class="caret"></span> </a>-->
+<!--                            <ul class="dropdown-menu">-->
+<!--                              <li><a href="#" title="Facebook"><i class="icon-facebook icon-large"></i> Facebook</a></li>-->
+<!--                              <li><a href="#" title="Twitter"><i class="icon-twitter icon-large"></i> Twitter</a></li>-->
+<!--                              <li><a href="#" title="Pinterest"><i class="icon-pinterest icon-large"></i> Pinterest</a></li>-->
+<!--                            </ul>-->
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row-fluid bottom-space">
+                        <div class="span6 entry">
+                          <h4 class="caption tc"> Entry Name<br>
+                            <small>Melbourne VIC</small>
+
+                          </h4>
+                          <div class="shots row-fluid">
+                            <div id="entryCarousel2" class="carousel slide">
+                              <div class="carousel-inner">
+                                <div class="active item"> <img src="../assets/images/ilmb/voting/placeholder-1.jpg" border="0" /> </div>
+                                <div class="item"> <img src="../assets/images/ilmb/voting/placeholder-2.jpg" border="0" /> </div>
+                                <div class="item"> <img src="../assets/images/ilmb/voting/placeholder-3.jpg" border="0" /> </div>
+                              </div>
+                              <a class="carousel-control left" href="#entryCarousel2" data-slide="prev">&lsaquo;</a> <a class="carousel-control right" href="#entryCarousel2" data-slide="next">&rsaquo;</a> </div>
+                          </div>
+                          <div class="buttons"> <a href="#entry2" class="btn ilmbRedBtn fancybox" title="Entry 2 Details">View Details</a> <a href="#vote" class="btn ilmbRedBtn fancybox-vote" title="Vote for Entry 2">Vote</a>
+<!--                              <a class="btn ilmbRedBtn dropdown-toggle" data-toggle="dropdown" href="#"> <i class="icon-share-alt"></i> Share <span class="caret"></span> </a>-->
+<!--                            <ul class="dropdown-menu">-->
+<!--                              <li><a href="#" title="Facebook"><i class="icon-facebook icon-large"></i> Facebook</a></li>-->
+<!--                              <li><a href="#" title="Twitter"><i class="icon-twitter icon-large"></i> Twitter</a></li>-->
+<!--                              <li><a href="#" title="Pinterest"><i class="icon-pinterest icon-large"></i> Pinterest</a></li>-->
+<!--                            </ul>-->
+                          </div>
+                        </div>
+                        <div class="span6 entry">
+                          <h4 class="caption tc"> Entry Name<br>
+                            <small>Melbourne VIC</small>
+
+                          </h4>
+                          <div class="shots row-fluid">
+                            <div id="entryCarousel2" class="carousel slide">
+                              <div class="carousel-inner">
+                                <div class="active item"> <img src="../assets/images/ilmb/voting/placeholder-1.jpg" border="0" /> </div>
+                                <div class="item"> <img src="../assets/images/ilmb/voting/placeholder-2.jpg" border="0" /> </div>
+                                <div class="item"> <img src="../assets/images/ilmb/voting/placeholder-3.jpg" border="0" /> </div>
+                              </div>
+                              <a class="carousel-control left" href="#entryCarousel2" data-slide="prev">&lsaquo;</a> <a class="carousel-control right" href="#entryCarousel2" data-slide="next">&rsaquo;</a> </div>
+                          </div>
+                          <div class="buttons"> <a href="#entry2" class="btn ilmbRedBtn fancybox" title="Entry 2 Details">View Details</a> <a href="#vote" class="btn ilmbRedBtn fancybox-vote" title="Vote for Entry 2">Vote</a>
+<!--                              <a class="btn ilmbRedBtn dropdown-toggle" data-toggle="dropdown" href="#"> <i class="icon-share-alt"></i> Share <span class="caret"></span> </a>-->
+<!--                            <ul class="dropdown-menu">-->
+<!--                              <li><a href="#" title="Facebook"><i class="icon-facebook icon-large"></i> Facebook</a></li>-->
+<!--                              <li><a href="#" title="Twitter"><i class="icon-twitter icon-large"></i> Twitter</a></li>-->
+<!--                              <li><a href="#" title="Pinterest"><i class="icon-pinterest icon-large"></i> Pinterest</a></li>-->
+<!--                            </ul>-->
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <script type="text/javascript">
 
-              $(document).ready(function()
-              {
-                $("a.fancybox").fancybox({
-                  title: null,
-                  maxWidth: 1200,
-                  minHeight: 600
-                });
-
-                $("a.fancybox-vote").fancybox({
-                  title: null,
-                  maxWidth: 1200,
-                  minHeight: 600
-                });
-
-                $("a.fancybox-vote").click(function(e)
-                {
-                  $("#entry-name").val($(this).attr("title"));
-                });
-
-
-              });
-
-              </script> 
                   
                   <!-- MODAL/LIGHTBOX CONTENT -->
                   <div id="entry1" class="entry-details" style="display: none;">
-                    <div class="">
-                      <h4 class="caption tc"> Richard Noon<br>
-                        <small>Location State</small> </h4>
-                    </div>
                     <div class="row-fluid">
                       <div class="images span6"> <img class="details-target" src="../assets/images/ilmb/voting/large/102_0.jpg" border="0" />
                         <div class="thumbs"> <a href="../assets/images/ilmb/voting/large/102_0.jpg"><img src="../assets/images/ilmb/voting/thumb/102_0.jpg" border="0" width="120" /></a> <a href="../assets/images/ilmb/voting/large/102_1.jpg"><img src="../assets/images/ilmb/voting/thumb/102_1.jpg" border="0" width="120" /></a> <a href="../assets/images/ilmb/voting/large/102_2.jpg"><img src="../assets/images/ilmb/voting/thumb/102_2.jpg" border="0" width="120" /></a> </div>
                       </div>
-                      <div class="span3">
-                        <h5> Votes Received </h5>
-                        <p> 9% </p>
+                      <div class="span6">
+                        <h4> Richard Noon<br/> <small>Location State </small></h4>
                         <h5> Style </h5>
                         <p> Contemporary </p>
                         <h5> What inspired the look? </h5>
                         <p> Richard Noon&#8217;s cool, contemporary bathroom may be small in size but it&#8217;s big on creative design. Richard opted for a palette of white, juxtaposed with the natural tones of the silver birch wallpaper and deer antler chandelier &ndash; two clever touches that give the space a really individual quality and lots of personality. Simple fixtures with clean lines help to make the bathroom feel open and inviting. A large window further enhances the effect, providing a wonderful connection to the garden. </p>
+
                       </div>
+                        <div class="span6 judges-comment">
+                            <img src="../assets/images/ilmb/judges/lisa_green.jpg" alt="Lisa Green" class="judge-thumb"/>
+                            <h6>Lisa’s comments</h6>
+                            <p>Licaborio blatem elitatem incto volor sae. Tem aut occabor iandemquam, volumendi il ipsus voluptae nobitibus essendel il mo eum etur rerum faccum.</p>
+                        </div>
+                        <div class="span6 judges-comment">
+                            <img src="../assets/images/ilmb/judges/clare_cousins.jpg" alt="Clare Cousins" class="judge-thumb"/>
+                            <h6>Clare’s comments</h6>
+                            <p>Licaborio blatem elitatem incto volor sae. Tem aut occabor iandemquam, volumendi il ipsus voluptae nobitibus essendel il mo eum etur rerum faccum.</p>
+                        </div>
+                        <div class="span6 judges-comment">
+                            <img src="../assets/images/ilmb/judges/brent_mickan.jpg" alt="Brett Mikan" class="judge-thumb"/>
+                            <h6>Brett’s comments</h6>
+                            <p>Licaborio blatem elitatem incto volor sae. Tem aut occabor iandemquam, volumendi il ipsus voluptae nobitibus essendel il mo eum etur rerum faccum.</p>
+                        </div>
                       <div class="span3">
-                        <div class="buttons"> <a href="#vote" class="btn ilmbRedBtn fancybox-vote" title="Vote for Entry 1">Vote for this bathroom</a> <a class="btn ilmbRedBtn dropdown-toggle" data-toggle="dropdown" href="#"> <i class="icon-share-alt"></i> Share <span class="caret"></span> </a>
-                          <ul class="dropdown-menu">
-                            <li><a href="#" title="Facebook"><i class="icon-facebook icon-large"></i> Facebook</a></li>
-                            <li><a href="#" title="Twitter"><i class="icon-twitter icon-large"></i> Twitter</a></li>
-                            <li><a href="#" title="Pinterest"><i class="icon-pinterest icon-large"></i> Pinterest</a></li>
-                          </ul>
+                        <div class="buttons"> <a href="#vote" class="btn ilmbRedBtn fancybox-vote" title="Vote for Entry 1">Vote for this bathroom</a>
+<!--                            <a class="btn ilmbRedBtn dropdown-toggle" data-toggle="dropdown" href="#"> <i class="icon-share-alt"></i> Share <span class="caret"></span> </a>-->
+<!--                          <ul class="dropdown-menu">-->
+<!--                            <li><a href="#" title="Facebook"><i class="icon-facebook icon-large"></i> Facebook</a></li>-->
+<!--                            <li><a href="#" title="Twitter"><i class="icon-twitter icon-large"></i> Twitter</a></li>-->
+<!--                            <li><a href="#" title="Pinterest"><i class="icon-pinterest icon-large"></i> Pinterest</a></li>-->
+<!--                          </ul>-->
                         </div>
                       </div>
                     </div>
                   </div>
                   <div id="entry2" class="entry-details" style="display: none;">
-                    <div class="">
-                      <h4 class="caption tc"> Entry Name<br>
-                        <small>Melbourne VIC</small> </h4>
-                    </div>
                     <div class="row-fluid">
                       <div class="images span6"> <img class="details-target" src="../assets/images/ilmb/bathroom-placeholder.jpg" border="0" />
                         <div class="thumbs"> <a href="../assets/images/ilmb/voting/placeholder-1.jpg"><img src="../assets/images/ilmb/voting/placeholder-1.jpg" border="0" width="120" /></a> <a href="../assets/images/ilmb/voting/placeholder-2.jpg"><img src="../assets/images/ilmb/voting/placeholder-2.jpg" border="0" width="120" /></a> <a href="../assets/images/ilmb/voting/placeholder-3.jpg"><img src="../assets/images/ilmb/voting/placeholder-3.jpg" border="0" width="120" /></a> </div>
                       </div>
-                      <div class="span3">
-                        <h5> Votes Received </h5>
-                        <p> 9% </p>
+                      <div class="span6">
+                        <h4> Entry Name <br/><small>Melbourne VIC</small></h4>
                         <h5> Style </h5>
                         <p> Label Goes Here </p>
                         <h5> What inspired the look? </h5>
                         <p> Richard Noon's cool, contemporary bathroom may be small in size but it more than makes up for it in creative design. Richard opted for a pallette of white, juxtiposed with the natural tones of the silver birch wallpaper and deer antler chandelier - both of which give the space a really individual quality. Simple fixtures with clean lines help to make the bathroom feel open and inviting. A large window further enhances the effect, providing a wonderful connection to the garden. </p>
                       </div>
+                        <div class="span6 judges-comment">
+                            <img src="../assets/images/ilmb/judges/lisa_green.jpg" alt="Lisa Green" class="judge-thumb"/>
+                            <h6>Lisa’s comments</h6>
+                            <p>Licaborio blatem elitatem incto volor sae. Tem aut occabor iandemquam, volumendi il ipsus voluptae nobitibus essendel il mo eum etur rerum faccum.</p>
+                        </div>
+                        <div class="span6 judges-comment">
+                            <img src="../assets/images/ilmb/judges/clare_cousins.jpg" alt="Clare Cousins" class="judge-thumb"/>
+                            <h6>Clare’s comments</h6>
+                            <p>Licaborio blatem elitatem incto volor sae. Tem aut occabor iandemquam, volumendi il ipsus voluptae nobitibus essendel il mo eum etur rerum faccum.</p>
+                        </div>
+                        <div class="span6 judges-comment">
+                            <img src="../assets/images/ilmb/judges/brent_mickan.jpg" alt="Brett Mikan" class="judge-thumb"/>
+                            <h6>Brett’s comments</h6>
+                            <p>Licaborio blatem elitatem incto volor sae. Tem aut occabor iandemquam, volumendi il ipsus voluptae nobitibus essendel il mo eum etur rerum faccum.</p>
+                        </div>
                       <div class="span3">
-                        <div class="buttons"> <a href="#vote" class="btn ilmbRedBtn fancybox-vote" title="Vote for Entry 2">Vote for this bathroom</a> <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> <i class="icon-share-alt"></i> Share <span class="caret"></span> </a>
-                          <ul class="dropdown-menu">
-                            <li><a href="#" title="Facebook"><i class="icon-facebook icon-large"></i> Facebook</a></li>
-                            <li><a href="#" title="Twitter"><i class="icon-twitter icon-large"></i> Twitter</a></li>
-                            <li><a href="#" title="Pinterest"><i class="icon-pinterest icon-large"></i> Pinterest</a></li>
-                          </ul>
+                        <div class="buttons"> <a href="#vote" class="btn ilmbRedBtn fancybox-vote" title="Vote for Entry 2">Vote for this bathroom</a>
+<!--                            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> <i class="icon-share-alt"></i> Share <span class="caret"></span> </a>-->
+<!--                          <ul class="dropdown-menu">-->
+<!--                            <li><a href="#" title="Facebook"><i class="icon-facebook icon-large"></i> Facebook</a></li>-->
+<!--                            <li><a href="#" title="Twitter"><i class="icon-twitter icon-large"></i> Twitter</a></li>-->
+<!--                            <li><a href="#" title="Pinterest"><i class="icon-pinterest icon-large"></i> Pinterest</a></li>-->
+<!--                          </ul>-->
                         </div>
                       </div>
                     </div>
                   </div>
                   <div id="entry3" class="entry-details" style="display: none;">
-                    <div class="">
-                      <h4 class="caption tc"> Entry Name<br>
-                        <small>Melbourne VIC</small> </h4>
-                    </div>
+
                     <div class="row-fluid">
                       <div class="images span6"> <img class="details-target" src="../assets/images/ilmb/bathroom-placeholder.jpg" border="0" />
                         <div class="thumbs"> <a href="../assets/images/ilmb/voting/placeholder-1.jpg"><img src="../assets/images/ilmb/voting/placeholder-1.jpg" border="0" width="120" /></a> <a href="../assets/images/ilmb/voting/placeholder-2.jpg"><img src="../assets/images/ilmb/voting/placeholder-2.jpg" border="0" width="120" /></a> <a href="../assets/images/ilmb/voting/placeholder-3.jpg"><img src="../assets/images/ilmb/voting/placeholder-3.jpg" border="0" width="120" /></a> </div>
                       </div>
-                      <div class="span3">
-                        <h5> Votes Received </h5>
-                        <p> 9% </p>
+                      <div class="span6">
+                          <h4> Entry Name <br/><small>Melbourne VIC</small></h4>
                         <h5> Style </h5>
                         <p> Label Goes Here </p>
                         <h5> What inspired the look? </h5>
                         <p> Richard Noon's cool, contemporary bathroom may be small in size but it more than makes up for it in creative design. Richard opted for a pallette of white, juxtiposed with the natural tones of the silver birch wallpaper and deer antler chandelier - both of which give the space a really individual quality. Simple fixtures with clean lines help to make the bathroom feel open and inviting. A large window further enhances the effect, providing a wonderful connection to the garden. </p>
                       </div>
+                        <div class="span6 judges-comment">
+                            <img src="../assets/images/ilmb/judges/lisa_green.jpg" alt="Lisa Green" class="judge-thumb"/>
+                            <h6>Lisa’s comments</h6>
+                            <p>Licaborio blatem elitatem incto volor sae. Tem aut occabor iandemquam, volumendi il ipsus voluptae nobitibus essendel il mo eum etur rerum faccum.</p>
+                        </div>
+                        <div class="span6 judges-comment">
+                            <img src="../assets/images/ilmb/judges/clare_cousins.jpg" alt="Clare Cousins" class="judge-thumb"/>
+                            <h6>Clare’s comments</h6>
+                            <p>Licaborio blatem elitatem incto volor sae. Tem aut occabor iandemquam, volumendi il ipsus voluptae nobitibus essendel il mo eum etur rerum faccum.</p>
+                        </div>
+                        <div class="span6 judges-comment">
+                            <img src="../assets/images/ilmb/judges/.jpgbrent_mickan" alt="Brett Mikan" class="judge-thumb"/>
+                            <h6>Brett’s comments</h6>
+                            <p>Licaborio blatem elitatem incto volor sae. Tem aut occabor iandemquam, volumendi il ipsus voluptae nobitibus essendel il mo eum etur rerum faccum.</p>
+                        </div>
                       <div class="span3">
-                        <div class="buttons"> <a href="#vote" class="btn ilmbRedBtn fancybox-vote" title="Vote for Entry 3">Vote for this bathroom</a> <a class="btn ilmbRedBtn dropdown-toggle" data-toggle="dropdown" href="#"> <i class="icon-share-alt"></i> Share <span class="caret"></span> </a>
-                          <ul class="dropdown-menu">
-                            <li><a href="#" title="Facebook"><i class="icon-facebook icon-large"></i> Facebook</a></li>
-                            <li><a href="#" title="Twitter"><i class="icon-twitter icon-large"></i> Twitter</a></li>
-                            <li><a href="#" title="Pinterest"><i class="icon-pinterest icon-large"></i> Pinterest</a></li>
-                          </ul>
+                        <div class="buttons"> <a href="#vote" class="btn ilmbRedBtn fancybox-vote" title="Vote for Entry 3">Vote for this bathroom</a>
+<!--                            <a class="btn ilmbRedBtn dropdown-toggle" data-toggle="dropdown" href="#"> <i class="icon-share-alt"></i> Share <span class="caret"></span> </a>-->
+<!--                          <ul class="dropdown-menu">-->
+<!--                            <li><a href="#" title="Facebook"><i class="icon-facebook icon-large"></i> Facebook</a></li>-->
+<!--                            <li><a href="#" title="Twitter"><i class="icon-twitter icon-large"></i> Twitter</a></li>-->
+<!--                            <li><a href="#" title="Pinterest"><i class="icon-pinterest icon-large"></i> Pinterest</a></li>-->
+<!--                          </ul>-->
                         </div>
                       </div>
                     </div>
@@ -315,7 +331,7 @@
                     <input type="hidden" name="entry-name" id="entry-name">
                     <div class="">
                       <h4> Submit Your Vote </h4>
-                      <p> Simply fill in your details below and tell us in 25 words or less why you love this bathroom, for your chance to win one of two $5,000 Reece Vouchers. </p>
+                      <p>Simply fill in your details below for your chance to win one of two $5,000 Reece vouchers.</p>
                       <hr>
                       <div class="row-fluid">
                         <div class="span6">
@@ -334,15 +350,9 @@
                         </div>
                       </div>
                       <div class="row-fluid">
-                        <div class="span12">
-                          <label>Tell us why this Bathroom is your favourite?</label>
-                          <textarea name="why" class="wordCount span12" rows="5"></textarea>
-                        </div>
-                      </div>
-                      <div class="row-fluid">
                         <div class="actions">
                           <hr>
-                          <a href="#vote-thanks" class="fancybox btn ilmbRedBtnbtn-danger">Submit your vote</a>
+                          <a href="#vote-thanks" class="btn ilmbRedBtn fancybox-vote">Submit your vote</a>
                           <hr>
                           <a href="#vote-terms" class="fancybox">Terms &amp; Conditions of Entry</a>. </div>
                       </div>
@@ -350,16 +360,11 @@
                   </div>
                   <div id="vote-thanks" style="display: none;">
                     <div class="">
-                      <h4> Thanks for your vote </h4>
+                      <h4 class="text-center"> Thanks for your vote </h4>
                       <div class="row-fluid">
                         <div class="span12">
-                          <p> We'll send you confirmation via email now, and a reminder when the winners are annunced on June 3rd. </p>
-                        </div>
-                      </div>
-                      <div class="row-fluid">
-                        <div class="span12">
-                          <h5> Share your favourite bathroom: </h5>
-                          <a class="btn" href="#" title="Facebook"><i class="icon-facebook icon-large"></i> Facebook</a> <a class="btn" href="#" title="Twitter"><i class="icon-twitter icon-large"></i> Twitter</a> <a class="btn" href="#" title="Pinterest"><i class="icon-pinterest icon-large"></i> Pinterest</a> </div>
+                          <p><span class="red">Share for extra chances to win </span><a class="btn" href="#" title="Facebook"><i class="icon-facebook icon-large"></i> Facebook</a> <a class="btn" href="#" title="Twitter"><i class="icon-twitter icon-large"></i> Twitter</a> <a class="btn" href="#" title="Pinterest"><i class="icon-pinterest icon-large"></i> Pinterest</a> </p>
+                          </div>
                       </div>
                     </div>
                   </div>
@@ -443,7 +448,31 @@
           "/assets/js/fancybox/jquery.fancybox.js"
         ); 
         include_once($serverBase."/includes/foot/scripts.php");
-    ?>      
+    ?>
+        <script type="text/javascript">
 
+            $(document).ready(function()
+            {
+                $("a.fancybox").fancybox({
+                    title: null,
+                    maxWidth: 1200,
+                    minHeight: 600
+                });
+
+                $("a.fancybox-vote").fancybox({
+                    title: null,
+                    maxWidth: 1200,
+                    minHeight: 600
+                });
+
+                $("a.fancybox-vote").click(function(e)
+                {
+                    $("#entry-name").val($(this).attr("title"));
+                });
+
+
+            });
+
+        </script>
     </body>
-</html>
+</html>                           

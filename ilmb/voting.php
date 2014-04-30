@@ -336,17 +336,17 @@
                       <div class="row-fluid">
                         <div class="span6">
                           <label>Name:</label>
-                          <input type="text" name="name" class="span12">
+                          <input type="text" name="name" class="span12 ilmbFormInput">
                           <label>Address:</label>
-                          <input type="text" name="address" class="span12">
+                          <input type="text" name="address" class="span12 ilmbFormInput">
                           <label>Email:</label>
-                          <input type="text" name="email" class="span12">
+                          <input type="text" name="email" class="span12 ilmbFormInput">
                         </div>
                         <div class="span6">
                           <label>Mobile Contact Number:</label>
-                          <input type="text" name="mobile" class="span12">
+                          <input type="text" name="mobile" class="span12 ilmbFormInput">
                           <label>Daytime Contact Number:</label>
-                          <input type="text" name="contact" class="span12">
+                          <input type="text" name="contact" class="span12 ilmbFormInput">
                         </div>
                       </div>
                       <div class="row-fluid">

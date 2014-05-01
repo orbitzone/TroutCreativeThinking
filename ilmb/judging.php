@@ -55,15 +55,17 @@ include_once($serverBase . "/includes/head/head-generic.php");
                     </div>
                     <div class="span8">
                         <h3 class="ilmbPageHeader"><img src="/assets/images/ilmb/ilmb-logo.png"
-                                                        alt="I love my bathroom"/></h3>
-
+                                                        alt="I love my bathroom"/>
+                        <span class="pageTitle">Judging</span>
+                        </h3>
+                        <hr>
                         <div class="row-fluid">
                             <div class="inner-content">
                                 <div class="span12">
-                                    <h2>Judging<br/>
+                                    <h4>Judging<br/>
                                         <small>Submit your bathroom
                                         </small>
-                                    </h2>
+                                    </h4>
                                     <p>The inspiring bathroom winner will be chosen by a judging panel compromising of
                                         representatives from Reece, Australia’s leading supplier of bathroom
                                         products.</p>

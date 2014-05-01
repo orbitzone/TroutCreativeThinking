@@ -53,16 +53,18 @@
                   </div>
                 </div>
                 <div class="span8">
-                  <h3 class="ilmbPageHeader"> <img src="/assets/images/ilmb/ilmb-logo.png" alt="I love my bathroom" /> </h3>
+                  <h3 class="ilmbPageHeader"> <img src="/assets/images/ilmb/ilmb-logo.png" alt="I love my bathroom" />
+                  <span class="pageTitle">2014 Finalists</span></h3>
+                  <hr/>
                   <div class="row-fluid">
                     <div class="inner-content">
-                      <h2>2014 Finalists</h2>
+                      <h4>2014 Finalists</h4>
                       <p>Simply vote for your favourite bathroom  and you’ll be entered in the draw to win one of two $5000 Reece gift vouchers. And if you get a friend to enter, you’ll receive a second entry – doubling you chances of winning.</p>
+                        <p>&nbsp;</p>
                       <div class="row-fluid bottom-space">
                         <div class="span6 entry">
-                          <h4 class="caption tc"> Richard Noon<br>
-                            <small>Location</small>
-
+                          <h4 class="ilmbThumbHd"> <strong class="ilmbEntryName"> Richard Noon</strong>
+                            <small class="ilmbEntryPlace" >Location</small>
                           </h4>
                           <div class="shots row-fluid">
                             <div id="entryCarousel1" class="carousel slide">
@@ -84,9 +86,8 @@
                           </div>
                         </div>
                         <div class="span6 entry">
-                          <h4 class="caption tc"> Entry Name<br>
-                            <small>Melbourne VIC</small>
-
+                            <h4 class="ilmbThumbHd"> <strong class="ilmbEntryName"> Entry Name</strong>
+                                <small class="ilmbEntryPlace" >Melbourne VIC</small>
                           </h4>
                           <div class="shots row-fluid">
                             <div id="entryCarousel2" class="carousel slide">
@@ -109,10 +110,9 @@
                       </div>
                       <div class="row-fluid bottom-space">
                         <div class="span6 entry">
-                          <h4 class="caption tc"> Entry Name<br>
-                            <small>Melbourne VIC</small>
-
-                          </h4>
+                            <h4 class="ilmbThumbHd"> <strong class="ilmbEntryName"> Entry Name</strong>
+                                <small class="ilmbEntryPlace" >Melbourne VIC</small>
+                            </h4>
                           <div class="shots row-fluid">
                             <div id="entryCarousel2" class="carousel slide">
                               <div class="carousel-inner">
@@ -132,10 +132,9 @@
                           </div>
                         </div>
                         <div class="span6 entry">
-                          <h4 class="caption tc"> Entry Name<br>
-                            <small>Melbourne VIC</small>
-
-                          </h4>
+                            <h4 class="ilmbThumbHd"> <strong class="ilmbEntryName"> Entry Name</strong>
+                                <small class="ilmbEntryPlace" >Melbourne VIC</small>
+                            </h4>
                           <div class="shots row-fluid">
                             <div id="entryCarousel2" class="carousel slide">
                               <div class="carousel-inner">
@@ -157,10 +156,9 @@
                       </div>
                       <div class="row-fluid bottom-space">
                         <div class="span6 entry">
-                          <h4 class="caption tc"> Entry Name<br>
-                            <small>Melbourne VIC</small>
-
-                          </h4>
+                            <h4 class="ilmbThumbHd"> <strong class="ilmbEntryName"> Entry Name</strong>
+                                <small class="ilmbEntryPlace" >Melbourne VIC</small>
+                            </h4>
                           <div class="shots row-fluid">
                             <div id="entryCarousel2" class="carousel slide">
                               <div class="carousel-inner">
@@ -180,10 +178,9 @@
                           </div>
                         </div>
                         <div class="span6 entry">
-                          <h4 class="caption tc"> Entry Name<br>
-                            <small>Melbourne VIC</small>
-
-                          </h4>
+                            <h4 class="ilmbThumbHd"> <strong class="ilmbEntryName"> Entry Name</strong>
+                                <small class="ilmbEntryPlace" >Melbourne VIC</small>
+                            </h4>
                           <div class="shots row-fluid">
                             <div id="entryCarousel2" class="carousel slide">
                               <div class="carousel-inner">
@@ -222,19 +219,25 @@
 
                       </div>
                         <div class="span6 judges-comment">
+                            <div class="judge">
                             <img src="../assets/images/ilmb/judges/lisa_green.jpg" alt="Lisa Green" class="judge-thumb"/>
                             <h6>Lisa’s comments</h6>
                             <p>Licaborio blatem elitatem incto volor sae. Tem aut occabor iandemquam, volumendi il ipsus voluptae nobitibus essendel il mo eum etur rerum faccum.</p>
+                                </div>
                         </div>
                         <div class="span6 judges-comment">
+                            <div class="judge">
                             <img src="../assets/images/ilmb/judges/clare_cousins.jpg" alt="Clare Cousins" class="judge-thumb"/>
                             <h6>Clare’s comments</h6>
                             <p>Licaborio blatem elitatem incto volor sae. Tem aut occabor iandemquam, volumendi il ipsus voluptae nobitibus essendel il mo eum etur rerum faccum.</p>
+                                </div>
                         </div>
                         <div class="span6 judges-comment">
+                            <div class="judge">
                             <img src="../assets/images/ilmb/judges/brent_mickan.jpg" alt="Brett Mikan" class="judge-thumb"/>
                             <h6>Brett’s comments</h6>
                             <p>Licaborio blatem elitatem incto volor sae. Tem aut occabor iandemquam, volumendi il ipsus voluptae nobitibus essendel il mo eum etur rerum faccum.</p>
+                                </div>
                         </div>
                       <div class="span3">
                         <div class="buttons"> <a href="#vote" class="btn ilmbRedBtn fancybox-vote" title="Vote for Entry 1">Vote for this bathroom</a>
@@ -261,19 +264,26 @@
                         <p> Richard Noon's cool, contemporary bathroom may be small in size but it more than makes up for it in creative design. Richard opted for a pallette of white, juxtiposed with the natural tones of the silver birch wallpaper and deer antler chandelier - both of which give the space a really individual quality. Simple fixtures with clean lines help to make the bathroom feel open and inviting. A large window further enhances the effect, providing a wonderful connection to the garden. </p>
                       </div>
                         <div class="span6 judges-comment">
+                            <div class="judge">
                             <img src="../assets/images/ilmb/judges/lisa_green.jpg" alt="Lisa Green" class="judge-thumb"/>
                             <h6>Lisa’s comments</h6>
                             <p>Licaborio blatem elitatem incto volor sae. Tem aut occabor iandemquam, volumendi il ipsus voluptae nobitibus essendel il mo eum etur rerum faccum.</p>
+                                </div>
                         </div>
                         <div class="span6 judges-comment">
+                            <div class="judge">
                             <img src="../assets/images/ilmb/judges/clare_cousins.jpg" alt="Clare Cousins" class="judge-thumb"/>
+
                             <h6>Clare’s comments</h6>
                             <p>Licaborio blatem elitatem incto volor sae. Tem aut occabor iandemquam, volumendi il ipsus voluptae nobitibus essendel il mo eum etur rerum faccum.</p>
+                                </div>
                         </div>
                         <div class="span6 judges-comment">
+                            <div class="judge">
                             <img src="../assets/images/ilmb/judges/brent_mickan.jpg" alt="Brett Mikan" class="judge-thumb"/>
                             <h6>Brett’s comments</h6>
                             <p>Licaborio blatem elitatem incto volor sae. Tem aut occabor iandemquam, volumendi il ipsus voluptae nobitibus essendel il mo eum etur rerum faccum.</p>
+                            </div>
                         </div>
                       <div class="span3">
                         <div class="buttons"> <a href="#vote" class="btn ilmbRedBtn fancybox-vote" title="Vote for Entry 2">Vote for this bathroom</a>
@@ -301,19 +311,25 @@
                         <p> Richard Noon's cool, contemporary bathroom may be small in size but it more than makes up for it in creative design. Richard opted for a pallette of white, juxtiposed with the natural tones of the silver birch wallpaper and deer antler chandelier - both of which give the space a really individual quality. Simple fixtures with clean lines help to make the bathroom feel open and inviting. A large window further enhances the effect, providing a wonderful connection to the garden. </p>
                       </div>
                         <div class="span6 judges-comment">
+                            <div class="judge">
                             <img src="../assets/images/ilmb/judges/lisa_green.jpg" alt="Lisa Green" class="judge-thumb"/>
                             <h6>Lisa’s comments</h6>
                             <p>Licaborio blatem elitatem incto volor sae. Tem aut occabor iandemquam, volumendi il ipsus voluptae nobitibus essendel il mo eum etur rerum faccum.</p>
+                                </div>
                         </div>
                         <div class="span6 judges-comment">
+                            <div class="judge">
                             <img src="../assets/images/ilmb/judges/clare_cousins.jpg" alt="Clare Cousins" class="judge-thumb"/>
                             <h6>Clare’s comments</h6>
                             <p>Licaborio blatem elitatem incto volor sae. Tem aut occabor iandemquam, volumendi il ipsus voluptae nobitibus essendel il mo eum etur rerum faccum.</p>
+                                </div>
                         </div>
                         <div class="span6 judges-comment">
+                            <div class="judge">
                             <img src="../assets/images/ilmb/judges/.jpgbrent_mickan" alt="Brett Mikan" class="judge-thumb"/>
                             <h6>Brett’s comments</h6>
                             <p>Licaborio blatem elitatem incto volor sae. Tem aut occabor iandemquam, volumendi il ipsus voluptae nobitibus essendel il mo eum etur rerum faccum.</p>
+                                </div>
                         </div>
                       <div class="span3">
                         <div class="buttons"> <a href="#vote" class="btn ilmbRedBtn fancybox-vote" title="Vote for Entry 3">Vote for this bathroom</a>
@@ -352,7 +368,7 @@
                       <div class="row-fluid">
                         <div class="actions">
                           <hr>
-                          <a href="#vote-thanks" class="btn ilmbRedBtn fancybox-vote">Submit your vote</a>
+                          <a href="#vote-thanks" class="btn ilmbRedBtn fancybox-vote-thanks">Submit your vote</a>
                           <hr>
                           <a href="#vote-terms" class="fancybox">Terms &amp; Conditions of Entry</a>. </div>
                       </div>
@@ -370,6 +386,21 @@
                   </div>
                   <div id="vote-terms" style="display: none;">
                     <div class="row-fluid">
+                        <h3>How to Enter - Bathroom Designs</h3>
+                        <ol>
+                            <li>To be eligible to enter, individuals must send in original photo/s (a minimum of two, no more than 5) of their bathroom. <br />
+                                Enter via;
+                                <ol type="a">
+                                    <li>Online, visit <a href="http://www.reece.com.au/enter" title="Reece Website">www.reece.com.au/enter</a>, follow the prompts to the competition entry page, input the requested details (including a 25 words or less description of what you love about your bathroom) also include your name, address, daytime telephone number contact details. To complete your entry upload your photos of your bathroom. Submit your completed entry as instructed; or </li>
+                                    <li>By mail, send your photos along with your name, address and phone number and a description of where your inspiration came from when designing the bathroom (in 25 words or less) together to &lsquo;I Love My Bathroom Competition', Private Bag 109, Burwood VIC 3125 by last mail received on <strong>XX/XX/2013</strong>.</li>
+                                </ol>
+                            </li>
+                            <li>Judging for the beautiful bathroom submission component of the promotion to be done by a panel of judges appointed by the Promoter. Judging will commence <strong>XX/XX/2013</strong>. The best entries (up to 20) as determined by the judges will be deemed Finalists. The Finalists will be uploaded on <a href="http://www.reece.com.au/enter" title="Reece Website">www.reece.com.au/enter</a> where readers will be called to vote for their favourite bathroom during the Voting Period (see below details on voting).</li>
+                            <li>The Finalist who submits the most beautiful bathroom and most creative 25 words, as deemed by the judges, will be the Major prize winner and will receive $5,000. Prize will be awarded in the form of a cheque made in favour of the winner.</li>
+                            <li>The Promoter will select the best entry in the 'Beautiful Bathroom Submissions' element of the promotion based on the following criteria: (a) overall look and layout; (b) inspired and innovative design; (c) product selection; (d) use of space; and (e) clever ideas shown in the bathroom design. </li>
+                            <li>Individuals who submit a photo/s of their inspirational bathroom must own the house in which the bathroom is situated. In the case of an individual that takes a photo of a bathroom in their parent's or guardian's house, the parent or guardian must own the house in which the bathroom is situated. </li>
+                            <li>Multiple entries into the 'Beautiful Bathroom Submissions' element of the promotion are permitted, subject to the following: (a) each entry must be substantially unique; (b) each entry must show a different bathroom; and (c) each entry must be submitted separately and in accordance with entry requirements.</li>
+                        </ol>
                         <h3>How to Enter - Voters</h3>
                         <ol>
                             <li>The Finalists will be featured on <a href="http://www.reece.com.au/enter" title="Reece Website">www.reece.com.au/enter</a> during the voting period (between <strong>1/05/2013</strong> 9am and 5pm EST <strong>26/05/2013</strong>).</li>
@@ -463,6 +494,12 @@
                     title: null,
                     maxWidth: 1200,
                     minHeight: 600
+                });
+
+                $("a.fancybox-vote-thanks").fancybox({
+                    title: null,
+                    maxWidth: 1200,
+                    minHeight: 100
                 });
 
                 $("a.fancybox-vote").click(function(e)

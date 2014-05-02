@@ -62,10 +62,10 @@ include_once($serverBase . "/includes/head/head-generic.php");
                         <div class="row-fluid">
                             <div class="inner-content">
                                 <div class="span12">
-                                    <h4>Judging<br/>
+                                    <h3>Judging<br/>
                                         <small>Submit your bathroom
                                         </small>
-                                    </h4>
+                                    </h3>
                                     <p>The inspiring bathroom winner will be chosen by a judging panel compromising of
                                         representatives from Reece, Australia’s leading supplier of bathroom
                                         products.</p>

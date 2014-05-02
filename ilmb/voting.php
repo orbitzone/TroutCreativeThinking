@@ -58,7 +58,7 @@
                   <hr/>
                   <div class="row-fluid">
                     <div class="inner-content">
-                      <h4>2014 Finalists</h4>
+                      <h3>2014 Finalists</h3>
                       <p>Simply vote for your favourite bathroom  and you’ll be entered in the draw to win one of two $5000 Reece gift vouchers. And if you get a friend to enter, you’ll receive a second entry – doubling you chances of winning.</p>
                         <p>&nbsp;</p>
                       <div class="row-fluid bottom-space">
@@ -224,15 +224,13 @@
                             <h6>Lisa’s comments</h6>
                             <p>Licaborio blatem elitatem incto volor sae. Tem aut occabor iandemquam, volumendi il ipsus voluptae nobitibus essendel il mo eum etur rerum faccum.</p>
                                 </div>
-                        </div>
-                        <div class="span6 judges-comment">
+
                             <div class="judge">
                             <img src="../assets/images/ilmb/judges/clare_cousins.jpg" alt="Clare Cousins" class="judge-thumb"/>
                             <h6>Clare’s comments</h6>
                             <p>Licaborio blatem elitatem incto volor sae. Tem aut occabor iandemquam, volumendi il ipsus voluptae nobitibus essendel il mo eum etur rerum faccum.</p>
                                 </div>
-                        </div>
-                        <div class="span6 judges-comment">
+
                             <div class="judge">
                             <img src="../assets/images/ilmb/judges/brent_mickan.jpg" alt="Brett Mikan" class="judge-thumb"/>
                             <h6>Brett’s comments</h6>
@@ -269,16 +267,12 @@
                             <h6>Lisa’s comments</h6>
                             <p>Licaborio blatem elitatem incto volor sae. Tem aut occabor iandemquam, volumendi il ipsus voluptae nobitibus essendel il mo eum etur rerum faccum.</p>
                                 </div>
-                        </div>
-                        <div class="span6 judges-comment">
                             <div class="judge">
                             <img src="../assets/images/ilmb/judges/clare_cousins.jpg" alt="Clare Cousins" class="judge-thumb"/>
 
                             <h6>Clare’s comments</h6>
                             <p>Licaborio blatem elitatem incto volor sae. Tem aut occabor iandemquam, volumendi il ipsus voluptae nobitibus essendel il mo eum etur rerum faccum.</p>
                                 </div>
-                        </div>
-                        <div class="span6 judges-comment">
                             <div class="judge">
                             <img src="../assets/images/ilmb/judges/brent_mickan.jpg" alt="Brett Mikan" class="judge-thumb"/>
                             <h6>Brett’s comments</h6>
@@ -310,27 +304,25 @@
                         <h5> What inspired the look? </h5>
                         <p> Richard Noon's cool, contemporary bathroom may be small in size but it more than makes up for it in creative design. Richard opted for a pallette of white, juxtiposed with the natural tones of the silver birch wallpaper and deer antler chandelier - both of which give the space a really individual quality. Simple fixtures with clean lines help to make the bathroom feel open and inviting. A large window further enhances the effect, providing a wonderful connection to the garden. </p>
                       </div>
+                      <div class="all-comments">
                         <div class="span6 judges-comment">
                             <div class="judge">
                             <img src="../assets/images/ilmb/judges/lisa_green.jpg" alt="Lisa Green" class="judge-thumb"/>
                             <h6>Lisa’s comments</h6>
                             <p>Licaborio blatem elitatem incto volor sae. Tem aut occabor iandemquam, volumendi il ipsus voluptae nobitibus essendel il mo eum etur rerum faccum.</p>
                                 </div>
-                        </div>
-                        <div class="span6 judges-comment">
                             <div class="judge">
                             <img src="../assets/images/ilmb/judges/clare_cousins.jpg" alt="Clare Cousins" class="judge-thumb"/>
                             <h6>Clare’s comments</h6>
                             <p>Licaborio blatem elitatem incto volor sae. Tem aut occabor iandemquam, volumendi il ipsus voluptae nobitibus essendel il mo eum etur rerum faccum.</p>
                                 </div>
-                        </div>
-                        <div class="span6 judges-comment">
                             <div class="judge">
                             <img src="../assets/images/ilmb/judges/.jpgbrent_mickan" alt="Brett Mikan" class="judge-thumb"/>
                             <h6>Brett’s comments</h6>
                             <p>Licaborio blatem elitatem incto volor sae. Tem aut occabor iandemquam, volumendi il ipsus voluptae nobitibus essendel il mo eum etur rerum faccum.</p>
                                 </div>
                         </div>
+                      </div>
                       <div class="span3">
                         <div class="buttons"> <a href="#vote" class="btn ilmbRedBtn fancybox-vote" title="Vote for Entry 3">Vote for this bathroom</a>
 <!--                            <a class="btn ilmbRedBtn dropdown-toggle" data-toggle="dropdown" href="#"> <i class="icon-share-alt"></i> Share <span class="caret"></span> </a>-->
@@ -493,7 +485,7 @@
                 $("a.fancybox-vote").fancybox({
                     title: null,
                     maxWidth: 1200,
-                    minHeight: 600
+                    minHeight: 500
                 });
 
                 $("a.fancybox-vote-thanks").fancybox({

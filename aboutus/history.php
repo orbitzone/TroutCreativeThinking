@@ -73,30 +73,30 @@ include_once($serverBase."/includes/head/head-generic.php");
                 <h2 class="year">1997</h2>
                 <p class="yearDescription">Reece enters the South Australian, Western Australian and Northern Territory markets following its acquisitions of Plumbing World and Bridglands.</p>
                 <div class="water"
-                data-1200="background-position: -1400px 100%"
-                data-1300="background-position: -1050px 100%"
-                data-1400="background-position: -800px 100%"
-                data-1500="background-position: -500px 100%"
-                data-1600="background-position: -300px 100%"
+                data-900="background-position: -1400px 100%"
+                data-1150="background-position: -1100px 100%"
+                data-1250="background-position: -800px 100%"
+                data-1350="background-position: -500px 100%"
+                data-1450="background-position: -300px 100%"
                 >
                     <div class="pipes"
-                data-1299="background-position: 0 0"
-                data-1300="background-position: 0 33.334%"
-                data-1399="background-position: 0 33.334%"
-                data-1400="background-position: 0 66.667%"
-                data-1499="background-position: 0 66.667%"
-                data-1500="background-position: 0 100%"
+                data-1149="background-position: 0 0"
+                data-1150="background-position: 0 33.334%"
+                data-1249="background-position: 0 33.334%"
+                data-1250="background-position: 0 66.667%"
+                data-1349="background-position: 0 66.667%"
+                data-1350="background-position: 0 100%"
                     >
                     </div>
                 </div>
                 <div class="mapwrap">
                 <div class="map"
-                data-1299="background-position: 0 0"
-                data-1300="background-position: 0 33.334%"
-                data-1399="background-position: 0 33.334%"
-                data-1400="background-position: 0 66.667%"
-                data-1499="background-position: 0 66.667%"
-                data-1500="background-position: 0 100%"
+                data-1149="background-position: 0 0"
+                data-1150="background-position: 0 33.334%"
+                data-1249="background-position: 0 33.334%"
+                data-1250="background-position: 0 66.667%"
+                data-1349="background-position: 0 66.667%"
+                data-1350="background-position: 0 100%"
                 >
 
                 </div>

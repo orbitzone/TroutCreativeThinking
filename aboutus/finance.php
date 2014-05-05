@@ -44,8 +44,38 @@
                             <blockquote>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </blockquote>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.  Lorem ipsum ipsum dolor sit amet, consectetur adipiscing sollicitudindolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit. </p>
                         </div>
-                        <div class="span4 share-price">
-                            <img src="/assets/images/aboutus/dummy-shareprice.png">
+                        <div class="span4 asxFeed">
+                            <h4>Share Price</h4>
+                            <div class="asxData">
+                            <ul class="odd">
+                                <li>
+                                    <strong>Last</strong>
+                                    <span id="asxLast"></span>
+                                </li>
+                                <li>
+                                    <strong>% Chg</strong>
+                                    <span id="asxChg"></span>
+                                </li>
+                                <li>
+                                    <strong>Bid</strong>
+                                    <span id="asxBid"></span>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <strong>Offer</strong>
+                                    <span id="asxOffer"></span>
+                                </li>
+                                <li>
+                                    <strong>Open</strong>
+                                    <span id="asxOpen"></span>
+                                </li>
+                                <li>
+                                    <strong>High</strong>
+                                    <span id="asxHigh"></span>
+                                </li>
+                            </ul>
+                            </div>
                         </div>
 
                     </div>
@@ -180,6 +210,29 @@
             ];
             include_once($serverBase."/includes/foot/scripts.php");
         ?>
-
+<script type="text/javascript">
+    $(function(){
+        URL="http://query.yahooapis.com/v1/public/yql";
+        data={
+            "env": "http://datatables.org/alltables.env",
+            "format":"json",
+            "q": "select * from yahoo.finance.quotes where symbol in ('REH.AX')"
+        }
+        $.getJSON(
+            URL+"?callback=?",
+            data,
+            showAXSData
+            )
+    });
+    function showAXSData (data){
+        result = data.query.results.quote;
+        $('#asxLast').html(result.PreviousClose);
+        $('#asxChg').html(result.PercentChange);
+        $('#asxBid').html(result.BidRealtime);
+        $('#asxOffer').html(result.AskRealtime);
+        $('#asxOpen').html(result.Open);
+        $('#asxHigh').html(result.DaysHigh);
+    }
+</script>
     </body>
 </html>

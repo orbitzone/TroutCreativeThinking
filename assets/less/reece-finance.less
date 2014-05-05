@@ -162,3 +162,49 @@
         margin-bottom: 1em;
     }
 }
+
+.finance .content-container  .asxFeed{
+	h4{
+		background: #f8f2ee;
+		color: #333;
+		font-weight: normal;
+		float: left;
+		margin: 0 !important;
+		padding: 10px 20px 15px;
+		font-size: 15px;
+		border:solid 1px #e5e4e4;
+		border-bottom: none;
+	}
+	.asxData{
+		border:solid 1px #e5e4e4;
+		padding: 20px;
+		clear: both;
+	}
+
+	ul{
+		.clearfix;
+		margin: 0;
+		padding:10px 0;
+		li{
+			float: left;
+			list-style: none;
+			display: block;
+			width: 33%;
+			strong,span{
+				padding: 3px 15px;
+				display:block
+			}
+		}
+		&.odd{
+			background: #F8F2EE;
+			border-bottom:solid 3px #009ddb;
+		}
+	}
+}
+@media (max-width:480px){
+	.finance .content-container  .asxFeed{
+		.asxData{
+			padding: 10px;
+		}
+	}
+}

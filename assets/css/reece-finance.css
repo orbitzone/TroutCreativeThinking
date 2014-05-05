@@ -65,35 +65,79 @@
   }
 }
 .file-download .nav {
-  border-bottom: 1px solid #cccccc;
-  border-top: 1px solid #cccccc;
-  border-right: 1px solid #cccccc;
   background: #ffffff;
 }
 .file-download .nav li {
   margin: 0;
-}
-@media (min-width: 768px) {
-  .file-download .nav li {
-    width: 33.33%;
-  }
+  width: 33.33%;
 }
 .file-download .nav a {
-  border-left: 1px solid #cccccc;
   margin: 0;
   padding: 0.8em 0;
   font-size: 18px;
   text-align: center;
   font-weight: 200;
   color: #666666;
+  border-width: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
   border-radius: 0;
-}
-.file-download .nav a:hover {
-  border-left: 1px solid #cccccc;
 }
 .file-download .nav .active a {
   background: #009ddb;
   color: #ffffff;
+}
+.file-download .nav-tabs {
+  margin: 0 40px 40px;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  *zoom: 1;
+}
+.file-download .nav-tabs:before,
+.file-download .nav-tabs:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.file-download .nav-tabs:after {
+  clear: both;
+}
+.file-download .nav-tabs li {
+  list-style: none;
+  float: left;
+  display: block;
+  width: 33.33%;
+  text-align: center;
+  margin-bottom: 0;
+}
+.file-download .nav-tabs li a {
+  display: block;
+  margin: 0;
+  font-size: 18px;
+  padding: 0.8em 0;
+  border-width: 0 0 0 1px !important;
+  color: #666666;
+  border-left: 1px solid #cccccc;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.file-download .nav-tabs li a:hover {
+  background: #eee;
+  text-decoration: none;
+}
+.file-download .nav-tabs li:first-child a {
+  border-width: 0 !important;
+}
+.file-download .nav-tabs li.active a {
+  background: #009ddb;
+  color: #ffffff;
+}
+@media (max-width: 979px) {
+  .file-download .nav-tabs li {
+    float: none;
+    width: auto;
+  }
 }
 .file-download .tab-content {
   overflow: visible;
@@ -106,25 +150,31 @@
   right: -110px;
   background: url(../images/btn-carousel-right.png) no-repeat top left;
 }
+@media (max-width: 979px) {
+  .file-download .carousel-control.right {
+    right: -20px;
+  }
+}
 .file-download .carousel-control.left {
   left: -110px;
   background: url(../images/btn-carousel-left.png) no-repeat top left;
 }
+@media (max-width: 979px) {
+  .file-download .carousel-control.left {
+    left: -20px;
+  }
+}
 .file-download .icon {
-  display: table;
   background: #ffffff;
-  width: 210px;
-  height: 210px;
   border: 1px solid #cccccc;
   margin-bottom: 1.5em;
   text-align: center;
 }
-.file-download .icon > div {
-  display: table-cell;
-  vertical-align: middle;
+.file-download .icon img {
+  padding: 40px 0;
 }
 .file-download .inside {
-  width: 210px;
+  padding: 0 40px;
   text-align: left;
   margin: auto;
 }
@@ -137,28 +187,27 @@
     margin-bottom: 3em;
   }
 }
-.file-download .span4:nth-child(2) {
-  text-align: center;
-}
-.file-download .span4:nth-child(3) {
-  text-align: right;
-  padding-left: 2px;
-}
-.file-download .span4:nth-child(3) .inside {
-  float: right;
-}
 .page-branding.text-brand {
   color: #003767;
 }
-.news {
+.newsItem {
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
+}
+.news .content-container {
+  margin-top: 0;
 }
 .news h2 {
   font-size: 40px;
   margin-bottom: 1em;
 }
-.news .date {
+.news h3.newsHeading {
+  margin-bottom: 0;
+  padding-bottom: 1em;
+  border-bottom: none;
+}
+.news p.date {
+  padding: 2em 0 1em;
   font-style: italic;
   color: #b2b2b2;
   font-size: 16px;
@@ -180,6 +229,9 @@
 .grey-bg img {
   margin-bottom: 1em;
 }
+.finance .content-container .asxFeed {
+  padding-top: 30px;
+}
 .finance .content-container .asxFeed h4 {
   background: #f8f2ee;
   color: #333;
@@ -195,6 +247,11 @@
   border: solid 1px #e5e4e4;
   padding: 20px;
   clear: both;
+}
+@media (max-width: 480px) {
+  .finance .content-container .asxFeed .asxData {
+    padding: 10px;
+  }
 }
 .finance .content-container .asxFeed ul {
   *zoom: 1;
@@ -224,9 +281,4 @@
 .finance .content-container .asxFeed ul.odd {
   background: #F8F2EE;
   border-bottom: solid 3px #009ddb;
-}
-@media (max-width: 480px) {
-  .finance .content-container .asxFeed .asxData {
-    padding: 10px;
-  }
 }

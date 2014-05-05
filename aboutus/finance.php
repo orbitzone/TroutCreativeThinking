@@ -88,10 +88,10 @@
                 <div class="content-container">
                     <div class="inner-wrapper">
 
-                       <ul class="nav nav-tabs row-fluid">
-                            <li class="span4 active"><a href="#asx" data-toggle="tab">ASX Announcement</a></li>
-                            <li class="span4"><a href="#corp" data-toggle="tab">Corporate Governance</a></li>
-                            <li class="span4"><a href="#fin" data-toggle="tab">Financial Reports</a></li>
+                       <ul class="nav-tabs">
+                            <li class="active"><a href="#asx" data-toggle="tab">ASX Announcement</a></li>
+                            <li class=""><a href="#corp" data-toggle="tab">Corporate Governance</a></li>
+                            <li class=""><a href="#fin" data-toggle="tab">Financial Reports</a></li>
                        </ul>
 
                        <!-- Tab panes -->
@@ -165,22 +165,29 @@
             </div>
 
             <div class="news">
-                <div class="content-container">
-                    <div class="inner-wrapper">
-
-                        <h3 class="heading">News</h3>
-                        <section class="row-fluid">
-                            <div class="span5">
-                               <img src="/assets/images/aboutus/img-news.jpg" alt="Don't forget alt text">
-                            </div>
-                            <div class="span7">
-                                <p class="date">23rd December 2013</p>
-                                <h2>Reece excited to announce acquisition of Actrol</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.  Lorem ipsum dolor sit amet, <a href="#">consectetur adipiscing</a></p>
-                            </div>
-                        </section>
+                
+                    <div class="content-container">
+                        <div class="inner-wrapper">
+                            <h3 class="newsHeading">News</h3>
+                        </div>
                     </div>
-                </div>
+
+                    <section class="newsItem">
+                        <div class="content-container">
+                            <div class="inner-wrapper">
+                                <div class="row-fluid">
+                                    <div class="span5">
+                                       <img src="/assets/images/aboutus/img-news.jpg" alt="Don't forget alt text">
+                                    </div>
+                                    <div class="span7">
+                                        <p class="date">23rd December 2013</p>
+                                        <h2>Reece excited to announce acquisition of Actrol</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.  Lorem ipsum dolor sit amet, <a href="#">consectetur adipiscing</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
             </div>
 
             <?php

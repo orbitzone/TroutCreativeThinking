@@ -39,6 +39,7 @@
 	min-height: 250px
 }
 .file-download {
+
 	.inner-wrapper {
 		@media (min-width: 979px) {
 			margin: 0 157px
@@ -48,32 +49,64 @@
 		}
 	}
 	.nav {
-		border-bottom: 1px solid lighten(@reeceGrey, 50%);
-		border-top: 1px solid lighten(@reeceGrey, 50%);
-		border-right: 1px solid lighten(@reeceGrey, 50%);
+
 		background: @reeceWhite;
 		li {
 			margin: 0;
-			@media (min-width: 768px) {
-				width: 33.33%;
-			}
+			width: 33.33%;
 		}
 		a {
-			border-left: 1px solid lighten(@reeceGrey, 50%);
 			margin: 0;
 			padding: 0.8em 0;
 			font-size: 18px;
 			text-align: center;
 			font-weight: 200;
 			color: lighten(@reeceGrey, 10%);
-			border-radius: 0;
-			&:hover {
-				border-left: 1px solid lighten(@reeceGrey, 50%);
-			}
+			border-width:0;
+			.border-radius(0);
 		}
 		.active a {
 			background: @reeceLightBlue;
 			color: @ocnavTextColor;
+		}
+	}
+	.nav-tabs{
+		margin: 0 40px 40px;
+		background: @reeceWhite;
+		border:1px solid lighten(@reeceGrey, 50%);
+		.clearfix;
+		li{
+			list-style: none;
+			float: left;
+			display: block;
+			width: 33.33%;
+			text-align: center;
+			margin-bottom: 0;
+			a{
+				display: block;
+				margin: 0;
+				font-size: 18px;
+				padding: 0.8em 0;
+				border-width: 0 0 0 1px !important;
+				color: lighten(@reeceGrey, 10%);
+				border-left: 1px solid lighten(@reeceGrey, 50%);
+				.border-radius(0);
+				&:hover{
+					background: #eee;
+					text-decoration: none;
+				}
+			}
+		&:first-child a{
+			border-width: 0 !important;
+		}
+		&.active a {
+			background: @reeceLightBlue;
+			color: @ocnavTextColor;
+		}
+		@media (max-width:979px){
+			float: none;
+			width: auto;
+		}
 		}
 	}
 	.tab-content { overflow: visible; }
@@ -82,28 +115,30 @@
 		text-indent: -999em;
 		&.right {
 			right: -110px;
-			background: url(../images/btn-carousel-right.png) no-repeat top left
+			background: url(../images/btn-carousel-right.png) no-repeat top left;
+			@media (max-width:979px){
+				right: -20px;
+			}
 		}
 		&.left {
 			left: -110px;
-			background: url(../images/btn-carousel-left.png) no-repeat top left
+			background: url(../images/btn-carousel-left.png) no-repeat top left;
+			@media (max-width:979px){
+				left:-20px
+			}
 		}
 	}
 	.icon {
-		display: table;
 		background: @reeceWhite;
-		width: 210px;
-		height: 210px;
 		border: 1px solid lighten(@reeceGrey, 50%);
 		margin-bottom: 1.5em;
 		text-align: center;
-		> div {
-			display: table-cell;
-			vertical-align: middle;
+		img{
+			padding: 40px 0;
 		}
 	}
 	.inside {
-		width: 210px;
+		padding: 0 40px;
 		text-align: left;
 		margin: auto
 	}
@@ -116,16 +151,6 @@
 			margin-bottom: 3em;
 		}
 	}
-	.span4:nth-child(2) {
-		text-align: center;
-	}
-	.span4:nth-child(3) {
-		text-align: right;
-		padding-left: 2px;
-		.inside {
-			float: right
-		}
-	}
 }
 .page-branding {
     &.text-brand {
@@ -133,14 +158,26 @@
     }
 }
 
-.news {
+.newsItem{
 	border-top: 1px solid lighten(@reeceGrey, 60%);
 	border-bottom: 1px solid lighten(@reeceGrey, 60%);
+}
+
+.news {
+	.content-container{
+		margin-top: 0;
+	}
 	h2 {
 		font-size: 40px;
 		margin-bottom: 1em;
 	}
-	.date {
+	h3.newsHeading{
+		margin-bottom:0;
+		padding-bottom: 1em;
+		border-bottom: none;
+	}
+	p.date {
+		padding: 2em 0 1em;
 		font-style: italic;
 		color: lighten(@reeceGrey, 40%);
 		font-size: 16px;
@@ -164,6 +201,7 @@
 }
 
 .finance .content-container  .asxFeed{
+	padding-top: 30px;
 	h4{
 		background: #f8f2ee;
 		color: #333;
@@ -179,6 +217,9 @@
 		border:solid 1px #e5e4e4;
 		padding: 20px;
 		clear: both;
+		@media (max-width:480px){
+			padding: 10px;
+		}
 	}
 
 	ul{
@@ -198,13 +239,6 @@
 		&.odd{
 			background: #F8F2EE;
 			border-bottom:solid 3px #009ddb;
-		}
-	}
-}
-@media (max-width:480px){
-	.finance .content-container  .asxFeed{
-		.asxData{
-			padding: 10px;
 		}
 	}
 }

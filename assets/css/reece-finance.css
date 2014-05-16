@@ -282,3 +282,9 @@
   background: #F8F2EE;
   border-bottom: solid 3px #009ddb;
 }
+.finance .content-container .asxFeed .disclaimer {
+  display: block;
+  text-align: center;
+  font-style: italic;
+  color: #7f7f7f;
+}

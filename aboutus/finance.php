@@ -49,24 +49,6 @@
                             <div class="asxData">
                             <ul class="odd">
                                 <li>
-                                    <strong>Last</strong>
-                                    <span id="asxLast"></span>
-                                </li>
-                                <li>
-                                    <strong>% Chg</strong>
-                                    <span id="asxChg"></span>
-                                </li>
-                                <li>
-                                    <strong>Bid</strong>
-                                    <span id="asxBid"></span>
-                                </li>
-                            </ul>
-                            <ul>
-                                <li>
-                                    <strong>Offer</strong>
-                                    <span id="asxOffer"></span>
-                                </li>
-                                <li>
                                     <strong>Open</strong>
                                     <span id="asxOpen"></span>
                                 </li>
@@ -74,7 +56,26 @@
                                     <strong>High</strong>
                                     <span id="asxHigh"></span>
                                 </li>
+                                <li>
+                                    <strong>Low</strong>
+                                    <span id="asxLow"></span>
+                                </li>
                             </ul>
+                            <ul>
+                                <li>
+                                    <strong>Close</strong>
+                                    <span id="asxClose"></span>
+                                </li>
+                                <li>
+                                    <strong>Change</strong>
+                                    <span id="asxChange"></span>
+                                </li>
+                                <li>
+                                    <strong>Change %</strong>
+                                    <span id="asxChangePercent"></span>
+                                </li>
+                            </ul>
+                            <small class="disclaimer">Quotes delayed by 20 minutes. Currency in AUD.</small>
                             </div>
                         </div>
 
@@ -233,12 +234,13 @@
     });
     function showAXSData (data){
         result = data.query.results.quote;
-        $('#asxLast').html(result.PreviousClose);
-        $('#asxChg').html(result.PercentChange);
-        $('#asxBid').html(result.BidRealtime);
-        $('#asxOffer').html(result.AskRealtime);
         $('#asxOpen').html(result.Open);
         $('#asxHigh').html(result.DaysHigh);
+        $('#asxLow').html(result.DaysLow);
+
+        $('#asxClose').html(result.PreviousClose);
+        $('#asxChange').html(result.Change);
+        $('#asxChangePercent').html(result.PercentChange);
     }
 </script>
     </body>

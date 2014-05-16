@@ -69,6 +69,7 @@ include_once($serverBase."/includes/head/head-generic.php");
         </div>
       </div>
     </section>
+    <!-- /#slide1954 -->
     <section id="slide1976">
       <div class="content-container">
         <h2 class="year">1976</h2>
@@ -92,6 +93,7 @@ include_once($serverBase."/includes/head/head-generic.php");
         </div>
       </div>
     </section>
+    <!-- /#slide1976 -->
     <section id="slide1997">
       <div class="content-container">
         <h2 class="year">1997</h2>
@@ -130,6 +132,7 @@ include_once($serverBase."/includes/head/head-generic.php");
         </div>
       </div>
     </section>
+    <!-- /#slide1997 -->
     <section id="slide1998">
       <div class="content-container">
         <h2 class="year">1998</h2>
@@ -137,53 +140,56 @@ include_once($serverBase."/includes/head/head-generic.php");
 Reece opens its fist 'Irrigation' outlet, dedicated to providing a specialised service for irrigation contractors, landscape gardeners and growers.</p>
         <div id="sprinkler1998Wrap" >
           <div class="buildingwrap">
+            <!-- Building -->
             <div class="building"
               data-target-anchor="#slide1998"
-              data-500-top="background-position:0 -33%"
-              data-480-top="background-position:0 0"
-              data-461-top="background-position:0 0"
-              data-460-top="background-position:0 33.33%"
-              data-441-top="background-position:0 33.33%"
-              data-440-top="background-position:0 66.66%"
-              data-421-top="background-position:0 66.66%"
-              data-420-top="background-position:0 100%" 
+              data-bottom="background-position:0 -33%"
+              data--20-bottom="background-position:0 0"
+              data--79-bottom="background-position:0 0"
+              data--80-bottom="background-position:0 33.33%"
+              data--89-bottom="background-position:0 33.33%"
+              data--90-bottom="background-position:0 66.66%"
+              data--109-bottom="background-position:0 66.66%"
+              data--110-bottom="background-position:0 100%" 
             >
             </div>
           </div>
           <div class="sprinklerItem">
+          <!-- Water -->
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="800px" height="320px">
               <path style="fill: none; stroke: #fff; stroke-width: 3px; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray:5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 1000px; stroke-dashoffset: 870px"
               data-target-anchor="#slide1998"
-              data-420-top="stroke-dashoffset:870px"
-              data-400-top="stroke-dashoffset:0px"
+              data-30-bottom="stroke-dashoffset:870px"
+              data--20-bottom="stroke-dashoffset:0px"
               d="M50,200 c 0 0,160 -140,340 -146 c 350 -6 ,350 260,350 264"  ></path>
               <path style="fill: none; stroke: #fff; stroke-width: 3px; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray:5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 1000px; stroke-dashoffset: 870px"
               data-target-anchor="#slide1998"
-              data-420-top="stroke-dashoffset:870px"
-              data-400-top="stroke-dashoffset:0px"
+              data-30-bottom="stroke-dashoffset:870px"
+              data--20-bottom="stroke-dashoffset:0px"
               d="M50,200 c 0 0,160 -120,330 -126 c 320 -6 ,320 260,320 264"  ></path>
               <path style="fill: none; stroke: #fff; stroke-width: 3px; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray:5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 1000px; stroke-dashoffset: 870px"
               data-target-anchor="#slide1998"
-              data-420-top="stroke-dashoffset:870px"
-              data-400-top="stroke-dashoffset:0px"
+              data-30-bottom="stroke-dashoffset:870px"
+              data--20-bottom="stroke-dashoffset:0px"
               d="M50,200 c 0 0,160 -100,320 -106 c 290 -6 ,290 260,290 264"  ></path>
               <path style="fill: none; stroke: #fff; stroke-width: 3px; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray:5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 1000px; stroke-dashoffset: 870px"
               data-target-anchor="#slide1998"
-              data-420-top="stroke-dashoffset:870px"
-              data-400-top="stroke-dashoffset:0px"
+              data-30-bottom="stroke-dashoffset:870px"
+              data--20-bottom="stroke-dashoffset:0px"
               d="M50,200 c 0 0,160 -80,310 -86 c 260 -6 ,260 260,260 264"  ></path>
               <path style="fill: none; stroke: #fff; stroke-width: 3px; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray:5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 5px 1000px; stroke-dashoffset: 870px"
               data-target-anchor="#slide1998"
-              data-420-top="stroke-dashoffset:870px"
-              data-400-top="stroke-dashoffset:0px"
+              data-30-bottom="stroke-dashoffset:870px"
+              data--20-bottom="stroke-dashoffset:0px"
               d="M50,200 c 0 0,160 -60,300 -66 c 230 -6 ,230 260,230 264"  ></path>
             </svg>
           </div>
           <div class="sprinklerItem"
             data-target-anchor="#slide1998"
-            data-400-top="top:160px"
-            data-380-top="top:0"
+            data-50-bottom="top:160px"
+            data-30-bottom="top:0px"
             >
+            <!-- Sprinkler -->
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="800px" height="320px">
             <polygon transform="translate(0,160)"  fill="#231F20" points="0,0 45,0 45,20 40,20 40,30 50,30 50,50 40,50 40,160 5,160 5,20 0,20 "></polygon>
             </svg>
@@ -193,6 +199,7 @@ Reece opens its fist 'Irrigation' outlet, dedicated to providing a specialised s
       <div class="grass">
       </div>
     </section>
+    <!-- /#slide1998 -->
     <section id="slide2005">
       <div class="content-container">
         <h2 class="year">2005</h2>
@@ -203,14 +210,16 @@ Reece opens its fist 'Irrigation' outlet, dedicated to providing a specialised s
         <div class="registerDisplayScreen">
           <div
             data-target-anchor="#slide1998"
-            data-50-bottom="margin-top:180px"
-            data-20-bottom="margin-top:60px"
+            data-0-bottom="margin-top:180px"
+            data--20-bottom="margin-top:60px"
           class="registerBn"><span class="caretWrap"></span>bn</div>
           <div class="register1"
             data-target-anchor="#slide1998"
-            data-10-bottom="margin-top:180px"
-            data--20-bottom="margin-top:60px"
+            data--40-bottom="margin-top:180px"
+            data--70-bottom="margin-top:60px"
           ><span class="caretWrap"></span>1</div>
+          <div class="registerScreenGlass">
+          </div>
         </div>
         </div>
         <div class="registerBase">
@@ -221,6 +230,7 @@ Reece opens its fist 'Irrigation' outlet, dedicated to providing a specialised s
 
       </div>
     </section>
+    <!-- /#slide2005 -->
 
  <?php
  include_once($serverBase."/includes/foot/foot-generic.php");

@@ -209,15 +209,26 @@ Reece opens its fist 'Irrigation' outlet, dedicated to providing a specialised s
         <div class="registerDisplay">
         <div class="registerDisplayScreen">
           <div
+            class="registerBn"
             data-target-anchor="#slide1998"
-            data-0-bottom="margin-top:180px"
-            data--20-bottom="margin-top:60px"
-          class="registerBn"><span class="caretWrap"></span>bn</div>
-          <div class="register1"
+            data--50-bottom="margin-top:180px"
+            data--70-bottom="margin-top:25px"
+            >
+            <span class="caretWrap"></span>
+            <span class="number">bn</span>
+
+          </div>
+          <div
+            class="register1"
             data-target-anchor="#slide1998"
-            data--40-bottom="margin-top:180px"
-            data--70-bottom="margin-top:60px"
-          ><span class="caretWrap"></span>1</div>
+            data-40-bottom="margin-top:180px"
+            data-20-bottom="margin-top:25px"
+          >
+            <span class="caretWrap"></span>
+            <span class="number">
+            1
+            </span>
+          </div>
           <div class="registerScreenGlass">
           </div>
         </div>
@@ -257,7 +268,6 @@ $jsScriptPaths = [
 "/assets/js/skrollr.min.js",
 "/assets/js/reece-hidesubnavbar.js",
 "/assets/js/reece-history.js"
-
 
 ];
 include_once($serverBase."/includes/foot/scripts.php");

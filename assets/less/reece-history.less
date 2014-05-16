@@ -215,7 +215,7 @@
 		background: #F89728;
 		padding:20px 20px 0 20px;
 		width: 30%;
-		min-width: 240px;
+		min-width: 320px;
 		display: inline-block;
 		vertical-align: bottom;
 		.registerDisplayScreen{
@@ -227,10 +227,10 @@
 			overflow: hidden;
 			position: relative;
 			.registerBn,.register1{
-				height: 95px;
-				width: 97px;
+				height: 135px;
+				width: 140px;
 				background: #EC1C24;
-				line-height: 95px;
+				line-height: 135px;
 				text-align: center;
 				display: block;
 				float: right;
@@ -244,8 +244,9 @@
 					position: absolute;
 					left: 0;
 					right: 0;
-					top: -12px;
+					top: 0;
 					text-align: center;
+					height: 0;
 					&:after{
 						width: 0;
 						content: '';
@@ -253,9 +254,21 @@
 						display: inline-block;
 						border-bottom-color: #EC1C24;
 						position: relative;
-						top: -40px;
+						top: -73px;
 					}
 				}
+				.number{
+					display: block;
+					background-position: center;
+					background-repeat: no-repeat;
+					text-indent: -9999em;
+				}
+			}
+			.registerBn .number{
+					background-image: url("@{impagepath}/bn.svg");
+				}
+			.register1 .number{
+				background-image: url("@{impagepath}/1.svg");
 			}
 			.registerScreenGlass{
 				position: absolute;

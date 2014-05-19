@@ -155,8 +155,8 @@ include_once($serverBase."/includes/head/head-generic.php");
                         <div class="icon"></div>
                         <h4>Head Office</h4>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in iaculis quam. Nunc porta lacus lectus, et suscipit nulla luctus sit amet.
-                            <a href="#headOffice" data-toggle="collapse" data-target="#headOffice">Contact Head Office</a>
+                            If you have any questions or requests that aren't covered by any of the other contacts on this page please <a href="#headOffice" data-toggle="collapse" data-target="#headOffice">contact Head Office</a> for assistance.
+                            
                         </p>
                     </section>
                 </div>

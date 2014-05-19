@@ -22,5 +22,10 @@ $(document).ready(function(){
         e.preventDefault();
     });
 
+    $('a[href="#headOffice"]').click(function(e){
+        $('html,body').animate({scrollTop: $("#headOffice").offset().top-240},'slow');
+        e.preventDefault();
+    });
+
     $('select').selectric();
 });

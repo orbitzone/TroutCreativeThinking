@@ -124,10 +124,18 @@ a:hover p, a:focus p {
     .brand-buttons {
         position: absolute;
         bottom: 35px;
+        .btn{
+            margin-top: 5px;
+        }
     }
     .brand-desc {
         max-height: 250px;
-        overflow: hidden
+        overflow: hidden;
+        padding-bottom: 40px;
+        @media (max-width:480px){
+            max-height: 500px;
+            padding-bottom: 50px;
+        }
     }
     .row-fluid {
         padding: 2em;

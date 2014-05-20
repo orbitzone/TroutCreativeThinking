@@ -160,14 +160,14 @@ include_once($serverBase."/includes/head/head-generic.php");
             <section class="row-fluid">
                 <div class="span8">
                     <h4>Australia’s leading supplier of plumbing and bathroom products</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.</p>
+                    <p>The Reece business began in 1919 when Harold Joseph Reece commenced selling hardware products from the back of his truck. Today, Reece is a major public company and Australia's most successful supplier of plumbing and bathroom products. We have over 400 stores across Australia with over 3500 staff and thousands of products. </p>
+
                 </div>
 
                 <div class="span4 actrol">
                     <div class="inside">
                         <h4>A Cool New Addition For Reece</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo.  Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. </p>
+                        <p>Reece Australia Limited (‘Reece’) is pleased to announce the signing of a binding share sale agreement for the purchase of 100% of the shares in Actrol Parts Holdings Pty Ltd and its subsidiaries consisting of Actrol Parts and AC Components (trading as Metalflex and Air Plus) (together ‘Actrol Group’).</p>
                     </div>
                 </div>
             </section>
@@ -178,21 +178,25 @@ include_once($serverBase."/includes/head/head-generic.php");
                         <img src="../assets/images/aboutus/home/history.jpg" alt="don't forget alt text!">
                     </a>
                     <h4>History</h4>
-                    <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <p>For 85 years Reece has provided products and a dedicated service to plumbers. We're proud of the reputation we have earned over that time for "having what you need, when you need it, where you need it." </p>
                 </div>
                 <div class="span4">
                     <a href="/aboutus/partner.php">
                         <img src="../assets/images/aboutus/home/partner.jpg" alt="don't forget alt text!">
                     </a>
                     <h4>Partner with us</h4>
-                    <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <p>Some of the world's best brands can only be found at Reece. 
+
+This is a reflection of Reece's international reputation for professionalism, quality and marketing ability. 
+
+Reece has achieved outstanding results with a range of exclusive products in the retail, trade and specialised markets. </p>
                 </div>
                 <div class="span4">
                     <a href="/aboutus/finance.php">
                         <img src="../assets/images/aboutus/partner/finance_357.jpg" alt="don't forget alt text!">
                     </a>
                     <h4>Finance</h4>
-                    <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <p>Reece is a public company that has enjoyed a long history of exceptional financial performance. A major factor contributing to this success has been the leadership provided by a strong, decisive and stable management team. Reece is committed to good corporate governance and to the continued creation of shareholder value. </p>
                 </div>
             </section>
 

@@ -38,118 +38,52 @@
 .carousel-inner {
 	min-height: 250px
 }
-.file-download {
+.grey-bg {
+    background: @lightBackground;
+    margin-top: 2em;
+    padding: 40px 0 20px;
+}
 
-	.inner-wrapper {
-		@media (min-width: 979px) {
-			margin: 0 157px
-		}
-		@media (min-width: 768px) and (max-width: 979px) {
-			margin: 0 50px
-		}
+.finance .file-download {
+	h4{
+		padding: 30px 0 10px;
+		margin: 0;
 	}
-	.nav {
-
-		background: @reeceWhite;
-		li {
-			margin: 0;
-			width: 33.33%;
-		}
-		a {
-			margin: 0;
-			padding: 0.8em 0;
-			font-size: 18px;
-			text-align: center;
-			font-weight: 200;
-			color: lighten(@reeceGrey, 10%);
-			border-width:0;
-			.border-radius(0);
-		}
-		.active a {
-			background: @reeceLightBlue;
-			color: @ocnavTextColor;
-		}
+	dl{
+		width: 90%;
+	&.fincialYearReportList{
+		display: none;
 	}
-	.nav-tabs{
-		margin: 0 40px 40px;
-		background: @reeceWhite;
-		border:1px solid lighten(@reeceGrey, 50%);
-		.clearfix;
-		li{
-			list-style: none;
-			float: left;
+	&.fincialYearReportList.active{
+		display: block;
+	}
+		dt,dd{
+			margin: 0;
+			padding: 0;
+			font-weight: normal;
+			padding-top: 5px;
+		}
+		dt{
+			padding-top: 5px;
+			font-size: 16px;
+			line-height: 1.5em;
+			color: #666;
+		}
+		dd{
+			padding-bottom: 10px;
+		}
+		small{
 			display: block;
-			width: 33.33%;
-			text-align: center;
-			margin-bottom: 0;
-			a{
-				display: block;
-				margin: 0;
-				font-size: 18px;
-				padding: 0.8em 0;
-				border-width: 0 0 0 1px !important;
-				color: lighten(@reeceGrey, 10%);
-				border-left: 1px solid lighten(@reeceGrey, 50%);
-				.border-radius(0);
-				&:hover{
-					background: #eee;
-					text-decoration: none;
-				}
-			}
-		&:first-child a{
-			border-width: 0 !important;
-		}
-		&.active a {
-			background: @reeceLightBlue;
-			color: @ocnavTextColor;
-		}
-		@media (max-width:979px){
-			float: none;
-			width: auto;
-		}
 		}
 	}
-	.tab-content { overflow: visible; }
-	.carousel-control{
-		width: 46px;
-		text-indent: -999em;
-		&.right {
-			right: -110px;
-			background: url(../images/btn-carousel-right.png) no-repeat top left;
-			@media (max-width:979px){
-				right: -20px;
-			}
-		}
-		&.left {
-			left: -110px;
-			background: url(../images/btn-carousel-left.png) no-repeat top left;
-			@media (max-width:979px){
-				left:-20px
-			}
-		}
+	.selectric-label{
+		padding: 1em 0.7em
 	}
-	.icon {
-		background: @reeceWhite;
-		border: 1px solid lighten(@reeceGrey, 50%);
-		margin-bottom: 1.5em;
-		text-align: center;
-		img{
-			padding: 40px 0;
-		}
-	}
-	.inside {
-		padding: 0 40px;
-		text-align: left;
-		margin: auto
-	}
-	.filename {
-		margin-bottom: 1.5em;
-		line-height: 1.5em;
-	}
-	@media (max-width: 768px) {
-		.item > div {
-			margin-bottom: 3em;
-		}
+	.financialReports{
+		background: darken(@lightBackground, 5%);
+		padding: 0 20px 20px 30px;
+		min-height: 420px;
+		margin-bottom: 20px;
 	}
 }
 .page-branding {
@@ -191,14 +125,6 @@
 	}
 }
 
-.grey-bg {
-    background: @lightBackground;
-    padding: 5em 0;
-    margin-top: 2em;
-    img {
-        margin-bottom: 1em;
-    }
-}
 
 .finance .content-container  .asxFeed{
 	padding-top: 30px;

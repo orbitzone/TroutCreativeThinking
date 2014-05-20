@@ -54,138 +54,51 @@
 .carousel-inner {
   min-height: 250px;
 }
-@media (min-width: 979px) {
-  .file-download .inner-wrapper {
-    margin: 0 157px;
-  }
+.grey-bg {
+  background: #eaeaea;
+  margin-top: 2em;
+  padding: 40px 0 20px;
 }
-@media (min-width: 768px) and (max-width: 979px) {
-  .file-download .inner-wrapper {
-    margin: 0 50px;
-  }
-}
-.file-download .nav {
-  background: #ffffff;
-}
-.file-download .nav li {
+.finance .file-download h4 {
+  padding: 30px 0 10px;
   margin: 0;
-  width: 33.33%;
 }
-.file-download .nav a {
-  margin: 0;
-  padding: 0.8em 0;
-  font-size: 18px;
-  text-align: center;
-  font-weight: 200;
-  color: #666666;
-  border-width: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
+.finance .file-download dl {
+  width: 90%;
 }
-.file-download .nav .active a {
-  background: #009ddb;
-  color: #ffffff;
+.finance .file-download dl.fincialYearReportList {
+  display: none;
 }
-.file-download .nav-tabs {
-  margin: 0 40px 40px;
-  background: #ffffff;
-  border: 1px solid #cccccc;
-  *zoom: 1;
-}
-.file-download .nav-tabs:before,
-.file-download .nav-tabs:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.file-download .nav-tabs:after {
-  clear: both;
-}
-.file-download .nav-tabs li {
-  list-style: none;
-  float: left;
+.finance .file-download dl.fincialYearReportList.active {
   display: block;
-  width: 33.33%;
-  text-align: center;
-  margin-bottom: 0;
 }
-.file-download .nav-tabs li a {
-  display: block;
+.finance .file-download dl dt,
+.finance .file-download dl dd {
   margin: 0;
-  font-size: 18px;
-  padding: 0.8em 0;
-  border-width: 0 0 0 1px !important;
-  color: #666666;
-  border-left: 1px solid #cccccc;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
+  padding: 0;
+  font-weight: normal;
+  padding-top: 5px;
 }
-.file-download .nav-tabs li a:hover {
-  background: #eee;
-  text-decoration: none;
-}
-.file-download .nav-tabs li:first-child a {
-  border-width: 0 !important;
-}
-.file-download .nav-tabs li.active a {
-  background: #009ddb;
-  color: #ffffff;
-}
-@media (max-width: 979px) {
-  .file-download .nav-tabs li {
-    float: none;
-    width: auto;
-  }
-}
-.file-download .tab-content {
-  overflow: visible;
-}
-.file-download .carousel-control {
-  width: 46px;
-  text-indent: -999em;
-}
-.file-download .carousel-control.right {
-  right: -110px;
-  background: url(../images/btn-carousel-right.png) no-repeat top left;
-}
-@media (max-width: 979px) {
-  .file-download .carousel-control.right {
-    right: -20px;
-  }
-}
-.file-download .carousel-control.left {
-  left: -110px;
-  background: url(../images/btn-carousel-left.png) no-repeat top left;
-}
-@media (max-width: 979px) {
-  .file-download .carousel-control.left {
-    left: -20px;
-  }
-}
-.file-download .icon {
-  background: #ffffff;
-  border: 1px solid #cccccc;
-  margin-bottom: 1.5em;
-  text-align: center;
-}
-.file-download .icon img {
-  padding: 40px 0;
-}
-.file-download .inside {
-  padding: 0 40px;
-  text-align: left;
-  margin: auto;
-}
-.file-download .filename {
-  margin-bottom: 1.5em;
+.finance .file-download dl dt {
+  padding-top: 5px;
+  font-size: 16px;
   line-height: 1.5em;
+  color: #666;
 }
-@media (max-width: 768px) {
-  .file-download .item > div {
-    margin-bottom: 3em;
-  }
+.finance .file-download dl dd {
+  padding-bottom: 10px;
+}
+.finance .file-download dl small {
+  display: block;
+}
+.finance .file-download .selectric-label {
+  padding: 1em 0.7em;
+}
+.finance .file-download .financialReports {
+  background: #dddddd;
+  padding: 0 20px 20px 30px;
+  min-height: 420px;
+  margin-bottom: 20px;
 }
 .page-branding.text-brand {
   color: #003767;
@@ -220,14 +133,6 @@
 .news a:active,
 .news a:visited {
   color: #009ddb;
-}
-.grey-bg {
-  background: #eaeaea;
-  padding: 5em 0;
-  margin-top: 2em;
-}
-.grey-bg img {
-  margin-bottom: 1em;
 }
 .finance .content-container .asxFeed {
   padding-top: 30px;

@@ -8,29 +8,13 @@
     ]; 
       include_once($serverBase."/includes/head/head-generic.php");
   ?>
-<style>
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 30px;
-  height: 0;
-  overflow: hidden;
-}
-.video-container iframe,  .video-container object,  .video-container embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-</style>
 
 <body class="no-touch bathroom-moments account-details-summary">
 <div class="ocmain-wrapper">
   <div class="content-container">
     <div class="inner-wrapper">
       <div class="myTipsHeader">
-        <h1 class="logo"><img class="StandAloneLogo" src="../../assets/images/MyAccount/reece-shiny-logo.png" alt=""></h1>
+        <h1 class="logo"><img class="StandAloneLogo" src="../../assets/images/MyAccount/reece-shiny-logo.png" alt="Reece Logo"></h1>
         <h2>My Tips</h2>
       </div>
       <div class="myTipsContent">
@@ -61,14 +45,20 @@
         <div class="row-fluid videoThumbs">
           <div class="span4">
             <div class="videoThumb">
-              <a class="vidThumbLink" data-youtubeVidId="REmfHIGdyIA" href="https://www.youtube.com/watch?v=REmfHIGdyIA" target="_blank"><img src="../../assets/images/MyAccount/tip1.jpg"><span class="playIcon"></span></a>
+              <a class="vidThumbLink" data-youtubeVidId="REmfHIGdyIA" href="https://www.youtube.com/watch?v=REmfHIGdyIA" target="_blank">
+                <img src="../../assets/images/MyAccount/tip1.jpg" alt="Tip1">
+                <span class="playIcon"></span>
+              </a>
               <h4>My Tip #1 - Online Ordering</h4>
               <p>This new My Account feature will save you time and money every day. And it’s really easy to use. Just look for the big green order button next to each Reece Quote.</p>
             </div>
           </div>
           <div class="span4">
             <div class="videoThumb">
-              <a class="vidThumbLink" data-youtubeVidId="vzv09M75uQM" href="https://www.youtube.com/watch?v=vzv09M75uQM" target="_blank"><img src="../../assets/images/MyAccount/tip2.jpg"><span class="playIcon"></span></a>
+              <a class="vidThumbLink" data-youtubeVidId="vzv09M75uQM" href="https://www.youtube.com/watch?v=vzv09M75uQM" target="_blank">
+                <img src="../../assets/images/MyAccount/tip2.jpg" alt="Tip2">
+                <span class="playIcon"></span>
+              </a>
               <h4>My Tip #2 - Click + Collect</h4>
               <p>Designed to save you time, Click + Collect speeds up the pick up process by allowing you to order products 24/7 and then pick them up from your selected branch.</p>
             </div>

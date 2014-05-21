@@ -49,35 +49,63 @@ STANDALONE VIDEO PAGE STYLES
 body {
   padding-top: 0;
 }
-.myTipsHeader {
-  padding-bottom: 40px;
+.content-container {
+  margin-top: 0 !important;
 }
-.myTipsContent h2 {
+h2 {
   color: #8fc547;
-  font-size: 65px;
+  font-size: 60px;
+}
+.myTipsHeader {
+  padding-bottom: 10px;
+  *zoom: 1;
+}
+.myTipsHeader:before,
+.myTipsHeader:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.myTipsHeader:after {
+  clear: both;
+}
+.myTipsHeader .logo {
+  margin: 0 20px 0 0;
+  float: left;
+}
+.myTipsHeader h2 {
+  margin: 0;
+  padding: 15px 30px;
+  float: left;
+}
+.myTipsContent {
+  padding-bottom: 20px;
 }
 .myTipsContent h3 {
   color: #003767;
-  padding: 1em 0 .5em;
+  padding: .5em 0;
   font-size: 24px;
 }
 .myTipsContent h3 small {
   display: block;
   color: #8fc547;
   font-size: 24px;
+  font-weight: 100;
+  letter-spacing: 1px;
 }
 .myTipsContent p {
   color: #7f7f7f;
 }
 .youtubeWrapper {
-  padding: 40px 0;
+  padding: 30px 0;
+  background: #e5e5e5;
 }
 .youtubeWrapper iframe {
   max-width: 100%;
 }
 .videoGallery {
   background: url('../images/MyAccount/stainbg.jpg');
-  padding: 50px 0;
+  padding: 30px 0;
   color: white;
 }
 .videoGallery .videoThumb {
@@ -104,5 +132,6 @@ body {
   color: #8fc547;
 }
 .aboutMyAccount {
-  padding: 40px 0 60px;
+  padding: 30px 0;
+  background: #fafafa;
 }

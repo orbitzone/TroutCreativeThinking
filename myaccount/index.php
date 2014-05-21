@@ -30,11 +30,12 @@
   <div class="content-container">
     <div class="inner-wrapper">
       <div class="myTipsHeader">
-        <img class="StandAloneLogo" src="../../assets/images/MyAccount/reece-shiny-logo.png" alt="">
+        <h1 class="logo"><img class="StandAloneLogo" src="../../assets/images/MyAccount/reece-shiny-logo.png" alt=""></h1>
+        <h2>My Tips</h2>
       </div>
       <div class="myTipsContent">
-        <h2>My Tips</h2>
-        <h3>My Account. <small>Works for you 24/7</small></h3>
+        
+        <h3>My Account. <small>Works for you 24/7.</small></h3>
         <div class="row-fluid">
           <div class="span6">
             <p>Developed exclusively for Reece account customers this innovative management system gives you access to product pricing, allows you to build product lists, manage your account, generate customer quotes and even order online</p>
@@ -79,13 +80,13 @@
   <div class="aboutMyAccount">
     <div class="content-container">
       <div class="inner-wrapper">
-        <h3>Learn More about My Account</h3>
         <div class="row-fluid">
           <div class="span6">
+            <h3>Learn More about My Account</h3>
             <p>Discover features in detail, watch walkthrough demonstrations and more.</p>
           </div>
           <div class="span6">
-          <a class="myTipBtn" href="#">Visit My Account Explained.</a>
+          <a class="myTipBtn" href="http://www.reece.com.au/myaccountexplained">Visit My Account Explained</a>
           </div>
         </div>
       </div>

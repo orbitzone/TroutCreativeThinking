@@ -104,7 +104,6 @@
   $(function(){
     $('.vidThumbLink').click(function(e){
       e.preventDefault();
-      console.log($(this).attr('data-youtubeVidId'));
       $('#youtubeVideo').attr({'src':'//www.youtube.com/embed/'+$(this).attr('data-youtubeVidId')});
       $('html,body').animate({
         scrollTop: $('#youtubeVideo').offset().top - 50

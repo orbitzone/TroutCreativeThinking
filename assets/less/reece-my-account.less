@@ -37,22 +37,29 @@ body{
     margin-top: 0 !important
 }
 
-    h2{
-        color: @tipsGreenColor;
-        font-size: 60px;
-    }
+
 
 .myTipsHeader{
     padding-bottom: 10px;
     .clearfix;
     .logo{
-        margin: 0 20px 0 0;
+        margin: 0;
         float: left;
     }
     h2{
+        color: @tipsGreenColor;
+        font-size: 60px;
         margin: 0;
-        padding: 15px 30px;
-        float: left
+        padding: 15px 0;
+        margin-left: 200px;
+        @media (max-width:767px){
+            font-size: 50px;
+        }
+        @media (max-width:767px){
+            clear: both;
+            margin:0;
+            padding-top: 30px;
+        }
     }
 }
 

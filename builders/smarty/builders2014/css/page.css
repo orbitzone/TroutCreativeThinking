@@ -90,6 +90,7 @@
   font-size: 20px;
   margin: 0;
   padding: 0 0 10px;
+  font-weight: normal;
 }
 #BuildersPromo .steppedHeader {
   font-family: Rockwell, Georgia, "Times New Roman", Times, serif;
@@ -188,13 +189,18 @@
   display: block;
   float: left;
   width: 280px;
+  height: 280px;
+  overflow: hidden;
   background: url('img/common/speech-bubbles.png') no-repeat center 0;
   padding-bottom: 55px;
 }
 #BuildersPromo .conversationStarters ul li div {
-  padding: 100px 20px;
-  height: 80px;
+  padding: 80px 30px;
+  height: 120px;
   font-family: Rockwell, Georgia, "Times New Roman", Times, serif;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
 }
 #BuildersPromo .conversationStarters ul li.conversation1,
 #BuildersPromo .conversationStarters ul li.conversation2 {
@@ -221,6 +227,7 @@
 }
 #BuildersPromo .convVideo {
   overflow: hidden;
+  padding: 30px 0 20px;
 }
 #BuildersPromo .convVideo .vidThumb,
 #BuildersPromo .convVideo .vidInfo {
@@ -254,4 +261,5 @@
   display: block;
   color: #D52B1E;
   font-size: 30px;
+  font-weight: normal;
 }

@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Builders Promotion</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <style type="text/css">
   {include file="../css/page.css"}
   </style>
@@ -127,64 +128,45 @@
   </div>
 </div>
 <script type="text/javascript">
-/*
-next1 = document.getElementById("step1-next");
-next1.style.display = 'none';
-
-var step1 = document.getElementById("step1-trigger");
-step1.onclick = function(){
-  next1.style.display = 'block';
-}
-*/
-
-var step2More = document.getElementById("step2More");
-
-var step2Content = document.getElementById("step2Content");
-step2Content.style.display = 'none';
-
-var step2Less = document.getElementById("step2Less");
-step2Less.style.display = 'none';
-
-step2More.onclick = function()
-{
-  step2More.style.display = 'none';
-  step2Less.style.display = 'block';
-  step2Content.style.display = 'block';
-  return false;
-}
-step2Less.onclick = function()
-{
-  step2More.style.display = 'block';
-  step2Less.style.display = 'none';
+  var step2More = document.getElementById("step2More");
+  var step2Content = document.getElementById("step2Content");
   step2Content.style.display = 'none';
-  return false;
-}
+  var step2Less = document.getElementById("step2Less");
+  step2Less.style.display = 'none';
+  step2More.onclick = function()
+  {
+    step2More.style.display = 'none';
+    step2Less.style.display = 'block';
+    step2Content.style.display = 'block';
+    return false;
+  }
+  step2Less.onclick = function()
+  {
+    step2More.style.display = 'block';
+    step2Less.style.display = 'none';
+    step2Content.style.display = 'none';
+    return false;
+  }
 
-
-
-var step3More = document.getElementById("step3More");
-
-var step3Content = document.getElementById("step3Content");
-step3Content.style.display = 'none';
-
-var step3Less = document.getElementById("step3Less");
-step3Less.style.display = 'none';
-
-step3More.onclick = function()
-{
-  step3More.style.display = 'none';
-  step3Less.style.display = 'block';
-  step3Content.style.display = 'block';
-  return false;
-}
-step3Less.onclick = function()
-{
-  step3More.style.display = 'block';
-  step3Less.style.display = 'none';
+  var step3More = document.getElementById("step3More");
+  var step3Content = document.getElementById("step3Content");
   step3Content.style.display = 'none';
-  return false;
-}
-
+  var step3Less = document.getElementById("step3Less");
+  step3Less.style.display = 'none';
+  step3More.onclick = function()
+  {
+    step3More.style.display = 'none';
+    step3Less.style.display = 'block';
+    step3Content.style.display = 'block';
+    return false;
+  }
+  step3Less.onclick = function()
+  {
+    step3More.style.display = 'block';
+    step3Less.style.display = 'none';
+    step3Content.style.display = 'none';
+    return false;
+  }
 </script>
 </body>
 </html>

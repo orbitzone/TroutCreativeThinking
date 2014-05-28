@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Builders Promotion</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<style type="text/css">
 	{include file="../css/index.css"}
 	</style>
@@ -10,7 +11,7 @@
 <div id="BuildersPromo">
 	<div class="wrapper">
 		<div class="introHeader">
-			<img src="img/intro/header.jpg" />
+			<img src="img/intro/header.jpg" alt="Top 10 builder conversations" />
 		</div>
 		<div class="contentBox">
 			<p>{$Content}</p>

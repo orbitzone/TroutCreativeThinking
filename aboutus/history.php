@@ -30,6 +30,7 @@ include_once($serverBase."/includes/head/head-generic.php");
             <li><a href="#slide1976">1976</a></li>
             <li><a href="#slide1997">1997</a></li>
             <li><a href="#slide1998">1998</a></li>
+            <li><a href="#slide2005">2005</a></li>
         </ul>
     </div>
 

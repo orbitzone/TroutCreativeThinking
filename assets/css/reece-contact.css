@@ -112,25 +112,26 @@
     padding-top: 20px;
     border-top: 1px solid #eaeaea;
   }
+  .contact-sections .contactSections:first-child {
+    border-top: none;
+  }
 }
 .contact-form {
   display: none;
+  padding: 1px 0;
 }
 .contact-form .heading {
-  margin-bottom: 1em;
+  margin: 2em 0 1em;
 }
 .contact-form .row-fluid {
-  margin-bottom: 0.75em;
-}
-.contact-form .inner-wrapper {
-  border-top: 1px solid #eaeaea;
+  margin-bottom: 2em;
 }
 .contact-form .placeholder {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
 .contact-form textarea {
-  height: 186px;
+  height: 169px;
   width: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -174,12 +175,24 @@ input[type="submit"] {
 .head-office {
   padding: 3em 0 4em 0;
 }
+.head-office .reeceSupportIcon {
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  background: url(../images/aboutus/contact/support-icon.png) no-repeat;
+}
 .head-office dt {
   color: #003767;
 }
 .head-office dt,
 .head-office dd {
   line-height: 2.1em;
+}
+.headOfficeWrap {
+  background: #fafafa;
+}
+.storeFinderWrap .content-container {
+  padding: 2em 0;
 }
 .storeContactWrap {
   padding-bottom: 10px;

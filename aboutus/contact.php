@@ -26,75 +26,88 @@ include_once($serverBase."/includes/head/head-generic.php");
                     <li class="active page-branding text-brand">Contact us</li>
                 </ul>
                 <h3>Contact Us</h3>
-                <div class="storeContactWrap">
-                <?php $state = $_GET['state'];
-                if ($state == "loggedIn" || $state == "retail"){
-                ?>
-                    <div class="">
-                        <h4>Store Near You <small><a href="#contactStoreSearch" data-toggle="collapse">Change</a></small></h4>
-                        <p>421-427 Bridge Road Richmond, Vic, 3121<br/>
-                        Phone (03) 9429 5800</p>
-                        </div>
-                    <div id="contactStoreSearch" class="row-fluid collapse">
-                <?php
-                    }
-                    else{
-                        ?>
-                        <div id="contactStoreSearch" class="row-fluid">
-                        <?php 
-                    }
-                ?>
-                    
-                        <form action="http://www.reece.com.au/storefinder" method="get">
-                            <div class="span4">
-                                <h4><i class="icon-search"></i> Contact a Reece Branch</h4>
-                                <input type="text" name="address" class="span12" placeholder="Enter Suburb or Postcode">
+            </div>
+        </div>
+        <div class="grey-bg storeFinderWrap">
+            <div class="content-container">
+                <div class="inner-wrapper">
+                    <div class="storeContactWrap">
+                    <?php $state = $_GET['state'];
+                    if ($state == "loggedIn" || $state == "retail"){
+                    ?>
+                        <div class="">
+                            <h4>Store Near You <small><a href="#contactStoreSearch" data-toggle="collapse">Change</a></small></h4>
+                            <p>421-427 Bridge Road Richmond, Vic, 3121<br/>
+                            Phone (03) 9429 5800</p>
                             </div>
-                            <div class="span8">
+                        <div id="contactStoreSearch" class="collapse">
+                    <?php
+                        }
+                        else{
+                            ?>
+                            <div id="contactStoreSearch">
+                            <?php 
+                        }
+                    ?>
+                        
+                            <form action="http://www.reece.com.au/storefinder" method="get">
+                                <h4><i class="icon-search"></i> Contact a Reece Branch</h4>
                                 <h5>Tick your preferred store type</h5>
                                 <div class="row-fluid">
-                                    <div class="span8">
-                                    <ul class="selectStoreType">
-                                        <li>
-                                            <label class="checkbox plumbing">
-                                                <input name="storeTypes" type="checkbox" value="P">Plumbing
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <label class="checkbox bathroom">
-                                                <input name="storeTypes" type="checkbox" value="S">Bathroom
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <label class="checkbox irrigation">
-                                                <input name="storeTypes" type="checkbox" value="I">Irrigation
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <label class="checkbox civil">
-                                                <input name="storeTypes" type="checkbox" value="C">Civil
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <label class="checkbox hvac">
-                                                <input name="storeTypes" type="checkbox" value="R">hvac-r
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <label class="checkbox onsite">
-                                                <input name="storeTypes" type="checkbox" value="O">Onsite
-                                            </label>
-                                        </li>
-                                    </ul>
+                                    <div class="span6">
+                                        
+
+                                            <ul class="selectStoreType">
+                                                <li>
+                                                    <label class="checkbox plumbing">
+                                                        <input name="storeTypes" type="checkbox" value="P">Plumbing
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox bathroom">
+                                                        <input name="storeTypes" type="checkbox" value="S">Bathroom
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox irrigation">
+                                                        <input name="storeTypes" type="checkbox" value="I">Irrigation
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox civil">
+                                                        <input name="storeTypes" type="checkbox" value="C">Civil
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox hvac">
+                                                        <input name="storeTypes" type="checkbox" value="R">hvac-r
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox onsite">
+                                                        <input name="storeTypes" type="checkbox" value="O">Onsite
+                                                    </label>
+                                                </li>
+                                            </ul>
+
+
                                     </div>
                                     <div class="span4">
-                                    <input type="submit" value="Find" class="submit">
+                                        
+                                        <input type="text" name="address" class="span12" placeholder="Enter Suburb or Postcode">
+                                    </div>
+                                    <div class="span2">
+                                        <input type="submit" value="Find" class="submit">
                                     </div>
                                 </div>
-                            </div>
-                        </form>
+                            </form>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="content-container contact-sections">
+            <div class="inner-wrapper">
                 <div class="row-fluid contactSections">
                     <!--<section class="span4 store-finder">
                         <div class="icon"></div>
@@ -153,52 +166,53 @@ include_once($serverBase."/includes/head/head-generic.php");
                     </section>
                     <section class="span4 headoffice">
                         <div class="icon"></div>
-                        <h4>Head Office</h4>
+                        <h4>Reece Support Centre</h4>
                         <p>
-                            If you have any questions or requests that aren't covered by any of the other contacts on this page please <a href="#headOffice" data-toggle="collapse" data-target="#headOffice">contact Head Office</a> for assistance.
+                            If you have any questions or requests that aren't covered by any of the other contacts on this page please contact <a href="#supportCentre" data-toggle="collapse" data-target="#supportCentre">Reece Support Centre</a> for assistance.
                             
                         </p>
                     </section>
                 </div>
             </div>
         </div>
-
-        <div class="content-container contact-form">
-            <div class="inner-wrapper">
-                <h4 class="heading"><i class="icon-envelope"></i> Email us</h4>
-                <div class="row-fluid">
-                    <div class="span6">
-                        <div class="row-fluid">
-                            <input type="text" class="span6" placeholder="First Name">
-                            <input type="text" class="span6" placeholder="Surname">
+        <div class="grey-bg">
+            <div class="content-container contact-form">
+                <div class="inner-wrapper">
+                    <h4 class="heading"><i class="icon-envelope"></i> Email us</h4>
+                    <div class="row-fluid">
+                        <div class="span6">
+                            <div class="row-fluid">
+                                <input type="text" class="span6" placeholder="First Name">
+                                <input type="text" class="span6" placeholder="Surname">
+                            </div>
+                            <div class="row-fluid">
+                                <input type="email" class="span6" placeholder="Email adress">
+                                <input type="number" class="span6" placeholder="Phone">
+                            </div>
+                            <div class="row-fluid">
+                                <select class="span12" id="topic">
+                                    <option>General Enquiry</option>
+                                    <option>Customer Care and Warranties</option>
+                                    <option>Customer Service Feedback</option>
+                                    <option>Quotes on Products</option>
+                                    <option>Website Login Issues</option>
+                                    <option>Account Updates</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="row-fluid">
-                            <input type="email" class="span6" placeholder="Email adress">
-                            <input type="number" class="span6" placeholder="Phone">
+                        <div class="span6">
+                            <textarea  placeholder="Comments"></textarea>
+                            <input type="submit" value="Submit" class="submit">
                         </div>
-                        <div class="row-fluid">
-                            <select class="span12" id="topic">
-                                <option>General Enquiry</option>
-                                <option>Customer Care and Warranties</option>
-                                <option>Customer Service Feedback</option>
-                                <option>Quotes on Products</option>
-                                <option>Website Login Issues</option>
-                                <option>Account Updates</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="span6">
-                        <textarea  placeholder="Comments"></textarea>
-                        <input type="submit" value="Submit" class="submit">
                     </div>
                 </div>
             </div>
         </div>
-        <div id="headOffice" class="grey-bg collapse">
+        <div id="supportCentre" class="grey-bg headOfficeWrap collapse">
             <section class="head-office">
                 <div class="content-container">
                     <div class="inner-wrapper">
-                        <h4>Contact Head Office</h4>
+                        <h4><i class="reeceSupportIcon"></i> Reece Support Centre</h4>
                         <div class="row-fluid">
                             <dl>
                                 <dt class="span1">

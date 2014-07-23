@@ -9,10 +9,10 @@
 // TVC
 //====================================================================================================================================
 //====================================================================================================================================
-@bebas-font: "Bebas Neue";
+@bebas-font: "bebas-neue";
 
-body,ocmain-wrapper {
-  background: #FFFFFF url("../images/the-block-2014-tvc/background.jpg") no-repeat;
+.ocmain-wrapper {
+  background: #FFFFFF url("../images/the-block-2014-tvc/background.jpg") no-repeat !important;
 }
 
 
@@ -112,17 +112,13 @@ body,ocmain-wrapper {
     .enter-button {
       background: #5ac09d url("../images/the-block-2014-tvc/button-arrow-green.png") no-repeat;
       max-width: 200px;
-      height:22px;
-      padding-top: 14px;
-      padding-bottom: 14px;
+      padding:10px 0;
       
       a{
         font-family: @bebas-font; 
         font-weight:100;
         font-size: 30px;
         line-height: 30px;
-        padding-top: 10px;
-        padding-bottom: 10px;
         margin-left:50px;
         color:#FFFFFF;
         &:hover{
@@ -215,7 +211,10 @@ body,ocmain-wrapper {
       line-height: 48px;
       padding-top: 30px;
       color: #FFFFFF;
-
+      @media (max-width:480px){
+        clear: both;
+        padding:0 10px 0 25px;
+      }
     }
     
     .enter-now{
@@ -229,7 +228,7 @@ body,ocmain-wrapper {
     form{
         margin-bottom: 0;
 
-        input,textarea{
+        input[type="text"],textarea{
           padding:20px 20px;
           font-size: 16px;
           line-height: 16px;
@@ -310,8 +309,7 @@ body,ocmain-wrapper {
           background: #efd343 url("../images/the-block-2014-tvc/button-arrow-yellow.png") no-repeat;
           width: 200px;
           height:50px;
-          padding-top: 14px;
-          padding-bottom: 14px;
+          padding:10px 0;
           font-family: @bebas-font; 
           font-weight:100;
           font-size: 30px;
@@ -353,8 +351,7 @@ body,ocmain-wrapper {
       background: #efd343 url("../images/the-block-2014-tvc/button-arrow-yellow.png") no-repeat;
       width: 230px;
       height:50px;
-      padding-top: 14px;
-      padding-bottom: 14px;
+      padding:10px 0;
       font-family: @bebas-font; 
       font-weight:100;
       font-size: 30px;

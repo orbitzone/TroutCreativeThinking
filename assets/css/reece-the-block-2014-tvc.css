@@ -25,9 +25,8 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-body,
-ocmain-wrapper {
-  background: #ffffff url("../images/the-block-2014-tvc/background.jpg") no-repeat;
+.ocmain-wrapper {
+  background: #ffffff url("../images/the-block-2014-tvc/background.jpg") no-repeat !important;
 }
 .tvc .main-wrapper {
   background: transparent;
@@ -108,7 +107,7 @@ ocmain-wrapper {
   padding-bottom: 10px;
 }
 .tvc .main-heading h1 {
-  font-family: "Bebas Neue";
+  font-family: "bebas-neue";
   font-weight: 100;
   font-size: 101px;
   line-height: 90px;
@@ -126,7 +125,7 @@ ocmain-wrapper {
   height: 580px;
 }
 .tvc .main-heading.homepage h1 {
-  font-family: "Bebas Neue";
+  font-family: "bebas-neue";
   font-weight: 100;
   font-size: 101px;
   line-height: 90px;
@@ -141,17 +140,13 @@ ocmain-wrapper {
 .tvc .main-heading.homepage .enter-button {
   background: #5ac09d url("../images/the-block-2014-tvc/button-arrow-green.png") no-repeat;
   max-width: 200px;
-  height: 22px;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding: 10px 0;
 }
 .tvc .main-heading.homepage .enter-button a {
-  font-family: "Bebas Neue";
+  font-family: "bebas-neue";
   font-weight: 100;
   font-size: 30px;
   line-height: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
   margin-left: 50px;
   color: #FFFFFF;
 }
@@ -165,7 +160,7 @@ ocmain-wrapper {
   background-color: #FFFFFF;
 }
 .tvc .sub-heading p {
-  font-family: "Bebas Neue";
+  font-family: "bebas-neue";
   font-weight: 100;
   text-transform: capitalize;
   color: #7B7B7B;
@@ -186,14 +181,14 @@ ocmain-wrapper {
   background: #FFF;
 }
 .tvc .homepage-video p.primary-text {
-  font-family: "Bebas Neue";
+  font-family: "bebas-neue";
   font-weight: 100;
   font-size: 30px;
   line-height: 30px;
   color: #7B7B7B;
 }
 .tvc .homepage-video p.secondary-text {
-  font-family: "Bebas Neue";
+  font-family: "bebas-neue";
   font-weight: 100;
   font-size: 24px;
   line-height: 24px;
@@ -212,14 +207,14 @@ ocmain-wrapper {
   padding: 20px;
 }
 .tvc .competition-details h5 {
-  font-family: "Bebas Neue";
+  font-family: "bebas-neue";
   font-weight: 100;
   font-size: 18px;
   line-height: 18px;
   color: #FFFFFF;
 }
 .tvc .competition-details p {
-  font-family: "Bebas Neue";
+  font-family: "bebas-neue";
   font-weight: 100;
   font-size: 30px;
   line-height: 30px;
@@ -229,12 +224,18 @@ ocmain-wrapper {
   background: #5ac09d;
 }
 .tvc .homepage-form h2 {
-  font-family: "Bebas Neue";
+  font-family: "bebas-neue";
   font-weight: 100;
   font-size: 48px;
   line-height: 48px;
   padding-top: 30px;
   color: #FFFFFF;
+}
+@media (max-width: 480px) {
+  .tvc .homepage-form h2 {
+    clear: both;
+    padding: 0 10px 0 25px;
+  }
 }
 .tvc .homepage-form .enter-now {
   position: relative;
@@ -247,7 +248,7 @@ ocmain-wrapper {
 .tvc .homepage-form form {
   margin-bottom: 0;
 }
-.tvc .homepage-form form input,
+.tvc .homepage-form form input[type="text"],
 .tvc .homepage-form form textarea {
   padding: 20px 20px;
   font-size: 16px;
@@ -294,7 +295,7 @@ ocmain-wrapper {
   border-top: solid 2px white;
 }
 .tvc .homepage-form form .formSections .description h3 {
-  font-family: "Bebas Neue";
+  font-family: "bebas-neue";
   font-weight: 100;
   font-size: 14px;
   line-height: 14px;
@@ -302,7 +303,7 @@ ocmain-wrapper {
   margin-top: 0;
 }
 .tvc .homepage-form form .formSections .description p {
-  font-family: "Bebas Neue";
+  font-family: "bebas-neue";
   font-weight: 100;
   font-size: 30px;
   line-height: 30px;
@@ -336,9 +337,8 @@ ocmain-wrapper {
   background: #efd343 url("../images/the-block-2014-tvc/button-arrow-yellow.png") no-repeat;
   width: 200px;
   height: 50px;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  font-family: "Bebas Neue";
+  padding: 10px 0;
+  font-family: "bebas-neue";
   font-weight: 100;
   font-size: 30px;
   line-height: 30px;
@@ -357,7 +357,7 @@ ocmain-wrapper {
   padding: 30px;
 }
 .tvc .terms-conditions h2 {
-  font-family: "Bebas Neue";
+  font-family: "bebas-neue";
   font-weight: 100;
   font-size: 30px;
   line-height: 30px;
@@ -373,9 +373,8 @@ ocmain-wrapper {
   background: #efd343 url("../images/the-block-2014-tvc/button-arrow-yellow.png") no-repeat;
   width: 230px;
   height: 50px;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  font-family: "Bebas Neue";
+  padding: 10px 0;
+  font-family: "bebas-neue";
   font-weight: 100;
   font-size: 30px;
   line-height: 30px;
@@ -399,7 +398,7 @@ ocmain-wrapper {
   padding: 20px;
 }
 .tvc .view-entries .one-entry .entry-info a {
-  font-family: "Bebas Neue";
+  font-family: "bebas-neue";
   font-weight: 100;
   font-size: 28px;
   line-height: 28px;
@@ -415,7 +414,7 @@ ocmain-wrapper {
 }
 .tvc .prizes-page .prize-wrapper {
   padding: 20px 40px;
-  font-family: "Bebas Neue";
+  font-family: "bebas-neue";
   font-weight: 100;
 }
 .tvc .prizes-page .prize-name {
@@ -440,7 +439,7 @@ ocmain-wrapper {
   line-height: 18px;
 }
 .tvc .terms-page h3 {
-  font-family: "Bebas Neue";
+  font-family: "bebas-neue";
   font-weight: 100;
   font-size: 28px;
   line-height: 28px;
@@ -451,7 +450,7 @@ ocmain-wrapper {
 .tvc .tvcPagination .pageNumber {
   border: 0;
   color: #FFFFFF;
-  font-family: "Bebas Neue";
+  font-family: "bebas-neue";
 }
 .tvc .tvcPagination .disabled a {
   background: #5ac09d;

@@ -75,8 +75,7 @@
                         <!--main-image-->
 
                         <!--main-section-->
-                          <div class="row-fluid main-section">
-                            <div class="span12">
+                          <div class="main-section">
                               <!--prizes container-->
                               <div class="row-fluid prizes-section with-ruler">
                                 <div class="span5 prize-name">
@@ -124,8 +123,6 @@
 
                               </div>
                               <!--prizes container-->
-                              
-                            </div>
                           </div> 
                         <!--main-section-->
 

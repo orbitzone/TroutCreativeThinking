@@ -229,10 +229,10 @@
         margin-bottom: 0;
 
         input[type="text"],textarea{
-          padding:20px 20px;
+          padding:10px ;
+          height: 50px;
           font-size: 16px;
           line-height: 16px;
-          min-height:60px;
           margin-bottom: 15px;
         }
         .drag-drop {
@@ -288,19 +288,20 @@
           }
           .criteriaLink{
             border:dashed 1px #FFFFFF;
-            padding: 15px;
-            height: 16px;
+            padding: 15px 25px 15px 5px;
             text-align:center;
             display: block;
             line-height: 16px;
             cursor: pointer;
             color: white;
+            position: relative;
             .caret{
-              border-width: 8px;
-              border-top:8px solid white;
-              position: relative;
-              top: 3px;
-              left: 2px;
+              border-width: 5px;
+              border-top:5px solid white;
+              position: absolute;
+              right: 10px;
+              top: 50%;
+              margin-top: -2px;
             }
             &:hover{text-decoration: none;}
           }
@@ -363,7 +364,6 @@
       padding:20px 20px;
       font-size: 16px;
       line-height: 16px;
-      min-height:60px;
       margin-bottom: 15px;
     }
     .formWrapper{
@@ -400,25 +400,31 @@
 
   .prizes-page {
     .prize-wrapper {
-      padding: 20px 40px;
+      padding: 20px 40px 0;
       font-family: @bebas-font; 
       font-weight:100;
     }
     .prize-name{
       color:#5ac09d;
-      font-size: 60px;
-      line-height: 60px;
-
+      font-size: 50px;
+      line-height: 1em;
     }
     .prize-description {
       color:#7b7b7b;
-      font-size: 36px;
-      line-height: 36px;
-
+      font-size: 30px;
+      line-height: 1em;
     }
     .with-ruler{
       background: #ffffff url("../images/the-block-2014-tvc/prize-ruler.jpg") no-repeat bottom left;
-      padding-bottom: 60px;
+      padding-bottom: 80px;
+    }
+    @media (max-width:767px){
+      .prize-name{
+        font-size: 40px
+      }
+      .prize-description{
+        font-size: 24px
+      }
     }
   }
 

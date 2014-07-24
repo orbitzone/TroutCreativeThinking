@@ -17,13 +17,13 @@
     if( $tvcPage == $value['url']){
       $currentClass = ' active';
     }
-    $elemId ='';
+    $elemClass ='';
     if($value['url'] == 'submit'){
       $hrefValue = 'index.php#submit';
-      $elemId = 'id="linkSubmit"';
+      $elemClass = 'class="linkSubmit"';
     }
     
-      $nav .= '<div class="listItem'.$currentClass.$longLinkClass.'"><a '.$elemId.' href="'.$hrefValue.'"> <span class="tvcnavtext">'.$value['title'].'</span></a></div>';
+      $nav .= '<div class="listItem'.$currentClass.$longLinkClass.'"><a '.$elemClass.' href="'.$hrefValue.'"> <span class="tvcnavtext">'.$value['title'].'</span></a></div>';
 
   }
   echo $nav;

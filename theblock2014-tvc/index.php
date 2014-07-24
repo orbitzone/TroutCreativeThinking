@@ -43,7 +43,7 @@
                           <div class="row-fluid main-heading homepage">
                             <div class="span5 offset7">
                               <h1><span class="second-color">Win</span> your<br /> ultimate <br />bathroom</h1>
-                              <div class="enter-button"><a href="#">Enter now</a></div>
+                              <div class="enter-button"><a href="#" class="linkSubmit">Enter now</a></div>
                             </div>
                           </div> 
                         <!--heading-->
@@ -252,7 +252,7 @@
     ?>      
 <script type="text/javascript">
   $(function(){
-    $('#linkSubmit').click(function(e){
+    $('.linkSubmit').click(function(e){
       e.preventDefault();
       $('html, body').animate({scrollTop: $("#submit").offset().top}, 1000);
     })

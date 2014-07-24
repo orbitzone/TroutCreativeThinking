@@ -169,11 +169,8 @@
   margin-left: 30px;
   margin-right: 30px;
 }
-.tvc .sub-heading a {
+.tvc .sub-heading .second-color {
   color: #efd343;
-}
-.tvc .sub-heading a:hover {
-  text-decoration: none;
 }
 .tvc .homepage-video {
   padding-top: 30px;
@@ -406,20 +403,18 @@
   margin-bottom: 15px;
   padding: 20px;
 }
-.tvc .view-entries .one-entry .entry-info a {
+.tvc .view-entries .one-entry .entry-info h3 {
   font-family: "bebas-neue";
   font-weight: 100;
   font-size: 28px;
   line-height: 28px;
-}
-.tvc .view-entries .one-entry .entry-info a:hover {
-  text-decoration: none;
-}
-.tvc .view-entries .one-entry .entry-info a.entry-name {
   color: #7b7b7b;
 }
-.tvc .view-entries .one-entry .entry-info a.entry-state {
+.tvc .view-entries .one-entry .entry-info .second-color {
   color: #efd343;
+}
+.tvc .view-entries .one-entry .entry-info p {
+  color: #7b7b7b;
 }
 .tvc .prizes-page .prize-wrapper {
   padding: 20px 40px 0;

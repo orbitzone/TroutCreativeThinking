@@ -145,9 +145,11 @@
       margin-left: 30px;
       margin-right: 30px;
     }
-
-    .second-color{
-      color:#efd343;
+    a{
+      color: #efd343;
+      &:hover{
+        text-decoration: none;
+      }
     }
   }
 
@@ -228,10 +230,12 @@
 
         input[type="text"],textarea{
           padding:10px ;
-          height: 50px;
           font-size: 16px;
           line-height: 16px;
           margin-bottom: 15px;
+        }
+        input[type="text"]{
+          height: 50px;
         }
         .drag-drop {
           background:#40886F;
@@ -244,6 +248,10 @@
         }
         .checkbox{
           color: white;
+          input[type="checkbox"]{
+            margin-top: 0;
+            padding: 0;
+          }
         }
         .completionCheck {
           .clearfix;
@@ -378,18 +386,20 @@
         background:#FFFFFF;
         margin-bottom: 15px;
         padding: 20px;
-        h3{
+        a{
           font-family: @bebas-font; 
           font-weight:100;
           font-size: 28px;
           line-height: 28px;
-          color: #7b7b7b;
+          &:hover{
+            text-decoration: none;
+          }
         }
-        .second-color{
+        a.entry-name{
+          color:#7b7b7b;
+        }
+        a.entry-state{
           color:#efd343;
-        }
-        p{
-          color: #7b7b7b;
         }
       }
     }
@@ -1160,4 +1170,15 @@ font-weight:normal !important;
         width: 100%;
         margin-bottom: 10px;
     }
+}
+
+
+/* IE Fixes */
+.lt-ie9{
+  .tvc {
+    .checkbox input[type="checkbox"]{
+      position: relative;
+      left: -3px;
+    }
+  }
 }

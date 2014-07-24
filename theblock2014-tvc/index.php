@@ -246,6 +246,7 @@
           "/assets/js/bootstrap-dropdown.js",
           "/assets/js/reece-ocnav.js",
           "/assets/js/reece-carousel.js",
+          "/assets/js/placeholder.js",
           "/assets/js/fancybox/jquery.fancybox.js"
         ); 
         include_once($serverBase."/includes/foot/scripts.php");

@@ -388,9 +388,13 @@
   font-weight: 100;
   font-size: 28px;
   line-height: 28px;
+  color: #7b7b7b;
 }
 .tvc .view-entries .one-entry .entry-info .second-color {
   color: #efd343;
+}
+.tvc .view-entries .one-entry .entry-info p {
+  color: #7b7b7b;
 }
 .tvc .prizes-page .prize-wrapper {
   padding: 20px 40px 0;

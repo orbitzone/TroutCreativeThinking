@@ -62,7 +62,7 @@
                           <div class="row-fluid sub-heading">
                             <div class="span12">
                               <p>Here are some entries we&rsquo;ve already received.</p>
-                              <p><a href="#">Create your own entry</a> today for a chance to win your ultimate bathroom.</p>
+                              <p><span class="second-color">Create your own entry</span> today for a chance to win your ultimate bathroom.</p>
                             </div>
                           </div> 
                         <!--sub-heading-->
@@ -76,11 +76,9 @@
 
                                 <!-- one entry -->
                                 <div class="span6 one-entry">
-                                  <a href="#">
-                                    <img src="/assets/images/the-block-2014-tvc/entry1.jpg" alt=""/>
-                                  </a>
+                                  <img src="/assets/images/the-block-2014-tvc/entry1.jpg" alt=""/>
                                   <div class="entry-info">
-                                    <h3> <a href="#" class="entry-name">Jan and Steve</a> <a href="#" class="entry-state">NSW</a></h3>
+                                    <h3> Jan and Steve <span class="second-color">NSW</span></h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                                   </div>
                                 </div>
@@ -88,11 +86,9 @@
 
                                 <!-- one entry -->
                                 <div class="span6 one-entry">
-                                  <a href="#">
-                                    <img src="/assets/images/the-block-2014-tvc/entry2.jpg" alt=""/>
-                                  </a>
+                                  <img src="/assets/images/the-block-2014-tvc/entry1.jpg" alt=""/>
                                   <div class="entry-info">
-                                    <h3> <a href="#" class="entry-name">Jan and Steve</a> <a href="#" class="entry-state">NSW</a></h3>
+                                    <h3> Jan and Steve <span class="second-color">NSW</span></h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                                   </div>
                                 </div>
@@ -102,11 +98,9 @@
 
                                 <!-- one entry -->
                                 <div class="span6 one-entry">
-                                  <a href="#">
-                                    <img src="/assets/images/the-block-2014-tvc/entry1.jpg" alt=""/>
-                                  </a>
+                                  <img src="/assets/images/the-block-2014-tvc/entry1.jpg" alt=""/>
                                   <div class="entry-info">
-                                    <h3> <a href="#" class="entry-name">Jan and Steve</a> <a href="#" class="entry-state">NSW</a></h3>
+                                    <h3> Jan and Steve <span class="second-color">NSW</span></h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                                   </div>
                                 </div>
@@ -114,11 +108,9 @@
 
                                 <!-- one entry -->
                                 <div class="span6 one-entry">
-                                  <a href="#">
-                                    <img src="/assets/images/the-block-2014-tvc/entry2.jpg" alt=""/>
-                                  </a>
+                                  <img src="/assets/images/the-block-2014-tvc/entry1.jpg" alt=""/>
                                   <div class="entry-info">
-                                    <h3> <a href="#" class="entry-name">Jan and Steve</a> <a href="#" class="entry-state">NSW</a></h3>
+                                    <h3> Jan and Steve <span class="second-color">NSW</span></h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                                   </div>
                                 </div>
@@ -129,11 +121,9 @@
 
                                 <!-- one entry -->
                                 <div class="span6 one-entry">
-                                  <a href="#">
-                                    <img src="/assets/images/the-block-2014-tvc/entry1.jpg" alt=""/>
-                                  </a>
+                                  <img src="/assets/images/the-block-2014-tvc/entry1.jpg" alt=""/>
                                   <div class="entry-info">
-                                    <h3> <a href="#" class="entry-name">Jan and Steve</a> <a href="#" class="entry-state">NSW</a></h3>
+                                    <h3> Jan and Steve <span class="second-color">NSW</span></h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                                   </div>
                                 </div>
@@ -141,11 +131,9 @@
 
                                 <!-- one entry -->
                                 <div class="span6 one-entry">
-                                  <a href="#">
-                                    <img src="/assets/images/the-block-2014-tvc/entry2.jpg" alt=""/>
-                                  </a>
+                                  <img src="/assets/images/the-block-2014-tvc/entry1.jpg" alt=""/>
                                   <div class="entry-info">
-                                    <h3> <a href="#" class="entry-name">Jan and Steve</a> <a href="#" class="entry-state">NSW</a></h3>
+                                    <h3> Jan and Steve <span class="second-color">NSW</span></h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                                   </div>
                                 </div>

@@ -133,7 +133,8 @@
 #slide1919 {
   background-color: #00ADEF;
 }
-#slide1919 svg {
+#slide1919 svg,
+#slide1919 img {
   height: 100%;
 }
 #slide1919 #road-1919 div {
@@ -169,6 +170,69 @@
   height: 40%;
   text-align: center;
 }
+#slide1920 {
+  background-color: #c2b49a;
+}
+#slide1920 svg,
+#slide1920 img {
+  height: 100%;
+}
+#slide1920 #ground-1920 div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 14%;
+  width: 100%;
+  background-color: #8a5d3b;
+}
+#slide1920 #shop-1920 div {
+  position: absolute;
+  left: 0;
+  bottom: 13.8%;
+  height: 54%;
+  width: 100%;
+  text-align: center;
+}
+#slide1920 #sign-1920 div {
+  position: absolute;
+  left: 0;
+  bottom: 13.8%;
+  height: 54%;
+  width: 100%;
+  text-align: center;
+}
+#slide1920 #cloud-1920 div {
+  position: absolute;
+  bottom: 14%;
+  left: 0;
+  right: 0;
+  height: 40%;
+  text-align: center;
+}
+#slide1922 {
+  background-color: #9a8478;
+}
+#slide1922 svg,
+#slide1922 img {
+  height: 100%;
+  width: auto;
+}
+#slide1922 #logo-1922 div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+#slide1922 #stamp-1922 div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
 #slide1954 {
   background: #00A0AF;
   background-size: 100% auto;
@@ -184,33 +248,202 @@
   background: url("../images/aboutus/history/ticker.png") repeat-x;
   height: 40px;
 }
-#slide1976 {
+#slide1969 {
+  background-image: url("../images/aboutus/history/1969-wall.svg");
+}
+#slide1969 svg,
+#slide1969 img {
+  height: 100%;
+}
+#slide1969 #painting-1969 div {
+  position: absolute;
+  top: 33.333333333333336%;
+  height: 50%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+#slide1969 #couch-1969 div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  text-align: right;
+}
+#slide1969 #lamp-1-1969 div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  text-align: left;
+}
+#slide1969 #lamp-1-1969 #overlay-1969 {
+  background-color: #0c2731;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+#slide1969 #lamp-2-1969 div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  text-align: left;
+}
+#slide1970 {
+  background-color: #00adef;
+}
+#slide1970 svg,
+#slide1970 img {
+  height: 100%;
+}
+#slide1970 #buildings-1-1970 div,
+#slide1970 #buildings-2-1970 div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+#slide1970 #ground-1970 div {
+  background-color: #006f3c;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 9.5%;
+  width: 100%;
+}
+#slide1970 #cloud-1970 div {
+  position: absolute;
+  bottom: 9%;
+  left: 0;
+  right: 0;
+  height: 40%;
+  text-align: center;
+}
+#slide1976-1 {
+  background-color: #1b75bb;
+}
+#slide1976-1 svg,
+#slide1976-1 img {
+  height: 100%;
+}
+#slide1976-1 #building-1976-1 div {
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  text-align: center;
+}
+#slide1976-1 #ground-1976-1 div {
+  background-color: #404041;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 20%;
+  width: 100%;
+}
+#slide1976-1 #labels-1976-1 {
+  position: absolute;
+  bottom: 0;
+  top: auto;
+  left: 10%;
+  height: 20%;
+  width: 80%;
+  display: table;
+}
+#slide1976-1 #labels-1976-1 div {
+  width: 50%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: 100;
+}
+#slide1976-1 #labels-1976-1 div.left {
+  font-size: 30px;
+}
+#slide1976-1 #labels-1976-1 div.right {
+  font-size: 50px;
+}
+#slide1976-2 {
   background: #1C75BC;
 }
-#slide1976 .ground {
+#slide1976-2 .ground {
   background: #414042;
   height: 100px;
   position: relative;
 }
-#slide1976 .stage {
+#slide1976-2 .stage {
   position: relative;
   top: 1px;
   overflow: hidden;
   padding-top: 150px;
 }
-#slide1976 .utes {
+#slide1976-2 .utes {
   background: url("../images/aboutus/history/ute.svg") repeat-x;
   height: 77px;
   position: relative;
   width: 3000px;
 }
-#slide1976 .wareHouse {
+#slide1976-2 .wareHouse {
   background: url("../images/aboutus/history/warehouse.svg") no-repeat center 0;
   height: 205px;
   position: absolute;
   left: 0;
   right: 0;
   bottom: 100px;
+}
+#slide1978-1 {
+  background-color: #00adef;
+}
+#slide1978-1 #ground-1978-1 {
+  background-color: #38b449;
+  position: absolute;
+  bottom: 0;
+  top: auto;
+  left: 0;
+  width: 100%;
+  height: 14%;
+}
+#slide1978-1 #gate-1978-1 .wrap {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 14%;
+  top: auto;
+  overflow: hidden;
+}
+#slide1978-1 #gate-1978-1 .fence {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+}
+#slide1978-1 #gate-1978-1 .fence .gate {
+  height: auto;
+  width: 100%;
+}
+#slide1978-1 #gate-1978-1 .fence .sign {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+#slide1978-1 #gate-1978-1 .fence .wire {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 400%;
+}
+#slide1978-1 #gate-1978-1 .fence .wire.left {
+  right: 100%;
+}
+#slide1978-1 #gate-1978-1 .fence .wire.right {
+  left: 100%;
 }
 #slide1997 {
   background: #5A4B42;

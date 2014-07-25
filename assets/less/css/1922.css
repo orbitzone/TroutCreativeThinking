@@ -1,0 +1,22 @@
+#slide1922 {
+  background-color: #9a8478;
+}
+#slide1922 svg {
+  height: 100%;
+}
+#slide1922 #logo-1922 div {
+  position: absolute;
+  left: 0;
+  bottom: 13.8%;
+  height: 54%;
+  width: 100%;
+  text-align: center;
+}
+#slide1922 #stamp-1922 div {
+  position: absolute;
+  bottom: 14%;
+  left: 0;
+  right: 0;
+  height: 40%;
+  text-align: center;
+}

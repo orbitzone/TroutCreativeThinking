@@ -1,0 +1,23 @@
+#slide1976 {
+  background-color: #00adef;
+}
+#slide1976 svg,
+#slide1976 img {
+  height: 100%;
+}
+#slide1976 #building-1976 div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+#slide1976 #ground-1976 div {
+  background-color: #006f3c;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 9.5%;
+  width: 100%;
+}

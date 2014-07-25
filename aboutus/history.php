@@ -98,21 +98,22 @@
 		include_once($serverBase."/includes/foot/scripts.php");
 	?>
 	<script type="text/javascript">
-		$(window).on('load resize', function() {
-			$('section').css('height', $(window).height());
+		$(window).on('resize', function() {
+			$('section').css('height', $(window).height()*0.8);
+			var s = skrollr.init({
+				smoothScrolling : true,
+				smoothScrollingDuration: 2000,
+				keyframe: function(element, name, direction) {
+        			console.log(element, name, direction);
+        		}
+    		});
 		});
-		$(function(){
-			var s = skrollr.init([smoothScrolling=true,smoothScrollingDuration=2000]);
+		$(document).on('ready', function(){
+		 	// Make sure skrollr lays out properly
+    		$(window).trigger('resize');
 		});
 
 	</script>
-	<style>
-		section {
-			height: 800px;
-			background-color: #eee;
-			border-bottom: 1px solid #ccc;
-		}
-	</style>
 
 </body>
 </html>

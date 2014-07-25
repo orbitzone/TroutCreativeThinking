@@ -1,0 +1,24 @@
+#slide1970 {
+  background-color: #00adef;
+}
+#slide1970 svg,
+#slide1970 img {
+  height: 100%;
+}
+#slide1970 #building-1-1970 div,
+#slide1970 #building-2-1970 div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+#slide1970 #ground-1970 div {
+  background-color: #006f3c;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 140%;
+  width: 100%;
+}

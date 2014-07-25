@@ -1,0 +1,39 @@
+#slide1920 {
+  background-color: #c2b49a;
+}
+#slide1920 svg {
+  height: 100%;
+}
+#slide1920 #ground-1920 div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 16%;
+  width: 100%;
+  background-color: #8a5d3b;
+}
+#slide1920 #car-1920 div {
+  position: absolute;
+  left: 0;
+  bottom: 14%;
+  height: 50%;
+  width: 100%;
+  text-align: center;
+}
+#slide1920 #sign-1920 div {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  right: 0;
+  height: 40%;
+  text-align: center;
+  padding-left: 35%;
+}
+#slide1920 #cloud-1920 div {
+  position: absolute;
+  bottom: 16%;
+  left: 0;
+  right: 0;
+  height: 40%;
+  text-align: center;
+}

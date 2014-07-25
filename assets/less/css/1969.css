@@ -1,0 +1,31 @@
+#slide1969 {
+  background-image: url("@{@imagepath}/1969-wall.svg");
+}
+#slide1969 svg {
+  height: 100%;
+}
+#slide1969 #painting-1969 div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 16%;
+  width: 100%;
+  background-color: #58585B;
+}
+#slide1969 #couch-1969 div {
+  position: absolute;
+  left: 0;
+  bottom: 14%;
+  height: 50%;
+  width: 100%;
+  text-align: center;
+}
+#slide1969 #lamp-1969 div {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  right: 0;
+  height: 40%;
+  text-align: center;
+  padding-left: 35%;
+}

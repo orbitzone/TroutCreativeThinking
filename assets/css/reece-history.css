@@ -566,6 +566,39 @@
 #slide1987-2 #new-1987-2 {
   background-color: #003767;
 }
+#slide1987-3 {
+  background-color: #c4122f;
+}
+#slide1987-3 img {
+  height: 100%;
+  width: auto;
+  max-width: 200%;
+}
+#slide1987-3 #background-1987-3 div {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+}
+#slide1987-3 #background-1987-3 div.left {
+  float: left;
+  background-color: #006738;
+}
+#slide1987-3 #background-1987-3 div.right {
+  float: right;
+  background-color: #00adef;
+}
+#slide1987-3 #map-1987-3 div {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+#slide1987-3 #label-1987-3 div {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+}
 #slide1997 {
   background: #5A4B42;
   background-size: 100% auto;

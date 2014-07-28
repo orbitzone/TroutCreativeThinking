@@ -546,6 +546,26 @@
 #slide1987-2 {
   background-color: #c4122f;
 }
+#slide1987-2 img {
+  height: 100%;
+  width: auto;
+  max-width: 70%;
+}
+#slide1987-2 #old-1987-2 div,
+#slide1987-2 #new-1987-2 div {
+  height: 20%;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+#slide1987-2 #old-1987-2 {
+  background-color: #c4122f;
+}
+#slide1987-2 #new-1987-2 {
+  background-color: #003767;
+}
 #slide1997 {
   background: #5A4B42;
   background-size: 100% auto;

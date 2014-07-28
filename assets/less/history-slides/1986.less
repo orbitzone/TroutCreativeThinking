@@ -1,0 +1,63 @@
+#slide1986{
+	@b: 16%;
+	background-color: #00adef;
+	img {
+		width: auto;
+		height: 100%;
+		position: relative;
+	}
+	#buildingA-1986-1 {
+		div {
+			position: absolute;
+			bottom: @b;
+			right: 10%;
+			height: 40%;
+			width: 100%;
+			text-align: right;
+		}
+	}
+	#buildingB-1986-1 {
+		div {
+			position: absolute;
+			bottom: @b;
+			left: 10%;
+			height: 40%;
+			width: 100%;
+			text-align: left;
+		}
+	}
+	#ground-1986-1 {
+		background-color: #8cc63e;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: @b;
+		width: 100%;
+	}
+	#labels-1986-1 {
+		position: absolute;
+		bottom: 0;
+		top: auto;
+		left: 10%;
+		height: @b;
+		width: 80%;
+		display: table;
+		div {
+			width: 50%;
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+			font-weight: 100;
+			&.left {
+				font-size: 30px;
+				span {
+					width: 45%;
+					display: block;
+				}
+			}
+			&.right {
+				font-size: 50px;
+			}
+		}
+	}
+}

@@ -1,28 +1,45 @@
 #slide1976-2{
+	@g: 30%;
 	background: #1C75BC;
-	.ground{
-		background: #414042;
-		height: 100px;
-		position: relative;
+	img {
+		height: 100%;
+		width: auto;
 	}
 	.stage{
-		position: relative;
-		top:1px;
-		overflow: hidden;
-		padding-top: 150px;
-	}
-	.utes{
-		background: url("@{imagepath}/ute.svg") repeat-x;
-		height: 77px;
-		position: relative;
-		width: 3000px
-	}
-	.wareHouse{
-		background: url("@{imagepath}/warehouse.svg") no-repeat center 0;
-		height: 205px;
 		position: absolute;
-		left: 0;
-		right: 0;
-		bottom: 100px;
+		top: 34%;
+		height: 50%;
+		width: 100%;
+		overflow: hidden;
+		.ground {
+			background: #414042;
+			height: @g;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+		}
+		.utes {
+			background: url("@{imagepath}/ute.svg") repeat-x;
+			height: 77px;
+			position: absolute;
+			bottom: @g;
+			width: 3000px;
+		}
+		.wareHouse {
+			height: (100% - @g);
+			width: 100%;
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: @g;
+			text-align: center;
+			div {
+				height: 100%;
+			}
+			img {
+				position: relative;
+			}
+		}
 	}
 }

@@ -1,4 +1,5 @@
 #slide1998{
+	@b: 70px;
 	background: #00AEEF url("@{imagepath}/1998-bg-cloud.png") center 100% no-repeat ;
 	.buildingwrap{
 		display: inline-block;
@@ -8,27 +9,35 @@
 			height: 150px;
 			width: 300px;
 			position: absolute;
-			right: 200px;
+			right: 0;
 			bottom: 0;
 			background: url("@{imagepath}/1998-building.png") 0 -33% no-repeat;
 		}
 	}
 	#sprinkler1998Wrap{
-		position: relative;
+		position: absolute;
 		overflow: hidden;
 		height: 320px;
+		bottom: @b;
+		left: 0;
+		width: 100%;
+		margin-bottom: -10px;
 	}
 	.sprinklerItem{
-		position: absolute;;
+		position: absolute;
 		left: 0;
 		right: 0;
 		top: 0;
 		bottom: 0;
+		width: 800px;
+		margin: 0 auto;
 	}
 	.grass{
-		height: 70px;
+		height: @b;
 		background: url("@{imagepath}/1998-bg-grass.png") 0 0 repeat-x;
-		margin-top: -10px;
-		
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
 	}
 }

@@ -98,7 +98,7 @@
 		include_once($serverBase."/includes/foot/scripts.php");
 	?>
 	<script type="text/javascript">
-		$(window).on('resize', function() {
+		var SkrollrSetup = function {
 			$('section').css('height', $(window).height()*0.8);
 			var s = skrollr.init({
 				smoothScrolling : true,
@@ -107,12 +107,13 @@
         			console.log(element, name, direction);
         		}
     		});
+		};
+		$(document).on('ready', function() {
+			SkrollrSetup();
 		});
-		$(document).on('ready', function(){
-		 	// Make sure skrollr lays out properly
-    		$(window).trigger('resize');
+		$(window).on('resize', function() {
+			SkrollrSetup();
 		});
-
 	</script>
 
 </body>

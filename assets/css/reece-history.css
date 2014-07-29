@@ -242,8 +242,11 @@
 }
 #slide1954 .tickerWrapper {
   background: #E6E7E8;
-  margin: 2% 0 15%;
   padding: 40px 0;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100%;
 }
 #slide1954 .tickerWrapper .ticker {
   background: url("../images/aboutus/history/ticker.png") repeat-x;
@@ -373,30 +376,46 @@
 #slide1976-2 {
   background: #1C75BC;
 }
-#slide1976-2 .ground {
-  background: #414042;
-  height: 100px;
-  position: relative;
+#slide1976-2 img {
+  height: 100%;
+  width: auto;
 }
 #slide1976-2 .stage {
-  position: relative;
-  top: 1px;
+  position: absolute;
+  top: 34%;
+  height: 50%;
+  width: 100%;
   overflow: hidden;
-  padding-top: 150px;
 }
-#slide1976-2 .utes {
+#slide1976-2 .stage .ground {
+  background: #414042;
+  height: 30%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+#slide1976-2 .stage .utes {
   background: url("../images/aboutus/history/ute.svg") repeat-x;
   height: 77px;
-  position: relative;
+  position: absolute;
+  bottom: 30%;
   width: 3000px;
 }
-#slide1976-2 .wareHouse {
-  background: url("../images/aboutus/history/warehouse.svg") no-repeat center 0;
-  height: 205px;
+#slide1976-2 .stage .wareHouse {
+  height: 70%;
+  width: 100%;
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 100px;
+  bottom: 30%;
+  text-align: center;
+}
+#slide1976-2 .stage .wareHouse div {
+  height: 100%;
+}
+#slide1976-2 .stage .wareHouse img {
+  position: relative;
 }
 #slide1978-1 {
   background-color: #00adef;
@@ -717,14 +736,18 @@
   height: 150px;
   width: 300px;
   position: absolute;
-  right: 200px;
+  right: 0;
   bottom: 0;
   background: url("../images/aboutus/history/1998-building.png") 0 -33% no-repeat;
 }
 #slide1998 #sprinkler1998Wrap {
-  position: relative;
+  position: absolute;
   overflow: hidden;
   height: 320px;
+  bottom: 70px;
+  left: 0;
+  width: 100%;
+  margin-bottom: -10px;
 }
 #slide1998 .sprinklerItem {
   position: absolute;
@@ -732,11 +755,16 @@
   right: 0;
   top: 0;
   bottom: 0;
+  width: 800px;
+  margin: 0 auto;
 }
 #slide1998 .grass {
   height: 70px;
   background: url("../images/aboutus/history/1998-bg-grass.png") 0 0 repeat-x;
-  margin-top: -10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 #slide1998-1 {
   background-color: #c39a6b;

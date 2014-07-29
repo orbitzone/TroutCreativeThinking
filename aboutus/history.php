@@ -98,7 +98,7 @@
 		include_once($serverBase."/includes/foot/scripts.php");
 	?>
 	<script type="text/javascript">
-		var SkrollrSetup = function {
+		var SkrollrSetup = function () {
 			$('section').css('height', $(window).height()*0.8);
 			var s = skrollr.init({
 				smoothScrolling : true,

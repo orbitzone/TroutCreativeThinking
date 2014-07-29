@@ -620,6 +620,62 @@
   width: 100%;
   text-align: center;
 }
+#slide1990s {
+  background-color: #414042;
+}
+#slide1990s img,
+#slide1990s svg {
+  height: 100%;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+#slide1990s .layer div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+#slide1990s #slide1990s-water .line {
+  -webkit-animation: sprinkler1990s 500ms infinite;
+  -moz-animation: sprinkler1990s 500ms infinite;
+  -o-animation: sprinkler1990s 500ms infinite;
+  animation: sprinkler1990s 500ms infinite;
+}
+@-webkit-keyframes sprinkler1990s {
+  0% {
+    stroke-dashoffset: 200;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@-moz-keyframes sprinkler1990s {
+  0% {
+    stroke-dashoffset: 200;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@-o-keyframes sprinkler1990s {
+  0% {
+    stroke-dashoffset: 200;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes sprinkler1990s {
+  0% {
+    stroke-dashoffset: 200;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
 #slide1997 {
   background: #5A4B42;
   background-size: 100% auto;

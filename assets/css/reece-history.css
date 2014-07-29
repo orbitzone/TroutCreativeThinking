@@ -834,6 +834,33 @@
   width: 100%;
   height: 18%;
 }
+#slide2000-3 {
+  background-color: #85cebb;
+}
+#slide2000-3 img {
+  height: 100%;
+  width: auto;
+}
+#slide2000-3 #computer-2000-3 {
+  top: auto;
+  bottom: 5%;
+  height: 60%;
+  text-align: center;
+}
+#slide2000-3 #computer-2000-3 .wrap div {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#slide2000-3 #desk-2000-3 {
+  top: auto;
+  bottom: 0;
+  width: 100%;
+  height: 20%;
+  background-color: #794400;
+}
 #slide2005 {
   background: #726659;
 }

@@ -967,6 +967,64 @@
   left: 50%;
   top: 20%;
 }
+#slide2000-2 {
+  background-color: #c39a6b;
+}
+#slide2000-2 img,
+#slide2000-2 svg {
+  height: 100%;
+  width: auto;
+  display: block;
+  margin: auto;
+}
+#slide2000-2 #scene-2000-2 {
+  position: absolute;
+  top: auto;
+  bottom: 5%;
+  height: 60%;
+}
+#slide2000-2 #scene-2000-2 div {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+#slide2000-2 #scene-2000-2 .man {
+  position: relative;
+  z-index: 2;
+}
+#slide2000-2 #scene-2000-2 .basin {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+#slide2000-2 #scene-2000-2 .paper {
+  position: absolute;
+  right: 10%;
+  top: 0;
+  z-index: 1;
+}
+#slide2000-2 #floor-2000-2 {
+  background-color: #00a79d;
+  position: absolute;
+  bottom: 0;
+  top: auto;
+  left: 0;
+  width: 100%;
+  height: 12%;
+}
+#slide2000-2 #skirting-2000-2 {
+  border-top: 14px solid #d6cdbd;
+  background-color: #a19784;
+  position: absolute;
+  bottom: 12%;
+  top: auto;
+  left: 0;
+  width: 100%;
+  height: 7%;
+}
 #slide2000-3 {
   background-color: #85cebb;
 }

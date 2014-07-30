@@ -4,25 +4,55 @@
 		height: 100%;
 		width: auto;
 		display: block;
-		margin: 0 auto;
+		margin: auto;
 	}
-	#man-2000-2 {
+	#scene-2000-2 {
+		position: absolute;
+		top: auto;
+		bottom: 5%;
+		height: 60%;
 		div {
-			position: absolute;
-			bottom: 5%;
-			height: 50%;
-			width: 100%;
+			width: 80%;
+			height: 100%;
+			margin: 0 auto;
 			text-align: center;
+			position: relative;
+		}
+		.man {
+			position: relative;
+			z-index: 2;
+		}
+		.basin {
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: 1;
+		}
+		.paper {
+			position: absolute;
+			right: 10%;
+			top: 0;
+			z-index: 1;
 		}
 	}
 	#floor-2000-2{
-		background-color: #603813;
+		background-color: #00a79d;
 		position: absolute;
 		bottom: 0;
 		top: auto;
 		left: 0;
 		width: 100%;
-		height: 10%;
+		height: 12%;
+	}
+	#skirting-2000-2{
+		border-top: 14px solid #d6cdbd;
+		background-color: #a19784;
+		position: absolute;
+		bottom: 12%;
+		top: auto;
+		left: 0;
+		width: 100%;
+		height: 7%;
 	}
 }
 

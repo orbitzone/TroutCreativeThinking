@@ -834,6 +834,95 @@
   width: 100%;
   height: 18%;
 }
+#slide2001-1 {
+  background-color: #0e004e;
+}
+#slide2001-1 img {
+  height: 100%;
+  width: auto;
+}
+#slide2001-1 #scene-2000-1 {
+  height: 90%;
+  top: auto;
+  bottom: 0;
+}
+#slide2001-1 #scene-2000-1 .ground {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  width: 100%;
+  height: 15%;
+  background-color: #404041;
+}
+#slide2001-1 #scene-2000-1 .skyline {
+  position: absolute;
+  top: auto;
+  bottom: 15%;
+  width: 100%;
+  height: 128px;
+  background: url("../images/aboutus/history/2000-1-skyline.svg") repeat-x center;
+}
+#slide2001-1 #scene-2000-1 .number {
+  position: absolute;
+  top: auto;
+  bottom: -35%;
+  width: 100%;
+}
+#slide2001-1 #scene-2000-1 .number div {
+  height: 100%;
+  text-align: center;
+}
+#slide2001-1 #firework-2000-1-A {
+  width: 300px;
+  height: 300px;
+  left: auto;
+  right: 20%;
+  top: 5%;
+}
+#slide2001-1 #firework-2000-1-B {
+  width: 260px;
+  height: 260px;
+  left: 18%;
+  top: 26%;
+}
+#slide2001-1 #firework-2000-1-C {
+  width: 200px;
+  height: 200px;
+  left: 5%;
+  top: 5%;
+}
+#slide2001-1 #firework-2000-1-D {
+  width: 160px;
+  height: 160px;
+  left: 5%;
+  top: 46%;
+}
+#slide2001-1 #firework-2000-1-E {
+  width: 200px;
+  height: 200px;
+  right: 5%;
+  left: auto;
+  top: 6%;
+}
+#slide2001-1 #firework-2000-1-F {
+  width: 180px;
+  height: 180px;
+  right: 10%;
+  left: auto;
+  top: 38%;
+}
+#slide2001-1 #firework-2000-1-G {
+  width: 160px;
+  height: 160px;
+  left: 30%;
+  top: 3%;
+}
+#slide2001-1 #firework-2000-1-H {
+  width: 140px;
+  height: 140px;
+  left: 50%;
+  top: 20%;
+}
 #slide2000-3 {
   background-color: #85cebb;
 }

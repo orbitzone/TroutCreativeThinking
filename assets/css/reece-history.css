@@ -382,7 +382,7 @@
 }
 #slide1976-2 .stage {
   position: absolute;
-  top: 34%;
+  bottom: 0%;
   height: 50%;
   width: 100%;
   overflow: hidden;
@@ -693,6 +693,50 @@
   100% {
     stroke-dashoffset: 0;
   }
+}
+#slide1993 {
+  background: #1C75BC;
+}
+#slide1993 img {
+  height: 100%;
+  width: auto;
+}
+#slide1993 .stage {
+  position: absolute;
+  bottom: 0%;
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+}
+#slide1993 .stage .ground {
+  background: #414042;
+  height: 30%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+#slide1993 .stage .utes {
+  background: url("../images/aboutus/history/ute.svg") repeat-x;
+  height: 77px;
+  position: absolute;
+  bottom: 30%;
+  width: 3000px;
+}
+#slide1993 .stage .wareHouse {
+  height: 70%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 30%;
+  text-align: center;
+}
+#slide1993 .stage .wareHouse div {
+  height: 100%;
+}
+#slide1993 .stage .wareHouse img {
+  position: relative;
 }
 #slide1994 {
   background-color: #85cebb;

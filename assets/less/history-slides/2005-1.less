@@ -1,60 +1,96 @@
-#slide2005-1 {
-	background-color: #0e004e;
-	img, svg {
-		height: auto;
-		width: 100%;
-		display: block;
+#slide2005-1{
+	.register{
+		text-align: center;
 	}
-	#scene-2005-1 {
-		position: absolute;
-		top: auto;
-		bottom: 10%;
-		height: 100%;
-		.wrap {
-			width: 60%;
-			height: 100%;
-			margin: 0 auto;
-			text-align: center;
+
+	.registerDisplay{
+		background: #F89728;
+		padding:20px 20px 0 20px;
+		width: 30%;
+		min-width: 320px;
+		display: inline-block;
+		vertical-align: bottom;
+		.registerDisplayScreen{
+			background: #231F20;
+			border:solid 10px #F89728;
+			border-bottom-width: 0;
+			border-top-color: #d28330;
+			height: 150px;
+			overflow: hidden;
 			position: relative;
-			bottom: -1%;
-			.pos {
-				position: absolute;
-				left: 0;
-				bottom: 0;
-				width: 100%;
-				z-index: 1;
-			}
-		}
-		.ice {
-			position: absolute;
-			right: 0;
-			bottom: 100%;
-			height: 300%;
-			width: 20%;
-			background: url("@{imagepath}/2005-1-ice.svg") center 0 repeat-y #0e004e;
-			background-size: 100% auto;
-			z-index: 2;
-			.edge {
-				position: absolute;
-				left: 0;
-				bottom: 0;
-				width: 100%;
-				z-index: 2;
-				img {
-					position: relative;
-					margin-bottom: -6%;
+			.registerBn,.register1{
+				height: 135px;
+				width: 140px;
+				background: #EC1C24;
+				line-height: 135px;
+				text-align: center;
+				display: block;
+				float: right;
+				margin-right: 10px;
+				margin-top: 60px;
+				color: black;
+				font-size: 40px;
+				position: relative;
+				.border-radius(15% 15% 0 0);
+				.caretWrap{
+					position: absolute;
+					left: 0;
+					right: 0;
+					top: 0;
+					text-align: center;
+					height: 0;
+					&:after{
+						width: 0;
+						content: '';
+						border:solid 20px transparent;
+						display: inline-block;
+						border-bottom-color: #EC1C24;
+						position: relative;
+						top: -73px;
+					}
+				}
+				.number{
+					display: block;
+					background-position: center;
+					background-repeat: no-repeat;
+					text-indent: -9999em;
 				}
 			}
+			.registerBn .number{
+					background-image: url("@{imagepath}/bn.svg");
+				}
+			.register1 .number{
+				background-image: url("@{imagepath}/1.svg");
+			}
+			.registerScreenGlass{
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				background: url("@{imagepath}/register-glass.png")
+			}
 		}
 	}
-	#floor-2005-1 {
-		background-color: #404041;
-		position: absolute;
-		bottom: 0;
-		top: auto;
-		left: 0;
-		width: 100%;
-		height: 10%;
+	.registerBase{
+		border:solid 20px #F89728;
+		border-width: 20px 20px 0 0;
+		height: 80px;
+		overflow: hidden;
+		width: 85%;
+	}
+	.registerBaseGroves{
+		border:solid 10px #d28330;
+		border-width: 20px 30px 90px 0;
+		border-bottom-color: #F89728;
+		position: relative;
+		span{
+			display: block;
+			position: absolute;
+			height: 5px;
+			background: #d28330;
+			top: 5px;
+			width: 99%;
+		}
 	}
 }
-

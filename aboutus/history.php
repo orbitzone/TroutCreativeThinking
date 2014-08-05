@@ -23,7 +23,7 @@
 		?>
 
 
-		<div class="nav-history">
+		<!--<div class="nav-history">
 			<ul class="nav">
 				<li><a href="#slideHistoryIntro">Reece Timeline</a></li>
 				<li><a href="#slide1954">1954</a></li>
@@ -32,7 +32,7 @@
 				<li><a href="#slide1998">1998</a></li>
 				<li><a href="#slide2005">2005</a></li>
 			</ul>
-		</div>
+		</div>-->
 
 		<section id="slideHistoryIntro">
 			<div class="content-container">

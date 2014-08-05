@@ -1,6 +1,7 @@
-#slide2005-1{
+
 	.register{
 		text-align: center;
+		margin-top: 10%;
 	}
 
 	.registerDisplay{
@@ -18,7 +19,7 @@
 			height: 150px;
 			overflow: hidden;
 			position: relative;
-			.registerBn,.register1{
+			.registerBn,.register1,.register1point5{
 				height: 135px;
 				width: 140px;
 				background: #EC1C24;
@@ -62,6 +63,17 @@
 			.register1 .number{
 				background-image: url("@{imagepath}/1.svg");
 			}
+			.register1point5{
+				background-color:#D7DF23;
+				.caretWrap{
+					&:after{
+						border-bottom-color: #D7DF23;
+					}
+				}
+				.number{
+					background-image: url("@{imagepath}/1.svg");
+				}
+			}
 			.registerScreenGlass{
 				position: absolute;
 				left: 0;
@@ -93,4 +105,3 @@
 			width: 99%;
 		}
 	}
-}

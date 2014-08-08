@@ -66,10 +66,12 @@
 .finance .file-download dl {
   width: 90%;
 }
-.finance .file-download dl.fincialYearReportList {
+.finance .file-download dl.fincialYearReportList,
+.finance .file-download dl.asxReportList {
   display: none;
 }
-.finance .file-download dl.fincialYearReportList.active {
+.finance .file-download dl.fincialYearReportList.active,
+.finance .file-download dl.asxReportList.active {
   display: block;
 }
 .finance .file-download dl dt,

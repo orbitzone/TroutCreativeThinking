@@ -300,13 +300,109 @@
 								<div class="span6 asx-announcements">	
 		                            
 		                            <h4>ASX Announcements</h4>
-		                            <dl>
+		                            <dl class="asxReportList active" id="ASXDoc2013-14">
 		                                <dt>ASX Announcement - Completion of Acquisition<small>31 January 2014</small></dt>
 		                                <dd><a href="http://www.reece.com.au/new/pdf/aboutus/reports/2013/Reece_-_Actrol_Group_Presentation_-_Completion.pdf" class="download-pdf"><span class="icon-file"></span> Download PDF</a></dd>
 		                                <dt>Signing of Share Sale Agreement – Reece and Actrol Parts Holding Pty Ltd<small>20 December 2013</small></dt>
 		                                <dd><a href="http://www.reece.com.au/new/pdf/aboutus/reports/2013/Signing-of-Share-Sale-Agreement_Reece-and-Actrol-Parts-Holding-Pty-Ltd.pdf" class="download-pdf"><span class="icon-file"></span> Download PDF</a></dd>
 		                            </dl>
-                            
+		                            <dl class="asxReportList" id="ASXDoc2012-13">
+		                                <dt>ASX Announcement - Completion of Acquisition<small>31 January 2013</small></dt>
+		                                <dd><a href="http://www.reece.com.au/new/pdf/aboutus/reports/2013/Reece_-_Actrol_Group_Presentation_-_Completion.pdf" class="download-pdf"><span class="icon-file"></span> Download PDF</a></dd>
+		                                <dt>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<small>20 December 2013</small></dt>
+		                                <dd><a href="http://www.reece.com.au/new/pdf/aboutus/reports/2013/Signing-of-Share-Sale-Agreement_Reece-and-Actrol-Parts-Holding-Pty-Ltd.pdf" class="download-pdf"><span class="icon-file"></span> Download PDF</a></dd>
+		                            </dl>
+		                            <dl class="asxReportList" id="ASXDoc2011-12">
+		                                <dt>ASX Announcement - Completion of Acquisition<small>31 January 2012</small></dt>
+		                                <dd><a href="http://www.reece.com.au/new/pdf/aboutus/reports/2013/Reece_-_Actrol_Group_Presentation_-_Completion.pdf" class="download-pdf"><span class="icon-file"></span> Download PDF</a></dd>
+		                                <dt>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporr<small>20 December 2011.</small></dt>
+		                                <dd><a href="http://www.reece.com.au/new/pdf/aboutus/reports/2013/Signing-of-Share-Sale-Agreement_Reece-and-Actrol-Parts-Holding-Pty-Ltd.pdf" class="download-pdf"><span class="icon-file"></span> Download PDF</a></dd>
+		                            </dl>
+		                            <dl class="asxReportList" id="ASXDoc2010-11">
+		                                <dt>ASX Announcement - Completion of Acquisition<small>31 January 2011</small></dt>
+		                                <dd><a href="http://www.reece.com.au/new/pdf/aboutus/reports/2013/Reece_-_Actrol_Group_Presentation_-_Completion.pdf" class="download-pdf"><span class="icon-file"></span> Download PDF</a></dd>
+		                                <dt>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporr<small>20 December 2010.</small></dt>
+		                                <dd><a href="http://www.reece.com.au/new/pdf/aboutus/reports/2013/Signing-of-Share-Sale-Agreement_Reece-and-Actrol-Parts-Holding-Pty-Ltd.pdf" class="download-pdf"><span class="icon-file"></span> Download PDF</a></dd>
+		                            </dl>
+		                            <dl class="asxReportList" id="ASXDoc2009-10">
+		                                <dt>ASX Announcement - Completion of Acquisition<small>31 January 2013</small></dt>
+		                                <dd><a href="http://www.reece.com.au/new/pdf/aboutus/reports/2013/Reece_-_Actrol_Group_Presentation_-_Completion.pdf" class="download-pdf"><span class="icon-file"></span> Download PDF</a></dd>
+		                                <dt>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<small>20 December 2013</small></dt>
+		                                <dd><a href="http://www.reece.com.au/new/pdf/aboutus/reports/2013/Signing-of-Share-Sale-Agreement_Reece-and-Actrol-Parts-Holding-Pty-Ltd.pdf" class="download-pdf"><span class="icon-file"></span> Download PDF</a></dd>
+		                            </dl>
+		                            <dl class="asxReportList" id="ASXDoc2008-09">
+		                                <dt>ASX Announcement - Completion of Acquisition<small>31 January 2013</small></dt>
+		                                <dd><a href="http://www.reece.com.au/new/pdf/aboutus/reports/2013/Reece_-_Actrol_Group_Presentation_-_Completion.pdf" class="download-pdf"><span class="icon-file"></span> Download PDF</a></dd>
+		                                <dt>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<small>20 December 2013</small></dt>
+		                                <dd><a href="http://www.reece.com.au/new/pdf/aboutus/reports/2013/Signing-of-Share-Sale-Agreement_Reece-and-Actrol-Parts-Holding-Pty-Ltd.pdf" class="download-pdf"><span class="icon-file"></span> Download PDF</a></dd>
+		                            </dl>
+		                            <dl class="asxReportList" id="ASXDoc2007-08">
+		                                <dt>ASX Announcement - Completion of Acquisition<small>31 January 2013</small></dt>
+		                                <dd><a href="http://www.reece.com.au/new/pdf/aboutus/reports/2013/Reece_-_Actrol_Group_Presentation_-_Completion.pdf" class="download-pdf"><span class="icon-file"></span> Download PDF</a></dd>
+		                                <dt>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<small>20 December 2013</small></dt>
+		                                <dd><a href="http://www.reece.com.au/new/pdf/aboutus/reports/2013/Signing-of-Share-Sale-Agreement_Reece-and-Actrol-Parts-Holding-Pty-Ltd.pdf" class="download-pdf"><span class="icon-file"></span> Download PDF</a></dd>
+		                            </dl>
+		                            <dl class="asxReportList" id="ASXDoc2006-07">
+		                                <dt>ASX Announcement - Completion of Acquisition<small>31 January 2013</small></dt>
+		                                <dd><a href="http://www.reece.com.au/new/pdf/aboutus/reports/2013/Reece_-_Actrol_Group_Presentation_-_Completion.pdf" class="download-pdf"><span class="icon-file"></span> Download PDF</a></dd>
+		                                <dt>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<small>20 December 2013</small></dt>
+		                                <dd><a href="http://www.reece.com.au/new/pdf/aboutus/reports/2013/Signing-of-Share-Sale-Agreement_Reece-and-Actrol-Parts-Holding-Pty-Ltd.pdf" class="download-pdf"><span class="icon-file"></span> Download PDF</a></dd>
+		                            </dl>
+		                            <dl class="asxReportList" id="ASXDoc2005-06">
+		                                <dt>ASX Announcement - Completion of Acquisition<small>31 January 2013</small></dt>
+		                                <dd><a href="http://www.reece.com.au/new/pdf/aboutus/reports/2013/Reece_-_Actrol_Group_Presentation_-_Completion.pdf" class="download-pdf"><span class="icon-file"></span> Download PDF</a></dd>
+		                                <dt>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<small>20 December 2013</small></dt>
+		                                <dd><a href="http://www.reece.com.au/new/pdf/aboutus/reports/2013/Signing-of-Share-Sale-Agreement_Reece-and-Actrol-Parts-Holding-Pty-Ltd.pdf" class="download-pdf"><span class="icon-file"></span> Download PDF</a></dd>
+		                            </dl>
+		                            <dl class="asxReportList" id="ASXDoc2004-05">
+		                                <dt>ASX Announcement - Completion of Acquisition<small>31 January 2013</small></dt>
+		                                <dd><a href="http://www.reece.com.au/new/pdf/aboutus/reports/2013/Reece_-_Actrol_Group_Presentation_-_Completion.pdf" class="download-pdf"><span class="icon-file"></span> Download PDF</a></dd>
+		                                <dt>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<small>20 December 2013</small></dt>
+		                                <dd><a href="http://www.reece.com.au/new/pdf/aboutus/reports/2013/Signing-of-Share-Sale-Agreement_Reece-and-Actrol-Parts-Holding-Pty-Ltd.pdf" class="download-pdf"><span class="icon-file"></span> Download PDF</a></dd>
+		                            </dl>
+		                            <dl class="asxReportList" id="ASXDoc2003-04">
+		                                <dt>ASX Announcement - Completion of Acquisition<small>31 January 2013</small></dt>
+		                                <dd><a href="http://www.reece.com.au/new/pdf/aboutus/reports/2013/Reece_-_Actrol_Group_Presentation_-_Completion.pdf" class="download-pdf"><span class="icon-file"></span> Download PDF</a></dd>
+		                                <dt>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<small>20 December 2013</small></dt>
+		                                <dd><a href="http://www.reece.com.au/new/pdf/aboutus/reports/2013/Signing-of-Share-Sale-Agreement_Reece-and-Actrol-Parts-Holding-Pty-Ltd.pdf" class="download-pdf"><span class="icon-file"></span> Download PDF</a></dd>
+		                            </dl>
+		                            <dl class="asxReportList" id="ASXDoc2002-03">
+		                                <dt>ASX Announcement - Completion of Acquisition<small>31 January 2013</small></dt>
+		                                <dd><a href="http://www.reece.com.au/new/pdf/aboutus/reports/2013/Reece_-_Actrol_Group_Presentation_-_Completion.pdf" class="download-pdf"><span class="icon-file"></span> Download PDF</a></dd>
+		                                <dt>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<small>20 December 2013</small></dt>
+		                                <dd><a href="http://www.reece.com.au/new/pdf/aboutus/reports/2013/Signing-of-Share-Sale-Agreement_Reece-and-Actrol-Parts-Holding-Pty-Ltd.pdf" class="download-pdf"><span class="icon-file"></span> Download PDF</a></dd>
+		                            </dl>
+		                            <dl class="asxReportList" id="ASXDoc2001-02">
+		                                <dt>ASX Announcement - Completion of Acquisition<small>31 January 2013</small></dt>
+		                                <dd><a href="http://www.reece.com.au/new/pdf/aboutus/reports/2013/Reece_-_Actrol_Group_Presentation_-_Completion.pdf" class="download-pdf"><span class="icon-file"></span> Download PDF</a></dd>
+		                                <dt>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<small>20 December 2013</small></dt>
+		                                <dd><a href="http://www.reece.com.au/new/pdf/aboutus/reports/2013/Signing-of-Share-Sale-Agreement_Reece-and-Actrol-Parts-Holding-Pty-Ltd.pdf" class="download-pdf"><span class="icon-file"></span> Download PDF</a></dd>
+		                            </dl>
+		                            <dl class="asxReportList" id="ASXDoc2000-01">
+		                                <dt>ASX Announcement - Completion of Acquisition<small>31 January 2013</small></dt>
+		                                <dd><a href="http://www.reece.com.au/new/pdf/aboutus/reports/2013/Reece_-_Actrol_Group_Presentation_-_Completion.pdf" class="download-pdf"><span class="icon-file"></span> Download PDF</a></dd>
+		                                <dt>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<small>20 December 2013</small></dt>
+		                                <dd><a href="http://www.reece.com.au/new/pdf/aboutus/reports/2013/Signing-of-Share-Sale-Agreement_Reece-and-Actrol-Parts-Holding-Pty-Ltd.pdf" class="download-pdf"><span class="icon-file"></span> Download PDF</a></dd>
+		                            </dl>
+		                            <dl class="asxReportList" id="ASXDoc1999-00">
+		                                <dt>ASX Announcement - Completion of Acquisition<small>31 January 2013</small></dt>
+		                                <dd><a href="http://www.reece.com.au/new/pdf/aboutus/reports/2013/Reece_-_Actrol_Group_Presentation_-_Completion.pdf" class="download-pdf"><span class="icon-file"></span> Download PDF</a></dd>
+		                                <dt>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<small>20 December 2013</small></dt>
+		                                <dd><a href="http://www.reece.com.au/new/pdf/aboutus/reports/2013/Signing-of-Share-Sale-Agreement_Reece-and-Actrol-Parts-Holding-Pty-Ltd.pdf" class="download-pdf"><span class="icon-file"></span> Download PDF</a></dd>
+		                            </dl>
+		                            <dl class="asxReportList" id="ASXDoc1998-99">
+		                                <dt>ASX Announcement - Completion of Acquisition<small>31 January 2013</small></dt>
+		                                <dd><a href="http://www.reece.com.au/new/pdf/aboutus/reports/2013/Reece_-_Actrol_Group_Presentation_-_Completion.pdf" class="download-pdf"><span class="icon-file"></span> Download PDF</a></dd>
+		                                <dt>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<small>20 December 2013</small></dt>
+		                                <dd><a href="http://www.reece.com.au/new/pdf/aboutus/reports/2013/Signing-of-Share-Sale-Agreement_Reece-and-Actrol-Parts-Holding-Pty-Ltd.pdf" class="download-pdf"><span class="icon-file"></span> Download PDF</a></dd>
+		                            </dl>
+		                            <dl class="asxReportList" id="ASXDoc1997-98">
+		                                <dt>ASX Announcement - Completion of Acquisition<small>31 January 2013</small></dt>
+		                                <dd><a href="http://www.reece.com.au/new/pdf/aboutus/reports/2013/Reece_-_Actrol_Group_Presentation_-_Completion.pdf" class="download-pdf"><span class="icon-file"></span> Download PDF</a></dd>
+		                                <dt>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<small>20 December 2013</small></dt>
+		                                <dd><a href="http://www.reece.com.au/new/pdf/aboutus/reports/2013/Signing-of-Share-Sale-Agreement_Reece-and-Actrol-Parts-Holding-Pty-Ltd.pdf" class="download-pdf"><span class="icon-file"></span> Download PDF</a></dd>
+		                            </dl>
+		                                                     
                             	</div>
                             </div>
                         </div><!-- end span8 -->
@@ -395,8 +491,9 @@
         $('#asxChangePercent').html(result.PercentChange);
     }
     function changeFinancialYear(){
-        $('.fincialYearReportList').removeClass('active');
+        $('.fincialYearReportList, .asxReportList').removeClass('active');
         $('#FinanceDoc'+$('#reportYear').val()).addClass('active');
+        $('#ASXDoc'+$('#reportYear').val()).addClass('active');
     }
 </script>
     </body>

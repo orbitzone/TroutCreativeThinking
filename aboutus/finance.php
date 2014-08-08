@@ -90,7 +90,7 @@
                 <div class="content-container">
                 <div class="inner-wrapper">
                     <div class="row-fluid">
-                        <div class="span4">
+                        <div class="span4 corporateGovernance">
                             <h4>Corporate Governance</h4>
                             <dl>
                                 <dt>Code of Conduct for Directors &amp; Senior Executives</dt>

@@ -156,6 +156,11 @@
   padding: 20px;
   clear: both;
 }
+@media (max-width: 768px) {
+	.corporateGovernance {
+		padding-left: 30px;
+	}
+}
 @media (max-width: 480px) {
   .finance .content-container .asxFeed .asxData {
     padding: 10px;

@@ -67,11 +67,11 @@
   width: 90%;
 }
 .finance .file-download dl.fincialYearReportList,
-.finance .file-download dl .asxReportList {
+.finance .file-download dl.asxReportList {
   display: none;
 }
 .finance .file-download dl.fincialYearReportList.active,
-.finance .file-download dl .asxReportList.active {
+.finance .file-download dl.asxReportList.active {
   display: block;
 }
 .finance .file-download dl dt,

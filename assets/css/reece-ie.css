@@ -1,1 +1,79 @@
-.lt-ie9 #headCarousel{padding-top:0}.lt-ie9 .navbar-fixed-top{position:static}.lt-ie9 .navbar-fixed-top .brand{background-image:url(../images/home-2013/reece-logo-ie.png);background-repeat:no-repeat;background-color:#fff;background-position:2px center}.lt-ie9 .subnavbar{margin-top:0}.lt-ie9 body{min-width:1200px}.lt-ie9 .main-header{padding-top:20px}.lt-ie9 .main-header .top-highlight{top:0}.lt-ie9 #product-filters.collapse,.lt-ie9 .products-tabs .collapse{position:static;height:auto;overflow:visible}.lt-ie8 .products-tab-nav{overflow:hidden;zoom:1}.lt-ie8 .products-tab-nav li{width:auto;float:left;margin:0;padding:0}.lt-ie8 .products-tab-nav a{padding:10px 20px}.lt-ie8 .btn-bar{padding-left:0;padding-right:0}.lt-ie8 .article-gateway .article{padding:0 0 10px 0}.lt-ie8 .article-gateway .article h3,.lt-ie8 .article-gateway .article p,.lt-ie8 .article-gateway .article .read-more,.lt-ie8 .article-gateway .article .btn{padding-left:10px;padding-right:10px}.lt-ie8 .article-gateway .article .btn,.lt-ie8 .article-gateway .article .read-more{position:relative;left:5px}.lt-ie8 .trade-navigation li{float:left}.lt-ie9 .gt-navigation,.lt-ie9 .gt-ig-items{height:auto !important}.lt-ie8 #landingTiles [class*="span"]{padding-left:0;padding-right:0}.lt-ie8 #landingTiles [class*="span"] a{padding:10px}#landingTiles [class*="span"] a{background-color:rgba(204,204,204,0.01)}
+.lt-ie9 #headCarousel {
+  padding-top: 0;
+}
+.lt-ie9 .navbar-fixed-top {
+  position: static;
+}
+.lt-ie9 .navbar-fixed-top .brand {
+  background-image: url(../images/home-2013/reece-logo-ie.png);
+  background-repeat: no-repeat;
+  background-color: white;
+  background-position: 2px center;
+}
+.lt-ie9 .subnavbar {
+  margin-top: 0;
+}
+.lt-ie9 body {
+  min-width: 1200px;
+}
+.lt-ie9 .main-header {
+  padding-top: 20px;
+}
+.lt-ie9 .main-header .top-highlight {
+  top: 0;
+}
+.lt-ie9 #product-filters.collapse,
+.lt-ie9 .products-tabs .collapse {
+  position: static;
+  height: auto;
+  overflow: visible;
+}
+.lt-ie8 .products-tab-nav {
+  overflow: hidden;
+  zoom: 1;
+}
+.lt-ie8 .products-tab-nav li {
+  width: auto;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+.lt-ie8 .products-tab-nav a {
+  padding: 10px 20px;
+}
+.lt-ie8 .btn-bar {
+  padding-left: 0;
+  padding-right: 0;
+}
+.lt-ie8 .article-gateway .article {
+  padding: 0 0 10px 0;
+}
+.lt-ie8 .article-gateway .article h3,
+.lt-ie8 .article-gateway .article p,
+.lt-ie8 .article-gateway .article .read-more,
+.lt-ie8 .article-gateway .article .btn {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.lt-ie8 .article-gateway .article .btn,
+.lt-ie8 .article-gateway .article .read-more {
+  position: relative;
+  left: 5px;
+}
+.lt-ie8 .trade-navigation li {
+  float: left;
+}
+.lt-ie9 .gt-navigation,
+.lt-ie9 .gt-ig-items {
+  height: auto!important;
+}
+.lt-ie8 #landingTiles [class*="span"] {
+  padding-left: 0;
+  padding-right: 0;
+}
+.lt-ie8 #landingTiles [class*="span"] a {
+  padding: 10px;
+}
+#landingTiles [class*="span"] a {
+  background-color: rgba(204, 204, 204, 0.01);
+}

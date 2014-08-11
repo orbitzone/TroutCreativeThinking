@@ -1,24 +1,36 @@
 #slide1970 {
-  background-color: #00adef;
+  position: relative;
 }
 #slide1970 svg,
 #slide1970 img {
-  height: 100%;
+  width: 100%;
 }
-#slide1970 #building-1-1970 div,
-#slide1970 #building-2-1970 div {
+#slide1970 #buildings-1-1970 div,
+#slide1970 #buildings-2-1970 div {
   position: absolute;
-  top: 0;
+  bottom: 9%;
   left: 0;
   width: 100%;
-  height: 100%;
   text-align: center;
 }
-#slide1970 #ground-1970 div {
-  background-color: #006f3c;
+#slide1970 #buildings-1-1970 div img,
+#slide1970 #buildings-2-1970 div img {
+  position: relative;
+  top: 5%;
+}
+#slide1970 .ground {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
-  height: 140%;
-  width: 100%;
+  right: 0;
+  height: 9%;
+  background: #006f3c;
+}
+#slide1970 #cloud-1970 div {
+  position: absolute;
+  bottom: 9%;
+  left: 0;
+  right: 0;
+  height: 40%;
+  text-align: center;
 }

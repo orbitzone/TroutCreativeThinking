@@ -1,37 +1,34 @@
-#slide1920 {
-  background-color: #c2b49a;
-}
-#slide1920 svg {
+#slide1920 svg,
+#slide1920 img {
   height: 100%;
 }
 #slide1920 #ground-1920 div {
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 16%;
+  height: 14%;
   width: 100%;
   background-color: #8a5d3b;
 }
-#slide1920 #car-1920 div {
+#slide1920 #shop-1920 div {
   position: absolute;
   left: 0;
-  bottom: 14%;
-  height: 50%;
+  bottom: 13.8%;
+  height: 54%;
   width: 100%;
   text-align: center;
 }
 #slide1920 #sign-1920 div {
   position: absolute;
-  top: 0%;
   left: 0;
-  right: 0;
-  height: 40%;
+  bottom: 13.8%;
+  height: 54%;
+  width: 100%;
   text-align: center;
-  padding-left: 35%;
 }
 #slide1920 #cloud-1920 div {
   position: absolute;
-  bottom: 16%;
+  bottom: 14%;
   left: 0;
   right: 0;
   height: 40%;

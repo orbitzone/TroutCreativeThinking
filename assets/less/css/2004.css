@@ -1,17 +1,36 @@
-#slide2004 {
-  background-color: #00adef;
-}
 #slide2004 img {
   height: 100%;
   width: auto;
 }
-#slide2004 #forklift-2003 {
-  top: auto;
-  bottom: 10%;
-  height: 40%;
+#slide2004 #pipes-2004 {
   text-align: center;
 }
-#slide2004 #ground-2003 {
+#slide2004 #pipes-2004 div {
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  width: 100%;
+  height: 40%;
+}
+#slide2004 #pipes-2004 div img {
+  position: relative;
+  bottom: 13%;
+}
+#slide2004 #text-2004 {
+  text-align: center;
+}
+#slide2004 #text-2004 div {
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  width: 100%;
+  height: 40%;
+}
+#slide2004 #text-2004 div img {
+  position: relative;
+  bottom: 13%;
+}
+#slide2004 #ground-2004 {
   top: auto;
   bottom: 0;
   width: 100%;

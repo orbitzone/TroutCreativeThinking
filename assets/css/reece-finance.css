@@ -67,11 +67,11 @@
   width: 90%;
 }
 .finance .file-download dl.fincialYearReportList,
-.finance .file-download dl.asxReportList {
+.finance .file-download dl .asxReportList {
   display: none;
 }
 .finance .file-download dl.fincialYearReportList.active,
-.finance .file-download dl.asxReportList.active {
+.finance .file-download dl .asxReportList.active {
   display: block;
 }
 .finance .file-download dl dt,
@@ -102,8 +102,15 @@
   min-height: 420px;
   margin-bottom: 20px;
 }
-.finance .asx-announcements h4 {
-	margin-top: 62px;
+.finance .file-download .financialReports .selectricWrapper {
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+.finance .file-download .asx-announcements h4 {
+  margin-top: 62px;
+}
+.finance .file-download .corporateGovernance h4 {
+  margin-top: 82px;
 }
 .page-branding.text-brand {
   color: #003767;
@@ -157,11 +164,6 @@
   border: solid 1px #e5e4e4;
   padding: 20px;
   clear: both;
-}
-@media (max-width: 768px) {
-	.corporateGovernance {
-		padding-left: 30px;
-	}
 }
 @media (max-width: 480px) {
   .finance .content-container .asxFeed .asxData {

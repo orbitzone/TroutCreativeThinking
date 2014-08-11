@@ -51,10 +51,10 @@
 	}
 	dl{
 		width: 90%;
-	&.fincialYearReportList{
+	&.fincialYearReportList, .asxReportList {
 		display: none;
 	}
-	&.fincialYearReportList.active{
+	&.fincialYearReportList.active, .asxReportList.active{
 		display: block;
 	}
 		dt,dd{
@@ -81,11 +81,29 @@
 	}
 	.financialReports{
 		background: darken(@lightBackground, 5%);
-		padding: 0 20px 20px 30px;
+        padding: 20px 0px 20px 30px;
 		min-height: 420px;
 		margin-bottom: 20px;
+
+      .selectricWrapper{
+        margin-bottom: 0px;
+        margin-top: 10px;
+      }
 	}
+  .asx-announcements
+  {
+    h4 {
+      margin-top: 62px;
+    }
+  }
+  .corporateGovernance
+  {
+    h4{
+      margin-top: 82px;
+    }
+  }
 }
+
 .page-branding {
     &.text-brand {
         color: @reeceBlue;

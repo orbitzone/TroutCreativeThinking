@@ -1,3 +1,24 @@
-#slide1994 {
-  background-color: #85cebb;
+#slide1994 img {
+  height: 100%;
+  width: auto;
+}
+#slide1994 #blackboard-1994 {
+  top: 46%;
+  text-align: center;
+}
+#slide1994 #blackboard-1994 .wrap {
+  height: 44%;
+  display: inline-block;
+}
+#slide1994 #blackboard-1994 .blackboard {
+  height: 100%;
+}
+#slide1994 #blackboard-1994 .chalk {
+  height: 100%;
+  position: relative;
+  top: -100%;
+  overflow: hidden;
+}
+#slide1994 #blackboard-1994 .chalk img {
+  max-width: 1200%;
 }

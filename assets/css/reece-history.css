@@ -326,7 +326,7 @@
 }
 #slide1969 #painting-1969 div {
   position: absolute;
-  top: 33.33333333%;
+  top: 33.333333333333336%;
   height: 50%;
   left: 0;
   width: 100%;
@@ -1414,55 +1414,47 @@
 #slide2007-1 .fridgeDoor .face:hover {
   transform: rotateY(-110deg);
 }
-#slide2007-3 #stage-2007-1 .wrap {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  overflow: hidden;
+#slide2007-3 #stage-2007-3 {
+  text-align: center;
 }
-#slide2007-3 #stage-2007-1 .stage {
-  position: relative;
-  width: 50%;
+#slide2007-3 #stage-2007-3 img {
   height: 100%;
-  margin: 0 auto;
-  background-color: black;
+  width: auto;
 }
-#slide2007-3 #curtains-2007-1 .wrap {
+#slide2007-3 #curtains-2007-3 .wrap {
   height: 100%;
   width: 200%;
   position: absolute;
   left: -50%;
   top: -8%;
 }
-#slide2007-3 #curtains-2007-1 .wrap div {
+#slide2007-3 #curtains-2007-3 .wrap div {
   height: 100%;
   width: 50.1%;
   position: absolute;
   top: 0;
 }
-#slide2007-3 #curtains-2007-1 .wrap div img {
+#slide2007-3 #curtains-2007-3 .wrap div img {
   height: 100%;
   width: auto;
   position: absolute;
   bottom: 0;
 }
-#slide2007-3 #curtains-2007-1 .wrap div.left {
+#slide2007-3 #curtains-2007-3 .wrap div.left {
   left: 0%;
 }
-#slide2007-3 #curtains-2007-1 .wrap div.left img {
+#slide2007-3 #curtains-2007-3 .wrap div.left img {
   right: 0;
 }
-#slide2007-3 #curtains-2007-1 .wrap div.right {
+#slide2007-3 #curtains-2007-3 .wrap div.right {
   right: 0%;
 }
-#slide2007-3 #curtains-2007-1 .wrap div.right img {
+#slide2007-3 #curtains-2007-3 .wrap div.right img {
   left: 0;
 }
-#slide2007-3 #ground-2007-1 {
+#slide2007-3 #ground-2007-3 {
   background-color: #603813;
-  height: 14%;
+  height: 17%;
   bottom: 0;
   top: auto;
 }

@@ -1526,6 +1526,48 @@
 #slide2011 #stage-2011-1 img {
   width: 100%;
 }
+#slide2012-2 {
+  background: url("../images/aboutus/history/2012-2-bg.svg") center center;
+}
+#slide2012-2 .header {
+  color: #4c4c4c;
+}
+#slide2012-2 #people-2012-2 .wrap {
+  height: 60%;
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  width: 100%;
+}
+#slide2012-2 #people-2012-2 .wrap .row {
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+#slide2012-2 #people-2012-2 .wrap .row > img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: auto;
+  width: 400px;
+  margin-left: -200px;
+  margin-top: -93px;
+}
+#slide2012-2 #people-2012-2 .wrap .row .left {
+  float: left;
+  height: 100%;
+}
+#slide2012-2 #people-2012-2 .wrap .row .right {
+  float: right;
+  height: 100%;
+}
+#slide2012-2 #people-2012-2 .wrap .row .right img,
+#slide2012-2 #people-2012-2 .wrap .row .left img {
+  height: 100%;
+  width: auto;
+}
 #slide2012-4 img {
   height: 100%;
   width: auto;

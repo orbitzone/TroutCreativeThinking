@@ -1,3 +1,47 @@
 #slide2012-2 {
-
+	background: url("@{imagepath}/2012-2-bg.svg") center center;
+	.header {
+		color: @reeceGrey;
+	}
+	#people-2012-2 {
+		.wrap {
+			height: 60%;
+			position: absolute;
+			bottom: 10%;
+			left: 0;
+			width: 100%;
+			.row {
+				@W: 400px;
+				@H: 186px;
+				height: 100%;
+				width: 90%;
+				margin: 0 auto;
+				text-align: center;
+				position: relative;
+				> img {
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					height: auto;
+					width: @W;
+					margin-left: @W*-0.5;
+					margin-top: @H*-0.5;
+				}
+				.left {
+					float: left;
+					height: 100%;
+				}
+				.right {
+					float: right;
+					height: 100%;
+				}
+				.right, .left {
+					img {
+						height: 100%;
+						width: auto;
+					}
+				}
+			}
+		}
+	}
 }

@@ -1526,6 +1526,49 @@
 #slide2011 #stage-2011-1 img {
   width: 100%;
 }
+#slide2012-1 .cloud {
+  position: relative;
+}
+#slide2012-1 .cloud img {
+  position: absolute;
+  bottom: 0;
+}
+#slide2012-1 .cloud-1 {
+  height: 30%;
+}
+#slide2012-1 .cloud-1 img {
+  left: 20%;
+  height: 60%;
+}
+#slide2012-1 .cloud-2 {
+  height: 20%;
+  margin-top: -30px;
+}
+#slide2012-1 .cloud-2 img {
+  left: 0%;
+  height: 100%;
+}
+#slide2012-1 .cloud-3 {
+  height: 24%;
+}
+#slide2012-1 .cloud-3 img {
+  right: 10%;
+  height: 60%;
+}
+#slide2012-1 #number-2012-1 {
+  top: auto;
+  bottom: 14%;
+  height: 54%;
+  text-align: center;
+}
+#slide2012-1 #number-2012-1 .wrap {
+  height: 100%;
+  width: 100%;
+}
+#slide2012-1 #number-2012-1 img {
+  height: 100%;
+  width: auto;
+}
 #slide2012-2 {
   background: url("../images/aboutus/history/2012-2-bg.svg") center center;
 }

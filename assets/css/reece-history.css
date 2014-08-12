@@ -1490,6 +1490,32 @@
 #slide2009-2 .wrap #waterStream2009-5 {
   left: 73.5%;
 }
+#slide2010 #shelf-2010-1 {
+  top: auto;
+  bottom: 14%;
+  text-align: center;
+  height: 50%;
+}
+#slide2010 #shelf-2010-1 .wrap {
+  width: 860px;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+  background-color: white;
+}
+#slide2010 #shelf-2010-1 .wrap img {
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+#slide2010 #shelf-2010-1 .wrap .water {
+  background-color: #00aeef;
+  height: 40%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
 #slide2011 #stage-2011-1 .height {
   position: absolute;
   bottom: 0;
@@ -1527,7 +1553,6 @@
   width: 100%;
 }
 #slide2012-1 .cloud {
-  outline: 1px dotted black;
   position: relative;
 }
 #slide2012-1 .cloud img {

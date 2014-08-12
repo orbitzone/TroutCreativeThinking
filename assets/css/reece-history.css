@@ -1526,33 +1526,33 @@
 #slide2011 #stage-2011-1 img {
   width: 100%;
 }
-#slide2012-1 img {
+#slide2012-4 img {
   height: 100%;
   width: auto;
 }
-#slide2012-1 #buildings-2012-1 {
+#slide2012-4 #buildings-2012-4 {
   top: auto;
   bottom: 13%;
   height: 44%;
   text-align: center;
 }
-#slide2012-1 #buildings-2012-1 .wrap {
+#slide2012-4 #buildings-2012-4 .wrap {
   height: 100%;
   display: inline-block;
 }
-#slide2012-1 #buildings-2012-1 .old {
+#slide2012-4 #buildings-2012-4 .old {
   height: 100%;
 }
-#slide2012-1 #buildings-2012-1 .new {
+#slide2012-4 #buildings-2012-4 .new {
   height: 100%;
   position: relative;
   top: -100%;
   overflow: hidden;
 }
-#slide2012-1 #buildings-2012-1 .new img {
+#slide2012-4 #buildings-2012-4 .new img {
   max-width: 60000%;
 }
-#slide2012-1 #ground-2012-1 {
+#slide2012-4 #ground-2012-4 {
   top: auto;
   bottom: 0;
   width: 100%;

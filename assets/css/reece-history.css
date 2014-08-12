@@ -1527,6 +1527,7 @@
   width: 100%;
 }
 #slide2012-1 .cloud {
+  outline: 1px dotted black;
   position: relative;
 }
 #slide2012-1 .cloud img {
@@ -1552,7 +1553,7 @@
   height: 24%;
 }
 #slide2012-1 .cloud-3 img {
-  right: 10%;
+  right: 0%;
   height: 60%;
 }
 #slide2012-1 #number-2012-1 {

@@ -1526,6 +1526,39 @@
 #slide2011 #stage-2011-1 img {
   width: 100%;
 }
+#slide2012-1 img {
+  height: 100%;
+  width: auto;
+}
+#slide2012-1 #buildings-2012-1 {
+  top: auto;
+  bottom: 13%;
+  height: 44%;
+  text-align: center;
+}
+#slide2012-1 #buildings-2012-1 .wrap {
+  height: 100%;
+  display: inline-block;
+}
+#slide2012-1 #buildings-2012-1 .old {
+  height: 100%;
+}
+#slide2012-1 #buildings-2012-1 .new {
+  height: 100%;
+  position: relative;
+  top: -100%;
+  overflow: hidden;
+}
+#slide2012-1 #buildings-2012-1 .new img {
+  max-width: 60000%;
+}
+#slide2012-1 #ground-2012-1 {
+  top: auto;
+  bottom: 0;
+  width: 100%;
+  height: 13%;
+  background-color: #38b449;
+}
 #FramesAnimation {
   width: 619px;
   height: 398px;

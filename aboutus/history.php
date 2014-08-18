@@ -56,64 +56,7 @@
 			</div>
 		</section>
 
-		<?php
-			$backgrounds = array(
-				"1919"=>"bgBlue",
-				"1920"=>"bgLightBrown",
-				"1922"=>"bgBrown",
-				"1954"=>"bgTurquoise",
-				"1969"=>"bgStripedBrown",
-				"1970"=>"bgBlue",
-				"1976-1"=>"bgDarkBlue",
-				"1976-2"=>"bgDarkBlue",
-				"1978-1"=>"bgBlue",
-				"1978-2"=>"bgTurquoiseDark",
-				"1986"=>"bgBlue",
-				"1987-1"=>"bgDarkerBlue",
-				"1987-2"=>"",
-				"1987-3"=>"bgBlue",
-				"1988"=>"bgTurquoiseDark",
-				"1990s"=>"bgGreyDark",
-				"1993"=>"bgDarkBlue",
-				"1994"=>"bgTurquoiseLight",
-				"1997"=>"bgDarkBrown",
-				"1998-1"=>"bgBlue",
-				"1998-2"=>"bgLightBrown",
-				"2000-1"=>"bgTurquoiseLight",
-				"2000-2"=>"bgLightBrown",
-				"2000-3"=>"bgNightBlue",
-				"2001"=>"bgDarkBlue",
-				"2003"=>"bgBlue",
-				"2004"=>"bgBlue",
-				"2005-1"=>"bgDarkBrown",
-				"2005-2"=>"bgNightBlue",
-				"2006"=>"bgBlue",
-				"2006-2"=>"bgDarkerBlue",
-				"2007-1"=>"bgGreenLight",
-				"2007-2"=>"bgBlue",
-				"2007-3"=>"bgNightBlue",
-				"2008"=>"bgBlue",
-				"2009-1"=>"bgDarkBrown",
-				"2009-2"=>"bgPurple",
-				"2010"=>"bgBrown",
-				"2011"=>"bgGreyDark",
-				"2012-1"=>"bgBlue",
-				"2012-2"=>"bgGreyLight",
-				"2012-3"=>"bgBlueLight",
-				"2012-4"=>"bgBlue",
-				"2014-1"=>"bgGreenLight"
-			);
-			$location = 'history/panels/';
-			foreach (new DirectoryIterator($location) as $file) {
-				$file_name = $file->getFilename();
-				if ($file_name[0] == ".") continue;
-				if($file->isDot()) continue;
-				$year = str_replace('.html', '', $file->getBasename());
-				echo '<section id="slide'.$year.'" class="'.$backgrounds[$year].'">';
-				include($location.$file_name);
-				echo '</section>';
-			}
-		?>
+		<div id="timeline"><!-- Inject appropriate html with js --></div>
 
 		<?php
 			include_once($serverBase."/includes/foot/foot-generic.php");
@@ -144,26 +87,73 @@
 		include_once($serverBase."/includes/foot/scripts.php");
 	?>
 	<script type="text/javascript">
-		var SkrollrSetup = function () {
-			var min_height = 800;
-			var win_height = $(window).height()*0.8;
-			if (win_height > min_height) {
-				$('section').css('min-height', win_height);
-			}
-			var s = skrollr.init({
+		// Check for support
+		var Timeline = function() {
+			window.TT = this;
+			TT.hasTouch = Modernizr.hasTouch;
+			TT.smallScreen = $(window).width() < 800;
+			TT.container = '#timeline';
+			TT.html = '';
+			TT.ajax = {
+				full: 'history/ajax-history-full.php',
+				small: 'history/ajax-history-images.php',
+			};
+			TT.skrollrConfig = {
 				smoothScrolling : true,
 				smoothScrollingDuration: 2000,
 				keyframe: function(element, name, direction) {
         			// console.log(element, name, direction);
         		}
-    		});
+        	};
 		};
+		Timeline.prototype.SkrollrSetup = function () {
+			if(TT.smallScreen || TT.hasTouch) return;
+			var s = skrollr.init(TT.skrollrConfig);
+			console.log('s', s);
+		};
+		Timeline.prototype.SetHeights = function () {
+			var min_height = 800;
+			var win_height = $(window).height()*0.8;
+			if (win_height > min_height) {
+				$('section').css('min-height', win_height);
+			}
+		};
+		Timeline.prototype.GetHTML = function() {
+			if (TT.hasTouch || TT.smallScreen) {
+				// $.get(TT.ajax.small).done( function (data, textStatus, jqXHR) {
+				// 	$(TT.container).empty().html(data);
+				// });
+			}
+			else {
+				$.get(TT.ajax.full)
+					.done(
+						function (data, textStatus, jqXHR) {
+							$(TT.container).empty().html(data);
+						}
+					)
+					.then(
+						function() {
+							TT.SetHeights();
+						}
+					)
+					.then(
+						function() {
+							TT.SkrollrSetup();
+						}
+					);
+			}
+		};
+
+		// Init timeline object
+		window.timeline = new Timeline();
+
 		$(document).on('ready', function() {
-			SkrollrSetup();
+			window.timeline.GetHTML();
 		});
-		$(window).on('resize', function() {
-			SkrollrSetup();
-		});
+		// $(window).on('resize', function() {
+		// 	window.timeline.SkrollrSetup();
+		// });
+
 	</script>
 
 </body>

@@ -88,6 +88,7 @@
 				"2005-1"=>"bgDarkBrown",
 				"2005-2"=>"bgNightBlue",
 				"2006"=>"bgBlue",
+				"2006-2"=>"bgDarkerBlue",
 				"2007-1"=>"bgGreenLight",
 				"2007-2"=>"bgBlue",
 				"2007-3"=>"bgNightBlue",

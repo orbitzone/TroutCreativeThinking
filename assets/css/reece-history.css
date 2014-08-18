@@ -1391,6 +1391,27 @@
   width: 100%;
   height: 14%;
 }
+#slide2006-2 #map-2006-2 {
+  bottom: 17%;
+  top: auto;
+  height: auto;
+}
+#slide2006-2 #map-2006-2 .wrap {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+#slide2006-2 #map-2006-2 img {
+  width: 100%;
+  height: auto;
+}
+#slide2006-2 #map-2006-2 svg {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 #slide2007-1 .fridgeDoor {
   height: 500px;
   width: 300px;
@@ -1457,6 +1478,17 @@
   height: 17%;
   bottom: 0;
   top: auto;
+}
+#slide2008 .truck {
+  bottom: 14%;
+  top: auto;
+  width: 100%;
+  height: 30%;
+  text-align: center;
+}
+#slide2008 .truck img {
+  height: 100%;
+  width: auto;
 }
 #slide2009-2 .wrap {
   position: absolute;

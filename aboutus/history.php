@@ -108,14 +108,14 @@
 		};
 		Timeline.prototype.SkrollrSetup = function () {
 			if(TT.smallScreen || TT.hasTouch) return;
-			var s = skrollr.init(TT.skrollrConfig);
+			var s = skrollr.init(TT.skrollrConfig).refresh();
 			console.log('s', s);
 		};
 		Timeline.prototype.SetHeights = function () {
 			var min_height = 800;
 			var win_height = $(window).height()*0.8;
 			if (win_height > min_height) {
-				$('section').css('min-height', win_height);
+				$(TT.container).find('section').css('min-height', win_height);
 			}
 		};
 		Timeline.prototype.GetHTML = function() {
@@ -144,15 +144,13 @@
 			}
 		};
 
-		// Init timeline object
-		window.timeline = new Timeline();
-
 		$(document).on('ready', function() {
-			window.timeline.GetHTML();
+
+			// Init timeline object
+			var timeline = new Timeline();
+			timeline.GetHTML();
+
 		});
-		// $(window).on('resize', function() {
-		// 	window.timeline.SkrollrSetup();
-		// });
 
 	</script>
 

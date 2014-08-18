@@ -145,12 +145,16 @@
 	?>
 	<script type="text/javascript">
 		var SkrollrSetup = function () {
-			$('section').css('height', $(window).height()*0.8);
+			var min_height = 800;
+			var win_height = $(window).height()*0.8;
+			if (win_height > min_height) {
+				$('section').css('min-height', win_height);
+			}
 			var s = skrollr.init({
 				smoothScrolling : true,
 				smoothScrollingDuration: 2000,
 				keyframe: function(element, name, direction) {
-        			console.log(element, name, direction);
+        			// console.log(element, name, direction);
         		}
     		});
 		};

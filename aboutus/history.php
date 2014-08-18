@@ -99,7 +99,8 @@
 				"2012-1"=>"bgBlue",
 				"2012-2"=>"bgGreyLight",
 				"2012-3"=>"bgBlueLight",
-				"2012-4"=>"bgBlue"
+				"2012-4"=>"bgBlue",
+				"2014-1"=>"bgGreenLight"
 			);
 			$location = 'history/panels/';
 			foreach (new DirectoryIterator($location) as $file) {

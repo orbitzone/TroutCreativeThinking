@@ -1,4 +1,4 @@
-
+<?php error_reporting(0); ?>
 <?php include_once($_SERVER['DOCUMENT_ROOT']."/includes/variables/variables.php"); ?>
 
 <?php
@@ -80,7 +80,7 @@
 			"/assets/js/jquery.mobile.custom.min.js",
 			"/assets/js/bootstrap-scrollspy.js",
 			"/assets/js/reece-ocnav.js",
-			"/assets/js/skrollr.min.js",
+			//"/assets/js/skrollr.min.js",
 			"/assets/js/reece-hidesubnavbar.js",
 			"/assets/js/reece-history.js"
 		];
@@ -90,7 +90,7 @@
 		// Check for support
 		var Timeline = function() {
 			window.TT = this;
-			TT.hasTouch = Modernizr.hasTouch;
+			TT.hasTouch = Modernizr.touch;
 			TT.smallScreen = $(window).width() < 800;
 			TT.minHeight = 800;
 			TT.maxHeight = 1050;
@@ -98,20 +98,19 @@
 			TT.html = '';
 			TT.ajax = {
 				full: 'history/ajax-history-full.php',
-				small: 'history/ajax-history-images.php',
+				small: 'history/ajax-history-images.php'
 			};
 			TT.skrollrConfig = {
 				smoothScrolling : true,
 				smoothScrollingDuration: 2000,
-				keyframe: function(element, name, direction) {
-        			// console.log(element, name, direction);
-        		}
+				mobileCheck : function() {
+					return false; // disable for mobile
+				}
         	};
 		};
 		Timeline.prototype.SkrollrSetup = function () {
-			if(TT.smallScreen || TT.hasTouch) return;
-			var s = skrollr.init(TT.skrollrConfig).refresh();
-			console.log('s', s);
+			if (TT.smallScreen || TT.hasTouch) return;
+			TT.skrollr = skrollr.init(TT.skrollrConfig).refresh();
 		};
 		Timeline.prototype.SetHeights = function () {
 			var win_height = $(window).height()*0.8;
@@ -125,6 +124,8 @@
 					.done(
 							function (data, textStatus, jqXHR) {
 								$(TT.container).empty().html(data);
+								// $('body').css('overflow', 'auto');
+								// console.log(skrollr);
 						}
 					);
 			}
@@ -142,7 +143,7 @@
 					)
 					.then(
 						function() {
-							TT.SkrollrSetup();
+							//TT.SkrollrSetup();
 						}
 					);
 			}

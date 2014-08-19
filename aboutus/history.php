@@ -92,6 +92,8 @@
 			window.TT = this;
 			TT.hasTouch = Modernizr.hasTouch;
 			TT.smallScreen = $(window).width() < 800;
+			TT.minHeight = 800;
+			TT.maxHeight = 1050;
 			TT.container = '#timeline';
 			TT.html = '';
 			TT.ajax = {
@@ -112,9 +114,8 @@
 			console.log('s', s);
 		};
 		Timeline.prototype.SetHeights = function () {
-			var min_height = 800;
 			var win_height = $(window).height()*0.8;
-			if (win_height > min_height) {
+			if (win_height > TT.minHeight && win_height < TT.maxHeight) {
 				$(TT.container).find('section').css('min-height', win_height);
 			}
 		};

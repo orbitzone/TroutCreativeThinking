@@ -832,6 +832,15 @@
   margin-top: 15%;
   text-align: center;
 }
+#slide1997 .wrap {
+  width: 1350px;
+  margin: 0 auto;
+}
+#slide1997 .layer {
+  top: auto;
+  height: auto;
+  bottom: 10%;
+}
 #slide1997 .pipes {
   background: url("../images/aboutus/history/1997-pipes.png") center no-repeat;
   height: 238px;
@@ -842,7 +851,6 @@
 }
 #slide1997 .mapwrap {
   overflow: hidden;
-  padding-bottom: 10%;
 }
 #slide1997 .map {
   background: url("../images/aboutus/history/1997-map.png") 0 0 no-repeat;
@@ -1205,7 +1213,10 @@
 }
 .register {
   text-align: center;
-  margin-top: 10%;
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  width: 100%;
 }
 .registerDisplay {
   background: #F89728;
@@ -1437,6 +1448,9 @@
   background-position: 10% 50%;
   background-repeat: no-repeat;
 }
+#slide2007-1.small {
+  background-image: none;
+}
 #slide2007-1 #fridge-2007-1 .wrap {
   height: 60%;
   width: 100%;
@@ -1666,6 +1680,9 @@
 #slide2012-2 {
   background: url("../images/aboutus/history/2012-2-bg.svg") center center;
 }
+#slide2012-2.small {
+  background-size: 40px 40px;
+}
 #slide2012-2 .header {
   color: #4c4c4c;
 }
@@ -1789,6 +1806,9 @@
 }
 #slide2014-1 {
   background: url("../images/aboutus/history/2014-1-bg.svg") center center;
+}
+#slide2014-1.small {
+  background-size: 80px 80px;
 }
 #slide2014-1 #gauge-2014-1 {
   bottom: 0%;

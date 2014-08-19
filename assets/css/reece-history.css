@@ -53,13 +53,18 @@
   height: auto;
 }
 .history section.small > img {
-  width: 100%;
-  height: auto;
+  width: 100% !important;
+  height: auto !important;
   display: block;
   margin: 0 auto;
 }
 .history section.small .header {
+  padding-top: 10px;
   position: relative;
+}
+.history section.small .header p {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .nav-history {
   position: fixed;
@@ -140,7 +145,8 @@
   font-weight: 200;
 }
 #slideHistoryIntro p {
-  width: 550px;
+  max-width: 550px;
+  padding: 10px;
   margin: auto;
 }
 #slideHistoryIntro .reece-logo {

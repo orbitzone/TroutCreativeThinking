@@ -34,7 +34,7 @@
 			</ul>
 		</div>-->
 
-		<section id="slideHistoryIntro">
+		<header id="slideHistoryIntro">
 			<div class="content-container">
 				<img src="/assets/images/aboutus/history/logo-reece.png" alt=" " class="reece-logo"
 				data-0="opacity: 1"
@@ -54,7 +54,7 @@
 				>
 
 			</div>
-		</section>
+		</header>
 
 		<div id="timeline"><!-- Inject appropriate html with js --></div>
 

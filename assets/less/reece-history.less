@@ -37,13 +37,18 @@
 	section.small {
 		height: auto;
 		> img {
-			width: 100%;
-			height: auto;
+			width: 100% !important;
+			height: auto !important;
 			display: block;
 			margin: 0 auto;
 		}
 		.header {
+			padding-top: 10px;
 			position: relative;
+			p {
+				padding-left: 10px;
+				padding-right: 10px;
+			}
 		}
 	}
 }
@@ -110,7 +115,8 @@
 		font-weight: 200;
 	}
 	p {
-		width: 550px;
+		max-width: 550px;
+		padding: 10px;
 		margin: auto
 	}
 	padding: 2em 0;

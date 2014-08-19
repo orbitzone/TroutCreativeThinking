@@ -120,9 +120,12 @@
 		};
 		Timeline.prototype.GetHTML = function() {
 			if (TT.hasTouch || TT.smallScreen) {
-				// $.get(TT.ajax.small).done( function (data, textStatus, jqXHR) {
-				// 	$(TT.container).empty().html(data);
-				// });
+				$.get(TT.ajax.small)
+					.done(
+							function (data, textStatus, jqXHR) {
+								$(TT.container).empty().html(data);
+						}
+					);
 			}
 			else {
 				$.get(TT.ajax.full)

@@ -7,12 +7,15 @@
 	.stage{
 		position: absolute;
 		bottom: 0%;
-		height: 50%;
+		height: 40%;
+		@media (min-width: 1200px) {
+			height: 50%;
+		}
 		width: 100%;
 		overflow: hidden;
 		.ground {
 			background: #414042;
-			height: @g;
+			height: @g+0.5;
 			position: absolute;
 			bottom: 0;
 			left: 0;

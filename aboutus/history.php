@@ -1,4 +1,4 @@
-<?php error_reporting(0); ?>
+<?php //error_reporting(0); ?>
 <?php include_once($_SERVER['DOCUMENT_ROOT']."/includes/variables/variables.php"); ?>
 
 <?php

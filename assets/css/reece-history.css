@@ -30,6 +30,7 @@
   color: #ffffff;
   padding: 1px 0;
   height: 800px;
+  min-width: 1000px;
   overflow: hidden;
 }
 .history section .layer {
@@ -51,6 +52,7 @@
 }
 .history section.small {
   height: auto;
+  min-width: 200px;
 }
 .history section.small > img {
   width: 100% !important;

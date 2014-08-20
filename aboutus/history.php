@@ -87,6 +87,7 @@
 		include_once($serverBase."/includes/foot/scripts.php");
 	?>
 	<script type="text/javascript">
+
 		// Keep this here
 		$(document).on('ready', function() {
 
@@ -94,6 +95,7 @@
 				window.TT = this;
 				TT.hasTouch = Modernizr.touch;
 				TT.smallScreen = $(window).width() < 1000; // 1000px == min-width of large slides
+				TT.isiPad = navigator.userAgent.match(/iPad/i) != null;
 				TT.minHeight = 800;
 				TT.maxHeight = 1050;
 				TT.container = '#timeline';
@@ -113,7 +115,7 @@
 				TT.GetHTML();
 			};
 			Timeline.prototype.SkrollrSetup = function () {
-				if (TT.smallScreen || TT.hasTouch) return;
+				if (TT.smallScreen || TT.hasTouch || TT.isiPad) return;
 				TT.skrollr = skrollr.init(TT.skrollrConfig);
 			};
 			Timeline.prototype.SetHeights = function () {
@@ -123,7 +125,7 @@
 				}
 			};
 			Timeline.prototype.GetHTML = function() {
-				if (TT.hasTouch || TT.smallScreen) {
+				if (TT.hasTouch || TT.smallScreen || TT.isiPad) {
 					$.get(TT.ajax.small)
 						.done(
 							function (data, textStatus, jqXHR) {

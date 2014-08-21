@@ -1579,6 +1579,10 @@
   height: 100%;
   width: auto;
 }
+#slide2009-2 {
+  background-image: url("../images/aboutus/history/2009-2-bg.svg");
+  background-position: 50% 50%;
+}
 #slide2009-2 .wrap {
   position: absolute;
   left: 0;

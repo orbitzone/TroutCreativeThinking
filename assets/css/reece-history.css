@@ -687,17 +687,15 @@
   float: right;
   background-color: #00adef;
 }
-#slide1987-3 #map-1987-3 div {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  overflow: hidden;
+#slide1987-3 #map-1987-3 {
+  background-image: url("../images/aboutus/history/1987-3-map-2.svg");
+  background-size: 100% auto;
+  background-position: center center;
 }
-#slide1987-3 #label-1987-3 div {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  overflow: hidden;
+#slide1987-3 #label-1987-3 {
+  background-image: url("../images/aboutus/history/1987-3-label.svg");
+  background-size: 100% auto;
+  background-position: center center;
 }
 #slide1988 img,
 #slide1988 svg {

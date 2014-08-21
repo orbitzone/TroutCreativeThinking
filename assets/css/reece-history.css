@@ -28,7 +28,7 @@
 .history section {
   position: relative;
   color: #ffffff;
-  padding: 1px 0;
+  border-bottom: 1px solid white;
   height: 800px;
   min-width: 1000px;
   overflow: hidden;
@@ -53,6 +53,7 @@
 .history section.small {
   height: auto;
   min-width: 200px;
+  border-bottom: 0 none;
 }
 .history section.small > img {
   width: 100% !important;
@@ -217,6 +218,9 @@
 }
 .bgPurple {
   background-color: #532e63;
+}
+.bgDarkGreen {
+  background-color: #006838;
 }
 .history section .groundGrey {
   background-color: #6d6e70;
@@ -673,9 +677,6 @@
 #slide1987-2 #new-1987-2 {
   background-color: #003767;
 }
-#slide1987-3 {
-  background-color: #c4122f;
-}
 #slide1987-3 img {
   height: 100%;
   width: auto;
@@ -878,7 +879,7 @@
   height: 200px;
   float: right;
 }
-#slide1998-1 {
+#slide1998-1 .cloudbackground {
   background: #00aeef url("../images/aboutus/history/1998-bg-cloud.png") center 100% no-repeat;
 }
 #slide1998-1 .buildingwrap {
@@ -957,6 +958,9 @@
   left: 0;
   width: 100%;
   height: 18%;
+}
+#slide2000-1 {
+  background: url("../images/aboutus/history/2000-3-bg.svg") repeat center center;
 }
 #slide2000-1 img {
   height: 100%;

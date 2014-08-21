@@ -13,7 +13,7 @@
 		"1986" => array("bgBlue", 'Head Office relocates from Caulfield to Ringwood Victoria.'),
 		"1987-1" => array("bgDarkerBlue", 'The Burwood, Victoria showroom opened and has become the flagship showroom for Reece.'),
 		"1987-2" => array("bgDarkerBlue", 'The company name H.J. Reece Limited changes to Reece Australia Limited.'),
-		"1987-3" => array("bgBlue", 'The first metropolitan Sydney store commences trading in Parramatta.'),
+		"1987-3" => array("bgDarkGreen", 'The first metropolitan Sydney store commences trading in Parramatta.'),
 		"1988" => array("bgTurquoiseDark", 'Reece commences trading in Queensland with its Labrador store and in the ACT with its branch at Fyshwick.'),
 		"1990s" => array("bgGreyDark", 'Reece expands into allied markets of Mechanical Services, Gas and Irrigation.'),
 		"1993" => array("bgDarkBlue", 'A new and larger warehouse begins operating in Mulgrave Victoria.'),

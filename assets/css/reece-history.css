@@ -1481,6 +1481,11 @@
   top: 0;
   left: 0;
 }
+#slide2006-2 #map-2006-2 .map-logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 #slide2007-1 {
   background-image: url("../images/aboutus/history/2007-1-birds.svg");
   background-position: 10% 50%;
@@ -1849,7 +1854,7 @@
 }
 #slide2012-4 #buildings-2012-4 {
   top: auto;
-  bottom: 13%;
+  bottom: 8%;
   height: 44%;
   text-align: center;
 }
@@ -1871,10 +1876,11 @@
   position: absolute;
   top: 0%;
   left: 0%;
-  background-image: url("../images/aboutus/history/2012-4-new.svg");
-  background-position: 0% 0%;
-  background-repeat: no-repeat;
-  background-size: auto 100%;
+  /*background-image: url("@{imagepath}/2012-4-new.svg");
+				background-position: 0% 0%;
+				background-repeat: no-repeat;
+				background-size: auto 100%;*/
+
 }
 #slide2012-4 #ground-2012-4 {
   top: auto;

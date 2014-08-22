@@ -1240,7 +1240,7 @@
 .register {
   text-align: center;
   position: absolute;
-  bottom: 20%;
+  bottom: 0;
   left: 0;
   width: 100%;
 }
@@ -1523,6 +1523,35 @@
   background-color: #e6e7e8;
   position: absolute;
   top: -38px;
+}
+#slide2007-2 .cloud {
+  position: relative;
+}
+#slide2007-2 .cloud img {
+  position: absolute;
+  bottom: 0;
+}
+#slide2007-2 .cloud-1 {
+  height: 30%;
+}
+#slide2007-2 .cloud-1 img {
+  left: 20%;
+  height: 60%;
+}
+#slide2007-2 .cloud-2 {
+  height: 20%;
+  margin-top: -30px;
+}
+#slide2007-2 .cloud-2 img {
+  left: 0%;
+  height: 100%;
+}
+#slide2007-2 .cloud-3 {
+  height: 24%;
+}
+#slide2007-2 .cloud-3 img {
+  right: 0%;
+  height: 60%;
 }
 #slide2007-3 #stage-2007-3 {
   text-align: center;

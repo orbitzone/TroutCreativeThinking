@@ -1791,8 +1791,8 @@
 }
 #slide2012-2 #people-2012-2 .wrap .row .right img,
 #slide2012-2 #people-2012-2 .wrap .row .left img {
-  height: 100%;
-  width: auto;
+  height: auto;
+  width: 300px;
 }
 #slide2012-3 #sofa-2012-3 div {
   height: 42%;
@@ -1802,11 +1802,11 @@
   text-align: right;
 }
 #slide2012-3 #sofa-2012-3 div img {
-  height: 100%;
-  width: auto;
+  height: auto;
+  width: 400px;
 }
 #slide2012-3 #window-2012-3 div {
-  height: 40%;
+  height: auto;
   position: absolute;
   left: 8%;
   top: 34%;
@@ -1814,8 +1814,8 @@
   overflow: hidden;
 }
 #slide2012-3 #window-2012-3 div img {
-  height: 100%;
-  width: auto;
+  height: auto;
+  width: 278px;
 }
 #slide2012-3 #window-2012-3 div .moon {
   position: absolute;
@@ -1860,6 +1860,10 @@
 #slide2012-4 #buildings-2012-4 .old {
   height: 100%;
   position: relative;
+}
+#slide2012-4 #buildings-2012-4 .old img {
+  height: auto;
+  width: 742px;
 }
 #slide2012-4 #buildings-2012-4 .old .new {
   height: 100%;

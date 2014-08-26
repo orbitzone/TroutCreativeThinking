@@ -1,15 +1,28 @@
 <?php
 	include('config.php');
-	$location = 'panels_images/';
+	$i = 0;
+	$section = 0;
+	$split = 8;
+	echo '<div class="history-section-nav">';
+	echo '<a href="#" class="nav previous">▲<span>Previous</span></a>';
+	echo '<a href="#" class="nav next">▼<span>Next</span></a>';
+	echo '<div class="slider-wrap">';
+	echo '<div class="slider">';
+	echo '<div class="count-'.$section.'">';
+	echo '<ul>';
 	foreach ($panels as $year => $attr) {
-		$y = explode('-', $year)[0];
-		$img = $location.$year.'.png';
-		echo '<section id="slide'.$year.'" class="'.$attr[0].' small">';
-		echo '<div class="header">';
-		echo '<h2 class="year">'.$y.'</h2>';
-		echo '<p class="yearDescription">'.$attr[1].'</p>';
-		echo '</div>';
-		echo ($file_exists($img)) ? '<img src="'.$img.'"/>' : '';
-		echo '</section>';
+		if ($i%$split == 0 && $i != 0) {
+			$section++;
+			echo '</ul></div>'; // close prev
+			echo '<div class="count-'.($section).'"><ul>'; // open next
+
+		}
+		echo '<li><a href="#slide'.$year.'" data-count="'.$i.'">'.(explode('-', $year)[0]).'</a></li>';
+		$i++;
 	}
+	echo '</ul>';
+	echo '</div>';
+	echo '</div>';
+	echo '</div>';
+	echo '</div>';
 ?>

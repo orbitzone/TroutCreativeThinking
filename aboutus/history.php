@@ -82,7 +82,8 @@
 			"/assets/js/reece-ocnav.js",
 			"/assets/js/skrollr.min.js",
 			"/assets/js/reece-hidesubnavbar.js",
-			"/assets/js/reece-history.js"
+			"/assets/js/reece-history.js",
+			"/assets/js/waypoints.js"
 		];
 		include_once($serverBase."/includes/foot/scripts.php");
 	?>
@@ -98,10 +99,13 @@
 				TT.isiPad = navigator.userAgent.match(/iPad/i) != null;
 				TT.minHeight = 800;
 				TT.maxHeight = 1050;
-				TT.container = '#timeline';
+				TT.container = $('#timeline');
+				TT.navCurrentBlock = 0;
+				TT.navBlocksCount = 5;
 				TT.ajax = {
 					full: 'history/ajax-history-full.php',
-					small: 'history/ajax-history-images.php'
+					small: 'history/ajax-history-images.php',
+					nav: 'history/ajax-history-small.php'
 				};
 				TT.skrollrConfig = {
 					smoothScrolling : true,
@@ -121,35 +125,102 @@
 			Timeline.prototype.SetHeights = function () {
 				var win_height = $(window).height()*0.8;
 				if (win_height > TT.minHeight && win_height < TT.maxHeight) {
-					$(TT.container).find('section').css('min-height', win_height);
+					TT.container.find('section').css('min-height', win_height);
 				}
 			};
+			Timeline.prototype.SlideEvents = function () {
+				TT.container.find('section').each(function() {
+					$(this).waypoint(function() {
+						var data = {
+							id: $(this).attr('id')
+						}
+						$(window).trigger('Timeline:newSlide', data);
+					});
+				});
+			};
+			Timeline.prototype.NavChange = function () {
+				$(window).on('Timeline:newSlide', function (event, data) {
+					var nav = TT.container.find('.history-section-nav');
+					var links = nav.find('a');
+					var link = nav.find('a[href="#' + data['id'] + '"]');
+					var block = link.parents('[class*="count-"]');
+					var block = block.attr('class').replace('count-', '');
+					if (block != TT.navCurrentBlock || TT.navCurrentBlock == 0) {
+						var data = {
+							block: block
+						};
+						console.log(data['block']);
+						$(window).trigger('Timeline:newBlock', data);
+					}
+					links.removeClass('active');
+					link.addClass('active');
+
+				});
+			}
+			Timeline.prototype.NavButtons = function () {
+				var buttons = TT.container.find('.history-section-nav .nav');
+				buttons.each(function() {
+					$(this).on('click', function (event) {
+						var current = TT.navCurrentBlock;
+						event.preventDefault();
+						if ($(this).hasClass('previous')) {
+							var data = {
+								block: ((current-1 > 0) ? current-1 : 0)
+							};
+						}
+						if ($(this).hasClass('next')) {
+							var data = {
+								block: ((current+1 <= TT.navBlocksCount) ? current+1 : TT.navBlocksCount)
+							};
+						}
+						$(window).trigger('Timeline:newBlock', data);
+					});
+				});
+			}
+			Timeline.prototype.NavSlide = function () {
+				$(window).on('Timeline:newBlock', function (event, data) {
+					var nav = TT.container.find('.history-section-nav');
+					var i = parseInt(data['block']);
+					nav.attr('data-current-block', 'count-' + i);
+					TT.navCurrentBlock = i;
+				});
+			}
 			Timeline.prototype.GetHTML = function() {
 				if (TT.hasTouch || TT.smallScreen || TT.isiPad) {
-					$.get(TT.ajax.small)
-						.done(
-							function (data, textStatus, jqXHR) {
-								$(TT.container).empty().html(data);
-							}
-						);
+					$.get(TT.ajax.small).done(
+						function (data, textStatus, jqXHR) {
+							TT.container.empty().html(data);
+						}
+					);
 				}
 				else {
-					$.get(TT.ajax.full)
-						.done(
-							function (data, textStatus, jqXHR) {
-								$(TT.container).empty().html(data);
-							}
-						)
-						.then(
-							function() {
-								TT.SetHeights();
-							}
-						)
-						.then(
-							function() {
-								TT.SkrollrSetup();
-							}
-						);
+					$.get(TT.ajax.full).done(
+						function (data, textStatus, jqXHR) {
+							$(TT.container).empty().html(data);
+						}
+					)
+					.then(
+						function() {
+							// TT.SetHeights();
+							$.get(TT.ajax.nav).done(
+								function (data, textStatus, jqXHR) {
+									TT.container.append(data);
+								}
+							).then(
+								function () {
+									TT.SlideEvents();
+									TT.NavChange();
+									TT.NavSlide();
+									TT.NavButtons();
+								}
+							);
+						}
+					)
+					.then(
+						function() {
+							TT.SkrollrSetup();
+						}
+					);
 				}
 			};
 			// Init timeline object

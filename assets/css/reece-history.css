@@ -25,11 +25,99 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+.history .history-section-nav {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  z-index: 30;
+  height: 288px;
+  margin-top: -144px;
+}
+.history .history-section-nav a {
+  line-height: 36px;
+  font-size: 14px;
+  padding: 0 16px;
+  display: block;
+  text-decoration: none;
+}
+.history .history-section-nav .slider-wrap {
+  overflow: hidden;
+  height: 100%;
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.history .history-section-nav .slider {
+  height: 500%;
+  position: relative;
+  top: 0;
+  -webkit-transition: 'all 200ms ease-in';
+  -moz-transition: 'all 200ms ease-in';
+  -o-transition: 'all 200ms ease-in';
+  transition: 'all 200ms ease-in';
+}
+.history .history-section-nav .slider > div {
+  height: 20%;
+}
+.history .history-section-nav .slider ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.history .history-section-nav .slider a:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+.history .history-section-nav .slider a.active {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+.history .history-section-nav .nav {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 36px;
+  margin: 0;
+}
+.history .history-section-nav .nav.previous {
+  top: -36px;
+}
+.history .history-section-nav .nav.next {
+  bottom: -36px;
+}
+.history .history-section-nav .nav span {
+  position: absolute;
+  top: -200px;
+}
+.history .history-section-nav[data-current-block="count-1"] .slider {
+  top: -100%;
+}
+.history .history-section-nav[data-current-block="count-2"] .slider {
+  top: -200%;
+}
+.history .history-section-nav[data-current-block="count-3"] .slider {
+  top: -300%;
+}
+.history .history-section-nav[data-current-block="count-4"] .slider {
+  top: -400%;
+}
+.history .history-section-nav[data-current-block="count-5"] .slider {
+  top: -500%;
+}
+.history .history-section-nav[data-current-block="count-0"] .nav.previous {
+  display: none;
+}
+.history .history-section-nav[data-current-block="count-5"] .nav.next {
+  display: none;
+}
 .history section {
   position: relative;
   color: #ffffff;
   border-bottom: 1px solid white;
-  height: 800px;
+  height: 600px;
   min-width: 1000px;
   overflow: hidden;
 }
@@ -118,7 +206,7 @@
 }
 @media (min-width: 767px) {
   .year {
-    font-size: 100px;
+    font-size: 72px;
     letter-spacing: 0px;
   }
 }
@@ -128,7 +216,7 @@
   padding-bottom: 1em;
   font-weight: 300;
   text-align: center;
-  max-width: 1000px;
+  max-width: 800px;
   margin: 0 auto;
   -webkit-font-feature-settings: "liga" 0;
   -moz-font-feature-settings: "liga" 0;
@@ -137,7 +225,7 @@
 }
 @media (min-width: 767px) {
   .yearDescription {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 100;
     letter-spacing: 2px;
   }
@@ -251,6 +339,122 @@
   width: 100%;
   display: block;
 }
+.history .register {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.history .registerDisplay {
+  background: #F89728;
+  padding: 20px 20px 0 20px;
+  width: 30%;
+  min-width: 320px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+.history .registerDisplay .registerDisplayScreen {
+  background: #231F20;
+  border: solid 10px #F89728;
+  border-bottom-width: 0;
+  border-top-color: #d28330;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+}
+.history .registerDisplay .registerDisplayScreen .registerBn,
+.history .registerDisplay .registerDisplayScreen .register1,
+.history .registerDisplay .registerDisplayScreen .register1point5 {
+  height: 135px;
+  width: 140px;
+  background: #EC1C24;
+  line-height: 135px;
+  text-align: center;
+  display: block;
+  float: right;
+  margin-right: 10px;
+  margin-top: 60px;
+  color: black;
+  font-size: 40px;
+  position: relative;
+  -webkit-border-radius: 15% 15% 0 0;
+  -moz-border-radius: 15% 15% 0 0;
+  border-radius: 15% 15% 0 0;
+}
+.history .registerDisplay .registerDisplayScreen .registerBn .caretWrap,
+.history .registerDisplay .registerDisplayScreen .register1 .caretWrap,
+.history .registerDisplay .registerDisplayScreen .register1point5 .caretWrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  text-align: center;
+  height: 0;
+}
+.history .registerDisplay .registerDisplayScreen .registerBn .caretWrap:after,
+.history .registerDisplay .registerDisplayScreen .register1 .caretWrap:after,
+.history .registerDisplay .registerDisplayScreen .register1point5 .caretWrap:after {
+  width: 0;
+  content: '';
+  border: solid 20px transparent;
+  display: inline-block;
+  border-bottom-color: #EC1C24;
+  position: relative;
+  top: -73px;
+}
+.history .registerDisplay .registerDisplayScreen .registerBn .number,
+.history .registerDisplay .registerDisplayScreen .register1 .number,
+.history .registerDisplay .registerDisplayScreen .register1point5 .number {
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-indent: -9999em;
+}
+.history .registerDisplay .registerDisplayScreen .registerBn .number {
+  background-image: url("../images/aboutus/history/bn.svg");
+}
+.history .registerDisplay .registerDisplayScreen .register1 .number {
+  background-image: url("../images/aboutus/history/1.svg");
+}
+.history .registerDisplay .registerDisplayScreen .register1point5 {
+  background-color: #D7DF23;
+}
+.history .registerDisplay .registerDisplayScreen .register1point5 .caretWrap:after {
+  border-bottom-color: #D7DF23;
+}
+.history .registerDisplay .registerDisplayScreen .register1point5 .number {
+  background-image: url("../images/aboutus/history/1-5.svg");
+}
+.history .registerDisplay .registerDisplayScreen .registerScreenGlass {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: url("../images/aboutus/history/register-glass.png");
+}
+.history .registerBase {
+  border: solid 20px #F89728;
+  border-width: 20px 20px 0 0;
+  height: 80px;
+  overflow: hidden;
+  width: 85%;
+}
+.history .registerBaseGroves {
+  border: solid 10px #d28330;
+  border-width: 20px 30px 90px 0;
+  border-bottom-color: #F89728;
+  position: relative;
+}
+.history .registerBaseGroves span {
+  display: block;
+  position: absolute;
+  height: 5px;
+  background: #d28330;
+  top: 5px;
+  width: 99%;
+}
 #slide1919 svg,
 #slide1919 img {
   height: 100%;
@@ -304,7 +508,7 @@
   position: absolute;
   left: 0;
   bottom: 13.8%;
-  height: 54%;
+  height: 50%;
   width: 100%;
   text-align: center;
 }
@@ -326,22 +530,23 @@
 }
 #slide1922 svg,
 #slide1922 img {
-  height: 100%;
-  width: auto;
+  width: 880px;
+  height: auto;
 }
 #slide1922 #logo-1922 div {
   position: absolute;
   left: 0;
   top: 0;
-  height: 100%;
+  top: 14%;
+  height: 60%;
   width: 100%;
   text-align: center;
 }
 #slide1922 #stamp-1922 div {
   position: absolute;
   left: 0;
-  top: 0;
-  height: 100%;
+  top: 14%;
+  height: 60%;
   width: 100%;
   text-align: center;
 }
@@ -696,7 +901,7 @@
   background-color: #00adef;
 }
 #slide1987-3 #map-1987-3 {
-  background-image: url("../images/aboutus/history/1987-3-map-2.svg");
+  background-image: url("../images/aboutus/history/1987-3-map.svg");
   background-size: 100% auto;
   background-position: center center;
 }
@@ -1237,122 +1442,6 @@
   height: 10%;
   background-color: #58585b;
 }
-.register {
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
-.registerDisplay {
-  background: #F89728;
-  padding: 20px 20px 0 20px;
-  width: 30%;
-  min-width: 320px;
-  display: inline-block;
-  vertical-align: bottom;
-}
-.registerDisplay .registerDisplayScreen {
-  background: #231F20;
-  border: solid 10px #F89728;
-  border-bottom-width: 0;
-  border-top-color: #d28330;
-  height: 150px;
-  overflow: hidden;
-  position: relative;
-}
-.registerDisplay .registerDisplayScreen .registerBn,
-.registerDisplay .registerDisplayScreen .register1,
-.registerDisplay .registerDisplayScreen .register1point5 {
-  height: 135px;
-  width: 140px;
-  background: #EC1C24;
-  line-height: 135px;
-  text-align: center;
-  display: block;
-  float: right;
-  margin-right: 10px;
-  margin-top: 60px;
-  color: black;
-  font-size: 40px;
-  position: relative;
-  -webkit-border-radius: 15% 15% 0 0;
-  -moz-border-radius: 15% 15% 0 0;
-  border-radius: 15% 15% 0 0;
-}
-.registerDisplay .registerDisplayScreen .registerBn .caretWrap,
-.registerDisplay .registerDisplayScreen .register1 .caretWrap,
-.registerDisplay .registerDisplayScreen .register1point5 .caretWrap {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  text-align: center;
-  height: 0;
-}
-.registerDisplay .registerDisplayScreen .registerBn .caretWrap:after,
-.registerDisplay .registerDisplayScreen .register1 .caretWrap:after,
-.registerDisplay .registerDisplayScreen .register1point5 .caretWrap:after {
-  width: 0;
-  content: '';
-  border: solid 20px transparent;
-  display: inline-block;
-  border-bottom-color: #EC1C24;
-  position: relative;
-  top: -73px;
-}
-.registerDisplay .registerDisplayScreen .registerBn .number,
-.registerDisplay .registerDisplayScreen .register1 .number,
-.registerDisplay .registerDisplayScreen .register1point5 .number {
-  display: block;
-  background-position: center;
-  background-repeat: no-repeat;
-  text-indent: -9999em;
-}
-.registerDisplay .registerDisplayScreen .registerBn .number {
-  background-image: url("../images/aboutus/history/bn.svg");
-}
-.registerDisplay .registerDisplayScreen .register1 .number {
-  background-image: url("../images/aboutus/history/1.svg");
-}
-.registerDisplay .registerDisplayScreen .register1point5 {
-  background-color: #D7DF23;
-}
-.registerDisplay .registerDisplayScreen .register1point5 .caretWrap:after {
-  border-bottom-color: #D7DF23;
-}
-.registerDisplay .registerDisplayScreen .register1point5 .number {
-  background-image: url("../images/aboutus/history/1-5.svg");
-}
-.registerDisplay .registerDisplayScreen .registerScreenGlass {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: url("../images/aboutus/history/register-glass.png");
-}
-.registerBase {
-  border: solid 20px #F89728;
-  border-width: 20px 20px 0 0;
-  height: 80px;
-  overflow: hidden;
-  width: 85%;
-}
-.registerBaseGroves {
-  border: solid 10px #d28330;
-  border-width: 20px 30px 90px 0;
-  border-bottom-color: #F89728;
-  position: relative;
-}
-.registerBaseGroves span {
-  display: block;
-  position: absolute;
-  height: 5px;
-  background: #d28330;
-  top: 5px;
-  width: 99%;
-}
 #slide2005-2 img,
 #slide2005-2 svg {
   height: auto;
@@ -1425,21 +1514,22 @@
 #slide2006 #number-2006-1 {
   bottom: 14%;
   top: auto;
+  text-align: center;
 }
 #slide2006 #number-2006-1 .wrap {
   position: absolute;
-  bottom: 0;
+  bottom: 0%;
   left: 0;
   width: 100%;
 }
 #slide2006 #number-2006-1 .wrap .number {
-  width: 80%;
-  margin: 0 auto;
   position: relative;
+  display: inline-block;
+  vertical-align: bottom;
 }
 #slide2006 #number-2006-1 .wrap .number img {
-  height: auto;
-  width: 100%;
+  height: 320px;
+  width: auto;
   display: block;
 }
 #slide2006 #number-2006-1 .wrap .number .steam {
@@ -1461,7 +1551,7 @@
   height: 14%;
 }
 #slide2006-2 #map-2006-2 {
-  bottom: 17%;
+  bottom: 10%;
   top: auto;
   height: auto;
 }
@@ -1808,7 +1898,7 @@
 }
 #slide2012-3 #sofa-2012-3 div img {
   height: auto;
-  width: 400px;
+  width: 330px;
 }
 #slide2012-3 #window-2012-3 div {
   height: auto;
@@ -1820,7 +1910,7 @@
 }
 #slide2012-3 #window-2012-3 div img {
   height: auto;
-  width: 278px;
+  width: 228px;
 }
 #slide2012-3 #window-2012-3 div .moon {
   position: absolute;
@@ -1848,39 +1938,29 @@
   height: 100%;
   width: auto;
 }
-#slide2012-4 img {
-  height: 100%;
-  width: auto;
-}
 #slide2012-4 #buildings-2012-4 {
   top: auto;
   bottom: 8%;
-  height: 44%;
+  height: auto;
   text-align: center;
 }
 #slide2012-4 #buildings-2012-4 .wrap {
-  height: 100%;
   display: inline-block;
-}
-#slide2012-4 #buildings-2012-4 .old {
-  height: 100%;
   position: relative;
 }
-#slide2012-4 #buildings-2012-4 .old img {
+#slide2012-4 #buildings-2012-4 .wrap img {
   height: auto;
-  width: 742px;
+  width: 680px;
 }
-#slide2012-4 #buildings-2012-4 .old .new {
+#slide2012-4 #buildings-2012-4 .wrap .old {
+  position: relative;
+}
+#slide2012-4 #buildings-2012-4 .wrap .new {
   height: 100%;
   width: 100%;
   position: absolute;
   top: 0%;
   left: 0%;
-  /*background-image: url("@{imagepath}/2012-4-new.svg");
-				background-position: 0% 0%;
-				background-repeat: no-repeat;
-				background-size: auto 100%;*/
-
 }
 #slide2012-4 #ground-2012-4 {
   top: auto;
@@ -1896,12 +1976,12 @@
   background-size: 80px 80px;
 }
 #slide2014-1 #gauge-2014-1 {
-  bottom: 0%;
+  bottom: 10%;
   top: auto;
-  height: 70%;
+  height: 60%;
 }
 #slide2014-1 #gauge-2014-1 .wrap {
-  width: 700px;
+  width: 600px;
   margin: 0 auto;
   position: relative;
 }

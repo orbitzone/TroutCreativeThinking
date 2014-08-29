@@ -7,7 +7,7 @@ jQuery(function() {
 jQuery(function() {
     if(!jQuery.support.placeholder) { 
 	var active = document.activeElement;
-	jQuery('input').focus(function () {
+	jQuery('input textarea').focus(function () {
 	    if (jQuery(this).attr('placeholder') !== '' && jQuery(this).val() == jQuery(this).attr('placeholder')) {
 		jQuery(this).val('').removeClass('hasPlaceholder');
 	    }

@@ -294,9 +294,9 @@ $(document).ready(function(){
 		        
 		        if($('html').hasClass('lt-ie9') || $('html').hasClass('lt-ie8'))
 		        {
-			        var ie9Fileoutput = $('input[type=file]:eq(0)');
-			        app.displayFilename.html('<div>' + ie9Fileoutput + '</div>');
-			        window && console.dir(ie9Fileoutput);
+			        //var ie9Fileoutput = $('input[type=file]:eq(0)');
+			        app.displayFilename.html('<div>File selected</div>');
+			        app.fileType = "image";
 		        }
 		        else if( app.inputFile[0].files.length > 0 ) 
 		        {

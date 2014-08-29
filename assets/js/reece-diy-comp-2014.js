@@ -126,7 +126,7 @@ $(document).ready(function(){
 				$("#entryModal .modal-body").css('background-image', prev.style.backgroundImage);
 				
 				// hide overview css
-				$("#entryModal .modal-body .overlay").css('display','none');
+				$("#entryModal .modal-body div.overlay").css('display', 'none');
 				
 				// update current item
 				app.currentItemID = prev.getAttribute('data-item-id');
@@ -146,7 +146,6 @@ $(document).ready(function(){
 				if(index == app.currentItemsArray.length - 1) next = app.currentItemsArray[ 0 ];
 				else next = app.currentItemsArray[ index + 1 ];
 				
-				window && console.log("next: " + next);
 				
 				// clear modal
 				$("#entryModal .modal-body").html("");
@@ -154,6 +153,9 @@ $(document).ready(function(){
 				// load next item
 				$("#entryModal .modal-body").html(next.innerHTML);
 				$("#entryModal .modal-body").css('background-image', next.style.backgroundImage);
+				
+				// hide overview css
+				$("#entryModal .modal-body div.overlay").css('display', 'none');
 				
 				// update current item
 				app.currentItemID = next.getAttribute('data-item-id');
@@ -289,8 +291,8 @@ $(document).ready(function(){
 		        	// video or image or invalid file type
 		        	app.fileType = app.inputFile[0].files[0].type;
 		        	app.fileName = app.inputFile[0].files[0].name;
-					if(app.fileType.indexOf("video") > -1) app.fileType = "video";
-					else if(app.fileType.indexOf("image") > -1) app.fileType = "image";
+					//if(app.fileType.indexOf("video") > -1) app.fileType = "video";
+					if(app.fileType.indexOf("image") > -1) app.fileType = "image";
 					else app.fileType = "invalid";
 					
 					if(app.fileType != "invalid")

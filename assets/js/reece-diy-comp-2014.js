@@ -296,6 +296,7 @@ $(document).ready(function(){
 		        {
 			        var ie9Fileoutput = $('input[type=file]:eq(0)');
 			        app.displayFilename.html('<div>' + ie9Fileoutput + '</div>');
+			        window && console.dir(ie9Fileoutput);
 		        }
 		        else if( app.inputFile[0].files.length > 0 ) 
 		        {

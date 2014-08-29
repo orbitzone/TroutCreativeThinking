@@ -291,7 +291,13 @@ $(document).ready(function(){
 		        // reset
 		        app.fileName = null;
 		        // file type?
-		        if( app.inputFile[0].files.length > 0 ) 
+		        
+		        if($('html').hasClass('lt-ie9') || $('html').hasClass('lt-ie8'))
+		        {
+			        var ie9Fileoutput = $('input[type=file]:eq(0)');
+			        app.displayFilename.html('<div>' + app.fileName + '</div>');
+		        }
+		        else if( app.inputFile[0].files.length > 0 ) 
 		        {
 		        	
 		        	// video or image or invalid file type

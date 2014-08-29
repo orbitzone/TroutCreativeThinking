@@ -71,7 +71,7 @@
 }
 #entryModal .btn-large {
   font-size: 32px;
-  font-family: 'bebas_neueregular' Helvetica, Arial, sans-serif;
+  font-family: 'bebas_neueregular', Helvetica, Arial, sans-serif;
   padding: 14px 20px;
 }
 #entryModal .btn-black {
@@ -118,7 +118,7 @@
   padding-bottom: 10px;
 }
 #entryModal .modal-body .caption h3 {
-  font-family: 'bebas_neueregular' Helvetica, Arial, sans-serif;
+  font-family: 'bebas_neueregular', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: #000000;
   font-size: 28px;
@@ -159,7 +159,7 @@
 #diyDisastersComp2014 h2,
 #diyDisastersComp2014 h3,
 #diyDisastersComp2014 h4 {
-  font-family: 'bebas_neueregular' Helvetica, Arial, sans-serif;
+  font-family: 'bebas_neueregular', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
 }
 #diyDisastersComp2014 h5,
@@ -231,7 +231,7 @@
 }
 #diyDisastersComp2014 .btn-large {
   font-size: 32px;
-  font-family: 'bebas_neueregular' Helvetica, Arial, sans-serif;
+  font-family: 'bebas_neueregular', Helvetica, Arial, sans-serif;
   padding: 14px 20px;
 }
 #diyDisastersComp2014 .btn-black {
@@ -467,7 +467,7 @@
   color: #888;
 }
 #diyDisastersComp2014 .diy-content-entry-form .form-container #entry-form .file-uploads {
-  width: 400px;
+  width: 520px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -499,7 +499,7 @@
   display: inline-block;
   width: auto;
   height: 64px;
-  font-family: 'bebas_neueregular' Helvetica, Arial, sans-serif;
+  font-family: 'bebas_neueregular', Helvetica, Arial, sans-serif;
   font-size: 20px;
   line-height: 64px;
   float: left;
@@ -557,21 +557,9 @@
 }
 #diyDisastersComp2014 .diy-content-entry-form .form-container #entry-form #upload-btn {
   display: block;
-  width: 62px;
-  height: 52px;
+  width: 215px;
+  height: 118px;
   margin: 10px auto;
-  background-color: #fdb813;
-  -webkit-transition: all 0.25s linear;
-  -moz-transition: all 0.25s linear;
-  -o-transition: all 0.25s linear;
-  transition: all 0.25s linear;
-  border-radius: 3px;
-  border: 1px solid rgba(255, 255, 255, 0.7);
-  box-shadow: 0 1px 2px rgba(255, 255, 255, 0.9);
-}
-#diyDisastersComp2014 .diy-content-entry-form .form-container #entry-form #upload-btn:hover {
-  background-color: #ffffff;
-  border: 1px solid #fdb813;
 }
 #diyDisastersComp2014 .diy-content-entry-form .form-container #entry-form #inputFile {
   position: absolute;

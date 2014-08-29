@@ -125,6 +125,9 @@ $(document).ready(function(){
 				$("#entryModal .modal-body").html(prev.innerHTML);
 				$("#entryModal .modal-body").css('background-image', prev.style.backgroundImage);
 				
+				// hide overview css
+				$("#entryModal .modal-body .overlay").css('display','none');
+				
 				// update current item
 				app.currentItemID = prev.getAttribute('data-item-id');
 				

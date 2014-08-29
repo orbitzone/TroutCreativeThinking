@@ -1,638 +1,939 @@
-//Bootstrap imports
+/* ------------------------------------ Bootstrap imports --- */
 @import "bootstrap/mixins.less";
 @import "bootstrap/variables.less";
 
+
+/* -------------------------------------------- FONTS ------- */
 @font-face {
-    font-family: 'veneerregular';
-    src: url('/assets/font/veneer-webfont.eot');
-    src: url('/assets/font/veneer-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/assets/font/veneer-webfont.woff') format('woff'),
-         url('/assets/font/veneer-webfont.ttf') format('truetype'),
-         url('/assets/font/veneer-webfont.svg#veneerregular') format('svg');
+    font-family: 'bebas_neueregular';
+    src: url('../../assets/font/bebasneue-webfont.eot');
+    src: url('../../assets/font/bebasneue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../assets/font/bebasneue-webfont.woff') format('woff'),
+         url('../../assets/font/bebasneue-webfont.ttf') format('truetype'),
+         url('../../assets/font/bebasneue-webfont.svg#bebas_neueregular') format('svg');
     font-weight: normal;
     font-style: normal;
+
 }
 
-//Variables
-@mainColor:   #7d6a55;
-@redColor: #da291c;
+/* ------------------------------------------- VARS -------- */
+/* colours */
+@colourYellow: 			#fdb813;
+@colourLightYellow: 	#f2cf7b;
+@colourBlack: 			#000;
+@colourDarkGrey: 		#555;
+@colourWhite:			#FFF;
+@colourDarkRed:			#ce1e2e;
+@colourDarkBrown: 		#7c6955;
+/* fonts */
+@fontBebas: 			'bebas_neueregular' Helvetica, Arial, sans-serif;
+@fontHelvetica: 		"Helvetica Neue", Helvetica, Arial, sans-serif;
+@fontSize:				16px;
+@lineHeight:			19px;
+/* layout */
+@topnavHeight:			42px;
 
-body {
-	color: @mainColor;
-}
-
-.header{
-	min-height:124px;
-}
-
-.form-horizontal {
-	padding-left: 15px;
-	input[type="text"] {
-		margin-bottom: 3%;
+/* ----------------------------------- ENTRY MODAL ---------- */
+/* sits outside of #diyDisastersComp2014 so no conflict with reece ocmain global styles */
+.modal.fade.in { top: 10%; }
+.modal { .border-radius(0); }
+#entryModal {
+	
+	width: 890px; 
+	height: 720px;
+	margin-left: -445px;
+	padding: 0 40px;
+	
+	.btn { color: @colourYellow; text-transform: uppercase; text-shadow: none; background-color: @colourBlack; background-image: none; filter: none; border: none; .border-radius(0); .box-shadow(none); }
+	.btn-large { font-size: 32px; font-family: @fontBebas; padding: 14px 20px; }
+	.btn-black { background-color: @colourBlack; color: @colourYellow; }
+	.btn-yellow { background-color: @colourYellow; color: @colourWhite; }
+	
+	.modal-header {
+		height: 56px;
+		padding: 8px 18px 0 18px;	
+		.close {
+			float: left;
+			margin-top: 0;
+			font-size: 40px;
+			font-weight: bold;
+			line-height: 40px;
+			color: #000000;
+			text-shadow: 0 1px 0 #ffffff;
+			opacity: 0.2;
+			filter: alpha(opacity=40);
+		}
+	}
+	
+	.modal-body {
+	    height: 620px;
+	    max-height: 620px;
+	    position: relative;
+	    overflow: hidden;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding-left: 0;
+		padding-right: 0;
+	    .caption {
+		    position: absolute;
+		    display: block;
+		    width: 100%;
+		    height: auto;
+		    bottom: 0;
+		    min-height: 100px;
+		    background-color: @colourWhite;
+		    padding-bottom: 10px;
+		    h3 {
+				font-family: @fontBebas;
+				text-transform: uppercase;
+				color: @colourBlack;
+				font-size: 28px;
+				line-height: 80px;
+				margin: 0;
+				padding: 0 24px;
+			}
+			p {
+				color: @colourBlack;
+				padding: 0 24px 10px 24px;
+			}
+	    }
 	}
 }
 
-/* -------- Left menu -------- */
 
-.leftmenu {
-	float: left;
-	font-family: veneerregular;
-	background:#f2f0ee;
-	min-height:715px !important;
-	height: auto;
-	overflow: hidden || auto;
-	padding: 20px;
+/* ----------------------------------- DIY DISASTERS -------- */
+#diyDisastersComp2014 {
+	
+	/* ----------- GLOBAL STYLES -------- */
+	background-color: @colourBlack;
+	color: @colourWhite;
+	font-family: @fontHelvetica;
+	font-size: @fontSize;
+	line-height: @lineHeight;
+	
+	h1,
+	h2,
+	h3,
+	h4 {
+		font-family: @fontBebas;
+		text-transform: uppercase;
+	}
+	
+	h5,
+	h6,
+	p,
+	span,
+	a {
+		font-family: @fontHelvetica;
+		color: @colourWhite;
+		text-decoration: none;
+	}
+	
 	a:hover {
 		text-decoration: none;
 	}
-	ul {
-		margin: 0;
-		padding: 0;
-		list-style-type: none;
-		text-align: center;
-		li {
-			background: @mainColor;
-			color: #FFFFFF;
-			font-size: 1.3em;
-			line-height: 32px;
-			margin: 3% auto;
-			cursor:pointer;
-			&.active {
-				background: @redColor;
-			}
-			&:hover {
-				background: @redColor;
-			}
-			a {
-				color:#fff;
-				font-size:22px;
-			}
-		}
-	}
-}
-
-.middle {
-	margin-top: 41px;
-}
-
-.rightbar {
-	margin-left: 0 !important;
-	width:76.9% !important;
-	&.row-fluid.contentright {
-		padding-left: 4%;
-		margin-left: 3%;
-	}
-}
-
-.mln {
-	margin-left:0 !important;
-}
-
-.probably2 {
-	margin-top: 40px;
-	padding-left: 5%;
+	
+	h1 { font-size: 70px; line-height: 100%; color: @colourWhite; }
+	h2 { font-size: 50px; line-height: 100%; color: @colourWhite; }
+	h3 { font-size: 40px; line-height: 100%; color: @colourYellow; }
+	h4 { font-size: 22px; line-height: 100%; color: @colourWhite; }
+	h5 { font-size: 18px; line-height: 120%; color: @colourYellow; }
+	h6 { font-size: 16px; line-height: 120%; color: @colourWhite; }
+	
 	img {
-		width: 100%;
-	}
-}
-
-.enter2 {
-	margin-left:5%;
-	&.fl {
-		margin-left: 5%;
-	}
-}
-
-.heromessage {
-	margin-top: 40px;
-	padding-left: 2%;
-	text-align: center;
-	> img {
-		margin-bottom: 20%;
-	}
-	a {
-		display: inline-block;
-		margin: 10px 5px;
-	}
-}
-
-.midbox {
-    background: none repeat scroll 0 0 #E9E3DC;
-    margin-top: 6%;
-	padding:12px;
-	p {
-		color:#7d6b56;
-	}
-}
-
-.contentright {
-	margin-left: 2% !important;
-	margin-bottom: 3%;
-	h2 {
-		color: @redColor;
-		margin-top: 3%;
-		font-family: veneerregular;
-	}
-	h4 {
-		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-		color: @redColor;
-		font-size: 1.4em;
-		line-height: 18px;
-	}
-	form h4 {
-		font-weight: normal;
-		font-size: 1.1em;
-	}
-}
-
-/* -------- Form -------- */
-.form {
-	padding-top: 20px;
-	padding-bottom: 15px;
-	background: #f2f0ee;
-	margin-bottom: 25px;
-	overflow: hidden;
-	input[type="checkbox"] {
-		float: left;
-		margin-bottom: 35px;
-		margin-top: 8px;
-		margin-right: 10px;
-	}
-	a {
-		color: @redColor;
-	}
-}
-
-.agree {
-	margin-left: 10px;
-}
-
-.agreeterms {
-	float: left;
-    display: inline-block;
-	padding: 5px;
-	width: 85%;
-}
-
-.enterl {
-	float: right;
-    background: @redColor;
-	border: 2px solid #ccc;
-    color: #FFFFFF;
-	margin-top: 10px;
-	margin-right: 6%;
-    padding: 5px 35px;
-	font-size: 1.3em;
-	font-family: veneerregular;
-	&:hover {
-		border: 2px solid #fff;
-		color: #eee;
-	}
-}
-
-.fiftywords {
-    height: 110px !important;
-    width: 90%;
-}
-
-.fileuploads {
-	margin-bottom: 15px;
-}
-
-.photoupload {
-	background: #D8CFC6;
-    margin-right: 30px;
-	margin-bottom: 8px;
-    padding: 3px 8px 8px 0;
-	input {
-		margin-left: 5px;
-	}
-}
-
-.control-label {
-    padding-top: 5px;
-    text-align: left !important;
-    width: 160px;
-}
-
-/* Contact Form */
-.contactsend {
-	float: right;
-    background: @mainColor;
-	border: 2px solid #ccc;
-    color: #FFFFFF;
-	margin-top: 10px;
-	margin-right: 6%;
-    padding: 6px 25px;
-	font-size: 1.3em;
-	font-family: veneerregular;
-	&:hover {
-		border-color: #fff;
-		color: #eee;
-	}
-}
-
-.rd {
-    display: block;
-    margin-left: 7%;margin-top:-20px;
-}
-
-//Modals
-.modal {
-	.border-radius(0);
-	width: 768px;
-	max-width: 100%;
-	margin-left: -350px;
-	.box-shadow(0 4px 4px 4px rgba(0, 0, 0, 0.5));
-	.close{
-		color: #FFFFFF;
-		font-size: 28px;
-		font-weight: 400;
-		opacity: 0.8;
-		&:hover {
-			opacity: 1;
-		}
-	}
-	.modal-header {
-		.border-radius(0);
-		background-color: #EE3123;
-		padding: 5px 30px;
-		h5{
-			color: #fff;
-			margin-bottom: 0;
-			float: left;
-			font-family: veneerregular;
-			margin-top: 4px;
-			font-size: 1.5em;
-			font-weight: 400;
-		}
-	}
-	.modal-body {
-		.border-radius(0);
-		padding: 30px;
-		h3 {
-			color: #7C6955;
-			margin-bottom: 30px;
-		}
-		p {
-			color: @mainColor;
-		}
-	}
-}
-
-.carousel-inner img {
-	width: 100%;
-}
-
-.modal-backdrop,
-.modal-backdrop.fade.in {
-	opacity: 0;
-}
-
-.fb_iframe_widget,
-.fb_iframe_widget span,
-.fb_iframe_widget iframe[style]  {
-	width: 100% !important;
-}
-
-hr {
-    border-color: @mainColor transparent transparent;
-    border-width: 3px 0 0;
-}
-
-/* -------- Entries ------- */
-.entries {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	list-style-type: none;
-	li {
-		display: block;
-		float: left;
-		width: 175px;
-		height: 155px;
-		margin-right: 5.2%;
-		margin-bottom: 2.2%;
-		img {
-			width: 100%;
-			padding: 5px;
-			border: 3px solid @mainColor;
-			margin-bottom: 8px;
-			&:hover {
-				border: 3px solid #ccc;
-			}
-		}
-	}
-}
-
-/* -------- Pagination ------- */
-.diypagination {
-	position: relative;
-	text-align: center;
-	list-style: none;
-	list-style-type: none;
-	font-family: veneerregular;
-	padding: 10px;
-	font-size: 1.4em;
-	color: #fff;
-	background: #ee3224;
-	width: 40%;
-	height: 18px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 30px;
-	left: -20px;
-	a {
-		color: #fff;
-	}
-	ul {
-		float: left;
-		width: 70%;
-		margin: 0px;
-	}
-	li {
-		display: inline;
-		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-		font-size: 0.6em;
-		text-align: center;
-		margin-right: 3px;
-		a {
-			color: #fff;
-		}
-	}
-}
-
-/* -------- Finalists ------- */
-.finalists {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	list-style-type: none;
-	li {
-		display: block;
-		float: left;
-		width: 256px;
-		height: 210px;
-		margin-right: 35px;
-		margin-bottom: 20px;
-		img {
-			width: 100%;
-			padding: 10px;
-			border: 3px solid @mainColor;
-			margin-bottom: 8px;
-			&:hover {
-				border: 3px solid #ccc;
-			}
-		}
-	}
-}
-
-
-/* -------- Footer -------- */
-#footer {
-	background-color: #000;
-}
-
-.leftfoot {
-	margin: 15px;
-	a {
-		color: #fff;
-		font-weight: bold;
-		&:hover {
-			color: #fff;
-		}
-	}
-	&.span6 > p {
-		color: #FFFFFF;
-		font-size: 0.8em;
-		margin-bottom: 0;
-		line-height: 12px;
-	}
-}
-
-.rightfoot {
-	float: right;
-	color: @redColor;
-	margin-right: 2%;
-	h3 {
-		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-		color: @redColor;
-		font-weight: 700;
-		margin-top: 12px;
-		display: inline-block;
-		font-size: 1.5em;
-	}
-	span {
-		display: inline-block;
-		vertical-align: super;
-	}
-}
-
-.mobileonly {
-	display: none;
-}
-
-@media (max-width: 767px) {
-
-	.leftmenu {
-		min-height: 350px !important;
-		padding: 15px;
+		max-width: 100%;
 		height: auto;
 	}
-
-	.diypagination {
-		left: -5px;
-		width: 85%;
-		margin-left: auto;
-		margin-right: auto;
-		ul {
-			float: none;
-			width: 100%;
-			margin-left: auto;
-			margin-right: auto;
-			li {
-				font-size: 0.8em;
+	
+	sup { font-size: 55%; }
+	.diy-yellow { color: @colourYellow; }
+	.btn { color: @colourYellow; text-transform: uppercase; text-shadow: none; background-color: @colourBlack; background-image: none; filter: none; border: none; .border-radius(0); .box-shadow(none); }
+	.btn-large { font-size: 32px; font-family: @fontBebas; padding: 14px 20px; }
+	.btn-black { background-color: @colourBlack; color: @colourYellow; }
+	.btn-yellow { background-color: @colourYellow; color: @colourWhite; }
+	
+	
+	/* HEADLINE */
+	.yellow-line-headline { 
+		margin-bottom: 40px;
+		h1 {
+			margin-bottom: 10px !important;
+		}
+		.yellow-line { 
+			display: inline-block; 
+			width: 150px; 
+			height: 4px; 
+			background-color: @colourYellow; 
+		} 
+	}
+	
+	
+	/* GLOBAL STATIC CONTENT */
+	.centered-div { 
+		text-align: center; 
+		width: 75%; 
+		margin-left: auto; 
+		margin-right: auto; 
+		padding-top: 40px; 
+		padding-bottom: 40px; 
+		h1 {
+			margin-top: 10px;
+			margin-bottom: 20px;
+		}
+		h2 {
+			margin-top: 10px;
+			margin-bottom: 20px;
+		}
+		h3 {
+			margin-top: 5px;
+			margin-bottom: 20px;
+		}
+		h4 {
+			margin-top: 5px;
+			margin-bottom: 15px;
+		}
+		p {
+			margin-top: 5px;
+			margin-bottom: 36px;
+		}
+	}
+	
+	
+	
+	
+	/* -------- DIY TOPNAV -------- */
+	.diy-topnav {
+		
+		background-color: @colourYellow;
+		height: @topnavHeight;
+		padding: 0;
+		margin: 0;
+		
+		#mobile-menu-btn {
+			display: none;
+			height: @topnavHeight - 6px;
+			width: 16px;
+			color: @colourYellow;
+			background-color: @colourBlack;
+			background-image: none;
+			background-image: url('../../assets/images/diy-disasters/mobile-menu-btn.png');
+			background-position: center center;
+			background-repeat: no-repeat;
+			box-shadow: none;
+			border: 3px solid @colourYellow;
+			line-height: @topnavHeight;
+			padding-top: 0;
+			padding-bottom: 0;
+			.border-radius(0);
+			.transition(all 0.25s linear);
+		}
+		
+		#mobile-menu-btn.collapsed {
+			background-image: url('../../assets/images/diy-disasters/mobile-menu-btn-active.png');
+		}
+		
+		.nav {
+		
+			margin-bottom: 0;
+			
+			a {
+				display: inline-block;
+				float: left;
+				height: @topnavHeight;
+				line-height: @topnavHeight;
+				padding: 0 15px;
+				margin: 0;
+				text-transform: uppercase;
+				color: @colourBlack;
+				text-decoration: none;
+				background: @colourYellow url('../../assets/images/diy-disasters/nav-seperator-1x21.png') left center no-repeat;
+				border-left: 1px solid transparent;
+				border-right: 1px solid transparent;
+				.transition(all 0.25s linear);
+			}
+			
+			a:hover,
+			a.active {
+				text-decoration: none;
+				background-color: @colourLightYellow;
+				background-image: none;
+				border-left: 1px solid @colourWhite;
+				border-right: 1px solid @colourWhite;
+			}
+			
+			a.first,
+			a.next {
+				background-image: none;
+			}
+			
+			a:hover + a {
+				background-image: none;
+			}
+		
+		}
+		
+	}
+	
+	
+	
+	
+	/* -------- DIY CONTENT - HOME -------- */ 
+	.diy-content-home {
+		
+		
+		.row-1 {
+			
+			text-align: center;
+			padding-top: 60px;
+			padding-bottom: 60px;
+			
+			h1 {
+				color: @colourWhite;
+				text-align: center;
+				padding: 0 20px;
+			}
+			
+		}
+		
+		.row-2 {
+			height: auto;
+			padding-bottom: 0;
+			padding-top: 0;
+			margin-top: 0;
+			margin-bottom: 0;
+			background-color: #313131;
+		}
+		
+		.row-3 {
+			
+			.span12 {
+				background-color: @colourWhite;
+				.chance-to-win {
+					padding: 60px 20px;
+					text-align: center;
+				}
+			}
+			
+			h3 {
+				color: @colourDarkGrey;
+			}
+			
+			h1 {
+				color: @colourYellow;
+			}
+			
+			p {
+				color: @colourBlack;
+			}
+			
+		}
+		
+		.row-4 {
+			
+			.div-third {
+				display: block;
+				width: 390px;
+				margin: 0;
+				padding-top: 40px;
+				padding-bottom: 40px;
+				height: auto;
+				overflow: hidden;
+				float: left;
+				text-align: center;
+				.div-third-inner {
+					width: 240px;
+					height: auto;
+					text-align: center;
+					h4 {
+						padding-left: 20px;
+						padding-right: 20px;
+					}
+				}
+				
+			}
+			
+			.row-4-entries {
+				margin-left: 30px;
+				background-color: @colourDarkBrown;
+				color: @colourWhite;
+			}
+			
+			.row-4-prizes {
+				background-color: @colourYellow;
+				color: @colourBlack;
+			}
+			
+			.row-4-judges {
+				background-color: @colourDarkBrown;
+				color: @colourYellow;
 			}
 		}
-		span {
-			display: none !important;
+		
+	}
+	
+	
+	
+	/* -------- DIY CONTENT - ENTRY FORM PAGE -------- */ 
+	.diy-content-entry-form {
+		
+		/* -- ENTRY FORM */
+		.form-container {
+			
+			@inputHeight: 34px;
+			text-align: center;
+			padding: 40px 20px;
+			
+			.input-error { border: 1px solid #ff0000 !important; background-color: #ddd !important; }
+			.error-red { color: #FF0000 !important; }
+			.formError, 
+			.formErrorWords, 
+			.formErrorFile, 
+			.formResultSuccess, 
+			.formResultError,
+			.alert { display: none; width: 500px; margin: 10px auto; text-align: left; font-size: 14px; }
+			.formResultSuccess, 
+			.formResultError { text-align: center; }
+	
+			
+			/* FORM */
+			#entry-form {
+				
+				margin-top: 20px;
+				
+				::-webkit-input-placeholder { color: #888; }
+				:-moz-placeholder { color: #888; }
+				::-moz-placeholder {  color: #888; }
+				:-ms-input-placeholder { color: #888; }
+				
+				.file-uploads { width: 400px; margin-left: auto; margin-right: auto; }
+				.fifty-words { width: 800px; margin-left: auto; margin-right: auto; }
+				.details { width: 400px; margin-left: auto; margin-right: auto; }
+				#upload-animation { width: 400px; height: 20px; margin: 0 auto 30px auto; }
+				.share-submit { 
+					display: block;
+					width: 360px; 
+					height: 64px;
+					margin-left: auto; 
+					margin-right: auto;
+					padding: 0;
+					text-align: center;
+					span {
+						display: inline-block;
+						width: auto;
+						height: 64px;
+						font-family: @fontBebas;
+						font-size: 20px;
+						line-height: 64px;
+						float: left;
+						margin-right: 14px;
+					}
+					#share-fb-btn,
+					#share-tw-btn {
+						display: inline-block;
+						width: 64px;
+						height: 64px;
+						margin-left: 14px;
+						padding: 0;
+						.transition(all 0.25s linear);
+						float: left;
+					}
+					
+					#share-fb-btn:hover,
+					#share-tw-btn:hover {
+						.opacity(100);
+					}
+					
+					#share-fb-btn.inactive {
+						.opacity(70);
+						background: transparent url('../../assets/images/diy-disasters/icon-fb-64-inactive.png') 0 0 no-repeat;
+					}
+					
+					#share-fb-btn.active {
+						.opacity(100);
+						background: transparent url('../../assets/images/diy-disasters/icon-fb-64-active.png') 0 0 no-repeat;
+					}
+					
+					#share-tw-btn.inactive {
+						.opacity(70);
+						background: transparent url('../../assets/images/diy-disasters/icon-tw-64-inactive.png') 0 0 no-repeat;
+					}
+					
+					#share-tw-btn.active {
+						.opacity(100);
+						background: transparent url('../../assets/images/diy-disasters/icon-tw-64-active.png') 0 0 no-repeat;
+					}
+					button {
+						display: inline-block;
+						float: left;
+						margin: 8px 0 8px 28px;
+					}
+				}
+				
+				h2 {
+					margin-bottom: 10px;
+				}
+				
+				input,
+				file {
+					height: @inputHeight;
+				}
+				
+				#upload-btn {
+					display: block;
+					width: 62px;
+					height: 52px;
+					margin: 10px auto;
+					background-color: @colourYellow;
+					.transition(all 0.25s linear);
+					border-radius: 3px;
+					border: 1px solid rgba(255,255,255,0.7);
+					box-shadow: 0 1px 2px rgba(255,255,255,0.9);
+				}
+				
+				#upload-btn:hover {
+					background-color: @colourWhite;
+					border: 1px solid @colourYellow;
+				}
+				
+				#inputFile {
+					position: absolute;
+					left: -9999px;
+					.opacity(0);
+				}
+				
+				#display-filename {
+					display: table;
+					width: 100%;
+					margin-top: 20px;
+					text-align: center;
+					div {
+						display: inline-block;
+	  vertical-align: middle;
+						width: auto;
+						height: 32px;
+						padding: 0;
+						margin-top: 10px;
+						text-align: center;
+						img {
+							display: inline-block;
+							float: left;
+							width: 32px;
+							height: 32px;
+						}
+						span {
+							display: inline-block;
+							float: left;
+							height: 32px;
+							margin-left: 10px;
+							line-height: 32px;
+							color: @colourWhite;
+							font-size: 18px;
+						}
+						.remove-file {
+							display: inline-block;
+							margin-left: 10px;
+							width: 32px;
+							height: 32px;
+							background: transparent url('../../assets/images/diy-disasters/filetype-remove.png') 0 0 no-repeat;
+							float: left;
+						}
+					}
+				}
+				
+				#display-filename:before {
+				  content: '';
+				  display: inline-block;
+				  height: 100%;
+				  vertical-align: middle;
+				  margin-right: -0.25em; /* Adjusts for spacing */
+				}
+				
+				.form-group {
+					margin-bottom: 40px;
+				}
+				
+				.control-label {
+					
+				}
+				
+				.form-select,
+				.form-control {
+					display: block;
+					text-align: center;
+					padding: 6px 0;
+					margin-bottom: 10px;
+					font-size: 16px;
+					width: 100%;
+					line-height: 1.42857143;
+					color: #555;
+					background-color: #fff;
+					background-image: none;
+					border: 1px solid #fff;
+					.border-radius(0);
+					-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+					box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+					-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+					-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+					transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+				}
+				
+				.form-textarea {
+					display: block;
+					text-align: center;
+					padding: 26px 0;
+					margin-bottom: 10px;
+					font-size: 18px;
+					width: 100%;
+					line-height: 1.42857143;
+					color: #555;
+					background-color: #fff;
+					background-image: none;
+					border: 1px solid #fff;
+					.border-radius(0);
+					-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+					box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+					-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+					-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+					transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+				}
+				
+				select {
+					height: @inputHeight + 12px;
+				}
+				
+				
+			}
+		}/* end ENTRY FORM */	
+		
+	}/* end DIY CONTENT - ENTRY FORM PAGE */ 
+	
+	/* -------- DIY CONTENT - ENTRIES -------- */ 
+	.diy-content-entries {
+		
+		#sort-btns {
+			height: 34px;
+			li {
+				height: 34px;
+				margin-right: 10px;
+			}
+			a:hover,
+			a:focus {
+				background-color: @colourLightYellow;
+				.border-radius(1px);
+			}
+			.sort-txt {
+				line-height: 34px;
+			}
+			.active {
+				background-color: @colourYellow;
+				.border-radius(1px);
+			}
+		}
+		
+		#load-more-items-btn {
+			margin-bottom: 40px;
+		}
+		
+		#entries-grid {
+			
+			margin-top: 40px;
+			margin-bottom: 0;
+			
+			.mix {
+				display: none;
+				position: relative;
+				height: 320px;
+				overflow: hidden;
+				margin-bottom: 40px;
+				background-color: @colourDarkBrown;
+				background-repeat: no-repeat;
+				background-size: cover;
+				.caption {
+					display: block;
+					position: absolute;
+					z-index:2;
+					bottom: 0;
+					width: 100%;
+					height: 80px;
+					background-color: @colourWhite;
+					h3 {
+						color: @colourBlack;
+						font-size: 28px;
+						line-height: 80px;
+						margin: 0;
+						padding: 0 0 0 24px;
+					}
+					p.fifty-words-description {
+						display: none;
+					}
+				}
+				.overlay {
+					display: block;
+					position: absolute;
+					z-index: 1;
+					width: 100%;
+					height: 100%;
+					background-color: @colourYellow;
+					.opacity(0);
+					.transition(all 0.25s linear);
+					padding: 0;
+					margin: 0;
+					span {
+						display: block;
+						width: 130px;
+						height: 30px;
+						text-align: center;
+						line-height: 30px;
+						padding: 0;
+						margin: 400px auto 0 auto;
+						font-size: @fontSize;
+						color: @colourWhite;
+						background-color: transparent;
+						.transition(all 0.5s ease-in-out);
+					}
+				}
+				.overlay:hover {
+					.opacity(75);
+					span {
+						margin-top: 100px;
+					}
+				}
+			}
+		}
+		
+		
+	}
+	
+	/* -------- DIY CONTENT - JUDGING -------- */ 
+	.diy-content-judging {
+		
+		
+	
+	}
+	
+	/* -------- DIY CONTENT - PRIZES -------- */ 
+	.diy-content-prizes {
+		
+		
+	}
+	
+	/* -------- DIY CONTENT - TERMS -------- */ 
+	.diy-content-terms {
+		
+		
+	}
+	
+	/* -------- DIY CONTENT - CONTACT -------- */ 
+	.diy-content-contact {
+		
+
+		
+	}
+	
+	
+	
+	
+	/* -------- DIY FOOTER -------- */ 
+	.diy-footer {
+		
+		height: 160px;
+		margin-top: 0;
+		background: @colourBlack url('../../assets/images/diy-disasters/A4_DIY.jpg') 0 0 no-repeat;
+		
+		.footer-callout {
+			h3 {
+				font-family: @fontHelvetica;
+				color: @colourDarkRed;	
+				margin-top: 30px;
+				font-weight: bold;
+				text-transform: none;
+				font-size: 30px;
+				line-height: 110%;
+			}
+			
+			p {
+				color: @colourWhite;
+				margin-bottom: 0;
+			}
+			
+			span {
+				color: @colourWhite;
+				font-size: 11px;
+			}
+		}
+		
+	}
+	
+	
+	
+	
+} /* end DIY DISASTERS */
+
+
+/* ------------------------------------------------------------------------- */
+/* -------------------------------- MEDIA QUERIES ------------------------- */
+/* ----------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+
+/* laptop */
+@media (max-width: 1199px) and (min-width: 980px) {
+	
+	#diyDisastersComp2014 {
+		
+		.diy-topnav {
+			#mobile-menu-btn { display: none; }
+		}
+		
+		.diy-content-home {
+			.row-4 {
+				.div-third { width: 313px; }
+				.row-4-entries { margin-left: 20px; width: 314px; }
+			}
+		}
+		
+		.diy-footer {
+			.footer-callout {
+				h3 { margin-top: 20px; }
+			}
 		}
 	}
-
-	.mobileonly {
-		display: inline;
-	}
-
-	.desktoponly {
-		display: none;
-	}
-
-	.entries li,
-	.finalists li {
-		display: block;
-		float: left;
-		width: 110px;
-		height: 135px;
-		margin-right: 25px;
-		margin-bottom: 2px;
-	}
-
-	.finalists li  img {
-		width: 100%;
-		padding: 5px;
-		border: 3px solid @mainColor;
-		margin-bottom: 2px;
-	}
-
-	.heromessage > img {
-		margin-left: 5%;
-		margin-right: 5%;
-		margin-bottom: 20px;
-		width: 300px;
-	}
-
-	.probably2 {
-		padding: 0;
-		img {
-			margin-left: 5%;
-			margin-right: 5%;
-			width: 300px;
-		}
-	}
-
-	.modal {
-		margin-left: 0;
-		left: 0;
-		position: absolute;
-	}
-
-	.contentright {
-		margin-left: 0;
-		padding-left: 15px;
-		padding-right: 25px;
-	}
-
-	.leftfoot {
-		font-size: 11px;
-		margin: 10px;
-	}
-
-	.rightfoot {
-		float: left;
-		margin: 10px;
-		h3 {
-			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-			color: @redColor;
-			font-weight: 400;
-			margin-top: 12px;
-			display: inline-block;
-			font-size: 1.2em;
-		}
-	}
-
-	@media (max-width: 320px)
-	{
-		div.heromessage
-		{
-			max-width: 290px;
-		}
-	}
-
 }
-/* DIY Entry Page */
-.diyEntryPage{
-	margin-left:0 !important;
 
-	.entryPaging{
-		color:@white;
-		margin: 3px 0;
-		background: @redColor;
-		overflow: hidden;
-		padding:4px 8px;
-
-		a{
-			color: @white;
-			text-decoration: none;
-			cursor: pointer;
+/* tablet */
+@media (max-width: 979px) and (min-width: 768px) {
+	
+	#diyDisastersComp2014 {
+		
+		.diy-topnav {
+			.container { width: 100%; margin: 0; }
+			#mobile-menu-btn { display: block; }
+			.nav {
+				a { display: block; float: none; width: 100%; background-image: none; }
+				a:hover, a.active, a.first, a.next, a:hover + a { background-image: none; }
+			}
 		}
-		.pagingLeft{
-			float: left;
-			padding-top: 5px;
+		
+		.diy-content-home {
+			.row-4 {
+				.div-third { width: 241px; height: 190px; }
+				.row-4-entries { margin-left: 20px; width: 242px; }
+			}
 		}
-		.pagingRight{
-			float: right;
-			position: relative;
-			top: -2px;
+		
+		.form-container {
+			
+			#entry-form {
+				.fifty-words{ width: 600px; }
+			}
+			
 		}
-		.leftArrow,
-		.rightArrow{
-			font-size: 40px;
-			font-weight: 100;
-			position: relative;
-			top: 4px
-		}
-		.seperator{
-			position: relative;
-			top: -3px
-		}
-		.pagingVal{
-			font-size: 18px;
-		}
-
-		.pagingLable
-		{
-			font-family: veneerregular;
-			font-weight: normal;
-			font-size: 20px;
-			padding: 0 5px
-		}
-
-	}
-	.entryPagingTop{
-		margin-top: 6px;
-	}
-	.entryPagingBottom{
-		margin-bottom: 6px
-	}
-
-
-
-	.entryContent{
-		padding: 3px 0 5px 5px;
-		.entryInfo{
-			padding: 10px 20px;
-			background: #f2f0ee;
-		}
-
-		.posterName,
-		.posterCity{
-			color:#0d2e56
-		}
-		.posterComment{
-			padding: 20px 0;
+		
+		.diy-footer {
+			.footer-callout {
+				h3 { margin-top: 10px; }
+			}
 		}
 	}
 }
 
-.entryPageImages {
-    -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+/* mobile */
+@media (max-width: 767px) {
+	
+	
+	
+	#diyDisastersComp2014 {
+		
+		.diy-content-entries { padding: 0 20px; }
+		
+		h1 { font-size: 50px; line-height: 100%; }
+		h2 { font-size: 30px; line-height: 100%; }
+		h3 { font-size: 20px; line-height: 100%; }
+		h4 { font-size: 17px; line-height: 100%; }
+		h5 { font-size: 14px; line-height: 120%; }
+		h6 { font-size: 12px; line-height: 120%; }
+		
+		p { font-size: 14px; line-height: 18px; }
+			
+		
+		.diy-topnav {
+			.container { width: 100%; margin: 0; }
+			#mobile-menu-btn { display: block; }
+			.nav {
+				a { display: block; float: none; width: 100%; background-image: none; }
+				a:hover, a.active, a.first, a.next, a:hover + a { background-image: none; }
+			}
+		}
+		
+		.diy-content-home {
+			.row-1 img {
+				margin-top: 20px;
+			}
+			.row-4 {
+				.div-third { width: 100%; float: none; clear: both; margin: 0; }
+				.row-4-entries { margin-left: 0; width: 100%; }
+			}
+		}
+		
+		.form-container {
+			
+			.formError, 
+			.formErrorWords, 
+			.formErrorFile, 
+			.formResultSuccess, 
+			.formResultError,
+			.alert { width: 94%; height: auto; float: none; margin: 10px 0; padding-left: 3%; padding-right: 3%;  }
+			
+			.alert .close { top: 2px; right: 2px; }
+			
+			#entry-form #display-filename div {
+				margin: 40px 0;
+				span {
+					font-size: 14px;
+				}
+			}
+				
+			#entry-form {
+				.file-uploads,
+				.fifty-words,
+				.details,
+				#upload-animation { width: 100%; height: auto; float: none; margin: 0;  }
+				.share-submit { 
+					width: 100%; 
+					height: auto; 
+					float: none;
+					margin: 20px 0; 
+					button {
+						clear: both;
+						display: block;
+						float: left;
+						width: 50%;
+						margin: 20px 25%;
+					}
+				}
+			}
+		}
+		
+		.diy-footer {
+			display: block;
+			width: 100%;
+			height: auto;
+			background-image: none;
+			padding-bottom: 40px;
+			margin-bottom: 20px;
+			.footer-mobile {
+				height: 160px;
+				margin-top: 0;
+				background: @colourBlack url('../../assets/images/diy-disasters/A4_DIY.jpg') 0 0 no-repeat;
+			}
+			.footer-callout {
+				padding: 0 20px 0 40px;
+				min-height: 160px;
+				h3 { margin-top: 5px; padding: 10px 0 0;  }
+				p, span { padding: 0; }
+			}
+		}
+	}
 }
-
-.entryPageImages .entryImage {
-  width:  446px;
-  height: 335px;
-  float: left;
-  border: 2px solid #fff;
-
-    -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-
-.entryImage.portrait { height: 595px; }
-
-
 

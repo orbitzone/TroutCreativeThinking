@@ -75,31 +75,92 @@
 				<div class="nav-collapse collapse">
 					<div class="nav">
 						<a class="first" href="index.html">Competition Home</a>
-						<a href="entry-form.html">Entry Form</a>
-						<a href="entries.html">Entries</a>
+						<a class="active" href="entry-form.html">Entry Form</a>
+						<a class="next" href="entries.html">Entries</a>
 						<a href="prizes.html">Prizes</a>
-						<a class="active" href="judging.html">Judging</a>
-						<a class="next" href="contact.html">Contact</a>
+						<a href="judging.html">Judging</a>
+						<a href="contact.html">Contact</a>
 						<a class="last" href="terms.html">Terms &amp; Conditions</a>
 					</div>
 				</div>
 			</div>
 		</div><!-- end TOPNAV -->
 		
-		<!-- DIY CONTENT --> 
-		<div class="diy-content-judging container"> 
+		<!-- DIY CONTENT -->
+		<div class="diy-content-entry-form container">
 			<div class="row">
 				<div class="span12">
-					<div class="centered-div">
+					
+					<!-- ENTRY FORM CONTAINER -->
+					<div class="form-container">
+					
 						<div class="yellow-line-headline">
 							<span class="yellow-line"></span>
-							<h1>Judging</h1>
+							<h1 id="entry-form-txt">Entry Form</h1>
 							<span class="yellow-line"></span>
 						</div>
-						<p><img src="../../assets/images/diy-disasters/gavel-240x144.png"></p>
-						<h3>Lorem ipsum dolor sit amet</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</div>
+						
+						<div class="formError alert"><button type="button" class="close" data-dismiss="formError">&times;</button>Please complete all required fields.</div>
+						<div class="formErrorWords alert"><button type="button" class="close" data-dismiss="formErrorWords">&times;</button>Please submit 50 words or less.</div>
+						<div class="formErrorFile alert"><button type="button" class="close" data-dismiss="formErrorFile">&times;</button>Please select a valid file to upload - .JPG, .PNG, .GIF, .MOV, .MP4, .M4V, .AVI, .M4A, .FLV, 3G2.</div>
+						
+											
+						<!-- ENTRY FORM -->
+						<form id="entry-form" class="form-horizontal" method="post" action="">
+							
+							<div class="file-uploads form-group">
+								<h3 id="upload-evidence-txt">Upload your evidence</h3>
+								<input type="file" name="inputFile" id="inputFile" />
+								<button type="button" id="upload-btn" href="#"><img src="../../assets/images/diy-disasters/upload-btn-62x52.png" border="0"></button>
+								<div id="display-filename"></div>
+							</div>
+							
+							<div class="fifty-words form-group">
+								<h3>What would you do right?</h3>
+								<textarea id="inputWords" name="inputWords" class="form-textarea required" rows="5" placeholder="Enter 50 words or less explaining how you would have completed this job better"></textarea>
+							</div>
+							
+							<div class="details form-group">
+								<h3>Details</h3>
+								<input class="form-control required" type="text" id="inputName" name="inputName" maxlength="60" placeholder="Enter Your Full Name">
+								<select id="inputState" name="inputState" class="form-control form-select">
+									<option value="Select STATE">Select STATE</option>
+									<option value="NSW">NSW</option>
+									<option value="NT">NT</option>
+									<option value="QLD">QLD</option>
+									<option value="SA">SA</option>
+									<option value="TAS">TAS</option>
+									<option value="VIC">VIC</option>
+									<option value="WA">WA</option>
+								</select>
+								<input class="form-control required numbersOnly" type="tel" id="inputAccount" name="inputAccount" maxlength="20" placeholder="Enter Your Reece Account Number">
+							</div>
+							
+							<div id="upload-animation" style="display:none;">
+								<div class="progress progress-striped active"><div class="bar bar-warning" style="width: 1%;"></div></div>
+							</div>
+							
+							<div class="share-submit form-group">
+								<span>SHARE:</span>
+								<a id="share-fb-btn" class="inactive" href="#"></a>
+								<a id="share-tw-btn" class="inactive" href="#"></a>
+								<button id="entryform-submit-btn" class="btn btn-large btn-yellow" name="submit" type="submit">Upload</button>
+							</div>
+							
+						</form><!-- end ENTRY FORM -->
+						
+						<!-- RESULTS -->
+						<div class="formResultSuccess">
+							<h5>Your entry has successfully completed.</h5>
+							<p>Note that video entries may not appear on the site for up to 5 minutes.</p>
+							<a class="btn btn-large btn-yellow" href="entries.html">Click here to view all the entries</a>
+						</div>
+						<div class="formResultError">
+							<p>Server error. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							<a class="btn btn-large btn-yellow" href="entry-form.html">Try again</a>
+						</div>
+					</div><!-- ENTRY FORM CONTAINER -->
+					
 				</div>
 			</div>
 		</div><!-- end CONTENT --> 

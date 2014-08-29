@@ -92,19 +92,19 @@
   position: absolute;
   top: -200px;
 }
-.history .history-section-nav[data-current-block="count-1"] .slider {
+.history .history-section-nav[data-current-block="count-@{counter}"] .slider {
   top: -100%;
 }
-.history .history-section-nav[data-current-block="count-2"] .slider {
+.history .history-section-nav[data-current-block="count-@{counter}"] .slider {
   top: -200%;
 }
-.history .history-section-nav[data-current-block="count-3"] .slider {
+.history .history-section-nav[data-current-block="count-@{counter}"] .slider {
   top: -300%;
 }
-.history .history-section-nav[data-current-block="count-4"] .slider {
+.history .history-section-nav[data-current-block="count-@{counter}"] .slider {
   top: -400%;
 }
-.history .history-section-nav[data-current-block="count-5"] .slider {
+.history .history-section-nav[data-current-block="count-@{counter}"] .slider {
   top: -500%;
 }
 .history .history-section-nav[data-current-block="count-0"] .nav.previous {

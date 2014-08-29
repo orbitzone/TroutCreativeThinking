@@ -1073,3 +1073,7 @@
 lt-ie8 #diyDisastersComp2014 .diy-content-home .row-4 .row-4-entries {
   margin-left: 0 !important;
 }
+.lt-ie9 .div-third,
+lt-ie8 .div-third {
+  width: 370px;
+}

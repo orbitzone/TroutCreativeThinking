@@ -48,12 +48,6 @@
   -moz-border-radius: 0;
   border-radius: 0;
 }
-#entryModal {
-  width: 890px;
-  height: 720px;
-  margin-left: -445px;
-  padding: 0 40px;
-}
 #entryModal .btn {
   color: #fdb813;
   text-transform: uppercase;
@@ -98,8 +92,6 @@
   filter: alpha(opacity=40);
 }
 #entryModal .modal-body {
-  height: 620px;
-  max-height: 620px;
   position: relative;
   overflow: hidden;
   background-repeat: no-repeat;
@@ -129,6 +121,34 @@
 #entryModal .modal-body .caption p {
   color: #000000;
   padding: 0 24px 10px 24px;
+}
+#entryModal .modal-share {
+  display: block;
+  position: absolute;
+  right: 40px;
+  bottom: 140px;
+  width: 160px;
+  height: 40px;
+}
+#entryModal .modal-share span {
+  display: inline-block;
+  font-family: 'bebas_neueregular', Helvetica, Arial, sans-serif;
+  height: 40px;
+  font-size: 22px;
+  line-height: 40px;
+  float: left;
+}
+#entryModal .modal-share #share-entry-fb-btn {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+}
+#entryModal .modal-share #share-entry-tw-btn {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
 }
 /* ----------------------------------- DIY DISASTERS -------- */
 #diyDisastersComp2014 {
@@ -442,7 +462,6 @@
 #diyDisastersComp2014 .diy-content-entry-form .form-container .formResultError,
 #diyDisastersComp2014 .diy-content-entry-form .form-container .alert {
   display: none;
-  width: 500px;
   margin: 10px auto;
   text-align: left;
   font-size: 14px;
@@ -467,28 +486,23 @@
   color: #888;
 }
 #diyDisastersComp2014 .diy-content-entry-form .form-container #entry-form .file-uploads {
-  width: 520px;
   margin-left: auto;
   margin-right: auto;
 }
 #diyDisastersComp2014 .diy-content-entry-form .form-container #entry-form .fifty-words {
-  width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
 #diyDisastersComp2014 .diy-content-entry-form .form-container #entry-form .details {
-  width: 400px;
   margin-left: auto;
   margin-right: auto;
 }
 #diyDisastersComp2014 .diy-content-entry-form .form-container #entry-form #upload-animation {
-  width: 400px;
   height: 20px;
   margin: 0 auto 30px auto;
 }
 #diyDisastersComp2014 .diy-content-entry-form .form-container #entry-form .share-submit {
   display: block;
-  width: 360px;
   height: 64px;
   margin-left: auto;
   margin-right: auto;
@@ -560,6 +574,10 @@
   width: 215px;
   height: 118px;
   margin: 10px auto;
+  background: #000000 url('../../assets/images/diy-disasters/upload-btn-215x118-up.png') 0 0 no-repeat;
+}
+#diyDisastersComp2014 .diy-content-entry-form .form-container #entry-form #upload-btn:hover {
+  background: #000000 url('../../assets/images/diy-disasters/upload-btn-215x118-over.png') 0 0 no-repeat;
 }
 #diyDisastersComp2014 .diy-content-entry-form .form-container #entry-form #inputFile {
   position: absolute;
@@ -790,8 +808,54 @@
 /* ---------------------------------------------------------------------- */
 /* --------------------------------------------------------------------- */
 /* -------------------------------------------------------------------- */
+/* widescreen */
+@media (min-width: 1200px) {
+  #entryModal {
+    width: 890px;
+    height: 720px;
+    margin-left: -480px;
+    padding: 0 40px;
+  }
+  #entryModal .modal-body {
+    height: 620px;
+    max-height: 620px;
+  }
+  .file-uploads {
+    width: 520px;
+  }
+  .fifty-words {
+    width: 800px;
+  }
+  .details {
+    width: 400px;
+  }
+  #upload-animation {
+    width: 400px;
+  }
+  .share-submit {
+    width: 360px;
+  }
+  .formError,
+  .formErrorWords,
+  .formErrorFile,
+  .formResultSuccess,
+  .formResultError,
+  .alert {
+    width: 500px;
+  }
+}
 /* laptop */
 @media (max-width: 1199px) and (min-width: 980px) {
+  #entryModal {
+    width: 890px;
+    height: 720px;
+    margin-left: -480px;
+    padding: 0 40px;
+  }
+  #entryModal .modal-body {
+    height: 620px;
+    max-height: 620px;
+  }
   #diyDisastersComp2014 .diy-topnav #mobile-menu-btn {
     display: none;
   }
@@ -808,6 +872,16 @@
 }
 /* tablet */
 @media (max-width: 979px) and (min-width: 768px) {
+  #entryModal {
+    width: 680px;
+    height: auto;
+    margin-left: -360px;
+    padding: 0 20px;
+  }
+  #entryModal .modal-body {
+    height: 620px;
+    max-height: 920px;
+  }
   #diyDisastersComp2014 .diy-topnav .container {
     width: 100%;
     margin: 0;
@@ -845,6 +919,19 @@
 }
 /* mobile */
 @media (max-width: 767px) {
+  #entryModal {
+    width: 90%;
+    height: auto;
+    margin-left: 1%;
+    padding: 0;
+  }
+  #entryModal .modal-body {
+    height: 620px;
+    max-height: 920px;
+  }
+  #entryModal .modal-share {
+    bottom: 170px;
+  }
   #diyDisastersComp2014 .diy-content-entries {
     padding: 0 20px;
   }
@@ -942,17 +1029,18 @@
     margin: 0;
   }
   #diyDisastersComp2014 .form-container #entry-form .share-submit {
-    width: 100%;
+    width: 230px;
     height: auto;
     float: none;
-    margin: 20px 0;
+    margin: 20px auto 60px auto;
+    text-align: center;
   }
   #diyDisastersComp2014 .form-container #entry-form .share-submit button {
     clear: both;
     display: block;
     float: left;
-    width: 50%;
-    margin: 20px 25%;
+    width: 140px;
+    margin: 20px 45px !important;
   }
   #diyDisastersComp2014 .diy-footer {
     display: block;

@@ -162,6 +162,12 @@ $(document).ready(function(){
 				
 			});
 			
+			// modal share btn
+			$("#share-entry-fb-btn").on('click', function(e){
+				e.preventDefault();
+				window.open('http://www.facebook.com/sharer.php?s=100&p[url]=http://www.reece.com.au/diydisasters&p[images][0]=/images/image.jpg&p[title]=Title&p[summary]=Summary', "_blank", "toolbar=yes, scrollbars=yes, resizable=yes, width=400, height=400");
+			});
+			
 		},
 		
 		

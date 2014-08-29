@@ -39,11 +39,6 @@
 .modal { .border-radius(0); }
 #entryModal {
 	
-	width: 890px; 
-	height: 720px;
-	margin-left: -445px;
-	padding: 0 40px;
-	
 	.btn { color: @colourYellow; text-transform: uppercase; text-shadow: none; background-color: @colourBlack; background-image: none; filter: none; border: none; .border-radius(0); .box-shadow(none); }
 	.btn-large { font-size: 32px; font-family: @fontBebas; padding: 14px 20px; }
 	.btn-black { background-color: @colourBlack; color: @colourYellow; }
@@ -66,8 +61,6 @@
 	}
 	
 	.modal-body {
-	    height: 620px;
-	    max-height: 620px;
 	    position: relative;
 	    overflow: hidden;
 		background-repeat: no-repeat;
@@ -97,6 +90,35 @@
 				padding: 0 24px 10px 24px;
 			}
 	    }
+	}
+	
+	.modal-share {
+		display: block;
+		position: absolute;
+		right: 40px;
+		bottom: 140px;
+		width: 160px;
+		height: 40px;
+		span {
+			display: inline-block;
+			font-family: @fontBebas;
+			height: 40px;
+			font-size: 22px;
+			line-height: 40px;
+			float: left;
+		}
+		#share-entry-fb-btn {
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			margin-left: 10px;
+		}
+		#share-entry-tw-btn {
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			margin-left: 10px;
+		}
 	}
 }
 
@@ -390,7 +412,7 @@
 			.formErrorFile, 
 			.formResultSuccess, 
 			.formResultError,
-			.alert { display: none; width: 500px; margin: 10px auto; text-align: left; font-size: 14px; }
+			.alert { display: none; margin: 10px auto; text-align: left; font-size: 14px; }
 			.formResultSuccess, 
 			.formResultError { text-align: center; }
 	
@@ -405,13 +427,12 @@
 				::-moz-placeholder {  color: #888; }
 				:-ms-input-placeholder { color: #888; }
 				
-				.file-uploads { width: 520px; margin-left: auto; margin-right: auto; }
-				.fifty-words { width: 800px; margin-left: auto; margin-right: auto; }
-				.details { width: 400px; margin-left: auto; margin-right: auto; }
-				#upload-animation { width: 400px; height: 20px; margin: 0 auto 30px auto; }
+				.file-uploads { margin-left: auto; margin-right: auto; }
+				.fifty-words { margin-left: auto; margin-right: auto; }
+				.details { margin-left: auto; margin-right: auto; }
+				#upload-animation { height: 20px; margin: 0 auto 30px auto; }
 				.share-submit { 
-					display: block;
-					width: 360px; 
+					display: block; 
 					height: 64px;
 					margin-left: auto; 
 					margin-right: auto;
@@ -483,10 +504,11 @@
 					width: 215px;
 					height: 118px;
 					margin: 10px auto;
+					background: #000 url('../../assets/images/diy-disasters/upload-btn-215x118-up.png') 0 0 no-repeat;
 				}
 				
 				#upload-btn:hover {
-					
+					background: #000 url('../../assets/images/diy-disasters/upload-btn-215x118-over.png') 0 0 no-repeat;
 				}
 				
 				#inputFile {
@@ -771,8 +793,52 @@
 /* --------------------------------------------------------------------- */
 /* -------------------------------------------------------------------- */
 
+/* widescreen */
+@media (min-width: 1200px) {
+	
+	#entryModal {
+		width: 890px; 
+		height: 720px;
+		margin-left: -480px;
+		padding: 0 40px;
+		.modal-body {
+		    height: 620px;
+		    max-height: 620px;
+		}
+	}
+	
+	
+	.file-uploads { width: 520px;  }
+	.fifty-words { width: 800px; }
+	.details { width: 400px; }
+	#upload-animation { width: 400px; }
+	.share-submit { width: 360px; }
+	
+	.formError, 
+	.formErrorWords, 
+	.formErrorFile, 
+	.formResultSuccess, 
+	.formResultError,
+	.alert { width: 500px; }
+		
+}
+
 /* laptop */
 @media (max-width: 1199px) and (min-width: 980px) {
+	
+	
+	#entryModal {
+		width: 890px; 
+		height: 720px;
+		margin-left: -480px;
+		padding: 0 40px;
+		.modal-body {
+		    height: 620px;
+		    max-height: 620px;
+		}
+	}
+	
+	
 	
 	#diyDisastersComp2014 {
 		
@@ -797,6 +863,22 @@
 
 /* tablet */
 @media (max-width: 979px) and (min-width: 768px) {
+	
+	
+	#entryModal {
+		width: 680px; 
+		height: auto;
+		margin-left: -360px;
+		padding: 0 20px;
+		.modal-body {
+		    height: 620px;
+		    max-height: 920px;
+		}
+		.modal-share {
+			
+		}
+	}
+	
 	
 	#diyDisastersComp2014 {
 		
@@ -835,7 +917,19 @@
 /* mobile */
 @media (max-width: 767px) {
 	
-	
+	#entryModal {
+		width: 90%; 
+		height: auto;
+		margin-left: 1%;
+		padding: 0;
+		.modal-body {
+		    height: 620px;
+		    max-height: 920px;
+		}
+		.modal-share {
+			bottom: 170px;
+		}
+	}
 	
 	#diyDisastersComp2014 {
 		
@@ -894,16 +988,17 @@
 				.details,
 				#upload-animation { width: 100%; height: auto; float: none; margin: 0;  }
 				.share-submit { 
-					width: 100%; 
+					width: 230px; 
 					height: auto; 
 					float: none;
-					margin: 20px 0; 
+					margin: 20px auto 60px auto; 
+					text-align: center;
 					button {
 						clear: both;
 						display: block;
 						float: left;
-						width: 50%;
-						margin: 20px 25%;
+						width: 140px;
+						margin: 20px 45px !important;
 					}
 				}
 			}

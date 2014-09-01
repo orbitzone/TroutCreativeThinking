@@ -4,8 +4,8 @@
 	$section = 0;
 	$split = 8;
 	echo '<div class="history-section-nav">';
-	echo '<a href="#" class="nav previous">▲<span>Previous</span></a>';
-	echo '<a href="#" class="nav next">▼<span>Next</span></a>';
+	echo '<a href="#" class="nav previous"><span class="caretUp">Previous</span></a>';
+	echo '<a href="#" class="nav next"><span class="caretDown">Next</span></a>';
 	echo '<div class="slider-wrap">';
 	echo '<div class="slider">';
 	echo '<div class="count-'.$section.'">';

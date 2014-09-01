@@ -9,22 +9,34 @@
 		text-align: center;
 	}
 	.wrap {
-		width: 1350px;
+		width: 100%;
 		margin: 0 auto;
+		max-width: 1000px;
 	}
 	.layer {
 		top: auto;
 		height: auto;
-		bottom: 10%;
+		bottom: 0;
+	}
+	.waterPipes{
+		position: relative;
+		overflow: hidden;
 	}
 	.pipes{
 		background: url("@{imagepath}/1997-pipes.png") center no-repeat;
-		height: 238px;
-
+		padding-bottom: 20%;
+		background-size: 100%;
+		position: relative;
+		z-index: 1;
 	}
 	.water{
-		background: url("@{imagepath}/1997-water.png") -1350px 100% no-repeat;
-		height: 238px;
+		background: url("@{imagepath}/1997-water.png") no-repeat;
+		padding-bottom: 20%;
+		position: absolute;
+		left: -100%;
+		top: 0;
+		right: 0;
+		z-index: 0;
 	}
 	.mapwrap{
 		overflow: hidden;

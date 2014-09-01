@@ -404,9 +404,21 @@
 #diyDisastersComp2014 .diy-content-home .row-3 p {
   color: #000000;
 }
+#diyDisastersComp2014 .diy-content-home .row-4 {
+  *zoom: 1;
+}
+#diyDisastersComp2014 .diy-content-home .row-4:before,
+#diyDisastersComp2014 .diy-content-home .row-4:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+#diyDisastersComp2014 .diy-content-home .row-4:after {
+  clear: both;
+}
 #diyDisastersComp2014 .diy-content-home .row-4 .div-third {
   display: block;
-  width: 390px;
+  width: 33.334%;
   margin: 0;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -425,7 +437,6 @@
   padding-right: 20px;
 }
 #diyDisastersComp2014 .diy-content-home .row-4 .row-4-entries {
-  margin-left: 30px;
   background-color: #7c6955;
   color: #ffffff;
 }
@@ -582,8 +593,6 @@
 #diyDisastersComp2014 .diy-content-entry-form .form-container #entry-form #inputFile {
   position: absolute;
   left: -9999px;
-  opacity: 0;
-  filter: alpha(opacity=0);
 }
 #diyDisastersComp2014 .diy-content-entry-form .form-container #entry-form #display-filename {
   display: table;
@@ -859,13 +868,6 @@
   #diyDisastersComp2014 .diy-topnav #mobile-menu-btn {
     display: none;
   }
-  #diyDisastersComp2014 .diy-content-home .row-4 .div-third {
-    width: 313px;
-  }
-  #diyDisastersComp2014 .diy-content-home .row-4 .row-4-entries {
-    margin-left: 20px;
-    width: 314px;
-  }
   #diyDisastersComp2014 .diy-footer .footer-callout h3 {
     margin-top: 20px;
   }
@@ -903,12 +905,7 @@
     background-image: none;
   }
   #diyDisastersComp2014 .diy-content-home .row-4 .div-third {
-    width: 241px;
     height: 190px;
-  }
-  #diyDisastersComp2014 .diy-content-home .row-4 .row-4-entries {
-    margin-left: 20px;
-    width: 242px;
   }
   #diyDisastersComp2014 .form-container #entry-form .fifty-words {
     width: 600px;
@@ -1068,13 +1065,16 @@
     padding: 0;
   }
 }
-/* IE */
-.lt-ie9 #diyDisastersComp2014 .diy-content-home .row-4 .row-4-entries,
-lt-ie8 #diyDisastersComp2014 .diy-content-home .row-4 .row-4-entries {
-  margin-left: 0 !important;
+/* IE 
+.lt-ie9 {
+	#diyDisastersComp2014 .diy-content-entry-form .form-container #entry-form{
+					#upload-btn {
+						display: none;
+					}
+					
+					#inputFile {
+						position: static;
+					}
+	}
 }
-.lt-ie9 .div-third,
-lt-ie8 .div-third {
-  width: 300px !important;
-  height: 290px !important;
-}
+*/

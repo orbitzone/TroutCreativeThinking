@@ -291,8 +291,7 @@ $(document).ready(function(){
 		        // reset
 		        app.fileName = null;
 		        // file type?
-		        
-		        if($('html').hasClass('lt-ie9') || $('html').hasClass('lt-ie8'))
+		        if($('html').hasClass('lt-ie9') || $('html').hasClass('lt-ie8') || (navigator.appVersion.indexOf("MSIE 9.")!=-1))
 		        {
 			        //var ie9Fileoutput = $('input[type=file]:eq(0)');
 			        app.displayFilename.html('<div>File selected</div>');
@@ -368,7 +367,7 @@ $(document).ready(function(){
 			}
 						
 			// 50 words or less
-			var words = app.inputWords.val().trim();
+			var words = $.trim(app.inputWords.val());
 			var count = words.split(' ').length;
 			if(count > 50) is50WordsValid = false;
 			

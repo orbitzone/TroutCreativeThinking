@@ -318,15 +318,6 @@
 		}
 		
 		.row-2 {
-			height: auto;
-			padding-bottom: 0;
-			padding-top: 0;
-			margin-top: 0;
-			margin-bottom: 0;
-			background-color: #313131;
-		}
-		
-		.row-3 {
 			
 			.span12 {
 				background-color: @colourWhite;
@@ -348,6 +339,56 @@
 				color: @colourBlack;
 			}
 			
+		}
+		.row-3 {
+			height: auto;
+			padding-bottom: 0;
+			padding-top: 0;
+			margin-top: 0;
+			margin-bottom: 0;
+			background-color: #313131;
+		}
+		.youtubeWrapper{
+			position: relative;
+			#youtubePlayer{
+				@media(max-width:768px){
+					height: 350px
+				}
+			}
+			.youtubePlayerOverlay{
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				top: 0;
+				background: url('../../assets/images/diy-disasters/video-snapshot.jpg') 50% 50%;
+				background-size: cover;
+				cursor: pointer;
+				@playDimension: 50px;
+				@playPadding: 30px;
+				.playIcon{
+					height: @playDimension;
+					width: @playDimension;
+					padding: @playPadding;
+					background: @colourYellow;
+					display: block;
+					.border-radius(50%);
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					margin-top: -(@playDimension/2+@playPadding);
+					margin-left: -(@playDimension/2+@playPadding);
+					.playCaret{
+						height: 0;
+						width: 0;
+						border:solid @playDimension/2 transparent;
+						border-left-color: white;
+						border-right: 0;
+						overflow: hidden;
+						display: inline-block;						
+					}
+				}
+			}
 		}
 		
 		.row-4 {

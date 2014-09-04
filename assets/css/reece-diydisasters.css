@@ -380,7 +380,23 @@
   text-align: center;
   padding: 0 20px;
 }
-#diyDisastersComp2014 .diy-content-home .row-2 {
+#diyDisastersComp2014 .diy-content-home .row-2 .span12 {
+  background-color: #ffffff;
+}
+#diyDisastersComp2014 .diy-content-home .row-2 .span12 .chance-to-win {
+  padding: 60px 20px;
+  text-align: center;
+}
+#diyDisastersComp2014 .diy-content-home .row-2 h3 {
+  color: #555555;
+}
+#diyDisastersComp2014 .diy-content-home .row-2 h1 {
+  color: #fdb813;
+}
+#diyDisastersComp2014 .diy-content-home .row-2 p {
+  color: #000000;
+}
+#diyDisastersComp2014 .diy-content-home .row-3 {
   height: auto;
   padding-bottom: 0;
   padding-top: 0;
@@ -388,21 +404,47 @@
   margin-bottom: 0;
   background-color: #313131;
 }
-#diyDisastersComp2014 .diy-content-home .row-3 .span12 {
-  background-color: #ffffff;
+#diyDisastersComp2014 .diy-content-home .youtubeWrapper {
+  position: relative;
 }
-#diyDisastersComp2014 .diy-content-home .row-3 .span12 .chance-to-win {
-  padding: 60px 20px;
-  text-align: center;
+@media (max-width: 768px) {
+  #diyDisastersComp2014 .diy-content-home .youtubeWrapper #youtubePlayer {
+    height: 350px;
+  }
 }
-#diyDisastersComp2014 .diy-content-home .row-3 h3 {
-  color: #555555;
+#diyDisastersComp2014 .diy-content-home .youtubeWrapper .youtubePlayerOverlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: url('../../assets/images/diy-disasters/video-snapshot.jpg') 50% 50%;
+  background-size: cover;
+  cursor: pointer;
 }
-#diyDisastersComp2014 .diy-content-home .row-3 h1 {
-  color: #fdb813;
+#diyDisastersComp2014 .diy-content-home .youtubeWrapper .youtubePlayerOverlay .playIcon {
+  height: 50px;
+  width: 50px;
+  padding: 30px;
+  background: #fdb813;
+  display: block;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -55px;
+  margin-left: -55px;
 }
-#diyDisastersComp2014 .diy-content-home .row-3 p {
-  color: #000000;
+#diyDisastersComp2014 .diy-content-home .youtubeWrapper .youtubePlayerOverlay .playIcon .playCaret {
+  height: 0;
+  width: 0;
+  border: solid 25px transparent;
+  border-left-color: white;
+  border-right: 0;
+  overflow: hidden;
+  display: inline-block;
 }
 #diyDisastersComp2014 .diy-content-home .row-4 {
   *zoom: 1;

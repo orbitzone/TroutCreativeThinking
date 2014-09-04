@@ -412,6 +412,11 @@
     height: 350px;
   }
 }
+@media (min-width: 1200px) {
+  #diyDisastersComp2014 .diy-content-home .youtubeWrapper #youtubePlayer {
+    height: 670px;
+  }
+}
 #diyDisastersComp2014 .diy-content-home .youtubeWrapper .youtubePlayerOverlay {
   position: absolute;
   left: 0;

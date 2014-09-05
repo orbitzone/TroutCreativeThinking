@@ -301,6 +301,8 @@
 #diyDisastersComp2014 .centered-div p {
   margin-top: 5px;
   margin-bottom: 36px;
+  font-weight: 100;
+  letter-spacing: 1px;
 }
 #diyDisastersComp2014 .diy-topnav {
   background-color: #fdb813;
@@ -336,10 +338,21 @@
 }
 #diyDisastersComp2014 .diy-topnav .nav {
   margin-bottom: 0;
+  *zoom: 1;
+}
+#diyDisastersComp2014 .diy-topnav .nav:before,
+#diyDisastersComp2014 .diy-topnav .nav:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+#diyDisastersComp2014 .diy-topnav .nav:after {
+  clear: both;
 }
 #diyDisastersComp2014 .diy-topnav .nav a {
   display: inline-block;
   float: left;
+  font-size: 15px;
   height: 42px;
   line-height: 42px;
   padding: 0 15px;
@@ -834,6 +847,108 @@
 }
 #diyDisastersComp2014 .diy-content-entries #entries-grid .mix .overlay:hover span {
   margin-top: 100px;
+}
+@media (min-width: 768px) {
+  #diyDisastersComp2014 .diy-content-judging .judgeProfiles .span6:first-child .judgeProfile {
+    padding-right: 20px;
+  }
+  #diyDisastersComp2014 .diy-content-judging .judgeProfiles .span6:last-child .judgeProfile {
+    padding-left: 20px;
+  }
+}
+#diyDisastersComp2014 .diy-content-judging .judgeProfile {
+  text-align: left;
+  padding-bottom: 50px;
+}
+#diyDisastersComp2014 .diy-content-judging .judgeProfile .profileThumb {
+  background: white;
+}
+#diyDisastersComp2014 .diy-content-judging .judgeProfile .profileThumb img {
+  width: 100%;
+}
+#diyDisastersComp2014 .diy-content-judging .judgeProfile .profileThumb .judgeName {
+  display: block;
+  padding: 30px 20px;
+  text-transform: uppercase;
+  font-family: 'bebas_neueregular', Helvetica, Arial, sans-serif;
+  color: black;
+  font-size: 1.8em;
+}
+#diyDisastersComp2014 .diy-content-judging .judgeProfile .judgeCompanyInfo {
+  padding: 20px 0;
+}
+#diyDisastersComp2014 .diy-content-judging .judgeProfile .judgeCompanyInfo .judgePosition {
+  display: block;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+#diyDisastersComp2014 .diy-content-judging .judgeProfile .judgeCompanyInfo .judgecompany {
+  display: block;
+  font-weight: bold;
+}
+#diyDisastersComp2014 .diy-content-judging .judgeProfile .readMore {
+  cursor: pointer;
+}
+#diyDisastersComp2014 .diy-content-judging .judgeProfile .readMore span {
+  color: #fdb813;
+}
+#diyDisastersComp2014 .diy-content-judging .judgeProfile .readMore .openText {
+  display: none;
+}
+#diyDisastersComp2014 .diy-content-judging .judgeProfile .collapsed .openText {
+  display: inline;
+}
+#diyDisastersComp2014 .diy-content-judging .judgeProfile .collapsed .closeText {
+  display: none;
+}
+#diyDisastersComp2014 .diy-content-judging .judgeProfile .judgeInfo p {
+  margin-bottom: 20px;
+}
+#diyDisastersComp2014 .diy-content-judging .judgeProfile .judgeInfo blockquote {
+  color: #fdb813;
+  border: none;
+  padding-left: 0;
+}
+#diyDisastersComp2014 .diy-content-judging .judgeProfile .judgeInfo blockquote:before {
+  content: "\201C";
+}
+#diyDisastersComp2014 .diy-content-judging .judgeProfile .judgeInfo blockquote:after {
+  content: "\201D";
+}
+#diyDisastersComp2014 .diy-content-prizes .prizes .prizesInfo {
+  padding: 20px 0;
+}
+#diyDisastersComp2014 .diy-content-prizes .prizes .prizesInfo .prizeSmall,
+#diyDisastersComp2014 .diy-content-prizes .prizes .prizesInfo .prizeLarge,
+#diyDisastersComp2014 .diy-content-prizes .prizes .prizesInfo sup {
+  color: #fdb813;
+  font-family: 'bebas_neueregular', Helvetica, Arial, sans-serif;
+}
+#diyDisastersComp2014 .diy-content-prizes .prizes .prizesInfo .prizeSmall {
+  display: block;
+  padding-top: .5em;
+  font-size: 4em;
+  line-height: 1em;
+}
+#diyDisastersComp2014 .diy-content-prizes .prizes .prizesInfo .prizeLarge {
+  display: block;
+  font-size: 6em;
+  line-height: 1em;
+}
+#diyDisastersComp2014 .diy-content-prizes .prizes .prizesInfo .prizeAmount {
+  color: #fdb813;
+  font-family: 'bebas_neueregular', Helvetica, Arial, sans-serif;
+  display: block;
+  font-size: 4em;
+  line-height: 1em;
+}
+#diyDisastersComp2014 .diy-content-prizes .enterButton {
+  display: inline-block;
+  background: #fdb813;
+  padding: 20px;
+  font-family: 'bebas_neueregular', Helvetica, Arial, sans-serif;
+  color: white;
+  font-size: 3em;
 }
 #diyDisastersComp2014 .diy-footer {
   height: 160px;

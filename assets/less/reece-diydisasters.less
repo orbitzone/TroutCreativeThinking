@@ -217,6 +217,8 @@
 		p {
 			margin-top: 5px;
 			margin-bottom: 36px;
+			font-weight: 100;
+			letter-spacing: 1px;
 		}
 	}
 	
@@ -257,10 +259,12 @@
 		.nav {
 		
 			margin-bottom: 0;
+			.clearfix;
 			
 			a {
 				display: inline-block;
 				float: left;
+				font-size: 15px;
 				height: @topnavHeight;
 				line-height: @topnavHeight;
 				padding: 0 15px;
@@ -765,15 +769,128 @@
 	
 	/* -------- DIY CONTENT - JUDGING -------- */ 
 	.diy-content-judging {
-		
-		
+		.judgeProfiles{
+			@media (min-width:768px){
+				.span6{
+					&:first-child{
+						.judgeProfile{
+							padding-right: 20px
+						}
+					}
+					&:last-child{
+						.judgeProfile{
+							padding-left: 20px
+						}
+					}
+				}
+			}
+		}
+		.judgeProfile{
+			text-align: left;
+			padding-bottom: 50px;
+			.profileThumb{
+				background: white;
+				img{
+					width: 100%
+				}
+				.judgeName{
+					display: block;
+					padding: 30px 20px;
+					text-transform: uppercase;
+					font-family: @fontBebas;
+					color: black;
+					font-size: 1.8em;
+				}
+			}
+			.judgeCompanyInfo{
+				padding: 20px 0;
+				.judgePosition{
+					display: block;
+					font-weight: bold;
+					font-size: 1.2em
+				}
+				.judgecompany{
+					display: block;
+					font-weight: bold;
+				}
+			}
+			.readMore{
+				cursor: pointer;
+				span{
+					color: @colourYellow;
+				}
+				.openText{
+					display: none;
+				}
+			}
+			.collapsed{
+				.openText{
+					display: inline;
+				}
+				.closeText{
+					display: none;
+				}
+			}
+			.judgeInfo{
+				p{
+					margin-bottom: 20px;
+				}
+				blockquote{
+					color: @colourYellow;
+					border: none;
+					padding-left: 0;
+					&:before{
+						content: "\201C";
+					}
+					&:after{
+						content: "\201D";
+					}
+				}
+			}
+
+		}
 	
 	}
 	
 	/* -------- DIY CONTENT - PRIZES -------- */ 
 	.diy-content-prizes {
-		
-		
+		.prizes{
+			.prizesInfo{
+				padding: 20px 0;
+				.prizeSmall,.prizeLarge,sup{
+				color: @colourYellow;
+				font-family: @fontBebas;
+				}
+				.prizeSmall{
+					display: block;
+					padding-top: .5em;
+					font-size: 4em;
+					line-height: 1em;
+				}
+				.prizeLarge{
+					display: block;
+					font-size: 6em;
+					line-height: 1em;
+				}
+				.prizeAmount{
+					display: block;
+					color: @colourYellow;
+					font-family: @fontBebas;
+					display: block;
+					font-size: 4em;
+					line-height: 1em;
+				}
+			}
+		}
+		.enterButton{
+			display: inline-block;
+			background: @colourYellow;
+			padding: 20px;
+			font-family: @fontBebas;;
+			color: white;
+			font-size: 3em;
+		}
+				
 	}
 	
 	/* -------- DIY CONTENT - TERMS -------- */ 

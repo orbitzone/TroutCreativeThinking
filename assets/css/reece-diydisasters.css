@@ -166,6 +166,8 @@
   /* -------- DIY TOPNAV -------- */
 
   /* -------- DIY CONTENT - HOME -------- */
+  /* DIY Forms */
+
   /* -------- DIY CONTENT - ENTRY FORM PAGE -------- */
   /* end DIY CONTENT - ENTRY FORM PAGE */
   /* -------- DIY CONTENT - ENTRIES -------- */
@@ -508,6 +510,85 @@
   background-color: #7c6955;
   color: #fdb813;
 }
+#diyDisastersComp2014 .diyForm input.diyInput {
+  display: block;
+  text-align: center;
+  padding: 6px 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+  width: 100%;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #fff;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s;
+  -moz-transition: border-color ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s;
+  -webkit-transition: box-shadow ease-in-out 0.15s;
+  -moz-transition: box-shadow ease-in-out 0.15s;
+  -o-transition: box-shadow ease-in-out 0.15s;
+  transition: box-shadow ease-in-out 0.15s;
+}
+#diyDisastersComp2014 .diyForm textarea.diyTextarea {
+  display: block;
+  text-align: center;
+  padding: 26px 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  width: 100%;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #fff;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+#diyDisastersComp2014 .diyForm input,
+#diyDisastersComp2014 .diyForm file {
+  height: 34px;
+}
+#diyDisastersComp2014 .diyForm select {
+  height: 46px;
+}
+#diyDisastersComp2014 .diyForm .form-group {
+  margin-bottom: 40px;
+}
+#diyDisastersComp2014 .diyForm .details,
+#diyDisastersComp2014 .diyForm .fifty-words {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 1200px) {
+  #diyDisastersComp2014 .diyForm .details {
+    width: 400px;
+  }
+  #diyDisastersComp2014 .diyForm .fifty-words {
+    width: 800px;
+  }
+}
+@media (max-width: 979px) {
+  #diyDisastersComp2014 .diyForm .details {
+    width: 100%;
+    height: auto;
+    float: none;
+    margin: 0;
+  }
+}
 #diyDisastersComp2014 .diy-content-entry-form {
   /* -- ENTRY FORM */
 
@@ -557,14 +638,6 @@
   color: #888;
 }
 #diyDisastersComp2014 .diy-content-entry-form .form-container #entry-form .file-uploads {
-  margin-left: auto;
-  margin-right: auto;
-}
-#diyDisastersComp2014 .diy-content-entry-form .form-container #entry-form .fifty-words {
-  margin-left: auto;
-  margin-right: auto;
-}
-#diyDisastersComp2014 .diy-content-entry-form .form-container #entry-form .details {
   margin-left: auto;
   margin-right: auto;
 }
@@ -636,10 +709,6 @@
 #diyDisastersComp2014 .diy-content-entry-form .form-container #entry-form h2 {
   margin-bottom: 10px;
 }
-#diyDisastersComp2014 .diy-content-entry-form .form-container #entry-form input,
-#diyDisastersComp2014 .diy-content-entry-form .form-container #entry-form file {
-  height: 34px;
-}
 #diyDisastersComp2014 .diy-content-entry-form .form-container #entry-form #upload-btn {
   display: block;
   width: 215px;
@@ -700,55 +769,6 @@
   margin-right: -0.25em;
   /* Adjusts for spacing */
 
-}
-#diyDisastersComp2014 .diy-content-entry-form .form-container #entry-form .form-group {
-  margin-bottom: 40px;
-}
-#diyDisastersComp2014 .diy-content-entry-form .form-container #entry-form .form-select,
-#diyDisastersComp2014 .diy-content-entry-form .form-container #entry-form .form-control {
-  display: block;
-  text-align: center;
-  padding: 6px 0;
-  margin-bottom: 10px;
-  font-size: 16px;
-  width: 100%;
-  line-height: 1.42857143;
-  color: #555;
-  background-color: #fff;
-  background-image: none;
-  border: 1px solid #fff;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
-  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-}
-#diyDisastersComp2014 .diy-content-entry-form .form-container #entry-form .form-textarea {
-  display: block;
-  text-align: center;
-  padding: 26px 0;
-  margin-bottom: 10px;
-  font-size: 18px;
-  width: 100%;
-  line-height: 1.42857143;
-  color: #555;
-  background-color: #fff;
-  background-image: none;
-  border: 1px solid #fff;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
-  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-}
-#diyDisastersComp2014 .diy-content-entry-form .form-container #entry-form select {
-  height: 46px;
 }
 #diyDisastersComp2014 .diy-content-entries #sort-btns {
   height: 34px;
@@ -915,32 +935,48 @@
 #diyDisastersComp2014 .diy-content-judging .judgeProfile .judgeInfo blockquote:after {
   content: "\201D";
 }
-#diyDisastersComp2014 .diy-content-prizes .prizes .prizesInfo {
-  padding: 20px 0;
+#diyDisastersComp2014 .diy-content-prizes .prizes {
+  padding-bottom: 50px;
 }
-#diyDisastersComp2014 .diy-content-prizes .prizes .prizesInfo .prizeSmall,
-#diyDisastersComp2014 .diy-content-prizes .prizes .prizesInfo .prizeLarge,
-#diyDisastersComp2014 .diy-content-prizes .prizes .prizesInfo sup {
-  color: #fdb813;
-  font-family: 'bebas_neueregular', Helvetica, Arial, sans-serif;
-}
-#diyDisastersComp2014 .diy-content-prizes .prizes .prizesInfo .prizeSmall {
+#diyDisastersComp2014 .diy-content-prizes .prizes .prizeSmall .prizeText {
   display: block;
   padding-top: .5em;
   font-size: 4em;
   line-height: 1em;
 }
-#diyDisastersComp2014 .diy-content-prizes .prizes .prizesInfo .prizeLarge {
+#diyDisastersComp2014 .diy-content-prizes .prizes .prizeLarge .prizeText {
   display: block;
   font-size: 6em;
   line-height: 1em;
 }
-#diyDisastersComp2014 .diy-content-prizes .prizes .prizesInfo .prizeAmount {
-  color: #fdb813;
+#diyDisastersComp2014 .diy-content-prizes .prizes .prizeTitle {
   font-family: 'bebas_neueregular', Helvetica, Arial, sans-serif;
   display: block;
-  font-size: 4em;
   line-height: 1em;
+  padding-top: 5px;
+  font-size: 3em;
+}
+#diyDisastersComp2014 .diy-content-prizes .prizes .prizeInfo {
+  font-family: 'bebas_neueregular', Helvetica, Arial, sans-serif;
+  display: block;
+  line-height: 1em;
+  font-size: 1.5em;
+  padding: 5px 0 10px;
+}
+#diyDisastersComp2014 .diy-content-prizes .prizes .prizeLink {
+  color: #fdb813;
+}
+#diyDisastersComp2014 .diy-content-prizes .prizes .prizeLarge .prizeTitle {
+  color: #fdb813;
+  font-size: 4em;
+}
+#diyDisastersComp2014 .diy-content-prizes .prizes .prizesInfo {
+  padding: 20px 0;
+}
+#diyDisastersComp2014 .diy-content-prizes .prizes .prizesInfo .prizeText,
+#diyDisastersComp2014 .diy-content-prizes .prizes .prizesInfo sup {
+  color: #fdb813;
+  font-family: 'bebas_neueregular', Helvetica, Arial, sans-serif;
 }
 #diyDisastersComp2014 .diy-content-prizes .enterButton {
   display: inline-block;
@@ -973,6 +1009,47 @@
   font-size: 11px;
 }
 /* end DIY DISASTERS */
+.prizeModal {
+  max-width: 400px;
+  text-align: center;
+}
+.prizeModal button.close {
+  background: #fdb813;
+  padding: 10px;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  text-shadow: none;
+  height: 2em;
+  line-height: 1em;
+  width: 2em;
+  font-weight: 100;
+  color: white;
+}
+.prizeModal .modal-body {
+  margin: 0;
+  padding: 10px 0 0;
+  clear: both;
+  max-height: none;
+}
+.prizeModal .prizeTitle {
+  background: #939598;
+  padding: 5px 0;
+  font-family: 'bebas_neueregular', Helvetica, Arial, sans-serif;
+  color: white;
+  font-size: 3em;
+  margin-top: 20px;
+}
+.prizeModal h4 {
+  font-size: 1em;
+  padding: 20px 0 10px;
+  color: #fdb813;
+}
+.prizeModal ul {
+  font-size: .8em;
+}
+.prizeModal ul li {
+  padding-bottom: 5px;
+}
 /* ------------------------------------------------------------------------- */
 /* -------------------------------- MEDIA QUERIES ------------------------- */
 /* ----------------------------------------------------------------------- */
@@ -993,12 +1070,6 @@
   }
   .file-uploads {
     width: 520px;
-  }
-  .fifty-words {
-    width: 800px;
-  }
-  .details {
-    width: 400px;
   }
   #upload-animation {
     width: 400px;
@@ -1068,9 +1139,6 @@
   }
   #diyDisastersComp2014 .diy-content-home .row-4 .div-third {
     height: 190px;
-  }
-  #diyDisastersComp2014 .form-container #entry-form .fifty-words {
-    width: 600px;
   }
   #diyDisastersComp2014 .diy-footer .footer-callout h3 {
     margin-top: 10px;
@@ -1180,7 +1248,6 @@
   }
   #diyDisastersComp2014 .form-container #entry-form .file-uploads,
   #diyDisastersComp2014 .form-container #entry-form .fifty-words,
-  #diyDisastersComp2014 .form-container #entry-form .details,
   #diyDisastersComp2014 .form-container #entry-form #upload-animation {
     width: 100%;
     height: auto;

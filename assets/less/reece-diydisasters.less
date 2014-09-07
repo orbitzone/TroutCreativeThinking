@@ -441,7 +441,65 @@
 		
 	}
 	
-	
+	/* DIY Forms */
+	.diyForm{
+		@inputHeight: 34px;
+		input.diyInput{
+			display: block;
+			text-align: center;
+			padding: 6px 0;
+			margin-bottom: 10px;
+			font-size: 16px;
+			width: 100%;
+			line-height: 1.42857143;
+			color: #555;
+			background-color: #fff;
+			background-image: none;
+			border: 1px solid #fff;
+			.border-radius(0);
+			.box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
+			.transition(border-color ease-in-out .15s);
+			.transition(box-shadow ease-in-out .15s);
+		}
+		textarea.diyTextarea {
+			display: block;
+			text-align: center;
+			padding: 26px 0;
+			margin-bottom: 10px;
+			font-size: 18px;
+			width: 100%;
+			line-height: 1.42857143;
+			color: #555;
+			background-color: #fff;
+			background-image: none;
+			border: 1px solid #fff;
+			.border-radius(0);
+			-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+			box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+			-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+			-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+			transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+		}
+		input,
+		file {
+			height: @inputHeight;
+		}
+		
+		select {
+			height: @inputHeight + 12px;
+		}
+		.form-group {
+			margin-bottom: 40px;
+		}
+		.details,.fifty-words{ margin-left: auto; margin-right: auto; }
+		@media(min-width:1200px){
+			.details { width: 400px; }
+			.fifty-words { width: 800px; }
+		}
+		@media(max-width:979px){
+			.details { width: 100%; height: auto; float: none; margin: 0;  }
+		}
+	}
 	
 	/* -------- DIY CONTENT - ENTRY FORM PAGE -------- */ 
 	.diy-content-entry-form {
@@ -449,7 +507,7 @@
 		/* -- ENTRY FORM */
 		.form-container {
 			
-			@inputHeight: 34px;
+			
 			text-align: center;
 			padding: 40px 20px;
 			
@@ -476,8 +534,7 @@
 				:-ms-input-placeholder { color: #888; }
 				
 				.file-uploads { margin-left: auto; margin-right: auto; }
-				.fifty-words { margin-left: auto; margin-right: auto; }
-				.details { margin-left: auto; margin-right: auto; }
+				
 				#upload-animation { height: 20px; margin: 0 auto 30px auto; }
 				.share-submit { 
 					display: block; 
@@ -542,10 +599,7 @@
 					margin-bottom: 10px;
 				}
 				
-				input,
-				file {
-					height: @inputHeight;
-				}
+
 				
 				#upload-btn {
 					display: block;
@@ -611,9 +665,7 @@
 				  margin-right: -0.25em; /* Adjusts for spacing */
 				}
 				
-				.form-group {
-					margin-bottom: 40px;
-				}
+
 				
 				.control-label {
 					
@@ -621,48 +673,10 @@
 				
 				.form-select,
 				.form-control {
-					display: block;
-					text-align: center;
-					padding: 6px 0;
-					margin-bottom: 10px;
-					font-size: 16px;
-					width: 100%;
-					line-height: 1.42857143;
-					color: #555;
-					background-color: #fff;
-					background-image: none;
-					border: 1px solid #fff;
-					.border-radius(0);
-					-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-					box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-					-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
-					-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-					transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+
 				}
 				
-				.form-textarea {
-					display: block;
-					text-align: center;
-					padding: 26px 0;
-					margin-bottom: 10px;
-					font-size: 18px;
-					width: 100%;
-					line-height: 1.42857143;
-					color: #555;
-					background-color: #fff;
-					background-image: none;
-					border: 1px solid #fff;
-					.border-radius(0);
-					-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-					box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-					-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
-					-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-					transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-				}
-				
-				select {
-					height: @inputHeight + 12px;
-				}
+
 				
 				
 			}
@@ -855,43 +869,61 @@
 	/* -------- DIY CONTENT - PRIZES -------- */ 
 	.diy-content-prizes {
 		.prizes{
+			padding-bottom: 50px;
+
+			.prizeSmall .prizeText{
+				display: block;
+				padding-top: .5em;
+				font-size: 4em;
+				line-height: 1em;
+			}
+			.prizeLarge .prizeText{
+				display: block;
+				font-size: 6em;
+				line-height: 1em;
+			}
+			.prizeTitle{
+				display: block;
+				font-family: @fontBebas;
+				display: block;
+				line-height: 1em;
+				padding-top: 5px;
+				font-size: 3em;
+			}
+			.prizeInfo{
+				font-family: @fontBebas;
+				display: block;
+				line-height: 1em;
+				font-size: 1.5em;
+				padding:5px 0 10px;
+			}
+			.prizeLink{
+				color: @colourYellow;
+			}
+			.prizeLarge .prizeTitle{
+				color: @colourYellow;
+				font-size: 4em;
+			}
 			.prizesInfo{
 				padding: 20px 0;
-				.prizeSmall,.prizeLarge,sup{
-				color: @colourYellow;
-				font-family: @fontBebas;
-				}
-				.prizeSmall{
-					display: block;
-					padding-top: .5em;
-					font-size: 4em;
-					line-height: 1em;
-				}
-				.prizeLarge{
-					display: block;
-					font-size: 6em;
-					line-height: 1em;
-				}
-				.prizeAmount{
-					display: block;
+				.prizeText,sup{
 					color: @colourYellow;
 					font-family: @fontBebas;
-					display: block;
-					font-size: 4em;
-					line-height: 1em;
 				}
 			}
+
 		}
 		.enterButton{
 			display: inline-block;
 			background: @colourYellow;
 			padding: 20px;
-			font-family: @fontBebas;;
+			font-family: @fontBebas;
 			color: white;
 			font-size: 3em;
 		}
 				
 	}
+
 	
 	/* -------- DIY CONTENT - TERMS -------- */ 
 	.diy-content-terms {
@@ -945,7 +977,47 @@
 	
 } /* end DIY DISASTERS */
 
+	.prizeModal{
+		max-width: 400px;
+		text-align: center;
+		button.close{
+			background: @colourYellow;
+			padding: 10px;
+			.opacity(100);
+			text-shadow: none;
+			height: 2em;
+			line-height: 1em;
+			width: 2em;
+			font-weight: 100;
+			color: white;
+		}
+		.modal-body{
+			margin: 0;
+			padding: 10px 0 0;
+			clear: both;
+			max-height: none;
+		}
+		.prizeTitle{
+			background: #939598;
+			padding: 5px 0;
+			font-family: @fontBebas;
+			color: white;
+			font-size: 3em;
+			margin-top: 20px;
+		}
+		h4{
+			font-size: 1em;
+			padding: 20px 0 10px;
+			color: @colourYellow;
+		}
+		ul{
+			font-size: .8em;
+			li{
+				padding-bottom: 5px;
+			}
+		}
 
+	}
 /* ------------------------------------------------------------------------- */
 /* -------------------------------- MEDIA QUERIES ------------------------- */
 /* ----------------------------------------------------------------------- */
@@ -969,8 +1041,7 @@
 	
 	
 	.file-uploads { width: 520px;  }
-	.fifty-words { width: 800px; }
-	.details { width: 400px; }
+	
 	#upload-animation { width: 400px; }
 	.share-submit { width: 360px; }
 	
@@ -1051,10 +1122,7 @@
 		}
 		
 		.form-container {
-			
-			#entry-form {
-				.fifty-words{ width: 600px; }
-			}
+
 			
 		}
 		
@@ -1137,7 +1205,6 @@
 			#entry-form {
 				.file-uploads,
 				.fifty-words,
-				.details,
 				#upload-animation { width: 100%; height: auto; float: none; margin: 0;  }
 				.share-submit { 
 					width: 230px; 

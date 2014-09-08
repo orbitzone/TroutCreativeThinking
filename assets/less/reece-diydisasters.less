@@ -961,10 +961,13 @@
 		.modalHeader{
 			clear: both;
 			background: black;
-			margin-top: 55px;
-			padding: 10px 0;
 			clear: both;
 			position: relative;
+			.close{
+				position: absolute;
+				left: 0;
+				top: -40px;
+			}
 			.clearfix;
 			.entryPopButtons{
 				position: absolute;
@@ -1007,7 +1010,8 @@
 			font-family: @fontBebas;
 			color: white;
 			font-size: 2em;
-			padding-left: 15px;
+			clear: both;
+			padding: 20px 0 10px 30px;
 			}
 			@media (max-width:767px){
 				padding-bottom: 0;
@@ -1028,6 +1032,15 @@
 			background-size: 100%;
 			background-repeat:no-repeat;
 			padding-bottom: 68%
+		}
+		.entryPopSuccessMessage{
+			text-align: center;
+			color: @colourYellow;
+			font-family: @fontBebas;
+			font-size: 3em;
+			line-height: 1em;
+			display: none;
+			padding-bottom: 20px;
 		}
 		.entryPopDetails{
 			padding-bottom: 15px;
@@ -1058,6 +1071,10 @@
 		}
 		width: 900px; 
 		margin-left: -450px;
+		@media (min-width:1200px){
+			width: 1160px; 
+			margin-left: -580px;
+		}
 		@media (max-width:979px){
 			width: 720px;
 			margin-left: -360px;

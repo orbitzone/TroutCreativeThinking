@@ -69,16 +69,21 @@
 }
 #diyDisastersComp2014 {
   /* ----------- GLOBAL STYLES -------- */
+
   background-color: #000000;
   color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 19px;
   /* HEADLINE */
+
   /* GLOBAL STATIC CONTENT */
+
   /* -------- DIY TOPNAV -------- */
+
   /* -------- DIY CONTENT - HOME -------- */
   /* DIY Forms */
+
   /* -------- DIY CONTENT - ENTRY FORM PAGE -------- */
   /* end DIY CONTENT - ENTRY FORM PAGE */
   /* -------- DIY CONTENT - ENTRIES -------- */
@@ -473,12 +478,14 @@
 }
 #diyDisastersComp2014 .diy-content-entry-form {
   /* -- ENTRY FORM */
+
   /* end ENTRY FORM */
 }
 #diyDisastersComp2014 .diy-content-entry-form .form-container {
   text-align: center;
   padding: 40px 20px;
   /* FORM */
+
 }
 #diyDisastersComp2014 .diy-content-entry-form .form-container .input-error {
   border: 1px solid #ff0000 !important;
@@ -648,6 +655,7 @@
   vertical-align: middle;
   margin-right: -0.25em;
   /* Adjusts for spacing */
+
 }
 #diyDisastersComp2014 .diy-content-entries #sort-btns {
   height: 34px;
@@ -1038,11 +1046,14 @@
 }
 .diy-disasters .entryModal .modalHeader {
   background: black;
-  margin-top: 55px;
-  padding: 10px 0;
   clear: both;
   position: relative;
   *zoom: 1;
+}
+.diy-disasters .entryModal .modalHeader .close {
+  position: absolute;
+  left: 0;
+  top: -40px;
 }
 .diy-disasters .entryModal .modalHeader:before,
 .diy-disasters .entryModal .modalHeader:after {
@@ -1090,7 +1101,8 @@
   font-family: 'bebas_neueregular', Helvetica, Arial, sans-serif;
   color: white;
   font-size: 2em;
-  padding-left: 15px;
+  clear: both;
+  padding: 20px 0 10px 30px;
 }
 @media (max-width: 767px) {
   .diy-disasters .entryModal .modalHeader {
@@ -1111,6 +1123,15 @@
   background-size: 100%;
   background-repeat: no-repeat;
   padding-bottom: 68%;
+}
+.diy-disasters .entryModal .entryPopSuccessMessage {
+  text-align: center;
+  color: #fdb813;
+  font-family: 'bebas_neueregular', Helvetica, Arial, sans-serif;
+  font-size: 3em;
+  line-height: 1em;
+  display: none;
+  padding-bottom: 20px;
 }
 .diy-disasters .entryModal .entryPopDetails {
   padding-bottom: 15px;
@@ -1149,6 +1170,12 @@
 }
 .diy-disasters .entryModal .entryPopShareLinks .twIcon {
   background-position: 0 100%;
+}
+@media (min-width: 1200px) {
+  .diy-disasters .entryModal {
+    width: 1160px;
+    margin-left: -580px;
+  }
 }
 @media (max-width: 979px) {
   .diy-disasters .entryModal {

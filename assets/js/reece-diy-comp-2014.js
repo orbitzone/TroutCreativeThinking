@@ -35,8 +35,6 @@ $(document).ready(function(){
 		moreItems:						null,
 		hashPrefix: 					"diyItem", 
 		
-		
-		
 		// ---------------------------- INIT ---------- //
 		init: function()
 		{
@@ -50,10 +48,7 @@ $(document).ready(function(){
 		},
 		
 		
-		
 		// ---------------------------- FUNCTIONS ---------- //
-		
-		
 		
 		/*
 		 * @initEntriesGrid
@@ -181,10 +176,7 @@ $(document).ready(function(){
 				window.open('http://www.facebook.com/sharer.php?s=100&p[url]=http://www.reece.com.au/diydisasters&p[images][0]=/images/image.jpg&p[title]=Title&p[summary]=Summary', "_blank", "toolbar=yes, scrollbars=yes, resizable=yes, width=400, height=400");
 			});
 			
-		},
-		
-		
-		
+		},		
 		
 		
 		/*
@@ -204,10 +196,20 @@ $(document).ready(function(){
 			// img
 			var imgSrc = _this.css('background-image');
 			$("#entryModal .entryPopImage").css('background-image', imgSrc);
-			
+			//Checks Session storage to show or hide success message and buttons
+			if(sessionStorage.entrySubmitted){
+				$("#entryModal .entryPopButtons").hide();
+				$("#entryModal .entryPopSuccessMessage").show();
+			}
+			else{
+				$("#entryModal .entryPopButtons").show();
+				$("#entryModal .entryPopSuccessMessage").hide();
+			}
+			sessionStorage.clear();
 			// set
 			$("#entryModal .entryPopTitle").html(_this.find('.caption h3').html());
 			$("#entryModal .entryPopDescription").html(_this.find('.caption p.fifty-words-description').html());
+			location.hash = '#'+app.hashPrefix+_this.attr('data-item-id') ;
 			
 			// show
 			app.entryModal.modal('show');
@@ -417,6 +419,8 @@ $(document).ready(function(){
 				
 				// ok - ajax submit form
 				setTimeout(function(){
+					// Redirect to the entry with the DB ID
+					sessionStorage.entrySubmitted = true;
 					window.location = 'entries.html#diyItem7';
 					/*
 

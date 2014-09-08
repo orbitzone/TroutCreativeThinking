@@ -35,7 +35,6 @@
 
 /* ----------------------------------- ENTRY MODAL ---------- */
 /* sits outside of #diyDisastersComp2014 so no conflict with reece ocmain global styles */
-.modal.fade.in { top: 10%; }
 .modal { .border-radius(0); }
 #entryModal {
 	
@@ -920,6 +919,7 @@
 			font-family: @fontBebas;
 			color: white;
 			font-size: 3em;
+			line-height: 1em;
 		}
 				
 	}
@@ -996,6 +996,9 @@
 			padding: 10px 0 0;
 			clear: both;
 			max-height: none;
+			@media (max-height:830px){
+				max-height: 400px
+			}
 		}
 		.prizeTitle{
 			background: #939598;

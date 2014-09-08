@@ -40,9 +40,6 @@
 /* layout */
 /* ----------------------------------- ENTRY MODAL ---------- */
 /* sits outside of #diyDisastersComp2014 so no conflict with reece ocmain global styles */
-.modal.fade.in {
-  top: 10%;
-}
 .modal {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -985,6 +982,7 @@
   font-family: 'bebas_neueregular', Helvetica, Arial, sans-serif;
   color: white;
   font-size: 3em;
+  line-height: 1em;
 }
 #diyDisastersComp2014 .diy-footer {
   height: 160px;
@@ -1030,6 +1028,11 @@
   padding: 10px 0 0;
   clear: both;
   max-height: none;
+}
+@media (max-height: 830px) {
+  .prizeModal .modal-body {
+    max-height: 400px;
+  }
 }
 .prizeModal .prizeTitle {
   background: #939598;

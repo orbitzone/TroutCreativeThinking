@@ -39,23 +39,46 @@
 /* fonts */
 /* layout */
 /* ----------------------------------- DIY DISASTERS -------- */
+.diy-disasters .btn {
+  color: #fdb813;
+  text-transform: uppercase;
+  text-shadow: none;
+  background-color: #000000;
+  background-image: none;
+  filter: none;
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.diy-disasters .btn-large {
+  font-size: 32px;
+  font-family: 'bebas_neueregular', Helvetica, Arial, sans-serif;
+  padding: 14px 20px;
+}
+.diy-disasters .btn-black {
+  background-color: #000000;
+  color: #fdb813;
+}
+.diy-disasters .btn-yellow {
+  background-color: #fdb813;
+  color: #ffffff;
+}
 #diyDisastersComp2014 {
   /* ----------- GLOBAL STYLES -------- */
-
   background-color: #000000;
   color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 19px;
   /* HEADLINE */
-
   /* GLOBAL STATIC CONTENT */
-
   /* -------- DIY TOPNAV -------- */
-
   /* -------- DIY CONTENT - HOME -------- */
   /* DIY Forms */
-
   /* -------- DIY CONTENT - ENTRY FORM PAGE -------- */
   /* end DIY CONTENT - ENTRY FORM PAGE */
   /* -------- DIY CONTENT - ENTRIES -------- */
@@ -77,7 +100,6 @@
 #diyDisastersComp2014 p,
 #diyDisastersComp2014 span,
 #diyDisastersComp2014 a {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #ffffff;
   text-decoration: none;
 }
@@ -123,34 +145,6 @@
 }
 #diyDisastersComp2014 .diy-yellow {
   color: #fdb813;
-}
-#diyDisastersComp2014 .btn {
-  color: #fdb813;
-  text-transform: uppercase;
-  text-shadow: none;
-  background-color: #000000;
-  background-image: none;
-  filter: none;
-  border: none;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-#diyDisastersComp2014 .btn-large {
-  font-size: 32px;
-  font-family: 'bebas_neueregular', Helvetica, Arial, sans-serif;
-  padding: 14px 20px;
-}
-#diyDisastersComp2014 .btn-black {
-  background-color: #000000;
-  color: #fdb813;
-}
-#diyDisastersComp2014 .btn-yellow {
-  background-color: #fdb813;
-  color: #ffffff;
 }
 #diyDisastersComp2014 .yellow-line-headline {
   margin-bottom: 40px;
@@ -479,14 +473,12 @@
 }
 #diyDisastersComp2014 .diy-content-entry-form {
   /* -- ENTRY FORM */
-
   /* end ENTRY FORM */
 }
 #diyDisastersComp2014 .diy-content-entry-form .form-container {
   text-align: center;
   padding: 40px 20px;
   /* FORM */
-
 }
 #diyDisastersComp2014 .diy-content-entry-form .form-container .input-error {
   border: 1px solid #ff0000 !important;
@@ -656,7 +648,6 @@
   vertical-align: middle;
   margin-right: -0.25em;
   /* Adjusts for spacing */
-
 }
 #diyDisastersComp2014 .diy-content-entries #sort-btns {
   height: 34px;
@@ -899,13 +890,13 @@
 }
 /* end DIY DISASTERS */
 /* Modal Styles */
-.diyModal {
+.diy-disasters .diyModal {
   text-align: center;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
 }
-.diyModal button.close {
+.diy-disasters .diyModal button.close {
   background: #fdb813;
   padding: 10px;
   opacity: 1;
@@ -917,37 +908,37 @@
   font-weight: 100;
   color: white;
 }
-.diyModal .modal-body {
+.diy-disasters .diyModal .modal-body {
   margin: 0;
   padding: 10px 0 0;
   clear: both;
   max-height: none;
 }
 @media (max-height: 830px) {
-  .diyModal .modal-body {
+  .diy-disasters .diyModal .modal-body {
     max-height: 400px;
     overflow-y: scroll;
   }
 }
-.diyModal ::-webkit-scrollbar {
+.diy-disasters .diyModal ::-webkit-scrollbar {
   width: 12px;
 }
-.diyModal ::-webkit-scrollbar-track {
+.diy-disasters .diyModal ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
 }
-.diyModal ::-webkit-scrollbar-thumb {
+.diy-disasters .diyModal ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
-.prizeModal {
+.diy-disasters .prizeModal {
   text-align: center;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
   max-width: 400px;
 }
-.prizeModal button.close {
+.diy-disasters .prizeModal button.close {
   background: #fdb813;
   padding: 10px;
   opacity: 1;
@@ -959,30 +950,30 @@
   font-weight: 100;
   color: white;
 }
-.prizeModal .modal-body {
+.diy-disasters .prizeModal .modal-body {
   margin: 0;
   padding: 10px 0 0;
   clear: both;
   max-height: none;
 }
 @media (max-height: 830px) {
-  .prizeModal .modal-body {
+  .diy-disasters .prizeModal .modal-body {
     max-height: 400px;
     overflow-y: scroll;
   }
 }
-.prizeModal ::-webkit-scrollbar {
+.diy-disasters .prizeModal ::-webkit-scrollbar {
   width: 12px;
 }
-.prizeModal ::-webkit-scrollbar-track {
+.diy-disasters .prizeModal ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
 }
-.prizeModal ::-webkit-scrollbar-thumb {
+.diy-disasters .prizeModal ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
-.prizeModal .prizeTitle {
+.diy-disasters .prizeModal .prizeTitle {
   background: #939598;
   padding: 5px 0;
   font-family: 'bebas_neueregular', Helvetica, Arial, sans-serif;
@@ -990,24 +981,27 @@
   font-size: 3em;
   margin-top: 20px;
 }
-.prizeModal h4 {
+.diy-disasters .prizeModal h4 {
   font-size: 1em;
   padding: 20px 0 10px;
   color: #fdb813;
 }
-.prizeModal ul {
+.diy-disasters .prizeModal ul {
   font-size: .8em;
 }
-.prizeModal ul li {
+.diy-disasters .prizeModal ul li {
   padding-bottom: 5px;
 }
-.entryModal {
+.diy-disasters .entryModal {
   text-align: center;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+  text-align: left;
+  width: 900px;
+  margin-left: -450px;
 }
-.entryModal button.close {
+.diy-disasters .entryModal button.close {
   background: #fdb813;
   padding: 10px;
   opacity: 1;
@@ -1019,33 +1013,155 @@
   font-weight: 100;
   color: white;
 }
-.entryModal .modal-body {
+.diy-disasters .entryModal .modal-body {
   margin: 0;
   padding: 10px 0 0;
   clear: both;
   max-height: none;
 }
 @media (max-height: 830px) {
-  .entryModal .modal-body {
+  .diy-disasters .entryModal .modal-body {
     max-height: 400px;
     overflow-y: scroll;
   }
 }
-.entryModal ::-webkit-scrollbar {
+.diy-disasters .entryModal ::-webkit-scrollbar {
   width: 12px;
 }
-.entryModal ::-webkit-scrollbar-track {
+.diy-disasters .entryModal ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
 }
-.entryModal ::-webkit-scrollbar-thumb {
+.diy-disasters .entryModal ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
-.entryModal .entryPopImage {
+.diy-disasters .entryModal .modalHeader {
+  background: black;
+  margin-top: 55px;
+  padding: 10px 0;
+  clear: both;
+  position: relative;
+  *zoom: 1;
+}
+.diy-disasters .entryModal .modalHeader:before,
+.diy-disasters .entryModal .modalHeader:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.diy-disasters .entryModal .modalHeader:after {
+  clear: both;
+}
+.diy-disasters .entryModal .modalHeader .entryPopButtons {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding-right: 20px;
+}
+.diy-disasters .entryModal .modalHeader .entryPopButtons .btn-large {
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  padding: 5px 20px;
+}
+.diy-disasters .entryModal .modalHeader .entryPopButtons #modal-prev-btn:before {
+  content: '';
+  height: 0;
+  width: 0;
+  display: inline-block;
+  border-color: transparent;
+  border-width: 6px 10px 6px 0;
+  border-style: solid;
+  border-right-color: white;
+  margin-right: 10px;
+}
+.diy-disasters .entryModal .modalHeader .entryPopButtons #modal-next-btn:after {
+  content: '';
+  height: 0;
+  width: 0;
+  display: inline-block;
+  border-color: transparent;
+  border-width: 6px 0 6px 10px;
+  border-style: solid;
+  border-left-color: white;
+  margin-left: 10px;
+}
+.diy-disasters .entryModal .modalHeader h3 {
+  font-family: 'bebas_neueregular', Helvetica, Arial, sans-serif;
+  color: white;
+  font-size: 2em;
+  padding-left: 15px;
+}
+@media (max-width: 767px) {
+  .diy-disasters .entryModal .modalHeader {
+    padding-bottom: 0;
+  }
+  .diy-disasters .entryModal .modalHeader .entryPopButtons {
+    position: relative;
+    float: right;
+  }
+}
+.diy-disasters .entryModal .modalBody {
+  padding: 20px 40px;
+}
+.diy-disasters .entryModal .modalBody .span6 {
+  padding: 20px 0;
+}
+.diy-disasters .entryModal .entryPopImage {
   background-size: 100%;
   background-repeat: no-repeat;
   padding-bottom: 68%;
+}
+.diy-disasters .entryModal .entryPopDetails {
+  padding-bottom: 15px;
+}
+.diy-disasters .entryModal .entryPopDetails .contentLabel {
+  color: #999;
+  text-transform: uppercase;
+}
+.diy-disasters .entryModal .entryPopShareLinks {
+  *zoom: 1;
+}
+.diy-disasters .entryModal .entryPopShareLinks:before,
+.diy-disasters .entryModal .entryPopShareLinks:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.diy-disasters .entryModal .entryPopShareLinks:after {
+  clear: both;
+}
+.diy-disasters .entryModal .entryPopShareLinks dt,
+.diy-disasters .entryModal .entryPopShareLinks dd {
+  float: left;
+}
+.diy-disasters .entryModal .entryPopShareLinks dt {
+  font-family: 'bebas_neueregular', Helvetica, Arial, sans-serif;
+  line-height: 40px;
+  font-size: 1.2em;
+}
+.diy-disasters .entryModal .entryPopShareLinks .fbIcon,
+.diy-disasters .entryModal .entryPopShareLinks .twIcon {
+  display: block;
+  height: 40px;
+  width: 40px;
+  background: url('../../assets/images/diy-disasters/diyshare.png') 0 0 no-repeat;
+}
+.diy-disasters .entryModal .entryPopShareLinks .twIcon {
+  background-position: 0 100%;
+}
+@media (max-width: 979px) {
+  .diy-disasters .entryModal {
+    width: 720px;
+    margin-left: -360px;
+  }
+}
+@media (max-width: 767px) {
+  .diy-disasters .entryModal {
+    width: 100%;
+    margin-left: 0;
+    left: 0;
+  }
 }
 /* ----------------------------------- ENTRY MODAL ---------- */
 /* sits outside of #diyDisastersComp2014 so no conflict with reece ocmain global styles */

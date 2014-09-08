@@ -458,31 +458,36 @@
 	<!-- DIY ENTRY MODAL -->
 	<div id="entryModal" class="modal hide fade entryModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<button class="close" type="button" data-dismiss="modal" aria-hidden="true">×</button>
-		<div class="modal-header">
-			
-			<div class="pull-right">
-				<button id="modal-prev-btn" class="btn btn-large btn-yellow" type="button">PREV</button>
-				<button id="modal-next-btn" class="btn btn-large btn-yellow" type="button">NEXT</button>
+		<div class="modalHeader">
+			<h3>Entry: <span class="entryPopTitle"></span></h3>
+			<div class="entryPopButtons">
+				<a id="modal-prev-btn" class="btn btn-large btn-yellow">PREV</a>
+				<a id="modal-next-btn" class="btn btn-large btn-yellow">NEXT</a>
 			</div>
 		</div>
-		<div class="row-fluid">
-			<div class="span6">
-				<div class="entryPopImage">
+		<div class="modalBody">
+			<div class="row-fluid">
+				<div class="span6">
+					<div class="entryPopImage">
+					</div>
 				</div>
-			</div>
-			<div class="span6">
-				<div class="entryPopTitle">
-				</div>
-				<div class="entryPopDescription">
-				</div>
+				<div class="span6">
+					<div class="entryPopDetails">
+						<span class="contentLabel">Name</span>
+						<span class="entryPopTitle"></span>
+					</div>
+					<div class="entryPopDetails">
+						<span class="contentLabel">Description</span>
+						<p class="entryPopDescription"></p>
+					</div>
+					<dl class="entryPopShareLinks">
+						<dt>SHARE</dt>
+						<dd><a class="fbIcon" href=""></a></dd>
+						<dd><a class="twIcon" href=""></a></dd>
+					</dl>
 
+				</div>
 			</div>
-		</div>
-		<div class="modal-body"></div>
-		<div class="modal-share">
-			<span>SHARE:</span>
-			<a id="share-entry-fb-btn" target="_blank" href="#"><img src="../../assets/images/diy-disasters/fb-40x40.png" /></a>
-			<a id="share-entry-tw-btn" target="_blank" href="http://twitter.com/share?text=Reece&url=http://www.reece.com.au/diydisasters&hashtags=diydisaster"><img src="../../assets/images/diy-disasters/tw-40x40.png" /></a>
 		</div>
 	</div>	
 	

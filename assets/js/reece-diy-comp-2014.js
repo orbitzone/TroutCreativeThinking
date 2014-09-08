@@ -199,9 +199,6 @@ $(document).ready(function(){
 			// img
 			var imgSrc = _this.css('background-image');
 			$("#entryModal .entryPopImage").css('background-image', imgSrc);
-
-			
-
 			
 			// set
 			$("#entryModal .entryPopTitle").html(_this.find('.caption h3').html());

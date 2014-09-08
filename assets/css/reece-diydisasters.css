@@ -1032,6 +1032,7 @@
 @media (max-height: 830px) {
   .prizeModal .modal-body {
     max-height: 400px;
+    overflow-y: scroll;
   }
 }
 .prizeModal .prizeTitle {

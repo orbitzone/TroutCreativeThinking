@@ -38,115 +38,6 @@
 /* colours */
 /* fonts */
 /* layout */
-/* ----------------------------------- ENTRY MODAL ---------- */
-/* sits outside of #diyDisastersComp2014 so no conflict with reece ocmain global styles */
-.modal {
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-}
-#entryModal .btn {
-  color: #fdb813;
-  text-transform: uppercase;
-  text-shadow: none;
-  background-color: #000000;
-  background-image: none;
-  filter: none;
-  border: none;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-#entryModal .btn-large {
-  font-size: 32px;
-  font-family: 'bebas_neueregular', Helvetica, Arial, sans-serif;
-  padding: 14px 20px;
-}
-#entryModal .btn-black {
-  background-color: #000000;
-  color: #fdb813;
-}
-#entryModal .btn-yellow {
-  background-color: #fdb813;
-  color: #ffffff;
-}
-#entryModal .modal-header {
-  height: 56px;
-  padding: 8px 18px 0 18px;
-}
-#entryModal .modal-header .close {
-  float: left;
-  margin-top: 0;
-  font-size: 40px;
-  font-weight: bold;
-  line-height: 40px;
-  color: #000000;
-  text-shadow: 0 1px 0 #ffffff;
-  opacity: 0.2;
-  filter: alpha(opacity=40);
-}
-#entryModal .modal-body {
-  position: relative;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-left: 0;
-  padding-right: 0;
-}
-#entryModal .modal-body .caption {
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: auto;
-  bottom: 0;
-  min-height: 100px;
-  background-color: #ffffff;
-  padding-bottom: 10px;
-}
-#entryModal .modal-body .caption h3 {
-  font-family: 'bebas_neueregular', Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  color: #000000;
-  font-size: 28px;
-  line-height: 80px;
-  margin: 0;
-  padding: 0 24px;
-}
-#entryModal .modal-body .caption p {
-  color: #000000;
-  padding: 0 24px 10px 24px;
-}
-#entryModal .modal-share {
-  display: block;
-  position: absolute;
-  right: 40px;
-  bottom: 140px;
-  width: 160px;
-  height: 40px;
-}
-#entryModal .modal-share span {
-  display: inline-block;
-  font-family: 'bebas_neueregular', Helvetica, Arial, sans-serif;
-  height: 40px;
-  font-size: 22px;
-  line-height: 40px;
-  float: left;
-}
-#entryModal .modal-share #share-entry-fb-btn {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  margin-left: 10px;
-}
-#entryModal .modal-share #share-entry-tw-btn {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  margin-left: 10px;
-}
 /* ----------------------------------- DIY DISASTERS -------- */
 #diyDisastersComp2014 {
   /* ----------- GLOBAL STYLES -------- */
@@ -1007,9 +898,54 @@
   font-size: 11px;
 }
 /* end DIY DISASTERS */
-.prizeModal {
-  max-width: 400px;
+/* Modal Styles */
+.diyModal {
   text-align: center;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.diyModal button.close {
+  background: #fdb813;
+  padding: 10px;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  text-shadow: none;
+  height: 2em;
+  line-height: 1em;
+  width: 2em;
+  font-weight: 100;
+  color: white;
+}
+.diyModal .modal-body {
+  margin: 0;
+  padding: 10px 0 0;
+  clear: both;
+  max-height: none;
+}
+@media (max-height: 830px) {
+  .diyModal .modal-body {
+    max-height: 400px;
+    overflow-y: scroll;
+  }
+}
+.diyModal ::-webkit-scrollbar {
+  width: 12px;
+}
+.diyModal ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.diyModal ::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+.prizeModal {
+  text-align: center;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  max-width: 400px;
 }
 .prizeModal button.close {
   background: #fdb813;
@@ -1035,6 +971,17 @@
     overflow-y: scroll;
   }
 }
+.prizeModal ::-webkit-scrollbar {
+  width: 12px;
+}
+.prizeModal ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.prizeModal ::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
 .prizeModal .prizeTitle {
   background: #939598;
   padding: 5px 0;
@@ -1054,17 +1001,186 @@
 .prizeModal ul li {
   padding-bottom: 5px;
 }
-.prizeModal ::-webkit-scrollbar {
+.entryModal {
+  text-align: center;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.entryModal button.close {
+  background: #fdb813;
+  padding: 10px;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  text-shadow: none;
+  height: 2em;
+  line-height: 1em;
+  width: 2em;
+  font-weight: 100;
+  color: white;
+}
+.entryModal .modal-body {
+  margin: 0;
+  padding: 10px 0 0;
+  clear: both;
+  max-height: none;
+}
+@media (max-height: 830px) {
+  .entryModal .modal-body {
+    max-height: 400px;
+    overflow-y: scroll;
+  }
+}
+.entryModal ::-webkit-scrollbar {
   width: 12px;
 }
-.prizeModal ::-webkit-scrollbar-track {
+.entryModal ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
 }
-.prizeModal ::-webkit-scrollbar-thumb {
+.entryModal ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
+.entryModal .entryPopImage {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding-bottom: 68%;
+}
+/* ----------------------------------- ENTRY MODAL ---------- */
+/* sits outside of #diyDisastersComp2014 so no conflict with reece ocmain global styles */
+/*
+.modal { .border-radius(0); }
+#entryModal {
+	.btn { color: @colourYellow; text-transform: uppercase; text-shadow: none; background-color: @colourBlack; background-image: none; filter: none; border: none; .border-radius(0); .box-shadow(none); }
+	.btn-large { font-size: 32px; font-family: @fontBebas; padding: 14px 20px; }
+	.btn-black { background-color: @colourBlack; color: @colourYellow; }
+	.btn-yellow { background-color: @colourYellow; color: @colourWhite; }
+	
+	.modal-header {
+		height: 56px;
+		padding: 8px 18px 0 18px;	
+		.close {
+			float: left;
+			margin-top: 0;
+			font-size: 40px;
+			font-weight: bold;
+			line-height: 40px;
+			color: #000000;
+			text-shadow: 0 1px 0 #ffffff;
+			opacity: 0.2;
+			filter: alpha(opacity=40);
+		}
+	}
+	
+	.modal-body {
+	    position: relative;
+	    overflow: hidden;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding-left: 0;
+		padding-right: 0;
+	    .caption {
+		    position: absolute;
+		    display: block;
+		    width: 100%;
+		    height: auto;
+		    bottom: 0;
+		    min-height: 100px;
+		    background-color: @colourWhite;
+		    padding-bottom: 10px;
+		    h3 {
+				font-family: @fontBebas;
+				text-transform: uppercase;
+				color: @colourBlack;
+				font-size: 28px;
+				line-height: 80px;
+				margin: 0;
+				padding: 0 24px;
+			}
+			p {
+				color: @colourBlack;
+				padding: 0 24px 10px 24px;
+			}
+	    }
+	}
+	
+	.modal-share {
+		display: block;
+		position: absolute;
+		right: 40px;
+		bottom: 140px;
+		width: 160px;
+		height: 40px;
+		span {
+			display: inline-block;
+			font-family: @fontBebas;
+			height: 40px;
+			font-size: 22px;
+			line-height: 40px;
+			float: left;
+		}
+		#share-entry-fb-btn {
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			margin-left: 10px;
+		}
+		#share-entry-tw-btn {
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			margin-left: 10px;
+		}
+	}
+	@media (min-width: 1200px) {
+		width: 890px; 
+		height: 720px;
+		margin-left: -480px;
+		padding: 0 40px;
+		.modal-body {
+		    height: 620px;
+		    max-height: 620px;
+		}
+	}
+	@media (max-width: 1199px) and (min-width: 980px) {
+		width: 890px; 
+		height: 720px;
+		margin-left: -480px;
+		padding: 0 40px;
+		.modal-body {
+		    height: 620px;
+		    max-height: 620px;
+		}
+	}
+	@media (max-width: 979px) and (min-width: 768px) {
+		width: 680px; 
+		height: auto;
+		margin-left: -360px;
+		padding: 0 20px;
+		.modal-body {
+		    height: 620px;
+		    max-height: 920px;
+		}
+		.modal-share {
+			
+		}
+	}
+	@media (max-width: 767px) {
+		width: 90%; 
+		height: auto;
+		margin-left: 1%;
+		padding: 0;
+		.modal-body {
+		    height: 620px;
+		    max-height: 920px;
+		}
+		.modal-share {
+			bottom: 170px;
+		}
+	}
+}
+*/
 /* ------------------------------------------------------------------------- */
 /* -------------------------------- MEDIA QUERIES ------------------------- */
 /* ----------------------------------------------------------------------- */
@@ -1073,16 +1189,6 @@
 /* -------------------------------------------------------------------- */
 /* widescreen */
 @media (min-width: 1200px) {
-  #entryModal {
-    width: 890px;
-    height: 720px;
-    margin-left: -480px;
-    padding: 0 40px;
-  }
-  #entryModal .modal-body {
-    height: 620px;
-    max-height: 620px;
-  }
   .file-uploads {
     width: 520px;
   }
@@ -1103,16 +1209,6 @@
 }
 /* laptop */
 @media (max-width: 1199px) and (min-width: 980px) {
-  #entryModal {
-    width: 890px;
-    height: 720px;
-    margin-left: -480px;
-    padding: 0 40px;
-  }
-  #entryModal .modal-body {
-    height: 620px;
-    max-height: 620px;
-  }
   #diyDisastersComp2014 .diy-topnav #mobile-menu-btn {
     display: none;
   }
@@ -1122,16 +1218,6 @@
 }
 /* tablet */
 @media (max-width: 979px) and (min-width: 768px) {
-  #entryModal {
-    width: 680px;
-    height: auto;
-    margin-left: -360px;
-    padding: 0 20px;
-  }
-  #entryModal .modal-body {
-    height: 620px;
-    max-height: 920px;
-  }
   #diyDisastersComp2014 .diy-topnav .container {
     width: 100%;
     margin: 0;
@@ -1161,19 +1247,6 @@
 }
 /* mobile */
 @media (max-width: 767px) {
-  #entryModal {
-    width: 90%;
-    height: auto;
-    margin-left: 1%;
-    padding: 0;
-  }
-  #entryModal .modal-body {
-    height: 620px;
-    max-height: 920px;
-  }
-  #entryModal .modal-share {
-    bottom: 170px;
-  }
   #diyDisastersComp2014 .diy-content-entries {
     padding: 0 20px;
   }

@@ -33,95 +33,6 @@
 /* layout */
 @topnavHeight:			42px;
 
-/* ----------------------------------- ENTRY MODAL ---------- */
-/* sits outside of #diyDisastersComp2014 so no conflict with reece ocmain global styles */
-.modal { .border-radius(0); }
-#entryModal {
-	
-	.btn { color: @colourYellow; text-transform: uppercase; text-shadow: none; background-color: @colourBlack; background-image: none; filter: none; border: none; .border-radius(0); .box-shadow(none); }
-	.btn-large { font-size: 32px; font-family: @fontBebas; padding: 14px 20px; }
-	.btn-black { background-color: @colourBlack; color: @colourYellow; }
-	.btn-yellow { background-color: @colourYellow; color: @colourWhite; }
-	
-	.modal-header {
-		height: 56px;
-		padding: 8px 18px 0 18px;	
-		.close {
-			float: left;
-			margin-top: 0;
-			font-size: 40px;
-			font-weight: bold;
-			line-height: 40px;
-			color: #000000;
-			text-shadow: 0 1px 0 #ffffff;
-			opacity: 0.2;
-			filter: alpha(opacity=40);
-		}
-	}
-	
-	.modal-body {
-	    position: relative;
-	    overflow: hidden;
-		background-repeat: no-repeat;
-		background-size: cover;
-		padding-left: 0;
-		padding-right: 0;
-	    .caption {
-		    position: absolute;
-		    display: block;
-		    width: 100%;
-		    height: auto;
-		    bottom: 0;
-		    min-height: 100px;
-		    background-color: @colourWhite;
-		    padding-bottom: 10px;
-		    h3 {
-				font-family: @fontBebas;
-				text-transform: uppercase;
-				color: @colourBlack;
-				font-size: 28px;
-				line-height: 80px;
-				margin: 0;
-				padding: 0 24px;
-			}
-			p {
-				color: @colourBlack;
-				padding: 0 24px 10px 24px;
-			}
-	    }
-	}
-	
-	.modal-share {
-		display: block;
-		position: absolute;
-		right: 40px;
-		bottom: 140px;
-		width: 160px;
-		height: 40px;
-		span {
-			display: inline-block;
-			font-family: @fontBebas;
-			height: 40px;
-			font-size: 22px;
-			line-height: 40px;
-			float: left;
-		}
-		#share-entry-fb-btn {
-			display: inline-block;
-			width: 40px;
-			height: 40px;
-			margin-left: 10px;
-		}
-		#share-entry-tw-btn {
-			display: inline-block;
-			width: 40px;
-			height: 40px;
-			margin-left: 10px;
-		}
-	}
-}
-
-
 /* ----------------------------------- DIY DISASTERS -------- */
 #diyDisastersComp2014 {
 	
@@ -977,63 +888,214 @@
 	
 } /* end DIY DISASTERS */
 
-	.prizeModal{
-		max-width: 400px;
-		text-align: center;
-		button.close{
-			background: @colourYellow;
-			padding: 10px;
-			.opacity(100);
-			text-shadow: none;
-			height: 2em;
-			line-height: 1em;
-			width: 2em;
-			font-weight: 100;
-			color: white;
-		}
-		.modal-body{
-			margin: 0;
-			padding: 10px 0 0;
-			clear: both;
-			max-height: none;
-			@media (max-height:830px){
-				max-height: 400px;
-				overflow-y: scroll;
-			}
-		}
-		.prizeTitle{
-			background: #939598;
-			padding: 5px 0;
-			font-family: @fontBebas;
-			color: white;
-			font-size: 3em;
-			margin-top: 20px;
-		}
-		h4{
-			font-size: 1em;
-			padding: 20px 0 10px;
-			color: @colourYellow;
-		}
-		ul{
-			font-size: .8em;
-			li{
-				padding-bottom: 5px;
-			}
-		}
-		::-webkit-scrollbar {
-		    width: 12px;
-		}
-		 
-		::-webkit-scrollbar-track {
-		    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-		    border-radius: 10px;
-		}
-		 
-		::-webkit-scrollbar-thumb {
-		    border-radius: 10px;
-		    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+/* Modal Styles */
+.diyModal{
+
+	text-align: center;
+	.border-radius(0);
+	button.close{
+		background: @colourYellow;
+		padding: 10px;
+		.opacity(100);
+		text-shadow: none;
+		height: 2em;
+		line-height: 1em;
+		width: 2em;
+		font-weight: 100;
+		color: white;
+	}
+	.modal-body{
+		margin: 0;
+		padding: 10px 0 0;
+		clear: both;
+		max-height: none;
+		@media (max-height:830px){
+			max-height: 400px;
+			overflow-y: scroll;
 		}
 	}
+
+	::-webkit-scrollbar {
+	    width: 12px;
+	}
+	 
+	::-webkit-scrollbar-track {
+	    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+	    border-radius: 10px;
+	}
+	 
+	::-webkit-scrollbar-thumb {
+	    border-radius: 10px;
+	    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+	}
+}
+.prizeModal{
+	.diyModal;
+	max-width: 400px;
+	.prizeTitle{
+		background: #939598;
+		padding: 5px 0;
+		font-family: @fontBebas;
+		color: white;
+		font-size: 3em;
+		margin-top: 20px;
+	}
+	h4{
+		font-size: 1em;
+		padding: 20px 0 10px;
+		color: @colourYellow;
+	}
+	ul{
+		font-size: .8em;
+		li{
+			padding-bottom: 5px;
+		}
+	}
+}
+.entryModal{
+	.diyModal;
+	.entryPopImage{
+		background-size: 100%;
+		background-repeat:no-repeat;
+		padding-bottom: 68%
+	}
+
+}
+/* ----------------------------------- ENTRY MODAL ---------- */
+/* sits outside of #diyDisastersComp2014 so no conflict with reece ocmain global styles */
+/*
+.modal { .border-radius(0); }
+#entryModal {
+	.btn { color: @colourYellow; text-transform: uppercase; text-shadow: none; background-color: @colourBlack; background-image: none; filter: none; border: none; .border-radius(0); .box-shadow(none); }
+	.btn-large { font-size: 32px; font-family: @fontBebas; padding: 14px 20px; }
+	.btn-black { background-color: @colourBlack; color: @colourYellow; }
+	.btn-yellow { background-color: @colourYellow; color: @colourWhite; }
+	
+	.modal-header {
+		height: 56px;
+		padding: 8px 18px 0 18px;	
+		.close {
+			float: left;
+			margin-top: 0;
+			font-size: 40px;
+			font-weight: bold;
+			line-height: 40px;
+			color: #000000;
+			text-shadow: 0 1px 0 #ffffff;
+			opacity: 0.2;
+			filter: alpha(opacity=40);
+		}
+	}
+	
+	.modal-body {
+	    position: relative;
+	    overflow: hidden;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding-left: 0;
+		padding-right: 0;
+	    .caption {
+		    position: absolute;
+		    display: block;
+		    width: 100%;
+		    height: auto;
+		    bottom: 0;
+		    min-height: 100px;
+		    background-color: @colourWhite;
+		    padding-bottom: 10px;
+		    h3 {
+				font-family: @fontBebas;
+				text-transform: uppercase;
+				color: @colourBlack;
+				font-size: 28px;
+				line-height: 80px;
+				margin: 0;
+				padding: 0 24px;
+			}
+			p {
+				color: @colourBlack;
+				padding: 0 24px 10px 24px;
+			}
+	    }
+	}
+	
+	.modal-share {
+		display: block;
+		position: absolute;
+		right: 40px;
+		bottom: 140px;
+		width: 160px;
+		height: 40px;
+		span {
+			display: inline-block;
+			font-family: @fontBebas;
+			height: 40px;
+			font-size: 22px;
+			line-height: 40px;
+			float: left;
+		}
+		#share-entry-fb-btn {
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			margin-left: 10px;
+		}
+		#share-entry-tw-btn {
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			margin-left: 10px;
+		}
+	}
+	@media (min-width: 1200px) {
+		width: 890px; 
+		height: 720px;
+		margin-left: -480px;
+		padding: 0 40px;
+		.modal-body {
+		    height: 620px;
+		    max-height: 620px;
+		}
+	}
+	@media (max-width: 1199px) and (min-width: 980px) {
+		width: 890px; 
+		height: 720px;
+		margin-left: -480px;
+		padding: 0 40px;
+		.modal-body {
+		    height: 620px;
+		    max-height: 620px;
+		}
+	}
+	@media (max-width: 979px) and (min-width: 768px) {
+		width: 680px; 
+		height: auto;
+		margin-left: -360px;
+		padding: 0 20px;
+		.modal-body {
+		    height: 620px;
+		    max-height: 920px;
+		}
+		.modal-share {
+			
+		}
+	}
+	@media (max-width: 767px) {
+		width: 90%; 
+		height: auto;
+		margin-left: 1%;
+		padding: 0;
+		.modal-body {
+		    height: 620px;
+		    max-height: 920px;
+		}
+		.modal-share {
+			bottom: 170px;
+		}
+	}
+}
+*/
+
 /* ------------------------------------------------------------------------- */
 /* -------------------------------- MEDIA QUERIES ------------------------- */
 /* ----------------------------------------------------------------------- */
@@ -1044,16 +1106,7 @@
 /* widescreen */
 @media (min-width: 1200px) {
 	
-	#entryModal {
-		width: 890px; 
-		height: 720px;
-		margin-left: -480px;
-		padding: 0 40px;
-		.modal-body {
-		    height: 620px;
-		    max-height: 620px;
-		}
-	}
+
 	
 	
 	.file-uploads { width: 520px;  }
@@ -1074,16 +1127,7 @@
 @media (max-width: 1199px) and (min-width: 980px) {
 	
 	
-	#entryModal {
-		width: 890px; 
-		height: 720px;
-		margin-left: -480px;
-		padding: 0 40px;
-		.modal-body {
-		    height: 620px;
-		    max-height: 620px;
-		}
-	}
+
 	
 	
 	
@@ -1104,21 +1148,7 @@
 /* tablet */
 @media (max-width: 979px) and (min-width: 768px) {
 	
-	
-	#entryModal {
-		width: 680px; 
-		height: auto;
-		margin-left: -360px;
-		padding: 0 20px;
-		.modal-body {
-		    height: 620px;
-		    max-height: 920px;
-		}
-		.modal-share {
-			
-		}
-	}
-	
+
 	
 	#diyDisastersComp2014 {
 		
@@ -1153,19 +1183,6 @@
 /* mobile */
 @media (max-width: 767px) {
 	
-	#entryModal {
-		width: 90%; 
-		height: auto;
-		margin-left: 1%;
-		padding: 0;
-		.modal-body {
-		    height: 620px;
-		    max-height: 920px;
-		}
-		.modal-share {
-			bottom: 170px;
-		}
-	}
 	
 	#diyDisastersComp2014 {
 		

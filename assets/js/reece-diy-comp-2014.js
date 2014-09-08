@@ -122,8 +122,12 @@ $(document).ready(function(){
 				$("#entryModal .modal-body").html("");
 				
 				// load prev item
-				$("#entryModal .modal-body").html(prev.innerHTML);
-				$("#entryModal .modal-body").css('background-image', prev.style.backgroundImage);
+				_this = $(prev);
+			$("#entryModal .entryPopTitle").html(_this.find('.caption h3').html());
+			$("#entryModal .entryPopDescription").html(_this.find('.caption p.fifty-words-description').html());
+
+
+				$("#entryModal .entryPopImage").css('background-image', prev.style.backgroundImage);
 				
 				// hide overview css
 				$("#entryModal .modal-body div.overlay").css('display', 'none');
@@ -151,8 +155,12 @@ $(document).ready(function(){
 				$("#entryModal .modal-body").html("");
 				
 				// load next item
-				$("#entryModal .modal-body").html(next.innerHTML);
-				$("#entryModal .modal-body").css('background-image', next.style.backgroundImage);
+				_this = $(next);
+
+			$("#entryModal .entryPopTitle").html(_this.find('.caption h3').html());
+			$("#entryModal .entryPopDescription").html(_this.find('.caption p.fifty-words-description').html());
+
+				$("#entryModal .entryPopImage").css('background-image', next.style.backgroundImage);
 				
 				// hide overview css
 				$("#entryModal .modal-body div.overlay").css('display', 'none');
@@ -190,13 +198,14 @@ $(document).ready(function(){
 			
 			// img
 			var imgSrc = _this.css('background-image');
-			$("#entryModal .modal-body").css('background-image', imgSrc);
+			$("#entryModal .entryPopImage").css('background-image', imgSrc);
+
 			
-			// get
-			var caption = _this.find('.caption').clone();
+
 			
 			// set
-			$("#entryModal .modal-body").html(caption);
+			$("#entryModal .entryPopTitle").html(_this.find('.caption h3').html());
+			$("#entryModal .entryPopDescription").html(_this.find('.caption p.fifty-words-description').html());
 			
 			// show
 			app.entryModal.modal('show');

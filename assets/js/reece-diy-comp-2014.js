@@ -33,6 +33,7 @@ $(document).ready(function(){
 		loadMoreEntriesBtn:				null,
 		moreItemsToLoad:				false,
 		moreItems:						null,
+		hashPrefix: 					"diyItem", 
 		
 		
 		
@@ -77,6 +78,9 @@ $(document).ready(function(){
 			// on init sort by most recent ie. item id descending - 
 			// - as this attritibute can be set to the items incrimental id in the database
 			app.entriesGrid.mixItUp({ load: { sort: 'item-id:desc' } });
+
+
+
 			
 			// load more items
 			if(app.moreItems.length > 0) 
@@ -99,13 +103,15 @@ $(document).ready(function(){
 			
 			// item click
 			$("#entries-grid a").on('click', function(e){ e.preventDefault(); app.showEntry($(this)); });
-			
+			app.checkHash();
+			$(window).on('hashchange',function(){
+				app.checkHash();
+			});
 			// sort
 			app.sortRecentBtn.on('click', function(e){ e.preventDefault(); });
 			app.sortViewedBtn.on('click', function(e){ e.preventDefault(); });
 
 			// modal item navigation
-			// $("ul").find("[data-slide='" + current + "']");
 			app.modalPrevBtn.on('click', function(e){ 
 				
 				e.preventDefault(); 
@@ -123,9 +129,9 @@ $(document).ready(function(){
 				
 				// load prev item
 				_this = $(prev);
-			$("#entryModal .entryPopTitle").html(_this.find('.caption h3').html());
-			$("#entryModal .entryPopDescription").html(_this.find('.caption p.fifty-words-description').html());
-
+				$("#entryModal .entryPopTitle").html(_this.find('.caption h3').html());
+				$("#entryModal .entryPopDescription").html(_this.find('.caption p.fifty-words-description').html());
+				location.hash = '#'+app.hashPrefix+_this.attr('data-item-id') ;
 
 				$("#entryModal .entryPopImage").css('background-image', prev.style.backgroundImage);
 				
@@ -150,16 +156,15 @@ $(document).ready(function(){
 				if(index == app.currentItemsArray.length - 1) next = app.currentItemsArray[ 0 ];
 				else next = app.currentItemsArray[ index + 1 ];
 				
-				
 				// clear modal
 				$("#entryModal .modal-body").html("");
 				
 				// load next item
 				_this = $(next);
 
-			$("#entryModal .entryPopTitle").html(_this.find('.caption h3').html());
-			$("#entryModal .entryPopDescription").html(_this.find('.caption p.fifty-words-description').html());
-
+				$("#entryModal .entryPopTitle").html(_this.find('.caption h3').html());
+				$("#entryModal .entryPopDescription").html(_this.find('.caption p.fifty-words-description').html());
+				location.hash = '#'+app.hashPrefix+_this.attr('data-item-id') ;
 				$("#entryModal .entryPopImage").css('background-image', next.style.backgroundImage);
 				
 				// hide overview css
@@ -207,11 +212,14 @@ $(document).ready(function(){
 			// show
 			app.entryModal.modal('show');
 		},
-		
-		
-		
-		
-		
+		checkHash: function(){
+				hashTag = location.hash.slice(1);
+				$('#entries-grid a').each(function(){
+					if(hashTag == app.hashPrefix+$(this).attr("data-item-id")){
+						$(this).click();
+					}
+				});
+			},
 		/*
 		 * @initEntryForm
 		 * init form functionality
@@ -409,6 +417,9 @@ $(document).ready(function(){
 				
 				// ok - ajax submit form
 				setTimeout(function(){
+					window.location = 'entries.html#diyItem7';
+					/*
+
 					clearInterval(intval);
 					app.formComplete = true;
 					// form loaded
@@ -427,8 +438,12 @@ $(document).ready(function(){
 						$("#entry-form-txt").html("SUCCESSFUL");
 						$("#upload-evidence-txt").html("UPLOADED EVIDENCE");
 						// share?
-						if(app.shareEntryToFB == true) { /* share to facebook */ }
-						if(app.shareEntryToTW == true) { /* share to twitter */ }
+						if(app.shareEntryToFB == true) {
+							// share to facebook 
+						}
+						if(app.shareEntryToTW == true) {
+							// share to twitter 
+						}
 					}
 					else
 					{
@@ -436,7 +451,7 @@ $(document).ready(function(){
 						$("#entry-form-txt").addClass("error-red").html("UNSUCCESSFUL");
 						$("#upload-evidence-txt").addClass("error-red").html("UNSUCCESSFUL UPLOADED");
 					}
-					$('html, body').animate({ scrollTop: 100 }, 1000);
+					$('html, body').animate({ scrollTop: 100 }, 1000); */
 					
 				}, 5000);
 				

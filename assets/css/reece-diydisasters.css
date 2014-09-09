@@ -112,7 +112,7 @@
   text-decoration: none;
 }
 #diyDisastersComp2014 h1 {
-  font-size: 70px;
+  font-size: 80px;
   line-height: 100%;
   color: #ffffff;
 }
@@ -281,6 +281,8 @@
   color: #ffffff;
   text-align: center;
   padding: 0 20px;
+  font-size: 90px;
+  letter-spacing: 1px;
 }
 #diyDisastersComp2014 .diy-content-home .row-2 .span12 {
   background-color: #ffffff;

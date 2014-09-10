@@ -1,0 +1,140 @@
+.clear {
+  clear: both;
+}
+/*==================================================*/
+.spring-header {
+  text-align: center;
+}
+.spring-header .header-wrap {
+  position: relative;
+}
+.spring-header .header-wrap .header-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 40%;
+}
+.spring-header .header-wrap .header-text h1 {
+  color: #FFFFFF;
+}
+.spring-header .header-wrap .header-text .launch-button {
+  background: #6cc3ba;
+  text-transform: uppercase;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.spring-header .header-wrap .header-text .launch-button a {
+  display: block;
+}
+.spring-header .header-wrap .header-text .launch-button a:hover {
+  text-decoration: none;
+}
+.spring-header .header-wrap .header-text .launch-button a .launch {
+  display: block;
+  color: #000000;
+}
+.spring-header .header-wrap .header-text .launch-button a .lookbook {
+  display: block;
+  color: #ffffff;
+}
+/*==================================================*/
+.spring-subscribe {
+  background: #000000;
+  color: #ffffff;
+}
+/*==================================================*/
+.spring-intro {
+  background: #f26d63;
+}
+.spring-intro .title {
+  text-align: center;
+}
+.spring-intro .title h2 {
+  color: #FFFFFF;
+}
+.spring-intro .intro {
+  text-align: left;
+  color: #000000;
+}
+/*==================================================*/
+.spring-items {
+  text-align: center;
+}
+.spring-items .image-box,
+.spring-items .text-box {
+  width: 50%;
+  padding: 10px 0;
+}
+.spring-items .text-box .text-wrap {
+  padding: 20px 40px;
+}
+.spring-items .text-box .text-wrap a {
+  padding: 5px 20px;
+  text-decoration: none;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.spring-items .text-box .text-wrap a.box-link1 {
+  background-color: #444444;
+}
+.spring-items .text-box .text-wrap a.box-link2 {
+  background-color: #6cc3ba;
+}
+.spring-items .text-box .text-wrap a.box-link3 {
+  background-color: #ba9765;
+}
+.spring-items .text-box .text-wrap a.box-link4 {
+  background-color: #b493b1;
+}
+.spring-items.image-left .image-box {
+  float: left;
+}
+.spring-items.image-left .text-box {
+  float: right;
+}
+.spring-items.image-right .image-box {
+  float: right;
+}
+.spring-items.image-right .text-box {
+  float: left;
+}
+/*==================================================*/
+#spring-modal {
+  left: 10%;
+  width: 80%;
+  margin-left: 0;
+  text-align: center;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+#spring-modal .top-section .main-modal-image {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#spring-modal .top-section .main-modal-image .popup-image {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 650px;
+}
+#spring-modal .top-section .main-modal-image .close {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#spring-modal .top-section .main-modal-image .close img {
+  width: 40px;
+}
+#spring-modal .middle-section {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#spring-modal .bottom-section {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}

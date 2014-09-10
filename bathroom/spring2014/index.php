@@ -64,17 +64,19 @@
 					    			<div class="subscribe-wrap">
 						    			<label>Subscribe for updates</label>
 
-						    			<input type="text" name="name" placeholder="Name">
+						    			<input class="h-name" type="text" name="name" placeholder="Name">
 
-						    			<input type="email" name="email" placeholder="Email">
+						    			<input  class="h-email" type="email" name="email" placeholder="Email">
 
-						    			<input type="text" name="postcode" placeholder="Postcode">
+						    			<input  class="h-postcode" type="text" name="postcode" placeholder="Postcode">
 
-						    			<input type="submit" name="submit">
+						    			<input  class="h-submit" type="submit" name="submit">
+						    			<div class="clear"></div>
 						    		</div>
 
 
-					    		</form>				    		
+					    		</form>	
+					    		<div class="clear"></div>			    		
 					    	</div>
 					    </div>
 					</section>	
@@ -110,7 +112,7 @@
 						    	<div class="text-box"><div class="text-wrap">
 						    		<h3>The 7 steps to bathroom happiness</h3>
 						    			<p>There is no better time to begin creating your new bathroom than in Spring. To help you along the journey to new bathroom happiness, we&rsquo;ve put together a collection of tips and inspiration.</p>
-						    			<a href="#" class="box-link1">Learn more</a>
+						    			<a href="http://mag.reece.com.au/spring/3" class="box-link1">Learn more</a>
 						    	</div></div>
 						    	<div class="clear"></div>
 					    	</div>
@@ -127,7 +129,7 @@
 						    	<div class="text-box"><div class="text-wrap">
 						    		<h3>Latest Trends</h3>
 					    			<p>Economy of colour &amp; clean lines help minimise to create clarity and space.</p>
-					    			<a href="#" class="box-link2">Explore</a>
+					    			<a href="http://mag.reece.com.au/spring/4" class="box-link2">Explore</a>
 						    	</div></div>
 						    	<div class="clear"></div>
 					    	</div>
@@ -144,7 +146,7 @@
 						    	<div class="text-box"><div class="text-wrap">
 									<h3>Mini Makeover</h3>
 					    			<p>This Spring, you can create a new look and feel for your bathroom without a major renovation. Our design experts show you how with these clever mini makeovers.</p>
-					    			<a href="#" class="box-link3">Refresh</a>
+					    			<a href="http://mag.reece.com.au/spring/8" class="box-link3">Refresh</a>
 						    	</div></div>
 						    	<div class="clear"></div>
 					    	</div>
@@ -161,7 +163,7 @@
 						    	<div class="text-box"><div class="text-wrap">
 						    		<h3>Easy updates</h3>
 					    			<p>Our collection of hand picked must-have products can inject new life in your bathroom this Spring. A little change can make a big impact. </p>
-					    			<a href="#" class="box-link4">Refresh</a>
+					    			<a href="http://mag.reece.com.au/spring/7" class="box-link4">Refresh</a>
 						    	</div></div>
 						    	<div class="clear"></div>
 					    	</div>
@@ -242,13 +244,13 @@
 			<form>
     			
 
-    			<input type="text" name="name" placeholder="Name">
+    			<input class="m-name" type="text" name="name" placeholder="Name">
 
-    			<input type="email" name="email" placeholder="Email">
+    			<input class="m-email" type="email" name="email" placeholder="Email">
 
-    			<input type="text" name="postcode" placeholder="Postcode"><br />
+    			<input class="m-postcode" type="text" name="postcode" placeholder="Postcode"><br />
 
-    			<input type="submit" name="submit">
+    			<input class="m-submit" type="submit" name="submit">
 
 
     		</form>	

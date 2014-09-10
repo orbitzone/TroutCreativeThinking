@@ -16,11 +16,29 @@
 }
 .spring-header .header-wrap .header-text h1 {
   color: #FFFFFF;
+  font-size: 80px;
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .spring-header .header-wrap .header-text h1 {
+    font-size: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .spring-header .header-wrap .header-text h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .spring-header .header-wrap .header-text h1 {
+    font-size: 25px;
+  }
 }
 .spring-header .header-wrap .header-text .launch-button {
   background: #6cc3ba;
   text-transform: uppercase;
   width: 200px;
+  padding: 10px;
+  margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -33,19 +51,144 @@
 .spring-header .header-wrap .header-text .launch-button a .launch {
   display: block;
   color: #000000;
+  font-size: 30px;
+  line-height: 1.2em;
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .spring-header .header-wrap .header-text .launch-button a .launch {
+    font-size: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .spring-header .header-wrap .header-text .launch-button a .launch {
+    font-size: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .spring-header .header-wrap .header-text .launch-button a .launch {
+    font-size: 15px;
+  }
 }
 .spring-header .header-wrap .header-text .launch-button a .lookbook {
   display: block;
   color: #ffffff;
+  font-size: 18px;
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .spring-header .header-wrap .header-text .launch-button a .lookbook {
+    font-size: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .spring-header .header-wrap .header-text .launch-button a .lookbook {
+    font-size: 13px;
+  }
+}
+@media (max-width: 480px) {
+  .spring-header .header-wrap .header-text .launch-button a .lookbook {
+    font-size: 12px;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .spring-header .header-wrap .header-text {
+    top: 30%;
+  }
+}
+@media (max-width: 767px) {
+  .spring-header .header-wrap .header-text {
+    top: 15%;
+  }
+}
+@media (max-width: 480px) {
+  .spring-header .header-wrap .header-text {
+    top: 5%;
+  }
 }
 /*==================================================*/
 .spring-subscribe {
   background: #000000;
   color: #ffffff;
+  text-align: center;
+}
+.spring-subscribe form {
+  margin-bottom: 0;
+}
+.spring-subscribe input[type="submit"] {
+  background: #FFFFFF;
+  border: 0;
+  padding: 6px 30px;
+  margin: 20px;
+  color: #000000;
+}
+.spring-subscribe input[type="text"],
+.spring-subscribe input[type="email"] {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  border: solid #FFFFFF 1px;
+  background-color: #000000;
+  margin: 5px;
+}
+.spring-subscribe .subscribe-wrap {
+  max-width: 800px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.spring-subscribe .subscribe-wrap label,
+.spring-subscribe .subscribe-wrap input {
+  float: left;
+}
+.spring-subscribe .subscribe-wrap label {
+  line-height: 40px;
+}
+@media (max-width: 767px) {
+  .spring-subscribe .subscribe-wrap label {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) and (max-width: 767px) {
+  .spring-subscribe .subscribe-wrap label {
+    float: none;
+  }
+}
+.spring-subscribe .subscribe-wrap .h-name,
+.spring-subscribe .subscribe-wrap .h-email {
+  max-width: 170px;
+}
+@media (max-width: 767px) {
+  .spring-subscribe .subscribe-wrap .h-name,
+  .spring-subscribe .subscribe-wrap .h-email {
+    max-width: 170px;
+    float: none;
+  }
+}
+.spring-subscribe .subscribe-wrap .h-postcode,
+.spring-subscribe .subscribe-wrap .h-submit {
+  max-width: 100px;
+}
+@media (max-width: 767px) {
+  .spring-subscribe .subscribe-wrap .h-postcode,
+  .spring-subscribe .subscribe-wrap .h-submit {
+    max-width: 170px;
+    float: none;
+  }
+}
+.spring-subscribe .subscribe-wrap .h-submit {
+  margin: 4px;
+}
+@media (max-width: 767px) {
+  .spring-subscribe .subscribe-wrap .h-submit {
+    max-width: 170px;
+    float: none;
+  }
 }
 /*==================================================*/
 .spring-intro {
   background: #f26d63;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .spring-intro .title {
   text-align: center;
@@ -65,6 +208,19 @@
 .spring-items .text-box {
   width: 50%;
   padding: 10px 0;
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  
+}
+@media (max-width: 767px) {
+  .spring-items .image-box,
+  .spring-items .text-box {
+    display: block;
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  
 }
 .spring-items .text-box .text-wrap {
   padding: 20px 40px;
@@ -130,11 +286,56 @@
 }
 #spring-modal .middle-section {
   max-width: 800px;
+  padding: 40px;
   margin-left: auto;
   margin-right: auto;
+}
+#spring-modal .middle-section h2 {
+  font-size: 60px;
+}
+@media (max-width: 767px) {
+  #spring-modal .middle-section h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 480px) {
+  #spring-modal .middle-section h2 {
+    font-size: 25px;
+  }
+}
+#spring-modal .middle-section p {
+  margin-top: 30px;
 }
 #spring-modal .bottom-section {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+}
+#spring-modal .bottom-section input[type="submit"] {
+  background: #6cc3ba;
+  border: 0;
+  padding: 6px 30px;
+  margin: 20px;
+  color: #ffffff;
+}
+#spring-modal .bottom-section input[type="text"],
+#spring-modal .bottom-section input[type="email"] {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  border: solid #000000 1px;
+}
+#spring-modal .bottom-section .m-name,
+#spring-modal .bottom-section .m-email {
+  max-width: 230px;
+}
+#spring-modal .bottom-section .m-postcode,
+#spring-modal .bottom-section .m-submit {
+  max-width: 100px;
+}
+@media (max-width: 767px) {
+  #spring-modal .bottom-section .m-postcode,
+  #spring-modal .bottom-section .m-submit {
+    max-width: 230px;
+  }
 }

@@ -4,6 +4,7 @@
 /*==================================================*/
 .spring-header{
 	text-align: center;
+
 	.header-wrap{
 		position:relative;
 		.header-text{
@@ -11,13 +12,28 @@
 			left:0;
 			right:0;
 			top:40%;
+
 			h1{
 				color: #FFFFFF;
+				font-size:80px;
+				@media (min-width: 768px) and (max-width: 979px) {
+					font-size: 60px;
+				}
+				@media (max-width: 767px) { 
+					font-size: 40px;
+				}
+				@media (max-width: 480px) { 
+					font-size: 25px;
+				}
 			}
 			.launch-button{
 				background: #6cc3ba;
 				text-transform: uppercase;
 				width: 200px;
+				padding:10px;
+				margin-top: 40px;
+
+
 
 				margin-left:auto;
 				margin-right:auto;
@@ -31,13 +47,43 @@
 					.launch{
 						display:block;
 						color: #000000;
+						font-size: 30px;
+						line-height: 1.2em;
+						@media (min-width: 768px) and (max-width: 979px) {
+							font-size: 25px;
+						}
+						@media (max-width: 767px) { 
+							font-size: 20px;
+						}
+						@media (max-width: 480px) { 
+							font-size: 15px;
+						}
 
 					}
 					.lookbook{
 						display:block;
 						color:#ffffff;
+						font-size:18px;
+						@media (min-width: 768px) and (max-width: 979px) {
+							font-size: 15px;
+						}
+						@media (max-width: 767px) { 
+							font-size: 13px;
+						}
+						@media (max-width: 480px) { 
+							font-size: 12px;
+						}
 					}
 				}
+			}
+			@media (min-width: 768px) and (max-width: 979px) {
+				top:30%;
+			}
+			@media (max-width: 767px) { 
+				top:15%;
+			}
+			@media (max-width: 480px) { 
+				top:5%;
 			}
 
 		}
@@ -53,12 +99,83 @@
 .spring-subscribe{
 	background: #000000;
 	color:#ffffff;
+	text-align: center;
+	
+	form{
+		margin-bottom:0;
+	}
+
+	input[type="submit"]{
+		background:#FFFFFF;
+		border:0;
+		padding:6px 30px;
+		margin:20px;
+		color:#000000;
+	}
+
+	input[type="text"],input[type="email"]{
+		-webkit-border-radius: 0px;
+		-moz-border-radius: 0px;
+		border-radius: 0px;
+		border:solid #FFFFFF 1px;
+		background-color: #000000;
+		margin:5px;
+	}
+	.subscribe-wrap{
+		max-width: 800px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+
+		margin-left:auto;
+		margin-right:auto;
+
+		label,input{
+			float:left;
+		}
+
+		label{
+			line-height: 40px;
+			@media (max-width: 767px) { 
+				width:100%;
+			@media (max-width: 767px) { 
+				
+				float:none;
+			}
+			}
+		}
+		.h-name,.h-email{
+			max-width:170px;
+			@media (max-width: 767px) { 
+				max-width:170px;
+				float:none;
+			}
+		}
+
+		.h-postcode,.h-submit{
+			max-width:100px;
+			@media (max-width: 767px) { 
+				max-width:170px;
+				float:none;
+			}
+		}
+		.h-submit{
+			margin: 4px;
+			@media (max-width: 767px) { 
+				max-width:170px;
+				float:none;
+
+			}
+		}
+
+	}
 }
 
 
 /*==================================================*/
 .spring-intro{
 	background: #f26d63;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	
 	.title{
 		text-align: center;
@@ -82,6 +199,20 @@
 	.image-box,.text-box{
 		width:50%;
 		padding:10px 0;
+
+
+			@media (min-width: 768px) and (max-width: 979px) {
+
+			}
+			@media (max-width: 767px) { 
+				display:block;
+				width:100%;
+			}
+			@media (max-width: 480px) { 
+				
+			}
+
+
 	}
 	.text-box{
 		.text-wrap{
@@ -153,8 +284,21 @@
 
 	.middle-section{
 		max-width: 800px;
+		padding:40px;
 		margin-left:auto;
 		margin-right: auto;
+		h2{
+			font-size: 60px;
+			@media (max-width: 767px) { 
+				font-size: 40px;
+			}
+			@media (max-width: 480px) { 
+				font-size: 25px;
+			}
+		}
+		p{
+			margin-top: 30px;
+		}
 
 	}
 
@@ -162,6 +306,33 @@
 		max-width: 800px;
 		margin-left:auto;
 		margin-right: auto;
+
+		input[type="submit"]{
+			background:#6cc3ba;
+			border:0;
+			padding:6px 30px;
+			margin:20px;
+			color:#ffffff;
+		}
+
+		input[type="text"],input[type="email"]{
+			-webkit-border-radius: 0px;
+			-moz-border-radius: 0px;
+			border-radius: 0px;
+			border:solid #000000 1px;
+		}
+
+		.m-name,.m-email{
+			max-width:230px;
+		}
+
+		.m-postcode,.m-submit{
+			max-width:100px;
+			@media (max-width: 767px) { 
+				max-width:230px;
+			}
+		}
+
 
 	}
 

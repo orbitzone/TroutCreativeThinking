@@ -33,6 +33,16 @@
 				padding:10px;
 				margin-top: 40px;
 
+				@media (min-width: 768px) and (max-width: 979px) {
+					margin-top: 30px;
+				}
+				@media (max-width: 767px) { 
+					margin-top: 20px;
+				}
+				@media (max-width: 480px) { 
+					margin-top: 10px;
+				}
+
 
 
 				margin-left:auto;
@@ -135,12 +145,12 @@
 
 		label{
 			line-height: 40px;
-			@media (max-width: 767px) { 
-				width:100%;
-			@media (max-width: 767px) { 
-				
-				float:none;
-			}
+				@media (max-width: 767px) { 
+					width:100%;
+				@media (max-width: 767px) { 
+					
+					float:none;
+				}
 			}
 		}
 		.h-name,.h-email{
@@ -161,10 +171,12 @@
 		.h-submit{
 			margin: 4px;
 			@media (max-width: 767px) { 
-				max-width:170px;
+				max-width:185px;
 				float:none;
+				width:100%;
 
 			}
+
 		}
 
 	}

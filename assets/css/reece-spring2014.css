@@ -42,6 +42,21 @@
   margin-left: auto;
   margin-right: auto;
 }
+@media (min-width: 768px) and (max-width: 979px) {
+  .spring-header .header-wrap .header-text .launch-button {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .spring-header .header-wrap .header-text .launch-button {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .spring-header .header-wrap .header-text .launch-button {
+    margin-top: 10px;
+  }
+}
 .spring-header .header-wrap .header-text .launch-button a {
   display: block;
 }
@@ -180,8 +195,9 @@
 }
 @media (max-width: 767px) {
   .spring-subscribe .subscribe-wrap .h-submit {
-    max-width: 170px;
+    max-width: 185px;
     float: none;
+    width: 100%;
   }
 }
 /*==================================================*/

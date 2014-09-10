@@ -3,6 +3,7 @@
 }
 /*==================================================*/
 .spring-header {
+  background: #000000;
   text-align: center;
 }
 .spring-header .header-wrap {
@@ -116,7 +117,8 @@
 }
 @media (max-width: 480px) {
   .spring-header .header-wrap .header-text {
-    top: 5%;
+    top: 0;
+    position: relative;
   }
 }
 /*==================================================*/
@@ -155,16 +157,18 @@
 .spring-subscribe .subscribe-wrap input {
   float: left;
 }
+@media (min-width: 768px) and (max-width: 979px) {
+  .spring-subscribe .subscribe-wrap label,
+  .spring-subscribe .subscribe-wrap input {
+    float: none;
+  }
+}
 .spring-subscribe .subscribe-wrap label {
   line-height: 40px;
 }
 @media (max-width: 767px) {
   .spring-subscribe .subscribe-wrap label {
     width: 100%;
-  }
-}
-@media (max-width: 767px) and (max-width: 767px) {
-  .spring-subscribe .subscribe-wrap label {
     float: none;
   }
 }
@@ -203,17 +207,15 @@
 /*==================================================*/
 .spring-intro {
   background: #f26d63;
-  padding-top: 30px;
-  padding-bottom: 30px;
 }
-.spring-intro .title {
+.spring-intro .intro-wrap {
   text-align: center;
+  padding: 60px 10%;
 }
-.spring-intro .title h2 {
+.spring-intro .intro-wrap h2 {
   color: #FFFFFF;
 }
-.spring-intro .intro {
-  text-align: left;
+.spring-intro .intro-wrap p {
   color: #000000;
 }
 /*==================================================*/

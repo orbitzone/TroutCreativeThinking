@@ -88,15 +88,12 @@
 
 
 			    	<section class="spring-intro container">
-			    		<section class="row-fluid title">
+			    		<section class="row-fluid intro">
 					    	<div class="span10 offset1">
-								<h2>Renovate. Refresh. Rejoice.</h2>
-					    	</div>
-					    </section>
-					    
-					    <section class="row-fluid intro">
-					    	<div class="span10 offset1">
-					    		<p>There is no better time to begin creating your new bathroom than in Spring. To help you along the journey to new bathroom happiness, we&rsquo;ve put together a collection of tips and inspiration.</p>
+					    		<div class="intro-wrap">
+									<h2>Renovate. Refresh. Rejoice.</h2>
+									<p>There is no better time to begin creating your new bathroom than in Spring. To help you along the journey to new bathroom happiness, we&rsquo;ve put together a collection of tips and inspiration.</p>
+								</div>
 					    	</div>
 					    </section>
 					</section>	

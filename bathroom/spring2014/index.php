@@ -202,7 +202,7 @@
 		  <div class="middle-section">
 		    <h2>The Spring <span>Bathroom</span></h2>
 		    <p>
-			Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo.
+			The Spring Bathroom is all about the latest bathroom tips and trends for creating bathroom happiness. If you’ve like to receive ongoing inspiration, simply provide your details below. 
 		    </p>
 		  </div>
 		  <div class="bottom-section">

@@ -55,14 +55,14 @@
 					    		<div id="subscribe-box">
 					    			<div class="subscribe-wrap">
 
-										<form action="//reece.us1.list-manage.com/subscribe/post" method="post" id="headerMailChimpForm" class="validate mailChimpForm" target="_blank">
+										<form action="//reece.us1.list-manage.com/subscribe/post" method="post" id="headerMailChimpForm" class="mailChimpForm" target="_blank">
 											<div class="mailchimpAjaxMessage"></div>
 											<label>Subscribe for updates</label>
 											<input type="hidden" name="u" value="a0d3b256272508540d2350917">
 											<input type="hidden" name="id" value="f4d330c031">
-											<input type="text" value="" name="FNAME" class="h-name" id="mce-FNAME" placeholder="Name" required>
-											<input type="email" value="" name="EMAIL" class="email h-email" id="mce-EMAIL" placeholder="Email" required>
-											<input type="number" name="POSTCODE" class="h-postcode" value="" id="mce-POSTCODE" placeholder="Postcode" required>
+											<input type="text" value="" name="FNAME" class="h-name" placeholder="Name">
+											<input type="email" value="" name="EMAIL" class="email h-email" placeholder="Email">
+											<input type="number" name="POSTCODE" class="h-postcode" value="" placeholder="Postcode">
 										
 											   <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 										    <div style="position: absolute; left: -5000px;"><input type="text" name="b_a0d3b256272508540d2350917_f4d330c031" tabindex="-1" value=""></div>
@@ -207,13 +207,13 @@
 		  </div>
 		  <div class="bottom-section">
 
-			<form action="//reece.us1.list-manage.com/subscribe/post" method="post" id="poupMailchimpForm" class="validate mailChimpForm">
+			<form action="//reece.us1.list-manage.com/subscribe/post" method="post" id="poupMailchimpForm" class="mailChimpForm" novalidate>
 				<div class="mailchimpAjaxMessage"></div>
 				<input type="hidden" name="u" value="a0d3b256272508540d2350917">
 				<input type="hidden" name="id" value="f4d330c031">
-				<input type="text" value="" name="FNAME" class="m-name" id="mce-FNAME" placeholder="Name" required>
-				<input type="email" value="" name="EMAIL" class="required email m-email" id="mce-EMAIL" placeholder="Email" required>
-				<input type="number" name="POSTCODE" class="m-postcode" value="" id="mce-POSTCODE" placeholder="Postcode" required>
+				<input type="text" value="" name="FNAME" class="m-name" placeholder="Name">
+				<input type="email" value="" name="EMAIL" class="required email m-email" placeholder="Email" required>
+				<input type="number" name="POSTCODE" class="m-postcode" value="" placeholder="Postcode">
 				   <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 			    <div style="position: absolute; left: -5000px;"><input type="text" name="b_a0d3b256272508540d2350917_f4d330c031" tabindex="-1" value=""></div>
 				<br />
@@ -261,33 +261,49 @@
 						e.preventDefault();
 						mailChimpForm = $(this);
 						mailChimpURL = mailChimpForm.attr('action');
+						isFormValid = false;
+
 						formData = mailChimpForm.serialize();
-						$.getJSON(mailChimpURL+'-json?c=?',formData,function(data){
-							if (data.result == 'success'){
-								// handle Success
-								mailChimpForm.find('.mailchimpAjaxMessage').html('<p class="successMessage">'+data.msg+'</p>');
-								if($('#spring-modal').data().modal.isShown){
-									$('#headerSpringSubscribe').hide();
-									setTimeout(function(){$('#spring-modal').modal('hide')},5000);
-								}
-								else{
-									setTimeout(function(){$('#headerSpringSubscribe').fadeOut()},5000);
-								}
-								localStorage.springSubscribed = 1;
-							}
-							else if ( data.result == 'error'){
-								// handle error
-								mailchimpError = '';
-								if (data.msg.indexOf('-') > -1){
-									mailchimpError = data.msg.split(' - ', 2)[1];
-								}
-								else{
-									mailchimpError = data.msg;
-								}
-								mailChimpForm.find('.mailchimpAjaxMessage').html('<p class="errorMessage">'+mailchimpError+'</p>');
-								setTimeout(function(){mailChimpForm.find('.mailchimpAjaxMessage').html('');},5000);
+						mailChimpForm.find("*[required]").each(function(){
+							if ( $.trim($(this).val()) == ""){
+								isFormValid = false;
+								console.log('invalid '+$(this).attr('placeholder'));
 							}
 						});
+						mailChimpForm.find('[type="email"]').each(function() {
+							if (!$(this).val().match(/[-0-9a-zA-Z.+_]+@[-0-9a-zA-Z.+_]+\.[a-zA-Z]{2,4}/)){
+								isFormValid = false;
+								console.log('invalid email')
+							}
+						});
+						if (isFormValid){
+							$.getJSON(mailChimpURL+'-json?c=?',formData,function(data){
+								if (data.result == 'success'){
+									// handle Success
+									mailChimpForm.find('.mailchimpAjaxMessage').html('<p class="successMessage">'+data.msg+'</p>');
+									if($('#spring-modal').data().modal.isShown){
+										$('#headerSpringSubscribe').hide();
+										setTimeout(function(){$('#spring-modal').modal('hide')},5000);
+									}
+									else{
+										setTimeout(function(){$('#headerSpringSubscribe').fadeOut()},5000);
+									}
+									localStorage.springSubscribed = 1;
+								}
+								else if ( data.result == 'error'){
+									// handle error
+									mailchimpError = '';
+									if (data.msg.indexOf('-') > -1){
+										mailchimpError = data.msg.split(' - ', 2)[1];
+									}
+									else{
+										mailchimpError = data.msg;
+									}
+									mailChimpForm.find('.mailchimpAjaxMessage').html('<p class="errorMessage">'+mailchimpError+'</p>');
+									setTimeout(function(){mailChimpForm.find('.mailchimpAjaxMessage').html('');},5000);
+								}
+							});
+						}
 					});
 					
 				});

@@ -25,9 +25,8 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-* {
-  /*outline: #000000 dotted 1px;*/
-
+.spring2014 {
+  font-family: springBodyFont;
 }
 .spring2014 .clear {
   clear: both;

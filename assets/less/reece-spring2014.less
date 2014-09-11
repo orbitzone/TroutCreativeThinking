@@ -1,4 +1,430 @@
+*{
+	outline: #000000 dotted 1px;
+}
+
 .spring2014{
 
 
+	.clear{
+		clear:both;
+	}
+
+	h1,h2,h3,h4,h5,h6{
+		font-family: "adobe-caslon-pro",serif;
+		span{
+			font-style: italic;
+		}
+	}
+
 }
+
+
+/*==================================================*/
+.spring-header{
+	background:#000000;
+	text-align: center;
+
+	.header-wrap{
+		position:relative;
+		.header-text{
+			position:absolute;
+			left:0;
+			right:0;
+			top:40%;
+
+			h1{
+				color: #FFFFFF;
+				font-size:80px;
+				@media (min-width: 768px) and (max-width: 979px) {
+					font-size: 60px;
+				}
+				@media (max-width: 767px) { 
+					font-size: 40px;
+				}
+				@media (max-width: 480px) { 
+					font-size: 25px;
+				}
+			}
+			.launch-button{
+				background: #6cc3ba;
+				text-transform: uppercase;
+				width: 200px;
+				padding:10px;
+				margin-top: 40px;
+
+				@media (min-width: 768px) and (max-width: 979px) {
+					margin-top: 30px;
+				}
+				@media (max-width: 767px) { 
+					margin-top: 20px;
+				}
+				@media (max-width: 480px) { 
+					margin-top: 10px;
+				}
+
+
+
+				margin-left:auto;
+				margin-right:auto;
+
+				a {
+					display: block;
+					&:hover{
+						text-decoration: none;
+					}
+					
+					.launch{
+						display:block;
+						color: #000000;
+						font-size: 30px;
+						line-height: 1.2em;
+						@media (min-width: 768px) and (max-width: 979px) {
+							font-size: 25px;
+						}
+						@media (max-width: 767px) { 
+							font-size: 20px;
+						}
+						@media (max-width: 480px) { 
+							font-size: 15px;
+						}
+
+					}
+					.lookbook{
+						display:block;
+						color:#ffffff;
+						font-size:18px;
+						@media (min-width: 768px) and (max-width: 979px) {
+							font-size: 15px;
+						}
+						@media (max-width: 767px) { 
+							font-size: 13px;
+						}
+						@media (max-width: 480px) { 
+							font-size: 12px;
+						}
+					}
+				}
+			}
+			@media (min-width: 768px) and (max-width: 979px) {
+				top:30%;
+			}
+			@media (max-width: 767px) { 
+				top:15%;
+			}
+			@media (max-width: 480px) { 
+				top:0;
+				position:relative;
+			}
+
+		}
+	}
+
+
+
+
+
+
+}
+/*==================================================*/
+.spring-subscribe{
+	background: #000000;
+	color:#ffffff;
+	text-align: center;
+	
+	form{
+		margin-bottom:0;
+	}
+
+	input[type="submit"]{
+		background:#FFFFFF;
+		border:0;
+		padding:6px 30px;
+		margin:20px;
+		color:#000000;
+	}
+
+	input[type="text"],input[type="email"]{
+		-webkit-border-radius: 0px;
+		-moz-border-radius: 0px;
+		border-radius: 0px;
+		border:solid #FFFFFF 1px;
+		background-color: #000000;
+		margin:5px;
+	}
+	.subscribe-wrap{
+		max-width: 800px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+
+		margin-left:auto;
+		margin-right:auto;
+
+		label,input{
+			float:left;
+			@media (min-width: 768px) and (max-width: 979px) {
+				float:none;
+			}
+		}
+
+		label{
+			line-height: 40px;
+
+			@media (max-width: 767px) { 
+				width:100%;
+				float:none;
+			}
+		}
+		.h-name,.h-email{
+			max-width:170px;
+			@media (max-width: 767px) { 
+				max-width:170px;
+				float:none;
+			}
+		}
+
+		.h-postcode,.h-submit{
+			max-width:100px;
+			@media (max-width: 767px) { 
+				max-width:170px;
+				float:none;
+			}
+		}
+		.h-submit{
+			margin: 4px;
+			@media (max-width: 767px) { 
+				max-width:185px;
+				float:none;
+				width:100%;
+
+			}
+
+		}
+
+	}
+}
+
+
+/*==================================================*/
+.spring-intro{
+	background: #f26d63;
+
+	.intro-wrap{
+		text-align: center;
+		padding: 40px 10%;
+		h2{
+			color:#FFFFFF;
+
+		}
+		p{
+			color:#000000;
+
+		}
+	}
+
+}
+
+/*==================================================*/
+.spring-items{
+	text-align: center;
+	padding: 10px 0;
+	.image-box,.text-box{
+		width:50%;
+		
+		@media (min-width: 768px) and (max-width: 979px) {
+
+		}
+		@media (max-width: 767px) { 
+			display:block;
+			width:100%;
+		}
+		@media (max-width: 480px) { 
+			
+		}
+
+
+	}
+	.text-box{
+		.text-wrap{
+			padding:20px 40px;
+
+			a{padding:5px 20px;text-decoration: none;color:#FFFFFF;text-transform: uppercase;}
+			a.box-link1{background-color: #444444;}
+			a.box-link2{background-color: #6cc3ba;}
+			a.box-link3{background-color: #ba9765;}
+			a.box-link4{background-color: #b493b1;}
+			h3{
+				font-size: 39px;
+				@media (min-width: 768px) and (max-width: 979px) { 
+					font-size: 34px;
+				}
+				 
+				@media (max-width: 767px) { 
+					font-size: 29px;
+				}
+				 
+				@media (max-width: 480px) { 
+					font-size: 24px;
+				}
+			}
+		}
+	}
+	.image-box{
+		
+		@media (min-width: 768px) and (max-width: 979px) { 
+			padding: 10px 0;
+		}
+	}
+
+
+	&.image-left{
+		.image-box{
+			float:left;
+		}
+		.text-box{
+			float:right;
+		}
+
+	}
+	&.image-right{
+		.image-box{
+			float:right;
+		}
+		.text-box{
+			float:left;
+		}
+
+	}
+
+}
+/*==================================================*/
+#spring-modal{
+	left:10%;
+	width:80%;
+	margin-left:0;
+	text-align: center;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+
+	.top-section{
+		.main-modal-image{
+			position:relative;
+			top: 0;
+			left: 0;
+			right: 0;
+			
+			.popup-image{
+				margin-left:auto;
+				margin-right:auto;
+				max-width: 650px;
+			}
+			.close{
+				position:absolute;
+				right:0;
+				top:0;
+				img{
+					width:40px;
+				}
+			}
+
+
+		}
+	}
+
+	.middle-section{
+		max-width: 800px;
+		padding:40px;
+		margin-left:auto;
+		margin-right: auto;
+		h2{
+			font-size: 60px;
+			@media (max-width: 767px) { 
+				font-size: 40px;
+			}
+			@media (max-width: 480px) { 
+				font-size: 25px;
+			}
+		}
+		p{
+			margin-top: 30px;
+		}
+
+	}
+
+	.bottom-section{
+		max-width: 800px;
+		padding-left: 10%;
+		padding-right: 10%;
+		margin-left:auto;
+		margin-right: auto;
+
+		input[type="submit"]{
+			background:#6cc3ba;
+			border:0;
+			padding:6px 30px;
+			margin:20px;
+			color:#ffffff;
+		}
+
+		input[type="text"],input[type="email"]{
+			-webkit-border-radius: 0px;
+			-moz-border-radius: 0px;
+			border-radius: 0px;
+			border:solid #000000 1px;
+		}
+
+		.m-name,.m-email{
+			max-width:180px;
+			width:180px;
+			@media (max-width: 480px) { 
+				max-width:80%;
+			}
+		}
+
+		.m-postcode,.m-submit{
+			max-width:100px;
+
+
+		}
+
+
+	}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

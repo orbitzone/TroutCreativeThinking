@@ -6,35 +6,26 @@
 @import "reece-variables.less";
 @import "reece-mixins.less";
 
-
-
 @springHeaderFont : "freight-big-pro",serif;
 @springBodyFont: "proxima-nova",sans-serif;
 
 .spring2014{
-	font-family: springBodyFont;
-
-
+	font-family: @springBodyFont;
 	.clear{
 		clear:both;
 	}
-
 	h1,h2,h3,h4,h5,h6{
 		font-family: @springHeaderFont;
 		span{
 			font-style: italic;
 		}
 	}
-
 }
-
 
 /*==================================================*/
 .spring-header{
 	background:#000000;
 	text-align: center;
-
-
 	.header-wrap{
 		position:relative;
 		.header-text{
@@ -42,7 +33,6 @@
 			left:0;
 			right:0;
 			top:40%;
-
 			h1{
 				color: #FFFFFF;
 				font-size:80px;
@@ -50,10 +40,10 @@
 					font-size: 60px;
 				}
 				@media (max-width: 767px) { 
-					font-size: 40px;
+					font-size: 50px;
 				}
 				@media (max-width: 480px) { 
-					font-size: 25px;
+					font-size: 40px;
 				}
 			}
 			.launch-button{
@@ -72,18 +62,13 @@
 				@media (max-width: 480px) { 
 					margin-top: 10px;
 				}
-
-
-
 				margin-left:auto;
 				margin-right:auto;
-
 				a {
 					display: block;
 					&:hover{
 						text-decoration: none;
 					}
-					
 					.launch{
 						display:block;
 						color: #000000;
@@ -98,7 +83,6 @@
 						@media (max-width: 480px) { 
 							font-size: 15px;
 						}
-
 					}
 					.lookbook{
 						display:block;
@@ -129,23 +113,25 @@
 
 		}
 	}
-
-
-
-
-
-
 }
 /*==================================================*/
 .spring-subscribe{
 	background: #000000;
 	color:#ffffff;
 	text-align: center;
-	
 	form{
 		margin-bottom:0;
+		.hgroup{
+			display:inline-block;
+			.required-input{
+				text-align: left;
+				color:orange;
+				font-size: 10px;
+				height:20px;
+				padding-left:10px;
+			}
+		}
 	}
-
 	input[type="submit"]{
 		background:#FFFFFF;
 		border:0;
@@ -154,7 +140,6 @@
 		color:#000000;
 		.border-radius(0);
 	}
-
 	input[type="text"],input[type="number"],input[type="email"]{
 		.border-radius(0);
 		border:solid #FFFFFF 1px;
@@ -165,17 +150,14 @@
 		max-width: 800px;
 		padding-top: 20px;
 		padding-bottom: 20px;
-
 		margin-left:auto;
 		margin-right:auto;
-
 		label,input{
 			float:left;
 			@media (min-width: 768px) and (max-width: 979px) {
 				float:none;
 			}
 		}
-
 		label{
 			line-height: 40px;
 
@@ -191,7 +173,6 @@
 				float:none;
 			}
 		}
-
 		.h-postcode,.h-submit{
 			max-width:100px;
 			@media (max-width: 767px) { 
@@ -207,58 +188,112 @@
 				width:100%;
 
 			}
-
+		}
+		.submit-group{
+			display:inline-block;
+			
+			
+			@media (max-width: 480px) { 
+				width:100%;
+				display:block;
+				
+			}
 		}
 
 	}
 }
 
-
 /*==================================================*/
 .spring-intro{
 	background: #f26d63;
-
 	.intro-wrap{
 		text-align: center;
 		padding: 40px 10%;
 		h2{
 			color:#FFFFFF;
-
 		}
 		p{
 			color:#000000;
-
 		}
 	}
-
 }
 
 /*==================================================*/
 .spring-items{
 	text-align: center;
 	padding: 10px 0;
+	&.item1{
+		.image-box{
+			padding-top: 40px;
+			@media (min-width: 1200px){
+				padding-top: 0;
+			}
+			@media (min-width: 768px) and (max-width: 979px) { 
+				padding-top: 80px;
+			}
+		}
+	}
+	&.item2{
+		.image-box{
+			padding-top: 40px;
+			@media (min-width: 1200px){
+				padding-top: 0;
+			}
+			@media (min-width: 768px) and (max-width: 979px) { 
+				padding-top: 80px;
+			}
+		}
+		.text-box{
+			padding-top:60px;
+			@media (min-width: 1200px){
+				padding-top: 40px;
+			}
+		}
+	}
+	&.item3{
+		.image-box{
+			padding-top: 40px;
+			@media (min-width: 1200px){
+				padding-top: 0;
+			}
+			@media (min-width: 768px) and (max-width: 979px) { 
+				padding-top: 70px;
+			}
+		}
+		.text-box{
+			padding-top:40px;
+			@media (min-width: 1200px){
+				padding-top: 40px;
+			}
+		}
+	}
+	&.item4{
+		.image-box{
+			padding-top: 40px;
+			@media (min-width: 1200px){
+				padding-top: 0;
+			}
+			@media (min-width: 768px) and (max-width: 979px) { 
+				padding-top: 70px;
+			}
+		}
+		.text-box{
+			padding-top:40px;
+			@media (min-width: 1200px){
+				padding-top: 40px;
+			}
+		}
+	}
 	.image-box,.text-box{
 		width:50%;
-		
-		@media (min-width: 768px) and (max-width: 979px) {
-			display:block;
-			width:100%;
-
-		}
 		@media (max-width: 767px) { 
 			display:block;
 			width:100%;
 		}
-		@media (max-width: 480px) { 
-			
-		}
-
-
 	}
 	.text-box{
 		.text-wrap{
 			padding:20px 40px;
-
 			a{padding:5px 20px;text-decoration: none;color:#FFFFFF;text-transform: uppercase;}
 			a.box-link1{background-color: #444444;}
 			a.box-link2{background-color: #6cc3ba;}
@@ -281,13 +316,10 @@
 		}
 	}
 	.image-box{
-		
 		@media (min-width: 768px) and (max-width: 979px) { 
 			padding: 10px 0;
 		}
 	}
-
-
 	&.image-left{
 		.image-box{
 			float:left;
@@ -295,7 +327,6 @@
 		.text-box{
 			float:right;
 		}
-
 	}
 	&.image-right{
 		.image-box{
@@ -304,9 +335,7 @@
 		.text-box{
 			float:left;
 		}
-
 	}
-
 }
 /*==================================================*/
 #spring-modal{
@@ -318,7 +347,6 @@
 	margin-left:0;
 	text-align: center;
 	.border-radius(0);
-
 	.close{
 		position:absolute;
 		right:0;
@@ -334,7 +362,6 @@
 		display: block;
 		line-height: 28px;
 		text-align: center;
-
 	}
 
 	.top-section{
@@ -343,18 +370,13 @@
 			top: 0;
 			left: 0;
 			right: 0;
-			
 			.popup-image{
 				margin-left:auto;
 				margin-right:auto;
 				max-width: 650px;
 			}
-
-
-
 		}
 	}
-
 	.middle-section{
 		max-width: 800px;
 		padding:40px;
@@ -372,16 +394,23 @@
 		p{
 			margin-top: 30px;
 		}
-
 	}
-
 	.bottom-section{
 		max-width: 800px;
 		padding-left: 10%;
 		padding-right: 10%;
 		margin-left:auto;
 		margin-right: auto;
-
+		.mgroup{
+			display:inline-block;
+			.required-input{
+				text-align: left;
+				color:orange;
+				font-size: 10px;
+				height:20px;
+				padding-left: 10px;
+			}
+		}
 		input[type="submit"]{
 			background:#6cc3ba;
 			border:0;
@@ -390,12 +419,10 @@
 			color:#ffffff;
 			.border-radius(0);
 		}
-
 		input[type="text"],input[type="email"],input[type="number"]{
 			.border-radius(0);
 			border:solid #000000 1px;
 		}
-
 		.m-name,.m-email{
 			max-width:180px;
 			width:180px;
@@ -403,16 +430,8 @@
 				max-width:80%;
 			}
 		}
-
 		.m-postcode,.m-submit{
 			max-width:100px;
-
-
 		}
-
 	}
-
 }
-
-
-

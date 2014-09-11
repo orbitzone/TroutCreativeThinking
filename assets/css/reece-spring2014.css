@@ -26,7 +26,7 @@
   box-sizing: border-box;
 }
 .spring2014 {
-  font-family: springBodyFont;
+  font-family: "proxima-nova", sans-serif;
 }
 .spring2014 .clear {
   clear: both;
@@ -72,12 +72,12 @@
 }
 @media (max-width: 767px) {
   .spring-header .header-wrap .header-text h1 {
-    font-size: 40px;
+    font-size: 50px;
   }
 }
 @media (max-width: 480px) {
   .spring-header .header-wrap .header-text h1 {
-    font-size: 25px;
+    font-size: 40px;
   }
 }
 .spring-header .header-wrap .header-text .launch-button {
@@ -176,6 +176,16 @@
 .spring-subscribe form {
   margin-bottom: 0;
 }
+.spring-subscribe form .hgroup {
+  display: inline-block;
+}
+.spring-subscribe form .hgroup .required-input {
+  text-align: left;
+  color: orange;
+  font-size: 10px;
+  height: 20px;
+  padding-left: 10px;
+}
 .spring-subscribe input[type="submit"] {
   background: #FFFFFF;
   border: 0;
@@ -254,6 +264,15 @@
     width: 100%;
   }
 }
+.spring-subscribe .subscribe-wrap .submit-group {
+  display: inline-block;
+}
+@media (max-width: 480px) {
+  .spring-subscribe .subscribe-wrap .submit-group {
+    width: 100%;
+    display: block;
+  }
+}
 /*==================================================*/
 .spring-intro {
   background: #f26d63;
@@ -273,16 +292,85 @@
   text-align: center;
   padding: 10px 0;
 }
+.spring-items.item1 .image-box {
+  padding-top: 40px;
+}
+@media (min-width: 1200px) {
+  .spring-items.item1 .image-box {
+    padding-top: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .spring-items.item1 .image-box {
+    padding-top: 80px;
+  }
+}
+.spring-items.item2 .image-box {
+  padding-top: 40px;
+}
+@media (min-width: 1200px) {
+  .spring-items.item2 .image-box {
+    padding-top: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .spring-items.item2 .image-box {
+    padding-top: 80px;
+  }
+}
+.spring-items.item2 .text-box {
+  padding-top: 60px;
+}
+@media (min-width: 1200px) {
+  .spring-items.item2 .text-box {
+    padding-top: 40px;
+  }
+}
+.spring-items.item3 .image-box {
+  padding-top: 40px;
+}
+@media (min-width: 1200px) {
+  .spring-items.item3 .image-box {
+    padding-top: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .spring-items.item3 .image-box {
+    padding-top: 70px;
+  }
+}
+.spring-items.item3 .text-box {
+  padding-top: 40px;
+}
+@media (min-width: 1200px) {
+  .spring-items.item3 .text-box {
+    padding-top: 40px;
+  }
+}
+.spring-items.item4 .image-box {
+  padding-top: 40px;
+}
+@media (min-width: 1200px) {
+  .spring-items.item4 .image-box {
+    padding-top: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .spring-items.item4 .image-box {
+    padding-top: 70px;
+  }
+}
+.spring-items.item4 .text-box {
+  padding-top: 40px;
+}
+@media (min-width: 1200px) {
+  .spring-items.item4 .text-box {
+    padding-top: 40px;
+  }
+}
 .spring-items .image-box,
 .spring-items .text-box {
   width: 50%;
-}
-@media (min-width: 768px) and (max-width: 979px) {
-  .spring-items .image-box,
-  .spring-items .text-box {
-    display: block;
-    width: 100%;
-  }
 }
 @media (max-width: 767px) {
   .spring-items .image-box,
@@ -290,9 +378,6 @@
     display: block;
     width: 100%;
   }
-}
-@media (max-width: 480px) {
-  
 }
 .spring-items .text-box .text-wrap {
   padding: 20px 40px;
@@ -420,6 +505,16 @@
   padding-right: 10%;
   margin-left: auto;
   margin-right: auto;
+}
+#spring-modal .bottom-section .mgroup {
+  display: inline-block;
+}
+#spring-modal .bottom-section .mgroup .required-input {
+  text-align: left;
+  color: orange;
+  font-size: 10px;
+  height: 20px;
+  padding-left: 10px;
 }
 #spring-modal .bottom-section input[type="submit"] {
   background: #6cc3ba;

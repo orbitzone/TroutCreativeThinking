@@ -1,5 +1,6 @@
 * {
-  outline: #000000 dotted 1px;
+  /*outline: #000000 dotted 1px;*/
+
 }
 .spring2014 .clear {
   clear: both;
@@ -157,6 +158,7 @@
   color: #000000;
 }
 .spring-subscribe input[type="text"],
+.spring-subscribe input[type="number"],
 .spring-subscribe input[type="email"] {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -381,7 +383,8 @@
   color: #ffffff;
 }
 #spring-modal .bottom-section input[type="text"],
-#spring-modal .bottom-section input[type="email"] {
+#spring-modal .bottom-section input[type="email"],
+#spring-modal .bottom-section input[type="number"] {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;

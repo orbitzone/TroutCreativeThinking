@@ -57,29 +57,55 @@
 
 
 
+
+
+
+
+
 			    	<section class="spring-subscribe container">
 					    <div class="row-fluid">
 					    	<div class="span12">
-					    		<form id="subscribe-box">
+					    		<div id="subscribe-box">
 					    			<div class="subscribe-wrap">
-						    			<label>Subscribe for updates</label>
 
-						    			<input class="h-name" type="text" name="name" placeholder="Name">
 
-						    			<input  class="h-email" type="email" name="email" placeholder="Email">
 
-						    			<input  class="h-postcode" type="text" name="postcode" placeholder="Postcode">
 
-						    			<input  class="h-submit" type="submit" name="submit" value="Submit">
-						    			<div class="clear"></div>
+										<form action="//reece.us1.list-manage.com/subscribe/post?u=a0d3b256272508540d2350917&amp;id=f4d330c031" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+											<label>Subscribe for updates</label>
+											<input type="text" value="" name="FNAME" class="h-name" id="mce-FNAME" placeholder="Name">
+											<input type="email" value="" name="EMAIL" class="required email h-email" id="mce-EMAIL" placeholder="Email">
+											<input type="number" name="POSTCODE" class="h-postcode" value="" id="mce-POSTCODE" placeholder="Postcode">
+										
+											   <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+										    <div style="position: absolute; left: -5000px;"><input type="text" name="b_a0d3b256272508540d2350917_f4d330c031" tabindex="-1" value=""></div>
+											<input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="button h-submit">
+											<div id="mce-responses" class="clear">
+												<div class="response" id="mce-error-response" style="display:none"></div>
+												<div class="response" id="mce-success-response" style="display:none"></div>
+											</div> 
+							    		</form>	
+
+
 						    		</div>
 
 
-					    		</form>	
+					    		</div>	
 					    		<div class="clear"></div>			    		
 					    	</div>
 					    </div>
 					</section>	
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -238,19 +264,37 @@
 		    </p>
 		  </div>
 		  <div class="bottom-section">
-			<form>
-    			
-
-    			<input class="m-name" type="text" name="name" placeholder="Name">
-
-    			<input class="m-email" type="email" name="email" placeholder="Email">
-
-    			<input class="m-postcode" type="text" name="postcode" placeholder="Postcode"><br />
-
-    			<input class="m-submit" type="submit" name="submit" value="Submit">
 
 
+
+
+
+
+
+
+			<form action="//reece.us1.list-manage.com/subscribe/post?u=a0d3b256272508540d2350917&amp;id=f4d330c031" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+				
+				<input type="text" value="" name="FNAME" class="m-name" id="mce-FNAME" placeholder="Name">
+				<input type="email" value="" name="EMAIL" class="required email m-email" id="mce-EMAIL" placeholder="Email">
+				<input type="number" name="POSTCODE" class="m-postcode" value="" id="mce-POSTCODE" placeholder="Postcode">
+			
+				   <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+			    <div style="position: absolute; left: -5000px;"><input type="text" name="b_a0d3b256272508540d2350917_f4d330c031" tabindex="-1" value=""></div>
+				<br />
+				<input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="button m-submit">
+				<div id="mce-responses" class="clear">
+					<div class="response" id="mce-error-response" style="display:none"></div>
+					<div class="response" id="mce-success-response" style="display:none"></div>
+				</div> 
     		</form>	
+
+
+
+
+
+
+
+
 		  </div>
 		</div>
 
@@ -259,7 +303,7 @@
 		        $('#spring-modal').modal('show');
 		    });
 		</script>
-
-
+		<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='POSTCODE';ftypes[3]='number';}(jQuery));var $mcj = jQuery.noConflict(true);
+		</script>
     </body>
 </html>

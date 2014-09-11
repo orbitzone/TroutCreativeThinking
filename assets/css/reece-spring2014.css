@@ -301,6 +301,7 @@
   }
 }
 .spring-intro .intro-wrap p {
+  font-family: "freight-big-pro", serif;
   color: #000000;
   font-size: 20px;
   line-height: 1.2em;
@@ -312,12 +313,12 @@
 }
 @media (max-width: 767px) {
   .spring-intro .intro-wrap p {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 @media (max-width: 480px) {
   .spring-intro .intro-wrap p {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 /*==================================================*/

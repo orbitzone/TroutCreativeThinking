@@ -1,3 +1,12 @@
+//Bootstrap imports
+@import "bootstrap/variables.less";
+@import "bootstrap/mixins.less";
+
+//Application imports
+@import "reece-variables.less";
+@import "reece-mixins.less";
+
+
 *{
 	/*outline: #000000 dotted 1px;*/
 }
@@ -141,12 +150,11 @@
 		padding:6px 30px;
 		margin:20px;
 		color:#000000;
+		.border-radius(0);
 	}
 
 	input[type="text"],input[type="number"],input[type="email"]{
-		-webkit-border-radius: 0px;
-		-moz-border-radius: 0px;
-		border-radius: 0px;
+		.border-radius(0);
 		border:solid #FFFFFF 1px;
 		background-color: #000000;
 		margin:5px;
@@ -300,13 +308,32 @@
 }
 /*==================================================*/
 #spring-modal{
+	@media (max-height:820px){
+		position: absolute;
+	}
 	left:10%;
 	width:80%;
 	margin-left:0;
 	text-align: center;
-	-webkit-border-radius: 0px;
-	-moz-border-radius: 0px;
-	border-radius: 0px;
+	.border-radius(0);
+
+	.close{
+		position:absolute;
+		right:0;
+		top:0;
+		z-index: 10;
+		background: #555;
+		color: white;
+		font-weight: 100;
+		font-size: 30px;
+		height: 1em;
+		width: 1em;
+		padding: .25em;
+		display: block;
+		line-height: 28px;
+		text-align: center;
+
+	}
 
 	.top-section{
 		.main-modal-image{
@@ -320,14 +347,7 @@
 				margin-right:auto;
 				max-width: 650px;
 			}
-			.close{
-				position:absolute;
-				right:0;
-				top:0;
-				img{
-					width:40px;
-				}
-			}
+
 
 
 		}
@@ -366,12 +386,11 @@
 			padding:6px 30px;
 			margin:20px;
 			color:#ffffff;
+			.border-radius(0);
 		}
 
 		input[type="text"],input[type="email"],input[type="number"]{
-			-webkit-border-radius: 0px;
-			-moz-border-radius: 0px;
-			border-radius: 0px;
+			.border-radius(0);
 			border:solid #000000 1px;
 		}
 
@@ -389,44 +408,9 @@
 
 		}
 
-
 	}
 
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

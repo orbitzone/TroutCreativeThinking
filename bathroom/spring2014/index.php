@@ -244,11 +244,12 @@
 		<script type="text/javascript">
 			$(function(){
 				if (typeof localStorage.springSubscribed === 'undefined') {
-					localStorage.springSubscribed = false;
+					localStorage.springSubscribed = 0;
 				}
-				if (localStorage.springSubscribed == true){
+				if (localStorage.springSubscribed == 1){
 					$('#headerSpringSubscribe').hide();
 				} else{
+					console.log('show modal');
 					$('#spring-modal').modal('show');
 				}
 				// for each mail chimp form 
@@ -265,7 +266,14 @@
 							if (data.result == 'success'){
 								// handle Success
 								mailChimpForm.find('.mailchimpAjaxMessage').html('<p class="successMessage">'+data.msg+'</p>');
-								localStorage.springSubscribed = true;
+								if($('#spring-modal').data().modal.isShown){
+									$('#headerSpringSubscribe').hide();
+									setTimeout(function(){$('#spring-modal').modal('hide')},5000);
+								}
+								else{
+									setTimeout(function(){$('#headerSpringSubscribe').fadeOut()},5000);
+								}
+								localStorage.springSubscribed = 1;
 							}
 							else if ( data.result == 'error'){
 								// handle error
@@ -277,6 +285,7 @@
 									mailchimpError = data.msg;
 								}
 								mailChimpForm.find('.mailchimpAjaxMessage').html('<p class="errorMessage">'+mailchimpError+'</p>');
+								setTimeout(function(){mailChimpForm.find('.mailchimpAjaxMessage').html('');},5000);
 							}
 						});
 					});

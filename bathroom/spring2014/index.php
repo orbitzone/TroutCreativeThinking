@@ -249,15 +249,13 @@
 				$('.mailChimpForm').each(function(){
 					// Form and form variables
 					mailChimpForm = $(this);
-					mailChimpURL = mailChimpForm.attr('action');
 					// handle form submit
 					mailChimpForm.submit(function(e){
 						e.preventDefault();
 						mailChimpForm = $(this);
+						mailChimpURL = mailChimpForm.attr('action');
 						formData = mailChimpForm.serialize();
-						console.log(formData);
 						$.getJSON(mailChimpURL+'-json?c=?',formData,function(data){
-							console.log(data);
 							if (data.result == 'success'){
 								// handle Success
 								mailChimpForm.prepend('<p class="successMessage">'+data.msg+'</p>')

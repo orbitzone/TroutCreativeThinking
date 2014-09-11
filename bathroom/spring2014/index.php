@@ -49,19 +49,20 @@
 					</section>
 					<!-- /.spring-header -->		
 
-			    	<section class="spring-subscribe container">
+			    	<section id="headerSpringSubscribe" class="spring-subscribe container">
 					    <div class="row-fluid">
 					    	<div class="span12">
 					    		<div id="subscribe-box">
 					    			<div class="subscribe-wrap">
 
-										<form action="//reece.us1.list-manage.com/subscribe/post" method="post" id="headerMailChimpForm" class="validate mailChimpForm" target="_blank" novalidate>
+										<form action="//reece.us1.list-manage.com/subscribe/post" method="post" id="headerMailChimpForm" class="validate mailChimpForm" target="_blank">
+											<div class="mailchimpAjaxMessage"></div>
 											<label>Subscribe for updates</label>
 											<input type="hidden" name="u" value="a0d3b256272508540d2350917">
 											<input type="hidden" name="id" value="f4d330c031">
-											<input type="text" value="" name="FNAME" class="h-name" id="mce-FNAME" placeholder="Name">
-											<input type="email" value="" name="EMAIL" class="required email h-email" id="mce-EMAIL" placeholder="Email">
-											<input type="number" name="POSTCODE" class="h-postcode" value="" id="mce-POSTCODE" placeholder="Postcode">
+											<input type="text" value="" name="FNAME" class="h-name" id="mce-FNAME" placeholder="Name" required>
+											<input type="email" value="" name="EMAIL" class="email h-email" id="mce-EMAIL" placeholder="Email" required>
+											<input type="number" name="POSTCODE" class="h-postcode" value="" id="mce-POSTCODE" placeholder="Postcode" required>
 										
 											   <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 										    <div style="position: absolute; left: -5000px;"><input type="text" name="b_a0d3b256272508540d2350917_f4d330c031" tabindex="-1" value=""></div>
@@ -206,13 +207,13 @@
 		  </div>
 		  <div class="bottom-section">
 
-			<form action="//reece.us1.list-manage.com/subscribe/post" method="post" id="poupMailchimpForm" class="validate mailChimpForm" novalidate>
+			<form action="//reece.us1.list-manage.com/subscribe/post" method="post" id="poupMailchimpForm" class="validate mailChimpForm">
+				<div class="mailchimpAjaxMessage"></div>
 				<input type="hidden" name="u" value="a0d3b256272508540d2350917">
 				<input type="hidden" name="id" value="f4d330c031">
-				<input type="text" value="" name="FNAME" class="m-name" id="mce-FNAME" placeholder="Name">
-				<input type="email" value="" name="EMAIL" class="required email m-email" id="mce-EMAIL" placeholder="Email">
-				<input type="number" name="POSTCODE" class="m-postcode" value="" id="mce-POSTCODE" placeholder="Postcode">
-			
+				<input type="text" value="" name="FNAME" class="m-name" id="mce-FNAME" placeholder="Name" required>
+				<input type="email" value="" name="EMAIL" class="required email m-email" id="mce-EMAIL" placeholder="Email" required>
+				<input type="number" name="POSTCODE" class="m-postcode" value="" id="mce-POSTCODE" placeholder="Postcode" required>
 				   <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 			    <div style="position: absolute; left: -5000px;"><input type="text" name="b_a0d3b256272508540d2350917_f4d330c031" tabindex="-1" value=""></div>
 				<br />
@@ -242,8 +243,13 @@
 		?>	
 		<script type="text/javascript">
 			$(function(){
-				if (typeof sessionStorage.springSubscribed === 'undefined') {
-					sessionStorage.springSubscribed = false;
+				if (typeof localStorage.springSubscribed === 'undefined') {
+					localStorage.springSubscribed = false;
+				}
+				if (localStorage.springSubscribed == true){
+					$('#headerSpringSubscribe').hide();
+				} else{
+					$('#spring-modal').modal('show');
 				}
 				// for each mail chimp form 
 				$('.mailChimpForm').each(function(){
@@ -258,7 +264,8 @@
 						$.getJSON(mailChimpURL+'-json?c=?',formData,function(data){
 							if (data.result == 'success'){
 								// handle Success
-								mailChimpForm.prepend('<p class="successMessage">'+data.msg+'</p>')
+								mailChimpForm.find('.mailchimpAjaxMessage').html('<p class="successMessage">'+data.msg+'</p>');
+								localStorage.springSubscribed = true;
 							}
 							else if ( data.result == 'error'){
 								// handle error
@@ -269,13 +276,12 @@
 								else{
 									mailchimpError = data.msg;
 								}
-								mailChimpForm.prepend('<p class="errorMessage">'+mailchimpError+'</p>');
+								mailChimpForm.find('.mailchimpAjaxMessage').html('<p class="errorMessage">'+mailchimpError+'</p>');
 							}
 						});
 					});
 					
 				});
-				$('#spring-modal').modal('show');
 
 			});
 		</script>

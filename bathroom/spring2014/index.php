@@ -7,10 +7,10 @@
 			"/assets/css/reece-bathrooms.css",
 			"/assets/css/reece-spring2014.css"			
 		]; 
-	   	include_once($serverBase."/includes/head/head-generic.php");
+	   	include_once($serverBase."/includes/head/head-spring2014.php");
 	?>		
 
-    <body class="3 withHappinessSubNav">
+    <body class="spring2014 withHappinessSubNav">
 		<div class="ocmain-wrapper">
   <div class="navbar navbar-fixed-top topNav">
     <?php
@@ -38,7 +38,7 @@
 					    				<img src="/assets/images/spring2014/main-banner.jpg" />	
 					    			</div>
 					    			<div class="header-text">
-					    				<h1>The Spring Bathroom</h1>
+					    				<h1>The Spring <span>Bathroom</span></h1>
 					    				<div class="launch-button"><a href="http://mag.reece.com.au/spring">
 					    					<span class="launch">Launch</span>
 					    					<span class="lookbook">Digital lookbook</span>
@@ -70,7 +70,7 @@
 
 						    			<input  class="h-postcode" type="text" name="postcode" placeholder="Postcode">
 
-						    			<input  class="h-submit" type="submit" name="submit">
+						    			<input  class="h-submit" type="submit" name="submit" value="Submit">
 						    			<div class="clear"></div>
 						    		</div>
 
@@ -91,8 +91,8 @@
 			    		<section class="row-fluid intro">
 					    	<div class="span10 offset1">
 					    		<div class="intro-wrap">
-									<h2>Renovate. Refresh. Rejoice.</h2>
-									<p>There is no better time to begin creating your new bathroom than in Spring. To help you along the journey to new bathroom happiness, we&rsquo;ve put together a collection of tips and inspiration.</p>
+									<h2><span>Renovate. Refresh. Rejoice.</span></h2>
+									<p >There is no better time to begin creating your new bathroom than in Spring. To help you along the journey to new bathroom happiness, we&rsquo;ve put together a collection of tips and inspiration.</p>
 								</div>
 					    	</div>
 					    </section>
@@ -232,7 +232,7 @@
 
 		  </div>
 		  <div class="middle-section">
-		    <h2>The Spring Bathroom</h2>
+		    <h2>The Spring <span>Bathroom</span></h2>
 		    <p>
 			Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo.
 		    </p>
@@ -247,7 +247,7 @@
 
     			<input class="m-postcode" type="text" name="postcode" placeholder="Postcode"><br />
 
-    			<input class="m-submit" type="submit" name="submit">
+    			<input class="m-submit" type="submit" name="submit" value="Submit">
 
 
     		</form>	

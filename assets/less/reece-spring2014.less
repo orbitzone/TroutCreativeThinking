@@ -116,6 +116,27 @@
 	}
 }
 /*==================================================*/
+/********** Subscribe *******************************/
+/*==================================================*/
+.mailChimpForm{
+	.mailchimpAjaxMessage{
+		min-height: 3em;
+		padding: 10px 0 5px;
+		p{
+			margin: 0;
+			padding: 0;
+			line-height: 1em;
+		}
+		.successMessage{
+			color: @green;
+		}
+		.errorMessage{
+			color: @orange;
+		}
+	}
+}
+
+/*==================================================*/
 .spring-subscribe{
 	background: #000000;
 	color:#ffffff;
@@ -149,7 +170,6 @@
 	}
 	.subscribe-wrap{
 		max-width: 800px;
-		padding-top: 20px;
 		padding-bottom: 20px;
 		margin-left:auto;
 		margin-right:auto;
@@ -203,7 +223,108 @@
 
 	}
 }
+/*==================================================*/
 
+#spring-modal{
+	@media (max-height:820px){
+		position: absolute;
+	}
+	left:10%;
+	width:80%;
+	margin-left:0;
+	text-align: center;
+	.border-radius(0);
+	.close{
+		position:absolute;
+		right:0;
+		top:0;
+		z-index: 10;
+		background: #555;
+		color: white;
+		font-weight: 100;
+		font-size: 30px;
+		height: 1em;
+		width: 1em;
+		padding: .25em;
+		display: block;
+		line-height: 28px;
+		text-align: center;
+	}
+
+	.top-section{
+		.main-modal-image{
+			position:relative;
+			top: 0;
+			left: 0;
+			right: 0;
+			.popup-image{
+				margin-left:auto;
+				margin-right:auto;
+				max-width: 650px;
+			}
+		}
+	}
+	.middle-section{
+		max-width: 800px;
+		padding:40px 0 0;
+		margin-left:auto;
+		margin-right: auto;
+		h2{
+			font-size: 60px;
+			@media (max-width: 767px) { 
+				font-size: 40px;
+			}
+			@media (max-width: 480px) { 
+				font-size: 25px;
+			}
+		}
+		p{
+			margin-top: 30px;
+		}
+	}
+	.bottom-section{
+		max-width: 800px;
+		padding-left: 10%;
+		padding-right: 10%;
+		margin-left:auto;
+		margin-right: auto;
+		.mgroup{
+			display:inline-block;
+			input{
+				margin-bottom: 0;
+			}
+			.required-input{
+				text-align: left;
+				color:orange;
+				font-size: 10px;
+				height:20px;
+				padding:5px 0 10px;
+			}
+		}
+		input[type="submit"]{
+			background:#6cc3ba;
+			border:0;
+			padding:6px 30px;
+			margin:20px;
+			color:#ffffff;
+			.border-radius(0);
+		}
+		input[type="text"],input[type="email"],input[type="number"]{
+			.border-radius(0);
+			border:solid #000000 1px;
+		}
+		.m-name,.m-email{
+			max-width:180px;
+			width:180px;
+			@media (max-width: 480px) { 
+				max-width:80%;
+			}
+		}
+		.m-postcode,.m-submit{
+			max-width:100px;
+		}
+	}
+}
 /*==================================================*/
 .spring-intro{
 	background: #f26d63;
@@ -357,104 +478,6 @@
 		}
 		.text-box{
 			float:left;
-		}
-	}
-}
-/*==================================================*/
-#spring-modal{
-	@media (max-height:820px){
-		position: absolute;
-	}
-	left:10%;
-	width:80%;
-	margin-left:0;
-	text-align: center;
-	.border-radius(0);
-	.close{
-		position:absolute;
-		right:0;
-		top:0;
-		z-index: 10;
-		background: #555;
-		color: white;
-		font-weight: 100;
-		font-size: 30px;
-		height: 1em;
-		width: 1em;
-		padding: .25em;
-		display: block;
-		line-height: 28px;
-		text-align: center;
-	}
-
-	.top-section{
-		.main-modal-image{
-			position:relative;
-			top: 0;
-			left: 0;
-			right: 0;
-			.popup-image{
-				margin-left:auto;
-				margin-right:auto;
-				max-width: 650px;
-			}
-		}
-	}
-	.middle-section{
-		max-width: 800px;
-		padding:40px;
-		margin-left:auto;
-		margin-right: auto;
-		h2{
-			font-size: 60px;
-			@media (max-width: 767px) { 
-				font-size: 40px;
-			}
-			@media (max-width: 480px) { 
-				font-size: 25px;
-			}
-		}
-		p{
-			margin-top: 30px;
-		}
-	}
-	.bottom-section{
-		max-width: 800px;
-		padding-left: 10%;
-		padding-right: 10%;
-		margin-left:auto;
-		margin-right: auto;
-		.mgroup{
-			display:inline-block;
-			.required-input{
-				text-align: left;
-				color:orange;
-				font-size: 10px;
-				height:20px;
-				padding-left: 10px;
-			}
-		}
-		input[type="submit"]{
-			background:#6cc3ba;
-			border:0;
-			padding:6px 30px;
-			margin:20px;
-			color:#ffffff;
-			.border-radius(0);
-		}
-		input[type="text"],input[type="email"],input[type="number"]{
-			.border-radius(0);
-			border:solid #000000 1px;
-		}
-		.m-name,.m-email{
-			max-width:180px;
-			width:180px;
-			@media (max-width: 480px) { 
-				max-width:80%;
-			}
-		}
-		.m-postcode,.m-submit{
-			max-width:100px;
 		}
 	}
 }

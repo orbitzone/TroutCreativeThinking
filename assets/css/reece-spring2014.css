@@ -168,6 +168,24 @@
   }
 }
 /*==================================================*/
+/********** Subscribe *******************************/
+/*==================================================*/
+.mailChimpForm .mailchimpAjaxMessage {
+  min-height: 3em;
+  padding: 10px 0 5px;
+}
+.mailChimpForm .mailchimpAjaxMessage p {
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
+}
+.mailChimpForm .mailchimpAjaxMessage .successMessage {
+  color: #46a546;
+}
+.mailChimpForm .mailchimpAjaxMessage .errorMessage {
+  color: #f89406;
+}
+/*==================================================*/
 .spring-subscribe {
   background: #000000;
   color: #ffffff;
@@ -208,7 +226,6 @@
 }
 .spring-subscribe .subscribe-wrap {
   max-width: 800px;
-  padding-top: 20px;
   padding-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -272,6 +289,123 @@
     width: 100%;
     display: block;
   }
+}
+/*==================================================*/
+#spring-modal {
+  left: 10%;
+  width: 80%;
+  margin-left: 0;
+  text-align: center;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+@media (max-height: 820px) {
+  #spring-modal {
+    position: absolute;
+  }
+}
+#spring-modal .close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  background: #555;
+  color: white;
+  font-weight: 100;
+  font-size: 30px;
+  height: 1em;
+  width: 1em;
+  padding: .25em;
+  display: block;
+  line-height: 28px;
+  text-align: center;
+}
+#spring-modal .top-section .main-modal-image {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#spring-modal .top-section .main-modal-image .popup-image {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 650px;
+}
+#spring-modal .middle-section {
+  max-width: 800px;
+  padding: 40px 0 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+#spring-modal .middle-section h2 {
+  font-size: 60px;
+}
+@media (max-width: 767px) {
+  #spring-modal .middle-section h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 480px) {
+  #spring-modal .middle-section h2 {
+    font-size: 25px;
+  }
+}
+#spring-modal .middle-section p {
+  margin-top: 30px;
+}
+#spring-modal .bottom-section {
+  max-width: 800px;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#spring-modal .bottom-section .mgroup {
+  display: inline-block;
+}
+#spring-modal .bottom-section .mgroup input {
+  margin-bottom: 0;
+}
+#spring-modal .bottom-section .mgroup .required-input {
+  text-align: left;
+  color: orange;
+  font-size: 10px;
+  height: 20px;
+  padding: 5px 0 10px;
+}
+#spring-modal .bottom-section input[type="submit"] {
+  background: #6cc3ba;
+  border: 0;
+  padding: 6px 30px;
+  margin: 20px;
+  color: #ffffff;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+#spring-modal .bottom-section input[type="text"],
+#spring-modal .bottom-section input[type="email"],
+#spring-modal .bottom-section input[type="number"] {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  border: solid #000000 1px;
+}
+#spring-modal .bottom-section .m-name,
+#spring-modal .bottom-section .m-email {
+  max-width: 180px;
+  width: 180px;
+}
+@media (max-width: 480px) {
+  #spring-modal .bottom-section .m-name,
+  #spring-modal .bottom-section .m-email {
+    max-width: 80%;
+  }
+}
+#spring-modal .bottom-section .m-postcode,
+#spring-modal .bottom-section .m-submit {
+  max-width: 100px;
 }
 /*==================================================*/
 .spring-intro {
@@ -468,118 +602,4 @@
 }
 .spring-items.image-right .text-box {
   float: left;
-}
-/*==================================================*/
-#spring-modal {
-  left: 10%;
-  width: 80%;
-  margin-left: 0;
-  text-align: center;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-}
-@media (max-height: 820px) {
-  #spring-modal {
-    position: absolute;
-  }
-}
-#spring-modal .close {
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 10;
-  background: #555;
-  color: white;
-  font-weight: 100;
-  font-size: 30px;
-  height: 1em;
-  width: 1em;
-  padding: .25em;
-  display: block;
-  line-height: 28px;
-  text-align: center;
-}
-#spring-modal .top-section .main-modal-image {
-  position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-#spring-modal .top-section .main-modal-image .popup-image {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 650px;
-}
-#spring-modal .middle-section {
-  max-width: 800px;
-  padding: 40px;
-  margin-left: auto;
-  margin-right: auto;
-}
-#spring-modal .middle-section h2 {
-  font-size: 60px;
-}
-@media (max-width: 767px) {
-  #spring-modal .middle-section h2 {
-    font-size: 40px;
-  }
-}
-@media (max-width: 480px) {
-  #spring-modal .middle-section h2 {
-    font-size: 25px;
-  }
-}
-#spring-modal .middle-section p {
-  margin-top: 30px;
-}
-#spring-modal .bottom-section {
-  max-width: 800px;
-  padding-left: 10%;
-  padding-right: 10%;
-  margin-left: auto;
-  margin-right: auto;
-}
-#spring-modal .bottom-section .mgroup {
-  display: inline-block;
-}
-#spring-modal .bottom-section .mgroup .required-input {
-  text-align: left;
-  color: orange;
-  font-size: 10px;
-  height: 20px;
-  padding-left: 10px;
-}
-#spring-modal .bottom-section input[type="submit"] {
-  background: #6cc3ba;
-  border: 0;
-  padding: 6px 30px;
-  margin: 20px;
-  color: #ffffff;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-}
-#spring-modal .bottom-section input[type="text"],
-#spring-modal .bottom-section input[type="email"],
-#spring-modal .bottom-section input[type="number"] {
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  border: solid #000000 1px;
-}
-#spring-modal .bottom-section .m-name,
-#spring-modal .bottom-section .m-email {
-  max-width: 180px;
-  width: 180px;
-}
-@media (max-width: 480px) {
-  #spring-modal .bottom-section .m-name,
-  #spring-modal .bottom-section .m-email {
-    max-width: 80%;
-  }
-}
-#spring-modal .bottom-section .m-postcode,
-#spring-modal .bottom-section .m-submit {
-  max-width: 100px;
 }

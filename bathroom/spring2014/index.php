@@ -243,86 +243,99 @@ include_once($serverBase."/includes/head/head-spring2014.php");
 	include_once($serverBase."/includes/foot/scripts.php");
 	?>	
 	<script type="text/javascript">
-	$(function(){
-		if (typeof localStorage.springSubscribed === 'undefined') {
-			localStorage.springSubscribed = 0;
-		}
-		if (localStorage.springSubscribed == 1){
-			$('#headerSpringSubscribe').hide();
-		} else{
-			console.log('show modal');
-			$('#spring-modal').modal('show');
-		}
-				// for each mail chimp form 
-				$('.mailChimpForm').each(function(){
-					// Form and form variables
+		$(function(){
+			if (typeof localStorage.springSubscribed === 'undefined') {
+				// used to check if subscribed
+				localStorage.springSubscribed = 0;
+			}
+			if (typeof localStorage.springModalOpen === 'undefined') {
+				// used to check if modal should open
+				localStorage.springModalOpen = 1;
+			}
+			if (localStorage.springSubscribed == 1){
+				$('#headerSpringSubscribe').hide();
+			} else{
+				if(localStorage.springModalOpen == 1){
+					$('#spring-modal').modal('show');
+				}
+			}
+			$('#spring-modal').on('hidden', function () {
+				localStorage.springModalOpen = 0;
+			})
+			// for each mail chimp form 
+			$('.mailChimpForm').each(function(){
+				// Form and form variables
+				mailChimpForm = $(this);
+				// handle form submit
+				mailChimpForm.submit(function(e){
+					e.preventDefault();
 					mailChimpForm = $(this);
-					// handle form submit
-					mailChimpForm.submit(function(e){
-						e.preventDefault();
-						mailChimpForm = $(this);
-						mailChimpURL = mailChimpForm.attr('action');
-						isFormValid = false;
-						mailChimpForm.find('.required-input').html('&nbsp;');
+					mailChimpURL = mailChimpForm.attr('action');
+					isFormValid = true;
+					mailChimpForm.find('.required-input').html('&nbsp;');
 
-						formData = mailChimpForm.serialize();
-						mailChimpForm.find("*[required]").each(function(){
-							if ( $.trim($(this).val()) == ""){
-								isFormValid = false;
-								//console.log($(this).next('.required-input'));
-								$(this).next('.required-input').html('required');
-								//console.log('invalid '+$(this).attr('placeholder'));
-							}
-						});
-						mailChimpForm.find('[type="email"]').each(function() {
-							if (!$(this).val().match(/[-0-9a-zA-Z.+_]+@[-0-9a-zA-Z.+_]+\.[a-zA-Z]{2,4}/)){
-								isFormValid = false;
-								$(this).next('.required-input').html('invalid email');
-							}
-						});
-						mailChimpForm.find('[type="number"]').each(function() {
-							if (!$(this).val().match(/[0-9]+/)){
-								isFormValid = false;
-								$(this).next('.required-input').html('invalid post code');
-							}
-						});
-						if (isFormValid){
-							$.getJSON(mailChimpURL+'-json?c=?',formData,function(data){
-								if (data.result == 'success'){
-									// handle Success
-									mailChimpForm.find('.mailchimpAjaxMessage').html('<p class="successMessage">'+data.msg+'</p>');
-									if($('#spring-modal').data().modal.isShown){
-										$('#headerSpringSubscribe').hide();
-										setTimeout(function(){$('#spring-modal').modal('hide')},5000);
-									}
-									else{
-										setTimeout(function(){$('#headerSpringSubscribe').fadeOut()},5000);
-									}
-									localStorage.springSubscribed = 1;
-								}
-								else if ( data.result == 'error'){
-									// handle error
-									mailchimpError = '';
-									if (data.msg.indexOf('-') > -1){
-										mailchimpError = data.msg.split(' - ', 2)[1];
-									}
-									else{
-										mailchimpError = data.msg;
-									}
-									mailChimpForm.find('.mailchimpAjaxMessage').html('<p class="errorMessage">'+mailchimpError+'</p>');
-									setTimeout(function(){mailChimpForm.find('.mailchimpAjaxMessage').html('');},5000);
-								}
-							});
+					formData = mailChimpForm.serialize();
+					mailChimpForm.find("*[required]").each(function(){
+						if ( $.trim($(this).val()) == ""){
+							isFormValid = false;
+							// Show validation message for required
+							$(this).next('.required-input').html('Required');
+						}
+					});
+					mailChimpForm.find('[type="email"]').each(function() {
+						if (!$(this).val().match(/[-0-9a-zA-Z.+_]+@[-0-9a-zA-Z.+_]+\.[a-zA-Z]{2,4}/)){
+							isFormValid = false;
+							// Show validation message for email
+							$(this).next('.required-input').html('Invalid email');
+						}
+					});
+					mailChimpForm.find('[type="number"]').each(function() {
+						if (!$(this).val().match(/[0-9]+/)){
+							isFormValid = false;
+							// Show validation message for number
+							$(this).next('.required-input').html('Invalid post code');
 						}
 					});
 
+					if (isFormValid){
+
+						$.getJSON(mailChimpURL+'-json?c=?',formData,function(data){
+							if (data.result == 'success'){
+								// handle Success
+								mailChimpForm.find('.mailchimpAjaxMessage').html('<p class="successMessage"><i class="icon-ok"></i> '+data.msg+'</p>');
+								if($('#spring-modal').data().modal.isShown){//check if modal is visible
+									$('#headerSpringSubscribe').hide();// hide the header subscribe bar behind the modal
+									setTimeout(function(){$('#spring-modal').modal('hide')},5000);// close the modal in 5 sec
+								}
+								else{
+									// user interacting with header, hide after 5 sec
+									setTimeout(function(){$('#headerSpringSubscribe').slideUp();},5000);
+								}
+								// set subscribed in localstorage
+								localStorage.springSubscribed = 1;
+							}
+							else if ( data.result == 'error'){
+								// handle error
+								mailchimpError = '';
+								if (data.msg.indexOf('-') > -1){
+									mailchimpError = data.msg.split(' - ', 2)[1];
+								}
+								else{
+									mailchimpError = data.msg;
+								}
+								//show error and hide after 5 sec
+								mailChimpForm.find('.mailchimpAjaxMessage').html('<p class="errorMessage"><i class="icon-remove-sign"></i> '+mailchimpError+'</p>');
+								setTimeout(function(){mailChimpForm.find('.mailchimpAjaxMessage').html('');},5000);
+							}
+						});
+					}
 				});
 
-	});
-</script>
-		<!--<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-		<script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='POSTCODE';ftypes[3]='number';}(jQuery));var $mcj = jQuery.noConflict(true);
-		-->
+			});
+
+		});
+	</script>
+
 	</script>
 </body>
 </html>

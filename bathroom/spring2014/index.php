@@ -293,7 +293,7 @@ include_once($serverBase."/includes/head/head-spring2014.php");
 						if (!$(this).val().match(/[0-9]+/)){
 							isFormValid = false;
 							// Show validation message for number
-							$(this).next('.required-input').html('Invalid post code');
+							$(this).next('.required-input').html('Invalid postcode');
 						}
 					});
 

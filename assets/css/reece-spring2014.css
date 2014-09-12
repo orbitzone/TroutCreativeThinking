@@ -235,6 +235,7 @@
 }
 .spring-subscribe .subscribe-wrap label {
   line-height: 40px;
+  float: left;
 }
 @media (max-width: 767px) {
   .spring-subscribe .subscribe-wrap label {

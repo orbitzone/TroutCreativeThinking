@@ -233,16 +233,6 @@
   margin-left: auto;
   margin-right: auto;
 }
-.spring-subscribe .subscribe-wrap label,
-.spring-subscribe .subscribe-wrap input {
-  float: left;
-}
-@media (min-width: 768px) and (max-width: 979px) {
-  .spring-subscribe .subscribe-wrap label,
-  .spring-subscribe .subscribe-wrap input {
-    float: none;
-  }
-}
 .spring-subscribe .subscribe-wrap label {
   line-height: 40px;
 }

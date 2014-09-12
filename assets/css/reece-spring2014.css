@@ -191,6 +191,9 @@
   color: #ffffff;
   text-align: center;
 }
+.spring-subscribe .mailChimpForm .mailchimpAjaxMessage {
+  min-height: 2em;
+}
 .spring-subscribe form {
   margin-bottom: 0;
 }
@@ -373,6 +376,11 @@
   font-size: 10px;
   height: 20px;
   padding: 5px 0 10px;
+}
+@media (max-width: 480px) {
+  #spring-modal .bottom-section .mgroup .required-input {
+    text-align: center;
+  }
 }
 #spring-modal .bottom-section input[type="submit"] {
   background: #6cc3ba;

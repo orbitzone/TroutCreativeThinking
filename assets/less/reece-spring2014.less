@@ -141,6 +141,11 @@
 	background: #000000;
 	color:#ffffff;
 	text-align: center;
+	.mailChimpForm{
+		.mailchimpAjaxMessage{
+			min-height: 2em;
+		}
+	}
 	form{
 		margin-bottom:0;
 		.hgroup{
@@ -299,6 +304,9 @@
 				font-size: 10px;
 				height:20px;
 				padding:5px 0 10px;
+				@media (max-width: 480px) { 
+					text-align:center;
+				}
 			}
 		}
 		input[type="submit"]{

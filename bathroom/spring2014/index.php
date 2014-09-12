@@ -244,6 +244,7 @@ include_once($serverBase."/includes/head/head-spring2014.php");
 	?>	
 	<script type="text/javascript">
 		$(function(){
+			localStorage.clear();
 			if (typeof localStorage.springSubscribed === 'undefined') {
 				// used to check if subscribed
 				localStorage.springSubscribed = 0;
@@ -303,13 +304,18 @@ include_once($serverBase."/includes/head/head-spring2014.php");
 							if (data.result == 'success'){
 								// handle Success
 								mailChimpForm.find('.mailchimpAjaxMessage').html('<p class="successMessage"><i class="icon-ok"></i> '+data.msg+'</p>');
-								if($('#spring-modal').data().modal.isShown){//check if modal is visible
-									$('#headerSpringSubscribe').hide();// hide the header subscribe bar behind the modal
-									setTimeout(function(){$('#spring-modal').modal('hide')},5000);// close the modal in 5 sec
+								if ($.isEmptyObject($('#spring-modal').data())){
+									setTimeout(function(){$('#headerSpringSubscribe').slideUp();},5000);
 								}
 								else{
-									// user interacting with header, hide after 5 sec
-									setTimeout(function(){$('#headerSpringSubscribe').slideUp();},5000);
+									if($('#spring-modal').data().modal.isShown){//check if modal is visible
+										$('#headerSpringSubscribe').hide();// hide the header subscribe bar behind the modal
+										setTimeout(function(){$('#spring-modal').modal('hide')},5000);// close the modal in 5 sec
+									}
+									else{
+										// user interacting with header, hide after 5 sec
+										setTimeout(function(){$('#headerSpringSubscribe').slideUp();},5000);
+									}
 								}
 								// set subscribed in localstorage
 								localStorage.springSubscribed = 1;

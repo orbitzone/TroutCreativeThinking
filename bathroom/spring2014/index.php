@@ -244,7 +244,6 @@ include_once($serverBase."/includes/head/head-spring2014.php");
 	?>	
 	<script type="text/javascript">
 		$(function(){
-			localStorage.clear();
 			if (typeof localStorage.springSubscribed === 'undefined') {
 				// used to check if subscribed
 				localStorage.springSubscribed = 0;

@@ -315,16 +315,9 @@ include_once($serverBase."/includes/head/head-spring2014.php");
 								localStorage.springSubscribed = 1;
 							}
 							else if ( data.result == 'error'){
-								// handle error
-								mailchimpError = '';
-								if (data.msg.indexOf('-') > -1){
-									mailchimpError = data.msg.split(' - ', 2)[1];
-								}
-								else{
-									mailchimpError = data.msg;
-								}
+
 								//show error and hide after 5 sec
-								mailChimpForm.find('.mailchimpAjaxMessage').html('<p class="errorMessage"><i class="icon-remove-sign"></i> '+mailchimpError+'</p>');
+								mailChimpForm.find('.mailchimpAjaxMessage').html('<p class="errorMessage"><i class="icon-remove-sign"></i> '+data.msg+'</p>');
 								setTimeout(function(){mailChimpForm.find('.mailchimpAjaxMessage').html('');},5000);
 							}
 						});

@@ -107,7 +107,7 @@ include_once($serverBase."/includes/head/head-spring2014.php");
 							<div class="text-box">
 								<div class="text-wrap">
 									<h3>The 7 steps to bathroom happiness</h3>
-									<p>There is no better time to begin creating your new bathroom than in Spring. To help you along the journey to new bathroom happiness, we&rsquo;ve put together a collection of tips and inspiration.</p>
+									<p>When you undertake a bathroom renovation, you want to get it right. Here are some key points to consider to help make your bathroom project a success.</p>
 									<a href="http://mag.reece.com.au/spring/3" class="box-link1">Learn more</a>
 								</div>
 							</div>
@@ -194,7 +194,7 @@ include_once($serverBase."/includes/head/head-spring2014.php");
 		<div class="middle-section">
 			<h2>The Spring <span>Bathroom</span></h2>
 			<p>
-				The Spring Bathroom is all about the latest bathroom tips and trends for creating bathroom happiness. If you’ve like to receive ongoing inspiration, simply provide your details below. 
+				The Spring Bathroom is all about the latest bathroom tips and trends for creating bathroom happiness. If you’d like to receive ongoing inspiration, simply provide your details below. 
 			</p>
 		</div>
 		<div class="bottom-section">
@@ -294,7 +294,7 @@ include_once($serverBase."/includes/head/head-spring2014.php");
 						if (!$(this).val().match(/[0-9]+/)){
 							isFormValid = false;
 							// Show validation message for number
-							$(this).next('.required-input').html('Invalid post code');
+							$(this).next('.required-input').html('Invalid postcode');
 						}
 					});
 

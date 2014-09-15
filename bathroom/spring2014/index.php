@@ -67,7 +67,7 @@ include_once($serverBase."/includes/head/head-spring2014.php");
 											<div class="required-input" id="h-name-req">&nbsp;</div>
 										</div>
 										<div class="postcode-group hgroup">
-											<input type="number" name="POSTCODE" class="h-postcode" value="" placeholder="Postcode" required>
+											<input type="text" name="POSTCODE" class="h-postcode" value="" placeholder="Postcode" required>
 											<div class="required-input" id="h-name-req">&nbsp;</div>
 										</div>
 										<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
@@ -214,7 +214,7 @@ include_once($serverBase."/includes/head/head-spring2014.php");
 				</div>
 
 				<div class="postcode-group mgroup">
-					<input type="number" name="POSTCODE" class="m-postcode" value="" placeholder="Postcode" required>
+					<input type="text" name="POSTCODE" class="m-postcode" value="" placeholder="Postcode" required>
 					<div class="required-input" id="m-postcode-req">&nbsp;</div>
 				</div>
 				<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
@@ -289,7 +289,14 @@ include_once($serverBase."/includes/head/head-spring2014.php");
 							$(this).next('.required-input').html('Invalid email');
 						}
 					});
-					mailChimpForm.find('[type="number"]').each(function() {
+					mailChimpForm.find('.h-postcode').each(function() {
+						if (!$(this).val().match(/[0-9]+/)){
+							isFormValid = false;
+							// Show validation message for number
+							$(this).next('.required-input').html('Invalid postcode');
+						}
+					});
+					mailChimpForm.find('.m-postcode').each(function() {
 						if (!$(this).val().match(/[0-9]+/)){
 							isFormValid = false;
 							// Show validation message for number

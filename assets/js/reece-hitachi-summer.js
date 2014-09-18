@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
-    var $active;
+    var $active,
+        isFooter = false;
 
     $('[data-hitachi-show]').on('click', function(e) {
         e.preventDefault();
@@ -19,7 +20,12 @@ $(document).ready(function(){
 
         //Update tab link
         $hitachiTab.find('.hitachi-tab-link').remove();
-        $hitachiTab.prepend('<span class="hitachi-tab-link hitachi-tab-link-'+ $target.data('hitachi-tab-size') +'">' + $target.data('hitachi-tab-text') +'</span>')
-    })
+        $hitachiTab.prepend('<span class="hitachi-tab-link hitachi-tab-link-'+ $target.data('hitachi-tab-size') +'">' + $target.data('hitachi-tab-text') +'</span>');
+
+        if (!isFooter) {
+            isFooter = true;
+            $('.hitachi-footer').fadeIn();
+        }
+    });
 
 });

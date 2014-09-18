@@ -95,7 +95,7 @@ include_once($serverBase."/includes/head/head-generic.php");
 								<p class="hitachi-content-back"><a href="#rewards" data-hitachi-show="#rewards">Back to Rewards</a></p>
 							</div>
 						</div>
-						<!-- <p class="hitachi-footer"><img src="/assets/images/hitachi-summer/air-con-unit-footer.png" alt="" /></p> -->
+						<p class="hitachi-footer"><img src="/assets/images/hitachi-summer/air-con-unit-footer.png" alt="" /></p>
 					</div>
 				</div>
 			</div>

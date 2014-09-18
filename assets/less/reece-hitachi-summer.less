@@ -6,6 +6,72 @@
 @import "reece-variables.less";
 @import "reece-mixins.less";
 
+/* Animation keyframes */
+/* Wobble Vertical */
+@-webkit-keyframes wobble-vertical {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes wobble-vertical {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
 .hitachi {
 	background: #fff url('/assets/images/hitachi-summer/background-mobile.png') left top repeat-x;
 	margin-bottom: -35px; //make footer sit flush against background
@@ -18,7 +84,7 @@
 }
 
 /* Header */
-.hitachi-header {
+.hitachi-title {
 	background: transparent url('/assets/images/hitachi-summer/air-con-unit.jpg') center 30px no-repeat;
 	background-size: contain;
 	padding: 57% 0 13%; //scale padding top with image as it increases in height
@@ -29,40 +95,90 @@
 		padding-top: 280px;
 		padding-bottom: 60px;
 	}
-}
 
-.hitachi-header-title {
-	color: #fff;
-	font-size: 50px;
-	margin: 0;  
-	text-align: center;
-	text-transform: uppercase;
+	h1 {
+		color: #fff;
+		font-size: 50px;
+		margin: 0;  
+		text-align: center;
+		text-transform: uppercase;
 
-	@media (min-width: 768px) {
-		font-size: 73px;
-	}
+		@media (min-width: 768px) {
+			font-size: 73px;
+		}
 
-	@media (min-width: 980px) {
-		font-size: 93px;
+		@media (min-width: 980px) {
+			font-size: 93px;
+		}
 	}
 }
 
 /* Main content */
-.hitachi-content {
+// .hitachi-content {
+// 	margin: 0 auto;
+// 	max-width: 540px;
+// 	//padding: 15px 0;
+// 	//background: #fff;
+// }
+
+.hitachi-wrapper {
 	margin: 0 auto;
 	max-width: 540px;
-	padding: 15px 0;
-	background: #fff;
+	position: relative;
 }
 
-.hitachi-content-header {
+//Draw cruves underneath header and content
+.hitachi-header,
+.hitachi-content {
+	padding-bottom: 80px;
+	position: relative;
+	overflow: hidden; //clip the edge of the :after element
+
+	&:after {
+		border-bottom-left-radius: 100% 80px;
+		border-bottom-right-radius: 100% 80px;
+		bottom: 0;
+		content: '';
+		height: 80px;
+		position: absolute;
+		
+		//bleed the edges ouut of the parent so the rounded corner is hidden from view
+		left: -10px;
+		right: -10px;
+	}
+}
+
+.hitachi-header {
+	margin: 0 -15px;
+	z-index: 10;
+
+	&:after {
+		background: #c92127;
+	}
+}
+
+.hitachi-content {
+	margin-top: -60px;
+	z-index: 1;
+
+	&:after {
+		background: #fff;
+		border-bottom: 1px solid #bcbec0;
+	}
+}
+
+/* Main graphic at top */
+.hitachi-header-content {
 	background: #c92127;
 	color: #fff;
-	padding: 20px 20px 30px;
+	padding: 20px 20px 0;
 	text-align: center;
 	font-weight: 500;
 	line-height: 1.3;
-	margin: 0 -10px;
+
+	p {
+		margin: 0;
+	}
 
 	@media (min-width: 768px) {
 		line-height: 1.2;
@@ -119,7 +235,7 @@
 	border-top: 1px solid;
 	display: block;
 	line-height: 1;
-	margin-top: 5px;
+	margin: 5px 0 0;
 	padding: 10px 0;
 
 	@media (min-width: 768px) {
@@ -128,15 +244,180 @@
 	}
 }
 
-/* Terms and conditions on first page */
-.hitachi-terms {
+.hitachi-tab-link {
+	z-index: 100;
 	position: absolute;
-	bottom: 0;
-	width: 100%;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 140px;
 	text-align: center;
-	font-size: 16px;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1.3;
+	margin-top: -30px;
+	color: #fff;
+	text-transform: uppercase;
 
-	a {
-		text-decoration: underline;
+	&:after {
+		border-color: #fff transparent transparent transparent;
+		border-style: solid;
+		border-width: 14px 8px 0 8px;
+		bottom: -20px;
+		content: '';
+		height: 0;
+		left: 0;
+		margin-left: auto;
+		margin-right: auto;
+		position: absolute;
+		right: 0;
+		width: 0;
+	}
+
+	&:hover {
+		color: #fff;
 	}
 }
+
+.hitachi-tab-background {
+	width: 160px;
+	height: 160px;
+	margin-top: -110px;
+	border: 5px solid #fff;
+	position: absolute;
+	background: #c92127;
+	z-index: 3;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 160px;
+	text-align: center;
+
+	-webkit-box-shadow: 0px 3px 35px 0px rgba(50, 50, 50, 0.5);
+	-moz-box-shadow:    0px 3px 35px 0px rgba(50, 50, 50, 0.5);
+	box-shadow:         0px 3px 35px 0px rgba(50, 50, 50, 0.5);
+
+}
+
+/* Body content which expands into view */
+.hitachi-content-rewards,
+.hitachi-content-terms {
+	background: #fff;
+	padding-top: 150px;
+	display: none;
+	border-left: 1px solid #ebebec;
+	border-right: 1px solid #ebebec;
+
+	&.active {
+		display: block;
+	}
+}
+
+.hitachi-content-rewards {
+	text-align: center;
+}
+
+.hitachi-reward-list {
+	margin-top: 0;
+
+	dt {
+		color: #6d6e71;
+		font-size: 18px;
+		font-weight: 300;
+		margin-bottom: 5px;
+	}
+
+	dd {
+		color: #c92127;
+		font-size: 26px;
+		font-weight: bold;
+		margin-bottom: 25px;
+	}
+}
+
+.hitachi-legal {
+	font-size: 14px;
+	color: #6d6e71;
+}
+
+.hitachi-content-terms {
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #6d6e71;
+
+	h2 {
+		font-size: 18px;
+		color: #000;
+	}
+
+	h3 {
+		font-size: 14px;
+		font-weight: normal;
+		color: #000;
+	}
+
+	ul,
+	ol,
+	li {
+		margin-left: 0;
+		list-style-type: none;
+	}
+
+	li {
+		margin-bottom: 10px;
+	}
+
+	strong { color: #000; }
+}
+
+.hitachi-content-back {
+	font-weight: bold;
+	padding-left: 25px;
+	position: relative;
+	font-size: 16px;
+	margin-top: 30px;
+
+	&:first-child {
+		margin-top: 0;
+		margin-bottom: 30px;
+	}
+
+	a {
+		color: #c92127;
+	}
+
+	//generate triangle with CSS
+	&:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 2px;
+		border-style: solid;
+		border-width: 8px 14px 8px 0;
+		border-color: transparent #c92127 transparent transparent;
+	}
+}
+
+/* Terms and conditions on first page */
+.hitachi-terms {
+	a {
+		color: #c92127;
+		text-decoration: underline;
+	}
+	margin-top: 25px;
+	margin-bottom: 0;
+}
+
+// .hitachi-terms {
+// 	position: absolute;
+// 	bottom: 0;
+// 	width: 100%;
+// 	text-align: center;
+// 	font-size: 16px;
+
+// 	a {
+// 		text-decoration: underline;
+// 	}
+// }

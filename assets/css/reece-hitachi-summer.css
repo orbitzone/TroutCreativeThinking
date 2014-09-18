@@ -1,0 +1,159 @@
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.hitachi {
+  background: #ffffff url('/assets/images/hitachi-summer/background-mobile.png') left top repeat-x;
+  margin-bottom: -35px;
+  padding-bottom: 200px;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .hitachi {
+    background: #ffffff url('/assets/images/hitachi-summer/background.jpg') center top no-repeat;
+  }
+}
+/* Header */
+.hitachi-header {
+  background: transparent url('/assets/images/hitachi-summer/air-con-unit.jpg') center 30px no-repeat;
+  background-size: contain;
+  padding: 57% 0 13%;
+}
+@media (min-width: 543px) {
+  .hitachi-header {
+    background-size: auto auto;
+    padding-top: 280px;
+    padding-bottom: 60px;
+  }
+}
+.hitachi-header-title {
+  color: #fff;
+  font-size: 50px;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .hitachi-header-title {
+    font-size: 73px;
+  }
+}
+@media (min-width: 980px) {
+  .hitachi-header-title {
+    font-size: 93px;
+  }
+}
+/* Main content */
+.hitachi-content {
+  margin: 0 auto;
+  max-width: 540px;
+  padding: 15px 0;
+  background: #fff;
+}
+.hitachi-content-header {
+  background: #c92127;
+  color: #fff;
+  padding: 20px 20px 30px;
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.3;
+  margin: 0 -10px;
+}
+@media (min-width: 768px) {
+  .hitachi-content-header {
+    line-height: 1.2;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+.hitachi-text-lg {
+  font-size: 32px;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .hitachi-text-lg {
+    font-size: 66px;
+  }
+}
+.hitachi-text-med {
+  display: block;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .hitachi-text-med {
+    font-size: 44px;
+  }
+}
+.hitachi-text-sm {
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  position: relative;
+  top: -15px;
+}
+@media (min-width: 768px) {
+  .hitachi-text-sm {
+    font-size: 20px;
+  }
+}
+.hitachi-text-body {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+  .hitachi-text-body {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+}
+.hitachi-text-divider {
+  border-bottom: 1px solid;
+  border-color: #fff;
+  border-top: 1px solid;
+  display: block;
+  line-height: 1;
+  margin-top: 5px;
+  padding: 10px 0;
+}
+@media (min-width: 768px) {
+  .hitachi-text-divider {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+/* Terms and conditions on first page */
+.hitachi-terms {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+}
+.hitachi-terms a {
+  text-decoration: underline;
+}

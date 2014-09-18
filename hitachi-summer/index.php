@@ -25,6 +25,7 @@ include_once($serverBase."/includes/head/head-generic.php");
 						<h1>Hitachi Summer Rewards</h1>
 					</div>
 					<div class="hitachi-wrapper">
+						<div class="hitachi-top-bg"></div>
 						<div class="hitachi-header">
 							<div class="hitachi-header-content">
 								<p>
@@ -42,14 +43,12 @@ include_once($serverBase."/includes/head/head-generic.php");
 						</div>
 
 						<div class="hitachi-tab">
-							<a href="#rewards" class="hitachi-tab-link">Discover Rewards</a>
+							<a href="#rewards" class="hitachi-tab-link" data-hitachi-show="#rewards">Discover Rewards</a>
 							<div class="hitachi-tab-background"></div>
 						</div>
 
-						<!-- <p class="hitachi-tab"><a href="#rewards">Discover Rewards</a></p>
-						<div class="hitachi-tab-background"></div> -->
 						<div class="hitachi-content">
-							<div class="hitachi-content-rewards" id="rewards">
+							<div class="hitachi-content-rewards" id="rewards" data-hitachi-tab-text="Buy" data-hitachi-tab-size="large">
 								<dl class="hitachi-reward-list">
 									<dt>5 - 9 units and receive a</dt>
 									<dd>$200 Coles voucher</dd>
@@ -62,10 +61,10 @@ include_once($serverBase."/includes/head/head-generic.php");
 								</dl>
 								<p class="hitachi-legal">Reward period starts 1 October 2014 and ends 30 November 2014.</p>
 								<p class="hitachi-legal">Available to Reece account customers and Reece cash sale account customers.</p>
-								<p class="hitachi-terms"><a href="#">Terms &amp; conditions</a></p>
+								<p class="hitachi-terms"><a href="#terms" data-hitachi-show="#terms">Terms &amp; conditions</a></p>
 							</div>
-							<div class="hitachi-content-terms" id="terms">
-								<p class="hitachi-content-back"><a href="#rewards">Back to Rewards</a></p>
+							<div class="hitachi-content-terms" id="terms" data-hitachi-tab-text="Terms and conditions" data-hitachi-tab-size="small">
+								<p class="hitachi-content-back"><a href="#rewards" data-hitachi-show="#rewards">Back to Rewards</a></p>
 								<h2>2014 Reece Hitachi Summer Rewards Promotion</h2>
 								<h3>Terms and Conditions</h3>
 								<ol>
@@ -93,9 +92,10 @@ include_once($serverBase."/includes/head/head-generic.php");
 									<li><strong>11.</strong> For this competition winners must be aged over 18 years of age.</li>
 									<li><strong>12.</strong> The Promoter is Reece Pty Ltd, ACN 008 576 903, ABN 96 008 576 903, 118 Burwood Highway, Burwood, Victoria 3125, alternatively by telephone on 03 9274 0000.</li>
 								</ul>
-								<p class="hitachi-content-back"><a href="#rewards">Back to Rewards</a></p>
+								<p class="hitachi-content-back"><a href="#rewards" data-hitachi-show="#rewards">Back to Rewards</a></p>
 							</div>
 						</div>
+						<!-- <p class="hitachi-footer"><img src="/assets/images/hitachi-summer/air-con-unit-footer.png" alt="" /></p> -->
 					</div>
 				</div>
 			</div>
@@ -116,7 +116,8 @@ include_once($serverBase."/includes/head/head-generic.php");
 	"/assets/js/reece-ocnav.js",
 	"/assets/js/reece-carousel.js",
 	"/assets/js/bootstrap-modal.js",
-	"/assets/js/placeholders.min.js"
+	"/assets/js/placeholders.min.js",
+	"/assets/js/reece-hitachi-summer.js"
 	]; 
 	include_once($serverBase."/includes/foot/scripts.php");
 	?>

@@ -6,71 +6,6 @@
 @import "reece-variables.less";
 @import "reece-mixins.less";
 
-/* Animation keyframes */
-/* Wobble Vertical */
-@-webkit-keyframes wobble-vertical {
-  16.65% {
-    -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-  }
-
-  33.3% {
-    -webkit-transform: translateY(-6px);
-    transform: translateY(-6px);
-  }
-
-  49.95% {
-    -webkit-transform: translateY(4px);
-    transform: translateY(4px);
-  }
-
-  66.6% {
-    -webkit-transform: translateY(-2px);
-    transform: translateY(-2px);
-  }
-
-  83.25% {
-    -webkit-transform: translateY(1px);
-    transform: translateY(1px);
-  }
-
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
-
-@keyframes wobble-vertical {
-  16.65% {
-    -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-  }
-
-  33.3% {
-    -webkit-transform: translateY(-6px);
-    transform: translateY(-6px);
-  }
-
-  49.95% {
-    -webkit-transform: translateY(4px);
-    transform: translateY(4px);
-  }
-
-  66.6% {
-    -webkit-transform: translateY(-2px);
-    transform: translateY(-2px);
-  }
-
-  83.25% {
-    -webkit-transform: translateY(1px);
-    transform: translateY(1px);
-  }
-
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
 
 .hitachi {
 	background: #fff url('/assets/images/hitachi-summer/background-mobile.png') left top repeat-x;
@@ -114,29 +49,41 @@
 }
 
 /* Main content */
-// .hitachi-content {
-// 	margin: 0 auto;
-// 	max-width: 540px;
-// 	//padding: 15px 0;
-// 	//background: #fff;
-// }
-
 .hitachi-wrapper {
 	margin: 0 auto;
 	max-width: 540px;
 	position: relative;
 }
 
-//Draw cruves underneath header and content
+/* Draw curves on top and bottom of content */
+.hitachi-header,
+.hitachi-top-bg,
+.hitachi-content {
+	position: relative;
+	overflow: hidden; //clip the edge of the :after element
+}
+
+/* Top curves */
+.hitachi-header,
+.hitachi-top-bg {
+	&:before {
+		content: '';
+		height: 80px;
+		position: absolute;
+		top: 0;
+		
+		//bleed the edges ouut of the parent so the rounded corner is hidden from view
+		left: -10px;
+		right: -10px;
+	}
+}
+
+/* Bottom curves */
 .hitachi-header,
 .hitachi-content {
 	padding-bottom: 80px;
-	position: relative;
-	overflow: hidden; //clip the edge of the :after element
 
 	&:after {
-		border-bottom-left-radius: 100% 80px;
-		border-bottom-right-radius: 100% 80px;
 		bottom: 0;
 		content: '';
 		height: 80px;
@@ -149,11 +96,37 @@
 }
 
 .hitachi-header {
-	margin: 0 -15px;
+	margin: -60px -15px 0;
+	padding-top: 60px;
 	z-index: 10;
 
-	&:after {
+	&:after,
+	&:before {
 		background: #c92127;
+	}
+
+	&:after {
+		border-bottom-left-radius: 100% 160px;
+		border-bottom-right-radius: 100% 160px;
+	}
+
+	&:before {
+		border-top-left-radius: 100% 160px;
+		border-top-right-radius: 100% 160px;
+	}
+}
+
+.hitachi-top-bg {
+	padding-top: 80px;
+
+	&:before {
+		background: #fff;
+		border-top-left-radius: 100% 140px;
+		border-top-right-radius: 100% 140px;
+		
+		//bleed the edges ouut of the parent so the rounded corner is hidden from view
+		left: -10px;
+		right: -10px;
 	}
 }
 
@@ -162,6 +135,8 @@
 	z-index: 1;
 
 	&:after {
+		border-bottom-left-radius: 100% 140px;
+		border-bottom-right-radius: 100% 140px;
 		background: #fff;
 		border-bottom: 1px solid #bcbec0;
 	}
@@ -171,10 +146,12 @@
 .hitachi-header-content {
 	background: #c92127;
 	color: #fff;
-	padding: 20px 20px 0;
+	padding: 0 20px;
 	text-align: center;
 	font-weight: 500;
 	line-height: 1.3;
+	position: relative;
+	z-index: 11;
 
 	p {
 		margin: 0;
@@ -244,21 +221,44 @@
 	}
 }
 
+.hitachi-tab {
+	position: relative;
+}
+
+/* The rounded tab to expand content */
 .hitachi-tab-link {
-	z-index: 100;
-	position: absolute;
-	left: 0;
-	right: 0;
-	margin-left: auto;
-	margin-right: auto;
-	width: 140px;
-	text-align: center;
+	color: #fff;
 	font-size: 20px;
 	font-weight: 500;
-	line-height: 1.3;
+	left: 0;
+	line-height: 1.1;
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: -30px;
-	color: #fff;
+	position: absolute;
+	right: 0;
+	text-align: center;
 	text-transform: uppercase;
+	width: 140px;
+	z-index: 100;
+	bottom: -30px;
+
+	&:hover {
+		color: #fff;
+	}
+
+	&.hitachi-tab-link-small {
+		font-size: 18px;
+	}
+
+	&.hitachi-tab-link-large {
+		font-size: 30px;
+	}
+}
+
+//Apply triangle icon to link only
+a.hitachi-tab-link {
+	bottom: -25px;
 
 	&:after {
 		border-color: #fff transparent transparent transparent;
@@ -274,30 +274,26 @@
 		right: 0;
 		width: 0;
 	}
-
-	&:hover {
-		color: #fff;
-	}
 }
 
 .hitachi-tab-background {
-	width: 160px;
-	height: 160px;
-	margin-top: -110px;
-	border: 5px solid #fff;
-	position: absolute;
 	background: #c92127;
-	z-index: 3;
+	border-radius: 160px;
+	border: 5px solid #fff;
+	height: 160px;
 	left: 0;
-	right: 0;
 	margin-left: auto;
 	margin-right: auto;
-	border-radius: 160px;
+	margin-top: -110px;
+	position: absolute;
+	right: 0;
 	text-align: center;
+	width: 160px;
+	z-index: 3;
 
-	-webkit-box-shadow: 0px 3px 35px 0px rgba(50, 50, 50, 0.5);
-	-moz-box-shadow:    0px 3px 35px 0px rgba(50, 50, 50, 0.5);
-	box-shadow:         0px 3px 35px 0px rgba(50, 50, 50, 0.5);
+	-webkit-box-shadow: 0px 3px 35px 0px rgba(0, 0, 0, 0.8);
+	-moz-box-shadow:    0px 3px 35px 0px rgba(0, 0, 0, 0.8);
+	box-shadow:         0px 3px 35px 0px rgba(0, 0, 0, 0.8);
 
 }
 
@@ -305,10 +301,10 @@
 .hitachi-content-rewards,
 .hitachi-content-terms {
 	background: #fff;
-	padding-top: 150px;
-	display: none;
 	border-left: 1px solid #ebebec;
 	border-right: 1px solid #ebebec;
+	display: none;
+	padding-top: 150px;
 
 	&.active {
 		display: block;
@@ -373,11 +369,11 @@
 }
 
 .hitachi-content-back {
+	font-size: 16px;
 	font-weight: bold;
+	margin-top: 30px;
 	padding-left: 25px;
 	position: relative;
-	font-size: 16px;
-	margin-top: 30px;
 
 	&:first-child {
 		margin-top: 0;
@@ -408,6 +404,13 @@
 	}
 	margin-top: 25px;
 	margin-bottom: 0;
+}
+
+.hitachi-footer {
+	text-align: center;
+	margin-top: -75px;
+	z-index: 10;
+	position: relative;
 }
 
 // .hitachi-terms {

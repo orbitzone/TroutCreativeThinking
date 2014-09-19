@@ -1048,8 +1048,7 @@
 }
 @media (max-width: 767px) {
   .diy-disasters .entryModal.modal.fade.in {
-    top: 40px;
-    position: absolute;
+    top: 10%;
   }
 }
 .diy-disasters .entryModal .modalHeader {
@@ -1123,6 +1122,12 @@
 }
 .diy-disasters .entryModal .modalBody {
   padding: 20px 40px;
+}
+@media (max-width: 767px) {
+  .diy-disasters .entryModal .modalBody {
+    max-height: 230px;
+    overflow-y: auto;
+  }
 }
 .diy-disasters .entryModal .modalBody .span6 {
   padding: 20px 0;

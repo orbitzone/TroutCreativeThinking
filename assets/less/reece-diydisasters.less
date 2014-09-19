@@ -963,8 +963,8 @@
 
 		@media (max-width: 767px) {
 			&.modal.fade.in {
-				top: 40px;
-				position: absolute;
+				top: 10%;
+				//position: absolute;
 			}
 		}
 		
@@ -1033,6 +1033,12 @@
 		}
 		.modalBody{
 			padding: 20px 40px;
+			
+			@media (max-width:767px){
+				max-height: 230px;
+				overflow-y: auto;
+			}
+
 			.span6{
 				padding: 20px 0;
 			}

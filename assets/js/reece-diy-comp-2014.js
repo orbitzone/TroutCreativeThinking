@@ -135,6 +135,9 @@ $(document).ready(function(){
 				
 				// update current item
 				app.currentItemID = prev.getAttribute('data-item-id');
+
+				//scroll to top of body container
+				app.entryModal.find('.modalBody').scrollTop(0, 0);
 				
 			});
 			
@@ -167,6 +170,9 @@ $(document).ready(function(){
 				
 				// update current item
 				app.currentItemID = next.getAttribute('data-item-id');
+
+				//scroll to top of body container
+				app.entryModal.find('.modalBody').scrollTop(0, 0);
 				
 			});
 			

@@ -960,23 +960,17 @@
 	.entryModal{
 		.diyModal;
 		text-align: left;
-
-		@media (max-width: 767px) {
-			&.modal.fade.in {
-				top: 10%;
-				//position: absolute;
-			}
-		}
-		
+		top: 0 !important;
+		margin-top: 40px;
+		height: 100%;
 		.modalHeader{
 			clear: both;
 			background: black;
 			clear: both;
 			position: relative;
 			.close{
-				position: absolute;
-				left: 0;
-				top: -40px;
+				float: left;
+				margin-top: -40px;
 			}
 			.clearfix;
 			.entryPopButtons{
@@ -1032,13 +1026,9 @@
 			}
 		}
 		.modalBody{
+			max-height: 60%;
+			overflow-y: scroll;
 			padding: 20px 40px;
-			
-			@media (max-width:767px){
-				max-height: 230px;
-				overflow-y: auto;
-			}
-
 			.span6{
 				padding: 20px 0;
 			}

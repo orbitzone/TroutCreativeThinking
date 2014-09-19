@@ -25,7 +25,6 @@ include_once($serverBase."/includes/head/head-generic.php");
 						<h1>Hitachi Summer Rewards</h1>
 					</div>
 					<div class="hitachi-wrapper">
-						<div class="hitachi-top-bg"></div>
 						<div class="hitachi-header">
 							<div class="hitachi-header-content">
 								<p>
@@ -44,7 +43,6 @@ include_once($serverBase."/includes/head/head-generic.php");
 
 						<div class="hitachi-tab">
 							<a href="#rewards" class="hitachi-tab-link" data-hitachi-show="#rewards">Discover Rewards</a>
-							<div class="hitachi-tab-background"></div>
 						</div>
 
 						<div class="hitachi-content">
@@ -63,7 +61,7 @@ include_once($serverBase."/includes/head/head-generic.php");
 								<p class="hitachi-legal">Available to Reece account customers and Reece cash sale account customers.</p>
 								<p class="hitachi-terms"><a href="#terms" data-hitachi-show="#terms">Terms &amp; conditions</a></p>
 							</div>
-							<div class="hitachi-content-terms" id="terms" data-hitachi-tab-text="Terms and conditions" data-hitachi-tab-size="small">
+							<div class="hitachi-content-terms" id="terms" data-hitachi-tab-text="Terms &amp; conditions" data-hitachi-tab-size="small">
 								<p class="hitachi-content-back"><a href="#rewards" data-hitachi-show="#rewards">Back to Rewards</a></p>
 								<h2>2014 Reece Hitachi Summer Rewards Promotion</h2>
 								<h3>Terms and Conditions</h3>

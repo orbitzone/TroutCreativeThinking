@@ -1046,6 +1046,12 @@
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
+@media (max-width: 767px) {
+  .diy-disasters .entryModal.modal.fade.in {
+    top: 40px;
+    position: absolute;
+  }
+}
 .diy-disasters .entryModal .modalHeader {
   background: black;
   clear: both;

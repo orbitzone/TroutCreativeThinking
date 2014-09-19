@@ -49,6 +49,10 @@
     padding-bottom: 60px;
   }
 }
+.lt-ie9 .hitachi-title {
+  padding-top: 280px;
+  padding-bottom: 60px;
+}
 .hitachi-title h1 {
   color: #fff;
   font-size: 50px;
@@ -65,6 +69,9 @@
   .hitachi-title h1 {
     font-size: 93px;
   }
+}
+.lt-ie9 .hitachi-title h1 {
+  font-size: 93px;
 }
 /* Main content */
 .hitachi-wrapper {

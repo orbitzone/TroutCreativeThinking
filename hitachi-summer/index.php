@@ -22,7 +22,7 @@ include_once($serverBase."/includes/head/head-generic.php");
 			<div class="content-container">
 				<div class="inner-wrapper">
 					<div class="hitachi-title">
-						<h1>Hitachi Summer Rewards</h1>
+						<h1>Hitachi Summer<br />Rewards</h1>
 					</div>
 					<div class="hitachi-wrapper">
 						<div class="hitachi-header">

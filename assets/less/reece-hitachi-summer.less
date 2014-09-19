@@ -24,9 +24,13 @@
 	background-size: contain;
 	padding: 57% 0 13%; //scale padding top with image as it increases in height
 
+	.backgroundsize & {
+		background-image: url('/assets/images/hitachi-summer/air-con-unit-2x.jpg');
+	}
+
 	//reset the background resizing when it hits the images natural width
 	@media (min-width: 543px) {
-		background-size: auto auto;
+		background-size: 492px auto;
 		padding-top: 280px;
 		padding-bottom: 60px;
 	}

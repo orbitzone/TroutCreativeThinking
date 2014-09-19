@@ -42,9 +42,12 @@
   background-size: contain;
   padding: 57% 0 13%;
 }
+.backgroundsize .hitachi-title {
+  background-image: url('/assets/images/hitachi-summer/air-con-unit-2x.jpg');
+}
 @media (min-width: 543px) {
   .hitachi-title {
-    background-size: auto auto;
+    background-size: 492px auto;
     padding-top: 280px;
     padding-bottom: 60px;
   }

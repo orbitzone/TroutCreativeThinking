@@ -1008,9 +1008,7 @@
   -moz-border-radius: 0;
   border-radius: 0;
   text-align: left;
-  top: 0 !important;
   margin-top: 40px;
-  height: 100%;
   width: 900px;
   margin-left: -450px;
 }
@@ -1048,6 +1046,14 @@
 .diy-disasters .entryModal ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 767px) {
+  .diy-disasters .entryModal {
+    height: 100%;
+  }
+  .diy-disasters .entryModal.fade.in {
+    top: 0;
+  }
 }
 .diy-disasters .entryModal .modalHeader {
   background: black;
@@ -1118,9 +1124,13 @@
   }
 }
 .diy-disasters .entryModal .modalBody {
-  max-height: 60%;
-  overflow-y: scroll;
   padding: 20px 40px;
+}
+@media (max-width: 767px) {
+  .diy-disasters .entryModal .modalBody {
+    max-height: 60%;
+    overflow-y: scroll;
+  }
 }
 .diy-disasters .entryModal .modalBody .span6 {
   padding: 20px 0;
@@ -1519,7 +1529,7 @@
     background: #000000 url('../../assets/images/diy-disasters/A4_DIY.jpg') 0 0 no-repeat;
   }
   #diyDisastersComp2014 .diy-footer .footer-callout {
-    padding: 0 20px 0 40px;
+    padding: 0 20px;
     min-height: 160px;
   }
   #diyDisastersComp2014 .diy-footer .footer-callout h3 {

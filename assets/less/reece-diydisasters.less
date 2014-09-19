@@ -960,9 +960,16 @@
 	.entryModal{
 		.diyModal;
 		text-align: left;
-		top: 0 !important;
-		margin-top: 40px;
-		height: 100%;
+		margin-top: 40px; //allow space for close icon
+
+		@media (max-width:767px){
+			height: 100%; //fix height for mobile, so we give the modalContent a max-height in %
+
+			&.fade.in {
+				top: 0;
+			}
+		}
+
 		.modalHeader{
 			clear: both;
 			background: black;
@@ -1026,9 +1033,13 @@
 			}
 		}
 		.modalBody{
-			max-height: 60%;
-			overflow-y: scroll;
 			padding: 20px 40px;
+
+			@media (max-width:767px){
+				max-height: 60%;
+				overflow-y: scroll;
+			}
+
 			.span6{
 				padding: 20px 0;
 			}
@@ -1401,7 +1412,7 @@
 				background: @colourBlack url('../../assets/images/diy-disasters/A4_DIY.jpg') 0 0 no-repeat;
 			}
 			.footer-callout {
-				padding: 0 20px 0 40px;
+				padding: 0 20px;
 				min-height: 160px;
 				h3 { margin-top: 5px; padding: 10px 0 0;  }
 				p, span { padding: 0; }

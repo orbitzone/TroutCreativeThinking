@@ -219,6 +219,11 @@ $(document).ready(function(){
 			
 			// show
 			app.entryModal.modal('show');
+
+			//scroll to top of body container
+			app.entryModal.on('shown', function () {
+				app.entryModal.find('.modalBody').scrollTop(0, 0);
+			});
 		},
 		checkHash: function(){
 				hashTag = location.hash.slice(1);

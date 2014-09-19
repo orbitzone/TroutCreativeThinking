@@ -45,13 +45,15 @@
 				data-anchor-target="#slideHistoryIntro"
 				data-100-bottom="opacity: .3"
 				data-bottom="opacity:1"
-				>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac leo bibendum, suscipit sapien vitae, posuere nulla. Duis vitae neque urna. Cras in sem eu risus blandit congue in et odio. Sed non congue tellus, vel facilisis tortor.</p>
-				<img src="/assets/images/aboutus/history/img-drop.png" alt=" " class="water-drop"
+				>Scroll down to experience some of our most significant moments over the last 90+ years.</p>
+				<h2 class="year">1919 - 2014</h2>
+				<p class="scroll">Scroll</p>
+				<!-- <img src="/assets/images/aboutus/history/img-drop.png" alt=" " class="water-drop"
 				data-anchor-target="#slideHistoryIntro"
 				data-top-top="top: 0%"
 				data-center-bottom="top: 60%; opacity: 1"
 				data--200-top-bottom="opacity: 0; top: 80%"
-				>
+				> -->
 
 			</div>
 		</header>

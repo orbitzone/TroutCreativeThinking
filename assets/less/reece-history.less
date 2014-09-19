@@ -10,6 +10,7 @@
 
 .history {
 	.history-section-nav {
+		display: none;
 		@item_h: 36px;
 		@item_c: 8;
 		@navheight: 20px;
@@ -278,6 +279,32 @@
 		position: relative;
 		top: 0%;
 		z-index: 10;
+	}
+	.year {
+		border-bottom: 3px solid #000;
+		display: inline-block;
+		position: relative;
+		margin-bottom: 70px;
+		font-weight: normal;
+
+		&:after {
+			border-color: #000 transparent transparent transparent;
+			border-style: solid;
+			border-width: 60px 35px 0 35px;
+			bottom: -60px;
+			content: '';
+			height: 0;
+			left: 0;
+			margin-left: auto;
+			margin-right: auto;
+			position: absolute;
+			right: 0;
+			width: 0;
+		}
+	}
+	.scroll {
+		text-transform: uppercase;
+		font-size: 18px;
 	}
 }
 

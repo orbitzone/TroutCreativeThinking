@@ -11,12 +11,12 @@ $(document).ready(function(){
 
         //hide active
         if ($active) {
-            $active.slideUp('fast');
+            $active.slideUp();
         }
 
         //show new active
         $active = $target;
-        $target.slideDown('fast');
+        $target.slideDown();
 
         //Update tab link
         $hitachiTab.find('.hitachi-tab-link').remove();

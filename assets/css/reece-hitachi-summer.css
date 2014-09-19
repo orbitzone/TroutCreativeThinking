@@ -417,3 +417,7 @@ a.hitachi-tab-link:after {
   position: relative;
   display: none;
 }
+.hitachi-footer img {
+  max-width: 240px;
+  height: auto;
+}

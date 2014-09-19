@@ -97,12 +97,18 @@
   background-image: url('/assets/images/hitachi-summer/header-top.png');
   background-position: bottom center;
 }
+.backgroundsize .hitachi-header:before {
+  background-image: url('/assets/images/hitachi-summer/header-top-2x.png');
+}
 .hitachi-header:after {
   bottom: -148px;
   background-image: url('/assets/images/hitachi-summer/header-bottom.png');
   background-position: top center;
   background-repeat: no-repeat;
   height: 148px;
+}
+.backgroundsize .hitachi-header:after {
+  background-image: url('/assets/images/hitachi-summer/header-bottom-2x.png');
 }
 .hitachi-header-content {
   background: #c92127;
@@ -214,7 +220,13 @@
   top: 13px;
   width: 100px;
 }
-@media (min-width: 480px) {
+@media (min-width: 400px) {
+  .hitachi-tab-link.hitachi-tab-link-small {
+    font-size: 13px;
+    top: 20px;
+  }
+}
+@media (min-width: 500px) {
   .hitachi-tab-link.hitachi-tab-link-small {
     font-size: 16px;
     top: 45px;
@@ -297,6 +309,10 @@ a.hitachi-tab-link:after {
   left: 0;
   background-image: url('/assets/images/hitachi-summer/content-bottom.png');
   background-position: top center;
+}
+.backgroundsize .hitachi-content-rewards:after,
+.backgroundsize .hitachi-content-terms:after {
+  background-image: url('/assets/images/hitachi-summer/content-bottom-2x.png');
 }
 .hitachi-content-rewards.active,
 .hitachi-content-terms.active {

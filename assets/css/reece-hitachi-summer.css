@@ -99,7 +99,7 @@
   background-repeat: no-repeat;
 }
 .hitachi-header:before {
-  top: -101px;
+  top: -100px;
   height: 101px;
   background-image: url('/assets/images/hitachi-summer/header-top.png');
   background-position: bottom center;
@@ -108,7 +108,7 @@
   background-image: url('/assets/images/hitachi-summer/header-top-2x.png');
 }
 .hitachi-header:after {
-  bottom: -148px;
+  bottom: -147px;
   background-image: url('/assets/images/hitachi-summer/header-bottom.png');
   background-position: top center;
   background-repeat: no-repeat;

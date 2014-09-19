@@ -29,7 +29,7 @@ include_once($serverBase."/includes/head/head-generic.php");
 							<div class="hitachi-header-content">
 								<p>
 									<span class="hitachi-text-med">Buy 5 or more</span> 
-									<span class="hitachi-text-body">Hitachi Air Conditioners in October and November and be rewarded with a</span>
+									<span class="hitachi-text-body">Hitachi Air Conditioners in October and November and&nbsp;be&nbsp;rewarded&nbsp;with&nbsp;a</span>
 									<span class="hitachi-text-med">voucher valued</span> 
 									<span class="hitachi-text-divider">
 										<span class="hitachi-text-sm">from</span> 
@@ -59,7 +59,7 @@ include_once($serverBase."/includes/head/head-generic.php");
 								</dl>
 								<p class="hitachi-legal">Reward period starts 1 October 2014 and ends 30 November 2014.</p>
 								<p class="hitachi-legal">Available to Reece account customers and Reece cash sale account customers.</p>
-								<p class="hitachi-terms"><a href="#terms" data-hitachi-show="#terms">Terms &amp; conditions</a></p>
+								<p class="hitachi-terms"><a href="#terms" data-hitachi-show="#terms">Terms &amp; Conditions</a></p>
 							</div>
 							<div class="hitachi-content-terms" id="terms" data-hitachi-tab-text="Terms &amp; conditions" data-hitachi-tab-size="small">
 								<p class="hitachi-content-back"><a href="#rewards" data-hitachi-show="#rewards">Back to Rewards</a></p>

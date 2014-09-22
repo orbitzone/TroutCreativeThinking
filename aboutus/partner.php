@@ -39,11 +39,23 @@ include_once($serverBase."/includes/head/head-generic.php");
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner">
                                 <div class="item active">
-                                  <img src="../assets/images/aboutus/partner/banner/slide-1.jpg" alt="dont forget alt text">
-                              </div>
-                                    <!-- <div class="item">
-                                      <img src="http://placehold.it/1163x523&text=Slide-two" alt="dont forget alt text">
-                                  </div> -->
+                                    <div class="text-cover">
+                                        <p class="text">Gain instant exposure to over 400 stores Australia wide</p>
+                                    </div>
+                                    <img src="http://lorempixel.com/1160/522" height="522" width="1160" alt="dont forget alt text">
+                                </div>
+                                <div class="item">
+                                    <div class="text-cover">
+                                        <p class="text">Gain instant exposure to over 400 stores Australia wide</p>
+                                    </div>
+                                    <img src="http://lorempixel.com/1161/522" height="522" width="1160" alt="dont forget alt text">
+                                </div>
+                                <div class="item">
+                                    <div class="text-cover">
+                                        <p class="text">Gain instant exposure to over 400 stores Australia wide</p>
+                                    </div>
+                                    <img src="http://lorempixel.com/1162/522" height="522" width="1160" alt="dont forget alt text">
+                                </div>
                               </div>
 
                               <!-- Controls -->

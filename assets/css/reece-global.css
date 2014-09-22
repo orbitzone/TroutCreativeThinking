@@ -7315,7 +7315,8 @@ h6 {
 }
 .carousel-control {
   height: 80px;
-  margin-top: 0;
+  margin-top: -40px;
+  line-height: 80px;
   font-size: 120px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
   background-color: transparent;
@@ -7341,6 +7342,47 @@ h6 {
 .carousel.opacity9 .carousel-control {
   opacity: 0.9;
   filter: alpha(opacity=90);
+}
+.carousel .text-cover {
+  background: transparent url('../images/bg-black-50pc.png') center center repeat;
+  background: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  padding-top: 22%;
+}
+.flexbox .carousel .text-cover {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 0;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+  display: -webkit-flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  display: -ms-flexbox;
+}
+.carousel .text-cover .text {
+  color: #fff;
+  font-size: 16px;
+  font-weight: lighter;
+  margin: 0;
+  width: 70%;
+  padding: 0 15%;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .carousel .text-cover .text {
+    font-size: 24px;
+  }
+}
+.lt-ie9 .carousel .text-cover .text {
+  font-size: 24px;
 }
 .btn-highlight {
   color: #ffffff;

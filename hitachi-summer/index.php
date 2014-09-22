@@ -10,7 +10,7 @@ $cssScriptPaths = [
 include_once($serverBase."/includes/head/head-generic.php");
 ?>		
 
-<body>
+<body class="withSubNav">
 	<div class="ocmain-wrapper">
 		<div class="navbar navbar-fixed-top topNav">
 			<?php

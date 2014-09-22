@@ -34,38 +34,36 @@ include_once($serverBase."/includes/head/head-generic.php");
                 <h3>Partner With Reece</h3>
                 <section class="row-fluid">
                     <div class="span12">
-                        <div id="carousel-partner" class="carousel slide" data-ride="carousel">
+                        <div id="carousel-partner" class="carousel carousel-partner slide">
 
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner">
                                 <div class="item active">
-                                    <div class="text-cover">
-                                        <p class="text">Gain instant exposure to over 400 stores Australia wide</p>
-                                    </div>
-                                    <img src="http://lorempixel.com/1160/522" height="522" width="1160" alt="dont forget alt text">
+                                    <p class="partner-carousel-text">More than 90 years industry experience</p>
+                                    <img src="/assets/images/aboutus/partner/banner/90-years-history.jpg" height="524" width="1163" alt="">
                                 </div>
                                 <div class="item">
-                                    <div class="text-cover">
-                                        <p class="text">Gain instant exposure to over 400 stores Australia wide</p>
-                                    </div>
-                                    <img src="http://lorempixel.com/1161/522" height="522" width="1160" alt="dont forget alt text">
+                                    <p class="partner-carousel-text">National warehousing and distribution</p>
+                                    <img src="/assets/images/aboutus/partner/banner/warehousing-distribution.jpg" height="524" width="1163" alt="">
                                 </div>
                                 <div class="item">
-                                    <div class="text-cover">
-                                        <p class="text">Gain instant exposure to over 400 stores Australia wide</p>
-                                    </div>
-                                    <img src="http://lorempixel.com/1162/522" height="522" width="1160" alt="dont forget alt text">
+                                    <p class="partner-carousel-text">World-class marketing and support</p>
+                                    <img src="/assets/images/aboutus/partner/banner/marketing-and-support.jpg" height="524" width="1163" alt="">
                                 </div>
-                              </div>
+                                <div class="item">
+                                    <p class="partner-carousel-text">Proven experience building global brands</p>
+                                    <img src="/assets/images/aboutus/partner/banner/building-global-brands.jpg" height="524" width="1163" alt="">
+                                </div>
+                                <div class="item">
+                                    <p class="partner-carousel-text">450 outlets across the country</p>
+                                    <img src="/assets/images/aboutus/partner/banner/outlets.jpg" height="524" width="1163" alt="">
+                                </div>
+                            </div>
 
-                              <!-- Controls -->
-
-                              <a class="carousel-control left" href="#carousel-partner" data-slide="prev">&lsaquo;</a>
-                              <a class="carousel-control right" href="#carousel-partner" data-slide="next">&rsaquo;</a>
-
-                          </div>
-
-
+                            <!-- Controls -->
+                            <a class="carousel-control left" href="#carousel-partner" data-slide="prev">&lsaquo;</a>
+                            <a class="carousel-control right" href="#carousel-partner" data-slide="next">&rsaquo;</a>
+                        </div>
                       </div>
                   </section>
 

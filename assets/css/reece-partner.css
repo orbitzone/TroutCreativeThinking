@@ -223,3 +223,41 @@ a:focus p {
     margin-bottom: 1em;
   }
 }
+.carousel-partner .carousel-control {
+  background: #fff;
+  border-radius: 0;
+  color: #193051;
+  height: 110px;
+  line-height: 0.8;
+  margin-top: -55px;
+  opacity: 0.9;
+  text-shadow: none;
+  top: 50%;
+  width: 54px;
+}
+.carousel-partner .carousel-control:focus,
+.carousel-partner .carousel-control:hover {
+  opacity: 1;
+}
+.carousel-partner .carousel-control.left {
+  left: 0;
+}
+.carousel-partner .carousel-control.right {
+  right: 0;
+}
+.carousel-partner .item {
+  overflow: hidden;
+}
+.carousel-partner .partner-carousel-text {
+  background: #102f55;
+  color: #fff;
+  font-size: 28px;
+  font-weight: lighter;
+  height: 110px;
+  line-height: 110px;
+  margin-top: -55px;
+  padding: 0 56px;
+  position: absolute;
+  top: 50%;
+  left: 60px;
+}

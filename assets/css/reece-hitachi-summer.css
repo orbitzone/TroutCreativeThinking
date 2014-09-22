@@ -34,6 +34,7 @@
 @media (min-width: 768px) {
   .hitachi {
     background: #ffffff url('/assets/images/hitachi-summer/background.jpg') center top no-repeat;
+    background-size: 100% auto;
   }
 }
 /* Header */
@@ -140,6 +141,11 @@
     padding-right: 50px;
   }
 }
+.lt-ie9 .hitachi-header-content {
+  line-height: 1.2;
+  padding-left: 50px;
+  padding-right: 50px;
+}
 .hitachi-text-lg {
   font-size: 32px;
   text-transform: uppercase;
@@ -148,6 +154,9 @@
   .hitachi-text-lg {
     font-size: 66px;
   }
+}
+.lt-ie9 .hitachi-text-lg {
+  font-size: 66px;
 }
 .hitachi-text-med {
   display: block;
@@ -158,6 +167,9 @@
   .hitachi-text-med {
     font-size: 44px;
   }
+}
+.lt-ie9 .hitachi-text-med {
+  font-size: 44px;
 }
 .hitachi-text-sm {
   font-size: 16px;
@@ -172,6 +184,10 @@
     top: -15px;
   }
 }
+.lt-ie9 .hitachi-text-sm {
+  font-size: 20px;
+  top: -15px;
+}
 .hitachi-text-body {
   display: block;
   font-size: 16px;
@@ -182,6 +198,10 @@
     font-size: 24px;
     margin-bottom: 30px;
   }
+}
+.lt-ie9 .hitachi-text-body {
+  font-size: 24px;
+  margin-bottom: 30px;
 }
 .hitachi-text-divider {
   border-bottom: 1px solid;
@@ -197,6 +217,10 @@
     padding-top: 15px;
     padding-bottom: 15px;
   }
+}
+.lt-ie9 .hitachi-text-divider {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .hitachi-tab {
   position: relative;
@@ -253,6 +277,10 @@
     font-size: 18px;
   }
 }
+.lt-ie9 .hitachi-tab-link.hitachi-tab-link-small {
+  font-size: 18px;
+  top: 45px;
+}
 .hitachi-tab-link.hitachi-tab-link-large {
   font-size: 24px;
   top: 15px;
@@ -262,6 +290,10 @@
     font-size: 30px;
     top: 45px;
   }
+}
+.lt-ie9 .hitachi-tab-link.hitachi-tab-link-large {
+  font-size: 30px;
+  top: 45px;
 }
 a.hitachi-tab-link {
   top: 0;
@@ -277,6 +309,10 @@ a.hitachi-tab-link {
     top: 35px;
     font-size: 20px;
   }
+}
+.lt-ie9 a.hitachi-tab-link {
+  top: 35px;
+  font-size: 20px;
 }
 a.hitachi-tab-link:after {
   border-color: #fff transparent transparent transparent;
@@ -306,6 +342,11 @@ a.hitachi-tab-link:after {
   .hitachi-content-terms {
     padding: 150px 0 90px;
   }
+}
+.lt-ie9 .hitachi-content-rewards,
+.lt-ie9 .hitachi-content-terms {
+  padding-top: 150px;
+  padding-bottom: 90px;
 }
 .hitachi-content-rewards:after,
 .hitachi-content-terms:after {

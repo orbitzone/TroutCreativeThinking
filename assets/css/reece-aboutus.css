@@ -54,6 +54,7 @@
 }
 .inner-wrapper {
   /*	padding: 0.8em 0 2.5em;*/
+
 }
 .site-footer {
   margin-top: 0;
@@ -65,6 +66,7 @@
 }
 #about-us-carousel .item h1 {
   font-size: 4em;
+  margin-bottom: 20px;
 }
 #about-us-carousel .item p {
   font-size: 16px;
@@ -178,12 +180,18 @@
 .carousel .plumbing h1 {
   color: #0d2e56;
 }
+.carousel .plumbing p {
+  color: #000;
+}
 .carousel .plumbing .coloredPanelLink,
 .carousel .plumbing.carousel-link-item {
   background: #0d2e56;
 }
 .carousel .bathrooms h1 {
   color: #db1e24;
+}
+.carousel .bathrooms p {
+  color: #fff;
 }
 .carousel .bathrooms .coloredPanelLink,
 .carousel .bathrooms.carousel-link-item {
@@ -192,12 +200,18 @@
 .carousel .irrigation h1 {
   color: #5e792d;
 }
+.carousel .irrigation p {
+  color: #000;
+}
 .carousel .irrigation .coloredPanelLink,
 .carousel .irrigation.carousel-link-item {
   background: #5e792d;
 }
 .carousel .civil h1 {
   color: #b65312;
+}
+.carousel .civil p {
+  color: #000;
 }
 .carousel .civil .coloredPanelLink,
 .carousel .civil.carousel-link-item {
@@ -206,12 +220,18 @@
 .carousel .hvac-r h1 {
   color: #0397d7;
 }
+.carousel .hvac-r p {
+  color: #000;
+}
 .carousel .hvac-r .coloredPanelLink,
 .carousel .hvac-r.carousel-link-item {
   background: #0397d7;
 }
 .carousel .onsite h1 {
   color: #f47836;
+}
+.carousel .onsite p {
+  color: #fff;
 }
 .carousel .onsite .coloredPanelLink,
 .carousel .onsite.carousel-link-item {

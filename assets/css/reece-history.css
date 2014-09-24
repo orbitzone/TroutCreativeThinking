@@ -176,11 +176,6 @@
   min-width: 768px;
   overflow: hidden;
 }
-@media (min-width: 1200px) and (min-height: 800px) {
-  .history section {
-    height: 750px;
-  }
-}
 .history section .layer {
   position: absolute;
   top: 0;
@@ -812,59 +807,14 @@
 #slide1976-2 .stage .wareHouse img {
   position: relative;
 }
-#slide1978-1 #ground-1978-1 {
-  background-color: #38b449;
-  position: absolute;
-  bottom: 0;
-  top: auto;
-  left: 0;
-  width: 100%;
-  height: 14%;
-}
-#slide1978-1 #gate-1978-1 .wrap {
-  width: 100%;
-  position: absolute;
-  left: 0;
-  bottom: 14%;
-  top: auto;
-  overflow: hidden;
-}
-#slide1978-1 #gate-1978-1 .fence {
-  position: relative;
-  width: 50%;
-  height: 100%;
-  margin: 0 auto;
-}
-#slide1978-1 #gate-1978-1 .fence .gate {
-  height: auto;
-  width: 100%;
-}
-#slide1978-1 #gate-1978-1 .fence .sign {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-#slide1978-1 #gate-1978-1 .fence .wire {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 400%;
-}
-#slide1978-1 #gate-1978-1 .fence .wire.left {
-  right: 100%;
-}
-#slide1978-1 #gate-1978-1 .fence .wire.right {
-  left: 100%;
-}
-#slide1978-2 img,
-#slide1978-2 svg {
+#slide1978 img,
+#slide1978 svg {
   height: 100%;
   width: auto;
   display: block;
   margin: 0 auto;
 }
-#slide1978-2 .layer div {
+#slide1978 .layer div {
   position: absolute;
   right: 0;
   top: auto;
@@ -873,8 +823,53 @@
   width: 100%;
   text-align: center;
 }
-#slide1978-2 #label-1978-2 div {
+#slide1978 #label-1978-2 div {
   text-align: right;
+}
+#slide1980 #ground-1978-1 {
+  background-color: #38b449;
+  position: absolute;
+  bottom: 0;
+  top: auto;
+  left: 0;
+  width: 100%;
+  height: 14%;
+}
+#slide1980 #gate-1978-1 .wrap {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 14%;
+  top: auto;
+  overflow: hidden;
+}
+#slide1980 #gate-1978-1 .fence {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+}
+#slide1980 #gate-1978-1 .fence .gate {
+  height: auto;
+  width: 100%;
+}
+#slide1980 #gate-1978-1 .fence .sign {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+#slide1980 #gate-1978-1 .fence .wire {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 400%;
+}
+#slide1980 #gate-1978-1 .fence .wire.left {
+  right: 100%;
+}
+#slide1980 #gate-1978-1 .fence .wire.right {
+  left: 100%;
 }
 #slide1986 img {
   width: auto;

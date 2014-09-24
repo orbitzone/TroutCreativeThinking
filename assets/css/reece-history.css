@@ -271,7 +271,7 @@
   padding-bottom: 1em;
   font-weight: 300;
   text-align: center;
-  max-width: 800px;
+  max-width: 850px;
   margin: 0 auto;
   -webkit-font-feature-settings: "liga" 0;
   -moz-font-feature-settings: "liga" 0;
@@ -280,7 +280,7 @@
 }
 @media (min-width: 767px) {
   .yearDescription {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 100;
     letter-spacing: 2px;
   }
@@ -1623,8 +1623,7 @@
   vertical-align: bottom;
 }
 #slide2006 #number-2006-1 .wrap .number img {
-  height: 320px;
-  width: auto;
+  width: 800px;
   display: block;
 }
 #slide2006 #number-2006-1 .wrap .number .steam {

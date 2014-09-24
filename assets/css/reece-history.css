@@ -176,6 +176,11 @@
   min-width: 768px;
   overflow: hidden;
 }
+@media (min-width: 1200px) and (min-height: 800px) {
+  .history section {
+    height: 750px;
+  }
+}
 .history section .layer {
   position: absolute;
   top: 0;
@@ -790,7 +795,7 @@
   height: 77px;
   position: absolute;
   bottom: 30%;
-  width: 3000px;
+  width: 1500px;
 }
 #slide1976-2 .stage .wareHouse {
   height: 70%;
@@ -1089,7 +1094,7 @@
   height: 77px;
   position: absolute;
   bottom: 30%;
-  width: 3000px;
+  width: 1500px;
 }
 #slide1993 .stage .wareHouse {
   height: 70%;
@@ -1803,7 +1808,10 @@
   background-position: 50% 50%;
 }
 #slide2009-2 .outerWrap {
-  position: relative;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
   max-width: 1200px;
   margin: 0 auto;
   height: 600px;

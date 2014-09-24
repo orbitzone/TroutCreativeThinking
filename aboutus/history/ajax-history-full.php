@@ -4,7 +4,7 @@
 	$inc = 0;
 	foreach ($panels as $year => $attr) {
 		$y = explode('-', $year)[0];
-		if ($inc++ > 0){
+		if ($inc++ >= 0){
 			echo '<div class="historyNextBtnWrap">';
 			echo '<a class="historyNextBtn" href="#slide'.$year.'">Next</a>';
 			echo '</div>';

@@ -1802,10 +1802,7 @@
   background-position: 50% 50%;
 }
 #slide2009-2 .outerWrap {
-  position: absolute;
-  right: 0;
-  left: 0;
-  bottom: 0;
+  position: relative;
   max-width: 1200px;
   margin: 0 auto;
   height: 600px;

@@ -37,8 +37,6 @@
 		<header id="slideHistoryIntro">
 			<div class="content-container">
 				<img src="/assets/images/aboutus/history/logo-reece.png" alt=" " class="reece-logo"
-				data-0="opacity: 1"
-				data-100="opacity:0.1"
 				>
 				<h1>Reece Timeline</h1>
 				<p
@@ -119,6 +117,7 @@
 
 				// Init
 				TT.GetHTML();
+
 			};
 			Timeline.prototype.SkrollrSetup = function () {
 				if (TT.smallScreen || TT.hasTouch || TT.isiPad) return;
@@ -151,14 +150,13 @@
 						var data = {
 							block: block
 						};
-						console.log(data['block']);
 						$(window).trigger('Timeline:newBlock', data);
 					}
 					links.removeClass('active');
 					link.addClass('active');
 
 				});
-			}
+			};
 			Timeline.prototype.NavButtons = function () {
 				var buttons = TT.container.find('.history-section-nav .nav');
 				buttons.each(function() {
@@ -178,7 +176,7 @@
 						$(window).trigger('Timeline:newBlock', data);
 					});
 				});
-			}
+			};
 			Timeline.prototype.NavSlide = function () {
 				$(window).on('Timeline:newBlock', function (event, data) {
 					var nav = TT.container.find('.history-section-nav');
@@ -186,7 +184,7 @@
 					nav.attr('data-current-block', 'count-' + i);
 					TT.navCurrentBlock = i;
 				});
-			}
+			};
 			Timeline.prototype.GetHTML = function() {
 				if (TT.hasTouch || TT.smallScreen || TT.isiPad) {
 					$.get(TT.ajax.small).done(
@@ -214,6 +212,7 @@
 									TT.NavChange();
 									TT.NavSlide();
 									TT.NavButtons();
+									TT.NextAction();
 								}
 							);
 						}
@@ -224,6 +223,15 @@
 						}
 					);
 				}
+			};
+			Timeline.prototype.NextAction = function () {
+				$('.historyNextBtn').click(function(e){
+					e.preventDefault();
+					var target = $($(e.target).attr('href'));
+					$('html,body').animate({
+						scrollTop: target.offset().top
+					}, 2000);
+				});
 			};
 			// Init timeline object
 			var timeline = new Timeline();

@@ -155,6 +155,19 @@
 .history .history-section-nav[data-current-block="count-5"] .nav.next {
   display: none;
 }
+.history .historyNextBtnWrap {
+  margin: -20px 0;
+  z-index: 10;
+  position: relative;
+  text-align: center;
+}
+.history .historyNextBtnWrap .historyNextBtn {
+  display: inline-block;
+  background: black;
+  text-transform: uppercase;
+  padding: 10px 50px;
+  color: white;
+}
 .history section {
   position: relative;
   color: #ffffff;

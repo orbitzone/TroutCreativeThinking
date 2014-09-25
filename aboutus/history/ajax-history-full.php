@@ -9,7 +9,7 @@
 			echo '<a class="historyNextBtn" href="#slide'.$year.'">Next</a>';
 			echo '</div>';
 		}
-		echo '<section id="slide'.$year.'" class="'.$attr[0].'">';
+		echo '<section id="slide'.$year.'" class="'.$attr[0].'" data-700-top-top="opacity: 0.2;" data-100-top-top="opacity: 1;">';
 		echo '<div class="header">';
 		echo '<h2 class="year">'.$y.'</h2>';
 		echo '<p class="yearDescription">'.$attr[1].'</p>';

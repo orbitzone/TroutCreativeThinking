@@ -168,11 +168,15 @@
   padding: 10px 50px;
   color: white;
 }
+#timeline {
+  border-top: solid 20px white;
+  background: black;
+}
 .history section {
   position: relative;
   color: #ffffff;
   border-bottom: 1px solid white;
-  height: 600px;
+  height: 720px;
   min-width: 768px;
   overflow: hidden;
 }
@@ -211,6 +215,39 @@
 .history section.small .header p {
   padding-left: 10px;
   padding-right: 10px;
+}
+.history .year {
+  font-weight: 100;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 2px;
+  padding-top: .5em;
+}
+@media (min-width: 767px) {
+  .history .year {
+    font-size: 72px;
+    letter-spacing: 0px;
+  }
+}
+.history .yearDescription {
+  font-size: 14px;
+  line-height: 1.25em;
+  padding-bottom: 1em;
+  font-weight: 300;
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto;
+  -webkit-font-feature-settings: "liga" 0;
+  -moz-font-feature-settings: "liga" 0;
+  -o-font-feature-settings: "liga" 0;
+  font-feature-settings: "liga" 0;
+}
+@media (min-width: 767px) {
+  .history .yearDescription {
+    font-size: 22px;
+    font-weight: 100;
+    letter-spacing: 2px;
+  }
 }
 .nav-history {
   position: fixed;
@@ -252,38 +289,6 @@
   background: #003767;
   width: 17px;
   height: 17px;
-}
-.year {
-  font-weight: 100;
-  font-size: 24px;
-  text-align: center;
-  letter-spacing: 2px;
-}
-@media (min-width: 767px) {
-  .year {
-    font-size: 72px;
-    letter-spacing: 0px;
-  }
-}
-.yearDescription {
-  font-size: 14px;
-  line-height: 1.25em;
-  padding-bottom: 1em;
-  font-weight: 300;
-  text-align: center;
-  max-width: 850px;
-  margin: 0 auto;
-  -webkit-font-feature-settings: "liga" 0;
-  -moz-font-feature-settings: "liga" 0;
-  -o-font-feature-settings: "liga" 0;
-  font-feature-settings: "liga" 0;
-}
-@media (min-width: 767px) {
-  .yearDescription {
-    font-size: 22px;
-    font-weight: 100;
-    letter-spacing: 2px;
-  }
 }
 #slideHistoryIntro {
   overflow: hidden;
@@ -1803,16 +1808,15 @@
   background-position: 50% 50%;
 }
 #slide2009-2 .outerWrap {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-  height: 600px;
-}
-#slide2009-2 .wrap {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
+}
+#slide2009-2 .wrap {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 #slide2009-2 .wrap .taps {
   width: 100%;
@@ -1848,7 +1852,7 @@
 }
 #slide2010 #shelf-2010-1 .wrap {
   width: 860px;
-  height: 311px;
+  height: 310px;
   margin: 0 auto;
   position: relative;
   background-color: white;

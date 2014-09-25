@@ -159,13 +159,16 @@
 	}
 }
 
-
+#timeline{
+	border-top:solid 20px white;
+	background: black;
+}
 .history {
 	section {
 		position: relative;
 		color: @reeceWhite;
 		border-bottom: 1px solid white;
-		height: 600px;
+		height: 720px;
 		min-width: 768px;
 		overflow: hidden;
 		.layer {
@@ -206,6 +209,35 @@
 			}
 		}
 	}
+	.year{
+		font-weight: 100;
+		font-size: 24px;
+		text-align: center;
+		letter-spacing: 2px;
+		padding-top: .5em;
+		@media (min-width: 767px) {
+			font-size: 72px;
+			letter-spacing: 0px;
+		}
+	}
+	.yearDescription{
+		font-size: 14px;
+		line-height: 1.25em;
+		padding-bottom: 1em;
+		font-weight: 300;
+		text-align: center;
+		max-width: 850px;
+		margin: 0 auto;
+		-webkit-font-feature-settings: "liga" 0;
+		-moz-font-feature-settings: "liga" 0;
+		-o-font-feature-settings: "liga" 0;
+		font-feature-settings: "liga" 0;
+		@media (min-width: 767px) {
+			font-size: 22px;
+			font-weight: 100;
+			letter-spacing: 2px;
+		}
+	}
 }
 
 .nav-history {
@@ -239,34 +271,7 @@
 		}
 	}
 }
-.year{
-	font-weight: 100;
-	font-size: 24px;
-	text-align: center;
-	letter-spacing: 2px;
-	@media (min-width: 767px) {
-		font-size: 72px;
-		letter-spacing: 0px;
-	}
-}
-.yearDescription{
-	font-size: 14px;
-	line-height: 1.25em;
-	padding-bottom: 1em;
-	font-weight: 300;
-	text-align: center;
-	max-width: 850px;
-	margin: 0 auto;
-	-webkit-font-feature-settings: "liga" 0;
-	-moz-font-feature-settings: "liga" 0;
-	-o-font-feature-settings: "liga" 0;
-	font-feature-settings: "liga" 0;
-	@media (min-width: 767px) {
-		font-size: 22px;
-		font-weight: 100;
-		letter-spacing: 2px;
-	}
-}
+
 
 #slideHistoryIntro{
 	overflow: hidden;

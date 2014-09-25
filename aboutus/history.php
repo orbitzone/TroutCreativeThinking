@@ -95,7 +95,7 @@
 			var Timeline = function() {
 				window.TT = this;
 				TT.hasTouch = Modernizr.touch;
-				TT.smallScreen = $(window).width() < 1000 || $(window).height() < 768; // 1000px == min-width of large slides
+				TT.smallScreen = $(window).width() < 1000 || $(window).height() < 720; // min-dimensions of large slides
 				TT.isiPad = navigator.userAgent.match(/iPad/i) != null;
 				TT.minHeight = 800;
 				TT.maxHeight = 1050;

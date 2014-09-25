@@ -1160,6 +1160,7 @@
   background-size: 100%;
   position: relative;
   z-index: 1;
+  background-position: 0 0;
 }
 #slide1997 .water {
   background: url("../images/aboutus/history/1997-water.png") no-repeat;

@@ -889,7 +889,7 @@
   width: 100%;
   text-align: right;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1350px) {
   #slide1986 #buildingA-1986-1 div {
     height: 30%;
   }
@@ -902,7 +902,7 @@
   width: 100%;
   text-align: left;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1350px) {
   #slide1986 #buildingB-1986-1 div {
     height: 30%;
   }

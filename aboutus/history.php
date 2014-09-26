@@ -23,17 +23,6 @@
 		?>
 
 
-		<!--<div class="nav-history">
-			<ul class="nav">
-				<li><a href="#slideHistoryIntro">Reece Timeline</a></li>
-				<li><a href="#slide1954">1954</a></li>
-				<li><a href="#slide1976">1976</a></li>
-				<li><a href="#slide1997">1997</a></li>
-				<li><a href="#slide1998">1998</a></li>
-				<li><a href="#slide2005">2005</a></li>
-			</ul>
-		</div>-->
-
 		<header id="slideHistoryIntro">
 			<div class="content-container">
 				<img src="/assets/images/aboutus/history/logo-reece.png" alt=" " class="reece-logo"
@@ -45,13 +34,7 @@
 				data-bottom="opacity:1"
 				>Scroll down to experience some of our most significant moments over the last 90+ years.</p>
 				<h2 class="year">1919 - 2014</h2>
-				<p class="scroll">Scroll</p>
-				<!-- <img src="/assets/images/aboutus/history/img-drop.png" alt=" " class="water-drop"
-				data-anchor-target="#slideHistoryIntro"
-				data-top-top="top: 0%"
-				data-center-bottom="top: 60%; opacity: 1"
-				data--200-top-bottom="opacity: 0; top: 80%"
-				> -->
+				<p></p>
 
 			</div>
 		</header>
@@ -110,9 +93,6 @@
 				TT.skrollrConfig = {
 					smoothScrolling : true,
 					smoothScrollingDuration: 2000
-					// mobileCheck : function() {
-					// 	return false; // disable for mobile
-					// }
 				};
 
 				// Init

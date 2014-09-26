@@ -39,24 +39,28 @@ include_once($serverBase."/includes/head/head-generic.php");
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner">
                                 <div class="item active">
-                                    <p class="partner-carousel-text">More than 90 years industry experience</p>
                                     <img src="/assets/images/aboutus/partner/banner/90-years-history.jpg" height="524" width="1163" alt="">
+                                    <p class="partner-carousel-text">More than 90 years industry experience</p>
                                 </div>
                                 <div class="item">
-                                    <p class="partner-carousel-text">National warehousing and distribution</p>
                                     <img src="/assets/images/aboutus/partner/banner/warehousing-distribution.jpg" height="524" width="1163" alt="">
+                                    <p class="partner-carousel-text">National warehousing and distribution</p>
                                 </div>
                                 <div class="item">
-                                    <p class="partner-carousel-text">World-class marketing and support</p>
                                     <img src="/assets/images/aboutus/partner/banner/marketing-and-support.jpg" height="524" width="1163" alt="">
+                                    <p class="partner-carousel-text">World-class marketing and support</p>
                                 </div>
                                 <div class="item">
-                                    <p class="partner-carousel-text">Proven experience building global brands</p>
                                     <img src="/assets/images/aboutus/partner/banner/building-global-brands.jpg" height="524" width="1163" alt="">
+                                    <p class="partner-carousel-text">Proven experience building global brands</p>
                                 </div>
                                 <div class="item">
-                                    <p class="partner-carousel-text">450 outlets across the country</p>
                                     <img src="/assets/images/aboutus/partner/banner/outlets.jpg" height="524" width="1163" alt="">
+                                    <p class="partner-carousel-text">450 outlets across the country</p>
+                                </div>
+                                <div class="item">
+                                    <img src="/assets/images/aboutus/partner/banner/showrooms.jpg" height="524" width="1163" alt="">
+                                    <p class="partner-carousel-text">Innovative bathroom showrooms and displays</p>
                                 </div>
                             </div>
 
@@ -70,7 +74,7 @@ include_once($serverBase."/includes/head/head-generic.php");
                   <section class="why-partner">
                     <div class="why-partner-intro">
                         <h4>Why Partner With Reece</h4>
-                        <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Some of the world’s best brands can only be found at Reece. This is a reflection of Reece’s international reputation for professionalism, quality and marketing ability. Reece has achieved outstanding results with a range of exclusive products in the retail, trade and specialised markets. </p>
                     </div>
                     <!--ROW 1 Brands-->
                     <div class="row-fluid why-partner-brands">
@@ -328,8 +332,8 @@ include_once($serverBase."/includes/head/head-generic.php");
                                  <img src="../assets/images/aboutus/partner/finance_2.jpg" alt="Don't forget alt text">
                              </div>
                              <div class="span6">
-                                <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                                <a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
+                                <p>Reece is a public company that has enjoyed a long history of exceptional financial performance. A major factor contributing to this success has been the leadership provided by a strong, decisive and stable management team. Reece is committed to good corporate governance and to the continued creation of shareholder value. </p>
+                                <a class="read-more page-branding text-brand" href="finance.php">Read More<i class="icon-arrow-right"></i></a>
                             </div>
                         </section>
                     </div>

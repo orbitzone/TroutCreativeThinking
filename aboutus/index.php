@@ -167,7 +167,7 @@ include_once($serverBase."/includes/head/head-generic.php");
                 <div class="span4 actrol">
                     <div class="inside">
                         <h4>A Cool New Addition For Reece</h4>
-                        <p>Reece Australia Limited (‘Reece’) is pleased to announce the signing of a binding share sale agreement for the purchase of 100% of the shares in Actrol Parts Holdings Pty Ltd and its subsidiaries consisting of Actrol Parts and AC Components (trading as Metalflex and Air Plus) (together ‘Actrol Group’).</p>
+                        <p>Reece acquired the Actrol Group which includes Actrol Parts and A.C. Components (trading as Metalflex and Air Plus). The Actrol Group supplies components, units, systems and refrigeration gases to the Australian heating, ventilation, air conditioning and refrigeration industry. The acquisition will allow Reece to establish a presence in the heating, refrigeration and air conditioning markets, broadening our offering to the customers.</p>
                     </div>
                 </div>
             </section>
@@ -209,16 +209,22 @@ Reece has achieved outstanding results with a range of exclusive products in the
                 <section class="row-fluid">
                     <div class="span6">
                         <h4>Sustainability</h4>
-                        <img src="../assets/images/aboutus/home/sustainability.jpg" alt="Don't forget alt text">
-                        <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p><img src="../assets/images/aboutus/home/sustainability.jpg" alt="Don't forget alt text"></p>
+                        <p>At Reece, we’re conscious of our environmental impact and we know our customers are too. As the driest populated
+continent of earth, we all need to look at ways we can conserve water and reduce global warming. That’s why we’re
+focused on providing you with more sustainable solutions around the home.</p>
                         <a class="read-more page-branding text-brand" href="#">Read More<i class="icon-arrow-right"></i></a>
                     </div>
                     <div class="span6">
                         <h4>Careers</h4>
-                        <a href="/aboutus/contact.php">
-                            <img src="../assets/images/aboutus/home/careers.jpg" alt="Don't forget alt text">
-                        </a>
-                        <p>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>
+                            <a href="/aboutus/contact.php">
+                                <img src="../assets/images/aboutus/home/careers.jpg" alt="Don't forget alt text">
+                            </a>
+                        </p>
+                        <p>We’re looking for the right people now. People who like people. People who like to talk but also like to listen. People
+who like to perform. People who can recognise an opportunity and seize it. People who are prepared to promote
+themselves.</p>
                         <a class="read-more page-branding text-brand" href="/aboutus/contact.php">Read More<i class="icon-arrow-right"></i></a>
                     </div>
                 </section>

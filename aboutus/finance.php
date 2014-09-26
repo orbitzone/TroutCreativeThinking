@@ -42,8 +42,8 @@
 
                         <div class="span8">
                             <h3 class="heading">Finance</h3>
-                            <blockquote>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </blockquote>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.  Lorem ipsum ipsum dolor sit amet, consectetur adipiscing sollicitudindolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit. </p>
+                            <!--<blockquote>Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </blockquote>-->
+                            <p>Reece is a public company that has enjoyed a long history of exceptional financial performance. A major factor contributing to this success has been the leadership provided by a strong, decisive and stable management team. Reece is committed to good corporate governance and to the continued creation of shareholder value.</p>
                         </div>
                         <div class="span4 asxFeed">
                             <h4>Share Price</h4>

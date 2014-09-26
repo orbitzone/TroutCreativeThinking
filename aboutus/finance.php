@@ -429,7 +429,7 @@
                                     <div class="span7">
                                         <p class="date">23rd December 2013</p>
                                         <h2>Reece excited to announce acquisition of Actrol</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ligula eu diam dapibus, eget laoreet orci egestas. Aenean rhoncus erat non condimentum commodo.  Lorem ipsum dolor sit amet, consectetur adipiscing sollicitudin ligula eu diam dapibus, elit.  Lorem ipsum dolor sit amet, <a href="#">consectetur adipiscing</a></p>
+                                        <p>Reece acquired the Actrol Group which includes Actrol Parts and A.C. Components (trading as Metalflex and Air Plus). The Actrol Group supplies components, units, systems and refrigeration gases to the Australian heating, ventilation, air conditioning and refrigeration industry. The acquisition will allow Reece to establish a presence in the heating, refrigeration and air conditioning markets, broadening our offering to the customers. <a href="#">Read More</a></p>
                                     </div>
                                 </div>
                             </div>

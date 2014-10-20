@@ -130,34 +130,114 @@ body {
   }
 }
 .videoGallery {
-  background: url('../images/MyAccount/stainbg.jpg');
+  background: url('../images/my-account/stainbg.jpg');
   padding: 30px 0;
   color: white;
 }
 .videoGallery .videoThumb {
   padding: 20px 0;
 }
-.videoGallery .vidThumbLink {
+.videoGallery p {
+  color: #8fc547;
+}
+.vidThumbLink {
   position: relative;
   display: block;
   margin-bottom: 40px;
 }
-.videoGallery .vidThumbLink img {
+.vidThumbLink img {
   width: 100%;
 }
-.videoGallery .vidThumbLink .playIcon {
+.vidThumbLink .playIcon {
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   display: block;
-  background: url('../images/MyAccount/play-icon.png') center no-repeat;
-}
-.videoGallery p {
-  color: #8fc547;
+  background: url('../images/my-account/play-icon.png') center no-repeat;
 }
 .aboutMyAccount {
   padding: 30px 0;
   background: #fafafa;
+}
+/* New My Account Page */
+.myAccountHero {
+  padding: 10px 0;
+}
+.myAccountHero .myAccountHeroLeft {
+  padding-right: 20px;
+}
+@media (max-width: 767px) {
+  .myAccountHero .myAccountHeroLeft {
+    padding: 0 0 20px;
+  }
+}
+.myAccountHero .greenBtn,
+.myAccountHero .learnMore {
+  display: block;
+  margin: 10px 0;
+  max-width: 300px;
+  padding: 10px;
+  color: white;
+}
+.myAccountHero .greenBtn {
+  background: #80bd26;
+  text-align: center;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 15px 10px;
+  font-weight: bold;
+}
+.myAccountHero .greenBtn:before {
+  content: '';
+  height: 0;
+  width: 0;
+  display: inline-block;
+  border: solid 8px transparent;
+  border-left-color: white;
+}
+.myAccountHero .learnMore {
+  background: #023a68;
+}
+.myAccountHero .learnMore:before {
+  content: '+ ';
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.myAccountHero h3 {
+  color: #003768;
+  text-transform: uppercase;
+  font-size: 3em;
+}
+.myAccountHero h4 {
+  color: #80bd26;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+.myAccountMegaFooter {
+  background: url('../images/my-account/stainbg.jpg') center 0;
+  padding: 50px 0;
+  color: white;
+}
+.myAccountMegaFooter .greenBtn {
+  display: block;
+  margin: 10px 0;
+  max-width: 300px;
+  padding: 10px;
+  color: white;
+  background: #80bd26;
+  text-align: center;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 15px 10px;
+  font-weight: bold;
+}
+.myAccountMegaFooter .greenBtn:before {
+  content: '';
+  height: 0;
+  width: 0;
+  display: inline-block;
+  border: solid 8px transparent;
+  border-left-color: white;
 }

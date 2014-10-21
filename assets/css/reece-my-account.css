@@ -207,6 +207,9 @@ body {
   font-weight: bold;
   font-size: 1.5em;
 }
+.myAccountHero .learnMore:hover {
+  text-decoration: none;
+}
 .myAccountHero h3 {
   color: #003768;
   text-transform: uppercase;
@@ -389,6 +392,9 @@ body {
 .myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group .accordionContent ul li {
   list-style: disc;
   padding: 5px 0 5px 20px;
+}
+.myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group .accordionContent [class*="span"] {
+  padding: 20px 0;
 }
 .myAccountMegaFooter .myTipsDesc h4 a {
   color: #80bd26;

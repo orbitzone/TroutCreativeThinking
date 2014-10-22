@@ -1,4 +1,4 @@
-
+    
 //Bootstrap imports
 @import "bootstrap/mixins.less";
 @import "bootstrap/variables.less";
@@ -34,7 +34,9 @@ body{
     padding-top: 0;
 }
 .content-container{
-    margin-top: 0 !important
+    .inner-wrapper{
+        padding: 0 10px;
+    }
 }
 
 
@@ -233,6 +235,9 @@ body{
     p{
 
     }
+    .content-container{
+        margin-top: 0;
+    }
     .myAccountTabs{
         padding: 40px 0 20px;
         .clearfix;
@@ -243,29 +248,31 @@ body{
             float: left;
             margin: 0 2%;
             width: 29.333%;
-
         }
 
         .greenTab{
-           background: @myAccountgreen;
-           display: block;
-           padding: 20px 5px;
-           .tabHeading{
-            color: white;
-            font-size: 1.8em;
-            font-weight: bold;
+            background: @myAccountgreen;
             display: block;
-            text-align: center;
-            @media (max-width:767px){
-                font-size: 1.5em;
-            }
+            padding: 20px 5px;
+            .tabHeading{
+                color: white;
+                font-size: 1.8em;
+                font-weight: bold;
+                display: block;
+                text-align: center;
+                @media (max-width:767px){
+                    font-size: 1.5em;
+                }
            }
            .tabInfo{
             padding: 15px 10px 0;
             line-height: 1.2em;
-            min-height: 2.4em;
+            min-height: 3.6em;
             display: block;
             color: black;
+            @media (min-width:1200px){
+                min-height: 2.4em;
+            }
            }
            &:hover,&.active{
             text-decoration: none;
@@ -276,6 +283,15 @@ body{
            }
            &.active{
             background: white;
+           }
+           @media (max-width:979px){
+                min-height: 90px;
+           }
+           @media (max-width:768px){
+                min-height: 131px;
+           }
+           @media (max-width:480px){
+            min-height: 0;
            }
         }
         @media (max-width:480px){

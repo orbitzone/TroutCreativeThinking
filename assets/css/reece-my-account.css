@@ -49,8 +49,8 @@ STANDALONE VIDEO PAGE STYLES
 body {
   padding-top: 0;
 }
-.content-container {
-  margin-top: 0 !important;
+.content-container .inner-wrapper {
+  padding: 0 10px;
 }
 .myTipsHeader {
   padding-bottom: 10px;
@@ -249,6 +249,9 @@ body {
   font-size: 2.5em;
   padding-bottom: 5px;
 }
+.myAccountMegaFooter .content-container {
+  margin-top: 0;
+}
 .myAccountMegaFooter .myAccountTabs {
   padding: 40px 0 20px;
   *zoom: 1;
@@ -290,9 +293,14 @@ body {
 .myAccountMegaFooter .myAccountTabs .greenTab .tabInfo {
   padding: 15px 10px 0;
   line-height: 1.2em;
-  min-height: 2.4em;
+  min-height: 3.6em;
   display: block;
   color: black;
+}
+@media (min-width: 1200px) {
+  .myAccountMegaFooter .myAccountTabs .greenTab .tabInfo {
+    min-height: 2.4em;
+  }
 }
 .myAccountMegaFooter .myAccountTabs .greenTab:hover,
 .myAccountMegaFooter .myAccountTabs .greenTab.active {
@@ -305,6 +313,21 @@ body {
 }
 .myAccountMegaFooter .myAccountTabs .greenTab.active {
   background: white;
+}
+@media (max-width: 979px) {
+  .myAccountMegaFooter .myAccountTabs .greenTab {
+    min-height: 90px;
+  }
+}
+@media (max-width: 768px) {
+  .myAccountMegaFooter .myAccountTabs .greenTab {
+    min-height: 131px;
+  }
+}
+@media (max-width: 480px) {
+  .myAccountMegaFooter .myAccountTabs .greenTab {
+    min-height: 0;
+  }
 }
 @media (max-width: 480px) {
   .myAccountMegaFooter .myAccountTabs {

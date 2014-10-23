@@ -29,23 +29,26 @@ include_once($serverBase."/includes/head/head-generic.php");
 					<li class="active page-branding text-brand">My Account</li>
 				</ul>
 				<div class="row-fluid myAccountHero">
-					<div class="span3">
+					<!--<div class="span3">
 						<div class="myAccountHeroLeft">
 							<img src="/assets/images/my-account/guy-on-computer.png" alt="Guy on computer">
 							<a href="#" class="greenBtn">Register Now</a>
 							<a href="#" class="learnMore scrollToLink" data-target="#myAccountMegaFooter">Learn More</a>
 						</div>
-					</div>
-					<div class="span4">
+					</div>-->
+					<div class="span7">
 						<div class="myAccountHeroLeft">
-							<h3>My <br/>Account.</h3>
-							<h4>Works for <br/>you 24/7.</h4>
+							<h3>My Account.</h3>
+							<h4>Works for you 24/7.</h4>
 							<p>Developed exclusively for Reece account customers, My Account is an innovative management system gives you access to product pricing, allows you to build product lists, manage your account, generate customer quotes and even order online.</p>
+							<a href="#" class="greenBtn">Register Now</a>
+							<a href="#" class="learnMore scrollToLink" data-target="#myAccountMegaFooter">Learn More</a>
 						</div>
 					</div>
 					<div class="span5">
 						<a class="vidThumbLink playVideo" href="#" data-video-id="Xxmz6u2r8v4" data-videoTitle="My Account">
-							<img src="/assets/images/my-account/my-account-video-poster.jpg" alt="Tip1">
+							<!--<img src="/assets/images/my-account/my-account-video-poster.jpg" alt="Tip1">-->
+							<img src="/assets/images/my-account/guy-on-computer.png" alt="Guy on computer">
 							<span class="playIcon"></span>
 						</a>
 					</div>

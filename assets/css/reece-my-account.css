@@ -178,7 +178,7 @@ body {
   display: inline-block;
   margin: 10px 0;
   max-width: 300px;
-  padding: 15px;
+  padding: 15px 20px;
   margin-right: 10px;
   color: white;
   background: #80bd26;
@@ -202,15 +202,16 @@ body {
 .myAccountHero .learnMore {
   background: #023a68;
   position: relative;
-  padding-left: 30px;
+  padding-left: 35px;
 }
 .myAccountHero .learnMore:before {
   content: '+ ';
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 22px;
   position: absolute;
-  left: 10px;
-  top: 12px;
+  left: 15px;
+  top: 15px;
+  line-height: 15px;
 }
 .myAccountHero .learnMore:hover {
   text-decoration: none;
@@ -218,7 +219,8 @@ body {
 .myAccountHero h3 {
   color: #003768;
   text-transform: uppercase;
-  font-size: 3em;
+  font-size: 3.5em;
+  margin-top: -8px;
 }
 .myAccountHero h4 {
   color: #80bd26;
@@ -234,12 +236,12 @@ body {
   display: block;
   margin: 10px 0;
   max-width: 300px;
-  padding: 10px;
+  padding: 15px 20px;
   color: white;
   background: #80bd26;
   text-align: center;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 16px;
   padding: 15px 10px;
 }
 .myAccountMegaFooter .greenBtn:before {
@@ -247,7 +249,7 @@ body {
   height: 0;
   width: 0;
   display: inline-block;
-  border: solid 8px transparent;
+  border: solid 6px transparent;
   border-left-color: white;
 }
 .myAccountMegaFooter h3 {

@@ -159,7 +159,7 @@ body{
         display: inline-block;
         margin:10px 0;
         max-width: 300px;
-        padding:15px;
+        padding:15px 20px;
         margin-right: 10px;
         color: white;
         background: @myAccountgreen;
@@ -183,14 +183,15 @@ body{
     .learnMore{
         background: #023a68;
         position: relative;
-        padding-left: 30px;
+        padding-left: 35px;
         &:before{
             content: '+ ';
             font-weight: bold;
-            font-size: 1.2em;
+            font-size: 22px;
             position: absolute;
-            left: 10px;
-            top: 12px;
+            left: 15px;
+            top: 15px;
+            line-height: 15px;
         }
         &:hover{
             text-decoration: none;
@@ -199,7 +200,8 @@ body{
     h3{
         color: #003768;
         text-transform: uppercase;
-        font-size: 3em;
+        font-size: 3.5em;
+        margin-top: -8px;
     }
     h4{
         color: @myAccountgreen;
@@ -207,16 +209,17 @@ body{
         font-size: 1.8em;
     }
 }
+
 .myAccountMegaFooter{
     background: url('@{baseImagePath}/my-account/stainbg.jpg') center 0;
     padding: 50px 0;
     color: white;
     .greenBtn{
-        @buttonFontSize:20px;
+        @buttonFontSize:16px;
         display: block;
         margin:10px 0;
         max-width: 300px;
-        padding: 10px;
+        padding: 15px 20px;
         color: white;
         background: @myAccountgreen;
         text-align: center;
@@ -228,7 +231,7 @@ body{
             height: 0;
             width: 0;
             display: inline-block;
-            border: solid 8px transparent;
+            border: solid 6px transparent;
             border-left-color: white;
         }
     }

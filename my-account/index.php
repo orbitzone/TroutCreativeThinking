@@ -45,7 +45,7 @@ include_once($serverBase."/includes/head/head-generic.php");
 							<a href="#" class="learnMore scrollToLink" data-target="#myAccountMegaFooter">Learn More</a>
 						</div>
 					</div>
-					<div class="span5">
+					<div class="span4 offset1">
 						<a class="vidThumbLink playVideo" href="#" data-video-id="Xxmz6u2r8v4" data-videoTitle="My Account">
 							<!--<img src="/assets/images/my-account/my-account-video-poster.jpg" alt="Tip1">-->
 							<img src="/assets/images/my-account/guy-on-computer.png" alt="Guy on computer">
@@ -428,7 +428,7 @@ include_once($serverBase."/includes/foot/scripts.php");
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
     <h3 id="myAccountModalHD">My Account</h3>
   </div>
-  <div class="modal-body">
+  <div class="modal-body" id="myAccountYoutubePlayerWrap">
     <div id="myAccountYoutubePlayer"></div>
   </div>
 </div>
@@ -445,7 +445,8 @@ include_once($serverBase."/includes/foot/scripts.php");
 		$('.playVideo').click(addVideo);
 
 		$('#myAccountModal').on('hidden', function(){
-			player.stopVideo()
+			player.stopVideo();
+			player.clearVideo();
 		})
 		//This code loads the IFrame Player API code asynchronously.
 		var tag = document.createElement('script');

@@ -1,0 +1,27 @@
+//
+// e Commerce Buttons
+// --------------------------------------------------
+
+
+.btn{
+	.box-shadow(none);
+	&:active,&:focus{
+		.box-shadow(none);
+		outline: none
+	}
+}
+
+
+.btn-xlg {
+  border-width: 2px;
+  .button-size(20px; 50px; 20px; 30px; 0);
+  text-transform: uppercase;
+  &.btn-primary{
+  	&:hover{
+  		border-color:@btn-primary-bg;
+  	}
+	  &:focus,&:active{
+	  	border-color: lighten(@btn-primary-bg,20%);
+	  }
+  }
+}

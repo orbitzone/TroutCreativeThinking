@@ -6495,6 +6495,10 @@ fieldset[disabled] .reeceECommercePage .btn-grey.active {
 .reeceECommercePage .greyLink {
   cursor: pointer;
 }
+.reeceECommercePage .activeLink:hover,
+.reeceECommercePage .greyLink:hover {
+  text-decoration: none;
+}
 .reeceECommercePage .activeLink {
   color: #5dc5ba;
 }

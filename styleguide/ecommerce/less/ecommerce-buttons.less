@@ -44,3 +44,48 @@
   .button-size(20px; 50px; 20px; 30px; 0);
   text-transform: uppercase;
 }
+/* makes the font 33% larger relative to the icon container */
+.icon-lg:before {
+  vertical-align: -20%;
+  font-size: 1.5em;
+}
+.icon-xlg:before {
+  vertical-align: -30%;
+  font-size: 2em;
+}
+// links - used with icons
+.activeLink, .greyLink{
+	cursor: pointer;
+}
+.activeLink{
+	color: @brand-primary;
+	&:hover{
+		color: @brand-primary-dark;
+	}
+	&:active,&:focus{
+		color: #42b8ac;
+	}
+}
+.greyLink{
+	color: #d2d2d2;
+	&:hover{
+		color: @brand-primary-dark;
+	}
+	&:active,&:focus{
+		color: #42b8ac;
+	}
+}
+// round buttons for icons
+.roundBtn{
+	width: 3em;
+	height: 3em;
+	display: inline-block;
+	padding: .5em;
+	border-radius:1.5em;
+	border:solid 1px @btn-default-border;
+	color: @btn-default-border;
+	&:hover{
+		text-decoration: none;
+		color: @btn-default-border;
+	}
+}

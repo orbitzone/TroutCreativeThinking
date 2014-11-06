@@ -3,6 +3,8 @@
 
   /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 
+  /* makes the font 33% larger relative to the icon container */
+
 }
 .reeceECommercePage html {
   font-family: sans-serif;
@@ -6481,8 +6483,58 @@ fieldset[disabled] .reeceECommercePage .btn-grey.active {
   border-radius: 0;
   text-transform: uppercase;
 }
+.reeceECommercePage .icon-lg:before {
+  vertical-align: -20%;
+  font-size: 1.5em;
+}
+.reeceECommercePage .icon-xlg:before {
+  vertical-align: -30%;
+  font-size: 2em;
+}
+.reeceECommercePage .activeLink,
+.reeceECommercePage .greyLink {
+  cursor: pointer;
+}
+.reeceECommercePage .activeLink {
+  color: #5dc5ba;
+}
+.reeceECommercePage .activeLink:hover {
+  color: #42b8ac;
+}
+.reeceECommercePage .activeLink:active,
+.reeceECommercePage .activeLink:focus {
+  color: #42b8ac;
+}
+.reeceECommercePage .greyLink {
+  color: #d2d2d2;
+}
+.reeceECommercePage .greyLink:hover {
+  color: #42b8ac;
+}
+.reeceECommercePage .greyLink:active,
+.reeceECommercePage .greyLink:focus {
+  color: #42b8ac;
+}
+.reeceECommercePage .roundBtn {
+  width: 3em;
+  height: 3em;
+  display: inline-block;
+  padding: .5em;
+  border-radius: 1.5em;
+  border: solid 1px #cccccc;
+  color: #cccccc;
+}
+.reeceECommercePage .roundBtn:hover {
+  text-decoration: none;
+  color: #cccccc;
+}
 .reeceECommercePage .img-thumbnail {
   padding: 0;
+}
+.reeceECommercePage input:focus:invalid:focus,
+.reeceECommercePage textarea:focus:invalid:focus,
+.reeceECommercePage select:focus:invalid:focus {
+  border-color: #c91d1d;
 }
 .reeceECommercePage .panel-group .panel-title {
   font-size: 26px;
@@ -6491,18 +6543,27 @@ fieldset[disabled] .reeceECommercePage .btn-grey.active {
   cursor: pointer;
 }
 .reeceECommercePage .panel-group .panel-title:before {
-  background: url('../images/accordion-icon.png') no-repeat;
-  display: block;
   height: 30px;
   width: 30px;
   float: right;
-  content: '';
+  content: 'c';
+  font-family: "reece-e-commerce" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #5dc5ba;
 }
 .reeceECommercePage .thumbnail {
   padding: 20px;
 }
 .reeceECommercePage .caret {
   margin-top: 0;
+  border-width: 6px;
 }
 .reeceECommercePage .label {
   border-radius: 0;
@@ -6512,4 +6573,66 @@ fieldset[disabled] .reeceECommercePage .btn-grey.active {
 }
 .reeceECommercePage .label-default {
   color: #7b7b7b;
+}
+@charset "UTF-8";
+@font-face {
+  font-family: "reece-e-commerce";
+  src: url("../fonts/reece-e-commerce.eot");
+  src: url("../fonts/reece-e-commerce.eot?#iefix") format("embedded-opentype"), url("../fonts/reece-e-commerce.woff") format("woff"), url("../fonts/reece-e-commerce.ttf") format("truetype"), url("../fonts/reece-e-commerce.svg#reece-e-commerce") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.reeceECommercePage [data-icon]:before {
+  font-family: "reece-e-commerce" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.reeceECommercePage [class^="icon-reece-"]:before,
+.reeceECommercePage [class*=" icon-reece-"]:before {
+  font-family: "reece-e-commerce" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.reeceECommercePage .icon-reece-arrow:before {
+  content: "a";
+}
+.reeceECommercePage .icon-reece-back:before {
+  content: "b";
+}
+.reeceECommercePage .icon-reece-close:before {
+  content: "c";
+}
+.reeceECommercePage .icon-reece-delivery:before {
+  content: "d";
+}
+.reeceECommercePage .icon-reece-down:before {
+  content: "e";
+}
+.reeceECommercePage .icon-reece-down-inverted:before {
+  content: "f";
+}
+.reeceECommercePage .icon-reece-mouse:before {
+  content: "g";
+}
+.reeceECommercePage .icon-reece-phone:before {
+  content: "h";
+}
+.reeceECommercePage .icon-reece-pickup:before {
+  content: "i";
+}
+.reeceECommercePage .icon-reece-shopcart:before {
+  content: "k";
 }

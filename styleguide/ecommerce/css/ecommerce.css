@@ -1145,10 +1145,10 @@ a.reeceECommercePage .text-primary:hover {
   color: #3fb0a4;
 }
 .reeceECommercePage .text-success {
-  color: #3c763d;
+  color: #5dc5ba;
 }
 a.reeceECommercePage .text-success:hover {
-  color: #2b542c;
+  color: #3fb0a4;
 }
 .reeceECommercePage .text-info {
   color: #31708f;
@@ -1157,16 +1157,16 @@ a.reeceECommercePage .text-info:hover {
   color: #245269;
 }
 .reeceECommercePage .text-warning {
-  color: #8a6d3b;
+  color: #f0ad4e;
 }
 a.reeceECommercePage .text-warning:hover {
-  color: #66512c;
+  color: #ec971f;
 }
 .reeceECommercePage .text-danger {
-  color: #a94442;
+  color: #c91d1d;
 }
 a.reeceECommercePage .text-danger:hover {
-  color: #843534;
+  color: #9c1717;
 }
 .reeceECommercePage .bg-primary {
   color: #fff;
@@ -2341,7 +2341,7 @@ a.reeceECommercePage .bg-danger:hover {
   display: block;
   width: 100%;
   height: 50px;
-  padding: 14px 25px;
+  padding: 14px 20px;
   font-size: 14px;
   line-height: 1.428571429;
   color: #555555;
@@ -2585,25 +2585,25 @@ select[multiple].reeceECommercePage .form-group-lg .form-control {
 .reeceECommercePage .has-success.checkbox label,
 .reeceECommercePage .has-success.radio-inline label,
 .reeceECommercePage .has-success.checkbox-inline label {
-  color: #3c763d;
+  color: #5dc5ba;
 }
 .reeceECommercePage .has-success .form-control {
-  border-color: #3c763d;
+  border-color: #5dc5ba;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 .reeceECommercePage .has-success .form-control:focus {
-  border-color: #2b542c;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
+  border-color: #3fb0a4;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #a8e0da;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #a8e0da;
 }
 .reeceECommercePage .has-success .input-group-addon {
-  color: #3c763d;
-  border-color: #3c763d;
+  color: #5dc5ba;
+  border-color: #5dc5ba;
   background-color: #dff0d8;
 }
 .reeceECommercePage .has-success .form-control-feedback {
-  color: #3c763d;
+  color: #5dc5ba;
 }
 .reeceECommercePage .has-warning .help-block,
 .reeceECommercePage .has-warning .control-label,
@@ -2615,25 +2615,25 @@ select[multiple].reeceECommercePage .form-group-lg .form-control {
 .reeceECommercePage .has-warning.checkbox label,
 .reeceECommercePage .has-warning.radio-inline label,
 .reeceECommercePage .has-warning.checkbox-inline label {
-  color: #8a6d3b;
+  color: #f0ad4e;
 }
 .reeceECommercePage .has-warning .form-control {
-  border-color: #8a6d3b;
+  border-color: #f0ad4e;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 .reeceECommercePage .has-warning .form-control:focus {
-  border-color: #66512c;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
+  border-color: #ec971f;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #f8d9ac;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #f8d9ac;
 }
 .reeceECommercePage .has-warning .input-group-addon {
-  color: #8a6d3b;
-  border-color: #8a6d3b;
+  color: #f0ad4e;
+  border-color: #f0ad4e;
   background-color: #fcf8e3;
 }
 .reeceECommercePage .has-warning .form-control-feedback {
-  color: #8a6d3b;
+  color: #f0ad4e;
 }
 .reeceECommercePage .has-error .help-block,
 .reeceECommercePage .has-error .control-label,
@@ -2645,25 +2645,25 @@ select[multiple].reeceECommercePage .form-group-lg .form-control {
 .reeceECommercePage .has-error.checkbox label,
 .reeceECommercePage .has-error.radio-inline label,
 .reeceECommercePage .has-error.checkbox-inline label {
-  color: #a94442;
+  color: #c91d1d;
 }
 .reeceECommercePage .has-error .form-control {
-  border-color: #a94442;
+  border-color: #c91d1d;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 .reeceECommercePage .has-error .form-control:focus {
-  border-color: #843534;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
+  border-color: #9c1717;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #e96363;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #e96363;
 }
 .reeceECommercePage .has-error .input-group-addon {
-  color: #a94442;
-  border-color: #a94442;
+  color: #c91d1d;
+  border-color: #c91d1d;
   background-color: #f2dede;
 }
 .reeceECommercePage .has-error .form-control-feedback {
-  color: #a94442;
+  color: #c91d1d;
 }
 .reeceECommercePage .has-feedback label ~ .form-control-feedback {
   top: 25px;
@@ -2774,7 +2774,7 @@ select[multiple].reeceECommercePage .form-group-lg .form-control {
   background-image: none;
   border: 1px solid transparent;
   white-space: nowrap;
-  padding: 14px 25px;
+  padding: 14px 20px;
   font-size: 14px;
   line-height: 1.428571429;
   border-radius: 0;
@@ -3043,8 +3043,8 @@ fieldset[disabled] .reeceECommercePage .btn-warning.active {
 }
 .reeceECommercePage .btn-danger {
   color: #ffffff;
-  background-color: #d9534f;
-  border-color: #d43f3a;
+  background-color: #c91d1d;
+  border-color: #b31a1a;
 }
 .reeceECommercePage .btn-danger:hover,
 .reeceECommercePage .btn-danger:focus,
@@ -3053,8 +3053,8 @@ fieldset[disabled] .reeceECommercePage .btn-warning.active {
 .reeceECommercePage .btn-danger.active,
 .open > .dropdown-toggle.reeceECommercePage .btn-danger {
   color: #ffffff;
-  background-color: #c9302c;
-  border-color: #ac2925;
+  background-color: #9c1717;
+  border-color: #7d1212;
 }
 .reeceECommercePage .btn-danger:active,
 .reeceECommercePage .btn-danger.active,
@@ -3079,11 +3079,11 @@ fieldset[disabled] .reeceECommercePage .btn-danger:active,
 .reeceECommercePage .btn-danger.disabled.active,
 .reeceECommercePage .btn-danger[disabled].active,
 fieldset[disabled] .reeceECommercePage .btn-danger.active {
-  background-color: #d9534f;
-  border-color: #d43f3a;
+  background-color: #c91d1d;
+  border-color: #b31a1a;
 }
 .reeceECommercePage .btn-danger .badge {
-  color: #d9534f;
+  color: #c91d1d;
   background-color: #ffffff;
 }
 .reeceECommercePage .btn-link {
@@ -3574,7 +3574,7 @@ select[multiple].reeceECommercePage .input-group-sm > .input-group-btn > .btn {
   vertical-align: middle;
 }
 .reeceECommercePage .input-group-addon {
-  padding: 14px 25px;
+  padding: 14px 20px;
   font-size: 14px;
   font-weight: normal;
   line-height: 1;
@@ -4395,7 +4395,7 @@ fieldset[disabled] .reeceECommercePage .navbar-inverse .btn-link:focus {
 .reeceECommercePage .pagination > li > span {
   position: relative;
   float: left;
-  padding: 14px 25px;
+  padding: 14px 20px;
   line-height: 1.428571429;
   text-decoration: none;
   color: #003767;
@@ -4539,11 +4539,11 @@ a.reeceECommercePage .label:focus {
   top: -1px;
 }
 .reeceECommercePage .label-default {
-  background-color: #777777;
+  background-color: #f6f6f6;
 }
 .reeceECommercePage .label-default[href]:hover,
 .reeceECommercePage .label-default[href]:focus {
-  background-color: #5e5e5e;
+  background-color: #dddddd;
 }
 .reeceECommercePage .label-primary {
   background-color: #5dc5ba;
@@ -4574,11 +4574,11 @@ a.reeceECommercePage .label:focus {
   background-color: #ec971f;
 }
 .reeceECommercePage .label-danger {
-  background-color: #d9534f;
+  background-color: #c91d1d;
 }
 .reeceECommercePage .label-danger[href]:hover,
 .reeceECommercePage .label-danger[href]:focus {
-  background-color: #c9302c;
+  background-color: #9c1717;
 }
 .reeceECommercePage .badge {
   display: inline-block;
@@ -4717,13 +4717,13 @@ a.reeceECommercePage .thumbnail.active {
 .reeceECommercePage .alert-success {
   background-color: #dff0d8;
   border-color: #d6e9c6;
-  color: #3c763d;
+  color: #5dc5ba;
 }
 .reeceECommercePage .alert-success hr {
   border-top-color: #c9e2b3;
 }
 .reeceECommercePage .alert-success .alert-link {
-  color: #2b542c;
+  color: #3fb0a4;
 }
 .reeceECommercePage .alert-info {
   background-color: #d9edf7;
@@ -4739,24 +4739,24 @@ a.reeceECommercePage .thumbnail.active {
 .reeceECommercePage .alert-warning {
   background-color: #fcf8e3;
   border-color: #faebcc;
-  color: #8a6d3b;
+  color: #f0ad4e;
 }
 .reeceECommercePage .alert-warning hr {
   border-top-color: #f7e1b5;
 }
 .reeceECommercePage .alert-warning .alert-link {
-  color: #66512c;
+  color: #ec971f;
 }
 .reeceECommercePage .alert-danger {
   background-color: #f2dede;
   border-color: #ebccd1;
-  color: #a94442;
+  color: #c91d1d;
 }
 .reeceECommercePage .alert-danger hr {
   border-top-color: #e4b9c0;
 }
 .reeceECommercePage .alert-danger .alert-link {
-  color: #843534;
+  color: #9c1717;
 }
 @-webkit-keyframes progress-bar-stripes {
   from {
@@ -4836,7 +4836,7 @@ a.reeceECommercePage .thumbnail.active {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 .reeceECommercePage .progress-bar-danger {
-  background-color: #d9534f;
+  background-color: #c91d1d;
 }
 .progress-striped .reeceECommercePage .progress-bar-danger {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -4958,26 +4958,26 @@ a.reeceECommercePage .thumbnail.active {
   color: #f3fbfa;
 }
 .reeceECommercePage .list-group-item-success {
-  color: #3c763d;
+  color: #5dc5ba;
   background-color: #dff0d8;
 }
 a.reeceECommercePage .list-group-item-success {
-  color: #3c763d;
+  color: #5dc5ba;
 }
 a.reeceECommercePage .list-group-item-success .list-group-item-heading {
   color: inherit;
 }
 a.reeceECommercePage .list-group-item-success:hover,
 a.reeceECommercePage .list-group-item-success:focus {
-  color: #3c763d;
+  color: #5dc5ba;
   background-color: #d0e9c6;
 }
 a.reeceECommercePage .list-group-item-success.active,
 a.reeceECommercePage .list-group-item-success.active:hover,
 a.reeceECommercePage .list-group-item-success.active:focus {
   color: #fff;
-  background-color: #3c763d;
-  border-color: #3c763d;
+  background-color: #5dc5ba;
+  border-color: #5dc5ba;
 }
 .reeceECommercePage .list-group-item-info {
   color: #31708f;
@@ -5002,48 +5002,48 @@ a.reeceECommercePage .list-group-item-info.active:focus {
   border-color: #31708f;
 }
 .reeceECommercePage .list-group-item-warning {
-  color: #8a6d3b;
+  color: #f0ad4e;
   background-color: #fcf8e3;
 }
 a.reeceECommercePage .list-group-item-warning {
-  color: #8a6d3b;
+  color: #f0ad4e;
 }
 a.reeceECommercePage .list-group-item-warning .list-group-item-heading {
   color: inherit;
 }
 a.reeceECommercePage .list-group-item-warning:hover,
 a.reeceECommercePage .list-group-item-warning:focus {
-  color: #8a6d3b;
+  color: #f0ad4e;
   background-color: #faf2cc;
 }
 a.reeceECommercePage .list-group-item-warning.active,
 a.reeceECommercePage .list-group-item-warning.active:hover,
 a.reeceECommercePage .list-group-item-warning.active:focus {
   color: #fff;
-  background-color: #8a6d3b;
-  border-color: #8a6d3b;
+  background-color: #f0ad4e;
+  border-color: #f0ad4e;
 }
 .reeceECommercePage .list-group-item-danger {
-  color: #a94442;
+  color: #c91d1d;
   background-color: #f2dede;
 }
 a.reeceECommercePage .list-group-item-danger {
-  color: #a94442;
+  color: #c91d1d;
 }
 a.reeceECommercePage .list-group-item-danger .list-group-item-heading {
   color: inherit;
 }
 a.reeceECommercePage .list-group-item-danger:hover,
 a.reeceECommercePage .list-group-item-danger:focus {
-  color: #a94442;
+  color: #c91d1d;
   background-color: #ebcccc;
 }
 a.reeceECommercePage .list-group-item-danger.active,
 a.reeceECommercePage .list-group-item-danger.active:hover,
 a.reeceECommercePage .list-group-item-danger.active:focus {
   color: #fff;
-  background-color: #a94442;
-  border-color: #a94442;
+  background-color: #c91d1d;
+  border-color: #c91d1d;
 }
 .reeceECommercePage .list-group-item-heading {
   margin-top: 0;
@@ -5320,7 +5320,7 @@ a.reeceECommercePage .list-group-item-danger.active:focus {
   border-color: #d6e9c6;
 }
 .reeceECommercePage .panel-success > .panel-heading {
-  color: #3c763d;
+  color: #5dc5ba;
   background-color: #dff0d8;
   border-color: #d6e9c6;
 }
@@ -5329,7 +5329,7 @@ a.reeceECommercePage .list-group-item-danger.active:focus {
 }
 .reeceECommercePage .panel-success > .panel-heading .badge {
   color: #dff0d8;
-  background-color: #3c763d;
+  background-color: #5dc5ba;
 }
 .reeceECommercePage .panel-success > .panel-footer + .panel-collapse > .panel-body {
   border-bottom-color: #d6e9c6;
@@ -5356,7 +5356,7 @@ a.reeceECommercePage .list-group-item-danger.active:focus {
   border-color: #faebcc;
 }
 .reeceECommercePage .panel-warning > .panel-heading {
-  color: #8a6d3b;
+  color: #f0ad4e;
   background-color: #fcf8e3;
   border-color: #faebcc;
 }
@@ -5365,7 +5365,7 @@ a.reeceECommercePage .list-group-item-danger.active:focus {
 }
 .reeceECommercePage .panel-warning > .panel-heading .badge {
   color: #fcf8e3;
-  background-color: #8a6d3b;
+  background-color: #f0ad4e;
 }
 .reeceECommercePage .panel-warning > .panel-footer + .panel-collapse > .panel-body {
   border-bottom-color: #faebcc;
@@ -5374,7 +5374,7 @@ a.reeceECommercePage .list-group-item-danger.active:focus {
   border-color: #ebccd1;
 }
 .reeceECommercePage .panel-danger > .panel-heading {
-  color: #a94442;
+  color: #c91d1d;
   background-color: #f2dede;
   border-color: #ebccd1;
 }
@@ -5383,7 +5383,7 @@ a.reeceECommercePage .list-group-item-danger.active:focus {
 }
 .reeceECommercePage .panel-danger > .panel-heading .badge {
   color: #f2dede;
-  background-color: #a94442;
+  background-color: #c91d1d;
 }
 .reeceECommercePage .panel-danger > .panel-footer + .panel-collapse > .panel-body {
   border-bottom-color: #ebccd1;
@@ -6388,15 +6388,90 @@ button.reeceECommercePage .close {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+.reeceECommercePage .radio,
+.reeceECommercePage .checkbox {
+  padding-left: 0;
+}
 .reeceECommercePage .btn {
+  border-width: 2px;
   -webkit-box-shadow: none;
   box-shadow: none;
+  text-shadow: none;
+  line-height: 18px;
 }
 .reeceECommercePage .btn:active,
-.reeceECommercePage .btn:focus {
+.reeceECommercePage .btn:focus,
+.reeceECommercePage .btn:active:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
   outline: none;
+  outline-color: transparent;
+}
+.reeceECommercePage .btn-primary {
+  border-color: #5dc5ba;
+}
+.reeceECommercePage .btn-primary:hover {
+  background: #42b8ac;
+  border-color: #42b8ac;
+}
+.reeceECommercePage .btn-primary:active,
+.reeceECommercePage .btn-primary:focus {
+  background: #42b8ac;
+  border-color: #68d7cb;
+}
+.reeceECommercePage .btn-grey {
+  color: #ffffff;
+  background-color: #bfbfbf;
+  border-color: #bfbfbf;
+}
+.reeceECommercePage .btn-grey:hover,
+.reeceECommercePage .btn-grey:focus,
+.reeceECommercePage .btn-grey.focus,
+.reeceECommercePage .btn-grey:active,
+.reeceECommercePage .btn-grey.active,
+.open > .dropdown-toggle.reeceECommercePage .btn-grey {
+  color: #ffffff;
+  background-color: #a6a6a6;
+  border-color: #a0a0a0;
+}
+.reeceECommercePage .btn-grey:active,
+.reeceECommercePage .btn-grey.active,
+.open > .dropdown-toggle.reeceECommercePage .btn-grey {
+  background-image: none;
+}
+.reeceECommercePage .btn-grey.disabled,
+.reeceECommercePage .btn-grey[disabled],
+fieldset[disabled] .reeceECommercePage .btn-grey,
+.reeceECommercePage .btn-grey.disabled:hover,
+.reeceECommercePage .btn-grey[disabled]:hover,
+fieldset[disabled] .reeceECommercePage .btn-grey:hover,
+.reeceECommercePage .btn-grey.disabled:focus,
+.reeceECommercePage .btn-grey[disabled]:focus,
+fieldset[disabled] .reeceECommercePage .btn-grey:focus,
+.reeceECommercePage .btn-grey.disabled.focus,
+.reeceECommercePage .btn-grey[disabled].focus,
+fieldset[disabled] .reeceECommercePage .btn-grey.focus,
+.reeceECommercePage .btn-grey.disabled:active,
+.reeceECommercePage .btn-grey[disabled]:active,
+fieldset[disabled] .reeceECommercePage .btn-grey:active,
+.reeceECommercePage .btn-grey.disabled.active,
+.reeceECommercePage .btn-grey[disabled].active,
+fieldset[disabled] .reeceECommercePage .btn-grey.active {
+  background-color: #bfbfbf;
+  border-color: #bfbfbf;
+}
+.reeceECommercePage .btn-grey .badge {
+  color: #bfbfbf;
+  background-color: #ffffff;
+}
+.reeceECommercePage .btn-grey:hover {
+  background: #acacac;
+  border-color: #acacac;
+}
+.reeceECommercePage .btn-grey:active,
+.reeceECommercePage .btn-grey:focus {
+  background: #acacac;
+  border-color: #cccccc;
 }
 .reeceECommercePage .btn-xlg {
   border-width: 2px;
@@ -6406,13 +6481,6 @@ button.reeceECommercePage .close {
   border-radius: 0;
   text-transform: uppercase;
 }
-.reeceECommercePage .btn-xlg.btn-primary:hover {
-  border-color: #5dc5ba;
-}
-.reeceECommercePage .btn-xlg.btn-primary:focus,
-.reeceECommercePage .btn-xlg.btn-primary:active {
-  border-color: #a8e0da;
-}
 .reeceECommercePage .img-thumbnail {
   padding: 0;
 }
@@ -6420,6 +6488,7 @@ button.reeceECommercePage .close {
   font-size: 26px;
   font-weight: 200;
   position: relative;
+  cursor: pointer;
 }
 .reeceECommercePage .panel-group .panel-title:before {
   background: url('../images/accordion-icon.png') no-repeat;
@@ -6431,4 +6500,16 @@ button.reeceECommercePage .close {
 }
 .reeceECommercePage .thumbnail {
   padding: 20px;
+}
+.reeceECommercePage .caret {
+  margin-top: 0;
+}
+.reeceECommercePage .label {
+  border-radius: 0;
+  font-weight: 300;
+  text-shadow: none;
+  padding: .5em 1em .6em;
+}
+.reeceECommercePage .label-default {
+  color: #7b7b7b;
 }

@@ -360,9 +360,73 @@ body {
 }
 .myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group {
   border: none;
-}
-.myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group.active {
-  background: rgba(0, 0, 0, 0.4);
+  /*
+                .iconMyAccount{
+                    background-position: 0 -10*@iconDimension;
+                }
+                .iconMyAccount{
+                    background-position: 0 -11*@iconDimension;
+                }
+                */
+
+  /*
+                .accordionHeader{
+                    cursor: pointer;
+                    font-size: 1.4em;
+                    .inner-wrapper{
+                        .clearfix;
+                    }
+                    .accordionIcon{
+                        display: block;
+                        height: @iconDimension;
+                        width: @iconDimension;
+                        background: url('@{baseImagePath}/my-account/accordion-icons.png');
+                        float: left;
+                    }
+                    .accordionHdText{
+                        display: block;
+                        position: relative;
+                        top: 15px;
+                        margin-left: @iconDimension + 10px;
+                    }
+                    .iconProductPricing{
+                        background-position: 0 -@iconDimension;
+                    }
+                    .iconQuotesOnline{
+                        background-position: 0 -2*@iconDimension;
+                    }
+                    .iconItemisedQuotes{
+                        background-position: 0 -3*@iconDimension;
+                    }
+                    .iconQuotesIntoOrders{
+                        background-position: 0 -4*@iconDimension;
+                    }
+                    .iconOrderOnline{
+                        background-position: 0 -5*@iconDimension;
+                    }
+                    .iconSimpleSecure{
+                        background-position: 0 -6*@iconDimension;
+                    }
+                }
+                */
+
+  /*
+                .accordionContent{
+                    padding-left: @iconDimension+10px;
+                    color: @myAccountgreen;
+                    font-size: 1.2em;
+                    ul{
+                        margin-left: 1em;
+                        li{
+                            list-style: disc;
+                            padding: 5px 0 5px 20px;
+                        }
+                    }
+                    [class*="span"]{
+                        padding: 20px 0;
+                    }
+                }*/
+
 }
 .myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group .accordionHeader {
   cursor: pointer;
@@ -380,51 +444,91 @@ body {
 .myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group .accordionHeader .inner-wrapper:after {
   clear: both;
 }
-.myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group .accordionHeader .accordionIcon {
-  display: block;
-  height: 50px;
-  width: 50px;
-  background: url('../images/my-account/accordion-icons.png');
-  float: left;
+.myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group .accordionHeader .accordionHeaderInner {
+  border-left: solid 10px #ffffff;
+  padding-left: 20px;
 }
-.myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group .accordionHeader .accordionHdText {
-  display: block;
+.myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group .accordionHeader h4 {
+  font-size: 1.5em;
+}
+.myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group .accordionHeader p {
+  font-size: .8em;
+}
+.myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group .accordionHeader .showLink,
+.myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group .accordionHeader .hideLink {
+  color: #80bd26;
+  text-transform: uppercase;
+  margin-left: 30px;
+}
+.myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group .accordionHeader .hideLink {
+  display: none;
+}
+.myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group.active .collapse {
+  background: rgba(0, 0, 0, 0.4);
+}
+.myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group.active .accordionHeader .showLink {
+  display: none;
+}
+.myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group.active .accordionHeader .hideLink {
+  display: inline;
+}
+.myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group .iconMyAccount {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background: url('../images/my-account/my-account-icons.png') no-repeat;
   position: relative;
-  top: 15px;
-  margin-left: 60px;
+  top: 10px;
+  margin-right: 10px;
 }
-.myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group .accordionHeader .iconProductPricing {
-  background-position: 0 -50px;
+.myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group .iconMyAccountSearch {
+  background-position: 0 0;
 }
-.myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group .accordionHeader .iconQuotesOnline {
-  background-position: 0 -100px;
+.myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group .iconMyAccountList {
+  background-position: 0 -40px;
 }
-.myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group .accordionHeader .iconItemisedQuotes {
-  background-position: 0 -150px;
+.myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group .iconMyAccountQuotes {
+  background-position: 0 -80px;
 }
-.myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group .accordionHeader .iconQuotesIntoOrders {
+.myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group .iconMyAccountOrders {
+  background-position: 0 -120px;
+}
+.myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group .iconMyAccountStatement {
+  background-position: 0 -160px;
+}
+.myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group .iconMyAccountInvoiceSearch {
   background-position: 0 -200px;
 }
-.myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group .accordionHeader .iconOrderOnline {
-  background-position: 0 -250px;
+.myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group .iconMyAccountBalance {
+  background-position: 0 -240px;
 }
-.myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group .accordionHeader .iconSimpleSecure {
-  background-position: 0 -300px;
+.myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group .iconMyAccountMyQuote {
+  background-position: 0 -280px;
 }
-.myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group .accordionContent {
-  padding-left: 60px;
+.myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group .iconMyAccountBusinessTraining {
+  background-position: 0 -320px;
+}
+.myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group .accordionContent h3 {
   color: #80bd26;
-  font-size: 1.2em;
+  font-size: 24px;
 }
+.myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group .accordionContent > .row-fluid {
+  padding: 2em 0;
+}
+.myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group .accordionContent > .row-fluid + .row-fluid {
+  border-top: solid 1px white;
+}
+.myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group .accordionContent p,
 .myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group .accordionContent ul {
-  margin-left: 1em;
+  font-size: 1.1em;
+  line-height: 1.2em;
+  padding-bottom: 1.5em;
 }
-.myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group .accordionContent ul li {
-  list-style: disc;
-  padding: 5px 0 5px 20px;
+.myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group .accordionContent a.thumbImage {
+  display: block;
 }
-.myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group .accordionContent [class*="span"] {
-  padding: 20px 0;
+.myAccountMegaFooter #myAccountTabContentWrap li.myAccountTabContent .accordion-group .accordionContent a.thumbImage + a.thumbImage {
+  margin-top: 1.5em;
 }
 .myAccountMegaFooter .myTipsDesc h4 a {
   color: #80bd26;

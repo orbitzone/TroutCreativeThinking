@@ -72,7 +72,7 @@ include_once($serverBase."/includes/head/head-generic.php");
 						<li>
 							<a class="greenTab active" href="#tabContentWhyMyAccount">
 								<span class="tabHeading">Why My account</span>
-								<span class="tabInfo"></span>
+								<span class="tabInfo">Find out how hard My Account can work for you and business success.</span>
 							</a>
 						</li>
 						<li>
@@ -97,7 +97,14 @@ include_once($serverBase."/includes/head/head-generic.php");
 							<div class="accordionHeader" data-target="#myAccountAccordion1" data-toggle="collapse" data-parent="#whyMyAccountAccordion">
 								<div class="content-container">
 									<div class="inner-wrapper">
-										<span class="accordionIcon iconManageAccount"></span><span class="accordionHdText">Set up &amp; Manage your Account</span>
+										<div class="accordionHeaderInner">
+											<h4>My Products</h4>
+											<p>Today more than ever you need to be responsive to your customers’ needs. So you need to be able to cost products and present solutions as fast as possible</p>
+										</div>
+										<p>
+											<a class="showLink">See More</a>
+											<a class="hideLink">See Less</a>
+										</p>
 									</div>
 								</div>
 							</div>
@@ -106,20 +113,69 @@ include_once($serverBase."/includes/head/head-generic.php");
 									<div class="inner-wrapper">
 										<div class="accordionContent">
 											<div class="row-fluid">
-												<div class="span6">
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non nisl vitae diam porttitor egestas. Duis eget fringilla sem. Sed quis hendrerit tortor, at congue arcu. Phasellus quis euismod orci, ut interdum ex. Etiam nec lobortis augue.</p>
-													<p>Morbi sed est iaculis, finibus lacus et, varius libero. Pellentesque porttitor ligula enim, quis imperdiet nulla condimentum at. Donec interdum pretium posuere. Fusce ultrices lacinia ante sed suscipit. In dignissim placerat pretium. Cras convallis mi in pharetra interdum. Donec ut lacus vitae sapien mattis mollis non ac arcu.</p>
+												<div class="span8">
+													<h3><span class="iconMyAccount iconMyAccountSearch"></span>Search</h3>
 													<ul>
-														<li>Morbi sed est iaculis, finibus lacus et, varius libero.</li>
-														<li>Pellentesque porttitor ligula enim, quis imperdiet nulla condimentum at.</li>
-														<li>Donec interdum pretium posuere. Fusce ultrices lacinia ante sed suscipit.</li>
-														<li>In dignissim placerat pretium. Cras convallis mi in pharetra interdum. </li>
+														<li>You can search for products 24/7.</li>
+														<li>Select from various sorting and viewing options including line, list or grid view.</li>
+														<li>Images are included with product descriptions to help with quick identification and selection.</li>
+														<li>Refine your search by recent purchases, categories or brands to help you find exactly what you're after.</li>
+														<li>Switch between your price and the Competitive Market Price (CMP).</li>
 													</ul>
 												</div>
-												<div class="span5 offset1">
-													<a class="vidThumbLink playVideo" href="#" data-video-id="Xxmz6u2r8v4" data-videoTitle="My Account">
-														<img src="/assets/images/my-account/tip2.jpg" alt="Tip1">
-														<span class="playIcon"></span>
+												<div class="span3 offset1">
+													<a class="thumbImage" href="#">
+														<img src="../assets/images/my-account/thumbs/search.jpg" alt="Tip1">
+													</a>
+												</div>
+											</div>
+											<div class="row-fluid">
+												<div class="span8">
+													<h3><span class="iconMyAccount iconMyAccountList"></span>Product Lists</h3>
+													<ul>
+														<li>Create or manage product lists.</li>
+														<li>Easily add products or increase quantities to existing product lists.</li>
+														<li>Download, print, save or e-mail your lists for checking or confirmation.</li>
+														<li>Turn a product list into a quote or order in seconds.</li>
+														<li>Lists display both CMP and retail pricing to help cost jobs effectively.</li>
+													</ul>
+												</div>
+												<div class="span3 offset1">
+													<a class="thumbImage" href="#">
+														<img src="../assets/images/my-account/thumbs/product-list.jpg" alt="Tip1">
+													</a>
+												</div>
+											</div>
+											<div class="row-fluid">
+												<div class="span8">
+													<h3><span class="iconMyAccount iconMyAccountQuotes"></span>Reece Quotes</h3>
+													<ul>
+														<li>Request a quote at your Reece branch via phone or in-store. Your quote will then be sent to you via My Account.</li>
+														<li>Turn a quote into an online</li>
+														<li>Save, print or email the quotes.</li>
+														<li>All quotes are stored and filed for future reference.</li>
+													</ul>
+												</div>
+												<div class="span3 offset1">
+													<a class="thumbImage" href="#">
+														<img src="/assets/images/my-account/thumbs/quotes.jpg" alt="Tip1">
+													</a>
+												</div>
+											</div>
+											<div class="row-fluid">
+												<div class="span8">
+													<h3><span class="iconMyAccount iconMyAccountOrders"></span>Online Orders</h3>
+													<ul>
+														<li>Quickly convert your quotes or product lists to orders.</li>
+														<li>Automated confirmation your order has been received via SMS or email.</li>
+														<li>Place your order overnight for next day pick up. Same day ordering and delivery is also available.</li>
+														<li>Choose to pick up your order at any Reece branch or have it delivered to site.</li>
+														<li>Your orders are stored for easy reference.</li>
+													</ul>
+												</div>
+												<div class="span3 offset1">
+													<a class="thumbImage" href="#">
+														<img src="../assets/images/my-account/thumbs/Orders.jpg" alt="Tip1">
 													</a>
 												</div>
 											</div>
@@ -129,10 +185,17 @@ include_once($serverBase."/includes/head/head-generic.php");
 							</div>
 						</div>
 						<div class="accordion-group">
-							<div class="accordionHeader" data-target="#myAccountAccordion2" data-toggle="collapse"  data-parent="#whyMyAccountAccordion">
+							<div class="accordionHeader" data-target="#myAccountAccordion2" data-toggle="collapse" data-parent="#whyMyAccountAccordion">
 								<div class="content-container">
 									<div class="inner-wrapper">
-										<span class="accordionIcon iconProductPricing"></span><span class="accordionHdText">Products &amp; pricing at your finger tips</span>
+										<div class="accordionHeaderInner">
+											<h4>My Reece Account</h4>
+											<p>A big part of having a successful business is hard work. However, all that hard work can go to waste if you’re not keeping track of your cashflow. Knowing what you owe and when, will help you plan for the future.</p>
+										</div>
+										<p>
+											<a class="showLink">See More</a>
+											<a class="hideLink">See Less</a>
+										</p>
 									</div>
 								</div>
 							</div>
@@ -141,20 +204,51 @@ include_once($serverBase."/includes/head/head-generic.php");
 									<div class="inner-wrapper">
 										<div class="accordionContent">
 											<div class="row-fluid">
-												<div class="span6">
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non nisl vitae diam porttitor egestas. Duis eget fringilla sem. Sed quis hendrerit tortor, at congue arcu. Phasellus quis euismod orci, ut interdum ex. Etiam nec lobortis augue.</p>
-													<p>Morbi sed est iaculis, finibus lacus et, varius libero. Pellentesque porttitor ligula enim, quis imperdiet nulla condimentum at. Donec interdum pretium posuere. Fusce ultrices lacinia ante sed suscipit. In dignissim placerat pretium. Cras convallis mi in pharetra interdum. Donec ut lacus vitae sapien mattis mollis non ac arcu.</p>
+												<div class="span8">
+													<h3><span class="iconMyAccount iconMyAccountStatement"></span>Statements</h3>
 													<ul>
-														<li>Morbi sed est iaculis, finibus lacus et, varius libero.</li>
-														<li>Pellentesque porttitor ligula enim, quis imperdiet nulla condimentum at.</li>
-														<li>Donec interdum pretium posuere. Fusce ultrices lacinia ante sed suscipit.</li>
-														<li>In dignissim placerat pretium. Cras convallis mi in pharetra interdum. </li>
+														<li>Download your statements														  for each month.</li>
+														<li>Keep a record of all previous														  statements.</li>
 													</ul>
 												</div>
-												<div class="span5 offset1">
-													<a class="vidThumbLink playVideo" href="#" data-video-id="Xxmz6u2r8v4" data-videoTitle="My Account">
-														<img src="/assets/images/my-account/tip2.jpg" alt="Tip1">
-														<span class="playIcon"></span>
+												<div class="span3 offset1">
+													<a class="thumbImage" href="#">
+														<img src="../assets/images/my-account/thumbs/statements.jpg" alt="Tip1">
+													</a>
+												</div>
+											</div>
+											<div class="row-fluid">
+												<div class="span8">
+													<h3><span class="iconMyAccount iconMyAccountInvoiceSearch"></span>Invoice Search</h3>
+													<ul>
+														<li>Easy to use search feature.</li>
+														<li>Track your invoices to pay and														  review payment history in real time.</li>
+														<li>Search for invoices by order number or job name.</li>
+														<li>Download your invoices.</li>
+													</ul>
+												</div>
+												<div class="span3 offset1">
+													<a class="thumbImage" href="#">
+														<img src="../assets/images/my-account/thumbs/invoice-search.jpg" alt="Tip1">
+													</a>
+												</div>
+											</div>
+											<div class="row-fluid">
+												<div class="span8">
+													<h3><span class="iconMyAccount iconMyAccountBalance"></span>Balance &amp; QuickPay</h3>
+													<ul>
+														<li>View and pay your account balance by														  what's overdue and what's current. Or														  pay your entire account with a click of														  a button.</li>
+														<li>QuickPay is a secure, fast and easy														  way to pay your account online.</li>
+														<li>You can pay with either credit card
+														  or direct debit.</li>
+													</ul>
+												</div>
+												<div class="span3 offset1">
+													<a class="thumbImage" href="#">
+														<img src="../assets/images/my-account/thumbs/balance.jpg" alt="Tip1">
+													</a>
+													<a class="thumbImage" href="#">
+														<img src="../assets/images/my-account/thumbs/quick-pay.jpg" alt="Tip1">
 													</a>
 												</div>
 											</div>
@@ -164,10 +258,17 @@ include_once($serverBase."/includes/head/head-generic.php");
 							</div>
 						</div>
 						<div class="accordion-group">
-							<div class="accordionHeader" data-target="#myAccountAccordion3" data-toggle="collapse"  data-parent="#whyMyAccountAccordion">
+							<div class="accordionHeader" data-target="#myAccountAccordion3" data-toggle="collapse" data-parent="#whyMyAccountAccordion">
 								<div class="content-container">
 									<div class="inner-wrapper">
-										<span class="accordionIcon iconQuotesOnline"></span><span class="accordionHdText">View Reece quotes online</span>
+										<div class="accordionHeaderInner">
+											<h4>My Business tools</h4>
+											<p>You can always spot a good tradesman by the tools they use. And it shouldn’t end with the right wrench, you also need the right business tools that reflect your professionalism.</p>
+										</div>
+										<p>
+											<a class="showLink">See More</a>
+											<a class="hideLink">See Less</a>
+										</p>
 									</div>
 								</div>
 							</div>
@@ -176,160 +277,50 @@ include_once($serverBase."/includes/head/head-generic.php");
 									<div class="inner-wrapper">
 										<div class="accordionContent">
 											<div class="row-fluid">
-												<div class="span6">
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non nisl vitae diam porttitor egestas. Duis eget fringilla sem. Sed quis hendrerit tortor, at congue arcu. Phasellus quis euismod orci, ut interdum ex. Etiam nec lobortis augue.</p>
-													<p>Morbi sed est iaculis, finibus lacus et, varius libero. Pellentesque porttitor ligula enim, quis imperdiet nulla condimentum at. Donec interdum pretium posuere. Fusce ultrices lacinia ante sed suscipit. In dignissim placerat pretium. Cras convallis mi in pharetra interdum. Donec ut lacus vitae sapien mattis mollis non ac arcu.</p>
+												<div class="span8">
+													<h3><span class="iconMyAccount iconMyAccountMyQuote"></span>My Quotes</h3>
 													<ul>
-														<li>Morbi sed est iaculis, finibus lacus et, varius libero.</li>
-														<li>Pellentesque porttitor ligula enim, quis imperdiet nulla condimentum at.</li>
-														<li>Donec interdum pretium posuere. Fusce ultrices lacinia ante sed suscipit.</li>
-														<li>In dignissim placerat pretium. Cras convallis mi in pharetra interdum. </li>
+														<li>Create professional looking quotes that														  you can modify to suit your business.</li>
+														<li>Customise your quotes with your labour and expenses.</li>
+														<li>Customise your quote with headings and blank space to ensure readability.</li>
+														<li>Add your mark up and your total price will be updated automatically.</li>
+														<li>All pricing information on hand (CMP / your price) to quickly build an accurate quote.</li>
+														<li>Pricing is always up to date.</li>
+														<li>Export your quote as a PDF to send to your customers.</li>
+														<li>Turn your quote into an order anytime.</li>
+														<li>All quotes are stores and filed for future reference.</li>
 													</ul>
 												</div>
-												<div class="span5 offset1">
-													<a class="vidThumbLink playVideo" href="#" data-video-id="Xxmz6u2r8v4" data-videoTitle="My Account">
-														<img src="/assets/images/my-account/tip2.jpg" alt="Tip1">
-														<span class="playIcon"></span>
+												<div class="span3 offset1">
+													<a class="thumbImage" href="#">
+														<img src="../assets/images/my-account/thumbs/my-quotes.jpg" alt="Tip1">
 													</a>
 												</div>
 											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="accordion-group">
-							<div class="accordionHeader" data-target="#myAccountAccordion4" data-toggle="collapse"  data-parent="#whyMyAccountAccordion">
-								<div class="content-container">
-									<div class="inner-wrapper">
-										<span class="accordionIcon iconItemisedQuotes"></span><span class="accordionHdText">Create professional itemised quotes</span>
-									</div>
-								</div>
-							</div>
-							<div id="myAccountAccordion4" class="collapse">
-								<div class="content-container">
-									<div class="inner-wrapper">
-										<div class="accordionContent">
 											<div class="row-fluid">
-												<div class="span6">
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non nisl vitae diam porttitor egestas. Duis eget fringilla sem. Sed quis hendrerit tortor, at congue arcu. Phasellus quis euismod orci, ut interdum ex. Etiam nec lobortis augue.</p>
-													<p>Morbi sed est iaculis, finibus lacus et, varius libero. Pellentesque porttitor ligula enim, quis imperdiet nulla condimentum at. Donec interdum pretium posuere. Fusce ultrices lacinia ante sed suscipit. In dignissim placerat pretium. Cras convallis mi in pharetra interdum. Donec ut lacus vitae sapien mattis mollis non ac arcu.</p>
+												<div class="span8">
+													<h3><span class="iconMyAccount iconMyAccountBusinessTraining"></span>Business Training</h3>
 													<ul>
-														<li>Morbi sed est iaculis, finibus lacus et, varius libero.</li>
-														<li>Pellentesque porttitor ligula enim, quis imperdiet nulla condimentum at.</li>
-														<li>Donec interdum pretium posuere. Fusce ultrices lacinia ante sed suscipit.</li>
-														<li>In dignissim placerat pretium. Cras convallis mi in pharetra interdum. </li>
+														<li>The Achieving Business Success														  Series has been created to give
+														  you the tools you need to help
+														  manage your business smarter
+													  and more efficiently.</li>
+														<li>The information, tips and business
+														  tools are designed to assist
+														  business owners increase their
+														  potential earning capacity and
+														  improve their overall quality
+														  of lifestyle.</li>
+														<li>Get started with free online
+														  training modules</li>
 													</ul>
 												</div>
-												<div class="span5 offset1">
-													<a class="vidThumbLink playVideo" href="#" data-video-id="Xxmz6u2r8v4" data-videoTitle="My Account">
-														<img src="/assets/images/my-account/tip2.jpg" alt="Tip1">
-														<span class="playIcon"></span>
+												<div class="span3 offset1">
+													<a class="thumbImage" class="thumbImage" href="#">
+														<img src="../assets/images/my-account/thumbs/business-training.jpg" alt="Tip1">
 													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="accordion-group">
-							<div class="accordionHeader" data-target="#myAccountAccordion5" data-toggle="collapse"  data-parent="#whyMyAccountAccordion">
-								<div class="content-container">
-									<div class="inner-wrapper">
-										<span class="accordionIcon iconQuotesIntoOrders"></span><span class="accordionHdText">Turn quotes into orders online</span>
-									</div>
-								</div>
-							</div>
-							<div id="myAccountAccordion5" class="collapse">
-								<div class="content-container">
-									<div class="inner-wrapper">
-										<div class="accordionContent">
-											<div class="row-fluid">
-												<div class="span6">
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non nisl vitae diam porttitor egestas. Duis eget fringilla sem. Sed quis hendrerit tortor, at congue arcu. Phasellus quis euismod orci, ut interdum ex. Etiam nec lobortis augue.</p>
-													<p>Morbi sed est iaculis, finibus lacus et, varius libero. Pellentesque porttitor ligula enim, quis imperdiet nulla condimentum at. Donec interdum pretium posuere. Fusce ultrices lacinia ante sed suscipit. In dignissim placerat pretium. Cras convallis mi in pharetra interdum. Donec ut lacus vitae sapien mattis mollis non ac arcu.</p>
-													<ul>
-														<li>Morbi sed est iaculis, finibus lacus et, varius libero.</li>
-														<li>Pellentesque porttitor ligula enim, quis imperdiet nulla condimentum at.</li>
-														<li>Donec interdum pretium posuere. Fusce ultrices lacinia ante sed suscipit.</li>
-														<li>In dignissim placerat pretium. Cras convallis mi in pharetra interdum. </li>
-													</ul>
-												</div>
-												<div class="span5 offset1">
-													<a class="vidThumbLink playVideo" href="#" data-video-id="Xxmz6u2r8v4" data-videoTitle="My Account">
-														<img src="/assets/images/my-account/tip2.jpg" alt="Tip1">
-														<span class="playIcon"></span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="accordion-group">
-							<div class="accordionHeader" data-target="#myAccountAccordion6" data-toggle="collapse"  data-parent="#whyMyAccountAccordion">
-								<div class="content-container">
-									<div class="inner-wrapper">
-										<span class="accordionIcon iconOrderOnline"></span><span class="accordionHdText">Order online when it suits you</span>
-									</div>
-								</div>
-							</div>
-							<div id="myAccountAccordion6" class="collapse">
-								<div class="content-container">
-									<div class="inner-wrapper">
-										<div class="accordionContent">
-											<div class="row-fluid">
-												<div class="span6">
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non nisl vitae diam porttitor egestas. Duis eget fringilla sem. Sed quis hendrerit tortor, at congue arcu. Phasellus quis euismod orci, ut interdum ex. Etiam nec lobortis augue.</p>
-													<p>Morbi sed est iaculis, finibus lacus et, varius libero. Pellentesque porttitor ligula enim, quis imperdiet nulla condimentum at. Donec interdum pretium posuere. Fusce ultrices lacinia ante sed suscipit. In dignissim placerat pretium. Cras convallis mi in pharetra interdum. Donec ut lacus vitae sapien mattis mollis non ac arcu.</p>
-													<ul>
-														<li>Morbi sed est iaculis, finibus lacus et, varius libero.</li>
-														<li>Pellentesque porttitor ligula enim, quis imperdiet nulla condimentum at.</li>
-														<li>Donec interdum pretium posuere. Fusce ultrices lacinia ante sed suscipit.</li>
-														<li>In dignissim placerat pretium. Cras convallis mi in pharetra interdum. </li>
-													</ul>
-												</div>
-												<div class="span5 offset1">
-													<a class="vidThumbLink playVideo" href="#" data-video-id="Xxmz6u2r8v4" data-videoTitle="My Account">
-														<img src="/assets/images/my-account/tip2.jpg" alt="Tip1">
-														<span class="playIcon"></span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="accordion-group">
-							<div class="accordionHeader" data-target="#myAccountAccordion7" data-toggle="collapse"  data-parent="#whyMyAccountAccordion">
-								<div class="content-container">
-									<div class="inner-wrapper">
-										<span class="accordionIcon iconSimpleSecure"></span><span class="accordionHdText">Simple, secure payment system</span>
-									</div>
-								</div>
-							</div>
-							<div id="myAccountAccordion7" class="collapse">
-								<div class="content-container">
-									<div class="inner-wrapper">
-										<div class="accordionContent">
-											<div class="row-fluid">
-												<div class="span6">
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non nisl vitae diam porttitor egestas. Duis eget fringilla sem. Sed quis hendrerit tortor, at congue arcu. Phasellus quis euismod orci, ut interdum ex. Etiam nec lobortis augue.</p>
-													<p>Morbi sed est iaculis, finibus lacus et, varius libero. Pellentesque porttitor ligula enim, quis imperdiet nulla condimentum at. Donec interdum pretium posuere. Fusce ultrices lacinia ante sed suscipit. In dignissim placerat pretium. Cras convallis mi in pharetra interdum. Donec ut lacus vitae sapien mattis mollis non ac arcu.</p>
-													<ul>
-														<li>Morbi sed est iaculis, finibus lacus et, varius libero.</li>
-														<li>Pellentesque porttitor ligula enim, quis imperdiet nulla condimentum at.</li>
-														<li>Donec interdum pretium posuere. Fusce ultrices lacinia ante sed suscipit.</li>
-														<li>In dignissim placerat pretium. Cras convallis mi in pharetra interdum. </li>
-													</ul>
-												</div>
-												<div class="span5 offset1">
-													<a class="vidThumbLink playVideo" href="#" data-video-id="Xxmz6u2r8v4" data-videoTitle="My Account">
-														<img src="/assets/images/my-account/tip2.jpg" alt="Tip1">
-														<span class="playIcon"></span>
+													<a class="thumbImage" class="thumbImage" href="#">
+														<img src="../assets/images/my-account/thumbs/business-video.jpg" alt="Tip1">
 													</a>
 												</div>
 											</div>

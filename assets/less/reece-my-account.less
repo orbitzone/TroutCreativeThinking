@@ -316,6 +316,8 @@ body{
     }
     #myAccountTabContentWrap{
         margin: 0;
+
+        
         li.myAccountTabContent{
             list-style: none;
             display: none;
@@ -324,10 +326,116 @@ body{
             }
             .accordion-group{
                 border:none;
-            &.active{
-                background: rgba(0,0,0,0.4)
-            }
-                @iconDimension: 50px;
+                .accordionHeader{
+                    @accordionHeaderPaddingLeft: 20px;
+                    @accordionHeaderBorderLeft:10px;
+                    cursor: pointer;
+                    font-size: 1.4em;
+                    .inner-wrapper{
+                        .clearfix;
+                    }
+                    .accordionHeaderInner{
+                        border-left: solid @accordionHeaderBorderLeft white;
+                        padding-left: @accordionHeaderPaddingLeft
+                    }
+                    h4{
+                        font-size: 1.5em;
+                    }
+                    p{
+                        font-size: .8em;
+                    }
+                    .showLink,.hideLink{
+                        color: @myAccountgreen;
+                        text-transform: uppercase;
+                        margin-left: @accordionHeaderPaddingLeft + @accordionHeaderBorderLeft;
+                    }
+                    .hideLink{
+                        display: none
+                    }
+                }
+                &.active{
+                    .collapse{
+                        background: rgba(0,0,0,0.4);
+                    }
+                    .accordionHeader{
+                        .showLink{
+                            display: none;
+                        }
+                        .hideLink{
+                            display: inline;
+                        }
+                    }
+                }
+                @iconDimension: 40px;
+                .iconMyAccount{
+                    display: inline-block;
+                    height: @iconDimension;
+                    width: @iconDimension;
+                    background: url('@{baseImagePath}/my-account/my-account-icons.png') no-repeat;
+                    position: relative;
+                    top: 10px;
+                    margin-right: 10px;
+                }
+                .iconMyAccountSearch{
+                    background-position: 0 0;
+                }
+                .iconMyAccountList{
+                    background-position: 0 -@iconDimension;
+                }
+                .iconMyAccountQuotes{
+                    background-position: 0 -2*@iconDimension;
+                }
+                .iconMyAccountOrders{
+                    background-position: 0 -3*@iconDimension;
+                }
+                .iconMyAccountStatement{
+                    background-position: 0 -4*@iconDimension;
+                }
+                .iconMyAccountInvoiceSearch{
+                    background-position: 0 -5*@iconDimension;
+                }
+                .iconMyAccountBalance{
+                    background-position: 0 -6*@iconDimension;
+                }
+                .iconMyAccountMyQuote{
+                    background-position: 0 -7*@iconDimension;
+                }
+                .iconMyAccountBusinessTraining{
+                    background-position: 0 -8*@iconDimension;
+                }
+                .accordionContent{
+                    h3{
+                        color: @myAccountgreen;
+                        font-size: 24px;
+                    }
+                    &>.row-fluid{
+                        padding: 2em 0;
+                        &+.row-fluid{
+                            border-top: solid 1px white;
+                        }
+                    }
+                    p,ul{
+                        font-size: 1.1em;
+                        line-height: 1.2em;
+                        padding-bottom: 1.5em;
+                    }
+                    a.thumbImage{
+                        display: block;
+                    }
+                    a.thumbImage+a.thumbImage{
+                        margin-top: 1.5em;
+                    }
+
+                }
+                /*
+                .iconMyAccount{
+                    background-position: 0 -10*@iconDimension;
+                }
+                .iconMyAccount{
+                    background-position: 0 -11*@iconDimension;
+                }
+                */
+                /*
                 .accordionHeader{
                     cursor: pointer;
                     font-size: 1.4em;
@@ -366,6 +474,8 @@ body{
                         background-position: 0 -6*@iconDimension;
                     }
                 }
+                */
+                /*
                 .accordionContent{
                     padding-left: @iconDimension+10px;
                     color: @myAccountgreen;
@@ -380,7 +490,7 @@ body{
                     [class*="span"]{
                         padding: 20px 0;
                     }
-                }
+                }*/
             }
         }
     }

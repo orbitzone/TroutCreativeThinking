@@ -40,14 +40,13 @@ include_once($serverBase."/includes/head/head-generic.php");
 						<div class="myAccountHeroLeft">
 							<h3>My Account.</h3>
 							<h4>Works for you 24/7.</h4>
-							<p>Developed exclusively for Reece account customers, My Account is an innovative management system gives you access to product pricing, allows you to build product lists, manage your account, generate customer quotes and even order online.</p>
+							<p>Developed exclusively for Reece account customers, My Account is an innovative management system that gives you access to product pricing, allows you to build product lists, manage your account, generate customer quotes and even order online.</p>
 							<a href="#" class="greenBtn">Register Now</a>
 							<a href="#" class="learnMore scrollToLink" data-target="#myAccountMegaFooter">Learn More</a>
 						</div>
 					</div>
 					<div class="span4 offset1">
 						<a class="vidThumbLink playVideo" href="#" data-video-id="Xxmz6u2r8v4" data-videoTitle="My Account">
-							<!--<img src="/assets/images/my-account/my-account-video-poster.jpg" alt="Tip1">-->
 							<img src="/assets/images/my-account/guy-on-computer.png" alt="Guy on computer">
 							<span class="playIcon"></span>
 						</a>
@@ -62,7 +61,7 @@ include_once($serverBase."/includes/head/head-generic.php");
 					<div class="row-fluid">
 						<div class="span9">
 							<h3>Discover a better way to do business</h3>
-							<p>Find out how My Account can be a real asset to your business. And if you want to find out more about any particular feature simply click on any of the box to the right and you'll understand why this is a business tool you don't want to be without.</p>
+							<p>Find out how My Account can be a real asset to your business. And if you want to find out more about any particular feature, simply click on any of the boxes below and you'll understand why this is a business tool you don't want to be without.</p>
 						</div>
 						<div class="span2 offset1">
 							<a href="#" class='greenBtn'>Register Now</a>
@@ -71,14 +70,14 @@ include_once($serverBase."/includes/head/head-generic.php");
 					<ul class="myAccountTabs">
 						<li>
 							<a class="greenTab active" href="#tabContentWhyMyAccount">
-								<span class="tabHeading">Why My account</span>
-								<span class="tabInfo">Find out how hard My Account can work for you and business success.</span>
+								<span class="tabHeading">Why My Account</span>
+								<span class="tabInfo">Find out how hard My Account can work for you and your business success.</span>
 							</a>
 						</li>
 						<li>
 							<a class="greenTab" href="#tabContentMyTips">
 								<span class="tabHeading">My Tips</span>
-								<span class="tabInfo">This collection of videos will help you get the most out My Account and its features</span>
+								<span class="tabInfo">This collection of videos will help you get the most out of My Account and its features</span>
 							</a>
 						</li>
 						<li>
@@ -262,7 +261,7 @@ include_once($serverBase."/includes/head/head-generic.php");
 								<div class="content-container">
 									<div class="inner-wrapper">
 										<div class="accordionHeaderInner">
-											<h4>My Business tools</h4>
+											<h4>My Business Tools</h4>
 											<p>You can always spot a good tradesman by the tools they use. And it shouldn’t end with the right wrench, you also need the right business tools that reflect your professionalism.</p>
 										</div>
 										<p>

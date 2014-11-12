@@ -98,7 +98,7 @@ include_once($serverBase."/includes/head/head-generic.php");
 									<div class="inner-wrapper">
 										<div class="accordionHeaderInner">
 											<h4>My Products</h4>
-											<p>Today more than ever you need to be responsive to your customers’ needs. So you need to be able to cost products and present solutions as fast as possible</p>
+											<p>Today more than ever you need to be responsive to your customers’ needs. So you need to be able to cost products and present solutions as fast as possible.</p>
 										</div>
 										<p>
 											<a class="showLink">See More</a>

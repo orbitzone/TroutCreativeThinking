@@ -483,7 +483,12 @@ include_once($serverBase."/includes/foot/scripts.php");
 		});
 
 		$('#whyMyAccountAccordion').on('show', function (e) {
-			$(e.target).parent('.accordion-group').addClass('active');
+			$parent = $(e.target).parent('.accordion-group');
+			$parent.addClass('active');
+		});
+		$('#whyMyAccountAccordion').on('shown', function (e) {
+			$parent = $(e.target).parent('.accordion-group');
+			$('html,body').animate({scrollTop: $parent.offset().top-$('.subnavbar.fixed').height()},'slow');
 		});
 
 		$('#whyMyAccountAccordion').on('hide', function (e) {

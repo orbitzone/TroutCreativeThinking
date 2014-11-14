@@ -60,8 +60,8 @@ include_once($serverBase."/includes/head/head-generic.php");
 				<div class="inner-wrapper">
 					<div class="row-fluid">
 						<div class="span9">
-							<h3>Discover a better way to do business</h3>
-							<p>Find out how My Account can be a real asset to your business. And if you want to find out more about any particular feature, simply click on any of the boxes below and you'll understand why this is a business tool you don't want to be without.</p>
+							<h3>Discover a better way to do business.</h3>
+							<p>My Account can be a real asset for your business, saving you time everyday. Here you can find out how to get the most out of this handy online tool. And if you’d like to know more about any particular feature, simply click on any of the boxes below. Pretty soon you’ll understand why this is a business tool you don’t want to be without.</p>
 						</div>
 						<div class="span2 offset1">
 							<a href="#" class='greenBtn'>Register Now</a>
@@ -340,7 +340,7 @@ include_once($serverBase."/includes/head/head-generic.php");
 										<span class="playIcon"></span>
 									</a>
 									<h4><a href="">My Tip #1 Online Ordering</a></h4>
-									<p>This overview will give you the general idea of how My Account can be a real asset to your business. And if you want to find out more about any particular feature simple click on a to the right and you’ll understand wwithout.</p>
+									<p>You can now place orders online 24/7 with My Account. This short video shows you just how easy it is.</p>
 								</div>
 								<div class="span3 offset1">
 									<a class="vidThumbLink playVideo" href="#" data-video-id="vzv09M75uQM" data-videoTitle="My Tip #2 Click + Collect">
@@ -348,7 +348,7 @@ include_once($serverBase."/includes/head/head-generic.php");
 										<span class="playIcon"></span>
 									</a>
 									<h4><a href="">My Tip #2 Click + Collect</a></h4>
-									<p>This overview will give you the general idea of how My Account can be a real asset to your business. And if you want to find out more about any particular feature simple click on any of</p>
+									<p>Place orders online and pick up from the branch closest to where you’re working. Watch this video to learn how.</p>
 								</div>
 							</div>
 						</div>

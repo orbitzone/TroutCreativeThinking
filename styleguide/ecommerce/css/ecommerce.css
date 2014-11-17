@@ -907,12 +907,12 @@
   line-height: inherit;
 }
 .reeceECommercePage a {
-  color: #003767;
+  color: #5dc5ba;
   text-decoration: none;
 }
 .reeceECommercePage a:hover,
 .reeceECommercePage a:focus {
-  color: #00529a;
+  color: #3fb0a4;
   text-decoration: underline;
 }
 .reeceECommercePage a:focus {
@@ -3089,7 +3089,7 @@ fieldset[disabled] .reeceECommercePage .btn-danger.active {
   background-color: #ffffff;
 }
 .reeceECommercePage .btn-link {
-  color: #003767;
+  color: #5dc5ba;
   font-weight: normal;
   border-radius: 0;
 }
@@ -3110,7 +3110,7 @@ fieldset[disabled] .reeceECommercePage .btn-link {
 }
 .reeceECommercePage .btn-link:hover,
 .reeceECommercePage .btn-link:focus {
-  color: #00529a;
+  color: #3fb0a4;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -3683,7 +3683,7 @@ select[multiple].reeceECommercePage .input-group-sm > .input-group-btn > .btn {
 .reeceECommercePage .nav .open > a:hover,
 .reeceECommercePage .nav .open > a:focus {
   background-color: #eeeeee;
-  border-color: #003767;
+  border-color: #5dc5ba;
 }
 .reeceECommercePage .nav .nav-divider {
   height: 1px;
@@ -4400,7 +4400,7 @@ fieldset[disabled] .reeceECommercePage .navbar-inverse .btn-link:focus {
   padding: 14px 20px;
   line-height: 1.428571429;
   text-decoration: none;
-  color: #003767;
+  color: #5dc5ba;
   background-color: #ffffff;
   border: 1px solid #dddddd;
   margin-left: -1px;
@@ -4420,7 +4420,7 @@ fieldset[disabled] .reeceECommercePage .navbar-inverse .btn-link:focus {
 .reeceECommercePage .pagination > li > span:hover,
 .reeceECommercePage .pagination > li > a:focus,
 .reeceECommercePage .pagination > li > span:focus {
-  color: #00529a;
+  color: #3fb0a4;
   background-color: #eeeeee;
   border-color: #dddddd;
 }
@@ -4615,7 +4615,7 @@ a.reeceECommercePage .badge:focus {
 }
 a.list-group-item.active > .reeceECommercePage .badge,
 .nav-pills > .active > a > .reeceECommercePage .badge {
-  color: #003767;
+  color: #5dc5ba;
   background-color: #ffffff;
 }
 .nav-pills > li > a > .reeceECommercePage .badge {
@@ -4679,7 +4679,7 @@ a.list-group-item.active > .reeceECommercePage .badge,
 a.reeceECommercePage .thumbnail:hover,
 a.reeceECommercePage .thumbnail:focus,
 a.reeceECommercePage .thumbnail.active {
-  border-color: #003767;
+  border-color: #5dc5ba;
 }
 .reeceECommercePage .thumbnail .caption {
   padding: 9px;
@@ -6550,7 +6550,7 @@ fieldset[disabled] .reeceECommercePage .btn-grey.active {
   height: 30px;
   width: 30px;
   float: right;
-  content: 'e';
+  content: 'm';
   font-family: "reece-e-commerce" !important;
   font-style: normal !important;
   font-weight: normal !important;
@@ -6561,6 +6561,9 @@ fieldset[disabled] .reeceECommercePage .btn-grey.active {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #5dc5ba;
+}
+.reeceECommercePage .panel-group .active .panel-title:before {
+  content: 'i';
 }
 .reeceECommercePage .thumbnail {
   padding: 20px;
@@ -6622,21 +6625,39 @@ fieldset[disabled] .reeceECommercePage .btn-grey.active {
 .reeceECommercePage .icon-reece-delivery:before {
   content: "d";
 }
-.reeceECommercePage .icon-reece-down:before {
+.reeceECommercePage .icon-reece-mouse:before {
   content: "e";
 }
-.reeceECommercePage .icon-reece-down-inverted:before {
+.reeceECommercePage .icon-reece-phone:before {
   content: "f";
 }
-.reeceECommercePage .icon-reece-mouse:before {
+.reeceECommercePage .icon-reece-pickup:before {
   content: "g";
 }
-.reeceECommercePage .icon-reece-phone:before {
+.reeceECommercePage .icon-reece-shopcart:before {
   content: "h";
 }
-.reeceECommercePage .icon-reece-pickup:before {
+.reeceECommercePage .icon-reece-arrow-down:before {
   content: "i";
 }
-.reeceECommercePage .icon-reece-shopcart:before {
+.reeceECommercePage .icon-reece-arrow-down-inversed:before {
+  content: "j";
+}
+.reeceECommercePage .icon-reece-arrow-left:before {
   content: "k";
+}
+.reeceECommercePage .icon-reece-arrow-left-inversed:before {
+  content: "l";
+}
+.reeceECommercePage .icon-reece-arrow-right:before {
+  content: "m";
+}
+.reeceECommercePage .icon-reece-arrow-right-inversed:before {
+  content: "n";
+}
+.reeceECommercePage .icon-reece-arrow-up:before {
+  content: "o";
+}
+.reeceECommercePage .icon-reece-arrow-up-inversed:before {
+  content: "p";
 }

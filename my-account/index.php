@@ -123,8 +123,8 @@ include_once($serverBase."/includes/head/head-generic.php");
 													</ul>
 												</div>
 												<div class="span3 offset1">
-													<a class="thumbImage" href="#">
-														<img src="../assets/images/my-account/thumbs/search.jpg" alt="Tip1">
+													<a class="thumbImage" href="../assets/images/my-account/thumbs/search.jpg" title="Search">
+														<img src="../assets/images/my-account/thumbs/search.jpg" alt="Search">
 													</a>
 												</div>
 											</div>
@@ -140,8 +140,8 @@ include_once($serverBase."/includes/head/head-generic.php");
 													</ul>
 												</div>
 												<div class="span3 offset1">
-													<a class="thumbImage" href="#">
-														<img src="../assets/images/my-account/thumbs/product-list.jpg" alt="Tip1">
+													<a class="thumbImage" href="../assets/images/my-account/thumbs/product-list.jpg" title="Product Lists">
+														<img src="../assets/images/my-account/thumbs/product-list.jpg" alt="Product Lists">
 													</a>
 												</div>
 											</div>
@@ -156,8 +156,8 @@ include_once($serverBase."/includes/head/head-generic.php");
 													</ul>
 												</div>
 												<div class="span3 offset1">
-													<a class="thumbImage" href="#">
-														<img src="/assets/images/my-account/thumbs/quotes.jpg" alt="Tip1">
+													<a class="thumbImage" href="../assets/images/my-account/thumbs/quotes.jpg" title="Reece Quotes">
+														<img src="../assets/images/my-account/thumbs/quotes.jpg" alt="Reece Quotes">
 													</a>
 												</div>
 											</div>
@@ -173,8 +173,8 @@ include_once($serverBase."/includes/head/head-generic.php");
 													</ul>
 												</div>
 												<div class="span3 offset1">
-													<a class="thumbImage" href="#">
-														<img src="../assets/images/my-account/thumbs/Orders.jpg" alt="Tip1">
+													<a class="thumbImage" href="../assets/images/my-account/thumbs/Orders.jpg" title="Online Orders">
+														<img src="../assets/images/my-account/thumbs/Orders.jpg" alt="Online Orders">
 													</a>
 												</div>
 											</div>
@@ -206,13 +206,13 @@ include_once($serverBase."/includes/head/head-generic.php");
 												<div class="span8">
 													<h3><span class="iconMyAccount iconMyAccountStatement"></span>Statements</h3>
 													<ul>
-														<li>Download your statements														  for each month.</li>
-														<li>Keep a record of all previous														  statements.</li>
+														<li>Download your statements for each month.</li>
+														<li>Keep a record of all previous statements.</li>
 													</ul>
 												</div>
 												<div class="span3 offset1">
-													<a class="thumbImage" href="#">
-														<img src="../assets/images/my-account/thumbs/statements.jpg" alt="Tip1">
+													<a class="thumbImage" href="../assets/images/my-account/thumbs/statements.jpg" title="Statements">
+														<img src="../assets/images/my-account/thumbs/statements.jpg" alt="Statements">
 													</a>
 												</div>
 											</div>
@@ -221,14 +221,14 @@ include_once($serverBase."/includes/head/head-generic.php");
 													<h3><span class="iconMyAccount iconMyAccountInvoiceSearch"></span>Invoice Search</h3>
 													<ul>
 														<li>Easy to use search feature.</li>
-														<li>Track your invoices to pay and														  review payment history in real time.</li>
+														<li>Track your invoices to pay and review payment history in real time.</li>
 														<li>Search for invoices by order number or job name.</li>
 														<li>Download your invoices.</li>
 													</ul>
 												</div>
 												<div class="span3 offset1">
-													<a class="thumbImage" href="#">
-														<img src="../assets/images/my-account/thumbs/invoice-search.jpg" alt="Tip1">
+													<a class="thumbImage" href="../assets/images/my-account/thumbs/invoice-search.jpg" title="Invoice Search">
+														<img src="../assets/images/my-account/thumbs/invoice-search.jpg" alt="Invoice Search">
 													</a>
 												</div>
 											</div>
@@ -243,11 +243,11 @@ include_once($serverBase."/includes/head/head-generic.php");
 													</ul>
 												</div>
 												<div class="span3 offset1">
-													<a class="thumbImage" href="#">
-														<img src="../assets/images/my-account/thumbs/balance.jpg" alt="Tip1">
+													<a class="thumbImage" href="../assets/images/my-account/thumbs/balance.jpg" title="Balance">
+														<img src="../assets/images/my-account/thumbs/balance.jpg" alt="Balance">
 													</a>
-													<a class="thumbImage" href="#">
-														<img src="../assets/images/my-account/thumbs/quick-pay.jpg" alt="Tip1">
+													<a class="thumbImage" href="../assets/images/my-account/thumbs/quick-pay.jpg" title="QuickPay">
+														<img src="../assets/images/my-account/thumbs/quick-pay.jpg" alt="QuickPay">
 													</a>
 												</div>
 											</div>
@@ -291,8 +291,8 @@ include_once($serverBase."/includes/head/head-generic.php");
 													</ul>
 												</div>
 												<div class="span3 offset1">
-													<a class="thumbImage" href="#">
-														<img src="../assets/images/my-account/thumbs/my-quotes.jpg" alt="Tip1">
+													<a class="thumbImage" href="../assets/images/my-account/thumbs/my-quotes.jpg" title="My Quotes" >
+														<img src="../assets/images/my-account/thumbs/my-quotes.jpg" alt="My Quotes">
 													</a>
 												</div>
 											</div>
@@ -300,7 +300,7 @@ include_once($serverBase."/includes/head/head-generic.php");
 												<div class="span8">
 													<h3><span class="iconMyAccount iconMyAccountBusinessTraining"></span>Business Training</h3>
 													<ul>
-														<li>The Achieving Business Success														  Series has been created to give
+														<li>The Achieving Business Success Series has been created to give
 														  you the tools you need to help
 														  manage your business smarter
 													  and more efficiently.</li>
@@ -315,11 +315,11 @@ include_once($serverBase."/includes/head/head-generic.php");
 													</ul>
 												</div>
 												<div class="span3 offset1">
-													<a class="thumbImage" class="thumbImage" href="#">
-														<img src="../assets/images/my-account/thumbs/business-training.jpg" alt="Tip1">
+													<a class="thumbImage" class="thumbImage" href="../assets/images/my-account/thumbs/business-training.jpg" title="Business Training">
+														<img src="../assets/images/my-account/thumbs/business-training.jpg" alt="Business Training">
 													</a>
-													<a class="thumbImage" class="thumbImage" href="#">
-														<img src="../assets/images/my-account/thumbs/business-video.jpg" alt="Tip1">
+													<a class="thumbImage" class="thumbImage" href="../assets/images/my-account/thumbs/business-video.jpg" title="Business Training">
+														<img src="../assets/images/my-account/thumbs/business-video.jpg" alt="Business Training">
 													</a>
 												</div>
 											</div>
@@ -423,6 +423,15 @@ include_once($serverBase."/includes/foot/scripts.php");
   </div>
 </div>
 
+<div class="modal hide fade" id="myAccountImageModal">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3 id="myAccountModalImageHD">&nbsp;</h3>
+  </div>
+  <div class="modal-body" id="myAccountModalImageWrap">
+  </div>
+</div>
+
 <script type="text/javascript">
 
 </script>
@@ -473,6 +482,7 @@ include_once($serverBase."/includes/foot/scripts.php");
 </script>
 <script type="text/javascript">
 	(function($){
+		/* My Account tabs */
 		$('.myAccountTabs .greenTab').click(function(e){
 			e.preventDefault();
 			$this = $(this);
@@ -481,7 +491,7 @@ include_once($serverBase."/includes/foot/scripts.php");
 			$('#myAccountTabContentWrap li.myAccountTabContent').removeClass('active');
 			$($this.attr('href')).addClass('active');
 		});
-
+		/* Why My Account Accordion */
 		$('#whyMyAccountAccordion').on('show', function (e) {
 			$parent = $(e.target).parent('.accordion-group');
 			$parent.addClass('active');
@@ -494,7 +504,7 @@ include_once($serverBase."/includes/foot/scripts.php");
 		$('#whyMyAccountAccordion').on('hide', function (e) {
 			$(e.target).parent('.accordion-group').removeClass('active');
 		});
-
+		/* Inner links Scroll */
 		$('.scrollToLink').click(function(e){
 			e.preventDefault();
 			target = $($(this).attr('data-target'));
@@ -502,6 +512,14 @@ include_once($serverBase."/includes/foot/scripts.php");
 				scrollTop: target.offset().top - $('.subnavbar').height()
 			}, 2000);
 		})
+		/* Why My Account Thumbs */
+		$('#tabContentWhyMyAccount .thumbImage').click(function(e){
+			e.preventDefault();
+			var thumbTarget = $(e.target).closest('a');
+			$('#myAccountModalImageHD').html(thumbTarget.attr('title'));
+			$('#myAccountModalImageWrap').html('<img src="'+thumbTarget.attr('href')+'" alt="'+thumbTarget.attr('title')+'" />');
+			$('#myAccountImageModal').modal();
+		});
 
 	})(jQuery)
 </script>

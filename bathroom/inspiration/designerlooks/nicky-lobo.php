@@ -241,13 +241,13 @@ include_once($serverBase."/includes/head/head-generic.php");
         <div class="span6">
           <img src="/assets/images/nicky-lobo/floor-plan.jpg" alt="floor plan" usemap="#prodmap" id="floorplan">
           <map name="prodmap" id="productmap">
-            <area shape="circle" coords="558,130,20" class="accordion-toggle area1" data-toggle="collapse" data-parent="#designerLooksProducts" href="#collapse1" title="1. Hydrotherm Milan Floor to Ceiling Heated Rail">
-            <area shape="circle" coords="537,378,20" class="accordion-toggle area2" data-toggle="collapse" data-parent="#designerLooksProducts" href="#collapse2" title="2. Kartell by Laufen Tangerine Orange Stool">
-            <area shape="circle" coords="582,351,20" class="accordion-toggle area3" data-toggle="collapse" data-parent="#designerLooksProducts" href="#collapse3" title="3. Posh Solus 1780 Freestanding Bath">
-            <area shape="circle" coords="597,304,20" class="accordion-toggle area4" data-toggle="collapse" data-parent="#designerLooksProducts" href="#collapse4" title="4. Sussex Scala Floor Bath Mixer Square">
-            <area shape="circle" coords="331,431,20" class="accordion-toggle area5" data-toggle="collapse" data-parent="#designerLooksProducts" href="#collapse5" title="5. Ideal Standard Tonic  BTW Close Coupled Toilet Suite">
-            <area shape="circle" coords="481,444,20" class="accordion-toggle area6" data-toggle="collapse" data-parent="#designerLooksProducts" href="#collapse6" title="6. White Stone Hox Mini Above/Wall Basin Right">
-            <area shape="circle" coords="423,389,20" class="accordion-toggle area7" data-toggle="collapse" data-parent="#designerLooksProducts" href="#collapse7" title="7. Mizu Drift Basin Mixer">
+            <area shape="circle" coords="740,160,35" class="accordion-toggle area1" data-toggle="collapse" data-parent="#designerLooksProducts" href="#collapse1" title="1. Hydrotherm Milan Floor to Ceiling Heated Rail">
+            <area shape="circle" coords="540,459,35" class="accordion-toggle area2" data-toggle="collapse" data-parent="#designerLooksProducts" href="#collapse2" title="2. Kartell by Laufen Tangerine Orange Stool">
+            <area shape="circle" coords="492,555,35" class="accordion-toggle area3" data-toggle="collapse" data-parent="#designerLooksProducts" href="#collapse3" title="3. Posh Solus 1780 Freestanding Bath">
+            <area shape="circle" coords="576,199,35" class="accordion-toggle area4" data-toggle="collapse" data-parent="#designerLooksProducts" href="#collapse4" title="4. Sussex Scala Floor Bath Mixer Square">
+            <area shape="circle" coords="492,335,35" class="accordion-toggle area5" data-toggle="collapse" data-parent="#designerLooksProducts" href="#collapse5" title="5. Ideal Standard Tonic  BTW Close Coupled Toilet Suite">
+            <area shape="circle" coords="939,199,35" class="accordion-toggle area6" data-toggle="collapse" data-parent="#designerLooksProducts" href="#collapse6" title="6. White Stone Hox Mini Above/Wall Basin Right">
+            <area shape="circle" coords="576,46,35" class="accordion-toggle area7" data-toggle="collapse" data-parent="#designerLooksProducts" href="#collapse7" title="7. Mizu Drift Basin Mixer">
           </map>
         </div>
       </div>

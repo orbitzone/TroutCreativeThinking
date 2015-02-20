@@ -40,12 +40,21 @@ include_once($serverBase."/includes/head/head-generic.php");
     <div class="inner-wrapper">
       <div class="designerLooksIntro">
         <div class="designerLooksIntroThumb">
-          <img src="/assets/images/nicky-lobo/inside-out-magazine.png" alt="Nicky Lobo">
+          <img src="/assets/images/nicky-lobo/habitus-magazines.png" alt="Nicky Lobo">
         </div>
         <div class="designerLooksIntroText">
-          <h3 class="designerLooksIntroName">See Nicky Lobo’s dream bathroom</h3>
-          <h4 class="designerLooksIntroRole">Editorial Director, Inside Out Magazine</h4>
-          <p class="designerLooksIntroDesc">Inside Out Magazine is one of Australia’s leading publishers of print and online publications covering architecture, design and building and product services with titles including Architecture Australia, Houses, Artichoke and Selector.</p>
+          <h3 class="designerLooksIntroName">Nicky Lobo&rsquo;s dream bathroom</h3>
+          <h4 class="designerLooksIntroRole">Deputy Editor, Habitus Magazine</h4>
+          <p class="designerLooksIntroDesc">Habitus is a leading Australian design magazine for and about the design hunters – the homes they build, the landscapes that surround them, and the products and works of art they put inside.</p>
+
+
+
+
+
+
+
+
+
         </div>
       </div>
       <div id="designerLooksCarousel" class="carousel slide designerLooksCarousel" data-bs-carousel="carousel">
@@ -73,32 +82,37 @@ include_once($serverBase."/includes/head/head-generic.php");
       <div class="designerLooksStory">
         <div class="designerLooksEditorContent" style="background-color:#64928a;">
           <div class="designerLooksEditorThumb">
-            <img src="/assets/images/nicky-lobo/inside-out-magazine.png" alt="Inside Out Magazine">
+            <img src="/assets/images/nicky-lobo/habitus-magazines.png" alt="Inside Out Magazine">
           </div>
           <div class="designerLooksEditorInfo">
             <h4 class="designerLooksStoryName">Nicky Lobo</h4>
-            <h5 class="designerLooksStoryRole">Editorial Director</h5>
-            <h5 class="designerLooksStoryRole">Inside Out Magazine</h5>
+            <h5 class="designerLooksStoryRole">Deputy Editor</h5>
+            <h5 class="designerLooksStoryRole">Habitus Magazine</h5>
           </div>
           <p>"The bathroom returns to its natural function. A sophisticated jungle of primal rebirth.</p>
           <p>In the wild, curves and organic shapes reign supreme. The light is dappled, filtered through dense foliage. A sense of symmetry, a simple colour palette and refined materials bring order and peace. Graceful lines, elegant forms and a hint of luxury intensify the calming element of this arboreal experience.</p>
           <p>Connected to the elements, a place of nourishing repose; the cat keeps its cool in this sophisticated jungle bathroom."</p>
+          <p>Visit <a href="http://www.habitusliving.com/" target="_blank">habitusliving.com</a> </p>
+
+          <p>
+          <a href="https://twitter.com/habitusliving" target="_blank"><i class="icon-twitter icon-large"></i></a>
+          <a href="https://instagram.com/habitusliving/" target="_blank"><i class="icon-instagram icon-large"></i></a>
+          </p>
 
         </div>
         <div class="designerLooksArchitectContent">
           <div class="designerLooksArchitectInfo">
-            <h4 class="designerLooksStoryName">Aaron Peters</h4>
-            <h5 class="designerLooksStoryRole">Architect</h5>
-            <h5 class="designerLooksStoryRole">Owen and Vokes and Peters</h5>
+            <h4 class="designerLooksStoryName">Thomas Coward</h4>
+            <h5 class="designerLooksStoryRole">Designer</h5>
+            <h5 class="designerLooksStoryRole">Thomas Coward Studio</h5>
           </div>
-          <p>"Nicky wanted a bathroom which incorporated light, nature and simplicity.</p>
-          <p>I created the vision of a space which incorporates the chaotic nature of a lush jungle, controlled by the structured grid of the mosaic and dominant form of the room. The beauty lies where these these elements meet. The room plays with the notion of being exposed to nature but protected by it during our most intimate moments. The space is open plan, with foliage creating boundaries and zones.</p>
-          <p>The products were chosen for their pure, stoic forms, which spoke to the room and complemented Nicky's bathroom rituals."</p>
-          <p class="companyInfo">Owen and Vokes and Peters are a small architectural practice located in Brisbane. Founded in 2003, the practice specialises in boutique commercial, residential and institutional projects.</p>
-          <p>Visit <a href="http://www.owenandvokesandpeters.com">www.owenandvokesandpeters.com</a></p>
+          <p>"Thomas Coward Studio creates product, furniture and spaces. From consultancy to full production, the studio works over several disciplines to create and deliver outcomes to fulfil commercial and personal objectives."</p>
+          <p>Visit <a href="http://thomascoward.com/" target="_blank">thomascoward.com</a></p>
+          <p>
+          <a href="https://instagram.com/thomas.coward" target="_blank"><i class="icon-instagram icon-large"></i></a>
+          </p>
         </div>
       </div>
-
       <div class="row-fluid designerLooksWorkImages">
         <div class="span4">
           <img src="/assets/images/nicky-lobo/mood-01.jpg" alt="placeholder">
@@ -145,6 +159,7 @@ include_once($serverBase."/includes/head/head-generic.php");
                   <a href="http://www.reece.com.au/bathrooms/products/225902">
                     <img src="http://www.reece.com.au/products/showroom_main/225902.jpg" alt="Sussex Scala 200 Curved Wall Bath Spout">
                   </a>
+                  <p>Also available in black.</p>
                   <div class="accordionAction">
                     <a target="_blank" href="http://www.reece.com.au/bathrooms/products/225902" class="btn">Product Details</a>
                   </div>
@@ -162,6 +177,7 @@ include_once($serverBase."/includes/head/head-generic.php");
                   <a href="http://www.reece.com.au/bathrooms/products/2262113">
                     <img src="http://www.reece.com.au/products/showroom_main/2262113.jpg" alt="Sussex Scala Shower/Bath Mixer">
                   </a>
+                  <p>Also available in black.</p>
                   <div class="accordionAction">
                     <a target="_blank" href="http://www.reece.com.au/bathrooms/products/2262113" class="btn">Product Details</a>
                   </div>

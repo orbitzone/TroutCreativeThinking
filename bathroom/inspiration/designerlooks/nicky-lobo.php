@@ -159,7 +159,7 @@ include_once($serverBase."/includes/head/head-generic.php");
                   <a href="http://www.reece.com.au/bathrooms/products/225902">
                     <img src="http://www.reece.com.au/products/showroom_main/225902.jpg" alt="Sussex Scala 200 Curved Wall Bath Spout">
                   </a>
-                  <p>Also available in black.</p>
+                  <p>Also available in black through custom order.</p>
                   <div class="accordionAction">
                     <a target="_blank" href="http://www.reece.com.au/bathrooms/products/225902" class="btn">Product Details</a>
                   </div>
@@ -177,7 +177,7 @@ include_once($serverBase."/includes/head/head-generic.php");
                   <a href="http://www.reece.com.au/bathrooms/products/2262113">
                     <img src="http://www.reece.com.au/products/showroom_main/2262113.jpg" alt="Sussex Scala Shower/Bath Mixer">
                   </a>
-                  <p>Also available in black.</p>
+                  <p>Also available in black through custom order.</p>
                   <div class="accordionAction">
                     <a target="_blank" href="http://www.reece.com.au/bathrooms/products/2262113" class="btn">Product Details</a>
                   </div>

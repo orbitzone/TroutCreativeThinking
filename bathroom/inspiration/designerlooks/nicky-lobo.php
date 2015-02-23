@@ -44,7 +44,7 @@ include_once($serverBase."/includes/head/head-generic.php");
         </div>
         <div class="designerLooksIntroText">
           <h3 class="designerLooksIntroName">Nicky Lobo&rsquo;s dream bathroom</h3>
-          <h4 class="designerLooksIntroRole">Deputy Editor, Habitus Magazine</h4>
+          <h4 class="designerLooksIntroRole">Editor, Habitus Magazine</h4>
           <p class="designerLooksIntroDesc">Habitus is a leading Australian design magazine for and about the design hunters – the homes they build, the landscapes that surround them, and the products and works of art they put inside.</p>
 
 
@@ -86,7 +86,7 @@ include_once($serverBase."/includes/head/head-generic.php");
           </div>
           <div class="designerLooksEditorInfo">
             <h4 class="designerLooksStoryName">Nicky Lobo</h4>
-            <h5 class="designerLooksStoryRole">Deputy Editor</h5>
+            <h5 class="designerLooksStoryRole">Editor</h5>
             <h5 class="designerLooksStoryRole">Habitus Magazine</h5>
           </div>
           <p>"The bathroom returns to its natural function. A sophisticated jungle of primal rebirth.</p>
@@ -106,7 +106,12 @@ include_once($serverBase."/includes/head/head-generic.php");
             <h5 class="designerLooksStoryRole">Designer</h5>
             <h5 class="designerLooksStoryRole">Thomas Coward Studio</h5>
           </div>
-          <p>"Thomas Coward Studio creates product, furniture and spaces. From consultancy to full production, the studio works over several disciplines to create and deliver outcomes to fulfil commercial and personal objectives."</p>
+          <p>Thomas Coward Studio creates product, furniture and spaces. From consultancy to full production, the studio works over several disciplines to create and deliver outcomes to fulfil commercial and personal objectives.</p>
+          <p>"Nicky wanted a bathroom which incorporated light, nature and simplicity.</p>
+
+           <p>I created the vision of a space which encompasses the chaotic nature of a lush jungle, controlled by the structured grid of the mosaic and dominant form of the room. The beauty lies where these these elements meet. The room plays with the notion of being exposed to nature but protected by it during our most intimate moments. The space is open plan, with foliage creating boundaries and zones.</p>
+          
+           <p>The products were chosen for their pure, stoic forms, which spoke to the room and complemented Nicky's bathroom rituals."</p>
           <p>Visit <a href="http://thomascoward.com/" target="_blank">thomascoward.com</a></p>
           <p>
           <a href="https://instagram.com/thomas.coward" target="_blank"><i class="icon-instagram icon-large"></i></a>

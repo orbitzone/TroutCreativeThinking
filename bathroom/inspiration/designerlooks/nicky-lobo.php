@@ -106,12 +106,13 @@ include_once($serverBase."/includes/head/head-generic.php");
             <h5 class="designerLooksStoryRole">Designer</h5>
             <h5 class="designerLooksStoryRole">Thomas Coward Studio</h5>
           </div>
-          <p>Thomas Coward Studio creates product, furniture and spaces. From consultancy to full production, the studio works over several disciplines to create and deliver outcomes to fulfil commercial and personal objectives.</p>
+          
           <p>"Nicky wanted a bathroom which incorporated light, nature and simplicity.</p>
 
            <p>I created the vision of a space which encompasses the chaotic nature of a lush jungle, controlled by the structured grid of the mosaic and dominant form of the room. The beauty lies where these these elements meet. The room plays with the notion of being exposed to nature but protected by it during our most intimate moments. The space is open plan, with foliage creating boundaries and zones.</p>
           
            <p>The products were chosen for their pure, stoic forms, which spoke to the room and complemented Nicky's bathroom rituals."</p>
+           <p>Thomas Coward Studio creates product, furniture and spaces. From consultancy to full production, the studio works over several disciplines to create and deliver outcomes to fulfil commercial and personal objectives.</p>
           <p>Visit <a href="http://thomascoward.com/" target="_blank">thomascoward.com</a></p>
           <p>
           <a href="https://instagram.com/thomas.coward" target="_blank"><i class="icon-instagram icon-large"></i></a>

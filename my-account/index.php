@@ -339,7 +339,7 @@ include_once($serverBase."/includes/head/head-generic.php");
 										<img src="/assets/images/my-account/tip1.jpg" alt="Tip1">
 										<span class="playIcon"></span>
 									</a>
-									<h4><a href="">My Tip #1 Online Ordering</a></h4>
+									<h4><a class="vidThumbLink playVideo" href="#"  data-video-id="REmfHIGdyIA" data-videoTitle="My Tip #1 Online Ordering">My Tip #1 Online Ordering</a></h4>
 									<p>You can now place orders online 24/7 with My Account. This short video shows you just how easy it is.</p>
 								</div>
 								<div class="span3 offset1">
@@ -347,7 +347,7 @@ include_once($serverBase."/includes/head/head-generic.php");
 										<img src="/assets/images/my-account/tip2.jpg" alt="Tip1">
 										<span class="playIcon"></span>
 									</a>
-									<h4><a href="">My Tip #2 Click + Collect</a></h4>
+									<h4><a class="vidThumbLink playVideo" href="#" data-video-id="vzv09M75uQM" data-videoTitle="My Tip #2 Click + Collect">My Tip #2 Click + Collect</a></h4>
 									<p>Place orders online and pick up from the branch closest to where you’re working. Watch this video to learn how.</p>
 								</div>
 							</div>

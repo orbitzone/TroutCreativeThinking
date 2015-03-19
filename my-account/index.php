@@ -466,18 +466,18 @@ include_once($serverBase."/includes/foot/scripts.php");
 	}
 	// This function creates an <iframe> (and YouTube player)
 	//    after the API code downloads.
+	function onPlayerReady(event) {
+        event.target.playVideo();
+      }
 	function onYouTubeIframeAPIReady() {
-		if (typeof player === 'undefined') {
-			player = new YT.Player('myAccountYoutubePlayer', {
-				height: '320',
-				width: '520',
-				videoId: videoId
-			});
-		}
-		else{
-			loadVideoById({'videoId': videoId });
-		}
-
+		player = new YT.Player('myAccountYoutubePlayer', {
+          height: '320',
+          width: '520',
+          videoId: videoId,
+          events: {
+            'onReady': onPlayerReady
+          }
+        });
 	}
 </script>
 <script type="text/javascript">

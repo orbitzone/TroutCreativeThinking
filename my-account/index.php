@@ -46,7 +46,7 @@ include_once($serverBase."/includes/head/head-generic.php");
 						</div>
 					</div>
 					<div class="span4 offset1">
-						<a class="vidThumbLink playVideo" href="#" data-video-id="Xxmz6u2r8v4" data-videoTitle="My Account">
+						<a class="vidThumbLink playVideo" href="#" data-toggle="modal" data-target="#myAccountModal">
 							<img src="/assets/images/my-account/guy-on-computer.png" alt="Guy on computer">
 							<span class="playIcon"></span>
 						</a>
@@ -335,19 +335,19 @@ include_once($serverBase."/includes/head/head-generic.php");
 						<div class="inner-wrapper">
 							<div class="row-fluid myTipsDesc">
 								<div class="span3">
-									<a class="vidThumbLink playVideo" href="#" data-video-id="REmfHIGdyIA" data-videoTitle="My Tip #1 Online Ordering">
+									<a class="vidThumbLink playVideo" href="#" data-toggle="modal" data-target="#myAccountModal2">
 										<img src="/assets/images/my-account/tip1.jpg" alt="Tip1">
 										<span class="playIcon"></span>
 									</a>
-									<h4><a class="vidThumbLink playVideo" href="#"  data-video-id="REmfHIGdyIA" data-videoTitle="My Tip #1 Online Ordering">My Tip #1 Online Ordering</a></h4>
+									<h4><a class="vidThumbLink playVideo" href="#"  data-toggle="modal" data-target="#myAccountModal2">My Tip #1 Online Ordering</a></h4>
 									<p>You can now place orders online 24/7 with My Account. This short video shows you just how easy it is.</p>
 								</div>
 								<div class="span3 offset1">
-									<a class="vidThumbLink playVideo" href="#" data-video-id="vzv09M75uQM" data-videoTitle="My Tip #2 Click + Collect">
+									<a class="vidThumbLink playVideo" href="#"  data-toggle="modal" data-target="#myAccountModal3">
 										<img src="/assets/images/my-account/tip2.jpg" alt="Tip1">
 										<span class="playIcon"></span>
 									</a>
-									<h4><a class="vidThumbLink playVideo" href="#" data-video-id="vzv09M75uQM" data-videoTitle="My Tip #2 Click + Collect">My Tip #2 Click + Collect</a></h4>
+									<h4><a class="vidThumbLink playVideo" href="#"  data-toggle="modal" data-target="#myAccountModal3">My Tip #2 Click + Collect</a></h4>
 									<p>Place orders online and pick up from the branch closest to where you’re working. Watch this video to learn how.</p>
 								</div>
 							</div>
@@ -419,7 +419,31 @@ include_once($serverBase."/includes/foot/scripts.php");
     <h3 id="myAccountModalHD">My Account</h3>
   </div>
   <div class="modal-body" id="myAccountYoutubePlayerWrap">
-    <div id="myAccountYoutubePlayer"></div>
+    <div class="myAccountYoutubePlayer">
+    	<iframe width="560" height="315"  data-url="https://www.youtube.com/embed/Xxmz6u2r8v4?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+<div class="modal hide fade" id="myAccountModal2">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3 id="myAccountModalHD">My Tip #1 Online Ordering</h3>
+  </div>
+  <div class="modal-body" id="myAccountYoutubePlayerWrap">
+    <div class="myAccountYoutubePlayer">
+    	<iframe width="560" height="315" data-url="https://www.youtube.com/embed/REmfHIGdyIA?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+<div class="modal hide fade" id="myAccountModal3">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3 id="myAccountModalHD">My Tip #2 Click + Collect</h3>
+  </div>
+  <div class="modal-body" id="myAccountYoutubePlayerWrap">
+    <div class="myAccountYoutubePlayer">
+    	<iframe width="560" height="315" data-url="https://www.youtube.com/embed/vzv09M75uQM?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+    </div>
   </div>
 </div>
 
@@ -436,49 +460,14 @@ include_once($serverBase."/includes/foot/scripts.php");
 
 </script>
 <script>
-	var player;
-	videoId = 'Xxmz6u2r8v4';
-	jQuery(function(){
-		var isregisterFormShown;
+	$('.modal').bind('show', function () {
+		var url = $(this).find('iframe').data('url'); 
+	 	$(this).find('iframe').attr('src', url);
+	 });
+	$('.modal').bind('hide', function () {
+	 	$(this).find('iframe').attr('src', '');
 
-		$('.playVideo').click(addVideo);
-
-		$('#myAccountModal').on('hidden', function(){
-			player.stopVideo();
-			player.clearVideo();
-		})
-		//This code loads the IFrame Player API code asynchronously.
-		var tag = document.createElement('script');
-		tag.src = "https://www.youtube.com/iframe_api";
-		var firstScriptTag = document.getElementsByTagName('script')[0];
-		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-	});
-
-
-	function addVideo(e){
-		e.preventDefault();
-
-		videoId = $(this).attr('data-video-id');
-		videoTitle = $(this).attr('data-videoTitle');
-		$('#myAccountModal').modal('show');
-		$('#myAccountModalHD').html(videoTitle);
-		if(player) {player.loadVideoById({'videoId': videoId });}
-	}
-	// This function creates an <iframe> (and YouTube player)
-	//    after the API code downloads.
-	function onPlayerReady(event) {
-        event.target.playVideo();
-      }
-	function onYouTubeIframeAPIReady() {
-		player = new YT.Player('myAccountYoutubePlayer', {
-          height: 'auto',
-          width: '100%',
-          videoId: videoId,
-          events: {
-            'onReady': onPlayerReady
-          }
-        });
-	}
+	 });
 </script>
 <script type="text/javascript">
 	(function($){

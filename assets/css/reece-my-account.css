@@ -565,7 +565,7 @@ body {
 .myAccountMegaFooter .myAccountDownloads li a:hover {
   text-decoration: none;
 }
-#myAccountYoutubePlayerWrap {
+.myAccountYoutubePlayer {
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 30px;
@@ -573,7 +573,7 @@ body {
   overflow: hidden;
   margin: 15px;
 }
-#myAccountYoutubePlayerWrap iframe {
+.myAccountYoutubePlayer iframe {
   position: absolute;
   top: 0;
   left: 0;

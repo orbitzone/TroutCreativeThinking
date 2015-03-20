@@ -471,8 +471,8 @@ include_once($serverBase."/includes/foot/scripts.php");
       }
 	function onYouTubeIframeAPIReady() {
 		player = new YT.Player('myAccountYoutubePlayer', {
-          height: '320',
-          width: '520',
+          height: 'auto',
+          width: '100%',
           videoId: videoId,
           events: {
             'onReady': onPlayerReady

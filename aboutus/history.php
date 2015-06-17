@@ -33,7 +33,7 @@
 				data-100-bottom="opacity: .3"
 				data-bottom="opacity:1"
 				>Scroll down to experience some of our most significant moments over the last 90+ years.</p>
-				<h2 class="year">1919 - 2014</h2>
+				<h2 class="year">1920 - 2014</h2>
 				<p></p>
 
 			</div>

@@ -1,7 +1,7 @@
 <?php
 	$panels = array(
-		"1919" => array("bgBlue", 'Harold Joseph Reece begins selling goods from the back of his truck.'),
-		"1920" => array("bgLightBrown", 'The first Reece plumbing hardware store commences operations in Caulfield, Victoria trading under the name “HJ Reece”.'),
+		"1920-1" => array("bgBlue", 'Harold Joseph Reece begins selling goods from the back of his truck.'),
+		"1920-2" => array("bgLightBrown", 'The first Reece plumbing hardware store commences operations in Caulfield, Victoria trading under the name “HJ Reece”.'),
 		"1922" => array("bgBrown", 'Reece is incorporated as a proprietary limited company.'),
 		"1954" => array("bgTurquoise", 'Reece is listed on the Australian Stock Exchange.'),
 		"1969" => array("bgStripedBrown", 'The Wilson family becomes involved in Reece.'),
@@ -44,6 +44,7 @@
 		"2012-3" => array("bgBlueLight", 'Reece begins trading online with its first eCommerce solution through My Account.'),
 		"2012-4" => array("bgBlue", 'Reece acquires Town Plumbing Supplies.'),
 		"2014-1" => array("bgGreenLight", 'Reece aquires Actrol.'),
+		"2014-2" => array("bgBlueSky", 'Building the Reece Group.'),
 	);
 
 ?>

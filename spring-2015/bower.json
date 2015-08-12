@@ -1,0 +1,26 @@
+{
+  "name": "reece-spring-2015",
+  "version": "0.1",
+  "authors": [
+    "Anton"
+  ],
+  "description": "Reece Spring 2015 Site",
+  "keywords": [
+    "HTML",
+    "Boilerplate",
+    "CSS",
+    "Javascript"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "jquery": "1.11.0",
+    "font-awesome": "~4.2.0",
+    "modernizr": "~2.8.3"
+  }
+}

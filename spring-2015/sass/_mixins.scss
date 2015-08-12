@@ -1,0 +1,77 @@
+@mixin vertical-align {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: 	translateY(-50%);
+  -ms-transform: 		translateY(-50%);
+  transform: 			translateY(-50%);
+}
+@mixin border-radius($radius){
+  -webkit-border-radius: 	$radius;
+  -moz-border-radius:       $radius;
+  -ms-border-radius: 		$radius;
+  border-radius: 			$radius;	
+}
+@mixin box-shadow($box-shadow){
+  -webkit-box-shadow: 	$box-shadow;
+  -moz-box-shadow:       $box-shadow;
+  -ms-box-shadow: 		$box-shadow;
+  box-shadow: 			$box-shadow;	
+}
+@mixin transform($transform){
+  -webkit-transform:   $transform;
+  -moz-transform:       $transform;
+  -ms-transform:     $transform;
+  -o-transform:     $transform;
+  transform:       $transform;  
+}
+@mixin center-align {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform:  translateY(-50%) translateX(-50%);
+  -moz-transform:   translateY(-50%) translateX(-50%);
+  -ms-transform:    translateY(-50%) translateX(-50%);
+  -o-transform:   translateY(-50%) translateX(-50%);
+  transform:      translateY(-50%) translateX(-50%);
+}
+@mixin animation-name($name){
+  -webkit-animation-name:   $name;
+  -moz-animation-name:       $name;
+  -ms-animation-name:     $name;
+  -o-animation-name:     $name;
+  animation-name:       $name;   
+}
+@mixin animation-duration($duration){
+  -webkit-animation-duration:   $duration;
+  -moz-animation-duration:       $duration;
+  -ms-animation-duration:     $duration;
+  -o-animation-duration:     $duration;
+  animation-duration:       $duration;   
+}
+@mixin animation-iteration-count($iteration-count){
+  -webkit-animation-iteration-count:   $iteration-count;
+  -moz-animation-iteration-count:       $iteration-count;
+  -ms-animation-iteration-count:     $iteration-count;
+  -o-animation-iteration-count:     $iteration-count;
+  animation-iteration-count:       $iteration-count;   
+}
+@mixin animation-play-state($state){
+  -webkit-animation-play-state: $state;
+  -moz-animation-play-state: $state;
+  -o-animation-play-state: $state;
+  animation-play-state: $state;
+}
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content; 
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  } 
+}

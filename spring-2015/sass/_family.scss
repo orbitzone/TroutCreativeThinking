@@ -1,0 +1,79 @@
+body.love-family{
+	.we-love{
+		font-size: em(132);
+		color: $pale-blue;			
+	}
+	.icon-share-dotted{
+		color: $pink;
+		font-size: em(46);
+	}
+	#collection-intro{
+		header{
+			background: none;
+			position: relative;
+			h1{
+				color: $pink;
+				position: absolute;
+				bottom: 6.09756%;
+				left: 27.30263%;
+				font-size: em(90);
+				text-decoration: underline;
+			}
+			.span4{
+				@media (min-width: $screen-sm-min){
+					width: 33.02632%;
+				}
+			}
+			.span8{
+				@media (min-width: $screen-sm-min){
+					margin-left: 0.59211%;
+					width: 66.38158%;
+				}
+			}			
+		}
+		.intro{
+			position: relative;
+			font-size: em(34);
+			color: $pink;
+			padding-top: 106px;
+			line-height: 1em;
+			font-weight: 700;
+		}
+		h2{
+			font-size: em(60);
+			color: $green;
+			text-decoration: underline;
+		}		
+		.hanging-toy{
+			position: absolute;
+			right: 20px;
+			top: 0;
+		}
+		.products-we-love{
+			.we-love{
+				position: absolute;
+				top: -33px;
+				left: 22px;
+			}
+			position: relative;
+			padding: em(20) em(20) em(20) em(40);
+			.white-box{
+				background: $white;
+				padding: em(20);
+			}
+			.product-1{
+				position: relative;
+				padding: 138px 40px 20px 30px;
+				.image{
+					position: absolute;
+					top: 10px;
+					right: -60px;
+					max-width: 379px;
+				}
+				.white-box{
+										
+				}
+			}
+		}		
+	}
+}

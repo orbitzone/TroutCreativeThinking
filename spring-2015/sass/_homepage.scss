@@ -1,0 +1,230 @@
+body.homepage{
+	#banner{
+		position: relative;
+		margin-top: 40px;
+		.destination-happiness{
+			width: 337px;
+			@include center-align;
+			rect.green{
+				fill: $green;				
+			}
+			rect.white{
+				fill: $white;
+			}
+			/*.text{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				left:0;
+				bottom: 0;
+				text-align: center;
+				.top{
+					color: $white;
+					height: 50%;
+					h1{
+						font-size: em(55);
+						span{
+							font-size: 0.55em;
+						}
+					}
+				}
+				.bottom{
+					height: 50%;
+					color: $green;
+				}
+			}*/
+			.logo{
+				
+			}
+		}
+		.span6{
+			@media (min-width: $screen-sm-min){
+				width: 50%;
+				margin: 0;
+				padding: 0;
+			}
+		}
+	}
+	#homepage{
+		position: relative;
+		min-height: 2024px;
+		.main-content{
+			.intro{
+				position: relative;
+				color: $green;
+				font-size: em(50);
+				font-weight: 700;
+				line-height: 1em;
+				padding-left: 210px;
+				padding-top: 138px;
+				z-index: 2;
+			}
+			p{
+				margin-bottom: em(10);
+			}
+			.hanging-toy{
+				position: absolute;
+				max-width: 97px;
+				top: 0px;
+				right: 25px;
+				z-index: 1;
+			}
+		}
+	}
+	.plant{
+		position: absolute;
+		left:0;
+		top: 177px;
+		max-width: 214px;
+		@include transform(translateX(-30px));
+	}
+	.candle{
+		position: absolute;
+		left:0;
+		top: 920px;	
+		max-width: 229px;
+		@include transform(translateX(-30px));
+	}
+	.bathtub{
+		position: absolute;
+		left:0;
+		top: 1200px;
+		max-width: 619px;
+		@include transform(translateX(-122px));
+	}
+	.towels{
+		position: absolute;
+		right:0;
+		top: 880px;
+		max-width: 611px;
+		@include transform(translateX(180px));
+	}
+	.chair{
+		position: absolute;
+		left:0;
+		top: 1713px;
+	}
+	.tap{
+		position: absolute;
+		right: 348px;
+    top: 43px;
+	}
+	.hex-elements{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    .hex{
+ 
+	&:hover{
+		   	
+	}
+			position: absolute;
+			&.pink{
+				rect{
+					fill: $pink;
+				}
+			}
+			&.green{
+				rect{
+					fill: $green;
+				}
+				.text{
+					text-transform: uppercase;
+				}
+			}
+			&.blue{
+				rect{
+					fill: $blue;
+				}
+				.text{
+					text-transform: uppercase;
+				}
+			}
+			&.grey{
+				rect{
+					fill: $light-grey;
+				}
+				.text{
+					color: $pale-blue;
+					text-transform: uppercase;
+				}
+			}
+			&.hex-1{
+				right: 163px;
+    		top: 236px;
+			}
+			&.hex-2{
+				right: 345px;
+    		top: 503px;
+			}
+			&.hex-3{
+				right: 477px;
+    		top: 686px;
+			}
+			&.hex-4{
+				right: 247px;
+    		top: 704px;
+			}
+			&.hex-5{
+				right: 890px;
+    		top: 931px;
+			}
+			&.hex-6{
+				right: 578px;
+    		top: 867px;
+			}
+			&.hex-7{
+				right: 362px;
+    		top: 903px;
+			}
+			&.hex-8{
+				right: 788px;
+    		top: 1120px;
+			}
+			&.hex-9{
+				right: 511px;
+    		top: 1152px;
+			}
+			&.hex-10{
+				right: 675px;
+    		top: 1309px;
+			}
+			&.hex-11{
+				right: 378px;
+    		top: 1342px;
+			}
+			&.hex-12{
+				right: 748px;
+    		top: 1498px;
+			}
+			&.hex-13{
+				right: 531px;
+    		top: 1529px;
+			}
+			&.hex-14{
+				right: 310px;
+    		top: 1536px;
+			}
+			&.hex-15{
+				right: 423px;
+    		top: 1713px;
+			}
+			&.hex-16{
+				right: 192px;
+    		top: 1713px;
+			}
+			.text{
+				text-align: center;
+				color: $white;
+				position: absolute;
+				width: 100%;
+				@include center-align;
+				font-weight: 700;
+			}
+		}
+	}
+	
+}

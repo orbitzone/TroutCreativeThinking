@@ -1,69 +1,74 @@
-optgroup {
-    color: $black;
-    font-weight: bold;
-    font-family: $font-family;
-}
-h1,
-h2,
-h3{
-	font-weight: 700;
-}
-img{
-	max-width:100%;
-}
-.form-control{
-	@include box-shadow(none);
-	height: 44px;
-}
-@-moz-document url-prefix() { 
-	.selectpicker{
-		select.form-control{
-			-moz-appearance: none;
-	    text-indent: 0.01px;
-	    text-overflow: '';
+body.spring-2015{
+	*{
+		@extend %border-box;
+	}
+	optgroup {
+	    color: $black;
+	    font-weight: bold;
+	    font-family: $font-family;
+	}
+	h1,
+	h2,
+	h3{
+		font-weight: 700;
+	}
+	img{
+		max-width:100%;
+	}
+	.form-control{
+		@include box-shadow(none);
+		height: 44px;
+	}
+	@-moz-document url-prefix() { 
+		.selectpicker{
+			select.form-control{
+				-moz-appearance: none;
+		    text-indent: 0.01px;
+		    text-overflow: '';
+			}
 		}
 	}
-}
-select::-ms-expand {
-	display: none;
-}
-
-select::-ms-value {
-	background: none;
-}
-/* Hack to remove highlight on ie.*/
-@media all and (-ms-high-contrast: active) {  
-/* Remove purple highlight in HC mode */  
-	select:focus::-ms-value{
-	  background-color: transparent;  
- 	}
-}
-@media all and (-ms-high-contrast: none) {  
-	/* Remove blue highlight in Normal mode*/  
-	select:focus::-ms-value{
-	  background-color: transparent;  
+	select::-ms-expand {
+		display: none;
 	}
-}
 
-input[type=number]::-webkit-outer-spin-button,
-input[type=number]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-input[type=number] {
-    -moz-appearance:textfield;
-}
-.form-inline{
-	.selectpicker{
-		display: -moz-inline-stack;
-	  display: inline-block;
-	  *display: inline;
+	select::-ms-value {
+		background: none;
 	}
-}
-#main-content{
-	position: relative;
-	overflow: hidden;
+	/* Hack to remove highlight on ie.*/
+	@media all and (-ms-high-contrast: active) {  
+	/* Remove purple highlight in HC mode */  
+		select:focus::-ms-value{
+		  background-color: transparent;  
+	 	}
+	}
+	@media all and (-ms-high-contrast: none) {  
+		/* Remove blue highlight in Normal mode*/  
+		select:focus::-ms-value{
+		  background-color: transparent;  
+		}
+	}
+
+	input[type=number]::-webkit-outer-spin-button,
+	input[type=number]::-webkit-inner-spin-button {
+	    -webkit-appearance: none;
+	    margin: 0;
+	}
+
+	input[type=number] {
+	    -moz-appearance:textfield;
+	}
+	.form-inline{
+		.selectpicker{
+			display: -moz-inline-stack;
+		  display: inline-block;
+		  *display: inline;
+		}
+	}
+	#main-content{
+		position: relative;
+		overflow: hidden;
+	}
 	.main-content{
 		max-width: 1520px;
 		margin: 0 auto;
@@ -73,11 +78,11 @@ input[type=number] {
 	  -moz-osx-font-smoothing: grayscale;
 	  position: relative;
 	}
-}
-@media only screen and (max-device-width:$screen-xs-max) {
-    input[type="text"]:focus, input[type="number"]:focus,
-    textarea:focus,
-    select:focus {
-        font-size:16px;
-    }
+	@media only screen and (max-device-width:$screen-xs-max) {
+	    input[type="text"]:focus, input[type="number"]:focus,
+	    textarea:focus,
+	    select:focus {
+	        font-size:16px;
+	    }
+	}
 }

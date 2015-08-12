@@ -4,7 +4,7 @@ body.homepage{
 		margin-top: 40px;
 		.destination-happiness{
 			width: 337px;
-			@include center-align;
+			@extend %center-align;
 			rect.green{
 				fill: $green;				
 			}
@@ -47,7 +47,7 @@ body.homepage{
 	}
 	#homepage{
 		position: relative;
-		min-height: 2024px;
+		min-height: 1996px;
 		.main-content{
 			.intro{
 				position: relative;
@@ -99,11 +99,6 @@ body.homepage{
 		max-width: 611px;
 		@include transform(translateX(180px));
 	}
-	.chair{
-		position: absolute;
-		left:0;
-		top: 1713px;
-	}
 	.tap{
 		position: absolute;
 		right: 348px;
@@ -117,10 +112,10 @@ body.homepage{
     left: 0;
     z-index: 3;
     .hex{
- 
-	&:hover{
-		   	
-	}
+
+			&:hover{
+				   	
+			}
 			position: absolute;
 			&.pink{
 				rect{
@@ -155,26 +150,42 @@ body.homepage{
 			&.hex-1{
 				right: 163px;
     		top: 236px;
+    		.text{
+    			font-size: em(36);
+    			line-height: 1em;
+    			border-bottom: 4px solid $white;
+    			@extend %center-align;
+    		}
 			}
 			&.hex-2{
 				right: 345px;
     		top: 503px;
+    		font-size: 1em;
 			}
 			&.hex-3{
 				right: 477px;
     		top: 686px;
+    		font-size: em(18);
 			}
 			&.hex-4{
 				right: 247px;
     		top: 704px;
+    		font-size: em(20);
 			}
 			&.hex-5{
 				right: 890px;
     		top: 931px;
+    		font-size: em(20);
 			}
 			&.hex-6{
 				right: 578px;
     		top: 867px;
+    		.text{
+    			font-size: em(36);
+    			line-height: 1em;
+    			border-bottom: 4px solid $white;
+    			@extend %center-align;
+    		}
 			}
 			&.hex-7{
 				right: 362px;
@@ -183,6 +194,12 @@ body.homepage{
 			&.hex-8{
 				right: 788px;
     		top: 1120px;
+    		font-size: em(14);
+    		.image{
+    			width: 112px;
+    			height: 43px;
+    			overflow: hidden;
+    		}
 			}
 			&.hex-9{
 				right: 511px;
@@ -195,14 +212,22 @@ body.homepage{
 			&.hex-11{
 				right: 378px;
     		top: 1342px;
+    		font-size: em(20);
 			}
 			&.hex-12{
 				right: 748px;
     		top: 1498px;
+    		.text{
+    			font-size: em(36);
+    			line-height: 1em;
+    			border-bottom: 4px solid $white;
+    			@extend %center-align;
+    		}
 			}
 			&.hex-13{
 				right: 531px;
     		top: 1529px;
+    		font-size: em(20);
 			}
 			&.hex-14{
 				right: 310px;
@@ -220,11 +245,60 @@ body.homepage{
 				text-align: center;
 				color: $white;
 				position: absolute;
-				width: 100%;
-				@include center-align;
+		    white-space: nowrap;
+				@extend %center-align;
 				font-weight: 700;
 			}
 		}
 	}
-	
+	#subscribe{
+		.chair{
+			position: absolute;
+      left: 104px;
+    	top: -303px;
+		}
+		h2{
+			font-size: em(45);
+			color: $white;
+			background: $green;
+			padding: 10px 20px 10px 9px;
+			float: left;
+			margin-top: 0;
+			margin-bottom: 42px;
+		}
+		.line-pattern{
+			padding-top: 69px;
+			padding-left: 240px;
+			padding-right: 210px;
+		}
+		.form{
+			input{
+				font-size: em(24);
+				height: 74px;
+				padding: 0;
+			}
+			input[type=text],
+			input[type=email]{
+				background: $white;
+				border: none;
+				@include box-shadow(none);
+				width: 33.178%;
+				margin-right: 17px;
+				padding: 0 31px;
+    		line-height: 1em;
+			}
+			input[type=submit]
+			{
+				border:0;
+				background: $green;
+				color: $white;
+				text-decoration: underline;
+				font-weight: bold;
+				font-size: em(25);
+				@include border-radius(0);
+				padding: 0 50px;
+    		line-height: 1em;
+			}
+		}
+	}
 }

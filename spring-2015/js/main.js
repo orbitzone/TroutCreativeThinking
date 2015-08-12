@@ -21,6 +21,7 @@ jQuery(function($){
 	var homePage = {
 		init: function(){
 			$.ajax({
+				cache: false,
 				url:'pages/homepage.html',
 				success: function(data){
 					$('#main-content').html(data);					
@@ -48,5 +49,11 @@ jQuery(function($){
 	  var section = e.state.section;
     requestContent(section);
     document.title = 'Title';
+	});
+	$(document).on('mouseover','.hex',function(){
+		TweenMax.to($(this),0.5,{scale: 1.2});
+	});
+	$(document).on('mouseout','.hex',function(){
+		TweenMax.to($(this),0.5,{scale: 1});
 	});
 });

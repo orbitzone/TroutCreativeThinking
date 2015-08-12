@@ -20,6 +20,7 @@ module.exports = function(grunt) {
         files: [
           // includes files within path
           {expand: true,cwd: 'bower_components/jquery/dist/', src: '**', dest: 'js/vendor/'},
+          {expand: true,cwd: 'bower_components/placeholders/dist/', src: 'placeholders.jquery.min.js', dest: 'js/vendor/'},
           {expand: true,cwd: 'bower_components/font-awesome/fonts/', src: '**', dest: 'fonts/'}          
         ],
       },

@@ -68,6 +68,7 @@ body.spring-2015{
 	#main-content{
 		position: relative;
 		overflow: hidden;
+		padding-bottom: 40px;
 	}
 	.main-content{
 		max-width: 1520px;
@@ -77,6 +78,10 @@ body.spring-2015{
 		-webkit-font-smoothing: antialiased;
 	  -moz-osx-font-smoothing: grayscale;
 	  position: relative;
+	  padding: 0 30px;
+	  @media (min-width: $screen-lg-min){
+	  	padding: 0;
+	  }
 	}
 	@media only screen and (max-device-width:$screen-xs-max) {
 	    input[type="text"]:focus, input[type="number"]:focus,
@@ -84,5 +89,18 @@ body.spring-2015{
 	    select:focus {
 	        font-size:16px;
 	    }
+	}
+	footer{
+		margin-top: 0;
+	}
+	button.circle{
+		@include border-radius(50%);
+		border: 3px solid $white;
+		&.green{
+			background: $green;
+		}
+		&.pink{
+			background: $dark-pink;
+		}		
 	}
 }

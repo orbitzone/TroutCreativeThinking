@@ -1,6 +1,7 @@
+var loveFamily = {};
 jQuery(function($){
 
-	var loveFamily = {
+	loveFamily = {
 		init: function(){
 			$.ajax({
 				cache: false,
@@ -21,6 +22,7 @@ jQuery(function($){
 					$('.products-slide').slick({
 						slidesToShow: 4,
   					slidesToScroll: 4,
+  					infinite: false,
 					 	responsive: [
 					    {
 					      breakpoint: 768,
@@ -42,12 +44,29 @@ jQuery(function($){
 					});
 					$(window).on('resize',function(){
 						$('.part').matchHeight();
+						$('button.circular').matchHeight();
 					});
 					$('#main-content img').load(function(){
 						$(window).resize();
 					});
 				}
 			});
+		},
+		showHotspotData: function(obj){
+			var spot = $(obj).data("spot");
+			$(obj).toggleClass('active');
+			if($(obj).hasClass('active')){
+				var top = $(obj).position().top + $(obj).height()+10;
+				var left = $(obj).position().left - ($('.hotspot-data.spot-'+spot).width()/2) + ($(obj).height()/2);
+				$('.hotspot-data.spot-'+spot).css(
+				{
+					top: top,
+					left: left
+				})
+				$('.hotspot-data.spot-'+spot).fadeIn();
+			}else{
+				$('.hotspot-data.spot-'+spot).fadeOut();
+			}
 		}
 	}
 	var homePage = {

@@ -1,6 +1,226 @@
-.dot-pattern{
-	background: url('../images/dot-pattern.jpg') repeat;
-}
-.line-pattern{
-	background: url('../images/line-pattern.jpg') repeat;
+body.spring-2015{
+	.dot-pattern{
+		background: url('../images/dot-pattern.jpg') repeat;
+	}
+	.line-pattern{
+		background: url('../images/line-pattern.jpg') repeat;
+	}
+	button.circular{
+		background: none;
+		@include appearance(none);
+		border: none;
+		outline: none;
+		.circle{
+			&.green{
+				background: $green;
+			}
+			&.pink{
+				background: $dark-pink;
+			}
+			
+			@include border-radius(50%);
+			border: 4px solid $white;
+			display: block;
+			margin: 0 auto;
+			width: 55px;
+			height: 55px;
+			line-height: 50px;
+			color: $white;
+			font-weight: 700;
+			i{
+				&.iconr-share{
+					font-size: 1.7em;
+				}
+				&.iconr-email{
+					font-size: 2em;
+				}						
+			}
+			span.i-add-to-list{
+				color: $white;
+				font-weight: 700;						
+		    font-size: 2.4em;
+				  line-height: 1.3em;
+			}
+			span.i-3d{
+				font-size: 1.2em;
+		    line-height: 1em;
+			}			
+		}	
+		.desc{
+			color: $white;
+			margin-top: em(14);
+			margin-bottom: em(20);
+		}	
+	}
+	#bathrooms-for-inspiration{
+		.bathroom{
+			position: relative;
+			width: 100%;
+			img{
+				width: 100%;
+			}
+			@media (min-width: $screen-lg-min){
+				width: 82.5%;
+				float: left;
+			}
+			.hotspots{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				.hotspot{
+					position: absolute;
+					border: none;
+					background: none;
+					padding: 0;
+					margin: 0;
+					color: $white;
+					@include appearance(none);
+					outline: none;
+					i{
+						font-size: em(40);
+						@media (min-width: $screen-lg-min){
+							font-size: em(60);
+						}						
+					}
+					&.spot-1{
+						top: 12.763596%;
+						left: 27.75119617%;
+					}
+					&.spot-2{
+						top: 51.83129856%;
+						left: 44.33811802%;
+					}
+					&.spot-3{
+						top: 60.82130966%;
+						left: 85.80542265%;
+					}
+					&.active{
+						color: $green;
+					}
+					&:hover{
+						color: $pink;
+					}
+				}
+				.hotspot-data{
+					position: absolute;
+					display: none;
+					&.spot-1{
+						top: 22%;
+				    left: 15%;
+					}
+					&.spot-2{
+						top: 22%;
+				    left: 15%;
+					}
+					&.spot-3{
+						top: 22%;
+				    left: 15%;
+					}
+					.text{
+				    position: absolute;
+				    top: 110px;
+				    left: 140px;
+				    width: 180px;
+				    h3{
+				    	font-size: em(18);
+				    	color: $green;
+				    	margin:0;
+				    	margin-bottom: 1em;
+				    }
+				    p{
+				    	font-size: em(15);
+				    	color: $grey;
+				    }
+					}
+					path{
+						&.bg{
+							fill: $white;							
+						}
+						&.border{
+							fill: $green;
+						}
+						&.arrow{
+							fill: $green;
+						}
+					}
+				}
+			}
+		}
+		.options-wrap{
+			width: 100%;
+			padding-left: 0;
+			text-align: center;
+				
+			@media (min-width: $screen-lg-min){
+				width: 17.5%;
+				float: left;
+				padding-left: 40px;	
+			}
+			.options{
+				background: $options-bg;
+				color: $white;
+				height: 100%;
+				padding: 20px;
+				@media (min-width: $screen-lg-min){
+					padding: 109px 20px 20px;
+				}	
+				ul{
+					margin: 0;
+					padding: 0;
+					text-align: center;
+
+					li{
+						margin: 0;
+						padding: 0;
+						display: block;
+						vertical-align: top;	
+						width: 50%;
+						float:left;
+						@media (min-width: $screen-sm-min){
+							width: 25%;
+						}
+						@media (min-width: $screen-lg-min){
+							width: 100%;
+							display: block;
+							float: none;
+						}			
+					}
+				}
+				h2{
+					color: $white;
+					font-size: em(28);
+					margin: 0;
+					margin-bottom: 40px;
+				}							
+			}				
+		}
+		.product{
+			color: $grey;
+			.name{
+				font-size: em(18);
+				font-weight: 700;
+			}
+			.price{
+				padding: 25px 0 30px;
+				font-weight: 700;
+				span{
+					font-style: italic;
+					font-weight: 400;
+				}
+			}
+		}
+	}
+	button.shop_now{
+		background: $green;
+		color: $white;
+		@include appearance(none);
+		border: none;
+		font-weight: 700;
+		padding: 12px 20px;
+		@include border-radius(4px);
+		line-height: 1em;
+		@include box-shadow(1px 1px 3px rgba(0,0,0,0.3));
+	}
 }

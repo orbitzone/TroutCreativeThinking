@@ -232,6 +232,7 @@ body.spring-2015{
 				left: -80px;
 			}
 			.product{
+				position: relative;
 				color: $grey;
 				outline: none !important;
 				.name{
@@ -260,6 +261,41 @@ body.spring-2015{
 					span{
 						font-style: italic;
 						font-weight: 400;
+					}
+				}
+				.share-hex{
+					@extend %center-align;
+					.bg{
+						fill: $white;
+					}
+					.border{
+						fill: $green;
+					}
+					.share-button{
+						position: absolute;
+						&.facebook{
+							top: 10px;
+							left: 50%;
+							@include transform(translateX(-50%));
+						}
+						&.instagram{
+							top: 50%;
+							right: 10px;
+							@include transform(translateY(-50%));
+						}
+						&.pinterest{
+							bottom: 10px;
+							left: 50%;
+							@include transform(translateX(-50%));
+						}
+						&.email{
+							top: 50%;
+							left: 10px;
+							@include transform(translateY(-50%));
+						}
+						&.close{
+							@extend %center-align;
+						}
 					}
 				}
 			}

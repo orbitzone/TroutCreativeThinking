@@ -44,6 +44,8 @@ jQuery(function($){
 					    }
 					  ]
 					});
+					TweenMax.to($('.share-hex'),0,{ scale: 0,translateX: '-50%', translateY: '-50%'});
+					TweenMax.to($('.share-hex .share-button').not('.share-close'),0,{ scale: 0});
 					$(window).on('resize',function(){
 						$('.part').matchHeight();
 						$('button.circular').matchHeight();
@@ -69,6 +71,20 @@ jQuery(function($){
 			}else{
 				$('.hotspot-data.spot-'+spot).fadeOut();
 			}
+		},
+		showShareBoard: function(obj){
+			var $panel = $(obj).parent().parent().find('.share-hex');
+			console.log($panel);
+			TweenMax.to($panel,0.5,{ display:'block', scale: 1, translateX: '-50%', translateY: '-50%', ease: Back.easeOut});
+			TweenMax.to($panel.find('.share-close'),1,{ scale: 1, ease: Elastic.easeOut});	
+			TweenMax.staggerTo($panel.find('.share-button').not('.share-close'),1,{ scale: 1, ease: Elastic.easeOut},0.1);
+		},
+		closeShareBoard: function(obj){
+			var $panel = $(obj).parent();
+			TweenMax.to($panel.find('.share-close'),0.2,{ scale: 0, ease: Back.easeOut});	
+			TweenMax.staggerTo($panel.find('.share-button').not('.share-close'),0.4,{ scale: 0, ease:Back.easeIn},0.1, function(){
+				TweenMax.to($panel,0.2,{ scale: 0});	
+			});					
 		}
 	}
 	var homePage = {

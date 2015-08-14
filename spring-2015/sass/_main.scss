@@ -273,29 +273,48 @@ body.spring-2015{
 					}
 					.share-button{
 						position: absolute;
+						.circle{
+							width: 50px;
+							height: 50px;
+							background: $green;
+							position: relative;
+							color: $white;
+							text-align: center;
+							@include border-radius(50%);
+							i{
+								font-size: 2em;
+								line-height: 0.8em;
+								@extend %center-align;
+							}
+						}
 						&.facebook{
-							top: 10px;
+							top: 45px;
 							left: 50%;
 							@include transform(translateX(-50%));
 						}
 						&.instagram{
 							top: 50%;
-							right: 10px;
+							right: 35px;
 							@include transform(translateY(-50%));
 						}
 						&.pinterest{
-							bottom: 10px;
+							bottom: 45px;
 							left: 50%;
 							@include transform(translateX(-50%));
 						}
 						&.email{
 							top: 50%;
-							left: 10px;
+							left: 35px;
 							@include transform(translateY(-50%));
 						}
-						&.close{
+						&.share-close{
+							@extend %button-clear;
 							@extend %center-align;
-						}
+							i{
+								color: $green;
+								font-size: 3.4em;
+							}
+						}						
 					}
 				}
 			}

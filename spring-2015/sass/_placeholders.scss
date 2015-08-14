@@ -20,3 +20,11 @@
   -moz-box-sizing:  border-box;
   box-sizing:  border-box;
 }
+%button-clear{
+  background: none;
+  @include appearance(none);
+  border:none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}

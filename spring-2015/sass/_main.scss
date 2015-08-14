@@ -53,6 +53,9 @@ body.spring-2015{
 		}	
 	}
 	#bathrooms-for-inspiration{
+		.bathrooms-showcase-section{
+			margin-bottom: 40px;
+		}
 		.bathroom{
 			position: relative;
 			width: 100%;
@@ -196,18 +199,68 @@ body.spring-2015{
 				}							
 			}				
 		}
-		.product{
-			color: $grey;
-			.name{
-				font-size: em(18);
-				font-weight: 700;
+		.products-used{
+			padding: 80px 0 60px;
+			@media (min-width: $screen-md-min){
+				padding: 80px 60px 60px;
 			}
-			.price{
-				padding: 25px 0 30px;
-				font-weight: 700;
-				span{
-					font-style: italic;
-					font-weight: 400;
+			@media (min-width: $screen-lg-min){
+				padding: 80px 160px 60px;
+			}
+			h2{
+				font-size: em(60);
+				margin: 0; 
+			}
+			.arrow-next,
+			.arrow-prev{
+				width: auto;
+				@extend %button-clear;
+				i{
+					font-size: 5em;
+					color: $grey;
+				}
+				&.slick-disabled{
+					display: none !important;
+				}
+			}
+			.arrow-next{
+				@extend %vertical-align;
+				right: -90px;				
+			}
+			.arrow-prev{
+				@extend %vertical-align;	
+				left: -80px;
+			}
+			.product{
+				color: $grey;
+				outline: none !important;
+				.name{
+					font-size: em(18);
+					font-weight: 700;
+				}
+				.image{
+					position: relative;
+					.share{
+						position: absolute;
+						right: 0px;
+						top: 50%;
+						@extend %button-clear;
+						i{
+							color: $pink;
+							font-size: em(50);
+							&:hover{
+								color: $green;
+							}
+						}
+					}
+				}
+				.price{
+					padding: 25px 0 30px;
+					font-weight: 700;
+					span{
+						font-style: italic;
+						font-weight: 400;
+					}
 				}
 			}
 		}

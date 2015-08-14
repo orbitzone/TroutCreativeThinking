@@ -210,8 +210,98 @@ body.spring-2015{
 			h2{
 				font-size: em(60);
 				margin: 0; 
+			}				
+		}
+	}
+	.share-hex{
+		z-index: 10;
+		@extend %center-align;
+		.bg{
+			fill: $white;
+		}
+		.border{
+			fill: $green;
+		}
+		.share-button{
+			position: absolute;
+			.circle{
+				width: 50px;
+				height: 50px;
+				background: $green;
+				position: relative;
+				color: $white;
+				text-align: center;
+				@include border-radius(50%);
+				i{
+					font-size: 2em;
+					line-height: 0.8em;
+					@extend %center-align;
+				}
 			}
-			.arrow-next,
+			&.facebook{
+				top: 45px;
+				left: 50%;
+				@include transform(translateX(-50%));
+			}
+			&.twitter{
+				top: 50%;
+				right: 35px;
+				@include transform(translateY(-50%));
+			}
+			&.pinterest{
+				bottom: 45px;
+				left: 50%;
+				@include transform(translateX(-50%));
+			}
+			&.email{
+				top: 50%;
+				left: 35px;
+				@include transform(translateY(-50%));
+			}
+			&.share-close{
+				@extend %button-clear;
+				@extend %center-align;
+				i{
+					color: $green;
+					font-size: 3.4em;
+				}
+			}						
+		}
+	}
+	.product{
+		position: relative;
+		color: $grey;
+		outline: none !important;
+		.name{
+			font-size: em(18);
+			font-weight: 700;
+		}
+		.image{
+			position: relative;
+			.share{
+				position: absolute;
+				right: 0px;
+				top: 50%;						
+			}
+		}
+		.price{
+			padding: 25px 0 30px;
+			font-weight: 700;
+			span{
+				font-style: italic;
+				font-weight: 400;
+			}
+		}
+	}
+	.we-love{
+		width: 125px;
+		height: 130px;
+		background-image: url(../images/we-love-sprite.png);
+		background-size: 375px 130px;
+		background-repeat: no-repeat;
+	}
+	.products-slide{
+		.arrow-next,
 			.arrow-prev{
 				width: auto;
 				@extend %button-clear;
@@ -230,93 +320,15 @@ body.spring-2015{
 			.arrow-prev{
 				@extend %vertical-align;	
 				left: -80px;
-			}
-			.product{
-				position: relative;
-				color: $grey;
-				outline: none !important;
-				.name{
-					font-size: em(18);
-					font-weight: 700;
-				}
-				.image{
-					position: relative;
-					.share{
-						position: absolute;
-						right: 0px;
-						top: 50%;
-						@extend %button-clear;
-						i{
-							color: $pink;
-							font-size: em(50);
-							&:hover{
-								color: $green;
-							}
-						}
-					}
-				}
-				.price{
-					padding: 25px 0 30px;
-					font-weight: 700;
-					span{
-						font-style: italic;
-						font-weight: 400;
-					}
-				}
-				.share-hex{
-					@extend %center-align;
-					.bg{
-						fill: $white;
-					}
-					.border{
-						fill: $green;
-					}
-					.share-button{
-						position: absolute;
-						.circle{
-							width: 50px;
-							height: 50px;
-							background: $green;
-							position: relative;
-							color: $white;
-							text-align: center;
-							@include border-radius(50%);
-							i{
-								font-size: 2em;
-								line-height: 0.8em;
-								@extend %center-align;
-							}
-						}
-						&.facebook{
-							top: 45px;
-							left: 50%;
-							@include transform(translateX(-50%));
-						}
-						&.instagram{
-							top: 50%;
-							right: 35px;
-							@include transform(translateY(-50%));
-						}
-						&.pinterest{
-							bottom: 45px;
-							left: 50%;
-							@include transform(translateX(-50%));
-						}
-						&.email{
-							top: 50%;
-							left: 35px;
-							@include transform(translateY(-50%));
-						}
-						&.share-close{
-							@extend %button-clear;
-							@extend %center-align;
-							i{
-								color: $green;
-								font-size: 3.4em;
-							}
-						}						
-					}
-				}
+			}		
+	}
+	button.share{
+		@extend %button-clear;
+		i{
+			color: $pink;
+			font-size: em(51);
+			&:hover{
+				color: $green;
 			}
 		}
 	}
@@ -325,8 +337,9 @@ body.spring-2015{
 		color: $white;
 		@include appearance(none);
 		border: none;
+		font-size: 1em;
 		font-weight: 700;
-		padding: 12px 20px;
+		padding: 18px 26px;
 		@include border-radius(4px);
 		line-height: 1em;
 		@include box-shadow(1px 1px 3px rgba(0,0,0,0.3));

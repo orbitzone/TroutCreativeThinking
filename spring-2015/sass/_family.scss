@@ -1,7 +1,6 @@
 body.love-family{
 	.we-love{
-		font-size: em(132);
-		color: $pale-blue;			
+		background-position:0 0;		
 	}
 	.icon-share-dotted{
 		color: $pink;
@@ -35,52 +34,151 @@ body.love-family{
 			position: relative;
 			font-size: em(34);
 			color: $pink;
-			padding-top: 106px;
-			line-height: 1em;
+			padding-top: 100px;
 			font-weight: 700;
-		}
-		h2{
-			font-size: em(60);
-			color: $green;
-			text-decoration: underline;
-		}		
-		.hanging-toy{
-			position: absolute;
-			right: 20px;
-			top: 0;
-		}
-		.products-we-love{
-			.we-love{
+			.shelves{
+		    padding: 82px 0 0 54px;
+			}
+			h2{
+				font-size: em(60);
+				color: $green;
+				text-decoration: underline;
+			}		
+			.hanging-toy{
 				position: absolute;
-				top: -33px;
-				left: 22px;
+				right: 20px;
+				top: 0;
+				@media (min-width: $screen-sm-min){
+					right: 114px;
+				}
 			}
+			.intro-copy{
+		    padding-left: 110px;
+    		line-height: 1.2em;
+    		p{
+    			margin-bottom: 1.3em;
+    		}
+			}	
+		}
+		.happy-family-bathroom{
 			position: relative;
-			padding: em(20) em(20) em(20) em(40);
-			.white-box{
-				background: $white;
-				padding: em(20);
+			margin-bottom: 50px;
+			.description{
+				position: absolute;
+		    top: 192px;
+   		  left: 216px;
+				z-index: 2;
+				h2{
+					font-size: em(60);
+					color: $green;
+					text-decoration: underline;
+					margin-top: 0;
+					margin-bottom: 40px;
+			    line-height: 1.2em;
+				}
+				p{
+					font-size: em(28);		
+					line-height: 1.2em;
+					color: $grey;			
+				}
 			}
-			.product-1{
+			.products-we-love{
+				float: right;
+				width: 492px;
+				margin-right: 204px;
 				position: relative;
-				padding: 138px 40px 20px 30px;
-				.image{
+				.we-love{
 					position: absolute;
-					top: 10px;
-					right: -60px;
-					max-width: 379px;
+					top: -36px;
+   				left: 28px;
 				}
 				.white-box{
-										
+					background: $white;					
 				}
-			}
-		}		
+				.product-1{
+					position: relative;
+			    padding: 132px 61px 20px 70px;
+					.image{
+						position: absolute;
+		        top: -174px;
+    				right: 32px;
+						max-width: 131px;
+						z-index: 1;
+					}
+					.white-box{
+						font-size: em(18);
+						line-height: 1.2em;
+						padding: 30px;		
+					}
+					.share{
+						position: absolute;
+				    top: 286px;
+   					left: 61px;
+					}
+					.shop_now{
+						float: right;
+						margin-top: 28px;
+						position: relative;
+						z-index: 2;
+					}
+				}
+				.product-2{
+					position: relative;
+			    padding: 181px 29px 30px 47px;
+					.image{
+						position: absolute;
+		        top: -12px;
+    				left: -35px;
+					}
+					.white-box{
+						font-size: em(18);
+						line-height: 1.2em;
+				    padding: 30px 10px 20px 35px;
+					}
+					.share{
+				    top: 15px;
+						left: 184px;
+						position: absolute;
+					}
+					.shop_now{
+						margin-top: 19px;
+					}					
+				}
+			}	
+		}			
 	}
 
 	#bathrooms-for-inspiration{
+		margin-bottom: 40px;
 		.products-used{
 			h2{
 				color: $pink;
+			}
+		}
+	}
+	#circular-gallery{
+		.banner{
+			padding: 64px 0 38px 258px;
+			position: relative;
+			h2{
+				display: inline;
+				color: $pink;
+				background: $white;
+				font-size: em(60);
+				line-height: 1.14em;
+			}
+			.we-love-stool{
+				position: absolute;
+				right: 120px;
+				bottom: -28px;
+				img{
+					width: 285px;
+				}
+				.we-love{
+					position: absolute;
+					bottom: 20px;
+					left: -12px;
+				}
 			}
 		}
 	}

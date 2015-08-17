@@ -171,6 +171,13 @@ body.spring-2015{
 				@media (min-width: $screen-lg-min){
 					padding: 109px 20px 20px;
 				}	
+				.desc{
+					font-size: em(12);
+					line-height: 1em;
+					@media (min-width: $screen-md-min){	
+						font-size: em(16);
+					}
+				}
 				ul{
 					margin: 0;
 					padding: 0;
@@ -195,14 +202,20 @@ body.spring-2015{
 				}
 				h2{
 					color: $white;
-					font-size: em(28);
+					font-size: em(16);
 					margin: 0;
 					margin-bottom: 40px;
+					@media (min-width: $screen-sm-min){	
+						font-size: em(24);
+					}
+					@media (min-width: $screen-md-min){	
+						font-size: em(28);
+					}
 				}							
 			}				
 		}
 		.products-used{
-			padding: 80px 0 60px;
+			padding: 30px 0 60px;
 			@media (min-width: $screen-md-min){
 				padding: 80px 60px 60px;
 			}
@@ -210,8 +223,18 @@ body.spring-2015{
 				padding: 80px 160px 60px;
 			}
 			h2{
-				font-size: em(60);
-				margin: 0; 
+				font-size: em(22);
+				margin: 0;
+				margin-bottom: 20px; 
+				@media (min-width: $screen-sm-min){
+					font-size: em(36);
+				}
+				@media (min-width: $screen-md-min){
+					font-size: em(50);
+				}
+				@media (min-width: $screen-lg-min){
+					font-size: em(60);
+				}				
 			}				
 		}
 	}
@@ -275,8 +298,23 @@ body.spring-2015{
 		color: $grey;
 		outline: none !important;
 		.name{
-			font-size: em(18);
+			font-size: em(12);
 			font-weight: 700;
+			@media (min-width: $screen-sm-min){
+					font-size: em(16);
+			}	
+			@media (min-width: $screen-md-min){
+				font-size: em(18);
+			}						
+		}
+		.description{
+			font-size: em(12);
+			@media (min-width: $screen-sm-min){
+					font-size: em(16);
+			}	
+			@media (min-width: $screen-md-min){
+				font-size: em(16);
+			}
 		}
 		.image{
 			position: relative;
@@ -289,6 +327,13 @@ body.spring-2015{
 		.price{
 			padding: 25px 0 30px;
 			font-weight: 700;
+			font-size: em(12);
+			@media (min-width: $screen-sm-min){
+					font-size: em(16);
+			}	
+			@media (min-width: $screen-md-min){
+				font-size: em(16);
+			}
 			span{
 				font-style: italic;
 				font-weight: 400;
@@ -307,7 +352,8 @@ body.spring-2015{
 			background-size: 375px 130px;
 		}
 	}
-	.products-slide{
+	.products-slide, 
+	.slides{
 		.arrow-next,
 			.arrow-prev{
 				width: auto;

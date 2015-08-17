@@ -1,0 +1,297 @@
+body.love-luxury{
+	.we-love{
+		background-position:-126px 0;
+		@media (min-width: $screen-sm-min){
+			background-position:-250px 0;
+		}
+	}
+	.icon-share-dotted{
+		color: $pink;
+		font-size: em(46);
+	}
+	#collection-intro{
+		header{
+			background: none;
+			position: relative;
+			overflow: hidden;
+			h1{
+				color: $gold;
+				position: absolute;
+				bottom: 20%;
+				left: 27.30263%;
+				text-decoration: underline;
+				font-size: em(45);
+				@media (min-width: $screen-sm-min){
+					bottom: 6.09756%;
+					left: 27.30263%;
+					font-size: em(60);
+				}
+				@media (min-width: $screen-lg-min){
+					font-size: em(90);
+					bottom: 6.09756%;
+					left: 27.30263%;
+				}
+			}
+			.span4{
+				@media (min-width: $screen-sm-min){
+					width: 33.02632%;
+				}
+			}
+			.span8{
+				@media (min-width: $screen-sm-min){
+					margin-left: 0.59211%;
+					width: 66.38158%;
+				}
+			}			
+		}
+		.intro{
+			position: relative;
+			color: $pink;
+			padding-top: 20px;
+			@media (min-width: $screen-md-min){
+				padding-top: 100px;
+			}
+			.shelves{
+				@media (min-width: $screen-sm-min){
+		    	padding: 41px 0 0 27px;
+		    }
+		    @media (min-width: $screen-lg-min){
+		    	padding: 82px 0 0 54px;
+		    }
+		    img{
+		    	max-width: 120px;
+		    	@media (min-width: $screen-sm-min){
+		    		max-width: 100%;
+		    	}
+		    }
+			}
+			.hanging-toy{
+				position: absolute;
+				right: 0;
+				top: 0;
+				z-index: 0;
+				@media (min-width: $screen-md-min){
+					right: 20px;
+				}
+				@media (min-width: $screen-lg-min){
+					right: 114px;
+				}
+				img{
+					max-width: 48px;
+					@media (min-width: $screen-sm-min){
+						max-width: 60px;	
+					}
+					@media (min-width: $screen-md-min){
+						max-width: 97px;
+					}
+				}
+			}
+			.intro-copy{
+				position: relative;
+				z-index: 1;
+				font-size: em(12);
+				font-weight: 700;
+			  line-height: 1.2em;	
+			  padding-right: 50px;
+			  @media (min-width: $screen-sm-min){
+			  	font-size: em(22);
+			  	padding-right: 0;
+			  }
+			  @media (min-width: $screen-md-min){
+			  	font-size: em(24);
+			  }
+		    @media (min-width: $screen-lg-min){
+		    	font-size: em(34);
+					padding-left: 110px;
+    		}
+    		p{
+    			margin-bottom: 1.3em;
+    		}
+			}	
+		}
+		.happy-family-bathroom{
+			position: relative;
+			margin-bottom: 50px;
+			.description{
+				margin-bottom: 60px;
+				@media (min-width: $screen-sm-min){
+					position: absolute;
+			    top: 80px;
+	   		  z-index: 2;
+					margin-bottom: 0;
+				}
+				@media (min-width: $screen-md-min){
+					top: 192px;
+				}
+				@media (min-width: $screen-lg-min){
+					left: 216px;					
+				}
+				h2{
+					color: $green;
+					text-decoration: underline;
+					margin-top: 0;
+					margin-bottom: 20px;
+			    line-height: 1.2em;
+			    font-size: em(18);
+			    @media (min-width: $screen-sm-min){
+			    	font-size: em(30);
+			    	margin-bottom: 40px;
+			    }
+			    @media (min-width: $screen-md-min){
+			    	font-size: em(50);
+			    }
+			    @media (min-width: $screen-lg-min){
+			    	font-size: em(60);
+			    }
+				}
+				p{
+					font-size: em(12);		
+					line-height: 1.2em;
+					color: $grey;
+					@media (min-width: $screen-sm-min){
+			    	font-size: em(18);
+			    }
+			    @media (min-width: $screen-md-min){
+			    	font-size: em(22);
+			    }
+			    @media (min-width: $screen-lg-min){
+			    	font-size: em(28);
+			    }			
+				}
+			}
+			.products-we-love{
+				position: relative;
+				@media (min-width: $screen-sm-min){
+					float:right;
+					width: 380px;
+					margin-right: 20px;	
+				}
+				@media (min-width: $screen-md-min){
+					float:right;
+					width: 492px;
+					margin-right: 20px;	
+				}
+				@media (min-width: $screen-lg-min){
+					float:right;
+					width: 492px;
+					margin-right: 204px;	
+				}
+				.we-love{
+					position: absolute;
+					top: -36px;
+   				left: 28px;   				
+				}
+				.white-box{
+					background: $white;					
+				}
+				.product-1{
+					position: relative;
+			    padding: 120px 30px 20px;
+			    @media (min-width: $screen-md-min){
+			    	padding: 132px 61px 20px 70px;
+			    }
+					.image{
+						position: absolute;
+						max-width: 131px;
+						z-index: 1;
+						top: -20px;
+						right: 6px;
+						@media (min-width: $screen-sm-min){
+							top: -75px;
+							right: 30px;
+						}
+						@media (min-width: $screen-md-min){
+			        top: -174px;
+	    				right: 32px;
+						}
+						img{
+							max-width: 70px;
+							@media (min-width: $screen-sm-min){
+								max-width: 90px;
+							}
+							@media (min-width: $screen-md-min){
+								max-width: 100%;
+							}
+						}
+					}
+					.white-box{
+						font-size: em(10);
+						line-height: 1.2em;
+						padding: 15px 30px 15px 15px;
+						@media (min-width: $screen-sm-min){
+							font-size: em(16);
+						}
+						@media (min-width: $screen-md-min){
+							font-size: em(16);
+							padding: 30px;
+						}
+						@media (min-width: $screen-lg-min){
+							font-size: em(18);
+						}		
+					}
+					.share{
+						position: absolute;
+				    top: 116px;
+   					left: 40px;
+   					@media (min-width: $screen-md-min){
+   						top: 286px;
+   						left: 61px;
+   					}
+					}
+					.shop_now{
+						float: right;
+						margin-top: 18px;
+						position: relative;
+						z-index: 2;
+						@media (min-width: $screen-lg-min){
+							margin-top: 28px;
+						}
+					}
+				}
+				.product-2{
+					position: relative;
+			    padding: 220px 15px 30px;
+			    @media (min-width: $screen-sm-min){
+			    	padding: 240px 15px 30px;
+			    }
+			    @media (min-width: $screen-md-min){
+			    	padding: 181px 29px 30px 47px;
+			    }
+					.image{
+						position: absolute;
+						top: 20px;
+						left: -20px;
+						@media (min-width: $screen-lg-min){
+			        top: -12px;
+	    				left: -35px;
+    				}
+					}
+					.white-box{
+						font-size: em(10);
+						line-height: 1.2em;
+						padding: 15px 10px 15px 15px;
+						@media (min-width: $screen-sm-min){
+							padding: 15px;
+							font-size: em(16);
+						}
+						@media (min-width: $screen-md-min){
+							font-size: em(16);
+							padding: 30px 10px 20px 35px;
+						}
+						@media (min-width: $screen-lg-min){
+							font-size: em(18);
+						}						    
+					}
+					.share{
+				    top: 15px;
+						left: 184px;
+						position: absolute;
+					}
+					.shop_now{
+						margin-top: 19px;
+					}					
+				}
+			}	
+		}			
+	}
+}

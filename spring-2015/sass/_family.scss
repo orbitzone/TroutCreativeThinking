@@ -298,30 +298,497 @@ body.love-family{
 			h2{
 				color: $pink;
 			}
-		}
+		}		
 	}
 	#circular-gallery{
 		.banner{
-			padding: 64px 0 38px 258px;
 			position: relative;
+			padding: 45px 30px 60px 30px;
+			margin-bottom: 40px;
+			@media (min-width: $screen-sm-min){
+				padding: 64px 30px 38px 30px;
+			}
+			@media (min-width: $screen-lg-min){
+				padding: 64px 0 38px 258px;
+			}
 			h2{
 				display: inline;
 				color: $pink;
 				background: $white;
-				font-size: em(60);
+				font-size: em(18);
 				line-height: 1.14em;
+				@media (min-width: $screen-sm-min){
+					font-size: em(30);
+				}
+				@media (min-width: $screen-md-min){
+					font-size: em(50);
+				}
+				@media (min-width: $screen-lg-min){
+					font-size: em(60);
+				}		
 			}
 			.we-love-stool{
 				position: absolute;
-				right: 120px;
+				right: 20px;
 				bottom: -28px;
+				@media (min-width: $screen-sm-min){
+					right: 40px;
+					bottom: -28px;
+				}
+				@media (min-width: $screen-md-min){
+					right: 120px;
+					bottom: -28px;
+				}
 				img{
-					width: 285px;
+					width: 120px;
+					@media (min-width: $screen-sm-min){
+						width: 285px;
+					}
 				}
 				.we-love{
 					position: absolute;
 					bottom: 20px;
 					left: -12px;
+				}
+			}
+		}
+	}
+	#smart-storage{
+		margin-bottom: 40px;
+		.intro{
+			.banner{
+				position: relative;
+				padding-left: 40px;
+				padding-right: 0;
+				margin-bottom: 40px;
+				@media (min-width: $screen-sm-min){
+					padding-right: 40px;
+				}
+				@media (min-width: $screen-md-min){
+					padding-left: 82px;
+				}
+				.description{
+					position: absolute;
+					left: 0;
+					top: 20px;
+					@media (min-width: $screen-sm-min){
+						top: 60px;
+					}
+					.text-block{
+						margin: 0;
+						display: block;
+						background: $pink;
+						color: $white;
+						padding: 4px 10px;
+						float: left;
+						clear: both;
+						font-size: em(14);
+						font-weight: 700;
+						line-height: 1.2em;
+						@media (min-width: $screen-sm-min){
+							padding: 5px 10px;
+							font-size: em(22);
+						}
+						@media (min-width: $screen-md-min){
+							font-size: em(32);
+						}
+					}
+				}
+			}
+			.product{
+				margin-bottom: 40px;
+				padding-left: 30px;
+				@media (min-width: $screen-sm-min){
+					padding-left: 0;
+				}
+				.image{
+					position: relative;
+					.bluetooth{
+						position: absolute;
+						top: 70px;
+						left: -30px;
+						img{
+							max-width: 50px;
+							@media (min-width: $screen-sm-min){
+								max-width: 70px;
+							}
+						}
+					}
+				}
+			}
+		}
+		.smart-storage{
+			padding: 30px 0;
+			.image{
+				position: relative;
+				.we-love-basket{
+					position: absolute;
+					top: 40px;
+					right: -100px;
+					@media (min-width: $screen-md-min){
+						top: 10px;
+					}
+					@media (min-width: $screen-lg-min){
+						top: 40px;
+					}
+					h2{
+						color: $pink;
+						font-size: em(18);
+						margin-bottom: 40px;
+						text-decoration: underline;
+						@media (min-width: $screen-sm-min){
+							font-size: em(30);
+						}
+						@media (min-width: $screen-md-min){
+							font-size: em(50);
+							margin-bottom: 0;
+						}
+						@media (min-width: $screen-lg-min){
+							font-size: em(60);
+							margin-bottom: 40px;
+						}
+					}
+					.text{
+						background: $white;
+						color: $pale-blue;
+						font-size: em(12);
+						width: 200px;
+						padding: 10px;
+
+						@media (min-width: $screen-sm-min){
+							font-size: em(16);
+						}
+					}
+					.basket{
+						position: relative;
+						margin-bottom: 30px;
+						width: 90px;
+						@media (min-width: $screen-md-min){
+							width: 176px;
+							@include transform(scale(0.7));
+							margin-bottom: 0px;
+						}
+						@media (min-width: $screen-lg-min){
+							width: 176px;
+							@include transform(none);
+							margin-bottom: 30px;
+						}
+						.we-love{
+							position: absolute;
+							top: 50px;
+							right: -20px;
+							@media (min-width: $screen-lg-min){
+								top: 50px;
+								right: -20px;
+							}
+						}
+					}
+				}
+			}
+			.image-text{
+				padding: 60px 60px;
+			}
+		}		
+	}
+	#relationship-bliss{
+		margin-bottom: 40px;
+		.slides{
+			margin-bottom: 40px;
+			.intro{
+				position: relative;
+				text-align: center;
+				.text{
+					position: absolute;
+					width: 500px;
+					@extend %center-align;
+					h2{
+						font-size: em(60);
+						text-decoration: underline;
+					}
+					p{
+						font-size: em(24);
+					}
+					button{
+						@include appearance(none);
+						border: 3px solid $dark-grey;
+						color: $dark-grey;
+						text-transform: uppercase;
+						padding: 30px;
+						background: none;
+						font-weight: 700;
+						font-size: 1em;
+					}
+				}
+			}
+		}
+		.lamp{
+			position: absolute;
+			top: -30px;
+			left: 0;
+		}
+		.relationship-bliss{
+			position: relative;
+			padding-left: 220px;
+			margin-bottom: 40px;
+			padding-bottom: 30px;
+			.dot-pattern{
+				position: absolute;
+				width: 55%;
+				right: 0;
+				top: 0;
+				height: 100%;
+			}
+			h2{
+				color: $pink;
+				font-size: em(60);
+				text-decoration: underline;
+				margin: 0;
+			}
+		}
+		.top-products{
+			.description{
+				text-align: right;
+			}
+			.text{
+				position: relative;
+				.text-block{
+					display: block;
+					float: left;
+					color: $white;
+					background: $pink;
+					font-weight: 700;
+					padding: 5px 10px;
+					clear: both;
+					font-size: em(30);
+					line-height: 1em;
+				}
+				button{
+					position: absolute;
+					right: 0;
+					bottom: 0;
+				}
+			}
+			.we-love-candle{
+				.image{
+					position: absolute;
+					top: -40px;
+					z-index: 2;
+					.we-love{
+				    position: absolute;
+					  left: -60px;
+					  top: 20px;
+					}
+				}
+				.text{
+					margin-top: 60px;
+					background: $white;
+					padding: 80px 40px 40px 50px;
+					width: 260px;
+				}
+			}			
+		}
+		.bottom-products{
+			position: relative;
+			.dot-pattern{
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 50%;
+				height: 90%;
+			}
+			.products-wrap{
+				background: $white;
+				margin-left: 120px;
+				h3{
+					font-size: em(60);
+					text-decoration: underline;
+					color: $pink;
+					margin-bottom: 30px;
+				}
+				.product-left{
+					.image{
+						position: relative;
+						padding-left: 200px;
+					}
+					.use{
+						position: absolute;
+						width: 145px;
+						left: 20px;
+						text-transform: uppercase;
+						font-size: em(18);
+						font-weight: 700;
+						padding-right: 30px;
+						text-align: right;
+						&.for-dad{
+							top:10px;
+							height: 133px;
+						}
+						&.for-mum{
+							top: 216px;
+							height: 133px;
+						}
+						&.for-little-tacker{
+							top: 412px;
+							height: 133px;
+						}
+					}
+					.line{
+				    height: 180px;
+				    width: 5px;
+				    background-color: $pink;
+				    position: absolute;
+				    right: 0;
+				    top: 0;
+						&:after{
+							    display: block;
+							    width: 35px;
+							    height: 5px;
+							    background-color: $pink;
+							    position: absolute;
+							    top: 50%;
+							    left: 0;
+							    content: " ";
+						}
+					}
+					.text{
+				    position: absolute;
+				    bottom: 40px;
+				    left: 420px;
+					}
+				}
+				.product{
+					.description{
+						margin-bottom: 20px;
+					}
+				}
+				.product-right{
+					margin-top: 120px;
+				}
+			}
+		}
+	}
+	#shower-settings{
+		margin-bottom: 40px;
+		.banner{
+			position: relative;
+			margin-bottom: 40px;
+			.text{
+				@extend %vertical-align;
+				left: 200px;
+				h2{
+					font-size: em(60);
+					color: $pink;
+					text-decoration: underline;
+					margin-bottom: 30px;
+				}
+				.description{
+					line-height: 1em;
+					font-size: em(24);
+					color: $white;
+					margin-bottom: 30px;
+				}
+				a{
+					background: $dark-grey;
+					border:none;					
+					color: $white;
+					text-transform: uppercase;
+					font-weight: 700;
+					width: 318px;
+					height: 78px;
+					display: block;
+					text-align: center;
+					line-height: 78px;
+				}
+			}
+		}
+		.shower-settings{
+			h2{
+				text-decoration: underline;
+				color: $green;
+				font-size: em(60);
+				margin-bottom: 50px;
+			}
+			.intro{
+				font-size: em(24);
+				margin-bottom: 50px;
+				line-height: 1.2em;
+				color: $grey;
+			}
+			.shower-image{
+				background-size: 100% auto;
+				background-repeat: no-repeat;
+				background-position: center 50px;
+				min-height: 747px;
+				text-align: center;
+				position: relative;
+				button{
+					position: absolute;
+					bottom: 100px;
+					right: -10px;
+				}
+				img{
+					opacity: 0.92;
+				}
+				&.soft-rain{
+					background-image:url(../images/family/6-shower-settings/soft-rain.gif);
+				}
+				&.intense-rain{
+					background-image:url(../images/family/6-shower-settings/intense-rain.gif);
+				}
+				&.massage{
+					background-image:url(../images/family/6-shower-settings/massage.gif);
+				}
+			}
+			.shower_rain{
+				border: none;
+				background: none;
+				@include appearance(none);
+				outline: none;
+				margin-bottom: 1px;
+				padding: 10px 5px;
+				svg{
+					width: 360px;
+					height: 76px;					
+				}
+				&:hover{
+					background: $green;
+					svg{
+						.icon{
+							path{
+								fill: $white;	
+							}							
+						}
+						.name{
+							path{
+								fill: $white;
+							}							
+						}
+						.number{
+							path{
+								fill: $white;
+							}							
+						}
+					}
+				}
+				&.active{
+					background: $green;
+					svg{
+						.icon{
+							path{
+								fill: $black;	
+							}							
+						}
+						.name{
+							path{
+								fill: $white;
+							}							
+						}
+						.number{
+							path{
+								fill: $white;
+							}							
+						}
+					}
 				}
 			}
 		}

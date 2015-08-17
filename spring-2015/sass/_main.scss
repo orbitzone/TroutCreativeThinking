@@ -1,4 +1,6 @@
 body.spring-2015{
+	@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/grid";
+	@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/responsive-utilities";
 	.dot-pattern{
 		background: url('../images/dot-pattern.jpg') repeat;
 	}
@@ -294,11 +296,16 @@ body.spring-2015{
 		}
 	}
 	.we-love{
-		width: 125px;
-		height: 130px;
+		width: 62px;
+		height: 65px;
 		background-image: url(../images/we-love-sprite.png);
-		background-size: 375px 130px;
+		background-size: 187.5px 65px;
 		background-repeat: no-repeat;
+		@media (min-width: $screen-sm-min){
+			width: 125px;
+			height: 130px;
+			background-size: 375px 130px;
+		}
 	}
 	.products-slide{
 		.arrow-next,

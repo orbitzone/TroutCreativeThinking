@@ -24,6 +24,7 @@
     "modernizr": "~2.8.3",
     "placeholders": "~4.0.1",
     "slick-carousel": "~1.5.8",
-    "matchHeight": "~0.6.0"
+    "matchHeight": "~0.6.0",
+    "bootstrap-sass-official": "~3.3.5"
   }
 }

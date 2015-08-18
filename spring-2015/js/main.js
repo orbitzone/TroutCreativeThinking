@@ -2,6 +2,29 @@ var loveFamily = {};
 var loveLuxury = {};
 var loveCalm = {};
 var homePage = {};
+$.fn.imagesLoaded = function () {
+
+    $imgs = this.find('img[src!=""]');
+    // if there's no images, just return an already resolved promise
+    if (!$imgs.length) {return $.Deferred.resolve().promise();}
+
+    // for each image, add a deferred object to the array which resolves when the image is loaded
+    var dfds = [];  
+    $imgs.each(function(){
+
+        var dfd = $.Deferred();
+        dfds.push(dfd);
+        var img = new Image();
+        img.onload = function(){dfd.resolve();}
+        img.src = this.src;
+
+    });
+
+    // return a master promise object which will resolve when all the deferred objects have resolved
+    // IE - when all the images are loaded
+    return $.when.apply($,dfds);
+
+};
 jQuery(function($){
 
 	homePage = {
@@ -364,7 +387,66 @@ jQuery(function($){
 						$('#bathrooms-for-inspiration button.circular').matchHeight();
 					});
 					$(window).resize();
-					//loveFamily.circularGallery();
+					loveCalm.waterTherapy();
+				}
+			});
+		},
+		waterTherapy: function(){
+			$.ajax({
+				cache: false,
+				url: 'pages/calm/water-therapy.html',
+				success: function(data){
+					$('#main-content').append(data);
+					loveCalm.tips();
+				}
+			});
+		},
+		tips: function(){
+			$.ajax({
+				cache: false,
+				url: 'pages/calm/tips.html',
+				success: function(data){
+					$('#main-content').append(data);
+					loveCalm.colourPicker();
+				}
+			});
+		},
+		colourPicker: function(){
+			$.ajax({
+				cache: false,
+				url: 'pages/calm/colour-picker.html',
+				success: function(data){
+					$('#main-content').append(data);
+					$('#colour-picker .slider').slick({
+						slidesToShow: 1,
+  					slidesToScroll: 1,
+  					infinite: false,
+  					prevArrow: "<button type=\"button\" class=\"arrow-prev\"><i class=\"iconr-arrow-left\"></i></button>",
+  					nextArrow: "<button type=\"button\" class=\"arrow-next\"><i class=\"iconr-arrow-right\"></i></button>"					 	
+					});
+					loveCalm.favourites();
+				}
+			});
+		},
+		favourites: function(){
+			$.ajax({
+				cache: false,
+				url: 'pages/calm/favourites.html',
+				success: function(data){
+					$('#main-content').append(data).imagesLoaded().then(function(){
+						$('#favourites .product-wrap').matchHeight();
+						$(window).resize();
+					});
+					loveCalm.footer();
+				}
+			});
+		},
+		footer: function(){
+			$.ajax({
+				cache: false,
+				url: 'pages/calm/footer-ads.html',
+				success: function(data){
+					$('#main-content').append(data);
 				}
 			});
 		}

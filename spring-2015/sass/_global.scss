@@ -70,6 +70,10 @@ body.spring-2015{
 		position: relative;
 		overflow: hidden;
 		padding-bottom: 40px;
+		
+	  *{
+			@extend %border-box;
+		}
 	}
 	.main-content{
 		max-width: 1520px;
@@ -83,9 +87,6 @@ body.spring-2015{
 	  @media (min-width: $screen-lg-min){
 	  	padding: 0;
 	  }
-	  *{
-			@extend %border-box;
-		}
 	}
 	@media only screen and (max-device-width:$screen-xs-max) {
 	    input[type="text"]:focus, input[type="number"]:focus,

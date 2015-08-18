@@ -294,4 +294,54 @@ body.love-luxury{
 			}	
 		}			
 	}
+	#footer-ads{
+		padding-top: 105px;
+		padding-bottom: 110px;
+		.pinterest-board{
+			position: relative;
+			.text{
+				@extend %center-align;
+				text-align: center;
+				width: 368px;
+				.circle{
+					width: 65px;
+					height: 65px;
+					margin: 0 auto;
+					background: $pink;
+					text-align: center;
+					margin-top: 40px;
+					margin-bottom: 30px;
+					@include border-radius(50%);
+					i{
+						color: $white;
+						font-size: em(50);
+				    position: relative;
+    				top: 12px;
+					}
+				}
+				.button{
+					display: block;
+					border: 2px solid $dark-grey;
+					background: none;
+					padding: 20px 30px;
+					color: $dark-grey;
+					font-weight: 700;
+					text-transform: uppercase;
+				}
+			}
+		}
+		.video{
+			position: relative;
+			.text{
+				position: absolute;
+				text-decoration: underline;
+				font-size: em(50);
+				font-weight: 700;
+				left: 20px;
+				top: 80px;
+				line-height: 1em;
+				color: $white;
+			}
+		}
+	}	
 }

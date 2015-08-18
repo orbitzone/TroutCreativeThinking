@@ -38,36 +38,42 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.iconr-lightbulb-dotted:before {
+.iconr-arrow-left:before {
   content: "a";
 }
-.iconr-share-dotted:before {
+.iconr-arrow-right:before {
   content: "b";
 }
-.iconr-we-love:before {
+.iconr-email:before {
   content: "c";
 }
-.iconr-pinterest:before {
+.iconr-facebook:before {
   content: "d";
 }
-.iconr-share:before {
+.iconr-instagram:before {
   content: "e";
 }
-.iconr-instagram:before {
+.iconr-lightbulb-dotted:before {
   content: "f";
 }
-.iconr-facebook:before {
+.iconr-minus-dotted:before {
   content: "g";
 }
-.iconr-email:before {
+.iconr-pinterest:before {
   content: "h";
 }
-.iconr-arrow-left:before {
+.iconr-play:before {
   content: "i";
 }
-.iconr-arrow-right:before {
+.iconr-play-circle:before {
   content: "j";
 }
-.iconr-minus-dotted:before {
+.iconr-share:before {
   content: "k";
+}
+.iconr-share-dotted:before {
+  content: "l";
+}
+.iconr-we-love:before {
+  content: "m";
 }

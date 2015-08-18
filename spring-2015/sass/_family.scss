@@ -671,21 +671,24 @@ body.love-family{
 		margin-bottom: 40px;
 		.banner{
 			position: relative;
-			margin-bottom: 40px;
+			margin-bottom: 20px;
 			.text{
-				@extend %vertical-align;
-				left: 200px;
+				position: absolute;
+				left: 288px;
+				top: 60px;
 				h2{
 					font-size: em(60);
 					color: $pink;
 					text-decoration: underline;
-					margin-bottom: 30px;
+					margin-bottom: 48px;
+					margin-top: 0;
+					line-height: 1.12em;
 				}
 				.description{
-					line-height: 1em;
+					line-height: 1.2em;
 					font-size: em(24);
 					color: $white;
-					margin-bottom: 30px;
+					margin-bottom: 38px;
 				}
 				a{
 					background: $dark-grey;
@@ -693,6 +696,7 @@ body.love-family{
 					color: $white;
 					text-transform: uppercase;
 					font-weight: 700;
+					font-size: em(16);
 					width: 318px;
 					height: 78px;
 					display: block;
@@ -702,25 +706,14 @@ body.love-family{
 			}
 		}
 		.shower-settings{
-			h2{
-				text-decoration: underline;
-				color: $green;
-				font-size: em(60);
-				margin-bottom: 50px;
-			}
-			.intro{
-				font-size: em(24);
-				margin-bottom: 50px;
-				line-height: 1.2em;
-				color: $grey;
-			}
 			.shower-image{
-				background-size: 100% auto;
+				background-size: cover;
 				background-repeat: no-repeat;
 				background-position: center 50px;
-				min-height: 747px;
+				min-height: 1000px;
 				text-align: center;
 				position: relative;
+				margin-right: 94px;
 				button{
 					position: absolute;
 					bottom: 100px;
@@ -744,8 +737,10 @@ body.love-family{
 				background: none;
 				@include appearance(none);
 				outline: none;
-				margin-bottom: 1px;
-				padding: 10px 5px;
+				border-bottom: 1px solid $light-grey;
+				width: 100%;
+				padding: 38px 5px 25px 39px;
+				text-align: left;
 				svg{
 					width: 360px;
 					height: 76px;					
@@ -791,6 +786,243 @@ body.love-family{
 					}
 				}
 			}
+			.options-panel{
+				padding-top: 92px;
+    		padding-left: 14px;
+    		padding-right: 80px;
+    		h2{
+    			margin-top: 0;
+    			line-height: 1.2em;
+    			margin-bottom: 46px;
+    			text-decoration: underline;
+					color: $green;
+					font-size: em(60);				
+    		}
+    		.intro{
+					font-size: em(24);
+					margin-bottom: 47px;
+					line-height: 1.2em;
+					color: $grey;
+				}
+				.options{
+					margin-bottom: 40px;;
+				}
+				.product{
+					.name{
+						h3{
+							font-size: em(18);
+						}
+					}
+					.description,
+					.price{
+						font-size: em(16);
+					}
+				}
+			}
 		}
+	}
+	#favourites{
+		.banner{
+			padding-left: 118px;
+		}
+		.product-wrap{
+			min-height: 503px;
+			border-top: 1px solid $grey;
+			&:nth-child(1),
+			&:nth-child(2),
+			&:nth-child(4){
+				border-top: none;
+			}
+			.product{
+				height: 100%;
+				padding: 30px 26px 24px;
+				.line-pattern{
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					z-index: 0;
+				}
+				.product-content{
+					position: relative;
+					z-index: 1;					
+				}
+				.product-info{
+					position: relative;
+					z-index: 1;
+					@extend %center-align;
+					padding: 30px;
+					font-weight: 700;
+					text-align: center;
+					.icon{
+				    width: 50px;
+				    height: 50px;
+				    margin: 0 auto;
+				    background-color: #FFF;
+				    @include border-radius(50%);
+						margin-bottom: 20px;
+						i{
+							font-size: em(50);
+							color: $pink;
+						}	
+					}
+					.text{
+						color: $black;
+						font-size: em(16);
+						text-transform: uppercase;
+					}
+				}
+				.share{
+					top: inherit;
+					right: 10px;
+					bottom: 10px;
+				}
+			}
+		}
+		.image{
+			margin-bottom: 38px;
+		}
+		.products-grid{
+			max-width: 1033px;
+			margin: 0 auto;
+		}
+	}
+	#footer-ads{
+		overflow: hidden;
+		.dot-pattern{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+		.the-powder-room{
+	    position: absolute;
+	    right: 100px;
+	    top: -57px;
+	    opacity: 0.87;
+		}
+		.content{
+			padding: 109px 23px 109px 123px;
+		}
+		.top-section{
+			position: relative;
+			.pinterest-board{
+				position: relative;
+				margin-bottom: 58px;
+				img{
+					width: 100%;
+				}
+				.text{
+					@extend %center-align;
+					text-align: center;
+					.circle{
+						width: 65px;
+						height: 65px;
+						margin: 0 auto;
+						background: $pink;
+						text-align: center;
+						margin-top: 40px;
+						margin-bottom: 30px;
+						@include border-radius(50%);
+						i{
+							color: $white;
+							font-size: em(50);
+					    position: relative;
+	    				top: 12px;
+						}
+					}
+					.button{
+						display: block;
+						border: 2px solid $dark-grey;
+						background: none;
+						padding: 20px 30px;
+						color: $dark-grey;
+						font-weight: 700;
+						text-transform: uppercase;
+					}
+				}
+			}
+			.intro{
+				position: absolute;
+				left: 60%;
+				bottom: 58px;
+				.link{
+					margin-top: 10px;
+					a{
+						text-decoration: underline;
+						color: $grey;
+						font-size: em(30);
+						font-weight: 700;
+					}
+				}
+				.text-block{
+					margin: 0;
+					display: block;
+					background: $pink;
+					color: $white;
+					padding: 4px 10px;
+					float: left;
+					clear: both;
+					font-size: em(14);
+					font-weight: 700;
+					line-height: 1.2em;
+					@media (min-width: $screen-sm-min){
+						padding: 5px 10px;
+						font-size: em(22);
+					}
+					@media (min-width: $screen-md-min){
+						font-size: em(32);
+					}
+				}
+			}
+		}
+		.bottom-section{
+			.tips{
+				margin-left: 42px;
+				background: $white;
+				width: 406px;
+				padding: 72px 125px 82px 75px;
+				h2{
+					font-size: em(50);
+					color: $pink;
+					line-height: 1.2em;
+					text-decoration: underline;
+					span{
+						color: $white;
+						background: $pink;
+						margin-left: 15px;
+					}
+				}
+				h3{
+					font-weight: 400;
+					color: $pink;
+					font-size: em(24);
+				}
+				a{
+					color: $pink;
+					text-decoration: underline;
+					font-size: em(18);
+					font-weight: 700;
+				}
+			}
+			.peace-of-mind{
+				.image{
+					position: relative;
+					h2{
+						color: $grey;
+						text-decoration: underline;
+						font-size: em(50);
+						position: absolute;
+						left: -30px;
+						bottom: 20px;
+					}
+				}
+				.text{
+					padding: 20px;
+				}				
+			}
+		}		
 	}
 }

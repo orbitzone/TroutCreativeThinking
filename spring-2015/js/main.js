@@ -164,6 +164,9 @@ jQuery(function($){
 				success: function(data){
 					$('#main-content').append(data);
 					$('#favourites .product-wrap').matchHeight();
+					$('#favourites .product-wrap img').on('load', function(){
+						$(window).resize();
+					});
 					loveFamily.footer();
 				}
 			});

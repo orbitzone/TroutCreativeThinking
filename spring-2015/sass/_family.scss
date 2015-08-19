@@ -17,29 +17,8 @@ body.love-family{
 				bottom: 20%;
 				left: 27.30263%;
 				text-decoration: underline;
-				font-size: em(45);
-				@media (min-width: $screen-sm-min){
-					bottom: 6.09756%;
-					left: 27.30263%;
-					font-size: em(60);
-				}
-				@media (min-width: $screen-lg-min){
-					font-size: em(90);
-					bottom: 6.09756%;
-					left: 27.30263%;
-				}
-			}
-			.span4{
-				@media (min-width: $screen-sm-min){
-					width: 33.02632%;
-				}
-			}
-			.span8{
-				@media (min-width: $screen-sm-min){
-					margin-left: 0.59211%;
-					width: 66.38158%;
-				}
-			}			
+				font-size: em(90);				
+			}		
 		}
 		.intro{
 			position: relative;
@@ -86,20 +65,15 @@ body.love-family{
 			.intro-copy{
 				position: relative;
 				z-index: 1;
-				font-size: em(12);
+				font-size: em(34);
 				font-weight: 700;
 			  line-height: 1.2em;	
 			  padding-right: 50px;
 			  @media (min-width: $screen-sm-min){
-			  	font-size: em(22);
 			  	padding-right: 0;
 			  }
-			  @media (min-width: $screen-md-min){
-			  	font-size: em(24);
-			  }
-		    @media (min-width: $screen-lg-min){
-		    	font-size: em(34);
-					padding-left: 110px;
+			  @media (min-width: $screen-lg-min){
+		    	padding-left: 110px;
     		}
     		p{
     			margin-bottom: 1.3em;
@@ -129,31 +103,15 @@ body.love-family{
 					margin-top: 0;
 					margin-bottom: 20px;
 			    line-height: 1.2em;
-			    font-size: em(18);
+		    	font-size: em(60);
 			    @media (min-width: $screen-sm-min){
-			    	font-size: em(30);
 			    	margin-bottom: 40px;
-			    }
-			    @media (min-width: $screen-md-min){
-			    	font-size: em(50);
-			    }
-			    @media (min-width: $screen-lg-min){
-			    	font-size: em(60);
-			    }
+			    }			    
 				}
 				p{
-					font-size: em(12);		
-					line-height: 1.2em;
-					color: $grey;
-					@media (min-width: $screen-sm-min){
-			    	font-size: em(18);
-			    }
-			    @media (min-width: $screen-md-min){
-			    	font-size: em(22);
-			    }
-			    @media (min-width: $screen-lg-min){
-			    	font-size: em(28);
-			    }			
+					font-size: em(28);
+			    line-height: 1.2em;
+					color: $grey;						
 				}
 			}
 			.products-we-love{
@@ -212,19 +170,12 @@ body.love-family{
 						}
 					}
 					.white-box{
-						font-size: em(10);
+						font-size: em(18);
 						line-height: 1.2em;
 						padding: 15px 30px 15px 15px;
-						@media (min-width: $screen-sm-min){
-							font-size: em(16);
-						}
 						@media (min-width: $screen-md-min){
-							font-size: em(16);
 							padding: 30px;
-						}
-						@media (min-width: $screen-lg-min){
-							font-size: em(18);
-						}		
+						}					
 					}
 					.share{
 						position: absolute;
@@ -264,20 +215,15 @@ body.love-family{
     				}
 					}
 					.white-box{
-						font-size: em(10);
+						font-size: em(18);
 						line-height: 1.2em;
 						padding: 15px 10px 15px 15px;
 						@media (min-width: $screen-sm-min){
 							padding: 15px;
-							font-size: em(16);
 						}
 						@media (min-width: $screen-md-min){
-							font-size: em(16);
 							padding: 30px 10px 20px 35px;
-						}
-						@media (min-width: $screen-lg-min){
-							font-size: em(18);
-						}						    
+						}				    
 					}
 					.share{
 				    top: 15px;
@@ -315,17 +261,8 @@ body.love-family{
 				display: inline;
 				color: $pink;
 				background: $white;
-				font-size: em(18);
-				line-height: 1.14em;
-				@media (min-width: $screen-sm-min){
-					font-size: em(30);
-				}
-				@media (min-width: $screen-md-min){
-					font-size: em(50);
-				}
-				@media (min-width: $screen-lg-min){
-					font-size: em(60);
-				}		
+				font-size: em(60);
+				line-height: 1.14em;					
 			}
 			.we-love-stool{
 				position: absolute;
@@ -382,16 +319,12 @@ body.love-family{
 						padding: 4px 10px;
 						float: left;
 						clear: both;
-						font-size: em(14);
+						font-size: em(32);
 						font-weight: 700;
 						line-height: 1.2em;
 						@media (min-width: $screen-sm-min){
 							padding: 5px 10px;
-							font-size: em(22);
-						}
-						@media (min-width: $screen-md-min){
-							font-size: em(32);
-						}
+						}						
 					}
 				}
 			}
@@ -433,31 +366,22 @@ body.love-family{
 					}
 					h2{
 						color: $pink;
-						font-size: em(18);
+						font-size: em(60);
 						margin-bottom: 40px;
 						text-decoration: underline;
-						@media (min-width: $screen-sm-min){
-							font-size: em(30);
-						}
 						@media (min-width: $screen-md-min){
-							font-size: em(50);
 							margin-bottom: 0;
 						}
 						@media (min-width: $screen-lg-min){
-							font-size: em(60);
 							margin-bottom: 40px;
 						}
 					}
 					.text{
 						background: $white;
 						color: $pale-blue;
-						font-size: em(12);
+						font-size: em(16);
 						width: 200px;
 						padding: 10px;
-
-						@media (min-width: $screen-sm-min){
-							font-size: em(16);
-						}
 					}
 					.basket{
 						position: relative;

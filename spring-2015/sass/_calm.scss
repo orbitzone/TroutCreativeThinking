@@ -11,40 +11,38 @@ body.love-calm{
 			position: absolute;
 			left: 0;
 			top: 0;
+			max-width: 180px;
+			@media (min-width: $screen-sm-min){
+				max-width: 120px;
+			}
+			@media (min-width: $screen-md-min){
+				max-width: 220px;	
+			}
+			@media (min-width: $screen-lg-min){
+				max-width: 384px;
+			}
 		}	
 		header{
 			background: none;
 			position: relative;
 			overflow: hidden;
+			.image{
+				position: relative;
+			}
 			h1{
 				color: $white;
 				position: absolute;
-				top: 20%;
+				top: 30.85106383%;
 				right: 27.30263%;
 				text-decoration: underline;
-				font-size: em(45);
+				font-size: em(40);
 				@media (min-width: $screen-sm-min){
-					top: 30.85106383%;
-					right: 27.30263%;
-					font-size: em(60);
-				}
-				@media (min-width: $screen-lg-min){
 					font-size: em(90);
 					top: 30.85106383%;
 					right: 27.30263%;
 				}
-			}
-			.span4{
-				@media (min-width: $screen-sm-min){
-			    margin-left: 0.59211%;
-    			width: 33.02632%;
-				}
-			}
-			.span8{
-				@media (min-width: $screen-sm-min){
-					width: 66.38158%;
-				}
-			}					
+				
+			}							
 		}
 		.intro{
 			position: relative;
@@ -52,20 +50,6 @@ body.love-calm{
 			padding-top: 20px;
 			@media (min-width: $screen-md-min){
 				padding-top: 100px;
-			}
-			.shelves{
-				@media (min-width: $screen-sm-min){
-					padding: 41px 0 0 27px;
-				}
-				@media (min-width: $screen-lg-min){
-					padding: 82px 0 0 54px;
-				}
-				img{
-					max-width: 120px;
-					@media (min-width: $screen-sm-min){
-						max-width: 100%;
-					}
-				}
 			}
 			.hanging-toy{
 				position: absolute;
@@ -91,23 +75,10 @@ body.love-calm{
 			.intro-copy{
 				position: relative;
 				z-index: 1;
-				font-size: em(12);
 				font-weight: 700;
-				line-height: 1.2em;	
-				padding-right: 50px;
-				@media (min-width: $screen-sm-min){
-					font-size: em(22);
-					padding-right: 0;
-				}
-				@media (min-width: $screen-md-min){
-					font-size: em(24);
-				}
-				@media (min-width: $screen-lg-min){
+				.text{
 					font-size: em(34);
-					padding-left: 110px;
-				}
-				p{
-					margin-bottom: 1.3em;
+					margin-bottom: em(20);
 				}
 			}	
 		}
@@ -117,17 +88,7 @@ body.love-calm{
 			margin-top: 0;
 			margin-bottom: 20px;
 			line-height: 1.2em;
-			font-size: em(18);
-			@media (min-width: $screen-sm-min){
-				font-size: em(30);
-				margin-bottom: 40px;
-			}
-			@media (min-width: $screen-md-min){
-				font-size: em(50);
-			}
-			@media (min-width: $screen-lg-min){
-				font-size: em(60);
-			}
+			font-size: em(60);			
 		}
 		.products-we-love{
 			position: relative;
@@ -255,8 +216,13 @@ body.love-calm{
 		.banner{
 			position: relative;
 			.text{
-				@extend %center-align;
-				width: 697px;
+				margin-top: 40px;
+				@media (min-width: $screen-md-min){
+						position: absolute;
+					  top: 50%;
+					  left: 50%;
+					  @include transform(translateY(-50%) translateX(-50%));
+				}
 				h2{
 					font-size: em(50);
 					display: inline;
@@ -280,48 +246,164 @@ body.love-calm{
 			position: relative;
 			max-width: 1440px;
 			margin: 0 auto;
-			.share{
-				position: absolute;
-				right: 30px;
-				top: 40px;
+			.image{
+				position: relative;
+				a{
+					display: block;
+					position: relative;
+				}
+				.play{
+					@extend %center-align;
+					i{
+						font-size: em(50);
+						color: $white;
+					}
+				}
+				.share{
+					position: absolute;
+					right: 0;
+					bottom: -60px;
+					z-index: 2;
+					@media (min-width: $screen-sm-min){
+						right: 30px;
+						top: 40px;
+						bottom: inherit;
+					}
+				}
 			}
 			.text{
+				color: $black;
 				h2{
 					font-size: em(50);
 					text-decoration: underline;
 					margin-bottom: 30px;
-				}
-				position: absolute;
-				bottom: 80px;
-				left: 200px;
-				width: 300px;
-				color: $white;
-			}
-			.play{
-				@extend %center-align;
-				i{
-					font-size: em(50);
+				}				
+				@media (min-width: $screen-md-min){
 					color: $white;
+					position: absolute;
+					bottom: 60px;
 				}
-			}
+			}			
 		}		
 	}
 	#tips{
 		margin-bottom: 40px;
+		.banner{
+			position: relative;
+			@media (min-width: $screen-sm-min){
+				min-height: 440px;
+			}
+			@media (min-width: $screen-md-min){
+				min-height: 500px;
+			}
+			.image{
+				position: relative;
+				padding-left: 40px;
+				@media (min-width: $screen-sm-min){
+					position: absolute;
+					left: 0;
+					top: 20px;
+					padding-right: 17em;
+				}
+				@media (min-width: $screen-lg-min){
+					margin-left: 10em;
+					padding-right: 0;
+				}
+			}
+			.description{
+				position: absolute;
+				top: 3em;
+				left: 0;
+				p{
+					background: $pale-blue;
+					color: $white;
+					margin: 0;
+					padding: 5px 8px;
+					display: block;
+					float: left;
+					clear: both;
+					font-weight: bold;
+					font-size: em(30);
+					line-height: 1em;
+				}
+			}
+			.title{
+				h2{
+					font-size: em(60);
+					color: $pale-blue;
+					text-decoration: underline;
+					margin-top: 0;
+					margin-bottom: 30px;
+					line-height: 1.2em;
+				}
+				.message{
+					p{
+						background: $green;
+						color: $white;
+						margin: 0;
+						padding: 5px 8px;
+						display: block;
+						float: left;
+						clear: both;
+						font-weight: bold;
+						font-size: em(30);
+						line-height: 1em;
+					}
+				}
+			}
+		}
+		.tips{
+			padding-top: 20px;
+			.person{
+				text-align: center;
+				color: $pale-blue;
+				@media (min-width: $screen-md-min){
+					margin-left: 72px;
+				}
+				h2{
+					font-size: em(24);
+					margin-bottom: 0;
+				}
+				.name{
+					font-size: em(16);
+				}
+			}
+			.tip{
+				position: relative;
+				padding-left: 60px;
+				margin-bottom: em(20);
+				h3{
+					color: $pale-blue;
+					font-size: em(24);
+				}
+				.text{
+					font-size: em(18);
+					color: $grey;
+					line-height: em(20);
+				}
+			}
+		}
 	}
 	#colour-picker{
 		.image-wrap{
 			position: relative;
-			padding-left: 134px;
+			@media (min-width: $screen-md-min){
+				padding-left: em(134);
+			}
 			.text{
 				font-size: em(50);
 				font-weight: bold;
-				position: absolute;
-				top: 80px;
-				left: 0;
 				line-height: 1em;
 				text-decoration: underline;
 				color: $pale-blue;
+				position: relative;
+				margin-top: 20px;
+				@media (min-width: $screen-md-min){
+					margin-top: 0;
+					position: absolute;
+					top: 20%;
+					left: 0;
+				}
 			}
 			.share{
 				position: absolute;
@@ -330,7 +412,40 @@ body.love-calm{
 			}
 		}
 		.description{
-			padding-left: 134px;
+			margin-top: 20px;
+			padding-right: em(120);
+			@media (min-width: $screen-md-min){
+				margin-top: 0;
+				padding-left: 134px;
+			}
+		}
+		.slider{
+			button{
+				@include appearance(none);
+				background: none;
+				border: none;
+				outline: none;
+				position: absolute;
+				bottom: -40px;
+				z-index: 2;
+				i{
+					font-size: em(50);
+					color: $pale-blue;
+				}
+				&.arrow-next{
+					@include transform(translateY(-100%));
+					right: 0;
+				}
+				&.arrow-prev{
+					@include transform(translateX(-100%) translateY(-100%));
+					right: 10px;
+				}
+				&.slick-disabled{
+					i{
+						color: $grey;
+					}
+				}
+			}
 		}
 	}
 	#favourites{
@@ -342,17 +457,19 @@ body.love-calm{
 		.pinterest-board{
 			position: relative;
 			.text{
+				width: 100%;
+				padding: 0 em(30);
 				@extend %center-align;
 				text-align: center;
-				width: 368px;
+				max-width: 400px;
 				.circle{
 					width: 65px;
 					height: 65px;
 					margin: 0 auto;
 					background: $pink;
 					text-align: center;
-					margin-top: 40px;
-					margin-bottom: 30px;
+					margin-top: em(40);
+					margin-bottom: em(30);
 					@include border-radius(50%);
 					i{
 						color: $white;
@@ -365,7 +482,7 @@ body.love-calm{
 					display: block;
 					border: 2px solid $dark-grey;
 					background: none;
-					padding: 20px 30px;
+					padding: em(20) em(30);
 					color: $dark-grey;
 					font-weight: 700;
 					text-transform: uppercase;
@@ -379,8 +496,8 @@ body.love-calm{
 				text-decoration: underline;
 				font-size: em(50);
 				font-weight: 700;
-				left: 20px;
-				top: 80px;
+				left: 5%;
+				top: 20%;
 				line-height: 1em;
 				color: $white;
 			}

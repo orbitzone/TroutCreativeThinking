@@ -114,23 +114,11 @@ body.spring-2015{
 		color: $grey;
 		outline: none !important;
 		.name{
-			font-size: em(12);
-			font-weight: 700;
-			@media (min-width: $screen-sm-min){
-					font-size: em(16);
-			}	
-			@media (min-width: $screen-md-min){
-				font-size: em(18);
-			}						
+			font-size: em(18);
+			font-weight: 700;									
 		}
 		.description{
-			font-size: em(12);
-			@media (min-width: $screen-sm-min){
-					font-size: em(16);
-			}	
-			@media (min-width: $screen-md-min){
-				font-size: em(16);
-			}
+			font-size: em(16);			
 		}
 		.image{
 			position: relative;
@@ -143,13 +131,8 @@ body.spring-2015{
 		.price{
 			padding: 25px 0 30px;
 			font-weight: 700;
-			font-size: em(12);
-			@media (min-width: $screen-sm-min){
-					font-size: em(16);
-			}	
-			@media (min-width: $screen-md-min){
-				font-size: em(16);
-			}
+			font-size: em(16);
+			
 			span{
 				font-style: italic;
 				font-weight: 400;

@@ -6,6 +6,7 @@ body.spring-2015{
 		.bathroom{
 			position: relative;
 			width: 100%;
+			z-index: 2;
 			img{
 				width: 100%;
 			}
@@ -29,10 +30,7 @@ body.spring-2015{
 					@include appearance(none);
 					outline: none;
 					i{
-						font-size: em(40);
-						@media (min-width: $screen-lg-min){
-							font-size: em(60);
-						}						
+						font-size: em(60);												
 					}
 					&.spot-1{
 						top: 12.763596%;
@@ -117,11 +115,8 @@ body.spring-2015{
 					padding: 109px 20px 20px;
 				}	
 				.desc{
-					font-size: em(12);
+					font-size: em(16);
 					line-height: 1em;
-					@media (min-width: $screen-md-min){	
-						font-size: em(16);
-					}
 				}
 				ul{
 					margin: 0;
@@ -147,15 +142,9 @@ body.spring-2015{
 				}
 				h2{
 					color: $white;
-					font-size: em(16);
+					font-size: em(28);
 					margin: 0;
-					margin-bottom: 40px;
-					@media (min-width: $screen-sm-min){	
-						font-size: em(24);
-					}
-					@media (min-width: $screen-md-min){	
-						font-size: em(28);
-					}
+					margin-bottom: 40px;					
 				}							
 			}				
 		}
@@ -168,19 +157,10 @@ body.spring-2015{
 				padding: 80px 160px 60px;
 			}
 			h2{
-				font-size: em(22);
+				font-size: em(60);
 				margin: 0;
 				margin-bottom: 20px; 
-				text-decoration: underline;
-				@media (min-width: $screen-sm-min){
-					font-size: em(36);
-				}
-				@media (min-width: $screen-md-min){
-					font-size: em(50);
-				}
-				@media (min-width: $screen-lg-min){
-					font-size: em(60);
-				}				
+				text-decoration: underline;				
 			}				
 		}
 	}

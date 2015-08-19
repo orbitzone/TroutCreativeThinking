@@ -452,9 +452,6 @@ jQuery(function($){
 		}
 	};
 	if($('body').hasClass('homepage')){
-		var data = { section: 'homepage'};
-		var url = $(this).attr('href');
-		history.pushState(data, null, url);
 		homePage.init();	
 	}
 	if($('body').hasClass('love-family')){
@@ -493,9 +490,9 @@ jQuery(function($){
 	  var section = e.state;
 	  if(section !== null){
 	  	section = e.state.section;
+	  	requestContent(section);
+	    document.title = 'Title';
 	  }
-    requestContent(section);
-    document.title = 'Title';
 	});
 	$(document).on('load',function(){
 		$(window).resize();

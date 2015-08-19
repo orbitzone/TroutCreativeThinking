@@ -1,22 +1,49 @@
 body.spring-2015{
 	#favourites{
 		.banner{
-			padding-left: 118px;
+			@media (min-width: $screen-md-min){
+				padding-left: em(118);
+			}
 			.text{
+				@media (min-width: $screen-md-min){
+					position: absolute;
+					left: em(-255);
+				}
 				h2{
 					font-size: em(50);
 					color: $black;
 					text-decoration: underline;
-					margin-top: 20px;
+					margin-top: 0;
+					margin-bottom: 40px;
+					@media (min-width: $screen-md-min){
+						margin-top: 20px;
+						margin-bottom: 0;
+					}
 				}
 			}
-			.image{
+			.image-wrap{
 				position: relative;
 				margin-bottom: 85px;
+				padding-right: em(140);
+				.image{
+					position: relative;
+				}
 				.description{
 					position: absolute;
-					bottom: 30px;
-					right: -140px;
+					bottom: 5%;
+					right: 0;
+					p{
+						background: $pink;
+						color: $white;
+						margin: 0;
+						padding: 5px 8px;
+						display: block;
+						float: left;
+						clear: both;
+						font-weight: bold;
+						font-size: em(30);
+						line-height: 1em;
+					}
 				}
 				.we-love{
 					position: absolute;

@@ -451,6 +451,22 @@ body.love-calm{
 	}
 	#favourites{
 		margin-bottom: 40px;
+		.banner{
+			.text{
+				h2{
+					font-size: em(60);
+					color: $pale-blue;
+					text-decoration: underline;
+				}
+			}
+			.image{
+				.description{
+					p{
+						background: $pale-blue;
+					}
+				}	
+			}			
+		}			
 	}
 	#footer-ads{
 		padding-top: 105px;

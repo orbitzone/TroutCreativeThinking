@@ -596,15 +596,20 @@ body.love-family{
 		.banner{
 			position: relative;
 			margin-bottom: 20px;
+			background-size: cover;
+			padding: em(67) em(30) em(40);
+			@media (min-width: $screen-sm-min){
+				padding: em(67) em(30) em(80) em(80);
+			}
+			@media (min-width: $screen-md-min){
+				padding: em(67) 0 em(180) em(290);
+			}
 			.text{
-				position: absolute;
-				left: 288px;
-				top: 60px;
 				h2{
 					font-size: em(60);
 					color: $pink;
 					text-decoration: underline;
-					margin-bottom: 48px;
+					margin-bottom: em(48, 60);
 					margin-top: 0;
 					line-height: 1.12em;
 				}
@@ -612,7 +617,8 @@ body.love-family{
 					line-height: 1.2em;
 					font-size: em(24);
 					color: $white;
-					margin-bottom: 38px;
+					margin-bottom: em(38);
+					max-width: 473px;					
 				}
 				a{
 					background: $dark-grey;
@@ -621,23 +627,52 @@ body.love-family{
 					text-transform: uppercase;
 					font-weight: 700;
 					font-size: em(16);
-					width: 318px;
+					max-width: 318px;
 					height: 78px;
 					display: block;
 					text-align: center;
-					line-height: 78px;
+					line-height: 78px;					
 				}
 			}
 		}
 		.shower-settings{
+			.intro{
+				padding-top: em(20);
+    		padding-left: em(14);
+    		padding-right: em(80);
+    		@media (min-width: $screen-md-min){
+    			padding-top: em(92);
+    		}
+				h2{
+    			margin-top: 0;
+    			line-height: 1.2em;
+    			margin-bottom: 46px;
+    			text-decoration: underline;
+					color: $green;
+					font-size: em(60);				
+    		}
+				.text{
+					font-size: em(24);
+					margin-bottom: 47px;
+					line-height: 1.2em;
+					color: $grey;
+				}
+			}
 			.shower-image{
 				background-size: cover;
 				background-repeat: no-repeat;
 				background-position: center 50px;
-				min-height: 1000px;
+
 				text-align: center;
 				position: relative;
-				margin-right: 94px;
+				min-height: 320px;
+				@media (min-width: $screen-sm-min){
+					min-height: 420px;
+				}
+				@media (min-width: $screen-md-min){
+					margin-right: 94px;
+					min-height: 1000px;
+				}
 				button{
 					position: absolute;
 					bottom: 100px;
@@ -663,12 +698,27 @@ body.love-family{
 				outline: none;
 				border-bottom: 1px solid $light-grey;
 				width: 100%;
-				padding: 38px 5px 25px 39px;
 				text-align: left;
 				cursor: pointer;
+				padding: em(10);
+				@media (min-width: $screen-md-min){
+					padding: em(20);
+				}
+				@media (min-width: $screen-md-min){
+					padding: em(38) em(5) em(25) em(39);
+				}
 				svg{
-					width: 360px;
-					height: 76px;					
+					width: 120px;
+					height: 25px;
+					max-width: 100%;
+					@media (min-width: $screen-sm-min){
+						width: 195px;
+						height: 41px;						
+					}
+					@media (min-width: $screen-md-min){
+						width: 360px;
+						height: 76px;
+					}					
 				}
 				&:hover{
 					background: $green;
@@ -712,24 +762,11 @@ body.love-family{
 				}
 			}
 			.options-panel{
-				padding-top: 92px;
-    		padding-left: 14px;
-    		padding-right: 80px;
-    		h2{
-    			margin-top: 0;
-    			line-height: 1.2em;
-    			margin-bottom: 46px;
-    			text-decoration: underline;
-					color: $green;
-					font-size: em(60);				
+				@media (min-width: $screen-md-min){
+					padding-left: em(14);
+    			padding-right: em(80);
     		}
-    		.intro{
-					font-size: em(24);
-					margin-bottom: 47px;
-					line-height: 1.2em;
-					color: $grey;
-				}
-				.options{
+    		.options{
 					margin-bottom: 40px;;
 				}
 				.product{

@@ -207,8 +207,8 @@ jQuery(function($){
 			var spot = $(obj).data("spot");
 			$(obj).toggleClass('active');
 			if($(obj).hasClass('active')){
-				var top = $(obj).position().top + $(obj).height()+10;
-				var left = $(obj).position().left - ($('.hotspot-data.spot-'+spot).width()/2) + ($(obj).height()/2);
+				var top = $(obj).position().top + $(obj).outerHeight()+10;
+				var left = $(obj).position().left - ($('.hotspot-data.spot-'+spot).outerWidth()/2) + ($(obj).outerHeight()/2);
 				$('.hotspot-data.spot-'+spot).css(
 				{
 					top: top,
@@ -235,13 +235,13 @@ jQuery(function($){
 			$panel.find('.share-button.pinterest').attr('href','https://pinterest.com/pin/create/bookmarklet/?media='+data.img+'&url='+data.encodedUrl+'&is_video='+data.is_video+'&description='+data.title);
 			$panel.find('.share-button.email').attr('href','mailto:?subject='+data.title+'&body=Check this out: '+data.url);
 
-			var top = $(obj).offset().top + $(obj).height()/2;
-			var left = $(obj).offset().left + ($(obj).width()/2);
-			if(left + ($panel.width()/2) > $(window).width()){
-				left = $(window).width() - ($panel.width()/2) - 30;
+			var top = $(obj).offset().top + $(obj).outerHeight()/2 - $panel.outerHeight()/2;
+			var left = $(obj).offset().left + ($(obj).outerWidth()/2) - $panel.outerWidth()/2;
+			if(left + ($panel.outerWidth()/2) > $(window).width()){
+				left = $(window).width() - $panel.outerWidth() - 30;
 			}
-			if(left - ($panel.width()/2)  < 0){
-				left = 30 + ($panel.width()/2);	
+			if(left < 0){
+				left = 30;	
 			}
 			TweenMax.to($panel,0,{ scale: 0, top: top, left: left });
 			TweenMax.to($panel,0.5,{ display:'block', scale: 1, ease: Back.easeOut});

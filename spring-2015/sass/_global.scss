@@ -70,7 +70,7 @@ body.spring-2015{
 		overflow: hidden;
 		padding-bottom: 40px;
 		font-size: 12px;
-		line-height: 1;
+		line-height: 1.1;
 		font-family: $font-family;
 		-webkit-font-smoothing: antialiased;
 	  -moz-osx-font-smoothing: grayscale;
@@ -90,13 +90,15 @@ body.spring-2015{
 		.slick-slide{
 			outline: none !important;
 		}
-	}
-	.main-content{
-		max-width: 1520px;
-		margin: 0 auto;
-		position: relative;
-	  padding: 0 30px;
-	  
+		.container{
+			padding: 0 30px;
+		}
+		.main-content{
+			max-width: 1520px;
+			margin: 0 auto;
+			position: relative;
+		  padding: 0 30px;
+		}
 	}
 	@media only screen and (max-device-width:$screen-xs-max) {
 	    input[type="text"]:focus, input[type="number"]:focus,
@@ -132,7 +134,7 @@ body.spring-2015{
 			font-weight: 700;
 			i{
 				&.iconr-share{
-					font-size: 1.7em;
+					font-size: em(50);
 				}
 				&.iconr-email{
 					font-size: 2em;

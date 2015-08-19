@@ -233,6 +233,10 @@ body.love-calm{
 		}
 		.products-grid{
 			background: url(../images/calm/3-water-therapy/background.jpg) no-repeat center center;
+			background-size: 80%;
+			@media (min-width: $screen-md-min){
+				background-size: inherit;
+			}
 			max-width: 1200px;
 			margin: 0 auto;
 			.product{

@@ -23,8 +23,11 @@ body.spring-2015{
 			}
 			.image-wrap{
 				position: relative;
-				margin-bottom: 85px;
 				padding-right: em(140);
+				margin-bottom: 10px;
+				@media (min-width: $screen-md-min){
+					margin-bottom: 85px;
+				}
 				.image{
 					position: relative;
 				}

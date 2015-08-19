@@ -385,6 +385,7 @@ body.love-calm{
 		}
 	}
 	#colour-picker{
+		overflow: hidden;
 		.image-wrap{
 			position: relative;
 			@media (min-width: $screen-md-min){

@@ -1,53 +1,55 @@
 body.spring-2015{
 	#favourites{
 		.banner{
-			@media (min-width: $screen-md-min){
+			@media (min-width: $screen-lg-min){
 				padding-left: em(118);
-			}
-			.text{
-				@media (min-width: $screen-md-min){
-					position: absolute;
-					left: em(-255);
-				}
-				h2{
-					font-size: em(50);
-					color: $black;
-					text-decoration: underline;
-					margin-top: 0;
-					margin-bottom: 40px;
-					@media (min-width: $screen-md-min){
-						margin-top: 20px;
-						margin-bottom: 0;
-					}
-				}
 			}
 			.image-wrap{
 				position: relative;
 				padding-right: em(140);
 				margin-bottom: 10px;
-				@media (min-width: $screen-md-min){
-					margin-bottom: 85px;
-				}
+				margin-bottom: em(85);
 				.image{
 					position: relative;
 				}
-				.description{
+				.text{
+					@include clearfix;
 					position: absolute;
 					bottom: 5%;
 					right: 0;
-					p{
-						background: $pink;
-						color: $white;
-						margin: 0;
-						padding: 5px 8px;
-						display: block;
-						float: left;
-						clear: both;
-						font-weight: bold;
-						font-size: em(30);
-						line-height: 1em;
+					@media (min-width: $screen-md-min){
+						right: 2%;
 					}
-				}
+					@media (min-width: $screen-lg-min){
+						bottom: 5%;
+						right: 17%;
+					}
+					h2{
+						float: right;
+						font-size: em(70);
+						margin-bottom: em(70,70);
+						color: $black;
+						text-decoration: underline;
+						margin-top: 0;						
+					}
+					.description{
+						float: right;
+						margin-right: 20px;
+						clear: both;
+						p{
+							background: $pink;
+							color: $white;
+							margin: 0;
+							padding: 5px 8px;
+							display: block;
+							float: left;
+							clear: both;
+							font-weight: bold;
+							font-size: em(30);
+							line-height: 1em;
+						}
+					}
+				}				
 				.we-love{
 					position: absolute;
 					left: 50%;
@@ -57,11 +59,10 @@ body.spring-2015{
 			}
 		}
 		.product-wrap{
-			min-height: 503px;
 			border-top: 1px solid $grey;
 			&:nth-child(1),
 			&:nth-child(2),
-			&:nth-child(4){
+			&:nth-child(3){
 				border-top: none;
 			}
 			.product{

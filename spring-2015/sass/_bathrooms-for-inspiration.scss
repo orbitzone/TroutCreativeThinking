@@ -1,5 +1,13 @@
 body.spring-2015{
 	#bathrooms-for-inspiration{
+		h2{
+			color: $pale-blue;
+			text-decoration: underline;
+			margin-top: 0;
+			margin-bottom: em(50,60);
+			line-height: 1.2em;
+			font-size: em(60);			
+		}
 		.bathrooms-showcase-section{
 			margin-bottom: 40px;
 		}
@@ -27,6 +35,7 @@ body.spring-2015{
 					padding: 0;
 					margin: 0;
 					color: $white;
+					z-index: 0;
 					@extend %button-clear;
 					outline: none;
 					height: auto;
@@ -55,6 +64,7 @@ body.spring-2015{
 				.hotspot-data{
 					position: absolute;
 					display: none;
+					z-index: 1;
 					&.spot-1{
 						top: 22%;
 				    left: 15%;

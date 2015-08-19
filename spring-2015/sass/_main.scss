@@ -145,10 +145,22 @@ body.spring-2015{
 		background-image: url(../images/we-love-sprite.png);
 		background-size: 187.5px 65px;
 		background-repeat: no-repeat;
-		@media (min-width: $screen-sm-min){
+		@media (min-width: $screen-md-min){
 			width: 125px;
 			height: 130px;
 			background-size: 375px 130px;
+		}
+		&.calm{
+				background-position: -62px 0;
+				@media (min-width: $screen-md-min){
+					background-position: -125px 0;	
+				}
+		}
+		&.luxury{
+			background-position: -124px 0;
+			@media (min-width: $screen-md-min){
+				background-position: -250px 0;	
+			}
 		}
 	}
 	.products-slide, 
@@ -179,7 +191,6 @@ body.spring-2015{
 		i{
 			color: $pink;
 			font-size: em(51);
-			line-height: em(51);
 			&:hover{
 				color: $green;
 			}

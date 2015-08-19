@@ -421,6 +421,16 @@ body.love-family{
 			.intro{
 				position: relative;
 				text-align: center;
+				.image{
+					margin: 0 auto;
+					max-width: 120px;
+					@media (min-width: $screen-sm-min){
+						max-width: 250px;
+					}
+					@media (min-width: $screen-md-min){
+						max-width: 500px;
+					}
+				}
 				.text{
 					position: absolute;
 					width: 500px;
@@ -437,7 +447,7 @@ body.love-family{
 						border: 3px solid $dark-grey;
 						color: $dark-grey;
 						text-transform: uppercase;
-						padding: 30px;
+						padding: em(30);
 						background: none;
 						font-weight: 700;
 						font-size: 1em;
@@ -447,7 +457,7 @@ body.love-family{
 		}
 		.lamp{
 			position: absolute;
-			top: -30px;
+			top: -40px;
 			left: 0;
 		}
 		.relationship-bliss{
@@ -640,7 +650,7 @@ body.love-family{
 				padding-top: em(20);
     		padding-left: em(14);
     		padding-right: em(80);
-    		@media (min-width: $screen-md-min){
+    		@media (min-width: $screen-lg-min){
     			padding-top: em(92);
     		}
 				h2{
@@ -662,16 +672,18 @@ body.love-family{
 				background-size: cover;
 				background-repeat: no-repeat;
 				background-position: center 50px;
-
+				
 				text-align: center;
 				position: relative;
 				min-height: 320px;
 				@media (min-width: $screen-sm-min){
 					min-height: 420px;
 				}
-				@media (min-width: $screen-md-min){
+				@media (min-width: $screen-lg-min){
 					margin-right: 94px;
 					min-height: 1000px;
+					top: -360px;
+					margin-bottom: -360px;
 				}
 				button{
 					position: absolute;

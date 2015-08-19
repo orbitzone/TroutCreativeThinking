@@ -237,7 +237,7 @@ jQuery(function($){
 
 			var top = $(obj).offset().top + $(obj).outerHeight()/2 - $panel.outerHeight()/2;
 			var left = $(obj).offset().left + ($(obj).outerWidth()/2) - $panel.outerWidth()/2;
-			if(left + ($panel.outerWidth()/2) > $(window).width()){
+			if(left + $panel.outerWidth() > $(window).width()){
 				left = $(window).width() - $panel.outerWidth() - 30;
 			}
 			if(left < 0){

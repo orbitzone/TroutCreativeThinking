@@ -454,7 +454,7 @@ jQuery(function($){
 	if($('body').hasClass('homepage')){
 		var data = { section: 'homepage'};
 		var url = $(this).attr('href');
-		history.replaceState(data, null, url);
+		history.pushState(data, null, url);
 		homePage.init();	
 	}
 	if($('body').hasClass('love-family')){

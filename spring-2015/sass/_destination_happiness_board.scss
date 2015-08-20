@@ -1,0 +1,33 @@
+body.spring-2015{
+	#destination-happiness{
+		position: fixed;
+		top: 20%;
+		left: 0;
+		z-index: 10;
+		cursor: pointer;
+		img{
+			max-width: 113px;
+			@media (min-width: $screen-md-min){
+				max-width: 100%;
+			}
+		}
+	}
+	#destination-happiness-content{
+		background: $green;
+		position: fixed;
+		top: 0;
+		left: -100%;
+		width: 100%;
+		height: 100%;
+		z-index: 9;
+		text-align: center;
+		.dh-content{
+			height: 100%;
+			overflow: auto;
+			color: $white;
+			a{
+				color: $white;
+			}
+		}
+	}
+}

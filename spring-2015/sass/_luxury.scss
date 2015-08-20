@@ -11,21 +11,6 @@ body.love-luxury{
 	}
 	#collection-intro{
 		margin-bottom: em(50);
-		.plant{
-			position: absolute;
-			left: 0;
-			top: 0;
-			max-width: 180px;
-			@media (min-width: $screen-sm-min){
-				max-width: 120px;
-			}
-			@media (min-width: $screen-md-min){
-				max-width: 180px;	
-			}
-			@media (min-width: $screen-lg-min){
-				max-width: 384px;
-			}
-		}	
 		header{
 			background: none;
 			position: relative;
@@ -40,16 +25,16 @@ body.love-luxury{
 				margin-right: 0;
 			}
 			h1{
-				color: $white;
+				color: $gold;
 				position: absolute;
-				top: 30.85106383%;
-				right: 27.30263%;
+				bottom: 20%;
+				left: 22.30263%;
 				text-decoration: underline;
 				font-size: em(40);
 				@media (min-width: $screen-sm-min){
 					font-size: em(90);
-					top: 30.85106383%;
-					right: 27.30263%;
+					bottom: 20%;
+					left: 22.30263%;
 				}				
 			}							
 		}
@@ -58,14 +43,14 @@ body.love-luxury{
 			color: $pale-blue;
 			.hanging-toy{
 				position: absolute;
-				right: 43%;
+				left: 10%;
 				top: 0;
 				z-index: 2;
 				@media (min-width: $screen-md-min){
-					right: 38%;
+					left: 10%;
 				}
 				@media (min-width: $screen-lg-min){
-					right: 33%;
+					left: 10%;
 				}
 				img{
 					max-width: 48px;

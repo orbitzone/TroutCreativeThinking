@@ -31,21 +31,66 @@ jQuery(function($){
 	moodboard = {
 		init: function(){
 			$(document).on('click','.add-to-moodboard',function(){
-				console.log('added');
+				moodboard.add(this);
 				return false;
 			});
+			$(document).on('click','#destination-happiness',function(){
+				if($(this).hasClass('active')){
+					$(this).removeClass('active');
+					moodboard.hide();
+				}else{
+					$(this).addClass('active');
+					moodboard.show();
+				}
+				return false;
+			});
+			moodboard.resize();
+			$(window).on('resize',function(){
+				moodboard.resize();
+			});
 		},
-		add: function(){
-
+		add: function(obj){
+			$(obj).toggleClass('added');
 		},
 		remove: function(){
 
 		},
 		show: function(){
-
+			TweenMax.to($('#destination-happiness'),0.5,{ left: -($('#destination-happiness').width() * 0.637168142), ease: Back.easeIn });
+			TweenMax.to($('#destination-happiness-content'),0.5,{ left: 0, ease: Power2.easeIn  });
 		},
 		hide: function(){
-
+			TweenMax.to($('#destination-happiness'),0.5,{ left: 0, ease: Back.easeIn });
+			TweenMax.to($('#destination-happiness-content'),0.5,{ left: -$('#destination-happiness-content').width()});
+		},
+		resize: function(){
+			if($(window).width()> 1200){
+				//Desktop
+				$('#destination-happiness-content').width(900);
+			}else{
+					if($(window).width() > 992){
+						//Tablet landscape
+						$('#destination-happiness-content').width(800);
+					}else{
+						if($(window).width() > 768){
+							//Tablet portrait
+							$('#destination-happiness-content').width(600);
+						}else{
+							//Mobile
+							$('#destination-happiness-content').width($(window).width());
+						}
+					}
+			}
+			if($('#destination-happiness').hasClass('active')){
+				$('#destination-happiness').css(
+				{
+					left: -($('#destination-happiness').width() * 0.637168142)
+				});
+			}else{
+				$('#destination-happiness-content').css({
+					left: -$('#destination-happiness-content').width()
+				});
+			}
 		}
 	};
 	homePage = {

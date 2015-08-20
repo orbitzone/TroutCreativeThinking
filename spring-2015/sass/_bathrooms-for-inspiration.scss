@@ -2,7 +2,6 @@ body.spring-2015{
 	#bathrooms-for-inspiration{
 		h2{
 			color: $pale-blue;
-			text-decoration: underline;
 			margin-top: 0;
 			margin-bottom: em(50,60);
 			line-height: 1.2em;
@@ -172,6 +171,9 @@ body.spring-2015{
 				margin: 0;
 				margin-bottom: 20px; 
 				text-decoration: underline;				
+			}
+			.product{
+				padding-bottom: em(20);
 			}				
 		}
 	}

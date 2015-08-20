@@ -1,7 +1,9 @@
+var moodboard = {}
+var homePage = {};
 var loveFamily = {};
 var loveLuxury = {};
 var loveCalm = {};
-var homePage = {};
+
 $.fn.imagesLoaded = function () {
 
     $imgs = this.find('img[src!=""]');
@@ -26,7 +28,26 @@ $.fn.imagesLoaded = function () {
 
 };
 jQuery(function($){
+	moodboard = {
+		init: function(){
+			$(document).on('click','.add-to-moodboard',function(){
+				console.log('added');
+				return false;
+			});
+		},
+		add: function(){
 
+		},
+		remove: function(){
+
+		},
+		show: function(){
+
+		},
+		hide: function(){
+
+		}
+	};
 	homePage = {
 		init: function(){
 			$.ajax({
@@ -301,6 +322,14 @@ jQuery(function($){
   					prevArrow: "<button type=\"button\" class=\"arrow-prev\"><i class=\"iconr-arrow-left\"></i></button>",
   					nextArrow: "<button type=\"button\" class=\"arrow-next\"><i class=\"iconr-arrow-right\"></i></button>",
 					 	responsive: [
+					 		{
+					      breakpoint: 992,
+					      settings: {
+					        arrows: false,
+					        slidesToShow: 3,
+					        slidesToScroll: 3
+					      }
+					    },
 					    {
 					      breakpoint: 768,
 					      settings: {
@@ -326,7 +355,56 @@ jQuery(function($){
 						$('#bathrooms-for-inspiration button.circular').matchHeight();
 					});
 					$(window).resize();
-					//loveFamily.circularGallery();
+					loveLuxury.showers();
+				}
+			});
+		},
+		showers: function(){
+			loveLuxury.circularGallery();
+		},
+		circularGallery: function(){
+			loveLuxury.products();
+		},
+		products: function(){
+			loveLuxury.hotelInspiredLook();
+		},
+		hotelInspiredLook: function(){
+			$.ajax({
+				cache: false,
+				url: 'pages/luxury/hotel-inspired-look.html',
+				success: function(data){
+					$('#main-content').append(data);
+					$('#hotel-inspired-look .slider').slick({
+						slidesToShow: 1,
+  					slidesToScroll: 1,
+  					infinite: false,
+  					swipe: false,
+  					prevArrow: "<button type=\"button\" class=\"arrow-prev\"><i class=\"iconr-arrow-left\"></i></button>",
+  					nextArrow: "<button type=\"button\" class=\"arrow-next\"><i class=\"iconr-arrow-right\"></i></button>"					 	
+					});
+					loveLuxury.favourites();
+				}
+			});			
+		},
+		favourites: function(){
+			$.ajax({
+				cache: false,
+				url: 'pages/luxury/favourites.html',
+				success: function(data){
+					$('#main-content').append(data).imagesLoaded().then(function(){
+						$('#favourites .product-wrap').matchHeight();
+						$(window).resize();
+					});
+					loveLuxury.footer();
+				}
+			});
+		},
+		footer: function(){
+			$.ajax({
+				cache: false,
+				url: 'pages/luxury/footer-ads.html',
+				success: function(data){
+					$('#main-content').append(data);
 				}
 			});
 		}
@@ -452,19 +530,6 @@ jQuery(function($){
 			});
 		}
 	};
-	if($('body').hasClass('homepage')){
-		homePage.init();	
-	}
-	if($('body').hasClass('love-family')){
-		loveFamily.init();
-	}
-	if($('body').hasClass('love-luxury')){
-		loveLuxury.init();
-	}
-	if($('body').hasClass('love-calm')){
-		loveCalm.init();
-	}	
-
 	$(document).on('click','.load_page',function(){
 		var data = { section: $(this).data('section')};
 		var url = $(this).attr('href');
@@ -504,22 +569,40 @@ jQuery(function($){
 	$(document).on('mouseout','.hex',function(){
 		TweenMax.to($(this),0.5,{scale: 1});
 	});
-	$('body .ocmain-wrapper').append('<div id="share-hex" class="share-hex">'
-		+'<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"'
-+'			 viewBox="0 0 52 52" enable-background="new 0 0 52 52" xml:space="preserve" width="245" height="265">'
-+'		 	<path class="bg" d="M3.2,17.3c0-2.4,1.7-5.4,3.8-6.6L22.2,2c2.1-1.2,5.6-1.2,7.7,0L45,10.7c2.1,1.2,3.8,4.2,3.8,6.6v17.4'
-+'c0,2.4-1.7,5.4-3.8,6.6L29.8,50c-2.1,1.2-5.6,1.2-7.7,0L7,41.3c-2.1-1.2-3.8-4.2-3.8-6.6V17.3z"/>'
-+'			<path class="border" d="M26,51.5c-1.5,0-3-0.3-4.1-1L6.8,41.8c-2.2-1.3-4.1-4.4-4.1-7V17.3c0-2.6,1.8-5.8,4.1-7l15.1-8.7c1.1-0.6,2.5-1,4.1-1'
-+'s3,0.3,4.1,1l15.1,8.7c2.2,1.3,4.1,4.5,4.1,7v17.4c0,2.6-1.8,5.8-4.1,7l-15.1,8.7C29,51.1,27.5,51.5,26,51.5z M26,1.5'
-+'c-1.4,0-2.6,0.3-3.6,0.8L7.3,11.1c-1.9,1.1-3.6,3.9-3.6,6.2v17.4c0,2.2,1.6,5.1,3.6,6.2l15.1,8.7c0.9,0.5,2.2,0.8,3.6,0.8'
-+'s2.6-0.3,3.6-0.8l15.1-8.7c1.9-1.1,3.6-3.9,3.6-6.2V17.3c0-2.2-1.6-5.1-3.6-6.2L29.6,2.4C28.6,1.8,27.4,1.5,26,1.5z"/>							'
-+'		</svg>'
-+'		<a href="#" target="_blank" class="share-button facebook"><div class="circle"><i class="iconr-facebook"></i></div></a>'
-+'		<a href="#" target="_blank" class="share-button twitter"><div class="circle"><i class="icon-twitter"></i></div></a>'
-+'		<button type="button" class="share-button share-close" onclick="loveFamily.closeShareBoard(this)"><i class="iconr-minus-dotted"></i></button>'
-+'		<a href="#" target="_blank" class="share-button pinterest"><div class="circle"><i class="iconr-pinterest"></i></div></a>'
-+'		<a href="#" class="share-button email"><div class="circle"><i class="iconr-email"></i></div></a>'
-+'	</div>'
-+'</div>');
-TweenMax.to($('#share-hex'),0,{ scale: 0, opacity:1});
+		$('body .ocmain-wrapper').append('<div id="share-hex" class="share-hex">'
+			+'<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"'
+	+'			 viewBox="0 0 52 52" enable-background="new 0 0 52 52" xml:space="preserve" width="245" height="265">'
+	+'		 	<path class="bg" d="M3.2,17.3c0-2.4,1.7-5.4,3.8-6.6L22.2,2c2.1-1.2,5.6-1.2,7.7,0L45,10.7c2.1,1.2,3.8,4.2,3.8,6.6v17.4'
+	+'c0,2.4-1.7,5.4-3.8,6.6L29.8,50c-2.1,1.2-5.6,1.2-7.7,0L7,41.3c-2.1-1.2-3.8-4.2-3.8-6.6V17.3z"/>'
+	+'			<path class="border" d="M26,51.5c-1.5,0-3-0.3-4.1-1L6.8,41.8c-2.2-1.3-4.1-4.4-4.1-7V17.3c0-2.6,1.8-5.8,4.1-7l15.1-8.7c1.1-0.6,2.5-1,4.1-1'
+	+'s3,0.3,4.1,1l15.1,8.7c2.2,1.3,4.1,4.5,4.1,7v17.4c0,2.6-1.8,5.8-4.1,7l-15.1,8.7C29,51.1,27.5,51.5,26,51.5z M26,1.5'
+	+'c-1.4,0-2.6,0.3-3.6,0.8L7.3,11.1c-1.9,1.1-3.6,3.9-3.6,6.2v17.4c0,2.2,1.6,5.1,3.6,6.2l15.1,8.7c0.9,0.5,2.2,0.8,3.6,0.8'
+	+'s2.6-0.3,3.6-0.8l15.1-8.7c1.9-1.1,3.6-3.9,3.6-6.2V17.3c0-2.2-1.6-5.1-3.6-6.2L29.6,2.4C28.6,1.8,27.4,1.5,26,1.5z"/>							'
+	+'		</svg>'
+	+'		<a href="#" target="_blank" class="share-button facebook"><div class="circle"><i class="iconr-facebook"></i></div></a>'
+	+'		<a href="#" target="_blank" class="share-button twitter"><div class="circle"><i class="icon-twitter"></i></div></a>'
+	+'		<button type="button" class="share-button share-close" onclick="loveFamily.closeShareBoard(this)"><i class="iconr-minus-dotted"></i></button>'
+	+'		<a href="#" target="_blank" class="share-button pinterest"><div class="circle"><i class="iconr-pinterest"></i></div></a>'
+	+'		<a href="#" class="share-button email"><div class="circle"><i class="iconr-email"></i></div></a>'
+	+'	</div>'
+	+'</div>');
+
+	TweenMax.to($('#share-hex'),0,{ scale: 0, opacity:1});
+
+	function init(){
+		moodboard.init();
+		if($('body').hasClass('homepage')){
+			homePage.init();	
+		}
+		if($('body').hasClass('love-family')){
+			loveFamily.init();
+		}
+		if($('body').hasClass('love-luxury')){
+			loveLuxury.init();
+		}
+		if($('body').hasClass('love-calm')){
+			loveCalm.init();
+		}	
+	};
+	init();
 });

@@ -196,16 +196,42 @@ body.spring-2015{
 			}
 		}
 	}
-	button.shop_now{
+	.button-mood-shop{
+		@include border-radius(4px);
+		@include box-shadow(1px 1px 3px rgba(0,0,0,0.3));
+		display: inline-block;
+		clear: both;		
+	}
+	button.add-to-moodboard{
+		background: $dark-green;
+		color: $white;
+		@include appearance(none);
+		border: none;
+		font-size: 1em;
+		font-weight: 700;
+		padding: em(14) em(12);
+		@include border-radius(4px 0px 0px 4px);
+		line-height: 1em;
+		span{
+			margin-left: em(10);
+			display: none;
+		}
+		float: left;
+		border-right: 2px solid $white;
+	}
+	button.shop-now{
 		background: $green;
 		color: $white;
 		@include appearance(none);
 		border: none;
 		font-size: 1em;
 		font-weight: 700;
-		padding: 18px 26px;
-		@include border-radius(4px);
+		padding: em(14) em(12);
+		@include border-radius(0px 4px 4px 0px);
 		line-height: 1em;
-		@include box-shadow(1px 1px 3px rgba(0,0,0,0.3));
+		span{
+			margin-right: em(10);
+		}
+		float: left;
 	}
 }

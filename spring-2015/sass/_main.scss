@@ -212,12 +212,17 @@ body.spring-2015{
 		padding: em(14) em(12);
 		@include border-radius(4px 0px 0px 4px);
 		line-height: 1em;
-		span{
+		span.button-text{
 			margin-left: em(10);
 			display: none;
 		}
 		float: left;
 		border-right: 2px solid $white;
+		&:hover{
+			span.button-text{
+				display: inline;
+			}
+		}
 	}
 	button.shop-now{
 		background: $green;
@@ -229,7 +234,7 @@ body.spring-2015{
 		padding: em(14) em(12);
 		@include border-radius(0px 4px 4px 0px);
 		line-height: 1em;
-		span{
+		span.button-text{
 			margin-right: em(10);
 		}
 		float: left;

@@ -2,29 +2,16 @@ body.homepage{
 	#banner{
 		position: relative;
 		margin-top: 40px;
-		overflow: hidden;
-		.destination-happiness{
-			width: 280px;
-			@extend %center-align;
-			rect.green{
-				fill: $green;				
-			}
-			rect.white{
-				fill: $white;
-			}
-			@media (min-width: $screen-sm-min){
-				width: 280px;
-			}
-			@media (min-width: $screen-md-min){
-				width: 337px;
-			}			
+		.image{
+			overflow: hidden;
 		}
-		.span6{
-			@media (min-width: $screen-sm-min){
-				width: 50%;
-				margin: 0;
-				padding: 0;
-			}
+		.destination-happiness{
+			position: absolute;
+			left: 22%;
+			bottom: 0;
+			width: 30%;
+			@include transform(translateY(20%));
+						
 		}
 	}
 	#homepage{
@@ -36,16 +23,15 @@ body.homepage{
 				font-weight: 700;
 				line-height: 1em;
 				z-index: 3;
-				font-size: em(16);
-				padding-left: 30px;
-				padding-top: 32px;
-				@media (min-width: $screen-sm-min){
-					font-size: em(30);
-					padding-left: 210px;
-					padding-top: 138px;
-				}
+				font-size: em(30);
+				padding-left: em(30,30);
+				padding-top: em(30,30);
+				padding-right: em(50,30);
 				@media (min-width: $screen-md-min){
-					font-size: em(50);					
+					position: absolute;
+					font-size: em(50);
+					padding-left: em(30,50);
+					padding-top: em(30,50);
 				}
 			}
 			p{
@@ -113,29 +99,23 @@ body.homepage{
 	.hex-elements{
 		position: relative;
 		z-index: 2;
-		width: 320px;
-		margin:  0 auto;
-		height: 1600px;
-		@media (min-width: $screen-sm-min){
-		  position: relative;
-		  width: 100%;
-  		right: -100px;
-  		height: 2240px;
+		min-height: 1600px;
+		max-width: 1194px;
+		margin: 0 auto;
+		margin-top: 40px;
+		@media (min-width: $screen-xs-min){
+			@include transform-origin(top right);
+			@include transform(scale(0.6));
+			min-height: 600px;
+		
 		}
 		@media (min-width: $screen-md-min){
-		  position: relative;
-		  width: 100%;
-  		right: -100px;
-  		height: 2240px;
+			@include transform(none);
+			min-height: 1600px;
+		
 		}
-		@media (min-width: $screen-lg-min){
-	    width: 100%;
-	    top: -300px;
-	    left: 0;	    
-	    right: inherit;
-	    height: 2100px;
-  	}
-  	.tap{
+			
+		.tap{
 			position: absolute;
 			right: 133px;
 	    top: 32px;
@@ -148,7 +128,20 @@ body.homepage{
 		}
     .hex{
 			line-height: 1em;
+			display: block;
+			vertical-align: middle;
+			margin-right: 10px;
+			margin-left: 10px;
 			position: absolute;
+			a{
+				display: block;
+				position: relative;
+			}
+			svg{
+				position: relative;
+				top: 50%;
+				@include transform(translateY(-50%));
+			}
 			&.pink{
 				rect{
 					fill: $pink;
@@ -179,325 +172,41 @@ body.homepage{
 					text-transform: uppercase;
 				}
 			}
-			&.hex-1{
-				right: 30px;
-    		top: 140px;
-    		@media (min-width: $screen-sm-min){
-    			right: 163px;
-    			top: 236px;
-    		}
-    		svg{
-    			width: $hex-big-xs-wd;
+			&.lg{
+				margin-bottom: 40px;
+				a{
+					height: 180px;
+				}
+				svg{
+					width: $hex-big-xs-wd;
     			height: $hex-big-xs-hg;	
-    			@media (min-width: $screen-sm-min){
+					@media (min-width: $screen-xs-min){
     				width: $hex-big-sm-wd;
     				height: $hex-big-sm-hg;	
     			}
-    		}
-    		.text{
+				}
+				.text{
     			line-height: em(20);
     			font-size: em(20);
     			border-bottom: 4px solid $white;
     			@extend %center-align;
-    			@media (min-width: $screen-sm-min){
+    			@media (min-width: $screen-xs-min){
     				font-size: em(36);
     			}
     		}
 			}
-			&.hex-2{
-				right: 133px;
-    		top: 288px;
-    		font-size: em(10);
-    		@media (min-width: $screen-sm-min){
-    			font-size: 1em;
-    			width: auto;
-	    		right: 345px;
-	    		top: 503px;
-    		}
-    		svg{
-    			width: $hex-small-xs-wd;
+			&.sm{
+				a{
+					height: 125px;
+				}
+				svg{
+					width: $hex-small-xs-wd;
     			height: $hex-small-xs-hg;	
-    			@media (min-width: $screen-sm-min){
+					@media (min-width: $screen-xs-min){
     				width: $hex-small-sm-wd;
     				height: $hex-small-sm-hg;	
     			}
-    		}
-			}
-			&.hex-3{
-				right: 205px;
-    		top: 392px;
-    		font-size: em(11);
-    		@media (min-width: $screen-sm-min){
-    			font-size: em(18);
-	    		right: 477px;
-    			top: 686px;
-    		}
-    		svg{
-    			width: $hex-small-xs-wd;
-    			height: $hex-small-xs-hg;	
-    			@media (min-width: $screen-sm-min){
-    				width: $hex-small-sm-wd;
-    				height: $hex-small-sm-hg;	
-    			}
-    		}
-			}
-			&.hex-4{
-				right: 78px;
-    		top: 400px;
-    		font-size: em(12);
-    		@media (min-width: $screen-sm-min){
-    			right: 247px;
-	    		top: 704px;
-	    		font-size: em(20);
-    		}
-    		svg{
-    			width: $hex-small-xs-wd;
-    			height: $hex-small-xs-hg;	
-    			@media (min-width: $screen-sm-min){
-    				width: $hex-small-sm-wd;
-    				height: $hex-small-sm-hg;	
-    			}
-    		}
-			}
-			&.hex-5{
-				right: 20px;
-    		top: 506px;
-    		font-size: em(12);
-    		@media (min-width: $screen-sm-min){
-    			right: 890px;
-	    		top: 931px;
-	    		font-size: em(20);
-    		}
-    		svg{
-    			width: $hex-small-xs-wd;
-    			height: $hex-small-xs-hg;	
-    			@media (min-width: $screen-sm-min){
-    				width: $hex-small-sm-wd;
-    				height: $hex-small-sm-hg;	
-    			}
-    		}    		
-			}
-			&.hex-6{
-				right: 138px;
-    		top: 510px;
-    		@media (min-width: $screen-sm-min){
-    			width: auto;
-    			right: 578px;
-    			top: 867px;
-    		}
-    		svg{
-    			width: $hex-big-xs-wd;
-    			height: $hex-big-xs-hg;	
-    			@media (min-width: $screen-sm-min){
-    				width: $hex-big-sm-wd;
-    				height: $hex-big-sm-hg;	
-    			}
-    		}
-    		.text{
-    			line-height: em(20);
-    			font-size: em(20);
-    			border-bottom: 4px solid $white;
-    			@extend %center-align;
-    			@media (min-width: $screen-sm-min){
-    				font-size: em(36);
-    			}
-    		}
-			}
-			&.hex-7{
-				right: 203px;
-    		top: 676px;
-    		font-size: em(12);
-    		@media (min-width: $screen-sm-min){
-    			right: 362px;
-    			top: 903px;
-	    		font-size: em(20);
-    		}
-    		svg{
-    			width: $hex-small-xs-wd;
-    			height: $hex-small-xs-hg;	
-    			@media (min-width: $screen-sm-min){
-    				width: $hex-small-sm-wd;
-    				height: $hex-small-sm-hg;	
-    			}
-    		}    		
-			}
-			&.hex-8{
-				right: 81px;
-    		top: 658px;
-    		font-size: em(10);
-    		@media (min-width: $screen-sm-min){
-    			right: 788px;
-    			top: 1120px;
-	    		font-size: em(14);
-    		}
-    		svg{
-    			width: $hex-small-xs-wd;
-    			height: $hex-small-xs-hg;	
-    			@media (min-width: $screen-sm-min){
-    				width: $hex-small-sm-wd;
-    				height: $hex-small-sm-hg;	
-    			}
-    		}   
-    		.image{
-    			width: 80px;
-    			height: 30px;
-    			overflow: hidden;
-    			@media (min-width: $screen-sm-min){
-	    			width: 112px;
-	    			height: 43px;
-    			}    			
-    		}
-			}
-			&.hex-9{
-				right: 16px;
-    		top: 770px;
-    		font-size: em(11);
-    		@media (min-width: $screen-sm-min){
-    			right: 511px;
-    			top: 1152px;
-	    		font-size: em(20);
-    		}
-    		svg{
-    			width: $hex-small-xs-wd;
-    			height: $hex-small-xs-hg;	
-    			@media (min-width: $screen-sm-min){
-    				width: $hex-small-sm-wd;
-    				height: $hex-small-sm-hg;	
-    			}
-    		}
-			}
-			&.hex-10{
-				right: 137px;
-    		top: 781px;
-    		font-size: em(11);
-    		@media (min-width: $screen-sm-min){
-    			right: 675px;
-    			top: 1309px;
-	    		font-size: em(20);
-    		}
-    		svg{
-    			width: $hex-small-xs-wd;
-    			height: $hex-small-xs-hg;	
-    			@media (min-width: $screen-sm-min){
-    				width: $hex-small-sm-wd;
-    				height: $hex-small-sm-hg;	
-    			}
-    		}				
-			}
-			&.hex-11{
-				right: 144px;
-    		top: 1039px;
-    		font-size: em(12);
-    		@media (min-width: $screen-sm-min){
-    			font-size: em(20);
-	    		right: 378px;
-    			top: 1342px;
-    		}
-    		svg{
-    			width: $hex-small-xs-wd;
-    			height: $hex-small-xs-hg;	
-    			@media (min-width: $screen-sm-min){
-    				width: $hex-small-sm-wd;
-    				height: $hex-small-sm-hg;	
-    			}
-    		}
-			}
-			&.hex-12{
-				right: 49px;
-    		top: 883px;
-    		@media (min-width: $screen-sm-min){
-    			right: 748px;
-    			top: 1498px;
-    		}
-    		svg{
-    			width: $hex-big-xs-wd;
-    			height: $hex-big-xs-hg;	
-    			@media (min-width: $screen-sm-min){
-    				width: $hex-big-sm-wd;
-    				height: $hex-big-sm-hg;	
-    			}
-    		}
-    		.text{
-    			line-height: em(20);
-    			font-size: em(20);
-    			border-bottom: 4px solid $white;
-    			@extend %center-align;
-    			@media (min-width: $screen-sm-min){
-    				font-size: em(36);
-    			}
-    		}    		
-			}
-			&.hex-13{
-				right: 20px;
-    		top: 1037px;
-    		font-size: em(12);
-    		@media (min-width: $screen-sm-min){
-    			font-size: em(20);
-	    		right: 531px;
-    			top: 1529px;
-    		}
-    		svg{
-    			width: $hex-small-xs-wd;
-    			height: $hex-small-xs-hg;	
-    			@media (min-width: $screen-sm-min){
-    				width: $hex-small-sm-wd;
-    				height: $hex-small-sm-hg;	
-    			}
-    		}
-			}
-			&.hex-14{
-				right: 204px;
-    		top: 1147px;
-    		font-size: em(12);
-    		@media (min-width: $screen-sm-min){
-    			font-size: em(20);
-		    	right: 310px;
-	    		top: 1536px;
-    		}
-    		svg{
-    			width: $hex-small-xs-wd;
-    			height: $hex-small-xs-hg;	
-    			@media (min-width: $screen-sm-min){
-    				width: $hex-small-sm-wd;
-    				height: $hex-small-sm-hg;	
-    			}
-    		}
-			}
-			&.hex-15{
-				right: 78px;
-    		top: 1154px;
-    		font-size: em(12);
-    		@media (min-width: $screen-sm-min){
-    			font-size: em(20);
-	    		right: 423px;
-    			top: 1713px;
-    		}
-    		svg{
-    			width: $hex-small-xs-wd;
-    			height: $hex-small-xs-hg;	
-    			@media (min-width: $screen-sm-min){
-    				width: $hex-small-sm-wd;
-    				height: $hex-small-sm-hg;	
-    			}
-    		}
-			}
-			&.hex-16{
-				right: 145px;
-    		top: 1260px;
-    		font-size: em(12);
-    		@media (min-width: $screen-sm-min){
-    			font-size: em(20);
-	    		right: 192px;
-    			top: 1713px;
-    		}
-    		svg{
-    			width: $hex-small-xs-wd;
-    			height: $hex-small-xs-hg;	
-    			@media (min-width: $screen-sm-min){
-    				width: $hex-small-sm-wd;
-    				height: $hex-small-sm-hg;	
-    			}
-    		}
+				}
 			}
 			.text{
 				text-align: center;
@@ -506,6 +215,209 @@ body.homepage{
 		    white-space: nowrap;
 				@extend %center-align;
 				font-weight: 700;
+			}
+			&.hex-1{
+				right: 133px;
+    		top: 288px;
+    		font-size: em(10);
+    		@media (min-width: $screen-xs-min){
+    			font-size: 1em;
+    			width: auto;
+	    		right: 192px;
+	    		top: 0;
+    		}    		
+			}
+			&.hex-2{
+				right: 30px;
+    		top: 140px;
+    		@media (min-width: $screen-xs-min){
+    			right: 0;
+    			top: 236px;
+    		}
+    		.text{
+    			line-height: em(20);
+    			font-size: em(20);
+    			border-bottom: 4px solid $white;
+    			@extend %center-align;
+    			@media (min-width: $screen-xs-min){
+    				font-size: em(36);
+    			}
+    		}
+			}
+			&.hex-3{
+				right: 133px;
+    		top: 288px;
+    		font-size: em(10);
+    		@media (min-width: $screen-xs-min){
+    			font-size: 1em;
+    			width: auto;
+	    		right: 182px;
+	    		top: 503px;
+    		}    		
+			}
+			&.hex-4{
+				right: 205px;
+    		top: 392px;
+    		font-size: em(11);
+    		@media (min-width: $screen-xs-min){
+    			font-size: em(18);
+	    		right: 314px;
+    			top: 686px;
+    		}    		
+			}
+			&.hex-5{
+				right: 78px;
+    		top: 400px;
+    		font-size: em(12);
+    		@media (min-width: $screen-xs-min){
+    			right: 84px;
+	    		top: 704px;
+	    		font-size: em(20);
+    		}    		
+			}
+			&.hex-6{
+				right: 20px;
+    		top: 506px;
+    		font-size: em(12);
+    		@media (min-width: $screen-xs-min){
+    			right: 727px;
+	    		top: 931px;
+	    		font-size: em(20);
+    		}    		    		
+			}
+			&.hex-7{
+				right: 138px;
+    		top: 510px;
+    		@media (min-width: $screen-xs-min){
+    			width: auto;
+    			right: 415px;
+    			top: 867px;
+    		}
+    		.text{
+    			line-height: em(20);
+    			font-size: em(20);
+    			border-bottom: 4px solid $white;
+    			@extend %center-align;
+    			@media (min-width: $screen-xs-min){
+    				font-size: em(36);
+    			}
+    		}
+			}
+			&.hex-8{
+				right: 203px;
+    		top: 676px;
+    		font-size: em(12);
+    		@media (min-width: $screen-xs-min){
+    			right: 199px;
+    			top: 903px;
+	    		font-size: em(20);
+    		}    		    		
+			}
+			&.hex-9{
+				right: 81px;
+    		top: 658px;
+    		font-size: em(10);
+    		@media (min-width: $screen-xs-min){
+    			right: 625px;
+    			top: 1120px;
+	    		font-size: em(14);
+    		}    		   
+    		.image{
+    			width: 80px;
+    			height: 30px;
+    			overflow: hidden;
+    			@media (min-width: $screen-xs-min){
+	    			width: 112px;
+	    			height: 43px;
+    			}    			
+    		}
+			}
+			&.hex-10{
+				right: 16px;
+    		top: 770px;
+    		font-size: em(11);
+    		@media (min-width: $screen-xs-min){
+    			right: 348px;
+    			top: 1152px;
+	    		font-size: em(20);
+    		}    		
+			}
+			&.hex-11{
+				right: 137px;
+    		top: 781px;
+    		font-size: em(11);
+    		@media (min-width: $screen-xs-min){
+    			right: 512px;
+    			top: 1309px;
+	    		font-size: em(20);
+    		}    						
+			}
+			&.hex-12{
+				right: 144px;
+    		top: 1039px;
+    		font-size: em(12);
+    		@media (min-width: $screen-xs-min){
+    			font-size: em(20);
+	    		right: 215px;
+    			top: 1342px;
+    		}    		
+			}
+			&.hex-12{
+				right: 49px;
+    		top: 883px;
+    		@media (min-width: $screen-xs-min){
+    			right: 585px;
+    			top: 1498px;
+    		}
+    		    		.text{
+    			line-height: em(20);
+    			font-size: em(20);
+    			border-bottom: 4px solid $white;
+    			@extend %center-align;
+    			@media (min-width: $screen-xs-min){
+    				font-size: em(36);
+    			}
+    		}    		
+			}
+			&.hex-13{
+				right: 20px;
+    		top: 1037px;
+    		font-size: em(12);
+    		@media (min-width: $screen-xs-min){
+    			font-size: em(20);
+	    		right: 368px;
+    			top: 1529px;
+    		}    		
+			}
+			&.hex-14{
+				right: 204px;
+    		top: 1147px;
+    		font-size: em(12);
+    		@media (min-width: $screen-xs-min){
+    			font-size: em(20);
+		    	right: 147px;
+	    		top: 1536px;
+    		}    		
+			}
+			&.hex-15{
+				right: 78px;
+    		top: 1154px;
+    		font-size: em(12);
+    		@media (min-width: $screen-xs-min){
+    			font-size: em(20);
+	    		right: 260px;
+    			top: 1713px;
+    		}    		
+			}
+			&.hex-16{
+				right: 145px;
+    		top: 1260px;
+    		font-size: em(12);
+    		@media (min-width: $screen-xs-min){
+    			font-size: em(20);
+	    		right: 29px;
+    			top: 1713px;
+    		}    		
 			}
 		}
 	}
@@ -524,34 +436,20 @@ body.homepage{
 		h2{
 			color: $white;
 			background: $green;
-			padding: 10px 20px 10px 9px;
 			float: left;
 			margin-top: 0;
-			margin-bottom: 20px;
-			font-size: em(20);
-			@media (min-width: $screen-sm-min){
-				font-size: em(45);
-				margin-bottom: 42px;
-			}
+			padding: em(10,45) em(20,45) em(10,45) em(9,45);
+			margin-bottom: em(20,45);
+			font-size: em(45);			
 		}
 		.line-pattern{
-			padding: 20px;
-			@media (min-width: $screen-sm-min){
-				padding: 45px 20px 30px;
-			}
-			@media (min-width: $screen-md-min){
-				padding: 69px 210px 30px 240px;
-			}
+			padding: em(69,45) em(210,45) em(30,45) em(240,45);
 		}
 		.form{
 			input{
-				font-size: em(16);
+				font-size: em(24);
 				padding: 0;
-				height: 45px;
-				@media (min-width: $screen-sm-min){
-					font-size: em(24);
-					height: 74px;
-				}
+				height: em(74,24);				
 			}
 			input[type=text],
 			input[type=email]{
@@ -559,14 +457,13 @@ body.homepage{
 				border: none;
 				@include box-shadow(none);
 				margin-right: 17px;
-				padding: 0 20px;
+				padding: 0 em(31,24);
     		line-height: 1em;
     		width: 100%;
     		margin-bottom: 1em;
     		@media (min-width: $screen-sm-min){
     			width: 33.178%;
-    			margin-bottom: 0;
-    			padding: 0 31px;
+    			margin-bottom: 0;    			
 				}
 			}
 			input[type=submit]
@@ -577,13 +474,9 @@ body.homepage{
 				text-decoration: underline;
 				font-weight: bold;
 				@include border-radius(0);
-				font-size: em(16);
-				padding: 0 20px;
-    		line-height: 1em;
-    		@media (min-width: $screen-sm-min){
-	    		font-size: em(25);
-					padding: 0 50px;
-    		}
+				font-size: em(25);
+				padding: 0 em(50,25);
+    		line-height: 1em;    		
 			}
 		}
 		.we-love-basket{

@@ -123,7 +123,11 @@ body.spring-2015{
 				padding: 20px;
 				@media (min-width: $screen-lg-min){
 					padding: 109px 20px 20px;
-				}	
+				}
+				.row{
+					max-width: 600px;
+					margin: 0 auto;
+				}
 				.desc{
 					font-size: em(16);
 					line-height: 1em;

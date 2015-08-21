@@ -99,7 +99,7 @@ jQuery(function($){
 				cache: false,
 				url:'pages/homepage.html',
 				success: function(data){
-					$('#main-content').html(data);					
+					$('#main-content').html(data);										
 				}
 			});
 		}
@@ -251,9 +251,8 @@ jQuery(function($){
 				cache: false,
 				url: 'pages/family/favourites.html',
 				success: function(data){
-					$('#main-content').append(data);
-					$('#favourites .product-wrap').matchHeight();
-					$('#favourites .product-wrap img').on('load', function(){
+					$('#main-content').append(data).imagesLoaded().then(function(){
+						$('#favourites .product-wrap').matchHeight();
 						$(window).resize();
 					});
 					loveFamily.footer();
@@ -595,15 +594,21 @@ jQuery(function($){
 	  if(section == 'love-calm'){
 	  	loveCalm.init();
 	  }
+	  if(section == undefined){
+	  	homePage.init();
+	  }
 	  $('body').attr('class','spring-2015 '+section);
 	}
 	window.addEventListener('popstate', function(e) {
 	  var section = e.state;
-	  if(section !== null){
-	  	section = e.state.section;
-	  	requestContent(section);
-	    document.title = 'Title';
-	  }
+	  if(  section == null){
+	  	section = "homepage";
+	  }else{
+  	section = e.state.section;
+  	}
+  	requestContent(section);
+    document.title = 'Title';
+	  
 	});
 	$(document).on('load',function(){
 		$(window).resize();

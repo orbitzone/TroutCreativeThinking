@@ -617,7 +617,7 @@ jQuery(function($){
 	  }
 	  $('body').attr('class','spring-2015 '+section);
 	}
-	window.addEventListener('popstate', function(e) {
+	/*window.addEventListener('popstate', function(e) {
 	  var section = e.state;
 	  if( section == null){
 	  	section = "homepage";
@@ -627,7 +627,7 @@ jQuery(function($){
   	requestContent(section);
     document.title = 'Title';
 	  
-	});
+	});*/
 	$(document).on('load',function(){
 		$(window).resize();
 	});

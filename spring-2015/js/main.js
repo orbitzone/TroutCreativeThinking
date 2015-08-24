@@ -592,13 +592,13 @@ jQuery(function($){
 			});
 		}
 	};
-	$(document).on('click','.load_page',function(){
+	/*$(document).on('click','.load_page',function(){
 		var data = { section: $(this).data('section')};
 		var url = $(this).attr('href');
 		history.pushState(data, null, url);
 		requestContent($(this).data('section'));
 		return false;
-	});
+	});*/
 	function requestContent(section) {
 		if(section == "homepage"){
 			homePage.init();

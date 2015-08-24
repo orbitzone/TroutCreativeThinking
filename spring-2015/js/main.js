@@ -180,8 +180,9 @@ jQuery(function($){
 					$('#main-content').append(data);
 					var controller = new ScrollMagic.Controller();
 
-					new ScrollMagic.Scene({triggerElement: "#circular-gallery"})
-									.setClassToggle("#circular-gallery .circle", "active") // add class toggle
+					new ScrollMagic.Scene({triggerElement: "#circular-gallery .circle"})
+									.setClassToggle("#circular-gallery .circle", "active")
+									.addIndicators()
 									.addTo(controller);
 					loveFamily.smartStorage();
 				}

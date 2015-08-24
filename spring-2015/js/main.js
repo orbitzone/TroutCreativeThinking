@@ -601,7 +601,7 @@ jQuery(function($){
 	}
 	window.addEventListener('popstate', function(e) {
 	  var section = e.state;
-	  if(  section == null){
+	  if( section == null){
 	  	section = "homepage";
 	  }else{
   	section = e.state.section;

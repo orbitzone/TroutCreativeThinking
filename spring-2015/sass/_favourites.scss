@@ -11,6 +11,7 @@ body.spring-2015{
 				margin-bottom: em(85);
 				.image{
 					position: relative;
+					display: inline-block;
 				}
 				.text{
 					@include clearfix;

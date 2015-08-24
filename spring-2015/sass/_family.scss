@@ -289,6 +289,81 @@ body.love-family{
 				}
 			}
 		}
+		.circular-gallery{
+			position: relative;
+			height: 800px;
+			.circle{
+				position: relative;
+				@media (min-width: $screen-sm-min){
+					height: 460px;
+				}
+				@media (min-width: $screen-md-min){
+					height: 800px;
+				}				
+				.text{
+					width: 300px;
+					@media (min-width: $screen-sm-min){
+						width: 200px;
+						font-size: 8px;
+					}
+					@media (min-width: $screen-md-min){
+						width: 300px;
+						font-size: inherit;
+					}				
+					
+					@extend %center-align;
+					h2{
+						font-size: em(60);
+						text-decoration: underline;
+					}
+					.description{
+						color: $grey;
+						font-size: em(24);
+						line-height: em(26);
+					}
+				}
+			}
+			.circular-product{
+				width: 300px;
+				position: absolute;
+				left: 400px;
+				@include transform-origin(center 400px);
+				@media (min-width: $screen-sm-min){
+					width: 160px;
+					left: 160px;
+						@include transform-origin(center 230px);
+					}
+					@media (min-width: $screen-md-min){
+						width: 300px;
+						left: 400px;
+						@include transform-origin(center 400px);
+					}		
+				&.product-1{
+					@include transform(rotate(0));
+				}
+				&.product-2{
+					@include transform(rotate(45deg));	
+				}
+				&.product-3{
+					@include transform(rotate(90deg));		
+				}
+				&.product-4{
+					@include transform(rotate(135deg));			
+				}
+				&.product-5{
+					@include transform(rotate(180deg));		
+				}
+				&.product-6{
+					@include transform(rotate(225deg));	
+				}
+				&.product-7{
+					@include transform(rotate(270deg));		
+				}
+				&.product-8{
+					@include transform(rotate(-45deg));	
+				}				
+			}
+		}
 	}
 	#smart-storage{
 		margin-bottom: 40px;
@@ -471,12 +546,15 @@ body.love-family{
 				right: 0;
 				top: 0;
 				height: 100%;
+				z-index: 0;
 			}
 			h2{
 				color: $pink;
 				font-size: em(60);
 				text-decoration: underline;
 				margin: 0;
+				position: relative;
+				z-index: 1;
 			}
 		}
 		.top-products{
@@ -532,7 +610,9 @@ body.love-family{
 			}
 			.products-wrap{
 				background: $white;
-				margin-left: 120px;
+				@media (min-width: $screen-lg-min){
+					margin-left: 120px;
+				}
 				h3{
 					font-size: em(60);
 					text-decoration: underline;

@@ -6,6 +6,7 @@ body.spring-2015{
 			margin-bottom: em(50,60);
 			line-height: 1.2em;
 			font-size: em(20);
+			text-decoration: underline;
 			@media (min-width: $screen-sm-min){
 				font-size: em(60);
 			}			
@@ -162,7 +163,8 @@ body.spring-2015{
 					color: $white;
 					font-size: em(28);
 					margin: 0;
-					margin-bottom: 40px;					
+					margin-bottom: 40px;
+					text-decoration: none;					
 				}							
 			}				
 		}

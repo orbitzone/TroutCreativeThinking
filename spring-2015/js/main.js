@@ -426,10 +426,24 @@ jQuery(function($){
 			});
 		},
 		showers: function(){
-			loveLuxury.circularGallery();
+			$.ajax({
+				cache: false,
+				url: 'pages/luxury/showers.html',
+				success: function(data){
+					$('#main-content').append(data);
+					loveLuxury.circularGallery();
+				}
+			});			
 		},
 		circularGallery: function(){
-			loveLuxury.products();
+			$.ajax({
+				cache: false,
+				url: 'pages/luxury/circular-gallery.html',
+				success: function(data){
+					$('#main-content').append(data);
+					loveLuxury.products();
+				}
+			});						
 		},
 		products: function(){
 			loveLuxury.hotelInspiredLook();

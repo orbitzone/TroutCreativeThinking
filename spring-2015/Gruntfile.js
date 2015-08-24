@@ -23,6 +23,7 @@ module.exports = function(grunt) {
           {expand: true,cwd: 'bower_components/placeholders/dist/', src: 'placeholders.jquery.min.js', dest: 'js/vendor/'},
           {expand: true,cwd: 'bower_components/slick-carousel/slick/', src: 'slick.min.js', dest: 'js/vendor/'},
           {expand: true,cwd: 'bower_components/matchHeight/', src: 'jquery.matchHeight-min.js', dest: 'js/vendor/'},
+          {expand: true,cwd: 'bower_components/ScrollMagic/scrollmagic/minified', src: 'ScrollMagic.min.js', dest: 'js/vendor/'},
           {expand: true,cwd: 'bower_components/slick-carousel/slick/fonts/', src: '**', dest: 'fonts/'},     
           {expand: true,cwd: 'bower_components/font-awesome/fonts/', src: '**', dest: 'fonts/'}          
         ],

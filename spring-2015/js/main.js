@@ -135,6 +135,14 @@ jQuery(function($){
   					prevArrow: "<button type=\"button\" class=\"arrow-prev\"><i class=\"iconr-arrow-left\"></i></button>",
   					nextArrow: "<button type=\"button\" class=\"arrow-next\"><i class=\"iconr-arrow-right\"></i></button>",
 					 	responsive: [
+					 		{
+					      breakpoint: 992,
+					      settings: {
+					        arrows: false,
+					        slidesToShow: 3,
+					        slidesToScroll: 3
+					      }
+					    },
 					    {
 					      breakpoint: 768,
 					      settings: {
@@ -170,6 +178,11 @@ jQuery(function($){
 				url: 'pages/family/circular-gallery.html',
 				success: function(data){
 					$('#main-content').append(data);
+					var controller = new ScrollMagic.Controller();
+
+					new ScrollMagic.Scene({triggerElement: "#circular-gallery"})
+									.setClassToggle("#circular-gallery .circle", "active") // add class toggle
+									.addTo(controller);
 					loveFamily.smartStorage();
 				}
 			});
@@ -270,8 +283,14 @@ jQuery(function($){
 		},
 		showHotspotData: function(obj){
 			var spot = $(obj).data("spot");
-			$(obj).toggleClass('active');
 			if($(obj).hasClass('active')){
+				$(obj).removeClass('active');
+				$('.hotspot-data.spot-'+spot).fadeOut();
+			}else{
+				$(obj).parent().find('.hotspot').removeClass('active');
+				$('.hotspot-data').fadeOut();
+				$(obj).addClass('active');
+				
 				var top = $(obj).position().top + $(obj).outerHeight()+10;
 				var left = $(obj).position().left - ($('.hotspot-data.spot-'+spot).outerWidth()/2) + ($(obj).outerHeight()/2);
 				$('.hotspot-data.spot-'+spot).css(
@@ -280,8 +299,7 @@ jQuery(function($){
 					left: left
 				})
 				$('.hotspot-data.spot-'+spot).fadeIn();
-			}else{
-				$('.hotspot-data.spot-'+spot).fadeOut();
+				;
 			}
 		},
 		showShareBoard: function(obj){

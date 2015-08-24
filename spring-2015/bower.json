@@ -25,6 +25,7 @@
     "placeholders": "~4.0.1",
     "slick-carousel": "~1.5.8",
     "matchHeight": "~0.6.0",
-    "bootstrap-sass-official": "~3.3.5"
+    "bootstrap-sass-official": "~3.3.5",
+    "ScrollMagic": "~2.0.5"
   }
 }

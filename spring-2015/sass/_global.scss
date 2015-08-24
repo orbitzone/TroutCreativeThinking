@@ -69,12 +69,12 @@ body.spring-2015{
 		position: relative;
 		overflow: hidden;
 		padding-bottom: 40px;
-		font-size: 12px;
 		line-height: 1.1;
 		font-family: $font-family;
 		-webkit-font-smoothing: antialiased;
 	  -moz-osx-font-smoothing: grayscale;
-	  
+	  font-size: 12px;
+		
 		@media (min-width: $screen-sm-min){
 	  	font-size: 13px;
 	  }

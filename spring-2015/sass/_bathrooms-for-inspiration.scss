@@ -53,12 +53,13 @@ body.spring-2015{
 						top: 60.82130966%;
 						left: 85.80542265%;
 					}
-					&.active{
-						color: $green;
-					}
 					&:hover{
 						color: $pink;
 					}
+					&.active{
+						color: $green;
+					}
+					
 				}
 				.hotspot-data{
 					position: absolute;

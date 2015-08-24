@@ -186,7 +186,7 @@ body.love-family{
    						left: 61px;
    					}
 					}
-					.shop_now{
+					.button-mood-shop{
 						float: right;
 						margin-top: 18px;
 						position: relative;
@@ -230,7 +230,7 @@ body.love-family{
 						left: 184px;
 						position: absolute;
 					}
-					.shop_now{
+					.button-mood-shop{
 						margin-top: 19px;
 					}					
 				}
@@ -249,20 +249,26 @@ body.love-family{
 	#circular-gallery{
 		.banner{
 			position: relative;
-			padding: 45px 30px 60px 30px;
-			margin-bottom: 40px;
+			padding: em(45) em(60) em(120) em(30);
+			margin-bottom: em(40);
 			@media (min-width: $screen-sm-min){
-				padding: 64px 30px 38px 30px;
+				padding: em(64) em(220) em(38) em(30);
 			}
 			@media (min-width: $screen-lg-min){
-				padding: 64px 0 38px 258px;
+				padding: em(64) em(220) em(38) em(258);
 			}
 			h2{
 				display: inline;
 				color: $pink;
 				background: $white;
-				font-size: em(60);
-				line-height: 1.14em;					
+				font-size: em(40);
+				line-height: 1.14em;	
+				@media (min-width: $screen-sm-min){
+					font-size: em(50);
+				}
+				@media (min-width: $screen-md-min){
+					font-size: em(60);
+				}				
 			}
 			.we-love-stool{
 				position: absolute;
@@ -278,7 +284,7 @@ body.love-family{
 				}
 				img{
 					width: 120px;
-					@media (min-width: $screen-sm-min){
+					@media (min-width: $screen-md-min){
 						width: 285px;
 					}
 				}
@@ -291,8 +297,11 @@ body.love-family{
 		}
 		.circular-gallery{
 			position: relative;
-			height: 800px;
 			.circular-list{
+				margin-top: 400px;
+				@media (min-width: $screen-sm-min){
+					margin-top: 0;
+				}
 				li{
 					@include clearfix;
 					margin-bottom: em(20);
@@ -340,9 +349,17 @@ body.love-family{
 				}
 			}
 			.circle{
-				position: relative;
+				position: absolute;
+				height: 780px;
+				top: 0;
+				left: 0;
+				width: 100%;
+				@include transform-origin(center top);
+				@include transform(scale(0.4));
 				@media (min-width: $screen-sm-min){
+					position: relative;
 					height: 460px;
+					@include transform(none);
 				}
 				@media (min-width: $screen-md-min){
 					height: 710px;
@@ -375,15 +392,16 @@ body.love-family{
 						line-height: em(26);
 					}
 				}
-			}
-			.circular-product{
-				width: 300px;
-				position: absolute;
-				left: 400px;
-				@include transform-origin(center 400px);
-				@media (min-width: $screen-sm-min){
-					width: 160px;
-					left: 160px;
+				.circular-product{
+					width: 300px;
+					position: absolute;
+					left: 0;
+					@include transition(1s all ease-out);
+					@include transform-origin(center 400px);
+					@media (min-width: $screen-sm-min){
+						left: 400px;
+						width: 160px;
+						left: 160px;
 						@include transform-origin(center 230px);
 					}
 					@media (min-width: $screen-md-min){
@@ -395,32 +413,37 @@ body.love-family{
 						width: 300px;
 						left: 400px;
 						@include transform-origin(center 400px);
-					}		
-				&.product-1{
-					@include transform(rotate(0));
+					}									
 				}
-				&.product-2{
-					@include transform(rotate(45deg));	
+				&.active{
+					.circular-product{
+						&.product-1{
+							@include transform(rotate(0));
+						}
+						&.product-2{
+							@include transform(rotate(45deg));	
+						}
+						&.product-3{
+							@include transform(rotate(90deg));		
+						}
+						&.product-4{
+							@include transform(rotate(135deg));			
+						}
+						&.product-5{
+							@include transform(rotate(180deg));		
+						}
+						&.product-6{
+							@include transform(rotate(225deg));	
+						}
+						&.product-7{
+							@include transform(rotate(270deg));		
+						}
+						&.product-8{
+							@include transform(rotate(-45deg));	
+						}	
+					}
 				}
-				&.product-3{
-					@include transform(rotate(90deg));		
-				}
-				&.product-4{
-					@include transform(rotate(135deg));			
-				}
-				&.product-5{
-					@include transform(rotate(180deg));		
-				}
-				&.product-6{
-					@include transform(rotate(225deg));	
-				}
-				&.product-7{
-					@include transform(rotate(270deg));		
-				}
-				&.product-8{
-					@include transform(rotate(-45deg));	
-				}				
-			}
+			}			
 		}
 	}
 	#smart-storage{

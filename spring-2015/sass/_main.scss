@@ -197,10 +197,10 @@ body.spring-2015{
 		}
 	}
 	.button-mood-shop{
+		position: relative;
 		@include border-radius(4px);
 		@include box-shadow(1px 1px 3px rgba(0,0,0,0.3));
 		display: inline-block;
-		clear: both;		
 	}
 	button.add-to-moodboard{
 		background: $dark-green;
@@ -209,10 +209,12 @@ body.spring-2015{
 		font-size: 1em;
 		font-weight: 700;
 		padding: em(14) em(12);
-		float: left;
 		border-right: 2px solid $white;
 		line-height: 1em;
 		outline: none;
+		position: absolute;
+		left: 0;
+		top: 0;
 		@include appearance(none);
 		@include border-radius(4px 0px 0px 4px);
 		span.button-text{
@@ -245,6 +247,7 @@ body.spring-2015{
 		span.button-text{
 			margin-right: em(10);
 		}
-		float: left;
+		margin-left: 38px;
+		white-space: nowrap;
 	}
 }

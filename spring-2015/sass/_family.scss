@@ -292,6 +292,53 @@ body.love-family{
 		.circular-gallery{
 			position: relative;
 			height: 800px;
+			.circular-list{
+				li{
+					@include clearfix;
+					margin-bottom: em(20);
+				}
+				.product{
+					.number{
+						width: 35px;
+						height: 35px;
+						line-height: em(35);
+						font-size: em(14);
+						color: $black;
+						@include border-radius(50%);
+						border: 1px solid $black;
+						text-align: center;
+						position: absolute;
+						left: 0;
+						top: 0;
+					}
+					.name{
+						padding-left: em(55);
+						position: relative;
+						h3{
+							font-size: em(14);
+							color: $black;
+							margin: 0;
+						}
+						.description{
+							font-size: em(14);
+							color: $grey;
+							font-weight: 400;
+						}
+					}
+					.button-mood-shop{
+						display: none;
+						position: absolute;
+						top: 0;
+						left: em(55);
+						z-index: 2;
+					}
+					&:hover{
+						.button-mood-shop{
+							display: block;
+						}
+					}
+				}
+			}
 			.circle{
 				position: relative;
 				@media (min-width: $screen-sm-min){

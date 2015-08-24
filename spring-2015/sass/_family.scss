@@ -298,6 +298,9 @@ body.love-family{
 					height: 460px;
 				}
 				@media (min-width: $screen-md-min){
+					height: 710px;
+				}
+				@media (min-width: $screen-lg-min){
 					height: 800px;
 				}				
 				.text{
@@ -307,10 +310,13 @@ body.love-family{
 						font-size: 8px;
 					}
 					@media (min-width: $screen-md-min){
+						width: 250px;
+						font-size: 13px;
+					}				
+					@media (min-width: $screen-lg-min){
 						width: 300px;
 						font-size: inherit;
-					}				
-					
+					}	
 					@extend %center-align;
 					h2{
 						font-size: em(60);
@@ -334,6 +340,11 @@ body.love-family{
 						@include transform-origin(center 230px);
 					}
 					@media (min-width: $screen-md-min){
+						width: 250px;
+						left: 230px;
+						@include transform-origin(center 350px);
+					}		
+					@media (min-width: $screen-lg-min){
 						width: 300px;
 						left: 400px;
 						@include transform-origin(center 400px);

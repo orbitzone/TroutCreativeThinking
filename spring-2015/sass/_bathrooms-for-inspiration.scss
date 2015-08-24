@@ -5,7 +5,10 @@ body.spring-2015{
 			margin-top: 0;
 			margin-bottom: em(50,60);
 			line-height: 1.2em;
-			font-size: em(60);			
+			font-size: em(20);
+			@media (min-width: $screen-sm-min){
+				font-size: em(60);
+			}			
 		}
 		.bathrooms-showcase-section{
 			margin-bottom: 40px;
@@ -172,10 +175,13 @@ body.spring-2015{
 				padding: 80px 160px 60px;
 			}
 			h2{
-				font-size: em(60);
 				margin: 0;
 				margin-bottom: 20px; 
-				text-decoration: underline;				
+				text-decoration: underline;		
+				font-size: em(30);
+				@media (min-width: $screen-sm-min){
+					font-size: em(60);
+				}		
 			}
 			.product{
 				padding-bottom: em(20);

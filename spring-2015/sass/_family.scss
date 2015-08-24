@@ -17,7 +17,10 @@ body.love-family{
 				bottom: 20%;
 				left: 27.30263%;
 				text-decoration: underline;
-				font-size: em(90);				
+				font-size: em(30);				
+				@media (min-width: $screen-sm-min){
+					font-size: em(90);				
+				}
 			}		
 		}
 		.intro{
@@ -65,11 +68,12 @@ body.love-family{
 			.intro-copy{
 				position: relative;
 				z-index: 1;
-				font-size: em(34);
+				font-size: em(16);
 				font-weight: 700;
 			  line-height: 1.2em;	
 			  padding-right: 50px;
 			  @media (min-width: $screen-sm-min){
+			  	font-size: em(34);
 			  	padding-right: 0;
 			  }
 			  @media (min-width: $screen-lg-min){
@@ -86,13 +90,14 @@ body.love-family{
 			.description{
 				margin-bottom: 60px;
 				@media (min-width: $screen-sm-min){
+					max-width: 330px;
 					position: absolute;
 			    top: 80px;
 	   		  z-index: 2;
 					margin-bottom: 0;
 				}
 				@media (min-width: $screen-md-min){
-					top: 192px;
+					top: 192px;					
 				}
 				@media (min-width: $screen-lg-min){
 					left: 216px;					
@@ -103,15 +108,19 @@ body.love-family{
 					margin-top: 0;
 					margin-bottom: 20px;
 			    line-height: 1.2em;
-		    	font-size: em(60);
+		    	font-size: em(30);
 			    @media (min-width: $screen-sm-min){
 			    	margin-bottom: 40px;
+			    	font-size: em(60);
 			    }			    
 				}
 				p{
-					font-size: em(28);
+					font-size: em(16);
 			    line-height: 1.2em;
-					color: $grey;						
+					color: $grey;
+					@media (min-width: $screen-sm-min){
+						font-size: em(28);
+					}	
 				}
 			}
 			.products-we-love{
@@ -170,9 +179,12 @@ body.love-family{
 						}
 					}
 					.white-box{
-						font-size: em(18);
+						font-size: em(14);
 						line-height: 1.2em;
 						padding: 15px 30px 15px 15px;
+						@media (min-width: $screen-sm-min){
+							font-size: em(18);
+						}
 						@media (min-width: $screen-md-min){
 							padding: 30px;
 						}					
@@ -215,10 +227,11 @@ body.love-family{
     				}
 					}
 					.white-box{
-						font-size: em(18);
 						line-height: 1.2em;
 						padding: 15px 10px 15px 15px;
+						font-size: em(14);
 						@media (min-width: $screen-sm-min){
+							font-size: em(18);
 							padding: 15px;
 						}
 						@media (min-width: $screen-md-min){
@@ -249,7 +262,7 @@ body.love-family{
 	#circular-gallery{
 		.banner{
 			position: relative;
-			padding: em(45) em(60) em(120) em(30);
+			padding: em(45) 0 em(120) em(30);
 			margin-bottom: em(40);
 			@media (min-width: $screen-sm-min){
 				padding: em(64) em(220) em(38) em(30);
@@ -261,7 +274,7 @@ body.love-family{
 				display: inline;
 				color: $pink;
 				background: $white;
-				font-size: em(40);
+				font-size: em(30);
 				line-height: 1.14em;	
 				@media (min-width: $screen-sm-min){
 					font-size: em(50);
@@ -335,15 +348,20 @@ body.love-family{
 						}
 					}
 					.button-mood-shop{
-						display: none;
-						position: absolute;
-						top: 0;
-						left: em(55);
-						z-index: 2;
+						margin-top: em(20);
+						@media (min-width: $screen-sm-min){
+							display: none;
+							position: absolute;
+							top: 0;
+							left: em(55);
+							z-index: 2;
+						}
 					}
-					&:hover{
-						.button-mood-shop{
-							display: block;
+					@media (min-width: $screen-sm-min){
+						&:hover{
+							.button-mood-shop{
+								display: block;
+							}
 						}
 					}
 				}
@@ -461,10 +479,12 @@ body.love-family{
 					padding-left: 82px;
 				}
 				.description{
-					position: absolute;
-					left: 0;
-					top: 20px;
+			    position: relative;
+			    left: -40px;
+			    top: -30px;
 					@media (min-width: $screen-sm-min){
+						position: absolute;
+						left: 0;
 						top: 60px;
 					}
 					.text-block{
@@ -475,10 +495,11 @@ body.love-family{
 						padding: 4px 10px;
 						float: left;
 						clear: both;
-						font-size: em(32);
 						font-weight: 700;
 						line-height: 1.2em;
+						font-size: em(18);
 						@media (min-width: $screen-sm-min){
+							font-size: em(32);
 							padding: 5px 10px;
 						}						
 					}
@@ -490,12 +511,28 @@ body.love-family{
 				@media (min-width: $screen-sm-min){
 					padding-left: 0;
 				}
+				.name{
+					h2{
+						font-size: em(16);						
+					}
+				}
 				.image{
 					position: relative;
+					max-width: 180px;
+					@media (min-width: $screen-sm-min){
+						max-width: 220px;
+					}
+					.share{
+						right: -40px;
+					}
 					.bluetooth{
 						position: absolute;
-						top: 70px;
+						top: 140px;
 						left: -30px;
+						@media (min-width: $screen-sm-min){
+							top: 70px;
+							left: -30px;
+						}
 						img{
 							max-width: 50px;
 							@media (min-width: $screen-sm-min){
@@ -510,28 +547,34 @@ body.love-family{
 			padding: 30px 0;
 			.image{
 				position: relative;
-				.we-love-basket{
+				@media (min-width: $screen-md-min){
+					padding-right: em(300);		
+				}
+			}
+			.image-description{
+				position: relative;
+			}
+			.text-wrap{
+				@media (min-width: $screen-md-min){
 					position: absolute;
-					top: 40px;
-					right: -100px;
+					top: 30px;
+					right: 0;
+					z-index: 1;
+				}
+				h2{
+					color: $pink;
+					font-size: em(60);
+					margin-bottom: 40px;
+					text-decoration: underline;
 					@media (min-width: $screen-md-min){
-						top: 10px;
+						margin-bottom: 0;
 					}
 					@media (min-width: $screen-lg-min){
-						top: 40px;
-					}
-					h2{
-						color: $pink;
-						font-size: em(60);
 						margin-bottom: 40px;
-						text-decoration: underline;
-						@media (min-width: $screen-md-min){
-							margin-bottom: 0;
-						}
-						@media (min-width: $screen-lg-min){
-							margin-bottom: 40px;
-						}
 					}
+				}
+				.we-love-basket{
+					position: relative;
 					.text{
 						background: $white;
 						color: $pale-blue;
@@ -541,8 +584,10 @@ body.love-family{
 					}
 					.basket{
 						position: relative;
+						margin-top: 20px;
 						margin-bottom: 30px;
 						width: 90px;
+						text-align: center;
 						@media (min-width: $screen-md-min){
 							width: 176px;
 							@include transform(scale(0.7));
@@ -553,6 +598,10 @@ body.love-family{
 							@include transform(none);
 							margin-bottom: 30px;
 						}
+						.text{
+							text-align: left;
+							margin-top: 20px;
+						}
 						.we-love{
 							position: absolute;
 							top: 50px;
@@ -561,12 +610,23 @@ body.love-family{
 								top: 50px;
 								right: -20px;
 							}
+						}						
+					}
+					.image-text{
+						position: absolute;
+						top: 0;
+						left: 120px;
+						max-width: 220px;
+						font-size: em(14);
+						@media (min-width: $screen-sm-min){
+							font-size: em(16);
+						}
+						@media (min-width: $screen-md-min){
+							max-width: 480px;
+							left: 240px;
 						}
 					}
 				}
-			}
-			.image-text{
-				padding: 60px 60px;
 			}
 		}		
 	}

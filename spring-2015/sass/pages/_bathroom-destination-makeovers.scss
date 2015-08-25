@@ -72,6 +72,8 @@ body.spring-2015{
 		}
 		article{
 			border-bottom: 1px dashed $black;
+			padding-bottom: em(40);
+			margin-bottom: em(45);
 			.hex-block{
 				position: relative;
 				z-index: 10;
@@ -198,33 +200,78 @@ body.spring-2015{
 			.products{
 				margin-top: em(20);
 				.product{
-					padding: 0 em(30);
+					padding: 0 em(50);
 					.image{
 						margin-bottom: em(20);
 					}
 					.plus{
 						position: absolute;
-						right: 0;
-						top: 50%;
-						@include transform(translateY(-50%));
+						right: em(-50);
+						top: 70%;
+						@include transform(translateX(100%));
 						.circle{
 							border: 2px solid $black;
-							width: 68px;
-							height: 68px;
+							width: 54px;
+							height: 54px;
 							margin: 0 auto;
 							@include border-radius(50%);
 						}
 						.line-h{
 							height: 2px;
 							background: $black;
-							width: 33px;
+							width: 26px;
 							@extend %center-align;
 						}
 						.line-v{
-							height: 33px;
+							height: 26px;
 							background: $black;
 							width: 2px;
 							@extend %center-align;
+						}
+					}
+				}
+			}
+			&.hinterland{
+				.hex-block{
+					position: relative;
+					z-index: 12;
+					@media (min-width: $screen-md-min){
+						@include transform(none);
+					}
+					svg{
+						path{
+							fill: $gold;
+						}
+					}
+				}
+				.products{
+					.product{
+						.circle{
+							border-color: $gold;
+						}
+						.line-h,
+						.line-v{
+							background: $gold;
+						}
+					}
+				}
+			}
+			&.provincial{
+				.hex-block{
+					svg{
+						path{
+							fill: $dark-green;
+						}
+					}
+				}
+				.products{
+					.product{
+						.circle{
+							border-color: $dark-green;
+						}
+						.line-h,
+						.line-v{
+							background: $dark-green;
 						}
 					}
 				}

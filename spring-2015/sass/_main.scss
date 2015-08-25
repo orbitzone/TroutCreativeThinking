@@ -7,6 +7,13 @@ body.spring-2015{
 	.line-pattern{
 		background: url('../images/line-pattern.jpg') repeat;
 	}
+	h1{
+		span{
+			font-family: $font-family-serif;
+			font-weight: 400;
+			font-style: italic;
+		}
+	}
 	button.circular{
 		background: none;
 		@include appearance(none);

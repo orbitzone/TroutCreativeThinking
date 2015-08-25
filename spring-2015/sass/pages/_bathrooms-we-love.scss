@@ -1,0 +1,189 @@
+body.spring-2015{
+	section#bathrooms-we-love{
+		h2{
+			font-size: em(50);
+			text-decoration: underline;						
+		}
+		.intro{
+			position: relative;
+			margin-bottom: em(60);
+			h1{
+				position: absolute;
+				top: 50%;
+				left: 20%;
+				text-decoration: underline;
+				@include transform(translateY(-50%));
+				font-size: em(30);
+				@media (min-width: $screen-sm-min){
+					font-size: em(60);
+				}
+			}
+		}
+		.top-details{
+			.project-info-wrap{
+				position: relative;
+				@media (min-width: $screen-sm-min){
+						padding-left: 260px;
+				}
+				@media (min-width: $screen-md-min){
+						padding-left: em(320);
+				}
+				@media (min-width: $screen-lg-min){
+					padding-right: em(40);
+					padding-left: em(440);
+				}
+				.image{
+					padding: em(10);
+					background: $white;
+					@include box-shadow(2px 2px 2px rgba(0,0,0,0.6));
+					@include transform(rotate(5deg));
+					@include transform-origin(bottom right);
+					width: 320px;
+					margin: 0 auto;
+					margin-bottom: -40px;
+					@media (min-width: $screen-sm-min){
+						position: absolute;
+						left: 0;
+						bottom: 0;
+						width: 260px;
+						margin: 0;
+					}
+					@media (min-width: $screen-md-min){
+						width: 320px;
+					}
+					@media (min-width: $screen-lg-min){
+							width: 440px;
+					}
+				}
+				.project-info{
+					background: $gold;
+					color: $white;
+					padding: em(40);
+					margin-left: em(20);
+					margin-right: em(20);
+					margin-bottom: em(40);
+					@media (min-width: $screen-sm-min){
+						margin: 0;
+						margin-bottom: em(40);
+					}
+					h2{
+						color: $black;
+						font-family: $font-family-serif;
+						font-weight: 400;
+						font-style: italic;
+						font-size: em(27);
+						margin-bottom: em(20,27);
+						text-decoration: none;
+						@media (min-width: $screen-sm-min){
+							font-size: em(18);
+							margin-bottom: em(10,18);
+						}
+						@media (min-width: $screen-md-min){
+							font-size: em(27);
+						}
+					}
+					ul{
+						li{
+							margin-bottom: em(20);
+							@media (min-width: $screen-sm-min){
+								font-size: em(14);
+								margin-bottom: em(10);
+							}
+							@media (min-width: $screen-md-min){
+								font-size: inherit;
+								margin-bottom: em(20);
+							}
+						}
+					}
+				}/* end .project-info */
+				
+			}
+			.description{
+				padding: 0 em(30);
+				margin-bottom: em(80);
+				@media (min-width: $screen-sm-min){
+					font-size: em(14);
+					padding: 0 0 0 em(30);
+				}
+				@media (min-width: $screen-md-min){
+					font-size: inherit;
+					padding: 0 em(30) 0 em(60);
+				}
+				@media (min-width: $screen-lg-min){
+					padding: 0 em(30) 0 em(120);
+				}
+			}
+		}/* end .top-details */
+		.before-after{
+			.small-container{
+				max-width: 1280px;
+				margin: 0 auto;
+				@media (min-width: $screen-sm-min){
+					padding: 0 em(110);
+				}
+			}
+			.dot-pattern{
+				position: relative;
+				padding: em(30) em(30) 0;
+				.title{
+					@media (min-width: $screen-sm-min){
+						position: absolute;
+						top: 0;
+						left: 0;
+						z-index: 2;
+						@include transform(translateX(-50%) translateY(-50%));
+					}					
+				}
+				.image{
+					margin-bottom: em(30);
+				}
+			}
+		}
+		.tip{
+			position: relative;
+			background: $black;
+			color: $white;
+			padding: em(70) em(50) em(50);
+			max-width: 434px;
+			h3{
+				font-size: em(27);
+				margin-top: 0;
+				margin-bottom: em(10,27);
+				color: $gold;
+			}
+			.hex-block{
+				width: 149px;
+				color: $white;
+				position: absolute;
+				top: 0;
+				left: 0;
+				@include transform(translateX(-50%) translateY(-50%));
+				svg{
+					width: 149px;
+					path{
+						fill: $gold;
+					}
+				}
+				.text{
+					position: absolute;
+					text-transform: uppercase;
+					text-align: center;
+					width: 100%;
+					font-size: em(21);
+					@extend %center-align;
+				}
+			}
+		}
+		.the-dream-list{
+			h2{
+
+			}
+		}
+		.the-feature-bath{
+
+		}
+		.hear-from-the-tradies{
+
+		}
+	}
+}

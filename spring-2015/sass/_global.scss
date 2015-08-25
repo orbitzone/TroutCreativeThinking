@@ -98,6 +98,18 @@ body.spring-2015{
 			margin: 0 auto;
 			position: relative;
 		  padding: 0 30px;
+		  @media (min-width: $screen-sm-min){
+		  	width: 750px;
+		  }
+		  @media (min-width: $screen-md-min){
+		  	width: 970px;
+		  }
+		  @media (min-width: $screen-lg-min){
+		  	width: 1170px;
+		  }
+		  @media (min-width: 1560px){
+		  	width: auto;
+		  }
 		}
 	}
 	@media only screen and (max-device-width:$screen-xs-max) {

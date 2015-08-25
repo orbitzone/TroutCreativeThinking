@@ -16,10 +16,19 @@ $fa-font-path:        "../fonts";
 @import "animations";
 @import "global";
 @import "main";
-@import "destination_happiness_board";
-@import "bathrooms-for-inspiration";
-@import "favourites";
-@import "homepage";
-@import "family";
-@import "luxury";
-@import "calm";
+
+/* Sections */
+@import "sections/destination-happiness-board";
+@import "sections/bathrooms-for-inspiration";
+@import "sections/favourites";
+
+/* Pages */
+@import "pages/homepage";
+@import "pages/family";
+@import "pages/luxury";
+@import "pages/calm";
+@import "pages/bec-judd";
+@import "pages/bathroom-destination-makeovers";
+@import "pages/mr-jason-grant";
+@import "pages/bathrooms-we-love";
+@import "pages/four-steps-to-create";

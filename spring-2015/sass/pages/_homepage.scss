@@ -23,15 +23,31 @@ body.homepage{
 				font-weight: 700;
 				line-height: 1em;
 				z-index: 3;
-				font-size: em(30);
-				padding-left: em(30,30);
-				padding-top: em(30,30);
-				padding-right: em(50,30);
+				font-size: em(22);
+				padding-left: em(30,22);
+				padding-top: em(50,22);
+				padding-right: em(40,22);
+				@media (min-width: $screen-sm-min){
+					position: absolute;
+					width: 450px;
+					font-size: em(30);
+					padding-left: em(30,30);
+					padding-top: em(30,30);
+					padding-right: 0;
+				}
 				@media (min-width: $screen-md-min){
 					position: absolute;
+					width: 520px;
+					font-size: em(36);
+					padding-left: em(30,36);
+					padding-top: em(30,36);
+				}
+				@media (min-width: $screen-lg-min){
+					width: 710px;
 					font-size: em(50);
-					padding-left: em(30,50);
-					padding-top: em(30,50);
+				}
+				@media (min-width: $screen-xl-min){
+					width: 820px;
 				}
 			}
 			p{
@@ -39,11 +55,18 @@ body.homepage{
 			}
 			.hanging-toy{
 				position: absolute;
-				top: 0px;
+				top: 0;
 				right: 25px;
 				z-index: 1;
 				max-width: 45px;
 				@media (min-width: $screen-sm-min){
+					top: -40px;
+					max-width: 46px;
+				}
+				@media (min-width: $screen-md-min){
+					max-width: 60px;
+				}
+				@media (min-width: $screen-xl-min){
 					max-width: 97px;
 				}
 			}
@@ -71,6 +94,12 @@ body.homepage{
 			max-width: 229px;
 			@include transform(translateX(-30px));
 		}
+		@media (min-width: $screen-md-min){
+			@include transform(translateX(-190px));
+		}
+		@media (min-width: $screen-lg-min){
+			@include transform(translateX(-30px));
+		}
 	}
 	.bathtub{
 		position: absolute;
@@ -80,8 +109,14 @@ body.homepage{
 		@include transform(translateX(-95px));
 		@media (min-width: $screen-sm-min){
 			top: 1200px;
-		max-width: 619px;
-		@include transform(translateX(-122px));
+			max-width: 619px;
+			@include transform(translateX(-122px));
+		}
+		@media (min-width: $screen-md-min){
+			@include transform(translateX(-450px));
+		}
+		@media (min-width: $screen-lg-min){
+			@include transform(translateX(-122px));
 		}
 	}
 	.towels{
@@ -95,6 +130,12 @@ body.homepage{
 			max-width: 611px;
 			@include transform(translateX(180px));
 		}
+		@media (min-width: $screen-md-min){
+			@include transform(translateX(340px));
+		}
+		@media (min-width: $screen-lg-min){
+			@include transform(translateX(180px));
+		}
 	}
 	.hex-elements{
 		position: relative;
@@ -103,16 +144,17 @@ body.homepage{
 		max-width: 1194px;
 		margin: 0 auto;
 		margin-top: 40px;
-		@media (min-width: $screen-xs-min){
+		@media (min-width: $screen-sm-min){
 			@include transform-origin(top right);
-			@include transform(scale(0.6));
-			min-height: 600px;
-		
+			@include transform(scale(0.7));
+			min-height: 1550px;	
 		}
 		@media (min-width: $screen-md-min){
 			@include transform(none);
-			min-height: 1600px;
-		
+			min-height: 2080px;
+		}
+		@media (min-width: $screen-lg-min){
+			min-height: 2000px;
 		}
 			
 		.tap{
@@ -180,7 +222,7 @@ body.homepage{
 				svg{
 					width: $hex-big-xs-wd;
     			height: $hex-big-xs-hg;	
-					@media (min-width: $screen-xs-min){
+					@media (min-width: $screen-sm-min){
     				width: $hex-big-sm-wd;
     				height: $hex-big-sm-hg;	
     			}
@@ -190,7 +232,7 @@ body.homepage{
     			font-size: em(20);
     			border-bottom: 4px solid $white;
     			@extend %center-align;
-    			@media (min-width: $screen-xs-min){
+    			@media (min-width: $screen-sm-min){
     				font-size: em(36);
     			}
     		}
@@ -202,7 +244,7 @@ body.homepage{
 				svg{
 					width: $hex-small-xs-wd;
     			height: $hex-small-xs-hg;	
-					@media (min-width: $screen-xs-min){
+					@media (min-width: $screen-sm-min){
     				width: $hex-small-sm-wd;
     				height: $hex-small-sm-hg;	
     			}
@@ -220,7 +262,7 @@ body.homepage{
 				right: 133px;
     		top: 288px;
     		font-size: em(10);
-    		@media (min-width: $screen-xs-min){
+    		@media (min-width: $screen-sm-min){
     			font-size: 1em;
     			width: auto;
 	    		right: 192px;
@@ -230,7 +272,7 @@ body.homepage{
 			&.hex-2{
 				right: 30px;
     		top: 140px;
-    		@media (min-width: $screen-xs-min){
+    		@media (min-width: $screen-sm-min){
     			right: 0;
     			top: 236px;
     		}
@@ -239,7 +281,7 @@ body.homepage{
     			font-size: em(20);
     			border-bottom: 4px solid $white;
     			@extend %center-align;
-    			@media (min-width: $screen-xs-min){
+    			@media (min-width: $screen-sm-min){
     				font-size: em(36);
     			}
     		}
@@ -248,7 +290,7 @@ body.homepage{
 				right: 133px;
     		top: 288px;
     		font-size: em(10);
-    		@media (min-width: $screen-xs-min){
+    		@media (min-width: $screen-sm-min){
     			font-size: 1em;
     			width: auto;
 	    		right: 182px;
@@ -259,7 +301,7 @@ body.homepage{
 				right: 205px;
     		top: 392px;
     		font-size: em(11);
-    		@media (min-width: $screen-xs-min){
+    		@media (min-width: $screen-sm-min){
     			font-size: em(18);
 	    		right: 314px;
     			top: 686px;
@@ -269,7 +311,7 @@ body.homepage{
 				right: 78px;
     		top: 400px;
     		font-size: em(12);
-    		@media (min-width: $screen-xs-min){
+    		@media (min-width: $screen-sm-min){
     			right: 84px;
 	    		top: 704px;
 	    		font-size: em(20);
@@ -279,7 +321,7 @@ body.homepage{
 				right: 20px;
     		top: 506px;
     		font-size: em(12);
-    		@media (min-width: $screen-xs-min){
+    		@media (min-width: $screen-sm-min){
     			right: 727px;
 	    		top: 931px;
 	    		font-size: em(20);
@@ -288,7 +330,7 @@ body.homepage{
 			&.hex-7{
 				right: 138px;
     		top: 510px;
-    		@media (min-width: $screen-xs-min){
+    		@media (min-width: $screen-sm-min){
     			width: auto;
     			right: 415px;
     			top: 867px;
@@ -298,7 +340,7 @@ body.homepage{
     			font-size: em(20);
     			border-bottom: 4px solid $white;
     			@extend %center-align;
-    			@media (min-width: $screen-xs-min){
+    			@media (min-width: $screen-sm-min){
     				font-size: em(36);
     			}
     		}
@@ -307,7 +349,7 @@ body.homepage{
 				right: 203px;
     		top: 676px;
     		font-size: em(12);
-    		@media (min-width: $screen-xs-min){
+    		@media (min-width: $screen-sm-min){
     			right: 199px;
     			top: 903px;
 	    		font-size: em(20);
@@ -317,7 +359,7 @@ body.homepage{
 				right: 81px;
     		top: 658px;
     		font-size: em(10);
-    		@media (min-width: $screen-xs-min){
+    		@media (min-width: $screen-sm-min){
     			right: 625px;
     			top: 1120px;
 	    		font-size: em(14);
@@ -326,7 +368,7 @@ body.homepage{
     			width: 80px;
     			height: 30px;
     			overflow: hidden;
-    			@media (min-width: $screen-xs-min){
+    			@media (min-width: $screen-sm-min){
 	    			width: 112px;
 	    			height: 43px;
     			}    			
@@ -336,7 +378,7 @@ body.homepage{
 				right: 16px;
     		top: 770px;
     		font-size: em(11);
-    		@media (min-width: $screen-xs-min){
+    		@media (min-width: $screen-sm-min){
     			right: 348px;
     			top: 1152px;
 	    		font-size: em(20);
@@ -346,35 +388,24 @@ body.homepage{
 				right: 137px;
     		top: 781px;
     		font-size: em(11);
-    		@media (min-width: $screen-xs-min){
-    			right: 512px;
-    			top: 1309px;
+    		@media (min-width: $screen-sm-min){
+    			right: 218px;
+    			top: 1345px;
 	    		font-size: em(20);
     		}    						
 			}
 			&.hex-12{
-				right: 144px;
-    		top: 1039px;
-    		font-size: em(12);
-    		@media (min-width: $screen-xs-min){
-    			font-size: em(20);
-	    		right: 215px;
-    			top: 1342px;
-    		}    		
-			}
-			&.hex-12{
 				right: 49px;
     		top: 883px;
-    		@media (min-width: $screen-xs-min){
-    			right: 585px;
-    			top: 1498px;
+    		@media (min-width: $screen-sm-min){
+    			right: 586px;
+    			top: 1500px;
     		}
-    		    		.text{
+    		.text{
     			line-height: em(20);
     			font-size: em(20);
     			border-bottom: 4px solid $white;
-    			@extend %center-align;
-    			@media (min-width: $screen-xs-min){
+    			@media (min-width: $screen-sm-min){
     				font-size: em(36);
     			}
     		}    		
@@ -383,27 +414,27 @@ body.homepage{
 				right: 20px;
     		top: 1037px;
     		font-size: em(12);
-    		@media (min-width: $screen-xs-min){
+    		@media (min-width: $screen-sm-min){
     			font-size: em(20);
-	    		right: 368px;
-    			top: 1529px;
+	    		right: 373px;
+    			top: 1528px;
     		}    		
 			}
 			&.hex-14{
 				right: 204px;
     		top: 1147px;
     		font-size: em(12);
-    		@media (min-width: $screen-xs-min){
+    		@media (min-width: $screen-sm-min){
     			font-size: em(20);
 		    	right: 147px;
-	    		top: 1536px;
+	    		top: 1537px;
     		}    		
 			}
 			&.hex-15{
 				right: 78px;
     		top: 1154px;
     		font-size: em(12);
-    		@media (min-width: $screen-xs-min){
+    		@media (min-width: $screen-sm-min){
     			font-size: em(20);
 	    		right: 260px;
     			top: 1713px;
@@ -413,7 +444,7 @@ body.homepage{
 				right: 145px;
     		top: 1260px;
     		font-size: em(12);
-    		@media (min-width: $screen-xs-min){
+    		@media (min-width: $screen-sm-min){
     			font-size: em(20);
 	    		right: 29px;
     			top: 1713px;

@@ -1,79 +1,140 @@
-#subscribe{
-		.chair{
-			position: absolute;
-      left: -30px;
-    	top: -171px;
-    	width: 198px;
-    	@media (min-width: $screen-sm-min){
-    		left: 104px;
-    		top: -303px;
-    		width: auto;
-    	}
-		}
-		h2{
-			color: $white;
-			background: $green;
-			float: left;
-			margin-top: 0;
-			padding: em(10,45) em(20,45) em(10,45) em(9,45);
-			margin-bottom: em(20,45);
-			font-size: em(45);			
-		}
-		.line-pattern{
-			padding: em(69,45) em(210,45) em(30,45) em(240,45);
-		}
-		.form{
-			input{
-				font-size: em(24);
+#main-content{
+	#subscribe{
+		margin-bottom: em(40);
+			.main-content{
 				padding: 0;
-				height: em(74,24);				
+				@media (min-width: $screen-sm-min){
+					padding: inherit;
+				}
+			}		
+			.chair{
+				position: absolute;
+	      left: -30px;
+	    	top: -171px;
+	    	width: 198px;
+	    	@media (min-width: $screen-sm-min){
+	    		left: 0;
+	    		top: -303px;
+	    		width: auto;
+	    	}
+	    	@media (min-width: $screen-md-min){
+	    	}
 			}
-			input[type=text],
-			input[type=email]{
-				background: $white;
-				border: none;
-				@include box-shadow(none);
-				margin-right: 17px;
-				padding: 0 em(31,24);
-    		line-height: 1em;
-    		width: 100%;
-    		margin-bottom: 1em;
-    		@media (min-width: $screen-sm-min){
-    			width: 33.178%;
-    			margin-bottom: 0;    			
+			h2{
+				color: $white;
+				background: $green;
+				float: left;
+				margin-top: 0;
+				padding: em(10,28) em(20,28) em(10,28) em(9,28);
+				margin-bottom: em(20,28);
+				font-size: em(28);
+				@media (min-width: $screen-sm-min){
+					padding: em(10,45) em(20,45) em(10,45) em(9,45);
+					margin-bottom: em(20,45);
+					font-size: em(45);
+				}			
+			}
+			.line-pattern{
+				padding: em(20);
+				@media (min-width: $screen-sm-min){
+					padding: em(69,45) em(210,45) em(30,45) em(240,45);
 				}
 			}
-			input[type=submit]
-			{
-				border:0;
-				background: $green;
-				color: $white;
-				text-decoration: underline;
-				font-weight: bold;
-				@include border-radius(0);
-				font-size: em(25);
-				padding: 0 em(50,25);
-    		line-height: 1em;    		
+			.form{
+				input{
+					padding: 0;
+					font-size: em(18);
+					height: em(60,18);
+					@media (min-width: $screen-sm-min){
+						font-size: em(24);
+						height: em(74,24);
+					}				
+				}
+				input[type=text],
+				input[type=email]{
+					background: $white;
+					border: none;
+					@include box-shadow(none);
+					margin-right: 17px;
+					padding: 0 em(31,24);
+	    		line-height: 1em;
+	    		width: 100%;
+	    		margin-bottom: 1em;
+	    		@media (min-width: $screen-sm-min){
+	    			width: 33.178%;
+	    			margin-bottom: em(20,24);    			
+					}
+					@media (min-width: $screen-md-min){
+						margin-bottom: 0;
+					}
+					@media (min-width: $screen-lg-min){
+						width: 29%;
+					}
+					@media (min-width: $screen-xl-min){
+						width: 33.178%;
+					}
+				}
+				input[type=submit]
+				{
+					border:0;
+					background: $green;
+					color: $white;
+					text-decoration: underline;
+					font-weight: bold;
+					@include border-radius(0);
+					line-height: 1em;
+	    		font-size: em(19);
+					padding: 0 em(50,19);
+	    		@media (min-width: $screen-sm-min){
+	    			font-size: em(25);
+						padding: 0 em(50,25);
+	    		}
+	    		@media (min-width: $screen-md-min){
+	    			padding: 0 em(20,25);
+	    		}
+	    		@media (min-width: $screen-lg-min){
+	    			padding: 0 em(50,25);
+	    		}   		
+				}
 			}
-		}
-		.we-love-basket{
-			position: absolute;
-	    right: 30px;
-		  bottom: -30px;
-		  width: 87px;
-			@media (min-width: $screen-sm-min){
-				right: 96px;
-	    	bottom: -28px;
-	    	top: inherit;
-	    	width: auto;
-    	}
-			i{
+			.we-love-basket{
 				position: absolute;
-				color: $pale-blue;
-				top: 20px;
-				right: -22px;
+		    right: 30px;
+			  bottom: -30px;
+			  width: 87px;
 				@media (min-width: $screen-sm-min){
-					font-size: 50px;
+					right: 96px;
+		    	bottom: -28px;
+		    	top: inherit;
+		    	width: 120px;
+	    	}
+	    	@media (min-width: $screen-md-min){
+					right: 35px;
+		    	bottom: -28px;
+		    	top: inherit;
+		    	width: 120px;
+	    	}
+	    	@media (min-width: $screen-lg-min){
+	    		right: 65px;
+		    	bottom: -28px;
+		    	top: inherit;
+		    	width: auto;
+	    	}
+	    	@media (min-width: $screen-lg-min){
+	    		right: 96px;
+	    	}
+				.we-love{
+					position: absolute;
+					bottom: 15px;
+					right: -20px;
+					@media (min-width: $screen-sm-min){
+						bottom: 16px;
+						right: -28px;
+					}					
+					@media (min-width: $screen-md-min){
+						bottom: 35px;
+						right: -45px;
+					}
 				}
 			}
 		}

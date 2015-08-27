@@ -6,9 +6,15 @@ body.spring-2015{
 		z-index: 21;
 		cursor: pointer;
 		img{
-			max-width: 113px;
+			width: 113px;
+			height: 77px;
+			@media (min-width: $screen-sm-min){
+				width: 180px;
+				height: 123px;
+			}
 			@media (min-width: $screen-lg-min){
-				max-width: 100%;
+				width: 225px;
+				height: 154px;
 			}
 		}
 		.menu{
@@ -17,6 +23,12 @@ body.spring-2015{
 			height: 16.5px;
 			top: 31.5px;
 			right: 15px;
+			@media (min-width: $screen-sm-min){
+				width: 26.4px;
+				height: 26.4px;
+				top: 54px;
+				right: 24px;				
+			}
 			@media (min-width: $screen-lg-min){
 				width: 33px;
 				height: 33px;
@@ -30,6 +42,9 @@ body.spring-2015{
 				width: 100%;
 				opacity: 1;
 				@include transition(0.3s all ease-out);
+				@media (min-width: $screen-sm-min){
+					height: 3px;
+				}
 				@media (min-width: $screen-lg-min){
 					height: 4px;
 				}
@@ -39,12 +54,18 @@ body.spring-2015{
 			}
 			.line-2{
 				top: 6px;
+				@media (min-width: $screen-sm-min){
+					top: 9px;
+				}
 				@media (min-width: $screen-lg-min){
 					top:12px;
 				}
 			}
 			.line-3{
 				top:12px;
+				@media (min-width: $screen-sm-min){
+					top: 18px;
+				}
 				@media (min-width: $screen-lg-min){
 					top:24px;
 				}
@@ -64,6 +85,12 @@ body.spring-2015{
 				line-height: em(12);
 				opacity: 1;
 				@include transition(0.2s all ease-out);
+				@media (min-width: $screen-sm-min){
+					font-size: em(12);
+					padding: em(5,12) em(5,12);
+					top: -9.6px;
+					right: -9.6px;
+				}
 				@media (min-width: $screen-lg-min){
 					font-size: em(15);
 					padding: em(2,15) em(8,15);
@@ -79,7 +106,10 @@ body.spring-2015{
 		&.active{
 			.menu{
 				.line-1{
-					top: 6px;					
+					top: 6px;
+					@media (min-width: $screen-sm-min){
+						top: 9px;
+					}					
 					@media (min-width: $screen-lg-min){
 						top: 12px;					
 					}
@@ -87,6 +117,9 @@ body.spring-2015{
 				}
 				.line-3{
 					top: 6px;
+					@media (min-width: $screen-sm-min){
+						top: 9px;
+					}
 					@media (min-width: $screen-lg-min){
 						top: 12px;					
 					}					

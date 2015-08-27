@@ -1,7 +1,9 @@
 body.homepage{
 	#banner{
 		position: relative;
-		margin-top: 40px;
+		padding-top: em(30);
+		max-width: 1520px;
+		margin: 0 auto;
 		.image{
 			overflow: hidden;
 		}
@@ -11,7 +13,6 @@ body.homepage{
 			bottom: 0;
 			width: 30%;
 			@include transform(translateY(20%));
-						
 		}
 	}
 	#homepage{

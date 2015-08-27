@@ -28,6 +28,7 @@ body.homepage{
 				padding-left: em(30,22);
 				padding-top: em(50,22);
 				padding-right: em(40,22);
+				text-decoration: underline;
 				@media (min-width: $screen-sm-min){
 					position: absolute;
 					width: 450px;
@@ -76,10 +77,11 @@ body.homepage{
 	.plant{
 		position: absolute;
 		left:0;
-		top: 177px;
+		top: -100px;
 		max-width: 70px;
 		@include transform(translateX(-10px));
 		@media (min-width: $screen-sm-min){
+			top: 177px;
 			max-width: 214px;
 			@include transform(translateX(-30px));
 		}
@@ -87,9 +89,9 @@ body.homepage{
 	.candle{
 		position: absolute;
 		left:0;
-		top: 417px;	
+		top: 150px;	
 		max-width: 73px;
-		@include transform(translateX(-9px));
+		@include transform(translateX(-30px));
 		@media (min-width: $screen-sm-min){
 			top: 920px;	
 			max-width: 229px;
@@ -105,7 +107,7 @@ body.homepage{
 	.bathtub{
 		position: absolute;
 		left:0;
-		top: 1047px;
+		top: 335px;
 		max-width: 192px;
 		@include transform(translateX(-95px));
 		@media (min-width: $screen-sm-min){
@@ -123,9 +125,9 @@ body.homepage{
 	.towels{
 		position: absolute;
 		right:0;
-		top: 422px;
-		max-width: 272px;
-		@include transform(translateX(170px));
+		top: 420px;
+		max-width: 130px;
+		@include transform(translateX(34px));
 		@media (min-width: $screen-sm-min){
 			top: 880px;
 			max-width: 611px;
@@ -142,10 +144,12 @@ body.homepage{
 		position: relative;
 		z-index: 2;
 		min-height: 1600px;
-		max-width: 1194px;
+		width: 280px;
 		margin: 0 auto;
 		margin-top: 40px;
 		@media (min-width: $screen-sm-min){
+			width: auto;
+			max-width: 1194px;
 			@include transform-origin(top right);
 			@include transform(scale(0.7));
 			min-height: 1550px;	
@@ -260,10 +264,12 @@ body.homepage{
 				font-weight: 700;
 			}
 			&.hex-1{
+				display: none;
 				right: 133px;
     		top: 288px;
     		font-size: em(10);
     		@media (min-width: $screen-sm-min){
+    			display: block;
     			font-size: 1em;
     			width: auto;
 	    		right: 192px;
@@ -271,8 +277,8 @@ body.homepage{
     		}    		
 			}
 			&.hex-2{
-				right: 30px;
-    		top: 140px;
+				right: 0;
+    		top: 0;
     		@media (min-width: $screen-sm-min){
     			right: 0;
     			top: 236px;
@@ -288,10 +294,12 @@ body.homepage{
     		}
 			}
 			&.hex-3{
+				display: none;
 				right: 133px;
     		top: 288px;
     		font-size: em(10);
     		@media (min-width: $screen-sm-min){
+    			display: block;
     			font-size: 1em;
     			width: auto;
 	    		right: 182px;
@@ -299,18 +307,20 @@ body.homepage{
     		}    		
 			}
 			&.hex-4{
+				display: none;
 				right: 205px;
     		top: 392px;
     		font-size: em(11);
     		@media (min-width: $screen-sm-min){
+    			display: block;
     			font-size: em(18);
 	    		right: 314px;
     			top: 686px;
     		}    		
 			}
 			&.hex-5{
-				right: 78px;
-    		top: 400px;
+				right: 90px;
+    		top: 155px;
     		font-size: em(12);
     		@media (min-width: $screen-sm-min){
     			right: 84px;
@@ -319,8 +329,8 @@ body.homepage{
     		}    		
 			}
 			&.hex-6{
-				right: 20px;
-    		top: 506px;
+				right: 0px;
+    		top: 264px;
     		font-size: em(12);
     		@media (min-width: $screen-sm-min){
     			right: 727px;
@@ -329,8 +339,8 @@ body.homepage{
     		}    		    		
 			}
 			&.hex-7{
-				right: 138px;
-    		top: 510px;
+				right: 127px;
+    		top: 277px;
     		@media (min-width: $screen-sm-min){
     			width: auto;
     			right: 415px;
@@ -347,8 +357,8 @@ body.homepage{
     		}
 			}
 			&.hex-8{
-				right: 203px;
-    		top: 676px;
+				right: 27px;
+    		top: 407px;
     		font-size: em(12);
     		@media (min-width: $screen-sm-min){
     			right: 199px;

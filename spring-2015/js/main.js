@@ -311,11 +311,12 @@ jQuery(function($){
 				success: function(data){
 					$('#main-content').append(data);
 					if (!isMobile) {
-						var controller = new ScrollMagic.Controller();
+						var controller = new ScrollMagic.Controller({ container: '.ocmain-wrapper'});
 
 						var scene = new ScrollMagic.Scene({triggerElement: "#circular-gallery .circle"})
 										.setClassToggle("#circular-gallery .circle", "active")
-										.addTo(controller);
+										//.addIndicators()
+										.addTo(controller);										
 					}else{
 						$("#circular-gallery .circle").addClass('active');
 					}

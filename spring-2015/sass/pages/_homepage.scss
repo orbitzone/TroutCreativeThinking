@@ -30,7 +30,7 @@ body.homepage{
 				padding-right: em(40,22);
 				@media (min-width: $screen-sm-min){
 					position: absolute;
-					width: 450px;
+					width: 400px;
 					font-size: em(30);
 					padding-left: em(30,30);
 					padding-top: em(30,30);
@@ -38,13 +38,13 @@ body.homepage{
 				}
 				@media (min-width: $screen-md-min){
 					position: absolute;
-					width: 520px;
+					width: 496px;
 					font-size: em(36);
 					padding-left: 0;
 					padding-top: em(30,36);
 				}
 				@media (min-width: $screen-lg-min){
-					width: 710px;
+					width: 698px;
 					font-size: em(50);
 				}
 				@media (min-width: $screen-xl-min){
@@ -96,8 +96,8 @@ body.homepage{
 			left:-100px;
 		}
 		@media (min-width: $screen-xl-min){
-			top: -165px;
-			max-width: 245px;
+			top: -265px;
+			max-width: 100%;
 			left:0;
 		}
 	}
@@ -117,7 +117,13 @@ body.homepage{
 			left: -190px;
 		}
 		@media (min-width: $screen-lg-min){
+			top: 400px;
 			left: -30px;
+			max-width: 180px;
+		}
+		@media (min-width: $screen-xl-min){
+			left: -30px;
+			top: 800px;
 		}
 	}
 	.bathtub{

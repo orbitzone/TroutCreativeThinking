@@ -7585,7 +7585,7 @@ h6 {
   overflow: hidden;
   text-indent: 100px;
   width: 55px;
-  background-image: url('/images/home-2013/reece-logo-mobile.png');
+  background-image: url('http://www.reece.com.au/themes/reece/images/home-2013/reece-logo-mobile.png');
   background-color: #eee;
   background-position: 10px center;
   background-repeat: no-repeat;
@@ -7956,10 +7956,10 @@ h6 {
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 13/10), only screen and (min-resolution: 120dpi) {
   .navbar .brand {
-    background-image: url('/images/reece-logo2X.png');
+    background-image: url('http://www.reece.com.au/themes/reece/images/reece-logo2X.png');
   }
   .happiness-subNav .navbar-container {
-    background-image: url('/images/happiness-logo2X.png');
+    background-image: url('http://www.reece.com.au/themes/reece/images/happiness-logo2X.png');
   }
 }
 .topNav {
@@ -7995,7 +7995,7 @@ h6 {
   width: 120px;
   height: 50px;
   margin-bottom: 0px;
-  background: #ffffff url('/images/reece-logo.png') no-repeat 0px;
+  background: #ffffff url('http://www.reece.com.au/themes/reece/images/reece-logo.png') no-repeat 0px;
   background-size: 100%;
   float: left;
 }
@@ -8135,7 +8135,7 @@ h6 {
   background: #c91d1d;
 }
 .happiness-subNav .navbar-container {
-  background: url('../images/happiness-logo.png') right center no-repeat;
+  background: url('..http://www.reece.com.au/themes/reece/images/happiness-logo.png') right center no-repeat;
   background-size: 154px 21px;
 }
 .happiness-subNav ul.nav li a {
@@ -9245,7 +9245,7 @@ h6 {
   position: static;
 }
 .lt-ie9 .navbar-fixed-top .brand {
-  background-image: url(../images/home-2013/reece-logo-ie.png);
+  background-image: url(..http://www.reece.com.au/themes/reece/images/home-2013/reece-logo-ie.png);
   background-repeat: no-repeat;
   background-color: white;
   background-position: 2px center;
@@ -9319,7 +9319,7 @@ h6 {
 }
 .lt-ie9 .home-theme .find-store .top {
   background: #848484;
-  background-image: url('../images/home-2013/au-map-mini.png');
+  background-image: url('..http://www.reece.com.au/themes/reece/images/home-2013/au-map-mini.png');
   background-position: 95% center;
   background-repeat: no-repeat;
 }
@@ -9439,7 +9439,7 @@ h6 {
 }
 .trade-landing-page .works-for-you {
   background-attachment: fixed;
-  background-image: url("/images/wfy-background.jpg");
+  background-image: url("http://www.reece.com.au/themes/reece/images/wfy-background.jpg");
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9974,7 +9974,7 @@ h6 {
   width: 120px;
   height: 80px;
   padding-top: 40px;
-  background: url('/images/products_2013/blank-badge.png');
+  background: url('http://www.reece.com.au/themes/reece/images/products_2013/blank-badge.png');
   background-size: 120px 120px;
   text-align: center;
   color: white;
@@ -10340,7 +10340,7 @@ html.no-js .products-sort-filter .dropdown li {
   display: none;
 }
 .more-products-button.loading {
-  background: url(../images/ajax-loader.gif) center center no-repeat #db1e23;
+  background: url(..http://www.reece.com.au/themes/reece/images/ajax-loader.gif) center center no-repeat #db1e23;
 }
 .more-products-button.loading span {
   visibility: hidden;
@@ -10601,7 +10601,7 @@ div.more-products-button a {
   text-align: center;
 }
 .ajax-preloader:before {
-  background-image: url("../images/products_2013/ajax-preloader.gif");
+  background-image: url("..http://www.reece.com.au/themes/reece/images/products_2013/ajax-preloader.gif");
   background-position: center center;
   background-repeat: no-repeat;
   width: 15px;

@@ -764,6 +764,11 @@ jQuery(function($){
 		if($('body').hasClass('bec-judd')){
 			becJudd.init();
 		}
+		$(document).on('touchstart','a', function(){
+			TweenMax.to($(this),0.5,{ scale: 0.9, ease: Power2.easeOut });
+		}).on('touchend','a', function(){
+			TweenMax.to($(this),0.5,{ scale: 1, ease: Elastic.easeOut });
+		});
 		moodboard.init();	
 		shareBoard.init();		
 	};

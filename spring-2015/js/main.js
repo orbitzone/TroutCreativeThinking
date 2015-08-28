@@ -310,15 +310,46 @@ jQuery(function($){
 				url: 'pages/family/circular-gallery.html',
 				success: function(data){
 					$('#main-content').append(data);
-					if (!isMobile) {
-						var controller = new ScrollMagic.Controller({ container: '.ocmain-wrapper'});
+					var controller = new ScrollMagic.Controller({ container: '.ocmain-wrapper'});
 
-						var scene = new ScrollMagic.Scene({triggerElement: "#circular-gallery .circle"})
-										.setClassToggle("#circular-gallery .circle", "active")
-										//.addIndicators()
-										.addTo(controller);										
+					var scene = new ScrollMagic.Scene({triggerElement: "#circular-gallery .circle"})
+									.setClassToggle("#circular-gallery .circle", "active")
+									//.addIndicators()
+									.addTo(controller);				
+					if (isMobile) {
+						// configure iScroll
+						var myScroll = new IScroll('.ocmain-wrapper',
+									{
+										// don't scroll horizontal
+										scrollX: false,
+										// but do scroll vertical
+										scrollY: true,
+										// show scrollbars
+										scrollbars: true,
+										// deactivating -webkit-transform because pin wouldn't work because of a webkit bug: https://code.google.com/p/chromium/issues/detail?id=20574
+										// if you dont use pinning, keep "useTransform" set to true, as it is far better in terms of performance.
+										useTransform: false,
+										// deativate css-transition to force requestAnimationFrame (implicit with probeType 3)
+										useTransition: false,
+										// set to highest probing level to get scroll events even during momentum and bounce
+										// requires inclusion of iscroll-probe.js
+										probeType: 3,
+										// pass through clicks inside scroll container
+										click: true 
+									}
+								);
+						
+						// overwrite scroll position calculation to use child's offset instead of container's scrollTop();
+						controller.scrollPos(function () {
+							return -myScroll.y;
+						});
+
+						// thanks to iScroll 5 we now have a real onScroll event (with some performance drawbacks)
+						myScroll.on("scroll", function () {
+							controller.update();
+						});						
 					}else{
-						$("#circular-gallery .circle").addClass('active');
+						
 					}
 					loveFamily.smartStorage();
 				}

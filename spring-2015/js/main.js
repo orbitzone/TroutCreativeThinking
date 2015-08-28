@@ -743,6 +743,7 @@ jQuery(function($){
 	});
 	
 	function init(){
+		$('html').addClass('spring-2015');
 		if($('body').hasClass('homepage')){
 			homePage.init();	
 		}

@@ -315,7 +315,7 @@ jQuery(function($){
 
 						var scene = new ScrollMagic.Scene({triggerElement: "#circular-gallery .circle"})
 										.setClassToggle("#circular-gallery .circle", "active")
-										//.addIndicators()
+										.addIndicators()
 										.addTo(controller);				
 						alert('mobile');
 						// configure iScroll
@@ -354,7 +354,8 @@ jQuery(function($){
 
 						var scene = new ScrollMagic.Scene({triggerElement: "#circular-gallery .circle"})
 										.setClassToggle("#circular-gallery .circle", "active")
-										//.addIndicators()
+										.triggerHook(1)
+										.addIndicators()
 										.addTo(controller);				
 
 					}

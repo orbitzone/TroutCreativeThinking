@@ -86,6 +86,8 @@ body.spring-2015{
 	  }
 	  *{
 			@extend %border-box;
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	    -moz-tap-highlight-color: rgba(0, 0, 0, 0);		
 		}
 		.slick-slide{
 			outline: none !important;

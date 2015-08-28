@@ -5,6 +5,12 @@ body.spring-2015{
 		left: 0;
 		z-index: 21;
 		cursor: pointer;
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	   -moz-tap-highlight-color: rgba(0, 0, 0, 0);	
+		*{
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	    -moz-tap-highlight-color: rgba(0, 0, 0, 0);	
+		}
 		img{
 			width: 113px;
 			height: 77px;
@@ -149,6 +155,8 @@ body.spring-2015{
 		text-align: center;
 		*{
 			@extend %border-box;
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	    -moz-tap-highlight-color: rgba(0, 0, 0, 0);	
 		}
 		.dh-content{
 			height: 100%;
@@ -157,6 +165,7 @@ body.spring-2015{
 			padding: 0 30px;
 			a{
 				color: $white;
+				outline: none;
 			}
 			h2{
 				font-size: 1em;

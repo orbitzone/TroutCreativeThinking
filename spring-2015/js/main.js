@@ -310,13 +310,13 @@ jQuery(function($){
 				url: 'pages/family/circular-gallery.html',
 				success: function(data){
 					$('#main-content').append(data);
-					var controller = new ScrollMagic.Controller({ container: '.ocmain-wrapper'});
-
-					var scene = new ScrollMagic.Scene({triggerElement: "#circular-gallery .circle"})
-									.setClassToggle("#circular-gallery .circle", "active")
-									//.addIndicators()
-									.addTo(controller);				
 					if (isMobile) {
+						var controller = new ScrollMagic.Controller({ container: '.ocmain-wrapper'});
+
+						var scene = new ScrollMagic.Scene({triggerElement: "#circular-gallery .circle"})
+										.setClassToggle("#circular-gallery .circle", "active")
+										//.addIndicators()
+										.addTo(controller);				
 						alert('mobile');
 						// configure iScroll
 						var myScroll = new IScroll('.ocmain-wrapper',
@@ -350,7 +350,13 @@ jQuery(function($){
 							controller.update();
 						});						
 					}else{
-						
+						var controller = new ScrollMagic.Controller();
+
+						var scene = new ScrollMagic.Scene({triggerElement: "#circular-gallery .circle"})
+										.setClassToggle("#circular-gallery .circle", "active")
+										//.addIndicators()
+										.addTo(controller);				
+
 					}
 					loveFamily.smartStorage();
 				}

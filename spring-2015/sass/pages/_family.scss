@@ -11,6 +11,7 @@ body.love-family{
 			background: none;
 			position: relative;
 			overflow: hidden;
+			margin-top: em(40);
 			h1{
 				color: $pink;
 				position: absolute;
@@ -26,19 +27,19 @@ body.love-family{
 		.intro{
 			position: relative;
 			color: $pink;
-			padding-top: 20px;
+			padding-top: em(20);
 			@media (min-width: $screen-md-min){
-				padding-top: 100px;
+				padding-top: em(97);
 			}
 			.shelves{
 				@media (min-width: $screen-sm-min){
-		    	padding: 41px 0 0 27px;
+		    	padding: em(41) 0 0 em(27);
 		    }
 		    @media (min-width: $screen-lg-min){
-		    	padding: 82px 0 0 54px;
+		    	padding: em(82) 0 0 em(54);
 		    }
 		    img{
-		    	max-width: 120px;
+		    	max-width: em(120);
 		    	@media (min-width: $screen-sm-min){
 		    		max-width: 100%;
 		    	}
@@ -50,18 +51,18 @@ body.love-family{
 				top: 0;
 				z-index: 0;
 				@media (min-width: $screen-md-min){
-					right: 20px;
+					right: em(20);
 				}
 				@media (min-width: $screen-lg-min){
-					right: 114px;
+					right: em(113);
 				}
 				img{
-					max-width: 48px;
+					max-width: em(48);
 					@media (min-width: $screen-sm-min){
-						max-width: 60px;	
+						max-width: em(60);	
 					}
 					@media (min-width: $screen-md-min){
-						max-width: 97px;
+						max-width: em(97);
 					}
 				}
 			}
@@ -70,49 +71,186 @@ body.love-family{
 				z-index: 1;
 				font-size: em(16);
 				font-weight: 700;
-			  line-height: 1.2em;	
+			  line-height: em(20);	
 			  padding-right: 50px;
 			  @media (min-width: $screen-sm-min){
-			  	font-size: em(34);
+			  	font-size: em(20);
+			  	line-height: em(24,20);	
 			  	padding-right: 0;
 			  }
+			  @media (min-width: $screen-md-min){
+			  	font-size: em(34);
+			  	line-height: em(41,34);	
+			  }
 			  @media (min-width: $screen-lg-min){
-		    	padding-left: 110px;
+    	    padding-left: em(110, 34);
+    			max-width: em(695,34);
     		}
     		p{
-    			margin-bottom: 1.3em;
+    			margin-bottom: em(20);
     		}
 			}	
 		}
 		.happy-family-bathroom{
 			position: relative;
-			margin-bottom: 50px;
-			.description{
-				margin-bottom: 60px;
+			margin-bottom: em(50);
+			.products-we-love{
+				position: relative;
 				@media (min-width: $screen-sm-min){
-					max-width: 330px;
-					position: absolute;
-			    	top: 80px;
-	   		    	z-index: 2;
-					margin-bottom: 0;
+					float:right;
+					width: 380px;
+					margin-right: 20px;	
 				}
 				@media (min-width: $screen-md-min){
-					top: 192px;					
+					float:right;
+					width: 483px;
+					margin-right: 20px;	
 				}
 				@media (min-width: $screen-lg-min){
-					left: 216px;					
+					float:right;
+					width: 483px;
+					margin-right: 204px;	
+				}
+				.we-love{
+					position: absolute;
+					top: em(-32);
+   				left: em(21);   				
+				}
+				.white-box{
+					background: $white;					
+				}
+				.product-1{
+					position: relative;
+			    padding: em(120) em(30) em(20);
+			    @media (min-width: $screen-md-min){
+			    	padding: em(132) em(84) em(20) em(62);
+			    }
+					.image{
+						position: absolute;
+						max-width: em(131);
+						z-index: 1;
+						top: em(-20);
+						right: em(6);
+						@media (min-width: $screen-sm-min){
+							top: em(-75);
+							right: em(30);
+						}
+						@media (min-width: $screen-md-min){
+			        top: em(-171);
+	    				right: em(31);
+						}
+						img{
+							max-width: em(70);
+							@media (min-width: $screen-sm-min){
+								max-width: em(90);
+							}
+							@media (min-width: $screen-md-min){
+								max-width: 100%;
+							}
+						}
+					}
+					.white-box{
+						font-size: em(14);
+						line-height: em(18,14);
+						padding: em(15,14) em(30,14) em(15,14) em(20,14);
+				   	@media (min-width: $screen-sm-min){
+							font-size: em(18);
+					    padding: em(33,18) em(76,18) em(15,18) em(30,18);
+					    line-height: em(22,18);
+						}					
+					}
+					.share{
+						position: absolute;
+				    top: em(116);
+   					left: em(40);
+   					@media (min-width: $screen-md-min){
+   						top: em(277);
+   						left: em(55);
+   					}
+					}
+					.button-mood-shop{
+						float: right;
+						margin-top: em(18);
+						position: relative;
+						z-index: 2;
+						@media (min-width: $screen-lg-min){
+							margin-top: em(25);
+						}
+					}
+				}
+				.product-2{
+					position: relative;
+			    padding: em(220) em(15) em(30);
+			    @media (min-width: $screen-sm-min){
+			    	padding: em(240) em(15) em(30);
+			    }
+			    @media (min-width: $screen-md-min){
+			    	padding: em(130) em(29) em(30) em(47);
+			    }
+					.image{
+						position: absolute;
+						top: em(20);
+						left: em(-20);
+						@media (min-width: $screen-md-min){
+			        top: em(-30);
+	    				left: em(-20);
+    				}
+						@media (min-width: $screen-lg-min){
+			        top: em(-68);
+	    				left: em(-43);
+    				}
+					}
+					.white-box{
+						padding: em(15) em(10) em(15) em(15);
+						font-size: em(14);
+						line-height: em(18,14);
+						@media (min-width: $screen-sm-min){
+							font-size: em(18);
+							padding: em(24,18) em(20,18) em(20,18) em(29,18);
+							line-height: em(22,18);
+						}				    
+					}
+					.share{
+				    top: em(9);
+						left: em(177);
+						position: absolute;
+					}
+					.button-mood-shop{
+						margin-top: em(20);
+					}					
+				}
+			}				
+		}			
+	}
+
+	#bathrooms-for-inspiration{
+		margin-bottom: em(40);
+		.description{
+				margin-bottom: em(60);
+				@media (min-width: $screen-sm-min){
+					
+				}
+				@media (min-width: $screen-md-min){
+					max-width: em(522);
+					position: absolute;
+			    top: 0;
+			    left: em(245);
+	   		  z-index: 2;
+	   		  padding-bottom: em(173);
+					margin-bottom: 0;
+					@include transform(translateY(-100%));
 				}
 				h2{
 					color: $green;
 					text-decoration: underline;
 					margin-top: 0;
-					margin-bottom: 20px;
-				    line-height: 1.2em;
-			    	font-size: em(30);
-				    @media (min-width: $screen-sm-min){
-				    	margin-bottom: 40px;
-				    	font-size: em(60);
-				    }			    
+					line-height: 1.2em;
+		    	font-size: em(30);
+			    margin-bottom: em(20,30);
+			    @media (min-width: $screen-sm-min){
+			    	font-size: em(60);
+			    	margin-bottom: em(40,60);			    	
+			    }			    
 				}
 				p{
 					font-size: em(16);
@@ -123,140 +261,6 @@ body.love-family{
 					}	
 				}
 			}
-			.products-we-love{
-				position: relative;
-				@media (min-width: $screen-sm-min){
-					float:right;
-					width: 380px;
-					margin-right: 20px;	
-				}
-				@media (min-width: $screen-md-min){
-					float:right;
-					width: 492px;
-					margin-right: 20px;	
-				}
-				@media (min-width: $screen-lg-min){
-					float:right;
-					width: 492px;
-					margin-right: 204px;	
-				}
-				.we-love{
-					position: absolute;
-					top: -36px;
-   				left: 28px;   				
-				}
-				.white-box{
-					background: $white;					
-				}
-				.product-1{
-					position: relative;
-			    padding: 120px 30px 20px;
-			    @media (min-width: $screen-md-min){
-			    	padding: 132px 61px 20px 70px;
-			    }
-					.image{
-						position: absolute;
-						max-width: 131px;
-						z-index: 1;
-						top: -20px;
-						right: 6px;
-						@media (min-width: $screen-sm-min){
-							top: -75px;
-							right: 30px;
-						}
-						@media (min-width: $screen-md-min){
-			        top: -174px;
-	    				right: 32px;
-						}
-						img{
-							max-width: 70px;
-							@media (min-width: $screen-sm-min){
-								max-width: 90px;
-							}
-							@media (min-width: $screen-md-min){
-								max-width: 100%;
-							}
-						}
-					}
-					.white-box{
-						font-size: em(14);
-						line-height: 1.2em;
-						padding: 15px 30px 15px 15px;
-						@media (min-width: $screen-sm-min){
-							font-size: em(18);
-						}
-						@media (min-width: $screen-md-min){
-							padding: 30px;
-						}					
-					}
-					.share{
-						position: absolute;
-				    top: 116px;
-   					left: 40px;
-   					@media (min-width: $screen-md-min){
-   						top: 286px;
-   						left: 61px;
-   					}
-					}
-					.button-mood-shop{
-						float: right;
-						margin-top: 18px;
-						position: relative;
-						z-index: 2;
-						@media (min-width: $screen-lg-min){
-							margin-top: 28px;
-						}
-					}
-				}
-				.product-2{
-					position: relative;
-			    padding: 220px 15px 30px;
-			    @media (min-width: $screen-sm-min){
-			    	padding: 240px 15px 30px;
-			    }
-			    @media (min-width: $screen-md-min){
-			    	padding: 181px 29px 30px 47px;
-			    }
-					.image{
-						position: absolute;
-						top: 20px;
-						left: -20px;
-						@media (min-width: $screen-md-min){
-			        top: -30px;
-	    				left: -20px;
-    				}
-						@media (min-width: $screen-lg-min){
-			        top: -12px;
-	    				left: -35px;
-    				}
-					}
-					.white-box{
-						line-height: 1.2em;
-						padding: 15px 10px 15px 15px;
-						font-size: em(14);
-						@media (min-width: $screen-sm-min){
-							font-size: em(18);
-							padding: 15px;
-						}
-						@media (min-width: $screen-md-min){
-							padding: 30px 10px 20px 35px;
-						}				    
-					}
-					.share{
-				    top: 15px;
-						left: 184px;
-						position: absolute;
-					}
-					.button-mood-shop{
-						margin-top: 19px;
-					}					
-				}
-			}	
-		}			
-	}
-
-	#bathrooms-for-inspiration{
-		margin-bottom: 40px;
 		.products-used{
 			h2{
 				color: $pink;
@@ -269,15 +273,13 @@ body.love-family{
 			padding: em(45) 0 em(120) em(30);
 			margin-bottom: em(40);
 			@media (min-width: $screen-sm-min){
-				padding: em(64) em(220) em(38) em(30);
+				padding: em(44) em(220) em(38) em(250);
 			}
 			@media (min-width: $screen-lg-min){
-				padding: em(64) em(220) em(38) em(258);
+				padding: em(44) em(220) em(38) em(250);
 			}
 			h2{
-				display: inline;
 				color: $pink;
-				background: $white;
 				font-size: em(30);
 				line-height: 1.14em;	
 				@media (min-width: $screen-sm-min){
@@ -285,35 +287,58 @@ body.love-family{
 				}
 				@media (min-width: $screen-md-min){
 					font-size: em(60);
+				}
+				span{
+					display: block;
+					float: left;
+					clear: both;
+					padding: em(2) em(10);
+					background: $white;
+					@media (min-width: $screen-md-min){
+						padding: em(2,60) em(10,60);
+					}
 				}				
 			}
-			.we-love-stool{
+			.we-love-stool-wrap{
 				position: absolute;
-				right: 20px;
-				bottom: -28px;
-				@media (min-width: $screen-sm-min){
-					right: 40px;
-					bottom: -28px;
+				width: em(386);
+				right: em(60);
+				bottom: em(-28);
+				.we-love-stool{
+				margin-left: em(30);					
+					img{
+						width: em(120);
+						@media (min-width: $screen-md-min){
+							width: em(285);
+						}
+					}
+					.we-love{
+						position: absolute;
+						bottom: em(16);
+						left: em(-15);
+					}				
 				}
-				@media (min-width: $screen-md-min){
-					right: 20px;
-					bottom: -28px;
-				}
-				img{
-					width: 120px;
-					@media (min-width: $screen-md-min){
-						width: 285px;
+				.text{
+					position: absolute;
+					top: 100%;
+					left: 0;
+					@include transform(translateY(10px));
+					.block{
+						display: block;
+						float: left;
+						background: $pink;
+						color: $white;
+						font-size: em(29);
+						font-weight: 700;
+						clear: both;
+						padding: em(2,29) em(10,29);
 					}
 				}
-				.we-love{
-					position: absolute;
-					bottom: 20px;
-					left: -12px;
-				}
-			}
+			}			
 		}
 		.circular-gallery{
 			position: relative;
+			padding-top: em(40);
 			.circular-list{
 				margin-top: 400px;
 				@media (min-width: $screen-sm-min){
@@ -387,14 +412,12 @@ body.love-family{
 					height: 630px;
 				}
 				@media (min-width: $screen-lg-min){
-					height: 800px;
+					height: 950px;
 				}				
 				.text{
 					width: 300px;
 					position: absolute;
-					top: 50%;
 					left: 20px;
-					@include transform(translateY(-50%));
 					@media (min-width: $screen-sm-min){
 						width: 200px;
 						font-size: 8px;
@@ -406,18 +429,21 @@ body.love-family{
 						font-size: 13px;
 					}				
 					@media (min-width: $screen-lg-min){
-						left: 418px;
-						width: 300px;
+		    		top: em(250);
+		    		left: em(447);
+						width: em(300);
 						font-size: inherit;
 					}	
 					h2{
 						font-size: em(60);
+						line-height: em(72,60);
 						text-decoration: underline;
 					}
 					.description{
 						color: $grey;
 						font-size: em(24);
 						line-height: em(26);
+						padding-top: em(16);
 					}
 				}
 				.circular-product{
@@ -437,9 +463,9 @@ body.love-family{
 						@include transform-origin(center 315px);
 					}		
 					@media (min-width: $screen-lg-min){
-						width: 300px;
-						left: 400px;
-						@include transform-origin(center 400px);
+						width: 360px;
+						left: 385px;
+						@include transform-origin(center 450px);
 					}
 					.share{
 						position: absolute;

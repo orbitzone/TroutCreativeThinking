@@ -25,6 +25,15 @@ body.spring-2015{
 				width: 82.5%;
 				float: left;
 			}
+			.hex-line-pattern{
+				position: absolute;
+				top: 0;
+				left: 0;
+				@include transform(translateX(-392px) translateY(-345px));
+				img{
+					width: em(520);
+				}
+			}
 			.hotspots{
 				position: absolute;
 				width: 100%;
@@ -43,7 +52,7 @@ body.spring-2015{
 					outline: none;
 					height: auto;
 					i{
-						font-size: em(60);											
+						font-size: em(70);											
 					}
 					&.spot-1{
 						top: 12.763596%;
@@ -83,14 +92,14 @@ body.spring-2015{
 					}
 					.text{
 				    position: absolute;
-				    top: 110px;
-				    left: 140px;
-				    width: 180px;
+				    top: em(110);
+				    left: em(140);
+				    width: em(180);
 				    h3{
 				    	font-size: em(18);
 				    	color: $green;
 				    	margin:0;
-				    	margin-bottom: 1em;
+				    	margin-bottom: em(16);
 				    }
 				    p{
 				    	font-size: em(15);
@@ -119,23 +128,23 @@ body.spring-2015{
 			@media (min-width: $screen-lg-min){
 				width: 17.5%;
 				float: left;
-				padding-left: 40px;	
+				padding-left: em(40);	
 			}
 			.options{
 				background: $options-bg;
 				color: $white;
 				height: 100%;
-				padding: 20px;
+				padding: em(20);
 				@media (min-width: $screen-lg-min){
-					padding: 109px 20px 20px;
+					padding: em(171) em(20) em(20);
 				}
 				.row{
-					max-width: 600px;
+					max-width: em(600);
 					margin: 0 auto;
 				}
 				.desc{
-					font-size: em(16);
-					line-height: 1em;
+					font-size: em(14);
+					line-height: em(16,14);
 				}
 				ul{
 					margin: 0;
@@ -163,26 +172,29 @@ body.spring-2015{
 					color: $white;
 					font-size: em(28);
 					margin: 0;
-					margin-bottom: 40px;
+					margin-bottom: em(33,28);
 					text-decoration: none;					
 				}							
 			}				
 		}
 		.products-used{
-			padding: 30px 0 60px;
+			padding: em(30) 0 em(50);
 			@media (min-width: $screen-md-min){
-				padding: 80px 60px 60px;
+				padding: em(80) em(60) em(50);
 			}
 			@media (min-width: $screen-lg-min){
-				padding: 80px 160px 60px;
+				padding: em(80) em(160) em(50);
 			}
 			h2{
 				margin: 0;
-				margin-bottom: 20px; 
 				text-decoration: underline;		
 				font-size: em(30);
+				margin-bottom: em(25,30); 
+				margin-left: em(40,30);
 				@media (min-width: $screen-sm-min){
 					font-size: em(60);
+					margin-bottom: em(25,60); 
+					margin-left: em(101,60);
 				}		
 			}
 			.product{

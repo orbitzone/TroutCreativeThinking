@@ -89,6 +89,11 @@ body.spring-2015{
 			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	    -moz-tap-highlight-color: rgba(0, 0, 0, 0);		
 		}
+		label, input, button, select, textarea{
+			font-size: inherit;
+			line-height: inherit;
+			font-family: $font-family;
+		}
 		.slick-slide{
 			outline: none !important;
 		}
@@ -96,7 +101,7 @@ body.spring-2015{
 			padding: 0 30px;
 		}
 		.main-content{
-			max-width: 1520px;
+			max-width: 1580px;
 			margin: 0 auto;
 			position: relative;
 		  padding: 0 30px;
@@ -148,17 +153,22 @@ body.spring-2015{
 			font-weight: 700;
 			i{
 				&.iconr-share{
-					font-size: em(50);
+					font-size: em(22);
+					position: relative;
+					top: em(2);
 				}
 				&.iconr-email{
-					font-size: 2em;
+					font-size: em(28);
+					position: relative;
+					top: em(3);
+					left: em(-1);
 				}						
 			}
 			span.i-add-to-list{
 				color: $white;
 				font-weight: 700;						
-		    font-size: 2.4em;
-				  line-height: 1.3em;
+		    font-size: em(32);
+				line-height: 1.3em;
 			}
 			span.i-3d{
 				font-size: 1.2em;

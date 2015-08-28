@@ -317,6 +317,7 @@ jQuery(function($){
 									//.addIndicators()
 									.addTo(controller);				
 					if (isMobile) {
+						alert('mobile');
 						// configure iScroll
 						var myScroll = new IScroll('.ocmain-wrapper',
 									{

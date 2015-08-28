@@ -1,13 +1,15 @@
 html.spring-2015{
 	height: 100%;
 }
-body.spring-2015{
+body.spring-2015.mobile{
 	height: 100%;
 	.ocmain-wrapper{
 		height: 100%;
 		overflow-y: scroll;
-		-webkit-overflow-scrolling: touch;
-	}
+	}	
+}
+body.spring-2015{	
+	-webkit-overflow-scrolling: touch;
 	optgroup {
 	    color: $black;
 	    font-weight: bold;

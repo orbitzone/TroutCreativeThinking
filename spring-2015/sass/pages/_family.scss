@@ -268,6 +268,7 @@ body.love-family{
 		}		
 	}
 	#circular-gallery{
+		margin-bottom: em(58);
 		.banner{
 			position: relative;
 			padding: em(45) 0 em(120) em(30);
@@ -342,7 +343,8 @@ body.love-family{
 			.circular-list{
 				margin-top: 400px;
 				@media (min-width: $screen-sm-min){
-					margin-top: 0;
+					margin-top: em(192);
+					margin-left: em(79);
 				}
 				li{
 					@include clearfix;
@@ -350,10 +352,8 @@ body.love-family{
 				}
 				.product{
 					.number{
-						width: 35px;
-						height: 35px;
-						line-height: em(35);
-						font-size: em(14);
+						width: 32px;
+						height: 32px;
 						color: $black;
 						@include border-radius(50%);
 						border: 1px solid $black;
@@ -361,29 +361,35 @@ body.love-family{
 						position: absolute;
 						left: 0;
 						top: 0;
+						.text{
+							font-weight: 700;
+							@extend %center-align;
+							font-size: em(14);
+						}
 					}
-					.name{
-						padding-left: em(55);
+					.details{
 						position: relative;
-						h3{
+						padding-left: em(55);
+						.name{
 							font-size: em(14);
 							color: $black;
-							margin: 0;
+							margin: 0;						
 						}
 						.description{
-							font-size: em(14);
-							color: $grey;
-							font-weight: 400;
-						}
-					}
-					.button-mood-shop{
-						margin-top: em(20);
-						@media (min-width: $screen-sm-min){
-							display: none;
-							position: absolute;
-							top: 0;
-							left: em(55);
-							z-index: 2;
+								font-size: em(14);
+								color: $grey;
+								font-weight: 400;
+							}
+						.button-mood-shop{
+							margin-top: em(20);
+							@media (min-width: $screen-sm-min){
+								display: none;
+								position: absolute;
+								top: 0;
+								left: em(55);
+								z-index: 2;
+								margin-top: 0;
+							}
 						}
 					}
 					@media (min-width: $screen-sm-min){
@@ -395,7 +401,7 @@ body.love-family{
 					}
 				}
 			}
-			.circle{
+			#circle{
 				position: absolute;
 				height: 780px;
 				top: 0;
@@ -429,7 +435,7 @@ body.love-family{
 						font-size: 13px;
 					}				
 					@media (min-width: $screen-lg-min){
-		    		top: em(250);
+		    		top: em(314);
 		    		left: em(447);
 						width: em(300);
 						font-size: inherit;
@@ -465,7 +471,7 @@ body.love-family{
 					@media (min-width: $screen-lg-min){
 						width: 360px;
 						left: 385px;
-						@include transform-origin(center 450px);
+						@include transform-origin(center 500px);
 					}
 					.share{
 						position: absolute;
@@ -553,23 +559,17 @@ body.love-family{
 		.intro{
 			.banner{
 				position: relative;
-				padding-left: 40px;
 				padding-right: 0;
 				margin-bottom: 40px;
-				@media (min-width: $screen-sm-min){
-					padding-right: 40px;
-				}
 				@media (min-width: $screen-md-min){
-					padding-left: 82px;
+					padding-left: em(130);
 				}
 				.description{
 			    position: relative;
-			    left: -40px;
-			    top: -30px;
-					@media (min-width: $screen-sm-min){
+			    @media (min-width: $screen-sm-min){
 						position: absolute;
-						left: 0;
-						top: 60px;
+						left: em(44);
+						bottom: em(69);
 					}
 					.text-block{
 						margin: 0;
@@ -581,10 +581,19 @@ body.love-family{
 						clear: both;
 						font-weight: 700;
 						line-height: 1.2em;
-						font-size: em(18);
+						font-size: em(35);
+							padding: em(3,35) em(22,35);
 						@media (min-width: $screen-sm-min){
-							font-size: em(32);
-							padding: 5px 10px;
+							font-size: em(35);
+							padding: em(3,35) em(22,35);
+						}
+						&.block-2{
+							font-size: em(35);
+							padding-right: em(18,35);
+							@media (min-width: $screen-sm-min){
+								font-size: em(35);
+								padding-right: em(18,35);
+							}
 						}						
 					}
 				}
@@ -592,8 +601,10 @@ body.love-family{
 			.product{
 				margin-bottom: 40px;
 				padding-left: 30px;
+				margin-left: em(32);
 				@media (min-width: $screen-sm-min){
 					padding-left: 0;
+					@include transform(translateY(em(-50)));
 				}
 				.name{
 					h2{
@@ -602,9 +613,9 @@ body.love-family{
 				}
 				.image{
 					position: relative;
-					max-width: 180px;
+					max-width: em(180);
 					@media (min-width: $screen-sm-min){
-						max-width: 220px;
+						max-width: em(274);
 					}
 					.share{
 						right: -40px;
@@ -1066,16 +1077,16 @@ body.love-family{
 			}
 			.shower-image{
 				background-repeat: no-repeat;
-				background-position: center 250px;
-				
+				background-position: top center;
 				text-align: center;
 				position: relative;
 				min-height: 320px;
+				max-width: 512px;
+				margin: 0 auto;
 				@media (min-width: $screen-sm-min){
 					min-height: 420px;
 				}
 				@media (min-width: $screen-lg-min){
-					margin-right: 94px;
 					min-height: 1000px;
 					top: -360px;
 					margin-bottom: -360px;
@@ -1086,16 +1097,30 @@ body.love-family{
 					right: -10px;
 				}
 				img{
-					opacity: 0.92;
+					opacity: 1;
+					margin-top: 9px;
+					@include transition(opacity 0s ease-out);
 				}
 				&.soft-rain{
 					background-image:url(../images/family/6-shower-settings/soft-rain.gif);
+					img{
+						opacity: 0;
+						@include transition(opacity 0.5s ease-out);
+					}
 				}
 				&.intense-rain{
 					background-image:url(../images/family/6-shower-settings/intense-rain.gif);
+					img{
+						opacity: 0;
+						@include transition(opacity 0.5s ease-out);
+					}
 				}
 				&.massage{
 					background-image:url(../images/family/6-shower-settings/massage.gif);
+					img{
+						opacity: 0;
+						@include transition(opacity 0.5s ease-out);
+					}
 				}
 			}
 			.shower_rain{

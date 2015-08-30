@@ -352,10 +352,10 @@ jQuery(function($){
 					}else{
 						var controller = new ScrollMagic.Controller();
 
-						var scene = new ScrollMagic.Scene({triggerElement: "#circular-gallery .circle"})
-										.setClassToggle("#circular-gallery .circle", "active")
-										.triggerHook(1)
-										.addIndicators()
+						var scene = new ScrollMagic.Scene({triggerElement: "#circle"})
+										.setClassToggle("#circle", "active")
+										.triggerHook(0.5)
+										//.addIndicators()
 										.addTo(controller);				
 
 					}

@@ -8,6 +8,12 @@ body.love-family{
 	}
 	#collection-intro{
 		margin-bottom: em(50);
+		@media (min-width: $screen-sm-min){
+			margin-bottom: em(232);
+		}
+		@media (min-width: $screen-md-min){
+			margin-bottom: em(50);
+		}
 		header{
 			background: none;
 			position: relative;
@@ -279,6 +285,9 @@ body.love-family{
 				font-size: em(20);
 				line-height: 1.14em;	
 				@media (min-width: $screen-sm-min){
+					font-size: em(32);
+				}
+				@media (min-width: $screen-md-min){
 					font-size: em(40);
 				}
 				span{
@@ -287,19 +296,22 @@ body.love-family{
 					clear: both;
 					padding: em(2) em(10);
 					background: $white;
-					@media (min-width: $screen-md-min){
-						padding: em(2,60) em(10,60);
+					@media (min-width: $screen-sm-min){
+						padding: em(2) em(10);
 					}
 				}				
 			}
 			.we-love-stool-wrap{
 				margin-top: em(40);
-				@media (min-width: $screen-md-min){
+				@media (min-width: $screen-sm-min){
 					position: absolute;
-					width: em(386);
-					right: em(60);
+					right: em(20);
 					top: em(20);
 					margin-top: 0;
+				}
+				@media (min-width: $screen-md-min){
+					width: em(386);
+					right: em(60);
 				}
 				.we-love-stool{
 					position: relative;

@@ -14,13 +14,19 @@ body.spring-2015{
 		.description{
 			margin-bottom: em(60);
 			@media (min-width: $screen-sm-min){
-				
+				position: absolute;
+				max-width: em(320);
+				bottom: 100%;
+				right: 0;
+				margin-bottom: em(20);
 			}
 			@media (min-width: $screen-md-min){
 				max-width: em(400);
 				position: absolute;
 		    top: 0;
 		    left: em(10);
+		    bottom: inherit;
+		    right: inherit;
    		  z-index: 2;
    		  padding-bottom: em(30);
 				margin-bottom: 0;
@@ -57,6 +63,7 @@ body.spring-2015{
 		}
 		.bathrooms-showcase-section{
 			margin-bottom: 40px;
+			position: relative;
 		}
 		.bathroom{
 			position: relative;

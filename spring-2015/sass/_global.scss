@@ -9,6 +9,7 @@ body.spring-2015.mobile{
 	}	
 }
 body.spring-2015{	
+	background: $body-grey;
 	height: 100%;
 	.ocmain-wrapper{
 		height: 100%;
@@ -78,6 +79,13 @@ body.spring-2015{
 		  display: inline-block;
 		  *display: inline;
 		}
+	}
+	#main{
+		background: $white;
+		max-width: 1520px;
+		margin: 0 auto;
+		margin-top: em(40);
+		margin-bottom: em(40);
 	}
 	#main-content{
 		position: relative;

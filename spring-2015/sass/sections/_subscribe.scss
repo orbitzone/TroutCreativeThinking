@@ -1,6 +1,7 @@
 #main-content{
 	#subscribe{
-		margin-bottom: em(40);
+		padding-bottom: em(40);
+		background: $body-grey;
 			.main-content{
 				padding: 0;
 				@media (min-width: $screen-sm-min){

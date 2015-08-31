@@ -180,21 +180,19 @@ body.spring-2015{
 		.products-used{
 			padding: em(30) 0 em(50);
 			@media (min-width: $screen-md-min){
-				padding: em(80) em(60) em(50);
+				padding: em(68) em(60) em(50);
 			}
 			@media (min-width: $screen-lg-min){
-				padding: em(80) em(160) em(50);
+				padding: em(68) em(160) em(50);
 			}
 			h2{
 				margin: 0;
 				text-decoration: underline;		
 				font-size: em(30);
 				margin-bottom: em(25,30); 
-				margin-left: em(40,30);
 				@media (min-width: $screen-sm-min){
 					font-size: em(60);
 					margin-bottom: em(25,60); 
-					margin-left: em(101,60);
 				}		
 			}
 			.product{

@@ -115,10 +115,10 @@ body.spring-2015{
 			padding: 0 30px;
 		}
 		.main-content{
-			max-width: 1580px;
+			max-width: 1520px;
 			margin: 0 auto;
 			position: relative;
-		  padding: 0 30px;
+			padding: 0 15px;
 		  @media (min-width: $screen-sm-min){
 		  	width: 750px;
 		  }
@@ -153,7 +153,7 @@ body.spring-2015{
 				background: $green;
 			}
 			&.pink{
-				background: $dark-pink;
+				background: $pink;
 			}
 			
 			@include border-radius(50%);

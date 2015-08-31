@@ -354,6 +354,8 @@ body.love-family{
 			position: relative;
 			padding-top: 0;
 			.circular-list{
+				position: relative;
+				z-index: 3;
 				@media (min-width: $screen-sm-min){
 					margin-top: em(20);
 					margin-left: em(79);

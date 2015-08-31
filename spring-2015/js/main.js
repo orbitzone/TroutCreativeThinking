@@ -696,13 +696,24 @@ jQuery(function($){
 			});
 		}
 	};
-	/*$(document).on('click','.load_page',function(){
-		var data = { section: $(this).data('section')};
-		var url = $(this).attr('href');
-		history.pushState(data, null, url);
-		requestContent($(this).data('section'));
-		return false;
-	});*/
+	mrJasonGrant = {
+		init: function(){
+			$.ajax({
+				cache: false,
+				url:'pages/mr-jason-grant.html',
+				success: function(data){
+					$('#main-content').html(data);									
+					$('.products-slide').slick({
+						slidesToShow: 4,
+						slidesToScroll: 4,
+						infinite: false,
+						prevArrow: "<button type=\"button\" class=\"arrow-prev\"><i class=\"iconr-arrow-left\"></i></button>",
+						nextArrow: "<button type=\"button\" class=\"arrow-next\"><i class=\"iconr-arrow-right\"></i></button>"					 	
+					});
+				}
+			});			
+		}
+	};
 	function requestContent(section) {
 		if(section == "homepage"){
 			homePage.init();
@@ -715,6 +726,9 @@ jQuery(function($){
 	  }
 	  if(section == 'love-calm'){
 	  	loveCalm.init();
+	  }
+	  if(section == 'mr-jason-grant'){
+	  	mrJasonGrant.init();
 	  }
 	  if(section == undefined){
 	  	homePage.init();
@@ -764,6 +778,9 @@ jQuery(function($){
 		}
 		if($('body').hasClass('bec-judd')){
 			becJudd.init();
+		}
+		if($('body').hasClass('mr-jason-grant')){
+			mrJasonGrant.init();
 		}
 		$(document).on('touchstart','#destination-happiness-content a, #main-content a, #main-content button', function(){
 			TweenMax.to($(this),0.5,{ scale: 0.9, ease: Power2.easeOut });

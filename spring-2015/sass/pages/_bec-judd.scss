@@ -1,0 +1,49 @@
+body.bec-judd{
+	#bec_judd{
+		margin-bottom: em(40);
+	}
+	header#banner{
+		position: relative;
+		max-width: 1520px;
+		margin: 0 auto;
+		margin-top: em(40);
+		margin-bottom: em(30);	
+		z-index: 2;	
+		.title{
+			color: $white;
+			position: absolute;
+			bottom: em(154);
+			left: em(477);
+			text-decoration: underline;
+			h1{
+				font-size: em(54);
+			}
+		}
+		.hex-block{
+			position: absolute;
+			bottom: em(100);
+			left: em(305);
+			@include transform(translateY(100%));
+			svg{
+				width: em(267);
+				height: em(293);
+				rect{
+					fill: $gold;
+				}
+			}
+			.text{
+				position: absolute;
+				width: 100%;
+				left: 0;
+				text-align: center;
+				top: 50%;
+				@include transform(translateY(-50%));
+				color: $white;
+				font-size: em(52);
+				font-weight: 300;
+				text-transform: uppercase;
+				line-height: em(56,52);
+			}
+		}
+	}
+}

@@ -11,6 +11,50 @@ body.spring-2015{
 				font-size: em(60);
 			}			
 		}
+		.description{
+			margin-bottom: em(60);
+			@media (min-width: $screen-sm-min){
+				
+			}
+			@media (min-width: $screen-md-min){
+				max-width: em(400);
+				position: absolute;
+		    top: 0;
+		    left: em(10);
+   		  z-index: 2;
+   		  padding-bottom: em(30);
+				margin-bottom: 0;
+				@include transform(translateY(-100%));
+			}
+			@media (min-width: $screen-xl-min){
+				max-width: em(522);
+				left: em(245);
+   		  z-index: 2;
+   		  padding-bottom: em(173);
+				margin-bottom: 0;
+				@include transform(translateY(-100%));
+			}
+			h2{
+				color: $green;
+				text-decoration: underline;
+				margin-top: 0;
+				line-height: 1.2em;
+	    	font-size: em(30);
+		    margin-bottom: em(20,30);
+		    @media (min-width: $screen-sm-min){
+		    	font-size: em(60);
+		    	margin-bottom: em(40,60);			    	
+		    }			    
+			}
+			p{
+				font-size: em(16);
+		    line-height: 1.2em;
+				color: $grey;
+				@media (min-width: $screen-sm-min){
+					font-size: em(21);
+				}	
+			}
+		}
 		.bathrooms-showcase-section{
 			margin-bottom: 40px;
 		}
@@ -21,7 +65,7 @@ body.spring-2015{
 			img{
 				width: 100%;
 			}
-			@media (min-width: $screen-lg-min){
+			@media (min-width: $screen-md-min){
 				width: 82.5%;
 				float: left;
 			}
@@ -125,18 +169,23 @@ body.spring-2015{
 			padding-left: 0;
 			text-align: center;
 				
-			@media (min-width: $screen-lg-min){
+			@media (min-width: $screen-md-min){
 				width: 17.5%;
-				float: left;
-				padding-left: em(40);	
+				float: left;				
 			}
 			.options{
 				background: $options-bg;
 				color: $white;
 				height: 100%;
 				padding: em(20);
+				@media (min-width: $screen-md-min){
+					padding: em(81) em(20) em(20);
+				}
 				@media (min-width: $screen-lg-min){
-					padding: em(171) em(20) em(20);
+					padding: em(120) em(20) em(20);
+				}
+				@media (min-width: $screen-xl-min){
+					padding: em(210) em(20) em(20);
 				}
 				.row{
 					max-width: em(600);
@@ -170,10 +219,18 @@ body.spring-2015{
 				}
 				h2{
 					color: $white;
-					font-size: em(28);
 					margin: 0;
+					text-decoration: none;
+					font-size: em(28);
 					margin-bottom: em(33,28);
-					text-decoration: none;					
+					@media (min-width: $screen-md-min){
+						font-size: em(21);
+						margin-bottom: em(24,21);
+					}
+					@media (min-width: $screen-lg-min){
+						font-size: em(28);
+						margin-bottom: em(33,28);	
+					}					
 				}							
 			}				
 		}

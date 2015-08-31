@@ -708,7 +708,12 @@ jQuery(function($){
 						slidesToScroll: 4,
 						infinite: false,
 						prevArrow: "<button type=\"button\" class=\"arrow-prev\"><i class=\"iconr-arrow-left\"></i></button>",
-						nextArrow: "<button type=\"button\" class=\"arrow-next\"><i class=\"iconr-arrow-right\"></i></button>"					 	
+						nextArrow: "<button type=\"button\" class=\"arrow-next\"><i class=\"iconr-arrow-right\"></i></button>",
+						responsive: [
+						{
+							
+						}
+						]
 					});
 				}
 			});			

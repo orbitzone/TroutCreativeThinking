@@ -48,6 +48,10 @@ body.spring-2015{
 	    	font-size: em(30);
 		    margin-bottom: em(20,30);
 		    @media (min-width: $screen-sm-min){
+		    	font-size: em(40);
+		    	margin-bottom: em(40,40);			    	
+		    }
+		    @media (min-width: $screen-md-min){
 		    	font-size: em(60);
 		    	margin-bottom: em(40,60);			    	
 		    }			    

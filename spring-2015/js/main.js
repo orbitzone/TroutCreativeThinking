@@ -332,12 +332,20 @@ jQuery(function($){
 				success: function(data){
 					$('#main-content').append(data);
 					$('#smart-storage .products-slide').slick({
-						slidesToShow: 3,
-  					slidesToScroll: 3,
+						slidesToShow: 4,
+  					slidesToScroll: 4,
   					infinite: false,
   					prevArrow: "<button type=\"button\" class=\"arrow-prev\"><i class=\"iconr-arrow-left\"></i></button>",
   					nextArrow: "<button type=\"button\" class=\"arrow-next\"><i class=\"iconr-arrow-right\"></i></button>",
 					 	responsive: [
+					 	{
+					      breakpoint: 992,
+					      settings: {
+					        arrows: false,
+					        slidesToShow: 3,
+					        slidesToScroll: 3 
+					      }
+					    },
 					    {
 					      breakpoint: 768,
 					      settings: {
@@ -711,7 +719,7 @@ jQuery(function($){
 						nextArrow: "<button type=\"button\" class=\"arrow-next\"><i class=\"iconr-arrow-right\"></i></button>",
 						responsive: [
 						{
-							
+
 						}
 						]
 					});

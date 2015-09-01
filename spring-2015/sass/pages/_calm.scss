@@ -195,6 +195,16 @@ body.love-calm{
 			h2{
 				color: $pale-blue;
 			}
+			.products-slide{
+				max-width: em(720);
+				margin: 0 auto;
+				.product{
+					.image{
+						max-width: em(360);
+						margin-right: em(40);
+					}
+				}
+			}
 		}
 		.bathroom{
 			.hotspots{

@@ -466,6 +466,9 @@ body.love-calm{
 	#colour-picker{
 		overflow: hidden;
 		margin-bottom: em(90);
+		.day-spa{
+			margin-bottom: em(50);
+		}
 		.image-wrap{
 			position: relative;
 			@media (min-width: $screen-md-min){
@@ -492,14 +495,6 @@ body.love-calm{
 				right: 30px;
 			}
 		}
-		.description{
-			margin-top: 20px;
-			padding-right: em(140);
-			@media (min-width: $screen-md-min){
-				margin-top: 0;
-				padding-left: 134px;
-			}
-		}
 		.slider{
 			button{
 				@include appearance(none);
@@ -507,7 +502,7 @@ body.love-calm{
 				border: none;
 				outline: none;
 				position: absolute;
-				bottom: -40px;
+				bottom: em(-54);
 				top: inherit;
 				z-index: 2;
 				left: inherit;
@@ -528,6 +523,46 @@ body.love-calm{
 					i{
 						color: $grey;
 					}
+				}
+			}
+			.description{
+				margin-top: 20px;
+				padding-right: em(140);
+				@media (min-width: $screen-md-min){
+					margin-top: 0;
+					padding-top: em(40);
+					padding-left: em(190);
+				}
+				h3{
+					color: $pale-blue;
+					font-size: em(16);
+					text-transform: uppercase;
+					font-weight: 700;
+					margin: 0;
+				}
+				p{
+					color: $grey;
+					font-size: em(16);
+				}
+			}
+		}
+		.colour-picker{
+			max-width: em(846);
+			margin: 0 auto;
+			h2{
+				color: $pale-blue;
+				font-size: em(40);
+				text-decoration: underline;
+				margin-bottom: em(40,40);
+				@media (min-width: $screen-md-min){
+					font-size: em(60);
+				}
+			}
+			.description{
+				color: $pale-blue;
+				p{
+					font-size: em(18);
+					line-height: em(24,18);
 				}
 			}
 		}

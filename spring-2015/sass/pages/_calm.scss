@@ -56,7 +56,8 @@ body.love-calm{
 				text-decoration: underline;
 				font-size: em(40);
 				@media (min-width: $screen-sm-min){
-					top: em(40,40);
+					font-size: em(90);
+					top: em(40,90);
 				}
 				@media (min-width: $screen-md-min){
 					font-size: em(90);

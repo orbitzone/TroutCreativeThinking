@@ -131,6 +131,17 @@ body.spring-2015{
 				background-position: -250px 0;	
 			}
 		}
+		&.big{
+			width: 125px;
+			height: 130px;
+			background-size: 375px 130px;
+			&.calm{
+				background-position: -125px 0;
+			}
+			&.luxury{
+				background-position: -250px 0;
+			}
+		}
 		&.small{
 			width: 62px;
 			height: 65px;

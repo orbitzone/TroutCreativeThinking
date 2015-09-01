@@ -1060,45 +1060,65 @@ body.love-family{
 		}
 		.top-products{
 			.product-1{
+				margin: 0 auto;
 				margin-top: em(39);
+				@media (min-width: $screen-sm-min){
+					max-width: em(515);
+				}
+				@media (min-width: $screen-md-min){
+					max-width: auto;
+				}
 				.image{
-					@media (min-width: $screen-md-min){
-						max-width: em(423);
-					}
 					@media (min-width: $screen-lg-min){
 						max-width: 100%;
 					}
-				}
-			}
-			.description{
-				text-align: right;
-			}
-			.text{
-				position: relative;
-				.text-block{
-					display: block;
-					float: left;
-					color: $white;
-					background: $pink;
-					font-weight: 700;
-					padding: 5px 10px;
-					clear: both;
-					font-size: em(16);
-					line-height: 1em;
-					@media (min-width: $screen-sm-min){
-						font-size: em(21);
+					img{
+						@media (min-width: $screen-sm-min){
+							width: em(515);
+						}
+						@media (min-width: $screen-md-min){
+							width: auto;
+						}
 					}
 				}
-				.button-mood-shop{
-					margin-top: em(20);
-					@media (min-width: $screen-sm-min){
+				.details{
+					position: relative;
+					.text{
 						position: absolute;
-						right: 0;
-						bottom: 0;
+						top: 0;
+						left: em(80);
+						.text-block{
+							display: block;
+							float: left;
+							color: $white;
+							background: $pink;
+							font-weight: 700;
+							padding: 5px 10px;
+							clear: both;
+							font-size: em(16);
+							line-height: 1em;
+							@media (min-width: $screen-sm-min){
+								font-size: em(21);
+							}
+						}						
+					}
+					.button-mood-shop{
+						margin-top: em(20);
+						@media (min-width: $screen-sm-min){
+							position: absolute;
+							right: 0;
+							bottom: 0;
+						}
 					}
 				}
 			}
 			.we-love-candle{
+		    @media (min-width: $screen-sm-min){
+		    	width: em(300);
+			    margin-left: em(400);
+			    position: relative;
+			    margin-top: em(72);
+		    }
 				.image{
 					position: absolute;
 					top: em(-40);
@@ -1128,7 +1148,7 @@ body.love-family{
 				    position: absolute;
 					  left: -30px;
 					  top: 20px;
-					  @media (min-width: $screen-sm-min){
+					  @media (min-width: $screen-md-min){
 					  	left: -60px;
 					  }
 					}
@@ -1505,10 +1525,22 @@ body.love-family{
 		}
 	}
 	#favourites{
-
+		.banner{
+			.image-wrap{
+				.we-love{
+					@media (min-width: $screen-sm-min){
+						left: em(170);
+					}
+					@media (min-width: $screen-md-min){
+						left: 50%;
+					}
+				}
+			}
+		}
 	}
 	#footer-ads{
 		overflow: hidden;
+		margin-bottom: em(40);
 		.dot-pattern{
 			position: absolute;
 			top: 0;
@@ -1523,6 +1555,12 @@ body.love-family{
 	    opacity: 0.87;
 	    width: 125px;
 	    @media (min-width: $screen-sm-min){
+	    	right: em(100);
+		    top: -38px;
+		    opacity: 0.87;
+		    width: em(190);
+	    }
+	    @media (min-width: $screen-lg-min){
 	    	right: 100px;
 		    top: -57px;
 		    opacity: 0.87;
@@ -1532,14 +1570,20 @@ body.love-family{
 		.content{
 			padding-top: em(115);
 			@media (min-width: $screen-sm-min){
-				padding: em(109) em(30);
+				padding: em(109) em(30) em(40);
 			}
-			@media (min-width: $screen-lg-min){
-				padding: em(109) em(23) em(109) em(123);
+			@media (min-width: $screen-xl-min){
+				padding: em(109) em(23) em(40) em(123);
 			}
 		}
 		.top-section{
 			position: relative;
+			@media (min-width: $screen-sm-min){
+				margin-top: em(53);
+			}
+			@media (min-width: $screen-lg-min){
+				margin-top: 0;
+			}
 			.pinterest-board{
 				position: relative;
 				margin-bottom: em(20);
@@ -1599,7 +1643,13 @@ body.love-family{
 				@media (min-width: $screen-sm-min){
 					position: absolute;
 					left: 60%;
-					bottom: 58px;
+					bottom: em(49);
+				}
+				@media (min-width: $screen-md-min){
+					bottom: em(70);
+				}
+				@media (min-width: $screen-xl-min){
+					bottom: em(58);
 				}
 				.link{
 					margin-top: 10px;
@@ -1629,7 +1679,7 @@ body.love-family{
 					@media (min-width: $screen-md-min){
 						font-size: em(28);
 					}
-					@media (min-width: $screen-lg-min){
+					@media (min-width: $screen-xl-min){
 						font-size: em(32);
 					}
 				}
@@ -1641,9 +1691,13 @@ body.love-family{
 				padding: em(20);
 				margin-bottom: em(20);
 				@media (min-width: $screen-sm-min){
-					padding: em(72) em(50) em(82);					
+					padding: em(30);
 				}
 				@media (min-width: $screen-lg-min){
+					width: em(400);
+					padding: em(40) em(64);
+				}
+				@media (min-width: $screen-xl-min){
 					width: em(406);
 					padding: em(72) em(125) em(82) em(75);
 					margin-left: em(42);
@@ -1659,6 +1713,7 @@ body.love-family{
 					color: $pink;
 					line-height: 1.2em;
 					text-decoration: underline;
+					margin-top: 0;
 					span{
 						color: $white;
 						background: $pink;
@@ -1680,6 +1735,12 @@ body.love-family{
 			.peace-of-mind{
 				.image{
 					position: relative;
+					@media (min-width: $screen-sm-min){
+						padding-left: em(20);
+					}
+					@media (min-width: $screen-lg-min){
+						padding-left: 0;
+					}
 					h2{
 						color: $grey;
 						text-decoration: underline;
@@ -1687,13 +1748,23 @@ body.love-family{
 						@media (min-width: $screen-sm-min){
 							font-size: em(50);
 							position: absolute;
-							left: -30px;
-							bottom: 20px;
+							left: em(-10,50);
+							bottom: em(20,50);
+						}
+						@media (min-width: $screen-lg-min){
+							font-size: em(50);
+							position: absolute;
+							left: em(-30,50);
+							bottom: em(20,50);
 						}
 					}
 				}
 				.text{
-					padding: 20px;
+					padding: em(20);
+					@media (min-width: $screen-lg-min){
+						padding: em(20) 0;
+						max-width: em(400);
+					}
 				}				
 			}
 		}		

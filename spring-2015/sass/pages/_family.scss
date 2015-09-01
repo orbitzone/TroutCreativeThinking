@@ -1147,8 +1147,9 @@ body.love-family{
 						left: em(80,12);
 						top: em(74,12);
 						@media (min-width: $screen-sm-min){
+							margin-top: 0;
 							right: 0;
-							bottom: 0;
+							top: 0;
 							left: inherit;
 						}
 					}
@@ -1248,6 +1249,12 @@ body.love-family{
 						position: relative;
 						padding-left: em(50);
 						@media (min-width: $screen-sm-min){
+							padding-left: em(140);
+						}
+						@media (min-width: $screen-md-min){
+							padding-left: em(100);
+						}
+						@media (min-width: $screen-lg-min){
 							padding-left: em(200);
 						}
 						img{
@@ -1264,27 +1271,56 @@ body.love-family{
 						padding-right: em(5,9);
 						text-align: right;
 						@media (min-width: $screen-sm-min){
+							font-size: em(14);
+							width: em(80,14);
+							padding-right: em(5,14);
+						}
+						@media (min-width: $screen-lg-min){
 							font-size: em(18);
 							width: em(145,18);
 							left: em(20,18);
 							padding-right: em(30,18);
 						}
 						&.for-dad{
-							top: em(16);
+							top: em(16,9);
 							@media (min-width: $screen-sm-min){
-								top:em(33);
+								left: em(50,14);
+								top: em(30,14);
+							}
+							@media (min-width: $screen-md-min){
+								left: 0;
+								top: em(30,14);
+							}
+							@media (min-width: $screen-lg-min){
+								top: em(33,18);
 							}
 						}
 						&.for-mum{
-							top: em(103);
+							top: em(103,9);
 							@media (min-width: $screen-sm-min){
+								left: em(50,14);
+								top: em(188,14);
+							}
+							@media (min-width: $screen-md-min){
+								left: 0;
 								top: em(190);
+							}
+							@media (min-width: $screen-lg-min){
+								top: em(190,18);
 							}
 						}
 						&.for-little-tacker{
-							top: em(202);
+							top: em(202,9);
 							@media (min-width: $screen-sm-min){
-								top: em(346);								
+								left: em(50,14);
+								top: em(355,14);								
+							}
+							@media (min-width: $screen-md-min){
+								left: 0;
+								top: em(355,14);								
+							}
+							@media (min-width: $screen-lg-min){
+								top: em(346,18);								
 							}
 						}
 					}

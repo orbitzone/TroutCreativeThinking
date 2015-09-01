@@ -508,7 +508,9 @@ body.love-calm{
 				outline: none;
 				position: absolute;
 				bottom: -40px;
+				top: inherit;
 				z-index: 2;
+				left: inherit;
 				i{
 					font-size: em(50);
 					color: $pale-blue;
@@ -522,6 +524,7 @@ body.love-calm{
 					right: 10px;
 				}
 				&.slick-disabled{
+					display: block;
 					i{
 						color: $grey;
 					}

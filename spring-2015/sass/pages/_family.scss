@@ -709,6 +709,19 @@ body.love-family{
 		margin-bottom: em(40);
 		.featured-products{
 			padding: 0 em(30);
+			.product{
+				.image{
+					@media (min-width: $screen-sm-min){
+						margin-right: em(40);
+					}
+					@media (min-width: $screen-md-min){
+						margin-right: em(30);
+					}
+					@media (min-width: $screen-lg-min){
+						margin-right: em(100);
+					}
+				}
+			}
 		}	
 		.intro{
 			@media (min-width: $screen-sm-min){

@@ -74,7 +74,10 @@ body.spring-2015{
 			}
 		}
 		.product-wrap{
-			border-top: 1px solid $grey;
+			border-top: none;
+			@media (min-width: $screen-sm-min){
+				border-top: 1px solid $grey;
+			}
 			&:nth-child(1),
 			&:nth-child(2),
 			&:nth-child(3){
@@ -82,7 +85,13 @@ body.spring-2015{
 			}
 			.product{
 				height: 100%;
-				padding: 30px 26px 24px;
+				padding: 0 em(26) em(24);
+				max-width: em(250);
+				margin: 0 auto;
+				@media (min-width: $screen-sm-min){
+					padding: em(30) em(26) em(24);
+					max-width: inherit;
+				}
 				.line-pattern{
 					position: absolute;
 					top: 0;

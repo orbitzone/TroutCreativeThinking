@@ -223,11 +223,25 @@ body.love-calm{
 			margin: 0 auto;
 			background-size: cover;
 			background-position: top right;
-			@media (min-width: $screen-md-min){
+			@media (min-width: $screen-lg-min){
 				height: 633px;
 			}
+			.video-content{
+				position: relative;
+			}
 			.play{
-				@extend %center-align;
+				position: absolute;
+				bottom: em(30);
+				right: em(45);
+				cursor: pointer;
+				@media (min-width: $screen-sm-min){
+					position: absolute;
+				  top: 50%;
+				  left: 50%;
+				  bottom: inherit;
+					right: inherit;
+				  @include transform(translateY(-50%) translateX(-50%));
+				}
 				i{
 					font-size: em(50);
 					color: $white;
@@ -244,8 +258,11 @@ body.love-calm{
 			}
 			.text{
 				color: $white;
-				padding: em(40) em(30);
+				padding: em(40) em(60);
 				@media (min-width: $screen-sm-min){
+					padding: em(80) em(60) em(60);
+				}
+				@media (min-width: $screen-lg-min){
 					padding: em(174) em(60) em(74) em(200);
 				}
 				h2{
@@ -253,9 +270,17 @@ body.love-calm{
 					text-decoration: underline;
 					margin-bottom: 30px;
 				}
+				.product{
+					color: $white;
+				}
 				.description{
-					font-size: em(24);
-					max-width: 360px;					
+					max-width: 100%;					
+					@media (min-width: $screen-sm-min){
+						max-width: em(250);
+					}
+					p{
+						font-size: em(24);
+					}
 				}	
 			}			
 		}		
@@ -269,12 +294,12 @@ body.love-calm{
 			}
 			.image{
 				position: relative;
-				padding-left: 40px;
 				@media (min-width: $screen-sm-min){
 					position: absolute;
 					left: 0;
-					top: 20px;
+					top: em(20);
 					padding-right: 17em;
+					padding-left: em(40);
 				}
 				@media (min-width: $screen-lg-min){
 					margin-left: 10em;
@@ -283,8 +308,14 @@ body.love-calm{
 			}
 			.description{
 				position: absolute;
-				top: 3em;
+				bottom: 0;
 				left: 0;
+				@include transform(translateY(90%));
+				@media (min-width: $screen-sm-min){
+					top: em(48);
+					bottom: inherit;
+					@include transform(none);
+				}
 				p{
 					background: $pale-blue;
 					color: $white;
@@ -294,18 +325,32 @@ body.love-calm{
 					float: left;
 					clear: both;
 					font-weight: bold;
-					font-size: em(30);
+					font-size: em(21);
 					line-height: 1em;
+					@media (min-width: $screen-md-min){
+						font-size: em(30);
+					}
 				}
 			}
 			.title{
+				margin: 0 auto;
+				margin-top: em(180);
+				margin-bottom: em(40);
+				width: em(200);
+				@media (min-width: $screen-sm-min){
+					width: auto;
+					margin: 0;
+				}
 				h2{
-					font-size: em(60);
 					color: $pale-blue;
 					text-decoration: underline;
 					margin-top: 0;
 					margin-bottom: 30px;
 					line-height: 1.2em;
+					font-size: em(40);
+					@media (min-width: $screen-md-min){
+						font-size: em(60);
+					}
 				}
 				.message{
 					p{
@@ -317,8 +362,11 @@ body.love-calm{
 						float: left;
 						clear: both;
 						font-weight: bold;
-						font-size: em(30);
+						font-size: em(21);
 						line-height: 1em;
+						@media (min-width: $screen-md-min){
+							font-size: em(30);
+						}
 					}
 				}
 			}
@@ -328,7 +376,9 @@ body.love-calm{
 			.person{
 				text-align: center;
 				color: $pale-blue;
+				margin-bottom: em(30);
 				@media (min-width: $screen-md-min){
+					margin-bottom: 0;
 					margin-left: 72px;
 				}
 				h2{
@@ -341,8 +391,11 @@ body.love-calm{
 			}
 			.tip{
 				position: relative;
-				padding-left: 60px;
 				margin-bottom: em(20);
+				padding: 0 em(40);
+				@media (min-width: $screen-sm-min){
+					padding-left: em(60);
+				}
 				h3{
 					color: $pale-blue;
 					font-size: em(24);

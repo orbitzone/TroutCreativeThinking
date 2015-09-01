@@ -255,6 +255,9 @@ body.spring-2015{
 				padding: em(68) em(60) em(50);
 			}
 			@media (min-width: $screen-lg-min){
+				padding: em(68) em(60) em(50);
+			}
+			@media (min-width: $screen-xl-min){
 				padding: em(68) em(160) em(50);
 			}
 			h2{

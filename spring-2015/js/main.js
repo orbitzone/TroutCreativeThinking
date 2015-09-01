@@ -137,14 +137,17 @@ jQuery(function($){
 		add: function(obj){
 			moodboard.products += 1;
 			$(obj).addClass('added');
-			$('#destination-happiness .dh-items').removeClass('empty').html(moodboard.products);			
+			$('#destination-happiness .dh-items').removeClass('empty').html(moodboard.products);
+			$('#destination-links .dh-items').removeClass('empty').html(moodboard.products);
 		},
 		remove: function(obj){
 			moodboard.products -= 1;
 			$(obj).removeClass('added');
 			$('#destination-happiness .dh-items').html(moodboard.products);
+			$('#destination-links .dh-items').html(moodboard.products);
 			if(moodboard.products <= 0){
 				$('#destination-happiness .dh-items').addClass('empty');
+				$('#destination-links .dh-items').addClass('empty');
 			}
 		},
 		show: function(){
@@ -624,8 +627,8 @@ jQuery(function($){
 					$('#main-content').append(data);
 					
 					$('#bathrooms-for-inspiration .products-slide').slick({
-						slidesToShow: 4,
-  					slidesToScroll: 4,
+						slidesToShow: 2,
+  					slidesToScroll: 2,
   					infinite: false,
   					prevArrow: "<button type=\"button\" class=\"arrow-prev\"><i class=\"iconr-arrow-left\"></i></button>",
   					nextArrow: "<button type=\"button\" class=\"arrow-next\"><i class=\"iconr-arrow-right\"></i></button>",
@@ -662,6 +665,15 @@ jQuery(function($){
 				url: 'pages/calm/water-therapy.html',
 				success: function(data){
 					$('#main-content').append(data);
+					$('#water-therapy .video-slider').slick({
+						slidesToShow: 1,
+  					slidesToScroll: 1,
+  					infinite: false,
+  					arrows: false
+					})
+					$('#water-therapy .video .play').on('click', function(){
+						$('#water-therapy .video-slider').slick('slickNext');
+					});
 					loveCalm.tips();
 				}
 			});

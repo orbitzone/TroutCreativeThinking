@@ -10,15 +10,13 @@
 			}		
 			.chair{
 				position: absolute;
-	      left: -30px;
-	    	top: -171px;
-	    	width: 198px;
+	      left: em(20);
+	    	top: em(-171);
+	    	width: em(120);
 	    	@media (min-width: $screen-sm-min){
-	    		left: 0;
-	    		top: -303px;
-	    		width: auto;
-	    	}
-	    	@media (min-width: $screen-md-min){
+	    		left: em(100);
+	    		top: em(-303);
+	    		width: em(207);
 	    	}
 			}
 			h2{

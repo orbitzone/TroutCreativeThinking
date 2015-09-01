@@ -8,19 +8,31 @@ body.love-calm{
 	}
 	#collection-intro{
 		margin-bottom: em(50);
+		@media (min-width: $screen-md-min){
+			margin-bottom: em(260);
+		}
+		@media (min-width: $screen-lg-min){
+			margin-bottom: em(180);
+		}
+		@media (min-width: $screen-xl-min){
+			margin-bottom: em(61);
+		}
 		.plant{
 			position: absolute;
 			left: 0;
 			top: 0;
-			max-width: 180px;
+			max-width: em(80);
 			@media (min-width: $screen-sm-min){
-				max-width: 120px;
+				max-width: em(120);
 			}
 			@media (min-width: $screen-md-min){
-				max-width: 180px;	
+				max-width: em(180);	
 			}
 			@media (min-width: $screen-lg-min){
-				max-width: 384px;
+				max-width: em(320);
+			}
+			@media (min-width: $screen-xl-min){
+				max-width: em(356);
 			}
 		}	
 		header{
@@ -39,11 +51,14 @@ body.love-calm{
 			h1{
 				color: $white;
 				position: absolute;
-				top: 30.85106383%;
+				top: em(11,40);
 				right: 27.30263%;
 				text-decoration: underline;
 				font-size: em(40);
 				@media (min-width: $screen-sm-min){
+					top: em(40,40);
+				}
+				@media (min-width: $screen-md-min){
 					font-size: em(90);
 					top: 30.85106383%;
 					right: 27.30263%;
@@ -55,7 +70,7 @@ body.love-calm{
 			color: $pale-blue;
 			.hanging-toy{
 				position: absolute;
-				right: 43%;
+				right: 0;
 				top: 0;
 				z-index: 2;
 				@media (min-width: $screen-md-min){
@@ -81,10 +96,33 @@ body.love-calm{
 				position: relative;
 				z-index: 1;
 				font-weight: 700;
-				padding-top: em(100);
+				padding-top: em(21);
+				width: em(239);
+				padding-left: em(42);
+				@media (min-width: $screen-sm-min){
+					padding-left: 0;
+					width: em(288);
+				}
+				@media (min-width: $screen-md-min){
+					padding-top: em(60);
+					width: em(420);
+					padding-left: 0;
+					left: em(15);
+				}
+				@media (min-width: $screen-lg-min){
+					width: em(310);
+					left: em(64);
+				}
+				@media (min-width: $screen-xl-min){
+					width: em(500);
+					left: inherit;
+				}
 				.text{
-					font-size: em(28);
+					font-size: em(16);
 					margin-bottom: em(20);
+					@media (min-width: $screen-sm-min){
+			  		font-size: em(20);
+			  	}
 					@media (min-width: $screen-md-min){
 						font-size: em(34);
 					}
@@ -96,6 +134,9 @@ body.love-calm{
 			.product{
 				position: relative;
 				padding: em(120) em(0) em(20);
+				@media (min-width: $screen-sm-min){
+					padding: em(60) em(0) em(20);
+				}
 				@media (min-width: $screen-md-min){
 					padding: em(132) em(0) em(20);
 				}
@@ -117,33 +158,37 @@ body.love-calm{
 					font-size: em(18);
 					line-height: 1.2em;
 					padding: em(15) em(30) em(15) em(15);
-					margin: 0 em(30) em(20);		
+					margin: 0 em(30) em(20);	
+					position: relative;	
 					@media (min-width: $screen-md-min){
 						margin: 0 em(66) em(20) em(80);		
 					}			
 				}
-				.button{
-					text-align: right;
-					margin: 0 em(30) em(20);		
-					@media (min-width: $screen-md-min){
-						margin: 0 em(66) em(20) em(80);		
-					}	
-					.shop_now{
-						position: relative;
-						z-index: 2;
-					}
+				.button-mood-shop{
+					position: absolute;
+					bottom: em(-20);
+					left: em(-45);
 				}				
 			}				
 		}				
 	}
 	#bathrooms-for-inspiration{
 		margin-bottom: 40px;
-		.row{
-			margin-left: -30px;
-			margin-right: -30px;
-			@media (min-width: $screen-md-min){
-				margin-left: -15px;
-				margin-right: -15px;
+		.title-description{
+			left: em(15);
+			right: inherit;
+			padding-bottom: em(20);
+			margin-bottom: em(0);
+			@media (min-width: $screen-sm-min){
+				padding-bottom: em(40);
+			}
+			@media (min-width: $screen-xl-min){
+				left: em(62);
+				padding-bottom: em(50);
+			}
+			h2{
+				color: $pale-blue;
+				margin-bottom: 0;
 			}
 		}
 		.products-used{

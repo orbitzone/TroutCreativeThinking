@@ -121,9 +121,13 @@ body.love-family{
 				}
 				.we-love{
 					position: absolute;
-					top: em(-32);
+					top: em(74);
+   				left: em(4);
+   				z-index: 2;
+   				@media (min-width: $screen-sm-min){
+   					top: em(-32);
    				left: em(21);
-   				z-index: 2;   				
+   				}
 				}
 				.white-box{
 					background: $white;					
@@ -170,7 +174,7 @@ body.love-family{
 	    				right: em(31);
 						}
 						img{
-							max-width: em(70);
+							max-width: em(73);
 							@media (min-width: $screen-sm-min){
 								max-width: em(90);
 							}
@@ -191,8 +195,12 @@ body.love-family{
 					}
 					.share{
 						position: absolute;
-				    top: em(116);
-   					left: em(40);
+						top: em(70);
+	   					left: em(-58);
+						@media (min-width: $screen-sm-min){
+					    top: em(116);
+	   					left: em(40);
+   					}
    					@media (min-width: $screen-md-min){
    						top: em(277);
    						left: em(55);
@@ -210,7 +218,7 @@ body.love-family{
 				}
 				.product-2{
 					position: relative;
-			    padding: em(220) em(15) em(30);
+			    padding: em(175) em(15) em(30);
 			    @media (min-width: $screen-sm-min){
 			    	padding: em(30) em(15) em(30);
 			    	width: 400px;
@@ -225,9 +233,11 @@ body.love-family{
 						position: absolute;
 						top: em(20);
 						left: em(-20);
+						width: em(250);
 						@media (min-width: $screen-sm-min){
 			        top: em(-178);
 	    				left: em(-20);
+	    				width: auto;
     				}
 						@media (min-width: $screen-md-min){
 			        top: em(-68);
@@ -266,7 +276,7 @@ body.love-family{
 		}		
 	}
 	#circular-gallery{
-		margin-bottom: em(58);
+		margin-bottom: 0;
 		@media (min-width: $screen-sm-min){
 			margin-bottom: em(94);
 		}
@@ -275,7 +285,7 @@ body.love-family{
 		}
 		.banner{
 			position: relative;
-			padding: em(45) 0 em(30) em(30);
+			padding: em(45) 0 em(65) em(30);
 			margin-bottom: em(40);
 			@media (min-width: $screen-sm-min){
 				padding: em(44) em(30);				
@@ -701,23 +711,28 @@ body.love-family{
 			padding: 0 em(30);
 		}	
 		.intro{
-			margin-bottom: em(20);
+			@media (min-width: $screen-sm-min){
+				margin-bottom: em(20);
+			}
 			.banner{
 				position: relative;
 				padding-right: 0;
-				margin-bottom: em(40);
+				margin-bottom: em(108);
 				@media (min-width: $screen-sm-min){
+					margin-bottom: em(40);
 					padding-left: em(48);
 				}
 				@media (min-width: $screen-md-min){
 					padding-left: em(130);
 				}
 				.description{
-			    position: relative;
+			    position: absolute;
 			    font-size: em(21);
+			    top: em(131,21);
+			    left: 0;
 			    @media (min-width: $screen-sm-min){
-						position: absolute;
 						left: 0;
+						top: inherit;
 						bottom: em(69);
 					}
 					@media (min-width: $screen-md-min){
@@ -789,7 +804,7 @@ body.love-family{
 			}
 		}
 		.smart-storage{
-			padding: em(70) em(40) em(30);
+			padding: em(30) em(10);
 			@media (min-width: $screen-md-min){
 				padding: em(70) em(300) em(30) em(40);
 			}
@@ -869,6 +884,15 @@ body.love-family{
 							font-size: em(16);
 							width: 200px;
 							padding: 10px;
+							position: absolute;
+							top: em(38);
+							left: em(73);
+							z-index: 0;
+							@media (min-width: $screen-sm-min){
+								position: relative;
+								top: inherit;
+								left: inherit;
+							}
 						}
 						.basket{
 							position: relative;
@@ -883,6 +907,8 @@ body.love-family{
 								width: em(130);
 							}
 							img{
+								position: relative;
+								z-index: 1;
 								@media (min-width: $screen-md-min){
 									margin-left: em(32);
 								}
@@ -893,8 +919,13 @@ body.love-family{
 							}
 							.we-love{
 								position: absolute;
-								top: em(25);
+								top: em(-21);
 								right: em(-25);
+								z-index: 2;
+								@media (min-width: $screen-sm-min){
+									top: em(25);
+									right: em(-25);
+								}
 								@media (min-width: $screen-md-min){
 									top: em(31);
 									right: em(-75);

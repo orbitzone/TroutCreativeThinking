@@ -195,12 +195,15 @@ body.spring-2015{
 		@include border-radius(4px);
 		@include box-shadow(1px 1px 3px rgba(0,0,0,0.3));
 		display: inline-block;
+		font-size: em(12);
+		@media (min-width: $screen-sm-min){
+			font-size: inherit;
+		}
 	}
 	button.add-to-moodboard{
 		background: $dark-green;
 		color: $white;
 		border: none;
-		font-size: 1em;
 		font-weight: 700;
 		padding: em(14) em(12);
 		border-right: 2px solid $white;
@@ -215,6 +218,7 @@ body.spring-2015{
 			margin-left: em(10);
 			display: none;
 		}
+		font-size: em(16);
 		&:hover{
 			i{
 				opacity: 0.7
@@ -242,6 +246,9 @@ body.spring-2015{
 			margin-right: em(10);
 		}
 		white-space: nowrap;
-		margin-left: 38px;		
+		margin-left: 32px;		
+		@media (min-width: $screen-sm-min){
+			margin-left: 38px;		
+		}
 	}
 }

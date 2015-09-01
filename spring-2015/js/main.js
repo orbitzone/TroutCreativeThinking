@@ -109,7 +109,11 @@ jQuery(function($){
 				success: function(data){
 					$('body .ocmain-wrapper').append(data);				
 					$(document).on('click','.add-to-moodboard',function(){
-						moodboard.add(this);
+						if($(this).hasClass('added')){
+							moodboard.remove(this);
+						}else{
+							moodboard.add(this);
+						}						
 						return false;
 					});
 					$(document).on('click','#destination-happiness',function(){
@@ -129,11 +133,19 @@ jQuery(function($){
 				}
 			});			
 		},
+		products: 0,
 		add: function(obj){
-			$(obj).toggleClass('added');
+			moodboard.products += 1;
+			$(obj).addClass('added');
+			$('#destination-happiness .dh-items').removeClass('empty').html(moodboard.products);			
 		},
-		remove: function(){
-
+		remove: function(obj){
+			moodboard.products -= 1;
+			$(obj).removeClass('added');
+			$('#destination-happiness .dh-items').html(moodboard.products);
+			if(moodboard.products <= 0){
+				$('#destination-happiness .dh-items').addClass('empty');
+			}
 		},
 		show: function(){
 			TweenMax.to($('#destination-happiness'),0.5,{ left: -($('#destination-happiness').width() * 0.637168142), ease: Back.easeIn });
@@ -280,7 +292,7 @@ jQuery(function($){
 					    {
 					      breakpoint: 768,
 					      settings: {
-					        arrows: false,
+					        arrows: true,
 					        slidesToShow: 2,
 					        slidesToScroll: 2
 					      }
@@ -288,7 +300,7 @@ jQuery(function($){
 					    {
 					      breakpoint: 480,
 					      settings: {
-					        arrows: false,
+					        arrows: true,
 					        slidesToShow: 1,
 					        slidesToScroll: 1
 					      }
@@ -321,6 +333,7 @@ jQuery(function($){
 										.addTo(controller);				
 
 					}
+					$('.circular-list .description').matchHeight();
 					loveFamily.smartStorage();
 				}
 			});

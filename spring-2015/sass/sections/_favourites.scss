@@ -56,10 +56,11 @@ body.spring-2015{
 							font-weight: bold;
 							font-size: em(16);
 							line-height: 1em;
-							@media (min-width: $screen-sm-min){
-								font-size: em(30);
 								float: left;
 								clear: both;
+							
+							@media (min-width: $screen-sm-min){
+								font-size: em(30);
 							}
 						}
 					}

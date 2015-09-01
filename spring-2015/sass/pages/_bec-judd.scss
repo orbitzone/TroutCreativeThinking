@@ -45,4 +45,71 @@ body.bec-judd{
 			}
 		}
 	}
+	.top-five{
+		.number{
+			font-size: em(62);
+			font-weight: 700;
+			color: $gold;
+			&:after{
+				content: '.';
+				text-indent: -9999px;
+				display: block;
+				width: em(116,62);
+				height: em(2,62);
+				background: $gold;
+				@include transform(rotate(-60deg));
+				position: absolute;
+				top: em(70,62);
+				left: em(20,62);
+			}
+		}
+		.top-1{
+			padding: em(40);
+			.product-wrap{
+				position: relative;
+				.number{
+					position: absolute;
+					right: em(34,62);
+					top: em(160,62);
+					z-index: 0;
+				}
+				.image{
+					position: relative;
+					z-index: 1;
+				}
+				.text{
+					color: $grey;
+					font-size: em(28);
+					width: em(295,28);
+					margin-top: em(50,28);
+					margin-bottom: em(40,28);
+				}
+				.product{
+					width: em(190);
+					position: absolute;
+					top: em(450);
+					left: em(200);
+					.name{
+						color: $gold;
+					}
+				}
+			}
+			.slider-wrap{
+				position: relative;
+				.text{
+					position: absolute;
+					background: $white;
+					padding: em(20);
+					width: em(429);
+					bottom: em(-15);
+					left: em(-50);
+					p{
+						font-size: em(21);
+						font-weight: 700;
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
 }

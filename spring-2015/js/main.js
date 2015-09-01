@@ -251,7 +251,14 @@ jQuery(function($){
 				cache: false,
 				url:'pages/bec-judd.html',
 				success: function(data){
-					$('#main-content').html(data);									
+					$('#main-content').html(data);
+					$('#bec_judd .slider').slick({
+						slidesToShow: 1,
+  					slidesToScroll: 1,
+  					infinite: true,
+  					prevArrow: "<button type=\"button\" class=\"arrow-prev\"><i class=\"iconr-arrow-left\"></i></button>",
+  					nextArrow: "<button type=\"button\" class=\"arrow-next\"><i class=\"iconr-arrow-right\"></i></button>",					 	
+					});									
 				}
 			});
 		}

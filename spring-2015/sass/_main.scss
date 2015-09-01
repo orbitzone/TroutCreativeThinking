@@ -131,6 +131,19 @@ body.spring-2015{
 				background-position: -250px 0;	
 			}
 		}
+		&.small{
+			width: 62px;
+			height: 65px;
+			background-position: 0 0;
+			background-size: 187.5px 65px;
+			background-repeat: no-repeat;
+			&.calm{
+				background-position: -62px 0;
+			}
+			&.luxury{
+				background-position: -124px 0;
+			}
+		}
 	}
 	.products-slide, 
 	.slides,

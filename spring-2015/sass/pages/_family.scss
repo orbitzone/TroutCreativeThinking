@@ -701,6 +701,7 @@ body.love-family{
 			padding: 0 em(30);
 		}	
 		.intro{
+			margin-bottom: em(20);
 			.banner{
 				position: relative;
 				padding-right: 0;
@@ -747,6 +748,7 @@ body.love-family{
 					padding-left: 0;
 					margin-right: em(30);
 					@include transform(translateY(em(-50)));
+					margin-bottom: em(-50);
 				}
 				@media (min-width: $screen-xl-min){
 					margin-right: 0;
@@ -787,90 +789,124 @@ body.love-family{
 			}
 		}
 		.smart-storage{
-			padding: em(30);
-			.title{
-				.image-text{
-						position: absolute;
-						top: 0;
-						left: 120px;
-						max-width: 220px;
-						font-size: em(16);
-						@media (min-width: $screen-sm-min){
-							max-width: em(200);
-							left: em(240);
-							top: em(172);
-						}
-				}
+			padding: em(70) em(40) em(30);
+			@media (min-width: $screen-md-min){
+				padding: em(70) em(300) em(30) em(40);
 			}
-			.image{
+			@media (min-width: $screen-xl-min){
+				padding: em(70) em(490) em(30) em(40);
+			}
+			.text-wrap{
 				position: relative;
 				@media (min-width: $screen-md-min){
-					padding-right: em(300);		
+					position: absolute;
+					bottom: em(5);
+					right: em(-48);
+					z-index: 1;
 				}
+				@media (min-width: $screen-lg-min){
+					bottom: em(5);
+					right: em(-128);					
+				}
+				@media (min-width: $screen-xl-min){
+					bottom: em(20);
+				}
+				.title{
+					h2{
+						color: $pink;
+						text-decoration: underline;			
+						font-size: em(40);
+						margin-bottom: em(20,40);			
+						@media (min-width: $screen-md-min){
+							margin-bottom: em(50,40);
+							line-height: em(46,40);
+						}
+						@media (min-width: $screen-lg-min){
+							font-size: em(60);
+							margin-bottom: em(75,60);
+							line-height: em(72,60);
+						}
+						@media (min-width: $screen-xl-min){
+							margin-bottom: em(124,60);
+						}
+					}
+					.image-text{
+							width: em(200);
+							font-size: em(16);
+							margin-bottom: em(40);
+							@media (min-width: $screen-sm-min){
+							}
+							@media (min-width: $screen-md-min){
+								position: absolute;
+								left: em(210);
+								top: em(172);
+								margin-bottom: 0;
+							}
+							@media (min-width: $screen-lg-min){
+								left: em(184);
+							}
+							@media (min-width: $screen-xl-min){
+								left: em(240);
+							}
+					}				
+				}
+				.we-love-basket{
+						margin-bottom: em(40);
+						@media (min-width: $screen-sm-min){
+							position: absolute;
+							bottom: 0;
+							left: em(210);
+							margin-bottom: 0;
+						}
+						@media (min-width: $screen-md-min){
+							position: relative;
+							left: inherit;
+							bottom: inherit;
+						}
+						.text{
+							background: $white;
+							color: $pale-blue;
+							font-size: em(16);
+							width: 200px;
+							padding: 10px;
+						}
+						.basket{
+							position: relative;
+							width: 90px;
+							text-align: center;
+							@media (min-width: $screen-md-min){
+								width: em(118);
+								margin-top: em(20);
+								margin-bottom: 0;
+							}
+							@media (min-width: $screen-lg-min){
+								width: em(130);
+							}
+							img{
+								@media (min-width: $screen-md-min){
+									margin-left: em(32);
+								}
+							}
+							.text{
+								text-align: left;
+								margin-top: em(10);
+							}
+							.we-love{
+								position: absolute;
+								top: em(25);
+								right: em(-25);
+								@media (min-width: $screen-md-min){
+									top: em(31);
+									right: em(-75);
+									@include transform(scale(0.7));
+								}
+							}						
+						}					
+					}				
 			}
 			.image-description{
 				position: relative;
-			}
-			.text-wrap{
-				@media (min-width: $screen-md-min){
-					position: absolute;
-					top: 30px;
-					right: 0;
-					z-index: 1;
-				}
-				h2{
-					color: $pink;
-					font-size: em(60);
-					margin-bottom: 40px;
-					text-decoration: underline;
-					@media (min-width: $screen-md-min){
-						margin-bottom: 0;
-					}
-					@media (min-width: $screen-lg-min){
-						margin-bottom: 40px;
-					}
-				}
-				.we-love-basket{
-					position: relative;
-					.text{
-						background: $white;
-						color: $pale-blue;
-						font-size: em(16);
-						width: 200px;
-						padding: 10px;
-					}
-					.basket{
-						position: relative;
-						margin-top: 20px;
-						margin-bottom: 30px;
-						width: 90px;
-						text-align: center;
-						@media (min-width: $screen-md-min){
-							width: 176px;
-							@include transform(scale(0.7));
-							margin-bottom: 0px;
-						}
-						@media (min-width: $screen-lg-min){
-							width: 176px;
-							@include transform(none);
-							margin-bottom: 30px;
-						}
-						.text{
-							text-align: left;
-							margin-top: 20px;
-						}
-						.we-love{
-							position: absolute;
-							top: 50px;
-							right: -20px;
-							@media (min-width: $screen-lg-min){
-								top: 50px;
-								right: -20px;
-							}
-						}						
-					}					
-				}
-			}
+			}			
 		}			
 	}
 	#relationship-bliss{

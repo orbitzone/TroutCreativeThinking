@@ -256,9 +256,9 @@ body.spring-2015{
 			h2{
 				margin: 0;
 				text-decoration: underline;		
-				font-size: em(30);
-				margin-bottom: em(25,30); 
-				@media (min-width: $screen-sm-min){
+				font-size: em(40);
+				margin-bottom: em(25,40); 
+				@media (min-width: $screen-md-min){
 					font-size: em(60);
 					margin-bottom: em(25,60); 
 				}		

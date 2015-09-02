@@ -231,6 +231,7 @@ body.love-luxury{
 	#showers{
 		.shower-twins-wrap{
 			background: #ededed url(../images/luxury/3-showers/bg.jpg) repeat-y top center;
+			padding: em(70) 0 em(134) em(88);
 			.shower-twins{
 				position: relative;
 				.description{
@@ -264,6 +265,22 @@ body.love-luxury{
 			position: relative;
 			background: $darker-grey;
 			color: $white;
+			padding: em(94) em(70) 0;
+			.description{
+				width: em(300);
+				.title{
+					margin-bottom: em(60);
+					h2{
+						color: $rose-gold;
+						text-decoration: underline;
+						font-size: em(50);
+					}
+				}
+				.text{
+					font-size: em(24);
+					color: $white;
+				}
+			}
 			.circular-list{
 				margin-top: 400px;
 				@media (min-width: $screen-sm-min){
@@ -293,17 +310,17 @@ body.love-luxury{
 						position: relative;
 						h3{
 							font-size: em(14);
-							color: $black;
+							color: $white;
 							margin: 0;
 						}
 						.description{
 							font-size: em(14);
-							color: $grey;
+							color: $white;
 							font-weight: 400;
 						}
 					}
 					.button-mood-shop{
-						margin-top: em(20);
+						margin-top: 0;
 						@media (min-width: $screen-sm-min){
 							display: none;
 							position: absolute;
@@ -374,28 +391,33 @@ body.love-luxury{
 				.circular-product{
 					width: 226px;
 					position: absolute;
-					left: 0;
+					left: 50%;
 					@include transition(1s all ease-out);
 					@include transform-origin(center 300px);
 					@media (min-width: $screen-sm-min){
-						left: 245px;
 						width: 200px;
 						@include transform-origin(center 300px);
 					}
 					@media (min-width: $screen-md-min){
 						width: 230px;
-						left: 190px;
 						@include transform-origin(center 315px);
 					}		
 					@media (min-width: $screen-lg-min){
 						width: 226px;
-						left: 400px;
 						@include transform-origin(center 300px);
 					}
 					.share{
 						position: absolute;
 						top: 40%;
 						right: 20%;
+					}
+					.info{
+						position: absolute;
+						width: em(100);
+						p{
+							font-size: em(12);
+							margin-bottom: 0;
+						}
 					}
 					.number{
 						position: absolute;
@@ -414,43 +436,56 @@ body.love-luxury{
 							text-align: center;
 							@extend %center-align;
 						}
-					}								
+					}
+					&.product-1{
+						.info{
+					    top: em(136);
+					    left: em(138);
+				  	}
+					}	
+					&.product-4{
+						.info{
+							@include transform(rotate(-180deg));
+							top: em(136);
+					    left: em(138);	
+						}
+					}							
 				}
 				&.active{
 					.circular-product{
 						&.product-1{
-							@include transform(rotate(0));							
+							@include transform(translate(-50%) rotate(0));							
 						}
 						&.product-2{
-							@include transform(rotate(60deg));	
+							@include transform(translate(-50%) rotate(60deg));	
 							.share,
 							.number{
 								@include transform(rotate(-60deg));	
 							}
 						}
 						&.product-3{
-							@include transform(rotate(120deg));		
+							@include transform(translate(-50%) rotate(120deg));		
 							.share,
 							.number{
 								@include transform(rotate(-120deg));	
 							}
 						}
 						&.product-4{
-							@include transform(rotate(180deg));			
+							@include transform(translate(-50%) rotate(180deg));			
 							.share,
 							.number{
 								@include transform(rotate(-180deg));	
 							}
 						}
 						&.product-5{
-							@include transform(rotate(240deg));		
+							@include transform(translate(-50%) rotate(240deg));		
 							.share,
 							.number{
 								@include transform(rotate(-240deg));	
 							}
 						}
 						&.product-6{
-							@include transform(rotate(300deg));	
+							@include transform(translate(-50%) rotate(300deg));	
 							.share,
 							.number{
 								@include transform(rotate(-300deg));	
@@ -464,7 +499,9 @@ body.love-luxury{
 	#hotel-inspired-look{
 		overflow: hidden;
 		margin-bottom: em(90);
-		.image-wrap{
+		.hotel-inspired-look{
+			margin-bottom: em(50);
+			.image-wrap{
 			position: relative;
 			@media (min-width: $screen-md-min){
 				padding-right: em(134);
@@ -474,7 +511,7 @@ body.love-luxury{
 				font-weight: bold;
 				line-height: 1em;
 				text-decoration: underline;
-				color: $pale-blue;
+				color: $gold;
 				position: relative;
 				margin-top: 20px;
 				@media (min-width: $screen-md-min){
@@ -487,15 +524,7 @@ body.love-luxury{
 			.share{
 				position: absolute;
 				top: 30px;
-				left: 30px;
-			}
-		}
-		.description{
-			margin-top: 20px;
-			padding-right: em(140);
-			@media (min-width: $screen-md-min){
-				margin-top: 0;
-				padding-left: 134px;
+				right: 30px;
 			}
 		}
 		.slider{
@@ -505,11 +534,13 @@ body.love-luxury{
 				border: none;
 				outline: none;
 				position: absolute;
-				bottom: -40px;
+				bottom: em(-54);
+				top: inherit;
 				z-index: 2;
+				left: inherit;
 				i{
 					font-size: em(50);
-					color: $pale-blue;
+					color: $gold;
 				}
 				&.arrow-next{
 					@include transform(translateY(-100%));
@@ -520,17 +551,41 @@ body.love-luxury{
 					right: 10px;
 				}
 				&.slick-disabled{
+					display: block;
 					i{
 						color: $grey;
 					}
 				}
 			}
+			.description{
+				margin-top: 20px;
+				padding-right: em(140);
+				@media (min-width: $screen-md-min){
+					margin-top: 0;
+					padding-top: em(40);
+					padding-left: em(190);
+				}
+				h3{
+					color: $gold;
+					font-size: em(16);
+					text-transform: uppercase;
+					font-weight: 700;
+					margin: 0;
+				}
+				p{
+					color: $grey;
+					font-size: em(16);
+				}
+			}
 		}
+		}
+		
 		.luxe-for-less{
 			background: url(../images/line-pattern-dark.png) repeat;
 			color: $white;
-			padding: em(60) 0;
+			padding: em(60) 0 em(128) em(243);
 			.description{
+				width: em(300);
 				h2{
 					font-size: em(40);
 					text-decoration: underline;
@@ -538,16 +593,54 @@ body.love-luxury{
 						font-size: em(60);
 					}
 				}
+				.text{
+					margin-top: em(30);
+					p{
+						color: $grey;
+						font-size: em(24);
+						margin-bottom: 0;
+					}
+				}
 			}
 			.products{
 				position: relative;
 				.product-2{
 					position: absolute;
-					right: 0;
-					top: em(20);
+					left: em(214);
+					top: em(56);
+					.share{
+						margin-left: em(215);
+					}
 				}
 			}
 		}
+	}
+	#favourites{
+		margin-bottom: em(40);
+		.banner{
+			.image-wrap{
+				.text{
+					h2{
+						color: $gold;
+						text-decoration: underline;
+					}
+					.description{
+						p{
+							background: $pale-blue;
+						}
+					}	
+				}
+			}			
+		}
+		.product-wrap{
+			.product{
+				.product-info{
+					.text{
+						color: $gold;
+					}
+				}
+			}
+		}			
 	}
 	#footer-ads{
 		padding-top: 105px;
@@ -578,10 +671,10 @@ body.love-luxury{
 				}
 				.button{
 					display: block;
-					border: 2px solid $dark-grey;
+					border: 2px solid $white;
 					background: none;
 					padding: em(20) em(30);
-					color: $dark-grey;
+					color: $white;
 					font-weight: 700;
 					text-transform: uppercase;
 				}

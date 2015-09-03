@@ -901,12 +901,10 @@ body.love-family{
 							}
 							@media (min-width: $screen-md-min){
 								position: absolute;
+								width: em(180);
 								left: em(210);
 								top: em(172);
 								margin-bottom: 0;
-							}
-							@media (min-width: $screen-lg-min){
-								left: em(230);
 							}
 							@media (min-width: $screen-xl-min){
 								left: em(240);
@@ -917,7 +915,7 @@ body.love-family{
 								@media (min-width: $screen-md-min){
 									font-size: em(18);
 								}
-								@media (min-width: $screen-lg-min){
+								@media (min-width: $screen-xl-min){
 									font-size: em(24);
 								}
 							}
@@ -1932,10 +1930,20 @@ body.love-family{
 					}
 				}
 				.text{
+					color: $grey;
 					padding: em(20);
+					@media (min-width: $screen-sm-min){
+						max-width: em(400);
+					}
 					@media (min-width: $screen-lg-min){
 						padding: em(20) 0;
-						max-width: em(400);
+						max-width: em(520);
+					}
+					p{
+						font-size: em(16);
+						@media (min-width: $screen-lg-min){
+							font-size: em(24);
+						}
 					}
 				}				
 			}

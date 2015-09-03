@@ -291,7 +291,8 @@ body.spring-2015{
 				}
 			}
 			.product{
-				padding-bottom: em(20);
+				padding-bottom: em(54);
+				position: relative;
 				.image{
 					img{
 						margin: 0 auto;
@@ -307,6 +308,11 @@ body.spring-2015{
 							top: 50%;
 						}
 					}
+				}
+				.button-mood-shop{
+					position: absolute;
+					left: 0;
+					bottom: em(20);
 				}
 			}				
 		}

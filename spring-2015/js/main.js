@@ -371,7 +371,9 @@ jQuery(function($){
 				cache: false,
 				url: 'pages/family/bathrooms-for-inspiration.html',
 				success: function(data){
-					$('#main-content').append(data);
+					$('#main-content').append(data).imagesLoaded().then(function(){
+						$('#bathrooms-for-inspiration .products-slide .product').matchHeight();
+					});
 					
 					$('#bathrooms-for-inspiration .products-slide').slick({
 						slidesToShow: 4,
@@ -576,7 +578,9 @@ jQuery(function($){
 				cache: false,
 				url: 'pages/luxury/bathrooms-for-inspiration.html',
 				success: function(data){
-					$('#main-content').append(data);
+					$('#main-content').append(data).imagesLoaded().then(function(){
+						$('#bathrooms-for-inspiration .products-slide .product').matchHeight();
+					});
 					
 					$('#bathrooms-for-inspiration .products-slide').slick({
 						slidesToShow: 4,
@@ -703,7 +707,9 @@ jQuery(function($){
 				cache: false,
 				url: 'pages/calm/bathrooms-for-inspiration.html',
 				success: function(data){
-					$('#main-content').append(data);
+					$('#main-content').append(data).imagesLoaded().then(function(){
+						$('#bathrooms-for-inspiration .products-slide .product').matchHeight();
+					});
 					
 					$('#bathrooms-for-inspiration .products-slide').slick({
 						slidesToShow: 2,

@@ -198,14 +198,14 @@ jQuery(function($){
 		add: function(obj, product){
 			moodboard.products += 1;
 			$(obj).addClass('added');
-			$('#destination-happiness .dh-items').removeClass('empty').html(moodboard.products);
-			$('#destination-links .dh-items').removeClass('empty').html(moodboard.products);
+			$('#destination-happiness .dh-items').removeClass('empty').find('.number').html(moodboard.products);
+			$('#destination-links .dh-items').removeClass('empty').find('.number').html(moodboard.products);
 		},
 		remove: function(obj, product){
 			moodboard.products -= 1;
 			$(obj).removeClass('added');
-			$('#destination-happiness .dh-items').html(moodboard.products);
-			$('#destination-links .dh-items').html(moodboard.products);
+			$('#destination-happiness .dh-items .number').html(moodboard.products);
+			$('#destination-links .dh-items .number').html(moodboard.products);
 			if(moodboard.products <= 0){
 				$('#destination-happiness .dh-items').addClass('empty');
 				$('#destination-links .dh-items').addClass('empty');
@@ -283,7 +283,8 @@ jQuery(function($){
 				cache: false,
 				url:'pages/homepage.html',
 				success: function(data){
-					$('#main-content').html(data);										
+					$('#main-content').html(data);
+					$('#subscribe form').validate();
 				}
 			});
 		}

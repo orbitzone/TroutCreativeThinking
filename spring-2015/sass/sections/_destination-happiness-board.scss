@@ -82,7 +82,6 @@ body.spring-2015{
 				background: $red;
 				@include border-radius(50%);
 				color: $white;
-				padding: em(4,8) em(4,8);
 				vertical-align: bottom;				
 				position: absolute;
 				top: -6px;
@@ -91,22 +90,40 @@ body.spring-2015{
 				line-height: em(12);
 				opacity: 1;
 				@include transition(0.2s all ease-out);
+				width: 12px;
+				height: 12px;
+				position: relative;
 				@media (min-width: $screen-sm-min){
 					font-size: em(12);
-					padding: em(5,12) em(5,12);
 					top: -9.6px;
 					right: -9.6px;
+					width: 18px;
+				height: 18px;
 				}
 				@media (min-width: $screen-lg-min){
 					font-size: em(15);
-					padding: em(2,15) em(8,15);
 					top: -12px;
 					right: -12px;
 					line-height: inherit;
+					width: 22px;
+					height: 22px;				
 				}
-			}
-			.dh-items.empty{
-				display: none;
+				&.empty{
+					display: none;
+				}
+				span{
+					position: absolute;
+					left: 0;
+					top: 3px;
+					width: 100%;
+					text-align: center;
+					@media (min-width: $screen-sm-min){
+						top: 6px;
+					}
+					@media (min-width: $screen-lg-min){
+						top: 2px;
+					}
+				}
 			}
 		}
 		&.active{
@@ -313,7 +330,20 @@ body.spring-2015{
 				color: $white;
 				font-size: em(15,24);
 				padding: 2px 8px;
-				vertical-align: bottom;				
+				vertical-align: bottom;
+				width: 22px;
+				height: 22px;
+				position: relative;
+				&.empty{
+					display: none;
+				}
+				span{
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 100%;
+					text-align: center;
+				}								
 			}
 		}
 	}

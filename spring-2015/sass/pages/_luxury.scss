@@ -10,13 +10,7 @@ body.love-luxury{
 		font-size: em(46);
 	}
 	#collection-intro{
-		margin-bottom: em(80);
-		@media (min-width: $screen-sm-min){
-			margin-bottom: em(284);
-		}
-		@media (min-width: $screen-md-min){
-			margin-bottom: em(220);
-		}
+		margin-bottom: em(40);
 		header{
 			background: none;
 			position: relative;
@@ -51,9 +45,9 @@ body.love-luxury{
 			top: 0;
 			z-index: 0;
 			@media (min-width: $screen-md-min){
-				left: em(20);
+				left: 0;
 			}
-			@media (min-width: $screen-lg-min){
+			@media (min-width: $screen-xl-min){
 				left: em(150);
 			}
 			img{
@@ -88,9 +82,12 @@ body.love-luxury{
 			@media (min-width: $screen-lg-min){
 				position: absolute;
 				padding-left: 0;
-				left: 22%;
+				left: em(184,34);
 				top: em(-80,34);
 				max-width: em(695,34);
+			}
+			@media (min-width: $screen-xl-min){
+				left: 22%;
 			}
 			p{
 				color: $white;
@@ -106,7 +103,7 @@ body.love-luxury{
 			float:right;
 			width: em(562);
 			margin-right: em(60);	
-			margin-top: em(20);
+			margin-top: em(75);
 			.we-love{
 				position: absolute;
 				top: em(74);

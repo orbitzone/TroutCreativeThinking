@@ -1512,6 +1512,15 @@ body.love-family{
 					}
 				}
 			}
+			.product{
+				padding-left: 11%;
+				@media (min-width: $screen-sm-min){
+					padding-left: em(40);
+				}
+				@media (min-width: $screen-md-min){
+					padding-left: em(120);
+				}
+			}
 			.shower-image{
 				background-repeat: no-repeat;
 				background-position: top center;
@@ -1522,16 +1531,18 @@ body.love-family{
 				max-width: 512px;
 				margin: 0 auto;
 				@media (min-width: $screen-sm-min){
-					min-height: 420px;
+					min-height: 380px;
+					top: em(-272);
+					margin-bottom: -272px;
 				}
 				@media (min-width: $screen-lg-min){
-					min-height: 1000px;
+					min-height: 634px;
 					top: em(-280);
 					margin-bottom: -360px;
 				}
 				button{
 					position: absolute;
-					bottom: 100px;
+					top: 0;
 					right: -10px;
 				}
 				img{

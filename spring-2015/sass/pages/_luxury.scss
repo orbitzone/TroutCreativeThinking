@@ -415,7 +415,8 @@ body.love-luxury{
 					background: $white;
 					padding: em(20);
 					position: relative;
-					margin-top: em(-34);
+					margin-top: em(-132);
+					margin-right: em(60);
 					@media (min-width: $screen-sm-min){
 						padding: em(52) em(113) em(30);
 					}
@@ -435,8 +436,7 @@ body.love-luxury{
 					position: relative;
 					left: 0;					
 					@media (min-width: $screen-sm-min){
-						width: auto;
-						left: 40px;						
+						width: auto;			
 					}
 					img{
 						display: block;
@@ -632,6 +632,14 @@ body.love-luxury{
 				position: absolute;
 				top: em(20);
 				left: em(20);
+				@media (min-width: $screen-sm-min){
+					left: inherit;
+					right: em(20);
+				}
+				@media (min-width: $screen-md-min){
+					left: em(120);
+					right: inherit;
+				}
 				.image{
 					position: absolute;
 					top: em(-83);
@@ -639,9 +647,20 @@ body.love-luxury{
 						position: absolute;
 						top: 0;
 						left: em(-20);
+						@media (min-width: $screen-sm-min){
+							top: em(-60);
+							left: em(-20);
+						}
+						@media (min-width: $screen-md-min){
+							top: em(-60);
+							left: em(-20);
+						}
 					}
 					img{
 						max-width: em(120);
+						@media (min-width: $screen-md-min){
+							max-width: 100%;
+						}
 					}					
 				}
 				.text{
@@ -649,11 +668,18 @@ body.love-luxury{
 					color: $black;
 					background: $white;
 					width: em(190);
+					@media (min-width: $screen-lg-min){
+						padding: em(70) em(40) em(40) em(60);
+						width: em(300);
+					}
 				}
 			}
-			.description{
+			.main-description{
 				@media (min-width: $screen-sm-min){
 					width: em(300);
+				}
+				@media (min-width: $screen-lg-min){
+					margin-top: em(225);
 				}
 				.title{
 					@media (min-width: $screen-sm-min){
@@ -678,7 +704,11 @@ body.love-luxury{
 			}
 			.circular-list{
 				@media (min-width: $screen-sm-min){
-					margin-top: 400px;
+					margin-bottom: em(40);
+				}
+				@media (min-width: $screen-lg-min){
+					margin-top: em(108);
+					margin-bottom: 0;
 				}
 				li{
 					@include clearfix;
@@ -711,6 +741,11 @@ body.love-luxury{
 							font-size: em(14);
 							color: $white;
 							font-weight: 400;
+						}
+						.price{
+							font-size: em(14);
+							color: $white;
+							padding: 0;
 						}
 					}
 					.button-mood-shop{
@@ -789,10 +824,14 @@ body.love-luxury{
 					@media (min-width: $screen-md-min){
 						width: 230px;
 						@include transform-origin(center 315px);
+					}
+					@media (min-width: $screen-xl-min){
+						width: 260px;
+						@include transform-origin(center 320px);
 					}		
-					@media (min-width: $screen-lg-min){
-						width: 226px;
-						@include transform-origin(center 300px);
+					@media (min-width: $screen-xl-min){
+						width: 300px;
+						@include transform-origin(center 380px);
 					}
 					.share{
 						position: absolute;
@@ -902,7 +941,7 @@ body.love-luxury{
 			}
 			position: relative;
 			.dot-pattern{
-				padding: em(10);
+				padding: em(80) em(50);
 			}
 			.text{
 				font-size: em(40);
@@ -919,7 +958,7 @@ body.love-luxury{
 					margin-bottom: 0;
 					position: absolute;
 					top: 20%;
-					right: 0;
+					right: em(-30);
 					z-index: 2;
 				}
 			}
@@ -954,9 +993,6 @@ body.love-luxury{
 				}
 			}
 			.slider{
-				@media (min-width: $screen-md-min){
-					padding-left: em(134);
-				}
 				button{
 					@include appearance(none);
 					background: none;
@@ -1030,6 +1066,250 @@ body.love-luxury{
 					.share{
 						margin-left: em(215);
 					}
+				}
+			}
+		}
+		.the-powder-room{
+			padding: em(50);
+			.title{
+				padding-left: em(190);
+				h2{
+					font-size: em(40);
+					text-decoration: underline;
+					@media (min-width: $screen-sm-min){
+						font-size: em(60);
+					}
+				}
+			}
+			.product-1{
+				position: relative;
+				max-width: em(1200);
+				margin: 0 auto;
+				.product{
+					padding-left: em(300);
+					.images{
+						position: relative;
+						img{
+							max-width: em(540);
+						}
+						.button-mood-shop{
+							position: absolute;
+							bottom: em(40);
+							left: em(80);
+						}
+					}
+				}
+				.we-love-updates{
+					width: em(417);
+					position: absolute;
+					top: em(-40);
+					right: 0;
+					.we-love{
+						position: absolute;
+						top: em(150);
+						left: em(-10);
+					}
+					.text{
+						width: em(285);
+						color: $grey;
+						position: absolute;
+						left: em(120);
+						top: em(220);
+						p{
+							font-size: em(21);
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+			.product-2{
+				margin-top: em(-110);
+				.subtitle{
+					position: relative;
+					z-index: 2;
+					h2{
+						font-size: em(35);						
+					}
+					p{
+						color: $white;
+						background: $pale-blue;
+						float: left;
+						clear: both;
+						margin:0;
+						padding: em(2) em(10);	
+					}
+				}
+				.image{
+					display: block;
+    position: absolute;
+    top: 80px;
+    left: 300px;
+    z-index: 1;
+				}
+				.hex-slider{
+					position: relative;
+					margin-top: em(32);
+					svg{
+						width: em(400);
+						height: em(400);
+						.bg{
+							fill: $white;
+						}
+						.border{
+							fill: $pale-blue;
+						}
+					}
+					.buttons-slider{
+						position: absolute;
+						width: em(150);
+						height: em(88);
+						top: em(70);
+						left: em(120);
+						img{
+							max-height: em(88);
+							margin: 0 auto;
+							display: block;
+						}
+					}
+					.pans-slider{
+						width: em(150);
+						height: em(140);
+						position: absolute;
+						top: em(180);
+						left: em(120);
+						img{
+							max-height: em(140);
+							margin: 0 auto;
+							display: block;
+						}
+					}
+					.button-mood-shop{
+				    position: absolute;
+				    bottom: -10px;
+				    left: 120px;
+					}
+					.slick-slider{
+					button{
+						@include appearance(none);
+						background: none;
+						border: none;
+						outline: none;
+						position: absolute;
+						top: 50%;
+						z-index: 2;
+						left: inherit;
+						i{
+							font-size: em(50);
+							color: $light-grey;
+						}
+						&.arrow-next{
+							@include transform(translateX(50%) translateY(-50%));
+							right: 0;
+						}
+						&.arrow-prev{
+							@include transform(translateX(-100%) translateY(-50%));
+							left: 0;
+						}
+						&.slick-disabled{
+							display: block;
+							i{
+								color: $light-grey;
+							}
+						}
+					}	
+				}
+				}
+				.description{
+					width: em(300);
+					margin-top: em(40);
+					margin-left: em(80);
+					p{
+						font-size: em(21);
+						color: $black;
+					}
+				}
+			}			
+		}
+	}
+	#products{
+		.wow-factor{
+			.line-pattern{
+				padding: em(30);
+				@media (min-width: $screen-sm-min){
+					padding: em(50) em(30);
+				}
+				.title{
+					margin-bottom: em(30);
+					h2{
+						color: $black;
+						margin: 0;
+						text-decoration: underline;
+						font-size: em(40);
+						@media (min-width: $screen-md-min){
+							font-size: em(60);
+						}
+					}
+				}
+				.text-wrap{
+					width: em(310);
+				}
+				.description{
+					p{
+						color: $grey;
+						margin: 0;
+						font-size: em(16);
+						@media (min-width: $screen-md-min){
+							font-size: em(24);
+						}							
+					}
+				}
+				.slider{
+					position: relative;
+					.image{
+						position: relative;
+						.share{
+							position: absolute;
+							top: em(20);
+							right: em(20);
+						}
+					}
+					.slick-dots{
+						position: absolute;
+						margin: 0;
+						bottom: em(20);
+						left: 0;
+						width: 100%;
+						li{
+							margin: 0;
+							button{
+								&:before{
+									font-size: em(10);
+									color: $white;
+									opacity: 1;
+								}
+							}
+							&.slick-active{
+								button{
+									&:before{
+										font-size: em(10);
+										color: $green;
+										opacity: 1;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.featured-products{
+			padding: em(60) em(130);
+			.slick-slide{
+				margin: em(20);
+			}
+			.product{
+				.image{
+					margin-bottom: em(20);
 				}
 			}
 		}

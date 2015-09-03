@@ -655,6 +655,8 @@ jQuery(function($){
 						slidesToShow: 1,
   					slidesToScroll: 1,
   					infinite: false,
+  					arrows: false,
+  					dots: true,
   					prevArrow: "<button type=\"button\" class=\"arrow-prev\"><i class=\"iconr-arrow-left\"></i></button>",
   					nextArrow: "<button type=\"button\" class=\"arrow-next\"><i class=\"iconr-arrow-right\"></i></button>"					 	
 					});

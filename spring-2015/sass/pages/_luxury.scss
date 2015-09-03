@@ -265,15 +265,29 @@ body.love-luxury{
 				top: em(20);
 				left: em(40);
 				@media (min-width: $screen-sm-min){
-					width: em(500);
-					top: percentage(90/467);
+					width: em(300);
+					top: em(23);
+					left: em(40);
+				}
+				@media (min-width: $screen-md-min){
+					top: em(42);
+				}
+				@media (min-width: $screen-lg-min){
+					width: em(500);					
+					top: em(30);
 					left: percentage(535/1520);
+				}
+				@media (min-width: $screen-xl-min){
+					top: percentage(90/467);
 				}
 				h2{
 					color: $white;
 					font-size: em(18);
 					margin: 0;
 					@media (min-width: $screen-sm-min){
+						font-size: em(40);
+					}
+					@media (min-width: $screen-lg-min){
 						font-size: em(60);
 					}
 				}
@@ -285,6 +299,24 @@ body.love-luxury{
 				margin-left: em(20);
 				@media (min-width: $screen-sm-min){
 					position: absolute;
+					width: em(300);
+					bottom: em(-19);
+					left: em(250);
+					text-align: right;
+					margin-left: 0;
+				}
+				@media (min-width: $screen-md-min){
+					width: em(386);
+
+				}
+				@media (min-width: $screen-lg-min){
+					width: em(400);
+					bottom: em(-80);
+					left: em(10);
+					text-align: right;
+					margin-left: 0;
+				}
+				@media (min-width: $screen-xl-min){
 					width: em(506);
 					bottom: em(-80);
 					left: em(10);
@@ -296,8 +328,20 @@ body.love-luxury{
 					top: 0;
 					left: em(148);
 					@media (min-width: $screen-sm-min){
-						right: em(236);
-						left: inherit;
+						top: em(-19);
+						left: em(180);
+					}
+					@media (min-width: $screen-md-min){
+						top: em(-44);
+						left: em(148);
+					}
+					@media (min-width: $screen-lg-min){
+						left: em(128);
+						top: em(-4);						
+					}
+					@media (min-width: $screen-xl-min){
+						left: em(128);
+						top: em(-4);						
 					}
 				}
 				.text{
@@ -311,6 +355,15 @@ body.love-luxury{
 					width: em(180,14);
 					text-align: left;
 					@media (min-width: $screen-sm-min){
+						top: em(20);
+						font-size: em(14);
+						padding: em(10,14);
+						width: em(205,14);
+					}
+					@media (min-width: $screen-md-min){
+						top: em(48);
+					}
+					@media (min-width: $screen-lg-min){
 						top: em(92);
 						font-size: em(16);
 						padding: em(10);
@@ -324,6 +377,15 @@ body.love-luxury{
 						max-width: 100%;
 						@media (min-width: $screen-sm-min){
 							padding-left: 0;
+							max-width: em(120);
+						}
+						@media (min-width: $screen-md-min){
+							max-width: em(200);
+						}
+						@media (min-width: $screen-lg-min){
+							max-width: em(250);
+						}
+						@media (min-width: $screen-xl-min){
 							max-width: 100%;
 						}
 					}
@@ -337,7 +399,7 @@ body.love-luxury{
 					padding: 0;
 					bottom: em(20);
 					right: em(20);
-					color: $white;
+					color: $black;
 				}
 			}
 		}

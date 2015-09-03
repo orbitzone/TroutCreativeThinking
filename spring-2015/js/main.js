@@ -646,7 +646,14 @@ jQuery(function($){
 			});						
 		},
 		products: function(){
-			loveLuxury.hotelInspiredLook();
+			$.ajax({
+				cache: false,
+				url: 'pages/luxury/products.html',
+				success: function(data){
+					$('#main-content').append(data);
+					loveLuxury.hotelInspiredLook();
+				}
+			});				
 		},
 		hotelInspiredLook: function(){
 			$.ajax({

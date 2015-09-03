@@ -127,7 +127,6 @@ jQuery(function($){
 							$(this).find('.desc').html("Add to<br/>moodboard");
 						}else{
 							$(products).each(function(product){
-								console.log(product);
 								moodboard.add(button,product);								
 							});							
 							$(this).find('.desc').html("Added to<br/>moodboard");

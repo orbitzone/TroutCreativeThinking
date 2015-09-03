@@ -669,6 +669,22 @@ jQuery(function($){
   					prevArrow: "<button type=\"button\" class=\"arrow-prev\"><i class=\"iconr-arrow-left\"></i></button>",
   					nextArrow: "<button type=\"button\" class=\"arrow-next\"><i class=\"iconr-arrow-right\"></i></button>"					 	
 					});
+					$('#hotel-inspired-look .buttons-slider').slick({
+						slidesToShow: 1,
+  					slidesToScroll: 1,
+  					infinite: true,
+  					swipe: true,
+  					prevArrow: "<button type=\"button\" class=\"arrow-prev\"><i class=\"iconr-arrow-left\"></i></button>",
+  					nextArrow: "<button type=\"button\" class=\"arrow-next\"><i class=\"iconr-arrow-right\"></i></button>"					 	
+					});
+					$('#hotel-inspired-look .pans-slider').slick({
+						slidesToShow: 1,
+  					slidesToScroll: 1,
+  					infinite: true,
+  					swipe: true,
+  					prevArrow: "<button type=\"button\" class=\"arrow-prev\"><i class=\"iconr-arrow-left\"></i></button>",
+  					nextArrow: "<button type=\"button\" class=\"arrow-next\"><i class=\"iconr-arrow-right\"></i></button>"					 	
+					});
 					loveLuxury.favourites();
 				}
 			});			

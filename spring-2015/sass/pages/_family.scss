@@ -732,11 +732,15 @@ body.love-family{
 		margin-bottom: em(40);
 		.featured-products{
 			padding: 0 em(30);
+			.products-slide{
+				max-width: em(1026);
+				margin: 0 auto;
+			}
 			.product{
 				position: relative;
 				padding-bottom: em(54);
 				.image{
-					@media (min-width: $screen-sm-min){
+					/*@media (min-width: $screen-sm-min){
 						margin-right: em(40);
 					}
 					@media (min-width: $screen-md-min){
@@ -744,7 +748,7 @@ body.love-family{
 					}
 					@media (min-width: $screen-lg-min){
 						margin-right: em(100);
-					}
+					}*/
 				}
 				.button-mood-shop{
 					position: absolute;
@@ -892,6 +896,7 @@ body.love-family{
 							width: em(200);
 							font-size: em(16);
 							margin-bottom: em(40);
+							color: $grey;
 							@media (min-width: $screen-sm-min){
 							}
 							@media (min-width: $screen-md-min){
@@ -901,10 +906,20 @@ body.love-family{
 								margin-bottom: 0;
 							}
 							@media (min-width: $screen-lg-min){
-								left: em(184);
+								left: em(230);
 							}
 							@media (min-width: $screen-xl-min){
 								left: em(240);
+							}
+							p{
+								font-size: em(16);
+								margin: 0;
+								@media (min-width: $screen-md-min){
+									font-size: em(18);
+								}
+								@media (min-width: $screen-lg-min){
+									font-size: em(24);
+								}
 							}
 					}				
 				}

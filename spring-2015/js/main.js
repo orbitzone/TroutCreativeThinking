@@ -447,8 +447,8 @@ jQuery(function($){
 						$('#smart-storage .products-slide .product').matchHeight();
 					});
 					$('#smart-storage .products-slide').slick({
-						slidesToShow: 4,
-  					slidesToScroll: 4,
+						slidesToShow: 3,
+  					slidesToScroll: 3,
   					infinite: false,
   					prevArrow: "<button type=\"button\" class=\"arrow-prev\"><i class=\"iconr-arrow-left\"></i></button>",
   					nextArrow: "<button type=\"button\" class=\"arrow-next\"><i class=\"iconr-arrow-right\"></i></button>",

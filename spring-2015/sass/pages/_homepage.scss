@@ -48,7 +48,7 @@ body.homepage{
 				}
 				@media (min-width: $screen-xl-min){
 					left: 345px;
-					width: 565px;
+					width: em(550,50);
 				}
 			}
 			p{

@@ -273,6 +273,29 @@ body.love-family{
 			h2{
 				color: $pink;
 			}
+		}
+		.bathroom{
+			.hotspots{
+				.hotspot{
+					color: $pink;
+					&.spot-1{
+						top: 36.5%;
+						left: 18%;
+					}
+					&.spot-2{
+						top: percentage(251/901);
+						left: 22%;
+					}
+					&.spot-3{
+						top: percentage(188/901);
+						left: 39%;
+					}
+					&.spot-4{
+						top: 62%;
+						left: 74%;
+					}
+				}
+			}
 		}		
 	}
 	#circular-gallery{
@@ -1390,7 +1413,7 @@ body.love-family{
 		margin-bottom: 40px;
 		.banner{
 			position: relative;
-			margin-bottom: 20px;
+			margin-bottom: em(40);
 			background-size: cover;
 			padding: em(67) em(30) em(40);
 			@media (min-width: $screen-sm-min){
@@ -1443,13 +1466,9 @@ body.love-family{
 		}
 		.shower-settings{
 			.intro{
-				padding-top: em(20);
-    		padding-left: em(14);
+				padding-left: em(14);
     		@media (min-width: $screen-sm-min){
     			padding-right: em(80);
-    		}
-    		@media (min-width: $screen-lg-min){
-    			padding-top: em(92);
     		}
 				h2{
     			margin-top: 0;
@@ -1459,8 +1478,8 @@ body.love-family{
 					font-size: em(30);
 					margin-bottom: em(20,30);
     			@media (min-width: $screen-sm-min){
-						font-size: em(60);
-						margin-bottom: em(46,60);
+						font-size: em(40);
+						margin-bottom: em(46,40);
 					}
     		}
 				.text{
@@ -1469,7 +1488,7 @@ body.love-family{
 					color: $grey;
 					font-size: em(18);
 					@media (min-width: $screen-sm-min){
-						font-size: em(24);
+						font-size: em(16);
 					}
 				}
 			}
@@ -1487,7 +1506,7 @@ body.love-family{
 				}
 				@media (min-width: $screen-lg-min){
 					min-height: 1000px;
-					top: -360px;
+					top: em(-280);
 					margin-bottom: -360px;
 				}
 				button{

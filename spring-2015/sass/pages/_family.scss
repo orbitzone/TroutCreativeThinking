@@ -733,6 +733,8 @@ body.love-family{
 		.featured-products{
 			padding: 0 em(30);
 			.product{
+				position: relative;
+				padding-bottom: em(54);
 				.image{
 					@media (min-width: $screen-sm-min){
 						margin-right: em(40);
@@ -743,6 +745,11 @@ body.love-family{
 					@media (min-width: $screen-lg-min){
 						margin-right: em(100);
 					}
+				}
+				.button-mood-shop{
+					position: absolute;
+					bottom: em(20);
+					left: 0;
 				}
 			}
 		}	

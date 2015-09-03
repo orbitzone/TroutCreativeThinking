@@ -1,14 +1,18 @@
 body.spring-2015{
 	#favourites{
+		margin-bottom: em(60);
 		.banner{
 			@media (min-width: $screen-lg-min){
 				padding-left: em(118);
 			}
 			.image-wrap{
 				position: relative;
-				margin-bottom: 10px;
-				margin-bottom: em(85);
+				margin-bottom: em(30);
 				@media (min-width: $screen-sm-min){
+					padding-right: em(265);
+					margin-bottom: em(85);
+				}
+				@media (min-width: $screen-md-min){
 					padding-right: em(140);
 				}
 				.image{
@@ -30,19 +34,27 @@ body.spring-2015{
 						right: 17%;
 					}
 					h2{
-						margin-bottom: em(70,70);
+						margin-bottom: em(20,30);
 						color: $black;
 						text-decoration: underline;
 						margin-top: em(20,30);
 						font-size: em(30);
 						@media (min-width: $screen-sm-min){
+							font-size: em(40);
+							margin-bottom: em(30,40);
+						}
+						@media (min-width: $screen-md-min){
 							float: right;
 							font-size: em(70);
+							margin-bottom: em(40,70);
 							margin-top: 0;
+						}
+						@media (min-width: $screen-lg-min){
+							margin-bottom: em(70,70);
 						}						
 					}
 					.description{
-						@media (min-width: $screen-sm-min){
+						@media (min-width: $screen-md-min){
 							float: right;
 							margin-right: 20px;
 							clear: both;
@@ -58,8 +70,10 @@ body.spring-2015{
 							line-height: 1em;
 								float: left;
 								clear: both;
-							
 							@media (min-width: $screen-sm-min){
+								font-size: em(21);
+							}
+							@media (min-width: $screen-md-min){
 								font-size: em(30);
 							}
 						}
@@ -75,6 +89,7 @@ body.spring-2015{
 		}
 		.product-wrap{
 			border-top: none;
+			position: relative;
 			@media (min-width: $screen-sm-min){
 				border-top: 1px solid $grey;
 			}
@@ -85,12 +100,17 @@ body.spring-2015{
 			}
 			.product{
 				height: 100%;
-				padding: 0 em(26) em(24);
+				padding: 0 em(26) em(58);
 				max-width: em(250);
 				margin: 0 auto;
 				@media (min-width: $screen-sm-min){
-					padding: em(30) em(26) em(24);
+					padding: em(30) em(26) em(58);
 					max-width: inherit;
+				}
+				.button-mood-shop{
+					position: absolute;
+					bottom: em(24);
+					left: em(26);
 				}
 				.line-pattern{
 					position: absolute;

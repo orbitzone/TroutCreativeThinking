@@ -443,7 +443,9 @@ jQuery(function($){
 				cache: false,
 				url: 'pages/family/smart-storage.html',
 				success: function(data){
-					$('#main-content').append(data);
+					$('#main-content').append(data).imagesLoaded().then(function(){
+						$('#smart-storage .products-slide .product').matchHeight();
+					});
 					$('#smart-storage .products-slide').slick({
 						slidesToShow: 4,
   					slidesToScroll: 4,
@@ -742,7 +744,9 @@ jQuery(function($){
 				cache: false,
 				url: 'pages/calm/water-therapy.html',
 				success: function(data){
-					$('#main-content').append(data);
+					$('#main-content').append(data).imagesLoaded().then(function(){
+						$('#water-therapy .product').matchHeight();
+					});;
 					$('#water-therapy .video-slider').slick({
 						slidesToShow: 1,
   					slidesToScroll: 1,

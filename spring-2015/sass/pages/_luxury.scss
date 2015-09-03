@@ -1,7 +1,7 @@
 body.love-luxury{
 	.we-love{
 		background-position:-126px 0;
-		@media (min-width: $screen-sm-min){
+		@media (min-width: $screen-md-min){
 			background-position:-250px 0;
 		}
 	}
@@ -10,7 +10,9 @@ body.love-luxury{
 		font-size: em(46);
 	}
 	#collection-intro{
+		@media (min-width: $screen-sm-min){
 		margin-bottom: em(40);
+	}
 		header{
 			background: none;
 			position: relative;
@@ -41,11 +43,12 @@ body.love-luxury{
 		}
 		.hanging-toy{
 			position: absolute;
-			left: 0;
+			right: 0;
 			top: 0;
 			z-index: 0;
-			@media (min-width: $screen-md-min){
+			@media (min-width: $screen-sm-min){
 				left: 0;
+				right: inherit;
 			}
 			@media (min-width: $screen-xl-min){
 				left: em(150);
@@ -59,32 +62,39 @@ body.love-luxury{
 					max-width: em(70);
 				}
 				@media (min-width: $screen-lg-min){
+					max-width: em(120);
+				}
+				@media (min-width: $screen-xl-min){
 					max-width: 100%;
 				}
 			}
 		}
 		.intro-copy{
 			position: relative;
-			font-size: em(16);
+			font-size: em(14);
 			font-weight: 700;
-			line-height: em(20);	
-			padding-right: 50px;
 			z-index: 3;
+			margin-left: 0;
+			width: 100%;
 			@media (min-width: $screen-sm-min){
 				font-size: em(20);
 				line-height: em(24,20);	
-				padding-right: 0;
+				margin-left: em(143,20);
+				padding-right: 0;				
 			}
 			@media (min-width: $screen-md-min){
-				font-size: em(34);
-				line-height: em(41,34);	
-			}
-			@media (min-width: $screen-lg-min){
+				margin-left: 0;
 				position: absolute;
 				padding-left: 0;
-				left: em(184,34);
-				top: em(-80,34);
+				left: 21%;
+				top: em(-60,34);
+				font-size: em(34);
+				line-height: em(41,34);
 				max-width: em(695,34);
+			}			
+			@media (min-width: $screen-lg-min){
+				left: 21%;
+				top: em(-60,34);
 			}
 			@media (min-width: $screen-xl-min){
 				left: 22%;
@@ -100,16 +110,36 @@ body.love-luxury{
 		}	
 		.products-we-love{
 			position: relative;
+			width: 100%;
+			margin-top: em(20);
+			max-width: em(260);
 			float:right;
-			width: em(562);
-			margin-right: em(60);	
-			margin-top: em(75);
+			@media (min-width: $screen-sm-min){
+				float:right;
+				margin-top: em(40);
+				width: em(350);
+				max-width: 100%;
+			}
+			@media (min-width: $screen-md-min){
+				width: em(562);
+				margin-top: em(230);
+			}
+			@media (min-width: $screen-lg-min){
+				margin-top: em(160);
+			}
+			@media (min-width: $screen-xl-min){
+				margin-right: em(60);	
+			}
 			.we-love{
 				position: absolute;
-				top: em(74);
+				top: em(30);
 				left: em(4);
 				z-index: 2;
 				@media (min-width: $screen-sm-min){
+					top: em(-32);
+					left: em(21);
+				}
+				@media (min-width: $screen-xl-min){
 					top: em(-32);
 					left: em(21);
 				}
@@ -119,21 +149,30 @@ body.love-luxury{
 			}
 			.product-wrap{
 				position: relative;
-				padding: em(10) em(84) em(20) em(62);
+				padding: em(10);
+				@media (min-width: $screen-sm-min){
+					padding: em(20);
+				}
+				@media (min-width: $screen-md-min){
+					padding: em(10) em(84) em(20) em(62);
+				}
 				.white-box{
-					font-size: em(14);
-					line-height: em(18,14);
-					padding: em(15,14) em(30,14) em(15,14) em(20,14);
+					padding: em(15) em(30) em(15) em(20);
 					@media (min-width: $screen-sm-min){
-						font-size: em(18);
-						padding: em(33,18) em(76,18) em(15,18) em(30,18);
-						line-height: em(22,18);
+						padding: em(33) em(76) em(15) em(30);
+					}
+					p{
+						font-size: em(14);
+						line-height: 1.2em;					
+						@media (min-width: $screen-md-min){
+							font-size: em(18);
+						}
 					}					
 				}
 				.share{
 					position: absolute;
 					top: em(70);
-					left: em(-58);
+					left: em(20);
 					@media (min-width: $screen-sm-min){
 						top: em(116);
 						left: em(40);
@@ -162,6 +201,7 @@ body.love-luxury{
 			right: inherit;
 			padding-bottom: em(20);
 			margin-bottom: em(0);
+			width: em(350);
 			@media (min-width: $screen-sm-min){
 				padding-bottom: em(40);
 			}
@@ -175,7 +215,7 @@ body.love-luxury{
 		}
 		.products-used{
 			h2{
-				color: $gold;
+				color: $black;
 			}
 		}
 		.bathroom{

@@ -1625,6 +1625,43 @@ body.love-family{
 						left: 50%;
 					}
 				}
+				.text{
+					@media (min-width: $screen-md-min){
+						right: 0;
+					}
+					@media (min-width: $screen-lg-min){
+						right: 4%;
+					}
+					@media (min-width: $screen-xl-min){
+						bottom: 5%;
+						right: 17%;
+					}
+					h2{
+						@media (min-width: $screen-md-min){
+							float: none;
+							font-size: em(50);
+							margin-bottom: em(34,50);
+						}
+						@media (min-width: $screen-xl-min){
+							float: right;
+							font-size: em(70);
+							margin-bottom: em(70,70);
+						}
+					}
+					.description{
+						@media (min-width: $screen-md-min){
+							margin-right: 0;
+						}
+						p{
+							@media (min-width: $screen-md-min){
+								font-size: em(21);
+							}
+							@media (min-width: $screen-xl-min){
+								font-size: em(30);
+							}
+						}
+					}					
+				}
 			}
 		}
 	}

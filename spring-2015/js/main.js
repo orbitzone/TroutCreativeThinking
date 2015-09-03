@@ -113,7 +113,25 @@ jQuery(function($){
 							moodboard.remove(this);
 						}else{
 							moodboard.add(this);
-						}						
+						}					
+						return false;
+					});
+					$(document).on('click','.add-look-to-moodboard',function(){
+						var button = this;
+						var products = $(this).data('products').trim().split(',');
+						
+						if($(this).hasClass('added')){
+							$(products).each(function(product){
+								moodboard.remove(button, product);
+							});
+							$(this).find('.desc').html("Add to<br/>moodboard");
+						}else{
+							$(products).each(function(product){
+								console.log(product);
+								moodboard.add(button,product);								
+							});							
+							$(this).find('.desc').html("Added to<br/>moodboard");
+						}									
 						return false;
 					});
 					$(document).on('click','#destination-happiness',function(){
@@ -134,13 +152,13 @@ jQuery(function($){
 			});			
 		},
 		products: 0,
-		add: function(obj){
+		add: function(obj, product){
 			moodboard.products += 1;
 			$(obj).addClass('added');
 			$('#destination-happiness .dh-items').removeClass('empty').html(moodboard.products);
 			$('#destination-links .dh-items').removeClass('empty').html(moodboard.products);
 		},
-		remove: function(obj){
+		remove: function(obj, product){
 			moodboard.products -= 1;
 			$(obj).removeClass('added');
 			$('#destination-happiness .dh-items').html(moodboard.products);

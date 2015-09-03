@@ -1413,7 +1413,7 @@ body.love-family{
 				}
 				.description{
 					line-height: 1.2em;
-					color: $white;
+					color: $dark-grey;
 					margin-bottom: em(38);
 					max-width: 473px;	
 					font-size: em(16);
@@ -1798,6 +1798,12 @@ body.love-family{
 						color: $dark-grey;
 					}
 				}
+				a{
+					color: $pink;
+					text-decoration: underline;
+					font-size: em(18);
+					font-weight: 700;
+				}
 				h2{
 					font-size: em(50);
 					color: $pink;
@@ -1814,13 +1820,11 @@ body.love-family{
 					font-weight: 400;
 					color: $pink;
 					font-size: em(24);
-				}
-				a{
-					color: $pink;
-					text-decoration: underline;
-					font-size: em(18);
-					font-weight: 700;
-				}
+					a{
+						text-decoration: none;
+						font-weight: 400;
+					}
+				}				
 			}
 			.peace-of-mind{
 				.image{

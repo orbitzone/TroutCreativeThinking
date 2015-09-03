@@ -152,11 +152,12 @@ body.spring-2015{
 	footer{
 		margin-top: 0;
 	}
-	button.circular{
+	button.circular, a.circular{
 		background: none;
 		@include appearance(none);
 		border: none;
 		outline: none;
+		text-decoration: none;
 		.circle{
 			&.green{
 				background: $green;
@@ -202,6 +203,13 @@ body.spring-2015{
 			color: $white;
 			margin-top: em(14);
 			margin-bottom: em(20);
+		}
+		&.added{
+			.circle{
+				i{
+					color: $red;
+				}
+			}
 		}	
 	}
 	button.shop_now{

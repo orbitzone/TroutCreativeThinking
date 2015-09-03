@@ -56,9 +56,8 @@ jQuery(function($){
 			+'	</div>'
 			+'</div>');
 
-			//TweenMax.to($('#share-hex'),0,{ scale: 0, opacity:1});
-			//TweenMax.to($('#share-hex'),0,{ scale: 0});
-			//TweenMax.to($('#share-hex .share-button').not('.share-close'),0,{ scale: 0});
+			TweenMax.to($('#share-hex .share-button').not('.share-close'),0,{ scale: 0});
+			TweenMax.to($('#share-hex'),0,{ scale: 0, opacity:0});
 					
 			$(document).on('click','.share',function(e){
 				shareBoard.show(this);

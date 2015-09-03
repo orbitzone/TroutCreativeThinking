@@ -574,47 +574,47 @@ body.love-calm{
 				}
 			}
 			.image-wrap{
-			position: relative;
-			.share{
-				position: absolute;
-				top: 30px;
-				right: 30px;
+				position: relative;
+				.share{
+					position: absolute;
+					top: 30px;
+					right: 30px;
+				}
 			}
-		}
-		.slider{
-			@media (min-width: $screen-md-min){
-				padding-left: em(134);
-			}
-			button{
-				@include appearance(none);
-				background: none;
-				border: none;
-				outline: none;
-				position: absolute;
-				bottom: em(-38);
-				top: inherit;
-				z-index: 2;
-				left: inherit;
-				i{
-					font-size: em(50);
-					color: $pale-blue;
+			.slider{
+				@media (min-width: $screen-md-min){
+					padding-left: em(134);
 				}
-				&.arrow-next{
-					@include transform(translateY(100%));
-					right: 0;
-				}
-				&.arrow-prev{
-					@include transform(translateX(-100%) translateY(100%));
-					right: 10px;
-				}
-				&.slick-disabled{
-					display: block;
+				button{
+					@include appearance(none);
+					background: none;
+					border: none;
+					outline: none;
+					position: absolute;
+					bottom: em(-38);
+					top: inherit;
+					z-index: 2;
+					left: inherit;
 					i{
-						color: $light-grey;
+						font-size: em(50);
+						color: $pale-blue;
 					}
-				}
-			}			
-		}
+					&.arrow-next{
+						@include transform(translateY(100%));
+						right: 0;
+					}
+					&.arrow-prev{
+						@include transform(translateX(-100%) translateY(100%));
+						right: 10px;
+					}
+					&.slick-disabled{
+						display: block;
+						i{
+							color: $light-grey;
+						}
+					}
+				}			
+			}
 		}
 		.colour-picker{
 			max-width: em(846);

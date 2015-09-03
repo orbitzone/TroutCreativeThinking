@@ -405,19 +405,41 @@ body.love-luxury{
 		}
 		.shower-twins-wrap{
 			background: #ededed url(../images/luxury/3-showers/bg.jpg) repeat-y top center;
-			padding: em(70) 0 em(134);
+			padding: em(70) em(10) em(134);
 			@media (min-width: $screen-sm-min){
+				padding: em(70) 0 em(134) em(20);
+			}
+			@media (min-width: $screen-md-min){
 				padding: em(70) 0 em(134) em(88);
+			}
+			@media (min-width: $screen-md-min){
+				padding: em(70) 0 em(420) em(88);
 			}
 			.shower-twins{
 				position: relative;
+				margin-top: em(100);
 				.description{
 					background: $white;
 					padding: em(20);
 					position: relative;
-					margin-top: em(-132);
-					margin-right: em(60);
+					margin-top: em(-64);
 					@media (min-width: $screen-sm-min){
+						margin-top: em(-62);
+						padding: em(30);
+					}
+					@media (min-width: $screen-md-min){
+						margin-top: em(-132);
+						padding: em(30);
+						margin-right: em(40);					
+					}
+					@media (min-width: $screen-lg-min){
+						margin-top: em(-102);
+						margin-right: em(60);
+						padding: em(40);
+					}
+					@media (min-width: $screen-xl-min){
+						margin-top: em(-132);
+						margin-right: em(60);
 						padding: em(52) em(113) em(30);
 					}
 					h2{
@@ -441,20 +463,74 @@ body.love-luxury{
 					img{
 						display: block;
 						margin: 0 auto;
-						width: em(200);
-						padding-left: em(40);
+					}
+					.number-1{
+						top: 29px;
+						left: 12px;
 						@media (min-width: $screen-sm-min){
-							width: auto;
-							padding-left: 0;
+							top: 29px;
+							left: 12px;	
+						}
+						@media (min-width: $screen-md-min){
+							top: 29px;
+							left: 12px;	
+						}
+						@media (min-width: $screen-lg-min){
+							top: 74px;
+							left: 18px;	
 						}
 					}
 					.number-2{
 						top: -34px;
-						left: 140px;
+						left: 61px;
+						@media (min-width: $screen-sm-min){
+							top: -34px;
+							left: 56px;
+						}
+						@media (min-width: $screen-md-min){
+							top: -28px;
+							left: 80px;
+						}
+						@media (min-width: $screen-lg-min){
+							top: -28px;
+							left: 101px;
+						}
 					}
 					.number-3{
 						top: -34px;
-						left: 288px;
+						left: 161px;
+						@media (min-width: $screen-sm-min){
+							top: -34px;
+							left: 169px;
+						}
+						@media (min-width: $screen-md-min){
+							top: -34px;
+							left: 204px;
+						}
+						@media (min-width: $screen-lg-min){
+							top: -34px;
+							left: 253px;
+						}
+					}
+					.number-4{
+						top: 26px;
+						right: 12px;
+						left: initial;
+						@media (min-width: $screen-sm-min){
+							top: 12px;
+							right: 12px;
+						}
+						@media (min-width: $screen-md-min){
+							top: 40px;
+							right: 17px;
+						}
+						@media (min-width: $screen-lg-min){
+							top: 62px;
+							right: 25px;
+						}
+						@media (min-width: $screen-xl-min){
+							
+						}
 					}
 				}
 				.image-front{
@@ -466,20 +542,27 @@ body.love-luxury{
 						top: 184px;
 						left: em(-72);
 						width: em(643);
-					}
-					.number-1{
-						top: -45px;
-						left: 62px;
-					}
-					.number-4{
-						left: initial;
-						right: 50px;
-						top: 34px;
-					}
+					}					
 				}				
 			}
 			.chasing-waterfalls{
 				position: relative;
+				.image-1{
+					margin-top: em(20);
+					@media (min-width: $screen-sm-min){
+						margin-top: 0;
+						max-width: em(340);
+					}
+					@media (min-width: $screen-md-min){
+						max-width: em(400);
+					}
+					@media (min-width: $screen-lg-min){
+						max-width: em(408);
+					}
+					@media (min-width: $screen-xl-min){
+						max-width: 100%;
+					}
+				}
 				.image-2{
 					position: absolute;
 					top: em(103);
@@ -487,6 +570,16 @@ body.love-luxury{
 					width: em(200);
 					
 					@media (min-width: $screen-sm-min){
+						top: em(103);
+						right: 0;
+						width: em(200);
+					}
+					@media (min-width: $screen-md-min){
+						top: em(120);
+						right: 0;
+						width: em(241);
+					}
+					@media (min-width: $screen-lg-min){
 						top: em(20);
 						left: em(392);	
 						right: inherit;
@@ -499,6 +592,24 @@ body.love-luxury{
 					left: em(20);
 					width: em(260);
 					@media (min-width: $screen-sm-min){
+						top: em(154);
+						left: em(29);
+						bottom: inherit;
+						width: em(307);
+					}
+					@media (min-width: $screen-md-min){
+						top: em(213);
+						left: em(29);
+						bottom: inherit;
+						width: em(307);
+					}
+					@media (min-width: $screen-lg-min){
+						top: em(160);
+						left: em(300);
+						bottom: inherit;
+						width: em(307);
+					}
+					@media (min-width: $screen-xl-min){
 						top: em(160);
 						left: em(413);
 						bottom: inherit;
@@ -525,11 +636,28 @@ body.love-luxury{
 						}
 					}
 				}
+			}			
+		}
+		.open-sesame-wrap{
+			@media (min-width: $screen-lg-min){
+				width: em(680);
+				position: absolute;
+				right: 0;
+				top: em(511)
+			}
+			@media (min-width: $screen-xl-min){
+				width: em(860);
 			}
 			.products-list{
 				margin-top: em(20);
 				@media (min-width: $screen-sm-min){
 					margin-top: em(40);
+				}
+				@media (min-width: $screen-lg-min){
+					margin-top: em(120);
+				}
+				@media (min-width: $screen-xl-min){
+					margin-top: em(200);
 				}
 				li{
 					@include clearfix;

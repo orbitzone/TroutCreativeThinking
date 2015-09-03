@@ -714,54 +714,94 @@ body.love-luxury{
 					@include clearfix;
 					margin-bottom: em(20);
 				}
+				.item{
+					@include clearfix;
+					margin-bottom: em(20);
+					position: relative;
+					.image{
+						text-align: center;
+						margin-bottom: em(20);
+						@media (min-width: $screen-sm-min){
+							position: absolute;
+							top: em(29);
+							left: 0;
+							width: em(100);
+						}
+						@media (min-width: $screen-md-min){
+							display: none;
+						}
+						.share{
+							position: absolute;
+							top: 50%;
+							right: em(30);
+							display: none;
+							@media (min-width: $screen-md-min){
+								display: block;
+							}
+						}
+					}
+				}
 				.product{
 					.number{
-						width: 35px;
-						height: 35px;
-						line-height: em(35);
-						font-size: em(14);
+						width: 30px;
+						height: 30px;
 						color: $black;
-						background: $white;
 						@include border-radius(50%);
 						border: 1px solid $black;
+						background: $white;
 						text-align: center;
-						position: absolute;
-						left: 0;
-						top: 0;
-					}
-					.name{
-						padding-left: em(55);
+						margin: 0 auto;
+						margin-bottom: em(20);
 						position: relative;
-						h3{
+						@media (min-width: $screen-sm-min){
+							position: absolute;
+							left: 0;
+							top: 0;
+							margin:0;
+						}
+						.text{
+							font-weight: 700;
+							@extend %center-align;
+							font-size: em(12);
+							font-weight: 700;
+						}
+					}
+					.details{
+						position: relative;
+						@media (min-width: $screen-sm-min){
+							padding-left: em(55);
+						}
+						.name{
 							font-size: em(14);
 							color: $white;
-							margin: 0;
+							margin: 0;						
 						}
 						.description{
-							font-size: em(14);
-							color: $white;
-							font-weight: 400;
+								font-size: em(14);
+								color: $white;
+								font-weight: 400;
 						}
 						.price{
-							font-size: em(14);
 							color: $white;
+							font-size: em(14);
 							padding: 0;
 						}
-					}
-					.button-mood-shop{
-						margin-top: 0;
-						@media (min-width: $screen-sm-min){
-							display: none;
-							position: absolute;
-							top: 0;
-							left: em(55);
-							z-index: 2;
+						.button-mood-shop{
+							margin-top: em(20);
+							@media (min-width: $screen-md-min){
+								display: none;
+								position: absolute;
+								top: 0;
+								left: em(55);
+								z-index: 2;
+								margin-top: 0;
+							}
 						}
 					}
 					@media (min-width: $screen-sm-min){
 						&:hover{
 							.button-mood-shop{
-								display: block;
+								display: inline-block;
 							}
 						}
 					}
@@ -1070,9 +1110,14 @@ body.love-luxury{
 			}
 		}
 		.the-powder-room{
-			padding: em(50);
+			padding: 0;
+			@media (min-width: $screen-sm-min){
+				padding: em(50);
+			}
 			.title{
-				padding-left: em(190);
+				@media (min-width: $screen-sm-min){
+					padding-left: em(190);
+				}
 				h2{
 					font-size: em(40);
 					text-decoration: underline;
@@ -1086,7 +1131,9 @@ body.love-luxury{
 				max-width: em(1200);
 				margin: 0 auto;
 				.product{
-					padding-left: em(300);
+					@media (min-width: $screen-sm-min){
+						padding-left: em(300);
+					}
 					.images{
 						position: relative;
 						img{
@@ -1101,9 +1148,11 @@ body.love-luxury{
 				}
 				.we-love-updates{
 					width: em(417);
-					position: absolute;
-					top: em(-40);
-					right: 0;
+					@media (min-width: $screen-sm-min){
+						position: absolute;
+						top: em(-40);
+						right: 0;
+					}
 					.we-love{
 						position: absolute;
 						top: em(150);
@@ -1123,12 +1172,17 @@ body.love-luxury{
 				}
 			}
 			.product-2{
-				margin-top: em(-110);
+				@media (min-width: $screen-sm-min){
+					margin-top: em(-110);
+				}
 				.subtitle{
 					position: relative;
 					z-index: 2;
 					h2{
-						font-size: em(35);						
+						font-size: em(20);		
+						@media (min-width: $screen-sm-min){
+							font-size: em(35);		
+						}				
 					}
 					p{
 						color: $white;
@@ -1141,12 +1195,15 @@ body.love-luxury{
 				}
 				.image{
 					display: block;
-    position: absolute;
-    top: 80px;
-    left: 300px;
-    z-index: 1;
+			    @media (min-width: $screen-sm-min){
+						position: absolute;
+				    top: 80px;
+				    left: 300px;
+				    z-index: 1;
+			    }
 				}
 				.hex-slider{
+					margin-left: em(-15);
 					position: relative;
 					margin-top: em(32);
 					svg{
@@ -1303,7 +1360,10 @@ body.love-luxury{
 			}
 		}
 		.featured-products{
-			padding: em(60) em(130);
+			padding: em(20);
+			@media (min-width: $screen-sm-min){
+				padding: em(60) em(130);
+			}
 			.slick-slide{
 				margin: em(20);
 			}

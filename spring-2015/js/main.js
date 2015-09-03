@@ -670,7 +670,6 @@ jQuery(function($){
 					    {
 					      breakpoint: 768,
 					      settings: {
-					        arrows: false,
 					        slidesToShow: 2,
 					        slidesToScroll: 2
 					      }
@@ -678,7 +677,6 @@ jQuery(function($){
 					    {
 					      breakpoint: 480,
 					      settings: {
-					        arrows: false,
 					        slidesToShow: 1,
 					        slidesToScroll: 1
 					      }

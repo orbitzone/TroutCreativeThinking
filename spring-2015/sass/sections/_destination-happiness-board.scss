@@ -274,10 +274,12 @@ body.spring-2015{
 					}
 					span{
 						font-family: $font-family-serif;
+						font-style: italic;
 						display: inline-block;
 						background: $green;
 						position: relative;
 						padding: 0 30px;
+						font-size: em(22);
 					}
 					&:before{
 						content: '.';

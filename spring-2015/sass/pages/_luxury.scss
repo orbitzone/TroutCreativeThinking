@@ -48,7 +48,7 @@ body.love-luxury{
 			z-index: 0;
 			@media (min-width: $screen-sm-min){
 				left: 0;
-				right: inherit;
+				right: auto;
 			}
 			@media (min-width: $screen-xl-min){
 				left: em(150);
@@ -198,7 +198,7 @@ body.love-luxury{
 		margin-bottom: 40px;
 		.title-description{
 			left: em(15);
-			right: inherit;
+			right: auto;
 			padding-bottom: em(20);
 			margin-bottom: em(0);
 			width: em(350);
@@ -538,7 +538,7 @@ body.love-luxury{
 					.number-4{
 						top: 26px;
 						right: 12px;
-						left: inherit;
+						left: auto;
 						@media (min-width: $screen-sm-min){
 							top: 12px;
 							right: 12px;
@@ -615,13 +615,13 @@ body.love-luxury{
 					@media (min-width: $screen-lg-min){
 						top: em(126);
 						left: em(273);	
-						right: inherit;
+						right: auto;
 						width: em(219);
 					}
 					@media (min-width: $screen-xl-min){
 						top: em(34);
 						left: em(392);	
-						right: inherit;
+						right: auto;
 						width: em(324);
 					}
 					.number{
@@ -641,25 +641,25 @@ body.love-luxury{
 					@media (min-width: $screen-sm-min){
 						top: em(204);
 						left: em(29);
-						bottom: inherit;
+						bottom: auto;
 						width: em(307);
 					}
 					@media (min-width: $screen-md-min){
 						top: em(204);
 						left: em(29);
-						bottom: inherit;
+						bottom: auto;
 						width: em(307);
 					}
 					@media (min-width: $screen-lg-min){
 						top: em(216);
 						left: em(300);
-						bottom: inherit;
+						bottom: auto;
 						width: em(307);
 					}
 					@media (min-width: $screen-xl-min){
 						top: em(160);
 						left: em(435);
-						bottom: inherit;
+						bottom: auto;
 						width: em(307);
 					}
 					.title{
@@ -855,7 +855,7 @@ body.love-luxury{
 				top: em(-20);
 				left: em(20);
 				@media (min-width: $screen-sm-min){
-					left: inherit;
+					left: auto;
 					top: em(-68);
 					right: em(68);
 				}
@@ -866,12 +866,12 @@ body.love-luxury{
 				@media (min-width: $screen-lg-min){
 					top: em(-93);
 					left: em(120);
-					right: inherit;
+					right: auto;
 				}
 				@media (min-width: $screen-xl-min){
 					top: em(20);
 					left: em(120);
-					right: inherit;
+					right: auto;
 				}
 				.image{
 					position: absolute;
@@ -1340,7 +1340,7 @@ body.love-luxury{
 					position: absolute;
 					top: 20px;
 					left: 30px;
-					bottom: inherit;
+					bottom: auto;
 					i{
 						color: $black;
 						&:hover{
@@ -1732,7 +1732,7 @@ body.love-luxury{
 						position: absolute;
 						top: 50%;
 						z-index: 2;
-						left: inherit;
+						left: auto;
 						i{
 							font-size: em(50);
 							color: $light-grey;
@@ -1908,7 +1908,7 @@ body.love-luxury{
 						left: 0;
 					}
 					@media (min-width: $screen-md-min){
-						left: inherit;
+						left: auto;
 						right: em(-15);
 						top: em(48);
 					}

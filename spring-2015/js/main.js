@@ -287,7 +287,7 @@ jQuery(function($){
 					if($(obj).position().left - $('.hotspot-data.spot-'+spot).outerWidth() > 10){
 						left = $(obj).position().left - $('.hotspot-data.spot-'+spot).outerWidth();
 					}else{
-						left = $(obj).position().left + $(obj).position().outerWidth() + $('.hotspot-data.spot-'+spot).outerWidth();
+						left = $(obj).position().left + $(obj).outerWidth() ;
 					}
 				}
 				$('.hotspot-data.spot-'+spot).css(
@@ -686,7 +686,7 @@ jQuery(function($){
 						slidesToShow: 1,
   					slidesToScroll: 1,
   					infinite: false,
-  					arrows: false,
+  					arrows: true,
   					dots: true,
   					prevArrow: "<button type=\"button\" class=\"arrow-prev\"><i class=\"iconr-arrow-left\"></i></button>",
   					nextArrow: "<button type=\"button\" class=\"arrow-next\"><i class=\"iconr-arrow-right\"></i></button>"					 	

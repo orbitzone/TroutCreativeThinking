@@ -295,6 +295,27 @@ body.love-family{
 						left: 74%;
 					}
 				}
+				.hotspot-data{
+					.info{
+				    width: em(180);
+				    @extend %center-align;
+				    .image{
+				    	width: em(170);
+				    	margin: 0 auto;
+				    }
+				    .text{
+				    	width: em(180);
+				    	margin: 0 auto;
+				    }
+				  }
+				  &.spot-1{
+				  	.info{
+				  		.image{
+				  			margin-top: em(-30);
+				  		}
+				  	}
+				  }
+				}
 			}
 		}		
 	}

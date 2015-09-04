@@ -48,15 +48,17 @@ body.spring-2015{
 				color: $green;
 				text-decoration: underline;
 				margin-top: 0;
-				line-height: 1.2em;
-	    	font-size: em(30);
+				font-size: em(30);
+	    	line-height: em(30,30);
 		    margin-bottom: em(20,30);
 		    @media (min-width: $screen-sm-min){
 		    	font-size: em(40);
+		    	line-height: em(40,40);
 		    	margin-bottom: em(40,40);			    	
 		    }
 		    @media (min-width: $screen-md-min){
 		    	font-size: em(60);
+		    	line-height: em(56,60);
 		    	margin-bottom: em(40,60);			    	
 		    }			    
 			}
@@ -129,10 +131,14 @@ body.spring-2015{
 					display: none;
 					z-index: 1;
 					.info{
-				    width: em(180);
+				    width: em(220);
 				    @extend %center-align;
+				    .text{
+				    	width: em(180);
+				    	margin: 0 auto;
+				    }
 				    h3{
-				    	font-size: em(18);
+				    	font-size: em(13);
 				    	color: $green;
 				    	margin:0;
 				    	margin-bottom: em(16);

@@ -119,10 +119,12 @@ body.spring-2015{
 		.slick-slider{
 			.slick-dots{
 				margin: 0;
+				@media (min-width: $screen-sm-min){
 				position: absolute;
 				width: 100%;
 				bottom: em(20);
 				left: 0;
+				}
 				button{
 					width: 10px;
 					height: 10px;

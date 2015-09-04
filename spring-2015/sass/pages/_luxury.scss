@@ -259,6 +259,7 @@ body.love-luxury{
 		}
 		.banner{
 			position: relative;
+			margin-bottom: em(40);
 			.intro{
 				position: absolute;
 				width: em(120);
@@ -297,6 +298,7 @@ body.love-luxury{
 				width: 90%;
 				text-align: right;
 				margin-left: em(20);
+				z-index: 2;
 				@media (min-width: $screen-sm-min){
 					position: absolute;
 					width: em(300);
@@ -405,24 +407,30 @@ body.love-luxury{
 		}
 		.shower-twins-wrap{
 			background: #ededed url(../images/luxury/3-showers/bg.jpg) repeat-y top center;
-			padding: em(70) em(10) em(134);
+			padding: em(70) em(10) em(205);
 			@media (min-width: $screen-sm-min){
-				padding: em(70) 0 em(134) em(20);
+				padding: em(34) 0 em(574) em(20);
 			}
 			@media (min-width: $screen-md-min){
 				padding: em(70) 0 em(134) em(88);
 			}
 			@media (min-width: $screen-md-min){
-				padding: em(70) 0 em(420) em(88);
+				padding: em(70) 0 em(615) em(64);
+			}
+			@media (min-width: $screen-lg-min){
+				padding: em(70) 0 em(300) em(88);
+			}
+			@media (min-width: $screen-xl-min){
+				padding: em(70) 0 em(170) em(88);
 			}
 			.shower-twins{
 				position: relative;
-				margin-top: em(100);
+				margin-top: em(33);
 				.description{
 					background: $white;
 					padding: em(20);
 					position: relative;
-					margin-top: em(-64);
+					margin-top: em(-80);
 					@media (min-width: $screen-sm-min){
 						margin-top: em(-62);
 						padding: em(30);
@@ -430,11 +438,13 @@ body.love-luxury{
 					@media (min-width: $screen-md-min){
 						margin-top: em(-132);
 						padding: em(30);
-						margin-right: em(40);					
+						margin-right: 0;
+						margin-left: em(-24);					
 					}
 					@media (min-width: $screen-lg-min){
 						margin-top: em(-102);
 						margin-right: em(60);
+						margin-left: 0;
 						padding: em(40);
 					}
 					@media (min-width: $screen-xl-min){
@@ -456,8 +466,13 @@ body.love-luxury{
 				}
 				.image-back{
 					position: relative;
-					left: 0;					
+					left: 0;
 					@media (min-width: $screen-sm-min){
+						margin-left: 0;
+						width: auto;			
+					}
+					@media (min-width: $screen-md-min){
+						margin-left: em(-36);				
 						width: auto;			
 					}
 					img{
@@ -472,11 +487,15 @@ body.love-luxury{
 							left: 12px;	
 						}
 						@media (min-width: $screen-md-min){
-							top: 29px;
+							top: 55px;
 							left: 12px;	
 						}
 						@media (min-width: $screen-lg-min){
-							top: 74px;
+							top: 80px;
+							left: 18px;	
+						}
+						@media (min-width: $screen-xl-min){
+							top: 112px;
 							left: 18px;	
 						}
 					}
@@ -509,7 +528,11 @@ body.love-luxury{
 						}
 						@media (min-width: $screen-lg-min){
 							top: -34px;
-							left: 253px;
+							left: 298px;
+						}
+						@media (min-width: $screen-xl-min){
+							top: -34px;
+							left: 353px;
 						}
 					}
 					.number-4{
@@ -521,7 +544,7 @@ body.love-luxury{
 							right: 12px;
 						}
 						@media (min-width: $screen-md-min){
-							top: 40px;
+							top: 46px;
 							right: 17px;
 						}
 						@media (min-width: $screen-lg-min){
@@ -529,7 +552,8 @@ body.love-luxury{
 							right: 25px;
 						}
 						@media (min-width: $screen-xl-min){
-							
+							top: 92px;
+							right: 38px;
 						}
 					}
 				}
@@ -554,23 +578,32 @@ body.love-luxury{
 						max-width: em(340);
 					}
 					@media (min-width: $screen-md-min){
-						max-width: em(400);
+						max-width: 100%;
 					}
 					@media (min-width: $screen-lg-min){
+						margin-left: em(-14);
 						max-width: em(408);
 					}
 					@media (min-width: $screen-xl-min){
+						margin-left: 0;
 						max-width: 100%;
+					}
+					.number{
+						top: em(9,12);
+						left: em(218,12);
+						@media (min-width: $screen-sm-min){
+							top: em(9,12);
+							left: em(262,12);
+						}
 					}
 				}
 				.image-2{
 					position: absolute;
-					top: em(103);
-					right: 0;
-					width: em(200);
-					
+					top: em(100);
+					right: em(20);
+					width: em(148);					
 					@media (min-width: $screen-sm-min){
-						top: em(103);
+						top: em(129);
 						right: 0;
 						width: em(200);
 					}
@@ -580,10 +613,24 @@ body.love-luxury{
 						width: em(241);
 					}
 					@media (min-width: $screen-lg-min){
-						top: em(20);
+						top: em(126);
+						left: em(273);	
+						right: inherit;
+						width: em(219);
+					}
+					@media (min-width: $screen-xl-min){
+						top: em(34);
 						left: em(392);	
 						right: inherit;
-						width: auto;
+						width: em(324);
+					}
+					.number{
+						top: em(14,12);
+						left: em(-33,12);
+						@media (min-width: $screen-sm-min){
+							top: em(-20,12);
+							left: 0;
+						}
 					}
 				}
 				.description{
@@ -592,26 +639,26 @@ body.love-luxury{
 					left: em(20);
 					width: em(260);
 					@media (min-width: $screen-sm-min){
-						top: em(154);
+						top: em(204);
 						left: em(29);
 						bottom: inherit;
 						width: em(307);
 					}
 					@media (min-width: $screen-md-min){
-						top: em(213);
+						top: em(204);
 						left: em(29);
 						bottom: inherit;
 						width: em(307);
 					}
 					@media (min-width: $screen-lg-min){
-						top: em(160);
+						top: em(216);
 						left: em(300);
 						bottom: inherit;
 						width: em(307);
 					}
 					@media (min-width: $screen-xl-min){
 						top: em(160);
-						left: em(413);
+						left: em(435);
 						bottom: inherit;
 						width: em(307);
 					}
@@ -629,8 +676,8 @@ body.love-luxury{
 					.text{
 						color: $grey;
 						p{
-							font-size: em(18);
-							@media (min-width: $screen-sm-min){
+							font-size: em(16);
+							@media (min-width: $screen-md-min){
 								font-size: em(24);
 							}
 						}
@@ -639,25 +686,42 @@ body.love-luxury{
 			}			
 		}
 		.open-sesame-wrap{
+			@media (min-width: $screen-sm-min){
+				width: em(662);
+				position: absolute;
+				right: em(39);
+				top: em(458);
+			}
+			@media (min-width: $screen-md-min){
+				width: em(800);
+				right: em(24);
+				top: em(609);
+			}
 			@media (min-width: $screen-lg-min){
 				width: em(680);
-				position: absolute;
 				right: 0;
-				top: em(511)
+				top: em(552);
 			}
 			@media (min-width: $screen-xl-min){
+				top: em(511);
 				width: em(860);
 			}
 			.products-list{
-				margin-top: em(20);
+				width: em(280);
+				margin: 0 auto;
+				margin-top: em(40);
 				@media (min-width: $screen-sm-min){
-					margin-top: em(40);
+					width: auto;
+					margin-top: em(199);
+				}
+				@media (min-width: $screen-md-min){
+					margin-top: em(128);
 				}
 				@media (min-width: $screen-lg-min){
-					margin-top: em(120);
+					margin-top: em(-102);
 				}
 				@media (min-width: $screen-xl-min){
-					margin-top: em(200);
+					margin-top: em(48);
 				}
 				li{
 					@include clearfix;
@@ -728,8 +792,17 @@ body.love-luxury{
 					background: $white;
 					padding: em(17) em(50) em(20) em(16);
 					color: $pale-blue;
-					position: relative;
+					position: absolute;
+					width: em(236);
+					right: 0;
+					bottom: em(-77);
 					@media (min-width: $screen-sm-min){
+						position: absolute;
+						width: em(236);
+						right: 0;
+						bottom: em(-77);
+					}
+					@media (min-width: $screen-md-min){
 						position: absolute;
 						width: em(236);
 						right: em(40);
@@ -752,25 +825,63 @@ body.love-luxury{
 			position: relative;
 			background: $darker-grey;
 			color: $white;
-			padding: em(180) em(20) em(20);
+			padding: em(140) em(20) em(20);
+			margin-left: -15px;
+			margin-right: -15px;
 			@media (min-width: $screen-sm-min){
+				margin-left: 0;
+				margin-right: 0;
 				padding: em(94) em(70) 0;
+			}
+			@media (min-width: $screen-md-min){
+				padding: em(40) em(70) 0;
+			}
+			@media (min-width: $screen-lg-min){
+				margin-left: 0;
+				margin-right: 0;
+				padding: em(40) em(70) 0;
+			}
+			@media (min-width: $screen-xl-min){
+				padding: em(94) em(70) 0;
+			}
+			.col-md-3,
+			.col-md-6{
+				@media (min-width: $screen-lg-min){
+					padding: 0;
+				}
 			}
 			.we-love-candle{
 				position: absolute;
-				top: em(20);
+				top: em(-20);
 				left: em(20);
 				@media (min-width: $screen-sm-min){
-					left: inherit;
-					right: em(20);
+					left: initial;
+					top: em(-68);
+					right: em(68);
 				}
 				@media (min-width: $screen-md-min){
+					top: em(-68);
+					right: em(68);
+				}
+				@media (min-width: $screen-lg-min){
+					top: em(-93);
+					left: em(120);
+					right: inherit;
+				}
+				@media (min-width: $screen-xl-min){
+					top: em(20);
 					left: em(120);
 					right: inherit;
 				}
 				.image{
 					position: absolute;
 					top: em(-83);
+					@media (min-width: $screen-md-min){
+						top: em(-138);
+					}
+					@media (min-width: $screen-lg-min){
+						top: em(-83);
+					}
 					.we-love{
 						position: absolute;
 						top: 0;
@@ -783,10 +894,17 @@ body.love-luxury{
 							top: em(-60);
 							left: em(-20);
 						}
+						@media (min-width: $screen-lg-min){
+							top: em(-60);
+							left: em(-20);
+						}
 					}
 					img{
 						max-width: em(120);
 						@media (min-width: $screen-md-min){
+							max-width: em(179);
+						}
+						@media (min-width: $screen-lg-min){
 							max-width: 100%;
 						}
 					}					
@@ -796,6 +914,10 @@ body.love-luxury{
 					color: $black;
 					background: $white;
 					width: em(190);
+					@media (min-width: $screen-md-min){
+						padding: em(20);
+						width: em(233);
+					}
 					@media (min-width: $screen-lg-min){
 						padding: em(70) em(40) em(40) em(60);
 						width: em(300);
@@ -806,18 +928,32 @@ body.love-luxury{
 				@media (min-width: $screen-sm-min){
 					width: em(300);
 				}
+				@media (min-width: $screen-md-min){
+					width: em(400);
+					margin-top: 0;
+					margin-bottom: em(47);
+				}
 				@media (min-width: $screen-lg-min){
+					width: auto;
+					margin-top: em(178);
+				}
+				@media (min-width: $screen-xl-min){
 					margin-top: em(225);
 				}
 				.title{
-					@media (min-width: $screen-sm-min){
+					@media (min-width: $screen-md-min){
+						margin-bottom: em(20);
+					}
+					@media (min-width: $screen-lg-min){
 						margin-bottom: em(60);
 					}
 					h2{
 						color: $rose-gold;
 						text-decoration: underline;
 						font-size: em(40);
+						text-align: center;
 						@media (min-width: $screen-sm-min){
+							text-align: left;
 							font-size: em(50);
 						}
 					}
@@ -825,8 +961,12 @@ body.love-luxury{
 				.text{
 					color: $white;
 					font-size: em(18);
+					text-align: center;
+					margin-bottom: em(40,18);
 					@media (min-width: $screen-sm-min){
+						text-align: left;
 						font-size: em(24);
+						margin-bottom: 0;
 					}
 				}
 			}
@@ -834,9 +974,14 @@ body.love-luxury{
 				@media (min-width: $screen-sm-min){
 					margin-bottom: em(40);
 				}
+				@media (min-width: $screen-md-min){
+					margin-top: em(68);
+					margin-bottom: 0;
+				}
 				@media (min-width: $screen-lg-min){
 					margin-top: em(108);
 					margin-bottom: 0;
+					padding-left: em(15);
 				}
 				li{
 					@include clearfix;
@@ -936,16 +1081,19 @@ body.love-luxury{
 				}
 			}
 			.circle{
-				height: 320px;
+				height: 410px;
 				@include transform-origin(center top);
 				@media (min-width: $screen-sm-min){
 					position: relative;
 					height: 630px;					
 				}
 				@media (min-width: $screen-md-min){
-					height: 630px;
+					height: 660px;
 				}
 				@media (min-width: $screen-lg-min){
+					height: 650px;
+				}	
+				@media (min-width: $screen-xl-min){
 					height: 800px;
 				}				
 				.text{
@@ -980,22 +1128,22 @@ body.love-luxury{
 					}
 				}
 				.circular-product{
-					width: 120px;
+					width: 160px;
 					position: absolute;
 					left: 50%;
 					@include transition(1s all ease-out);
-					@include transform-origin(center 152px);
+					@include transform-origin(center 196px);
 					@media (min-width: $screen-sm-min){
 						width: 200px;
 						@include transform-origin(center 300px);
 					}
 					@media (min-width: $screen-md-min){
-						width: 230px;
-						@include transform-origin(center 315px);
+						width: 266px;
+						@include transform-origin(center 336px);
 					}
-					@media (min-width: $screen-xl-min){
-						width: 260px;
-						@include transform-origin(center 320px);
+					@media (min-width: $screen-lg-min){
+						width: 272px;
+						@include transform-origin(center 336px);
 					}		
 					@media (min-width: $screen-xl-min){
 						width: 300px;
@@ -1042,15 +1190,35 @@ body.love-luxury{
 					}
 					&.product-1{
 						.info{
-					    top: em(136);
-					    left: em(138);
+							@media (min-width: $screen-md-min){
+						    top: em(220);
+						    left: em(65);
+					  	}
+							@media (min-width: $screen-lg-min){
+						    top: em(229);
+						    left: em(70);
+					  	}
+							@media (min-width: $screen-xl-min){
+						    top: em(245);
+						    left: em(70);
+					  	}
 				  	}
 					}	
 					&.product-4{
 						.info{
 							@include transform(rotate(-180deg));
-							top: em(136);
-					    left: em(138);	
+							@media (min-width: $screen-md-min){
+								top: em(145);
+						    left: em(-7);	
+					  	}
+							@media (min-width: $screen-lg-min){
+								top: em(151);
+						    left: em(-4);	
+					  	}
+					  	@media (min-width: $screen-xl-min){
+								top: em(168);
+						    left: em(-4);	
+					  	}
 						}
 					}							
 				}
@@ -1198,6 +1366,12 @@ body.love-luxury{
 			color: $white;
 			padding: em(60) 0 em(20) em(20);
 			@media (min-width: $screen-sm-min){
+				padding: em(60) em(30) em(128);
+			}
+			@media (min-width: $screen-md-min){
+				padding: em(60) 0 em(128) em(100);
+			}
+			@media (min-width: $screen-lg-min){
 				padding: em(60) 0 em(128) em(243);
 			}
 			.description{
@@ -1436,7 +1610,10 @@ body.love-luxury{
 					}
 				}
 				.text-wrap{
-					width: em(310);
+					width: em(209);
+					@media (min-width: $screen-md-min){
+						width: em(310);
+					}
 				}
 				.description{
 					p{

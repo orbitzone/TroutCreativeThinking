@@ -855,7 +855,7 @@ body.love-luxury{
 				top: em(-20);
 				left: em(20);
 				@media (min-width: $screen-sm-min){
-					left: initial;
+					left: inherit;
 					top: em(-68);
 					right: em(68);
 				}
@@ -1771,7 +1771,6 @@ body.love-luxury{
 					padding: em(50) em(30);
 				}
 				.title{
-					
 					margin-bottom: em(30);
 					@media (min-width: $screen-md-min){
 						margin-top: em(100);
@@ -1900,7 +1899,7 @@ body.love-luxury{
 						left: 0;
 					}
 					@media (min-width: $screen-md-min){
-						left: initial;
+						left: inherit;
 						right: em(-15);
 						top: em(48);
 					}

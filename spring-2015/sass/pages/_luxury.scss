@@ -1583,14 +1583,14 @@ body.love-luxury{
 						color: $grey;
 						position: absolute;
 						left: em(40);
-						top: em(145);
+						top: em(180);
 						@media (min-width: $screen-sm-min){
 							left: em(20);
-						top: em(133);
+							top: em(133);
 						}
 						@media (min-width: $screen-md-min){
 							left: em(120);
-						top: em(220);
+							top: em(220);
 						}
 						p{
 							font-size: em(16);

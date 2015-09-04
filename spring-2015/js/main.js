@@ -102,7 +102,7 @@ jQuery(function($){
 			+'</div>');
 			
 			TweenMax.to($('#share-hex'),0,{ scale: 0, opacity:1});
-			TweenMax.to($('#share-hex .share-button .circle').not('.share-close'),0,{ scale: 0});
+			TweenMax.to($('#share-hex .share-button .circle'),0,{ scale: 0});
 			
 					
 			$(document).on('click','.share',function(e){
@@ -136,12 +136,12 @@ jQuery(function($){
 			TweenMax.to($panel,0,{ scale: 0, top: top, left: left });
 			TweenMax.to($panel,0.5,{ display:'block', scale: 1, ease: Back.easeOut});
 			TweenMax.to($panel.find('.share-close'),1,{ scale: 1, ease: Elastic.easeOut});	
-			TweenMax.staggerTo($panel.find('.share-button .circle').not('.share-close'),1,{ scale: 1, ease: Elastic.easeOut},0.1);
+			TweenMax.staggerTo($panel.find('.share-button .circle'),1,{ scale: 1, ease: Elastic.easeOut},0.1);
 		},
 		close: function(obj){
 			var $panel = $(obj).parent();
 			TweenMax.to($panel.find('.share-close'),0.2,{ scale: 0, ease: Back.easeOut});	
-			TweenMax.staggerTo($panel.find('.share-button .circle').not('.share-close'),0.4,{ scale: 0, ease:Back.easeIn},0.1, function(){
+			TweenMax.staggerTo($panel.find('.share-button .circle'),0.4,{ scale: 0, ease:Back.easeIn},0.1, function(){
 				TweenMax.to($panel,0.2,{ scale: 0});	
 			});					
 		},

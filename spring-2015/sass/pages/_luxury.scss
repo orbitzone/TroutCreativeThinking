@@ -1652,7 +1652,14 @@ body.love-luxury{
 				.hex-slider{
 					margin-left: em(-15);
 					position: relative;
+					width: em(320);
+					margin: 0 auto;
 					margin-top: em(32);
+					@media (min-width: $screen-sm-min){
+						width: auto;
+						margin: auto;
+						margin-top: em(32);
+					}
 					svg{
 						width: em(320);
 						height: em(320);

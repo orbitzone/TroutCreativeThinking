@@ -830,7 +830,8 @@ jQuery(function($){
 						slidesToShow: 1,
   					slidesToScroll: 1,
   					infinite: false,
-  					arrows: false
+  					arrows: false,
+  					swipe: false
 					})
 					$('#water-therapy .video .play').on('click', function(){
 						$('#water-therapy .video-slider').slick('slickNext');
@@ -895,7 +896,8 @@ jQuery(function($){
 						slidesToShow: 1,
   					slidesToScroll: 1,
   					infinite: false,
-  					arrows: false
+  					arrows: false,
+  					swipe: false
 					})
 					$('#footer-ads .video .play').on('click', function(){
 						$('#footer-ads .video-slider').slick('slickNext');

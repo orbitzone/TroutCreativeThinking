@@ -224,8 +224,46 @@ body.love-luxury{
 					&:hover{
 						color: $gold;
 					}
+					&.spot-1{
+						top: percentage(414/900);
+						left: percentage(350/1253);
+					}
+					&.spot-2{
+						top: percentage(190/900);
+						left: percentage(365/1253);
+					}
+					&.spot-3{
+						top: percentage(594/900);
+						left: percentage(400/1253);						
+					}
+					&.spot-4{
+						top: percentage(620/900);
+						left: percentage(648/1253);
+					}
+					&.spot-5{
+						top: percentage(70/900);
+						left: percentage(1001/1253);						
+					}
+					&.spot-6{
+						top: percentage(326/900);
+						left: percentage(207/1253);						
+					}
+					&.spot-7{
+						top: percentage(180/900);
+						left: percentage(682/1253);						
+					}
+					&.spot-8{
+						top: percentage(643/900);
+						left: percentage(598/1253);						
+					}
 				}
 				.hotspot-data{
+					&.spot-2,
+					&.spot-7{
+						.text{
+							margin-top: em(10);
+						}
+					}
 					.text{
 						h3{
 							color: $gold;

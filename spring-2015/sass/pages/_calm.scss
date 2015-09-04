@@ -754,6 +754,9 @@ body.love-calm{
 		.video{
 			position: relative;
 			margin-bottom: em(40);
+			.video-content{
+				position: relative;
+			}
 			.text{
 				position: absolute;
 				text-decoration: underline;
@@ -766,6 +769,69 @@ body.love-calm{
 				font-size: em(36);
 				@media (min-width: $screen-md-min){
 					font-size: em(50);
+				}
+			}
+			.play{
+				position: absolute;
+				bottom: em(30);
+				right: em(45);
+				cursor: pointer;
+				@media (min-width: $screen-sm-min){
+					position: absolute;
+				  top: 50%;
+				  left: 50%;
+				  bottom: inherit;
+					right: inherit;
+				  @include transform(translateY(-50%) translateX(-50%));
+				}
+				i{
+					font-size: em(50);
+					color: $white;
+				}
+			}
+			.share{
+				position: absolute;
+				right: 30px;
+				top: 40px;
+				z-index: 2;
+				@media (min-width: $screen-sm-min){
+					bottom: inherit;
+				}
+			}
+			.video-wrap{
+				position: relative;
+				height: em(237);
+				@media (min-width: $screen-sm-min){
+					height: em(217);
+				}
+				@media (min-width: $screen-sm-min){
+					height: em(290);
+				}
+				@media (min-width: $screen-lg-min){
+					height: 356px;
+				}
+				padding-right: em(54);
+				.video-iframe{
+					position: relative;
+					height: 100%;
+					iframe{
+						width: 100%;
+						height: 100%;
+						@extend %center-align;
+					}
+				}
+				.close-video{
+					position: absolute;
+					top: 0;
+					right: 0;
+					text-align: center;
+					color: $white;
+					background: $pink;
+					font-weight: 700;
+					font-size: em(20);
+					padding: em(20,20);
+					@include appearance(none);
+					border: none;
 				}
 			}
 		}

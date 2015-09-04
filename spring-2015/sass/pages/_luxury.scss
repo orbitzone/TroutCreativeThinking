@@ -538,7 +538,7 @@ body.love-luxury{
 					.number-4{
 						top: 26px;
 						right: 12px;
-						left: initial;
+						left: inherit;
 						@media (min-width: $screen-sm-min){
 							top: 12px;
 							right: 12px;

@@ -1484,9 +1484,11 @@ body.love-luxury{
 			}
 		}
 		.the-powder-room{
-			padding: 0;
-			@media (min-width: $screen-sm-min){
-				padding: em(50);
+			.the-powder-room-content{
+				padding: 0;
+				@media (min-width: $screen-lg-min){
+					padding: em(50);
+				}				
 			}
 			.title{
 				@media (min-width: $screen-sm-min){
@@ -1519,6 +1521,9 @@ body.love-luxury{
 						padding-left: em(120);
 					}
 					@media (min-width: $screen-lg-min){
+						padding-left: em(190);
+					}
+					@media (min-width: $screen-xl-min){
 						padding-left: em(300);
 					}
 					.images{
@@ -1645,6 +1650,10 @@ body.love-luxury{
 				    left: 165px;				    
 			    }
 			     @media (min-width: $screen-lg-min){
+					 	top: 80px;
+				    left: 215px;				    
+			    }
+			    @media (min-width: $screen-xl-min){
 					 	top: 80px;
 				    left: 300px;				    
 			    }

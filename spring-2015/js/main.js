@@ -39,24 +39,28 @@ $.fn.imagesLoaded = function () {
 
 jQuery(function($){
 	player = {
-		obj:"",
+		obj:{},
 		init: function(container, videoId){
 			if (typeof(YT) == 'undefined' || typeof(YT.Player) == 'undefined') {
-        window.onYouTubeIframeAPIReady = function() {
-          player.loadPlayer(container, videoId);
+				window.onYouTubeIframeAPIReady = function() {
+					player.obj[container] = player.loadPlayer(container, videoId);					
         };
         //This code loads the IFrame Player API code asynchronously.
 				var tag = document.createElement('script');
-
 				tag.src = "https://www.youtube.com/iframe_api";
 				var firstScriptTag = document.getElementsByTagName('script')[0];
 				firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
       } else {
-        player.loadPlayer(container, videoId);
+      	if(typeof player.obj[container] !== 'undefined'){
+      		player.play(container);
+      	}else{
+        	player.obj[container] = player.loadPlayer(container, videoId)	;     
+      	}
       }
+      console.log(player.obj);
 		},
 		loadPlayer: function(container, videoId){
-		 player.obj = new YT.Player(container, {
+		 return new YT.Player(container, {
         videoId: videoId,
         width: 356,
         height: 200,
@@ -69,16 +73,22 @@ jQuery(function($){
         },
         events: {
         	'onReady': function(event){
-        		
+        		player.play(container);
         	}
         }
       });
 		},
-		play: function(){
-			player.obj.playVideo();
+		play: function(id){
+			console.log(id);
+			var video = player.obj[id];
+			console.log(video);
+			video.playVideo();
 		},
-		stop: function(){
-		  player.obj.stopVideo();      
+		stop: function(id){
+			console.log(id);
+			var video = player.obj[id];
+			console.log(video);
+		  video.stopVideo();      
 		}
 	};
 	shareBoard = {
@@ -823,15 +833,14 @@ jQuery(function($){
   					arrows: false
 					})
 					$('#water-therapy .video .play').on('click', function(){
-						player.play();
 						$('#water-therapy .video-slider').slick('slickNext');
+						player.init('methven-video','9SMTB_xeuM0');
 					});
 					$('#water-therapy .close-video').on('click', function(){
-						player.stop();
+						player.stop('methven-video');
 						$('#water-therapy .video-slider').slick('slickPrev');
-					});
-					player.init('methven-video','9SMTB_xeuM0');
-					loveCalm.tips();
+					});					
+					loveCalm.tips();					
 				}
 			});
 		},
@@ -882,6 +891,21 @@ jQuery(function($){
 				url: 'pages/calm/footer-ads.html',
 				success: function(data){
 					$('#main-content').append(data);
+					$('#footer-ads .video-slider').slick({
+						slidesToShow: 1,
+  					slidesToScroll: 1,
+  					infinite: false,
+  					arrows: false
+					})
+					$('#footer-ads .video .play').on('click', function(){
+						$('#footer-ads .video-slider').slick('slickNext');
+						player.init('working-display-video','01fdc5wkep8');
+					});
+					$('#footer-ads .close-video').on('click', function(){
+						player.stop('working-display-video');
+						$('#footer-ads .video-slider').slick('slickPrev');
+					});
+					
 				}
 			});
 		}

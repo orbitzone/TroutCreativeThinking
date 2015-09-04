@@ -268,6 +268,18 @@ jQuery(function($){
 				
 				var top = $(obj).position().top + $(obj).outerHeight()+10;
 				var left = $(obj).position().left - ($('.hotspot-data.spot-'+spot).outerWidth()/2) + ($(obj).outerHeight()/2);
+				var offset = top + $('.hotspot-data.spot-'+spot).outerHeight();
+				if( offset > $('#bathrooms-for-inspiration .bathrooms-showcase-section').height()){
+					top	= $(obj).position().top - $('.hotspot-data.spot-'+spot).outerHeight() - 10;
+				}
+				if(top < 0){
+					top = 20;
+					if($(obj).position().left - $('.hotspot-data.spot-'+spot).outerWidth() > 10){
+						left = $(obj).position().left - $('.hotspot-data.spot-'+spot).outerWidth();
+					}else{
+						left = $(obj).position().left + $(obj).position().outerWidth() + $('.hotspot-data.spot-'+spot).outerWidth();
+					}
+				}
 				$('.hotspot-data.spot-'+spot).css(
 				{
 					top: top,
@@ -583,7 +595,13 @@ jQuery(function($){
 					$('#main-content').append(data).imagesLoaded().then(function(){
 						$('#bathrooms-for-inspiration .products-slide .product').matchHeight();
 					});
-					
+					$('#bathrooms-for-inspiration .slider').slick({
+						slidesToShow: 1,
+  					slidesToScroll: 1,
+  					infinite: true,
+  					arrows: false,
+  					dots: true
+  				});
 					$('#bathrooms-for-inspiration .products-slide').slick({
 						slidesToShow: 4,
   					slidesToScroll: 4,
@@ -747,10 +765,16 @@ jQuery(function($){
 					$('#main-content').append(data).imagesLoaded().then(function(){
 						$('#bathrooms-for-inspiration .products-slide .product').matchHeight();
 					});
-					
+					$('#bathrooms-for-inspiration .slider').slick({
+						slidesToShow: 1,
+  					slidesToScroll: 1,
+  					infinite: true,
+  					arrows: false,
+  					dots: true
+  				});
 					$('#bathrooms-for-inspiration .products-slide').slick({
-						slidesToShow: 2,
-  					slidesToScroll: 2,
+						slidesToShow: 4,
+  					slidesToScroll: 4,
   					infinite: false,
   					prevArrow: "<button type=\"button\" class=\"arrow-prev\"><i class=\"iconr-arrow-left\"></i></button>",
   					nextArrow: "<button type=\"button\" class=\"arrow-next\"><i class=\"iconr-arrow-right\"></i></button>",
@@ -759,6 +783,7 @@ jQuery(function($){
 					      breakpoint: 768,
 					      settings: {
 					        arrows: false,
+					        dots: true,
 					        slidesToShow: 2,
 					        slidesToScroll: 2
 					      }
@@ -767,6 +792,7 @@ jQuery(function($){
 					      breakpoint: 480,
 					      settings: {
 					        arrows: false,
+					        dots: true,
 					        slidesToShow: 1,
 					        slidesToScroll: 1
 					      }

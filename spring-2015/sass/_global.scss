@@ -116,8 +116,32 @@ body.spring-2015{
 			line-height: inherit;
 			font-family: $font-family;
 		}
+		.slick-slider{
+			.slick-dots{
+				margin: 0;
+				position: absolute;
+				width: 100%;
+				bottom: em(20);
+				left: 0;
+				button{
+					width: 10px;
+					height: 10px;
+					@include border-radius(50%);
+					background: $white;
+					text-indent: -9999px;
+					&:before{
+						display: none;
+					}
+				}
+				.slick-active{
+					button{
+						background: $green;
+					}
+				}
+			}
+		}
 		.slick-slide{
-			outline: none !important;
+			outline: none !important;			
 		}
 		.container{
 			padding: 0 30px;

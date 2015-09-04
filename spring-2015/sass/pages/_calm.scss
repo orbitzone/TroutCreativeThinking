@@ -197,14 +197,7 @@ body.love-calm{
 				color: $pale-blue;
 			}
 			.products-slide{
-				max-width: em(720);
-				margin: 0 auto;
-				.product{
-					.image{
-						max-width: em(360);
-						margin-right: em(40);
-					}
-				}
+				margin: 0 auto;				
 			}
 		}
 		.bathroom{
@@ -213,8 +206,33 @@ body.love-calm{
 					&:hover{
 						color: $pale-blue;
 					}
+					&.spot-1{
+						top: percentage(657/900);
+						left: percentage(323/1253);
+					}
+					&.spot-2{
+						top: percentage(400/900);
+						left: percentage(1036/1253);
+					}
+					&.spot-3{
+						top: percentage(676/900);
+						left: percentage(544/1253);						
+					}
+					&.spot-4{
+						top: percentage(620/900);
+						left: percentage(648/1253);
+					}
+					&.spot-5{
+						top: percentage(737/900);
+						left: percentage(648/1253);						
+					}
 				}
 				.hotspot-data{
+					&.spot-3, &.spot-5{
+						.text{
+							margin-top: 0;
+						}
+					}
 					.text{
 						h3{
 							color: $pale-blue;

@@ -11,6 +11,9 @@ body.spring-2015{
 				font-size: em(60);
 			}			
 		}
+		.bathroom-data{
+			position: relative;
+		}
 		.title-description{
 			margin-bottom: em(60);
 			max-width: em(235);
@@ -125,23 +128,9 @@ body.spring-2015{
 					position: absolute;
 					display: none;
 					z-index: 1;
-					&.spot-1{
-						top: 22%;
-				    left: 15%;
-					}
-					&.spot-2{
-						top: 22%;
-				    left: 15%;
-					}
-					&.spot-3{
-						top: 22%;
-				    left: 15%;
-					}
-					.text{
-				    position: absolute;
-				    top: em(110);
-				    left: em(140);
+					.info{
 				    width: em(180);
+				    @extend %center-align;
 				    h3{
 				    	font-size: em(18);
 				    	color: $green;
@@ -151,6 +140,10 @@ body.spring-2015{
 				    p{
 				    	font-size: em(15);
 				    	color: $grey;
+				    }
+				    .text{
+				    	text-align: center;
+				    	margin-top: em(-10);
 				    }
 					}
 					path{
@@ -293,10 +286,10 @@ body.spring-2015{
 			.product{
 				padding-bottom: em(54);
 				position: relative;
+				margin: em(30); 
 				.image{
 					img{
 						margin: 0 auto;
-						width: em(250);
 						@media (min-width: $screen-sm-min){
 							width: auto;
 							margin: inherit;

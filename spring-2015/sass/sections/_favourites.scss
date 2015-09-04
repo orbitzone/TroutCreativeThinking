@@ -130,9 +130,16 @@ body.spring-2015{
 				.product-info{
 					position: relative;
 					z-index: 1;
-					padding: em(44) em(50);
 					font-weight: 700;
 					text-align: center;
+					padding-top: em(40);
+					@media (min-width: $screen-sm-min){
+						padding-top: 0;
+						position: absolute;
+					  top: 50%;
+					  left: 50%;
+					  @include transform(translateY(-50%) translateX(-50%));
+					}
 					.icon{
 				    width: 50px;
 				    height: 50px;
@@ -150,6 +157,14 @@ body.spring-2015{
 						font-size: em(16);
 						text-transform: uppercase;
 					}
+					p{
+						font-size: em(18);
+						line-height: em(20);
+						@media (min-width: $screen-md-min){
+							font-size: em(22);
+							line-height: em(23);
+						}
+					}
 				}
 				.share{
 					top: inherit;
@@ -161,6 +176,12 @@ body.spring-2015{
 		.products-grid{
 			max-width: 1033px;
 			margin: 0 auto;
+			.product{
+				margin-bottom: em(20);
+				@media (min-width: $screen-sm-min){
+					margin-bottom: 0;
+				}
+			}
 		}
 	}
 }

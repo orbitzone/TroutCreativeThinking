@@ -650,7 +650,9 @@ jQuery(function($){
 				cache: false,
 				url: 'pages/luxury/products.html',
 				success: function(data){
-					$('#main-content').append(data);
+					$('#main-content').append(data).imagesLoaded().then(function(){
+						$('#products .featured-products .product').matchHeight();
+					});
 					$('#products .slider').slick({
 						slidesToShow: 1,
   					slidesToScroll: 1,
@@ -660,29 +662,7 @@ jQuery(function($){
   					prevArrow: "<button type=\"button\" class=\"arrow-prev\"><i class=\"iconr-arrow-left\"></i></button>",
   					nextArrow: "<button type=\"button\" class=\"arrow-next\"><i class=\"iconr-arrow-right\"></i></button>"					 	
 					});
-					$('#products .products-slide').slick({
-						slidesToShow: 4,
-  					slidesToScroll: 4,
-  					infinite: false,
-  					prevArrow: "<button type=\"button\" class=\"arrow-prev\"><i class=\"iconr-arrow-left\"></i></button>",
-  					nextArrow: "<button type=\"button\" class=\"arrow-next\"><i class=\"iconr-arrow-right\"></i></button>",
-					 	responsive: [
-					    {
-					      breakpoint: 768,
-					      settings: {
-					        slidesToShow: 2,
-					        slidesToScroll: 2
-					      }
-					    },
-					    {
-					      breakpoint: 480,
-					      settings: {
-					        slidesToShow: 1,
-					        slidesToScroll: 1
-					      }
-					    }
-					  ]
-					});
+
 					loveLuxury.hotelInspiredLook();
 				}
 			});				

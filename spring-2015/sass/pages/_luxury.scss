@@ -1277,25 +1277,39 @@ body.love-luxury{
 			}
 			position: relative;
 			.dot-pattern{
-				padding: em(80) em(50);
+				@media (min-width: $screen-sm-min){
+					padding: em(30);
+				}
+				@media (min-width: $screen-md-min){
+					padding: em(80) em(50);
+				}
 			}
 			.text{
 				font-size: em(40);
 				font-weight: bold;
 				line-height: 1em;
 				text-decoration: underline;
-				color: $gold;
+				color: $black;
 				position: relative;
 				margin-top: 20px;
 				margin-bottom: em(20,40);
+				@media (min-width: $screen-sm-min){
+					margin-top: 0;
+				}
 				@media (min-width: $screen-md-min){
 					font-size: em(50);
 					margin-top: 0;
 					margin-bottom: 0;
 					position: absolute;
 					top: 20%;
-					right: em(-30);
+					right: em(-16,50);
 					z-index: 2;
+				}
+				@media (min-width: $screen-lg-min){
+					right: em(-16,50);
+				}
+				@media (min-width: $screen-xl-min){
+					right: em(-30,50);
 				}
 			}
 			.description{
@@ -1307,7 +1321,7 @@ body.love-luxury{
 					padding-left: em(190);
 				}
 				h3{
-					color: $pale-blue;
+					color: $gold;
 					font-size: em(16);
 					text-transform: uppercase;
 					font-weight: 700;
@@ -1324,32 +1338,59 @@ body.love-luxury{
 				position: relative;
 				.share{
 					position: absolute;
-					top: 30px;
-					right: 30px;
+					top: 20px;
+					left: 30px;
+					bottom: inherit;
+					i{
+						color: $black;
+						&:hover{
+							color: $white;
+						}
+					}
 				}
 			}
 			.slider{
+				@media (min-width: $screen-sm-min){
+					margin-bottom: em(40);
+				}
+				@media (min-width: $screen-md-min){
+					margin-bottom: 0;
+				}
 				button{
 					@include appearance(none);
 					background: none;
 					border: none;
 					outline: none;
 					position: absolute;
-					bottom: em(-38);
+					bottom: em(-68);
 					top: inherit;
 					z-index: 2;
 					left: inherit;
+					@media (min-width: $screen-md-min){
+						bottom: em(-38);
+					}
 					i{
 						font-size: em(50);
-						color: $pale-blue;
 					}
 					&.arrow-next{
-						@include transform(translateY(100%));
+						@include transform(translateX(0));
+						@media (min-width: $screen-md-min){
+							@include transform(translateY(100%));
+						}
 						right: 0;
+						i{
+							color: $gold;
+						}
 					}
 					&.arrow-prev{
-						@include transform(translateX(-100%) translateY(100%));
+						@include transform(translateX(-100%));
+						@media (min-width: $screen-md-min){
+							@include transform(translateX(-100%) translateY(100%));
+						}
 						right: 10px;
+						i{
+							color: $gold;
+						}
 					}
 					&.slick-disabled{
 						display: block;
@@ -1364,18 +1405,25 @@ body.love-luxury{
 		.luxe-for-less{
 			background: url(../images/line-pattern-dark.png) repeat;
 			color: $white;
-			padding: em(60) 0 em(20) em(20);
-			@media (min-width: $screen-sm-min){
-				padding: em(60) em(30) em(128);
-			}
-			@media (min-width: $screen-md-min){
-				padding: em(60) 0 em(128) em(100);
-			}
-			@media (min-width: $screen-lg-min){
-				padding: em(60) 0 em(128) em(243);
+			.luxe-for-less-content{
+			padding: em(60) em(20) em(20);
+				@media (min-width: $screen-sm-min){
+					padding: em(60) em(30) em(158);
+				}
+				@media (min-width: $screen-md-min){
+					padding: em(60) em(40) em(158);
+				}
+				@media (min-width: $screen-xl-min){
+					padding: em(60) 0 em(158) em(243);
+				}
+				
 			}
 			.description{
+				margin-bottom: em(40);
 				@media (min-width: $screen-sm-min){
+					margin-bottom: 0;
+				}
+				@media (min-width: $screen-md-min){
 					width: em(300);
 				}
 				h2{
@@ -1399,14 +1447,38 @@ body.love-luxury{
 			}
 			.products{
 				position: relative;
+				.product-1{
+					.image{
+						width: em(240);
+						@media (min-width: $screen-sm-min){
+							width: em(216);
+						}
+						@media (min-width: $screen-md-min){
+							width: auto;
+						}
+					}					
+				}
 				.product-2{
+					float: right;
 					@media (min-width: $screen-sm-min){
+						float: none;
 						position: absolute;
 						left: em(214);
-						top: em(56);
+						top: em(115);
+					}
+					.image{
+						width: em(240);
+						@media (min-width: $screen-sm-min){
+							width: auto;
+						}
 					}
 					.share{
-						margin-left: em(215);
+						@media (min-width: $screen-md-min){
+							margin-left: em(38);
+						}
+						@media (min-width: $screen-lg-min){
+							margin-left: em(215);
+						}
 					}
 				}
 			}
@@ -1419,6 +1491,13 @@ body.love-luxury{
 			.title{
 				@media (min-width: $screen-sm-min){
 					padding-left: em(190);
+					margin-bottom: em(30);
+				}
+				@media (min-width: $screen-md-min){
+					margin-bottom: em(30);
+				}
+				@media (min-width: $screen-lg-min){
+					margin-bottom: 0;
 				}
 				h2{
 					font-size: em(40);
@@ -1434,41 +1513,93 @@ body.love-luxury{
 				margin: 0 auto;
 				.product{
 					@media (min-width: $screen-sm-min){
+						padding-left: 0;
+					}
+					@media (min-width: $screen-md-min){
+						padding-left: em(120);
+					}
+					@media (min-width: $screen-lg-min){
 						padding-left: em(300);
 					}
 					.images{
 						position: relative;
 						img{
-							max-width: em(540);
+							@media (min-width: $screen-sm-min){
+								max-width: em(492);
+							}
+							@media (min-width: $screen-md-min){
+								max-width: em(540);
+							}
 						}
 						.button-mood-shop{
 							position: absolute;
 							bottom: em(40);
 							left: em(80);
+							@media (min-width: $screen-sm-min){
+								bottom: em(105);
+							}
+							@media (min-width: $screen-md-min){
+								bottom: em(102);
+							}
+							@media (min-width: $screen-lg-min){
+								bottom: em(40);
+							}
 						}
 					}
 				}
 				.we-love-updates{
-					width: em(417);
+					position: relative;
+					padding-bottom: em(78);
 					@media (min-width: $screen-sm-min){
 						position: absolute;
+						padding-bottom: 0;
 						top: em(-40);
 						right: 0;
+						width: em(251);
+					}
+					@media (min-width: $screen-md-min){
+						width: em(417);
 					}
 					.we-love{
 						position: absolute;
-						top: em(150);
-						left: em(-10);
+							top: em(82);
+						left: 0;
+						@media (min-width: $screen-sm-min){
+							top: em(82);
+						left: em(-33);
+						}
+						@media (min-width: $screen-md-min){
+							top: em(150);
+							left: em(-10);
+						}
+					}
+					.images{
+						margin-left: em(25);
+						@media (min-width: $screen-sm-min){
+							margin-left: 0;
+						}
 					}
 					.text{
-						width: em(285);
 						color: $grey;
 						position: absolute;
-						left: em(120);
+						left: em(40);
+						top: em(145);
+						@media (min-width: $screen-sm-min){
+							left: em(20);
+						top: em(133);
+						}
+						@media (min-width: $screen-md-min){
+							left: em(120);
 						top: em(220);
+						}
 						p{
-							font-size: em(21);
+							font-size: em(16);
 							margin-bottom: 0;
+							@media (min-width: $screen-sm-min){
+							}
+							@media (min-width: $screen-md-min){
+								font-size: em(21);
+							}
 						}
 					}
 				}
@@ -1477,12 +1608,18 @@ body.love-luxury{
 				@media (min-width: $screen-sm-min){
 					margin-top: em(-110);
 				}
+				@media (min-width: $screen-lg-min){
+					margin-top: em(-44);
+				}
+				@media (min-width: $screen-xl-min){
+					margin-top: em(-110);
+				}
 				.subtitle{
 					position: relative;
 					z-index: 2;
 					h2{
 						font-size: em(20);		
-						@media (min-width: $screen-sm-min){
+						@media (min-width: $screen-md-min){
 							font-size: em(35);		
 						}				
 					}
@@ -1499,9 +1636,17 @@ body.love-luxury{
 					display: block;
 			    @media (min-width: $screen-sm-min){
 						position: absolute;
-				    top: 80px;
-				    left: 300px;
+				    top: 95px;
+				    left: 40px;
 				    z-index: 1;
+			    }
+			    @media (min-width: $screen-md-min){
+						top: 95px;
+				    left: 165px;				    
+			    }
+			     @media (min-width: $screen-lg-min){
+					 	top: 80px;
+				    left: 300px;				    
 			    }
 				}
 				.hex-slider{
@@ -1509,8 +1654,12 @@ body.love-luxury{
 					position: relative;
 					margin-top: em(32);
 					svg{
-						width: em(400);
-						height: em(400);
+						width: em(320);
+						height: em(320);
+						@media (min-width: $screen-sm-min){
+							width: em(400);
+							height: em(400);
+						}
 						.bg{
 							fill: $white;
 						}
@@ -1522,8 +1671,12 @@ body.love-luxury{
 						position: absolute;
 						width: em(150);
 						height: em(88);
-						top: em(70);
-						left: em(120);
+						top: em(48);
+						left: em(88);
+						@media (min-width: $screen-sm-min){
+							top: em(70);
+							left: em(120);
+						}
 						img{
 							max-height: em(88);
 							margin: 0 auto;
@@ -1534,8 +1687,12 @@ body.love-luxury{
 						width: em(150);
 						height: em(140);
 						position: absolute;
-						top: em(180);
-						left: em(120);
+						top: em(139);
+						left: em(88);
+						@media (min-width: $screen-sm-min){
+							top: em(180);
+							left: em(120);
+						}
 						img{
 							max-height: em(140);
 							margin: 0 auto;
@@ -1545,7 +1702,10 @@ body.love-luxury{
 					.button-mood-shop{
 				    position: absolute;
 				    bottom: -10px;
-				    left: 120px;
+				    left: 92px;
+				    @media (min-width: $screen-sm-min){
+				    	left: 120px;
+				    }
 					}
 					.slick-slider{
 					button{
@@ -1579,9 +1739,15 @@ body.love-luxury{
 				}
 				}
 				.description{
-					width: em(300);
+					width: auto;
+					margin-left: 0;
 					margin-top: em(40);
-					margin-left: em(80);
+					text-align: center;
+					@media (min-width: $screen-sm-min){
+						width: em(300);
+						margin-left: em(80);
+						text-align: left;
+					}
 					p{
 						font-size: em(21);
 						color: $black;
@@ -1598,15 +1764,22 @@ body.love-luxury{
 					padding: em(50) em(30);
 				}
 				.title{
+					
 					margin-bottom: em(30);
+					@media (min-width: $screen-md-min){
+						margin-top: em(100);
+					}
+					@media (min-width: $screen-lg-min){
+						margin-top: em(130);
+					}
+					@media (min-width: $screen-xl-min){
+						margin-top: em(180);
+					}
 					h2{
 						color: $black;
 						margin: 0;
 						text-decoration: underline;
-						font-size: em(40);
-						@media (min-width: $screen-md-min){
-							font-size: em(60);
-						}
+						font-size: em(40);						
 					}
 				}
 				.text-wrap{
@@ -1667,14 +1840,90 @@ body.love-luxury{
 		.featured-products{
 			padding: em(20);
 			@media (min-width: $screen-sm-min){
+				padding: em(60) em(20) 0;
+			}
+			@media (min-width: $screen-md-min){
+				padding: em(60) em(20);
+			}
+			@media (min-width: $screen-lg-min){
+				padding: em(60) em(20);
+			}
+			@media (min-width: $screen-xl-min){
 				padding: em(60) em(130);
 			}
 			.slick-slide{
 				margin: em(20);
 			}
 			.product{
+				position: relative;
+				padding-bottom: em(34);
+				margin-bottom: em(40);
 				.image{
 					margin-bottom: em(20);
+				}
+				.share{
+					top: 0;
+				}
+				.button-mood-shop{
+					position: absolute;
+					bottom: 0;
+					left: 0;
+				}
+			}
+			.left-lines{
+				padding-right: em(75);
+				padding-left: em(75);
+				position: relative;
+				padding-top: em(120);
+				@media (min-width: $screen-sm-min){
+					padding-right: 0;
+				padding-left: 0;
+					padding-top: em(120);
+				}
+				@media (min-width: $screen-md-min){
+					padding-right: em(75);
+				padding-left: em(75);
+					padding-top: 0;
+				}
+				.title{
+					z-index: 2;
+					@media (min-width: $screen-sm-min){
+						position: absolute;
+						top: 0;
+						left: 0;
+					}
+					@media (min-width: $screen-md-min){
+						left: initial;
+						right: em(-15);
+						top: em(48);
+					}
+					@media (min-width: $screen-lg-min){
+						right: em(-46);
+						top: em(58);
+					}
+					@media (min-width: $screen-xl-min){
+						right: 0;
+					top: em(100);
+					}
+					h2{
+						font-size: em(40);
+						color: $pale-blue;
+						text-decoration: underline;
+						@media (min-width: $screen-lg-min){
+							font-size: em(60);
+						}
+					}
+				}
+			}
+			.right-lines{
+				padding-left: em(50);
+				@media (min-width: $screen-sm-min){
+					padding-left: 0;
+					padding-top: em(120);
+				}
+				@media (min-width: $screen-md-min){
+					padding-left: em(50);
+					padding-top: 0;
 				}
 			}
 		}

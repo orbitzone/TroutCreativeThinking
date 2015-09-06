@@ -1857,15 +1857,6 @@ body.love-luxury{
 				}
 				.slider{
 					position: relative;
-					padding: 0 em(60);
-					.arrow-prev{
-						left: 0;
-						@include transform(translateX(-20px));
-					} 
-					.arrow-next{
-						right: 0;
-						@include transform(translateX(20px));						
-					} 
 					.image{
 						position: relative;
 						.share{
@@ -1877,18 +1868,83 @@ body.love-luxury{
 					.slide{
 						position: relative;
 						.product{
-							padding: 20px;	
+							padding: 20px;
+							width: em(230);	
+							@media (min-width: $screen-sm-min){
+								width: auto;
+							}
 						}
 					}
+					button.slick-arrow{
+						@include appearance(none);
+						background: none;
+						border: none;
+						outline: none;
+						position: absolute;
+						bottom: inherit;
+						top: em(202);
+						z-index: 2;
+						left: inherit;
+						@media (min-width: $screen-sm-min){
+							top: em(295);
+						}
+						@media (min-width: $screen-md-min){
+							top: em(334);
+						}
+						@media (min-width: $screen-lg-min){
+							top: em(412);
+						}
+						@media (min-width: $screen-xl-min){
+							top: em(526);
+						}
+						i{
+							font-size: em(50);
+						}
+						&.arrow-next{
+							@include transform(translateX(0));
+							@media (min-width: $screen-md-min){
+								@include transform(translateY(100%));
+							}
+							right: 0;
+							i{
+								color: $gold;
+							}
+						}
+						&.arrow-prev{
+							@include transform(translateX(-100%));
+							@media (min-width: $screen-md-min){
+								@include transform(translateX(-100%) translateY(100%));
+							}
+							right: 10px;
+							i{
+								color: $gold;
+							}
+						}
+						&.slick-disabled{
+							display: block;
+							i{
+								color: $light-grey;
+							}
+						}
+					}	
 					.slick-dots{
 						position: relative;
 						bottom: auto;
 						@media (min-width: $screen-sm-min){
 						position: absolute;
 						margin: 0;
-						bottom: em(20);
+						top: em(280);
 						left: 0;
 						width: 100%;
+					}
+					@media (min-width: $screen-md-min){
+						top: em(350);
+					}
+					@media (min-width: $screen-lg-min){
+						top: em(428);
+					}
+					@media (min-width: $screen-xl-min){
+						top: em(530);
 					}
 						li{
 							margin: 0;

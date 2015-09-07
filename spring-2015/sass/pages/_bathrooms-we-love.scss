@@ -125,6 +125,8 @@ body.spring-2015{
 		}/* end .top-details */
 		.before-after{
 			margin-bottom: em(50);
+			position: relative;
+			z-index: 1;
 			.small-container{
 				max-width: 1280px;
 				margin: 0 auto;

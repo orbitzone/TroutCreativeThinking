@@ -353,7 +353,9 @@ jQuery(function($){
 				cache: false,
 				url:'pages/bathrooms-we-love.html',
 				success: function(data){
-					$('#main-content').html(data);
+					$('#main-content').html(data).imagesLoaded().then(function(){
+						$('#bathrooms-we-love .product').matchHeight();
+					});
 					$('#bathrooms-we-love .video-slider').slick({
 						slidesToShow: 1,
   					slidesToScroll: 1,

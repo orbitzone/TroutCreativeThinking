@@ -78,7 +78,7 @@ body.bec-judd{
 			p{
 				color: $black;
 				font-size: em(21);
-				font-weight: 700;
+				font-weight: 400;
 				margin-bottom: 0;
 			}
 		}
@@ -110,14 +110,11 @@ body.bec-judd{
 			.product-wrap{
 				position: relative;
 				margin-top: em(86);
-				.top-number{
-					position: absolute;
-					right: 0;
-					top: em(78);
-					z-index: 0;
-					.line{
-						
-					}
+				@media (min-width: $screen-lg-min){
+					margin-top: em(133);
+				}
+				@media (min-width: $screen-xl-min){
+					margin-top: em(86);
 				}
 				.image{
 					position: relative;
@@ -125,17 +122,44 @@ body.bec-judd{
 				}
 				.top-text{
 					color: $grey;
-					font-size: em(28);
-					width: em(295,28);
-					margin-top: em(50,28);
-					margin-bottom: em(40,28);
+					margin-top: em(140);
+					margin-bottom: em(64);
+					@media (min-width: $screen-lg-min){
+						padding-right: em(20);
+					}
+					p{
+						font-size: em(28);
+					}
 				}
 				.product{
-					width: em(190);
-					position: absolute;
-					top: em(435);
-					left: em(200);					
-				}
+					position: relative;
+					.top-number{
+						position: absolute;
+						right: 0;
+						z-index: 0;
+						@media (min-width: $screen-lg-min){
+							top: em(-56);					
+						}
+						@media (min-width: $screen-xl-min){
+							top: em(-56);					
+						}
+					}
+
+					.product-details{
+						width: em(190);
+						position: absolute;
+						top: em(435);
+						left: em(200);
+						@media (min-width: $screen-lg-min){
+							top: em(200);
+							left: em(128);				
+						}
+						@media (min-width: $screen-xl-min){
+							top: em(218);
+							left: em(200);			
+						}							
+					}
+				}				
 			}
 			.slider-wrap{
 				position: relative;
@@ -144,11 +168,16 @@ body.bec-judd{
 					background: $white;
 					padding: em(20);
 					width: em(429);
-					bottom: em(-15);
-					left: em(-50);
+					@media (min-width: $screen-lg-min){
+						bottom: em(-161);
+						left: em(-50);
+						margin-bottom: 0;
+					}
+					@media (min-width: $screen-xl-min){
+						bottom: em(-220);
+						left: em(-50);
+					}
 					p{
-						font-size: em(21);
-						font-weight: 700;
 						margin-bottom: 0;
 					}
 				}
@@ -156,8 +185,20 @@ body.bec-judd{
 		}
 		.top-2{
 			padding: em(40);
+			@media (min-width: $screen-lg-min){
+				padding: em(40) em(40) 0;
+			}
+			@media (min-width: $screen-xl-min){
+				padding: em(40);
+			}
 			.product-wrap{
 				margin-top: em(76);
+				@media (min-width: $screen-lg-min){
+					margin-top: 0;
+				}
+				@media (min-width: $screen-xl-min){
+					margin-top: em(76);
+				}
 				.top-number{
 					position: absolute;
 					top: em(140);
@@ -166,16 +207,26 @@ body.bec-judd{
 				.text{
 					background: $white;
 					padding: em(20);
-					margin-left: em(100);
 					margin-bottom: em(40);
+					@media (min-width: $screen-lg-min){
+						margin-left: em(66);
+					}
+					@media (min-width: $screen-xl-min){
+						margin-left: em(100);
+					}
 					p{
-						font-size: em(21);
-						font-weight: 700;
 						margin-bottom: 0;
 					}
-				}
+				}				
+			}
+			.product{
 				.image{
-					margin-left: em(-94);
+					@media (min-width: $screen-lg-min){
+						margin-left: em(-125);
+					}
+					@media (min-width: $screen-xl-min){
+						margin-left: em(-94);
+					}
 				}
 			}
 		}
@@ -200,8 +251,6 @@ body.bec-judd{
 						margin-right: em(48);
 						width: em(576);
 						p{
-							font-size: em(21);
-							font-weight: 700;
 							margin-bottom: 0;
 						}
 					}
@@ -228,14 +277,33 @@ body.bec-judd{
 				left: em(30);
 				width: em(140);
 				z-index: 2;
+				@media (min-width: $screen-lg-min){
+					left: em(5);
+				}
+				@media (min-width: $screen-xl-min){
+					left: em(30);
+				}
 			}
 			.product-wrap{
 				position: relative;
-				margin-left: em(124);
 				margin-top: em(-60);
+				@media (min-width: $screen-lg-min){
+					margin-left: em(100);
+				}
+				@media (min-width: $screen-xl-min){
+					margin-left: em(124);
+				}
 				.text{
 					width: em(576);
 					margin-left: em(-50);
+					@media (min-width: $screen-lg-min){
+						width: em(480);
+						margin-bottom: em(10);
+					}
+					@media (min-width: $screen-xl-min){
+						width: em(576);
+						margin-bottom: em(40);
+					}
 				}
 				.top-number{
 					margin-left: em(-50);
@@ -255,7 +323,7 @@ body.bec-judd{
 				.text{
 					position: absolute;
 					bottom: em(-40);
-					left: em(-96);
+					left: em(-60);
 					width: em(430);
 					margin-bottom: 0;
 				}

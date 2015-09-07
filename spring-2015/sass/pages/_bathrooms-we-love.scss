@@ -4,6 +4,15 @@ body.spring-2015{
 			font-size: em(50);
 			text-decoration: underline;						
 		}
+		.product{
+			position: relative;
+			padding-bottom: em(44);
+			.button-mood-shop{
+				position: absolute;
+				bottom: em(20);
+				left: 0;
+			}
+		}
 		.intro{
 			position: relative;
 			margin-bottom: em(60);
@@ -115,6 +124,7 @@ body.spring-2015{
 			}
 		}/* end .top-details */
 		.before-after{
+			margin-bottom: em(50);
 			.small-container{
 				max-width: 1280px;
 				margin: 0 auto;
@@ -169,26 +179,53 @@ body.spring-2015{
 					text-transform: uppercase;
 					text-align: center;
 					width: 100%;
-					font-size: em(21);
+					font-size: em(16);
 					@extend %center-align;
 				}
 			}
 		}
 		.the-dream-list{
+			position: relative;
+			z-index: 1;
+			padding: 0 em(80) 0 em(140);
 			h2{
-
+				margin: 0;
+				text-align: center;
+			}
+			.tip{
+				margin-top: em(30);
 			}
 		}
 		.the-feature-bath{
-
+				position: relative;
+				padding: 0 em(80) em(120) em(140);
+				.title{
+					margin-left: em(175);
+					h2{
+						margin: 0;
+					}
+				}
+				.feature-image{
+					position: absolute;
+					z-index: 0;
+					left: em(436);
+					bottom: 0;
+				}
 		}
 		.hear-from-the-tradies{
+			padding: 0 em(40) 0 em(92);
+			margin-bottom: em(97);
+			.hear-from-content{
+				margin-left: em(73);
+				h3{
+					text-decoration: underline;		
+				}
+			}
 			.video{
 				position: relative;
 				max-width: 878px;
 				margin: 0 auto;
-				background-size: cover;
-				background-position: top right;
+				padding: em(50);
 				.video-content{
 					position: relative;
 				}
@@ -199,7 +236,7 @@ body.spring-2015{
 						height: em(480);
 					}
 					@media (min-width: $screen-lg-min){
-						height: em(492);
+						height: em(436);
 					}
 					padding-right: em(54);
 					.video-iframe{

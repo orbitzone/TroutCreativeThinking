@@ -12,7 +12,16 @@ body.bec-judd{
 			color: $white;
 			position: absolute;
 			bottom: em(154);
-			left: em(477);
+			@media (min-width: $screen-sm-min){
+				left: em(340);
+			}
+			@media (min-width: $screen-md-min){
+				left: em(380);
+			}
+			@media (min-width: $screen-lg-min){
+				left: em(477);
+			}
+
 			text-decoration: underline;
 			h1{
 				font-size: em(54);
@@ -20,8 +29,12 @@ body.bec-judd{
 		}
 		.hex-block{
 			position: absolute;
-			bottom: em(100);
-			left: em(305);
+			bottom: em(124);
+			left: em(165);
+			@media (min-width: $screen-lg-min){
+				bottom: em(100);
+				left: em(305);
+			}
 			@include transform(translateY(100%));
 			svg{
 				width: em(267);
@@ -77,9 +90,17 @@ body.bec-judd{
 			margin-bottom: em(40);
 			p{
 				color: $black;
-				font-size: em(21);
+				font-size: em(16);
 				font-weight: 400;
 				margin-bottom: 0;
+				@media (min-width: $screen-md-min){
+					font-size: em(21);
+				}
+				b{
+					color: $gold;
+					display: block;
+					margin-bottom: 8px;
+				}
 			}
 		}
 		button.slick-arrow{
@@ -107,9 +128,16 @@ body.bec-judd{
 			}	
 		.top-1{
 			padding: em(40);
+			margin-bottom: em(40);
+			@media (min-width: $screen-md-min){
+				margin-bottom: 0;
+			}
 			.product-wrap{
 				position: relative;
 				margin-top: em(86);
+				@media (min-width: $screen-md-min){
+					margin-top: em(86);
+				}
 				@media (min-width: $screen-lg-min){
 					margin-top: em(133);
 				}
@@ -122,13 +150,18 @@ body.bec-judd{
 				}
 				.top-text{
 					color: $grey;
-					margin-top: em(140);
+					margin-top: em(103);
 					margin-bottom: em(64);
 					@media (min-width: $screen-lg-min){
 						padding-right: em(20);
 					}
 					p{
-						font-size: em(28);
+						@media (min-width: $screen-md-min){
+							font-size: em(21);
+						}
+						@media (min-width: $screen-lg-min){
+							font-size: em(28);
+						}
 					}
 				}
 				.product{
@@ -137,6 +170,13 @@ body.bec-judd{
 						position: absolute;
 						right: 0;
 						z-index: 0;
+						top: em(-56);			
+						@media (min-width: $screen-sm-min){
+							top: em(-72);			
+						}
+						@media (min-width: $screen-md-min){
+							top: em(-56);			
+						}
 						@media (min-width: $screen-lg-min){
 							top: em(-56);					
 						}
@@ -148,8 +188,16 @@ body.bec-judd{
 					.product-details{
 						width: em(190);
 						position: absolute;
-						top: em(435);
-						left: em(200);
+						top: em(200);
+						left: em(128);
+						@media (min-width: $screen-sm-min){
+							top: em(99);
+							left: em(3);				
+						}
+						@media (min-width: $screen-md-min){
+							top: em(130);
+							left: em(62);				
+						}
 						@media (min-width: $screen-lg-min){
 							top: em(200);
 							left: em(128);				
@@ -164,17 +212,27 @@ body.bec-judd{
 			.slider-wrap{
 				position: relative;
 				.text{
-					position: absolute;
 					background: $white;
 					padding: em(20);
 					width: em(429);
-					@media (min-width: $screen-lg-min){
-						bottom: em(-161);
-						left: em(-50);
+
 						margin-bottom: 0;
+						position: relative;
+					@media (min-width: $screen-sm-min){
+						left: em(-10);
+						margin-top: em(40);
+					}
+					@media (min-width: $screen-md-min){
+						position: absolute;
+						bottom: em(-236);
+						left: em(-30);
+					}
+					@media (min-width: $screen-lg-min){
+						bottom: em(-236);
+						left: em(-30);
 					}
 					@media (min-width: $screen-xl-min){
-						bottom: em(-220);
+						bottom: em(-108);
 						left: em(-50);
 					}
 					p{
@@ -185,6 +243,9 @@ body.bec-judd{
 		}
 		.top-2{
 			padding: em(40);
+			@media (min-width: $screen-sm-min){
+				padding-bottom:0;
+			}
 			@media (min-width: $screen-lg-min){
 				padding: em(40) em(40) 0;
 			}
@@ -193,6 +254,16 @@ body.bec-judd{
 			}
 			.product-wrap{
 				margin-top: em(76);
+				@media (min-width: $screen-sm-min){
+					margin-top: em(-20);
+					margin-left: em(-20);
+					width: em(500);
+				}
+				@media (min-width: $screen-md-min){
+					margin-top: 0;
+					margin-left: 0;
+					width: auto;
+				}
 				@media (min-width: $screen-lg-min){
 					margin-top: 0;
 				}
@@ -203,6 +274,18 @@ body.bec-judd{
 					position: absolute;
 					top: em(140);
 					left: em(-59);
+					@media (min-width: $screen-sm-min){
+						top: em(-101);
+						left: em(-15);
+					}
+					@media (min-width: $screen-md-min){
+						top: em(20);
+						left: em(-104);
+					}
+					@media (min-width: $screen-lg-min){
+						top: em(140);
+						left: em(-59);
+					}
 				}
 				.text{
 					background: $white;
@@ -221,7 +304,12 @@ body.bec-judd{
 			}
 			.product{
 				.image{
+					@media (min-width: $screen-md-min){
+						margin-left: em(-130);
+						margin-top: em(-25);
+					}
 					@media (min-width: $screen-lg-min){
+						margin-top: 0;
 						margin-left: em(-125);
 					}
 					@media (min-width: $screen-xl-min){
@@ -231,8 +319,20 @@ body.bec-judd{
 			}
 		}
 		.top-3{
-			padding: em(40) em(124) 0;
+			padding: em(40) em(40) 0;
 			position: relative;
+			@media (min-width: $screen-sm-min){
+			}
+			@media (min-width: $screen-md-min){
+				padding: em(40) em(124) 0;
+				margin-bottom: em(323);
+			}
+			@media (min-width: $screen-lg-min){
+				margin-bottom: em(160);
+			}
+			@media (min-width: $screen-xl-min){
+				margin-bottom: em(-20);
+			}
 			.image-wrap{
 				position: relative;
 				.top-number{
@@ -241,42 +341,76 @@ body.bec-judd{
 					top: em(100);
 				}
 				.product-wrap{
-					position: absolute;
-					bottom: 0;
-					right: 0;
+					position: relative;
+					margin-top: em(-20);
+					margin-left: em(110);
+					@media (min-width: $screen-md-min){
+						position: absolute;
+						margin-top: 0;
+						margin-left: 0;
+						top: em(380);
+						right: em(-100);
+					}
+					@media (min-width: $screen-lg-min){
+						top: em(380);
+						right: em(-100);
+					}
+					@media (min-width: $screen-xl-min){
+						top: em(86);
+						right: 0;
+					}
 					.text{
 						background: $white;
 						padding: em(20);
 						margin-bottom: 0;
 						margin-right: em(48);
-						width: em(576);
+						width: em(450);
 						p{
 							margin-bottom: 0;
 						}
 					}
 					.image{
 						margin-top: em(-10);
-						margin-left: em(166);
+						margin-left: em(45);
 					}
 				}				
 			}
 			.product{
-				position: absolute;
-				width: em(198);
-				bottom: em(-58);
-				right: 0;
-				@include transform(translateY(100%));
+				margin-top: em(20);
+				margin-left: em(60);
+				margin-bottom: em(20);
+				@media (min-width: $screen-md-min){
+					margin-top: 0;
+					margin-left: 0;
+					margin-bottom: 0;
+					position: absolute;
+					width: em(198);
+					bottom: em(-20);
+					right: 0;
+					@include transform(translateY(100%));
+				}
 			}			
 		}
 		.top-4{
-			padding: em(40) em(124) 0;
-			margin-bottom: em(-258);
+			padding: em(40) em(40) 0;
+			@media (min-width: $screen-md-min){
+				margin-bottom: em(-300);
+				padding: em(40) em(124) 0;
+			}
 			.image{
 				position: absolute;
-				top: em(-258);
+				bottom: em(3);
 				left: em(30);
 				width: em(140);
 				z-index: 2;
+				@media (min-width: $screen-sm-min){
+					width: em(120);
+					left: 0;
+				}
+				@media (min-width: $screen-md-min){
+					width: auto;
+					left: 0;
+				}
 				@media (min-width: $screen-lg-min){
 					left: em(5);
 				}
@@ -287,6 +421,12 @@ body.bec-judd{
 			.product-wrap{
 				position: relative;
 				margin-top: em(-60);
+				@media (min-width: $screen-sm-min){
+					margin-left: em(80);
+				}
+				@media (min-width: $screen-md-min){
+					margin-left: em(80);
+				}
 				@media (min-width: $screen-lg-min){
 					margin-left: em(100);
 				}
@@ -294,30 +434,54 @@ body.bec-judd{
 					margin-left: em(124);
 				}
 				.text{
-					width: em(576);
-					margin-left: em(-50);
+					margin-left: em(-20);
+					margin-top: em(20);
+					margin-bottom: em(20);
+					@media (min-width: $screen-md-min){
+						margin-bottom: 0;
+						width: em(530);
+						margin-left: em(-20);
+					}
 					@media (min-width: $screen-lg-min){
+					margin-left: em(-32);
 						width: em(480);
-						margin-bottom: em(10);
+						margin-bottom: em(20);
 					}
 					@media (min-width: $screen-xl-min){
 						width: em(576);
-						margin-bottom: em(40);
+						margin-bottom: em(20);
 					}
 				}
 				.top-number{
-					margin-left: em(-50);
-					margin-bottom: em(40);
+					@media (min-width: $screen-sm-min){
+						margin-left: em(-20);
+						margin-bottom: em(40);
+					}
+					@media (min-width: $screen-md-min){
+						margin-bottom: 0;
+						margin-left: 0;
+						position: absolute;
+						left: em(-151);
+						top: em(116);
+					}
+					@media (min-width: $screen-lg-min){
+						left: em(-188);
+						top: em(116);
+					}
 				}
 				.product-details{
 					width: em(196);
+					position: relative;
+					z-index: 2;
 				}
 			}
 		}
 		.top-5{
 			position: relative;
 			padding: em(40);
-			top: em(-100);
+			@media (min-width: $screen-md-min){
+				top: em(-100);
+			}
 			.slider-wrap{
 				position: relative;
 				.text{
@@ -326,23 +490,75 @@ body.bec-judd{
 					left: em(-60);
 					width: em(430);
 					margin-bottom: 0;
+					@media (min-width: $screen-sm-min){
+						width: em(300);
+						left: em(-20);
+						bottom: em(-162);
+					}
+					@media (min-width: $screen-md-min){
+						width: em(430);
+						bottom: em(-260);
+					}
+					@media (min-width: $screen-lg-min){
+						bottom: em(-260);
+					}
+					@media (min-width: $screen-xl-min){
+						bottom: em(-40);
+					}
 				}
 			}
 			.product{
-				margin-top: em(206);
 				position: relative;
+				@media (min-width: $screen-sm-min){
+					width: em(300);
+					float: right;
+					margin-top: em(-113);
+				}
+				@media (min-width: $screen-md-min){
+					margin-top: em(206);
+					width: auto;
+					float: none;
+				}
 				.top-number{
 					position: absolute;
 					top: em(82);
-					right: 0;
+					@media (min-width: $screen-sm-min){
+						top: em(-20);
+						left: 0;
+					}
+					@media (min-width: $screen-md-min){
+						top: em(-60);
+						left: auto;
+						right: 0;
+					}
+					@media (min-width: $screen-lg-min){
+						top: em(41);
+					}
+					@media (min-width: $screen-xl-min){
+						top: em(82);
+					}
 				}
 				.image{
 					position: relative;
 					z-index: 2;
+					@media (min-width: $screen-md-min){
+						margin-left: em(-32);
+					}
+					@media (min-width: $screen-lg-min){
+						margin-left: 0;
+					}
 				}
 				.product-details{
 					width: em(196);
-					margin-left: em(170);
+					@media (min-width: $screen-md-min){
+						margin-left: em(38);
+					}
+					@media (min-width: $screen-lg-min){
+						margin-left: em(80);
+					}
+					@media (min-width: $screen-xl-min){
+						margin-left: em(170);
+					}
 				}
 			}
 		}

@@ -158,7 +158,9 @@ body.bec-judd{
 			}
 			.product-wrap{
 				position: relative;
+				padding-bottom: em(40);
 				@media (min-width: $screen-sm-min){
+					padding-bottom: 0;
 					margin-top: em(86);
 				}
 				@media (min-width: $screen-md-min){
@@ -199,6 +201,7 @@ body.bec-judd{
 				}
 				.product{
 					position: relative;
+					margin-left: em(-40);
 					.top-number{
 						position: absolute;
 						right: 0;
@@ -221,14 +224,16 @@ body.bec-judd{
 					.product-details{
 						width: em(190);
 						position: absolute;
-						top: em(102);
+						top: em(160);
 						left: em(5);
+						margin-left: em(20);
 						@media (min-width: $screen-sm-min){
-							top: em(99);
+							top: em(120);
 							left: em(3);				
 						}
 						@media (min-width: $screen-md-min){
-							top: em(130);
+							margin-left: 0;
+							top: em(160);
 							left: em(62);				
 						}
 						@media (min-width: $screen-lg-min){
@@ -261,12 +266,12 @@ body.bec-judd{
 					}
 					@media (min-width: $screen-md-min){
 						position: absolute;
-						bottom: em(-236);
-						left: em(-30);
+						bottom: em(-245);
+						left: em(-41);
 					}
 					@media (min-width: $screen-lg-min){
-						bottom: em(-236);
-						left: em(-30);
+						bottom: em(-245);
+						left: em(-41);
 					}
 					@media (min-width: $screen-xl-min){
 						bottom: em(-108);
@@ -342,8 +347,8 @@ body.bec-judd{
 			.product{
 				.image{
 					@media (min-width: $screen-md-min){
-						margin-left: em(-130);
-						margin-top: em(-25);
+						margin-left: em(-190);
+						margin-top: em(-45);
 					}
 					@media (min-width: $screen-lg-min){
 						margin-top: 0;
@@ -352,6 +357,14 @@ body.bec-judd{
 					@media (min-width: $screen-xl-min){
 						margin-left: em(-94);
 					}
+				}
+			}
+			.product-details{
+				@media (min-width: $screen-md-min){
+					margin-left: -15px;
+				}
+				@media (min-width: $screen-lg-min){
+					margin-left: 0;
 				}
 			}
 		}
@@ -584,7 +597,7 @@ body.bec-judd{
 						right: 0;
 					}
 					@media (min-width: $screen-lg-min){
-						top: em(41);
+						top: em(-66);
 					}
 					@media (min-width: $screen-xl-min){
 						top: em(82);

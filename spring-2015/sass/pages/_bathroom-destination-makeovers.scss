@@ -7,21 +7,11 @@ body.spring-2015{
 					}
 				}
 		}
-		.product{
-			padding-bottom: em(54);
-			position: relative;
-			
-			.button-mood-shop{
-				position: absolute;
-				bottom: 0;
-				left: em(50);
-			}
-		}
 		.intro{
 			margin-top: em(60);
 			margin-bottom: em(40);
 			padding: 0 em(30);
-			@media (min-width: $screen-sm-min){
+			@media (min-width: $screen-lg-min){
 				margin-bottom: em(130);
 				padding: 0;
 			}
@@ -76,14 +66,22 @@ body.spring-2015{
 				position: relative;
 				width: 300px;
 				margin: 0 auto;
-				margin-top: 60px;
-				@media (min-width: $screen-sm-min){
-					
-				}
-				@media (min-width: $screen-md-min){
+				margin-top: em(60);	
+				@media (min-width: $screen-lg-min){
 					position: absolute;
+					margin-top: 0;
+					width: 200px;
+					right: em(0);
+					top: em(20);
+				}
+				@media (min-width: $screen-xl-min){
 					width: 300px;
-					right: 0;
+					right: em(40);
+					top: em(60);
+				}
+				p{
+					color: $grey;
+					font-size: em(21);
 				}
 			}
 		}
@@ -95,7 +93,7 @@ body.spring-2015{
 				position: relative;
 				z-index: 10;
 				width: 320px;
-				height: 351px;
+					height: 351px;
 				margin: 0 auto;
 				margin-top: 40px;
 					
@@ -110,6 +108,12 @@ body.spring-2015{
 					@include transform(translateX(-50%));
 				}
 				@media (min-width: $screen-lg-min){
+					width: 344px;
+					height: 377px;
+					margin-top: 80px;
+					@include transform(translateX(-50%));
+				}
+				@media (min-width: $screen-xl-min){
 					width: 392px;
 					height: 430px;
 				}
@@ -125,6 +129,10 @@ body.spring-2015{
 					height: 351px;
 					}	
 					@media (min-width: $screen-lg-min){
+						width: 344px;
+						height: 377px;
+					}	
+					@media (min-width: $screen-xl-min){
 						width: 392px;
 						height: 430px;
 					}					
@@ -163,7 +171,7 @@ body.spring-2015{
 						@media (min-width: $screen-md-min){
 							padding: 0 em(30,20);
 						}	
-						@media (min-width: $screen-lg-min){
+						@media (min-width: $screen-xl-min){
 							padding: 0 em(73,20);
 						}	
 					}
@@ -197,6 +205,22 @@ body.spring-2015{
 				}
 			}
 			.product-slider-wrap{
+				.slider .slick-arrow{
+					top: 230px;
+					@include transform(none);
+					@media (min-width: $screen-sm-min){
+							top: 182px;
+					}
+					@media (min-width: $screen-md-min){
+							top: 80px;
+					}
+					@media (min-width: $screen-lg-min){
+							top: 105px;
+					}
+					@media (min-width: $screen-xl-min){
+							top: 150px;
+					}
+				}
 				.slider .arrow-next{
 					right: -10px;
 					z-index: 10;
@@ -221,7 +245,14 @@ body.spring-2015{
 			.products{
 				margin-top: em(20);
 				.product{
+					position: relative;
 					padding: 0 em(50);
+					padding-bottom: em(54);
+					.button-mood-shop{
+						position: absolute;
+						bottom: 0;
+						left: em(50);
+					}
 					.image{
 						margin-bottom: em(20);
 					}
@@ -257,12 +288,26 @@ body.spring-2015{
 					}
 				}
 			}
+			&.urban{
+				.hex-block{
+					@media (min-width: $screen-md-min){
+						margin-left: em(-20);
+					}
+					@media (min-width: $screen-lg-min){
+						margin-left: 0;
+					}
+				}
+			}
 			&.hinterland{
 				.hex-block{
 					position: relative;
 					z-index: 12;
 					@media (min-width: $screen-md-min){
 						@include transform(none);
+						margin-right: em(-20);
+					}
+					@media (min-width: $screen-lg-min){
+						margin-right: 0;
 					}
 					svg{
 						path{
@@ -284,6 +329,12 @@ body.spring-2015{
 			}
 			&.provincial{
 				.hex-block{
+					@media (min-width: $screen-md-min){
+						margin-left: em(-20);
+					}
+					@media (min-width: $screen-lg-min){
+						margin-left: 0;
+					}
 					svg{
 						path{
 							fill: $dark-green;

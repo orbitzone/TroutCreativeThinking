@@ -1,11 +1,18 @@
 body.spring-2015{
 	section#bathroom-destination-makeovers{
+		.slider{
+			.slick-arrow{
+					i{
+						font-size: em(50);
+					}
+				}
+		}
 		.intro{
-			margin-top: 115px;
-			margin-bottom: 40px;
+			margin-top: em(60);
+			margin-bottom: em(40);
 			padding: 0 em(30);
 			@media (min-width: $screen-sm-min){
-				margin-bottom: 130px;
+				margin-bottom: em(130);
 				padding: 0;
 			}
 			.title{
@@ -72,8 +79,8 @@ body.spring-2015{
 		}
 		article{
 			border-bottom: 1px dashed $black;
-			padding-bottom: em(40);
 			margin-bottom: em(45);
+			padding: 0 15px em(40);
 			.hex-block{
 				position: relative;
 				z-index: 10;
@@ -168,7 +175,7 @@ body.spring-2015{
 						z-index: 10;
 						@media (min-width: $screen-sm-min){
 							right: -55px;
-						}
+						}						
 					}
 					.arrow-prev{
 						left: -55px;
@@ -205,10 +212,15 @@ body.spring-2015{
 						margin-bottom: em(20);
 					}
 					.plus{
-						position: absolute;
-						right: em(-50);
-						top: 70%;
-						@include transform(translateX(100%));
+						position: relative;
+						margin: em(40) 0;
+						@media (min-width: $screen-sm-min){
+							margin: 0;
+							position: absolute;
+							right: 0;
+							top: em(130);
+							@include transform(translateX(100%));
+						}
 						.circle{
 							border: 2px solid $black;
 							width: 54px;

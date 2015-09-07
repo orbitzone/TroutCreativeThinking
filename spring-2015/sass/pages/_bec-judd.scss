@@ -46,38 +46,84 @@ body.bec-judd{
 		}
 	}
 	.top-five{
-		.number{
-			font-size: em(62);
-			font-weight: 700;
-			color: $gold;
-			&:after{
-				content: '.';
-				text-indent: -9999px;
+		.top-number{
+			position: relative;
+			width: em(134);
+			.number{
+				font-size: em(62);
+				font-weight: 700;
+				color: $gold;			
+			}
+			.line{
 				display: block;
-				width: em(116,62);
-				height: em(2,62);
+				width: em(116);
+				height: em(2);
 				background: $gold;
 				@include transform(rotate(-60deg));
+				@include transform-origin(top right);
 				position: absolute;
-				top: em(70,62);
-				left: em(20,62);
+				top: 0;
+				right: 0;
 			}
 		}
+		.product{
+			.name{
+				color: $gold;
+			}
+		}
+		.text{
+			background: $white;
+			padding: em(20);
+			margin-bottom: em(40);
+			p{
+				color: $black;
+				font-size: em(21);
+				font-weight: 700;
+				margin-bottom: 0;
+			}
+		}
+		button.slick-arrow{
+				@include appearance(none);
+				background: none;
+				border: none;
+				outline: none;
+				position: absolute;
+				z-index: 2;
+				left: inherit;
+				i{
+					font-size: em(50);
+				}
+				&.arrow-prev{
+					left: em(8);
+					@include transform(translateX(-100%));
+				}
+				&.arrow-next{
+					right: em(8);
+					@include transform(translateX(100%));	
+				}
+				&.slick-disabled{
+					
+				}
+			}	
 		.top-1{
 			padding: em(40);
 			.product-wrap{
 				position: relative;
-				.number{
+				margin-top: em(86);
+				.top-number{
 					position: absolute;
-					right: em(34,62);
-					top: em(160,62);
+					right: 0;
+					top: em(78);
 					z-index: 0;
+					.line{
+						
+					}
 				}
 				.image{
 					position: relative;
 					z-index: 1;
 				}
-				.text{
+				.top-text{
 					color: $grey;
 					font-size: em(28);
 					width: em(295,28);
@@ -87,11 +133,8 @@ body.bec-judd{
 				.product{
 					width: em(190);
 					position: absolute;
-					top: em(450);
-					left: em(200);
-					.name{
-						color: $gold;
-					}
+					top: em(435);
+					left: em(200);					
 				}
 			}
 			.slider-wrap{
@@ -108,6 +151,130 @@ body.bec-judd{
 						font-weight: 700;
 						margin-bottom: 0;
 					}
+				}
+			}
+		}
+		.top-2{
+			padding: em(40);
+			.product-wrap{
+				margin-top: em(76);
+				.top-number{
+					position: absolute;
+					top: em(140);
+					left: em(-59);
+				}
+				.text{
+					background: $white;
+					padding: em(20);
+					margin-left: em(100);
+					margin-bottom: em(40);
+					p{
+						font-size: em(21);
+						font-weight: 700;
+						margin-bottom: 0;
+					}
+				}
+				.image{
+					margin-left: em(-94);
+				}
+			}
+		}
+		.top-3{
+			padding: em(40) em(124) 0;
+			position: relative;
+			.image-wrap{
+				position: relative;
+				.top-number{
+					position: absolute;
+					left: em(-50);
+					top: em(100);
+				}
+				.product-wrap{
+					position: absolute;
+					bottom: 0;
+					right: 0;
+					.text{
+						background: $white;
+						padding: em(20);
+						margin-bottom: 0;
+						margin-right: em(48);
+						width: em(576);
+						p{
+							font-size: em(21);
+							font-weight: 700;
+							margin-bottom: 0;
+						}
+					}
+					.image{
+						margin-top: em(-10);
+						margin-left: em(166);
+					}
+				}				
+			}
+			.product{
+				position: absolute;
+				width: em(198);
+				bottom: em(-58);
+				right: 0;
+				@include transform(translateY(100%));
+			}			
+		}
+		.top-4{
+			padding: em(40) em(124) 0;
+			margin-bottom: em(-258);
+			.image{
+				position: absolute;
+				top: em(-258);
+				left: em(30);
+				width: em(140);
+				z-index: 2;
+			}
+			.product-wrap{
+				position: relative;
+				margin-left: em(124);
+				margin-top: em(-60);
+				.text{
+					width: em(576);
+					margin-left: em(-50);
+				}
+				.top-number{
+					margin-left: em(-50);
+					margin-bottom: em(40);
+				}
+				.product-details{
+					width: em(196);
+				}
+			}
+		}
+		.top-5{
+			position: relative;
+			padding: em(40);
+			top: em(-100);
+			.slider-wrap{
+				position: relative;
+				.text{
+					position: absolute;
+					bottom: em(-40);
+					left: em(-96);
+					width: em(430);
+					margin-bottom: 0;
+				}
+			}
+			.product{
+				margin-top: em(206);
+				position: relative;
+				.top-number{
+					position: absolute;
+					top: em(82);
+					right: 0;
+				}
+				.image{
+					position: relative;
+					z-index: 2;
+				}
+				.product-details{
+					width: em(196);
+					margin-left: em(170);
 				}
 			}
 		}

@@ -7,6 +7,16 @@ body.spring-2015{
 					}
 				}
 		}
+		.product{
+			padding-bottom: em(54);
+			position: relative;
+			
+			.button-mood-shop{
+				position: absolute;
+				bottom: 0;
+				left: em(50);
+			}
+		}
 		.intro{
 			margin-top: em(60);
 			margin-bottom: em(40);

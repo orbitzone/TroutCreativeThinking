@@ -318,7 +318,9 @@ jQuery(function($){
 				cache: false,
 				url:'pages/bathroom-destination-makeovers.html',
 				success: function(data){
-					$('#main-content').html(data);
+					$('#main-content').html(data).imagesLoaded().then(function(){
+						$('#bathroom-destination-makeovers .product').matchHeight();
+					});
 					$('#bathroom-destination-makeovers .slider').slick({
 						slidesToShow: 1,
   					slidesToScroll: 1,

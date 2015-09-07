@@ -388,7 +388,15 @@ jQuery(function($){
   					infinite: true,
   					dots: true,
   					prevArrow: "<button type=\"button\" class=\"arrow-prev\"><i class=\"iconr-arrow-left\"></i></button>",
-  					nextArrow: "<button type=\"button\" class=\"arrow-next\"><i class=\"iconr-arrow-right\"></i></button>",					 	
+  					nextArrow: "<button type=\"button\" class=\"arrow-next\"><i class=\"iconr-arrow-right\"></i></button>",
+  					responsive: [
+					 		{
+					      breakpoint: 768,
+					      settings: {
+					      	dots: false
+					      }
+					    }
+					  ]
 					});									
 				}
 			});

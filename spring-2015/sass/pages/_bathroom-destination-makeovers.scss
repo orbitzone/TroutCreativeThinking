@@ -196,6 +196,10 @@ body.spring-2015{
 					z-index: 10;
 				}
 				.slider-product{
+					.name{
+						font-weight: 700;
+						margin-bottom: em(8);
+					}
 					.image{
 						text-align: center;
 						img{

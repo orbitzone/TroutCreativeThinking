@@ -394,8 +394,10 @@ body.bec-judd{
 		.top-4{
 			padding: em(40) em(40) 0;
 			@media (min-width: $screen-md-min){
-				margin-bottom: em(-300);
 				padding: em(40) em(124) 0;
+			}
+			@media (min-width: $screen-lg-min){
+				margin-bottom: em(-300);
 			}
 			.image{
 				position: absolute;

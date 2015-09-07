@@ -68,11 +68,11 @@ body.bec-judd{
 				text-transform: uppercase;
 				p{
 					font-size: em(21);
-					line-height: em(25);
+					line-height: em(25,21);
 					margin: 0;
 					@media (min-width: $screen-sm-min){
 						font-size: em(52);
-						line-height: em(56);						
+						line-height: em(56,52);						
 					}
 				}
 				

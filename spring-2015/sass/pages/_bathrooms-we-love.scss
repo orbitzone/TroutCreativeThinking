@@ -183,7 +183,67 @@ body.spring-2015{
 
 		}
 		.hear-from-the-tradies{
-
+			.video{
+				position: relative;
+				max-width: 878px;
+				margin: 0 auto;
+				background-size: cover;
+				background-position: top right;
+				.video-content{
+					position: relative;
+				}
+				.video-wrap{
+					position: relative;
+					height: em(400);
+					@media (min-width: $screen-sm-min){
+						height: em(480);
+					}
+					@media (min-width: $screen-lg-min){
+						height: em(492);
+					}
+					padding-right: em(54);
+					.video-iframe{
+						position: relative;
+						height: 100%;
+						iframe{
+							width: 100%;
+							height: 100%;
+							@extend %center-align;
+						}
+					}
+					.close-video{
+						position: absolute;
+						top: 0;
+						right: 0;
+						text-align: center;
+						color: $white;
+						background: $pink;
+						font-weight: 700;
+						font-size: em(20);
+						padding: em(20,20);
+						@include appearance(none);
+						border: none;
+					}
+				}
+				.play{
+					position: absolute;
+					bottom: em(30);
+					right: em(45);
+					cursor: pointer;
+					@media (min-width: $screen-sm-min){
+						position: absolute;
+					  top: 50%;
+					  left: 50%;
+					  bottom: inherit;
+						right: inherit;
+					  @include transform(translateY(-50%) translateX(-50%));
+					}
+					i{
+						font-size: em(50);
+						color: $white;
+					}
+				}							
+			}	
 		}
 	}
 }

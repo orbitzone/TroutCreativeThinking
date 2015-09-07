@@ -353,7 +353,22 @@ jQuery(function($){
 				cache: false,
 				url:'pages/bathrooms-we-love.html',
 				success: function(data){
-					$('#main-content').html(data);									
+					$('#main-content').html(data);
+					$('#bathrooms-we-love .video-slider').slick({
+						slidesToShow: 1,
+  					slidesToScroll: 1,
+  					infinite: false,
+  					arrows: false,
+  					swipe: false
+					})
+					$('#bathrooms-we-love .video .play').on('click', function(){
+						$('#bathrooms-we-love .video-slider').slick('slickNext');
+						player.init('bathrooms-we-love-video','9SMTB_xeuM0');
+					});
+					$('#bathrooms-we-love .close-video').on('click', function(){
+						player.stop('bathrooms-we-love-video');
+						$('#bathrooms-we-love .video-slider').slick('slickPrev');
+					});														
 				}
 			});
 		}

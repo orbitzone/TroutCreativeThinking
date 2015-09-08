@@ -990,10 +990,13 @@ jQuery(function($){
 					})
 					$('#mr-jason-grant .video .play').on('click', function(){
 						$('#mr-jason-grant .video-slider').slick('slickNext');
-						player.init('methven-video','9SMTB_xeuM0');
+						var videoContainer = $(this).data('video-container');
+						var video = $(this).data('video');
+						player.init(videoContainer,video);
 					});
 					$('#mr-jason-grant .close-video').on('click', function(){
-						player.stop('methven-video');
+						var videoContainer = $(this).data('video-container');
+						player.stop(videoContainer);
 						$('#mr-jason-grant .video-slider').slick('slickPrev');
 					});															
 					$('.products-slide').slick({

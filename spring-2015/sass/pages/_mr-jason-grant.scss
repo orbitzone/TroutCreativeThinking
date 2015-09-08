@@ -67,7 +67,7 @@ body.mr-jason-grant{
 					bottom: inherit;
 				}
 			}
-			.text{
+			.title{
 				color: $mr-blue;
 				position: absolute;
 				top: em(40);
@@ -109,8 +109,11 @@ body.mr-jason-grant{
 				text-transform: uppercase;
 				text-align: center;
 				width: 100%;
-				font-size: em(16);
 				@extend %center-align;
+				p{
+				font-size: em(26);
+				margin-bottom: 0;	
+				}
 			}
 		}
 
@@ -205,7 +208,7 @@ body.mr-jason-grant{
 					text-transform: uppercase;
 					text-align: center;
 					width: 100%;
-					font-size: em(16);
+					font-size: em(21);
 					@extend %center-align;
 				}
 			}
@@ -250,8 +253,31 @@ body.mr-jason-grant{
 						font-size: em(17);
 					}
 				}
+				.bathrooms-for-inspiration{
+					.hex-block{
+						right: em(120);
+						left: auto;
+						top: 0;
+						z-index: 4;
+						@include transform(translateX(50%) translateY(-50%));
+					}
+				}
 			}
 			.bottom-section{
+				.video{
+					.hex-block{
+						z-index: 4;
+						top: auto;
+						left: em(20);
+						bottom: em(25);
+						@include transform(translateY(50%));
+						svg{
+							path{
+								fill: $mr-dark-green;
+							}
+						}
+					}
+				}
 				.tip{
 					position: relative;
 					z-index: 2;
@@ -262,6 +288,174 @@ body.mr-jason-grant{
 						svg{
 							path{
 								fill: $mr-light-green;
+							}
+						}
+					}
+				}
+			}			
+		}
+		#neo-classic{
+			background: $mr-neo-classic-bg;
+			.main-content{
+				padding: em(40);
+			}
+			.top-section{
+				margin-bottom: em(40);
+				.intro{
+					color: $white;
+					padding-left: em(50);
+					width: em(382);
+					margin-top: em(50);
+					p{
+						font-size: em(17);
+					}
+				}
+				.title{
+					color: $black;
+					margin: em(40) 0;
+					h2{
+						font-size: em(60);
+						margin: 0;
+						text-decoration: underline;
+					}
+				}
+				.intro-description{
+					color: $black;
+					width: em(382);
+					p{
+						font-size: em(17);
+					}
+				}
+				.bathrooms-for-inspiration{
+					.hex-block{
+						right: em(20);
+						left: auto;
+						top: em(20);
+						z-index: 4;
+						@include transform(translateX(50%));
+						svg{
+							path{
+								fill: $mr-blue;
+							}
+						}
+					}
+				}
+				.slider{
+					.slick-arrow{
+						i{
+							color: $mr-light-blue;
+						}
+					}
+				}
+			}
+			.bottom-section{
+				.video{
+					.hex-block{
+						z-index: 4;
+						top: auto;
+						left: em(20);
+						bottom: em(25);
+						@include transform(translateY(50%));
+						svg{
+							path{
+								fill: $mr-blue;
+							}
+						}
+					}
+				}
+				.tip{
+					position: relative;
+					z-index: 2;
+					color: $white;
+					background: $mr-light-blue;
+					margin-right: em(75);
+					.hex-block{
+						svg{
+							path{
+								fill: $mr-blue;
+							}
+						}
+					}
+				}
+			}			
+		}
+		#coastal-luxury{
+			background: $mr-coastal-luxury-bg;
+			.main-content{
+				padding: em(40);
+			}
+			.top-section{
+				margin-bottom: em(40);
+				.intro{
+					color: $white;
+					padding-left: em(50);
+					width: em(382);
+					margin-top: em(50);
+					p{
+						font-size: em(17);
+					}
+				}
+				.title{
+					color: $white;
+					margin: em(40) 0;
+					h2{
+						font-size: em(60);
+						margin: 0;
+						text-decoration: underline;
+					}
+				}
+				.intro-description{
+					color: $mr-blue;
+					padding-left: em(50);
+					width: em(382);
+					p{
+						font-size: em(17);
+					}
+				}
+				.bathrooms-for-inspiration{
+					.hex-block{
+						right: em(44);
+						left: auto;
+						top: auto;
+						bottom: em(-20);
+						z-index: 4;
+						@include transform(translateX(50%));
+						svg{
+							path{
+								fill: $mr-dark-purple;
+							}
+						}
+					}
+				}
+			}
+			.bottom-section{
+				.video{
+					.hex-block{
+						z-index: 4;
+						top: auto;
+						left: em(20);
+						bottom: em(25);
+						@include transform(translateY(50%));
+						svg{
+							path{
+								fill: $mr-dark-purple;
+							}
+						}
+					}
+				}
+				.tip{
+					position: relative;
+					z-index: 2;
+					color: $white;
+					background: $mr-dark-purple;
+					margin-left: em(45);
+					.hex-block{
+						left: auto;
+						right: 0;
+						@include transform(translateX(50%) translateY(-50%));
+						svg{
+							path{
+								fill: $mr-light-purple;
 							}
 						}
 					}

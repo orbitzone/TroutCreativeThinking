@@ -93,7 +93,7 @@ body.spring-2015{
 				position: relative;
 				z-index: 10;
 				width: 320px;
-					height: 351px;
+				height: 351px;
 				margin: 0 auto;
 				margin-top: 40px;
 					
@@ -104,7 +104,7 @@ body.spring-2015{
 				@media (min-width: $screen-md-min){
 					width: 320px;
 					height: 351px;
-					margin-top: 80px;
+					margin-top: em(46);
 					@include transform(translateX(-50%));
 				}
 				@media (min-width: $screen-lg-min){
@@ -178,10 +178,13 @@ body.spring-2015{
 				}				
 			}
 			.dot-pattern{
-				padding: em(10) em(40);
-				margin-left: -30px;
-				margin-right: -30px;
+				padding: em(10) em(20);
+				max-width: 945px;
+				width: 100%;
 				@media (min-width: $screen-sm-min){
+					padding: em(10) em(40);
+					margin-left: -30px;
+					margin-right: -30px;
 					margin-left: 0;
 					margin-right: 0;
 					padding: em(45);
@@ -205,6 +208,26 @@ body.spring-2015{
 				}
 			}
 			.product-slider-wrap{
+				@media (min-width: $screen-md-min){
+					width: em(250);
+					margin-top: em(-31);
+	    		margin-left: em(-60);
+    		}
+				@media (min-width: $screen-lg-min){
+					width: auto;
+					margin-top: 0;
+	    		margin-left: em(-97);
+    		}
+    		@media (min-width: $screen-xl-min){
+					width: em(341);
+					margin-top: em(53);
+	    		margin-left: em(-97);
+    		}
+				.slider{
+					@media (min-width: $screen-xl-min){
+						width: 341px;
+					}
+				}
 				.slider .slick-arrow{
 					top: 230px;
 					@include transform(none);
@@ -212,24 +235,40 @@ body.spring-2015{
 							top: 182px;
 					}
 					@media (min-width: $screen-md-min){
-							top: 80px;
+							top: em(329);
 					}
 					@media (min-width: $screen-lg-min){
-							top: 105px;
+							top: em(344);
 					}
 					@media (min-width: $screen-xl-min){
-							top: 150px;
+							top: em(260);
 					}
 				}
 				.slider .arrow-next{
-					right: -10px;
+					right: 33px;
 					z-index: 10;
+					@media (min-width: $screen-lg-min){
+						right: 20px;
+					}
+					@media (min-width: $screen-xl-min){
+						right: 33px;
+					}
 				}
 				.slider .arrow-prev{
-					left: -10px;
+					left: 33px;
 					z-index: 10;
+					@media (min-width: $screen-lg-min){
+						left: 20px;
+					}
+					@media (min-width: $screen-xl-min){
+						left: 33px;
+					}
 				}
 				.slider-product{
+					.text{
+						text-align: center;
+						padding: 0 em(60);
+					}
 					.name{
 						font-weight: 700;
 						margin-bottom: em(8);
@@ -247,11 +286,16 @@ body.spring-2015{
 				.product{
 					position: relative;
 					padding: 0 em(50);
+					padding-bottom: em(20);
+					@media (min-width: $screen-sm-min){
 					padding-bottom: em(54);
+					}
 					.button-mood-shop{
-						position: absolute;
-						bottom: 0;
-						left: em(50);
+						@media (min-width: $screen-sm-min){
+							position: absolute;
+							bottom: 0;
+							left: em(50);
+						}
 					}
 					.image{
 						margin-bottom: em(20);
@@ -291,12 +335,20 @@ body.spring-2015{
 			&.urban{
 				.hex-block{
 					@media (min-width: $screen-md-min){
-						margin-left: em(-20);
+						margin-left: em(-40);
 					}
 					@media (min-width: $screen-lg-min){
-						margin-left: 0;
+						margin-top: em(80);
+						margin-left: em(-51);
+					}
+					@media (min-width: $screen-xl-min){
+						margin-top: em(117);
+						margin-left: em(-33);
 					}
 				}
+				.product-slider-wrap{
+
+				}				
 			}
 			&.hinterland{
 				.hex-block{
@@ -304,9 +356,16 @@ body.spring-2015{
 					z-index: 12;
 					@media (min-width: $screen-md-min){
 						@include transform(none);
-						margin-right: em(-20);
+						margin-right: em(0);
 					}
 					@media (min-width: $screen-lg-min){
+						margin-top: em(78);
+						margin-left: em(83);
+						margin-right: 0;
+					}
+					@media (min-width: $screen-xl-min){
+						margin-top: em(114);
+						margin-left: em(83);
 						margin-right: 0;
 					}
 					svg{
@@ -314,6 +373,11 @@ body.spring-2015{
 							fill: $gold;
 						}
 					}
+				}
+				.dot-pattern{
+					@media (min-width: $screen-sm-min){
+						float: right;								
+					}		
 				}
 				.products{
 					.product{
@@ -326,14 +390,29 @@ body.spring-2015{
 						}
 					}
 				}
+				.product-slider-wrap{
+					@media (min-width: $screen-lg-min){
+						margin-left: 0;
+						margin-right: -97px;
+					}
+					@media (min-width: $screen-xl-min){
+						margin-left: 0;
+						margin-right: 0;
+					}
+				}
 			}
 			&.provincial{
 				.hex-block{
 					@media (min-width: $screen-md-min){
-						margin-left: em(-20);
+						margin-left: em(-40);
 					}
 					@media (min-width: $screen-lg-min){
-						margin-left: 0;
+						margin-left: em(-85);
+						margin-top: em(78);
+					}
+					@media (min-width: $screen-xl-min){
+						margin-left: em(-85);
+						margin-top: em(114);
 					}
 					svg{
 						path{
@@ -351,6 +430,16 @@ body.spring-2015{
 							background: $dark-green;
 						}
 					}
+				}
+				.slider .arrow-next{
+					@media (min-width: $screen-lg-min){
+					right: 0;
+					}
+				}
+				.slider .arrow-prev{
+					@media (min-width: $screen-lg-min){
+						left: 0;
+					}					
 				}
 			}
 		}		

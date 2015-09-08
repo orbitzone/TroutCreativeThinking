@@ -216,6 +216,13 @@ body.spring-2015{
 					@extend %center-align;
 				}
 			}
+			ul{
+				margin: 0;
+				list-style: none;
+				li{
+					margin-bottom: em(5);
+				}
+			}
 		}
 		.the-dream-list{
 			position: relative;

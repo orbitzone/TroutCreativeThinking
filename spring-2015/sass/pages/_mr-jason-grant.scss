@@ -84,6 +84,13 @@ body.mr-jason-grant{
 					@extend %center-align;
 				}
 			}
+			ul{
+				margin: 0;
+				list-style: none;
+				li{
+					margin-bottom: em(5);
+				}
+			}
 		}
 		#day-spa{
 			background: $mr-day-spa-bg;

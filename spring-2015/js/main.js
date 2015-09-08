@@ -26,6 +26,7 @@ $.fn.imagesLoaded = function () {
         dfds.push(dfd);
         var img = new Image();
         img.onload = function(){dfd.resolve();}
+        img.onerror = function(){dfd.resolve();}
         img.src = this.src;
 
     });

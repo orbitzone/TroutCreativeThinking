@@ -6,12 +6,16 @@ body.spring-2015{
 		}
 		.product{
 			position: relative;
-			padding-bottom: em(44);
+			padding-bottom: em(54);
+			margin-bottom: em(20);
 			.button-mood-shop{
 				position: absolute;
-				bottom: em(20);
+				bottom: 0;
 				left: 0;
 			}
+			.image{
+				margin-bottom: em(20);
+			}			
 		}
 		.intro{
 			position: relative;
@@ -44,7 +48,7 @@ body.spring-2015{
 				.image{
 					padding: em(10);
 					background: $white;
-					@include box-shadow(2px 2px 2px rgba(0,0,0,0.6));
+					@include box-shadow(2px 5px 6px rgba(0,0,0,0.2));
 					@include transform(rotate(5deg));
 					@include transform-origin(bottom right);
 					width: 320px;
@@ -71,6 +75,7 @@ body.spring-2015{
 					margin-left: em(20);
 					margin-right: em(20);
 					margin-bottom: em(40);
+					max-width: em(370);
 					@media (min-width: $screen-sm-min){
 						margin: 0;
 						margin-bottom: em(40);
@@ -110,8 +115,8 @@ body.spring-2015{
 			.description{
 				padding: 0 em(30);
 				margin-bottom: em(80);
+				margin-top: em(48);
 				@media (min-width: $screen-sm-min){
-					font-size: em(14);
 					padding: 0 0 0 em(30);
 				}
 				@media (min-width: $screen-md-min){
@@ -120,6 +125,10 @@ body.spring-2015{
 				}
 				@media (min-width: $screen-lg-min){
 					padding: 0 em(30) 0 em(120);
+				}
+				p{
+					font-size: em(21);
+					line-height: em(24,21);
 				}
 			}
 		}/* end .top-details */
@@ -156,7 +165,6 @@ body.spring-2015{
 			background: $black;
 			color: $white;
 			padding: em(70) em(50) em(50);
-			max-width: 434px;
 			h3{
 				font-size: em(27);
 				margin-top: 0;
@@ -168,8 +176,11 @@ body.spring-2015{
 				color: $white;
 				position: absolute;
 				top: 0;
-				left: 0;
+				left: 50%;
 				@include transform(translateX(-50%) translateY(-50%));
+				@media (min-width: $screen-sm-min){
+					left: 0;
+				}
 				svg{
 					width: 149px;
 					path{
@@ -189,20 +200,80 @@ body.spring-2015{
 		.the-dream-list{
 			position: relative;
 			z-index: 1;
-			padding: 0 em(80) 0 em(140);
-			h2{
-				margin: 0;
-				text-align: center;
+			padding: 0;
+			@media (min-width: $screen-sm-min){
+				padding: 0 em(20);
+			}
+			@media (min-width: $screen-md-min){
+				padding: 0 em(40);
+			}
+			@media (min-width: $screen-lg-min){
+				padding: 0 em(80) 0 em(140);
+			}
+			.title{
+				margin-bottom: em(40);
+				@media (min-width: $screen-lg-min){
+					margin-bottom: em(55);
+				}
+				@media (min-width: $screen-xl-min){
+					margin-bottom: em(40);
+				}
+				h2{
+					margin: 0;
+					text-align: center;
+					font-size: em(60);					
+				}
 			}
 			.tip{
+				max-width: em(500);
 				margin-top: em(30);
+				margin-bottom: em(40);
+				@media (min-width: $screen-lg-min){
+					margin-bottom: 0;
+					padding: em(60) em(25) em(25);
+				}
+				@media (min-width: $screen-xl-min){
+					padding: em(70) em(50) em(50);
+				}
 			}
+			.product{
+				margin-bottom: em(40);
+			}			
 		}
 		.the-feature-bath{
 				position: relative;
-				padding: 0 em(80) em(120) em(140);
+				@media (min-width: $screen-sm-min){
+					padding: 0 em(20);
+				}
+				@media (min-width: $screen-md-min){
+					padding: 0 em(40);
+				}
+				@media (min-width: $screen-lg-min){
+					padding: 0 em(80) em(80) em(140);
+				}
+				@media (min-width: $screen-xl-min){
+					padding: 0 em(80) em(120) em(140);
+				}
 				.title{
-					margin-left: em(175);
+					@media (min-width: $screen-sm-min){
+						position: absolute;
+						left: em(51);
+					}
+					@media (min-width: $screen-md-min){
+						position: relative;
+						left: auto;
+						margin-left: em(558);
+						margin-bottom: em(-45);
+					}
+					@media (min-width: $screen-lg-min){
+						margin-top: em(52);
+						margin-left: em(56);
+						margin-bottom: 0;
+					}
+					@media (min-width: $screen-xl-min){
+						margin-top: 0;
+						margin-left: em(175);
+					}
 					h2{
 						margin: 0;
 					}
@@ -210,79 +281,95 @@ body.spring-2015{
 				.feature-image{
 					position: absolute;
 					z-index: 0;
-					left: em(436);
-					bottom: 0;
+					left:0;
+					bottom: em(188);
+					@media (min-width: $screen-sm-min){
+						left: em(120);
+						bottom: 0;
+						width: em(351);
+					}
+					@media (min-width: $screen-md-min){
+						left: em(193);
+						width: em(440);
+					}
+					@media (min-width: $screen-lg-min){
+						left: em(314);
+						width: em(563);
+					}
+					@media (min-width: $screen-xl-min){
+						left: em(436);
+						width: auto;
+					}
 				}
 		}
 		.hear-from-the-tradies{
-			padding: 0 em(40) 0 em(92);
 			margin-bottom: em(97);
+			@media (min-width: $screen-md-min){
+				padding: 0 em(20);
+			}
+			@media (min-width: $screen-lg-min){
+				padding: 0 em(40) 0 em(92);
+			}
 			.hear-from-content{
-				margin-left: em(73);
+				margin-left: 0;
+				margin-top: em(40);
 				h3{
 					text-decoration: underline;		
 				}
-			}
-			.video{
-				position: relative;
-				max-width: 878px;
-				margin: 0 auto;
-				padding: em(50);
-				.video-content{
-					position: relative;
-				}
-				.video-wrap{
-					position: relative;
-					height: em(400);
+				.dot-pattern{
+					padding: em(20);
 					@media (min-width: $screen-sm-min){
-						height: em(480);
+						padding: em(60);
 					}
-					@media (min-width: $screen-lg-min){
-						height: em(436);
+				}
+				.white-box{
+					padding: em(20);
+					background: $white;
+				}				
+			}
+			.left-col{
+					@media (min-width: $screen-md-min){
+						padding-right: 0;
 					}
-					padding-right: em(54);
-					.video-iframe{
-						position: relative;
-						height: 100%;
-						iframe{
-							width: 100%;
-							height: 100%;
-							@extend %center-align;
+				}
+				.middle-col{
+					@media (min-width: $screen-md-min){
+						padding:0;
+					}
+				}
+				.right-col{
+					@media (min-width: $screen-sm-min){
+						padding-left: em(120);
+					}
+					@media (min-width: $screen-md-min){
+						padding-left: 0;
+					}
+					.tip{
+						max-width: em(550);
+						padding: em(70) em(50) em(50);
+						@media (min-width: $screen-lg-min){
+							padding: em(60) em(25) em(25);
+						}
+						@media (min-width: $screen-xl-min){
+							padding: em(70) em(50) em(50);
 						}
 					}
-					.close-video{
-						position: absolute;
-						top: 0;
-						right: 0;
-						text-align: center;
-						color: $white;
-						background: $pink;
-						font-weight: 700;
-						font-size: em(20);
-						padding: em(20,20);
-						@include appearance(none);
-						border: none;
+				}
+				.plumber-tip{
+					margin-top: em(20);
+					@media (min-width: $screen-md-min){
+						margin-top: em(-80);
+					}
+					@media (min-width: $screen-lg-min){
+						padding: em(25);
+					}
+					@media (min-width: $screen-xl-min){
+						padding: em(70) em(50) em(50);
 					}
 				}
-				.play{
-					position: absolute;
-					bottom: em(30);
-					right: em(45);
-					cursor: pointer;
-					@media (min-width: $screen-sm-min){
-						position: absolute;
-					  top: 50%;
-					  left: 50%;
-					  bottom: inherit;
-						right: inherit;
-					  @include transform(translateY(-50%) translateX(-50%));
-					}
-					i{
-						font-size: em(50);
-						color: $white;
-					}
-				}							
-			}	
+				.image{
+					margin-top: em(40);
+				}	
 		}
 	}
 }

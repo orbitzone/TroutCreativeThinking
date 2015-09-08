@@ -228,8 +228,14 @@ body.spring-2015{
 				max-width: em(500);
 				margin-top: em(30);
 				margin-bottom: em(40);
+				@media (min-width: $screen-md-min){
+					margin-left: em(66);
+					margin-top: em(-47);
+				}
 				@media (min-width: $screen-lg-min){
 					margin-bottom: 0;
+					margin-left: 0;
+					margin-top: em(30);
 					padding: em(60) em(25) em(25);
 				}
 				@media (min-width: $screen-xl-min){
@@ -312,7 +318,9 @@ body.spring-2015{
 			}
 			.hear-from-content{
 				margin-left: 0;
-				margin-top: em(40);
+				@media (min-width: $screen-lg-min){
+					margin-top: em(40);
+				}
 				h3{
 					text-decoration: underline;
 					font-size: em(27);	
@@ -334,27 +342,45 @@ body.spring-2015{
 				}				
 			}
 			.left-col{
-					@media (min-width: $screen-md-min){
+					@media (min-width: $screen-sm-min){
 						padding-right: 0;
 					}
 				}
 				.middle-col{
-					@media (min-width: $screen-md-min){
+					@media (min-width: $screen-sm-min){
 						padding:0;
 					}
 				}
 				.right-col{
 					@media (min-width: $screen-sm-min){
-						padding-left: em(120);
-					}
-					@media (min-width: $screen-md-min){
 						padding-left: 0;
 					}
 					.tip{
+						position: relative;
+						z-index: 2;
 						max-width: em(550);
-						padding: em(70) em(50) em(50);
+						padding: em(100) em(50) em(50);
+						margin-top: em(100);
+						margin-bottom: 0;
+						@media (min-width: $screen-sm-min){
+							padding: em(70) em(50) em(50);
+							margin-top: 0;
+							margin-left: em(135);
+							max-width: em(351);
+							margin-bottom: 0;
+						}
+						@media (min-width: $screen-md-min){
+							padding: em(70) em(40) em(25);
+							margin-left: em(189);
+							margin-top: 0;
+							max-width: em(440);
+						}
 						@media (min-width: $screen-lg-min){
+							max-width: em(550);
 							padding: em(60) em(25) em(25);
+							margin-left: 0;
+							margin-bottom: 0;
+							margin-top: 0;
 						}
 						@media (min-width: $screen-xl-min){
 							padding: em(70) em(50) em(50);
@@ -362,7 +388,10 @@ body.spring-2015{
 					}
 				}
 				.plumber-tip{
-					margin-top: em(20);
+					margin-top: 0;
+					@media (min-width: $screen-sm-min){
+						margin-top: 0;
+					}
 					@media (min-width: $screen-md-min){
 						margin-top: em(-80);
 					}
@@ -374,7 +403,9 @@ body.spring-2015{
 					}
 				}
 				.image{
-					margin-top: em(40);
+					@media (min-width: $screen-lg-min){
+						margin-top: em(40);
+					}
 				}	
 		}
 	}

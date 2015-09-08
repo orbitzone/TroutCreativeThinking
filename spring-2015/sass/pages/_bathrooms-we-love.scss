@@ -314,7 +314,8 @@ body.spring-2015{
 				margin-left: 0;
 				margin-top: em(40);
 				h3{
-					text-decoration: underline;		
+					text-decoration: underline;
+					font-size: em(27);	
 				}
 				.dot-pattern{
 					padding: em(20);
@@ -325,6 +326,11 @@ body.spring-2015{
 				.white-box{
 					padding: em(20);
 					background: $white;
+				}
+				.description{
+					p{
+						line-height: em(19);
+					}
 				}				
 			}
 			.left-col{

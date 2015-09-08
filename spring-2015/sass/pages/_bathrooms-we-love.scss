@@ -220,7 +220,7 @@ body.spring-2015{
 				margin: 0;
 				list-style: none;
 				li{
-					margin-bottom: em(5);
+					margin-bottom: em(15);
 				}
 			}
 		}
@@ -419,7 +419,12 @@ body.spring-2015{
 					}
 				}
 				.plumber-tip{
+					background: $gold;
+					color: $black;
 					margin-top: 0;
+					h3{
+						color: $black;
+					}
 					@media (min-width: $screen-sm-min){
 						margin-top: 0;
 					}

@@ -1,12 +1,126 @@
 body.mr-jason-grant{
 	section#mr-jason-grant{
+		.video{
+			position: relative;
+			padding: em(40);
+			background: $white;
+			.video-content{
+				position: relative;
+			}
+			.video-wrap{
+				position: relative;
+				height: em(400);
+				@media (min-width: $screen-sm-min){
+					height: em(480);
+				}
+				@media (min-width: $screen-lg-min){
+					height: em(400);
+				}
+				padding-right: em(54);
+				.video-iframe{
+					position: relative;
+					height: 100%;
+					iframe{
+						width: 100%;
+						height: 100%;
+						@extend %center-align;
+					}
+				}
+				.close-video{
+					position: absolute;
+					top: 0;
+					right: 0;
+					text-align: center;
+					color: $white;
+					background: $pink;
+					font-weight: 700;
+					font-size: em(20);
+					padding: em(20,20);
+					@include appearance(none);
+					border: none;
+				}
+			}
+			.play{
+				position: absolute;
+				bottom: em(30);
+				right: em(45);
+				cursor: pointer;
+				@media (min-width: $screen-sm-min){
+					position: absolute;
+				  top: 50%;
+				  left: 50%;
+				  bottom: inherit;
+					right: inherit;
+				  @include transform(translateY(-50%) translateX(-50%));
+				}
+				i{
+					font-size: em(50);
+					color: $black;
+				}
+			}
+			.share{
+				position: absolute;
+				right: 30px;
+				top: 40px;
+				z-index: 2;
+				@media (min-width: $screen-sm-min){
+					bottom: inherit;
+				}
+			}
+			.text{
+				color: $mr-blue;
+				position: absolute;
+				top: em(40);
+				right: em(40);
+				h2{
+					font-size: em(40);
+					text-decoration: underline;
+				}
+				.product{
+					color: $white;
+				}
+				.description{
+					max-width: 100%;					
+					@media (min-width: $screen-sm-min){
+						max-width: em(250);
+					}
+					p{
+						font-size: em(24);
+					}
+				}	
+			}			
+		} /*end video*/
+		.hex-block{
+			width: 228px;
+			height: 250px;
+			color: $white;
+			position: absolute;
+			top: 0;
+			left: 0;
+			svg{
+				width: 228px;
+				height: 250px;
+				path{
+					fill: $mr-light-green;
+				}
+			}
+			.text{
+				position: absolute;
+				text-transform: uppercase;
+				text-align: center;
+				width: 100%;
+				font-size: em(16);
+				@extend %center-align;
+			}
+		}
+
 		#banner{
 			position: relative;
 			overflow: hidden;
 			.intro{
 				position: absolute;
 				width: em(440);
-				right: em(566);
+				right: 37.2%;
 				height: 100%;
 				bottom: 0;
 				overflow: hidden;
@@ -44,9 +158,20 @@ body.mr-jason-grant{
 			.slick-arrow{
 				i{
 					color: $white;
-					font-size: em(60);					
+					font-size: em(55);					
+				}
+				&.arrow-next{
+					right: em(-50);
+				}
+				&.arrow-prev{
+					left: em(-50);
 				}
 			}
+		}
+		.bathroom{
+			float: none;
+			width: auto;
+			margin: 0 em(44);			
 		}
 		.tip{
 			position: relative;
@@ -88,7 +213,7 @@ body.mr-jason-grant{
 				margin: 0;
 				list-style: none;
 				li{
-					margin-bottom: em(5);
+					margin-bottom: em(15);
 				}
 			}
 		}
@@ -97,31 +222,51 @@ body.mr-jason-grant{
 			.main-content{
 				padding: em(40);
 			}
-			.intro{
-				color: $white;
-			}
-			.title{
-				color: $white;
-				h2{
-					font-size: em(60);
-					margin: 0;
-					text-decoration: underline;
+			.top-section{
+				margin-bottom: em(40);
+				.intro{
+					color: $white;
+					padding-left: em(50);
+					width: em(382);
+					margin-top: em(50);
+					p{
+						font-size: em(17);
+					}
 				}
-			}
-			.intro-description{
-				color: $mr-blue;
-			}
-			.tip{
-				color: $white;
-				background: $mr-dark-green;
-				.hex-block{
-					svg{
-						path{
-							fill: $mr-light-green;
-						}
+				.title{
+					color: $white;
+					margin: em(40) 0;
+					h2{
+						font-size: em(60);
+						margin: 0;
+						text-decoration: underline;
+					}
+				}
+				.intro-description{
+					color: $mr-blue;
+					padding-left: em(50);
+					width: em(382);
+					p{
+						font-size: em(17);
 					}
 				}
 			}
+			.bottom-section{
+				.tip{
+					position: relative;
+					z-index: 2;
+					color: $white;
+					background: $mr-dark-green;
+					margin-right: em(75);
+					.hex-block{
+						svg{
+							path{
+								fill: $mr-light-green;
+							}
+						}
+					}
+				}
+			}			
 		}
 	}
 }

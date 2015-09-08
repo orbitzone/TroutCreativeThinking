@@ -263,7 +263,7 @@ jQuery(function($){
 	};
 	hotsposts = {
 		init: function(){
-			$('#bathrooms-for-inspiration .hotspot').on('click',function(){
+			$('#bathrooms-for-inspiration .hotspot, .bathrooms-for-inspiration .hotspot').on('click',function(){
 				hotsposts.showData(this);
 			});
 		},
@@ -979,7 +979,23 @@ jQuery(function($){
 					      }
 					    }
 					  ]
-					});										
+					});
+					hotsposts.init();
+					$('#mr-jason-grant .video-slider').slick({
+						slidesToShow: 1,
+  					slidesToScroll: 1,
+  					infinite: false,
+  					arrows: false,
+  					swipe: false
+					})
+					$('#mr-jason-grant .video .play').on('click', function(){
+						$('#mr-jason-grant .video-slider').slick('slickNext');
+						player.init('methven-video','9SMTB_xeuM0');
+					});
+					$('#mr-jason-grant .close-video').on('click', function(){
+						player.stop('methven-video');
+						$('#mr-jason-grant .video-slider').slick('slickPrev');
+					});															
 					$('.products-slide').slick({
 						slidesToShow: 4,
 						slidesToScroll: 4,

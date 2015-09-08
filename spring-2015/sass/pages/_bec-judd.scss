@@ -398,6 +398,9 @@ body.bec-judd{
 						top: em(100);
 					}
 				}
+				.slider{
+					max-width: em(945);
+				}
 				.product-wrap{
 					position: relative;
 					@media (min-width: $screen-sm-min){
@@ -416,8 +419,8 @@ body.bec-judd{
 						right: em(-100);
 					}
 					@media (min-width: $screen-xl-min){
-						top: em(86);
-						right: 0;
+						top: em(33);
+						right: em(-24);
 					}
 					.text{
 						background: $white;
@@ -430,6 +433,12 @@ body.bec-judd{
 							width: em(450);
 							margin-right: em(48);
 							margin-top: 0;
+						}
+						@media (min-width: $screen-xl-min){
+							width: em(300);
+							margin-right: em(0);
+							margin-top: 0;
+							margin-left: em(215);
 						}
 						p{
 							margin-bottom: 0;
@@ -491,10 +500,12 @@ body.bec-judd{
 					left: 0;
 				}
 				@media (min-width: $screen-lg-min){
-					left: em(5);
+					left: em(0);
+					width: em(139);
 				}
 				@media (min-width: $screen-xl-min){
-					left: em(30);
+					left: em(0);
+					width: em(139);
 				}
 			}
 			.product-wrap{
@@ -507,10 +518,10 @@ body.bec-judd{
 					margin-left: em(80);
 				}
 				@media (min-width: $screen-lg-min){
-					margin-left: em(100);
+					margin-left: em(98);
 				}
 				@media (min-width: $screen-xl-min){
-					margin-left: em(124);
+					margin-left: em(98);
 				}
 				.text{
 					margin-top: em(0);

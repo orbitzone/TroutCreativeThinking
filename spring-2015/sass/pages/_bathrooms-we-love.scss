@@ -228,7 +228,7 @@ body.spring-2015{
 				max-width: em(500);
 				margin-top: em(30);
 				margin-bottom: em(40);
-				@media (min-width: $screen-md-min){
+				@media (min-width: $screen-sm-min){
 					margin-left: em(66);
 					margin-top: em(-47);
 				}

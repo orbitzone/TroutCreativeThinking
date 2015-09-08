@@ -1,0 +1,120 @@
+body.mr-jason-grant{
+	section#mr-jason-grant{
+		#banner{
+			position: relative;
+			overflow: hidden;
+			.intro{
+				position: absolute;
+				width: em(440);
+				right: em(566);
+				height: 100%;
+				bottom: 0;
+				overflow: hidden;
+				z-index: 0;
+				.block{
+						position: absolute;
+						width: 100%;
+						height: 100%;
+						top: 0;
+						left: 0;
+						background: $mr-green-banner;
+						@include transform(skew(-35.2deg));
+						@include transform-origin(bottom left);
+					}
+				.title{
+					position: absolute;
+					right: em(50);
+					bottom: em(40);
+					z-index: 1;
+					text-align: right;
+					h3{
+						color: $white;
+						font-family: $font-family-serif;
+						font-size: em(29);
+						font-style: italic;
+					}
+					h2{
+						font-size: em(73);
+						color: $mr-blue;						
+					}
+				}
+			}			
+		}
+		.slider{
+			.slick-arrow{
+				i{
+					color: $white;
+					font-size: em(60);					
+				}
+			}
+		}
+		.tip{
+			position: relative;
+			background: $black;
+			color: $white;
+			padding: em(70) em(50) em(50);
+			h3{
+				font-size: em(27);
+				margin-top: 0;
+				margin-bottom: em(10,27);
+				color: $gold;
+			}
+			.hex-block{
+				width: 149px;
+				color: $white;
+				position: absolute;
+				top: 0;
+				left: 50%;
+				@include transform(translateX(-50%) translateY(-50%));
+				@media (min-width: $screen-sm-min){
+					left: 0;
+				}
+				svg{
+					width: 149px;
+					path{
+						fill: $gold;
+					}
+				}
+				.text{
+					position: absolute;
+					text-transform: uppercase;
+					text-align: center;
+					width: 100%;
+					font-size: em(16);
+					@extend %center-align;
+				}
+			}
+		}
+		#day-spa{
+			background: $mr-day-spa-bg;
+			.main-content{
+				padding: em(40);
+			}
+			.intro{
+				color: $white;
+			}
+			.title{
+				color: $white;
+				h2{
+					font-size: em(60);
+					margin: 0;
+					text-decoration: underline;
+				}
+			}
+			.intro-description{
+				color: $mr-blue;
+			}
+			.tip{
+				color: $white;
+				background: $mr-dark-green;
+				.hex-block{
+					svg{
+						path{
+							fill: $mr-light-green;
+						}
+					}
+				}
+			}
+		}
+	}
+}

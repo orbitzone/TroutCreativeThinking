@@ -955,7 +955,31 @@ jQuery(function($){
 				cache: false,
 				url:'pages/mr-jason-grant.html',
 				success: function(data){
-					$('#main-content').html(data);									
+					$('#main-content').html(data);
+					$('#mr-jason-grant .slider').slick({
+						slidesToShow: 1,
+  					slidesToScroll: 1,
+  					infinite: true,
+  					prevArrow: "<button type=\"button\" class=\"arrow-prev\"><i class=\"iconr-arrow-left\"></i></button>",
+  					nextArrow: "<button type=\"button\" class=\"arrow-next\"><i class=\"iconr-arrow-right\"></i></button>",
+					 	responsive: [
+					 		{
+					      breakpoint: 992,
+					      settings: {
+					      }
+					    },
+					    {
+					      breakpoint: 768,
+					      settings: {
+					      }
+					    },
+					    {
+					      breakpoint: 480,
+					      settings: {
+					      }
+					    }
+					  ]
+					});										
 					$('.products-slide').slick({
 						slidesToShow: 4,
 						slidesToScroll: 4,

@@ -321,7 +321,6 @@ body.mr-jason-grant{
 				}
 				.intro-description{
 					color: $black;
-					width: em(382);
 					p{
 						font-size: em(17);
 					}
@@ -461,6 +460,62 @@ body.mr-jason-grant{
 					}
 				}
 			}			
+		}
+		#day-spa-featured-products{
+			margin-bottom: em(40);
+			.line-pattern{
+				padding-top: em(40);
+				padding-bottom: em(93);
+				padding-right: em(60);
+			}
+			.title{
+				padding-top: em(70);
+				padding-left: em(60);
+				h2{
+					color: $mr-blue;
+					font-size: em(46);
+					text-decoration: underline;
+				}
+			}
+		}
+		#neo-classic-featured-products{
+			margin-bottom: em(40);
+			.line-pattern{
+				padding-top: em(40);
+				padding-bottom: em(93);
+			}
+			.title{
+				padding-top: em(70);
+				padding-left: em(60);
+				h2{
+					color: $mr-blue;
+					font-size: em(46);
+					text-decoration: underline;
+				}
+			}
+		}
+		#coastal-luxury-featured-products{
+			margin-bottom: em(40);
+			.line-pattern{
+				padding-top: em(40);
+				padding-bottom: em(93);
+			}
+			.title{
+				padding-top: em(70);
+				padding-left: em(60);
+				h2{
+					color: $mr-blue;
+					font-size: em(46);
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	#main-content{
+		section#subscribe{
+			h2{
+				background: $mr-dark-purple;
+			}
 		}
 	}
 }

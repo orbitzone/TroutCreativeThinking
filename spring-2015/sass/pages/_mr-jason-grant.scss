@@ -261,6 +261,38 @@ body.mr-jason-grant{
 						z-index: 4;
 						@include transform(translateX(50%) translateY(-50%));
 					}
+					.hotspots{
+						.hotspot{
+							&.spot-1{
+								left: percentage(108/991);
+								top: percentage(100/583);
+							}
+							&.spot-2{
+								left: percentage(180/991);
+								top: percentage(207/583);
+							}
+							&.spot-3{
+								left: percentage(452/991);
+								top: percentage(100/583);
+							}
+							&.spot-4{
+								left: percentage(719/991);
+								top: percentage(212/583);								
+							}
+							&.spot-5{
+								left: percentage(609/991);
+								top: percentage(80/583);								
+							}
+							&.spot-6{
+								left: percentage(473/991);
+								top: percentage(101/583);								
+							}
+							&.spot-7{
+								left: percentage(245/991);
+								top: percentage(42/583);								
+							}
+						}
+					}
 				}
 			}
 			.bottom-section{
@@ -335,6 +367,30 @@ body.mr-jason-grant{
 						svg{
 							path{
 								fill: $mr-blue;
+							}
+						}
+					}
+					.hotspots{
+						.hotspot{
+							&.spot-1{
+								left: percentage(189/991);
+								top: percentage(275/583);
+							}
+							&.spot-2{
+								left: percentage(756/991);
+								top: percentage(101/583);
+							}
+							&.spot-3{
+								left: percentage(762/991);
+								top: percentage(400/583);
+							}
+							&.spot-4{
+								left: percentage(171/991);
+								top: percentage(288/583);
+							}
+							&.spot-5{
+								left: percentage(656/991);
+								top: percentage(31/583);								
 							}
 						}
 					}
@@ -425,6 +481,22 @@ body.mr-jason-grant{
 							}
 						}
 					}
+					.hotspots{
+						.hotspot{
+							&.spot-1{
+								left: percentage(373/991);
+								top: percentage(307/583);
+							}
+							&.spot-2{
+								left: percentage(893/991);
+								top: percentage(40/583);
+							}
+							&.spot-3{
+								left: percentage(363/991);
+								top: percentage(274/583);
+							}
+						}
+					}
 				}
 			}
 			.bottom-section{
@@ -483,6 +555,7 @@ body.mr-jason-grant{
 			.line-pattern{
 				padding-top: em(40);
 				padding-bottom: em(93);
+				padding-right: em(60);
 			}
 			.title{
 				padding-top: em(70);
@@ -499,6 +572,7 @@ body.mr-jason-grant{
 			.line-pattern{
 				padding-top: em(40);
 				padding-bottom: em(93);
+				padding-right: em(60);
 			}
 			.title{
 				padding-top: em(70);

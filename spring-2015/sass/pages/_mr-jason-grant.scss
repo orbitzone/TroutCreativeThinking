@@ -385,49 +385,6 @@ body.mr-jason-grant{
 				}
 			}
 		}
-		.bathrooms-for-inspiration{
-			.hotspots{
-				.hotspot-data{
-					.top-text{
-						text-align: center;
-						margin-top: 0;
-						position: relative;
-						p{
-							color: $mr-blue;
-							margin-bottom: 0;
-							font-family: $font-family-serif;
-							font-style: italic;
-							font-size: em(36);
-							font-weight: 700;
-							line-height: em(28,36);
-						}
-					}
-					.image{
-						width: em(160);
-						margin: 0 auto;
-						margin-top: em(-20);
-					}
-					.text{
-						.name{
-							font-size: em(11);
-							color: $grey;
-						}
-						h3{
-							margin: 0;
-							font-size: em(18);
-							color: $mr-light-green;
-							margin-bottom: em(10,18);
-						}
-						p{
-							a{
-								color: $grey;
-								text-decoration: underline;
-							}
-						}
-					}
-				}
-			}
-		}
 		#day-spa{
 			background: $mr-day-spa-bg;
 			.main-content{

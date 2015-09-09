@@ -297,4 +297,103 @@ body.spring-2015{
 	input, select, textarea{
 		font-family: $font-family;
 	}
+	#hotspot{
+			position: absolute;
+			display: none;
+			z-index: 10;
+			.top-text{
+				text-align: center;
+				margin-top: 0;
+				position: relative;
+				p{
+					color: $mr-blue;
+					margin-bottom: 0;
+					font-family: $font-family-serif;
+					font-style: italic;
+					font-size: em(36);
+					font-weight: 700;
+					line-height: em(28,36);
+				}
+			}
+			.image{
+				width: em(160);
+				margin: 0 auto;
+				margin-top: em(-20);
+			}
+			.text{
+				text-align: center;
+				.name{
+					font-size: em(11);
+					color: $grey;
+				}
+				h3{
+					margin: 0;
+					font-size: em(18);
+					color: $mr-light-green;
+					margin-bottom: em(10,18);
+				}
+				p{
+					a{
+						color: $grey;
+						text-decoration: underline;
+					}
+				}
+			}
+			.info{
+		    width: em(220);
+		    @extend %center-align;
+		    
+			}
+			path{
+				&.bg{
+					fill: $white;							
+				}
+				&.border{
+					fill: $green;
+				}
+				&.arrow{
+					fill: $green;
+				}
+			}
+			&.neo-classic{
+				path{
+					&.bg{
+						fill: $white;							
+					}
+					&.border{
+						fill: $mr-blue;
+					}
+				}
+				.top-text{
+					p{
+						color: $mr-light-blue;
+					}
+				}
+				.text{
+					h3{
+						color: $mr-blue;
+					}
+				}
+			}
+			&.coastal-luxury{
+				path{
+					&.bg{
+						fill: $white;							
+					}
+					&.border{
+						fill: $mr-dark-purple;
+					}
+				}
+				.top-text{
+					p{
+						color: $mr-light-purple;
+					}
+				}
+				.text{
+					h3{
+						color: $mr-dark-purple;
+					}
+				}				
+			}
+	}
 }

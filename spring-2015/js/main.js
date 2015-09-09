@@ -258,11 +258,46 @@ jQuery(function($){
 			}
 		}
 	};
-	hotsposts = {
+	hotspots = {
 		init: function(){
-			$('#bathrooms-for-inspiration .hotspot, .bathrooms-for-inspiration .hotspot').on('click',function(){
-				hotsposts.showData(this);
+			$('#bathrooms-for-inspiration .hotspot').on('click',function(){
+				hotspots.showData(this);
 			});
+			$('.bathrooms-for-inspiration .hotspot').on('click',function(){
+				hotspots.showInfo(this);
+			});
+			var hotspot = '<div id="hotspot">'
+		+'<div class="hotspot-data">'
++'			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"'
++'			viewBox="0 0 52 52" enable-background="new 0 0 52 52" xml:space="preserve" width="363" height="363">'
++'			<defs>'
++'				<mask id="mask-spot-1" x="0" y="0" width="52" height="52" >'
++'					<path fill="#FFFFFF" d="M3.2,17.3c0-2.4,1.7-5.4,3.8-6.6L22.2,2c2.1-1.2,5.6-1.2,7.7,0L45,10.7c2.1,1.2,3.8,4.2,3.8,6.6v17.4'
++'					c0,2.4-1.7,5.4-3.8,6.6L29.8,50c-2.1,1.2-5.6,1.2-7.7,0L7,41.3c-2.1-1.2-3.8-4.2-3.8-6.6V17.3z"/>'
++'				</mask>'
++'			</defs>'
++'			<path class="bg" d="M3.2,17.3c0-2.4,1.7-5.4,3.8-6.6L22.2,2c2.1-1.2,5.6-1.2,7.7,0L45,10.7c2.1,1.2,3.8,4.2,3.8,6.6v17.4'
++'			c0,2.4-1.7,5.4-3.8,6.6L29.8,50c-2.1,1.2-5.6,1.2-7.7,0L7,41.3c-2.1-1.2-3.8-4.2-3.8-6.6V17.3z"/>'
++'			<path class="border" d="M26,51.5c-1.5,0-3-0.3-4.1-1L6.8,41.8c-2.2-1.3-4.1-4.4-4.1-7V17.3c0-2.6,1.8-5.8,4.1-7l15.1-8.7c1.1-0.6,2.5-1,4.1-1'
++'			s3,0.3,4.1,1l15.1,8.7c2.2,1.3,4.1,4.5,4.1,7v17.4c0,2.6-1.8,5.8-4.1,7l-15.1,8.7C29,51.1,27.5,51.5,26,51.5z M26,1.5'
++'			c-1.4,0-2.6,0.3-3.6,0.8L7.3,11.1c-1.9,1.1-3.6,3.9-3.6,6.2v17.4c0,2.2,1.6,5.1,3.6,6.2l15.1,8.7c0.9,0.5,2.2,0.8,3.6,0.8'
++'			s2.6-0.3,3.6-0.8l15.1-8.7c1.9-1.1,3.6-3.9,3.6-6.2V17.3c0-2.2-1.6-5.1-3.6-6.2L29.6,2.4C28.6,1.8,27.4,1.5,26,1.5z"/>									'
++'		</svg>'
++'		<div class="info">'
++'			<div class="top-text">'
++'				<p>get the<br/>look</p>'
++'			</div>'
++'			<div class="image">'
++'				<img src="images/mr-jason-grant/props/lauren-bamford-bondi-photograph.jpg" alt="Lauren Bamford Bondi Photograph">'
++'			</div>	'
++'			<div class="text">'
++'				<h3 class="title">Lauren Bamford Bondi Photograph</h3>'
++'				<p class="details"><a href="http://laurenbamford.com" target="_blank">laurenbamford.com</a></p>'
++'			</div>'
++'		</div>								'
++'	</div><!-- end .hotspot-data -->'
++'</div>';
+			$('#main-content').append(hotspot);
 		},
 		showData: function(obj){
 			var spot = $(obj).data("spot");
@@ -277,7 +312,7 @@ jQuery(function($){
 				var top = $(obj).position().top + $(obj).outerHeight()+10;
 				var left = $(obj).position().left - ($('.hotspot-data.spot-'+spot).outerWidth()/2) + ($(obj).outerHeight()/2);
 				var offset = top + $('.hotspot-data.spot-'+spot).outerHeight();
-				if( offset > $('#bathrooms-for-inspiration .bathrooms-showcase-section').height()){
+				if( offset > $('.bathrooms-for-inspiration .bathrooms-showcase-section').height()){
 					top	= $(obj).position().top - $('.hotspot-data.spot-'+spot).outerHeight() - 10;
 				}
 				if(top < 0){
@@ -295,6 +330,53 @@ jQuery(function($){
 				})
 				$('.hotspot-data.spot-'+spot).fadeIn();
 				;
+			}
+		},
+		showInfo: function(obj){
+			var spot = $(obj).data("spot");
+			var image = $(obj).data("image");
+			var imageAlt = $(obj).data("image-alt");
+			var title = $(obj).data("title");
+			var link = $(obj).data("link");
+			var text = $(obj).data("text");
+			var className = $(obj).data("class");
+			$('#hotspot').attr('class',className);
+			$('#hotspot .image').html('<img src="'+image+'" alt="'+imageAlt+'"/>');
+			$('#hotspot .title').html(title);
+			if(link){
+				text= '<a href="'+link+'" target="_blank">'+text+'</a>';
+			}
+			$('#hotspot .details').html(text);
+			if($(obj).hasClass('active')){
+				$(obj).removeClass('active');
+				$('#hotspot').fadeOut();
+			}else{
+				$(obj).parent().find('.hotspot').removeClass('active');
+				$(obj).addClass('active');
+				$('#hotspot').fadeOut();
+
+				var top = $(obj).offset().top + $(obj).outerHeight() + 10 - $('#main-content').offset().top;
+				var left = $(obj).offset().left - $(obj).outerWidth() - ($('#hotspot').outerWidth()/2);
+				var offsetTop = top + $('#hotspot').outerHeight();
+				if( offsetTop > ($(window).height() + $(window).scrollTop()) ){
+					top	= $(obj).offset().top - $('#hotspot').outerHeight() - 10 - $('#main-content').offset().top;
+				}
+				if(top < 0){
+					top = 20;					
+				}
+
+				if(left < 0){
+					left = ($(window).width()/2) - ($('#hotspot').width()/2);
+				}
+				if((left + $('#hotspot').width()) > $(window).width()){
+					left = ($(window).width()/2) - ($('#hotspot').width()/2);
+				}
+				$('#hotspot').css(
+				{
+					top: top,
+					left: left
+				})
+				$('#hotspot').fadeIn();
 			}
 		}
 	};
@@ -458,7 +540,7 @@ jQuery(function($){
 					    }
 					  ]
 					});
-					hotsposts.init();
+					hotspots.init();
 					$(window).on('resize',function(){
 						$('#bathrooms-for-inspiration .part').matchHeight();						
 					});
@@ -671,7 +753,7 @@ jQuery(function($){
 					    }
 					  ]
 					});
-					hotsposts.init();
+					hotspots.init();
 					$(window).on('resize',function(){
 						$('#bathrooms-for-inspiration .part').matchHeight();						
 					});
@@ -843,7 +925,7 @@ jQuery(function($){
 					    }
 					  ]
 					});
-					hotsposts.init();
+					hotspots.init();
 					$(window).on('resize',function(){
 						$('#bathrooms-for-inspiration .part').matchHeight();						
 					});
@@ -981,7 +1063,7 @@ jQuery(function($){
 					    }
 					  ]
 					});
-					hotsposts.init();
+					hotspots.init();
 					$('#mr-jason-grant .video-slider').slick({
 						slidesToShow: 1,
   					slidesToScroll: 1,

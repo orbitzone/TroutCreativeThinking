@@ -58,7 +58,6 @@ jQuery(function($){
         	player.obj[container] = player.loadPlayer(container, videoId)	;     
       	}
       }
-      console.log(player.obj);
 		},
 		loadPlayer: function(container, videoId){
 		 return new YT.Player(container, {
@@ -80,15 +79,11 @@ jQuery(function($){
       });
 		},
 		play: function(id){
-			console.log(id);
 			var video = player.obj[id];
-			console.log(video);
 			video.playVideo();
 		},
 		stop: function(id){
-			console.log(id);
 			var video = player.obj[id];
-			console.log(video);
 		  video.stopVideo();      
 		}
 	};

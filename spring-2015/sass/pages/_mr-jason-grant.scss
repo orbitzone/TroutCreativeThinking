@@ -73,7 +73,7 @@ body.mr-jason-grant{
 				top: em(40);
 				right: em(40);
 				h2{
-					font-size: em(40);
+					font-size: em(33);
 					text-decoration: underline;
 				}
 				.product{
@@ -111,8 +111,8 @@ body.mr-jason-grant{
 				width: 100%;
 				@extend %center-align;
 				p{
-				font-size: em(26);
-				margin-bottom: 0;	
+					font-size: em(26);
+					margin-bottom: 0;	
 				}
 			}
 		}
@@ -169,6 +169,11 @@ body.mr-jason-grant{
 				&.arrow-prev{
 					left: em(-50);
 				}
+			}
+		}
+		.products-slide{
+			.product{
+				margin: 0 em(15);
 			}
 		}
 		.bathroom{
@@ -251,6 +256,13 @@ body.mr-jason-grant{
 							margin: 0;
 							font-size: em(18);
 							color: $mr-light-green;
+							margin-bottom: em(10,18);
+						}
+						p{
+							a{
+								color: $grey;
+								text-decoration: underline;
+							}
 						}
 					}
 				}
@@ -345,6 +357,10 @@ body.mr-jason-grant{
 							}
 						}
 					}
+					.title{
+						top: em(190);
+						right: em(90);
+					}
 				}
 				.tip{
 					position: relative;
@@ -368,8 +384,22 @@ body.mr-jason-grant{
 				padding: em(40);
 			}
 			.top-section{
+				position: relative;
 				background: url('../images/mr-jason-grant/neo-classic-bg.jpg') no-repeat top left;
 				margin-bottom: em(40);
+				.main-content{
+					padding-bottom: 0;
+				}
+				.block-skew{
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background: $mr-neo-classic-bg;
+					@include transform(skewX(-40deg));
+					@include transform-origin(bottom left);
+				}
 				.intro{
 					color: $white;
 					padding-left: em(50);
@@ -380,8 +410,8 @@ body.mr-jason-grant{
 					}
 				}
 				.title{
-					color: $black;
-					margin: em(40) 0;
+					color: $mr-blue;
+					margin: em(40) 0 em(25);
 					h2{
 						font-size: em(60);
 						margin: 0;
@@ -398,7 +428,7 @@ body.mr-jason-grant{
 					.hex-block{
 						right: em(20);
 						left: auto;
-						top: em(20);
+						top: em(-64);
 						z-index: 4;
 						@include transform(translateX(50%));
 						svg{
@@ -409,6 +439,17 @@ body.mr-jason-grant{
 					}
 					.hotspots{
 						.hotspot{
+							i{
+								color: $white;
+								&:hover{
+									color: $mr-blue;
+								}								
+							}
+							&.active{
+								i{
+									color: $mr-blue;
+								}
+							}
 							&.spot-1{
 								left: percentage(189/991);
 								top: percentage(275/583);
@@ -428,6 +469,25 @@ body.mr-jason-grant{
 							&.spot-5{
 								left: percentage(656/991);
 								top: percentage(31/583);								
+							}
+						}
+						.hotspot-data{
+							.text{
+								h3{
+									color: $mr-blue;
+								}
+							}
+							.top-text{
+								p{
+									color: $mr-light-blue;
+								}
+							}
+							svg{
+								path{
+									&.border{
+										fill: $mr-blue;
+									}
+								}
 							}
 						}
 					}
@@ -454,6 +514,11 @@ body.mr-jason-grant{
 							}
 						}
 					}
+					.title{
+						text-align: right;
+						top: em(40);
+						right: em(120);
+					}
 				}
 				.tip{
 					position: relative;
@@ -477,7 +542,21 @@ body.mr-jason-grant{
 				padding: em(40);
 			}
 			.top-section{
+				position: relative;
 				margin-bottom: em(40);
+				.main-content{
+					padding-bottom:0;
+				}
+				.block-skew{
+					background: $mr-light-purple;
+					position: absolute;
+					left: 100%;
+					bottom: 0;
+					width: 100%;
+					height: 100%;
+					@include transform(skew(40deg));
+					@include transform-origin(bottom left);
+				}
 				.intro{
 					color: $white;
 					padding-left: em(50);
@@ -490,18 +569,21 @@ body.mr-jason-grant{
 				.title{
 					color: $white;
 					margin: em(40) 0;
+					text-align: right;
 					h2{
 						font-size: em(60);
 						margin: 0;
 						text-decoration: underline;
 					}
-				}
-				.intro-description{
-					color: $mr-blue;
-					padding-left: em(50);
-					width: em(382);
-					p{
-						font-size: em(17);
+					.intro-description{
+						width: em(187);
+						padding: 0;
+						margin-top: em(25);
+						float: right;
+						p{
+							font-size: em(17);
+							color: $white;
+						}
 					}
 				}
 				.bathrooms-for-inspiration{
@@ -520,6 +602,17 @@ body.mr-jason-grant{
 					}
 					.hotspots{
 						.hotspot{
+							i{
+								color: $white;
+								&:hover{
+									color: $mr-dark-purple;
+								}								
+							}
+							&.active{
+								i{
+									color: $mr-dark-purple;
+								}
+							}
 							&.spot-1{
 								left: percentage(373/991);
 								top: percentage(307/583);
@@ -529,8 +622,27 @@ body.mr-jason-grant{
 								top: percentage(40/583);
 							}
 							&.spot-3{
-								left: percentage(363/991);
-								top: percentage(274/583);
+								left: percentage(338/991);
+								top: percentage(430/583);
+							}
+						}
+					}
+					.hotspot-data{
+						.text{
+							h3{
+								color: $mr-dark-purple;
+							}
+						}
+						.top-text{
+							p{
+								color: $mr-light-purple;
+							}
+						}
+						svg{
+							path{
+								&.border{
+									fill: $mr-dark-purple;
+								}
 							}
 						}
 					}
@@ -548,6 +660,11 @@ body.mr-jason-grant{
 							path{
 								fill: $mr-dark-purple;
 							}
+						}
+					}
+					.title{
+						h2{
+							color: $white;
 						}
 					}
 				}
@@ -588,6 +705,7 @@ body.mr-jason-grant{
 			}
 		}
 		#neo-classic-featured-products{
+			position: relative;
 			margin-bottom: em(40);
 			.line-pattern{
 				padding-top: em(40);
@@ -603,8 +721,29 @@ body.mr-jason-grant{
 					text-decoration: underline;
 				}
 			}
+			.hex-block{
+				width: em(183);
+				height: em(201);
+				right: em(50);
+				left: auto;
+				top: em(-76);
+				svg{
+					width: em(183);
+					height: em(201);
+					path{
+						fill: $mr-light-blue;
+					}
+				}
+				.text{
+					font-size: em(21);
+				}
+			}
+			.product{
+				position: relative;				
+			}
 		}
 		#coastal-luxury-featured-products{
+			position: relative;
 			margin-bottom: em(40);
 			.line-pattern{
 				padding-top: em(40);
@@ -615,7 +754,7 @@ body.mr-jason-grant{
 				padding-top: em(70);
 				padding-left: em(60);
 				h2{
-					color: $mr-blue;
+					color: $mr-dark-purple;
 					font-size: em(46);
 					text-decoration: underline;
 				}

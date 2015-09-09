@@ -216,6 +216,10 @@ body.mr-jason-grant{
 						bottom: em(20);
 					}
 					@media (min-width: $screen-lg-min){
+						right: em(30);
+						bottom: em(30);
+					}
+					@media (min-width: $screen-xl-min){
 						right: em(50);
 						bottom: em(40);
 					}
@@ -233,6 +237,9 @@ body.mr-jason-grant{
 							font-size: em(18);
 						}
 						@media (min-width: $screen-lg-min){
+							font-size: em(24);
+						}
+						@media (min-width: $screen-xl-min){
 							font-size: em(29);
 						}
 					}
@@ -249,6 +256,9 @@ body.mr-jason-grant{
 							font-size: em(46);
 						}
 						@media (min-width: $screen-lg-min){
+							font-size: em(60);
+						}
+						@media (min-width: $screen-xl-min){
 							font-size: em(73);
 						}
 					}

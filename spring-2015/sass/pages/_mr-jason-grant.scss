@@ -150,15 +150,35 @@ body.mr-jason-grant{
 					bottom: em(40);
 					z-index: 1;
 					text-align: right;
+					@media (min-width: $screen-md-min){
+						right: em(20);
+						bottom: em(20);
+					}
+					@media (min-width: $screen-lg-min){
+						right: em(50);
+						bottom: em(40);
+					}
 					h3{
 						color: $white;
 						font-family: $font-family-serif;
 						font-size: em(29);
 						font-style: italic;
+						@media (min-width: $screen-md-min){
+							font-size: em(18);
+						}
+						@media (min-width: $screen-lg-min){
+							font-size: em(29);
+						}
 					}
 					h2{
 						font-size: em(73);
 						color: $mr-blue;						
+						@media (min-width: $screen-md-min){
+							font-size: em(46);
+						}
+						@media (min-width: $screen-lg-min){
+							font-size: em(73);
+						}
 					}
 				}
 			}			
@@ -427,8 +447,12 @@ body.mr-jason-grant{
 						}
 					}
 					.title{
-						top: percentage(190/512);
-						right: percentage(90/870);
+						top: em(20);
+						right: em(20);
+						@media (min-width: $screen-lg-min){
+							top: percentage(190/512);
+							right: percentage(90/870);
+						}
 					}
 				}
 				.tip{
@@ -514,6 +538,9 @@ body.mr-jason-grant{
 						top: em(-64);
 						z-index: 4;
 						@include transform(translateX(50%));
+						@media (min-width: $screen-md-min){
+							top: em(-80);
+						}
 						@media (min-width: $screen-lg-min){
 							top: em(-135);
 						}
@@ -609,8 +636,14 @@ body.mr-jason-grant{
 					}
 					.title{
 						text-align: right;
-						top: em(40);
-						right: 15%;
+						@media (min-width: $screen-md-min){
+							top: em(20);
+							right: em(20);
+						}
+						@media (min-width: $screen-lg-min){
+							top: em(40);
+							right: 15%;
+						}
 						@media (min-width: $screen-xl-min){
 							top: em(40);
 							right: em(120);
@@ -699,7 +732,16 @@ body.mr-jason-grant{
 						bottom: em(-20);
 						z-index: 4;
 						@include transform(translateX(50%));
+						@media (min-width: $screen-md-min){
+							bottom: auto;
+							top: em(-180);
+							right: auto;
+							left: em(-10);
+						}
 						@media (min-width: $screen-lg-min){
+							top: auto;
+							left: auto;
+							right: em(120);
 							bottom: em(-30);
 						}
 						@media (min-width: $screen-xl-min){

@@ -2,8 +2,11 @@ body.mr-jason-grant{
 	section#mr-jason-grant{
 		.video{
 			position: relative;
-			padding: em(40);
+			padding: em(10);
 			background: $white;
+			@media (min-width: $screen-sm-min){
+				padding: em(40);
+			}
 			.video-content{
 				position: relative;
 			}
@@ -60,7 +63,10 @@ body.mr-jason-grant{
 				  @include transform(translateY(-50%) translateX(-50%));
 				}
 				i{
-					font-size: em(50);
+					font-size: em(40);
+					@media (min-width: $screen-sm-min){
+						font-size: em(50);
+					}
 					color: $black;
 				}
 			}
@@ -79,7 +85,10 @@ body.mr-jason-grant{
 				top: em(40);
 				right: em(40);
 				h2{
-					font-size: em(33);
+					font-size: em(16);
+					@media (min-width: $screen-sm-min){
+						font-size: em(33);
+					}
 					text-decoration: underline;
 				}
 				.product{
@@ -97,15 +106,29 @@ body.mr-jason-grant{
 			}			
 		} /*end video*/
 		.hex-block{
-			width: 228px;
-			height: 250px;
 			color: $white;
-			position: absolute;
-			top: 0;
-			left: 0;
-			svg{
+			width: 180px;
+			height: 197px;
+			margin: 0 auto;
+			margin-top: em(40);
+			margin-bottom: em(40);
+			@media (min-width: $screen-sm-min){
+				position: absolute;
+				top: 0;
+				left: 0;
+				margin: 0;
+			}
+			@media (min-width: $screen-md-min){
 				width: 228px;
 				height: 250px;
+			}
+			svg{
+				width: 180px;
+				height: 197px;
+				@media (min-width: $screen-md-min){
+					width: 228px;
+					height: 250px;
+				}
 				path{
 					fill: $mr-light-green;
 				}
@@ -117,7 +140,10 @@ body.mr-jason-grant{
 				width: 100%;
 				@extend %center-align;
 				p{
+					font-size: em(18);
+					@media (min-width: $screen-md-min){
 					font-size: em(26);
+					}
 					margin-bottom: 0;	
 				}
 			}
@@ -128,12 +154,15 @@ body.mr-jason-grant{
 			overflow: hidden;
 			.intro{
 				position: absolute;
-				width: percentage(440/1526);
+				width: 46%;
 				right: 37.2%;
 				height: 100%;
 				bottom: 0;
 				overflow: hidden;
 				z-index: 0;
+				@media (min-width: $screen-sm-min){
+					width: percentage(440/1526);
+				}
 				.block{
 					position: absolute;
 					width: 100%;
@@ -146,11 +175,11 @@ body.mr-jason-grant{
 				}
 				.title{
 					position: absolute;
-					right: em(50);
-					bottom: em(40);
+					right: em(10);
+					bottom: em(10);
 					z-index: 1;
 					text-align: right;
-					@media (min-width: $screen-md-min){
+					@media (min-width: $screen-sm-min){
 						right: em(20);
 						bottom: em(20);
 					}
@@ -161,8 +190,11 @@ body.mr-jason-grant{
 					h3{
 						color: $white;
 						font-family: $font-family-serif;
-						font-size: em(29);
+						font-size: em(12);
 						font-style: italic;
+						@media (min-width: $screen-sm-min){
+							font-size: em(16);
+						}
 						@media (min-width: $screen-md-min){
 							font-size: em(18);
 						}
@@ -171,8 +203,12 @@ body.mr-jason-grant{
 						}
 					}
 					h2{
-						font-size: em(73);
-						color: $mr-blue;						
+						font-size: em(24);
+						color: $mr-blue;
+						margin-bottom: 0;						
+						@media (min-width: $screen-sm-min){
+							font-size: em(36);
+						}
 						@media (min-width: $screen-md-min){
 							font-size: em(46);
 						}
@@ -226,13 +262,22 @@ body.mr-jason-grant{
 		.bathroom{
 			float: none;
 			width: auto;
-			margin: 0 em(44);			
+			margin: 0;
+			@media (min-width: $screen-sm-min){
+				margin: 0 em(44);			
+			}
 		}
 		.tip{
 			position: relative;
 			background: $black;
 			color: $white;
-			padding: em(60) em(50) em(50);
+			padding: em(20);
+			@media (min-width: $screen-sm-min){
+				padding: em(60);
+			}
+			@media (min-width: $screen-md-min){
+				padding: em(60) em(50) em(50);
+			}
 			h3{
 				font-size: em(27);
 				margin-top: 0;
@@ -242,11 +287,16 @@ body.mr-jason-grant{
 			.hex-block{
 				width: 149px;
 				color: $white;
-				position: absolute;
-				top: 0;
-				left: 50%;
-				@include transform(translateX(-50%) translateY(-50%));
+				position: relative;
+				margin: 0 auto;
 				@media (min-width: $screen-sm-min){
+					margin: 0;
+					position: absolute;
+					top: 0;
+					left: em(41);
+					@include transform(translateX(-50%) translateY(-50%));
+				}
+				@media (min-width: $screen-md-min){
 					left: 0;
 				}
 				svg{
@@ -318,15 +368,22 @@ body.mr-jason-grant{
 		#day-spa{
 			background: $mr-day-spa-bg;
 			.main-content{
-				padding: em(40);
+				padding: em(20);
+				@media (min-width: $screen-sm-min){
+					padding: em(40);
+				}
 			}
 			.top-section{
 				margin-bottom: em(40);
 				.intro{
 					color: $white;
-					padding-left: em(50);
-					margin-top: em(50);
+					@media (min-width: $screen-sm-min){
+						padding-left: em(50);
+						margin-top: em(50);
+						width: em(423);
+					}
 					@media (min-width: $screen-md-min){
+						width: auto;
 						padding-right: em(20);
 					}
 					@media (min-width: $screen-lg-min){
@@ -341,6 +398,12 @@ body.mr-jason-grant{
 					}
 				}
 				.day-spa-title{
+					@media (min-width: $screen-sm-min){
+						padding-left: em(49);
+					}
+					@media (min-width: $screen-md-min){
+						padding-left: 0;
+					}
 					@media (min-width: $screen-xl-min){
 						padding-left: em(49);
 					}
@@ -357,14 +420,16 @@ body.mr-jason-grant{
 								margin: em(69) 0 em(25);
 							}
 							h2{
-								font-size: em(60);
 								margin: 0;
 								text-decoration: underline;
+								font-size: em(30);
+								@media (min-width: $screen-md-min){
+									font-size: em(60);
+								}
 							}
 						}
 						.intro-description{
 							color: $mr-blue;
-							padding-left: em(50);
 							@media (min-width: $screen-sm-min){
 								width: em(328);
 								padding-left: em(30);
@@ -385,18 +450,28 @@ body.mr-jason-grant{
 								padding-bottom: 0;
 							}
 							p{
-								font-size: em(21);
 								margin-bottom: 0;
+								font-size: em(18);
+								@media (min-width: $screen-sm-min){
+									font-size: em(21);
+								}								
 							}
 						}
 				}
 				.bathrooms-for-inspiration{
 					.hex-block{
-						right: em(120);
-						left: auto;
-						top: 0;
-						z-index: 4;
-						@include transform(translateX(50%) translateY(-50%));
+						position: relative;
+						margin: 0 auto;
+						margin-top: em(40);
+						margin-bottom: em(40);
+						@media (min-width: $screen-sm-min){
+							margin: 0;
+							right: em(120);
+							left: auto;
+							top: 0;
+							z-index: 4;
+							@include transform(translateX(50%) translateY(-50%));
+						}
 					}
 					.hotspots{
 						.hotspot{
@@ -434,13 +509,23 @@ body.mr-jason-grant{
 			}
 			.bottom-section{
 				.video{
+					margin-top: em(237);
+					@media (min-width: $screen-sm-min){
+						margin-top: 0;
+					}
 					.hex-block{
 						z-index: 4;
-						top: auto;
-						left: em(20);
-						bottom: em(25);
-						@include transform(translateY(50%));
+						position: absolute;
+						top: em(-277);
+						left: 50%;
+						@include transform(translateX(-50%));
+						@media (min-width: $screen-sm-min){
+							left: em(20);
+							@include transform(translateY(50%));
+							top: em(-160);							
+						}
 						@media (min-width: $screen-md-min){
+							top: auto;
 							bottom: em(-71);
 						}
 						@media (min-width: $screen-lg-min){
@@ -486,7 +571,13 @@ body.mr-jason-grant{
 				background: url('../images/mr-jason-grant/neo-classic-bg.jpg') no-repeat top left;
 				margin-bottom: em(40);
 				.main-content{
-					padding: em(40) em(20) 0;
+					padding: em(20) em(20) 0;
+					@media (min-width: $screen-sm-min){
+						padding: em(40) em(40) 0;
+					}
+					@media (min-width: $screen-lg-min){
+						padding: em(40) em(20) 0;
+					}
 					@media (min-width: $screen-xl-min){
 						padding: em(40) em(40) 0;
 					}
@@ -539,11 +630,16 @@ body.mr-jason-grant{
 				}
 				.bathrooms-for-inspiration{
 					.hex-block{
-						right: em(120);
-						left: auto;
-						top: em(-64);
+						position: absolute;
+						left: 50%;
+						top: em(-277);
 						z-index: 4;
-						@include transform(translateX(50%));
+						@include transform(translateX(-50%));
+						@media (min-width: $screen-sm-min){
+							top: em(-64);
+							right: em(120);
+							@include transform(translateX(50%));
+						}
 						@media (min-width: $screen-md-min){
 							top: em(-180);
 						}
@@ -558,6 +654,12 @@ body.mr-jason-grant{
 							path{
 								fill: $mr-blue;
 							}
+						}
+					}
+					.bathroom{
+						margin-top: em(277);
+						@media (min-width: $screen-sm-min){
+							margin-top: 0;
 						}
 					}
 					.hotspots{
@@ -625,7 +727,16 @@ body.mr-jason-grant{
 			}
 			.bottom-section{
 				.main-content{
-					padding: 0 em(20) em(40);
+					padding: 0 em(20) em(20);
+					@media (min-width: $screen-sm-min){
+						padding: 0 em(40) em(40);
+					}
+					@media (min-width: $screen-lg-min){
+						padding: 0 em(20) em(40);
+					}
+					@media (min-width: $screen-xl-min){
+						padding: 0 em(40) em(40);
+					}
 				}
 				.video{
 					.hex-block{
@@ -682,7 +793,13 @@ body.mr-jason-grant{
 				position: relative;
 				margin-bottom: em(40);
 				.main-content{
-					padding: em(40) em(20) 0;
+					padding: em(20) em(20) 0;
+					@media (min-width: $screen-sm-min){
+						padding: em(40) em(40) 0;
+					}
+					@media (min-width: $screen-lg-min){
+						padding: em(40) em(20) 0;
+					}
 					@media (min-width: $screen-xl-min){
 						padding: em(40) em(40) 0;
 					}
@@ -694,8 +811,11 @@ body.mr-jason-grant{
 					bottom: 0;
 					width: 100%;
 					height: 100%;
-					@include transform(skew(36deg));
+					@include transform(skew(22deg));
 					@include transform-origin(bottom left);
+					@media (min-width: $screen-sm-min){
+						@include transform(skew(36deg));
+					}
 				}
 				.intro{
 					color: $white;
@@ -710,7 +830,9 @@ body.mr-jason-grant{
 					color: $white;
 					margin: em(40) 0;
 					text-align: right;
-					margin-right: 40px;
+					@media (min-width: $screen-sm-min){
+						margin-right: 40px;
+					}
 					@media (min-width: $screen-xl-min){
 						margin-right: 0;
 					}
@@ -732,12 +854,16 @@ body.mr-jason-grant{
 				}
 				.bathrooms-for-inspiration{
 					.hex-block{
-						right: em(120);
-						left: auto;
-						top: auto;
-						bottom: em(-20);
+						position: absolute;
+						left: 50%;
+						top: em(-277);
 						z-index: 4;
-						@include transform(translateX(50%));
+						@include transform(translateX(-50%));
+						@media (min-width: $screen-sm-min){
+							top: em(-64);
+							right: em(120);
+							@include transform(translateX(50%));
+						}
 						@media (min-width: $screen-md-min){
 							bottom: auto;
 							top: em(-180);
@@ -758,6 +884,12 @@ body.mr-jason-grant{
 							path{
 								fill: $mr-dark-purple;
 							}
+						}
+					}
+					.bathroom{
+						margin-top: em(277);
+						@media (min-width: $screen-sm-min){
+							margin-top: 0;
 						}
 					}
 					.hotspots{
@@ -810,19 +942,35 @@ body.mr-jason-grant{
 			}
 			.bottom-section{
 				.main-content{
-					padding: 0 em(20) em(40);
+					padding: 0 em(20) em(20);
+					@media (min-width: $screen-sm-min){
+						padding: 0 em(40) em(40);
+					}
+					@media (min-width: $screen-lg-min){
+						padding: 0 em(20) em(40);
+					}
 					@media (min-width: $screen-xl-min){
 						padding: 0 em(40) em(40);
 					}
 				}
 				.video{
+					margin-top: em(237);
+					@media (min-width: $screen-sm-min){
+						margin-top: 0;
+					}
 					.hex-block{
 						z-index: 4;
-						top: auto;
-						left: em(20);
-						bottom: em(25);
-						@include transform(translateY(50%));
+						position: absolute;
+						top: em(-277);
+						left: 50%;
+						@include transform(translateX(-50%));
+						@media (min-width: $screen-sm-min){
+							left: em(20);
+							@include transform(translateY(50%));
+							top: em(-160);							
+						}
 						@media (min-width: $screen-md-min){
+							top: auto;
 							bottom: em(-73);
 						}
 						@media (min-width: $screen-lg-min){
@@ -862,9 +1010,15 @@ body.mr-jason-grant{
 						margin-left: em(45);
 					}
 					.hex-block{
-						left: auto;
-						right: 0;
-						@include transform(translateX(50%) translateY(-50%));
+						@media (min-width: $screen-sm-min){
+							left: auto;
+							right: em(41);
+							@include transform(translateX(50%) translateY(-50%));
+						}
+						@media (min-width: $screen-md-min){
+							left: auto;
+							right: 0;
+						}
 						svg{
 							path{
 								fill: $mr-light-purple;
@@ -874,28 +1028,7 @@ body.mr-jason-grant{
 				}
 			}			
 		}
-		#day-spa-featured-products{
-			margin-bottom: em(40);
-			.main-content{
-				padding: em(40) em(20) em(20);
-				@media (min-width: $screen-xl-min){
-					padding-bottom: em(93);
-					padding-right: em(60);
-				}
-			}
-			.title{
-				padding-top: em(70);
-				@media (min-width: $screen-xl-min){
-					padding-left: em(60);
-				}
-				h2{
-					color: $mr-blue;
-					font-size: em(46);
-					text-decoration: underline;
-				}
-			}
-		}
-		#neo-classic-featured-products{
+		.product-listing{
 			position: relative;
 			margin-bottom: em(40);
 			.main-content{
@@ -906,7 +1039,9 @@ body.mr-jason-grant{
 				}
 			}
 			.title{
-				padding-top: em(70);
+				@media (min-width: $screen-md-min){
+					padding-top: em(70);
+				}
 				@media (min-width: $screen-xl-min){
 					padding-left: em(60);
 				}
@@ -916,11 +1051,24 @@ body.mr-jason-grant{
 					text-decoration: underline;
 				}
 			}
+		}
+		#day-spa-featured-products{
+			.title{
+				h2{
+					color: $mr-blue;
+				}
+			}
+		}
+		#neo-classic-featured-products{
+			.title{
+				h2{
+					color: $mr-blue;
+				}
+			}
 			.hex-block{
 				width: em(183);
 				height: em(201);
-				right: em(50);
-				left: auto;
+				left: 25%;
 				top: em(-76);
 				svg{
 					width: em(183);
@@ -928,6 +1076,10 @@ body.mr-jason-grant{
 					path{
 						fill: $mr-light-blue;
 					}
+				}
+				display: none;
+				@media (min-width: $screen-xl-min){
+					display: block;
 				}
 				.text{
 					font-size: em(21);
@@ -938,24 +1090,9 @@ body.mr-jason-grant{
 			}
 		}
 		#coastal-luxury-featured-products{
-			position: relative;
-			margin-bottom: em(40);
-			.main-content{
-				padding: em(40) em(20) em(20);
-				@media (min-width: $screen-xl-min){
-					padding-bottom: em(93);
-					padding-right: em(60);
-				}
-			}
 			.title{
-				padding-top: em(70);
-				@media (min-width: $screen-xl-min){
-					padding-left: em(60);
-				}
 				h2{
 					color: $mr-dark-purple;
-					font-size: em(46);
-					text-decoration: underline;
 				}
 			}
 		}

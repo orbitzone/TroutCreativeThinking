@@ -532,9 +532,12 @@ body.mr-jason-grant{
 							margin: 0;
 							right: em(120);
 							left: auto;
-							top: 0;
+							top: em(-54);
 							z-index: 4;
 							@include transform(translateX(50%) translateY(-50%));
+						}
+						@media (min-width: $screen-md-min){
+							top: 0;							
 						}
 					}
 					.hotspots{
@@ -700,7 +703,7 @@ body.mr-jason-grant{
 						z-index: 4;
 						@include transform(translateX(-50%));
 						@media (min-width: $screen-sm-min){
-							top: em(-64);
+							top: em(-160);
 							left: auto;
 							right: em(120);
 							@include transform(translateX(50%));
@@ -926,8 +929,8 @@ body.mr-jason-grant{
 						z-index: 4;
 						@include transform(translateX(-50%));
 						@media (min-width: $screen-sm-min){
-							top: em(-64);
-							right: em(120);
+							top: em(-160);
+							left: em(-10);
 							@include transform(translateX(50%));
 						}
 						@media (min-width: $screen-md-min){

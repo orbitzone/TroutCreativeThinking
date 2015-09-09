@@ -4,11 +4,12 @@ $black:				#000;
 $dark-grey: 	#3f3f3f;
 $darker-grey:   #252525;
 $blue:				#c7e6f4;
-$pink: 				#f1c3cb; /*eaacb7*/
+$pink: 				#ffbbc8; /*eaacb7*/
 $gold: 				#c6ac75;
 $dark-pink: 	#d93d96;
 $green:				#6bccb8;
 $dark-green:  #006166;
+$dark-green-highlight: #1f767b;
 $pale-blue:   #6a8893;
 $rose-gold:   #e98e72;
 
@@ -18,22 +19,26 @@ $body-grey:   #F2F2F2;
 $grey:				#828282;
 $red:					#c91d1d;
 
+$blue-grey: #63838d;
+$purple-grey: #565c68;
+$brown-grey: #646466;
+$turquoise: #5ec4b2;
 /* Mr Jason Grant colours*/
 
 $mr-blue:			#003768;
 $mr-light-blue: #345e8b;
 $mr-green-banner:			#6aa59c;
-$mr-day-spa-bg:					#63838d;
+$mr-day-spa-bg:					$blue-grey;
 $mr-neo-classic-bg:					#f7f7f7;
 $mr-coastal-luxury-bg:					#c2c0c1;
 $mr-light-green:        #8fd0b9;
-$mr-dark-green:					#1f767b;
-$mr-light-purple: #565c68;
+$mr-dark-green: $dark-green-highlight;
+$mr-light-purple: $purple-grey;
 $mr-dark-purple: #363a43;
 /* Love Family*/
 
 	/* bathrooms for inspiration section */
-	$options-bg: $dark-grey;
+$options-bg: $dark-grey;
 
 
 $browser-context: 16;

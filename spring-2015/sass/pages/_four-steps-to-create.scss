@@ -2,35 +2,122 @@
 // Four Steps to Create
 // -------------------------------------
 
-$stepOneGreen : #006166;
-$stepOneNumber: #c6ac75;
-$stepOneGreenHighlight: #1f767b;
-$stepsGrey: #63838d;
+$stepOneGreen : $dark-green;
+$stepOneNumber: $gold;
+$stepOneGreenHighlight: $dark-green-highlight;
+$stepsGrey: $blue-grey;
+$stepTwoPink: $pink;
+
+$hexLargeWidth-lg: 530px;
+$hexLargeHeight-lg: auto;
+
+$hexTipWidth-lg: 138px;
+$hexTipHeight-lg: auto;
 
 body.four-steps-to-create{
-  .hex-block{
-    color: $white;
-    width: 520px;
-    height: auto;
-    margin: 0 auto;
-    margin-top: em(40);
-    margin-bottom: em(40);
+  // Hex Blocks
+  .hex-large,
+  .hex-tip{
     position: relative;
-    svg{
-      width: 520px;
-      path{
-        fill: $stepOneGreen;
-      }
-    }
+    color: $white;
     .text{
-      position: absolute;
       text-align: center;
       width: 100%;
       @extend %center-align;
+    }
+  }
+  .hex-large{
+    width: $hexLargeWidth-lg;
+    height: $hexLargeHeight-lg;
+    &>svg{
+      width: $hexLargeWidth-lg;
+      height: $hexLargeHeight-lg;
+    }
+    .step-number{
+
+    }
+    .text{
+      padding: 0 40px;
       p{
         font-size: em(18);
         margin-bottom: 0; 
       }
     }
+  }
+  .hex-tip{
+    width: $hexTipWidth-lg;
+    height: $hexTipHeight-lg;
+    svg{
+      width: $hexTipWidth-lg;
+      height: $hexTipHeight-lg;
+    }
+  }
+  // Hero Title
+  .page-hero{
+    h1{
+      text-decoration: underline;
+      padding-top: 10%;
+      padding-left: 10%;
+    }
+  }
+  // Step One
+  .section-step-one{
+    position: relative;
+    header{
+      @extend %center-align-top;
+      z-index: 3;
+      svg{
+        path{
+          fill: $stepOneGreen;
+        }
+        .hex-tip{
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+    .tile-trends{
+      position: relative;
+      z-index: 2;
+      max-width: 560px;
+      float: right;
+      @include clearfix;
+      .thumb{
+        float: left;
+        width: 60%
+      }
+    }
+    .tile-polaroid{
+      position: relative;
+      z-index: 1;
+      float: left;
+      max-width: 500px;
+    }
+    .tile-finishing-touches{
+      position: relative;
+      z-index: 4;
+      clear: both;
+    }
+    .tile-collecting-tips{
+      position: relative;
+      z-index: 1;
+    }
+    .tile-pinterest{
+      position: relative;
+      z-index: 4;
+    }
+  }
+  // Step Two
+  .section-step-two{
+
+  }
+  // Step Three
+  .section-step-three{
+    
+  }
+  // Step Four
+  .section-step-four{
+    
   }
 }

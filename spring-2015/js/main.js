@@ -998,7 +998,7 @@ jQuery(function($){
 						var videoContainer = $(this).data('video-container');
 						player.stop(videoContainer);
 						$('#mr-jason-grant .'+videoContainer).slick('slickPrev');
-					});															
+					});
 					$('#mr-jason-grant .products-slide').slick({
 						slidesToShow: 4,
 						slidesToScroll: 4,
@@ -1029,8 +1029,21 @@ jQuery(function($){
 					    }
 						]
 					});
+					// Subscribe form validator
+					$('#subscribe form').validate();
 				}
 			});			
+		}
+	};
+	moodboardPage = {
+		init: function(){
+			$.ajax({
+				cache: false,
+				url:'pages/moodboard.html',
+				success: function(data){
+					$('#main-content').html(data);					
+				}
+			});
 		}
 	};
 	function requestContent(section) {
@@ -1048,6 +1061,9 @@ jQuery(function($){
 	  }
 	  if(section == 'mr-jason-grant'){
 	  	mrJasonGrant.init();
+	  }
+	  if(section == 'moodboard'){
+	  	moodboardPage.init();
 	  }
 	  if(section == undefined){
 	  	homePage.init();
@@ -1100,6 +1116,9 @@ jQuery(function($){
 		}
 		if($('body').hasClass('mr-jason-grant')){
 			mrJasonGrant.init();
+		}
+		if($('body').hasClass('moodboard')){
+			moodboardPage.init();
 		}
 		$(document).on('touchstart','#destination-happiness-content a, #main-content a, #main-content button', function(){
 			TweenMax.to($(this),0.5,{ scale: 0.9, ease: Power2.easeOut });

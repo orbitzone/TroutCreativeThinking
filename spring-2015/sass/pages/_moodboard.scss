@@ -1,5 +1,35 @@
 body.moodboard{
+	#main{
+		max-width: 100%;
+	}
 	section#moodboard{
-		
+		min-height: 500px;
+		.title{
+			@include clearfix;
+			h1{
+				color: $white;
+				font-size: em(52);
+				.block{
+					display: block;
+					float: left;
+					padding: em(2) em(6);
+					background: $pink;
+					clear: both;
+					text-decoration: underline;
+				}
+			}
+		}
+		.plant{
+			position: absolute;
+			top: 0;
+			left: 0;
+			@include transform(translateX(-100%));
+		}
+		.destination-happiness{
+			position: absolute;
+			top: 0;
+			right: 0;
+			@include transform(translateX(100%));
+		}
 	}
 }

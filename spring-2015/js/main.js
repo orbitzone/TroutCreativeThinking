@@ -950,7 +950,10 @@ jQuery(function($){
 				cache: false,
 				url:'pages/mr-jason-grant.html',
 				success: function(data){
-					$('#main-content').html(data);
+					$('#main-content').html(data).imagesLoaded().then(function(){
+						$('#mr-jason-grant .product').matchHeight();
+						$(window).resize();
+					});
 					$('#mr-jason-grant .slider').slick({
 						slidesToShow: 1,
   					slidesToScroll: 1,
@@ -994,7 +997,7 @@ jQuery(function($){
 						player.stop(videoContainer);
 						$('#mr-jason-grant .video-slider').slick('slickPrev');
 					});															
-					$('.products-slide').slick({
+					$('#mr-jason-grant .products-slide').slick({
 						slidesToShow: 4,
 						slidesToScroll: 4,
 						infinite: false,
@@ -1002,8 +1005,26 @@ jQuery(function($){
 						nextArrow: "<button type=\"button\" class=\"arrow-next\"><i class=\"iconr-arrow-right\"></i></button>",
 						responsive: [
 						{
-
-						}
+							breakpoint: 1200,
+				      settings: {
+				      	slidesToShow: 3,
+								slidesToScroll: 3
+			      	}
+			    	},
+			    	{
+					      breakpoint: 992,
+					      settings: {
+					      	slidesToShow: 2,
+									slidesToScroll: 2
+					      }
+					    },
+					    {
+					      breakpoint: 480,
+					      settings: {
+					      	slidesToShow: 2,
+									slidesToScroll: 2
+					      }
+					    }
 						]
 					});
 				}

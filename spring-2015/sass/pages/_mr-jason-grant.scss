@@ -9,12 +9,18 @@ body.mr-jason-grant{
 			}
 			.video-wrap{
 				position: relative;
-				height: em(400);
+				height: em(142);
 				@media (min-width: $screen-sm-min){
-					height: em(480);
+					height: em(347);
+				}
+				@media (min-width: $screen-sm-min){
+					height: em(296);
 				}
 				@media (min-width: $screen-lg-min){
-					height: em(400);
+					height: em(375);
+				}
+				@media (min-width: $screen-lg-min){
+					height: em(512);
 				}
 				padding-right: em(54);
 				.video-iframe{
@@ -122,22 +128,22 @@ body.mr-jason-grant{
 			overflow: hidden;
 			.intro{
 				position: absolute;
-				width: em(440);
+				width: percentage(440/1526);
 				right: 37.2%;
 				height: 100%;
 				bottom: 0;
 				overflow: hidden;
 				z-index: 0;
 				.block{
-						position: absolute;
-						width: 100%;
-						height: 100%;
-						top: 0;
-						left: 0;
-						background: $mr-green-banner;
-						@include transform(skew(-35.2deg));
-						@include transform-origin(bottom left);
-					}
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					top: 0;
+					left: 0;
+					background: $mr-green-banner;
+					@include transform(skew(-35.2deg));
+					@include transform-origin(bottom left);
+				}
 				.title{
 					position: absolute;
 					right: em(50);
@@ -174,6 +180,26 @@ body.mr-jason-grant{
 		.products-slide{
 			.product{
 				margin: 0 em(15);
+				padding-bottom: em(54);
+				position: relative;
+				margin-bottom: em(20);
+				.button-mood-shop{
+					position: absolute;
+					bottom: 0;
+					left: 0;
+				}
+			}
+			.slick-arrow{
+				i{
+					color: $mr-blue;
+					font-size: em(55);					
+				}
+				&.arrow-next{
+					right: em(-50);
+				}
+				&.arrow-prev{
+					left: em(-50);
+				}
 			}
 		}
 		.bathroom{
@@ -185,7 +211,7 @@ body.mr-jason-grant{
 			position: relative;
 			background: $black;
 			color: $white;
-			padding: em(70) em(50) em(50);
+			padding: em(60) em(50) em(50);
 			h3{
 				font-size: em(27);
 				margin-top: 0;
@@ -278,28 +304,47 @@ body.mr-jason-grant{
 				.intro{
 					color: $white;
 					padding-left: em(50);
-					width: em(382);
 					margin-top: em(50);
+					padding-right: em(126);
+					@media (min-width: $screen-xl-min){
+						padding-right: 0;
+					}
 					p{
 						font-size: em(17);
 					}
 				}
-				.title{
-					color: $white;
-					margin: em(40) 0;
-					h2{
-						font-size: em(60);
-						margin: 0;
-						text-decoration: underline;
+				.day-spa-title{
+					@media (min-width: $screen-xl-min){
+						padding-left: em(49);
 					}
-				}
-				.intro-description{
-					color: $mr-blue;
-					padding-left: em(50);
-					width: em(382);
-					p{
-						font-size: em(17);
-					}
+					.title{
+							color: $white;
+							margin: em(-5) 0 em(25);
+							@media (min-width: $screen-xl-min){
+								margin: em(132) 0 em(25);
+							}
+							h2{
+								font-size: em(60);
+								margin: 0;
+								text-decoration: underline;
+							}
+						}
+						.intro-description{
+							color: $mr-blue;
+							padding-left: em(50);
+							@media (min-width: $screen-md-min){
+								width: em(328);
+								padding-bottom: em(40);
+							}
+							@media (min-width: $screen-xl-min){
+								width: auto;
+								padding-bottom: 0;
+							}
+							p{
+								font-size: em(21);
+								margin-bottom: 0;
+							}
+						}
 				}
 				.bathrooms-for-inspiration{
 					.hex-block{
@@ -358,8 +403,8 @@ body.mr-jason-grant{
 						}
 					}
 					.title{
-						top: em(190);
-						right: em(90);
+						top: percentage(190/512);
+						right: percentage(90/870);
 					}
 				}
 				.tip{
@@ -367,7 +412,9 @@ body.mr-jason-grant{
 					z-index: 2;
 					color: $white;
 					background: $mr-dark-green;
-					margin-right: em(75);
+					@media (min-width: $screen-xl-min){
+						margin-right: em(75);
+					}
 					.hex-block{
 						svg{
 							path{
@@ -380,25 +427,28 @@ body.mr-jason-grant{
 		}
 		#neo-classic{
 			background: $mr-neo-classic-bg;
-			.main-content{
-				padding: em(40);
-			}
 			.top-section{
 				position: relative;
 				background: url('../images/mr-jason-grant/neo-classic-bg.jpg') no-repeat top left;
 				margin-bottom: em(40);
 				.main-content{
-					padding-bottom: 0;
+					padding: em(40) em(20) 0;
+					@media (min-width: $screen-xl-min){
+						padding: em(40) em(40) 0;
+					}
 				}
 				.block-skew{
 					position: absolute;
 					top: 0;
-					left: 0;
+					left: -13%;
 					width: 100%;
 					height: 100%;
 					background: $mr-neo-classic-bg;
 					@include transform(skewX(-40deg));
 					@include transform-origin(bottom left);
+					@media (min-width: $screen-xl-min){
+						left: 0;
+					}
 				}
 				.intro{
 					color: $white;
@@ -411,7 +461,10 @@ body.mr-jason-grant{
 				}
 				.title{
 					color: $mr-blue;
-					margin: em(40) 0 em(25);
+					margin: 0 0 em(25);
+					@media (min-width: $screen-xl-min){
+						margin: em(40) 0 em(25);
+					}
 					h2{
 						font-size: em(60);
 						margin: 0;
@@ -420,6 +473,12 @@ body.mr-jason-grant{
 				}
 				.intro-description{
 					color: $black;
+					width: em(208);
+					padding-bottom: em(40);
+					@media (min-width: $screen-xl-min){
+						width: auto;
+						padding-bottom: 0;
+					}
 					p{
 						font-size: em(17);
 					}
@@ -501,6 +560,9 @@ body.mr-jason-grant{
 				}
 			}
 			.bottom-section{
+				.main-content{
+					padding: 0 em(20) em(40);
+				}
 				.video{
 					.hex-block{
 						z-index: 4;
@@ -517,7 +579,11 @@ body.mr-jason-grant{
 					.title{
 						text-align: right;
 						top: em(40);
-						right: em(120);
+							right: 15%;
+						@media (min-width: $screen-xl-min){
+							top: em(40);
+							right: em(120);
+						}
 					}
 				}
 				.tip{
@@ -525,7 +591,11 @@ body.mr-jason-grant{
 					z-index: 2;
 					color: $white;
 					background: $mr-light-blue;
-					margin-right: em(75);
+					margin-bottom: em(40);
+					@media (min-width: $screen-xl-min){
+						margin-right: em(75);
+						margin-bottom: 0;
+					}
 					.hex-block{
 						svg{
 							path{
@@ -538,14 +608,14 @@ body.mr-jason-grant{
 		}
 		#coastal-luxury{
 			background: $mr-coastal-luxury-bg;
-			.main-content{
-				padding: em(40);
-			}
 			.top-section{
 				position: relative;
 				margin-bottom: em(40);
 				.main-content{
-					padding-bottom:0;
+					padding: em(40) em(20) 0;
+					@media (min-width: $screen-xl-min){
+						padding: em(40) em(40) 0;
+					}
 				}
 				.block-skew{
 					background: $mr-light-purple;
@@ -554,7 +624,7 @@ body.mr-jason-grant{
 					bottom: 0;
 					width: 100%;
 					height: 100%;
-					@include transform(skew(40deg));
+					@include transform(skew(36deg));
 					@include transform-origin(bottom left);
 				}
 				.intro{
@@ -570,6 +640,10 @@ body.mr-jason-grant{
 					color: $white;
 					margin: em(40) 0;
 					text-align: right;
+					margin-right: 40px;
+					@media (min-width: $screen-xl-min){
+						margin-right: 0;
+					}
 					h2{
 						font-size: em(60);
 						margin: 0;
@@ -649,6 +723,12 @@ body.mr-jason-grant{
 				}
 			}
 			.bottom-section{
+				.main-content{
+					padding: 0 em(20) em(40);
+					@media (min-width: $screen-xl-min){
+						padding: 0 em(40) em(40);
+					}
+				}
 				.video{
 					.hex-block{
 						z-index: 4;
@@ -663,6 +743,12 @@ body.mr-jason-grant{
 						}
 					}
 					.title{
+						top: em(12);
+						right: em(18);
+						@media (min-width: $screen-xl-min){
+							top: em(40);
+							right: em(40);
+						}
 						h2{
 							color: $white;
 						}
@@ -673,7 +759,10 @@ body.mr-jason-grant{
 					z-index: 2;
 					color: $white;
 					background: $mr-dark-purple;
-					margin-left: em(45);
+					margin-bottom: em(40);
+					@media (min-width: $screen-xl-min){
+						margin-left: em(45);
+					}
 					.hex-block{
 						left: auto;
 						right: 0;
@@ -689,14 +778,18 @@ body.mr-jason-grant{
 		}
 		#day-spa-featured-products{
 			margin-bottom: em(40);
-			.line-pattern{
-				padding-top: em(40);
-				padding-bottom: em(93);
-				padding-right: em(60);
+			.main-content{
+				padding: em(40) em(20) em(20);
+				@media (min-width: $screen-xl-min){
+					padding-bottom: em(93);
+					padding-right: em(60);
+				}
 			}
 			.title{
 				padding-top: em(70);
-				padding-left: em(60);
+				@media (min-width: $screen-xl-min){
+					padding-left: em(60);
+				}
 				h2{
 					color: $mr-blue;
 					font-size: em(46);
@@ -707,14 +800,18 @@ body.mr-jason-grant{
 		#neo-classic-featured-products{
 			position: relative;
 			margin-bottom: em(40);
-			.line-pattern{
-				padding-top: em(40);
-				padding-bottom: em(93);
-				padding-right: em(60);
+			.main-content{
+				padding: em(40) em(20) em(20);
+				@media (min-width: $screen-xl-min){
+					padding-bottom: em(93);
+					padding-right: em(60);
+				}
 			}
 			.title{
 				padding-top: em(70);
-				padding-left: em(60);
+				@media (min-width: $screen-xl-min){
+					padding-left: em(60);
+				}
 				h2{
 					color: $mr-blue;
 					font-size: em(46);
@@ -745,14 +842,18 @@ body.mr-jason-grant{
 		#coastal-luxury-featured-products{
 			position: relative;
 			margin-bottom: em(40);
-			.line-pattern{
-				padding-top: em(40);
-				padding-bottom: em(93);
-				padding-right: em(60);
+			.main-content{
+				padding: em(40) em(20) em(20);
+				@media (min-width: $screen-xl-min){
+					padding-bottom: em(93);
+					padding-right: em(60);
+				}
 			}
 			.title{
 				padding-top: em(70);
-				padding-left: em(60);
+				@media (min-width: $screen-xl-min){
+					padding-left: em(60);
+				}
 				h2{
 					color: $mr-dark-purple;
 					font-size: em(46);

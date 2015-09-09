@@ -116,6 +116,51 @@ body.spring-2015{
 			line-height: inherit;
 			font-family: $font-family;
 		}
+		.col-xl-12{
+			@media (min-width: $screen-xl-min){
+				float: none;
+				width: 100%;
+				display: block;
+			}
+		}
+		.col-xl-2{
+			@media (min-width: $screen-xl-min){
+			 width: 16.66667%;
+			}
+		}
+		.col-xl-3{
+			@media (min-width: $screen-xl-min){
+			 width: 25%;
+			}
+		}
+		.col-xl-9{
+			@media (min-width: $screen-xl-min){
+				width: 75%;
+			}
+		}
+		
+		.col-xl-pull-3{
+			@media (min-width: $screen-xl-min){
+	    	right: 25%;
+	  	}
+		}
+		.col-xl-push-9{
+			@media (min-width: $screen-xl-min){
+	    	left: 75%;
+	  	}
+		}
+		.col-xl-2,
+		.col-xl-3,
+		.col-xl-9,
+		.col-xl-12{
+			position: relative;
+	    min-height: 1px;
+	    padding-left: 15px;
+	    padding-right: 15px;
+			@media (min-width: $screen-xl-min){
+				float: left;
+			}
+		}
 		.slick-slider{
 			.slick-dots{
 				margin: 0;

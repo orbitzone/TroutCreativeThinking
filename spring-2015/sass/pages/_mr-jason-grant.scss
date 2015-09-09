@@ -19,7 +19,7 @@ body.mr-jason-grant{
 				@media (min-width: $screen-lg-min){
 					height: em(375);
 				}
-				@media (min-width: $screen-lg-min){
+				@media (min-width: $screen-xl-min){
 					height: em(512);
 				}
 				padding-right: em(54);
@@ -178,6 +178,7 @@ body.mr-jason-grant{
 			}
 		}
 		.products-slide{
+			margin: 0 em(30);
 			.product{
 				margin: 0 em(15);
 				padding-bottom: em(54);
@@ -305,7 +306,13 @@ body.mr-jason-grant{
 					color: $white;
 					padding-left: em(50);
 					margin-top: em(50);
-					padding-right: em(126);
+					@media (min-width: $screen-md-min){
+						padding-right: em(20);
+					}
+					@media (min-width: $screen-lg-min){
+						padding-right: em(126);
+						padding-bottom: em(40);
+					}
 					@media (min-width: $screen-xl-min){
 						padding-right: 0;
 					}
@@ -319,9 +326,15 @@ body.mr-jason-grant{
 					}
 					.title{
 							color: $white;
-							margin: em(-5) 0 em(25);
+							margin: 0 0 em(25);
+							@media (min-width: $screen-md-min){
+								margin-top: em(48);
+							}
+							@media (min-width: $screen-lg-min){
+								margin-top: em(18);
+							}
 							@media (min-width: $screen-xl-min){
-								margin: em(132) 0 em(25);
+								margin: em(69) 0 em(25);
 							}
 							h2{
 								font-size: em(60);
@@ -332,8 +345,19 @@ body.mr-jason-grant{
 						.intro-description{
 							color: $mr-blue;
 							padding-left: em(50);
-							@media (min-width: $screen-md-min){
+							@media (min-width: $screen-sm-min){
 								width: em(328);
+								padding-left: em(30);
+								padding-bottom: em(40);
+							}
+							@media (min-width: $screen-md-min){
+								width: em(280);
+								padding-left: em(30);
+								padding-bottom: em(40);
+							}
+							@media (min-width: $screen-lg-min){
+								width: em(306);
+								padding-left: em(50);
 								padding-bottom: em(40);
 							}
 							@media (min-width: $screen-xl-min){
@@ -485,11 +509,18 @@ body.mr-jason-grant{
 				}
 				.bathrooms-for-inspiration{
 					.hex-block{
-						right: em(20);
+						right: em(120);
 						left: auto;
 						top: em(-64);
 						z-index: 4;
 						@include transform(translateX(50%));
+						@media (min-width: $screen-lg-min){
+							top: em(-135);
+						}
+						@media (min-width: $screen-xl-min){
+							top: em(-64);
+							right: em(20);
+						}
 						svg{
 							path{
 								fill: $mr-blue;
@@ -579,7 +610,7 @@ body.mr-jason-grant{
 					.title{
 						text-align: right;
 						top: em(40);
-							right: 15%;
+						right: 15%;
 						@media (min-width: $screen-xl-min){
 							top: em(40);
 							right: em(120);
@@ -662,12 +693,19 @@ body.mr-jason-grant{
 				}
 				.bathrooms-for-inspiration{
 					.hex-block{
-						right: em(44);
+						right: em(120);
 						left: auto;
 						top: auto;
 						bottom: em(-20);
 						z-index: 4;
 						@include transform(translateX(50%));
+						@media (min-width: $screen-lg-min){
+							bottom: em(-30);
+						}
+						@media (min-width: $screen-xl-min){
+							right: em(44);
+							bottom: em(-20);
+						}
 						svg{
 							path{
 								fill: $mr-dark-purple;

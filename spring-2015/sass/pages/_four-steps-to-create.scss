@@ -1,0 +1,36 @@
+//
+// Four Steps to Create
+// -------------------------------------
+
+$stepOneGreen : #006166;
+$stepOneNumber: #c6ac75;
+$stepOneGreenHighlight: #1f767b;
+$stepsGrey: #63838d;
+
+body.four-steps-to-create{
+  .hex-block{
+    color: $white;
+    width: 520px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: em(40);
+    margin-bottom: em(40);
+    position: relative;
+    svg{
+      width: 520px;
+      path{
+        fill: $stepOneGreen;
+      }
+    }
+    .text{
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      @extend %center-align;
+      p{
+        font-size: em(18);
+        margin-bottom: 0; 
+      }
+    }
+  }
+}

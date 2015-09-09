@@ -637,6 +637,7 @@ body.mr-jason-grant{
 						@include transform(translateX(-50%));
 						@media (min-width: $screen-sm-min){
 							top: em(-64);
+							left: auto;
 							right: em(120);
 							@include transform(translateX(50%));
 						}
@@ -645,6 +646,7 @@ body.mr-jason-grant{
 						}
 						@media (min-width: $screen-lg-min){
 							top: em(-135);
+							right: em(110);
 						}
 						@media (min-width: $screen-xl-min){
 							top: em(-64);

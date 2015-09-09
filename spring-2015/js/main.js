@@ -988,15 +988,15 @@ jQuery(function($){
   					swipe: false
 					})
 					$('#mr-jason-grant .video .play').on('click', function(){
-						$('#mr-jason-grant .video-slider').slick('slickNext');
 						var videoContainer = $(this).data('video-container');
 						var video = $(this).data('video');
+						$('#mr-jason-grant .'+videoContainer).slick('slickNext');
 						player.init(videoContainer,video);
 					});
 					$('#mr-jason-grant .close-video').on('click', function(){
 						var videoContainer = $(this).data('video-container');
 						player.stop(videoContainer);
-						$('#mr-jason-grant .video-slider').slick('slickPrev');
+						$('#mr-jason-grant .'+videoContainer).slick('slickPrev');
 					});															
 					$('#mr-jason-grant .products-slide').slick({
 						slidesToShow: 4,

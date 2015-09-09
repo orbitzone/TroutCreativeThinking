@@ -440,6 +440,12 @@ body.mr-jason-grant{
 						left: em(20);
 						bottom: em(25);
 						@include transform(translateY(50%));
+						@media (min-width: $screen-md-min){
+							bottom: em(-71);
+						}
+						@media (min-width: $screen-lg-min){
+							bottom: em(25);
+						}
 						svg{
 							path{
 								fill: $mr-dark-green;
@@ -539,7 +545,7 @@ body.mr-jason-grant{
 						z-index: 4;
 						@include transform(translateX(50%));
 						@media (min-width: $screen-md-min){
-							top: em(-80);
+							top: em(-180);
 						}
 						@media (min-width: $screen-lg-min){
 							top: em(-135);
@@ -816,6 +822,12 @@ body.mr-jason-grant{
 						left: em(20);
 						bottom: em(25);
 						@include transform(translateY(50%));
+						@media (min-width: $screen-md-min){
+							bottom: em(-73);
+						}
+						@media (min-width: $screen-lg-min){
+							bottom: em(25);
+						}
 						svg{
 							path{
 								fill: $mr-dark-purple;
@@ -825,6 +837,12 @@ body.mr-jason-grant{
 					.title{
 						top: em(12);
 						right: em(18);
+						@media (min-width: $screen-md-min){
+							text-align: right;
+						}
+						@media (min-width: $screen-lg-min){
+							text-align: left;
+						}
 						@media (min-width: $screen-xl-min){
 							top: em(40);
 							right: em(40);

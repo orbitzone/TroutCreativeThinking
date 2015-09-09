@@ -1,10 +1,13 @@
 body.moodboard{
-	#main{
-		max-width: 100%;
-	}
 	section#moodboard{
-		min-height: 500px;
+		.line-pattern{
+			min-height: 800px;
+		}
+		.main-content{
+			max-width: em(1200);
+		}
 		.title{
+			margin-bottom: em(40);
 			@include clearfix;
 			h1{
 				color: $white;
@@ -30,6 +33,37 @@ body.moodboard{
 			top: 0;
 			right: 0;
 			@include transform(translateX(100%));
+		}
+		.product{
+			position: relative;
+			background: $white;
+			border: 1px solid $black;
+			padding: em(20);
+			margin-bottom: em(20);
+			.remove{
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				text-align: right;
+				button{
+					background: none;
+					border: none;
+					@include appearance(none);
+					padding: em(5);
+					i{
+						color: $grey;
+					}
+				}
+			}
+			.image{
+				margin-bottom: em(10);
+			}
+			.name{
+				color: $black;
+				text-decoration: underline;
+				font-size: em(26);
+			}
 		}
 	}
 }

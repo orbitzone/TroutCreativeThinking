@@ -265,4 +265,24 @@ body.spring-2015{
 			margin-left: 38px;		
 		}
 	}
+	button.add-to-cart{
+		background: $green;
+		color: $white;
+		border: none;
+		font-size: 1em;
+		font-weight: 700;
+		padding: em(14) em(12);
+		line-height: 1em;
+		outline: none;
+		@include appearance(none);
+		@include border-radius(0px 4px 4px 0px);
+		span.button-text{
+			margin-right: em(10);
+		}
+		white-space: nowrap;
+		margin-left: 32px;		
+		@media (min-width: $screen-sm-min){
+			margin-left: 38px;		
+		}
+	}
 }

@@ -357,7 +357,7 @@ jQuery(function($){
 					$('#bathrooms-we-love .video-slider').slick({
 						slidesToShow: 1,
   					slidesToScroll: 1,
-  					infinite: false,
+  					infinite: true,
   					arrows: false,
   					swipe: false
 					})
@@ -426,7 +426,7 @@ jQuery(function($){
 					$('#bathrooms-for-inspiration .products-slide').slick({
 						slidesToShow: 4,
   					slidesToScroll: 4,
-  					infinite: false,
+  					infinite: true,
   					prevArrow: "<button type=\"button\" class=\"arrow-prev\"><i class=\"iconr-arrow-left\"></i></button>",
   					nextArrow: "<button type=\"button\" class=\"arrow-next\"><i class=\"iconr-arrow-right\"></i></button>",
 					 	responsive: [
@@ -499,7 +499,7 @@ jQuery(function($){
 					$('#smart-storage .products-slide').slick({
 						slidesToShow: 3,
   					slidesToScroll: 3,
-  					infinite: false,
+  					infinite: true,
   					prevArrow: "<button type=\"button\" class=\"arrow-prev\"><i class=\"iconr-arrow-left\"></i></button>",
   					nextArrow: "<button type=\"button\" class=\"arrow-next\"><i class=\"iconr-arrow-right\"></i></button>",
 					 	responsive: [
@@ -639,7 +639,7 @@ jQuery(function($){
 					$('#bathrooms-for-inspiration .products-slide').slick({
 						slidesToShow: 4,
   					slidesToScroll: 4,
-  					infinite: false,
+  					infinite: true,
   					prevArrow: "<button type=\"button\" class=\"arrow-prev\"><i class=\"iconr-arrow-left\"></i></button>",
   					nextArrow: "<button type=\"button\" class=\"arrow-next\"><i class=\"iconr-arrow-right\"></i></button>",
 					 	responsive: [
@@ -709,7 +709,7 @@ jQuery(function($){
 					$('#products .slider').slick({
 						slidesToShow: 1,
   					slidesToScroll: 1,
-  					infinite: false,
+  					infinite: true,
   					arrows: true,
   					dots: true,
   					prevArrow: "<button type=\"button\" class=\"arrow-prev\"><i class=\"iconr-arrow-left\"></i></button>",
@@ -817,7 +817,7 @@ jQuery(function($){
 					$('#bathrooms-for-inspiration .products-slide').slick({
 						slidesToShow: 4,
   					slidesToScroll: 4,
-  					infinite: false,
+  					infinite: true,
   					prevArrow: "<button type=\"button\" class=\"arrow-prev\"><i class=\"iconr-arrow-left\"></i></button>",
   					nextArrow: "<button type=\"button\" class=\"arrow-next\"><i class=\"iconr-arrow-right\"></i></button>",
 					 	responsive: [
@@ -896,7 +896,7 @@ jQuery(function($){
 					$('#colour-picker .slider').slick({
 						slidesToShow: 1,
   					slidesToScroll: 1,
-  					infinite: false,
+  					infinite: true,
   					swipe: false,
   					prevArrow: "<button type=\"button\" class=\"arrow-prev\"><i class=\"iconr-arrow-left\"></i></button>",
   					nextArrow: "<button type=\"button\" class=\"arrow-next\"><i class=\"iconr-arrow-right\"></i></button>"					 	
@@ -1001,7 +1001,7 @@ jQuery(function($){
 					$('#mr-jason-grant .products-slide').slick({
 						slidesToShow: 4,
 						slidesToScroll: 4,
-						infinite: false,
+						infinite: true,
 						prevArrow: "<button type=\"button\" class=\"arrow-prev\"><i class=\"iconr-arrow-left\"></i></button>",
 						nextArrow: "<button type=\"button\" class=\"arrow-next\"><i class=\"iconr-arrow-right\"></i></button>",
 						responsive: [

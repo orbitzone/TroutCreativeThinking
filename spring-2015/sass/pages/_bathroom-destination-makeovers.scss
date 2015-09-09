@@ -210,17 +210,17 @@ body.spring-2015{
 			.product-slider-wrap{
 				@media (min-width: $screen-md-min){
 					width: em(250);
-					margin-top: em(-31);
+					margin-top: em(0);
 	    		margin-left: em(-60);
     		}
 				@media (min-width: $screen-lg-min){
 					width: auto;
-					margin-top: 0;
+					margin-top: em(70);
 	    		margin-left: em(-97);
     		}
     		@media (min-width: $screen-xl-min){
 					width: em(341);
-					margin-top: em(53);
+					margin-top: em(128);
 	    		margin-left: em(-97);
     		}
 				.slider{
@@ -229,9 +229,8 @@ body.spring-2015{
 					}
 				}
 				.slider .slick-arrow{
-					top: 230px;
 					@include transform(none);
-					@media (min-width: $screen-sm-min){
+					/*@media (min-width: $screen-sm-min){
 							top: 182px;
 					}
 					@media (min-width: $screen-md-min){
@@ -242,6 +241,19 @@ body.spring-2015{
 					}
 					@media (min-width: $screen-xl-min){
 							top: em(260);
+					}*/
+					top: em(276);
+					@media (min-width: $screen-sm-min){
+							top: em(276);
+					}
+					@media (min-width: $screen-md-min){
+							top: em(276);
+					}
+					@media (min-width: $screen-lg-min){
+							top: em(276);
+					}
+					@media (min-width: $screen-xl-min){
+							top: em(276);
 					}
 				}
 				.slider .arrow-next{
@@ -267,7 +279,13 @@ body.spring-2015{
 				.slider-product{
 					.text{
 						text-align: center;
-						padding: 0 em(60);
+						padding: 0 em(80);
+						@media (min-width: $screen-sm-min){
+							padding: 0 em(60);
+						}
+						@media (min-width: $screen-xl-min){
+							padding: 0 em(80);
+						}
 					}
 					.name{
 						font-weight: 700;

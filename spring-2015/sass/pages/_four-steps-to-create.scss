@@ -11,6 +11,7 @@ $stepThreeHex: $purple-grey;
 $stepFourHex: $gold;
 $stylingTip: $blue-grey;
 $pinterestTip: $dark-green-highlight;
+$designFromHomeTip: $brown-grey;
 
 $hexLargeWidth-lg: 530px;
 $hexLargeHeight-lg: auto;
@@ -58,16 +59,17 @@ body.four-steps-to-create{
   .hex-tip{
     width: $hexTipWidth-lg;
     height: $hexTipHeight-lg;
-    font-family: $font-family-serif;
-    font-weight: bold;
-    font-style: italic;
-    font-size: em(20);
     position: absolute;
     svg{
       width: $hexTipWidth-lg;
       height: $hexTipHeight-lg;
     }
     .text{
+      font-family: $font-family-serif;
+      font-weight: bold;
+      font-style: italic;
+      font-size: em(20);
+      margin: 0;    
       padding: 0;
       text-align: center;
       width: 100%;
@@ -132,16 +134,20 @@ body.four-steps-to-create{
   }
   // Hero Title
   .page-hero{
+    position: absolute;
+    top: em(43);
+    left: em(248);
     h1{
+      margin: 0;
       text-decoration: underline;
-      padding-top: 10%;
-      padding-left: 10%;
+      font-size: em(52);
     }
   }
   // Step One
   .section-step-one{
     position: relative;
     height: em(1192);
+    margin-top: em(181);
     header{
       @extend %center-align-top;
       z-index: 3;
@@ -229,9 +235,23 @@ body.four-steps-to-create{
           max-width: 600px;
         }
         .hex-tip{
-          top: -10%;
-          right: 10%;
+          top: -65px;
+          right: 170px;
+          .stool{
+            position: absolute;
+            top: em(-213);
+            right: em(-25);
+            width: em(179);
+            z-index: 0;
+          }
+          .plant{
+            position: absolute;
+            top: em(-126);
+            right: em(-94);
+            width: em(163);
+          }
           svg{
+            position: relative;
             path{
               fill: $stylingTip;
             }
@@ -346,13 +366,28 @@ body.four-steps-to-create{
       right: 0;
       top: em(460);
       z-index: 1;
-      .text{
-        width: em(206);
-        position: absolute;
-        top: em(444);
-        left: em(86);
+      .info{
+        .text{
+          width: em(206);
+          position: absolute;
+          top: em(444);
+          left: em(86);
+        }
+      }
+      .hex-tip{
+        left: auto;
+        top: em(223);
+        right: em(-27);
+        @include transform(translateY(-50%) translateX(-50%));
+        z-index: 2;
+        svg{
+          path{
+            fill: $designFromHomeTip;
+          }
+        }
       }
     }
+
   }
   // Step Four
   .section-step-four{
@@ -361,7 +396,7 @@ body.four-steps-to-create{
     header{
       position: relative;
       z-index: 1;
-      margin-left: em(320);
+      margin-left: em(286);
       svg{
         path{
           fill: $stepFourHex

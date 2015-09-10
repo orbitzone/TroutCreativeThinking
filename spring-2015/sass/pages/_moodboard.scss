@@ -4,6 +4,9 @@ body.moodboard{
 		max-width: 100%;
 	}
 	section#moodboard{
+		.main-content{
+			max-width: em(1200);
+		}
 		header{
 			position: relative;
 		}

@@ -80,6 +80,7 @@ body.smart-irrigation-2015{
 
 	.content-with-sidebar{
 		.sidebar{
+			color:$textGrey;
 			width:100%;
 			max-width:25%;
 			@media (max-width: $break-md-max) { 
@@ -91,12 +92,33 @@ body.smart-irrigation-2015{
 				background-color:$bgGrey;
 			}
 			ul.sidebarnav{
-				padding-left:15px;
+				padding-left:20px;
 				margin-left:0;
 				>li{
-					margin-left:0;
+					margin-left:5px;
 					padding-left:0;
 					list-style:none;
+					position: relative;
+					h6{
+						cursor: pointer;
+						font-size:15px;
+					}
+					&:before{
+						font-family: FontAwesome;
+						content: "\f054";
+						position: absolute;
+						left: -20px;
+						top: 0;
+						font-size:15px;
+						line-height:15px;
+						font-weight:100;
+					}
+				}
+				li.active{
+					color:$sidebarActiveBlue;
+					&:before{
+						content: "\f078";
+					}
 				}
 			}
 			ul.sidebarsubnav{
@@ -106,9 +128,13 @@ body.smart-irrigation-2015{
 					margin-left:0;
 					padding-left:0;
 					list-style:none;
+					font-family:15px;
+					line-height:1.1em;
+					padding-bottom:6px;
+					font-weight:bold;
+
 				}
 			}
-
 		}
 		.content-withsidebar{
 			width:100%;

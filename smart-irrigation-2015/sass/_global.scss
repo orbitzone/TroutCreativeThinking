@@ -2,8 +2,14 @@ body.smart-irrigation-2015{
 	.clear{
 		clear:both;
 	}
+	.text-center{
+		text-align:center;
+	}
 	.text-right{
 		text-align:right;
+	}
+	.text-left{
+		text-align:left;
 	}
 	.text-white{
 		color:$white;
@@ -34,6 +40,10 @@ body.smart-irrigation-2015{
 	.inner-spacing{
 		padding-top:60px;
 		padding-bottom:60px;
+	}
+	.inner-spacing-top{
+		padding-top:60px;
+		padding-bottom:0;
 	}
 	.button{
 		padding:10px 20px;
@@ -78,4 +88,36 @@ body.smart-irrigation-2015{
 			margin:0;
 		}
 	}
+	.slick-dots	li button:before{
+		font-size:30px;
+	}
+	.slick-next:before{
+		font-family: FontAwesome;
+		content: "\f054";
+	}
+	.slick-prev:before{
+		font-family: FontAwesome;
+		content: "\f053";
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

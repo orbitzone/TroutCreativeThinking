@@ -115,17 +115,20 @@ body.smart-irrigation-2015{
 				}
 			}
 			&.section-row-half-right{
-				background-color: $bgGreenSpecial;
+				background-color: $bgGreenHighlight;
 				position:relative;
 				.flower-wrapper{
 					position:absolute;
 					left:-106px;
 					bottom:0;
+					@media (max-width: $break-md-max) { 
+						width:130px;
+						left:-66px;
+					}
 				}
 				.inner-content{
 					max-width: $max-content-width / 2;
 					float:left;
-					padding-top:50px;
 					padding-bottom:50px;
 					text-align:center;
 					.slick-dots{
@@ -133,62 +136,69 @@ body.smart-irrigation-2015{
 						margin:0;
 					}
 					.text-area{
-						max-width:75%;
-						float:right;
-						padding-top:10%;
-						.big-text{
-							font-size:190px;
-							line-height:190px;
-							font-weight:bold;
-							span{
-								font-size:100px;
+						.vertical-slider{
+							margin-left:auto;
+							margin-right:auto;
+							.inner-slide{
+								max-width:60%;
+								margin-left:auto;
+								margin-right:auto;
 							}
-							@media (min-width: $break-md-min) and (max-width: $break-md-max) { 
-								
-							}
-							@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
-								padding-top:0;
-							}
-							@media (max-width: $break-xs-max) { 
-								padding-top:0;
-								font-size:70px;
-								line-height:1.2em;
+							.big-text{
+								font-size:190px;
+								line-height:190px;
 								font-weight:bold;
 								span{
-									font-size:35px;
+									font-size:100px;
+								}
+								@media (min-width: $break-md-min) and (max-width: $break-md-max) { 
+									
+								}
+								@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
+									padding-top:0;
+								}
+								@media (max-width: $break-xs-max) { 
+									padding-top:0;
+									font-size:70px;
+									line-height:1.2em;
+									font-weight:bold;
+									span{
+										font-size:35px;
+									}
 								}
 							}
-						}
-						.medium-text{
-							font-size:26px;
-							line-height:1.2em;
-							@media (min-width: $break-md-min) and (max-width: $break-md-max) { 
-								
-							}
-							@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
-
-							}
-							@media (max-width: $break-xs-max) { 
-								font-size:16px;
+							.medium-text{
+								font-size:26px;
 								line-height:1.2em;
-								font-weight:bold;
+								@media (min-width: $break-md-min) and (max-width: $break-md-max) { 
+									
+								}
+								@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
+
+								}
+								@media (max-width: $break-xs-max) { 
+									font-size:16px;
+									line-height:1.2em;
+									font-weight:bold;
+								}
 							}
+
 						}
+						max-width:100%;
+						float:right;
+						padding-top:10%;
 						@media (min-width: $break-md-min) and (max-width: $break-md-max) { 
-							max-width:75%;
 							margin-left:auto;
 							margin-right:auto;
 							float:none;
 						}
 						@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
-							max-width:75%;
 							margin-left:auto;
 							margin-right:auto;
 							text-align:center;
 							float:none;
 						}
 						@media (max-width: $break-xs-max) { 
-							max-width:75%;
 							margin-left:auto;
 							margin-right:auto;
 							text-align:center;

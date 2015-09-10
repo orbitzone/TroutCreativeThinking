@@ -5,11 +5,22 @@ body.smart-irrigation-2015{
 		color:$textGrey;
 		.text-area{
 			color:$textGrey;
+			.call-to-action, p{
+				margin:.5em 0;
+			}
+
 			h4{
 				text-transform:none;
+				font-size:18px;
+				line-height:1.2em;
+				margin-top:0;
 			}
 			.call-to-action{
 				font-weight:bold;
+			}
+			p{
+				font-size:15px;
+				line-height:1.2em;
 			}
 		}
 		.inner-content.hover-item:hover{
@@ -25,5 +36,42 @@ body.smart-irrigation-2015{
 
 		}
 	}
+	.article-content-section{
+		.text-area{
+			margin-top:2em;
+		}
+	}
+	.product-list{
+		text-align:center;
+		.text-area{
+			text-align:left;
+			h4{
+				text-transform:none;
+				font-size:18px;
+				line-height:1.2em;
+				margin-top:0;
+				color:$textGrey;
 
+			}
+		}
+		.inner-content{
+			margin-bottom:0;
+			padding-bottom:0;
+		}
+		.inner-content.hover-item:hover{
+			cursor: pointer; 
+			cursor: hand;	
+			background-color:$bgGreyHighlight;
+			.text-area{
+				background-color:$bgGreyHighlight;
+				color:$textGrey;
+
+			}
+			a{
+				color:$textGrey;
+				text-decoration:none;
+			}
+
+		}
+	}
 }

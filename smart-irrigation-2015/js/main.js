@@ -17,7 +17,16 @@ $( document ).ready(function() {
     $('.vertical-slider').slick({
 	  vertical: true,
 	  dots: true,
-	  arrows: false
+	  arrows: false,
+	  responsive: [
+	    {
+	      breakpoint: 768,
+	      settings: {
+	      	vertical: false,
+	        arrows: false
+	      }
+	    }
+	  ]
 	});
     $('.same-height').matchHeight();
 });

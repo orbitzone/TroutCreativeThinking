@@ -16,6 +16,9 @@ $designFromHomeTip: $brown-grey;
 $hexLargeWidth-lg: 530px;
 $hexLargeHeight-lg: auto;
 
+$hexLargeWidth-xs: 280px;
+$hexLargeHeight-xs: auto;
+
 $hexTipWidth-lg: 138px;
 $hexTipHeight-lg: auto;
 
@@ -23,40 +26,66 @@ body.four-steps-to-create{
   // Hex Blocks
   .hex-large{
     position: relative;
-    width: $hexLargeWidth-lg;
-    height: $hexLargeHeight-lg;
-    &>svg{
+    width: $hexLargeWidth-xs;
+    height: $hexLargeHeight-xs;
+    @media (min-width: $screen-sm-min){
       width: $hexLargeWidth-lg;
+    height: $hexLargeHeight-lg;
+    }
+    &>svg{
+      width: $hexLargeWidth-xs;
+      height: $hexLargeHeight-xs;
+      @media (min-width: $screen-sm-min){
+        width: $hexLargeWidth-lg;
       height: $hexLargeHeight-lg;
+      }
     }
-    .step-number{
+    .description{
       position: absolute;
-      font-size: em(100);
-      width: 2em;
-      text-align: center;
-      font-weight: bold;
-    }
-    .text{
-      padding: 0 em(95);
-      text-align: center;
+      top: 0;
+      left: 0;
       width: 100%;
-      @extend %center-align;
-      h2{
-        text-decoration: underline;
-      }
-      p{
-        font-size: em(20);
-        line-height: 1.5em;
-        margin-bottom: 0; 
+      height: 100%;
+      z-index: 1;
+      .step-number{
+        position: absolute;
+        font-size: em(60);
+        width: 2em;
+        text-align: center;
+        font-weight: bold;
+       @media (min-width: $screen-sm-min){
+        font-size: em(100);
+       }
+      }      
+      .text{
+        color: $white;
+        padding: 0 em(30);
+        text-align: center;
+        width: 100%;
+        @extend %center-align;
+        @media (min-width: $screen-sm-min){
+          padding: 0 em(95);
+        }
+        h2{
+          text-decoration: underline;
+          font-size: em(21);
+           @media (min-width: $screen-sm-min){
+            font-size: em(32);
+           }
+        }
+        p{
+          font-size: em(12);
+          line-height: 1.5em;
+          margin-bottom: 0; 
+          @media (min-width: $screen-sm-min){
+            font-size: em(20);
+          }
+        }
       }
     }
   }
-  .hex-large,
   .hex-tip{
-    position: relative;
-    color: $white;    
-  }
-  .hex-tip{
+    color: $white; 
     width: $hexTipWidth-lg;
     height: $hexTipHeight-lg;
     position: absolute;
@@ -73,6 +102,7 @@ body.four-steps-to-create{
       padding: 0;
       text-align: center;
       width: 100%;
+      z-index: 1;
       @extend %center-align;
     }
   }
@@ -114,42 +144,56 @@ body.four-steps-to-create{
       }
     }
   }
-  // iPad Thumb
-  .ipad-thumb{
-    position: relative;
-    z-index: 2;
-    max-width: 560px;
-    float: right;
-    @include clearfix;
-    .thumb{
-      float: left;
-      width: 60%
-    }
-    .text{
-      position: absolute;
-      width: 40%;
-      right: 0;
-      padding: 10px 20px 30px 5px;
-    }
-  }
   // Hero Title
   .page-hero{
-    position: absolute;
-    top: em(43);
+    text-align: center;
+    @media (min-width: $screen-sm-min){
+      text-align: left;
+      position: absolute;
+      top: em(20);
+      right: em(20);
+    }
+    @media (min-width: $screen-md-min){
+      top: em(20);
+      right: em(20);
+    }
+     @media (min-width: $screen-lg-min){
+      top: em(43);
+      right: em(20);
+      left: auto;
+     }
+      @media (min-width: $screen-xl-min){
+        top: em(43);
     left: em(248);
+    right: auto;
+      }
     h1{
       margin: 0;
       text-decoration: underline;
-      font-size: em(52);
+      font-size: em(30);
+      @media (min-width: $screen-sm-min){
+        font-size: em(52);
+      }
     }
   }
   // Step One
   .section-step-one{
     position: relative;
-    height: em(1192);
-    margin-top: em(181);
+    margin-top: em(40);
+  @media (min-width: $screen-sm-min){
+    margin-top: em(152);
+   }
+   @media (min-width: $screen-md-min){
+    margin-top: em(127);
+   }
+    @media (min-width: $screen-lg-min){
+      margin-top: em(75);
+    }
+    @media (min-width: $screen-xl-min){
+      height: em(1192);
+    }
     header{
-      @extend %center-align-top;
+      position: relative;
       z-index: 3;
       margin-top: em(67);
       svg{
@@ -158,12 +202,76 @@ body.four-steps-to-create{
         }
       }
       .hex-large{
+        margin: 0 auto;
         margin-top: em(236);
-      }
-      .mixer-taps{
-        position: absolute;
-        top: 0;
-        left: em(-37);
+        svg{
+          position: relative;
+          z-index: 1;
+        }
+        .description{
+          z-index: 1;
+        }
+        .mixer-taps{
+          position: absolute;
+          top: em(-235);
+          left: em(-37);
+        } 
+        .tile-polaroid{
+          position: absolute;
+          top: em(-48);
+          left: em(-420);
+          z-index: 0;
+        }
+        .tile-finishing-touches{
+          max-width: 600px;
+          position: absolute;
+          top: em(385);
+          left: em(-102);
+          z-index: 4;
+          @media (min-width: $screen-md-min){
+            top: em(355);
+            left: em(-266);
+          }
+
+          .image-hexagons{
+            width: em(241);
+            margin-top: 130px;
+            margin-left: em(-11);
+            @media (min-width: $screen-md-min){
+              width: em(298);
+              margin-left: 0;
+            }
+          }
+          .product-bathtub{
+            position: absolute;
+            width: em(367);
+            top: 0;
+            left: em(-88);
+            @media (min-width: $screen-md-min){
+              width: 420px;
+            }        
+          }
+          .product-shelf{
+            width: 270px;
+            position: absolute;
+            top: em(220);
+            left: em(120);
+            @media (min-width: $screen-md-min){
+              top: em(250);
+            left: em(214);
+            }
+          }
+          .text{
+            position: absolute;
+            top: em(299);
+            left: em(187);
+            width: em(205);
+            @media (min-width: $screen-md-min){
+              top: em(327);
+              left: em(294);
+            }
+          }
+        }       
       }
       .step-number{
         top: 2%;
@@ -182,52 +290,82 @@ body.four-steps-to-create{
       }
     }
     .tile-trends{
+      position: relative;
+      z-index: 2;
+      max-width: 560px;
+      float: right;
       margin-right: em(30);
+      @media (min-width: $screen-lg-min){
+        margin-top: em(-291);        
+      }
+      @media (min-width: $screen-xl-min){
+        margin-top: 0;
+        position: absolute;
+        top: em(-70);
+        right: em(20);
+      }
+      @include clearfix;
+      .thumb{
+        float: right;
+        width: 60%;
+        @media (min-width: $screen-lg-min){
+        }
+        @media (min-width: $screen-xl-min){
+          float: left;
+          width: 60%;
+        }
+      }
       .text{
+        position: absolute;
+        width: 40%;
+        right: 0;
         bottom: 0;        
-      }
-    }
-    .tile-polaroid{
-      position: absolute;
-      top: em(245);
-      left: em(74);
-    }
-    .tile-finishing-touches{
-      max-width: 600px;
-      position: absolute;
-      top: em(650);
-      left: em(220);
-      z-index: 4;
-      .image-hexagons{
-        width: em(298);
-        margin-top: 130px;
-      }
-      .product-bathtub{
-        position: absolute;
-        width: 420px;
-        top: 0;
-        left: em(-88);        
-      }
-      .product-shelf{
-        width: 270px;
-        position: absolute;
-        top: em(250);
-        left: em(214);
-      }
-      .text{
-        position: absolute;
-        top: em(327);
-        left: em(294);
-        width: em(205);
+        padding: 10px 20px 30px 5px;
+        @media (min-width: $screen-sm-min){
+          left: 0;
+          right: auto;
+          margin-left: em(40);
+          padding: 10px 0 30px 5px;
+          width: em(203);
+        }
+        @media (min-width: $screen-xl-min){
+          right: 0;
+          padding: 10px 20px 30px 5px;
+          left: auto;
+          margin-left: 0;
+          width: 40%;
+        }
       }
     }
     .bottom-section{
       @include clearfix;
+      @media (min-width: $screen-sm-min){
+        margin-top: em(120);
+      }
+      @media (min-width: $screen-md-min){
+        margin-top: em(37);
+      }
+      @media (min-width: $screen-lg-min){
+        margin-top: em(230);
+      }
+      @media (min-width: $screen-xl-min){
+        margin-top: 0;
+      }
       .tile-collecting-tips{
         position: relative;
-        float: right;
-        margin-top: em(349);
-        margin-right: em(53);
+        float: left;
+        @media (min-width: $screen-sm-min){
+          margin-left: em(80);
+        }
+        @media (min-width: $screen-md-min){
+          margin-left: em(150);
+        }
+        @media (min-width: $screen-xl-min){
+          margin-left: 0;
+          margin-top: em(-115);
+          margin-right: em(53);
+          float: right;
+        }
         .dot-pattern{
           padding: em(20);
         }
@@ -236,7 +374,21 @@ body.four-steps-to-create{
         }
         .hex-tip{
           top: -65px;
-          right: 170px;
+          right: 385px;
+          @media (min-width: $screen-sm-min){
+            left: em(-60);
+            right: auto;
+          }
+          @media (min-width: $screen-md-min){
+            left: 43;
+            right: auto;
+          }
+          @media (min-width: $screen-lg-min){
+            right: 70px;
+          }
+           @media (min-width: $screen-xl-min){
+            right: 170px;
+          }
           .stool{
             position: absolute;
             top: em(-213);
@@ -261,18 +413,43 @@ body.four-steps-to-create{
       .tile-pinterest{
         position: relative;
         z-index: 4;
-        float: right;
         clear: both;
+        float: left;
         width: 100%;
         max-width: 640px;
-        margin-right: em(53);
         top: em(-100);
+        margin-left: em(80);
+        margin-bottom: em(-80);
+        @media (min-width: $screen-md-min){
+          margin-left: em(150);
+        }
+        @media (min-width: $screen-xl-min){
+          float: right;
+          margin-left: 0;
+          margin-right: em(53);
+        }
         .ipad-thumb{
           float: left;
           margin-left: em(-20);
           z-index: 1;
+          .thumb{
+            float: left;
+            width: 60%;
+            @media (min-width: $screen-lg-min){
+            }            
+          }
           .text{
-            bottom: 10%;
+            width: 40%;
+            padding: 10px 20px 30px 5px;
+            position: absolute;
+            right: 0;
+            bottom: 10%;     
+            @media (min-width: $screen-md-min){
+              bottom: em(221);
+            }
+            @media (min-width: $screen-xl-min){
+              bottom: 10%; 
+            }
           }
         }
         .hex-tip{
@@ -293,65 +470,137 @@ body.four-steps-to-create{
   // Step Two
   .section-step-two{
     position: relative;
+    z-index: 3;
+    @media (min-width: $screen-md-min){
+      top: em(-62);
+      margin-bottom: em(-62);
+      margin-right: em(34);
+    }
+    @media (min-width: $screen-lg-min){
+      top: em(-234);
+      margin-bottom: em(-234);
+      margin-right: 0;
+    }
+    @media (min-width: $screen-xl-min){
+      top: auto;
+      margin-bottom: 0;
+    }
     header{
-      margin-left: em(172);
-      svg{
-        path{
-          fill: $stepTwoHex
-        }
+      @include clearfix;
+      position: relative;
+      margin-right: em(80);
+      @media (min-width: $screen-lg-min){
+        margin-right: em(144);
+      }
+      @media (min-width: $screen-xl-min){
+        margin-left: em(172);
+        margin-right: 0;
       }
       .hex-large{
         position: relative;
         z-index: 1;
+        float: right;
+        @media (min-width: $screen-xl-min){
+          float: left;
+          margin: 0;
+        }
+        svg{
+          position: relative;
+          z-index: 1;
+          path{
+            fill: $stepTwoHex
+          }
+        }
         .step-number{
           position: absolute;
           top: em(366,100);
           left: em(-111,100);
           color:  $stepThreeHex;
+          z-index: 1;
         }
-      }      
-    }
-    .tile-reece-picture{
-      position: absolute;
-      top: em(381);
-      left: em(56);
-    }
-    .tile-magazine{
-      position: absolute;
-      top: em(560);
-      left: em(342);
-      z-index: 2;
-      .text{
-        width: em(194);
-        position: absolute;
-        top: em(112);
-        left: em(266);
-        h4{
-          .icon{
-            img{
-              width: em(19);
+        .tile-reece-picture{
+          position: absolute;
+          top: em(372);
+          left: em(-119);
+          z-index: 0;
+          .text{
+            width: em(215);
+            @media (min-width: $screen-md-min){
+              position: absolute;
+              left: em(-190);
+              top: em(192);
+            }            
+            @media (min-width: $screen-xl-min){
+              left: auto;
+              top: auto;
+              position: relative;
+            }
+          }
+        }      
+        .tile-magazine{
+          position: absolute;
+          top: em(553);
+          left: em(156);
+          z-index: 2;
+          width: em(235);
+          @media (min-width: $screen-md-min){
+            left: em(170);
+          }
+          .text{
+            width: em(194);
+            position: absolute;
+            top: em(112);
+            left: em(250);
+            @media (min-width: $screen-md-min){
+              left: em(266);
+            }
+            h4{
+              .icon{
+                img{
+                  width: em(19);
+                }
+              }
             }
           }
         }
-      }
+      }      
     }
   }
   // Step Three
   .section-step-three{
     position: relative;
     z-index: 2;
-    @include clearfix;
+    @media (min-width: $screen-sm-min){
+      margin-top: em(500);
+    }
+    @media (min-width: $screen-md-min){
+      margin-top: em(300);
+    }
+    @media (min-width: $screen-xl-min){
+      margin-top: 0;
+    }
     header{
-      float: right;
-      margin-right: em(152);
-      svg{
-        path{
-          fill: $stepThreeHex
-        }
-      }
+      @include clearfix;
       .hex-large{
         position: relative;
         z-index: 1;
+        margin: 0 auto;
+        @media (min-width: $screen-md-min){
+          margin-left: em(24);
+        }
+        @media (min-width: $screen-lg-min){
+          margin-left: em(152);
+        }
+        @media (min-width: $screen-xl-min){
+          float: right;
+          margin-right: em(152);
+        }
+        svg{
+          path{
+            fill: $stepThreeHex
+          }
+        }
+        
         .step-number{
           position: absolute;
           top: em(20,100);
@@ -362,23 +611,48 @@ body.four-steps-to-create{
     }
     .tile-laptop{
       position: absolute;
-      width: em(754);
-      right: 0;
-      top: em(460);
       z-index: 1;
+      @media (min-width: $screen-sm-min){
+        width: em(626);
+        left: em(-20);
+        top: em(454);        
+      }
+      @media (min-width: $screen-md-min){
+        width: em(550);
+      left: em(404);
+      top: em(143);
+      }
+      @media (min-width: $screen-lg-min){
+        width: em(620);
+      left: em(404);
+      top: em(122);
+      }
+      @media (min-width: $screen-xl-min){
+        width: em(754);
+        right: em(-144);
+        top: em(460);
+        left: auto;
+      }
       .info{
         .text{
           width: em(206);
           position: absolute;
-          top: em(444);
+          top: em(357);
+          left: em(18);
+          @media (min-width: $screen-lg-min){
+            top: em(444);
           left: em(86);
+          }
         }
       }
       .hex-tip{
         left: auto;
-        top: em(223);
+        top: em(150);
         right: em(-27);
         @include transform(translateY(-50%) translateX(-50%));
+        @media (min-width: $screen-xl-min){
+          top: em(223);
+        }
         z-index: 2;
         svg{
           path{
@@ -393,10 +667,27 @@ body.four-steps-to-create{
   .section-step-four{
     position: relative;
     z-index: 1;
+    @media (min-width: $screen-sm-min){
+      margin-top: em(849);
+    }
+    @media (min-width: $screen-md-min){
+      margin-top: em(325);
+      margin-left: em(140);
+    }
+    @media (min-width: $screen-lg-min){
+      margin-top: em(425);
+      margin-left: em(281);
+    }
+    @media (min-width: $screen-xl-min){
+      margin-top: 0;
+      margin-left: 0;
+    }
     header{
       position: relative;
       z-index: 1;
-      margin-left: em(286);
+      @media (min-width: $screen-md-min){
+        margin-left: em(286);
+      }
       svg{
         path{
           fill: $stepFourHex
@@ -405,21 +696,56 @@ body.four-steps-to-create{
       .hex-large{
         position: relative;
         z-index: 1;
+        margin: 0 auto;
+        margin-bottom: em(350);
+        
+        @media (min-width: $screen-md-min){
+        }
+        svg{
+          position: relative;
+          z-index: 1;
+        }
+        .description{
+          z-index: 1;
+        }
         .step-number{
           position: absolute;
           top: em(366,100);
           left: em(-111,100);
           color:  $stepThreeHex;
+          @media (min-width: $screen-md-min){
+            top: em(85,100);
+          }
+          @media (min-width: $screen-lg-min){
+            top: em(85,100);
+          }
+          @media (min-width: $screen-xl-min){
+            top: em(366,100);
+          }
+        }
+        .tile-picture{
+          position: absolute;
+          margin-bottom: em(40);
+          z-index: 0; 
+          @media (min-width: $screen-sm-min){
+            top: em(-400);
+            left: em(-89);
+            width: em(700);
+          }
+          @media (min-width: $screen-md-min){
+            top: em(-205);
+            left: em(-400);
+          }
+          @media (min-width: $screen-lg-min){
+            top: em(-205);
+            left: em(-500);
+          }
+          @media (min-width: $screen-xl-min){
+            top: em(376);
+            left: em(-270);
+          }     
         }
       }     
-    }
-    .tile-picture{
-      position: relative;
-      width: em(754);
-      top: em(-120);
-      margin-bottom: em(40);
-      left: em(40);
-      z-index: 0;      
-    }
+    }    
   }
 }

@@ -5,7 +5,13 @@ body.moodboard{
 	}
 	section#moodboard{
 		.main-content{
-			max-width: em(1200);
+			max-width: em(280);
+			@media (min-width: $screen-sm-min){
+				max-width: em(620);
+			}
+			@media (min-width: $screen-lg-min){
+				max-width: em(1200);
+			}			
 		}
 		header{
 			position: relative;
@@ -17,13 +23,27 @@ body.moodboard{
 		.plant{
 			position: absolute;
 			top: 0;
-			left: 0;			
+			left: 0;
+			width: 80px;
+			@media (min-width: $screen-sm-min){
+				width: 200px;
+			}
+			@media (min-width: $screen-lg-min){
+				width: auto;
+			}
 		}
 		.destination-happiness{
 			position: absolute;
 			top: 0;
 			right: 0;
 			@include transform(translateX(50%));
+			width: 140px;
+			@media (min-width: $screen-sm-min){
+				width: 300px;
+			}
+			@media (min-width: $screen-lg-min){
+				width: auto;
+			}
 		}
 		
 		.title{
@@ -49,7 +69,7 @@ body.moodboard{
 			max-width: em(568);
 		}
 		.buttons{
-			@media (min-width: $screen-md-min){
+			@media (min-width: $screen-lg-min){
 				text-align: right;
 				position: absolute;
 				bottom: 0;
@@ -115,6 +135,7 @@ body.moodboard{
 				margin-top: em(20);
 				text-align: center;
 				@include clearfix;
+				font-size: em(12);
 				@media (min-width: $screen-md-min){
 					font-size: em(14);
 				}

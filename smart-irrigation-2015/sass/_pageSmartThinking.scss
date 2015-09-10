@@ -1,0 +1,26 @@
+body.smart-irrigation-2015{
+
+	.box-section.smart-thinking-articles{
+		text-align:left;
+		color:$textGrey;
+		.text-area{
+			color:$textGrey;
+			.call-to-action{
+				font-weight:bold;
+			}
+		}
+		.inner-content.hover-item:hover{
+			cursor: pointer; 
+			cursor: hand;	
+			.text-area{
+				background-color:$bgGrey;
+			}
+			a{
+				color:$textGrey;
+				text-decoration:none;
+			}
+
+		}
+	}
+
+}

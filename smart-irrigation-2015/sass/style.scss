@@ -1,0 +1,23 @@
+@import "variables";
+@import "mixins";
+// Fontawesome 4
+// -------------------------
+$fa-font-path:        "../fonts";
+@import "../bower_components/font-awesome/scss/font-awesome";
+@import "../bower_components/slick-carousel/slick/slick";
+@import "slick-theme";
+
+// Custom Styles
+@import "layout";
+@import "global";
+@import "main";
+
+/* Pages */
+@import "pageHomepage";
+@import "pageSmartThinking";
+
+
+
+#main-content *{
+	// outline:solid red 1px;
+}

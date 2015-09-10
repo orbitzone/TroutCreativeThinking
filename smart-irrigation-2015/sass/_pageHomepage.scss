@@ -1,0 +1,208 @@
+body.smart-irrigation-2015{
+
+	.box-section{
+		text-align:center;
+		.text-area{
+			color:$white;
+			display:block;
+			padding:30px 15px;
+			h4{
+				font-size:18px;
+				font-weight:bold;
+				text-transform: uppercase;
+				margin:0;
+			}
+			p{
+				margin:0;
+			}
+		}
+		.inner-content.hover-item:hover{
+			cursor: pointer; 
+			cursor: hand;	
+			.text-area{
+				background-color:$white;
+				color:$textGrey;
+
+			}
+			a{
+				color:$textGrey;
+				text-decoration:none;
+			}
+
+		}
+	}
+
+	.water-calculator-section{
+		text-align:center;
+		padding-top:30px;
+		padding-bottom:30px;
+		h3{
+			font-size:32px;
+			text-transform: uppercase;
+			font-family:$font-family-gotham;
+		}
+	}
+
+	.minibanner-section{
+		font-size:17px;
+		line-height:1.2em;
+		height:540px;
+		.wide-half-section{
+			width:50%;
+			height:100%;
+			float:left;
+			@media (min-width: $break-md-min) and (max-width: $break-md-max) { 
+				
+			}
+			@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
+				height:auto;
+				width:100%;
+				float:none;
+			}
+			@media (max-width: $break-xs-max) { 
+				height:auto;
+				width:100%;
+				float:none;
+			}
+			&.section-row-half-left{
+				background-image:url('../images/homepage/grass.png');
+				background-repeat:repeat-x;
+				background-position:bottom;
+				.inner-content{
+					float:right;
+					padding-top:50px;
+					padding-bottom:50px;
+					.text-area{
+						max-width:60%;
+						padding-top:10%;
+						h3{
+							font-size:32px;
+						}
+						@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
+							margin-left:auto;
+							margin-right:auto;
+							text-align:center;
+							padding-top:0;
+						}
+						@media (max-width: $break-xs-max) { 
+							margin-left:auto;
+							margin-right:auto;
+							text-align:center;
+							padding-top:0;
+						}
+					}
+					@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
+						float:none;
+					}
+					@media (max-width: $break-xs-max) { 
+						float:none;
+					}
+				}
+			}
+			&.section-row-half-right{
+				position:relative;
+				.flower-wrapper{
+					position:absolute;
+					left:-106px;
+					bottom:0;
+				}
+				.inner-content{
+					max-width: $max-content-width / 2;
+					float:left;
+					padding-top:50px;
+					padding-bottom:50px;
+					text-align:center;
+					.text-area{
+						max-width:75%;
+						float:right;
+						padding-top:10%;
+						.big-text{
+							font-size:190px;
+							line-height:190px;
+							font-weight:bold;
+							span{
+								font-size:100px;
+							}
+							@media (min-width: $break-md-min) and (max-width: $break-md-max) { 
+								
+							}
+							@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
+								padding-top:0;
+							}
+							@media (max-width: $break-xs-max) { 
+								padding-top:0;
+								font-size:70px;
+								line-height:1.2em;
+								font-weight:bold;
+								span{
+									font-size:35px;
+								}
+							}
+						}
+						.medium-text{
+							font-size:26px;
+							line-height:1.2em;
+							@media (min-width: $break-md-min) and (max-width: $break-md-max) { 
+								
+							}
+							@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
+
+							}
+							@media (max-width: $break-xs-max) { 
+								font-size:16px;
+								line-height:1.2em;
+								font-weight:bold;
+							}
+						}
+						@media (min-width: $break-md-min) and (max-width: $break-md-max) { 
+							max-width:75%;
+						}
+						@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
+							max-width:80%;
+							margin-left:auto;
+							margin-right:auto;
+							text-align:center;
+						}
+						@media (max-width: $break-xs-max) { 
+							max-width:100%;
+							margin-left:auto;
+							margin-right:auto;
+							text-align:center;
+						}
+					}
+					@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
+						max-width:100%;
+					}
+					@media (max-width: $break-xs-max) { 
+						max-width:100%;
+					}
+				}
+			}
+			.inner-content{
+				max-width: $max-content-width / 2;
+				.text-area{
+					color:$white;
+					padding:15px;
+				}
+				@media (min-width: $break-md-min) and (max-width: $break-md-max) { 
+					
+				}
+				@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
+					max-width:none;
+				}
+				@media (max-width: $break-xs-max) { 
+					max-width:none;
+				}
+			}
+		}
+		@media (min-width: $break-md-min) and (max-width: $break-md-max) { 
+			
+		}
+		@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
+			height:auto;
+		}
+		@media (max-width: $break-xs-max) { 
+			height:auto;
+		}
+	}
+}

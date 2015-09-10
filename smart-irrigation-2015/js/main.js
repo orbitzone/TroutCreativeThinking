@@ -4,6 +4,7 @@ $( document ).ready(function() {
 	  prevArrow: '<span class="fa fa-chevron-left slick-prev"></span>',
 	  nextArrow: '<span class="fa fa-chevron-right slick-next"></span>',
 	  dots: true,
+	  autoplay: true,
 	  responsive: [
 	    {
 	      breakpoint: 768,
@@ -12,12 +13,13 @@ $( document ).ready(function() {
 	      }
 	    }
 	  ]
-
 	});
+
     $('.vertical-slider').slick({
 	  vertical: true,
 	  dots: true,
 	  arrows: false,
+	  autoplay: true,
 	  responsive: [
 	    {
 	      breakpoint: 768,
@@ -28,5 +30,14 @@ $( document ).ready(function() {
 	    }
 	  ]
 	});
+
+    $('.preview-slide-image').slick({
+	  dots: false,
+	  arrows: true,
+	  autoplay: false
+	});
+
+
+
     $('.same-height').matchHeight();
 });

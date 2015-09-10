@@ -64,4 +64,18 @@ body.smart-irrigation-2015{
 			}
 		}
 	}
+	.preview-slide-image{
+		.slick-prev{
+			left:15px;
+			z-index:10;
+		} 
+		.slick-next {
+	    	right: 15px;
+		}
+		.slick-dots{
+			bottom:0px;
+			padding:0;
+			margin:0;
+		}
+	}
 }

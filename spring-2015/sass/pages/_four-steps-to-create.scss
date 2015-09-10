@@ -20,17 +20,8 @@ $hexTipHeight-lg: auto;
 
 body.four-steps-to-create{
   // Hex Blocks
-  .hex-large,
-  .hex-tip{
-    position: relative;
-    color: $white;
-    .text{
-      text-align: center;
-      width: 100%;
-      @extend %center-align;
-    }
-  }
   .hex-large{
+    position: relative;
     width: $hexLargeWidth-lg;
     height: $hexLargeHeight-lg;
     &>svg{
@@ -45,7 +36,10 @@ body.four-steps-to-create{
       font-weight: bold;
     }
     .text{
-      padding: 0 15%;
+      padding: 0 em(95);
+      text-align: center;
+      width: 100%;
+      @extend %center-align;
       h2{
         text-decoration: underline;
       }
@@ -55,6 +49,11 @@ body.four-steps-to-create{
         margin-bottom: 0; 
       }
     }
+  }
+  .hex-large,
+  .hex-tip{
+    position: relative;
+    color: $white;    
   }
   .hex-tip{
     width: $hexTipWidth-lg;
@@ -67,6 +66,50 @@ body.four-steps-to-create{
     svg{
       width: $hexTipWidth-lg;
       height: $hexTipHeight-lg;
+    }
+    .text{
+      padding: 0;
+      text-align: center;
+      width: 100%;
+      @extend %center-align;
+    }
+  }
+  .links{
+    margin-top: em(30);
+    margin-bottom: em(30);
+    a{
+      display: block;
+    }
+    .circle{
+      @include border-radius(50%);
+      border: 4px solid $white;
+      position: relative;
+      width: 50px;
+      height: 50px;
+      display: block;
+      i{
+        color: $white;
+        @extend %center-align;
+        font-size: em(24);
+      }
+    }
+    }
+  .tile{
+    .text{
+      h4{
+        .subtitle{
+          text-decoration: underline;
+        }
+        .icon{
+          img{
+            width: em(25);
+          }
+        }
+      }
+      p{
+        font-size: em(15);
+        line-height: em(22);
+      }
     }
   }
   // iPad Thumb
@@ -98,15 +141,24 @@ body.four-steps-to-create{
   // Step One
   .section-step-one{
     position: relative;
+    height: em(1192);
     header{
       @extend %center-align-top;
       z-index: 3;
+      margin-top: em(67);
       svg{
         path{
           fill: $stepOneHex;
         }
       }
-
+      .hex-large{
+        margin-top: em(236);
+      }
+      .mixer-taps{
+        position: absolute;
+        top: 0;
+        left: em(-37);
+      }
       .step-number{
         top: 2%;
         left: 50%;
@@ -114,8 +166,8 @@ body.four-steps-to-create{
         color: $stepOneNumber;
       }
       .hex-tip{
-        top: 0;
-        left: 0;
+        top: em(-9);
+        left: em(26);
         svg{
           path{
             fill: $stepOneTip;
@@ -124,108 +176,215 @@ body.four-steps-to-create{
       }
     }
     .tile-trends{
+      margin-right: em(30);
       .text{
-        bottom: 0;
+        bottom: 0;        
       }
     }
     .tile-polaroid{
-      position: relative;
-      z-index: 1;
-      float: left;
-      max-width: 500px;
+      position: absolute;
+      top: em(245);
+      left: em(74);
     }
     .tile-finishing-touches{
-      background: url(../images/steps/bg-hexagons.png) no-repeat center;
-      background-size: 50%;
       max-width: 600px;
-      position: relative;
+      position: absolute;
+      top: em(650);
+      left: em(220);
       z-index: 4;
-      clear: both;
-      @include clearfix;
+      .image-hexagons{
+        width: em(298);
+        margin-top: 130px;
+      }
       .product-bathtub{
+        position: absolute;
         width: 420px;
-        float: left;
-        position: relative;
-        top: -15%;
+        top: 0;
+        left: em(-88);        
       }
       .product-shelf{
         width: 270px;
-        float: right;
+        position: absolute;
+        top: em(250);
+        left: em(214);
       }
       .text{
-        clear: both;
+        position: absolute;
+        top: em(327);
+        left: em(294);
+        width: em(205);
+      }
+    }
+    .bottom-section{
+      @include clearfix;
+      .tile-collecting-tips{
+        position: relative;
         float: right;
-        width: 50%;
+        margin-top: em(349);
+        margin-right: em(53);
+        .dot-pattern{
+          padding: em(20);
+        }
+        .hero-image{
+          max-width: 600px;
+        }
+        .hex-tip{
+          top: -10%;
+          right: 10%;
+          svg{
+            path{
+              fill: $stylingTip;
+            }
+          }
+        }
       }
-    }
-    .tile-collecting-tips{
-      position: relative;
-      z-index: 1;
-      float: right;
-      margin-top: -10%;
-      .hero-image{
-        max-width: 600px;
-      }
-      .hex-tip{
-        top: -10%;
-        right: 10%;
-        svg{
-          path{
-            fill: $stylingTip;
+      .tile-pinterest{
+        position: relative;
+        z-index: 4;
+        float: right;
+        clear: both;
+        width: 100%;
+        max-width: 640px;
+        margin-right: em(53);
+        top: em(-100);
+        .ipad-thumb{
+          float: left;
+          margin-left: em(-20);
+          z-index: 1;
+          .text{
+            bottom: 10%;
+          }
+        }
+        .hex-tip{
+          left: 0;
+          top: 0;
+          @include transform(translateY(-50%) translateX(-50%));
+          z-index: 2;
+          svg{
+            path{
+              fill: $pinterestTip;
+            }
           }
         }
       }
     }
-    .tile-pinterest{
-      position: relative;
-      z-index: 4;
-      float: right;
-      clear: both;
-      .ipad-thumb{
-        z-index: 1;
-        .text{
-          bottom: 10%;
-        }
-      }
-      .hex-tip{
-        z-index: 2;
-        svg{
-          path{
-            fill: $pinterestTip;
-          }
-        }
-      }
-    }
+    
   }
   // Step Two
   .section-step-two{
+    position: relative;
     header{
+      margin-left: em(172);
       svg{
         path{
           fill: $stepTwoHex
         }
       }
+      .hex-large{
+        position: relative;
+        z-index: 1;
+        .step-number{
+          position: absolute;
+          top: em(366,100);
+          left: em(-111,100);
+          color:  $stepThreeHex;
+        }
+      }      
     }
-
+    .tile-reece-picture{
+      position: absolute;
+      top: em(381);
+      left: em(56);
+    }
+    .tile-magazine{
+      position: absolute;
+      top: em(560);
+      left: em(342);
+      z-index: 2;
+      .text{
+        width: em(194);
+        position: absolute;
+        top: em(112);
+        left: em(266);
+        h4{
+          .icon{
+            img{
+              width: em(19);
+            }
+          }
+        }
+      }
+    }
   }
   // Step Three
   .section-step-three{
+    position: relative;
+    z-index: 2;
+    @include clearfix;
     header{
+      float: right;
+      margin-right: em(152);
       svg{
         path{
           fill: $stepThreeHex
         }
       }
+      .hex-large{
+        position: relative;
+        z-index: 1;
+        .step-number{
+          position: absolute;
+          top: em(20,100);
+          left: em(43,100);
+          color:  $stepFourHex;
+        }
+      }     
+    }
+    .tile-laptop{
+      position: absolute;
+      width: em(754);
+      right: 0;
+      top: em(460);
+      z-index: 1;
+      .text{
+        width: em(206);
+        position: absolute;
+        top: em(444);
+        left: em(86);
+      }
     }
   }
   // Step Four
   .section-step-four{
+    position: relative;
+    z-index: 1;
     header{
+      position: relative;
+      z-index: 1;
+      margin-left: em(320);
       svg{
         path{
           fill: $stepFourHex
         }
       }
+      .hex-large{
+        position: relative;
+        z-index: 1;
+        .step-number{
+          position: absolute;
+          top: em(366,100);
+          left: em(-111,100);
+          color:  $stepThreeHex;
+        }
+      }     
+    }
+    .tile-picture{
+      position: relative;
+      width: em(754);
+      top: em(-120);
+      margin-bottom: em(40);
+      left: em(40);
+      z-index: 0;      
     }
   }
 }

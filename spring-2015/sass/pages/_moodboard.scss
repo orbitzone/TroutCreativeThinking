@@ -131,8 +131,7 @@ body.moodboard{
 				bottom: 0;
 				left: 0;
 				width: 100%;
-				padding: em(10);
-				margin-top: em(20);
+				padding: 0 0 em(20);
 				text-align: center;
 				@include clearfix;
 				font-size: em(12);
@@ -155,12 +154,8 @@ body.moodboard{
 					white-space: nowrap;
 					margin-right: em(10);
 					@include border-radius(4px);
-					@include box-shadow(2px 2px 6px rgba(0,0,0,0.3));
-					float: left;
-				}
-				button{
-					float: left;
-				}				
+					@include box-shadow(2px 2px 6px rgba(0,0,0,0.3));					
+				}			
 			}
 		}
 	}

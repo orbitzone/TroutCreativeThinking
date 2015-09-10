@@ -1135,22 +1135,7 @@ jQuery(function($){
 				url:'pages/four-steps-to-create.html',
 				success: function(data){
 					$('#main-content').html(data);
-					$('#bec_judd .slider').slick({
-						slidesToShow: 1,
-  					slidesToScroll: 1,
-  					infinite: true,
-  					dots: true,
-  					prevArrow: "<button type=\"button\" class=\"arrow-prev\"><i class=\"iconr-arrow-left\"></i></button>",
-  					nextArrow: "<button type=\"button\" class=\"arrow-next\"><i class=\"iconr-arrow-right\"></i></button>",
-  					responsive: [
-					 		{
-					      breakpoint: 768,
-					      settings: {
-					      	dots: false
-					      }
-					    }
-					  ]
-					});
+					$('#subscribe form').validate();
 				}
 			});
 		}

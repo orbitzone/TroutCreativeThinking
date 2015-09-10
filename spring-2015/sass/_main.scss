@@ -308,4 +308,8 @@ body.spring-2015{
 		white-space: nowrap;
 		display: inline-block;
 	}
+	label.error{
+		display: inline-block;
+		color: $red;
+	}
 }

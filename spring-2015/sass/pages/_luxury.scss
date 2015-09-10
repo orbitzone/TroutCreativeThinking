@@ -451,16 +451,13 @@ body.love-luxury{
 			background: #ededed url(../images/luxury/3-showers/bg.jpg) repeat-y top center;
 			padding: em(70) em(10) em(205);
 			@media (min-width: $screen-sm-min){
-				padding: em(34) 0 em(574) em(20);
+				padding: em(34) 0 em(720) em(20);
 			}
 			@media (min-width: $screen-md-min){
-				padding: em(70) 0 em(134) em(88);
-			}
-			@media (min-width: $screen-md-min){
-				padding: em(70) 0 em(615) em(64);
+				padding: em(70) 0 em(710) em(64);
 			}
 			@media (min-width: $screen-lg-min){
-				padding: em(70) 0 em(300) em(88);
+				padding: em(70) 0 em(550) em(88);
 			}
 			@media (min-width: $screen-xl-min){
 				padding: em(70) 0 em(290) em(88);

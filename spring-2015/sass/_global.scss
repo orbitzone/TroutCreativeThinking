@@ -355,6 +355,91 @@ body.spring-2015{
 					fill: $green;
 				}
 			}
+			&.family{
+				.image{
+					width: em(170);
+				}
+				path{
+					&.bg{
+						fill: $white;							
+					}
+					&.border{
+						fill: $green;
+					}
+				}
+				.top-text{
+					display: none;
+				}
+				.text{
+					h3{
+			    	font-size: em(13);
+			    	color: $green;
+			    	margin:0;
+			    	margin-bottom: em(16);
+			    }
+			    p{
+			    	font-size: em(15);
+			    	color: $grey;
+			    }
+				}
+			}
+			&.calm{
+				.image{
+					width: em(170);
+				}
+				path{
+					&.bg{
+						fill: $white;							
+					}
+					&.border{
+						fill: $pale-blue;
+					}
+				}
+				.top-text{
+					display: none;
+				}
+				.text{
+					h3{
+			    	font-size: em(13);
+			    	color: $pale-blue;
+			    	margin:0;
+			    	margin-bottom: em(16);
+			    }
+			    p{
+			    	font-size: em(15);
+			    	color: $grey;
+			    }
+				}
+			}
+			&.luxury{
+				.image{
+					width: em(170);
+					margin-bottom: em(20);
+				}
+				path{
+					&.bg{
+						fill: $white;							
+					}
+					&.border{
+						fill: $gold;
+					}
+				}
+				.top-text{
+					display: none;
+				}
+				.text{
+					h3{
+			    	font-size: em(13);
+			    	color: $gold;
+			    	margin:0;
+			    	margin-bottom: em(16);
+			    }
+			    p{
+			    	font-size: em(15);
+			    	color: $grey;
+			    }
+				}
+			}
 			&.neo-classic{
 				path{
 					&.bg{

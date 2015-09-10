@@ -260,10 +260,7 @@ jQuery(function($){
 	};
 	hotspots = {
 		init: function(){
-			$('#bathrooms-for-inspiration .hotspot').on('click',function(){
-				hotspots.showData(this);
-			});
-			$('.bathrooms-for-inspiration .hotspot').on('click',function(){
+			$('#bathrooms-for-inspiration .hotspot, .bathrooms-for-inspiration .hotspot').on('click',function(){
 				hotspots.showInfo(this);
 			});
 			var hotspot = '<div id="hotspot">'
@@ -298,39 +295,6 @@ jQuery(function($){
 +'	</div><!-- end .hotspot-data -->'
 +'</div>';
 			$('#main-content').append(hotspot);
-		},
-		showData: function(obj){
-			var spot = $(obj).data("spot");
-			if($(obj).hasClass('active')){
-				$(obj).removeClass('active');
-				$('.hotspot-data.spot-'+spot).fadeOut();
-			}else{
-				$(obj).parent().find('.hotspot').removeClass('active');
-				$('.hotspot-data').fadeOut();
-				$(obj).addClass('active');
-				
-				var top = $(obj).position().top + $(obj).outerHeight()+10;
-				var left = $(obj).position().left - ($('.hotspot-data.spot-'+spot).outerWidth()/2) + ($(obj).outerHeight()/2);
-				var offset = top + $('.hotspot-data.spot-'+spot).outerHeight();
-				if( offset > $('.bathrooms-for-inspiration .bathrooms-showcase-section').height()){
-					top	= $(obj).position().top - $('.hotspot-data.spot-'+spot).outerHeight() - 10;
-				}
-				if(top < 0){
-					top = 20;
-					if($(obj).position().left - $('.hotspot-data.spot-'+spot).outerWidth() > 10){
-						left = $(obj).position().left - $('.hotspot-data.spot-'+spot).outerWidth();
-					}else{
-						left = $(obj).position().left + $(obj).outerWidth() ;
-					}
-				}
-				$('.hotspot-data.spot-'+spot).css(
-				{
-					top: top,
-					left: left
-				})
-				$('.hotspot-data.spot-'+spot).fadeIn();
-				;
-			}
 		},
 		showInfo: function(obj){
 			var spot = $(obj).data("spot");

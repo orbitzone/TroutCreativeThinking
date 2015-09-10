@@ -36,8 +36,13 @@ $( document ).ready(function() {
 	  arrows: true,
 	  autoplay: false
 	});
-
-
+	$('.sidebarnav h6').click(function(e){
+		e.preventDefault();
+		$this= $(this);
+		$parentLi = $this.closest('li');
+		$parentLi.toggleClass('active');
+		$parentLi.find('.sidebarsubnav').collapse('toggle');
+	})
 
     $('.same-height').matchHeight();
 });

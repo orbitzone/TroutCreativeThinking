@@ -224,6 +224,7 @@ body.bec-judd{
 					.product-details{
 						width: em(190);
 						position: absolute;
+						z-index: 2;
 						top: em(160);
 						left: em(5);
 						margin-left: em(20);

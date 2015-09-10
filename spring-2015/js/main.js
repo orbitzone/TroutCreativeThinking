@@ -206,9 +206,20 @@ jQuery(function($){
 		products: 0,
 		add: function(obj, product){
 			moodboard.products += 1;
-			$(obj).addClass('added');
-			$('#destination-happiness .dh-items').removeClass('empty').find('.number').html(moodboard.products);
+			var $heart = $('<div class="heart-animation"><i class="icon icon-heart"></i></div>');
+			$('#main-content').append($heart);
+			$heart.css({
+				position: 'absolute',
+				top: $(obj).find('i').offset().top - $('#main-content').offset().top,
+				left: $(obj).find('i').offset().left + 5,
+				zIndex: 99
+			});
+			TweenMax.to($heart, 1, {left:$('#destination-happiness .menu').offset().left +16, top:$('#destination-happiness .menu').offset().top - $('#main-content').offset().top - 5, scale:0.5, ease:Power1.easeInOut, onComplete: function(){ 
+				$('#destination-happiness .dh-items').removeClass('empty').find('.number').html(moodboard.products);
 			$('#destination-links .dh-items').removeClass('empty').find('.number').html(moodboard.products);
+					$heart.fadeOut(200, function(){ $(this).remove(); });
+				}});
+			$(obj).addClass('added');			
 		},
 		remove: function(obj, product){
 			moodboard.products -= 1;

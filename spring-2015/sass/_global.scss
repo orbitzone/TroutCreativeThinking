@@ -190,6 +190,12 @@ body.spring-2015{
 		.slick-slide{
 			outline: none !important;			
 		}
+		.heart-animation{
+			i{
+				color: $red;
+				font-size: em(20);
+			}
+		}
 		.container{
 			padding: 0 30px;
 		}

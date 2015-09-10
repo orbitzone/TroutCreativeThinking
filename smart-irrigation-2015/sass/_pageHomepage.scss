@@ -1,5 +1,18 @@
 body.smart-irrigation-2015{
 
+	.banner-section{
+		.slick-prev{
+			left:0;
+			z-index:10;
+		} 
+		.slick-next {
+	    	right: 0;
+		}
+		.slick-dots{
+			bottom:-15px;
+		}
+	}
+
 	.box-section{
 		text-align:center;
 		.text-area{
@@ -100,6 +113,7 @@ body.smart-irrigation-2015{
 				}
 			}
 			&.section-row-half-right{
+				background-color: $bgGreenSpecial;
 				position:relative;
 				.flower-wrapper{
 					position:absolute;
@@ -112,6 +126,10 @@ body.smart-irrigation-2015{
 					padding-top:50px;
 					padding-bottom:50px;
 					text-align:center;
+					.slick-dots{
+						padding:0;
+						margin:0;
+					}
 					.text-area{
 						max-width:75%;
 						float:right;

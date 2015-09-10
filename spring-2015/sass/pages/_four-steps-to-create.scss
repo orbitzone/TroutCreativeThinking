@@ -4,7 +4,7 @@
 
 $stepOneGreen : $dark-green;
 $stepOneNumber: $gold;
-$stepOneGreenHighlight: $dark-green-highlight;
+$stepOneTip: $dark-green-highlight;
 $stepsGrey: $blue-grey;
 $stepTwoPink: $pink;
 
@@ -34,12 +34,20 @@ body.four-steps-to-create{
       height: $hexLargeHeight-lg;
     }
     .step-number{
-
+      position: absolute;
+      font-size: em(100);
+      width: 2em;
+      text-align: center;
+      font-weight: bold;
     }
     .text{
-      padding: 0 40px;
+      padding: 0 15%;
+      h2{
+        text-decoration: underline;
+      }
       p{
-        font-size: em(18);
+        font-size: em(20);
+        line-height: 1.5em;
         margin-bottom: 0; 
       }
     }
@@ -47,6 +55,11 @@ body.four-steps-to-create{
   .hex-tip{
     width: $hexTipWidth-lg;
     height: $hexTipHeight-lg;
+    font-family: $font-family-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: em(20);
+    position: absolute;
     svg{
       width: $hexTipWidth-lg;
       height: $hexTipHeight-lg;
@@ -70,10 +83,20 @@ body.four-steps-to-create{
         path{
           fill: $stepOneGreen;
         }
-        .hex-tip{
-          position: absolute;
-          top: 0;
-          left: 0;
+      }
+
+      .step-number{
+        top: 2%;
+        left: 50%;
+        margin-left: -1em;
+      }
+      .hex-tip{
+        top: 0;
+        left: 0;
+        svg{
+          path{
+            fill: $stepOneTip;
+          }
         }
       }
     }
@@ -95,17 +118,37 @@ body.four-steps-to-create{
       max-width: 500px;
     }
     .tile-finishing-touches{
+      background: url(../images/steps/bg-hexagons.png) no-repeat center;
+      background-size: 50%;
+      max-width: 600px;
       position: relative;
       z-index: 4;
       clear: both;
+      padding: 250px 0 0 200px;
     }
     .tile-collecting-tips{
       position: relative;
       z-index: 1;
+      float: right;
+      margin-top: -10%;
+      .hero-image{
+        max-width: 600px;
+      }
+      .hex-tip{
+        top: 0;
+        left: 0;
+        svg{
+          path{
+            fill: $stepOneTip;
+          }
+        }
+      }
     }
     .tile-pinterest{
       position: relative;
       z-index: 4;
+      float: right;
+      clear: both;
     }
   }
   // Step Two

@@ -738,6 +738,7 @@ body.love-family{
 				}
 				&.active{
 					.circular-product{
+						opacity: 1;
 						&.product-1{
 							@include transform(rotate(0));							
 						}

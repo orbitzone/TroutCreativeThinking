@@ -1296,6 +1296,7 @@ body.love-luxury{
 				}
 				&.active{
 					.circular-product{
+						opacity: 1;
 						&.product-1{
 							@include transform(translate(-50%) rotate(0));							
 						}

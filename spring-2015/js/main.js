@@ -531,7 +531,7 @@ jQuery(function($){
 					$('#main-content').append(data);
 
 					if (isMobile) {
-						$("#circular-gallery #circle").addClass("active");									
+						$("#circular-gallery #circle").addClass("active");
 					}else{
 						/*var controller = new ScrollMagic.Controller();
 						var scene = new ScrollMagic.Scene({triggerElement: "#circle"})

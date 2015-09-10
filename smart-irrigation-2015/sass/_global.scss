@@ -1,0 +1,67 @@
+body.smart-irrigation-2015{
+	.clear{
+		clear:both;
+	}
+	.text-right{
+		text-align:right;
+	}
+	.text-white{
+		color:$white;
+	}
+	.text-black{
+		color:$textGrey;
+	}
+	.background-white{
+		background-color:$white;
+		color:$textGrey;
+	}
+	.background-grey{
+		background-color:$bgGrey;
+	}
+	.background-green{
+		background-color:$bgLightGreen;
+	}
+	.background-dark-green{
+		background-color:$bgDarkGreen;
+		color:$white;
+	}
+	.background-blue{
+		background-color:$bgBlue;
+	}
+	.background-grass{
+		background:url('../images/homepage/bg-grass.png') $bgDarkGreen;
+	}
+	.inner-spacing{
+		padding-top:60px;
+		padding-bottom:60px;
+	}
+	.button{
+		padding:10px 20px;
+		margin-top:10px;
+		margin-bottom:10px;
+		display:inline-block;
+		@include border-radius(3px);
+		&.button-light{
+			background:$white;
+			color:$textGrey;
+			&:hover{
+				background:$buttonGrey;
+				color:$white;
+				text-decoration:none;
+				cursor: pointer; 
+				cursor: hand;
+			}
+		}
+		&.button-dark{
+			background:$buttonGrey;
+			color:$white;
+			&:hover{
+				background:$buttonGreyhover;
+				color:$white;
+				text-decoration:none;
+				cursor: pointer; 
+				cursor: hand;
+			}
+		}
+	}
+}

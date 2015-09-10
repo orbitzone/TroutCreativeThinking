@@ -1,0 +1,35 @@
+$white:				#FFF;
+$black:				#000;
+$bgGrey:            #F1F2F2;
+$bgLightGreen:		#8ED500;
+$bgDarkGreen:		#5B8726;
+$bgBlue:			#00AFEC;
+$textGrey:			#3F3F3F;
+$buttonGrey:		#3F3F3F;
+$buttonGreyhover:	#999999;
+
+$base-font-size: 14px;
+
+$font-family-gotham: 'Gotham A', 'Gotham B', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-helvetica: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+$max-content-width: 1200px;
+
+$break-md-max:797px;
+$break-md-min:768px;
+$break-sm-max:767px;
+$break-sm-min:481px;
+$break-xs-max:480px;
+
+
+
+
+@media (min-width: $break-md-min) and (max-width: $break-md-max) { 
+
+}
+@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
+
+}
+@media (max-width: $break-xs-max) { 
+
+}

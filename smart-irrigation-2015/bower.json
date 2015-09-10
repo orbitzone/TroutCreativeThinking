@@ -1,0 +1,28 @@
+{
+  "name": "reece-smart-irrigation-2015",
+  "version": "0.1",
+  "authors": [
+    "Joey"
+  ],
+  "description": "Reece Smart Irrigation 2015",
+  "keywords": [
+    "HTML",
+    "Boilerplate",
+    "CSS",
+    "Javascript"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "jquery": "1.11.0",
+    "font-awesome": "~4.2.0",
+    "modernizr": "~2.8.3",
+    "slick-carousel": "~1.5.8",
+    "matchHeight": "~0.6.0"
+  }
+}

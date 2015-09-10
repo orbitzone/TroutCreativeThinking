@@ -634,7 +634,8 @@ body.love-family{
 					position: absolute;
 					width: em(100);
 					left: em(94);
-					@include transition(1s all ease-out);
+					opacity: 0;
+					//@include transition(1s all ease-out);
 					@include transform-origin(center em(150));
 					@media (min-width: $screen-sm-min){
 						left: em(260);
@@ -656,6 +657,51 @@ body.love-family{
 						left: em(385);
 						@include transform-origin(center em(500));
 					}
+					&.product-1{
+							@include transform(rotate(0));							
+						}
+						&.product-2{
+							.share,
+							.number{
+								@include transform(rotate(-45deg));	
+							}
+						}
+						&.product-3{
+							.share,
+							.number{
+								@include transform(rotate(-90deg));	
+							}
+						}
+						&.product-4{
+							.share,
+							.number{
+								@include transform(rotate(-135deg));	
+							}
+						}
+						&.product-5{
+							.share,
+							.number{
+								@include transform(rotate(-180deg));	
+							}
+						}
+						&.product-6{
+							.share,
+							.number{
+								@include transform(rotate(-225deg));	
+							}
+						}
+						&.product-7{
+							.share,
+							.number{
+								@include transform(rotate(-270deg));	
+							}
+						}
+						&.product-8{
+							.share,
+							.number{
+								@include transform(rotate(45deg));	
+							}
+						}	
 					.share{
 						position: absolute;
 				    top: 40%;

@@ -1170,7 +1170,8 @@ body.love-luxury{
 					width: 160px;
 					position: absolute;
 					left: 50%;
-					@include transition(1s all ease-out);
+					opacity: 0;
+					//@include transition(1s all ease-out);
 					@include transform-origin(center 196px);
 					@media (min-width: $screen-sm-min){
 						width: 200px;
@@ -1188,6 +1189,38 @@ body.love-luxury{
 						width: 300px;
 						@include transform-origin(center 380px);
 					}
+					&.product-1{
+						}
+						&.product-2{
+							.share,
+							.number{
+								@include transform(rotate(-60deg));	
+							}
+						}
+						&.product-3{
+							.share,
+							.number{
+								@include transform(rotate(-120deg));	
+							}
+						}
+						&.product-4{
+							.share,
+							.number{
+								@include transform(rotate(-180deg));	
+							}
+						}
+						&.product-5{
+							.share,
+							.number{
+								@include transform(rotate(-240deg));	
+							}
+						}
+						&.product-6{
+							.share,
+							.number{
+								@include transform(rotate(-300deg));	
+							}
+						}
 					.share{
 						position: absolute;
 						top: 40%;

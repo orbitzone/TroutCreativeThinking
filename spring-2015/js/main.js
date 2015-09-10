@@ -558,13 +558,33 @@ jQuery(function($){
 					if (isMobile) {
 						$("#circular-gallery #circle").addClass("active");									
 					}else{
-						var controller = new ScrollMagic.Controller();
+						/*var controller = new ScrollMagic.Controller();
 						var scene = new ScrollMagic.Scene({triggerElement: "#circle"})
 										.setClassToggle("#circle", "active")
-										.triggerHook(0.5)
-										//.addIndicators()
+										.addIndicators()
 										.addTo(controller);				
-
+	*/				$(window).on('scroll',function(){
+							if($(window).scrollTop() > $('#circle').offset().top - ($(window).height()/2)){
+								$('#circle').addClass('activea');
+								TweenMax.to($('#circle .product-1'),1,{ opacity: 1, rotation: 0});
+								TweenMax.to($('#circle .product-2'),1,{ opacity: 1, rotation: 45});
+								TweenMax.to($('#circle .product-3'),1,{ opacity: 1, rotation: 90});
+								TweenMax.to($('#circle .product-4'),1,{ opacity: 1, rotation: 130});
+								TweenMax.to($('#circle .product-5'),1,{ opacity: 1, rotation: 180});
+								TweenMax.to($('#circle .product-6'),1,{ opacity: 1, rotation: 225});
+								TweenMax.to($('#circle .product-7'),1,{ opacity: 1, rotation: 270});
+								TweenMax.to($('#circle .product-8'),1,{ opacity: 1, rotation: -45});
+							}else{
+								TweenMax.to($('#circle .product-1'),1,{ opacity: 0, rotation: 0});
+								TweenMax.to($('#circle .product-2'),1,{ opacity: 0, rotation: 0});
+								TweenMax.to($('#circle .product-3'),1,{ opacity: 0, rotation: 0});
+								TweenMax.to($('#circle .product-4'),1,{ opacity: 0, rotation: 0});
+								TweenMax.to($('#circle .product-5'),1,{ opacity: 0, rotation: 0});
+								TweenMax.to($('#circle .product-6'),1,{ opacity: 0, rotation: 0});
+								TweenMax.to($('#circle .product-7'),1,{ opacity: 0, rotation: 0});
+								TweenMax.to($('#circle .product-8'),1,{ opacity: 0, rotation: 0});
+							}	
+						});
 					}
 					$('.circular-list .description').matchHeight();
 					loveFamily.smartStorage();
@@ -777,6 +797,28 @@ jQuery(function($){
 				url: 'pages/luxury/circular-gallery.html',
 				success: function(data){
 					$('#main-content').append(data);
+					if (isMobile) {
+						$("#circular-gallery .circle").addClass("active");									
+					}else{
+						$(window).on('scroll',function(){
+							if($(window).scrollTop() > $('#circular-gallery .circle').offset().top - ($(window).height()/2)){
+								$('#circular-gallery .circle').addClass('activea');
+								TweenMax.to($('#circular-gallery .circle .product-1'),1,{ opacity: 1, x:'-50%', rotation: 0});
+								TweenMax.to($('#circular-gallery .circle .product-2'),1,{ opacity: 1, x:'-50%', rotation: 60});
+								TweenMax.to($('#circular-gallery .circle .product-3'),1,{ opacity: 1, x:'-50%', rotation: 120});
+								TweenMax.to($('#circular-gallery .circle .product-4'),1,{ opacity: 1, x:'-50%', rotation: 180});
+								TweenMax.to($('#circular-gallery .circle .product-5'),1,{ opacity: 1, x:'-50%', rotation: 240});
+								TweenMax.to($('#circular-gallery .circle .product-6'),1,{ opacity: 1, x:'-50%', rotation: 300});
+							}else{
+								TweenMax.to($('#circular-gallery .circle .product-1'),1,{ opacity: 0, rotation: 0});
+								TweenMax.to($('#circular-gallery .circle .product-2'),1,{ opacity: 0, rotation: 0});
+								TweenMax.to($('#circular-gallery .circle .product-3'),1,{ opacity: 0, rotation: 0});
+								TweenMax.to($('#circular-gallery .circle .product-4'),1,{ opacity: 0, rotation: 0});
+								TweenMax.to($('#circular-gallery .circle .product-5'),1,{ opacity: 0, rotation: 0});
+								TweenMax.to($('#circular-gallery .circle .product-6'),1,{ opacity: 0, rotation: 0});
+							}	
+						});
+					}
 					loveLuxury.products();
 				}
 			});						

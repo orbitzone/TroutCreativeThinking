@@ -1,51 +1,89 @@
 body.moodboard{
+	#main{
+		margin-top: 0;
+		max-width: 100%;
+	}
 	section#moodboard{
+		header{
+			position: relative;
+		}
 		.line-pattern{
+			padding: em(40) 0 em(40);
 			min-height: 800px;
 		}
-		.main-content{
-			max-width: em(1200);
+		.plant{
+			position: absolute;
+			top: 0;
+			left: 0;			
 		}
+		.destination-happiness{
+			position: absolute;
+			top: 0;
+			right: 0;
+			@include transform(translateX(50%));
+		}
+		
 		.title{
 			margin-bottom: em(40);
 			@include clearfix;
 			h1{
 				color: $white;
-				font-size: em(52);
+				font-size: em(30);
+				@media (min-width: $screen-sm-min){
+					font-size: em(52);
+				}
 				.block{
 					display: block;
 					float: left;
-					padding: em(2) em(6);
+					padding: em(2) em(4) em(4);
 					background: $pink;
 					clear: both;
 					text-decoration: underline;
 				}
 			}
 		}
-		.plant{
-			position: absolute;
-			top: 0;
-			left: 0;
-			@include transform(translateX(-100%));
+		.intro{
+			max-width: em(568);
 		}
-		.destination-happiness{
-			position: absolute;
-			top: 0;
-			right: 0;
-			@include transform(translateX(100%));
+		.buttons{
+			@media (min-width: $screen-md-min){
+				text-align: right;
+				position: absolute;
+				bottom: 0;
+				right: 0;
+			}
+			.button-shop{
+				margin-bottom: em(40);
+			}
+			button.print{
+				background: none;
+				@include appearance(none);
+				border: none;
+				i{
+					position: relative;
+					font-size: em(24);
+					top: 4px;
+				}
+				.text{
+					font-size: em(24);
+					font-weight: 700;
+					text-decoration: underline;
+				}
+			}
 		}
 		.product{
 			position: relative;
 			background: $white;
 			border: 1px solid $black;
-			padding: em(20);
-			margin-bottom: em(20);
+			padding: em(20) em(10) em(80);
+			margin-bottom: em(30);
 			.remove{
 				position: absolute;
 				top: 0;
 				left: 0;
 				width: 100%;
 				text-align: right;
+				z-index: 2;
 				button{
 					background: none;
 					border: none;
@@ -53,6 +91,7 @@ body.moodboard{
 					padding: em(5);
 					i{
 						color: $grey;
+						font-size: em(23);
 					}
 				}
 			}
@@ -63,6 +102,44 @@ body.moodboard{
 				color: $black;
 				text-decoration: underline;
 				font-size: em(26);
+			}
+			.actions{
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				padding: em(10);
+				margin-top: em(20);
+				text-align: center;
+				@include clearfix;
+				@media (min-width: $screen-md-min){
+					font-size: em(14);
+				}
+				@media (min-width: $screen-lg-min){
+					font-size: em(13);
+				}
+				@media (min-width: $screen-xl-min){
+					font-size: em(16);
+				}
+				a.more-details{
+					position: relative;
+					background: $dark-green;
+					color: $white;
+					border: none;
+					font-size: 1em;
+					font-weight: 700;
+					padding: em(14) em(12);
+					line-height: 1em;
+					outline: none;
+					white-space: nowrap;
+					margin-right: em(10);
+					@include border-radius(4px);
+					@include box-shadow(2px 2px 6px rgba(0,0,0,0.3));
+					float: left;
+				}
+				button{
+					float: left;
+				}				
 			}
 		}
 	}

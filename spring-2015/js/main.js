@@ -353,8 +353,7 @@ jQuery(function($){
 			}else{
 				$(obj).parent().find('.hotspot').removeClass('active');
 				$(obj).addClass('active');
-				$('#hotspot').fadeOut();
-
+				
 				var top = $(obj).offset().top + $(obj).outerHeight() + 10 - $('#main-content').offset().top;
 				var left = $(obj).offset().left - $(obj).outerWidth() - ($('#hotspot').outerWidth()/2);
 				var offsetTop = top + $('#hotspot').outerHeight();

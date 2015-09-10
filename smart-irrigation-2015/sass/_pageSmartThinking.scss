@@ -5,6 +5,9 @@ body.smart-irrigation-2015{
 		color:$textGrey;
 		.text-area{
 			color:$textGrey;
+			h4{
+				text-transform:none;
+			}
 			.call-to-action{
 				font-weight:bold;
 			}

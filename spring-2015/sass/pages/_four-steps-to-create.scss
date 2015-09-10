@@ -2,11 +2,15 @@
 // Four Steps to Create
 // -------------------------------------
 
-$stepOneGreen : $dark-green;
+$stepOneHex : $dark-green;
 $stepOneNumber: $gold;
 $stepOneTip: $dark-green-highlight;
 $stepsGrey: $blue-grey;
-$stepTwoPink: $pink;
+$stepTwoHex: $pink;
+$stepThreeHex: $purple-grey;
+$stepFourHex: $gold;
+$stylingTip: $blue-grey;
+$pinterestTip: $dark-green-highlight;
 
 $hexLargeWidth-lg: 530px;
 $hexLargeHeight-lg: auto;
@@ -65,6 +69,24 @@ body.four-steps-to-create{
       height: $hexTipHeight-lg;
     }
   }
+  // iPad Thumb
+  .ipad-thumb{
+    position: relative;
+    z-index: 2;
+    max-width: 560px;
+    float: right;
+    @include clearfix;
+    .thumb{
+      float: left;
+      width: 60%
+    }
+    .text{
+      position: absolute;
+      width: 40%;
+      right: 0;
+      padding: 10px 20px 30px 5px;
+    }
+  }
   // Hero Title
   .page-hero{
     h1{
@@ -81,7 +103,7 @@ body.four-steps-to-create{
       z-index: 3;
       svg{
         path{
-          fill: $stepOneGreen;
+          fill: $stepOneHex;
         }
       }
 
@@ -89,6 +111,7 @@ body.four-steps-to-create{
         top: 2%;
         left: 50%;
         margin-left: -1em;
+        color: $stepOneNumber;
       }
       .hex-tip{
         top: 0;
@@ -101,14 +124,8 @@ body.four-steps-to-create{
       }
     }
     .tile-trends{
-      position: relative;
-      z-index: 2;
-      max-width: 560px;
-      float: right;
-      @include clearfix;
-      .thumb{
-        float: left;
-        width: 60%
+      .text{
+        bottom: 0;
       }
     }
     .tile-polaroid{
@@ -124,7 +141,22 @@ body.four-steps-to-create{
       position: relative;
       z-index: 4;
       clear: both;
-      padding: 250px 0 0 200px;
+      @include clearfix;
+      .product-bathtub{
+        width: 420px;
+        float: left;
+        position: relative;
+        top: -15%;
+      }
+      .product-shelf{
+        width: 270px;
+        float: right;
+      }
+      .text{
+        clear: both;
+        float: right;
+        width: 50%;
+      }
     }
     .tile-collecting-tips{
       position: relative;
@@ -135,11 +167,11 @@ body.four-steps-to-create{
         max-width: 600px;
       }
       .hex-tip{
-        top: 0;
-        left: 0;
+        top: -10%;
+        right: 10%;
         svg{
           path{
-            fill: $stepOneTip;
+            fill: $stylingTip;
           }
         }
       }
@@ -149,18 +181,51 @@ body.four-steps-to-create{
       z-index: 4;
       float: right;
       clear: both;
+      .ipad-thumb{
+        z-index: 1;
+        .text{
+          bottom: 10%;
+        }
+      }
+      .hex-tip{
+        z-index: 2;
+        svg{
+          path{
+            fill: $pinterestTip;
+          }
+        }
+      }
     }
   }
   // Step Two
   .section-step-two{
+    header{
+      svg{
+        path{
+          fill: $stepTwoHex
+        }
+      }
+    }
 
   }
   // Step Three
   .section-step-three{
-    
+    header{
+      svg{
+        path{
+          fill: $stepThreeHex
+        }
+      }
+    }
   }
   // Step Four
   .section-step-four{
-    
+    header{
+      svg{
+        path{
+          fill: $stepFourHex
+        }
+      }
+    }
   }
 }

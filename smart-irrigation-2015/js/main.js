@@ -28,6 +28,7 @@ $( document ).ready(function() {
 	  arrows: true,
 	  autoplay: false
 	});
+  $('.sidebarsubnav').collapse('hide');
 	$('.sidebarnav h6').click(function(e){
 		e.preventDefault();
 		$this= $(this);

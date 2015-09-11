@@ -547,6 +547,9 @@ body.four-steps-to-create{
             }            
             img{
               max-width: 100%;
+              @media (min-width: $screen-md-min){
+                width: em(396);
+              }
             }
           }
           .text{

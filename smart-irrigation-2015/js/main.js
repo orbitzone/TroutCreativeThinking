@@ -49,5 +49,7 @@ $( document ).ready(function() {
 });
 
 function matchLoaded(){
-	$('.match-height .divide-1-3').matchHeight();
+	$('.match-height img').load(function(){
+		$('.match-height .divide-1-3').matchHeight();
+	});
 }

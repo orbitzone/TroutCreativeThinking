@@ -1,3 +1,7 @@
+@import "variables";
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/variables";
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins";
+@import "mixins";
 @page{
 	margin: 1cm;
 }
@@ -31,46 +35,98 @@ h3
 p{
 	margin-top: 0;
 }
-#banner, #main-header,#logo-wrapper,#site-details, #weather-based-irrigation, #time-based-irrigation, #errors, #results{
-	display:none !important;
+.navbar,
+.subnavbar,
+.ocnav-wrapper,
+.plant,
+.destination-happiness,
+.print,
+.site-footer,
+#destination-happiness,
+#destination-happiness-content,
+#share-hex,
+.share,
+.button-mood-cart{
+	display: none;
 }
-#print{
-	.weathermatic-logo{
-		text-align: right;
-		img{
-			display: block;
-			height: 43px;
-			float: right;
-		}
+#main{
+	padding: 0 15px;
+}
+.row{
+	margin: 0 -15px;
+	.col-xs-12{
+		padding: 0 15px;
 	}
-	#logos{
-		width: 100%;
-		border: none;
-		td{
-			width: 50%;
-		}
-	}
-	table.table{
-		width: 100%;
-		padding: 0;
-		border-collapse: collapse;
-    border-spacing: 1px;
-    margin-bottom: 10px;
-    th{
-			width: 20%;
-			vertical-align: top;
-			text-align: left;
-			font-weight: normal;
-			padding: 0;
-			padding: 10px 10px 10px 20px;
-			border: 1px solid #CCC;
-		}
-		td{
-			width: 80%;
-			vertical-align: top;
-			text-align: left;
-			padding: 10px 10px 10px 20px;
-			border: 1px solid #CCC;
-		}
+	.col-lg-3{
+		width: 25%;
+		float: left;
+		padding: 0 15px;
 	}
 }
+		
+		.title{
+			margin-bottom: em(40);
+			@include clearfix;
+			h1{
+				color: $white;
+				font-size: 30px;
+				font-weight: 700;
+				margin-bottom: 30px;
+				.block{
+					display: block;
+					float: left;
+					padding: em(2) em(4) em(4);
+					background: $pink;
+					clear: both;
+					text-decoration: underline;
+				}
+			}
+		}
+		.intro{
+			font-size: 12pt;
+			padding: 10px 0;
+		}
+		.no-products{
+			display: none;
+		}
+		.buttons{
+			display: none;
+		}
+		.product{
+			position: relative;
+			background: $white;
+			border: 1px solid $light-grey;
+			padding: 20px;
+			margin-bottom: 30px;
+			min-height: 200px;
+			height: auto !important;
+			.image{
+				text-align: center;
+				img{
+					max-width: 100%;
+					max-height: 120px;
+					margin: 0 auto;
+				}
+				height: 120px;
+				overflow: none;
+			}
+			.share{
+				position: absolute;
+				top: em(10);
+				left: em(10);
+			}
+			.remove{
+				display: none;
+			}
+			.image{
+				margin-bottom:10px;
+			}
+			.name{
+				color: $black;
+				text-decoration: underline;
+				font-size: 14pt;
+			}
+			.actions{
+				display: none;
+			}
+		}

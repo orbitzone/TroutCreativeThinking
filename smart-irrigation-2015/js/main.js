@@ -20,7 +20,7 @@ $( document ).ready(function() {
 	  dots: true,
 	  fade: true,
 	  arrows: false,
-	  autoplay: false,
+	  autoplay: true,
 	  speed:800	
 	});
 

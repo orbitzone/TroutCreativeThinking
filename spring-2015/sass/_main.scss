@@ -256,7 +256,9 @@ body.spring-2015{
 			}
 		}
 	}
-	button.shop-now{
+	button.shop-now,
+	a.shop-now{
+		display: block;
 		background: $green;
 		color: $white;
 		border: none;
@@ -265,6 +267,7 @@ body.spring-2015{
 		padding: em(14) em(12);
 		line-height: 1em;
 		outline: none;
+		text-decoration: none;
 		@include appearance(none);
 		@include border-radius(0px 4px 4px 0px);
 		span.button-text{

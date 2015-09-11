@@ -34,7 +34,7 @@ $( document ).ready(function() {
 		$this= $(this);
 		$parentLi = $this.closest('li');
 		$parentLi.toggleClass('active');
-		$parentLi.find('.sidebarsubnav').collapse('toggle');
+		$this.next('.sidebarsubnav').collapse('toggle');
 	})
 
     $('.match-height .divide-1-3').matchHeight();

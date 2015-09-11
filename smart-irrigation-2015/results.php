@@ -1,63 +1,53 @@
 <?php
 
-/*
-type would be one of 
-
-video
-link
-data
-article
-*/
   $results = array(
     array(
-      "heading"=>"Healthy Together Community",
-      "content"=>"Healthy Together Bendigo",
-      "link"=>"resource-content.html",
-      "icon"=>"fa-link"
+      "title"=>"Lorem ipsum dolor sit amet, consectetur.",
+      "link"=>"smart-thinking-article2.html",
+      "text"=>"Lorem ipsum dolor sit amet, consectsicing, debitis repellat? Dolorum nobis harum quam veritatis, voluptatum iure vero odit sunt sequi!",
+      "thumbnail"=>"images/smart-thinking/article3.png"
     ),
     array(
-      "heading"=>"Healthy Living",
-      "content"=>"Healthy Together Victoria aims to improve people's health where they live, learn, work and play.",
-      "link"=>"resource-video.html",
-      "thumbnail"=>"resource1.jpg",
-      "isvideo"=>"true"
+      "title"=>"Hydrozoning - Positioning Plants Wisely",
+      "link"=>"smart-thinking-article1.html",
+      "thumbnail"=>"images/smart-thinking/article1.png"
     ),
     array(
-      "heading"=>"Data & Statistics",
-      "content"=>"Victoria Health Population Survey",
-      "link"=>"#",
-      "thumbnail"=>"resource2.jpg",
-      "icon"=>"fa-file"
+      "title"=>"Why Irrigate?",
+      "link"=>"smart-thinking-article2.html",
+      "thumbnail"=>"images/smart-thinking/article2.png"
     ),
     array(
-      "heading"=>"Data & Statistics",
-      "content"=>"Victoria Health Population Survey",
-      "link"=>"#",
-      "thumbnail"=>"resource3.jpg",
-      "icon"=>"fa-file"
+      "title"=>"Why to use smart irrigation systems.",
+      "link"=>"smart-thinking-article3.html",
+      "thumbnail"=>"images/smart-thinking/article3.png"
     ),
     array(
-      "heading"=>"Healthy Together Community",
-      "content"=>"Healthy Together Hume",
-      "link"=>"resource-content.html",
-      "icon"=>"fa-link"
+      "title"=>"The benefits of Dripline",
+      "link"=>"smart-thinking-article4.html",
+      "thumbnail"=>"images/smart-thinking/article1.png"
     ),
     array(
-      "heading"=>"Healthy Living",
-      "content"=>"Healthy Together Victoria aims to improve people's health where they live, learn, work and play.",
-      "link"=>"resource-video.html",
-      "thumbnail"=>"resource4.jpg",
-      "isvideo"=>"true"
+      "title"=>"Lorem ipsum dolor sit amet, consectetur.",
+      "link"=>"smart-thinking-article1.html",
+      "text"=>"Lorem ipsum dolor sit amet, voluptatum iure vero odit sunt sequi!",
+      "thumbnail"=>"images/smart-thinking/article2.png"
     ),
-    array(
-      "heading"=>"Other Initiatives",
-      "content"=>"Healthy Together Victoria aims to improve people's health where they live, learn, work and play.",
-      "link"=>"resource-content.html",
-      "icon"=>"fa-link"
-    ),
+
   );
-  shuffle($results);
-  echo '{"results":'.json_encode($results).'}';
+  //shuffle($results);
+  (isset($_REQUEST['start']))?$start = $_REQUEST['start'] : $start = 0;
+  $remaining = ',"remaining":"10"';
+  if($start >= 10){
+    $rand = rand(0,10);
+    if($rand >= 3){
+      $remaining = ',"remaining":"0"';
+    }
+  }
+  echo '{"results":'.json_encode($results).$remaining.'}';
   
   //echo(rand(0,1));
 ?>
+
+
+

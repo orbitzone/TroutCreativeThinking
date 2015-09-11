@@ -37,33 +37,16 @@ $( document ).ready(function() {
 		$this.next('.sidebarsubnav').collapse('toggle');
 	})
 
-    $('.match-height .divide-1-3').matchHeight();
+  matchLoaded();
+  $('#thinking-list').loadMore({
+    url: 'results.php',
+    resultWrap: '#results1',
+    loadBtn: '#load1',
+    sourceTemplate: "#load-template",
+    callback: matchLoaded
+  });
 });
 
-
-var reeceIrrigation = {
-	onReady: function() {
-		reeceIrrigation.loadMoreListeners();
-		reeceIrrigation.loadClicked();
-	},
-	loadMoreListeners: function (){
-		start = 0;
-		$('#load-more').click(reeceIrrigation.loadClicked);
-	},
-	loadClicked: function(e){
-		if(e){
-			e.preventDefault();
-		}
-		$.getJSON("results.php",function(data){
-			var source = $("#load-template").html();
-			var template = Handlebars.compile(source);
-			var html = template(data);
-			$('#load-result').append(html);
-			if (data.remaining<0){
-				$('#load-more').remove();
-			}
-		});
-	}
-
+function matchLoaded(){
+	$('.match-height .divide-1-3').matchHeight();
 }
-$( document ).ready( reeceIrrigation.onReady );

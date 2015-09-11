@@ -223,7 +223,21 @@ jQuery(function($){
 		},
 		remove: function(obj, product){
 			moodboard.products -= 1;
-			$(obj).removeClass('added');
+			var $heart = $('<div class="heart-animation"><i class="icon icon-heart"></i></div>');
+			var menuTop = $('#destination-happiness .menu').offset().top - $('#main-content').offset().top - 5;
+			var menuLeft = $('#destination-happiness .menu').offset().left - $('#main-content').offset().left +16;
+			$heart.css({
+				position: 'absolute',
+				top: menuTop,
+				left: menuLeft,
+				zIndex: 99
+			});
+			$('#main-content').append($heart);
+			$(obj).removeClass('added');	
+			
+			TweenMax.to($heart, 1, {bezier:{type:"cubic", values:[{x:0, y:0}, {x:0, y:-200}, {x:200, y:-200}, {x:200, y: 500  }], autoRotate:["x","y","rotation", 0, true]}, scale:0.5, opacity: 0, ease:Power1.easeInOut, onComplete: function(){ 
+				$heart.remove();
+			}});		
 			$('#destination-happiness .dh-items .number').html(moodboard.products);
 			$('#destination-links .dh-items .number').html(moodboard.products);
 			if(moodboard.products <= 0){

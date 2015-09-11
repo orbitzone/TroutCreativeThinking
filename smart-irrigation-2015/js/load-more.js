@@ -11,7 +11,7 @@ Load More jQuery Plugin
     var settings = $.extend({
       // These are the defaults.
     }, options );
-
+    bodyScrollOffset = 0;
     var methods = {
       init:function (){
         methods.loadMoreListeners();
@@ -24,6 +24,7 @@ Load More jQuery Plugin
       loadClick: function(e){
         e.preventDefault();
         methods.loadClicked();
+        bodyScrollOffset = $(window).scrollTop();
       },
       loadClicked: function (){
         parameters = {start: methods.start};
@@ -33,6 +34,7 @@ Load More jQuery Plugin
           var html = template(data);
           methods.start = data.results.length + methods.start ;
           $(options.resultWrap).append(html);
+          $('html, body').animate({scrollTop: bodyScrollOffset}, 500);
           if (data.remaining<=0){
             $(options.loadBtn).remove();
           }

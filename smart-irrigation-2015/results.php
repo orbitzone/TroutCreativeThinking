@@ -2,12 +2,6 @@
 
   $results = array(
     array(
-      "title"=>"Lorem ipsum dolor sit amet, consectetur.",
-      "link"=>"smart-thinking-article2.html",
-      "text"=>"Lorem ipsum dolor sit amet, consectsicing, debitis repellat? Dolorum nobis harum quam veritatis, voluptatum iure vero odit sunt sequi!",
-      "thumbnail"=>"images/smart-thinking/article3.png"
-    ),
-    array(
       "title"=>"Hydrozoning - Positioning Plants Wisely",
       "link"=>"smart-thinking-article1.html",
       "thumbnail"=>"images/smart-thinking/article1.png"
@@ -33,9 +27,14 @@
       "text"=>"Lorem ipsum dolor sit amet, voluptatum iure vero odit sunt sequi!",
       "thumbnail"=>"images/smart-thinking/article2.png"
     ),
-
+    array(
+      "title"=>"Lorem ipsum dolor sit amet, consectetur.",
+      "link"=>"smart-thinking-article2.html",
+      "text"=>"Lorem ipsum dolor sit amet, consectsicing, debitis repellat? Dolorum nobis harum quam veritatis, voluptatum iure vero odit sunt sequi!",
+      "thumbnail"=>"images/smart-thinking/article3.png"
+    ),
   );
-  //shuffle($results);
+  shuffle($results);
   (isset($_REQUEST['start']))?$start = $_REQUEST['start'] : $start = 0;
   $remaining = ',"remaining":"10"';
   if($start >= 10){

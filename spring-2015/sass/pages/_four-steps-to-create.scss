@@ -14,13 +14,13 @@ $pinterestTip: $dark-green-highlight;
 $designFromHomeTip: $brown-grey;
 
 $hexLargeWidth-lg: 530px;
-$hexLargeHeight-lg: auto;
+$hexLargeHeight-lg: 584px;
 
 $hexLargeWidth-xs: 280px;
-$hexLargeHeight-xs: auto;
+$hexLargeHeight-xs: 310px;
 
 $hexTipWidth-lg: 138px;
-$hexTipHeight-lg: auto;
+$hexTipHeight-lg: 151px;
 
 body.four-steps-to-create{
   // Hex Blocks
@@ -441,7 +441,7 @@ body.four-steps-to-create{
         margin-top: em(37);
       }
       @media (min-width: $screen-lg-min){
-        margin-top: em(230);
+        margin-top: em(12);
       }
       @media (min-width: $screen-xl-min){
         margin-top: 0;

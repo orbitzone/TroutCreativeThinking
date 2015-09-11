@@ -1734,6 +1734,12 @@ body.love-family{
 	}
 	#favourites{
 		.banner{
+			@media (min-width: $screen-lg-min){
+				padding-left: em(70);
+			}
+			@media (min-width: $screen-xl-min){
+				padding-left: em(118);
+			}
 			.image-wrap{
 				.we-love{
 					@media (min-width: $screen-sm-min){

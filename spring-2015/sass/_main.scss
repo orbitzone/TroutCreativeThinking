@@ -1,3 +1,14 @@
+html.touch{
+	body.spring-2015{
+		button.add-to-moodboard{
+			&:hover{
+				i{
+					color: $white;
+				}
+			}
+		}
+	}
+}
 body.spring-2015{
 	@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/grid";
 	@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/responsive-utilities";
@@ -241,7 +252,7 @@ body.spring-2015{
 		&.added{
 			i{
 				opacity: 1;
-				color: $green;
+				color: $pink;
 			}
 		}
 	}

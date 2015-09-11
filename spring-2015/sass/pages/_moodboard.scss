@@ -97,9 +97,14 @@ body.moodboard{
 		.product{
 			position: relative;
 			background: $white;
-			border: 1px solid $black;
-			padding: em(20) em(10) em(80);
+			border: 1px solid $light-grey;
+			padding: em(20) em(10) em(90);
 			margin-bottom: em(30);
+			.share{
+				position: absolute;
+				top: em(10);
+				left: em(10);
+			}
 			.remove{
 				position: absolute;
 				top: 0;
@@ -131,16 +136,9 @@ body.moodboard{
 				bottom: 0;
 				left: 0;
 				width: 100%;
-				padding: 0 0 em(20);
-				text-align: center;
+				padding: 0 em(10) em(10);
 				@include clearfix;
-				font-size: em(12);
-				@media (min-width: $screen-md-min){
-					font-size: em(14);
-				}
-				@media (min-width: $screen-lg-min){
-					font-size: em(13);
-				}
+				font-size: em(16);
 				a.more-details{
 					position: relative;
 					background: $dark-green;

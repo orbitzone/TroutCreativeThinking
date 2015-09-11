@@ -86,6 +86,12 @@ body.spring-2015{
 		margin: 0 auto;
 		margin-top: em(40);
 		margin-bottom: 0;
+		.heart-animation{
+			i{
+				color: $red;
+				font-size: em(20);
+			}
+		}
 	}
 	#main-content{
 		position: relative;
@@ -189,12 +195,6 @@ body.spring-2015{
 		}
 		.slick-slide{
 			outline: none !important;			
-		}
-		.heart-animation{
-			i{
-				color: $red;
-				font-size: em(20);
-			}
 		}
 		.container{
 			padding: 0 30px;

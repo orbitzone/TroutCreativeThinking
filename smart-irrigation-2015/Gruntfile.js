@@ -21,6 +21,7 @@ module.exports = function(grunt) {
           // includes files within path
           {expand: true,cwd: 'bower_components/jquery/dist/', src: '**', dest: 'js/vendor/'},
           {expand: true,cwd: 'bower_components/placeholders/dist/', src: 'placeholders.jquery.min.js', dest: 'js/vendor/'},
+          {expand: true,cwd: 'bower_components/handlebars/', src: 'handlebars.min.js', dest: 'js/vendor/'},
           {expand: true,cwd: 'bower_components/slick-carousel/slick/', src: 'slick.min.js', dest: 'js/vendor/'},
           {expand: true,cwd: 'bower_components/matchHeight/', src: 'jquery.matchHeight-min.js', dest: 'js/vendor/'},
           {expand: true,cwd: 'bower_components/slick-carousel/slick/fonts/', src: '**', dest: 'fonts/'},     

@@ -34,8 +34,19 @@ $( document ).ready(function() {
 		$this= $(this);
 		$parentLi = $this.closest('li');
 		$parentLi.toggleClass('active');
-		$parentLi.find('.sidebarsubnav').collapse('toggle');
+		$this.next('.sidebarsubnav').collapse('toggle');
 	})
 
-    $('.match-height .divide-1-3').matchHeight();
+  matchLoaded();
+  $('#thinking-list').loadMore({
+    url: 'results.php',
+    resultWrap: '#results1',
+    loadBtn: '#load1',
+    sourceTemplate: "#load-template",
+    callback: matchLoaded
+  });
 });
+
+function matchLoaded(){
+	$('.match-height .divide-1-3').matchHeight();
+}

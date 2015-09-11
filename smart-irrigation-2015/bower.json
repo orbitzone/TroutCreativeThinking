@@ -24,6 +24,6 @@
     "modernizr": "~2.8.3",
     "slick-carousel": "~1.5.8",
     "matchHeight": "~0.6.0",
-    "mustache.js": "~1.0.0"
+    "handlebars": "~4.0.2"
   }
 }

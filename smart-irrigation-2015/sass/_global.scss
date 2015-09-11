@@ -47,6 +47,24 @@ body.smart-irrigation-2015{
 	.inner-spacing-bottom{
 		padding-bottom:60px;
 	}
+	table{
+		width:98%;
+		margin-top:1em;
+		margin-bottom:1em;
+		text-align:left;
+		td:first-child,th:first-child{
+			width:30%;
+		}
+		th{
+			background-color:$bgGrey;
+
+		}
+		td,th{
+			border:solid 1px $textGrey;
+			padding:2%;
+			vertical-align:top;
+		}
+	}
 	.button{
 		padding:10px 20px;
 		margin-top:10px;

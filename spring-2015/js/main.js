@@ -345,15 +345,15 @@ jQuery(function($){
      	$('#moodboard .no-products').show();
      }
 			var $heart = $('<div class="heart-animation"><i class="icon icon-heart"></i></div>');
-			var menuTop = $('#destination-happiness .menu').offset().top - $('#main-content').offset().top - 5;
-			var menuLeft = $('#destination-happiness .menu').offset().left - $('#main-content').offset().left +16;
+			var menuTop = $('#destination-happiness .menu').offset().top - 5;
+			var menuLeft = $('#destination-happiness .menu').offset().left +16;
 			$heart.css({
 				position: 'absolute',
 				top: menuTop,
 				left: menuLeft,
 				zIndex: 99
 			});
-			$('#main-content').append($heart);
+			$('#main').append($heart);
 			$(obj).removeClass('added');	
 			
 			TweenMax.to($heart, 1, {bezier:{type:"cubic", values:[{x:0, y:0}, {x:0, y:-200}, {x:200, y:-200}, {x:200, y: 500  }], autoRotate:["x","y","rotation", 0, true]}, scale:0.5, opacity: 0, ease:Power1.easeInOut, onComplete: function(){ 

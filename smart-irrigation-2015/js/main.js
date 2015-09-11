@@ -39,3 +39,31 @@ $( document ).ready(function() {
 
     $('.match-height .divide-1-3').matchHeight();
 });
+
+
+var reeceIrrigation = {
+	onReady: function() {
+		reeceIrrigation.loadMoreListeners();
+		reeceIrrigation.loadClicked();
+	},
+	loadMoreListeners: function (){
+		start = 0;
+		$('#load-more').click(reeceIrrigation.loadClicked);
+	},
+	loadClicked: function(e){
+		if(e){
+			e.preventDefault();
+		}
+		$.getJSON("results.php",function(data){
+			var source = $("#load-template").html();
+			var template = Handlebars.compile(source);
+			var html = template(data);
+			$('#load-result').append(html);
+			if (data.remaining<0){
+				$('#load-more').remove();
+			}
+		});
+	}
+
+}
+$( document ).ready( reeceIrrigation.onReady );

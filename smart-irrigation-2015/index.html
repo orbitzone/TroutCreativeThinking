@@ -23,7 +23,7 @@
     <script src="js/vendor/jquery.matchHeight-min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/vendor/jquery-migrate-1.2.1.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/vendor/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/vendor/mustache.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/vendor/handlebars.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/vendor/placeholders.jquery.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/vendor/TweenMax.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/vendor/plugins/iscroll-probe.js" type="text/javascript"></script>
@@ -133,8 +133,6 @@
       </div>
       <div id="main">
         <div id="main-content">
-
-
           <div class="banner-section background-green">
             <div class="section-row">
               <div class="divide-1-1">
@@ -152,55 +150,49 @@
                   </div>
                 </div>
               </div>
-
               <div class="clear"></div>
             </div>
           </div>
-
-
-
-
-
           <div class="box-section background-grey inner-spacing">
             <div class="section-row">
               <div class="divide-1-3">
                 <div class="inner-content hover-item">
-                  <a href="#">
+                  <a href="http://www.reece.com.au/irrigation/products">
                     <div class="hoveroverlay">
-                    <div class="green-overlay"></div>
+                      <div class="green-overlay"></div>
                       <img src="images/homepage/block1.png">
                     </div>
                     <span class="text-area">
                       <h4>Products</h4>    
-                      <p>Lorem ipsum dolor sit amet.</p>
+                      <p>Find everything you&rsquo;re looking for here</p>
                     </span>
                   </a>
                 </div>
               </div>
               <div class="divide-1-3">
                 <div class="inner-content hover-item">
-                  <a href="#">
+                  <a href="http://www.reece.com.au/pools">
                     <div class="hoveroverlay">
-                    <div class="green-overlay"></div>
+                      <div class="green-overlay"></div>
                       <img src="images/homepage/block2.png">
                     </div>
                     <span class="text-area">
                       <h4>Pools</h4>    
-                      <p>Lorem ipsum dolor sit amet.</p>
+                      <p>Products for keeping pools in great shape</p>
                     </span>
                   </a>
                 </div>
               </div>
               <div class="divide-1-3">
                 <div class="inner-content hover-item">
-                  <a href="#">
+                  <a href="http://www.reece.com.au/irrigation/irrigation-planner">
                     <div class="hoveroverlay">
-                    <div class="green-overlay"></div>
+                      <div class="green-overlay"></div>
                       <img src="images/homepage/block3.png">
                     </div>
                     <span class="text-area">
-                      <h4>Planner</h4>    
-                      <p>Lorem ipsum dolor sit amet.</p>
+                      <h4>Planning</h4>    
+                      <p>Interactive tool for designing irrigation systems</p>
                     </span>
                   </a>
                 </div>
@@ -208,7 +200,6 @@
               <div class="clear"></div>
             </div>
           </div>
-
           <div class="water-calculator-section background-grass text-white">
             <div class="section-row">
               <div class="divide-1-1">
@@ -216,16 +207,13 @@
                   <img src="images/homepage/logo-weathermatic.png" alt="Weathermatic">
                   <h3>Water Savings Calculator</h3>
                   <p>Discover how much you can save switching from time based to weather based irrigation.</p>
-                  <a class="button button-light">Start now</a>
+                  <a href="http://www.reece.com.au/weathermatic" class="button button-light">Start now</a>
                 </div>
               </div>
               <div class="clear"></div>
             </div>
           </div>
-
-
           <div class="minibanner-section">
-
             <div class="wide-half-section section-row-half-left background-blue">
               <div class="inner-content">
                 <div class="text-area">
@@ -235,7 +223,6 @@
                 </div>
               </div>
             </div>
-
             <div class="wide-half-section section-row-half-right">
               <div class="flower-wrapper">
                 <img src="images/homepage/flower-sliced.png">
@@ -251,382 +238,366 @@
                       </div>
                     </div>
                     <div class="one-slide">
-                      <span class="big-text">50<span>%</span></span>
-                      <div class="inner-slide">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus consequatur corporis voluptatum illo quia quasi doloribus, nisi molestias optio ipsa.</p>
-                        <p class="medium-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, nemo!</p>
-                      </div>
+                     <div class="inner-slide">
+                       <br><br><br><br>
+                       <p>Australia is the driest populated continent on earth and Australians are the greatest per capita consumers of water, using an average of</p>
+                       <p class="bigger-text">100,000L</p>
+                       <p class="medium-text">of fresh water per person each year.</p>
+                     </div>
+                   </div>
+                   <div class="one-slide">
+                    <br>
+                    <img src="images/homepage/fact-2-thirds.png" alt="2/3">
+                    <div class="inner-slide">
+                      <br><br>
+                      <p class="medium-text">of the world&rsquo;s population could be living under water stress conditions by 2025</p>
                     </div>
-                    <div class="one-slide">
-                      <span class="big-text">34<span>%</span></span>
-                      <div class="inner-slide">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque facilis delectus necessitatibus blanditiis nulla sed dicta, est eos, at, ipsa aspernatur eius voluptatum quas! Consequatur.</p>
-                        <p class="medium-text">Lorem ipsum dolor sit amet.</p>
-                      </div>
-                    </div>
-                    <div class="one-slide">
-                      <span class="big-text">29<span>%</span></span>
-                      <div class="inner-slide">
-                        <p>Lorem ipsum dolor sit amet, mollitia, corrupti iusto! Animi, ducimus amet ut neque? Repellendus, suscipit, consectetur. Aliquam fugiat accusantium labore, voluptate aspernatur doloremque ipsam, repellendus facere facilis possimus.</p>
-                        <p class="medium-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                      </div>
+                  </div>
+                  <div class="one-slide">
+                    <div class="inner-slide">
+                      <br><br><br><br>
+                      <p>Freshwater is a diminishing resource and demand is continually growing.</p>
+                      <p class="bigger-text">ONLY 1%</p>
+                      <p>of the world&rsquo;s water is available for use and once used it is often not reusable.</p>
                     </div>
                   </div>
                 </div>
               </div>
-
-              <div class="clear"></div>
             </div>
-
+            <div class="clear"></div>
           </div>
-
-          <div class="outlet-section background-grey inner-spacing">
-            <div class="section-row">
-              <div class="divide-1-1">
-                <div class="inner-content">
-                  <h3>Outlet</h3>
-                  <p>Keep up-to-date with the latest irrigation news from Outlet, our customer newsletter</p>
-                </div>
-              </div>
-              <div class="clear"></div>
-            </div>
-            <div class="section-row same-height-wrapper">
-              <div class="divide-1-3">
-                <div class="inner-content">
-                  <div class="image-area">
-                    <a href="#"><img src="images/homepage/outlet1.png"></a>
-                  </div>
-                  <div class="text-area same-height">
-                    <h4>Winter Pool = Summer Cool</h4>
-                    <p>The days are getting longer, the warmer weather is on its way, and though it may be difficult to see past the winter haze...</p>   
-                    <a href="#" class="button button-dark">Read more</a>   
-                  </div>
-                </div>
-              </div>
-              <div class="divide-1-3">
-                <div class="inner-content">
-                  <div class="image-area">
-                    <a href="#"><img src="images/homepage/outlet2.png"></a>
-                  </div>
-                  <div class="text-area same-height">
-                    <h4>Avoid Tool Envy &amp; Upgrade Now </h4>
-                    <p>The Reece tool catalogue is back and full of great products and bonus deals on some of your favourite tool brands...</p>
-                    <a href="#" class="button button-dark">Read more</a>      
-                  </div>
-                </div>
-              </div>
-              <div class="divide-1-3">
-                <div class="inner-content">
-                  <div class="image-area">
-                    <a href="#"><img src="images/homepage/outlet3.png"></a>
-                  </div>
-                  <div class="text-area same-height">
-                    <h4>Minimise the swamp effect this winter</h4>
-                    <p>For many pool owners, as the cooler weather sets in, the efforts to maintain the backyard pool will...</p> 
-                    <a href="#" class="button button-dark">Read more</a>   
-                  </div>
-                </div>
-              </div>
-              <div class="clear"></div>
-            </div>
-          </div>
-
-
-          <div class="inspiration-section inner-spacing">
-            <div class="section-row">
-              <div class="divide-1-1">
-                <div class="inner-content">
-                  <h3>Inspiration</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut repudiandae quo, veniam, natus nihil debitis porro. Ducimus tempora neque, sunt.</p>
-                </div>
-              </div>
-              <div class="clear"></div>
-            </div>
-            <div class="section-row">
-              <div class="divide-1-4">
-                <div class="inner-content">
-                  <div class="image-area preview-slide-image">
-                    <div>
-                      <img src="images/homepage/inspiration1.png">
-                    </div>
-                    <div>
-                      <img src="images/homepage/inspiration2.png">
-                    </div>
-                    <div>
-                      <img src="images/homepage/inspiration3.png">
-                    </div>
-                  </div>
-                  <div class="text-area">
-                    <a href="#">
-                      <h4>Garden Title / name</h4>
-                      <p>Victoria</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="divide-1-4">
-                <div class="inner-content">
-                  <div class="image-area preview-slide-image">
-                    <div>
-                      <img src="images/homepage/inspiration2.png">
-                    </div>
-                    <div>
-                      <img src="images/homepage/inspiration3.png">
-                    </div>
-                    <div>
-                      <img src="images/homepage/inspiration1.png">
-                    </div>
-                  </div>
-                  <div class="text-area">
-                    <a href="#">
-                      <h4>Garden Title / name</h4>
-                      <p>Victoria</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="divide-1-4">
-                <div class="inner-content">
-                  <div class="image-area preview-slide-image">
-                    <div>
-                      <img src="images/homepage/inspiration3.png">
-                    </div>
-                    <div>
-                      <img src="images/homepage/inspiration2.png">
-                    </div>
-                    <div>
-                      <img src="images/homepage/inspiration1.png">
-                    </div>
-                  </div>
-                  <div class="text-area">
-                    <a href="#">
-                      <h4>Garden Title / name</h4>
-                      <p>Victoria</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="divide-1-4">
-                <div class="inner-content">
-                  <div class="image-area preview-slide-image">
-                    <div>
-                      <img src="images/homepage/inspiration2.png">
-                    </div>
-                    <div>
-                      <img src="images/homepage/inspiration1.png">
-                    </div>
-                    <div>
-                      <img src="images/homepage/inspiration3.png">
-                    </div>
-                  </div>
-                  <div class="text-area">
-                    <a href="#">
-                      <h4>Garden Title / name</h4>
-                      <p>Victoria</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="clear"></div>
-            </div>
-            <div class="section-row">
-              <div class="divide-1-1">
-                <div class="inner-content text-right">
-                  <a href="#" class="button button-dark">View more</a>
-                </div>
-              </div>
-              <div class="clear"></div>
-            </div>
-          </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
-
+        <div class="outlet-section background-grey inner-spacing">
+          <div class="section-row">
+            <div class="divide-1-1">
+              <div class="inner-content">
+                <h3>Outlet</h3>
+                <p>Keep up-to-date with the latest irrigation news from Outlet, our customer newsletter.</p>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="section-row same-height-wrapper">
+            <div class="divide-1-3">
+              <div class="inner-content">
+                <div class="image-area">
+                  <a href="http://www.reece.com.au/outlet/2014/nov/keeping-australias-driest-regions-lush"><img src="images/homepage/outlet1.png"></a>
+                </div>
+                <div class="text-area same-height">
+                  <h4>Keeping Australia's Driest Regions Lush</h4>
+                  <p>Covering an area of 3000m2 the Onslow Community Garden and the Onslow School Garden are large community...</p>   
+                  <a href="http://www.reece.com.au/outlet/2014/nov/keeping-australias-driest-regions-lush" class="button button-dark">Read more</a>   
+                </div>
+              </div>
+            </div>
+            <div class="divide-1-3">
+              <div class="inner-content">
+                <div class="image-area">
+                  <a href="http://www.reece.com.au/outlet/2014/jul/when-water-is-worth-its-weight-in-gold"><img src="images/homepage/outlet2.png"></a>
+                </div>
+                <div class="text-area same-height">
+                  <h4>When Water is Worth It's Weight in Gold</h4>
+                  <p>Water is about to become more valuable than gold - in California that is. Due to extreme levels of drought...</p>
+                  <a href="http://www.reece.com.au/outlet/2014/jul/when-water-is-worth-its-weight-in-gold" class="button button-dark">Read more</a>      
+                </div>
+              </div>
+            </div>
+            <div class="divide-1-3">
+              <div class="inner-content">
+                <div class="image-area">
+                  <a href="http://www.reece.com.au/outlet/2014/mar/weathermatic-smartline-system-"><img src="images/homepage/outlet3.png"></a>
+                </div>
+                <div class="text-area same-height">
+                  <h4>Weathermatic SmartLine System</h4>
+                  <p>Being smart about irrigation is a good idea, both for the environment and your back pocket. Up to 50 per cent...</p> 
+                  <a href="http://www.reece.com.au/outlet/2014/mar/weathermatic-smartline-system-" class="button button-dark">Read more</a>   
+                </div>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="inspiration-section inner-spacing">
+          <div class="section-row">
+            <div class="divide-1-1">
+              <div class="inner-content">
+                <h3>Inspiration</h3>
+                <p>Beautifully smart, water efficient gardens submitted by our customers.</p>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="section-row">
+            <div class="divide-1-4">
+              <div class="inner-content">
+                <div class="image-area preview-slide-image">
+                  <div>
+                    <img src="images/homepage/inspiration1.png">
+                  </div>
+                  <div>
+                    <img src="images/homepage/inspiration2.png">
+                  </div>
+                  <div>
+                    <img src="images/homepage/inspiration3.png">
+                  </div>
+                </div>
+                <div class="text-area">
+                  <a href="#">
+                    <h4>Garden Title / name</h4>
+                    <p>Victoria</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="divide-1-4">
+              <div class="inner-content">
+                <div class="image-area preview-slide-image">
+                  <div>
+                    <img src="images/homepage/inspiration2.png">
+                  </div>
+                  <div>
+                    <img src="images/homepage/inspiration3.png">
+                  </div>
+                  <div>
+                    <img src="images/homepage/inspiration1.png">
+                  </div>
+                </div>
+                <div class="text-area">
+                  <a href="#">
+                    <h4>Garden Title / name</h4>
+                    <p>Victoria</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="divide-1-4">
+              <div class="inner-content">
+                <div class="image-area preview-slide-image">
+                  <div>
+                    <img src="images/homepage/inspiration3.png">
+                  </div>
+                  <div>
+                    <img src="images/homepage/inspiration2.png">
+                  </div>
+                  <div>
+                    <img src="images/homepage/inspiration1.png">
+                  </div>
+                </div>
+                <div class="text-area">
+                  <a href="#">
+                    <h4>Garden Title / name</h4>
+                    <p>Victoria</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="divide-1-4">
+              <div class="inner-content">
+                <div class="image-area preview-slide-image">
+                  <div>
+                    <img src="images/homepage/inspiration2.png">
+                  </div>
+                  <div>
+                    <img src="images/homepage/inspiration1.png">
+                  </div>
+                  <div>
+                    <img src="images/homepage/inspiration3.png">
+                  </div>
+                </div>
+                <div class="text-area">
+                  <a href="#">
+                    <h4>Garden Title / name</h4>
+                    <p>Victoria</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="section-row">
+            <div class="divide-1-1">
+              <div class="inner-content text-right">
+                <a href="#" class="button button-dark">View more</a>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
       </div>
-      <footer class="site-footer">
-        <div class="social">
-          <ul class="social-footer content-container clearfix">
-            <li class="plumbing"><a href="http://www.facebook.com/ReecePlumbing"><i class="icon-facebook-sign icon-large">&nbsp;</i>Plumbing</a></li>
-            <li><a href="http://www.facebook.com/ReeceBathrooms"><i class="icon-facebook-sign icon-large">&nbsp;</i>Bathrooms</a></li>
-            <li><a href="http://www.twitter.com/ReeceBathrooms"><i class="icon-twitter-sign icon-large"></i></a></li>
-            <li><a href="http://www.pinterest.com/ReeceBathrooms"><i class="icon-pinterest-sign icon-large"></i></a></li>
-            <li class="contact"><a href="http://www.reece.com.au/aboutus/contactus"><i class="icon-envelope icon-large">&nbsp;</i>Contact us</a></li>
-          </ul>
-        </div>
-        <div class="content-container sitemap-footer hidden-phone">
-          <div class="inner-wrapper">
-            <div class="row-fluid">
-              <div class="span3 bottom-space bathrooms">
-                <h4><a href="http://www.reece.com.au/bathrooms">Bathrooms</a></h4>
-                <div id="foot-bathrooms" class="collapse in">
-                  <ul>
-                    <li><a href="http://www.reece.com.au/bathrooms/products">Products</a></li>
-                    <li><a href="http://www.reece.com.au/bathrooms/brands">Brands</a></li>
-                    <li><a href="http://www.reece.com.au/bathrooms/3d-bathroom-planner">Bathroom Planner</a></li>
-                    <li><a href="http://www.reece.com.au/bathrooms/inspiration">Inspiration</a></li>
-                    <li><a href="http://www.reece.com.au/bathrooms/events/bia-2014-wrap-up">Events</a></li>
-                    <li><a href="http://www.reece.com.au/bathrooms/bathroom-moments">Bathroom Moments</a></li>
-                    <li><a href="http://www.reece.com.au/bathrooms/happy-tips">Happy Tips</a></li>
-                    <li><a href="http://www.reece.com.au/bathrooms/inspiration#powder-room">Powder Room Blog</a></li>
-                  </ul>
+    </div>
+    <footer class="site-footer">
+      <div class="social">
+        <ul class="social-footer content-container clearfix">
+          <li class="plumbing"><a href="http://www.facebook.com/ReecePlumbing"><i class="icon-facebook-sign icon-large">&nbsp;</i>Plumbing</a></li>
+          <li><a href="http://www.facebook.com/ReeceBathrooms"><i class="icon-facebook-sign icon-large">&nbsp;</i>Bathrooms</a></li>
+          <li><a href="http://www.twitter.com/ReeceBathrooms"><i class="icon-twitter-sign icon-large"></i></a></li>
+          <li><a href="http://www.pinterest.com/ReeceBathrooms"><i class="icon-pinterest-sign icon-large"></i></a></li>
+          <li class="contact"><a href="http://www.reece.com.au/aboutus/contactus"><i class="icon-envelope icon-large">&nbsp;</i>Contact us</a></li>
+        </ul>
+      </div>
+      <div class="content-container sitemap-footer hidden-phone">
+        <div class="inner-wrapper">
+          <div class="row-fluid">
+            <div class="span3 bottom-space bathrooms">
+              <h4><a href="http://www.reece.com.au/bathrooms">Bathrooms</a></h4>
+              <div id="foot-bathrooms" class="collapse in">
+                <ul>
+                  <li><a href="http://www.reece.com.au/bathrooms/products">Products</a></li>
+                  <li><a href="http://www.reece.com.au/bathrooms/brands">Brands</a></li>
+                  <li><a href="http://www.reece.com.au/bathrooms/3d-bathroom-planner">Bathroom Planner</a></li>
+                  <li><a href="http://www.reece.com.au/bathrooms/inspiration">Inspiration</a></li>
+                  <li><a href="http://www.reece.com.au/bathrooms/events/bia-2014-wrap-up">Events</a></li>
+                  <li><a href="http://www.reece.com.au/bathrooms/bathroom-moments">Bathroom Moments</a></li>
+                  <li><a href="http://www.reece.com.au/bathrooms/happy-tips">Happy Tips</a></li>
+                  <li><a href="http://www.reece.com.au/bathrooms/inspiration#powder-room">Powder Room Blog</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="span3 bottom-space plumbing">
+              <h4><a href="http://www.reece.com.au/plumbing">Plumbing</a></h4>
+              <div id="foot-plumbing" class="collapse in">
+                <ul>
+                  <li><a href="http://www.reece.com.au/plumbing/products">Products</a></li>
+                  <li><a href="http://www.reece.com.au/diydisasters">DIY Disasters</a></li>
+                  <li><a href="http://www.reece.com.au/technical-tools">Technical Tools</a></li>
+                  <li><a href="http://www.reece.com.au/outlet">Outlet</a></li>
+                  <li><a href="https://www.reece.com.au/myaccount/home">My Account</a></li>
+                  <li><a href="http://www.reece.com.au/plumbing/works-for-you">How Reece Works For You</a></li>
+                  <li><a href="http://www.reece.com.au/discovermyaccount">Discover My Account</a></li>
+                  <li><a href="http://reecefootytipping.com.au">Footy Tipping</a></li>
+                </ul>
+              </div>
+            </div>   
+            <div class="span3 bottom-space">
+              <div class="accordion" id="accordion2">
+                <div class="accordion-group irrigation">
+                  <h4 class="accordion-heading">
+                    <i class="icon-plus"> </i>
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="/myaccount/invoice-search/fonts/glyphicons-halflings-regular.eot?#collapse1736">Irrigation</a>
+                  </h4>
+                  <div id="collapse1736" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                      <ul>
+                        <li><a href="http://www.reece.com.au/irrigation/products">Products</a></li>
+                        <li><a href="http://www.reece.com.au/irrigation/irrigation-planner">Irrigation Planner</a></li>
+                        <li><a href="http://www.reece.com.au/pools">Pools</a></li>
+                        <li><a href="http://www.reece.com.au/technical-tools">Technical Tools</a></li>
+                        <li><a href="http://www.reece.com.au/outlet/trade/irrigation">Outlet</a></li>
+                        <li><a href="https://www.reece.com.au/myaccount/home">My Account</a></li>
+                        <li><a href="http://www.reece.com.au/plumbing/works-for-you">How Reece Works For You</a></li>
+                        <li><a href="http://www.reece.com.au/discovermyaccount">Discover My Account</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-group civil">
+                  <h4 class="accordion-heading">
+                    <i class="icon-plus"> </i>
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="/myaccount/invoice-search/fonts/glyphicons-halflings-regular.eot?#collapse1737">Civil</a>
+                  </h4>
+                  <div id="collapse1737" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                      <ul>
+                        <li><a href="http://www.reece.com.au/civil/products">Products</a></li>
+                        <li><a href="http://www.reece.com.au/civil/electrofusion-training-hire">Electrofusion Training &amp; Hire</a></li>
+                        <li><a href="http://www.reece.com.au/technical-tools">Technical Tools</a></li>
+                        <li><a href="http://www.reece.com.au/outlet/trade/civil">Outlet</a></li>
+                        <li><a href="https://www.reece.com.au/myaccount/home">My Account</a></li>
+                        <li><a href="http://www.reece.com.au/plumbing/works-for-you">How Reece Works For You</a></li>
+                        <li><a href="http://www.reece.com.au/discovermyaccount">Discover My Account</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-group onsite">
+                  <h4 class="accordion-heading">
+                    <i class="icon-plus"> </i>
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="/myaccount/invoice-search/fonts/glyphicons-halflings-regular.eot?#collapse3508">Onsite</a>
+                  </h4>
+                  <div id="collapse3508" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                      <ul>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-group hvacr">
+                  <h4 class="accordion-heading">
+                    <i class="icon-plus"> </i>
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="/myaccount/invoice-search/fonts/glyphicons-halflings-regular.eot?#collapse584">HVAC-R</a>
+                  </h4>
+                  <div id="collapse584" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                      <ul>
+                        <li><a href="http://www.reece.com.au/hvacr/products">Products</a></li>
+                        <li><a href="http://www.reece.com.au/gastrack">GasTrack</a></li>
+                        <li><a href="http://www.reece.com.au/technical-tools">Technical Tools</a></li>
+                        <li><a href="https://www.reece.com.au/login">My Account</a></li>
+                        <li><a href="http://www.reece.com.au/outlet/trade/hvacr">Outlet</a></li>
+                        <li><a href="http://www.reece.com.au/plumbing/works-for-you">How Reece Works For You</a></li>
+                        <li><a href="http://www.reece.com.au/discovermyaccount">Discover My Account</a></li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="span3 bottom-space plumbing">
-                <h4><a href="http://www.reece.com.au/plumbing">Plumbing</a></h4>
-                <div id="foot-plumbing" class="collapse in">
-                  <ul>
-                    <li><a href="http://www.reece.com.au/plumbing/products">Products</a></li>
-                    <li><a href="http://www.reece.com.au/diydisasters">DIY Disasters</a></li>
-                    <li><a href="http://www.reece.com.au/technical-tools">Technical Tools</a></li>
-                    <li><a href="http://www.reece.com.au/outlet">Outlet</a></li>
-                    <li><a href="https://www.reece.com.au/myaccount/home">My Account</a></li>
-                    <li><a href="http://www.reece.com.au/plumbing/works-for-you">How Reece Works For You</a></li>
-                    <li><a href="http://www.reece.com.au/discovermyaccount">Discover My Account</a></li>
-                    <li><a href="http://reecefootytipping.com.au">Footy Tipping</a></li>
-                  </ul>
-                </div>
-              </div>   
-              <div class="span3 bottom-space">
-                <div class="accordion" id="accordion2">
-                  <div class="accordion-group irrigation">
-                    <h4 class="accordion-heading">
-                      <i class="icon-plus"> </i>
-                      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="/myaccount/invoice-search/fonts/glyphicons-halflings-regular.eot?#collapse1736">Irrigation</a>
-                    </h4>
-                    <div id="collapse1736" class="accordion-body collapse">
-                      <div class="accordion-inner">
-                        <ul>
-                          <li><a href="http://www.reece.com.au/irrigation/products">Products</a></li>
-                          <li><a href="http://www.reece.com.au/irrigation/irrigation-planner">Irrigation Planner</a></li>
-                          <li><a href="http://www.reece.com.au/pools">Pools</a></li>
-                          <li><a href="http://www.reece.com.au/technical-tools">Technical Tools</a></li>
-                          <li><a href="http://www.reece.com.au/outlet/trade/irrigation">Outlet</a></li>
-                          <li><a href="https://www.reece.com.au/myaccount/home">My Account</a></li>
-                          <li><a href="http://www.reece.com.au/plumbing/works-for-you">How Reece Works For You</a></li>
-                          <li><a href="http://www.reece.com.au/discovermyaccount">Discover My Account</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-group civil">
-                    <h4 class="accordion-heading">
-                      <i class="icon-plus"> </i>
-                      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="/myaccount/invoice-search/fonts/glyphicons-halflings-regular.eot?#collapse1737">Civil</a>
-                    </h4>
-                    <div id="collapse1737" class="accordion-body collapse">
-                      <div class="accordion-inner">
-                        <ul>
-                          <li><a href="http://www.reece.com.au/civil/products">Products</a></li>
-                          <li><a href="http://www.reece.com.au/civil/electrofusion-training-hire">Electrofusion Training &amp; Hire</a></li>
-                          <li><a href="http://www.reece.com.au/technical-tools">Technical Tools</a></li>
-                          <li><a href="http://www.reece.com.au/outlet/trade/civil">Outlet</a></li>
-                          <li><a href="https://www.reece.com.au/myaccount/home">My Account</a></li>
-                          <li><a href="http://www.reece.com.au/plumbing/works-for-you">How Reece Works For You</a></li>
-                          <li><a href="http://www.reece.com.au/discovermyaccount">Discover My Account</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-group onsite">
-                    <h4 class="accordion-heading">
-                      <i class="icon-plus"> </i>
-                      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="/myaccount/invoice-search/fonts/glyphicons-halflings-regular.eot?#collapse3508">Onsite</a>
-                    </h4>
-                    <div id="collapse3508" class="accordion-body collapse">
-                      <div class="accordion-inner">
-                        <ul>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-group hvacr">
-                    <h4 class="accordion-heading">
-                      <i class="icon-plus"> </i>
-                      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="/myaccount/invoice-search/fonts/glyphicons-halflings-regular.eot?#collapse584">HVAC-R</a>
-                    </h4>
-                    <div id="collapse584" class="accordion-body collapse">
-                      <div class="accordion-inner">
-                        <ul>
-                          <li><a href="http://www.reece.com.au/hvacr/products">Products</a></li>
-                          <li><a href="http://www.reece.com.au/gastrack">GasTrack</a></li>
-                          <li><a href="http://www.reece.com.au/technical-tools">Technical Tools</a></li>
-                          <li><a href="https://www.reece.com.au/login">My Account</a></li>
-                          <li><a href="http://www.reece.com.au/outlet/trade/hvacr">Outlet</a></li>
-                          <li><a href="http://www.reece.com.au/plumbing/works-for-you">How Reece Works For You</a></li>
-                          <li><a href="http://www.reece.com.au/discovermyaccount">Discover My Account</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>  
-              <div class="span3 bottom-space aboutus">
-                <h4><a href="http://www.reece.com.au/aboutus">About Us</a></h4>
-                <div id="foot-aboutus" class="collapse in">
-                  <ul>
-                    <li><a href="http://www.reece.com.au/aboutus/finance">Finance</a></li>
-                    <li><a href="/warranties">Product Quality Guarantee</a></li>
-                    <li><a href="http://www.reece.com.au/careers">Careers</a></li>
-                    <li><a href="http://www.reece.co.nz">Reece New Zealand</a></li>
-                    <li><a href="http://www.reece.com.au/terms-and-conditions">Terms &amp; Conditions</a></li>
-                    <li><a href="http://www.reece.com.au/privacy">Privacy</a></li>
-                    <li><a href="http://www.reece.com.au/aboutus/contactus">Contact Us</a></li>
-                  </ul>
-                </div>
-              </div>   
-            </div>
+            </div>  
+            <div class="span3 bottom-space aboutus">
+              <h4><a href="http://www.reece.com.au/aboutus">About Us</a></h4>
+              <div id="foot-aboutus" class="collapse in">
+                <ul>
+                  <li><a href="http://www.reece.com.au/aboutus/finance">Finance</a></li>
+                  <li><a href="/warranties">Product Quality Guarantee</a></li>
+                  <li><a href="http://www.reece.com.au/careers">Careers</a></li>
+                  <li><a href="http://www.reece.co.nz">Reece New Zealand</a></li>
+                  <li><a href="http://www.reece.com.au/terms-and-conditions">Terms &amp; Conditions</a></li>
+                  <li><a href="http://www.reece.com.au/privacy">Privacy</a></li>
+                  <li><a href="http://www.reece.com.au/aboutus/contactus">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>   
           </div>
         </div>
-      </footer>    
-    </div>
-    <div class="ocnav-wrapper">
-     <ul class="nav" id="hatstadn">
-      <li class="mobileLogin">
-        <i class="icon-user">&nbsp;</i>
-        <div class="profile">
-          <a href="https://www.reece.com.au/myaccount/home"> Login&nbsp;or&nbsp;Register</a>
-        </div>
-      </li>
-      <li><a href="http://www.reece.com.au/">Home</a></li>
-      <li class="link first item-1">
-        <a href="http://www.reece.com.au/bathrooms">Bathrooms</a>
-      </li>
-      <li class="link  item-2">
-        <a href="http://www.reece.com.au/plumbing">Plumbing</a>
-      </li>
-      <li class="link  item-3">
-        <a href="http://www.reece.com.au/irrigation">Irrigation</a>
-      </li>
-      <li class="link  item-4">
-        <a href="http://www.reece.com.au/civil">Civil</a>
-      </li>
-      <li class="link  item-5">
-        <a href="http://www.reece.com.au/onsite">Onsite</a>
-      </li>
-      <li class="link  item-6">
-        <a href="http://www.reece.com.au/hvacr">HVAC-R</a>
-      </li>
-      <li class="link  item-7">
-        <a href="http://www.reece.com.au/aboutus">About Us</a>
-      </li>
-      <li class="link  item-8">
-        <a href="http://www.reece.com.au/storefinder">Store Finder</a>
-      </li>
-      <li class=" last item-9">
-        <a href="https://www.reece.com.au/myaccount/home">My Account</a>
-      </li>
-    </ul>
+      </div>
+    </footer>    
   </div>
+  <div class="ocnav-wrapper">
+   <ul class="nav" id="hatstadn">
+    <li class="mobileLogin">
+      <i class="icon-user">&nbsp;</i>
+      <div class="profile">
+        <a href="https://www.reece.com.au/myaccount/home"> Login&nbsp;or&nbsp;Register</a>
+      </div>
+    </li>
+    <li><a href="http://www.reece.com.au/">Home</a></li>
+    <li class="link first item-1">
+      <a href="http://www.reece.com.au/bathrooms">Bathrooms</a>
+    </li>
+    <li class="link  item-2">
+      <a href="http://www.reece.com.au/plumbing">Plumbing</a>
+    </li>
+    <li class="link  item-3">
+      <a href="http://www.reece.com.au/irrigation">Irrigation</a>
+    </li>
+    <li class="link  item-4">
+      <a href="http://www.reece.com.au/civil">Civil</a>
+    </li>
+    <li class="link  item-5">
+      <a href="http://www.reece.com.au/onsite">Onsite</a>
+    </li>
+    <li class="link  item-6">
+      <a href="http://www.reece.com.au/hvacr">HVAC-R</a>
+    </li>
+    <li class="link  item-7">
+      <a href="http://www.reece.com.au/aboutus">About Us</a>
+    </li>
+    <li class="link  item-8">
+      <a href="http://www.reece.com.au/storefinder">Store Finder</a>
+    </li>
+    <li class=" last item-9">
+      <a href="https://www.reece.com.au/myaccount/home">My Account</a>
+    </li>
+  </ul>
+</div>
 </body>
 </html>

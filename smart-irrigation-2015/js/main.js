@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+	$('.product-list .divide-1-4 .inner-content').matchHeight();
     $('.slider').slick({
 	  infinite: true,
 	  prevArrow: '<span class="fa fa-chevron-left slick-prev"></span>',
@@ -19,7 +20,7 @@ $( document ).ready(function() {
 	  dots: true,
 	  fade: true,
 	  arrows: false,
-	  autoplay: true,
+	  autoplay: false,
 	  speed:800	
 	});
 

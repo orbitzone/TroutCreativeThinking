@@ -1,5 +1,4 @@
 body.smart-irrigation-2015{
-
 	.box-section.smart-thinking-articles{
 		font-size:15px;
 		text-align:left;
@@ -11,7 +10,6 @@ body.smart-irrigation-2015{
 			.call-to-action, p{
 				margin:.5em 0;
 			}
-
 			h4{
 				text-transform:none;
 				font-size:18px;
@@ -61,26 +59,18 @@ body.smart-irrigation-2015{
 					color:$textGrey;
 					text-decoration:none;
 				}
-
 			}
-
 		}
 	}
-
 	.article-content-section{
 		.text-area{
 			margin-top:2em;
 		}
 	}
-
-
-
-
 	.box-section.product-list{
 		text-align:center;
-
-
 		.inner-content.hover-item{
+			padding-top:20px;
 			margin-bottom:0;
 			@include transition(background-color .3s ease-out);
 			background-color:$bgGrey;
@@ -93,7 +83,6 @@ body.smart-irrigation-2015{
 				.call-to-action, p{
 					margin:.5em 0;
 				}
-
 				h4{
 					text-transform:none;
 					font-size:15px;
@@ -108,33 +97,17 @@ body.smart-irrigation-2015{
 					line-height:1.2em;
 				}
 			}
-
 			&:hover{
 				cursor: pointer; 
 				cursor: hand;	
 				background-color:$bgGreyHighlight;
-
 				.text-area{
 					background-color:$bgGreyHighlight;
 				}
 				a{
 					text-decoration:none;
 				}
-
 			}
-
 		}
 	}
-
-
-
-
-
-
-
-
-
-
-
-
 }

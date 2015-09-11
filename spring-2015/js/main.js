@@ -259,7 +259,10 @@ jQuery(function($){
 						moodboard.resize();
 					});
 				}
-			});			
+			});
+			$('body').hasClass('moodboard'){
+				moodboard.displayList();
+			}			
 		},
 		products: [],
 		checkAdded: function(){
@@ -1318,7 +1321,6 @@ jQuery(function($){
 				url:'pages/moodboard.html',
 				success: function(data){
 					$('#main-content').html(data);	
-					moodboard.displayList();				
 				}
 			});
 		}

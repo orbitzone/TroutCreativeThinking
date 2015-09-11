@@ -208,13 +208,21 @@ jQuery(function($){
 			moodboard.products += 1;
 			var $heart = $('<div class="heart-animation"><i class="icon icon-heart"></i></div>');
 			$('#main-content').append($heart);
+			var menuLeft = $('#destination-happiness .menu').offset().left - $('#main-content').offset().left +16;
+			var menuTop = $('#destination-happiness .menu').offset().top - $('#main-content').offset().top - 5;
+			var heartTop = $(obj).find('i').offset().top - $('#main-content').offset().top;
+			var heartLeft = $(obj).find('i').offset().left - $('#main-content').offset().left + 5; 
+
 			$heart.css({
 				position: 'absolute',
-				top: $(obj).find('i').offset().top - $('#main-content').offset().top,
-				left: $(obj).find('i').offset().left - $('#main-content').offset().left + 5,
+				top: heartTop,
+				left: heartLeft,
 				zIndex: 99
 			});
-			TweenMax.to($heart, 1, {left:$('#destination-happiness .menu').offset().left - $('#main-content').offset().left +16, top:$('#destination-happiness .menu').offset().top - $('#main-content').offset().top - 5, scale:0.5, ease:Power1.easeInOut, onComplete: function(){ 
+
+			TweenMax.to($heart, 1, {bezier:{type:"cubic", values:[{x:0, y:0}, {x:0, y: menuTop - heartTop}, {x: menuLeft - heartLeft, y: menuTop - heartTop}, {x: menuLeft - heartLeft, y: menuTop - heartTop }], autoRotate:["x","y","rotation", 0, true]}, scale:0.5, ease:Power1.easeInOut, onComplete: function(){ 
+			
+			//TweenMax.to($heart, 1, {left:$('#destination-happiness .menu').offset().left - $('#main-content').offset().left +16, top:$('#destination-happiness .menu').offset().top - $('#main-content').offset().top - 5, scale:0.5, ease:Power1.easeInOut, onComplete: function(){ 
 				$('#destination-happiness .dh-items').removeClass('empty').find('.number').html(moodboard.products);
 			$('#destination-links .dh-items').removeClass('empty').find('.number').html(moodboard.products);
 					$heart.fadeOut(200, function(){ $(this).remove(); });

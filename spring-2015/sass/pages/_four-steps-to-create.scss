@@ -544,13 +544,7 @@ body.four-steps-to-create{
               margin: 0;
               float: left;
               width: 60%;
-            }            
-            img{
-              max-width: 100%;
-              @media (min-width: $screen-md-min){
-                width: em(396);
-              }
-            }
+            } 
           }
           .text{
             width: em(260);

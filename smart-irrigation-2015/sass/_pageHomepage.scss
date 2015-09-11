@@ -41,7 +41,7 @@ body.smart-irrigation-2015{
 					height:100%;
 					top:0;
 					left:0;
-					background-color:$bgDarkGreen;
+					background-color:$bgLightGreen;
 					opacity: 0;
 					@include transition(opacity .3s ease-out);
 				}
@@ -153,6 +153,7 @@ body.smart-irrigation-2015{
 				}
 				.inner-content{
 					max-width: $max-content-width / 2;
+					width:100%;
 					float:left;
 					padding-bottom:50px;
 					text-align:center;

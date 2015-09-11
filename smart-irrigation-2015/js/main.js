@@ -28,6 +28,7 @@ $( document ).ready(function() {
 	  arrows: true,
 	  autoplay: false
 	});
+  $('.sidebarsubnav').collapse('hide');
 	$('.sidebarnav h6').click(function(e){
 		e.preventDefault();
 		$this= $(this);
@@ -36,5 +37,5 @@ $( document ).ready(function() {
 		$parentLi.find('.sidebarsubnav').collapse('toggle');
 	})
 
-    $('.same-height').matchHeight();
+    $('.match-height .divide-1-3').matchHeight();
 });

@@ -279,8 +279,10 @@ body.spring-2015{
 			margin-left: 38px;		
 		}
 	}
-	button.add-to-cart{
+	button.add-to-cart,
+	a.add-to-cart{
 		position: relative;
+		display: inline-block;
 		background: $green;
 		color: $white;
 		border: none;

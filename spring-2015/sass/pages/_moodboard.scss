@@ -13,6 +13,9 @@ body.moodboard{
 				max-width: em(1200);
 			}			
 		}
+		.no-products{
+			display: none;
+		}
 		header{
 			position: relative;
 		}
@@ -25,17 +28,22 @@ body.moodboard{
 			top: 0;
 			left: 0;
 			width: 80px;
+			display: none;
 			@media (min-width: $screen-sm-min){
 				width: 200px;
 			}
 			@media (min-width: $screen-lg-min){
 				width: auto;
 			}
+			@media (min-width: $screen-xl-min){
+				display: block;
+			}
 		}
 		.destination-happiness{
 			position: absolute;
 			top: 0;
 			right: 0;
+			display: none;
 			@include transform(translateX(50%));
 			width: 140px;
 			@media (min-width: $screen-sm-min){
@@ -43,6 +51,9 @@ body.moodboard{
 			}
 			@media (min-width: $screen-lg-min){
 				width: auto;
+			}
+			@media (min-width: $screen-xl-min){
+				display: block;
 			}
 		}
 		
@@ -100,6 +111,13 @@ body.moodboard{
 			border: 1px solid $light-grey;
 			padding: em(20) em(10) em(90);
 			margin-bottom: em(30);
+			.image{
+				text-align: center;
+				img{
+					height: 189px;
+					margin: 0 auto;
+				}
+			}
 			.share{
 				position: absolute;
 				top: em(10);

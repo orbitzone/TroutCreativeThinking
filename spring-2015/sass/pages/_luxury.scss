@@ -1343,6 +1343,18 @@ body.love-luxury{
 	#hotel-inspired-look{
 		overflow: hidden;
 		margin-bottom: em(90);
+		.additional-buttons{
+				font-size: em(14);
+				text-align: center;
+				margin-bottom: em(40);
+				.shop-pan{
+					display: none;					
+				}
+				.shop-button{
+					display: none;
+					margin-right: em(5);
+				}
+			}
 		.hotel-inspired-look{
 			margin-bottom: 0;
 			@media (min-width: $screen-sm-min){
@@ -1472,7 +1484,7 @@ body.love-luxury{
 						}
 					}
 				}			
-			}
+			}			
 		}
 		
 		.luxe-for-less{

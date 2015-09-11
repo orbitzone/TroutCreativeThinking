@@ -15,6 +15,13 @@ module.exports = function(grunt) {
         tasks: ['compass'],
       }
     },
+    uglify: {
+      my_target: {
+        files: {
+          'js/jquery.cookie.min.js': ['js/jquery.cookie.js']
+        }
+      }
+    },
     copy: {
       main: {
         files: [
@@ -35,6 +42,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
+   grunt.loadNpmTasks('grunt-contrib-uglify');
 
   grunt.registerTask('default', ['watch']);
 

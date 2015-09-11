@@ -11,6 +11,9 @@ body.smart-irrigation-2015{
 			color:$textGrey;
 			text-decoration:underline;
 		}
+		&:active{
+			text-decoration:none;
+		}
 	}
 	.section-row{
 		max-width: $max-content-width;

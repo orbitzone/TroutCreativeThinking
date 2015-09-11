@@ -43,28 +43,35 @@ body.smart-irrigation-2015{
 	}
 	.inner-spacing-top{
 		padding-top:60px;
-		padding-bottom:0;
+	}
+	.inner-spacing-bottom{
+		padding-bottom:60px;
 	}
 	.button{
 		padding:10px 20px;
 		margin-top:10px;
 		margin-bottom:10px;
 		display:inline-block;
+		font-size:14px;
 		@include border-radius(3px);
 		&.button-light{
 			background:$white;
 			color:$textGrey;
+			@include transition(background 1s ease-in);
+			@include transition(color 1s ease-out);
 			&:hover{
 				background:$buttonGrey;
 				color:$white;
 				text-decoration:none;
 				cursor: pointer; 
 				cursor: hand;
+
 			}
 		}
 		&.button-dark{
 			background:$buttonGrey;
 			color:$white;
+			@include transition(background .5s ease-in-out);
 			&:hover{
 				background:$buttonGreyhover;
 				color:$white;

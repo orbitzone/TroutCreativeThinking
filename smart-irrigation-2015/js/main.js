@@ -16,19 +16,11 @@ $( document ).ready(function() {
 	});
 
     $('.vertical-slider').slick({
-	  vertical: true,
 	  dots: true,
+	  fade: true,
 	  arrows: false,
 	  autoplay: true,
-	  responsive: [
-	    {
-	      breakpoint: 768,
-	      settings: {
-	      	vertical: false,
-	        arrows: false
-	      }
-	    }
-	  ]
+	  speed:800	
 	});
 
     $('.preview-slide-image').slick({

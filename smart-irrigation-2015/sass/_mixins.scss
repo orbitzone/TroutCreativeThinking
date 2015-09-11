@@ -17,7 +17,13 @@
   -o-transform:     $transform;
   transform:       $transform;  
 }
-
+@mixin transition($transition...){
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
 @mixin animation-name($name){
   -webkit-animation-name:   $name;
   -moz-animation-name:       $name;

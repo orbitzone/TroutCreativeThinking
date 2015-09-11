@@ -1,12 +1,11 @@
 body.smart-irrigation-2015{
-
 	.banner-section{
 		.slick-prev{
 			left:0;
 			z-index:10;
 		} 
 		.slick-next {
-	    	right: 0;
+			right: 0;
 		}
 		.slick-dots{
 			bottom:0px;
@@ -14,7 +13,6 @@ body.smart-irrigation-2015{
 			margin:0;
 		}
 	}
-
 	.box-section{
 		text-align:center;
 		.text-area{
@@ -66,12 +64,9 @@ body.smart-irrigation-2015{
 					color:$textGrey;
 					text-decoration:none;
 				}
-
 			}
-
 		}
 	}
-
 	.water-calculator-section{
 		text-align:center;
 		padding-top:30px;
@@ -82,7 +77,6 @@ body.smart-irrigation-2015{
 			font-family:$font-family-gotham;
 		}
 	}
-
 	.minibanner-section{
 		font-size:17px;
 		line-height:1.2em;
@@ -92,7 +86,6 @@ body.smart-irrigation-2015{
 			height:100%;
 			float:left;
 			@media (min-width: $break-md-min) and (max-width: $break-md-max) { 
-				
 			}
 			@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
 				height:auto;
@@ -170,6 +163,28 @@ body.smart-irrigation-2015{
 									margin-left:auto;
 									margin-right:auto;
 								}
+								&.slide1{
+									@media (max-width: $break-xs-max) { 
+										padding-top:0;
+									}
+								}
+								&.slide2{
+									padding-top:50px;
+									@media (max-width: $break-xs-max) { 
+										padding-top:20px;
+									}
+								}
+								&.slide3{
+									@media (max-width: $break-xs-max) { 
+										padding-top:0;
+									}
+								}
+								&.slide4{
+									padding-top:70px;
+									@media (max-width: $break-xs-max) { 
+										padding-top:20px;
+									}
+								}
 							}
 							.inner-slide{
 								max-width:60%;
@@ -180,11 +195,11 @@ body.smart-irrigation-2015{
 								font-size:190px;
 								line-height:190px;
 								font-weight:bold;
+								letter-spacing:-3px;
 								span{
 									font-size:100px;
 								}
 								@media (min-width: $break-md-min) and (max-width: $break-md-max) { 
-									
 								}
 								@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
 									padding-top:0;
@@ -202,93 +217,87 @@ body.smart-irrigation-2015{
 							.bigger-text{
 								font-size:60px;
 								font-weight:bolder;
-								line-heihgt:1.2em;
+								line-height:1.1em;
 								margin-top:30px;
 								margin-bottom:30px;
-                              @media (min-width: $break-md-min) and (max-width: $break-md-max) {
-
-                              }
-                              @media (min-width: $break-sm-min) and (max-width: $break-sm-max) {
-
-                              }
-                              @media (max-width: $break-xs-max) {
-                                font-size:30px;
-                                line-height:0.7em;
-                                font-weight:bold;
-                              }
+								@media (min-width: $break-md-min) and (max-width: $break-md-max) {
+								}
+								@media (min-width: $break-sm-min) and (max-width: $break-sm-max) {
+									font-size:40px;
+								}
+								@media (max-width: $break-xs-max) {
+									font-size:30px;
+									line-height:0.7em;
+									font-weight:bold;
+								}
 							}
 							.medium-text{
 								font-size:26px;
 								line-height:1.2em;
 								@media (min-width: $break-md-min) and (max-width: $break-md-max) { 
-									
 								}
 								@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
-
 								}
 								@media (max-width: $break-xs-max) { 
 									font-size:16px;
 									line-height:1.2em;
 //									font-weight:bold;
-								}
-							}
-
-						}
-						max-width:100%;
-						float:right;
-						padding-top:10%;
-						@media (min-width: $break-md-min) and (max-width: $break-md-max) { 
-							margin-left:auto;
-							margin-right:auto;
-							float:none;
-						}
-						@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
-							margin-left:auto;
-							margin-right:auto;
-							text-align:center;
-							float:none;
-						}
-						@media (max-width: $break-xs-max) { 
-							margin-left:auto;
-							margin-right:auto;
-							text-align:center;
-							float:none;
-						}
-					}
-					@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
-						max-width:100%;
-					}
-					@media (max-width: $break-xs-max) { 
-						max-width:100%;
-						margin-top:0;
-					}
-				}
-			}
-			.inner-content{
-				max-width: $max-content-width / 2;
-				.text-area{
-					color:$white;
-					padding:15px;
-				}
-				@media (min-width: $break-md-min) and (max-width: $break-md-max) { 
-					
-				}
-				@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
-					max-width:none;
-				}
-				@media (max-width: $break-xs-max) { 
-					max-width:none;
-				}
-			}
-		}
-		@media (min-width: $break-md-min) and (max-width: $break-md-max) { 
-			
-		}
-		@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
-			height:auto;
-		}
-		@media (max-width: $break-xs-max) { 
-			height:auto;
-		}
+}
+}
+}
+max-width:100%;
+float:right;
+padding-top:10%;
+@media (min-width: $break-md-min) and (max-width: $break-md-max) { 
+	margin-left:auto;
+	margin-right:auto;
+	float:none;
+}
+@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	float:none;
+}
+@media (max-width: $break-xs-max) { 
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	float:none;
+}
+}
+@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
+	max-width:100%;
+}
+@media (max-width: $break-xs-max) { 
+	max-width:100%;
+	margin-top:0;
+}
+}
+}
+.inner-content{
+	max-width: $max-content-width / 2;
+	.text-area{
+		color:$white;
+		padding:15px;
 	}
+	@media (min-width: $break-md-min) and (max-width: $break-md-max) { 
+	}
+	@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
+		max-width:none;
+	}
+	@media (max-width: $break-xs-max) { 
+		max-width:none;
+	}
+}
+}
+@media (min-width: $break-md-min) and (max-width: $break-md-max) { 
+}
+@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
+	height:auto;
+}
+@media (max-width: $break-xs-max) { 
+	height:auto;
+}
+}
 }

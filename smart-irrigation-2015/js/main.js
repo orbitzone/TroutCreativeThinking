@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+	$('.product-list .divide-1-4 .inner-content').matchHeight();
     $('.slider').slick({
 	  infinite: true,
 	  prevArrow: '<span class="fa fa-chevron-left slick-prev"></span>',
@@ -48,5 +49,7 @@ $( document ).ready(function() {
 });
 
 function matchLoaded(){
-	$('.match-height .divide-1-3').matchHeight();
+	$('.match-height img').load(function(){
+		$('.match-height .divide-1-3').matchHeight();
+	});
 }

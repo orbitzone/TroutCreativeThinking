@@ -31,17 +31,42 @@ body.smart-irrigation-2015{
 				margin:0;
 			}
 		}
-		.inner-content.hover-item:hover{
-			cursor: pointer; 
-			cursor: hand;	
-			.text-area{
-				background-color:$white;
-				color:$textGrey;
-
+		.inner-content.hover-item{
+			.hoveroverlay{
+				position:relative;
+				overflow:hidden;
+				.green-overlay{
+					position:absolute;
+					width:100%;
+					height:100%;
+					top:0;
+					left:0;
+					background-color:$bgDarkGreen;
+					opacity: 0;
+					@include transition(opacity .3s ease-out);
+				}
 			}
-			a{
-				color:$textGrey;
-				text-decoration:none;
+			.text-area{
+				background-color:$bgDarkGreen;
+				@include transition(background-color .5s ease-in-out, color .5s ease-out);
+			}
+			&:hover{
+				cursor: pointer; 
+				cursor: hand;	
+				.hoveroverlay{
+					.green-overlay{
+						opacity: .5;
+					}
+				}
+				.text-area{
+					color:$textGrey;
+					background-color:$white;
+				}
+				a{
+					color:$textGrey;
+					text-decoration:none;
+				}
+
 			}
 
 		}

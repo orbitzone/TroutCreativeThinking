@@ -18,7 +18,21 @@ var products = [];
 
 //Cookies lib
 !function(a){"function"==typeof define&&define.amd?define(["jquery"],a):"object"==typeof exports?module.exports=a(require("jquery")):a(jQuery)}(function(a){function b(a){return h.raw?a:encodeURIComponent(a)}function c(a){return h.raw?a:decodeURIComponent(a)}function d(a){return b(h.json?JSON.stringify(a):String(a))}function e(a){0===a.indexOf('"')&&(a=a.slice(1,-1).replace(/\\"/g,'"').replace(/\\\\/g,"\\"));try{return a=decodeURIComponent(a.replace(g," ")),h.json?JSON.parse(a):a}catch(b){}}function f(b,c){var d=h.raw?b:e(b);return a.isFunction(c)?c(d):d}var g=/\+/g,h=a.cookie=function(e,g,i){if(arguments.length>1&&!a.isFunction(g)){if(i=a.extend({},h.defaults,i),"number"==typeof i.expires){var j=i.expires,k=i.expires=new Date;k.setMilliseconds(k.getMilliseconds()+864e5*j)}return document.cookie=[b(e),"=",d(g),i.expires?"; expires="+i.expires.toUTCString():"",i.path?"; path="+i.path:"",i.domain?"; domain="+i.domain:"",i.secure?"; secure":""].join("")}for(var l=e?void 0:{},m=document.cookie?document.cookie.split("; "):[],n=0,o=m.length;o>n;n++){var p=m[n].split("="),q=c(p.shift()),r=p.join("=");if(e===q){l=f(r,g);break}e||void 0===(r=f(r))||(l[q]=r)}return l};h.defaults={},a.removeCookie=function(b,c){return a.cookie(b,"",a.extend({},c,{expires:-1})),!a.cookie(b)}});
-$.fn.imagesLoaded = function () {
+
+
+function getProduct(code){
+	var product = null;
+	$.each(products, function(i, v) {
+    if (v.code == code) {
+    	product = v;
+      return true;
+    }
+	});
+	return product;
+}
+
+jQuery(function($){
+	$.fn.imagesLoaded = function () {
 
     $imgs = this.find('img[src!=""]');
     // if there's no images, just return an already resolved promise
@@ -42,19 +56,6 @@ $.fn.imagesLoaded = function () {
     return $.when.apply($,dfds);
 
 };
-
-function getProduct(code){
-	var product = null;
-	$.each(products, function(i, v) {
-    if (v.code == code) {
-    	product = v;
-      return true;
-    }
-	});
-	return product;
-}
-
-jQuery(function($){
 	player = {
 		obj:{},
 		init: function(container, videoId){
@@ -218,6 +219,7 @@ jQuery(function($){
 						var $elem = $(this).parent().parent().parent();
 						TweenMax.to($elem,0.4,{ scale: 0, opacity: 0, ease: Back.easeIn, onComplete: function(){
 							$elem.remove();
+							$(window).resize();
 						}});
 						moodboard.remove(this);
 						return false;
@@ -258,11 +260,11 @@ jQuery(function($){
 					$(window).on('resize',function(){
 						moodboard.resize();
 					});
-				}
-			});
-			$('body').hasClass('moodboard'){
-				moodboard.displayList();
-			}			
+					if($('body').hasClass('moodboard')){
+						moodboard.displayList();
+					}
+				}				
+			});						
 		},
 		products: [],
 		checkAdded: function(){
@@ -290,10 +292,8 @@ jQuery(function($){
 								+'</div></div>';
 						$('#moodboard .products-list .row').append(productHtml);
 					}
-					$('#moodboard').imagesLoaded().then(function(){
-						$('#moodboard .product').matchHeight();
-					});
 				});
+				$('#moodboard .product').matchHeight();								
 			}else{
 				$('#moodboard .no-products').show();
 			}
@@ -1389,6 +1389,7 @@ jQuery(function($){
 			dataType: "json",
 			success: function(data){
 				products = data;
+				moodboard.init();	
 			}
 		})
 		$('html').addClass('spring-2015');
@@ -1427,7 +1428,6 @@ jQuery(function($){
 		}).on('touchend','#destination-happiness-content a, #main-content a, #main-content button', function(){
 			TweenMax.to($(this),0.5,{ scale: 1, ease: Elastic.easeOut });
 		});
-		moodboard.init();	
 		shareBoard.init();				
 	};
 	init();

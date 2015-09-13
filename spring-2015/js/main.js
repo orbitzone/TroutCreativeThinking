@@ -286,6 +286,7 @@ jQuery(function($){
 									+'</div>'
 									+'<button type="button" title="Share" class="share" data-product-id="'+product.code+'"><i class="iconr-share-dotted"></i></button>'
 									+'<div class="name">'+product.name+'</div>'
+									+'<div class="description">'+product.description+'</div>'
 									+'<div class="actions">'
 										+'<a target="_blank" href="'+product.link+'" class="add-to-cart">Shop now <span class="plus"><span class="text">+</span></span></a>															'
 									+'</div>'

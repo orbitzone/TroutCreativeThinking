@@ -58,7 +58,6 @@ body.moodboard{
 		}
 		
 		.title{
-			margin-bottom: em(40);
 			@include clearfix;
 			h1{
 				color: $white;
@@ -117,7 +116,7 @@ body.moodboard{
 		.product{
 			position: relative;
 			background: $white;
-			padding: em(20) em(10) em(90);
+			padding: em(80) em(10) em(90);
 			margin-bottom: em(30);
 			.image{
 				text-align: center;
@@ -144,9 +143,11 @@ body.moodboard{
 					border: none;
 					@include appearance(none);
 					padding: em(5);
+					margin-top: em(16);
+					margin-right: em(5);
 					i{
-						color: $light-grey;
-						font-size: em(23);
+						color: $moodboard-grey;
+						font-size: em(33);
 					}
 				}
 			}
@@ -156,10 +157,16 @@ body.moodboard{
 			.name{
 				color: $black;
 				text-decoration: underline;
-				font-size: em(26);
+				font-size: em(20);
 				text-align: center;
 				width: 80%;
 				margin: 0 auto;
+			}
+			.description{
+				text-align: center;
+				width: 80%;
+				margin: 0 auto;
+				margin-top: em(2);
 			}
 			.actions{
 				position: absolute;

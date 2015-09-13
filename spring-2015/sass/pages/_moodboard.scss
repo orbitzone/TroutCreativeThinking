@@ -77,9 +77,18 @@ body.moodboard{
 			}
 		}
 		.intro{
-			max-width: em(568);
+			max-width: em(620);
+			background: $white;
+			padding: em(20) em(30);
+			margin-bottom: em(20);
+			p{
+				font-size: em(16);
+				line-height: em(22);
+				color: $grey;
+			}
 		}
 		.buttons{
+			margin-bottom: em(20);
 			@media (min-width: $screen-lg-min){
 				text-align: right;
 				position: absolute;
@@ -108,7 +117,6 @@ body.moodboard{
 		.product{
 			position: relative;
 			background: $white;
-			border: 1px solid $light-grey;
 			padding: em(20) em(10) em(90);
 			margin-bottom: em(30);
 			.image{
@@ -137,7 +145,7 @@ body.moodboard{
 					@include appearance(none);
 					padding: em(5);
 					i{
-						color: $grey;
+						color: $light-grey;
 						font-size: em(23);
 					}
 				}
@@ -149,15 +157,19 @@ body.moodboard{
 				color: $black;
 				text-decoration: underline;
 				font-size: em(26);
+				text-align: center;
+				width: 80%;
+				margin: 0 auto;
 			}
 			.actions{
 				position: absolute;
 				bottom: 0;
 				left: 0;
 				width: 100%;
-				padding: 0 em(10) em(10);
+				padding: 0 em(10) em(30);
 				@include clearfix;
 				font-size: em(16);
+				text-align: center;
 				a.more-details{
 					position: relative;
 					background: $dark-green;

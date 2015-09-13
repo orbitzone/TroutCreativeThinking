@@ -219,7 +219,7 @@ jQuery(function($){
 						var $elem = $(this).parent().parent().parent();
 						TweenMax.to($elem,0.4,{ scale: 0, opacity: 0, ease: Back.easeIn, onComplete: function(){
 							$elem.remove();
-							$(window).resize();
+							$('#moodboard .product').matchHeight();
 						}});
 						moodboard.remove(this);
 						return false;
@@ -327,7 +327,7 @@ jQuery(function($){
 			//TweenMax.to($heart, 1, {left:$('#destination-happiness .menu').offset().left - $('#main-content').offset().left +16, top:$('#destination-happiness .menu').offset().top - $('#main-content').offset().top - 5, scale:0.5, ease:Power1.easeInOut, onComplete: function(){ 
 					$('#destination-happiness .dh-items').removeClass('empty').find('.number').html(moodboard.products.length);
 					$('#destination-links .dh-items').removeClass('empty').find('.number').html(moodboard.products.length);
-					$heart.fadeOut(200, function(){ $(this).remove(); });
+					$heart.fadeOut(200, function(){ $(this).remove(); $(window).resize(); });
 				}});
 			$(obj).addClass('added');			
 		},

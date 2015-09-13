@@ -460,6 +460,7 @@ body.bec-judd{
 				margin-top: em(20);
 				margin-left: em(20);
 				margin-bottom: em(20);
+				z-index: 3;
 				@media (min-width: $screen-sm-min){
 					margin-left: em(60);
 				}

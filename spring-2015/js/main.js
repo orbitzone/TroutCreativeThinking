@@ -193,7 +193,7 @@ jQuery(function($){
 					moodboard.products.splice(key,1);
 				}				
 			});
-			$.cookie('moodboard_products',moodboard.products);
+			$.cookie('moodboard_products',moodboard.products, {expires: 365, path: '/'});
 			$.ajax({
 				cache: false,
 				url:'pages/destination-happiness.html',

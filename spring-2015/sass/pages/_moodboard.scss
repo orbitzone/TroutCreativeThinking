@@ -131,6 +131,7 @@ body.moodboard{
 				text-align: right;
 				z-index: 2;
 				button{
+					outline: none;
 					background: none;
 					border: none;
 					@include appearance(none);

@@ -42,6 +42,14 @@ body.four-steps-to-create{
     }
     .hex-content{
       position: relative;
+      width: $hexLargeWidth-xs;
+      height: $hexLargeHeight-xs;
+      margin: 0 auto;
+      @media (min-width: $screen-sm-min){
+        width: auto;
+        height: auto;
+        margin: 0;
+      }
     }
     .description{
       position: absolute;
@@ -226,8 +234,10 @@ body.four-steps-to-create{
       .hex-large{
         margin: 0 auto;
         margin-top: em(120);
+        height: auto;
         @media (min-width: $screen-sm-min){
           margin-top: em(236);
+          height: $hexLargeHeight-lg;
         }
         svg{
           position: relative;
@@ -627,9 +637,11 @@ body.four-steps-to-create{
         position: relative;
         z-index: 1;
         margin: 0 auto;
+         height: auto;
         @media (min-width: $screen-sm-min){
           margin: 0;
           float: right;
+           height: $hexLargeHeight-lg;
         }
         @media (min-width: $screen-xl-min){
           float: left;
@@ -750,7 +762,12 @@ body.four-steps-to-create{
         position: relative;
         z-index: 1;
         margin: 0 auto;
+        height: auto;
+        @media (min-width: $screen-sm-min){
+         height: $hexLargeHeight-lg;
+       }
         @media (min-width: $screen-md-min){
+
           margin-left: em(24);
         }
         @media (min-width: $screen-lg-min){
@@ -883,6 +900,10 @@ body.four-steps-to-create{
         z-index: 1;
         margin: 0 auto;
         margin-bottom: em(40);
+        height: auto;
+        @media (min-width: $screen-sm-min){
+         height: $hexLargeHeight-lg;
+       }
         @media (min-width: $screen-md-min){
           margin-left: 0;
           margin-bottom: em(40);

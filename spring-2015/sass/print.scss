@@ -2,6 +2,7 @@
 @import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/variables";
 @import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins";
 @import "mixins";
+@import "functions";
 @page{
 	margin: 1cm;
 }
@@ -65,7 +66,6 @@ p{
 }
 		
 		.title{
-			margin-bottom: em(40);
 			@include clearfix;
 			h1{
 				color: $white;
@@ -83,8 +83,9 @@ p{
 			}
 		}
 		.intro{
-			font-size: 12pt;
-			padding: 10px 0;
+			font-size: 9pt;
+			padding: 10px;
+			color: $grey;
 		}
 		.no-products{
 			display: none;
@@ -99,7 +100,7 @@ p{
 			padding: 20px;
 			margin-bottom: 30px;
 			min-height: 200px;
-			height: auto !important;
+			height: 200px !important;
 			.image{
 				text-align: center;
 				img{
@@ -124,7 +125,20 @@ p{
 			.name{
 				color: $black;
 				text-decoration: underline;
-				font-size: 14pt;
+				font-weight: 700;
+				font-size: 12pt;
+				width: 80%;
+				margin: 0 auto;
+				text-align: center;
+			}
+			.description{
+				color: $grey;
+				text-decoration: underline;
+				font-size: 9pt;
+				width: 80%;
+				margin: 0 auto;
+				text-align: center;
+				height: 50px;
 			}
 			.actions{
 				display: none;

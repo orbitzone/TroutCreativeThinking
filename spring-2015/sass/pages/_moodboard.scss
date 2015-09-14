@@ -120,8 +120,12 @@ body.moodboard{
 			margin-bottom: em(30);
 			.image{
 				text-align: center;
+				height: 189px;
+				position: relative;
+				display: block;
 				img{
-					height: 189px;
+					@extend %center-align;
+					max-height: 100%;
 					margin: 0 auto;
 				}
 			}

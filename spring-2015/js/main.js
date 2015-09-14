@@ -57,6 +57,8 @@ jQuery(function($){
 
 };
 	player = {
+		autoplay: true,
+		active: '',
 		obj:{},
 		init: function(container, videoId){
 			if (typeof(YT) == 'undefined' || typeof(YT.Player) == 'undefined') {
@@ -77,6 +79,8 @@ jQuery(function($){
       }
 		},
 		loadPlayer: function(container, videoId){
+		 player.autoplay = true;
+		 player.active = container;
 		 return new YT.Player(container, {
         videoId: videoId,
         width: 356,
@@ -90,7 +94,20 @@ jQuery(function($){
         },
         events: {
         	'onReady': function(event){
-        		player.play(container);
+        		if(player.autoplay == true){
+        			player.play(container);
+        		}
+        	},
+        	'onStateChange': function(event){
+        		if(event.data == YT.PlayerState.PLAYING){
+      				$.each(player.obj, function(key){
+      					if(key != event.target.m.id){
+									if(typeof player.obj[key].stopVideo !== "undefined"){
+								  	player.obj[key].stopVideo();		  	      
+									}
+								}
+							});
+      			}
         	}
         }
       });
@@ -101,7 +118,11 @@ jQuery(function($){
 		},
 		stop: function(id){
 			var video = player.obj[id];
-		  video.stopVideo();      
+			if(typeof video.stopVideo !== "undefined"){
+		  	video.stopVideo();		  	      
+			}else{
+				player.autoplay = false;
+			}
 		}
 	};
 	shareBoard = {
@@ -1272,11 +1293,15 @@ jQuery(function($){
 						var videoContainer = $(this).data('video-container');
 						var video = $(this).data('video');
 						$('#mr-jason-grant .'+videoContainer).slick('slickNext');
+						var $hexBlock = $('#mr-jason-grant .'+videoContainer).parent().find('.hex-block');
+						TweenMax.to($hexBlock,0.3,{scale: 0, ease: Back.easeIn});
 						player.init(videoContainer,video);
 					});
 					$('#mr-jason-grant .close-video').on('click', function(){
 						var videoContainer = $(this).data('video-container');
+						var $hexBlock = $('#mr-jason-grant .'+videoContainer).parent().find('.hex-block');
 						player.stop(videoContainer);
+						TweenMax.to($hexBlock,0.5,{scale: 1, ease: Back.easeOut});
 						$('#mr-jason-grant .'+videoContainer).slick('slickPrev');
 					});
 					$('#mr-jason-grant .products-slide').slick({

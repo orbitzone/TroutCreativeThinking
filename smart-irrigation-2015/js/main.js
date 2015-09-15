@@ -4,13 +4,13 @@ $( document ).ready(function() {
 	$('.smart-thinking-articles .divide-1-4 .inner-content').matchHeight();
 	$('.smart-thinking-articles .divide-1-2 .inner-content').matchHeight();
 
-	$('.smart-tips-masonary').masonry({
-	  itemSelector: '.one-box-item'
-	});
+
 
 	$('.si-myth-section .one-myth').click(function(){
 		$('.si-myth-section').find('.one-myth').removeClass("active");
 		$(this).addClass("active");
+		$('.si-myth-section').find('.info-box').removeClass("active");
+
 	});
 	
 

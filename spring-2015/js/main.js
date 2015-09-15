@@ -223,10 +223,24 @@ jQuery(function($){
 					$(document).on('click','.add-to-moodboard',function(){
 						if($(this).data('multiple') == "slide"){
 							$elem = $(this).parent().parent();
-							$button = $elem.find('.buttons-slider .slick-active').data('product-id');
-							$pan = $elem.find('.pans-slider .slick-active').data('product-id');
-							moodboard.add(this, $button);
-							moodboard.add(this, $pan);
+							if($(this).hasClass('added')){
+								$(this).removeClass('added');
+								moodboard.remove(this, $(this).data('added-button'));
+								moodboard.remove(this, $(this).data('added-pan'));
+								$.cookie('moodboard_button', '');
+								$.cookie('moodboard_pan', '');
+								$(this).data('added-button','');
+								$(this).data('added-pan','');
+							}else{
+								$button = $elem.find('.buttons-slider .slick-active').data('product-id');
+								$pan = $elem.find('.pans-slider .slick-active').data('product-id');
+								$(this).data('added-button',$button);
+								$(this).data('added-pan',$pan);
+								$.cookie('moodboard_button', $button, {expires: 365, path: '/'});
+								$.cookie('moodboard_pan', $pan, {expires: 365, path: '/'});
+								moodboard.add(this, $button);
+								moodboard.add(this, $pan);
+							}
 						}else{
 							if($(this).hasClass('added')){
 								moodboard.remove(this);
@@ -328,7 +342,7 @@ jQuery(function($){
 			// If not in memory.
      	if(position < 0){
 				moodboard.products.push(""+product);
-				$.cookie('moodboard_products', moodboard.products);
+				$.cookie('moodboard_products', moodboard.products, {expires: 365, path: '/'});
 			}
 			var $heart = $('<div class="heart-animation"><i class="icon icon-heart"></i></div>');
 			$('#main').append($heart);
@@ -1014,6 +1028,15 @@ jQuery(function($){
   					prevArrow: "<button type=\"button\" class=\"arrow-prev\"><i class=\"iconr-arrow-left\"></i></button>",
   					nextArrow: "<button type=\"button\" class=\"arrow-next\"><i class=\"iconr-arrow-right\"></i></button>"					 	
 					});
+					if($.cookie('moodboard_button')){
+						$('#hotel-inspired-look .add-to-moodboard[data-multiple]').data('added-button',$.cookie('moodboard_button'));
+					}
+					if($.cookie('moodboard_pan')){
+						$('#hotel-inspired-look .add-to-moodboard[data-multiple]').data('added-pan',$.cookie('moodboard_pan'));
+					}
+					if($('#hotel-inspired-look .add-to-moodboard[data-multiple]').data('added-pan') && $('#hotel-inspired-look .add-to-moodboard[data-multiple]').data('added-button') ){
+						$('#hotel-inspired-look .add-to-moodboard[data-multiple]').addClass('added');
+					}
 					$('#hotel-inspired-look .buttons-slider').slick({
 						slidesToShow: 1,
   					slidesToScroll: 1,
@@ -1037,8 +1060,8 @@ jQuery(function($){
 						var $pan = $('#hotel-inspired-look .pans-slider .slick-active').data('product-id');
 						var $panData = getProduct($pan);
 						$('#hotel-inspired-look .shop-pan').attr('href',$panData.link);
-						console.log($pan);
 					});
+
 					$('#hotel-inspired-look .multiple-shop-now').on('click',function(){
 						$elem = $(this).parent().parent();
 						$button = $('#hotel-inspired-look .buttons-slider .slick-active').data('product-id');

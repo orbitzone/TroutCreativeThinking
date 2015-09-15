@@ -1,15 +1,11 @@
 body.smart-irrigation-2015{
-
-
 	.si-intro-section{
 		font-size:15px;
 		line-height:1.2em;
 		text-align:center;
 	}
-
 	.si-video-section{
 		text-align:center;
-
 		.videoWrapper {
 			position: relative;
 			padding-bottom: 56.25%;
@@ -23,16 +19,12 @@ body.smart-irrigation-2015{
 			width: 100%;
 			height: 100%;
 		}
-
 	}
-
 	.si-myth-intro-section{
 		font-size:15px;
 		line-height:1.2em;
 		text-align:left;
 	}
-
-
 	.si-myth-section{
 		.wide-half-section{
 			position:relative;
@@ -41,30 +33,21 @@ body.smart-irrigation-2015{
 			&.section-row-half-left{
 				.inner-content{
 					float:right;
-
 				}
-
 			}
 			&.section-row-half-right{
 				.inner-content{
 					float:left;
-
 				}
-
 			}
 			.footer-style{
 				height:80px;
 				width:100%;
 				position:absolute;
 				bottom:0;
-
 				@media (max-width: $max-content-width) { 
 					display:none;
 				}
-
-
-
-
 			}
 			.inner-content{
 				max-width: $max-content-width / 2;
@@ -75,6 +58,12 @@ body.smart-irrigation-2015{
 					width:50%;
 					float:left;
 					position:relative;
+					.icon-chevron-up{
+						display:none;
+					}
+					.icon-chevron-down{
+						display:inline;
+					}
 					.myth-overlay{
 						width:100%;
 						height:100%;
@@ -99,9 +88,7 @@ body.smart-irrigation-2015{
 							cursor: pointer; 
 							cursor: hand;
 						}
-
 					}
-
 					&:hover{
 						.myth-overlay{
 							opacity:.2;
@@ -113,32 +100,31 @@ body.smart-irrigation-2015{
 							background-repeat: no-repeat;
 							background-position: bottom center;
 						}
+						.icon-chevron-up{
+							display:inline;
+						}
+						.icon-chevron-down{
+							display:none;
+						}
 					}
-
 					@media (min-width: $break-md-min) and (max-width: $break-md-max) { 
-
 					}
 					@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
-
 					}
 					@media (max-width: $break-xs-max) { 
 						width:100%;
 						float:none;
 					}
-
 				}
 				@media (min-width: $break-md-min) and (max-width: $break-md-max) { 
-
 				}
 				@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
 					max-width:100%;
 				}
 				@media (max-width: $break-xs-max) { 
-
 				}
 			}
 			@media (min-width: $break-md-min) and (max-width: $break-md-max) { 
-
 			}
 			@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
 				width:100%;
@@ -151,18 +137,120 @@ body.smart-irrigation-2015{
 		}
 		.info-box{
 			text-align:center;
+			display:none;
+			font-size:18px;
+			line-height:1.2em;
+			padding-top:30px;
+			padding-bottom:30px;
+			&.myth1{
+				p{
+					display:none;
+				}
+				p.myth1{
+					display:block;
+				}
+			}
+			&.myth2{
+				p{
+					display:none;
+				}
+				p.myth2{
+					display:block;
+				}
+			}
+			&.myth3{
+				p{
+					display:none;
+				}
+				p.myth3{
+					display:block;
+				}
+			}
+			&.myth4{
+				p{
+					display:none;
+				}
+				p.myth4{
+					display:block;
+				}
+			}
+			&.infobox-full.active{
+				display:block;
+				@media (max-width: $break-md-min) { 
+					display:none;
+				}
+			}			
 			.inner-content{
 				max-width:60%;
 				margin-left:auto;
 				margin-right:auto;
 			}
-			&.infobox-full{
-				display:none;
+			@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
+				&.infobox-half.active{
+					&.myth1.md-myth1{
+						display:block;
+						.inner-content{
+							float:none;
+							max-width:100%;
+						}
+					}
+					&.myth2.md-myth2{
+						display:block;
+						.inner-content{
+							float:none;
+							max-width:100%;
+						}
+					}
+					&.myth3.md-myth3{
+						display:block;
+						.inner-content{
+							float:none;
+							max-width:100%;
+						}
+					}
+					&.myth4.md-myth4{
+						display:block;
+						.inner-content{
+							float:none;
+							max-width:100%;
+						}
+					}
+				}
+			}
+			@media (max-width: $break-xs-max) { 
+				&.infobox-one.active{
+					&.myth1.sm-myth1{
+						display:block;
+						.inner-content{
+							float:none;
+							max-width:100%;
+						}
+					}
+					&.myth2.sm-myth2{
+						display:block;
+						.inner-content{
+							float:none;
+							max-width:100%;
+						}
+					}
+					&.myth3.sm-myth3{
+						display:block;
+						.inner-content{
+							float:none;
+							max-width:100%;
+						}
+					}
+					&.myth4.sm-myth4{
+						display:block;
+						.inner-content{
+							float:none;
+							max-width:100%;
+						}
+					}
+				}
 			}
 		}
-
 	}
-
 	.smart-thinking-articles.page-si{
 		font-size:15px;
 		text-align:left;
@@ -226,25 +314,20 @@ body.smart-irrigation-2015{
 			}
 		}
 	}
-
-
 	.si-smart-tips-section{
 		.smart-tips-masonary{
 			.one-box-item{
 				width:33.3333%;
-
 				&.one-box-item-big{
 					width:66.6666%;
-				@media (min-width: $break-md-min) and (max-width: $break-md-max) { 
-
-				}
-				@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
-					width:50%;
-				}
-				@media (max-width: $break-xs-max) { 
-					width:100%;
-				}
-
+					@media (min-width: $break-md-min) and (max-width: $break-md-max) { 
+					}
+					@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
+						width:50%;
+					}
+					@media (max-width: $break-xs-max) { 
+						width:100%;
+					}
 				}
 				.inner-content{
 					margin:15px;
@@ -260,12 +343,9 @@ body.smart-irrigation-2015{
 							font-weight:bold;
 							padding-top:0;
 						}
-
-
 					}
 				}
 				@media (min-width: $break-md-min) and (max-width: $break-md-max) { 
-
 				}
 				@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
 					width:50%;
@@ -276,6 +356,4 @@ body.smart-irrigation-2015{
 			}
 		}
 	}
-
-
 }

@@ -7,9 +7,23 @@ $( document ).ready(function() {
 
 
 	$('.si-myth-section .one-myth').click(function(){
-		$('.si-myth-section').find('.one-myth').removeClass("active");
-		$(this).addClass("active");
-		$('.si-myth-section').find('.info-box').removeClass("active");
+		if($(this).hasClass("active") == true){
+			$('.si-myth-section').find('.one-myth').removeClass("active");
+			$('.si-myth-section').find('.info-box').removeClass("active");
+			$('.si-myth-section').find('.info-box').removeClass("myth1").removeClass("myth2").removeClass("myth3").removeClass("myth4");
+		}
+		else{
+			$('.si-myth-section').find('.one-myth').removeClass("active");
+			$(this).addClass("active");
+			$('.si-myth-section').find('.info-box').removeClass("active");
+			$('.si-myth-section').find('.info-box').removeClass("myth1").removeClass("myth2").removeClass("myth3").removeClass("myth4");
+			$('.si-myth-section').find('.info-box').addClass($(this).attr("data-myth"));
+			$('.si-myth-section').find('.info-box').addClass("active");
+		}
+
+		$(this).attr("data-myth");
+
+		//hide info-box that doesn't have matching classes inside
 
 	});
 	

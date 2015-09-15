@@ -1028,15 +1028,6 @@ jQuery(function($){
   					prevArrow: "<button type=\"button\" class=\"arrow-prev\"><i class=\"iconr-arrow-left\"></i></button>",
   					nextArrow: "<button type=\"button\" class=\"arrow-next\"><i class=\"iconr-arrow-right\"></i></button>"					 	
 					});
-					if($.cookie('moodboard_button')){
-						$('#hotel-inspired-look .add-to-moodboard[data-multiple]').data('added-button',$.cookie('moodboard_button'));
-					}
-					if($.cookie('moodboard_pan')){
-						$('#hotel-inspired-look .add-to-moodboard[data-multiple]').data('added-pan',$.cookie('moodboard_pan'));
-					}
-					if($('#hotel-inspired-look .add-to-moodboard[data-multiple]').data('added-pan') && $('#hotel-inspired-look .add-to-moodboard[data-multiple]').data('added-button') ){
-						$('#hotel-inspired-look .add-to-moodboard[data-multiple]').addClass('added');
-					}
 					$('#hotel-inspired-look .buttons-slider').slick({
 						slidesToShow: 1,
   					slidesToScroll: 1,
@@ -1061,7 +1052,19 @@ jQuery(function($){
 						var $panData = getProduct($pan);
 						$('#hotel-inspired-look .shop-pan').attr('href',$panData.link);
 					});
-
+					if($.cookie('moodboard_button')){
+						var slide = $('#hotel-inspired-look .buttons-slider .slide[data-product-id="'+$.cookie('moodboard_button')+'"]').data('slide');
+						$('#hotel-inspired-look .buttons-slider').slick('slickGoTo',slide);
+						$('#hotel-inspired-look .add-to-moodboard[data-multiple]').data('added-button',$.cookie('moodboard_button'));
+					}
+					if($.cookie('moodboard_pan')){
+						var slide = $('#hotel-inspired-look .pans-slider .slide[data-product-id="'+$.cookie('moodboard_pan')+'"]').data('slide');
+						$('#hotel-inspired-look .pans-slider').slick('slickGoTo',slide);
+						$('#hotel-inspired-look .add-to-moodboard[data-multiple]').data('added-pan',$.cookie('moodboard_pan'));
+					}
+					if($('#hotel-inspired-look .add-to-moodboard[data-multiple]').data('added-pan') && $('#hotel-inspired-look .add-to-moodboard[data-multiple]').data('added-button') ){
+						$('#hotel-inspired-look .add-to-moodboard[data-multiple]').addClass('added');
+					}
 					$('#hotel-inspired-look .multiple-shop-now').on('click',function(){
 						$elem = $(this).parent().parent();
 						$button = $('#hotel-inspired-look .buttons-slider .slick-active').data('product-id');

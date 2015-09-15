@@ -371,6 +371,10 @@ jQuery(function($){
 			if(!product){
 				var product = $(obj).data('product-id');
 			}
+			if(product == $.cookie('moodboard_button') || product == $.cookie('moodboard_pan')){
+				$.cookie('moodboard_button','');
+				$.cookie('moodboard_pan','');
+			}
 			var position = $.inArray(""+product, moodboard.products);
 			// If not in memory.
      	if(position >-1){

@@ -1,0 +1,281 @@
+body.smart-irrigation-2015{
+
+
+	.si-intro-section{
+		font-size:15px;
+		line-height:1.2em;
+		text-align:center;
+	}
+
+	.si-video-section{
+		text-align:center;
+
+		.videoWrapper {
+			position: relative;
+			padding-bottom: 56.25%;
+			padding-top: 25px;
+			height: 0;
+		}
+		.videoWrapper iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+	}
+
+	.si-myth-intro-section{
+		font-size:15px;
+		line-height:1.2em;
+		text-align:left;
+	}
+
+
+	.si-myth-section{
+		.wide-half-section{
+			position:relative;
+			width:50%;
+			float:left;
+			&.section-row-half-left{
+				.inner-content{
+					float:right;
+
+				}
+
+			}
+			&.section-row-half-right{
+				.inner-content{
+					float:left;
+
+				}
+
+			}
+			.footer-style{
+				height:80px;
+				width:100%;
+				position:absolute;
+				bottom:0;
+
+				@media (max-width: $max-content-width) { 
+					display:none;
+				}
+
+
+
+
+			}
+			.inner-content{
+				max-width: $max-content-width / 2;
+				width:100%;
+				z-index:100;
+				position: relative;
+				.one-myth{
+					width:50%;
+					float:left;
+					position:relative;
+					.myth-overlay{
+						width:100%;
+						height:100%;
+						background-color: $textGrey;
+						position:absolute;
+						top:0;
+						left:0;
+						opacity:0;
+						@include transition(opacity .5s ease-in-out);
+					}
+					.one-myth-footer{
+						height:80px;
+						text-align:center;
+						color:$white;
+						font-size:16px;
+						line-height:16px;
+						font-weight:bold;
+						span{
+							display:block;
+							padding-top:32px;
+							padding-bottom:32px;
+							cursor: pointer; 
+							cursor: hand;
+						}
+
+					}
+
+					&:hover{
+						.myth-overlay{
+							opacity:.2;
+						}
+					}
+					&.active{
+						.one-myth-footer{
+							background-image:url('../images/smart-irrigation/triangle.png');
+							background-repeat: no-repeat;
+							background-position: bottom center;
+						}
+					}
+
+					@media (min-width: $break-md-min) and (max-width: $break-md-max) { 
+
+					}
+					@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
+
+					}
+					@media (max-width: $break-xs-max) { 
+						width:100%;
+						float:none;
+					}
+
+				}
+				@media (min-width: $break-md-min) and (max-width: $break-md-max) { 
+
+				}
+				@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
+					max-width:100%;
+				}
+				@media (max-width: $break-xs-max) { 
+
+				}
+			}
+			@media (min-width: $break-md-min) and (max-width: $break-md-max) { 
+
+			}
+			@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
+				width:100%;
+				float:none;
+			}
+			@media (max-width: $break-xs-max) { 
+				width:100%;
+				float:none;
+			}
+		}
+		.info-box{
+			text-align:center;
+			.inner-content{
+				max-width:60%;
+				margin-left:auto;
+				margin-right:auto;
+			}
+			&.infobox-full{
+				display:none;
+			}
+		}
+
+	}
+
+	.smart-thinking-articles.page-si{
+		font-size:15px;
+		text-align:left;
+		.text-area{
+			color:$textGrey;
+			background:$bgGrey;
+			display:block;
+			padding:30px 15px;
+			.call-to-action, p{
+				margin:.5em 0;
+			}
+			h4{
+				text-transform:none;
+				font-size:18px;
+				line-height:1.2em;
+				margin-top:0;
+			}
+			.call-to-action{
+				font-weight:bold;
+			}
+			p{
+				line-height:1.2em;
+				font-weight:300;
+			}
+		}
+		.inner-content.hover-item{
+			.hoveroverlay{
+				position:relative;
+				overflow:hidden;
+				.grey-overlay{
+					position:absolute;
+					width:100%;
+					height:100%;
+					top:0;
+					left:0;
+					background-color:$bgGrey;
+					opacity: 0;
+					@include transition(opacity .3s ease-out);
+				}
+			}
+			.text-area{
+				background-color:$bgGrey;
+				@include transition(background-color .5s ease-in-out, color .5s ease-out);
+			}
+			&:hover{
+				cursor: pointer; 
+				cursor: hand;	
+				.hoveroverlay{
+					.grey-overlay{
+						opacity: 0;
+					}
+				}
+				.text-area{
+					color:$textGrey;
+					background-color:$bgGrey;
+				}
+				a{
+					color:$textGrey;
+					text-decoration:none;
+				}
+			}
+		}
+	}
+
+
+	.si-smart-tips-section{
+		.smart-tips-masonary{
+			.one-box-item{
+				width:33.3333%;
+
+				&.one-box-item-big{
+					width:66.6666%;
+				@media (min-width: $break-md-min) and (max-width: $break-md-max) { 
+
+				}
+				@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
+					width:50%;
+				}
+				@media (max-width: $break-xs-max) { 
+					width:100%;
+				}
+
+				}
+				.inner-content{
+					margin:15px;
+					.tip-text{
+						margin:0 15px;
+						padding:15px 0;
+						font-size:18px;
+						line-height:1.2em;
+						font-weight:200;
+						h5{
+							font-size:28px;
+							line-height:1.2em;
+							font-weight:bold;
+							padding-top:0;
+						}
+
+
+					}
+				}
+				@media (min-width: $break-md-min) and (max-width: $break-md-max) { 
+
+				}
+				@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
+					width:50%;
+				}
+				@media (max-width: $break-xs-max) { 
+					width:100%;
+				}
+			}
+		}
+	}
+
+
+}

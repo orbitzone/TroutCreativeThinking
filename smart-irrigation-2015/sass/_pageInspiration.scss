@@ -1,0 +1,77 @@
+body.smart-irrigation-2015{
+	.sidebar{
+		.filterList{
+			padding-left:0;
+			margin-left:0;
+			list-style:none;
+			li{
+				padding-left:0;
+				margin-left:0;
+				padding-bottom:5px;
+			}
+		}
+	}
+	.box-section.inspiration-articles{
+		font-size:15px;
+		text-align:left;
+		.text-area{
+			color:$textGrey;
+			background:$bgGrey;
+			display:block;
+			padding:30px 15px;
+			.call-to-action, p{
+				margin:.5em 0;
+			}
+			h4{
+				text-transform:none;
+				font-size:18px;
+				line-height:1.2em;
+				margin-top:0;
+			}
+			.call-to-action{
+				font-weight:bold;
+			}
+			p{
+				line-height:1.2em;
+				font-weight:300;
+			}
+		}
+		.inner-content.hover-item{
+			.hoveroverlay{
+				position:relative;
+				overflow:hidden;
+				.grey-overlay{
+					position:absolute;
+					width:100%;
+					height:100%;
+					top:0;
+					left:0;
+					background-color:$bgGrey;
+					opacity: 0;
+					@include transition(opacity .3s ease-out);
+				}
+			}
+			.text-area{
+				background-color:$white;
+				@include transition(background-color .5s ease-in-out, color .5s ease-out);
+			}
+			&:hover{
+				cursor: pointer; 
+				cursor: hand;	
+				.hoveroverlay{
+					.grey-overlay{
+						opacity: .2;
+					}
+				}
+				.text-area{
+					color:$textGrey;
+					background-color:$bgGrey;
+				}
+				a{
+					color:$textGrey;
+					text-decoration:none;
+				}
+			}
+		}
+	}
+}

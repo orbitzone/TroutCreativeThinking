@@ -1,9 +1,20 @@
 body.smart-irrigation-2015{
 	.si-intro-section{
-		font-size:15px;
-		line-height:1.2em;
+		font-size:18px;
+		line-height:1.4em;
 		text-align:center;
 		color:$textGrey;
+		.text-area{
+			max-width:70%;
+			margin-left:auto;
+			margin-right:auto;
+			@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
+				max-width:80%;
+			}
+			@media (max-width: $break-xs-max) { 
+				max-width:90%;
+			}
+		}
 	}
 	.si-video-section{
 		color:$textGrey;
@@ -24,9 +35,10 @@ body.smart-irrigation-2015{
 	}
 	.si-myth-intro-section{
 		color:$textGrey;
-		font-size:15px;
+		font-size:18px;
 		line-height:1.2em;
 		text-align:left;
+		padding-bottom:15px;
 		h3{
 			font-size:32px;
 			line-height:1.2em;

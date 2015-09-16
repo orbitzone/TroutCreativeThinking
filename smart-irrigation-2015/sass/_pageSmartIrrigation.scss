@@ -3,8 +3,10 @@ body.smart-irrigation-2015{
 		font-size:15px;
 		line-height:1.2em;
 		text-align:center;
+		color:$textGrey;
 	}
 	.si-video-section{
+		color:$textGrey;
 		text-align:center;
 		.videoWrapper {
 			position: relative;
@@ -21,11 +23,18 @@ body.smart-irrigation-2015{
 		}
 	}
 	.si-myth-intro-section{
+		color:$textGrey;
 		font-size:15px;
 		line-height:1.2em;
 		text-align:left;
+		h3{
+			font-size:32px;
+			line-height:1.2em;
+			color:$textGrey;
+		}
 	}
 	.si-myth-section{
+		color:$textGrey;
 		.wide-half-section{
 			position:relative;
 			width:50%;
@@ -58,10 +67,10 @@ body.smart-irrigation-2015{
 					width:50%;
 					float:left;
 					position:relative;
-					.icon-chevron-up{
+					.myth-readless{
 						display:none;
 					}
-					.icon-chevron-down{
+					.myth-readmore{
 						display:inline;
 					}
 					.myth-overlay{
@@ -81,7 +90,7 @@ body.smart-irrigation-2015{
 						font-size:16px;
 						line-height:16px;
 						font-weight:bold;
-						span{
+						.myth-call-to-action{
 							display:block;
 							padding-top:32px;
 							padding-bottom:32px;
@@ -100,11 +109,11 @@ body.smart-irrigation-2015{
 							background-repeat: no-repeat;
 							background-position: bottom center;
 						}
-						.icon-chevron-up{
-							display:inline;
-						}
-						.icon-chevron-down{
+						.myth-readmore{
 							display:none;
+						}
+						.myth-readless{
+							display:inline;
 						}
 					}
 					@media (min-width: $break-md-min) and (max-width: $break-md-max) { 
@@ -140,6 +149,7 @@ body.smart-irrigation-2015{
 			display:none;
 			font-size:18px;
 			line-height:1.2em;
+			font-weight:300;
 			padding-top:30px;
 			padding-bottom:30px;
 			&.myth1{
@@ -314,7 +324,23 @@ body.smart-irrigation-2015{
 			}
 		}
 	}
+	.smart-thinking-articles.page-si{
+		.smart-thinking-intro{
+			font-size:18px;
+			line-height:1.2em;
+		}
+	} 
+
 	.si-smart-tips-section{
+		.smart-tips-intro{
+			font-size:18px;
+			line-height:1.2em;
+			h3{
+				color:$textGrey;
+				font-size:32px;
+				line-height:1.2em;
+			}
+		}
 		.smart-tips-masonary{
 			.one-box-item{
 				width:33.3333%;
@@ -332,7 +358,7 @@ body.smart-irrigation-2015{
 				.inner-content{
 					margin:15px;
 					.tip-text{
-						margin:0 15px;
+						margin:0 30px;
 						padding:15px 0;
 						font-size:18px;
 						line-height:1.2em;
@@ -342,6 +368,9 @@ body.smart-irrigation-2015{
 							line-height:1.2em;
 							font-weight:bold;
 							padding-top:0;
+						}
+						li{
+							padding-bottom:8px;
 						}
 					}
 				}

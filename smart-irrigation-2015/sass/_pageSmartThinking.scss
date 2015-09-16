@@ -67,6 +67,17 @@ body.smart-irrigation-2015{
 			margin-top:2em;
 		}
 	}
+	.si-product-list{
+		.inner-content{
+			position:relative;
+			padding-bottom:60px;
+			.button{
+				position:absolute;
+				bottom:0;
+				left:0;
+			}
+		}
+	}
 	.box-section.product-list{
 		text-align:center;
 		.inner-content.hover-item{

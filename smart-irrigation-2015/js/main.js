@@ -3,6 +3,7 @@ $( document ).ready(function() {
 	$('.inspiration-articles .divide-1-3 .inner-content').matchHeight();
 	$('.smart-thinking-articles .divide-1-4 .inner-content').matchHeight();
 	$('.smart-thinking-articles .divide-1-2 .inner-content').matchHeight();
+	$('.si-product-list .divide-1-4 .inner-content').matchHeight();
 
 
 
@@ -65,15 +66,16 @@ $( document ).ready(function() {
 		$parentLi.toggleClass('active');
 		$this.next('.sidebarsubnav').collapse('toggle');
 	})
-
-  matchLoaded();
-  $('#thinking-list').loadMore({
-    url: 'results.php',
-    resultWrap: '#results1',
-    loadBtn: '#load1',
-    sourceTemplate: "#load-template",
-    callback: matchLoaded
-  });
+  if($('#thinking-list').length){
+  	matchLoaded();
+	$('#thinking-list').loadMore({
+		url: 'results.php',
+		resultWrap: '#results1',
+		loadBtn: '#load1',
+		sourceTemplate: "#load-template",
+		callback: matchLoaded
+	});
+  }
 });
 
 function matchLoaded(){

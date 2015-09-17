@@ -1,9 +1,13 @@
-body.smart-irrigation-2015{
-	#main-content{
-		font-size:$base-font-size;
-		line-height:1.2em;
-		font-color:$textGrey;
+body.smart-irrigation-2015 #main-content{
+	 
+	font-size:$base-font-size;
+	line-height:1.2em;
+	font-color:$textGrey;
+	font-weight:200;
+	h1,h2,h3,h4,h5,h6{
+		font-weight:500;
 	}
+
 	.main-heading-section{
 		margin-top:30px;
 	}
@@ -17,7 +21,7 @@ body.smart-irrigation-2015{
 			color:$textGrey;
 			text-decoration:underline;
 		}
-		&:active{
+		&:active,&:focus{
 			text-decoration:none;
 		}
 	}

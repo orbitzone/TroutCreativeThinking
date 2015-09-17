@@ -1,4 +1,4 @@
-body.smart-irrigation-2015{
+body.smart-irrigation-2015 #main-content{
 	.box-section.smart-thinking-articles{
 		font-size:15px;
 		text-align:left;
@@ -65,27 +65,6 @@ body.smart-irrigation-2015{
 	.article-content-section{
 		.text-area{
 			margin-top:2em;
-		}
-	}
-	.si-product-list{
-		.inner-content{
-			position:relative;
-			padding-bottom:60px;
-			h4{
-				color:$textGrey;
-				font-size:22px;
-				line-height:1.2em;
-			}
-			p{
-				color:$textGrey;
-				font-size:15px;
-				line-height:1.2em;
-			}
-			.button{
-				position:absolute;
-				bottom:0;
-				left:0;
-			}
 		}
 	}
 	.box-section.product-list{

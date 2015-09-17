@@ -1,4 +1,4 @@
-body.smart-irrigation-2015{
+body.smart-irrigation-2015 #main-content{
 	.clear{
 		clear:both;
 	}
@@ -95,7 +95,7 @@ body.smart-irrigation-2015{
 			color:$textGrey;
 			@include transition(background 1s ease-in);
 			@include transition(color 1s ease-out);
-			&:hover{
+			&:hover,&:active,&:focus{
 				background:$buttonGrey;
 				color:$white;
 				text-decoration:none;
@@ -108,13 +108,19 @@ body.smart-irrigation-2015{
 			background:$buttonGrey;
 			color:$white;
 			@include transition(background .5s ease-in-out);
-			&:hover{
+			&:hover,&:active,&:focus{
 				background:$buttonGreyhover;
 				color:$white;
 				text-decoration:none;
 				cursor: pointer; 
 				cursor: hand;
 			}
+		}
+		&.button-full-width{
+			width:100%;
+			padding-left:0;
+			padding-right:0;
+			text-align:center;
 		}
 	}
 	.preview-slide-image{

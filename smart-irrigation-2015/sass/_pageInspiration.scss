@@ -74,4 +74,79 @@ body.smart-irrigation-2015 #main-content{
 			}
 		}
 	}
+	.article-content-section{
+		.slick-next{
+			right:20px;
+		}
+		.slick-prev{
+			left:20px;
+		}
+		.article-gallery{
+			.gallery-thumb{
+				margin:20px -10px;
+				.image-wrap{
+					margin:0 10px;
+					img{
+						width:100%;
+					}
+				}
+			}
+		}
+		.inspiration-plans{
+			.display-plans{
+				.view-plan{
+					display:block;
+				}
+				.hide-plan{
+					display:none;
+				}
+				&.active{
+									.view-plan{
+					display:none;
+				}
+				.hide-plan{
+					display:block;
+				}
+
+				}
+			}
+			.plans-wrapper{
+				display:none;
+			}
+		}
+
+	}
+	.inspiration-product-list{
+		border-top:solid 1px $borderGrey;
+		padding-top:30px;
+		margin-top:30px;
+		text-align:center;
+		.text-area{
+			text-align:left;
+			color:$textGrey;
+			display:block;
+			padding:0 15px;
+			h4{
+				font-size:15px;
+				margin:0;
+				text-transform:none;
+			}
+			p{
+				margin:0;
+			}
+		}
+		.inner-content{
+			.text-area{
+				background-color:$white;
+			}
+			&:hover,&:active,&:focus{
+				cursor: pointer; 
+				cursor: hand;	
+				.text-area{
+					color:$textGrey;
+					background-color:$white;
+				}
+			}
+		}
+	}
 }

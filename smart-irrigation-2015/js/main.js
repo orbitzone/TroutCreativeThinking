@@ -4,7 +4,12 @@ $( document ).ready(function() {
 	$('.smart-thinking-articles .divide-1-4 .inner-content').matchHeight();
 	$('.smart-thinking-articles .divide-1-2 .inner-content').matchHeight();
 	$('.si-product-list .divide-1-4 .inner-content').matchHeight();
+	$('.inspiration-product-list .divide-1-4 .inner-content').matchHeight();
 
+	$('.display-plans').click(function(){
+		$('.inspiration-plans .plans-wrapper').slideToggle();
+		$(this).toggleClass("active");
+	});
 
 
 	$('.si-myth-section .one-myth').click(function(){
@@ -27,7 +32,24 @@ $( document ).ready(function() {
 		//hide info-box that doesn't have matching classes inside
 
 	});
-	
+	$('.article-gallery .gallery-main').slick({
+	  infinite: true,
+	  prevArrow: '<span class="fa fa-chevron-left slick-prev"></span>',
+	  nextArrow: '<span class="fa fa-chevron-right slick-next"></span>',
+	  dots: false,
+	  autoplay: false,
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	});
+	$('.article-gallery .gallery-thumb').slick({
+	  infinite: true,
+	  prevArrow: '<span class="fa fa-chevron-left slick-prev"></span>',
+	  nextArrow: '<span class="fa fa-chevron-right slick-next"></span>',
+	  dots: false,
+	  autoplay: false,
+	  slidesToShow: 4,
+	  slidesToScroll: 1,
+	});
 
     $('.slider').slick({
 	  infinite: true,
@@ -49,7 +71,7 @@ $( document ).ready(function() {
 	  dots: true,
 	  fade: true,
 	  arrows: false,
-	  autoplay: true,
+	  autoplay: false,
 	  speed:800	
 	});
 

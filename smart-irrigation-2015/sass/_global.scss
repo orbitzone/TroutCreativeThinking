@@ -116,7 +116,25 @@ body.smart-irrigation-2015 #main-content{
 				cursor: hand;
 			}
 		}
+		&.button-grey{
+			background:$buttonGreyhover;
+			color:$white;
+			@include transition(background .5s ease-in-out);
+			&:hover,&:active,&:focus{
+				background:$buttonGreyLight;
+				color:$white;
+				text-decoration:none;
+				cursor: pointer; 
+				cursor: hand;
+			}
+		}
 		&.button-full-width{
+			width:100%;
+			padding-left:0;
+			padding-right:0;
+			text-align:center;
+		}
+		&.button-half-width{
 			width:100%;
 			padding-left:0;
 			padding-right:0;

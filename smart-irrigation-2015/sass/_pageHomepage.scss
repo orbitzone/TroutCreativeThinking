@@ -158,32 +158,54 @@ body.smart-irrigation-2015 #main-content{
 						margin:0;
 					}
 					.text-area{
+						max-width:100%;
+						float:right;
+						padding:0;
 						.vertical-slider{
+							width:100%;
+							height:470px;
+							padding:0;
 							margin-left:auto;
 							margin-right:auto;
 							.one-slide{
+								height:100%;
 								img{
 									margin-left:auto;
 									margin-right:auto;
 								}
 								&.slide1{
+									padding-top:50px;
+									.forty-percent{
+										padding-bottom:20px;
+									}
+									.fifty-percent{
+										padding-top:20px;
+									}
 									@media (max-width: $break-xs-max) { 
-										padding-top:0;
+										padding-top:30px;
 									}
 								}
 								&.slide2{
-									padding-top:50px;
-									@media (max-width: $break-xs-max) { 
+									padding-top:110px;
+									.hundred-thousand{
 										padding-top:20px;
+										padding-bottom:20px;
+									}
+									@media (max-width: $break-xs-max) { 
+										padding-top:80px;
 									}
 								}
 								&.slide3{
+									padding-top:110px;
+									.two-thirds{
+										padding-bottom:20px;
+									}
 									@media (max-width: $break-xs-max) { 
-										padding-top:0;
+										padding-top:80px;
 									}
 								}
 								&.slide4{
-									padding-top:70px;
+									padding-top:30px;
 									@media (max-width: $break-xs-max) { 
 										padding-top:20px;
 									}
@@ -248,9 +270,6 @@ body.smart-irrigation-2015 #main-content{
 								}
 							}
 						}
-						max-width:100%;
-						float:right;
-						padding-top:10%;
 						@media (min-width: $break-md-min) and (max-width: $break-md-max) { 
 							margin-left:auto;
 							margin-right:auto;

@@ -181,15 +181,24 @@ body.smart-irrigation-2015 #main-content{
 									.fifty-percent{
 										padding-top:20px;
 									}
+									@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
+										padding-top:80px;
+									}
 									@media (max-width: $break-xs-max) { 
-										padding-top:30px;
+										padding-top:50px;
 									}
 								}
 								&.slide2{
-									padding-top:110px;
+									padding-top:85px;
 									.hundred-thousand{
 										padding-top:20px;
 										padding-bottom:20px;
+									}
+									.people{
+										padding-top:20px;
+									}
+									@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
+										padding-top:100px;
 									}
 									@media (max-width: $break-xs-max) { 
 										padding-top:80px;
@@ -200,14 +209,20 @@ body.smart-irrigation-2015 #main-content{
 									.two-thirds{
 										padding-bottom:20px;
 									}
+									@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
+										padding-top:100px;
+									}
 									@media (max-width: $break-xs-max) { 
-										padding-top:80px;
+										padding-top:100px;
 									}
 								}
 								&.slide4{
-									padding-top:30px;
-									@media (max-width: $break-xs-max) { 
+									padding-top:60px;
+									@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
 										padding-top:20px;
+									}
+									@media (max-width: $break-xs-max) { 
+										padding-top:60px;
 									}
 								}
 							}
@@ -260,14 +275,19 @@ body.smart-irrigation-2015 #main-content{
 								font-size:26px;
 								line-height:1.2em;
 								@media (min-width: $break-md-min) and (max-width: $break-md-max) { 
+									font-size:20px;
+									line-height:1.2em;
 								}
 								@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
 								}
 								@media (max-width: $break-xs-max) { 
-									font-size:16px;
+									font-size:20px;
 									line-height:1.2em;
 
 								}
+							}
+							@media (max-width: $break-sm-max) { 
+								height:auto;
 							}
 						}
 						@media (min-width: $break-md-min) and (max-width: $break-md-max) { 

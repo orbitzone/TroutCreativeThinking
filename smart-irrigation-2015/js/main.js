@@ -91,7 +91,7 @@ $( document ).ready(function() {
   if($('#thinking-list').length){
   	matchLoaded();
 	$('#thinking-list').loadMore({
-		url: 'results.php',
+		url: 'article-list.php',
 		resultWrap: '#results1',
 		loadBtn: '#load1',
 		sourceTemplate: "#load-template",

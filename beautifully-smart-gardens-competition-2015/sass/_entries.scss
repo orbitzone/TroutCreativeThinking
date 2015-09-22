@@ -1,0 +1,124 @@
+#bsgc-2015{
+	#entries{
+		h1{
+			text-align: center;
+			color: $green;
+			padding: 60px 0 40px;
+			margin: 0;
+		}
+		#sort-btns {
+			font-weight: 700;
+			margin-bottom: 38px;
+			li{
+				line-height: 46px;
+				margin-right: 10px;
+				&.last{
+					margin-right: 0;
+				}
+				a{
+					font-weight: 700;
+					color: $black;
+					line-height: 46px;
+					padding-top: 0;
+					padding-bottom: 0;
+					@include box-sizing(border-box);
+					&:hover,
+					&:focus{
+						color: $white;
+						background-color: $blue;
+						@include border-radius(1px);
+					}
+					&.active{
+						@include border-radius(1px);
+						background-color: $green;
+						color: $white;
+					}
+				}
+			}
+			.sort-txt{
+				line-height: 46px;		
+			}
+		}
+		#load-more{
+			text-align: center;
+			#load-more-items-btn {
+				letter-spacing: 3.2px;
+				margin: 0 auto;
+				margin-bottom: 40px;
+			}				
+		}
+		#entries-grid {
+			margin-bottom: 0;
+			.mix{
+				display: none;
+				position: relative;
+				height: 320px;
+				overflow: hidden;
+				margin-bottom: 40px;
+				background-color: #7c6955;
+				background-repeat: no-repeat;
+				background-size: cover;
+				.caption{
+					display: block;
+					position: absolute;
+					z-index: 2;
+					bottom: 0;
+					width: 100%;
+					height: 80px;
+					background-color: $green;
+					padding: 20px;
+					@include box-sizing(border-box);
+					h2{
+						margin: 0;
+						color: $white;
+						font-size: 16px;
+						font-weight: 600;					
+						text-transform: uppercase;
+					}
+					h3{
+						margin: 0;
+						color: $white;
+						font-weight: 600;
+						font-size: 16px;
+					}
+					p.fifty-words-description{
+						display: none;
+					}
+				}
+				.overlay{
+					display: block;
+					position: absolute;
+					z-index: 1;
+					width: 100%;
+					height: 100%;
+					background-color: $blue;
+					opacity: 0;
+					filter: alpha(opacity=0);
+					@include transition(all 0.25s linear);
+					padding: 0;
+					margin: 0;
+					span{
+						display: block;
+						width: 130px;
+						height: 30px;
+						text-align: center;
+						line-height: 30px;
+						padding: 0;
+						margin: 400px auto 0 auto;
+						font-size: 16px;
+						color: #ffffff;
+						background-color: transparent;
+						@include transition(all 0.5s ease-in-out)					
+					}
+					&:hover{
+						opacity: 0.75;
+						filter: alpha(opacity=75);
+						span{
+							margin-top: 100px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

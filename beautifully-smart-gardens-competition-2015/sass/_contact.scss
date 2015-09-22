@@ -1,0 +1,13 @@
+#bsgc-2015{
+	section#contact{
+		position: relative;
+		background: url(../img/entry-pattern.jpg) repeat;
+		text-align: center;
+		color: $white;
+		.plant{
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+	}
+}

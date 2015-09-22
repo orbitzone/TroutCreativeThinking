@@ -9,10 +9,16 @@
 		@include box-sizing(border-box);
 		position: relative;
 		z-index: 2;
+		.container{
+			padding: 0;
+			@media (min-width: $screen-md-min){
+				padding: 0 30px;
+			}
+		}
 		#mobile-menu-btn {
 			height: 65px;
 			width: 16px;
-			color: #fdb813;
+			color: $white;
 			background-color: $green;
 			background-image: none;
 			background-image: url('../../assets/images/diy-disasters/mobile-menu-btn.png');
@@ -24,9 +30,6 @@
 			padding-bottom: 0;
 			@include border-radius(0);
 			@include transition(all 0.25s linear);
-			&.collapsed {
-				background-image: url('../../assets/images/diy-disasters/mobile-menu-btn-active.png');
-			}
 			@media (min-width: $screen-md-min){
 				display: none;
 			}

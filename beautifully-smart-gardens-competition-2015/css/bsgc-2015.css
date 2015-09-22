@@ -221,10 +221,20 @@
   z-index: 2;
 }
 /* line 12, ../sass/_top_nav.scss */
+#bsgc-2015 .bsgc-2015-topnav .container {
+  padding: 0;
+}
+@media (min-width: 992px) {
+  /* line 12, ../sass/_top_nav.scss */
+  #bsgc-2015 .bsgc-2015-topnav .container {
+    padding: 0 30px;
+  }
+}
+/* line 18, ../sass/_top_nav.scss */
 #bsgc-2015 .bsgc-2015-topnav #mobile-menu-btn {
   height: 65px;
   width: 16px;
-  color: #fdb813;
+  color: #FFF;
   background-color: #87c818;
   background-image: none;
   background-image: url("../../assets/images/diy-disasters/mobile-menu-btn.png");
@@ -244,22 +254,18 @@
   -o-transition: all 0.25s linear;
   transition: all 0.25s linear;
 }
-/* line 27, ../sass/_top_nav.scss */
-#bsgc-2015 .bsgc-2015-topnav #mobile-menu-btn.collapsed {
-  background-image: url("../../assets/images/diy-disasters/mobile-menu-btn-active.png");
-}
 @media (min-width: 992px) {
-  /* line 12, ../sass/_top_nav.scss */
+  /* line 18, ../sass/_top_nav.scss */
   #bsgc-2015 .bsgc-2015-topnav #mobile-menu-btn {
     display: none;
   }
 }
-/* line 34, ../sass/_top_nav.scss */
+/* line 37, ../sass/_top_nav.scss */
 #bsgc-2015 .bsgc-2015-topnav .nav {
   margin-bottom: 0;
   *zoom: 1;
 }
-/* line 37, ../sass/_top_nav.scss */
+/* line 40, ../sass/_top_nav.scss */
 #bsgc-2015 .bsgc-2015-topnav .nav a {
   display: block;
   float: none;
@@ -278,19 +284,19 @@
   -o-transition: all 0.25s linear;
   transition: all 0.25s linear;
 }
-/* line 51, ../sass/_top_nav.scss */
+/* line 54, ../sass/_top_nav.scss */
 #bsgc-2015 .bsgc-2015-topnav .nav a:hover, #bsgc-2015 .bsgc-2015-topnav .nav a.active {
   text-decoration: none;
   background-color: #5b8726;
 }
 @media (min-width: 992px) {
-  /* line 51, ../sass/_top_nav.scss */
+  /* line 54, ../sass/_top_nav.scss */
   #bsgc-2015 .bsgc-2015-topnav .nav a:hover, #bsgc-2015 .bsgc-2015-topnav .nav a.active {
     background-color: #87c818;
   }
 }
 @media (min-width: 992px) {
-  /* line 37, ../sass/_top_nav.scss */
+  /* line 40, ../sass/_top_nav.scss */
   #bsgc-2015 .bsgc-2015-topnav .nav a {
     display: inline-block;
     float: left;

@@ -13,8 +13,8 @@
 			padding: 30px 0;
 			text-align: center;
 			img{
-				width: 115px;
-				height: 115px;
+				width: 125px;
+				height: 125px;
 			}
 		}
 		#display-filename{
@@ -51,6 +51,23 @@
 			text-align: center;
 			padding: 40px 20px;
 			position: relative;
+			.headline{
+				max-width: 530px;
+				margin: 0 auto;
+				h1{
+					margin-bottom: 45px;
+				}
+				.description{
+					font-weight: 600;
+					font-size: 24px;
+					line-height: 26px;
+					margin-bottom: 50px;
+				}
+				.notes{
+					font-size: 18px;
+					line-height: 20px;
+				}
+			}
 			.separator{
 				height: 1px;
 				max-width: 530px;
@@ -177,10 +194,8 @@
 					width: 215px;
 					height: 118px;
 					margin: 10px auto;
-					background: #000000 url('../../assets/images/diy-disasters/upload-btn-215x118-up.png') 0 0 no-repeat;
-					&:hover{
-						background: #000000 url('../../assets/images/diy-disasters/upload-btn-215x118-over.png') 0 0 no-repeat;	
-					}
+					background: url('../img/attach-image.svg') 0 0 no-repeat;
+					
 				}
 				#inputFile {
 					position: absolute;

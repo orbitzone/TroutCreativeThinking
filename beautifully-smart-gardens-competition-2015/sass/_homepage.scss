@@ -41,12 +41,21 @@
 		.plant-left{
 			position: absolute;
 			top: 0;
-			left: 0;
+			left: -115px;
+			@media (min-width: $screen-sm-min){
+				top: 0;
+				right: 0;
+			}
 		}
 		.plant-right{
 			position: absolute;
-			top: 0;
-			right: 0;
+			bottom: 0;
+			right: -179px;
+			@media (min-width: $screen-sm-min){
+				top: 0;
+				bottom: auto;
+				right: 0;
+			}
 		}
 	}
 	#description{

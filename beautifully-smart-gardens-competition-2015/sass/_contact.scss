@@ -9,9 +9,30 @@
 			top: 0;
 			right: 0;
 			z-index: 0;
+			img{
+				width: 180px;
+				@media (min-width: $screen-sm-min){
+					width: auto;
+				}
+			}
+		}
+		h1{
+			margin: 0;
+			padding: 56px 0 48px;
+		}
+		h3{
+			margin: 0;
+			font-size: 28px;
+			margin-bottom: 20px;
 		}
 		.form-wrap{
 			position: relative;
+		}
+		.form-group{
+			margin-bottom: 50px;			
+		}
+		textarea{
+			height: 133px;
 		}
 	}
 }

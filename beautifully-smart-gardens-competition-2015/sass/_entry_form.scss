@@ -8,6 +8,12 @@
 			position: absolute;
 			top: 0;
 			right: 0;
+			img{
+				width: 160px;
+				@media (min-width: $screen-sm-min){
+					width: auto;
+				}
+			}
 		}
 		.beautifully-logo{
 			padding: 30px 0;

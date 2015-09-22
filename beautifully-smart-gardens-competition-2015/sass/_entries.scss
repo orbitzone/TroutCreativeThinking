@@ -49,6 +49,12 @@
 		}
 		#entries-grid {
 			margin-bottom: 0;
+			.row{
+				margin: 0 0;
+				@media (min-width: $screen-sm-min){
+					margin-left: -30px;
+				}
+			}
 			.mix{
 				display: none;
 				position: relative;

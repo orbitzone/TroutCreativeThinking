@@ -34,5 +34,13 @@
 		textarea{
 			height: 133px;
 		}
+		input,
+		textarea{
+			&.error{
+				border: 1px solid $red !important;
+				background-color: #ddd !important;
+			}
+		}
+		
 	}
 }

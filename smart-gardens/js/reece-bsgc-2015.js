@@ -78,7 +78,10 @@ $(document).ready(function(){
 
 
 			app.entryModal.find('.entryPopImage').slick({
-				slidesToShow: 1
+				slidesToShow: 1,
+				appendArrows: $('#slider-arrows'),
+				prevArrow: "<button type=\"button\" class=\"arrow-prev\"><i class=\"icon icon-angle-left\"></i></button>",
+				nextArrow: "<button type=\"button\" class=\"arrow-next\"><i class=\"icon icon-angle-right\"></i></button>"				 	
 			});
 			
 			// load more items
@@ -139,7 +142,10 @@ $(document).ready(function(){
 					$("#entry-modal .entryPopImage").append('<div class="image"><img src="'+image+'" alt="'+_this.find('h2').text()+'"/></div>');
 				});
 				app.entryModal.find('.entryPopImage').slick({
-					slidesToShow: 1
+					slidesToShow: 1,
+					appendArrows: $('#slider-arrows'),
+					prevArrow: "<button type=\"button\" class=\"arrow-prev\"><i class=\"icon icon-angle-left\"></i></button>",
+					nextArrow: "<button type=\"button\" class=\"arrow-next\"><i class=\"icon icon-angle-right\"></i></button>"
 				});
 				//$("#entry-modal .entryPopImage").css('background-image', prev.style.backgroundImage);
 				
@@ -185,7 +191,10 @@ $(document).ready(function(){
 					$("#entry-modal .entryPopImage").append('<div class="image"><img src="'+image+'" alt="'+_this.find('h2').text()+'"/></div>');
 				});
 				app.entryModal.find('.entryPopImage').slick({
-					slidesToShow: 1
+					slidesToShow: 1,
+					appendArrows: $('#slider-arrows'),
+					prevArrow: "<button type=\"button\" class=\"arrow-prev\"><i class=\"icon icon-angle-left\"></i></button>",
+					nextArrow: "<button type=\"button\" class=\"arrow-next\"><i class=\"icon icon-angle-right\"></i></button>"
 				});
 				
 				// hide overview css
@@ -229,7 +238,10 @@ $(document).ready(function(){
 				$("#entry-modal .entryPopImage").append('<div class="image"><img src="'+image+'" alt="'+_this.find('h2').text()+'"/></div>');
 			});
 			app.entryModal.find('.entryPopImage').slick({
-				slidesToShow: 1
+				slidesToShow: 1,
+				appendArrows: $('#slider-arrows'),
+				prevArrow: "<button type=\"button\" class=\"arrow-prev\"><i class=\"icon icon-angle-left\"></i></button>",
+				nextArrow: "<button type=\"button\" class=\"arrow-next\"><i class=\"icon icon-angle-right\"></i></button>"
 			});
 			
 			//Checks Session storage to show or hide success message and buttons

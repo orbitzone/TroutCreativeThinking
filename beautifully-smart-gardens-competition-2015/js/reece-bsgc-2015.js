@@ -61,7 +61,7 @@ $(document).ready(function(){
 			app.entriesGrid 			= $("#entries-grid");
 			app.sortRecentBtn 			= $("#sort-recent-btn");
 			app.sortViewedBtn 			= $("#sort-viewed-btn");
-			app.entryModal 				= $("#entryModal");
+			app.entryModal 				= $("#entry-modal");
 			app.modalPrevBtn			= $("#modal-prev-btn");
 			app.modalNextBtn			= $("#modal-next-btn");
 			app.loadMoreEntriesBtn		= $("#load-more-items-btn");
@@ -120,18 +120,18 @@ $(document).ready(function(){
 				else prev = app.currentItemsArray[ index - 1 ];
 				
 				// clear modal
-				$("#entryModal .modal-body").html("");
+				$("#entry-modal .modal-body").html("");
 				
 				// load prev item
 				_this = $(prev);
-				$("#entryModal .entryPopTitle").html(_this.find('.caption h3').html());
-				$("#entryModal .entryPopDescription").html(_this.find('.caption p.fifty-words-description').html());
+				$("#entry-modal .entryPopTitle").html(_this.find('.caption h3').html());
+				$("#entry-modal .entryPopDescription").html(_this.find('.caption p.fifty-words-description').html());
 				location.hash = '#'+app.hashPrefix+_this.attr('data-item-id') ;
 
-				$("#entryModal .entryPopImage").css('background-image', prev.style.backgroundImage);
+				$("#entry-modal .entryPopImage").css('background-image', prev.style.backgroundImage);
 				
 				// hide overview css
-				$("#entryModal .modal-body div.overlay").css('display', 'none');
+				$("#entry-modal .modal-body div.overlay").css('display', 'none');
 				
 				// update current item
 				app.currentItemID = prev.getAttribute('data-item-id');
@@ -155,18 +155,18 @@ $(document).ready(function(){
 				else next = app.currentItemsArray[ index + 1 ];
 				
 				// clear modal
-				$("#entryModal .modal-body").html("");
+				$("#entry-modal .modal-body").html("");
 				
 				// load next item
 				_this = $(next);
 
-				$("#entryModal .entryPopTitle").html(_this.find('.caption h3').html());
-				$("#entryModal .entryPopDescription").html(_this.find('.caption p.fifty-words-description').html());
+				$("#entry-modal .entryPopTitle").html(_this.find('.caption h3').html());
+				$("#entry-modal .entryPopDescription").html(_this.find('.caption p.fifty-words-description').html());
 				location.hash = '#'+app.hashPrefix+_this.attr('data-item-id') ;
-				$("#entryModal .entryPopImage").css('background-image', next.style.backgroundImage);
+				$("#entry-modal .entryPopImage").css('background-image', next.style.backgroundImage);
 				
 				// hide overview css
-				$("#entryModal .modal-body div.overlay").css('display', 'none');
+				$("#entry-modal .modal-body div.overlay").css('display', 'none');
 				
 				// update current item
 				app.currentItemID = next.getAttribute('data-item-id');
@@ -197,24 +197,24 @@ $(document).ready(function(){
 			app.currentItemID = _this.attr('data-item-id');
 			
 			// reset
-			$("#entryModal .modal-body").html("");
+			$("#entry-modal .modal-body").html("");
 			
 			// img
 			var imgSrc = _this.css('background-image');
-			$("#entryModal .entryPopImage").css('background-image', imgSrc);
+			$("#entry-modal .entryPopImage").css('background-image', imgSrc);
 			//Checks Session storage to show or hide success message and buttons
 			if(sessionStorage.entrySubmitted){
-				$("#entryModal .entryPopButtons").hide();
-				$("#entryModal .entryPopSuccessMessage").show();
+				$("#entry-modal .entryPopButtons").hide();
+				$("#entry-modal .entryPopSuccessMessage").show();
 			}
 			else{
-				$("#entryModal .entryPopButtons").show();
-				$("#entryModal .entryPopSuccessMessage").hide();
+				$("#entry-modal .entryPopButtons").show();
+				$("#entry-modal .entryPopSuccessMessage").hide();
 			}
 			sessionStorage.clear();
 			// set
-			$("#entryModal .entryPopTitle").html(_this.find('.caption h3').html());
-			$("#entryModal .entryPopDescription").html(_this.find('.caption p.fifty-words-description').html());
+			$("#entry-modal .entryPopTitle").html(_this.find('.caption h3').html());
+			$("#entry-modal .entryPopDescription").html(_this.find('.caption p.fifty-words-description').html());
 			location.hash = '#'+app.hashPrefix+_this.attr('data-item-id') ;
 			
 			// show

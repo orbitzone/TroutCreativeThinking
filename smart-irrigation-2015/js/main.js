@@ -45,10 +45,10 @@ $( document ).ready(function() {
     nextArrow: '<span class="fa fa-chevron-right slick-next"></span>',
     dots: false,
     autoplay: false,
-    centerMode: true,
+    centerMode: false,
     slidesToShow: 4,
     slidesToScroll: 2,
-    focusOnSelect: true
+    focusOnSelect: false
   });
 
   $('.slider').slick({

@@ -6,9 +6,9 @@
       "link"=>"inspiration-article1.html",
       "text"=>"Victoria",
       "thumbnaillist"=>array(
-        "../images/inspiration/article-image1.png",
-        "../images/inspiration/article-image2.png",
-        "../images/inspiration/article-image3.png"
+        "../images/inspiration/thumbs/article-image1.png",
+        "../images/inspiration/thumbs/article-image2.png",
+        "../images/inspiration/thumbs/article-image3.png"
       )
     ),
     array(
@@ -16,10 +16,10 @@
       "link"=>"inspiration-article2.html",
       "text"=>"New South Wales",
       "thumbnaillist"=>array(
-        "../images/inspiration/article-image4.png",
-        "../images/inspiration/article-image5.png",
-        "../images/inspiration/article-image6.png",
-        "../images/inspiration/article-image7.png"
+        "../images/inspiration/thumbs/article-image4.png",
+        "../images/inspiration/thumbs/article-image5.png",
+        "../images/inspiration/thumbs/article-image6.png",
+        "../images/inspiration/thumbs/article-image7.png"
       )    
     ),
     array(
@@ -27,9 +27,9 @@
       "link"=>"inspiration-article3.html",
       "text"=>"Queensland",
       "thumbnaillist"=>array(
-        "../images/inspiration/article-image7.png",
-        "../images/inspiration/article-image8.png",
-        "../images/inspiration/article-image9.png"
+        "../images/inspiration/thumbs/article-image7.png",
+        "../images/inspiration/thumbs/article-image8.png",
+        "../images/inspiration/thumbs/article-image9.png"
       )    
     ),
     array(
@@ -37,9 +37,9 @@
       "link"=>"inspiration-article4.html",
       "text"=>"South Australia",
       "thumbnaillist"=>array(
-        "../images/inspiration/article-image10.png",
-        "../images/inspiration/article-image11.png",
-        "../images/inspiration/article-image12.png"
+        "../images/inspiration/thumbs/article-image10.png",
+        "../images/inspiration/thumbs/article-image11.png",
+        "../images/inspiration/thumbs/article-image12.png"
       )    
     ),
     array(
@@ -47,12 +47,12 @@
       "link"=>"inspiration-article5.html",
       "text"=>"Western Australia",
       "thumbnaillist"=>array(
-        "../images/inspiration/article-image2.png",
-        "../images/inspiration/article-image4.png",
-        "../images/inspiration/article-image6.png",
-        "../images/inspiration/article-image3.png",
-        "../images/inspiration/article-image4.png",
-        "../images/inspiration/article-image12.png"
+        "../images/inspiration/thumbs/article-image2.png",
+        "../images/inspiration/thumbs/article-image4.png",
+        "../images/inspiration/thumbs/article-image6.png",
+        "../images/inspiration/thumbs/article-image3.png",
+        "../images/inspiration/thumbs/article-image4.png",
+        "../images/inspiration/thumbs/article-image12.png"
       )   
     ),
     array(
@@ -60,9 +60,9 @@
       "link"=>"inspiration-article6.html",
       "text"=>"Tasmania",
       "thumbnaillist"=>array(
-        "../images/inspiration/article-image5.png",
-        "../images/inspiration/article-image7.png",
-        "../images/inspiration/article-image9.png"
+        "../images/inspiration/thumbs/article-image5.png",
+        "../images/inspiration/thumbs/article-image7.png",
+        "../images/inspiration/thumbs/article-image9.png"
       )    
     ),
   );

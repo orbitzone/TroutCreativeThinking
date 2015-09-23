@@ -38,7 +38,9 @@ $(document).ready(function(){
 		// ---------------------------- INIT ---------- //
 		init: function()
 		{
-			
+			if($('.sunflower').length > 0){
+				$('.sunflower').addClass('grow');				
+			}
 			// entry form page?
 			if($("#entry-form").length > 0) app.initEntryForm();
 			

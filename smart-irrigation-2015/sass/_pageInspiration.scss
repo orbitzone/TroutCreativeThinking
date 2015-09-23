@@ -202,7 +202,7 @@ body.smart-irrigation-2015 #main-content{
 					margin-top:30px;
 					margin-bottom:30px;
 					@media (max-width: $break-md-max) { 
-						width:80%;
+						width:90%;
 						float:none;
 						margin-left:auto;
 						margin-right:auto;
@@ -216,10 +216,11 @@ body.smart-irrigation-2015 #main-content{
 				@media (min-width: $break-sm-min) and (max-width: $break-sm-max) { 
 					width:33.3333%;
 					float:left;
+					text-align:center;
 				}
 				@media (max-width: $break-xs-max) { 
 					width:100%;
-					float:none;;
+					float:none;
 				}
 			}
 		}

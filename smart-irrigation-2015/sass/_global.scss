@@ -17,6 +17,12 @@ body.smart-irrigation-2015 #main-content{
 	.text-black{
 		color:$textGrey;
 	}
+	.slick-next{
+		z-index: 100;
+	}
+	.slick-prev{
+		z-index: 100;
+	}
 	.background-white{
 		background-color:$white;
 		color:$textGrey;

@@ -103,7 +103,7 @@ body.smart-irrigation-2015 #main-content{
 						position:absolute;
 						top:0;
 						left:0;
-						opacity:0;
+						@include transparent;
 						@include transition(opacity .5s ease-in-out);
 					}
 					.one-myth-footer{
@@ -124,7 +124,7 @@ body.smart-irrigation-2015 #main-content{
 					}
 					&:hover,&.active{
 						.myth-overlay{
-							opacity:.2;
+							@include opacity-slight;
 						}
 					}
 					&.active{
@@ -327,7 +327,7 @@ body.smart-irrigation-2015 #main-content{
 					top:0;
 					left:0;
 					background-color:$bgGrey;
-					opacity: 0;
+					@include transparent;
 					@include transition(opacity .3s ease-out);
 				}
 			}
@@ -340,7 +340,7 @@ body.smart-irrigation-2015 #main-content{
 				cursor: hand;	
 				.hoveroverlay{
 					.grey-overlay{
-						opacity: 0;
+						@include transparent;
 					}
 				}
 				.text-area{

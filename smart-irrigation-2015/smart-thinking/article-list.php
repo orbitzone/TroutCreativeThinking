@@ -35,7 +35,6 @@
       "text"=>"Lorem ipsum dolor sit amet, voluptatum iure vero odit sunt sequi!",
       "thumbnail"=>"../images/smart-thinking/article2.png",
       "garden-design"=>"As category",
-      "irrigation"=>"As category",
       "products"=>"As category"
 
     ),
@@ -50,7 +49,7 @@
 
     ),
   );
-  //shuffle($results);
+  
   (isset($_REQUEST['start']))?$start = $_REQUEST['start'] : $start = 0;
   $remaining = ',"remaining":"10"';
   if($start >= 10){

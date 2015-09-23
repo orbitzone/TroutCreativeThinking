@@ -138,58 +138,90 @@
             <div class="section-row">
               <div class="divide-1-1">
                 <div class="inner-content">
-                  <h1>Smart Thinking</h1>
+                  <h1>Inspiration</h1>
                 </div>
               </div>
               <div class="clear"></div>
             </div>
           </div>
           <div class="section-row content-with-sidebar">
-            <div class="content-left-withsidebar content-withsidebar">
-              <div id="thinking-list" class="smart-thinking-articles box-section">
-                <div id="results-thinking" class="section-row match-height">
+
+            <div class="content-right-withsidebar content-withsidebar">
+              <div id="inspiration-list" class="inspiration-articles box-section">
+                <div class="section-row">
+
+
+                <div id="results-inspiration" class="section-row match-height">
                 </div>
+
+
                 <div class="section-row">
                   <div class="divide-1-1 text-center inner-spacing-bottom">
-                    <a id="load-thinking" href="#" class="button button-dark">Load more</a>
+                    <a id="load-inspiration" href="#" class="button button-dark">Load more</a>
                   </div>
-                  <script id="load-template" type="text/x-handlebars-template">
-                    {{#each results}}
-                    {{#if garden-design}}
-                    <div class="divide-1-3">
-                      <div class="inner-content hover-item background-white">
-                        <a href="{{link}}">
-                          <div class="hoveroverlay">
-                            <div class="grey-overlay"></div>
-                            <img src="{{thumbnail}}">
+<script id="load-template" type="text/x-handlebars-template">
+{{#each results}}
+                  <div class="divide-1-3">
+                    <div class="inner-content hover-item background-white">
+                      <div class="hoveroverlay">
+                        <div class="grey-overlay"></div>
+                        <div class="image-area preview-slide-image">
+                        {{#each thumbnaillist}}
+                          <div>
+                            <a href="{{../link}}">
+                              <img src="{{this}}">
+                            </a>
                           </div>
-                          <span class="text-area">
-                            <h4>{{title}}</h4>    
-                            <p>{{text}}</p>
-                            <span class="call-to-action">Read more</span>
-                          </span>
-                        </a>
+                        {{/each}}
+
+
+
+                        </div>
                       </div>
+                      <a href="inspiration-article.html">
+                        <span class="text-area">
+                          <h4>{{title}}</h4>    
+                          <p>{{text}}</p>
+                        </span>
+                      </a>
                     </div>
-                    {{/if}}
-                    {{/each}}
-                  </script>
+                  </div>
+{{/each}}
+ </script>
+                  <div class="clear"></div>
+                </div>
+
+
+
+
+
+
+
+
+                  
+                  
                   <div class="clear"></div>
                 </div>
               </div>
             </div>
-            <aside class="sidebar-right sidebar">
-              <div class="button-wrapper">
-                <a href="index.html" class="button button-dark">View all articles</a>
-              </div>
+            <aside class="sidebar-left sidebar">
               <div class="inner-content">
                 <h4>Categories</h4>
-                <ul class="sidebarnav">
-                  <li><a href="garden-designs.html" class="active">Garden Design</a>
+                <ul class="filterList">
+                  <li>
+                    <label class="checkbox"><input type="checkbox" value="item 1">Filter item 1</label>
                   </li>
-                  <li><a href="irrigation.html">Irrigation</a>
+                  <li>
+                    <label class="checkbox"><input type="checkbox" value="item 2">Filter item 2</label>
                   </li>
-                  <li><a href="products.html">Products</a>
+                  <li>
+                    <label class="checkbox"><input type="checkbox" value="item 3">Filter item 3</label>
+                  </li>
+                  <li>
+                    <label class="checkbox"><input type="checkbox" value="item 4">Filter item 4</label>
+                  </li>
+                  <li>
+                    <label class="checkbox"><input type="checkbox" value="item 5">Filter item 5</label>
                   </li>
                 </ul>
               </div>

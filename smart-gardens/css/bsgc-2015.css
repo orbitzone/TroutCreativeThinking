@@ -717,11 +717,11 @@
   position: absolute;
   right: 0;
   bottom: -12px;
-  -webkit-transition: all 1s ease-out;
-  -moz-transition: all 1s ease-out;
-  -ms-transition: all 1s ease-out;
-  -o-transition: all 1s ease-out;
-  transition: all 1s ease-out;
+  -webkit-transition: all 0.8s ease-out;
+  -moz-transition: all 0.8s ease-out;
+  -ms-transition: all 0.8s ease-out;
+  -o-transition: all 0.8s ease-out;
+  transition: all 0.8s ease-out;
   -webkit-transform: scale(0);
   -moz-transform: scale(0);
   -ms-transform: scale(0);
@@ -773,11 +773,11 @@
 /* line 123, ../sass/_homepage.scss */
 #bsgc-2015 #description .sunflowers .sunflower.md {
   right: 0;
-  -webkit-transition: all 0.8s ease-out;
-  -moz-transition: all 0.8s ease-out;
-  -ms-transition: all 0.8s ease-out;
-  -o-transition: all 0.8s ease-out;
-  transition: all 0.8s ease-out;
+  -webkit-transition: all 0.65s ease-out;
+  -moz-transition: all 0.65s ease-out;
+  -ms-transition: all 0.65s ease-out;
+  -o-transition: all 0.65s ease-out;
+  transition: all 0.65s ease-out;
 }
 @media (min-width: 768px) {
   /* line 123, ../sass/_homepage.scss */

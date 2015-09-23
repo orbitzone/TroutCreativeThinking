@@ -47,7 +47,7 @@ body.smart-irrigation-2015 #main-content{
 					top:0;
 					left:0;
 					background-color:$bgGrey;
-					opacity: 0;
+					@include transparent;
 					@include transition(opacity .3s ease-out);
 				}
 			}
@@ -83,7 +83,7 @@ body.smart-irrigation-2015 #main-content{
 		}
 		.article-gallery{
 			.gallery-thumb{
-				margin:20px -10px;
+				margin:20px 0px;
 				.image-wrap{
 					margin:0 10px;
 					img{

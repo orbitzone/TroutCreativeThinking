@@ -44,7 +44,7 @@ body.smart-irrigation-2015 #main-content{
 					top:0;
 					left:0;
 					background-color:$bgLightGreen;
-					opacity: 0;
+					@include transparent;
 					@include transition(opacity .3s ease-out);
 				}
 			}

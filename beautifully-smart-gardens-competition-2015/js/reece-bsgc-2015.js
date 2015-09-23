@@ -44,6 +44,8 @@ $(document).ready(function(){
 			
 			// sort grid?
 			if($("#entries-grid").length > 0) app.initEntriesGrid();
+
+			if($("#contact").length > 0) app.initContact();
 			
 		},
 		
@@ -480,7 +482,9 @@ $(document).ready(function(){
 			
 		},
 		
-		
+		initContact: function(){
+			$('#contact form').validate();
+		},
 		
 		/*
 		 * @clearFileUpload

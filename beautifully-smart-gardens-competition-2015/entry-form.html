@@ -122,12 +122,12 @@
 									</div>
 
 									<div class="fifty-words form-group">
-										<textarea id="inputWords" name="inputWords" class="required" rows="5" placeholder="In 100 words or less, tell us about your ideas and the smart irrigation products you have installed in this garden."></textarea>
+										<textarea id="inputWords" name="inputWords" class="required" rows="3" placeholder="In 100 words or less, tell us about your ideas and the smart irrigation products you have installed in this garden."></textarea>
 									</div>
 
 									<div class="details form-group">
 										<h3>Details</h3>
-										<input class="form-control required" type="text" id="inputName" name="inputName" maxlength="60" placeholder="Enter Your Full Name">
+										<input class="form-control required" type="text" id="inputName" name="inputName" maxlength="60" placeholder="Enter Full Name">
 										<select id="inputState" name="inputState" class="form-control form-select">
 											<option value="Select STATE">Select STATE</option>
 											<option value="NSW">NSW</option>
@@ -138,7 +138,7 @@
 											<option value="VIC">VIC</option>
 											<option value="WA">WA</option>
 										</select>
-										<input class="form-control required numbersOnly" type="tel" id="inputAccount" name="inputAccount" maxlength="20" placeholder="Enter Your Reece Account Number">
+										<input class="form-control required numbersOnly" type="tel" id="inputAccount" name="inputAccount" maxlength="20" placeholder="Enter Reece Account Number">
 									</div>
 
 									<div id="upload-animation" style="display:none;">
@@ -146,10 +146,30 @@
 									</div>
 
 									<div class="share-submit form-group">
-										<span>SHARE:</span>
-										<a class="inactive" href="#"><img src="img/facebook.svg" alt="Facebook"/></a>
-										<a class="inactive" href="#"><img src="img/twitter.svg" alt="Twitter"/></a>
-										<button id="entryform-submit-btn" class="btn white" name="submit" type="submit">Upload</button>
+									<ul class="inline">
+										<li><span>Share:</span></li>
+										<li><a class="inactive facebook" href="#"><svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<path fill="#FFFFFF" d="M50,2.5C23.8,2.5,2.5,23.8,2.5,50S23.8,97.5,50,97.5c26.2,0,47.5-21.3,47.5-47.5S76.2,2.5,50,2.5z
+	 M68.1,26.7l-6.6,0c-5.2,0-6.1,2.4-6.1,6v7.9h12.3l0,12.4H55.4v31.8H42.6V53.1H31.9V40.7h10.7v-9.1c0-10.6,6.5-16.4,16-16.4l9.6,0
+	V26.7L68.1,26.7z"/>
+</svg></a></li>
+										<li><a class="inactive twitter" href="#">
+											<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="95px" height="95px" viewBox="2.5 2.5 95 95" enable-background="new 2.5 2.5 95 95" xml:space="preserve">
+<path fill="#FFFFFF" d="M50,2.5C23.8,2.5,2.5,23.8,2.5,50S23.8,97.5,50,97.5S97.5,76.2,97.5,50C97.5,23.8,76.2,2.5,50,2.5z
+	 M73.6,39.3l0,1.5c0,15.5-11.8,33.3-33.3,33.3c-6.6,0-12.7-1.9-17.9-5.3c0.9,0.1,1.8,0.2,2.8,0.2c5.5,0,10.5-1.9,14.5-5
+	c-5.1-0.1-9.4-3.5-10.9-8.1c0.7,0.1,1.4,0.2,2.2,0.2c1.1,0,2.1-0.1,3.1-0.4c-5.4-1.1-9.4-5.8-9.4-11.5v-0.2c1.6,0.9,3.4,1.4,5.3,1.5
+	c-3.1-2.1-5.2-5.7-5.2-9.7c0-2.1,0.6-4.1,1.6-5.9c5.8,7.1,14.4,11.7,24.1,12.2c-0.2-0.9-0.3-1.8-0.3-2.7c0-6.5,5.2-11.7,11.7-11.7
+	c3.4,0,6.4,1.4,8.5,3.7c2.7-0.5,5.2-1.5,7.4-2.8c-0.9,2.7-2.7,5-5.1,6.5c2.4-0.3,4.6-0.9,6.7-1.8C77.9,35.6,75.9,37.7,73.6,39.3z"/>
+</svg>
+										</a></li>
+										<li><button id="entryform-submit-btn" class="btn white" name="submit" type="submit">Upload</button></li>
+									</ul>
+										
+										
+										
+										
 									</div>
 
 								</form><!-- end ENTRY FORM -->
@@ -158,11 +178,11 @@
 								<div class="formResultSuccess">
 									<h5>Your entry has successfully completed.</h5>
 									<!--<p>Note that video entries may not appear on the site for up to 5 minutes.</p>-->
-									<a class="btn btn-large btn-yellow" href="entries.html">Click here to view all the entries</a>
+									<a class="btn white" href="entries.html">Click here to view all the entries</a>
 								</div>
 								<div class="formResultError">
 									<p>Server error. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-									<a class="btn btn-large btn-yellow" href="entry-form.html">Try again</a>
+									<a class="btn white" href="entry-form.html">Try again</a>
 								</div>
 								<div class="separator"></div>
 								<div class="note">

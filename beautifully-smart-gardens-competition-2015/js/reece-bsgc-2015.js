@@ -247,8 +247,8 @@ $(document).ready(function(){
 			app.uploadBtn 				= $("#upload-btn");
 			app.inputState 				= $('#inputState');
 			app.inputWords 				= $('#inputWords');
-			app.shareFBbtn				= $("#share-fb-btn");
-			app.shareTWbtn				= $("#share-tw-btn");
+			app.shareFBbtn				= $(".share-submit .facebook");
+			app.shareTWbtn				= $(".share-submit .twitter");
 			app.uploadAnimation			= $("#upload-animation");
 			
 			// form submit
@@ -339,20 +339,16 @@ $(document).ready(function(){
 								
 								if(app.fileType != "invalid")
 								{
-									if(app.fileType == "video"){
-										app.displayFilename.append( '<div><img src="../../assets/images/diy-disasters/filetype-video.png" /><span>' + app.fileName + '</span><a class="remove-file" href="#"></a></div>' );
-									} 
-									else{
 										console.log(app.fileName);
-										app.displayFilename.append( '<div><img src="../../assets/images/diy-disasters/filetype-image.png" /><span>' + app.fileName + '</span><a class="remove-file" data-num="'+num+'" href="#"></a></div>' );
+										app.displayFilename.append( '<div class="file"><span>' + app.fileName + '</span><a class="remove-file" data-num="'+num+'" href="#"></a></div>' );
 					        	$(".remove-file").on('click', function(e){
 											e.preventDefault();
 											// clear file names
 											var num = $(this).data('num');
-											//app.displayFilename.empty();
-											//app.clearFileUpload();
+											app.displayFilename.empty();
+											app.clearFileUpload();
 										});
-									} 
+									 
 								}
 								else
 								{

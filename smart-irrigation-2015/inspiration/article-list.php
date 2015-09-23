@@ -18,7 +18,8 @@
       "thumbnaillist"=>array(
         "../images/inspiration/article-image4.png",
         "../images/inspiration/article-image5.png",
-        "../images/inspiration/article-image6.png"
+        "../images/inspiration/article-image6.png",
+        "../images/inspiration/article-image7.png"
       )    
     ),
     array(
@@ -33,7 +34,7 @@
     ),
     array(
       "title"=>"Lorem ipsum dolor",
-      "link"=>"inspiration-article1.html",
+      "link"=>"inspiration-article4.html",
       "text"=>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quam magnam iure! Neque id, sunt.",
       "thumbnaillist"=>array(
         "../images/inspiration/article-image10.png",
@@ -43,22 +44,25 @@
     ),
     array(
       "title"=>"dolor sit amet",
-      "link"=>"inspiration-article2.html",
+      "link"=>"inspiration-article5.html",
       "text"=>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic delectus repellendus in ea quam iste, unde voluptatem.",
       "thumbnaillist"=>array(
+        "../images/inspiration/article-image2.png",
+        "../images/inspiration/article-image4.png",
+        "../images/inspiration/article-image6.png",
         "../images/inspiration/article-image3.png",
         "../images/inspiration/article-image4.png",
-        "../images/inspiration/article-image5.png"
+        "../images/inspiration/article-image12.png"
       )   
     ),
     array(
       "title"=>"consectetur adipisicing elit",
-      "link"=>"inspiration-article3.html",
+      "link"=>"inspiration-article6.html",
       "text"=>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam incidunt, numquam odit doloribus blanditiis iste, libero consequatur.",
       "thumbnaillist"=>array(
-        "../images/inspiration/article-image8.png",
         "../images/inspiration/article-image5.png",
-        "../images/inspiration/article-image2.png"
+        "../images/inspiration/article-image7.png",
+        "../images/inspiration/article-image9.png"
       )    
     ),
   );

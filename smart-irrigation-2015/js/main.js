@@ -45,7 +45,7 @@ $( document ).ready(function() {
     nextArrow: '<span class="fa fa-chevron-right slick-next"></span>',
     dots: false,
     autoplay: false,
-    centerMode: false,
+    centerMode: true,
     slidesToShow: 4,
     slidesToScroll: 2,
     focusOnSelect: true

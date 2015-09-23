@@ -12,6 +12,15 @@ body.smart-irrigation-2015 #main-content{
 		h1{
 			font-size:32px;
 		}
+		h1.limited-width{
+			max-width:60%;
+			@media (min-width: $break-md-min) and (max-width: $break-md-max) { 
+				max-width:80%;
+			}
+			@media (max-width: $break-sm-max) { 
+				max-width:100%;
+			}
+		}
 	}
 	h3{
 		font-size:32px;

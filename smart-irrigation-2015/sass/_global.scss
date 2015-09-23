@@ -23,6 +23,16 @@ body.smart-irrigation-2015 #main-content{
 	.slick-prev{
 		z-index: 100;
 	}
+
+	.large-icon{
+		line-height:40px;
+		&:before{
+			font-size:40px;
+			line-height:40px;
+			position:relative;
+			top:-10px;
+		}
+	}
 	.background-white{
 		background-color:$white;
 		color:$textGrey;

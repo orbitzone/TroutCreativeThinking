@@ -31,8 +31,8 @@ $( document ).ready(function() {
   });
   $('.article-gallery .gallery-main').slick({
     infinite: true,
-    prevArrow: '<span class="fa fa-chevron-left slick-prev"></span>',
-    nextArrow: '<span class="fa fa-chevron-right slick-next"></span>',
+    prevArrow: '<span class="fa fa-chevron-left slick-prev large-icon"></span>',
+    nextArrow: '<span class="fa fa-chevron-right slick-next large-icon"></span>',
     dots: false,
     autoplay: false,
     slidesToShow: 1,
@@ -45,16 +45,16 @@ $( document ).ready(function() {
     nextArrow: '<span class="fa fa-chevron-right slick-next"></span>',
     dots: false,
     autoplay: false,
-    centerMode: true,
+    centerMode: false,
     slidesToShow: 4,
     slidesToScroll: 4,
-    focusOnSelect: true
+    focusOnSelect: false
   });
 
   $('.slider').slick({
     infinite: true,
-    prevArrow: '<span class="fa fa-chevron-left slick-prev"></span>',
-    nextArrow: '<span class="fa fa-chevron-right slick-next"></span>',
+    prevArrow: '<span class="fa fa-chevron-left slick-prev large-icon"></span>',
+    nextArrow: '<span class="fa fa-chevron-right slick-next large-icon"></span>',
     dots: true,
     autoplay: true,
     responsive: [
@@ -124,19 +124,18 @@ function postLoadThinking(){
 }
 
 function postLoadInspiration(){
-
-  // $('.match-height img').load(function(){
-  // });
-
-$('.preview-slide-image img').load(function(){
-  $('.preview-slide-image').slick({
-    dots: false,
-    arrows: true,
-    autoplay: false
+  $('.match-height img').load(function(){
+      $('.match-height .divide-1-3').matchHeight();
   });
-  $('.match-height .divide-1-3').matchHeight();
-});
 
-
-
+  $('.slide-thumbnail img').load(function(){
+      $('.slide-thumbnail.new-slide').slick({
+        dots: false,
+        arrows: true,
+        autoplay: false,
+        prevArrow: '<span class="fa fa-chevron-left slick-prev"></span>',
+        nextArrow: '<span class="fa fa-chevron-right slick-next"></span>'
+      });
+      $('.slide-thumbnail.new-slide').removeClass("new-slide");
+  });
 }

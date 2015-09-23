@@ -124,21 +124,18 @@ function postLoadThinking(){
 }
 
 function postLoadInspiration(){
-
-  // $('.match-height img').load(function(){
-  // });
-
-$('.slide-thumbnail img').load(function(){
-  $('.slide-thumbnail').slick({
-    dots: false,
-    arrows: true,
-    autoplay: false,
-    prevArrow: '<span class="fa fa-chevron-left slick-prev"></span>',
-    nextArrow: '<span class="fa fa-chevron-right slick-next"></span>'
+  $('.match-height img').load(function(){
+      $('.match-height .divide-1-3').matchHeight();
   });
-  $('.match-height .divide-1-3').matchHeight();
-});
 
-
-
+  $('.slide-thumbnail img').load(function(){
+      $('.slide-thumbnail.new-slide').slick({
+        dots: false,
+        arrows: true,
+        autoplay: false,
+        prevArrow: '<span class="fa fa-chevron-left slick-prev"></span>',
+        nextArrow: '<span class="fa fa-chevron-right slick-next"></span>'
+      });
+      $('.slide-thumbnail.new-slide').removeClass("new-slide");
+  });
 }

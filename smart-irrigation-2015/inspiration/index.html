@@ -159,35 +159,35 @@
                   <div class="divide-1-1 text-center inner-spacing-bottom">
                     <a id="load-inspiration" href="#" class="button button-dark">Load more</a>
                   </div>
-<script id="load-template" type="text/x-handlebars-template">
-{{#each results}}
-                  <div class="divide-1-3">
-                    <div class="inner-content hover-item background-white">
-                      <div class="hoveroverlay">
-                        <div class="grey-overlay"></div>
-                        <div class="image-area slide-thumbnail">
-                        {{#each thumbnaillist}}
-                          <div>
-                            <a href="{{../link}}">
-                              <img src="{{this}}">
-                            </a>
+                  <script id="load-template" type="text/x-handlebars-template">
+                  {{#each results}}
+                    <div class="divide-1-3">
+                      <div class="inner-content hover-item background-white">
+                        <div class="hoveroverlay">
+                          <div class="grey-overlay"></div>
+                          <div class="image-area slide-thumbnail new-slide">
+                          {{#each thumbnaillist}}
+                            <div>
+                              <a href="{{../link}}">
+                                <img src="{{this}}">
+                              </a>
+                            </div>
+                          {{/each}}
+
+
+
                           </div>
-                        {{/each}}
-
-
-
                         </div>
+                        <a href="inspiration-article.html">
+                          <span class="text-area">
+                            <h4>{{title}}</h4>    
+                            <p>{{text}}</p>
+                          </span>
+                        </a>
                       </div>
-                      <a href="inspiration-article.html">
-                        <span class="text-area">
-                          <h4>{{title}}</h4>    
-                          <p>{{text}}</p>
-                        </span>
-                      </a>
                     </div>
-                  </div>
-{{/each}}
- </script>
+                  {{/each}}
+                  </script>
                   <div class="clear"></div>
                 </div>
 

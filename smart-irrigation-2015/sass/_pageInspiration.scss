@@ -60,7 +60,7 @@ body.smart-irrigation-2015 #main-content{
 				cursor: hand;	
 				.hoveroverlay{
 					.grey-overlay{
-						opacity: .2;
+						@include opacity-slight;
 					}
 				}
 				.text-area{

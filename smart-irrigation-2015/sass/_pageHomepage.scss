@@ -57,7 +57,7 @@ body.smart-irrigation-2015 #main-content{
 				cursor: hand;	
 				.hoveroverlay{
 					.green-overlay{
-						opacity: .5;
+						@include opacity-half;
 					}
 				}
 				.text-area{
@@ -108,6 +108,7 @@ body.smart-irrigation-2015 #main-content{
 				background-position:bottom;
 				.inner-content{
 					float:right;
+					width:100%;
 					padding-top:50px;
 					padding-bottom:50px;
 					.text-area{

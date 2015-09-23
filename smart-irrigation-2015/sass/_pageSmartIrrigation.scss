@@ -124,7 +124,7 @@ body.smart-irrigation-2015 #main-content{
 					}
 					&:hover,&.active{
 						.myth-overlay{
-							opacity:.2;
+							@include opacity-slight;
 						}
 					}
 					&.active{

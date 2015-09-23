@@ -4,7 +4,7 @@
     array(
       "title"=>"Garden title 1",
       "link"=>"inspiration-article1.html",
-      "text"=>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque quos, omnis delectus voluptatibus corporis perspiciatis culpa alias expedita voluptatum doloribus.",
+      "text"=>"Victoria",
       "thumbnaillist"=>array(
         "../images/inspiration/article-image1.png",
         "../images/inspiration/article-image2.png",
@@ -14,7 +14,7 @@
     array(
       "title"=>"Garden title 2",
       "link"=>"inspiration-article2.html",
-      "text"=>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis deserunt, adipisci et!",
+      "text"=>"New South Wales",
       "thumbnaillist"=>array(
         "../images/inspiration/article-image4.png",
         "../images/inspiration/article-image5.png",
@@ -25,7 +25,7 @@
     array(
       "title"=>"Garden title 3",
       "link"=>"inspiration-article3.html",
-      "text"=>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam perspiciatis, eligendi fugiat. Debitis maiores repudiandae perferendis.",
+      "text"=>"Queensland",
       "thumbnaillist"=>array(
         "../images/inspiration/article-image7.png",
         "../images/inspiration/article-image8.png",
@@ -35,7 +35,7 @@
     array(
       "title"=>"Lorem ipsum dolor",
       "link"=>"inspiration-article4.html",
-      "text"=>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quam magnam iure! Neque id, sunt.",
+      "text"=>"South Australia",
       "thumbnaillist"=>array(
         "../images/inspiration/article-image10.png",
         "../images/inspiration/article-image11.png",
@@ -45,7 +45,7 @@
     array(
       "title"=>"dolor sit amet",
       "link"=>"inspiration-article5.html",
-      "text"=>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic delectus repellendus in ea quam iste, unde voluptatem.",
+      "text"=>"Western Australia",
       "thumbnaillist"=>array(
         "../images/inspiration/article-image2.png",
         "../images/inspiration/article-image4.png",
@@ -58,7 +58,7 @@
     array(
       "title"=>"consectetur adipisicing elit",
       "link"=>"inspiration-article6.html",
-      "text"=>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam incidunt, numquam odit doloribus blanditiis iste, libero consequatur.",
+      "text"=>"Tasmania",
       "thumbnaillist"=>array(
         "../images/inspiration/article-image5.png",
         "../images/inspiration/article-image7.png",

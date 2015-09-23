@@ -1,0 +1,72 @@
+#bsgc-2015{
+	
+	
+	.bsgc-2015-topnav {
+		background-color: $blue;
+		height: 65px;
+		padding: 0;
+		margin: 0;
+		@include box-sizing(border-box);
+		position: relative;
+		z-index: 2;
+		.container{
+			padding: 0;
+			@media (min-width: $screen-md-min){
+				padding: 0 30px;
+			}
+		}
+		#mobile-menu-btn {
+			height: 65px;
+			width: 16px;
+			color: $white;
+			background-color: $green;
+			background-image: none;
+			background-image: url('../../assets/images/diy-disasters/mobile-menu-btn.png');
+			background-position: center center;
+			background-repeat: no-repeat;
+			box-shadow: none;
+			line-height: 65px;
+			padding-top: 0;
+			padding-bottom: 0;
+			@include border-radius(0);
+			@include transition(all 0.25s linear);
+			@media (min-width: $screen-md-min){
+				display: none;
+			}
+		}
+		.nav{
+			margin-bottom: 0;
+				*zoom: 1;
+				a {
+					display: block;
+				  float: none;
+				  width: 100%;
+				  background: $green;
+					
+					font-size: 15px;
+					height: 65px;
+					line-height: 65px;
+					padding: 0 15px;
+					margin: 0;
+					color: $white;
+					text-decoration: none;
+					@include transition(all 0.25s linear);
+					&:hover,
+					&.active{
+						text-decoration: none;
+						background-color: $dark-green;
+						@media (min-width: $screen-md-min){
+							background-color: $green;					
+						}			
+					}
+					@media (min-width: $screen-md-min){
+					  display: inline-block;
+						float: left;
+						width: auto;
+						background: none;
+ 					}
+				}
+		}
+	}
+	
+}

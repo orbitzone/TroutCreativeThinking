@@ -159,6 +159,26 @@
 			    top: 0;
 			  }
 			}
+			.slick-slider{
+				margin-bottom: 0;
+			}
+			#slider-arrows{
+				.slick-arrow{
+					border: none;
+					background: $blue;
+					outline: none;
+					@include appearance(none);
+					@include border-radius(0);
+					width: 60px;
+					i{
+						color: $white;
+						font-size: 50px;
+					}
+					&:hover{
+						background: $green;
+					}
+				}
+			}
 			button.close {
 			  background: $green;
 			  padding: 10px;

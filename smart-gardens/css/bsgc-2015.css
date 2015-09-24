@@ -674,7 +674,7 @@
 /* line 64, ../sass/_homepage.scss */
 #bsgc-2015 #description h1 {
   color: #FFF;
-  margin: 24px 0 24px;
+  margin: 8px 0 10px;
 }
 /* line 68, ../sass/_homepage.scss */
 #bsgc-2015 #description h2 {
@@ -684,13 +684,13 @@
 /* line 72, ../sass/_homepage.scss */
 #bsgc-2015 #description .description-wrap {
   position: relative;
-  padding: 72px 0 30px;
+  padding: 72px 0 67px;
 }
 /* line 75, ../sass/_homepage.scss */
 #bsgc-2015 #description .description-wrap .info {
   max-width: 385px;
   margin: 0 auto;
-  padding-bottom: 2px;
+  margin-bottom: -4px;
 }
 /* line 79, ../sass/_homepage.scss */
 #bsgc-2015 #description .description-wrap .info p {
@@ -717,11 +717,11 @@
   position: absolute;
   right: 0;
   bottom: -12px;
-  -webkit-transition: all 0.8s ease-out;
-  -moz-transition: all 0.8s ease-out;
-  -ms-transition: all 0.8s ease-out;
-  -o-transition: all 0.8s ease-out;
-  transition: all 0.8s ease-out;
+  -webkit-transition: all 1.5s ease-out;
+  -moz-transition: all 1.5s ease-out;
+  -ms-transition: all 1.5s ease-out;
+  -o-transition: all 1.5s ease-out;
+  transition: all 1.5s ease-out;
   -webkit-transform: scale(0);
   -moz-transform: scale(0);
   -ms-transform: scale(0);
@@ -745,11 +745,11 @@
 #bsgc-2015 #description .sunflowers .sunflower.sm {
   left: 20px;
   right: auto;
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -ms-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.8s ease-out;
+  -moz-transition: all 0.8s ease-out;
+  -ms-transition: all 0.8s ease-out;
+  -o-transition: all 0.8s ease-out;
+  transition: all 0.8s ease-out;
 }
 @media (min-width: 768px) {
   /* line 106, ../sass/_homepage.scss */
@@ -773,11 +773,11 @@
 /* line 123, ../sass/_homepage.scss */
 #bsgc-2015 #description .sunflowers .sunflower.md {
   right: 0;
-  -webkit-transition: all 0.65s ease-out;
-  -moz-transition: all 0.65s ease-out;
-  -ms-transition: all 0.65s ease-out;
-  -o-transition: all 0.65s ease-out;
-  transition: all 0.65s ease-out;
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -ms-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out;
 }
 @media (min-width: 768px) {
   /* line 123, ../sass/_homepage.scss */
@@ -1022,8 +1022,9 @@
   margin: 10px auto;
   text-align: left;
   font-size: 14px;
+  max-width: 480px;
 }
-/* line 107, ../sass/_entry_form.scss */
+/* line 108, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container .formError .btn,
 #bsgc-2015 section#entry-form .form-container .formErrorWords .btn,
 #bsgc-2015 section#entry-form .form-container .formErrorFile .btn,
@@ -1033,42 +1034,42 @@
   font-size: 18px;
   letter-spacing: 3px;
 }
-/* line 112, ../sass/_entry_form.scss */
+/* line 113, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container .formResultSuccess,
 #bsgc-2015 section#entry-form .form-container .formResultError {
   text-align: center;
 }
-/* line 116, ../sass/_entry_form.scss */
+/* line 117, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap {
   margin-top: 20px;
 }
-/* line 118, ../sass/_entry_form.scss */
+/* line 119, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap ::-webkit-input-placeholder {
   color: #000;
 }
-/* line 121, ../sass/_entry_form.scss */
+/* line 122, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap :-moz-placeholder {
   color: #000;
 }
-/* line 124, ../sass/_entry_form.scss */
+/* line 125, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap ::-moz-placeholder {
   color: #000;
 }
-/* line 127, ../sass/_entry_form.scss */
+/* line 128, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap :-ms-input-placeholder {
   color: #000;
 }
-/* line 130, ../sass/_entry_form.scss */
+/* line 131, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap .file-uploads {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 134, ../sass/_entry_form.scss */
+/* line 135, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap #upload-animation {
   height: 20px;
   margin: 0 auto 30px auto;
 }
-/* line 138, ../sass/_entry_form.scss */
+/* line 139, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap textarea {
   max-width: 624px;
   margin: 0 auto;
@@ -1077,12 +1078,12 @@
   margin-bottom: 40px;
 }
 @media (min-width: 768px) {
-  /* line 138, ../sass/_entry_form.scss */
+  /* line 139, ../sass/_entry_form.scss */
   #bsgc-2015 section#entry-form .form-container #entry-form-wrap textarea {
     height: 102px;
   }
 }
-/* line 148, ../sass/_entry_form.scss */
+/* line 149, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap .share-submit {
   display: block;
   margin-left: auto;
@@ -1092,26 +1093,26 @@
   margin-bottom: 0;
 }
 @media (min-width: 768px) {
-  /* line 148, ../sass/_entry_form.scss */
+  /* line 149, ../sass/_entry_form.scss */
   #bsgc-2015 section#entry-form .form-container #entry-form-wrap .share-submit {
     margin-bottom: 40px;
   }
 }
-/* line 158, ../sass/_entry_form.scss */
+/* line 159, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap .share-submit ul {
   margin: 0;
 }
-/* line 161, ../sass/_entry_form.scss */
+/* line 162, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap .share-submit li {
   vertical-align: middle;
   margin-bottom: 20px;
 }
-/* line 164, ../sass/_entry_form.scss */
+/* line 165, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap .share-submit li span {
   font-weight: 600;
   font-size: 20px;
 }
-/* line 168, ../sass/_entry_form.scss */
+/* line 169, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap .share-submit li button {
   font-size: 18px;
   letter-spacing: 4px;
@@ -1119,24 +1120,24 @@
   padding-left: 34px;
   font-weight: 700;
 }
-/* line 176, ../sass/_entry_form.scss */
+/* line 177, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap .share-submit a {
   display: block;
 }
-/* line 180, ../sass/_entry_form.scss */
+/* line 181, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap .share-submit a.facebook svg, #bsgc-2015 section#entry-form .form-container #entry-form-wrap .share-submit a.twitter svg {
   width: 33px;
   height: 33px;
 }
-/* line 186, ../sass/_entry_form.scss */
+/* line 187, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap .share-submit a.facebook.active svg path, #bsgc-2015 section#entry-form .form-container #entry-form-wrap .share-submit a.twitter.active svg path {
   fill: #00afec;
 }
-/* line 194, ../sass/_entry_form.scss */
+/* line 195, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap h2 {
   margin-bottom: 10px;
 }
-/* line 197, ../sass/_entry_form.scss */
+/* line 198, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap #upload-btn {
   display: block;
   width: 215px;
@@ -1144,12 +1145,12 @@
   margin: 10px auto;
   background: url("../img/attach-image.svg") 0 0 no-repeat;
 }
-/* line 205, ../sass/_entry_form.scss */
+/* line 206, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap #inputFile {
   position: absolute;
   left: -9999px;
 }
-/* line 210, ../sass/_entry_form.scss */
+/* line 211, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap #display-filename:before {
   content: '';
   display: inline-block;
@@ -1157,13 +1158,13 @@
   vertical-align: middle;
   margin-right: -0.25em;
 }
-/* line 217, ../sass/_entry_form.scss */
+/* line 218, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap #display-filename .file {
   padding: 0;
   margin-bottom: 10px;
   text-align: center;
 }
-/* line 221, ../sass/_entry_form.scss */
+/* line 222, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap #display-filename .file span {
   display: inline-block;
   margin-left: 10px;
@@ -1176,7 +1177,7 @@
   text-overflow: ellipsis;
   vertical-align: middle;
 }
-/* line 233, ../sass/_entry_form.scss */
+/* line 234, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap #display-filename .file .remove-file {
   display: inline-block;
   margin-left: 10px;
@@ -1184,7 +1185,7 @@
   height: 32px;
   vertical-align: middle;
 }
-/* line 239, ../sass/_entry_form.scss */
+/* line 240, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap #display-filename .file .remove-file:before, #bsgc-2015 section#entry-form .form-container #entry-form-wrap #display-filename .file .remove-file:after {
   content: " ";
   display: block;
@@ -1204,7 +1205,7 @@
   position: relative;
   top: 14px;
 }
-/* line 251, ../sass/_entry_form.scss */
+/* line 252, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap #display-filename .file .remove-file:after {
   -webkit-transform: rotate(-45deg) translateY(-50%);
   -moz-transform: rotate(-45deg) translateY(-50%);
@@ -1213,7 +1214,7 @@
   transform: rotate(-45deg) translateY(-50%);
   top: 13px;
 }
-/* line 259, ../sass/_entry_form.scss */
+/* line 260, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container .note {
   font-weight: 600;
   max-width: 610px;
@@ -1716,111 +1717,149 @@
   }
 }
 /* line 21, ../sass/_prizes.scss */
+#bsgc-2015 section#prizes a.btn {
+  padding: 21px 32px;
+}
+/* line 24, ../sass/_prizes.scss */
 #bsgc-2015 section#prizes .the-prizes {
   position: relative;
 }
-/* line 24, ../sass/_prizes.scss */
+/* line 27, ../sass/_prizes.scss */
 #bsgc-2015 section#prizes .the-prizes .beautifully-logo {
-  padding: 30px 0;
+  padding: 23px 0 20px;
   text-align: center;
 }
-/* line 27, ../sass/_prizes.scss */
+/* line 30, ../sass/_prizes.scss */
 #bsgc-2015 section#prizes .the-prizes .beautifully-logo img {
-  width: 115px;
-  height: 115px;
-}
-/* line 32, ../sass/_prizes.scss */
-#bsgc-2015 section#prizes .the-prizes .headline {
-  max-width: 530px;
-  margin: 0 auto;
+  width: 124px;
+  height: 124px;
 }
 /* line 35, ../sass/_prizes.scss */
-#bsgc-2015 section#prizes .the-prizes .headline h1 {
-  margin-bottom: 45px;
+#bsgc-2015 section#prizes .the-prizes .headline {
+  max-width: 422px;
+  margin: 0 auto;
 }
 /* line 38, ../sass/_prizes.scss */
+#bsgc-2015 section#prizes .the-prizes .headline h1 {
+  margin-bottom: 32px;
+  margin-top: 0;
+}
+/* line 42, ../sass/_prizes.scss */
 #bsgc-2015 section#prizes .the-prizes .headline .description {
   font-weight: 600;
   font-size: 24px;
   line-height: 26px;
-  margin-bottom: 50px;
+  margin-bottom: 68px;
 }
-/* line 45, ../sass/_prizes.scss */
+/* line 49, ../sass/_prizes.scss */
 #bsgc-2015 section#prizes .the-prizes .separator {
   height: 1px;
   max-width: 650px;
   padding: 0 5px;
   margin: 0 auto;
   background: white;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-/* line 54, ../sass/_prizes.scss */
-#bsgc-2015 section#prizes .the-prizes .prizes {
-  max-width: 534px;
-  margin: 0 auto;
+  margin-top: 64px;
+  margin-bottom: 25px;
 }
 /* line 58, ../sass/_prizes.scss */
+#bsgc-2015 section#prizes .the-prizes .prizes {
+  max-width: 595px;
+  margin: 0 auto;
+}
+/* line 62, ../sass/_prizes.scss */
 #bsgc-2015 section#prizes .the-prizes .prize {
   font-weight: 700;
   line-height: 1;
 }
-/* line 61, ../sass/_prizes.scss */
+/* line 65, ../sass/_prizes.scss */
 #bsgc-2015 section#prizes .the-prizes .prize .prize-number {
   font-size: 38px;
   margin-bottom: 30px;
 }
-/* line 65, ../sass/_prizes.scss */
+/* line 69, ../sass/_prizes.scss */
 #bsgc-2015 section#prizes .the-prizes .prize img {
   margin-bottom: 30px;
 }
-/* line 68, ../sass/_prizes.scss */
+/* line 72, ../sass/_prizes.scss */
 #bsgc-2015 section#prizes .the-prizes .prize .prize-details {
   font-size: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 38px;
+  text-transform: uppercase;
 }
-/* line 71, ../sass/_prizes.scss */
-#bsgc-2015 section#prizes .the-prizes .prize .prize-details span {
-  font-size: 28px;
+/* line 76, ../sass/_prizes.scss */
+#bsgc-2015 section#prizes .the-prizes .prize .prize-details:before {
+  content: " ";
   display: block;
-  margin-bottom: 5px;
+  border-top: 1px solid #FFF;
+  width: 95px;
+  margin: 0 auto;
+  margin-bottom: 15px;
 }
-/* line 78, ../sass/_prizes.scss */
+/* line 84, ../sass/_prizes.scss */
+#bsgc-2015 section#prizes .the-prizes .prize .prize-details span.value {
+  font-size: 28px;
+  line-height: 28px;
+  display: block;
+}
+/* line 89, ../sass/_prizes.scss */
+#bsgc-2015 section#prizes .the-prizes .prize .prize-details span.cash {
+  font-size: 16px;
+  top: -3px;
+  position: relative;
+}
+/* line 96, ../sass/_prizes.scss */
 #bsgc-2015 section#prizes .the-prizes .prize.prize-first .prize-number {
   font-size: 60px;
+  margin-bottom: 16px;
 }
-/* line 81, ../sass/_prizes.scss */
+/* line 100, ../sass/_prizes.scss */
 #bsgc-2015 section#prizes .the-prizes .prize.prize-first img {
-  width: 183px;
-  height: 156px;
+  width: 157px;
+  height: 134px;
 }
-/* line 85, ../sass/_prizes.scss */
+/* line 104, ../sass/_prizes.scss */
 #bsgc-2015 section#prizes .the-prizes .prize.prize-first .prize-details {
   font-size: 28px;
 }
-/* line 87, ../sass/_prizes.scss */
-#bsgc-2015 section#prizes .the-prizes .prize.prize-first .prize-details span {
+/* line 106, ../sass/_prizes.scss */
+#bsgc-2015 section#prizes .the-prizes .prize.prize-first .prize-details:before {
+  width: 137px;
+}
+/* line 109, ../sass/_prizes.scss */
+#bsgc-2015 section#prizes .the-prizes .prize.prize-first .prize-details span.value {
   font-size: 42px;
 }
-/* line 92, ../sass/_prizes.scss */
+/* line 114, ../sass/_prizes.scss */
 #bsgc-2015 section#prizes .the-prizes .prize.prize-second {
-  margin-top: 57px;
+  margin-top: 29px;
 }
-/* line 94, ../sass/_prizes.scss */
+/* line 116, ../sass/_prizes.scss */
+#bsgc-2015 section#prizes .the-prizes .prize.prize-second .prize-number {
+  margin-bottom: 17px;
+}
+/* line 119, ../sass/_prizes.scss */
 #bsgc-2015 section#prizes .the-prizes .prize.prize-second img {
   width: 54px;
   height: 87px;
 }
-/* line 99, ../sass/_prizes.scss */
+/* line 124, ../sass/_prizes.scss */
 #bsgc-2015 section#prizes .the-prizes .prize.prize-third {
-  margin-top: 57px;
+  margin-top: 29px;
 }
-/* line 101, ../sass/_prizes.scss */
+/* line 126, ../sass/_prizes.scss */
+#bsgc-2015 section#prizes .the-prizes .prize.prize-third .prize-number {
+  margin-bottom: 22px;
+}
+/* line 129, ../sass/_prizes.scss */
 #bsgc-2015 section#prizes .the-prizes .prize.prize-third img {
   width: 74px;
   height: 73px;
 }
-/* line 107, ../sass/_prizes.scss */
+/* line 134, ../sass/_prizes.scss */
+#bsgc-2015 section#prizes .the-prizes .prize.prize-third .prize-details:before {
+  width: 70px;
+}
+/* line 140, ../sass/_prizes.scss */
 #bsgc-2015 section#prizes .the-prizes .note {
   font-weight: 600;
   max-width: 610px;

@@ -18,28 +18,32 @@
         }
 			}
 		}
+		a.btn{
+			padding: 21px 32px;
+		}
 		.the-prizes{
 			position: relative;
 
 			.beautifully-logo{
-				padding: 30px 0;
+				padding: 23px 0 20px;
 				text-align: center;
 				img{
-					width: 115px;
-					height: 115px;
+					width: 124px;
+					height: 124px;
 				}
 			}
 			.headline{
-				max-width: 530px;
+				max-width: 422px;
 				margin: 0 auto;
 				h1{
-					margin-bottom: 45px;
+					margin-bottom: 32px;
+					margin-top: 0;
 				}
 				.description{
 					font-weight: 600;
 					font-size: 24px;
 					line-height: 26px;
-					margin-bottom: 50px;
+					margin-bottom: 68px;
 				}			
 			}
 			.separator{
@@ -48,11 +52,11 @@
 				padding: 0 5px;
 				margin: 0 auto;
 				background: white;
-				margin-top: 40px;
-				margin-bottom: 40px;
+				margin-top: 64px;
+				margin-bottom: 25px;
 			}
 			.prizes{
-				max-width: 534px;
+				max-width: 595px;
 				margin: 0 auto;
 			}
 			.prize{
@@ -67,40 +71,69 @@
 				}
 				.prize-details{
 					font-size: 20px;
-					margin-bottom: 30px;
-					span{
-						font-size: 28px;
+					margin-bottom: 38px;
+					text-transform: uppercase;
+					&:before{
+						content: " ";
 						display: block;
-						margin-bottom: 5px;
+						border-top: 1px solid $white;
+						width: 95px;
+						margin: 0 auto;
+						margin-bottom: 15px;
+					}
+					span.value{
+						font-size: 28px;
+						line-height: 28px;
+						display: block;
+					}
+					span.cash{
+						font-size: 16px;
+						top: -3px;
+						position: relative;
 					}
 				}
 				&.prize-first{
 					.prize-number{
 						font-size: 60px;
+						margin-bottom: 16px;
 					}
 					img{
-						width: 183px;
-						height: 156px;
+						width: 157px;
+						height: 134px;
 					}
 					.prize-details{
 						font-size: 28px;
-						span{
+						&:before{
+							width: 137px;							
+						}
+						span.value{
 							font-size: 42px;
 						}
 					}
 				}
 				&.prize-second{
-					margin-top: 57px;
+					margin-top: 29px;
+					.prize-number{
+						margin-bottom: 17px;
+					}
 					img{
 						width: 54px;
 						height: 87px;
 					}
 				}
 				&.prize-third{
-					margin-top: 57px;
+					margin-top: 29px;
+					.prize-number{
+						margin-bottom: 22px;
+					}
 					img{
 						width: 74px;
 						height: 73px;
+					}
+					.prize-details{
+						&:before{
+							width: 70px;							
+						}
 					}
 				}
 			}

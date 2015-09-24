@@ -113,9 +113,13 @@
 								<div class="formErrorFile alert"><button type="button" class="close" data-dismiss="formErrorFile">&times;</button>Please select a valid file to upload - .JPG, .PNG, .GIF</div>
 									<div class="file-uploads form-group">
 										<h3 id="upload-evidence-txt">Upload your images</h3>
-										<input type="file" name="inputFile" id="inputFile" multiple/>
 										<a type="button" id="upload-btn" href="#"></a>
-										<div id="display-filename"></div>
+										<div id="inputFilesWrap">
+											<div class="active" data-num="1"><input type="file" name="inputFile[]" class="inputFile"/></div>
+										</div>
+										<div id="display-filename">
+											
+										</div>
 									</div>
 
 									<div class="fifty-words form-group">

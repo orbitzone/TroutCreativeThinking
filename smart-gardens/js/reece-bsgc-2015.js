@@ -292,13 +292,13 @@ $(document).ready(function(){
 			// form elements
 			app.entryForm 				= $("#entry-form");
 			app.displayFilename 		= $("#display-filename");
-			app.inputFile 				= $("#inputFile");
 			app.uploadBtn 				= $("#upload-btn");
 			app.inputState 				= $('#inputState');
 			app.inputWords 				= $('#inputWords');
 			app.shareFBbtn				= $(".share-submit .facebook");
 			app.shareTWbtn				= $(".share-submit .twitter");
 			app.uploadAnimation			= $("#upload-animation");
+			app.numberFiles = 1;
 			
 			// form submit
 		    app.entryForm.submit(function(e){
@@ -357,13 +357,12 @@ $(document).ready(function(){
 				e.preventDefault();
 				if(app.formComplete == false)
 				{
-					app.displayFilename.html('');
-					app.inputFile.focus().trigger('click');
+					$("#inputFilesWrap .active .inputFile").focus().trigger('click');
 				}
 			});
 			
 			// on file change
-			app.inputFile.change(function(e) {
+			$(document).on('change','#inputFilesWrap input',function(e) {
 		        // reset
 		        app.fileName = null;
 		        // file type?
@@ -373,14 +372,13 @@ $(document).ready(function(){
 			        app.displayFilename.html('<div>File selected</div>');
 			        app.fileType = "image";
 		        }
-		        else if( app.inputFile[0].files.length > 0 ) 
+		        else if( $("#inputFilesWrap .active .inputFile")[0].files.length > 0 ) 
 		        {
-		        	$.each(app.inputFile[0].files, function(num){
-		        		console.log(num);
-        				// video or image or invalid file type
-			        	app.fileType = app.inputFile[0].files[num].type;
-			        	app.fileName = app.inputFile[0].files[num].name;
-
+		        	$.each($("#inputFilesWrap .active .inputFile")[0].files, function(num){
+		        		// video or image or invalid file type
+			        	app.fileType = $("#inputFilesWrap .active .inputFile")[0].files[num].type;
+			        	app.fileName = $("#inputFilesWrap .active .inputFile")[0].files[num].name;
+								app.displayFilename.find('div.alert[data-num="'+app.numberFiles+'"]').remove();
 			        	
 								//if(app.fileType.indexOf("video") > -1) app.fileType = "video";
 								if(app.fileType.indexOf("image") > -1) app.fileType = "image";
@@ -388,26 +386,32 @@ $(document).ready(function(){
 								
 								if(app.fileType != "invalid")
 								{
-										console.log(app.fileName);
-										app.displayFilename.append( '<div class="file"><span>' + app.fileName + '</span><a class="remove-file" data-num="'+num+'" href="#"></a></div>' );
+									  app.displayFilename.append( '<div class="file" data-num="'+app.numberFiles+'"><span>' + app.fileName + '</span><a class="remove-file" data-num="'+app.numberFiles+'" href="#"></a></div>' );
+										$('#inputFilesWrap .active').removeClass('active');
+										app.numberFiles = app.numberFiles + 1;
+										
+										$('#inputFilesWrap').append('<div class="active" data-num="'+app.numberFiles+'"><input type="file" name="inputFile[]" class="inputFile"/></div>');
 					        	$(".remove-file").on('click', function(e){
 											e.preventDefault();
 											// clear file names
 											var num = $(this).data('num');
-											app.displayFilename.empty();
-											app.clearFileUpload();
+											
+											$('#inputFilesWrap div[data-num='+num+']').remove();
+											$(this).parent().remove();
+											//app.displayFilename.empty();
+											//app.clearFileUpload();
 										});
 									 
 								}
 								else
 								{
-									app.displayFilename.html('<div>Invalid file type selected: ' + app.fileName + '</div>');
+									app.displayFilename.append('<div class="alert alert-danger" style="display:block;" data-num="'+app.numberFiles+'">Invalid file type selected: ' + app.fileName + '</div>');
 								}
 		        	});
 		        }
 		        else
 		        { 
-		        	app.displayFilename.html('<div>No file selected</div>');
+		        	app.displayFilename.append('<div class="alert alert-danger">No file selected</div>');
 		        }
 		    });
 			

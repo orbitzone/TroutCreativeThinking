@@ -1151,7 +1151,7 @@
   background: url("../img/attach-image.svg") 0 0 no-repeat;
 }
 /* line 212, ../sass/_entry_form.scss */
-#bsgc-2015 section#entry-form .form-container #entry-form-wrap #inputFile {
+#bsgc-2015 section#entry-form .form-container #entry-form-wrap .inputFile {
   position: absolute;
   left: -9999px;
 }

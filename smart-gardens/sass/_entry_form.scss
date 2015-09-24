@@ -15,6 +15,24 @@
 				}
 			}
 		}
+		.fancy-select{
+			border: none;
+			div.trigger{
+				border: none;				
+			}	
+			ul.options{
+				border: none;
+				li{
+					&.selected{
+					background: $green;
+					}
+					&:hover{
+						background: $blue;
+					}
+				}
+			}
+			
+		}
 		.beautifully-logo{
 			padding: 30px 0;
 			text-align: center;
@@ -23,13 +41,19 @@
 				height: 125px;
 			}
 		}
+		.progress{
+			.bar{
+				background: $blue !important;
+			}
+		}
 		.file-uploads,
 		.fifty-words,
 		#upload-animation{
 			width: 100%;
+			max-width: 624px;
 			height: auto;
 			float: none;
-			margin: 0;	
+			margin: 0 auto;	
 		}
 		.fifty-words{
 			margin-top: 20px;
@@ -86,6 +110,7 @@
 				margin: 10px auto;
 				text-align: left;
 				font-size: 14px;
+				max-width: 480px;
 				.btn{
 					font-size: 18px;
 					letter-spacing: 3px;
@@ -121,6 +146,7 @@
 					max-width: 624px;
 					margin: 0 auto;
 					padding: 30px;
+					height: 160px;
 					@media (min-width: $screen-sm-min){
 						height: 102px;
 					}
@@ -128,13 +154,20 @@
 				}
 				.share-submit {
 					display: block;
-					height: 64px;
 					margin-left: auto;
 					margin-right: auto;
 					padding: 0;
 					text-align: center;
+					margin-bottom: 0;
+					@media (min-width: $screen-sm-min){
+						margin-bottom: 40px;
+					}
+					ul{
+						margin: 0;
+					}
 					li{
 						vertical-align: middle;
+						margin-bottom: 20px;
 						span{
 							font-weight: 600;
 							font-size: 20px;
@@ -176,7 +209,7 @@
 					background: url('../img/attach-image.svg') 0 0 no-repeat;
 					
 				}
-				#inputFile {
+				.inputFile {
 					position: absolute;
 					left: -9999px;
 				}

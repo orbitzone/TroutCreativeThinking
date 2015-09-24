@@ -159,7 +159,8 @@ $(document).ready(function(){
 
 				//scroll to top of body container
 				app.entryModal.find('.modalBody').scrollTop(0, 0);
-				
+				app.entryModal.find('.fbIcon').attr('href','http://www.facebook.com/sharer.php?u='+window.location+'&title='+_this.find('.caption h3').html());
+				app.entryModal.find('.twIcon').attr('href','ttps://twitter.com/share?url='+window.location+'&text='+_this.find('.caption h3').html()+'&via=@reece'+'&hashtags=smart-garden,garden,reece');
 			});
 			
 			app.modalNextBtn.on('click', function(e){ 
@@ -207,7 +208,8 @@ $(document).ready(function(){
 
 				//scroll to top of body container
 				app.entryModal.find('.modalBody').scrollTop(0, 0);
-				
+				app.entryModal.find('.fbIcon').attr('href','http://www.facebook.com/sharer.php?u='+window.location+'&title='+_this.find('.caption h3').html());
+				app.entryModal.find('.twIcon').attr('href','ttps://twitter.com/share?url='+window.location+'&text='+_this.find('.caption h3').html()+'&via=@reece'+'&hashtags=smart-garden,garden,reece');
 			});
 			
 			// modal share btn
@@ -269,6 +271,8 @@ $(document).ready(function(){
 				$(window).resize();
 				app.entryModal.find('.modalBody').scrollTop(0, 0);
 			});
+			app.entryModal.find('.fbIcon').attr('href','http://www.facebook.com/sharer.php?u='+encodeURIComponent(window.location)+'&title='+encodeURIComponent(_this.find('.caption h3').html()));
+			app.entryModal.find('.twIcon').attr('href','https://twitter.com/share?url='+encodeURIComponent(window.location)+'&text='+encodeURIComponent(_this.find('.caption h3').html())+'&via=reece'+'&hashtags=smart-garden,garden,reece');
 		},
 		checkHash: function(){
 				hashTag = location.hash.slice(1);

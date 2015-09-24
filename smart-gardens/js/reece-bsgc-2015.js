@@ -371,6 +371,22 @@ $(document).ready(function(){
 			        //var ie9Fileoutput = $('input[type=file]:eq(0)');
 			        app.displayFilename.html('<div>File selected</div>');
 			        app.fileType = "image";
+
+			        app.displayFilename.append( '<div class="file" data-num="'+app.numberFiles+'"><span>Image '+app.numberFiles+' added</span><a class="remove-file" data-num="'+app.numberFiles+'" href="#"></a></div>' );
+							$('#inputFilesWrap .active').removeClass('active');
+							app.numberFiles = app.numberFiles + 1;
+							
+							$('#inputFilesWrap').append('<div class="active" data-num="'+app.numberFiles+'"><input type="file" name="inputFile[]" class="inputFile"/></div>');
+		        	$(".remove-file").on('click', function(e){
+								e.preventDefault();
+								// clear file names
+								var num = $(this).data('num');
+								
+								$('#inputFilesWrap div[data-num='+num+']').remove();
+								$(this).parent().remove();
+								//app.displayFilename.empty();
+								//app.clearFileUpload();
+							});
 		        }
 		        else if( $("#inputFilesWrap .active .inputFile")[0].files.length > 0 ) 
 		        {

@@ -96,9 +96,9 @@
               <div class="inner-content">
                 <h4>Categories</h4>
                 <ul class="sidebarnav">
-                  <li><a href="smart-thinking/garden-designs.php" class="active">Garden Design</a>
+                  <li><a href="smart-thinking/garden-designs.php">Garden Design</a>
                   </li>
-                  <li><a href="smart-thinking/irrigation.php">Irrigation</a>
+                  <li><a href="smart-thinking/irrigation.php" class="active">Irrigation</a>
                   </li>
                   <li><a href="smart-thinking/products.php">Products</a>
                   </li>

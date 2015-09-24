@@ -15,6 +15,24 @@
 				}
 			}
 		}
+		.fancy-select{
+			border: none;
+			div.trigger{
+				border: none;				
+			}	
+			ul.options{
+				border: none;
+				li{
+					&.selected{
+					background: $green;
+					}
+					&:hover{
+						background: $blue;
+					}
+				}
+			}
+			
+		}
 		.beautifully-logo{
 			padding: 30px 0;
 			text-align: center;

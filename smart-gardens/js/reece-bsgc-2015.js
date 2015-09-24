@@ -530,7 +530,18 @@ $(document).ready(function(){
 		},
 		
 		initContact: function(){
-			$('#contact form').validate();
+			$('#contact form').validate({
+				submitHandler: function(form) {
+					console.log('submit');
+			    //form.submit();
+			    /*$.ajax({
+
+			    });*/
+					$('#contact-form').slideUp();
+					$('#success-message').slideDown();
+			    return false;
+			  }
+			});
 		},
 		
 		/*

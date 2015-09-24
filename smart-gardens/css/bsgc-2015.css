@@ -1925,6 +1925,13 @@
   border: 1px solid #ff0000 !important;
   background-color: #ddd !important;
 }
+/* line 44, ../sass/_contact.scss */
+#bsgc-2015 section#contact #success-message {
+  display: none;
+  padding: 20px 0 60px;
+  font-size: 24px;
+  font-weight: 600;
+}
 
 /* line 2, ../sass/_terms.scss */
 #bsgc-2015 section#terms {

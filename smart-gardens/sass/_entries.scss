@@ -138,10 +138,9 @@
 		  -moz-border-radius: 0;
 		  border-radius: 0;
 		  text-align: left;
-		  margin-top: 40px;
 		  width: 900px;
 		  margin-left: -450px;
-
+			
 			@media (min-width: 1200px) {
 		    width: 1160px;
 		    margin-left: -580px;
@@ -190,6 +189,10 @@
 			  width: 2em;
 			  font-weight: 100;
 			  color: white;
+			  position: absolute;
+			  float: none;
+			  left: 0;
+			  top: 0;
 			}
 			.modal-body {
 			  margin: 0;
@@ -218,16 +221,8 @@
 			  position: relative;
 			  *zoom: 1;
 			  @media (max-width: 767px) {
-				  padding-bottom: 0;
-			  	.entryPopButtons {
-				    position: relative;
-				    float: right;
-				  }
+				  padding-bottom: 0;			  	
 			  }
-			  .close {
-				  float: left;
-				  margin-top: -40px;
-				}
 				&:before,
 				&:after {
 				  display: table;
@@ -241,16 +236,15 @@
 					margin: 0;
 					padding: 20px;
 					color: $white;
+					margin-left: 40px;
 				}
 				.entryPopButtons {
-					text-align: right;
-					padding-right: 20px;
-				  @media (min-width: $screen-sm-min){
+					text-align: center;
+					@media (min-width: $screen-sm-min){
 					  position: absolute;
 					  right: 0;
 					  bottom: 0;
-					  padding-right: 20px;
-				  	
+					  padding-right: 20px;				  	
 				  }
 				  .btn-large {
 					  font-size: 1.2em;

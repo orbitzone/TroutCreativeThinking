@@ -121,6 +121,7 @@
 					max-width: 624px;
 					margin: 0 auto;
 					padding: 30px;
+					height: 160px;
 					@media (min-width: $screen-sm-min){
 						height: 102px;
 					}
@@ -128,13 +129,20 @@
 				}
 				.share-submit {
 					display: block;
-					height: 64px;
 					margin-left: auto;
 					margin-right: auto;
 					padding: 0;
 					text-align: center;
+					margin-bottom: 0;
+					@media (min-width: $screen-sm-min){
+						margin-bottom: 40px;
+					}
+					ul{
+						margin: 0;
+					}
 					li{
 						vertical-align: middle;
+						margin-bottom: 20px;
 						span{
 							font-weight: 600;
 							font-size: 20px;

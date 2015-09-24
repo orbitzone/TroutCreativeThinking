@@ -80,7 +80,7 @@
 }
 /* line 68, ../sass/_global.scss */
 #bsgc-2015 .form .details {
-  width: 333px;
+  width: 100%;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
@@ -1053,6 +1053,7 @@
   max-width: 624px;
   margin: 0 auto;
   padding: 30px;
+  height: 160px;
   margin-bottom: 40px;
 }
 @media (min-width: 768px) {
@@ -1061,25 +1062,36 @@
     height: 102px;
   }
 }
-/* line 129, ../sass/_entry_form.scss */
+/* line 130, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap .share-submit {
   display: block;
-  height: 64px;
   margin-left: auto;
   margin-right: auto;
   padding: 0;
   text-align: center;
+  margin-bottom: 0;
 }
-/* line 136, ../sass/_entry_form.scss */
+@media (min-width: 768px) {
+  /* line 130, ../sass/_entry_form.scss */
+  #bsgc-2015 section#entry-form .form-container #entry-form-wrap .share-submit {
+    margin-bottom: 40px;
+  }
+}
+/* line 140, ../sass/_entry_form.scss */
+#bsgc-2015 section#entry-form .form-container #entry-form-wrap .share-submit ul {
+  margin: 0;
+}
+/* line 143, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap .share-submit li {
   vertical-align: middle;
+  margin-bottom: 20px;
 }
-/* line 138, ../sass/_entry_form.scss */
+/* line 146, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap .share-submit li span {
   font-weight: 600;
   font-size: 20px;
 }
-/* line 142, ../sass/_entry_form.scss */
+/* line 150, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap .share-submit li button {
   font-size: 18px;
   letter-spacing: 4px;
@@ -1087,24 +1099,24 @@
   padding-left: 34px;
   font-weight: 700;
 }
-/* line 150, ../sass/_entry_form.scss */
+/* line 158, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap .share-submit a {
   display: block;
 }
-/* line 154, ../sass/_entry_form.scss */
+/* line 162, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap .share-submit a.facebook svg, #bsgc-2015 section#entry-form .form-container #entry-form-wrap .share-submit a.twitter svg {
   width: 33px;
   height: 33px;
 }
-/* line 160, ../sass/_entry_form.scss */
+/* line 168, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap .share-submit a.facebook.active svg path, #bsgc-2015 section#entry-form .form-container #entry-form-wrap .share-submit a.twitter.active svg path {
   fill: #00afec;
 }
-/* line 168, ../sass/_entry_form.scss */
+/* line 176, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap h2 {
   margin-bottom: 10px;
 }
-/* line 171, ../sass/_entry_form.scss */
+/* line 179, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap #upload-btn {
   display: block;
   width: 215px;
@@ -1112,12 +1124,12 @@
   margin: 10px auto;
   background: url("../img/attach-image.svg") 0 0 no-repeat;
 }
-/* line 179, ../sass/_entry_form.scss */
+/* line 187, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap #inputFile {
   position: absolute;
   left: -9999px;
 }
-/* line 184, ../sass/_entry_form.scss */
+/* line 192, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap #display-filename:before {
   content: '';
   display: inline-block;
@@ -1125,13 +1137,13 @@
   vertical-align: middle;
   margin-right: -0.25em;
 }
-/* line 191, ../sass/_entry_form.scss */
+/* line 199, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap #display-filename .file {
   padding: 0;
   margin-bottom: 10px;
   text-align: center;
 }
-/* line 195, ../sass/_entry_form.scss */
+/* line 203, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap #display-filename .file span {
   display: inline-block;
   margin-left: 10px;
@@ -1144,7 +1156,7 @@
   text-overflow: ellipsis;
   vertical-align: middle;
 }
-/* line 207, ../sass/_entry_form.scss */
+/* line 215, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap #display-filename .file .remove-file {
   display: inline-block;
   margin-left: 10px;
@@ -1152,7 +1164,7 @@
   height: 32px;
   vertical-align: middle;
 }
-/* line 213, ../sass/_entry_form.scss */
+/* line 221, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap #display-filename .file .remove-file:before, #bsgc-2015 section#entry-form .form-container #entry-form-wrap #display-filename .file .remove-file:after {
   content: " ";
   display: block;
@@ -1172,7 +1184,7 @@
   position: relative;
   top: 14px;
 }
-/* line 225, ../sass/_entry_form.scss */
+/* line 233, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap #display-filename .file .remove-file:after {
   -webkit-transform: rotate(-45deg) translateY(-50%);
   -moz-transform: rotate(-45deg) translateY(-50%);
@@ -1181,7 +1193,7 @@
   transform: rotate(-45deg) translateY(-50%);
   top: 13px;
 }
-/* line 233, ../sass/_entry_form.scss */
+/* line 241, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container .note {
   font-weight: 600;
   max-width: 610px;
@@ -1380,7 +1392,6 @@
   -moz-border-radius: 0;
   border-radius: 0;
   text-align: left;
-  margin-top: 40px;
   width: 900px;
   margin-left: -450px;
 }
@@ -1406,16 +1417,16 @@
     left: 0;
     height: 100%;
   }
-  /* line 158, ../sass/_entries.scss */
+  /* line 157, ../sass/_entries.scss */
   #entry-modal.fade.in {
     top: 0;
   }
 }
-/* line 162, ../sass/_entries.scss */
+/* line 161, ../sass/_entries.scss */
 #entry-modal .slick-slider {
   margin-bottom: 0;
 }
-/* line 166, ../sass/_entries.scss */
+/* line 165, ../sass/_entries.scss */
 #entry-modal #slider-arrows .slick-arrow {
   border: none;
   background: #00afec;
@@ -1431,16 +1442,16 @@
   border-radius: 0;
   width: 60px;
 }
-/* line 173, ../sass/_entries.scss */
+/* line 172, ../sass/_entries.scss */
 #entry-modal #slider-arrows .slick-arrow i {
   color: #FFF;
   font-size: 50px;
 }
-/* line 177, ../sass/_entries.scss */
+/* line 176, ../sass/_entries.scss */
 #entry-modal #slider-arrows .slick-arrow:hover {
   background: #87c818;
 }
-/* line 182, ../sass/_entries.scss */
+/* line 181, ../sass/_entries.scss */
 #entry-modal button.close {
   background: #87c818;
   padding: 10px;
@@ -1452,8 +1463,12 @@
   width: 2em;
   font-weight: 100;
   color: white;
+  position: absolute;
+  float: none;
+  left: 0;
+  top: 0;
 }
-/* line 194, ../sass/_entries.scss */
+/* line 197, ../sass/_entries.scss */
 #entry-modal .modal-body {
   margin: 0;
   padding: 10px 0 0;
@@ -1461,27 +1476,27 @@
   max-height: none;
 }
 @media (max-height: 830px) {
-  /* line 194, ../sass/_entries.scss */
+  /* line 197, ../sass/_entries.scss */
   #entry-modal .modal-body {
     max-height: 400px;
     overflow-y: scroll;
   }
 }
-/* line 204, ../sass/_entries.scss */
+/* line 207, ../sass/_entries.scss */
 #entry-modal ::-webkit-scrollbar {
   width: 12px;
 }
-/* line 207, ../sass/_entries.scss */
+/* line 210, ../sass/_entries.scss */
 #entry-modal ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
 }
-/* line 211, ../sass/_entries.scss */
+/* line 214, ../sass/_entries.scss */
 #entry-modal ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
-/* line 215, ../sass/_entries.scss */
+/* line 218, ../sass/_entries.scss */
 #entry-modal .modalHeader {
   background: #00afec;
   clear: both;
@@ -1489,44 +1504,34 @@
   *zoom: 1;
 }
 @media (max-width: 767px) {
-  /* line 215, ../sass/_entries.scss */
+  /* line 218, ../sass/_entries.scss */
   #entry-modal .modalHeader {
     padding-bottom: 0;
   }
-  /* line 222, ../sass/_entries.scss */
-  #entry-modal .modalHeader .entryPopButtons {
-    position: relative;
-    float: right;
-  }
 }
-/* line 227, ../sass/_entries.scss */
-#entry-modal .modalHeader .close {
-  float: left;
-  margin-top: -40px;
-}
-/* line 231, ../sass/_entries.scss */
+/* line 226, ../sass/_entries.scss */
 #entry-modal .modalHeader:before, #entry-modal .modalHeader:after {
   display: table;
   content: "";
   line-height: 0;
 }
-/* line 237, ../sass/_entries.scss */
+/* line 232, ../sass/_entries.scss */
 #entry-modal .modalHeader:after {
   clear: both;
 }
-/* line 240, ../sass/_entries.scss */
+/* line 235, ../sass/_entries.scss */
 #entry-modal .modalHeader h2 {
   margin: 0;
   padding: 20px;
   color: #FFF;
+  margin-left: 40px;
 }
-/* line 245, ../sass/_entries.scss */
+/* line 241, ../sass/_entries.scss */
 #entry-modal .modalHeader .entryPopButtons {
-  text-align: right;
-  padding-right: 20px;
+  text-align: center;
 }
 @media (min-width: 768px) {
-  /* line 245, ../sass/_entries.scss */
+  /* line 241, ../sass/_entries.scss */
   #entry-modal .modalHeader .entryPopButtons {
     position: absolute;
     right: 0;
@@ -1534,7 +1539,7 @@
     padding-right: 20px;
   }
 }
-/* line 255, ../sass/_entries.scss */
+/* line 249, ../sass/_entries.scss */
 #entry-modal .modalHeader .entryPopButtons .btn-large {
   font-size: 1.2em;
   letter-spacing: 1px;
@@ -1552,7 +1557,7 @@
   -ms-box-shadow: none;
   box-shadow: none;
 }
-/* line 266, ../sass/_entries.scss */
+/* line 260, ../sass/_entries.scss */
 #entry-modal .modalHeader .entryPopButtons #modal-prev-btn:before {
   content: '';
   height: 0;
@@ -1564,7 +1569,7 @@
   border-right-color: white;
   margin-right: 10px;
 }
-/* line 277, ../sass/_entries.scss */
+/* line 271, ../sass/_entries.scss */
 #entry-modal .modalHeader .entryPopButtons #modal-next-btn:after {
   content: '';
   height: 0;
@@ -1576,34 +1581,34 @@
   border-left-color: white;
   margin-left: 10px;
 }
-/* line 289, ../sass/_entries.scss */
+/* line 283, ../sass/_entries.scss */
 #entry-modal .modalHeader h3 {
   color: white;
   font-size: 2em;
   clear: both;
   padding: 20px 0 10px 30px;
 }
-/* line 297, ../sass/_entries.scss */
+/* line 291, ../sass/_entries.scss */
 #entry-modal .modalBody {
   padding: 20px 40px;
 }
 @media (max-width: 767px) {
-  /* line 297, ../sass/_entries.scss */
+  /* line 291, ../sass/_entries.scss */
   #entry-modal .modalBody {
     max-height: 60%;
     overflow-y: scroll;
   }
 }
-/* line 303, ../sass/_entries.scss */
+/* line 297, ../sass/_entries.scss */
 #entry-modal .modalBody .span6 {
   padding: 20px 0;
 }
-/* line 307, ../sass/_entries.scss */
+/* line 301, ../sass/_entries.scss */
 #entry-modal .entryPopImage {
   background-size: 100%;
   background-repeat: no-repeat;
 }
-/* line 311, ../sass/_entries.scss */
+/* line 305, ../sass/_entries.scss */
 #entry-modal .entryPopSuccessMessage {
   text-align: center;
   color: #fdb813;
@@ -1613,42 +1618,42 @@
   display: none;
   padding-bottom: 20px;
 }
-/* line 320, ../sass/_entries.scss */
+/* line 314, ../sass/_entries.scss */
 #entry-modal .entryPopDetails {
   padding-bottom: 15px;
 }
-/* line 323, ../sass/_entries.scss */
+/* line 317, ../sass/_entries.scss */
 #entry-modal .entryPopDetails .contentLabel {
   color: #999;
   text-transform: uppercase;
 }
-/* line 327, ../sass/_entries.scss */
+/* line 321, ../sass/_entries.scss */
 #entry-modal .entryPopShareLinks {
   *zoom: 1;
 }
-/* line 330, ../sass/_entries.scss */
+/* line 324, ../sass/_entries.scss */
 #entry-modal .entryPopShareLinks:before,
 #entry-modal .entryPopShareLinks:after {
   display: table;
   content: "";
   line-height: 0;
 }
-/* line 336, ../sass/_entries.scss */
+/* line 330, ../sass/_entries.scss */
 #entry-modal .entryPopShareLinks:after {
   clear: both;
 }
-/* line 339, ../sass/_entries.scss */
+/* line 333, ../sass/_entries.scss */
 #entry-modal .entryPopShareLinks dt,
 #entry-modal .entryPopShareLinks dd {
   float: left;
 }
-/* line 343, ../sass/_entries.scss */
+/* line 337, ../sass/_entries.scss */
 #entry-modal .entryPopShareLinks dt {
   font-family: 'bebas_neueregular', Helvetica, Arial, sans-serif;
   line-height: 40px;
   font-size: 1.2em;
 }
-/* line 348, ../sass/_entries.scss */
+/* line 342, ../sass/_entries.scss */
 #entry-modal .entryPopShareLinks .fbIcon,
 #entry-modal .entryPopShareLinks .twIcon {
   display: block;
@@ -1656,7 +1661,7 @@
   width: 40px;
   background: url("../../assets/images/diy-disasters/diyshare.png") 0 0 no-repeat;
 }
-/* line 355, ../sass/_entries.scss */
+/* line 349, ../sass/_entries.scss */
 #entry-modal .entryPopShareLinks .twIcon {
   background-position: 0 100%;
 }

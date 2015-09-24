@@ -446,7 +446,7 @@ $(document).ready(function(){
 			// 50 words or less
 			var words = $.trim(app.inputWords.val());
 			var count = words.split(' ').length;
-			if(count > 50) is50WordsValid = false;
+			if(count > 100) is50WordsValid = false;
 			
 			// share?
 			if(app.shareEntryToFB == true)
@@ -460,7 +460,7 @@ $(document).ready(function(){
 				if(valid == false) $(".formError").show();
 				if(is50WordsValid == false) $(".formErrorWords").show();
 				if(app.fileType == "invalid") $(".formErrorFile").show();
-				$('html, body').animate({ scrollTop: 100 }, 1000);
+				$('html, body').animate({ scrollTop: $('#entry-form-wrap').offset().top - 72 }, 1000);
 			}
 			else
 			{

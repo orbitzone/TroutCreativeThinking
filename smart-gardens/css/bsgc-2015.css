@@ -948,7 +948,7 @@
 }
 /* line 45, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .progress .bar {
-  background: #00afec;
+  background: #00afec !important;
 }
 /* line 49, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .file-uploads,

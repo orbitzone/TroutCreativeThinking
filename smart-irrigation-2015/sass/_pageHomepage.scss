@@ -1,4 +1,6 @@
 body.smart-irrigation-2015 #main-content{
+	font-family: $font-family-helvetica;
+	font-size:$base-font-size;
 	.banner-section{
 		
 		.one-slide{
@@ -27,6 +29,11 @@ body.smart-irrigation-2015 #main-content{
 		}
 		.inner-content.main-banner{
 			margin:0;
+		}
+	}
+	.outlet-section{
+		.text-area{
+			padding-bottom:1px;
 		}
 	}
 	.box-section{

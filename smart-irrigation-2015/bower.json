@@ -1,10 +1,10 @@
 {
-  "name": "reece-smart-irrigation-2015",
+  "name": "html-boilerplate",
   "version": "0.1",
   "authors": [
-    "Joey"
+    "Reece"
   ],
-  "description": "Reece Smart Irrigation 2015",
+  "description": "HTML Boilerplate with Bootstrap 3 and Fontawesome 4",
   "keywords": [
     "HTML",
     "Boilerplate",
@@ -15,16 +15,15 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components"
+    "bower_components",
+    "test",
+    "tests"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "bootstrap": "3.3.2",
+    "fontawesome": "4.3.0"
+  },
   "devDependencies": {
-    "jquery": "1.11.0",
-    "font-awesome": "~4.2.0",
-    "modernizr": "~2.8.3",
-    "slick-carousel": "~1.5.8",
-    "matchHeight": "~0.6.0",
-    "handlebars": "~4.0.2",
-    "masonry": "~3.3.2"
+    "slick-carousel": "~1.5.8"
   }
 }

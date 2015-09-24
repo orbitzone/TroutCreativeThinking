@@ -369,7 +369,6 @@ $(document).ready(function(){
 		        if($('html').hasClass('lt-ie9') || $('html').hasClass('lt-ie8') || (navigator.appVersion.indexOf("MSIE 9.")!=-1))
 		        {
 			        //var ie9Fileoutput = $('input[type=file]:eq(0)');
-			        app.displayFilename.html('<div>File selected</div>');
 			        app.fileType = "image";
 
 			        app.displayFilename.append( '<div class="file" data-num="'+app.numberFiles+'"><span>Image '+app.numberFiles+' added</span><a class="remove-file" data-num="'+app.numberFiles+'" href="#"></a></div>' );

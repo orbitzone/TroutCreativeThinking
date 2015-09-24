@@ -946,53 +946,58 @@
   width: 125px;
   height: 125px;
 }
-/* line 44, ../sass/_entry_form.scss */
+/* line 45, ../sass/_entry_form.scss */
+#bsgc-2015 section#entry-form .progress .bar {
+  background: #00afec;
+}
+/* line 49, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .file-uploads,
 #bsgc-2015 section#entry-form .fifty-words,
 #bsgc-2015 section#entry-form #upload-animation {
   width: 100%;
+  max-width: 624px;
   height: auto;
   float: none;
-  margin: 0;
+  margin: 0 auto;
 }
-/* line 52, ../sass/_entry_form.scss */
+/* line 58, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .fifty-words {
   margin-top: 20px;
 }
-/* line 55, ../sass/_entry_form.scss */
+/* line 61, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container {
   text-align: center;
   padding: 40px 20px;
   position: relative;
 }
-/* line 59, ../sass/_entry_form.scss */
+/* line 65, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container h3 {
   font-size: 28px;
   margin-bottom: 24px;
 }
-/* line 63, ../sass/_entry_form.scss */
+/* line 69, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container .headline {
   max-width: 530px;
   margin: 0 auto;
 }
-/* line 66, ../sass/_entry_form.scss */
+/* line 72, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container .headline h1 {
   margin-bottom: 45px;
 }
-/* line 69, ../sass/_entry_form.scss */
+/* line 75, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container .headline .description {
   font-weight: 600;
   font-size: 24px;
   line-height: 26px;
   margin-bottom: 50px;
 }
-/* line 75, ../sass/_entry_form.scss */
+/* line 81, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container .headline .notes {
   font-size: 18px;
   line-height: 20px;
   font-weight: 600;
 }
-/* line 81, ../sass/_entry_form.scss */
+/* line 87, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container .separator {
   height: 1px;
   max-width: 650px;
@@ -1002,16 +1007,16 @@
   margin-top: 40px;
   margin-bottom: 40px;
 }
-/* line 90, ../sass/_entry_form.scss */
+/* line 96, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container .input-error {
   border: 1px solid #ff0000 !important;
   background-color: #ddd !important;
 }
-/* line 94, ../sass/_entry_form.scss */
+/* line 100, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container .error-red {
   color: #ff0000 !important;
 }
-/* line 97, ../sass/_entry_form.scss */
+/* line 103, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container .formError,
 #bsgc-2015 section#entry-form .form-container .formErrorWords,
 #bsgc-2015 section#entry-form .form-container .formErrorFile,
@@ -1024,7 +1029,7 @@
   font-size: 14px;
   max-width: 480px;
 }
-/* line 108, ../sass/_entry_form.scss */
+/* line 114, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container .formError .btn,
 #bsgc-2015 section#entry-form .form-container .formErrorWords .btn,
 #bsgc-2015 section#entry-form .form-container .formErrorFile .btn,
@@ -1034,42 +1039,42 @@
   font-size: 18px;
   letter-spacing: 3px;
 }
-/* line 113, ../sass/_entry_form.scss */
+/* line 119, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container .formResultSuccess,
 #bsgc-2015 section#entry-form .form-container .formResultError {
   text-align: center;
 }
-/* line 117, ../sass/_entry_form.scss */
+/* line 123, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap {
   margin-top: 20px;
 }
-/* line 119, ../sass/_entry_form.scss */
+/* line 125, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap ::-webkit-input-placeholder {
   color: #000;
 }
-/* line 122, ../sass/_entry_form.scss */
+/* line 128, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap :-moz-placeholder {
   color: #000;
 }
-/* line 125, ../sass/_entry_form.scss */
+/* line 131, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap ::-moz-placeholder {
   color: #000;
 }
-/* line 128, ../sass/_entry_form.scss */
+/* line 134, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap :-ms-input-placeholder {
   color: #000;
 }
-/* line 131, ../sass/_entry_form.scss */
+/* line 137, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap .file-uploads {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 135, ../sass/_entry_form.scss */
+/* line 141, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap #upload-animation {
   height: 20px;
   margin: 0 auto 30px auto;
 }
-/* line 139, ../sass/_entry_form.scss */
+/* line 145, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap textarea {
   max-width: 624px;
   margin: 0 auto;
@@ -1078,12 +1083,12 @@
   margin-bottom: 40px;
 }
 @media (min-width: 768px) {
-  /* line 139, ../sass/_entry_form.scss */
+  /* line 145, ../sass/_entry_form.scss */
   #bsgc-2015 section#entry-form .form-container #entry-form-wrap textarea {
     height: 102px;
   }
 }
-/* line 149, ../sass/_entry_form.scss */
+/* line 155, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap .share-submit {
   display: block;
   margin-left: auto;
@@ -1093,26 +1098,26 @@
   margin-bottom: 0;
 }
 @media (min-width: 768px) {
-  /* line 149, ../sass/_entry_form.scss */
+  /* line 155, ../sass/_entry_form.scss */
   #bsgc-2015 section#entry-form .form-container #entry-form-wrap .share-submit {
     margin-bottom: 40px;
   }
 }
-/* line 159, ../sass/_entry_form.scss */
+/* line 165, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap .share-submit ul {
   margin: 0;
 }
-/* line 162, ../sass/_entry_form.scss */
+/* line 168, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap .share-submit li {
   vertical-align: middle;
   margin-bottom: 20px;
 }
-/* line 165, ../sass/_entry_form.scss */
+/* line 171, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap .share-submit li span {
   font-weight: 600;
   font-size: 20px;
 }
-/* line 169, ../sass/_entry_form.scss */
+/* line 175, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap .share-submit li button {
   font-size: 18px;
   letter-spacing: 4px;
@@ -1120,24 +1125,24 @@
   padding-left: 34px;
   font-weight: 700;
 }
-/* line 177, ../sass/_entry_form.scss */
+/* line 183, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap .share-submit a {
   display: block;
 }
-/* line 181, ../sass/_entry_form.scss */
+/* line 187, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap .share-submit a.facebook svg, #bsgc-2015 section#entry-form .form-container #entry-form-wrap .share-submit a.twitter svg {
   width: 33px;
   height: 33px;
 }
-/* line 187, ../sass/_entry_form.scss */
+/* line 193, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap .share-submit a.facebook.active svg path, #bsgc-2015 section#entry-form .form-container #entry-form-wrap .share-submit a.twitter.active svg path {
   fill: #00afec;
 }
-/* line 195, ../sass/_entry_form.scss */
+/* line 201, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap h2 {
   margin-bottom: 10px;
 }
-/* line 198, ../sass/_entry_form.scss */
+/* line 204, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap #upload-btn {
   display: block;
   width: 215px;
@@ -1145,12 +1150,12 @@
   margin: 10px auto;
   background: url("../img/attach-image.svg") 0 0 no-repeat;
 }
-/* line 206, ../sass/_entry_form.scss */
+/* line 212, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap #inputFile {
   position: absolute;
   left: -9999px;
 }
-/* line 211, ../sass/_entry_form.scss */
+/* line 217, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap #display-filename:before {
   content: '';
   display: inline-block;
@@ -1158,13 +1163,13 @@
   vertical-align: middle;
   margin-right: -0.25em;
 }
-/* line 218, ../sass/_entry_form.scss */
+/* line 224, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap #display-filename .file {
   padding: 0;
   margin-bottom: 10px;
   text-align: center;
 }
-/* line 222, ../sass/_entry_form.scss */
+/* line 228, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap #display-filename .file span {
   display: inline-block;
   margin-left: 10px;
@@ -1177,7 +1182,7 @@
   text-overflow: ellipsis;
   vertical-align: middle;
 }
-/* line 234, ../sass/_entry_form.scss */
+/* line 240, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap #display-filename .file .remove-file {
   display: inline-block;
   margin-left: 10px;
@@ -1185,7 +1190,7 @@
   height: 32px;
   vertical-align: middle;
 }
-/* line 240, ../sass/_entry_form.scss */
+/* line 246, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap #display-filename .file .remove-file:before, #bsgc-2015 section#entry-form .form-container #entry-form-wrap #display-filename .file .remove-file:after {
   content: " ";
   display: block;
@@ -1205,7 +1210,7 @@
   position: relative;
   top: 14px;
 }
-/* line 252, ../sass/_entry_form.scss */
+/* line 258, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container #entry-form-wrap #display-filename .file .remove-file:after {
   -webkit-transform: rotate(-45deg) translateY(-50%);
   -moz-transform: rotate(-45deg) translateY(-50%);
@@ -1214,7 +1219,7 @@
   transform: rotate(-45deg) translateY(-50%);
   top: 13px;
 }
-/* line 260, ../sass/_entry_form.scss */
+/* line 266, ../sass/_entry_form.scss */
 #bsgc-2015 section#entry-form .form-container .note {
   font-weight: 600;
   max-width: 610px;

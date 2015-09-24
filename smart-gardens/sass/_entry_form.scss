@@ -41,13 +41,19 @@
 				height: 125px;
 			}
 		}
+		.progress{
+			.bar{
+				background: $blue;
+			}
+		}
 		.file-uploads,
 		.fifty-words,
 		#upload-animation{
 			width: 100%;
+			max-width: 624px;
 			height: auto;
 			float: none;
-			margin: 0;	
+			margin: 0 auto;	
 		}
 		.fifty-words{
 			margin-top: 20px;

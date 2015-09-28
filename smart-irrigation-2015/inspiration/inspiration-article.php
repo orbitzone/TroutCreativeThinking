@@ -195,10 +195,6 @@
 
 <?php include "../templates/Includes/MobileNavigation.php" ?>
 
-<script type="text/javascript" src="javascript/jquery-1.11.2.min.js"></script>
-<script type="text/javascript" src="javascript/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="javascript/bootstrap.min.js"></script>
-<script type="text/javascript" src="javascript/reece-ocnav.js"></script>
 <?php include "../templates/Includes/SmartIrrigation2015Footer.php" ?>
 
 

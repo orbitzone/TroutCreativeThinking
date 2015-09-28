@@ -6,77 +6,61 @@
 <!--[if IE 10]>    <html class="no-js ie ie10" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-
-  <base href="/smart-irrigation-2015/" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta charset="utf-8">
-
-  <meta name="viewport" content="initial-scale=1.0">
-
+  <?php include "templates/Includes/SmartIrrigation2015Meta.php" ?>
   <title>Reece Smart Irrigation</title>
-
-  <link rel="shortcut icon" href="images/icons/favicon.ico">
-  <link rel="apple-touch-icon" href="images/icons/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-touch-icon-114x114.png">
-
-  <script src='javascript/modernizr-2.6.2.js' type='text/javascript'></script>
-
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
-    <link rel="stylesheet" type="text/css" href="css/reece-global.css" />
-    <?php include "templates/Includes/SmartIrrigation2015Header.php" ?>
+  <?php include "templates/Includes/SmartIrrigation2015Header.php" ?>
 
 </head>
 
 <body class="smart-irrigation-2015">
 
-<div class="ocmain-wrapper">
+  <div class="ocmain-wrapper">
 
-  <div class="browser-message">
-    <div class="content-container">
-      <div class="alert alert-warning" role="alert">
-        <button type="button" class="close" data-dismiss="alert">&times;</button>
-        <p><strong>Attention! </strong>Your browser is out of date and may not fully support all features of this website. Learn how to <a href="http://browsehappy.com/">Upgrade Your Browser</a> to ensure the best experience.</p>
+    <div class="browser-message">
+      <div class="content-container">
+        <div class="alert alert-warning" role="alert">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          <p><strong>Attention! </strong>Your browser is out of date and may not fully support all features of this website. Learn how to <a href="http://browsehappy.com/">Upgrade Your Browser</a> to ensure the best experience.</p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <?php include "templates/Includes/Navigation.php" ?>
+    <?php include "templates/Includes/Navigation.php" ?>
 
-<div id="main">
-        <div id="main-content">
-          <div class="banner-section background-green-dull">
-            <div class="section-row">
-              <div class="divide-1-1">
-                <div class="inner-content">
-                  <img src="images/smart-irrigation/banner.png">
+    <div id="main">
+      <div id="main-content">
+        <div class="banner-section background-green-dull">
+          <div class="section-row">
+            <div class="divide-1-1">
+              <div class="inner-content">
+                <img src="images/smart-irrigation/banner.png">
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="si-intro-section inner-spacing">
+          <div class="section-row">
+            <div class="divide-1-1">
+              <div class="inner-content">
+                <div class="text-area">
+                  <p><strong>Water is one of the most valuable resources we have and although we live in a country where water is, for the most part, readily available, it shouldn&rsquo;t be taken for granted.</strong></p>
+
+                  <p>Australians are the greatest per capita consumers of water, using an average of 100,000L of fresh water per person each year. Of that, approximately 40% of this household water is used outdoors. One of the easiest ways to save water around the home is to reduce the amount used on landscapes. An efficient irrigation system can play an enormous role in contributing to these savings. And of course, conservation techniques in the garden can also save time and effort as well as benefiting the environment.</p>
                 </div>
               </div>
-              <div class="clear"></div>
             </div>
+            <div class="clear"></div>
           </div>
-          <div class="si-intro-section inner-spacing">
-            <div class="section-row">
-              <div class="divide-1-1">
-                <div class="inner-content">
-                  <div class="text-area">
-                    <p><strong>Water is one of the most valuable resources we have and although we live in a country where water is, for the most part, readily available, it shouldn&rsquo;t be taken for granted.</strong></p>
-
-                    <p>Australians are the greatest per capita consumers of water, using an average of 100,000L of fresh water per person each year. Of that, approximately 40% of this household water is used outdoors. One of the easiest ways to save water around the home is to reduce the amount used on landscapes. An efficient irrigation system can play an enormous role in contributing to these savings. And of course, conservation techniques in the garden can also save time and effort as well as benefiting the environment.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="clear"></div>
-            </div>
-          </div>
-          <div class="si-video-section inner-spacing background-grey">
-            <div class="section-row">
-              <div class="divide-1-1">
-                <div class="inner-content">
-                  <div class="video-area">
-                    <a href="#">
-                      <img src="images/smart-irrigation/video.png">
-                    </a>
+        </div>
+        <div class="si-video-section inner-spacing background-grey">
+          <div class="section-row">
+            <div class="divide-1-1">
+              <div class="inner-content">
+                <div class="video-area">
+                  <a href="#">
+                    <img src="images/smart-irrigation/video.png">
+                  </a>
                   <!-- 
                   Replace image with this video code
                   <div class="videoWrapper" style="background-color:red;padding-bottom: 56.25%;">
@@ -472,19 +456,9 @@
                       </div>
                     </div>
                   </div><!--#main-->
-
-
-    <?php include "templates/Includes/Footer.php" ?>
-</div>
-
-<?php include "templates/Includes/MobileNavigation.php" ?>
-
-<script type="text/javascript" src="javascript/jquery-1.11.2.min.js"></script>
-<script type="text/javascript" src="javascript/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="javascript/bootstrap.min.js"></script>
-<script type="text/javascript" src="javascript/reece-ocnav.js"></script>
-<?php include "templates/Includes/SmartIrrigation2015Footer.php" ?>
-
-
-        </body>
-</html>
+                  <?php include "templates/Includes/Footer.php" ?>
+                </div>
+                <?php include "templates/Includes/MobileNavigation.php" ?>
+                <?php include "templates/Includes/SmartIrrigation2015Footer.php" ?>
+              </body>
+              </html>

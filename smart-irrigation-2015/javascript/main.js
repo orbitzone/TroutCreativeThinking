@@ -35,10 +35,8 @@ $( document ).ready(function() {
     $(this).toggleClass("active");
   });
 
-
-
   if($('.smart-tips-masonary').length){
-    $('.smart-tips-masonary img').load(function(){
+    $('.smart-tips-masonary').imagesLoaded().then(function(){
       $('.smart-tips-masonary').masonry({
         itemSelector: '.one-box-item'
       });

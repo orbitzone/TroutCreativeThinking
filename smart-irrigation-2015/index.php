@@ -6,26 +6,9 @@
 <!--[if IE 10]>    <html class="no-js ie ie10" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-
-  <base href="/smart-irrigation-2015/" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta charset="utf-8">
-
-  <meta name="viewport" content="initial-scale=1.0">
-
+  <?php include "templates/Includes/SmartIrrigation2015Meta.php" ?>
   <title>Reece Smart Irrigation</title>
-
-  <link rel="shortcut icon" href="images/icons/favicon.ico">
-  <link rel="apple-touch-icon" href="images/icons/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-touch-icon-114x114.png">
-
-  <script src='javascript/modernizr-2.6.2.js' type='text/javascript'></script>
-
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
-    <link rel="stylesheet" type="text/css" href="css/reece-global.css" />
-    <?php include "templates/Includes/SmartIrrigation2015Header.php" ?>
-
+  <?php include "templates/Includes/SmartIrrigation2015Header.php" ?>
 </head>
 
 <body class="smart-irrigation-2015">

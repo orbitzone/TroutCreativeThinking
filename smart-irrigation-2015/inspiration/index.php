@@ -111,9 +111,7 @@
 
     <?php include "../templates/Includes/Footer.php" ?>
 </div>
-
 <?php include "../templates/Includes/MobileNavigation.php" ?>
-
 <?php include "../templates/Includes/SmartIrrigation2015Footer.php" ?>
 
 

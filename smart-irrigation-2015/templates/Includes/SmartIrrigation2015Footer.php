@@ -1,6 +1,5 @@
 <script src="/smart-irrigation-2015/javascript/vendor/slick.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="/smart-irrigation-2015/javascript/vendor/jquery.matchHeight-min.js" type="text/javascript" charset="utf-8"></script>
-<script src="/smart-irrigation-2015/javascript/vendor/jquery-migrate-1.2.1.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="/smart-irrigation-2015/javascript/vendor/handlebars.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="/smart-irrigation-2015/javascript/vendor/placeholders.jquery.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="/smart-irrigation-2015/javascript/vendor/TweenMax.min.js" type="text/javascript" charset="utf-8"></script>

@@ -417,7 +417,7 @@
                               </div>
                             </div></div>
                             <div class="one-box-item ">
-                              <div class="inner-content background-bright-brown text-white">
+                              <div class="inner-content background-blue text-white">
                                 <div class="tip-text">
                                   <h5>Keep the soil healthy </h5>
                                   <ul><li>Spreading a layer of organic mulch around plants helps them retain moisture, saving water, time and money. </li></ul>

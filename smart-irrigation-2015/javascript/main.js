@@ -1,3 +1,26 @@
+$.fn.imagesLoaded = function () {
+
+  $imgs = this.find('img[src!=""]');
+  // if there's no images, just return an already resolved promise
+  if (!$imgs.length) {return $.Deferred().resolve().promise();}
+
+  // for each image, add a deferred object to the array which resolves when the image is loaded
+  var dfds = [];  
+  $imgs.each(function(){
+
+      var dfd = $.Deferred();
+      dfds.push(dfd);
+      var img = new Image();
+      img.onload = function(){dfd.resolve();}
+      img.onerror = function(){dfd.resolve();}
+      img.src = this.src;
+
+  });
+
+  // return a master promise object which will resolve when all the deferred objects have resolved
+  // IE - when all the images are loaded
+  return $.when.apply($,dfds);
+};
 $( document ).ready(function() {
   $('.product-list .divide-1-4 .inner-content').matchHeight();
   $('.inspiration-articles .divide-1-3 .inner-content').matchHeight();
@@ -133,14 +156,14 @@ $( document ).ready(function() {
 });
 
 function postLoadThinking(){
-  $('.match-height img').load(function(){
+  $('.match-height img').imagesLoaded().then(function(){
     $('.match-height .divide-1-3.new-item').matchHeight();
   });
 }
 
 function postLoadInspiration(){
 
-  $('.slide-thumbnail img').load(function(){
+  $('.slide-thumbnail').imagesLoaded().then(function(){
       $('.slide-thumbnail.new-slide').slick({
         dots: false,
         arrows: true,
@@ -150,7 +173,7 @@ function postLoadInspiration(){
       });
       $('.slide-thumbnail.new-slide').removeClass("new-slide");
 
-      $('.match-height img').load(function(){
+      $('.match-height').imagesLoaded().then(function(){
           $('.match-height .divide-1-3.new-item').matchHeight();
       });
   });

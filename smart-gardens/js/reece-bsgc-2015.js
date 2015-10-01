@@ -80,6 +80,7 @@ $(document).ready(function(){
 
 		  //Grab an image obj
 		  var I = document.getElementById("img"+counter);
+		  $(I).removeAttr('data-src');
 		  isBackground = false;
 		  if(I.tagName.toLowerCase() !== "img"){
 		  	I = new Image();

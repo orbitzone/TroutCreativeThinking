@@ -1,8 +1,7 @@
 #bsgc-2015{
 	#banner{
 		overflow: hidden;
-		background: $blue;
-		background: url(../img/entry-pattern.jpg) repeat;
+		background: $banner-bg;
 		position: relative;
 		overflow: none;
 		.banner{
@@ -41,20 +40,23 @@
 		.plant-left{
 			position: absolute;
 			top: 0;
-			left: -115px;
+			left: 0;
+			display: none;
 			@media (min-width: $screen-sm-min){
 				top: 0;
-				right: 0;
+				display: block;
 			}
 		}
 		.plant-right{
 			position: absolute;
 			bottom: 0;
 			right: -179px;
+			display: none;
 			@media (min-width: $screen-sm-min){
 				top: 0;
 				bottom: auto;
 				right: 0;
+				display: block;
 			}
 		}
 	}

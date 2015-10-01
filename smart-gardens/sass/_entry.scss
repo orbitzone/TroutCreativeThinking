@@ -1,0 +1,105 @@
+#bsgc-2015{
+	section#entry{
+		position: relative;
+		background: $banner-bg;
+		text-align: center;
+		color: $white;
+		padding: 40px 0;
+		.container{
+			position: relative;
+		}
+		.beautifully-logo{
+			margin-bottom: 30px;
+		}
+		.slick-slider{
+				margin-bottom: 0;
+		}
+		#slider-arrows{
+			text-align: left;
+			margin-bottom: 30px;
+			.slick-arrow{
+				border: none;
+				background: $blue;
+				outline: none;
+				@include appearance(none);
+				@include border-radius(0);
+				width: 60px;
+				i{
+					color: $white;
+					font-size: 50px;
+				}
+				&:hover{
+					background: $green;
+				}
+			}
+		}
+		.entry{
+			background: $white;
+			padding: 30px;
+			margin-bottom: 30px;
+		}
+		.success-message{
+			display: none;
+			color: $green;
+			text-align: center;		
+		}
+		.entry-details{
+			text-align: left;
+			color: $black;
+			.field{
+				margin-bottom: 20px;
+			}
+			.label-tag{
+				color: $blue;
+				text-transform: uppercase;
+				display: block;
+				margin-bottom: 10px;
+			}
+		}
+		.share-submit {
+					display: block;
+					margin-left: auto;
+					margin-right: auto;
+					padding: 0;
+					text-align: left;
+					margin-bottom: 0;
+					ul{
+						margin: 0;
+					}
+					li{
+						vertical-align: middle;
+						span{
+							font-weight: 600;
+							font-size: 20px;
+						}
+						button{
+							font-size: 18px;
+							letter-spacing: 4px;
+							padding-right: 34px;
+							padding-left: 34px;
+							font-weight: 700;
+						}
+					}
+					a{
+						display: block;
+						&.facebook,
+						&.twitter{
+							svg{
+								width: 33px;
+								height: 33px;
+								path{
+									fill: $black;
+								}
+							}
+							&.active{
+								svg{
+									path{
+										fill: $blue;
+									}
+								}
+							}
+						}
+					}
+				}
+	}
+}

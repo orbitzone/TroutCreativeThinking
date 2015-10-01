@@ -1,4 +1,13 @@
-// DIY DISASTERS COMP 2014
+function getQueryVariable(variable)
+{
+       var query = window.location.search.substring(1);
+       var vars = query.split("&");
+       for (var i=0;i<vars.length;i++) {
+               var pair = vars[i].split("=");
+               if(pair[0] == variable){return pair[1];}
+       }
+       return(false);
+}
 $(document).ready(function(){
 	
 	// app
@@ -33,25 +42,74 @@ $(document).ready(function(){
 		loadMoreEntriesBtn:				null,
 		moreItemsToLoad:				false,
 		moreItems:						null,
-		hashPrefix: 					"diyItem", 
+		hashPrefix: 					"smartGardenItem", 
 		
 		// ---------------------------- INIT ---------- //
 		init: function()
 		{
-			if($('.sunflower').length > 0){
-				$('.sunflower').addClass('grow');				
-			}
 			// entry form page?
 			if($("#entry-form").length > 0) app.initEntryForm();
 			
 			// sort grid?
 			if($("#entries-grid").length > 0) app.initEntriesGrid();
 
+			if($('#entry').length > 0) app.initEntry();
 			if($("#contact").length > 0) app.initContact();
-			
+			app.readImages();
 		},
-		
-		
+		imagesToLoad: new Array(),
+		readImages: function(){
+			//app.imagesToLoad.push("img/entry-pattern.jpg");
+			var n=0;
+			$('[data-src]').each(function(){
+				app.imagesToLoad.push($(this).data("src"));
+				$(this).addClass('bg-image');
+				this.id = "img"+n;
+				n= n +1;
+			});
+			app.loadImages(0);
+		},
+		loadImages: function(counter){
+			//Break out if no more images
+		  if(counter == app.imagesToLoad.length) { 
+		  	if($('.sunflower').length > 0){
+					$('.sunflower').addClass('grow');				
+				}
+				return; 
+		  }
+
+		  //Grab an image obj
+		  var I = document.getElementById("img"+counter);
+		  isBackground = false;
+		  if(I.tagName.toLowerCase() !== "img"){
+		  	I = new Image();
+		  	I.id = "img0";
+		  	isBackground = true;
+		  }
+		  //Monitor load or error events, moving on to next image in either case
+		  I.onload = I.onerror = function() { 
+		  	var $elem = $(document.getElementById("img"+counter));
+		  	if(isBackground){
+		  		$elem.css({ 'background-image': "url(" + app.imagesToLoad[counter] + ")" });
+		  	}
+	  		$elem.addClass('loaded');
+		  	app.loadImages(counter+1); 
+		  }
+
+		  //Change source (then wait for event)
+		  I.src = app.imagesToLoad[counter];
+		},
+		initEntry: function(){
+			if(getQueryVariable('submitted') == "true"){
+				$('.success-message').show();
+			}
+			$('#entry').find('.entryPopImage').slick({
+				slidesToShow: 1,
+				appendArrows: $('#slider-arrows'),
+				prevArrow: "<button type=\"button\" class=\"arrow-prev\"><i class=\"icon icon-angle-left\"></i></button>",
+				nextArrow: "<button type=\"button\" class=\"arrow-next\"><i class=\"icon icon-angle-right\"></i></button>"				 	
+			});
+		},
 		// ---------------------------- FUNCTIONS ---------- //
 		
 		/*
@@ -160,7 +218,7 @@ $(document).ready(function(){
 				//scroll to top of body container
 				app.entryModal.find('.modalBody').scrollTop(0, 0);
 				app.entryModal.find('.fbIcon').attr('href','http://www.facebook.com/sharer.php?u='+window.location+'&title='+_this.find('.caption h3').html());
-				app.entryModal.find('.twIcon').attr('href','ttps://twitter.com/share?url='+window.location+'&text='+_this.find('.caption h3').html()+'&via=@reece'+'&hashtags=smart-garden,garden,reece');
+				app.entryModal.find('.twIcon').attr('href','https://twitter.com/share?url='+window.location+'&text='+_this.find('.caption h3').html()+'&via=@reece'+'&hashtags=smart-garden,garden,reece');
 			});
 			
 			app.modalNextBtn.on('click', function(e){ 
@@ -319,39 +377,6 @@ $(document).ready(function(){
 				$("."+att).fadeOut(500);
 			});
 			
-			// share button FB
-			app.shareFBbtn.on('click', function(e){
-				e.preventDefault();
-				if(app.shareEntryToFB == false)
-				{
-					app.shareFBbtn.removeClass('inactive');
-					app.shareFBbtn.addClass('active');
-					app.shareEntryToFB = true;
-				}
-				else
-				{
-					app.shareFBbtn.removeClass('active');
-					app.shareFBbtn.addClass('inactive');
-					app.shareEntryToFB = false;
-				}
-			});
-			// share button TW
-			app.shareTWbtn.on('click', function(e){
-				e.preventDefault();
-				if(app.shareEntryToTW == false)
-				{
-					app.shareTWbtn.removeClass('inactive');
-					app.shareTWbtn.addClass('active');
-					app.shareEntryToTW = true;
-				}
-				else
-				{
-					app.shareTWbtn.removeClass('active');
-					app.shareTWbtn.addClass('inactive');
-					app.shareEntryToTW = false;
-				}
-			});
-			
 			// trigger file upload
 			app.uploadBtn.on('click', function(e){
 				e.preventDefault();
@@ -505,7 +530,7 @@ $(document).ready(function(){
 				setTimeout(function(){
 					// Redirect to the entry with the DB ID
 					sessionStorage.entrySubmitted = true;
-					window.location = 'entries.html#diyItem7';
+					window.location = 'entry.html?submitted=true';
 					/*
 
 					clearInterval(intval);

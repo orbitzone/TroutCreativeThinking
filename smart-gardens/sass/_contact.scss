@@ -1,7 +1,7 @@
 #bsgc-2015{
 	section#contact{
 		position: relative;
-		background: url(../img/entry-pattern.jpg) repeat;
+		background: $banner-bg;
 		text-align: center;
 		color: $white;
 		.plant{
@@ -9,6 +9,10 @@
 			top: 0;
 			right: 0;
 			z-index: 0;
+			display: none;
+			@media (min-width: $screen-sm-min){
+				display: block;
+			}
 			img{
 				width: 180px;
 				@media (min-width: $screen-sm-min){

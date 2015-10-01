@@ -1,7 +1,7 @@
 #bsgc-2015{
 	section#prizes{
 		position: relative;
-		background: url(../img/entry-pattern.jpg) repeat;
+		background: $banner-bg;
 		text-align: center;
 		color: $white;
 		.plant{
@@ -13,8 +13,10 @@
         filter: FlipH;
         -ms-filter: "FlipH";
         height: 200px;
+        display: none;
         @media (min-width: $screen-sm-min){
-        	height: 600px;
+        	display: block;
+        	height: auto;
         }
 			}
 		}

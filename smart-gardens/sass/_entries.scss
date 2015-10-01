@@ -128,9 +128,32 @@
 						}
 					}
 				}
-			}
+			}			
 		}/** /#entries-grid **/		
 	}/** /entries **/	
+}
+#pagination{
+	.pagination{
+				text-align: center;
+				li{
+					a{
+						@include border-radius(2px);
+						border: none;
+						background: $dark-green;
+						color: $white;
+						font-weight: 700;						
+						margin: 0 2.5px;
+						&:hover{
+							background: $green;
+						}
+					}
+					&.active{
+						a{
+							background: $blue;
+						}
+					}
+				}
+			}
 }
 #entry-modal{
 	 	  text-align: center;

@@ -1,13 +1,20 @@
 #bsgc-2015{
 	section#entry-form{
 		position: relative;
-		background: url(../img/entry-pattern.jpg) repeat;
+		background: $banner-bg;
 		text-align: center;
 		color: $white;
+		.container{
+			position: relative;
+		}
 		.plant{
 			position: absolute;
 			top: 0;
 			right: 0;
+			display: none;
+			@media (min-width: $screen-sm-min){
+				display: block;
+			}
 			img{
 				width: 160px;
 				@media (min-width: $screen-sm-min){

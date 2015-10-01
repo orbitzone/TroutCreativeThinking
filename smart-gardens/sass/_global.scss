@@ -10,6 +10,21 @@
 		-webkit-font-smoothing: antialiased;
 	  -moz-osx-font-smoothing: grayscale;
   }
+  .pattern-bg{
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: $banner-bg repeat;
+			width: 100%;
+			height: 100%;			
+		}
+  .bg-image{
+  	opacity: 0;
+  	@include transition(all 0.5s ease-out);
+		&.loaded{
+			opacity: 1;
+		}
+  }
   .container{
 		padding: 0 30px;
 	}

@@ -28,7 +28,7 @@
 
 <div id="main">
         <div id="main-content">
-          <div class="banner-section">
+          <div class="banner-section hidden-xs">
             <div class="section-row full-width-banner">
               <div class="divide-1-1">
                 <div class="inner-content main-banner">
@@ -41,6 +41,26 @@
                     </div>
                     <div class="one-slide">
                       <img src="images/homepage/banner1.jpg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="clear"></div>
+            </div>
+          </div>
+          <div class="banner-section visible-xs-block">
+            <div class="section-row full-width-banner">
+              <div class="divide-1-1">
+                <div class="inner-content main-banner">
+                  <div class="slider">
+                    <div class="one-slide">
+                      <img src="images/homepage/banner1-mobile.jpg">
+                    </div>
+                    <div class="one-slide">
+                      <img src="images/homepage/banner1-mobile.jpg">
+                    </div>
+                    <div class="one-slide">
+                      <img src="images/homepage/banner1-mobile.jpg">
                     </div>
                   </div>
                 </div>

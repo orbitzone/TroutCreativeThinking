@@ -5,6 +5,9 @@ body.grant-2015 .grant-2015-content{
 // 	outline:solid 1px #bada55;
 // }
 
+color: @textGrey;
+font-size: 16px;
+
 .section-container{
 	max-width: @max-width-section;
 	padding:0;
@@ -19,7 +22,39 @@ body.grant-2015 .grant-2015-content{
 .text-center{
 	text-align: center;
 }
-
+.text-blue{
+	color:@textBlue;
+}
+.text-big{
+	font-size:48px;
+}
+.text-standard-heading{
+	font-size:32px;
+}
+.text-article-heading{
+	font-size:38px;
+}
+.text-intro{
+	font-size:18px;
+	font-weight:bold;
+}
+.img-spacing{
+	padding-top: 30px;
+	padding-bottom:30px;
+}
+.reece-logo{
+	width:125px;
+}
+.spacing-big{
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.spacing-big-top{
+	padding-top: 60px;
+}
+.spacing-big-bottom{
+	padding-bottom: 60px;
+}
 .row-edge{
 	margin-left:0;
 	margin-right:0;
@@ -28,6 +63,54 @@ body.grant-2015 .grant-2015-content{
 	max-width: @max-width-content;
 	margin-left:auto;
 	margin-right:auto;
+}
+.heading-latest-project{
+	.text-subheading{
+		font-size:22px;
+		font-weight:500;
+		text-transform: uppercase;
+	}
+}
+.read-more-button-wrap{
+	margin-top:30px;
+	.read-more-button{
+		display:block;
+		color:@textBlue;
+		padding-top:12px;
+		padding-bottom:12px;
+		background:url('../images/wave/read-more-line.png') no-repeat left top;
+
+	}
+}
+.wave-section{
+	position:relative;
+	.wave-blue-to-white{
+		height:7px;
+		background:url('../images/wave/wave-blue-to-white.png') repeat-x;
+	}
+	.wave-white-to-grey{
+		height:7px;
+		background:url('../images/wave/wave-white-to-grey.png') repeat-x;
+	}
+	.wave-grey-to-white{
+		height:7px;
+		background:url('../images/wave/wave-grey-to-white.png') repeat-x;
+	}
+	.wave-white-to-image{
+		position:relative;
+		height:7px;
+		background:url('../images/wave/wave-white-to-image.png') repeat-x;
+		top:7px;
+		z-index:100;
+
+	}
+	.wave-image-to-white{
+		position:relative;
+		height:7px;
+		background:url('../images/wave/wave-image-to-white.png') repeat-x;
+		bottom:7px;
+		z-index:100;
+	}
 }
 .col-edge{
 	padding-left:0;
@@ -46,14 +129,20 @@ body.grant-2015 .grant-2015-content{
 
 }
 .background-world{
-	background:url('../images/homepage/background-world.jpg') no-repeat center center;
+	background:url('../images/homepage/background-world.jpg') no-repeat top center;
 	position:relative;
 	background-size: cover;
 	text-align:center;
 }
+.justin-wrapper{
+	position:relative;
+	.india-outline{
+		position:absolute;
+		right:-28%;
+		top:28%;
+	}
+}
 .homepage-video{
-	max-height:450px;
-	overflow:hidden;
 	.background-video{
 		background:url('../images/homepage/video.jpg') no-repeat center center;
 		padding-bottom:40%;
@@ -70,6 +159,12 @@ body.grant-2015 .grant-2015-content{
 				height:52px;
 				margin:0 auto;
 			}
+			.cta-text{
+				font-size: 28px;
+				width: 257px;
+				display: block;
+				margin: 0 auto;
+			}
 		}
 	}
 
@@ -78,9 +173,73 @@ body.grant-2015 .grant-2015-content{
 	list-style: none;
 	padding:0;
 	margin:0;
+	a{
+		display:block;
+		padding-top:60px;
+		padding-bottom:60px;
+		color:@textWhite;
+		font-size:24px;
+		span{
+			font-size:10px;
+			text-transform: uppercase;
+			display:block;
+		}
+		&.nav-home{
+
+		}
+		&.nav-justin{
+
+		}
+		&.nav-james{
+
+		}
+		&.nav-timothy{
+
+		}
+		&:hover,&:active,&:focus{
+			text-decoration: none;
+		}
+	}
+
 }
+.latest-project-section{
+	.postcard-wrapper{
+		position:relative;
+		padding-top:30px;
+		.postcard-image-wrapper{
+				-ms-transform: rotate(0deg);
+				-webkit-transform: rotate(0deg);
+				transform: rotate(0deg);
+			&.img-behind-rotate{
+				position:absolute;
+				top:12px;
+				-ms-transform: rotate(-6deg);
+				-webkit-transform: rotate(-6deg);
+				transform: rotate(-6deg);
+			}
+			&.stamp{
+				position:absolute;
+				right:0;
+				bottom:0;
+				left:-25%;
+			}
 
+		}
 
+	}
+	.project-details{
+		padding-top:30px;
+	}
+}
+.project-details{
+	.date{
+		font-size: 12px;
+	}
+	.name{
+		font-size:22px;
+		font-weight:500;
+	}
+}
 
 
 

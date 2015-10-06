@@ -10,7 +10,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1.0">
-  <title>Reece BS3 Template</title>
+  <title>Reece Grant 2015</title>
   <link rel="shortcut icon" href="images/icons/favicon.ico">
   <link rel="apple-touch-icon" href="images/icons/apple-touch-icon.png">
   <link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-touch-icon-72x72.png">
@@ -33,6 +33,9 @@
     <?php include "templates/Includes/Navigation.php" ?>
     <div class="grant-2015-content">
       <div class="container-fluid section-container">
+
+<!--HEADER SECTION -->
+<div class="wave-section wave-homepage-header">
         <div class="row row-edge banner-homepage background-blue">
           <div class="col-lg-12 col-edge background-homepage">
           </div>
@@ -40,37 +43,43 @@
             <div class="row row-limit">
               <ul class="grant-2015-nav">
                 <li class="col-sm-3 col-xs-6">
-                  Home
+                  <a href="#" class="active nav-home">Home</a>
                 </li>
                 <li class="col-sm-3 col-xs-6">
-                  Justin
+                  <a href="#" class="active nav-justin">Justin&rsquo;s <span>project</span></a>
                 </li>
                 <li class="col-sm-3 col-xs-6">
-                  James
+                  <a href="#" class="active nav-james">James&rsquo; <span>project</span></a>
                 </li>
                 <li class="col-sm-3 col-xs-6">
-                  Timothy
+                  <a href="#" class="active nav-timothy">Timothy&rsquo;s <span>project</span></a>
                 </li>
               </ul>
             </div>
           </div>
-        </div>
+        </div>  
+        <div class="wave-blue-to-white"></div>
+</div>
+<!--//HEADER SECTION -->
+<!--INTRO SECTION -->
+<div class="wave-section">
         <div class="row row-edge">
           <div class="col-lg-12 col-edge">
             <div class="container">
-              <div class="row row-limit">
+              <div class="row row-limit spacing-big">
                 <div class="col-lg-12">
-                  [reece logo]
+
+                  <img class="reece-logo" src="images/homepage/reece-logo.png">
                 </div>
               </div>
             </div>
             <div class="container">
-              <div class="row row-limit">
-                <div class="col-sm-6 col-xs-8">
-                  <h3>We&rsquo;re passionate about making a difference.</h3>
-                  <p>The Reece Grant awards up to $25,000 to support community water projects here and abroad.</p>
+              <div class="row row-limit spacing-big-bottom">
+                <div class="col-sm-5  col-xs-8">
+                  <h3 class="text-blue text-big">We&rsquo;re passionate about making a difference.</h3>
+                  <p class="text-blue text-intro">The Reece Grant awards up to $25,000 to support community water projects here and abroad.</p>
                 </div>
-                <div class="col-sm-6 col-xs-12">
+                <div class="col-sm-6 col-sm-offset-1 col-xs-12">
                   <p>Clean water and sanitation are fundamental for healthy and safe communities, yet globally millions of people still do not have access to these basic services.</p>
                   <p>The Reece Grant is an initiative that aims to improve quality of life within underprivileged communities by supporting our customers in undertaking vital water projects. Each project is designed to make clean water and basic sanitation available to those who need it most.</p>
                   <p>In 2015, we have granted three inspiring Australian tradies a total of $25,000 to kick start three international water projects. These projects are in India, East Timor and the Philippines. Here you can find out more about this important work. </p>
@@ -79,43 +88,58 @@
             </div>
           </div>
         </div>
+
+</div>
+<!--//INTRO SECTION -->
+<!--VIDEO SECTION -->
+<div class="wave-section">
+<div class="wave-white-to-image"></div>
         <div class="row row-edge homepage-video">
           <div class="col-lg-12 col-edge background-video">
             <div class="cta-video">
               <div class="play-button-wrapper">
                 <img class="play-button" src="images/homepage/play-button.png">
               </div>
-              <div class="cta-text">
+              <div class="cta-text text-blue">
                 Watch what our three recipients have to say
               </div>
             </div>
           </div>
         </div>
+<div class="wave-image-to-white"></div>
+</div>
+<!--//VIDEO SECTION -->
+<!--THE PROJECTS SECTION -->
+<div class="wave-section">
         <div class="row row-edge">
           <div class="col-lg-12 col-edge background-world">
-            <div class="container">
+            <div class="container spacing-big">
               <div class="row row-limit text-left">
                 <div class="col-lg-12">
-                  <h3>The Projects</h3>
-                  <img class="img-responsive" src="http://placehold.it/700x300">
+                  <h3 class="text-standard-heading text-blue">The projects</h3>
+                  <div class="justin-wrapper">
+                    <img class="india-outline" src="images/homepage/india-outline.png">
+                    <img class="img-responsive img-spacing" src="images/homepage/justin.jpg">
+                  </div>
+
                 </div>
-                <div class="col-sm-6 col-sm-offset-1">
+                <div class="col-sm-7 col-sm-offset-1 text-blue">
                   Justin Morris
                   <p>Justin has been granted $15,000 for his submission to improve India&rsquo;s complex sanitation issues. Partnering with the We Can&rsquo;t Wait foundation, he is putting the money towards the construction of toilet facilities and sanitation education in schools in Nasik, India. </p>
                   <div class="read-more-button-wrap"><a href="#" class="read-more-button">Read more</a></div>
                 </div>
               </div>
             </div>
-            <div class="container">
-              <div class="row row-limit text-left">
+            <div class="container spacing-big-bottom">
+              <div class="row row-limit text-left text-blue">
                 <div class="col-sm-6">
-                  <img class="img-responsive" src="http://placehold.it/340x300">
+                  <img class="img-responsive img-spacing" src="images/homepage/timothy.jpg">
                   Timothy Brideson 
                   <p>Tim has been granted $5,000 and is using the money to rebuild toilet facilities at a damaged school in the Philippines. He will also be running education sessions the local tradesmen and students to ensure long-term change.</p>
                   <div class="read-more-button-wrap"><a href="#" class="read-more-button">Read more</a></div>
                 </div>
                 <div class="col-sm-6">
-                  <img class="img-responsive" src="http://placehold.it/340x300">
+                  <img class="img-responsive img-spacing" src="images/homepage/james.jpg">
                   James Millis
                   <p>James has been granted $5,000 for his project in East Timor and is putting the funds towards restoring two remote villages with proper facilities to access spring water, water filtration and toilet facilities. </p>
                   <div class="read-more-button-wrap"><a href="#" class="read-more-button">Read more</a></div>
@@ -124,14 +148,19 @@
             </div>
           </div>
         </div>
-        <div class="row row-edge background-grey">
+</div>
+<!--//THE PROJECTS SECTION -->
+<!--LATEST PROJECTS SECTION -->
+<div class="wave-section latest-project-section">
+<div class="wave-white-to-grey"></div>
+        <div class="row row-edge background-grey spacing-big">
           <div class="col-lg-12 col-edge">
             <div class="container">
               <div class="row row-limit text-left">
                 <div class="col-lg-12">
                   <div class="heading-latest-project">
-                    <h3>Latest project</h3>
-                    <p>update</p>
+                    <h3 class="text-standard-heading">Latest project</h3>
+                    <p class="text-subheading">Update</p>
                   </div>
                 </div>
               </div>
@@ -139,25 +168,36 @@
             <div class="container">
               <div class="row row-limit text-left">
                 <div class="col-sm-6">
-                  <div class="postcard-image-wrapper">
-                    <img class="img-responsive" src="http://placehold.it/375x270">
+                  <div class="postcard-wrapper">
+                    <div class="postcard-image-wrapper stamp">
+                      <img src="images/homepage/stamp-sm.png">
+                    </div>
+                    <div class="postcard-image-wrapper img-behind-rotate">
+                      <img class="img-thumbnail" src="images/homepage/snap2.png">
+                    </div>
+                    <div class="postcard-image-wrapper">
+                      <img class="img-thumbnail" src="images/homepage/snap1.png">
+                    </div>
                   </div>
                 </div>
                 <div class="col-sm-6">
                   <div class="project-details">
                     <p class="date">THURSDAY 6TH AUGUST</p>
                     <p class="name">Justin Morris</p>
-                    <h3>This is the article title location </h3>
-                  </div>
-                  <div class="project-description">
+                    <h3 class="text-blue text-article-heading">This is the article title location </h3>
+                  <div class="project-description text-blue">
                     <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis.</p>
                   </div>
                   <div class="read-more-button-wrap"><a href="#" class="read-more-button">Read more</a></div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+<div class="wave-grey-to-white"></div>
+</div>
+<!--LATEST PROJECTS SECTION -->
       </div>
     </div><!--.grant-2015-content-->
     <?php include "templates/Includes/Footer.php" ?>

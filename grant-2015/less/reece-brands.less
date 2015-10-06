@@ -1,0 +1,678 @@
+/*======================
+ Brand page
+======================*/
+@import 'reece-variables';
+
+.brandPage {
+  background: #fafafa;
+  border: solid 1px #d7e7ee;
+}
+
+.breadcrumb {
+  &.bathroom li.current > *,
+  &.bathroom li.active > * {
+    color: @brandingBathrooms;
+  }
+  &.plumbing li.current > *,
+  &.plumbing li.active > * {
+    color: @brandingPlumbing;
+  }
+  &.civil li.current > *,
+  &.civil li.active > * {
+    color: @brandingCivil;
+  }
+  &.hvacr li.current > *,
+  &.hvacr li.active > * {
+    color: @brandingHvacr;
+  }
+  &.irrigation li.current > *,
+  &.irrigation li.active > * {
+    color: @brandingIrrigation;
+  }
+  &.onsite li.current > *,
+  &.onsite li.active > * {
+    color: @brandingOnsite;
+  }
+}
+
+.brandPageHeader {
+  font-weight: 200;
+  font-size: 20px;
+  color: #333;
+  p {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
+.brandPageSubHeader {
+  color: #e2001a;
+  display: block;
+  font-size: 15px;
+}
+
+.brandImageWrap {
+  padding: 75px 0 60px;
+  text-align: center;
+}
+
+/* Product Carousel */
+#productCarousel {
+  .carousel-indicators {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: auto;
+    text-align: center;
+    padding: 10px;
+    li {
+      float: none;
+      display: inline-block;
+      border: solid 1px #a2b8c1;
+      height: 15px;
+      width: 15px;
+      background: @white;
+      .border-radius(15px);
+      &.active {
+        background: #534545;
+      }
+    }
+  }
+  .carousel-control {
+    color: @white;
+  }
+}
+
+/* brand page navigation */
+.brandWrap {
+  padding: 20px 0 0
+}
+
+.brandList {
+  margin: 0;
+  text-align: center;
+  position: relative;
+  margin: 0 20px -20px;
+  height: auto;
+  text-align: center;
+  li {
+    list-style: none;
+    border: solid 1px #a2b8c1;
+    margin: 0 0 0 -5px;
+    z-index: 1;
+    display: inline-block;
+    position: relative;
+    background: @white;
+    a {
+      padding: 10px 25px;
+      display: block;
+      color: #8a999f;
+      cursor: pointer;
+      &:hover {
+        text-decoration: none;
+        background: #eaeaea;
+        color: #333;
+      }
+    }
+    &.active {
+      border-color: #e29da5;
+      z-index: 2;
+      a, a:hover {
+        color: #e2001a;
+        background: #ffd9dd;
+      }
+    }
+  }
+}
+
+.plumbing .brandList {
+  li {
+    &.active {
+      border-color: @brandingPlumbing;
+      a, a:hover {
+        color: @brandingPlumbing;
+        background: fade(@brandingPlumbing, 20%);
+      }
+    }
+  }
+}
+
+.civil .brandList {
+  li {
+    &.active {
+      border-color: @brandingCivil;
+      a, a:hover {
+        color: @brandingCivil;
+        background: fade(@brandingCivil, 20%);
+      }
+    }
+  }
+}
+
+.hvacr .brandList {
+  li {
+    &.active {
+      border-color: @brandingHvacr;
+      a, a:hover {
+        color: @brandingHvacr;
+        background: fade(@brandingHvacr, 20%);
+      }
+    }
+  }
+}
+
+.irrigation .brandList {
+  li {
+    &.active {
+      border-color: @brandingIrrigation;
+      a, a:hover {
+        color: @brandingIrrigation;
+        background: fade(@brandingIrrigation, 20%);
+      }
+    }
+  }
+}
+
+.onsite .brandList {
+  li {
+    &.active {
+      border-color: @brandingOnsite;
+      a, a:hover {
+        color: @brandingOnsite;
+        background: fade(@brandingOnsite, 20%);
+      }
+    }
+  }
+}
+
+#showBrandMenu {
+  border: solid 1px #a2b8c1;
+  display: block;
+  padding: 10px 15px;
+  margin: 0 20px;
+  background: @white;
+  color: #717070;
+  position: relative;
+  z-index: 2;
+  .icon {
+    float: right;
+    padding: 5px;
+    display: inline-block;
+    .caret {
+      border-width: 8px;
+    }
+  }
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.brandContentWrap {
+  border-top: solid 1px #a2b8c1;
+  min-height: 200px;
+  .brandContent {
+    padding: 50px;
+    margin: 0 auto;
+    font-size: 13px;
+    p {
+      color: #717070;
+    }
+  }
+}
+
+#about.brandContent {
+  max-width: 780px;
+}
+
+.brandIntro {
+
+  padding-bottom: 30px;
+
+  text-align: center;
+  h3 {
+    padding-bottom: 20px;
+  }
+}
+
+.brandFeatures {
+  border-top: dotted 1px #a2b8c1;
+  padding: 40px 0 20px;
+  h4 {
+    margin-top: 0;
+  }
+  p {
+    padding-bottom: 20px
+  }
+
+}
+
+.brandFeatureDesc {
+  padding-right: 40px;
+}
+
+.aboutBrandCarouselWrap {
+  padding: 0 40px;
+
+  .carousel-indicators {
+    margin: 10px 40px;
+    position: static;
+    border-top: dotted 1px #a2b8c1;
+    border-bottom: dotted 1px #a2b8c1;
+    padding: 10px;
+    text-align: center;
+    li {
+      float: none;
+      display: inline-block;
+      border: solid 1px #a2b8c1;
+    }
+    li.active {
+      background: #534545;
+    }
+  }
+}
+
+.videoThumbWrap {
+  padding-bottom: 10px;
+  .brandPageSubHeader {
+    padding-top: 20px;
+  }
+  h4 {
+    margin: 3px 0;
+  }
+}
+
+.videoThumb {
+  position: relative;
+  cursor: pointer;
+  display: block;
+  .border-radius(3px);
+  img {
+    .border-radius(3px);
+  }
+  .playIconWrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    text-align: center;
+    .icon-play {
+      padding: 10px;
+      height: 10px;
+      width: 10px;
+      font-size: 10px;
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -10px;
+      margin-left: -10px;
+      background: rgba(255, 255, 255, 0.5);
+      .border-radius(20px);
+      color: #444;
+    }
+  }
+}
+
+.introBrochureDownloadWrap {
+  text-align: center;
+  padding: 20px 0 5px;
+  p {
+    padding: 0;
+  }
+  .row-fluid {
+    margin-bottom: 15px;
+  }
+}
+
+.introBrochureDownload {
+  display: inline-block;
+  margin: 2px;
+  &:hover {
+    text-decoration: none;
+  }
+  .introBrochureDownloadText {
+    display: block;
+    padding-top: 10px;
+    .clearfix;
+  }
+  i {
+    display: block;
+    font-size: 30px;
+    float: left;
+    color: #a5a5a5;
+    position: relative;
+    top: -5px;
+  }
+  strong, small {
+    display: block;
+    //    margin-left: 45px;
+  }
+  small {
+    color: #e2001a;
+    padding-top: 0;
+    font-size: 1em
+  }
+  p.title {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333333;
+    padding: 0;
+    margin-bottom: 0;
+  }
+}
+
+.bathroom {
+  .brandPageSubHeader {
+    color: @brandingBathrooms;
+  }
+  .viewRangeLink {
+    background: @brandingBathrooms;
+  }
+}
+
+.plumbing {
+  .brandPageSubHeader {
+    color: @brandingPlumbing;
+  }
+  .viewRangeLink {
+    background: @brandingPlumbing;
+  }
+  .introBrochureDownloadText {
+    small {
+      color: @brandingPlumbing;
+    }
+  }
+}
+
+.hvacr {
+  .brandPageSubHeader {
+    color: @brandingHvacr;
+  }
+  .viewRangeLink {
+    background: @brandingHvacr;
+  }
+  .introBrochureDownloadText {
+    small {
+      color: @brandingHvacr;
+    }
+  }
+}
+
+.civil {
+  .brandPageSubHeader {
+    color: @brandingCivil;
+  }
+  .viewRangeLink {
+    background: @brandingCivil;
+  }
+  .introBrochureDownloadText {
+    small {
+      color: @brandingCivil;
+    }
+  }
+}
+
+.irrigation {
+  .brandPageSubHeader {
+    color: @brandingIrrigation;
+  }
+  .viewRangeLink {
+    background: @brandingIrrigation;
+  }
+  .introBrochureDownloadText {
+    small {
+      color: @brandingIrrigation;
+    }
+  }
+}
+
+.onsite {
+  .brandPageSubHeader {
+    color: @brandingOnsite;
+  }
+  .viewRangeLink {
+    background: @brandingOnsite;
+  }
+  .introBrochureDownloadText {
+    small {
+      color: @brandingOnsite;
+    }
+  }
+}
+
+/* Designer Info Tab */
+.designerInfoWrap {
+  border: solid 1px #dedede;
+  margin-top: 30px;
+  background: @white;
+  .border-radius(3px);
+  .box-shadow(0 1px 3px rgba(0, 0, 0, .2));
+
+  .span8 {
+    margin-left: 0;
+  }
+  .designerInfoThumb {
+    padding: 30px;
+    border-right: solid 1px #dedede;
+  }
+  .designerInfoContent {
+    padding: 30px 30px 10px;
+    border-left: solid 1px #dedede;
+    margin-left: -1px;
+    h4 {
+      margin-top: 0;
+      color: #e2001a;
+      font-weight: 400;
+      font-size: 22px;
+      padding-bottom: 5px;
+    }
+    p {
+      padding-bottom: 10px;
+    }
+    .brandProdRangeLogoWrap {
+      padding: 0 0 20px;
+    }
+  }
+}
+
+.viewRangeLink {
+  background: #e2001a;
+  display: inline-block;
+  padding: 10px 20px;
+  color: @white;
+  cursor: pointer;
+  text-align: center;
+
+  &:hover {
+    text-decoration: none;
+    color: @white;
+  }
+}
+
+.designerInfoThumb .viewRangeLink {
+  display: block;
+  margin-top: 20px;
+  max-width: 210px;
+}
+
+.designerInfoContent .viewRangeLink {
+  display: none;
+  margin-bottom: 20px;
+}
+
+#products.brandContent {
+  background: @black;
+  padding: 50px 30px 30px;
+}
+
+/* */
+.brandPressReleases {
+  margin: 0;
+  border-top: solid 1px #c5d2d8;
+  li {
+    display: table;
+    width: 100%;
+    padding: 20px 0;
+    list-style: none;
+    border-bottom: solid 1px #c5d2d8;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .brandPressDate {
+    color: #717070;
+    font-size: 14px;
+    span {
+      display: block;
+    }
+  }
+  .brandPressDownloadLink {
+    color: #e2001a;
+    font-size: 14px
+  }
+}
+
+/* Product Range List */
+.brandProdRangeLogoWrap {
+  background: @white;
+  padding: 20px;
+  .brandImg {
+    margin: 5px 0 15px;
+  }
+  .viewRangeLink {
+    float: right;
+  }
+}
+
+.brandProdRangeList {
+  margin: 0;
+  li {
+    list-style: none;
+    background: #616161;
+    overflow: hidden;
+    & + li {
+      margin-top: 30px;
+    }
+  }
+  .brandProdRangeDesc {
+    padding: 20px;
+    color: @white;
+    p {
+      color: @white;
+    }
+  }
+}
+
+/* Video  Tab*/
+.brandVideoTab {
+  [class*="span"] {
+    padding-bottom: 40px;
+  }
+  iframe {
+    max-width: 100%
+  }
+}
+
+/* */
+
+@media (max-width: 979px) {
+  .brandProdRangeLogoWrap .viewRangeLink {
+    float: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .brandList {
+    height: 0;
+    li {
+      display: block;
+      margin: -1px 0 0 0;
+    }
+  }
+
+  .brandPressReleases {
+    .brandPressDate {
+      float: left;
+      margin-right: 10px;
+    }
+    .brandPressDesc, .brandPressDownloadLinkwrap {
+      margin-left: 50px;
+      margin-bottom: 5px;
+    }
+    .brandPressDesc {
+      h4 {
+        margin-top: 0
+      }
+    }
+
+  }
+
+  .brandContentWrap .brandContent {
+    padding: 50px 20px 20px;
+  }
+
+  .designerInfoWrap {
+    margin: 0 -21px;
+    .designerInfoContent {
+      padding-top: 0
+    }
+    .designerInfoThumb {
+      border-right: none
+    }
+  }
+
+  .designerInfoThumb .viewRangeLink {
+    display: none;
+  }
+
+  .designerInfoContent .viewRangeLink {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutBrandCarouselWrap {
+    padding: 0
+  }
+}
+
+@media (min-width: 768px) {
+  .brandFeatures {
+    .span6 {
+      margin-left: 0;
+      width: 50%;
+      margin-right: -1px
+    }
+  }
+
+  .brandFeatureDesc {
+    border-right: solid 1px #acc0c8;
+  }
+
+  .aboutBrandCarouselWrap {
+    border-left: solid 1px #acc0c8;
+  }
+
+  .brandPressReleases {
+    .brandPressDate,
+    .brandPressDesc,
+    .brandPressDownloadLinkwrap {
+      display: table-cell;
+      padding: 0 10px;
+      vertical-align: middle;
+    }
+    .brandPressDownloadLinkwrap {
+      width: 170px;
+      text-align: right;
+    }
+  }
+
+  .designerInfoWrap .designerInfoThumb {
+    border-right: solid 1px #dedede;
+  }
+
+}

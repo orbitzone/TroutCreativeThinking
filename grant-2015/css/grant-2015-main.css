@@ -1,0 +1,71 @@
+body.grant-2015 .grant-2015-content .section-container {
+  max-width: 1500px;
+  padding: 0;
+  margin: 0 auto;
+}
+body.grant-2015 .grant-2015-content .text-left {
+  text-align: left;
+}
+body.grant-2015 .grant-2015-content .text-right {
+  text-align: right;
+}
+body.grant-2015 .grant-2015-content .text-center {
+  text-align: center;
+}
+body.grant-2015 .grant-2015-content .row-edge {
+  margin-left: 0;
+  margin-right: 0;
+}
+body.grant-2015 .grant-2015-content .row-limit {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+body.grant-2015 .grant-2015-content .col-edge {
+  padding-left: 0;
+  padding-right: 0;
+}
+body.grant-2015 .grant-2015-content .background-grey {
+  background-color: #f1f2f2;
+}
+body.grant-2015 .grant-2015-content .background-blue {
+  background-color: #009cb6;
+}
+body.grant-2015 .grant-2015-content .background-homepage {
+  background: url('../images/homepage/header-homepage.jpg') no-repeat center center;
+  padding-bottom: 40%;
+  background-size: cover;
+}
+body.grant-2015 .grant-2015-content .background-world {
+  background: url('../images/homepage/background-world.jpg') no-repeat center center;
+  position: relative;
+  background-size: cover;
+  text-align: center;
+}
+body.grant-2015 .grant-2015-content .homepage-video {
+  max-height: 450px;
+  overflow: hidden;
+}
+body.grant-2015 .grant-2015-content .homepage-video .background-video {
+  background: url('../images/homepage/video.jpg') no-repeat center center;
+  padding-bottom: 40%;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+}
+body.grant-2015 .grant-2015-content .homepage-video .background-video .cta-video {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+}
+body.grant-2015 .grant-2015-content .homepage-video .background-video .cta-video .play-button {
+  width: 52px;
+  height: 52px;
+  margin: 0 auto;
+}
+body.grant-2015 .grant-2015-content .grant-2015-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

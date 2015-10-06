@@ -1,0 +1,131 @@
+
+//Application imports
+@import "reece-variables.less";
+@import "reece-mixins.less";
+
+// Global
+//====================================================================================================================================
+//====================================================================================================================================
+
+.lt-ie9 {
+
+  #headCarousel {
+    padding-top: 0;
+  }
+
+  .navbar-fixed-top {
+    position: static;
+
+    .brand {
+      background-image: url(/grant-2015/images/home-2013/reece-logo-ie.png); //Fix retina icon for IE
+      background-repeat: no-repeat;
+      background-color: white;
+      background-position: 2px center;
+    }
+  }
+
+  .subnavbar {
+    margin-top: 0;
+  }
+
+  body {
+    min-width: 1200px;
+  }
+
+  .main-header {
+    padding-top:20px;
+
+    .top-highlight {
+      top:0;
+    }
+  }
+}
+
+// Products
+//====================================================================================================================================
+//====================================================================================================================================
+
+.lt-ie9 {
+
+  #product-filters.collapse, .products-tabs .collapse { //Fix product pages collapse class
+    position: static;
+    height: auto;
+    overflow: visible;
+  }
+}
+
+.lt-ie8 {
+  .products-tab-nav { //No support for 'display: table-cell'
+    overflow: hidden;
+    zoom: 1;
+
+    li {
+      width: auto;
+      float: left;
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      padding: 10px 20px;
+    }
+  }
+
+  .btn-bar {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+// Trade Outlet
+//====================================================================================================================================
+//====================================================================================================================================
+
+.lt-ie8 {
+  .article-gateway .article { //No box-sizing support
+    padding: 0 0 10px 0;
+
+    h3, p, .read-more, .btn {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .btn, .read-more {
+      position: relative;
+      left: 5px;
+    }
+  }
+
+  .trade-navigation { //No support for 'display: table-cell'
+    li {
+      float: left;
+    }
+  }
+}
+
+// Gas Track
+//====================================================================================================================================
+//====================================================================================================================================
+
+.lt-ie9 {
+  .gt-navigation, .gt-ig-items {
+    height: auto!important; //Items not displaying due to lack of media queries
+  }
+}
+
+// Happiness Zone
+//====================================================================================================================================
+//====================================================================================================================================
+
+.lt-ie8 {
+  #landingTiles [class*="span"] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #landingTiles [class*="span"] a {
+    padding: 10px;
+  }
+}
+#landingTiles [class*="span"] a {
+  background-color: rgba(204,204,204,0.01); // Transparent background hack to fix IE bug where text and image is not clickable
+}

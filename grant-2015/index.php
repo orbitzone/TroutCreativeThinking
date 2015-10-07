@@ -38,21 +38,52 @@
 <div class="wave-section wave-homepage-header">
         <div class="row row-edge banner-homepage background-blue">
           <div class="col-lg-12 col-edge background-homepage">
+
+          <div class="container">
+              <div class="row row-limit">
+                <div class="col-lg-12">
+                  <div class="banner-item-wrapper">
+                    <img class="reece-grant-logo" src="images/homepage/reece-grant-logo.png">
+                    <img class="text-healthier" src="images/homepage/text-healthier.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+              
+              
           </div>
           <div class="container text-center">
-            <div class="row row-limit">
+            <div class="row row-limit-nav">
               <ul class="grant-2015-nav">
                 <li class="col-sm-3 col-xs-6">
-                  <a href="#" class="active nav-home">Home</a>
+                  <a href="#" class="nav-item nav-home active">
+                  <div class="nav-img-wrapper"><img class="nav-img" src="images/homepage/nav-home.png"></div>
+                  Home
+                  </a>
                 </li>
                 <li class="col-sm-3 col-xs-6">
-                  <a href="#" class="active nav-justin">Justin&rsquo;s <span>project</span></a>
+                  <a href="#" class="nav-item nav-justin">
+                  <div class="nav-img-wrapper"><img class="nav-img img-circle img-thumbnail" src="images/homepage/nav-justin.png"></div>
+                  Justin&rsquo;s 
+                  <span>project</span>
+                  </a>
                 </li>
                 <li class="col-sm-3 col-xs-6">
-                  <a href="#" class="active nav-james">James&rsquo; <span>project</span></a>
+                  <a href="#" class="nav-item nav-james">
+                  <div class="nav-img-wrapper"><img class="nav-img img-circle img-thumbnail" src="images/homepage/nav-james.png"></div>
+                  James&rsquo;
+                  <span>project</span>
+                  </a>
                 </li>
+                
                 <li class="col-sm-3 col-xs-6">
-                  <a href="#" class="active nav-timothy">Timothy&rsquo;s <span>project</span></a>
+
+                  <a href="#" class="nav-item nav-timothy">
+                  <div class="nav-img-wrapper"><img class="nav-img img-circle img-thumbnail" src="images/homepage/nav-timothy.png"></div>
+                  Timothy&rsquo;s 
+                  <span>project</span>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -75,7 +106,7 @@
             </div>
             <div class="container">
               <div class="row row-limit spacing-big-bottom">
-                <div class="col-sm-5  col-xs-8">
+                <div class="col-sm-5  col-xs-10">
                   <h3 class="text-blue text-big">We&rsquo;re passionate about making a difference.</h3>
                   <p class="text-blue text-intro">The Reece Grant awards up to $25,000 to support community water projects here and abroad.</p>
                 </div>
@@ -117,32 +148,40 @@
               <div class="row row-limit text-left">
                 <div class="col-lg-12">
                   <h3 class="text-standard-heading text-blue">The projects</h3>
-                  <div class="justin-wrapper">
+                  <div class="feature-profile-image-wrapper">
+                  
                     <img class="india-outline" src="images/homepage/india-outline.png">
                     <img class="img-responsive img-spacing" src="images/homepage/justin.jpg">
+                    <h3 class="name text-white">Justin Morris</h3>
                   </div>
 
                 </div>
                 <div class="col-sm-7 col-sm-offset-1 text-blue">
-                  Justin Morris
+                  
                   <p>Justin has been granted $15,000 for his submission to improve India&rsquo;s complex sanitation issues. Partnering with the We Can&rsquo;t Wait foundation, he is putting the money towards the construction of toilet facilities and sanitation education in schools in Nasik, India. </p>
-                  <div class="read-more-button-wrap"><a href="#" class="read-more-button">Read more</a></div>
+                  <div class="read-more-button-wrap"><a href="#" class="read-more-button">Read&nbsp;more</a></div>
                 </div>
               </div>
             </div>
             <div class="container spacing-big-bottom">
               <div class="row row-limit text-left text-blue">
                 <div class="col-sm-6">
+                <div class="profile-image-wrap">
+
                   <img class="img-responsive img-spacing" src="images/homepage/timothy.jpg">
-                  Timothy Brideson 
+                  <h3 class="name text-white">Timothy Brideson </h3>
+                  </div>
                   <p>Tim has been granted $5,000 and is using the money to rebuild toilet facilities at a damaged school in the Philippines. He will also be running education sessions the local tradesmen and students to ensure long-term change.</p>
-                  <div class="read-more-button-wrap"><a href="#" class="read-more-button">Read more</a></div>
+                  <div class="read-more-button-wrap"><a href="#" class="read-more-button">Read&nbsp;more</a></div>
                 </div>
                 <div class="col-sm-6">
+                <div class="profile-image-wrap">
                   <img class="img-responsive img-spacing" src="images/homepage/james.jpg">
-                  James Millis
+                  <h3 class="name text-white">James Millis</h3>
+                  </div>
+                  
                   <p>James has been granted $5,000 for his project in East Timor and is putting the funds towards restoring two remote villages with proper facilities to access spring water, water filtration and toilet facilities. </p>
-                  <div class="read-more-button-wrap"><a href="#" class="read-more-button">Read more</a></div>
+                  <div class="read-more-button-wrap"><a href="#" class="read-more-button">Read&nbsp;more</a></div>
                 </div>
               </div>
             </div>
@@ -169,13 +208,13 @@
               <div class="row row-limit text-left">
                 <div class="col-sm-6">
                   <div class="postcard-wrapper">
-                    <div class="postcard-image-wrapper stamp">
+                    <div class="stamp-wrapper">
                       <img src="images/homepage/stamp-sm.png">
                     </div>
-                    <div class="postcard-image-wrapper img-behind-rotate">
+                    <div class="back-image-wrapper">
                       <img class="img-thumbnail" src="images/homepage/snap2.png">
                     </div>
-                    <div class="postcard-image-wrapper">
+                    <div class="front-image-wrapper">
                       <img class="img-thumbnail" src="images/homepage/snap1.png">
                     </div>
                   </div>
@@ -188,7 +227,7 @@
                   <div class="project-description text-blue">
                     <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis.</p>
                   </div>
-                  <div class="read-more-button-wrap"><a href="#" class="read-more-button">Read more</a></div>
+                  <div class="read-more-button-wrap"><a href="#" class="read-more-button">Read&nbsp;more</a></div>
                   </div>
                 </div>
               </div>
@@ -196,6 +235,7 @@
           </div>
         </div>
 <div class="wave-grey-to-white"></div>
+
 </div>
 <!--LATEST PROJECTS SECTION -->
       </div>

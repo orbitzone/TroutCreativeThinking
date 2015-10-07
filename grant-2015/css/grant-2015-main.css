@@ -1,6 +1,7 @@
 body.grant-2015 .grant-2015-content {
   color: #58595b;
-  font-size: 16px;
+  font-size: 14px;
+  overflow: hidden;
 }
 body.grant-2015 .grant-2015-content .section-container {
   max-width: 1500px;
@@ -19,17 +20,30 @@ body.grant-2015 .grant-2015-content .text-center {
 body.grant-2015 .grant-2015-content .text-blue {
   color: #009cb6;
 }
+body.grant-2015 .grant-2015-content .text-white {
+  color: #ffffff;
+}
 body.grant-2015 .grant-2015-content .text-big {
-  font-size: 48px;
+  font-size: 47px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  body.grant-2015 .grant-2015-content .text-big {
+    font-size: 38px;
+  }
+}
+@media (max-width: 767px) {
+  body.grant-2015 .grant-2015-content .text-big {
+    font-size: 28px;
+  }
 }
 body.grant-2015 .grant-2015-content .text-standard-heading {
   font-size: 32px;
 }
 body.grant-2015 .grant-2015-content .text-article-heading {
-  font-size: 38px;
+  font-size: 28px;
 }
 body.grant-2015 .grant-2015-content .text-intro {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
 }
 body.grant-2015 .grant-2015-content .img-spacing {
@@ -43,11 +57,43 @@ body.grant-2015 .grant-2015-content .spacing-big {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  body.grant-2015 .grant-2015-content .spacing-big {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 767px) {
+  body.grant-2015 .grant-2015-content .spacing-big {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
 body.grant-2015 .grant-2015-content .spacing-big-top {
   padding-top: 60px;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  body.grant-2015 .grant-2015-content .spacing-big-top {
+    padding-top: 40px;
+  }
+}
+@media (max-width: 767px) {
+  body.grant-2015 .grant-2015-content .spacing-big-top {
+    padding-top: 20px;
+  }
+}
 body.grant-2015 .grant-2015-content .spacing-big-bottom {
   padding-bottom: 60px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  body.grant-2015 .grant-2015-content .spacing-big-bottom {
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 767px) {
+  body.grant-2015 .grant-2015-content .spacing-big-bottom {
+    padding-bottom: 20px;
+  }
 }
 body.grant-2015 .grant-2015-content .row-edge {
   margin-left: 0;
@@ -58,6 +104,11 @@ body.grant-2015 .grant-2015-content .row-limit {
   margin-left: auto;
   margin-right: auto;
 }
+body.grant-2015 .grant-2015-content .row-limit-nav {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
 body.grant-2015 .grant-2015-content .heading-latest-project .text-subheading {
   font-size: 22px;
   font-weight: 500;
@@ -65,13 +116,47 @@ body.grant-2015 .grant-2015-content .heading-latest-project .text-subheading {
 }
 body.grant-2015 .grant-2015-content .read-more-button-wrap {
   margin-top: 30px;
+  width: 73px;
+  text-align: center;
+  overflow: hidden;
 }
 body.grant-2015 .grant-2015-content .read-more-button-wrap .read-more-button {
   display: block;
   color: #009cb6;
   padding-top: 12px;
   padding-bottom: 12px;
-  background: url('../images/wave/read-more-line.png') no-repeat left top;
+  background: url('../images/wave/read-more-line.png') no-repeat -20px top;
+  -webkit-transition: background 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out;
+}
+body.grant-2015 .grant-2015-content .read-more-button-wrap .read-more-button:hover,
+body.grant-2015 .grant-2015-content .read-more-button-wrap .read-more-button:active,
+body.grant-2015 .grant-2015-content .read-more-button-wrap .read-more-button:focus {
+  background: url('../images/wave/read-more-line.png') no-repeat -10px top;
+}
+body.grant-2015 .grant-2015-content .donate-button-wrapper {
+  margin-top: 40px;
+}
+body.grant-2015 .grant-2015-content .donate-button-wrapper .donate-button {
+  text-align: center;
+  border: solid 1px #009cb6;
+  width: 220px;
+  margin-top: 10px;
+}
+body.grant-2015 .grant-2015-content .donate-button-wrapper .donate-button a {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  color: #009cb6;
+  padding: 16px 0;
+  background-color: #ffffff;
+}
+body.grant-2015 .grant-2015-content .donate-button-wrapper .donate-button a:hover,
+body.grant-2015 .grant-2015-content .donate-button-wrapper .donate-button a:active,
+body.grant-2015 .grant-2015-content .donate-button-wrapper .donate-button a:focus {
+  background-color: #009cb6;
+  color: #ffffff;
+  text-decoration: none;
 }
 body.grant-2015 .grant-2015-content .wave-section {
   position: relative;
@@ -84,9 +169,15 @@ body.grant-2015 .grant-2015-content .wave-section .wave-white-to-grey {
   height: 7px;
   background: url('../images/wave/wave-white-to-grey.png') repeat-x;
 }
+body.grant-2015 .grant-2015-content .wave-section .wave-white-to-grey-shadow {
+  height: 78px;
+  background: url('../images/wave/wave-white-to-grey-shadow.png') repeat-x;
+  background-position: -20px;
+}
 body.grant-2015 .grant-2015-content .wave-section .wave-grey-to-white {
   height: 7px;
   background: url('../images/wave/wave-grey-to-white.png') repeat-x;
+  background-position: 20px;
 }
 body.grant-2015 .grant-2015-content .wave-section .wave-white-to-image {
   position: relative;
@@ -101,6 +192,7 @@ body.grant-2015 .grant-2015-content .wave-section .wave-image-to-white {
   background: url('../images/wave/wave-image-to-white.png') repeat-x;
   bottom: 7px;
   z-index: 100;
+  background-position: 20px;
 }
 body.grant-2015 .grant-2015-content .col-edge {
   padding-left: 0;
@@ -112,28 +204,179 @@ body.grant-2015 .grant-2015-content .background-grey {
 body.grant-2015 .grant-2015-content .background-blue {
   background-color: #009cb6;
 }
-body.grant-2015 .grant-2015-content .background-homepage {
-  background: url('../images/homepage/header-homepage.jpg') no-repeat center center;
-  padding-bottom: 40%;
-  background-size: cover;
-}
 body.grant-2015 .grant-2015-content .background-world {
   background: url('../images/homepage/background-world.jpg') no-repeat top center;
   position: relative;
   background-size: cover;
   text-align: center;
+  -moz-box-shadow: inset 0 -80px 70px -40px #ffffff;
+  -webkit-box-shadow: inset 0 -80px 70px -40px #ffffff;
+  box-shadow: inset 0 -80px 70px -40px #ffffff;
 }
-body.grant-2015 .grant-2015-content .justin-wrapper {
+body.grant-2015 .grant-2015-content .feature-profile-image-wrapper {
   position: relative;
 }
-body.grant-2015 .grant-2015-content .justin-wrapper .india-outline {
+body.grant-2015 .grant-2015-content .feature-profile-image-wrapper .india-outline {
   position: absolute;
   right: -28%;
   top: 28%;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  body.grant-2015 .grant-2015-content .feature-profile-image-wrapper .india-outline {
+    width: 200px;
+    right: -135px;
+    top: 110px;
+  }
+}
+@media (max-width: 767px) {
+  body.grant-2015 .grant-2015-content .feature-profile-image-wrapper .india-outline {
+    width: 100px;
+    right: -55px;
+    top: auto;
+    bottom: 5px;
+  }
+}
+body.grant-2015 .grant-2015-content .feature-profile-image-wrapper .name {
+  position: absolute;
+  top: 50%;
+  line-height: 0;
+  left: 5%;
+  font-size: 24px;
+  font-weight: 400;
+}
+body.grant-2015 .grant-2015-content .profile-image-wrap {
+  position: relative;
+}
+body.grant-2015 .grant-2015-content .profile-image-wrap .name {
+  position: absolute;
+  top: 50%;
+  line-height: 0;
+  left: 5%;
+  font-size: 24px;
+  font-weight: 400;
+}
+body.grant-2015 .grant-2015-content .banner-homepage .background-homepage {
+  background: url('../images/homepage/header-homepage.jpg') no-repeat center center;
+  background-size: cover;
+}
+body.grant-2015 .grant-2015-content .banner-homepage .background-homepage .banner-item-wrapper {
+  position: relative;
+  height: 580px;
+}
+body.grant-2015 .grant-2015-content .banner-homepage .background-homepage .banner-item-wrapper .reece-grant-logo {
+  position: absolute;
+  right: -30%;
+  top: 0;
+  width: 216px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  body.grant-2015 .grant-2015-content .banner-homepage .background-homepage .banner-item-wrapper .reece-grant-logo {
+    right: -10%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  body.grant-2015 .grant-2015-content .banner-homepage .background-homepage .banner-item-wrapper .reece-grant-logo {
+    right: 0;
+    width: 170px;
+  }
+}
+@media (max-width: 767px) {
+  body.grant-2015 .grant-2015-content .banner-homepage .background-homepage .banner-item-wrapper .reece-grant-logo {
+    right: 5px;
+    width: 90px;
+  }
+}
+body.grant-2015 .grant-2015-content .banner-homepage .background-homepage .banner-item-wrapper .text-healthier {
+  position: absolute;
+  left: 0;
+  bottom: 60px;
+  width: 359px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  body.grant-2015 .grant-2015-content .banner-homepage .background-homepage .banner-item-wrapper .text-healthier {
+    width: 280px;
+    left: 10px;
+  }
+}
+@media (max-width: 767px) {
+  body.grant-2015 .grant-2015-content .banner-homepage .background-homepage .banner-item-wrapper .text-healthier {
+    width: 230px;
+    left: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  body.grant-2015 .grant-2015-content .banner-homepage .background-homepage .banner-item-wrapper {
+    height: 460px;
+  }
+}
+@media (max-width: 767px) {
+  body.grant-2015 .grant-2015-content .banner-homepage .background-homepage .banner-item-wrapper {
+    height: 370px;
+  }
+}
+body.grant-2015 .grant-2015-content .background-justin {
+  background: url('../images/justin/banner.jpg') no-repeat top center;
+  background-size: cover;
+}
+body.grant-2015 .grant-2015-content .background-james {
+  background: url('../images/james/banner.jpg') no-repeat top center;
+  background-size: cover;
+}
+body.grant-2015 .grant-2015-content .background-timothy {
+  background: url('../images/timothy/banner.jpg') no-repeat top center;
+  background-size: cover;
+}
+body.grant-2015 .grant-2015-content .banner-person .banner-item-wrapper {
+  position: relative;
+  height: 420px;
+}
+body.grant-2015 .grant-2015-content .banner-person .banner-item-wrapper .reece-grant-logo {
+  position: absolute;
+  right: -30%;
+  top: 0;
+  width: 216px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  body.grant-2015 .grant-2015-content .banner-person .banner-item-wrapper .reece-grant-logo {
+    right: -10%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  body.grant-2015 .grant-2015-content .banner-person .banner-item-wrapper .reece-grant-logo {
+    right: 0;
+    width: 170px;
+  }
+}
+@media (max-width: 767px) {
+  body.grant-2015 .grant-2015-content .banner-person .banner-item-wrapper .reece-grant-logo {
+    right: 5px;
+    width: 90px;
+  }
+}
+body.grant-2015 .grant-2015-content .banner-person .banner-item-wrapper .person-details {
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+}
+body.grant-2015 .grant-2015-content .banner-person .banner-item-wrapper .person-details p {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2em;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  body.grant-2015 .grant-2015-content .banner-person .banner-item-wrapper {
+    height: 340px;
+  }
+}
+@media (max-width: 767px) {
+  body.grant-2015 .grant-2015-content .banner-person .banner-item-wrapper {
+    height: 300px;
+  }
+}
 body.grant-2015 .grant-2015-content .homepage-video .background-video {
   background: url('../images/homepage/video.jpg') no-repeat center center;
-  padding-bottom: 40%;
+  height: 450px;
   background-size: cover;
   text-align: center;
   position: relative;
@@ -151,53 +394,172 @@ body.grant-2015 .grant-2015-content .homepage-video .background-video .cta-video
 }
 body.grant-2015 .grant-2015-content .homepage-video .background-video .cta-video .cta-text {
   font-size: 28px;
+  font-weight: 500;
+  line-height: 1.2em;
+  padding-top: 30px;
   width: 257px;
   display: block;
   margin: 0 auto;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  body.grant-2015 .grant-2015-content .homepage-video .background-video .cta-video .cta-text {
+    font-size: 22px;
+  }
+}
+@media (max-width: 767px) {
+  body.grant-2015 .grant-2015-content .homepage-video .background-video .cta-video .cta-text {
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  body.grant-2015 .grant-2015-content .homepage-video .background-video {
+    height: 360px;
+  }
+}
+@media (max-width: 767px) {
+  body.grant-2015 .grant-2015-content .homepage-video .background-video {
+    height: 280px;
+  }
+}
 body.grant-2015 .grant-2015-content .grant-2015-nav {
   list-style: none;
-  padding: 0;
   margin: 0;
 }
-body.grant-2015 .grant-2015-content .grant-2015-nav a {
+body.grant-2015 .grant-2015-content .grant-2015-nav li {
+  margin-top: 46px;
+  margin-bottom: 46px;
+}
+body.grant-2015 .grant-2015-content .grant-2015-nav li a {
   display: block;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  position: relative;
+  padding-top: 26px;
+  height: 77px;
   color: #ffffff;
   font-size: 24px;
+  letter-spacing: 1px;
 }
-body.grant-2015 .grant-2015-content .grant-2015-nav a span {
+body.grant-2015 .grant-2015-content .grant-2015-nav li a .nav-img {
+  display: none;
+}
+body.grant-2015 .grant-2015-content .grant-2015-nav li a span {
   font-size: 10px;
   text-transform: uppercase;
   display: block;
+  font-weight: 500;
+  letter-spacing: 2px;
 }
-body.grant-2015 .grant-2015-content .grant-2015-nav a:hover,
-body.grant-2015 .grant-2015-content .grant-2015-nav a:active,
-body.grant-2015 .grant-2015-content .grant-2015-nav a:focus {
+body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-home.active,
+body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-home:hover {
+  border-left: 1px #4dbacc solid;
+  border-right: 1px #4dbacc solid;
+  padding-top: 0px;
+}
+body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-home.active .nav-img-wrapper,
+body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-home:hover .nav-img-wrapper {
+  margin-bottom: 10px;
+}
+body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-home.active .nav-img-wrapper .nav-img,
+body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-home:hover .nav-img-wrapper .nav-img {
+  width: 34px;
+  display: block;
+  margin: 0 auto;
+}
+body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-justin.active,
+body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-justin:hover {
+  border-left: 1px #4dbacc solid;
+  border-right: 1px #4dbacc solid;
+  padding-top: 0px;
+}
+body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-justin.active .nav-img-wrapper,
+body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-justin:hover .nav-img-wrapper {
+  margin-bottom: 0px;
+  position: relative;
+  top: -10px;
+}
+body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-justin.active .nav-img-wrapper .nav-img,
+body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-justin:hover .nav-img-wrapper .nav-img {
+  width: 50px;
+  display: block;
+  margin: 0 auto;
+}
+body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-james.active,
+body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-james:hover {
+  border-left: 1px #4dbacc solid;
+  border-right: 1px #4dbacc solid;
+  padding-top: 0px;
+}
+body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-james.active .nav-img-wrapper,
+body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-james:hover .nav-img-wrapper {
+  margin-bottom: 0px;
+  position: relative;
+  top: -10px;
+}
+body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-james.active .nav-img-wrapper .nav-img,
+body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-james:hover .nav-img-wrapper .nav-img {
+  width: 50px;
+  display: block;
+  margin: 0 auto;
+}
+body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-timothy.active,
+body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-timothy:hover {
+  border-left: 1px #4dbacc solid;
+  border-right: 1px #4dbacc solid;
+  padding-top: 0px;
+}
+body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-timothy.active .nav-img-wrapper,
+body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-timothy:hover .nav-img-wrapper {
+  margin-bottom: 0px;
+  position: relative;
+  top: -10px;
+}
+body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-timothy.active .nav-img-wrapper .nav-img,
+body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-timothy:hover .nav-img-wrapper .nav-img {
+  width: 50px;
+  display: block;
+  margin: 0 auto;
+}
+body.grant-2015 .grant-2015-content .grant-2015-nav li a:hover,
+body.grant-2015 .grant-2015-content .grant-2015-nav li a:active,
+body.grant-2015 .grant-2015-content .grant-2015-nav li a:focus {
   text-decoration: none;
+}
+@media (max-width: 767px) {
+  body.grant-2015 .grant-2015-content .grant-2015-nav li {
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
 }
 body.grant-2015 .grant-2015-content .latest-project-section .postcard-wrapper {
   position: relative;
   padding-top: 30px;
-}
-body.grant-2015 .grant-2015-content .latest-project-section .postcard-wrapper .postcard-image-wrapper {
   -ms-transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
 }
-body.grant-2015 .grant-2015-content .latest-project-section .postcard-wrapper .postcard-image-wrapper.img-behind-rotate {
+body.grant-2015 .grant-2015-content .latest-project-section .postcard-wrapper .stamp-wrapper {
+  position: absolute;
+  right: 0;
+  top: -20px;
+  left: -25%;
+}
+body.grant-2015 .grant-2015-content .latest-project-section .postcard-wrapper .back-image-wrapper {
   position: absolute;
   top: 12px;
   -ms-transform: rotate(-6deg);
   -webkit-transform: rotate(-6deg);
   transform: rotate(-6deg);
 }
-body.grant-2015 .grant-2015-content .latest-project-section .postcard-wrapper .postcard-image-wrapper.stamp {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: -25%;
+body.grant-2015 .grant-2015-content .latest-project-section .postcard-wrapper .front-image-wrapper {
+  top: 12px;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+@media (max-width: 767px) {
+  body.grant-2015 .grant-2015-content .latest-project-section .postcard-wrapper {
+    left: 20px;
+    max-width: 90%;
+  }
 }
 body.grant-2015 .grant-2015-content .latest-project-section .project-details {
   padding-top: 30px;
@@ -208,4 +570,50 @@ body.grant-2015 .grant-2015-content .project-details .date {
 body.grant-2015 .grant-2015-content .project-details .name {
   font-size: 22px;
   font-weight: 500;
+}
+body.grant-2015 .grant-2015-content .person-project-details {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body.grant-2015 .grant-2015-content .person-project-details p {
+  font-weight: 500;
+}
+body.grant-2015 .grant-2015-content .person-project-details p strong {
+  color: #009cb6;
+}
+body.grant-2015 .grant-2015-content .one-article-section {
+  margin-top: 2px;
+}
+body.grant-2015 .grant-2015-content .one-article-section.shaded-top {
+  -moz-box-shadow: inset 0 -80px 70px -40px #000000;
+  -webkit-box-shadow: inset 0 -80px 70px -40px #000000;
+  box-shadow: inset 0 -80px 70px -40px #000000;
+}
+body.grant-2015 .grant-2015-content .one-article-section .expand-article {
+  margin-top: 16px;
+  margin-bottom: 30px;
+  display: none;
+}
+body.grant-2015 .grant-2015-content .one-article-section .read-more-button-wrap {
+  margin-top: 0;
+}
+body.grant-2015 .grant-2015-content .one-article-section .read-more-button-wrap .read-more-text {
+  display: block;
+}
+body.grant-2015 .grant-2015-content .one-article-section .read-more-button-wrap .read-less-text {
+  display: none;
+}
+body.grant-2015 .grant-2015-content .one-article-section.active .expand-article {
+  margin-top: 16px;
+  margin-bottom: 30px;
+  display: block;
+}
+body.grant-2015 .grant-2015-content .one-article-section.active .read-more-button-wrap {
+  margin-top: 16px;
+}
+body.grant-2015 .grant-2015-content .one-article-section.active .read-more-button-wrap .read-more-text {
+  display: none;
+}
+body.grant-2015 .grant-2015-content .one-article-section.active .read-more-button-wrap .read-less-text {
+  display: block;
 }

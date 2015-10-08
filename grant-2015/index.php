@@ -57,20 +57,20 @@
             <div class="row row-limit-nav">
               <ul class="grant-2015-nav">
                 <li class="col-sm-3 col-xs-6">
-                  <a href="#" class="nav-item nav-home active">
+                  <a href="index.php" class="nav-item nav-home active">
                   <div class="nav-img-wrapper"><img class="nav-img" src="images/homepage/nav-home.png"></div>
                   Home
                   </a>
                 </li>
                 <li class="col-sm-3 col-xs-6">
-                  <a href="#" class="nav-item nav-justin">
+                  <a href="justin.php" class="nav-item nav-justin">
                   <div class="nav-img-wrapper"><img class="nav-img img-circle img-thumbnail" src="images/homepage/nav-justin.png"></div>
                   Justin&rsquo;s 
                   <span>project</span>
                   </a>
                 </li>
                 <li class="col-sm-3 col-xs-6">
-                  <a href="#" class="nav-item nav-james">
+                  <a href="james.php" class="nav-item nav-james">
                   <div class="nav-img-wrapper"><img class="nav-img img-circle img-thumbnail" src="images/homepage/nav-james.png"></div>
                   James&rsquo;
                   <span>project</span>
@@ -79,7 +79,7 @@
                 
                 <li class="col-sm-3 col-xs-6">
 
-                  <a href="#" class="nav-item nav-timothy">
+                  <a href="timothy.php" class="nav-item nav-timothy">
                   <div class="nav-img-wrapper"><img class="nav-img img-circle img-thumbnail" src="images/homepage/nav-timothy.png"></div>
                   Timothy&rsquo;s 
                   <span>project</span>
@@ -159,7 +159,7 @@
                 <div class="col-sm-7 col-sm-offset-1 text-blue">
                   
                   <p>Justin has been granted $15,000 for his submission to improve India&rsquo;s complex sanitation issues. Partnering with the We Can&rsquo;t Wait foundation, he is putting the money towards the construction of toilet facilities and sanitation education in schools in Nasik, India. </p>
-                  <div class="read-more-button-wrap"><a href="#" class="read-more-button">Read&nbsp;more</a></div>
+                  <div class="read-more-button-wrap"><a href="justin.php" class="read-more-button">Read&nbsp;more</a></div>
                 </div>
               </div>
             </div>
@@ -172,7 +172,7 @@
                   <h3 class="name text-white">Timothy Brideson </h3>
                   </div>
                   <p>Tim has been granted $5,000 and is using the money to rebuild toilet facilities at a damaged school in the Philippines. He will also be running education sessions the local tradesmen and students to ensure long-term change.</p>
-                  <div class="read-more-button-wrap"><a href="#" class="read-more-button">Read&nbsp;more</a></div>
+                  <div class="read-more-button-wrap"><a href="timothy.php" class="read-more-button">Read&nbsp;more</a></div>
                 </div>
                 <div class="col-sm-6">
                 <div class="profile-image-wrap">
@@ -181,7 +181,7 @@
                   </div>
                   
                   <p>James has been granted $5,000 for his project in East Timor and is putting the funds towards restoring two remote villages with proper facilities to access spring water, water filtration and toilet facilities. </p>
-                  <div class="read-more-button-wrap"><a href="#" class="read-more-button">Read&nbsp;more</a></div>
+                  <div class="read-more-button-wrap"><a href="james.php" class="read-more-button">Read&nbsp;more</a></div>
                 </div>
               </div>
             </div>
@@ -223,11 +223,11 @@
                   <div class="project-details">
                     <p class="date">THURSDAY 6TH AUGUST</p>
                     <p class="name">Justin Morris</p>
-                    <h3 class="text-blue text-article-heading">This is the article title location </h3>
+                    <h3 class="text-blue text-article-heading">Reece Grant recipient: Justin Morris</h3>
                   <div class="project-description text-blue">
-                    <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis.</p>
+                    <p>Justin Morris from Notting Hill, Victoria has been awarded $15,000 for his submission to improve India&rsquo;s complex sanitation issue. </p>
                   </div>
-                  <div class="read-more-button-wrap"><a href="#" class="read-more-button">Read&nbsp;more</a></div>
+                  <div class="read-more-button-wrap"><a href="justin.php#latest-article" class="read-more-button">Read&nbsp;more</a></div>
                   </div>
                 </div>
               </div>

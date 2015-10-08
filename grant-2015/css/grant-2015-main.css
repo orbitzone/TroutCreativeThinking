@@ -8,6 +8,9 @@ body.grant-2015 .grant-2015-content .section-container {
   padding: 0;
   margin: 0 auto;
 }
+body.grant-2015 .grant-2015-content .clear {
+  clear: both;
+}
 body.grant-2015 .grant-2015-content .text-left {
   text-align: left;
 }
@@ -115,7 +118,7 @@ body.grant-2015 .grant-2015-content .heading-latest-project .text-subheading {
   text-transform: uppercase;
 }
 body.grant-2015 .grant-2015-content .read-more-button-wrap {
-  margin-top: 30px;
+  margin-top: 20px;
   width: 73px;
   text-align: center;
   overflow: hidden;
@@ -133,9 +136,26 @@ body.grant-2015 .grant-2015-content .read-more-button-wrap .read-more-button:hov
 body.grant-2015 .grant-2015-content .read-more-button-wrap .read-more-button:active,
 body.grant-2015 .grant-2015-content .read-more-button-wrap .read-more-button:focus {
   background: url('../images/wave/read-more-line.png') no-repeat -10px top;
+  text-decoration: none;
+  cursor: pointer;
 }
 body.grant-2015 .grant-2015-content .donate-button-wrapper {
   margin-top: 40px;
+}
+body.grant-2015 .grant-2015-content .donate-button-wrapper .social-page {
+  text-align: left;
+  font-size: 24px;
+  padding-bottom: 0px;
+}
+body.grant-2015 .grant-2015-content .donate-button-wrapper .social-page a {
+  color: #9F9F9F;
+  desplay: inline-block;
+  margin-right: 10px;
+}
+body.grant-2015 .grant-2015-content .donate-button-wrapper .social-page a:hover,
+body.grant-2015 .grant-2015-content .donate-button-wrapper .social-page a:focus,
+body.grant-2015 .grant-2015-content .donate-button-wrapper .social-page a:active {
+  color: #019BB6;
 }
 body.grant-2015 .grant-2015-content .donate-button-wrapper .donate-button {
   text-align: center;
@@ -428,6 +448,8 @@ body.grant-2015 .grant-2015-content .grant-2015-nav {
 body.grant-2015 .grant-2015-content .grant-2015-nav li {
   margin-top: 46px;
   margin-bottom: 46px;
+  padding-left: 0;
+  padding-right: 0;
 }
 body.grant-2015 .grant-2015-content .grant-2015-nav li a {
   display: block;
@@ -532,6 +554,7 @@ body.grant-2015 .grant-2015-content .grant-2015-nav li a:focus {
 body.grant-2015 .grant-2015-content .latest-project-section .postcard-wrapper {
   position: relative;
   padding-top: 30px;
+  padding-bottom: 16px;
   -ms-transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -564,6 +587,9 @@ body.grant-2015 .grant-2015-content .latest-project-section .postcard-wrapper .f
 body.grant-2015 .grant-2015-content .latest-project-section .project-details {
   padding-top: 30px;
 }
+body.grant-2015 .grant-2015-content .latest-project-section.one-article-section .spacing-big {
+  padding-top: 80px;
+}
 body.grant-2015 .grant-2015-content .project-details .date {
   font-size: 12px;
 }
@@ -590,9 +616,16 @@ body.grant-2015 .grant-2015-content .one-article-section.shaded-top {
   box-shadow: inset 0 -80px 70px -40px #000000;
 }
 body.grant-2015 .grant-2015-content .one-article-section .expand-article {
-  margin-top: 16px;
-  margin-bottom: 30px;
-  display: none;
+  padding-top: 0px;
+}
+body.grant-2015 .grant-2015-content .one-article-section .expand-article .article-snap {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+  body.grant-2015 .grant-2015-content .one-article-section .expand-article {
+    margin-top: 0;
+  }
 }
 body.grant-2015 .grant-2015-content .one-article-section .read-more-button-wrap {
   margin-top: 0;
@@ -603,11 +636,6 @@ body.grant-2015 .grant-2015-content .one-article-section .read-more-button-wrap 
 body.grant-2015 .grant-2015-content .one-article-section .read-more-button-wrap .read-less-text {
   display: none;
 }
-body.grant-2015 .grant-2015-content .one-article-section.active .expand-article {
-  margin-top: 16px;
-  margin-bottom: 30px;
-  display: block;
-}
 body.grant-2015 .grant-2015-content .one-article-section.active .read-more-button-wrap {
   margin-top: 16px;
 }
@@ -616,4 +644,23 @@ body.grant-2015 .grant-2015-content .one-article-section.active .read-more-butto
 }
 body.grant-2015 .grant-2015-content .one-article-section.active .read-more-button-wrap .read-less-text {
   display: block;
+}
+body.grant-2015 .grant-2015-content .map-wrapper {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+body.grant-2015 .grant-2015-content .social-share {
+  text-align: right;
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+body.grant-2015 .grant-2015-content .social-share a {
+  color: #9F9F9F;
+  desplay: inline-block;
+  margin-left: 10px;
+}
+body.grant-2015 .grant-2015-content .social-share a:hover,
+body.grant-2015 .grant-2015-content .social-share a:focus,
+body.grant-2015 .grant-2015-content .social-share a:active {
+  color: #019BB6;
 }

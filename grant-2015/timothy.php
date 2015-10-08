@@ -36,15 +36,16 @@
         <!--HEADER SECTION -->
         <div class="wave-section wave-person-header">
           <div class="row row-edge banner-person background-blue">
-            <div class="col-lg-12 col-edge background-justin">
+            <div class="col-lg-12 col-edge background-timothy">
               <div class="container">
                 <div class="row row-limit">
                   <div class="col-lg-12">
                     <div class="banner-item-wrapper">
                       <img class="reece-grant-logo" src="images/homepage/reece-grant-logo.png">
                       <div class="person-details text-blue">
-                        <h1 class="text-big">Justin Morris</h1>
-                        <p>Precision Electrical &amp; Plumbing<br>Notting Hill, VIC</p>
+                        <h1 class="text-big">Timothy Brideson</h1>
+                        <p>Brideson Plumbing Services<br>Mount Waverley, VIC</p>
+
                       </div>
                     </div>
                   </div>
@@ -61,7 +62,7 @@
                     </a>
                   </li>
                   <li class="col-sm-3 col-xs-6">
-                    <a href="justin.php" class="nav-item nav-justin active">
+                    <a href="justin.php" class="nav-item nav-justin">
                       <div class="nav-img-wrapper"><img class="nav-img img-circle img-thumbnail" src="images/homepage/nav-justin.png"></div>
                       Justin&rsquo;s 
                       <span>project</span>
@@ -75,7 +76,7 @@
                     </a>
                   </li>
                   <li class="col-sm-3 col-xs-6">
-                    <a href="timothy.php" class="nav-item nav-timothy">
+                    <a href="timothy.php" class="nav-item nav-timothy active">
                       <div class="nav-img-wrapper"><img class="nav-img img-circle img-thumbnail" src="images/homepage/nav-timothy.png"></div>
                       Timothy&rsquo;s 
                       <span>project</span>
@@ -98,9 +99,9 @@
 
                     <div class="social-share">
 
-                      <a href=""><span class="fa fa-facebook "></span></a>
-                      <a href=""><span class="fa fa-twitter"></span></a>
-                      <a href=""><span class="fa fa-instagram"></span></a>
+                      <a href="#"><span class="fa fa-facebook "></span></a>
+                      <a href="#"><span class="fa fa-twitter"></span></a>
+                      <a href="#"><span class="fa fa-instagram"></span></a>
 
                     </div>
 
@@ -120,7 +121,7 @@
 
                     <div class="individual-video">
                       <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OAdkAA4f8Ro"></iframe>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DaMn3w3nuhI"></iframe>
                       </div>
                     </div>
                   </div>
@@ -129,10 +130,8 @@
               <div class="container">
                 <div class="row row-limit">
                   <div class="col-lg-12">
-                    <h3 class="text-blue text-standard-heading">About Justin</h3>
-                    <p>Justin Morris from Notting Hill, Victoria has been granted $15,000 for his submission to improve India&rsquo;s complex sanitation issues. For his project, Justin is partnering with the We Can&rsquo;t Wait foundation and putting the money towards the construction of toilet facilities and sanitation education in schools in Nasik, India. </p>
-
-                    <p>The father of four is thrilled to dedicate the Reece Grant to help students (some the same age as his own) complete their education and teach them the importance of proper sanitation.</p>
+                    <h3 class="text-blue text-standard-heading">About Timothy</h3>
+                    <p>Timothy Brideson from Mount Waverley, Victoria is teaming up with a group of Aussie tradies, led by Queensland builder John Tucker, to rebuild toilet facilities at a damaged school in Tacloban. The father of two is excited to put his skills to helping those in need. </p>
 
                   </div>
                 </div>
@@ -142,18 +141,23 @@
                   <div class="col-sm-5  col-xs-12">
                     <h3 class="text-blue text-standard-heading">Project Details</h3>
                     <div class="person-project-details">
-                      <p><strong>Location</strong> Nasik, India</p>
-                      <p><strong>Starting</strong> October 2015</p>
-                      <p><strong>Duration</strong> 10 days</p>
+                      <p><strong>Location</strong> Tacloban, Philippines  </p>
+                      <p><strong>Starting</strong> January 2016 </p>
+                      <p><strong>Duration</strong> 14 days </p>
                     </div>
-                    <p>Justin and the We Can&rsquo;t Wait team will head to Nasik, India for a 10 day assignment to rebuild toilet and sanitation facilities at Jila Parishad Prathamik School. The majority of Indian children are missing out on an education due to the lack of usable toilets. With the help of Justin and the We Can&rsquo;t Wait team, the project will help improve health and sanitation standards, keeping the students at school for longer. </p> 
+
+
+<p>In 2013, the biggest typhoon ever recorded made landfall in Tacloban, Philippines, killing 5877 people. The rebuild has been a slow process, and Timothy and the team will be constructing two classrooms, a medical room and toilet blocks at a school. Timothy will also be running education sessions with the local builders on how to cyclone-proof infrastructure. Furthermore, he will be educating the students on the importance of hygiene and sanitation.</p>
 
 
 
-                    <div class="donate-button-wrapper">
+
+                    <!-- <div class="donate-button-wrapper">
                     <div class="social-page">
 
-                        <a href="https://www.facebook.com/wecannotwait" target="_blank"><span class="fa fa-facebook "></span></a>
+                        <a href="" target="_blank"><span class="fa fa-facebook "></span></a>
+                        <a href="" target="_blank"><span class="fa fa-twitter"></span></a>
+                        <a href="" target="_blank"><span class="fa fa-instagram"></span></a>
 
                       </div>
                       <div class="donate-button">
@@ -166,11 +170,11 @@
                           We Can&rsquo;t Wait
                         </a>
                       </div>
-                    </div>
+                    </div> -->
                   </div>
                   <div class="col-sm-7 col-xs-12">
                     <div class="map-wrapper">
-                      <img class="img-responsive" src="images/justin/map.png">
+                      <img class="img-responsive" src="images/timothy/map.png">
                     </div>
                   </div>
                 </div>
@@ -190,20 +194,20 @@
                   <div class="col-sm-6">
                     <div class="postcard-wrapper">
                       <div class="back-image-wrapper">
-                        <img class="img-thumbnail" src="images/justin/article1-photo1.jpg">
+                        <img class="img-thumbnail" src="images/timothy/article1-photo1.jpg">
                       </div>
                       <div class="front-image-wrapper">
-                        <img class="img-thumbnail" src="images/justin/article1-photo2.jpg">
+                        <img class="img-thumbnail" src="images/timothy/article1-photo1.jpg">
                       </div>
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="project-details">
                       <p class="date">THURSDAY 6TH AUGUST</p>
-                      <p class="name">Justin Morris</p>
-                      <h3 class="text-blue text-article-heading">Reece Grant recipient: Justin Morris</h3>
+                      <p class="name">Timothy Brideson</p>
+                      <h3 class="text-blue text-article-heading">Grant Recipient: Timothy Brideson</h3>
                       <div class="project-description text-blue">
-                        <p>Justin Morris from Notting Hill, Victoria has been awarded $15,000 for his submission to improve India&rsquo;s complex sanitation issue. </p>
+                        <p>In 2013, the biggest typhoon ever recorded made landfall in Tacloban, Philippines, killing 5877 people. More than 1000 are still missing. The government has been slow to rebuild and there is still a lot of work to be done. </p>
                       </div>
                     </div>
                   </div>
@@ -214,38 +218,42 @@
 
                   <div class="expand-article text-blue">
                     <div class="col-sm-12">
-<p>For his project, Justin is partnering with the We Can&rsquo;t Wait foundation and putting the money towards the construction of toilet facilities and sanitation education in schools in Nasik, India. Construction will start in September, and Justin will head to Nasik for a ten-day assignment in October.</p>                    
-<p>Here&rsquo;s an interview with our main recipient Justin about his project.</p>
-<p><strong>Tell us about the current state of sanitation in India. </strong></p>
-<p>Lack of toilets in India is the number one cause of disease. This issue is the leading cause of students (especially girls) dropping out of schools once they&rsquo;ve hit puberty.</p>
-<p>Currently, 200,000 schools do not have toilets and another 400,000 schools have toilets that are unusable. The school we&rsquo;re supporting, Jila Parishad Prathamik School, has more than 650 students who we hope will benefit from the new facilities and hygiene education.</p>
-<p><strong>Why did you choose this particular project?</strong>  </p>
-<p>We Can&rsquo;t Wait is a client of mine and I&rsquo;ve been doing small-scale community projects with them for years. I&rsquo;ve always wanted to do more, so when We Can&rsquo;t Wait was looking to partner with someone for a school project in India, I put my hand up straight away. A week after expressing my interest, I received the Reece Grant email &ndash; it couldn&rsquo;t have come at a better time.</p>
+  
+
+
+<p>Our Grant recipient Timothy Brideson from Mt Waverley, Victoria is using the money to help rebuild toilet facilities at a damaged school in Tacloban, on a 14-day mission in January.</p> 
+
+<p>Here&rsquo;s an interview with Timothy about his project in the Philippines.</p>
+
+<p><strong>Why did you choose this particular project?</strong></p>
+
+ <p>It&rsquo;s actually a project that I was invited to go on with John Tucker (Queensland-based award-winning builder) and his team before I received the grant funds.
+Tacloban is the hometown of the infamous Imelda Marcos, the widow of former Philippine president Ferdinand Marcos who is well known for her lavish spending. Given this association, the town suffers from a lack of government funding and support, as a way of payback for Imelda&rsquo;s flamboyant spending habits and wealth.</p>
+
+<p><strong>What type of work will you be doing?</strong></p>
+
+ <p>Mainly, plumbing and roofing, plus teaching the local tradesmen how to cyclone-proof the infrastructure &ndash; many of the buildings are built by hand and don&rsquo;t stand up in the face of a natural disaster.</p>
+
 <p><strong>What will the money go towards? </strong></p>
-<p>We&rsquo;ll be installing 12 toilets and hand washing facilities, two 1000-litre water tanks and the necessary water filter systems to ensure the school has access to an ongoing clean water supply.</p>
-<p><strong>How important is education in the quest for maintaining sanitation? </strong></p>
-<p>Half of the puzzle in India is finding a way to encourage residents - who have been brought up in a culture of open defecation - to use the toilets.
-We hope that by teaching kids about the importance of washing their hands and proper hygiene, they&rsquo;ll pass on their knowledge to their parents and encourage them to install a toilet into their home. Change needs to happen from the bottom up. </p>
-<p><strong>What part of the project are you most excited about?</strong></p>
-<p>I&rsquo;m looking forward to seeing the excitement on the kids faces when the new toilet blocks are up and running. Having a proper working toilet is nothing for us, but everything for them.</p>
-<p><strong>What is your plan for the future?</strong></p>
- <p>I see this trip as the start of something much bigger for myself, both on a personal and career level. A year ago, I would&rsquo;ve put this type of project in the &lsquo;too hard basket&rsquo;, but with the help of the Reece Grant, I now understand that a little can go such a long way with these communities and this has inspired me to do more.</p>
+
+<p>Building materials for the construction of two classrooms, a nurse&rsquo;s medical room and a toilet block at one of the schools. At present, children are overcrowded and the sanitary conditions are extremely poor and subject to the spread of disease. These works will help stop this, and the improved conditions will provide a better environment for education. We&rsquo;ll also be educating the students on the importance of hygiene and sanitation.</p>
+
+<p><strong>What part of the project are you most excited about? </strong></p>
+
+<p>Being part of a passionate team and helping those in need. John Tucker is a true expert in missionary projects and knows this stuff inside out, so I&rsquo;m looking forward to learning from the best.</p>
+
+<p>I&rsquo;ve never been involved in a project like this and I&rsquo;m sure it&rsquo;ll expand my perspective on how lucky we are in Australia, as well as how my skills can be of assistance to underprivileged communities. </p>
+
 
 
 
                       </div>
-                      <div class="col-sm-6">
+                      <div class="col-sm-12">
                         <div class="article-snap">
-                         <img class="img-thumbnail" src="images/justin/article1-photo1.jpg">
+                         <img class="img-thumbnail" src="images/timothy/article1-photo1.jpg">
                        </div>
                      </div>
 
-
-                   <div class="col-sm-6">
-                    <div class="article-snap">
-                     <img class="img-thumbnail" src="images/justin/article1-photo2.jpg">
-                   </div>
-                 </div>
                  <div class="clear"></div>
 
                </div>
@@ -283,7 +291,7 @@ We hope that by teaching kids about the importance of washing their hands and pr
                 <div class="col-sm-6">
                   <div class="project-details">
                     <p class="date">THURSDAY 6TH AUGUST</p>
-                    <p class="name">Justin Morris</p>
+                    <p class="name">Timothy Brideson</p>
                     <h3 class="text-blue text-article-heading">This is the article title location </h3>
                     <div class="project-description text-blue">
                       <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis.</p>
@@ -361,7 +369,7 @@ We hope that by teaching kids about the importance of washing their hands and pr
             <div class="col-sm-6">
               <div class="project-details">
                 <p class="date">THURSDAY 6TH AUGUST</p>
-                <p class="name">Justin Morris</p>
+                <p class="name">Timothy Brideson</p>
                 <h3 class="text-blue text-article-heading">This is the article title location </h3>
                 <div class="project-description text-blue">
                   <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis.</p>

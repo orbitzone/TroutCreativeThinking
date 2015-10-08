@@ -99,8 +99,8 @@
 
                     <div class="social-share">
 
-                      <a href="#"><span class="fa fa-facebook "></span></a>
-                      <a href="#"><span class="fa fa-twitter"></span></a>
+                      <a href="http://www.facebook.com/sharer.php?u={url}&amp;title={text}"><span class="fa fa-facebook "></span></a>
+                      <a href="https://twitter.com/share?url={url}&amp;text={text}&amp;via={via}&amp;hashtags={hashtags}"><span class="fa fa-twitter"></span></a>
                       <a href="#"><span class="fa fa-instagram"></span></a>
 
                     </div>
@@ -113,7 +113,7 @@
               </div>
               <div class="container">
                 <div class="row row-limit">
-                  <div class="col-lg-12 spacing-big-bottom">
+                  <div class="col-lg-12 spacing-bottom">
 
 
 
@@ -121,7 +121,7 @@
 
                     <div class="individual-video">
                       <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DaMn3w3nuhI"></iframe>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DaMn3w3nuhI?rel=0&amp;showinfo=0"></iframe>
                       </div>
                     </div>
                   </div>
@@ -140,10 +140,13 @@
                 <div class="row row-limit spacing-big-bottom">
                   <div class="col-sm-5  col-xs-12">
                     <h3 class="text-blue text-standard-heading">Project Details</h3>
-                    <div class="person-project-details">
-                      <p><strong>Location</strong> Tacloban, Philippines  </p>
-                      <p><strong>Starting</strong> January 2016 </p>
-                      <p><strong>Duration</strong> 14 days </p>
+
+
+
+                                        <div class="person-project-details">
+                      <p class="info"><label>Location</label> Tacloban, Philippines</p>
+                      <p class="info"><label>Starting</label> January 2016</p>
+                      <p class="info"><label>Duration</label> 14 days</p>
                     </div>
 
 

@@ -98,9 +98,9 @@
 
                     <div class="social-share">
 
-                      <a href=""><span class="fa fa-facebook "></span></a>
-                      <a href=""><span class="fa fa-twitter"></span></a>
-                      <a href=""><span class="fa fa-instagram"></span></a>
+                      <a href="http://www.facebook.com/sharer.php?u={url}&amp;title={text}"><span class="fa fa-facebook "></span></a>
+                      <a href="https://twitter.com/share?url={url}&amp;text={text}&amp;via={via}&amp;hashtags={hashtags}"><span class="fa fa-twitter"></span></a>
+                      <a href="#"><span class="fa fa-instagram"></span></a>
 
                     </div>
 
@@ -112,7 +112,7 @@
               </div>
               <div class="container">
                 <div class="row row-limit">
-                  <div class="col-lg-12 spacing-big-bottom">
+                  <div class="col-lg-12 spacing-bottom">
 
 
 
@@ -120,7 +120,7 @@
 
                     <div class="individual-video">
                       <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Gh18sVLetRE"></iframe>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Gh18sVLetRE?rel=0&amp;showinfo=0"></iframe>
                       </div>
                     </div>
                   </div>
@@ -140,12 +140,13 @@
                 <div class="row row-limit spacing-big-bottom">
                   <div class="col-sm-5  col-xs-12">
                     <h3 class="text-blue text-standard-heading">Project Details</h3>
-                    <div class="person-project-details">
-                      <p><strong>Location</strong> Manatuto, East Timor </p>
-                      <p><strong>Starting</strong> September 2015 </p>
-                      <p><strong>Duration</strong> 2 – 3 months </p>
-                    </div>
 
+
+                                        <div class="person-project-details">
+                      <p class="info"><label>Location</label> Manatuto, East Timor</p>
+                      <p class="info"><label>Starting</label> September 2015</p>
+                      <p class="info"><label>Duration</label>  2 – 3 months</p>
+                    </div>
 
 <p>Spring water is the main water source for the communities living in the mountains, however keeping the water clean and transporting it is a major challenge. James is putting the Reece Grant funds towards restoring two remote villages with proper facilities to access spring water, water filtration and toilet facilities.</p> 
 

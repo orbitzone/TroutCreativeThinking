@@ -101,6 +101,32 @@ overflow:hidden;
 		padding-bottom: 20px;
 	}
 }
+.spacing-top{
+	padding-top: 40px;
+	@media (min-width: @screen-lg-min) {
+	}
+	@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+	}
+	@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+		padding-top: 30px;
+	}
+	@media (max-width: @screen-xs-max) {
+		padding-top: 20px;
+	}
+}
+.spacing-bottom{
+	padding-bottom: 40px;
+	@media (min-width: @screen-lg-min) {
+	}
+	@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+	}
+	@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+		padding-bottom: 30px;
+	}
+	@media (max-width: @screen-xs-max) {
+		padding-bottom: 20px;
+	}
+}
 .row-edge{
 	margin-left:0;
 	margin-right:0;
@@ -285,7 +311,7 @@ overflow:hidden;
 				position:absolute;
 				right:-30%;
 				top:0;
-				width:216px;
+				width:200px;
 				@media (min-width: @screen-lg-min) {
 				}
 				@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
@@ -338,10 +364,16 @@ overflow:hidden;
 .background-james{
 	background:url('../images/james/banner.jpg') no-repeat top center;
 	background-size: cover;
+	@media (max-width: @screen-xs-max) {
+		background-position:60%;
+	}
 }
 .background-timothy{
 	background:url('../images/timothy/banner.jpg') no-repeat top center;
 	background-size: cover;
+	@media (max-width: @screen-xs-max) {
+		background-position:60%;
+	}
 }
 .banner-person{
 	.banner-item-wrapper{
@@ -351,7 +383,7 @@ overflow:hidden;
 			position:absolute;
 			right:-30%;
 			top:0;
-			width:216px;
+			width:160px;
 			@media (min-width: @screen-lg-min) {
 			}
 			@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
@@ -359,7 +391,7 @@ overflow:hidden;
 			}
 			@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
 				right:0;
-				width:170px;
+				width:130px;
 			}
 			@media (max-width: @screen-xs-max) {
 				right:5px;
@@ -433,13 +465,45 @@ overflow:hidden;
 					font-size: 18px;
 				}
 			}
+			.play-button,.cta-text{
+						&:hover{
+				cursor: pointer;
+			}	
+			}
+
+		}
+		.landing-video{
+			position:absolute;
+							left:0;
+				right:0;
+				top:30px;
+				text-align:center;
+			.video-wrapper{
+				max-width:700px;
+				margin:0 auto;
+					@media (max-width: @screen-xs-max) {
+						width:390px;
+					}
+
+			}
+			.close-button{
+				z-index: 100;
+				color:@textWhite;
+			    width: 50px;
+			    height: 50px;
+			    font-size: 30px;
+			    float: right;
+&:hover{
+				cursor: pointer;
+				color:@textBlack;
+			}
+			}
 		}
 		@media (min-width: @screen-lg-min) {
 		}
 		@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
 		}
 		@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
-			height:360px;
 		}
 		@media (max-width: @screen-xs-max) {
 			height:280px;
@@ -564,6 +628,7 @@ overflow:hidden;
 		}
 		.back-image-wrapper{
 			position:absolute;
+			width:100%;
 			top:12px;
 			-ms-transform: rotate(-6deg);
 			-webkit-transform: rotate(-6deg);
@@ -607,10 +672,12 @@ overflow:hidden;
 .person-project-details{
 	margin-top: 20px;
 	margin-bottom:20px;
-	p{
+	p.info{
 		font-weight:500;
-		strong{
+		margin-bottom:0;
+		label{
 			color:@textBlue;
+			width:65px;
 		}
 	}
 }
@@ -655,8 +722,7 @@ overflow:hidden;
 	}
 }
 .map-wrapper{
-	margin-top:40px;
-	margin-bottom:40px;
+	margin:40px;
 }
 .social-share{
 	text-align:right;

@@ -98,9 +98,9 @@
 
                     <div class="social-share">
 
-                      <a href=""><span class="fa fa-facebook "></span></a>
-                      <a href=""><span class="fa fa-twitter"></span></a>
-                      <a href=""><span class="fa fa-instagram"></span></a>
+                      <a href="http://www.facebook.com/sharer.php?u={url}&amp;title={text}"><span class="fa fa-facebook "></span></a>
+                      <a href="https://twitter.com/share?url={url}&amp;text={text}&amp;via={via}&amp;hashtags={hashtags}"><span class="fa fa-twitter"></span></a>
+                      <a href="#"><span class="fa fa-instagram"></span></a>
 
                     </div>
 
@@ -112,7 +112,7 @@
               </div>
               <div class="container">
                 <div class="row row-limit">
-                  <div class="col-lg-12 spacing-big-bottom">
+                  <div class="col-lg-12 spacing-bottom">
 
 
 
@@ -120,7 +120,7 @@
 
                     <div class="individual-video">
                       <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OAdkAA4f8Ro"></iframe>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OAdkAA4f8Ro?rel=0&amp;showinfo=0"></iframe>
                       </div>
                     </div>
                   </div>
@@ -142,9 +142,9 @@
                   <div class="col-sm-5  col-xs-12">
                     <h3 class="text-blue text-standard-heading">Project Details</h3>
                     <div class="person-project-details">
-                      <p><strong>Location</strong> Nasik, India</p>
-                      <p><strong>Starting</strong> October 2015</p>
-                      <p><strong>Duration</strong> 10 days</p>
+                      <p class="info"><label>Location</label> Nasik, India</p>
+                      <p class="info"><label>Starting</label> October 2015</p>
+                      <p class="info"><label>Duration</label> 10 days</p>
                     </div>
                     <p>Justin and the We Can&rsquo;t Wait team will head to Nasik, India for a 10 day assignment to rebuild toilet and sanitation facilities at Jila Parishad Prathamik School. The majority of Indian children are missing out on an education due to the lack of usable toilets. With the help of Justin and the We Can&rsquo;t Wait team, the project will help improve health and sanitation standards, keeping the students at school for longer. </p> 
 

@@ -212,10 +212,10 @@
                       <img src="images/homepage/stamp-sm.png">
                     </div>
                     <div class="back-image-wrapper">
-                      <img class="img-thumbnail" src="images/homepage/snap2.png">
+                      <img class="img-thumbnail" src="images/justin/article1-photo1.jpg">
                     </div>
                     <div class="front-image-wrapper">
-                      <img class="img-thumbnail" src="images/homepage/snap1.png">
+                      <img class="img-thumbnail" src="images/justin/article1-photo2.jpg">
                     </div>
                   </div>
                 </div>

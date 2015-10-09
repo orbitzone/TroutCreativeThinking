@@ -657,10 +657,14 @@ a{
 			-ms-transform: rotate(-6deg);
 			-webkit-transform: rotate(-6deg);
 			transform: rotate(-6deg);
-			-webkit-transition: -ms-transform 500ms ease-out;
-			-moz-transition: -webkit-transform 500ms ease-out;
-			-o-transition: -webkit-transform 500ms ease-out;
-			transition: transform 500ms ease-out;
+
+
+  -webkit-transition: -webkit-transform .3s ease-in;
+     -moz-transition: -moz-transform .3s ease-in;
+       -o-transition: -o-transform .3s ease-in;
+          transition: transform .3s ease-in;
+
+
 			&:hover{
 				-ms-transform: rotate(-8deg);
 				-webkit-transform: rotate(-8deg);
@@ -672,6 +676,10 @@ a{
 			-ms-transform: rotate(0deg);
 			-webkit-transform: rotate(0deg);
 			transform: rotate(0deg);
+  -webkit-transition: -webkit-transform .3s ease-in;
+     -moz-transition: -moz-transform .3s ease-in;
+       -o-transition: -o-transform .3s ease-in;
+          transition: transform .3s ease-in;
 		}
 		&:hover{
 			.back-image-wrapper{
@@ -679,6 +687,12 @@ a{
 				-webkit-transform: rotate(-8deg);
 				transform: rotate(-8deg);
 			}
+			.front-image-wrapper{
+								-ms-transform: rotate(2deg);
+				-webkit-transform: rotate(2deg);
+				transform: rotate(2deg);
+			}
+
 		}
 		@media (min-width: @screen-lg-min) {
 		}

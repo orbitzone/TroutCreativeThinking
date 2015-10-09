@@ -680,10 +680,10 @@ body.grant-2015 .grant-2015-content .latest-project-section .postcard-wrapper .b
   -ms-transform: rotate(-6deg);
   -webkit-transform: rotate(-6deg);
   transform: rotate(-6deg);
-  -webkit-transition: -ms-transform 500ms ease-out;
-  -moz-transition: -webkit-transform 500ms ease-out;
-  -o-transition: -webkit-transform 500ms ease-out;
-  transition: transform 500ms ease-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  -moz-transition: -moz-transform 0.3s ease-in;
+  -o-transition: -o-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
 }
 body.grant-2015 .grant-2015-content .latest-project-section .postcard-wrapper .back-image-wrapper:hover {
   -ms-transform: rotate(-8deg);
@@ -695,11 +695,20 @@ body.grant-2015 .grant-2015-content .latest-project-section .postcard-wrapper .f
   -ms-transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  -moz-transition: -moz-transform 0.3s ease-in;
+  -o-transition: -o-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
 }
 body.grant-2015 .grant-2015-content .latest-project-section .postcard-wrapper:hover .back-image-wrapper {
   -ms-transform: rotate(-8deg);
   -webkit-transform: rotate(-8deg);
   transform: rotate(-8deg);
+}
+body.grant-2015 .grant-2015-content .latest-project-section .postcard-wrapper:hover .front-image-wrapper {
+  -ms-transform: rotate(2deg);
+  -webkit-transform: rotate(2deg);
+  transform: rotate(2deg);
 }
 @media (max-width: 767px) {
   body.grant-2015 .grant-2015-content .latest-project-section .postcard-wrapper {

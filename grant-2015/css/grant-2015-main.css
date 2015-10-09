@@ -476,9 +476,16 @@ body.grant-2015 .grant-2015-content .homepage-video .background-video .cta-video
     font-size: 18px;
   }
 }
+body.grant-2015 .grant-2015-content .homepage-video .background-video .cta-video .cta-text {
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
 body.grant-2015 .grant-2015-content .homepage-video .background-video .cta-video .cta-text:hover {
   cursor: pointer;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
   filter: alpha(opacity=70);
   -moz-opacity: 0.7;
   -khtml-opacity: 0.7;
@@ -582,6 +589,12 @@ body.grant-2015 .grant-2015-content .grant-2015-nav li a .nav-text-wrapper {
   position: relative;
   top: -23px;
 }
+body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-home {
+  margin-bottom: 10px;
+}
+body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-home .nav-text-wrapper {
+  padding-top: 3px;
+}
 body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-home .nav-img {
   position: relative;
   top: 20px;
@@ -594,7 +607,6 @@ body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-home:hover {
 }
 body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-home.active .nav-img-wrapper,
 body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-home:hover .nav-img-wrapper {
-  margin-bottom: 10px;
   visibility: visible;
 }
 body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-home.active .nav-img-wrapper .nav-img,
@@ -606,8 +618,8 @@ body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-home:hover .nav-img
 }
 body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-home.active .nav-text-wrapper,
 body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-home:hover .nav-text-wrapper {
-  padding-top: 0px;
-  top: -10px;
+  padding-top: 3px;
+  top: 0px;
 }
 body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-justin.active,
 body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-james.active,

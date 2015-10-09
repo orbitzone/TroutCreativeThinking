@@ -70,17 +70,15 @@
                     <a href="james.php" class="nav-item nav-james active">
                       <span class="nav-img-wrapper"><img class="nav-img" src="images/homepage/nav-james.png"></span>
                       <span class="nav-text-wrapper">James&rsquo;<span>project</span></span>
-                      </a>
-                    </li>
-
-                    <li class="col-sm-3 col-xs-6">
-
-                      <a href="timothy.php" class="nav-item nav-timothy">
-                        <span class="nav-img-wrapper"><img class="nav-img" src="images/homepage/nav-timothy.png"></span>
-                        <span class="nav-text-wrapper">Timothy&rsquo;s <span>project</span></span>
-                      </a>
-                    </li>
-                  </ul>
+                    </a>
+                  </li>
+                  <li class="col-sm-3 col-xs-6">
+                    <a href="timothy.php" class="nav-item nav-timothy">
+                      <span class="nav-img-wrapper"><img class="nav-img" src="images/homepage/nav-timothy.png"></span>
+                      <span class="nav-text-wrapper">Timothy&rsquo;s <span>project</span></span>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>  
@@ -94,29 +92,17 @@
               <div class="container">
                 <div class="row row-limit">
                   <div class="col-lg-12 spacing-big-top">
-
                     <div class="social-share">
-
                       <a href="http://www.facebook.com/sharer.php?u={url}&amp;title={text}"><span class="fa fa-facebook "></span></a>
                       <a href="https://twitter.com/share?url={url}&amp;text={text}&amp;via={via}&amp;hashtags={hashtags}"><span class="fa fa-twitter"></span></a>
                       <a href="#"><span class="fa fa-instagram"></span></a>
-
                     </div>
-
-
-
-
                   </div>
                 </div>
               </div>
               <div class="container">
                 <div class="row row-limit">
                   <div class="col-lg-12 spacing-bottom">
-
-
-
-
-
                     <div class="individual-video">
                       <div class="embed-responsive embed-responsive-16by9">
                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Gh18sVLetRE?rel=0&amp;showinfo=0"></iframe>
@@ -129,9 +115,7 @@
                 <div class="row row-limit">
                   <div class="col-lg-12">
                     <h3 class="text-blue text-standard-heading">About James</h3>
-
-<p>James Millis is partnering with Red Cross and Friends of Manatuto, to restore water and sanitation facilities in remote villages in East Timor. The new dad will be cheering on the project from his home in Edithvale, Victoria, and plans to visit the villages in 2016.</p> 
-
+                    <p>James Millis is partnering with Red Cross and Friends of Manatuto, to restore water and sanitation facilities in remote villages in East Timor. The new dad will be cheering on the project from his home in Edithvale, Victoria, and plans to visit the villages in 2016.</p> 
                   </div>
                 </div>
               </div>
@@ -139,24 +123,13 @@
                 <div class="row row-limit spacing-big-bottom">
                   <div class="col-sm-5  col-xs-12">
                     <h3 class="text-blue text-standard-heading">Project Details</h3>
-
-
-                                        <div class="person-project-details">
+                    <div class="person-project-details">
                       <p class="info"><label>Location</label> Manatuto, East Timor</p>
                       <p class="info"><label>Starting</label> September 2015</p>
                       <p class="info"><label>Duration</label>  2 – 3 months</p>
                     </div>
-
-<p>Spring water is the main water source for the communities living in the mountains, however keeping the water clean and transporting it is a major challenge. James is putting the Reece Grant funds towards restoring two remote villages with proper facilities to access spring water, water filtration and toilet facilities.</p> 
-
-
-
+                    <p>Spring water is the main water source for the communities living in the mountains, however keeping the water clean and transporting it is a major challenge. James is putting the Reece Grant funds towards restoring two remote villages with proper facilities to access spring water, water filtration and toilet facilities.</p> 
                     <div class="donate-button-wrapper">
-                    <div class="social-page">
-
-                        <a href="https://www.facebook.com/groups/AusTimorFN/" target="_blank"><span class="fa fa-facebook "></span></a>
-
-                      </div>
                       <div class="donate-button">
                         <a href="http://www.redcross.tl/" target="_blank">
                           Donate to the Project
@@ -165,6 +138,11 @@
                       <div class="donate-button">
                         <a href="http://www.austimorfn.org/friends-of-manatuto/" target="_blank">
                           Friends of Manatuto
+                        </a>
+                      </div>
+                      <div class="donate-button">
+                        <a href="https://www.facebook.com/groups/AusTimorFN/" target="_blank">
+                          <span class="fa fa-facebook "></span>
                         </a>
                       </div>
                     </div>
@@ -212,82 +190,45 @@
               </div>
               <div class="container">
                 <div class="row row-limit text-left">
-
                   <div class="expand-article text-blue">
                     <div class="col-sm-12">
-
-
-
-<p> Spring water is the main water source for four communities living in the mountains, but keeping the water free from contamination and transporting it to the villages is challenging, with community members spending hours a day carrying water.</p>  
-
-
-<p>Red Cross, with support from the Friends of Manatuto program, have restored two of the four villages with proper facilities to access the stream, water filtration and toilet facilities. Additional Grant recipient, James Millis from Edithvale, Victoria is putting the money towards finishing the project, which will begin this month.</p>
-
-
-<p>Here&rsquo;s what James has to say about his project in East Timor.</p>
-
-<p><strong>Why did you choose this particular project?</strong> </p>
-
- <p>I found out about Friends of Manatuto through family friends and heard that they needed support to complete the three-year project. The Reece Grant came at the perfect time for me to get involved.</p>
-
-<p><strong>What will the money go towards? </strong></p>
-
-<p>There are enough funds to finish restoring the third village, and begin the fourth in six months. The money is going towards tools and equipment to test the water, install proper water transport facilities and construct toilet facilities.</p>
-
-<p><strong>How do you ensure long-term change?</strong></p>
-
- <p>An important part of the job is actually teaching the community to be self-sufficient and run the water sanitation and transportation systems themselves, rather than us do it for them. That way, when we leave, the community will know how to fix problems when they arise and can pass their knowledge down to the younger generation.</p>
-
-<p><strong>What part of the project are you most excited about?</strong></p>
-
- <p>Making a difference by helping out a community that would otherwise be totally overlooked. It&rsquo;s one of those places that don&rsquo;t receive enough funding or support, so it&rsquo;s nice to be able to help make a lasting change.</p>
-
-<p><strong>What is your plan for the future?</strong></p>
-
- <p>Once this project is underway, I&rsquo;ll be looking to dedicate a week per year to supporting underprivileged areas using my plumbing skills. Realising how many people you can help with such little effort is a huge eye opener.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-                      </div>
-                      <div class="col-sm-12">
-                        <div class="article-snap">
-                         <img class="img-thumbnail" src="images/james/article1-photo1.jpg">
-                       </div>
+                      <p> Spring water is the main water source for four communities living in the mountains, but keeping the water free from contamination and transporting it to the villages is challenging, with community members spending hours a day carrying water.</p>  
+                      <p>Red Cross, with support from the Friends of Manatuto program, have restored two of the four villages with proper facilities to access the stream, water filtration and toilet facilities. Additional Grant recipient, James Millis from Edithvale, Victoria is putting the money towards finishing the project, which will begin this month.</p>
+                      <p>Here&rsquo;s what James has to say about his project in East Timor.</p>
+                      <p><strong>Why did you choose this particular project?</strong></p>
+                      <p>I found out about Friends of Manatuto through family friends and heard that they needed support to complete the three-year project. The Reece Grant came at the perfect time for me to get involved.</p>
+                      <p><strong>What will the money go towards? </strong></p>
+                      <p>There are enough funds to finish restoring the third village, and begin the fourth in six months. The money is going towards tools and equipment to test the water, install proper water transport facilities and construct toilet facilities.</p>
+                      <p><strong>How do you ensure long-term change?</strong></p>
+                      <p>An important part of the job is actually teaching the community to be self-sufficient and run the water sanitation and transportation systems themselves, rather than us do it for them. That way, when we leave, the community will know how to fix problems when they arise and can pass their knowledge down to the younger generation.</p>
+                      <p><strong>What part of the project are you most excited about?</strong></p>
+                      <p>Making a difference by helping out a community that would otherwise be totally overlooked. It&rsquo;s one of those places that don&rsquo;t receive enough funding or support, so it&rsquo;s nice to be able to help make a lasting change.</p>
+                      <p><strong>What is your plan for the future?</strong></p>
+                      <p>Once this project is underway, I&rsquo;ll be looking to dedicate a week per year to supporting underprivileged areas using my plumbing skills. Realising how many people you can help with such little effort is a huge eye opener.</p>
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="article-snap">
+                       <img class="img-thumbnail" src="images/james/article1-photo1.jpg">
                      </div>
-
-                     
-                   
-
-                   
-                 <div class="clear"></div>
-
-               </div>
-               <div class="col-sm-6 col-sm-offset-6">
-                <div class="read-more-button-wrap">
-                  <span class="read-more-button expand-button">
-                    <span class="read-more-text">Read&nbsp;more</span>
-                    <span class="read-less-text">Read&nbsp;less</span>
-                  </span></div>
-                </div> 
+                   </div>
+                   <div class="clear"></div>
+                 </div>
+                 <div class="col-sm-6 col-sm-offset-6">
+                  <div class="read-more-button-wrap">
+                    <span class="read-more-button expand-button">
+                      <span class="read-more-text">Read&nbsp;more</span>
+                      <span class="read-less-text">Read&nbsp;less</span>
+                    </span></div>
+                  </div> 
+                </div>
               </div>
             </div>
           </div>
+          <div class="wave-grey-to-white"></div>
         </div>
-        <div class="wave-grey-to-white"></div>
-      </div>
-      <!--LATEST PROJECTS SECTION -->
-      <!--ONE PROJECTS SECTION -->
-      <div class="wave-section latest-project-section start-closed one-article-section">
+        <!--LATEST PROJECTS SECTION -->
+        <!--ONE PROJECTS SECTION -->
+      <!-- <div class="wave-section latest-project-section start-closed one-article-section">
         <div class="wave-white-to-grey-shadow"></div>
         <div class="row row-edge background-grey spacing-big-bottom">
           <div class="col-lg-12 col-edge">
@@ -317,7 +258,6 @@
             </div>
             <div class="container">
               <div class="row row-limit text-left">
-
                 <div class="expand-article text-blue">
                   <div class="col-sm-12">
                     <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis.</p>
@@ -330,7 +270,6 @@
                      <img class="img-thumbnail" src="images/homepage/snap1.png">
                    </div>
                  </div>
-
                  <div class="col-sm-6">
                   <div class="article-snap">
                    <img class="img-thumbnail" src="images/homepage/snap2.png">
@@ -341,14 +280,12 @@
                    <img class="img-thumbnail" src="images/homepage/snap1.png">
                  </div>
                </div>
-
                <div class="col-sm-6">
                 <div class="article-snap">
                  <img class="img-thumbnail" src="images/homepage/snap2.png">
                </div>
              </div>
              <div class="clear"></div>
-
            </div>
            <div class="col-sm-6 col-sm-offset-6">
             <div class="read-more-button-wrap">
@@ -362,10 +299,10 @@
       </div>
     </div>
     <div class="wave-grey-to-white"></div>
-  </div>
+  </div> -->
   <!--ONE PROJECTS SECTION -->
   <!--ONE PROJECTS SECTION -->
-  <div class="wave-section latest-project-section start-closed one-article-section">
+  <!-- <div class="wave-section latest-project-section start-closed one-article-section">
     <div class="wave-white-to-grey-shadow"></div>
     <div class="row row-edge background-grey spacing-big-bottom">
       <div class="col-lg-12 col-edge">
@@ -395,7 +332,6 @@
         </div>
         <div class="container">
           <div class="row row-limit text-left">
-
             <div class="expand-article text-blue">
               <div class="col-sm-12">
                 <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis.</p>
@@ -408,7 +344,6 @@
                  <img class="img-thumbnail" src="images/homepage/snap1.png">
                </div>
              </div>
-
              <div class="col-sm-6">
               <div class="article-snap">
                <img class="img-thumbnail" src="images/homepage/snap2.png">
@@ -419,14 +354,12 @@
                <img class="img-thumbnail" src="images/homepage/snap1.png">
              </div>
            </div>
-
            <div class="col-sm-6">
             <div class="article-snap">
              <img class="img-thumbnail" src="images/homepage/snap2.png">
            </div>
          </div>
          <div class="clear"></div>
-
        </div>
        <div class="col-sm-6 col-sm-offset-6">
         <div class="read-more-button-wrap">
@@ -440,7 +373,7 @@
   </div>
 </div>
 <div class="wave-grey-to-white"></div>
-</div>
+</div> -->
 <!--ONE PROJECTS SECTION -->
 </div>
 </div><!--.grant-2015-content-->

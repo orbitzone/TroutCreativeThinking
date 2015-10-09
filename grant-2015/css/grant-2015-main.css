@@ -31,6 +31,7 @@ body.grant-2015 .grant-2015-content .text-white {
 }
 body.grant-2015 .grant-2015-content .text-big {
   font-size: 47px;
+  margin-top: 0;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   body.grant-2015 .grant-2015-content .text-big {
@@ -53,8 +54,8 @@ body.grant-2015 .grant-2015-content .text-intro {
   font-weight: bold;
 }
 body.grant-2015 .grant-2015-content .img-spacing {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 body.grant-2015 .grant-2015-content .reece-logo {
   width: 125px;
@@ -314,13 +315,13 @@ body.grant-2015 .grant-2015-content .banner-homepage .background-homepage {
 }
 body.grant-2015 .grant-2015-content .banner-homepage .background-homepage .banner-item-wrapper {
   position: relative;
-  height: 580px;
+  height: 420px;
 }
 body.grant-2015 .grant-2015-content .banner-homepage .background-homepage .banner-item-wrapper .reece-grant-logo {
   position: absolute;
   right: -30%;
   top: 0;
-  width: 200px;
+  width: 160px;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   body.grant-2015 .grant-2015-content .banner-homepage .background-homepage .banner-item-wrapper .reece-grant-logo {
@@ -330,7 +331,7 @@ body.grant-2015 .grant-2015-content .banner-homepage .background-homepage .banne
 @media (min-width: 768px) and (max-width: 991px) {
   body.grant-2015 .grant-2015-content .banner-homepage .background-homepage .banner-item-wrapper .reece-grant-logo {
     right: 0;
-    width: 170px;
+    width: 130px;
   }
 }
 @media (max-width: 767px) {

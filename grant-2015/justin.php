@@ -93,9 +93,9 @@
                 <div class="row row-limit">
                   <div class="col-lg-12 spacing-big-top">
                     <div class="social-share">
-                      <a href="http://www.facebook.com/sharer.php?u={url}&amp;title={text}"><span class="fa fa-facebook "></span></a>
-                      <a href="https://twitter.com/share?url={url}&amp;text={text}&amp;via={via}&amp;hashtags={hashtags}"><span class="fa fa-twitter"></span></a>
-                      <a href="#"><span class="fa fa-instagram"></span></a>
+                      <a href="http://www.facebook.com/sharer.php?u={url}&amp;title={text}"  target="_blank"><span class="fa fa-facebook "></span></a>
+                      <a href="https://twitter.com/share?url={url}&amp;text={text}&amp;via={via}&amp;hashtags={hashtags}"  target="_blank"><span class="fa fa-twitter"></span></a>
+                      <a href="#"><span class="fa fa-instagram" target="_blank"></span></a>
                     </div>
                   </div>
                 </div>
@@ -143,7 +143,7 @@
                       </div>
                       <div class="donate-button">
                         <a href="https://www.facebook.com/wecannotwait" target="_blank">
-                         <span class="fa fa-facebook "></span>
+                         <span class="fa fa-facebook-square "></span> We Can&rsquo;t Wait
                        </a>
                      </div>
                    </div>

@@ -147,10 +147,10 @@
                     <div class="feature-profile-image-wrapper">
                       <img class="india-outline" src="images/homepage/india-outline.png">
                       <img class="img-responsive img-spacing" src="images/homepage/justin.jpg">
-                      <h3 class="name text-white">Justin Morris</h3>
                     </div>
                   </div>
                   <div class="col-sm-7 col-sm-offset-1 text-blue">
+                  <h3 class="name">Justin Morris</h3>
                     <p>Justin has been granted $15,000 for his submission to improve India&rsquo;s complex sanitation issues. Partnering with the We Can&rsquo;t Wait foundation, he is putting the money towards the construction of toilet facilities and sanitation education in schools in Nasik, India. </p>
                     <div class="read-more-button-wrap"><a href="justin.php" class="read-more-button">Read&nbsp;more</a></div>
                   </div>
@@ -161,16 +161,16 @@
                   <div class="col-sm-6">
                     <div class="profile-image-wrap">
                       <img class="img-responsive img-spacing" src="images/homepage/timothy.jpg">
-                      <h3 class="name text-white">Timothy Brideson </h3>
                     </div>
+                    <h3 class="name text-blue">Timothy Brideson </h3>
                     <p>Tim has been granted $5,000 and is using the money to rebuild toilet facilities at a damaged school in the Philippines. He will also be running education sessions the local tradesmen and students to ensure long-term change.</p>
                     <div class="read-more-button-wrap"><a href="timothy.php" class="read-more-button">Read&nbsp;more</a></div>
                   </div>
                   <div class="col-sm-6">
                     <div class="profile-image-wrap">
                       <img class="img-responsive img-spacing" src="images/homepage/james.jpg">
-                      <h3 class="name text-white">James Millis</h3>
                     </div>
+                    <h3 class="name text-blue">James Millis</h3>
                     <p>James has been granted $5,000 for his project in East Timor and is putting the funds towards restoring two remote villages with proper facilities to access spring water, water filtration and toilet facilities. </p>
                     <div class="read-more-button-wrap"><a href="james.php" class="read-more-button">Read&nbsp;more</a></div>
                   </div>
@@ -198,17 +198,19 @@
               <div class="container">
                 <div class="row row-limit text-left">
                   <div class="col-sm-6">
-                    <div class="postcard-wrapper">
-                      <div class="stamp-wrapper">
-                        <img src="images/homepage/stamp-sm.png">
+                    <a href="justin.php#latest-article" class="read-more-button">
+                      <div class="postcard-wrapper">
+                        <div class="stamp-wrapper">
+                          <img src="images/homepage/stamp-sm.png">
+                        </div>
+                        <div class="back-image-wrapper">
+                          <img class="img-thumbnail" src="images/justin/article1-photo1.jpg">
+                        </div>
+                        <div class="front-image-wrapper">
+                          <img class="img-thumbnail" src="images/justin/article1-photo2.jpg">
+                        </div>
                       </div>
-                      <div class="back-image-wrapper">
-                        <img class="img-thumbnail" src="images/justin/article1-photo1.jpg">
-                      </div>
-                      <div class="front-image-wrapper">
-                        <img class="img-thumbnail" src="images/justin/article1-photo2.jpg">
-                      </div>
-                    </div>
+                    </a>
                   </div>
                   <div class="col-sm-6">
                     <div class="project-details">

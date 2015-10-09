@@ -36,15 +36,15 @@
         <!--HEADER SECTION -->
         <div class="wave-section wave-person-header">
           <div class="row row-edge banner-person background-blue">
-            <div class="col-lg-12 col-edge background-justin">
+            <div class="col-lg-12 col-edge background-james">
               <div class="container">
                 <div class="row row-limit">
                   <div class="col-lg-12">
                     <div class="banner-item-wrapper">
                       <img class="reece-grant-logo" src="images/homepage/reece-grant-logo.png">
                       <div class="person-details text-blue">
-                        <h1 class="text-big">Justin Morris</h1>
-                        <p>Precision Electrical &amp; Plumbing<br>Notting Hill, VIC</p>
+                        <h1 class="text-big">James Millis</h1>
+                        <p>Master Trades<br>Edithvale, VIC</p>
                       </div>
                     </div>
                   </div>
@@ -61,14 +61,14 @@
                     </a>
                   </li>
                   <li class="col-sm-3 col-xs-6">
-                    <a href="justin.php" class="nav-item nav-justin active">
+                    <a href="justin.php" class="nav-item nav-justin">
                       <div class="nav-img-wrapper"><img class="nav-img img-circle img-thumbnail" src="images/homepage/nav-justin.png"></div>
                       Justin&rsquo;s 
                       <span>project</span>
                     </a>
                   </li>
                   <li class="col-sm-3 col-xs-6">
-                    <a href="james.php" class="nav-item nav-james">
+                    <a href="james.php" class="nav-item nav-james active">
                       <div class="nav-img-wrapper"><img class="nav-img img-circle img-thumbnail" src="images/homepage/nav-james.png"></div>
                       James&rsquo;
                       <span>project</span>
@@ -120,7 +120,7 @@
 
                     <div class="individual-video">
                       <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OAdkAA4f8Ro?rel=0&amp;showinfo=0"></iframe>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Gh18sVLetRE?rel=0&amp;showinfo=0"></iframe>
                       </div>
                     </div>
                   </div>
@@ -129,10 +129,9 @@
               <div class="container">
                 <div class="row row-limit">
                   <div class="col-lg-12">
-                    <h3 class="text-blue text-standard-heading">About Justin</h3>
-                    <p>Justin Morris from Notting Hill, Victoria has been granted $15,000 for his submission to improve India&rsquo;s complex sanitation issues. For his project, Justin is partnering with the We Can&rsquo;t Wait foundation and putting the money towards the construction of toilet facilities and sanitation education in schools in Nasik, India. </p>
+                    <h3 class="text-blue text-standard-heading">About James</h3>
 
-                    <p>The father of four is thrilled to dedicate the Reece Grant to help students (some the same age as his own) complete their education and teach them the importance of proper sanitation.</p>
+<p>James Millis is partnering with Red Cross and Friends of Manatuto, to restore water and sanitation facilities in remote villages in East Timor. The new dad will be cheering on the project from his home in Edithvale, Victoria, and plans to visit the villages in 2016.</p> 
 
                   </div>
                 </div>
@@ -141,36 +140,39 @@
                 <div class="row row-limit spacing-big-bottom">
                   <div class="col-sm-5  col-xs-12">
                     <h3 class="text-blue text-standard-heading">Project Details</h3>
-                    <div class="person-project-details">
-                      <p class="info"><label>Location</label> Nasik, India</p>
-                      <p class="info"><label>Starting</label> October 2015</p>
-                      <p class="info"><label>Duration</label> 10 days</p>
+
+
+                                        <div class="person-project-details">
+                      <p class="info"><label>Location</label> Manatuto, East Timor</p>
+                      <p class="info"><label>Starting</label> September 2015</p>
+                      <p class="info"><label>Duration</label>  2 – 3 months</p>
                     </div>
-                    <p>Justin and the We Can&rsquo;t Wait team will head to Nasik, India for a 10 day assignment to rebuild toilet and sanitation facilities at Jila Parishad Prathamik School. The majority of Indian children are missing out on an education due to the lack of usable toilets. With the help of Justin and the We Can&rsquo;t Wait team, the project will help improve health and sanitation standards, keeping the students at school for longer. </p> 
+
+<p>Spring water is the main water source for the communities living in the mountains, however keeping the water clean and transporting it is a major challenge. James is putting the Reece Grant funds towards restoring two remote villages with proper facilities to access spring water, water filtration and toilet facilities.</p> 
 
 
 
                     <div class="donate-button-wrapper">
                     <div class="social-page">
 
-                        <a href="https://www.facebook.com/wecannotwait" target="_blank"><span class="fa fa-facebook "></span></a>
+                        <a href="https://www.facebook.com/groups/AusTimorFN/" target="_blank"><span class="fa fa-facebook "></span></a>
 
                       </div>
                       <div class="donate-button">
-                        <a href="http://wecannotwait.org/donate/" target="_blank">
+                        <a href="http://www.redcross.tl/" target="_blank">
                           Donate to the Project
                         </a>
                       </div>
                       <div class="donate-button">
-                        <a href="http://wecannotwait.org" target="_blank">
-                          We Can&rsquo;t Wait
+                        <a href="http://www.austimorfn.org/friends-of-manatuto/" target="_blank">
+                          Friends of Manatuto
                         </a>
                       </div>
                     </div>
                   </div>
                   <div class="col-sm-7 col-xs-12">
                     <div class="map-wrapper">
-                      <img class="img-responsive" src="images/justin/map.png">
+                      <img class="img-responsive" src="images/james/map.png">
                     </div>
                   </div>
                 </div>
@@ -190,20 +192,20 @@
                   <div class="col-sm-6">
                     <div class="postcard-wrapper">
                       <div class="back-image-wrapper">
-                        <img class="img-thumbnail" src="images/justin/article1-photo1.jpg">
+                        <img class="img-thumbnail" src="images/james/article1-photo1.jpg">
                       </div>
                       <div class="front-image-wrapper">
-                        <img class="img-thumbnail" src="images/justin/article1-photo2.jpg">
+                        <img class="img-thumbnail" src="images/james/article1-photo1.jpg">
                       </div>
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="project-details">
                       <p class="date">THURSDAY 6TH AUGUST</p>
-                      <p class="name">Justin Morris</p>
-                      <h3 class="text-blue text-article-heading">Reece Grant recipient: Justin Morris</h3>
+                      <p class="name">James Millis</p>
+                      <h3 class="text-blue text-article-heading">Grant recipient: James Millis</h3>
                       <div class="project-description text-blue">
-                        <p>Justin Morris from Notting Hill, Victoria has been awarded $15,000 for his submission to improve India&rsquo;s complex sanitation issue. </p>
+                        <p>Villages in the hills of East Timor are prone to landslides and flooding, and they&rsquo;re also one of the hardest areas to access, making recovery a slow and lengthy process.</p>
                       </div>
                     </div>
                   </div>
@@ -214,38 +216,60 @@
 
                   <div class="expand-article text-blue">
                     <div class="col-sm-12">
-<p>For his project, Justin is partnering with the We Can&rsquo;t Wait foundation and putting the money towards the construction of toilet facilities and sanitation education in schools in Nasik, India. Construction will start in September, and Justin will head to Nasik for a ten-day assignment in October.</p>                    
-<p>Here&rsquo;s an interview with our main recipient Justin about his project.</p>
-<p><strong>Tell us about the current state of sanitation in India. </strong></p>
-<p>Lack of toilets in India is the number one cause of disease. This issue is the leading cause of students (especially girls) dropping out of schools once they&rsquo;ve hit puberty.</p>
-<p>Currently, 200,000 schools do not have toilets and another 400,000 schools have toilets that are unusable. The school we&rsquo;re supporting, Jila Parishad Prathamik School, has more than 650 students who we hope will benefit from the new facilities and hygiene education.</p>
-<p><strong>Why did you choose this particular project?</strong>  </p>
-<p>We Can&rsquo;t Wait is a client of mine and I&rsquo;ve been doing small-scale community projects with them for years. I&rsquo;ve always wanted to do more, so when We Can&rsquo;t Wait was looking to partner with someone for a school project in India, I put my hand up straight away. A week after expressing my interest, I received the Reece Grant email &ndash; it couldn&rsquo;t have come at a better time.</p>
+
+
+
+<p> Spring water is the main water source for four communities living in the mountains, but keeping the water free from contamination and transporting it to the villages is challenging, with community members spending hours a day carrying water.</p>  
+
+
+<p>Red Cross, with support from the Friends of Manatuto program, have restored two of the four villages with proper facilities to access the stream, water filtration and toilet facilities. Additional Grant recipient, James Millis from Edithvale, Victoria is putting the money towards finishing the project, which will begin this month.</p>
+
+
+<p>Here&rsquo;s what James has to say about his project in East Timor.</p>
+
+<p><strong>Why did you choose this particular project?</strong> </p>
+
+ <p>I found out about Friends of Manatuto through family friends and heard that they needed support to complete the three-year project. The Reece Grant came at the perfect time for me to get involved.</p>
+
 <p><strong>What will the money go towards? </strong></p>
-<p>We&rsquo;ll be installing 12 toilets and hand washing facilities, two 1000-litre water tanks and the necessary water filter systems to ensure the school has access to an ongoing clean water supply.</p>
-<p><strong>How important is education in the quest for maintaining sanitation? </strong></p>
-<p>Half of the puzzle in India is finding a way to encourage residents - who have been brought up in a culture of open defecation - to use the toilets.
-We hope that by teaching kids about the importance of washing their hands and proper hygiene, they&rsquo;ll pass on their knowledge to their parents and encourage them to install a toilet into their home. Change needs to happen from the bottom up. </p>
+
+<p>There are enough funds to finish restoring the third village, and begin the fourth in six months. The money is going towards tools and equipment to test the water, install proper water transport facilities and construct toilet facilities.</p>
+
+<p><strong>How do you ensure long-term change?</strong></p>
+
+ <p>An important part of the job is actually teaching the community to be self-sufficient and run the water sanitation and transportation systems themselves, rather than us do it for them. That way, when we leave, the community will know how to fix problems when they arise and can pass their knowledge down to the younger generation.</p>
+
 <p><strong>What part of the project are you most excited about?</strong></p>
-<p>I&rsquo;m looking forward to seeing the excitement on the kids faces when the new toilet blocks are up and running. Having a proper working toilet is nothing for us, but everything for them.</p>
+
+ <p>Making a difference by helping out a community that would otherwise be totally overlooked. It&rsquo;s one of those places that don&rsquo;t receive enough funding or support, so it&rsquo;s nice to be able to help make a lasting change.</p>
+
 <p><strong>What is your plan for the future?</strong></p>
- <p>I see this trip as the start of something much bigger for myself, both on a personal and career level. A year ago, I would&rsquo;ve put this type of project in the &lsquo;too hard basket&rsquo;, but with the help of the Reece Grant, I now understand that a little can go such a long way with these communities and this has inspired me to do more.</p>
+
+ <p>Once this project is underway, I&rsquo;ll be looking to dedicate a week per year to supporting underprivileged areas using my plumbing skills. Realising how many people you can help with such little effort is a huge eye opener.</p>
+
+
+
+
+
+
+
+
+
+
 
 
 
                       </div>
-                      <div class="col-sm-6">
+                      <div class="col-sm-12">
                         <div class="article-snap">
-                         <img class="img-thumbnail" src="images/justin/article1-photo1.jpg">
+                         <img class="img-thumbnail" src="images/james/article1-photo1.jpg">
                        </div>
                      </div>
 
+                     
+                   
 
-                   <div class="col-sm-6">
-                    <div class="article-snap">
-                     <img class="img-thumbnail" src="images/justin/article1-photo2.jpg">
-                   </div>
-                 </div>
+                   
                  <div class="clear"></div>
 
                </div>
@@ -283,7 +307,7 @@ We hope that by teaching kids about the importance of washing their hands and pr
                 <div class="col-sm-6">
                   <div class="project-details">
                     <p class="date">THURSDAY 6TH AUGUST</p>
-                    <p class="name">Justin Morris</p>
+                    <p class="name">James Millis</p>
                     <h3 class="text-blue text-article-heading">This is the article title location </h3>
                     <div class="project-description text-blue">
                       <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis.</p>
@@ -361,7 +385,7 @@ We hope that by teaching kids about the importance of washing their hands and pr
             <div class="col-sm-6">
               <div class="project-details">
                 <p class="date">THURSDAY 6TH AUGUST</p>
-                <p class="name">Justin Morris</p>
+                <p class="name">James Millis</p>
                 <h3 class="text-blue text-article-heading">This is the article title location </h3>
                 <div class="project-description text-blue">
                   <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis.</p>

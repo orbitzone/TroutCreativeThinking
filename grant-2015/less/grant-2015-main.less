@@ -198,12 +198,10 @@ a{
 			color:@textBlue;
 			padding:16px 0;
 			background-color:@backgroundWhite;
-    -webkit-transition: background-color 500ms ease-in 200ms, color 500ms ease-in ;
-    -moz-transition: background-color 500ms ease-in 200ms, color 500ms ease-in;
-    -o-transition: background-color 500ms ease-in 200ms, color 500ms ease-in;
-    transition: background-color 500ms ease-in 200ms, color 500ms ease-in;
-
-
+			-webkit-transition: background-color 500ms ease-in, color 300ms ease-in  200ms;
+			-moz-transition: background-color 500ms ease-in, color 300ms ease-in 200ms;
+			-o-transition: background-color 500ms ease-in, color 300ms ease-in 200ms;
+			transition: background-color 500ms ease-in, color 300ms ease-in 200ms;
 			&:hover,&:active,&:focus{
 				background-color:@backgroundBlue;
 				color:@textWhite;
@@ -459,7 +457,6 @@ a{
 				font-size: 28px;
 				font-weight:500;
 				line-height:1.2em;
-				
 				width: 257px;
 				display: block;
 				margin: 0 auto;
@@ -487,7 +484,6 @@ a{
 					opacity: 0.7;
 				}	
 			}
-
 		}
 		.landing-video{
 			position:absolute;
@@ -501,7 +497,6 @@ a{
 				@media (max-width: @screen-xs-max) {
 					width:390px;
 				}
-
 			}
 			.close-button{
 				z-index: 100;
@@ -530,6 +525,14 @@ a{
 .grant-2015-nav{
 	list-style: none;
 	margin:0;
+	.nav-james .nav-img,.nav-justin .nav-img,.nav-timothy .nav-img{
+		height:0px;
+		visibility: hidden;
+	}
+	.nav-home .nav-img{
+		height:0px;
+		visibility: hidden;
+	}
 	li{
 		margin-top:46px;
 		margin-bottom:46px;
@@ -538,84 +541,88 @@ a{
 		a{
 			display:block;
 			position:relative;
-			padding-top:26px;
 			height:77px;
 			color:@textWhite;
 			font-size:24px;
 			letter-spacing:1px;
-			.nav-img{
-				display:none;
+			-webkit-transition: border-left 1s ease,border-right 1s ease-out,width 1s ease;
+			-moz-transition: border-left 1s ease,border-right 1s ease-out,width 1s ease;
+			-o-transition: border-left 1s ease,border-right 1s ease-out,width 1s ease;
+			transition: border-left 1s ease,border-right 1s ease-out,width 1s ease;
+			.nav-img-wrapper{
+				height:50px;
+				position:relative;
+				top:-10px;
+				.nav-img{
+					-webkit-transition: visibility 1s ease,height 1s ease,width 1s ease;
+					-moz-transition: visibility 1s ease,height 1s ease,width 1s ease;
+					-o-transition: visibility 1s ease,height 1s ease-out,width 1s ease;
+					transition: visibility 1s ease,height 1s ease,width 1s ease;
+				}
 			}
-			span{
-				font-size:10px;
-				text-transform: uppercase;
+			.nav-text-wrapper{
+				-webkit-transition: top 1s ease-out;
+				-moz-transition: top 1s ease-out;
+				-o-transition: top 1s ease-out;
+				transition: top 1s ease-out;
+			}
+			.nav-img-wrapper, .nav-text-wrapper{
 				display:block;
-				font-weight:500;
-				letter-spacing:2px;
+				span{
+					font-size:10px;
+					text-transform: uppercase;
+					display:block;
+					font-weight:500;
+					letter-spacing:2px;
+				}
+			}
+			.nav-text-wrapper{
+				position: relative;
+				top: -23px;
 			}
 			&.nav-home{
+				.nav-img{
+					position:relative;
+					top:20px;
+				}
 				&.active, &:hover{
 					border-left:1px @nav-side-border solid;
 					border-right:1px @nav-side-border solid;
 					padding-top:0px;
 					.nav-img-wrapper{
 						margin-bottom:10px;
+						visibility: visible;
 						.nav-img{
 							width:34px;
-							display:block;
+							height:34px;
 							margin:0 auto;
+							visibility: visible;
 						}						
+					}
+					.nav-text-wrapper{
+						padding-top:0px;
+						top:-10px;
 					}
 				}
 			}
-			&.nav-justin{
+			&.nav-justin, &.nav-james, &.nav-timothy{
 				&.active, &:hover{
 					border-left:1px @nav-side-border solid;
 					border-right:1px @nav-side-border solid;
 					padding-top:0px;
 					.nav-img-wrapper{
 						margin-bottom:0px;
-						position:relative;
-						top:-10px;
+						visibility: visible;
 						.nav-img{
 							width:50px;
-							display:block;
+							height:50px;
 							margin:0 auto;
+							visibility: visible;
 						}						
 					}
-				}
-			}
-			&.nav-james{
-				&.active, &:hover{
-					border-left:1px @nav-side-border solid;
-					border-right:1px @nav-side-border solid;
-					padding-top:0px;
-					.nav-img-wrapper{
-						margin-bottom:0px;
-						position:relative;
-						top:-10px;
-						.nav-img{
-							width:50px;
-							display:block;
-							margin:0 auto;
-						}						
-					}
-				}
-			}
-			&.nav-timothy{
-				&.active, &:hover{
-					border-left:1px @nav-side-border solid;
-					border-right:1px @nav-side-border solid;
-					padding-top:0px;
-					.nav-img-wrapper{
-						margin-bottom:0px;
-						position:relative;
-						top:-10px;
-						.nav-img{
-							width:50px;
-							display:block;
-							margin:0 auto;
-						}						
+					.nav-text-wrapper{
+						padding-top:0px;
+						top:0;
 					}
 				}
 			}
@@ -650,12 +657,28 @@ a{
 			-ms-transform: rotate(-6deg);
 			-webkit-transform: rotate(-6deg);
 			transform: rotate(-6deg);
+			-webkit-transition: -ms-transform 500ms ease-out;
+			-moz-transition: -webkit-transform 500ms ease-out;
+			-o-transition: -webkit-transform 500ms ease-out;
+			transition: transform 500ms ease-out;
+			&:hover{
+				-ms-transform: rotate(-8deg);
+				-webkit-transform: rotate(-8deg);
+				transform: rotate(-8deg);
+			}
 		}
 		.front-image-wrapper{
 			top:12px;
 			-ms-transform: rotate(0deg);
 			-webkit-transform: rotate(0deg);
 			transform: rotate(0deg);
+		}
+		&:hover{
+			.back-image-wrapper{
+				-ms-transform: rotate(-8deg);
+				-webkit-transform: rotate(-8deg);
+				transform: rotate(-8deg);
+			}
 		}
 		@media (min-width: @screen-lg-min) {
 		}
@@ -707,7 +730,6 @@ a{
 	}
 	.expand-article{
 		padding-top:0px;
-
 		.article-snap{
 			margin-top:10px;
 			margin-bottom:10px;
@@ -726,7 +748,6 @@ a{
 		}
 	}
 	&.active{
-
 		.read-more-button-wrap{
 			margin-top:16px;
 			.read-more-text{
@@ -745,19 +766,17 @@ a{
 	text-align:right;
 	font-size:24px;
 	padding-bottom:20px;
-
 	a{
 		color:#9F9F9F;
 		desplay:inline-block;
 		margin-left:10px;
-	    -webkit-transition: color 500ms ease-in;
-    -moz-transition: color 500ms ease-in;
-    -o-transition: color 500ms ease-in;
-    transition: color 500ms ease-in;
+		-webkit-transition: color 500ms ease-in;
+		-moz-transition: color 500ms ease-in;
+		-o-transition: color 500ms ease-in;
+		transition: color 500ms ease-in;
 		&:hover,&:focus,&:active{
 			color:#019BB6;
 		}
 	}
 }
-
 }

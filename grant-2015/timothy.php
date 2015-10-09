@@ -57,32 +57,31 @@
                 <ul class="grant-2015-nav">
                   <li class="col-sm-3 col-xs-6">
                     <a href="index.php" class="nav-item nav-home">
-                      <div class="nav-img-wrapper"><img class="nav-img" src="images/homepage/nav-home.png"></div>
-                      Home
+                      <span class="nav-img-wrapper"><img class="nav-img" src="images/homepage/nav-home.png"></span>
+                      <span class="nav-text-wrapper">Home</span>
                     </a>
                   </li>
                   <li class="col-sm-3 col-xs-6">
                     <a href="justin.php" class="nav-item nav-justin">
-                      <div class="nav-img-wrapper"><img class="nav-img img-circle img-thumbnail" src="images/homepage/nav-justin.png"></div>
-                      Justin&rsquo;s 
-                      <span>project</span>
+                      <span class="nav-img-wrapper"><img class="nav-img" src="images/homepage/nav-justin.png"></span>
+                      <span class="nav-text-wrapper">Justin&rsquo;s <span>project</span></span>
                     </a>
                   </li>
                   <li class="col-sm-3 col-xs-6">
                     <a href="james.php" class="nav-item nav-james">
-                      <div class="nav-img-wrapper"><img class="nav-img img-circle img-thumbnail" src="images/homepage/nav-james.png"></div>
-                      James&rsquo;
-                      <span>project</span>
-                    </a>
-                  </li>
-                  <li class="col-sm-3 col-xs-6">
-                    <a href="timothy.php" class="nav-item nav-timothy active">
-                      <div class="nav-img-wrapper"><img class="nav-img img-circle img-thumbnail" src="images/homepage/nav-timothy.png"></div>
-                      Timothy&rsquo;s 
-                      <span>project</span>
-                    </a>
-                  </li>
-                </ul>
+                      <span class="nav-img-wrapper"><img class="nav-img" src="images/homepage/nav-james.png"></span>
+                      <span class="nav-text-wrapper">James&rsquo;<span>project</span></span>
+                      </a>
+                    </li>
+
+                    <li class="col-sm-3 col-xs-6">
+
+                      <a href="timothy.php" class="nav-item nav-timothy active">
+                        <span class="nav-img-wrapper"><img class="nav-img" src="images/homepage/nav-timothy.png"></span>
+                        <span class="nav-text-wrapper">Timothy&rsquo;s <span>project</span></span>
+                      </a>
+                    </li>
+                  </ul>
               </div>
             </div>
           </div>  

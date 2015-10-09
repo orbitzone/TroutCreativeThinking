@@ -11,6 +11,9 @@ body.grant-2015 .grant-2015-content .section-container {
 body.grant-2015 .grant-2015-content .clear {
   clear: both;
 }
+body.grant-2015 .grant-2015-content a {
+  color: #009cb6;
+}
 body.grant-2015 .grant-2015-content .text-left {
   text-align: left;
 }
@@ -196,6 +199,10 @@ body.grant-2015 .grant-2015-content .donate-button-wrapper .donate-button a {
   color: #009cb6;
   padding: 16px 0;
   background-color: #ffffff;
+  -webkit-transition: background-color 500ms ease-in 200ms, color 500ms ease-in;
+  -moz-transition: background-color 500ms ease-in 200ms, color 500ms ease-in;
+  -o-transition: background-color 500ms ease-in 200ms, color 500ms ease-in;
+  transition: background-color 500ms ease-in 200ms, color 500ms ease-in;
 }
 body.grant-2015 .grant-2015-content .donate-button-wrapper .donate-button a:hover,
 body.grant-2015 .grant-2015-content .donate-button-wrapper .donate-button a:active,
@@ -452,10 +459,12 @@ body.grant-2015 .grant-2015-content .homepage-video .background-video .cta-video
   font-size: 28px;
   font-weight: 500;
   line-height: 1.2em;
-  padding-top: 30px;
   width: 257px;
   display: block;
   margin: 0 auto;
+}
+body.grant-2015 .grant-2015-content .homepage-video .background-video .cta-video .cta-text .play-button-wrapper {
+  padding-bottom: 30px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   body.grant-2015 .grant-2015-content .homepage-video .background-video .cta-video .cta-text {
@@ -467,9 +476,13 @@ body.grant-2015 .grant-2015-content .homepage-video .background-video .cta-video
     font-size: 18px;
   }
 }
-body.grant-2015 .grant-2015-content .homepage-video .background-video .cta-video .play-button:hover,
 body.grant-2015 .grant-2015-content .homepage-video .background-video .cta-video .cta-text:hover {
   cursor: pointer;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  filter: alpha(opacity=70);
+  -moz-opacity: 0.7;
+  -khtml-opacity: 0.7;
+  opacity: 0.7;
 }
 body.grant-2015 .grant-2015-content .homepage-video .background-video .landing-video {
   position: absolute;
@@ -723,6 +736,10 @@ body.grant-2015 .grant-2015-content .social-share a {
   color: #9F9F9F;
   desplay: inline-block;
   margin-left: 10px;
+  -webkit-transition: color 500ms ease-in;
+  -moz-transition: color 500ms ease-in;
+  -o-transition: color 500ms ease-in;
+  transition: color 500ms ease-in;
 }
 body.grant-2015 .grant-2015-content .social-share a:hover,
 body.grant-2015 .grant-2015-content .social-share a:focus,

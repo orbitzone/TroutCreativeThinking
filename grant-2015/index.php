@@ -129,10 +129,11 @@
           <div class="col-lg-12 col-edge background-video">
 
             <div class="cta-video">
+
+              <div class="cta-text text-blue ">
               <div class="play-button-wrapper">
                 <img class="play-button" src="images/homepage/play-button.png">
               </div>
-              <div class="cta-text text-blue ">
                 Watch what our three recipients have to say
               </div>
             </div>

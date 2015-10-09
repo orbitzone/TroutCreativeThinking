@@ -506,6 +506,7 @@ body.grant-2015 .grant-2015-content .homepage-video .background-video .landing-v
 @media (max-width: 767px) {
   body.grant-2015 .grant-2015-content .homepage-video .background-video .landing-video .video-wrapper {
     width: 390px;
+    max-width: 100%;
   }
 }
 body.grant-2015 .grant-2015-content .homepage-video .background-video .landing-video .iframe-wrapper {

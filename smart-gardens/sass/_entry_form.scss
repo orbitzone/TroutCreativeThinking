@@ -65,6 +65,59 @@
 		.fifty-words{
 			margin-top: 20px;
 		}
+		.terms{
+			margin-bottom: 20px;
+			label{
+				font-weight: 700;
+				font-size: 14px;
+			}
+			input{
+				display: inline-block;
+				width: auto;
+				height: auto;
+			}
+			input[type="checkbox"] {
+	    	display:none;
+	    	+ label{
+	    		cursor: pointer;
+	    		span.box{
+			    	display:inline-block;
+				    width: 17px;
+				    height: 17px;
+				    margin: -1px 10px 0 0;
+				    vertical-align: middle;
+				    cursor: pointer;
+				    position: relative;
+				    background: none;
+				    border: 1px solid $white;			    
+				    position: relative;
+				    .check{
+				    	display: none;
+				    	position: absolute;
+				    	bottom: 2px;
+				    	left: 0px;
+				    	width: 20px;
+				    	height: 18px;
+				    	color: $dark-green;
+				    }
+			    }
+	    	}
+	    	&:checked{
+	    		+ label{
+	    			span.box{
+	    				background: $white;
+							.check{
+					    	display: block;
+					    }
+	    			}
+	    		}			     
+				}
+			}
+			a{
+				text-decoration: underline;
+				color: $white;
+			}
+		}
 		.form-container {
 			text-align: center;
 			padding: 40px 20px;
@@ -72,6 +125,10 @@
 			h3{
 				font-size: 28px;
 				margin-bottom: 24px;
+				small{
+					color: $white;
+					font-weight: 700;
+				}
 			}
 			.headline{
 				max-width: 530px;
@@ -112,6 +169,7 @@
 			.formErrorFile,
 			.formResultSuccess,
 			.formResultError,
+			.formResultTerms,
 			.alert {
 				display: none;
 				margin: 10px auto;
@@ -124,8 +182,80 @@
 				}				
 			}
 			.formResultSuccess,
-			.formResultError {
+			.formResultError,
+			.formResultTerms {
 				text-align: center;
+			}
+			.upload-more{
+				.upload-more-btn{
+			    text-align: center;
+			    font-size: 14px;
+			    padding: 10px;
+			    font-weight: bold;
+			    background: none;
+			    color: $white;
+			    border: 2px solid $white;
+			    margin-top: 20px;
+				}
+			}
+			.upload-input{
+		    height: 40px;
+		    background: $white;
+		    position: relative;
+		    @include transition(all 0.5s ease-out);
+		    @include transform(translateX(-100px));
+		    opacity: 0;
+		    margin-bottom: 10px;
+		    &.error{
+		    	border: 1px solid $red;
+		    }
+		    &.added{
+		    	opacity: 1;
+		    	@include transform(translateX(0));
+		    }
+		    .upload-button{
+					background: $white;
+					position: absolute;
+					top: 0;
+					right: 52px;
+					height: 100%;
+					width: 100px;
+					color: $dark-green;
+					@include appearance(none);
+					border:none;
+					border-left: 1px solid $dark-green;
+					font-weight: 700;
+					text-transform: uppercase;							
+				}
+				.upload-remove-button{
+					background: $white;
+					position: absolute;
+					top: 0;
+					right: 0;
+					height: 100%;
+					width: 50px;
+					color: $dark-green;
+					@include appearance(none);
+					border:none;
+					border-left: 1px solid $dark-green;
+					font-weight: 700;
+					text-transform: uppercase;	
+				}
+				.upload-filename{
+					position: absolute;
+					top: 0;
+					left: 0;
+					height: 40px;
+					line-height: 40px;
+					font-style: italic;
+					padding-left: 10px;
+					text-align: left;
+					padding-right: 170px;
+					color: $black;
+					overflow: hidden;
+				}
+				
+
 			}
 			#entry-form-wrap {
 				margin-top: 20px;

@@ -383,10 +383,37 @@ $(document).ready(function(){
 				e.preventDefault();
 				if(app.formComplete == false)
 				{
-					$("#inputFilesWrap .active .inputFile").focus().trigger('click');
+					if($('#display-filename .file').length < 5){
+						$("#inputFilesWrap .active .inputFile").focus().trigger('click');
+					}
 				}
 			});
-			
+			$(document).on('click','.upload-button', function(){
+				$(this).parent().find('input').focus().trigger('click');
+			});
+			$(document).on('click','.upload-more-btn', function(){
+				var item = '<div class="upload-input">'
+												+'<input type="file" name="inputFile[]" class="inputFile"/>'
+												+'<span class="upload-filename"></span>'
+												+'<button type="button" class="upload-button">Browse</button>'
+												+'<button type="button" class="upload-remove-button">X</button>'
+										+'</div>';
+				var $item = $(item);
+				$('#inputFilesWrap').append($item);
+				$item.focus();
+				$item.addClass('added');				
+				if($('.upload-input').length == 5){
+					$(this).hide();
+				}
+				
+				//$item.slideDown();
+			});
+			$(document).on('click','.upload-remove-button', function(){
+				$(this).parent().removeClass('added');
+				$elem = $(this).parent();
+				setTimeout(function(){ $elem.remove(); },500);
+				$('.upload-more-btn').show();
+			});
 			// on file change
 			$(document).on('change','#inputFilesWrap input',function(e) {
 		        // reset
@@ -394,68 +421,31 @@ $(document).ready(function(){
 		        // file type?
 		        if($('html').hasClass('lt-ie9') || $('html').hasClass('lt-ie8') || (navigator.appVersion.indexOf("MSIE 9.")!=-1))
 		        {
-			        //var ie9Fileoutput = $('input[type=file]:eq(0)');
+		        	$(this).parent().find('.upload-filename').text('Image added');
 			        app.fileType = "image";
-
-			        app.displayFilename.append( '<div class="file" data-num="'+app.numberFiles+'"><span>Image '+app.numberFiles+' added</span><a class="remove-file" data-num="'+app.numberFiles+'" href="#"></a></div>' );
-							$('#inputFilesWrap .active').removeClass('active');
-							app.numberFiles = app.numberFiles + 1;
-							
-							$('#inputFilesWrap').append('<div class="active" data-num="'+app.numberFiles+'"><input type="file" name="inputFile[]" class="inputFile"/></div>');
-		        	$(".remove-file").on('click', function(e){
-								e.preventDefault();
-								// clear file names
-								var num = $(this).data('num');
-								
-								$('#inputFilesWrap div[data-num='+num+']').remove();
-								$(this).parent().remove();
-								//app.displayFilename.empty();
-								//app.clearFileUpload();
-							});
+			        $(this).addClass('uploaded');
 		        }
-		        else if( $("#inputFilesWrap .active .inputFile")[0].files.length > 0 ) 
+		        else
 		        {
-		        	$.each($("#inputFilesWrap .active .inputFile")[0].files, function(num){
-		        		// video or image or invalid file type
-			        	app.fileType = $("#inputFilesWrap .active .inputFile")[0].files[num].type;
-			        	app.fileName = $("#inputFilesWrap .active .inputFile")[0].files[num].name;
-								app.displayFilename.find('div.alert[data-num="'+app.numberFiles+'"]').remove();
+		        			// video or image or invalid file type
+			        	app.fileType = $(this)[0].files[0].type;
+			        	app.fileName = $(this)[0].files[0].name;
+			        	app.displayFilename.find('div.alert[data-num="'+app.numberFiles+'"]').remove();
 			        	
 								//if(app.fileType.indexOf("video") > -1) app.fileType = "video";
 								if(app.fileType.indexOf("image") > -1) app.fileType = "image";
 								else app.fileType = "invalid";
-								
 								if(app.fileType != "invalid")
 								{
-									  app.displayFilename.append( '<div class="file" data-num="'+app.numberFiles+'"><span>' + app.fileName + '</span><a class="remove-file" data-num="'+app.numberFiles+'" href="#"></a></div>' );
-										$('#inputFilesWrap .active').removeClass('active');
-										app.numberFiles = app.numberFiles + 1;
-										
-										$('#inputFilesWrap').append('<div class="active" data-num="'+app.numberFiles+'"><input type="file" name="inputFile[]" class="inputFile"/></div>');
-					        	$(".remove-file").on('click', function(e){
-											e.preventDefault();
-											// clear file names
-											var num = $(this).data('num');
-											
-											$('#inputFilesWrap div[data-num='+num+']').remove();
-											$(this).parent().remove();
-											//app.displayFilename.empty();
-											//app.clearFileUpload();
-										});
-									 
+									$(this).parent().find('.upload-filename').text(app.fileName );
+									$(this).addClass('uploaded');
 								}
 								else
 								{
 									app.displayFilename.append('<div class="alert alert-danger" style="display:block;" data-num="'+app.numberFiles+'">Invalid file type selected: ' + app.fileName + '</div>');
-								}
-		        	});
-		        }
-		        else
-		        { 
-		        	app.displayFilename.append('<div class="alert alert-danger">No file selected</div>');
+								}		        	
 		        }
 		    });
-			
 		},
 		
 		
@@ -473,7 +463,8 @@ $(document).ready(function(){
 			// vars
 			var valid = true;
 			var is50WordsValid = true;
-			
+			var images_uploaded = true;
+			var terms_accepted = true;
 			// validate fields
 			$("#entry-form .required").each(function(){
 			  var val = $.trim($(this).val());
@@ -498,17 +489,27 @@ $(document).ready(function(){
 			if(count > 100) is50WordsValid = false;
 			
 			// share?
-			if(app.shareEntryToFB == true)
+			if($('#accept-terms').is(":checked"))
 			{
-				
+				$('.formResultTerms').hide();
+			}else{
+				terms_accepted = false;
+				$('.formResultTerms').show();
 			} 
 			
+			if($('#inputFilesWrap input.uploaded').length == 0){
+				$('#inputFilesWrap .upload-input').addClass('error');
+				images_uploaded = false;
+			}else{
+				$('#inputFilesWrap .upload-input').removeClass('error');
+			}
 			// pass validation?
-			if(valid == false || is50WordsValid == false || app.fileType == "invalid")
+			if(valid == false || is50WordsValid == false || app.fileType == "invalid" || images_uploaded == false || terms_accepted == false)
 			{
 				if(valid == false) $(".formError").show();
 				if(is50WordsValid == false) $(".formErrorWords").show();
 				if(app.fileType == "invalid") $(".formErrorFile").show();
+				if(images_uploaded == false)  $(".formErrorFile").show();
 				$('html, body').animate({ scrollTop: $('#entry-form-wrap').offset().top - 72 }, 1000);
 			}
 			else

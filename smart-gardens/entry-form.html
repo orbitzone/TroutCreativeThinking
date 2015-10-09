@@ -113,10 +113,20 @@
 								<div class="formErrorWords alert"><button type="button" class="close" data-dismiss="formErrorWords">&times;</button>Please submit 100 words or less.</div>
 								<div class="formErrorFile alert"><button type="button" class="close" data-dismiss="formErrorFile">&times;</button>Please select a valid file to upload - .JPG, .PNG, .GIF</div>
 									<div class="file-uploads form-group">
-										<h3 id="upload-evidence-txt">Upload your images</h3>
-										<a type="button" id="upload-btn" href="#"></a>
+										<h3 id="upload-evidence-txt">
+											Upload your images
+											<div><small>Upload a maximum of 5 images per entry.</small></div>
+										</h3>
 										<div id="inputFilesWrap">
-											<div class="active" data-num="1"><input type="file" name="inputFile[]" class="inputFile"/></div>
+											<div class="upload-input added">
+												<input type="file" name="inputFile[]" class="inputFile"/>
+												<span class="upload-filename"></span>
+												<button type="button" class="upload-button">Browse</button>
+												<button type="button" class="upload-remove-button">X</button>
+											</div>											
+										</div>
+										<div class="upload-more">
+											<button type="button" class="upload-more-btn">Add another image +</button>
 										</div>
 										<div id="display-filename">
 											
@@ -148,13 +158,12 @@
 									<div id="upload-animation" style="display:none;">
 										<div class="progress active"><div class="bar bar-warning" style="width: 1%;"></div></div>
 									</div>
-
+									<div class="terms">
+										<input type="checkbox" id="accept-terms">
+										<label for="accept-terms"><span class="box"><span class="check"><i class="icon-ok"></i></span></span> I have read and agree to the <a href="terms.html" target="_blank">Terms and conditions</a></label>
+									</div>
 									<div class="share-submit form-group">
-									<button id="entryform-submit-btn" class="btn white" name="submit" type="submit">Submit</button>
-										
-										
-										
-										
+										<button id="entryform-submit-btn" class="btn white" name="submit" type="submit">Submit</button>
 									</div>
 
 								</form><!-- end ENTRY FORM -->
@@ -168,6 +177,9 @@
 								<div class="formResultError">
 									<p>Server error. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 									<a class="btn white" href="entry-form.html">Try again</a>
+								</div>
+								<div class="formResultTerms alert"><button type="button" class="close" data-dismiss="formResultTerms">&times;</button>
+									<p>You need to accept the terms and conditions</p>									
 								</div>
 								<div class="separator"></div>
 								<div class="note">
@@ -187,20 +199,6 @@
 				</div>
 			</section>
 		</div><!-- /bsgc-2015 -->
-		
-		
-		
-
-
-
-
-
-
-
-
-
-
-
 		<!-- FOOTER -->
 		<footer class="site-footer">
 			<div class="social">

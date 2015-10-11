@@ -350,22 +350,24 @@ body.grant-2015 .grant-2015-content .banner-homepage .background-homepage .banne
   body.grant-2015 .grant-2015-content .banner-homepage .background-homepage .banner-item-wrapper .text-healthier {
     width: 280px;
     left: 10px;
+    bottom: 30px;
   }
 }
 @media (max-width: 767px) {
   body.grant-2015 .grant-2015-content .banner-homepage .background-homepage .banner-item-wrapper .text-healthier {
     width: 230px;
     left: 10px;
+    bottom: 30px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   body.grant-2015 .grant-2015-content .banner-homepage .background-homepage .banner-item-wrapper {
-    height: 460px;
+    height: 340px;
   }
 }
 @media (max-width: 767px) {
   body.grant-2015 .grant-2015-content .banner-homepage .background-homepage .banner-item-wrapper {
-    height: 370px;
+    height: 300px;
   }
 }
 body.grant-2015 .grant-2015-content .background-justin {

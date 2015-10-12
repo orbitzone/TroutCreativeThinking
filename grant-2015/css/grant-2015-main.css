@@ -218,10 +218,12 @@ body.grant-2015 .grant-2015-content .wave-section {
 body.grant-2015 .grant-2015-content .wave-section .wave-blue-to-white {
   height: 7px;
   background: url('../images/wave/wave-blue-to-white.png') repeat-x;
+  background-position: 0px;
 }
 body.grant-2015 .grant-2015-content .wave-section .wave-white-to-grey {
   height: 7px;
   background: url('../images/wave/wave-white-to-grey.png') repeat-x;
+  background-position: 0px;
 }
 body.grant-2015 .grant-2015-content .wave-section .wave-white-to-grey-shadow {
   height: 78px;
@@ -237,6 +239,7 @@ body.grant-2015 .grant-2015-content .wave-section .wave-white-to-image {
   position: relative;
   height: 7px;
   background: url('../images/wave/wave-white-to-image.png') repeat-x;
+  background-position: 0px;
   top: 7px;
   z-index: 100;
 }
@@ -526,6 +529,11 @@ body.grant-2015 .grant-2015-content .homepage-video .background-video .landing-v
 body.grant-2015 .grant-2015-content .homepage-video .background-video .landing-video .close-button:hover {
   cursor: pointer;
   color: #000000;
+}
+@media (max-width: 340px) {
+  body.grant-2015 .grant-2015-content .homepage-video .background-video .landing-video {
+    top: 50px;
+  }
 }
 @media (max-width: 767px) {
   body.grant-2015 .grant-2015-content .homepage-video .background-video {

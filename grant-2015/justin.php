@@ -211,12 +211,16 @@
                   </div>
                   <div class="col-sm-6">
                     <div class="article-snap">
-                     <img class="img-thumbnail" src="images/justin/article1-photo1.jpg">
+                      <a  href="images/justin/article1-photo1.jpg" data-lightbox="justin-article1">
+                       <img class="img-thumbnail" src="images/justin/article1-photo1.jpg">
+                     </a>
                    </div>
                  </div>
                  <div class="col-sm-6">
                   <div class="article-snap">
-                   <img class="img-thumbnail" src="images/justin/article1-photo2.jpg">
+                    <a href="images/justin/article1-photo2.jpg" data-lightbox="justin-article1">
+                     <img class="img-thumbnail" src="images/justin/article1-photo2.jpg">
+                   </a>
                  </div>
                </div>
                <div class="clear"></div>
@@ -235,152 +239,169 @@
       <div class="wave-grey-to-white"></div>
     </div>
     <!--LATEST PROJECTS SECTION -->
-    <!--ONE PROJECTS SECTION -->
-      <!-- <div class="wave-section latest-project-section start-closed one-article-section">
-        <div class="wave-white-to-grey-shadow"></div>
-        <div class="row row-edge background-grey spacing-big-bottom">
-          <div class="col-lg-12 col-edge">
-            <div class="container">
-              <div class="row row-limit text-left">
-                <div class="col-sm-6">
-                  <div class="postcard-wrapper">
-                    <div class="back-image-wrapper">
-                      <img class="img-thumbnail" src="images/homepage/snap2.png">
-                    </div>
-                    <div class="front-image-wrapper">
-                      <img class="img-thumbnail" src="images/homepage/snap1.png">
+        <!--ONE PROJECTS SECTION -->
+        <!-- <div class="wave-section latest-project-section start-closed one-article-section">
+          <div class="wave-white-to-grey-shadow"></div>
+          <div class="row row-edge background-grey spacing-big-bottom">
+            <div class="col-lg-12 col-edge">
+              <div class="container">
+                <div class="row row-limit text-left">
+                  <div class="col-sm-6">
+                    <div class="postcard-wrapper">
+                      <div class="back-image-wrapper">
+                        <img class="img-thumbnail" src="images/homepage/snap2.png">
+                      </div>
+                      <div class="front-image-wrapper">
+                        <img class="img-thumbnail" src="images/homepage/snap1.png">
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="project-details">
-                    <p class="date">THURSDAY 6TH AUGUST</p>
-                    <p class="name">Justin Morris</p>
-                    <h3 class="text-blue text-article-heading">This is the article title location </h3>
-                    <div class="project-description text-blue">
-                      <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis.</p>
+                  <div class="col-sm-6">
+                    <div class="project-details">
+                      <p class="date">THURSDAY 6TH AUGUST</p>
+                      <p class="name">Timothy Brideson</p>
+                      <h3 class="text-blue text-article-heading">This is the article title location </h3>
+                      <div class="project-description text-blue">
+                        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="container">
-              <div class="row row-limit text-left">
-                <div class="expand-article text-blue">
-                  <div class="col-sm-12">
-                    <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis.</p>
-                    <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis.</p>
-                    <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis.</p>
-                    <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis.</p>
-                  </div>
-                  <div class="col-sm-6">
+              <div class="container">
+                <div class="row row-limit text-left">
+                  <div class="expand-article text-blue">
+                    <div class="col-sm-12">
+                      <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis.</p>
+                      <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis.</p>
+                      <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis.</p>
+                      <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis.</p>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="article-snap">
+                        <a href="images/homepage/snap1.png" data-lightbox="justin-article2">
+                         <img class="img-thumbnail" src="images/homepage/snap1.png">
+                       </a>
+                     </div>
+                   </div>
+                   <div class="col-sm-6">
                     <div class="article-snap">
-                     <img class="img-thumbnail" src="images/homepage/snap1.png">
+                      <a href="images/homepage/snap2.png" data-lightbox="justin-article2">
+                       <img class="img-thumbnail" src="images/homepage/snap2.png">
+                     </a>
+                   </div>
+                 </div>
+                 <div class="col-sm-6">
+                   <div class="article-snap">
+                     <a href="images/homepage/snap1.png" data-lightbox="justin-article2">
+                       <img class="img-thumbnail" src="images/homepage/snap1.png">
+                     </a>
                    </div>
                  </div>
                  <div class="col-sm-6">
                   <div class="article-snap">
-                   <img class="img-thumbnail" src="images/homepage/snap2.png">
+                    <a href="images/homepage/snap2.png" data-lightbox="justin-article2">
+                     <img class="img-thumbnail" src="images/homepage/snap2.png">
+                   </a>
                  </div>
                </div>
-               <div class="col-sm-6">
-                 <div class="article-snap">
-                   <img class="img-thumbnail" src="images/homepage/snap1.png">
-                 </div>
-               </div>
-               <div class="col-sm-6">
-                <div class="article-snap">
-                 <img class="img-thumbnail" src="images/homepage/snap2.png">
-               </div>
+               <div class="clear"></div>
              </div>
-             <div class="clear"></div>
-           </div>
-           <div class="col-sm-6 col-sm-offset-6">
-            <div class="read-more-button-wrap">
-              <span class="read-more-button expand-button">
-                <span class="read-more-text">Read&nbsp;more</span>
-                <span class="read-less-text">Read&nbsp;less</span>
-              </span></div>
-            </div> 
+             <div class="col-sm-6 col-sm-offset-6">
+              <div class="read-more-button-wrap">
+                <span class="read-more-button expand-button">
+                  <span class="read-more-text">Read&nbsp;more</span>
+                  <span class="read-less-text">Read&nbsp;less</span>
+                </span></div>
+              </div> 
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="wave-grey-to-white"></div>
-  </div> -->
-  <!--ONE PROJECTS SECTION -->
-  <!--ONE PROJECTS SECTION -->
-  <!-- <div class="wave-section latest-project-section start-closed one-article-section">
-    <div class="wave-white-to-grey-shadow"></div>
-    <div class="row row-edge background-grey spacing-big-bottom">
-      <div class="col-lg-12 col-edge">
-        <div class="container">
-          <div class="row row-limit text-left">
-            <div class="col-sm-6">
-              <div class="postcard-wrapper">
-                <div class="back-image-wrapper">
-                  <img class="img-thumbnail" src="images/homepage/snap2.png">
-                </div>
-                <div class="front-image-wrapper">
-                  <img class="img-thumbnail" src="images/homepage/snap1.png">
+      <div class="wave-grey-to-white"></div>
+    </div> -->
+    <!--ONE PROJECTS SECTION -->
+    <!--ONE PROJECTS SECTION -->
+    <!-- <div class="wave-section latest-project-section start-closed one-article-section">
+      <div class="wave-white-to-grey-shadow"></div>
+      <div class="row row-edge background-grey spacing-big-bottom">
+        <div class="col-lg-12 col-edge">
+          <div class="container">
+            <div class="row row-limit text-left">
+              <div class="col-sm-6">
+                <div class="postcard-wrapper">
+                  <div class="back-image-wrapper">
+                    <img class="img-thumbnail" src="images/homepage/snap2.png">
+                  </div>
+                  <div class="front-image-wrapper">
+                    <img class="img-thumbnail" src="images/homepage/snap1.png">
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="project-details">
-                <p class="date">THURSDAY 6TH AUGUST</p>
-                <p class="name">Justin Morris</p>
-                <h3 class="text-blue text-article-heading">This is the article title location </h3>
-                <div class="project-description text-blue">
-                  <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis.</p>
+              <div class="col-sm-6">
+                <div class="project-details">
+                  <p class="date">THURSDAY 6TH AUGUST</p>
+                  <p class="name">Timothy Brideson</p>
+                  <h3 class="text-blue text-article-heading">This is the article title location </h3>
+                  <div class="project-description text-blue">
+                    <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis.</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="container">
-          <div class="row row-limit text-left">
-            <div class="expand-article text-blue">
-              <div class="col-sm-12">
-                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis.</p>
-                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis.</p>
-                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis.</p>
-                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis.</p>
-              </div>
-              <div class="col-sm-6">
+          <div class="container">
+            <div class="row row-limit text-left">
+              <div class="expand-article text-blue">
+                <div class="col-sm-12">
+                  <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis.</p>
+                  <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis.</p>
+                  <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis.</p>
+                  <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis.</p>
+                </div>
+                <div class="col-sm-6">
+                  <div class="article-snap">
+                    <a href="images/homepage/snap1.png" data-lightbox="justin-article3">
+                     <img class="img-thumbnail" src="images/homepage/snap1.png">
+                   </a>
+                 </div>
+               </div>
+               <div class="col-sm-6">
                 <div class="article-snap">
-                 <img class="img-thumbnail" src="images/homepage/snap1.png">
+                  <a href="images/homepage/snap2.png" data-lightbox="justin-article3">
+                   <img class="img-thumbnail" src="images/homepage/snap2.png">
+                 </a>
+               </div>
+             </div>
+             <div class="col-sm-6">
+               <div class="article-snap">
+                 <a href="images/homepage/snap1.png" data-lightbox="justin-article3">
+                   <img class="img-thumbnail" src="images/homepage/snap1.png">
+                 </a>
                </div>
              </div>
              <div class="col-sm-6">
               <div class="article-snap">
-               <img class="img-thumbnail" src="images/homepage/snap2.png">
+                <a href="images/homepage/snap2.png" data-lightbox="justin-article3">
+                 <img class="img-thumbnail" src="images/homepage/snap2.png">
+               </a>
              </div>
            </div>
-           <div class="col-sm-6">
-             <div class="article-snap">
-               <img class="img-thumbnail" src="images/homepage/snap1.png">
-             </div>
-           </div>
-           <div class="col-sm-6">
-            <div class="article-snap">
-             <img class="img-thumbnail" src="images/homepage/snap2.png">
-           </div>
+           
+           <div class="clear"></div>
          </div>
-         <div class="clear"></div>
-       </div>
-       <div class="col-sm-6 col-sm-offset-6">
-        <div class="read-more-button-wrap">
-          <span class="read-more-button expand-button">
-            <span class="read-more-text">Read&nbsp;more</span>
-            <span class="read-less-text">Read&nbsp;less</span>
-          </span></div>
-        </div> 
+         <div class="col-sm-6 col-sm-offset-6">
+          <div class="read-more-button-wrap">
+            <span class="read-more-button expand-button">
+              <span class="read-more-text">Read&nbsp;more</span>
+              <span class="read-less-text">Read&nbsp;less</span>
+            </span></div>
+          </div> 
+        </div>
       </div>
     </div>
   </div>
-</div>
-<div class="wave-grey-to-white"></div>
+  <div class="wave-grey-to-white"></div>
 </div> -->
 <!--ONE PROJECTS SECTION -->
 </div>

@@ -95,7 +95,7 @@
                     <div class="social-share">
                       <a href="http://www.facebook.com/sharer.php?u={url}&amp;title={text}"  target="_blank"><span class="fa fa-facebook "></span></a>
                       <a href="https://twitter.com/share?url={url}&amp;text={text}&amp;via={via}&amp;hashtags={hashtags}"  target="_blank"><span class="fa fa-twitter"></span></a>
-                      <a href="#"><span class="fa fa-instagram" target="_blank"></span></a>
+                      <a href="#" target="_blank"><span class="fa fa-instagram"></span></a>
                     </div>
                   </div>
                 </div>

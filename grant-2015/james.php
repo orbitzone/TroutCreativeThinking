@@ -169,10 +169,10 @@
                   <div class="col-sm-6">
                     <div class="postcard-wrapper">
                       <div class="back-image-wrapper">
-                        <img class="img-thumbnail" src="images/james/article2-preview2.jpg">
+                        <img class="img-thumbnail" src="images/james/article2-photo2-thumb.jpg">
                       </div>
                       <div class="front-image-wrapper">
-                        <img class="img-thumbnail" src="images/james/article2-preview1.jpg">
+                        <img class="img-thumbnail" src="images/james/article2-photo1-thumb.jpg">
                       </div>
                     </div>
                   </div>
@@ -192,126 +192,117 @@
                 <div class="row row-limit text-left">
                   <div class="expand-article text-blue">
                     <div class="col-sm-12">
-
-                      <p>James received $5,000 through the grant in September to put towards a project set to improve sanitation and hygiene facilities in underprivileged communities.</p>
-
-                      <p>His project supports the Red Cross and Friends of Manatuto who are restoring remote villages in East Timor, prone to landslides and flooding. While James isn&rsquo;t on-site, he is assisting the construction of water and sanitation facilities, and helping the team in educating the communities on how to run sanitation systems themselves.</p>   
-
-                      <p>&ldquo;Just receiving the grant has let us hit the ground running and keep things moving,&rdquo; says James.</p>
-
-                      <p>The Red Cross team recently met with the local community to determine their water and sanitation needs. Spring water is the main water source for four communities living in the mountains, but keeping the water free from contamination and transporting it to the villages is challenging, with community members spending hours a day carrying water.  </p>
-
-                      <p>The team also carried out technical investigations of existing infrastructure that is no longer functioning and investigated additional water sources to increase water quality and access.</p>
-
-                      <p>The Reece Grant will be used to rehabilitate two existing spring boxes, which will result in both improved water quality and increased supply for the community.</p>
-
-                      <p>&ldquo;The highlight for me so far has been working with people who are in the business of making people&rsquo;s lives better,&rdquo; says James.</p>
-
-
-                    </div>
-                    <div class="col-sm-6">
-                      <div class="article-snap">
-                        <a href="images/james/article2-photo1.jpg" data-lightbox="james-article2">
-                         <img class="img-thumbnail" src="images/james/article2-photo1.jpg">
-                       </a>
-                     </div>
-                   </div>
-                   <div class="col-sm-6">
                       <div class="article-snap">
                         <a href="images/james/article2-photo2.jpg" data-lightbox="james-article2">
-                         <img class="img-thumbnail" src="images/james/article2-photo2.jpg">
+                         <img class="img-thumbnail" src="images/james/article2-photo2-thumb.jpg">
                        </a>
                      </div>
                    </div>
-                    <div class="col-sm-12">
-                      <div class="article-snap">
-                        <a href="images/james/article2-photo3.jpg" data-lightbox="james-article2">
-                         <img class="img-thumbnail" src="images/james/article2-photo3.jpg">
-                       </a>
-                     </div>
+                   <div class="col-sm-12">
+                    <p>James received $5,000 through the grant in September to put towards a project set to improve sanitation and hygiene facilities in underprivileged communities.</p>
+                    <p>His project supports the Red Cross and Friends of Manatuto who are restoring remote villages in East Timor, prone to landslides and flooding. While James isn&rsquo;t on-site, he is assisting the construction of water and sanitation facilities, and helping the team in educating the communities on how to run sanitation systems themselves.</p>   
+                    <p>&ldquo;Just receiving the grant has let us hit the ground running and keep things moving,&rdquo; says James.</p>
+                    <p>The Red Cross team recently met with the local community to determine their water and sanitation needs. Spring water is the main water source for four communities living in the mountains, but keeping the water free from contamination and transporting it to the villages is challenging, with community members spending hours a day carrying water.  </p>
+                    <p>The team also carried out technical investigations of existing infrastructure that is no longer functioning and investigated additional water sources to increase water quality and access.</p>
+                    <p>The Reece Grant will be used to rehabilitate two existing spring boxes, which will result in both improved water quality and increased supply for the community.</p>
+                    <p>&ldquo;The highlight for me so far has been working with people who are in the business of making people&rsquo;s lives better,&rdquo; says James.</p>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="article-snap">
+                      <a href="images/james/article2-photo1.jpg" data-lightbox="james-article2">
+                       <img class="img-thumbnail" src="images/james/article2-photo1-thumb.jpg">
+                     </a>
                    </div>
-                   <div class="clear"></div>
                  </div>
-                 <div class="col-sm-6 col-sm-offset-6">
-                  <div class="read-more-button-wrap">
-                    <span class="read-more-button expand-button">
-                      <span class="read-more-text">Read&nbsp;more</span>
-                      <span class="read-less-text">Read&nbsp;less</span>
-                    </span></div>
-                  </div> 
+                 <div class="col-sm-6">
+                  <div class="article-snap">
+                    <a href="images/james/article2-photo3.jpg" data-lightbox="james-article2">
+                     <img class="img-thumbnail" src="images/james/article2-photo3-thumb.jpg">
+                   </a>
+                 </div>
+               </div>
+               <div class="clear"></div>
+             </div>
+             <div class="col-sm-6 col-sm-offset-6">
+              <div class="read-more-button-wrap">
+                <span class="read-more-button expand-button">
+                  <span class="read-more-text">Read&nbsp;more</span>
+                  <span class="read-less-text">Read&nbsp;less</span>
+                </span></div>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wave-grey-to-white"></div>
+    </div>
+    <!--LATEST PROJECTS SECTION -->
+    <!--ONE PROJECTS SECTION -->
+    <div class="wave-section latest-project-section start-closed one-article-section">
+      <div class="wave-white-to-grey-shadow"></div>
+      <div class="row row-edge background-grey spacing-big-bottom">
+        <div class="col-lg-12 col-edge">
+          <div class="container">
+            <div class="row row-limit text-left">
+              <div class="col-sm-6">
+                <div class="postcard-wrapper">
+                  <div class="back-image-wrapper">
+                    <img class="img-thumbnail" src="images/james/article1-photo1.jpg">
+                  </div>
+                  <div class="front-image-wrapper">
+                    <img class="img-thumbnail" src="images/james/article1-photo1.jpg">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="project-details">
+                  <p class="date">THURSDAY 6TH AUGUST</p>
+                  <p class="name">James Millis</p>
+                  <h3 class="text-blue text-article-heading">Grant recipient: James Millis</h3>
+                  <div class="project-description text-blue">
+                    <p>Villages in the hills of East Timor are prone to landslides and flooding, and they&rsquo;re also one of the hardest areas to access, making recovery a slow and lengthy process.</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="wave-grey-to-white"></div>
-        </div>
-        <!--LATEST PROJECTS SECTION -->
-        <!--ONE PROJECTS SECTION -->
-        <div class="wave-section latest-project-section start-closed one-article-section">
-          <div class="wave-white-to-grey-shadow"></div>
-          <div class="row row-edge background-grey spacing-big-bottom">
-            <div class="col-lg-12 col-edge">
-              <div class="container">
-                <div class="row row-limit text-left">
-                  <div class="col-sm-6">
-                    <div class="postcard-wrapper">
-                      <div class="back-image-wrapper">
-                        <img class="img-thumbnail" src="images/james/article1-photo1.jpg">
-                      </div>
-                      <div class="front-image-wrapper">
-                        <img class="img-thumbnail" src="images/james/article1-photo1.jpg">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="project-details">
-                      <p class="date">THURSDAY 6TH AUGUST</p>
-                      <p class="name">James Millis</p>
-                      <h3 class="text-blue text-article-heading">Grant recipient: James Millis</h3>
-                      <div class="project-description text-blue">
-                        <p>Villages in the hills of East Timor are prone to landslides and flooding, and they&rsquo;re also one of the hardest areas to access, making recovery a slow and lengthy process.</p>
-                      </div>
-                    </div>
-                  </div>
+          <div class="container">
+            <div class="row row-limit text-left">
+              <div class="expand-article text-blue">
+                <div class="col-sm-12">
+                  <p> Spring water is the main water source for four communities living in the mountains, but keeping the water free from contamination and transporting it to the villages is challenging, with community members spending hours a day carrying water.</p>  
+                  <p>Red Cross, with support from the Friends of Manatuto program, have restored two of the four villages with proper facilities to access the stream, water filtration and toilet facilities. Additional Grant recipient, James Millis from Edithvale, Victoria is putting the money towards finishing the project, which will begin this month.</p>
+                  <p>Here&rsquo;s what James has to say about his project in East Timor.</p>
+                  <p><strong>Why did you choose this particular project?</strong></p>
+                  <p>I found out about Friends of Manatuto through family friends and heard that they needed support to complete the three-year project. The Reece Grant came at the perfect time for me to get involved.</p>
+                  <p><strong>What will the money go towards? </strong></p>
+                  <p>There are enough funds to finish restoring the third village, and begin the fourth in six months. The money is going towards tools and equipment to test the water, install proper water transport facilities and construct toilet facilities.</p>
+                  <p><strong>How do you ensure long-term change?</strong></p>
+                  <p>An important part of the job is actually teaching the community to be self-sufficient and run the water sanitation and transportation systems themselves, rather than us do it for them. That way, when we leave, the community will know how to fix problems when they arise and can pass their knowledge down to the younger generation.</p>
+                  <p><strong>What part of the project are you most excited about?</strong></p>
+                  <p>Making a difference by helping out a community that would otherwise be totally overlooked. It&rsquo;s one of those places that don&rsquo;t receive enough funding or support, so it&rsquo;s nice to be able to help make a lasting change.</p>
+                  <p><strong>What is your plan for the future?</strong></p>
+                  <p>Once this project is underway, I&rsquo;ll be looking to dedicate a week per year to supporting underprivileged areas using my plumbing skills. Realising how many people you can help with such little effort is a huge eye opener.</p>
                 </div>
-              </div>
-              <div class="container">
-                <div class="row row-limit text-left">
-                  <div class="expand-article text-blue">
-                    <div class="col-sm-12">
-                      <p> Spring water is the main water source for four communities living in the mountains, but keeping the water free from contamination and transporting it to the villages is challenging, with community members spending hours a day carrying water.</p>  
-                      <p>Red Cross, with support from the Friends of Manatuto program, have restored two of the four villages with proper facilities to access the stream, water filtration and toilet facilities. Additional Grant recipient, James Millis from Edithvale, Victoria is putting the money towards finishing the project, which will begin this month.</p>
-                      <p>Here&rsquo;s what James has to say about his project in East Timor.</p>
-                      <p><strong>Why did you choose this particular project?</strong></p>
-                      <p>I found out about Friends of Manatuto through family friends and heard that they needed support to complete the three-year project. The Reece Grant came at the perfect time for me to get involved.</p>
-                      <p><strong>What will the money go towards? </strong></p>
-                      <p>There are enough funds to finish restoring the third village, and begin the fourth in six months. The money is going towards tools and equipment to test the water, install proper water transport facilities and construct toilet facilities.</p>
-                      <p><strong>How do you ensure long-term change?</strong></p>
-                      <p>An important part of the job is actually teaching the community to be self-sufficient and run the water sanitation and transportation systems themselves, rather than us do it for them. That way, when we leave, the community will know how to fix problems when they arise and can pass their knowledge down to the younger generation.</p>
-                      <p><strong>What part of the project are you most excited about?</strong></p>
-                      <p>Making a difference by helping out a community that would otherwise be totally overlooked. It&rsquo;s one of those places that don&rsquo;t receive enough funding or support, so it&rsquo;s nice to be able to help make a lasting change.</p>
-                      <p><strong>What is your plan for the future?</strong></p>
-                      <p>Once this project is underway, I&rsquo;ll be looking to dedicate a week per year to supporting underprivileged areas using my plumbing skills. Realising how many people you can help with such little effort is a huge eye opener.</p>
-                    </div>
-                    <div class="col-sm-12">
-                      <div class="article-snap">
-                        <a href="images/james/article1-photo1.jpg" data-lightbox="james-article1">
-                         <img class="img-thumbnail" src="images/james/article1-photo1.jpg">
-                       </a>
-                     </div>
-                   </div>
-                   <div class="clear"></div>
+                <div class="col-sm-12">
+                  <div class="article-snap">
+                    <a href="images/james/article1-photo1.jpg" data-lightbox="james-article1">
+                     <img class="img-thumbnail" src="images/james/article1-photo1.jpg">
+                   </a>
                  </div>
-                 <div class="col-sm-6 col-sm-offset-6">
-                  <div class="read-more-button-wrap">
-                    <span class="read-more-button expand-button">
-                      <span class="read-more-text">Read&nbsp;more</span>
-                      <span class="read-less-text">Read&nbsp;less</span>
-                    </span></div>
-                  </div> 
-                </div>
-              </div>
+               </div>
+               <div class="clear"></div>
+             </div>
+             <div class="col-sm-6 col-sm-offset-6">
+              <div class="read-more-button-wrap">
+                <span class="read-more-button expand-button">
+                  <span class="read-more-text">Read&nbsp;more</span>
+                  <span class="read-less-text">Read&nbsp;less</span>
+                </span></div>
+              </div> 
             </div>
+          </div>
+        </div>
       </div>
       <div class="wave-grey-to-white"></div>
     </div>
@@ -382,7 +373,6 @@
                </a>
              </div>
            </div>
-           
            <div class="clear"></div>
          </div>
          <div class="col-sm-6 col-sm-offset-6">

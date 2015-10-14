@@ -169,10 +169,10 @@
                   <div class="col-sm-6">
                     <div class="postcard-wrapper">
                       <div class="back-image-wrapper">
-                        <img class="img-thumbnail" src="images/james/article2-preview2.jpg">
+                        <img class="img-thumbnail" src="images/james/article2-photo1-thumb.jpg">
                       </div>
                       <div class="front-image-wrapper">
-                        <img class="img-thumbnail" src="images/james/article2-preview1.jpg">
+                        <img class="img-thumbnail" src="images/james/article2-photo2-thumb.jpg">
                       </div>
                     </div>
                   </div>

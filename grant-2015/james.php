@@ -169,6 +169,93 @@
                   <div class="col-sm-6">
                     <div class="postcard-wrapper">
                       <div class="back-image-wrapper">
+                        <img class="img-thumbnail" src="images/james/article2-preview2.jpg">
+                      </div>
+                      <div class="front-image-wrapper">
+                        <img class="img-thumbnail" src="images/james/article2-preview1.jpg">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="project-details">
+                      <p class="date">Wednesday 14th October</p>
+                      <p class="name">James Millis</p>
+                      <h3 class="text-blue text-article-heading">Reece Grant &ldquo;hits the ground running&rdquo; in East Timor </h3>
+                      <div class="project-description text-blue">
+                        <p>Reece Grant recipient, James Millis&rsquo; project in East Timor is underway. </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row row-limit text-left">
+                  <div class="expand-article text-blue">
+                    <div class="col-sm-12">
+
+                      <p>James received $5,000 through the grant in September to put towards a project set to improve sanitation and hygiene facilities in underprivileged communities.</p>
+
+                      <p>His project supports the Red Cross and Friends of Manatuto who are restoring remote villages in East Timor, prone to landslides and flooding. While James isn&rsquo;t on-site, he is assisting the construction of water and sanitation facilities, and helping the team in educating the communities on how to run sanitation systems themselves.</p>   
+
+                      <p>&ldquo;Just receiving the grant has let us hit the ground running and keep things moving,&rdquo; says James.</p>
+
+                      <p>The Red Cross team recently met with the local community to determine their water and sanitation needs. Spring water is the main water source for four communities living in the mountains, but keeping the water free from contamination and transporting it to the villages is challenging, with community members spending hours a day carrying water.  </p>
+
+                      <p>The team also carried out technical investigations of existing infrastructure that is no longer functioning and investigated additional water sources to increase water quality and access.</p>
+
+                      <p>The Reece Grant will be used to rehabilitate two existing spring boxes, which will result in both improved water quality and increased supply for the community.</p>
+
+                      <p>&ldquo;The highlight for me so far has been working with people who are in the business of making people&rsquo;s lives better,&rdquo; says James.</p>
+
+
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="article-snap">
+                        <a href="images/james/article2-photo1.jpg" data-lightbox="james-article2">
+                         <img class="img-thumbnail" src="images/james/article2-photo1.jpg">
+                       </a>
+                     </div>
+                   </div>
+                   <div class="col-sm-6">
+                      <div class="article-snap">
+                        <a href="images/james/article2-photo2.jpg" data-lightbox="james-article2">
+                         <img class="img-thumbnail" src="images/james/article2-photo2.jpg">
+                       </a>
+                     </div>
+                   </div>
+                    <div class="col-sm-12">
+                      <div class="article-snap">
+                        <a href="images/james/article2-photo3.jpg" data-lightbox="james-article2">
+                         <img class="img-thumbnail" src="images/james/article2-photo3.jpg">
+                       </a>
+                     </div>
+                   </div>
+                   <div class="clear"></div>
+                 </div>
+                 <div class="col-sm-6 col-sm-offset-6">
+                  <div class="read-more-button-wrap">
+                    <span class="read-more-button expand-button">
+                      <span class="read-more-text">Read&nbsp;more</span>
+                      <span class="read-less-text">Read&nbsp;less</span>
+                    </span></div>
+                  </div> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wave-grey-to-white"></div>
+        </div>
+        <!--LATEST PROJECTS SECTION -->
+        <!--ONE PROJECTS SECTION -->
+        <div class="wave-section latest-project-section start-closed one-article-section">
+          <div class="wave-white-to-grey-shadow"></div>
+          <div class="row row-edge background-grey spacing-big-bottom">
+            <div class="col-lg-12 col-edge">
+              <div class="container">
+                <div class="row row-limit text-left">
+                  <div class="col-sm-6">
+                    <div class="postcard-wrapper">
+                      <div class="back-image-wrapper">
                         <img class="img-thumbnail" src="images/james/article1-photo1.jpg">
                       </div>
                       <div class="front-image-wrapper">
@@ -225,91 +312,9 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="wave-grey-to-white"></div>
-        </div>
-        <!--LATEST PROJECTS SECTION -->
-        <!--ONE PROJECTS SECTION -->
-        <!-- <div class="wave-section latest-project-section start-closed one-article-section">
-          <div class="wave-white-to-grey-shadow"></div>
-          <div class="row row-edge background-grey spacing-big-bottom">
-            <div class="col-lg-12 col-edge">
-              <div class="container">
-                <div class="row row-limit text-left">
-                  <div class="col-sm-6">
-                    <div class="postcard-wrapper">
-                      <div class="back-image-wrapper">
-                        <img class="img-thumbnail" src="images/homepage/snap2.png">
-                      </div>
-                      <div class="front-image-wrapper">
-                        <img class="img-thumbnail" src="images/homepage/snap1.png">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="project-details">
-                      <p class="date">THURSDAY 6TH AUGUST</p>
-                      <p class="name">Timothy Brideson</p>
-                      <h3 class="text-blue text-article-heading">This is the article title location </h3>
-                      <div class="project-description text-blue">
-                        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="container">
-                <div class="row row-limit text-left">
-                  <div class="expand-article text-blue">
-                    <div class="col-sm-12">
-                      <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis.</p>
-                      <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis.</p>
-                      <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis.</p>
-                      <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis.</p>
-                    </div>
-                    <div class="col-sm-6">
-                      <div class="article-snap">
-                        <a href="images/homepage/snap1.png" data-lightbox="james-article2">
-                         <img class="img-thumbnail" src="images/homepage/snap1.png">
-                       </a>
-                     </div>
-                   </div>
-                   <div class="col-sm-6">
-                    <div class="article-snap">
-                      <a href="images/homepage/snap2.png" data-lightbox="james-article2">
-                       <img class="img-thumbnail" src="images/homepage/snap2.png">
-                     </a>
-                   </div>
-                 </div>
-                 <div class="col-sm-6">
-                   <div class="article-snap">
-                     <a href="images/homepage/snap1.png" data-lightbox="james-article2">
-                       <img class="img-thumbnail" src="images/homepage/snap1.png">
-                     </a>
-                   </div>
-                 </div>
-                 <div class="col-sm-6">
-                  <div class="article-snap">
-                    <a href="images/homepage/snap2.png" data-lightbox="james-article2">
-                     <img class="img-thumbnail" src="images/homepage/snap2.png">
-                   </a>
-                 </div>
-               </div>
-               <div class="clear"></div>
-             </div>
-             <div class="col-sm-6 col-sm-offset-6">
-              <div class="read-more-button-wrap">
-                <span class="read-more-button expand-button">
-                  <span class="read-more-text">Read&nbsp;more</span>
-                  <span class="read-less-text">Read&nbsp;less</span>
-                </span></div>
-              </div> 
-            </div>
-          </div>
-        </div>
       </div>
       <div class="wave-grey-to-white"></div>
-    </div> -->
+    </div>
     <!--ONE PROJECTS SECTION -->
     <!--ONE PROJECTS SECTION -->
     <!-- <div class="wave-section latest-project-section start-closed one-article-section">

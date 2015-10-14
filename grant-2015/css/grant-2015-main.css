@@ -753,6 +753,7 @@ body.grant-2015 .grant-2015-content .latest-project-section.one-article-section 
 }
 body.grant-2015 .grant-2015-content .project-details .date {
   font-size: 12px;
+  text-transform: uppercase;
 }
 body.grant-2015 .grant-2015-content .project-details .name {
   font-size: 22px;

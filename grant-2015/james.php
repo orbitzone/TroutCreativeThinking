@@ -193,7 +193,7 @@
                   <div class="expand-article text-blue">
                     <div class="col-sm-12">
 
-                      <p>James received $5,000 through the grant in September to put towards a project set to improve sanitation and hygiene facilities in underprivileged communities.</p>
+                      <p>James received $5,000 through the Reece Grant initiative earlier in the year to put towards a project set to improve sanitation and hygiene facilities in underprivileged communities.</p>
 
                       <p>His project supports the Red Cross and Friends of Manatuto who are restoring remote villages in East Timor, prone to landslides and flooding. While James isn&rsquo;t on-site, he is assisting the construction of water and sanitation facilities, and helping the team in educating the communities on how to run sanitation systems themselves.</p>   
 

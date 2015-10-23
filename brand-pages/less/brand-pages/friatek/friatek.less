@@ -1,0 +1,63 @@
+@import "../widgets/widgets.less";
+@import "_variables.less";
+
+div.brand-pages{
+	h1,h2,h3,h4,h5,h6,a,button,input,textarea,select,p{
+		font-family: "Gotham A", "Gotham B";
+		-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;	
+	}
+	h1{
+		color: @h1Color;
+		font-size: @h1FontSize;
+		font-weight: @h1FontWeight;
+		text-decoration: @h1TextDecoration;
+		text-transform: @h1TextTransform;
+		a{
+			color: @h1Color;
+		}	
+	}
+	h2{
+		color: @h2Color;	
+		font-size: @h2FontSize;
+		font-weight: @h2FontWeight;
+		text-decoration: @h2TextDecoration;
+		text-transform: @h2TextTransform;
+		a{
+			color: @h2Color;
+		}
+	}
+	h3{
+		color: @h3Color;
+		font-size: @h3FontSize;
+		font-weight: @h3FontWeight;
+		text-decoration: @h3TextDecoration;
+		text-transform: @h3TextTransform;
+		a{
+			color: @h3Color;
+		}
+	}
+	.bg-grey{
+		background: @grey;
+	}
+	.widget-html-image{
+		h2,
+		h3{
+			
+		}
+		&.friamat{
+			h2{
+				color: black;
+				a{
+					color: black;
+				}
+			}
+		}
+	}
+	.friamat-container{
+		padding: 40px 20px;
+		@media (min-width: @screen-md){
+			padding: 40px 90px;
+		}		
+	}
+}

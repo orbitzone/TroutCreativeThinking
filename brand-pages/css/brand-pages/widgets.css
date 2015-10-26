@@ -285,19 +285,19 @@
   margin-bottom: 40px;
 }
 .brand-pages b {
-  color: #00aeef;
+  color: inherit;
 }
 .widget-link {
   text-transform: uppercase;
   padding: 8px 12px;
   display: inline-block;
   font-weight: 700;
-  border: 1px solid #00aeef;
-  color: #00aeef;
+  border: 1px solid black;
+  color: black;
 }
 .widget-link:hover {
-  border: 1px solid #00aeef;
-  color: #00aeef;
+  border: 1px solid black;
+  color: black;
 }
 .widget-logo {
   overflow: hidden;
@@ -329,9 +329,9 @@
 }
 .widget-slider .slick-slider .slick-slide .text {
   line-height: 1;
-  color: #00aeef;
-  font-weight: 500;
-  text-transform: uppercase;
+  color: black;
+  font-weight: normal;
+  text-transform: none;
   text-decoration: none;
 }
 .widget-slider .slick-slider .slick-slide .image {
@@ -396,7 +396,7 @@
 }
 .widget-slider .slick-slider .slick-prev:before,
 .widget-slider .slick-slider .slick-next:before {
-  color: #8e8e8d;
+  color: black;
   font-size: 80px;
 }
 .widget-slider .slick-slider .slick-prev {
@@ -479,10 +479,10 @@
 }
 .widget-video .play i {
   font-size: 50px;
-  color: #00aeef;
+  color: black;
 }
 .widget-big-button {
-  background: #00aeef;
+  background: black;
   text-align: center;
   padding: 40px;
 }
@@ -495,8 +495,8 @@
 .widget-big-button a .text {
   font-size: 32px;
   text-transform: uppercase;
-  font-weight: 700;
-  text-decoration: underline;
+  font-weight: normal;
+  text-decoration: none;
   line-height: 1;
 }
 .widget-big-button a .icon {
@@ -548,132 +548,4 @@
   overflow: auto;
   width: 100%;
   height: 100%;
-}
-/* <b> tag*/
-/* Colours */
-/* Font Sizes */
-/* Font Weight */
-/* Text Decoration */
-/* Text Transform */
-div.brand-pages {
-  font-size: 16px;
-}
-div.brand-pages h1,
-div.brand-pages h2,
-div.brand-pages h3,
-div.brand-pages h4,
-div.brand-pages h5,
-div.brand-pages h6,
-div.brand-pages a,
-div.brand-pages button,
-div.brand-pages input,
-div.brand-pages textarea,
-div.brand-pages select,
-div.brand-pages p {
-  font-family: "Gotham A", "Gotham B";
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-div.brand-pages h1 {
-  color: #00aeef;
-  font-size: 60px;
-  font-weight: 700;
-  text-decoration: underline;
-  text-transform: uppercase;
-}
-div.brand-pages h1 a {
-  color: #00aeef;
-}
-div.brand-pages h2 {
-  color: #00aeef;
-  font-size: 50px;
-  font-weight: 700;
-  text-decoration: underline;
-  text-transform: uppercase;
-  margin-bottom: 38px;
-  line-height: 55px;
-}
-div.brand-pages h2 a {
-  color: #00aeef;
-}
-@media (min-width: 768px) {
-  div.brand-pages h2 {
-    font-size: 35px;
-    line-height: 38.5px;
-  }
-}
-@media (min-width: 992px) {
-  div.brand-pages h2 {
-    font-size: 50px;
-    line-height: 55px;
-  }
-}
-div.brand-pages h3 {
-  color: #00aeef;
-  font-size: 40px;
-  font-weight: 700;
-  text-decoration: underline;
-  text-transform: uppercase;
-}
-div.brand-pages h3 a {
-  color: #00aeef;
-}
-@media (min-width: 768px) {
-  div.brand-pages h3 {
-    font-size: 28px;
-  }
-}
-@media (min-width: 992px) {
-  div.brand-pages h3 {
-    font-size: 40px;
-  }
-}
-div.brand-pages .bg-grey {
-  background: #ededeb;
-}
-div.brand-pages .widget-link {
-  margin-top: 20px;
-  padding: 18px 38px;
-  font-size: 20px;
-}
-div.brand-pages .widget-html-image.friamat h2 {
-  color: black;
-}
-div.brand-pages .widget-html-image.friamat h2 a {
-  color: black;
-}
-div.brand-pages .widget-video {
-  text-transform: uppercase;
-  background-size: contain;
-}
-div.brand-pages .widget-video .text {
-  left: 20%;
-  top: 50%;
-  position: absolute;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-div.brand-pages .widget-video .text p {
-  color: #00aeef;
-  font-weight: 700;
-  text-decoration: underline;
-}
-div.brand-pages .widget-video .text b {
-  text-decoration: underline;
-  color: black;
-}
-div.brand-pages .intro {
-  max-width: 730px;
-  margin: 0 auto;
-}
-div.brand-pages .friamat-container {
-  padding: 40px 20px;
-}
-@media (min-width: 992px) {
-  div.brand-pages .friamat-container {
-    padding: 40px 90px;
-  }
 }

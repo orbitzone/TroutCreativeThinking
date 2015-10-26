@@ -14,7 +14,9 @@ module.exports = function(grunt) {
           {
               "css/reece-global.css": "less/reece-global.less",
               "css/font-awesome.css": "less/font-awesome/font-awesome.less",
-              "css/brand-pages/friatek.css": "less/brand-pages/friatek/friatek.less"
+              "css/brand-pages/widgets.css": "less/brand-pages/widgets/widgets.less",
+              "css/brand-pages/friatek.css": "less/brand-pages/friatek/friatek.less",
+              "css/brand-pages/laufen.css": "less/brand-pages/laufen/laufen.less"
           }
         ]
       }
@@ -27,6 +29,7 @@ module.exports = function(grunt) {
               {expand: true, cwd: 'bower_components/bootstrap/less', src: ['**'], dest: 'less/bootstrap'},
               // setup fontawesome less files
               {expand: true, cwd: 'bower_components/fontawesome/less', src: ['**'], dest: 'less/font-awesome'},
+              {expand: true, cwd: 'bower_components/matchHeight', src: ['*.matchHeight-min.js'], dest: 'javascript'},
               {expand: true, cwd: 'bower_components/slick-carousel/slick', src: ['*.min.js'], dest: 'javascript'}
           ]
       }

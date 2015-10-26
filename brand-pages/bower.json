@@ -24,6 +24,7 @@
     "fontawesome": "4.3.0"
   },
   "devDependencies": {
-    "slick-carousel": "~1.5.8"
+    "slick-carousel": "~1.5.8",
+    "matchHeight": "matchheight#~0.6.0"
   }
 }

@@ -22,7 +22,7 @@
                   <img src="images/brand-pages/friatek/slide-1.jpg" alt="Slide 1">  
                 </div>
                 <div class="text">
-                  The Global leaders in electrofusion technology
+                 The global <br>leaders in <br>electrofusion <br>technology
                 </div>
               </div>
               <div class="slide">
@@ -30,7 +30,7 @@
                   <img src="images/brand-pages/friatek/slide-1.jpg" alt="Slide 1">  
                 </div>
                 <div class="text">
-                  The Global leaders in electrofusion technology
+                  The global <br>leaders in <br>electrofusion <br>technology
                 </div>
               </div>
             </div>  
@@ -39,7 +39,7 @@
       </div>
       <div class="container">
         <!-- Begin: HTML Widget-->  
-          <div class="widget-html-image">
+          <div class="widget-html-image intro">
             <div class="rte">
               <p><b>The global leaders in electrofusion technology</b>
               <br/>A pioneer of electrofusion technology since the 70’s, FRIATEC continues to set the standard that others follow. And now, FRIATEC’s advanced range of electrofusion fittings, welders and tools are available through Reece in Australia.</p>
@@ -49,21 +49,26 @@
       </div>
       <div class="container bg-grey">
         <!-- Begin: Video Widget-->  
-          <div class="widget-video" style="background-image: url(images/brand-pages/friatek/quality-video-bg.jpg);">
-            <div class="slides">
-              <div class="slide">
-                <div class="content">
-                  <p><b>Quality</b><br/>Since<br/>1863</p>  
-                </div>
-                <button type="button" class="play">
-                  <i class="rbp-play-icon"></i>  
-                </button>  
+        <div class="widget-video" data-height="356" style="background-image: url(images/brand-pages/friatek/quality-video-bg.jpg);">
+          <div class="video-slides">
+            <div class="slide">
+              <div class="text">
+                <p><b>Quality</b><br/>Since<br/>1863</p>  
               </div>
-              <div class="slide">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/RP2xdsxPWbA" frameborder="0" allowfullscreen></iframe>
-              </div>
-            </div>    
-          </div>
+              <button type="button" class="play">
+                <i class="rbp-play-icon"></i>  
+              </button>  
+            </div>
+            <div class="slide">
+              <figure>
+                <iframe src="//www.youtube.com/embed/RP2xdsxPWbA" width="400" height="300" frameborder="0" allowfullscreen></iframe>
+              </figure>
+              <button type="button" class="close">
+                <i class="rbp-close-icon"></i>               
+              </button>  
+            </div>
+          </div>    
+        </div>
         <!-- End: Video Widget-->
       </div>
       <div class="container">

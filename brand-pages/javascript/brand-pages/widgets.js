@@ -98,8 +98,9 @@ var widgets = {
 				container.find('.tab-block').removeClass('active');
 				$(this).addClass('active');
 				$($(this).attr('href')).addClass('active');
+				//container.find('.tabs-videos-slider').slick('setPosition');
+				container.find('.tabs-videos-slider').get(0).slick.setPosition();
 				$(window).resize();
-				container.find('.tabs-videos-slider').slick('setPosition');
 				return false;
 			});
 		});

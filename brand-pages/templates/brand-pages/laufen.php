@@ -84,42 +84,62 @@
   <div class="container">
     <div class="half-wrap clearfix">
       <div class="half">
-        <!-- Begin: Video Widget-->  
-        <div class="widget-video" style="background-image: url(images/brand-pages/laufen/video-1.jpg);">
+        <!-- Begin: Video Widget-->
+        <div class="widget-video">
           <div class="video-slides">
             <div class="slide">
-              <div class="text">
-                <p><b>Quality</b><br/>Since<br/>1863</p>  
+              <div class="image">
+                <img src="images/brand-pages/laufen/video-1.jpg" alt="Video 1">
               </div>
-              <button type="button" class="play">
-                <i class="rbp-play-icon"></i>  
-              </button>  
+              <div class="slide-content">
+                <div class="text">
+                  <p><b>Bathroom<br/>Culture</b></p>
+                </div>
+                <button type="button" class="play" data-video="RP2xdsxPWbA">
+                  <i class="rbp-play-icon"></i>
+                  <span class="label">View video</span>  
+                </button>  
+              </div>
             </div>
             <div class="slide">
-              <figure>
-                <iframe src="https://www.youtube.com/embed/RP2xdsxPWbA" frameborder="0" allowfullscreen></iframe>
-              </figure>                
+              <div class="video">
+                <figure class="player">
+                </figure>
+              </div>              
+              <button type="button" class="close">
+                <i class="rbp-close-icon"></i>               
+              </button>  
             </div>
           </div>    
         </div>
         <!-- End: Video Widget-->
       </div>
       <div class="half">
-        <!-- Begin: Video Widget-->  
-        <div class="widget-video" style="background-image: url(images/brand-pages/laufen/video-2.jpg);">
+        <!-- Begin: Video Widget-->
+        <div class="widget-video">
           <div class="video-slides">
             <div class="slide">
-              <div class="text">
-                <p><b>Quality</b><br/>Since<br/>1863</p>  
+              <div class="image">
+                <img src="images/brand-pages/laufen/video-2.jpg" alt="Video 2">
               </div>
-              <button type="button" class="play">
-                <i class="rbp-play-icon"></i>  
-              </button>  
+              <div class="slide-content">
+                <div class="text">
+                  <p><b>Laufen designed<br/>like no other</b></p>  
+                </div>
+                <button type="button" class="play" data-video="RP2xdsxPWbA">
+                  <i class="rbp-play-icon"></i>
+                  <span class="label">View video</span>  
+                </button>  
+              </div>
             </div>
             <div class="slide">
-              <figure>
-                <iframe src="https://www.youtube.com/embed/RP2xdsxPWbA" frameborder="0" allowfullscreen></iframe>
-              </figure>                
+              <div class="video">
+                <figure class="player">
+                </figure>
+              </div>              
+              <button type="button" class="close">
+                <i class="rbp-close-icon"></i>               
+              </button>  
             </div>
           </div>    
         </div>

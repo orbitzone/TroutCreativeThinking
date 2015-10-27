@@ -16,18 +16,6 @@
 				 		dots: true
 				 	}
 				 }]
-			});
-			$('.video-slides').slick({
-				 arrows: false,
-				 dots: false,
-				 infinite: false
-			});
-			
-			$('button.play').on('click', function(){
-				$(this).parent().parent().parent().parent().slick('slickNext');
-			});
-			$('button.close').on('click', function(){
-				$(this).parent().parent().parent().parent().slick('slickPrev');
-			});
+			});			
 		});
 })(jQuery);

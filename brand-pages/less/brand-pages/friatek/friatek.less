@@ -78,12 +78,15 @@ div.brand-pages{
 	}
 	.widget-video{
 		text-transform: uppercase;
-		background-size: contain; 
+		background-size: contain;
+		.image{
+			text-align: right;
+		}
 		.text{	
-			left: 20%;		
+			left: -20%;		
 			top: 50%;
 			position: absolute;
-			.transform(translateY(-50%));
+			.transform(translateY(-50%) translateX(-100%));
 			p{
 				color: @h1Color;
 				font-weight: 700;
@@ -92,6 +95,11 @@ div.brand-pages{
 			b{
 				text-decoration: underline;	
 				color: black;
+			}			
+		}
+		.play{
+			.label{
+				display: none;
 			}
 		}
 	}

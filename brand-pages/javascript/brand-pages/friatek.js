@@ -12,12 +12,7 @@
 			 		dots: true
 			 	}
 			 }]
-		});
-		$('.video-slides').slick({
-			 arrows: false,
-			 dots: false,
-			 infinite: false
-		});		
+		});	
 		$(window).load(function(){
 			$('.widget-big-button').matchHeight();			
 			$(window).resize();
@@ -54,13 +49,7 @@
 			});
 		
 		});
-		$('button.play').on('click', function(){
-			$(this).parent().parent().parent().parent().slick('slickNext');
-		});
-		$('button.close').on('click', function(){
-			$(this).parent().parent().parent().parent().slick('slickPrev');
-		});
-    var $allVideos = $("iframe[src^='//player.vimeo.com'], iframe[src^='//www.youtube.com'], object, embed"),
+		var $allVideos = $("iframe[src^='//player.vimeo.com'], iframe[src^='//www.youtube.com'], object, embed"),
     $fluidEl = $("figure");
 		$allVideos.each(function() {
 		  $(this)

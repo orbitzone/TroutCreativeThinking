@@ -20,7 +20,22 @@ div.brand-pages{
 		}
 	}
 	.widget-video{
-		background-size: cover;
+		overflow: hidden;
+		.slick-track{
+			background: black;
+		}
+		.slick-slider{
+			.slick-slide{
+				.video{
+					padding-top: 60px;					
+				}
+				button.close{
+					i{
+						color: white;
+					}
+				}
+			}
+		}		
 	}
 	.designers{
 		.widget-html-image{

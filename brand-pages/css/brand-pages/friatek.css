@@ -307,6 +307,9 @@
 .widget-logo h1 {
   margin-bottom: 0;
 }
+.widget-slider {
+  overflow: hidden;
+}
 .widget-slider .slides {
   margin-left: -15px;
   margin-right: -15px;
@@ -475,9 +478,9 @@
   margin-bottom: 10px;
 }
 .widget-video {
-  padding: 20px 0;
+  padding: 0;
   position: relative;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 1;
   background-repeat: no-repeat;
   background-position: top right;
@@ -493,19 +496,42 @@
   height: 100%;
 }
 .widget-video .slick-slider .slick-list .slick-track .slick-slide {
-  height: 100%;
+  overflow: hidden;
 }
 .widget-video .slick-slider .slick-slide {
   position: relative;
   height: 100%;
 }
-.widget-video .slick-slider .slick-slide figure {
+.widget-video .slick-slider .slick-slide .slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  color: black;
+}
+.widget-video .slick-slider .slick-slide .video {
+  padding: 20px;
   text-align: center;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin: 30px 30px 0;
+}
+.widget-video .slick-slider .slick-slide .video iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
 }
 .widget-video .slick-slider .slick-slide button.close {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 15px;
+  right: 15px;
   border: none;
   background: none;
   outline: none;
@@ -518,30 +544,28 @@
   text-shadow: none;
 }
 .widget-video .slick-slider .slick-slide button.close i {
-  font-size: 50px;
+  font-size: 30px;
   color: black;
 }
 .widget-video .play {
   border: none;
   background: none;
   outline: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  color: #00aeef;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   -o-appearance: none;
   appearance: none;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
 }
 .widget-video .play i {
   font-size: 50px;
   color: #00aeef;
+}
+.widget-video .play .label {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
 }
 .widget-big-button {
   background: #00aeef;
@@ -641,9 +665,18 @@
 }
 .widget-video-tabs .main {
   background: black;
-  min-height: 50px;
   overflow: hidden;
   margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.widget-video-tabs .main iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
 }
 .widget-video-tabs .tabs-content {
   position: relative;
@@ -822,15 +855,18 @@ div.brand-pages .widget-video {
   text-transform: uppercase;
   background-size: contain;
 }
+div.brand-pages .widget-video .image {
+  text-align: right;
+}
 div.brand-pages .widget-video .text {
-  left: 20%;
+  left: -20%;
   top: 50%;
   position: absolute;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%) translateX(-100%);
+  -moz-transform: translateY(-50%) translateX(-100%);
+  -ms-transform: translateY(-50%) translateX(-100%);
+  -o-transform: translateY(-50%) translateX(-100%);
+  transform: translateY(-50%) translateX(-100%);
 }
 div.brand-pages .widget-video .text p {
   color: #00aeef;
@@ -840,6 +876,9 @@ div.brand-pages .widget-video .text p {
 div.brand-pages .widget-video .text b {
   text-decoration: underline;
   color: black;
+}
+div.brand-pages .widget-video .play .label {
+  display: none;
 }
 div.brand-pages .intro {
   max-width: 730px;

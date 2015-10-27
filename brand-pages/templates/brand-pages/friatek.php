@@ -49,20 +49,27 @@
       </div>
       <div class="container bg-grey">
         <!-- Begin: Video Widget-->  
-        <div class="widget-video" data-height="356" style="background-image: url(images/brand-pages/friatek/quality-video-bg.jpg);">
+        <div class="widget-video">
           <div class="video-slides">
             <div class="slide">
-              <div class="text">
-                <p><b>Quality</b><br/>Since<br/>1863</p>  
+              <div class="image">
+                <img src="images/brand-pages/friatek/quality-video-bg.jpg" alt="Video">
               </div>
-              <button type="button" class="play">
-                <i class="rbp-play-icon"></i>  
-              </button>  
+              <div class="slide-content">
+                <div class="text">
+                  <p><b>Quality</b><br/>Since<br/>1863</p>  
+                </div>
+                <button type="button" class="play" data-video="RP2xdsxPWbA">
+                  <i class="rbp-play-icon"></i>
+                  <span class="label">View video</span>  
+                </button>  
+              </div>
             </div>
             <div class="slide">
-              <figure>
-                <iframe src="//www.youtube.com/embed/RP2xdsxPWbA" width="400" height="300" frameborder="0" allowfullscreen></iframe>
-              </figure>
+              <div class="video">
+                <figure class="player">
+                </figure>
+              </div>              
               <button type="button" class="close">
                 <i class="rbp-close-icon"></i>               
               </button>  

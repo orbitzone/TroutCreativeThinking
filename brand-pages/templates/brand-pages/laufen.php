@@ -340,7 +340,7 @@
               </div>                  
               <div class="tabs-videos-slider">
                 <div class="video">
-                  <figure data-video="khITBQJcn2U">
+                  <figure data-video="lSrYCW2b5d0">
                     <img src="images/brand-pages/laufen/videos/video-thumb-1.jpg" alt="Video 1">
                     <div class="icon">
                       <i class="rbp-play-icon"></i>
@@ -352,7 +352,7 @@
                   </div>
                 </div>                  
                 <div class="video">
-                  <figure data-video="kxJi9V3gdP4">
+                  <figure data-video="-Ze2fWKP8nA">
                     <img src="images/brand-pages/laufen/videos/video-thumb-2.jpg" alt="Video 2">
                     <div class="icon">
                       <i class="rbp-play-icon"></i>
@@ -364,7 +364,7 @@
                   </div>
                 </div>                  
                 <div class="video">
-                  <figure data-video="Q-a1dahV-QM">
+                  <figure data-video="jZY2JbqE9xY">
                     <img src="images/brand-pages/laufen/videos/video-thumb-3.jpg" alt="Video 3">
                     <div class="icon">
                       <p>Currently viewing</p>  
@@ -377,9 +377,110 @@
               </div>
             </div>
           </div>
-          <div id="paloma" class="tab-block"></div>
-          <div id="mimo" class="tab-block"></div>
-          <div id="laufenpro" class="tab-block"></div>
+          <div id="paloma" class="tab-block">
+            <div class="intro">
+              <div class="logo">
+                <h1>Palomba</h1>
+              </div>
+              <div class="text">
+                Nulla vitae elit libero, a pharetra augue vestibulum id ligula porta felis euismod semper. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+              </div>
+            </div>
+            <div class="videos">
+              <div class="main">
+                <figure class="player">
+                              
+                </figure>
+              </div>                  
+              <div class="tabs-videos-slider">
+                <div class="video">
+                  <figure data-video="ag9bSKcrhhI">
+                    <img src="images/brand-pages/laufen/videos/video-thumb-1.jpg" alt="Video 1">
+                    <div class="icon">
+                      <i class="rbp-play-icon"></i>
+                      <p>View Video</p>  
+                    </div>
+                  </figure>
+                  <div class="description">
+                    Kartell by laufen - Design
+                  </div>
+                </div>                
+                <div class="video">
+                  <figure data-video="LLfW4mJ8BeM">
+                    <img src="images/brand-pages/laufen/videos/video-thumb-3.jpg" alt="Video 3">
+                    <div class="icon">
+                      <p>Currently viewing</p>  
+                    </div>
+                  </figure>
+                  <div class="description">
+                    The making of Kartell by Laufen - Reece bathrooms
+                  </div>
+                </div>                                  
+              </div>
+            </div>
+          </div>
+          <div id="mimo" class="tab-block">
+            <div class="intro">
+              <div class="logo">
+                <h1>Mimo</h1>
+              </div>
+              <div class="text">
+                Nulla vitae elit libero, a pharetra augue vestibulum id ligula porta felis euismod semper. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+              </div>
+            </div>
+            <div class="videos">
+              <div class="main">
+                <figure class="player">
+                              
+                </figure>
+              </div>                  
+              <div class="tabs-videos-slider">
+                <div class="video">
+                  <figure data-video="LAn6KbehwMI">
+                    <img src="images/brand-pages/laufen/videos/video-thumb-1.jpg" alt="Video 1">
+                    <div class="icon">
+                      <i class="rbp-play-icon"></i>
+                      <p>View Video</p>  
+                    </div>
+                  </figure>
+                  <div class="description">
+                    Kartell by laufen - Design
+                  </div>
+                </div>                                 
+              </div>
+            </div>
+          </div>
+          <div id="laufenpro" class="tab-block">
+            <div class="intro">
+              <div class="logo">
+                <h1>Laufen Pro</h1>
+              </div>
+              <div class="text">
+                Nulla vitae elit libero, a pharetra augue vestibulum id ligula porta felis euismod semper. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+              </div>
+            </div>
+            <div class="videos">
+              <div class="main">
+                <figure class="player">
+                              
+                </figure>
+              </div>                  
+              <div class="tabs-videos-slider">
+                <div class="video">
+                  <figure data-video="G3Hmdq4EEMc">
+                    <img src="images/brand-pages/laufen/videos/video-thumb-1.jpg" alt="Video 1">
+                    <div class="icon">
+                      <i class="rbp-play-icon"></i>
+                      <p>View Video</p>  
+                    </div>
+                  </figure>
+                  <div class="description">
+                    Kartell by laufen - Design
+                  </div>
+                </div>                                 
+              </div>
+            </div>
+          </div>
         </div>        
       </div>
     </div>      

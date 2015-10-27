@@ -1,5 +1,5 @@
 var player = {
-	autoplay: true,
+	autoplay: false,
 	active: '',
 	obj:{},
 	init: function(container, videoId){
@@ -18,22 +18,30 @@ var player = {
   			if(video.getVideoData().video_id != videoId){
   				player.obj[container].loadVideoById(videoId);     
   			}else{
-    			player.play(container);
+  				if(player.autoplay){
+    				player.play(container);
+    			}
     		}
     	}else{
       	player.obj[container] = player.loadPlayer(container, videoId)	;     
     	}
     }
 	},
-	loadPlayer: function(container, videoId){
-	 player.autoplay = true;
+	loadPlayer: function(container, videoId, autoplay){
+	if(typeof autoplay === "undefined"){
+		autoplay = false;
+		player.autoplay = false;
+	}else{
+		player.autoplay = true;
+	}
+	 
 	 player.active = container;
 	 return new YT.Player(container, {
       videoId: videoId,
       width: 790,
       height: 444,
       playerVars: {
-        autoplay: 0,
+        autoplay: player.autoplay,
         rel: 0
         /*controls: 0,
         modestbranding: 1,
@@ -42,12 +50,12 @@ var player = {
       },
       events: {
       	'onReady': function(event){
+      		console.log(player.autoplay);
       		if(player.autoplay == true){
       			player.play(container);
       		}
       		$(window).on('resize', function(){
-      			console.log('resized'+container);
-    				var $iframe = $('#'+container);
+      			var $iframe = $('#'+container);
     				$iframe.width($('#'+container).parent().width());
     				$iframe.height($('#'+container).parent().width()* 9/16);
       		}).resize();
@@ -71,19 +79,26 @@ var player = {
 		video.playVideo();
 	},
 	stop: function(id){
-		var video = player.obj[id];
-		if(typeof video.stopVideo !== "undefined"){
-	  	video.stopVideo();		  	      
+		if(typeof id !== "undefined"){
+			var video = player.obj[id];
+			if(typeof video.stopVideo !== "undefined"){
+		  	video.stopVideo();		  	      
+			}else{
+				player.autoplay = false;
+			}
 		}else{
-			player.autoplay = false;
+			$.each(player.obj, function(key){
+				if(typeof player.obj[key].stopVideo !== "undefined"){
+			  	player.obj[key].stopVideo();		  	      
+				}				
+			});
 		}
 	}
 };
 var widgets = {
 	init: function(){
 		var m = 1;
-
-		$('.tabs-videos-slider').slick({
+			$('.tabs-videos-slider').slick({
 				arrows:false,
 				dots: true,
 				infinite: false,
@@ -99,28 +114,32 @@ var widgets = {
 					}	
 					]			
 			});
-		$('.widget-video-tabs').each(function(){
-			$(this).find('.tab-block').each(function(){
-				$(this).find('.player').attr('id','widget-player-'+m);
-				var player_container = 'widget-player-'+m;
-				m=m+1;
-				$(this).find('.video').on('click', function(){
-					var video = $(this).find('figure').data('video');
-					player.init(player_container,video);
-				});					
+			$('.widget-video-tabs').each(function(){
+				$(this).find('.tab-block').each(function(){
+					var player_container = 'widget-player-'+m;
+					$(this).find('.player').attr('id',player_container);
+
+					$(this).find('.video').on('click', function(){
+						var video = $(this).find('figure').data('video');
+						player.init(player_container,video);
+					});	
+					m=m+1;				
+				});
+				var container = $(this);
+				$(this).find('.tabs-list a').on('click', function(){
+					player.stop();
+					container.find('.tabs-list a').removeClass('active');
+					container.find('.tab-block').removeClass('active');
+					$(this).addClass('active');
+					$($(this).attr('href')).addClass('active');
+					var current = $($(this).attr('href')).find('.video').first().trigger('click');
+					container.find('.tabs-videos-slider').slick('setPosition');
+					//container.find('.tabs-videos-slider').get(0).slick.setPosition();
+					$(window).resize();
+					return false;
+				});			
 			});
-			var container = $(this);
-			$(this).find('.tabs-list a').on('click', function(){
-				container.find('.tabs-list a').removeClass('active');
-				container.find('.tab-block').removeClass('active');
-				$(this).addClass('active');
-				$($(this).attr('href')).addClass('active');
-				container.find('.tabs-videos-slider').slick('setPosition');
-				//container.find('.tabs-videos-slider').get(0).slick.setPosition();
-				$(window).resize();
-				return false;
-			});
-		});
+			$('.widget-video-tabs').find('.tab-block.active').find('.video').first().trigger('click');
 		}
 	};
 	widgets.init();

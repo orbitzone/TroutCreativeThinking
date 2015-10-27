@@ -1,16 +1,47 @@
 @import "../widgets/widgets.less";
 @import "_variables.less";
 
+
 div.brand-pages{
 	text-align: center;
+	.rte{
+		text-align: center;
+	}
 	.half{
 		margin-bottom: 30px;
-		float: left;
-		width: 50%;		
+		@media (min-width: 768px){
+			float: left;
+			width: 50%;	
+		}	
 	}
 	.widget-block-five{
 		.text{
 			font-size: 20px;
+		}
+	}
+	.widget-video{
+		background-size: cover;
+	}
+	.designers{
+		.widget-html-image{
+			padding: 0;
+			margin-bottom: 30px;
+			.rte{
+				padding: 0 20px;
+				max-width: 295px;
+				margin: 0 auto;
+				margin-top: 30px;
+				color: @grey;
+				font-weight: 300;
+			}
+		}
+	}
+	.widget-slider{
+		&.carousel{
+			.widget-link{
+				text-transform: none;
+				padding: 8px 10px;
+			}
 		}
 	}
 }

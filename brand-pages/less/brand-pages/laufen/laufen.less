@@ -7,6 +7,9 @@ div.brand-pages{
 	.rte{
 		text-align: center;
 	}
+	a{
+		color: black;
+	}
 	.half{
 		margin-bottom: 30px;
 		@media (min-width: 768px){
@@ -33,7 +36,7 @@ div.brand-pages{
 					i{
 						color: white;
 					}
-				}
+				}				
 			}
 		}		
 	}
@@ -49,9 +52,41 @@ div.brand-pages{
 				color: @grey;
 				font-weight: 300;
 			}
+			.image{
+				figcaption{
+					max-width: 260px;
+					margin: 0 auto;
+					left: 50%;
+					.transform(translateX(-50%) translateY(-50%));
+				}
+			}			
 		}
 	}
 	.widget-slider{
+		.slick-slider{
+			.slick-next,
+			.slick-prev{
+				&:before{
+					font-size: 80px;
+				}
+			}
+			.slick-prev:before
+{
+			    content: 'h';
+			}
+			[dir='rtl'] .slick-prev:before
+			{
+			    content: 'h';
+			}
+			.slick-next:before
+			{
+			    content: 'i';
+			}
+			[dir='rtl'] .slick-next:iefore
+			{
+			    content: 'i';
+			}
+		}
 		&.carousel{
 			.widget-link{
 				text-transform: none;

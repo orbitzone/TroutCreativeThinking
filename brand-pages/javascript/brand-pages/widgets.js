@@ -99,7 +99,8 @@ var widgets = {
 		$('.video-slides').slick({
 			 arrows: false,
 			 dots: false,
-			 infinite: false
+			 infinite: false,
+			 swipe: false
 		});
 		var m = 0;
 		$('.widget-video').each(function(){
@@ -161,6 +162,10 @@ var widgets = {
 				}	
 				]			
 		});
+		var timeout;
+		$(window).resize(function() {
+		  $('.tabs-videos-slider').slick('slickGoTo', 0);
+		});
 
 		$('.widget-video-tabs').each(function(){
 			$(this).find('.tab-block').each(function(){
@@ -168,6 +173,10 @@ var widgets = {
 				$(this).find('.player').attr('id',player_container);
 
 				$(this).find('.video').on('click', function(){
+					$('.icon-play').show();
+					$('.icon-playing').hide();
+					$(this).find('.icon-play').hide();
+					$(this).find('.icon-playing').show();
 					var video = $(this).find('figure').data('video');
 					player.init(player_container,video);
 				});	
@@ -178,6 +187,8 @@ var widgets = {
 				player.stop();
 				container.find('.tabs-list a').removeClass('active');
 				container.find('.tab-block').removeClass('active');
+				$('.icon-play').show();
+				$('.icon-playing').hide();
 				$(this).addClass('active');
 				$($(this).attr('href')).addClass('active');
 				var current = $($(this).attr('href')).find('.video').first().trigger('click');

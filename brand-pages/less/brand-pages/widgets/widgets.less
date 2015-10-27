@@ -165,6 +165,16 @@
 	.image{
 		margin: 0 auto;
 		margin-bottom: 10px;
+		position: relative;
+		figcaption{
+			position: absolute;
+			top: 50%;
+			width: 100%;
+			text-align: center;
+			.transform(translateY(-50%));
+			color: white;
+			font-size: 30px;
+		}
 	}
 }
 .widget-video{
@@ -397,6 +407,9 @@
 						left: 50%;
 						.transform(translateY(-50%) translateX(-50%));
 						color: white;
+						.icon-playing{
+							display: none;
+						}
 						p{
 							margin: 0;
 						}

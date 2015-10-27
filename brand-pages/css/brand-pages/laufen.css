@@ -45,6 +45,18 @@
 .rbp-close-icon:before {
   content: "e";
 }
+.rbp-arrow-light-left-circle-icon:before {
+  content: "f";
+}
+.rbp-arrow-light-right-circle-icon:before {
+  content: "g";
+}
+.rbp-arrow-angle-left-icon:before {
+  content: "h";
+}
+.rbp-arrow-angle-right-icon:before {
+  content: "i";
+}
 /* Slider */
 .slick-slider {
   position: relative;
@@ -476,6 +488,20 @@
 .widget-html-image .image {
   margin: 0 auto;
   margin-bottom: 10px;
+  position: relative;
+}
+.widget-html-image .image figcaption {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: white;
+  font-size: 30px;
 }
 .widget-video {
   padding: 0;
@@ -727,6 +753,9 @@
   transform: translateY(-50%) translateX(-50%);
   color: white;
 }
+.widget-video-tabs .tabs-content .tabs-videos-slider .video figure .icon .icon-playing {
+  display: none;
+}
 .widget-video-tabs .tabs-content .tabs-videos-slider .video figure .icon p {
   margin: 0;
 }
@@ -764,6 +793,9 @@ div.brand-pages {
 div.brand-pages .rte {
   text-align: center;
 }
+div.brand-pages a {
+  color: black;
+}
 div.brand-pages .half {
   margin-bottom: 30px;
 }
@@ -799,6 +831,32 @@ div.brand-pages .designers .widget-html-image .rte {
   margin-top: 30px;
   color: #888888;
   font-weight: 300;
+}
+div.brand-pages .designers .widget-html-image .image figcaption {
+  max-width: 260px;
+  margin: 0 auto;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+div.brand-pages .widget-slider .slick-slider .slick-next:before,
+div.brand-pages .widget-slider .slick-slider .slick-prev:before {
+  font-size: 80px;
+}
+div.brand-pages .widget-slider .slick-slider .slick-prev:before {
+  content: 'h';
+}
+div.brand-pages .widget-slider .slick-slider [dir='rtl'] .slick-prev:before {
+  content: 'h';
+}
+div.brand-pages .widget-slider .slick-slider .slick-next:before {
+  content: 'i';
+}
+div.brand-pages .widget-slider .slick-slider [dir='rtl'] .slick-next:iefore {
+  content: 'i';
 }
 div.brand-pages .widget-slider.carousel .widget-link {
   text-transform: none;

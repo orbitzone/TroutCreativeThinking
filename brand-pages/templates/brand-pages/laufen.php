@@ -21,7 +21,8 @@
       </div>
       <div class="wbf-middle">
         <div class="wbf-middle-top" data-mh="wbf-top-right">
-          <div class="text">Synonymous with beauty, <br>craftsmanship and <br>perfection of form – <br>qualities that continue to <br>define LAUFEN as one of <br>the world’s most desired <br>bathroom brands.</div>
+          <!--<div class="text">Synonymous with beauty, <br>craftsmanship and <br>perfection of form – <br>qualities that continue to <br>define LAUFEN as one of <br>the world’s most desired <br>bathroom brands.</div>-->
+          <img src="images/brand-pages/laufen/block-5.jpg" alt="Synonymous with beauty, craftsmanship and perfection of form – qualities that continue to define LAUFEN as one of the world’s most desired bathroom brands.">
         </div>
         <div class="wbf-middle-bottom" data-mh="wbf-bottom-right">
           <img src="images/brand-pages/laufen/block-3.jpg" alt="Sink">
@@ -44,8 +45,8 @@
       <div class="col-sm-4">
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image">
-          <div class="image">
-          </div>
+          <figure class="image">
+          </figure>
           <div class="rte">
             <h3><a href="#">Swissness</a></h3>
             <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Curabitur blandit tempus porttitor. Curabitur blandit tempus porttitor.</p>
@@ -56,8 +57,8 @@
       <div class="col-sm-4">
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image">
-          <div class="image">
-          </div>
+          <figure class="image">
+          </figure>
           <div class="rte">
             <h3><a href="#">Quality</a></h3>
             <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Curabitur blandit tempus porttitor. Curabitur blandit tempus porttitor.</p>
@@ -68,8 +69,8 @@
       <div class="col-sm-4">
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image">
-          <div class="image">
-          </div>
+          <figure class="image">
+          </figure>
           <div class="rte">
             <h3><a href="#">Design</a></h3>
             <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Curabitur blandit tempus porttitor. Curabitur blandit tempus porttitor.</p>
@@ -88,15 +89,15 @@
         <div class="widget-video">
           <div class="video-slides">
             <div class="slide">
-              <div class="image">
+              <figure class="image">
                 <img src="images/brand-pages/laufen/video-1.jpg" alt="Video 1">
-              </div>
+              </figure>
               <div class="slide-content">
                 <div class="text">
                   <p><b>Bathroom<br/>Culture</b></p>
                 </div>
                 <button type="button" class="play" data-video="RP2xdsxPWbA">
-                  <i class="rbp-play-icon"></i>
+                  <i class="rbp-arrow-light-right-circle-icon"></i>
                   <span class="label">View video</span>  
                 </button>  
               </div>
@@ -119,15 +120,15 @@
         <div class="widget-video">
           <div class="video-slides">
             <div class="slide">
-              <div class="image">
+              <figure class="image">
                 <img src="images/brand-pages/laufen/video-2.jpg" alt="Video 2">
-              </div>
+              </figure>
               <div class="slide-content">
                 <div class="text">
                   <p><b>Laufen designed<br/>like no other</b></p>  
                 </div>
                 <button type="button" class="play" data-video="RP2xdsxPWbA">
-                  <i class="rbp-play-icon"></i>
+                  <i class="rbp-arrow-light-right-circle-icon"></i>
                   <span class="label">View video</span>  
                 </button>  
               </div>
@@ -154,49 +155,49 @@
     <div class="widget-slider carousel">
       <div class="slides">
         <div class="slide">
-          <div class="image">
+          <figure class="image">
             <img src="images/brand-pages/laufen/brochure-1.jpg" alt="Brochure 1">  
-          </div>
+          </figure>
           <div class="text">
            <a href="#" class="widget-link">Download brochure</a>
           </div>
         </div>
         <div class="slide">
-          <div class="image">
+          <figure class="image">
             <img src="images/brand-pages/laufen/brochure-2.jpg" alt="Brochure 2">  
-          </div>
+          </figure>
           <div class="text">
             <a href="#" class="widget-link">Download brochure</a>
           </div>
         </div>
         <div class="slide">
-          <div class="image">
+          <figure class="image">
             <img src="images/brand-pages/laufen/brochure-3.jpg" alt="Brochure 3">  
-          </div>
+          </figure>
           <div class="text">
             <a href="#" class="widget-link">Download brochure</a>
           </div>
         </div>
         <div class="slide">
-          <div class="image">
+          <figure class="image">
             <img src="images/brand-pages/laufen/brochure-1.jpg" alt="Brochure 1">  
-          </div>
+          </figure>
           <div class="text">
            <a href="#" class="widget-link">Download brochure</a>
          </div>
         </div>
         <div class="slide">
-          <div class="image">
+          <figure class="image">
             <img src="images/brand-pages/laufen/brochure-2.jpg" alt="Brochure 2">  
-          </div>
+          </figure>
           <div class="text">
             <a href="#" class="widget-link">Download brochure</a>
           </div>
         </div>
         <div class="slide">
-          <div class="image">
+          <figure class="image">
             <img src="images/brand-pages/laufen/brochure-3.jpg" alt="Brochure 3">  
-          </div>
+          </figure>
           <div class="text">
             <a href="#" class="widget-link">Download brochure</a>
           </div>
@@ -224,9 +225,10 @@
       <div class="col-sm-6 col-md-offset-1 col-md-5">
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image">
-          <div class="image">
+          <figure class="image">
             <img src="images/brand-pages/laufen/design-1.jpg" alt="Stefano Giovannoni">
-          </div>
+            <figcaption>Stefano Giovannoni</figcaption>
+          </figure>
           <div class="rte">
             <p>The works of award winning designer, Stefano Giovannoni, tell stories that fascinate and enthral with their beautiful narrative qualities.</p>
           </div>
@@ -236,9 +238,10 @@
       <div class="col-sm-6 col-md-5">
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image">
-          <div class="image">
+          <figure class="image">
             <img src="images/brand-pages/laufen/design-2.jpg" alt="Ludovica + Roberto Palomba">
-          </div>
+            <figcaption>Ludovica + Roberto Palomba</figcaption>
+          </figure>
           <div class="rte">
             <p>The shooting stars of the Italian design scene, Ludovica + Roberto Palomba, continue to create ground-breaking designs the world over.</p>
           </div>
@@ -248,9 +251,10 @@
       <div class="col-sm-6 col-md-offset-1 col-md-5">
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image">
-          <div class="image">
+          <figure class="image">
             <img src="images/brand-pages/laufen/design-3.jpg" alt="Phoenix Design">
-          </div>
+            <figcaption>Phoenix Design</figcaption>
+          </figure>
           <div class="rte">
             <p>The driving force behind Phoenix Design in Germany, they bring together aesthetics, ergonomics and plenty of attitude.</p>
           </div>
@@ -260,9 +264,10 @@
       <div class="col-sm-6 col-md-5">
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image">
-          <div class="image">
+          <figure class="image">
             <img src="images/brand-pages/laufen/design-4.jpg" alt="Peter Wirz Vetica">
-          </div>
+            <figcaption>Peter Wirz Vetica</figcaption>
+          </figure>
           <div class="rte">
             <p>Design of the human touch is the credo of Vetica,
               the design hotbed leadby Peter Wirz and his interdisciplinary ideas team.
@@ -309,8 +314,13 @@
                   <figure data-video="khITBQJcn2U">
                     <img src="images/brand-pages/laufen/videos/video-thumb-1.jpg" alt="Video 1">
                     <div class="icon">
-                      <i class="rbp-play-icon"></i>
-                      <p>View Video</p>  
+                      <div class="icon-play">
+                        <i class="rbp-arrow-light-right-circle-icon"></i>
+                        <p>View Video</p>    
+                      </div>
+                      <div class="icon-playing">
+                        <p>Currently viewing</p>  
+                      </div>
                     </div>
                   </figure>
                   <div class="description">
@@ -321,8 +331,13 @@
                   <figure data-video="kxJi9V3gdP4">
                     <img src="images/brand-pages/laufen/videos/video-thumb-2.jpg" alt="Video 2">
                     <div class="icon">
-                      <i class="rbp-play-icon"></i>
-                      <p>View Video</p>  
+                      <div class="icon-play">
+                        <i class="rbp-arrow-light-right-circle-icon"></i>
+                        <p>View Video</p>    
+                      </div>
+                      <div class="icon-playing">
+                        <p>Currently viewing</p>  
+                      </div>
                     </div>
                   </figure>
                   <div class="description">
@@ -333,7 +348,13 @@
                   <figure data-video="Q-a1dahV-QM">
                     <img src="images/brand-pages/laufen/videos/video-thumb-3.jpg" alt="Video 3">
                     <div class="icon">
-                      <p>Currently viewing</p>  
+                      <div class="icon-play">
+                        <i class="rbp-arrow-light-right-circle-icon"></i>
+                        <p>View Video</p>    
+                      </div>
+                      <div class="icon-playing">
+                        <p>Currently viewing</p>  
+                      </div>
                     </div>
                   </figure>
                   <div class="description">
@@ -363,8 +384,13 @@
                   <figure data-video="lSrYCW2b5d0">
                     <img src="images/brand-pages/laufen/videos/video-thumb-1.jpg" alt="Video 1">
                     <div class="icon">
-                      <i class="rbp-play-icon"></i>
-                      <p>View Video</p>  
+                      <div class="icon-play">
+                        <i class="rbp-arrow-light-right-circle-icon"></i>
+                        <p>View Video</p>    
+                      </div>
+                      <div class="icon-playing">
+                        <p>Currently viewing</p>  
+                      </div>
                     </div>
                   </figure>
                   <div class="description">
@@ -375,8 +401,13 @@
                   <figure data-video="-Ze2fWKP8nA">
                     <img src="images/brand-pages/laufen/videos/video-thumb-2.jpg" alt="Video 2">
                     <div class="icon">
-                      <i class="rbp-play-icon"></i>
-                      <p>View Video</p>  
+                      <div class="icon-play">
+                        <i class="rbp-arrow-light-right-circle-icon"></i>
+                        <p>View Video</p>    
+                      </div>
+                      <div class="icon-playing">
+                        <p>Currently viewing</p>  
+                      </div>
                     </div>
                   </figure>
                   <div class="description">
@@ -387,7 +418,13 @@
                   <figure data-video="jZY2JbqE9xY">
                     <img src="images/brand-pages/laufen/videos/video-thumb-3.jpg" alt="Video 3">
                     <div class="icon">
-                      <p>Currently viewing</p>  
+                      <div class="icon-play">
+                        <i class="rbp-arrow-light-right-circle-icon"></i>
+                        <p>View Video</p>    
+                      </div>
+                      <div class="icon-playing">
+                        <p>Currently viewing</p>  
+                      </div>
                     </div>
                   </figure>
                   <div class="description">
@@ -417,8 +454,13 @@
                   <figure data-video="ag9bSKcrhhI">
                     <img src="images/brand-pages/laufen/videos/video-thumb-1.jpg" alt="Video 1">
                     <div class="icon">
-                      <i class="rbp-play-icon"></i>
-                      <p>View Video</p>  
+                      <div class="icon-play">
+                        <i class="rbp-arrow-light-right-circle-icon"></i>
+                        <p>View Video</p>    
+                      </div>
+                      <div class="icon-playing">
+                        <p>Currently viewing</p>  
+                      </div>
                     </div>
                   </figure>
                   <div class="description">
@@ -429,7 +471,13 @@
                   <figure data-video="LLfW4mJ8BeM">
                     <img src="images/brand-pages/laufen/videos/video-thumb-3.jpg" alt="Video 3">
                     <div class="icon">
-                      <p>Currently viewing</p>  
+                      <div class="icon-play">
+                        <i class="rbp-arrow-light-right-circle-icon"></i>
+                        <p>View Video</p>    
+                      </div>
+                      <div class="icon-playing">
+                        <p>Currently viewing</p>  
+                      </div>
                     </div>
                   </figure>
                   <div class="description">
@@ -459,8 +507,13 @@
                   <figure data-video="LAn6KbehwMI">
                     <img src="images/brand-pages/laufen/videos/video-thumb-1.jpg" alt="Video 1">
                     <div class="icon">
-                      <i class="rbp-play-icon"></i>
-                      <p>View Video</p>  
+                      <div class="icon-play">
+                        <i class="rbp-arrow-light-right-circle-icon"></i>
+                        <p>View Video</p>    
+                      </div>
+                      <div class="icon-playing">
+                        <p>Currently viewing</p>  
+                      </div>
                     </div>
                   </figure>
                   <div class="description">
@@ -490,8 +543,13 @@
                   <figure data-video="G3Hmdq4EEMc">
                     <img src="images/brand-pages/laufen/videos/video-thumb-1.jpg" alt="Video 1">
                     <div class="icon">
-                      <i class="rbp-play-icon"></i>
-                      <p>View Video</p>  
+                      <div class="icon-play">
+                        <i class="rbp-arrow-light-right-circle-icon"></i>
+                        <p>View Video</p>    
+                      </div>
+                      <div class="icon-playing">
+                        <p>Currently viewing</p>  
+                      </div>
                     </div>
                   </figure>
                   <div class="description">

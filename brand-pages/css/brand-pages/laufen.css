@@ -666,6 +666,7 @@
   margin-right: -5px;
 }
 .widget-video-tabs .tabs-content .tabs-videos-slider .video {
+  cursor: pointer;
   padding: 0 5px;
 }
 .widget-video-tabs .tabs-content .tabs-videos-slider .video figure {

@@ -326,7 +326,7 @@
           <div id="one-ilbgno-alessi" class="tab-block">
             <div class="intro">
               <div class="logo">
-                <img src="images/brand-pages/laufen/kartell-by-laufen.png" alt="Kartell by Laufen" width="291">
+                <h1>One Ilbagno Alessi</h1>
               </div>
               <div class="text">
                 Nulla vitae elit libero, a pharetra augue vestibulum id ligula porta felis euismod semper. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.

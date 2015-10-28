@@ -88,7 +88,7 @@
         <!-- Begin: Video Widget-->
         <div class="widget-video">
           <div class="video-slides">
-            <div class="slide">
+            <div class="slide slide-front">
               <figure class="image">
                 <img src="images/brand-pages/laufen/video-1.jpg" alt="Video 1">
               </figure>
@@ -102,11 +102,13 @@
                 </button>  
               </div>
             </div>
-            <div class="slide">
-              <div class="video">
-                <figure class="player">
-                </figure>
-              </div>              
+            <div class="slide slide-video">
+              <div class="video-wrapper">
+                <div class="video">
+                  <figure class="player">
+                  </figure>
+                </div>              
+              </div>
               <button type="button" class="close">
                 <i class="rbp-close-icon"></i>               
               </button>  
@@ -119,7 +121,7 @@
         <!-- Begin: Video Widget-->
         <div class="widget-video">
           <div class="video-slides">
-            <div class="slide">
+            <div class="slide slide-front">
               <figure class="image">
                 <img src="images/brand-pages/laufen/video-2.jpg" alt="Video 2">
               </figure>
@@ -133,11 +135,13 @@
                 </button>  
               </div>
             </div>
-            <div class="slide">
-              <div class="video">
-                <figure class="player">
-                </figure>
-              </div>              
+            <div class="slide slide-video">
+              <div class="video-wrapper">
+                <div class="video">
+                  <figure class="player">
+                  </figure>
+                </div>
+              </div>
               <button type="button" class="close">
                 <i class="rbp-close-icon"></i>               
               </button>  
@@ -153,7 +157,7 @@
   <div class="container bg-grey">
     <!-- Begin: Slider/Carousel Widget Start-->
     <div class="widget-slider carousel">
-      <div class="slides">
+      <div class="slides" data-slides-to-show="3" data-slides-to-scroll="3">
         <div class="slide">
           <figure class="image">
             <img src="images/brand-pages/laufen/brochure-1.jpg" alt="Brochure 1">  
@@ -208,7 +212,7 @@
   </div>
 
 
-  <div class="container">
+  <div class="container designers-header">
     <!-- Begin: HTML Widget-->  
     <div class="widget-html-image">
       <div class="rte">
@@ -285,6 +289,10 @@
     <div class="widget-video-tabs">
       <div class="tabs-wrapper">
         <div class="tabs-list">
+          <div class="active-menu">
+            <div class="text">Kartell by Laufen</div>
+            <div class="show-more"><i class="fa fa-angle-down"></i></div>
+          </div>
           <ul class="list-unstyled">
             <li><a href="#kartell" class="active">Kartell by Laufen</a></li>
             <li><a href="#one-ilbgno-alessi">One Ilbagno Alessi</a></li>

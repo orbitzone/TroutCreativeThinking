@@ -16,7 +16,7 @@
       <div class="container bg-grey">
           <!-- Begin: Slider/Carousel Widget Start-->
           <div class="widget-slider">
-            <div class="slides">
+            <div class="slides" data-slides-to-show="1" data-slides-to-scroll="1">
               <div class="slide">
                 <div class="image">
                   <img src="images/brand-pages/friatek/slide-1.jpg" alt="Slide 1">  
@@ -51,7 +51,7 @@
         <!-- Begin: Video Widget-->  
         <div class="widget-video">
           <div class="video-slides">
-            <div class="slide">
+            <div class="slide slide-front">
               <div class="image">
                 <img src="images/brand-pages/friatek/quality-video-bg.jpg" alt="Video">
               </div>
@@ -65,11 +65,13 @@
                 </button>  
               </div>
             </div>
-            <div class="slide">
-              <div class="video">
-                <figure class="player">
-                </figure>
-              </div>              
+            <div class="slide slide-video">
+              <div class="video-wrapper">
+                <div class="video">
+                  <figure class="player">
+                  </figure>
+                </div>
+              </div>
               <button type="button" class="close">
                 <i class="rbp-close-icon"></i>               
               </button>  

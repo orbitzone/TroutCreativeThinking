@@ -220,8 +220,7 @@
 }
 /* Dots */
 .slick-dots {
-  position: absolute;
-  bottom: -45px;
+  position: relative;
   display: block;
   width: 100%;
   padding: 0;
@@ -260,14 +259,14 @@
 }
 .slick-dots li button:before {
   font-family: 'FontAwesome';
-  font-size: 6px;
+  font-size: 8px;
   line-height: 20px;
   position: absolute;
   top: 0;
   left: 0;
   width: 20px;
   height: 20px;
-  content: '•';
+  content: '';
   text-align: center;
   opacity: .25;
   color: black;
@@ -414,19 +413,19 @@
 }
 .widget-slider .slick-slider .slick-prev {
   left: 0;
-  -webkit-transform: translateY(-50%) translateX(-100%);
-  -moz-transform: translateY(-50%) translateX(-100%);
-  -ms-transform: translateY(-50%) translateX(-100%);
-  -o-transform: translateY(-50%) translateX(-100%);
-  transform: translateY(-50%) translateX(-100%);
+  -webkit-transform: translateY(-50%) translateX(0);
+  -moz-transform: translateY(-50%) translateX(0);
+  -ms-transform: translateY(-50%) translateX(0);
+  -o-transform: translateY(-50%) translateX(0);
+  transform: translateY(-50%) translateX(0);
 }
 .widget-slider .slick-slider .slick-next {
   right: 0;
-  -webkit-transform: translateY(-50%) translateX(100%);
-  -moz-transform: translateY(-50%) translateX(100%);
-  -ms-transform: translateY(-50%) translateX(100%);
-  -o-transform: translateY(-50%) translateX(100%);
-  transform: translateY(-50%) translateX(100%);
+  -webkit-transform: translateY(-50%) translateX(0);
+  -moz-transform: translateY(-50%) translateX(0);
+  -ms-transform: translateY(-50%) translateX(0);
+  -o-transform: translateY(-50%) translateX(0);
+  transform: translateY(-50%) translateX(0);
 }
 .widget-slider.carousel .slick-slider {
   max-width: 650px;
@@ -539,13 +538,14 @@
   transform: translateX(-50%) translateY(-50%);
   color: black;
 }
+.widget-video .slick-slider .slick-slide .video-wrapper {
+  margin: 0 auto;
+  padding-right: 40px;
+}
 .widget-video .slick-slider .slick-slide .video {
-  padding: 20px;
-  text-align: center;
   position: relative;
   padding-bottom: 56.25%;
-  height: 0;
-  margin: 30px 30px 0;
+  height: 100%;
 }
 .widget-video .slick-slider .slick-slide .video iframe {
   position: absolute;
@@ -556,8 +556,8 @@
 }
 .widget-video .slick-slider .slick-slide button.close {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 10px;
+  right: 10px;
   border: none;
   background: none;
   outline: none;
@@ -567,10 +567,11 @@
   -ms-appearance: none;
   -o-appearance: none;
   appearance: none;
+  font-size: 8px;
   text-shadow: none;
 }
 .widget-video .slick-slider .slick-slide button.close i {
-  font-size: 30px;
+  font-size: 24px;
   color: black;
 }
 .widget-video .play {
@@ -585,8 +586,13 @@
   appearance: none;
 }
 .widget-video .play i {
-  font-size: 50px;
+  font-size: 30px;
   color: black;
+}
+@media (min-width: 768px) {
+  .widget-video .play i {
+    font-size: 50px;
+  }
 }
 .widget-video .play .label {
   display: block;
@@ -760,8 +766,13 @@
   margin: 0;
 }
 .widget-video-tabs .tabs-content .tabs-videos-slider .video figure .icon i {
-  font-size: 40px;
+  font-size: 30px;
   line-height: 1;
+}
+@media (min-width: 768px) {
+  .widget-video-tabs .tabs-content .tabs-videos-slider .video figure .icon i {
+    font-size: 40px;
+  }
 }
 .widget-video-tabs .tabs-content .tabs-videos-slider .video .description {
   font-weight: 700;
@@ -769,6 +780,7 @@
 }
 .widget-video-tabs .tabs-list {
   position: relative;
+  margin-bottom: 20px;
 }
 @media (min-width: 768px) {
   .widget-video-tabs .tabs-list {
@@ -786,4 +798,38 @@
 .widget-video-tabs .tabs-list a.active {
   background: #e6e7e8;
   font-weight: 700;
+}
+.widget-video-tabs .tabs-list .active-menu {
+  position: relative;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .widget-video-tabs .tabs-list .active-menu {
+    display: none;
+  }
+}
+.widget-video-tabs .tabs-list .active-menu .text {
+  text-align: left;
+  padding: 20px;
+  background: #e6e7e8;
+}
+.widget-video-tabs .tabs-list .active-menu .show-more {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 20px;
+  background: black;
+}
+.widget-video-tabs .tabs-list .active-menu .show-more i {
+  color: white;
+  font-size: 20px;
+}
+.widget-video-tabs .tabs-list ul {
+  display: none;
+}
+@media (min-width: 768px) {
+  .widget-video-tabs .tabs-list ul {
+    display: block !important;
+  }
 }

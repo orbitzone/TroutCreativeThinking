@@ -20,7 +20,4 @@ In the Friatek and Laufen pages we are using a web font from typography.com, you
 
 <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6958312/662428/css/fonts.css" />
 
-We've noticed that Reece website has a header and footer container of 1200px wide, but bootstrap is configured as 1170px, if you want to match your layout with bootstrap we recommend to recompile the bootstrap css and change the 1170px container to be 1200px, or change your header and footer container to be bootstrap.
-
-To alter the bootstrap layout you need to edit the variables.less file in bootstrap's folder. Change the line 300  from 1200px to 1230px, this is to keep the margins when the screen is 1200px wide. Then on line 341 change 1140px to 1170px, this will add the gutter width of 30 and it will set the container to 1200px.
-
+The Brand pages designs were done following Bootstrap 3.3.2 grid. The container is 1170px wide with 30px gutter, the container has a padding of 15px on each side. Reece website has a header and footer container of 1200px that does not match bootstrap grid, it is recommended to pick one container and match all the elements to it.

@@ -1561,9 +1561,9 @@ pre code {
     width: 970px;
   }
 }
-@media (min-width: 1230px) {
+@media (min-width: 1200px) {
   .container {
-    width: 1200px;
+    width: 1170px;
   }
 }
 .container-fluid {
@@ -2054,7 +2054,7 @@ pre code {
     margin-left: 0%;
   }
 }
-@media (min-width: 1230px) {
+@media (min-width: 1200px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
   }
@@ -6410,7 +6410,7 @@ button.close {
     display: inline-block !important;
   }
 }
-@media (min-width: 992px) and (max-width: 1229px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .visible-md,
   .visible-desktop {
     display: block !important;
@@ -6426,22 +6426,22 @@ button.close {
     display: table-cell !important;
   }
 }
-@media (min-width: 992px) and (max-width: 1229px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .visible-md-block {
     display: block !important;
   }
 }
-@media (min-width: 992px) and (max-width: 1229px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .visible-md-inline {
     display: inline !important;
   }
 }
-@media (min-width: 992px) and (max-width: 1229px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .visible-md-inline-block {
     display: inline-block !important;
   }
 }
-@media (min-width: 1230px) {
+@media (min-width: 1200px) {
   .visible-lg,
   .visible-desktop {
     display: block !important;
@@ -6457,17 +6457,17 @@ button.close {
     display: table-cell !important;
   }
 }
-@media (min-width: 1230px) {
+@media (min-width: 1200px) {
   .visible-lg-block {
     display: block !important;
   }
 }
-@media (min-width: 1230px) {
+@media (min-width: 1200px) {
   .visible-lg-inline {
     display: inline !important;
   }
 }
-@media (min-width: 1230px) {
+@media (min-width: 1200px) {
   .visible-lg-inline-block {
     display: inline-block !important;
   }
@@ -6483,13 +6483,13 @@ button.close {
     display: none !important;
   }
 }
-@media (min-width: 992px) and (max-width: 1229px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .hidden-md,
   .hidden-desktop {
     display: none !important;
   }
 }
-@media (min-width: 1230px) {
+@media (min-width: 1200px) {
   .hidden-lg,
   .hidden-desktop {
     display: none !important;

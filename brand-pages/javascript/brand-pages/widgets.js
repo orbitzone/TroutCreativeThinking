@@ -258,6 +258,7 @@ var widgets = {
 				m=m+1;				
 			});
 			$(this).find('.active-menu .show-more').on('click',function(){
+				$(this).toggleClass('active');
 				$(this).parent().parent().find('ul').slideToggle();
 			});
 			var container = $(this);

@@ -527,6 +527,9 @@
   transform: translateX(-50%) translateY(-50%);
   color: #ffffff;
 }
+.widget-video .slick-slider .slick-slide button.play {
+  line-height: 1;
+}
 .widget-video .slick-slider .slick-slide button.play .text {
   margin: 0 auto;
 }
@@ -761,6 +764,7 @@
   -o-transform: translateY(-50%) translateX(-50%);
   transform: translateY(-50%) translateX(-50%);
   color: white;
+  width: 100%;
 }
 .widget-video-tabs .tabs-content .tabs-videos-slider .video figure .icon .icon-playing {
   display: none;

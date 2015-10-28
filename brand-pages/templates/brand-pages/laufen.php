@@ -321,7 +321,7 @@
                 <div class="video">
                   <figure data-video="khITBQJcn2U">
                     <img src="images/brand-pages/laufen/videos/video-thumb-1.jpg" alt="Video 1">
-                    <div class="icon">
+                    <div class="icon text">
                       <div class="icon-play">
                         <i class="rbp-arrow-light-right-circle-icon"></i>
                         <p>View Video</p>    
@@ -338,7 +338,7 @@
                 <div class="video">
                   <figure data-video="kxJi9V3gdP4">
                     <img src="images/brand-pages/laufen/videos/video-thumb-2.jpg" alt="Video 2">
-                    <div class="icon">
+                    <div class="icon text">
                       <div class="icon-play">
                         <i class="rbp-arrow-light-right-circle-icon"></i>
                         <p>View Video</p>    
@@ -355,7 +355,7 @@
                 <div class="video">
                   <figure data-video="Q-a1dahV-QM">
                     <img src="images/brand-pages/laufen/videos/video-thumb-3.jpg" alt="Video 3">
-                    <div class="icon">
+                    <div class="icon text">
                       <div class="icon-play">
                         <i class="rbp-arrow-light-right-circle-icon"></i>
                         <p>View Video</p>    
@@ -391,7 +391,7 @@
                 <div class="video">
                   <figure data-video="lSrYCW2b5d0">
                     <img src="images/brand-pages/laufen/videos/video-thumb-1.jpg" alt="Video 1">
-                    <div class="icon">
+                    <div class="icon text">
                       <div class="icon-play">
                         <i class="rbp-arrow-light-right-circle-icon"></i>
                         <p>View Video</p>    
@@ -408,7 +408,7 @@
                 <div class="video">
                   <figure data-video="-Ze2fWKP8nA">
                     <img src="images/brand-pages/laufen/videos/video-thumb-2.jpg" alt="Video 2">
-                    <div class="icon">
+                    <div class="icon text">
                       <div class="icon-play">
                         <i class="rbp-arrow-light-right-circle-icon"></i>
                         <p>View Video</p>    
@@ -425,7 +425,7 @@
                 <div class="video">
                   <figure data-video="jZY2JbqE9xY">
                     <img src="images/brand-pages/laufen/videos/video-thumb-3.jpg" alt="Video 3">
-                    <div class="icon">
+                    <div class="icon text">
                       <div class="icon-play">
                         <i class="rbp-arrow-light-right-circle-icon"></i>
                         <p>View Video</p>    
@@ -461,7 +461,7 @@
                 <div class="video">
                   <figure data-video="ag9bSKcrhhI">
                     <img src="images/brand-pages/laufen/videos/video-thumb-1.jpg" alt="Video 1">
-                    <div class="icon">
+                    <div class="icon text">
                       <div class="icon-play">
                         <i class="rbp-arrow-light-right-circle-icon"></i>
                         <p>View Video</p>    
@@ -478,7 +478,7 @@
                 <div class="video">
                   <figure data-video="LLfW4mJ8BeM">
                     <img src="images/brand-pages/laufen/videos/video-thumb-3.jpg" alt="Video 3">
-                    <div class="icon">
+                    <div class="icon text">
                       <div class="icon-play">
                         <i class="rbp-arrow-light-right-circle-icon"></i>
                         <p>View Video</p>    
@@ -514,7 +514,7 @@
                 <div class="video">
                   <figure data-video="LAn6KbehwMI">
                     <img src="images/brand-pages/laufen/videos/video-thumb-1.jpg" alt="Video 1">
-                    <div class="icon">
+                    <div class="icon text">
                       <div class="icon-play">
                         <i class="rbp-arrow-light-right-circle-icon"></i>
                         <p>View Video</p>    
@@ -550,7 +550,7 @@
                 <div class="video">
                   <figure data-video="G3Hmdq4EEMc">
                     <img src="images/brand-pages/laufen/videos/video-thumb-1.jpg" alt="Video 1">
-                    <div class="icon">
+                    <div class="icon text">
                       <div class="icon-play">
                         <i class="rbp-arrow-light-right-circle-icon"></i>
                         <p>View Video</p>    

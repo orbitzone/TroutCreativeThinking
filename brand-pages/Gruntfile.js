@@ -30,6 +30,7 @@ module.exports = function(grunt) {
               // setup fontawesome less files
               {expand: true, cwd: 'bower_components/fontawesome/less', src: ['**'], dest: 'less/font-awesome'},
               {expand: true, cwd: 'bower_components/matchHeight', src: ['*.matchHeight-min.js'], dest: 'javascript'},
+              {expand: true, cwd: 'bower_components/Flowtype.js/', src: ['*.js'], dest: 'javascript'},
               {expand: true, cwd: 'bower_components/slick-carousel/slick', src: ['*.min.js'], dest: 'javascript'}
           ]
       }

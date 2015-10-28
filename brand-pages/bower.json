@@ -25,6 +25,7 @@
   },
   "devDependencies": {
     "slick-carousel": "~1.5.8",
-    "matchHeight": "matchheight#~0.6.0"
+    "matchHeight": "matchheight#~0.6.0",
+    "Flowtype.js": "~1.1.0"
   }
 }

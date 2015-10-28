@@ -6,6 +6,9 @@ var player = {
 		if (typeof(YT) == 'undefined' || typeof(YT.Player) == 'undefined') {
 			window.onYouTubeIframeAPIReady = function() {
 				player.obj[container] = player.loadPlayer(container, videoId);				
+				if(player.autoplay){
+  				player.play(container);
+  			}
       };
       //This code loads the IFrame Player API code asynchronously.
 			var tag = document.createElement('script');
@@ -17,6 +20,9 @@ var player = {
     		var video = player.obj[container];
   			if(video.getVideoData().video_id != videoId){
   				player.obj[container].loadVideoById(videoId);     
+  				if(player.autoplay){
+    				player.play(container);
+    			}
   			}else{
   				if(player.autoplay){
     				player.play(container);
@@ -27,14 +33,7 @@ var player = {
     	}
     }
 	},
-	loadPlayer: function(container, videoId, autoplay){
-	if(typeof autoplay === "undefined"){
-		autoplay = false;
-		player.autoplay = false;
-	}else{
-		player.autoplay = true;
-	}
-	 
+	loadPlayer: function(container, videoId){
 	 player.active = container;
 	 return new YT.Player(container, {
       videoId: videoId,
@@ -42,6 +41,8 @@ var player = {
       height: 444,
       playerVars: {
         autoplay: player.autoplay,
+        showinfo: 0,
+        modestbranding: 0,
         rel: 0
         /*controls: 0,
         modestbranding: 1,
@@ -53,8 +54,6 @@ var player = {
       		if(player.autoplay == true){
       			player.play(container);
       		}
-      		console.log(container);
-      		//$('#'+container).parent().fitVids();
       		$(window).resize();      		
       	},
       	'onStateChange': function(event){
@@ -73,7 +72,9 @@ var player = {
 	},
 	play: function(id){
 		var video = player.obj[id];
-		video.playVideo();
+		if(typeof video.playVideo !== "undefined"){
+			video.playVideo();
+		}
 	},
 	stop: function(id){
 		if(typeof id !== "undefined"){
@@ -98,6 +99,32 @@ var widgets = {
 		widgets.tabsWidget();
 		widgets.sliderWidget();
 		widgets.bigButtonWidget();
+
+		$('.widget-slider, .widget-video').each(function(){
+			var $text = $(this).find('.text');
+			$text.data('font-size',$(this).find('.text').css('font-size'));
+			$text.attr('data-width',$(this).find('.text').width());
+			var $icon = $(this).find('i');
+			$icon.each(function(){
+				$(this).data('font-size',$(this).css('font-size'));
+			});
+		});
+		$(window).on('resize', function(){
+			var ratio = $('.brand-pages .container').first().outerWidth()/1170;
+			$('.widget-slider, .widget-video').each(function(){
+				var $text = $(this).find('.text');
+				if($text.length > 0){
+					var fontSize = parseInt($text.data('font-size')) * ratio;
+					$(this).find('.text').css({
+						'font-size': fontSize							
+					}).width(parseInt($text.data('width')) * ratio);									
+				}
+				var $icon = $(this).find('i');
+				$icon.each(function(){
+					$(this).css({'font-size':parseInt($(this).data('font-size')) * ratio});
+				});
+			});
+		}).resize();		
 	},
 	bigButtonWidget: function(){
 			$('.widget-big-button').matchHeight();			
@@ -121,31 +148,7 @@ var widgets = {
 				 		dots: true
 				 	}
 				 }]
-			});
-			var ratio = $('.brand-pages .container').first().outerWidth()/1170;
-			var $text = $(this).find('.text');
-			$text.data('font-size',$(this).find('.text').css('font-size'));
-			$text.attr('data-width',$(this).find('.text').width());
-			var $icon = $(this).find('i');
-			$icon.each(function(){
-				$(this).data('font-size',$(this).css('font-size'));
-			});				
-		});
-		$(window).on('resize', function(){
-			$('.slide').each(function(){
-				var ratio = $('.brand-pages .container').first().outerWidth()/1170;
-				var $text = $(this).find('.text');
-				if($text.length > 0){
-					var fontSize = parseInt($text.data('font-size')) * ratio;
-					$(this).find('.text').css({
-						'font-size': fontSize							
-					}).width(parseInt($text.data('width')) * ratio);									
-				}
-				var $icon = $(this).find('i');
-					$icon.each(function(){
-						$(this).css({'font-size':parseInt($(this).data('font-size')) * ratio});
-					});
-			});
+			});			
 		});		
 	},
 	videoWidget: function(){
@@ -153,7 +156,8 @@ var widgets = {
 			 arrows: false,
 			 dots: false,
 			 infinite: false,
-			 swipe: false
+			 swipe: false,
+			 adaptiveHeight: true
 		});
 		var m = 0;
 		$('.widget-video').each(function(){
@@ -164,27 +168,20 @@ var widgets = {
 				var video = $(this).data('video');
 				parent.slick('slickNext');
 				if(video){
+					player.autoplay = true;
 					player.init(player_container,video);
 				}
 			});
+			
 			$(this).find('.video-slides').on('setPosition', function(slick){
-				var containerHeight = $(this).find('.slide-front').outerHeight();
-				$(this).find('.slide-video').height(containerHeight);
-
-				var width = ( containerHeight * 16/9);
-				if(width > $(this).width()){
-					width = $(this).width() - 40;
-					height = containerHeight;					
+				$(this).find('.slide-video').height('auto');
+				var mainHeight = $(this).find('.slide-front').height();
+				if(mainHeight > $(this).find('.slide-video').height()){
+					$(this).find('.slide-video').height(mainHeight);
+					$(this).find('.video-wrapper').addClass('centered');
 				}else{
-					width = $(this).width() - 40;
-					height = ( width * 9/16);
-					if(height > containerHeight){
-						height = containerHeight;
-						width = containerHeight * 16/9;
-					}
-				}
-				$(this).find('.video-wrapper').width(width);
-				$(this).find('.video-wrapper').height(height);
+					$(this).find('.video-wrapper').removeClass('centered');
+				}				
 			});
 			$(this).find('.close').on('click', function(){
 				player.stop(player_container);
@@ -257,4 +254,6 @@ var widgets = {
 		$('.widget-video-tabs').find('.tab-block.active').find('.video').first().trigger('click');
 	}
 };
+$(function(){
 	widgets.init();
+});	

@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0">
-    <title>Reece BS3 Template</title>
+    <title>Laufen</title>
     <link rel="shortcut icon" href="images/icons/favicon.ico">
     <link rel="apple-touch-icon" href="images/icons/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-touch-icon-72x72.png">
@@ -41,6 +41,7 @@
     <script type="text/javascript" src="javascript/slick.min.js"></script>
     <script type="text/javascript" src="javascript/reece-ocnav.js"></script>
     <script type="text/javascript" src="javascript/jquery.matchHeight-min.js"></script>
+    <script type="text/javascript" src="javascript/flowtype.js"></script>
     <script type="text/javascript" src="javascript/brand-pages/widgets.js"></script>
     <script type="text/javascript" src="javascript/brand-pages/laufen.js"></script>
   </body>

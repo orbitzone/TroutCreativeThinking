@@ -753,6 +753,14 @@
 .widget-video-tabs .tabs-content .tabs-videos-slider .video figure {
   position: relative;
   margin-bottom: 10px;
+  overflow: hidden;
+}
+.widget-video-tabs .tabs-content .tabs-videos-slider .video figure img {
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -ms-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out;
 }
 .widget-video-tabs .tabs-content .tabs-videos-slider .video figure .icon {
   position: absolute;
@@ -784,6 +792,16 @@
 .widget-video-tabs .tabs-content .tabs-videos-slider .video .description {
   font-weight: 700;
   text-align: left;
+}
+.widget-video-tabs .tabs-content .tabs-videos-slider .video:hover figure img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.widget-video-tabs .tabs-content .tabs-videos-slider .video:hover .icon-play p {
+  text-decoration: underline;
 }
 .widget-video-tabs .tabs-list {
   position: relative;
@@ -881,6 +899,10 @@ div.brand-pages .widget-video .slick-slider .slick-slide.slide-video {
 }
 div.brand-pages .widget-video .slick-slider .slick-slide button.close i {
   color: white;
+}
+div.brand-pages .widget-video .slick-slider .slick-slide .play:hover .text,
+div.brand-pages .widget-video .slick-slider .slick-slide .play:hover .label {
+  text-decoration: underline;
 }
 div.brand-pages .designers-header {
   margin-bottom: 0;

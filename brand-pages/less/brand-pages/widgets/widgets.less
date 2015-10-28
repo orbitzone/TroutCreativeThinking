@@ -404,10 +404,13 @@
 			.video{
 				cursor: pointer;
 				padding: 0 5px;
-
 				figure{
 					position: relative;
 					margin-bottom: 10px;
+					overflow: hidden;
+					img{
+						.transition(all 1s ease-out);
+					}					
 					.icon{
 						position: absolute;
 						top: 50%;
@@ -433,6 +436,18 @@
 				.description{
 					font-weight: 700;
 					text-align: left;
+				}
+				&:hover{
+					figure{
+						img{
+							.transform(scale(1.1));
+						}
+					}
+					.icon-play{
+						p{
+							text-decoration: underline;
+						}
+					}		
 				}
 			}
 		}

@@ -57,6 +57,15 @@ div.brand-pages{
 		padding: 18px 38px;
 		font-size: 20px;
 	}
+	.widget-slider{
+		.slick-slider{
+			.slick-slide{
+				.text{
+					font-weight: 600;
+				}
+			}
+		}		
+	}
 	.widget-html-image{
 		h2,
 		h3{
@@ -104,10 +113,26 @@ div.brand-pages{
 		max-width: 730px;
 		margin: 0 auto;
 	}
+	.trio{
+		h3{
+			a{
+				&:hover{
+					color: black;
+				}
+			}
+		}
+	}
 	.friamat-container{
 		padding: 40px 20px;
 		@media (min-width: @screen-md){
 			padding: 40px 90px;
+		}
+		h2{
+			a{
+				&:hover{
+					color: @h1Color;
+				}
+			}
 		}		
 	}
 }

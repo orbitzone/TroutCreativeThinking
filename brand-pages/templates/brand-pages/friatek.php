@@ -18,20 +18,24 @@
           <div class="widget-slider">
             <div class="slides" data-slides-to-show="1" data-slides-to-scroll="1">
               <div class="slide">
-                <div class="image">
-                  <img src="images/brand-pages/friatek/slide-1.jpg" alt="Slide 1">  
-                </div>
-                <div class="text">
-                 The global <br>leaders in <br>electrofusion <br>technology
-                </div>
+                <a href="#">
+                  <div class="image">
+                    <img src="images/brand-pages/friatek/slide-1.jpg" alt="Slide 1">  
+                  </div>
+                  <div class="text">
+                   The global <br>leaders in <br>electrofusion <br>technology
+                  </div>
+                </a>
               </div>
               <div class="slide">
-                <div class="image">
-                  <img src="images/brand-pages/friatek/slide-1.jpg" alt="Slide 1">  
-                </div>
-                <div class="text">
-                  The global <br>leaders in <br>electrofusion <br>technology
-                </div>
+                <a href="#"> <!-- The link should be configurable in the widget settings, add when necessary -->
+                  <div class="image">
+                    <img src="images/brand-pages/friatek/slide-1.jpg" alt="Slide 1">  
+                  </div>
+                  <div class="text">
+                    The global <br>leaders in <br>electrofusion <br>technology
+                  </div>
+                </a>
               </div>
             </div>  
           </div>             
@@ -80,13 +84,15 @@
         </div>
         <!-- End: Video Widget-->
       </div>
-      <div class="container">
+      <div class="container trio">
         <div class="row">
           <div class="col-sm-4">
             <!-- Begin: HTML Widget-->  
             <div class="widget-html-image">
               <div class="image">
-                <img src="images/brand-pages/friatek/exposed-heating.jpg" alt="Exposed heating coil design">  
+                <a href="#">
+                  <img src="images/brand-pages/friatek/exposed-heating.jpg" alt="Exposed heating coil design">
+                </a>
               </div>
               <div class="rte">
                 <h3><a href="#">Exposed heating coil design</a></h3>
@@ -99,7 +105,9 @@
             <!-- Begin: HTML Widget-->  
             <div class="widget-html-image">
               <div class="image">
-                <img src="images/brand-pages/friatek/longest-coupler.jpg" alt="Longest coupler length on the market">  
+                <a href="#">
+                  <img src="images/brand-pages/friatek/longest-coupler.jpg" alt="Longest coupler length on the market">
+                </a>
               </div>
               <div class="rte">
                 <h3><a href="#">Longest coupler length on the market</a></h3>
@@ -112,7 +120,9 @@
             <!-- Begin: HTML Widget-->  
             <div class="widget-html-image">
               <div class="image">
-                <img src="images/brand-pages/friatek/full-range.jpg" alt="Coupler">  
+                <a href="#">
+                  <img src="images/brand-pages/friatek/full-range.jpg" alt="Coupler">
+                </a>
               </div>
               <div class="rte">
                 <h3><a href="#">A full range of couplers for every application</a></h3>
@@ -140,7 +150,9 @@
             <!-- Begin: HTML Widget-->  
             <div class="widget-html-image">
               <div class="image">
-                <img src="images/brand-pages/friatek/friamat.png" width="347" alt="Friamat">  
+                <a href="#">
+                  <img src="images/brand-pages/friatek/friamat.png" width="347" alt="Friamat">  
+                </a>
               </div>              
             </div>
             <!-- End: HTML Widget-->

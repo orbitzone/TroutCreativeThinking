@@ -129,8 +129,10 @@ var widgets = {
 					$(this).find('.text').css({
 						'font-size': fontSize							
 					});
-					if($(this).hasClass('widget-slider')){
-						$(this).find('.text').width(parseInt($text.data('width')) * ratio);									
+					if($(this).hasClass('widget-slider widget-video')){
+						if($(this).find('.text').parent().prop('tagName').toLowerCase() != "button"){
+							$(this).find('.text').width(parseInt($text.data('width')) * ratio);					
+						}				
 					}
 				}
 				var $icon = $(this).find('i');

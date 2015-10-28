@@ -33,6 +33,7 @@
 	font-weight: @buttonFontWeight;
 	border: 1px solid @buttonBorderColor;
 	color: @buttonColor;
+	text-align: center;
 	&:hover{
 		border: 1px solid @buttonHoverBorderColor;
 		color: @buttonHoverColor;
@@ -142,6 +143,7 @@
 					opacity: 0;
 					top: inherit;
 					left: inherit;
+					text-align: center;
 					.transform(none);
 					.transition(all 1s ease-out);
 				}
@@ -195,6 +197,11 @@
 				.transform(translateX(-50%) translateY(-50%));
 				color: @videoCaptionColor;
 			}
+			button.play{
+				.text{
+					margin: 0 auto;
+				}
+			}
 			.video-wrapper{
 				margin: 0 auto;
 				&.centered{
@@ -215,7 +222,7 @@
 			    height: 100%;
 			    left: 0;
 			    top: 0;
-				}
+				}				
 			}
 			button.close{
 				position: absolute;

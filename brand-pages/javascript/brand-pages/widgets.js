@@ -105,23 +105,42 @@ var widgets = {
 			$text.data('font-size',$(this).find('.text').css('font-size'));
 			$text.attr('data-width',$(this).find('.text').width());
 			var $icon = $(this).find('i');
+			var $label = $(this).find('.label');
 			$icon.each(function(){
+				$(this).data('font-size',$(this).css('font-size'));
+			});
+			$label.each(function(){
 				$(this).data('font-size',$(this).css('font-size'));
 			});
 		});
 		$(window).on('resize', function(){
 			var ratio = $('.brand-pages .container').first().outerWidth()/1170;
-			$('.widget-slider, .widget-video').each(function(){
+			$('.widget-slider, .widget-video').not('.carousel').each(function(){
 				var $text = $(this).find('.text');
 				if($text.length > 0){
 					var fontSize = parseInt($text.data('font-size')) * ratio;
+					if(fontSize < 16){
+						fontSize = 16;
+					}
 					$(this).find('.text').css({
 						'font-size': fontSize							
 					}).width(parseInt($text.data('width')) * ratio);									
 				}
 				var $icon = $(this).find('i');
 				$icon.each(function(){
-					$(this).css({'font-size':parseInt($(this).data('font-size')) * ratio});
+					var fontSize = ($(this).data('font-size') * ratio);
+					if( fontSize < 16){
+						fontSize = 16;
+					}
+					$(this).css({'font-size':fontSize});	
+				});
+				var $label = $(this).find('.label');
+				$label.each(function(){
+					var fontSize = ($(this).data('font-size') * ratio);
+					if( fontSize < 16){
+						fontSize = 16;
+					}
+					$(this).css({'font-size':fontSize});	
 				});
 			});
 		}).resize();		

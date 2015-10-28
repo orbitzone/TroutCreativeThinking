@@ -305,6 +305,7 @@
   font-weight: 700;
   border: 1px solid black;
   color: black;
+  text-align: center;
 }
 .widget-link:hover {
   border: 1px solid black;
@@ -452,6 +453,7 @@
   opacity: 0;
   top: inherit;
   left: inherit;
+  text-align: center;
   -webkit-transform: none;
   -moz-transform: none;
   -ms-transform: none;
@@ -524,6 +526,9 @@
   -o-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   color: black;
+}
+.widget-video .slick-slider .slick-slide button.play .text {
+  margin: 0 auto;
 }
 .widget-video .slick-slider .slick-slide .video-wrapper {
   margin: 0 auto;

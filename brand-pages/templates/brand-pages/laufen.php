@@ -93,10 +93,10 @@
                 <img src="images/brand-pages/laufen/video-1.jpg" alt="Video 1">
               </figure>
               <div class="slide-content">
-                <div class="text">
-                  <p><b>Bathroom<br/>Culture</b></p>
-                </div>
                 <button type="button" class="play" data-video="RP2xdsxPWbA">
+                  <div class="text">
+                    <p><b>Bathroom<br/>Culture</b></p>
+                  </div>
                   <i class="rbp-arrow-light-right-circle-icon"></i>
                   <span class="label">View video</span>  
                 </button>  
@@ -126,10 +126,10 @@
                 <img src="images/brand-pages/laufen/video-2.jpg" alt="Video 2">
               </figure>
               <div class="slide-content">
-                <div class="text">
-                  <p><b>Laufen designed<br/>like no other</b></p>  
-                </div>
                 <button type="button" class="play" data-video="RP2xdsxPWbA">
+                  <div class="text">
+                    <p><b>Laufen designed<br/>like no other</b></p>  
+                  </div>
                   <i class="rbp-arrow-light-right-circle-icon"></i>
                   <span class="label">View video</span>  
                 </button>  

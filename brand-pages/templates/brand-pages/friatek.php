@@ -56,10 +56,10 @@
                 <img src="images/brand-pages/friatek/quality-video-bg.jpg" alt="Video">
               </div>
               <div class="slide-content">
-                <div class="text">
-                  <p><b>Quality</b><br/>Since<br/>1863</p>  
-                </div>
                 <button type="button" class="play" data-video="RP2xdsxPWbA">
+                  <div class="text">
+                    <p><b>Quality</b><br/>Since<br/>1863</p>  
+                  </div>
                   <i class="rbp-play-icon"></i>
                   <span class="label">View video</span>  
                 </button>  

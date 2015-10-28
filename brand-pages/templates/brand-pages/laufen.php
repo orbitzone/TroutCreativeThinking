@@ -160,7 +160,9 @@
       <div class="slides" data-slides-to-show="3" data-slides-to-scroll="3">
         <div class="slide">
           <figure class="image">
-            <img src="images/brand-pages/laufen/brochure-1.jpg" alt="Brochure 1">  
+            <a href="#">
+              <img src="images/brand-pages/laufen/brochure-1.jpg" alt="Brochure 1">  
+            </a>
           </figure>
           <div class="text">
            <a href="#" class="widget-link">Download brochure</a>
@@ -168,7 +170,9 @@
         </div>
         <div class="slide">
           <figure class="image">
-            <img src="images/brand-pages/laufen/brochure-2.jpg" alt="Brochure 2">  
+            <a href="#">
+              <img src="images/brand-pages/laufen/brochure-2.jpg" alt="Brochure 2">  
+            </a>
           </figure>
           <div class="text">
             <a href="#" class="widget-link">Download brochure</a>
@@ -176,7 +180,9 @@
         </div>
         <div class="slide">
           <figure class="image">
-            <img src="images/brand-pages/laufen/brochure-3.jpg" alt="Brochure 3">  
+            <a href="#">
+              <img src="images/brand-pages/laufen/brochure-3.jpg" alt="Brochure 3">  
+            </a>
           </figure>
           <div class="text">
             <a href="#" class="widget-link">Download brochure</a>
@@ -184,7 +190,9 @@
         </div>
         <div class="slide">
           <figure class="image">
-            <img src="images/brand-pages/laufen/brochure-1.jpg" alt="Brochure 1">  
+            <a href="#">
+              <img src="images/brand-pages/laufen/brochure-1.jpg" alt="Brochure 1">  
+            </a>
           </figure>
           <div class="text">
            <a href="#" class="widget-link">Download brochure</a>
@@ -192,7 +200,9 @@
         </div>
         <div class="slide">
           <figure class="image">
-            <img src="images/brand-pages/laufen/brochure-2.jpg" alt="Brochure 2">  
+            <a href="#">
+              <img src="images/brand-pages/laufen/brochure-2.jpg" alt="Brochure 2">  
+            </a>
           </figure>
           <div class="text">
             <a href="#" class="widget-link">Download brochure</a>
@@ -200,7 +210,9 @@
         </div>
         <div class="slide">
           <figure class="image">
-            <img src="images/brand-pages/laufen/brochure-3.jpg" alt="Brochure 3">  
+            <a href="#">
+              <img src="images/brand-pages/laufen/brochure-3.jpg" alt="Brochure 3">  
+            </a>
           </figure>
           <div class="text">
             <a href="#" class="widget-link">Download brochure</a>

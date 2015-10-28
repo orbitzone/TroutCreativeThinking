@@ -137,6 +137,9 @@ var widgets = {
 				if($icon.length > 0){
 					$icon.each(function(){
 						var fontSize = (parseInt($(this).data('font-size')) * ratio);
+						if(fontSize < 12){
+							fontSize = 12;
+						}
 						$(this).css({'font-size':fontSize});	
 					});
 				}
@@ -144,6 +147,9 @@ var widgets = {
 				if($label.length > 0){
 					$label.each(function(){
 						var fontSize = (parseInt($(this).data('font-size')) * ratio);
+						if(fontSize < 12){
+							fontSize = 12;
+						}
 						$(this).css({'font-size':fontSize});	
 					});
 				}

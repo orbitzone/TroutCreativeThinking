@@ -275,11 +275,14 @@
 	a{
 		color: @bigButtonColor;
 		.text{
-			font-size: @bigButtonFontSize;
+			font-size: @bigButtonFontSize * 0.7;
 			text-transform: @bigButtonTextTransform;
 			font-weight: @bigButtonFontWeight;
 			text-decoration: @bigButtonTextDecoration;
 			line-height: 1;
+			@media (min-width: @screen-sm){
+				font-size: @bigButtonFontSize;
+			}
 		}
 		.icon{
 			display: block;

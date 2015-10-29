@@ -6,9 +6,17 @@ div.brand-pages{
 	h1,h2,h3,h4,h5,h6,a,button,input,textarea,select,p{
 		font-family: "Gotham A", "Gotham B";
 		-webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;	
-  line-height: 1;
+	  -moz-osx-font-smoothing: grayscale;	
+	  line-height: 1.4;
+	  @media (min-width: @screen-sm){
+			line-height: 1;
+		}
 	}
+		h1,h2,h3,h4,h5,h6{
+			a{
+				line-height: 1;
+			}
+		}
 	h1{
 		color: @h1Color;
 		font-size: @h1FontSize * 0.7;

@@ -618,11 +618,16 @@
   color: white;
 }
 .widget-big-button a .text {
-  font-size: 32px;
+  font-size: 22.4px;
   text-transform: uppercase;
   font-weight: 700;
   text-decoration: underline;
   line-height: 1;
+}
+@media (min-width: 768px) {
+  .widget-big-button a .text {
+    font-size: 32px;
+  }
 }
 .widget-big-button a .icon {
   display: block;
@@ -894,6 +899,30 @@ div.brand-pages p {
   font-family: "Gotham A", "Gotham B";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 1.4;
+}
+@media (min-width: 768px) {
+  div.brand-pages h1,
+  div.brand-pages h2,
+  div.brand-pages h3,
+  div.brand-pages h4,
+  div.brand-pages h5,
+  div.brand-pages h6,
+  div.brand-pages a,
+  div.brand-pages button,
+  div.brand-pages input,
+  div.brand-pages textarea,
+  div.brand-pages select,
+  div.brand-pages p {
+    line-height: 1;
+  }
+}
+div.brand-pages h1 a,
+div.brand-pages h2 a,
+div.brand-pages h3 a,
+div.brand-pages h4 a,
+div.brand-pages h5 a,
+div.brand-pages h6 a {
   line-height: 1;
 }
 div.brand-pages h1 {

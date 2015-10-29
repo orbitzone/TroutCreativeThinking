@@ -618,11 +618,16 @@
   color: white;
 }
 .widget-big-button a .text {
-  font-size: 32px;
+  font-size: 22.4px;
   text-transform: uppercase;
   font-weight: normal;
   text-decoration: none;
   line-height: 1;
+}
+@media (min-width: 768px) {
+  .widget-big-button a .text {
+    font-size: 32px;
+  }
 }
 .widget-big-button a .icon {
   display: block;

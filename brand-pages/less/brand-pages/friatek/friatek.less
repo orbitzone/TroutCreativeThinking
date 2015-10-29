@@ -70,7 +70,7 @@ div.brand-pages{
 			.slick-slide{
 				.text{
 					font-weight: 600;
-				}
+				}				
 			}
 		}		
 	}
@@ -91,20 +91,60 @@ div.brand-pages{
 	.widget-video{
 		text-transform: uppercase;
 		background-size: contain;
+		.slick-slider{
+			.slick-slide{
+				.image{
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					z-index: 1;
+					@media (min-width: @screen-sm){
+						position: relative;
+					}
+				}
+				.slide-content{
+					position: relative;
+					left: inherit;
+					top: inherit;
+					z-index: 2;
+					.transform(none);
+					button.play{
+						text-align: left;
+						padding: 20px 0;
+						i{
+						margin: 10px 0;
+						display: block;
+						}
+					}
+					@media (min-width: @screen-sm){
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						.transform(translateX(-50%) translateY(-50%));
+						color: @videoCaptionColor;
+					}
+				}
+			}
+		}
 		.image{
 			text-align: right;
 		}
 		.text{	
-			left: -20%;		
-			top: 50%;
-			position: absolute;
-			font-size: 48px;
+			@media (min-width: @screen-sm){
+				left: -20%;		
+				top: 50%;
+				position: absolute;
+				font-size: 48px;
+				.transform(translateY(-50%) translateX(-100%));
+			}
 			text-align: left;
-			.transform(translateY(-50%) translateX(-100%));
+			
 			p{
 				color: @h1Color;
 				font-weight: 700;
 				text-decoration: underline;
+				margin-bottom: 0;
 			}
 			b{
 				text-decoration: underline;	

@@ -992,25 +992,74 @@ div.brand-pages .widget-video {
   text-transform: uppercase;
   background-size: contain;
 }
+div.brand-pages .widget-video .slick-slider .slick-slide .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+@media (min-width: 768px) {
+  div.brand-pages .widget-video .slick-slider .slick-slide .image {
+    position: relative;
+  }
+}
+div.brand-pages .widget-video .slick-slider .slick-slide .slide-content {
+  position: relative;
+  left: inherit;
+  top: inherit;
+  z-index: 2;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+}
+div.brand-pages .widget-video .slick-slider .slick-slide .slide-content button.play {
+  text-align: left;
+  padding: 20px 0;
+}
+div.brand-pages .widget-video .slick-slider .slick-slide .slide-content button.play i {
+  margin: 10px 0;
+  display: block;
+}
+@media (min-width: 768px) {
+  div.brand-pages .widget-video .slick-slider .slick-slide .slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    color: black;
+  }
+}
 div.brand-pages .widget-video .image {
   text-align: right;
 }
 div.brand-pages .widget-video .text {
-  left: -20%;
-  top: 50%;
-  position: absolute;
-  font-size: 48px;
   text-align: left;
-  -webkit-transform: translateY(-50%) translateX(-100%);
-  -moz-transform: translateY(-50%) translateX(-100%);
-  -ms-transform: translateY(-50%) translateX(-100%);
-  -o-transform: translateY(-50%) translateX(-100%);
-  transform: translateY(-50%) translateX(-100%);
+}
+@media (min-width: 768px) {
+  div.brand-pages .widget-video .text {
+    left: -20%;
+    top: 50%;
+    position: absolute;
+    font-size: 48px;
+    -webkit-transform: translateY(-50%) translateX(-100%);
+    -moz-transform: translateY(-50%) translateX(-100%);
+    -ms-transform: translateY(-50%) translateX(-100%);
+    -o-transform: translateY(-50%) translateX(-100%);
+    transform: translateY(-50%) translateX(-100%);
+  }
 }
 div.brand-pages .widget-video .text p {
   color: #00aeef;
   font-weight: 700;
   text-decoration: underline;
+  margin-bottom: 0;
 }
 div.brand-pages .widget-video .text b {
   text-decoration: underline;

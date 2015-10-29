@@ -119,7 +119,7 @@ var widgets = {
 		});
 		$(window).on('resize', function(){
 			var ratio = $('.brand-pages .container').first().outerWidth()/1170;
-			$('.widget-slider, .widget-video, .widget-video-tabs').not('.carousel').each(function(){
+			$('.widget-slider, .widget-video-tabs').not('.carousel').each(function(){
 				var $text = $(this).find('.text');
 				if($text.length > 0){
 					var fontSize = parseInt($text.data('font-size')) * ratio;

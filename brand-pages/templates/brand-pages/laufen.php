@@ -161,64 +161,34 @@
       <div class="slides" data-slides-to-show="3" data-slides-to-scroll="3">
         <div class="slide">
           <figure class="image">
-            <a href="#">
+            <a href="http://www.reece.com.au/assets/brands/820000/laufen-bathroom-products.pdf">
               <img src="images/brand-pages/laufen/brochure-1.jpg" alt="Brochure 1">  
             </a>
           </figure>
           <div class="text">
-           <a href="#" class="widget-link">Download brochure</a>
+           <a href="http://www.reece.com.au/assets/brands/820000/laufen-bathroom-products.pdf" class="widget-link">Download brochure</a>
           </div>
         </div>
         <div class="slide">
           <figure class="image">
-            <a href="#">
+            <a href="http://www.reece.com.au/assets/brands/820000/Laufen-SaphirKeramik.pdf">
               <img src="images/brand-pages/laufen/brochure-2.jpg" alt="Brochure 2">  
             </a>
           </figure>
           <div class="text">
-            <a href="#" class="widget-link">Download brochure</a>
+            <a href="http://www.reece.com.au/assets/brands/820000/Laufen-SaphirKeramik.pdf" class="widget-link">Download brochure</a>
           </div>
         </div>
         <div class="slide">
           <figure class="image">
-            <a href="#">
+            <a href="http://www.reece.com.au/assets/brands/820000/kartell-by-laufen-bathroom.pdf">
               <img src="images/brand-pages/laufen/brochure-3.jpg" alt="Brochure 3">  
             </a>
           </figure>
           <div class="text">
-            <a href="#" class="widget-link">Download brochure</a>
+            <a href="http://www.reece.com.au/assets/brands/820000/kartell-by-laufen-bathroom.pdf" class="widget-link">Download brochure</a>
           </div>
-        </div>
-        <div class="slide">
-          <figure class="image">
-            <a href="#">
-              <img src="images/brand-pages/laufen/brochure-1.jpg" alt="Brochure 1">  
-            </a>
-          </figure>
-          <div class="text">
-           <a href="#" class="widget-link">Download brochure</a>
-         </div>
-        </div>
-        <div class="slide">
-          <figure class="image">
-            <a href="#">
-              <img src="images/brand-pages/laufen/brochure-2.jpg" alt="Brochure 2">  
-            </a>
-          </figure>
-          <div class="text">
-            <a href="#" class="widget-link">Download brochure</a>
-          </div>
-        </div>
-        <div class="slide">
-          <figure class="image">
-            <a href="#">
-              <img src="images/brand-pages/laufen/brochure-3.jpg" alt="Brochure 3">  
-            </a>
-          </figure>
-          <div class="text">
-            <a href="#" class="widget-link">Download brochure</a>
-          </div>
-        </div>
+        </div>        
       </div>
     </div>    
     <!-- End: Slider/Carousel Widget-->       
@@ -349,7 +319,7 @@
                   </div>
                 </div>                  
                 <div class="video">
-                  <figure data-video="kxJi9V3gdP4">
+                  <figure data-video="jhGoTrVeCa8">
                     <img src="images/brand-pages/laufen/videos/video-thumb-2.jpg" alt="Video 2">
                     <div class="icon text">
                       <div class="icon-play">
@@ -366,7 +336,7 @@
                   </div>
                 </div>                  
                 <div class="video">
-                  <figure data-video="Q-a1dahV-QM">
+                  <figure data-video="yNooJpx__0g">
                     <img src="images/brand-pages/laufen/videos/video-thumb-3.jpg" alt="Video 3">
                     <div class="icon text">
                       <div class="icon-play">
@@ -485,26 +455,9 @@
                     </div>
                   </figure>
                   <div class="description">
-                    Kartell by laufen - Design
+                    The Palomba Collection
                   </div>
-                </div>                
-                <div class="video">
-                  <figure data-video="LLfW4mJ8BeM">
-                    <img src="images/brand-pages/laufen/videos/video-thumb-3.jpg" alt="Video 3">
-                    <div class="icon text">
-                      <div class="icon-play">
-                        <i class="rbp-arrow-light-right-circle-icon"></i>
-                        <p>View Video</p>    
-                      </div>
-                      <div class="icon-playing">
-                        <p>Currently viewing</p>  
-                      </div>
-                    </div>
-                  </figure>
-                  <div class="description">
-                    The making of Kartell by Laufen - Reece bathrooms
-                  </div>
-                </div>                                  
+                </div>                                 
               </div>
             </div>
           </div>

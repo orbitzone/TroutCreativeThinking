@@ -93,7 +93,8 @@
                 <img src="images/brand-pages/laufen/video-1.jpg" alt="Video 1">
               </figure>
               <div class="slide-content">
-                <button type="button" class="play" data-video="RP2xdsxPWbA">
+                <button type="button" class="play" data-video="231_3HKnAl4
+">
                   <div class="text">
                     <p><b>Bathroom<br/>Culture</b></p>
                   </div>
@@ -126,7 +127,7 @@
                 <img src="images/brand-pages/laufen/video-2.jpg" alt="Video 2">
               </figure>
               <div class="slide-content">
-                <button type="button" class="play" data-video="RP2xdsxPWbA">
+                <button type="button" class="play" data-video="MeJRi35fh9Y">
                   <div class="text">
                     <p><b>Laufen designed<br/>like no other</b></p>  
                   </div>
@@ -320,7 +321,7 @@
                 <img src="images/brand-pages/laufen/kartell-by-laufen.png" alt="Kartell by Laufen" width="291">
               </div>
               <div class="text">
-                Nulla vitae elit libero, a pharetra augue vestibulum id ligula porta felis euismod semper. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+                A complete bathroom project inspired by the iconic design of Kartell together with the quality of Laufen.
               </div>
             </div>
             <div class="videos">
@@ -390,7 +391,7 @@
                 <h1>One Ilbagno Alessi</h1>
               </div>
               <div class="text">
-                Nulla vitae elit libero, a pharetra augue vestibulum id ligula porta felis euismod semper. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+               The works of award winning designer, Stefano Giovannoni, tell stories that fascinate and enthral with their beautiful narrative qualities.
               </div>
             </div>
             <div class="videos">
@@ -460,7 +461,7 @@
                 <h1>Palomba</h1>
               </div>
               <div class="text">
-                Nulla vitae elit libero, a pharetra augue vestibulum id ligula porta felis euismod semper. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+                The shooting stars of the Italian design scene, Ludovica+Roberto Palomba, continue to create ground-breaking designs the world over.
               </div>
             </div>
             <div class="videos">
@@ -513,7 +514,7 @@
                 <h1>Mimo</h1>
               </div>
               <div class="text">
-                Nulla vitae elit libero, a pharetra augue vestibulum id ligula porta felis euismod semper. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+                The driving force behind Phoenix Design in Germany, they bring together aesthetics, ergonomics and plenty of attitude.
               </div>
             </div>
             <div class="videos">
@@ -549,7 +550,7 @@
                 <h1>Laufen Pro</h1>
               </div>
               <div class="text">
-                Nulla vitae elit libero, a pharetra augue vestibulum id ligula porta felis euismod semper. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+                Design of the human touch is the credo of Process, the design hotbed lead by Peter Wirz and his interdisciplinary ideas team.
               </div>
             </div>
             <div class="videos">

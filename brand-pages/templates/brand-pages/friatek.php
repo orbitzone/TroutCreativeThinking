@@ -60,7 +60,7 @@
                 <img src="images/brand-pages/friatek/quality-video-bg.jpg" alt="Video">
               </div>
               <div class="slide-content">
-                <button type="button" class="play" data-video="RP2xdsxPWbA">
+                <button type="button" class="play" data-video="8yLxMPSjtA8">
                   <div class="text">
                     <p><b>Quality</b><br/>Since<br/>1863</p>  
                   </div>

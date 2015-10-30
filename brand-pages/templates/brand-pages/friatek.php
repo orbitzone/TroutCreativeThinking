@@ -13,27 +13,27 @@
         </div>      
         <!-- End:  Logo widget -->
       </div>    
-      <div class="container bg-grey">
+      <div class="container bg-grey intro-slider">
           <!-- Begin: Slider/Carousel Widget Start-->
           <div class="widget-slider">
             <div class="slides" data-slides-to-show="1" data-slides-to-scroll="1">
-              <div class="slide">
+              <div class="slide slide-1">
                 <a href="#">
                   <div class="image">
-                    <img src="images/brand-pages/friatek/slide-1.jpg" alt="Slide 1">  
+                    <img src="images/brand-pages/friatek/slide-1.jpg" alt="The global leaders in electrofusion technology">  
                   </div>
                   <div class="text">
                    The global <br>leaders in <br>electrofusion <br>technology
                   </div>
                 </a>
               </div>
-              <div class="slide">
+              <div class="slide slide-2">
                 <a href="#"> <!-- The link should be configurable in the widget settings, add when necessary -->
                   <div class="image">
-                    <img src="images/brand-pages/friatek/slide-1.jpg" alt="Slide 1">  
+                    <img src="images/brand-pages/friatek/slide-2.jpg" alt="German Engineering and precision">  
                   </div>
                   <div class="text">
-                    The global <br>leaders in <br>electrofusion <br>technology
+                    German <br>Engineering <br>and precision <br><img src="images/brand-pages/friatek/made-in-germany.png" alt="Made in Germany">
                   </div>
                 </a>
               </div>
@@ -41,48 +41,46 @@
           </div>             
           <!-- End: Slider/Carousel Widget-->       
       </div>
-      <div class="container">
+      <div class="container intro-summary">
         <!-- Begin: HTML Widget-->  
           <div class="widget-html-image intro">
             <div class="rte">
-              <p><b>The global leaders in electrofusion technology</b>
-              <br/>A pioneer of electrofusion technology since the 70’s, FRIATEC continues to set the standard that others follow. And now, FRIATEC’s advanced range of electrofusion fittings, welders and tools are available through Reece in Australia.</p>
+              <p>A pioneer of electrofusion technology since the 70’s, FRIATEC continues to set the standard that others follow. And now, FRIATEC’s advanced range of electrofusion fittings, welders and tools are available through Reece in Australia.</p>
             </div>
           </div>
         <!-- End: HTML Widget-->
       </div>
       <div class="container bg-grey">
-        <!-- Begin: Video Widget-->  
-        <div class="widget-video">
-          <div class="video-slides">
-            <div class="slide slide-front">
-              <div class="image">
-                <img src="images/brand-pages/friatek/quality-video-bg.jpg" alt="Video">
-              </div>
-              <div class="slide-content">
-                <button type="button" class="play" data-video="8yLxMPSjtA8">
-                  <div class="text">
-                    <p><b>Quality</b><br/>Since<br/>1863</p>  
-                  </div>
-                  <i class="rbp-play-icon"></i>
-                  <span class="label">View video</span>  
-                </button>  
-              </div>
-            </div>
-            <div class="slide slide-video">
-              <div class="video-wrapper">
-                <div class="video">
-                  <figure class="player">
-                  </figure>
+        <div class="row">
+          <!-- Begin: Video Widget-->  
+          <div class="widget-video">
+            <div class="video-slides">
+              <div class="slide slide-front">
+                <div class="image">
+                  <img src="images/brand-pages/friatek/quality-video-bg.jpg" alt="Video">
+                </div>
+                <div class="slide-content">
+                  <button type="button" class="play" data-video="8yLxMPSjtA8">
+                    <i class="rbp-play-icon"></i>
+                    <span class="label">View video</span>  
+                  </button>  
                 </div>
               </div>
-              <button type="button" class="close">
-                <i class="rbp-close-icon"></i>               
-              </button>  
-            </div>
-          </div>    
-        </div>
-        <!-- End: Video Widget-->
+              <div class="slide slide-video">
+                <div class="video-wrapper">
+                  <div class="video">
+                    <figure class="player">
+                    </figure>
+                  </div>
+                </div>
+                <button type="button" class="close">
+                  <i class="rbp-close-icon"></i>               
+                </button>  
+              </div>
+            </div>    
+          </div>
+          <!-- End: Video Widget-->
+        </div>        
       </div>
       <div class="container trio">
         <div class="row">

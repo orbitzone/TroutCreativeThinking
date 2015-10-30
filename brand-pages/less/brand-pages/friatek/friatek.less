@@ -2,21 +2,28 @@
 @import "_variables.less";
 
 div.brand-pages{
-	font-size: 16px;
+	font-size: 15px;
 	h1,h2,h3,h4,h5,h6,a,button,input,textarea,select,p{
 		font-family: "Gotham A", "Gotham B";
 		-webkit-font-smoothing: antialiased;
 	  -moz-osx-font-smoothing: grayscale;	
 	  line-height: 1.4;
 	  @media (min-width: @screen-sm){
-			line-height: 1;
+			line-height: 1.5;
 		}
 	}
-		h1,h2,h3,h4,h5,h6{
-			a{
-				line-height: 1;
-			}
-		}
+	h1,h2,h3,h4,h5,h6{
+		line-height: 1.3;
+		a{
+			line-height: 1.3;
+		}			
+	}
+	h2{
+		line-height: 1.2;
+		a{
+			line-height: 1.2;
+		}			
+	}
 	h1{
 		color: @h1Color;
 		font-size: @h1FontSize * 0.7;
@@ -60,14 +67,54 @@ div.brand-pages{
 	.bg-grey{
 		background: @grey;
 	}
+	.intro-slider{
+		margin-bottom: 10px;
+	}
+	.intro-summary{
+		text-align: center;
+		margin-bottom: 0;
+	}
 	.widget-link{
 		margin-top: 20px;
 		padding: 18px 38px;
 		font-size: 20px;
 	}
 	.widget-slider{
+		.slick-dots{
+			background: white;
+			margin-bottom: 0;
+		}
 		.slick-slider{
 			.slick-slide{
+				&.slide-1{
+					.text{
+						.transform(translateY(50%) translateX(-10px));
+					}
+					&.slick-active,
+					&.slick-cloned{
+						.text{
+							.transform(translateY(-50%)  translateX(-10px));		
+						}
+					}
+				}
+				&.slide-2{
+					.text{
+						color: white;
+						.transform(translateY(50%) translateX(-100%));
+						img{
+							max-width: 40px;
+							@media (min-width: @screen-sm){
+								max-width: 100%;
+							}
+						}
+					}
+					&.slick-active,
+					&.slick-cloned{
+						.text{
+							.transform(translateY(-50%)  translateX(-100%));		
+						}
+					}
+				}
 				.text{
 					font-weight: 600;
 				}				
@@ -94,41 +141,23 @@ div.brand-pages{
 		.slick-slider{
 			.slick-slide{
 				.image{
-					position: absolute;
-					top: 0;
-					left: 0;
-					width: 100%;
-					z-index: 1;
-					@media (min-width: @screen-sm){
 						position: relative;
-					}
 				}
 				.slide-content{
-					position: relative;
-					left: inherit;
-					top: inherit;
-					z-index: 2;
-					.transform(none);
-					button.play{
-						text-align: left;
-						padding: 20px;
-						i{
-						margin: 10px 0;
-						display: block;
-						}
-					}
-					@media (min-width: @screen-sm){
 						position: absolute;
 						top: 50%;
 						left: 50%;
 						.transform(translateX(-50%) translateY(-50%));
 						color: @videoCaptionColor;
-					}
+					
 				}
 			}
 		}
 		.image{
 			text-align: right;
+			img{
+				margin: 0 auto;
+			}
 		}
 		.text{	
 			@media (min-width: @screen-sm){

@@ -320,6 +320,8 @@
   margin-bottom: 0;
 }
 .widget-slider {
+  margin-left: -15px;
+  margin-right: -15px;
   overflow: hidden;
 }
 .widget-slider .slides {
@@ -353,11 +355,11 @@
   opacity: 0;
   top: 50%;
   left: 50%;
-  -webkit-transform: translateY(50%) translateX(10px);
-  -moz-transform: translateY(50%) translateX(10px);
-  -ms-transform: translateY(50%) translateX(10px);
-  -o-transform: translateY(50%) translateX(10px);
-  transform: translateY(50%) translateX(10px);
+  -webkit-transform: translateY(50%) translateX(-50%);
+  -moz-transform: translateY(50%) translateX(-50%);
+  -ms-transform: translateY(50%) translateX(-50%);
+  -o-transform: translateY(50%) translateX(-50%);
+  transform: translateY(50%) translateX(-50%);
   -webkit-transition: all 1s ease-out;
   -moz-transition: all 1s ease-out;
   -ms-transition: all 1s ease-out;
@@ -389,11 +391,11 @@
   -o-transition: all 1s ease-out;
   transition: all 1s ease-out;
   opacity: 1;
-  -webkit-transform: translateY(-50%) translateX(-10px);
-  -moz-transform: translateY(-50%) translateX(-10px);
-  -ms-transform: translateY(-50%) translateX(-10px);
-  -o-transform: translateY(-50%) translateX(-10px);
-  transform: translateY(-50%) translateX(-10px);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -moz-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  -o-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
 }
 .widget-slider .slick-slider .slick-prev,
 .widget-slider .slick-slider .slick-next {
@@ -413,7 +415,7 @@
   font-size: 80px;
 }
 .widget-slider .slick-slider .slick-prev {
-  left: 0;
+  left: 10px;
   -webkit-transform: translateY(-50%) translateX(0);
   -moz-transform: translateY(-50%) translateX(0);
   -ms-transform: translateY(-50%) translateX(0);
@@ -421,7 +423,7 @@
   transform: translateY(-50%) translateX(0);
 }
 .widget-slider .slick-slider .slick-next {
-  right: 0;
+  right: 10px;
   -webkit-transform: translateY(-50%) translateX(0);
   -moz-transform: translateY(-50%) translateX(0);
   -ms-transform: translateY(-50%) translateX(0);

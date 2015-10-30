@@ -294,6 +294,37 @@
                 A complete bathroom project inspired by the iconic design of Kartell together with the quality of Laufen.
               </div>
             </div>
+            <div class="moodboard">
+              <div class="top">
+                <div class="block block-left">
+                  <div class="image">
+                    <img src="images/brand-pages/laufen/kartell-block-1.jpg" alt="Kartell">
+                  </div>
+                </div>
+                <div class="block block-right">
+                  <div class="image">
+                    <img src="images/brand-pages/laufen/kartell-block-2.jpg" alt="Kartell">
+                  </div>
+                </div>
+              </div>
+              <div class="bottom">
+                <div class="block block-left">
+                  <div class="image">
+                    <img src="images/brand-pages/laufen/kartell-block-3.jpg" alt="Kartell">
+                  </div>
+                </div>
+                <div class="block block-middle">
+                  <div class="image">
+                    <img src="images/brand-pages/laufen/kartell-block-4.jpg" alt="Kartell">
+                  </div>
+                </div>
+                <div class="block block-right">
+                  <div class="image">
+                    <img src="images/brand-pages/laufen/kartell-block-5.jpg" alt="Kartell">
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="videos">
               <div class="main">
                 <figure class="player">

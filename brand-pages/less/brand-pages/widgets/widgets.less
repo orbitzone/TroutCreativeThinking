@@ -123,10 +123,10 @@
 	}
 	&.carousel{
 		.slick-slider{
-			max-width: 650px;
+			max-width: 750px;
 			margin: 0 auto;
 			.slick-slide{
-				padding: 0 15px;
+				padding: 0 38px;
 				.image{
 					margin-bottom: 20px;
 					text-align: center;
@@ -366,6 +366,7 @@
 		&:extend(.clearfix all);
 	}
 	.main{
+		display: none;
 		background: black;
 		overflow: hidden;
 		margin-bottom: 20px;
@@ -393,6 +394,56 @@
 			display: none;
 			&.active{
 				display: block;
+			}
+			.moodboard{
+				.top,
+				.bottom{
+					margin-left: -5px;
+					margin-right: -5px;
+					@media (min-width: @screen-sm){
+						margin-bottom: 10px;
+					}
+					&:before,
+				  &:after {
+				    content: " "; // 1
+				    display: table; // 2
+				  }
+				  &:after {
+				    clear: both;
+				  }
+				}
+				.top{
+					.block-left{
+						@media (min-width: @screen-sm){
+							width: 33.3333333%;
+						}
+					}
+					.block-right{
+						@media (min-width: @screen-sm){
+							width: 66.6666666%;
+						}
+					}
+				}
+				.bottom{
+					.block{
+						@media (min-width: @screen-sm){
+							width: 33.3333333%;
+						}
+					}
+				}
+				.block{
+					padding: 0 5px;
+					.image{
+						overflow: hidden;
+					}
+					float: none;
+					margin-bottom: 10px;
+					width: 100%;
+					@media (min-width: @screen-sm){
+						float: left;
+						margin-bottom: 0;
+					}					
+				}
 			}
 		}
 		.intro{

@@ -88,12 +88,12 @@
             <!-- Begin: HTML Widget-->  
             <div class="widget-html-image">
               <div class="image">
-                <a href="#">
+                <!--<a href="#">-->
                   <img src="images/brand-pages/friatek/exposed-heating.jpg" alt="Exposed heating coil design">
-                </a>
+                <!--</a>-->
               </div>
               <div class="rte">
-                <h3><a href="#">Exposed heating coil design</a></h3>
+                <h3><!--<a href="#">-->Exposed heating coil design<!--</a>--></h3>
                 <p>Using a highly efficient, exposed heating coil design, FRIATEC’s electrofusion system provides ideal heat transfer from fitting to pipe, delivering a faster and more precise weld.</p>
               </div>
             </div>
@@ -103,12 +103,10 @@
             <!-- Begin: HTML Widget-->  
             <div class="widget-html-image">
               <div class="image">
-                <a href="#">
                   <img src="images/brand-pages/friatek/longest-coupler.jpg" alt="Longest coupler length on the market">
-                </a>
               </div>
               <div class="rte">
-                <h3><a href="#">Longest coupler length on the market</a></h3>
+                <h3>Longest coupler length on the market</h3>
                 <p>To guarantee outstanding performance, FRIATEC’s couplings feature extra-long fusion zones - up to 2.7 times longer than the minimum required standard. The larger fusion area helps to absorb energy while offering improved stability.</p>
               </div>
             </div>
@@ -118,12 +116,10 @@
             <!-- Begin: HTML Widget-->  
             <div class="widget-html-image">
               <div class="image">
-                <a href="#">
-                  <img src="images/brand-pages/friatek/full-range.jpg" alt="Coupler">
-                </a>
+                  <img src="images/brand-pages/friatek/full-range.jpg" alt="Coupler">                
               </div>
               <div class="rte">
-                <h3><a href="#">A full range of couplers for every application</a></h3>
+                <h3>A full range of couplers for every application</h3>
                 <p>FRIATEC offers a range of couplers from 20mm – 1200mm in diameter, with a choice of three different pressure ratings. These are SDR 17 (1000kPA), SDR 11 (1600 kPa) or SDR 7.4 (2500 kPa). </p>
               </div>
             </div>
@@ -137,10 +133,10 @@
             <!-- Begin: HTML Widget-->  
             <div class="widget-html-image friamat">
               <div class="rte">
-                <h2><a href="#">Smart welders that do all the work for you</a></h2>
+                <h2><a href="https://www.youtube.com/watch?v=ssiGk_TD0AI" target="_blank">Smart welders that do all the work for you</a></h2>
                 <p>FRIATEC’s advanced FRIAMAT Electrofusion welder takes all the work out creating the perfect weld. With the built in barcode reader, you simply scan the code on the fitting and the welder adjusts for every variable.</p>
               </div>
-              <a href="#" class="widget-link">Learn more</a>
+              <a href="https://www.youtube.com/watch?v=ssiGk_TD0AI" target="_blank" class="widget-link">Learn more</a>
             </div>
             <!-- End: HTML Widget-->
           </div>
@@ -148,7 +144,7 @@
             <!-- Begin: HTML Widget-->  
             <div class="widget-html-image">
               <div class="image">
-                <a href="#">
+                <a href="https://www.youtube.com/watch?v=ssiGk_TD0AI" target="_blank">
                   <img src="images/brand-pages/friatek/friamat.png" width="347" alt="Friamat">  
                 </a>
               </div>              

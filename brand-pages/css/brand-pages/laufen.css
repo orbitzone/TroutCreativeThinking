@@ -561,6 +561,9 @@
   left: 0;
   top: 0;
 }
+.widget-video .slick-slider .slick-slide img {
+  margin: 0 auto;
+}
 .widget-video .slick-slider .slick-slide button.close {
   position: absolute;
   top: 10px;

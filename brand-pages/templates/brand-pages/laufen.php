@@ -288,7 +288,7 @@
           <div id="kartell" class="tab-block active">
             <div class="intro">
               <div class="logo">
-                <img src="images/brand-pages/laufen/kartell-by-laufen.png" alt="Kartell by Laufen" width="291">
+                <img src="images/brand-pages/laufen/kartell-by-laufen-logo.svg" alt="Kartell by Laufen" width="291" height="36">
               </div>
               <div class="text">
                 A complete bathroom project inspired by the iconic design of Kartell together with the quality of Laufen.
@@ -389,7 +389,7 @@
           <div id="one-ilbgno-alessi" class="tab-block">
             <div class="intro">
               <div class="logo">
-                <h1>One Ilbagno Alessi</h1>
+                <img src="images/brand-pages/laufen/one-ilbagno-alessi-logo.svg" alt="One Ilbagno Alessi" width="318" height="28">
               </div>
               <div class="text">
                The works of award winning designer, Stefano Giovannoni, tell stories that fascinate and enthral with their beautiful narrative qualities.
@@ -459,7 +459,7 @@
           <div id="paloma" class="tab-block">
             <div class="intro">
               <div class="logo">
-                <h1>Palomba</h1>
+                <img src="images/brand-pages/laufen/palomba-collection-logo.svg" alt="Palomba Collection" width="413" height="28">
               </div>
               <div class="text">
                 The shooting stars of the Italian design scene, Ludovica+Roberto Palomba, continue to create ground-breaking designs the world over.
@@ -495,7 +495,7 @@
           <div id="mimo" class="tab-block">
             <div class="intro">
               <div class="logo">
-                <h1>Mimo</h1>
+                <img src="images/brand-pages/laufen/mimo-logo.svg" alt="Mimo" width="140" height="28">
               </div>
               <div class="text">
                 The driving force behind Phoenix Design in Germany, they bring together aesthetics, ergonomics and plenty of attitude.
@@ -531,7 +531,7 @@
           <div id="laufenpro" class="tab-block">
             <div class="intro">
               <div class="logo">
-                <h1>Laufen Pro</h1>
+                <img src="images/brand-pages/laufen/laufenpro-logo.svg" alt="Laufen Pro" width="200" height="42" />
               </div>
               <div class="text">
                 Design of the human touch is the credo of Process, the design hotbed lead by Peter Wirz and his interdisciplinary ideas team.

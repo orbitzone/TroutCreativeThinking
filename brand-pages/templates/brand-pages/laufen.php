@@ -83,8 +83,8 @@
 
 
   <div class="container">
-    <div class="half-wrap clearfix">
-      <div class="half">
+    <div class="row no-padding">
+      <div class="col-sm-6 no-padding">
         <!-- Begin: Video Widget-->
         <div class="widget-video">
           <div class="video-slides">
@@ -118,7 +118,7 @@
         </div>
         <!-- End: Video Widget-->
       </div>
-      <div class="half">
+      <div class="col-sm-6 no-padding">
         <!-- Begin: Video Widget-->
         <div class="widget-video">
           <div class="video-slides">

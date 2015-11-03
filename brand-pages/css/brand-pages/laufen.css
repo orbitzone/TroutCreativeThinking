@@ -298,6 +298,12 @@
 .brand-pages b {
   color: inherit;
 }
+.brand-pages .no-padding {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
 .widget-link {
   text-transform: uppercase;
   padding: 8px 12px;
@@ -948,12 +954,6 @@ div.brand-pages a {
 }
 div.brand-pages .half {
   margin-bottom: 30px;
-}
-@media (min-width: 768px) {
-  div.brand-pages .half {
-    float: left;
-    width: 50%;
-  }
 }
 div.brand-pages .widget-block-five .text {
   font-size: 20px;

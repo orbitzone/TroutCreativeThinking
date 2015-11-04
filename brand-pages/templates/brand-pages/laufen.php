@@ -49,7 +49,7 @@
           </figure>
           <div class="rte">
             <h3><a href="#">Swissness</a></h3>
-            <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Curabitur blandit tempus porttitor. Curabitur blandit tempus porttitor.</p>
+            <p>'Swissness' is a word that defines LAUFEN's innovative approach to creating beautiful bathroom ceramics. It stands for many different things, but always embraces the concepts of outstanding quality, superb design, precise engineering and a passion for environmental sustainability.</p>
           </div>
         </div>
         <!-- End: HTML Widget-->
@@ -61,7 +61,7 @@
           </figure>
           <div class="rte">
             <h3><a href="#">Quality</a></h3>
-            <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Curabitur blandit tempus porttitor. Curabitur blandit tempus porttitor.</p>
+            <p>LAUFEN continually pushes the limits of technical possibility to create ground-breaking new ideas expressed through ceramics. Sophisticated production processes are balanced with a human touch. Each piece is hand finished to ensure the highest standards of finish are achieved.</p>
           </div>
         </div>
         <!-- End: HTML Widget-->
@@ -73,7 +73,7 @@
           </figure>
           <div class="rte">
             <h3><a href="#">Design</a></h3>
-            <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Curabitur blandit tempus porttitor. Curabitur blandit tempus porttitor.</p>
+            <p>At LAUFEN, design is a t the heart of every product. LAUFEN treats ceramics as an art form, collaborating with many of the world's leafing international architects and designers to make exciting new concepts a reality. Each design is brought to life using only natural raw materials such as china clay and quartz.</p>
           </div>
         </div>
         <!-- End: HTML Widget-->

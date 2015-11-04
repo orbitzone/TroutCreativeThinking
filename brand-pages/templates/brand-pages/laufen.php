@@ -214,7 +214,7 @@
         <div class="widget-html-image">
           <figure class="image">
             <img src="images/brand-pages/laufen/design-1.jpg" alt="Stefano Giovannoni">
-            <figcaption>Stefano Giovannoni</figcaption>
+            <figcaption>Stefano <br/>Giovannoni</figcaption>
           </figure>
           <div class="rte">
             <p>The works of award winning designer, Stefano Giovannoni, tell stories that fascinate and enthral with their beautiful narrative qualities.</p>
@@ -227,7 +227,7 @@
         <div class="widget-html-image">
           <figure class="image">
             <img src="images/brand-pages/laufen/design-2.jpg" alt="Ludovica + Roberto Palomba">
-            <figcaption>Ludovica + Roberto Palomba</figcaption>
+            <figcaption>Ludovica + <br/>Roberto Palomba</figcaption>
           </figure>
           <div class="rte">
             <p>The shooting stars of the Italian design scene, Ludovica + Roberto Palomba, continue to create ground-breaking designs the world over.</p>
@@ -240,7 +240,7 @@
         <div class="widget-html-image">
           <figure class="image">
             <img src="images/brand-pages/laufen/design-3.jpg" alt="Phoenix Design">
-            <figcaption>Phoenix Design</figcaption>
+            <figcaption>Phoenix <br/>Design</figcaption>
           </figure>
           <div class="rte">
             <p>The driving force behind Phoenix Design in Germany, they bring together aesthetics, ergonomics and plenty of attitude.</p>
@@ -253,7 +253,7 @@
         <div class="widget-html-image">
           <figure class="image">
             <img src="images/brand-pages/laufen/design-4.jpg" alt="Peter Wirz Vetica">
-            <figcaption>Peter Wirz Vetica</figcaption>
+            <figcaption>Peter Wirz <br/>Vetica</figcaption>
           </figure>
           <div class="rte">
             <p>Design of the human touch is the credo of Vetica,

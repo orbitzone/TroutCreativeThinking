@@ -1,0 +1,116 @@
+@import "../widgets/widgets.less";
+@import "_variables.less";
+
+
+div.brand-pages{
+	.bg-green{
+		background:@bgGreen;
+	}
+	.bg-grey{
+		background:@bgGrey;
+		color: @grey;
+	}
+	.container.logo{
+		margin-bottom: 0;
+	}
+	.widget-logo{
+		padding: 40px 0;
+	}
+	.intro-slider{
+		margin-bottom: 4px;
+		.widget-slider{
+			.slick-slider{
+				.slick-slide{
+					a{
+						.image{
+							width: 100%;
+						}
+						.text{
+							color: white;
+							text-transform: uppercase;
+							font-weight: 700;
+							font-size: 61px;
+							right: 40px;
+							left: inherit;
+							.transform(translateY(-50%));					
+						}
+					}
+				}
+			}
+		}
+	}
+	.widget-html-image{
+		text-align: center;
+		color: @grey;
+		font-size: 17px;
+		font-weight: 300;
+		h2,
+		h3{
+			text-transform: uppercase;
+			font-size: 30px;
+			font-weight: 700;
+			color: @bgGreen;
+			a{
+				color: @bgGreen;
+			}
+			&:after{
+				content: ' ';
+				display: block;
+				width: 70px;
+				height: 3px;
+				background: @bgGreen;
+				margin: 0 auto;
+				margin-top: 20px;
+			}
+		}
+		h3{
+			a{
+				color: white;
+			}
+			&:after{
+				background: white;
+			}
+		}
+	}
+	.characteristics{
+		.widget-html-image{
+			padding: 50px 20px 70px;
+		}
+	}
+	.feature-products-title{
+		margin-bottom: 0;
+	}
+	.feature-products{
+		.row{
+			@media (min-width: @screen-sm-min){
+				margin-left: -30px;
+				margin-right: -30px;				
+			}
+		}
+		.widget-html-image{
+			padding: 0;
+			margin-bottom: 30px;
+			@media (min-width: @screen-md-min){
+				margin-bottom: 0;
+			}
+			.image{
+				border: 1px solid #b3b4b7;
+				overflow: hidden;
+			}
+			.rte{
+				text-align: left;
+				color: @bgGreen;
+				font-weight: 500;
+			}
+		}
+	}
+	.the-wolfen-difference{
+		.widget-html-image{
+			color: @darkGrey;
+			max-width: 930px;
+			margin: 0 auto;
+			padding-top: 70px;
+			padding-bottom: 70px;
+		}
+	}
+}

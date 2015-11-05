@@ -57,6 +57,9 @@
 .rbp-arrow-angle-right-icon:before {
   content: "i";
 }
+.rbp-sink-tap-icon:before {
+  content: "j";
+}
 /* Slider */
 .slick-slider {
   position: relative;
@@ -325,14 +328,14 @@
 .widget-logo h1 {
   margin-bottom: 0;
 }
+.widget-logo h1 a {
+  display: block;
+  text-align: center;
+}
 .widget-slider {
   margin-left: -15px;
   margin-right: -15px;
   overflow: hidden;
-}
-.widget-slider .slides {
-  margin-left: -15px;
-  margin-right: -15px;
 }
 .widget-slider .slick-slider {
   height: 100%;

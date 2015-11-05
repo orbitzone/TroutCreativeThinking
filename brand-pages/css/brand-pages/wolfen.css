@@ -634,7 +634,7 @@
   color: white;
 }
 .widget-big-button a .text {
-  font-size: 14px;
+  font-size: 12.6px;
   text-transform: uppercase;
   font-weight: 700;
   text-decoration: none;
@@ -642,7 +642,7 @@
 }
 @media (min-width: 768px) {
   .widget-big-button a .text {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 .widget-big-button a .icon {
@@ -967,7 +967,7 @@ div.brand-pages .intro-slider .widget-slider .slick-slider .slick-slide a .text 
   color: white;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 61px;
+  font-size: 52px;
   right: 40px;
   left: inherit;
   -webkit-transform: translateY(-50%);
@@ -985,7 +985,7 @@ div.brand-pages .widget-html-image {
 div.brand-pages .widget-html-image h2,
 div.brand-pages .widget-html-image h3 {
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 700;
   color: #034437;
 }

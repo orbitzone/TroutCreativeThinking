@@ -586,7 +586,15 @@ body.grant-2015 .grant-2015-content .grant-2015-nav li a .item-wrap {
 body.grant-2015 .grant-2015-content .grant-2015-nav li a .nav-img-wrapper {
   height: 50px;
   position: relative;
-  top: -10px;
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
 }
 body.grant-2015 .grant-2015-content .grant-2015-nav li a .nav-img-wrapper .nav-img {
   -webkit-transition: visibility 1s ease,height 1s ease,width 1s ease;
@@ -595,10 +603,10 @@ body.grant-2015 .grant-2015-content .grant-2015-nav li a .nav-img-wrapper .nav-i
   transition: visibility 1s ease,height 1s ease,width 1s ease;
 }
 body.grant-2015 .grant-2015-content .grant-2015-nav li a .nav-text-wrapper {
-  -webkit-transition: top 1s ease-out;
-  -moz-transition: top 1s ease-out;
-  -o-transition: top 1s ease-out;
-  transition: top 1s ease-out;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
 }
 body.grant-2015 .grant-2015-content .grant-2015-nav li a .nav-img-wrapper,
 body.grant-2015 .grant-2015-content .grant-2015-nav li a .nav-text-wrapper {
@@ -614,7 +622,11 @@ body.grant-2015 .grant-2015-content .grant-2015-nav li a .nav-text-wrapper span 
 }
 body.grant-2015 .grant-2015-content .grant-2015-nav li a .nav-text-wrapper {
   position: relative;
-  top: -23px;
+  -webkit-transform: translateY(-23px);
+  -moz-transform: translateY(-23px);
+  -o-transform: translateY(-23px);
+  -ms-transform: translateY(-23px);
+  transform: translateY(-23px);
 }
 body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-home {
   margin-bottom: 10px;
@@ -624,7 +636,11 @@ body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-home .nav-text-wrap
 }
 body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-home .nav-img {
   position: relative;
-  top: 20px;
+  -webkit-transform: translateY(20px);
+  -moz-transform: translateY(20px);
+  -o-transform: translateY(20px);
+  -ms-transform: translateY(20px);
+  transform: translateY(20px);
 }
 body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-home.active .item-wrap,
 body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-home:hover .item-wrap {
@@ -646,7 +662,11 @@ body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-home:hover .nav-img
 body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-home.active .nav-text-wrapper,
 body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-home:hover .nav-text-wrapper {
   padding-top: 3px;
-  top: 0px;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -o-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
 }
 body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-justin,
 body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-home {
@@ -689,7 +709,11 @@ body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-justin:hover .nav-t
 body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-james:hover .nav-text-wrapper,
 body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-timothy:hover .nav-text-wrapper {
   padding-top: 0px;
-  top: 0;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -o-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
 }
 body.grant-2015 .grant-2015-content .grant-2015-nav li a:hover,
 body.grant-2015 .grant-2015-content .grant-2015-nav li a:active,

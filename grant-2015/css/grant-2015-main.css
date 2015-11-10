@@ -395,6 +395,10 @@ body.grant-2015 .grant-2015-content .background-timothy {
     background-position: 60%;
   }
 }
+body.grant-2015 .grant-2015-content .menu-list {
+  position: relative;
+  z-index: 2;
+}
 body.grant-2015 .grant-2015-content .banner-person .banner-item-wrapper {
   position: relative;
   height: 420px;

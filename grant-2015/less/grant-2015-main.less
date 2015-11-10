@@ -559,15 +559,18 @@ body.grant-2015 .grant-2015-content{
 			a{
 				display:block;
 				position:relative;
-				height:77px;
 				color:@textWhite;
 				font-size:24px;
 				letter-spacing:1px;
-				-webkit-transition: border-left 1s ease,border-right 1s ease-out,width 1s ease;
-				-moz-transition: border-left 1s ease,border-right 1s ease-out,width 1s ease;
-				-o-transition: border-left 1s ease,border-right 1s ease-out,width 1s ease;
-				transition: border-left 1s ease,border-right 1s ease-out,width 1s ease;
 				z-index: 2;
+				.item-wrap{
+					display: block;
+					height:77px;
+					-webkit-transition: border-left 1s ease,border-right 1s ease-out,width 1s ease;
+					-moz-transition: border-left 1s ease,border-right 1s ease-out,width 1s ease;
+					-o-transition: border-left 1s ease,border-right 1s ease-out,width 1s ease;
+					transition: border-left 1s ease,border-right 1s ease-out,width 1s ease;
+				}
 				.nav-img-wrapper{
 					height:50px;
 					position:relative;
@@ -609,9 +612,11 @@ body.grant-2015 .grant-2015-content{
 						top:20px;
 					}
 					&.active, &:hover{
-						border-left:1px @nav-side-border solid;
+						.item-wrap{
+							border-left:1px @nav-side-border solid;
 						border-right:1px @nav-side-border solid;
-						padding-top:0px;
+						padding-top:0px;	
+						}
 						.nav-img-wrapper{
 							visibility: visible;
 							.nav-img{

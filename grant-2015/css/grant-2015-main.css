@@ -564,10 +564,14 @@ body.grant-2015 .grant-2015-content .grant-2015-nav li {
 body.grant-2015 .grant-2015-content .grant-2015-nav li a {
   display: block;
   position: relative;
-  height: 77px;
   color: #ffffff;
   font-size: 24px;
   letter-spacing: 1px;
+  z-index: 2;
+}
+body.grant-2015 .grant-2015-content .grant-2015-nav li a .item-wrap {
+  display: block;
+  height: 77px;
   -webkit-transition: border-left 1s ease, border-right 1s ease-out, width 1s ease;
   -moz-transition: border-left 1s ease, border-right 1s ease-out, width 1s ease;
   -o-transition: border-left 1s ease, border-right 1s ease-out, width 1s ease;
@@ -616,8 +620,8 @@ body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-home .nav-img {
   position: relative;
   top: 20px;
 }
-body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-home.active,
-body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-home:hover {
+body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-home.active .item-wrap,
+body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-home:hover .item-wrap {
   border-left: 1px #4dbacc solid;
   border-right: 1px #4dbacc solid;
   padding-top: 0px;

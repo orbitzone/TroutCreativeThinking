@@ -119,5 +119,12 @@ $( document ).ready(function() {
 			player.init('the-player',video);
 		}
 	});
+	var player_container = $('#the-player');
+	var video = player_container.data('video');
+	console.log(video);
+	if(video){
+		player.autoplay = false;
+		player.init('the-player',video);
+	}
 });
 

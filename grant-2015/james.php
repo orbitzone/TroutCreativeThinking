@@ -113,14 +113,6 @@
                   <div class="col-xs-12 spacing-bottom">
                     <div class="slider person-video">
                       <div class="slide">
-                        <div class="video-image">
-                          <img src="images/james/james-video.jpg" alt="James Video">
-                          <div class="play-button-wrapper" data-video="person-video">
-                            <img class="play-button" src="images/homepage/play-button.png">
-                          </div>
-                        </div>                        
-                      </div>
-                      <div class="slide">
                       <div class="video-wrapper">
                         <div class="video">
                           <figure class="player" id="the-player" data-video="Gh18sVLetRE">
@@ -130,6 +122,14 @@
                       <button type="button" class="close">
                         <i class="rbp-close-icon"></i>               
                       </button>                        
+                      </div>
+                      <div class="slide">
+                        <div class="video-image">
+                          <img src="images/james/james-video.jpg" alt="James Video">
+                          <div class="play-button-wrapper" data-video="person-video">
+                            <img class="play-button" src="images/homepage/play-button.png">
+                          </div>
+                        </div>                        
                       </div>
                     </div>                    
                   </div>

@@ -565,6 +565,7 @@ body.grant-2015 .grant-2015-content .individual-video .embed-responsive {
 }
 body.grant-2015 .grant-2015-content .individual-video iframe {
   z-index: 0;
+  position: absolute;
 }
 body.grant-2015 .grant-2015-content .grant-2015-nav {
   list-style: none;

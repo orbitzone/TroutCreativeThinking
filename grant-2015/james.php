@@ -36,7 +36,7 @@
         <!--HEADER SECTION -->
         <div class="wave-section wave-person-header">
           <div class="row row-edge banner-person background-blue">
-            <!--<div class="col-lg-12 col-edge background-james">
+            <div class="col-lg-12 col-edge background-james">
               <div class="container">
                 <div class="row row-limit">
                   <div class="col-lg-12">
@@ -50,7 +50,7 @@
                   </div>
                 </div>
               </div>
-            </div>-->
+            </div>
             <div class="menu-list container text-center">
               <div class="row row-limit-nav">
                 <ul class="grant-2015-nav">

@@ -13,4 +13,8 @@ $( document ).ready(function() {
 		$('.homepage-video .landing-video').fadeOut();
 		$('.grant2015-video').removeAttr("src");
 	});
+	$('.person-video').slick();
+	$('.person-video .play-button-wrapper').on('click', function(){
+		$('.person-video').slick('slickNext');
+	});
 });

@@ -111,11 +111,23 @@
               <div class="container">
                 <div class="row row-limit">
                   <div class="col-xs-12 spacing-bottom">
-                    <div class="individual-video">
-                      <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/Gh18sVLetRE?rel=0&amp;showinfo=0&amp;wmode=opaque"></iframe>
+                    <div class="slider person-video">
+                      <div class="slide">
+                        <div class="video-image">
+                          <img src="images/james/james-video.jpg" alt="James Video">
+                          <div class="play-button-wrapper" data-video="person-video">
+                            <img class="play-button" src="images/homepage/play-button.png">
+                          </div>
+                        </div>                        
                       </div>
-                    </div>
+                      <div class="slide">
+                        <div class="individual-video">
+                          <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/Gh18sVLetRE?rel=0&amp;showinfo=0&amp;wmode=opaque"></iframe>
+                          </div>
+                        </div>
+                      </div>
+                    </div>                    
                   </div>
                 </div>
               </div>

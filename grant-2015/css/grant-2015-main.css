@@ -456,6 +456,28 @@ body.grant-2015 .grant-2015-content .banner-person .banner-item-wrapper .person-
     height: 300px;
   }
 }
+body.grant-2015 .grant-2015-content .video-image {
+  position: relative;
+}
+body.grant-2015 .grant-2015-content .video-image img {
+  width: 100%;
+}
+body.grant-2015 .grant-2015-content .video-image .play-button-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -moz-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  -o-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+body.grant-2015 .grant-2015-content .video-image .play-button-wrapper img {
+  max-width: 100%;
+}
 body.grant-2015 .grant-2015-content .homepage-video .background-video {
   background: url('../images/homepage/video.jpg') no-repeat center center;
   height: 450px;

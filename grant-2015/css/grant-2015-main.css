@@ -545,6 +545,9 @@ body.grant-2015 .grant-2015-content .homepage-video .background-video .landing-v
     height: 280px;
   }
 }
+body.grant-2015 .grant-2015-content .individual-video {
+  overflow: hidden;
+}
 body.grant-2015 .grant-2015-content .grant-2015-nav {
   list-style: none;
   margin: 0;

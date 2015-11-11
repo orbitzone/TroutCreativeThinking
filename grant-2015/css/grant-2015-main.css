@@ -560,6 +560,8 @@ body.grant-2015 .grant-2015-content .individual-video iframe {
 body.grant-2015 .grant-2015-content .grant-2015-nav {
   list-style: none;
   margin: 0;
+  position: relative;
+  z-index: 9999;
 }
 body.grant-2015 .grant-2015-content .grant-2015-nav .nav-james .nav-img,
 body.grant-2015 .grant-2015-content .grant-2015-nav .nav-justin .nav-img,

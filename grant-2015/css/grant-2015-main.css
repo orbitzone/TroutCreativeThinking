@@ -549,7 +549,7 @@ body.grant-2015 .grant-2015-content .individual-video {
   overflow: hidden;
   position: relative;
   z-index: 0;
-  display: block;
+  display: none;
 }
 body.grant-2015 .grant-2015-content .individual-video .embed-responsive {
   position: relative;

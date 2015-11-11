@@ -13,4 +13,9 @@ $( document ).ready(function() {
 		$('.homepage-video .landing-video').fadeOut();
 		$('.grant2015-video').removeAttr("src");
 	});
+	$('iframe').each(function () {
+     $(this).css({
+         'height': this.height - 1
+     });
+});
 });

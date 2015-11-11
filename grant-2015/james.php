@@ -94,7 +94,7 @@
         </div>
         <!--//HEADER SECTION -->
         <!--INTRO SECTION -->
-        <div class="wave-section wave-content">
+        <div class="wave-section">
           <div class="row row-edge">
             <div class="col-lg-12 col-edge">
               <div class="container">
@@ -113,7 +113,7 @@
                   <div class="col-lg-12 spacing-bottom">
                     <div class="individual-video">
                       <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="//www.youtube.com/embed/Gh18sVLetRE?rel=0&amp;showinfo=0"></iframe>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Gh18sVLetRE?rel=0&amp;showinfo=0&amp;controls=0"></iframe>
                       </div>
                     </div>
                   </div>

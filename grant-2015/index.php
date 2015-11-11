@@ -135,7 +135,7 @@
                 <div class="video-wrapper">
                   <div class="embed-responsive embed-responsive-16by9">
                     <div class="iframe-wrapper">
-                      <iframe class="embed-responsive-item grant2015-video" data-videoID="https://www.youtube.com/embed/GTyO7yo_Yko?rel=0&amp;showinfo=0&amp;autoplay=1"></iframe>
+                      <iframe class="embed-responsive-item grant2015-video" data-videoID="https://www.youtube.com/embed/GTyO7yo_Yko?rel=0&amp;showinfo=0&amp;autoplay=1&amp;controls=2"></iframe>
                     </div>
                     <div class="close-button"><span class="fa fa-close"></span></div>
                   </div>

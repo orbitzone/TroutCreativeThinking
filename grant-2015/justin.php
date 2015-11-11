@@ -113,7 +113,7 @@
                   <div class="col-lg-12 spacing-bottom">
                     <div class="individual-video">
                       <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OAdkAA4f8Ro?rel=0&amp;showinfo=0"></iframe>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OAdkAA4f8Ro?rel=0&amp;showinfo=0&amp;controls=2"></iframe>
                       </div>
                     </div>
                   </div>

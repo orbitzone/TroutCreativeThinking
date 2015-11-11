@@ -121,11 +121,15 @@
                         </div>                        
                       </div>
                       <div class="slide">
-                        <div class="individual-video">
-                          <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/Gh18sVLetRE?rel=0&amp;showinfo=0&amp;wmode=opaque"></iframe>
-                          </div>
+                      <div class="video-wrapper">
+                        <div class="video">
+                          <figure class="player" id="the-player" data-video="Gh18sVLetRE">
+                          </figure>
                         </div>
+                      </div>
+                      <button type="button" class="close">
+                        <i class="rbp-close-icon"></i>               
+                      </button>                        
                       </div>
                     </div>                    
                   </div>

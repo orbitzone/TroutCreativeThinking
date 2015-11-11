@@ -456,6 +456,18 @@ body.grant-2015 .grant-2015-content .banner-person .banner-item-wrapper .person-
     height: 300px;
   }
 }
+body.grant-2015 .grant-2015-content .video-wrapper .video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+body.grant-2015 .grant-2015-content .video-wrapper .video iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
 body.grant-2015 .grant-2015-content .video-image {
   position: relative;
 }

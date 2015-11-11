@@ -683,7 +683,7 @@ body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-home:hover .nav-tex
 }
 body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-justin,
 body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-home {
-  z-index: 30;
+  z-index: 99999;
 }
 body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-justin.active,
 body.grant-2015 .grant-2015-content .grant-2015-nav li a.nav-james.active,

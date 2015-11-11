@@ -212,6 +212,14 @@ body.grant-2015 .grant-2015-content .donate-button-wrapper .donate-button a:focu
   color: #ffffff;
   text-decoration: none;
 }
+body.grant-2015 .grant-2015-content .wave-person-header {
+  position: relative;
+  z-index: 10;
+}
+body.grant-2015 .grant-2015-content .wave-content {
+  position: relative;
+  z-index: 1;
+}
 body.grant-2015 .grant-2015-content .wave-section {
   position: relative;
 }

@@ -94,7 +94,7 @@
         </div>
         <!--//HEADER SECTION -->
         <!--INTRO SECTION -->
-        <div class="wave-section">
+        <div class="wave-section wave-content">
           <div class="row row-edge">
             <div class="col-lg-12 col-edge">
               <div class="container">

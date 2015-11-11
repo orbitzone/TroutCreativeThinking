@@ -110,20 +110,20 @@
               </div>
               <div class="container">
                 <div class="row row-limit">
-                  <div class="col-lg-12">
-                    <h3 class="text-blue text-standard-heading">About James</h3>
-                    <p>James Millis is partnering with Red Cross and Friends of Manatuto, to restore water and sanitation facilities in remote villages in East Timor. The new dad will be cheering on the project from his home in Edithvale, Victoria, and plans to visit the villages in 2016.</p> 
-                  </div>
-                </div>
-              </div>
-              <div class="container">
-                <div class="row row-limit">
-                  <div class="col-lg-12 spacing-bottom">
+                  <div class="col-xs-12 spacing-bottom">
                     <div class="individual-video">
                       <div class="embed-responsive embed-responsive-16by9">
                         <iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/Gh18sVLetRE?rel=0&amp;showinfo=0&amp;wmode=opaque"></iframe>
                       </div>
                     </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row row-limit">
+                  <div class="col-lg-12">
+                    <h3 class="text-blue text-standard-heading">About James</h3>
+                    <p>James Millis is partnering with Red Cross and Friends of Manatuto, to restore water and sanitation facilities in remote villages in East Timor. The new dad will be cheering on the project from his home in Edithvale, Victoria, and plans to visit the villages in 2016.</p> 
                   </div>
                 </div>
               </div>

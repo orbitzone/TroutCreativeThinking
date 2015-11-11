@@ -97,7 +97,7 @@
         <div class="wave-section">
           <div class="row row-edge">
             <div class="col-lg-12 col-edge">
-              <!--<div class="container">
+              <div class="container">
                 <div class="row row-limit">
                   <div class="col-lg-12 spacing-big-top">
                     <div class="social-share">
@@ -107,7 +107,8 @@
                     </div>
                   </div>
                 </div>
-              </div>-->
+              </div>
+              <!--
               <div class="container">
                 <div class="row row-limit">
                   <div class="col-lg-12 spacing-bottom">
@@ -118,7 +119,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div>-->
               <div class="container">
                 <div class="row row-limit">
                   <div class="col-lg-12">

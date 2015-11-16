@@ -630,6 +630,9 @@
 .widget-big-button .rte {
   margin-bottom: 0 !important;
 }
+.widget-big-button h3 {
+  color: white;
+}
 .widget-big-button a {
   color: white;
 }

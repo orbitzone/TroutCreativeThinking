@@ -1009,6 +1009,9 @@ div.brand-pages .widget-html-image h3:after {
   margin: 0 auto;
   margin-top: 20px;
 }
+div.brand-pages .widget-html-image h3 {
+  color: white;
+}
 div.brand-pages .widget-html-image h3 a {
   color: white;
 }

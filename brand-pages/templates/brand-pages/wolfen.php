@@ -38,7 +38,9 @@
           <!--<figure class="image">
           </figure>-->
           <div class="rte">
-            <h3><a href="#">Precise<br/>Control</a></h3>
+            <h3>
+              <!-- Link: optional <a href="#"> -->Precise<br/>Control<!--  end Link</a> -->
+              </h3>
             <p>Meeting the highest industry standards, Wolfen products offer exceptional usability and control in a variety of demanding environments.</p>
           </div>
         </div>
@@ -50,7 +52,9 @@
           <!--<figure class="image">
           </figure>-->
           <div class="rte">
-            <h3><a href="#">Guaranteed<br/>Reliability</a></h3>
+            <h3>
+            <!-- Link: optional <a href="#"> -->Guaranteed<br/>Reliability<!--  end Link</a> -->
+            </h3>
             <p>Manufactured using high-grade materials and finishes, Wolfen is built for durability - and backed by a full 5-year warranty.</p>
           </div>
         </div>
@@ -62,7 +66,9 @@
           <!--<figure class="image">
           </figure>-->
           <div class="rte">
-            <h3><a href="#">Forward<br/>Thinking</a></h3>
+            <h3>
+              <!-- Link: optional <a href="#"> -->Forward<br/>Thinking<!--  end Link</a> -->
+            </h3>
             <p>Wolfen’s innovative designs incorporate the very latest technical advances to deliver new standards in durability and performance.</p>
           </div>
         </div>
@@ -136,8 +142,8 @@
       <div class="widget-html-image">
         <div class="rte">
           <h2>The Wolfen<br/>Difference</h2>
-          <p>Engineered for the most demanding commercial applications, Wolfen products are made to perform - all day, every day. Our innovative range is designed around the needs of users operating in specific environments, including Hospitals & Health Care, Education, Hospitality, Public Spaces and Sports & Leisure venues.</p>
-          <p>Our meticulous manufacturing approach ensures that all our solutions work as good as they look. Combining strength,precision and reliability, Wolfen delivers total peace of mind. That’s the Wolfen difference.</p>
+          <p>Engineered for the most demanding commercial applications, Wolfen products are made to perform - all day, every day. Our innovative range is designed around the needs of users operating in specific environments, including Hospitals &amp; Health Care, Education, Hospitality, Public Spaces and Sports &amp; Leisure venues.</p>
+          <p>Our meticulous manufacturing approach ensures that all our solutions work as good as they look. Combining strength, precision and reliability, Wolfen delivers total peace of mind. That’s the Wolfen difference.</p>
         </div>
       </div>
     <!-- End: HTML Widget-->
@@ -148,8 +154,10 @@
         <!-- Begin: HTML Widget-->  
         <div class="widget-big-button left">
           <div class="rte">
-            <a href="#"><span class="icon"><i class="rbp-sink-tap-icon"></i></span>
-            <span class="text">View Full<br/>Product Range</span></a>
+            <a href="#">
+              <span class="icon"><i class="rbp-sink-tap-icon"></i></span>
+              <span class="text">View Full<br/>Product Range</span>
+            </a>
           </div>            
         </div>
         <!-- End: HTML Widget-->
@@ -158,8 +166,10 @@
         <!-- Begin: HTML Widget-->  
         <div class="widget-big-button right">
           <div class="rte">
-            <a href="#"><span class="icon"><i class="rbp-manual-icon"></i></span>
-            <span class="text">Download<br/>Spec Guide</span></a>
+            <a href="#">
+              <span class="icon"><i class="rbp-manual-icon"></i></span>
+              <span class="text">Download<br/>Spec Guide</span>
+            </a>
           </div>            
         </div>
         <!-- End: HTML Widget-->

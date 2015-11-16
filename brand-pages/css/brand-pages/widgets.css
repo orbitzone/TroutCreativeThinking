@@ -655,6 +655,9 @@
 .widget-big-button a:hover {
   text-decoration: none;
 }
+.widget-big-button a:hover .text {
+  text-decoration: none;
+}
 @media (min-width: 768px) {
   .widget-big-button.left {
     margin-left: -15px;

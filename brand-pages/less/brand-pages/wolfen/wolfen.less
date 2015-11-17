@@ -98,11 +98,25 @@ div.brand-pages{
 				border: 1px solid #b3b4b7;
 				overflow: hidden;
 			}
+			a{
+				color: @bgGreen;
+				.transition(all 0.5s ease-out);
+				display: block;
+				&:hover{
+					color: @bgGreen;
+					text-decoration: none;
+					.transform(scale(1.05));
+				}
+			}
 			.rte{
 				text-align: left;
 				color: @bgGreen;
 				font-weight: 500;
+				a{
+					.transform-origin(center left);
+				}
 			}
+			
 		}
 	}
 	.the-wolfen-difference{
@@ -111,7 +125,21 @@ div.brand-pages{
 			max-width: 930px;
 			margin: 0 auto;
 			padding-top: 70px;
-			padding-bottom: 70px;
+			padding-bottom: 70px;			
+		}
+	}
+	.widget-big-button{
+		a{
+			display: block;
+			.transition(all 0.5s ease-out);
+			.transform-origin(center center);
+			&:hover{
+				text-decoration: none;
+				.transform(scale(1.05));
+				.text{
+					text-decoration: none;
+				}
+			}
 		}
 	}
 }

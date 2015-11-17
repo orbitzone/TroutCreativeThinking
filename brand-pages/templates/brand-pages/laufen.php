@@ -45,8 +45,13 @@
       <div class="col-sm-4">
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image">
+          <!-- If no image dont show
           <figure class="image">
+            <a href="#">
+            <img />
+            </a>
           </figure>
+          -->
           <div class="rte">
             <h3><a href="#">Swissness</a></h3>
             <p>'Swissness' is a word that defines LAUFEN's innovative approach to creating beautiful bathroom ceramics. It stands for many different things, but always embraces the concepts of outstanding quality, superb design, precise engineering and a passion for environmental sustainability.</p>
@@ -57,8 +62,13 @@
       <div class="col-sm-4">
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image">
+          <!-- If no image dont show
           <figure class="image">
+            <a href="#">
+            <img />
+            </a>
           </figure>
+          -->
           <div class="rte">
             <h3><a href="#">Quality</a></h3>
             <p>LAUFEN continually pushes the limits of technical possibility to create ground-breaking new ideas expressed through ceramics. Sophisticated production processes are balanced with a human touch. Each piece is hand finished to ensure the highest standards of finish are achieved.</p>
@@ -69,8 +79,13 @@
       <div class="col-sm-4">
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image">
+           <!-- If no image dont show
           <figure class="image">
+            <a href="#">
+            <img />
+            </a>
           </figure>
+          -->
           <div class="rte">
             <h3><a href="#">Design</a></h3>
             <p>At LAUFEN, design is a t the heart of every product. LAUFEN treats ceramics as an art form, collaborating with many of the world's leafing international architects and designers to make exciting new concepts a reality. Each design is brought to life using only natural raw materials such as china clay and quartz.</p>

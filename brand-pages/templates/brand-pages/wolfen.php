@@ -90,11 +90,15 @@
       <div class="col-sm-6 col-md-3">
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image">
-          <figure class="image">
-            <img src="./images/brand-pages/wolfen/wall-bubbler.jpg" alt="Wall bubbler">
-          </figure>
+            <figure class="image">
+              <a href="#"><!-- Link Optional-->
+                <img src="./images/brand-pages/wolfen/wall-bubbler.jpg" alt="Wall bubbler">
+              </a>
+            </figure>
           <div class="rte">
-            <p>122°<br/>Wall Bubbler</p>
+            <a href="">
+              <p>122°<br/>Wall Bubbler</p>
+            </a>
           </div>
         </div>
         <!-- End: HTML Widget-->
@@ -103,10 +107,14 @@
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image">
           <figure class="image">
-          <img src="./images/brand-pages/wolfen/sensor-operated-gooseneck-tap.jpg" alt="Sensor operated gooseneck tap">
+            <a href="#"><!-- Link Optional-->
+              <img src="./images/brand-pages/wolfen/sensor-operated-gooseneck-tap.jpg" alt="Sensor operated gooseneck tap">
+            </a>
           </figure>
           <div class="rte">
-            <p>Sensor Operated<br/>Gooseneck Tap</p>
+            <a href="#">
+              <p>Sensor Operated<br/>Gooseneck Tap</p>
+            </a>
           </div>
         </div>
         <!-- End: HTML Widget-->
@@ -115,10 +123,14 @@
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image">
           <figure class="image">
-          <img src="./images/brand-pages/wolfen/foot-operated-pedal-valve-kit.jpg" alt="Foot operated pedal valve kit">
+            <a href="#"><!-- Link Optional-->
+              <img src="./images/brand-pages/wolfen/foot-operated-pedal-valve-kit.jpg" alt="Foot operated pedal valve kit">
+            </a>
           </figure>
           <div class="rte">
-            <p>Foot Operated<br/>Pedal Valve Kit</p>
+            <a href="#">
+              <p>Foot Operated<br/>Pedal Valve Kit</p>
+            </a>
           </div>
         </div>
         <!-- End: HTML Widget-->
@@ -127,10 +139,14 @@
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image">
           <figure class="image">
-            <img src="./images/brand-pages/wolfen/pre-rinse-sink-mixer-with-pot-filler.jpg" alt="Pre rince sink mixer with pot filler">
+            <a href="#"><!-- Link Optional-->
+              <img src="./images/brand-pages/wolfen/pre-rinse-sink-mixer-with-pot-filler.jpg" alt="Pre rince sink mixer with pot filler">
+            </a>
           </figure>
           <div class="rte">
-            <p>Pre Rinse Sink<br/>Mixer with Pot Filler</p>
+            <a href="#">
+              <p>Pre Rinse Sink<br/>Mixer with Pot Filler</p>
+            </a>
           </div>
         </div>
         <!-- End: HTML Widget-->

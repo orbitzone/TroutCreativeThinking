@@ -1043,10 +1043,35 @@ div.brand-pages .feature-products .widget-html-image .image {
   border: 1px solid #b3b4b7;
   overflow: hidden;
 }
+div.brand-pages .feature-products .widget-html-image a {
+  color: #034437;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  display: block;
+}
+div.brand-pages .feature-products .widget-html-image a:hover {
+  color: #034437;
+  text-decoration: none;
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+}
 div.brand-pages .feature-products .widget-html-image .rte {
   text-align: left;
   color: #034437;
   font-weight: 500;
+}
+div.brand-pages .feature-products .widget-html-image .rte a {
+  -webkit-transform-origin: center left;
+  -moz-transform-origin: center left;
+  -ms-transform-origin: center left;
+  -o-transform-origin: center left;
+  transform-origin: center left;
 }
 div.brand-pages .the-wolfen-difference .widget-html-image {
   color: #363636;
@@ -1054,4 +1079,28 @@ div.brand-pages .the-wolfen-difference .widget-html-image {
   margin: 0 auto;
   padding-top: 70px;
   padding-bottom: 70px;
+}
+div.brand-pages .widget-big-button a {
+  display: block;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -ms-transform-origin: center center;
+  -o-transform-origin: center center;
+  transform-origin: center center;
+}
+div.brand-pages .widget-big-button a:hover {
+  text-decoration: none;
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+}
+div.brand-pages .widget-big-button a:hover .text {
+  text-decoration: none;
 }

@@ -108,8 +108,7 @@
                 <img src="images/brand-pages/laufen/video-1.jpg" alt="Video 1">
               </figure>
               <div class="slide-content">
-                <button type="button" class="play" data-video="231_3HKnAl4
-">
+                <button type="button" class="play" data-video="231_3HKnAl4">
                   <div class="text">
                     <p><b>Bathroom<br/>Culture</b></p>
                   </div>

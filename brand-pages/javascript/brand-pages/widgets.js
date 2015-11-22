@@ -193,7 +193,7 @@ var widgets = {
 		});
 		var m = 0;
 		$('.widget-video').each(function(){
-			var player_container = 'widget-video-player-'+m;
+		var player_container = 'widget-video-player-'+m;
 			$(this).find('.player').attr('id', player_container);
 			var parent = $(this).find('.video-slides');
 			$(this).find('.play').on('click', function(){
@@ -216,7 +216,7 @@ var widgets = {
 				}				
 			});
 			$(this).find('.close').on('click', function(){
-				player.stop(player_container);
+				player.stop();
 				parent.slick('slickPrev');
 			});
 			m=m+1;

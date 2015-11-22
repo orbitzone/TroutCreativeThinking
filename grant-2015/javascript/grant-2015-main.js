@@ -102,7 +102,13 @@ $( document ).ready(function() {
 	$('.homepage-video .landing-video').hide();
 	$(".homepage-video .cta-video").click(function(){
 		$('.homepage-video .landing-video').fadeIn();
-		$('.grant2015-video').attr("src",$('.grant2015-video').attr("data-videoID"));
+		//$('.grant2015-video').attr("src",$('.grant2015-video').attr("data-videoID"));
+		var player_container = $('#the-player');
+		var video = player_container.data('video');
+		if(video){
+			player.autoplay = true;
+			player.init('the-player',video);
+		}
 	});
 	$(".homepage-video .close-button").click(function(){
 		$('.homepage-video .landing-video').fadeOut();

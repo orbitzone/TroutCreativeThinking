@@ -112,7 +112,8 @@ $( document ).ready(function() {
 	});
 	$(".homepage-video .close-button").click(function(){
 		$('.homepage-video .landing-video').fadeOut();
-		$('.grant2015-video').removeAttr("src");
+		//$('.grant2015-video').removeAttr("src");
+		player.stop();
 	});
 	$('.person-video').slick();
 	$('.person-video .play-button-wrapper').on('click', function(){

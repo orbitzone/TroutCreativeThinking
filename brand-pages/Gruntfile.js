@@ -17,7 +17,9 @@ module.exports = function(grunt) {
               "css/brand-pages/widgets.css": "less/brand-pages/widgets/widgets.less",
               "css/brand-pages/friatek.css": "less/brand-pages/friatek/friatek.less",
               "css/brand-pages/laufen.css": "less/brand-pages/laufen/laufen.less",
-              "css/brand-pages/wolfen.css": "less/brand-pages/wolfen/wolfen.less"
+              "css/brand-pages/wolfen.css": "less/brand-pages/wolfen/wolfen.less",
+              "css/brand-pages/kado.css": "less/brand-pages/kado/kado.less",
+              "css/brand-pages/roca.css": "less/brand-pages/roca/roca.less"
           }
         ]
       }

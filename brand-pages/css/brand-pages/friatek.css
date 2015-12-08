@@ -494,9 +494,6 @@
   transition: all 1s ease-out;
   opacity: 1;
 }
-.widget-html-image {
-  padding: 20px;
-}
 .widget-html-image .image {
   margin: 0 auto;
   margin-bottom: 10px;

@@ -953,6 +953,7 @@ div.brand-pages {
   font-size: 16px;
   line-height: 2;
   font-weight: 300;
+  overflow-x: hidden;
 }
 div.brand-pages .rte {
   text-align: center;

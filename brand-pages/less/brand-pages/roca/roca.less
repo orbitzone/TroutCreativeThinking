@@ -8,9 +8,12 @@ div.brand-pages{
 	font-size: 16px;
 	line-height: 2;
 	font-weight: 300;
+	overflow-x: hidden;
 	.container{
-		padding-right: 0;
-		padding-left: 0;
+		@media (min-width: 768px) {
+			padding-right: 0;
+			padding-left: 0;
+		}
 	}
 	h2{
 		font-size: 40px;

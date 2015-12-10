@@ -759,6 +759,9 @@
 .widget-video-tabs .tabs-content .tab-block.active {
   display: block;
 }
+.widget-video-tabs .tabs-content .tab-block .moodboard .image {
+  margin-bottom: 20px;
+}
 .widget-video-tabs .tabs-content .tab-block .moodboard .top,
 .widget-video-tabs .tabs-content .tab-block .moodboard .bottom {
   margin-left: -5px;

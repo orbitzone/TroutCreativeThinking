@@ -144,7 +144,7 @@
       <div class="tabs-wrapper">
         <div class="tabs-list">
           <div class="active-menu">
-            <div class="text">Kartell by Laufen</div>
+            <div class="text">Lure + Cirque</div>
             <div class="show-more"><i class="fa fa-angle-down"></i></div>
           </div>
           <ul class="list-unstyled">

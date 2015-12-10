@@ -342,7 +342,7 @@
       <div class="tabs-wrapper">
         <div class="tabs-list">
           <div class="active-menu">
-            <div class="text">Roca</div>
+            <div class="text">Meridian</div>
             <div class="show-more"><i class="fa fa-angle-down"></i></div>
           </div>
           <ul class="list-unstyled">

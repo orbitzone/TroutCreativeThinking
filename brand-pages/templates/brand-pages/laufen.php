@@ -293,7 +293,7 @@
           <ul class="list-unstyled">
             <li><a href="#kartell" class="active">Kartell by Laufen</a></li>
             <li><a href="#one-ilbgno-alessi">One Ilbagno Alessi</a></li>
-            <li><a href="#paloma">Palomba</a></li>
+            <li><a href="#palomba">Palomba</a></li>
             <li><a href="#mimo">Mimo</a></li>
             <li><a href="#laufenpro">LaufenPro</a></li>
           </ul>
@@ -309,35 +309,11 @@
               </div>
             </div>
             <div class="moodboard">
-              <div class="top">
-                <div class="block block-left">
-                  <div class="image">
-                    <img src="images/brand-pages/laufen/kartell-block-1.jpg" alt="Kartell">
-                  </div>
-                </div>
-                <div class="block block-right">
-                  <div class="image">
-                    <img src="images/brand-pages/laufen/kartell-block-2.jpg" alt="Kartell">
-                  </div>
-                </div>
-              </div>
-              <div class="bottom">
-                <div class="block block-left">
-                  <div class="image">
-                    <img src="images/brand-pages/laufen/kartell-block-3.jpg" alt="Kartell">
-                  </div>
-                </div>
-                <div class="block block-middle">
-                  <div class="image">
-                    <img src="images/brand-pages/laufen/kartell-block-4.jpg" alt="Kartell">
-                  </div>
-                </div>
-                <div class="block block-right">
-                  <div class="image">
-                    <img src="images/brand-pages/laufen/kartell-block-5.jpg" alt="Kartell">
-                  </div>
-                </div>
-              </div>
+              <div class="moodboard">
+              <div class="image">
+                <img src="images/brand-pages/laufen/kartell.jpg" alt="Kartell">
+              </div>              
+            </div>
             </div>
             <div class="videos">
               <div class="main">
@@ -409,68 +385,13 @@
                The works of award winning designer, Stefano Giovannoni, tell stories that fascinate and enthral with their beautiful narrative qualities.
               </div>
             </div>
-            <div class="videos">
-              <div class="main">
-                <figure class="player">
-                              
-                </figure>
-              </div>                  
-              <div class="tabs-videos-slider">
-                <div class="video">
-                  <figure data-video="lSrYCW2b5d0">
-                    <img src="images/brand-pages/laufen/videos/video-thumb-1.jpg" alt="Video 1">
-                    <div class="icon text">
-                      <div class="icon-play">
-                        <i class="rbp-arrow-light-right-circle-icon"></i>
-                        <p>View Video</p>    
-                      </div>
-                      <div class="icon-playing">
-                        <p>Currently viewing</p>  
-                      </div>
-                    </div>
-                  </figure>
-                  <div class="description">
-                    Kartell by laufen - Design
-                  </div>
-                </div>                  
-                <div class="video">
-                  <figure data-video="-Ze2fWKP8nA">
-                    <img src="images/brand-pages/laufen/videos/video-thumb-2.jpg" alt="Video 2">
-                    <div class="icon text">
-                      <div class="icon-play">
-                        <i class="rbp-arrow-light-right-circle-icon"></i>
-                        <p>View Video</p>    
-                      </div>
-                      <div class="icon-playing">
-                        <p>Currently viewing</p>  
-                      </div>
-                    </div>
-                  </figure>
-                  <div class="description">
-                    Kartell by laufen - Collaboration
-                  </div>
-                </div>                  
-                <div class="video">
-                  <figure data-video="jZY2JbqE9xY">
-                    <img src="images/brand-pages/laufen/videos/video-thumb-3.jpg" alt="Video 3">
-                    <div class="icon text">
-                      <div class="icon-play">
-                        <i class="rbp-arrow-light-right-circle-icon"></i>
-                        <p>View Video</p>    
-                      </div>
-                      <div class="icon-playing">
-                        <p>Currently viewing</p>  
-                      </div>
-                    </div>
-                  </figure>
-                  <div class="description">
-                    The making of Kartell by Laufen - Reece bathrooms
-                  </div>
-                </div>                                  
-              </div>
+            <div class="moodboard">
+              <div class="image">
+                <img src="images/brand-pages/laufen/one-illbagno-alessi.jpg" alt="One Illbagno Alessi">
+              </div>              
             </div>
           </div>
-          <div id="paloma" class="tab-block">
+          <div id="palomba" class="tab-block">
             <div class="intro">
               <div class="logo">
                 <img src="images/brand-pages/laufen/palomba-collection-logo.svg" alt="Palomba Collection" width="413" height="28">
@@ -479,32 +400,11 @@
                 The shooting stars of the Italian design scene, Ludovica+Roberto Palomba, continue to create ground-breaking designs the world over.
               </div>
             </div>
-            <div class="videos">
-              <div class="main">
-                <figure class="player">
-                              
-                </figure>
-              </div>                  
-              <div class="tabs-videos-slider">
-                <div class="video">
-                  <figure data-video="ag9bSKcrhhI">
-                    <img src="images/brand-pages/laufen/videos/video-thumb-1.jpg" alt="Video 1">
-                    <div class="icon text">
-                      <div class="icon-play">
-                        <i class="rbp-arrow-light-right-circle-icon"></i>
-                        <p>View Video</p>    
-                      </div>
-                      <div class="icon-playing">
-                        <p>Currently viewing</p>  
-                      </div>
-                    </div>
-                  </figure>
-                  <div class="description">
-                    The Palomba Collection
-                  </div>
-                </div>                                 
-              </div>
-            </div>
+            <div class="moodboard">
+              <div class="image">
+                <img src="images/brand-pages/laufen/palomba.jpg" alt="Palomba">
+              </div>              
+            </div>            
           </div>
           <div id="mimo" class="tab-block">
             <div class="intro">
@@ -515,32 +415,11 @@
                 The driving force behind Phoenix Design in Germany, they bring together aesthetics, ergonomics and plenty of attitude.
               </div>
             </div>
-            <div class="videos">
-              <div class="main">
-                <figure class="player">
-                              
-                </figure>
-              </div>                  
-              <div class="tabs-videos-slider">
-                <div class="video">
-                  <figure data-video="LAn6KbehwMI">
-                    <img src="images/brand-pages/laufen/videos/video-thumb-1.jpg" alt="Video 1">
-                    <div class="icon text">
-                      <div class="icon-play">
-                        <i class="rbp-arrow-light-right-circle-icon"></i>
-                        <p>View Video</p>    
-                      </div>
-                      <div class="icon-playing">
-                        <p>Currently viewing</p>  
-                      </div>
-                    </div>
-                  </figure>
-                  <div class="description">
-                    Kartell by laufen - Design
-                  </div>
-                </div>                                 
-              </div>
-            </div>
+            <div class="moodboard">
+              <div class="image">
+                <img src="images/brand-pages/laufen/mimo.jpg" alt="Mimo">
+              </div>              
+            </div>         
           </div>
           <div id="laufenpro" class="tab-block">
             <div class="intro">
@@ -551,32 +430,11 @@
                 Design of the human touch is the credo of Process, the design hotbed lead by Peter Wirz and his interdisciplinary ideas team.
               </div>
             </div>
-            <div class="videos">
-              <div class="main">
-                <figure class="player">
-                              
-                </figure>
-              </div>                  
-              <div class="tabs-videos-slider">
-                <div class="video">
-                  <figure data-video="G3Hmdq4EEMc">
-                    <img src="images/brand-pages/laufen/videos/video-thumb-1.jpg" alt="Video 1">
-                    <div class="icon text">
-                      <div class="icon-play">
-                        <i class="rbp-arrow-light-right-circle-icon"></i>
-                        <p>View Video</p>    
-                      </div>
-                      <div class="icon-playing">
-                        <p>Currently viewing</p>  
-                      </div>
-                    </div>
-                  </figure>
-                  <div class="description">
-                    Kartell by laufen - Design
-                  </div>
-                </div>                                 
-              </div>
-            </div>
+            <div class="moodboard">
+              <div class="image">
+                <img src="images/brand-pages/laufen/laufenpro.jpg" alt="LaufenPro">
+              </div>              
+            </div>            
           </div>
         </div>        
       </div>

@@ -514,7 +514,7 @@
   color: white;
   font-size: 30px;
 }
-.widget-html-image.caption-black figcaption {
+.widget-html-image.caption-black .image figcaption {
   color: black;
 }
 .widget-video {
@@ -977,13 +977,13 @@ div.brand-pages a {
 div.brand-pages .half {
   margin-bottom: 30px;
 }
-div.brand-pages .widget-html-image {
+.widget-html-image {
   padding: 0;
 }
-div.brand-pages .widget-html-image .image {
+.widget-html-image .image {
   margin-bottom: 30px;
 }
-div.brand-pages .widget-html-image .image figcaption {
+.widget-html-image .image figcaption {
   position: absolute;
   top: inherit;
   bottom: 30px;
@@ -999,34 +999,34 @@ div.brand-pages .widget-html-image .image figcaption {
   color: white;
   font-size: 26px;
 }
-div.brand-pages .widget-block-five .text {
+.widget-block-five .text {
   font-size: 20px;
 }
-div.brand-pages .widget-video {
+.widget-video {
   overflow: hidden;
 }
-div.brand-pages .widget-video .slick-slider .slick-slide.slide-video {
+.widget-video .slick-slider .slick-slide.slide-video {
   background: black;
 }
-div.brand-pages .widget-video .slick-slider .slick-slide button.close i {
+.widget-video .slick-slider .slick-slide button.close i {
   color: white;
 }
-div.brand-pages .widget-video .slick-slider .slick-slide .play:hover .text,
-div.brand-pages .widget-video .slick-slider .slick-slide .play:hover .label {
+.widget-video .slick-slider .slick-slide .play:hover .text,
+.widget-video .slick-slider .slick-slide .play:hover .label {
   text-decoration: underline;
 }
-div.brand-pages .designers-header {
+.designers-header {
   margin-bottom: 0;
 }
-div.brand-pages .designers-header .rte {
+.designers-header .rte {
   max-width: 620px;
   margin: 0 auto;
 }
-div.brand-pages .widget-slider .slick-slider .slick-next:before,
-div.brand-pages .widget-slider .slick-slider .slick-prev:before {
+.widget-slider .slick-slider .slick-next:before,
+.widget-slider .slick-slider .slick-prev:before {
   font-size: 80px;
 }
-div.brand-pages .widget-slider .slick-slider .slick-prev {
+.widget-slider .slick-slider .slick-prev {
   left: 0;
   -webkit-transform: translateY(-50%) translateX(-50%);
   -moz-transform: translateY(-50%) translateX(-50%);
@@ -1034,7 +1034,7 @@ div.brand-pages .widget-slider .slick-slider .slick-prev {
   -o-transform: translateY(-50%) translateX(-50%);
   transform: translateY(-50%) translateX(-50%);
 }
-div.brand-pages .widget-slider .slick-slider .slick-next {
+.widget-slider .slick-slider .slick-next {
   right: 0;
   -webkit-transform: translateY(-50%) translateX(50%);
   -moz-transform: translateY(-50%) translateX(50%);
@@ -1042,43 +1042,43 @@ div.brand-pages .widget-slider .slick-slider .slick-next {
   -o-transform: translateY(-50%) translateX(50%);
   transform: translateY(-50%) translateX(50%);
 }
-div.brand-pages .widget-slider .slick-slider .slick-prev:before {
+.widget-slider .slick-slider .slick-prev:before {
   content: 'h';
 }
-div.brand-pages .widget-slider .slick-slider [dir='rtl'] .slick-prev:before {
+.widget-slider .slick-slider [dir='rtl'] .slick-prev:before {
   content: 'h';
 }
-div.brand-pages .widget-slider .slick-slider .slick-next:before {
+.widget-slider .slick-slider .slick-next:before {
   content: 'i';
 }
-div.brand-pages .widget-slider .slick-slider [dir='rtl'] .slick-next:iefore {
+.widget-slider .slick-slider [dir='rtl'] .slick-next:iefore {
   content: 'i';
 }
-div.brand-pages .widget-slider.carousel .widget-link {
+.widget-slider.carousel .widget-link {
   text-transform: none;
   padding: 8px 10px;
 }
-div.brand-pages .widget-slider.carousel .slick-slide {
+.widget-slider.carousel .slick-slide {
   padding: 0 38px;
 }
-div.brand-pages .widget-video-tabs .tabs-content .intro {
+.widget-video-tabs .tabs-content .intro {
   max-width: 610px;
   color: black;
 }
-div.brand-pages .widget-video-tabs .video .description {
+.widget-video-tabs .video .description {
   line-height: 1;
   color: black;
   font-size: 14px;
 }
-div.brand-pages .bg-brown {
+.bg-brown {
   margin-bottom: 70px;
 }
-div.brand-pages .bg-brown .widget-slider {
+.bg-brown .widget-slider {
   background: #5c5753;
   margin: 0;
   padding: 60px 15px;
 }
-div.brand-pages .bg-brown a {
+.bg-brown a {
   color: white;
   border-color: white;
 }

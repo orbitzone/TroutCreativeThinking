@@ -514,7 +514,7 @@
   color: white;
   font-size: 30px;
 }
-.widget-html-image.caption-black figcaption {
+.widget-html-image.caption-black .image figcaption {
   color: black;
 }
 .widget-video {

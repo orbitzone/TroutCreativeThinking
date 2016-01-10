@@ -1058,6 +1058,9 @@ div.brand-pages .half {
 .widget-slider.carousel .slick-slide {
   padding: 0 38px;
 }
+.widget-video-tabs a {
+  color: black;
+}
 .widget-video-tabs .tabs-content .intro {
   max-width: 610px;
   color: black;

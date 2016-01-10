@@ -514,6 +514,9 @@
   color: white;
   font-size: 30px;
 }
+.widget-html-image.caption-black figcaption {
+  color: black;
+}
 .widget-video {
   padding: 0;
   position: relative;
@@ -992,9 +995,6 @@ div.brand-pages .widget-html-image .image figcaption {
   transform: none;
   color: white;
   font-size: 26px;
-}
-div.brand-pages .widget-html-image .image figcaption.black {
-  color: black;
 }
 div.brand-pages .widget-block-five .text {
   font-size: 20px;

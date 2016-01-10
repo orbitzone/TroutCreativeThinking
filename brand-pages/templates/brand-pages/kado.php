@@ -69,11 +69,11 @@
     <div class="row">
       <div class="col-sm-6">
         <!-- Begin: HTML Widget-->  
-        <div class="widget-html-image">
+        <div class="widget-html-image caption-black">
           <figure class="image">
             <!--<a href="#">-->
             <img src="images/brand-pages/kado/retro-vanity-and-basin.jpg" alt="Retro Vanity &amp; Basin"/>
-            <figcaption class="black">Retro Vanity &amp; Basin</figcaption>
+            <figcaption>Retro Vanity &amp; Basin</figcaption>
             <!--</a>-->
           </figure>          
         </div>
@@ -81,11 +81,11 @@
       </div>
       <div class="col-sm-6">
         <!-- Begin: HTML Widget-->  
-        <div class="widget-html-image">
+        <div class="widget-html-image caption-black">
           <figure class="image">
             <!--<a href="#">-->
             <img src="images/brand-pages/kado/aspect-330-solid-wall-basin.jpg" alt="Aspect 330 Solid Wall Basin"/>
-            <figcaption class="black">Aspect 330 Solid Wall Basin</figcaption>
+            <figcaption>Aspect 330 Solid Wall Basin</figcaption>
             <!--</a>-->
           </figure>
         </div>

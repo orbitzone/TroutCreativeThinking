@@ -122,17 +122,13 @@
                 <i class="rbp-close-icon"></i>               
               </button>  
             </div>
-          </div>    
-        </div>
-        <!-- End: Video Widget-->
-        <!-- Begin: HTML Widget-->  
-        <div class="widget-html-image">
+          </div>
           <div class="rte">
             <h3>Bathroom Innovation Video</h3>
             <p>Each innovative Roca design has been carefully created to enhance the way people live everyday. Here are some of the latest products from the Roca collection.</p>
-          </div>
+          </div>    
         </div>
-        <!-- End: HTML Widget-->
+        <!-- End: Video Widget-->        
       </div>
       <div class="col-sm-4">
         <!-- Begin: HTML-Image Widget-->

@@ -596,6 +596,9 @@
   font-size: 24px;
   color: black;
 }
+.widget-video .rte h3 {
+  margin-top: 20px;
+}
 .widget-video .play {
   border: none;
   background: none;

@@ -89,26 +89,64 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-6">
-        <!-- Begin: HTML Widget-->  
-        <div class="widget-html-image">
-          <figure class="image">
-            <a href="#">
-              <img src="images/brand-pages/armitage-shanks/brand-overview.jpg" alt="Brand Overview"/>
-            </a>
-          </figure>
+        <!-- Begin: Video Widget-->
+        <div class="widget-video">
+          <div class="video-slides">
+            <div class="slide slide-front">
+              <figure class="image">
+                <img src="images/brand-pages/armitage-shanks/brand-overview.jpg" alt="Brand Overview"/>
+              </figure>
+              <div class="slide-content">
+                <button type="button" class="play" data-video="1Owm4b6sfVA">
+                  <i class="rbp-play-icon"></i>
+                  <span class="label">Brand Overview</span>  
+                </button>  
+              </div>
+            </div>
+            <div class="slide slide-video">
+              <div class="video-wrapper">
+                <div class="video">
+                  <figure class="player">
+                  </figure>
+                </div>              
+              </div>
+              <button type="button" class="close">
+                <i class="rbp-close-icon"></i>               
+              </button>  
+            </div>
+          </div>   
         </div>
-        <!-- End: HTML Widget-->
+        <!-- End: Video Widget-->        
       </div>
       <div class="col-sm-6">
-        <!-- Begin: HTML Widget-->  
-        <div class="widget-html-image">
-          <figure class="image">
-            <a href="#">
-              <img src="images/brand-pages/armitage-shanks/view-all-videos.jpg" alt="View All Videos"/>
-            </a>
-          </figure>
+        <!-- Begin: Video Widget-->
+        <div class="widget-video">
+          <div class="video-slides">
+            <div class="slide slide-front">
+              <figure class="image">
+                <img src="images/brand-pages/armitage-shanks/view-all-videos.jpg" alt="View All Videos"/>
+              </figure>
+              <div class="slide-content">
+                <button type="button" class="play" data-video="1Owm4b6sfVA">
+                  <i class="rbp-play-icon"></i>
+                  <span class="label">View All Videos</span>  
+                </button>  
+              </div>
+            </div>
+            <div class="slide slide-video">
+              <div class="video-wrapper">
+                <div class="video">
+                  <figure class="player">
+                  </figure>
+                </div>              
+              </div>
+              <button type="button" class="close">
+                <i class="rbp-close-icon"></i>               
+              </button>  
+            </div>
+          </div>   
         </div>
-        <!-- End: HTML Widget-->
+        <!-- End: Video Widget-->
       </div>
     </div>
   </div>
@@ -116,7 +154,7 @@
     <div class="row">
       <div class="col-xs-12">
       <!-- Begin: HTML Widget-->  
-        <div class="widget-html-image">
+        <div class="widget-html-image title">
            <div class="rte">
              <h3>Constant <br/>Innovation</h3>
            </div>  
@@ -157,7 +195,7 @@
     <div class="row">
       <div class="col-xs-12">
       <!-- Begin: HTML Widget-->  
-        <div class="widget-html-image">
+        <div class="widget-html-image title">
            <div class="rte">
              <h3>Infection <br/>Control Specialists</h3>
            </div>  
@@ -198,7 +236,7 @@
     <div class="row">
       <div class="col-xs-12">
       <!-- Begin: HTML Widget-->  
-        <div class="widget-html-image">
+        <div class="widget-html-image title">
            <div class="rte">
              <h3>Feature Products</h3>
              <p>Armitage Shanks has a wide range of tapware &amp; sanitaryware</p>
@@ -212,7 +250,7 @@
     <div class="row">
       <div class="col-xs-12">
       <!-- Begin: HTML Widget-->  
-        <div class="widget-html-image">
+        <div class="widget-html-image feature-products">
           <figure class="image">
             <a href="#">
               <img src="images/brand-pages/armitage-shanks/full-range.jpg" alt="Full Range"/>
@@ -304,7 +342,7 @@
           <figure class="image">
             <!--<a href="#">-->
             <img src="images/brand-pages/armitage-shanks/integral-tmv.jpg" alt="2007 launhed tapware with integral tmv"/>
-            <figcaption><strong>2007</strong> launhed tapware with integral tmv</figcaption>
+            <figcaption><strong>2007</strong> launched tapware with integral tmv</figcaption>
             <!--</a>-->
           </figure>
         </div>

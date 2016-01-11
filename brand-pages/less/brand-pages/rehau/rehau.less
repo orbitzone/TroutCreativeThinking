@@ -1,0 +1,246 @@
+@import "../widgets/widgets.less";
+@import "_variables.less";
+
+
+div.brand-pages{
+	text-align: left;
+	color: @grey;
+	font-size: 16px;
+	line-height: 1.8;
+	font-weight: 300;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;	    
+	@media (min-width: @screen-sm){
+		font-size: 20px;
+	}
+	h2{
+		color: black;
+		position: relative;
+		font-size: 33px;
+		margin-bottom: 31px;
+		&:after{
+			position: absolute;
+			bottom: -18px;
+			left: 0;
+			content: " ";
+			display: block;
+			height: 4px;
+			width: 21px;
+			background: black;
+		}
+	}
+	h3{
+		color: white;
+		font-size: 25px;
+		margin-bottom: 4px;
+	}
+	h4{
+		color: @green;
+		position: relative;
+		font-size: 25px;
+		font-weight: 300;
+		&:after{
+			content: " ";
+			display: block;
+			width: 10px;
+			height: 3px;
+			background: white;
+			position: absolute;
+			bottom: -10px;
+			left: 0;
+		}
+	}
+	p{
+		margin: 0 0 24px;
+    letter-spacing: 0.05px;
+	}
+	.container{
+		margin-bottom: 60px;
+	}
+	.padding-less{
+		.row{
+			margin: 0 auto;
+			.col-sm-6,
+			.col-sm-4,
+			.col-sm-3,
+			.col-sm-12,
+			.col-sm-2{
+				padding: 0;
+			}
+		}
+	}
+	.bg-grey{
+		.widget-video{
+			padding: 10px;
+			@media (min-width: @screen-sm){
+				padding: 60px;
+			}
+			background: @lighterGrey;
+		}
+	}
+	.rte{
+		text-align: left;
+	}
+	.widget-logo{
+		background: @darkGrey;
+		padding-bottom: 40px;
+	}
+	.intro{
+		padding-top: 40px;
+		h2{
+			font-size: 33px;
+			line-height: 1.1;
+			@media (min-width: @screen-sm){
+				padding-left: 20px;
+				&:after{
+					left: 20px;
+				}
+			}
+			@media (min-width: @screen-md){
+				padding-left: 120px;
+				&:after{
+					left: 120px;
+				}
+			}
+			@media (min-width: @screen-lg){
+				padding-left: 173px;
+				&:after{
+					left: 173px;
+				}
+			}
+		}
+	}
+	.intro-copy{
+		color: #7d8c93;
+		padding-right: 40px;
+		padding-top: 26px;
+		.rte{
+	    padding-right: 64px;
+	    font-size: 18px;
+	    line-height: 1.6;
+		}
+	}
+	.product-profiles{
+		margin-bottom: 0;
+		.row{
+			margin-left: -27px;
+			margin-right: -27px;
+			.col-sm-6{
+				padding-right: 27px;
+				padding-left: 27px;
+			}
+		}
+		.product-profile{
+			margin-bottom: 25px;
+			@media (min-width: @screen-sm){
+				margin-bottom: 54px;
+			}
+			.image{
+				margin-bottom: 0;
+				figcaption{
+					.transform(none);
+					top: 20px;
+					left: 0;
+					text-align: right;
+					font-size: 20px;
+					padding-right: 20px;
+				}
+			}
+			&.first{
+				.image{
+					margin-bottom: 0;
+					figcaption{
+						.transform(none);
+						top: 20px;
+						left: 0;
+						text-align: left;
+						font-size: 20px;
+						padding-right: 0;
+						padding-left: 20px;
+					}
+				}	
+			}
+		}
+	}
+	.case-studies{
+		.row{
+			margin-left: -27px;
+			margin-right: -27px;
+			.col-sm-6{
+				padding-right: 27px;
+				padding-left: 27px;
+			}
+		}
+		.case-study{
+			padding: 64px 0px 14px 40px;
+			background: @darkGrey;
+			color: white;
+			margin-bottom: 25px;
+			.button{
+				color: @green;
+				font-size: 45px;
+			}
+			p{
+		    font-size: 18px;
+		    padding-right: 200px;
+		    line-height: 1.5;
+		    margin-bottom: 10px;
+			}
+		}
+	}
+	
+	.main-video{
+		.play{
+			i{
+				display: block;
+				width: (148px/2);
+				height: (148px/2);
+				background-size: (148px/2) (148px/2);
+				background-image: url(../../images/brand-pages/rehau/play.png);
+				@media (min-width: @screen-md){
+					width: 148px;
+					height: 148px;
+					background-size: 148px 148px;
+				}
+				&:before{
+					display: none;
+					content: " ";
+				}
+			}
+			.label{
+				display: none;
+			}
+		}
+	}
+	.tripplets{
+		.row{
+			margin-left: -8px;
+			margin-right: -8px;
+		}
+		.col-sm-4{
+			padding: 0 8px;
+		}
+	}
+	.bottom-links{
+		.slide-front{
+			background: @green;
+			.play{
+				i{
+					font-size: 40px;
+				}
+			}
+			.label{
+				font-size: 20px;
+			}
+		}
+		.image{
+			figcaption{
+				font-size: 20px;
+				font-weight: 500;
+				i{
+					font-size: 30px;
+				}
+			}
+		}
+	}
+}

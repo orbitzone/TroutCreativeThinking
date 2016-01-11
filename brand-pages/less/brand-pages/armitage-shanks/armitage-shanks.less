@@ -4,11 +4,11 @@
 div.brand-pages{
 	font-size: 20px;
 	text-align: center;
+			-webkit-font-smoothing: antialiased;
+	  -moz-osx-font-smoothing: grayscale;	
 	h1,h2,h3,h4,h5,h6,a,button,input,textarea,select,p{
 		font-family:'Frutiger W01', helvetica, sans-serif;
 		font-weight: 300;
-		-webkit-font-smoothing: antialiased;
-	  -moz-osx-font-smoothing: grayscale;	
 	  line-height: 1.4;
 	  @media (min-width: @screen-sm){
 			line-height: 1.5;
@@ -60,8 +60,10 @@ div.brand-pages{
 		text-decoration: @h3TextDecoration;
 		text-transform: @h3TextTransform;
 		text-align: center;
+		line-height: 1.2;
 		a{
 			color: @h3Color;
+			line-height: 1.2;
 		}
 		@media (min-width: @screen-lg){
 			font-size: @h3FontSize;
@@ -74,74 +76,12 @@ div.brand-pages{
 		text-transform: uppercase;
 		color: white;
 		font-weight: bold;
-		padding: 10px 30px;
-		max-width: 300px;
+		padding: 9px 30px;
+		max-width: 275px;
 		width: 100%;
 	}
 	.bg-grey{
 		background: @grey;
-	}
-	.history{
-		margin-bottom: 0;
-		padding-top: 0;
-		.image{
-			margin-bottom:0;
-			padding: 15px 0; 
-			@media (min-width: @screen-md){
-			margin-bottom: 30px;
-			}
-			figcaption{
-				text-transform: uppercase;
-				.transform(none);
-				top: inherit;
-				bottom: 20px;
-				padding: 0 30px;
-				strong{
-					color: @headerColor;
-				}
-			}
-		}
-		.title{
-			padding-top: 70px;
-			padding-bottom: 50px;
-		}
-		.row{
-			margin: 0;
-			.col-xs-12,
-			.col-sm-6{
-				background: @grey;
-			}
-			.col-sm-6{
-				&:first-child{
-					@media (min-width: @screen-md){
-					padding-left: 30px;
-					}
-				}
-				&:last-child{
-					@media (min-width: @screen-md){
-						padding-right: 30px;
-					}
-				}
-			}
-		}
-		.widget-html-image{
-			&.dark{
-				.image{
-					figcaption{
-						color: @dark;
-					}
-				}
-			}
-			&.dark-strong{
-			.image{
-					figcaption{
-						strong{
-							color: @dark;
-						}
-					}
-				}	
-			}
-		}			
 	}
 	.padding-less{
 		.row{
@@ -169,12 +109,30 @@ div.brand-pages{
 		.col-sm-4{
 			&:first-child{
 				.widget-html-image{
-					border-right: 1px solid @grey;
+					&:after{
+						width: 1px;
+						height: 98px;
+						position: absolute;
+						right: 0;
+						top: 50%;
+						.transform(translateY(-50%));
+						background: @grey;
+						content: " ";
+					}
 				}
 			}
 			&:last-child{
 				.widget-html-image{
-					border-left: 1px solid @grey;
+					&:after{
+						width: 1px;
+						height: 98px;
+						position: absolute;
+						left: 0;
+						top: 50%;
+						.transform(translateY(-50%));
+						background: @grey;
+						content: " ";
+					}
 				}
 			}
 			.widget-html-image{
@@ -194,6 +152,9 @@ div.brand-pages{
 		margin-top: 20px;
 		padding: 18px 38px;
 		font-size: 20px;
+	}
+	.widget-logo{
+		padding: 44px 0 0;
 	}
 	.widget-slider{
 		.slick-dots{
@@ -238,6 +199,18 @@ div.brand-pages{
 		}		
 	}
 	.widget-html-image{
+		&.title{
+			padding-top: 50px;
+			p{
+				margin-top: 18px;
+			}
+		}
+		&.feature-products{
+			padding: 40px 0;
+			.image{
+				margin-bottom: 70px;
+			}
+		}
 		h3{
 			margin: 0;
 		}
@@ -318,8 +291,21 @@ div.brand-pages{
 			}			
 		}
 		.play{
+			i{
+				font-size: 70px;
+				&:before{
+					content: "\6b";
+				}
+			}
 			.label{
-				display: none;
+				display: block;
+		    font-weight: 500;
+		    color: @h1Color;
+		    font-size: 32px;
+		    max-width: 200px;
+		    margin: 0 auto;
+		    text-align: center;
+		    white-space: normal;
 			}
 		}
 	}
@@ -348,5 +334,77 @@ div.brand-pages{
 				}
 			}
 		}		
+	}
+
+	.history{
+		margin-bottom: 0;
+		padding-top: 0;
+		.image{
+			margin-bottom:0;
+			padding: 15px 0; 
+			@media (min-width: @screen-md){
+				padding: 0;
+				margin-bottom: 30px
+			}
+			figcaption{
+				text-transform: uppercase;
+				.transform(none);
+				top: inherit;
+				bottom: 20px;
+				padding: 0 30px;
+				strong{
+					color: @headerColor;
+				}
+			}
+		}
+		.title{
+			padding-top: 70px;
+			padding-bottom: 50px;
+		}
+		.row{
+			margin: 0;
+			.col-xs-12,
+			.col-sm-6{
+				background: @grey;
+			}
+			.col-sm-6{
+				&:first-child{
+					@media (min-width: @screen-md){
+					padding-left: 30px;
+					}
+				}
+				&:last-child{
+					@media (min-width: @screen-md){
+						padding-right: 30px;
+					}
+				}
+			}
+		}
+		.widget-html-image{
+			.image{
+				figcaption{
+					font-size: 37px;
+					line-height: 1;
+					bottom: 38px;
+					padding: 0 40px;
+				}
+			}
+			&.dark{
+				.image{
+					figcaption{
+						color: @dark;
+					}
+				}
+			}
+			&.dark-strong{
+			.image{
+					figcaption{
+						strong{
+							color: @dark;
+						}
+					}
+				}	
+			}
+		}			
 	}
 }

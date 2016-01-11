@@ -1,29 +1,106 @@
 <div class="brand-pages">
-  <div class="container">
-    <!-- Begin: Logo Widget Start -->
-    <div class="widget-logo">
-      <header role="banner">
-        <h1>
-          <a href="/">
-           <img src="images/brand-pages/kado/kado-logo.png" width="184" alt="Kado"><!-- Set the image width-->
-          </a>
-        </h1> 
-      </header>
-    </div>      
-    <!-- End:  Logo widget -->
+  <div class="container visible-xs-block">
+    <div class="row">
+      <div class="col-xs-12">
+        <!-- Begin: Logo Widget Start -->
+        <div class="widget-logo">
+          <header role="banner">
+            <h1>
+              <a href="/">
+               <img src="images/brand-pages/rehau/rehau-logo.png" width="184" alt="Rehau"><!-- Set the image width-->
+              </a>
+            </h1> 
+          </header>
+        </div>      
+        <!-- End:  Logo widget -->
+      </div>
+    </div>
   </div>
-
-
+  <div class="container visible-xs-block">
+    <div class="row">
+      <div class="col-xs-12">
+        <!-- Begin: Logo Widget Start -->
+        <div class="widget-html-image">
+          <figure class="image">
+            <!--  <a href="#">-->
+            <img src="images/brand-pages/rehau/mobile-banner.jpg" alt="Rehau Enwickelt in Deutschland. Ohne Kompromisse."><!-- Set the image width-->
+            <!-- </a>-->            
+          </figure>
+        </div>      
+        <!-- End:  Logo widget -->
+      </div>
+    </div>
+  </div>
+  <div class="container hidden-xs">
+    <div class="row">
+      <div class="col-xs-12">
+        <!-- Begin: Logo Widget Start -->
+        <div class="widget-html-image">
+          <figure class="image">
+            <!--  <a href="#">-->
+            <img src="images/brand-pages/rehau/banner.jpg" alt="Rehau Enwickelt in Deutschland. Ohne Kompromisse."><!-- Set the image width-->
+            <!-- </a>-->            
+          </figure>
+        </div>      
+        <!-- End:  Logo widget -->
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <!-- Begin: HTML Widget-->  
+        <div class="widget-html-image intro">
+          <div class="rte">
+            <h2>German engineered.<br/>Without compromise.</h2>
+          </div>
+        </div>
+        <!-- End: HTML Widget-->
+      </div>
+      <div class="col-sm-6">
+        <!-- Begin: HTML Widget-->  
+        <div class="widget-html-image intro-copy">
+          <div class="rte">
+            As one of the world’s leading polymer specialists, Rehau has been creating highly innovative plumbing solutions for over 50 years. Each product that carries the Rehau name stands as a symbol of technical excellence. 
+          </div>          
+        </div>
+        <!-- End: HTML Widget-->
+      </div>
+    </div>
+  </div>
   <div class="container bg-grey">
-    <!-- Begin: HTML Widget-->  
-        <div class="widget-html-image">
-          <figure class="image">
-          <!--  <a href="#">-->
-            <img src="images/brand-pages/kado/banner.jpg" alt="Kado products"/>
-            <!--</a>-->
-          </figure>
+    <div class="row">
+      <div class="col-xs-12">
+        <!-- Begin: Video Widget-->
+        <div class="widget-video main-video">
+          <div class="video-slides">
+            <div class="slide slide-front">
+              <figure class="image">
+                <img src="images/brand-pages/rehau/video.jpg" alt="Rehau Video"/>
+              </figure>
+              <div class="slide-content">
+                <button type="button" class="play" data-video="1Owm4b6sfVA">
+                  <i class="rbp-play-icon"></i>
+                  <span class="label">Video</span>  
+                </button>  
+              </div>
+            </div>
+            <div class="slide slide-video">
+              <div class="video-wrapper">
+                <div class="video">
+                  <figure class="player">
+                  </figure>
+                </div>              
+              </div>
+              <button type="button" class="close">
+                <i class="rbp-close-icon"></i>               
+              </button>  
+            </div>
+          </div>   
         </div>
-        <!-- End: HTML Widget-->
+        <!-- End: Video Widget-->
+      </div>
+    </div>
   </div>
   <div class="container">
     <div class="row">
@@ -38,8 +115,9 @@
           </figure>
           -->
           <div class="rte">
-            <h3><!--<a href="#">-->Hotel Inspired Living<!---</a>--></h3>
-            <p>Kado delivers Hotel inspired living to your bathroom space. With unique uncompromised features Kado bathroom products will set your bathroom apart.<br/> Each piece oozes contemporary elegance and sophistication so you can emulate your favorite hotel bathroom at home.</p>
+            <h2>Rautitan One</h2>
+            <p>Rautitan One is Rehau’s universal brass fitting for use with PE-X hot &amp; cold water as well as gas applications. It’s been designed to work with Rehau’s current polymer compression sleeve, offering unrivalled adaptability each day.</p>
+            <p>Replacing Rehau’s old brass , Rautitan One is the only gas fitting in Australia approved for use with a polymer compression sleeve. 100% corrosion proof and fully reversible, it’s 20% faster to install and increases compression tool battery life by 40%. </p>
           </div>
         </div>
         <!-- End: HTML Widget-->
@@ -47,6 +125,90 @@
     </div>
   </div>
 
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <!-- Begin: HTML Widget-->  
+        <div class="widget-html-image">
+          <figure class="image">
+            <!--<a href="#">-->
+            <img src="images/brand-pages/rehau/rautitan-one.jpg" alt="Rautitan One"/>
+            <!--</a>-->
+          </figure>
+        </div>
+        <!-- End: HTML Widget-->
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <!-- Begin: HTML Widget-->  
+        <div class="widget-html-image">
+          <div class="rte">
+            <h2>Product profiles</h2>
+          </div>
+        </div>
+        <!-- End: HTML Widget-->
+      </div>
+    </div>
+  </div>
+  <div class="container product-profiles">
+    <div class="row">
+      <div class="col-sm-6">
+        <!-- Begin: HTML Widget-->  
+        <div class="widget-html-image product-profile first">
+          <figure class="image">
+            <!--<a href="#">-->
+            <img src="images/brand-pages/rehau/hot-cold-water.jpg" alt="Hot and cold water"/>
+            <figcaption>Hot &amp; cold water</figcaption>
+            <!--</a>-->
+          </figure>
+        </div>
+        <!-- End: HTML Widget-->
+      </div>
+      <div class="col-sm-6">
+        <!-- Begin: HTML Widget-->  
+        <div class="widget-html-image product-profile">
+          <figure class="image">
+            <!--<a href="#">-->
+            <img src="images/brand-pages/rehau/gas.jpg" alt="Gas"/>
+            <figcaption>Gas</figcaption>
+            <!--</a>-->
+          </figure>
+        </div>
+        <!-- End: HTML Widget-->
+      </div>
+    </div>
+  </div>
+  <div class="container case-studies">
+    <div class="row">
+      <div class="col-sm-6">
+        <!-- Begin: HTML Widget-->  
+        <div class="widget-html-image case-study">
+          <div class="rte">
+            <h3>Case study:</h3>
+            <h4>Hot &amp; cold water</h4>
+            <p>Fiona Stanley Hospital is the largest building project ever undertaken for the Government of Western Australia.</p>
+            <a href="#" class="button"><i class="rbp-arrow-light-right-circle-icon"></i><span class="sr-only">Read more</span></a>
+          </div>
+        </div>
+        <!-- End: HTML Widget-->
+      </div>
+      <div class="col-sm-6">
+        <!-- Begin: HTML Widget-->  
+        <div class="widget-html-image case-study">
+          <div class="rte">
+            <h3>Case study:</h3>
+            <h4>Gas</h4>
+            <p>Fiona Stanley Hospital is the largest building project ever undertaken for the Government of Western Australia.</p>
+            <a href="#" class="button"><i class="rbp-arrow-light-right-circle-icon"></i><span class="sr-only">Read more</span></a>
+          </div>
+        </div>
+        <!-- End: HTML Widget-->
+      </div>
+    </div>
+  </div>
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
@@ -60,196 +222,95 @@
           </figure>
           -->
           <div class="rte">
-            <h3><!--<a href="#">-->Feature Products<!--</a>--></h3>
+            <h2>Manufacturing</h2>
+            <p>Others have factories. We have the Rehau Innovation Centre. It’s where we continuously refine the development of our products to deliver absolute performance and reliability for our customers. Using state of the art robotic technology in our manufacturing process, we apply the world’s most advanced materials to craft products with tolerances of 100th of a millimeter.</p>
           </div>
         </div>
         <!-- End: HTML Widget-->
       </div>
     </div>
+  </div>
+  <div class="container tripplets">
+    <div class="row">
+      <div class="col-sm-4">
+        <!-- Begin: HTML Widget-->  
+        <div class="widget-html-image">
+          <figure class="image">
+            <!--<a href="#">-->
+            <img src="images/brand-pages/rehau/manufacturing-1.jpg" alt="Gas"/>
+            <!--</a>-->
+          </figure>
+        </div>
+        <!-- End: HTML Widget-->
+      </div>
+      <div class="col-sm-4">
+        <!-- Begin: HTML Widget-->  
+        <div class="widget-html-image">
+          <figure class="image">
+            <!--<a href="#">-->
+            <img src="images/brand-pages/rehau/manufacturing-2.jpg" alt="Gas"/>
+            <!--</a>-->
+          </figure>
+        </div>
+        <!-- End: HTML Widget-->
+      </div>
+      <div class="col-sm-4">
+        <!-- Begin: HTML Widget-->  
+        <div class="widget-html-image">
+          <figure class="image">
+            <!--<a href="#">-->
+            <img src="images/brand-pages/rehau/manufacturing-3.jpg" alt="Gas"/>
+            <!--</a>-->
+          </figure>
+        </div>
+        <!-- End: HTML Widget-->
+      </div>
+    </div>
+  </div>
+  <div class="container bottom-links padding-less">
     <div class="row">
       <div class="col-sm-6">
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image">
           <figure class="image">
-            <!--<a href="#">-->
-            <img src="images/brand-pages/kado/retro-vanity-and-basin.jpg" alt="Retro Vanity &amp; Basin"/>
-            <figcaption class="black">Retro Vanity &amp; Basin</figcaption>
-            <!--</a>-->
-          </figure>          
-        </div>
-        <!-- End: HTML Widget-->
-      </div>
-      <div class="col-sm-6">
-        <!-- Begin: HTML Widget-->  
-        <div class="widget-html-image">
-          <figure class="image">
-            <!--<a href="#">-->
-            <img src="images/brand-pages/kado/aspect-330-solid-wall-basin.jpg" alt="Aspect 330 Solid Wall Basin"/>
-            <figcaption class="black">Aspect 330 Solid Wall Basin</figcaption>
-            <!--</a>-->
+            <a href="#">
+              <img src="images/brand-pages/rehau/download-brochure.jpg" alt="Download Rehau Brochure"/>
+              <figcaption><i class="rbp-download-icon"></i><br/>Download Brochure</figcaption>
+            </a>
           </figure>
         </div>
         <!-- End: HTML Widget-->
       </div>
       <div class="col-sm-6">
-        <!-- Begin: HTML Widget-->  
-        <div class="widget-html-image">
-          <figure class="image">
-            <!--<a href="#">-->
-            <img src="images/brand-pages/kado/classic-freestanding-bath.jpg" alt="Classic Freestanding Bath"/>
-            <figcaption>Classic Freestanding Bath</figcaption>
-            <!--</a>-->
-          </figure>
+        <!-- Begin: Video Widget-->
+        <div class="widget-video">
+          <div class="video-slides">
+            <div class="slide slide-front">
+              <figure class="image">
+                <img src="images/brand-pages/rehau/bottom-video.jpg" alt="--"/>
+              </figure>
+              <div class="slide-content">
+                <button type="button" class="play" data-video="1Owm4b6sfVA">
+                  <i class="rbp-play-icon"></i>
+                  <span class="label">Videos</span>  
+                </button>  
+              </div>
+            </div>
+            <div class="slide slide-video">
+              <div class="video-wrapper">
+                <div class="video">
+                  <figure class="player">
+                  </figure>
+                </div>              
+              </div>
+              <button type="button" class="close">
+                <i class="rbp-close-icon"></i>               
+              </button>  
+            </div>
+          </div>   
         </div>
-        <!-- End: HTML Widget-->
-      </div>
-      <div class="col-sm-6">
-        <!-- Begin: HTML Widget-->  
-        <div class="widget-html-image">
-          <figure class="image">
-            <!--<a href="#">-->
-            <img src="images/brand-pages/kado/lux-back-to-wall-pan.jpg" alt="Lux Back to Wall Pan"/>
-            <figcaption>Lux Back to Wall Pan</figcaption>
-            <!--</a>-->
-          </figure>
-        </div>
-        <!-- End: HTML Widget-->
+        <!-- End: Video Widget-->
       </div>
     </div>
   </div>
-
-  <div class="container bg-brown">
-    <!-- Begin: Slider/Carousel Widget Start-->
-    <div class="widget-slider carousel">
-      <div class="slides" data-slides-to-show="1" data-slides-to-scroll="1">
-        <div class="slide">
-          <figure class="image">
-            <a href="http://www.reece.com.au/assets/brands/820000/Laufen-SaphirKeramik.pdf">
-              <img src="images/brand-pages/laufen/brochure-2.jpg" alt="Brochure 2">  
-            </a>
-          </figure>
-          <div class="text">
-            <a href="http://www.reece.com.au/assets/brands/820000/Laufen-SaphirKeramik.pdf" class="widget-link">Download brochure</a>
-          </div>
-        </div>        
-      </div>
-    </div>    
-    <!-- End: Slider/Carousel Widget-->       
-  </div>
-
-
-  <div class="container">
-    <!-- Begin: Video Tabs Widget-->
-    <div class="widget-video-tabs">
-      <div class="tabs-wrapper">
-        <div class="tabs-list">
-          <div class="active-menu">
-            <div class="text">Lure + Cirque</div>
-            <div class="show-more"><i class="fa fa-angle-down"></i></div>
-          </div>
-          <ul class="list-unstyled">
-            <li><a href="#lure-cirque" class="active">Lure + Cirque</a></li>
-            <li><a href="#lux">Lux</a></li>
-            <li><a href="#classic">Classic</a></li>
-            <li><a href="#arc">Arc</a></li>
-            <li><a href="#aspect">Aspect</a></li>
-            <li><a href="#retro">Retro</a></li>
-          </ul>
-        </div>
-        <div class="tabs-content">
-          <div id="lure-cirque" class="tab-block active">
-            <div class="intro">
-              <div class="logo">
-                <img src="images/brand-pages/kado/kado-logo.png" alt="Kado Hotel Inspired Living" width="180">
-              </div>
-              <div class="text">
-                Ispired by gentle curves, Kado Lure and Kado Cirque create a natural sense of calm in the bathroom, Soft angles and sweeping lines are stylishy integrated in superb quality.
-              </div>
-            </div>
-            <div class="moodboard">
-              <div class="image">
-                <img src="images/brand-pages/kado/lure-and-cirque.jpg" alt="Lure and Cirque">
-              </div>
-            </div>
-          </div>
-          <div id="lux" class="tab-block">
-            <div class="intro">
-              <div class="logo">
-                <img src="images/brand-pages/kado/kado-logo.png" alt="Kado Hotel Inspired Living" width="180">
-              </div>
-              <div class="text">
-                Kado Lux is a series of bold, yet compact geometric pieces designed to free up space and make even the smallest bathroom feel open and inviting – each stunning piece in the range perfectly complementing the next.
-              </div>
-            </div>
-            <div class="moodboard">
-              <div class="image">
-                <img src="images/brand-pages/kado/lux.jpg" alt="Lux">
-              </div>
-            </div>
-          </div>
-          <div id="classic" class="tab-block">
-            <div class="intro">
-              <div class="logo">
-                <img src="images/brand-pages/kado/kado-logo.png" alt="Kado Hotel Inspired Living" width="180">
-              </div>
-              <div class="text">
-                Elegant and luxurious, the Kado Classic freestanding bath perfectly captures the romance of the past. With its ornate detailing, the Kado Classic is the ultimate statement piece for the traditionally styled home.
-              </div>
-            </div>
-            <div class="moodboard">
-              <div class="image">
-                <img src="images/brand-pages/kado/classic.jpg" alt="Classic">
-              </div>
-            </div>
-          </div>
-          <div id="arc" class="tab-block">
-            <div class="intro">
-              <div class="logo">
-                <img src="images/brand-pages/kado/kado-logo.png" alt="Kado Hotel Inspired Living" width="180">
-              </div>
-              <div class="text">
-                Captivating and alluring, the soft curves of Kado Arc are designed to excite the senses while offering total comfort. Take your bathroom design in a bold new direction with the contemporary lines of Kado Arc.
-              </div>
-            </div>
-            <div class="moodboard">
-              <div class="image">
-                <img src="images/brand-pages/kado/arc.jpg" alt="Arc">
-              </div>
-            </div>
-          </div>
-          <div id="aspect" class="tab-block">
-            <div class="intro">
-              <div class="logo">
-                <img src="images/brand-pages/kado/kado-logo.png" alt="Kado Hotel Inspired Living" width="180">
-              </div>
-              <div class="text">
-                With its stunning minimalist aesthetic, the Aspect range explores an entirely new realm of design. Utilising solid surface, Aspect seamlessly incorporates modern and geometric lines becoming beautifully unified pieces for your bathroom.
-              </div>
-            </div>
-            <div class="moodboard">
-              <div class="image">
-                <img src="images/brand-pages/kado/aspect.jpg" alt="Aspect">
-              </div>
-            </div>
-          </div>
-          <div id="retro" class="tab-block">
-            <div class="intro">
-              <div class="logo">
-                <img src="images/brand-pages/kado/kado-logo.png" alt="Kado Hotel Inspired Living" width="180">
-              </div>
-              <div class="text">
-                Inspired by the mod-cool of 60s design, the Kado Retro reinvents the past with this fresh and vibrant vanity.
-              </div>
-            </div>
-            <div class="moodboard">
-              <div class="image">
-                <img src="images/brand-pages/kado/retro.jpg" alt="Retro">
-              </div>
-            </div>
-          </div>
-        </div>        
-      </div>
-    </div>      
-    <!-- End: Video Tabs Widget-->    
-  </div>      
 </div>

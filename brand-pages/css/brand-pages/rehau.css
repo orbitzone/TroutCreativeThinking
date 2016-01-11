@@ -969,6 +969,7 @@ div.brand-pages {
   font-size: 16px;
   line-height: 1.8;
   font-weight: 300;
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -1019,7 +1020,12 @@ div.brand-pages p {
   letter-spacing: 0.05px;
 }
 div.brand-pages .container {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  div.brand-pages .container {
+    margin-bottom: 60px;
+  }
 }
 div.brand-pages .padding-less .row {
   margin: 0 auto;
@@ -1047,8 +1053,10 @@ div.brand-pages .widget-logo {
   background: #353535;
   padding-bottom: 40px;
 }
-div.brand-pages .intro {
-  padding-top: 40px;
+@media (min-width: 768px) {
+  div.brand-pages .intro {
+    padding-top: 40px;
+  }
 }
 div.brand-pages .intro h2 {
   font-size: 33px;
@@ -1084,9 +1092,13 @@ div.brand-pages .intro-copy {
   padding-top: 26px;
 }
 div.brand-pages .intro-copy .rte {
-  padding-right: 64px;
   font-size: 18px;
   line-height: 1.6;
+}
+@media (min-width: 768px) {
+  div.brand-pages .intro-copy .rte {
+    padding-right: 64px;
+  }
 }
 div.brand-pages .product-profiles {
   margin-bottom: 0;
@@ -1190,7 +1202,7 @@ div.brand-pages .tripplets .row {
   margin-left: -8px;
   margin-right: -8px;
 }
-div.brand-pages .tripplets .col-sm-4 {
+div.brand-pages .tripplets .col-xs-4 {
   padding: 0 8px;
 }
 div.brand-pages .bottom-links .slide-front {

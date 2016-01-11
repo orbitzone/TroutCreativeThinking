@@ -8,6 +8,7 @@ div.brand-pages{
 	font-size: 16px;
 	line-height: 1.8;
 	font-weight: 300;
+	overflow-x: hidden;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;	    
 	@media (min-width: @screen-sm){
@@ -55,7 +56,10 @@ div.brand-pages{
     letter-spacing: 0.05px;
 	}
 	.container{
-		margin-bottom: 60px;
+		margin-bottom: 30px;
+		@media (min-width: @screen-sm){
+			margin-bottom: 60px;
+		}
 	}
 	.padding-less{
 		.row{
@@ -86,7 +90,9 @@ div.brand-pages{
 		padding-bottom: 40px;
 	}
 	.intro{
-		padding-top: 40px;
+		@media (min-width: @screen-sm){
+			padding-top: 40px;
+		}
 		h2{
 			font-size: 33px;
 			line-height: 1.1;
@@ -115,9 +121,11 @@ div.brand-pages{
 		padding-right: 40px;
 		padding-top: 26px;
 		.rte{
-	    padding-right: 64px;
 	    font-size: 18px;
 	    line-height: 1.6;
+	    @media (min-width: @screen-sm){
+	    	padding-right: 64px;
+	    }
 		}
 	}
 	.product-profiles{
@@ -218,7 +226,7 @@ div.brand-pages{
 			margin-left: -8px;
 			margin-right: -8px;
 		}
-		.col-sm-4{
+		.col-xs-4{
 			padding: 0 8px;
 		}
 	}

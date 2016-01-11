@@ -1,37 +1,5 @@
 <div class="brand-pages">
-  <div class="container visible-xs-block">
-    <div class="row">
-      <div class="col-xs-12">
-        <!-- Begin: Logo Widget Start -->
-        <div class="widget-logo">
-          <header role="banner">
-            <h1>
-              <a href="/">
-               <img src="images/brand-pages/rehau/rehau-logo.png" width="184" alt="Rehau"><!-- Set the image width-->
-              </a>
-            </h1> 
-          </header>
-        </div>      
-        <!-- End:  Logo widget -->
-      </div>
-    </div>
-  </div>
-  <div class="container visible-xs-block">
-    <div class="row">
-      <div class="col-xs-12">
-        <!-- Begin: Logo Widget Start -->
-        <div class="widget-html-image">
-          <figure class="image">
-            <!--  <a href="#">-->
-            <img src="images/brand-pages/rehau/mobile-banner.jpg" alt="Rehau Enwickelt in Deutschland. Ohne Kompromisse."><!-- Set the image width-->
-            <!-- </a>-->            
-          </figure>
-        </div>      
-        <!-- End:  Logo widget -->
-      </div>
-    </div>
-  </div>
-  <div class="container hidden-xs">
+  <div class="container">
     <div class="row">
       <div class="col-xs-12">
         <!-- Begin: Logo Widget Start -->
@@ -232,7 +200,7 @@
   </div>
   <div class="container tripplets">
     <div class="row">
-      <div class="col-sm-4">
+      <div class="col-xs-4">
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image">
           <figure class="image">
@@ -243,7 +211,7 @@
         </div>
         <!-- End: HTML Widget-->
       </div>
-      <div class="col-sm-4">
+      <div class="col-xs-4">
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image">
           <figure class="image">
@@ -254,7 +222,7 @@
         </div>
         <!-- End: HTML Widget-->
       </div>
-      <div class="col-sm-4">
+      <div class="col-xs-4">
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image">
           <figure class="image">

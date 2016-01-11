@@ -1352,6 +1352,7 @@ div.brand-pages .widget-video .play i {
 div.brand-pages .widget-video .play i:before {
   content: "\6b";
   height: 66px;
+  line-height: 70px;
   position: absolute;
   top: 50%;
   left: 50%;

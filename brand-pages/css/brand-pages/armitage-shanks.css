@@ -1298,6 +1298,9 @@ div.brand-pages .widget-video .slick-slider .slick-slide .slide-content {
   transform: translateX(-50%) translateY(-50%);
   color: black;
 }
+div.brand-pages .widget-video .slick-slider .slide-video {
+  background: #9d2341;
+}
 div.brand-pages .widget-video .image {
   text-align: right;
 }
@@ -1331,10 +1334,40 @@ div.brand-pages .widget-video .text b {
   color: black;
 }
 div.brand-pages .widget-video .play i {
+  background: rgba(157, 35, 65, 0.3);
+  height: 72px;
+  display: block;
+  width: 72px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  padding-top: 3px;
+  padding-left: 0.5px;
+  margin: 0 auto;
   font-size: 70px;
+  position: relative;
+  z-index: 0;
 }
 div.brand-pages .widget-video .play i:before {
   content: "\6b";
+}
+div.brand-pages .widget-video .play i:after {
+  display: block;
+  content: " ";
+  position: relative;
+  background: #FFF;
+  width: 53px;
+  height: 51px;
+  top: -71px;
+  left: 9px;
+  z-index: -1;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
 }
 div.brand-pages .widget-video .play .label {
   display: block;

@@ -6,9 +6,7 @@
         <div class="widget-logo">
           <header role="banner">
             <h1>
-              <a href="/">
                <img src="images/brand-pages/armitage-shanks/armitage-shanks-logo.png" width="184" alt="Armitage Shanks"><!-- Set the image width-->
-              </a>
             </h1> 
           </header>
         </div>      
@@ -97,7 +95,7 @@
                 <img src="images/brand-pages/armitage-shanks/brand-overview.jpg" alt="Brand Overview"/>
               </figure>
               <div class="slide-content">
-                <button type="button" class="play" data-video="1Owm4b6sfVA">
+                <button type="button" class="play" data-video="_qo5vFf7epw">
                   <i class="rbp-play-icon"></i>
                   <span class="label">Brand Overview</span>  
                 </button>  
@@ -127,7 +125,7 @@
                 <img src="images/brand-pages/armitage-shanks/view-all-videos.jpg" alt="View All Videos"/>
               </figure>
               <div class="slide-content">
-                <button type="button" class="play" data-video="1Owm4b6sfVA">
+                <button type="button" class="play" data-video="_qo5vFf7epw">
                   <i class="rbp-play-icon"></i>
                   <span class="label">View All Videos</span>  
                 </button>  
@@ -169,10 +167,8 @@
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image bottom">
           <figure class="image">
-            <a href="#">
-              <img src="images/brand-pages/armitage-shanks/patented-rimless-fushing-technology.jpg" alt="Patented Rimless flushing technology"/>
-              <figcaption>Patented Rimless flushing technology.</figcaption>
-            </a>
+            <img src="images/brand-pages/armitage-shanks/patented-rimless-fushing-technology.jpg" alt="Patented Rimless flushing technology"/>
+            <figcaption>Patented Rimless flushing technology.</figcaption>
           </figure>
         </div>
         <!-- End: HTML Widget-->
@@ -181,10 +177,8 @@
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image top">
           <figure class="image">
-            <a href="#">
-              <img src="images/brand-pages/armitage-shanks/portman-21.jpg" alt="Portman 21 800 BTW pan"/>
-              <figcaption>The Portman21 800 BTW pan utilises an innovative rimless design to eliminate areas that can harbour bacteria.</figcaption>
-            </a>
+            <img src="images/brand-pages/armitage-shanks/portman-21.jpg" alt="Portman 21 800 BTW pan"/>
+            <figcaption>The Portman21 800 BTW pan utilises an innovative rimless design to eliminate areas that can harbour bacteria.</figcaption>
           </figure>
         </div>
         <!-- End: HTML Widget-->

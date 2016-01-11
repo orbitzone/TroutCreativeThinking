@@ -277,6 +277,9 @@ div.brand-pages{
 					
 				}
 			}
+			.slide-video{
+				background: @headerColor;
+			}
 		}
 		.image{
 			text-align: right;
@@ -307,9 +310,31 @@ div.brand-pages{
 		}
 		.play{
 			i{
+		    background: rgba(157, 35, 65, 0.30);
+		    height: 72px;
+		    display: block;
+		    width: 72px;
+		    .border-radius(50%);
+		    padding-top: 3px;
+		    padding-left: 0.5px;
+		    margin: 0 auto;
 				font-size: 70px;
+				position: relative;
+				z-index: 0;
 				&:before{
 					content: "\6b";
+				}
+				&:after{
+					display: block;
+			    content: " ";
+			    position: relative;
+			    background: #FFF;
+			    width: 53px;
+			    height: 51px;
+			    top: -71px;
+			    left: 9px;
+			    z-index: -1;
+			    .border-radius(50%);
 				}
 			}
 			.label{

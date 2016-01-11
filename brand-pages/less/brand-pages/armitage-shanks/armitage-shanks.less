@@ -315,7 +315,6 @@ div.brand-pages{
 		    display: block;
 		    width: 72px;
 		    .border-radius(50%);
-		    padding-top: 3px;
 		    padding-left: 0.5px;
 		    margin: 0 auto;
 				font-size: 70px;
@@ -323,16 +322,22 @@ div.brand-pages{
 				z-index: 0;
 				&:before{
 					content: "\6b";
+			    height: 66px;
+			    position: absolute;
+			    top: 50%;
+			    left: 50%;
+			    .transform(translateX(-50%) translateY(-50%));
 				}
 				&:after{
 					display: block;
 			    content: " ";
-			    position: relative;
+			    position: absolute;
+			    top: 50%;
+			    left: 50%;
+			    .transform(translateX(-50%) translateY(-50%));
 			    background: #FFF;
 			    width: 53px;
 			    height: 51px;
-			    top: -71px;
-			    left: 9px;
 			    z-index: -1;
 			    .border-radius(50%);
 				}

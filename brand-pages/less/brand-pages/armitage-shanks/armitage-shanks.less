@@ -2,10 +2,13 @@
 @import "_variables.less";
 
 div.brand-pages{
-	font-size: 20px;
+	font-size: 16px;
 	text-align: center;
-			-webkit-font-smoothing: antialiased;
-	  -moz-osx-font-smoothing: grayscale;	
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @media (min-width: @screen-sm){
+  	font-size: 20px;
+	}
 	h1,h2,h3,h4,h5,h6,a,button,input,textarea,select,p{
 		font-family:'Frutiger W01', helvetica, sans-serif;
 		font-weight: 300;
@@ -98,12 +101,21 @@ div.brand-pages{
 	.frases{
 		text-transform: none;
 		color: black;
-		font-size: 38px;
+		font-size: 25px;
+		@media (min-width: @screen-sm){
+			font-size: 38px;
+		}
 		.rte{
-			max-width: 265px;
+			max-width: 165px;
 			margin: 0 auto;
+			@media (min-width: @screen-sm){
+				max-width: 265px;
+			}
 			p{
-				line-height: 38px;				
+				line-height: 25px;
+				@media (min-width: @screen-sm){
+					line-height: 38px;
+				}
 			}
 		}
 		.col-sm-4{
@@ -227,9 +239,10 @@ div.brand-pages{
 				color: @darkgrey;
 				.transform(none);
 				top: 20px;
-				font-size: 20px;
+				font-size: 16px;
 				padding: 0 20px;
 			 	@media (min-width: @screen-sm){
+			 		font-size: 20px;
 			 		top: 62px;
 			 	}
 			}
@@ -237,11 +250,13 @@ div.brand-pages{
 		&.bottom{
 			figcaption{
 				.transform(none);
-				top: 62px;
-				font-size: 20px;
+				font-size: 16px;
 				top: inherit;
 				padding: 0 20px;
 				bottom: 40px;
+				@media (min-width: @screen-sm){
+				font-size: 20px;
+				}
 			}
 		}
 	}
@@ -383,10 +398,13 @@ div.brand-pages{
 		.widget-html-image{
 			.image{
 				figcaption{
-					font-size: 37px;
+					font-size: 20px;
 					line-height: 1;
 					bottom: 38px;
 					padding: 0 40px;
+					@media (min-width: @screen-md){
+						font-size: 37px;
+					}
 				}
 			}
 			&.dark{

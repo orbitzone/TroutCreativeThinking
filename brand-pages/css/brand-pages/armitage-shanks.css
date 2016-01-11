@@ -970,10 +970,15 @@
 /* Text Decoration */
 /* Text Transform */
 div.brand-pages {
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+@media (min-width: 768px) {
+  div.brand-pages {
+    font-size: 20px;
+  }
 }
 div.brand-pages h1,
 div.brand-pages h2,
@@ -1105,14 +1110,29 @@ div.brand-pages .padding-less .row .col-sm-2 {
 div.brand-pages .frases {
   text-transform: none;
   color: black;
-  font-size: 38px;
+  font-size: 25px;
+}
+@media (min-width: 768px) {
+  div.brand-pages .frases {
+    font-size: 38px;
+  }
 }
 div.brand-pages .frases .rte {
-  max-width: 265px;
+  max-width: 165px;
   margin: 0 auto;
 }
+@media (min-width: 768px) {
+  div.brand-pages .frases .rte {
+    max-width: 265px;
+  }
+}
 div.brand-pages .frases .rte p {
-  line-height: 38px;
+  line-height: 25px;
+}
+@media (min-width: 768px) {
+  div.brand-pages .frases .rte p {
+    line-height: 38px;
+  }
 }
 div.brand-pages .frases .col-sm-4:first-child .widget-html-image:after {
   width: 1px;
@@ -1235,11 +1255,12 @@ div.brand-pages .widget-html-image.top figcaption {
   -o-transform: none;
   transform: none;
   top: 20px;
-  font-size: 20px;
+  font-size: 16px;
   padding: 0 20px;
 }
 @media (min-width: 768px) {
   div.brand-pages .widget-html-image.top figcaption {
+    font-size: 20px;
     top: 62px;
   }
 }
@@ -1249,11 +1270,15 @@ div.brand-pages .widget-html-image.bottom figcaption {
   -ms-transform: none;
   -o-transform: none;
   transform: none;
-  top: 62px;
-  font-size: 20px;
+  font-size: 16px;
   top: inherit;
   padding: 0 20px;
   bottom: 40px;
+}
+@media (min-width: 768px) {
+  div.brand-pages .widget-html-image.bottom figcaption {
+    font-size: 20px;
+  }
 }
 div.brand-pages .widget-video {
   text-transform: uppercase;
@@ -1389,10 +1414,15 @@ div.brand-pages .history .row .col-sm-6 {
   }
 }
 div.brand-pages .history .widget-html-image .image figcaption {
-  font-size: 37px;
+  font-size: 20px;
   line-height: 1;
   bottom: 38px;
   padding: 0 40px;
+}
+@media (min-width: 992px) {
+  div.brand-pages .history .widget-html-image .image figcaption {
+    font-size: 37px;
+  }
 }
 div.brand-pages .history .widget-html-image.dark .image figcaption {
   color: #3a3c3b;

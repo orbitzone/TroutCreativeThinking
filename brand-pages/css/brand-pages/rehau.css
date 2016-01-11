@@ -1146,7 +1146,7 @@ div.brand-pages .case-studies .row .col-sm-6 {
   padding-left: 27px;
 }
 div.brand-pages .case-studies .case-study {
-  padding: 64px 0px 14px 40px;
+  padding: 64px 40px 14px 40px;
   background: #353535;
   color: white;
   margin-bottom: 25px;
@@ -1157,9 +1157,13 @@ div.brand-pages .case-studies .case-study .button {
 }
 div.brand-pages .case-studies .case-study p {
   font-size: 18px;
-  padding-right: 200px;
   line-height: 1.5;
   margin-bottom: 10px;
+}
+@media (min-width: 1200px) {
+  div.brand-pages .case-studies .case-study p {
+    padding-right: 180px;
+  }
 }
 div.brand-pages .main-video .play i {
   display: block;

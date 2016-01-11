@@ -171,7 +171,7 @@ div.brand-pages{
 			}
 		}
 		.case-study{
-			padding: 64px 0px 14px 40px;
+			padding: 64px 40px 14px 40px;
 			background: @darkGrey;
 			color: white;
 			margin-bottom: 25px;
@@ -181,7 +181,9 @@ div.brand-pages{
 			}
 			p{
 		    font-size: 18px;
-		    padding-right: 200px;
+		    @media (min-width: @screen-lg){
+		    	padding-right: 180px;
+		  	}
 		    line-height: 1.5;
 		    margin-bottom: 10px;
 			}

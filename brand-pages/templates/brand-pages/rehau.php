@@ -169,7 +169,7 @@
           <div class="rte">
             <h3>Case study:</h3>
             <h4>Gas</h4>
-            <p>Fiona Stanley Hospital is the largest building project ever undertaken for the Government of Western Australia.</p>
+            <p>Just 5km from Sydney’s CBD lies Zetland, one of the cities fastest growing municipalities.</p>
             <a href="#" class="button"><i class="rbp-arrow-light-right-circle-icon"></i><span class="sr-only">Read more</span></a>
           </div>
         </div>
@@ -258,7 +258,7 @@
                 <img src="images/brand-pages/rehau/bottom-video.jpg" alt="--"/>
               </figure>
               <div class="slide-content">
-                <button type="button" class="play" data-video="1Owm4b6sfVA">
+                <button type="button" class="play" data-video="z7-Jipekf2g">
                   <i class="rbp-play-icon"></i>
                   <span class="label">Videos</span>  
                 </button>  

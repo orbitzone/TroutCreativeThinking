@@ -261,6 +261,39 @@ div.brand-pages{
 				}
 			}
 		}
+		&.view-videos{
+			.view-all-videos{
+				display: block;
+				.transition(0.5s all ease-out);
+				.transform(scale(1));
+				&:hover{
+					text-decoration: none;
+					.transform(scale(1.2));
+				}
+				i{
+					width: 74px;
+					height: 74px;
+					background-image: url(../../images/brand-pages/armitage-shanks/play-icon.png);
+					background-size: 74px 74px;
+					display: block;
+					margin: 0 auto;
+					&:before{
+						display: none;
+						content: " ";
+					}
+				}
+				.label{
+					display: block;
+			    font-weight: 500;
+			    color: @h1Color;
+			    font-size: 32px;
+			    max-width: 200px;
+			    margin: 0 auto;
+			    text-align: center;
+			    white-space: normal;
+				}
+			}
+		}
 	}
 	.widget-video{
 		text-transform: uppercase;
@@ -310,7 +343,13 @@ div.brand-pages{
 				color: black;
 			}			
 		}
-		.play{
+		.play{display: block;
+				.transition(0.5s all ease-out);
+				.transform(scale(1));
+				&:hover{
+					text-decoration: none;
+					.transform(scale(1.2));
+				}
 			/*i{
 		    background: rgba(157, 35, 65, 0.30);
 		    height: 72px;

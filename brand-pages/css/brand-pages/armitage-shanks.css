@@ -318,6 +318,49 @@ div.brand-pages .widget-html-image.bottom figcaption {
     font-size: 20px;
   }
 }
+div.brand-pages .widget-html-image.view-videos .view-all-videos {
+  display: block;
+  -webkit-transition: 0.5s all ease-out;
+  -moz-transition: 0.5s all ease-out;
+  -ms-transition: 0.5s all ease-out;
+  -o-transition: 0.5s all ease-out;
+  transition: 0.5s all ease-out;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+div.brand-pages .widget-html-image.view-videos .view-all-videos:hover {
+  text-decoration: none;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+div.brand-pages .widget-html-image.view-videos .view-all-videos i {
+  width: 74px;
+  height: 74px;
+  background-image: url(../../images/brand-pages/armitage-shanks/play-icon.png);
+  background-size: 74px 74px;
+  display: block;
+  margin: 0 auto;
+}
+div.brand-pages .widget-html-image.view-videos .view-all-videos i:before {
+  display: none;
+  content: " ";
+}
+div.brand-pages .widget-html-image.view-videos .view-all-videos .label {
+  display: block;
+  font-weight: 500;
+  color: #9d2341;
+  font-size: 32px;
+  max-width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  white-space: normal;
+}
 div.brand-pages .widget-video {
   text-transform: uppercase;
   background-size: contain;
@@ -372,6 +415,17 @@ div.brand-pages .widget-video .text b {
   color: black;
 }
 div.brand-pages .widget-video .play {
+  display: block;
+  -webkit-transition: 0.5s all ease-out;
+  -moz-transition: 0.5s all ease-out;
+  -ms-transition: 0.5s all ease-out;
+  -o-transition: 0.5s all ease-out;
+  transition: 0.5s all ease-out;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
   /*i{
 		    background: rgba(157, 35, 65, 0.30);
 		    height: 72px;
@@ -408,6 +462,14 @@ div.brand-pages .widget-video .play {
 			    .border-radius(50%);
 				}
 			}*/
+}
+div.brand-pages .widget-video .play:hover {
+  text-decoration: none;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
 }
 div.brand-pages .widget-video .play i {
   width: 74px;

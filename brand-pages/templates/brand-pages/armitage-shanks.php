@@ -117,34 +117,15 @@
         <!-- End: Video Widget-->        
       </div>
       <div class="col-sm-6">
-        <!-- Begin: Video Widget-->
-        <div class="widget-video">
-          <div class="video-slides">
-            <div class="slide slide-front">
-              <figure class="image">
-                <img src="images/brand-pages/armitage-shanks/view-all-videos.jpg" alt="View All Videos"/>
-              </figure>
-              <div class="slide-content">
-                <button type="button" class="play" data-video="_qo5vFf7epw">
-                  <i class="rbp-play-icon"></i>
-                  <span class="label">View All Videos</span>  
-                </button>  
-              </div>
-            </div>
-            <div class="slide slide-video">
-              <div class="video-wrapper">
-                <div class="video">
-                  <figure class="player">
-                  </figure>
-                </div>              
-              </div>
-              <button type="button" class="close">
-                <i class="rbp-close-icon"></i>               
-              </button>  
-            </div>
-          </div>   
+      <!-- Begin: HTML Widget-->  
+        <div class="widget-html-image view-videos">
+          <figure class="image">
+            <img src="images/brand-pages/armitage-shanks/view-all-videos.jpg" alt="View All Videos"/>
+            <figcaption><a href="https://www.youtube.com/playlist?list=PLglmbsfbBFlmaa6FiVQeL9CYL3oeFIjQT" class="view-all-videos"><i class="rbp-play-icon"></i>
+                  <span class="label">View All Videos</span></a></figcaption>
+          </figure>
         </div>
-        <!-- End: Video Widget-->
+        <!-- End: HTML Widget-->
       </div>
     </div>
   </div>
@@ -247,7 +228,7 @@
             </a>
           </figure>
            <div class="rte">
-             <a href="#" class="button">See full range</a>
+             <a href="http://www.reece.com.au/bathrooms/products/commercial/armitage-shanks" class="button">See full range</a>
            </div>  
         </div>
         <!-- End: HTML Widget-->

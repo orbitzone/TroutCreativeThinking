@@ -18,6 +18,7 @@
     <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6958312/662428/css/fonts.css" />
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
     <link rel="stylesheet" type="text/css" href="css/reece-global.css" />
+    <link rel="stylesheet" type="text/css" href="css/brand-pages/widgets.css" />
     <link rel="stylesheet" type="text/css" href="css/brand-pages/armitage-shanks.css" />
     <script type="text/javascript" src="http://fast.fonts.net/jsapi/49bdc02a-d1bd-4d60-96df-145705b93f2a.js"></script>
   </head>

@@ -1,4 +1,6 @@
-@import "../widgets/widgets.less";
+@import "../widgets/_mixins.less";
+@import "../widgets/_variables.less";
+@import "../../../bower_components/bootstrap/less/variables.less";
 @import "_variables.less";
 
 div.brand-pages{
@@ -78,6 +80,19 @@ div.brand-pages{
 		margin-top: 20px;
 		padding: 18px 38px;
 		font-size: 20px;
+    border: 1px solid @h1Color;
+    color: @h1Color;
+    margin-bottom: 30px;
+	}
+	.widget-big-button{
+		background: @h1Color;
+		a{
+			.text{
+				font-size: 16px;
+				font-weight: 700;
+				text-decoration: underline;
+			}
+		}
 	}
 	.widget-slider{
 		.slick-dots{
@@ -88,6 +103,8 @@ div.brand-pages{
 			.slick-slide{
 				&.slide-1{
 					.text{
+						color: @h1Color;
+						text-transform: uppercase;
 						.transform(translateY(50%) translateX(-10px));
 					}
 					&.slick-active,
@@ -100,6 +117,7 @@ div.brand-pages{
 				&.slide-2{
 					.text{
 						color: white;
+						text-transform: uppercase;
 						.transform(translateY(50%) translateX(-100%));
 						img{
 							max-width: 40px;
@@ -118,6 +136,12 @@ div.brand-pages{
 				.text{
 					font-weight: 600;
 				}				
+			}
+			.slick-next,
+			.slick-prev{
+				&:before{
+					color: @sliderArrowsColor;
+				}
 			}
 		}		
 	}
@@ -181,6 +205,9 @@ div.brand-pages{
 			}			
 		}
 		.play{
+			i{
+				color: @h1Color;
+			}
 			.label{
 				display: none;
 			}
@@ -203,6 +230,12 @@ div.brand-pages{
 		padding: 40px 20px;
 		@media (min-width: @screen-md){
 			padding: 40px 90px;
+		}
+		.image{
+			text-align: center;
+			@media (min-width: @screen-md){
+				text-align: left;
+			}
 		}
 		h2{
 			a{

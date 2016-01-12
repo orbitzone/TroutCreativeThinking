@@ -18,6 +18,7 @@
     <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6958312/662428/css/fonts.css" />
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
     <link rel="stylesheet" type="text/css" href="css/reece-global.css" />
+    <link rel="stylesheet" type="text/css" href="css/brand-pages/widgets.css" />
     <link rel="stylesheet" type="text/css" href="css/brand-pages/rehau.css" />
   </head>
   <body class="brand-pages">

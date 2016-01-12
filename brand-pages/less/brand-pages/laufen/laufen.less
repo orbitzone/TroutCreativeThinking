@@ -1,4 +1,6 @@
-@import "../widgets/widgets.less";
+@import "../widgets/_mixins.less";
+@import "../widgets/_variables.less";
+@import "../../../bower_components/bootstrap/less/variables.less";
 @import "_variables.less";
 
 
@@ -8,6 +10,8 @@ div.brand-pages{
 	font-size: 16px;
 	line-height: 2;
 	font-weight: 300;
+	/*-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;*/
 	.rte{
 		text-align: center;
 	}
@@ -24,6 +28,7 @@ div.brand-pages{
 	}
 	.widget-video{
 		overflow: hidden;
+		color: white;
 		.slick-slider{
 			.slick-slide{
 				&.slide-video{
@@ -35,6 +40,10 @@ div.brand-pages{
 					}
 				}
 				.play{
+					color: white;
+					i{
+						color: white;
+					}
 					&:hover{
 						.text,
 						.label{
@@ -42,6 +51,12 @@ div.brand-pages{
 						}
 					}
 				}	
+			}
+			.slick-next,
+			.slick-prev{
+				&:before{
+					color: white;
+				}
 			}
 		}		
 	}
@@ -69,6 +84,7 @@ div.brand-pages{
 					max-width: 260px;
 					margin: 0 auto;
 					left: 50%;
+					font-weight: 700;
 					.transform(translateX(-50%) translateY(-50%));
 				}
 			}			

@@ -1,4 +1,6 @@
-@import "../widgets/widgets.less";
+@import "../widgets/_mixins.less";
+@import "../widgets/_variables.less";
+@import "../../../bower_components/bootstrap/less/variables.less";
 @import "_variables.less";
 
 
@@ -36,6 +38,15 @@ div.brand-pages{
 						}
 					}
 				}
+			}
+		}
+	}
+	.widget-big-button{
+		background: @bigButtonBg;
+		a{
+			.text{
+				font-size: 16px;
+				font-weight: 700;
 			}
 		}
 	}

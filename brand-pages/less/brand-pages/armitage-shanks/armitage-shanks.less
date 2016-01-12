@@ -1,4 +1,6 @@
-@import "../widgets/widgets.less";
+@import "../widgets/_mixins.less";
+@import "../widgets/_variables.less";
+@import "../../../bower_components/bootstrap/less/variables.less";
 @import "_variables.less";
 
 div.brand-pages{
@@ -309,7 +311,7 @@ div.brand-pages{
 			}			
 		}
 		.play{
-			i{
+			/*i{
 		    background: rgba(157, 35, 65, 0.30);
 		    height: 72px;
 		    display: block;
@@ -343,6 +345,18 @@ div.brand-pages{
 			    height: 51px;
 			    z-index: -1;
 			    .border-radius(50%);
+				}
+			}*/
+			i{
+				width: 74px;
+				height: 74px;
+				background-image: url(../../images/brand-pages/armitage-shanks/play-icon.png);
+				background-size: 74px 74px;
+				display: block;
+				margin: 0 auto;
+				&:before{
+					display: none;
+					content: " ";
 				}
 			}
 			.label{

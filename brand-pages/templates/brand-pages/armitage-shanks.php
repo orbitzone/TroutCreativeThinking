@@ -204,10 +204,8 @@
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image top">
           <figure class="image">
-            <a href="#">
               <img src="images/brand-pages/armitage-shanks/markwik21.jpg" alt="Markwik21 integral thermostat"/>
-              <figcaption>The Markwik21 integral thermostat enables water to be mixed closer to the point of discharge minimise the risk of bacteria growth.</figcaption>
-            </a>
+              <figcaption>The Markwik21 integral thermostat enables water to be mixed closer to the point of discharge minimise the risk of bacteria growth.</figcaption>            
           </figure>
         </div>
         <!-- End: HTML Widget-->
@@ -216,10 +214,8 @@
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image bottom">
           <figure class="image">
-            <a href="#">
               <img src="images/brand-pages/armitage-shanks/working-with-global-experts.jpg" alt="Working with global experts"/>
-              <figcaption>Working with global experts in design &amp; infection control.</figcaption>
-            </a>
+              <figcaption>Working with global experts in design &amp; infection control.</figcaption>            
           </figure>
         </div>
         <!-- End: HTML Widget-->

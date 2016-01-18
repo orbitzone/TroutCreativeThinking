@@ -43,5 +43,6 @@
     <script type="text/javascript" src="javascript/reece-ocnav.js"></script>
     <script type="text/javascript" src="javascript/jquery.matchHeight-min.js"></script>
     <script type="text/javascript" src="javascript/brand-pages/widgets.js"></script>
+    <script type="text/javascript" src="javascript/brand-pages/rehau.js"></script>
   </body>
 </html>

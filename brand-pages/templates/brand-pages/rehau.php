@@ -155,10 +155,10 @@
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image case-study">
           <div class="rte">
-            <h3>Case study:</h3>
+            <h3><a href="index-rehau-childrens-hospital.php">Case study:</a></h3>
             <h4>Hot &amp; cold water</h4>
-            <p>Fiona Stanley Hospital is the largest building project ever undertaken for the Government of Western Australia.</p>
-            <a href="#" class="button"><i class="rbp-arrow-light-right-circle-icon"></i><span class="sr-only">Read more</span></a>
+            <p>The $1.2 billion Perth Children’s Hospital project is set to offer the best possible clinical care for future generations.</p>
+            <a href="index-rehau-childrens-hospital.php" class="button"><i class="rbp-arrow-light-right-circle-icon"></i><span class="sr-only">Read more</span></a>
           </div>
         </div>
         <!-- End: HTML Widget-->
@@ -167,10 +167,38 @@
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image case-study">
           <div class="rte">
-            <h3>Case study:</h3>
+            <h3><a href="index-rehau-joynton-ave.php">Case study:</a></h3>
             <h4>Gas</h4>
             <p>Just 5km from Sydney’s CBD lies Zetland, one of the cities fastest growing municipalities.</p>
-            <a href="#" class="button"><i class="rbp-arrow-light-right-circle-icon"></i><span class="sr-only">Read more</span></a>
+            <a href="index-rehau-joynton-ave.php" class="button"><i class="rbp-arrow-light-right-circle-icon"></i><span class="sr-only">Read more</span></a>
+          </div>
+        </div>
+        <!-- End: HTML Widget-->
+      </div>
+    </div>
+  </div>
+  <div class="container case-studies">
+    <div class="row">
+      <div class="col-sm-6">
+        <!-- Begin: HTML Widget-->  
+        <div class="widget-html-image case-study">
+          <div class="rte">
+            <h3><a href="index-rehau-fiona-stanley.php">Case study:</a></h3>
+            <h4>Hot &amp; cold water</h4>
+            <p>Fiona Stanley Hospital is the largest building project ever undertaken for the Government of Western Australia.</p>
+            <a href="index-rehau-fiona-stanley.php" class="button"><i class="rbp-arrow-light-right-circle-icon"></i><span class="sr-only">Read more</span></a>
+          </div>
+        </div>
+        <!-- End: HTML Widget-->
+      </div>
+      <div class="col-sm-6">
+        <!-- Begin: HTML Widget-->  
+        <div class="widget-html-image case-study">
+          <div class="rte">
+            <h3><a href="index-rehau-orrong-road.php">Case study:</a></h3>
+            <h4>Gas</h4>
+            <p>750 Orrong Road, Toorak is a high-end residential refurbishment.</p>
+            <a href="index-rehau-orrong-road.php" class="button"><i class="rbp-arrow-light-right-circle-icon"></i><span class="sr-only">Read more</span></a>
           </div>
         </div>
         <!-- End: HTML Widget-->

@@ -31,11 +31,23 @@ div.brand-pages{
 			width: 21px;
 			background: black;
 		}
+		span{
+			font-weight: 300;
+		}
+		strong{
+			display: block;
+			font-size: 28px;
+			margin-top: 10px;
+		}
 	}
 	h3{
 		color: white;
 		font-size: 25px;
 		margin-bottom: 4px;
+		a{
+			color: white;
+
+		}
 	}
 	h4{
 		color: @green;
@@ -90,6 +102,13 @@ div.brand-pages{
 	.widget-logo{
 		background: @darkGrey;
 		padding-bottom: 40px;
+	}
+	.intro-text{
+		color: #7d8c93;
+		font-size: 18px;
+	}
+	.case-studies-title{
+		margin-bottom: 0;
 	}
 	.intro{
 		@media (min-width: @screen-sm){
@@ -172,6 +191,7 @@ div.brand-pages{
 		}
 	}
 	.case-studies{
+		margin-bottom: 0;
 		.row{
 			margin-left: -27px;
 			margin-right: -27px;
@@ -184,7 +204,7 @@ div.brand-pages{
 			padding: 64px 40px 14px 40px;
 			background: @darkGrey;
 			color: white;
-			margin-bottom: 25px;
+			margin-bottom: 60px;
 			.button{
 				color: @green;
 				font-size: 45px;
@@ -253,6 +273,20 @@ div.brand-pages{
 					font-size: 30px;
 				}
 			}
+		}
+	}
+	.button{
+		color: @green;
+		display: block;
+		.transform(scale(1));
+		.transition(0.5s all ease-out);
+		i{
+			font-size: 30px;
+			vertical-align: middle;
+		}
+		&:hover{
+			text-decoration: none;
+			.transform(scale(1.02));
 		}
 	}
 }

@@ -32,10 +32,21 @@ div.brand-pages h2:after {
   width: 21px;
   background: black;
 }
+div.brand-pages h2 span {
+  font-weight: 300;
+}
+div.brand-pages h2 strong {
+  display: block;
+  font-size: 28px;
+  margin-top: 10px;
+}
 div.brand-pages h3 {
   color: white;
   font-size: 25px;
   margin-bottom: 4px;
+}
+div.brand-pages h3 a {
+  color: white;
 }
 div.brand-pages h4 {
   color: #729748;
@@ -90,6 +101,13 @@ div.brand-pages .rte {
 div.brand-pages .widget-logo {
   background: #353535;
   padding-bottom: 40px;
+}
+div.brand-pages .intro-text {
+  color: #7d8c93;
+  font-size: 18px;
+}
+div.brand-pages .case-studies-title {
+  margin-bottom: 0;
 }
 @media (min-width: 768px) {
   div.brand-pages .intro {
@@ -187,6 +205,9 @@ div.brand-pages .product-profiles .product-profile.first .image figcaption {
   padding-right: 0;
   padding-left: 20px;
 }
+div.brand-pages .case-studies {
+  margin-bottom: 0;
+}
 div.brand-pages .case-studies .row {
   margin-left: -27px;
   margin-right: -27px;
@@ -199,7 +220,7 @@ div.brand-pages .case-studies .case-study {
   padding: 64px 40px 14px 40px;
   background: #353535;
   color: white;
-  margin-bottom: 25px;
+  margin-bottom: 60px;
 }
 div.brand-pages .case-studies .case-study .button {
   color: #729748;
@@ -259,4 +280,30 @@ div.brand-pages .bottom-links .image figcaption {
 }
 div.brand-pages .bottom-links .image figcaption i {
   font-size: 30px;
+}
+div.brand-pages .button {
+  color: #729748;
+  display: block;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.5s all ease-out;
+  -moz-transition: 0.5s all ease-out;
+  -ms-transition: 0.5s all ease-out;
+  -o-transition: 0.5s all ease-out;
+  transition: 0.5s all ease-out;
+}
+div.brand-pages .button i {
+  font-size: 30px;
+  vertical-align: middle;
+}
+div.brand-pages .button:hover {
+  text-decoration: none;
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  transform: scale(1.02);
 }

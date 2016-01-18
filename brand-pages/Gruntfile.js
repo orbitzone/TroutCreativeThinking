@@ -31,9 +31,10 @@ module.exports = function(grunt) {
           files: [
 
               // setup bootstrap3 less files
-              {expand: true, cwd: 'bower_components/bootstrap/less', src: ['**'], dest: 'less/bootstrap'},
+              {expand: true, cwd: '../bootstrap3-template/less/bootstrap', src: '**', dest: 'less/bootstrap'},
+              {expand: true, cwd: '../bootstrap3-template/less/legacy-bootstrap', src: '**', dest: 'less/legacy-bootstrap'},
               // setup fontawesome less files
-              {expand: true, cwd: 'bower_components/fontawesome/less', src: ['**'], dest: 'less/font-awesome'},
+              {expand: true, cwd: 'bower_components/fontawesome/less', src: '**', dest: 'less/font-awesome'},
               {expand: true, cwd: 'bower_components/matchHeight', src: ['*.matchHeight-min.js'], dest: 'javascript'},
               {expand: true, cwd: 'bower_components/Flowtype.js/', src: ['*.js'], dest: 'javascript'},
               {expand: true, cwd: 'bower_components/slick-carousel/slick', src: ['*.min.js'], dest: 'javascript'}
@@ -56,9 +57,10 @@ module.exports = function(grunt) {
   });
   //  grunt.loadNpmTasks('grunt-newer');
   grunt.loadNpmTasks('grunt-notify');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-copy');
+  
   grunt.registerTask('default', ['copy', 'less', 'watch']);
 };
 

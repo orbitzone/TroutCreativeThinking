@@ -116,7 +116,7 @@
                   <div class="text">
                     <p><b>Bathroom<br/>Culture</b></p>
                   </div>
-                  <i class="rbp-arrow-light-right-circle-icon"></i>
+                  <i class="rbp-icon"></i>
                   <span class="label">View video</span>  
                 </button>  
               </div>
@@ -149,7 +149,7 @@
                   <div class="text">
                     <p><b>Laufen designed<br/>like no other</b></p>  
                   </div>
-                  <i class="rbp-arrow-light-right-circle-icon"></i>
+                  <i class="rbp-icon"></i>
                   <span class="label">View video</span>  
                 </button>  
               </div>
@@ -339,7 +339,7 @@
                     <img src="images/brand-pages/laufen/videos/video-thumb-1.jpg" alt="Video 1">
                     <div class="icon text">
                       <div class="icon-play">
-                        <i class="rbp-arrow-light-right-circle-icon"></i>
+                        <i class="rbp-icon"></i>
                         <p>View Video</p>    
                       </div>
                       <div class="icon-playing">
@@ -356,7 +356,7 @@
                     <img src="images/brand-pages/laufen/videos/video-thumb-2.jpg" alt="Video 2">
                     <div class="icon text">
                       <div class="icon-play">
-                        <i class="rbp-arrow-light-right-circle-icon"></i>
+                        <i class="rbp-icon"></i>
                         <p>View Video</p>    
                       </div>
                       <div class="icon-playing">
@@ -373,7 +373,7 @@
                     <img src="images/brand-pages/laufen/videos/video-thumb-3.jpg" alt="Video 3">
                     <div class="icon text">
                       <div class="icon-play">
-                        <i class="rbp-arrow-light-right-circle-icon"></i>
+                        <i class="rbp-icon"></i>
                         <p>View Video</p>    
                       </div>
                       <div class="icon-playing">

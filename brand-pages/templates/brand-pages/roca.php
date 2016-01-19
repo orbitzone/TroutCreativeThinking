@@ -106,7 +106,7 @@
               </figure>
               <div class="slide-content">
                 <button type="button" class="play" data-video="1Owm4b6sfVA">
-                  <i class="rbp-arrow-light-right-circle-icon"></i>
+                  <i class="rbp-icon"></i>
                   <span class="label">View video</span>  
                 </button>  
               </div>
@@ -377,7 +377,7 @@
                     <img src="images/brand-pages/roca/roca-with-carlos-velasquez.jpg" alt="Roca With Carlos Velazquez">
                     <div class="icon text">
                       <div class="icon-play">
-                        <i class="rbp-arrow-light-right-circle-icon"></i>
+                        <i class="rbp-icon"></i>
                         <p>View Video</p>    
                       </div>
                       <div class="icon-playing">
@@ -394,7 +394,7 @@
                     <img src="images/brand-pages/roca/roca-meridian-intank-installation-video.jpg" alt="Roca Meridian In-Tank Installation">
                     <div class="icon text">
                       <div class="icon-play">
-                        <i class="rbp-arrow-light-right-circle-icon"></i>
+                        <i class="rbp-icon"></i>
                         <p>View Video</p>    
                       </div>
                       <div class="icon-playing">
@@ -411,7 +411,7 @@
                     <img src="images/brand-pages/roca/roca-meridian-intank-australia-video.jpg" alt="Meridian In-Tank Australia">
                     <div class="icon text">
                       <div class="icon-play">
-                        <i class="rbp-arrow-light-right-circle-icon"></i>
+                        <i class="rbp-icon"></i>
                         <p>View Video</p>    
                       </div>
                       <div class="icon-playing">
@@ -452,7 +452,7 @@
                     <img src="images/brand-pages/roca/roca-the-gap-rimless-video.jpg" alt="The Gap Rimless">
                     <div class="icon text">
                       <div class="icon-play">
-                        <i class="rbp-arrow-light-right-circle-icon"></i>
+                        <i class="rbp-icon"></i>
                         <p>View Video</p>    
                       </div>
                       <div class="icon-playing">
@@ -469,7 +469,7 @@
                     <img src="images/brand-pages/roca/roca-breakthrough-toilet-technology-video.jpg" alt="Breakthrough Bathroom Technology">
                     <div class="icon text">
                       <div class="icon-play">
-                        <i class="rbp-arrow-light-right-circle-icon"></i>
+                        <i class="rbp-icon"></i>
                         <p>View Video</p>    
                       </div>
                       <div class="icon-playing">
@@ -486,7 +486,7 @@
                     <img src="images/brand-pages/roca/roca-sustainability-video.jpg" alt="Roca - Sustainability">
                     <div class="icon text">
                       <div class="icon-play">
-                        <i class="rbp-arrow-light-right-circle-icon"></i>
+                        <i class="rbp-icon"></i>
                         <p>View Video</p>    
                       </div>
                       <div class="icon-playing">

@@ -102,6 +102,9 @@ div.brand-pages .widget-logo {
   background: #353535;
   padding-bottom: 40px;
 }
+div.brand-pages .widget-video .rbp-icon:before {
+  content: "c";
+}
 div.brand-pages .intro-text {
   color: #7d8c93;
   font-size: 18px;
@@ -280,6 +283,9 @@ div.brand-pages .bottom-links .image figcaption {
 }
 div.brand-pages .bottom-links .image figcaption i {
   font-size: 30px;
+}
+div.brand-pages .bottom-links .widget-html-image .rbp-icon:before {
+  content: "\6c";
 }
 div.brand-pages .button {
   color: #729748;

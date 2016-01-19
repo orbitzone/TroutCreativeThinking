@@ -61,7 +61,7 @@
                 </div>
                 <div class="slide-content">
                   <button type="button" class="play" data-video="8yLxMPSjtA8">
-                    <i class="rbp-play-icon"></i>
+                    <i class="rbp-icon"></i>
                     <span class="label">View video</span>  
                   </button>  
                 </div>
@@ -159,7 +159,7 @@
             <!-- Begin: HTML Widget-->  
             <div class="widget-big-button left">
               <div class="rte">
-                <a href="#"><span class="icon"><i class="rbp-icon rbp-manual-icon"></i></span>
+                <a href="#"><span class="icon"><i class="rbp-icon"></i></span>
                 <span class="text">Download<br/>Manuals</span></a>
               </div>            
             </div>
@@ -169,7 +169,7 @@
             <!-- Begin: HTML Widget-->  
             <div class="widget-big-button right">
               <div class="rte">
-                <a href="#"><span class="icon"><i class="rbp-icon rbp-play-icon"></i></span><span class="text">Videos</span></a>
+                <a href="#"><span class="icon"><i class="rbp-icon"></i></span><span class="text">Videos</span></a>
               </div>            
             </div>
             <!-- End: HTML Widget-->

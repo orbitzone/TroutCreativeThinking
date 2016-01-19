@@ -111,6 +111,12 @@ div.brand-pages .widget-block-five .text {
 div.brand-pages .widget-video {
   overflow: hidden;
 }
+div.brand-pages .widget-video .rbp-icon {
+  color: white;
+}
+div.brand-pages .widget-video .rbp-icon:before {
+  content: "g";
+}
 div.brand-pages .widget-video .slick-slider .slick-slide.slide-video {
   background: black;
 }
@@ -207,6 +213,9 @@ div.brand-pages .widget-video-tabs .intro .rte {
   font-size: 20px;
   line-height: 1.5;
   color: black;
+}
+div.brand-pages .widget-video-tabs .rbp-icon:before {
+  content: "g";
 }
 div.brand-pages .widget-video-tabs .moodboard {
   margin-bottom: 40px;

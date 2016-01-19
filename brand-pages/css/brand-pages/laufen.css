@@ -34,6 +34,9 @@ div.brand-pages .widget-video {
   overflow: hidden;
   color: white;
 }
+div.brand-pages .widget-video .rbp-icon:before {
+  content: "g";
+}
 div.brand-pages .widget-video .slick-slider .slick-slide.slide-video {
   background: black;
 }
@@ -130,4 +133,7 @@ div.brand-pages .widget-video-tabs .video .description {
   line-height: 1;
   color: black;
   font-size: 14px;
+}
+div.brand-pages .widget-video-tabs .rbp-icon:before {
+  content: "g";
 }

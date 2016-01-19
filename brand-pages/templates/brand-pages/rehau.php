@@ -48,7 +48,7 @@
               </figure>
               <div class="slide-content">
                 <button type="button" class="play" data-video="1Owm4b6sfVA">
-                  <i class="rbp-play-icon"></i>
+                  <i class="rbp-icon"></i>
                   <span class="label">Video</span>  
                 </button>  
               </div>
@@ -271,7 +271,7 @@
           <figure class="image">
             <a href="#">
               <img src="images/brand-pages/rehau/download-brochure.jpg" alt="Download Rehau Brochure"/>
-              <figcaption><i class="rbp-download-icon"></i><br/>Download Brochure</figcaption>
+              <figcaption><i class="rbp-icon"></i><br/>Download Brochure</figcaption>
             </a>
           </figure>
         </div>
@@ -287,7 +287,7 @@
               </figure>
               <div class="slide-content">
                 <button type="button" class="play" data-video="z7-Jipekf2g">
-                  <i class="rbp-play-icon"></i>
+                  <i class="rbp-icon"></i>
                   <span class="label">Videos</span>  
                 </button>  
               </div>

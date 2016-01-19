@@ -659,6 +659,9 @@
   font-size: 24px;
   color: black;
 }
+.widget-video .rbp-icon:before {
+  content: "c";
+}
 .widget-video .rte h3 {
   margin-top: 20px;
 }

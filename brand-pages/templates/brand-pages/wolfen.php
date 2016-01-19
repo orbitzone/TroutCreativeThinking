@@ -179,7 +179,7 @@
         <div class="widget-big-button left">
           <div class="rte">
             <a href="#">
-              <span class="icon"><i class="rbp-sink-tap-icon"></i></span>
+              <span class="icon"><i class="rbp-icon"></i></span>
               <span class="text">View Full<br/>Product Range</span>
             </a>
           </div>            
@@ -191,7 +191,7 @@
         <div class="widget-big-button right">
           <div class="rte">
             <a href="#">
-              <span class="icon"><i class="rbp-manual-icon"></i></span>
+              <span class="icon"><i class="rbp-icon"></i></span>
               <span class="text">Download<br/>Spec Guide</span>
             </a>
           </div>            

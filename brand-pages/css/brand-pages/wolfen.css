@@ -169,3 +169,9 @@ div.brand-pages .widget-big-button a:hover {
 div.brand-pages .widget-big-button a:hover .text {
   text-decoration: none;
 }
+div.brand-pages .widget-big-button.left i:before {
+  content: "j";
+}
+div.brand-pages .widget-big-button.right i:before {
+  content: "d";
+}

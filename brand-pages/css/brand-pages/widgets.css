@@ -398,8 +398,6 @@
   text-align: center;
 }
 .widget-slider {
-  margin-left: -15px;
-  margin-right: -15px;
   overflow: hidden;
 }
 .widget-slider .slick-slider {
@@ -729,16 +727,6 @@
 }
 .widget-big-button a:hover .text {
   text-decoration: none;
-}
-@media (min-width: 768px) {
-  .widget-big-button.left {
-    margin-left: -15px;
-  }
-}
-@media (min-width: 768px) {
-  .widget-big-button.right {
-    margin-right: -15px;
-  }
 }
 .widget-block-five {
   clear: both;

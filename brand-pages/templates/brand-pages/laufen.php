@@ -15,25 +15,29 @@
 
 
   <div class="container">
-    <div class="widget-block-five">
-      <div class="wbf-left">
-        <img src="images/brand-pages/laufen/block-1.jpg" alt="Bathroom">
-      </div>
-      <div class="wbf-middle">
-        <div class="wbf-middle-top" data-mh="wbf-top-right">
-          <!--<div class="text">Synonymous with beauty, <br>craftsmanship and <br>perfection of form – <br>qualities that continue to <br>define LAUFEN as one of <br>the world’s most desired <br>bathroom brands.</div>-->
-          <img src="images/brand-pages/laufen/block-5.jpg" alt="Synonymous with beauty, craftsmanship and perfection of form – qualities that continue to define LAUFEN as one of the world’s most desired bathroom brands.">
-        </div>
-        <div class="wbf-middle-bottom" data-mh="wbf-bottom-right">
-          <img src="images/brand-pages/laufen/block-3.jpg" alt="Sink">
-        </div>
-      </div>
-      <div class="wbf-right">
-        <div class="wbf-right-top" data-mh="wbf-top-right">
-          <img src="images/brand-pages/laufen/block-2.jpg" alt="Building">              
-        </div>
-        <div class="wbf-right-bottom" data-mh="wbf-bottom-right">
-          <img src="images/brand-pages/laufen/block-4.jpg" alt="Sink">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="widget-block-five">
+          <div class="wbf-left">
+            <img src="images/brand-pages/laufen/block-1.jpg" alt="Bathroom">
+          </div>
+          <div class="wbf-middle">
+            <div class="wbf-middle-top" data-mh="wbf-top-right">
+              <!--<div class="text">Synonymous with beauty, <br>craftsmanship and <br>perfection of form – <br>qualities that continue to <br>define LAUFEN as one of <br>the world’s most desired <br>bathroom brands.</div>-->
+              <img src="images/brand-pages/laufen/block-5.jpg" alt="Synonymous with beauty, craftsmanship and perfection of form – qualities that continue to define LAUFEN as one of the world’s most desired bathroom brands.">
+            </div>
+            <div class="wbf-middle-bottom" data-mh="wbf-bottom-right">
+              <img src="images/brand-pages/laufen/block-3.jpg" alt="Sink">
+            </div>
+          </div>
+          <div class="wbf-right">
+            <div class="wbf-right-top" data-mh="wbf-top-right">
+              <img src="images/brand-pages/laufen/block-2.jpg" alt="Building">              
+            </div>
+            <div class="wbf-right-bottom" data-mh="wbf-bottom-right">
+              <img src="images/brand-pages/laufen/block-4.jpg" alt="Sink">
+            </div>
+          </div>
         </div>
       </div>
     </div>

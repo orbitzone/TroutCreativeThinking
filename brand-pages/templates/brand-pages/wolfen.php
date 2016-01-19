@@ -1,34 +1,42 @@
 <div class="brand-pages">
   <div class="container logo bg-green">
-    <!-- Begin: Logo Widget Start -->
-    <div class="widget-logo">
-      <header role="banner">
-        <h1>
-          <a href="/">
-           <img src="images/brand-pages/wolfen/wolfen-logo.svg" width="118" height="116" alt="Wolfen"><!-- Set the image width and height when using svg-->
-          </a>
-        </h1> 
-      </header>
-    </div>      
-    <!-- End:  Logo widget -->
+    <div class="row">
+      <div class="col-xs-12">
+        <!-- Begin: Logo Widget Start -->
+        <div class="widget-logo">
+          <header role="banner">
+            <h1>
+              <a href="/">
+               <img src="images/brand-pages/wolfen/wolfen-logo.svg" width="118" height="116" alt="Wolfen"><!-- Set the image width and height when using svg-->
+              </a>
+            </h1> 
+          </header>
+        </div>      
+        <!-- End:  Logo widget -->
+      </div>
+    </div>    
   </div>
   <div class="container intro-slider">
-    <!-- Begin: Slider/Carousel Widget Start-->
-    <div class="widget-slider">
-      <div class="slides" data-slides-to-show="1" data-slides-to-scroll="1">
-        <div class="slide slide-1">
-          <a href="#">
-            <div class="image">
-              <img src="images/brand-pages/wolfen/slide-1.jpg" alt="The global leaders in electrofusion technology">  
-            </div>
-            <div class="text">
-             High<br>Performance<br>Commercial<br>Solutions
-            </div>
-          </a>
-        </div>        
-      </div>  
-    </div>             
-    <!-- End: Slider/Carousel Widget-->       
+    <div class="row">
+      <div class="col-xs-12">
+        <!-- Begin: Slider/Carousel Widget Start-->
+        <div class="widget-slider">
+          <div class="slides" data-slides-to-show="1" data-slides-to-scroll="1">
+            <div class="slide slide-1">
+              <a href="#">
+                <div class="image">
+                  <img src="images/brand-pages/wolfen/slide-1.jpg" alt="The global leaders in electrofusion technology">  
+                </div>
+                <div class="text">
+                 High<br>Performance<br>Commercial<br>Solutions
+                </div>
+              </a>
+            </div>        
+          </div>  
+        </div>             
+        <!-- End: Slider/Carousel Widget-->   
+      </div>
+    </div>
   </div>
   <div class="container characteristics bg-green">
     <div class="row">

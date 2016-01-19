@@ -289,6 +289,65 @@
 /* <b> tag*/
 /* Video Widget*/
 /* Big button Widget */
+.brand-pages .container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.brand-pages .container .row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.brand-pages .container .row .col-xs-1,
+.brand-pages .container .row .col-sm-1,
+.brand-pages .container .row .col-md-1,
+.brand-pages .container .row .col-lg-1,
+.brand-pages .container .row .col-xs-2,
+.brand-pages .container .row .col-sm-2,
+.brand-pages .container .row .col-md-2,
+.brand-pages .container .row .col-lg-2,
+.brand-pages .container .row .col-xs-3,
+.brand-pages .container .row .col-sm-3,
+.brand-pages .container .row .col-md-3,
+.brand-pages .container .row .col-lg-3,
+.brand-pages .container .row .col-xs-4,
+.brand-pages .container .row .col-sm-4,
+.brand-pages .container .row .col-md-4,
+.brand-pages .container .row .col-lg-4,
+.brand-pages .container .row .col-xs-5,
+.brand-pages .container .row .col-sm-5,
+.brand-pages .container .row .col-md-5,
+.brand-pages .container .row .col-lg-5,
+.brand-pages .container .row .col-xs-6,
+.brand-pages .container .row .col-sm-6,
+.brand-pages .container .row .col-md-6,
+.brand-pages .container .row .col-lg-6,
+.brand-pages .container .row .col-xs-7,
+.brand-pages .container .row .col-sm-7,
+.brand-pages .container .row .col-md-7,
+.brand-pages .container .row .col-lg-7,
+.brand-pages .container .row .col-xs-8,
+.brand-pages .container .row .col-sm-8,
+.brand-pages .container .row .col-md-8,
+.brand-pages .container .row .col-lg-8,
+.brand-pages .container .row .col-xs-9,
+.brand-pages .container .row .col-sm-9,
+.brand-pages .container .row .col-md-9,
+.brand-pages .container .row .col-lg-9,
+.brand-pages .container .row .col-xs-10,
+.brand-pages .container .row .col-sm-10,
+.brand-pages .container .row .col-md-10,
+.brand-pages .container .row .col-lg-10,
+.brand-pages .container .row .col-xs-11,
+.brand-pages .container .row .col-sm-11,
+.brand-pages .container .row .col-md-11,
+.brand-pages .container .row .col-lg-11,
+.brand-pages .container .row .col-xs-12,
+.brand-pages .container .row .col-sm-12,
+.brand-pages .container .row .col-md-12,
+.brand-pages .container .row .col-lg-12 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .brand-pages h1,
 .brand-pages h2,
 .brand-pages h3,

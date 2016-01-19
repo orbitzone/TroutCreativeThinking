@@ -14,7 +14,7 @@
   </div>
 
 
-  <div class="container bg-grey">
+  <div class="container">
     <div class="widget-block-five">
       <div class="wbf-left">
         <img src="images/brand-pages/laufen/block-1.jpg" alt="Bathroom">
@@ -97,7 +97,7 @@
   </div>
 
 
-  <div class="container">
+  <div class="container videos">
     <div class="row no-padding">
       <div class="col-sm-6 no-padding">
         <!-- Begin: Video Widget-->
@@ -170,54 +170,62 @@
 
 
   <div class="container bg-grey">
-    <!-- Begin: Slider/Carousel Widget Start-->
-    <div class="widget-slider carousel">
-      <div class="slides" data-slides-to-show="3" data-slides-to-scroll="3">
-        <div class="slide">
-          <figure class="image">
-            <a href="http://www.reece.com.au/assets/brands/820000/laufen-bathroom-products.pdf">
-              <img src="images/brand-pages/laufen/brochure-1.jpg" alt="Brochure 1">  
-            </a>
-          </figure>
-          <div class="text">
-           <a href="http://www.reece.com.au/assets/brands/820000/laufen-bathroom-products.pdf" class="widget-link">Download brochure</a>
+    <div class="row">
+      <div class="col-xs-12">
+        <!-- Begin: Slider/Carousel Widget Start-->
+        <div class="widget-slider carousel">
+          <div class="slides" data-slides-to-show="3" data-slides-to-scroll="3">
+            <div class="slide">
+              <figure class="image">
+                <a href="http://www.reece.com.au/assets/brands/820000/laufen-bathroom-products.pdf">
+                  <img src="images/brand-pages/laufen/brochure-1.jpg" alt="Brochure 1">  
+                </a>
+              </figure>
+              <div class="text">
+               <a href="http://www.reece.com.au/assets/brands/820000/laufen-bathroom-products.pdf" class="widget-link">Download brochure</a>
+              </div>
+            </div>
+            <div class="slide">
+              <figure class="image">
+                <a href="http://www.reece.com.au/assets/brands/820000/Laufen-SaphirKeramik.pdf">
+                  <img src="images/brand-pages/laufen/brochure-2.jpg" alt="Brochure 2">  
+                </a>
+              </figure>
+              <div class="text">
+                <a href="http://www.reece.com.au/assets/brands/820000/Laufen-SaphirKeramik.pdf" class="widget-link">Download brochure</a>
+              </div>
+            </div>
+            <div class="slide">
+              <figure class="image">
+                <a href="http://www.reece.com.au/assets/brands/820000/kartell-by-laufen-bathroom.pdf">
+                  <img src="images/brand-pages/laufen/brochure-3.jpg" alt="Brochure 3">  
+                </a>
+              </figure>
+              <div class="text">
+                <a href="http://www.reece.com.au/assets/brands/820000/kartell-by-laufen-bathroom.pdf" class="widget-link">Download brochure</a>
+              </div>
+            </div>        
           </div>
-        </div>
-        <div class="slide">
-          <figure class="image">
-            <a href="http://www.reece.com.au/assets/brands/820000/Laufen-SaphirKeramik.pdf">
-              <img src="images/brand-pages/laufen/brochure-2.jpg" alt="Brochure 2">  
-            </a>
-          </figure>
-          <div class="text">
-            <a href="http://www.reece.com.au/assets/brands/820000/Laufen-SaphirKeramik.pdf" class="widget-link">Download brochure</a>
-          </div>
-        </div>
-        <div class="slide">
-          <figure class="image">
-            <a href="http://www.reece.com.au/assets/brands/820000/kartell-by-laufen-bathroom.pdf">
-              <img src="images/brand-pages/laufen/brochure-3.jpg" alt="Brochure 3">  
-            </a>
-          </figure>
-          <div class="text">
-            <a href="http://www.reece.com.au/assets/brands/820000/kartell-by-laufen-bathroom.pdf" class="widget-link">Download brochure</a>
-          </div>
-        </div>        
+        </div>    
+        <!-- End: Slider/Carousel Widget-->   
       </div>
-    </div>    
-    <!-- End: Slider/Carousel Widget-->       
+    </div>        
   </div>
 
 
   <div class="container designers-header">
-    <!-- Begin: HTML Widget-->  
-    <div class="widget-html-image">
-      <div class="rte">
-        <h2>Design like no other</h2>
-        <p>Partnering with outstanding architects and designers, LAUFEN creates bathroom products that express emotion, purity and harmony.</p>
+    <div class="row">
+      <div class="col-xs-12">
+        <!-- Begin: HTML Widget-->  
+        <div class="widget-html-image">
+          <div class="rte">
+            <h2>Design like no other</h2>
+            <p>Partnering with outstanding architects and designers, LAUFEN creates bathroom products that express emotion, purity and harmony.</p>
+          </div>
+        </div>
+        <!-- End: HTML Widget-->
       </div>
-    </div>
-    <!-- End: HTML Widget-->
+    </div>    
   </div>
 
 

@@ -105,6 +105,12 @@ div.brand-pages .widget-logo {
 div.brand-pages .widget-video .rbp-icon:before {
   content: "c";
 }
+div.brand-pages .widget-video .slick-slider .slide-video {
+  background: black;
+}
+div.brand-pages .widget-video .slick-slider .slide-video button.close i.rbp-close-icon {
+  color: white;
+}
 div.brand-pages .intro-text {
   color: #7d8c93;
   font-size: 18px;

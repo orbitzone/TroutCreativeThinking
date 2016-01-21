@@ -149,6 +149,28 @@
       </div>
     </div>
   </div>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <!-- Begin: HTML Widget-->  
+        <div class="widget-html-image">
+          <!-- If no image dont show
+          <figure class="image">
+            <a href="#">
+            <img />
+            </a>
+          </figure>
+          -->
+          <div class="rte">
+            <h2>Manufacturing</h2>
+            <p>Others have factories. We have the Rehau Innovation Centre. It’s where we continuously refine the development of our products to deliver absolute performance and reliability for our customers. Using state of the art robotic technology in our manufacturing process, we apply the world’s most advanced materials to craft products with tolerances of 100th of a millimeter.</p>
+          </div>
+        </div>
+        <!-- End: HTML Widget-->
+      </div>
+    </div>
+  </div>
   <div class="container case-studies">
     <div class="row">
       <div class="col-sm-6">
@@ -199,27 +221,6 @@
             <h4>Gas</h4>
             <p>750 Orrong Road, Toorak is a high-end residential refurbishment.</p>
             <a href="index-rehau-orrong-road.php" class="button"><i class="rbp-arrow-light-right-circle-icon"></i><span class="sr-only">Read more</span></a>
-          </div>
-        </div>
-        <!-- End: HTML Widget-->
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <!-- Begin: HTML Widget-->  
-        <div class="widget-html-image">
-          <!-- If no image dont show
-          <figure class="image">
-            <a href="#">
-            <img />
-            </a>
-          </figure>
-          -->
-          <div class="rte">
-            <h2>Manufacturing</h2>
-            <p>Others have factories. We have the Rehau Innovation Centre. It’s where we continuously refine the development of our products to deliver absolute performance and reliability for our customers. Using state of the art robotic technology in our manufacturing process, we apply the world’s most advanced materials to craft products with tolerances of 100th of a millimeter.</p>
           </div>
         </div>
         <!-- End: HTML Widget-->

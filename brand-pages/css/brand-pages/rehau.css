@@ -110,7 +110,7 @@ div.brand-pages .intro-text {
   font-size: 18px;
 }
 div.brand-pages .case-studies-title {
-  margin-bottom: 0;
+  margin-bottom: 30px;
 }
 @media (min-width: 768px) {
   div.brand-pages .intro {
@@ -158,6 +158,9 @@ div.brand-pages .intro-copy .rte {
   div.brand-pages .intro-copy .rte {
     padding-right: 64px;
   }
+}
+div.brand-pages .product-profiles-title {
+  margin-bottom: 30px;
 }
 div.brand-pages .product-profiles {
   margin-bottom: 0;
@@ -260,11 +263,14 @@ div.brand-pages .main-video .play i:before {
 div.brand-pages .main-video .play .label {
   display: none;
 }
-div.brand-pages .tripplets .row {
+div.brand-pages .manufacturing-title {
+  margin-bottom: 30px;
+}
+div.brand-pages .manufacturing .row {
   margin-left: -8px;
   margin-right: -8px;
 }
-div.brand-pages .tripplets .col-xs-4 {
+div.brand-pages .manufacturing .row .col-xs-4 {
   padding: 0 8px;
 }
 div.brand-pages .bottom-links .slide-front {

@@ -47,7 +47,7 @@
                 <img src="images/brand-pages/rehau/video.jpg" alt="Rehau Video"/>
               </figure>
               <div class="slide-content">
-                <button type="button" class="play" data-video="1Owm4b6sfVA">
+                <button type="button" class="play" data-video="fm-a7SvVd5M">
                   <i class="rbp-icon"></i>
                   <span class="label">Video</span>  
                 </button>  
@@ -108,7 +108,7 @@
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="container product-profiles-title">
     <div class="row">
       <div class="col-sm-12">
         <!-- Begin: HTML Widget-->  
@@ -149,22 +149,13 @@
       </div>
     </div>
   </div>
-  
-  <div class="container">
+  <div class="container case-studies-title">
     <div class="row">
       <div class="col-sm-12">
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image">
-          <!-- If no image dont show
-          <figure class="image">
-            <a href="#">
-            <img />
-            </a>
-          </figure>
-          -->
           <div class="rte">
-            <h2>Manufacturing</h2>
-            <p>Others have factories. We have the Rehau Innovation Centre. It’s where we continuously refine the development of our products to deliver absolute performance and reliability for our customers. Using state of the art robotic technology in our manufacturing process, we apply the world’s most advanced materials to craft products with tolerances of 100th of a millimeter.</p>
+            <h2>Case studies</h2>
           </div>
         </div>
         <!-- End: HTML Widget-->
@@ -227,7 +218,28 @@
       </div>
     </div>
   </div>
-  <div class="container tripplets">
+  <div class="container manufacturing-title">
+    <div class="row">
+      <div class="col-sm-12">
+        <!-- Begin: HTML Widget-->  
+        <div class="widget-html-image">
+          <!-- If no image dont show
+          <figure class="image">
+            <a href="#">
+            <img />
+            </a>
+          </figure>
+          -->
+          <div class="rte">
+            <h2>Manufacturing</h2>
+            <p>Others have factories. We have the Rehau Innovation Centre. It’s where we continuously refine the development of our products to deliver absolute performance and reliability for our customers. Using state of the art robotic technology in our manufacturing process, we apply the world’s most advanced materials to craft products with tolerances of 100th of a millimeter.</p>
+          </div>
+        </div>
+        <!-- End: HTML Widget-->
+      </div>
+    </div>
+  </div>
+  <div class="container manufacturing">
     <div class="row">
       <div class="col-xs-4">
         <!-- Begin: HTML Widget-->  

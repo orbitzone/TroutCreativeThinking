@@ -1,0 +1,13 @@
+{
+  "name": "reece-bathroom-happiness",
+  "description": "Reece Bathroom Happiness bower components",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "jquery": "~1.11.1",
+    "bootstrap-sass": "~3.3.2",
+    "html5shiv": "~3.7.2",
+    "respond": "~1.4.2",
+    "angular": "~1.3.12"
+  }
+}

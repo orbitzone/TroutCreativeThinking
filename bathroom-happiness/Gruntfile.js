@@ -111,7 +111,8 @@ module.exports = function (grunt) {
           { src: 'bower_components/angular/angular.min.js', dest: 'js/vendor/angular.min.js' },
           { src: 'bower_components/jquery/dist/jquery.min.js', dest: 'js/vendor/jquery.min.js' },
           { src: 'bower_components/respond/dest/respond.min.js', dest: 'js/vendor/respond.min.js' },
-          { src: 'bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js', dest: 'js/vendor/bootstrap.min.js' }
+          { src: 'bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js', dest: 'js/vendor/bootstrap.min.js' },
+          { src: 'bower_components/slick-carousel/slick/slick.min.js', dest: 'js/vendor/slick.min.js' }
         ]
       }
     },

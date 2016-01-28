@@ -1,0 +1,226 @@
+html.bathroom-happiness {
+	height: 100%;
+}
+body.bathroom-happiness {	
+	height: 100%;
+	optgroup {
+	  color: $black;
+	  font-weight: bold;
+	  font-family: $font-family;
+	}
+	h1,
+	h2,
+	h3{
+		font-weight: 700;
+	}
+	p{
+		margin-bottom: 1em;
+	}
+	img{
+		max-width:100%;
+	}
+	.form-control{
+		@include box-shadow(none);
+		height: 44px;
+	}
+	@-moz-document url-prefix() { 
+		.selectpicker{
+			select.form-control{
+				-moz-appearance: none;
+		    text-indent: 0.01px;
+		    text-overflow: '';
+			}
+		}
+	}
+	select::-ms-expand {
+		display: none;
+	}
+
+	select::-ms-value {
+		background: none;
+	}
+	/* Hack to remove highlight on ie.*/
+	@media all and (-ms-high-contrast: active) {  
+	/* Remove purple highlight in HC mode */  
+		select:focus::-ms-value{
+		  background-color: transparent;  
+	 	}
+	}
+	@media all and (-ms-high-contrast: none) {  
+		/* Remove blue highlight in Normal mode*/  
+		select:focus::-ms-value{
+		  background-color: transparent;  
+		}
+	}
+
+	input[type=number]::-webkit-outer-spin-button,
+	input[type=number]::-webkit-inner-spin-button {
+	    -webkit-appearance: none;
+	    margin: 0;
+	}
+
+	input[type=number] {
+	    -moz-appearance:textfield;
+	}
+	.form-inline{
+		.selectpicker{
+			display: -moz-inline-stack;
+		  display: inline-block;
+		  *display: inline;
+		}
+	}
+
+	font-family: $font-family;
+
+	.panel {
+    background-color: #fff;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 10px;
+	}
+
+	/* Slick Slide shows */
+  .panel-slideshow {
+    position: relative;
+
+    .slide {
+    	.slide-content {
+    		position: relative;
+    		overflow: hidden;
+
+    		.slide-image {
+    			width: 66%;
+    			float: left;
+    		}
+
+	    	.slide-text {
+	    		@media (min-width: $screen-md-min){
+					  margin-top: 65px;
+					}
+					@media (min-width: $screen-lg-min){
+					  margin-top: 85px;
+					}
+	    		width: 33%;
+	    		float: left;
+	    		font-size: 9px;
+	    		font-weight: bold;
+	    		text-transform: uppercase;
+	    		color: $slide-text-color;
+
+	    		p {
+	    			margin-bottom: 1px;
+	    		}
+	    		.product-price-gst {
+	    			font-size: 8px;
+	    			text-transform: none;
+	    		}
+	    	}
+    	}
+    }
+
+    .slideshow-buttons {
+      position: absolute;
+      @media (min-width: $screen-md-min){
+			  top: 30px;
+			}
+			@media (min-width: $screen-lg-min){
+			  top: 50px;
+			}
+      left: 66%;
+      width: 60px;
+
+      .slick-next,
+      .slick-prev {
+      	top: 0;
+      	margin-top: 0;
+
+      	&:before {
+      		color: $black;
+      	}
+      }
+
+      .slick-next {
+      	right: 0;
+      }
+
+      .slick-prev {
+      	left: 0;
+      }
+    }
+
+    .slideshow-label {
+    	text-align: center;
+    	padding: 9px 9px 15px 9px;
+
+    	span {
+    		padding: 0;
+    		margin: 0;
+    		color: $white;
+	    	text-transform: uppercase;
+  	  	font-size: 13px;
+    		font-family: $font-family-book;
+    		padding: 9px 18px;
+    	}
+    }
+  }
+
+  .panel-slideshow.shop-tapware {
+  	.slide-text .product-price {
+  		color: $shop-tapware-color;
+  	}
+  	.slideshow-label span {
+  		background-color: $shop-tapware-color;
+  	}
+	}
+
+  .panel-slideshow.shop-showers {
+  	.slide-text .product-price {
+  		color: $shop-showers-color;
+  	}
+  	.slideshow-label span {
+  		background-color: $shop-showers-color;
+  	}
+  }
+
+	#main-content{
+		position: relative;
+		overflow: hidden;
+		padding-bottom: 40px;
+		line-height: 1.1;
+		font-family: $font-family;
+		-webkit-font-smoothing: antialiased;
+	  -moz-osx-font-smoothing: grayscale;
+	  font-size: 16px;
+		
+		@media (min-width: $screen-sm-min){
+	  	font-size: 16px;
+	  }
+	  @media (min-width: $screen-md-min){
+	  	font-size: 16px;
+	  }
+	  @media (min-width: $screen-lg-min){
+	  	padding: 0;
+	  }
+	  /* *{
+			@extend %border-box;
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	    -moz-tap-highlight-color: rgba(0, 0, 0, 0);		
+		}*/
+		label, input, button, select, textarea{
+			font-size: inherit;
+			line-height: inherit;
+			font-family: $font-family;
+		}
+	}
+	@media only screen and (max-device-width:$screen-xs-max) {
+	    input[type="text"]:focus, input[type="number"]:focus,
+	    textarea:focus,
+	    select:focus {
+	        font-size:16px;
+	    }
+	}
+	input, select, textarea{
+		font-family: $font-family;
+	}
+}

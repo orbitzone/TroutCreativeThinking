@@ -7,11 +7,11 @@ module.exports = function (grunt) {
 
     watch: {
       compass: {
-        files: ['sass/*.{scss,sass}'],
+        files: ['sass/*.{scss,sass}', 'sass/pages/*.{scss,sass}'],
         tasks: ['compass:dev']
       },
       js: {
-        files: ['js/*.js'],
+        files: ['js/src/*.js'],
         tasks: ['jshint', 'uglify:dev']
       },
       livereload: {

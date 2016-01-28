@@ -1,0 +1,74 @@
+body.homepage {
+  .section-intro {
+    background-color: $body-light-grey;
+    padding-bottom: 20px;
+
+    .row {
+      margin-left: -5px;
+      margin-right: -5px;
+      .col-md-3,
+      .col-md-6 {
+        padding: 0 5px;
+      }
+    }
+
+    .create-a-bathroom-caption {
+      padding: 0 20px;
+      position: relative;
+      text-align: center;
+      top: -25px;
+    }
+  }
+
+  .section-the-block {
+    background-color: $body-light-grey;
+    padding-bottom: 30px;
+
+    .the-block-bathroom {
+      background: rgba(0, 0, 0, 0) url("../images/homepage/the-block-bathroom.jpg") 243px 0;
+
+      .the-block-dean-shay {
+        float: left;
+      }
+
+      .the-block-edge {
+        float: left;
+      }
+    }
+  }
+
+  .section-nav-blocks {
+    background-color: $body-dark-grey;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .row {
+      margin-left: -2px;
+      margin-right: -2px;
+      .col-md-3 {
+        padding: 0 2px;
+      }
+    }
+
+    .nav-block {
+      height: 227px;
+      background: #ccc;
+
+      &.store-finder {
+        background: url("../images/nav/nav-store-finder.jpg") center;
+      }
+
+      &.the-powder-room {
+        background: url("../images/nav/nav-powder-room.png") center;
+      }
+
+      &.planning {
+        background: url("../images/nav/nav-planning.png") center;
+      }
+
+      &.brands {
+        background: url("../images/nav/nav-brands.jpg") center;
+      }
+    }
+  }
+}

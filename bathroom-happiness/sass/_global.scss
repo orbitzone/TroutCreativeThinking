@@ -2,10 +2,23 @@ html.bathroom-happiness {
 	height: 100%;
 }
 body.bathroom-happiness {
-	.container-fluid {
-		max-width: 1200px;
+	.main{
+		font-family: $font-family;
+		.container-fluid{
+			@media (min-width: 1200px){
+				padding: 0;				
+			}
+			@media (min-width: $screen-sm-min){
+				max-width: 768px;
+			}
+			@media (min-width: $screen-md-min){
+				max-width: 970px;
+			}
+			@media (min-width: $screen-lg-min){
+				max-width: 1200px;
+			}
+		}
 	}
-
 	height: 100%;
 	optgroup {
 	  color: $black;
@@ -74,8 +87,6 @@ body.bathroom-happiness {
 		  *display: inline;
 		}
 	}
-
-	font-family: $font-family;
 
 	.panel {
     background-color: #fff;

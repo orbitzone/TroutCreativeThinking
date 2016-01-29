@@ -1,15 +1,4 @@
 @charset "UTF-8";
-/*
-@media (min-width: $screen-sm-min){
-        
-}
-@media (min-width: $screen-md-min){
-        
-}
-@media (min-width: $screen-lg-min){
-        
-}
-*/
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -8919,13 +8908,6 @@ button.close {
 }
 
 /* Icons */
-@font-face {
-  font-family: "slick";
-  src: url('../fonts/slick.eot?1453863157');
-  src: url('../fonts/slick.eot?&1453863157#iefix') format("embedded-opentype"), url('../fonts/slick.woff?1453863157') format("woff"), url('../fonts/slick.ttf?1453863157') format("truetype"), url('../fonts/slick.svg?1453863157#slick') format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
 /* Arrows */
 /* line 58, ../sass/_slick-theme.scss */
 .slick-prev,
@@ -8967,7 +8949,7 @@ button.close {
 
 /* line 87, ../sass/_slick-theme.scss */
 .slick-prev:before, .slick-next:before {
-  font-family: "slick";
+  font-family: "bathroomhappiness";
   font-size: 20px;
   line-height: 1;
   color: white;
@@ -8987,11 +8969,11 @@ button.close {
 }
 /* line 103, ../sass/_slick-theme.scss */
 .slick-prev:before {
-  content: "<";
+  content: "a";
 }
 /* line 105, ../sass/_slick-theme.scss */
 [dir="rtl"] .slick-prev:before {
-  content: ">";
+  content: "d";
 }
 
 /* line 111, ../sass/_slick-theme.scss */
@@ -9005,11 +8987,11 @@ button.close {
 }
 /* line 117, ../sass/_slick-theme.scss */
 .slick-next:before {
-  content: ">";
+  content: "d";
 }
 /* line 119, ../sass/_slick-theme.scss */
 [dir="rtl"] .slick-next:before {
-  content: "<";
+  content: "a";
 }
 
 /* Dots */
@@ -9072,7 +9054,7 @@ button.close {
   content: "•";
   width: 20px;
   height: 20px;
-  font-family: "slick";
+  font-family: "bathroomhappiness";
   font-size: 6px;
   line-height: 20px;
   text-align: center;
@@ -9096,30 +9078,34 @@ html.bathroom-happiness {
 body.bathroom-happiness {
   height: 100%;
   /* Hack to remove highlight on ie.*/
-  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Gotham", "Helvetica Neue", Helvetica, Arial, sans-serif;
   /* Slick Slide shows */
 }
-/* line 6, ../sass/_global.scss */
+/* line 5, ../sass/_global.scss */
+body.bathroom-happiness .container-fluid {
+  max-width: 1200px;
+}
+/* line 10, ../sass/_global.scss */
 body.bathroom-happiness optgroup {
   color: #000;
   font-weight: bold;
-  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Gotham", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-/* line 11, ../sass/_global.scss */
+/* line 15, ../sass/_global.scss */
 body.bathroom-happiness h1,
 body.bathroom-happiness h2,
 body.bathroom-happiness h3 {
   font-weight: 700;
 }
-/* line 16, ../sass/_global.scss */
+/* line 20, ../sass/_global.scss */
 body.bathroom-happiness p {
   margin-bottom: 1em;
 }
-/* line 19, ../sass/_global.scss */
+/* line 23, ../sass/_global.scss */
 body.bathroom-happiness img {
   max-width: 100%;
 }
-/* line 22, ../sass/_global.scss */
+/* line 26, ../sass/_global.scss */
 body.bathroom-happiness .form-control {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -9128,18 +9114,18 @@ body.bathroom-happiness .form-control {
   height: 44px;
 }
 @-moz-document url-prefix() {
-  /* line 28, ../sass/_global.scss */
+  /* line 32, ../sass/_global.scss */
   body.bathroom-happiness .selectpicker select.form-control {
     -moz-appearance: none;
     text-indent: 0.01px;
     text-overflow: '';
   }
 }
-/* line 35, ../sass/_global.scss */
+/* line 39, ../sass/_global.scss */
 body.bathroom-happiness select::-ms-expand {
   display: none;
 }
-/* line 39, ../sass/_global.scss */
+/* line 43, ../sass/_global.scss */
 body.bathroom-happiness select::-ms-value {
   background: none;
 }
@@ -9148,7 +9134,7 @@ body.bathroom-happiness select::-ms-value {
   body.bathroom-happiness {
     /* Remove purple highlight in HC mode */
   }
-  /* line 45, ../sass/_global.scss */
+  /* line 49, ../sass/_global.scss */
   body.bathroom-happiness select:focus::-ms-value {
     background-color: transparent;
   }
@@ -9158,28 +9144,28 @@ body.bathroom-happiness select::-ms-value {
   body.bathroom-happiness {
     /* Remove blue highlight in Normal mode*/
   }
-  /* line 51, ../sass/_global.scss */
+  /* line 55, ../sass/_global.scss */
   body.bathroom-happiness select:focus::-ms-value {
     background-color: transparent;
   }
 }
-/* line 56, ../sass/_global.scss */
+/* line 60, ../sass/_global.scss */
 body.bathroom-happiness input[type=number]::-webkit-outer-spin-button,
 body.bathroom-happiness input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-/* line 62, ../sass/_global.scss */
+/* line 66, ../sass/_global.scss */
 body.bathroom-happiness input[type=number] {
   -moz-appearance: textfield;
 }
-/* line 66, ../sass/_global.scss */
+/* line 71, ../sass/_global.scss */
 body.bathroom-happiness .form-inline .selectpicker {
   display: -moz-inline-stack;
   display: inline-block;
   *display: inline;
 }
-/* line 75, ../sass/_global.scss */
+/* line 80, ../sass/_global.scss */
 body.bathroom-happiness .panel {
   background-color: #fff;
   border: none;
@@ -9187,21 +9173,21 @@ body.bathroom-happiness .panel {
   box-shadow: none;
   margin-bottom: 10px;
 }
-/* line 84, ../sass/_global.scss */
+/* line 89, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow {
   position: relative;
 }
-/* line 88, ../sass/_global.scss */
+/* line 93, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow .slide .slide-content {
   position: relative;
   overflow: hidden;
 }
-/* line 92, ../sass/_global.scss */
+/* line 97, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow .slide .slide-content .slide-image {
   width: 66%;
   float: left;
 }
-/* line 97, ../sass/_global.scss */
+/* line 102, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow .slide .slide-content .slide-text {
   width: 33%;
   float: left;
@@ -9211,69 +9197,69 @@ body.bathroom-happiness .panel-slideshow .slide .slide-content .slide-text {
   color: #231f20;
 }
 @media (min-width: 992px) {
-  /* line 97, ../sass/_global.scss */
+  /* line 102, ../sass/_global.scss */
   body.bathroom-happiness .panel-slideshow .slide .slide-content .slide-text {
     margin-top: 65px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 97, ../sass/_global.scss */
+  /* line 102, ../sass/_global.scss */
   body.bathroom-happiness .panel-slideshow .slide .slide-content .slide-text {
     margin-top: 85px;
   }
 }
-/* line 111, ../sass/_global.scss */
+/* line 116, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow .slide .slide-content .slide-text p {
   margin-bottom: 1px;
 }
-/* line 114, ../sass/_global.scss */
+/* line 119, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow .slide .slide-content .slide-text .product-price-gst {
   font-size: 8px;
   text-transform: none;
 }
-/* line 122, ../sass/_global.scss */
+/* line 127, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow .slideshow-buttons {
   position: absolute;
   left: 66%;
   width: 60px;
 }
 @media (min-width: 992px) {
-  /* line 122, ../sass/_global.scss */
+  /* line 127, ../sass/_global.scss */
   body.bathroom-happiness .panel-slideshow .slideshow-buttons {
     top: 30px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 122, ../sass/_global.scss */
+  /* line 127, ../sass/_global.scss */
   body.bathroom-happiness .panel-slideshow .slideshow-buttons {
     top: 50px;
   }
 }
-/* line 133, ../sass/_global.scss */
+/* line 138, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow .slideshow-buttons .slick-next,
 body.bathroom-happiness .panel-slideshow .slideshow-buttons .slick-prev {
   top: 0;
   margin-top: 0;
 }
-/* line 138, ../sass/_global.scss */
+/* line 143, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow .slideshow-buttons .slick-next:before,
 body.bathroom-happiness .panel-slideshow .slideshow-buttons .slick-prev:before {
   color: #000;
 }
-/* line 143, ../sass/_global.scss */
+/* line 148, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow .slideshow-buttons .slick-next {
   right: 0;
 }
-/* line 147, ../sass/_global.scss */
+/* line 152, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow .slideshow-buttons .slick-prev {
   left: 0;
 }
-/* line 152, ../sass/_global.scss */
+/* line 157, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow .slideshow-label {
   text-align: center;
-  padding: 9px 9px 15px 9px;
+  padding: 9px 9px 24px;
 }
-/* line 156, ../sass/_global.scss */
+/* line 161, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow .slideshow-label span {
   padding: 0;
   margin: 0;
@@ -9283,29 +9269,29 @@ body.bathroom-happiness .panel-slideshow .slideshow-label span {
   font-family: "Gotham Book", Gotham-Book, Arial, sans-serif;
   padding: 9px 18px;
 }
-/* line 169, ../sass/_global.scss */
+/* line 174, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow.shop-tapware .slide-text .product-price {
   color: #D57B8D;
 }
-/* line 172, ../sass/_global.scss */
+/* line 177, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow.shop-tapware .slideshow-label span {
   background-color: #D57B8D;
 }
-/* line 178, ../sass/_global.scss */
+/* line 183, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow.shop-showers .slide-text .product-price {
   color: #000;
 }
-/* line 181, ../sass/_global.scss */
+/* line 186, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow.shop-showers .slideshow-label span {
   background-color: #000;
 }
-/* line 186, ../sass/_global.scss */
+/* line 191, ../sass/_global.scss */
 body.bathroom-happiness #main-content {
   position: relative;
   overflow: hidden;
   padding-bottom: 40px;
   line-height: 1.1;
-  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Gotham", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
@@ -9316,114 +9302,237 @@ body.bathroom-happiness #main-content {
 	}*/
 }
 @media (min-width: 768px) {
-  /* line 186, ../sass/_global.scss */
+  /* line 191, ../sass/_global.scss */
   body.bathroom-happiness #main-content {
     font-size: 16px;
   }
 }
 @media (min-width: 992px) {
-  /* line 186, ../sass/_global.scss */
+  /* line 191, ../sass/_global.scss */
   body.bathroom-happiness #main-content {
     font-size: 16px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 186, ../sass/_global.scss */
+  /* line 191, ../sass/_global.scss */
   body.bathroom-happiness #main-content {
     padding: 0;
   }
 }
-/* line 210, ../sass/_global.scss */
+/* line 215, ../sass/_global.scss */
 body.bathroom-happiness #main-content label, body.bathroom-happiness #main-content input, body.bathroom-happiness #main-content button, body.bathroom-happiness #main-content select, body.bathroom-happiness #main-content textarea {
   font-size: inherit;
   line-height: inherit;
-  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Gotham", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 @media only screen and (max-device-width: 767px) {
-  /* line 217, ../sass/_global.scss */
+  /* line 222, ../sass/_global.scss */
   body.bathroom-happiness input[type="text"]:focus, body.bathroom-happiness input[type="number"]:focus,
   body.bathroom-happiness textarea:focus,
   body.bathroom-happiness select:focus {
     font-size: 16px;
   }
 }
-/* line 223, ../sass/_global.scss */
+/* line 228, ../sass/_global.scss */
 body.bathroom-happiness input, body.bathroom-happiness select, body.bathroom-happiness textarea {
-  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Gotham", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@font-face {
+  font-family: "bathroomhappiness";
+  src: url("../fonts/bathroomhappiness.eot");
+  src: url("../fonts/bathroomhappiness.eot?#iefix") format("embedded-opentype"), url("../fonts/bathroomhappiness.woff") format("woff"), url("../fonts/bathroomhappiness.ttf") format("truetype"), url("../fonts/bathroomhappiness.svg#bathroomhappiness") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 15, ../sass/_fonts.scss */
+[data-icon]:before {
+  font-family: "bathroomhappiness" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 28, ../sass/_fonts.scss */
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "bathroomhappiness" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 41, ../sass/_fonts.scss */
+.icon-arrow-prev:before {
+  content: "\61";
+}
+
+/* line 44, ../sass/_fonts.scss */
+.icon-arrow-right:before {
+  content: "\62";
+}
+
+/* line 47, ../sass/_fonts.scss */
+.icon-search:before {
+  content: "\63";
+}
+
+/* line 50, ../sass/_fonts.scss */
+.icon-arrow-next:before {
+  content: "\64";
 }
 
 /* line 2, ../sass/pages/_homepage.scss */
+body.homepage .panel-search {
+  height: 38px;
+  line-height: 38px;
+}
+/* line 6, ../sass/pages/_homepage.scss */
+body.homepage .panel-search input[type=text] {
+  border: none;
+  padding: 0 0 0 10px;
+  width: 200px;
+  height: 38px;
+  line-height: 38px;
+}
+/* line 15, ../sass/pages/_homepage.scss */
+body.homepage .arrow-link {
+  text-align: center;
+}
+/* line 18, ../sass/pages/_homepage.scss */
+body.homepage .arrow-link .arrow-link-label {
+  font-family: "Gotham Book", Gotham-Book, Arial, sans-serif;
+  color: #273d52;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+/* line 26, ../sass/pages/_homepage.scss */
 body.homepage .section-intro {
   background-color: #EDEBEB;
   padding-bottom: 20px;
 }
-/* line 6, ../sass/pages/_homepage.scss */
+/* line 30, ../sass/pages/_homepage.scss */
 body.homepage .section-intro .row {
   margin-left: -5px;
   margin-right: -5px;
 }
-/* line 9, ../sass/pages/_homepage.scss */
+/* line 33, ../sass/pages/_homepage.scss */
 body.homepage .section-intro .row .col-md-3,
 body.homepage .section-intro .row .col-md-6 {
   padding: 0 5px;
 }
-/* line 15, ../sass/pages/_homepage.scss */
-body.homepage .section-intro .create-a-bathroom-caption {
-  padding: 0 20px;
-  position: relative;
-  text-align: center;
-  top: -25px;
+/* line 39, ../sass/pages/_homepage.scss */
+body.homepage .section-intro .panel-hero {
+  min-height: 647px;
 }
-/* line 23, ../sass/pages/_homepage.scss */
+/* line 42, ../sass/pages/_homepage.scss */
+body.homepage .section-intro .panel-hero img {
+  width: 100%;
+}
+/* line 47, ../sass/pages/_homepage.scss */
+body.homepage .section-intro .text-overlay {
+  height: 90px;
+  background: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: 124px;
+  padding-top: 18px;
+  width: 100%;
+  text-align: center;
+  text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  font-family: "Gotham", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: #FFF;
+  text-transform: uppercase;
+}
+/* line 62, ../sass/pages/_homepage.scss */
+body.homepage .section-intro .text-overlay .text-overlay-line-1 {
+  font-size: 18px;
+  line-height: 18px;
+}
+/* line 67, ../sass/pages/_homepage.scss */
+body.homepage .section-intro .text-overlay .text-overlay-line-2 {
+  font-size: 33px;
+  line-height: 33px;
+}
+/* line 73, ../sass/pages/_homepage.scss */
+body.homepage .section-intro .panel-find-inspiration {
+  position: relative;
+  height: 420px;
+  background: url("../images/homepage/find-inspiration.jpg");
+  background-size: cover;
+}
+/* line 81, ../sass/pages/_homepage.scss */
+body.homepage .section-intro .panel-shop-products {
+  position: relative;
+  height: 370px;
+  background: url("../images/homepage/shop-products.jpg");
+  background-size: cover;
+}
+/* line 89, ../sass/pages/_homepage.scss */
+body.homepage .section-intro .panel-slideshow {
+  height: 220px;
+}
+/* line 94, ../sass/pages/_homepage.scss */
 body.homepage .section-the-block {
   background-color: #EDEBEB;
   padding-bottom: 30px;
 }
-/* line 27, ../sass/pages/_homepage.scss */
+/* line 98, ../sass/pages/_homepage.scss */
 body.homepage .section-the-block .the-block-bathroom {
   background: transparent url("../images/homepage/the-block-bathroom.jpg") 243px 0;
 }
-/* line 30, ../sass/pages/_homepage.scss */
+/* line 101, ../sass/pages/_homepage.scss */
 body.homepage .section-the-block .the-block-bathroom .the-block-dean-shay {
   float: left;
 }
-/* line 34, ../sass/pages/_homepage.scss */
+/* line 105, ../sass/pages/_homepage.scss */
 body.homepage .section-the-block .the-block-bathroom .the-block-edge {
   float: left;
 }
-/* line 40, ../sass/pages/_homepage.scss */
+/* line 111, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks {
   background-color: #DEDDDE;
   padding-top: 50px;
   padding-bottom: 50px;
 }
-/* line 45, ../sass/pages/_homepage.scss */
+/* line 116, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .row {
   margin-left: -2px;
   margin-right: -2px;
 }
-/* line 48, ../sass/pages/_homepage.scss */
+/* line 119, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .row .col-md-3 {
   padding: 0 2px;
 }
-/* line 53, ../sass/pages/_homepage.scss */
+/* line 124, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-block {
   height: 227px;
   background: #ccc;
 }
-/* line 57, ../sass/pages/_homepage.scss */
+/* line 128, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-block.store-finder {
   background: url("../images/nav/nav-store-finder.jpg") center;
 }
-/* line 61, ../sass/pages/_homepage.scss */
+/* line 132, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-block.the-powder-room {
   background: url("../images/nav/nav-powder-room.png") center;
 }
-/* line 65, ../sass/pages/_homepage.scss */
+/* line 136, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-block.planning {
   background: url("../images/nav/nav-planning.png") center;
 }
-/* line 69, ../sass/pages/_homepage.scss */
+/* line 140, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-block.brands {
   background: url("../images/nav/nav-brands.jpg") center;
 }

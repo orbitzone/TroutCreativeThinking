@@ -23,19 +23,23 @@
   <body class="homepage bathroom-happiness">
     <!-- intro section -->
     <div class="section-intro">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
-
+          <div class="col-md-6">
+            <div class="panel panel-search hidden-md hidden-lg">
+              <div class="search-input">
+                <input type="text" placeholder="Product Search"/>
+              </div>
+              <div class="search-button"></div>
+            </div>
+          </div>
         </div>
         <div class="row">
           <!-- large/middle col (shower img) -->
           <div class="col-md-6 col-md-push-3">
-            <div class="panel panel-large">
+            <div class="panel panel-hero">
               <div class="image">
-                <img src="images/homepage/shower-cap.jpg" alt="Image of a woman wearing a shower cap">
-              </div>
-              <div class="image create-a-bathroom-caption">
-                <img src="images/homepage/create-a-bathroom-you-love.png" alt="Create a bathroom you love">
+                <img src="images/homepage/shower-cap.jpg" alt="it's time to create a bathroom you love">
               </div>
               <div class="arrow-link">
                 <a href="#">
@@ -46,10 +50,11 @@
             </div>
           </div>
           <!-- left col (find inspiration img) -->
-          <div class="col-md-3 col-md-pull-6">
-            <div class="panel">
-              <div class="image">
-                <img src="images/homepage/find-inspiration.jpg" alt="Find Inspiration">
+          <div class="col-md-3 col-sm-6 col-md-pull-6">
+            <div class="panel panel-find-inspiration">
+              <div class="text-overlay">
+                <div class="text-overlay-line-1">Find</div> 
+                <div class="text-overlay-line-2">Inspiration</div>
               </div>
             </div>
             <div class="panel panel-slideshow shop-tapware">
@@ -96,17 +101,18 @@
             </div>
           </div>
           <!-- right col (shop products img) -->
-          <div class="col-md-3">
-            <div class="panel panel-search">
-              <div class="search-text"></div>
+          <div class="col-md-3 col-sm-6">
+            <div class="panel panel-search hidden-xs hidden-sm">
+              <div class="search-input">
+                <input type="text" placeholder="Product Search"/>
+              </div>
               <div class="search-button"></div>
             </div>
-            <div class="panel">
-              <a href="#">
-                <div class="image">
-                  <img src="images/homepage/shop-products.jpg" alt="Shop Products">
-                </div>
-              </a>
+            <div class="panel panel-shop-products">
+              <div class="text-overlay">
+                <div class="text-overlay-line-1">Shop</div> 
+                <div class="text-overlay-line-2">Products</div>
+              </div>
             </div>
             <div class="panel panel-slideshow shop-showers">
               <div class="slideshow-container">
@@ -154,7 +160,7 @@
     </div>
     <!-- "The Block" section -->
     <div class="section-the-block">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-sm-12">
             <div class="the-block-bathroom">
@@ -172,26 +178,34 @@
     </div>
     <!-- nav blocks section -->
     <div class="section-nav-blocks">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-xs-6 col-sm-6 col-md-3">
             <div class="nav-block store-finder">
-
+              <div class="nav-block-label">
+                Store Finder
+              </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-xs-6 col-sm-6 col-md-3">
             <div class="nav-block the-powder-room">
-
+              <div class="nav-block-label">
+                Read More
+              </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-xs-6 col-sm-6 col-md-3">
             <div class="nav-block planning">
-
+              <div class="nav-block-label">
+                Planning
+              </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-xs-6 col-sm-6 col-md-3">
             <div class="nav-block brands">
-
+              <div class="nav-block-label">
+                Brands
+              </div>
             </div>
           </div>
         </div>

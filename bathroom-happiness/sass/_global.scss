@@ -1,7 +1,11 @@
 html.bathroom-happiness {
 	height: 100%;
 }
-body.bathroom-happiness {	
+body.bathroom-happiness {
+	.container-fluid {
+		max-width: 1200px;
+	}
+
 	height: 100%;
 	optgroup {
 	  color: $black;
@@ -62,6 +66,7 @@ body.bathroom-happiness {
 	input[type=number] {
 	    -moz-appearance:textfield;
 	}
+
 	.form-inline{
 		.selectpicker{
 			display: -moz-inline-stack;
@@ -151,7 +156,7 @@ body.bathroom-happiness {
 
     .slideshow-label {
     	text-align: center;
-    	padding: 9px 9px 15px 9px;
+    	padding: 9px 9px 24px;
 
     	span {
     		padding: 0;
@@ -167,19 +172,19 @@ body.bathroom-happiness {
 
   .panel-slideshow.shop-tapware {
   	.slide-text .product-price {
-  		color: $shop-tapware-color;
+  		color: $pink;
   	}
   	.slideshow-label span {
-  		background-color: $shop-tapware-color;
+  		background-color: $pink;
   	}
 	}
 
   .panel-slideshow.shop-showers {
   	.slide-text .product-price {
-  		color: $shop-showers-color;
+  		color: $black;
   	}
   	.slideshow-label span {
-  		background-color: $shop-showers-color;
+  		background-color: $black
   	}
   }
 

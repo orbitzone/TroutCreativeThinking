@@ -1,30 +1,21 @@
 $white: #FFF;
 $black: #000;
-$green: #6bccb8;
+$green: #63d187;
+$dark-blue: #273d52;
+$pink: #D57B8D;
 
 $body-light-grey: #EDEBEB;
 $body-dark-grey: #DEDDDE;
 
-$font-family: 'Gotham A', 'Gotham B', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+// Text variables.
+$font-family: 'Gotham', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font-family-book: 'Gotham Book', Gotham-Book, Arial, sans-serif;
 $font-family-serif: 'Libre Baskerville', serif;
 
 // Custom slick settings.
 $slick-opacity-default: 1;
-$slick-prev-character: "<";
-$slick-next-character: ">";
+$slick-prev-character: "\61";
+$slick-next-character: "\64";
+$slick-font-family: "bathroomhappiness";
 
 $slide-text-color: #231f20;
-$shop-tapware-color: #D57B8D;
-$shop-showers-color: #000;
-/*
-@media (min-width: $screen-sm-min){
-        
-}
-@media (min-width: $screen-md-min){
-        
-}
-@media (min-width: $screen-lg-min){
-        
-}
-*/

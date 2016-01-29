@@ -100,12 +100,7 @@ body.bathroom-happiness {
     		}
 
 	    	.slide-text {
-	    		@media (min-width: $screen-md-min){
-					  margin-top: 65px;
-					}
-					@media (min-width: $screen-lg-min){
-					  margin-top: 85px;
-					}
+					margin-top: 85px;
 	    		width: 33%;
 	    		float: left;
 	    		font-size: 9px;
@@ -126,12 +121,7 @@ body.bathroom-happiness {
 
     .slideshow-buttons {
       position: absolute;
-      @media (min-width: $screen-md-min){
-			  top: 30px;
-			}
-			@media (min-width: $screen-lg-min){
-			  top: 50px;
-			}
+      top: 50px;
       left: 66%;
       width: 60px;
 

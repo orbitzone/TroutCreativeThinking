@@ -1,85 +1,98 @@
 <div class="brand-pages">
       <div class="container">
-        <!-- Begin: Logo Widget Start -->
-        <div class="widget-logo">
-          <header role="banner">
-            <h1>
-              <a href="/">
-                 <img src="images/brand-pages/friatek/friatek-logo.jpg" width="136" alt="Friatek"><!-- Set the image width-->
-              </a>
-            </h1> 
-          </header>
-                     
-        </div>      
-        <!-- End:  Logo widget -->
+        <div class="row">
+          <div class="col-xs-12">
+            <!-- Begin: Logo Widget Start -->
+            <div class="widget-logo">
+              <header role="banner">
+                <h1>
+                  <a href="/">
+                     <img src="images/brand-pages/friatek/friatek-logo.jpg" width="136" alt="Friatek"><!-- Set the image width-->
+                  </a>
+                </h1> 
+              </header>
+            </div>      
+            <!-- End:  Logo widget -->
+          </div>
+        </div>        
       </div>    
       <div class="container bg-grey intro-slider">
-          <!-- Begin: Slider/Carousel Widget Start-->
-          <div class="widget-slider">
-            <div class="slides" data-slides-to-show="1" data-slides-to-scroll="1">
-              <div class="slide slide-1">
-                <a href="#">
-                  <div class="image">
-                    <img src="images/brand-pages/friatek/slide-1.jpg" alt="The global leaders in electrofusion technology">  
-                  </div>
-                  <div class="text">
-                   The global <br>leaders in <br>electrofusion <br>technology
-                  </div>
-                </a>
-              </div>
-              <div class="slide slide-2">
-                <a href="#"> <!-- The link should be configurable in the widget settings, add when necessary -->
-                  <div class="image">
-                    <img src="images/brand-pages/friatek/slide-2.jpg" alt="German Engineering and precision">  
-                  </div>
-                  <div class="text">
-                    German <br>Engineering <br>and precision <br><img src="images/brand-pages/friatek/made-in-germany.png" alt="Made in Germany">
-                  </div>
-                </a>
-              </div>
-            </div>  
-          </div>             
-          <!-- End: Slider/Carousel Widget-->       
+        <div class="row">
+          <div class="col-xs-12">
+            <!-- Begin: Slider/Carousel Widget Start-->
+            <div class="widget-slider">
+              <div class="slides" data-slides-to-show="1" data-slides-to-scroll="1">
+                <div class="slide slide-1">
+                  <a href="#">
+                    <div class="image">
+                      <img src="images/brand-pages/friatek/slide-1.jpg" alt="The global leaders in electrofusion technology">  
+                    </div>
+                    <div class="text">
+                     The global <br>leaders in <br>electrofusion <br>technology
+                    </div>
+                  </a>
+                </div>
+                <div class="slide slide-2">
+                  <a href="#"> <!-- The link should be configurable in the widget settings, add when necessary -->
+                    <div class="image">
+                      <img src="images/brand-pages/friatek/slide-2.jpg" alt="German Engineering and precision">  
+                    </div>
+                    <div class="text">
+                      German <br>Engineering <br>and precision <br><img src="images/brand-pages/friatek/made-in-germany.png" alt="Made in Germany">
+                    </div>
+                  </a>
+                </div>
+              </div>  
+            </div>             
+            <!-- End: Slider/Carousel Widget-->       
+          </div>          
+        </div>
       </div>
       <div class="container intro-summary">
-        <!-- Begin: HTML Widget-->  
-          <div class="widget-html-image intro">
-            <div class="rte">
-              <p>A pioneer of electrofusion technology since the 70’s, FRIATEC continues to set the standard that others follow. And now, FRIATEC’s advanced range of electrofusion fittings, welders and tools are available through Reece in Australia.</p>
+        <div class="row">
+          <div class="col-xs-12">
+            <!-- Begin: HTML Widget-->  
+            <div class="widget-html-image intro">
+              <div class="rte">
+                <p>A pioneer of electrofusion technology since the 70’s, FRIATEC continues to set the standard that others follow. And now, FRIATEC’s advanced range of electrofusion fittings, welders and tools are available through Reece in Australia.</p>
+              </div>
             </div>
-          </div>
-        <!-- End: HTML Widget-->
+            <!-- End: HTML Widget-->  
+          </div>        
+        </div>
       </div>
       <div class="container bg-grey">
         <div class="row">
-          <!-- Begin: Video Widget-->  
-          <div class="widget-video">
-            <div class="video-slides">
-              <div class="slide slide-front">
-                <div class="image">
-                  <img src="images/brand-pages/friatek/quality-video-bg.jpg" alt="Video">
-                </div>
-                <div class="slide-content">
-                  <button type="button" class="play" data-video="8yLxMPSjtA8">
-                    <i class="rbp-icon"></i>
-                    <span class="label">View video</span>  
-                  </button>  
-                </div>
-              </div>
-              <div class="slide slide-video">
-                <div class="video-wrapper">
-                  <div class="video">
-                    <figure class="player">
-                    </figure>
+          <div class="col-xs-12">
+            <!-- Begin: Video Widget-->  
+            <div class="widget-video">
+              <div class="video-slides">
+                <div class="slide slide-front">
+                  <div class="image">
+                    <img src="images/brand-pages/friatek/quality-video-bg.jpg" alt="Video">
+                  </div>
+                  <div class="slide-content">
+                    <button type="button" class="play" data-video="8yLxMPSjtA8">
+                      <i class="rbp-icon"></i>
+                      <span class="label">View video</span>  
+                    </button>  
                   </div>
                 </div>
-                <button type="button" class="close">
-                  <i class="rbp-close-icon"></i>               
-                </button>  
-              </div>
-            </div>    
-          </div>
-          <!-- End: Video Widget-->
+                <div class="slide slide-video">
+                  <div class="video-wrapper">
+                    <div class="video">
+                      <figure class="player">
+                      </figure>
+                    </div>
+                  </div>
+                  <button type="button" class="close">
+                    <i class="rbp-close-icon"></i>               
+                  </button>  
+                </div>
+              </div>    
+            </div>
+            <!-- End: Video Widget-->
+          </div>          
         </div>        
       </div>
       <div class="container trio">
@@ -153,7 +166,7 @@
           </div>         
         </div>
       </div> 
-      <div class="container">
+      <div class="container downloads">
         <div class="row">
           <div class="col-sm-6">
             <!-- Begin: HTML Widget-->  

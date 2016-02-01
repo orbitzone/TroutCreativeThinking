@@ -4,6 +4,8 @@ html.bathroom-happiness {
 body.bathroom-happiness {
 	.main{
 		font-family: $font-family;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
 		.container-fluid{
 			@media (min-width: 1200px){
 				padding: 0;				
@@ -99,20 +101,25 @@ body.bathroom-happiness {
 	/* Slick Slide shows */
   .panel-slideshow {
     position: relative;
+    height: 240px;
+
+    .slideshow-container {
+      height: 185px;
+      padding-top: 10px;
+    }
 
     .slide {
     	.slide-content {
-    		position: relative;
-    		overflow: hidden;
-
     		.slide-image {
-    			width: 66%;
+    			width: 62%;
     			float: left;
+    			padding: 0 0 0 10px;
     		}
 
 	    	.slide-text {
 					margin-top: 85px;
-	    		width: 33%;
+					padding-left: 10px;
+	    		width: 38%;
 	    		float: left;
 	    		font-size: 9px;
 	    		font-weight: bold;
@@ -133,13 +140,17 @@ body.bathroom-happiness {
     .slideshow-buttons {
       position: absolute;
       top: 50px;
-      left: 66%;
-      width: 60px;
+      left: 62%;
+      margin-left: 10px;
+      width: 66px;
 
       .slick-next,
       .slick-prev {
       	top: 0;
       	margin-top: 0;
+      	background-color: $grey;
+      	width: 32px;
+      	height: 40px;
 
       	&:before {
       		color: $black;
@@ -160,33 +171,34 @@ body.bathroom-happiness {
     	padding: 9px 9px 24px;
 
     	span {
-    		padding: 0;
     		margin: 0;
     		color: $white;
+    		background-color: $green;
 	    	text-transform: uppercase;
-  	  	font-size: 13px;
+  	  	font-size: 14px;
     		font-family: $font-family-book;
     		padding: 9px 18px;
     	}
     }
   }
 
-  .panel-slideshow.shop-tapware {
-  	.slide-text .product-price {
-  		color: $pink;
-  	}
-  	.slideshow-label span {
-  		background-color: $pink;
-  	}
-	}
-
   .panel-slideshow.shop-showers {
-  	.slide-text .product-price {
-  		color: $black;
-  	}
-  	.slideshow-label span {
-  		background-color: $black
-  	}
+  	@media (min-width: $screen-md-min) {
+	  	.slide {
+	  		.slide-text {
+	  			padding-left: 20px;
+	  		}
+
+	  		.slide-image {
+	  			float: right;
+	  		}
+	  	}
+
+	  	.slideshow-buttons {
+	  		left: 10px;
+	  		margin-right: 0;
+	  	}
+	  }
   }
 
 	#main-content{

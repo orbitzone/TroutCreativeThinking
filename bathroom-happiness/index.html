@@ -5,22 +5,16 @@
     <title>Reece - Bathroom Happiness</title>
     
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6958312/662428/css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6958312/7494952/css/fonts.css" />
     <link rel="stylesheet" type="text/css" href="css/reece-global.css" />
-    <script src="js/reece-ocnav.js" type="text/javascript"></script>
     <script src='js/vendor/jquery.min.js' type='text/javascript'></script>
+    <script src="js/reece-ocnav.js" type="text/javascript"></script>
     <script src='js/vendor/respond.min.js' type='text/javascript'></script>
     <script src='js/vendor/bootstrap.min.js' type='text/javascript'></script>
     <script src='js/vendor/slick.min.js' type='text/javascript'></script>
+    <script src='js/vendor/jquery.validate.min.js' type='text/javascript'></script>
 
     <script src='js/main.min.js' type='text/javascript'></script>
-
-    <style type="text/css">
-      body.debug .panel {
-        background: #ccc;
-        border: 1px solid red;
-      }
-    </style>
   </head>
   <body class="homepage bathroom-happiness">
   <div class="ocmain-wrapper">
@@ -140,7 +134,9 @@
                 <div class="search-input">
                   <input type="text" placeholder="Product Search"/>
                 </div>
-                <div class="search-button"></div>
+                <div class="search-submit">
+                  <button type="submit"><i class="icon-search"></i></button>
+                </div>
               </div>
             </div>
           </div>
@@ -154,19 +150,21 @@
                 <div class="arrow-link">
                   <a href="#">
                     <span class="arrow-link-label">Get Inspired</span>
-                    <span class="arrow-link-icon"></span>
+                    <span class="arrow-link-icon"><i class="arrow-link-icon icon-arrow-right"></i></span>
                   </a>
                 </div>
               </div>
             </div>
             <!-- left col (find inspiration img) -->
             <div class="col-md-3 col-sm-6 col-md-pull-6">
-              <div class="panel panel-find-inspiration">
-                <div class="text-overlay">
-                  <div class="text-overlay-line-1">Find</div> 
-                  <div class="text-overlay-line-2">Inspiration</div>
+              <a href="#" class="panel-link">
+                <div class="panel panel-find-inspiration">
+                  <div class="text-overlay">
+                    <div class="text-overlay-line-1">Find</div> 
+                    <div class="text-overlay-line-2">Inspiration</div>
+                  </div>
                 </div>
-              </div>
+              </a>
               <div class="panel panel-slideshow shop-tapware">
                 <div class="slideshow-container">
                   <div class="slide">
@@ -216,14 +214,18 @@
                 <div class="search-input">
                   <input type="text" placeholder="Product Search"/>
                 </div>
-                <div class="search-button"></div>
-              </div>
-              <div class="panel panel-shop-products">
-                <div class="text-overlay">
-                  <div class="text-overlay-line-1">Shop</div> 
-                  <div class="text-overlay-line-2">Products</div>
+                <div class="search-submit">
+                  <button type="submit"><i class="icon-search"></i></button>
                 </div>
               </div>
+              <a href="#" class="panel-link">
+                <div class="panel panel-shop-products">
+                  <div class="text-overlay">
+                    <div class="text-overlay-line-1">Shop</div> 
+                    <div class="text-overlay-line-2">Products</div>
+                  </div>
+                </div>
+              </a>
               <div class="panel panel-slideshow shop-showers">
                 <div class="slideshow-container">
                   <div class="slide">
@@ -275,10 +277,15 @@
             <div class="col-sm-12">
               <div class="the-block-bathroom">
                 <div class="image the-block-dean-shay">
-                  <img src="images/homepage/the-block-dean-shay.png"/>
+                  <img src="images/homepage/the-block-dean-shay.png" alt="The Block - Congratulations Dean and Shay"/>
                 </div>
-                <div class="image the-block-edge hidden-xs">
+                <div class="image the-block-edge">
                   <img src="images/homepage/the-block-edge.png"/>
+                  <div class="arrow-link">
+                    <a href="#">
+                      <span class="arrow-link-icon"><i class="arrow-link-icon icon-arrow-right"></i></span>
+                    </a>
+                  </div>
                 </div>
                 <div class="clearfix"></div>
               </div>
@@ -290,33 +297,58 @@
       <div class="section-nav-blocks">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-xs-6 col-sm-6 col-md-3">
-              <div class="nav-block store-finder">
-                <div class="nav-block-label">
-                  Store Finder
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <a href="#" class="nav-link">
+                <div class="nav-block store-finder">
+                  <img src="images/nav/nav-map-icon.png" alt="store finder icon"/>
+                  <p class="heading">store finder</p>
+                  <div class="nav-block-label">Find a Store</div>
                 </div>
-              </div>
+              </a>
             </div>
-            <div class="col-xs-6 col-sm-6 col-md-3">
-              <div class="nav-block the-powder-room">
-                <div class="nav-block-label">
-                  Read More
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <a href="#" class="nav-link">
+                <div class="nav-block the-powder-room">
+                  <img src="images/nav/nav-powder-room.png"/>
+                  <div class="nav-block-label">See Blog</div>
                 </div>
-              </div>
+              </a>
             </div>
-            <div class="col-xs-6 col-sm-6 col-md-3">
-              <div class="nav-block planning">
-                <div class="nav-block-label">
-                  Planning
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <a href="#" class="nav-link">
+                <div class="nav-block planning">
+                  <p class="heading">planning</p>
+                  <p>Need a little help with your next bathroom project, check out our 3D planner.</p>
+                  <div class="nav-block-label">Start Now</div>
                 </div>
-              </div>
+              </a>
             </div>
-            <div class="col-xs-6 col-sm-6 col-md-3">
-              <div class="nav-block brands">
-                <div class="nav-block-label">
-                  Brands
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <a href="#" class="nav-link">
+                <div class="nav-block brands">
+                  <p class="heading">brands</p>
+                  <div class="nav-block-label">Explore</div>
                 </div>
-              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- subsbribe form section -->
+      <div class="section-subscribe-form">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-12">
+              <form name="subscribe-form" class="subscribe-form">
+                <span class="subscribe-form-title">Subscribe for updates</span>
+                <input type="text" name="name" placeholder="name" required/>
+                <span class="submit-wrapper">
+                  <input type="email" name="email" placeholder="email" required/>
+                  <span class="subscribe-submit">
+                    <button type="submit"><i class="icon-arrow-right"></i></button>
+                  </span>
+                </span>
+              </form>
             </div>
           </div>
         </div>

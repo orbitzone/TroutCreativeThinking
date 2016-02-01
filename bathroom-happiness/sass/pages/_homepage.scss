@@ -200,22 +200,18 @@ body.homepage {
       &:hover {
         text-decoration: none;
         .nav-block{
-          &.store-finder {
-            img{
-              @include transform(scale(1.06));
-            }
-            .heading {
-              @include transform(scale(1.06));
-            }
+          img{
+            @include transform(scale(1.06));
+          }
+          p {
+            @include transform(scale(1.06));
           }
           .nav-block-label{
             background-color: $white;
             color: $light-blue;
           }
+
           &.the-powder-room{
-            img{
-              @include transform(scale(1.06));
-            }
             .nav-block-label{
               background: $red;
               color: white;
@@ -293,6 +289,10 @@ body.homepage {
             font-weight: bold;
             margin: 10px 0;
           }
+
+          p {
+            @include transition(0.3s all ease-out);
+          }
         }
 
         &.brands {
@@ -305,6 +305,7 @@ body.homepage {
             position: absolute;
             top: 2px;
             left: 20px;
+            @include transition(0.3s all ease-out);
           }
         }
       }
@@ -353,6 +354,18 @@ body.homepage {
         background: $light-grey;
         padding-left: 15px;
         margin-bottom:10px;
+
+        &.error {
+          border:1px solid $red;
+        }
+      }
+
+      .name-wrapper {
+        position: relative;
+        display: block;
+        @media (min-width: $screen-sm-min) {
+          display: inline-block;
+        }
       }
 
       .submit-wrapper {
@@ -378,6 +391,16 @@ body.homepage {
             height: 50px; 
             padding-top: 7px;
           }
+        }
+      }
+
+      label.error {
+        color: $red;
+        margin-bottom: 20px;
+        @media (min-width: $screen-sm-min) {
+          position: absolute;
+          margin-top: 55px;
+          left: 10px;
         }
       }
     }

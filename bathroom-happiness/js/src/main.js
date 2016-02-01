@@ -1,7 +1,7 @@
 'use strict';
 (function ($) {
   $(function () {
-    $('.subsribe-form').validate();
+    $('.subscribe-form').validate();
 
     $('.panel-slideshow').each(function () {
       var $arrows = $(this).find('.slideshow-buttons');

@@ -875,41 +875,33 @@ body.homepage .section-nav-blocks .row .col-md-3 {
 body.homepage .section-nav-blocks .nav-link:hover {
   text-decoration: none;
 }
-/* line 204, ../sass/pages/_homepage.scss */
-body.homepage .section-nav-blocks .nav-link:hover .nav-block.store-finder img {
+/* line 203, ../sass/pages/_homepage.scss */
+body.homepage .section-nav-blocks .nav-link:hover .nav-block img {
   -webkit-transform: scale(1.06);
   -moz-transform: scale(1.06);
   -ms-transform: scale(1.06);
   -o-transform: scale(1.06);
   transform: scale(1.06);
 }
-/* line 207, ../sass/pages/_homepage.scss */
-body.homepage .section-nav-blocks .nav-link:hover .nav-block.store-finder .heading {
+/* line 206, ../sass/pages/_homepage.scss */
+body.homepage .section-nav-blocks .nav-link:hover .nav-block p {
   -webkit-transform: scale(1.06);
   -moz-transform: scale(1.06);
   -ms-transform: scale(1.06);
   -o-transform: scale(1.06);
   transform: scale(1.06);
 }
-/* line 211, ../sass/pages/_homepage.scss */
+/* line 209, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link:hover .nav-block .nav-block-label {
   background-color: #FFF;
   color: #5ab8d3;
 }
-/* line 216, ../sass/pages/_homepage.scss */
-body.homepage .section-nav-blocks .nav-link:hover .nav-block.the-powder-room img {
-  -webkit-transform: scale(1.06);
-  -moz-transform: scale(1.06);
-  -ms-transform: scale(1.06);
-  -o-transform: scale(1.06);
-  transform: scale(1.06);
-}
-/* line 219, ../sass/pages/_homepage.scss */
+/* line 215, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link:hover .nav-block.the-powder-room .nav-block-label {
   background: #e40066;
   color: white;
 }
-/* line 227, ../sass/pages/_homepage.scss */
+/* line 223, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link .nav-block {
   height: 227px;
   background: #ccc;
@@ -918,7 +910,7 @@ body.homepage .section-nav-blocks .nav-link .nav-block {
   text-align: center;
   margin-bottom: 5px;
 }
-/* line 235, ../sass/pages/_homepage.scss */
+/* line 231, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link .nav-block .nav-block-label {
   position: absolute;
   bottom: 20px;
@@ -937,19 +929,19 @@ body.homepage .section-nav-blocks .nav-link .nav-block .nav-block-label {
   -webkit-transition: color 0.3s ease-out, background 0.3s ease-out;
   transition: color 0.3s ease-out, background 0.3s ease-out;
 }
-/* line 251, ../sass/pages/_homepage.scss */
+/* line 247, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link .nav-block.store-finder {
   background: #000;
   padding-top: 40px;
 }
-/* line 254, ../sass/pages/_homepage.scss */
+/* line 250, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link .nav-block.store-finder img {
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-/* line 257, ../sass/pages/_homepage.scss */
+/* line 253, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link .nav-block.store-finder .heading {
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
@@ -960,24 +952,24 @@ body.homepage .section-nav-blocks .nav-link .nav-block.store-finder .heading {
   color: #FFF;
   margin-top: 10px;
 }
-/* line 266, ../sass/pages/_homepage.scss */
+/* line 262, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link .nav-block.the-powder-room {
   background: url("../images/nav/nav-pink-tile.png") center;
   padding-top: 23px;
 }
-/* line 267, ../sass/pages/_homepage.scss */
+/* line 263, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link .nav-block.the-powder-room img {
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-/* line 273, ../sass/pages/_homepage.scss */
+/* line 269, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link .nav-block.the-powder-room .nav-block-label {
   background-color: #FFF;
   color: #e40066;
 }
-/* line 279, ../sass/pages/_homepage.scss */
+/* line 275, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link .nav-block.planning {
   background: url("../images/nav/nav-planning.jpg") center;
   background-size: cover;
@@ -985,22 +977,29 @@ body.homepage .section-nav-blocks .nav-link .nav-block.planning {
   font-size: 13px;
 }
 @media (min-width: 992px) {
-  /* line 279, ../sass/pages/_homepage.scss */
+  /* line 275, ../sass/pages/_homepage.scss */
   body.homepage .section-nav-blocks .nav-link .nav-block.planning {
     padding: 45px 15px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 279, ../sass/pages/_homepage.scss */
+  /* line 275, ../sass/pages/_homepage.scss */
   body.homepage .section-nav-blocks .nav-link .nav-block.planning {
     padding: 45px;
   }
 }
-/* line 291, ../sass/pages/_homepage.scss */
+/* line 287, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link .nav-block.planning .heading {
   font-size: 20px;
   font-weight: bold;
   margin: 10px 0;
+}
+/* line 293, ../sass/pages/_homepage.scss */
+body.homepage .section-nav-blocks .nav-link .nav-block.planning p {
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 /* line 298, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link .nav-block.brands {
@@ -1015,18 +1014,22 @@ body.homepage .section-nav-blocks .nav-link .nav-block.brands .heading {
   position: absolute;
   top: 2px;
   left: 20px;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
-/* line 314, ../sass/pages/_homepage.scss */
+/* line 315, ../sass/pages/_homepage.scss */
 body.homepage .section-subscribe-form {
   background: url(../images/homepage/section-subscribe-bg.png);
   padding: 70px 0;
   text-align: center;
 }
-/* line 319, ../sass/pages/_homepage.scss */
+/* line 320, ../sass/pages/_homepage.scss */
 body.homepage .section-subscribe-form .subscribe-form {
   margin: 0;
 }
-/* line 325, ../sass/pages/_homepage.scss */
+/* line 326, ../sass/pages/_homepage.scss */
 body.homepage .section-subscribe-form .subscribe-form .subscribe-form-title {
   font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 17px;
@@ -1036,13 +1039,13 @@ body.homepage .section-subscribe-form .subscribe-form .subscribe-form-title {
   margin: 0 0 10px;
 }
 @media (min-width: 768px) {
-  /* line 325, ../sass/pages/_homepage.scss */
+  /* line 326, ../sass/pages/_homepage.scss */
   body.homepage .section-subscribe-form .subscribe-form .subscribe-form-title {
     display: inline;
     margin-right: 0 15px 0 0;
   }
 }
-/* line 338, ../sass/pages/_homepage.scss */
+/* line 339, ../sass/pages/_homepage.scss */
 body.homepage .section-subscribe-form .subscribe-form input[type=text],
 body.homepage .section-subscribe-form .subscribe-form input[type=email] {
   width: 100%;
@@ -1060,7 +1063,7 @@ body.homepage .section-subscribe-form .subscribe-form input[type=email] {
   margin-bottom: 10px;
 }
 @media (min-width: 768px) {
-  /* line 338, ../sass/pages/_homepage.scss */
+  /* line 339, ../sass/pages/_homepage.scss */
   body.homepage .section-subscribe-form .subscribe-form input[type=text],
   body.homepage .section-subscribe-form .subscribe-form input[type=email] {
     width: 210px;
@@ -1069,6 +1072,22 @@ body.homepage .section-subscribe-form .subscribe-form input[type=email] {
   }
 }
 /* line 358, ../sass/pages/_homepage.scss */
+body.homepage .section-subscribe-form .subscribe-form input[type=text].error,
+body.homepage .section-subscribe-form .subscribe-form input[type=email].error {
+  border: 1px solid #e40066;
+}
+/* line 363, ../sass/pages/_homepage.scss */
+body.homepage .section-subscribe-form .subscribe-form .name-wrapper {
+  position: relative;
+  display: block;
+}
+@media (min-width: 768px) {
+  /* line 363, ../sass/pages/_homepage.scss */
+  body.homepage .section-subscribe-form .subscribe-form .name-wrapper {
+    display: inline-block;
+  }
+}
+/* line 371, ../sass/pages/_homepage.scss */
 body.homepage .section-subscribe-form .subscribe-form .submit-wrapper {
   position: relative;
   padding-right: 50px;
@@ -1076,18 +1095,18 @@ body.homepage .section-subscribe-form .subscribe-form .submit-wrapper {
   display: block;
 }
 @media (min-width: 768px) {
-  /* line 358, ../sass/pages/_homepage.scss */
+  /* line 371, ../sass/pages/_homepage.scss */
   body.homepage .section-subscribe-form .subscribe-form .submit-wrapper {
     display: inline-block;
   }
 }
-/* line 367, ../sass/pages/_homepage.scss */
+/* line 380, ../sass/pages/_homepage.scss */
 body.homepage .section-subscribe-form .subscribe-form .submit-wrapper .subscribe-submit {
   position: absolute;
   right: 0;
   bottom: 0;
 }
-/* line 372, ../sass/pages/_homepage.scss */
+/* line 385, ../sass/pages/_homepage.scss */
 body.homepage .section-subscribe-form .subscribe-form .submit-wrapper .subscribe-submit button {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1101,7 +1120,20 @@ body.homepage .section-subscribe-form .subscribe-form .submit-wrapper .subscribe
   height: 50px;
   padding-top: 7px;
 }
-/* line 386, ../sass/pages/_homepage.scss */
+/* line 397, ../sass/pages/_homepage.scss */
+body.homepage .section-subscribe-form .subscribe-form label.error {
+  color: #e40066;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  /* line 397, ../sass/pages/_homepage.scss */
+  body.homepage .section-subscribe-form .subscribe-form label.error {
+    position: absolute;
+    margin-top: 55px;
+    left: 10px;
+  }
+}
+/* line 409, ../sass/pages/_homepage.scss */
 body.homepage .site-footer {
   margin-top: 0;
 }

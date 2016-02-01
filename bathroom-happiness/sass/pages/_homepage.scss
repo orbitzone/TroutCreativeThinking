@@ -220,6 +220,11 @@ body.homepage {
         }
       }
 
+      &:active, 
+      &:focus {
+        text-decoration: none;
+      }
+
       .nav-block {
         height: 227px;
         background: #ccc;

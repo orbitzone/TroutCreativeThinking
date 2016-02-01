@@ -170,7 +170,7 @@ body.bathroom-happiness {
     	text-align: center;
     	padding: 9px 9px 24px;
 
-    	span {
+    	a {
     		margin: 0;
     		color: $white;
     		background-color: $green;
@@ -178,6 +178,13 @@ body.bathroom-happiness {
   	  	font-size: 14px;
     		font-family: $font-family-book;
     		padding: 9px 18px;
+    		@include transition(0.3s all ease-out);
+
+    		&:hover {
+    			text-decoration: none;
+    			background-color: $pink;
+    			color: $white;
+    		}
     	}
     }
   }

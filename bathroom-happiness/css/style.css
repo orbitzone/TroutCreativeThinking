@@ -528,7 +528,7 @@ body.bathroom-happiness .panel-slideshow .slideshow-label {
   padding: 9px 9px 24px;
 }
 /* line 173, ../sass/_global.scss */
-body.bathroom-happiness .panel-slideshow .slideshow-label span {
+body.bathroom-happiness .panel-slideshow .slideshow-label a {
   margin: 0;
   color: #FFF;
   background-color: #6dc8b6;
@@ -536,23 +536,33 @@ body.bathroom-happiness .panel-slideshow .slideshow-label span {
   font-size: 14px;
   font-family: "Gotham A", "Gotham B", Gotham-Book, Arial, sans-serif;
   padding: 9px 18px;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+/* line 183, ../sass/_global.scss */
+body.bathroom-happiness .panel-slideshow .slideshow-label a:hover {
+  text-decoration: none;
+  background-color: #D57B8D;
+  color: #FFF;
 }
 @media (min-width: 992px) {
-  /* line 188, ../sass/_global.scss */
+  /* line 195, ../sass/_global.scss */
   body.bathroom-happiness .panel-slideshow.shop-showers .slide .slide-text {
     padding-left: 20px;
   }
-  /* line 192, ../sass/_global.scss */
+  /* line 199, ../sass/_global.scss */
   body.bathroom-happiness .panel-slideshow.shop-showers .slide .slide-image {
     float: right;
   }
-  /* line 197, ../sass/_global.scss */
+  /* line 204, ../sass/_global.scss */
   body.bathroom-happiness .panel-slideshow.shop-showers .slideshow-buttons {
     left: 10px;
     margin-right: 0;
   }
 }
-/* line 204, ../sass/_global.scss */
+/* line 211, ../sass/_global.scss */
 body.bathroom-happiness #main-content {
   position: relative;
   overflow: hidden;
@@ -569,38 +579,38 @@ body.bathroom-happiness #main-content {
 	}*/
 }
 @media (min-width: 768px) {
-  /* line 204, ../sass/_global.scss */
+  /* line 211, ../sass/_global.scss */
   body.bathroom-happiness #main-content {
     font-size: 16px;
   }
 }
 @media (min-width: 992px) {
-  /* line 204, ../sass/_global.scss */
+  /* line 211, ../sass/_global.scss */
   body.bathroom-happiness #main-content {
     font-size: 16px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 204, ../sass/_global.scss */
+  /* line 211, ../sass/_global.scss */
   body.bathroom-happiness #main-content {
     padding: 0;
   }
 }
-/* line 228, ../sass/_global.scss */
+/* line 235, ../sass/_global.scss */
 body.bathroom-happiness #main-content label, body.bathroom-happiness #main-content input, body.bathroom-happiness #main-content button, body.bathroom-happiness #main-content select, body.bathroom-happiness #main-content textarea {
   font-size: inherit;
   line-height: inherit;
   font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 @media only screen and (max-device-width: 767px) {
-  /* line 235, ../sass/_global.scss */
+  /* line 242, ../sass/_global.scss */
   body.bathroom-happiness input[type="text"]:focus, body.bathroom-happiness input[type="number"]:focus,
   body.bathroom-happiness textarea:focus,
   body.bathroom-happiness select:focus {
     font-size: 16px;
   }
 }
-/* line 241, ../sass/_global.scss */
+/* line 248, ../sass/_global.scss */
 body.bathroom-happiness input, body.bathroom-happiness select, body.bathroom-happiness textarea {
   font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -902,6 +912,10 @@ body.homepage .section-nav-blocks .nav-link:hover .nav-block.the-powder-room .na
   color: white;
 }
 /* line 223, ../sass/pages/_homepage.scss */
+body.homepage .section-nav-blocks .nav-link:active, body.homepage .section-nav-blocks .nav-link:focus {
+  text-decoration: none;
+}
+/* line 228, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link .nav-block {
   height: 227px;
   background: #ccc;
@@ -910,7 +924,7 @@ body.homepage .section-nav-blocks .nav-link .nav-block {
   text-align: center;
   margin-bottom: 5px;
 }
-/* line 231, ../sass/pages/_homepage.scss */
+/* line 236, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link .nav-block .nav-block-label {
   position: absolute;
   bottom: 20px;
@@ -929,19 +943,19 @@ body.homepage .section-nav-blocks .nav-link .nav-block .nav-block-label {
   -webkit-transition: color 0.3s ease-out, background 0.3s ease-out;
   transition: color 0.3s ease-out, background 0.3s ease-out;
 }
-/* line 247, ../sass/pages/_homepage.scss */
+/* line 252, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link .nav-block.store-finder {
   background: #000;
   padding-top: 40px;
 }
-/* line 250, ../sass/pages/_homepage.scss */
+/* line 255, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link .nav-block.store-finder img {
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-/* line 253, ../sass/pages/_homepage.scss */
+/* line 258, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link .nav-block.store-finder .heading {
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
@@ -952,24 +966,24 @@ body.homepage .section-nav-blocks .nav-link .nav-block.store-finder .heading {
   color: #FFF;
   margin-top: 10px;
 }
-/* line 262, ../sass/pages/_homepage.scss */
+/* line 267, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link .nav-block.the-powder-room {
   background: url("../images/nav/nav-pink-tile.png") center;
   padding-top: 23px;
 }
-/* line 263, ../sass/pages/_homepage.scss */
+/* line 268, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link .nav-block.the-powder-room img {
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-/* line 269, ../sass/pages/_homepage.scss */
+/* line 274, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link .nav-block.the-powder-room .nav-block-label {
   background-color: #FFF;
   color: #e40066;
 }
-/* line 275, ../sass/pages/_homepage.scss */
+/* line 280, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link .nav-block.planning {
   background: url("../images/nav/nav-planning.jpg") center;
   background-size: cover;
@@ -977,36 +991,36 @@ body.homepage .section-nav-blocks .nav-link .nav-block.planning {
   font-size: 13px;
 }
 @media (min-width: 992px) {
-  /* line 275, ../sass/pages/_homepage.scss */
+  /* line 280, ../sass/pages/_homepage.scss */
   body.homepage .section-nav-blocks .nav-link .nav-block.planning {
     padding: 45px 15px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 275, ../sass/pages/_homepage.scss */
+  /* line 280, ../sass/pages/_homepage.scss */
   body.homepage .section-nav-blocks .nav-link .nav-block.planning {
     padding: 45px;
   }
 }
-/* line 287, ../sass/pages/_homepage.scss */
+/* line 292, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link .nav-block.planning .heading {
   font-size: 20px;
   font-weight: bold;
   margin: 10px 0;
 }
-/* line 293, ../sass/pages/_homepage.scss */
+/* line 298, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link .nav-block.planning p {
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-/* line 298, ../sass/pages/_homepage.scss */
+/* line 303, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link .nav-block.brands {
   background: url("../images/nav/nav-brands.jpg") center;
   background-size: cover;
 }
-/* line 301, ../sass/pages/_homepage.scss */
+/* line 306, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link .nav-block.brands .heading {
   font-size: 40px;
   font-weight: bold;
@@ -1019,17 +1033,17 @@ body.homepage .section-nav-blocks .nav-link .nav-block.brands .heading {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-/* line 315, ../sass/pages/_homepage.scss */
+/* line 320, ../sass/pages/_homepage.scss */
 body.homepage .section-subscribe-form {
   background: url(../images/homepage/section-subscribe-bg.png);
   padding: 70px 0;
   text-align: center;
 }
-/* line 320, ../sass/pages/_homepage.scss */
+/* line 325, ../sass/pages/_homepage.scss */
 body.homepage .section-subscribe-form .subscribe-form {
   margin: 0;
 }
-/* line 326, ../sass/pages/_homepage.scss */
+/* line 331, ../sass/pages/_homepage.scss */
 body.homepage .section-subscribe-form .subscribe-form .subscribe-form-title {
   font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 17px;
@@ -1039,13 +1053,13 @@ body.homepage .section-subscribe-form .subscribe-form .subscribe-form-title {
   margin: 0 0 10px;
 }
 @media (min-width: 768px) {
-  /* line 326, ../sass/pages/_homepage.scss */
+  /* line 331, ../sass/pages/_homepage.scss */
   body.homepage .section-subscribe-form .subscribe-form .subscribe-form-title {
     display: inline;
     margin-right: 0 15px 0 0;
   }
 }
-/* line 339, ../sass/pages/_homepage.scss */
+/* line 344, ../sass/pages/_homepage.scss */
 body.homepage .section-subscribe-form .subscribe-form input[type=text],
 body.homepage .section-subscribe-form .subscribe-form input[type=email] {
   width: 100%;
@@ -1063,7 +1077,7 @@ body.homepage .section-subscribe-form .subscribe-form input[type=email] {
   margin-bottom: 10px;
 }
 @media (min-width: 768px) {
-  /* line 339, ../sass/pages/_homepage.scss */
+  /* line 344, ../sass/pages/_homepage.scss */
   body.homepage .section-subscribe-form .subscribe-form input[type=text],
   body.homepage .section-subscribe-form .subscribe-form input[type=email] {
     width: 210px;
@@ -1071,23 +1085,23 @@ body.homepage .section-subscribe-form .subscribe-form input[type=email] {
     margin-left: 10px;
   }
 }
-/* line 358, ../sass/pages/_homepage.scss */
+/* line 363, ../sass/pages/_homepage.scss */
 body.homepage .section-subscribe-form .subscribe-form input[type=text].error,
 body.homepage .section-subscribe-form .subscribe-form input[type=email].error {
   border: 1px solid #e40066;
 }
-/* line 363, ../sass/pages/_homepage.scss */
+/* line 368, ../sass/pages/_homepage.scss */
 body.homepage .section-subscribe-form .subscribe-form .name-wrapper {
   position: relative;
   display: block;
 }
 @media (min-width: 768px) {
-  /* line 363, ../sass/pages/_homepage.scss */
+  /* line 368, ../sass/pages/_homepage.scss */
   body.homepage .section-subscribe-form .subscribe-form .name-wrapper {
     display: inline-block;
   }
 }
-/* line 371, ../sass/pages/_homepage.scss */
+/* line 376, ../sass/pages/_homepage.scss */
 body.homepage .section-subscribe-form .subscribe-form .submit-wrapper {
   position: relative;
   padding-right: 50px;
@@ -1095,18 +1109,18 @@ body.homepage .section-subscribe-form .subscribe-form .submit-wrapper {
   display: block;
 }
 @media (min-width: 768px) {
-  /* line 371, ../sass/pages/_homepage.scss */
+  /* line 376, ../sass/pages/_homepage.scss */
   body.homepage .section-subscribe-form .subscribe-form .submit-wrapper {
     display: inline-block;
   }
 }
-/* line 380, ../sass/pages/_homepage.scss */
+/* line 385, ../sass/pages/_homepage.scss */
 body.homepage .section-subscribe-form .subscribe-form .submit-wrapper .subscribe-submit {
   position: absolute;
   right: 0;
   bottom: 0;
 }
-/* line 385, ../sass/pages/_homepage.scss */
+/* line 390, ../sass/pages/_homepage.scss */
 body.homepage .section-subscribe-form .subscribe-form .submit-wrapper .subscribe-submit button {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1120,20 +1134,20 @@ body.homepage .section-subscribe-form .subscribe-form .submit-wrapper .subscribe
   height: 50px;
   padding-top: 7px;
 }
-/* line 397, ../sass/pages/_homepage.scss */
+/* line 402, ../sass/pages/_homepage.scss */
 body.homepage .section-subscribe-form .subscribe-form label.error {
   color: #e40066;
   margin-bottom: 20px;
 }
 @media (min-width: 768px) {
-  /* line 397, ../sass/pages/_homepage.scss */
+  /* line 402, ../sass/pages/_homepage.scss */
   body.homepage .section-subscribe-form .subscribe-form label.error {
     position: absolute;
     margin-top: 55px;
     left: 10px;
   }
 }
-/* line 409, ../sass/pages/_homepage.scss */
+/* line 414, ../sass/pages/_homepage.scss */
 body.homepage .site-footer {
   margin-top: 0;
 }

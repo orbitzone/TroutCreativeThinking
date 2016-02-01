@@ -199,6 +199,29 @@ body.homepage {
     .nav-link {
       &:hover {
         text-decoration: none;
+        .nav-block{
+          &.store-finder {
+            img{
+              @include transform(scale(1.06));
+            }
+            .heading {
+              @include transform(scale(1.06));
+            }
+          }
+          .nav-block-label{
+            background-color: $white;
+            color: $light-blue;
+          }
+          &.the-powder-room{
+            img{
+              @include transform(scale(1.06));
+            }
+            .nav-block-label{
+              background: $red;
+              color: white;
+            }
+          }
+        }
       }
 
       .nav-block {
@@ -222,13 +245,17 @@ body.homepage {
           line-height: 35px;
           background-color: $light-blue;
           color: $white;
+          @include transition(0.3s color ease-out, 0.3s background ease-out);
         }
 
         &.store-finder {
           background: $black;
           padding-top: 40px;
-
+          img{
+            @include transition(0.3s all ease-out);
+          }
           .heading {
+            @include transition(0.3s all ease-out);
             font-weight: bold;
             font-size: 20px;
             color: $white;
@@ -237,6 +264,9 @@ body.homepage {
         }
 
         &.the-powder-room {
+          img{
+            @include transition(0.3s all ease-out);
+          }
           background: url("../images/nav/nav-pink-tile.png") center;
           padding-top: 23px;
 
@@ -245,7 +275,7 @@ body.homepage {
             color: $red;
           }
         }
-
+        
         &.planning {
           background: url("../images/nav/nav-planning.jpg") center;
           background-size: cover;

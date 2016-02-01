@@ -758,7 +758,15 @@ body.homepage .section-intro .panel-hero .arrow-link {
 body.homepage .section-intro .panel-hero .arrow-link a:hover {
   text-decoration: none;
 }
-/* line 77, ../sass/pages/_homepage.scss */
+/* line 75, ../sass/pages/_homepage.scss */
+body.homepage .section-intro .panel-hero .arrow-link a:hover .arrow-link-icon i {
+  -webkit-transform: translate(10px, 0);
+  -moz-transform: translate(10px, 0);
+  -ms-transform: translate(10px, 0);
+  -o-transform: translate(10px, 0);
+  transform: translate(10px, 0);
+}
+/* line 80, ../sass/pages/_homepage.scss */
 body.homepage .section-intro .panel-hero .arrow-link a .arrow-link-label {
   font-family: "Gotham A", "Gotham B", Gotham-Book, Arial, sans-serif;
   color: #273d52;
@@ -766,45 +774,86 @@ body.homepage .section-intro .panel-hero .arrow-link a .arrow-link-label {
   font-size: 14px;
   position: relative;
   top: 15px;
-  margin-right: 10px;
+  padding-right: 10px;
 }
-/* line 87, ../sass/pages/_homepage.scss */
+/* line 90, ../sass/pages/_homepage.scss */
 body.homepage .section-intro .panel-hero .arrow-link a .arrow-link-icon {
   position: relative;
 }
-/* line 89, ../sass/pages/_homepage.scss */
+/* line 92, ../sass/pages/_homepage.scss */
 body.homepage .section-intro .panel-hero .arrow-link a .arrow-link-icon i {
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
   color: #c2a461;
   font-size: 42px;
   position: absolute;
 }
-/* line 99, ../sass/pages/_homepage.scss */
-body.homepage .section-intro .panel-find-inspiration {
+/* line 103, ../sass/pages/_homepage.scss */
+body.homepage .section-intro .panel-link {
+  display: block;
+  overflow: hidden;
   position: relative;
-  min-height: 347px;
+}
+/* line 108, ../sass/pages/_homepage.scss */
+body.homepage .section-intro .panel-link .background-div {
+  position: absolute;
+  width: 100%;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+/* line 115, ../sass/pages/_homepage.scss */
+body.homepage .section-intro .panel-link:hover .background-div {
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  transform: scale(1.3);
+}
+/* line 121, ../sass/pages/_homepage.scss */
+body.homepage .section-intro .panel-find-inspiration {
+  height: 347px;
+}
+/* line 124, ../sass/pages/_homepage.scss */
+body.homepage .section-intro .panel-find-inspiration .background-div {
+  height: 347px;
   background: url("../images/homepage/find-inspiration.jpg");
   background-size: cover;
 }
 @media (min-width: 1200px) {
-  /* line 99, ../sass/pages/_homepage.scss */
+  /* line 121, ../sass/pages/_homepage.scss */
   body.homepage .section-intro .panel-find-inspiration {
-    min-height: 469px;
+    height: 469px;
+  }
+  /* line 133, ../sass/pages/_homepage.scss */
+  body.homepage .section-intro .panel-find-inspiration .background-div {
+    height: 469px;
   }
 }
-/* line 110, ../sass/pages/_homepage.scss */
+/* line 139, ../sass/pages/_homepage.scss */
 body.homepage .section-intro .panel-shop-products {
-  position: relative;
-  min-height: 285px;
+  height: 285px;
+}
+/* line 142, ../sass/pages/_homepage.scss */
+body.homepage .section-intro .panel-shop-products .background-div {
+  height: 285px;
   background: url("../images/homepage/shop-products.jpg");
   background-size: cover;
 }
 @media (min-width: 1200px) {
-  /* line 110, ../sass/pages/_homepage.scss */
+  /* line 139, ../sass/pages/_homepage.scss */
   body.homepage .section-intro .panel-shop-products {
-    min-height: 407px;
+    height: 407px;
+  }
+  /* line 150, ../sass/pages/_homepage.scss */
+  body.homepage .section-intro .panel-shop-products .background-div {
+    height: 407px;
   }
 }
-/* line 121, ../sass/pages/_homepage.scss */
+/* line 156, ../sass/pages/_homepage.scss */
 body.homepage .section-intro .text-overlay {
   height: 90px;
   background: rgba(0, 0, 0, 0.1);
@@ -820,72 +869,88 @@ body.homepage .section-intro .text-overlay {
   text-transform: uppercase;
 }
 @media (min-width: 1200px) {
-  /* line 121, ../sass/pages/_homepage.scss */
+  /* line 156, ../sass/pages/_homepage.scss */
   body.homepage .section-intro .text-overlay {
     bottom: 150px;
   }
 }
-/* line 139, ../sass/pages/_homepage.scss */
+/* line 174, ../sass/pages/_homepage.scss */
 body.homepage .section-intro .text-overlay .text-overlay-line-1 {
   font-size: 18px;
   line-height: 18px;
 }
-/* line 144, ../sass/pages/_homepage.scss */
+/* line 179, ../sass/pages/_homepage.scss */
 body.homepage .section-intro .text-overlay .text-overlay-line-2 {
   font-size: 33px;
   line-height: 33px;
 }
-/* line 151, ../sass/pages/_homepage.scss */
+/* line 186, ../sass/pages/_homepage.scss */
 body.homepage .section-the-block {
   background-color: #EDEBEB;
   padding-bottom: 30px;
 }
-/* line 155, ../sass/pages/_homepage.scss */
+/* line 190, ../sass/pages/_homepage.scss */
 body.homepage .section-the-block .the-block-bathroom {
   background: transparent url("../images/homepage/the-block-bathroom.jpg") 238px 0;
 }
-/* line 158, ../sass/pages/_homepage.scss */
+/* line 193, ../sass/pages/_homepage.scss */
 body.homepage .section-the-block .the-block-bathroom .the-block-dean-shay {
   float: left;
 }
-/* line 162, ../sass/pages/_homepage.scss */
+/* line 197, ../sass/pages/_homepage.scss */
 body.homepage .section-the-block .the-block-bathroom .the-block-edge {
   position: relative;
   float: left;
 }
-/* line 166, ../sass/pages/_homepage.scss */
+/* line 201, ../sass/pages/_homepage.scss */
 body.homepage .section-the-block .the-block-bathroom .the-block-edge .arrow-link {
   position: absolute;
   bottom: -10px;
 }
-/* line 171, ../sass/pages/_homepage.scss */
+/* line 206, ../sass/pages/_homepage.scss */
 body.homepage .section-the-block .the-block-bathroom .the-block-edge .arrow-link a:hover {
   text-decoration: none;
 }
-/* line 176, ../sass/pages/_homepage.scss */
+/* line 208, ../sass/pages/_homepage.scss */
+body.homepage .section-the-block .the-block-bathroom .the-block-edge .arrow-link a:hover .arrow-link-icon {
+  -webkit-transform: translate(5px, 0);
+  -moz-transform: translate(5px, 0);
+  -ms-transform: translate(5px, 0);
+  -o-transform: translate(5px, 0);
+  transform: translate(5px, 0);
+}
+/* line 213, ../sass/pages/_homepage.scss */
+body.homepage .section-the-block .the-block-bathroom .the-block-edge .arrow-link a .arrow-link-icon {
+  display: block;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+/* line 216, ../sass/pages/_homepage.scss */
 body.homepage .section-the-block .the-block-bathroom .the-block-edge .arrow-link a .arrow-link-icon i {
   color: #e2e1e1;
   font-size: 42px;
 }
-/* line 187, ../sass/pages/_homepage.scss */
+/* line 227, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks {
   background-color: #DEDDDE;
   padding: 50px 0 55px;
 }
-/* line 191, ../sass/pages/_homepage.scss */
+/* line 231, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .row {
   margin-left: -2px;
   margin-right: -2px;
 }
-/* line 194, ../sass/pages/_homepage.scss */
+/* line 234, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .row .col-md-3 {
   padding: 0 2px;
 }
-/* line 200, ../sass/pages/_homepage.scss */
+/* line 240, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link:hover {
   text-decoration: none;
 }
-/* line 203, ../sass/pages/_homepage.scss */
+/* line 243, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link:hover .nav-block img {
   -webkit-transform: scale(1.06);
   -moz-transform: scale(1.06);
@@ -893,7 +958,7 @@ body.homepage .section-nav-blocks .nav-link:hover .nav-block img {
   -o-transform: scale(1.06);
   transform: scale(1.06);
 }
-/* line 206, ../sass/pages/_homepage.scss */
+/* line 246, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link:hover .nav-block p {
   -webkit-transform: scale(1.06);
   -moz-transform: scale(1.06);
@@ -901,21 +966,21 @@ body.homepage .section-nav-blocks .nav-link:hover .nav-block p {
   -o-transform: scale(1.06);
   transform: scale(1.06);
 }
-/* line 209, ../sass/pages/_homepage.scss */
+/* line 249, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link:hover .nav-block .nav-block-label {
   background-color: #FFF;
   color: #5ab8d3;
 }
-/* line 215, ../sass/pages/_homepage.scss */
+/* line 255, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link:hover .nav-block.the-powder-room .nav-block-label {
   background: #e40066;
   color: white;
 }
-/* line 223, ../sass/pages/_homepage.scss */
+/* line 263, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link:active, body.homepage .section-nav-blocks .nav-link:focus {
   text-decoration: none;
 }
-/* line 228, ../sass/pages/_homepage.scss */
+/* line 268, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link .nav-block {
   height: 227px;
   background: #ccc;
@@ -924,7 +989,7 @@ body.homepage .section-nav-blocks .nav-link .nav-block {
   text-align: center;
   margin-bottom: 5px;
 }
-/* line 236, ../sass/pages/_homepage.scss */
+/* line 276, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link .nav-block .nav-block-label {
   position: absolute;
   bottom: 20px;
@@ -943,19 +1008,19 @@ body.homepage .section-nav-blocks .nav-link .nav-block .nav-block-label {
   -webkit-transition: color 0.3s ease-out, background 0.3s ease-out;
   transition: color 0.3s ease-out, background 0.3s ease-out;
 }
-/* line 252, ../sass/pages/_homepage.scss */
+/* line 292, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link .nav-block.store-finder {
   background: #000;
   padding-top: 40px;
 }
-/* line 255, ../sass/pages/_homepage.scss */
+/* line 295, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link .nav-block.store-finder img {
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-/* line 258, ../sass/pages/_homepage.scss */
+/* line 298, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link .nav-block.store-finder .heading {
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
@@ -966,24 +1031,24 @@ body.homepage .section-nav-blocks .nav-link .nav-block.store-finder .heading {
   color: #FFF;
   margin-top: 10px;
 }
-/* line 267, ../sass/pages/_homepage.scss */
+/* line 307, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link .nav-block.the-powder-room {
   background: url("../images/nav/nav-pink-tile.png") center;
   padding-top: 23px;
 }
-/* line 268, ../sass/pages/_homepage.scss */
+/* line 308, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link .nav-block.the-powder-room img {
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-/* line 274, ../sass/pages/_homepage.scss */
+/* line 314, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link .nav-block.the-powder-room .nav-block-label {
   background-color: #FFF;
   color: #e40066;
 }
-/* line 280, ../sass/pages/_homepage.scss */
+/* line 320, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link .nav-block.planning {
   background: url("../images/nav/nav-planning.jpg") center;
   background-size: cover;
@@ -991,36 +1056,36 @@ body.homepage .section-nav-blocks .nav-link .nav-block.planning {
   font-size: 13px;
 }
 @media (min-width: 992px) {
-  /* line 280, ../sass/pages/_homepage.scss */
+  /* line 320, ../sass/pages/_homepage.scss */
   body.homepage .section-nav-blocks .nav-link .nav-block.planning {
     padding: 45px 15px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 280, ../sass/pages/_homepage.scss */
+  /* line 320, ../sass/pages/_homepage.scss */
   body.homepage .section-nav-blocks .nav-link .nav-block.planning {
     padding: 45px;
   }
 }
-/* line 292, ../sass/pages/_homepage.scss */
+/* line 332, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link .nav-block.planning .heading {
   font-size: 20px;
   font-weight: bold;
   margin: 10px 0;
 }
-/* line 298, ../sass/pages/_homepage.scss */
+/* line 338, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link .nav-block.planning p {
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-/* line 303, ../sass/pages/_homepage.scss */
+/* line 343, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link .nav-block.brands {
   background: url("../images/nav/nav-brands.jpg") center;
   background-size: cover;
 }
-/* line 306, ../sass/pages/_homepage.scss */
+/* line 346, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks .nav-link .nav-block.brands .heading {
   font-size: 40px;
   font-weight: bold;
@@ -1033,17 +1098,17 @@ body.homepage .section-nav-blocks .nav-link .nav-block.brands .heading {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-/* line 320, ../sass/pages/_homepage.scss */
+/* line 360, ../sass/pages/_homepage.scss */
 body.homepage .section-subscribe-form {
   background: url(../images/homepage/section-subscribe-bg.png);
   padding: 70px 0;
   text-align: center;
 }
-/* line 325, ../sass/pages/_homepage.scss */
+/* line 365, ../sass/pages/_homepage.scss */
 body.homepage .section-subscribe-form .subscribe-form {
   margin: 0;
 }
-/* line 331, ../sass/pages/_homepage.scss */
+/* line 371, ../sass/pages/_homepage.scss */
 body.homepage .section-subscribe-form .subscribe-form .subscribe-form-title {
   font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 17px;
@@ -1053,13 +1118,13 @@ body.homepage .section-subscribe-form .subscribe-form .subscribe-form-title {
   margin: 0 0 10px;
 }
 @media (min-width: 768px) {
-  /* line 331, ../sass/pages/_homepage.scss */
+  /* line 371, ../sass/pages/_homepage.scss */
   body.homepage .section-subscribe-form .subscribe-form .subscribe-form-title {
     display: inline;
     margin-right: 0 15px 0 0;
   }
 }
-/* line 344, ../sass/pages/_homepage.scss */
+/* line 384, ../sass/pages/_homepage.scss */
 body.homepage .section-subscribe-form .subscribe-form input[type=text],
 body.homepage .section-subscribe-form .subscribe-form input[type=email] {
   width: 100%;
@@ -1077,7 +1142,7 @@ body.homepage .section-subscribe-form .subscribe-form input[type=email] {
   margin-bottom: 10px;
 }
 @media (min-width: 768px) {
-  /* line 344, ../sass/pages/_homepage.scss */
+  /* line 384, ../sass/pages/_homepage.scss */
   body.homepage .section-subscribe-form .subscribe-form input[type=text],
   body.homepage .section-subscribe-form .subscribe-form input[type=email] {
     width: 210px;
@@ -1085,23 +1150,23 @@ body.homepage .section-subscribe-form .subscribe-form input[type=email] {
     margin-left: 10px;
   }
 }
-/* line 363, ../sass/pages/_homepage.scss */
+/* line 403, ../sass/pages/_homepage.scss */
 body.homepage .section-subscribe-form .subscribe-form input[type=text].error,
 body.homepage .section-subscribe-form .subscribe-form input[type=email].error {
   border: 1px solid #e40066;
 }
-/* line 368, ../sass/pages/_homepage.scss */
+/* line 408, ../sass/pages/_homepage.scss */
 body.homepage .section-subscribe-form .subscribe-form .name-wrapper {
   position: relative;
   display: block;
 }
 @media (min-width: 768px) {
-  /* line 368, ../sass/pages/_homepage.scss */
+  /* line 408, ../sass/pages/_homepage.scss */
   body.homepage .section-subscribe-form .subscribe-form .name-wrapper {
     display: inline-block;
   }
 }
-/* line 376, ../sass/pages/_homepage.scss */
+/* line 416, ../sass/pages/_homepage.scss */
 body.homepage .section-subscribe-form .subscribe-form .submit-wrapper {
   position: relative;
   padding-right: 50px;
@@ -1109,18 +1174,18 @@ body.homepage .section-subscribe-form .subscribe-form .submit-wrapper {
   display: block;
 }
 @media (min-width: 768px) {
-  /* line 376, ../sass/pages/_homepage.scss */
+  /* line 416, ../sass/pages/_homepage.scss */
   body.homepage .section-subscribe-form .subscribe-form .submit-wrapper {
     display: inline-block;
   }
 }
-/* line 385, ../sass/pages/_homepage.scss */
+/* line 425, ../sass/pages/_homepage.scss */
 body.homepage .section-subscribe-form .subscribe-form .submit-wrapper .subscribe-submit {
   position: absolute;
   right: 0;
   bottom: 0;
 }
-/* line 390, ../sass/pages/_homepage.scss */
+/* line 430, ../sass/pages/_homepage.scss */
 body.homepage .section-subscribe-form .subscribe-form .submit-wrapper .subscribe-submit button {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1134,20 +1199,20 @@ body.homepage .section-subscribe-form .subscribe-form .submit-wrapper .subscribe
   height: 50px;
   padding-top: 7px;
 }
-/* line 402, ../sass/pages/_homepage.scss */
+/* line 442, ../sass/pages/_homepage.scss */
 body.homepage .section-subscribe-form .subscribe-form label.error {
   color: #e40066;
   margin-bottom: 20px;
 }
 @media (min-width: 768px) {
-  /* line 402, ../sass/pages/_homepage.scss */
+  /* line 442, ../sass/pages/_homepage.scss */
   body.homepage .section-subscribe-form .subscribe-form label.error {
     position: absolute;
     margin-top: 55px;
     left: 10px;
   }
 }
-/* line 414, ../sass/pages/_homepage.scss */
+/* line 454, ../sass/pages/_homepage.scss */
 body.homepage .site-footer {
   margin-top: 0;
 }

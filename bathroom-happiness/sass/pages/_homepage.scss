@@ -72,6 +72,9 @@ body.homepage {
         a {
           &:hover {
             text-decoration: none;
+            .arrow-link-icon i {
+              @include transform(translate(10px,0));
+            }
           }
 
           .arrow-link-label {
@@ -81,12 +84,13 @@ body.homepage {
             font-size: 14px;
             position: relative;
             top: 15px;
-            margin-right: 10px;
+            padding-right: 10px;
           }
 
           .arrow-link-icon {
             position: relative;
             i {
+              @include transition(0.3s all ease-out);
               color: $gold;
               font-size: 42px;
               position: absolute;
@@ -96,26 +100,57 @@ body.homepage {
       }
     }
 
-    .panel-find-inspiration {
+    .panel-link {
+      display: block;
+      overflow: hidden;
       position: relative;
-      min-height: 347px;
-      @media (min-width: $screen-lg-min){
-        min-height: 469px; 
+
+      .background-div {
+        position: absolute;
+        width: 100%;
+        @include transition(0.3s all ease-out);
       }
 
-      background: url("../images/homepage/find-inspiration.jpg");
-      background-size: cover;
+      &:hover {
+        .background-div {
+          @include transform(scale(1.3));
+        }
+      }
+    }
+
+    .panel-find-inspiration {
+      height: 347px;
+      
+      .background-div {
+        height: 347px;
+        background: url("../images/homepage/find-inspiration.jpg");
+        background-size: cover;
+      }
+
+      @media (min-width: $screen-lg-min){
+        height: 469px; 
+        
+        .background-div {
+          height: 469px;
+        }
+      }
     }
 
     .panel-shop-products {
-      position: relative;
-      min-height: 285px;
-      @media (min-width: $screen-lg-min){
-        min-height: 407px; 
+      height: 285px;
+
+      .background-div {
+        height: 285px;
+        background: url("../images/homepage/shop-products.jpg");
+        background-size: cover;
       }
 
-      background: url("../images/homepage/shop-products.jpg");
-      background-size: cover;
+      @media (min-width: $screen-lg-min){
+        height: 407px; 
+        .background-div {
+          height: 407px;
+        }
+      }
     }
 
     .text-overlay {
@@ -170,9 +205,14 @@ body.homepage {
           a {
             &:hover {
               text-decoration: none;
+              .arrow-link-icon {
+                @include transform(translate(5px,0));
+              }
             }
 
             .arrow-link-icon {
+              display: block;
+              @include transition(0.3s all ease-out);
               i {
                 color: $grey;
                 font-size: 42px;

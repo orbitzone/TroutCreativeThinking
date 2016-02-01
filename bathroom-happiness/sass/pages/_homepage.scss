@@ -42,6 +42,8 @@ body.homepage {
     background-color: $body-light-grey;
     padding-top: 10px;
     padding-bottom: 2px;
+    padding-left: 15px;
+    padding-right: 15px;
 
     .row {
       margin-left: -5px;
@@ -119,7 +121,10 @@ body.homepage {
     }
 
     .panel-find-inspiration {
-      height: 347px;
+      height: 285px;
+      @media (min-width: $screen-md-min) {
+        height: 347px;
+      }
       
       .background-div {
         height: 347px;
@@ -157,7 +162,10 @@ body.homepage {
       height: 90px;
       background: rgba(0,0,0,0.1);
       position: absolute;
-      bottom: 80px;
+      bottom: 95px;
+      @media (min-width: $screen-md-min) {
+        bottom: 80px;
+      }
       @media (min-width: $screen-lg-min) {
         bottom: 150px;
       }      
@@ -186,39 +194,50 @@ body.homepage {
   .section-the-block {
     background-color: $body-light-grey;
     padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
 
     .the-block-bathroom {
-      background: rgba(0, 0, 0, 0) url("../images/homepage/the-block-bathroom.jpg") 238px 0; 
+      background: rgba(0, 0, 0, 0) url("../images/homepage/the-block-bathroom.jpg") 238px 0;
+
+      a {
+        &:hover {
+          text-decoration: none;
+          .arrow-link-icon {
+            @include transform(translate(5px,0));
+          }
+        }
+      }
       
       .the-block-dean-shay {
-        float: left;
+        background-color: #231f20;
+        text-align: center;
+        @media (min-width: 375px) {
+          padding-left: 20px;
+          float: left;
+        }
       }
 
       .the-block-edge {
         position: relative;
         float: left;
+        display: none;
+        @media (min-width: 375px) {
+          display: block;
+        }
 
         .arrow-link {
           position: absolute;
           bottom: -10px;
-
-          a {
-            &:hover {
-              text-decoration: none;
-              .arrow-link-icon {
-                @include transform(translate(5px,0));
-              }
+  
+          .arrow-link-icon {
+            display: block;
+            @include transition(0.3s all ease-out);
+            i {
+              color: $grey;
+              font-size: 42px;
             }
-
-            .arrow-link-icon {
-              display: block;
-              @include transition(0.3s all ease-out);
-              i {
-                color: $grey;
-                font-size: 42px;
-              }
-            }
-          }
+          }        
         }
       }
     }
@@ -226,7 +245,7 @@ body.homepage {
 
   .section-nav-blocks {
     background-color: $body-dark-grey;
-    padding: 50px 0 55px;
+    padding: 50px 15px 55px 15px;
  
     .row {
       margin-left: -2px;
@@ -359,18 +378,15 @@ body.homepage {
 
   .section-subscribe-form {
     background: url(../images/homepage/section-subscribe-bg.png);
-    padding: 70px 0;
+    padding: 70px 15px;
     text-align: center;
 
     .subscribe-form {
       margin: 0;
-      @media (min-width: $screen-sm-min) {
-        //padding-right: 50px;
-      }
-
+      
       .subscribe-form-title {
         font-family: $font-family;
-        font-size: 17px;
+        font-size: 15px;
         text-transform: uppercase;
         color: $dark-grey;
         display: block;
@@ -444,7 +460,7 @@ body.homepage {
         margin-bottom: 20px;
         @media (min-width: $screen-sm-min) {
           position: absolute;
-          margin-top: 55px;
+          top: 55px;
           left: 10px;
         }
       }

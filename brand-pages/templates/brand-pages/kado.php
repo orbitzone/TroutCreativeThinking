@@ -39,7 +39,7 @@
           -->
           <div class="rte">
             <h3><!--<a href="#">-->Hotel Inspired Living<!---</a>--></h3>
-            <p>Kado delivers Hotel inspired living to your bathroom space. With unique uncompromised features Kado bathroom products will set your bathroom apart.<br/> Each piece oozes contemporary elegance and sophistication so you can emulate your favorite hotel bathroom at home.</p>
+            <p>Kado delivers Hotel inspired living to your bathroom space. With unique uncompromised features Kado bathroom products will set your bathroom apart.<br/> Each piece oozes contemporary elegance and sophistication so you can emulate your favourite hotel bathroom at home.</p>
           </div>
         </div>
         <!-- End: HTML Widget-->
@@ -124,12 +124,12 @@
       <div class="slides" data-slides-to-show="1" data-slides-to-scroll="1">
         <div class="slide">
           <figure class="image">
-            <a href="http://www.reece.com.au/assets/brands/820000/Laufen-SaphirKeramik.pdf">
-              <img src="images/brand-pages/laufen/brochure-2.jpg" alt="Brochure 2">  
+            <a href=" http://www.reece.com.au/assets/brands/142000/kado-brochure-V17.pdf" target="_blank">
+              <img src="images/brand-pages/kado/brochure.jpg" width="170" alt="Kado Brochure">  
             </a>
           </figure>
           <div class="text">
-            <a href="http://www.reece.com.au/assets/brands/820000/Laufen-SaphirKeramik.pdf" class="widget-link">Download brochure</a>
+            <a href=" http://www.reece.com.au/assets/brands/142000/kado-brochure-V17.pdf" target="_blank" class="widget-link">Download brochure</a>
           </div>
         </div>        
       </div>
@@ -163,7 +163,7 @@
                 <img src="images/brand-pages/kado/kado-logo.png" alt="Kado Hotel Inspired Living" width="180">
               </div>
               <div class="text">
-                Ispired by gentle curves, Kado Lure and Kado Cirque create a natural sense of calm in the bathroom, Soft angles and sweeping lines are stylishy integrated in superb quality.
+                Inspired by gentle curves, Kado Lure and Kado Cirque create a natural sense of calm in the bathroom, soft angles and sweeping lines are stylishly integrated in superb quality.
               </div>
             </div>
             <div class="moodboard">

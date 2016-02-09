@@ -1404,6 +1404,10 @@ body.homepage .section-subscribe-form .subscribe-form input[type=email] {
   -ms-appearance: none;
   -o-appearance: none;
   appearance: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
   border: none;
   height: 50px;
   line-height: 50px;
@@ -1420,23 +1424,23 @@ body.homepage .section-subscribe-form .subscribe-form input[type=email] {
     margin-left: 10px;
   }
 }
-/* line 560, ../sass/pages/_homepage.scss */
+/* line 559, ../sass/pages/_homepage.scss */
 body.homepage .section-subscribe-form .subscribe-form input[type=text].error,
 body.homepage .section-subscribe-form .subscribe-form input[type=email].error {
   border: 1px solid #e40066;
 }
-/* line 565, ../sass/pages/_homepage.scss */
+/* line 564, ../sass/pages/_homepage.scss */
 body.homepage .section-subscribe-form .subscribe-form .name-wrapper {
   position: relative;
   display: block;
 }
 @media (min-width: 768px) {
-  /* line 565, ../sass/pages/_homepage.scss */
+  /* line 564, ../sass/pages/_homepage.scss */
   body.homepage .section-subscribe-form .subscribe-form .name-wrapper {
     display: inline-block;
   }
 }
-/* line 573, ../sass/pages/_homepage.scss */
+/* line 572, ../sass/pages/_homepage.scss */
 body.homepage .section-subscribe-form .subscribe-form .submit-wrapper {
   position: relative;
   padding-right: 50px;
@@ -1444,19 +1448,23 @@ body.homepage .section-subscribe-form .subscribe-form .submit-wrapper {
   display: block;
 }
 @media (min-width: 768px) {
-  /* line 573, ../sass/pages/_homepage.scss */
+  /* line 572, ../sass/pages/_homepage.scss */
   body.homepage .section-subscribe-form .subscribe-form .submit-wrapper {
     display: inline-block;
   }
 }
-/* line 582, ../sass/pages/_homepage.scss */
+/* line 581, ../sass/pages/_homepage.scss */
 body.homepage .section-subscribe-form .subscribe-form .submit-wrapper .subscribe-submit {
   position: absolute;
   right: 0;
   bottom: 0;
 }
-/* line 587, ../sass/pages/_homepage.scss */
+/* line 586, ../sass/pages/_homepage.scss */
 body.homepage .section-subscribe-form .subscribe-form .submit-wrapper .subscribe-submit button {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
@@ -1468,21 +1476,22 @@ body.homepage .section-subscribe-form .subscribe-form .submit-wrapper .subscribe
   width: 50px;
   height: 50px;
   padding-top: 7px;
+  text-align: center;
 }
-/* line 599, ../sass/pages/_homepage.scss */
+/* line 600, ../sass/pages/_homepage.scss */
 body.homepage .section-subscribe-form .subscribe-form label.error {
   color: #e40066;
   margin-bottom: 20px;
 }
 @media (min-width: 768px) {
-  /* line 599, ../sass/pages/_homepage.scss */
+  /* line 600, ../sass/pages/_homepage.scss */
   body.homepage .section-subscribe-form .subscribe-form label.error {
     position: absolute;
     top: 55px;
     left: 10px;
   }
 }
-/* line 611, ../sass/pages/_homepage.scss */
+/* line 612, ../sass/pages/_homepage.scss */
 body.homepage .site-footer {
   margin-top: 0;
 }

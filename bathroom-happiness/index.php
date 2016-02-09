@@ -39,25 +39,25 @@
               <!-- large/middle col (shower img) -->
               <div class="col-md-6 col-md-push-3">
                 <div class="panel panel-hero">
-                  <div class="image">
-                    <img src="images/homepage/woman-in-shower.jpg" alt="it's time to create a bathroom you love">
-                  </div>
-                  <h2 class="intro-text">
-                    it's time to<br>
-                    create a bathroom<br/>
-                    you love
-                  </h2>
-                  <div class="experience">
-                    Experience a new <br/>world of inspiration
-                  </div>
-                  <div class="arrow-link">
-                    <a href="#">
-                      <div class="arrow-link-label">Get Inspired</div>
-                      <div class="arrow-right">
-                        <span class="arrow-link-icon"><i class="arrow-link-icon icon-arrow-right"></i></span>
-                      </div>
-                    </a>
-                  </div>
+                  <a href="#">
+                    <div class="image">
+                      <img src="images/homepage/woman-in-shower.jpg" alt="it's time to create a bathroom you love">
+                    </div>
+                    <h2 class="intro-text">
+                      it's time to<br>
+                      create a bathroom<br/>
+                      you love
+                    </h2>
+                    <div class="experience">
+                      Experience a new <br/>world of inspiration
+                    </div>
+                    <div class="arrow-link">
+                        <div class="arrow-link-label">Get Inspired</div>
+                        <div class="arrow-right">
+                          <span class="arrow-link-icon"><i class="arrow-link-icon icon-arrow-right"></i></span>
+                        </div>
+                    </div>
+                  </a>
                 </div>
               </div>
               <!-- left col (find inspiration img) -->

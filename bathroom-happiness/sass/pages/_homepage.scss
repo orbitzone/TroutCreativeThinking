@@ -55,19 +55,29 @@ body.homepage {
     .intro-text{
       text-align: center;
       color: $gold;
-      font-size: 44px;
-      padding: 0 20px;
+      font-size: 30px;
+      padding: 0 10px;
       letter-spacing: -1.6px;
       position: relative;
+      background: -webkit-linear-gradient(left, #CCAA62 10%, #C0A053 15%,#FCEC95 30%, #FBEC84 40%, #DABB60 50%, #AB8731 70%, #C59F4A 80%, #E9CA6F);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      @media (min-width: $screen-sm-min) {
+        font-size: 44px;
+        padding: 0 20px;
+      }
     }
     .experience{
       font-weight: 300;
-      font-size: 18px;
+      font-size: 14px;
       text-align: center;
       text-transform: uppercase;
       padding: 0 20px;
       letter-spacing: 3.2px;
       margin-top: 15px;
+      @media (min-width: $screen-sm-min) {
+        font-size: 18px;
+      }
     }
     .panel-hero {
       padding-bottom: 4px;
@@ -84,39 +94,43 @@ body.homepage {
       img {
         width: 100%;
       }
-
+      a {
+        text-decoration: none;
+        color: black;
+        &:hover{
+          .intro-text{
+            @include animation(pulse 1.5s forwards infinite linear);
+          }
+          .arrow-link-icon{
+            @include animation( arrow-right 1.3s forwards infinite linear);
+          }
+        }
+      }
+        
       .arrow-link {
         text-align: center;
         position: relative;
 
-        a {
-          text-decoration: none;
-          &:hover {
-            text-decoration: none;
-            .arrow-link-icon i {
-              @include transform(translate(10px,0));
-            }
-          }
+        .arrow-link-label {
+          font-family: $font-family-book;
+          color: black;
+          text-transform: uppercase;
+          font-size: 15px;
+          margin-top: 19px;
+          font-weight: 400;
+          letter-spacing: 1.6px
+        }
 
-          .arrow-link-label {
-            font-family: $font-family-book;
-            color: $dark-blue;
-            text-transform: uppercase;
-            font-size: 15px;
-            margin-top: 19px;
-            font-weight: 400;
-            letter-spacing: 1.6px
-          }
-
-          .arrow-link-icon {
-            i {
-              @include transition(0.3s all ease-out);
-              color: $gold;
-              font-size: 52px;
-              line-height: 30px;              
-            }
+        .arrow-link-icon {
+          display: block;
+          i {
+            @include transition(0.3s all ease-out);
+            color: $gold;
+            font-size: 52px;
+            line-height: 30px;              
           }
         }
+        
       }
     }
 
@@ -150,15 +164,15 @@ body.homepage {
         }
         .text-overlay{
           .text-overlay-line-1{
-            @include animation(exit-right-green 0.5s forwards linear);
+            @include animation(exit-right-green 0.3s forwards linear);
             color: $green;
           }
           .text-overlay-line-2{
-            @include animation(exit-left-green 0.5s forwards linear);
+            @include animation(exit-left-green 0.3s forwards linear);
             color: $green;
           }
           .arrow-link{
-            @include animation('exit-left-green 0.5s forwards linear, arrow-right 1s 0.5s forwards infinite linear');
+            @include animation('exit-left-green 0.3s forwards linear, arrow-right 0.7s 0.5s forwards infinite linear');
             color: $green; 
           }
         }
@@ -300,8 +314,10 @@ body.homepage {
 
   .section-nav-blocks {
     background: $body-dark-grey url(../images/nav/nav-pattern.png) repeat;
-    padding: 50px 15px 55px 15px;
- 
+    padding: 20px 15px 55px 15px;
+     @media (min-width: $screen-sm-min) {
+      padding: 50px 15px 55px 15px;
+     }
     .row {
       margin-left: -2px;
       margin-right: -2px;
@@ -313,6 +329,7 @@ body.homepage {
     .nav-link {
       display: block;
       position: relative;
+      margin-bottom: 4px;
       .overlay{
         position: absolute;
         width: 100%;
@@ -376,7 +393,7 @@ body.homepage {
               opacity: 1;
             }
             .arrow-link{
-              @include animation(arrow-right 1s 0.3s forwards infinite linear);
+              @include animation(arrow-right 0.8s 0.3s forwards infinite linear);
             }
           }     
         }
@@ -608,7 +625,7 @@ body.homepage {
     opacity: 0;
   }
   10.1%{
-    @include transform(translateX(120%));
+    @include transform(translateX(100%));
   }
   100%{
     @include transform(translateX(0));
@@ -623,9 +640,34 @@ body.homepage {
     opacity: 0;
   }
   10.1%{
-    @include transform(translateX(-120%));
+    @include transform(translateX(-100%));
   }
   100%{
     @include transform(translateX(0));
   }
+}
+@include keyframes(pulse){
+0% {
+    @include transform(scale(0.9));
+    opacity: 0.7;   
+  }
+  50% {
+    @include transform(scale(1));
+    opacity: 1; 
+  } 
+  100% {
+    @include transform(scale(0.9));
+    opacity: 0.7; 
+  } 
+}
+@include keyframes(tossing) {
+  0% {
+    @include transform(rotate(-4deg)); 
+  }
+  50% {
+    @include transform(rotate(4deg));
+  }
+  100% {
+    @include transform(rotate(-4deg)); 
+  }           
 }

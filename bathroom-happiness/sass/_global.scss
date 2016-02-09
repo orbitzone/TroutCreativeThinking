@@ -110,6 +110,10 @@ body.bathroom-happiness {
 
     .slide {
     	.slide-content {
+    		a{
+    			display: block;
+    			text-align: left;
+    		}
     		.slide-image {
     			text-align: center;
     			img{

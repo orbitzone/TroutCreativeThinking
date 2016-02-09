@@ -39,7 +39,7 @@
               <!-- large/middle col (shower img) -->
               <div class="col-md-6 col-md-push-3">
                 <div class="panel panel-hero">
-                  <a href="#">
+                  <a href="http://www.reece.com.au/bathrooms/inspiration">
                     <div class="image">
                       <img src="images/homepage/woman-in-shower.jpg" alt="it's time to create a bathroom you love">
                     </div>
@@ -62,7 +62,7 @@
               </div>
               <!-- left col (find inspiration img) -->
               <div class="col-md-3 col-sm-6 col-md-pull-6">
-                <a href="#" class="panel panel-link panel-find-inspiration">
+                <a href="http://www.reece.com.au/bathrooms/inspiration" class="panel panel-link panel-find-inspiration">
                   <div class="background-div"></div>
                   <div class="text-overlay">
                     <div class="text-overlay-line-1">Find</div> 
@@ -76,60 +76,66 @@
                   <div class="slideshow-container">
                     <div class="slide">
                       <div class="slide-content">
-                        <div class="slide-image">
-                          <img src="images/products/milli-axon-mixer.jpg" alt="Milli Axon Basin Mixer" />
-                        </div>
-                        <div class="slide-text">
-                          <div class="product-name">
-                            Milli Axon
+                        <a href="#">
+                          <div class="slide-image">
+                            <img src="images/products/milli-axon-mixer.jpg" alt="Milli Axon Basin Mixer" />
                           </div>
-                          <p class="product-description">
-                            Basin Mixer<br/>
-                            Rose Gold/Black
-                          </p>
-                          <p class="product-price">
-                            $699.99 <span class="product-price-gst">gst inc</span>
-                          </p>
-                        </div>
+                          <div class="slide-text">
+                            <div class="product-name">
+                              Milli Axon
+                            </div>
+                            <p class="product-description">
+                              Basin Mixer<br/>
+                              Rose Gold/Black
+                            </p>
+                            <p class="product-price">
+                              $699.99 <span class="product-price-gst">gst inc</span>
+                            </p>
+                          </div>
+                        </a>
                       </div>
                     </div>
                     <div class="slide">
                       <div class="slide-content">
-                        <div class="slide-image">
-                          <img src="images/products/milli-axon-mixer.jpg" alt="Milli Axon Basin Mixer" />
-                        </div>
-                        <div class="slide-text">
-                          <div class="product-name">
-                            Milli Axon
+                        <a href="#">
+                          <div class="slide-image">
+                            <img src="images/products/milli-axon-mixer.jpg" alt="Milli Axon Basin Mixer" />
                           </div>
-                          <p class="product-description">
-                            Basin Mixer<br/>
-                            Rose Gold/Black
-                          </p>
-                          <p class="product-price">
-                            $699.99 <span class="product-price-gst">gst inc</span>
-                          </p>
-                        </div>
+                          <div class="slide-text">
+                            <div class="product-name">
+                              Milli Axon
+                            </div>
+                            <p class="product-description">
+                              Basin Mixer<br/>
+                              Rose Gold/Black
+                            </p>
+                            <p class="product-price">
+                              $699.99 <span class="product-price-gst">gst inc</span>
+                            </p>
+                          </div>
+                        </a>
                       </div>
                     </div>
                   </div>
                   <div class="slideshow-buttons"></div>
                   <div class="slideshow-label">
-                    <a href="#">Shop Tapware</a>
+                    <a href="http://www.reece.com.au/bathrooms/products/bathroom/tapware">Shop Tapware</a>
                   </div>
                 </div>
               </div>
               <!-- right col (shop products img) -->
               <div class="col-md-3 col-sm-6">
                 <div class="panel panel-search hidden-xs hidden-sm">
+                  <form action="http://www.reece.com.au/bathrooms/products">
                   <div class="search-input">
-                    <input type="text" placeholder="Product Search"/>
+                    <input type="text" name="keyword" placeholder="Product Search"/>
                   </div>
                   <div class="search-submit">
                     <button type="submit"><i class="icon-search"></i></button>
                   </div>
+                  </form>
                 </div>
-                <a href="#" class="panel-link panel panel-shop-products">
+                <a href="http://www.reece.com.au/bathrooms/products" class="panel-link panel panel-shop-products">
                   <div class="background-div"></div>
                   <div class="text-overlay">
                     <div class="text-overlay-line-1">Shop</div> 
@@ -143,44 +149,48 @@
                   <div class="slideshow-container">
                     <div class="slide">
                       <div class="slide-content">
-                        <div class="slide-image">
-                          <img src="images/products/teknobili-overhead-shower.jpg" alt="Milli Axon Basin Mixer" />
-                        </div>
-                        <div class="slide-text">
-                          <div class="product-name">
-                            Teknobili Up
+                        <a href="#">
+                          <div class="slide-image">
+                            <img src="images/products/teknobili-overhead-shower.jpg" alt="Milli Axon Basin Mixer" />
                           </div>
-                          <p class="product-description">
-                            Blade Overhead Shower
-                          </p>
-                        <p class="product-price">
-                          $2519.99 <span class="product-price-gst">gst inc</span>
-                        </p>
-                        </div>
+                          <div class="slide-text">
+                            <div class="product-name">
+                              Teknobili Up
+                            </div>
+                            <p class="product-description">
+                              Blade Overhead Shower
+                            </p>
+                            <p class="product-price">
+                              $2519.99 <span class="product-price-gst">gst inc</span>
+                            </p>
+                          </div>
+                        </a>
                       </div>
                     </div>
                     <div class="slide">
                       <div class="slide-content">
-                        <div class="slide-image">
-                          <img src="images/products/teknobili-overhead-shower.jpg" alt="Milli Axon Basin Mixer" />
-                        </div>
-                        <div class="slide-text">
-                          <div class="product-name">
-                            Teknobili Up
+                        <a href="#">
+                          <div class="slide-image">
+                            <img src="images/products/teknobili-overhead-shower.jpg" alt="Milli Axon Basin Mixer" />
                           </div>
-                          <p class="product-description">
-                            Blade Overhead Shower
-                          </p>
-                          <p class="product-price">
-                            $2519.99 <span class="product-price-gst">gst inc</span>
-                          </p>
-                        </div>
+                          <div class="slide-text">
+                            <div class="product-name">
+                              Teknobili Up
+                            </div>
+                            <p class="product-description">
+                              Blade Overhead Shower
+                            </p>
+                            <p class="product-price">
+                              $2519.99 <span class="product-price-gst">gst inc</span>
+                            </p>
+                          </div>
+                        </a>
                       </div>
                     </div>
                   </div>
                   <div class="slideshow-buttons"></div>
                   <div class="slideshow-label">
-                    <a href="#">Shop Showers</a>
+                    <a href="http://www.reece.com.au/bathrooms/products/bathroom/showers">Shop Showers</a>
                   </div>
                 </div>
               </div>
@@ -193,7 +203,7 @@
             <div class="row">
               <div class="col-sm-12">
                 <div class="the-block-bathroom">
-                  <a href="#">
+                  <a href="http://www.reece.com.au/the-block">
                     <div class="image the-block-dean-shay">
                       <img src="images/homepage/the-block-dean-shay.png" alt="The Block - Congratulations Dean and Shay"/>
                     </div>
@@ -215,7 +225,7 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-xs-12 col-sm-6 col-md-3">
-                <a href="#" class="nav-link">
+                <a href="http://www.reece.com.au/storefinder" class="nav-link">
                   <div class="nav-block store-finder">
                     <img src="images/nav/nav-map-icon.png" alt="store finder icon"/>              
                   </div>
@@ -232,7 +242,7 @@
                 </a>
               </div>
               <div class="col-xs-12 col-sm-6 col-md-3">
-                <a href="#" class="nav-link">
+                <a href="http://www.reece.com.au/bathrooms/inspiration#powder-room" class="nav-link">
                   <div class="nav-block the-powder-room">
                     <img src="images/nav/nav-powder-room.png"/>                    
                   </div>
@@ -249,7 +259,7 @@
                 </a>
               </div>
               <div class="col-xs-12 col-sm-6 col-md-3">
-                <a href="#" class="nav-link">
+                <a href="http://www.reece.com.au/bathrooms/3d-bathroom-planner" class="nav-link">
                   <div class="nav-block planning">
                   </div>
                   <div class="nav-block-label">Start Planning</div>
@@ -265,7 +275,7 @@
                 </a>
               </div>
               <div class="col-xs-12 col-sm-6 col-md-3">
-                <a href="#" class="nav-link">
+                <a href="http://www.reece.com.au/bathrooms/brands" class="nav-link">
                   <div class="nav-block brands">                  
                   </div>
                   <div class="nav-block-label">Explore Brands</div>

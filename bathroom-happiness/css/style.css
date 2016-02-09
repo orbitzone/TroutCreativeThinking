@@ -1080,7 +1080,7 @@ body.homepage .section-the-block .the-block-bathroom .the-block-edge .arrow-link
 /* line 319, ../sass/pages/_homepage.scss */
 body.homepage .section-nav-blocks {
   background: #DEDDDE url(../images/nav/nav-pattern.png) repeat;
-  padding: 20px 15px 55px 15px;
+  padding: 20px 15px 20px 15px;
 }
 @media (min-width: 768px) {
   /* line 319, ../sass/pages/_homepage.scss */

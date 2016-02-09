@@ -746,7 +746,7 @@ body.homepage .section-intro .intro-text {
   -webkit-text-fill-color: transparent;
   display: inline-block;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 11px;
 }
 @media (min-width: 768px) {
   /* line 58, ../sass/pages/_homepage.scss */

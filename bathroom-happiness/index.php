@@ -303,10 +303,10 @@
                 <form name="subscribe-form" class="subscribe-form">
                   <span class="subscribe-form-title">Subscribe for updates</span>
                   <span class="name-wrapper">
-                    <input type="text" name="name" placeholder="name" required/>
+                    <input type="text" name="name" placeholder="Name" required/>
                   </span>
                   <span class="submit-wrapper">
-                    <input type="email" name="email" placeholder="email" required/>
+                    <input type="email" name="email" placeholder="Email" required/>
                     <span class="subscribe-submit">
                       <button type="submit"><i class="icon-arrow-right"></i></button>
                     </span>

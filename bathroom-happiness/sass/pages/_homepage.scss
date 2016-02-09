@@ -94,8 +94,12 @@ body.homepage {
       @media (min-width: $screen-sm-min){
         min-height: 597px;  
       }
+      @media (min-width: $screen-md-min){
+        height: 708px;
+      }
       @media (min-width: $screen-lg-min){
         min-height: 719px;  
+        height: 814px;
       }
       .image{
         max-height: 510px;
@@ -535,6 +539,7 @@ body.homepage {
         color: $dark-grey;
         display: block;
         margin: 0 0 10px;
+        font-weight: bold;
         @media (min-width: $screen-sm-min) {
           display: inline;
           margin-right: 0 15px 0 0;

@@ -561,7 +561,7 @@ body.bathroom-happiness .panel-slideshow .slideshow-label a {
 /* line 194, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow .slideshow-label a:hover {
   text-decoration: none;
-  background-color: #D57B8D;
+  background-color: black;
   color: #FFF;
 }
 /* line 209, ../sass/_global.scss */

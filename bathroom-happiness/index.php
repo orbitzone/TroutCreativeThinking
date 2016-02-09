@@ -26,12 +26,14 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="panel panel-search hidden-md hidden-lg">
+                <form action="http://www.reece.com.au/bathrooms/products">
                   <div class="search-input">
                     <input type="text" placeholder="Product Search"/>
                   </div>
                   <div class="search-submit">
                     <button type="submit"><i class="icon-search"></i></button>
                   </div>
+                  </form>
                 </div>
               </div>
             </div>

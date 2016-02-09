@@ -55,20 +55,19 @@ body.homepage {
     .intro-text{
       text-align: center;
       color: $gold;
-      font-size: 48px;
+      font-size: 44px;
       padding: 0 20px;
-      margin-top: -30px;
       letter-spacing: -1.6px;
       position: relative;
     }
     .experience{
       font-weight: 300;
-      font-size: 20px;
+      font-size: 18px;
       text-align: center;
       text-transform: uppercase;
       padding: 0 20px;
       letter-spacing: 3.2px;
-      margin-top: 17px;
+      margin-top: 15px;
     }
     .panel-hero {
       padding-bottom: 4px;
@@ -78,7 +77,10 @@ body.homepage {
       @media (min-width: $screen-lg-min){
         min-height: 719px;  
       }
-
+      .image{
+        max-height: 510px;
+        overflow: hidden;
+      }
       img {
         width: 100%;
       }

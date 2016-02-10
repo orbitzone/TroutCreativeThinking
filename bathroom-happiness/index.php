@@ -74,7 +74,7 @@
                     </div>
                   </div>
                 </a>
-                <div class="panel panel-slideshow shop-tapware">
+                <div class="panel panel-slideshow shop-tapware" data-section="shop-tapware">
                   <div class="slideshow-container">
                     <div class="slide">
                       <div class="slide-content">
@@ -147,7 +147,7 @@
                     </div>
                   </div>                  
                 </a>
-                <div class="panel panel-slideshow shop-showers">
+                <div class="panel panel-slideshow shop-showers"  data-section="shop-showers">
                   <div class="slideshow-container">
                     <div class="slide">
                       <div class="slide-content">

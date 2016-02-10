@@ -101,11 +101,11 @@ body.homepage {
       @media (min-width: $screen-lg-min){
         //min-height: 719px;  
        // height: 814px;
-       height: 650px;
+       height: 682px;
       }
       .image{
         //max-height: 510px;
-        max-height: 356px;
+        max-height: 390px;
         overflow: hidden;
       }
       img {
@@ -206,7 +206,7 @@ body.homepage {
         height: 347px;
       }
       @media (min-width: $screen-lg-min){
-        height: 305px;        
+        height: 337px;        
       }
       .background-div {
         height: 100%;
@@ -223,7 +223,7 @@ body.homepage {
         background-size: cover;
       }
       @media (min-width: $screen-lg-min){
-        height: 243px;         
+        height: 275px;         
       }
     }
 

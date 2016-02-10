@@ -26,5 +26,13 @@
         }]
       });
     });
+    $('.panel-slideshow').each(function(){
+        var section= $(this).data('section');
+        $(this).find('.slideshow-container a').on('mouseover', function(){
+          $('.'+section).addClass('hover');
+        }).on('mouseout', function(){
+          $('.'+section).removeClass('hover');
+        });
+    });
   });
 })(jQuery);

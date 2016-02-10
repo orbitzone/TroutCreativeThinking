@@ -179,6 +179,12 @@ body.bathroom-happiness {
       	&:before {
       		color: $black;
       	}
+      	&:hover{
+      		background-color: $black;
+      		&:before{
+      			color: $grey;		
+      		}
+      	}
       }
 
       .slick-next {
@@ -212,12 +218,14 @@ body.bathroom-happiness {
     	}
     }
   }
-
-  .panel-slideshow.shop-showers {
-  	@media (min-width: $screen-md-min) {
-	  	
-	  }
-  }
+	.panel-slideshow{
+		@include transition(0.3s all ease-out);
+		@include transform(translateY(0));
+		&.hover{
+			@include transform(translateY(-6px));
+			@include box-shadow(0px 12px 20px rgba(0,0,0,0.2));
+		}
+	}  
 
 	#main-content{
 		position: relative;

@@ -556,20 +556,30 @@ body.bathroom-happiness .panel-slideshow .slideshow-buttons .slick-next:before,
 body.bathroom-happiness .panel-slideshow .slideshow-buttons .slick-prev:before {
   color: #000;
 }
+/* line 182, ../sass/_global.scss */
+body.bathroom-happiness .panel-slideshow .slideshow-buttons .slick-next:hover,
+body.bathroom-happiness .panel-slideshow .slideshow-buttons .slick-prev:hover {
+  background-color: #000;
+}
 /* line 184, ../sass/_global.scss */
+body.bathroom-happiness .panel-slideshow .slideshow-buttons .slick-next:hover:before,
+body.bathroom-happiness .panel-slideshow .slideshow-buttons .slick-prev:hover:before {
+  color: #e2e1e1;
+}
+/* line 190, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow .slideshow-buttons .slick-next {
   right: 0;
 }
-/* line 188, ../sass/_global.scss */
+/* line 194, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow .slideshow-buttons .slick-prev {
   left: 0;
 }
-/* line 193, ../sass/_global.scss */
+/* line 199, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow .slideshow-label {
   text-align: center;
   padding: 9px 9px 24px;
 }
-/* line 197, ../sass/_global.scss */
+/* line 203, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow .slideshow-label a {
   margin: 0;
   color: #FFF;
@@ -583,13 +593,37 @@ body.bathroom-happiness .panel-slideshow .slideshow-label a {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-/* line 207, ../sass/_global.scss */
+/* line 213, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow .slideshow-label a:hover {
   text-decoration: none;
   background-color: black;
   color: #FFF;
 }
-/* line 222, ../sass/_global.scss */
+/* line 221, ../sass/_global.scss */
+body.bathroom-happiness .panel-slideshow {
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+/* line 224, ../sass/_global.scss */
+body.bathroom-happiness .panel-slideshow.hover {
+  -webkit-transform: translateY(-6px);
+  -moz-transform: translateY(-6px);
+  -ms-transform: translateY(-6px);
+  -o-transform: translateY(-6px);
+  transform: translateY(-6px);
+  -webkit-box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2);
+}
+/* line 230, ../sass/_global.scss */
 body.bathroom-happiness #main-content {
   position: relative;
   overflow: hidden;
@@ -606,38 +640,38 @@ body.bathroom-happiness #main-content {
 	}*/
 }
 @media (min-width: 768px) {
-  /* line 222, ../sass/_global.scss */
+  /* line 230, ../sass/_global.scss */
   body.bathroom-happiness #main-content {
     font-size: 16px;
   }
 }
 @media (min-width: 992px) {
-  /* line 222, ../sass/_global.scss */
+  /* line 230, ../sass/_global.scss */
   body.bathroom-happiness #main-content {
     font-size: 16px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 222, ../sass/_global.scss */
+  /* line 230, ../sass/_global.scss */
   body.bathroom-happiness #main-content {
     padding: 0;
   }
 }
-/* line 246, ../sass/_global.scss */
+/* line 254, ../sass/_global.scss */
 body.bathroom-happiness #main-content label, body.bathroom-happiness #main-content input, body.bathroom-happiness #main-content button, body.bathroom-happiness #main-content select, body.bathroom-happiness #main-content textarea {
   font-size: inherit;
   line-height: inherit;
   font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 @media only screen and (max-device-width: 767px) {
-  /* line 253, ../sass/_global.scss */
+  /* line 261, ../sass/_global.scss */
   body.bathroom-happiness input[type="text"]:focus, body.bathroom-happiness input[type="number"]:focus,
   body.bathroom-happiness textarea:focus,
   body.bathroom-happiness select:focus {
     font-size: 16px;
   }
 }
-/* line 259, ../sass/_global.scss */
+/* line 267, ../sass/_global.scss */
 body.bathroom-happiness input, body.bathroom-happiness select, body.bathroom-happiness textarea {
   font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -827,12 +861,12 @@ body.homepage .section-intro .panel-hero {
 @media (min-width: 1200px) {
   /* line 93, ../sass/pages/_homepage.scss */
   body.homepage .section-intro .panel-hero {
-    height: 650px;
+    height: 682px;
   }
 }
 /* line 106, ../sass/pages/_homepage.scss */
 body.homepage .section-intro .panel-hero .image {
-  max-height: 356px;
+  max-height: 390px;
   overflow: hidden;
 }
 /* line 111, ../sass/pages/_homepage.scss */
@@ -966,7 +1000,7 @@ body.homepage .section-intro .panel-find-inspiration {
 @media (min-width: 1200px) {
   /* line 203, ../sass/pages/_homepage.scss */
   body.homepage .section-intro .panel-find-inspiration {
-    height: 305px;
+    height: 337px;
   }
 }
 /* line 211, ../sass/pages/_homepage.scss */
@@ -988,7 +1022,7 @@ body.homepage .section-intro .panel-shop-products .background-div {
 @media (min-width: 1200px) {
   /* line 218, ../sass/pages/_homepage.scss */
   body.homepage .section-intro .panel-shop-products {
-    height: 243px;
+    height: 275px;
   }
 }
 /* line 230, ../sass/pages/_homepage.scss */

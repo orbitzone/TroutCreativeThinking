@@ -46,6 +46,7 @@ body.homepage {
     padding-bottom: 2px;
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 30px;
       a{
         display: block;
         text-align: center;
@@ -98,11 +99,13 @@ body.homepage {
         height: 708px;
       }
       @media (min-width: $screen-lg-min){
-        min-height: 719px;  
-        height: 814px;
+        //min-height: 719px;  
+       // height: 814px;
+       height: 650px;
       }
       .image{
-        max-height: 510px;
+        //max-height: 510px;
+        max-height: 356px;
         overflow: hidden;
       }
       img {
@@ -202,47 +205,33 @@ body.homepage {
       @media (min-width: $screen-md-min) {
         height: 347px;
       }
-      
+      @media (min-width: $screen-lg-min){
+        height: 305px;        
+      }
       .background-div {
-        height: 347px;
+        height: 100%;
         background: url("../images/homepage/find-inspiration.jpg");
         background-size: cover;
-      }
-
-      @media (min-width: $screen-lg-min){
-        height: 469px; 
-        
-        .background-div {
-          height: 469px;
-        }
-      }
+      }      
     }
 
     .panel-shop-products {
       height: 285px;
       .background-div {
-        height: 285px;
+        height: 100%;
         background: url("../images/homepage/shop-products.jpg");
         background-size: cover;
       }
       @media (min-width: $screen-lg-min){
-        height: 407px; 
-        .background-div {
-          height: 407px;
-        }
+        height: 243px;         
       }
     }
 
     .text-overlay {
       height: 90px;
       position: absolute;
-      bottom: 95px;
-      @media (min-width: $screen-md-min) {
-        bottom: 80px;
-      }
-      @media (min-width: $screen-lg-min) {
-        bottom: 150px;
-      }      
+      top: 50%;
+      left: 0;
       padding-top: 18px;
       width: 100%;
       text-align: center;
@@ -250,6 +239,7 @@ body.homepage {
       font-weight: bold;
       color: $white;
       text-transform: uppercase;
+      @include transform(translateY(-50%));
       
       .text-overlay-line-1 {
         font-size: 14px;

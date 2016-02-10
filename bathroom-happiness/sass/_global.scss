@@ -220,9 +220,9 @@ body.bathroom-happiness {
   }
 	.panel-slideshow{
 		@include transition(0.3s all ease-out);
-		@include transform(translateY(0));
+		//@include transform(translateY(0));
 		&.hover{
-			@include transform(translateY(-6px));
+			//@include transform(translateY(-6px));
 			@include box-shadow(0px 12px 20px rgba(0,0,0,0.2));
 		}
 	}  

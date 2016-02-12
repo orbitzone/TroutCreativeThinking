@@ -1,0 +1,116 @@
+body.inspiration{
+	.main{
+		overflow-x: hidden;
+		font-family: $font-family;
+		#powder-room-header{
+			background: url(../images/inspiration/the-wall-bg.png);
+			padding: 60px 0 40px;
+			.container-fluid{
+				max-width: 1206px;
+			}
+			.subscribe-wrapper{
+				position: relative;
+				h2{
+					margin: 0 auto;
+					text-align: center;
+					margin-bottom: -40px;
+					position: relative;
+					z-index: 2;
+					@media (min-width: $screen-sm-min) {
+						margin: 0;
+						position: absolute;
+						left: 0;
+						top: -10px;
+						z-index: 2;						
+					}
+					@media (min-width: $screen-lg-min) {
+						left: -15px;
+					}
+				}
+			}
+			.subscribe-content{
+				position: relative;
+				background: url(../images/inspiration/header-form-bg.jpg) left center;
+				background-size: cover;
+				padding: 30px;
+				@media (min-width: $screen-sm-min) {
+					margin-left: 80px;
+					padding-left: 170px;
+				}
+				.text{
+					text-align: center;
+					font-size: 20px;
+					font-weight: 500;
+			    padding-top: 30px;
+			    padding-bottom: 20px;
+			    @media (min-width: $screen-sm-min) {
+			    	text-align: left;						
+			    }
+    			@media (min-width: $screen-lg-min) {
+    				padding-right: 106px;
+    			}
+				}				
+				.subscribe-box{
+					background: url(../images/inspiration/subscribe-box-bg.jpg) repeat;
+					padding: 40px 40px 25px;
+					h3{
+						color: $light-black;
+						text-transform: uppercase;
+						font-weight: 500;
+						font-size: 15px;
+					}
+					form{
+						margin-bottom: 0;
+						label.error{
+							color: $red;
+							position: absolute;
+							top: 54px;
+							font-size: 12px;
+							font-weight: 500;
+							left: 0;
+						}
+					}
+					input{
+						background: $grey;
+						padding: 20px;
+						@include appearance(none);
+						border: none;
+						@include border-radius(0);
+						@include box-shadow(none);
+						font-size: 16px;
+						font-weight: 500;
+						height: 52px;
+					}
+					button{
+						@include appearance(none);
+						border: none;
+						@include border-radius(0);
+						@include box-shadow(none);
+						height: 52px;
+						font-size: 16px;
+						font-weight: 500;	
+						background: #d4d4d4;
+						color: #322f31;
+						i{
+							font-size: 30px;
+							position: relative;
+							top: 4px;
+						}
+					}
+				}
+			}
+		}
+		.inspWallHeader{
+			margin-top: 0;
+		}
+		.inspWallwrapper{
+			padding-top: 0;
+		}
+		.prLogoWrap{
+			padding: 14px 0;
+			.prLogoCaption{
+				font-weight: 500;
+			}
+		}
+	}
+}

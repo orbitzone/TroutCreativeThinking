@@ -2081,59 +2081,111 @@ body.homepage .site-footer {
     transform: rotate(-4deg);
   }
 }
-/* line 2, ../sass/pages/_inspiration.scss */
+/* line 2, ../sass/pages/_the_powder_room.scss */
 body.inspiration .main {
+  overflow-x: hidden;
   font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-/* line 4, ../sass/pages/_inspiration.scss */
+/* line 5, ../sass/pages/_the_powder_room.scss */
 body.inspiration .main #powder-room-header {
   background: url(../images/inspiration/the-wall-bg.png);
-  padding: 60px 0 50px;
+  padding: 60px 0 40px;
 }
-/* line 7, ../sass/pages/_inspiration.scss */
+/* line 8, ../sass/pages/_the_powder_room.scss */
 body.inspiration .main #powder-room-header .container-fluid {
-  max-width: 1230px;
+  max-width: 1206px;
 }
-/* line 10, ../sass/pages/_inspiration.scss */
+/* line 11, ../sass/pages/_the_powder_room.scss */
 body.inspiration .main #powder-room-header .subscribe-wrapper {
   position: relative;
 }
-/* line 12, ../sass/pages/_inspiration.scss */
+/* line 13, ../sass/pages/_the_powder_room.scss */
 body.inspiration .main #powder-room-header .subscribe-wrapper h2 {
-  position: absolute;
-  left: -15px;
-  top: -10px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: -40px;
+  position: relative;
   z-index: 2;
-  margin: 0;
 }
-/* line 20, ../sass/pages/_inspiration.scss */
+@media (min-width: 768px) {
+  /* line 13, ../sass/pages/_the_powder_room.scss */
+  body.inspiration .main #powder-room-header .subscribe-wrapper h2 {
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: -10px;
+    z-index: 2;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 13, ../sass/pages/_the_powder_room.scss */
+  body.inspiration .main #powder-room-header .subscribe-wrapper h2 {
+    left: -15px;
+  }
+}
+/* line 31, ../sass/pages/_the_powder_room.scss */
 body.inspiration .main #powder-room-header .subscribe-content {
   position: relative;
   background: url(../images/inspiration/header-form-bg.jpg) left center;
+  background-size: cover;
   padding: 30px;
-  margin-left: 80px;
-  padding-left: 170px;
 }
-/* line 26, ../sass/pages/_inspiration.scss */
+@media (min-width: 768px) {
+  /* line 31, ../sass/pages/_the_powder_room.scss */
+  body.inspiration .main #powder-room-header .subscribe-content {
+    margin-left: 80px;
+    padding-left: 170px;
+  }
+}
+/* line 40, ../sass/pages/_the_powder_room.scss */
 body.inspiration .main #powder-room-header .subscribe-content .text {
+  text-align: center;
   font-size: 20px;
   font-weight: 500;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
-/* line 30, ../sass/pages/_inspiration.scss */
+@media (min-width: 768px) {
+  /* line 40, ../sass/pages/_the_powder_room.scss */
+  body.inspiration .main #powder-room-header .subscribe-content .text {
+    text-align: left;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 40, ../sass/pages/_the_powder_room.scss */
+  body.inspiration .main #powder-room-header .subscribe-content .text {
+    padding-right: 106px;
+  }
+}
+/* line 53, ../sass/pages/_the_powder_room.scss */
 body.inspiration .main #powder-room-header .subscribe-content .subscribe-box {
   background: url(../images/inspiration/subscribe-box-bg.jpg) repeat;
   padding: 40px 40px 25px;
 }
-/* line 33, ../sass/pages/_inspiration.scss */
+/* line 56, ../sass/pages/_the_powder_room.scss */
 body.inspiration .main #powder-room-header .subscribe-content .subscribe-box h3 {
   color: #2e2e2e;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 15px;
 }
-/* line 39, ../sass/pages/_inspiration.scss */
+/* line 62, ../sass/pages/_the_powder_room.scss */
+body.inspiration .main #powder-room-header .subscribe-content .subscribe-box form {
+  margin-bottom: 0;
+}
+/* line 64, ../sass/pages/_the_powder_room.scss */
+body.inspiration .main #powder-room-header .subscribe-content .subscribe-box form label.error {
+  color: #e40066;
+  position: absolute;
+  top: 54px;
+  font-size: 12px;
+  font-weight: 500;
+  left: 0;
+}
+/* line 73, ../sass/pages/_the_powder_room.scss */
 body.inspiration .main #powder-room-header .subscribe-content .subscribe-box input {
   background: #e2e1e1;
+  padding: 20px;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
@@ -2148,12 +2200,51 @@ body.inspiration .main #powder-room-header .subscribe-content .subscribe-box inp
   -moz-box-shadow: none;
   -ms-box-shadow: none;
   box-shadow: none;
+  font-size: 16px;
+  font-weight: 500;
+  height: 52px;
 }
-/* line 49, ../sass/pages/_inspiration.scss */
+/* line 84, ../sass/pages/_the_powder_room.scss */
+body.inspiration .main #powder-room-header .subscribe-content .subscribe-box button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  box-shadow: none;
+  height: 52px;
+  font-size: 16px;
+  font-weight: 500;
+  background: #d4d4d4;
+  color: #322f31;
+}
+/* line 94, ../sass/pages/_the_powder_room.scss */
+body.inspiration .main #powder-room-header .subscribe-content .subscribe-box button i {
+  font-size: 30px;
+  position: relative;
+  top: 4px;
+}
+/* line 103, ../sass/pages/_the_powder_room.scss */
 body.inspiration .main .inspWallHeader {
   margin-top: 0;
 }
-/* line 52, ../sass/pages/_inspiration.scss */
+/* line 106, ../sass/pages/_the_powder_room.scss */
 body.inspiration .main .inspWallwrapper {
   padding-top: 0;
+}
+/* line 109, ../sass/pages/_the_powder_room.scss */
+body.inspiration .main .prLogoWrap {
+  padding: 14px 0;
+}
+/* line 111, ../sass/pages/_the_powder_room.scss */
+body.inspiration .main .prLogoWrap .prLogoCaption {
+  font-weight: 500;
 }

@@ -38,10 +38,22 @@
 	      					<div class="col-sm-8">
 	      						<div class="subscribe-box">
 				      				<h3>Subscribe for weekly updates</h3>
-				      				<form action="/">
-				      					<input type="text" name="name" placeholder="Name"/>
-				      					<input type="email" name="email" placeholder="Email"/>
-				      					<button type="submit"><i class="fa fa-arrow-right"></i></button>
+				      				<form action="/" class="subscribe-form">
+				      					<div class="row">
+				      						<div class="col-md-6">
+				      							<div class="input-group">
+				      								<input type="text" class="form-control" name="name" placeholder="Name" required="required" />
+				      							</div>
+				      						</div>
+				      						<div class="col-md-6">
+				      							<div class="input-group">
+												      <input type="email" name="email" class="form-control" placeholder="Email" required="required"/>
+												      <span class="input-group-btn">
+												        <button class="btn btn-default" type="submit"><i class="icon-arrow-right"></i></button>
+												      </span>
+												    </div>
+				      						</div>
+				      					</div>
 				      				</form>
 				      			</div> 
 	      					</div>
@@ -216,7 +228,9 @@
 		  		"/assets/js/reece-ocnav.js",
 		  		"/assets/js/reece-carousel.js",
 		  		"/assets/js/jquery-ui-1.10.4.custom.min.js",
-		  		"/assets/js/reece-inspiration.js"
+		  		"/assets/js/reece-inspiration.js",
+		  		"js/vendor/jquery.validate.min.js",
+		  		"js/main.min.js"
 		  	); 
 		  	include_once($serverBase."/includes/foot/scripts.php");
 		?>

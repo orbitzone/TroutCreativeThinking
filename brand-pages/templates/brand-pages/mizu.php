@@ -124,22 +124,22 @@
       <div class="slides" data-slides-to-show="2" data-slides-to-scroll="2">
         <div class="slide">
           <figure class="image">
-            <a href=" http://www.reece.com.au/assets/brands/142000/mizu-brochure-V17.pdf" target="_blank">
+            <a href="http://www.reece.com.au/assets/brands/165000/mizu-bathrooms-brochure-V8.pdf" target="_blank">
               <img src="images/brand-pages/mizu/bathroom-brochure.jpg" width="170" alt="Mizu bathroom Brochure">  
             </a>
           </figure>
           <div class="text">
-            <a href=" http://www.reece.com.au/assets/brands/142000/mizu-brochure-V17.pdf" target="_blank" class="widget-link">Download bathroom brochure</a>
+            <a href="http://www.reece.com.au/assets/brands/165000/mizu-bathrooms-brochure-V8.pdf" target="_blank" class="widget-link">Download bathroom brochure</a>
           </div>
         </div>
         <div class="slide">
           <figure class="image">
-            <a href=" http://www.reece.com.au/assets/brands/142000/mizu-brochure-V17.pdf" target="_blank">
+            <a href="http://www.reece.com.au/assets/brands/165000/mizu-kitchen-laundry-sinks.pdf" target="_blank">
               <img src="images/brand-pages/mizu/kitchen-brochure.jpg" width="170" alt="Mizu kitchen brochure">  
             </a>
           </figure>
           <div class="text">
-            <a href=" http://www.reece.com.au/assets/brands/142000/mizu-brochure-V17.pdf" target="_blank" class="widget-link">Download kitchen brochure</a>
+            <a href="http://www.reece.com.au/assets/brands/165000/mizu-kitchen-laundry-sinks.pdf" target="_blank" class="widget-link">Download kitchen brochure</a>
           </div>
         </div>        
       </div>

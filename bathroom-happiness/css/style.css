@@ -2081,3 +2081,79 @@ body.homepage .site-footer {
     transform: rotate(-4deg);
   }
 }
+/* line 2, ../sass/pages/_inspiration.scss */
+body.inspiration .main {
+  font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* line 4, ../sass/pages/_inspiration.scss */
+body.inspiration .main #powder-room-header {
+  background: url(../images/inspiration/the-wall-bg.png);
+  padding: 60px 0 50px;
+}
+/* line 7, ../sass/pages/_inspiration.scss */
+body.inspiration .main #powder-room-header .container-fluid {
+  max-width: 1230px;
+}
+/* line 10, ../sass/pages/_inspiration.scss */
+body.inspiration .main #powder-room-header .subscribe-wrapper {
+  position: relative;
+}
+/* line 12, ../sass/pages/_inspiration.scss */
+body.inspiration .main #powder-room-header .subscribe-wrapper h2 {
+  position: absolute;
+  left: -15px;
+  top: -10px;
+  z-index: 2;
+  margin: 0;
+}
+/* line 20, ../sass/pages/_inspiration.scss */
+body.inspiration .main #powder-room-header .subscribe-content {
+  position: relative;
+  background: url(../images/inspiration/header-form-bg.jpg) left center;
+  padding: 30px;
+  margin-left: 80px;
+  padding-left: 170px;
+}
+/* line 26, ../sass/pages/_inspiration.scss */
+body.inspiration .main #powder-room-header .subscribe-content .text {
+  font-size: 20px;
+  font-weight: 500;
+}
+/* line 30, ../sass/pages/_inspiration.scss */
+body.inspiration .main #powder-room-header .subscribe-content .subscribe-box {
+  background: url(../images/inspiration/subscribe-box-bg.jpg) repeat;
+  padding: 40px 40px 25px;
+}
+/* line 33, ../sass/pages/_inspiration.scss */
+body.inspiration .main #powder-room-header .subscribe-content .subscribe-box h3 {
+  color: #2e2e2e;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+}
+/* line 39, ../sass/pages/_inspiration.scss */
+body.inspiration .main #powder-room-header .subscribe-content .subscribe-box input {
+  background: #e2e1e1;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  box-shadow: none;
+}
+/* line 49, ../sass/pages/_inspiration.scss */
+body.inspiration .main .inspWallHeader {
+  margin-top: 0;
+}
+/* line 52, ../sass/pages/_inspiration.scss */
+body.inspiration .main .inspWallwrapper {
+  padding-top: 0;
+}

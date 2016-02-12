@@ -13,7 +13,6 @@
     <script src='js/vendor/bootstrap.min.js' type='text/javascript'></script>
     <script src='js/vendor/slick.min.js' type='text/javascript'></script>
     <script src='js/vendor/jquery.validate.min.js' type='text/javascript'></script>
-
     <script src='js/main.min.js' type='text/javascript'></script>
   </head>
   <body class="homepage bathroom-happiness">

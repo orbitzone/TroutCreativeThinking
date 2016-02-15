@@ -1,9 +1,17 @@
-body.inspiration{
+body.the_powder_room{
 	.main{
 		overflow-x: hidden;
 		font-family: $font-family;
+		.logo{
+			@include transition(0.3s all ease-out);
+			@include transform(none);
+			display: block;
+			&:hover{
+				@include transform(scale(1.05));
+			}
+		}
 		#powder-room-header{
-			background: url(../images/inspiration/the-wall-bg.png);
+			background: url(../images/the_powder_room/the-wall-bg.png);
 			padding: 60px 0 40px;
 			.container-fluid{
 				max-width: 1206px;
@@ -30,7 +38,7 @@ body.inspiration{
 			}
 			.subscribe-content{
 				position: relative;
-				background: url(../images/inspiration/header-form-bg.jpg) left center;
+				background: url(../images/the_powder_room/header-form-bg.jpg) left center;
 				background-size: cover;
 				padding: 30px;
 				@media (min-width: $screen-sm-min) {
@@ -51,8 +59,8 @@ body.inspiration{
     			}
 				}				
 				.subscribe-box{
-					background: url(../images/inspiration/subscribe-box-bg.jpg) repeat;
-					padding: 40px 40px 25px;
+					background: url(../images/the_powder_room/subscribe-box-bg.jpg) repeat;
+					padding: 40px 40px 5px;
 					h3{
 						color: $light-black;
 						text-transform: uppercase;
@@ -69,6 +77,9 @@ body.inspiration{
 							font-weight: 500;
 							left: 0;
 						}
+						.input-group{
+							width: 100%;
+						}
 					}
 					input{
 						background: $grey;
@@ -80,6 +91,7 @@ body.inspiration{
 						font-size: 16px;
 						font-weight: 500;
 						height: 52px;
+						margin-bottom: 20px;
 					}
 					button{
 						@include appearance(none);
@@ -91,10 +103,19 @@ body.inspiration{
 						font-weight: 500;	
 						background: #d4d4d4;
 						color: #322f31;
+						margin-bottom: 20px;
+						@include transition(0.3s background ease-out);
 						i{
 							font-size: 30px;
 							position: relative;
 							top: 4px;
+							@include transition(0.3s color ease-out);
+						}
+						&:hover{
+							background: black;
+							i{
+								color: white;
+							}
 						}
 					}
 				}

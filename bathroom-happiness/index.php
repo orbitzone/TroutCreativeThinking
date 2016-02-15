@@ -86,8 +86,7 @@
                               Milli Axon
                             </div>
                             <p class="product-description">
-                              Basin Mixer<br/>
-                              Rose Gold/Black
+                              Basin Mixer Rose Gold/Black
                             </p>
                             <p class="product-price">
                               $699.99 <span class="product-price-gst">gst inc</span>
@@ -107,8 +106,7 @@
                               Milli Axon
                             </div>
                             <p class="product-description">
-                              Basin Mixer<br/>
-                              Rose Gold/Black
+                              Basin Mixer Rose Gold/Black
                             </p>
                             <p class="product-price">
                               $699.99 <span class="product-price-gst">gst inc</span>

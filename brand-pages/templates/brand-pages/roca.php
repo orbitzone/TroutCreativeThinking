@@ -1,5 +1,5 @@
 <div class="brand-pages">
-  <div class="container">
+  <div class="container-fluid">
     <!-- Begin: Logo Widget Start -->
     <div class="widget-logo">
       <header role="banner">
@@ -14,7 +14,7 @@
   </div>
 
 
-  <div class="container">
+  <div class="container-fluid">
     <div class="widget-html-image">
         <figure class="image">
           <a href="#">
@@ -25,7 +25,7 @@
   </div>
 
 
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-sm-4">
         <!-- Begin: HTML Widget-->  
@@ -81,7 +81,7 @@
     </div>
   </div>
 
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-xs-12">
         <!-- Begin: HTML-Image Widget-->
@@ -94,7 +94,7 @@
       </div>
     </div>
   </div>
-  <div class="container bg-grey bathroom-innovation-video">
+  <div class="container-fluid bg-grey bathroom-innovation-video">
     <div class="row">
       <div class="col-sm-8">
         <!-- Begin: Video Widget-->
@@ -156,7 +156,7 @@
   </div>
 
 
-  <div class="container brochure">
+  <div class="container-fluid brochure">
     <div class="row">
       <div class="col-xs-12">
         <!-- Begin: Slider/Carousel Widget Start-->
@@ -180,7 +180,7 @@
   </div>
 
 
-  <div class="container designers-header">
+  <div class="container-fluid designers-header">
     <!-- Begin: HTML Widget-->  
     <div class="widget-html-image">
       <div class="rte">
@@ -190,7 +190,7 @@
     </div>
     <!-- End: HTML Widget-->
   </div>
-  <div class="container product-range">
+  <div class="container-fluid product-range">
     <div class="row">
       <div class="col-sm-3">
         <!-- Begin: HTML-Image Widget-->
@@ -241,7 +241,7 @@
       </div>
     </div>
   </div>
-  <div class="container bg-grey intro-slider roca-design-centre">
+  <div class="container-fluid bg-grey intro-slider roca-design-centre">
     <!-- Begin: HTML Widget-->  
     <div class="widget-html-image">
       <div class="rte">
@@ -277,7 +277,7 @@
     </div>             
     <!-- End: Slider/Carousel Widget-->       
   </div>
-  <div class="container designers-header">
+  <div class="container-fluid designers-header">
     <!-- Begin: HTML Widget-->  
     <div class="widget-html-image">
       <div class="rte">
@@ -287,7 +287,7 @@
     </div>
     <!-- End: HTML Widget-->
   </div>
-  <div class="container designers">
+  <div class="container-fluid designers">
     <div class="row">
       <div class="col-sm-4">
         <!-- Begin: HTML Widget-->  
@@ -332,7 +332,7 @@
   </div>
 
 
-  <div class="container">
+  <div class="container-fluid">
     <!-- Begin: Video Tabs Widget-->
     <div class="widget-video-tabs">
       <div class="tabs-wrapper">

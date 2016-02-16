@@ -1,5 +1,5 @@
 <div class="brand-pages">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-xs-12">
         <!-- Begin: Logo Widget Start -->
@@ -14,7 +14,7 @@
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-sm-6">
         <!-- Begin: HTML Widget-->  
@@ -36,7 +36,7 @@
       </div>
     </div>
   </div>
-  <div class="container bg-grey">
+  <div class="container-fluid bg-grey">
     <div class="row">
       <div class="col-xs-12">
         <!-- Begin: Video Widget-->
@@ -70,7 +70,7 @@
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-sm-12">
         <!-- Begin: HTML Widget-->  
@@ -93,7 +93,7 @@
     </div>
   </div>
 
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-sm-12">
         <!-- Begin: HTML Widget-->  
@@ -108,7 +108,7 @@
       </div>
     </div>
   </div>
-  <div class="container product-profiles-title">
+  <div class="container-fluid product-profiles-title">
     <div class="row">
       <div class="col-sm-12">
         <!-- Begin: HTML Widget-->  
@@ -121,7 +121,7 @@
       </div>
     </div>
   </div>
-  <div class="container product-profiles">
+  <div class="container-fluid product-profiles">
     <div class="row">
       <div class="col-sm-6">
         <!-- Begin: HTML Widget-->  
@@ -149,7 +149,7 @@
       </div>
     </div>
   </div>
-  <div class="container case-studies-title">
+  <div class="container-fluid case-studies-title">
     <div class="row">
       <div class="col-sm-12">
         <!-- Begin: HTML Widget-->  
@@ -162,7 +162,7 @@
       </div>
     </div>
   </div>
-  <div class="container case-studies">
+  <div class="container-fluid case-studies">
     <div class="row">
       <div class="col-sm-6">
         <!-- Begin: HTML Widget-->  
@@ -190,7 +190,7 @@
       </div>
     </div>
   </div>
-  <div class="container case-studies">
+  <div class="container-fluid case-studies">
     <div class="row">
       <div class="col-sm-6">
         <!-- Begin: HTML Widget-->  
@@ -218,7 +218,7 @@
       </div>
     </div>
   </div>
-  <div class="container manufacturing-title">
+  <div class="container-fluid manufacturing-title">
     <div class="row">
       <div class="col-sm-12">
         <!-- Begin: HTML Widget-->  
@@ -239,7 +239,7 @@
       </div>
     </div>
   </div>
-  <div class="container manufacturing">
+  <div class="container-fluid manufacturing">
     <div class="row">
       <div class="col-xs-4">
         <!-- Begin: HTML Widget-->  
@@ -276,7 +276,7 @@
       </div>
     </div>
   </div>
-  <div class="container bottom-links padding-less">
+  <div class="container-fluid bottom-links padding-less">
     <div class="row">
       <div class="col-sm-6">
         <!-- Begin: HTML Widget-->  

@@ -1,5 +1,5 @@
 <div class="brand-pages">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-xs-12">
         <!-- Begin: Logo Widget Start -->
@@ -14,7 +14,7 @@
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-sm-12">
         <!-- Begin: HTML Widget-->  
@@ -40,7 +40,7 @@
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-sm-6">
         <!-- Begin: HTML Widget-->  
@@ -62,7 +62,7 @@
       </div>
     </div>
   </div>
-  <div class="container case-studies-title">
+  <div class="container-fluid case-studies-title">
     <div class="row">
       <div class="col-sm-12">
         <!-- Begin: HTML Widget-->  
@@ -75,7 +75,7 @@
       </div>
     </div>
   </div>
-  <div class="container case-studies">
+  <div class="container-fluid case-studies">
     <div class="row">
       <div class="col-sm-6">
         <!-- Begin: HTML Widget-->  
@@ -101,7 +101,7 @@
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-xs-12">
       <!-- Begin: HTML Widget-->  

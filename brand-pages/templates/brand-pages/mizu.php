@@ -1,5 +1,5 @@
 <div class="brand-pages">
-  <div class="container">
+  <div class="container-fluid">
     <!-- Begin: Logo Widget Start -->
     <div class="widget-logo">
       <header role="banner">
@@ -14,7 +14,7 @@
   </div>
 
 
-  <div class="container bg-grey">
+  <div class="container-fluid bg-grey">
     <!-- Begin: HTML Widget-->  
         <div class="widget-html-image">
           <figure class="image">
@@ -25,7 +25,7 @@
         </div>
         <!-- End: HTML Widget-->
   </div>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-sm-12">
         <!-- Begin: HTML Widget-->  
@@ -47,7 +47,7 @@
     </div>
   </div>
 
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-sm-12">
         <!-- Begin: HTML Widget-->  
@@ -118,7 +118,7 @@
     </div>
   </div>
 
-  <div class="container bg-brown">
+  <div class="container-fluid bg-brown">
     <!-- Begin: Slider/Carousel Widget Start-->
     <div class="widget-slider carousel">
       <div class="slides" data-slides-to-show="2" data-slides-to-scroll="2">
@@ -148,7 +148,7 @@
   </div>
 
 
-  <div class="container">
+  <div class="container-fluid">
     <!-- Begin: Video Tabs Widget-->
     <div class="widget-video-tabs">
       <div class="tabs-wrapper">

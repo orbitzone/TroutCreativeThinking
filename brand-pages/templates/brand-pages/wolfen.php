@@ -1,5 +1,5 @@
 <div class="brand-pages">
-  <div class="container logo bg-green">
+  <div class="container-fluid logo bg-green">
     <div class="row">
       <div class="col-xs-12">
         <!-- Begin: Logo Widget Start -->
@@ -16,7 +16,7 @@
       </div>
     </div>    
   </div>
-  <div class="container intro-slider">
+  <div class="container-fluid intro-slider">
     <div class="row">
       <div class="col-xs-12">
         <!-- Begin: Slider/Carousel Widget Start-->
@@ -38,7 +38,7 @@
       </div>
     </div>
   </div>
-  <div class="container characteristics bg-green">
+  <div class="container-fluid characteristics bg-green">
     <div class="row">
       <div class="col-sm-4">
         <!-- Begin: HTML Widget-->  
@@ -84,7 +84,7 @@
       </div>
     </div>
   </div>
-  <div class="container feature-products-title">
+  <div class="container-fluid feature-products-title">
     <!-- Begin: HTML Widget-->  
       <div class="widget-html-image">
         <div class="rte">
@@ -93,7 +93,7 @@
       </div>
     <!-- End: HTML Widget-->
   </div>
-   <div class="container feature-products">
+   <div class="container-fluid feature-products">
     <div class="row">
       <div class="col-sm-6 col-md-3">
         <!-- Begin: HTML Widget-->  
@@ -161,7 +161,7 @@
       </div>
     </div>
   </div>
-  <div class="container the-wolfen-difference bg-grey">
+  <div class="container-fluid the-wolfen-difference bg-grey">
     <!-- Begin: HTML Widget-->  
       <div class="widget-html-image">
         <div class="rte">
@@ -172,7 +172,7 @@
       </div>
     <!-- End: HTML Widget-->
   </div>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-sm-6">
         <!-- Begin: HTML Widget-->  

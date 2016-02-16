@@ -1,5 +1,5 @@
 <div class="brand-pages">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-xs-12">
         <!-- Begin: Logo Widget Start -->
@@ -16,7 +16,7 @@
   </div>
 
 
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-xs-12">
         <!-- Begin: HTML Widget-->  
@@ -31,7 +31,7 @@
       </div>
     </div>        
   </div>
-  <div class="container frases">
+  <div class="container-fluid frases">
     <div class="row">
       <div class="col-sm-4">
         <!-- Begin: HTML Widget-->  
@@ -84,7 +84,7 @@
     </div>
   </div>
 
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-sm-6">
         <!-- Begin: Video Widget-->
@@ -129,7 +129,7 @@
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-xs-12">
       <!-- Begin: HTML Widget-->  
@@ -142,7 +142,7 @@
       </div>
     </div>
   </div>
-  <div class="container padding-less">
+  <div class="container-fluid padding-less">
     <div class="row">
       <div class="col-sm-6">
         <!-- Begin: HTML Widget-->  
@@ -166,7 +166,7 @@
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-xs-12">
       <!-- Begin: HTML Widget-->  
@@ -179,7 +179,7 @@
       </div>
     </div>
   </div>
-  <div class="container padding-less">
+  <div class="container-fluid padding-less">
     <div class="row">
       <div class="col-sm-6">
         <!-- Begin: HTML Widget-->  
@@ -203,7 +203,7 @@
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-xs-12">
       <!-- Begin: HTML Widget-->  
@@ -217,7 +217,7 @@
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-xs-12">
       <!-- Begin: HTML Widget-->  
@@ -235,7 +235,7 @@
       </div>
     </div>
   </div>
-  <div class="container history">
+  <div class="container-fluid history">
     <div class="row">
       <div class="col-xs-12">
       <!-- Begin: HTML Widget-->  
@@ -249,7 +249,7 @@
       </div>
     </div>
   </div>
-  <div class="container history">
+  <div class="container-fluid history">
     <div class="row">
       <div class="col-sm-6">
         <!-- Begin: HTML Widget-->  
@@ -277,7 +277,7 @@
       </div>
     </div>
   </div>
-  <div class="container history">
+  <div class="container-fluid history">
     <div class="row">
       <div class="col-sm-6">
         <!-- Begin: HTML Widget-->  
@@ -305,7 +305,7 @@
       </div>
     </div>
   </div>
-  <div class="container history">
+  <div class="container-fluid history">
     <div class="row">
       <div class="col-sm-6">
         <!-- Begin: HTML Widget-->  

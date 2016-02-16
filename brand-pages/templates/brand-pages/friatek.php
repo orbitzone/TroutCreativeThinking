@@ -1,5 +1,5 @@
 <div class="brand-pages">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-xs-12">
             <!-- Begin: Logo Widget Start -->
@@ -16,7 +16,7 @@
           </div>
         </div>        
       </div>    
-      <div class="container bg-grey intro-slider">
+      <div class="container-fluid bg-grey intro-slider">
         <div class="row">
           <div class="col-xs-12">
             <!-- Begin: Slider/Carousel Widget Start-->
@@ -48,7 +48,7 @@
           </div>          
         </div>
       </div>
-      <div class="container intro-summary">
+      <div class="container-fluid intro-summary">
         <div class="row">
           <div class="col-xs-12">
             <!-- Begin: HTML Widget-->  
@@ -61,7 +61,7 @@
           </div>        
         </div>
       </div>
-      <div class="container bg-grey">
+      <div class="container-fluid bg-grey">
         <div class="row">
           <div class="col-xs-12">
             <!-- Begin: Video Widget-->  
@@ -95,7 +95,7 @@
           </div>          
         </div>        
       </div>
-      <div class="container trio">
+      <div class="container-fluid trio">
         <div class="row">
           <div class="col-sm-4">
             <!-- Begin: HTML Widget-->  
@@ -140,7 +140,7 @@
           </div>
         </div>
       </div>
-      <div class="container bg-grey friamat-container">
+      <div class="container-fluid bg-grey friamat-container-fluid">
         <div class="row">
           <div class="col-sm-6">
             <!-- Begin: HTML Widget-->  
@@ -166,7 +166,7 @@
           </div>         
         </div>
       </div> 
-      <div class="container downloads">
+      <div class="container-fluid downloads">
         <div class="row">
           <div class="col-sm-6">
             <!-- Begin: HTML Widget-->  

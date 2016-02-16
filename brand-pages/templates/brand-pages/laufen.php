@@ -1,5 +1,5 @@
 <div class="brand-pages">
-  <div class="container">
+  <div class="container-fluid">
     <!-- Begin: Logo Widget Start -->
     <div class="widget-logo">
       <header role="banner">
@@ -14,7 +14,7 @@
   </div>
 
 
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-xs-12">
         <div class="widget-block-five">
@@ -44,7 +44,7 @@
   </div>
 
 
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-sm-4">
         <!-- Begin: HTML Widget-->  
@@ -101,7 +101,7 @@
   </div>
 
 
-  <div class="container videos">
+  <div class="container-fluid videos">
     <div class="row no-padding">
       <div class="col-sm-6 no-padding">
         <!-- Begin: Video Widget-->
@@ -173,7 +173,7 @@
   </div>
 
 
-  <div class="container bg-grey">
+  <div class="container-fluid bg-grey">
     <div class="row">
       <div class="col-xs-12">
         <!-- Begin: Slider/Carousel Widget Start-->
@@ -217,7 +217,7 @@
   </div>
 
 
-  <div class="container designers-header">
+  <div class="container-fluid designers-header">
     <div class="row">
       <div class="col-xs-12">
         <!-- Begin: HTML Widget-->  
@@ -233,7 +233,7 @@
   </div>
 
 
-  <div class="container designers">
+  <div class="container-fluid designers">
     <div class="row">
       <div class="col-sm-6 col-md-offset-1 col-md-5">
         <!-- Begin: HTML Widget-->  
@@ -293,7 +293,7 @@
   </div>
 
 
-  <div class="container">
+  <div class="container-fluid">
     <!-- Begin: Video Tabs Widget-->
     <div class="widget-video-tabs">
       <div class="tabs-wrapper">

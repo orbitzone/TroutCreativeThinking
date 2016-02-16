@@ -9,12 +9,16 @@ div.brand-pages {
   font-weight: 300;
   overflow-x: hidden;
 }
+div.brand-pages .container-fluid {
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  div.brand-pages .container-fluid {
+    margin-bottom: 60px;
+  }
+}
 div.brand-pages .rte {
   text-align: left;
-}
-div.brand-pages h3 {
-  color: black;
-  font-size: 36px;
 }
 div.brand-pages .half {
   margin-bottom: 30px;
@@ -25,6 +29,8 @@ div.brand-pages h3 {
   text-align: left;
   max-width: 290px;
   position: relative;
+  font-size: 36px;
+  margin-bottom: 60px;
 }
 div.brand-pages h3:after {
   content: " ";
@@ -38,12 +44,18 @@ div.brand-pages .tradition .rte,
 div.brand-pages .adaptors .rte {
   max-width: 670px;
 }
+div.brand-pages .testimonial p {
+  line-height: 20px;
+}
+div.brand-pages .testimonial .widget-html-image {
+  padding: 20px 0;
+}
 div.brand-pages .testimonial:before,
 div.brand-pages .testimonial:after {
   display: block;
   content: " ";
   height: 5px;
-  background: #888888;
+  background: #cacaca;
   width: 70px;
   margin: 0 auto;
 }
@@ -56,10 +68,86 @@ div.brand-pages .testimonial .rte h4 {
   text-transform: uppercase;
   font-size: 36px;
 }
+div.brand-pages .products {
+  margin-bottom: 20px;
+}
+div.brand-pages .products .row {
+  margin-left: -25px;
+  margin-right: -25px;
+}
+div.brand-pages .products .row .col-sm-6,
+div.brand-pages .products .row .col-sm-12 {
+  padding: 0 25px;
+}
+div.brand-pages .products .widget-html-image {
+  margin-bottom: 50px;
+}
+div.brand-pages .plumbers .widget-html-image {
+  background: url(../../images/brand-pages/auspex/bg-pattern.png);
+  padding: 60px;
+}
+div.brand-pages .plumbers .widget-html-image .rte h3 {
+  color: white;
+  margin: 0;
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 60px;
+}
+div.brand-pages .plumbers .widget-html-image .rte h3:after {
+  width: 5px;
+  height: 68px;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  margin: 0;
+}
+div.brand-pages .image-placeholder .image {
+  margin-bottom: 0;
+}
+div.brand-pages .downloads {
+  margin-bottom: 0;
+}
+div.brand-pages .downloads .row {
+  margin-left: -1px;
+  margin-right: -1px;
+}
+div.brand-pages .downloads .row .col-sm-6 {
+  padding: 0 1px;
+}
 div.brand-pages .downloads .left .rbp-icon:before {
   content: "\6c";
 }
 div.brand-pages .downloads .right .rbp-icon:before {
+  content: "c";
+}
+div.brand-pages .widget-big-button {
+  background: #16abe0;
+  padding-top: 114px;
+  padding-bottom: 100px;
+}
+div.brand-pages .widget-big-button a {
+  text-align: center;
+  display: block;
+}
+div.brand-pages .widget-big-button a .icon {
+  line-height: 1;
+}
+div.brand-pages .widget-big-button a .text {
+  text-align: center;
+  text-transform: none;
+  font-size: 16px;
+  font-weight: 300;
+}
+div.brand-pages .widget-big-button.left i {
+  font-size: 30px;
+}
+div.brand-pages .widget-big-button.left i:before {
+  content: "d";
+}
+div.brand-pages .widget-big-button.right i {
+  font-size: 30px;
+}
+div.brand-pages .widget-big-button.right i:before {
   content: "c";
 }
 .widget-html-image {
@@ -87,14 +175,17 @@ div.brand-pages .downloads .right .rbp-icon:before {
 .widget-logo {
   padding-top: 0;
 }
-.widget-block-five .text {
-  font-size: 20px;
-}
 .widget-video {
   overflow: hidden;
 }
 .widget-video .slick-slider .slick-slide.slide-video {
   background: black;
+}
+.widget-video .slick-slider .slick-slide button.close {
+  top: 0;
+  right: 0;
+  padding: 5px;
+  background: #16abe0;
 }
 .widget-video .slick-slider .slick-slide button.close i {
   color: white;
@@ -103,12 +194,57 @@ div.brand-pages .downloads .right .rbp-icon:before {
 .widget-video .slick-slider .slick-slide .play:hover .label {
   text-decoration: underline;
 }
-.designers-header {
-  margin-bottom: 0;
+.widget-video .slick-slider .slick-slide .play i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: url(../../images/brand-pages/auspex/play-btn.png) no-repeat;
+  display: block;
+  margin-left: -34.5px;
+  margin-top: -34.5px;
+  background-size: 69px 69px;
+  width: 69px;
+  height: 69px;
 }
-.designers-header .rte {
-  max-width: 620px;
-  margin: 0 auto;
+@media (min-width: 768px) {
+  .widget-video .slick-slider .slick-slide .play i {
+    margin-left: -69px;
+    margin-top: -69px;
+    background-size: 138px 138px;
+    width: 138px;
+    height: 138px;
+  }
+}
+.widget-video .slick-slider .slick-slide .play i:before {
+  display: none;
+}
+.widget-video .slick-slider .slick-slide .play .label {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 32px;
+  max-width: 315px;
+  padding: 0;
+  white-space: inherit;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  .widget-video .slick-slider .slick-slide .play .label {
+    font-size: 40px;
+  }
+}
+.widget-video .slick-slider .slick-slide .slide-content {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
 }
 .widget-slider .slick-slider .slick-next:before,
 .widget-slider .slick-slider .slick-prev:before {
@@ -151,44 +287,4 @@ div.brand-pages .downloads .right .rbp-icon:before {
 }
 .widget-slider.carousel .slick-slider .slick-slide {
   padding: 0 20px;
-}
-.widget-video-tabs a {
-  color: black;
-}
-.widget-video-tabs .tabs-content {
-  background: #f3f3f3;
-  padding: 60px 30px 20px;
-}
-.widget-video-tabs .tabs-content .intro {
-  max-width: 610px;
-  color: black;
-}
-.widget-video-tabs .tabs-list .active-menu .text {
-  background: #f3f3f3;
-}
-.widget-video-tabs .tabs-list a {
-  text-decoration: none;
-}
-.widget-video-tabs .tabs-list a:hover {
-  background: #f9f9f9;
-}
-.widget-video-tabs .tabs-list a.active {
-  background: #f3f3f3;
-}
-.widget-video-tabs .video .description {
-  line-height: 1;
-  color: black;
-  font-size: 14px;
-}
-.bg-brown {
-  margin-bottom: 70px;
-}
-.bg-brown .widget-slider {
-  background: #5c5753;
-  margin: 0;
-  padding: 60px 15px;
-}
-.bg-brown a {
-  color: white;
-  border-color: white;
 }

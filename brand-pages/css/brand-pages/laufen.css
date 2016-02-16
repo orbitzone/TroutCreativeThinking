@@ -27,6 +27,9 @@ div.brand-pages .bg-grey .widget-slider {
 div.brand-pages .videos {
   margin-bottom: 0;
 }
+div.brand-pages .videos img {
+  width: 100%;
+}
 div.brand-pages .widget-block-five .text {
   font-size: 20px;
 }

@@ -1,5 +1,5 @@
 <div class="brand-pages">
-  <div class="container">
+  <div class="container-fluid">
     <!-- Begin: Logo Widget Start -->
     <div class="widget-logo">
       <header role="banner">
@@ -13,7 +13,7 @@
     <!-- End:  Logo widget -->
   </div>
 
-  <div class="container tradition">
+  <div class="container-fluid tradition">
     <div class="row">
       <div class="col-sm-12">
         <!-- Begin: HTML Widget-->  
@@ -35,7 +35,7 @@
     </div>
   </div>
 
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-xs-12">
         <!-- Begin: Video Widget-->  
@@ -48,7 +48,7 @@
               <div class="slide-content">
                 <button type="button" class="play" data-video="8yLxMPSjtA8">
                   <i class="rbp-icon"></i>
-                  <span class="label">John and Glenn Bines</span>  
+                  <span class="label">John &amp; Glenn Bines</span>  
                 </button>  
               </div>
             </div>
@@ -69,7 +69,7 @@
     </div>
   </div>
     
-  <div class="container">
+  <div class="container-fluid products">
     <div class="row">
       <div class="col-sm-12">
         <!-- Begin: HTML Widget-->  
@@ -140,7 +140,7 @@
     </div>
   </div>
 
-  <div class="container testimonial">
+  <div class="container-fluid testimonial">
     <div class="row">
       <div class="col-xs-12">
         <!-- Begin: HTML Widget-->  
@@ -162,7 +162,29 @@
       </div>
     </div>
   </div>
-  <div class="container adaptors">
+  <div class="container-fluid plumbers">
+    <div class="row">
+      <div class="col-sm-12">
+        <!-- Begin: HTML Widget-->  
+        <div class="widget-html-image">
+          <!-- If no image dont show
+          <figure class="image">
+            <a href="#">
+            <img />
+            </a>
+          </figure>
+          -->
+          <div class="rte">
+            <h3>Plumbers talk Auspex</h3>
+            <p>Insgructions go here</p>
+            <iframe width="100%" height="640" src="https://www.youtube.com/embed/5limptUJjg4?list=PLglmbsfbBFlmaa6FiVQeL9CYL3oeFIjQT" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+        <!-- End: HTML Widget-->
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid adaptors">
     <div class="row">
       <div class="col-sm-12">
         <!-- Begin: HTML Widget-->  
@@ -183,7 +205,7 @@
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="container-fluid image-placeholder">
     <div class="row">
       <div class="col-xs-12">
         <!-- Begin: HTML Widget-->  
@@ -199,7 +221,7 @@
       </div>
     </div>
   </div>
-  <div class="container downloads">
+  <div class="container-fluid downloads">
     <div class="row">
       <div class="col-sm-6">
         <!-- Begin: HTML Widget-->  

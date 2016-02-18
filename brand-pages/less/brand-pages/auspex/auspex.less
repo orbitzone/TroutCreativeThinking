@@ -3,6 +3,22 @@
 @import "../../../bower_components/bootstrap/less/variables.less";
 @import "_variables.less";
 
+@font-face {
+  font-family: "FlamaBlack";
+  src:url("../../fonts/Flama-Black.eot");
+  src:url("../../fonts/Flama-Black.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/Flama-Black.woff") format("woff");    
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FlamaLight";
+  src:url("../../fonts/Flama-Light.eot");
+  src:url("../../fonts/Flama-Light.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/Flama-Light.woff") format("woff");    
+  font-weight: normal;
+  font-style: normal;
+}
 
 div.brand-pages{
 	text-align: center;
@@ -11,6 +27,10 @@ div.brand-pages{
 	line-height: 2;
 	font-weight: 300;
 	overflow-x: hidden;
+	font-family: 'Neue Helvetica W01', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	-webkit-font-smoothing: antialiased; 
+  font-smoothing: antialiased; 
+  text-rendering: optimizeLegibility;
 	.container-fluid{
 		margin-bottom: 30px;
 		@media (min-width: 768px){
@@ -23,7 +43,11 @@ div.brand-pages{
 	.half{
 		margin-bottom: 30px;	
 	}
+	h1,h2,h4{
+		font-family: "FlamaBlack";
+	}
 	h3{
+		font-family: "FlamaBlack";
 		text-transform: uppercase;
 		color: #cacaca;		
 		text-align: left;
@@ -95,7 +119,7 @@ div.brand-pages{
 					margin: 0;
 					padding-left: 20px;
 					position: relative;
-						margin-bottom: 60px;
+					margin-bottom: 30px;
 					&:after{
 						width: 5px;
 						height: 68px;
@@ -184,6 +208,7 @@ div.brand-pages{
 			padding-left: 30px;
 			line-height: 1.3;
 			font-weight: 500;
+			font-weight: bold;
 			.transform(none);
 			color: white;
 			font-size: 25px;				
@@ -213,7 +238,7 @@ div.brand-pages{
 				&:hover{
 					.text,
 					.label{
-						text-decoration: underline;
+						text-decoration: underline;						
 					}
 				}
 				i{
@@ -251,6 +276,7 @@ div.brand-pages{
 					padding: 0;
 					white-space: inherit;
 					text-align: left;
+					font-family: "FlamaBlack";
 					@media (min-width: 768px){
 						font-size: 40px;
 					}

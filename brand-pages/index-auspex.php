@@ -20,6 +20,7 @@
     <link rel="stylesheet" type="text/css" href="css/reece-global.css" />
     <link rel="stylesheet" type="text/css" href="css/brand-pages/widgets.css" />
     <link rel="stylesheet" type="text/css" href="css/brand-pages/auspex.css" />
+    <script type="text/javascript" src="http://fast.fonts.net/jsapi/f6c4cea9-439f-4621-a51a-4d6e6dfc74b7.js"></script>
   </head>
   <body class="brand-pages">
     <div class="ocmain-wrapper">

@@ -46,7 +46,7 @@
                 <img src="images/brand-pages/auspex/john-glenn-bines.jpg" alt="John and Glenn Bines">
               </div>
               <div class="slide-content">
-                <button type="button" class="play" data-video="8yLxMPSjtA8">
+                <button type="button" class="play" data-video="bum8SI1FsDs">
                   <i class="rbp-icon"></i>
                   <span class="label">John &amp; Glenn Bines</span>  
                 </button>  
@@ -176,7 +176,7 @@
           -->
           <div class="rte">
             <h3>Plumbers talk Auspex</h3>
-            <p>Insgructions go here</p>
+            <p>Insgructions go here<br/><br/></p>
             <iframe width="100%" height="640" src="https://www.youtube.com/embed/5limptUJjg4?list=PLglmbsfbBFlmaa6FiVQeL9CYL3oeFIjQT" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>

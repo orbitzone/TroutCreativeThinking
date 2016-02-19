@@ -48,7 +48,7 @@
               <div class="slide-content">
                 <button type="button" class="play" data-video="bum8SI1FsDs">
                   <i class="rbp-icon"></i>
-                  <span class="label">John &amp; Glenn Bines</span>  
+                  <span class="label">John &amp; Glenn<br/> Bines</span>  
                 </button>  
               </div>
             </div>

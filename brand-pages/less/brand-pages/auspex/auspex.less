@@ -54,7 +54,11 @@ div.brand-pages{
 		max-width: 290px;
 		position: relative;
 		font-size: 36px;
-		margin-bottom: 60px;
+			margin-bottom: 30px;
+		@media (min-width: 768px){
+			font-size: 36px;
+			margin-bottom: 60px;
+		}
 		&:after{
 			content: " ";
 			display: block;
@@ -92,7 +96,10 @@ div.brand-pages{
 				margin: 0;
 				color: @blue;
 				text-transform: uppercase;
-				font-size: 36px;
+				font-size: 28px;
+				@media (min-width: 768px){
+					font-size: 36px;
+				}
 			}
 		}
 	}
@@ -109,10 +116,22 @@ div.brand-pages{
 			margin-bottom: 50px;
 		}
 	}
+	.john-glenn-video{
+		.widget-video{
+			.play{
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
 	.plumbers{
 		.widget-html-image{
 			background: url(../../images/brand-pages/auspex/bg-pattern.png);
-			padding: 60px;
+			padding: 60px 30px;
+			@media (min-width: 768px){
+				padding: 60px;
+			}
 			.rte{
 				h3{
 					color: white;
@@ -129,6 +148,12 @@ div.brand-pages{
 						margin: 0;
 					}
 				}
+			}
+		}
+		iframe{
+			height: 160px;
+			@media (min-width: 768px){
+				height: 640px;
 			}
 		}
 	}

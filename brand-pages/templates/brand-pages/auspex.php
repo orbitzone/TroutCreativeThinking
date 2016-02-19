@@ -35,7 +35,7 @@
     </div>
   </div>
 
-  <div class="container-fluid">
+  <div class="container-fluid john-glenn-video">
     <div class="row">
       <div class="col-xs-12">
         <!-- Begin: Video Widget-->  
@@ -177,7 +177,7 @@
           <div class="rte">
             <h3>Plumbers talk Auspex</h3>
             <p>Insgructions go here<br/><br/></p>
-            <iframe width="100%" height="640" src="https://www.youtube.com/embed/5limptUJjg4?list=PLglmbsfbBFlmaa6FiVQeL9CYL3oeFIjQT" frameborder="0" allowfullscreen></iframe>
+            <iframe width="100%" src="https://www.youtube.com/embed/5limptUJjg4?list=PLglmbsfbBFlmaa6FiVQeL9CYL3oeFIjQT" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
         <!-- End: HTML Widget-->

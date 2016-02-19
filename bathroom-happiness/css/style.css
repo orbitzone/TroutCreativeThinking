@@ -342,53 +342,55 @@ body.bathroom-happiness {
 body.bathroom-happiness .main {
   font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
 }
 @media (min-width: 1200px) {
-  /* line 9, ../sass/_global.scss */
+  /* line 11, ../sass/_global.scss */
   body.bathroom-happiness .main .container-fluid {
     padding: 0;
   }
 }
 @media (min-width: 768px) {
-  /* line 9, ../sass/_global.scss */
+  /* line 11, ../sass/_global.scss */
   body.bathroom-happiness .main .container-fluid {
     max-width: 768px;
   }
 }
 @media (min-width: 992px) {
-  /* line 9, ../sass/_global.scss */
+  /* line 11, ../sass/_global.scss */
   body.bathroom-happiness .main .container-fluid {
     max-width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 9, ../sass/_global.scss */
+  /* line 11, ../sass/_global.scss */
   body.bathroom-happiness .main .container-fluid {
     max-width: 1200px;
   }
 }
-/* line 25, ../sass/_global.scss */
+/* line 27, ../sass/_global.scss */
 body.bathroom-happiness optgroup {
   color: #000;
   font-weight: bold;
   font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-/* line 30, ../sass/_global.scss */
+/* line 32, ../sass/_global.scss */
 body.bathroom-happiness h1,
 body.bathroom-happiness h2,
 body.bathroom-happiness h3 {
   font-weight: 700;
 }
-/* line 35, ../sass/_global.scss */
+/* line 37, ../sass/_global.scss */
 body.bathroom-happiness p {
   margin-bottom: 1em;
 }
-/* line 38, ../sass/_global.scss */
+/* line 40, ../sass/_global.scss */
 body.bathroom-happiness img {
   max-width: 100%;
 }
-/* line 41, ../sass/_global.scss */
+/* line 43, ../sass/_global.scss */
 body.bathroom-happiness .form-control {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -397,18 +399,18 @@ body.bathroom-happiness .form-control {
   height: 44px;
 }
 @-moz-document url-prefix() {
-  /* line 47, ../sass/_global.scss */
+  /* line 49, ../sass/_global.scss */
   body.bathroom-happiness .selectpicker select.form-control {
     -moz-appearance: none;
     text-indent: 0.01px;
     text-overflow: '';
   }
 }
-/* line 54, ../sass/_global.scss */
+/* line 56, ../sass/_global.scss */
 body.bathroom-happiness select::-ms-expand {
   display: none;
 }
-/* line 58, ../sass/_global.scss */
+/* line 60, ../sass/_global.scss */
 body.bathroom-happiness select::-ms-value {
   background: none;
 }
@@ -417,7 +419,7 @@ body.bathroom-happiness select::-ms-value {
   body.bathroom-happiness {
     /* Remove purple highlight in HC mode */
   }
-  /* line 64, ../sass/_global.scss */
+  /* line 66, ../sass/_global.scss */
   body.bathroom-happiness select:focus::-ms-value {
     background-color: transparent;
   }
@@ -427,28 +429,28 @@ body.bathroom-happiness select::-ms-value {
   body.bathroom-happiness {
     /* Remove blue highlight in Normal mode*/
   }
-  /* line 70, ../sass/_global.scss */
+  /* line 72, ../sass/_global.scss */
   body.bathroom-happiness select:focus::-ms-value {
     background-color: transparent;
   }
 }
-/* line 75, ../sass/_global.scss */
+/* line 77, ../sass/_global.scss */
 body.bathroom-happiness input[type=number]::-webkit-outer-spin-button,
 body.bathroom-happiness input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-/* line 81, ../sass/_global.scss */
+/* line 83, ../sass/_global.scss */
 body.bathroom-happiness input[type=number] {
   -moz-appearance: textfield;
 }
-/* line 86, ../sass/_global.scss */
+/* line 88, ../sass/_global.scss */
 body.bathroom-happiness .form-inline .selectpicker {
   display: -moz-inline-stack;
   display: inline-block;
   *display: inline;
 }
-/* line 93, ../sass/_global.scss */
+/* line 95, ../sass/_global.scss */
 body.bathroom-happiness .panel {
   background-color: #fff;
   border: none;
@@ -456,55 +458,55 @@ body.bathroom-happiness .panel {
   box-shadow: none;
   margin-bottom: 10px;
 }
-/* line 102, ../sass/_global.scss */
+/* line 104, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow {
   position: relative;
   height: 335px;
 }
 @media (min-width: 992px) {
-  /* line 102, ../sass/_global.scss */
+  /* line 104, ../sass/_global.scss */
   body.bathroom-happiness .panel-slideshow {
     height: 351px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 102, ../sass/_global.scss */
+  /* line 104, ../sass/_global.scss */
   body.bathroom-happiness .panel-slideshow {
     height: 335px;
   }
 }
-/* line 112, ../sass/_global.scss */
+/* line 114, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow .slideshow-container {
   height: 273px;
   padding-top: 10px;
 }
 @media (min-width: 992px) {
-  /* line 112, ../sass/_global.scss */
+  /* line 114, ../sass/_global.scss */
   body.bathroom-happiness .panel-slideshow .slideshow-container {
     height: 290px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 112, ../sass/_global.scss */
+  /* line 114, ../sass/_global.scss */
   body.bathroom-happiness .panel-slideshow .slideshow-container {
     height: 273px;
   }
 }
-/* line 125, ../sass/_global.scss */
+/* line 127, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow .slide .slide-content a {
   display: block;
   text-align: left;
   text-decoration: none;
 }
-/* line 130, ../sass/_global.scss */
+/* line 132, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow .slide .slide-content .slide-image {
   text-align: center;
 }
-/* line 132, ../sass/_global.scss */
+/* line 134, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow .slide .slide-content .slide-image img {
   margin: 0 auto;
 }
-/* line 137, ../sass/_global.scss */
+/* line 139, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow .slide .slide-content .slide-text {
   padding-left: 120px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -512,29 +514,30 @@ body.bathroom-happiness .panel-slideshow .slide .slide-content .slide-text {
   font-weight: 400;
   color: #202020;
 }
-/* line 143, ../sass/_global.scss */
+/* line 145, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow .slide .slide-content .slide-text p {
   margin-bottom: 1px;
 }
-/* line 146, ../sass/_global.scss */
+/* line 148, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow .slide .slide-content .slide-text .product-name {
   font-weight: bold;
 }
-/* line 149, ../sass/_global.scss */
+/* line 151, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow .slide .slide-content .slide-text .product-description {
   font-weight: 300;
+  padding-right: 20px;
 }
-/* line 152, ../sass/_global.scss */
+/* line 155, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow .slide .slide-content .slide-text .product-price {
   font-weight: 500;
 }
-/* line 155, ../sass/_global.scss */
+/* line 158, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow .slide .slide-content .slide-text .product-price-gst {
   font-size: 9px;
   font-weight: 700;
   text-transform: none;
 }
-/* line 164, ../sass/_global.scss */
+/* line 167, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow .slideshow-buttons {
   position: absolute;
   top: 180px;
@@ -542,7 +545,7 @@ body.bathroom-happiness .panel-slideshow .slideshow-buttons {
   margin-left: 10px;
   width: 66px;
 }
-/* line 171, ../sass/_global.scss */
+/* line 174, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow .slideshow-buttons .slick-next,
 body.bathroom-happiness .panel-slideshow .slideshow-buttons .slick-prev {
   top: 0;
@@ -551,35 +554,35 @@ body.bathroom-happiness .panel-slideshow .slideshow-buttons .slick-prev {
   width: 32px;
   height: 40px;
 }
-/* line 179, ../sass/_global.scss */
+/* line 182, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow .slideshow-buttons .slick-next:before,
 body.bathroom-happiness .panel-slideshow .slideshow-buttons .slick-prev:before {
   color: #000;
 }
-/* line 182, ../sass/_global.scss */
+/* line 185, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow .slideshow-buttons .slick-next:hover,
 body.bathroom-happiness .panel-slideshow .slideshow-buttons .slick-prev:hover {
   background-color: #000;
 }
-/* line 184, ../sass/_global.scss */
+/* line 187, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow .slideshow-buttons .slick-next:hover:before,
 body.bathroom-happiness .panel-slideshow .slideshow-buttons .slick-prev:hover:before {
   color: #e2e1e1;
 }
-/* line 190, ../sass/_global.scss */
+/* line 193, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow .slideshow-buttons .slick-next {
   right: 0;
 }
-/* line 194, ../sass/_global.scss */
+/* line 197, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow .slideshow-buttons .slick-prev {
   left: 0;
 }
-/* line 199, ../sass/_global.scss */
+/* line 202, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow .slideshow-label {
   text-align: center;
   padding: 9px 9px 24px;
 }
-/* line 203, ../sass/_global.scss */
+/* line 206, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow .slideshow-label a {
   margin: 0;
   color: #FFF;
@@ -593,27 +596,27 @@ body.bathroom-happiness .panel-slideshow .slideshow-label a {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-/* line 213, ../sass/_global.scss */
+/* line 216, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow .slideshow-label a:hover {
   text-decoration: none;
   background-color: black;
   color: #FFF;
 }
-/* line 221, ../sass/_global.scss */
+/* line 224, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow {
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-/* line 224, ../sass/_global.scss */
+/* line 227, ../sass/_global.scss */
 body.bathroom-happiness .panel-slideshow.hover {
   -webkit-box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2);
   -ms-box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2);
 }
-/* line 230, ../sass/_global.scss */
+/* line 233, ../sass/_global.scss */
 body.bathroom-happiness #main-content {
   position: relative;
   overflow: hidden;
@@ -630,38 +633,38 @@ body.bathroom-happiness #main-content {
 	}*/
 }
 @media (min-width: 768px) {
-  /* line 230, ../sass/_global.scss */
+  /* line 233, ../sass/_global.scss */
   body.bathroom-happiness #main-content {
     font-size: 16px;
   }
 }
 @media (min-width: 992px) {
-  /* line 230, ../sass/_global.scss */
+  /* line 233, ../sass/_global.scss */
   body.bathroom-happiness #main-content {
     font-size: 16px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 230, ../sass/_global.scss */
+  /* line 233, ../sass/_global.scss */
   body.bathroom-happiness #main-content {
     padding: 0;
   }
 }
-/* line 254, ../sass/_global.scss */
+/* line 257, ../sass/_global.scss */
 body.bathroom-happiness #main-content label, body.bathroom-happiness #main-content input, body.bathroom-happiness #main-content button, body.bathroom-happiness #main-content select, body.bathroom-happiness #main-content textarea {
   font-size: inherit;
   line-height: inherit;
   font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 @media only screen and (max-device-width: 767px) {
-  /* line 261, ../sass/_global.scss */
+  /* line 264, ../sass/_global.scss */
   body.bathroom-happiness input[type="text"]:focus, body.bathroom-happiness input[type="number"]:focus,
   body.bathroom-happiness textarea:focus,
   body.bathroom-happiness select:focus {
     font-size: 16px;
   }
 }
-/* line 267, ../sass/_global.scss */
+/* line 270, ../sass/_global.scss */
 body.bathroom-happiness input, body.bathroom-happiness select, body.bathroom-happiness textarea {
   font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -2147,7 +2150,7 @@ body.the_powder_room .main #powder-room-header .subscribe-wrapper h2 {
 /* line 39, ../sass/pages/_the_powder_room.scss */
 body.the_powder_room .main #powder-room-header .subscribe-content {
   position: relative;
-  background: url(../images/the_powder_room/header-form-bg.jpg) left center;
+  background: url(../images/the_powder_room/header-form-bg.png) left center;
   background-size: cover;
   padding: 30px;
 }
@@ -2175,26 +2178,36 @@ body.the_powder_room .main #powder-room-header .subscribe-content .text {
 @media (min-width: 1200px) {
   /* line 48, ../sass/pages/_the_powder_room.scss */
   body.the_powder_room .main #powder-room-header .subscribe-content .text {
-    padding-right: 106px;
+    padding-right: 10px;
   }
 }
 /* line 61, ../sass/pages/_the_powder_room.scss */
 body.the_powder_room .main #powder-room-header .subscribe-content .subscribe-box {
   background: url(../images/the_powder_room/subscribe-box-bg.jpg) repeat;
-  padding: 40px 40px 5px;
+  padding: 40px 40px 6px;
 }
 /* line 64, ../sass/pages/_the_powder_room.scss */
+body.the_powder_room .main #powder-room-header .subscribe-content .subscribe-box .row {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+/* line 67, ../sass/pages/_the_powder_room.scss */
+body.the_powder_room .main #powder-room-header .subscribe-content .subscribe-box .row .col-md-6 {
+  padding: 0 5px;
+}
+/* line 71, ../sass/pages/_the_powder_room.scss */
 body.the_powder_room .main #powder-room-header .subscribe-content .subscribe-box h3 {
   color: #2e2e2e;
   text-transform: uppercase;
-  font-weight: 500;
-  font-size: 15px;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 0;
 }
-/* line 70, ../sass/pages/_the_powder_room.scss */
+/* line 78, ../sass/pages/_the_powder_room.scss */
 body.the_powder_room .main #powder-room-header .subscribe-content .subscribe-box form {
   margin-bottom: 0;
 }
-/* line 72, ../sass/pages/_the_powder_room.scss */
+/* line 80, ../sass/pages/_the_powder_room.scss */
 body.the_powder_room .main #powder-room-header .subscribe-content .subscribe-box form label.error {
   color: #e40066;
   position: absolute;
@@ -2203,11 +2216,11 @@ body.the_powder_room .main #powder-room-header .subscribe-content .subscribe-box
   font-weight: 500;
   left: 0;
 }
-/* line 80, ../sass/pages/_the_powder_room.scss */
+/* line 88, ../sass/pages/_the_powder_room.scss */
 body.the_powder_room .main #powder-room-header .subscribe-content .subscribe-box form .input-group {
   width: 100%;
 }
-/* line 84, ../sass/pages/_the_powder_room.scss */
+/* line 92, ../sass/pages/_the_powder_room.scss */
 body.the_powder_room .main #powder-room-header .subscribe-content .subscribe-box input {
   background: #e2e1e1;
   padding: 20px;
@@ -2230,7 +2243,7 @@ body.the_powder_room .main #powder-room-header .subscribe-content .subscribe-box
   height: 52px;
   margin-bottom: 20px;
 }
-/* line 96, ../sass/pages/_the_powder_room.scss */
+/* line 104, ../sass/pages/_the_powder_room.scss */
 body.the_powder_room .main #powder-room-header .subscribe-content .subscribe-box button {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -2257,7 +2270,7 @@ body.the_powder_room .main #powder-room-header .subscribe-content .subscribe-box
   -webkit-transition: background 0.3s ease-out;
   transition: background 0.3s ease-out;
 }
-/* line 108, ../sass/pages/_the_powder_room.scss */
+/* line 116, ../sass/pages/_the_powder_room.scss */
 body.the_powder_room .main #powder-room-header .subscribe-content .subscribe-box button i {
   font-size: 30px;
   position: relative;
@@ -2267,27 +2280,27 @@ body.the_powder_room .main #powder-room-header .subscribe-content .subscribe-box
   -webkit-transition: color 0.3s ease-out;
   transition: color 0.3s ease-out;
 }
-/* line 114, ../sass/pages/_the_powder_room.scss */
+/* line 122, ../sass/pages/_the_powder_room.scss */
 body.the_powder_room .main #powder-room-header .subscribe-content .subscribe-box button:hover {
   background: black;
 }
-/* line 116, ../sass/pages/_the_powder_room.scss */
+/* line 124, ../sass/pages/_the_powder_room.scss */
 body.the_powder_room .main #powder-room-header .subscribe-content .subscribe-box button:hover i {
   color: white;
 }
-/* line 124, ../sass/pages/_the_powder_room.scss */
+/* line 132, ../sass/pages/_the_powder_room.scss */
 body.the_powder_room .main .inspWallHeader {
   margin-top: 0;
 }
-/* line 127, ../sass/pages/_the_powder_room.scss */
+/* line 135, ../sass/pages/_the_powder_room.scss */
 body.the_powder_room .main .inspWallwrapper {
   padding-top: 0;
 }
-/* line 130, ../sass/pages/_the_powder_room.scss */
+/* line 138, ../sass/pages/_the_powder_room.scss */
 body.the_powder_room .main .prLogoWrap {
   padding: 14px 0;
 }
-/* line 132, ../sass/pages/_the_powder_room.scss */
+/* line 140, ../sass/pages/_the_powder_room.scss */
 body.the_powder_room .main .prLogoWrap .prLogoCaption {
   font-weight: 500;
 }

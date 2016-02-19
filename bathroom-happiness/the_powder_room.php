@@ -31,10 +31,10 @@
 									</h2>
 		      				<div class="subscribe-content">
 		      				<div class="row">
-		      					<div class="col-sm-4">
+		      					<div class="col-sm-3">
 		      						<div class="text">The latest trends brought to you by Reece.</div>
 		      					</div>
-		      					<div class="col-sm-8">
+		      					<div class="col-sm-9">
 		      						<div class="subscribe-box">
 					      				<h3>Subscribe for weekly updates</h3>
 					      				<form action="/" class="subscribe-form">

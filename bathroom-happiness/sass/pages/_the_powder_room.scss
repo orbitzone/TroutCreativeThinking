@@ -38,7 +38,7 @@ body.the_powder_room{
 			}
 			.subscribe-content{
 				position: relative;
-				background: url(../images/the_powder_room/header-form-bg.jpg) left center;
+				background: url(../images/the_powder_room/header-form-bg.png) left center;
 				background-size: cover;
 				padding: 30px;
 				@media (min-width: $screen-sm-min) {
@@ -55,17 +55,25 @@ body.the_powder_room{
 			    	text-align: left;						
 			    }
     			@media (min-width: $screen-lg-min) {
-    				padding-right: 106px;
+    				padding-right: 10px;
     			}
 				}				
 				.subscribe-box{
 					background: url(../images/the_powder_room/subscribe-box-bg.jpg) repeat;
-					padding: 40px 40px 5px;
+					padding: 40px 40px 6px;
+					.row{
+						margin-left: -5px;
+						margin-right: -5px;
+						.col-md-6{
+							padding: 0 5px;
+						}
+					}
 					h3{
 						color: $light-black;
 						text-transform: uppercase;
-						font-weight: 500;
-						font-size: 15px;
+						font-weight: 700;
+						font-size: 16px;
+						margin-top: 0;
 					}
 					form{
 						margin-bottom: 0;

@@ -177,7 +177,7 @@
           <div class="rte">
             <h3>Plumbers talk Auspex</h3>
             <p>To see all videos available, click on the menu icon below. Or play this video and watch them all in series.<br/><br/></p>
-            <iframe width="100%" src="https://www.youtube.com/embed/5limptUJjg4?list=PLglmbsfbBFlmaa6FiVQeL9CYL3oeFIjQT" frameborder="0" allowfullscreen></iframe>
+            <iframe width="100%" src="https://www.youtube.com/embed/videoseries?list=PLglmbsfbBFllBjJUFD2l_sGKoWwFy7_Ds" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
         <!-- End: HTML Widget-->

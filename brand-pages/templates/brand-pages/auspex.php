@@ -118,7 +118,7 @@
         <div class="widget-html-image">
           <figure class="image">
             <!--<a href="#">-->
-            <img src="images/brand-pages/auspex/image-placeholder.jpg" alt="Duopex Water"/>
+            <img src="images/brand-pages/auspex/duopex-water.jpg" alt="Duopex Water"/>
             <figcaption>Duopex Water</figcaption>
             <!--</a>-->
           </figure>
@@ -176,8 +176,8 @@
           -->
           <div class="rte">
             <h3>Plumbers talk Auspex</h3>
-            <p>Insgructions go here<br/><br/></p>
-            <iframe width="100%" src="https://www.youtube.com/embed/5limptUJjg4?list=PLglmbsfbBFlmaa6FiVQeL9CYL3oeFIjQT" frameborder="0" allowfullscreen></iframe>
+            <p>To see all videos available, click on the menu icon below. Or play this video and watch them all in series.<br/><br/></p>
+            <iframe width="100%" src="https://www.youtube.com/embed/videoseries?list=PLglmbsfbBFllBjJUFD2l_sGKoWwFy7_Ds" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
         <!-- End: HTML Widget-->
@@ -212,7 +212,7 @@
         <div class="widget-html-image">
           <figure class="image">
             <!--<a href="#">-->
-            <img src="images/brand-pages/auspex/image-placeholder-2.jpg" alt="Radiant UFH"/>
+            <img src="images/brand-pages/auspex/aupex-adapters.jpg" alt="Radiant UFH"/>
             <figcaption></figcaption>
             <!--</a>-->
           </figure>

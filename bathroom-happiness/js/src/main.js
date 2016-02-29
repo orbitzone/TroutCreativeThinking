@@ -48,17 +48,11 @@
         };
         player.addEvent('ready', function() {
             player.api('play');
-            
-            player.addEvent('play', onPlay);
+          $('#water-therapy-video').addClass('ready');  
+            //player.addEvent('play', onPlay);
             //player.addEvent('finish', onFinish);
             //player.addEvent('playProgress', onPlayProgress);
         });
-
-        // Call the API when a button is pressed
-        $('button').bind('click', function() {
-            
-        });
-          
     }
   });
 })(jQuery);

@@ -35,7 +35,7 @@
             <div class="row">
               <div class="col-sm-4">
                 <div class="block bathroom-gallery">
-                  <a href="#">
+                  <a href="http://www.reece.com.au/bathrooms/inspiration/gallery">
                     <div class="header">
                       <h2>bathroom gallery</h2>
                       <div class="summary">
@@ -57,7 +57,7 @@
               </div>
               <div class="col-sm-4">
                 <div class="block trends">
-                  <a href="#">
+                  <a href="http://www.reece.com.au/bathrooms/inspiration/trends">
                     <div class="header">
                       <h2>trends</h2>
                       <div class="summary">

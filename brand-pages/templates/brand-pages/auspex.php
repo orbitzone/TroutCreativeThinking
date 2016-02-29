@@ -235,13 +235,13 @@
                   </div>
                   <button type="button" class="close">
                     <i class="rbp-close-icon"></i>               
+                  </button>                    
+                </div>
+                <div class="slide-content">
+                  <button type="button" class="play" data-video="GzKRkbZjzPg">
+                    <i class="rbp-icon"></i>
+                    <span class="label">View video</span>  
                   </button>  
-                  <div class="slide-content">
-                    <button type="button" class="play" data-video="GzKRkbZjzPg">
-                      <i class="rbp-icon"></i>
-                      <span class="label">View video</span>  
-                    </button>  
-                  </div>
                 </div>
               </div>
             </div>
@@ -263,13 +263,13 @@
                   </div>
                   <button type="button" class="close">
                     <i class="rbp-close-icon"></i>               
+                  </button>                    
+                </div>
+                <div class="slide-content">
+                  <button type="button" class="play" data-video="aZ1qGNqAu4o">
+                    <i class="rbp-icon"></i>
+                    <span class="label">View video</span>  
                   </button>  
-                  <div class="slide-content">
-                    <button type="button" class="play" data-video="aZ1qGNqAu4o">
-                      <i class="rbp-icon"></i>
-                      <span class="label">View video</span>  
-                    </button>  
-                  </div>
                 </div>
               </div>              
             </div>            

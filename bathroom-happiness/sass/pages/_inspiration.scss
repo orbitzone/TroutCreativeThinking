@@ -177,14 +177,16 @@ body.inspiration {
 					background: black;
 					a{
 						color: #a18033;
-					}
-					h2{
-						color: $gold;
-						//background: -webkit-linear-gradient(left, #CCAA62 10%, #C0A053 15%,#FCEC95 30%, #FBEC84 40%, #DABB60 50%, #AB8731 70%, #C59F4A 80%, #E9CA6F);
-			      background: -webkit-linear-gradient(left, #ccaa62 0%, #c0a053 12%, #dfc063 21%, #d0b156 37%, #dabb60 47%, #ab8731 58%, #c59f4a 76%, #e9ca6f 100%);
-			      -webkit-background-clip: text;
-			      -webkit-text-fill-color: transparent;
-					}					
+						.header{
+							h2{
+								color: $gold;
+								//background: -webkit-linear-gradient(left, #CCAA62 10%, #C0A053 15%,#FCEC95 30%, #FBEC84 40%, #DABB60 50%, #AB8731 70%, #C59F4A 80%, #E9CA6F);
+					      background: -webkit-linear-gradient(left, #ccaa62 0%, #c0a053 12%, #dfc063 21%, #d0b156 37%, #dabb60 47%, #ab8731 58%, #c59f4a 76%, #e9ca6f 100%);
+					      -webkit-background-clip: text;
+					      -webkit-text-fill-color: transparent;
+							}
+						}
+					}										
 				}
 			}
 		}//blocks

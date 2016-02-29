@@ -322,6 +322,124 @@
 		}
 	}
 }
+.widget-video-collection{
+	padding: 0;
+	position: relative;
+	line-height: 1;
+	background-repeat: no-repeat;
+	background-position: top right;
+	background-size: contain;
+	.slick-slider{
+		.slick-slide{
+			position: relative;
+			.rte{
+				padding-bottom: 30px;
+			}
+			.slide-content{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				.transform(translateX(-50%) translateY(-50%));
+				color: @videoCaptionColor;
+				z-index: 3;
+			}
+			button.play{
+				line-height: 1;
+				.text{
+					margin: 0 auto;
+				}
+			}
+			.video-wrapper{
+				margin: 0 auto;
+				&.centered{
+					position: absolute;
+					left: 0;
+					top: 50%;
+					width: 100%;
+					.transform(translateY(-50%));
+				}
+			}
+			.video-container{
+				position: relative;
+			}
+			.image{
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				text-align: center;
+				z-index: 2;
+				img{
+					width: 100%;
+				}
+			}
+			.video{
+				position: relative;
+		    padding-bottom: 56.25%;
+		    height: 0;
+		    iframe{
+					position: absolute;
+			    width: 100%;
+			    height: 100%;
+			    left: 0;
+			    top: 0;
+			    z-index: 1;
+				}				
+			}
+			img{
+				margin:  0 auto;
+			}
+			button.close{
+				position: absolute;
+				top: 10px;
+				right: 10px;
+				border: none;
+				background: none;
+				outline: none;
+				opacity: 1;
+				z-index: 10;
+				display: none;
+				.appearance(none);
+				font-size: 8px;
+				i{
+					font-size: 24px;
+					color: black;
+				}
+				text-shadow: none;
+			}
+		}
+	}
+	.rbp-icon{
+		&:before{
+			content: "c";
+		}
+	}
+	.rte{
+		h3{
+			margin-top: 20px;
+		}
+	}
+	.play{
+		border: none;
+		background: none;
+		outline: none;
+		color: @playButtonColor;
+		.appearance(none);
+		i{
+			font-size: 30px;
+			color: @playButtonColor;
+			content: "c";
+			@media (min-width: 768px){
+				font-size: 50px;
+			}			
+		}
+		.label{
+			display: block;
+			font-weight: 500;
+			font-size: 16px;
+		}
+	}
+}
 .widget-big-button{
 	background: @bigButtonBg;
 	text-align: center;

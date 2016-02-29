@@ -7,7 +7,7 @@ var player = {
 			window.onYouTubeIframeAPIReady = function() {
 				player.obj[container] = player.loadPlayer(container, videoId);				
 				if(player.autoplay){
-  				player.play(container);
+					player.play(container);
   			}
       };
       //This code loads the IFrame Player API code asynchronously.
@@ -96,6 +96,7 @@ var player = {
 var widgets = {
 	init: function(){
 		widgets.videoWidget();
+		widgets.videoCollectionWidget();
 		widgets.tabsWidget();
 		widgets.sliderWidget();
 		widgets.bigButtonWidget();
@@ -221,6 +222,61 @@ var widgets = {
 			});
 			m=m+1;
 		});		
+	},
+	videoCollectionWidget: function(){
+		$('.video-collection-slides').slick({
+			 arrows: true,
+			 dots: false,
+			 infinite: false,
+			 swipe: true,
+			 adaptiveHeight: true
+		});
+		var vc = 0;
+		$('.widget-video-collection').each(function(){
+			var slider = $(this).find('.video-collection-slides');
+			var totalSlides = $(this).find('.slide').length;
+			$(this).find('.slide').each(function(){
+				var player_container = 'widget-video-collection-player-'+vc;	
+				vc++;
+				$(this).find('.player').attr('id', player_container);
+				$(this).find('.play').on('click', function(){
+					var video = $(this).data('video');
+					if(video){
+						player.autoplay = true;
+						player.init(player_container,video);
+						$(this).parent().parent().find('.image').fadeTo(300,0);
+						$(this).parent().parent().find('.close').slideDown(300);
+						$(this).fadeTo(300,0);
+					}
+				});
+
+				$(this).find('.close').on('click', function(){
+					player.stop();
+					$(this).parent().parent().parent().find('.image').fadeTo(300,1);
+					$(this).parent().parent().parent().find('.play').fadeTo(300,1);
+					$(this).slideUp(300);
+				});
+			});
+			
+			
+			/*$(this).find('.play').on('click', function(){
+				var video = $(this).data('video');
+				parent.slick('slickNext');
+				if(video){
+					player.autoplay = true;
+					player.init(player_container,video);
+				}
+			});*/
+			
+		});
+		$(window).on('resize', function(){
+			$('.widget-video-collection').each(function(){
+				var height = $(this).find('.video-collection-slides .rte').outerHeight();
+				$(this).find('.slick-arrow').css({
+					marginTop: (height/2)+"px"
+				});
+			});
+		});
 	},
 	tabsWidget: function(){
 		var m = 1;

@@ -165,7 +165,7 @@
   <div class="container-fluid plumbers">
     <div class="row">
       <div class="col-sm-12">
-        <!-- Begin: HTML Widget-->  
+        <!-- Begin: HTML Widget
         <div class="widget-html-image">
           <!-- If no image dont show
           <figure class="image">
@@ -173,7 +173,7 @@
             <img />
             </a>
           </figure>
-          -->
+          
           <div class="rte">
             <h3>Plumbers talk Auspex</h3>
             <p>To see all videos available, click on the menu icon below. Or play this video and watch them all in series.<br/><br/></p>
@@ -181,6 +181,101 @@
           </div>
         </div>
         <!-- End: HTML Widget-->
+        <!-- Begin: Video-Collection Widget -->
+        <div class="widget-video-collection">
+          <div class="intro">
+            <div class="rte">
+              <h3>Plumbers talk Auspex</h3>
+            </div>
+          </div>
+          <div class="video-collection-slides">
+            <div class="slide">
+              <div class="rte">
+                <h4>Sam Dinucci</h4>
+                <p>Hear Sam's Story</p>
+              </div>
+              <div class="video-container">
+                <div class="image">
+                  <img src="images/brand-pages/auspex/sam-dinucci-video.jpg" alt="Sam Dinucci Video">
+                </div>
+                <div class="video">
+                  <div class="video-wrapper">
+                    <div class="video">
+                      <figure class="player">
+                      </figure>
+                    </div>
+                  </div>
+                  <button type="button" class="close">
+                    <i class="rbp-close-icon"></i>               
+                  </button>  
+                </div>
+                <div class="slide-content">
+                  <button type="button" class="play" data-video="PHCrbr-6THc">
+                    <i class="rbp-icon"></i>
+                    <span class="label">View video</span>  
+                  </button>  
+                </div>
+              </div>              
+            </div> 
+            <div class="slide">
+              <div class="rte">
+                <h4>Grant Ferguson</h4>
+                <p>Hear Grant's Story</p>
+              </div>
+              <div class="video-container">
+                <div class="image">
+                  <img src="images/brand-pages/auspex/grant-ferguson-video.jpg" alt="Grant Ferguson Video">
+                </div>
+                <div class="video">
+                  <div class="video-wrapper">
+                    <div class="video">
+                      <figure class="player">
+                      </figure>
+                    </div>
+                  </div>
+                  <button type="button" class="close">
+                    <i class="rbp-close-icon"></i>               
+                  </button>  
+                  <div class="slide-content">
+                    <button type="button" class="play" data-video="GzKRkbZjzPg">
+                      <i class="rbp-icon"></i>
+                      <span class="label">View video</span>  
+                    </button>  
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="rte">
+                <h4>Ben Dunstone</h4>
+                <p>Hear Ben's Story</p>
+              </div>
+              <div class="video-container">
+                <div class="image">
+                  <img src="images/brand-pages/auspex/ben-dunstone-video.jpg" alt="Ben Dunstone Video">
+                </div>
+                <div class="video">
+                  <div class="video-wrapper">
+                    <div class="video">
+                      <figure class="player">
+                      </figure>
+                    </div>
+                  </div>
+                  <button type="button" class="close">
+                    <i class="rbp-close-icon"></i>               
+                  </button>  
+                  <div class="slide-content">
+                    <button type="button" class="play" data-video="aZ1qGNqAu4o">
+                      <i class="rbp-icon"></i>
+                      <span class="label">View video</span>  
+                    </button>  
+                  </div>
+                </div>
+              </div>              
+            </div>            
+          </div>
+        </div>
+        <!-- End: VIdeo-Collection Widget -->
       </div>
     </div>
   </div>

@@ -176,6 +176,91 @@ div.brand-pages{
 				}
 			}
 		}
+		.widget-video-collection{
+			background: url(../../images/brand-pages/auspex/bg-pattern.png);
+			padding: 60px 30px;
+			@media (min-width: 768px){
+				padding: 60px;
+			}
+			.intro{
+				padding-bottom: 30px;
+			}
+			.rte{
+				h3{
+					color: white;
+					margin: 0;
+					padding-left: 20px;
+					position: relative;
+					margin-bottom: 30px;
+					&:after{
+						width: 5px;
+						height: 68px;
+						position: absolute;
+						top: 2px;
+						left: 0;
+						margin: 0;
+					}
+				}
+			}
+			.slick-slider{
+				.slick-next,
+				.slick-prev{
+					&:before{
+						font-size: 24px;
+						font-family: "FontAwesome" !important;					
+					}					
+				}
+				.slick-next{
+					&:before{
+						content: "\f054" !important;
+					}
+				}
+				.slick-prev{
+					&:before{
+						content: "\f053" !important;
+					}
+				}
+			}
+			.slide{
+				h4{
+					font-weight: 500;
+					font-size: 30px;
+					text-transform: uppercase;
+					color: white;
+					margin-bottom: 0;
+				}
+				.slide-content{
+					.rbp-icon{
+						width: 69px;
+						height: 69px;
+						display: block;
+						background-image: url(../../images/brand-pages/auspex/play-btn.png);
+						background-size: 69px 69px;
+						@media (min-width: @screen-sm){
+							width: 138px;
+							height: 138px;
+							background-size: 138px 138px;
+						}
+						&:before{
+							content: " ";
+						}
+					}
+					.label{
+						display: none;
+					}
+				}
+				.close{
+					top: 0;
+					right: 0;
+					padding: 10px;
+					background: #394043;
+					display: none;
+					i{
+						color: white;
+					} 
+				}
+			}
+		}
 		iframe{
 			height: 160px;
 			@media (min-width: 768px){

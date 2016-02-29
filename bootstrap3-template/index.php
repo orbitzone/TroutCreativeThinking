@@ -7,7 +7,6 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
 
-  <base href="/bs3/" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="utf-8">
 
@@ -44,25 +43,34 @@
   <?php include "templates/Includes/Navigation.php" ?>
 
 
-    <div class="content-container page">
-        <div class="inner-wrapper">
+  <div class="container">
+    
+    <div class="row">
+        
+        <div class="col-lg-12">
+          <h1>Bootstrap starter template</h1>
+          <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+        </div>
+        
+        <div class="col-lg-6">
+          <h4>Col 6</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
 
-            <div class="row-fluid">
-                <div class="span12">
-                    <h2>Reece BS3 Template</h2>
+          <h4>Col 6</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
 
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis ipsum tortor, et aliquam erat egestas a. Aenean gravida, ante sed lobortis tristique, sem tortor pulvinar purus, quis fringilla nibh leo at dui. Phasellus tempus nec tellus a sodales. Sed sagittis sollicitudin urna, convallis porttitor mi. Proin sed vestibulum urna, at gravida dui. Proin ac tortor ultrices, accumsan diam tristique, maximus ipsum. Praesent pretium ligula a nibh scelerisque, sed placerat felis maximus. Cras quis euismod turpis. Sed vestibulum nisl nec tristique maximus. Aenean luctus lacus ut ex efficitur blandit. Vestibulum sed lobortis ipsum. Sed ornare facilisis nulla, eget placerat tellus maximus a.
-                    </p>
-                    <p>
-                        Vestibulum eget neque a mauris rutrum pellentesque. Vivamus ac viverra velit, vel varius enim. Vestibulum aliquet purus vel lorem finibus dictum id eget libero. Donec molestie egestas orci, ac accumsan eros vulputate vitae. Pellentesque semper nibh a metus lobortis consequat. Nulla vehicula ipsum id quam ullamcorper egestas. Morbi et aliquam nisi. Integer et laoreet elit.
-                    </p>
+          <h4>Col 6</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
 
-                </div>
-            </div>
+        <div class="col-lg-6">
+          <h4>Col 6</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
 
         </div>
-    </div>
+      </div>
+
+  </div><!-- /.container -->
 
 
     <?php include "templates/Includes/Footer.php" ?>

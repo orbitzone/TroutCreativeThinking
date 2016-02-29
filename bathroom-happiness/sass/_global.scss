@@ -9,9 +9,8 @@ body.bathroom-happiness {
 	  text-rendering: optimizeLegibility;
 		-moz-osx-font-smoothing: grayscale;
 		.container-fluid{
-			@media (min-width: 1200px){
-				padding: 0;				
-			}
+			padding-left: 15px;
+			padding-right: 15px;
 			@media (min-width: $screen-sm-min){
 				max-width: 768px;
 			}
@@ -20,6 +19,9 @@ body.bathroom-happiness {
 			}
 			@media (min-width: $screen-lg-min){
 				max-width: 1200px;
+			}
+			@media (min-width: 1200px){
+				padding: 0;				
 			}
 		}
 	}

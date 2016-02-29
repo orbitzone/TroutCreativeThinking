@@ -12,7 +12,7 @@ module.exports = function (grunt) {
       },
       js: {
         files: ['js/src/*.js'],
-        tasks: ['jshint', 'uglify:dev']
+        tasks: ['uglify']
       },
       livereload: {
         options: {
@@ -136,7 +136,6 @@ module.exports = function (grunt) {
 
   grunt.registerTask('default', [
     'connect',
-    'jshint',
     'uglify:dev',
     'compass:dev',
     'copy:js',

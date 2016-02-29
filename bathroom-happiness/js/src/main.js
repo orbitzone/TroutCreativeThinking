@@ -34,5 +34,31 @@
           $('.'+section).removeClass('hover');
         });
     });
+    if($('body').hasClass('inspiration')){
+        var iframe = $('#water-therapy-video')[0];
+        var player = $f(iframe);
+        var height = $('.blocks .water-therapy .content').height();
+        var width = 16 * height/9;
+        $('#water-therapy-video').width(width);
+        $('#water-therapy-video').height(height + 200);
+        // When the player is ready, add listeners for pause, finish, and playProgress
+
+        var onPlay = function(){
+          $('#water-therapy-video').addClass('ready');
+        };
+        player.addEvent('ready', function() {
+            player.api('play');
+            
+            player.addEvent('play', onPlay);
+            //player.addEvent('finish', onFinish);
+            //player.addEvent('playProgress', onPlayProgress);
+        });
+
+        // Call the API when a button is pressed
+        $('button').bind('click', function() {
+            
+        });
+          
+    }
   });
 })(jQuery);

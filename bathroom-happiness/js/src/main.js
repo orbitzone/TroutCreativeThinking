@@ -16,15 +16,21 @@ var isMobile = {
     }
 };
 var isIE = function(){
-  var ua = window.navigator.userAgent;
-  var msie = ua.indexOf("MSIE ");
+  var sAgent = window.navigator.userAgent;
+  var Idx = sAgent.indexOf("MSIE");
 
-  if (msie > 0) {
-    return true;
+  // If IE, return version number.
+  if (Idx > 0){
+    return parseInt(sAgent.substring(Idx+ 5, sAgent.indexOf(".", Idx)));
+  }
+  // If IE 11 then look for Updated user agent string.
+  else if (!!navigator.userAgent.match(/Trident\/7\./)){
+    return 11;
   }
   else{
-    return false;
+    return false; //It is not IE
   }
+
 };
 (function ($) {
   $(function () {
@@ -63,7 +69,6 @@ var isIE = function(){
     });
     if($('body').hasClass('inspiration')){
         var iframe = $('#water-therapy-video')[0];
-        var player = $f(iframe);
         $(window).on('resize', function(){
           var height = $('.blocks .water-therapy .content').height();
           var width = 16 * height/9;
@@ -71,10 +76,9 @@ var isIE = function(){
           $('#water-therapy-video').height(height + 200);          
         }).resize();
         // When the player is ready, add listeners for pause, finish, and playProgress
-        console.log(isIE());
-        console.log(isMobile.any());
-        if(!isIE() && !isMobile.any()){
-          var onPlay = function(){
+        if(isIE() < 11 && !isMobile.any()){
+           var player = $f(iframe);
+           var onPlay = function(){
             $('#water-therapy-video').addClass('ready');
           };
           player.addEvent('ready', function() {
@@ -84,7 +88,6 @@ var isIE = function(){
               //player.addEvent('playProgress', onPlayProgress);
           });
         }else{
-          console.log('done');
           $('#water-therapy-video').addClass('ready');
           if(isMobile.any()){
             $('#water-therapy-video').remove();

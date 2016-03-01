@@ -20,11 +20,11 @@ var player = {
     		var video = player.obj[container];
   			if(video.getVideoData().video_id != videoId){
   				player.obj[container].loadVideoById(videoId);     
-  				if(player.autoplay){
+  				if(player.autoplay == true){
     				player.play(container);
     			}
   			}else{
-  				if(player.autoplay){
+  				if(player.autoplay == true){
     				player.play(container);
     			}
     		}

@@ -1,13 +1,50 @@
 /* GALLERY TEMPLATE */
-
+      
 // gallery page container
 .reece-b3-gallery {
     
     margin-bottom: 40px;
     
+    // override .well
+    
+    .well {
+      border-radius: 0;
+      border: none;
+      box-shadow: none;
+      background-color: #F1F2F2;
+    }
+    
     .reece-b3-gallery-header {
+        
         margin-top: 40px;
         margin-bottom: 20px;
+        
+        // Social template
+        .social-share{
+        	
+          display: block;
+          width: auto;
+          float: left;
+          height: 33px;
+          position: relative;
+          margin-top: 10px;
+          
+          @media (min-width: 768px) {
+            float: right;
+          }
+          
+        	a{
+
+        		font-size:28px;
+            color: @grayDarker;
+            .transition(all 0.2s linear);
+              
+        		&:hover,&:focus,&:active{
+        			text-decoration: none;
+        			color:@grayLight;
+        		}
+        	}
+        }
     }
     
     .thumbnail {
@@ -43,6 +80,7 @@
       bottom: 0;
       width: 10%;
       height: 100%;
+      .transition(all 0.2s linear);
       
       .glyphicon-chevron-right,
       .glyphicon-chevron-left {
@@ -88,6 +126,10 @@
             font-size: 20px;
           }
           
+        }
+        
+        @media (max-width: 320px) {
+          display: none;
         }
     }
     

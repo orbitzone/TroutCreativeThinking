@@ -215,6 +215,12 @@ div.brand-pages .plumbers .widget-video-collection .rte h3 {
   position: relative;
   margin-bottom: 30px;
   max-width: 380px;
+  font-size: 32px;
+}
+@media (min-width: 768px) {
+  div.brand-pages .plumbers .widget-video-collection .rte h3 {
+    font-size: 36px;
+  }
 }
 div.brand-pages .plumbers .widget-video-collection .rte h3:after {
   width: 5px;

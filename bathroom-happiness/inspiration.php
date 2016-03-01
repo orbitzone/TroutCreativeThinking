@@ -52,8 +52,8 @@
                         <img src="images/inspiration/bathroom-gallery.jpg" alt="Bathroom Gallery">
                       </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
+                </div>
               </div>
               <div class="col-sm-4">
                 <div class="block trends">

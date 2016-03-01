@@ -169,7 +169,6 @@ body.homepage {
           background: rgba(0,0,0,0.8);
         }
       }
-
       &:hover {
         .background-div{
           &:after{
@@ -178,15 +177,15 @@ body.homepage {
         }
         .text-overlay{
           .text-overlay-line-1{
-            @include animation(exit-right-green 0.3s forwards linear);
+            @include animation(exit-right-green 0.5s forwards ease-out);
             color: $green;
           }
           .text-overlay-line-2{
-            @include animation(exit-left-green 0.3s forwards linear);
+            @include animation(exit-left-green 0.5s forwards ease-out);
             color: $green;
           }
           .arrow-link{
-            @include animation('exit-left-green 0.3s forwards linear, arrow-right 0.7s 0.5s forwards infinite linear');
+            @include animation('exit-left-green 0.3s forwards ease-out, arrow-right 0.7s 0.5s forwards infinite ease-out');
             color: $green; 
           }
         }
@@ -631,7 +630,7 @@ body.homepage {
     opacity: 0;
   }
   10.1%{
-    @include transform(translateX(100%));
+    @include transform(translateX(50%));
   }
   100%{
     @include transform(translateX(0));
@@ -646,7 +645,8 @@ body.homepage {
     opacity: 0;
   }
   10.1%{
-    @include transform(translateX(-100%));
+    @include transform(translateX(-50%));
+    opacity: 1;
   }
   100%{
     @include transform(translateX(0));

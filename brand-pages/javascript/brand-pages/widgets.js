@@ -259,12 +259,10 @@ var widgets = {
 			});
 			slider.on('beforeChange', function(){
 				player.stop();	
-				$('.video-collection-slides .image').fadeTo(300,1, function(){
-					$(this).css({'display':'none'});
-				});
-				$('.video-collection-slides .play').fadeTo(300,1, function(){
-					$(this).css({'display':'none'});
-				});
+				$('.video-collection-slides .image').css({ 'display':'block'});
+				$('.video-collection-slides .play').css({ 'display':'block'});
+				$('.video-collection-slides .image').fadeTo(300,1);
+				$('.video-collection-slides .play').fadeTo(300,1);
 				$('.video-collection-slides .close').slideUp(300);
 			});
 			

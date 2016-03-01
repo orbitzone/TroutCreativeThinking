@@ -237,10 +237,15 @@ div.brand-pages .plumbers .widget-video-collection .slick-slider .slick-prev:bef
 }
 div.brand-pages .plumbers .widget-video-collection .slide h4 {
   font-weight: 500;
-  font-size: 30px;
+  font-size: 26px;
   text-transform: uppercase;
   color: white;
   margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  div.brand-pages .plumbers .widget-video-collection .slide h4 {
+    font-size: 30px;
+  }
 }
 div.brand-pages .plumbers .widget-video-collection .slide .slide-content .rbp-icon {
   width: 69px;

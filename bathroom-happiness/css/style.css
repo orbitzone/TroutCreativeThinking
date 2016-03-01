@@ -2569,50 +2569,42 @@ body.inspiration .main .blocks .block a .content .video figure iframe {
 }
 /* line 158, ../sass/pages/_inspiration.scss */
 body.inspiration .main .blocks .block a:hover .header .button-wrap .button {
-  -webkit-transform: translateY(-2px);
-  -moz-transform: translateY(-2px);
-  -ms-transform: translateY(-2px);
-  -o-transform: translateY(-2px);
-  transform: translateY(-2px);
-  -webkit-box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2);
-  -ms-box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
 }
-/* line 163, ../sass/pages/_inspiration.scss */
-body.inspiration .main .blocks .block a:hover .header .button-wrap .button.white {
-  background: #dabb61;
-}
-/* line 177, ../sass/pages/_inspiration.scss */
+/* line 175, ../sass/pages/_inspiration.scss */
 body.inspiration .main .blocks .block.bathroom-gallery .summary {
   max-width: 190px;
   margin: 0 auto;
 }
-/* line 182, ../sass/pages/_inspiration.scss */
+/* line 180, ../sass/pages/_inspiration.scss */
 body.inspiration .main .blocks .block.water-therapy {
   background: black;
 }
-/* line 184, ../sass/pages/_inspiration.scss */
+/* line 182, ../sass/pages/_inspiration.scss */
 body.inspiration .main .blocks .block.water-therapy a {
   color: #a18033;
 }
-/* line 187, ../sass/pages/_inspiration.scss */
+/* line 185, ../sass/pages/_inspiration.scss */
 body.inspiration .main .blocks .block.water-therapy a .header h2 {
   color: #dabb61;
   background: -webkit-linear-gradient(left, #ccaa62 0%, #c0a053 12%, #dfc063 21%, #d0b156 37%, #dabb60 47%, #ab8731 58%, #c59f4a 76%, #e9ca6f 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-/* line 199, ../sass/pages/_inspiration.scss */
+/* line 197, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness {
   padding-bottom: 50px;
 }
-/* line 201, ../sass/pages/_inspiration.scss */
+/* line 199, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .hex-wrap {
   position: relative;
   height: 350px;
 }
-/* line 204, ../sass/pages/_inspiration.scss */
+/* line 202, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .hex-wrap .button {
   position: absolute;
   display: inline-block;
@@ -2626,7 +2618,7 @@ body.inspiration .main .destination-happiness .hex-wrap .button {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-/* line 209, ../sass/pages/_inspiration.scss */
+/* line 207, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .hex-wrap .button:hover {
   -webkit-transform: scale(1.05);
   -moz-transform: scale(1.05);
@@ -2634,7 +2626,7 @@ body.inspiration .main .destination-happiness .hex-wrap .button:hover {
   -o-transform: scale(1.05);
   transform: scale(1.05);
 }
-/* line 212, ../sass/pages/_inspiration.scss */
+/* line 210, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .hex-wrap .button .text {
   position: absolute;
   top: 50%;
@@ -2650,44 +2642,44 @@ body.inspiration .main .destination-happiness .hex-wrap .button .text {
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 222, ../sass/pages/_inspiration.scss */
+/* line 220, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .hex-wrap .button .text .top {
   font-size: 29px;
 }
-/* line 225, ../sass/pages/_inspiration.scss */
+/* line 223, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .hex-wrap .button .text .bottom {
   font-size: 23px;
 }
-/* line 229, ../sass/pages/_inspiration.scss */
+/* line 227, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .hex-wrap .button.destination {
   top: 80px;
   right: 150px;
 }
-/* line 232, ../sass/pages/_inspiration.scss */
+/* line 230, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .hex-wrap .button.destination .top {
   text-decoration: underline;
 }
-/* line 236, ../sass/pages/_inspiration.scss */
+/* line 234, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .hex-wrap .button.love-luxury {
   top: 0;
   right: 60px;
 }
-/* line 240, ../sass/pages/_inspiration.scss */
+/* line 238, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .hex-wrap .button.love-family {
   top: 115px;
   right: 7px;
 }
-/* line 244, ../sass/pages/_inspiration.scss */
+/* line 242, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .hex-wrap .button.love-calm {
   top: 237px;
   right: 54px;
 }
-/* line 250, ../sass/pages/_inspiration.scss */
+/* line 248, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .destination-links {
   margin-top: 48px;
   margin-bottom: 30px;
 }
-/* line 253, ../sass/pages/_inspiration.scss */
+/* line 251, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .destination-links a {
   color: #698894;
   font-size: 22px;
@@ -2702,11 +2694,11 @@ body.inspiration .main .destination-happiness .destination-links a {
   -webkit-transition: color 0.3s ease-out;
   transition: color 0.3s ease-out;
 }
-/* line 264, ../sass/pages/_inspiration.scss */
+/* line 262, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .destination-links a:hover {
   color: #6dc8b6;
 }
-/* line 270, ../sass/pages/_inspiration.scss */
+/* line 268, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .btn {
   color: white;
   font-size: 13.2px;
@@ -2724,11 +2716,11 @@ body.inspiration .main .destination-happiness .btn {
   padding: 17px;
   letter-spacing: 0.1;
 }
-/* line 280, ../sass/pages/_inspiration.scss */
+/* line 278, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .btn:hover {
   background: #698894;
 }
-/* line 286, ../sass/pages/_inspiration.scss */
+/* line 284, ../sass/pages/_inspiration.scss */
 body.inspiration footer {
   margin-top: 0;
 }
@@ -2933,13 +2925,31 @@ body.trends .blocks .block a .content .image {
     background-size: cover;
   }
 }
+/* line 139, ../sass/pages/_trends.scss */
+body.trends .blocks .block a .content .image .gif {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  opacity: 0;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+/* line 152, ../sass/pages/_trends.scss */
+body.trends .blocks .block a .content img {
+  width: 100%;
+}
 @media (min-width: 768px) {
-  /* line 142, ../sass/pages/_trends.scss */
+  /* line 152, ../sass/pages/_trends.scss */
   body.trends .blocks .block a .content img {
     display: none;
   }
 }
-/* line 148, ../sass/pages/_trends.scss */
+/* line 159, ../sass/pages/_trends.scss */
 body.trends .blocks .block a .content .video figure {
   width: 100%;
   height: 100%;
@@ -2948,7 +2958,7 @@ body.trends .blocks .block a .content .video figure {
   top: 0;
   left: 0;
 }
-/* line 155, ../sass/pages/_trends.scss */
+/* line 166, ../sass/pages/_trends.scss */
 body.trends .blocks .block a .content .video figure .top {
   width: 100%;
   height: 100%;
@@ -2958,12 +2968,12 @@ body.trends .blocks .block a .content .video figure .top {
   opacity: 0;
   z-index: 1;
 }
-/* line 164, ../sass/pages/_trends.scss */
+/* line 175, ../sass/pages/_trends.scss */
 body.trends .blocks .block a .content .video figure iframe {
   display: none;
 }
 @media (min-width: 768px) {
-  /* line 164, ../sass/pages/_trends.scss */
+  /* line 175, ../sass/pages/_trends.scss */
   body.trends .blocks .block a .content .video figure iframe {
     display: block;
     opacity: 0;
@@ -2981,12 +2991,12 @@ body.trends .blocks .block a .content .video figure iframe {
     -webkit-transition: opacity 0.3s ease-out;
     transition: opacity 0.3s ease-out;
   }
-  /* line 175, ../sass/pages/_trends.scss */
+  /* line 186, ../sass/pages/_trends.scss */
   body.trends .blocks .block a .content .video figure iframe.ready {
     opacity: 1;
   }
 }
-/* line 186, ../sass/pages/_trends.scss */
+/* line 197, ../sass/pages/_trends.scss */
 body.trends .blocks .block a:hover .header .button-wrap .button {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
@@ -2994,11 +3004,7 @@ body.trends .blocks .block a:hover .header .button-wrap .button {
   -o-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 192, ../sass/pages/_trends.scss */
-body.trends .blocks .block a:hover .content .image {
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -o-transform: scale(1.2);
-  transform: scale(1.2);
+/* line 205, ../sass/pages/_trends.scss */
+body.trends .blocks .block a:hover .content .image .gif {
+  opacity: 1;
 }

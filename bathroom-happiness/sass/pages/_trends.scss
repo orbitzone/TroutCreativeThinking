@@ -136,10 +136,21 @@ body.trends{
 								height: 100%;
 								background-size: cover;
 							}
+							.gif{
+								position: absolute;
+								top: 0;
+								left: 0;
+								width: 100%;
+								height: 100%;
+								background-size: cover;
+								opacity: 0;
+								@include transition(0.3s all ease-out);
+							}
 							@include transform(scale(1));
 							@include transition(0.5s all ease-out);
 						}
 						img{
+							width: 100%;
 							@media (min-width: $screen-sm){
 								display: none;	
 							}						
@@ -190,7 +201,10 @@ body.trends{
 						}
 						.content{
 							.image{
-								@include transform(scale(1.2));
+								//@include transform(scale(1.2));
+								.gif{
+									opacity: 1;
+								}
 							}
 						}
 					}

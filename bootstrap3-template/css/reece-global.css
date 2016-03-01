@@ -6639,39 +6639,70 @@ li {
   margin-top: 10px;
   margin-bottom: 20px;
 }
-.reece-b3-gallery #carousel {
-  margin-bottom: 20px;
-}
-.reece-b3-gallery #thumbcarousel {
-  margin-bottom: 40px;
-}
-.reece-b3-gallery .item .thumb {
+.reece-b3-gallery .carousel .item .thumb {
   width: 25%;
   cursor: pointer;
   float: left;
 }
-.reece-b3-gallery .item .thumb img {
+.reece-b3-gallery .carousel .item .thumb img {
   width: 100%;
   margin: 2px;
 }
-.reece-b3-gallery .item img {
+.reece-b3-gallery .carousel .item img {
   width: 100%;
 }
 .reece-b3-gallery .carousel-control {
   background: none;
-  transform: translateY(-50%);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10%;
+  height: 100%;
 }
-.reece-b3-gallery .glyphicon-chevron-right:before,
-.reece-b3-gallery .glyphicon-chevron-left:before {
+.reece-b3-gallery .carousel-control .glyphicon-chevron-right,
+.reece-b3-gallery .carousel-control .glyphicon-chevron-left {
+  width: 30px;
+  height: 30px;
+  margin-top: -15px;
+  font-size: 30px;
+}
+.reece-b3-gallery .carousel-control .glyphicon-chevron-right:before,
+.reece-b3-gallery .carousel-control .glyphicon-chevron-left:before {
   color: white;
   font-size: 30px;
+}
+.reece-b3-gallery #carousel {
+  margin-bottom: 10px;
+}
+@media (min-width: 979px) {
+  .reece-b3-gallery #carousel {
+    margin-bottom: 20px;
+  }
+}
+.reece-b3-gallery #thumbcarousel {
+  margin-bottom: 40px;
+}
+.reece-b3-gallery #thumbcarousel .carousel-control .glyphicon-chevron-right,
+.reece-b3-gallery #thumbcarousel .carousel-control .glyphicon-chevron-left {
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  margin-top: -10px;
+}
+.reece-b3-gallery #thumbcarousel .carousel-control .glyphicon-chevron-right:before,
+.reece-b3-gallery #thumbcarousel .carousel-control .glyphicon-chevron-left:before {
+  font-size: 20px;
 }
 .reece-b3-gallery .gallery-details {
   margin-bottom: 20px;
 }
+.reece-b3-gallery .products-used {
+  border-top: solid 1px #eeeeee;
+}
 .reece-b3-gallery .products-used .products-used-header {
   margin-bottom: 20px;
 }
+/* /.reece-b3-gallery */
 .form-control-feedback {
   pointer-events: auto;
 }

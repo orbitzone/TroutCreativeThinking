@@ -7,5 +7,8 @@
     "grunt-contrib-watch": "~0.6.1",
     "grunt-newer": "^0.7.0",
     "grunt-notify": "~0.4.1"
+  },
+  "dependencies": {
+    "jquery-touchswipe": "^1.6.15"
   }
 }

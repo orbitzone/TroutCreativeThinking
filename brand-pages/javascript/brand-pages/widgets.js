@@ -36,6 +36,7 @@ var player = {
       playerVars: {
         showinfo: 0,
         modestbranding: 0,
+        autoplay: (player.autoplay == true)? 1: 0,
         rel: 0
         /*controls: 0,
         modestbranding: 1,

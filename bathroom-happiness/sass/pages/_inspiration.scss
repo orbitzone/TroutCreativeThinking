@@ -223,6 +223,9 @@ body.inspiration {
 					&.destination{
 						top: 80px;
 						right: 150px;
+						.top{
+							text-decoration: underline;
+						}
 					}
 					&.love-luxury{
 						top: 0;

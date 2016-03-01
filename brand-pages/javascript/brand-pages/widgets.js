@@ -1,3 +1,20 @@
+var isMobile = {
+    Windows: function() {
+        return /IEMobile/i.test(navigator.userAgent);
+    },
+    Android: function() {
+        return /Android/i.test(navigator.userAgent);
+    },
+    BlackBerry: function() {
+        return /BlackBerry/i.test(navigator.userAgent);
+    },
+    iOS: function() {
+        return /iPhone|iPad|iPod/i.test(navigator.userAgent);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
+    }
+};
 var player = {
 	autoplay: false,
 	active: '',
@@ -6,9 +23,6 @@ var player = {
 		if (typeof(YT) == 'undefined' || typeof(YT.Player) == 'undefined') {
 			window.onYouTubeIframeAPIReady = function() {
 				player.obj[container] = player.loadPlayer(container, videoId);				
-				if(player.autoplay){
-					player.play(container);
-  			}
       };
       //This code loads the IFrame Player API code asynchronously.
 			var tag = document.createElement('script');
@@ -20,11 +34,11 @@ var player = {
     		var video = player.obj[container];
   			if(video.getVideoData().video_id != videoId){
   				player.obj[container].loadVideoById(videoId);     
-  				if(player.autoplay){
+  				if(player.autoplay && !isMobile){
     				player.play(container);
     			}
   			}else{
-  				if(player.autoplay){
+  				if(player.autoplay && !isMobile){
     				player.play(container);
     			}
     		}
@@ -51,7 +65,7 @@ var player = {
       },
       events: {
       	'onReady': function(event){
-      		if(player.autoplay == true){
+      		if(player.autoplay == true  && !isMobile){
       			player.play(container);
       		}
       		$(window).resize();      		
@@ -244,18 +258,32 @@ var widgets = {
 					if(video){
 						player.autoplay = true;
 						player.init(player_container,video);
-						$(this).parent().parent().find('.image').fadeTo(300,0);
+						$(this).parent().parent().find('.image').fadeTo(300,0,function(){
+							$(this).css({'display':'none'});
+						});
 						$(this).parent().parent().find('.close').slideDown(300);
-						$(this).fadeTo(300,0);
+						$(this).fadeTo(300,0, function(){
+							$(this).css({'display':'none'});
+						});
 					}
 				});
 
 				$(this).find('.close').on('click', function(){
 					player.stop();
+					$(this).parent().parent().parent().find('.image').css({ 'display':'block'});
 					$(this).parent().parent().parent().find('.image').fadeTo(300,1);
+					$(this).parent().parent().parent().find('.play').css({ 'display':'block'});
 					$(this).parent().parent().parent().find('.play').fadeTo(300,1);
 					$(this).slideUp(300);
 				});
+			});
+			slider.on('beforeChange', function(){
+				player.stop();	
+				$('.video-collection-slides .image').css({ 'display':'block'});
+				$('.video-collection-slides .image').css({ 'display':'block'});
+				$('.video-collection-slides .image').fadeTo(300,1);
+				$('.video-collection-slides .play').fadeTo(300,1);
+				$('.video-collection-slides .close').slideUp(300);
 			});
 			
 			

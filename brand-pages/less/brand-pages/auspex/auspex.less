@@ -192,6 +192,11 @@ div.brand-pages{
 					padding-left: 20px;
 					position: relative;
 					margin-bottom: 30px;
+					max-width: 380px;
+					font-size: 32px;
+					@media (min-width: @screen-sm){
+						font-size: 36px;
+					}
 					&:after{
 						width: 5px;
 						height: 68px;
@@ -224,10 +229,13 @@ div.brand-pages{
 			.slide{
 				h4{
 					font-weight: 500;
-					font-size: 30px;
+					font-size: 26px;
 					text-transform: uppercase;
 					color: white;
-					margin-bottom: 0;
+					margin-bottom: 10px;
+					@media (min-width: @screen-sm){
+						font-size: 30px;
+					}
 				}
 				.slide-content{
 					.rbp-icon{

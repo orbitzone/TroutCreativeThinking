@@ -45,12 +45,7 @@ var player = {
       events: {
       	'onReady': function(event){
       		if(player.autoplay == true){
-      			setTimeout(function(){
-							player.play(container);
-							setTimeout(function(){
-								player.play(container);
-							},500);
-      			},500);      			
+      			//player.play(container);
       		}
       		$(window).resize();      		
       	},

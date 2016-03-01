@@ -6685,6 +6685,7 @@ li {
 }
 .reece-b3-gallery .carousel-control {
   background: none;
+  filter: none;
   position: absolute;
   top: 0;
   bottom: 0;

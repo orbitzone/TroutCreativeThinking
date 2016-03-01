@@ -238,14 +238,19 @@ var widgets = {
 					if(video){
 						player.autoplay = true;
 						player.init(player_container,video);
-						$(this).parent().parent().find('.image').fadeTo(300,0);
+						$(this).parent().parent().find('.image').fadeTo(300,0,function(){
+							$(this).css({'display':'none'});
+						});
 						$(this).parent().parent().find('.close').slideDown(300);
-						$(this).fadeTo(300,0);
+						$(this).fadeTo(300,0, function(){
+							$(this).css({'display':'none'});
+						});
 					}
 				});
 
 				$(this).find('.close').on('click', function(){
 					player.stop();
+					$(this).parent().parent().parent().find('.image').css({ 'display':'block'});
 					$(this).parent().parent().parent().find('.image').fadeTo(300,1);
 					$(this).parent().parent().parent().find('.play').css({ 'display':'block'});
 					$(this).parent().parent().parent().find('.play').fadeTo(300,1);
@@ -254,7 +259,9 @@ var widgets = {
 			});
 			slider.on('beforeChange', function(){
 				player.stop();	
-				$('.video-collection-slides .image').fadeTo(300,1);
+				$('.video-collection-slides .image').fadeTo(300,1, function(){
+					$(this).css({'display':'none'});
+				});
 				$('.video-collection-slides .play').fadeTo(300,1, function(){
 					$(this).css({'display':'none'});
 				});

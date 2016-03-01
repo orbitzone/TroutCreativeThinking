@@ -47,6 +47,9 @@ var player = {
       		if(player.autoplay == true){
       			setTimeout(function(){
 							player.play(container);
+							setTimeout(function(){
+								player.play(container);
+							},500);
       			},500);      			
       		}
       		$(window).resize();      		

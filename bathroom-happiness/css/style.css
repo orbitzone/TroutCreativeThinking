@@ -2574,14 +2574,6 @@ body.inspiration .main .blocks .block a:hover .header .button-wrap .button {
   -o-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 164, ../sass/pages/_inspiration.scss */
-body.inspiration .main .blocks .block a:hover .content .image {
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -o-transform: scale(1.2);
-  transform: scale(1.2);
-}
 /* line 171, ../sass/pages/_inspiration.scss */
 body.inspiration .main .blocks .block.bathroom-gallery .summary {
   max-width: 190px;
@@ -2627,11 +2619,11 @@ body.inspiration .main .destination-happiness .hex-wrap .button {
 }
 /* line 203, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .hex-wrap .button:hover {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
 }
 /* line 206, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .hex-wrap .button .text {
@@ -2696,25 +2688,16 @@ body.inspiration .main .destination-happiness .destination-links a {
   font-weight: bold;
   margin-bottom: 18px;
   display: block;
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1);
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  -moz-transition: color 0.3s ease-out;
+  -o-transition: color 0.3s ease-out;
+  -webkit-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
 }
 /* line 258, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .destination-links a:hover {
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  -o-transform: scale(1.05);
-  transform: scale(1.05);
+  color: #6dc8b6;
 }
-/* line 263, ../sass/pages/_inspiration.scss */
+/* line 264, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .btn {
   color: white;
   font-size: 13.2px;
@@ -2732,11 +2715,11 @@ body.inspiration .main .destination-happiness .btn {
   padding: 17px;
   letter-spacing: 0.1;
 }
-/* line 273, ../sass/pages/_inspiration.scss */
+/* line 274, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .btn:hover {
   background: #698894;
 }
-/* line 279, ../sass/pages/_inspiration.scss */
+/* line 280, ../sass/pages/_inspiration.scss */
 body.inspiration footer {
   margin-top: 0;
 }

@@ -162,7 +162,7 @@ body.inspiration {
 						}
 						.content{
 							.image{
-								@include transform(scale(1.2));
+								//@include transform(scale(1.2));
 							}
 						}
 					}
@@ -201,7 +201,7 @@ body.inspiration {
 					@include transform(scale(1));
 					@include transition(0.3s all ease-out);
 					&:hover{
-						@include transform(scale(1.1));
+						@include transform(scale(1.05));
 					}
 					.text{
 						position: absolute;
@@ -253,10 +253,11 @@ body.inspiration {
 					font-weight: bold;
 					margin-bottom: 18px;
 					display: block;
-					@include transform(scale(1));
-					@include transition(0.3s all ease-out);
+					//@include transform(scale(1));
+					@include transition(0.3s color ease-out);
 					&:hover{
-						@include transform(scale(1.05));
+						color: $destination-happiness-green;
+						//@include transform(scale(1.05));
 					}					
 				}
 			}

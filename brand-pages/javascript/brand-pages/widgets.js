@@ -3,7 +3,7 @@ var player = {
 	active: '',
 	obj:{},
 	init: function(container, videoId){
-		 window.onYouTubeIframeAPIReady = function() {
+		window.onYouTubeIframeAPIReady = function() {
 			player.obj[container] = player.loadPlayer(container, videoId);				
 		};
 		if (typeof(YT) == 'undefined' || typeof(YT.Player) == 'undefined') {
@@ -34,7 +34,7 @@ var player = {
       width: 790,
       height: 444,
       playerVars: {
-        autoplay: player.autoplay,
+        autoplay: (player.autoplay == true)? 1: 0,
         showinfo: 0,
         modestbranding: 0,
         rel: 0

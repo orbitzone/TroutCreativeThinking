@@ -32,7 +32,7 @@ var player = {
       playerVars: {
         showinfo: 0,
         modestbranding: 0,
-        autoplay: (player.autoplay == true)? 1: 0,
+        autoplay: player.autoplay,
         rel: 0
         /*controls: 0,
         modestbranding: 1,
@@ -41,8 +41,10 @@ var player = {
       },
       events: {
       	'onReady': function(event){
-	        event.target.playVideo();
-      		$(window).resize();      		
+      		if(player.autoplay){
+      			player.play();
+      		}
+	        $(window).resize();      		
       	},
       	'onStateChange': function(event){
       		if(event.data == YT.PlayerState.PLAYING){

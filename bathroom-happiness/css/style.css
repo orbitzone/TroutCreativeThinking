@@ -2797,48 +2797,54 @@ body.trends .intro h1 {
   font-weight: 300;
   text-align: center;
   text-transform: uppercase;
-  font-size: 26px;
   letter-spacing: 0.17em;
+  font-size: 20px;
 }
-/* line 53, ../sass/pages/_trends.scss */
+@media (min-width: 768px) {
+  /* line 44, ../sass/pages/_trends.scss */
+  body.trends .intro h1 {
+    font-size: 26px;
+  }
+}
+/* line 56, ../sass/pages/_trends.scss */
 body.trends .intro .rte {
   text-align: center;
   font-size: 15px;
   max-width: 715px;
   margin: 0 auto;
 }
-/* line 60, ../sass/pages/_trends.scss */
+/* line 63, ../sass/pages/_trends.scss */
 body.trends .blocks {
   margin-bottom: 30px;
 }
-/* line 62, ../sass/pages/_trends.scss */
+/* line 65, ../sass/pages/_trends.scss */
 body.trends .blocks .row {
   margin-left: -11.5px;
   margin-right: -11.5px;
 }
-/* line 65, ../sass/pages/_trends.scss */
+/* line 68, ../sass/pages/_trends.scss */
 body.trends .blocks .row .col-sm-6 {
   padding: 0 11.5px;
 }
-/* line 69, ../sass/pages/_trends.scss */
+/* line 72, ../sass/pages/_trends.scss */
 body.trends .blocks .block {
   background: white;
   text-align: center;
   margin-bottom: 30px;
 }
-/* line 73, ../sass/pages/_trends.scss */
+/* line 76, ../sass/pages/_trends.scss */
 body.trends .blocks .block a {
   display: block;
   text-decoration: none;
   color: black;
 }
-/* line 77, ../sass/pages/_trends.scss */
+/* line 80, ../sass/pages/_trends.scss */
 body.trends .blocks .block a .header {
   position: relative;
   z-index: 2;
   padding: 26px 30px 42px;
 }
-/* line 82, ../sass/pages/_trends.scss */
+/* line 85, ../sass/pages/_trends.scss */
 body.trends .blocks .block a .header h2 {
   color: black;
   margin-top: 0;
@@ -2846,7 +2852,7 @@ body.trends .blocks .block a .header h2 {
   letter-spacing: -0.03em;
   font-weight: bold;
 }
-/* line 89, ../sass/pages/_trends.scss */
+/* line 92, ../sass/pages/_trends.scss */
 body.trends .blocks .block a .header .button-wrap {
   position: absolute;
   bottom: 0;
@@ -2859,7 +2865,7 @@ body.trends .blocks .block a .header .button-wrap {
   transform: translateY(50%);
   text-align: center;
 }
-/* line 96, ../sass/pages/_trends.scss */
+/* line 99, ../sass/pages/_trends.scss */
 body.trends .blocks .block a .header .button-wrap .button {
   background: black;
   color: white;
@@ -2879,35 +2885,35 @@ body.trends .blocks .block a .header .button-wrap .button {
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
-/* line 107, ../sass/pages/_trends.scss */
+/* line 110, ../sass/pages/_trends.scss */
 body.trends .blocks .block a .header .button-wrap .button.white {
   background: white;
   color: black;
 }
-/* line 114, ../sass/pages/_trends.scss */
+/* line 117, ../sass/pages/_trends.scss */
 body.trends .blocks .block a .content {
   position: relative;
   overflow: hidden;
 }
 @media (min-width: 768px) {
-  /* line 114, ../sass/pages/_trends.scss */
+  /* line 117, ../sass/pages/_trends.scss */
   body.trends .blocks .block a .content {
     height: 228.7563401px;
   }
 }
 @media (min-width: 992px) {
-  /* line 114, ../sass/pages/_trends.scss */
+  /* line 117, ../sass/pages/_trends.scss */
   body.trends .blocks .block a .content {
     height: 289.696386px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 114, ../sass/pages/_trends.scss */
+  /* line 117, ../sass/pages/_trends.scss */
   body.trends .blocks .block a .content {
     height: 371px;
   }
 }
-/* line 126, ../sass/pages/_trends.scss */
+/* line 129, ../sass/pages/_trends.scss */
 body.trends .blocks .block a .content .image {
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -2920,7 +2926,7 @@ body.trends .blocks .block a .content .image {
   transition: all 0.5s ease-out;
 }
 @media (min-width: 768px) {
-  /* line 126, ../sass/pages/_trends.scss */
+  /* line 129, ../sass/pages/_trends.scss */
   body.trends .blocks .block a .content .image {
     position: absolute;
     top: 0;
@@ -2931,12 +2937,12 @@ body.trends .blocks .block a .content .image {
   }
 }
 @media (min-width: 768px) {
-  /* line 138, ../sass/pages/_trends.scss */
+  /* line 141, ../sass/pages/_trends.scss */
   body.trends .blocks .block a .content img {
     display: none;
   }
 }
-/* line 144, ../sass/pages/_trends.scss */
+/* line 147, ../sass/pages/_trends.scss */
 body.trends .blocks .block a .content .video figure {
   width: 100%;
   height: 100%;
@@ -2945,7 +2951,7 @@ body.trends .blocks .block a .content .video figure {
   top: 0;
   left: 0;
 }
-/* line 151, ../sass/pages/_trends.scss */
+/* line 154, ../sass/pages/_trends.scss */
 body.trends .blocks .block a .content .video figure .top {
   width: 100%;
   height: 100%;
@@ -2955,12 +2961,12 @@ body.trends .blocks .block a .content .video figure .top {
   opacity: 0;
   z-index: 1;
 }
-/* line 160, ../sass/pages/_trends.scss */
+/* line 163, ../sass/pages/_trends.scss */
 body.trends .blocks .block a .content .video figure iframe {
   display: none;
 }
 @media (min-width: 768px) {
-  /* line 160, ../sass/pages/_trends.scss */
+  /* line 163, ../sass/pages/_trends.scss */
   body.trends .blocks .block a .content .video figure iframe {
     display: block;
     opacity: 0;
@@ -2978,12 +2984,12 @@ body.trends .blocks .block a .content .video figure iframe {
     -webkit-transition: opacity 0.3s ease-out;
     transition: opacity 0.3s ease-out;
   }
-  /* line 171, ../sass/pages/_trends.scss */
+  /* line 174, ../sass/pages/_trends.scss */
   body.trends .blocks .block a .content .video figure iframe.ready {
     opacity: 1;
   }
 }
-/* line 182, ../sass/pages/_trends.scss */
+/* line 185, ../sass/pages/_trends.scss */
 body.trends .blocks .block a:hover .header .button-wrap .button {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
@@ -2991,7 +2997,7 @@ body.trends .blocks .block a:hover .header .button-wrap .button {
   -o-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 188, ../sass/pages/_trends.scss */
+/* line 191, ../sass/pages/_trends.scss */
 body.trends .blocks .block a:hover .content .image {
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);

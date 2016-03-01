@@ -41,10 +41,7 @@ var player = {
       },
       events: {
       	'onReady': function(event){
-      		var iOS = /(iPad|iPhone|iPod|Android)/g.test(navigator.userAgent);
-			    if (!iOS) {
-			        event.target.playVideo();
-			    }
+	        event.target.playVideo();
       		$(window).resize();      		
       	},
       	'onStateChange': function(event){

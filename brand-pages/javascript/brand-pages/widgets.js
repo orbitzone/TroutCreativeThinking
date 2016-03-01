@@ -54,7 +54,6 @@ var player = {
       width: 790,
       height: 444,
       playerVars: {
-        autoplay: (player.autoplay == true)?1:0,
         showinfo: 0,
         modestbranding: 0,
         rel: 0
@@ -73,7 +72,7 @@ var player = {
       	'onStateChange': function(event){
       		if(event.data == YT.PlayerState.PLAYING){
     				$.each(player.obj, function(key){
-    					if(key != event.target.m.id){
+    					if(key != event.target.c.id){
 								if(typeof player.obj[key].stopVideo !== "undefined"){
 							  	player.obj[key].stopVideo();		  	      
 								}
@@ -87,10 +86,12 @@ var player = {
 	play: function(id){
 		var video = player.obj[id];
 		if(typeof video.playVideo !== "undefined"){
+			console.log('play');
 			video.playVideo();
 		}
 	},
 	stop: function(id){
+		console.log('stop');
 		if(typeof id !== "undefined"){
 			var video = player.obj[id];
 			if(typeof video.stopVideo !== "undefined"){

@@ -17,6 +17,10 @@ var player = {
     		var video = player.obj[container];
   			if(video.getVideoData().video_id != videoId){
   				player.obj[container].loadVideoById(videoId);  				
+  			}else{
+  				if(player.autoplay){
+      			player.play();
+      		}
   			}
     	}else{
       	player.obj[container] = player.loadPlayer(container, videoId)	;     
@@ -243,6 +247,7 @@ var widgets = {
 				$(this).find('.close').on('click', function(){
 					player.stop();
 					$(this).parent().parent().parent().find('.image').fadeTo(300,1);
+					$(this).parent().parent().parent().find('.play').css({ 'display':'block'});
 					$(this).parent().parent().parent().find('.play').fadeTo(300,1);
 					$(this).slideUp(300);
 				});
@@ -250,7 +255,9 @@ var widgets = {
 			slider.on('beforeChange', function(){
 				player.stop();	
 				$('.video-collection-slides .image').fadeTo(300,1);
-				$('.video-collection-slides .play').fadeTo(300,1);
+				$('.video-collection-slides .play').fadeTo(300,1, function(){
+					$(this).css({'display':'none'});
+				});
 				$('.video-collection-slides .close').slideUp(300);
 			});
 			

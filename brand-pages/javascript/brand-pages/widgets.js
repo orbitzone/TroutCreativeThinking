@@ -257,6 +257,12 @@ var widgets = {
 					$(this).slideUp(300);
 				});
 			});
+			slider.on('beforeChange', function(){
+				player.stop();	
+				$('.video-collection-slides .image').fadeTo(300,1);
+				$('.video-collection-slides .play').fadeTo(300,1);
+				$('.video-collection-slides .close').slideUp(300);
+			});
 			
 			
 			/*$(this).find('.play').on('click', function(){

@@ -34,7 +34,7 @@ module.exports = function(grunt) {
         livereload: 35728
       },
       less: {
-        files: ['themes/*/less/*.less'],
+        files: ['less/*.less'],
         tasks: ['less'],
 
         options: {

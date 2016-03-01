@@ -6624,6 +6624,54 @@ li {
 .dropdown-menu {
   font-size: 12px;
 }
+/* GALLERY TEMPLATE */
+.reece-b3-gallery {
+  margin-bottom: 40px;
+  /* Bootstrap 3 Carousel with thumbnail navigation */
+}
+.reece-b3-gallery .reece-b3-gallery-header {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.reece-b3-gallery .thumbnail {
+  border: none;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.reece-b3-gallery #carousel {
+  margin-bottom: 20px;
+}
+.reece-b3-gallery #thumbcarousel {
+  margin-bottom: 40px;
+}
+.reece-b3-gallery .item .thumb {
+  width: 25%;
+  cursor: pointer;
+  float: left;
+}
+.reece-b3-gallery .item .thumb img {
+  width: 100%;
+  margin: 2px;
+}
+.reece-b3-gallery .item img {
+  width: 100%;
+}
+.reece-b3-gallery .carousel-control {
+  background: none;
+  transform: translateY(-50%);
+}
+.reece-b3-gallery .glyphicon-chevron-right:before,
+.reece-b3-gallery .glyphicon-chevron-left:before {
+  color: white;
+  font-size: 30px;
+}
+.reece-b3-gallery .gallery-details {
+  margin-bottom: 20px;
+}
+.reece-b3-gallery .products-used .products-used-header {
+  margin-bottom: 20px;
+}
 .form-control-feedback {
   pointer-events: auto;
 }
@@ -7340,7 +7388,7 @@ h6 {
   width: 120px;
   height: 50px;
   margin-bottom: 0px;
-  background: #ffffff url('/images/logos/reece-logo.png') no-repeat 0px;
+  background: #ffffff url('../images/logos/reece-logo.png') no-repeat 0px;
   background-size: 100%;
   float: left;
 }

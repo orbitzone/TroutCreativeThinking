@@ -15,6 +15,17 @@ var isMobile = {
         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
     }
 };
+var isIE = function(){
+  var ua = window.navigator.userAgent;
+  var msie = ua.indexOf("MSIE ");
+
+  if (msie > 0) {
+    return true;
+  }
+  else{
+    return false;
+  }
+};
 (function ($) {
   $(function () {
     $('.subscribe-form').validate();
@@ -60,18 +71,25 @@ var isMobile = {
           $('#water-therapy-video').height(height + 200);          
         }).resize();
         // When the player is ready, add listeners for pause, finish, and playProgress
-
-        var onPlay = function(){
+        console.log(isIE());
+        console.log(isMobile.any());
+        if(!isIE() && !isMobile.any()){
+          var onPlay = function(){
+            $('#water-therapy-video').addClass('ready');
+          };
+          player.addEvent('ready', function() {
+             // player.api('play');
+              player.addEvent('play', onPlay);
+              //player.addEvent('finish', onFinish);
+              //player.addEvent('playProgress', onPlayProgress);
+          });
+        }else{
+          console.log('done');
           $('#water-therapy-video').addClass('ready');
-        };
-        player.addEvent('ready', function() {
-          if(!isMobile){
-            player.api('play');
-            player.addEvent('play', onPlay);
+          if(isMobile.any()){
+            $('#water-therapy-video').remove();
           }
-            //player.addEvent('finish', onFinish);
-            //player.addEvent('playProgress', onPlayProgress);
-        });
+        }
     }
   });
 })(jQuery);

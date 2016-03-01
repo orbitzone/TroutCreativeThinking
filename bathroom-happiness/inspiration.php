@@ -98,7 +98,7 @@
                       <div class="video" data-video="TWLgxehGbOU">
                         <figure>
                           <div class="top"></div>
-                          <iframe id="water-therapy-video" src="https://player.vimeo.com/video/157096707?api=1&player_id=water-therapy-video&title=0&loop=1&badge=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                          <iframe id="water-therapy-video" src="https://player.vimeo.com/video/157096707?api=1&player_id=water-therapy-video&title=0&loop=1&badge=0&byline=0&portrait=0&autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                         </figure>
                       </div>
                     </div>

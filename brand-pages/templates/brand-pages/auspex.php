@@ -191,12 +191,12 @@
           <div class="video-collection-slides">
             <div class="slide">
               <div class="rte">
-                <h4>Sam Dinucci</h4>
+                <h4>Sam from Greensborough</h4>
                 <p>Hear Sam's Story</p>
               </div>
               <div class="video-container">
                 <div class="image">
-                  <img src="images/brand-pages/auspex/sam-dinucci-video.jpg" alt="Sam Dinucci Video">
+                  <img src="images/brand-pages/auspex/sam-dinucci-video.jpg" alt="Sam from Greensborough Video">
                 </div>
                 <div class="video">
                   <div class="video-wrapper">
@@ -219,12 +219,12 @@
             </div> 
             <div class="slide">
               <div class="rte">
-                <h4>Grant Ferguson</h4>
+                <h4>Grant from Nar Nar Goon</h4>
                 <p>Hear Grant's Story</p>
               </div>
               <div class="video-container">
                 <div class="image">
-                  <img src="images/brand-pages/auspex/grant-ferguson-video.jpg" alt="Grant Ferguson Video">
+                  <img src="images/brand-pages/auspex/grant-ferguson-video.jpg" alt="Grant from Nar Nar Goon Video">
                 </div>
                 <div class="video">
                   <div class="video-wrapper">
@@ -247,12 +247,12 @@
             </div>
             <div class="slide">
               <div class="rte">
-                <h4>Ben Dunstone</h4>
+                <h4>Ben from Eaglehawk</h4>
                 <p>Hear Ben's Story</p>
               </div>
               <div class="video-container">
                 <div class="image">
-                  <img src="images/brand-pages/auspex/ben-dunstone-video.jpg" alt="Ben Dunstone Video">
+                  <img src="images/brand-pages/auspex/ben-dunstone-video.jpg" alt="Ben from Eaglehawk Video">
                 </div>
                 <div class="video">
                   <div class="video-wrapper">
@@ -267,6 +267,34 @@
                 </div>
                 <div class="slide-content">
                   <button type="button" class="play" data-video="aZ1qGNqAu4o">
+                    <i class="rbp-icon"></i>
+                    <span class="label">View video</span>  
+                  </button>  
+                </div>
+              </div>              
+            </div> 
+            <div class="slide">
+              <div class="rte">
+                <h4>Joel from Narre Warren</h4>
+                <p>Hear Ben's Story</p>
+              </div>
+              <div class="video-container">
+                <div class="image">
+                  <img src="images/brand-pages/auspex/joel-video.jpg" alt="Joel from Narre Warren Video">
+                </div>
+                <div class="video">
+                  <div class="video-wrapper">
+                    <div class="video">
+                      <figure class="player">
+                      </figure>
+                    </div>
+                  </div>
+                  <button type="button" class="close">
+                    <i class="rbp-close-icon"></i>               
+                  </button>                    
+                </div>
+                <div class="slide-content">
+                  <button type="button" class="play" data-video="MX-KF8jjGTw">
                     <i class="rbp-icon"></i>
                     <span class="label">View video</span>  
                   </button>  

@@ -34,11 +34,11 @@ var player = {
     		var video = player.obj[container];
   			if(video.getVideoData().video_id != videoId){
   				player.obj[container].loadVideoById(videoId);     
-  				if(player.autoplay && !isMobile){
+  				if(player.autoplay && !isMobile.any()){
     				player.play(container);
     			}
   			}else{
-  				if(player.autoplay && !isMobile){
+  				if(player.autoplay && !isMobile.any()){
     				player.play(container);
     			}
     		}
@@ -54,7 +54,7 @@ var player = {
       width: 790,
       height: 444,
       playerVars: {
-        autoplay: player.autoplay,
+        autoplay: (player.autoplay == true)?1:0,
         showinfo: 0,
         modestbranding: 0,
         rel: 0
@@ -65,7 +65,7 @@ var player = {
       },
       events: {
       	'onReady': function(event){
-      		if(player.autoplay == true  && !isMobile){
+      		if(player.autoplay == true  && !isMobile.any()){
       			player.play(container);
       		}
       		$(window).resize();      		

@@ -83,6 +83,15 @@
                   <div class="item">
                     <img alt="product description" src="http://placehold.it/800x490/feb8aa/000&amp;text=Product+Image+8">
                   </div>
+                  <div class="item">
+                    <img alt="product description" src="http://placehold.it/800x490/00ffff/000&amp;text=Product+Image+9">
+                  </div>
+                  <div class="item">
+                    <img alt="product description" src="http://placehold.it/800x490/db371b/fff&amp;text=Product+Image+10">
+                  </div>
+                  <div class="item">
+                    <img alt="product description" src="http://placehold.it/800x490/feb8aa/000&amp;text=Product+Image+11">
+                  </div>
                 </div>
                 <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left"></span>
@@ -105,6 +114,11 @@
                       <div data-target="#carousel" data-slide-to="5" class="thumb"><img alt="product description" src="http://placehold.it/220x135/00ffcc/000&amp;text=Product+Image+6"></div>
                       <div data-target="#carousel" data-slide-to="6" class="thumb"><img alt="product description" src="http://placehold.it/220x135/db371b/fff&amp;text=Product+Image+7"></div>
                       <div data-target="#carousel" data-slide-to="7" class="thumb"><img alt="product description" src="http://placehold.it/220x135/feb8aa/000&amp;text=Product+Image+8"></div>
+                    </div>
+                    <div class="item">
+                      <div data-target="#carousel" data-slide-to="8" class="thumb"><img alt="product description" src="http://placehold.it/220x135/00ffcc/000&amp;text=Product+Image+9"></div>
+                      <div data-target="#carousel" data-slide-to="9" class="thumb"><img alt="product description" src="http://placehold.it/220x135/db371b/fff&amp;text=Product+Image+10"></div>
+                      <div data-target="#carousel" data-slide-to="10" class="thumb"><img alt="product description" src="http://placehold.it/220x135/feb8aa/000&amp;text=Product+Image+11"></div>
                     </div><!-- /item -->
                   </div><!-- /carousel-inner -->
                   <a class="left carousel-control" href="#thumbcarousel" role="button" data-slide="prev">
@@ -128,7 +142,7 @@
           <div class="row">
             <div class="col-md-12">
               <!-- products used -->
-              <div class="container products-used">
+              <div class="products-used">
                 <div class="row products-used-header">
                   <div class="col-md-9 col-sm-12">
                     <h2>Products Used</h2>
@@ -168,7 +182,7 @@
                   <div class="col-md-3 col-sm-12">
                   </div><!-- /col-md-3 col-sm-12 -->
                 </div><!-- /row -->
-              </div><!-- /.container -->
+              </div>
             </div>
           </div><!-- /row -->
         </div><!-- /col-md-9 col-sm-12 -->
@@ -190,33 +204,6 @@
                 <img src="http://placehold.it/800x490/ddd/333&amp;text=Related+Product+2" alt="product 2">
                 <div class="caption">
                   <h4>Related Product 2</h4>
-                  <p>Lorem ipsum dolor</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-12 col-sm-6 col-xs-12">
-              <a href="#" class="thumbnail">
-                <img src="http://placehold.it/800x490/ddd/333&amp;text=Related+Product+3" alt="product 3">
-                <div class="caption">
-                  <h4>Related Product 3</h4>
-                  <p>Lorem ipsum dolor</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-12 col-sm-6 col-xs-12">
-              <a href="#" class="thumbnail">
-                <img src="http://placehold.it/800x490/ddd/333&amp;text=Related+Product+3" alt="product 3">
-                <div class="caption">
-                  <h4>Related Product 3</h4>
-                  <p>Lorem ipsum dolor</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-12 col-sm-6 col-xs-12">
-              <a href="#" class="thumbnail">
-                <img src="http://placehold.it/800x490/ddd/333&amp;text=Related+Product+3" alt="product 3">
-                <div class="caption">
-                  <h4>Related Product 3</h4>
                   <p>Lorem ipsum dolor</p>
                 </div>
               </a>

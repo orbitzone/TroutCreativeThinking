@@ -1,11 +1,8 @@
 $(function() {
-  $("#thumbcarousel").swipe( {
-    //Generic swipe handler for all directions
+  $(".carousel").swipe( {
     swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-      console.log("You swiped " + direction );  
+      if(direction === 'right') $(this).carousel('prev');
+      else $(this).carousel('next');
     }
   });
-
-  //Set some options later
-  $("#test").swipe( {fingers:2} );
 });

@@ -25,7 +25,9 @@ module.exports = function(grunt) {
               // setup bootstrap3 less files
               {expand: true, cwd: 'bower_components/bootstrap/less', src: ['**'], dest: 'less/bootstrap'},
               // setup fontawesome less files
-              {expand: true, cwd: 'bower_components/fontawesome/less', src: ['**'], dest: 'less/font-awesome'}
+              {expand: true, cwd: 'bower_components/fontawesome/less', src: ['**'], dest: 'less/font-awesome'},
+              // setup touchswipe js file
+              {expand: true, cwd: 'node_modules/jquery-touchswipe', src: ['jquery.touchSwipe.min.js'], dest: 'javascript/vendor'}
           ]
       }
     },

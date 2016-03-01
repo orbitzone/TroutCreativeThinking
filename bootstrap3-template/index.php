@@ -60,28 +60,28 @@
               <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="7000">
                 <div class="carousel-inner">
                   <div class="item active">
-                    <img src="http://placehold.it/220x135/e8117f/fff&amp;text=Product+Main">
+                    <img alt="product description" src="http://placehold.it/800x490/e8117f/000&amp;text=Product+Image+1">
                   </div>
                   <div class="item">
-                    <img src="http://placehold.it/800x490/00ffff/000&amp;text=Product+Image+2">
+                    <img alt="product description" src="http://placehold.it/800x490/00ffff/000&amp;text=Product+Image+2">
                   </div>
                   <div class="item">
-                    <img src="http://placehold.it/800x490/ff00ff/fff&amp;text=Product+Image+3">
+                    <img alt="product description" src="http://placehold.it/800x490/ff00ff/fff&amp;text=Product+Image+3">
                   </div>
                   <div class="item">
-                    <img src="http://placehold.it/800x490/ffff00/000&amp;text=Product+Image+4">
+                    <img alt="product description" src="http://placehold.it/800x490/ffff00/000&amp;text=Product+Image+4">
                   </div>
                   <div class="item">
-                    <img src="http://placehold.it/800x490/612b65/fff&amp;text=Product+Image+5">
+                    <img alt="product description" src="http://placehold.it/800x490/612b65/fff&amp;text=Product+Image+5">
                   </div>
                   <div class="item">
-                    <img src="http://placehold.it/800x490/00ffff/000&amp;text=Product+Image+6">
+                    <img alt="product description" src="http://placehold.it/800x490/00ffff/000&amp;text=Product+Image+6">
                   </div>
                   <div class="item">
-                    <img src="http://placehold.it/800x490/db371b/fff&amp;text=Product+Image+7">
+                    <img alt="product description" src="http://placehold.it/800x490/db371b/fff&amp;text=Product+Image+7">
                   </div>
                   <div class="item">
-                    <img src="http://placehold.it/800x490/feb8aa/000&amp;text=Product+Image+8">
+                    <img alt="product description" src="http://placehold.it/800x490/feb8aa/000&amp;text=Product+Image+8">
                   </div>
                 </div>
                 <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
@@ -95,16 +95,16 @@
                 <div id="thumbcarousel" class="carousel slide" data-interval="false">
                   <div class="carousel-inner">
                     <div class="item active">
-                      <div data-target="#carousel" data-slide-to="0" class="thumb"><img src="http://placehold.it/220x135/e8117f/fff&amp;text=Product+Main"></div>
-                      <div data-target="#carousel" data-slide-to="1" class="thumb"><img src="http://placehold.it/220x135/00ffff/000&amp;text=Product+Image+2"></div>
-                      <div data-target="#carousel" data-slide-to="2" class="thumb"><img src="http://placehold.it/220x135/ff00ff/fff&amp;text=Product+Image+3"></div>
-                      <div data-target="#carousel" data-slide-to="3" class="thumb"><img src="http://placehold.it/220x135/ffff00/000&amp;text=Product+Image+4"></div>
+                      <div data-target="#carousel" data-slide-to="0" class="thumb"><img alt="product description" src="http://placehold.it/220x135/e8117f/fff&amp;text=Product+Main"></div>
+                      <div data-target="#carousel" data-slide-to="1" class="thumb"><img alt="product description" src="http://placehold.it/220x135/00ffff/000&amp;text=Product+Image+2"></div>
+                      <div data-target="#carousel" data-slide-to="2" class="thumb"><img alt="product description" src="http://placehold.it/220x135/ff00ff/fff&amp;text=Product+Image+3"></div>
+                      <div data-target="#carousel" data-slide-to="3" class="thumb"><img alt="product description" src="http://placehold.it/220x135/ffff00/000&amp;text=Product+Image+4"></div>
                     </div><!-- /item -->
                     <div class="item">
-                      <div data-target="#carousel" data-slide-to="4" class="thumb"><img src="http://placehold.it/220x135/612b65/fff&amp;text=Product+Image+5"></div>
-                      <div data-target="#carousel" data-slide-to="5" class="thumb"><img src="http://placehold.it/220x135/00ffcc/000&amp;text=Product+Image+6"></div>
-                      <div data-target="#carousel" data-slide-to="6" class="thumb"><img src="http://placehold.it/220x135/db371b/fff&amp;text=Product+Image+7"></div>
-                      <div data-target="#carousel" data-slide-to="7" class="thumb"><img src="http://placehold.it/220x135/feb8aa/000&amp;text=Product+Image+8"></div>
+                      <div data-target="#carousel" data-slide-to="4" class="thumb"><img alt="product description" src="http://placehold.it/220x135/612b65/fff&amp;text=Product+Image+5"></div>
+                      <div data-target="#carousel" data-slide-to="5" class="thumb"><img alt="product description" src="http://placehold.it/220x135/00ffcc/000&amp;text=Product+Image+6"></div>
+                      <div data-target="#carousel" data-slide-to="6" class="thumb"><img alt="product description" src="http://placehold.it/220x135/db371b/fff&amp;text=Product+Image+7"></div>
+                      <div data-target="#carousel" data-slide-to="7" class="thumb"><img alt="product description" src="http://placehold.it/220x135/feb8aa/000&amp;text=Product+Image+8"></div>
                     </div><!-- /item -->
                   </div><!-- /carousel-inner -->
                   <a class="left carousel-control" href="#thumbcarousel" role="button" data-slide="prev">
@@ -181,6 +181,7 @@
                 <img src="http://placehold.it/800x490/ddd/333&amp;text=Related+Product+1" alt="product 1">
                 <div class="caption">
                   <h4>Related Product 1</h4>
+                  <p>Lorem ipsum dolor</p>
                 </div>
               </a>
             </div>
@@ -189,6 +190,7 @@
                 <img src="http://placehold.it/800x490/ddd/333&amp;text=Related+Product+2" alt="product 2">
                 <div class="caption">
                   <h4>Related Product 2</h4>
+                  <p>Lorem ipsum dolor</p>
                 </div>
               </a>
             </div>
@@ -197,6 +199,34 @@
                 <img src="http://placehold.it/800x490/ddd/333&amp;text=Related+Product+3" alt="product 3">
                 <div class="caption">
                   <h4>Related Product 3</h4>
+                  <p>Lorem ipsum dolor</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-12 col-sm-6 col-xs-12">
+              <a href="#" class="thumbnail">
+                <img src="http://placehold.it/800x490/ddd/333&amp;text=Related+Product+3" alt="product 3">
+                <div class="caption">
+                  <h4>Related Product 3</h4>
+                  <p>Lorem ipsum dolor</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-12 col-sm-6 col-xs-12">
+              <a href="#" class="thumbnail">
+                <img src="http://placehold.it/800x490/ddd/333&amp;text=Related+Product+3" alt="product 3">
+                <div class="caption">
+                  <h4>Related Product 3</h4>
+                  <p>Lorem ipsum dolor</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-12 col-sm-6 col-xs-12">
+              <a href="#" class="thumbnail">
+                <img src="http://placehold.it/800x490/ddd/333&amp;text=Related+Product+3" alt="product 3">
+                <div class="caption">
+                  <h4>Related Product 3</h4>
+                  <p>Lorem ipsum dolor</p>
                 </div>
               </a>
             </div>
@@ -215,7 +245,9 @@
   <script type="text/javascript" src="javascript/jquery-1.11.2.min.js"></script>
   <script type="text/javascript" src="javascript/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
+  <script type="text/javascript" src="javascript/vendor/jquery.touchSwipe.min.js"></script>
   <script type="text/javascript" src="javascript/reece-ocnav.js"></script>
+  <script type="text/javascript" src="javascript/reece-gallery.js"></script>
 
 </body>
 </html>

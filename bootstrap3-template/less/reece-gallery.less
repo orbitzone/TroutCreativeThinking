@@ -19,39 +19,77 @@
 
     /* Bootstrap 3 Carousel with thumbnail navigation */
     
+    .carousel {
+      
+      .item .thumb {
+      	width: 25%;
+      	cursor: pointer;
+      	float: left;
+      }
+      .item .thumb img {
+      	width: 100%;
+      	margin: 2px;
+      }
+      .item img {
+      	width: 100%;	
+      }
+      
+    }
+  
+    .carousel-control {
+      background: none;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 10%;
+      height: 100%;
+      
+      .glyphicon-chevron-right,
+      .glyphicon-chevron-left {
+        width: 30px;
+        height: 30px;
+        margin-top: -15px;
+        font-size: 30px;
+      }
+      
+      .glyphicon-chevron-right:before,
+      .glyphicon-chevron-left:before {
+        color: white;
+        font-size: 30px;
+      }
+      
+    }
+      
     #carousel {
+      
+      margin-bottom: 10px;
+      
+      @media (min-width: @navbarCollapseWidth) {
         margin-bottom: 20px;
+      }
+      
     }
     
     #thumbcarousel {
         margin-bottom: 40px;
+        
+        .carousel-control {
+          
+          .glyphicon-chevron-right,
+          .glyphicon-chevron-left {
+            width: 20px;
+            height: 20px;
+            font-size: 20px;
+            margin-top: -10px;
+          }
+          
+          .glyphicon-chevron-right:before,
+          .glyphicon-chevron-left:before {
+            font-size: 20px;
+          }
+          
+        }
     }
-    
-    .item .thumb {
-    	width: 25%;
-    	cursor: pointer;
-    	float: left;
-    }
-    .item .thumb img {
-    	width: 100%;
-    	margin: 2px;
-    }
-    .item img {
-    	width: 100%;	
-    }
-    
-    .carousel-control {
-      background: none;
-      transform: translateY(-50%);
-    }
-    
-    .glyphicon-chevron-right:before,
-    .glyphicon-chevron-left:before {
-      color: white;
-      font-size: 30px;
-    }
-
-
     
     // gallery details
     .gallery-details {
@@ -61,10 +99,12 @@
     // products used container
     .products-used {
       
+      border-top: solid 1px @grayLighter;
+      
       .products-used-header {
           margin-bottom: 20px;
       }
       
     }
     
-}
+} /* /.reece-b3-gallery */

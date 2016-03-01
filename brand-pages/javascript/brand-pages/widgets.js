@@ -1,3 +1,20 @@
+var isMobile = {
+    Windows: function() {
+        return /IEMobile/i.test(navigator.userAgent);
+    },
+    Android: function() {
+        return /Android/i.test(navigator.userAgent);
+    },
+    BlackBerry: function() {
+        return /BlackBerry/i.test(navigator.userAgent);
+    },
+    iOS: function() {
+        return /iPhone|iPad|iPod/i.test(navigator.userAgent);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
+    }
+};
 var player = {
 	autoplay: false,
 	active: '',
@@ -17,11 +34,11 @@ var player = {
     		var video = player.obj[container];
   			if(video.getVideoData().video_id != videoId){
   				player.obj[container].loadVideoById(videoId);     
-  				if(player.autoplay){
+  				if(player.autoplay && !isMobile){
     				player.play(container);
     			}
   			}else{
-  				if(player.autoplay){
+  				if(player.autoplay && !isMobile){
     				player.play(container);
     			}
     		}
@@ -48,7 +65,7 @@ var player = {
       },
       events: {
       	'onReady': function(event){
-      		if(player.autoplay == true){
+      		if(player.autoplay == true  && !isMobile){
       			player.play(container);
       		}
       		$(window).resize();      		

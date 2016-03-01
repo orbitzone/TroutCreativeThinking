@@ -1,4 +1,20 @@
-'use strict';
+var isMobile = {
+    Windows: function() {
+        return /IEMobile/i.test(navigator.userAgent);
+    },
+    Android: function() {
+        return /Android/i.test(navigator.userAgent);
+    },
+    BlackBerry: function() {
+        return /BlackBerry/i.test(navigator.userAgent);
+    },
+    iOS: function() {
+        return /iPhone|iPad|iPod/i.test(navigator.userAgent);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
+    }
+};
 (function ($) {
   $(function () {
     $('.subscribe-form').validate();
@@ -37,19 +53,22 @@
     if($('body').hasClass('inspiration')){
         var iframe = $('#water-therapy-video')[0];
         var player = $f(iframe);
-        var height = $('.blocks .water-therapy .content').height();
-        var width = 16 * height/9;
-        $('#water-therapy-video').width(width);
-        $('#water-therapy-video').height(height + 200);
+        $(window).on('resize', function(){
+          var height = $('.blocks .water-therapy .content').height();
+          var width = 16 * height/9;
+          $('#water-therapy-video').width(width);
+          $('#water-therapy-video').height(height + 200);          
+        }).resize();
         // When the player is ready, add listeners for pause, finish, and playProgress
 
         var onPlay = function(){
           $('#water-therapy-video').addClass('ready');
         };
         player.addEvent('ready', function() {
+          if(!isMobile){
             player.api('play');
-          $('#water-therapy-video').addClass('ready');  
-            //player.addEvent('play', onPlay);
+            player.addEvent('play', onPlay);
+          }
             //player.addEvent('finish', onFinish);
             //player.addEvent('playProgress', onPlayProgress);
         });

@@ -2658,27 +2658,31 @@ body.inspiration .main .destination-happiness .hex-wrap .button.destination {
   top: 80px;
   right: 150px;
 }
-/* line 227, ../sass/pages/_inspiration.scss */
+/* line 226, ../sass/pages/_inspiration.scss */
+body.inspiration .main .destination-happiness .hex-wrap .button.destination .top {
+  text-decoration: underline;
+}
+/* line 230, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .hex-wrap .button.love-luxury {
   top: 0;
   right: 60px;
 }
-/* line 231, ../sass/pages/_inspiration.scss */
+/* line 234, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .hex-wrap .button.love-family {
   top: 115px;
   right: 7px;
 }
-/* line 235, ../sass/pages/_inspiration.scss */
+/* line 238, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .hex-wrap .button.love-calm {
   top: 237px;
   right: 54px;
 }
-/* line 241, ../sass/pages/_inspiration.scss */
+/* line 244, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .destination-links {
   margin-top: 48px;
   margin-bottom: 30px;
 }
-/* line 244, ../sass/pages/_inspiration.scss */
+/* line 247, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .destination-links a {
   color: #698894;
   font-size: 22px;
@@ -2698,7 +2702,7 @@ body.inspiration .main .destination-happiness .destination-links a {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-/* line 255, ../sass/pages/_inspiration.scss */
+/* line 258, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .destination-links a:hover {
   -webkit-transform: scale(1.05);
   -moz-transform: scale(1.05);
@@ -2706,7 +2710,7 @@ body.inspiration .main .destination-happiness .destination-links a:hover {
   -o-transform: scale(1.05);
   transform: scale(1.05);
 }
-/* line 260, ../sass/pages/_inspiration.scss */
+/* line 263, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .btn {
   color: white;
   font-size: 13.2px;
@@ -2724,11 +2728,11 @@ body.inspiration .main .destination-happiness .btn {
   padding: 17px;
   letter-spacing: 0.1;
 }
-/* line 270, ../sass/pages/_inspiration.scss */
+/* line 273, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .btn:hover {
   background: #698894;
 }
-/* line 276, ../sass/pages/_inspiration.scss */
+/* line 279, ../sass/pages/_inspiration.scss */
 body.inspiration footer {
   margin-top: 0;
 }

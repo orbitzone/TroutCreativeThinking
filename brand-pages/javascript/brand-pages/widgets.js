@@ -45,9 +45,6 @@ var player = {
       },
       events: {
       	'onReady': function(event){
-      		if(player.autoplay == true){
-      			player.play(container);
-      		}
       		$(window).resize();      		
       	},
       	'onStateChange': function(event){

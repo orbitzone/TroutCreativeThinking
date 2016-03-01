@@ -17,11 +17,7 @@ var player = {
     		var video = player.obj[container];
   			if(video.getVideoData().video_id != videoId){
   				player.obj[container].loadVideoById(videoId);  				
-  			}else{
-  				if(player.autoplay == true){
-    				player.play(container);
-    			}
-    		}
+  			}
     	}else{
       	player.obj[container] = player.loadPlayer(container, videoId)	;     
     	}
@@ -45,6 +41,10 @@ var player = {
       },
       events: {
       	'onReady': function(event){
+      		var iOS = /(iPad|iPhone|iPod|Android)/g.test(navigator.userAgent);
+			    if (!iOS) {
+			        event.target.playVideo();
+			    }
       		$(window).resize();      		
       	},
       	'onStateChange': function(event){

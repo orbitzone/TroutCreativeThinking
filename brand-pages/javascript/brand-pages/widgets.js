@@ -34,7 +34,6 @@ var player = {
       width: 790,
       height: 444,
       playerVars: {
-        autoplay: (player.autoplay == true)? 1: 0,
         showinfo: 0,
         modestbranding: 0,
         rel: 0
@@ -46,7 +45,9 @@ var player = {
       events: {
       	'onReady': function(event){
       		if(player.autoplay == true){
-      			player.play(container);
+      			setTimeout(function(){
+							player.play(container);
+      			},500);      			
       		}
       		$(window).resize();      		
       	},

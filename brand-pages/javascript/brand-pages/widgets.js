@@ -3,11 +3,14 @@ var player = {
 	active: '',
 	obj:{},
 	init: function(container, videoId){
-		window.onYouTubeIframeAPIReady = function() {
-			player.obj[container] = player.loadPlayer(container, videoId);				
-		};
 		if (typeof(YT) == 'undefined' || typeof(YT.Player) == 'undefined') {
-			//This code loads the IFrame Player API code asynchronously.
+			window.onYouTubeIframeAPIReady = function() {
+				player.obj[container] = player.loadPlayer(container, videoId);				
+				if(player.autoplay){
+					player.play(container);
+  			}
+      };
+      //This code loads the IFrame Player API code asynchronously.
 			var tag = document.createElement('script');
 			tag.src = "https://www.youtube.com/iframe_api";
 			var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -16,12 +19,15 @@ var player = {
     	if(typeof player.obj[container] !== 'undefined'){
     		var video = player.obj[container];
   			if(video.getVideoData().video_id != videoId){
-  				player.obj[container].loadVideoById(videoId);  				
+  				player.obj[container].loadVideoById(videoId);     
+  				if(player.autoplay){
+    				player.play(container);
+    			}
   			}else{
   				if(player.autoplay){
-      			player.play();
-      		}
-  			}
+    				player.play(container);
+    			}
+    		}
     	}else{
       	player.obj[container] = player.loadPlayer(container, videoId)	;     
     	}
@@ -34,9 +40,9 @@ var player = {
       width: 790,
       height: 444,
       playerVars: {
+        autoplay: player.autoplay,
         showinfo: 0,
         modestbranding: 0,
-        autoplay: player.autoplay,
         rel: 0
         /*controls: 0,
         modestbranding: 1,
@@ -45,10 +51,10 @@ var player = {
       },
       events: {
       	'onReady': function(event){
-      		if(player.autoplay){
-      			player.play();
+      		if(player.autoplay == true){
+      			player.play(container);
       		}
-	        $(window).resize();      		
+      		$(window).resize();      		
       	},
       	'onStateChange': function(event){
       		if(event.data == YT.PlayerState.PLAYING){
@@ -260,7 +266,7 @@ var widgets = {
 			slider.on('beforeChange', function(){
 				player.stop();	
 				$('.video-collection-slides .image').css({ 'display':'block'});
-				$('.video-collection-slides .play').css({ 'display':'block'});
+				$('.video-collection-slides .image').css({ 'display':'block'});
 				$('.video-collection-slides .image').fadeTo(300,1);
 				$('.video-collection-slides .play').fadeTo(300,1);
 				$('.video-collection-slides .close').slideUp(300);

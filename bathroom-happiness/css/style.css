@@ -2741,28 +2741,32 @@ body.inspiration footer {
 body.trends .main {
   background-color: #ededed;
 }
-/* line 6, ../sass/pages/_trends.scss */
+/* line 5, ../sass/pages/_trends.scss */
+body.trends .site-footer {
+  margin-top: 0;
+}
+/* line 9, ../sass/pages/_trends.scss */
 body.trends #banner .container-fluid {
   max-width: 1366px;
   margin: 0 auto;
 }
-/* line 9, ../sass/pages/_trends.scss */
+/* line 12, ../sass/pages/_trends.scss */
 body.trends #banner .container-fluid .banner {
   background-image: url(../images/trends/banner.jpg);
   background-size: cover;
   height: 200px;
 }
 @media (min-width: 768px) {
-  /* line 9, ../sass/pages/_trends.scss */
+  /* line 12, ../sass/pages/_trends.scss */
   body.trends #banner .container-fluid .banner {
     height: 263px;
   }
 }
-/* line 17, ../sass/pages/_trends.scss */
+/* line 20, ../sass/pages/_trends.scss */
 body.trends #banner .container-fluid .text {
   text-align: center;
 }
-/* line 19, ../sass/pages/_trends.scss */
+/* line 22, ../sass/pages/_trends.scss */
 body.trends #banner .container-fluid .text span {
   font-weight: bold;
   text-align: center;
@@ -2775,18 +2779,18 @@ body.trends #banner .container-fluid .text span {
   -webkit-text-fill-color: transparent;
 }
 @media (min-width: 768px) {
-  /* line 19, ../sass/pages/_trends.scss */
+  /* line 22, ../sass/pages/_trends.scss */
   body.trends #banner .container-fluid .text span {
     font-size: 68px;
     line-height: 263px;
   }
 }
-/* line 38, ../sass/pages/_trends.scss */
+/* line 41, ../sass/pages/_trends.scss */
 body.trends .intro {
   padding-top: 50px;
   padding-bottom: 40px;
 }
-/* line 41, ../sass/pages/_trends.scss */
+/* line 44, ../sass/pages/_trends.scss */
 body.trends .intro h1 {
   margin-top: 0;
   font-family: "Gotham A", "Gotham B", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -2796,45 +2800,45 @@ body.trends .intro h1 {
   font-size: 26px;
   letter-spacing: 0.17em;
 }
-/* line 50, ../sass/pages/_trends.scss */
+/* line 53, ../sass/pages/_trends.scss */
 body.trends .intro .rte {
   text-align: center;
   font-size: 15px;
   max-width: 715px;
   margin: 0 auto;
 }
-/* line 57, ../sass/pages/_trends.scss */
+/* line 60, ../sass/pages/_trends.scss */
 body.trends .blocks {
-  margin-bottom: 52px;
+  margin-bottom: 30px;
 }
-/* line 59, ../sass/pages/_trends.scss */
+/* line 62, ../sass/pages/_trends.scss */
 body.trends .blocks .row {
   margin-left: -11.5px;
   margin-right: -11.5px;
 }
-/* line 62, ../sass/pages/_trends.scss */
+/* line 65, ../sass/pages/_trends.scss */
 body.trends .blocks .row .col-sm-6 {
   padding: 0 11.5px;
 }
-/* line 66, ../sass/pages/_trends.scss */
+/* line 69, ../sass/pages/_trends.scss */
 body.trends .blocks .block {
   background: white;
   text-align: center;
-  margin-bottom: 23px;
+  margin-bottom: 30px;
 }
-/* line 70, ../sass/pages/_trends.scss */
+/* line 73, ../sass/pages/_trends.scss */
 body.trends .blocks .block a {
   display: block;
   text-decoration: none;
   color: black;
 }
-/* line 74, ../sass/pages/_trends.scss */
+/* line 77, ../sass/pages/_trends.scss */
 body.trends .blocks .block a .header {
   position: relative;
   z-index: 2;
   padding: 26px 30px 42px;
 }
-/* line 79, ../sass/pages/_trends.scss */
+/* line 82, ../sass/pages/_trends.scss */
 body.trends .blocks .block a .header h2 {
   color: black;
   margin-top: 0;
@@ -2842,7 +2846,7 @@ body.trends .blocks .block a .header h2 {
   letter-spacing: -0.03em;
   font-weight: bold;
 }
-/* line 86, ../sass/pages/_trends.scss */
+/* line 89, ../sass/pages/_trends.scss */
 body.trends .blocks .block a .header .button-wrap {
   position: absolute;
   bottom: 0;
@@ -2855,7 +2859,7 @@ body.trends .blocks .block a .header .button-wrap {
   transform: translateY(50%);
   text-align: center;
 }
-/* line 93, ../sass/pages/_trends.scss */
+/* line 96, ../sass/pages/_trends.scss */
 body.trends .blocks .block a .header .button-wrap .button {
   background: black;
   color: white;
@@ -2875,35 +2879,35 @@ body.trends .blocks .block a .header .button-wrap .button {
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
-/* line 104, ../sass/pages/_trends.scss */
+/* line 107, ../sass/pages/_trends.scss */
 body.trends .blocks .block a .header .button-wrap .button.white {
   background: white;
   color: black;
 }
-/* line 111, ../sass/pages/_trends.scss */
+/* line 114, ../sass/pages/_trends.scss */
 body.trends .blocks .block a .content {
   position: relative;
   overflow: hidden;
 }
 @media (min-width: 768px) {
-  /* line 111, ../sass/pages/_trends.scss */
+  /* line 114, ../sass/pages/_trends.scss */
   body.trends .blocks .block a .content {
     height: 228.7563401px;
   }
 }
 @media (min-width: 992px) {
-  /* line 111, ../sass/pages/_trends.scss */
+  /* line 114, ../sass/pages/_trends.scss */
   body.trends .blocks .block a .content {
     height: 289.696386px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 111, ../sass/pages/_trends.scss */
+  /* line 114, ../sass/pages/_trends.scss */
   body.trends .blocks .block a .content {
     height: 371px;
   }
 }
-/* line 123, ../sass/pages/_trends.scss */
+/* line 126, ../sass/pages/_trends.scss */
 body.trends .blocks .block a .content .image {
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -2916,7 +2920,7 @@ body.trends .blocks .block a .content .image {
   transition: all 0.5s ease-out;
 }
 @media (min-width: 768px) {
-  /* line 123, ../sass/pages/_trends.scss */
+  /* line 126, ../sass/pages/_trends.scss */
   body.trends .blocks .block a .content .image {
     position: absolute;
     top: 0;
@@ -2927,12 +2931,12 @@ body.trends .blocks .block a .content .image {
   }
 }
 @media (min-width: 768px) {
-  /* line 135, ../sass/pages/_trends.scss */
+  /* line 138, ../sass/pages/_trends.scss */
   body.trends .blocks .block a .content img {
     display: none;
   }
 }
-/* line 141, ../sass/pages/_trends.scss */
+/* line 144, ../sass/pages/_trends.scss */
 body.trends .blocks .block a .content .video figure {
   width: 100%;
   height: 100%;
@@ -2941,7 +2945,7 @@ body.trends .blocks .block a .content .video figure {
   top: 0;
   left: 0;
 }
-/* line 148, ../sass/pages/_trends.scss */
+/* line 151, ../sass/pages/_trends.scss */
 body.trends .blocks .block a .content .video figure .top {
   width: 100%;
   height: 100%;
@@ -2951,12 +2955,12 @@ body.trends .blocks .block a .content .video figure .top {
   opacity: 0;
   z-index: 1;
 }
-/* line 157, ../sass/pages/_trends.scss */
+/* line 160, ../sass/pages/_trends.scss */
 body.trends .blocks .block a .content .video figure iframe {
   display: none;
 }
 @media (min-width: 768px) {
-  /* line 157, ../sass/pages/_trends.scss */
+  /* line 160, ../sass/pages/_trends.scss */
   body.trends .blocks .block a .content .video figure iframe {
     display: block;
     opacity: 0;
@@ -2974,12 +2978,12 @@ body.trends .blocks .block a .content .video figure iframe {
     -webkit-transition: opacity 0.3s ease-out;
     transition: opacity 0.3s ease-out;
   }
-  /* line 168, ../sass/pages/_trends.scss */
+  /* line 171, ../sass/pages/_trends.scss */
   body.trends .blocks .block a .content .video figure iframe.ready {
     opacity: 1;
   }
 }
-/* line 179, ../sass/pages/_trends.scss */
+/* line 182, ../sass/pages/_trends.scss */
 body.trends .blocks .block a:hover .header .button-wrap .button {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
@@ -2987,7 +2991,7 @@ body.trends .blocks .block a:hover .header .button-wrap .button {
   -o-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 185, ../sass/pages/_trends.scss */
+/* line 188, ../sass/pages/_trends.scss */
 body.trends .blocks .block a:hover .content .image {
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);

@@ -1,11 +1,11 @@
-window.onYouTubeIframeAPIReady = function() {
-	player.obj[container] = player.loadPlayer(container, videoId);				
-};
 var player = {
 	autoplay: false,
 	active: '',
 	obj:{},
 	init: function(container, videoId){
+		 window.onYouTubeIframeAPIReady = function() {
+			player.obj[container] = player.loadPlayer(container, videoId);				
+		};
 		if (typeof(YT) == 'undefined' || typeof(YT.Player) == 'undefined') {
 			//This code loads the IFrame Player API code asynchronously.
 			var tag = document.createElement('script');
@@ -16,10 +16,7 @@ var player = {
     	if(typeof player.obj[container] !== 'undefined'){
     		var video = player.obj[container];
   			if(video.getVideoData().video_id != videoId){
-  				player.obj[container].loadVideoById(videoId);     
-  				if(player.autoplay == true){
-    				player.play(container);
-    			}
+  				player.obj[container].loadVideoById(videoId);  				
   			}else{
   				if(player.autoplay == true){
     				player.play(container);

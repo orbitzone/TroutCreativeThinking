@@ -6,9 +6,6 @@ var player = {
 		if (typeof(YT) == 'undefined' || typeof(YT.Player) == 'undefined') {
 			window.onYouTubeIframeAPIReady = function() {
 				player.obj[container] = player.loadPlayer(container, videoId);				
-				if(player.autoplay){
-					player.play(container);
-  			}
       };
       //This code loads the IFrame Player API code asynchronously.
 			var tag = document.createElement('script');

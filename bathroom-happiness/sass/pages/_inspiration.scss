@@ -78,7 +78,7 @@ body.inspiration {
 								min-width: 200px;
 								text-transform: uppercase;
 								display: inline-block;
-								@include transform(scale(1));
+								@include transform(scale3d(1,1,1));
 								@include transition(0.5s all ease-out);
 								&.white{
 									background: white;
@@ -108,7 +108,7 @@ body.inspiration {
 								height: 100%;
 								background-size: cover;
 							}
-							@include transform(scale(1));
+							@include transform(scale3d(1,1,1));
 							@include transition(0.5s all ease-out);
 						}
 						img{
@@ -190,10 +190,10 @@ body.inspiration {
 				.button{
 					position: absolute;
 					display: inline-block;
-					@include transform(scale(1));
+					@include transform(scale3d(1,1,1));
 					@include transition(0.3s all ease-out);
 					&:hover{
-						@include transform(scale(1.05));
+						@include transform(scale3d(1.05,1.05,1.05));
 					}
 					.text{
 						position: absolute;
@@ -280,7 +280,7 @@ body.inspiration {
 						.button-wrap{
 							.button{
 								@media (min-width: $screen-sm){
-									@include transform(scale(1.1));
+									@include transform(scale3d(1.1,1.1,1.1));
 								}
 								//@include transform(translateY(-2px));
 								&.white{

@@ -16,5 +16,5 @@
     <script src='js/vendor/slick.min.js' type='text/javascript'></script>
     <script src='js/vendor/jquery.validate.min.js' type='text/javascript'></script>
     <?php if(isset($extra_javascript)){ echo $extra_javascript;}?>
-    <script src='js/main.min.js' type='text/javascript'></script>
+    <script src='js/src/main.js' type='text/javascript'></script>
   </head>

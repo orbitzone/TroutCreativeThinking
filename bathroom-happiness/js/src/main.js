@@ -36,10 +36,13 @@ var player = {
   active: '',
   ready: false,
   obj:{},
-  init: function(container, videoId, onReady){
+  init: function(container, videoId, onReady, playerVars){
     if (typeof(YT) == 'undefined' || typeof(YT.Player) == 'undefined') {
       window.onYouTubeIframeAPIReady = function() {
-        player.obj[container] = player.loadPlayer(container, videoId, onReady);        
+        player.obj[container] = {
+          player: player.loadPlayer(container, videoId, onReady, playerVars),
+          vars: playerVars 
+        };
       };
       //This code loads the IFrame Player API code asynchronously.
       var tag = document.createElement('script');
@@ -50,7 +53,7 @@ var player = {
       if(typeof player.obj[container] !== 'undefined'){
         var video = player.obj[container];
         if(video.getVideoData().video_id != videoId){
-          player.obj[container].loadVideoById(videoId);     
+          player.obj[container].player.loadVideoById(videoId);     
           if(player.autoplay && !isMobile.any()){
             player.play(container);
           }
@@ -60,66 +63,85 @@ var player = {
           }
         }
       }else{
-        player.obj[container] = player.loadPlayer(container, videoId, onReady) ;     
+        player.obj[container] = {
+          player: player.loadPlayer(container, videoId, onReady, playerVars),
+          vars: playerVars 
+        };        
       }
     }
   },
-  loadPlayer: function(container, videoId, onReady){
+  loadPlayer: function(container, videoId, onReady, playerVars){
    player.active = container;
-   return new YT.Player(container, {
-      videoId: videoId,
-      width: 790,
-      height: 444,
-      playerVars: {
+   if(typeof playerVars === 'undefined'){
+      playerVars = {
         showinfo: 0,
         modestbranding: 0,
-        rel: 0,
-        'loop': 1,
+        rel: 0
+        /*'loop': 1,
         'mute':1
         /*controls: 0,
         modestbranding: 1,
         rel: 0,
         showInfo: 0*/
-      },
+      };
+   }
+   var defaults = {
+      videoId: videoId,
+      width: 790,
+      height: 444,
+      playerVars: playerVars,
       events: {
         onReady: function(event){
           if(player.autoplay == true  && !isMobile.any()){
-            player.play(container);
+            console.log(defaults.playerVars.mute)
+            if(typeof defaults.playerVars.mute !== 'undefined'){
+              player.play(container,defaults.playerVars.mute);
+            }else{
+              player.play(container);
+            }
           }
           if(typeof onReady === 'function'){
             setTimeout(function(){onReady();},500);
           }
-          $(window).resize();         
+          $(window).resize();     
         },
         onStateChange: function(event){
-          console.log(event.data);
           if(event.data == YT.PlayerState.PLAYING){                        
             $.each(player.obj, function(key){
               if(key != event.target.c.id){
-                if(typeof player.obj[key].stopVideo !== "undefined"){
-                  player.obj[key].stopVideo();              
+                if(typeof player.obj[key].player.stopVideo !== "undefined"){
+                  if(typeof player.obj[key].playerVars.loop !== 'undefined'){
+                    player.obj[key].player.stopVideo();
+                  }
                 }
               }
             });
           }
-          if (event.data === YT.PlayerState.ENDED) {
-            player.obj[container].playVideo(); 
+          if (event.data === YT.PlayerState.ENDED && playerVars.loop == 1) {
+            player.obj[container].player.playVideo(); 
           }
         }
       }
-    });
+    };
+    if(typeof playerVars !== 'undefined'){
+      defaults.playerVars = playerVars;
+    }
+   return new YT.Player(container, defaults);
   },
-  play: function(id){
-    var video = player.obj[id];
+  play: function(id, mute){
+    var video = player.obj[id].player;
     if(typeof video.playVideo !== "undefined"){
-      video.mute();
+      if(typeof mute !== 'undefined'){
+        if(mute){
+          video.mute();
+        }
+      }
       video.playVideo();      
     }
   },
   stop: function(id){
-    console.log('stop');
     if(typeof id !== "undefined"){
-      var video = player.obj[id];
+      var video = player.obj[id].player;
       if(typeof video.stopVideo !== "undefined"){
         video.stopVideo();              
       }else{
@@ -127,22 +149,35 @@ var player = {
       }
     }else{
       $.each(player.obj, function(key){
-        if(typeof player.obj[key].stopVideo !== "undefined"){
-          player.obj[key].stopVideo();              
+        if(typeof player.obj[key].player.stopVideo !== "undefined"){
+          player.obj[key].player.stopVideo();              
         }       
       });
     }
   }
 };
-(function ($) {
-  $(function () {
+var bathroomHappiness = {
+  init: function(){
     if(isMobile.any() == true){
       $('body').addClass('mobile');
     }else{
       $('body').addClass('desktop');
     }
+    if($('body').hasClass('homepage')){
+      this.homepage();
+    }
+    if($('body').hasClass('inspiration')){
+      this.inspiration();
+    }
+    if($('body').hasClass('trends')){
+      this.trends();
+    }
+    if($('body').hasClass('water-therapy')){
+      this.waterTherapy();
+    }
+  },
+  homepage: function(){
     $('.subscribe-form').validate();
-
     $('.panel-slideshow').each(function () {
       var $arrows = $(this).find('.slideshow-buttons');
       $(this).find('.slideshow-container').slick({
@@ -174,30 +209,51 @@ var player = {
           $('.'+section).removeClass('hover');
         });
     });
-    if($('body').hasClass('inspiration')){
-        var video = $('.block.water-therapy .video').data('video');
-        $(window).on('resize', function(){
-          var height = $('.blocks .water-therapy .content').height();
-          var width = 16 * height/9;
-          $('#water-therapy-video').width(width);
-          $('#water-therapy-video').height(height + 200);          
-        }).resize();
-        // When the player is ready, add listeners for pause, finish, and playProgress
-        if(!isMobile.any()){
-          var player_container = 'water-therapy-video';
-          if(video){
-            player.autoplay = true;
-            player.init(player_container,video, function(){
-              $('#water-therapy-video').parent().parent().addClass('ready');  
-              $('#water-therapy-video').addClass('ready');
-            });            
-          }           
-        }else{
+  },
+  inspiration: function(){
+    var video = $('.block.water-therapy .video').data('video');
+    $(window).on('resize', function(){
+      var height = $('.blocks .water-therapy .content').height();
+      var width = 16 * height/9;
+      $('#water-therapy-video').width(width);
+      $('#water-therapy-video').height(height + 200);          
+    }).resize();
+    // When the player is ready, add listeners for pause, finish, and playProgress
+    if(!isMobile.any()){
+      var player_container = 'water-therapy-video';
+      if(video){
+        var vars = {
+          showinfo: 0,
+          modestbranding: 0,
+          rel: 0,
+          loop: 1,
+          mute: 1
+        };
+        player.autoplay = true;
+        player.init(player_container,video, function(){
+          $('#water-therapy-video').parent().parent().addClass('ready');  
           $('#water-therapy-video').addClass('ready');
-          if(isMobile.any()){
-            $('#water-therapy-video').remove();
-          }
-        }
+        }, vars);            
+      }           
+    }else{
+      $('#water-therapy-video').addClass('ready');
+      if(isMobile.any()){
+        $('#water-therapy-video').remove();
+      }
     }
+  },
+  trends: function(){
+
+  },
+  waterTherapy: function(){
+    $('#water-therapy .slides').slick({
+      arrows: false,
+      dots: true
+    });
+  }
+};
+(function ($) {
+  $(function () {
+    bathroomHappiness.init();
   });
 })(jQuery);

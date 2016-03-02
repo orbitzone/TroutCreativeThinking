@@ -20,6 +20,27 @@
       margin-top: 10px;
       margin-bottom: 20px;
       
+      .caption h4,.caption p {
+        
+        text-decoration: none !important;
+        .transition(all 0.2s linear);
+      }
+      
+      &:hover,&:focus,&:active{
+        
+        text-decoration: none !important;
+        
+        .caption h4,.caption p {
+          text-decoration: none !important;
+          color:@grayLight;
+        }
+        
+        .mask img {
+          .scale(1.3);
+        }
+        
+      }
+      
       .mask {
         display: block;
         overflow: hidden;
@@ -33,10 +54,6 @@
           -webkit-backface-visibility: hidden;
           -webkit-transform: translateZ(0) scale(1.0, 1.0);
           .transition(all 0.4s ease-out);
-          
-          &:hover,&:focus,&:active{
-            .scale(1.3);
-          }
           
         }
         
@@ -197,23 +214,6 @@
       
       .products-used-header {
           margin-bottom: 20px;
-      }
-      
-      .thumbnail {
-        
-        .caption h4 {
-          
-          text-decoration: none !important;
-          .transition(all 0.2s linear);
-        }
-        
-        &:hover,&:focus,&:active{
-          text-decoration: none !important;
-          .caption h4 {
-            text-decoration: none !important;
-            color:@grayLight;
-          }
-        }
       }
       
     }

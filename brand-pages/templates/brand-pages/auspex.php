@@ -276,7 +276,7 @@
             <div class="slide">
               <div class="rte">
                 <h4>Joel from Narre Warren</h4>
-                <p>Hear Ben's Story</p>
+                <p>Hear Joel's Story</p>
               </div>
               <div class="video-container">
                 <div class="image">

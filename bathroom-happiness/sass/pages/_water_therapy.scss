@@ -1,184 +1,293 @@
 body.water-therapy{
-	img{
-		display: block;
-	}
-	#banner{
-		background-color: black;
-		.container-fluid{
-			max-width: 1366px;
-			padding: 0;
-			margin: 0 auto;
-			.banner{
-				background-image: url(../images/water_therapy/banner.jpg);
-				height: 513px;
-			}
+	.main{
+		img{
+			display: block;
 		}
-	}
-	#water-therapy{
-		#intro{
-			overflow: hidden;
-			.intro{
-				padding-top: 50px;
-				padding-bottom: 30px;
-				text-align: center;				
-				h1{
-					font-weight: bold;
-					color: $gold;
-					font-size: 36px;
-					display: inline-block;
-					//background: -webkit-linear-gradient(left, #CCAA62 10%, #C0A053 15%,#FCEC95 30%, #FBEC84 40%, #DABB60 50%, #AB8731 70%, #C59F4A 80%, #E9CA6F);
-		      background: -webkit-linear-gradient(left, #f9e87c 0%, #e2c663 12%, #e2c663 21%, #d0b156 37%, #dabb60 47%, #ab8731 58%, #c59f4a 76%, #bb9940 100%);
-		      -webkit-background-clip: text;
-		      -webkit-text-fill-color: transparent;
-		      margin-bottom: 20px;
-		      @media (min-width: $screen-sm){
-		      	font-size: 68px;
-		      }
-				}
-				.rte{
-					text-align: center;
-					font-size: 15px;
-					max-width: 715px;
-					margin: 0 auto;
-				}	
-			}
-			.video-wrap{
-				position: relative;
-				.video{
-					
-				}
-				.submenu{
-					display: inline-block;
-					@include transform(rotate(-90deg) translateX(-206px));
-					@include transform-origin(top left);
-					position: absolute;
-					bottom: 0;
-					left: 8px;
-					li{
-						button{
-							color: white;
-							background: $water-therapy-green;
-							border: none;
-							text-transform: uppercase;
-							font-weight: 600;
-							padding: 0 42px;
-							height: 60px;
-							font-size: 14px;
-							line-height: 1;
-							display: block;
-							margin-bottom: 8px;
-							letter-spacing: 0.17em;
-							outline: none;
-							@include border-radius(0);
-							@include appearance(none);
-							@include transition(0.3s color ease-out);
-							&:hover{
-								color: $water-therapy-blue;
-							}
-							&:last-child{
-								button{
-									margin-bottom: 0;
-								}
-							}
-						}
-						&.active{
-							button{
-								background: $water-therapy-blue;
-								color: $gold;
-							}
-						}
-					}
-				}			
-			}
-		}
-		#water-therapy-content{
-			background: black;
-			position: relative;
+		#banner{
+			background-color: black;
 			.container-fluid{
 				max-width: 1366px;
 				padding: 0;
 				margin: 0 auto;
-			}
-			.row{
-				margin:0;
-				.col-sm-3,
-				.col-sm-9{
-					padding: 0;
+				.banner{
+					background-image: url(../images/water_therapy/banner.jpg);
+					height: 513px;
 				}
 			}
-			.sections-wrap{
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				z-index: 1;
-				.sections{
-					max-width: 1200px;
-					margin: 0 auto;
-				}				
-			}
-			.summary{
-				background: $water-therapy-blue;
-				text-align: center;
-				color: white;
-				padding: 60px 20px;
-				height: 350px;
-				.icon{
-					margin-bottom: 15px;
-				}
-				h2{
-					margin-top: 0;
-					font-weight: bold;
-					color: $gold;
-					font-size: 34px;
-					display: inline-block;
-					//background: -webkit-linear-gradient(left, #CCAA62 10%, #C0A053 15%,#FCEC95 30%, #FBEC84 40%, #DABB60 50%, #AB8731 70%, #C59F4A 80%, #E9CA6F);
-		      background: -webkit-linear-gradient(left, #f9e87c 0%, #e2c663 12%, #e2c663 21%, #d0b156 37%, #dabb60 47%, #ab8731 58%, #c59f4a 76%, #bb9940 100%);
-		      -webkit-background-clip: text;
-		      -webkit-text-fill-color: transparent;
-		      margin-bottom: 20px;
-				}
-				.rte{
-					max-width: 614px;
-					margin: 0 auto;
-					font-size: 15px;
-					b{
-						font-size: 18px;
+		}
+		#water-therapy{
+			#intro{
+				overflow: hidden;
+				@media (max-width: $screen-sm-min){
+					.row{
+						.col-xs-12{
+							padding: 0;
+						}
 					}
 				}
-			}
-			.slides{
-				background-image: url(../images/water_therapy/slider-1.jpg);
-				background-size: cover;
-				color: white;
-				height: 350px;
-				.slide{
-					padding: 28px 20px;
-					.icon{
+				.intro{
+					padding-top: 50px;
+					padding-bottom: 30px;
+					text-align: center;				
+					h1{
+						font-weight: bold;
+						color: $gold;
+						font-size: 36px;
+						display: inline-block;
+						//background: -webkit-linear-gradient(left, #CCAA62 10%, #C0A053 15%,#FCEC95 30%, #FBEC84 40%, #DABB60 50%, #AB8731 70%, #C59F4A 80%, #E9CA6F);
+			      background: -webkit-linear-gradient(left, #f9e87c 0%, #e2c663 12%, #e2c663 21%, #d0b156 37%, #dabb60 47%, #ab8731 58%, #c59f4a 76%, #bb9940 100%);
+			      -webkit-background-clip: text;
+			      -webkit-text-fill-color: transparent;
+			      margin-bottom: 20px;
+			      @media (min-width: $screen-sm){
+			      	font-size: 68px;
+			      }
+					}
+					.rte{
 						text-align: center;
-						.label{
-							display: block;
-							font-size: 15px;
-							font-weight: 300;
-							text-transform: uppercase;							
-							padding-top: 18px;
-							padding-bottom: 20px;
+						font-size: 15px;
+						max-width: 715px;
+						margin: 0 auto;
+					}	
+				}
+				.video-wrap{
+					position: relative;
+					.video{
+						
+					}
+					.submenu{
+						@media (min-width: $screen-sm){
+							display: inline-block;
+							@include transform(rotate(-90deg) translateX(-206px));
+							@include transform-origin(top left);
+							position: absolute;
+							bottom: 0;
+							left: 8px;
 						}
+						@include clearfix();
+						li{
+							float: left;
+							width: 33.33333%;
+							@media (min-width: $screen-sm){
+								float: none;
+								width: auto;
+							}
+							button{
+								color: white;
+								background: $water-therapy-green;
+								border: none;
+								text-transform: uppercase;
+								font-weight: 600;
+								padding: 0;
+								height: 60px;
+								font-size: 10px;
+								line-height: 1;
+								display: block;
+								margin-bottom: 0;
+								letter-spacing: 0.1em;
+								outline: none;
+								width: 100%;
+								@include border-radius(0);
+								@include appearance(none);
+								@include transition(1s all ease-out);
+								@media (min-width: $screen-sm){
+									width: auto;
+									font-size: 14px;
+									padding: 0 42px;
+									margin-bottom: 8px;							
+								}
+								&:hover{
+									color: $water-therapy-blue;
+								}
+								&:last-child{
+									button{
+										margin-bottom: 0;
+									}
+								}
+							}
+							&.active{
+								button{
+									background: $water-therapy-blue;
+									color: $gold;
+								}
+							}
+						}
+					}			
+				}
+			}
+			#water-therapy-content{
+				background: black;
+				position: relative;
+				.container-fluid{
+					max-width: 1366px;
+					padding: 0;
+					margin: 0 auto;
+				}
+				.row{
+					margin:0;
+					.col-sm-3,
+					.col-sm-9{
+						padding: 0;
+					}
+				}
+				.sections-wrap{
+					@media (min-width: $screen-sm){
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						z-index: 1;
+					}
+					.sections{
+						max-width: 1200px;
+						margin: 0 auto;
+						position: relative;
+	  				perspective: 1000px;
+	  				.section-content {
+	  					overflow: hidden;
+	  					position: relative;
+	  					transform-style: preserve-3d;
+						  //@include transform(translateZ( -100px ));
+						  @include transition(all 1s);
+						  .section-2, .section-3,
+						  .slider-2, .slider-3{
+								position: absolute;
+								top: 0;
+								left: 0;
+								width: 100%;
+								height: 100%;
+						  }
+						  figure{
+						  	@include transition(2s all ease-out);
+						  }
+						}
+					}
+				}
+				&.therapeutic{
+					.section-1{
+			  		@include transform(translateY(0));
+			  	}
+			  	.section-2{
+			  		@include transform(translateY(-100%) scale(0.9));
+			  	}
+			  	.section-3{
+			  		@include transform(translateY(-100%) scale(0.9));
+			  	}
+			  	.slider-1{
+			  		@include transform(translateY(0));
+			  	}
+			  	.slider-2{
+			  		@include transform(translateY(100%) scale(0.9));
+			  	}
+			  	.slider-3{
+			  		@include transform(translateY(100%) scale(0.9));
+			  	}
+				}
+			  &.relaxation{
+			  	.section-1{
+			  		@include transform(translateY(100%) scale(0.9));
+			  	}
+			  	.section-2{
+			  		@include transform(translateY(0));
+			  	}
+			  	.section-3{
+			  		@include transform(translateY(-100%) scale(0.9));
+			  	}
+			  	.slider-1{
+			  		@include transform(translateY(-100%) scale(0.9));
+			  	}
+			  	.slider-2{
+			  		@include transform(translateY(0));
+			  	}
+			  	.slider-3{
+			  		@include transform(translateY(100%) scale(0.9));
+			  	}
+			  }
+			  &.rejuvenation{
+			  	.section-1{
+			  		@include transform(translateY(100%) scale(0.9));
+			  	}
+			  	.section-2{
+			  		@include transform(translateY(100%) scale(0.9));
+			  	}
+			  	.section-3{
+			  		@include transform(translateY(0));
+			  	}
+			  	.slider-1{
+			  		@include transform(translateY(-100%) scale(0.9));
+			  	}
+			  	.slider-2{
+			  		@include transform(translateY(-100%) scale(0.9));
+			  	}
+			  	.slider-3{
+			  		@include transform(translateY(0));
+			  	}
+			  }
+				.summary{
+					background: $water-therapy-blue;
+					text-align: center;
+					color: white;
+					padding: 60px 20px;
+					@media (min-width: $screen-sm){
+						height: 350px;
+					}
+					.icon{
+						margin-bottom: 15px;
 					}
 					h2{
 						margin-top: 0;
-						font-size: 20px;
-						font-weight: 300;
-						line-height: 30px;
-						letter-spacing: 0.16em;
-						text-transform: uppercase;
-						text-align: center;
+						font-weight: bold;
+						color: $gold;
+						font-size: 34px;
+						display: inline-block;
+						//background: -webkit-linear-gradient(left, #CCAA62 10%, #C0A053 15%,#FCEC95 30%, #FBEC84 40%, #DABB60 50%, #AB8731 70%, #C59F4A 80%, #E9CA6F);
+			      background: -webkit-linear-gradient(left, #f9e87c 0%, #e2c663 12%, #e2c663 21%, #d0b156 37%, #dabb60 47%, #ab8731 58%, #c59f4a 76%, #bb9940 100%);
+			      -webkit-background-clip: text;
+			      -webkit-text-fill-color: transparent;
+			      margin-bottom: 20px;
 					}
-					.text{
+					.rte{
+						max-width: 614px;
 						margin: 0 auto;
-						max-width: 168px;
-						text-align: center;
 						font-size: 15px;
+						b{
+							font-size: 18px;
+						}
+					}
+				}
+				.slides{
+					background-image: url(../images/water_therapy/slider-1.jpg);
+					background-size: cover;
+					color: white;
+					height: 350px;
+					.slide{
+						padding: 28px 20px;
+						.icon{
+							text-align: center;
+							.label{
+								display: block;
+								font-size: 15px;
+								font-weight: 300;
+								text-transform: uppercase;							
+								padding-top: 18px;
+								padding-bottom: 20px;
+							}
+						}
+						h2{
+							margin-top: 0;
+							font-size: 20px;
+							font-weight: 300;
+							line-height: 30px;
+							letter-spacing: 0.16em;
+							text-transform: uppercase;
+							text-align: center;
+						}
+						.text{
+							margin: 0 auto;
+							max-width: 168px;
+							text-align: center;
+							font-size: 15px;
+						}
 					}
 				}
 			}

@@ -250,6 +250,12 @@ var bathroomHappiness = {
       arrows: false,
       dots: true
     });
+    $('.submenu button').on('click', function(){
+      $('.submenu li').removeClass('active');
+      $(this).parent().addClass('active');
+      var section = $(this).text().toLowerCase();
+      $('#water-therapy-content').attr('class',section);
+    });
   }
 };
 (function ($) {

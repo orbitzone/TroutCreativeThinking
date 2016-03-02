@@ -167,6 +167,7 @@ body.homepage {
           height: 100%;
           opacity: 0;
           background: rgba(0,0,0,0.8);
+          @include transition(0.2s all ease-out);
         }
       }
       &:hover {

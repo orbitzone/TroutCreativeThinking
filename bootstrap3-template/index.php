@@ -42,14 +42,20 @@
     <!-- reece-b3-gallery -->
     <div class="container reece-b3-gallery">
       <div class="row reece-b3-gallery-header">
-        <div class="col-lg-9">
+        <div class="col-sm-9 col-xs-12">
           <h1>Bootstrap 3 gallery</h1>
         </div>
-        <div class="col-lg-3">
+        <div class="col-sm-3 col-xs-12">
           <div class="social-share">
-            <a href="http://www.facebook.com/sharer.php?u={url}&amp;title={text}"><span class="icon-facebook social-icon"></span></a>
-            <a href="https://twitter.com/share?url={url}&amp;text={text}&amp;via={via}&amp;hashtags={hashtags}"><span class="icon-twitter social-icon"></span></a>
-            <a href="https://pinterest.com/pin/create/button/?url={imagesrc}&amp;media={image}&amp;description={description}"><span class="icon-pinterest social-icon"></span></a>
+            <a href="http://www.facebook.com/sharer.php?u={url}&amp;title={text}">
+              <i class="fa fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/share?url={url}&amp;text={text}&amp;via={via}&amp;hashtags={hashtags}">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a href="https://pinterest.com/pin/create/button/?url={imagesrc}&amp;media={image}&amp;description={description}">
+              <i class="fa fa-pinterest"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -151,9 +157,9 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-md-9 col-sm-12">
+                  <div class="col-md-12">
                     <div class="row">
-                      <div class="col-md-4 col-sm-6 col-xs-12">
+                      <div class="col-md-3 col-sm-6 col-xs-12">
                         <a href="#" class="thumbnail">
                           <img src="http://placehold.it/800x490/bbb/000&amp;text=Product+1" alt="product 1">
                           <div class="caption">
@@ -161,7 +167,7 @@
                           </div>
                         </a>
                       </div>
-                      <div class="col-md-4 col-sm-6 col-xs-12">
+                      <div class="col-md-3 col-sm-6 col-xs-12">
                         <a href="#" class="thumbnail">
                           <img src="http://placehold.it/800x490/bbb/000&amp;text=Product+2" alt="product 2">
                           <div class="caption">
@@ -169,7 +175,7 @@
                           </div>
                         </a>
                       </div>
-                      <div class="col-md-4 col-sm-6 col-xs-12">
+                      <div class="col-md-3 col-sm-6 col-xs-12">
                         <a href="#" class="thumbnail">
                           <img src="http://placehold.it/800x490/bbb/000&amp;text=Product+3" alt="product 3">
                           <div class="caption">
@@ -177,10 +183,16 @@
                           </div>
                         </a>
                       </div>
+                      <div class="col-md-3 col-sm-6 col-xs-12">
+                        <a href="#" class="thumbnail">
+                          <img src="http://placehold.it/800x490/bbb/000&amp;text=Product+4" alt="product 4">
+                          <div class="caption">
+                            <h4>Product 4</h4>
+                          </div>
+                        </a>
+                      </div>
                     </div><!-- /row -->
-                  </div><!-- /col-md-9 col-sm-12 -->
-                  <div class="col-md-3 col-sm-12">
-                  </div><!-- /col-md-3 col-sm-12 -->
+                  </div><!-- /col-md-12 -->
                 </div><!-- /row -->
               </div>
             </div>
@@ -188,8 +200,8 @@
         </div><!-- /col-md-9 col-sm-12 -->
         <!-- Related Products -->
         <div class="col-md-3 col-sm-12">
-          <h3>Related products</h3>
-          <div class="row">
+          <div class="row well">
+            <h3>Related products</h3>
             <div class="col-md-12 col-sm-6 col-xs-12">
               <a href="#" class="thumbnail">
                 <img src="http://placehold.it/800x490/ddd/333&amp;text=Related+Product+1" alt="product 1">

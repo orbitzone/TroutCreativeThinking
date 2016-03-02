@@ -6629,9 +6629,41 @@ li {
   margin-bottom: 40px;
   /* Bootstrap 3 Carousel with thumbnail navigation */
 }
+.reece-b3-gallery .well {
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  background-color: #F1F2F2;
+}
 .reece-b3-gallery .reece-b3-gallery-header {
   margin-top: 40px;
   margin-bottom: 20px;
+}
+.reece-b3-gallery .reece-b3-gallery-header .social-share {
+  display: block;
+  width: auto;
+  float: left;
+  height: 33px;
+  position: relative;
+  margin-top: 10px;
+}
+@media (min-width: 768px) {
+  .reece-b3-gallery .reece-b3-gallery-header .social-share {
+    float: right;
+  }
+}
+.reece-b3-gallery .reece-b3-gallery-header .social-share a {
+  font-size: 28px;
+  color: #222222;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.reece-b3-gallery .reece-b3-gallery-header .social-share a:hover,
+.reece-b3-gallery .reece-b3-gallery-header .social-share a:focus,
+.reece-b3-gallery .reece-b3-gallery-header .social-share a:active {
+  text-decoration: none;
+  color: #999999;
 }
 .reece-b3-gallery .thumbnail {
   border: none;
@@ -6653,11 +6685,15 @@ li {
 }
 .reece-b3-gallery .carousel-control {
   background: none;
+  filter: none;
   position: absolute;
   top: 0;
   bottom: 0;
   width: 10%;
   height: 100%;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 .reece-b3-gallery .carousel-control .glyphicon-chevron-right,
 .reece-b3-gallery .carousel-control .glyphicon-chevron-left {
@@ -6692,6 +6728,11 @@ li {
 .reece-b3-gallery #thumbcarousel .carousel-control .glyphicon-chevron-right:before,
 .reece-b3-gallery #thumbcarousel .carousel-control .glyphicon-chevron-left:before {
   font-size: 20px;
+}
+@media (max-width: 320px) {
+  .reece-b3-gallery #thumbcarousel {
+    display: none;
+  }
 }
 .reece-b3-gallery .gallery-details {
   margin-bottom: 20px;

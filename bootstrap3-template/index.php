@@ -66,25 +66,25 @@
               <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="7000">
                 <div class="carousel-inner">
                   <div class="item active">
-                    <img alt="product description" src="http://placehold.it/800x490/e8117f/000&amp;text=Product+Image+1">
+                    <img alt="product description" src="images/gallery/article-image1.jpg">
                   </div>
                   <div class="item">
-                    <img alt="product description" src="http://placehold.it/800x490/00ffff/000&amp;text=Product+Image+2">
+                    <img alt="product description" src="images/gallery/article-image2.jpg">
                   </div>
                   <div class="item">
-                    <img alt="product description" src="http://placehold.it/800x490/ff00ff/fff&amp;text=Product+Image+3">
+                    <img alt="product description" src="images/gallery/article-image3.jpg">
                   </div>
                   <div class="item">
-                    <img alt="product description" src="http://placehold.it/800x490/ffff00/000&amp;text=Product+Image+4">
+                    <img alt="product description" src="images/gallery/article-image4.jpg">
                   </div>
                   <div class="item">
-                    <img alt="product description" src="http://placehold.it/800x490/612b65/fff&amp;text=Product+Image+5">
+                    <img alt="product description" src="images/gallery/article-image5.jpg">
                   </div>
                   <div class="item">
-                    <img alt="product description" src="http://placehold.it/800x490/00ffff/000&amp;text=Product+Image+6">
+                    <img alt="product description" src="images/gallery/article-image6.jpg">
                   </div>
                   <div class="item">
-                    <img alt="product description" src="http://placehold.it/800x490/db371b/fff&amp;text=Product+Image+7">
+                    <img alt="product description" src="images/gallery/article-image7.jpg">
                   </div>
                   <div class="item">
                     <img alt="product description" src="http://placehold.it/800x490/feb8aa/000&amp;text=Product+Image+8">
@@ -110,16 +110,16 @@
                 <div id="thumbcarousel" class="carousel slide" data-interval="false">
                   <div class="carousel-inner">
                     <div class="item active">
-                      <div data-target="#carousel" data-slide-to="0" class="thumb"><img alt="product description" src="http://placehold.it/220x135/e8117f/fff&amp;text=Product+Main"></div>
-                      <div data-target="#carousel" data-slide-to="1" class="thumb"><img alt="product description" src="http://placehold.it/220x135/00ffff/000&amp;text=Product+Image+2"></div>
-                      <div data-target="#carousel" data-slide-to="2" class="thumb"><img alt="product description" src="http://placehold.it/220x135/ff00ff/fff&amp;text=Product+Image+3"></div>
-                      <div data-target="#carousel" data-slide-to="3" class="thumb"><img alt="product description" src="http://placehold.it/220x135/ffff00/000&amp;text=Product+Image+4"></div>
+                      <div data-target="#carousel" data-slide-to="0" class="thumb"><img alt="product description" src="images/gallery/thumbs/article-image1.jpg"></div>
+                      <div data-target="#carousel" data-slide-to="1" class="thumb"><img alt="product description" src="images/gallery/thumbs/article-image2.jpg"></div>
+                      <div data-target="#carousel" data-slide-to="2" class="thumb"><img alt="product description" src="images/gallery/thumbs/article-image3.jpg"></div>
+                      <div data-target="#carousel" data-slide-to="3" class="thumb last"><img alt="product description" src="images/gallery/thumbs/article-image4.jpg"></div>
                     </div><!-- /item -->
                     <div class="item">
-                      <div data-target="#carousel" data-slide-to="4" class="thumb"><img alt="product description" src="http://placehold.it/220x135/612b65/fff&amp;text=Product+Image+5"></div>
-                      <div data-target="#carousel" data-slide-to="5" class="thumb"><img alt="product description" src="http://placehold.it/220x135/00ffcc/000&amp;text=Product+Image+6"></div>
-                      <div data-target="#carousel" data-slide-to="6" class="thumb"><img alt="product description" src="http://placehold.it/220x135/db371b/fff&amp;text=Product+Image+7"></div>
-                      <div data-target="#carousel" data-slide-to="7" class="thumb"><img alt="product description" src="http://placehold.it/220x135/feb8aa/000&amp;text=Product+Image+8"></div>
+                      <div data-target="#carousel" data-slide-to="4" class="thumb"><img alt="product description" src="images/gallery/thumbs/article-image5.jpg"></div>
+                      <div data-target="#carousel" data-slide-to="5" class="thumb"><img alt="product description" src="images/gallery/thumbs/article-image6.jpg"></div>
+                      <div data-target="#carousel" data-slide-to="6" class="thumb"><img alt="product description" src="images/gallery/thumbs/article-image7.jpg"></div>
+                      <div data-target="#carousel" data-slide-to="7" class="thumb last"><img alt="product description" src="http://placehold.it/220x135/feb8aa/000&amp;text=Product+Image+8"></div>
                     </div>
                     <div class="item">
                       <div data-target="#carousel" data-slide-to="8" class="thumb"><img alt="product description" src="http://placehold.it/220x135/00ffcc/000&amp;text=Product+Image+9"></div>
@@ -145,6 +145,7 @@
               </p>
             </div>
           </div>
+          <hr />
           <div class="row">
             <div class="col-md-12">
               <!-- products used -->
@@ -161,7 +162,7 @@
                     <div class="row">
                       <div class="col-md-3 col-sm-6 col-xs-12">
                         <a href="#" class="thumbnail">
-                          <img src="http://placehold.it/800x490/bbb/000&amp;text=Product+1" alt="product 1">
+                          <img src="images/products/product2.jpg" alt="product 1">
                           <div class="caption">
                             <h4>Product 1</h4>
                           </div>
@@ -169,7 +170,7 @@
                       </div>
                       <div class="col-md-3 col-sm-6 col-xs-12">
                         <a href="#" class="thumbnail">
-                          <img src="http://placehold.it/800x490/bbb/000&amp;text=Product+2" alt="product 2">
+                          <img src="images/products/product3.jpg" alt="product 2">
                           <div class="caption">
                             <h4>Product 2</h4>
                           </div>
@@ -177,7 +178,7 @@
                       </div>
                       <div class="col-md-3 col-sm-6 col-xs-12">
                         <a href="#" class="thumbnail">
-                          <img src="http://placehold.it/800x490/bbb/000&amp;text=Product+3" alt="product 3">
+                          <img src="images/products/product2.jpg" alt="product 3">
                           <div class="caption">
                             <h4>Product 3</h4>
                           </div>
@@ -185,7 +186,7 @@
                       </div>
                       <div class="col-md-3 col-sm-6 col-xs-12">
                         <a href="#" class="thumbnail">
-                          <img src="http://placehold.it/800x490/bbb/000&amp;text=Product+4" alt="product 4">
+                          <img src="images/products/product3.jpg" alt="product 4">
                           <div class="caption">
                             <h4>Product 4</h4>
                           </div>
@@ -201,10 +202,10 @@
         <!-- Related Products -->
         <div class="col-md-3 col-sm-12">
           <div class="row well">
-            <h3>Related products</h3>
+            <h3>Related galleries</h3>
             <div class="col-md-12 col-sm-6 col-xs-12">
               <a href="#" class="thumbnail">
-                <img src="http://placehold.it/800x490/ddd/333&amp;text=Related+Product+1" alt="product 1">
+                <div class="mask"><img src="images/gallery/article-image6.jpg" alt="product 1"></div>
                 <div class="caption">
                   <h4>Related Product 1</h4>
                   <p>Lorem ipsum dolor</p>
@@ -213,7 +214,7 @@
             </div>
             <div class="col-md-12 col-sm-6 col-xs-12">
               <a href="#" class="thumbnail">
-                <img src="http://placehold.it/800x490/ddd/333&amp;text=Related+Product+2" alt="product 2">
+                <div class="mask"><img src="images/gallery/article-image5.jpg" alt="product 2"></div>
                 <div class="caption">
                   <h4>Related Product 2</h4>
                   <p>Lorem ipsum dolor</p>
@@ -222,7 +223,7 @@
             </div>
             <div class="col-md-12 col-sm-6 col-xs-12">
               <a href="#" class="thumbnail">
-                <img src="http://placehold.it/800x490/ddd/333&amp;text=Related+Product+3" alt="product 3">
+                <div class="mask"><img src="images/gallery/article-image7.jpg" alt="product 3"></div>
                 <div class="caption">
                   <h4>Related Product 3</h4>
                   <p>Lorem ipsum dolor</p>

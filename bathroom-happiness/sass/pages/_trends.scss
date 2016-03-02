@@ -195,7 +195,9 @@ body.trends{
 						.header{
 							.button-wrap{
 								.button{
-									@include transform(scale(1.1));
+									@media (min-width: $screen-sm){
+										@include transform(scale(1.1));
+									}
 								}
 							}
 						}
@@ -203,7 +205,9 @@ body.trends{
 							.image{
 								//@include transform(scale(1.2));
 								.gif{
-									opacity: 1;
+									@media (min-width: $screen-sm){
+										opacity: 1;
+									}									
 								}
 							}
 						}

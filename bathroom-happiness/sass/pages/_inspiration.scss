@@ -1,11 +1,11 @@
 body.inspiration {
 	.main{
-		background-image: url(../images/inspiration/water-splash.jpg);
-		background-size: cover;
-		background-position: top center;
 		background-color: #e9e9e7;
 		color: black;
 		@media (min-width: $screen-sm){
+			background-image: url(../images/inspiration/water-splash.jpg);
+			background-size: cover;
+			background-position: top center;
 			background-repeat: no-repeat;
 		}
 		.intro{
@@ -156,7 +156,9 @@ body.inspiration {
 						.header{
 							.button-wrap{
 								.button{
-									@include transform(scale(1.1));
+									@media (min-width: $screen-sm){
+										@include transform(scale(1.1));
+									}
 									//@include transform(translateY(-2px));
 									&.white{
 									//	background: $gold;

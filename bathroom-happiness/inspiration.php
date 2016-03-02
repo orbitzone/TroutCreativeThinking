@@ -1,21 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta name="viewport" content="initial-scale=1.0">
-    <title>Reece - Bathroom Happiness</title>
-    
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6958312/7494952/css/fonts.css" />
-    <link rel="stylesheet" type="text/css" href="css/reece-global.css" />
-    <script src='js/vendor/jquery.min.js' type='text/javascript'></script>
-    <script src="js/reece-ocnav.js" type="text/javascript"></script>
-    <script src='js/vendor/respond.min.js' type='text/javascript'></script>
-    <script src='js/vendor/bootstrap.min.js' type='text/javascript'></script>
-    <script src='js/vendor/slick.min.js' type='text/javascript'></script>
-    <script src='js/vendor/jquery.validate.min.js' type='text/javascript'></script>
-    <script src='js/vendor/froogaloop.min.js' type='text/javascript'></script>
-    <script src='js/main.min.js' type='text/javascript'></script>
-  </head>
+<?php
+  $title = "Reece - Inspiration";
+ include_once('templates/includes/reece-head.php');?>
   <body class="inspiration bathroom-happiness">
     <div class="ocmain-wrapper">
       <?php include_once("templates/includes/reece-header.php");?>

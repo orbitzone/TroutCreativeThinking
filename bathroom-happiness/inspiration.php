@@ -80,12 +80,9 @@
                       <div class="image" style="background-image: url(images/inspiration/water-therapy.jpg);">
                         <img src="images/inspiration/water-therapy.jpg" alt="Water Therapy">
                       </div>
-                      <div class="video" data-video="TWLgxehGbOU">
-                        <figure>
-                          <div class="top"></div>
-                          <iframe id="water-therapy-video" src="https://player.vimeo.com/video/157096707?api=1&player_id=water-therapy-video&title=0&loop=1&badge=0&byline=0&portrait=0&autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                        </figure>
-                      </div>
+                      <div class="video" data-video="Aav43C9IZTI">
+                        <figure id="water-therapy-video"></figure>
+                      </div>                      
                     </div>
                   </a>
                 </div>

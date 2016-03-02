@@ -2519,7 +2519,11 @@ body.inspiration .main .blocks .block a .content .image {
   }
 }
 /* line 120, ../sass/pages/_inspiration.scss */
-body.inspiration .main .blocks .block a .content .video figure {
+body.inspiration .main .blocks .block a .content.ready .image {
+  opacity: 0;
+}
+/* line 124, ../sass/pages/_inspiration.scss */
+body.inspiration .main .blocks .block a .content .video {
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -2527,8 +2531,10 @@ body.inspiration .main .blocks .block a .content .video figure {
   top: 0;
   left: 0;
 }
-/* line 127, ../sass/pages/_inspiration.scss */
-body.inspiration .main .blocks .block a .content .video figure .top {
+/* line 131, ../sass/pages/_inspiration.scss */
+body.inspiration .main .blocks .block a .content .video:before {
+  content: " ";
+  display: block;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -2536,14 +2542,15 @@ body.inspiration .main .blocks .block a .content .video figure .top {
   left: 0;
   opacity: 0;
   z-index: 1;
+  cursor: pointer;
 }
-/* line 136, ../sass/pages/_inspiration.scss */
-body.inspiration .main .blocks .block a .content .video figure iframe {
+/* line 143, ../sass/pages/_inspiration.scss */
+body.inspiration .main .blocks .block a .content .video iframe {
   display: none;
 }
 @media (min-width: 768px) {
-  /* line 136, ../sass/pages/_inspiration.scss */
-  body.inspiration .main .blocks .block a .content .video figure iframe {
+  /* line 143, ../sass/pages/_inspiration.scss */
+  body.inspiration .main .blocks .block a .content .video iframe {
     display: block;
     opacity: 0;
     position: absolute;
@@ -2560,41 +2567,41 @@ body.inspiration .main .blocks .block a .content .video figure iframe {
     -webkit-transition: opacity 0.3s ease-out;
     transition: opacity 0.3s ease-out;
   }
-  /* line 147, ../sass/pages/_inspiration.scss */
-  body.inspiration .main .blocks .block a .content .video figure iframe.ready {
+  /* line 154, ../sass/pages/_inspiration.scss */
+  body.inspiration .main .blocks .block a .content .video iframe.ready {
     opacity: 1;
   }
 }
-/* line 157, ../sass/pages/_inspiration.scss */
+/* line 163, ../sass/pages/_inspiration.scss */
 body.inspiration .main .blocks .block.bathroom-gallery .summary {
   max-width: 190px;
   margin: 0 auto;
 }
-/* line 162, ../sass/pages/_inspiration.scss */
+/* line 168, ../sass/pages/_inspiration.scss */
 body.inspiration .main .blocks .block.water-therapy {
   background: black;
 }
-/* line 164, ../sass/pages/_inspiration.scss */
+/* line 170, ../sass/pages/_inspiration.scss */
 body.inspiration .main .blocks .block.water-therapy a {
   color: #a18033;
 }
-/* line 167, ../sass/pages/_inspiration.scss */
+/* line 173, ../sass/pages/_inspiration.scss */
 body.inspiration .main .blocks .block.water-therapy a .header h2 {
   color: #dabb61;
   background: -webkit-linear-gradient(left, #ccaa62 0%, #c0a053 12%, #dfc063 21%, #d0b156 37%, #dabb60 47%, #ab8731 58%, #c59f4a 76%, #e9ca6f 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-/* line 179, ../sass/pages/_inspiration.scss */
+/* line 185, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness {
   padding-bottom: 50px;
 }
-/* line 181, ../sass/pages/_inspiration.scss */
+/* line 187, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .hex-wrap {
   position: relative;
   height: 350px;
 }
-/* line 184, ../sass/pages/_inspiration.scss */
+/* line 190, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .hex-wrap .button {
   position: absolute;
   display: inline-block;
@@ -2608,7 +2615,7 @@ body.inspiration .main .destination-happiness .hex-wrap .button {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-/* line 189, ../sass/pages/_inspiration.scss */
+/* line 195, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .hex-wrap .button:hover {
   -webkit-transform: scale(1.05);
   -moz-transform: scale(1.05);
@@ -2616,7 +2623,7 @@ body.inspiration .main .destination-happiness .hex-wrap .button:hover {
   -o-transform: scale(1.05);
   transform: scale(1.05);
 }
-/* line 192, ../sass/pages/_inspiration.scss */
+/* line 198, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .hex-wrap .button .text {
   position: absolute;
   top: 50%;
@@ -2632,44 +2639,44 @@ body.inspiration .main .destination-happiness .hex-wrap .button .text {
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 202, ../sass/pages/_inspiration.scss */
+/* line 208, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .hex-wrap .button .text .top {
   font-size: 29px;
 }
-/* line 205, ../sass/pages/_inspiration.scss */
+/* line 211, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .hex-wrap .button .text .bottom {
   font-size: 23px;
 }
-/* line 209, ../sass/pages/_inspiration.scss */
+/* line 215, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .hex-wrap .button.destination {
   top: 80px;
   right: 150px;
 }
-/* line 212, ../sass/pages/_inspiration.scss */
+/* line 218, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .hex-wrap .button.destination .top {
   text-decoration: underline;
 }
-/* line 216, ../sass/pages/_inspiration.scss */
+/* line 222, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .hex-wrap .button.love-luxury {
   top: 0;
   right: 60px;
 }
-/* line 220, ../sass/pages/_inspiration.scss */
+/* line 226, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .hex-wrap .button.love-family {
   top: 115px;
   right: 7px;
 }
-/* line 224, ../sass/pages/_inspiration.scss */
+/* line 230, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .hex-wrap .button.love-calm {
   top: 237px;
   right: 54px;
 }
-/* line 230, ../sass/pages/_inspiration.scss */
+/* line 236, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .destination-links {
   margin-top: 48px;
   margin-bottom: 30px;
 }
-/* line 233, ../sass/pages/_inspiration.scss */
+/* line 239, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .destination-links a {
   color: #698894;
   font-size: 22px;
@@ -2684,11 +2691,11 @@ body.inspiration .main .destination-happiness .destination-links a {
   -webkit-transition: color 0.3s ease-out;
   transition: color 0.3s ease-out;
 }
-/* line 244, ../sass/pages/_inspiration.scss */
+/* line 250, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .destination-links a:hover {
   color: #6dc8b6;
 }
-/* line 250, ../sass/pages/_inspiration.scss */
+/* line 256, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .btn {
   color: white;
   font-size: 13.2px;
@@ -2706,16 +2713,16 @@ body.inspiration .main .destination-happiness .btn {
   padding: 17px;
   letter-spacing: 0.1;
 }
-/* line 260, ../sass/pages/_inspiration.scss */
+/* line 266, ../sass/pages/_inspiration.scss */
 body.inspiration .main .destination-happiness .btn:hover {
   background: #698894;
 }
-/* line 266, ../sass/pages/_inspiration.scss */
+/* line 272, ../sass/pages/_inspiration.scss */
 body.inspiration footer {
   margin-top: 0;
 }
 @media (min-width: 768px) {
-  /* line 275, ../sass/pages/_inspiration.scss */
+  /* line 281, ../sass/pages/_inspiration.scss */
   body.inspiration.desktop .blocks .block:hover .header .button-wrap .button {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);

@@ -114,39 +114,45 @@ body.inspiration {
 						img{
 							@media (min-width: $screen-sm){
 								display: none;	
-							}						
+							}												
+						}
+						&.ready{
+							.image{
+								opacity: 0;
+							}
 						}
 						.video{
-							figure{
+							width: 100%;
+							height: 100%;
+							overflow: hidden;
+							position: absolute;
+							top: 0;
+							left: 0;
+							&:before{
+								content: " ";
+								display: block;
 								width: 100%;
 								height: 100%;
-								overflow: hidden;
 								position: absolute;
 								top: 0;
 								left: 0;
-								.top{
-									width: 100%;
-									height: 100%;
-									position: absolute;
-									top: 0;
-									left: 0;
+								opacity: 0;
+								z-index: 1;
+								cursor: pointer;
+							}
+							iframe{
+								display: none;
+								@media (min-width: $screen-sm){
+									display: block;
 									opacity: 0;
-									z-index: 1;
-								}
-								iframe{
-									display: none;
-									@media (min-width: $screen-sm){
-										display: block;
-										opacity: 0;
-										position: absolute;
-										z-index: 0;
-										top: 50%;
-										left: 50%;
-										@include transform(translate(-50%, -50%));
-										@include transition(0.3s opacity ease-out);
-										&.ready{
-											opacity: 1;
-										}
+									position: absolute;
+									z-index: 0;
+									top: 50%;
+									left: 50%;
+									@include transform(translate(-50%, -50%));
+									@include transition(0.3s opacity ease-out);
+									&.ready{
+										opacity: 1;
 									}
 								}
 							}

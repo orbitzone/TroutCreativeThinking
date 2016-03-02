@@ -34,6 +34,11 @@ var isIE = function(){
 };
 (function ($) {
   $(function () {
+  if(isMobile.any() == true){
+    $('body').addClass('mobile');
+  }else{
+    $('body').addClass('desktop');
+  }
     $('.subscribe-form').validate();
 
     $('.panel-slideshow').each(function () {

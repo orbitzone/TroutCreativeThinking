@@ -151,26 +151,6 @@ body.inspiration {
 								}
 							}
 						}
-					}					
-					&:hover{
-						.header{
-							.button-wrap{
-								.button{
-									@media (min-width: $screen-sm){
-										@include transform(scale(1.1));
-									}
-									//@include transform(translateY(-2px));
-									&.white{
-									//	background: $gold;
-									}
-								}
-							}
-						}
-						.content{
-							.image{
-								//@include transform(scale(1.2));
-							}
-						}
 					}
 				}
 				&.bathroom-gallery{
@@ -285,5 +265,31 @@ body.inspiration {
 	}
 	footer{
 		margin-top:0;
+	}
+	&.desktop{
+		.blocks{
+			.block{
+				&:hover{
+					.header{
+						.button-wrap{
+							.button{
+								@media (min-width: $screen-sm){
+									@include transform(scale(1.1));
+								}
+								//@include transform(translateY(-2px));
+								&.white{
+								//	background: $gold;
+								}
+							}
+						}
+					}
+					.content{
+						.image{
+							//@include transform(scale(1.2));
+						}
+					}
+				}
+			}
+		}
 	}
 }

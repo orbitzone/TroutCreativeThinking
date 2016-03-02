@@ -190,7 +190,13 @@ body.trends{
 								}
 							}
 						}
-					}					
+					}	
+				}				
+			}
+		}//blocks
+		&.desktop{
+			.blocks{
+				.block{									
 					&:hover{
 						.header{
 							.button-wrap{
@@ -212,7 +218,7 @@ body.trends{
 							}
 						}
 					}
-				}				
+				}
 			}
-		}//blocks
+		}
 }

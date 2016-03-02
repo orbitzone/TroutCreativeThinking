@@ -6660,7 +6660,7 @@ li {
 .reece-b3-gallery .thumbnail:focus .caption p,
 .reece-b3-gallery .thumbnail:active .caption p {
   text-decoration: none !important;
-  color: #999999;
+  color: #666;
 }
 .reece-b3-gallery .thumbnail:hover .mask img,
 .reece-b3-gallery .thumbnail:focus .mask img,
@@ -6716,10 +6716,11 @@ li {
   text-decoration: none;
   color: #999999;
 }
-.reece-b3-gallery .carousel img {
+.reece-b3-gallery .carousel .item .thumb img,
+.reece-b3-gallery .carousel .item img {
   width: 100%;
 }
-.reece-b3-gallery .carousel-control {
+.reece-b3-gallery .carousel .carousel-control {
   background: none;
   filter: none;
   position: absolute;
@@ -6733,21 +6734,21 @@ li {
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-.reece-b3-gallery .carousel-control:hover,
-.reece-b3-gallery .carousel-control:active,
-.reece-b3-gallery .carousel-control:focus {
+.reece-b3-gallery .carousel .carousel-control:hover,
+.reece-b3-gallery .carousel .carousel-control:active,
+.reece-b3-gallery .carousel .carousel-control:focus {
   opacity: 1;
   filter: alpha(opacity=100);
 }
-.reece-b3-gallery .carousel-control .glyphicon-chevron-right,
-.reece-b3-gallery .carousel-control .glyphicon-chevron-left {
+.reece-b3-gallery .carousel .carousel-control .glyphicon-chevron-right,
+.reece-b3-gallery .carousel .carousel-control .glyphicon-chevron-left {
   width: 30px;
   height: 30px;
   margin-top: -15px;
   font-size: 30px;
 }
-.reece-b3-gallery .carousel-control .glyphicon-chevron-right:before,
-.reece-b3-gallery .carousel-control .glyphicon-chevron-left:before {
+.reece-b3-gallery .carousel .carousel-control .glyphicon-chevron-right:before,
+.reece-b3-gallery .carousel .carousel-control .glyphicon-chevron-left:before {
   color: white;
   font-size: 30px;
 }

@@ -32,7 +32,7 @@
         
         .caption h4,.caption p {
           text-decoration: none !important;
-          color:@grayLight;
+          color:#666;
         }
         
         .mask img {
@@ -62,7 +62,6 @@
     }
     
     // galery header / social share
-    
     .reece-b3-gallery-header {
         
         margin-top: 40px;
@@ -99,39 +98,39 @@
     
     .carousel {
       
-      img {
+      .item .thumb img,.item img {
         width: 100%;
       }
-      
-    }
     
-    .carousel-control {
-      background: none;
-      filter: none;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      width: 10%;
-      height: 100%;
-      .opacity(0.7);
-      .transition(all 0.2s linear);
-      
-      &:hover,&:active,&:focus {
-        .opacity(1);
-      }
-      
-      .glyphicon-chevron-right,
-      .glyphicon-chevron-left {
-        width: 30px;
-        height: 30px;
-        margin-top: -15px;
-        font-size: 30px;
-      }
-      
-      .glyphicon-chevron-right:before,
-      .glyphicon-chevron-left:before {
-        color: white;
-        font-size: 30px;
+      .carousel-control {
+        background: none;
+        filter: none;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 10%;
+        height: 100%;
+        .opacity(0.7);
+        .transition(all 0.2s linear);
+        
+        &:hover,&:active,&:focus {
+          .opacity(1);
+        }
+        
+        .glyphicon-chevron-right,
+        .glyphicon-chevron-left {
+          width: 30px;
+          height: 30px;
+          margin-top: -15px;
+          font-size: 30px;
+        }
+        
+        .glyphicon-chevron-right:before,
+        .glyphicon-chevron-left:before {
+          color: white;
+          font-size: 30px;
+        }
+        
       }
       
     }

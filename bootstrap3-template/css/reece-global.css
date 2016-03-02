@@ -6630,10 +6630,40 @@ li {
   /* Bootstrap 3 Carousel with thumbnail navigation */
 }
 .reece-b3-gallery .well {
-  border-radius: 0;
+  border-radius: 1px;
   border: none;
   box-shadow: none;
   background-color: #F1F2F2;
+}
+.reece-b3-gallery .thumbnail {
+  border: none;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.reece-b3-gallery .thumbnail .mask {
+  display: block;
+  overflow: hidden;
+}
+.reece-b3-gallery .thumbnail .mask img {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+  transform: scale(1.2);
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1, 1);
+  -webkit-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+.reece-b3-gallery .thumbnail .mask img:hover,
+.reece-b3-gallery .thumbnail .mask img:focus,
+.reece-b3-gallery .thumbnail .mask img:active {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  transform: scale(1.3);
 }
 .reece-b3-gallery .reece-b3-gallery-header {
   margin-top: 40px;
@@ -6665,22 +6695,7 @@ li {
   text-decoration: none;
   color: #999999;
 }
-.reece-b3-gallery .thumbnail {
-  border: none;
-  padding: 0;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-.reece-b3-gallery .carousel .item .thumb {
-  width: 25%;
-  cursor: pointer;
-  float: left;
-}
-.reece-b3-gallery .carousel .item .thumb img {
-  width: 100%;
-  margin: 2px;
-}
-.reece-b3-gallery .carousel .item img {
+.reece-b3-gallery .carousel img {
   width: 100%;
 }
 .reece-b3-gallery .carousel-control {
@@ -6691,9 +6706,17 @@ li {
   bottom: 0;
   width: 10%;
   height: 100%;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
   -webkit-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
+}
+.reece-b3-gallery .carousel-control:hover,
+.reece-b3-gallery .carousel-control:active,
+.reece-b3-gallery .carousel-control:focus {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .reece-b3-gallery .carousel-control .glyphicon-chevron-right,
 .reece-b3-gallery .carousel-control .glyphicon-chevron-left {
@@ -6729,6 +6752,29 @@ li {
 .reece-b3-gallery #thumbcarousel .carousel-control .glyphicon-chevron-left:before {
   font-size: 20px;
 }
+.reece-b3-gallery #thumbcarousel .item .thumb {
+  position: relative;
+  width: 25%;
+  cursor: pointer;
+  float: left;
+}
+.reece-b3-gallery #thumbcarousel .item .thumb:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background-color: white;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+.reece-b3-gallery #thumbcarousel .item .thumb.last:after {
+  display: none;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
 @media (max-width: 320px) {
   .reece-b3-gallery #thumbcarousel {
     display: none;
@@ -6737,11 +6783,25 @@ li {
 .reece-b3-gallery .gallery-details {
   margin-bottom: 20px;
 }
-.reece-b3-gallery .products-used {
-  border-top: solid 1px #999999;
-}
 .reece-b3-gallery .products-used .products-used-header {
   margin-bottom: 20px;
+}
+.reece-b3-gallery .products-used .thumbnail .caption h4 {
+  text-decoration: none !important;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.reece-b3-gallery .products-used .thumbnail:hover,
+.reece-b3-gallery .products-used .thumbnail:focus,
+.reece-b3-gallery .products-used .thumbnail:active {
+  text-decoration: none !important;
+}
+.reece-b3-gallery .products-used .thumbnail:hover .caption h4,
+.reece-b3-gallery .products-used .thumbnail:focus .caption h4,
+.reece-b3-gallery .products-used .thumbnail:active .caption h4 {
+  text-decoration: none !important;
+  color: #999999;
 }
 /* /.reece-b3-gallery */
 .form-control-feedback {

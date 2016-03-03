@@ -350,36 +350,38 @@ var bathroomHappiness = {
       var section = $(this).text().toLowerCase();
       $('#water-therapy').attr('class',section);
 
-      var player_container = 'water-therapy-'+section+'-video';
-      var video = $('#'+player_container+'-wrap').data('video');
-      if(video){
-        var vars = {
-          showinfo: 0,
-          modestbranding: 0,
-          rel: 0,
-          controls: 0
-        };
-        player.init({
-          container: player_container,
-          videoId: video,
-          autoplay: 1,
-          loop: 1,
-          mute: 1,
-          onReady: function(){
-            $('#'+player_container).parent().parent().addClass('ready');  
-            $('#'+player_container).addClass('ready');
-          },
-          playerVars: vars
-        });
-      }
-      setTimeout(function(){ 
-        var sections = ['therapeutic', 'relaxation','rejuvenation'];
-        $.each(sections, function(key, val){
-          if(val !== section){
-            playerManager.pause('water-therapy-'+val+'-video');
-          }
-        });
-      },1000);      
+      if(!isMobile.any()){
+        var player_container = 'water-therapy-'+section+'-video';
+        var video = $('#'+player_container+'-wrap').data('video');
+        if(video){
+          var vars = {
+            showinfo: 0,
+            modestbranding: 0,
+            rel: 0,
+            controls: 0
+          };
+          player.init({
+            container: player_container,
+            videoId: video,
+            autoplay: 1,
+            loop: 1,
+            mute: 1,
+            onReady: function(){
+              $('#'+player_container).parent().parent().addClass('ready');  
+              $('#'+player_container).addClass('ready');
+            },
+            playerVars: vars
+          });
+        }
+        setTimeout(function(){ 
+          var sections = ['therapeutic', 'relaxation','rejuvenation'];
+          $.each(sections, function(key, val){
+            if(val !== section){
+              playerManager.pause('water-therapy-'+val+'-video');
+            }
+          });
+        },1000); 
+      }     
     });
     $(window).on('resize', function(){
       var width = $('#banner .banner').width();

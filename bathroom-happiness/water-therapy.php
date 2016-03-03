@@ -8,7 +8,7 @@
         <section id="banner">
           <div class="container-fluid">
             <div class="banner">
-              <div id="water-therapy-video-wrap" class="video" data-video="Hnmn-u3l5zM">
+              <div id="water-therapy-video-wrap" class="video" data-video="BL4pZ6lLWm0">
                 <figure id="water-therapy-video"></figure>
                 <figure id="water-therapy-full-video"></figure>
               </div>

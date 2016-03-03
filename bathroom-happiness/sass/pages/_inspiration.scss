@@ -118,7 +118,9 @@ body.inspiration {
 						}
 						&.ready{
 							.image{
-								opacity: 0;
+								@media (min-width: $screen-sm){
+									opacity: 0;
+								}
 							}
 						}
 						.video{

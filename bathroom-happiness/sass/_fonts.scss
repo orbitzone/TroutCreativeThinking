@@ -9,7 +9,6 @@
     url("../fonts/bathroomhappiness.svg#bathroomhappiness") format("svg");
   font-weight: normal;
   font-style: normal;
-
 }
 
 [data-icon]:before {
@@ -52,4 +51,7 @@
 }
 .icon-circle:before {
   content: "\65";
+}
+.icon-play:before {
+  content: "\66";
 }

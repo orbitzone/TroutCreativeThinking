@@ -14,6 +14,65 @@ body.water-therapy{
 					background-image: url(../images/water_therapy/banner.jpg);
 					background-position: center center;
 					height: 513px;
+					position: relative;
+					button{
+						@include appearance(none);
+						border: none;
+						@include border-radius(20px);
+						background: rgba(0,0,0,0.6);
+						color: white;
+						padding: 10px 20px;
+						position: absolute;
+						bottom: 20px;
+						left: 20px;
+						vertical-align: middle;
+						z-index: 2;
+						outline: none;
+						i{
+							vertical-align: middle;
+						}
+					}
+				}
+				.video{
+					width: 100%;
+					height: 100%;
+					overflow: hidden;
+					position: absolute;
+					top: 0;
+					left: 0;
+					&:before{
+						content: " ";
+						display: block;
+						width: 100%;
+						height: 100%;
+						position: absolute;
+						top: 0;
+						left: 0;
+						opacity: 0;
+						z-index: 1;
+						cursor: pointer;
+					}
+					iframe{
+						display: none;
+						@media (min-width: $screen-sm){
+							display: block;
+							opacity: 0;
+							position: absolute;
+							z-index: 0;
+							top: 50%;
+							left: 50%;
+							@include transform(translate(-50%, -50%));
+							@include transition(0.3s opacity ease-out);
+							&.ready{
+								opacity: 1;
+							}
+						}
+						&#water-therapy-full-video{
+							@media (min-width: $screen-sm){
+								z-index: 4;
+							}
+						}
+					}
 				}
 			}
 		}
@@ -54,8 +113,50 @@ body.water-therapy{
 				}
 				.video-wrap{
 					position: relative;
+					.videos{
+						position: relative;
+						overflow: hidden;
+					}
 					.video{
-						
+						width: 100%;
+						height: 100%;
+						overflow: hidden;
+						position: absolute;
+						top: 0;
+						left: 0;
+						&:before{
+							content: " ";
+							display: block;
+							width: 100%;
+							height: 100%;
+							position: absolute;
+							top: 0;
+							left: 0;
+							opacity: 0;
+							z-index: 1;
+							cursor: pointer;
+						}
+						iframe{
+							display: none;
+							@media (min-width: $screen-sm){
+								display: block;
+								opacity: 0;
+								position: absolute;
+								z-index: 0;
+								top: 50%;
+								left: 50%;
+								@include transform(translate(-50%, -50%));
+								@include transition(0.3s opacity ease-out);
+								&.ready{
+									opacity: 1;
+								}
+							}
+							&#water-therapy-full-video{
+								@media (min-width: $screen-sm){
+									z-index: 4;
+								}
+							}
+						}
 					}
 					.submenu{
 						@media (min-width: $screen-sm){
@@ -65,6 +166,7 @@ body.water-therapy{
 							position: absolute;
 							bottom: 0;
 							left: 8px;
+							z-index: 2;
 						}
 						@include clearfix();
 						li{
@@ -150,81 +252,10 @@ body.water-therapy{
 	  					position: relative;
 	  					transform-style: preserve-3d;
 						  //@include transform(translateZ( -100px ));
-						  @include transition(all 1s);
-						  .section-2, .section-3,
-						  .slider-2, .slider-3{
-								position: absolute;
-								top: 0;
-								left: 0;
-								width: 100%;
-								height: 100%;
-						  }
-						  figure{
-						  	@include transition(1.2s all ease-out);
-						  }
+						  @include transition(all 1s);						  
 						}
 					}
 				}
-				&.therapeutic{
-					.section-1{
-			  		@include transform(translateY(0));
-			  	}
-			  	.section-2{
-			  		@include transform(translateY(-100%) scale(0.9));
-			  	}
-			  	.section-3{
-			  		@include transform(translateY(-100%) scale(0.9));
-			  	}
-			  	.slider-1{
-			  		@include transform(translateY(0));
-			  	}
-			  	.slider-2{
-			  		@include transform(translateY(100%) scale(0.9));
-			  	}
-			  	.slider-3{
-			  		@include transform(translateY(100%) scale(0.9));
-			  	}
-				}
-			  &.relaxation{
-			  	.section-1{
-			  		@include transform(translateY(100%) scale(0.9));
-			  	}
-			  	.section-2{
-			  		@include transform(translateY(0));
-			  	}
-			  	.section-3{
-			  		@include transform(translateY(-100%) scale(0.9));
-			  	}
-			  	.slider-1{
-			  		@include transform(translateY(-100%) scale(0.9));
-			  	}
-			  	.slider-2{
-			  		@include transform(translateY(0));
-			  	}
-			  	.slider-3{
-			  		@include transform(translateY(100%) scale(0.9));
-			  	}
-			  }
-			  &.rejuvenation{
-			  	.section-1{
-			  		@include transform(translateY(100%) scale(0.9));
-			  	}
-			  	.section-2{
-			  		@include transform(translateY(100%) scale(0.9));
-			  	}
-			  	.section-3{
-			  		@include transform(translateY(0));
-			  	}
-			  	.slider-1{
-			  		@include transform(translateY(-100%) scale(0.9));
-			  	}
-			  	.slider-2{
-			  		@include transform(translateY(-100%) scale(0.9));
-			  	}
-			  	.slider-3{
-			  		@include transform(translateY(0));
-			  	}
-			  }
 				.summary{
 					background: $water-therapy-blue;
 					text-align: center;
@@ -291,8 +322,91 @@ body.water-therapy{
 							font-size: 15px;
 						}
 					}
-				}
+				}//slides
+			}//#water-therapy-content
+			.section-2, .section-3,
+		  .slider-2, .slider-3{
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+		  }
+		  .section{
+		  	@include transition(1.2s all ease-out);
+		  }
+			&.therapeutic{
+				.section-1{
+		  		@include transform(translateY(0));
+		  	}
+		  	.section-2{
+		  		@include transform(translateY(-100%) scale(0.9));
+		  		opacity: 0;
+		  	}
+		  	.section-3{
+		  		@include transform(translateY(-100%) scale(0.9));
+		  		opacity: 0;
+		  	}
+		  	.slider-1{
+		  		@include transform(translateY(0));
+		  	}
+		  	.slider-2{
+		  		@include transform(translateY(100%) scale(0.9));
+		  		opacity: 0;
+		  	}
+		  	.slider-3{
+		  		@include transform(translateY(100%) scale(0.9));
+		  		opacity: 0;
+		  	}
 			}
-		}
+		  &.relaxation{
+		  	.section-1{
+		  		@include transform(translateY(100%) scale(0.9));
+		  		opacity: 0;
+		  	}
+		  	.section-2{
+		  		@include transform(translateY(0));
+		  	}
+		  	.section-3{
+		  		@include transform(translateY(-100%) scale(0.9));
+		  		opacity: 0;
+		  	}
+		  	.slider-1{
+		  		@include transform(translateY(-100%) scale(0.9));
+		  		opacity: 0;
+		  	}
+		  	.slider-2{
+		  		@include transform(translateY(0));
+		  	}
+		  	.slider-3{
+		  		@include transform(translateY(100%) scale(0.9));
+		  		opacity: 0;
+		  	}
+		  }
+		  &.rejuvenation{
+		  	.section-1{
+		  		@include transform(translateY(100%) scale(0.9));
+		  		opacity: 0;
+		  	}
+		  	.section-2{
+		  		@include transform(translateY(100%) scale(0.9));
+		  		opacity: 0;
+		  	}
+		  	.section-3{
+		  		@include transform(translateY(0));
+		  	}
+		  	.slider-1{
+		  		@include transform(translateY(-100%) scale(0.9));
+		  		opacity: 0;
+		  	}
+		  	.slider-2{
+		  		@include transform(translateY(-100%) scale(0.9));
+		  		opacity: 0;
+		  	}
+		  	.slider-3{
+		  		@include transform(translateY(0));
+		  	}
+		  }
+		}//#water-therapy
 	}
 }

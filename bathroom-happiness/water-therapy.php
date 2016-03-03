@@ -7,10 +7,16 @@
       <div class="main" role="main">
         <section id="banner">
           <div class="container-fluid">
-            <div class="banner"></div>          
+            <div class="banner">
+              <div class="video" data-video="Aav43C9IZTI">
+                <figure id="water-therapy-video"></figure>
+                <figure id="water-therapy-full-video"></figure>
+              </div>
+              <button type="button" data-video="Aav43C9IZTI" class="play-full-video">Play full video <i class="icon-play"></i></button>                 
+            </div>          
           </div>          
         </section>
-        <section id="water-therapy">
+        <section id="water-therapy" class="therapeutic">
           <div id="intro">
             <div class="container-fluid">
               <div class="row">
@@ -33,15 +39,32 @@
                         <li><button type="button">Rejuvenation</button></li>
                       </ul>
                     </div>
-                    <div class="video">
-                      <img src="images/water_therapy/video.jpg" alt="Video">
+                    <div class="videos">
+                      <div class="section-1 section">
+                        <img src="images/water_therapy/video.jpg" alt="Video">
+                        <div id="water-therapy-therapeutic-video-wrap" class="video video-1" data-video="RgIxcrA7BfM">
+                          <figure id="water-therapy-therapeutic-video"></figure>          
+                        </div>                    
+                      </div>
+                      <div class="section-2 section">
+                        <img src="images/water_therapy/video.jpg" alt="Video">                      
+                        <div id="water-therapy-relaxation-video-wrap" class="video video-2" data-video="hSDH5W6vNWA">
+                          <figure id="water-therapy-relaxation-video"></figure>
+                        </div>                    
+                      </div>
+                      <div class="section-3 section">
+                        <img src="images/water_therapy/video.jpg" alt="Video">
+                        <div id="water-therapy-rejuvenation-video-wrap" class="video video-3" data-video="a0Qk-tsGY5Q">
+                          <figure id="water-therapy-rejuvenation-video"></figure>                      
+                        </div>
+                      </div>                      
                     </div>                    
                   </div>                  
                 </div>
               </div>
             </div>
           </div>  
-          <div id="water-therapy-content" class="therapeutic">
+          <div id="water-therapy-content">
             <div class="container-fluid">
               <div class="row">
                 <div class="sections-wrap">
@@ -49,7 +72,7 @@
                     <div class="row">
                       <div class="col-sm-9">
                         <div class="section-content">
-                          <figure class="section-1">
+                          <figure class="section-1 section">
                             <div class="summary">
                               <div class="icon">
                                 <svg version="1.1"
@@ -74,7 +97,7 @@
                               </div>
                             </div><!-- /.summary -->
                           </figure>
-                          <figure class="section-2">
+                          <figure class="section-2 section">
                             <div class="summary">
                               <div class="icon">
                                 <svg version="1.1"
@@ -99,7 +122,7 @@
                               </div>
                             </div><!-- /.summary -->
                           </figure>
-                          <figure class="section-3">
+                          <figure class="section-3 section">
                             <div class="summary">
                               <div class="icon">
                                 <svg version="1.1"
@@ -128,7 +151,7 @@
                       </div>
                       <div class="col-sm-3">
                         <div class="section-content">
-                          <figure class="slider-1">
+                          <figure class="slider-1 section">
                             <div class="slides">
                               <div class="slide">
                                 <h2>Sensory<br/>toolkit</h2>
@@ -210,7 +233,7 @@
                               </div>
                             </div><!-- /.slides -->
                           </figure>
-                          <figure class="slider-2">
+                          <figure class="slider-2 section">
                             <div class="slides">
                               <div class="slide">
                                 <h2>Sensory<br/>toolkit</h2>
@@ -292,7 +315,7 @@
                               </div>
                             </div><!-- /.slides -->
                           </figure>
-                          <figure class="slider-3">
+                          <figure class="slider-3 section">
                             <div class="slides">
                               <div class="slide">
                                 <h2>Sensory<br/>toolkit</h2>

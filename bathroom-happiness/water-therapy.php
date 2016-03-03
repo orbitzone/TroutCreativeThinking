@@ -8,7 +8,7 @@
         <section id="banner">
           <div class="container-fluid">
             <div class="banner">
-              <div class="video" data-video="Aav43C9IZTI">
+              <div id="water-therapy-video-wrap" class="video" data-video="Hnmn-u3l5zM">
                 <figure id="water-therapy-video"></figure>
                 <figure id="water-therapy-full-video"></figure>
               </div>
@@ -48,7 +48,7 @@
                       </div>
                       <div class="section-2 section">
                         <img src="images/water_therapy/video.jpg" alt="Video">                      
-                        <div id="water-therapy-relaxation-video-wrap" class="video video-2" data-video="hSDH5W6vNWA">
+                        <div id="water-therapy-relaxation-video-wrap" class="video video-2" data-video="ZiWCFmto5UM">
                           <figure id="water-therapy-relaxation-video"></figure>
                         </div>                    
                       </div>

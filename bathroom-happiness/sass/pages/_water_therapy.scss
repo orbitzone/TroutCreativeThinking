@@ -10,7 +10,9 @@ body.water-therapy{
 				padding: 0;
 				margin: 0 auto;
 				.banner{
+					background-size: cover;
 					background-image: url(../images/water_therapy/banner.jpg);
+					background-position: center center;
 					height: 513px;
 				}
 			}

@@ -92,7 +92,7 @@ var playerManager = {
         this.getActive().settings.autoplay = false;
       }
     }else{
-      $.each(player.obj, function(key){
+      $.each(this.players, function(key){
         if(typeof player.obj[key].player.stopVideo !== "undefined"){
           player.obj[key].player.stopVideo();              
         }       
@@ -306,13 +306,13 @@ var bathroomHappiness = {
           showinfo: 0,
           modestbranding: 0,
           rel: 0,
-          loop: 1,
-          mute: 1
         };
         player.init({
           container: player_container,
           videoId: video,
           autoplay: 1,
+          mute: 1,
+          loop: 1,
           onReady: function(){
             $('#water-therapy-video').parent().parent().addClass('ready');  
             $('#water-therapy-video').addClass('ready');

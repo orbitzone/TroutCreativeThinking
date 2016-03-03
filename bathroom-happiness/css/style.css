@@ -3245,10 +3245,10 @@ body.water-therapy .main #water-therapy #water-therapy-content .sections-wrap .s
 }
 /* line 162, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #water-therapy #water-therapy-content .sections-wrap .sections .section-content figure {
-  -moz-transition: all 2s ease-out;
-  -o-transition: all 2s ease-out;
-  -webkit-transition: all 2s ease-out;
-  transition: all 2s ease-out;
+  -moz-transition: all 1.2s ease-out;
+  -o-transition: all 1.2s ease-out;
+  -webkit-transition: all 1.2s ease-out;
+  transition: all 1.2s ease-out;
 }
 /* line 169, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #water-therapy #water-therapy-content.therapeutic .section-1 {

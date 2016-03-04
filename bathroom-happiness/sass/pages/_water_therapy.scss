@@ -201,6 +201,10 @@ body.water-therapy{
 								}
 							}
 						}
+						.submenu-wrap{
+							position: relative;
+							z-index: 2;
+						}
 					.submenu{
 						background: $water-therapy-blue;
 						margin-left: -0.5px;

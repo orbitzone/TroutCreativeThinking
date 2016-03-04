@@ -216,8 +216,7 @@ var player = {
           $(window).resize();     
         },
         onStateChange: function(event){
-          console.log(event);
-           playerManager.onChangeState(event);
+          playerManager.onChangeState(event);
         }
       }
     };
@@ -445,7 +444,7 @@ var bathroomHappiness = {
                 $('#banner .stop-full-video').removeClass('show');
                 $('#banner .play-full-video').removeClass('paused playing');
                 player.stop('water-therapy-full-video');
-                $('#water-therapy-full-video').fadeOut(300, 0);
+                $('#water-therapy-full-video').addClass('hide');
               }
             }
           });
@@ -471,7 +470,7 @@ var bathroomHappiness = {
             },
             onPlaying: function(){  
               $('#banner .play-full-video').addClass('playing');
-              $('#water-therapy-full-video').fadeIn(300, 0); 
+              $('#water-therapy-full-video').removeClass('hide'); 
             },
             onEnded: function(){
               if(deviceMobile){
@@ -479,7 +478,7 @@ var bathroomHappiness = {
               }
               $('#banner .stop-full-video').removeClass('show');
               $('#banner .play-full-video').removeClass('paused playing');
-              $('#water-therapy-full-video').fadeOut(300, 0);
+              $('#water-therapy-full-video').addClass('hide');
             },
             onPaused: function(){
               $('#banner .play-full-video').removeClass('paused playing');

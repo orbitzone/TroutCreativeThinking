@@ -96,6 +96,11 @@ body.water-therapy{
 						cursor: pointer;
 					}					
 				}
+				#water-therapy-full-video{
+					&.hide{
+						@include animation(video_hide 0.3s ease-out);
+					}
+				}
 				.video-iframe-wrap{
 					overflow: hidden;
 					display: none;
@@ -481,5 +486,18 @@ body.water-therapy{
 		  	}
 		  }
 		}//#water-therapy
+	}
+}
+@include keyframes(video_hide){
+	0%{
+		opacity: 1;
+		visibility: visible;
+	}
+	99.999%{
+		visibility: hidden;
+	}
+	100%{
+		opacity: 0;
+		visibility: hidden;
 	}
 }

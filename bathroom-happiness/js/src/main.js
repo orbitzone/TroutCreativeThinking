@@ -455,7 +455,7 @@ var bathroomHappiness = {
        $('#water-therapy-full-video').show();
        if(deviceMobile){
         $.magnificPopup.open({
-          mainClass: 'mfp-img-mobile',
+          mainClass: 'mfp-water-therapy-full-video',
           items: {
             type: 'inline',
             src:'#full-video-popup'

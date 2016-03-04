@@ -438,13 +438,13 @@ var bathroomHappiness = {
             mainClass: 'mfp-water-therapy-full-video',
             items: {
               type: 'inline',
-              src:'#full-video-popup',
-              callbacks: {
-                afterClose: function(){
-                  $('#banner .stop-full-video').removeClass('show');
-                  $('#banner .play-full-video').removeClass('paused playing');
-                  player.stop('water-therapy-full-video');
-                }
+              src:'#full-video-popup',              
+            },
+            callbacks: {
+              afterClose: function(){
+                $('#banner .stop-full-video').removeClass('show');
+                $('#banner .play-full-video').removeClass('paused playing');
+                player.stop('water-therapy-full-video');
               }
             }
           });

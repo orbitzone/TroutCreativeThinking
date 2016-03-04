@@ -96,7 +96,7 @@ body.water-therapy{
 						cursor: pointer;
 					}					
 				}
-				#water-therapy-full-video{
+				#full-video-popup{
 					&.hide{
 						@include animation(video_hide 0.3s ease-out);
 					}

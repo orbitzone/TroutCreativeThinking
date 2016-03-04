@@ -3698,7 +3698,7 @@ body.water-therapy .main #banner .container-fluid .video:before {
   cursor: pointer;
 }
 /* line 100, ../sass/pages/_water_therapy.scss */
-body.water-therapy .main #banner .container-fluid #water-therapy-full-video.hide {
+body.water-therapy .main #banner .container-fluid #full-video-popup.hide {
   -webkit-animation: video_hide 0.3s ease-out;
   -moz-animation: video_hide 0.3s ease-out;
   -ms-animation: video_hide 0.3s ease-out;

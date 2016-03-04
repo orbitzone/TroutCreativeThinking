@@ -319,12 +319,7 @@ body.water-therapy{
 				.shower-image{
 					.col-xs-12{
 						padding: 0;
-					}
-					@media (min-width: $screen-sm){
-						.col-xs-12{
-							padding: 0 15px;
-						}
-					}
+					}					
 				}
 				.summary{
 					background: $water-therapy-blue;

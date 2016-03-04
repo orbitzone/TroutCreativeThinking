@@ -65,6 +65,7 @@ body.water-therapy{
 				}
 				.video-iframe-wrap{
 					overflow: hidden;
+					display: none;
 					@media (min-width: $screen-sm){
 						display: block;
 						opacity: 0;
@@ -112,8 +113,9 @@ body.water-therapy{
 					.rte{
 						text-align: center;
 						font-size: 15px;
-						max-width: 715px;
+						max-width: 755px;
 						margin: 0 auto;
+						padding: 0 20px;
 					}	
 				}
 				.video-wrap{
@@ -142,15 +144,10 @@ body.water-therapy{
 							z-index: 1;
 							cursor: pointer;
 						}
-						iframe{
-							display: none;
-							@media (min-width: $screen-sm){
-								display: block;								
-							}							
-						}
 					}
 					.video-iframe-wrap{
 							overflow: hidden;
+							display: none;
 							@media (min-width: $screen-sm){
 								display: block;
 								opacity: 0;
@@ -176,6 +173,13 @@ body.water-therapy{
 							z-index: 2;
 						}
 						@include clearfix();
+						&.fixed{
+							position: fixed;
+							top: 0;
+							left: 0;
+							width: 100%;
+							z-index: 2;
+						}
 						li{
 							float: left;
 							width: 33.33333%;
@@ -262,7 +266,18 @@ body.water-therapy{
 						  @include transition(all 1s);						  
 						}
 					}
+					.shower-image{
+						.col-xs-12{
+							padding: 0;
+						}
+						@media (min-width: $screen-sm){
+							.col-xs-12{
+								padding: 0 15px;
+							}
+						}
+					}
 				}
+
 				.summary{
 					background: $water-therapy-blue;
 					text-align: center;

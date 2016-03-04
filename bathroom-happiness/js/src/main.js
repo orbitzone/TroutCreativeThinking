@@ -341,49 +341,6 @@ var bathroomHappiness = {
 
   },
   waterTherapy: function(){
-    $('#water-therapy .slides').slick({
-      arrows: false,
-      dots: true
-    });
-    $('.submenu button').on('click', function(){
-      $('.submenu li').removeClass('active');
-      $(this).parent().addClass('active');
-      var section = $(this).text().toLowerCase();
-      $('#water-therapy').attr('class',section);
-
-      if(!isMobile.any()){
-        var player_container = 'water-therapy-'+section+'-video';
-        var video = $('#'+player_container+'-wrap').data('video');
-        if(video){
-          var vars = {
-            showinfo: 0,
-            modestbranding: 0,
-            rel: 0,
-            controls: 0
-          };
-          player.init({
-            container: player_container,
-            videoId: video,
-            autoplay: 1,
-            loop: 1,
-            mute: 1,
-            onReady: function(){
-              $('#'+player_container).parent().parent().parent().addClass('ready');  
-              $('#'+player_container).parent().addClass('ready');
-            },
-            playerVars: vars
-          });
-        }
-        setTimeout(function(){ 
-          var sections = ['therapeutic', 'relaxation','rejuvenation'];
-          $.each(sections, function(key, val){
-            if(val !== section){
-              playerManager.pause('water-therapy-'+val+'-video');
-            }
-          });
-        },1000); 
-      }     
-    });
     $(window).on('resize', function(){
       var width = $('#banner .banner').width();
       var height = 9 * width/16;
@@ -403,8 +360,8 @@ var bathroomHappiness = {
 
       var width = $('#water-therapy .videos').width();
       var height = 9 * width / 16;
-      $('#water-therapy .videos figure').width(width);
-      $('#water-therapy .videos figure').height(height);
+      $('#water-therapy .videos iframe').width(width);
+      $('#water-therapy .videos iframe').height(height);
     }).resize();
     // When the player is ready, add listeners for pause, finish, and playProgress
 
@@ -500,7 +457,60 @@ var bathroomHappiness = {
         $('#water-therapy-full-video').show();
       }
     }); 
+    $('.submenu button').on('click', function(){
+      $('.submenu li').removeClass('active');
+      $(this).parent().addClass('active');
+      var section = $(this).text().toLowerCase();
+      $('#water-therapy').attr('class',section);
 
+      if(!isMobile.any()){
+        var player_container = 'water-therapy-'+section+'-video';
+        var video = $('#'+player_container+'-wrap').data('video');
+        if(video){
+          var vars = {
+            showinfo: 0,
+            modestbranding: 0,
+            rel: 0,
+            controls: 0
+          };
+          player.init({
+            container: player_container,
+            videoId: video,
+            autoplay: 1,
+            loop: 1,
+            mute: 1,
+            onReady: function(){
+              $('#'+player_container).parent().parent().parent().addClass('ready');  
+              $('#'+player_container).parent().addClass('ready');
+            },
+            playerVars: vars
+          });
+        }
+        setTimeout(function(){ 
+          var sections = ['therapeutic', 'relaxation','rejuvenation'];
+          $.each(sections, function(key, val){
+            if(val !== section){
+              playerManager.pause('water-therapy-'+val+'-video');
+            }
+          });
+        },1000); 
+      }     
+    });
+    $('#water-therapy .slides').slick({
+      arrows: false,
+      dots: true
+    });
+    $(window).on('scroll', function(){
+      console.log($(window).scrollTop());
+      console.log($('.submenu-wrap').offset().top);
+      if($(window).scrollTop() >= $('.submenu-wrap').offset().top){
+        $('.submenu-wrap').height($('.submenu').height());
+        $('.submenu').addClass('fixed');
+      }else{
+        $('.submenu-wrap').height('');
+        $('.submenu').removeClass('fixed');
+      }
+    });
   }
 };
 (function ($) {

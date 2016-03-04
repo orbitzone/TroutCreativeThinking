@@ -44,19 +44,19 @@ body.homepage {
     background-color: $body-light-grey;
     padding-top: 10px;
     padding-bottom: 2px;
-    padding-left: 15px;
-    padding-right: 15px;
     padding-bottom: 30px;
       a{
         display: block;
         text-align: center;
       }
     .row {
-      margin-left: -5px;
-      margin-right: -5px;
-      .col-md-3,
-      .col-md-6 {
-        padding: 0 5px;
+      @media (min-width: $screen-sm-min) {
+        margin-left: -5px;
+        margin-right: -5px;
+        .col-md-3,
+        .col-md-6 {
+          padding: 0 5px;
+        }
       }
     }
     .intro-text{
@@ -264,8 +264,6 @@ body.homepage {
   .section-the-block {
     background-color: $body-light-grey;
     padding-bottom: 30px;
-    padding-left: 15px;
-    padding-right: 15px;
 
     .the-block-bathroom {
       background: rgba(0, 0, 0, 0) url("../images/homepage/the-block-bathroom.jpg") 238px 0;
@@ -282,7 +280,7 @@ body.homepage {
       .the-block-dean-shay {
         background-color: #231f20;
         text-align: center;
-        @media (min-width: 375px) {
+        @media (min-width: $screen-sm) {
           padding-left: 20px;
           float: left;
         }
@@ -292,7 +290,7 @@ body.homepage {
         position: relative;
         float: left;
         display: none;
-        @media (min-width: 375px) {
+        @media (min-width: $screen-sm) {
           display: block;
         }
 
@@ -315,9 +313,9 @@ body.homepage {
 
   .section-nav-blocks {
     background: $body-dark-grey url(../images/nav/nav-pattern.png) repeat;
-    padding: 20px 15px 0 15px;
+    padding: 20px 0 0 0;
      @media (min-width: $screen-sm-min) {
-      padding: 50px 15px 55px 15px;
+      padding: 50px 0 55px 0;
      }
     .row {
       margin-left: -2px;

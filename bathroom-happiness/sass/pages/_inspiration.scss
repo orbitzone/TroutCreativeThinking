@@ -189,6 +189,10 @@ body.inspiration {
 		}//blocks
 		.destination-happiness{
 			padding-bottom: 50px;
+			text-align: center;
+				@media (min-width: $screen-sm){
+					text-align: left;
+				}
 			.hex-wrap{
 				position: relative;
 				height: 350px;
@@ -252,6 +256,10 @@ body.inspiration {
 					display: block;
 					//@include transform(scale(1));
 					@include transition(0.3s color ease-out);
+					text-align: center;
+					@media (min-width: $screen-sm){
+						text-align: left;
+					}
 					&:hover{
 						color: $destination-happiness-green;
 						//@include transform(scale(1.05));

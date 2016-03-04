@@ -476,6 +476,7 @@ var bathroomHappiness = {
               if(deviceMobile){
                 $.magnificPopup.close();
               }
+              $('#banner .stop-full-video').removeClass('show');
               $('#banner .play-full-video').removeClass('paused playing');
               $('#water-therapy-full-video').fadeOut(300, 0);
             },

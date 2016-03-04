@@ -324,14 +324,14 @@ var bathroomHappiness = {
           mute: 1,
           loop: 1,
           onReady: function(){
-            $('#water-therapy-video').parent().parent().addClass('ready');  
-            $('#water-therapy-video').addClass('ready');
+            $('#water-therapy-video').parent().parent().parent().addClass('ready');  
+            $('#water-therapy-video').parent().addClass('ready');
           },
           playerVars: vars
         });            
       }           
     }else{
-      $('#water-therapy-video').addClass('ready');
+      $('#water-therapy-video').parent().addClass('ready');
       if(isMobile.any()){
         $('#water-therapy-video').remove();
       }
@@ -368,8 +368,8 @@ var bathroomHappiness = {
             loop: 1,
             mute: 1,
             onReady: function(){
-              $('#'+player_container).parent().parent().addClass('ready');  
-              $('#'+player_container).addClass('ready');
+              $('#'+player_container).parent().parent().parent().addClass('ready');  
+              $('#'+player_container).parent().addClass('ready');
             },
             playerVars: vars
           });
@@ -429,7 +429,7 @@ var bathroomHappiness = {
             mute: 1, 
             onReady: function(){
               $('#'+player_container).parent().parent().addClass('ready');  
-              $('#'+player_container).addClass('ready');
+              $('#'+player_container).parent().addClass('ready');
 
               loadNext(key);
             },
@@ -480,17 +480,10 @@ var bathroomHappiness = {
           autoplay: autoplay,
           loop: false,
           onReady: function(){  
-            $('#water-therapy-full-video').addClass('ready');        
+            $('#water-therapy-full-video').parent().addClass('ready');        
           },
           onPlaying: function(){  
-            $('#water-therapy-full-video').show();
-            var iframe = document.querySelector.bind(document)('#water-therapy-full-video');
-            var requestFullScreen = iframe.requestFullScreen || iframe.mozRequestFullScreen || iframe.webkitRequestFullScreen;
-            console.log(requestFullScreen);
-            if (requestFullScreen) {
-              console.log('done');
-              requestFullScreen.bind(iframe)();
-            }
+            $('#water-therapy-full-video').fadeIn(300, 0); 
           },
           onEnded: function(){
             if(deviceMobile){

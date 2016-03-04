@@ -13,8 +13,9 @@ body.water-therapy{
 					background-size: cover;
 					background-image: url(../images/water_therapy/banner.jpg);
 					background-position: center center;
-					height: 513px;
+					height: 514px;
 					position: relative;
+					overflow: hidden;
 					button{
 						@include appearance(none);
 						border: none;
@@ -32,6 +33,10 @@ body.water-therapy{
 							vertical-align: middle;
 						}
 					}
+				}
+				#water-therapy-banner-videos{
+					height: 100%;
+					display: block;				
 				}
 				.video{
 					width: 100%;
@@ -51,26 +56,21 @@ body.water-therapy{
 						opacity: 0;
 						z-index: 1;
 						cursor: pointer;
-					}
-					iframe{
-						display: none;
-						@media (min-width: $screen-sm){
-							display: block;
-							opacity: 0;
-							position: absolute;
-							z-index: 0;
-							top: 50%;
-							left: 50%;
-							@include transform(translate(-50%, -50%));
-							@include transition(0.3s opacity ease-out);
-							&.ready{
-								opacity: 1;
-							}
-						}
-						&#water-therapy-full-video{
-							@media (min-width: $screen-sm){
-								z-index: 4;
-							}
+					}					
+				}
+				.video-iframe-wrap{
+					overflow: hidden;
+					@media (min-width: $screen-sm){
+						display: block;
+						opacity: 0;
+						position: absolute;
+						z-index: 1;
+						top: 50%;
+						left: 50%;
+						@include transform(translate(-50%, -50%));
+						@include transition(0.3s opacity ease-out);
+						&.ready{
+							opacity: 1;
 						}
 					}
 				}
@@ -140,10 +140,17 @@ body.water-therapy{
 						iframe{
 							display: none;
 							@media (min-width: $screen-sm){
+								display: block;								
+							}							
+						}
+					}
+					.video-iframe-wrap{
+							overflow: hidden;
+							@media (min-width: $screen-sm){
 								display: block;
 								opacity: 0;
 								position: absolute;
-								z-index: 0;
+								z-index: 1;
 								top: 50%;
 								left: 50%;
 								@include transform(translate(-50%, -50%));
@@ -152,13 +159,7 @@ body.water-therapy{
 									opacity: 1;
 								}
 							}
-							&#water-therapy-full-video{
-								@media (min-width: $screen-sm){
-									z-index: 4;
-								}
-							}
 						}
-					}
 					.submenu{
 						@media (min-width: $screen-sm){
 							display: inline-block;

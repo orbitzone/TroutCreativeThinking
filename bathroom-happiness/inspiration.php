@@ -80,7 +80,7 @@
                       <div class="image" style="background-image: url(images/inspiration/water-therapy.jpg);">
                         <img src="images/inspiration/water-therapy.jpg" alt="Water Therapy">
                       </div>
-                      <div class="video" data-video="Aav43C9IZTI">
+                      <div class="video video-iframe-wrap" data-video="Aav43C9IZTI">
                         <figure id="water-therapy-video"></figure>
                       </div>                      
                     </div>

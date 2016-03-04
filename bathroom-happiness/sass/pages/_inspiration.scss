@@ -124,8 +124,6 @@ body.inspiration {
 							}
 						}
 						.video{
-							width: 100%;
-							height: 100%;
 							overflow: hidden;
 							position: absolute;
 							top: 0;
@@ -145,17 +143,22 @@ body.inspiration {
 							iframe{
 								display: none;
 								@media (min-width: $screen-sm){
-									display: block;
-									opacity: 0;
-									position: absolute;
-									z-index: 0;
-									top: 50%;
-									left: 50%;
-									@include transform(translate(-50%, -50%));
-									@include transition(0.3s opacity ease-out);
-									&.ready{
-										opacity: 1;
-									}
+									display: block;									
+								}
+							}
+						}
+						.video-iframe-wrap{
+							@media (min-width: $screen-sm){
+								display: block;
+								opacity: 0;
+								position: absolute;
+								z-index: 0;
+								top: 50%;
+								left: 50%;
+								@include transform(translate(-50%, -50%));
+								@include transition(0.3s opacity ease-out);
+								&.ready{
+									opacity: 1;
 								}
 							}
 						}

@@ -9,10 +9,12 @@
         <section id="banner">
           <div class="container-fluid">
             <div class="banner">
-              <div id="water-therapy-video-wrap" class="video" data-video="BL4pZ6lLWm0">
-                <figure id="water-therapy-video"></figure>
-                <div id="full-video-popup">
-                <figure id="water-therapy-full-video"></figure>
+              <div id="water-therapy-banner-videos">
+                <div id="water-therapy-video-wrap" class="video-iframe-wrap video" data-video="BL4pZ6lLWm0">
+                  <figure id="water-therapy-video"></figure>
+                </div>
+                <div id="full-video-popup" class="video-iframe-wrap">
+                  <figure id="water-therapy-full-video"></figure>
                 </div>
               </div>
               <button type="button" data-video="Aav43C9IZTI" class="play-full-video">Play full video <i class="icon-play"></i></button>                 
@@ -45,19 +47,19 @@
                     <div class="videos">
                       <div class="section-1 section">
                         <img src="images/water_therapy/video.jpg" alt="Video">
-                        <div id="water-therapy-therapeutic-video-wrap" class="video video-1" data-video="RgIxcrA7BfM">
+                        <div id="water-therapy-therapeutic-video-wrap" class="video-iframe-wrap video video-1" data-video="RgIxcrA7BfM">
                           <figure id="water-therapy-therapeutic-video"></figure>          
                         </div>                    
                       </div>
                       <div class="section-2 section">
                         <img src="images/water_therapy/video.jpg" alt="Video">                      
-                        <div id="water-therapy-relaxation-video-wrap" class="video video-2" data-video="ZiWCFmto5UM">
+                        <div id="water-therapy-relaxation-video-wrap" class="video-iframe-wrap video video-2" data-video="ZiWCFmto5UM">
                           <figure id="water-therapy-relaxation-video"></figure>
                         </div>                    
                       </div>
                       <div class="section-3 section">
                         <img src="images/water_therapy/video.jpg" alt="Video">
-                        <div id="water-therapy-rejuvenation-video-wrap" class="video video-3" data-video="a0Qk-tsGY5Q">
+                        <div id="water-therapy-rejuvenation-video-wrap" class="video-iframe-wrap video video-3" data-video="a0Qk-tsGY5Q">
                           <figure id="water-therapy-rejuvenation-video"></figure>                      
                         </div>
                       </div>                      

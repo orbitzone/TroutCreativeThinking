@@ -167,6 +167,7 @@ body.water-therapy{
 						margin-left: -0.5px;
 						margin-right: -0.5px;
 						@media (min-width: $screen-sm){
+							background: none;
 							display: inline-block;
 							@include transform(rotate(-90deg) translateX(-206px));
 							@include transform-origin(top left);
@@ -266,7 +267,7 @@ body.water-therapy{
 						max-width: 1200px;
 						margin: 0 auto;
 						position: relative;
-	  				perspective: 1000px;
+						perspective: 1000px;
 	  				.section-content {
 	  					overflow: hidden;
 	  					position: relative;
@@ -274,19 +275,18 @@ body.water-therapy{
 						  //@include transform(translateZ( -100px ));
 						  @include transition(all 1s);						  
 						}
+					}					
+				}
+				.shower-image{
+					.col-xs-12{
+						padding: 0;
 					}
-					.shower-image{
+					@media (min-width: $screen-sm){
 						.col-xs-12{
-							padding: 0;
-						}
-						@media (min-width: $screen-sm){
-							.col-xs-12{
-								padding: 0 15px;
-							}
+							padding: 0 15px;
 						}
 					}
 				}
-
 				.summary{
 					background: $water-therapy-blue;
 					text-align: center;

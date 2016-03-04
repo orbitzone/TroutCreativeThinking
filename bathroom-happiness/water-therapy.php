@@ -69,8 +69,9 @@
                   </div>                  
                 </div>
               </div>
-            </div>
-          </div>  
+            </div><!-- /.container-fluid -->            
+          </div><!-- /#intro -->
+
           <div id="water-therapy-content">
             <div class="container-fluid">
               <div class="sections-wrap">
@@ -78,7 +79,7 @@
                   <div class="row">
                     <div class="col-sm-9">
                       <div class="section-content">
-                        <figure class="section-1 section">
+                         <figure class="section-1 section">
                           <div class="summary">
                             <div class="icon">
                               <svg version="1.1"
@@ -152,7 +153,7 @@
                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                             </div>
                           </div><!-- /.summary -->
-                        </figure>   
+                        </figure>  
                       </div>                                         
                     </div>
                     <div class="col-sm-3">
@@ -400,17 +401,17 @@
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="shower-image">
-                  <div class="row">
-                    <div class="col-xs-12">                
-                      <img src="images/water_therapy/hand.jpg" alt="Hand"/>
-                    </div>
-                  </div>
-                </div>                
+                </div>                             
               </div>
-            </div>
-          </div>
+              <div class="shower-image">
+                <div class="row">
+                  <div class="col-xs-12">                
+                    <img src="images/water_therapy/hand.jpg" alt="Hand"/>
+                  </div>
+                </div>
+              </div>  <!-- /.shower-image -->
+            </div><!-- /.container-fluid-->
+          </div><!-- /#water-therapy -->
         </section>             
       </div>  
       <!-- end .main -->

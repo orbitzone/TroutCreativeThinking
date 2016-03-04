@@ -1,5 +1,6 @@
 <?php
   $title = "Reece - Water Therapy";
+  $extra_javascript = "<script src='js/vendor/jquery.magnific-popup.min.js' type='text/javascript'></script>";
  include_once('templates/includes/reece-head.php');?>
   <body class="water-therapy bathroom-happiness">
     <div class="ocmain-wrapper">
@@ -10,7 +11,9 @@
             <div class="banner">
               <div id="water-therapy-video-wrap" class="video" data-video="BL4pZ6lLWm0">
                 <figure id="water-therapy-video"></figure>
+                <div id="full-video-popup">
                 <figure id="water-therapy-full-video"></figure>
+                </div>
               </div>
               <button type="button" data-video="Aav43C9IZTI" class="play-full-video">Play full video <i class="icon-play"></i></button>                 
             </div>          

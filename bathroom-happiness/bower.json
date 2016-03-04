@@ -12,6 +12,7 @@
     "angular": "~1.3.12"
   },
   "devDependencies": {
-    "jquery-validation": "jquery-validate#^1.14.0"
+    "jquery-validation": "jquery-validate#^1.14.0",
+    "magnific-popup": "^1.1.0"
   }
 }

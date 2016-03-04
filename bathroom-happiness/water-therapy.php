@@ -157,10 +157,10 @@
                     </div>
                     <div class="col-sm-3">
                       <div class="section-content">
-                        <figure class="slider-1 section">
+                        <figure class="slider-1 sensory-slider section" style="background-image: url(images/water_therapy/slider-1.jpg);">
+                          <h2>Sensory<br/>toolkit</h2>
                           <div class="slides">
                             <div class="slide">
-                              <h2>Sensory<br/>toolkit</h2>
                               <div class="icon">
                                 <svg version="1.1" id="Shape_1_copy_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                                    y="0px" width="35px" height="52px" viewBox="0 0 15 22" enable-background="new 0 0 15 22" xml:space="preserve">
@@ -186,7 +186,6 @@
                               </div>
                             </div>
                             <div class="slide">
-                              <h2>Sensory<br/>toolkit</h2>
                               <div class="icon">
                                 <svg version="1.1" id="Shape_1_copy_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                                    y="0px" width="35px" height="52px" viewBox="0 0 15 22" enable-background="new 0 0 15 22" xml:space="preserve">
@@ -212,7 +211,6 @@
                               </div>
                             </div>
                             <div class="slide">
-                              <h2>Sensory<br/>toolkit</h2>
                               <div class="icon">
                                 <svg version="1.1" id="Shape_1_copy_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                                    y="0px" width="35px" height="52px" viewBox="0 0 15 22" enable-background="new 0 0 15 22" xml:space="preserve">
@@ -239,10 +237,10 @@
                             </div>
                           </div><!-- /.slides -->
                         </figure>
-                        <figure class="slider-2 section">
+                        <figure class="slider-2 sensory-slider section" style="background-image: url(images/water_therapy/slider-1.jpg);">
+                          <h2>Sensory<br/>toolkit</h2>
                           <div class="slides">
                             <div class="slide">
-                              <h2>Sensory<br/>toolkit</h2>
                               <div class="icon">
                                 <svg version="1.1" id="Shape_1_copy_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                                    y="0px" width="35px" height="52px" viewBox="0 0 15 22" enable-background="new 0 0 15 22" xml:space="preserve">
@@ -268,7 +266,6 @@
                               </div>
                             </div>
                             <div class="slide">
-                              <h2>Sensory<br/>toolkit</h2>
                               <div class="icon">
                                 <svg version="1.1" id="Shape_1_copy_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                                    y="0px" width="35px" height="52px" viewBox="0 0 15 22" enable-background="new 0 0 15 22" xml:space="preserve">
@@ -294,7 +291,6 @@
                               </div>
                             </div>
                             <div class="slide">
-                              <h2>Sensory<br/>toolkit</h2>
                               <div class="icon">
                                 <svg version="1.1" id="Shape_1_copy_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                                    y="0px" width="35px" height="52px" viewBox="0 0 15 22" enable-background="new 0 0 15 22" xml:space="preserve">
@@ -321,10 +317,10 @@
                             </div>
                           </div><!-- /.slides -->
                         </figure>
-                        <figure class="slider-3 section">
+                        <figure class="slider-3 sensory-slider section" style="background-image: url(images/water_therapy/slider-1.jpg);">
+                          <h2>Sensory<br/>toolkit</h2>
                           <div class="slides">
                             <div class="slide">
-                              <h2>Sensory<br/>toolkit</h2>
                               <div class="icon">
                                 <svg version="1.1" id="Shape_1_copy_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                                    y="0px" width="35px" height="52px" viewBox="0 0 15 22" enable-background="new 0 0 15 22" xml:space="preserve">
@@ -350,7 +346,6 @@
                               </div>
                             </div>
                             <div class="slide">
-                              <h2>Sensory<br/>toolkit</h2>
                               <div class="icon">
                                 <svg version="1.1" id="Shape_1_copy_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                                    y="0px" width="35px" height="52px" viewBox="0 0 15 22" enable-background="new 0 0 15 22" xml:space="preserve">
@@ -376,7 +371,6 @@
                               </div>
                             </div>
                             <div class="slide">
-                              <h2>Sensory<br/>toolkit</h2>
                               <div class="icon">
                                 <svg version="1.1" id="Shape_1_copy_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                                    y="0px" width="35px" height="52px" viewBox="0 0 15 22" enable-background="new 0 0 15 22" xml:space="preserve">

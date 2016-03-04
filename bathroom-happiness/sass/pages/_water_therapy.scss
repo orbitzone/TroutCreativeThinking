@@ -163,6 +163,9 @@ body.water-therapy{
 							}
 						}
 					.submenu{
+						background: $water-therapy-blue;
+						margin-left: -0.5px;
+						margin-right: -0.5px;
 						@media (min-width: $screen-sm){
 							display: inline-block;
 							@include transform(rotate(-90deg) translateX(-206px));
@@ -182,10 +185,12 @@ body.water-therapy{
 						}
 						li{
 							float: left;
-							width: 33.33333%;
+							width: 50%;
+							padding: 0 0.5px;
 							@media (min-width: $screen-sm){
 								float: none;
 								width: auto;
+								padding: 0;
 							}
 							button{
 								color: white;
@@ -195,7 +200,7 @@ body.water-therapy{
 								font-weight: 600;
 								padding: 0;
 								height: 60px;
-								font-size: 10px;
+								font-size: 13px;
 								line-height: 1;
 								display: block;
 								margin-bottom: 0;
@@ -221,6 +226,10 @@ body.water-therapy{
 								}
 							}
 							&.active{
+								display: none;
+								@media (min-width: $screen-sm){
+									display: block;
+									}
 								button{
 									background: $water-therapy-blue;
 									color: $gold;
@@ -282,7 +291,7 @@ body.water-therapy{
 					background: $water-therapy-blue;
 					text-align: center;
 					color: white;
-					padding: 60px 20px;
+					padding: 40px 20px;
 					@media (min-width: $screen-sm){
 						height: 350px;
 					}
@@ -310,13 +319,30 @@ body.water-therapy{
 						}
 					}
 				}
-				.slides{
-					background-image: url(../images/water_therapy/slider-1.jpg);
-					background-size: cover;
-					color: white;
+				.sensory-slider{
+					background-size: cover;			
+					padding-top: 28px;
 					height: 350px;
+					h2{
+						color: white;
+						margin-top: 0;
+						font-size: 20px;
+						font-weight: 300;
+						line-height: 30px;
+						letter-spacing: 0.16em;
+						text-transform: uppercase;
+						text-align: center;
+					}		
+				}
+				.slides{
+					color: white;
+					padding-bottom: 40px;
+					.slick-dots{
+						bottom: 0;
+						margin-bottom: 0;
+					}					
 					.slide{
-						padding: 28px 20px;
+						padding: 0 20px;
 						.icon{
 							text-align: center;
 							.label{
@@ -327,15 +353,6 @@ body.water-therapy{
 								padding-top: 18px;
 								padding-bottom: 20px;
 							}
-						}
-						h2{
-							margin-top: 0;
-							font-size: 20px;
-							font-weight: 300;
-							line-height: 30px;
-							letter-spacing: 0.16em;
-							text-transform: uppercase;
-							text-align: center;
 						}
 						.text{
 							margin: 0 auto;

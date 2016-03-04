@@ -17,7 +17,10 @@
                   <figure id="water-therapy-full-video"></figure>
                 </div>
               </div>
-              <button type="button" data-video="Aav43C9IZTI" class="play-full-video">Play full video <i class="icon-play"></i></button>                 
+              <ul class="banner-video-buttons list-inline">
+                <li><button type="button" data-video="Aav43C9IZTI" class="play-full-video"><span>Play full video </span><i class="icon-play"></i><i class="icon-pause"></i></button></li>
+                <li><button type="button" class="stop-full-video"><i class="icon-stop"></i></button></li>
+              </ul>
             </div>          
           </div>          
         </section>

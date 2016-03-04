@@ -21,6 +21,12 @@ body.water-therapy{
 					height: 514px;
 					position: relative;
 					overflow: hidden;
+					.banner-video-buttons{
+						position: absolute;
+						bottom: 20px;
+						left: 20px;
+						z-index: 2;												
+					}
 					button{
 						@include appearance(none);
 						border: none;
@@ -28,14 +34,40 @@ body.water-therapy{
 						background: rgba(0,0,0,0.6);
 						color: white;
 						padding: 10px 20px;
-						position: absolute;
-						bottom: 20px;
-						left: 20px;
 						vertical-align: middle;
-						z-index: 2;
 						outline: none;
+						span{
+							display: inline-block;
+							white-space: nowrap;
+							overflow: hidden;
+							width: 120px;
+							vertical-align: middle;
+							@include transition(0.5s all ease-out);
+						}
 						i{
 							vertical-align: middle;
+							&.icon-pause{
+								display: none;
+							}
+						}
+						&.stop-full-video{
+							display: none;
+							&.show{
+								display: block;
+							}
+						}
+						&.playing{
+							span{
+								width: 0;
+							}
+							i{
+								&.icon-play{
+									display: none;
+								}
+								&.icon-pause{
+									display: inline-block;
+								}
+							}
 						}
 					}
 				}
@@ -94,7 +126,7 @@ body.water-therapy{
 				}
 				.intro{
 					padding-top: 50px;
-					padding-bottom: 30px;
+					padding-bottom: 50px;
 					text-align: center;				
 					h1{
 						font-weight: bold;
@@ -106,6 +138,7 @@ body.water-therapy{
 			      -webkit-background-clip: text;
 			      -webkit-text-fill-color: transparent;
 			      margin-bottom: 20px;
+			      margin-top: 0;
 			      @media (min-width: $screen-sm){
 			      	font-size: 68px;
 			      }

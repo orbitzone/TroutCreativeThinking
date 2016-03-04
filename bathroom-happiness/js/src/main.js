@@ -445,6 +445,7 @@ var bathroomHappiness = {
                 $('#banner .stop-full-video').removeClass('show');
                 $('#banner .play-full-video').removeClass('paused playing');
                 player.stop('water-therapy-full-video');
+                $('#water-therapy-full-video').fadeOut(300, 0);
               }
             }
           });

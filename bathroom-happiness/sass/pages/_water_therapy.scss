@@ -244,7 +244,7 @@ body.water-therapy{
 								font-weight: 600;
 								padding: 0;
 								height: 60px;
-								font-size: 10px;
+								font-size: 9px;
 								line-height: 1;
 								display: block;
 								margin-bottom: 0;
@@ -254,6 +254,9 @@ body.water-therapy{
 								@include border-radius(0);
 								@include appearance(none);
 								@include transition(1s all ease-out);
+								@media (min-width: 360px){
+									font-size: 10px;
+								}
 								@media (min-width: $screen-sm){
 									width: auto;
 									font-size: 14px;

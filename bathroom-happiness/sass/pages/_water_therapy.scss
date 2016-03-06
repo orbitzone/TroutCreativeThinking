@@ -229,7 +229,7 @@ body.water-therapy{
 						}
 						li{
 							float: left;
-							width: 50%;
+							width: 33.3333%;
 							padding: 0 0.5px;
 							@media (min-width: $screen-sm){
 								float: none;
@@ -244,7 +244,7 @@ body.water-therapy{
 								font-weight: 600;
 								padding: 0;
 								height: 60px;
-								font-size: 13px;
+								font-size: 10px;
 								line-height: 1;
 								display: block;
 								margin-bottom: 0;
@@ -270,7 +270,6 @@ body.water-therapy{
 								}
 							}
 							&.active{
-								display: none;
 								@media (min-width: $screen-sm){
 									display: block;
 									}

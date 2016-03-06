@@ -415,7 +415,148 @@
               </div>  <!-- /.shower-image -->
             </div><!-- /.container-fluid-->
           </div><!-- /#water-therapy -->
-        </section>             
+        </section>
+        <section id="showering">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="showering-intro">
+                  <h2>showering</h2>
+                  <p>Introduce showering and the power of personal renewal. Enliven the senses, reinvigorate the soul or float away in total bliss. </p>
+                </div>                
+              </div>
+            </div>
+            <div class="showering-menu-wrap">              
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="showering-menu">
+                    <ul class="list-unstyled">
+                      <li><a href="#" class="active">Wet Zone</a></li>
+                      <li><a href="#">Enclosed</a></li>
+                      <li><a href="#">Walk In</a></li>
+                      <li><a href="#">Double</a></li>
+                      <li><a href="#">Outdoor</a></li>
+                      <li><a href="#">Shower Bath</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="showering-description">
+                    <div class="box">
+                      <h3>Wet Zone</h3>
+                      <div class="text">
+                        <p>Statement to explain the openness and layout of a wet zone environment.</p>
+                      </div>
+                    </div>                  
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="showering-slider showering-zone-1">
+                  <div class="slide">
+                    <figure class="image">
+                      <img src="images/water_therapy/showering-slider.jpg" alt="Showering">
+                    </figure>
+                  </div>
+                  <div class="slide">
+                    
+                  </div>
+                  <div class="slide">
+                    
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.row-->
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="showering-zone-2">
+                  <h3>awakening</h3>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="showering-zone-3">
+                  <div class="box">
+                    <div class="text">
+                      A wet zone is boundless, free and open.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.row -->
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="showering-zone-4">
+                  <h3>Create your own wet zone</h3>
+                  <div class="row">
+                    <div class="col-sm-7">
+                      <figure class="image">
+                        
+                      </figure>
+                    </div>
+                    <div class="col-sm-5">
+                      <div class="text">
+                        <p>Statement to reference the different style of wet zone layouts.</p>
+                        <p>TIPS FOR WET ZONE
+                        <br/>- Allow for drainage
+                        <br/>- Choosing the right tiles
+                        <br/>- Introducing light
+                        </p>
+                        <p><a href="#">Plan in 3D</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="showering-zone-5">
+                  
+                </div>
+              </div>
+            </div><!-- /.row -->
+          </div>
+        </section>
+        <section id="shower-technology">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="shower-technology-menu">
+                  <h3>Shower Technology</h3>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Waterfall</a></li>
+                    <li><a href="#">Body Jets</a></li>
+                    <li><a href="#">Led</a></li>
+                    <li><a href="#">Air Drop</a></li>
+                    <li><a href="#">Turbine</a></li>
+                    <li><a href="#">Raindance</a></li>
+                    <li><a href="#">Croma Soft Rain</a></li>
+                    <li><a href="#">Croma Intense Rain</a></li>
+                    <li><a href="#">Croma Massage</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="shower-technology-description">
+                  <figure class="image">
+                    
+                  </figure>
+                  <div class="icon">
+                    
+                  </div>
+                  <h3>Waterfall</h3>
+                  <div class="text">
+                    <p>Here we link types of showers to their emotional benefit. E.g. Overhead showers offer a completely immersive showering experience like that of a waterfall.</p>
+                  </div>
+                  <ul class="list-inline">
+                    <li><a href="#">See Product</a></li>
+                    <li><a href="#"><i class="icon-play"></i> View in Action</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>            
       </div>  
       <!-- end .main -->
       <?php include_once("templates/includes/reece-footer.php");?>    

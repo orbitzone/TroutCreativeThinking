@@ -490,7 +490,81 @@ body.water-therapy{
 		  	}
 		  }
 		}//#water-therapy
-	}
+		#showering{
+			background: black;
+			color: white;
+			text-align: center;
+			.showering-intro{
+				max-width: 526px;
+				margin: 0 auto;
+				h2{
+					font-size: 68px;
+				}
+			}
+			.showering-menu-wrap{
+				max-width: 850px;
+				margin: 0 auto;
+				position: relative;
+				z-index: 2;
+				@include transform(translateY(56px));
+				.row{
+					margin: 0;
+					.col-sm-6{
+						padding: 0;
+					}
+				}
+			}//.showering-menu-wrap
+			.showering-menu{
+				background: $water-therapy-green;
+				padding: 64px 58px 28px;
+				height: 290px;
+				ul{
+					margin: 0;
+					padding: 0;
+					@include clearfix();
+					margin-left: -7.5px;
+					margin-right: -7.5px;
+					li{
+						float: left;
+						width: 50%;
+						padding: 0 7.5px;
+						a{
+							display: block;
+							text-transform: uppercase;
+							color: $water-therapy-blue;
+							border: 1px solid $water-therapy-blue;
+							padding: 10px;
+							margin-bottom: 28px;
+							@include transition(0.5s color ease-out, 0.5s background ease-out);
+							&.active{
+								background: $water-therapy-blue;
+								color: $water-therapy-green;
+							}
+						}
+					}
+				}
+			}//.showering-menu
+			.showering-description{
+				position: relative;
+				background: $water-therapy-blue;
+				height: 290px;
+				h3{
+					margin-top: 0;
+					font-weight: 300;
+					text-transform: uppercase;
+					letter-spacing: 0.17em;
+				}
+				.box{
+					position: absolute;
+					width: 100%;
+					left: 0;
+					top: 50%;
+					@include transform(translateY(-50%));
+					padding: 0 60px;
+				}
+			}//.showering-description
+		}
+	}//.main
 }
 @include keyframes(video_hide){
 	0%{

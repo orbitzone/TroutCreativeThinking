@@ -536,6 +536,49 @@ var bathroomHappiness = {
       arrows: false,
       dots: true
     });
+    $('#showering .showering-slider').slick({
+      arrows: true,
+      dots: false,
+      appendArrows: $('.showering-slider-buttons')
+    });
+    $('.panel-slideshow').each(function () {
+      var $arrows = $(this).find('.slideshow-buttons');
+      $(this).find('.slideshow-container').slick({
+        appendArrows: $arrows,
+        responsive:[
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: true
+          }
+        },
+        {
+          breakpoint: 460,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true
+          }
+        }]
+      });
+    });
+    $('.showering-menu a').on('click', function(){
+      var section = $(this).data('section');
+      var next = (section * 1) + 1;
+      var prev = (section * 1) - 1;
+      if(next > $('.showering-zones-section').length){
+        next = 1;
+      }
+      if(prev == 0){
+        prev = $('.showering-zones-section').length;
+      }
+      $('.showering-zones-section-'+section).addClass('current');
+      $('.showering-zones-section-'+next).addClass('next');
+      $('.showering-zones-section-'+prev).addClass('prev');
+      return false;
+    });
     $(window).on('scroll', function(){
       if(deviceMobile){
         if($(window).scrollTop() >= $('.submenu-wrap').offset().top){

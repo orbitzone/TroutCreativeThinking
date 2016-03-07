@@ -1,4 +1,24 @@
 body.homepage {
+  .panel-slideshow{
+    height: 335px;
+    @media (min-width: $screen-md-min) {
+      height: 351px;
+    }
+    @media (min-width: $screen-lg-min) {
+      height: 335px;
+        
+     }
+    .slideshow-container {
+      height: 273px;
+      @media (min-width: $screen-md-min) {
+        height: 290px;
+      }
+      @media (min-width: $screen-lg-min) {
+        height: 273px;
+      }
+      padding-top: 10px;
+    }
+  }
   .panel-search {
     height: 52px;
     line-height: 52px;

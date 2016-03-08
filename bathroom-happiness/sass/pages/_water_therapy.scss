@@ -716,7 +716,10 @@ body.water-therapy{
 					@include transform(translateY(-50%));
 					h3{
 						margin: 0;
-						font-size: 68px;
+						font-size: 58px;
+						@media (min-width: $screen-md){
+							font-size: 68px;
+						}
 					}
 				}
 			}//.showering-zone-2
@@ -746,9 +749,13 @@ body.water-therapy{
 					@include transform(translateY(-50%));
 					.text{
 						font-weight: bold;
-						font-size: 24px;
-						width: 314px;
+						font-size: 20px;
+						width: 270px;
 						margin: 0 auto;
+						@media (min-width: $screen-md){
+							font-size: 24px;
+							width: 314px;
+						}
 					}
 				}
 			}// .showering-zone-3
@@ -779,6 +786,9 @@ body.water-therapy{
 					font-size: 15px;
 					letter-spacing: 0.13em;
 					margin-bottom: 5px;
+				}
+				.image{
+					margin-bottom: 20px;
 				}
 				.text{
 					font-size: 15px;

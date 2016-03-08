@@ -513,14 +513,15 @@ body.water-therapy{
 			overflow: hidden;
 			.scrolling-menu-wrap{
 				position: fixed;
-	    	top: 0;
+	    	top: -90px;
 	    	left: 50%;
 	    	z-index: 10;		   
 	    	width: 320px;
-		    	margin-left: -160px;
+	    	margin-left: -160px;
 	    	@include transition(0.2s all ease-out);
 		    @include transform(scale(0));
-		    &.fixed{		    	
+		    &.fixed{
+		    top: 10px;		    	
 					@include transform(scale(1));
 		    }
 		    &.active{
@@ -581,8 +582,8 @@ body.water-therapy{
 			}
 			.scrolling-menu{
 				cursor: pointer;
-				width: 90px;
-		    height: 90px;
+				width: 45px;
+		    height: 45px;
 		    border-radius: 100%;
 		    margin: 0 auto;
 		    text-align: center;
@@ -590,12 +591,21 @@ body.water-therapy{
 		    margin: 0 auto;
 		    position: relative;
 		    z-index: 2;
+		    @media (min-width: $screen-sm){
+		    	width: 90px;
+		    	height: 90px;
+		    }
 		    .icon{
-		    	width: 40px;
-		    	height: 40px;
 		    	fill: $water-therapy-green;
 		    	position: relative;
-		    	top: 30px;
+		    	width: 20px;
+		    	height: 20px;
+		    	top: 15px;
+		    	@media (min-width: $screen-sm){
+		    		width: 40px;
+		    		height: 40px;
+		    		top: 30px;
+		    	}
 		    }
 			}
 			.showering-intro{

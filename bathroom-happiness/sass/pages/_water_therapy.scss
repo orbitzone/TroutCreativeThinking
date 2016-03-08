@@ -595,7 +595,10 @@ body.water-therapy{
 				max-width: 526px;
 				margin: 0 auto;
 				h2{
-					font-size: 68px;
+					font-size: 58px;
+					@media (min-width: $screen-sm){
+						font-size: 68px;
+					}
 				}
 			}
 			.showering-menu-wrap{
@@ -727,6 +730,7 @@ body.water-therapy{
 				z-index: 1;
 				.showering-zones-section{
 					//opacity: 0;
+					float: left;
 					width: 100%;
 					@media (min-width: $screen-sm){
 						float: left;
@@ -740,7 +744,6 @@ body.water-therapy{
 					}
 					//z-index: 1;
 					position: relative;
-					@include perspective(2000px);
 					@include animation(index_update_down 1s ease-out forwards);
 					//@include transition(1s all ease-in-out);
 					.showering-zone-1,
@@ -753,7 +756,12 @@ body.water-therapy{
 						-webkit-backface-visibility: hidden;
 						-moz-backface-visibility: hidden;
 						backface-visibility: hidden;
+						@include transform-style(preserve-3d);
 						@include transform(translateZ(0));
+					}
+					.showering-zone-wrap{
+						@include perspective(2000px);
+						@include transform-style(preserve-3d);
 					}
 					.showering-zone-1{
 						@include animation(slide_out 1s ease-in-out forwards);						

@@ -49,6 +49,7 @@
 @mixin perspective($value){
   -webkit-perspective:   $value;
   -moz-perspective:       $value;
+  -moz-transform: perspective($value);
   -ms-perspective:     $value;
   -o-perspective:     $value;
   perspective:       $value;   
@@ -59,6 +60,13 @@
   -ms-transform-origin:     $value;
   -o-transform-origin:     $value;
   transform-origin:       $value;   
+}
+@mixin transform-style($value){
+  -webkit-transform-style:   $value;
+  -moz-transform-style:       $value;
+  -ms-transform-style:     $value;
+  -o-transform-style:     $value;
+  transform-style:       $value;   
 }
 @mixin animation($animation){
   -webkit-animation:   #{$animation};

@@ -533,19 +533,21 @@
                 <div class="showering-zones-2-3">
                   <div class="row">
                     <div class="col-sm-6">
-                      <div class="showering-zone-2" style="background-image: url(images/water_therapy/showering-zone-2.jpg);">
+                      <div class="showering-zone-wrap"><div class="showering-zone-2" style="background-image: url(images/water_therapy/showering-zone-2.jpg);">
                         <div class="box">
                         <h3>awakening</h3>
                         </div>
                       </div>
+                      </div>
                     </div>
                     <div class="col-sm-6">
-                      <div class="showering-zone-3" style="background-image: url(images/water_therapy/showering-zone-3.jpg);">
+                      <div class="showering-zone-wrap"><div class="showering-zone-3" style="background-image: url(images/water_therapy/showering-zone-3.jpg);">
                         <div class="box-border"></div>
                         <div class="box">
                           <div class="text">
                             A wet zone is boundless, free and open.
                           </div>
+                        </div>
                         </div>
                       </div>
                     </div>
@@ -715,19 +717,20 @@
                 <div class="showering-zones-2-3">
                   <div class="row">
                     <div class="col-sm-6">
-                      <div class="showering-zone-2" style="background-image: url(images/water_therapy/showering-zone-2.jpg);">
+                      <div class="showering-zone-wrap"><div class="showering-zone-2" style="background-image: url(images/water_therapy/showering-zone-2.jpg);">
                         <div class="box">
                         <h3>awakening</h3>
                         </div>
-                      </div>
+                      </div></div>
                     </div>
                     <div class="col-sm-6">
-                      <div class="showering-zone-3" style="background-image: url(images/water_therapy/showering-zone-3.jpg);">
+                      <div class="showering-zone-wrap"><div class="showering-zone-3" style="background-image: url(images/water_therapy/showering-zone-3.jpg);">
                         <div class="box-border"></div>
                         <div class="box">
                           <div class="text">
                             An enclosed is boundless, free and open.
                           </div>
+                        </div>
                         </div>
                       </div>
                     </div>
@@ -897,19 +900,20 @@
                 <div class="showering-zones-2-3">
                   <div class="row">
                     <div class="col-sm-6">
-                      <div class="showering-zone-2" style="background-image: url(images/water_therapy/showering-zone-2.jpg);">
+                      <div class="showering-zone-wrap"><div class="showering-zone-2" style="background-image: url(images/water_therapy/showering-zone-2.jpg);">
                         <div class="box">
                         <h3>awakening</h3>
                         </div>
-                      </div>
+                      </div></div>
                     </div>
                     <div class="col-sm-6">
-                      <div class="showering-zone-3" style="background-image: url(images/water_therapy/showering-zone-3.jpg);">
+                      <div class="showering-zone-wrap"><div class="showering-zone-3" style="background-image: url(images/water_therapy/showering-zone-3.jpg);">
                         <div class="box-border"></div>
                         <div class="box">
                           <div class="text">
                             A walk in is boundless, free and open.
                           </div>
+                        </div>
                         </div>
                       </div>
                     </div>
@@ -1079,19 +1083,20 @@
                 <div class="showering-zones-2-3">
                   <div class="row">
                     <div class="col-sm-6">
-                      <div class="showering-zone-2" style="background-image: url(images/water_therapy/showering-zone-2.jpg);">
+                      <div class="showering-zone-wrap"><div class="showering-zone-2" style="background-image: url(images/water_therapy/showering-zone-2.jpg);">
                         <div class="box">
                         <h3>awakening</h3>
                         </div>
-                      </div>
+                      </div></div>
                     </div>
                     <div class="col-sm-6">
-                      <div class="showering-zone-3" style="background-image: url(images/water_therapy/showering-zone-3.jpg);">
+                      <div class="showering-zone-wrap"><div class="showering-zone-3" style="background-image: url(images/water_therapy/showering-zone-3.jpg);">
                         <div class="box-border"></div>
                         <div class="box">
                           <div class="text">
                             A double boundless, free and open.
                           </div>
+                        </div>
                         </div>
                       </div>
                     </div>
@@ -1261,19 +1266,20 @@
                 <div class="showering-zones-2-3">
                   <div class="row">
                     <div class="col-sm-6">
-                      <div class="showering-zone-2" style="background-image: url(images/water_therapy/showering-zone-2.jpg);">
+                      <div class="showering-zone-wrap"><div class="showering-zone-2" style="background-image: url(images/water_therapy/showering-zone-2.jpg);">
                         <div class="box">
                         <h3>awakening</h3>
                         </div>
-                      </div>
+                      </div></div>
                     </div>
                     <div class="col-sm-6">
-                      <div class="showering-zone-3" style="background-image: url(images/water_therapy/showering-zone-3.jpg);">
+                      <div class="showering-zone-wrap"><div class="showering-zone-3" style="background-image: url(images/water_therapy/showering-zone-3.jpg);">
                         <div class="box-border"></div>
                         <div class="box">
                           <div class="text">
                             An outdoor is boundless, free and open.
                           </div>
+                        </div>
                         </div>
                       </div>
                     </div>
@@ -1443,19 +1449,20 @@
                 <div class="showering-zones-2-3">
                   <div class="row">
                     <div class="col-sm-6">
-                      <div class="showering-zone-2" style="background-image: url(images/water_therapy/showering-zone-2.jpg);">
+                      <div class="showering-zone-wrap"><div class="showering-zone-2" style="background-image: url(images/water_therapy/showering-zone-2.jpg);">
                         <div class="box">
                         <h3>awakening</h3>
                         </div>
-                      </div>
+                      </div></div>
                     </div>
                     <div class="col-sm-6">
-                      <div class="showering-zone-3" style="background-image: url(images/water_therapy/showering-zone-3.jpg);">
+                      <div class="showering-zone-wrap"><div class="showering-zone-3" style="background-image: url(images/water_therapy/showering-zone-3.jpg);">
                         <div class="box-border"></div>
                         <div class="box">
                           <div class="text">
                             A shower bath is boundless, free and open.
                           </div>
+                        </div>
                         </div>
                       </div>
                     </div>

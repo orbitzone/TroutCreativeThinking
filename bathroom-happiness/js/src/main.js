@@ -380,7 +380,7 @@ var bathroomHappiness = {
       
     };
     if(!isMobile.any()){
-      loadNext(0);
+      //loadNext(0);
     }else{
       $('#water-therapy-video').addClass('ready');
       if(isMobile.any()){
@@ -593,9 +593,16 @@ var bathroomHappiness = {
 
       $('.showering-zones-section').each(function(){
         $(this).find('.showering-zone-1 .showering-slider img').width(containerWidth);
-        $(this).css({
-          transform: 'translate3d('+(-1 * (s) * containerWidth )+'px,0,0)'        
-        })
+        if(isIE() <= 9){
+          $(this).css({
+            transform: 'translate('+(-1 * (s) * containerWidth )+'px,0)'        
+          });
+        }else{
+          $(this).css({
+            transform: 'translate3d('+(-1 * (s) * containerWidth )+'px,0,0)'        
+          });  
+        }
+        
         s=s+1;
         $(this).find('.showering-zone-4, .showering-zone-5').height('auto');
         var sectionBottomHeight = $(this).find('.showering-zone-4').outerHeight();
@@ -608,7 +615,7 @@ var bathroomHappiness = {
     $('.showering-menu a, .scrolling-menu-list a').on('click', function(){
       var section = $(this).data('section');
       $('.showering-menu a, .scrolling-menu-list a').removeClass('active');
-      $('.scrolling-menu-list').removeClass('active');
+      $('.scrolling-menu-list, .scrolling-menu-wrap').removeClass('active');
       $(this).addClass('active');
       $('.showering-description .box-content').removeClass('active');
       $('.showering-description .box-content-'+section).addClass('active');
@@ -630,7 +637,7 @@ var bathroomHappiness = {
       return false;
     });
     $('.scrolling-menu-wrap .scrolling-menu').on('click', function(){
-      $('.scrolling-menu-wrap .scrolling-menu-list').toggleClass('active');
+      $('.scrolling-menu-wrap .scrolling-menu-list, .scrolling-menu-wrap').toggleClass('active');
     });
     $(window).on('scroll', function(){
       if(deviceMobile){

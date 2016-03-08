@@ -4618,11 +4618,11 @@ body.water-therapy .main #showering .showering-zones-sections .showering-zones-s
 }
 /* line 703, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .showering-zones-sections .showering-zones-section .showering-zone-2 {
-  -webkit-animation: flip_left_out 1s ease-out 0.2s forwards;
-  -moz-animation: flip_left_out 1s ease-out 0.2s forwards;
-  -ms-animation: flip_left_out 1s ease-out 0.2s forwards;
-  -o-animation: flip_left_out 1s ease-out 0.2s forwards;
-  animation: flip_left_out 1s ease-out 0.2s forwards;
+  -webkit-animation: flip_left_out 1s ease-out 0.8s forwards;
+  -moz-animation: flip_left_out 1s ease-out 0.8s forwards;
+  -ms-animation: flip_left_out 1s ease-out 0.8s forwards;
+  -o-animation: flip_left_out 1s ease-out 0.8s forwards;
+  animation: flip_left_out 1s ease-out 0.8s forwards;
 }
 /* line 706, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .showering-zones-sections .showering-zones-section .showering-zone-3 {
@@ -4650,11 +4650,11 @@ body.water-therapy .main #showering .showering-zones-sections .showering-zones-s
 }
 /* line 715, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .showering-zones-sections .showering-zones-section.current .showering-zone-2 {
-  -webkit-animation: flip_left_in 1s ease-out 0.2s forwards;
-  -moz-animation: flip_left_in 1s ease-out 0.2s forwards;
-  -ms-animation: flip_left_in 1s ease-out 0.2s forwards;
-  -o-animation: flip_left_in 1s ease-out 0.2s forwards;
-  animation: flip_left_in 1s ease-out 0.2s forwards;
+  -webkit-animation: flip_left_in 1s ease-out 0.8s forwards;
+  -moz-animation: flip_left_in 1s ease-out 0.8s forwards;
+  -ms-animation: flip_left_in 1s ease-out 0.8s forwards;
+  -o-animation: flip_left_in 1s ease-out 0.8s forwards;
+  animation: flip_left_in 1s ease-out 0.8s forwards;
 }
 /* line 719, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .showering-zones-sections .showering-zones-section.current .showering-zone-3 {

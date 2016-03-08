@@ -610,7 +610,7 @@ var bathroomHappiness = {
       return false;
     });    
     $(window).on('scroll', function(){
-      if(deviceMobile){
+      if(deviceMobile && $(window).width() < 768){
         if($(window).scrollTop() >= $('.submenu-wrap').offset().top){
           $('.submenu-wrap').height($('.submenu').height());
           $('.submenu').addClass('fixed');

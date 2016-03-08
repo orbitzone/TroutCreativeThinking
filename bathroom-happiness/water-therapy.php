@@ -3,10 +3,12 @@
   $extra_javascript = "<script src='js/vendor/jquery.magnific-popup.min.js' type='text/javascript'></script>";
  include_once('templates/includes/reece-head.php');?>
   <body class="water-therapy bathroom-happiness">
-  <?php include_once("images/svg-defs.svg"); ?>
     <div class="ocmain-wrapper">
       <?php include_once("templates/includes/reece-header.php");?>
       <div class="main" role="main">
+        <div class="icons-hide">
+          <?php include_once("images/svg-defs.svg"); ?>
+        </div>
         <section id="banner">
           <div class="container-fluid">
             <div class="banner">

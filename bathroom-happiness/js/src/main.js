@@ -616,7 +616,7 @@ var bathroomHappiness = {
       var section = $(this).data('section');
       $('.showering-menu a, .scrolling-menu-list a').removeClass('active');
       $('.scrolling-menu-list, .scrolling-menu-wrap').removeClass('active');
-      $(this).addClass('active');
+      $('.showering-menu a[data-section='+section+'], .scrolling-menu-list a[data-section='+section+']').addClass('active');
       $('.showering-description .box-content').removeClass('active');
       $('.showering-description .box-content-'+section).addClass('active');
       currentSection = section;
@@ -630,10 +630,14 @@ var bathroomHappiness = {
       }
       var containerWidth = $('.showering-intro-wrap').width();
       
-      $('.showering-zones-section').removeClass('current prev next');
-      $('.showering-zones-section-'+section).addClass('current');
-      $('.showering-zones-section-'+next).addClass('next');
-      $('.showering-zones-section-'+prev).addClass('prev');
+      $('html, body').animate({
+        scrollTop: $('.showering-menu').offset().top,
+      },500, function(){
+        $('.showering-zones-section').removeClass('current prev next');
+        $('.showering-zones-section-'+section).addClass('current');
+        $('.showering-zones-section-'+next).addClass('next');
+        $('.showering-zones-section-'+prev).addClass('prev');          
+      });
       return false;
     });
     $('.scrolling-menu-wrap .scrolling-menu').on('click', function(){
@@ -654,14 +658,16 @@ var bathroomHappiness = {
           $('.submenu').removeClass('fixed');
         }
       }
-      if($(window).scrollTop() >= $('.showering-menu').offset().top){
-        if($(window).scrollTop() >= ($('#shower-technology').offset().top - 90 - ($(window).height()/2))){
+      if($(window).scrollTop() >= $('.showering-zones-sections').offset().top){
+        if($(window).scrollTop() >= ($('#shower-technology').offset().top - 90 )){
           $('.scrolling-menu-wrap').removeClass('fixed');
+          $('.scrolling-menu-list, .scrolling-menu-wrap').removeClass('active');
         }else{
           $('.scrolling-menu-wrap').addClass('fixed');
         }
       }else{
         $('.scrolling-menu-wrap').removeClass('fixed');
+        $('.scrolling-menu-list, .scrolling-menu-wrap').removeClass('active');
       }
     });
   }

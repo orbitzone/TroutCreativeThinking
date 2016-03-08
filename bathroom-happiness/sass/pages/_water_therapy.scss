@@ -513,14 +513,13 @@ body.water-therapy{
 			overflow: hidden;
 			.scrolling-menu-wrap{
 				position: fixed;
-	    	top: 50%;
+	    	top: 0;
 	    	left: 50%;
 	    	width: 90px;
 	    	z-index: 10;		   
 	    	margin-left: -45px;
 	    	@include transition(0.2s all ease-out);
 		    @include transform(scale(0));
-		     
 		    &.fixed{		    	
 					@include transform(scale(1));
 		    }
@@ -528,7 +527,6 @@ body.water-therapy{
 		    	@include transition(0.5s all ease-out);
 		    	width: 320px;
 		    	margin-left: -160px;
-		    	margin-top: -177px;
 		    }
 		    .scrolling-menu-list{
 	    		background: #37d1a4; /* Old browsers */
@@ -541,12 +539,14 @@ body.water-therapy{
 					max-width: 320px;
 					margin: 0 auto;
 					position: relative;
-					top: 45px;
 					height: 0;
+					opacity: 0;
+					top: -20px;
 					@include transition(0.5s all cubic-bezier(0.68, -0.55, 0.265, 1.55));
 					&.active{
-						padding: 30px 20px 60px;
-						height: 264px;
+						opacity: 1;
+						padding: 30px 20px 14px;
+						height: 218px;
 					}
 					ul{
 						margin: 0;
@@ -569,6 +569,8 @@ body.water-therapy{
 								margin-bottom: 16px;
 								@include transition(0.5s color ease-out, 0.5s background ease-out);
 								font-size: 12px;
+								overflow: hidden;
+								white-space: nowrap;
 								&.active{
 									text-decoration: none;
 									background: $water-therapy-blue;

@@ -421,6 +421,9 @@
         </section>
         <section id="showering">
           <div class="scrolling-menu-wrap">
+            <div class="scrolling-menu">
+              <svg class="icon shape-soft-rain"><use xlink:href="#shape-soft-rain"></use></svg>
+            </div><!-- /.scrolling-menu -->
             <div class="scrolling-menu-list">
               <ul class="list-unstyled">
                 <li><a href="#" class="active" data-section="1">Wet Zone</a></li>
@@ -430,11 +433,8 @@
                 <li><a href="#" data-section="5">Outdoor</a></li>
                 <li><a href="#" data-section="6">Shower Bath</a></li>
               </ul>                
-            </div>
-            <div class="scrolling-menu">
-              <svg class="icon shape-soft-rain"><use xlink:href="#shape-soft-rain"></use></svg>
-            </div>            
-          </div>
+            </div><!-- /.scrolling-menu-list -->
+          </div><!-- /.scrolling-menu-wrap -->
           <div class="container-fluid">
             <div class="showering-intro-wrap">
               <div class="row">

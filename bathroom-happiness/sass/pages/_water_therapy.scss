@@ -332,7 +332,7 @@ body.water-therapy{
 						}
 	  				.section-content {
 	  					position: relative;
-	  					transform-style: preserve-3d;
+	  					@include transform-style(preserve-3d);
 						  //@include transform(translateZ( -100px ));
 						  @include transition(all 1s);						  
 						}
@@ -511,6 +511,14 @@ body.water-therapy{
 			color: white;
 			text-align: center;
 			overflow: hidden;
+			.container-fluid{
+				padding-left: 0;
+				padding-right: 0;
+				@media (min-width: $screen-sm){
+					padding-left: 15px;
+					padding-right: 15px;
+				}
+			}
 			.scrolling-menu-wrap{
 				position: fixed;
 	    	top: -90px;
@@ -617,7 +625,7 @@ body.water-therapy{
 				max-width: 526px;
 				margin: 0 auto;
 				h2{
-					font-size: 58px;
+					font-size: 50px;
 					@media (min-width: $screen-sm){
 						font-size: 68px;
 					}
@@ -756,6 +764,10 @@ body.water-therapy{
 					//opacity: 0;
 					float: left;
 					width: 100%;
+					position: relative;
+					z-index: 1;
+					@include animation(index_update_down 1s ease-out forwards);
+					@include transform-style(preserve-3d);
 					@media (min-width: $screen-sm){
 						float: left;
 						width: 738px;
@@ -766,11 +778,6 @@ body.water-therapy{
 					@media (min-width: $screen-lg){
 						width: 1200px;
 					}
-					//z-index: 1;
-					position: relative;
-					z-index: 1;
-					@include animation(index_update_down 1s ease-out forwards);
-					//@include transition(1s all ease-in-out);
 					.showering-zone-1,
 					.showering-zone-2,
 					.showering-zone-3,
@@ -864,7 +871,7 @@ body.water-therapy{
 					@include transform(translateY(-50%));
 					h3{
 						margin: 0;
-						font-size: 58px;
+						font-size: 45px;
 						@media (min-width: $screen-md){
 							font-size: 68px;
 						}
@@ -876,8 +883,9 @@ body.water-therapy{
 				background-position: center center;
 				height: 360px;
 				position: relative;
-				padding: 40px;
+				padding: 25px;
 				@media (min-width: $screen-sm){
+					padding: 40px;
 					height: 360px;
 				}
 				@media (min-width: $screen-md){
@@ -898,8 +906,12 @@ body.water-therapy{
 					.text{
 						font-weight: bold;
 						font-size: 20px;
-						width: 270px;
 						margin: 0 auto;
+						padding: 0 30px;
+						@media (min-width: $screen-sm){
+							padding: 0;
+							width: 270px;
+						}
 						@media (min-width: $screen-md){
 							font-size: 24px;
 							width: 314px;

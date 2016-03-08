@@ -5,6 +5,61 @@
     
     margin-bottom: 40px;
     
+    // reece styles
+    h1 {
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 1;
+    }
+    
+    h3 {
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 1;
+    }
+    
+    h4 {
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 1;
+    }
+    
+    h6 {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    
+    p {
+      font-size: 15px;
+      font-weight: 300;
+    }
+    
+    .button.button-dark {
+      background: #3F3F3F;
+      color: #FFF;
+      cursor: hand;
+      .transition(background 0.5s ease-in-out);
+      
+      &:hover,&:active,&:focus {
+        background: #999;
+        color: #FFF;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      
+    }
+
+    .button {
+      padding: 10px 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      display: inline-block;
+      font-size: 14px;
+      .border-radius(3px);
+    }
+    
     // overrides
     
     .well {
@@ -12,13 +67,19 @@
       border: none;
       box-shadow: none;
       background-color: #F1F2F2;
+      padding: 12px;
     }
     
     .thumbnail {
       border: none;
       padding: 0;
       margin-top: 10px;
-      margin-bottom: 20px;
+      margin-bottom: 5px;
+      background-color: transparent;
+      
+      .caption {
+        padding-left: 0;
+      }
       
       .caption h4,.caption p {
         
@@ -64,13 +125,18 @@
     // galery header / social share
     .reece-b3-gallery-header {
         
-        margin-top: 40px;
+        margin-top: 35px;
         margin-bottom: 20px;
+        
+        h1 {
+          float: left;
+        }
         
         .social-share{
         	
           display: block;
-          width: auto;
+          width: 100%;
+          clear: both;
           float: left;
           height: 33px;
           position: relative;
@@ -78,6 +144,8 @@
           
           @media (min-width: 768px) {
             float: right;
+            width: 82px;
+            clear: none;
           }
           
         	a{
@@ -119,16 +187,16 @@
         
         .glyphicon-chevron-right,
         .glyphicon-chevron-left {
-          width: 30px;
-          height: 30px;
-          margin-top: -15px;
-          font-size: 30px;
+          width: 40px;
+          height: 40px;
+          margin-top: -20px;
+          font-size: 40px;
         }
         
         .glyphicon-chevron-right:before,
         .glyphicon-chevron-left:before {
           color: white;
-          font-size: 30px;
+          font-size: 40px;
         }
         
       }
@@ -171,27 +239,13 @@
           .thumb {
             
             position: relative;
-            width: 25%;
+            width:  23.330%;
           	cursor: pointer;
           	float: left;
-                        
-            &:after {
-                content: '';
-                display: block;
-                position: absolute;
-                top: 0;
-                right: 0;
-                width: 1px;
-                height: 100%;
-                background-color: white;
-                .opacity(0.9);
-            }
+            margin-right: 2.22222222%;
             
             &.last {
-              &:after {
-                display: none;
-                .opacity(0);
-              }
+              margin-right: 0;
             }
             
           }
@@ -205,14 +259,86 @@
     
     // gallery details
     .gallery-details {
-      margin-bottom: 20px;
+      margin-bottom: 40px;
+      
+      h4 {
+        margin-bottom: 0;
+      }
+      
+    }
+    
+    // related products
+    .related-products {
+      
+      h4 {
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 1.2;
+      }
+      
+    }
+    
+    // inspiration plans
+    .inspiration-plans {
+      
+      .display-plans {
+        
+        .view-plan {
+          display: block;
+        }
+        
+        .hide-plan {
+          display: none;
+        }
+        
+        &.active {
+          .view-plan {
+            display: none;
+          }
+          
+          .hide-plan {
+            display: block;
+          }
+        }
+        
+      }
+      
+      .plans-wrapper {
+          
+          margin-top: 10px;
+          
+          img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+          }
+          
+      }
+      
+      .plans-wrapper {
+        display: none;
+        width: 100%;
+      }
+      
     }
     
     // products used container
     .products-used {
       
+      border-top: solid 1px #d9d9d9;
+      
       .products-used-header {
           margin-bottom: 20px;
+          margin-top: 30px;
+      }
+      
+      h4 {
+        font-size: 15px;
+        text-transform: none;
+        padding-left: 15px;
+        padding-right: 15px;
       }
       
     }

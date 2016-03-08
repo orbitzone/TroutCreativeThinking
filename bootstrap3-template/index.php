@@ -40,199 +40,196 @@
     <?php include "templates/Includes/Navigation.php" ?>
 
     <!-- reece-b3-gallery -->
-    <div class="container reece-b3-gallery">
-      <div class="row reece-b3-gallery-header">
-        <div class="col-sm-9 col-xs-12">
-          <h1>Bootstrap 3 gallery</h1>
-        </div>
-        <div class="col-sm-3 col-xs-12">
-          <div class="social-share">
-            <a href="http://www.facebook.com/sharer.php?u={url}&amp;title={text}">
-              <i class="fa fa-facebook"></i>
-            </a>
-            <a href="https://twitter.com/share?url={url}&amp;text={text}&amp;via={via}&amp;hashtags={hashtags}">
-              <i class="fa fa-twitter"></i>
-            </a>
-            <a href="https://pinterest.com/pin/create/button/?url={imagesrc}&amp;media={image}&amp;description={description}">
-              <i class="fa fa-pinterest"></i>
-            </a>
+    <div class="content-container gutterad-min-height reece-b3-gallery">
+      <div class="inner-wrapper">
+        <div class="row reece-b3-gallery-header">
+          <div class="col-md-9 col-sm-12">
+            <h1>Garden Title / name 1</h1>
+            <div class="social-share">
+              <a href="http://www.facebook.com/sharer.php?u={url}&amp;title={text}">
+                <i class="fa fa-facebook"></i>
+              </a>
+              <a href="https://twitter.com/share?url={url}&amp;text={text}&amp;via={via}&amp;hashtags={hashtags}">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a href="https://pinterest.com/pin/create/button/?url={imagesrc}&amp;media={image}&amp;description={description}">
+                <i class="fa fa-pinterest"></i>
+              </a>
+            </div>
           </div>
+          <div class="col-md-3 col-sm-12"></div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-9 col-sm-12">
-          <div class="row">
-            <div class="col-md-12">
-              <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="7000">
-                <div class="carousel-inner">
-                  <div class="item active">
-                    <img alt="product description" src="images/gallery/article-image1.jpg">
-                  </div>
-                  <div class="item">
-                    <img alt="product description" src="images/gallery/article-image2.jpg">
-                  </div>
-                  <div class="item">
-                    <img alt="product description" src="images/gallery/article-image3.jpg">
-                  </div>
-                  <div class="item">
-                    <img alt="product description" src="images/gallery/article-image4.jpg">
-                  </div>
-                  <div class="item">
-                    <img alt="product description" src="images/gallery/article-image5.jpg">
-                  </div>
-                  <div class="item">
-                    <img alt="product description" src="images/gallery/article-image6.jpg">
-                  </div>
-                  <div class="item">
-                    <img alt="product description" src="images/gallery/article-image7.jpg">
-                  </div>
-                  <div class="item">
-                    <img alt="product description" src="http://placehold.it/800x490/feb8aa/000&amp;text=Product+Image+8">
-                  </div>
-                  <div class="item">
-                    <img alt="product description" src="http://placehold.it/800x490/00ffff/000&amp;text=Product+Image+9">
-                  </div>
-                  <div class="item">
-                    <img alt="product description" src="http://placehold.it/800x490/db371b/fff&amp;text=Product+Image+10">
-                  </div>
-                  <div class="item">
-                    <img alt="product description" src="http://placehold.it/800x490/feb8aa/000&amp;text=Product+Image+11">
-                  </div>
-                </div>
-                <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                </a>
-                <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                </a>
-              </div>
-              <div class="clearfix">
-                <div id="thumbcarousel" class="carousel slide" data-interval="false">
+        <div class="row">
+          <div class="col-md-9 col-sm-12">
+            <div class="row">
+              <div class="col-md-12">
+                <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="7000">
                   <div class="carousel-inner">
                     <div class="item active">
-                      <div data-target="#carousel" data-slide-to="0" class="thumb"><img alt="product description" src="images/gallery/thumbs/article-image1.jpg"></div>
-                      <div data-target="#carousel" data-slide-to="1" class="thumb"><img alt="product description" src="images/gallery/thumbs/article-image2.jpg"></div>
-                      <div data-target="#carousel" data-slide-to="2" class="thumb"><img alt="product description" src="images/gallery/thumbs/article-image3.jpg"></div>
-                      <div data-target="#carousel" data-slide-to="3" class="thumb last"><img alt="product description" src="images/gallery/thumbs/article-image4.jpg"></div>
-                    </div><!-- /item -->
-                    <div class="item">
-                      <div data-target="#carousel" data-slide-to="4" class="thumb"><img alt="product description" src="images/gallery/thumbs/article-image5.jpg"></div>
-                      <div data-target="#carousel" data-slide-to="5" class="thumb"><img alt="product description" src="images/gallery/thumbs/article-image6.jpg"></div>
-                      <div data-target="#carousel" data-slide-to="6" class="thumb"><img alt="product description" src="images/gallery/thumbs/article-image7.jpg"></div>
-                      <div data-target="#carousel" data-slide-to="7" class="thumb last"><img alt="product description" src="http://placehold.it/220x135/feb8aa/000&amp;text=Product+Image+8"></div>
+                      <img alt="product description" src="images/gallery/article-image1.jpg">
                     </div>
                     <div class="item">
-                      <div data-target="#carousel" data-slide-to="8" class="thumb"><img alt="product description" src="http://placehold.it/220x135/00ffcc/000&amp;text=Product+Image+9"></div>
-                      <div data-target="#carousel" data-slide-to="9" class="thumb"><img alt="product description" src="http://placehold.it/220x135/db371b/fff&amp;text=Product+Image+10"></div>
-                      <div data-target="#carousel" data-slide-to="10" class="thumb"><img alt="product description" src="http://placehold.it/220x135/feb8aa/000&amp;text=Product+Image+11"></div>
-                    </div><!-- /item -->
-                  </div><!-- /carousel-inner -->
-                  <a class="left carousel-control" href="#thumbcarousel" role="button" data-slide="prev">
+                      <img alt="product description" src="images/gallery/article-image2.jpg">
+                    </div>
+                    <div class="item">
+                      <img alt="product description" src="images/gallery/article-image3.jpg">
+                    </div>
+                    <div class="item">
+                      <img alt="product description" src="images/gallery/article-image4.jpg">
+                    </div>
+                    <div class="item">
+                      <img alt="product description" src="images/gallery/article-image5.jpg">
+                    </div>
+                    <div class="item">
+                      <img alt="product description" src="images/gallery/article-image6.jpg">
+                    </div>
+                    <div class="item">
+                      <img alt="product description" src="images/gallery/article-image3.jpg">
+                    </div>
+                    <div class="item">
+                      <img alt="product description" src="images/gallery/article-image7.jpg">
+                    </div>
+                  </div>
+                  <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
                   <span class="glyphicon glyphicon-chevron-left"></span>
                   </a>
-                  <a class="right carousel-control" href="#thumbcarousel" role="button" data-slide="next">
+                  <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
                   <span class="glyphicon glyphicon-chevron-right"></span>
                   </a>
-                </div><!-- /thumbcarousel -->
-              </div><!-- /clearfix -->
-            </div>
-          </div>
-          <div class="row gallery-details">
-            <div class="col-md-12">
-              <h3>Gallery name</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-            </div>
-          </div>
-          <hr />
-          <div class="row">
-            <div class="col-md-12">
-              <!-- products used -->
-              <div class="products-used">
-                <div class="row products-used-header">
-                  <div class="col-md-9 col-sm-12">
-                    <h2>Products Used</h2>
-                  </div>
-                  <div class="col-md-3 col-sm-12">
-                  </div>
                 </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="row">
-                      <div class="col-md-3 col-sm-6 col-xs-12">
-                        <a href="#" class="thumbnail">
-                          <img src="images/products/product2.jpg" alt="product 1">
-                          <div class="caption">
-                            <h4>Product 1</h4>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-md-3 col-sm-6 col-xs-12">
-                        <a href="#" class="thumbnail">
-                          <img src="images/products/product3.jpg" alt="product 2">
-                          <div class="caption">
-                            <h4>Product 2</h4>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-md-3 col-sm-6 col-xs-12">
-                        <a href="#" class="thumbnail">
-                          <img src="images/products/product2.jpg" alt="product 3">
-                          <div class="caption">
-                            <h4>Product 3</h4>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-md-3 col-sm-6 col-xs-12">
-                        <a href="#" class="thumbnail">
-                          <img src="images/products/product3.jpg" alt="product 4">
-                          <div class="caption">
-                            <h4>Product 4</h4>
-                          </div>
-                        </a>
-                      </div>
-                    </div><!-- /row -->
-                  </div><!-- /col-md-12 -->
-                </div><!-- /row -->
+                <div class="clearfix">
+                  <div id="thumbcarousel" class="carousel slide" data-interval="false">
+                    <div class="carousel-inner">
+                      <div class="item active">
+                        <div data-target="#carousel" data-slide-to="0" class="thumb"><img alt="product description" src="images/gallery/thumbs/article-image1.jpg"></div>
+                        <div data-target="#carousel" data-slide-to="1" class="thumb"><img alt="product description" src="images/gallery/thumbs/article-image2.jpg"></div>
+                        <div data-target="#carousel" data-slide-to="2" class="thumb"><img alt="product description" src="images/gallery/thumbs/article-image3.jpg"></div>
+                        <div data-target="#carousel" data-slide-to="3" class="thumb last"><img alt="product description" src="images/gallery/thumbs/article-image4.jpg"></div>
+                      </div><!-- /item -->
+                      <div class="item">
+                        <div data-target="#carousel" data-slide-to="4" class="thumb"><img alt="product description" src="images/gallery/thumbs/article-image5.jpg"></div>
+                        <div data-target="#carousel" data-slide-to="5" class="thumb"><img alt="product description" src="images/gallery/thumbs/article-image6.jpg"></div>
+                        <div data-target="#carousel" data-slide-to="6" class="thumb"><img alt="product description" src="images/gallery/thumbs/article-image3.jpg"></div>
+                        <div data-target="#carousel" data-slide-to="7" class="thumb last"><img alt="product description" src="images/gallery/thumbs/article-image7.jpg"></div>
+                      </div><!-- /item -->
+                    </div><!-- /carousel-inner -->
+                    <a class="left carousel-control" href="#thumbcarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#thumbcarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                  </div><!-- /thumbcarousel -->
+                </div><!-- /clearfix -->
               </div>
             </div>
-          </div><!-- /row -->
-        </div><!-- /col-md-9 col-sm-12 -->
-        <!-- Related Products -->
-        <div class="col-md-3 col-sm-12">
-          <div class="row well">
-            <h3>Related galleries</h3>
-            <div class="col-md-12 col-sm-6 col-xs-12">
-              <a href="#" class="thumbnail">
-                <div class="mask"><img src="images/gallery/article-image6.jpg" alt="product 1"></div>
-                <div class="caption">
-                  <h4>Related Product 1</h4>
-                  <p>Lorem ipsum dolor</p>
-                </div>
-              </a>
+            <div class="row inspiration-plans">
+              <div class="col-md-12">
+                <span class="button button-dark display-plans pull-right">
+                  <span class="view-plan">View plan</span>
+                  <span class="hide-plan">Hide plan</span>
+                </span>
+              </div>
+              <div class="col-md-12 plans-wrapper">
+                <img src="images/gallery/article-image1.jpg">
+              </div>
             </div>
-            <div class="col-md-12 col-sm-6 col-xs-12">
-              <a href="#" class="thumbnail">
-                <div class="mask"><img src="images/gallery/article-image5.jpg" alt="product 2"></div>
-                <div class="caption">
-                  <h4>Related Product 2</h4>
-                  <p>Lorem ipsum dolor</p>
-                </div>
-              </a>
+            <div class="row gallery-details">
+              <div class="col-md-12">
+                <h4>Garden title / name</h4>
+                <p>Western Australia</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
             </div>
-            <div class="col-md-12 col-sm-6 col-xs-12">
-              <a href="#" class="thumbnail">
-                <div class="mask"><img src="images/gallery/article-image7.jpg" alt="product 3"></div>
-                <div class="caption">
-                  <h4>Related Product 3</h4>
-                  <p>Lorem ipsum dolor</p>
+            <div class="row">
+              <div class="col-md-12">
+                <!-- products used -->
+                <div class="products-used">
+                  <div class="row products-used-header">
+                    <div class="col-md-9 col-sm-12">
+                      <h3>Products Used</h3>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                          <a href="http://www.reece.com.au/irrigation/products/1522540" class="thumbnail">
+                            <img src="images/products/product-smartline.png" alt="product 1">
+                            <div class="caption">
+                              <h4>Weathermatic SmartLine</h4>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                          <a href="http://www.reece.com.au/irrigation/products/1522602" class="thumbnail">
+                            <img src="images/products/product-weather-station.png" alt="product 2">
+                            <div class="caption">
+                              <h4>Weathermatic SLW5 Weather Station</h4>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                          <a href="http://www.reece.com.au/irrigation/products/1542488" class="thumbnail">
+                            <img src="images/products/product-dripline.png" alt="product 3">
+                            <div class="caption">
+                              <h4>EnKi Dripline</h4>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                          <a href="http://www.reece.com.au/irrigation/products/1522682" class="thumbnail">
+                            <img src="images/products/product-prs-spray.png" alt="product 4">
+                            <div class="caption">
+                              <h4>Weathermatic PRS spray</h4>
+                            </div>
+                          </a>
+                        </div>
+                      </div><!-- /row -->
+                    </div><!-- /col-md-12 -->
+                  </div><!-- /row -->
                 </div>
-              </a>
+              </div>
+            </div><!-- /row -->
+          </div><!-- /col-md-9 col-sm-12 -->
+          <!-- Related Products -->
+          <div class="col-md-3 col-sm-12 related-products">
+            <div class="row well">
+              <h4>Related gardens</h4>
+              <div class="col-md-12 col-sm-6 col-xs-12">
+                <a href="#" class="thumbnail">
+                  <div class="mask"><img src="images/gallery/article-image6.jpg" alt="product 1"></div>
+                  <div class="caption">
+                    <h6>Garden title</h6>
+                    <p>Western Australia</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-12 col-sm-6 col-xs-12">
+                <a href="#" class="thumbnail">
+                  <div class="mask"><img src="images/gallery/article-image5.jpg" alt="product 2"></div>
+                  <div class="caption">
+                    <h6>Garden title</h6>
+                    <p>Western Australia</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-12 col-sm-6 col-xs-12">
+                <a href="#" class="thumbnail">
+                  <div class="mask"><img src="images/gallery/article-image7.jpg" alt="product 3"></div>
+                  <div class="caption">
+                    <h6>Garden title</h6>
+                    <p>Western Australia</p>
+                  </div>
+                </a>
+              </div>
             </div>
-          </div>
-        </div><!-- /col-md-3 col-sm-12 -->  
-      </div><!-- /row -->
+          </div><!-- /col-md-3 col-sm-12 -->  
+        </div><!-- /row -->
+    </div><!-- /inner-wrapper -->
     </div><!-- /.container -->
 
   <?php include "templates/Includes/Footer.php" ?>

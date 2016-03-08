@@ -63,24 +63,64 @@
           <div class="col-md-9 col-sm-12">
             <div class="row">
               <div class="col-md-12">
-                <div class="article-gallery">
-                  <div class="gallery-main">
-                    <div class="image-wrap"><img src="images/inspiration/article-image1.png"></div>
-                    <div class="image-wrap"><img src="images/inspiration/article-image2.png"></div>
-                    <div class="image-wrap"><img src="images/inspiration/article-image3.png"></div>
-                    <div class="image-wrap"><img src="images/inspiration/article-image4.png"></div>
-                    <div class="image-wrap"><img src="images/inspiration/article-image5.png"></div>
-                    <div class="image-wrap"><img src="images/inspiration/article-image6.png"></div>
+                <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="7000">
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img alt="product description" src="images/gallery/article-image1.jpg">
+                    </div>
+                    <div class="item">
+                      <img alt="product description" src="images/gallery/article-image2.jpg">
+                    </div>
+                    <div class="item">
+                      <img alt="product description" src="images/gallery/article-image3.jpg">
+                    </div>
+                    <div class="item">
+                      <img alt="product description" src="images/gallery/article-image4.jpg">
+                    </div>
+                    <div class="item">
+                      <img alt="product description" src="images/gallery/article-image5.jpg">
+                    </div>
+                    <div class="item">
+                      <img alt="product description" src="images/gallery/article-image6.jpg">
+                    </div>
+                    <div class="item">
+                      <img alt="product description" src="images/gallery/article-image3.jpg">
+                    </div>
+                    <div class="item">
+                      <img alt="product description" src="images/gallery/article-image7.jpg">
+                    </div>
                   </div>
-                  <div class="gallery-thumb">
-                    <div class="image-wrap"><img src="images/inspiration/article-image1.png"></div>
-                    <div class="image-wrap"><img src="images/inspiration/article-image2.png"></div>
-                    <div class="image-wrap"><img src="images/inspiration/article-image3.png"></div>
-                    <div class="image-wrap"><img src="images/inspiration/article-image4.png"></div>
-                    <div class="image-wrap"><img src="images/inspiration/article-image5.png"></div>
-                    <div class="image-wrap"><img src="images/inspiration/article-image6.png"></div>
-                  </div>
+                  <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                  </a>
+                  <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                  </a>
                 </div>
+                <div class="clearfix">
+                  <div id="thumbcarousel" class="carousel slide" data-interval="false">
+                    <div class="carousel-inner">
+                      <div class="item active">
+                        <div data-target="#carousel" data-slide-to="0" class="thumb"><img alt="product description" src="images/gallery/thumbs/article-image1.jpg"></div>
+                        <div data-target="#carousel" data-slide-to="1" class="thumb"><img alt="product description" src="images/gallery/thumbs/article-image2.jpg"></div>
+                        <div data-target="#carousel" data-slide-to="2" class="thumb"><img alt="product description" src="images/gallery/thumbs/article-image3.jpg"></div>
+                        <div data-target="#carousel" data-slide-to="3" class="thumb last"><img alt="product description" src="images/gallery/thumbs/article-image4.jpg"></div>
+                      </div><!-- /item -->
+                      <div class="item">
+                        <div data-target="#carousel" data-slide-to="4" class="thumb"><img alt="product description" src="images/gallery/thumbs/article-image5.jpg"></div>
+                        <div data-target="#carousel" data-slide-to="5" class="thumb"><img alt="product description" src="images/gallery/thumbs/article-image6.jpg"></div>
+                        <div data-target="#carousel" data-slide-to="6" class="thumb"><img alt="product description" src="images/gallery/thumbs/article-image3.jpg"></div>
+                        <div data-target="#carousel" data-slide-to="7" class="thumb last"><img alt="product description" src="images/gallery/thumbs/article-image7.jpg"></div>
+                      </div><!-- /item -->
+                    </div><!-- /carousel-inner -->
+                    <a class="left carousel-control" href="#thumbcarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#thumbcarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                  </div><!-- /thumbcarousel -->
+                </div><!-- /clearfix -->
               </div>
             </div>
             <div class="row inspiration-plans">
@@ -203,7 +243,6 @@
   <script type="text/javascript" src="javascript/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
   <script type="text/javascript" src="javascript/vendor/jquery.touchSwipe.min.js"></script>
-  <script type="text/javascript" src="javascript/vendor/slick.min.js"></script>
   <script type="text/javascript" src="javascript/reece-ocnav.js"></script>
   <script type="text/javascript" src="javascript/reece-gallery.js"></script>
 

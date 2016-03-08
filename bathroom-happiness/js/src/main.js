@@ -578,14 +578,16 @@ var bathroomHappiness = {
       }
     });
     var currentSection = 1;
-    var s = 0;
-    var containerWidth = $('.showering-intro-wrap').width();
-    $('.showering-zones-section').each(function(){
-      $(this).css({
-        transform: 'translate3d('+(-1 * (s) * containerWidth )+'px,0,0)'        
-      })
-      s=s+1;
-    });
+    $(window).on('resize', function(){
+      var s = 0;
+      var containerWidth = $('.showering-intro-wrap').width();
+      $('.showering-zones-section').each(function(){
+        $(this).css({
+          transform: 'translate3d('+(-1 * (s) * containerWidth )+'px,0,0)'        
+        })
+        s=s+1;
+      });
+    }).resize();
     $('.showering-menu a').on('click', function(){
       var section = $(this).data('section');
       $('.showering-menu a').removeClass('active')

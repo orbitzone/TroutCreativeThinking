@@ -46,6 +46,13 @@
   -o-appearance:     $value;
   appearance:       $value;   
 }
+@mixin perspective($value){
+  -webkit-perspective:   $value;
+  -moz-perspective:       $value;
+  -ms-perspective:     $value;
+  -o-perspective:     $value;
+  perspective:       $value;   
+}
 @mixin transform-origin($value){
   -webkit-transform-origin:   $value;
   -moz-transform-origin:       $value;

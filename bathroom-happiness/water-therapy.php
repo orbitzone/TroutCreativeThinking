@@ -3,6 +3,7 @@
   $extra_javascript = "<script src='js/vendor/jquery.magnific-popup.min.js' type='text/javascript'></script>";
  include_once('templates/includes/reece-head.php');?>
   <body class="water-therapy bathroom-happiness">
+  <?php include_once("images/svg-defs.svg"); ?>
     <div class="ocmain-wrapper">
       <?php include_once("templates/includes/reece-header.php");?>
       <div class="main" role="main">
@@ -445,17 +446,49 @@
                 <div class="col-sm-6">
                   <div class="showering-description">
                     <div class="box">
-                      <h3>Wet Zone</h3>
-                      <div class="text">
-                        <p>Statement to explain the openness and layout of a wet zone environment.</p>
+                      <div class="box-content box-content-1 active">
+                        <h3>Wet Zone</h3>
+                        <div class="text">
+                          <p>Statement to explain the openness and layout of a wet zone environment.</p>
+                        </div>
                       </div>
-                    </div>                  
+                      <div class="box-content box-content-2">
+                        <h3>Enclosed</h3>
+                        <div class="text">
+                          <p>Statement to explain the openness and layout of a wet zone environment.</p>
+                        </div>
+                      </div>
+                      <div class="box-content box-content-3">
+                        <h3>Walk In</h3>
+                        <div class="text">
+                          <p>Statement to explain the openness and layout of a wet zone environment.</p>
+                        </div>
+                      </div> 
+                      <div class="box-content box-content-4">
+                        <h3>Double</h3>
+                        <div class="text">
+                          <p>Statement to explain the openness and layout of a wet zone environment.</p>
+                        </div>
+                      </div> 
+                      <div class="box-content box-content-5">
+                        <h3>Outdoor</h3>
+                        <div class="text">
+                          <p>Statement to explain the openness and layout of a wet zone environment.</p>
+                        </div>
+                      </div> 
+                      <div class="box-content box-content-6">
+                        <h3>Shower Bath</h3>
+                        <div class="text">
+                          <p>Statement to explain the openness and layout of a wet zone environment.</p>
+                        </div>
+                      </div>
+                    </div>                                       
                   </div>
                 </div>
               </div>
             </div>
             <div class="showering-zones-sections">
-              <div class="showering-zones-section-1 showering-zones-section">
+              <div class="showering-zones-section-1 showering-zones-section current">
                 <div class="row">
                   <div class="col-xs-12">
                     <div class="panel-slideshow showering-zone-1">
@@ -507,12 +540,12 @@
                       <div class="showering-zone-4">
                         <h3>Create your own wet zone</h3>
                         <div class="row">
-                          <div class="col-sm-7">
+                          <div class="col-md-7">
                             <figure class="image">
                               <img src="images/water_therapy/showering-zone-4.jpg" alt="Showering"/>
                             </figure>
                           </div>
-                          <div class="col-sm-5">
+                          <div class="col-md-5">
                             <div class="text">
                               <p>Statement to reference the different style of wet zone layouts.</p>
                               <p><h4>TIPS FOR WET ZONE</h4>
@@ -530,7 +563,7 @@
                       <div class="showering-zone-5">
                         <div class="showering-zone-5-content">
                           <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-md-6">
                               <div class="panel panel-slideshow">
                                 <div class="slideshow-container">
                                   <div class="slide">
@@ -580,7 +613,7 @@
                                 </div>
                               </div>  
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-md-6">
                               <div class="panel panel-slideshow">
                                 <div class="slideshow-container">
                                   <div class="slide">
@@ -676,7 +709,7 @@
                         <div class="box-border"></div>
                         <div class="box">
                           <div class="text">
-                            A wet zone is boundless, free and open.
+                            An enclosed is boundless, free and open.
                           </div>
                         </div>
                       </div>
@@ -687,14 +720,14 @@
                   <div class="row">
                     <div class="col-sm-6">
                       <div class="showering-zone-4">
-                        <h3>Create your own wet zone</h3>
+                        <h3>Create your own enclosed</h3>
                         <div class="row">
-                          <div class="col-sm-7">
+                          <div class="col-md-7">
                             <figure class="image">
                               <img src="images/water_therapy/showering-zone-4.jpg" alt="Showering"/>
                             </figure>
                           </div>
-                          <div class="col-sm-5">
+                          <div class="col-md-5">
                             <div class="text">
                               <p>Statement to reference the different style of wet zone layouts.</p>
                               <p><h4>TIPS FOR WET ZONE</h4>
@@ -712,7 +745,7 @@
                       <div class="showering-zone-5">
                         <div class="showering-zone-5-content">
                           <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-md-6">
                               <div class="panel panel-slideshow">
                                 <div class="slideshow-container">
                                   <div class="slide">
@@ -762,7 +795,7 @@
                                 </div>
                               </div>  
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-md-6">
                               <div class="panel panel-slideshow">
                                 <div class="slideshow-container">
                                   <div class="slide">
@@ -858,7 +891,7 @@
                         <div class="box-border"></div>
                         <div class="box">
                           <div class="text">
-                            A wet zone is boundless, free and open.
+                            A walk in is boundless, free and open.
                           </div>
                         </div>
                       </div>
@@ -869,14 +902,14 @@
                   <div class="row">
                     <div class="col-sm-6">
                       <div class="showering-zone-4">
-                        <h3>Create your own wet zone</h3>
+                        <h3>Create your own walk in</h3>
                         <div class="row">
-                          <div class="col-sm-7">
+                          <div class="col-md-7">
                             <figure class="image">
                               <img src="images/water_therapy/showering-zone-4.jpg" alt="Showering"/>
                             </figure>
                           </div>
-                          <div class="col-sm-5">
+                          <div class="col-md-5">
                             <div class="text">
                               <p>Statement to reference the different style of wet zone layouts.</p>
                               <p><h4>TIPS FOR WET ZONE</h4>
@@ -894,7 +927,7 @@
                       <div class="showering-zone-5">
                         <div class="showering-zone-5-content">
                           <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-md-6">
                               <div class="panel panel-slideshow">
                                 <div class="slideshow-container">
                                   <div class="slide">
@@ -944,7 +977,7 @@
                                 </div>
                               </div>  
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-md-6">
                               <div class="panel panel-slideshow">
                                 <div class="slideshow-container">
                                   <div class="slide">
@@ -1040,7 +1073,7 @@
                         <div class="box-border"></div>
                         <div class="box">
                           <div class="text">
-                            A wet zone is boundless, free and open.
+                            A double boundless, free and open.
                           </div>
                         </div>
                       </div>
@@ -1051,14 +1084,14 @@
                   <div class="row">
                     <div class="col-sm-6">
                       <div class="showering-zone-4">
-                        <h3>Create your own wet zone</h3>
+                        <h3>Create your own double</h3>
                         <div class="row">
-                          <div class="col-sm-7">
+                          <div class="col-md-7">
                             <figure class="image">
                               <img src="images/water_therapy/showering-zone-4.jpg" alt="Showering"/>
                             </figure>
                           </div>
-                          <div class="col-sm-5">
+                          <div class="col-md-5">
                             <div class="text">
                               <p>Statement to reference the different style of wet zone layouts.</p>
                               <p><h4>TIPS FOR WET ZONE</h4>
@@ -1076,7 +1109,7 @@
                       <div class="showering-zone-5">
                         <div class="showering-zone-5-content">
                           <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-md-6">
                               <div class="panel panel-slideshow">
                                 <div class="slideshow-container">
                                   <div class="slide">
@@ -1126,7 +1159,7 @@
                                 </div>
                               </div>  
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-md-6">
                               <div class="panel panel-slideshow">
                                 <div class="slideshow-container">
                                   <div class="slide">
@@ -1222,7 +1255,7 @@
                         <div class="box-border"></div>
                         <div class="box">
                           <div class="text">
-                            A wet zone is boundless, free and open.
+                            An outdoor is boundless, free and open.
                           </div>
                         </div>
                       </div>
@@ -1233,14 +1266,14 @@
                   <div class="row">
                     <div class="col-sm-6">
                       <div class="showering-zone-4">
-                        <h3>Create your own wet zone</h3>
+                        <h3>Create your own outdoor</h3>
                         <div class="row">
-                          <div class="col-sm-7">
+                          <div class="col-md-7">
                             <figure class="image">
                               <img src="images/water_therapy/showering-zone-4.jpg" alt="Showering"/>
                             </figure>
                           </div>
-                          <div class="col-sm-5">
+                          <div class="col-md-5">
                             <div class="text">
                               <p>Statement to reference the different style of wet zone layouts.</p>
                               <p><h4>TIPS FOR WET ZONE</h4>
@@ -1258,7 +1291,7 @@
                       <div class="showering-zone-5">
                         <div class="showering-zone-5-content">
                           <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-md-6">
                               <div class="panel panel-slideshow">
                                 <div class="slideshow-container">
                                   <div class="slide">
@@ -1308,7 +1341,7 @@
                                 </div>
                               </div>  
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-md-6">
                               <div class="panel panel-slideshow">
                                 <div class="slideshow-container">
                                   <div class="slide">
@@ -1404,7 +1437,7 @@
                         <div class="box-border"></div>
                         <div class="box">
                           <div class="text">
-                            A wet zone is boundless, free and open.
+                            A shower bath is boundless, free and open.
                           </div>
                         </div>
                       </div>
@@ -1415,14 +1448,14 @@
                   <div class="row">
                     <div class="col-sm-6">
                       <div class="showering-zone-4">
-                        <h3>Create your own wet zone</h3>
+                        <h3>Create your own shower bath</h3>
                         <div class="row">
-                          <div class="col-sm-7">
+                          <div class="col-md-7">
                             <figure class="image">
                               <img src="images/water_therapy/showering-zone-4.jpg" alt="Showering"/>
                             </figure>
                           </div>
-                          <div class="col-sm-5">
+                          <div class="col-md-5">
                             <div class="text">
                               <p>Statement to reference the different style of wet zone layouts.</p>
                               <p><h4>TIPS FOR WET ZONE</h4>
@@ -1440,7 +1473,7 @@
                       <div class="showering-zone-5">
                         <div class="showering-zone-5-content">
                           <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-md-6">
                               <div class="panel panel-slideshow">
                                 <div class="slideshow-container">
                                   <div class="slide">
@@ -1490,7 +1523,7 @@
                                 </div>
                               </div>  
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-md-6">
                               <div class="panel panel-slideshow">
                                 <div class="slideshow-container">
                                   <div class="slide">
@@ -1558,15 +1591,15 @@
                   <div class="shower-technology-menu">
                     <h3>Shower Technology</h3>
                     <ul class="list-unstyled">
-                      <li><a href="#">Waterfall</a></li>
-                      <li><a href="#">Body Jets</a></li>
-                      <li><a href="#">Led</a></li>
-                      <li><a href="#">Air Drop</a></li>
-                      <li><a href="#">Turbine</a></li>
-                      <li><a href="#">Raindance</a></li>
-                      <li><a href="#">Croma Soft Rain</a></li>
-                      <li><a href="#">Croma Intense Rain</a></li>
-                      <li><a href="#">Croma Massage</a></li>
+                      <li><a href="#"><svg class="icon shape-waterfall"><use xlink:href="#shape-waterfall"></use></svg><span>Waterfall</span></a></li>
+                      <li><a href="#"><svg class="icon shape-body-spray"><use xlink:href="#shape-body-spray"></use></svg><span>Body Spray</span></a></li>
+                      <li><a href="#"><svg class="icon shape-led"><use xlink:href="#shape-led"></use></svg><span>Led</span></a></li>
+                      <li><a href="#"><svg class="icon shape-airdrop"><use xlink:href="#shape-airdrop"></use></svg><span>Air Drop</span></a></li>
+                      <li><a href="#"><svg class="icon shape-turbine"><use xlink:href="#shape-turbine"></use></svg><span>Turbine</span></a></li>
+                      <li><a href="#"><svg class="icon shape-raindance"><use xlink:href="#shape-raindance"></use></svg><span>Raindance</span></a></li>
+                      <li><a href="#"><svg class="icon shape-soft-rain"><use xlink:href="#shape-soft-rain"></use></svg><span>Croma Soft Rain</span></a></li>
+                      <li><a href="#"><svg class="icon shape-intense-rain"><use xlink:href="#shape-intense-rain"></use></svg><span>Croma Intense Rain</span></a></li>
+                      <li><a href="#"><svg class="icon shape-massage"><use xlink:href="#shape-massage"></use></svg><span>Croma Massage</span></a></li>
                     </ul>
                   </div>
                 </div>

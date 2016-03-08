@@ -590,6 +590,8 @@ var bathroomHappiness = {
       var section = $(this).data('section');
       $('.showering-menu a').removeClass('active')
       $(this).addClass('active');
+      $('.showering-description .box-content').removeClass('active');
+      $('.showering-description .box-content-'+section).addClass('active');
       currentSection = section;
       var next = (section * 1) + 1;
       var prev = (section * 1) - 1;
@@ -605,16 +607,6 @@ var bathroomHappiness = {
       $('.showering-zones-section-'+section).addClass('current');
       $('.showering-zones-section-'+next).addClass('next');
       $('.showering-zones-section-'+prev).addClass('prev');
-     /* $('.showering-zones-section-'+prev).css({
-        transform         : 'translate3d('+(-1 * prev * containerWidth )+'px,0,0)'        
-      });
-      $('.showering-zones-section-'+section).css({
-        transform: 'translate3d('+(-1 * (section-1) * containerWidth )+'px,0,0)'        
-      });
-      $('.showering-zones-section-'+next).css({
-        transform         : 'translate3d('+(-1 * (next-2) * containerWidth )+'px,0,0)'
-      });
-      */
       return false;
     });    
     $(window).on('scroll', function(){

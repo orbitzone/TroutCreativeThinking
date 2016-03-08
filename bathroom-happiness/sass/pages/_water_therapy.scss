@@ -168,10 +168,10 @@ body.water-therapy{
 				.video-wrap{
 					position: relative;
 					z-index: 1;
-					overflow: hidden;
 					.videos{
 						position: relative;
 						background: black;
+						overflow: hidden;
 					}
 					.video{
 						width: 100%;
@@ -523,7 +523,11 @@ body.water-therapy{
 				margin: 0 auto;
 				position: relative;
 				z-index: 3;
-				@include transform(translateY(56px));
+				margin-top: 56px;
+				@media (min-width: $screen-md){
+					margin-top: 0;
+					@include transform(translateY(56px));
+				}
 				.row{
 					margin: 0;
 					.col-sm-6{
@@ -539,8 +543,12 @@ body.water-therapy{
 				background: linear-gradient(to bottom,  #37d1a4 0%,#41f3bf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#37d1a4', endColorstr='#41f3bf',GradientType=0 ); /* IE6-9 */
 
-				padding: 64px 40px 28px;
-				height: 290px;
+				padding: 30px 20px 10px;
+				@include transition(0.5s all ease-out);
+				@media (min-width: $screen-sm){
+					padding: 64px 40px 28px;
+					height: 290px;
+				}
 				@media (min-width: $screen-md){
 					padding: 64px 58px 28px;
 				}
@@ -550,6 +558,8 @@ body.water-therapy{
 					@include clearfix();
 					margin-left: -7.5px;
 					margin-right: -7.5px;
+					@include transition(0.5s all ease-out);
+					height: 100%;
 					li{
 						float: left;
 						width: 50%;
@@ -560,14 +570,53 @@ body.water-therapy{
 							color: $water-therapy-blue;
 							border: 1px solid $water-therapy-blue;
 							padding: 10px;
-							margin-bottom: 28px;
+							margin-bottom: 16px;
 							@include transition(0.5s color ease-out, 0.5s background ease-out);
+							font-size: 12px;
+							@media (min-width: $screen-sm){
+								margin-bottom: 28px;
+								font-size: 14px;
+							}
 							&.active{
 								text-decoration: none;
 								background: $water-therapy-blue;
 								color: $water-therapy-green;
 							}
 						}
+					}
+				}
+				.scrolling-menu{
+					width: 90px;
+			    height: 90px;
+			    border-radius: 100%;
+			    margin: 0 auto;
+			    text-align: center;
+			    background: $water-therapy-blue;
+			    position: absolute;
+			    z-index: 10;
+			    bottom: -45px;
+			    left: 50%;
+			    margin-left: -45px;
+			    @include transition(0.5s all ease-out);
+			    @include transform(scale(0.5));
+			    .icon{
+			    	width: 40px;
+			    	height: 40px;
+			    	fill: $water-therapy-green;
+			    	position: relative;
+			    	top: 30px;
+			    }
+				}
+				&.fixed{
+					padding: 0;
+					height: 0;
+					ul{
+						overflow: hidden;
+						width: 0;
+						height: 0;
+					}
+					.scrolling-menu{
+						@include transform(scale(1));
 					}
 				}
 			}//.showering-menu
@@ -652,7 +701,7 @@ body.water-therapy{
 						@include animation(slide_out 1s ease-out forwards);						
 					}
 					.showering-zone-2{
-						@include animation(flip_left_out 1s ease-out 0.2s forwards);						
+						@include animation(flip_left_out 1s ease-out 0.8s forwards);						
 					}
 					.showering-zone-3{						
 						@include animation(flip_right_out 1s ease-out 0.5s forwards);						
@@ -665,7 +714,7 @@ body.water-therapy{
 						}
 						.showering-zone-2
 						{
-							@include animation(flip_left_in 1s ease-out 0.2s forwards);
+							@include animation(flip_left_in 1s ease-out 0.8s forwards);
 						}
 						.showering-zone-3
 						{

@@ -617,12 +617,20 @@ var bathroomHappiness = {
       $('.showering-zones-section-'+next).addClass('next');
       $('.showering-zones-section-'+prev).addClass('prev');
       return false;
-    });    
+    });
+    $('.scrolling-menu').on('click', function(){
+      $('.showering-menu').toggleClass('fixed');
+    });
     $(window).on('scroll', function(){
-      if(deviceMobile && $(window).width() < 768){
+      if(deviceMobile){
         if($(window).scrollTop() >= $('.submenu-wrap').offset().top){
-          $('.submenu-wrap').height($('.submenu').height());
-          $('.submenu').addClass('fixed');
+          if($(window).scrollTop() <= $('#water-therapy-content .shower-image').offset().top){
+            $('.submenu-wrap').height($('.submenu').height());
+            $('.submenu').addClass('fixed');  
+          }else{
+            $('.submenu-wrap').height('');
+            $('.submenu').removeClass('fixed');
+          }          
         }else{
           $('.submenu-wrap').height('');
           $('.submenu').removeClass('fixed');

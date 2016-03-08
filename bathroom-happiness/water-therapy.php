@@ -443,6 +443,9 @@
                       <li><a href="#" data-section="5">Outdoor</a></li>
                       <li><a href="#" data-section="6">Shower Bath</a></li>
                     </ul>
+                    <div class="scrolling-menu">
+                      <svg class="icon shape-soft-rain"><use xlink:href="#shape-soft-rain"></use></svg>
+                    </div>
                   </div>
                 </div>
                 <div class="col-sm-6">

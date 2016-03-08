@@ -4302,7 +4302,7 @@ body.water-therapy .main #showering .showering-menu-wrap {
   max-width: 850px;
   margin: 0 auto;
   position: relative;
-  z-index: 2;
+  z-index: 3;
   -webkit-transform: translateY(56px);
   -moz-transform: translateY(56px);
   -ms-transform: translateY(56px);
@@ -4363,10 +4363,11 @@ body.water-therapy .main #showering .showering-menu ul li a {
 }
 /* line 549, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .showering-menu ul li a.active {
+  text-decoration: none;
   background: #151d25;
   color: #39d8a9;
 }
-/* line 557, ../sass/pages/_water_therapy.scss */
+/* line 558, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .showering-description {
   position: relative;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1a1c24+0,161d23+100 */
@@ -4382,14 +4383,14 @@ body.water-therapy .main #showering .showering-description {
   /* IE6-9 */
   height: 290px;
 }
-/* line 567, ../sass/pages/_water_therapy.scss */
+/* line 568, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .showering-description h3 {
   margin-top: 0;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.17em;
 }
-/* line 573, ../sass/pages/_water_therapy.scss */
+/* line 574, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .showering-description .box {
   position: absolute;
   width: 100%;
@@ -4402,30 +4403,95 @@ body.water-therapy .main #showering .showering-description .box {
   transform: translateY(-50%);
   padding: 0 60px;
 }
-/* line 582, ../sass/pages/_water_therapy.scss */
+/* line 583, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .showering-zones-sections {
   width: 7200px;
+  position: relative;
+  z-index: 1;
 }
-/* line 584, ../sass/pages/_water_therapy.scss */
+/* line 587, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .showering-zones-sections .showering-zones-section {
-  width: 1200px;
   float: left;
+  width: 1200px;
+  position: relative;
+  perspective: 2000px;
+  -webkit-animation: index_update_down 1s ease-out forwards;
+  -moz-animation: index_update_down 1s ease-out forwards;
+  -ms-animation: index_update_down 1s ease-out forwards;
+  -o-animation: index_update_down 1s ease-out forwards;
+  animation: index_update_down 1s ease-out forwards;
 }
-/* line 591, ../sass/pages/_water_therapy.scss */
+/* line 596, ../sass/pages/_water_therapy.scss */
+body.water-therapy .main #showering .showering-zones-sections .showering-zones-section .showering-zone-1 {
+  -webkit-animation: slide_out 1s ease-out forwards;
+  -moz-animation: slide_out 1s ease-out forwards;
+  -ms-animation: slide_out 1s ease-out forwards;
+  -o-animation: slide_out 1s ease-out forwards;
+  animation: slide_out 1s ease-out forwards;
+}
+/* line 599, ../sass/pages/_water_therapy.scss */
+body.water-therapy .main #showering .showering-zones-sections .showering-zones-section .showering-zone-2 {
+  -webkit-animation: flip_left_out 1s ease-out 0.2s forwards;
+  -moz-animation: flip_left_out 1s ease-out 0.2s forwards;
+  -ms-animation: flip_left_out 1s ease-out 0.2s forwards;
+  -o-animation: flip_left_out 1s ease-out 0.2s forwards;
+  animation: flip_left_out 1s ease-out 0.2s forwards;
+}
+/* line 602, ../sass/pages/_water_therapy.scss */
+body.water-therapy .main #showering .showering-zones-sections .showering-zones-section .showering-zone-3 {
+  -webkit-animation: flip_right_out 1s ease-out 0.5s forwards;
+  -moz-animation: flip_right_out 1s ease-out 0.5s forwards;
+  -ms-animation: flip_right_out 1s ease-out 0.5s forwards;
+  -o-animation: flip_right_out 1s ease-out 0.5s forwards;
+  animation: flip_right_out 1s ease-out 0.5s forwards;
+}
+/* line 605, ../sass/pages/_water_therapy.scss */
+body.water-therapy .main #showering .showering-zones-sections .showering-zones-section.current {
+  -webkit-animation: index_update_up 1s ease-out forwards;
+  -moz-animation: index_update_up 1s ease-out forwards;
+  -ms-animation: index_update_up 1s ease-out forwards;
+  -o-animation: index_update_up 1s ease-out forwards;
+  animation: index_update_up 1s ease-out forwards;
+}
+/* line 608, ../sass/pages/_water_therapy.scss */
+body.water-therapy .main #showering .showering-zones-sections .showering-zones-section.current .showering-zone-1 {
+  -webkit-animation: slide_in 1s ease-out forwards;
+  -moz-animation: slide_in 1s ease-out forwards;
+  -ms-animation: slide_in 1s ease-out forwards;
+  -o-animation: slide_in 1s ease-out forwards;
+  animation: slide_in 1s ease-out forwards;
+}
+/* line 611, ../sass/pages/_water_therapy.scss */
+body.water-therapy .main #showering .showering-zones-sections .showering-zones-section.current .showering-zone-2 {
+  -webkit-animation: flip_left_in 1s ease-out 0.2s forwards;
+  -moz-animation: flip_left_in 1s ease-out 0.2s forwards;
+  -ms-animation: flip_left_in 1s ease-out 0.2s forwards;
+  -o-animation: flip_left_in 1s ease-out 0.2s forwards;
+  animation: flip_left_in 1s ease-out 0.2s forwards;
+}
+/* line 615, ../sass/pages/_water_therapy.scss */
+body.water-therapy .main #showering .showering-zones-sections .showering-zones-section.current .showering-zone-3 {
+  -webkit-animation: flip_right_in 1s ease-out 0.5s forwards;
+  -moz-animation: flip_right_in 1s ease-out 0.5s forwards;
+  -ms-animation: flip_right_in 1s ease-out 0.5s forwards;
+  -o-animation: flip_right_in 1s ease-out 0.5s forwards;
+  animation: flip_right_in 1s ease-out 0.5s forwards;
+}
+/* line 624, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .showering-zones-2-3 .row,
 body.water-therapy .main #showering .showering-zones-4-5 .row {
   margin: 0;
 }
-/* line 593, ../sass/pages/_water_therapy.scss */
+/* line 626, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .showering-zones-2-3 .row .col-sm-6,
 body.water-therapy .main #showering .showering-zones-4-5 .row .col-sm-6 {
   padding: 0;
 }
-/* line 598, ../sass/pages/_water_therapy.scss */
+/* line 631, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .showering-zones-4-5 {
   margin-bottom: 80px;
 }
-/* line 602, ../sass/pages/_water_therapy.scss */
+/* line 635, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .showering-zone-1 .showering-slider-buttons {
   height: 40px;
   overflow: hidden;
@@ -4435,7 +4501,7 @@ body.water-therapy .main #showering .showering-zone-1 .showering-slider-buttons 
   right: 30px;
   bottom: 30px;
 }
-/* line 611, ../sass/pages/_water_therapy.scss */
+/* line 644, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .showering-zone-2 {
   background-size: cover;
   background-position: center center;
@@ -4443,7 +4509,7 @@ body.water-therapy .main #showering .showering-zone-2 {
   position: relative;
   padding: 40px;
 }
-/* line 617, ../sass/pages/_water_therapy.scss */
+/* line 650, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .showering-zone-2 .box {
   position: absolute;
   top: 50%;
@@ -4455,12 +4521,12 @@ body.water-therapy .main #showering .showering-zone-2 .box {
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 623, ../sass/pages/_water_therapy.scss */
+/* line 656, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .showering-zone-2 .box h3 {
   margin: 0;
   font-size: 68px;
 }
-/* line 629, ../sass/pages/_water_therapy.scss */
+/* line 662, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .showering-zone-3 {
   background-size: cover;
   background-position: center center;
@@ -4468,14 +4534,14 @@ body.water-therapy .main #showering .showering-zone-3 {
   position: relative;
   padding: 40px;
 }
-/* line 635, ../sass/pages/_water_therapy.scss */
+/* line 668, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .showering-zone-3 .box-border {
   width: 100%;
   height: 100%;
   border: 2px solid white;
   display: block;
 }
-/* line 641, ../sass/pages/_water_therapy.scss */
+/* line 674, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .showering-zone-3 .box {
   position: absolute;
   top: 50%;
@@ -4487,21 +4553,21 @@ body.water-therapy .main #showering .showering-zone-3 .box {
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 647, ../sass/pages/_water_therapy.scss */
+/* line 680, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .showering-zone-3 .box .text {
   font-weight: bold;
   font-size: 24px;
   width: 314px;
   margin: 0 auto;
 }
-/* line 658, ../sass/pages/_water_therapy.scss */
+/* line 691, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .showering-zone-4 {
   background: #eeeeee;
   color: #121a22;
   padding: 58px 30px 34px;
   height: 488px;
 }
-/* line 663, ../sass/pages/_water_therapy.scss */
+/* line 696, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .showering-zone-4 h3 {
   margin-top: 0;
   font-weight: 300;
@@ -4513,7 +4579,7 @@ body.water-therapy .main #showering .showering-zone-4 h3 {
   margin: 0 auto;
   margin-bottom: 50px;
 }
-/* line 674, ../sass/pages/_water_therapy.scss */
+/* line 707, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .showering-zone-4 h4 {
   margin-top: 0;
   font-weight: 400;
@@ -4521,12 +4587,12 @@ body.water-therapy .main #showering .showering-zone-4 h4 {
   letter-spacing: 0.13em;
   margin-bottom: 5px;
 }
-/* line 681, ../sass/pages/_water_therapy.scss */
+/* line 714, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .showering-zone-4 .text {
   font-size: 15px;
   text-align: left;
 }
-/* line 685, ../sass/pages/_water_therapy.scss */
+/* line 718, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .showering-zone-4 .btn {
   border: none;
   -webkit-border-radius: 0;
@@ -4543,18 +4609,18 @@ body.water-therapy .main #showering .showering-zone-4 .btn {
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
-/* line 694, ../sass/pages/_water_therapy.scss */
+/* line 727, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .showering-zone-4 .btn:hover {
   background: #39d8a9;
   color: #151d25;
 }
-/* line 700, ../sass/pages/_water_therapy.scss */
+/* line 733, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .showering-zone-5 {
   height: 488px;
   background: white;
   position: relative;
 }
-/* line 704, ../sass/pages/_water_therapy.scss */
+/* line 737, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .showering-zone-5 .showering-zone-5-content {
   position: absolute;
   left: 0;
@@ -4566,31 +4632,31 @@ body.water-therapy .main #showering .showering-zone-5 .showering-zone-5-content 
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 713, ../sass/pages/_water_therapy.scss */
+/* line 746, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .showering-zone-5 .panel-slideshow .slide-content .slide-text {
   margin-bottom: 30px;
 }
-/* line 718, ../sass/pages/_water_therapy.scss */
+/* line 751, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .showering-zone-5 .panel-slideshow .slideshow-label a {
   background: #39d8a9;
 }
-/* line 720, ../sass/pages/_water_therapy.scss */
+/* line 753, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .showering-zone-5 .panel-slideshow .slideshow-label a:hover {
   background: #151d25;
 }
-/* line 728, ../sass/pages/_water_therapy.scss */
+/* line 761, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology {
   background-image: url(../images/water_therapy/shower-technology.jpg);
   background-position: top center;
   background-size: cover;
   padding-top: 140px;
 }
-/* line 733, ../sass/pages/_water_therapy.scss */
+/* line 766, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-sections {
   max-width: 1055px;
   margin: 0 auto;
 }
-/* line 738, ../sass/pages/_water_therapy.scss */
+/* line 771, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-menu h3 {
   color: #39d8a9;
   text-transform: uppercase;
@@ -4598,7 +4664,7 @@ body.water-therapy .main #shower-technology .shower-technology-menu h3 {
   text-align: center;
   letter-spacing: 0.17em;
 }
-/* line 746, ../sass/pages/_water_therapy.scss */
+/* line 779, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,161c23+100 */
   background: #000000;
@@ -4614,15 +4680,15 @@ body.water-therapy .main #shower-technology .shower-technology-description {
   color: white;
   padding: 40px;
 }
-/* line 755, ../sass/pages/_water_therapy.scss */
+/* line 788, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .image {
   text-align: center;
 }
-/* line 757, ../sass/pages/_water_therapy.scss */
+/* line 790, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .image img {
   margin: 0 auto;
 }
-/* line 761, ../sass/pages/_water_therapy.scss */
+/* line 794, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description h3 {
   color: #39d8a9;
   text-transform: uppercase;
@@ -4681,5 +4747,861 @@ body.water-therapy .main #shower-technology .shower-technology-description h3 {
   100% {
     opacity: 0;
     visibility: hidden;
+  }
+}
+@-webkit-keyframes slide_in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(1200px, 0, 0);
+    -moz-transform: translate3d(1200px, 0, 0);
+    -ms-transform: translate3d(1200px, 0, 0);
+    -o-transform: translate3d(1200px, 0, 0);
+    transform: translate3d(1200px, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-moz-keyframes slide_in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(1200px, 0, 0);
+    -moz-transform: translate3d(1200px, 0, 0);
+    -ms-transform: translate3d(1200px, 0, 0);
+    -o-transform: translate3d(1200px, 0, 0);
+    transform: translate3d(1200px, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-ms-keyframes slide_in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(1200px, 0, 0);
+    -moz-transform: translate3d(1200px, 0, 0);
+    -ms-transform: translate3d(1200px, 0, 0);
+    -o-transform: translate3d(1200px, 0, 0);
+    transform: translate3d(1200px, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slide_in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(1200px, 0, 0);
+    -moz-transform: translate3d(1200px, 0, 0);
+    -ms-transform: translate3d(1200px, 0, 0);
+    -o-transform: translate3d(1200px, 0, 0);
+    transform: translate3d(1200px, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes slide_out {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(-1200px, 0, 0);
+    -moz-transform: translate3d(-1200px, 0, 0);
+    -ms-transform: translate3d(-1200px, 0, 0);
+    -o-transform: translate3d(-1200px, 0, 0);
+    transform: translate3d(-1200px, 0, 0);
+  }
+}
+@-moz-keyframes slide_out {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(-1200px, 0, 0);
+    -moz-transform: translate3d(-1200px, 0, 0);
+    -ms-transform: translate3d(-1200px, 0, 0);
+    -o-transform: translate3d(-1200px, 0, 0);
+    transform: translate3d(-1200px, 0, 0);
+  }
+}
+@-ms-keyframes slide_out {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(-1200px, 0, 0);
+    -moz-transform: translate3d(-1200px, 0, 0);
+    -ms-transform: translate3d(-1200px, 0, 0);
+    -o-transform: translate3d(-1200px, 0, 0);
+    transform: translate3d(-1200px, 0, 0);
+  }
+}
+@keyframes slide_out {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(-1200px, 0, 0);
+    -moz-transform: translate3d(-1200px, 0, 0);
+    -ms-transform: translate3d(-1200px, 0, 0);
+    -o-transform: translate3d(-1200px, 0, 0);
+    transform: translate3d(-1200px, 0, 0);
+  }
+}
+@-webkit-keyframes flip_top_in {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: rotateX(74deg);
+    -moz-transform: rotateX(74deg);
+    -ms-transform: rotateX(74deg);
+    -o-transform: rotateX(74deg);
+    transform: rotateX(74deg);
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+}
+@-moz-keyframes flip_top_in {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: rotateX(74deg);
+    -moz-transform: rotateX(74deg);
+    -ms-transform: rotateX(74deg);
+    -o-transform: rotateX(74deg);
+    transform: rotateX(74deg);
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+}
+@-ms-keyframes flip_top_in {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: rotateX(74deg);
+    -moz-transform: rotateX(74deg);
+    -ms-transform: rotateX(74deg);
+    -o-transform: rotateX(74deg);
+    transform: rotateX(74deg);
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+}
+@keyframes flip_top_in {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: rotateX(74deg);
+    -moz-transform: rotateX(74deg);
+    -ms-transform: rotateX(74deg);
+    -o-transform: rotateX(74deg);
+    transform: rotateX(74deg);
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+}
+@-webkit-keyframes flip_top_out {
+  0% {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: rotateX(-106deg);
+    -moz-transform: rotateX(-106deg);
+    -ms-transform: rotateX(-106deg);
+    -o-transform: rotateX(-106deg);
+    transform: rotateX(-106deg);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: rotateX(-180deg);
+    -moz-transform: rotateX(-180deg);
+    -ms-transform: rotateX(-180deg);
+    -o-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+  }
+}
+@-moz-keyframes flip_top_out {
+  0% {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: rotateX(-106deg);
+    -moz-transform: rotateX(-106deg);
+    -ms-transform: rotateX(-106deg);
+    -o-transform: rotateX(-106deg);
+    transform: rotateX(-106deg);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: rotateX(-180deg);
+    -moz-transform: rotateX(-180deg);
+    -ms-transform: rotateX(-180deg);
+    -o-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+  }
+}
+@-ms-keyframes flip_top_out {
+  0% {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: rotateX(-106deg);
+    -moz-transform: rotateX(-106deg);
+    -ms-transform: rotateX(-106deg);
+    -o-transform: rotateX(-106deg);
+    transform: rotateX(-106deg);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: rotateX(-180deg);
+    -moz-transform: rotateX(-180deg);
+    -ms-transform: rotateX(-180deg);
+    -o-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+  }
+}
+@keyframes flip_top_out {
+  0% {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: rotateX(-106deg);
+    -moz-transform: rotateX(-106deg);
+    -ms-transform: rotateX(-106deg);
+    -o-transform: rotateX(-106deg);
+    transform: rotateX(-106deg);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: rotateX(-180deg);
+    -moz-transform: rotateX(-180deg);
+    -ms-transform: rotateX(-180deg);
+    -o-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+  }
+}
+@-webkit-keyframes flip_left_in {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: rotateY(74deg);
+    -moz-transform: rotateY(74deg);
+    -ms-transform: rotateY(74deg);
+    -o-transform: rotateY(74deg);
+    transform: rotateY(74deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+}
+@-moz-keyframes flip_left_in {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: rotateY(74deg);
+    -moz-transform: rotateY(74deg);
+    -ms-transform: rotateY(74deg);
+    -o-transform: rotateY(74deg);
+    transform: rotateY(74deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+}
+@-ms-keyframes flip_left_in {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: rotateY(74deg);
+    -moz-transform: rotateY(74deg);
+    -ms-transform: rotateY(74deg);
+    -o-transform: rotateY(74deg);
+    transform: rotateY(74deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+}
+@keyframes flip_left_in {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: rotateY(74deg);
+    -moz-transform: rotateY(74deg);
+    -ms-transform: rotateY(74deg);
+    -o-transform: rotateY(74deg);
+    transform: rotateY(74deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+}
+@-webkit-keyframes flip_left_out {
+  0% {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: rotateY(-106deg);
+    -moz-transform: rotateY(-106deg);
+    -ms-transform: rotateY(-106deg);
+    -o-transform: rotateY(-106deg);
+    transform: rotateY(-106deg);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+  }
+}
+@-moz-keyframes flip_left_out {
+  0% {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: rotateY(-106deg);
+    -moz-transform: rotateY(-106deg);
+    -ms-transform: rotateY(-106deg);
+    -o-transform: rotateY(-106deg);
+    transform: rotateY(-106deg);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+  }
+}
+@-ms-keyframes flip_left_out {
+  0% {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: rotateY(-106deg);
+    -moz-transform: rotateY(-106deg);
+    -ms-transform: rotateY(-106deg);
+    -o-transform: rotateY(-106deg);
+    transform: rotateY(-106deg);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+  }
+}
+@keyframes flip_left_out {
+  0% {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: rotateY(-106deg);
+    -moz-transform: rotateY(-106deg);
+    -ms-transform: rotateY(-106deg);
+    -o-transform: rotateY(-106deg);
+    transform: rotateY(-106deg);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+  }
+}
+@-webkit-keyframes flip_right_in {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: rotateY(-106deg);
+    -moz-transform: rotateY(-106deg);
+    -ms-transform: rotateY(-106deg);
+    -o-transform: rotateY(-106deg);
+    transform: rotateY(-106deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+}
+@-moz-keyframes flip_right_in {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: rotateY(-106deg);
+    -moz-transform: rotateY(-106deg);
+    -ms-transform: rotateY(-106deg);
+    -o-transform: rotateY(-106deg);
+    transform: rotateY(-106deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+}
+@-ms-keyframes flip_right_in {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: rotateY(-106deg);
+    -moz-transform: rotateY(-106deg);
+    -ms-transform: rotateY(-106deg);
+    -o-transform: rotateY(-106deg);
+    transform: rotateY(-106deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+}
+@keyframes flip_right_in {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: rotateY(-106deg);
+    -moz-transform: rotateY(-106deg);
+    -ms-transform: rotateY(-106deg);
+    -o-transform: rotateY(-106deg);
+    transform: rotateY(-106deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+}
+@-webkit-keyframes flip_right_out {
+  0% {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: rotateY(74deg);
+    -moz-transform: rotateY(74deg);
+    -ms-transform: rotateY(74deg);
+    -o-transform: rotateY(74deg);
+    transform: rotateY(74deg);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+}
+@-moz-keyframes flip_right_out {
+  0% {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: rotateY(74deg);
+    -moz-transform: rotateY(74deg);
+    -ms-transform: rotateY(74deg);
+    -o-transform: rotateY(74deg);
+    transform: rotateY(74deg);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+}
+@-ms-keyframes flip_right_out {
+  0% {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: rotateY(74deg);
+    -moz-transform: rotateY(74deg);
+    -ms-transform: rotateY(74deg);
+    -o-transform: rotateY(74deg);
+    transform: rotateY(74deg);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+}
+@keyframes flip_right_out {
+  0% {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: rotateY(74deg);
+    -moz-transform: rotateY(74deg);
+    -ms-transform: rotateY(74deg);
+    -o-transform: rotateY(74deg);
+    transform: rotateY(74deg);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+}
+@-webkit-keyframes index_update_up {
+  0% {
+    z-index: 1;
+  }
+  50% {
+    z-index: 1;
+  }
+  51% {
+    z-index: 5;
+  }
+  100% {
+    z-index: 5;
+  }
+}
+@-moz-keyframes index_update_up {
+  0% {
+    z-index: 1;
+  }
+  50% {
+    z-index: 1;
+  }
+  51% {
+    z-index: 5;
+  }
+  100% {
+    z-index: 5;
+  }
+}
+@-ms-keyframes index_update_up {
+  0% {
+    z-index: 1;
+  }
+  50% {
+    z-index: 1;
+  }
+  51% {
+    z-index: 5;
+  }
+  100% {
+    z-index: 5;
+  }
+}
+@keyframes index_update_up {
+  0% {
+    z-index: 1;
+  }
+  50% {
+    z-index: 1;
+  }
+  51% {
+    z-index: 5;
+  }
+  100% {
+    z-index: 5;
+  }
+}
+@-webkit-keyframes index_update_down {
+  0% {
+    z-index: 5;
+  }
+  50% {
+    z-index: 5;
+  }
+  51% {
+    z-index: 1;
+  }
+  100% {
+    z-index: 1;
+  }
+}
+@-moz-keyframes index_update_down {
+  0% {
+    z-index: 5;
+  }
+  50% {
+    z-index: 5;
+  }
+  51% {
+    z-index: 1;
+  }
+  100% {
+    z-index: 1;
+  }
+}
+@-ms-keyframes index_update_down {
+  0% {
+    z-index: 5;
+  }
+  50% {
+    z-index: 5;
+  }
+  51% {
+    z-index: 1;
+  }
+  100% {
+    z-index: 1;
+  }
+}
+@keyframes index_update_down {
+  0% {
+    z-index: 5;
+  }
+  50% {
+    z-index: 5;
+  }
+  51% {
+    z-index: 1;
+  }
+  100% {
+    z-index: 1;
   }
 }

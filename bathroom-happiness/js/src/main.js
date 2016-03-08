@@ -157,7 +157,8 @@ var player = {
     playerVars: {
       showinfo: 0,
       modestbranding: 0,
-      rel: 0
+      rel: 0,
+      origin: 'reece-responsive.trout.com.au'
     },
     autoplay: false,
     loop: false,
@@ -536,36 +537,60 @@ var bathroomHappiness = {
       arrows: false,
       dots: true
     });
-    $('#showering .showering-slider').slick({
-      arrows: true,
-      dots: false,
-      appendArrows: $('.showering-slider-buttons')
-    });
+    /*$('#showering .showering-slider').each(function(){
+      var $arrows = $(this).parent().find('.showering-slider-buttons');
+      $(this).slick({
+        arrows: true,
+        dots: false,
+        appendArrows: $arrows
+      });
+    });*/
     $('.panel-slideshow').each(function () {
       var $arrows = $(this).find('.slideshow-buttons');
-      $(this).find('.slideshow-container').slick({
-        appendArrows: $arrows,
-        responsive:[
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            infinite: true
-          }
-        },
-        {
-          breakpoint: 460,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true
-          }
-        }]
-      });
+      if($(this).find('.showering-slider').length > 0){
+        $(this).find('.showering-slider').slick({
+          arrows: true,
+          dots: false,
+          appendArrows: $arrows
+        });
+      }
+      if($(this).find('.slideshow-container').length > 0){
+        $(this).find('.slideshow-container').slick({
+          appendArrows: $arrows,
+          responsive:[
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              infinite: true
+            }
+          },
+          {
+            breakpoint: 460,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true
+            }
+          }]
+        });
+      }
+    });
+    var currentSection = 1;
+    var s = 0;
+    var containerWidth = $('.showering-intro-wrap').width();
+    $('.showering-zones-section').each(function(){
+      $(this).css({
+        transform: 'translate3d('+(-1 * (s) * containerWidth )+'px,0,0)'        
+      })
+      s=s+1;
     });
     $('.showering-menu a').on('click', function(){
       var section = $(this).data('section');
+      $('.showering-menu a').removeClass('active')
+      $(this).addClass('active');
+      currentSection = section;
       var next = (section * 1) + 1;
       var prev = (section * 1) - 1;
       if(next > $('.showering-zones-section').length){
@@ -574,11 +599,24 @@ var bathroomHappiness = {
       if(prev == 0){
         prev = $('.showering-zones-section').length;
       }
+      var containerWidth = $('.showering-intro-wrap').width();
+      
+      $('.showering-zones-section').removeClass('current prev next');
       $('.showering-zones-section-'+section).addClass('current');
       $('.showering-zones-section-'+next).addClass('next');
       $('.showering-zones-section-'+prev).addClass('prev');
+     /* $('.showering-zones-section-'+prev).css({
+        transform         : 'translate3d('+(-1 * prev * containerWidth )+'px,0,0)'        
+      });
+      $('.showering-zones-section-'+section).css({
+        transform: 'translate3d('+(-1 * (section-1) * containerWidth )+'px,0,0)'        
+      });
+      $('.showering-zones-section-'+next).css({
+        transform         : 'translate3d('+(-1 * (next-2) * containerWidth )+'px,0,0)'
+      });
+      */
       return false;
-    });
+    });    
     $(window).on('scroll', function(){
       if(deviceMobile){
         if($(window).scrollTop() >= $('.submenu-wrap').offset().top){

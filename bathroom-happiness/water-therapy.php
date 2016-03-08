@@ -418,12 +418,14 @@
         </section>
         <section id="showering">
           <div class="container-fluid">
-            <div class="row">
-              <div class="col-xs-12">
-                <div class="showering-intro">
-                  <h2>showering</h2>
-                  <p>Introduce showering and the power of personal renewal. Enliven the senses, reinvigorate the soul or float away in total bliss. </p>
-                </div>                
+            <div class="showering-intro-wrap">
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="showering-intro">
+                    <h2>showering</h2>
+                    <p>Introduce showering and the power of personal renewal. Enliven the senses, reinvigorate the soul or float away in total bliss. </p>
+                  </div>                
+                </div>
               </div>
             </div>
             <div class="showering-menu-wrap">              
@@ -431,12 +433,12 @@
                 <div class="col-sm-6">
                   <div class="showering-menu">
                     <ul class="list-unstyled">
-                      <li><a href="#" class="active">Wet Zone</a></li>
-                      <li><a href="#">Enclosed</a></li>
-                      <li><a href="#">Walk In</a></li>
-                      <li><a href="#">Double</a></li>
-                      <li><a href="#">Outdoor</a></li>
-                      <li><a href="#">Shower Bath</a></li>
+                      <li><a href="#" class="active" data-section="1">Wet Zone</a></li>
+                      <li><a href="#" data-section="2">Enclosed</a></li>
+                      <li><a href="#" data-section="3">Walk In</a></li>
+                      <li><a href="#" data-section="4">Double</a></li>
+                      <li><a href="#" data-section="5">Outdoor</a></li>
+                      <li><a href="#" data-section="6">Shower Bath</a></li>
                     </ul>
                   </div>
                 </div>
@@ -460,7 +462,7 @@
                       <div class="showering-slider">
                         <div class="slide">
                           <figure class="image">
-                            <img src="images/water_therapy/showering-slider.jpg" alt="Showering">
+                            <img src="images/water_therapy/showering-slider-wet-zone.jpg" alt="Showering">
                           </figure>
                         </div>
                         <div class="slide">
@@ -642,7 +644,7 @@
                       <div class="showering-slider">
                         <div class="slide">
                           <figure class="image">
-                            <img src="images/water_therapy/showering-slider.jpg" alt="Showering">
+                            <img src="images/water_therapy/showering-slider-enclosed.jpg" alt="Showering">
                           </figure>
                         </div>
                         <div class="slide">
@@ -824,7 +826,7 @@
                       <div class="showering-slider">
                         <div class="slide">
                           <figure class="image">
-                            <img src="images/water_therapy/showering-slider.jpg" alt="Showering">
+                            <img src="images/water_therapy/showering-slider-walk-in.jpg" alt="Showering">
                           </figure>
                         </div>
                         <div class="slide">
@@ -1006,7 +1008,7 @@
                       <div class="showering-slider">
                         <div class="slide">
                           <figure class="image">
-                            <img src="images/water_therapy/showering-slider.jpg" alt="Showering">
+                            <img src="images/water_therapy/showering-slider-double.jpg" alt="Showering">
                           </figure>
                         </div>
                         <div class="slide">
@@ -1188,7 +1190,7 @@
                       <div class="showering-slider">
                         <div class="slide">
                           <figure class="image">
-                            <img src="images/water_therapy/showering-slider.jpg" alt="Showering">
+                            <img src="images/water_therapy/showering-slider-outdoor.jpg" alt="Showering">
                           </figure>
                         </div>
                         <div class="slide">
@@ -1370,7 +1372,7 @@
                       <div class="showering-slider">
                         <div class="slide">
                           <figure class="image">
-                            <img src="images/water_therapy/showering-slider.jpg" alt="Showering">
+                            <img src="images/water_therapy/showering-slider-shower-bath.jpg" alt="Showering">
                           </figure>
                         </div>
                         <div class="slide">

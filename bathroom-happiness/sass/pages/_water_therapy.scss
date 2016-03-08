@@ -712,10 +712,10 @@ body.water-therapy{
 						@include animation(slide_out 1s ease-out forwards);						
 					}
 					.showering-zone-2{
-						@include animation(flip_left_out 1s ease-out 0.8s forwards);						
+						//@include animation(flip_left_out 1s ease-out 0.8s forwards);						
 					}
 					.showering-zone-3{						
-						@include animation(flip_right_out 1s ease-out 0.5s forwards);						
+						//@include animation(flip_right_out 1s ease-out 0.5s forwards);						
 					}
 					&.current{
 						//opacity: 1;
@@ -725,11 +725,11 @@ body.water-therapy{
 						}
 						.showering-zone-2
 						{
-							@include animation(flip_left_in 1s ease-out 0.8s forwards);
+						//	@include animation(flip_left_in 1s ease-out 0.8s forwards);
 						}
 						.showering-zone-3
 						{
-							@include animation(flip_right_in 1s ease-out 0.5s forwards);
+						//	@include animation(flip_right_in 1s ease-out 0.5s forwards);
 						}
 					}
 				}

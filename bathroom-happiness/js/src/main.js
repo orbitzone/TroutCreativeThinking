@@ -658,7 +658,8 @@ var bathroomHappiness = {
           $('.submenu').removeClass('fixed');
         }
       }
-      if($(window).scrollTop() >= $('.showering-zones-sections').offset().top){
+      var menuTopOffset = $('.showering-menu').offset().top + $('.showering-menu').height();
+      if($(window).scrollTop() >= menuTopOffset){
         if($(window).scrollTop() >= ($('#shower-technology').offset().top - 90 )){
           $('.scrolling-menu-wrap').removeClass('fixed');
           $('.scrolling-menu-list, .scrolling-menu-wrap').removeClass('active');

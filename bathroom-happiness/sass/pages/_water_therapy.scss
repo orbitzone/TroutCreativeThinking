@@ -697,6 +697,17 @@ body.water-therapy{
 					@include perspective(2000px);
 					@include animation(index_update_down 1s ease-out forwards);
 					//@include transition(1s all ease-in-out);
+					.showering-zone-1,
+					.showering-zone-2,
+					.showering-zone-3,
+					.showering-zone-4,
+					.showering-zone-5,
+					.showering-zone-6
+					{
+						-webkit-backface-visibility: hidden;
+						-moz-backface-visibility: hidden;
+						backface-visibility: hidden;
+					}
 					.showering-zone-1{
 						@include animation(slide_out 1s ease-out forwards);						
 					}

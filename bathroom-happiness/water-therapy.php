@@ -420,6 +420,21 @@
           </div><!-- /#water-therapy -->
         </section>
         <section id="showering">
+          <div class="scrolling-menu-wrap">
+            <div class="scrolling-menu-list">
+              <ul class="list-unstyled">
+                <li><a href="#" class="active" data-section="1">Wet Zone</a></li>
+                <li><a href="#" data-section="2">Enclosed</a></li>
+                <li><a href="#" data-section="3">Walk In</a></li>
+                <li><a href="#" data-section="4">Double</a></li>
+                <li><a href="#" data-section="5">Outdoor</a></li>
+                <li><a href="#" data-section="6">Shower Bath</a></li>
+              </ul>                
+            </div>
+            <div class="scrolling-menu">
+              <svg class="icon shape-soft-rain"><use xlink:href="#shape-soft-rain"></use></svg>
+            </div>            
+          </div>
           <div class="container-fluid">
             <div class="showering-intro-wrap">
               <div class="row">
@@ -443,9 +458,6 @@
                       <li><a href="#" data-section="5">Outdoor</a></li>
                       <li><a href="#" data-section="6">Shower Bath</a></li>
                     </ul>
-                    <div class="scrolling-menu">
-                      <svg class="icon shape-soft-rain"><use xlink:href="#shape-soft-rain"></use></svg>
-                    </div>
                   </div>
                 </div>
                 <div class="col-sm-6">

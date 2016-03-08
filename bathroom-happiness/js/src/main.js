@@ -595,9 +595,10 @@ var bathroomHappiness = {
         $(this).find('.showering-zone-4, .showering-zone-5').outerHeight(sectionBottomHeight);
       });      
     }).resize();
-    $('.showering-menu a').on('click', function(){
+    $('.showering-menu a, .scrolling-menu-list a').on('click', function(){
       var section = $(this).data('section');
-      $('.showering-menu a').removeClass('active')
+      $('.showering-menu a, .scrolling-menu-list a').removeClass('active');
+      $('.scrolling-menu-list').removeClass('active');
       $(this).addClass('active');
       $('.showering-description .box-content').removeClass('active');
       $('.showering-description .box-content-'+section).addClass('active');
@@ -618,8 +619,8 @@ var bathroomHappiness = {
       $('.showering-zones-section-'+prev).addClass('prev');
       return false;
     });
-    $('.scrolling-menu').on('click', function(){
-      $('.showering-menu').toggleClass('fixed');
+    $('.scrolling-menu-wrap .scrolling-menu').on('click', function(){
+      $('.scrolling-menu-wrap .scrolling-menu-list').toggleClass('active');
     });
     $(window).on('scroll', function(){
       if(deviceMobile){
@@ -635,6 +636,15 @@ var bathroomHappiness = {
           $('.submenu-wrap').height('');
           $('.submenu').removeClass('fixed');
         }
+      }
+      if($(window).scrollTop() >= $('.showering-menu').offset().top){
+        if($(window).scrollTop() >= ($('#shower-technology').offset().top - 90 - ($(window).height()/2))){
+          $('.scrolling-menu-wrap').removeClass('fixed');
+        }else{
+          $('.scrolling-menu-wrap').addClass('fixed');
+        }
+      }else{
+        $('.scrolling-menu-wrap').removeClass('fixed');
       }
     });
   }

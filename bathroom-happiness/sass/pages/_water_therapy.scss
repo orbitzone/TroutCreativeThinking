@@ -810,8 +810,10 @@ body.water-therapy{
 				}
 			}//.showering-zone-4
 			.showering-zone-5{
+				padding-top: 58px;
 				@media (min-width: $screen-md){
 					height: 488px;					
+					padding-top: 0;
 				}
 				background: white;
 				position: relative;

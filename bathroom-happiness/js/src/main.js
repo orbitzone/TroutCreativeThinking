@@ -587,7 +587,13 @@ var bathroomHappiness = {
           transform: 'translate3d('+(-1 * (s) * containerWidth )+'px,0,0)'        
         })
         s=s+1;
-      });
+        $(this).find('.showering-zone-4, .showering-zone-5').height('auto');
+        var sectionBottomHeight = $(this).find('.showering-zone-4').outerHeight();
+        if(sectionBottomHeight < $(this).find('.showering-zone-5').outerHeight()){
+          sectionBottomHeight = $(this).find('.showering-zone-5').outerHeight();
+        }
+        $(this).find('.showering-zone-4, .showering-zone-5').outerHeight(sectionBottomHeight);
+      });      
     }).resize();
     $('.showering-menu a').on('click', function(){
       var section = $(this).data('section');

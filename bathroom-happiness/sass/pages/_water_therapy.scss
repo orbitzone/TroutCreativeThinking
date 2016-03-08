@@ -582,15 +582,17 @@ body.water-therapy{
 			}
 			.scrolling-menu{
 				cursor: pointer;
-				width: 45px;
-		    height: 45px;
-		    border-radius: 100%;
+				border-radius: 100%;
 		    margin: 0 auto;
 		    text-align: center;
 		    background: $water-therapy-blue;
 		    margin: 0 auto;
 		    position: relative;
 		    z-index: 2;
+		    //width: 45px;
+		    //height: 45px;
+		    width: 90px;
+	    	height: 90px;
 		    @media (min-width: $screen-sm){
 		    	width: 90px;
 		    	height: 90px;
@@ -598,9 +600,12 @@ body.water-therapy{
 		    .icon{
 		    	fill: $water-therapy-green;
 		    	position: relative;
-		    	width: 20px;
+		    	/*width: 20px;
 		    	height: 20px;
-		    	top: 15px;
+		    	top: 15px;*/
+		    	width: 40px;
+	    		height: 40px;
+	    		top: 30px;
 		    	@media (min-width: $screen-sm){
 		    		width: 40px;
 		    		height: 40px;

@@ -78,13 +78,15 @@ var playerManager = {
     }else{
       return false;
     }*/
-    var video = this.players[container].player;
-    var settings = this.players[container].settings;
-    if(typeof video.playVideo !== "undefined"){
-      if(settings.mute){
-        video.mute();
+    if(this.exists(container)){
+      var video = this.players[container].player;
+      var settings = this.players[container].settings;
+      if(typeof video.playVideo !== "undefined"){
+        if(settings.mute){
+          video.mute();
+        }
+        video.playVideo();      
       }
-      video.playVideo();      
     }
   },
   pause: function(container){
@@ -380,7 +382,7 @@ var bathroomHappiness = {
       
     };
     if(!isMobile.any()){
-      //loadNext(0);
+      loadNext(0);
     }else{
       $('#water-therapy-video').addClass('ready');
       if(isMobile.any()){
@@ -644,9 +646,10 @@ var bathroomHappiness = {
       $('.scrolling-menu-wrap .scrolling-menu-list, .scrolling-menu-wrap').toggleClass('active');
     });
     $(window).on('scroll', function(){
+      var scrollTop = $(window).scrollTop();
       if(deviceMobile){
-        if($(window).scrollTop() >= $('.submenu-wrap').offset().top){
-          if($(window).scrollTop() <= $('#water-therapy-content .shower-image').offset().top){
+        if(scrollTop >= $('.submenu-wrap').offset().top){
+          if(scrollTop <= $('#water-therapy-content .shower-image').offset().top){
             $('.submenu-wrap').height($('.submenu').height());
             $('.submenu').addClass('fixed');  
           }else{
@@ -657,10 +660,36 @@ var bathroomHappiness = {
           $('.submenu-wrap').height('');
           $('.submenu').removeClass('fixed');
         }
+      }else{
+        if(scrollTop >= ($('#water-therapy-video-wrap').offset().top + $('#water-therapy-video-wrap').height() - 20)){
+          if(!$('#water-therapy-video-wrap').hasClass('paused')){
+            $('#water-therapy-video-wrap').addClass('paused');
+            playerManager.pause('water-therapy-video');
+          }
+        }else{
+          if($('#water-therapy-video-wrap').hasClass('paused')){
+            $('#water-therapy-video-wrap').removeClass('paused');
+            playerManager.play('water-therapy-video');
+          }
+        }
+        if(scrollTop >= ($('#water-therapy .videos').offset().top + $('#water-therapy .videos').height() - 20)){
+          if(!$('#water-therapy .videos').hasClass('paused')){
+            $('#water-therapy .videos').addClass('paused');
+            playerManager.pause('water-therapy-therapeutic-video');
+            playerManager.pause('water-therapy-relaxation-video');
+            playerManager.pause('water-therapy-rejuvenation-video');
+          }
+        }else{
+          if($('#water-therapy .videos').hasClass('paused')){
+            $('#water-therapy .videos').removeClass('paused');
+            var section = $('#water-therapy').attr('class');
+            playerManager.play('water-therapy-'+section+'-video');
+          }
+        }
       }
       var menuTopOffset = $('.showering-menu').offset().top + $('.showering-menu').height();
-      if($(window).scrollTop() >= menuTopOffset){
-        if($(window).scrollTop() >= ($('#shower-technology').offset().top - 90 )){
+      if(scrollTop >= menuTopOffset){
+        if(scrollTop >= ($('#shower-technology').offset().top - 90 )){
           $('.scrolling-menu-wrap').removeClass('fixed');
           $('.scrolling-menu-list, .scrolling-menu-wrap').removeClass('active');
         }else{

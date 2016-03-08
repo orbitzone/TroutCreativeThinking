@@ -582,6 +582,7 @@ var bathroomHappiness = {
       var s = 0;
       var containerWidth = $('.showering-intro-wrap').width();
       $('.showering-zones-section').each(function(){
+        $(this).find('.showering-zone-1 .showering-slider .image').width(containerWidth);
         $(this).css({
           transform: 'translate3d('+(-1 * (s) * containerWidth )+'px,0,0)'        
         })

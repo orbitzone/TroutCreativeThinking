@@ -645,6 +645,9 @@ var bathroomHappiness = {
     $('.scrolling-menu-wrap .scrolling-menu').on('click', function(){
       $('.scrolling-menu-wrap .scrolling-menu-list, .scrolling-menu-wrap').toggleClass('active');
     });
+    if(isIE()){
+      $('.showering-zones-section, .showering-zone-1, .showering-zone-2, .showering-zone-3').addClass('ie');
+    }
     $(window).on('scroll', function(){
       var scrollTop = $(window).scrollTop();
       if(deviceMobile){

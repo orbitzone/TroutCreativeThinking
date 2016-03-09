@@ -765,7 +765,9 @@ body.water-therapy{
 					float: left;
 					width: 100%;
 					position: relative;
-					z-index: 1;
+					&.ie{
+						z-index: 1;
+					}
 					@include animation(index_update_down 1s ease-out forwards);
 					@include transform-style(preserve-3d);
 					@media (min-width: $screen-sm){
@@ -788,6 +790,7 @@ body.water-therapy{
 						-webkit-backface-visibility: hidden;
 						-moz-backface-visibility: hidden;
 						backface-visibility: hidden;
+						@include transform(translate3d(0,0,0));
 						@include transform-style(preserve-3d);
 						@include transform(translateZ(0));
 					}
@@ -796,35 +799,56 @@ body.water-therapy{
 						@include transform-style(preserve-3d);
 					}
 					.showering-zone-1{
-						opacity: 0;				
 						@include animation(slide_out 1s ease-in-out forwards);
+						&.ie{
+							opacity: 0;
+						}
 					}
 					.showering-zone-2{
-						opacity: 0;
-						@include animation(flip_left_out 1s ease-out 0.8s forwards);						
+						@include animation(flip_left_out 1s ease-out 0.8s forwards);
+						&.ie{
+							opacity: 0;
+							@include animation(none);
+							@include transition(1s all ease-out);
+						}
 					}
 					.showering-zone-3{						
-						opacity: 0;
 						@include animation(flip_right_out 1s ease-out 0.5s forwards);						
+						&.ie{
+							opacity: 0;
+							@include animation(none);
+							@include transition(1s all ease-out);
+						}
 					}
 					&.current{
 						//opacity: 1;
-						z-index: 5;
 						@include animation(index_update_up 1s ease-out forwards);
+						&.ie{
+							z-index: 5;
+						}
 						.showering-zone-1{
-							opacity: 1;
 							@include transform(translate3d(0,0,0));
 							@include animation(slide_in 1s ease-in-out forwards);
+							&.ie{
+								opacity: 1;
+								@include animation(none);
+							}
 						}
 						.showering-zone-2
 						{
-							opacity: 1;
 							@include animation(flip_left_in 1s ease-out 0.8s forwards);
+							&.ie{
+								opacity: 1;
+								@include animation(none);
+							}
 						}
 						.showering-zone-3
 						{
-							opacity: 1;
 							@include animation(flip_right_in 1s ease-out 0.5s forwards);
+							&.ie{
+								opacity: 1;
+								@include animation(none);
+							}
 						}
 					}
 				}
@@ -1140,11 +1164,13 @@ body.water-therapy{
 		@include transform(rotateX(74deg));
 	}
 	100%{
+		opacity: 1;
 		@include transform(rotateX(0deg));	
 	}
 }
 @include keyframes(flip_top_out){
 	0%{
+		opacity: 1;
 		@include transform(rotateX(0deg));	
 	}
 	50%{
@@ -1166,11 +1192,13 @@ body.water-therapy{
 		@include transform(rotateY(74deg));
 	}
 	100%{
+		opacity: 1;
 		@include transform(rotateY(0deg));	
 	}
 }
 @include keyframes(flip_left_out){
 	0%{
+		opacity: 1;
 		@include transform(rotateY(0deg));	
 	}
 	50%{
@@ -1192,11 +1220,13 @@ body.water-therapy{
 		@include transform(rotateY(-106deg));
 	}
 	100%{
+		opacity: 1;
 		@include transform(rotateY(0deg));	
 	}
 }
 @include keyframes(flip_right_out){
 	0%{
+		opacity: 1;
 		@include transform(rotateY(0deg));	
 	}
 	50%{

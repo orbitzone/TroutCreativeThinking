@@ -4532,7 +4532,7 @@ body.water-therapy .main #showering .showering-menu {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#37d1a4', endColorstr='#41f3bf',GradientType=0 );
   /* IE6-9 */
-  padding: 30px 20px 10px;
+  padding: 30px 20px 14px;
   -moz-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
   -webkit-transition: all 0.5s ease-out;
@@ -5007,7 +5007,7 @@ body.water-therapy .main #showering .showering-zone-3 .box .text {
   font-weight: bold;
   font-size: 20px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 40px;
 }
 @media (min-width: 768px) {
   /* line 930, ../sass/pages/_water_therapy.scss */

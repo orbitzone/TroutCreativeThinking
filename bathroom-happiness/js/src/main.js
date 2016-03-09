@@ -633,7 +633,7 @@ var bathroomHappiness = {
       var containerWidth = $('.showering-intro-wrap').width();
       
       $('html, body').animate({
-        scrollTop: $('.showering-description').offset().top - 25,
+        scrollTop: $('.showering-description').offset().top - 29,
       },500, function(){
         $('.showering-zones-section').removeClass('current prev next');
         $('.showering-zones-section-'+section).addClass('current');

@@ -1656,23 +1656,23 @@
           <div class="container-fluid">
             <div class="shower-technology-sections">
               <div class="row">
-                <div class="col-sm-6">
+                <div class="col-lg-6">
                   <div class="shower-technology-menu">
                     <h3>Shower Technology</h3>
                     <ul class="list-unstyled">
-                      <li><a href="#"><svg class="icon shape-waterfall"><use xlink:href="#shape-waterfall"></use></svg><span>Waterfall</span></a></li>
-                      <li><a href="#"><svg class="icon shape-body-spray"><use xlink:href="#shape-body-spray"></use></svg><span>Body Spray</span></a></li>
-                      <li><a href="#"><svg class="icon shape-led"><use xlink:href="#shape-led"></use></svg><span>Led</span></a></li>
-                      <li><a href="#"><svg class="icon shape-airdrop"><use xlink:href="#shape-airdrop"></use></svg><span>Air Drop</span></a></li>
-                      <li><a href="#"><svg class="icon shape-turbine"><use xlink:href="#shape-turbine"></use></svg><span>Turbine</span></a></li>
-                      <li><a href="#"><svg class="icon shape-raindance"><use xlink:href="#shape-raindance"></use></svg><span>Raindance</span></a></li>
-                      <li><a href="#"><svg class="icon shape-soft-rain"><use xlink:href="#shape-soft-rain"></use></svg><span>Croma Soft Rain</span></a></li>
-                      <li><a href="#"><svg class="icon shape-intense-rain"><use xlink:href="#shape-intense-rain"></use></svg><span>Croma Intense Rain</span></a></li>
-                      <li><a href="#"><svg class="icon shape-massage"><use xlink:href="#shape-massage"></use></svg><span>Croma Massage</span></a></li>
+                      <li><a href="#" data-section="waterfall" class="active"><svg class="icon shape-waterfall"><use xlink:href="#shape-waterfall"></use></svg><span>Waterfall</span></a></li>
+                      <li><a href="#" data-section="body-spray"><svg class="icon shape-body-spray"><use xlink:href="#shape-body-spray"></use></svg><span>Body Spray</span></a></li>
+                      <li><a href="#" data-section="led"><svg class="icon shape-led"><use xlink:href="#shape-led"></use></svg><span>Led</span></a></li>
+                      <li><a href="#" data-section="airdrop"><svg class="icon shape-airdrop"><use xlink:href="#shape-airdrop"></use></svg><span>Air Drop</span></a></li>
+                      <li><a href="#" data-section="turbine"><svg class="icon shape-turbine"><use xlink:href="#shape-turbine"></use></svg><span>Turbine</span></a></li>
+                      <li><a href="#" data-section="raindance"><svg class="icon shape-raindance"><use xlink:href="#shape-raindance"></use></svg><span>Raindance</span></a></li>
+                      <li><a href="#" data-section="soft-rain"><svg class="icon shape-soft-rain"><use xlink:href="#shape-soft-rain"></use></svg><span>Croma Soft Rain</span></a></li>
+                      <li><a href="#" data-section="intense-rain"><svg class="icon shape-intense-rain"><use xlink:href="#shape-intense-rain"></use></svg><span>Croma Intense Rain</span></a></li>
+                      <li><a href="#" data-section="massage"><svg class="icon shape-massage"><use xlink:href="#shape-massage"></use></svg><span>Croma Massage</span></a></li>
                     </ul>
                   </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-lg-6">
                   <div class="shower-technology-description">
                     <div class="shower-technology-flip">
                       <div class="front">
@@ -1694,7 +1694,8 @@
                       <div class="back">
                         <div id="st-waterfall-video-wrap" class="video-iframe-wrap video" data-video="BIAWhMhhY58">
                             <figure id="st-waterfall-video"></figure>          
-                          </div>
+                        </div>
+                        <button type="button" class="close-video"><i class="icon-close"></i><span class="sr-only">Close</span></button>
                       </div>                    
                     </div>
                   </div>

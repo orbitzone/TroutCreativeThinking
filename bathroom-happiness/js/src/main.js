@@ -557,9 +557,38 @@ var bathroomHappiness = {
         });
       }
     });
+    var video = $('#st-waterfall-video-wrap').data('video');
+    var vars = {
+      showinfo: 0,
+      modestbranding: 0,
+      rel: 0,
+      controls: 0
+    };
+    player.init({
+      container: 'st-waterfall-video',
+      videoId: video, 
+      autoplay: false,
+      loop: false,
+      onReady: function(){  
+        //$('#water-therapy-full-video').parent().addClass('ready');        
+      },
+      onPlaying: function(){  
+        //$('#banner .play-full-video').addClass('playing');
+        //$('#full-video-popup').removeClass('hide'); 
+      },
+      onEnded: function(){
+        
+      },
+      onPaused: function(){
+        
+      },
+      playerVars: vars
+    });
     $('#shower-technology .shower-technology-menu a').on('click', function(){
-      $('.shower-technology-description').toggleClass('active');
-      var video = $('#st-waterfall-video-wrap').data('video');
+      $('#shower-technology .shower-technology-menu a').removeClass('active');
+      $(this).addClass('active');
+      var section = $(this).data('section');
+      var video = $('#st-'+section+'-video-wrap').data('video');
       var vars = {
           showinfo: 0,
           modestbranding: 0,
@@ -567,7 +596,7 @@ var bathroomHappiness = {
           controls: 0
         };
       player.init({
-        container: 'st-waterfall-video',
+        container: 'st-'+section+'-video',
         videoId: video, 
         autoplay: false,
         loop: false,
@@ -588,6 +617,14 @@ var bathroomHappiness = {
       });
       return false;
     });
+    $('#shower-technology .view-video').on('click', function(){
+      $('.shower-technology-description').toggleClass('active');
+      return false;
+    });
+    $('#shower-technology .close-video').on('click', function(){
+      $('.shower-technology-description').toggleClass('active');
+      return false;
+    });    
     var currentSection = 1;
     $(window).on('resize', function(){
       $('.panel-slideshow').each(function () {
@@ -627,6 +664,9 @@ var bathroomHappiness = {
         var sections = $('.grid-module-zones-section').length;
         $('.grid-module-zones-sections').width(containerWidth * sections);
         $('.grid-module-zones-section').width(containerWidth);
+
+        height = $('#shower-technology .shower-technology-description .front').outerHeight();
+        $('#shower-technology .shower-technology-description .shower-technology-flip, #shower-technology .shower-technology-description .back').height(height);
       }else{
         $('.grid-module-zones-sections').width('');
         $('.grid-module-zones-section').width('');

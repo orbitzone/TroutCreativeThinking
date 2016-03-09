@@ -517,8 +517,8 @@ var bathroomHappiness = {
       arrows: false,
       dots: true
     });
-    /*$('#showering .showering-slider').each(function(){
-      var $arrows = $(this).parent().find('.showering-slider-buttons');
+    /*$('#showering .grid-module-slider').each(function(){
+      var $arrows = $(this).parent().find('.grid-module-slider-buttons');
       $(this).slick({
         arrows: true,
         dots: false,
@@ -527,8 +527,8 @@ var bathroomHappiness = {
     });*/
     $('.panel-slideshow').each(function () {
       var $arrows = $(this).find('.slideshow-buttons');
-      if($(this).find('.showering-slider').length > 0){
-        $(this).find('.showering-slider').slick({
+      if($(this).find('.grid-module-slider').length > 0){
+        $(this).find('.grid-module-slider').slick({
           arrows: true,
           dots: false,
           appendArrows: $arrows
@@ -556,6 +556,37 @@ var bathroomHappiness = {
           }]
         });
       }
+    });
+    $('#shower-technology .shower-technology-menu a').on('click', function(){
+      $('.shower-technology-description').toggleClass('active');
+      var video = $('#st-waterfall-video-wrap').data('video');
+      var vars = {
+          showinfo: 0,
+          modestbranding: 0,
+          rel: 0,
+          controls: 0
+        };
+      player.init({
+        container: 'st-waterfall-video',
+        videoId: video, 
+        autoplay: false,
+        loop: false,
+        onReady: function(){  
+          //$('#water-therapy-full-video').parent().addClass('ready');        
+        },
+        onPlaying: function(){  
+          //$('#banner .play-full-video').addClass('playing');
+          //$('#full-video-popup').removeClass('hide'); 
+        },
+        onEnded: function(){
+          
+        },
+        onPaused: function(){
+          
+        },
+        playerVars: vars
+      });
+      return false;
     });
     var currentSection = 1;
     $(window).on('resize', function(){
@@ -590,73 +621,77 @@ var bathroomHappiness = {
       $('#water-therapy .videos iframe').height(height);
 
       var windowWidth = $(window).width();
-      var s = 0;
-      var containerWidth = $('.showering-intro-wrap').width();
+      var containerWidth = $('.grid-module-intro-wrap').width();
       
       if(windowWidth < 768){
-        var sections = $('.showering-zones-section').length;
-        $('.showering-zones-sections').width(containerWidth * sections);
-        $('.showering-zones-section').width(containerWidth);
+        var sections = $('.grid-module-zones-section').length;
+        $('.grid-module-zones-sections').width(containerWidth * sections);
+        $('.grid-module-zones-section').width(containerWidth);
       }else{
-        $('.showering-zones-sections').width('');
-        $('.showering-zones-section').width('');
+        $('.grid-module-zones-sections').width('');
+        $('.grid-module-zones-section').width('');
       }
-
-      $('.showering-zones-section').each(function(){
-        $(this).find('.showering-zone-1 .showering-slider img').width(containerWidth);
-        if(isIE() <= 9){
-          $(this).css({
-            transform: 'translate('+(-1 * (s) * containerWidth )+'px,0)'        
-          });
-        }else{
-          $(this).css({
-            transform: 'translate3d('+(-1 * (s) * containerWidth )+'px,0,0)'        
-          });  
-        }
-        
-        s=s+1;
-        $(this).find('.showering-zone-4, .showering-zone-5').height('auto');
-        var sectionBottomHeight = $(this).find('.showering-zone-4').outerHeight();
-        if(sectionBottomHeight < $(this).find('.showering-zone-5').outerHeight()){
-          sectionBottomHeight = $(this).find('.showering-zone-5').outerHeight();
-        }
-        $(this).find('.showering-zone-4, .showering-zone-5').outerHeight(sectionBottomHeight);
+      $('.grid-module-zones-sections').each(function(){
+        var s = 0;
+        $(this).find('.grid-module-zones-section').each(function(){
+          $(this).find('.grid-module-zone-1 .grid-module-slider img').width(containerWidth);
+          if(isIE() <= 9){
+            $(this).css({
+              transform: 'translate('+(-1 * (s) * containerWidth )+'px,0)'        
+            });
+          }else{
+            $(this).css({
+              transform: 'translate3d('+(-1 * (s) * containerWidth )+'px,0,0)'        
+            });  
+          }
+          
+          s=s+1;
+          $(this).find('.grid-module-zone-4, .grid-module-zone-5').height('auto');
+          var sectionBottomHeight = $(this).find('.grid-module-zone-4').outerHeight();
+          if(sectionBottomHeight < $(this).find('.grid-module-zone-5').outerHeight()){
+            sectionBottomHeight = $(this).find('.grid-module-zone-5').outerHeight();
+          }
+          $(this).find('.grid-module-zone-4, .grid-module-zone-5').outerHeight(sectionBottomHeight);
+        });
       });
     }).resize();
-    $('.showering-menu a, .scrolling-menu-list a').on('click', function(){
-      var section = $(this).data('section');
-      $('.showering-menu a, .scrolling-menu-list a').removeClass('active');
-      $('.scrolling-menu-list, .scrolling-menu-wrap').removeClass('active');
-      $('.showering-menu a[data-section='+section+'], .scrolling-menu-list a[data-section='+section+']').addClass('active');
-      $('.showering-description .box-content').removeClass('active');
-      $('.showering-description .box-content-'+section).addClass('active');
-      currentSection = section;
-      var next = (section * 1) + 1;
-      var prev = (section * 1) - 1;
-      if(next > $('.showering-zones-section').length){
-        next = 1;
-      }
-      if(prev == 0){
-        prev = $('.showering-zones-section').length;
-      }
-      var containerWidth = $('.showering-intro-wrap').width();
-      
-      $('html, body').animate({
-        scrollTop: $('.showering-description').offset().top - 29,
-      },500, function(){
-        $('.showering-zones-section').removeClass('current prev next');
-        $('.showering-zones-section-'+section).addClass('current');
-        $('.showering-zones-section-'+next).addClass('next');
-        $('.showering-zones-section-'+prev).addClass('prev');          
-      });
-      return false;
-    });
-    $('.scrolling-menu-wrap .scrolling-menu').on('click', function(){
-      $('.scrolling-menu-wrap .scrolling-menu-list, .scrolling-menu-wrap').toggleClass('active');
-    });
     if(isIE()){
-      $('.showering-zones-section, .showering-zone-1, .showering-zone-2, .showering-zone-3').addClass('ie');
+      $('.grid-module-zones-section, .grid-module-zone-1, .grid-module-zone-2, .grid-module-zone-3').addClass('ie');
     }
+    $('.grid-module').each(function(){
+      var $module = $(this);
+      $(this).find('.grid-module-menu a, .scrolling-menu-list a').on('click', function(){
+        var section = $(this).data('section');
+        $module.find('.grid-module-menu a, .scrolling-menu-list a').removeClass('active');
+        $module.find('.scrolling-menu-list, .scrolling-menu-wrap').removeClass('active');
+        $module.find('.grid-module-menu a[data-section='+section+'], .scrolling-menu-list a[data-section='+section+']').addClass('active');
+        $module.find('.grid-module-description .box-content').removeClass('active');
+        $module.find('.grid-module-description .box-content-'+section).addClass('active');
+        currentSection = section;
+        var next = (section * 1) + 1;
+        var prev = (section * 1) - 1;
+        if(next > $module.find('.grid-module-zones-section').length){
+          next = 1;
+        }
+        if(prev == 0){
+          prev = $module.find('.grid-module-zones-section').length;
+        }
+        var containerWidth = $module.find('.grid-module-intro-wrap').width();
+        
+        $('html, body').animate({
+          scrollTop: $module.find('.grid-module-description').offset().top - 29,
+        },500, function(){
+          $module.find('.grid-module-zones-section').removeClass('current prev next');
+          $module.find('.grid-module-zones-section-'+section).addClass('current');
+          $module.find('.grid-module-zones-section-'+next).addClass('next');
+          $module.find('.grid-module-zones-section-'+prev).addClass('prev');          
+        });
+        return false;
+      });
+      $(this).find('.scrolling-menu-wrap .scrolling-menu').on('click', function(){
+        $('.scrolling-menu-wrap .scrolling-menu-list, .scrolling-menu-wrap').toggleClass('active');
+      });
+    });
     $(window).on('scroll', function(){
       var scrollTop = $(window).scrollTop();
       if(deviceMobile){
@@ -699,18 +734,21 @@ var bathroomHappiness = {
           }
         }
       }
-      var menuTopOffset = $('.showering-menu').offset().top + $('.showering-menu').height();
-      if(scrollTop >= menuTopOffset){
-        if(scrollTop >= ($('#shower-technology').offset().top - 90 )){
-          $('.scrolling-menu-wrap').removeClass('fixed');
-          $('.scrolling-menu-list, .scrolling-menu-wrap').removeClass('active');
+      $('.grid-module').each(function(){
+        var menuTopOffset = $(this).find('.grid-module-menu').offset().top + $(this).find('.grid-module-menu').height();
+        var maxScroll = ($(this).offset().top - 90 + $(this).outerHeight() );
+        if(scrollTop >= menuTopOffset){
+          if(scrollTop >= maxScroll){
+            $(this).find('.scrolling-menu-wrap').removeClass('fixed');
+            $(this).find('.scrolling-menu-list, .scrolling-menu-wrap').removeClass('active');
+          }else{
+            $(this).find('.scrolling-menu-wrap').addClass('fixed');
+          }
         }else{
-          $('.scrolling-menu-wrap').addClass('fixed');
+          $(this).find('.scrolling-menu-wrap').removeClass('fixed');
+          $(this).find('.scrolling-menu-list, .scrolling-menu-wrap').removeClass('active');
         }
-      }else{
-        $('.scrolling-menu-wrap').removeClass('fixed');
-        $('.scrolling-menu-list, .scrolling-menu-wrap').removeClass('active');
-      }
+      });      
     });
   }
 };

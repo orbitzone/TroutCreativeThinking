@@ -87,22 +87,9 @@
                       <div class="section-content">
                          <figure class="section-1 section">
                           <div class="summary">
-                            <div class="icon">
-                              <svg version="1.1"
-                               xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="50px"
-                               viewBox="0 0 20 50" enable-background="new 0 0 20 50" xml:space="preserve">
-                              <path fill="#faea8b" fill-rule="evenodd" clip-rule="evenodd" d="M3.3,1.5h0.9c0.7,0,1.3,0.6,1.3,1.3v18.6c0,0.7-0.6,1.3-1.3,1.3H3.3
-                              c-0.7,0-1.3-0.6-1.3-1.3V2.8C2,2.1,2.6,1.5,3.3,1.5z M2,26.3v6.1c0,0.7,0.6,1.3,1.3,1.3h0.9c0.7,0,1.3-0.6,1.3-1.3v-6.1
-                              c0-0.7-0.6-1.3-1.3-1.3H3.3C2.6,25,2,25.6,2,26.3z M2,37.4v9.8c0,0.7,0.6,1.3,1.3,1.3h0.9c0.7,0,1.3-0.6,1.3-1.3v-9.8
-                              c0-0.7-0.6-1.3-1.3-1.3H3.3C2.6,36,2,36.6,2,37.4z M8.2,2.8v15c0,0.7,0.6,1.3,1.3,1.3h0.9c0.7,0,1.3-0.6,1.3-1.3v-15
-                              c0-0.7-0.6-1.3-1.3-1.3H9.6C8.8,1.5,8.2,2.1,8.2,2.8z M8.2,22.7v6.1c0,0.7,0.6,1.3,1.3,1.3h0.9c0.7,0,1.3-0.6,1.3-1.3v-6.1
-                              c0-0.7-0.6-1.3-1.3-1.3H9.6C8.8,21.3,8.2,21.9,8.2,22.7z M8.2,33.7v13.5c0,0.7,0.6,1.3,1.3,1.3h0.9c0.7,0,1.3-0.6,1.3-1.3V33.7
-                              c0-0.7-0.6-1.3-1.3-1.3H9.6C8.8,32.3,8.2,32.9,8.2,33.7z M14.5,28.6v18.6c0,0.7,0.6,1.3,1.3,1.3h0.9c0.7,0,1.3-0.6,1.3-1.3V28.6
-                              c0-0.7-0.6-1.3-1.3-1.3h-0.9C15.1,27.2,14.5,27.8,14.5,28.6z M14.5,17.5v6.1c0,0.7,0.6,1.3,1.3,1.3h0.9c0.7,0,1.3-0.6,1.3-1.3v-6.1
-                              c0-0.7-0.6-1.3-1.3-1.3h-0.9C15.1,16.2,14.5,16.8,14.5,17.5z M14.5,2.8v9.8c0,0.7,0.6,1.3,1.3,1.3h0.9c0.7,0,1.3-0.6,1.3-1.3V2.8
-                              c0-0.7-0.6-1.3-1.3-1.3h-0.9C15.1,1.5,14.5,2.1,14.5,2.8z"/>
-                              </svg>
-                            </div><!-- /.icon -->
+                            <div class="icon-wrap">
+                              <svg class="icon shape-therapeutic"><use xlink:href="#shape-therapeutic"></use></svg>
+                            </div><!-- /.icon-wrap -->
                             <h2>therapeutic</h2>
                             <div class="rte">
                               <p><b>Intro about the restorative effect and benefits of water.</b></p>
@@ -112,22 +99,9 @@
                         </figure>
                         <figure class="section-2 section">
                           <div class="summary">
-                            <div class="icon">
-                              <svg version="1.1"
-                               xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="50px"
-                               viewBox="0 0 20 50" enable-background="new 0 0 20 50" xml:space="preserve">
-                              <path fill="#faea8b" fill-rule="evenodd" clip-rule="evenodd" d="M3.3,1.5h0.9c0.7,0,1.3,0.6,1.3,1.3v18.6c0,0.7-0.6,1.3-1.3,1.3H3.3
-                              c-0.7,0-1.3-0.6-1.3-1.3V2.8C2,2.1,2.6,1.5,3.3,1.5z M2,26.3v6.1c0,0.7,0.6,1.3,1.3,1.3h0.9c0.7,0,1.3-0.6,1.3-1.3v-6.1
-                              c0-0.7-0.6-1.3-1.3-1.3H3.3C2.6,25,2,25.6,2,26.3z M2,37.4v9.8c0,0.7,0.6,1.3,1.3,1.3h0.9c0.7,0,1.3-0.6,1.3-1.3v-9.8
-                              c0-0.7-0.6-1.3-1.3-1.3H3.3C2.6,36,2,36.6,2,37.4z M8.2,2.8v15c0,0.7,0.6,1.3,1.3,1.3h0.9c0.7,0,1.3-0.6,1.3-1.3v-15
-                              c0-0.7-0.6-1.3-1.3-1.3H9.6C8.8,1.5,8.2,2.1,8.2,2.8z M8.2,22.7v6.1c0,0.7,0.6,1.3,1.3,1.3h0.9c0.7,0,1.3-0.6,1.3-1.3v-6.1
-                              c0-0.7-0.6-1.3-1.3-1.3H9.6C8.8,21.3,8.2,21.9,8.2,22.7z M8.2,33.7v13.5c0,0.7,0.6,1.3,1.3,1.3h0.9c0.7,0,1.3-0.6,1.3-1.3V33.7
-                              c0-0.7-0.6-1.3-1.3-1.3H9.6C8.8,32.3,8.2,32.9,8.2,33.7z M14.5,28.6v18.6c0,0.7,0.6,1.3,1.3,1.3h0.9c0.7,0,1.3-0.6,1.3-1.3V28.6
-                              c0-0.7-0.6-1.3-1.3-1.3h-0.9C15.1,27.2,14.5,27.8,14.5,28.6z M14.5,17.5v6.1c0,0.7,0.6,1.3,1.3,1.3h0.9c0.7,0,1.3-0.6,1.3-1.3v-6.1
-                              c0-0.7-0.6-1.3-1.3-1.3h-0.9C15.1,16.2,14.5,16.8,14.5,17.5z M14.5,2.8v9.8c0,0.7,0.6,1.3,1.3,1.3h0.9c0.7,0,1.3-0.6,1.3-1.3V2.8
-                              c0-0.7-0.6-1.3-1.3-1.3h-0.9C15.1,1.5,14.5,2.1,14.5,2.8z"/>
-                              </svg>
-                            </div><!-- /.icon -->
+                            <div class="icon-wrap">
+                              <svg class="icon shape-relaxation"><use xlink:href="#shape-relaxation"></use></svg>
+                            </div><!-- /.icon-wrap -->
                             <h2>relaxation</h2>
                             <div class="rte">
                               <p><b>Intro about the restorative effect and benefits of water.</b></p>
@@ -137,22 +111,9 @@
                         </figure>
                         <figure class="section-3 section">
                           <div class="summary">
-                            <div class="icon">
-                              <svg version="1.1"
-                               xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="50px"
-                               viewBox="0 0 20 50" enable-background="new 0 0 20 50" xml:space="preserve">
-                              <path fill="#faea8b" fill-rule="evenodd" clip-rule="evenodd" d="M3.3,1.5h0.9c0.7,0,1.3,0.6,1.3,1.3v18.6c0,0.7-0.6,1.3-1.3,1.3H3.3
-                              c-0.7,0-1.3-0.6-1.3-1.3V2.8C2,2.1,2.6,1.5,3.3,1.5z M2,26.3v6.1c0,0.7,0.6,1.3,1.3,1.3h0.9c0.7,0,1.3-0.6,1.3-1.3v-6.1
-                              c0-0.7-0.6-1.3-1.3-1.3H3.3C2.6,25,2,25.6,2,26.3z M2,37.4v9.8c0,0.7,0.6,1.3,1.3,1.3h0.9c0.7,0,1.3-0.6,1.3-1.3v-9.8
-                              c0-0.7-0.6-1.3-1.3-1.3H3.3C2.6,36,2,36.6,2,37.4z M8.2,2.8v15c0,0.7,0.6,1.3,1.3,1.3h0.9c0.7,0,1.3-0.6,1.3-1.3v-15
-                              c0-0.7-0.6-1.3-1.3-1.3H9.6C8.8,1.5,8.2,2.1,8.2,2.8z M8.2,22.7v6.1c0,0.7,0.6,1.3,1.3,1.3h0.9c0.7,0,1.3-0.6,1.3-1.3v-6.1
-                              c0-0.7-0.6-1.3-1.3-1.3H9.6C8.8,21.3,8.2,21.9,8.2,22.7z M8.2,33.7v13.5c0,0.7,0.6,1.3,1.3,1.3h0.9c0.7,0,1.3-0.6,1.3-1.3V33.7
-                              c0-0.7-0.6-1.3-1.3-1.3H9.6C8.8,32.3,8.2,32.9,8.2,33.7z M14.5,28.6v18.6c0,0.7,0.6,1.3,1.3,1.3h0.9c0.7,0,1.3-0.6,1.3-1.3V28.6
-                              c0-0.7-0.6-1.3-1.3-1.3h-0.9C15.1,27.2,14.5,27.8,14.5,28.6z M14.5,17.5v6.1c0,0.7,0.6,1.3,1.3,1.3h0.9c0.7,0,1.3-0.6,1.3-1.3v-6.1
-                              c0-0.7-0.6-1.3-1.3-1.3h-0.9C15.1,16.2,14.5,16.8,14.5,17.5z M14.5,2.8v9.8c0,0.7,0.6,1.3,1.3,1.3h0.9c0.7,0,1.3-0.6,1.3-1.3V2.8
-                              c0-0.7-0.6-1.3-1.3-1.3h-0.9C15.1,1.5,14.5,2.1,14.5,2.8z"/>
-                              </svg>
-                            </div><!-- /.icon -->
+                            <div class="icon-wrap">
+                              <svg class="icon shape-rejuvenation"><use xlink:href="#shape-rejuvenation"></use></svg>
+                            </div><!-- /.icon-wrap -->
                             <h2>rejuvenation</h2>
                             <div class="rte">
                               <p><b>Intro about the restorative effect and benefits of water.</b></p>
@@ -419,7 +380,7 @@
             </div><!-- /.container-fluid-->
           </div><!-- /#water-therapy -->
         </section>
-        <section id="showering">
+        <section id="showering" class="grid-module">
           <div class="scrolling-menu-wrap">
             <div class="scrolling-menu">
               <svg class="icon shape-soft-rain"><use xlink:href="#shape-soft-rain"></use></svg>
@@ -436,20 +397,20 @@
             </div><!-- /.scrolling-menu-list -->
           </div><!-- /.scrolling-menu-wrap -->
           <div class="container-fluid">
-            <div class="showering-intro-wrap">
+            <div class="grid-module-intro-wrap">
               <div class="row">
                 <div class="col-xs-12">
-                  <div class="showering-intro">
+                  <div class="grid-module-intro">
                     <h2>showering</h2>
                     <p>Introduce showering and the power of personal renewal. Enliven the senses, reinvigorate the soul or float away in total bliss. </p>
                   </div>                
                 </div>
               </div>
             </div>
-            <div class="showering-menu-wrap">              
+            <div class="grid-module-menu-wrap">              
               <div class="row">
                 <div class="col-sm-6">
-                  <div class="showering-menu">
+                  <div class="grid-module-menu">
                     <ul class="list-unstyled">
                       <li><a href="#" class="active" data-section="1">Wet Zone</a></li>
                       <li><a href="#" data-section="2">Enclosed</a></li>
@@ -461,7 +422,7 @@
                   </div>
                 </div>
                 <div class="col-sm-6">
-                  <div class="showering-description">
+                  <div class="grid-module-description">
                     <div class="box">
                       <div class="box-content box-content-1 active">
                         <h3>Wet Zone</h3>
@@ -504,12 +465,12 @@
                 </div>
               </div>
             </div>
-            <div class="showering-zones-sections">
-              <div class="showering-zones-section-1 showering-zones-section current">
+            <div class="grid-module-zones-sections">
+              <div class="grid-module-zones-section-1 grid-module-zones-section current">
                 <div class="row">
                   <div class="col-xs-12">
-                    <div class="panel-slideshow showering-zone-1">
-                      <div class="showering-slider">
+                    <div class="panel-slideshow grid-module-zone-1">
+                      <div class="grid-module-slider">
                         <div class="slide">
                           <figure class="image">
                             <img src="images/water_therapy/showering-slider-wet-zone.jpg" alt="Showering">
@@ -530,10 +491,10 @@
                     </div>                
                   </div>
                 </div><!-- /.row-->
-                <div class="showering-zones-2-3">
+                <div class="grid-module-zones-2-3">
                   <div class="row">
                     <div class="col-sm-6">
-                      <div class="showering-zone-wrap"><div class="showering-zone-2" style="background-image: url(images/water_therapy/showering-zone-2.jpg);">
+                      <div class="grid-module-zone-wrap"><div class="grid-module-zone-2" style="background-image: url(images/water_therapy/showering-zone-2.jpg);">
                         <div class="box">
                         <h3>awakening</h3>
                         </div>
@@ -541,7 +502,7 @@
                       </div>
                     </div>
                     <div class="col-sm-6">
-                      <div class="showering-zone-wrap"><div class="showering-zone-3" style="background-image: url(images/water_therapy/showering-zone-3.jpg);">
+                      <div class="grid-module-zone-wrap"><div class="grid-module-zone-3" style="background-image: url(images/water_therapy/showering-zone-3.jpg);">
                         <div class="box-border"></div>
                         <div class="box">
                           <div class="text">
@@ -552,11 +513,11 @@
                       </div>
                     </div>
                   </div><!-- /.row -->
-                </div><!-- /.showering-zones-2-3 -->
-                <div class="showering-zones-4-5">
+                </div><!-- /.grid-module-zones-2-3 -->
+                <div class="grid-module-zones-4-5">
                   <div class="row">
                     <div class="col-sm-6">
-                      <div class="showering-zone-4">
+                      <div class="grid-module-zone-4">
                         <h3>Create your own wet zone</h3>
                         <div class="row">
                           <div class="col-md-7">
@@ -579,8 +540,8 @@
                       </div>
                     </div>
                     <div class="col-sm-6">
-                      <div class="showering-zone-5">
-                        <div class="showering-zone-5-content">
+                      <div class="grid-module-zone-5">
+                        <div class="grid-module-zone-5-content">
                           <div class="row">
                             <div class="col-md-6">
                               <div class="panel panel-slideshow">
@@ -701,13 +662,13 @@
                       </div>
                     </div>
                   </div><!-- /.row -->
-                </div><!-- /.showering-zones-4-5 -->     
+                </div><!-- /.grid-module-zones-4-5 -->     
               </div>
-              <div class="showering-zones-section-2 showering-zones-section">
+              <div class="grid-module-zones-section-2 grid-module-zones-section">
                 <div class="row">
                   <div class="col-xs-12">
-                    <div class="panel-slideshow showering-zone-1">
-                      <div class="showering-slider">
+                    <div class="panel-slideshow grid-module-zone-1">
+                      <div class="grid-module-slider">
                         <div class="slide">
                           <figure class="image">
                             <img src="images/water_therapy/showering-slider-enclosed.jpg" alt="Showering">
@@ -728,17 +689,17 @@
                     </div>                
                   </div>
                 </div><!-- /.row-->
-                <div class="showering-zones-2-3">
+                <div class="grid-module-zones-2-3">
                   <div class="row">
                     <div class="col-sm-6">
-                      <div class="showering-zone-wrap"><div class="showering-zone-2" style="background-image: url(images/water_therapy/showering-zone-2.jpg);">
+                      <div class="grid-module-zone-wrap"><div class="grid-module-zone-2" style="background-image: url(images/water_therapy/showering-zone-2.jpg);">
                         <div class="box">
                         <h3>awakening</h3>
                         </div>
                       </div></div>
                     </div>
                     <div class="col-sm-6">
-                      <div class="showering-zone-wrap"><div class="showering-zone-3" style="background-image: url(images/water_therapy/showering-zone-3.jpg);">
+                      <div class="grid-module-zone-wrap"><div class="grid-module-zone-3" style="background-image: url(images/water_therapy/showering-zone-3.jpg);">
                         <div class="box-border"></div>
                         <div class="box">
                           <div class="text">
@@ -749,11 +710,11 @@
                       </div>
                     </div>
                   </div><!-- /.row -->
-                </div><!-- /.showering-zones-2-3 -->
-                <div class="showering-zones-4-5">
+                </div><!-- /.grid-module-zones-2-3 -->
+                <div class="grid-module-zones-4-5">
                   <div class="row">
                     <div class="col-sm-6">
-                      <div class="showering-zone-4">
+                      <div class="grid-module-zone-4">
                         <h3>Create your own enclosed</h3>
                         <div class="row">
                           <div class="col-md-7">
@@ -776,8 +737,8 @@
                       </div>
                     </div>
                     <div class="col-sm-6">
-                      <div class="showering-zone-5">
-                        <div class="showering-zone-5-content">
+                      <div class="grid-module-zone-5">
+                        <div class="grid-module-zone-5-content">
                           <div class="row">
                             <div class="col-md-6">
                               <div class="panel panel-slideshow">
@@ -898,13 +859,13 @@
                       </div>
                     </div>
                   </div><!-- /.row -->
-                </div><!-- /.showering-zones-4-5 -->     
+                </div><!-- /.grid-module-zones-4-5 -->     
               </div>
-              <div class="showering-zones-section-3 showering-zones-section">
+              <div class="grid-module-zones-section-3 grid-module-zones-section">
                 <div class="row">
                   <div class="col-xs-12">
-                    <div class="panel-slideshow showering-zone-1">
-                      <div class="showering-slider">
+                    <div class="panel-slideshow grid-module-zone-1">
+                      <div class="grid-module-slider">
                         <div class="slide">
                           <figure class="image">
                             <img src="images/water_therapy/showering-slider-walk-in.jpg" alt="Showering">
@@ -925,17 +886,17 @@
                     </div>                
                   </div>
                 </div><!-- /.row-->
-                <div class="showering-zones-2-3">
+                <div class="grid-module-zones-2-3">
                   <div class="row">
                     <div class="col-sm-6">
-                      <div class="showering-zone-wrap"><div class="showering-zone-2" style="background-image: url(images/water_therapy/showering-zone-2.jpg);">
+                      <div class="grid-module-zone-wrap"><div class="grid-module-zone-2" style="background-image: url(images/water_therapy/showering-zone-2.jpg);">
                         <div class="box">
                         <h3>awakening</h3>
                         </div>
                       </div></div>
                     </div>
                     <div class="col-sm-6">
-                      <div class="showering-zone-wrap"><div class="showering-zone-3" style="background-image: url(images/water_therapy/showering-zone-3.jpg);">
+                      <div class="grid-module-zone-wrap"><div class="grid-module-zone-3" style="background-image: url(images/water_therapy/showering-zone-3.jpg);">
                         <div class="box-border"></div>
                         <div class="box">
                           <div class="text">
@@ -946,11 +907,11 @@
                       </div>
                     </div>
                   </div><!-- /.row -->
-                </div><!-- /.showering-zones-2-3 -->
-                <div class="showering-zones-4-5">
+                </div><!-- /.grid-module-zones-2-3 -->
+                <div class="grid-module-zones-4-5">
                   <div class="row">
                     <div class="col-sm-6">
-                      <div class="showering-zone-4">
+                      <div class="grid-module-zone-4">
                         <h3>Create your own walk in</h3>
                         <div class="row">
                           <div class="col-md-7">
@@ -973,8 +934,8 @@
                       </div>
                     </div>
                     <div class="col-sm-6">
-                      <div class="showering-zone-5">
-                        <div class="showering-zone-5-content">
+                      <div class="grid-module-zone-5">
+                        <div class="grid-module-zone-5-content">
                           <div class="row">
                             <div class="col-md-6">
                               <div class="panel panel-slideshow">
@@ -1095,13 +1056,13 @@
                       </div>
                     </div>
                   </div><!-- /.row -->
-                </div><!-- /.showering-zones-4-5 -->     
+                </div><!-- /.grid-module-zones-4-5 -->     
               </div>
-              <div class="showering-zones-section-4 showering-zones-section">
+              <div class="grid-module-zones-section-4 grid-module-zones-section">
                 <div class="row">
                   <div class="col-xs-12">
-                    <div class="panel-slideshow showering-zone-1">
-                      <div class="showering-slider">
+                    <div class="panel-slideshow grid-module-zone-1">
+                      <div class="grid-module-slider">
                         <div class="slide">
                           <figure class="image">
                             <img src="images/water_therapy/showering-slider-double.jpg" alt="Showering">
@@ -1122,17 +1083,17 @@
                     </div>                
                   </div>
                 </div><!-- /.row-->
-                <div class="showering-zones-2-3">
+                <div class="grid-module-zones-2-3">
                   <div class="row">
                     <div class="col-sm-6">
-                      <div class="showering-zone-wrap"><div class="showering-zone-2" style="background-image: url(images/water_therapy/showering-zone-2.jpg);">
+                      <div class="grid-module-zone-wrap"><div class="grid-module-zone-2" style="background-image: url(images/water_therapy/showering-zone-2.jpg);">
                         <div class="box">
                         <h3>awakening</h3>
                         </div>
                       </div></div>
                     </div>
                     <div class="col-sm-6">
-                      <div class="showering-zone-wrap"><div class="showering-zone-3" style="background-image: url(images/water_therapy/showering-zone-3.jpg);">
+                      <div class="grid-module-zone-wrap"><div class="grid-module-zone-3" style="background-image: url(images/water_therapy/showering-zone-3.jpg);">
                         <div class="box-border"></div>
                         <div class="box">
                           <div class="text">
@@ -1143,11 +1104,11 @@
                       </div>
                     </div>
                   </div><!-- /.row -->
-                </div><!-- /.showering-zones-2-3 -->
-                <div class="showering-zones-4-5">
+                </div><!-- /.grid-module-zones-2-3 -->
+                <div class="grid-module-zones-4-5">
                   <div class="row">
                     <div class="col-sm-6">
-                      <div class="showering-zone-4">
+                      <div class="grid-module-zone-4">
                         <h3>Create your own double</h3>
                         <div class="row">
                           <div class="col-md-7">
@@ -1170,8 +1131,8 @@
                       </div>
                     </div>
                     <div class="col-sm-6">
-                      <div class="showering-zone-5">
-                        <div class="showering-zone-5-content">
+                      <div class="grid-module-zone-5">
+                        <div class="grid-module-zone-5-content">
                           <div class="row">
                             <div class="col-md-6">
                               <div class="panel panel-slideshow">
@@ -1292,13 +1253,13 @@
                       </div>
                     </div>
                   </div><!-- /.row -->
-                </div><!-- /.showering-zones-4-5 -->     
+                </div><!-- /.grid-module-zones-4-5 -->     
               </div>
-              <div class="showering-zones-section-5 showering-zones-section">
+              <div class="grid-module-zones-section-5 grid-module-zones-section">
                 <div class="row">
                   <div class="col-xs-12">
-                    <div class="panel-slideshow showering-zone-1">
-                      <div class="showering-slider">
+                    <div class="panel-slideshow grid-module-zone-1">
+                      <div class="grid-module-slider">
                         <div class="slide">
                           <figure class="image">
                             <img src="images/water_therapy/showering-slider-outdoor.jpg" alt="Showering">
@@ -1319,17 +1280,17 @@
                     </div>                
                   </div>
                 </div><!-- /.row-->
-                <div class="showering-zones-2-3">
+                <div class="grid-module-zones-2-3">
                   <div class="row">
                     <div class="col-sm-6">
-                      <div class="showering-zone-wrap"><div class="showering-zone-2" style="background-image: url(images/water_therapy/showering-zone-2.jpg);">
+                      <div class="grid-module-zone-wrap"><div class="grid-module-zone-2" style="background-image: url(images/water_therapy/showering-zone-2.jpg);">
                         <div class="box">
                         <h3>awakening</h3>
                         </div>
                       </div></div>
                     </div>
                     <div class="col-sm-6">
-                      <div class="showering-zone-wrap"><div class="showering-zone-3" style="background-image: url(images/water_therapy/showering-zone-3.jpg);">
+                      <div class="grid-module-zone-wrap"><div class="grid-module-zone-3" style="background-image: url(images/water_therapy/showering-zone-3.jpg);">
                         <div class="box-border"></div>
                         <div class="box">
                           <div class="text">
@@ -1340,11 +1301,11 @@
                       </div>
                     </div>
                   </div><!-- /.row -->
-                </div><!-- /.showering-zones-2-3 -->
-                <div class="showering-zones-4-5">
+                </div><!-- /.grid-module-zones-2-3 -->
+                <div class="grid-module-zones-4-5">
                   <div class="row">
                     <div class="col-sm-6">
-                      <div class="showering-zone-4">
+                      <div class="grid-module-zone-4">
                         <h3>Create your own outdoor</h3>
                         <div class="row">
                           <div class="col-md-7">
@@ -1367,8 +1328,8 @@
                       </div>
                     </div>
                     <div class="col-sm-6">
-                      <div class="showering-zone-5">
-                        <div class="showering-zone-5-content">
+                      <div class="grid-module-zone-5">
+                        <div class="grid-module-zone-5-content">
                           <div class="row">
                             <div class="col-md-6">
                               <div class="panel panel-slideshow">
@@ -1489,13 +1450,13 @@
                       </div>
                     </div>
                   </div><!-- /.row -->
-                </div><!-- /.showering-zones-4-5 -->     
+                </div><!-- /.grid-module-zones-4-5 -->     
               </div>
-              <div class="showering-zones-section-6 showering-zones-section">
+              <div class="grid-module-zones-section-6 grid-module-zones-section">
                 <div class="row">
                   <div class="col-xs-12">
-                    <div class="panel-slideshow showering-zone-1">
-                      <div class="showering-slider">
+                    <div class="panel-slideshow grid-module-zone-1">
+                      <div class="grid-module-slider">
                         <div class="slide">
                           <figure class="image">
                             <img src="images/water_therapy/showering-slider-shower-bath.jpg" alt="Showering">
@@ -1516,17 +1477,17 @@
                     </div>                
                   </div>
                 </div><!-- /.row-->
-                <div class="showering-zones-2-3">
+                <div class="grid-module-zones-2-3">
                   <div class="row">
                     <div class="col-sm-6">
-                      <div class="showering-zone-wrap"><div class="showering-zone-2" style="background-image: url(images/water_therapy/showering-zone-2.jpg);">
+                      <div class="grid-module-zone-wrap"><div class="grid-module-zone-2" style="background-image: url(images/water_therapy/showering-zone-2.jpg);">
                         <div class="box">
                         <h3>awakening</h3>
                         </div>
                       </div></div>
                     </div>
                     <div class="col-sm-6">
-                      <div class="showering-zone-wrap"><div class="showering-zone-3" style="background-image: url(images/water_therapy/showering-zone-3.jpg);">
+                      <div class="grid-module-zone-wrap"><div class="grid-module-zone-3" style="background-image: url(images/water_therapy/showering-zone-3.jpg);">
                         <div class="box-border"></div>
                         <div class="box">
                           <div class="text">
@@ -1537,11 +1498,11 @@
                       </div>
                     </div>
                   </div><!-- /.row -->
-                </div><!-- /.showering-zones-2-3 -->
-                <div class="showering-zones-4-5">
+                </div><!-- /.grid-module-zones-2-3 -->
+                <div class="grid-module-zones-4-5">
                   <div class="row">
                     <div class="col-sm-6">
-                      <div class="showering-zone-4">
+                      <div class="grid-module-zone-4">
                         <h3>Create your own shower bath</h3>
                         <div class="row">
                           <div class="col-md-7">
@@ -1564,8 +1525,8 @@
                       </div>
                     </div>
                     <div class="col-sm-6">
-                      <div class="showering-zone-5">
-                        <div class="showering-zone-5-content">
+                      <div class="grid-module-zone-5">
+                        <div class="grid-module-zone-5-content">
                           <div class="row">
                             <div class="col-md-6">
                               <div class="panel panel-slideshow">
@@ -1686,7 +1647,7 @@
                       </div>
                     </div>
                   </div><!-- /.row -->
-                </div><!-- /.showering-zones-4-5 -->     
+                </div><!-- /.grid-module-zones-4-5 -->     
               </div>
             </div>                   
           </div><!-- /.content-fluid-->
@@ -1713,26 +1674,36 @@
                 </div>
                 <div class="col-sm-6">
                   <div class="shower-technology-description">
-                    <figure class="image">
-                      <img src="images/water_therapy/shower.png" alt="Shower">
-                    </figure>
-                    <div class="icon">
-                      
+                    <div class="shower-technology-flip">
+                      <div class="front">
+                        <figure class="image">
+                          <img src="images/water_therapy/shower.png" alt="Shower">
+                        </figure>
+                        <div class="icon-wrap">
+                            <svg class="icon shape-waterfall"><use xlink:href="#shape-waterfall"></use></svg>
+                        </div><!-- /.icon-wrap -->
+                        <h3>Waterfall</h3>
+                        <div class="text">
+                          <p>Here we link types of showers to their emotional benefit. E.g. Overhead showers offer a completely immersive showering experience like that of a waterfall.</p>
+                        </div>
+                        <ul class="list-inline">
+                          <li><a href="#" target="_blank" class="see-product">See Product</a></li>
+                          <li><a href="#" class="view-video"><i class="icon-play"></i> View in Action</a></li>
+                        </ul>
+                      </div>
+                      <div class="back">
+                        <div id="st-waterfall-video-wrap" class="video-iframe-wrap video" data-video="BIAWhMhhY58">
+                            <figure id="st-waterfall-video"></figure>          
+                          </div>
+                      </div>                    
                     </div>
-                    <h3>Waterfall</h3>
-                    <div class="text">
-                      <p>Here we link types of showers to their emotional benefit. E.g. Overhead showers offer a completely immersive showering experience like that of a waterfall.</p>
-                    </div>
-                    <ul class="list-inline">
-                      <li><a href="#">See Product</a></li>
-                      <li><a href="#"><i class="icon-play"></i> View in Action</a></li>
-                    </ul>
                   </div>
                 </div>
               </div>
             </div><!-- /.row -->
           </div><!-- /.shower-technology-sections -->
-        </section>            
+        </section><!-- #showe-technology -->
+        <?php include_once('bathing.php');?>
       </div>  
       <!-- end .main -->
       <?php include_once("templates/includes/reece-footer.php");?>    

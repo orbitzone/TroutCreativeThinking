@@ -351,8 +351,14 @@ body.water-therapy{
 					@media (min-width: $screen-sm){
 						height: 350px;
 					}
+					.incon-wrap{
+						text-align: center;
+					}
 					.icon{
 						margin-bottom: 15px;
+						width: 55px;
+						height: 55px;
+						fill: #faea8b;						
 					}
 					h2{
 						margin-top: 0;
@@ -506,7 +512,8 @@ body.water-therapy{
 		  	}
 		  }
 		}//#water-therapy
-		#showering{
+		#showering,
+		#bathing{
 			background: black;
 			color: white;
 			text-align: center;
@@ -613,15 +620,15 @@ body.water-therapy{
 		    	top: 15px;*/
 		    	width: 40px;
 	    		height: 40px;
-	    		top: 30px;
+	    		top: 26px;
 		    	@media (min-width: $screen-sm){
 		    		width: 40px;
 		    		height: 40px;
-		    		top: 30px;
+		    		top: 26px;
 		    	}
 		    }
 			}
-			.showering-intro{
+			.grid-module-intro{
 				max-width: 526px;
 				margin: 0 auto;
 				h2{
@@ -631,7 +638,7 @@ body.water-therapy{
 					}
 				}
 			}
-			.showering-menu-wrap{
+			.grid-module-menu-wrap{
 				max-width: 850px;
 				margin: 0 auto;
 				position: relative;
@@ -647,8 +654,8 @@ body.water-therapy{
 						padding: 0;
 					}
 				}
-			}//.showering-menu-wrap
-			.showering-menu{
+			}//.grid-module-menu-wrap
+			.grid-module-menu{
 				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#37d1a4+0,41f3bf+100 */
 				background: #37d1a4; /* Old browsers */
 				background: -moz-linear-gradient(top,  #37d1a4 0%, #41f3bf 100%); /* FF3.6-15 */
@@ -698,8 +705,8 @@ body.water-therapy{
 						}
 					}
 				}
-			}//.showering-menu
-			.showering-description{
+			}//.grid-module-menu
+			.grid-module-description{
 				position: relative;
 				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1a1c24+0,161d23+100 */
 				background: #1a1c24; /* Old browsers */
@@ -746,8 +753,8 @@ body.water-therapy{
 						}
 					}
 				}
-			}//.showering-description
-			.showering-zones-sections{
+			}//.grid-module-description
+			.grid-module-zones-sections{
 				width: 100%;
 				@media (min-width: $screen-sm){
 					width: 4428px;
@@ -760,7 +767,7 @@ body.water-therapy{
 				}
 				position: relative;
 				z-index: 1;
-				.showering-zones-section{
+				.grid-module-zones-section{
 					//opacity: 0;
 					float: left;
 					width: 100%;
@@ -780,12 +787,12 @@ body.water-therapy{
 					@media (min-width: $screen-lg){
 						width: 1200px;
 					}
-					.showering-zone-1,
-					.showering-zone-2,
-					.showering-zone-3,
-					.showering-zone-4,
-					.showering-zone-5,
-					.showering-zone-6
+					.grid-module-zone-1,
+					.grid-module-zone-2,
+					.grid-module-zone-3,
+					.grid-module-zone-4,
+					.grid-module-zone-5,
+					.grid-module-zone-6
 					{
 						-webkit-backface-visibility: hidden;
 						-moz-backface-visibility: hidden;
@@ -794,17 +801,17 @@ body.water-therapy{
 						@include transform-style(preserve-3d);
 						@include transform(translateZ(0));
 					}
-					.showering-zone-wrap{
+					.grid-module-zone-wrap{
 						@include perspective(2000px);
 						@include transform-style(preserve-3d);
 					}
-					.showering-zone-1{
+					.grid-module-zone-1{
 						@include animation(slide_out 1s ease-in-out forwards);
 						&.ie{
 							opacity: 0;
 						}
 					}
-					.showering-zone-2{
+					.grid-module-zone-2{
 						@include animation(flip_left_out 1s ease-out 0.8s forwards);
 						&.ie{
 							opacity: 0;
@@ -812,7 +819,7 @@ body.water-therapy{
 							@include transition(1s all ease-out);
 						}
 					}
-					.showering-zone-3{						
+					.grid-module-zone-3{						
 						@include animation(flip_right_out 1s ease-out 0.5s forwards);						
 						&.ie{
 							opacity: 0;
@@ -826,7 +833,7 @@ body.water-therapy{
 						&.ie{
 							z-index: 5;
 						}
-						.showering-zone-1{
+						.grid-module-zone-1{
 							@include transform(translate3d(0,0,0));
 							@include animation(slide_in 1s ease-in-out forwards);
 							&.ie{
@@ -834,7 +841,7 @@ body.water-therapy{
 								@include animation(none);
 							}
 						}
-						.showering-zone-2
+						.grid-module-zone-2
 						{
 							@include animation(flip_left_in 1s ease-out 0.8s forwards);
 							&.ie{
@@ -842,7 +849,7 @@ body.water-therapy{
 								@include animation(none);
 							}
 						}
-						.showering-zone-3
+						.grid-module-zone-3
 						{
 							@include animation(flip_right_in 1s ease-out 0.5s forwards);
 							&.ie{
@@ -853,20 +860,20 @@ body.water-therapy{
 					}
 				}
 			}
-			.showering-zones-2-3,
-			.showering-zones-4-5{
+			.grid-module-zones-2-3,
+			.grid-module-zones-4-5{
 				.row{
 					margin: 0;
 					.col-sm-6{
 						padding: 0;
 					}
 				}
-			}//.showering-zones-2-3
-			.showering-zones-4-5{
+			}//.grid-module-zones-2-3
+			.grid-module-zones-4-5{
 				margin-bottom: 80px;
 			}
-			.showering-zone-1{				
-				.showering-slider-buttons{
+			.grid-module-zone-1{				
+				.grid-module-slider-buttons{
 					height: 40px;
 					@include clearfix();
 					top: inherit;
@@ -875,7 +882,7 @@ body.water-therapy{
 					bottom: 30px;					
 				}
 			}
-			.showering-zone-2{
+			.grid-module-zone-2{
 				background-size: cover;
 				background-position: center center;
 				position: relative;
@@ -901,8 +908,8 @@ body.water-therapy{
 						}
 					}
 				}
-			}//.showering-zone-2
-			.showering-zone-3{
+			}//.grid-module-zone-2
+			.grid-module-zone-3{
 				background-size: cover;
 				background-position: center center;
 				height: 360px;
@@ -942,11 +949,11 @@ body.water-therapy{
 						}
 					}
 				}
-			}// .showering-zone-3
-			.showering-zone-4-5{
+			}// .grid-module-zone-3
+			.grid-module-zone-4-5{
 
 			}
-			.showering-zone-4{
+			.grid-module-zone-4{
 				background: $water-therapy-grey;
 				color: $water-therapy-black;
 				padding: 58px 30px 34px;
@@ -992,8 +999,8 @@ body.water-therapy{
 						color: $water-therapy-blue;
 					}
 				}
-			}//.showering-zone-4
-			.showering-zone-5{
+			}//.grid-module-zone-4
+			.grid-module-zone-5{
 				padding-top: 58px;
 				@media (min-width: $screen-md){
 					height: 488px;					
@@ -1001,7 +1008,7 @@ body.water-therapy{
 				}
 				background: white;
 				position: relative;
-				.showering-zone-5-content{
+				.grid-module-zone-5-content{
 					@media (min-width: $screen-md){
 						position: absolute;
 						left: 0;
@@ -1039,6 +1046,101 @@ body.water-therapy{
 				}
 			}
 		}// #showering
+		#bathing{
+			background: white;
+			color: black;
+			.bathing-image{
+				background-image: url(../images/water_therapy/bathing-bg.jpg);
+				background-size: cover;
+				background-position: bottom center;
+				text-align: center;
+				img{
+					opacity: 0;
+					margin: 0 auto;
+				}
+			}
+			.bathing-content{
+				margin-top: -70px;
+				@media (min-width: $screen-sm){
+					margin-top: -200px;
+				}
+			}
+			.grid-module-menu-wrap,
+			.grid-module-zones-sections{
+				color: white;
+			}
+			.grid-module-menu{
+				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#37d1a4+0,41f3bf+100 */
+				background: #1a1c24; /* Old browsers */
+				background: -moz-linear-gradient(top,  #1a1c24 0%, #161d23 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(top,  #1a1c24 0%,#161d23 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to bottom,  #1a1c24 0%,#161d23 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a1c24', endColorstr='#161d23',GradientType=0 ); /* IE6-9 */
+
+				ul{
+					li{
+						a{
+							color: white;
+							border: 1px solid white;
+							&.active{
+								border-color: $water-therapy-green;
+								background: $water-therapy-green;
+								color: $water-therapy-blue;
+							}
+						}
+					}
+				}
+			}//.grid-module-menu
+			.grid-module-description{
+				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1a1c24+0,161d23+100 */
+				color: $water-therapy-blue;
+
+				background: #37d1a4; /* Old browsers */
+				background: -moz-linear-gradient(top,  #37d1a4 0%, #41f3bf 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(top,  #37d1a4 0%,#41f3bf 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to bottom,  #37d1a4 0%,#41f3bf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#37d1a4', endColorstr='#41f3bf',GradientType=0 ); /* IE6-9 */
+				&:before{
+					content: " ";
+			    display: block;
+			    background: #41f3bf;
+			    width: 20px;
+			    height: 20px;
+			    position: absolute;
+			    bottom: 0px;
+			    left: 50%;
+			    @include transform(translateX(-50%) translateY(50%) rotate(45deg));
+				}
+			}//.grid-module-description
+			.scrolling-menu-wrap{
+				.scrolling-menu-list{
+	    		background: #1a1c24; /* Old browsers */
+					background: -moz-linear-gradient(top,  #1a1c24 0%, #161d23 100%); /* FF3.6-15 */
+					background: -webkit-linear-gradient(top,  #1a1c24 0%,#161d23 100%); /* Chrome10-25,Safari5.1-6 */
+					background: linear-gradient(to bottom,  #1a1c24 0%,#161d23 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a1c24', endColorstr='#161d23',GradientType=0 ); /* IE6-9 */
+					ul{
+						li{
+							a{
+								color: white;
+								border: 1px solid white;
+								&.active{
+									border-color: $water-therapy-green;
+									background: $water-therapy-green;
+									color: $water-therapy-blue;
+								}
+							}
+						}
+					}
+		    }//.scrolling-menu-list
+		    .scrolling-menu{
+		    	background: $water-therapy-green;
+		    	.icon{
+		    		fill: $water-therapy-blue;
+		    	}
+		    }
+		  }//.scrolling-menu-wrap
+		}
 		#shower-technology{
 			background-image: url(../images/water_therapy/shower-technology.jpg);
 			background-position: top center;
@@ -1108,6 +1210,7 @@ body.water-therapy{
 				}
 			}//.shower-technology-menu
 			.shower-technology-description{
+				@include perspective(2000px);
 				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,161c23+100 */
 				background: #000000; /* Old browsers */
 				background: -moz-linear-gradient(top,  #000000 0%, #161c23 100%); /* FF3.6-15 */
@@ -1128,6 +1231,32 @@ body.water-therapy{
 					font-weight: 300;
 					text-align: center;
 					letter-spacing: 0.17em;
+				}
+				&.active{
+					.shower-technology-flip{
+						@include transform(rotateY(180deg));
+					}
+				}
+				.shower-technology-flip{
+					@include transition(0.6s all ease-out);
+					@include transform-style(preserve-3d);
+					position: relative;
+					.front,
+					.back{
+						@include backface-visibility(hidden);
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 545px;
+						height: 555px;
+					}
+					.front{
+						z-index: 2;
+						@include transform(rotateY(0deg));
+					}
+					.back{
+						@include transform(rotateY(180deg));
+					}
 				}
 			}
 		}

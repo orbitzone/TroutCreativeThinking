@@ -5511,8 +5511,43 @@ body.water-therapy .main #shower-technology .shower-technology-menu ul li a.acti
   fill: #151d25;
 }
 /* line 1241, ../sass/pages/_water_therapy.scss */
-body.water-therapy .main #shower-technology .shower-technology-description {
+body.water-therapy .main #shower-technology .shower-technology-cards {
+  overflow: hidden;
+  position: relative;
   margin-bottom: 75px;
+  min-height: 385.87px;
+  padding: 30px 0;
+}
+@media (min-width: 768px) {
+  /* line 1241, ../sass/pages/_water_therapy.scss */
+  body.water-therapy .main #shower-technology .shower-technology-cards {
+    width: 545px;
+    height: 615px;
+  }
+}
+/* line 1251, ../sass/pages/_water_therapy.scss */
+body.water-therapy .main #shower-technology .shower-technology-cards .shower-technology-card {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  z-index: 1;
+  -webkit-animation: card_out 1s ease-in-out forwards;
+  -moz-animation: card_out 1s ease-in-out forwards;
+  -ms-animation: card_out 1s ease-in-out forwards;
+  -o-animation: card_out 1s ease-in-out forwards;
+  animation: card_out 1s ease-in-out forwards;
+}
+/* line 1258, ../sass/pages/_water_therapy.scss */
+body.water-therapy .main #shower-technology .shower-technology-cards .shower-technology-card.active {
+  opacity: 0;
+  -webkit-animation: card_in 1s ease-in-out 0.5s forwards;
+  -moz-animation: card_in 1s ease-in-out 0.5s forwards;
+  -ms-animation: card_in 1s ease-in-out 0.5s forwards;
+  -o-animation: card_in 1s ease-in-out 0.5s forwards;
+  animation: card_in 1s ease-in-out 0.5s forwards;
+}
+/* line 1265, ../sass/pages/_water_therapy.scss */
+body.water-therapy .main #shower-technology .shower-technology-description {
   text-align: center;
   -webkit-perspective: 2000px;
   -moz-perspective: 2000px;
@@ -5523,15 +5558,15 @@ body.water-therapy .main #shower-technology .shower-technology-description {
   color: white;
   padding: 0;
 }
-/* line 1247, ../sass/pages/_water_therapy.scss */
+/* line 1270, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .image {
   text-align: center;
 }
-/* line 1249, ../sass/pages/_water_therapy.scss */
+/* line 1272, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .image img {
   margin: 0 auto;
 }
-/* line 1253, ../sass/pages/_water_therapy.scss */
+/* line 1276, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description h3 {
   color: #39d8a9;
   text-transform: uppercase;
@@ -5540,7 +5575,7 @@ body.water-therapy .main #shower-technology .shower-technology-description h3 {
   letter-spacing: 0.17em;
   margin: 20px 0;
 }
-/* line 1262, ../sass/pages/_water_therapy.scss */
+/* line 1285, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description.active .shower-technology-flip {
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
@@ -5548,20 +5583,20 @@ body.water-therapy .main #shower-technology .shower-technology-description.activ
   -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
-/* line 1266, ../sass/pages/_water_therapy.scss */
+/* line 1289, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .icon-wrap {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 10px;
   position: relative;
 }
-/* line 1271, ../sass/pages/_water_therapy.scss */
+/* line 1294, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .icon-wrap .icon {
   width: 55px;
   height: 55px;
   fill: #cacaca;
 }
-/* line 1276, ../sass/pages/_water_therapy.scss */
+/* line 1299, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .icon-wrap:after {
   content: " ";
   width: 22px;
@@ -5572,7 +5607,7 @@ body.water-therapy .main #shower-technology .shower-technology-description .icon
   left: 50%;
   margin-left: -11px;
 }
-/* line 1287, ../sass/pages/_water_therapy.scss */
+/* line 1310, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .see-product {
   display: inline-block;
   padding: 5px 18px;
@@ -5581,17 +5616,17 @@ body.water-therapy .main #shower-technology .shower-technology-description .see-
   color: black;
   text-decoration: none;
 }
-/* line 1294, ../sass/pages/_water_therapy.scss */
+/* line 1317, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .see-product:hover {
   background: #39d8a9;
 }
-/* line 1298, ../sass/pages/_water_therapy.scss */
+/* line 1321, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .view-video {
   color: #39d8a9;
   text-transform: uppercase;
   font-weight: 400;
 }
-/* line 1303, ../sass/pages/_water_therapy.scss */
+/* line 1326, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip {
   -moz-transition: all 0.6s ease-out;
   -o-transition: all 0.6s ease-out;
@@ -5607,13 +5642,13 @@ body.water-therapy .main #shower-technology .shower-technology-description .show
   min-height: 325.87px;
 }
 @media (min-width: 768px) {
-  /* line 1303, ../sass/pages/_water_therapy.scss */
+  /* line 1326, ../sass/pages/_water_therapy.scss */
   body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip {
     width: 545px;
     height: 555px;
   }
 }
-/* line 1313, ../sass/pages/_water_therapy.scss */
+/* line 1336, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip .front,
 body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip .back {
   -webkit-backface-visibility: hidden;
@@ -5630,14 +5665,14 @@ body.water-therapy .main #shower-technology .shower-technology-description .show
   min-height: 325.87px;
 }
 @media (min-width: 768px) {
-  /* line 1313, ../sass/pages/_water_therapy.scss */
+  /* line 1336, ../sass/pages/_water_therapy.scss */
   body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip .front,
   body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip .back {
     width: 545px;
     height: 555px;
   }
 }
-/* line 1327, ../sass/pages/_water_therapy.scss */
+/* line 1350, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip .front {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,161c23+100 */
   background: #000000;
@@ -5658,7 +5693,7 @@ body.water-therapy .main #shower-technology .shower-technology-description .show
   -o-transform: rotateY(0deg);
   transform: rotateY(0deg);
 }
-/* line 1339, ../sass/pages/_water_therapy.scss */
+/* line 1362, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip .back {
   background: #000000;
   /* Old browsers */
@@ -5677,7 +5712,7 @@ body.water-therapy .main #shower-technology .shower-technology-description .show
   transform: rotateY(180deg);
   overflow: hidden;
 }
-/* line 1348, ../sass/pages/_water_therapy.scss */
+/* line 1371, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip .back .video {
   overflow: hidden;
   position: absolute;
@@ -5692,25 +5727,25 @@ body.water-therapy .main #shower-technology .shower-technology-description .show
   height: 325.87px;
 }
 @media (min-width: 768px) {
-  /* line 1348, ../sass/pages/_water_therapy.scss */
+  /* line 1371, ../sass/pages/_water_therapy.scss */
   body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip .back .video {
     width: 978.6px;
     height: 555px;
   }
 }
-/* line 1360, ../sass/pages/_water_therapy.scss */
+/* line 1383, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip .back .video iframe {
   width: 574.59px;
   height: 325.87px;
 }
 @media (min-width: 768px) {
-  /* line 1360, ../sass/pages/_water_therapy.scss */
+  /* line 1383, ../sass/pages/_water_therapy.scss */
   body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip .back .video iframe {
     width: 978.6px;
     height: 555px;
   }
 }
-/* line 1368, ../sass/pages/_water_therapy.scss */
+/* line 1391, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip .back .video:before {
   display: block;
   width: 100%;
@@ -5722,7 +5757,7 @@ body.water-therapy .main #shower-technology .shower-technology-description .show
   z-index: 1;
   cursor: pointer;
 }
-/* line 1381, ../sass/pages/_water_therapy.scss */
+/* line 1404, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip .back .close-video {
   position: absolute;
   top: 10px;
@@ -6900,5 +6935,321 @@ body.water-therapy .main #shower-technology .shower-technology-description .show
     -ms-transform: translate3d(0, -100%, 0);
     -o-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
+  }
+}
+@-webkit-keyframes card_in {
+  0% {
+    opacity: 1;
+    -webkit-backdrop-filter: blur(7px);
+    -webkit-filter: blur(7px);
+    -moz-filter: blur(7px);
+    -ms-filter: blur(7px);
+    -o-filter: blur(7px);
+    filter: blur(7px);
+    -webkit-transform: translate3d(0, 100%, 0) scale(0.8);
+    -moz-transform: translate3d(0, 100%, 0) scale(0.8);
+    -ms-transform: translate3d(0, 100%, 0) scale(0.8);
+    -o-transform: translate3d(0, 100%, 0) scale(0.8);
+    transform: translate3d(0, 100%, 0) scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    z-index: 1;
+    -webkit-backdrop-filter: blur(0);
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    -ms-filter: blur(0);
+    -o-filter: blur(0);
+    filter: blur(0);
+    -webkit-transform: translate3d(0, 0, 0) scale(0.8);
+    -moz-transform: translate3d(0, 0, 0) scale(0.8);
+    -ms-transform: translate3d(0, 0, 0) scale(0.8);
+    -o-transform: translate3d(0, 0, 0) scale(0.8);
+    transform: translate3d(0, 0, 0) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    z-index: 2;
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    -moz-transform: translate3d(0, 0, 0) scale(1);
+    -ms-transform: translate3d(0, 0, 0) scale(1);
+    -o-transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+@-moz-keyframes card_in {
+  0% {
+    opacity: 1;
+    -webkit-backdrop-filter: blur(7px);
+    -webkit-filter: blur(7px);
+    -moz-filter: blur(7px);
+    -ms-filter: blur(7px);
+    -o-filter: blur(7px);
+    filter: blur(7px);
+    -webkit-transform: translate3d(0, 100%, 0) scale(0.8);
+    -moz-transform: translate3d(0, 100%, 0) scale(0.8);
+    -ms-transform: translate3d(0, 100%, 0) scale(0.8);
+    -o-transform: translate3d(0, 100%, 0) scale(0.8);
+    transform: translate3d(0, 100%, 0) scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    z-index: 1;
+    -webkit-backdrop-filter: blur(0);
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    -ms-filter: blur(0);
+    -o-filter: blur(0);
+    filter: blur(0);
+    -webkit-transform: translate3d(0, 0, 0) scale(0.8);
+    -moz-transform: translate3d(0, 0, 0) scale(0.8);
+    -ms-transform: translate3d(0, 0, 0) scale(0.8);
+    -o-transform: translate3d(0, 0, 0) scale(0.8);
+    transform: translate3d(0, 0, 0) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    z-index: 2;
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    -moz-transform: translate3d(0, 0, 0) scale(1);
+    -ms-transform: translate3d(0, 0, 0) scale(1);
+    -o-transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+@-ms-keyframes card_in {
+  0% {
+    opacity: 1;
+    -webkit-backdrop-filter: blur(7px);
+    -webkit-filter: blur(7px);
+    -moz-filter: blur(7px);
+    -ms-filter: blur(7px);
+    -o-filter: blur(7px);
+    filter: blur(7px);
+    -webkit-transform: translate3d(0, 100%, 0) scale(0.8);
+    -moz-transform: translate3d(0, 100%, 0) scale(0.8);
+    -ms-transform: translate3d(0, 100%, 0) scale(0.8);
+    -o-transform: translate3d(0, 100%, 0) scale(0.8);
+    transform: translate3d(0, 100%, 0) scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    z-index: 1;
+    -webkit-backdrop-filter: blur(0);
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    -ms-filter: blur(0);
+    -o-filter: blur(0);
+    filter: blur(0);
+    -webkit-transform: translate3d(0, 0, 0) scale(0.8);
+    -moz-transform: translate3d(0, 0, 0) scale(0.8);
+    -ms-transform: translate3d(0, 0, 0) scale(0.8);
+    -o-transform: translate3d(0, 0, 0) scale(0.8);
+    transform: translate3d(0, 0, 0) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    z-index: 2;
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    -moz-transform: translate3d(0, 0, 0) scale(1);
+    -ms-transform: translate3d(0, 0, 0) scale(1);
+    -o-transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+@keyframes card_in {
+  0% {
+    opacity: 1;
+    -webkit-backdrop-filter: blur(7px);
+    -webkit-filter: blur(7px);
+    -moz-filter: blur(7px);
+    -ms-filter: blur(7px);
+    -o-filter: blur(7px);
+    filter: blur(7px);
+    -webkit-transform: translate3d(0, 100%, 0) scale(0.8);
+    -moz-transform: translate3d(0, 100%, 0) scale(0.8);
+    -ms-transform: translate3d(0, 100%, 0) scale(0.8);
+    -o-transform: translate3d(0, 100%, 0) scale(0.8);
+    transform: translate3d(0, 100%, 0) scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    z-index: 1;
+    -webkit-backdrop-filter: blur(0);
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    -ms-filter: blur(0);
+    -o-filter: blur(0);
+    filter: blur(0);
+    -webkit-transform: translate3d(0, 0, 0) scale(0.8);
+    -moz-transform: translate3d(0, 0, 0) scale(0.8);
+    -ms-transform: translate3d(0, 0, 0) scale(0.8);
+    -o-transform: translate3d(0, 0, 0) scale(0.8);
+    transform: translate3d(0, 0, 0) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    z-index: 2;
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    -moz-transform: translate3d(0, 0, 0) scale(1);
+    -ms-transform: translate3d(0, 0, 0) scale(1);
+    -o-transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+@-webkit-keyframes card_out {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    -moz-transform: translate3d(0, 0, 0) scale(1);
+    -ms-transform: translate3d(0, 0, 0) scale(1);
+    -o-transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-backdrop-filter: blur(0);
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    -ms-filter: blur(0);
+    -o-filter: blur(0);
+    filter: blur(0);
+    -webkit-transform: translate3d(0, 0, 0) scale(0.8);
+    -moz-transform: translate3d(0, 0, 0) scale(0.8);
+    -ms-transform: translate3d(0, 0, 0) scale(0.8);
+    -o-transform: translate3d(0, 0, 0) scale(0.8);
+    transform: translate3d(0, 0, 0) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    z-index: 1;
+    -webkit-backdrop-filter: blur(7px);
+    -webkit-filter: blur(7px);
+    -moz-filter: blur(7px);
+    -ms-filter: blur(7px);
+    -o-filter: blur(7px);
+    filter: blur(7px);
+    -webkit-transform: translate3d(0, -100%, 0) scale(0.8);
+    -moz-transform: translate3d(0, -100%, 0) scale(0.8);
+    -ms-transform: translate3d(0, -100%, 0) scale(0.8);
+    -o-transform: translate3d(0, -100%, 0) scale(0.8);
+    transform: translate3d(0, -100%, 0) scale(0.8);
+  }
+}
+@-moz-keyframes card_out {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    -moz-transform: translate3d(0, 0, 0) scale(1);
+    -ms-transform: translate3d(0, 0, 0) scale(1);
+    -o-transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-backdrop-filter: blur(0);
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    -ms-filter: blur(0);
+    -o-filter: blur(0);
+    filter: blur(0);
+    -webkit-transform: translate3d(0, 0, 0) scale(0.8);
+    -moz-transform: translate3d(0, 0, 0) scale(0.8);
+    -ms-transform: translate3d(0, 0, 0) scale(0.8);
+    -o-transform: translate3d(0, 0, 0) scale(0.8);
+    transform: translate3d(0, 0, 0) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    z-index: 1;
+    -webkit-backdrop-filter: blur(7px);
+    -webkit-filter: blur(7px);
+    -moz-filter: blur(7px);
+    -ms-filter: blur(7px);
+    -o-filter: blur(7px);
+    filter: blur(7px);
+    -webkit-transform: translate3d(0, -100%, 0) scale(0.8);
+    -moz-transform: translate3d(0, -100%, 0) scale(0.8);
+    -ms-transform: translate3d(0, -100%, 0) scale(0.8);
+    -o-transform: translate3d(0, -100%, 0) scale(0.8);
+    transform: translate3d(0, -100%, 0) scale(0.8);
+  }
+}
+@-ms-keyframes card_out {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    -moz-transform: translate3d(0, 0, 0) scale(1);
+    -ms-transform: translate3d(0, 0, 0) scale(1);
+    -o-transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-backdrop-filter: blur(0);
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    -ms-filter: blur(0);
+    -o-filter: blur(0);
+    filter: blur(0);
+    -webkit-transform: translate3d(0, 0, 0) scale(0.8);
+    -moz-transform: translate3d(0, 0, 0) scale(0.8);
+    -ms-transform: translate3d(0, 0, 0) scale(0.8);
+    -o-transform: translate3d(0, 0, 0) scale(0.8);
+    transform: translate3d(0, 0, 0) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    z-index: 1;
+    -webkit-backdrop-filter: blur(7px);
+    -webkit-filter: blur(7px);
+    -moz-filter: blur(7px);
+    -ms-filter: blur(7px);
+    -o-filter: blur(7px);
+    filter: blur(7px);
+    -webkit-transform: translate3d(0, -100%, 0) scale(0.8);
+    -moz-transform: translate3d(0, -100%, 0) scale(0.8);
+    -ms-transform: translate3d(0, -100%, 0) scale(0.8);
+    -o-transform: translate3d(0, -100%, 0) scale(0.8);
+    transform: translate3d(0, -100%, 0) scale(0.8);
+  }
+}
+@keyframes card_out {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    -moz-transform: translate3d(0, 0, 0) scale(1);
+    -ms-transform: translate3d(0, 0, 0) scale(1);
+    -o-transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-backdrop-filter: blur(0);
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    -ms-filter: blur(0);
+    -o-filter: blur(0);
+    filter: blur(0);
+    -webkit-transform: translate3d(0, 0, 0) scale(0.8);
+    -moz-transform: translate3d(0, 0, 0) scale(0.8);
+    -ms-transform: translate3d(0, 0, 0) scale(0.8);
+    -o-transform: translate3d(0, 0, 0) scale(0.8);
+    transform: translate3d(0, 0, 0) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    z-index: 1;
+    -webkit-backdrop-filter: blur(7px);
+    -webkit-filter: blur(7px);
+    -moz-filter: blur(7px);
+    -ms-filter: blur(7px);
+    -o-filter: blur(7px);
+    filter: blur(7px);
+    -webkit-transform: translate3d(0, -100%, 0) scale(0.8);
+    -moz-transform: translate3d(0, -100%, 0) scale(0.8);
+    -ms-transform: translate3d(0, -100%, 0) scale(0.8);
+    -o-transform: translate3d(0, -100%, 0) scale(0.8);
+    transform: translate3d(0, -100%, 0) scale(0.8);
   }
 }

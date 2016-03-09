@@ -588,6 +588,8 @@ var bathroomHappiness = {
       $('#shower-technology .shower-technology-menu a').removeClass('active');
       $(this).addClass('active');
       var section = $(this).data('section');
+      $('#shower-technology .shower-technology-card').removeClass('active');
+      $('#shower-technology .st-'+section).addClass('active');      
       var video = $('#st-'+section+'-video-wrap').data('video');
       var vars = {
           showinfo: 0,
@@ -618,7 +620,7 @@ var bathroomHappiness = {
       return false;
     });
     $('#shower-technology .view-video').on('click', function(){
-      $('.shower-technology-description').toggleClass('active');
+      $('#shower-technology .shower-technology-description').toggleClass('active');
       return false;
     });
     $('#shower-technology .close-video').on('click', function(){

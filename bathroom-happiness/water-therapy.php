@@ -1673,32 +1673,260 @@
                   </div>
                 </div>
                 <div class="col-lg-6">
-                  <div class="shower-technology-description">
-                    <div class="shower-technology-flip">
-                      <div class="front">
-                        <figure class="image">
-                          <img src="images/water_therapy/shower.png" alt="Shower">
-                        </figure>
-                        <div class="icon-wrap">
-                            <svg class="icon shape-waterfall"><use xlink:href="#shape-waterfall"></use></svg>
-                        </div><!-- /.icon-wrap -->
-                        <h3>Waterfall</h3>
-                        <div class="text">
-                          <p>Here we link types of showers to their emotional benefit. E.g. Overhead showers offer a completely immersive showering experience like that of a waterfall.</p>
-                        </div>
-                        <ul class="list-inline">
-                          <li><a href="#" target="_blank" class="see-product">See Product</a></li>
-                          <li><a href="#" class="view-video"><i class="icon-play"></i> View in Action</a></li>
-                        </ul>
-                      </div>
-                      <div class="back">
-                        <div id="st-waterfall-video-wrap" class="video-iframe-wrap video" data-video="BIAWhMhhY58">
-                            <figure id="st-waterfall-video"></figure>          
-                        </div>
-                        <button type="button" class="close-video"><i class="icon-close"></i><span class="sr-only">Close</span></button>
-                      </div>                    
-                    </div>
-                  </div>
+                  <div class="shower-technology-cards">
+                    <div class="shower-technology-card st-waterfall active">
+                      <div class="shower-technology-description">
+                        <div class="shower-technology-flip">
+                          <div class="front">
+                            <figure class="image">
+                              <img src="images/water_therapy/shower.png" alt="Shower">
+                            </figure>
+                            <div class="icon-wrap">
+                                <svg class="icon shape-waterfall"><use xlink:href="#shape-waterfall"></use></svg>
+                            </div><!-- /.icon-wrap -->
+                            <h3>Waterfall</h3>
+                            <div class="text">
+                              <p>Here we link types of showers to their emotional benefit. E.g. Overhead showers offer a completely immersive showering experience like that of a waterfall.</p>
+                            </div>
+                            <ul class="list-inline">
+                              <li><a href="#" target="_blank" class="see-product">See Product</a></li>
+                              <li><a href="#" class="view-video" data-section="waterfall"><i class="icon-play"></i> View in Action</a></li>
+                            </ul>
+                          </div>
+                          <div class="back">
+                            <div id="st-waterfall-video-wrap" class="video-iframe-wrap video" data-video="BIAWhMhhY58">
+                                <figure id="st-waterfall-video"></figure>          
+                            </div>
+                            <button type="button" class="close-video"><i class="icon-close"></i><span class="sr-only">Close</span></button>
+                          </div>                    
+                        </div><!-- /.shower-technology-flip -->
+                      </div><!-- /.shower-technology-description -->
+                    </div><!-- /.shower-technology-card -->
+                    <div class="shower-technology-card st-body-spray">
+                      <div class="shower-technology-description">
+                        <div class="shower-technology-flip">
+                          <div class="front">
+                            <figure class="image">
+                              <img src="images/water_therapy/shower.png" alt="Shower">
+                            </figure>
+                            <div class="icon-wrap">
+                                <svg class="icon shape-body-spray"><use xlink:href="#shape-body-spray"></use></svg>
+                            </div><!-- /.icon-wrap -->
+                            <h3>Body Spray</h3>
+                            <div class="text">
+                              <p>Here we link types of showers to their emotional benefit. E.g. Overhead showers offer a completely immersive showering experience like that of a body spray.</p>
+                            </div>
+                            <ul class="list-inline">
+                              <li><a href="#" target="_blank" class="see-product">See Product</a></li>
+                              <li><a href="#" class="view-video" data-section="body-spray"><i class="icon-play"></i> View in Action</a></li>
+                            </ul>
+                          </div>
+                          <div class="back">
+                            <div id="st-body-spray-video-wrap" class="video-iframe-wrap video" data-video="BIAWhMhhY58">
+                                <figure id="st-body-spray-video"></figure>          
+                            </div>
+                            <button type="button" class="close-video"><i class="icon-close"></i><span class="sr-only">Close</span></button>
+                          </div>                    
+                        </div><!-- /.shower-technology-flip -->
+                      </div><!-- /.shower-technology-description -->
+                    </div><!-- /.shower-technology-card -->
+                    <div class="shower-technology-card st-led">
+                      <div class="shower-technology-description">
+                        <div class="shower-technology-flip">
+                          <div class="front">
+                            <figure class="image">
+                              <img src="images/water_therapy/shower.png" alt="Shower">
+                            </figure>
+                            <div class="icon-wrap">
+                                <svg class="icon shape-led"><use xlink:href="#shape-led"></use></svg>
+                            </div><!-- /.icon-wrap -->
+                            <h3>Led</h3>
+                            <div class="text">
+                              <p>Here we link types of showers to their emotional benefit. E.g. Overhead showers offer a completely immersive showering experience like that of a Led.</p>
+                            </div>
+                            <ul class="list-inline">
+                              <li><a href="#" target="_blank" class="see-product">See Product</a></li>
+                              <li><a href="#" class="view-video" data-section="led"><i class="icon-play"></i> View in Action</a></li>
+                            </ul>
+                          </div>
+                          <div class="back">
+                            <div id="st-led-video-wrap" class="video-iframe-wrap video" data-video="BIAWhMhhY58">
+                                <figure id="st-led-video"></figure>          
+                            </div>
+                            <button type="button" class="close-video"><i class="icon-close"></i><span class="sr-only">Close</span></button>
+                          </div>                    
+                        </div><!-- /.shower-technology-flip -->
+                      </div><!-- /.shower-technology-description -->
+                    </div><!-- /.shower-technology-card -->
+                    <div class="shower-technology-card st-airdrop">
+                      <div class="shower-technology-description">
+                        <div class="shower-technology-flip">
+                          <div class="front">
+                            <figure class="image">
+                              <img src="images/water_therapy/shower.png" alt="Shower">
+                            </figure>
+                            <div class="icon-wrap">
+                                <svg class="icon shape-airdrop"><use xlink:href="#shape-airdrop"></use></svg>
+                            </div><!-- /.icon-wrap -->
+                            <h3>Air Drop</h3>
+                            <div class="text">
+                              <p>Here we link types of showers to their emotional benefit. E.g. Overhead showers offer a completely immersive showering experience like that of a air drop.</p>
+                            </div>
+                            <ul class="list-inline">
+                              <li><a href="#" target="_blank" class="see-product">See Product</a></li>
+                              <li><a href="#" class="view-video" data-section="airdrop"><i class="icon-play"></i> View in Action</a></li>
+                            </ul>
+                          </div>
+                          <div class="back">
+                            <div id="st-airdrop-video-wrap" class="video-iframe-wrap video" data-video="BIAWhMhhY58">
+                                <figure id="st-airdrop-video"></figure>          
+                            </div>
+                            <button type="button" class="close-video"><i class="icon-close"></i><span class="sr-only">Close</span></button>
+                          </div>                    
+                        </div><!-- /.shower-technology-flip -->
+                      </div><!-- /.shower-technology-description -->
+                    </div><!-- /.shower-technology-card -->
+                    <div class="shower-technology-card st-turbine">
+                      <div class="shower-technology-description">
+                        <div class="shower-technology-flip">
+                          <div class="front">
+                            <figure class="image">
+                              <img src="images/water_therapy/shower.png" alt="Shower">
+                            </figure>
+                            <div class="icon-wrap">
+                                <svg class="icon shape-turbine"><use xlink:href="#shape-turbine"></use></svg>
+                            </div><!-- /.icon-wrap -->
+                            <h3>Turbine</h3>
+                            <div class="text">
+                              <p>Here we link types of showers to their emotional benefit. E.g. Overhead showers offer a completely immersive showering experience like that of a turbine.</p>
+                            </div>
+                            <ul class="list-inline">
+                              <li><a href="#" target="_blank" class="see-product">See Product</a></li>
+                              <li><a href="#" class="view-video" data-section="turbine"><i class="icon-play"></i> View in Action</a></li>
+                            </ul>
+                          </div>
+                          <div class="back">
+                            <div id="st-turbine-video-wrap" class="video-iframe-wrap video" data-video="BIAWhMhhY58">
+                                <figure id="st-turbine-video"></figure>          
+                            </div>
+                            <button type="button" class="close-video"><i class="icon-close"></i><span class="sr-only">Close</span></button>
+                          </div>                    
+                        </div><!-- /.shower-technology-flip -->
+                      </div><!-- /.shower-technology-description -->
+                    </div><!-- /.shower-technology-card -->
+                    <div class="shower-technology-card st-raindance">
+                      <div class="shower-technology-description">
+                        <div class="shower-technology-flip">
+                          <div class="front">
+                            <figure class="image">
+                              <img src="images/water_therapy/shower.png" alt="Shower">
+                            </figure>
+                            <div class="icon-wrap">
+                                <svg class="icon shape-raindance"><use xlink:href="#shape-raindance"></use></svg>
+                            </div><!-- /.icon-wrap -->
+                            <h3>Raindance</h3>
+                            <div class="text">
+                              <p>Here we link types of showers to their emotional benefit. E.g. Overhead showers offer a completely immersive showering experience like that of a raindance.</p>
+                            </div>
+                            <ul class="list-inline">
+                              <li><a href="#" target="_blank" class="see-product">See Product</a></li>
+                              <li><a href="#" class="view-video" data-section="raindance"><i class="icon-play"></i> View in Action</a></li>
+                            </ul>
+                          </div>
+                          <div class="back">
+                            <div id="st-raindance-video-wrap" class="video-iframe-wrap video" data-video="BIAWhMhhY58">
+                                <figure id="st-raindance-video"></figure>          
+                            </div>
+                            <button type="button" class="close-video"><i class="icon-close"></i><span class="sr-only">Close</span></button>
+                          </div>                    
+                        </div><!-- /.shower-technology-flip -->
+                      </div><!-- /.shower-technology-description -->
+                    </div><!-- /.shower-technology-card -->
+                    <div class="shower-technology-card st-soft-rain">
+                      <div class="shower-technology-description">
+                        <div class="shower-technology-flip">
+                          <div class="front">
+                            <figure class="image">
+                              <img src="images/water_therapy/shower.png" alt="Shower">
+                            </figure>
+                            <div class="icon-wrap">
+                                <svg class="icon shape-soft-rain"><use xlink:href="#shape-soft-rain"></use></svg>
+                            </div><!-- /.icon-wrap -->
+                            <h3>Croma Soft Rain</h3>
+                            <div class="text">
+                              <p>Here we link types of showers to their emotional benefit. E.g. Overhead showers offer a completely immersive showering experience like that of a Croma Soft Rain.</p>
+                            </div>
+                            <ul class="list-inline">
+                              <li><a href="#" target="_blank" class="see-product">See Product</a></li>
+                              <li><a href="#" class="view-video" data-section="soft-rain"><i class="icon-play"></i> View in Action</a></li>
+                            </ul>
+                          </div>
+                          <div class="back">
+                            <div id="st-soft-rain-video-wrap" class="video-iframe-wrap video" data-video="BIAWhMhhY58">
+                                <figure id="st-soft-rain-video"></figure>          
+                            </div>
+                            <button type="button" class="close-video"><i class="icon-close"></i><span class="sr-only">Close</span></button>
+                          </div>                    
+                        </div><!-- /.shower-technology-flip -->
+                      </div><!-- /.shower-technology-description -->
+                    </div><!-- /.shower-technology-card -->
+                    <div class="shower-technology-card st-intense-rain">
+                      <div class="shower-technology-description">
+                        <div class="shower-technology-flip">
+                          <div class="front">
+                            <figure class="image">
+                              <img src="images/water_therapy/shower.png" alt="Shower">
+                            </figure>
+                            <div class="icon-wrap">
+                                <svg class="icon shape-intense-rain"><use xlink:href="#shape-intense-rain"></use></svg>
+                            </div><!-- /.icon-wrap -->
+                            <h3>Croma Intense Rain</h3>
+                            <div class="text">
+                              <p>Here we link types of showers to their emotional benefit. E.g. Overhead showers offer a completely immersive showering experience like that of a Croma Intense Rain.</p>
+                            </div>
+                            <ul class="list-inline">
+                              <li><a href="#" target="_blank" class="see-product">See Product</a></li>
+                              <li><a href="#" class="view-video" data-section="intense-rain"><i class="icon-play"></i> View in Action</a></li>
+                            </ul>
+                          </div>
+                          <div class="back">
+                            <div id="st-intense-rain-video-wrap" class="video-iframe-wrap video" data-video="BIAWhMhhY58">
+                                <figure id="st-intense-rain-video"></figure>          
+                            </div>
+                            <button type="button" class="close-video"><i class="icon-close"></i><span class="sr-only">Close</span></button>
+                          </div>                    
+                        </div><!-- /.shower-technology-flip -->
+                      </div><!-- /.shower-technology-description -->
+                    </div><!-- /.shower-technology-card -->
+                    <div class="shower-technology-card st-massage">
+                      <div class="shower-technology-description">
+                        <div class="shower-technology-flip">
+                          <div class="front">
+                            <figure class="image">
+                              <img src="images/water_therapy/shower.png" alt="Shower">
+                            </figure>
+                            <div class="icon-wrap">
+                                <svg class="icon shape-massage"><use xlink:href="#shape-massage"></use></svg>
+                            </div><!-- /.icon-wrap -->
+                            <h3>Croma Massage</h3>
+                            <div class="text">
+                              <p>Here we link types of showers to their emotional benefit. E.g. Overhead showers offer a completely immersive showering experience like that of a Croma Massage.</p>
+                            </div>
+                            <ul class="list-inline">
+                              <li><a href="#" target="_blank" class="see-product">See Product</a></li>
+                              <li><a href="#" class="view-video" data-section="massage"><i class="icon-play"></i> View in Action</a></li>
+                            </ul>
+                          </div>
+                          <div class="back">
+                            <div id="st-massage-video-wrap" class="video-iframe-wrap video" data-video="BIAWhMhhY58">
+                                <figure id="st-massage-video"></figure>          
+                            </div>
+                            <button type="button" class="close-video"><i class="icon-close"></i><span class="sr-only">Close</span></button>
+                          </div>                    
+                        </div><!-- /.shower-technology-flip -->
+                      </div><!-- /.shower-technology-description -->
+                    </div><!-- /.shower-technology-card -->
+                  </div><!-- /.shower-technology-cards -->                  
                 </div>
               </div>
             </div><!-- /.row -->

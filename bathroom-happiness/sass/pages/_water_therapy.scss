@@ -1012,12 +1012,24 @@ body.water-therapy{
 				}
 				.panel-slideshow{
 					.slide-content{
+						.slideshow-buttons{
+							top: 216px;
+						}
+						.slide-image{
+							margin-bottom: 10px;
+						}
 						.slide-text{
 							margin-bottom: 30px;
 						}
-					}
-					.slideshow-label{
-						a{
+						.slide-btn-wrap{
+							text-align: center;
+						}
+						.slide-btn{
+							text-transform: uppercase;
+							color: white;
+							display: inline-block;
+							padding: 9px 18px;
+							margin: 0 auto;
 							background: $water-therapy-green;
 							&:hover{
 								background: $water-therapy-blue;

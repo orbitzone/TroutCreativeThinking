@@ -559,6 +559,15 @@ var bathroomHappiness = {
     });
     var currentSection = 1;
     $(window).on('resize', function(){
+      $('.panel-slideshow').each(function () {
+        var $arrows = $(this).find('.slideshow-buttons');
+        if($(this).find('.slide-image').length > 0){
+          var top = $(this).find('.slide-image').first().position().top + 10 + $(this).find('.slide-image').first().outerHeight();
+          $arrows.css({
+            top: top
+          });
+        }
+      });
       var width = $('#banner .banner').width();
       var height = 9 * width/16;
       $('#water-therapy-video').width(width);

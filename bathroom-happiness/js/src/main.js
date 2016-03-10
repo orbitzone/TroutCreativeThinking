@@ -471,7 +471,7 @@ var bathroomHappiness = {
   },
   waterTherapy: function(){
     // When the player is ready, add listeners for pause, finish, and playProgress
-
+    var windowWidth = $(window).width();
     if(!isMobile.any()){
       var initialVideoLoad = ['water-therapy','water-therapy-therapeutic','water-therapy-relaxation','water-therapy-rejuvenation','st-waterfall'];
       for(var k = 0; k < initialVideoLoad.length; k++){
@@ -666,7 +666,10 @@ var bathroomHappiness = {
       $(this).addClass('active');
       var section = $(this).data('section');
       $('#shower-technology .shower-technology-card').removeClass('active');
-      $('#shower-technology .st-'+section).addClass('active');     
+      $('#shower-technology .st-'+section).addClass('active'); 
+      if(windowWidth){
+        $('html, body').animate({scrollTop: $('#shower-technology .shower-technology-cards').offset().top - 20},500);         
+      }
       if(playerManager.active.substring(0,2) == 'st'){
         playerManager.stop(playerManager.active);
       }
@@ -748,7 +751,7 @@ var bathroomHappiness = {
       $('#water-therapy .videos iframe').width(width);
       $('#water-therapy .videos iframe').height(height);
 
-      var windowWidth = $(window).width();
+      windowWidth = $(window).width();
       var containerWidth = $('.grid-module-intro-wrap').width();
       
       if(windowWidth < 768){

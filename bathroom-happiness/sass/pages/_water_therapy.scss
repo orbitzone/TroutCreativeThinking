@@ -1201,6 +1201,7 @@ body.water-therapy{
 								max-width: 90px;								
 								@media (min-width: $screen-sm){
 									margin: 0 auto;
+									margin-top: 20px;
 									max-width: 115px;								
 								}
 							}
@@ -1216,8 +1217,8 @@ body.water-therapy{
 							  margin: 0 auto;		
 							  @include transition(0.5s all ease-out);
 							  @media (min-width: $screen-sm){
-							  	width: 60px;
-							  	height: 60px;
+							  	width: 55px;
+							  	height: 55px;
 							  }						  
 							}
 							&:hover{
@@ -1255,9 +1256,18 @@ body.water-therapy{
 					z-index: 1;
 					//@include transition(1s all ease-in-out);
 					@include animation(card_out 1s ease-in-out forwards);
+					&.ie-lt{
+						@include animation(none);
+						opacity: 0;
+						@include transition(1s all ease-in-out);
+					}
 					&.active{
 						opacity: 0;
 						@include animation(card_in 1s ease-in-out 0.5s forwards);
+						&.ie-lt{
+							opacity: 1;
+							@include transition(1s all ease-in-out);
+						}
 						//@include transform(translateY(0) translateZ(0));
 					}
 				}
@@ -1284,6 +1294,13 @@ body.water-therapy{
 				&.active{
 					.shower-technology-flip{
 						@include transform(rotateY(180deg));
+					}
+				}
+				ul{
+					padding-top: 40px;
+					li{
+						padding-left: 10px;
+						padding-right: 10px;
 					}
 				}
 				.icon-wrap{
@@ -1322,6 +1339,13 @@ body.water-therapy{
 					color: $water-therapy-green;
 					text-transform: uppercase;
 					font-weight: 400;
+					.icon{
+						vertical-align: middle;
+						margin-right: 5px;
+						width: 40px;
+						height: 40px;
+						fill: $water-therapy-green;
+					}
 				}				
 				.shower-technology-flip{
 					@include transition(0.6s all ease-out);

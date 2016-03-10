@@ -697,8 +697,13 @@ var bathroomHappiness = {
         });
       });
     }).resize();
-    if(isIE()){
-      $('.grid-module-zones-section, .grid-module-zone-1, .grid-module-zone-2, .grid-module-zone-3').addClass('ie');
+    var ieV =isIE();
+    if(ieV){
+      var lt = "";
+      if(ieV <= 9){
+        lt = "ie-lt";
+      }
+      $('.grid-module-zones-section, .grid-module-zone-1, .grid-module-zone-2, .grid-module-zone-3, .shower-technology-card').addClass('ie '+lt);
     }
     $('.grid-module').each(function(){
       var $module = $(this);

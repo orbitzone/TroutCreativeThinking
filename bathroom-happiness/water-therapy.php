@@ -1690,7 +1690,7 @@
                             </div>
                             <ul class="list-inline">
                               <li><a href="#" target="_blank" class="see-product">See Product</a></li>
-                              <li><a href="#" class="view-video" data-section="waterfall"><i class="icon-play"></i> View in Action</a></li>
+                              <li><a href="#" class="view-video" data-section="waterfall"><svg class="icon shape-play"><use xlink:href="#shape-play"></use></svg>View in Action</a></li>
                             </ul>
                           </div>
                           <div class="back">
@@ -1718,7 +1718,7 @@
                             </div>
                             <ul class="list-inline">
                               <li><a href="#" target="_blank" class="see-product">See Product</a></li>
-                              <li><a href="#" class="view-video" data-section="body-spray"><i class="icon-play"></i> View in Action</a></li>
+                              <li><a href="#" class="view-video" data-section="body-spray"><svg class="icon shape-play"><use xlink:href="#shape-play"></use></svg>View in Action</a></li>
                             </ul>
                           </div>
                           <div class="back">
@@ -1746,7 +1746,7 @@
                             </div>
                             <ul class="list-inline">
                               <li><a href="#" target="_blank" class="see-product">See Product</a></li>
-                              <li><a href="#" class="view-video" data-section="led"><i class="icon-play"></i> View in Action</a></li>
+                              <li><a href="#" class="view-video" data-section="led"><svg class="icon shape-play"><use xlink:href="#shape-play"></use></svg>View in Action</a></li>
                             </ul>
                           </div>
                           <div class="back">
@@ -1774,7 +1774,7 @@
                             </div>
                             <ul class="list-inline">
                               <li><a href="#" target="_blank" class="see-product">See Product</a></li>
-                              <li><a href="#" class="view-video" data-section="airdrop"><i class="icon-play"></i> View in Action</a></li>
+                              <li><a href="#" class="view-video" data-section="airdrop"><svg class="icon shape-play"><use xlink:href="#shape-play"></use></svg>View in Action</a></li>
                             </ul>
                           </div>
                           <div class="back">
@@ -1802,7 +1802,7 @@
                             </div>
                             <ul class="list-inline">
                               <li><a href="#" target="_blank" class="see-product">See Product</a></li>
-                              <li><a href="#" class="view-video" data-section="turbine"><i class="icon-play"></i> View in Action</a></li>
+                              <li><a href="#" class="view-video" data-section="turbine"><svg class="icon shape-play"><use xlink:href="#shape-play"></use></svg>View in Action</a></li>
                             </ul>
                           </div>
                           <div class="back">
@@ -1830,7 +1830,7 @@
                             </div>
                             <ul class="list-inline">
                               <li><a href="#" target="_blank" class="see-product">See Product</a></li>
-                              <li><a href="#" class="view-video" data-section="raindance"><i class="icon-play"></i> View in Action</a></li>
+                              <li><a href="#" class="view-video" data-section="raindance"><svg class="icon shape-play"><use xlink:href="#shape-play"></use></svg>View in Action</a></li>
                             </ul>
                           </div>
                           <div class="back">
@@ -1858,7 +1858,7 @@
                             </div>
                             <ul class="list-inline">
                               <li><a href="#" target="_blank" class="see-product">See Product</a></li>
-                              <li><a href="#" class="view-video" data-section="soft-rain"><i class="icon-play"></i> View in Action</a></li>
+                              <li><a href="#" class="view-video" data-section="soft-rain"><svg class="icon shape-play"><use xlink:href="#shape-play"></use></svg>View in Action</a></li>
                             </ul>
                           </div>
                           <div class="back">
@@ -1886,7 +1886,7 @@
                             </div>
                             <ul class="list-inline">
                               <li><a href="#" target="_blank" class="see-product">See Product</a></li>
-                              <li><a href="#" class="view-video" data-section="intense-rain"><i class="icon-play"></i> View in Action</a></li>
+                              <li><a href="#" class="view-video" data-section="intense-rain"><svg class="icon shape-play"><use xlink:href="#shape-play"></use></svg>View in Action</a></li>
                             </ul>
                           </div>
                           <div class="back">
@@ -1914,7 +1914,7 @@
                             </div>
                             <ul class="list-inline">
                               <li><a href="#" target="_blank" class="see-product">See Product</a></li>
-                              <li><a href="#" class="view-video" data-section="massage"><i class="icon-play"></i> View in Action</a></li>
+                              <li><a href="#" class="view-video" data-section="massage"><svg class="icon shape-play"><use xlink:href="#shape-play"></use></svg>View in Action</a></li>
                             </ul>
                           </div>
                           <div class="back">

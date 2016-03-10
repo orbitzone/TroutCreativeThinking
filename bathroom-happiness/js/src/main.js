@@ -757,7 +757,7 @@ var bathroomHappiness = {
         $('.grid-module-zones-section').width(containerWidth);
 
         height = $('#shower-technology .shower-technology-description .front').outerHeight();
-        $('#shower-technology .shower-technology-description .shower-technology-flip, #shower-technology .shower-technology-description .back').height(height);
+        $('#shower-technology .shower-technology-cards, #shower-technology .shower-technology-description .shower-technology-flip, #shower-technology .shower-technology-description .back').height(height);
       }else{
         $('.grid-module-zones-sections').width('');
         $('.grid-module-zones-section').width('');

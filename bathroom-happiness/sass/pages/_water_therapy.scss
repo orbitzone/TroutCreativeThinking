@@ -1286,7 +1286,7 @@ body.water-therapy{
 				position: relative;
 				margin-bottom: 75px;
 				min-height: 385.87px;	
-				padding: 30px 0;
+				padding: 30px 0 0;
 				@media (min-width: $screen-sm){
 					width: 545px;
 					height: 615px;						
@@ -1340,6 +1340,7 @@ body.water-therapy{
 					li{
 						padding-left: 10px;
 						padding-right: 10px;
+						margin-bottom: 10px;
 					}
 				}
 				.icon-wrap{
@@ -1420,7 +1421,7 @@ body.water-therapy{
 						background: linear-gradient(to bottom,  #000000 0%,#161c23 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#161c23',GradientType=0 ); /* IE6-9 */
 						
-						padding: 40px;
+						padding: 40px 40px 30px;
 						z-index: 2;
 						@include transform(rotateY(0deg));
 					}

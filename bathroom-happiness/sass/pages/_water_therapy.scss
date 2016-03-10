@@ -320,7 +320,7 @@ body.water-therapy{
 						max-width: 100%;
 						margin: 0 auto;
 						position: relative;
-						@include perspective(1000px);
+						@include perspective(1000);
 						@media (min-width: $screen-sm){
 							max-width: 738px;
 						}
@@ -794,15 +794,12 @@ body.water-therapy{
 					.grid-module-zone-5,
 					.grid-module-zone-6
 					{
-						-webkit-backface-visibility: hidden;
-						-moz-backface-visibility: hidden;
-						backface-visibility: hidden;
-						@include transform(translate3d(0,0,0));
+						@include backface-visibility(hidden);
 						@include transform-style(preserve-3d);
 						@include transform(translateZ(0));
 					}
 					.grid-module-zone-wrap{
-						@include perspective(2000px);
+						@include perspective(1000);
 						@include transform-style(preserve-3d);
 					}
 					.grid-module-zone-1{
@@ -1262,7 +1259,7 @@ body.water-therapy{
 						@include transition(1s all ease-in-out);
 					}
 					&.active{
-						opacity: 0;
+						@include transform(translateY(615px) translateZ(0) scale(1));
 						@include animation(card_in 1s ease-in-out 0.5s forwards);
 						&.ie-lt{
 							@include animation(none);
@@ -1276,7 +1273,7 @@ body.water-therapy{
 			}
 			.shower-technology-description{
 				text-align: center;
-				@include perspective(2000px);
+				@include perspective(1000);
 				color: white;
 				padding: 0;
 				.image{
@@ -1292,11 +1289,6 @@ body.water-therapy{
 					text-align: center;
 					letter-spacing: 0.17em;
 					margin: 20px 0;
-				}
-				&.active{
-					.shower-technology-flip{
-						@include transform(rotateY(180deg));
-					}
 				}
 				ul{
 					padding-top: 40px;
@@ -1362,6 +1354,8 @@ body.water-therapy{
 					.front,
 					.back{
 						@include backface-visibility(hidden);
+						@include transition(0.6s all ease-out);
+						@include transform-style(preserve-3d);
 						position: absolute;
 						top: 0;
 						left: 0;
@@ -1392,7 +1386,7 @@ body.water-therapy{
 						background: linear-gradient(to bottom,  #000000 0%,#161c23 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#161c23',GradientType=0 ); /* IE6-9 */
 
-						@include transform(rotateY(180deg));
+						@include transform(rotateY(-180deg));
 						overflow: hidden;
 						.video{
 							overflow: hidden;
@@ -1432,6 +1426,28 @@ body.water-therapy{
 							top: 10px;
 							right: 10px;
 							z-index: 2;
+							@include appearance(none);
+							outline: none;
+							border: none;
+							@include border-radius(0);
+							background: none;
+							.icon{
+								fill: $water-therapy-green;
+								width: 32px;
+								height: 32px;
+							}
+						}
+					}
+				}//.shower-technology-flip
+
+				&.active{
+					.shower-technology-flip{
+						//@include transform(rotateY(180deg));
+						.back{
+							@include transform(rotateY(0deg));
+						}
+						.front{
+							@include transform(rotateY(180deg));										
 						}
 					}
 				}
@@ -1612,34 +1628,34 @@ body.water-therapy{
 	0%{
 		opacity: 1;
 		@include filter(blur(7px));
-		@include transform(translate3d(0,100%,0) scale(0.8));
+		@include transform(translateY(615px) translateZ(0) scale(0.8));
 	}
 	50%{
 		opacity: 1;
 		z-index: 1;
 		@include filter(blur(0));
-		@include transform(translate3d(0,0,0) scale(0.8));
+		@include transform(translateY(0) translateZ(0) scale(0.8));
 	}
 	100%{		
 		opacity: 1;
 		z-index: 2;
-		@include transform(translate3d(0,0,0) scale(1));
+		@include transform(translateY(0) translateZ(0) scale(1));
 	}
 }
 @include keyframes(card_out){
 	0%{
 		opacity: 1;
-		@include transform(translate3d(0,0,0) scale(1));		
+		@include transform(translateY(0) translateZ(0) scale(1));		
 	}
 	50%{
 		opacity: 1;
 		@include filter(blur(0));
-		@include transform(translate3d(0,0,0) scale(0.8));
+		@include transform(translateY(0) translateZ(0) scale(0.8));
 	}
 	100%{		
 		opacity: 1;
 		z-index: 1;
 		@include filter(blur(7px));
-		@include transform(translate3d(0,-100%,0) scale(0.8));
+		@include transform(translateY(-615px) translateZ(0) scale(0.8));
 	}
 }

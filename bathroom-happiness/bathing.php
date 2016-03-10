@@ -135,8 +135,68 @@
                 </div>
               </div>
             </div><!-- /.row -->
+          </div><!-- /.grid-module-zones-2-3 -->
+          <div class="grid-module-zone-4">
+            <div class="row">
+              <div class="col-xs-12">
+                <h3>Bathroom Freedom</h3>
+                <div class="text">
+                  <p>Statement about freestanding bathroom styles.</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="product">
+                  <a href="#" target="_blank">
+                    <figure class="image">
+                      <img src="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
+                    </figure>
+                    <div class="product-description">
+                      <h5>LAUFEN Palomba Collection</h5>
+                      <h4>Solid Surface Freestanding Bath</h4>
+                    </div>
+                    <div class="button">
+                      Shop Now
+                    </div>
+                  </a>
+                </div><!-- /.product -->
+              </div>
+              <div class="col-sm-4">
+                <div class="product">
+                  <a href="#" target="_blank">
+                    <figure class="image">
+                      <img src="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
+                    </figure>
+                    <div class="product-description">
+                      <h5>LAUFEN Palomba Collection</h5>
+                      <h4>Solid Surface Freestanding Bath</h4>
+                    </div>
+                    <div class="button">
+                      Shop Now
+                    </div>
+                  </a>
+                </div><!-- /.product -->
+              </div>
+              <div class="col-sm-4">
+                <div class="product">
+                  <a href="#" target="_blank">
+                    <figure class="image">
+                      <img src="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
+                    </figure>
+                    <div class="product-description">
+                      <h5>LAUFEN Palomba Collection</h5>
+                      <h4>Solid Surface Freestanding Bath</h4>
+                    </div>
+                    <div class="button">
+                      Shop Now
+                    </div>
+                  </a>
+                </div><!-- /.product -->
+              </div>
+            </div><!-- /.row -->
           </div><!-- /.grid-module-zones-2-3 -->          
-        </div>
+        </div><!-- /.grid-module-zones-section-1-->
         <div class="grid-module-zones-section-2 grid-module-zones-section">
           <div class="row">
             <div class="col-xs-12">

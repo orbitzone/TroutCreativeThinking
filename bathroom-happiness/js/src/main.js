@@ -46,7 +46,9 @@ var ieV = isIE();
       };*/
 var playerManager = {
   players: {},
+  holdingList: [],
   active: '',
+  status: '',
   activate: function(container){
     this.active = container;
   },
@@ -59,27 +61,33 @@ var playerManager = {
       settings: settings
     };
   },
+  addHoldingList: function(settings){
+    this.holdingList.push(settings);
+  },
+  getNextHoldingList: function(){
+    if(this.holdingList.length > 0){
+      return this.holdingList[0];
+    }else{
+      return false;
+    }
+  },
+  removeHoldingList: function(){
+    this.holdingList.shift();
+  },
+  loadNext: function(){
+    var next = this.getNextHoldingList();
+    if(next !== false){
+      var nextPlayer = new player();
+      nextPlayer.init(next);
+      this.removeHoldingList();
+    }
+  },
   update: function(container, settings){
     this.players[settings.container].settings = settings;
   },
   play: function(container){
-   /* if(typeof this.players[container] !== 'undefined'){
-      var player = this.players[container].player;
-      if(player.getVideoData().video_id != player.settings.videoId){
-        this.players[container].player.loadVideoById(player.settings.videoId);     
-        if(player.settings.autoplay && !isMobile.any()){
-          player.play(player.settings.container);
-        }
-      }else{
-        if(player.settings.autoplay && !isMobile.any()){
-          player.play(container);
-        }
-      }
-      return true;
-    }else{
-      return false;
-    }*/
     if(this.exists(container)){
+      playerManager.activate(container);
       var video = this.players[container].player;
       var settings = this.players[container].settings;
       if(typeof video.playVideo !== "undefined"){
@@ -106,13 +114,6 @@ var playerManager = {
       }else{
         this.getActive().settings.autoplay = false;
       }
-    }else{
-     /* var $this = this;
-      $.each(this.players, function(key){
-        if(typeof $this.players[key].player.stopVideo !== "undefined"){
-          $this.players[key].player.stopVideo();             
-        }       
-      });*/
     }
   },
   onChangeState: function(event){
@@ -153,6 +154,7 @@ var playerManager = {
 
   }
 };
+/*
 var player = {
   settings: {
     container: '',
@@ -255,6 +257,121 @@ var player = {
       });
     }
   }
+};*/
+var player = function(){
+  this.settings = {
+    container: '',
+    videoId: '',
+    playerVars: {
+      showinfo: 0,
+      modestbranding: 0,
+      rel: 0,
+      origin: 'reece-responsive.trout.com.au'
+    },
+    autoplay: false,
+    loop: false,
+    mute: false,
+    onReady: function(){},
+    onEnded: function(){},
+    onPaused: function(){},
+    onBuffering: function(){},
+    onPlaying: function(){}
+  };
+  this.ready= false;
+  this.obj = {};
+  this.init = function(settings){
+    if(playerManager.status == 'loading'){
+      playerManager.addHoldingList(settings);
+    }else{
+      this.settings = $.extend({}, this.settings, settings);
+      var initialPlayer =  this;
+      if (typeof(YT) == 'undefined' || typeof(YT.Player) == 'undefined') {
+        playerManager.status = 'loading';
+        window.onYouTubeIframeAPIReady = function() {
+          playerManager.add(initialPlayer.loadPlayer(), settings);        
+        };
+        //This code loads the IFrame Player API code asynchronously.
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      } else {
+        if(!playerManager.exists(this.settings.container)){
+          playerManager.status = 'loading';
+          playerManager.add(this.loadPlayer(), settings);
+        }else{
+          playerManager.update(this.settings.container, settings);
+          if(settings.autoplay){
+            playerManager.play(this.settings.container);
+          }
+        }
+      }
+    }
+  };
+  this.loadPlayer= function(){
+   playerManager.activate(this.settings.container);
+   var container = this.settings.container;
+   var thisSettings = this.settings;
+   var defaults = {
+      videoId: this.settings.videoId,
+      width: 790,
+      height: 444,
+      playerVars: this.settings.playerVars,
+      events: {
+        onReady: function(event){
+          //console.log('The container is '+container);
+          //var id = event.target.c.id;
+          var current = playerManager.players[container];
+          if(thisSettings.autoplay && !deviceMobile){
+            if(typeof thisSettings.mute !== 'undefined'){
+              playerManager.play(container, thisSettings.mute);
+            }else{
+              playerManager.play(container);
+            }
+          }
+          if(typeof thisSettings.onReady === 'function'){
+            var ready = thisSettings.onReady;
+            setTimeout(function(){ ready(container); },500);
+          }
+          playerManager.status = 'ready';
+          playerManager.loadNext();
+          $(window).resize();     
+        },
+        onStateChange: function(event){
+          playerManager.onChangeState(event);
+        }
+      }
+    };
+   return new YT.Player(this.settings.container, defaults);
+  };
+  this.play= function(id, mute){
+    var video = player.obj[id].player;
+    if(typeof video.playVideo !== "undefined"){
+      if(typeof mute !== 'undefined'){
+        if(mute){
+          video.mute();
+        }
+      }
+      video.playVideo();      
+    }
+  };
+  this.stop= function(id){
+    var $this = this;
+    if(typeof id !== "undefined"){
+      var video = player.obj[id].player;
+      if(typeof video.stopVideo !== "undefined"){
+        video.stopVideo();              
+      }else{
+        $this.autoplay = false;
+      }
+    }else{
+      $.each($this.obj, function(key){
+        if(typeof $this.obj[key].player.stopVideo !== "undefined"){
+          $this.obj[key].player.stopVideo();              
+        }       
+      });
+    }
+  };
 };
 var bathroomHappiness = {
   init: function(){
@@ -327,7 +444,8 @@ var bathroomHappiness = {
           modestbranding: 0,
           rel: 0,
         };
-        player.init({
+        var inspPlayer = new player();
+        inspPlayer.init({
           container: player_container,
           videoId: video,
           autoplay: 1,
@@ -353,12 +471,11 @@ var bathroomHappiness = {
   waterTherapy: function(){
     // When the player is ready, add listeners for pause, finish, and playProgress
 
-    var initialVideoLoad = ['water-therapy','water-therapy-therapeutic','water-therapy-relaxation','water-therapy-rejuvenation','st-waterfall'];
-    var loadNext = function(key){
-      if(key < initialVideoLoad.length){
-        var player_container = initialVideoLoad[key]+'-video';
-        var video = $('#'+initialVideoLoad[key]+'-video-wrap').data('video');
-        key++;
+    if(!isMobile.any()){
+      var initialVideoLoad = ['water-therapy','water-therapy-therapeutic','water-therapy-relaxation','water-therapy-rejuvenation'];
+      for(var k = 0; k < initialVideoLoad.length; k++){
+        var player_container = initialVideoLoad[k]+'-video';
+        var video = $('#'+initialVideoLoad[k]+'-video-wrap').data('video');
         if(video){
           var vars = {
             showinfo: 0,
@@ -367,29 +484,21 @@ var bathroomHappiness = {
             controls: 0
           };
           var autoplay = 1;
-          if(key == 'st-waterfall'){
-            autoplay = 0;
-          }
-          player.init({
+          var introPlayer = new player();
+          introPlayer.init({
             container: player_container,
             videoId: video,
             autoplay: autoplay,
             loop: 1,
             mute: 1, 
-            onReady: function(){
-              $('#'+player_container).parent().parent().addClass('ready');  
-              $('#'+player_container).parent().addClass('ready');
-
-              loadNext(key);
+            onReady: function(container){
+              $('#'+container).parent().parent().addClass('ready');  
+              $('#'+container).parent().addClass('ready');
             },
             playerVars: vars
           });
-        }     
+        }   
       }
-      
-    };
-    if(!isMobile.any()){
-      loadNext(0);
     }else{
       $('#water-therapy-video').addClass('ready');
       if(isMobile.any()){
@@ -448,7 +557,8 @@ var bathroomHappiness = {
           if($(window).width()<768 || deviceMobile){
             autoplay= 0;          
           }
-          player.init({
+          var bannerVideo = new player();
+          bannerVideo.init({
             container: player_container,
             videoId: video, 
             autoplay: autoplay,
@@ -471,8 +581,6 @@ var bathroomHappiness = {
             onPaused: function(){
               $('#banner .play-full-video').removeClass('paused playing');
               $('#banner .play-full-video').addClass('paused');
-              //$('#water-therapy-full-video').fadeOut(0);
-              //console.log('paused');
             },
             playerVars: vars
           });
@@ -496,18 +604,7 @@ var bathroomHappiness = {
             rel: 0,
             controls: 0
           };
-          player.init({
-            container: player_container,
-            videoId: video,
-            autoplay: 1,
-            loop: 1,
-            mute: 1,
-            onReady: function(){
-              $('#'+player_container).parent().parent().parent().addClass('ready');  
-              $('#'+player_container).parent().addClass('ready');
-            },
-            playerVars: vars
-          });
+          playerManager.play(player_container);          
         }
         setTimeout(function(){ 
           var sections = ['therapeutic', 'relaxation','rejuvenation'];
@@ -516,7 +613,7 @@ var bathroomHappiness = {
               playerManager.pause('water-therapy-'+val+'-video');
             }
           });
-        },1000); 
+        },10); 
       }
       $('html, body').animate({scrollTop: $('#intro .video-wrap').offset().top},500);     
     });
@@ -524,14 +621,6 @@ var bathroomHappiness = {
       arrows: false,
       dots: true
     });
-    /*$('#showering .grid-module-slider').each(function(){
-      var $arrows = $(this).parent().find('.grid-module-slider-buttons');
-      $(this).slick({
-        arrows: true,
-        dots: false,
-        appendArrows: $arrows
-      });
-    });*/
     $('.panel-slideshow').each(function () {
       var $arrows = $(this).find('.slideshow-buttons');
       if($(this).find('.grid-module-slider').length > 0){
@@ -564,30 +653,24 @@ var bathroomHappiness = {
         });
       }
     });
-    $('#shower-technology .shower-technology-menu a').on('click', function(){
-      $('#shower-technology .shower-technology-menu a').removeClass('active');
-      $(this).addClass('active');
-      var section = $(this).data('section');
-      $('#shower-technology .shower-technology-card').removeClass('active');
-      $('#shower-technology .st-'+section).addClass('active');      
-      var video = $('#st-'+section+'-video-wrap').data('video');
+    $('.shower-technology-card').each(function(){
+      var video = $(this).find('.video').data('video');
+      var container = $(this).find('.video').attr('id').replace('-wrap','');
       var vars = {
-          showinfo: 0,
-          modestbranding: 0,
-          rel: 0,
-          controls: 0
-        };
-      player.init({
-        container: 'st-'+section+'-video',
+        showinfo: 0,
+        modestbranding: 0,
+        rel: 0,
+        controls: 0
+      };
+      var showerTechPlayer = new player();
+      showerTechPlayer.init({
+        container: container,
         videoId: video, 
         autoplay: false,
         loop: false,
-        onReady: function(){  
-          //$('#water-therapy-full-video').parent().addClass('ready');        
+        onReady: function(container){  
         },
         onPlaying: function(){  
-          //$('#banner .play-full-video').addClass('playing');
-          //$('#full-video-popup').removeClass('hide'); 
         },
         onEnded: function(){
           
@@ -597,14 +680,31 @@ var bathroomHappiness = {
         },
         playerVars: vars
       });
+    });
+    $('#shower-technology .shower-technology-menu a').on('click', function(){
+      $('#shower-technology .shower-technology-menu a').removeClass('active');
+      $('#shower-technology .shower-technology-description').removeClass('active');
+      $(this).addClass('active');
+      var section = $(this).data('section');
+      $('#shower-technology .shower-technology-card').removeClass('active');
+      $('#shower-technology .st-'+section).addClass('active');     
+      if(playerManager.active.substring(0,2) == 'st'){
+        playerManager.stop(playerManager.active);
+      }
+      playerManager.play('st-'+section+'video');
       return false;
     });
+    $('#shower-technology .st-waterfall').addClass('active');
     $('#shower-technology .view-video').on('click', function(){
-      $('#shower-technology .shower-technology-description').toggleClass('active');
+      var section = $(this).data('section');
+      $('#shower-technology .st-'+section+' .shower-technology-description').toggleClass('active');
+      playerManager.play('st-'+section+'-video');
       return false;
     });
     $('#shower-technology .close-video').on('click', function(){
-      $('.shower-technology-description').toggleClass('active');
+      var section = $(this).data('section');
+      $('#shower-technology .st-'+section+' .shower-technology-description').toggleClass('active');
+      playerManager.stop('st-'+section+'-video');
       return false;
     });    
     var currentSection = 1;

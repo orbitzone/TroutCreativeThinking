@@ -4008,8 +4008,8 @@ body.water-therapy .main #water-therapy #water-therapy-content .sections-wrap .s
   position: relative;
   -webkit-perspective: 1000px;
   -moz-perspective: 1000px;
-  -moz-transform: perspective(1000px);
-  -ms-perspective: 1000px;
+  -moz-transform: perspective(1000);
+  -ms-perspective: 1000;
   -o-perspective: 1000px;
   perspective: 1000px;
 }
@@ -4801,13 +4801,11 @@ body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones
 body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones-section .grid-module-zone-5,
 body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones-section .grid-module-zone-6 {
   -webkit-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
   backface-visibility: hidden;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
@@ -4819,22 +4817,22 @@ body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones
   -o-transform: translateZ(0);
   transform: translateZ(0);
 }
-/* line 804, ../sass/pages/_water_therapy.scss */
+/* line 801, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zones-sections .grid-module-zones-section .grid-module-zone-wrap,
 body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones-section .grid-module-zone-wrap {
-  -webkit-perspective: 2000px;
-  -moz-perspective: 2000px;
-  -moz-transform: perspective(2000px);
-  -ms-perspective: 2000px;
-  -o-perspective: 2000px;
-  perspective: 2000px;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  -moz-transform: perspective(1000);
+  -ms-perspective: 1000;
+  -o-perspective: 1000px;
+  perspective: 1000px;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
   -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
-/* line 808, ../sass/pages/_water_therapy.scss */
+/* line 805, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zones-sections .grid-module-zones-section .grid-module-zone-1,
 body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones-section .grid-module-zone-1 {
   -webkit-animation: slide_out 1s ease-in-out forwards;
@@ -4843,12 +4841,12 @@ body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones
   -o-animation: slide_out 1s ease-in-out forwards;
   animation: slide_out 1s ease-in-out forwards;
 }
-/* line 810, ../sass/pages/_water_therapy.scss */
+/* line 807, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zones-sections .grid-module-zones-section .grid-module-zone-1.ie,
 body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones-section .grid-module-zone-1.ie {
   opacity: 0;
 }
-/* line 814, ../sass/pages/_water_therapy.scss */
+/* line 811, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zones-sections .grid-module-zones-section .grid-module-zone-2,
 body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones-section .grid-module-zone-2 {
   -webkit-animation: flip_left_out 1s ease-out 0.8s forwards;
@@ -4857,7 +4855,7 @@ body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones
   -o-animation: flip_left_out 1s ease-out 0.8s forwards;
   animation: flip_left_out 1s ease-out 0.8s forwards;
 }
-/* line 816, ../sass/pages/_water_therapy.scss */
+/* line 813, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zones-sections .grid-module-zones-section .grid-module-zone-2.ie,
 body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones-section .grid-module-zone-2.ie {
   opacity: 0;
@@ -4871,7 +4869,7 @@ body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones
   -webkit-transition: all 1s ease-out;
   transition: all 1s ease-out;
 }
-/* line 822, ../sass/pages/_water_therapy.scss */
+/* line 819, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zones-sections .grid-module-zones-section .grid-module-zone-3,
 body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones-section .grid-module-zone-3 {
   -webkit-animation: flip_right_out 1s ease-out 0.5s forwards;
@@ -4880,7 +4878,7 @@ body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones
   -o-animation: flip_right_out 1s ease-out 0.5s forwards;
   animation: flip_right_out 1s ease-out 0.5s forwards;
 }
-/* line 824, ../sass/pages/_water_therapy.scss */
+/* line 821, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zones-sections .grid-module-zones-section .grid-module-zone-3.ie,
 body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones-section .grid-module-zone-3.ie {
   opacity: 0;
@@ -4894,7 +4892,7 @@ body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones
   -webkit-transition: all 1s ease-out;
   transition: all 1s ease-out;
 }
-/* line 830, ../sass/pages/_water_therapy.scss */
+/* line 827, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zones-sections .grid-module-zones-section.current,
 body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones-section.current {
   -webkit-animation: index_update_up 1s ease-out forwards;
@@ -4903,12 +4901,12 @@ body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones
   -o-animation: index_update_up 1s ease-out forwards;
   animation: index_update_up 1s ease-out forwards;
 }
-/* line 833, ../sass/pages/_water_therapy.scss */
+/* line 830, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zones-sections .grid-module-zones-section.current.ie,
 body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones-section.current.ie {
   z-index: 5;
 }
-/* line 836, ../sass/pages/_water_therapy.scss */
+/* line 833, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zones-sections .grid-module-zones-section.current .grid-module-zone-1,
 body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones-section.current .grid-module-zone-1 {
   -webkit-transform: translate3d(0, 0, 0);
@@ -4922,7 +4920,7 @@ body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones
   -o-animation: slide_in 1s ease-in-out forwards;
   animation: slide_in 1s ease-in-out forwards;
 }
-/* line 839, ../sass/pages/_water_therapy.scss */
+/* line 836, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zones-sections .grid-module-zones-section.current .grid-module-zone-1.ie,
 body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones-section.current .grid-module-zone-1.ie {
   opacity: 1;
@@ -4932,7 +4930,7 @@ body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones
   -o-animation: none;
   animation: none;
 }
-/* line 844, ../sass/pages/_water_therapy.scss */
+/* line 841, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zones-sections .grid-module-zones-section.current .grid-module-zone-2,
 body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones-section.current .grid-module-zone-2 {
   -webkit-animation: flip_left_in 1s ease-out 0.8s forwards;
@@ -4941,7 +4939,7 @@ body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones
   -o-animation: flip_left_in 1s ease-out 0.8s forwards;
   animation: flip_left_in 1s ease-out 0.8s forwards;
 }
-/* line 847, ../sass/pages/_water_therapy.scss */
+/* line 844, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zones-sections .grid-module-zones-section.current .grid-module-zone-2.ie,
 body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones-section.current .grid-module-zone-2.ie {
   opacity: 1;
@@ -4951,7 +4949,7 @@ body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones
   -o-animation: none;
   animation: none;
 }
-/* line 852, ../sass/pages/_water_therapy.scss */
+/* line 849, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zones-sections .grid-module-zones-section.current .grid-module-zone-3,
 body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones-section.current .grid-module-zone-3 {
   -webkit-animation: flip_right_in 1s ease-out 0.5s forwards;
@@ -4960,7 +4958,7 @@ body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones
   -o-animation: flip_right_in 1s ease-out 0.5s forwards;
   animation: flip_right_in 1s ease-out 0.5s forwards;
 }
-/* line 855, ../sass/pages/_water_therapy.scss */
+/* line 852, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zones-sections .grid-module-zones-section.current .grid-module-zone-3.ie,
 body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones-section.current .grid-module-zone-3.ie {
   opacity: 1;
@@ -4970,26 +4968,26 @@ body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones
   -o-animation: none;
   animation: none;
 }
-/* line 865, ../sass/pages/_water_therapy.scss */
+/* line 862, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zones-2-3 .row,
 body.water-therapy .main #showering .grid-module-zones-4-5 .row,
 body.water-therapy .main #bathing .grid-module-zones-2-3 .row,
 body.water-therapy .main #bathing .grid-module-zones-4-5 .row {
   margin: 0;
 }
-/* line 867, ../sass/pages/_water_therapy.scss */
+/* line 864, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zones-2-3 .row .col-sm-6,
 body.water-therapy .main #showering .grid-module-zones-4-5 .row .col-sm-6,
 body.water-therapy .main #bathing .grid-module-zones-2-3 .row .col-sm-6,
 body.water-therapy .main #bathing .grid-module-zones-4-5 .row .col-sm-6 {
   padding: 0;
 }
-/* line 872, ../sass/pages/_water_therapy.scss */
+/* line 869, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zones-4-5,
 body.water-therapy .main #bathing .grid-module-zones-4-5 {
   margin-bottom: 80px;
 }
-/* line 876, ../sass/pages/_water_therapy.scss */
+/* line 873, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zone-1 .grid-module-slider-buttons,
 body.water-therapy .main #bathing .grid-module-zone-1 .grid-module-slider-buttons {
   height: 40px;
@@ -5000,7 +4998,7 @@ body.water-therapy .main #bathing .grid-module-zone-1 .grid-module-slider-button
   right: 30px;
   bottom: 30px;
 }
-/* line 885, ../sass/pages/_water_therapy.scss */
+/* line 882, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zone-2,
 body.water-therapy .main #bathing .grid-module-zone-2 {
   background-size: cover;
@@ -5010,20 +5008,20 @@ body.water-therapy .main #bathing .grid-module-zone-2 {
   height: 360px;
 }
 @media (min-width: 768px) {
-  /* line 885, ../sass/pages/_water_therapy.scss */
+  /* line 882, ../sass/pages/_water_therapy.scss */
   body.water-therapy .main #showering .grid-module-zone-2,
   body.water-therapy .main #bathing .grid-module-zone-2 {
     height: 360px;
   }
 }
 @media (min-width: 992px) {
-  /* line 885, ../sass/pages/_water_therapy.scss */
+  /* line 882, ../sass/pages/_water_therapy.scss */
   body.water-therapy .main #showering .grid-module-zone-2,
   body.water-therapy .main #bathing .grid-module-zone-2 {
     height: 598px;
   }
 }
-/* line 897, ../sass/pages/_water_therapy.scss */
+/* line 894, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zone-2 .box,
 body.water-therapy .main #bathing .grid-module-zone-2 .box {
   position: absolute;
@@ -5036,20 +5034,20 @@ body.water-therapy .main #bathing .grid-module-zone-2 .box {
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 903, ../sass/pages/_water_therapy.scss */
+/* line 900, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zone-2 .box h3,
 body.water-therapy .main #bathing .grid-module-zone-2 .box h3 {
   margin: 0;
   font-size: 45px;
 }
 @media (min-width: 992px) {
-  /* line 903, ../sass/pages/_water_therapy.scss */
+  /* line 900, ../sass/pages/_water_therapy.scss */
   body.water-therapy .main #showering .grid-module-zone-2 .box h3,
   body.water-therapy .main #bathing .grid-module-zone-2 .box h3 {
     font-size: 68px;
   }
 }
-/* line 912, ../sass/pages/_water_therapy.scss */
+/* line 909, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zone-3,
 body.water-therapy .main #bathing .grid-module-zone-3 {
   background-size: cover;
@@ -5059,7 +5057,7 @@ body.water-therapy .main #bathing .grid-module-zone-3 {
   padding: 25px;
 }
 @media (min-width: 768px) {
-  /* line 912, ../sass/pages/_water_therapy.scss */
+  /* line 909, ../sass/pages/_water_therapy.scss */
   body.water-therapy .main #showering .grid-module-zone-3,
   body.water-therapy .main #bathing .grid-module-zone-3 {
     padding: 40px;
@@ -5067,13 +5065,13 @@ body.water-therapy .main #bathing .grid-module-zone-3 {
   }
 }
 @media (min-width: 992px) {
-  /* line 912, ../sass/pages/_water_therapy.scss */
+  /* line 909, ../sass/pages/_water_therapy.scss */
   body.water-therapy .main #showering .grid-module-zone-3,
   body.water-therapy .main #bathing .grid-module-zone-3 {
     height: 598px;
   }
 }
-/* line 925, ../sass/pages/_water_therapy.scss */
+/* line 922, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zone-3 .box-border,
 body.water-therapy .main #bathing .grid-module-zone-3 .box-border {
   width: 100%;
@@ -5081,7 +5079,7 @@ body.water-therapy .main #bathing .grid-module-zone-3 .box-border {
   border: 2px solid white;
   display: block;
 }
-/* line 931, ../sass/pages/_water_therapy.scss */
+/* line 928, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zone-3 .box,
 body.water-therapy .main #bathing .grid-module-zone-3 .box {
   position: absolute;
@@ -5094,7 +5092,7 @@ body.water-therapy .main #bathing .grid-module-zone-3 .box {
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 937, ../sass/pages/_water_therapy.scss */
+/* line 934, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zone-3 .box .text,
 body.water-therapy .main #bathing .grid-module-zone-3 .box .text {
   font-weight: bold;
@@ -5103,7 +5101,7 @@ body.water-therapy .main #bathing .grid-module-zone-3 .box .text {
   padding: 0 40px;
 }
 @media (min-width: 768px) {
-  /* line 937, ../sass/pages/_water_therapy.scss */
+  /* line 934, ../sass/pages/_water_therapy.scss */
   body.water-therapy .main #showering .grid-module-zone-3 .box .text,
   body.water-therapy .main #bathing .grid-module-zone-3 .box .text {
     padding: 0;
@@ -5111,14 +5109,14 @@ body.water-therapy .main #bathing .grid-module-zone-3 .box .text {
   }
 }
 @media (min-width: 992px) {
-  /* line 937, ../sass/pages/_water_therapy.scss */
+  /* line 934, ../sass/pages/_water_therapy.scss */
   body.water-therapy .main #showering .grid-module-zone-3 .box .text,
   body.water-therapy .main #bathing .grid-module-zone-3 .box .text {
     font-size: 24px;
     width: 314px;
   }
 }
-/* line 956, ../sass/pages/_water_therapy.scss */
+/* line 953, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zone-4,
 body.water-therapy .main #bathing .grid-module-zone-4 {
   background: #eeeeee;
@@ -5126,13 +5124,13 @@ body.water-therapy .main #bathing .grid-module-zone-4 {
   padding: 58px 30px 34px;
 }
 @media (min-width: 992px) {
-  /* line 956, ../sass/pages/_water_therapy.scss */
+  /* line 953, ../sass/pages/_water_therapy.scss */
   body.water-therapy .main #showering .grid-module-zone-4,
   body.water-therapy .main #bathing .grid-module-zone-4 {
     height: 488px;
   }
 }
-/* line 963, ../sass/pages/_water_therapy.scss */
+/* line 960, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zone-4 h3,
 body.water-therapy .main #bathing .grid-module-zone-4 h3 {
   margin-top: 0;
@@ -5145,7 +5143,7 @@ body.water-therapy .main #bathing .grid-module-zone-4 h3 {
   margin: 0 auto;
   margin-bottom: 50px;
 }
-/* line 974, ../sass/pages/_water_therapy.scss */
+/* line 971, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zone-4 h4,
 body.water-therapy .main #bathing .grid-module-zone-4 h4 {
   margin-top: 0;
@@ -5154,18 +5152,18 @@ body.water-therapy .main #bathing .grid-module-zone-4 h4 {
   letter-spacing: 0.13em;
   margin-bottom: 5px;
 }
-/* line 981, ../sass/pages/_water_therapy.scss */
+/* line 978, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zone-4 .image,
 body.water-therapy .main #bathing .grid-module-zone-4 .image {
   margin-bottom: 20px;
 }
-/* line 984, ../sass/pages/_water_therapy.scss */
+/* line 981, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zone-4 .text,
 body.water-therapy .main #bathing .grid-module-zone-4 .text {
   font-size: 15px;
   text-align: left;
 }
-/* line 988, ../sass/pages/_water_therapy.scss */
+/* line 985, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zone-4 .btn,
 body.water-therapy .main #bathing .grid-module-zone-4 .btn {
   border: none;
@@ -5183,13 +5181,13 @@ body.water-therapy .main #bathing .grid-module-zone-4 .btn {
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
-/* line 997, ../sass/pages/_water_therapy.scss */
+/* line 994, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zone-4 .btn:hover,
 body.water-therapy .main #bathing .grid-module-zone-4 .btn:hover {
   background: #39d8a9;
   color: #151d25;
 }
-/* line 1003, ../sass/pages/_water_therapy.scss */
+/* line 1000, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zone-5,
 body.water-therapy .main #bathing .grid-module-zone-5 {
   padding-top: 58px;
@@ -5197,7 +5195,7 @@ body.water-therapy .main #bathing .grid-module-zone-5 {
   position: relative;
 }
 @media (min-width: 992px) {
-  /* line 1003, ../sass/pages/_water_therapy.scss */
+  /* line 1000, ../sass/pages/_water_therapy.scss */
   body.water-therapy .main #showering .grid-module-zone-5,
   body.water-therapy .main #bathing .grid-module-zone-5 {
     height: 488px;
@@ -5205,7 +5203,7 @@ body.water-therapy .main #bathing .grid-module-zone-5 {
   }
 }
 @media (min-width: 992px) {
-  /* line 1011, ../sass/pages/_water_therapy.scss */
+  /* line 1008, ../sass/pages/_water_therapy.scss */
   body.water-therapy .main #showering .grid-module-zone-5 .grid-module-zone-5-content,
   body.water-therapy .main #bathing .grid-module-zone-5 .grid-module-zone-5-content {
     position: absolute;
@@ -5219,27 +5217,27 @@ body.water-therapy .main #bathing .grid-module-zone-5 {
     transform: translateY(-50%);
   }
 }
-/* line 1022, ../sass/pages/_water_therapy.scss */
+/* line 1019, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zone-5 .panel-slideshow .slide-content .slideshow-buttons,
 body.water-therapy .main #bathing .grid-module-zone-5 .panel-slideshow .slide-content .slideshow-buttons {
   top: 216px;
 }
-/* line 1025, ../sass/pages/_water_therapy.scss */
+/* line 1022, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zone-5 .panel-slideshow .slide-content .slide-image,
 body.water-therapy .main #bathing .grid-module-zone-5 .panel-slideshow .slide-content .slide-image {
   margin-bottom: 10px;
 }
-/* line 1028, ../sass/pages/_water_therapy.scss */
+/* line 1025, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zone-5 .panel-slideshow .slide-content .slide-text,
 body.water-therapy .main #bathing .grid-module-zone-5 .panel-slideshow .slide-content .slide-text {
   margin-bottom: 30px;
 }
-/* line 1031, ../sass/pages/_water_therapy.scss */
+/* line 1028, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zone-5 .panel-slideshow .slide-content .slide-btn-wrap,
 body.water-therapy .main #bathing .grid-module-zone-5 .panel-slideshow .slide-content .slide-btn-wrap {
   text-align: center;
 }
-/* line 1034, ../sass/pages/_water_therapy.scss */
+/* line 1031, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zone-5 .panel-slideshow .slide-content .slide-btn,
 body.water-therapy .main #bathing .grid-module-zone-5 .panel-slideshow .slide-content .slide-btn {
   text-transform: uppercase;
@@ -5249,44 +5247,44 @@ body.water-therapy .main #bathing .grid-module-zone-5 .panel-slideshow .slide-co
   margin: 0 auto;
   background: #39d8a9;
 }
-/* line 1041, ../sass/pages/_water_therapy.scss */
+/* line 1038, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zone-5 .panel-slideshow .slide-content .slide-btn:hover,
 body.water-therapy .main #bathing .grid-module-zone-5 .panel-slideshow .slide-content .slide-btn:hover {
   background: #151d25;
 }
-/* line 1049, ../sass/pages/_water_therapy.scss */
+/* line 1046, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing {
   background: white;
   color: black;
 }
-/* line 1052, ../sass/pages/_water_therapy.scss */
+/* line 1049, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .bathing-image {
   background-image: url(../images/water_therapy/bathing-bg.jpg);
   background-size: cover;
   background-position: bottom center;
   text-align: center;
 }
-/* line 1057, ../sass/pages/_water_therapy.scss */
+/* line 1054, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .bathing-image img {
   opacity: 0;
   margin: 0 auto;
 }
-/* line 1062, ../sass/pages/_water_therapy.scss */
+/* line 1059, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .bathing-content {
   margin-top: -70px;
 }
 @media (min-width: 768px) {
-  /* line 1062, ../sass/pages/_water_therapy.scss */
+  /* line 1059, ../sass/pages/_water_therapy.scss */
   body.water-therapy .main #bathing .bathing-content {
     margin-top: -200px;
   }
 }
-/* line 1068, ../sass/pages/_water_therapy.scss */
+/* line 1065, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .grid-module-menu-wrap,
 body.water-therapy .main #bathing .grid-module-zones-sections {
   color: white;
 }
-/* line 1072, ../sass/pages/_water_therapy.scss */
+/* line 1069, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .grid-module-menu {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#37d1a4+0,41f3bf+100 */
   background: #1a1c24;
@@ -5300,18 +5298,18 @@ body.water-therapy .main #bathing .grid-module-menu {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a1c24', endColorstr='#161d23',GradientType=0 );
   /* IE6-9 */
 }
-/* line 1082, ../sass/pages/_water_therapy.scss */
+/* line 1079, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .grid-module-menu ul li a {
   color: white;
   border: 1px solid white;
 }
-/* line 1085, ../sass/pages/_water_therapy.scss */
+/* line 1082, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .grid-module-menu ul li a.active {
   border-color: #39d8a9;
   background: #39d8a9;
   color: #151d25;
 }
-/* line 1094, ../sass/pages/_water_therapy.scss */
+/* line 1091, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .grid-module-description {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1a1c24+0,161d23+100 */
   color: #151d25;
@@ -5326,7 +5324,7 @@ body.water-therapy .main #bathing .grid-module-description {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#37d1a4', endColorstr='#41f3bf',GradientType=0 );
   /* IE6-9 */
 }
-/* line 1103, ../sass/pages/_water_therapy.scss */
+/* line 1100, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .grid-module-description:before {
   content: " ";
   display: block;
@@ -5342,7 +5340,7 @@ body.water-therapy .main #bathing .grid-module-description:before {
   -o-transform: translateX(-50%) translateY(50%) rotate(45deg);
   transform: translateX(-50%) translateY(50%) rotate(45deg);
 }
-/* line 1116, ../sass/pages/_water_therapy.scss */
+/* line 1113, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .scrolling-menu-wrap .scrolling-menu-list {
   background: #1a1c24;
   /* Old browsers */
@@ -5355,58 +5353,58 @@ body.water-therapy .main #bathing .scrolling-menu-wrap .scrolling-menu-list {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a1c24', endColorstr='#161d23',GradientType=0 );
   /* IE6-9 */
 }
-/* line 1124, ../sass/pages/_water_therapy.scss */
+/* line 1121, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .scrolling-menu-wrap .scrolling-menu-list ul li a {
   color: white;
   border: 1px solid white;
 }
-/* line 1127, ../sass/pages/_water_therapy.scss */
+/* line 1124, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .scrolling-menu-wrap .scrolling-menu-list ul li a.active {
   border-color: #39d8a9;
   background: #39d8a9;
   color: #151d25;
 }
-/* line 1136, ../sass/pages/_water_therapy.scss */
+/* line 1133, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .scrolling-menu-wrap .scrolling-menu {
   background: #39d8a9;
 }
-/* line 1138, ../sass/pages/_water_therapy.scss */
+/* line 1135, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .scrolling-menu-wrap .scrolling-menu .icon {
   fill: #151d25;
 }
-/* line 1144, ../sass/pages/_water_therapy.scss */
+/* line 1141, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology {
   background-image: url(../images/water_therapy/shower-technology.jpg);
   background-position: top center;
   background-size: cover;
   padding-top: 140px;
 }
-/* line 1149, ../sass/pages/_water_therapy.scss */
+/* line 1146, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .container-fluid {
   max-width: 350px;
 }
 @media (min-width: 768px) {
-  /* line 1149, ../sass/pages/_water_therapy.scss */
+  /* line 1146, ../sass/pages/_water_therapy.scss */
   body.water-therapy .main #shower-technology .container-fluid {
     max-width: 575px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 1149, ../sass/pages/_water_therapy.scss */
+  /* line 1146, ../sass/pages/_water_therapy.scss */
   body.water-therapy .main #shower-technology .container-fluid {
     max-width: 1230px;
   }
 }
-/* line 1158, ../sass/pages/_water_therapy.scss */
+/* line 1155, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-sections {
   max-width: 1055px;
   margin: 0 auto;
 }
-/* line 1162, ../sass/pages/_water_therapy.scss */
+/* line 1159, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-menu {
   margin-bottom: 30px;
 }
-/* line 1164, ../sass/pages/_water_therapy.scss */
+/* line 1161, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-menu h3 {
   color: #39d8a9;
   text-transform: uppercase;
@@ -5414,12 +5412,12 @@ body.water-therapy .main #shower-technology .shower-technology-menu h3 {
   text-align: center;
   letter-spacing: 0.17em;
 }
-/* line 1171, ../sass/pages/_water_therapy.scss */
+/* line 1168, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-menu ul {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 1173, ../sass/pages/_water_therapy.scss */
+/* line 1170, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-menu ul li {
   float: left;
   width: 33.3333%;
@@ -5428,15 +5426,15 @@ body.water-therapy .main #shower-technology .shower-technology-menu ul li {
   border-bottom: 1px solid #373737;
   border-right: 1px solid #373737;
 }
-/* line 1180, ../sass/pages/_water_therapy.scss */
+/* line 1177, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-menu ul li:nth-child(3n) {
   border-right: none;
 }
-/* line 1183, ../sass/pages/_water_therapy.scss */
+/* line 1180, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-menu ul li:nth-child(7), body.water-therapy .main #shower-technology .shower-technology-menu ul li:nth-child(8), body.water-therapy .main #shower-technology .shower-technology-menu ul li:nth-child(9) {
   border-bottom: none;
 }
-/* line 1186, ../sass/pages/_water_therapy.scss */
+/* line 1183, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-menu ul li a {
   display: block;
   text-align: center;
@@ -5451,7 +5449,7 @@ body.water-therapy .main #shower-technology .shower-technology-menu ul li a {
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
-/* line 1196, ../sass/pages/_water_therapy.scss */
+/* line 1193, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-menu ul li a span {
   display: block;
   margin: 0 auto;
@@ -5460,7 +5458,7 @@ body.water-therapy .main #shower-technology .shower-technology-menu ul li a span
   max-width: 90px;
 }
 @media (min-width: 768px) {
-  /* line 1196, ../sass/pages/_water_therapy.scss */
+  /* line 1193, ../sass/pages/_water_therapy.scss */
   body.water-therapy .main #shower-technology .shower-technology-menu ul li a span {
     margin: 0 auto;
     margin-top: 20px;
@@ -5468,13 +5466,13 @@ body.water-therapy .main #shower-technology .shower-technology-menu ul li a span
   }
 }
 @media (min-width: 768px) {
-  /* line 1186, ../sass/pages/_water_therapy.scss */
+  /* line 1183, ../sass/pages/_water_therapy.scss */
   body.water-therapy .main #shower-technology .shower-technology-menu ul li a {
     height: 143px;
     font-size: 14px;
   }
 }
-/* line 1212, ../sass/pages/_water_therapy.scss */
+/* line 1209, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-menu ul li a .icon {
   display: block;
   width: 40px;
@@ -5487,31 +5485,31 @@ body.water-therapy .main #shower-technology .shower-technology-menu ul li a .ico
   transition: all 0.5s ease-out;
 }
 @media (min-width: 768px) {
-  /* line 1212, ../sass/pages/_water_therapy.scss */
+  /* line 1209, ../sass/pages/_water_therapy.scss */
   body.water-therapy .main #shower-technology .shower-technology-menu ul li a .icon {
     width: 55px;
     height: 55px;
   }
 }
-/* line 1224, ../sass/pages/_water_therapy.scss */
+/* line 1221, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-menu ul li a:hover {
   color: white;
   background: #151d25;
 }
-/* line 1227, ../sass/pages/_water_therapy.scss */
+/* line 1224, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-menu ul li a:hover .icon {
   fill: white;
 }
-/* line 1231, ../sass/pages/_water_therapy.scss */
+/* line 1228, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-menu ul li a.active {
   color: #151d25;
   background: #39d8a9;
 }
-/* line 1234, ../sass/pages/_water_therapy.scss */
+/* line 1231, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-menu ul li a.active .icon {
   fill: #151d25;
 }
-/* line 1242, ../sass/pages/_water_therapy.scss */
+/* line 1239, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-cards {
   overflow: hidden;
   position: relative;
@@ -5520,13 +5518,13 @@ body.water-therapy .main #shower-technology .shower-technology-cards {
   padding: 30px 0;
 }
 @media (min-width: 768px) {
-  /* line 1242, ../sass/pages/_water_therapy.scss */
+  /* line 1239, ../sass/pages/_water_therapy.scss */
   body.water-therapy .main #shower-technology .shower-technology-cards {
     width: 545px;
     height: 615px;
   }
 }
-/* line 1252, ../sass/pages/_water_therapy.scss */
+/* line 1249, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-cards .shower-technology-card {
   position: absolute;
   top: 30px;
@@ -5538,7 +5536,7 @@ body.water-therapy .main #shower-technology .shower-technology-cards .shower-tec
   -o-animation: card_out 1s ease-in-out forwards;
   animation: card_out 1s ease-in-out forwards;
 }
-/* line 1259, ../sass/pages/_water_therapy.scss */
+/* line 1256, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-cards .shower-technology-card.ie-lt {
   -webkit-animation: none;
   -moz-animation: none;
@@ -5551,16 +5549,20 @@ body.water-therapy .main #shower-technology .shower-technology-cards .shower-tec
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
-/* line 1264, ../sass/pages/_water_therapy.scss */
+/* line 1261, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-cards .shower-technology-card.active {
-  opacity: 0;
+  -webkit-transform: translateY(615px) translateZ(0) scale(1);
+  -moz-transform: translateY(615px) translateZ(0) scale(1);
+  -ms-transform: translateY(615px) translateZ(0) scale(1);
+  -o-transform: translateY(615px) translateZ(0) scale(1);
+  transform: translateY(615px) translateZ(0) scale(1);
   -webkit-animation: card_in 1s ease-in-out 0.5s forwards;
   -moz-animation: card_in 1s ease-in-out 0.5s forwards;
   -ms-animation: card_in 1s ease-in-out 0.5s forwards;
   -o-animation: card_in 1s ease-in-out 0.5s forwards;
   animation: card_in 1s ease-in-out 0.5s forwards;
 }
-/* line 1267, ../sass/pages/_water_therapy.scss */
+/* line 1264, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-cards .shower-technology-card.active.ie-lt {
   -webkit-animation: none;
   -moz-animation: none;
@@ -5574,27 +5576,27 @@ body.water-therapy .main #shower-technology .shower-technology-cards .shower-tec
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
-/* line 1277, ../sass/pages/_water_therapy.scss */
+/* line 1274, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description {
   text-align: center;
-  -webkit-perspective: 2000px;
-  -moz-perspective: 2000px;
-  -moz-transform: perspective(2000px);
-  -ms-perspective: 2000px;
-  -o-perspective: 2000px;
-  perspective: 2000px;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  -moz-transform: perspective(1000);
+  -ms-perspective: 1000;
+  -o-perspective: 1000px;
+  perspective: 1000px;
   color: white;
   padding: 0;
 }
-/* line 1282, ../sass/pages/_water_therapy.scss */
+/* line 1279, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .image {
   text-align: center;
 }
-/* line 1284, ../sass/pages/_water_therapy.scss */
+/* line 1281, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .image img {
   margin: 0 auto;
 }
-/* line 1288, ../sass/pages/_water_therapy.scss */
+/* line 1285, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description h3 {
   color: #39d8a9;
   text-transform: uppercase;
@@ -5603,37 +5605,29 @@ body.water-therapy .main #shower-technology .shower-technology-description h3 {
   letter-spacing: 0.17em;
   margin: 20px 0;
 }
-/* line 1297, ../sass/pages/_water_therapy.scss */
-body.water-therapy .main #shower-technology .shower-technology-description.active .shower-technology-flip {
-  -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-  -ms-transform: rotateY(180deg);
-  -o-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-}
-/* line 1301, ../sass/pages/_water_therapy.scss */
+/* line 1293, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description ul {
   padding-top: 40px;
 }
-/* line 1303, ../sass/pages/_water_therapy.scss */
+/* line 1295, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description ul li {
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 1308, ../sass/pages/_water_therapy.scss */
+/* line 1300, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .icon-wrap {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 10px;
   position: relative;
 }
-/* line 1313, ../sass/pages/_water_therapy.scss */
+/* line 1305, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .icon-wrap .icon {
   width: 55px;
   height: 55px;
   fill: #cacaca;
 }
-/* line 1318, ../sass/pages/_water_therapy.scss */
+/* line 1310, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .icon-wrap:after {
   content: " ";
   width: 22px;
@@ -5644,7 +5638,7 @@ body.water-therapy .main #shower-technology .shower-technology-description .icon
   left: 50%;
   margin-left: -11px;
 }
-/* line 1329, ../sass/pages/_water_therapy.scss */
+/* line 1321, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .see-product {
   display: inline-block;
   padding: 5px 18px;
@@ -5653,17 +5647,17 @@ body.water-therapy .main #shower-technology .shower-technology-description .see-
   color: black;
   text-decoration: none;
 }
-/* line 1336, ../sass/pages/_water_therapy.scss */
+/* line 1328, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .see-product:hover {
   background: #39d8a9;
 }
-/* line 1340, ../sass/pages/_water_therapy.scss */
+/* line 1332, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .view-video {
   color: #39d8a9;
   text-transform: uppercase;
   font-weight: 400;
 }
-/* line 1344, ../sass/pages/_water_therapy.scss */
+/* line 1336, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .view-video .icon {
   vertical-align: middle;
   margin-right: 5px;
@@ -5671,7 +5665,7 @@ body.water-therapy .main #shower-technology .shower-technology-description .view
   height: 40px;
   fill: #39d8a9;
 }
-/* line 1352, ../sass/pages/_water_therapy.scss */
+/* line 1344, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip {
   -moz-transition: all 0.6s ease-out;
   -o-transition: all 0.6s ease-out;
@@ -5687,13 +5681,13 @@ body.water-therapy .main #shower-technology .shower-technology-description .show
   min-height: 325.87px;
 }
 @media (min-width: 768px) {
-  /* line 1352, ../sass/pages/_water_therapy.scss */
+  /* line 1344, ../sass/pages/_water_therapy.scss */
   body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip {
     width: 545px;
     height: 555px;
   }
 }
-/* line 1362, ../sass/pages/_water_therapy.scss */
+/* line 1354, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip .front,
 body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip .back {
   -webkit-backface-visibility: hidden;
@@ -5702,6 +5696,15 @@ body.water-therapy .main #shower-technology .shower-technology-description .show
   -ms-backface-visibility: hidden;
   -o-backface-visibility: hidden;
   backface-visibility: hidden;
+  -moz-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  -webkit-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
   position: absolute;
   top: 0;
   left: 0;
@@ -5710,14 +5713,14 @@ body.water-therapy .main #shower-technology .shower-technology-description .show
   min-height: 325.87px;
 }
 @media (min-width: 768px) {
-  /* line 1362, ../sass/pages/_water_therapy.scss */
+  /* line 1354, ../sass/pages/_water_therapy.scss */
   body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip .front,
   body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip .back {
     width: 545px;
     height: 555px;
   }
 }
-/* line 1376, ../sass/pages/_water_therapy.scss */
+/* line 1370, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip .front {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,161c23+100 */
   background: #000000;
@@ -5738,7 +5741,7 @@ body.water-therapy .main #shower-technology .shower-technology-description .show
   -o-transform: rotateY(0deg);
   transform: rotateY(0deg);
 }
-/* line 1388, ../sass/pages/_water_therapy.scss */
+/* line 1382, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip .back {
   background: #000000;
   /* Old browsers */
@@ -5750,14 +5753,14 @@ body.water-therapy .main #shower-technology .shower-technology-description .show
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#161c23',GradientType=0 );
   /* IE6-9 */
-  -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-  -ms-transform: rotateY(180deg);
-  -o-transform: rotateY(180deg);
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
   overflow: hidden;
 }
-/* line 1397, ../sass/pages/_water_therapy.scss */
+/* line 1391, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip .back .video {
   overflow: hidden;
   position: absolute;
@@ -5772,25 +5775,25 @@ body.water-therapy .main #shower-technology .shower-technology-description .show
   height: 325.87px;
 }
 @media (min-width: 768px) {
-  /* line 1397, ../sass/pages/_water_therapy.scss */
+  /* line 1391, ../sass/pages/_water_therapy.scss */
   body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip .back .video {
     width: 978.6px;
     height: 555px;
   }
 }
-/* line 1409, ../sass/pages/_water_therapy.scss */
+/* line 1403, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip .back .video iframe {
   width: 574.59px;
   height: 325.87px;
 }
 @media (min-width: 768px) {
-  /* line 1409, ../sass/pages/_water_therapy.scss */
+  /* line 1403, ../sass/pages/_water_therapy.scss */
   body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip .back .video iframe {
     width: 978.6px;
     height: 555px;
   }
 }
-/* line 1417, ../sass/pages/_water_therapy.scss */
+/* line 1411, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip .back .video:before {
   display: block;
   width: 100%;
@@ -5802,12 +5805,46 @@ body.water-therapy .main #shower-technology .shower-technology-description .show
   z-index: 1;
   cursor: pointer;
 }
-/* line 1430, ../sass/pages/_water_therapy.scss */
+/* line 1424, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip .back .close-video {
   position: absolute;
   top: 10px;
   right: 10px;
   z-index: 2;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  background: none;
+}
+/* line 1434, ../sass/pages/_water_therapy.scss */
+body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip .back .close-video .icon {
+  fill: #39d8a9;
+  width: 32px;
+  height: 32px;
+}
+/* line 1446, ../sass/pages/_water_therapy.scss */
+body.water-therapy .main #shower-technology .shower-technology-description.active .shower-technology-flip .back {
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+/* line 1449, ../sass/pages/_water_therapy.scss */
+body.water-therapy .main #shower-technology .shower-technology-description.active .shower-technology-flip .front {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 @-webkit-keyframes video_hide {
@@ -6991,11 +7028,11 @@ body.water-therapy .main #shower-technology .shower-technology-description .show
     -ms-filter: blur(7px);
     -o-filter: blur(7px);
     filter: blur(7px);
-    -webkit-transform: translate3d(0, 100%, 0) scale(0.8);
-    -moz-transform: translate3d(0, 100%, 0) scale(0.8);
-    -ms-transform: translate3d(0, 100%, 0) scale(0.8);
-    -o-transform: translate3d(0, 100%, 0) scale(0.8);
-    transform: translate3d(0, 100%, 0) scale(0.8);
+    -webkit-transform: translateY(615px) translateZ(0) scale(0.8);
+    -moz-transform: translateY(615px) translateZ(0) scale(0.8);
+    -ms-transform: translateY(615px) translateZ(0) scale(0.8);
+    -o-transform: translateY(615px) translateZ(0) scale(0.8);
+    transform: translateY(615px) translateZ(0) scale(0.8);
   }
   50% {
     opacity: 1;
@@ -7006,20 +7043,20 @@ body.water-therapy .main #shower-technology .shower-technology-description .show
     -ms-filter: blur(0);
     -o-filter: blur(0);
     filter: blur(0);
-    -webkit-transform: translate3d(0, 0, 0) scale(0.8);
-    -moz-transform: translate3d(0, 0, 0) scale(0.8);
-    -ms-transform: translate3d(0, 0, 0) scale(0.8);
-    -o-transform: translate3d(0, 0, 0) scale(0.8);
-    transform: translate3d(0, 0, 0) scale(0.8);
+    -webkit-transform: translateY(0) translateZ(0) scale(0.8);
+    -moz-transform: translateY(0) translateZ(0) scale(0.8);
+    -ms-transform: translateY(0) translateZ(0) scale(0.8);
+    -o-transform: translateY(0) translateZ(0) scale(0.8);
+    transform: translateY(0) translateZ(0) scale(0.8);
   }
   100% {
     opacity: 1;
     z-index: 2;
-    -webkit-transform: translate3d(0, 0, 0) scale(1);
-    -moz-transform: translate3d(0, 0, 0) scale(1);
-    -ms-transform: translate3d(0, 0, 0) scale(1);
-    -o-transform: translate3d(0, 0, 0) scale(1);
-    transform: translate3d(0, 0, 0) scale(1);
+    -webkit-transform: translateY(0) translateZ(0) scale(1);
+    -moz-transform: translateY(0) translateZ(0) scale(1);
+    -ms-transform: translateY(0) translateZ(0) scale(1);
+    -o-transform: translateY(0) translateZ(0) scale(1);
+    transform: translateY(0) translateZ(0) scale(1);
   }
 }
 @-moz-keyframes card_in {
@@ -7031,11 +7068,11 @@ body.water-therapy .main #shower-technology .shower-technology-description .show
     -ms-filter: blur(7px);
     -o-filter: blur(7px);
     filter: blur(7px);
-    -webkit-transform: translate3d(0, 100%, 0) scale(0.8);
-    -moz-transform: translate3d(0, 100%, 0) scale(0.8);
-    -ms-transform: translate3d(0, 100%, 0) scale(0.8);
-    -o-transform: translate3d(0, 100%, 0) scale(0.8);
-    transform: translate3d(0, 100%, 0) scale(0.8);
+    -webkit-transform: translateY(615px) translateZ(0) scale(0.8);
+    -moz-transform: translateY(615px) translateZ(0) scale(0.8);
+    -ms-transform: translateY(615px) translateZ(0) scale(0.8);
+    -o-transform: translateY(615px) translateZ(0) scale(0.8);
+    transform: translateY(615px) translateZ(0) scale(0.8);
   }
   50% {
     opacity: 1;
@@ -7046,20 +7083,20 @@ body.water-therapy .main #shower-technology .shower-technology-description .show
     -ms-filter: blur(0);
     -o-filter: blur(0);
     filter: blur(0);
-    -webkit-transform: translate3d(0, 0, 0) scale(0.8);
-    -moz-transform: translate3d(0, 0, 0) scale(0.8);
-    -ms-transform: translate3d(0, 0, 0) scale(0.8);
-    -o-transform: translate3d(0, 0, 0) scale(0.8);
-    transform: translate3d(0, 0, 0) scale(0.8);
+    -webkit-transform: translateY(0) translateZ(0) scale(0.8);
+    -moz-transform: translateY(0) translateZ(0) scale(0.8);
+    -ms-transform: translateY(0) translateZ(0) scale(0.8);
+    -o-transform: translateY(0) translateZ(0) scale(0.8);
+    transform: translateY(0) translateZ(0) scale(0.8);
   }
   100% {
     opacity: 1;
     z-index: 2;
-    -webkit-transform: translate3d(0, 0, 0) scale(1);
-    -moz-transform: translate3d(0, 0, 0) scale(1);
-    -ms-transform: translate3d(0, 0, 0) scale(1);
-    -o-transform: translate3d(0, 0, 0) scale(1);
-    transform: translate3d(0, 0, 0) scale(1);
+    -webkit-transform: translateY(0) translateZ(0) scale(1);
+    -moz-transform: translateY(0) translateZ(0) scale(1);
+    -ms-transform: translateY(0) translateZ(0) scale(1);
+    -o-transform: translateY(0) translateZ(0) scale(1);
+    transform: translateY(0) translateZ(0) scale(1);
   }
 }
 @-ms-keyframes card_in {
@@ -7071,11 +7108,11 @@ body.water-therapy .main #shower-technology .shower-technology-description .show
     -ms-filter: blur(7px);
     -o-filter: blur(7px);
     filter: blur(7px);
-    -webkit-transform: translate3d(0, 100%, 0) scale(0.8);
-    -moz-transform: translate3d(0, 100%, 0) scale(0.8);
-    -ms-transform: translate3d(0, 100%, 0) scale(0.8);
-    -o-transform: translate3d(0, 100%, 0) scale(0.8);
-    transform: translate3d(0, 100%, 0) scale(0.8);
+    -webkit-transform: translateY(615px) translateZ(0) scale(0.8);
+    -moz-transform: translateY(615px) translateZ(0) scale(0.8);
+    -ms-transform: translateY(615px) translateZ(0) scale(0.8);
+    -o-transform: translateY(615px) translateZ(0) scale(0.8);
+    transform: translateY(615px) translateZ(0) scale(0.8);
   }
   50% {
     opacity: 1;
@@ -7086,20 +7123,20 @@ body.water-therapy .main #shower-technology .shower-technology-description .show
     -ms-filter: blur(0);
     -o-filter: blur(0);
     filter: blur(0);
-    -webkit-transform: translate3d(0, 0, 0) scale(0.8);
-    -moz-transform: translate3d(0, 0, 0) scale(0.8);
-    -ms-transform: translate3d(0, 0, 0) scale(0.8);
-    -o-transform: translate3d(0, 0, 0) scale(0.8);
-    transform: translate3d(0, 0, 0) scale(0.8);
+    -webkit-transform: translateY(0) translateZ(0) scale(0.8);
+    -moz-transform: translateY(0) translateZ(0) scale(0.8);
+    -ms-transform: translateY(0) translateZ(0) scale(0.8);
+    -o-transform: translateY(0) translateZ(0) scale(0.8);
+    transform: translateY(0) translateZ(0) scale(0.8);
   }
   100% {
     opacity: 1;
     z-index: 2;
-    -webkit-transform: translate3d(0, 0, 0) scale(1);
-    -moz-transform: translate3d(0, 0, 0) scale(1);
-    -ms-transform: translate3d(0, 0, 0) scale(1);
-    -o-transform: translate3d(0, 0, 0) scale(1);
-    transform: translate3d(0, 0, 0) scale(1);
+    -webkit-transform: translateY(0) translateZ(0) scale(1);
+    -moz-transform: translateY(0) translateZ(0) scale(1);
+    -ms-transform: translateY(0) translateZ(0) scale(1);
+    -o-transform: translateY(0) translateZ(0) scale(1);
+    transform: translateY(0) translateZ(0) scale(1);
   }
 }
 @keyframes card_in {
@@ -7111,11 +7148,11 @@ body.water-therapy .main #shower-technology .shower-technology-description .show
     -ms-filter: blur(7px);
     -o-filter: blur(7px);
     filter: blur(7px);
-    -webkit-transform: translate3d(0, 100%, 0) scale(0.8);
-    -moz-transform: translate3d(0, 100%, 0) scale(0.8);
-    -ms-transform: translate3d(0, 100%, 0) scale(0.8);
-    -o-transform: translate3d(0, 100%, 0) scale(0.8);
-    transform: translate3d(0, 100%, 0) scale(0.8);
+    -webkit-transform: translateY(615px) translateZ(0) scale(0.8);
+    -moz-transform: translateY(615px) translateZ(0) scale(0.8);
+    -ms-transform: translateY(615px) translateZ(0) scale(0.8);
+    -o-transform: translateY(615px) translateZ(0) scale(0.8);
+    transform: translateY(615px) translateZ(0) scale(0.8);
   }
   50% {
     opacity: 1;
@@ -7126,30 +7163,30 @@ body.water-therapy .main #shower-technology .shower-technology-description .show
     -ms-filter: blur(0);
     -o-filter: blur(0);
     filter: blur(0);
-    -webkit-transform: translate3d(0, 0, 0) scale(0.8);
-    -moz-transform: translate3d(0, 0, 0) scale(0.8);
-    -ms-transform: translate3d(0, 0, 0) scale(0.8);
-    -o-transform: translate3d(0, 0, 0) scale(0.8);
-    transform: translate3d(0, 0, 0) scale(0.8);
+    -webkit-transform: translateY(0) translateZ(0) scale(0.8);
+    -moz-transform: translateY(0) translateZ(0) scale(0.8);
+    -ms-transform: translateY(0) translateZ(0) scale(0.8);
+    -o-transform: translateY(0) translateZ(0) scale(0.8);
+    transform: translateY(0) translateZ(0) scale(0.8);
   }
   100% {
     opacity: 1;
     z-index: 2;
-    -webkit-transform: translate3d(0, 0, 0) scale(1);
-    -moz-transform: translate3d(0, 0, 0) scale(1);
-    -ms-transform: translate3d(0, 0, 0) scale(1);
-    -o-transform: translate3d(0, 0, 0) scale(1);
-    transform: translate3d(0, 0, 0) scale(1);
+    -webkit-transform: translateY(0) translateZ(0) scale(1);
+    -moz-transform: translateY(0) translateZ(0) scale(1);
+    -ms-transform: translateY(0) translateZ(0) scale(1);
+    -o-transform: translateY(0) translateZ(0) scale(1);
+    transform: translateY(0) translateZ(0) scale(1);
   }
 }
 @-webkit-keyframes card_out {
   0% {
     opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0) scale(1);
-    -moz-transform: translate3d(0, 0, 0) scale(1);
-    -ms-transform: translate3d(0, 0, 0) scale(1);
-    -o-transform: translate3d(0, 0, 0) scale(1);
-    transform: translate3d(0, 0, 0) scale(1);
+    -webkit-transform: translateY(0) translateZ(0) scale(1);
+    -moz-transform: translateY(0) translateZ(0) scale(1);
+    -ms-transform: translateY(0) translateZ(0) scale(1);
+    -o-transform: translateY(0) translateZ(0) scale(1);
+    transform: translateY(0) translateZ(0) scale(1);
   }
   50% {
     opacity: 1;
@@ -7159,11 +7196,11 @@ body.water-therapy .main #shower-technology .shower-technology-description .show
     -ms-filter: blur(0);
     -o-filter: blur(0);
     filter: blur(0);
-    -webkit-transform: translate3d(0, 0, 0) scale(0.8);
-    -moz-transform: translate3d(0, 0, 0) scale(0.8);
-    -ms-transform: translate3d(0, 0, 0) scale(0.8);
-    -o-transform: translate3d(0, 0, 0) scale(0.8);
-    transform: translate3d(0, 0, 0) scale(0.8);
+    -webkit-transform: translateY(0) translateZ(0) scale(0.8);
+    -moz-transform: translateY(0) translateZ(0) scale(0.8);
+    -ms-transform: translateY(0) translateZ(0) scale(0.8);
+    -o-transform: translateY(0) translateZ(0) scale(0.8);
+    transform: translateY(0) translateZ(0) scale(0.8);
   }
   100% {
     opacity: 1;
@@ -7174,21 +7211,21 @@ body.water-therapy .main #shower-technology .shower-technology-description .show
     -ms-filter: blur(7px);
     -o-filter: blur(7px);
     filter: blur(7px);
-    -webkit-transform: translate3d(0, -100%, 0) scale(0.8);
-    -moz-transform: translate3d(0, -100%, 0) scale(0.8);
-    -ms-transform: translate3d(0, -100%, 0) scale(0.8);
-    -o-transform: translate3d(0, -100%, 0) scale(0.8);
-    transform: translate3d(0, -100%, 0) scale(0.8);
+    -webkit-transform: translateY(-615px) translateZ(0) scale(0.8);
+    -moz-transform: translateY(-615px) translateZ(0) scale(0.8);
+    -ms-transform: translateY(-615px) translateZ(0) scale(0.8);
+    -o-transform: translateY(-615px) translateZ(0) scale(0.8);
+    transform: translateY(-615px) translateZ(0) scale(0.8);
   }
 }
 @-moz-keyframes card_out {
   0% {
     opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0) scale(1);
-    -moz-transform: translate3d(0, 0, 0) scale(1);
-    -ms-transform: translate3d(0, 0, 0) scale(1);
-    -o-transform: translate3d(0, 0, 0) scale(1);
-    transform: translate3d(0, 0, 0) scale(1);
+    -webkit-transform: translateY(0) translateZ(0) scale(1);
+    -moz-transform: translateY(0) translateZ(0) scale(1);
+    -ms-transform: translateY(0) translateZ(0) scale(1);
+    -o-transform: translateY(0) translateZ(0) scale(1);
+    transform: translateY(0) translateZ(0) scale(1);
   }
   50% {
     opacity: 1;
@@ -7198,11 +7235,11 @@ body.water-therapy .main #shower-technology .shower-technology-description .show
     -ms-filter: blur(0);
     -o-filter: blur(0);
     filter: blur(0);
-    -webkit-transform: translate3d(0, 0, 0) scale(0.8);
-    -moz-transform: translate3d(0, 0, 0) scale(0.8);
-    -ms-transform: translate3d(0, 0, 0) scale(0.8);
-    -o-transform: translate3d(0, 0, 0) scale(0.8);
-    transform: translate3d(0, 0, 0) scale(0.8);
+    -webkit-transform: translateY(0) translateZ(0) scale(0.8);
+    -moz-transform: translateY(0) translateZ(0) scale(0.8);
+    -ms-transform: translateY(0) translateZ(0) scale(0.8);
+    -o-transform: translateY(0) translateZ(0) scale(0.8);
+    transform: translateY(0) translateZ(0) scale(0.8);
   }
   100% {
     opacity: 1;
@@ -7213,21 +7250,21 @@ body.water-therapy .main #shower-technology .shower-technology-description .show
     -ms-filter: blur(7px);
     -o-filter: blur(7px);
     filter: blur(7px);
-    -webkit-transform: translate3d(0, -100%, 0) scale(0.8);
-    -moz-transform: translate3d(0, -100%, 0) scale(0.8);
-    -ms-transform: translate3d(0, -100%, 0) scale(0.8);
-    -o-transform: translate3d(0, -100%, 0) scale(0.8);
-    transform: translate3d(0, -100%, 0) scale(0.8);
+    -webkit-transform: translateY(-615px) translateZ(0) scale(0.8);
+    -moz-transform: translateY(-615px) translateZ(0) scale(0.8);
+    -ms-transform: translateY(-615px) translateZ(0) scale(0.8);
+    -o-transform: translateY(-615px) translateZ(0) scale(0.8);
+    transform: translateY(-615px) translateZ(0) scale(0.8);
   }
 }
 @-ms-keyframes card_out {
   0% {
     opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0) scale(1);
-    -moz-transform: translate3d(0, 0, 0) scale(1);
-    -ms-transform: translate3d(0, 0, 0) scale(1);
-    -o-transform: translate3d(0, 0, 0) scale(1);
-    transform: translate3d(0, 0, 0) scale(1);
+    -webkit-transform: translateY(0) translateZ(0) scale(1);
+    -moz-transform: translateY(0) translateZ(0) scale(1);
+    -ms-transform: translateY(0) translateZ(0) scale(1);
+    -o-transform: translateY(0) translateZ(0) scale(1);
+    transform: translateY(0) translateZ(0) scale(1);
   }
   50% {
     opacity: 1;
@@ -7237,11 +7274,11 @@ body.water-therapy .main #shower-technology .shower-technology-description .show
     -ms-filter: blur(0);
     -o-filter: blur(0);
     filter: blur(0);
-    -webkit-transform: translate3d(0, 0, 0) scale(0.8);
-    -moz-transform: translate3d(0, 0, 0) scale(0.8);
-    -ms-transform: translate3d(0, 0, 0) scale(0.8);
-    -o-transform: translate3d(0, 0, 0) scale(0.8);
-    transform: translate3d(0, 0, 0) scale(0.8);
+    -webkit-transform: translateY(0) translateZ(0) scale(0.8);
+    -moz-transform: translateY(0) translateZ(0) scale(0.8);
+    -ms-transform: translateY(0) translateZ(0) scale(0.8);
+    -o-transform: translateY(0) translateZ(0) scale(0.8);
+    transform: translateY(0) translateZ(0) scale(0.8);
   }
   100% {
     opacity: 1;
@@ -7252,21 +7289,21 @@ body.water-therapy .main #shower-technology .shower-technology-description .show
     -ms-filter: blur(7px);
     -o-filter: blur(7px);
     filter: blur(7px);
-    -webkit-transform: translate3d(0, -100%, 0) scale(0.8);
-    -moz-transform: translate3d(0, -100%, 0) scale(0.8);
-    -ms-transform: translate3d(0, -100%, 0) scale(0.8);
-    -o-transform: translate3d(0, -100%, 0) scale(0.8);
-    transform: translate3d(0, -100%, 0) scale(0.8);
+    -webkit-transform: translateY(-615px) translateZ(0) scale(0.8);
+    -moz-transform: translateY(-615px) translateZ(0) scale(0.8);
+    -ms-transform: translateY(-615px) translateZ(0) scale(0.8);
+    -o-transform: translateY(-615px) translateZ(0) scale(0.8);
+    transform: translateY(-615px) translateZ(0) scale(0.8);
   }
 }
 @keyframes card_out {
   0% {
     opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0) scale(1);
-    -moz-transform: translate3d(0, 0, 0) scale(1);
-    -ms-transform: translate3d(0, 0, 0) scale(1);
-    -o-transform: translate3d(0, 0, 0) scale(1);
-    transform: translate3d(0, 0, 0) scale(1);
+    -webkit-transform: translateY(0) translateZ(0) scale(1);
+    -moz-transform: translateY(0) translateZ(0) scale(1);
+    -ms-transform: translateY(0) translateZ(0) scale(1);
+    -o-transform: translateY(0) translateZ(0) scale(1);
+    transform: translateY(0) translateZ(0) scale(1);
   }
   50% {
     opacity: 1;
@@ -7276,11 +7313,11 @@ body.water-therapy .main #shower-technology .shower-technology-description .show
     -ms-filter: blur(0);
     -o-filter: blur(0);
     filter: blur(0);
-    -webkit-transform: translate3d(0, 0, 0) scale(0.8);
-    -moz-transform: translate3d(0, 0, 0) scale(0.8);
-    -ms-transform: translate3d(0, 0, 0) scale(0.8);
-    -o-transform: translate3d(0, 0, 0) scale(0.8);
-    transform: translate3d(0, 0, 0) scale(0.8);
+    -webkit-transform: translateY(0) translateZ(0) scale(0.8);
+    -moz-transform: translateY(0) translateZ(0) scale(0.8);
+    -ms-transform: translateY(0) translateZ(0) scale(0.8);
+    -o-transform: translateY(0) translateZ(0) scale(0.8);
+    transform: translateY(0) translateZ(0) scale(0.8);
   }
   100% {
     opacity: 1;
@@ -7291,10 +7328,10 @@ body.water-therapy .main #shower-technology .shower-technology-description .show
     -ms-filter: blur(7px);
     -o-filter: blur(7px);
     filter: blur(7px);
-    -webkit-transform: translate3d(0, -100%, 0) scale(0.8);
-    -moz-transform: translate3d(0, -100%, 0) scale(0.8);
-    -ms-transform: translate3d(0, -100%, 0) scale(0.8);
-    -o-transform: translate3d(0, -100%, 0) scale(0.8);
-    transform: translate3d(0, -100%, 0) scale(0.8);
+    -webkit-transform: translateY(-615px) translateZ(0) scale(0.8);
+    -moz-transform: translateY(-615px) translateZ(0) scale(0.8);
+    -ms-transform: translateY(-615px) translateZ(0) scale(0.8);
+    -o-transform: translateY(-615px) translateZ(0) scale(0.8);
+    transform: translateY(-615px) translateZ(0) scale(0.8);
   }
 }

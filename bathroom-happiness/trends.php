@@ -101,7 +101,7 @@
                     </div>
                     <div class="content">
                       <div class="image" style="background-image: url(images/trends/neo-classic.jpg);">
-                        <img src="images/trends/neo-classic.jpg" alt="Boho">                        
+                        <img src="images/trends/neo-classic.jpg" alt="Boho"/>
                         <div class="gif" style="background-image: url(images/trends/neo-classic.gif);"></div>
                       </div>
                     </div>

@@ -55,12 +55,12 @@
   appearance:       $value;   
 }
 @mixin perspective($value){
-  -webkit-perspective:   $value;
-  -moz-perspective:       $value;
+  -webkit-perspective:   #{$value}px;
+  -moz-perspective:       #{$value}px;
   -moz-transform: perspective($value);
   -ms-perspective:     $value;
-  -o-perspective:     $value;
-  perspective:       $value;   
+  -o-perspective:     #{$value}px;
+  perspective:       #{$value}px;   
 }
 @mixin transform-origin($value){
   -webkit-transform-origin:   $value;

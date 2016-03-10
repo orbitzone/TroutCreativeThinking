@@ -80,6 +80,7 @@ var playerManager = {
       var nextPlayer = new player();
       nextPlayer.init(next);
       this.removeHoldingList();
+      console.log(next.container);
     }
   },
   update: function(container, settings){
@@ -472,7 +473,7 @@ var bathroomHappiness = {
     // When the player is ready, add listeners for pause, finish, and playProgress
 
     if(!isMobile.any()){
-      var initialVideoLoad = ['water-therapy','water-therapy-therapeutic','water-therapy-relaxation','water-therapy-rejuvenation'];
+      var initialVideoLoad = ['water-therapy','water-therapy-therapeutic','water-therapy-relaxation','water-therapy-rejuvenation','st-waterfall'];
       for(var k = 0; k < initialVideoLoad.length; k++){
         var player_container = initialVideoLoad[k]+'-video';
         var video = $('#'+initialVideoLoad[k]+'-video-wrap').data('video');
@@ -484,6 +485,9 @@ var bathroomHappiness = {
             controls: 0
           };
           var autoplay = 1;
+          if(initialVideoLoad[k] == 'st-waterfall'){
+            autoplay= 0;
+          }
           var introPlayer = new player();
           introPlayer.init({
             container: player_container,
@@ -492,8 +496,10 @@ var bathroomHappiness = {
             loop: 1,
             mute: 1, 
             onReady: function(container){
-              $('#'+container).parent().parent().addClass('ready');  
-              $('#'+container).parent().addClass('ready');
+              if(container !== 'st-waterfall'){
+                $('#'+container).parent().parent().addClass('ready');  
+                $('#'+container).parent().addClass('ready');
+              }
             },
             playerVars: vars
           });
@@ -653,34 +659,7 @@ var bathroomHappiness = {
         });
       }
     });
-    $('.shower-technology-card').each(function(){
-      var video = $(this).find('.video').data('video');
-      var container = $(this).find('.video').attr('id').replace('-wrap','');
-      var vars = {
-        showinfo: 0,
-        modestbranding: 0,
-        rel: 0,
-        controls: 0
-      };
-      var showerTechPlayer = new player();
-      showerTechPlayer.init({
-        container: container,
-        videoId: video, 
-        autoplay: false,
-        loop: false,
-        onReady: function(container){  
-        },
-        onPlaying: function(){  
-        },
-        onEnded: function(){
-          
-        },
-        onPaused: function(){
-          
-        },
-        playerVars: vars
-      });
-    });
+    
     $('#shower-technology .shower-technology-menu a').on('click', function(){
       $('#shower-technology .shower-technology-menu a').removeClass('active');
       $('#shower-technology .shower-technology-description').removeClass('active');
@@ -691,7 +670,37 @@ var bathroomHappiness = {
       if(playerManager.active.substring(0,2) == 'st'){
         playerManager.stop(playerManager.active);
       }
-      playerManager.play('st-'+section+'video');
+      if(playerManager.exists()){
+        playerManager.play('st-'+section+'video');
+      }else{
+        var video =$('#st-'+section+'-video-wrap').data('video');
+        var container = 'st-'+section+'-video';
+        var vars = {
+          showinfo: 0,
+          modestbranding: 0,
+          rel: 0,
+          controls: 0
+        };
+        var showerTechPlayer = new player();
+        showerTechPlayer.init({
+          container: container,
+          videoId: video, 
+          autoplay: 0,
+          loop: false,
+          onReady: function(container){  
+            playerManager.play(container);
+          },
+          onPlaying: function(){  
+          },
+          onEnded: function(){
+            
+          },
+          onPaused: function(){
+            
+          },
+          playerVars: vars
+        });
+      }      
       return false;
     });
     $('#shower-technology .st-waterfall').addClass('active');

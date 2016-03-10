@@ -32,6 +32,7 @@ var isIE = function(){
     return false; //It is not IE
   }
 };
+var ieV = isIE();
 /*playerVars = {
         showinfo: 0,
         modestbranding: 0,
@@ -190,7 +191,9 @@ var player = {
         playerManager.add(this.loadPlayer(), settings);
       }else{
         playerManager.update(this.settings.container, settings);
-        playerManager.play(this.settings.container);
+        if(settings.autoplay){
+          playerManager.play(this.settings.container);
+        }
       }
     }
   },
@@ -205,7 +208,7 @@ var player = {
         onReady: function(event){
           var id = event.target.c.id;
           var current = playerManager.players[id];
-          if(current.settings.autoplay == true  && !isMobile.any()){
+          if(current.settings.autoplay && !isMobile.any()){
             if(typeof current.settings.mute !== 'undefined'){
               playerManager.play(current.settings.container,current.settings.mute);
             }else{
@@ -350,7 +353,7 @@ var bathroomHappiness = {
   waterTherapy: function(){
     // When the player is ready, add listeners for pause, finish, and playProgress
 
-    var initialVideoLoad = ['water-therapy','water-therapy-therapeutic','water-therapy-relaxation','water-therapy-rejuvenation'];
+    var initialVideoLoad = ['water-therapy','water-therapy-therapeutic','water-therapy-relaxation','water-therapy-rejuvenation','st-waterfall'];
     var loadNext = function(key){
       if(key < initialVideoLoad.length){
         var player_container = initialVideoLoad[key]+'-video';
@@ -363,10 +366,14 @@ var bathroomHappiness = {
             rel: 0,
             controls: 0
           };
+          var autoplay = 1;
+          if(key == 'st-waterfall'){
+            autoplay = 0;
+          }
           player.init({
             container: player_container,
             videoId: video,
-            autoplay: 1,
+            autoplay: autoplay,
             loop: 1,
             mute: 1, 
             onReady: function(){
@@ -557,33 +564,6 @@ var bathroomHappiness = {
         });
       }
     });
-    var video = $('#st-waterfall-video-wrap').data('video');
-    var vars = {
-      showinfo: 0,
-      modestbranding: 0,
-      rel: 0,
-      controls: 0
-    };
-    player.init({
-      container: 'st-waterfall-video',
-      videoId: video, 
-      autoplay: false,
-      loop: false,
-      onReady: function(){  
-        //$('#water-therapy-full-video').parent().addClass('ready');        
-      },
-      onPlaying: function(){  
-        //$('#banner .play-full-video').addClass('playing');
-        //$('#full-video-popup').removeClass('hide'); 
-      },
-      onEnded: function(){
-        
-      },
-      onPaused: function(){
-        
-      },
-      playerVars: vars
-    });
     $('#shower-technology .shower-technology-menu a').on('click', function(){
       $('#shower-technology .shower-technology-menu a').removeClass('active');
       $(this).addClass('active');
@@ -673,7 +653,6 @@ var bathroomHappiness = {
         $('.grid-module-zones-sections').width('');
         $('.grid-module-zones-section').width('');
       }
-      var ieV =isIE();
       $('.grid-module-zones-sections').each(function(){
         var s = 0;
         $(this).find('.grid-module-zones-section').each(function(){

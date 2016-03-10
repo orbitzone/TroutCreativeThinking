@@ -5562,7 +5562,7 @@ body.water-therapy .main #shower-technology .shower-technology-cards .shower-tec
 }
 /* line 1267, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-cards .shower-technology-card.active.ie-lt {
-  opacity: 0;
+  opacity: 1;
   -moz-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
   -webkit-transition: all 1s ease-in-out;

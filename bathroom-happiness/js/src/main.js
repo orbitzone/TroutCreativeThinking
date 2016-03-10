@@ -673,11 +673,12 @@ var bathroomHappiness = {
         $('.grid-module-zones-sections').width('');
         $('.grid-module-zones-section').width('');
       }
+      var ieV =isIE();
       $('.grid-module-zones-sections').each(function(){
         var s = 0;
         $(this).find('.grid-module-zones-section').each(function(){
           $(this).find('.grid-module-zone-1 .grid-module-slider img').width(containerWidth);
-          if(isIE() <= 9){
+          if(ieV <= 9){
             $(this).css({
               transform: 'translate('+(-1 * (s) * containerWidth )+'px,0)'        
             });
@@ -697,7 +698,7 @@ var bathroomHappiness = {
         });
       });
     }).resize();
-    var ieV =isIE();
+    
     if(ieV){
       var lt = "";
       if(ieV <= 9){

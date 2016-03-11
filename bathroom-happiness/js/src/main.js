@@ -481,10 +481,10 @@ var bathroomHappiness = {
   trends: function(){
     $('.bathroom-gallery').on('mouseover', function(){
       var img = $(this).find('.image img').attr('src');
-      $(this).find('.image img').attr('src', img.replace('jpg','gif'));
+      $(this).find('.image img').attr('src', img.replace('png','gif'));
     }).on('mouseout', function(){
       var img = $(this).find('.image img').attr('src');
-      $(this).find('.image img').attr('src', img.replace('gif','jpg'));
+      $(this).find('.image img').attr('src', img.replace('gif','png'));
     });
   },
   waterTherapy: function(){

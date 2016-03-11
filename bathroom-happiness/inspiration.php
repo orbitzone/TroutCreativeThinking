@@ -33,8 +33,8 @@
                       </div>
                     </div>
                     <div class="content">
-                      <div class="image" style="background-image: url(images/inspiration/bathroom-gallery.jpg);">
-                        <img src="images/inspiration/bathroom-gallery.jpg" alt="Bathroom Gallery">
+                      <div class="image" style="background-image: url(images/inspiration/view-bathroom-gallery.png);">
+                        <img src="images/inspiration/view-bathroom-gallery.png" alt="View Bathroom Gallery">
                       </div>
                     </div>
                   </a>
@@ -55,8 +55,8 @@
                       </div>                    
                     </div>
                     <div class="content">
-                      <div class="image" style="background-image: url(images/inspiration/trends.jpg);">
-                        <img src="images/inspiration/trends.jpg" alt="Trends">
+                      <div class="image" style="background-image: url(images/inspiration/find-your-style-trends-inspiration.png);">
+                        <img src="images/inspiration/find-your-style-trends-inspiration.png" alt="Find your style trends inspiration">
                       </div>
                     </div>
                   </a>

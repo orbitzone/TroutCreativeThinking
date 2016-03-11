@@ -26,7 +26,7 @@
               <!-- large/middle col (shower img) -->
               <div class="col-md-6 col-md-push-3">
                 <div class="panel panel-hero">
-                  <a href="http://www.reece.com.au/bathrooms/inspiration">
+                  <a href="inspiration.php">
                     <div class="image">
                       <img src="images/homepage/get-inspired-bathroom.png" alt="get inspired bathroom">
                     </div>
@@ -49,7 +49,7 @@
               </div>
               <!-- left col (find inspiration img) -->
               <div class="col-md-3 col-sm-6 col-md-pull-6">
-                <a href="http://www.reece.com.au/bathrooms/inspiration" class="panel panel-link panel-find-inspiration">
+                <a href="inspiration.php" class="panel panel-link panel-find-inspiration">
                   <div class="background-div"></div>
                   <div class="text-overlay">
                     <div class="text-overlay-line-1">Find</div> 

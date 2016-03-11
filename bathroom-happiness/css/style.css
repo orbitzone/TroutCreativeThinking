@@ -3361,7 +3361,7 @@ body.trends #banner .container-fluid {
 }
 /* line 13, ../sass/pages/_trends.scss */
 body.trends #banner .container-fluid .banner {
-  background-image: url(../images/trends/banner.jpg);
+  background-image: url(../images/trends/find-your-style-trends-banner.png);
   background-size: cover;
   height: 200px;
 }

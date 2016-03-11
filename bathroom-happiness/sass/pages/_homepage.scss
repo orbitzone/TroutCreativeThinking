@@ -119,6 +119,12 @@ body.homepage {
         font-size: 44px;
         padding: 0 20px;
       }
+      @media (min-width: $screen-md-min) {
+        font-size: 34px;
+      }
+      @media (min-width: $screen-lg-min) {
+        font-size: 44px;        
+      }
     }
     .experience{
       font-weight: 300;
@@ -147,7 +153,9 @@ body.homepage {
       }
       .image{
         //max-height: 510px;
-        max-height: 390px;
+        @media (min-width: $screen-md-min){
+          max-height: 390px;
+        }
         overflow: hidden;
       }
       img {

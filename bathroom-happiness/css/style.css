@@ -1597,7 +1597,7 @@ body.homepage .section-intro .panel-find-inspiration {
 /* line 261, ../sass/pages/_homepage.scss */
 body.homepage .section-intro .panel-find-inspiration .background-div {
   height: 100%;
-  background: url("../images/homepage/find-inspiration.jpg");
+  background: url("../images/homepage/find-bathroom-inspiration.png");
   background-size: cover;
 }
 /* line 268, ../sass/pages/_homepage.scss */
@@ -1607,7 +1607,7 @@ body.homepage .section-intro .panel-shop-products {
 /* line 270, ../sass/pages/_homepage.scss */
 body.homepage .section-intro .panel-shop-products .background-div {
   height: 100%;
-  background: url("../images/homepage/shop-products.jpg");
+  background: url("../images/homepage/shop-bathroom-products.png");
   background-size: cover;
 }
 @media (min-width: 1200px) {

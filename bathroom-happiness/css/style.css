@@ -1447,6 +1447,7 @@ body.homepage .section-intro .panel-hero {
 }
 /* line 154, ../sass/pages/_homepage.scss */
 body.homepage .section-intro .panel-hero .image {
+  max-height: 570px;
   overflow: hidden;
 }
 @media (min-width: 992px) {

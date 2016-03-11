@@ -28,7 +28,7 @@
                 <div class="panel panel-hero">
                   <a href="http://www.reece.com.au/bathrooms/inspiration">
                     <div class="image">
-                      <img src="images/homepage/woman-in-shower.jpg" alt="it's time to create a bathroom you love">
+                      <img src="images/homepage/woman-in-shower.png" alt="it's time to create a bathroom you love">
                     </div>
                     <h2 class="intro-text">
                       it's time to<br>

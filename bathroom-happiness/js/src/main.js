@@ -86,13 +86,13 @@ var playerManager = {
   update: function(container, settings){
     this.players[settings.container].settings = settings;
   },
-  play: function(container){
+  play: function(container, mute){
     if(this.exists(container)){
       playerManager.activate(container);
       var video = this.players[container].player;
       var settings = this.players[container].settings;
       if(typeof video.playVideo !== "undefined"){
-        if(settings.mute){
+        if(mute == 1){
           video.mute();
         }
         video.playVideo();      
@@ -115,6 +115,18 @@ var playerManager = {
       }else{
         this.getActive().settings.autoplay = false;
       }
+    }
+  },
+  mute: function(container){
+    if(this.exists(container)){
+      var video = this.players[container].player;
+      video.mute();
+    }
+  },
+  unmute: function(container){
+    if(this.exists(container)){
+      var video = this.players[container].player;
+      video.unmute();
     }
   },
   onChangeState: function(event){
@@ -467,7 +479,13 @@ var bathroomHappiness = {
     }
   },
   trends: function(){
-
+    $('.bathroom-gallery').on('mouseover', function(){
+      var img = $(this).find('.image img').attr('src');
+      $(this).find('.image img').attr('src', img.replace('jpg','gif'));
+    }).on('mouseout', function(){
+      var img = $(this).find('.image img').attr('src');
+      $(this).find('.image img').attr('src', img.replace('gif','jpg'));
+    });
   },
   waterTherapy: function(){
     // When the player is ready, add listeners for pause, finish, and playProgress
@@ -485,8 +503,12 @@ var bathroomHappiness = {
             controls: 0
           };
           var autoplay = 1;
+          var mute = 1;
           if(initialVideoLoad[k] == 'st-waterfall'){
-            autoplay= 0;
+            autoplay= 0;            
+          }
+          if(initialVideoLoad[k] == 'water-therapy-therapeutic'){
+            mute = 0;
           }
           var introPlayer = new player();
           introPlayer.init({
@@ -494,7 +516,7 @@ var bathroomHappiness = {
             videoId: video,
             autoplay: autoplay,
             loop: 1,
-            mute: 1, 
+            mute: mute, 
             onReady: function(container){
               if(container !== 'st-waterfall'){
                 $('#'+container).parent().parent().addClass('ready');  

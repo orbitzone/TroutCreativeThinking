@@ -40,9 +40,8 @@
                       </div>
                     </div>
                     <div class="content">
-                      <div class="image" style="background-image: url(images/trends/day-spa.jpg);">
-                        <img src="images/trends/day-spa.jpg" alt="Day Spa">
-                        <div class="gif" style="background-image: url(images/trends/day-spa.gif);"></div>
+                      <div class="image">
+                        <img src="images/trends/day-spa.jpg" alt="Day Spa">                        
                       </div>
                     </div>
                   </a>
@@ -60,9 +59,8 @@
                       </div>
                     </div>
                     <div class="content">
-                      <div class="image" style="background-image: url(images/trends/hotel-inspired.jpg);">
-                        <img src="images/trends/hotel-inspired.jpg" alt="Hotel Inspired">
-                        <div class="gif" style="background-image: url(images/trends/hotel-inspired.gif);"></div>
+                      <div class="image">
+                        <img src="images/trends/hotel-inspired.jpg" alt="Hotel Inspired">                        
                       </div>
                     </div>
                   </a>
@@ -80,9 +78,8 @@
                       </div>
                     </div>
                     <div class="content">
-                      <div class="image" style="background-image: url(images/trends/boho.jpg);">
-                        <img src="images/trends/boho.jpg" alt="Boho">
-                        <div class="gif" style="background-image: url(images/trends/boho.gif);"></div>
+                      <div class="image">
+                        <img src="images/trends/boho.jpg" alt="Boho">                        
                       </div>
                     </div>
                   </a>
@@ -100,9 +97,8 @@
                       </div>
                     </div>
                     <div class="content">
-                      <div class="image" style="background-image: url(images/trends/neo-classic.jpg);">
-                        <img src="images/trends/neo-classic.jpg" alt="Boho"/>
-                        <div class="gif" style="background-image: url(images/trends/neo-classic.gif);"></div>
+                      <div class="image">
+                        <img src="images/trends/neo-classic.jpg" alt="Boho"/>                        
                       </div>
                     </div>
                   </a>
@@ -120,9 +116,8 @@
                       </div>
                     </div>
                     <div class="content">
-                      <div class="image" style="background-image: url(images/trends/material-crush.jpg);">
-                        <img src="images/trends/material-crush.jpg" alt="Material Crush">
-                        <div class="gif" style="background-image: url(images/trends/material-crush.gif);"></div>
+                      <div class="image">
+                        <img src="images/trends/material-crush.jpg" alt="Material Crush">                        
                       </div>
                     </div>
                   </a>
@@ -140,9 +135,8 @@
                       </div>
                     </div>
                     <div class="content">
-                      <div class="image" style="background-image: url(images/trends/nordic-minimal.jpg);">
-                        <img src="images/trends/nordic-minimal.jpg" alt="Nordic Minimal">
-                        <div class="gif" style="background-image: url(images/trends/nordic-minimal.gif);"></div>
+                      <div class="image">
+                        <img src="images/trends/nordic-minimal.jpg" alt="Nordic Minimal">                       
                       </div>
                     </div>
                   </a>
@@ -160,9 +154,8 @@
                       </div>
                     </div>
                     <div class="content">
-                      <div class="image" style="background-image: url(images/trends/traditional.jpg);">
+                      <div class="image">
                         <img src="images/trends/traditional.jpg" alt="Traditional">
-                        <div class="gif" style="background-image: url(images/trends/traditional.gif);"></div>
                       </div>
                     </div>
                   </a>
@@ -180,9 +173,8 @@
                       </div>
                     </div>
                     <div class="content">
-                      <div class="image" style="background-image: url(images/trends/black-and-white.jpg);">
+                      <div class="image black-and-white">
                         <img src="images/trends/black-and-white.jpg" alt="Black &amp; White">
-                        <div class="gif" style="background-image: url(images/trends/black-and-white.gif);"></div>
                       </div>
                     </div>
                   </a>

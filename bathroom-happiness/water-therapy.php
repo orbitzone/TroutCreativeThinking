@@ -13,7 +13,7 @@
           <div class="container-fluid">
             <div class="banner">
               <div id="water-therapy-banner-videos">
-                <div id="water-therapy-video-wrap" class="video-iframe-wrap video" data-video="BL4pZ6lLWm0">
+                <div id="water-therapy-video-wrap" class="video-iframe-wrap video" data-video="0X0_Kj8YiSA">
                   <figure id="water-therapy-video"></figure>
                 </div>
                 <div id="full-video-popup" class="video-iframe-wrap">
@@ -21,7 +21,7 @@
                 </div>
               </div>
               <ul class="banner-video-buttons list-inline">
-                <li><button type="button" data-video="Aav43C9IZTI" class="play-full-video"><span>Play full video </span><i class="icon-play"></i><i class="icon-pause"></i></button></li>
+                <li><button type="button" data-video="0X0_Kj8YiSA" class="play-full-video"><span>Play full video </span><i class="icon-play"></i><i class="icon-pause"></i></button></li>
                 <li><button type="button" class="stop-full-video"><i class="icon-stop"></i></button></li>
               </ul>
             </div>          
@@ -46,7 +46,7 @@
                     <div class="videos">
                       <div class="section-1 section">
                         <img src="images/water_therapy/video.jpg" alt="Video">
-                        <div id="water-therapy-therapeutic-video-wrap" class="video-iframe-wrap video video-1" data-video="RgIxcrA7BfM">
+                        <div id="water-therapy-therapeutic-video-wrap" class="video-iframe-wrap video video-1" data-video="0X0_Kj8YiSA">
                           <figure id="water-therapy-therapeutic-video"></figure>          
                         </div>                    
                       </div>

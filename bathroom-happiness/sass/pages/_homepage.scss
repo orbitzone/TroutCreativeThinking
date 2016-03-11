@@ -1,23 +1,45 @@
 body.homepage {
   .panel-slideshow{
-    height: 335px;
+    height: auto;
     @media (min-width: $screen-md-min) {
-      height: 351px;
+      height: 295px;
     }
     @media (min-width: $screen-lg-min) {
       height: 335px;
         
      }
     .slideshow-container {
-      height: 273px;
+      height: auto;
+      padding-top: 20px;
+      padding-bottom: 20px;
       @media (min-width: $screen-md-min) {
-        height: 290px;
+        padding-top: 10px;
+        padding-bottom: 0;
+        height: 240px;
       }
       @media (min-width: $screen-lg-min) {
         height: 273px;
       }
-      padding-top: 10px;
     }
+    .slideshow-buttons{
+      position: absolute;
+      top: 258px;
+      left: 10px;
+      margin-left: 10px;
+      width: 66px;
+      @media (min-width: $screen-md-min) {
+        top: 164px;
+      }
+      @media (min-width: $screen-lg-min) {
+        top: 212px;
+      }
+    }
+    .slideshow-label{
+      padding: 9px 9px 14px;
+      @media (min-width: $screen-md-min) {
+        padding: 9px 9px 24px;
+      }
+    }    
   }
   .panel-search {
     height: 52px;
@@ -116,7 +138,7 @@ body.homepage {
         min-height: 597px;  
       }
       @media (min-width: $screen-md-min){
-        height: 708px;
+        height: 652px;
       }
       @media (min-width: $screen-lg-min){
         //min-height: 719px;  

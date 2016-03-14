@@ -872,7 +872,16 @@ body.water-therapy{
 			.grid-module-zones-4-5{
 				margin-bottom: 80px;
 			}
-			.grid-module-zone-1{				
+			.grid-module-zone-1{		
+			
+				.slideshow-buttons{
+					height: 40px;
+					@include clearfix();
+					top: inherit;
+					left: inherit;
+					left: 30px;
+					bottom: 30px;					
+				}		
 				.grid-module-slider-buttons{
 					height: 40px;
 					@include clearfix();
@@ -1068,6 +1077,9 @@ body.water-therapy{
 			.grid-module-menu-wrap,
 			.grid-module-zones-sections{
 				color: white;
+				.grid-module-zones-section{
+
+				}
 			}
 			.grid-module-menu{
 				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#37d1a4+0,41f3bf+100 */

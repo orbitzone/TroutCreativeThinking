@@ -389,10 +389,8 @@
               <ul class="list-unstyled">
                 <li><a href="#" class="active" data-section="1">Wet Zone</a></li>
                 <li><a href="#" data-section="2">Enclosed</a></li>
-                <li><a href="#" data-section="3">Walk In</a></li>
-                <li><a href="#" data-section="4">Double</a></li>
-                <li><a href="#" data-section="5">Outdoor</a></li>
-                <li><a href="#" data-section="6">Shower Bath</a></li>
+                <li><a href="#" data-section="3">Double</a></li>
+                <li><a href="#" data-section="4">Outdoor</a></li>                
               </ul>                
             </div><!-- /.scrolling-menu-list -->
           </div><!-- /.scrolling-menu-wrap -->
@@ -414,13 +412,13 @@
                     <ul class="list-unstyled">
                       <li><a href="#" class="active" data-section="1">Wet Zone</a></li>
                       <li><a href="#" data-section="2">Enclosed</a></li>
-                      <li><a href="#" data-section="3">Walk In</a></li>
-                      <li><a href="#" data-section="4">Double</a></li>
-                      <li><a href="#" data-section="5">Outdoor</a></li>
-                      <li><a href="#" data-section="6">Shower Bath</a></li>
+                      <li><a href="#" data-section="3">Double</a></li>
+                      <li><a href="#" data-section="4">Outdoor</a></li>                      
                     </ul>
                   </div>
                 </div>
+
+                <!-- Section Description -->
                 <div class="col-sm-6">
                   <div class="grid-module-description">
                     <div class="box">
@@ -437,25 +435,13 @@
                         </div>
                       </div>
                       <div class="box-content box-content-3">
-                        <h3>Walk In</h3>
-                        <div class="text">
-                          <p>Statement to explain the openness and layout of a wet zone environment.</p>
-                        </div>
-                      </div> 
-                      <div class="box-content box-content-4">
                         <h3>Double</h3>
                         <div class="text">
                           <p>Statement to explain the openness and layout of a wet zone environment.</p>
                         </div>
                       </div> 
-                      <div class="box-content box-content-5">
+                      <div class="box-content box-content-4">
                         <h3>Outdoor</h3>
-                        <div class="text">
-                          <p>Statement to explain the openness and layout of a wet zone environment.</p>
-                        </div>
-                      </div> 
-                      <div class="box-content box-content-6">
-                        <h3>Shower Bath</h3>
                         <div class="text">
                           <p>Statement to explain the openness and layout of a wet zone environment.</p>
                         </div>
@@ -466,57 +452,71 @@
               </div>
             </div>
             <div class="grid-module-zones-sections">
+
+              <!-- Section 1: WET ZONE -->
               <div class="grid-module-zones-section-1 grid-module-zones-section current">
                 <div class="row">
                   <div class="col-xs-12">
+
+                    <!-- Zone 1: Slider -->
                     <div class="panel-slideshow grid-module-zone-1">
                       <div class="grid-module-slider">
+                        <!-- Slides -->
                         <div class="slide">
                           <figure class="image">
                             <img src="images/water_therapy/showering-slider-wet-zone.jpg" alt="Showering">
                           </figure>
-                        </div>
+                        </div><!-- /.slide -->
                         <div class="slide">
                           <figure class="image">
                             <img src="images/water_therapy/showering-slider.jpg" alt="Showering">
                           </figure>
-                        </div>
+                        </div><!-- /.slide -->
                         <div class="slide">
                           <figure class="image">
                             <img src="images/water_therapy/showering-slider.jpg" alt="Showering">
                           </figure>
-                        </div>
-                      </div>
+                        </div><!-- /.slide -->
+                      </div><!-- /.grid-module-slider -->
                       <div class="showering-slider-buttons slideshow-buttons"></div>
-                    </div>                
+                    </div><!-- /.panel-slideshow -->
                   </div>
                 </div><!-- /.row-->
                 <div class="grid-module-zones-2-3">
                   <div class="row">
                     <div class="col-sm-6">
-                      <div class="grid-module-zone-wrap"><div class="grid-module-zone-2" style="background-image: url(images/water_therapy/showering-zone-2.jpg);">
-                        <div class="box">
-                        <h3>awakening</h3>
-                        </div>
-                      </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                      <div class="grid-module-zone-wrap"><div class="grid-module-zone-3" style="background-image: url(images/water_therapy/showering-zone-3.jpg);">
-                        <div class="box-border"></div>
-                        <div class="box">
-                          <div class="text">
-                            A wet zone is boundless, free and open.
+                      <div class="grid-module-zone-wrap">
+
+                        <!-- Zone 2: Title and image -->
+                        <div class="grid-module-zone-2" style="background-image: url(images/water_therapy/showering-zone-2.jpg);">
+                          <div class="box">
+                            <h3>awakening</h3>
                           </div>
-                        </div>
-                        </div>
-                      </div>
-                    </div>
+                        </div><!-- /.grid-module-zone-2 -->
+                      </div><!-- /.grid-module-zone-wrap -->
+                    </div><!-- /.col-sm-6 -->
+                    <div class="col-sm-6">
+                      <div class="grid-module-zone-wrap">
+
+                        <!-- Zone 3: Text with bg and border-->
+                        <div class="grid-module-zone-3" style="background-image: url(images/water_therapy/showering-zone-3.jpg);">
+                          <div class="box-border"></div>
+                          <div class="box">
+                            <div class="text">
+                              A wet zone is boundless, free and open.
+                            </div>
+                          </div><!-- /.box -->
+                        </div><!-- /.grid-module-zone-3 -->
+                      </div><!-- /.grid-module-zone-wrap -->
+                    </div><!-- /.col-sm-6 -->
                   </div><!-- /.row -->
                 </div><!-- /.grid-module-zones-2-3 -->
+
                 <div class="grid-module-zones-4-5">
                   <div class="row">
                     <div class="col-sm-6">
+
+                      <!-- Zone 4: Create Your Own... -->
                       <div class="grid-module-zone-4">
                         <h3>Create your own wet zone</h3>
                         <div class="row">
@@ -540,10 +540,14 @@
                       </div>
                     </div>
                     <div class="col-sm-6">
+
+                      <!-- Zone 5: Products Sliders -->
                       <div class="grid-module-zone-5">
                         <div class="grid-module-zone-5-content">
                           <div class="row">
                             <div class="col-md-6">
+
+                              <!-- Zone 5, Slider 1 -->
                               <div class="panel panel-slideshow">
                                 <div class="slideshow-container">
                                   <div class="slide">
@@ -551,7 +555,7 @@
                                       <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
                                         <div class="slide-image">
                                           <img src="images/products/milli-axon-mixer.jpg" alt="Milli Axon Basin Mixer" />
-                                        </div>
+                                        </div><!-- /.slide-image -->
                                         <div class="slide-text">
                                           <div class="product-name">
                                             Milli Axon
@@ -562,21 +566,21 @@
                                           <p class="product-price">
                                             $699.99 <span class="product-price-gst">gst inc</span>
                                           </p>
-                                        </div>
+                                        </div><!-- /.slide-text -->
                                         <div class="slide-btn-wrap">
                                           <div class="slide-btn">
                                             Shop Now
                                           </div>
                                         </div>
                                       </a>
-                                    </div>
-                                  </div>
+                                    </div><!-- /.slide-content -->
+                                  </div><!-- /.slide -->
                                   <div class="slide">
                                     <div class="slide-content">
                                       <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
                                         <div class="slide-image">
                                           <img src="images/products/milli-axon-mixer.jpg" alt="Milli Axon Basin Mixer" />
-                                        </div>
+                                        </div><!-- /.slide-image -->
                                         <div class="slide-text">
                                           <div class="product-name">
                                             Milli Axon
@@ -587,20 +591,22 @@
                                           <p class="product-price">
                                             $699.99 <span class="product-price-gst">gst inc</span>
                                           </p>
-                                        </div>
+                                        </div><!-- /.slide-text -->
                                         <div class="slide-btn-wrap">
                                           <div class="slide-btn">
                                             Shop Now
                                           </div>
                                         </div>
                                       </a>
-                                    </div>
-                                  </div>
-                                </div>
+                                    </div><!-- /.slide-content -->
+                                  </div><!-- /.slide -->
+                                </div><!-- /.slideshow-container -->
                                 <div class="slideshow-buttons"></div>                                
-                              </div>  
+                              </div><!-- /.panle-slideshow -->  
                             </div>
                             <div class="col-md-6">
+
+                              <!-- Zone 5, Slider 2 -->
                               <div class="panel panel-slideshow">
                                 <div class="slideshow-container">
                                   <div class="slide">
@@ -608,7 +614,7 @@
                                       <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
                                         <div class="slide-image">
                                           <img src="images/products/milli-axon-mixer.jpg" alt="Milli Axon Basin Mixer" />
-                                        </div>
+                                        </div><!-- /.slide-image -->
                                         <div class="slide-text">
                                           <div class="product-name">
                                             Milli Axon
@@ -619,21 +625,21 @@
                                           <p class="product-price">
                                             $699.99 <span class="product-price-gst">gst inc</span>
                                           </p>
-                                        </div>
+                                        </div><!-- /.slide-text -->
                                         <div class="slide-btn-wrap">
                                           <div class="slide-btn">
                                             Shop Now
                                           </div>
                                         </div>
                                       </a>
-                                    </div>
-                                  </div>
+                                    </div><!-- /.slide-content -->
+                                  </div><!-- /.slide -->
                                   <div class="slide">
                                     <div class="slide-content">
                                       <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
                                         <div class="slide-image">
                                           <img src="images/products/milli-axon-mixer.jpg" alt="Milli Axon Basin Mixer" />
-                                        </div>
+                                        </div><!-- /.slide-image -->
                                         <div class="slide-text">
                                           <div class="product-name">
                                             Milli Axon
@@ -644,78 +650,94 @@
                                           <p class="product-price">
                                             $699.99 <span class="product-price-gst">gst inc</span>
                                           </p>
-                                        </div>
+                                        </div><!-- /.slide-text -->
                                         <div class="slide-btn-wrap">
                                           <div class="slide-btn">
                                             Shop Now
                                           </div>
                                         </div>
                                       </a>
-                                    </div>
-                                  </div>
-                                </div>
+                                    </div><!-- /.slide-content -->
+                                  </div><!-- /.slide -->
+                                </div><!-- /.slideshow-container -->
                                 <div class="slideshow-buttons"></div>                                
-                              </div>
-                            </div>
-                          </div> 
-                        </div>                                 
-                      </div>
-                    </div>
+                              </div><!-- /.panel-slideshow -->
+                            </div><!-- /.col-md-6 -->
+                          </div><!-- /.row -->
+                        </div><!-- /.grid-module-zone-5-content -->                                 
+                      </div><!-- /.grid-module-zone-5 -->                                 
+                    </div><!-- /.col-sm-6 -->
                   </div><!-- /.row -->
                 </div><!-- /.grid-module-zones-4-5 -->     
-              </div>
+              </div><!-- /.grid-module-zones-section-1 -->
+
+
+              <!-- Section 2: ENCLOSED -->
               <div class="grid-module-zones-section-2 grid-module-zones-section">
                 <div class="row">
                   <div class="col-xs-12">
+
+                    <!-- Zone 1: Slider -->
                     <div class="panel-slideshow grid-module-zone-1">
                       <div class="grid-module-slider">
+                        <!-- Slides -->
                         <div class="slide">
                           <figure class="image">
-                            <img src="images/water_therapy/showering-slider-enclosed.jpg" alt="Showering">
+                            <img src="images/water_therapy/showering-slider-wet-zone.jpg" alt="Showering">
                           </figure>
-                        </div>
-                        <div class="slide">
-                          <figure class="image">
-                            <img src="images/water_therapy/showering-slider.jpg" alt="Showering">
-                          </figure>
-                        </div>
+                        </div><!-- /.slide -->
                         <div class="slide">
                           <figure class="image">
                             <img src="images/water_therapy/showering-slider.jpg" alt="Showering">
                           </figure>
-                        </div>
-                      </div>
+                        </div><!-- /.slide -->
+                        <div class="slide">
+                          <figure class="image">
+                            <img src="images/water_therapy/showering-slider.jpg" alt="Showering">
+                          </figure>
+                        </div><!-- /.slide -->
+                      </div><!-- /.grid-module-slider -->
                       <div class="showering-slider-buttons slideshow-buttons"></div>
-                    </div>                
+                    </div><!-- /.panel-slideshow -->
                   </div>
                 </div><!-- /.row-->
                 <div class="grid-module-zones-2-3">
                   <div class="row">
                     <div class="col-sm-6">
-                      <div class="grid-module-zone-wrap"><div class="grid-module-zone-2" style="background-image: url(images/water_therapy/showering-zone-2.jpg);">
-                        <div class="box">
-                        <h3>awakening</h3>
-                        </div>
-                      </div></div>
-                    </div>
-                    <div class="col-sm-6">
-                      <div class="grid-module-zone-wrap"><div class="grid-module-zone-3" style="background-image: url(images/water_therapy/showering-zone-3.jpg);">
-                        <div class="box-border"></div>
-                        <div class="box">
-                          <div class="text">
-                            An enclosed is boundless, free and open.
+                      <div class="grid-module-zone-wrap">
+
+                        <!-- Zone 2: Title and image -->
+                        <div class="grid-module-zone-2" style="background-image: url(images/water_therapy/showering-zone-2.jpg);">
+                          <div class="box">
+                            <h3>awakening 2</h3>
                           </div>
-                        </div>
-                        </div>
-                      </div>
-                    </div>
+                        </div><!-- /.grid-module-zone-2 -->
+                      </div><!-- /.grid-module-zone-wrap -->
+                    </div><!-- /.col-sm-6 -->
+                    <div class="col-sm-6">
+                      <div class="grid-module-zone-wrap">
+
+                        <!-- Zone 3: Text with bg and border-->
+                        <div class="grid-module-zone-3" style="background-image: url(images/water_therapy/showering-zone-3.jpg);">
+                          <div class="box-border"></div>
+                          <div class="box">
+                            <div class="text">
+                              A wet zone is boundless, free and open.
+                            </div>
+                          </div><!-- /.box -->
+                        </div><!-- /.grid-module-zone-3 -->
+                      </div><!-- /.grid-module-zone-wrap -->
+                    </div><!-- /.col-sm-6 -->
                   </div><!-- /.row -->
                 </div><!-- /.grid-module-zones-2-3 -->
+
                 <div class="grid-module-zones-4-5">
                   <div class="row">
                     <div class="col-sm-6">
+
+                      <!-- Zone 4: Create Your Own... -->
                       <div class="grid-module-zone-4">
-                        <h3>Create your own enclosed</h3>
+                        <h3>Create your own wet zone</h3>
                         <div class="row">
                           <div class="col-md-7">
                             <figure class="image">
@@ -737,10 +759,14 @@
                       </div>
                     </div>
                     <div class="col-sm-6">
+
+                      <!-- Zone 5: Products Sliders -->
                       <div class="grid-module-zone-5">
                         <div class="grid-module-zone-5-content">
                           <div class="row">
                             <div class="col-md-6">
+
+                              <!-- Zone 5, Slider 1 -->
                               <div class="panel panel-slideshow">
                                 <div class="slideshow-container">
                                   <div class="slide">
@@ -748,7 +774,7 @@
                                       <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
                                         <div class="slide-image">
                                           <img src="images/products/milli-axon-mixer.jpg" alt="Milli Axon Basin Mixer" />
-                                        </div>
+                                        </div><!-- /.slide-image -->
                                         <div class="slide-text">
                                           <div class="product-name">
                                             Milli Axon
@@ -759,21 +785,21 @@
                                           <p class="product-price">
                                             $699.99 <span class="product-price-gst">gst inc</span>
                                           </p>
-                                        </div>
+                                        </div><!-- /.slide-text -->
                                         <div class="slide-btn-wrap">
                                           <div class="slide-btn">
                                             Shop Now
                                           </div>
                                         </div>
                                       </a>
-                                    </div>
-                                  </div>
+                                    </div><!-- /.slide-content -->
+                                  </div><!-- /.slide -->
                                   <div class="slide">
                                     <div class="slide-content">
                                       <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
                                         <div class="slide-image">
                                           <img src="images/products/milli-axon-mixer.jpg" alt="Milli Axon Basin Mixer" />
-                                        </div>
+                                        </div><!-- /.slide-image -->
                                         <div class="slide-text">
                                           <div class="product-name">
                                             Milli Axon
@@ -784,20 +810,22 @@
                                           <p class="product-price">
                                             $699.99 <span class="product-price-gst">gst inc</span>
                                           </p>
-                                        </div>
+                                        </div><!-- /.slide-text -->
                                         <div class="slide-btn-wrap">
                                           <div class="slide-btn">
                                             Shop Now
                                           </div>
                                         </div>
                                       </a>
-                                    </div>
-                                  </div>
-                                </div>
+                                    </div><!-- /.slide-content -->
+                                  </div><!-- /.slide -->
+                                </div><!-- /.slideshow-container -->
                                 <div class="slideshow-buttons"></div>                                
-                              </div>  
+                              </div><!-- /.panle-slideshow -->  
                             </div>
                             <div class="col-md-6">
+
+                              <!-- Zone 5, Slider 2 -->
                               <div class="panel panel-slideshow">
                                 <div class="slideshow-container">
                                   <div class="slide">
@@ -805,7 +833,7 @@
                                       <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
                                         <div class="slide-image">
                                           <img src="images/products/milli-axon-mixer.jpg" alt="Milli Axon Basin Mixer" />
-                                        </div>
+                                        </div><!-- /.slide-image -->
                                         <div class="slide-text">
                                           <div class="product-name">
                                             Milli Axon
@@ -816,21 +844,21 @@
                                           <p class="product-price">
                                             $699.99 <span class="product-price-gst">gst inc</span>
                                           </p>
-                                        </div>
+                                        </div><!-- /.slide-text -->
                                         <div class="slide-btn-wrap">
                                           <div class="slide-btn">
                                             Shop Now
                                           </div>
                                         </div>
                                       </a>
-                                    </div>
-                                  </div>
+                                    </div><!-- /.slide-content -->
+                                  </div><!-- /.slide -->
                                   <div class="slide">
                                     <div class="slide-content">
                                       <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
                                         <div class="slide-image">
                                           <img src="images/products/milli-axon-mixer.jpg" alt="Milli Axon Basin Mixer" />
-                                        </div>
+                                        </div><!-- /.slide-image -->
                                         <div class="slide-text">
                                           <div class="product-name">
                                             Milli Axon
@@ -841,78 +869,94 @@
                                           <p class="product-price">
                                             $699.99 <span class="product-price-gst">gst inc</span>
                                           </p>
-                                        </div>
+                                        </div><!-- /.slide-text -->
                                         <div class="slide-btn-wrap">
                                           <div class="slide-btn">
                                             Shop Now
                                           </div>
                                         </div>
                                       </a>
-                                    </div>
-                                  </div>
-                                </div>
+                                    </div><!-- /.slide-content -->
+                                  </div><!-- /.slide -->
+                                </div><!-- /.slideshow-container -->
                                 <div class="slideshow-buttons"></div>                                
-                              </div>
-                            </div>
-                          </div> 
-                        </div>                                 
-                      </div>
-                    </div>
+                              </div><!-- /.panel-slideshow -->
+                            </div><!-- /.col-md-6 -->
+                          </div><!-- /.row -->
+                        </div><!-- /.grid-module-zone-5-content -->                                 
+                      </div><!-- /.grid-module-zone-5 -->                                 
+                    </div><!-- /.col-sm-6 -->
                   </div><!-- /.row -->
                 </div><!-- /.grid-module-zones-4-5 -->     
-              </div>
+              </div><!-- /.grid-module-zones-section-2 -->
+
+
+              <!-- Section 3: DOUBLE -->
               <div class="grid-module-zones-section-3 grid-module-zones-section">
                 <div class="row">
                   <div class="col-xs-12">
+
+                    <!-- Zone 1: Slider -->
                     <div class="panel-slideshow grid-module-zone-1">
                       <div class="grid-module-slider">
+                        <!-- Slides -->
                         <div class="slide">
                           <figure class="image">
-                            <img src="images/water_therapy/showering-slider-walk-in.jpg" alt="Showering">
+                            <img src="images/water_therapy/showering-slider-wet-zone.jpg" alt="Showering">
                           </figure>
-                        </div>
-                        <div class="slide">
-                          <figure class="image">
-                            <img src="images/water_therapy/showering-slider.jpg" alt="Showering">
-                          </figure>
-                        </div>
+                        </div><!-- /.slide -->
                         <div class="slide">
                           <figure class="image">
                             <img src="images/water_therapy/showering-slider.jpg" alt="Showering">
                           </figure>
-                        </div>
-                      </div>
+                        </div><!-- /.slide -->
+                        <div class="slide">
+                          <figure class="image">
+                            <img src="images/water_therapy/showering-slider.jpg" alt="Showering">
+                          </figure>
+                        </div><!-- /.slide -->
+                      </div><!-- /.grid-module-slider -->
                       <div class="showering-slider-buttons slideshow-buttons"></div>
-                    </div>                
+                    </div><!-- /.panel-slideshow -->
                   </div>
                 </div><!-- /.row-->
                 <div class="grid-module-zones-2-3">
                   <div class="row">
                     <div class="col-sm-6">
-                      <div class="grid-module-zone-wrap"><div class="grid-module-zone-2" style="background-image: url(images/water_therapy/showering-zone-2.jpg);">
-                        <div class="box">
-                        <h3>awakening</h3>
-                        </div>
-                      </div></div>
-                    </div>
-                    <div class="col-sm-6">
-                      <div class="grid-module-zone-wrap"><div class="grid-module-zone-3" style="background-image: url(images/water_therapy/showering-zone-3.jpg);">
-                        <div class="box-border"></div>
-                        <div class="box">
-                          <div class="text">
-                            A walk in is boundless, free and open.
+                      <div class="grid-module-zone-wrap">
+
+                        <!-- Zone 2: Title and image -->
+                        <div class="grid-module-zone-2" style="background-image: url(images/water_therapy/showering-zone-2.jpg);">
+                          <div class="box">
+                            <h3>awakening 3</h3>
                           </div>
-                        </div>
-                        </div>
-                      </div>
-                    </div>
+                        </div><!-- /.grid-module-zone-2 -->
+                      </div><!-- /.grid-module-zone-wrap -->
+                    </div><!-- /.col-sm-6 -->
+                    <div class="col-sm-6">
+                      <div class="grid-module-zone-wrap">
+
+                        <!-- Zone 3: Text with bg and border-->
+                        <div class="grid-module-zone-3" style="background-image: url(images/water_therapy/showering-zone-3.jpg);">
+                          <div class="box-border"></div>
+                          <div class="box">
+                            <div class="text">
+                              A wet zone is boundless, free and open.
+                            </div>
+                          </div><!-- /.box -->
+                        </div><!-- /.grid-module-zone-3 -->
+                      </div><!-- /.grid-module-zone-wrap -->
+                    </div><!-- /.col-sm-6 -->
                   </div><!-- /.row -->
                 </div><!-- /.grid-module-zones-2-3 -->
+
                 <div class="grid-module-zones-4-5">
                   <div class="row">
                     <div class="col-sm-6">
+
+                      <!-- Zone 4: Create Your Own... -->
                       <div class="grid-module-zone-4">
-                        <h3>Create your own walk in</h3>
+                        <h3>Create your own wet zone</h3>
                         <div class="row">
                           <div class="col-md-7">
                             <figure class="image">
@@ -934,10 +978,14 @@
                       </div>
                     </div>
                     <div class="col-sm-6">
+
+                      <!-- Zone 5: Products Sliders -->
                       <div class="grid-module-zone-5">
                         <div class="grid-module-zone-5-content">
                           <div class="row">
                             <div class="col-md-6">
+
+                              <!-- Zone 5, Slider 1 -->
                               <div class="panel panel-slideshow">
                                 <div class="slideshow-container">
                                   <div class="slide">
@@ -945,7 +993,7 @@
                                       <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
                                         <div class="slide-image">
                                           <img src="images/products/milli-axon-mixer.jpg" alt="Milli Axon Basin Mixer" />
-                                        </div>
+                                        </div><!-- /.slide-image -->
                                         <div class="slide-text">
                                           <div class="product-name">
                                             Milli Axon
@@ -956,21 +1004,21 @@
                                           <p class="product-price">
                                             $699.99 <span class="product-price-gst">gst inc</span>
                                           </p>
-                                        </div>
+                                        </div><!-- /.slide-text -->
                                         <div class="slide-btn-wrap">
                                           <div class="slide-btn">
                                             Shop Now
                                           </div>
                                         </div>
                                       </a>
-                                    </div>
-                                  </div>
+                                    </div><!-- /.slide-content -->
+                                  </div><!-- /.slide -->
                                   <div class="slide">
                                     <div class="slide-content">
                                       <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
                                         <div class="slide-image">
                                           <img src="images/products/milli-axon-mixer.jpg" alt="Milli Axon Basin Mixer" />
-                                        </div>
+                                        </div><!-- /.slide-image -->
                                         <div class="slide-text">
                                           <div class="product-name">
                                             Milli Axon
@@ -981,20 +1029,22 @@
                                           <p class="product-price">
                                             $699.99 <span class="product-price-gst">gst inc</span>
                                           </p>
-                                        </div>
+                                        </div><!-- /.slide-text -->
                                         <div class="slide-btn-wrap">
                                           <div class="slide-btn">
                                             Shop Now
                                           </div>
                                         </div>
                                       </a>
-                                    </div>
-                                  </div>
-                                </div>
+                                    </div><!-- /.slide-content -->
+                                  </div><!-- /.slide -->
+                                </div><!-- /.slideshow-container -->
                                 <div class="slideshow-buttons"></div>                                
-                              </div>  
+                              </div><!-- /.panle-slideshow -->  
                             </div>
                             <div class="col-md-6">
+
+                              <!-- Zone 5, Slider 2 -->
                               <div class="panel panel-slideshow">
                                 <div class="slideshow-container">
                                   <div class="slide">
@@ -1002,7 +1052,7 @@
                                       <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
                                         <div class="slide-image">
                                           <img src="images/products/milli-axon-mixer.jpg" alt="Milli Axon Basin Mixer" />
-                                        </div>
+                                        </div><!-- /.slide-image -->
                                         <div class="slide-text">
                                           <div class="product-name">
                                             Milli Axon
@@ -1013,21 +1063,21 @@
                                           <p class="product-price">
                                             $699.99 <span class="product-price-gst">gst inc</span>
                                           </p>
-                                        </div>
+                                        </div><!-- /.slide-text -->
                                         <div class="slide-btn-wrap">
                                           <div class="slide-btn">
                                             Shop Now
                                           </div>
                                         </div>
                                       </a>
-                                    </div>
-                                  </div>
+                                    </div><!-- /.slide-content -->
+                                  </div><!-- /.slide -->
                                   <div class="slide">
                                     <div class="slide-content">
                                       <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
                                         <div class="slide-image">
                                           <img src="images/products/milli-axon-mixer.jpg" alt="Milli Axon Basin Mixer" />
-                                        </div>
+                                        </div><!-- /.slide-image -->
                                         <div class="slide-text">
                                           <div class="product-name">
                                             Milli Axon
@@ -1038,78 +1088,95 @@
                                           <p class="product-price">
                                             $699.99 <span class="product-price-gst">gst inc</span>
                                           </p>
-                                        </div>
+                                        </div><!-- /.slide-text -->
                                         <div class="slide-btn-wrap">
                                           <div class="slide-btn">
                                             Shop Now
                                           </div>
                                         </div>
                                       </a>
-                                    </div>
-                                  </div>
-                                </div>
+                                    </div><!-- /.slide-content -->
+                                  </div><!-- /.slide -->
+                                </div><!-- /.slideshow-container -->
                                 <div class="slideshow-buttons"></div>                                
-                              </div>
-                            </div>
-                          </div> 
-                        </div>                                 
-                      </div>
-                    </div>
+                              </div><!-- /.panel-slideshow -->
+                            </div><!-- /.col-md-6 -->
+                          </div><!-- /.row -->
+                        </div><!-- /.grid-module-zone-5-content -->                                 
+                      </div><!-- /.grid-module-zone-5 -->                                 
+                    </div><!-- /.col-sm-6 -->
                   </div><!-- /.row -->
                 </div><!-- /.grid-module-zones-4-5 -->     
-              </div>
+              </div><!-- /.grid-module-zones-section-3 -->
+
+
+
+              <!-- Section 4: OUTDOOR -->
               <div class="grid-module-zones-section-4 grid-module-zones-section">
                 <div class="row">
                   <div class="col-xs-12">
+
+                    <!-- Zone 1: Slider -->
                     <div class="panel-slideshow grid-module-zone-1">
                       <div class="grid-module-slider">
+                        <!-- Slides -->
                         <div class="slide">
                           <figure class="image">
-                            <img src="images/water_therapy/showering-slider-double.jpg" alt="Showering">
+                            <img src="images/water_therapy/showering-slider-wet-zone.jpg" alt="Showering">
                           </figure>
-                        </div>
-                        <div class="slide">
-                          <figure class="image">
-                            <img src="images/water_therapy/showering-slider.jpg" alt="Showering">
-                          </figure>
-                        </div>
+                        </div><!-- /.slide -->
                         <div class="slide">
                           <figure class="image">
                             <img src="images/water_therapy/showering-slider.jpg" alt="Showering">
                           </figure>
-                        </div>
-                      </div>
+                        </div><!-- /.slide -->
+                        <div class="slide">
+                          <figure class="image">
+                            <img src="images/water_therapy/showering-slider.jpg" alt="Showering">
+                          </figure>
+                        </div><!-- /.slide -->
+                      </div><!-- /.grid-module-slider -->
                       <div class="showering-slider-buttons slideshow-buttons"></div>
-                    </div>                
+                    </div><!-- /.panel-slideshow -->
                   </div>
                 </div><!-- /.row-->
                 <div class="grid-module-zones-2-3">
                   <div class="row">
                     <div class="col-sm-6">
-                      <div class="grid-module-zone-wrap"><div class="grid-module-zone-2" style="background-image: url(images/water_therapy/showering-zone-2.jpg);">
-                        <div class="box">
-                        <h3>awakening</h3>
-                        </div>
-                      </div></div>
-                    </div>
-                    <div class="col-sm-6">
-                      <div class="grid-module-zone-wrap"><div class="grid-module-zone-3" style="background-image: url(images/water_therapy/showering-zone-3.jpg);">
-                        <div class="box-border"></div>
-                        <div class="box">
-                          <div class="text">
-                            A double boundless, free and open.
+                      <div class="grid-module-zone-wrap">
+
+                        <!-- Zone 2: Title and image -->
+                        <div class="grid-module-zone-2" style="background-image: url(images/water_therapy/showering-zone-2.jpg);">
+                          <div class="box">
+                            <h3>awakening 4</h3>
                           </div>
-                        </div>
-                        </div>
-                      </div>
-                    </div>
+                        </div><!-- /.grid-module-zone-2 -->
+                      </div><!-- /.grid-module-zone-wrap -->
+                    </div><!-- /.col-sm-6 -->
+                    <div class="col-sm-6">
+                      <div class="grid-module-zone-wrap">
+
+                        <!-- Zone 3: Text with bg and border-->
+                        <div class="grid-module-zone-3" style="background-image: url(images/water_therapy/showering-zone-3.jpg);">
+                          <div class="box-border"></div>
+                          <div class="box">
+                            <div class="text">
+                              A wet zone is boundless, free and open.
+                            </div>
+                          </div><!-- /.box -->
+                        </div><!-- /.grid-module-zone-3 -->
+                      </div><!-- /.grid-module-zone-wrap -->
+                    </div><!-- /.col-sm-6 -->
                   </div><!-- /.row -->
                 </div><!-- /.grid-module-zones-2-3 -->
+
                 <div class="grid-module-zones-4-5">
                   <div class="row">
                     <div class="col-sm-6">
+
+                      <!-- Zone 4: Create Your Own... -->
                       <div class="grid-module-zone-4">
-                        <h3>Create your own double</h3>
+                        <h3>Create your own wet zone</h3>
                         <div class="row">
                           <div class="col-md-7">
                             <figure class="image">
@@ -1131,10 +1198,14 @@
                       </div>
                     </div>
                     <div class="col-sm-6">
+
+                      <!-- Zone 5: Products Sliders -->
                       <div class="grid-module-zone-5">
                         <div class="grid-module-zone-5-content">
                           <div class="row">
                             <div class="col-md-6">
+
+                              <!-- Zone 5, Slider 1 -->
                               <div class="panel panel-slideshow">
                                 <div class="slideshow-container">
                                   <div class="slide">
@@ -1142,7 +1213,7 @@
                                       <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
                                         <div class="slide-image">
                                           <img src="images/products/milli-axon-mixer.jpg" alt="Milli Axon Basin Mixer" />
-                                        </div>
+                                        </div><!-- /.slide-image -->
                                         <div class="slide-text">
                                           <div class="product-name">
                                             Milli Axon
@@ -1153,21 +1224,21 @@
                                           <p class="product-price">
                                             $699.99 <span class="product-price-gst">gst inc</span>
                                           </p>
-                                        </div>
+                                        </div><!-- /.slide-text -->
                                         <div class="slide-btn-wrap">
                                           <div class="slide-btn">
                                             Shop Now
                                           </div>
                                         </div>
                                       </a>
-                                    </div>
-                                  </div>
+                                    </div><!-- /.slide-content -->
+                                  </div><!-- /.slide -->
                                   <div class="slide">
                                     <div class="slide-content">
                                       <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
                                         <div class="slide-image">
                                           <img src="images/products/milli-axon-mixer.jpg" alt="Milli Axon Basin Mixer" />
-                                        </div>
+                                        </div><!-- /.slide-image -->
                                         <div class="slide-text">
                                           <div class="product-name">
                                             Milli Axon
@@ -1178,20 +1249,22 @@
                                           <p class="product-price">
                                             $699.99 <span class="product-price-gst">gst inc</span>
                                           </p>
-                                        </div>
+                                        </div><!-- /.slide-text -->
                                         <div class="slide-btn-wrap">
                                           <div class="slide-btn">
                                             Shop Now
                                           </div>
                                         </div>
                                       </a>
-                                    </div>
-                                  </div>
-                                </div>
+                                    </div><!-- /.slide-content -->
+                                  </div><!-- /.slide -->
+                                </div><!-- /.slideshow-container -->
                                 <div class="slideshow-buttons"></div>                                
-                              </div>  
+                              </div><!-- /.panle-slideshow -->  
                             </div>
                             <div class="col-md-6">
+
+                              <!-- Zone 5, Slider 2 -->
                               <div class="panel panel-slideshow">
                                 <div class="slideshow-container">
                                   <div class="slide">
@@ -1199,7 +1272,7 @@
                                       <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
                                         <div class="slide-image">
                                           <img src="images/products/milli-axon-mixer.jpg" alt="Milli Axon Basin Mixer" />
-                                        </div>
+                                        </div><!-- /.slide-image -->
                                         <div class="slide-text">
                                           <div class="product-name">
                                             Milli Axon
@@ -1210,21 +1283,21 @@
                                           <p class="product-price">
                                             $699.99 <span class="product-price-gst">gst inc</span>
                                           </p>
-                                        </div>
+                                        </div><!-- /.slide-text -->
                                         <div class="slide-btn-wrap">
                                           <div class="slide-btn">
                                             Shop Now
                                           </div>
                                         </div>
                                       </a>
-                                    </div>
-                                  </div>
+                                    </div><!-- /.slide-content -->
+                                  </div><!-- /.slide -->
                                   <div class="slide">
                                     <div class="slide-content">
                                       <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
                                         <div class="slide-image">
                                           <img src="images/products/milli-axon-mixer.jpg" alt="Milli Axon Basin Mixer" />
-                                        </div>
+                                        </div><!-- /.slide-image -->
                                         <div class="slide-text">
                                           <div class="product-name">
                                             Milli Axon
@@ -1235,420 +1308,26 @@
                                           <p class="product-price">
                                             $699.99 <span class="product-price-gst">gst inc</span>
                                           </p>
-                                        </div>
+                                        </div><!-- /.slide-text -->
                                         <div class="slide-btn-wrap">
                                           <div class="slide-btn">
                                             Shop Now
                                           </div>
                                         </div>
                                       </a>
-                                    </div>
-                                  </div>
-                                </div>
+                                    </div><!-- /.slide-content -->
+                                  </div><!-- /.slide -->
+                                </div><!-- /.slideshow-container -->
                                 <div class="slideshow-buttons"></div>                                
-                              </div>
-                            </div>
-                          </div> 
-                        </div>                                 
-                      </div>
-                    </div>
+                              </div><!-- /.panel-slideshow -->
+                            </div><!-- /.col-md-6 -->
+                          </div><!-- /.row -->
+                        </div><!-- /.grid-module-zone-5-content -->                                 
+                      </div><!-- /.grid-module-zone-5 -->                                 
+                    </div><!-- /.col-sm-6 -->
                   </div><!-- /.row -->
                 </div><!-- /.grid-module-zones-4-5 -->     
-              </div>
-              <div class="grid-module-zones-section-5 grid-module-zones-section">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <div class="panel-slideshow grid-module-zone-1">
-                      <div class="grid-module-slider">
-                        <div class="slide">
-                          <figure class="image">
-                            <img src="images/water_therapy/showering-slider-outdoor.jpg" alt="Showering">
-                          </figure>
-                        </div>
-                        <div class="slide">
-                          <figure class="image">
-                            <img src="images/water_therapy/showering-slider.jpg" alt="Showering">
-                          </figure>
-                        </div>
-                        <div class="slide">
-                          <figure class="image">
-                            <img src="images/water_therapy/showering-slider.jpg" alt="Showering">
-                          </figure>
-                        </div>
-                      </div>
-                      <div class="showering-slider-buttons slideshow-buttons"></div>
-                    </div>                
-                  </div>
-                </div><!-- /.row-->
-                <div class="grid-module-zones-2-3">
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="grid-module-zone-wrap"><div class="grid-module-zone-2" style="background-image: url(images/water_therapy/showering-zone-2.jpg);">
-                        <div class="box">
-                        <h3>awakening</h3>
-                        </div>
-                      </div></div>
-                    </div>
-                    <div class="col-sm-6">
-                      <div class="grid-module-zone-wrap"><div class="grid-module-zone-3" style="background-image: url(images/water_therapy/showering-zone-3.jpg);">
-                        <div class="box-border"></div>
-                        <div class="box">
-                          <div class="text">
-                            An outdoor is boundless, free and open.
-                          </div>
-                        </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div><!-- /.row -->
-                </div><!-- /.grid-module-zones-2-3 -->
-                <div class="grid-module-zones-4-5">
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="grid-module-zone-4">
-                        <h3>Create your own outdoor</h3>
-                        <div class="row">
-                          <div class="col-md-7">
-                            <figure class="image">
-                              <img src="images/water_therapy/showering-zone-4.jpg" alt="Showering"/>
-                            </figure>
-                          </div>
-                          <div class="col-md-5">
-                            <div class="text">
-                              <p>Statement to reference the different style of wet zone layouts.</p>
-                              <p><h4>TIPS FOR WET ZONE</h4>
-                              - Allow for drainage
-                              <br/>- Choosing the right tiles
-                              <br/>- Introducing light
-                              </p>
-                              <p><a href="http://www.reece.com.au/bathrooms/3d-bathroom-planner" target="_blank" class="btn">Plan in 3D</a></p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                      <div class="grid-module-zone-5">
-                        <div class="grid-module-zone-5-content">
-                          <div class="row">
-                            <div class="col-md-6">
-                              <div class="panel panel-slideshow">
-                                <div class="slideshow-container">
-                                  <div class="slide">
-                                    <div class="slide-content">
-                                      <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
-                                        <div class="slide-image">
-                                          <img src="images/products/milli-axon-mixer.jpg" alt="Milli Axon Basin Mixer" />
-                                        </div>
-                                        <div class="slide-text">
-                                          <div class="product-name">
-                                            Milli Axon
-                                          </div>
-                                          <p class="product-description">
-                                            Basin Mixer Rose Gold/Black
-                                          </p>
-                                          <p class="product-price">
-                                            $699.99 <span class="product-price-gst">gst inc</span>
-                                          </p>
-                                        </div>
-                                        <div class="slide-btn-wrap">
-                                          <div class="slide-btn">
-                                            Shop Now
-                                          </div>
-                                        </div>
-                                      </a>
-                                    </div>
-                                  </div>
-                                  <div class="slide">
-                                    <div class="slide-content">
-                                      <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
-                                        <div class="slide-image">
-                                          <img src="images/products/milli-axon-mixer.jpg" alt="Milli Axon Basin Mixer" />
-                                        </div>
-                                        <div class="slide-text">
-                                          <div class="product-name">
-                                            Milli Axon
-                                          </div>
-                                          <p class="product-description">
-                                            Basin Mixer Rose Gold/Black
-                                          </p>
-                                          <p class="product-price">
-                                            $699.99 <span class="product-price-gst">gst inc</span>
-                                          </p>
-                                        </div>
-                                        <div class="slide-btn-wrap">
-                                          <div class="slide-btn">
-                                            Shop Now
-                                          </div>
-                                        </div>
-                                      </a>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="slideshow-buttons"></div>                                
-                              </div>  
-                            </div>
-                            <div class="col-md-6">
-                              <div class="panel panel-slideshow">
-                                <div class="slideshow-container">
-                                  <div class="slide">
-                                    <div class="slide-content">
-                                      <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
-                                        <div class="slide-image">
-                                          <img src="images/products/milli-axon-mixer.jpg" alt="Milli Axon Basin Mixer" />
-                                        </div>
-                                        <div class="slide-text">
-                                          <div class="product-name">
-                                            Milli Axon
-                                          </div>
-                                          <p class="product-description">
-                                            Basin Mixer Rose Gold/Black
-                                          </p>
-                                          <p class="product-price">
-                                            $699.99 <span class="product-price-gst">gst inc</span>
-                                          </p>
-                                        </div>
-                                        <div class="slide-btn-wrap">
-                                          <div class="slide-btn">
-                                            Shop Now
-                                          </div>
-                                        </div>
-                                      </a>
-                                    </div>
-                                  </div>
-                                  <div class="slide">
-                                    <div class="slide-content">
-                                      <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
-                                        <div class="slide-image">
-                                          <img src="images/products/milli-axon-mixer.jpg" alt="Milli Axon Basin Mixer" />
-                                        </div>
-                                        <div class="slide-text">
-                                          <div class="product-name">
-                                            Milli Axon
-                                          </div>
-                                          <p class="product-description">
-                                            Basin Mixer Rose Gold/Black
-                                          </p>
-                                          <p class="product-price">
-                                            $699.99 <span class="product-price-gst">gst inc</span>
-                                          </p>
-                                        </div>
-                                        <div class="slide-btn-wrap">
-                                          <div class="slide-btn">
-                                            Shop Now
-                                          </div>
-                                        </div>
-                                      </a>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="slideshow-buttons"></div>                                
-                              </div>
-                            </div>
-                          </div> 
-                        </div>                                 
-                      </div>
-                    </div>
-                  </div><!-- /.row -->
-                </div><!-- /.grid-module-zones-4-5 -->     
-              </div>
-              <div class="grid-module-zones-section-6 grid-module-zones-section">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <div class="panel-slideshow grid-module-zone-1">
-                      <div class="grid-module-slider">
-                        <div class="slide">
-                          <figure class="image">
-                            <img src="images/water_therapy/showering-slider-shower-bath.jpg" alt="Showering">
-                          </figure>
-                        </div>
-                        <div class="slide">
-                          <figure class="image">
-                            <img src="images/water_therapy/showering-slider.jpg" alt="Showering">
-                          </figure>
-                        </div>
-                        <div class="slide">
-                          <figure class="image">
-                            <img src="images/water_therapy/showering-slider.jpg" alt="Showering">
-                          </figure>
-                        </div>
-                      </div>
-                      <div class="showering-slider-buttons slideshow-buttons"></div>
-                    </div>                
-                  </div>
-                </div><!-- /.row-->
-                <div class="grid-module-zones-2-3">
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="grid-module-zone-wrap"><div class="grid-module-zone-2" style="background-image: url(images/water_therapy/showering-zone-2.jpg);">
-                        <div class="box">
-                        <h3>awakening</h3>
-                        </div>
-                      </div></div>
-                    </div>
-                    <div class="col-sm-6">
-                      <div class="grid-module-zone-wrap"><div class="grid-module-zone-3" style="background-image: url(images/water_therapy/showering-zone-3.jpg);">
-                        <div class="box-border"></div>
-                        <div class="box">
-                          <div class="text">
-                            A shower bath is boundless, free and open.
-                          </div>
-                        </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div><!-- /.row -->
-                </div><!-- /.grid-module-zones-2-3 -->
-                <div class="grid-module-zones-4-5">
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="grid-module-zone-4">
-                        <h3>Create your own shower bath</h3>
-                        <div class="row">
-                          <div class="col-md-7">
-                            <figure class="image">
-                              <img src="images/water_therapy/showering-zone-4.jpg" alt="Showering"/>
-                            </figure>
-                          </div>
-                          <div class="col-md-5">
-                            <div class="text">
-                              <p>Statement to reference the different style of wet zone layouts.</p>
-                              <p><h4>TIPS FOR WET ZONE</h4>
-                              - Allow for drainage
-                              <br/>- Choosing the right tiles
-                              <br/>- Introducing light
-                              </p>
-                              <p><a href="http://www.reece.com.au/bathrooms/3d-bathroom-planner" target="_blank" class="btn">Plan in 3D</a></p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                      <div class="grid-module-zone-5">
-                        <div class="grid-module-zone-5-content">
-                          <div class="row">
-                            <div class="col-md-6">
-                              <div class="panel panel-slideshow">
-                                <div class="slideshow-container">
-                                  <div class="slide">
-                                    <div class="slide-content">
-                                      <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
-                                        <div class="slide-image">
-                                          <img src="images/products/milli-axon-mixer.jpg" alt="Milli Axon Basin Mixer" />
-                                        </div>
-                                        <div class="slide-text">
-                                          <div class="product-name">
-                                            Milli Axon
-                                          </div>
-                                          <p class="product-description">
-                                            Basin Mixer Rose Gold/Black
-                                          </p>
-                                          <p class="product-price">
-                                            $699.99 <span class="product-price-gst">gst inc</span>
-                                          </p>
-                                        </div>
-                                        <div class="slide-btn-wrap">
-                                          <div class="slide-btn">
-                                            Shop Now
-                                          </div>
-                                        </div>
-                                      </a>
-                                    </div>
-                                  </div>
-                                  <div class="slide">
-                                    <div class="slide-content">
-                                      <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
-                                        <div class="slide-image">
-                                          <img src="images/products/milli-axon-mixer.jpg" alt="Milli Axon Basin Mixer" />
-                                        </div>
-                                        <div class="slide-text">
-                                          <div class="product-name">
-                                            Milli Axon
-                                          </div>
-                                          <p class="product-description">
-                                            Basin Mixer Rose Gold/Black
-                                          </p>
-                                          <p class="product-price">
-                                            $699.99 <span class="product-price-gst">gst inc</span>
-                                          </p>
-                                        </div>
-                                        <div class="slide-btn-wrap">
-                                          <div class="slide-btn">
-                                            Shop Now
-                                          </div>                                        
-                                        </div>
-                                      </a>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="slideshow-buttons"></div>                                
-                              </div>  
-                            </div>
-                            <div class="col-md-6">
-                              <div class="panel panel-slideshow">
-                                <div class="slideshow-container">
-                                  <div class="slide">
-                                    <div class="slide-content">
-                                      <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
-                                        <div class="slide-image">
-                                          <img src="images/products/milli-axon-mixer.jpg" alt="Milli Axon Basin Mixer" />
-                                        </div>
-                                        <div class="slide-text">
-                                          <div class="product-name">
-                                            Milli Axon
-                                          </div>
-                                          <p class="product-description">
-                                            Basin Mixer Rose Gold/Black
-                                          </p>
-                                          <p class="product-price">
-                                            $699.99 <span class="product-price-gst">gst inc</span>
-                                          </p>
-                                        </div>
-                                        <div class="slide-btn-wrap">
-                                          <div class="slide-btn">
-                                            Shop Now
-                                          </div>
-                                        </div>
-                                      </a>
-                                    </div>
-                                  </div>
-                                  <div class="slide">
-                                    <div class="slide-content">
-                                      <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
-                                        <div class="slide-image">
-                                          <img src="images/products/milli-axon-mixer.jpg" alt="Milli Axon Basin Mixer" />
-                                        </div>
-                                        <div class="slide-text">
-                                          <div class="product-name">
-                                            Milli Axon
-                                          </div>
-                                          <p class="product-description">
-                                            Basin Mixer Rose Gold/Black
-                                          </p>
-                                          <p class="product-price">
-                                            $699.99 <span class="product-price-gst">gst inc</span>
-                                          </p>
-                                        </div>
-                                        <div class="slide-btn-wrap">
-                                          <div class="slide-btn">
-                                            Shop Now
-                                          </div>
-                                        </div>
-                                      </a>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="slideshow-buttons"></div>                                
-                              </div>
-                            </div>
-                          </div> 
-                        </div>                                 
-                      </div>
-                    </div>
-                  </div><!-- /.row -->
-                </div><!-- /.grid-module-zones-4-5 -->     
-              </div>
+              </div><!-- /.grid-module-zones-section-4 -->
             </div>                   
           </div><!-- /.content-fluid-->
         </section>

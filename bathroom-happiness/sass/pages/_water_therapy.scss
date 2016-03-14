@@ -321,7 +321,7 @@ body.water-therapy{
 						margin: 0 auto;
 						position: relative;
 						@include perspective(1000);
-						@media (min-width: $screen-sm){
+						@media (max-width: $screen-sm-max){
 							max-width: 738px;
 						}
 						@media (min-width: $screen-md){
@@ -809,6 +809,7 @@ body.water-therapy{
 						}
 					}
 					.grid-module-zone-2{
+						opacity: 1;
 						@include animation(flip_left_out 1s ease-out 0.8s forwards);
 						&.ie{
 							opacity: 0;
@@ -826,6 +827,7 @@ body.water-therapy{
 					}
 					&.current{
 						//opacity: 1;
+						z-index: 1;
 						@include animation(index_update_up 1s ease-out forwards);
 						&.ie{
 							z-index: 5;
@@ -840,6 +842,7 @@ body.water-therapy{
 						}
 						.grid-module-zone-2
 						{
+							opacity: 0;
 							@include animation(flip_left_in 1s ease-out 0.8s forwards);
 							&.ie{
 								opacity: 1;

@@ -80,7 +80,6 @@ var playerManager = {
       var nextPlayer = new player();
       nextPlayer.init(next);
       this.removeHoldingList();
-      console.log(next.container);
     }
   },
   update: function(container, settings){
@@ -95,7 +94,10 @@ var playerManager = {
         if(mute == 1){
           video.mute();
         }
-        video.playVideo();      
+        console.log('#'+container);
+        if($(window).scrollTop() <= ($('#'+container).offset().top + $('#'+container).outerHeight())){
+          video.playVideo();      
+        }
       }
     }
   },

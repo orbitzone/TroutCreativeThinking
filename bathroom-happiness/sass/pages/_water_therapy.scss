@@ -1047,6 +1047,7 @@ body.water-therapy{
 							padding: 9px 18px;
 							margin: 0 auto;
 							background: $water-therapy-green;
+							@include transition(0.5s all ease-out);
 							&:hover{
 								background: $water-therapy-blue;
 							}
@@ -1191,6 +1192,7 @@ body.water-therapy{
 		  				background: #41f3bf;
 		  				color: white;
 		  				text-transform: uppercase;
+		  				@include transition(0.5s all ease-out);
 		  				&:hover{
 		  					background: black;
 			  			}

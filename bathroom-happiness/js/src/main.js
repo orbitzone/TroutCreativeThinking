@@ -603,7 +603,9 @@ var bathroomHappiness = {
         playerManager.stop(playerManager.active);
       }
       if(playerManager.exists()){
-        playerManager.play('st-'+section+'video');
+        if(!deviceMobile){
+          playerManager.play('st-'+section+'video');
+        }
       }else{
         var video =$('#st-'+section+'-video-wrap').data('video');
         var container = 'st-'+section+'-video';
@@ -620,7 +622,9 @@ var bathroomHappiness = {
           autoplay: 0,
           loop: false,
           onReady: function(container){  
-            playerManager.play(container);
+            if(!deviceMobile){
+              playerManager.play(container);
+            }
           },
           onPlaying: function(){  
           },

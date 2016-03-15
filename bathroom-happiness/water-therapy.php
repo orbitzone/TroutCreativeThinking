@@ -127,17 +127,17 @@
                     <div class="col-sm-3">
                       <div class="section-content">
                       <figure class="slider-1 sensory-slider section" style="background-image: url(images/water_therapy/slider-1.jpg);">
-                          <h2>Sensory<br/>toolkit 1</h2>
+                          <h2>Sensory<br/>toolkit</h2>
                           <div class="slides">
                             <div class="slide">
                               <div class="icon-wrap">
-                                <svg class="icon shape-scent"><use xlink:href="#shape-scent"></use></svg>
-                              </div>
+                                <svg class="icon shape-waterfall"><use xlink:href="#shape-waterfall"></use></svg>
+                               </div>
                               <div class="label">
-                                Scent
+                                Waterfall
                               </div>
                               <div class="text">
-                                Create visual energy with bright towels in your space.
+                                A totally immersive experience that envelopes you.
                               </div>
                             </div>
                             <div class="slide">
@@ -153,13 +153,13 @@
                             </div>
                             <div class="slide">
                               <div class="icon-wrap">
-                                <svg class="icon shape-waterfall"><use xlink:href="#shape-waterfall"></use></svg>
-                               </div>
+                                <svg class="icon shape-scent"><use xlink:href="#shape-scent"></use></svg>
+                              </div>
                               <div class="label">
-                                Waterfall
+                                Scent
                               </div>
                               <div class="text">
-                                A totally immersive experience that envelopes you.
+                                Create visual energy with bright towels in your space.
                               </div>
                             </div>
                           </div><!-- /.slides -->
@@ -169,13 +169,13 @@
                           <div class="slides">
                             <div class="slide">
                               <div class="icon-wrap">
-                                <svg class="icon shape-scent"><use xlink:href="#shape-scent"></use></svg>
+                                <svg class="icon shape-soft-rain"><use xlink:href="#shape-soft-rain"></use></svg>
                               </div>
                               <div class="label">
-                                Scent
+                                Soft Rain
                               </div>
                               <div class="text">
-                                Epsom salts to the bath for total body relaxation.
+                                The gentle, hypnotic nature of a soft water spray.
                               </div>
                             </div>
                             <div class="slide">
@@ -191,15 +191,15 @@
                             </div>
                             <div class="slide">
                               <div class="icon-wrap">
-                                <svg class="icon shape-soft-rain"><use xlink:href="#shape-soft-rain"></use></svg>
+                                <svg class="icon shape-scent"><use xlink:href="#shape-scent"></use></svg>
                               </div>
                               <div class="label">
-                                Soft Rain
+                                Scent
                               </div>
                               <div class="text">
-                                The gentle, hypnotic nature of a soft water spray.
+                                Epsom salts to the bath for total body relaxation.
                               </div>
-                            </div>
+                            </div>                            
                           </div><!-- /.slides -->
                         </figure>
                         <figure class="slider-3 sensory-slider section" style="background-image: url(images/water_therapy/slider-1.jpg);">
@@ -207,13 +207,13 @@
                           <div class="slides">
                             <div class="slide">
                               <div class="icon-wrap">
-                                <svg class="icon shape-scent"><use xlink:href="#shape-scent"></use></svg>
+                                <svg class="icon shape-body-spray"><use xlink:href="#shape-body-spray"></use></svg>
                               </div>
                               <div class="label">
-                                Scent
+                                Body Spray
                               </div>
                               <div class="text">
-                                Stimulate blood flow with body balms and botanical oils.
+                                Concentrated jets designed to soothe and massage.
                               </div>
                             </div>
                             <div class="slide">
@@ -229,15 +229,15 @@
                             </div>
                             <div class="slide">
                               <div class="icon-wrap">
-                                <svg class="icon shape-body-spray"><use xlink:href="#shape-body-spray"></use></svg>
+                                <svg class="icon shape-scent"><use xlink:href="#shape-scent"></use></svg>
                               </div>
                               <div class="label">
-                                Body Spray
+                                Scent
                               </div>
                               <div class="text">
-                                Concentrated jets designed to soothe and massage.
+                                Stimulate blood flow with body balms and botanical oils.
                               </div>
-                            </div>
+                            </div>                            
                           </div><!-- /.slides -->
                         </figure>                        
                       </div>
@@ -585,12 +585,7 @@
                           <figure class="image">
                             <img data-lazy="images/water_therapy/enclosed/showering-slider-enclosed-01.jpg" alt="Enclosed">
                           </figure>
-                        </div><!-- /.slide -->
-                        <div class="slide">
-                          <figure class="image">
-                            <img data-lazy="images/water_therapy/enclosed/showering-slider-enclosed-02.jpg" alt="Enclosed">
-                          </figure>
-                        </div><!-- /.slide -->
+                        </div><!-- /.slide -->                        
                       </div><!-- /.grid-module-slider -->
                       <div class="showering-slider-buttons slideshow-buttons"></div>
                     </div><!-- /.panel-slideshow -->
@@ -1275,7 +1270,7 @@
                             </div><!-- /.icon-wrap -->
                             <h3>Waterfall</h3>
                             <div class="text">
-                              <p>Here we link types of showers to their emotional benefit. E.g. Overhead showers offer a completely immersive showering experience like that of a waterfall.</p>
+                              <p>A completely immersive experience, like that of a waterfall.</p>
                             </div>
                             <ul class="list-inline">
                               <li><a href="#" target="_blank" class="see-product">See Product</a></li>
@@ -1303,7 +1298,7 @@
                             </div><!-- /.icon-wrap -->
                             <h3>Body Spray</h3>
                             <div class="text">
-                              <p>Here we link types of showers to their emotional benefit. E.g. Overhead showers offer a completely immersive showering experience like that of a body spray.</p>
+                              <p>Heighten your wellness showering experience with concentrated body jets for all your pressure points.</p>
                             </div>
                             <ul class="list-inline">
                               <li><a href="#" target="_blank" class="see-product">See Product</a></li>
@@ -1331,7 +1326,7 @@
                             </div><!-- /.icon-wrap -->
                             <h3>Led</h3>
                             <div class="text">
-                              <p>Here we link types of showers to their emotional benefit. E.g. Overhead showers offer a completely immersive showering experience like that of a Led.</p>
+                              <p>Awaken your senses with mood lighting integrated into the showering experience.</p>
                             </div>
                             <ul class="list-inline">
                               <li><a href="#" target="_blank" class="see-product">See Product</a></li>
@@ -1359,7 +1354,7 @@
                             </div><!-- /.icon-wrap -->
                             <h3>Air Drop</h3>
                             <div class="text">
-                              <p>Here we link types of showers to their emotional benefit. E.g. Overhead showers offer a completely immersive showering experience like that of a air drop.</p>
+                              <p>Enjoy a gentle and blissful rainfall, with air-enriched drops.</p>
                             </div>
                             <ul class="list-inline">
                               <li><a href="#" target="_blank" class="see-product">See Product</a></li>
@@ -1387,7 +1382,7 @@
                             </div><!-- /.icon-wrap -->
                             <h3>Turbine</h3>
                             <div class="text">
-                              <p>Here we link types of showers to their emotional benefit. E.g. Overhead showers offer a completely immersive showering experience like that of a turbine.</p>
+                              <p>The strongest rain spray for revitalising.</p>
                             </div>
                             <ul class="list-inline">
                               <li><a href="#" target="_blank" class="see-product">See Product</a></li>
@@ -1415,7 +1410,7 @@
                             </div><!-- /.icon-wrap -->
                             <h3>Raindance</h3>
                             <div class="text">
-                              <p>Here we link types of showers to their emotional benefit. E.g. Overhead showers offer a completely immersive showering experience like that of a raindance.</p>
+                              <p>A pure, soft, relaxing shower rain.</p>
                             </div>
                             <ul class="list-inline">
                               <li><a href="#" target="_blank" class="see-product">See Product</a></li>
@@ -1443,7 +1438,7 @@
                             </div><!-- /.icon-wrap -->
                             <h3>Croma Soft Rain</h3>
                             <div class="text">
-                              <p>Here we link types of showers to their emotional benefit. E.g. Overhead showers offer a completely immersive showering experience like that of a Croma Soft Rain.</p>
+                              <p>Soft water spray that caresses the body.</p>
                             </div>
                             <ul class="list-inline">
                               <li><a href="#" target="_blank" class="see-product">See Product</a></li>
@@ -1471,7 +1466,7 @@
                             </div><!-- /.icon-wrap -->
                             <h3>Croma Intense Rain</h3>
                             <div class="text">
-                              <p>Here we link types of showers to their emotional benefit. E.g. Overhead showers offer a completely immersive showering experience like that of a Croma Intense Rain.</p>
+                              <p>ntensive water spray for a full immersive cleanse.</p>
                             </div>
                             <ul class="list-inline">
                               <li><a href="#" target="_blank" class="see-product">See Product</a></li>
@@ -1499,7 +1494,7 @@
                             </div><!-- /.icon-wrap -->
                             <h3>Croma Massage</h3>
                             <div class="text">
-                              <p>Here we link types of showers to their emotional benefit. E.g. Overhead showers offer a completely immersive showering experience like that of a Croma Massage.</p>
+                              <p>Strong, massaging pulse spray to restore.</p>
                             </div>
                             <ul class="list-inline">
                               <li><a href="#" target="_blank" class="see-product">See Product</a></li>

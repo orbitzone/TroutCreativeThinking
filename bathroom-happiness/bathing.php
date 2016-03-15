@@ -59,7 +59,7 @@
                 <div class="box-content box-content-3">
                   <h3>Looks</h3>
                   <div class="text">
-                    <p>The expressive nature of the bath allows you to de ne the space and create an individual look.</p>
+                    <p>The expressive nature of the bath allows you to define the space and create an individual look.</p>
                   </div>
                 </div> 
                 <div class="box-content box-content-4">
@@ -159,7 +159,7 @@
               <div class="col-xs-12">
                 <h3>Bathroom Freedom</h3>
                 <div class="text">
-                  <p>Statement about freestanding bathroom styles.</p>
+                  <p>Bath designs to shape your space.</p>
                 </div>
               </div>
             </div>

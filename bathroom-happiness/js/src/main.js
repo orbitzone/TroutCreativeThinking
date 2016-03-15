@@ -639,8 +639,7 @@ var bathroomHappiness = {
     });
     $('#water-therapy .slides').slick({
       arrows: false,
-      dots: true,
-      lazyload: 'ondemand'
+      dots: true
     });
     $('.panel-slideshow').each(function () {
       var $arrows = $(this).find('.slideshow-buttons');
@@ -648,14 +647,12 @@ var bathroomHappiness = {
         $(this).find('.grid-module-slider').slick({
           arrows: true,
           dots: false,
-          appendArrows: $arrows,
-          lazyload: 'ondemand'
+          appendArrows: $arrows
         });
       }
       if($(this).find('.slideshow-container').length > 0){
         $(this).find('.slideshow-container').slick({
           appendArrows: $arrows,
-          lazyload: 'ondemand',
           responsive:[
           {
             breakpoint: 768,

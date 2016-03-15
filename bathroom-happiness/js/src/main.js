@@ -89,10 +89,17 @@ var playerManager = {
     if(this.exists(container)){
       playerManager.activate(container);
       var video = this.players[container].player;
+      if(typeof mute !== "undefined"){
+        this.players[container].settings.mute = mute;
+      }
       var settings = this.players[container].settings;
       if(typeof video.playVideo !== "undefined"){
-        if(mute == 1){
+        if(settings.mute == 1){
           video.mute();
+        }else{
+          if(settings.mute === 0){
+            video.unMute();
+          }
         }
         if($(window).scrollTop() <= ($('#'+container).offset().top + $('#'+container).outerHeight())){
           video.playVideo();      
@@ -130,7 +137,7 @@ var playerManager = {
   unmute: function(container){
     if(this.exists(container)){
       var video = this.players[container].player;
-      video.unmute();
+      video.unMute();
     }
   },
   onChangeState: function(event){
@@ -179,7 +186,7 @@ var player = function(){
       showinfo: 0,
       modestbranding: 0,
       rel: 0,
-      origin: 'reece-responsive.trout.com.au'
+      origin: 'http://reece-responsive.local'
     },
     autoplay: false,
     loop: false,
@@ -196,7 +203,9 @@ var player = function(){
     if(playerManager.status == 'loading'){
       playerManager.addHoldingList(settings);
     }else{
+      settings.playerVars = $.extend({}, this.settings.playerVars, settings.playerVars);
       this.settings = $.extend({}, this.settings, settings);
+      console.log(this.settings);
       var initialPlayer =  this;
       if (typeof(YT) == 'undefined' || typeof(YT.Player) == 'undefined') {
         playerManager.status = 'loading';
@@ -390,7 +399,7 @@ var bathroomHappiness = {
     // When the player is ready, add listeners for pause, finish, and playProgress
     var windowWidth = $(window).width();
     if(!isMobile.any()){
-      var initialVideoLoad = ['water-therapy','water-therapy-therapeutic','water-therapy-relaxation','water-therapy-rejuvenation','st-waterfall'];
+      var initialVideoLoad = ['water-therapy','water-therapy-rejuvenation','water-therapy-relaxation','water-therapy-therapeutic','st-waterfall'];
       for(var k = 0; k < initialVideoLoad.length; k++){
         var player_container = initialVideoLoad[k]+'-video';
         var video = $('#'+initialVideoLoad[k]+'-video-wrap').data('video');
@@ -401,13 +410,11 @@ var bathroomHappiness = {
             rel: 0,
             controls: 0
           };
-          var autoplay = 1;
-          var mute = 1;
-          if(initialVideoLoad[k] == 'st-waterfall'){
-            autoplay= 0;            
-          }
-          if(initialVideoLoad[k] == 'water-therapy-therapeutic'){
-            mute = 0;
+          var autoplay = 0;
+          var mute = 0;
+          if(initialVideoLoad[k] == 'water-therapy'){
+            autoplay = 1;
+            mute =  1;
           }
           var introPlayer = new player();
           introPlayer.init({
@@ -431,9 +438,9 @@ var bathroomHappiness = {
       if(isMobile.any()){
         $('#water-therapy-video').remove();
       }
-      $('#water-therapy-therapeutic-video').addClass('ready');
+      $('#water-therapy-rejuvenation-video').addClass('ready');
       if(isMobile.any()){
-        $('#water-therapy-therapeutic-video').remove();
+        $('#water-therapy-rejuvenation-video').remove();
       }
     }
     $('#banner .stop-full-video').on('click', function(){
@@ -539,10 +546,10 @@ var bathroomHappiness = {
             rel: 0,
             controls: 0
           };
-          playerManager.play(player_container);          
+          playerManager.play(player_container, 0);                    
         }
         setTimeout(function(){ 
-          var sections = ['therapeutic', 'relaxation','rejuvenation'];
+          var sections = ['rejuvenation', 'relaxation','therapeutic'];
           $.each(sections, function(key, val){
             if(val !== section){
               playerManager.pause('water-therapy-'+val+'-video');

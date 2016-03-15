@@ -27,7 +27,7 @@
             </div>          
           </div>          
         </section>
-        <section id="water-therapy" class="therapeutic">
+        <section id="water-therapy" class="rejuvenation">
           <div id="intro">
             <div class="container-fluid">
               <div class="row">
@@ -46,10 +46,10 @@
                     <div class="videos">
                       <div class="section-1 section">
                         <img src="images/water_therapy/video.jpg" alt="Video">
-                        <div id="water-therapy-therapeutic-video-wrap" class="video-iframe-wrap video video-1" data-video="0X0_Kj8YiSA">
-                          <figure id="water-therapy-therapeutic-video"></figure>          
-                        </div>                    
-                      </div>
+                        <div id="water-therapy-rejuvenation-video-wrap" class="video-iframe-wrap video video-3" data-video="a0Qk-tsGY5Q">
+                          <figure id="water-therapy-rejuvenation-video"></figure>
+                        </div>
+                      </div>    
                       <div class="section-2 section">
                         <img src="images/water_therapy/video.jpg" alt="Video">                      
                         <div id="water-therapy-relaxation-video-wrap" class="video-iframe-wrap video video-2" data-video="ZiWCFmto5UM">
@@ -58,17 +58,17 @@
                       </div>
                       <div class="section-3 section">
                         <img src="images/water_therapy/video.jpg" alt="Video">
-                        <div id="water-therapy-rejuvenation-video-wrap" class="video-iframe-wrap video video-3" data-video="a0Qk-tsGY5Q">
-                          <figure id="water-therapy-rejuvenation-video"></figure>                      
-                        </div>
-                      </div>                      
+                        <div id="water-therapy-therapeutic-video-wrap" class="video-iframe-wrap video video-1" data-video="0X0_Kj8YiSA">
+                          <figure id="water-therapy-therapeutic-video"></figure>          
+                        </div>                    
+                      </div>                                        
                     </div>
                     <div class="submenu-wrap">
                       <div class="submenu">
                         <ul class="list-unstyled">
-                          <li class="active"><button type="button">Therapeutic</button></li>
+                          <li class="active"><button type="button">Rejuvenation</button></li>
                           <li><button type="button">Relaxation</button></li>
-                          <li><button type="button">Rejuvenation</button></li>
+                          <li><button type="button">Therapeutic</button></li>
                         </ul>
                       </div> 
                     </div>                                       
@@ -85,18 +85,18 @@
                   <div class="row">
                     <div class="col-sm-9">
                       <div class="section-content">
-                         <figure class="section-1 section">
+                        <figure class="section-1 section">
                           <div class="summary">
                             <div class="icon-wrap">
-                              <svg class="icon shape-therapeutic"><use xlink:href="#shape-therapeutic"></use></svg>
+                              <svg class="icon shape-rejuvenation"><use xlink:href="#shape-rejuvenation"></use></svg>
                             </div><!-- /.icon-wrap -->
-                            <h2>therapeutic</h2>
+                            <h2>rejuvenation</h2>
                             <div class="rte">
                               <p><b>Intro about the restorative effect and benefits of water.</b></p>
                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                             </div>
                           </div><!-- /.summary -->
-                        </figure>
+                        </figure>  
                         <figure class="section-2 section">
                           <div class="summary">
                             <div class="icon-wrap">
@@ -112,21 +112,21 @@
                         <figure class="section-3 section">
                           <div class="summary">
                             <div class="icon-wrap">
-                              <svg class="icon shape-rejuvenation"><use xlink:href="#shape-rejuvenation"></use></svg>
+                              <svg class="icon shape-therapeutic"><use xlink:href="#shape-therapeutic"></use></svg>
                             </div><!-- /.icon-wrap -->
-                            <h2>rejuvenation</h2>
+                            <h2>therapeutic</h2>
                             <div class="rte">
                               <p><b>Intro about the restorative effect and benefits of water.</b></p>
                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                             </div>
                           </div><!-- /.summary -->
-                        </figure>  
+                        </figure>
                       </div>                                         
                     </div>
                     <div class="col-sm-3">
                       <div class="section-content">
-                        <figure class="slider-1 sensory-slider section" style="background-image: url(images/water_therapy/slider-1.jpg);">
-                          <h2>Sensory<br/>toolkit</h2>
+                      <figure class="slider-1 sensory-slider section" style="background-image: url(images/water_therapy/slider-1.jpg);">
+                          <h2>Sensory<br/>toolkit 1</h2>
                           <div class="slides">
                             <div class="slide">
                               <div class="icon">
@@ -364,7 +364,7 @@
                               </div>
                             </div>
                           </div><!-- /.slides -->
-                        </figure>
+                        </figure>                        
                       </div>
                     </div>
                   </div>

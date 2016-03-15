@@ -118,6 +118,74 @@ body.trends{
 					.content{
 						position: relative;
 						overflow: hidden;
+						.image{
+							.animation{
+								background-image: url(../images/trends/black-and-white-trend-sprite.jpg);
+								background-size: 5370px 195px;
+								width: 358px;
+								height: 195px;
+								position: absolute;
+								top: 0;
+								left: 0;
+								display: none;
+								@media (min-width: $screen-sm){
+									background-size: 5370px 195px;
+									width: 358px;
+									height: 195px;
+								}
+								@media (min-width: $screen-md){
+									background-size: 6885px 250px;
+									width: 459px;
+									height: 250px;
+								}
+								@media (min-width: $screen-lg){
+									background-size: 8820px 320px;
+									width: 588px;
+									height: 320px;	
+								}								
+							}
+							&.day-spa{
+								.animation{
+									background-image: url(../images/trends/day-spa-trend-sprite.jpg);
+								}
+							}
+							&.hotel-inspired{
+								.animation{
+									background-image: url(../images/trends/hotel-inspired-trend-sprite.jpg);
+								}
+							}
+							&.boho{
+								.animation{
+									background-image: url(../images/trends/boho-trend-sprite.jpg);
+								}
+							}
+							
+							&.neo-classic{
+								.animation{
+									background-image: url(../images/trends/neo-classic-trend-sprite.jpg);
+								}
+							}
+							&.material-crush{
+								.animation{
+									background-image: url(../images/trends/material-crush-trend-sprite.jpg);
+								}
+							}
+							&.nordic-minimal{
+								.animation{
+									background-image: url(../images/trends/nordic-minimal-trend-sprite.jpg);
+								}
+							}
+							&.traditional{
+								.animation{
+									background-image: url(../images/trends/traditional-trend-sprite.jpg);
+								}
+							}
+							&.black-and-white{
+								.animation{
+									background-image: url(../images/trends/black-and-white-trend-sprite.jpg);
+								}
+							}
+						}
 						img{
 							width: 100%;							
 						}

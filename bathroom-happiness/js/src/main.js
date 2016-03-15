@@ -205,7 +205,6 @@ var player = function(){
     }else{
       settings.playerVars = $.extend({}, this.settings.playerVars, settings.playerVars);
       this.settings = $.extend({}, this.settings, settings);
-      console.log(this.settings);
       var initialPlayer =  this;
       if (typeof(YT) == 'undefined' || typeof(YT.Player) == 'undefined') {
         playerManager.status = 'loading';
@@ -387,18 +386,97 @@ var bathroomHappiness = {
     }
   },
   trends: function(){
-    $('.bathroom-gallery').on('mouseover', function(){
-      var img = $(this).find('.image img').attr('src');
-      $(this).find('.image img').attr('src', img.replace('jpg','gif'));
-    }).on('mouseout', function(){
-      var img = $(this).find('.image img').attr('src');
-      $(this).find('.image img').attr('src', img.replace('gif','jpg'));
+    var windowWidth = $(window).width();
+    var frameWidth = 588; 
+    var animate = true;
+    $(window).on('resize', function(){
+      windowWidth = $(window).width();
+      frameWidth = 588;
+      if(windowWidth < 1200 && windowWidth > 991){
+        frameWidth = 459;
+      }else{
+        if(windowWidth < 992){
+          frameWidth = 358;
+        }
+      }
+      if(deviceMobile){
+        animate = false;
+      }
+      if(windowWidth < 768){
+        animate = false;
+      }
+    }).resize();
+    
+          
+    $('.bathroom-gallery .image').each(function(){
+      var animation;
+      $(this).on('mouseover', function(){
+        if(animate){
+          var img = $(this).find('.image img').attr('src');
+          //$(this).find('.image img').attr('src', img.replace('jpg','gif'));
+          var frames = 15; 
+          var div = $(this).find(".animation");
+          var direction = "right"; 
+          div.data('frame', 0);
+          div.show();
+          clearInterval(animation);
+          animation= setInterval(function () { 
+            frame = div.data('frame') * 1;
+              if(direction == "right"){
+                var frameOffset = (++frame % frames) * - frameWidth; 
+              }else{
+                var frameOffset = (--frame % frames) * - frameWidth; 
+              }
+              div.data('frame',frame);
+              if(frame == 14){
+                direction = "left";
+              }else{
+                if(frame == 0){
+                  direction = "right";
+                }
+              }
+              div.css({
+                'background-position': frameOffset + "px 0px"
+              });
+          }, 200);
+        }
+      }).on('mouseout', function(){
+        if(animate){
+          var frames = 15; 
+          var div = $(this).find(".animation"); 
+          var frame = div.data('frame') * 1;
+          if(frame > 0){
+            clearInterval(animation);
+            animation= setInterval(function () { 
+                frame = div.data('frame') * 1;
+                var frameOffset = (--frame % frames) * - frameWidth; 
+                if(frame == 0){
+                  clearInterval(animation);
+                  div.hide();
+                }
+                div.data('frame',frame);
+                div.css({
+                  'background-position': frameOffset + "px 0px"
+                });            
+            }, 50);
+          }else{
+            clearInterval(animation);      
+            div.css({
+              'background-position':  "0px 0px"
+            });
+            div.hide();
+          }    
+        }    
+      });
     });
+    
+
+
   },
   waterTherapy: function(){
     // When the player is ready, add listeners for pause, finish, and playProgress
     var windowWidth = $(window).width();
-    if(!isMobile.any()){
+    if(!deviceMobile){
       var initialVideoLoad = ['water-therapy','water-therapy-rejuvenation','water-therapy-relaxation','water-therapy-therapeutic','st-waterfall'];
       for(var k = 0; k < initialVideoLoad.length; k++){
         var player_container = initialVideoLoad[k]+'-video';

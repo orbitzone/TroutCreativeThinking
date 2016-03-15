@@ -40,8 +40,9 @@
                       </div>
                     </div>
                     <div class="content">
-                      <div class="image">
-                        <img src="images/trends/day-spa-trend.jpg" alt="Day Spa">                        
+                      <div class="image day-spa">
+                        <img src="images/trends/day-spa-trend.jpg" alt="Day Spa">
+                        <div class="animation"></div>                        
                       </div>
                     </div>
                   </a>
@@ -59,8 +60,9 @@
                       </div>
                     </div>
                     <div class="content">
-                      <div class="image">
-                        <img src="images/trends/hotel-inspired-trend.jpg" alt="Hotel Inspired">                        
+                      <div class="image hotel-inspired">
+                        <img src="images/trends/hotel-inspired-trend.jpg" alt="Hotel Inspired">
+                        <div class="animation"></div>                        
                       </div>
                     </div>
                   </a>
@@ -78,8 +80,9 @@
                       </div>
                     </div>
                     <div class="content">
-                      <div class="image">
+                      <div class="image boho">
                         <img src="images/trends/boho-trend.jpg" alt="Boho">                        
+                        <div class="animation"></div>
                       </div>
                     </div>
                   </a>
@@ -97,8 +100,9 @@
                       </div>
                     </div>
                     <div class="content">
-                      <div class="image">
-                        <img src="images/trends/neo-classic-trend.jpg" alt="Boho"/>                        
+                      <div class="image neo-classic">
+                        <img src="images/trends/neo-classic-trend.jpg" alt="Boho"/>
+                        <div class="animation"></div>                        
                       </div>
                     </div>
                   </a>
@@ -116,8 +120,9 @@
                       </div>
                     </div>
                     <div class="content">
-                      <div class="image">
-                        <img src="images/trends/material-crush-trend.jpg" alt="Material Crush">                        
+                      <div class="image material-crush">
+                        <img src="images/trends/material-crush-trend.jpg" alt="Material Crush">
+                        <div class="animation"></div>                        
                       </div>
                     </div>
                   </a>
@@ -135,8 +140,9 @@
                       </div>
                     </div>
                     <div class="content">
-                      <div class="image">
-                        <img src="images/trends/nordic-minimal-trend.jpg" alt="Nordic Minimal">                       
+                      <div class="image nordic-minimal">
+                        <img src="images/trends/nordic-minimal-trend.jpg" alt="Nordic Minimal">
+                        <div class="animation"></div>                       
                       </div>
                     </div>
                   </a>
@@ -154,8 +160,9 @@
                       </div>
                     </div>
                     <div class="content">
-                      <div class="image">
+                      <div class="image traditional">
                         <img src="images/trends/traditional-trend.jpg" alt="Traditional">
+                        <div class="animation"></div>
                       </div>
                     </div>
                   </a>
@@ -175,6 +182,7 @@
                     <div class="content">
                       <div class="image black-and-white">
                         <img src="images/trends/black-and-white-trend.jpg" alt="Black &amp; White">
+                        <div class="animation"></div>
                       </div>
                     </div>
                   </a>

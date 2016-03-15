@@ -405,16 +405,21 @@ body.water-therapy{
 					}					
 					.slide{
 						padding: 0 20px;
-						.icon{
-							text-align: center;
-							.label{
-								display: block;
-								font-size: 15px;
-								font-weight: 300;
-								text-transform: uppercase;							
-								padding-top: 18px;
-								padding-bottom: 20px;
+						.icon-wrap{
+							text-align: center;							
+							.icon{
+								fill: white;
+								width: 45px;
+								height: 45px;
 							}
+						}
+						.label{
+							display: block;
+							font-size: 15px;
+							font-weight: 300;
+							text-transform: uppercase;							
+							padding-top: 18px;
+							padding-bottom: 20px;
 						}
 						.text{
 							margin: 0 auto;

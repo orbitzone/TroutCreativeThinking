@@ -22,7 +22,7 @@
           <div class="col-xs-12">
             <div class="grid-module-intro">
               <h2>bathing</h2>
-              <p>Introduce bathing and how it can bring about change, a space to dissolve away the existing or initiate a new beginning.</p>
+              <p>The ritual of bathing cleanses the body and soul, dissolving the day to bring about fresh, new beginnings.</p>
             </div>                
           </div>
         </div>
@@ -168,7 +168,7 @@
                 <div class="product">
                   <a href="#" target="_blank">
                     <figure class="image">
-                      <img data-lazy="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
+                      <img src="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
                     </figure>
                     <div class="product-description">
                       <h5>LAUFEN Palomba Collection</h5>
@@ -184,7 +184,7 @@
                 <div class="product">
                   <a href="#" target="_blank">
                     <figure class="image">
-                      <img data-lazy="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
+                      <img src="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
                     </figure>
                     <div class="product-description">
                       <h5>LAUFEN Palomba Collection</h5>
@@ -200,7 +200,7 @@
                 <div class="product">
                   <a href="#" target="_blank">
                     <figure class="image">
-                      <img data-lazy="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
+                      <img src="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
                     </figure>
                     <div class="product-description">
                       <h5>LAUFEN Palomba Collection</h5>
@@ -285,7 +285,7 @@
                     <div class="box-border"></div>
                     <div class="box">
                       <div class="text">
-                          Joy meets bliss.
+                        Initiate a new begining.
                       </div>
                     </div><!-- /.box -->
                   </div><!-- /.grid-module-zone-3 -->
@@ -309,7 +309,7 @@
                 <div class="product">
                   <a href="#" target="_blank">
                     <figure class="image">
-                      <img data-lazy="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
+                      <img src="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
                     </figure>
                     <div class="product-description">
                       <h5>LAUFEN Palomba Collection</h5>
@@ -325,7 +325,7 @@
                 <div class="product">
                   <a href="#" target="_blank">
                     <figure class="image">
-                      <img data-lazy="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
+                      <img src="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
                     </figure>
                     <div class="product-description">
                       <h5>LAUFEN Palomba Collection</h5>
@@ -341,7 +341,7 @@
                 <div class="product">
                   <a href="#" target="_blank">
                     <figure class="image">
-                      <img data-lazy="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
+                      <img src="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
                     </figure>
                     <div class="product-description">
                       <h5>LAUFEN Palomba Collection</h5>
@@ -436,7 +436,7 @@
                     <div class="box-border"></div>
                     <div class="box">
                       <div class="text">
-                          Find the real you.
+                        Find the real you.
                       </div>
                     </div><!-- /.box -->
                   </div><!-- /.grid-module-zone-3 -->
@@ -460,7 +460,7 @@
                 <div class="product">
                   <a href="#" target="_blank">
                     <figure class="image">
-                      <img data-lazy="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
+                      <img src="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
                     </figure>
                     <div class="product-description">
                       <h5>LAUFEN Palomba Collection</h5>
@@ -476,7 +476,7 @@
                 <div class="product">
                   <a href="#" target="_blank">
                     <figure class="image">
-                      <img data-lazy="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
+                      <img src="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
                     </figure>
                     <div class="product-description">
                       <h5>LAUFEN Palomba Collection</h5>
@@ -492,7 +492,7 @@
                 <div class="product">
                   <a href="#" target="_blank">
                     <figure class="image">
-                      <img data-lazy="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
+                      <img src="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
                     </figure>
                     <div class="product-description">
                       <h5>LAUFEN Palomba Collection</h5>

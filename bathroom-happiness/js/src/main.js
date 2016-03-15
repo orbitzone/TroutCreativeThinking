@@ -94,7 +94,6 @@ var playerManager = {
         if(mute == 1){
           video.mute();
         }
-        console.log('#'+container);
         if($(window).scrollTop() <= ($('#'+container).offset().top + $('#'+container).outerHeight())){
           video.playVideo();      
         }
@@ -172,110 +171,6 @@ var playerManager = {
 
   }
 };
-/*
-var player = {
-  settings: {
-    container: '',
-    videoId: '',
-    playerVars: {
-      showinfo: 0,
-      modestbranding: 0,
-      rel: 0,
-      origin: 'reece-responsive.trout.com.au'
-    },
-    autoplay: false,
-    loop: false,
-    mute: false,
-    onReady: function(){},
-    onEnded: function(){},
-    onPaused: function(){},
-    onBuffering: function(){},
-    onPlaying: function(){}
-  },
-  ready: false,
-  obj:{},
-  init: function(settings){
-    this.settings = $.extend({}, this.settings, settings);
-    var initialPlayer =  this;
-    if (typeof(YT) == 'undefined' || typeof(YT.Player) == 'undefined') {
-      window.onYouTubeIframeAPIReady = function() {
-        playerManager.add(initialPlayer.loadPlayer(), settings);        
-      };
-      //This code loads the IFrame Player API code asynchronously.
-      var tag = document.createElement('script');
-      tag.src = "https://www.youtube.com/iframe_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-    } else {
-      if(!playerManager.exists(this.settings.container)){
-        playerManager.add(this.loadPlayer(), settings);
-      }else{
-        playerManager.update(this.settings.container, settings);
-        if(settings.autoplay){
-          playerManager.play(this.settings.container);
-        }
-      }
-    }
-  },
-  loadPlayer: function(){
-   playerManager.activate(this.settings.container);
-   var defaults = {
-      videoId: this.settings.videoId,
-      width: 790,
-      height: 444,
-      playerVars: this.settings.playerVars,
-      events: {
-        onReady: function(event){
-          var id = event.target.c.id;
-          var current = playerManager.players[id];
-          if(current.settings.autoplay && !isMobile.any()){
-            if(typeof current.settings.mute !== 'undefined'){
-              playerManager.play(current.settings.container,current.settings.mute);
-            }else{
-              playerManager.play(current.settings.container);
-            }
-          }
-          if(typeof current.settings.onReady === 'function'){
-            var ready = current.settings.onReady;
-            setTimeout(function(){ ready(); },500);
-          }
-          $(window).resize();     
-        },
-        onStateChange: function(event){
-          playerManager.onChangeState(event);
-        }
-      }
-    };
-   return new YT.Player(player.settings.container, defaults);
-  },
-  play: function(id, mute){
-    var video = player.obj[id].player;
-    if(typeof video.playVideo !== "undefined"){
-      if(typeof mute !== 'undefined'){
-        if(mute){
-          video.mute();
-        }
-      }
-      video.playVideo();      
-    }
-  },
-  stop: function(id){
-    if(typeof id !== "undefined"){
-      var video = player.obj[id].player;
-      if(typeof video.stopVideo !== "undefined"){
-        video.stopVideo();              
-      }else{
-        player.autoplay = false;
-      }
-    }else{
-      $.each(player.obj, function(key){
-        if(typeof player.obj[key].player.stopVideo !== "undefined"){
-          player.obj[key].player.stopVideo();              
-        }       
-      });
-    }
-  }
-};*/
 var player = function(){
   this.settings = {
     container: '',
@@ -337,7 +232,6 @@ var player = function(){
       playerVars: this.settings.playerVars,
       events: {
         onReady: function(event){
-          //console.log('The container is '+container);
           //var id = event.target.c.id;
           var current = playerManager.players[container];
           if(thisSettings.autoplay && !deviceMobile){

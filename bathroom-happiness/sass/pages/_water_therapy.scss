@@ -667,7 +667,7 @@ body.water-therapy{
 				@include transition(0.5s all ease-out);
 				@media (min-width: $screen-sm){
 					padding: 64px 40px 28px;
-					height: 290px;
+					height: 232px;
 				}
 				@media (min-width: $screen-md){
 					padding: 64px 58px 28px;
@@ -715,7 +715,7 @@ body.water-therapy{
 				background: linear-gradient(to bottom,  #1a1c24 0%,#161d23 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a1c24', endColorstr='#161d23',GradientType=0 ); /* IE6-9 */
 
-				height: 290px;
+				height: 232px;
 				&:before{
 					content: " ";
 			    display: block;
@@ -1191,7 +1191,10 @@ body.water-therapy{
 		  				background: #41f3bf;
 		  				color: white;
 		  				text-transform: uppercase;
-		  			}
+		  				&:hover{
+		  					background: black;
+			  			}
+		  			}		  			
 		  		}
 		  	}
 		  }

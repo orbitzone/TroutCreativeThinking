@@ -88,17 +88,17 @@
                   <!-- Slides -->
                   <div class="slide">
                     <figure class="image">
-                      <img src="images/water_therapy/bathing-slider.jpg" alt="Showering">
+                      <img data-lazy="images/water_therapy/bathing-slider.jpg" alt="Showering">
                     </figure>
                   </div><!-- /.slide -->
                   <div class="slide">
                     <figure class="image">
-                      <img src="images/water_therapy/bathing-slider.jpg" alt="Showering">
+                      <img data-lazy="images/water_therapy/bathing-slider.jpg" alt="Showering">
                     </figure>
                   </div><!-- /.slide -->
                   <div class="slide">
                     <figure class="image">
-                      <img src="images/water_therapy/bathing-slider.jpg" alt="Showering">
+                      <img data-lazy="images/water_therapy/bathing-slider.jpg" alt="Showering">
                     </figure>
                   </div><!-- /.slide -->
                 </div><!-- /.grid-module-slider -->
@@ -153,7 +153,7 @@
                 <div class="product">
                   <a href="#" target="_blank">
                     <figure class="image">
-                      <img src="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
+                      <img data-lazy="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
                     </figure>
                     <div class="product-description">
                       <h5>LAUFEN Palomba Collection</h5>
@@ -169,7 +169,7 @@
                 <div class="product">
                   <a href="#" target="_blank">
                     <figure class="image">
-                      <img src="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
+                      <img data-lazy="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
                     </figure>
                     <div class="product-description">
                       <h5>LAUFEN Palomba Collection</h5>
@@ -185,7 +185,7 @@
                 <div class="product">
                   <a href="#" target="_blank">
                     <figure class="image">
-                      <img src="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
+                      <img data-lazy="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
                     </figure>
                     <div class="product-description">
                       <h5>LAUFEN Palomba Collection</h5>
@@ -214,17 +214,17 @@
                   <!-- Slides -->
                   <div class="slide">
                     <figure class="image">
-                      <img src="images/water_therapy/bathing-slider.jpg" alt="Showering">
+                      <img data-lazy="images/water_therapy/bathing-slider.jpg" alt="Showering">
                     </figure>
                   </div><!-- /.slide -->
                   <div class="slide">
                     <figure class="image">
-                      <img src="images/water_therapy/bathing-slider.jpg" alt="Showering">
+                      <img data-lazy="images/water_therapy/bathing-slider.jpg" alt="Showering">
                     </figure>
                   </div><!-- /.slide -->
                   <div class="slide">
                     <figure class="image">
-                      <img src="images/water_therapy/bathing-slider.jpg" alt="Showering">
+                      <img data-lazy="images/water_therapy/bathing-slider.jpg" alt="Showering">
                     </figure>
                   </div><!-- /.slide -->
                 </div><!-- /.grid-module-slider -->
@@ -279,7 +279,7 @@
                 <div class="product">
                   <a href="#" target="_blank">
                     <figure class="image">
-                      <img src="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
+                      <img data-lazy="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
                     </figure>
                     <div class="product-description">
                       <h5>LAUFEN Palomba Collection</h5>
@@ -295,7 +295,7 @@
                 <div class="product">
                   <a href="#" target="_blank">
                     <figure class="image">
-                      <img src="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
+                      <img data-lazy="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
                     </figure>
                     <div class="product-description">
                       <h5>LAUFEN Palomba Collection</h5>
@@ -311,7 +311,7 @@
                 <div class="product">
                   <a href="#" target="_blank">
                     <figure class="image">
-                      <img src="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
+                      <img data-lazy="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
                     </figure>
                     <div class="product-description">
                       <h5>LAUFEN Palomba Collection</h5>
@@ -340,17 +340,17 @@
                   <!-- Slides -->
                   <div class="slide">
                     <figure class="image">
-                      <img src="images/water_therapy/bathing-slider.jpg" alt="Showering">
+                      <img data-lazy="images/water_therapy/bathing-slider.jpg" alt="Showering">
                     </figure>
                   </div><!-- /.slide -->
                   <div class="slide">
                     <figure class="image">
-                      <img src="images/water_therapy/bathing-slider.jpg" alt="Showering">
+                      <img data-lazy="images/water_therapy/bathing-slider.jpg" alt="Showering">
                     </figure>
                   </div><!-- /.slide -->
                   <div class="slide">
                     <figure class="image">
-                      <img src="images/water_therapy/bathing-slider.jpg" alt="Showering">
+                      <img data-lazy="images/water_therapy/bathing-slider.jpg" alt="Showering">
                     </figure>
                   </div><!-- /.slide -->
                 </div><!-- /.grid-module-slider -->
@@ -405,7 +405,7 @@
                 <div class="product">
                   <a href="#" target="_blank">
                     <figure class="image">
-                      <img src="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
+                      <img data-lazy="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
                     </figure>
                     <div class="product-description">
                       <h5>LAUFEN Palomba Collection</h5>
@@ -421,7 +421,7 @@
                 <div class="product">
                   <a href="#" target="_blank">
                     <figure class="image">
-                      <img src="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
+                      <img data-lazy="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
                     </figure>
                     <div class="product-description">
                       <h5>LAUFEN Palomba Collection</h5>
@@ -437,7 +437,7 @@
                 <div class="product">
                   <a href="#" target="_blank">
                     <figure class="image">
-                      <img src="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
+                      <img data-lazy="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
                     </figure>
                     <div class="product-description">
                       <h5>LAUFEN Palomba Collection</h5>
@@ -466,17 +466,17 @@
                   <!-- Slides -->
                   <div class="slide">
                     <figure class="image">
-                      <img src="images/water_therapy/bathing-slider.jpg" alt="Showering">
+                      <img data-lazy="images/water_therapy/bathing-slider.jpg" alt="Showering">
                     </figure>
                   </div><!-- /.slide -->
                   <div class="slide">
                     <figure class="image">
-                      <img src="images/water_therapy/bathing-slider.jpg" alt="Showering">
+                      <img data-lazy="images/water_therapy/bathing-slider.jpg" alt="Showering">
                     </figure>
                   </div><!-- /.slide -->
                   <div class="slide">
                     <figure class="image">
-                      <img src="images/water_therapy/bathing-slider.jpg" alt="Showering">
+                      <img data-lazy="images/water_therapy/bathing-slider.jpg" alt="Showering">
                     </figure>
                   </div><!-- /.slide -->
                 </div><!-- /.grid-module-slider -->
@@ -531,7 +531,7 @@
                 <div class="product">
                   <a href="#" target="_blank">
                     <figure class="image">
-                      <img src="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
+                      <img data-lazy="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
                     </figure>
                     <div class="product-description">
                       <h5>LAUFEN Palomba Collection</h5>
@@ -547,7 +547,7 @@
                 <div class="product">
                   <a href="#" target="_blank">
                     <figure class="image">
-                      <img src="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
+                      <img data-lazy="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
                     </figure>
                     <div class="product-description">
                       <h5>LAUFEN Palomba Collection</h5>
@@ -563,7 +563,7 @@
                 <div class="product">
                   <a href="#" target="_blank">
                     <figure class="image">
-                      <img src="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
+                      <img data-lazy="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
                     </figure>
                     <div class="product-description">
                       <h5>LAUFEN Palomba Collection</h5>

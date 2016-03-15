@@ -464,17 +464,17 @@
                         <!-- Slides -->
                         <div class="slide">
                           <figure class="image">
-                            <img src="images/water_therapy/showering-slider-wet-zone.jpg" alt="Showering">
+                            <img data-lazy="images/water_therapy/showering-slider-wet-zone.jpg" alt="Showering">
                           </figure>
                         </div><!-- /.slide -->
                         <div class="slide">
                           <figure class="image">
-                            <img src="images/water_therapy/showering-slider.jpg" alt="Showering">
+                            <img data-lazy="images/water_therapy/showering-slider.jpg" alt="Showering">
                           </figure>
                         </div><!-- /.slide -->
                         <div class="slide">
                           <figure class="image">
-                            <img src="images/water_therapy/showering-slider.jpg" alt="Showering">
+                            <img data-lazy="images/water_therapy/showering-slider.jpg" alt="Showering">
                           </figure>
                         </div><!-- /.slide -->
                       </div><!-- /.grid-module-slider -->
@@ -683,17 +683,17 @@
                         <!-- Slides -->
                         <div class="slide">
                           <figure class="image">
-                            <img src="images/water_therapy/showering-slider-wet-zone.jpg" alt="Showering">
+                            <img data-lazy="images/water_therapy/showering-slider-wet-zone.jpg" alt="Showering">
                           </figure>
                         </div><!-- /.slide -->
                         <div class="slide">
                           <figure class="image">
-                            <img src="images/water_therapy/showering-slider.jpg" alt="Showering">
+                            <img data-lazy="images/water_therapy/showering-slider.jpg" alt="Showering">
                           </figure>
                         </div><!-- /.slide -->
                         <div class="slide">
                           <figure class="image">
-                            <img src="images/water_therapy/showering-slider.jpg" alt="Showering">
+                            <img data-lazy="images/water_therapy/showering-slider.jpg" alt="Showering">
                           </figure>
                         </div><!-- /.slide -->
                       </div><!-- /.grid-module-slider -->
@@ -902,17 +902,17 @@
                         <!-- Slides -->
                         <div class="slide">
                           <figure class="image">
-                            <img src="images/water_therapy/showering-slider-wet-zone.jpg" alt="Showering">
+                            <img data-lazy="images/water_therapy/showering-slider-wet-zone.jpg" alt="Showering">
                           </figure>
                         </div><!-- /.slide -->
                         <div class="slide">
                           <figure class="image">
-                            <img src="images/water_therapy/showering-slider.jpg" alt="Showering">
+                            <img data-lazy="images/water_therapy/showering-slider.jpg" alt="Showering">
                           </figure>
                         </div><!-- /.slide -->
                         <div class="slide">
                           <figure class="image">
-                            <img src="images/water_therapy/showering-slider.jpg" alt="Showering">
+                            <img data-lazy="images/water_therapy/showering-slider.jpg" alt="Showering">
                           </figure>
                         </div><!-- /.slide -->
                       </div><!-- /.grid-module-slider -->
@@ -1122,17 +1122,17 @@
                         <!-- Slides -->
                         <div class="slide">
                           <figure class="image">
-                            <img src="images/water_therapy/showering-slider-wet-zone.jpg" alt="Showering">
+                            <img data-lazy="images/water_therapy/showering-slider-wet-zone.jpg" alt="Showering">
                           </figure>
                         </div><!-- /.slide -->
                         <div class="slide">
                           <figure class="image">
-                            <img src="images/water_therapy/showering-slider.jpg" alt="Showering">
+                            <img data-lazy="images/water_therapy/showering-slider.jpg" alt="Showering">
                           </figure>
                         </div><!-- /.slide -->
                         <div class="slide">
                           <figure class="image">
-                            <img src="images/water_therapy/showering-slider.jpg" alt="Showering">
+                            <img data-lazy="images/water_therapy/showering-slider.jpg" alt="Showering">
                           </figure>
                         </div><!-- /.slide -->
                       </div><!-- /.grid-module-slider -->

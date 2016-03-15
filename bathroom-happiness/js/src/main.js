@@ -389,10 +389,10 @@ var bathroomHappiness = {
   trends: function(){
     $('.bathroom-gallery').on('mouseover', function(){
       var img = $(this).find('.image img').attr('src');
-      $(this).find('.image img').attr('src', img.replace('png','gif'));
+      $(this).find('.image img').attr('src', img.replace('jpg','gif'));
     }).on('mouseout', function(){
       var img = $(this).find('.image img').attr('src');
-      $(this).find('.image img').attr('src', img.replace('gif','png'));
+      $(this).find('.image img').attr('src', img.replace('gif','jpg'));
     });
   },
   waterTherapy: function(){
@@ -561,7 +561,8 @@ var bathroomHappiness = {
     });
     $('#water-therapy .slides').slick({
       arrows: false,
-      dots: true
+      dots: true,
+      lazyload: 'ondemand'
     });
     $('.panel-slideshow').each(function () {
       var $arrows = $(this).find('.slideshow-buttons');
@@ -569,12 +570,14 @@ var bathroomHappiness = {
         $(this).find('.grid-module-slider').slick({
           arrows: true,
           dots: false,
-          appendArrows: $arrows
+          appendArrows: $arrows,
+          lazyload: 'ondemand'
         });
       }
       if($(this).find('.slideshow-container').length > 0){
         $(this).find('.slideshow-container').slick({
           appendArrows: $arrows,
+          lazyload: 'ondemand',
           responsive:[
           {
             breakpoint: 768,

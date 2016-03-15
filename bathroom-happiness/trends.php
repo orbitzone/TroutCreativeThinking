@@ -41,7 +41,7 @@
                     </div>
                     <div class="content">
                       <div class="image">
-                        <img src="images/trends/day-spa-trend.png" alt="Day Spa">                        
+                        <img src="images/trends/day-spa-trend.jpg" alt="Day Spa">                        
                       </div>
                     </div>
                   </a>
@@ -60,7 +60,7 @@
                     </div>
                     <div class="content">
                       <div class="image">
-                        <img src="images/trends/hotel-inspired-trend.png" alt="Hotel Inspired">                        
+                        <img src="images/trends/hotel-inspired-trend.jpg" alt="Hotel Inspired">                        
                       </div>
                     </div>
                   </a>
@@ -79,7 +79,7 @@
                     </div>
                     <div class="content">
                       <div class="image">
-                        <img src="images/trends/boho-trend.png" alt="Boho">                        
+                        <img src="images/trends/boho-trend.jpg" alt="Boho">                        
                       </div>
                     </div>
                   </a>
@@ -98,7 +98,7 @@
                     </div>
                     <div class="content">
                       <div class="image">
-                        <img src="images/trends/neo-classic-trend.png" alt="Boho"/>                        
+                        <img src="images/trends/neo-classic-trend.jpg" alt="Boho"/>                        
                       </div>
                     </div>
                   </a>
@@ -117,7 +117,7 @@
                     </div>
                     <div class="content">
                       <div class="image">
-                        <img src="images/trends/material-crush-trend.png" alt="Material Crush">                        
+                        <img src="images/trends/material-crush-trend.jpg" alt="Material Crush">                        
                       </div>
                     </div>
                   </a>
@@ -136,7 +136,7 @@
                     </div>
                     <div class="content">
                       <div class="image">
-                        <img src="images/trends/nordic-minimal-trend.png" alt="Nordic Minimal">                       
+                        <img src="images/trends/nordic-minimal-trend.jpg" alt="Nordic Minimal">                       
                       </div>
                     </div>
                   </a>
@@ -155,7 +155,7 @@
                     </div>
                     <div class="content">
                       <div class="image">
-                        <img src="images/trends/traditional-trend.png" alt="Traditional">
+                        <img src="images/trends/traditional-trend.jpg" alt="Traditional">
                       </div>
                     </div>
                   </a>
@@ -174,7 +174,7 @@
                     </div>
                     <div class="content">
                       <div class="image black-and-white">
-                        <img src="images/trends/black-and-white-trend.png" alt="Black &amp; White">
+                        <img src="images/trends/black-and-white-trend.jpg" alt="Black &amp; White">
                       </div>
                     </div>
                   </a>

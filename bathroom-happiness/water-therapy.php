@@ -1146,7 +1146,7 @@
                       <div class="grid-module-zone-wrap">
 
                         <!-- Zone 2: Title and image -->
-                        <div class="grid-module-zone-2" style="background-image: url(images/water_therapy/showering-zone-2.jpg);">
+                        <div class="grid-module-zone-2" style="background-image: url(images/water_therapy/outdoor/showering-outdoor-incidental-01.png);">
                           <div class="box">
                             <h3>awakening 4</h3>
                           </div>
@@ -1157,7 +1157,7 @@
                       <div class="grid-module-zone-wrap">
 
                         <!-- Zone 3: Text with bg and border-->
-                        <div class="grid-module-zone-3" style="background-image: url(images/water_therapy/showering-zone-3.jpg);">
+                        <div class="grid-module-zone-3" style="background-image: url(images/water_therapy/outdoor/showering-outdoor-incidental-02.png);">
                           <div class="box-border"></div>
                           <div class="box">
                             <div class="text">

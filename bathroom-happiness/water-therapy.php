@@ -35,7 +35,8 @@
                   <div class="intro">
                     <h1>water<br/> therapy</h1>
                     <div class="rte">
-                      <p>Introduce the power of water and it’s effect. We shower and bathe at transitional points in the day and water is what brings about a change in the psychological disposition.</p>
+                      <p>Water transforms us. Connecting us back to nature, it brings about change. Reaching beyond the physical, water enhances our emotional wellbeing.<br/></p>
+                      <p>It has the power to calm, to restore and to rejuvenate us.</p>
                     </div>
                   </div>
                 </div>
@@ -92,8 +93,8 @@
                             </div><!-- /.icon-wrap -->
                             <h2>rejuvenation</h2>
                             <div class="rte">
-                              <p><b>Intro about the restorative effect and benefits of water.</b></p>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                              <p><b>Reboot and awaken the senses.</b></p>
+                              <p>Bring back that sense of vitality and vigour with a stimulating rain shower. Rejuvenation begins in a joyous waterfall of invigorating droplets. Drumming the energy back into your day.</p>
                             </div>
                           </div><!-- /.summary -->
                         </figure>  
@@ -104,8 +105,8 @@
                             </div><!-- /.icon-wrap -->
                             <h2>relaxation</h2>
                             <div class="rte">
-                              <p><b>Intro about the restorative effect and benefits of water.</b></p>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                              <p><b>Switch into zen mode and enter a world of escape.</b></p>
+                              <p>Bliss out in the bath and take a few long, slow minutes to breathe, dream and reflect. Soft, swirls of water will send you on your way. A cleansing ritual that clears the mind and initiates new beginnings.</p>
                             </div>
                           </div><!-- /.summary -->
                         </figure>
@@ -116,8 +117,8 @@
                             </div><!-- /.icon-wrap -->
                             <h2>therapeutic</h2>
                             <div class="rte">
-                              <p><b>Intro about the restorative effect and benefits of water.</b></p>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                              <p><b>It’s time to restore and recharge.</b></p>
+                              <p>Reinvigorate with restorative body jets, focused massage sprays and a healing soak. The perfect remedy to a long day at the office or an intense session at the gym.</p>
                             </div>
                           </div><!-- /.summary -->
                         </figure>
@@ -129,78 +130,36 @@
                           <h2>Sensory<br/>toolkit 1</h2>
                           <div class="slides">
                             <div class="slide">
-                              <div class="icon">
-                                <svg version="1.1" id="Shape_1_copy_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                                   y="0px" width="35px" height="52px" viewBox="0 0 15 22" enable-background="new 0 0 15 22" xml:space="preserve">
-                                <path fill="#161e27" stroke="#FFFFFF" stroke-width="0.3" stroke-miterlimit="10" d="M14.3,10.9L14.3,10.9c-0.1-1.1-4.4-1.3-5.7-1.4
-                                  C8.7,9.3,8.7,9,8.7,8.7c0-0.7-0.3-1.1-0.6-1.4C8,7,7.8,6.9,7.8,6.6C7.7,6.4,7.5,6.3,7.4,6.3c-0.5,0-1.1,1.4-1.1,2.3
-                                  c0,0.3,0,0.6,0.1,0.8c-1.2,0-5.5,0.2-6,1.2h0v0c0,0,0,0.1,0,0.1c0,0.1,0,0.1,0,0.2v9.1l0,0c0.1,0.3,0.4,0.7,2.2,1
-                                  c1.3,0.2,3,0.3,4.8,0.3c1.8,0,3.5-0.1,4.8-0.3c1.7-0.3,2.1-0.7,2.2-1h0V10.9z M7.3,6.9c0.1,0.3,0.3,0.4,0.4,0.6
-                                  C8,7.9,8.2,8.1,8.2,8.7c0,0.8-0.3,1.5-0.6,1.7c0-0.1,0-0.1,0-0.2C7.8,9.8,7.8,9.3,7.9,9C8,8.8,7.7,8.8,7.6,8.9
-                                  C7.5,9.3,7.5,9.7,7.4,10c0,0.1,0,0.2,0,0.3c-0.3-0.2-0.5-0.8-0.5-1.7C6.8,8,7.1,7.3,7.3,6.9z M7.3,10.9c0,0.2,0,0.3,0,0.5
-                                  c0,0.2,0.3,0.2,0.3,0c0-0.1,0-0.3,0-0.4C8,10.8,8.3,10.5,8.5,10c3.4,0.1,5.1,0.6,5.3,0.9c-0.2,0.3-2.5,0.9-6.5,0.9
-                                  c-3.9,0-6.1-0.5-6.4-0.9l0,0c0.3-0.3,2.4-0.8,5.7-0.9C6.7,10.5,7,10.8,7.3,10.9z M7.4,21c-4,0-6.3-0.6-6.5-0.9l0-8.6
-                                  c0.3,0.2,0.8,0.3,1.6,0.4c1.3,0.2,3,0.3,4.8,0.3c1.8,0,3.5-0.1,4.8-0.3c0.9-0.1,1.4-0.3,1.7-0.5v8.6l0,0C13.7,20.4,11.4,21,7.4,21z
-                                   M6.4,2.3C6,1.7,6.1,1.3,6.5,0.7c0.2-0.3,0.6,0,0.4,0.3C6.3,1.8,7.3,2.7,7.5,3.5c0.2,0.8-0.3,1.4-0.7,2c-0.2,0.3-0.6,0-0.4-0.3
-                                  C6.8,4.7,7.3,4.1,7,3.4C6.8,3,6.6,2.7,6.4,2.3z M8.1,3.3C8.4,4,7.9,4.7,7.6,5.2C7.4,5.5,7.8,5.8,8,5.5c0.4-0.6,0.9-1.3,0.7-2
-                                  C8.5,2.6,7.5,1.8,8.1,0.9c0.2-0.3-0.2-0.5-0.4-0.3c-0.4,0.6-0.5,1-0.1,1.6C7.7,2.6,8,2.9,8.1,3.3z"/>
-                                </svg>
-                                <div class="label">
-                                  Scent
-                                </div>
+                              <div class="icon-wrap">
+                                <svg class="icon shape-scent"><use xlink:href="#shape-scent"></use></svg>
+                              </div>
+                              <div class="label">
+                                Scent
                               </div>
                               <div class="text">
-                                Sentence explaining the sensory benefits of scent in the room.
+                                Create visual energy with bright towels in your space.
                               </div>
                             </div>
                             <div class="slide">
-                              <div class="icon">
-                                <svg version="1.1" id="Shape_1_copy_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                                   y="0px" width="35px" height="52px" viewBox="0 0 15 22" enable-background="new 0 0 15 22" xml:space="preserve">
-                                <path fill="#161e27" stroke="#FFFFFF" stroke-width="0.3" stroke-miterlimit="10" d="M14.3,10.9L14.3,10.9c-0.1-1.1-4.4-1.3-5.7-1.4
-                                  C8.7,9.3,8.7,9,8.7,8.7c0-0.7-0.3-1.1-0.6-1.4C8,7,7.8,6.9,7.8,6.6C7.7,6.4,7.5,6.3,7.4,6.3c-0.5,0-1.1,1.4-1.1,2.3
-                                  c0,0.3,0,0.6,0.1,0.8c-1.2,0-5.5,0.2-6,1.2h0v0c0,0,0,0.1,0,0.1c0,0.1,0,0.1,0,0.2v9.1l0,0c0.1,0.3,0.4,0.7,2.2,1
-                                  c1.3,0.2,3,0.3,4.8,0.3c1.8,0,3.5-0.1,4.8-0.3c1.7-0.3,2.1-0.7,2.2-1h0V10.9z M7.3,6.9c0.1,0.3,0.3,0.4,0.4,0.6
-                                  C8,7.9,8.2,8.1,8.2,8.7c0,0.8-0.3,1.5-0.6,1.7c0-0.1,0-0.1,0-0.2C7.8,9.8,7.8,9.3,7.9,9C8,8.8,7.7,8.8,7.6,8.9
-                                  C7.5,9.3,7.5,9.7,7.4,10c0,0.1,0,0.2,0,0.3c-0.3-0.2-0.5-0.8-0.5-1.7C6.8,8,7.1,7.3,7.3,6.9z M7.3,10.9c0,0.2,0,0.3,0,0.5
-                                  c0,0.2,0.3,0.2,0.3,0c0-0.1,0-0.3,0-0.4C8,10.8,8.3,10.5,8.5,10c3.4,0.1,5.1,0.6,5.3,0.9c-0.2,0.3-2.5,0.9-6.5,0.9
-                                  c-3.9,0-6.1-0.5-6.4-0.9l0,0c0.3-0.3,2.4-0.8,5.7-0.9C6.7,10.5,7,10.8,7.3,10.9z M7.4,21c-4,0-6.3-0.6-6.5-0.9l0-8.6
-                                  c0.3,0.2,0.8,0.3,1.6,0.4c1.3,0.2,3,0.3,4.8,0.3c1.8,0,3.5-0.1,4.8-0.3c0.9-0.1,1.4-0.3,1.7-0.5v8.6l0,0C13.7,20.4,11.4,21,7.4,21z
-                                   M6.4,2.3C6,1.7,6.1,1.3,6.5,0.7c0.2-0.3,0.6,0,0.4,0.3C6.3,1.8,7.3,2.7,7.5,3.5c0.2,0.8-0.3,1.4-0.7,2c-0.2,0.3-0.6,0-0.4-0.3
-                                  C6.8,4.7,7.3,4.1,7,3.4C6.8,3,6.6,2.7,6.4,2.3z M8.1,3.3C8.4,4,7.9,4.7,7.6,5.2C7.4,5.5,7.8,5.8,8,5.5c0.4-0.6,0.9-1.3,0.7-2
-                                  C8.5,2.6,7.5,1.8,8.1,0.9c0.2-0.3-0.2-0.5-0.4-0.3c-0.4,0.6-0.5,1-0.1,1.6C7.7,2.6,8,2.9,8.1,3.3z"/>
-                                </svg>
-                                <div class="label">
-                                  Scent
-                                </div>
+                              <div class="icon-wrap">
+                                <svg class="icon shape-lighting"><use xlink:href="#shape-lighting"></use></svg>
+                              </div>
+                              <div class="label">
+                                Lighting
                               </div>
                               <div class="text">
-                                Sentence explaining the sensory benefits of scent in the room.
+                                Elevate the experience with the right mix of lighting.
                               </div>
                             </div>
                             <div class="slide">
-                              <div class="icon">
-                                <svg version="1.1" id="Shape_1_copy_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                                   y="0px" width="35px" height="52px" viewBox="0 0 15 22" enable-background="new 0 0 15 22" xml:space="preserve">
-                                <path fill="#161e27" stroke="#FFFFFF" stroke-width="0.3" stroke-miterlimit="10" d="M14.3,10.9L14.3,10.9c-0.1-1.1-4.4-1.3-5.7-1.4
-                                  C8.7,9.3,8.7,9,8.7,8.7c0-0.7-0.3-1.1-0.6-1.4C8,7,7.8,6.9,7.8,6.6C7.7,6.4,7.5,6.3,7.4,6.3c-0.5,0-1.1,1.4-1.1,2.3
-                                  c0,0.3,0,0.6,0.1,0.8c-1.2,0-5.5,0.2-6,1.2h0v0c0,0,0,0.1,0,0.1c0,0.1,0,0.1,0,0.2v9.1l0,0c0.1,0.3,0.4,0.7,2.2,1
-                                  c1.3,0.2,3,0.3,4.8,0.3c1.8,0,3.5-0.1,4.8-0.3c1.7-0.3,2.1-0.7,2.2-1h0V10.9z M7.3,6.9c0.1,0.3,0.3,0.4,0.4,0.6
-                                  C8,7.9,8.2,8.1,8.2,8.7c0,0.8-0.3,1.5-0.6,1.7c0-0.1,0-0.1,0-0.2C7.8,9.8,7.8,9.3,7.9,9C8,8.8,7.7,8.8,7.6,8.9
-                                  C7.5,9.3,7.5,9.7,7.4,10c0,0.1,0,0.2,0,0.3c-0.3-0.2-0.5-0.8-0.5-1.7C6.8,8,7.1,7.3,7.3,6.9z M7.3,10.9c0,0.2,0,0.3,0,0.5
-                                  c0,0.2,0.3,0.2,0.3,0c0-0.1,0-0.3,0-0.4C8,10.8,8.3,10.5,8.5,10c3.4,0.1,5.1,0.6,5.3,0.9c-0.2,0.3-2.5,0.9-6.5,0.9
-                                  c-3.9,0-6.1-0.5-6.4-0.9l0,0c0.3-0.3,2.4-0.8,5.7-0.9C6.7,10.5,7,10.8,7.3,10.9z M7.4,21c-4,0-6.3-0.6-6.5-0.9l0-8.6
-                                  c0.3,0.2,0.8,0.3,1.6,0.4c1.3,0.2,3,0.3,4.8,0.3c1.8,0,3.5-0.1,4.8-0.3c0.9-0.1,1.4-0.3,1.7-0.5v8.6l0,0C13.7,20.4,11.4,21,7.4,21z
-                                   M6.4,2.3C6,1.7,6.1,1.3,6.5,0.7c0.2-0.3,0.6,0,0.4,0.3C6.3,1.8,7.3,2.7,7.5,3.5c0.2,0.8-0.3,1.4-0.7,2c-0.2,0.3-0.6,0-0.4-0.3
-                                  C6.8,4.7,7.3,4.1,7,3.4C6.8,3,6.6,2.7,6.4,2.3z M8.1,3.3C8.4,4,7.9,4.7,7.6,5.2C7.4,5.5,7.8,5.8,8,5.5c0.4-0.6,0.9-1.3,0.7-2
-                                  C8.5,2.6,7.5,1.8,8.1,0.9c0.2-0.3-0.2-0.5-0.4-0.3c-0.4,0.6-0.5,1-0.1,1.6C7.7,2.6,8,2.9,8.1,3.3z"/>
-                                </svg>
-                                <div class="label">
-                                  Scent
-                                </div>
+                              <div class="icon-wrap">
+                                <svg class="icon shape-waterfall"><use xlink:href="#shape-waterfall"></use></svg>
+                               </div>
+                              <div class="label">
+                                Waterfall
                               </div>
                               <div class="text">
-                                Sentence explaining the sensory benefits of scent in the room.
+                                A totally immersive experience that envelopes you.
                               </div>
                             </div>
                           </div><!-- /.slides -->
@@ -209,78 +168,36 @@
                           <h2>Sensory<br/>toolkit</h2>
                           <div class="slides">
                             <div class="slide">
-                              <div class="icon">
-                                <svg version="1.1" id="Shape_1_copy_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                                   y="0px" width="35px" height="52px" viewBox="0 0 15 22" enable-background="new 0 0 15 22" xml:space="preserve">
-                                <path fill="#161e27" stroke="#FFFFFF" stroke-width="0.3" stroke-miterlimit="10" d="M14.3,10.9L14.3,10.9c-0.1-1.1-4.4-1.3-5.7-1.4
-                                  C8.7,9.3,8.7,9,8.7,8.7c0-0.7-0.3-1.1-0.6-1.4C8,7,7.8,6.9,7.8,6.6C7.7,6.4,7.5,6.3,7.4,6.3c-0.5,0-1.1,1.4-1.1,2.3
-                                  c0,0.3,0,0.6,0.1,0.8c-1.2,0-5.5,0.2-6,1.2h0v0c0,0,0,0.1,0,0.1c0,0.1,0,0.1,0,0.2v9.1l0,0c0.1,0.3,0.4,0.7,2.2,1
-                                  c1.3,0.2,3,0.3,4.8,0.3c1.8,0,3.5-0.1,4.8-0.3c1.7-0.3,2.1-0.7,2.2-1h0V10.9z M7.3,6.9c0.1,0.3,0.3,0.4,0.4,0.6
-                                  C8,7.9,8.2,8.1,8.2,8.7c0,0.8-0.3,1.5-0.6,1.7c0-0.1,0-0.1,0-0.2C7.8,9.8,7.8,9.3,7.9,9C8,8.8,7.7,8.8,7.6,8.9
-                                  C7.5,9.3,7.5,9.7,7.4,10c0,0.1,0,0.2,0,0.3c-0.3-0.2-0.5-0.8-0.5-1.7C6.8,8,7.1,7.3,7.3,6.9z M7.3,10.9c0,0.2,0,0.3,0,0.5
-                                  c0,0.2,0.3,0.2,0.3,0c0-0.1,0-0.3,0-0.4C8,10.8,8.3,10.5,8.5,10c3.4,0.1,5.1,0.6,5.3,0.9c-0.2,0.3-2.5,0.9-6.5,0.9
-                                  c-3.9,0-6.1-0.5-6.4-0.9l0,0c0.3-0.3,2.4-0.8,5.7-0.9C6.7,10.5,7,10.8,7.3,10.9z M7.4,21c-4,0-6.3-0.6-6.5-0.9l0-8.6
-                                  c0.3,0.2,0.8,0.3,1.6,0.4c1.3,0.2,3,0.3,4.8,0.3c1.8,0,3.5-0.1,4.8-0.3c0.9-0.1,1.4-0.3,1.7-0.5v8.6l0,0C13.7,20.4,11.4,21,7.4,21z
-                                   M6.4,2.3C6,1.7,6.1,1.3,6.5,0.7c0.2-0.3,0.6,0,0.4,0.3C6.3,1.8,7.3,2.7,7.5,3.5c0.2,0.8-0.3,1.4-0.7,2c-0.2,0.3-0.6,0-0.4-0.3
-                                  C6.8,4.7,7.3,4.1,7,3.4C6.8,3,6.6,2.7,6.4,2.3z M8.1,3.3C8.4,4,7.9,4.7,7.6,5.2C7.4,5.5,7.8,5.8,8,5.5c0.4-0.6,0.9-1.3,0.7-2
-                                  C8.5,2.6,7.5,1.8,8.1,0.9c0.2-0.3-0.2-0.5-0.4-0.3c-0.4,0.6-0.5,1-0.1,1.6C7.7,2.6,8,2.9,8.1,3.3z"/>
-                                </svg>
-                                <div class="label">
-                                  Scent
-                                </div>
+                              <div class="icon-wrap">
+                                <svg class="icon shape-scent"><use xlink:href="#shape-scent"></use></svg>
+                              </div>
+                              <div class="label">
+                                Scent
                               </div>
                               <div class="text">
-                                Sentence explaining the sensory benefits of scent in the room.
+                                Epsom salts to the bath for total body relaxation.
                               </div>
                             </div>
                             <div class="slide">
-                              <div class="icon">
-                                <svg version="1.1" id="Shape_1_copy_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                                   y="0px" width="35px" height="52px" viewBox="0 0 15 22" enable-background="new 0 0 15 22" xml:space="preserve">
-                                <path fill="#161e27" stroke="#FFFFFF" stroke-width="0.3" stroke-miterlimit="10" d="M14.3,10.9L14.3,10.9c-0.1-1.1-4.4-1.3-5.7-1.4
-                                  C8.7,9.3,8.7,9,8.7,8.7c0-0.7-0.3-1.1-0.6-1.4C8,7,7.8,6.9,7.8,6.6C7.7,6.4,7.5,6.3,7.4,6.3c-0.5,0-1.1,1.4-1.1,2.3
-                                  c0,0.3,0,0.6,0.1,0.8c-1.2,0-5.5,0.2-6,1.2h0v0c0,0,0,0.1,0,0.1c0,0.1,0,0.1,0,0.2v9.1l0,0c0.1,0.3,0.4,0.7,2.2,1
-                                  c1.3,0.2,3,0.3,4.8,0.3c1.8,0,3.5-0.1,4.8-0.3c1.7-0.3,2.1-0.7,2.2-1h0V10.9z M7.3,6.9c0.1,0.3,0.3,0.4,0.4,0.6
-                                  C8,7.9,8.2,8.1,8.2,8.7c0,0.8-0.3,1.5-0.6,1.7c0-0.1,0-0.1,0-0.2C7.8,9.8,7.8,9.3,7.9,9C8,8.8,7.7,8.8,7.6,8.9
-                                  C7.5,9.3,7.5,9.7,7.4,10c0,0.1,0,0.2,0,0.3c-0.3-0.2-0.5-0.8-0.5-1.7C6.8,8,7.1,7.3,7.3,6.9z M7.3,10.9c0,0.2,0,0.3,0,0.5
-                                  c0,0.2,0.3,0.2,0.3,0c0-0.1,0-0.3,0-0.4C8,10.8,8.3,10.5,8.5,10c3.4,0.1,5.1,0.6,5.3,0.9c-0.2,0.3-2.5,0.9-6.5,0.9
-                                  c-3.9,0-6.1-0.5-6.4-0.9l0,0c0.3-0.3,2.4-0.8,5.7-0.9C6.7,10.5,7,10.8,7.3,10.9z M7.4,21c-4,0-6.3-0.6-6.5-0.9l0-8.6
-                                  c0.3,0.2,0.8,0.3,1.6,0.4c1.3,0.2,3,0.3,4.8,0.3c1.8,0,3.5-0.1,4.8-0.3c0.9-0.1,1.4-0.3,1.7-0.5v8.6l0,0C13.7,20.4,11.4,21,7.4,21z
-                                   M6.4,2.3C6,1.7,6.1,1.3,6.5,0.7c0.2-0.3,0.6,0,0.4,0.3C6.3,1.8,7.3,2.7,7.5,3.5c0.2,0.8-0.3,1.4-0.7,2c-0.2,0.3-0.6,0-0.4-0.3
-                                  C6.8,4.7,7.3,4.1,7,3.4C6.8,3,6.6,2.7,6.4,2.3z M8.1,3.3C8.4,4,7.9,4.7,7.6,5.2C7.4,5.5,7.8,5.8,8,5.5c0.4-0.6,0.9-1.3,0.7-2
-                                  C8.5,2.6,7.5,1.8,8.1,0.9c0.2-0.3-0.2-0.5-0.4-0.3c-0.4,0.6-0.5,1-0.1,1.6C7.7,2.6,8,2.9,8.1,3.3z"/>
-                                </svg>
-                                <div class="label">
-                                  Scent
-                                </div>
+                              <div class="icon-wrap">
+                                <svg class="icon shape-lighting"><use xlink:href="#shape-lighting"></use></svg>
+                              </div>
+                              <div class="label">
+                                Lighting
                               </div>
                               <div class="text">
-                                Sentence explaining the sensory benefits of scent in the room.
+                                Scented candles creates a sense of peaceful ambience.
                               </div>
                             </div>
                             <div class="slide">
-                              <div class="icon">
-                                <svg version="1.1" id="Shape_1_copy_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                                   y="0px" width="35px" height="52px" viewBox="0 0 15 22" enable-background="new 0 0 15 22" xml:space="preserve">
-                                <path fill="#161e27" stroke="#FFFFFF" stroke-width="0.3" stroke-miterlimit="10" d="M14.3,10.9L14.3,10.9c-0.1-1.1-4.4-1.3-5.7-1.4
-                                  C8.7,9.3,8.7,9,8.7,8.7c0-0.7-0.3-1.1-0.6-1.4C8,7,7.8,6.9,7.8,6.6C7.7,6.4,7.5,6.3,7.4,6.3c-0.5,0-1.1,1.4-1.1,2.3
-                                  c0,0.3,0,0.6,0.1,0.8c-1.2,0-5.5,0.2-6,1.2h0v0c0,0,0,0.1,0,0.1c0,0.1,0,0.1,0,0.2v9.1l0,0c0.1,0.3,0.4,0.7,2.2,1
-                                  c1.3,0.2,3,0.3,4.8,0.3c1.8,0,3.5-0.1,4.8-0.3c1.7-0.3,2.1-0.7,2.2-1h0V10.9z M7.3,6.9c0.1,0.3,0.3,0.4,0.4,0.6
-                                  C8,7.9,8.2,8.1,8.2,8.7c0,0.8-0.3,1.5-0.6,1.7c0-0.1,0-0.1,0-0.2C7.8,9.8,7.8,9.3,7.9,9C8,8.8,7.7,8.8,7.6,8.9
-                                  C7.5,9.3,7.5,9.7,7.4,10c0,0.1,0,0.2,0,0.3c-0.3-0.2-0.5-0.8-0.5-1.7C6.8,8,7.1,7.3,7.3,6.9z M7.3,10.9c0,0.2,0,0.3,0,0.5
-                                  c0,0.2,0.3,0.2,0.3,0c0-0.1,0-0.3,0-0.4C8,10.8,8.3,10.5,8.5,10c3.4,0.1,5.1,0.6,5.3,0.9c-0.2,0.3-2.5,0.9-6.5,0.9
-                                  c-3.9,0-6.1-0.5-6.4-0.9l0,0c0.3-0.3,2.4-0.8,5.7-0.9C6.7,10.5,7,10.8,7.3,10.9z M7.4,21c-4,0-6.3-0.6-6.5-0.9l0-8.6
-                                  c0.3,0.2,0.8,0.3,1.6,0.4c1.3,0.2,3,0.3,4.8,0.3c1.8,0,3.5-0.1,4.8-0.3c0.9-0.1,1.4-0.3,1.7-0.5v8.6l0,0C13.7,20.4,11.4,21,7.4,21z
-                                   M6.4,2.3C6,1.7,6.1,1.3,6.5,0.7c0.2-0.3,0.6,0,0.4,0.3C6.3,1.8,7.3,2.7,7.5,3.5c0.2,0.8-0.3,1.4-0.7,2c-0.2,0.3-0.6,0-0.4-0.3
-                                  C6.8,4.7,7.3,4.1,7,3.4C6.8,3,6.6,2.7,6.4,2.3z M8.1,3.3C8.4,4,7.9,4.7,7.6,5.2C7.4,5.5,7.8,5.8,8,5.5c0.4-0.6,0.9-1.3,0.7-2
-                                  C8.5,2.6,7.5,1.8,8.1,0.9c0.2-0.3-0.2-0.5-0.4-0.3c-0.4,0.6-0.5,1-0.1,1.6C7.7,2.6,8,2.9,8.1,3.3z"/>
-                                </svg>
-                                <div class="label">
-                                  Scent
-                                </div>
+                              <div class="icon-wrap">
+                                <svg class="icon shape-soft-rain"><use xlink:href="#shape-soft-rain"></use></svg>
+                              </div>
+                              <div class="label">
+                                Soft Rain
                               </div>
                               <div class="text">
-                                Sentence explaining the sensory benefits of scent in the room.
+                                The gentle, hypnotic nature of a soft water spray.
                               </div>
                             </div>
                           </div><!-- /.slides -->
@@ -289,78 +206,36 @@
                           <h2>Sensory<br/>toolkit</h2>
                           <div class="slides">
                             <div class="slide">
-                              <div class="icon">
-                                <svg version="1.1" id="Shape_1_copy_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                                   y="0px" width="35px" height="52px" viewBox="0 0 15 22" enable-background="new 0 0 15 22" xml:space="preserve">
-                                <path fill="#161e27" stroke="#FFFFFF" stroke-width="0.3" stroke-miterlimit="10" d="M14.3,10.9L14.3,10.9c-0.1-1.1-4.4-1.3-5.7-1.4
-                                  C8.7,9.3,8.7,9,8.7,8.7c0-0.7-0.3-1.1-0.6-1.4C8,7,7.8,6.9,7.8,6.6C7.7,6.4,7.5,6.3,7.4,6.3c-0.5,0-1.1,1.4-1.1,2.3
-                                  c0,0.3,0,0.6,0.1,0.8c-1.2,0-5.5,0.2-6,1.2h0v0c0,0,0,0.1,0,0.1c0,0.1,0,0.1,0,0.2v9.1l0,0c0.1,0.3,0.4,0.7,2.2,1
-                                  c1.3,0.2,3,0.3,4.8,0.3c1.8,0,3.5-0.1,4.8-0.3c1.7-0.3,2.1-0.7,2.2-1h0V10.9z M7.3,6.9c0.1,0.3,0.3,0.4,0.4,0.6
-                                  C8,7.9,8.2,8.1,8.2,8.7c0,0.8-0.3,1.5-0.6,1.7c0-0.1,0-0.1,0-0.2C7.8,9.8,7.8,9.3,7.9,9C8,8.8,7.7,8.8,7.6,8.9
-                                  C7.5,9.3,7.5,9.7,7.4,10c0,0.1,0,0.2,0,0.3c-0.3-0.2-0.5-0.8-0.5-1.7C6.8,8,7.1,7.3,7.3,6.9z M7.3,10.9c0,0.2,0,0.3,0,0.5
-                                  c0,0.2,0.3,0.2,0.3,0c0-0.1,0-0.3,0-0.4C8,10.8,8.3,10.5,8.5,10c3.4,0.1,5.1,0.6,5.3,0.9c-0.2,0.3-2.5,0.9-6.5,0.9
-                                  c-3.9,0-6.1-0.5-6.4-0.9l0,0c0.3-0.3,2.4-0.8,5.7-0.9C6.7,10.5,7,10.8,7.3,10.9z M7.4,21c-4,0-6.3-0.6-6.5-0.9l0-8.6
-                                  c0.3,0.2,0.8,0.3,1.6,0.4c1.3,0.2,3,0.3,4.8,0.3c1.8,0,3.5-0.1,4.8-0.3c0.9-0.1,1.4-0.3,1.7-0.5v8.6l0,0C13.7,20.4,11.4,21,7.4,21z
-                                   M6.4,2.3C6,1.7,6.1,1.3,6.5,0.7c0.2-0.3,0.6,0,0.4,0.3C6.3,1.8,7.3,2.7,7.5,3.5c0.2,0.8-0.3,1.4-0.7,2c-0.2,0.3-0.6,0-0.4-0.3
-                                  C6.8,4.7,7.3,4.1,7,3.4C6.8,3,6.6,2.7,6.4,2.3z M8.1,3.3C8.4,4,7.9,4.7,7.6,5.2C7.4,5.5,7.8,5.8,8,5.5c0.4-0.6,0.9-1.3,0.7-2
-                                  C8.5,2.6,7.5,1.8,8.1,0.9c0.2-0.3-0.2-0.5-0.4-0.3c-0.4,0.6-0.5,1-0.1,1.6C7.7,2.6,8,2.9,8.1,3.3z"/>
-                                </svg>
-                                <div class="label">
-                                  Scent
-                                </div>
+                              <div class="icon-wrap">
+                                <svg class="icon shape-scent"><use xlink:href="#shape-scent"></use></svg>
+                              </div>
+                              <div class="label">
+                                Scent
                               </div>
                               <div class="text">
-                                Sentence explaining the sensory benefits of scent in the room.
+                                Stimulate blood flow with body balms and botanical oils.
                               </div>
                             </div>
                             <div class="slide">
-                              <div class="icon">
-                                <svg version="1.1" id="Shape_1_copy_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                                   y="0px" width="35px" height="52px" viewBox="0 0 15 22" enable-background="new 0 0 15 22" xml:space="preserve">
-                                <path fill="#161e27" stroke="#FFFFFF" stroke-width="0.3" stroke-miterlimit="10" d="M14.3,10.9L14.3,10.9c-0.1-1.1-4.4-1.3-5.7-1.4
-                                  C8.7,9.3,8.7,9,8.7,8.7c0-0.7-0.3-1.1-0.6-1.4C8,7,7.8,6.9,7.8,6.6C7.7,6.4,7.5,6.3,7.4,6.3c-0.5,0-1.1,1.4-1.1,2.3
-                                  c0,0.3,0,0.6,0.1,0.8c-1.2,0-5.5,0.2-6,1.2h0v0c0,0,0,0.1,0,0.1c0,0.1,0,0.1,0,0.2v9.1l0,0c0.1,0.3,0.4,0.7,2.2,1
-                                  c1.3,0.2,3,0.3,4.8,0.3c1.8,0,3.5-0.1,4.8-0.3c1.7-0.3,2.1-0.7,2.2-1h0V10.9z M7.3,6.9c0.1,0.3,0.3,0.4,0.4,0.6
-                                  C8,7.9,8.2,8.1,8.2,8.7c0,0.8-0.3,1.5-0.6,1.7c0-0.1,0-0.1,0-0.2C7.8,9.8,7.8,9.3,7.9,9C8,8.8,7.7,8.8,7.6,8.9
-                                  C7.5,9.3,7.5,9.7,7.4,10c0,0.1,0,0.2,0,0.3c-0.3-0.2-0.5-0.8-0.5-1.7C6.8,8,7.1,7.3,7.3,6.9z M7.3,10.9c0,0.2,0,0.3,0,0.5
-                                  c0,0.2,0.3,0.2,0.3,0c0-0.1,0-0.3,0-0.4C8,10.8,8.3,10.5,8.5,10c3.4,0.1,5.1,0.6,5.3,0.9c-0.2,0.3-2.5,0.9-6.5,0.9
-                                  c-3.9,0-6.1-0.5-6.4-0.9l0,0c0.3-0.3,2.4-0.8,5.7-0.9C6.7,10.5,7,10.8,7.3,10.9z M7.4,21c-4,0-6.3-0.6-6.5-0.9l0-8.6
-                                  c0.3,0.2,0.8,0.3,1.6,0.4c1.3,0.2,3,0.3,4.8,0.3c1.8,0,3.5-0.1,4.8-0.3c0.9-0.1,1.4-0.3,1.7-0.5v8.6l0,0C13.7,20.4,11.4,21,7.4,21z
-                                   M6.4,2.3C6,1.7,6.1,1.3,6.5,0.7c0.2-0.3,0.6,0,0.4,0.3C6.3,1.8,7.3,2.7,7.5,3.5c0.2,0.8-0.3,1.4-0.7,2c-0.2,0.3-0.6,0-0.4-0.3
-                                  C6.8,4.7,7.3,4.1,7,3.4C6.8,3,6.6,2.7,6.4,2.3z M8.1,3.3C8.4,4,7.9,4.7,7.6,5.2C7.4,5.5,7.8,5.8,8,5.5c0.4-0.6,0.9-1.3,0.7-2
-                                  C8.5,2.6,7.5,1.8,8.1,0.9c0.2-0.3-0.2-0.5-0.4-0.3c-0.4,0.6-0.5,1-0.1,1.6C7.7,2.6,8,2.9,8.1,3.3z"/>
-                                </svg>
-                                <div class="label">
-                                  Scent
-                                </div>
+                              <div class="icon-wrap">
+                                <svg class="icon shape-lighting"><use xlink:href="#shape-lighting"></use></svg>
+                              </div>
+                              <div class="label">
+                                Lighting
                               </div>
                               <div class="text">
-                                Sentence explaining the sensory benefits of scent in the room.
+                                Natural sunlight delivers a sense of positivity and a dose of Vitamin D.
                               </div>
                             </div>
                             <div class="slide">
-                              <div class="icon">
-                                <svg version="1.1" id="Shape_1_copy_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                                   y="0px" width="35px" height="52px" viewBox="0 0 15 22" enable-background="new 0 0 15 22" xml:space="preserve">
-                                <path fill="#161e27" stroke="#FFFFFF" stroke-width="0.3" stroke-miterlimit="10" d="M14.3,10.9L14.3,10.9c-0.1-1.1-4.4-1.3-5.7-1.4
-                                  C8.7,9.3,8.7,9,8.7,8.7c0-0.7-0.3-1.1-0.6-1.4C8,7,7.8,6.9,7.8,6.6C7.7,6.4,7.5,6.3,7.4,6.3c-0.5,0-1.1,1.4-1.1,2.3
-                                  c0,0.3,0,0.6,0.1,0.8c-1.2,0-5.5,0.2-6,1.2h0v0c0,0,0,0.1,0,0.1c0,0.1,0,0.1,0,0.2v9.1l0,0c0.1,0.3,0.4,0.7,2.2,1
-                                  c1.3,0.2,3,0.3,4.8,0.3c1.8,0,3.5-0.1,4.8-0.3c1.7-0.3,2.1-0.7,2.2-1h0V10.9z M7.3,6.9c0.1,0.3,0.3,0.4,0.4,0.6
-                                  C8,7.9,8.2,8.1,8.2,8.7c0,0.8-0.3,1.5-0.6,1.7c0-0.1,0-0.1,0-0.2C7.8,9.8,7.8,9.3,7.9,9C8,8.8,7.7,8.8,7.6,8.9
-                                  C7.5,9.3,7.5,9.7,7.4,10c0,0.1,0,0.2,0,0.3c-0.3-0.2-0.5-0.8-0.5-1.7C6.8,8,7.1,7.3,7.3,6.9z M7.3,10.9c0,0.2,0,0.3,0,0.5
-                                  c0,0.2,0.3,0.2,0.3,0c0-0.1,0-0.3,0-0.4C8,10.8,8.3,10.5,8.5,10c3.4,0.1,5.1,0.6,5.3,0.9c-0.2,0.3-2.5,0.9-6.5,0.9
-                                  c-3.9,0-6.1-0.5-6.4-0.9l0,0c0.3-0.3,2.4-0.8,5.7-0.9C6.7,10.5,7,10.8,7.3,10.9z M7.4,21c-4,0-6.3-0.6-6.5-0.9l0-8.6
-                                  c0.3,0.2,0.8,0.3,1.6,0.4c1.3,0.2,3,0.3,4.8,0.3c1.8,0,3.5-0.1,4.8-0.3c0.9-0.1,1.4-0.3,1.7-0.5v8.6l0,0C13.7,20.4,11.4,21,7.4,21z
-                                   M6.4,2.3C6,1.7,6.1,1.3,6.5,0.7c0.2-0.3,0.6,0,0.4,0.3C6.3,1.8,7.3,2.7,7.5,3.5c0.2,0.8-0.3,1.4-0.7,2c-0.2,0.3-0.6,0-0.4-0.3
-                                  C6.8,4.7,7.3,4.1,7,3.4C6.8,3,6.6,2.7,6.4,2.3z M8.1,3.3C8.4,4,7.9,4.7,7.6,5.2C7.4,5.5,7.8,5.8,8,5.5c0.4-0.6,0.9-1.3,0.7-2
-                                  C8.5,2.6,7.5,1.8,8.1,0.9c0.2-0.3-0.2-0.5-0.4-0.3c-0.4,0.6-0.5,1-0.1,1.6C7.7,2.6,8,2.9,8.1,3.3z"/>
-                                </svg>
-                                <div class="label">
-                                  Scent
-                                </div>
+                              <div class="icon-wrap">
+                                <svg class="icon shape-body-spray"><use xlink:href="#shape-body-spray"></use></svg>
+                              </div>
+                              <div class="label">
+                                Body Spray
                               </div>
                               <div class="text">
-                                Sentence explaining the sensory benefits of scent in the room.
+                                Concentrated jets designed to soothe and massage.
                               </div>
                             </div>
                           </div><!-- /.slides -->
@@ -400,7 +275,7 @@
                 <div class="col-xs-12">
                   <div class="grid-module-intro">
                     <h2>showering</h2>
-                    <p>Introduce showering and the power of personal renewal. Enliven the senses, reinvigorate the soul or float away in total bliss. </p>
+                    <p>Embrace a sense of personal renewal. The shower transitions you from sleeping to waking, stressed out to blissed out, work life to family life.</p>
                   </div>                
                 </div>
               </div>
@@ -425,25 +300,25 @@
                       <div class="box-content box-content-1 active">
                         <h3>Wet Zone</h3>
                         <div class="text">
-                          <p>Statement to explain the openness and layout of a wet zone environment.</p>
+                          <p>Embrace the carefree sensation of a shower without boundaries.</p>
                         </div>
                       </div>
                       <div class="box-content box-content-2">
                         <h3>Enclosed</h3>
                         <div class="text">
-                          <p>Statement to explain the openness and layout of a wet zone environment.</p>
+                          <p>Find the comfort and seclusion you crave, co- cooned in your own world.</p>
                         </div>
                       </div>
                       <div class="box-content box-content-3">
                         <h3>Double</h3>
                         <div class="text">
-                          <p>Statement to explain the openness and layout of a wet zone environment.</p>
+                          <p>Enrich your sacred shower time through shared moments and connection.</p>
                         </div>
                       </div> 
                       <div class="box-content box-content-4">
                         <h3>Outdoor</h3>
                         <div class="text">
-                          <p>Statement to explain the openness and layout of a wet zone environment.</p>
+                          <p>Channel your inner zen outdoors with an immersive outdoor shower that connects you back to nature.</p>
                         </div>
                       </div>
                     </div>                                       
@@ -515,7 +390,7 @@
                         <!-- Zone 2: Title and image -->
                         <div class="grid-module-zone-2" style="background-image: url(images/water_therapy/showering-zone-2.jpg);">
                           <div class="box">
-                            <h3>awakening</h3>
+                            <h3>Awaken</h3>
                           </div>
                         </div><!-- /.grid-module-zone-2 -->
                       </div><!-- /.grid-module-zone-wrap -->
@@ -528,7 +403,7 @@
                           <div class="box-border"></div>
                           <div class="box">
                             <div class="text">
-                              A wet zone is boundless, free and open.
+                              A wet zone awakens, opens and frees you.
                             </div>
                           </div><!-- /.box -->
                         </div><!-- /.grid-module-zone-3 -->
@@ -729,7 +604,7 @@
                         <!-- Zone 2: Title and image -->
                         <div class="grid-module-zone-2" style="background-image: url(images/water_therapy/enclosed/showering-enclosed-incidental-01.jpg);">
                           <div class="box">
-                            <h3>awakening 2</h3>
+                            <h3>Escape</h3>
                           </div>
                         </div><!-- /.grid-module-zone-2 -->
                       </div><!-- /.grid-module-zone-wrap -->
@@ -742,7 +617,7 @@
                           <div class="box-border"></div>
                           <div class="box">
                             <div class="text">
-                              A wet zone is boundless, free and open.
+                              A secluded zone for self reflection.
                             </div>
                           </div><!-- /.box -->
                         </div><!-- /.grid-module-zone-3 -->
@@ -757,7 +632,7 @@
 
                       <!-- Zone 4: Create Your Own... -->
                       <div class="grid-module-zone-4">
-                        <h3>Create your own wet zone</h3>
+                        <h3>Create your own enclosed</h3>
                         <div class="row">
                           <div class="col-md-7">
                             <figure class="image">
@@ -953,7 +828,7 @@
                         <!-- Zone 2: Title and image -->
                         <div class="grid-module-zone-2" style="background-image: url(images/water_therapy/double/showering-double-incidental-01.jpg);">
                           <div class="box">
-                            <h3>awakening 3</h3>
+                            <h3>Enrich</h3>
                           </div>
                         </div><!-- /.grid-module-zone-2 -->
                       </div><!-- /.grid-module-zone-wrap -->
@@ -966,7 +841,7 @@
                           <div class="box-border"></div>
                           <div class="box">
                             <div class="text">
-                              A wet zone is boundless, free and open.
+                              Embrace the joy of time spent together.
                             </div>
                           </div><!-- /.box -->
                         </div><!-- /.grid-module-zone-3 -->
@@ -981,7 +856,7 @@
 
                       <!-- Zone 4: Create Your Own... -->
                       <div class="grid-module-zone-4">
-                        <h3>Create your own wet zone</h3>
+                        <h3>Create your own double</h3>
                         <div class="row">
                           <div class="col-md-7">
                             <figure class="image">
@@ -1183,7 +1058,7 @@
                         <!-- Zone 2: Title and image -->
                         <div class="grid-module-zone-2" style="background-image: url(images/water_therapy/outdoor/showering-outdoor-incidental-01.jpg);">
                           <div class="box">
-                            <h3>awakening 4</h3>
+                            <h3>Freedom</h3>
                           </div>
                         </div><!-- /.grid-module-zone-2 -->
                       </div><!-- /.grid-module-zone-wrap -->
@@ -1196,7 +1071,7 @@
                           <div class="box-border"></div>
                           <div class="box">
                             <div class="text">
-                              A wet zone is boundless, free and open.
+                              A heady fusion of water, earth and light.
                             </div>
                           </div><!-- /.box -->
                         </div><!-- /.grid-module-zone-3 -->
@@ -1211,7 +1086,7 @@
 
                       <!-- Zone 4: Create Your Own... -->
                       <div class="grid-module-zone-4">
-                        <h3>Create your own wet zone</h3>
+                        <h3>Create your own outdoor</h3>
                         <div class="row">
                           <div class="col-md-7">
                             <figure class="image">

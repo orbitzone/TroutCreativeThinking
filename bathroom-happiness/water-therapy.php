@@ -339,42 +339,42 @@
                         <!-- Slides -->
                         <div class="slide">
                           <figure class="image">
-                            <img src="images/water_therapy/wet-zone/showering-slider-wet-zone-01.jpg" alt="Wet Zone">
+                            <img src="images/water_therapy/showering/wet-zone/showering-slider-wet-zone-01.jpg" alt="Wet Zone">
                           </figure>
                         </div><!-- /.slide -->
                         <div class="slide">
                           <figure class="image">
-                            <img src="images/water_therapy/wet-zone/showering-slider-wet-zone-02.jpg" alt="Wet Zone">
+                            <img src="images/water_therapy/showering/wet-zone/showering-slider-wet-zone-02.jpg" alt="Wet Zone">
                           </figure>
                         </div><!-- /.slide -->
                         <div class="slide">
                           <figure class="image">
-                            <img src="images/water_therapy/wet-zone/showering-slider-wet-zone-03.jpg" alt="Wet Zone">
+                            <img src="images/water_therapy/showering/wet-zone/showering-slider-wet-zone-03.jpg" alt="Wet Zone">
                           </figure>
                         </div><!-- /.slide -->
                         <div class="slide">
                           <figure class="image">
-                            <img src="images/water_therapy/wet-zone/showering-slider-wet-zone-04.jpg" alt="Wet Zone">
+                            <img src="images/water_therapy/showering/wet-zone/showering-slider-wet-zone-04.jpg" alt="Wet Zone">
                           </figure>
                         </div><!-- /.slide -->
                         <div class="slide">
                           <figure class="image">
-                            <img src="images/water_therapy/wet-zone/showering-slider-wet-zone-05.jpg" alt="Wet Zone">
+                            <img src="images/water_therapy/showering/wet-zone/showering-slider-wet-zone-05.jpg" alt="Wet Zone">
                           </figure>
                         </div><!-- /.slide -->
                         <div class="slide">
                           <figure class="image">
-                            <img src="images/water_therapy/wet-zone/showering-slider-wet-zone-06.jpg" alt="Wet Zone">
+                            <img src="images/water_therapy/showering/wet-zone/showering-slider-wet-zone-06.jpg" alt="Wet Zone">
                           </figure>
                         </div><!-- /.slide -->
                         <div class="slide">
                           <figure class="image">
-                            <img src="images/water_therapy/wet-zone/showering-slider-wet-zone-07.jpg" alt="Wet Zone">
+                            <img src="images/water_therapy/showering/wet-zone/showering-slider-wet-zone-07.jpg" alt="Wet Zone">
                           </figure>
                         </div><!-- /.slide -->
                         <div class="slide">
                           <figure class="image">
-                            <img src="images/water_therapy/wet-zone/showering-slider-wet-zone-08.jpg" alt="Wet Zone">
+                            <img src="images/water_therapy/showering/wet-zone/showering-slider-wet-zone-08.jpg" alt="Wet Zone">
                           </figure>
                         </div><!-- /.slide -->
                       </div><!-- /.grid-module-slider -->
@@ -399,7 +399,7 @@
                       <div class="grid-module-zone-wrap">
 
                         <!-- Zone 3: Text with bg and border-->
-                        <div class="grid-module-zone-3" style="background-image: url(images/water_therapy/wet-zone/showering-wet-zone-incidental-02.jpg);">
+                        <div class="grid-module-zone-3" style="background-image: url(images/water_therapy/showering/wet-zone/showering-wet-zone-incidental-02.jpg);">
                           <div class="box-border"></div>
                           <div class="box">
                             <div class="text">
@@ -583,7 +583,7 @@
                         <!-- Slides -->
                         <div class="slide">
                           <figure class="image">
-                            <img src="images/water_therapy/enclosed/showering-slider-enclosed-01.jpg" alt="Enclosed">
+                            <img src="images/water_therapy/showering/enclosed/showering-slider-enclosed-01.jpg" alt="Enclosed">
                           </figure>
                         </div><!-- /.slide -->                        
                       </div><!-- /.grid-module-slider -->
@@ -597,7 +597,7 @@
                       <div class="grid-module-zone-wrap">
 
                         <!-- Zone 2: Title and image -->
-                        <div class="grid-module-zone-2" style="background-image: url(images/water_therapy/enclosed/showering-enclosed-incidental-01.jpg);">
+                        <div class="grid-module-zone-2" style="background-image: url(images/water_therapy/showering/enclosed/showering-enclosed-incidental-01.jpg);">
                           <div class="box">
                             <h3>Escape</h3>
                           </div>
@@ -608,7 +608,7 @@
                       <div class="grid-module-zone-wrap">
 
                         <!-- Zone 3: Text with bg and border-->
-                        <div class="grid-module-zone-3" style="background-image: url(images/water_therapy/enclosed/showering-enclosed-incidental-02.jpg);">
+                        <div class="grid-module-zone-3" style="background-image: url(images/water_therapy/showering/enclosed/showering-enclosed-incidental-02.jpg);">
                           <div class="box-border"></div>
                           <div class="box">
                             <div class="text">
@@ -792,22 +792,22 @@
                         <!-- Slides -->
                         <div class="slide">
                           <figure class="image">
-                            <img src="images/water_therapy/double/showering-slider-double-01.jpg" alt="Double">
+                            <img src="images/water_therapy/showering/double/showering-slider-double-01.jpg" alt="Double">
                           </figure>
                         </div><!-- /.slide -->
                         <div class="slide">
                           <figure class="image">
-                            <img src="images/water_therapy/double/showering-slider-double-02.jpg" alt="Double">
+                            <img src="images/water_therapy/showering/double/showering-slider-double-02.jpg" alt="Double">
                           </figure>
                         </div><!-- /.slide -->
                         <div class="slide">
                           <figure class="image">
-                            <img src="images/water_therapy/double/showering-slider-double-03.jpg" alt="Double">
+                            <img src="images/water_therapy/showering/double/showering-slider-double-03.jpg" alt="Double">
                           </figure>
                         </div><!-- /.slide -->
                         <div class="slide">
                           <figure class="image">
-                            <img src="images/water_therapy/double/showering-slider-double-04.jpg" alt="Double">
+                            <img src="images/water_therapy/showering/double/showering-slider-double-04.jpg" alt="Double">
                           </figure>
                         </div><!-- /.slide -->
                       </div><!-- /.grid-module-slider -->
@@ -821,7 +821,7 @@
                       <div class="grid-module-zone-wrap">
 
                         <!-- Zone 2: Title and image -->
-                        <div class="grid-module-zone-2" style="background-image: url(images/water_therapy/double/showering-double-incidental-01.jpg);">
+                        <div class="grid-module-zone-2" style="background-image: url(images/water_therapy/showering/double/showering-double-incidental-01.jpg);">
                           <div class="box">
                             <h3>Enrich</h3>
                           </div>
@@ -832,7 +832,7 @@
                       <div class="grid-module-zone-wrap">
 
                         <!-- Zone 3: Text with bg and border-->
-                        <div class="grid-module-zone-3" style="background-image: url(images/water_therapy/double/showering-double-incidental-02.jpg);">
+                        <div class="grid-module-zone-3" style="background-image: url(images/water_therapy/showering/double/showering-double-incidental-02.jpg);">
                           <div class="box-border"></div>
                           <div class="box">
                             <div class="text">
@@ -1017,27 +1017,27 @@
                         <!-- Slides -->
                         <div class="slide">
                           <figure class="image">
-                            <img src="images/water_therapy/outdoor/showering-slider-outdoor-01.jpg" alt="Outdoor">
+                            <img src="images/water_therapy/showering/outdoor/showering-slider-outdoor-01.jpg" alt="Outdoor">
                           </figure>
                         </div><!-- /.slide -->
                         <div class="slide">
                           <figure class="image">
-                            <img src="images/water_therapy/outdoor/showering-slider-outdoor-02.jpg" alt="Outdoor">
+                            <img src="images/water_therapy/showering/outdoor/showering-slider-outdoor-02.jpg" alt="Outdoor">
                           </figure>
                         </div><!-- /.slide -->
                         <div class="slide">
                           <figure class="image">
-                            <img src="images/water_therapy/outdoor/showering-slider-outdoor-03.jpg" alt="Outdoor">
+                            <img src="images/water_therapy/showering/outdoor/showering-slider-outdoor-03.jpg" alt="Outdoor">
                           </figure>
                         </div><!-- /.slide -->
                         <div class="slide">
                           <figure class="image">
-                            <img src="images/water_therapy/outdoor/showering-slider-outdoor-04.jpg" alt="Outdoor">
+                            <img src="images/water_therapy/showering/outdoor/showering-slider-outdoor-04.jpg" alt="Outdoor">
                           </figure>
                         </div><!-- /.slide -->
                         <div class="slide">
                           <figure class="image">
-                            <img src="images/water_therapy/outdoor/showering-slider-outdoor-05.jpg" alt="Outdoor">
+                            <img src="images/water_therapy/showering/outdoor/showering-slider-outdoor-05.jpg" alt="Outdoor">
                           </figure>
                         </div><!-- /.slide -->
                       </div><!-- /.grid-module-slider -->
@@ -1051,7 +1051,7 @@
                       <div class="grid-module-zone-wrap">
 
                         <!-- Zone 2: Title and image -->
-                        <div class="grid-module-zone-2" style="background-image: url(images/water_therapy/outdoor/showering-outdoor-incidental-01.jpg);">
+                        <div class="grid-module-zone-2" style="background-image: url(images/water_therapy/showering/outdoor/showering-outdoor-incidental-01.jpg);">
                           <div class="box">
                             <h3>Freedom</h3>
                           </div>
@@ -1062,7 +1062,7 @@
                       <div class="grid-module-zone-wrap">
 
                         <!-- Zone 3: Text with bg and border-->
-                        <div class="grid-module-zone-3" style="background-image: url(images/water_therapy/outdoor/showering-outdoor-incidental-02.jpg);">
+                        <div class="grid-module-zone-3" style="background-image: url(images/water_therapy/showering/outdoor/showering-outdoor-incidental-02.jpg);">
                           <div class="box-border"></div>
                           <div class="box">
                             <div class="text">

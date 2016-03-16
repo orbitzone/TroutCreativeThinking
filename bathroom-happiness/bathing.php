@@ -88,32 +88,32 @@
                   <!-- Slides -->
                   <div class="slide">
                     <figure class="image">
-                      <img src="images/water_therapy/bathing/freestanding/bathing-slider-freestanding-01.png" alt="bathing freestanding 01">
+                      <img src="images/water_therapy/bathing/freestanding/bathing-slider-freestanding-01.jpg" alt="bathing freestanding 01">
                     </figure>
                   </div><!-- /.slide -->
                   <div class="slide">
                     <figure class="image">
-                      <img src="images/water_therapy/bathing/freestanding/bathing-slider-freestanding-02.png" alt="bathing freestanding 02">
+                      <img src="images/water_therapy/bathing/freestanding/bathing-slider-freestanding-02.jpg" alt="bathing freestanding 02">
                     </figure>
                   </div><!-- /.slide -->
                   <div class="slide">
                     <figure class="image">
-                      <img src="images/water_therapy/bathing/freestanding/bathing-slider-freestanding-03.png" alt="bathing freestanding 03">
+                      <img src="images/water_therapy/bathing/freestanding/bathing-slider-freestanding-03.jpg" alt="bathing freestanding 03">
                     </figure>
                   </div><!-- /.slide -->
                     <div class="slide">
                         <figure class="image">
-                            <img src="images/water_therapy/bathing/freestanding/bathing-slider-freestanding-04.png" alt="bathing freestanding 04">
+                            <img src="images/water_therapy/bathing/freestanding/bathing-slider-freestanding-04.jpg" alt="bathing freestanding 04">
                         </figure>
                     </div><!-- /.slide -->
                     <div class="slide">
                         <figure class="image">
-                            <img src="images/water_therapy/bathing/freestanding/bathing-slider-freestanding-05.png" alt="bathing freestanding 05">
+                            <img src="images/water_therapy/bathing/freestanding/bathing-slider-freestanding-05.jpg" alt="bathing freestanding 05">
                         </figure>
                     </div><!-- /.slide -->
                     <div class="slide">
                         <figure class="image">
-                            <img src="images/water_therapy/bathing/freestanding/bathing-slider-freestanding-06.png" alt="bathing freestanding 06">
+                            <img src="images/water_therapy/bathing/freestanding/bathing-slider-freestanding-06.jpg" alt="bathing freestanding 06">
                         </figure>
                     </div><!-- /.slide -->
                 </div><!-- /.grid-module-slider -->
@@ -229,32 +229,32 @@
                   <!-- Slides -->
                   <div class="slide">
                     <figure class="image">
-                      <img src="images/water_therapy/bathing/inset/bathing-slider-inset-01.png" alt="bathing inset 01">
+                      <img src="images/water_therapy/bathing/inset/bathing-slider-inset-01.jpg" alt="bathing inset 01">
                     </figure>
                   </div><!-- /.slide -->
                   <div class="slide">
                     <figure class="image">
-                        <img src="images/water_therapy/bathing/inset/bathing-slider-inset-02.png" alt="bathing inset 02">
+                        <img src="images/water_therapy/bathing/inset/bathing-slider-inset-02.jpg" alt="bathing inset 02">
                     </figure>
                   </div><!-- /.slide -->
                   <div class="slide">
                     <figure class="image">
-                        <img src="images/water_therapy/bathing/inset/bathing-slider-inset-03.png" alt="bathing inset 03">
+                        <img src="images/water_therapy/bathing/inset/bathing-slider-inset-03.jpg" alt="bathing inset 03">
                     </figure>
                   </div><!-- /.slide -->
                     <div class="slide">
                         <figure class="image">
-                            <img src="images/water_therapy/bathing/inset/bathing-slider-inset-04.png" alt="bathing inset 04">
+                            <img src="images/water_therapy/bathing/inset/bathing-slider-inset-04.jpg" alt="bathing inset 04">
                         </figure>
                     </div><!-- /.slide -->
                     <div class="slide">
                         <figure class="image">
-                            <img src="images/water_therapy/bathing/inset/bathing-slider-inset-05.png" alt="bathing inset 05">
+                            <img src="images/water_therapy/bathing/inset/bathing-slider-inset-05.jpg" alt="bathing inset 05">
                         </figure>
                     </div><!-- /.slide -->
                     <div class="slide">
                         <figure class="image">
-                            <img src="images/water_therapy/bathing/inset/bathing-slider-inset-06.png" alt="bathing inset 06">
+                            <img src="images/water_therapy/bathing/inset/bathing-slider-inset-06.jpg" alt="bathing inset 06">
                         </figure>
                     </div><!-- /.slide -->
                 </div><!-- /.grid-module-slider -->
@@ -370,42 +370,42 @@
                   <!-- Slides -->
                   <div class="slide">
                     <figure class="image">
-                      <img src="images/water_therapy/bathing/looks/bathing-slider-looks-01.png" alt="bathing looks 01 ">
+                      <img src="images/water_therapy/bathing/looks/bathing-slider-looks-01.jpg" alt="bathing looks 01 ">
                     </figure>
                   </div><!-- /.slide -->
                   <div class="slide">
                     <figure class="image">
-                        <img src="images/water_therapy/bathing/looks/bathing-slider-looks-02.png" alt="bathing looks 02 ">
+                        <img src="images/water_therapy/bathing/looks/bathing-slider-looks-02.jpg" alt="bathing looks 02 ">
                     </figure>
                   </div><!-- /.slide -->
                   <div class="slide">
                     <figure class="image">
-                        <img src="images/water_therapy/bathing/looks/bathing-slider-looks-03.png" alt="bathing looks 03 ">
+                        <img src="images/water_therapy/bathing/looks/bathing-slider-looks-03.jpg" alt="bathing looks 03 ">
                     </figure>
                   </div><!-- /.slide -->
                     <div class="slide">
                         <figure class="image">
-                            <img src="images/water_therapy/bathing/looks/bathing-slider-looks-04.png" alt="bathing looks 04 ">
+                            <img src="images/water_therapy/bathing/looks/bathing-slider-looks-04.jpg" alt="bathing looks 04 ">
                         </figure>
                     </div><!-- /.slide -->
                     <div class="slide">
                         <figure class="image">
-                            <img src="images/water_therapy/bathing/looks/bathing-slider-looks-05.png" alt="bathing looks 05 ">
+                            <img src="images/water_therapy/bathing/looks/bathing-slider-looks-05.jpg" alt="bathing looks 05 ">
                         </figure>
                     </div><!-- /.slide -->
                     <div class="slide">
                         <figure class="image">
-                            <img src="images/water_therapy/bathing/looks/bathing-slider-looks-06.png" alt="bathing looks 06 ">
+                            <img src="images/water_therapy/bathing/looks/bathing-slider-looks-06.jpg" alt="bathing looks 06 ">
                         </figure>
                     </div><!-- /.slide -->
                     <div class="slide">
                         <figure class="image">
-                            <img src="images/water_therapy/bathing/looks/bathing-slider-looks-07.png" alt="bathing looks 07 ">
+                            <img src="images/water_therapy/bathing/looks/bathing-slider-looks-07.jpg" alt="bathing looks 07 ">
                         </figure>
                     </div><!-- /.slide -->
                     <div class="slide">
                         <figure class="image">
-                            <img src="images/water_therapy/bathing/looks/bathing-slider-looks-08.png" alt="bathing looks 08 ">
+                            <img src="images/water_therapy/bathing/looks/bathing-slider-looks-08.jpg" alt="bathing looks 08 ">
                         </figure>
                     </div><!-- /.slide -->
                 </div><!-- /.grid-module-slider -->
@@ -521,32 +521,27 @@
                   <!-- Slides -->
                   <div class="slide">
                     <figure class="image">
-                      <img src="images/water_therapy/bathing/sensory/bathing-slider-sensory-01.png" alt="bathing sensory 01">
+                      <img src="images/water_therapy/bathing/sensory/bathing-slider-sensory-01.jpg" alt="bathing sensory 01">
                     </figure>
                   </div><!-- /.slide -->
                   <div class="slide">
                     <figure class="image">
-                        <img src="images/water_therapy/bathing/sensory/bathing-slider-sensory-02.png" alt="bathing sensory 02">
+                        <img src="images/water_therapy/bathing/sensory/bathing-slider-sensory-02.jpg" alt="bathing sensory 02">
                     </figure>
                   </div><!-- /.slide -->
                   <div class="slide">
                     <figure class="image">
-                        <img src="images/water_therapy/bathing/sensory/bathing-slider-sensory-03.png" alt="bathing sensory 03">
+                        <img src="images/water_therapy/bathing/sensory/bathing-slider-sensory-03.jpg" alt="bathing sensory 03">
                     </figure>
                   </div><!-- /.slide -->
                     <div class="slide">
                         <figure class="image">
-                            <img src="images/water_therapy/bathing/sensory/bathing-slider-sensory-04.png" alt="bathing sensory 04">
+                            <img src="images/water_therapy/bathing/sensory/bathing-slider-sensory-04.jpg" alt="bathing sensory 04">
                         </figure>
                     </div><!-- /.slide -->
                     <div class="slide">
                         <figure class="image">
-                            <img src="images/water_therapy/bathing/sensory/bathing-slider-sensory-05.png" alt="bathing sensory 05">
-                        </figure>
-                    </div><!-- /.slide -->
-                    <div class="slide">
-                        <figure class="image">
-                            <img src="images/water_therapy/bathing/sensory/bathing-slider-sensory-06.png" alt="bathing sensory 06">
+                            <img src="images/water_therapy/bathing/sensory/bathing-slider-sensory-05.jpg" alt="bathing sensory 05">
                         </figure>
                     </div><!-- /.slide -->
                 </div><!-- /.grid-module-slider -->

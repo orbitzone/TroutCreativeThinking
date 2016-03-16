@@ -149,67 +149,126 @@
           </div><!-- /.grid-module-zones-2-3 -->
 
           <!-- Zone 4: Products -->
-          <div class="grid-module-zone-4">
-            <div class="row">
-              <div class="col-xs-12">
-                <h3>Bathroom Freedom</h3>
-                <div class="text">
-                  <p>Bath designs to shape your space.</p>
+          <div class="grid-module-zones-4-5">
+            <div class="grid-module-zone-5">
+              <div class="grid-module-zone-5-content">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <h3>Bathroom Freedom</h3>
+                    <div class="text">
+                      <p>Bath designs to shape your space.</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-4">
-                <div class="product">
-                  <a href="#" target="_blank">
-                    <figure class="image">
-                      <img src="
-                      http://www.reece.com.au/assets/products/820000/9504464/_resampled/SetSize300225-LAUFEN-Solid-Surface-Bath-9504464-hero-2.jpg" alt="Laufen Solid Surface Bath">
-                    </figure>
-                    <div class="product-description">
-                      <h5>LAUFEN Palomba Collection</h5>
-                      <h4>Solid Surface Freestanding Bath</h4>
-                    </div>
-                    <div class="button">
-                      Shop Now
-                    </div>
-                  </a>
-                </div><!-- /.product -->
-              </div>
-              <div class="col-sm-4">
-                <div class="product">
-                  <a href="#" target="_blank">
-                    <figure class="image">
-                      <img src="http://www.reece.com.au/assets/products/143000/1771279/_resampled/SetSize300225-Kaldewei-Vaio-Freestanding-Oval-Bath-1771279-hero-2.jpg" alt="Laufen Solid Surface Bath">
-                    </figure>
-                    <div class="product-description">
-                      <h5>Kaldewei Vaio</h5>
-                      <h4>Freestanding Oval bath</h4>
-                    </div>
-                    <div class="button">
-                      Shop Now
-                    </div>
-                  </a>
-                </div><!-- /.product -->
-              </div>
-              <div class="col-sm-4">
-                <div class="product">
-                  <a href="#" target="_blank">
-                    <figure class="image">
-                      <img src="http://www.reece.com.au/assets/products/142000/9504058/_resampled/SetSize300225-Kado-Lure-1500-Petite-Black-Freestanding-Bath-9504058-hero-1.jpg" alt="Laufen Solid Surface Bath">
-                    </figure>
-                    <div class="product-description">
-                      <h5>Kado Lure</h5>
-                      <h4>1500 Petite Black Freestanding Bath</h4>
-                    </div>
-                    <div class="button">
-                      Shop Now
-                    </div>
-                  </a>
-                </div><!-- /.product -->
-              </div>
-            </div><!-- /.row -->
-          </div><!-- /.grid-module-zones-2-3 -->          
+                <!-- Zone 5, Slider 1 -->
+                <div class="panel panel-slideshow">
+                  <div class="slideshow-container" data-slides="3">
+                    <div class="slide">
+                      <div class="slide-content">
+                        <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
+                          <div class="slide-image">
+                            <img src="http://www.reece.com.au/assets/products/820000/9504464/_resampled/SetSize300225-LAUFEN-Solid-Surface-Bath-9504464-hero-2.jpg" alt="Laufen Solid Surface Bath" />
+                          </div><!-- /.slide-image -->
+                          <div class="slide-text">
+                            <div class="product-name">
+                              LAUFEN Palomba Collection
+                            </div>
+                            <p class="product-description">
+                              Solid Surface Freestanding Bath
+                            </p>
+                            <p class="product-price">
+                              $9264.99 <span class="product-price-gst">gst inc</span>
+                            </p>
+                          </div><!-- /.slide-text -->
+                          <div class="slide-btn-wrap">
+                            <div class="slide-btn">
+                              Shop Now
+                            </div>
+                          </div>
+                        </a>
+                      </div><!-- /.slide-content -->
+                    </div><!-- /.slide -->
+                    <div class="slide">
+                      <div class="slide-content">
+                        <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
+                          <div class="slide-image">
+                            <img src="http://www.reece.com.au/assets/products/143000/1771279/_resampled/SetSize300225-Kaldewei-Vaio-Freestanding-Oval-Bath-1771279-hero-2.jpg" alt="Laufen Solid Surface Bath"/>
+                          </div><!-- /.slide-image -->
+                          <div class="slide-text">
+                            <div class="product-name">
+                              Kaldewei Vaio
+                            </div>
+                            <p class="product-description">
+                              Freestanding Oval bath
+                            </p>
+                            <p class="product-price">
+                              $5487.99 <span class="product-price-gst">gst inc</span>
+                            </p>
+                          </div><!-- /.slide-text -->
+                          <div class="slide-btn-wrap">
+                            <div class="slide-btn">
+                              Shop Now
+                            </div>
+                          </div>
+                        </a>
+                      </div><!-- /.slide-content -->
+                    </div><!-- /.slide -->
+                    <div class="slide">
+                      <div class="slide-content">
+                        <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
+                          <div class="slide-image">
+                            <img src="http://www.reece.com.au/assets/products/142000/9504058/_resampled/SetSize300225-Kado-Lure-1500-Petite-Black-Freestanding-Bath-9504058-hero-1.jpg" alt="Laufen Solid Surface Bath"/>
+                          </div><!-- /.slide-image -->
+                          <div class="slide-text">
+                            <div class="product-name">
+                              Kado Lure
+                            </div>
+                            <p class="product-description">
+                              1500 Petite Black Freestanding Bath
+                            </p>
+                            <p class="product-price">
+                              $1975.00 <span class="product-price-gst">gst inc</span>
+                            </p>
+                          </div><!-- /.slide-text -->
+                          <div class="slide-btn-wrap">
+                            <div class="slide-btn">
+                              Shop Now
+                            </div>
+                          </div>
+                        </a>
+                      </div><!-- /.slide-content -->
+                    </div><!-- /.slide -->
+                    <div class="slide">
+                      <div class="slide-content">
+                        <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
+                          <div class="slide-image">
+                            <img src="http://www.reece.com.au/assets/products/820000/9504631/_resampled/SetSize300225-LAUFEN-Freestanding-Bath-9504631-hero-1.jpg" alt="Laufen Solid Surface Bath" />
+                          </div><!-- /.slide-image -->
+                          <div class="slide-text">
+                            <div class="product-name">
+                              LAUFEN Kartell by Laufen
+                            </div>
+                            <p class="product-description">
+                              1760 Freestanding Bath
+                            </p>
+                            <p class="product-price">
+                              $10248.99 <span class="product-price-gst">gst inc</span>
+                            </p>
+                          </div><!-- /.slide-text -->
+                          <div class="slide-btn-wrap">
+                            <div class="slide-btn">
+                              Shop Now
+                            </div>
+                          </div>
+                        </a>
+                      </div><!-- /.slide-content -->
+                    </div><!-- /.slide -->
+                  </div><!-- /.slideshow-container -->
+                  <div class="slideshow-buttons"></div>                                
+                </div><!-- /.panel-slideshow -->  
+              </div><!-- /.grid-module-zone-5-content -->                                 
+            </div><!-- /.grid-module-zone-5 -->  
+          </div><!-- /.grid-module-zones-4-5 -->                     
         </div><!-- /.grid-module-zones-section-1-->
 
 
@@ -286,67 +345,126 @@
           </div><!-- /.grid-module-zones-2-3 -->
 
           <!-- Zone 4: Products -->
-          <div class="grid-module-zone-4">
-            <div class="row">
-              <div class="col-xs-12">
-                <h3>Bathroom Freedom</h3>
-                <div class="text">
-                  <p>Statement about freestanding bathroom styles.</p>
+          <div class="grid-module-zones-4-5">
+            <div class="grid-module-zone-5">
+              <div class="grid-module-zone-5-content">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <h3>Bathroom Inset</h3>
+                    <div class="text">
+                      <p>Statement about freestanding bathroom styles.</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-4">
-                <div class="product">
-                  <a href="#" target="_blank">
-                    <figure class="image">
-                      <img src="
-                      http://www.reece.com.au/assets/products/820000/9504464/_resampled/SetSize300225-LAUFEN-Solid-Surface-Bath-9504464-hero-2.jpg" alt="Laufen Solid Surface Bath">
-                    </figure>
-                    <div class="product-description">
-                      <h5>LAUFEN Palomba Collection</h5>
-                      <h4>Solid Surface Freestanding Bath</h4>
-                    </div>
-                    <div class="button">
-                      Shop Now
-                    </div>
-                  </a>
-                </div><!-- /.product -->
-              </div>
-              <div class="col-sm-4">
-                <div class="product">
-                  <a href="#" target="_blank">
-                    <figure class="image">
-                      <img src="http://www.reece.com.au/assets/products/143000/1771279/_resampled/SetSize300225-Kaldewei-Vaio-Freestanding-Oval-Bath-1771279-hero-2.jpg" alt="Laufen Solid Surface Bath">
-                    </figure>
-                    <div class="product-description">
-                      <h5>Kaldewei Vaio</h5>
-                      <h4>Freestanding Oval bath</h4>
-                    </div>
-                    <div class="button">
-                      Shop Now
-                    </div>
-                  </a>
-                </div><!-- /.product -->
-              </div>
-              <div class="col-sm-4">
-                <div class="product">
-                  <a href="#" target="_blank">
-                    <figure class="image">
-                      <img src="http://www.reece.com.au/assets/products/142000/9504058/_resampled/SetSize300225-Kado-Lure-1500-Petite-Black-Freestanding-Bath-9504058-hero-1.jpg" alt="Laufen Solid Surface Bath">
-                    </figure>
-                    <div class="product-description">
-                      <h5>Kado Lure</h5>
-                      <h4>1500 Petite Black Freestanding Bath</h4>
-                    </div>
-                    <div class="button">
-                      Shop Now
-                    </div>
-                  </a>
-                </div><!-- /.product -->
-              </div>
-            </div><!-- /.row -->
-          </div><!-- /.grid-module-zones-2-3 -->          
+                <!-- Zone 5, Slider 1 -->
+                <div class="panel panel-slideshow">
+                  <div class="slideshow-container" data-slides="3">
+                    <div class="slide">
+                      <div class="slide-content">
+                        <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
+                          <div class="slide-image">
+                            <img src="http://www.reece.com.au/assets/products/820000/9504464/_resampled/SetSize300225-LAUFEN-Solid-Surface-Bath-9504464-hero-2.jpg" alt="Laufen Solid Surface Bath" />
+                          </div><!-- /.slide-image -->
+                          <div class="slide-text">
+                            <div class="product-name">
+                              LAUFEN Palomba Collection
+                            </div>
+                            <p class="product-description">
+                              Solid Surface Freestanding Bath
+                            </p>
+                            <p class="product-price">
+                              $9264.99 <span class="product-price-gst">gst inc</span>
+                            </p>
+                          </div><!-- /.slide-text -->
+                          <div class="slide-btn-wrap">
+                            <div class="slide-btn">
+                              Shop Now
+                            </div>
+                          </div>
+                        </a>
+                      </div><!-- /.slide-content -->
+                    </div><!-- /.slide -->
+                    <div class="slide">
+                      <div class="slide-content">
+                        <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
+                          <div class="slide-image">
+                            <img src="http://www.reece.com.au/assets/products/143000/1771279/_resampled/SetSize300225-Kaldewei-Vaio-Freestanding-Oval-Bath-1771279-hero-2.jpg" alt="Laufen Solid Surface Bath"/>
+                          </div><!-- /.slide-image -->
+                          <div class="slide-text">
+                            <div class="product-name">
+                              Kaldewei Vaio
+                            </div>
+                            <p class="product-description">
+                              Freestanding Oval bath
+                            </p>
+                            <p class="product-price">
+                              $5487.99 <span class="product-price-gst">gst inc</span>
+                            </p>
+                          </div><!-- /.slide-text -->
+                          <div class="slide-btn-wrap">
+                            <div class="slide-btn">
+                              Shop Now
+                            </div>
+                          </div>
+                        </a>
+                      </div><!-- /.slide-content -->
+                    </div><!-- /.slide -->
+                    <div class="slide">
+                      <div class="slide-content">
+                        <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
+                          <div class="slide-image">
+                            <img src="http://www.reece.com.au/assets/products/142000/9504058/_resampled/SetSize300225-Kado-Lure-1500-Petite-Black-Freestanding-Bath-9504058-hero-1.jpg" alt="Laufen Solid Surface Bath"/>
+                          </div><!-- /.slide-image -->
+                          <div class="slide-text">
+                            <div class="product-name">
+                              Kado Lure
+                            </div>
+                            <p class="product-description">
+                              1500 Petite Black Freestanding Bath
+                            </p>
+                            <p class="product-price">
+                              $1975.00 <span class="product-price-gst">gst inc</span>
+                            </p>
+                          </div><!-- /.slide-text -->
+                          <div class="slide-btn-wrap">
+                            <div class="slide-btn">
+                              Shop Now
+                            </div>
+                          </div>
+                        </a>
+                      </div><!-- /.slide-content -->
+                    </div><!-- /.slide -->
+                    <div class="slide">
+                      <div class="slide-content">
+                        <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
+                          <div class="slide-image">
+                            <img src="http://www.reece.com.au/assets/products/820000/9504631/_resampled/SetSize300225-LAUFEN-Freestanding-Bath-9504631-hero-1.jpg" alt="Laufen Solid Surface Bath" />
+                          </div><!-- /.slide-image -->
+                          <div class="slide-text">
+                            <div class="product-name">
+                              LAUFEN Kartell by Laufen
+                            </div>
+                            <p class="product-description">
+                              1760 Freestanding Bath
+                            </p>
+                            <p class="product-price">
+                              $10248.99 <span class="product-price-gst">gst inc</span>
+                            </p>
+                          </div><!-- /.slide-text -->
+                          <div class="slide-btn-wrap">
+                            <div class="slide-btn">
+                              Shop Now
+                            </div>
+                          </div>
+                        </a>
+                      </div><!-- /.slide-content -->
+                    </div><!-- /.slide -->
+                  </div><!-- /.slideshow-container -->
+                  <div class="slideshow-buttons"></div>                                
+                </div><!-- /.panel-slideshow -->  
+              </div><!-- /.grid-module-zone-5-content -->                                 
+            </div><!-- /.grid-module-zone-5 -->  
+          </div><!-- /.grid-module-zones-4-5 -->                   
         </div><!-- /.grid-module-zones-section-2-->
 
 

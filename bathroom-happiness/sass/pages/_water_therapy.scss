@@ -848,6 +848,12 @@ body.water-therapy{
 							@include transition(1s all ease-out);
 						}
 					}
+					.grid-module-zone-4,
+					.grid-module-zone-5,
+					{
+						opacity: 0;
+						@include transform(translateX(100%));
+					}
 					&.current{
 						//opacity: 1;
 						z-index: 1;
@@ -879,6 +885,12 @@ body.water-therapy{
 								opacity: 1;
 								@include animation(none);
 							}
+						}
+						.grid-module-zone-4,
+						.grid-module-zone-5,
+						{
+							opacity: 1;
+							@include transform(translateX(0));
 						}
 					}
 				}
@@ -1062,6 +1074,9 @@ body.water-therapy{
 						}
 						.slide-image{
 							margin-bottom: 10px;
+							img{
+								height: 180px;
+							}
 						}
 						.slide-text{
 							margin-bottom: 30px;

@@ -362,21 +362,6 @@
                             <img src="images/water_therapy/showering/wet-zone/showering-slider-wet-zone-05.jpg" alt="Wet Zone">
                           </figure>
                         </div><!-- /.slide -->
-                        <div class="slide">
-                          <figure class="image">
-                            <img src="images/water_therapy/showering/wet-zone/showering-slider-wet-zone-06.jpg" alt="Wet Zone">
-                          </figure>
-                        </div><!-- /.slide -->
-                        <div class="slide">
-                          <figure class="image">
-                            <img src="images/water_therapy/showering/wet-zone/showering-slider-wet-zone-07.jpg" alt="Wet Zone">
-                          </figure>
-                        </div><!-- /.slide -->
-                        <div class="slide">
-                          <figure class="image">
-                            <img src="images/water_therapy/showering/wet-zone/showering-slider-wet-zone-08.jpg" alt="Wet Zone">
-                          </figure>
-                        </div><!-- /.slide -->
                       </div><!-- /.grid-module-slider -->
                       <div class="showering-slider-buttons slideshow-buttons"></div>
                     </div><!-- /.panel-slideshow -->
@@ -388,7 +373,7 @@
                       <div class="grid-module-zone-wrap">
 
                         <!-- Zone 2: Title and image -->
-                        <div class="grid-module-zone-2" style="background-image: url(images/water_therapy/showering-zone-2.jpg);">
+                        <div class="grid-module-zone-2" style="background-image: url(images/water_therapy/showering/wet-zone/showering-wet-zone-incidental-01.jpg);">
                           <div class="box">
                             <h3>Awaken</h3>
                           </div>
@@ -622,161 +607,117 @@
                 </div><!-- /.grid-module-zones-2-3 -->
 
                 <div class="grid-module-zones-4-5">
-                  <div class="row">
-                    <div class="col-sm-6">
-
-                      <!-- Zone 4: Create Your Own... -->
-                      <div class="grid-module-zone-4">
-                        <h3>Create your own enclosed</h3>
-                        <div class="row">
-                          <div class="col-md-7">
-                            <figure class="image">
-                              <img src="images/water_therapy/showering-zone-4.jpg" alt="Showering"/>
-                            </figure>
-                          </div>
-                          <div class="col-md-5">
-                            <div class="text">
-                              <p>Statement to reference the different style of wet zone layouts.</p>
-                              <p><h4>TIPS FOR WET ZONE</h4>
-                              - Allow for drainage
-                              <br/>- Choosing the right tiles
-                              <br/>- Introducing light
-                              </p>
-                              <p><a href="http://www.reece.com.au/bathrooms/3d-bathroom-planner" target="_blank" class="btn">Plan in 3D</a></p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-
-                      <!-- Zone 5: Products Sliders -->
-                      <div class="grid-module-zone-5">
-                        <div class="grid-module-zone-5-content">
-                          <div class="row">
-                            <div class="col-md-6">
-
-                              <!-- Zone 5, Slider 1 -->
-                              <div class="panel panel-slideshow">
-                                <div class="slideshow-container">
-                                  <div class="slide">
-                                    <div class="slide-content">
-                                      <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
-                                        <div class="slide-image">
-                                          <img src="images/products/milli-axon-mixer.jpg" alt="Milli Axon Basin Mixer" />
-                                        </div><!-- /.slide-image -->
-                                        <div class="slide-text">
-                                          <div class="product-name">
-                                            Milli Axon
-                                          </div>
-                                          <p class="product-description">
-                                            Basin Mixer Rose Gold/Black
-                                          </p>
-                                          <p class="product-price">
-                                            $699.99 <span class="product-price-gst">gst inc</span>
-                                          </p>
-                                        </div><!-- /.slide-text -->
-                                        <div class="slide-btn-wrap">
-                                          <div class="slide-btn">
-                                            Shop Now
-                                          </div>
-                                        </div>
-                                      </a>
-                                    </div><!-- /.slide-content -->
-                                  </div><!-- /.slide -->
-                                  <div class="slide">
-                                    <div class="slide-content">
-                                      <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
-                                        <div class="slide-image">
-                                          <img src="images/products/milli-axon-mixer.jpg" alt="Milli Axon Basin Mixer" />
-                                        </div><!-- /.slide-image -->
-                                        <div class="slide-text">
-                                          <div class="product-name">
-                                            Milli Axon
-                                          </div>
-                                          <p class="product-description">
-                                            Basin Mixer Rose Gold/Black
-                                          </p>
-                                          <p class="product-price">
-                                            $699.99 <span class="product-price-gst">gst inc</span>
-                                          </p>
-                                        </div><!-- /.slide-text -->
-                                        <div class="slide-btn-wrap">
-                                          <div class="slide-btn">
-                                            Shop Now
-                                          </div>
-                                        </div>
-                                      </a>
-                                    </div><!-- /.slide-content -->
-                                  </div><!-- /.slide -->
-                                </div><!-- /.slideshow-container -->
-                                <div class="slideshow-buttons"></div>                                
-                              </div><!-- /.panle-slideshow -->  
-                            </div>
-                            <div class="col-md-6">
-
-                              <!-- Zone 5, Slider 2 -->
-                              <div class="panel panel-slideshow">
-                                <div class="slideshow-container">
-                                  <div class="slide">
-                                    <div class="slide-content">
-                                      <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
-                                        <div class="slide-image">
-                                          <img src="images/products/milli-axon-mixer.jpg" alt="Milli Axon Basin Mixer" />
-                                        </div><!-- /.slide-image -->
-                                        <div class="slide-text">
-                                          <div class="product-name">
-                                            Milli Axon
-                                          </div>
-                                          <p class="product-description">
-                                            Basin Mixer Rose Gold/Black
-                                          </p>
-                                          <p class="product-price">
-                                            $699.99 <span class="product-price-gst">gst inc</span>
-                                          </p>
-                                        </div><!-- /.slide-text -->
-                                        <div class="slide-btn-wrap">
-                                          <div class="slide-btn">
-                                            Shop Now
-                                          </div>
-                                        </div>
-                                      </a>
-                                    </div><!-- /.slide-content -->
-                                  </div><!-- /.slide -->
-                                  <div class="slide">
-                                    <div class="slide-content">
-                                      <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
-                                        <div class="slide-image">
-                                          <img src="images/products/milli-axon-mixer.jpg" alt="Milli Axon Basin Mixer" />
-                                        </div><!-- /.slide-image -->
-                                        <div class="slide-text">
-                                          <div class="product-name">
-                                            Milli Axon
-                                          </div>
-                                          <p class="product-description">
-                                            Basin Mixer Rose Gold/Black
-                                          </p>
-                                          <p class="product-price">
-                                            $699.99 <span class="product-price-gst">gst inc</span>
-                                          </p>
-                                        </div><!-- /.slide-text -->
-                                        <div class="slide-btn-wrap">
-                                          <div class="slide-btn">
-                                            Shop Now
-                                          </div>
-                                        </div>
-                                      </a>
-                                    </div><!-- /.slide-content -->
-                                  </div><!-- /.slide -->
-                                </div><!-- /.slideshow-container -->
-                                <div class="slideshow-buttons"></div>                                
-                              </div><!-- /.panel-slideshow -->
-                            </div><!-- /.col-md-6 -->
-                          </div><!-- /.row -->
-                        </div><!-- /.grid-module-zone-5-content -->                                 
-                      </div><!-- /.grid-module-zone-5 -->                                 
-                    </div><!-- /.col-sm-6 -->
-                  </div><!-- /.row -->
+                  <!-- Zone 5: Products Sliders -->
+                  <div class="grid-module-zone-5">
+                    <div class="grid-module-zone-5-content">
+                      <!-- Zone 5, Slider 1 -->
+                      <div class="panel panel-slideshow">
+                        <div class="slideshow-container" data-slides="3">
+                          <div class="slide">
+                            <div class="slide-content">
+                              <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
+                                <div class="slide-image">
+                                  <img src="images/products/cibo-tasca-900-Slimline-Wall-Hung-Vanity-Unit.jpg" alt="Milli Axon Basin Mixer" />
+                                </div><!-- /.slide-image -->
+                                <div class="slide-text">
+                                  <div class="product-name">
+                                    CIBO Tasca
+                                  </div>
+                                  <p class="product-description">
+                                    900 Slimline Wall Hung Vanity Unit
+                                  </p>
+                                  <p class="product-price">
+                                    $2190.99 <span class="product-price-gst">gst inc</span>
+                                  </p>
+                                </div><!-- /.slide-text -->
+                                <div class="slide-btn-wrap">
+                                  <div class="slide-btn">
+                                    Shop Now
+                                  </div>
+                                </div>
+                              </a>
+                            </div><!-- /.slide-content -->
+                          </div><!-- /.slide -->
+                          <div class="slide">
+                            <div class="slide-content">
+                              <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
+                                <div class="slide-image">
+                                  <img src="images/products/SetSize300225-Nikles-Pure-Overhead-Shower-9502442-hero-1.jpg" alt="Milli Axon Basin Mixer" />
+                                </div><!-- /.slide-image -->
+                                <div class="slide-text">
+                                  <div class="product-name">
+                                    Nikles Pure
+                                  </div>
+                                  <p class="product-description">
+                                    Overhead Shower
+                                  </p>
+                                  <p class="product-price">
+                                    $193.00 <span class="product-price-gst">gst inc</span>
+                                  </p>
+                                </div><!-- /.slide-text -->
+                                <div class="slide-btn-wrap">
+                                  <div class="slide-btn">
+                                    Shop Now
+                                  </div>
+                                </div>
+                              </a>
+                            </div><!-- /.slide-content -->
+                          </div><!-- /.slide -->
+                          <div class="slide">
+                            <div class="slide-content">
+                              <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
+                                <div class="slide-image">
+                                  <img src="images/products/SetSize300225-Shower-Mixer-9503815-hero-1.jpg" alt="Milli Axon Basin Mixer" />
+                                </div><!-- /.slide-image -->
+                                <div class="slide-text">
+                                  <div class="product-name">
+                                    Mizu Bliss
+                                  </div>
+                                  <p class="product-description">
+                                    Shower Mixer
+                                  </p>
+                                  <p class="product-price">
+                                    $161.99 <span class="product-price-gst">gst inc</span>
+                                  </p>
+                                </div><!-- /.slide-text -->
+                                <div class="slide-btn-wrap">
+                                  <div class="slide-btn">
+                                    Shop Now
+                                  </div>
+                                </div>
+                              </a>
+                            </div><!-- /.slide-content -->
+                          </div><!-- /.slide -->
+                          <div class="slide">
+                            <div class="slide-content">
+                              <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
+                                <div class="slide-image">
+                                  <img src="http://www.reece.com.au/assets/products/9502957/_resampled/SetSize300225-ShowerBath-Mixer-9502957-hero-1.jpg" alt="Milli Axon Basin Mixer" />
+                                </div><!-- /.slide-image -->
+                                <div class="slide-text">
+                                  <div class="product-name">
+                                    Mizu Drift
+                                  </div>
+                                  <p class="product-description">
+                                    Shower/Bath Mixer
+                                  </p>
+                                  <p class="product-price">
+                                    $174.99 <span class="product-price-gst">gst inc</span>
+                                  </p>
+                                </div><!-- /.slide-text -->
+                                <div class="slide-btn-wrap">
+                                  <div class="slide-btn">
+                                    Shop Now
+                                  </div>
+                                </div>
+                              </a>
+                            </div><!-- /.slide-content -->
+                          </div><!-- /.slide -->
+                        </div><!-- /.slideshow-container -->
+                        <div class="slideshow-buttons"></div>                                
+                      </div><!-- /.panel-slideshow -->  
+                    </div><!-- /.grid-module-zone-5-content -->                                 
+                  </div><!-- /.grid-module-zone-5 -->                                 
                 </div><!-- /.grid-module-zones-4-5 -->     
               </div><!-- /.grid-module-zones-section-2 -->
 
@@ -803,11 +744,6 @@
                         <div class="slide">
                           <figure class="image">
                             <img src="images/water_therapy/showering/double/showering-slider-double-03.jpg" alt="Double">
-                          </figure>
-                        </div><!-- /.slide -->
-                        <div class="slide">
-                          <figure class="image">
-                            <img src="images/water_therapy/showering/double/showering-slider-double-04.jpg" alt="Double">
                           </figure>
                         </div><!-- /.slide -->
                       </div><!-- /.grid-module-slider -->
@@ -846,162 +782,118 @@
                 </div><!-- /.grid-module-zones-2-3 -->
 
                 <div class="grid-module-zones-4-5">
-                  <div class="row">
-                    <div class="col-sm-6">
-
-                      <!-- Zone 4: Create Your Own... -->
-                      <div class="grid-module-zone-4">
-                        <h3>Create your own double</h3>
-                        <div class="row">
-                          <div class="col-md-7">
-                            <figure class="image">
-                              <img src="images/water_therapy/showering-zone-4.jpg" alt="Showering"/>
-                            </figure>
-                          </div>
-                          <div class="col-md-5">
-                            <div class="text">
-                              <p>Statement to reference the different style of wet zone layouts.</p>
-                              <p><h4>TIPS FOR WET ZONE</h4>
-                              - Allow for drainage
-                              <br/>- Choosing the right tiles
-                              <br/>- Introducing light
-                              </p>
-                              <p><a href="http://www.reece.com.au/bathrooms/3d-bathroom-planner" target="_blank" class="btn">Plan in 3D</a></p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-
-                      <!-- Zone 5: Products Sliders -->
-                      <div class="grid-module-zone-5">
-                        <div class="grid-module-zone-5-content">
-                          <div class="row">
-                            <div class="col-md-6">
-
-                              <!-- Zone 5, Slider 1 -->
-                              <div class="panel panel-slideshow">
-                                <div class="slideshow-container">
-                                  <div class="slide">
-                                    <div class="slide-content">
-                                      <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
-                                        <div class="slide-image">
-                                          <img src="images/products/milli-axon-mixer.jpg" alt="Milli Axon Basin Mixer" />
-                                        </div><!-- /.slide-image -->
-                                        <div class="slide-text">
-                                          <div class="product-name">
-                                            Milli Axon
-                                          </div>
-                                          <p class="product-description">
-                                            Basin Mixer Rose Gold/Black
-                                          </p>
-                                          <p class="product-price">
-                                            $699.99 <span class="product-price-gst">gst inc</span>
-                                          </p>
-                                        </div><!-- /.slide-text -->
-                                        <div class="slide-btn-wrap">
-                                          <div class="slide-btn">
-                                            Shop Now
-                                          </div>
-                                        </div>
-                                      </a>
-                                    </div><!-- /.slide-content -->
-                                  </div><!-- /.slide -->
-                                  <div class="slide">
-                                    <div class="slide-content">
-                                      <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
-                                        <div class="slide-image">
-                                          <img src="images/products/milli-axon-mixer.jpg" alt="Milli Axon Basin Mixer" />
-                                        </div><!-- /.slide-image -->
-                                        <div class="slide-text">
-                                          <div class="product-name">
-                                            Milli Axon
-                                          </div>
-                                          <p class="product-description">
-                                            Basin Mixer Rose Gold/Black
-                                          </p>
-                                          <p class="product-price">
-                                            $699.99 <span class="product-price-gst">gst inc</span>
-                                          </p>
-                                        </div><!-- /.slide-text -->
-                                        <div class="slide-btn-wrap">
-                                          <div class="slide-btn">
-                                            Shop Now
-                                          </div>
-                                        </div>
-                                      </a>
-                                    </div><!-- /.slide-content -->
-                                  </div><!-- /.slide -->
-                                </div><!-- /.slideshow-container -->
-                                <div class="slideshow-buttons"></div>                                
-                              </div><!-- /.panle-slideshow -->  
-                            </div>
-                            <div class="col-md-6">
-
-                              <!-- Zone 5, Slider 2 -->
-                              <div class="panel panel-slideshow">
-                                <div class="slideshow-container">
-                                  <div class="slide">
-                                    <div class="slide-content">
-                                      <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
-                                        <div class="slide-image">
-                                          <img src="images/products/milli-axon-mixer.jpg" alt="Milli Axon Basin Mixer" />
-                                        </div><!-- /.slide-image -->
-                                        <div class="slide-text">
-                                          <div class="product-name">
-                                            Milli Axon
-                                          </div>
-                                          <p class="product-description">
-                                            Basin Mixer Rose Gold/Black
-                                          </p>
-                                          <p class="product-price">
-                                            $699.99 <span class="product-price-gst">gst inc</span>
-                                          </p>
-                                        </div><!-- /.slide-text -->
-                                        <div class="slide-btn-wrap">
-                                          <div class="slide-btn">
-                                            Shop Now
-                                          </div>
-                                        </div>
-                                      </a>
-                                    </div><!-- /.slide-content -->
-                                  </div><!-- /.slide -->
-                                  <div class="slide">
-                                    <div class="slide-content">
-                                      <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
-                                        <div class="slide-image">
-                                          <img src="images/products/milli-axon-mixer.jpg" alt="Milli Axon Basin Mixer" />
-                                        </div><!-- /.slide-image -->
-                                        <div class="slide-text">
-                                          <div class="product-name">
-                                            Milli Axon
-                                          </div>
-                                          <p class="product-description">
-                                            Basin Mixer Rose Gold/Black
-                                          </p>
-                                          <p class="product-price">
-                                            $699.99 <span class="product-price-gst">gst inc</span>
-                                          </p>
-                                        </div><!-- /.slide-text -->
-                                        <div class="slide-btn-wrap">
-                                          <div class="slide-btn">
-                                            Shop Now
-                                          </div>
-                                        </div>
-                                      </a>
-                                    </div><!-- /.slide-content -->
-                                  </div><!-- /.slide -->
-                                </div><!-- /.slideshow-container -->
-                                <div class="slideshow-buttons"></div>                                
-                              </div><!-- /.panel-slideshow -->
-                            </div><!-- /.col-md-6 -->
-                          </div><!-- /.row -->
-                        </div><!-- /.grid-module-zone-5-content -->                                 
-                      </div><!-- /.grid-module-zone-5 -->                                 
-                    </div><!-- /.col-sm-6 -->
-                  </div><!-- /.row -->
-                </div><!-- /.grid-module-zones-4-5 -->     
+                  <!-- Zone 5: Products Sliders -->
+                  <div class="grid-module-zone-5">
+                    <div class="grid-module-zone-5-content">
+                      <!-- Zone 5, Slider 1 -->
+                      <div class="panel panel-slideshow">
+                        <div class="slideshow-container" data-slides="3">
+                          <div class="slide">
+                            <div class="slide-content">
+                              <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
+                                <div class="slide-image">
+                                  <img src="http://www.reece.com.au/assets/products/238000/2303163/_resampled/SetSize695521-1800-Vanity-Unit-2303163-hero.jpg" alt="Milli Axon Basin Mixer" />
+                                </div><!-- /.slide-image -->
+                                <div class="slide-text">
+                                  <div class="product-name">
+                                    ISSY B4
+                                  </div>
+                                  <p class="product-description">
+                                    1800 Double Vanity Unit
+                                  </p>
+                                  <p class="product-price">
+                                    $4487.99 <span class="product-price-gst">gst inc</span>
+                                  </p>
+                                </div><!-- /.slide-text -->
+                                <div class="slide-btn-wrap">
+                                  <div class="slide-btn">
+                                    Shop Now
+                                  </div>
+                                </div>
+                              </a>
+                            </div><!-- /.slide-content -->
+                          </div><!-- /.slide -->
+                          <div class="slide">
+                            <div class="slide-content">
+                              <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
+                                <div class="slide-image">
+                                  <img src="images/products/milli-axon-mixer.jpg" alt="Milli Axon Basin Mixer" />
+                                </div><!-- /.slide-image -->
+                                <div class="slide-text">
+                                  <div class="product-name">
+                                    Milli Axon
+                                  </div>
+                                  <p class="product-description">
+                                    Basin Mixer Rose Gold/Black
+                                  </p>
+                                  <p class="product-price">
+                                    $699.99 <span class="product-price-gst">gst inc</span>
+                                  </p>
+                                </div><!-- /.slide-text -->
+                                <div class="slide-btn-wrap">
+                                  <div class="slide-btn">
+                                    Shop Now
+                                  </div>
+                                </div>
+                              </a>
+                            </div><!-- /.slide-content -->
+                          </div><!-- /.slide -->
+                          <div class="slide">
+                            <div class="slide-content">
+                              <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
+                                <div class="slide-image">
+                                  <img src="http://www.reece.com.au/assets/products/250000/2304775/_resampled/SetSize300225-ADP-Silex-900-Bluetooth-Mirror-2304775-hero-1.jpg" alt="Milli Axon Basin Mixer" />
+                                </div><!-- /.slide-image -->
+                                <div class="slide-text">
+                                  <div class="product-name">
+                                    ADP Silex
+                                  </div>
+                                  <p class="product-description">
+                                    900 Bluethooth Mirror
+                                  </p>
+                                  <p class="product-price">
+                                    $699.99 <span class="product-price-gst">gst inc</span>
+                                  </p>
+                                </div><!-- /.slide-text -->
+                                <div class="slide-btn-wrap">
+                                  <div class="slide-btn">
+                                    Shop Now
+                                  </div>
+                                </div>
+                              </a>
+                            </div><!-- /.slide-content -->
+                          </div><!-- /.slide -->
+                          <div class="slide">
+                            <div class="slide-content">
+                              <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
+                                <div class="slide-image">
+                                  <img src="http://www.reece.com.au/assets/products/142000/2307103/_resampled/SetSize300225-Kado-Aspect-KADO-ASPECT-MOBILE-600-WITH-CASTORS-2307103-hero-1.jpg" alt="Milli Axon Basin Mixer" />
+                                </div><!-- /.slide-image -->
+                                <div class="slide-text">
+                                  <div class="product-name">
+                                    Kado Aspect
+                                  </div>
+                                  <p class="product-description">
+                                    600 Mobile Unit
+                                  </p>
+                                  <p class="product-price">
+                                    $985.99 <span class="product-price-gst">gst inc</span>
+                                  </p>
+                                </div><!-- /.slide-text -->
+                                <div class="slide-btn-wrap">
+                                  <div class="slide-btn">
+                                    Shop Now
+                                  </div>
+                                </div>
+                              </a>
+                            </div><!-- /.slide-content -->
+                          </div><!-- /.slide -->
+                        </div><!-- /.slideshow-container -->
+                        <div class="slideshow-buttons"></div>                                
+                      </div><!-- /.panel-slideshow -->  
+                    </div><!-- /.grid-module-zone-5-content -->                                 
+                  </div><!-- /.grid-module-zone-5 -->                                 
+                </div><!-- /.grid-module-zones-4-5 -->    
               </div><!-- /.grid-module-zones-section-3 -->
 
 
@@ -1076,162 +968,118 @@
                 </div><!-- /.grid-module-zones-2-3 -->
 
                 <div class="grid-module-zones-4-5">
-                  <div class="row">
-                    <div class="col-sm-6">
-
-                      <!-- Zone 4: Create Your Own... -->
-                      <div class="grid-module-zone-4">
-                        <h3>Create your own outdoor</h3>
-                        <div class="row">
-                          <div class="col-md-7">
-                            <figure class="image">
-                              <img src="images/water_therapy/showering-zone-4.jpg" alt="Showering"/>
-                            </figure>
-                          </div>
-                          <div class="col-md-5">
-                            <div class="text">
-                              <p>Statement to reference the different style of wet zone layouts.</p>
-                              <p><h4>TIPS FOR WET ZONE</h4>
-                              - Allow for drainage
-                              <br/>- Choosing the right tiles
-                              <br/>- Introducing light
-                              </p>
-                              <p><a href="http://www.reece.com.au/bathrooms/3d-bathroom-planner" target="_blank" class="btn">Plan in 3D</a></p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-
-                      <!-- Zone 5: Products Sliders -->
-                      <div class="grid-module-zone-5">
-                        <div class="grid-module-zone-5-content">
-                          <div class="row">
-                            <div class="col-md-6">
-
-                              <!-- Zone 5, Slider 1 -->
-                              <div class="panel panel-slideshow">
-                                <div class="slideshow-container">
-                                  <div class="slide">
-                                    <div class="slide-content">
-                                      <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
-                                        <div class="slide-image">
-                                          <img src="images/products/milli-axon-mixer.jpg" alt="Milli Axon Basin Mixer" />
-                                        </div><!-- /.slide-image -->
-                                        <div class="slide-text">
-                                          <div class="product-name">
-                                            Milli Axon
-                                          </div>
-                                          <p class="product-description">
-                                            Basin Mixer Rose Gold/Black
-                                          </p>
-                                          <p class="product-price">
-                                            $699.99 <span class="product-price-gst">gst inc</span>
-                                          </p>
-                                        </div><!-- /.slide-text -->
-                                        <div class="slide-btn-wrap">
-                                          <div class="slide-btn">
-                                            Shop Now
-                                          </div>
-                                        </div>
-                                      </a>
-                                    </div><!-- /.slide-content -->
-                                  </div><!-- /.slide -->
-                                  <div class="slide">
-                                    <div class="slide-content">
-                                      <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
-                                        <div class="slide-image">
-                                          <img src="images/products/milli-axon-mixer.jpg" alt="Milli Axon Basin Mixer" />
-                                        </div><!-- /.slide-image -->
-                                        <div class="slide-text">
-                                          <div class="product-name">
-                                            Milli Axon
-                                          </div>
-                                          <p class="product-description">
-                                            Basin Mixer Rose Gold/Black
-                                          </p>
-                                          <p class="product-price">
-                                            $699.99 <span class="product-price-gst">gst inc</span>
-                                          </p>
-                                        </div><!-- /.slide-text -->
-                                        <div class="slide-btn-wrap">
-                                          <div class="slide-btn">
-                                            Shop Now
-                                          </div>
-                                        </div>
-                                      </a>
-                                    </div><!-- /.slide-content -->
-                                  </div><!-- /.slide -->
-                                </div><!-- /.slideshow-container -->
-                                <div class="slideshow-buttons"></div>                                
-                              </div><!-- /.panle-slideshow -->  
-                            </div>
-                            <div class="col-md-6">
-
-                              <!-- Zone 5, Slider 2 -->
-                              <div class="panel panel-slideshow">
-                                <div class="slideshow-container">
-                                  <div class="slide">
-                                    <div class="slide-content">
-                                      <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
-                                        <div class="slide-image">
-                                          <img src="images/products/milli-axon-mixer.jpg" alt="Milli Axon Basin Mixer" />
-                                        </div><!-- /.slide-image -->
-                                        <div class="slide-text">
-                                          <div class="product-name">
-                                            Milli Axon
-                                          </div>
-                                          <p class="product-description">
-                                            Basin Mixer Rose Gold/Black
-                                          </p>
-                                          <p class="product-price">
-                                            $699.99 <span class="product-price-gst">gst inc</span>
-                                          </p>
-                                        </div><!-- /.slide-text -->
-                                        <div class="slide-btn-wrap">
-                                          <div class="slide-btn">
-                                            Shop Now
-                                          </div>
-                                        </div>
-                                      </a>
-                                    </div><!-- /.slide-content -->
-                                  </div><!-- /.slide -->
-                                  <div class="slide">
-                                    <div class="slide-content">
-                                      <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
-                                        <div class="slide-image">
-                                          <img src="images/products/milli-axon-mixer.jpg" alt="Milli Axon Basin Mixer" />
-                                        </div><!-- /.slide-image -->
-                                        <div class="slide-text">
-                                          <div class="product-name">
-                                            Milli Axon
-                                          </div>
-                                          <p class="product-description">
-                                            Basin Mixer Rose Gold/Black
-                                          </p>
-                                          <p class="product-price">
-                                            $699.99 <span class="product-price-gst">gst inc</span>
-                                          </p>
-                                        </div><!-- /.slide-text -->
-                                        <div class="slide-btn-wrap">
-                                          <div class="slide-btn">
-                                            Shop Now
-                                          </div>
-                                        </div>
-                                      </a>
-                                    </div><!-- /.slide-content -->
-                                  </div><!-- /.slide -->
-                                </div><!-- /.slideshow-container -->
-                                <div class="slideshow-buttons"></div>                                
-                              </div><!-- /.panel-slideshow -->
-                            </div><!-- /.col-md-6 -->
-                          </div><!-- /.row -->
-                        </div><!-- /.grid-module-zone-5-content -->                                 
-                      </div><!-- /.grid-module-zone-5 -->                                 
-                    </div><!-- /.col-sm-6 -->
-                  </div><!-- /.row -->
-                </div><!-- /.grid-module-zones-4-5 -->     
+                  <!-- Zone 5: Products Sliders -->
+                  <div class="grid-module-zone-5">
+                    <div class="grid-module-zone-5-content">
+                      <!-- Zone 5, Slider 1 -->
+                      <div class="panel panel-slideshow">
+                        <div class="slideshow-container" data-slides="3">
+                          <div class="slide">
+                            <div class="slide-content">
+                              <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
+                                <div class="slide-image">
+                                  <img src="http://www.reece.com.au/assets/products/2304869/_resampled/SetSize300225-1200-All-Drawer-Vanity-2304869-hero-1.jpg" alt="Milli Axon Basin Mixer" />
+                                </div><!-- /.slide-image -->
+                                <div class="slide-text">
+                                  <div class="product-name">
+                                    Posh Solus
+                                  </div>
+                                  <p class="product-description">
+                                    1200 All-Drawer Vanity
+                                  </p>
+                                  <p class="product-price">
+                                    $1235.99 <span class="product-price-gst">gst inc</span>
+                                  </p>
+                                </div><!-- /.slide-text -->
+                                <div class="slide-btn-wrap">
+                                  <div class="slide-btn">
+                                    Shop Now
+                                  </div>
+                                </div>
+                              </a>
+                            </div><!-- /.slide-content -->
+                          </div><!-- /.slide -->
+                          <div class="slide">
+                            <div class="slide-content">
+                              <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
+                                <div class="slide-image">
+                                  <img src="http://www.reece.com.au/assets/products/155000/9506093/_resampled/SetSize280193-nobili-acquario-basin-mixer-9506093-hero-1.jpg" alt="Milli Axon Basin Mixer" />
+                                </div><!-- /.slide-image -->
+                                <div class="slide-text">
+                                  <div class="product-name">
+                                    Nobil Acquario
+                                  </div>
+                                  <p class="product-description">
+                                    Wall Basin Mixer
+                                  </p>
+                                  <p class="product-price">
+                                    $499.99 <span class="product-price-gst">gst inc</span>
+                                  </p>
+                                </div><!-- /.slide-text -->
+                                <div class="slide-btn-wrap">
+                                  <div class="slide-btn">
+                                    Shop Now
+                                  </div>
+                                </div>
+                              </a>
+                            </div><!-- /.slide-content -->
+                          </div><!-- /.slide -->
+                          <div class="slide">
+                            <div class="slide-content">
+                              <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
+                                <div class="slide-image">
+                                  <img src="http://www.reece.com.au/assets/products/132000/2399946/_resampled/SetSize280193-cibo-habitat-900-vanity-unit-1-door-2-drawer-2399946-hero-1.jpg" alt="Milli Axon Basin Mixer" />
+                                </div><!-- /.slide-image -->
+                                <div class="slide-text">
+                                  <div class="product-name">
+                                    CIBO Habitat
+                                  </div>
+                                  <p class="product-description">
+                                    900 Vanity Unit 1 Door 2 Drawer
+                                  </p>
+                                  <p class="product-price">
+                                    $2083.99 <span class="product-price-gst">gst inc</span>
+                                  </p>
+                                </div><!-- /.slide-text -->
+                                <div class="slide-btn-wrap">
+                                  <div class="slide-btn">
+                                    Shop Now
+                                  </div>
+                                </div>
+                              </a>
+                            </div><!-- /.slide-content -->
+                          </div><!-- /.slide -->
+                          <div class="slide">
+                            <div class="slide-content">
+                              <a href="http://www.reece.com.au/bathrooms/products/milli-axon-basin-mixer-rose-goldblack-2259659" target="_blank">
+                                <div class="slide-image">
+                                  <img src="images/products/milli-axon-mixer.jpg" alt="Milli Axon Basin Mixer" />
+                                </div><!-- /.slide-image -->
+                                <div class="slide-text">
+                                  <div class="product-name">
+                                    Milli Axon
+                                  </div>
+                                  <p class="product-description">
+                                    Basin Mixer Rose Gold/Black
+                                  </p>
+                                  <p class="product-price">
+                                    $699.99 <span class="product-price-gst">gst inc</span>
+                                  </p>
+                                </div><!-- /.slide-text -->
+                                <div class="slide-btn-wrap">
+                                  <div class="slide-btn">
+                                    Shop Now
+                                  </div>
+                                </div>
+                              </a>
+                            </div><!-- /.slide-content -->
+                          </div><!-- /.slide -->
+                        </div><!-- /.slideshow-container -->
+                        <div class="slideshow-buttons"></div>                                
+                      </div><!-- /.panel-slideshow -->  
+                    </div><!-- /.grid-module-zone-5-content -->                                 
+                  </div><!-- /.grid-module-zone-5 -->                                 
+                </div><!-- /.grid-module-zones-4-5 -->   
               </div><!-- /.grid-module-zones-section-4 -->
             </div>                   
           </div><!-- /.content-fluid-->

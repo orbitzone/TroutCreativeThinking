@@ -664,25 +664,33 @@ var bathroomHappiness = {
         });
       }
       if($(this).find('.slideshow-container').length > 0){
-        $(this).find('.slideshow-container').slick({
-          appendArrows: $arrows,
-          responsive:[
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-              infinite: true
-            }
-          },
-          {
-            breakpoint: 460,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              infinite: true
-            }
-          }]
+        $(this).find('.slideshow-container').each(function(){
+          var slidesToShow = 1;
+          if($(this).data('slides')){
+            slidesToShow = parseInt($(this).data('slides'));
+          }
+          $(this).slick({
+            appendArrows: $arrows,
+            slidesToShow: slidesToShow,
+            slidesToScroll: slidesToShow,
+            responsive:[
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                infinite: true
+              }
+            },
+            {
+              breakpoint: 460,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true
+              }
+            }]
+          });
         });
       }
     });
@@ -827,12 +835,18 @@ var bathroomHappiness = {
           }
           
           s=s+1;
-          $(this).find('.grid-module-zone-4, .grid-module-zone-5').height('auto');
-          var sectionBottomHeight = $(this).find('.grid-module-zone-4').outerHeight();
+          /*$(this).find('.grid-module-zone-4, .grid-module-zone-5').height('auto');
+          if($(this).find('.grid-module-zone-4').length > 0){
+            var sectionBottomHeight = $(this).find('.grid-module-zone-4').outerHeight();
+          }else{
+            var sectionBottomHeight = $(this).find('.grid-module-zone-5').outerHeight();
+          }          
           if(sectionBottomHeight < $(this).find('.grid-module-zone-5').outerHeight()){
             sectionBottomHeight = $(this).find('.grid-module-zone-5').outerHeight();
           }
-          $(this).find('.grid-module-zone-4, .grid-module-zone-5').outerHeight(sectionBottomHeight);
+          if(sectionBottomHeight > 10){
+            $(this).find('.grid-module-zone-4, .grid-module-zone-5').outerHeight(sectionBottomHeight);
+          }*/
         });
       });
     }).resize();

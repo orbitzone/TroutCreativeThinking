@@ -129,7 +129,7 @@
                 <div class="grid-module-zone-wrap">
 
                   <!-- Zone 2: Title and image -->
-                  <div class="grid-module-zone-2" style="background-image: url(images/water_therapy/bathing-zone-2-image.jpg);">
+                  <div class="grid-module-zone-2" style="background-image: url(images/water_therapy/bathing/freestanding/bathing-freestanding-incidental-01.jpg);">
                     <div class="box">
                       <h3>Float</h3>
                     </div>
@@ -140,7 +140,7 @@
                 <div class="grid-module-zone-wrap">
 
                   <!-- Zone 3: Text with bg and border-->
-                  <div class="grid-module-zone-3" style="background-image: url(images/water_therapy/bathing-zone-3.jpg);">
+                  <div class="grid-module-zone-3" style="background-image: url(images/water_therapy/bathing/freestanding/bathing-freestanding-incidental-02.jpg);">
                     <div class="box-border"></div>
                     <div class="box">
                       <div class="text">
@@ -251,12 +251,7 @@
                         <figure class="image">
                             <img src="images/water_therapy/bathing/inset/bathing-slider-inset-05.jpg" alt="bathing inset 05">
                         </figure>
-                    </div><!-- /.slide -->
-                    <div class="slide">
-                        <figure class="image">
-                            <img src="images/water_therapy/bathing/inset/bathing-slider-inset-06.jpg" alt="bathing inset 06">
-                        </figure>
-                    </div><!-- /.slide -->
+                    </div><!-- /.slide -->                    
                 </div><!-- /.grid-module-slider -->
                 <div class="grid-module-slider-buttons slideshow-buttons"></div>
               </div><!-- /.panel-slideshow -->                
@@ -270,7 +265,7 @@
                 <div class="grid-module-zone-wrap">
 
                   <!-- Zone 2: Title and image -->
-                  <div class="grid-module-zone-2" style="background-image: url(images/water_therapy/bathing-zone-2-image.jpg);">
+                  <div class="grid-module-zone-2" style="background-image: url(images/water_therapy/bathing/inset/bathing-inset-incidental-01.jpg);">
                     <div class="box">
                       <h3>Wellness</h3>
                     </div>
@@ -281,7 +276,7 @@
                 <div class="grid-module-zone-wrap">
 
                   <!-- Zone 3: Text with bg and border-->
-                  <div class="grid-module-zone-3" style="background-image: url(images/water_therapy/bathing-zone-3.jpg);">
+                  <div class="grid-module-zone-3" style="background-image: url(images/water_therapy/bathing/inset/bathing-inset-incidental-02.jpg);">
                     <div class="box-border"></div>
                     <div class="box">
                       <div class="text">
@@ -397,17 +392,7 @@
                         <figure class="image">
                             <img src="images/water_therapy/bathing/looks/bathing-slider-looks-06.jpg" alt="bathing looks 06 ">
                         </figure>
-                    </div><!-- /.slide -->
-                    <div class="slide">
-                        <figure class="image">
-                            <img src="images/water_therapy/bathing/looks/bathing-slider-looks-07.jpg" alt="bathing looks 07 ">
-                        </figure>
-                    </div><!-- /.slide -->
-                    <div class="slide">
-                        <figure class="image">
-                            <img src="images/water_therapy/bathing/looks/bathing-slider-looks-08.jpg" alt="bathing looks 08 ">
-                        </figure>
-                    </div><!-- /.slide -->
+                    </div><!-- /.slide -->                    
                 </div><!-- /.grid-module-slider -->
                 <div class="grid-module-slider-buttons slideshow-buttons"></div>
               </div><!-- /.panel-slideshow -->                
@@ -421,7 +406,7 @@
                 <div class="grid-module-zone-wrap">
 
                   <!-- Zone 2: Title and image -->
-                  <div class="grid-module-zone-2" style="background-image: url(images/water_therapy/bathing-zone-2-image.jpg);">
+                  <div class="grid-module-zone-2" style="background-image: url(images/water_therapy/bathing/looks/bathing-looks-incidental-01.jpg);">
                     <div class="box">
                       <h3>Create</h3>
                     </div>
@@ -432,7 +417,7 @@
                 <div class="grid-module-zone-wrap">
 
                   <!-- Zone 3: Text with bg and border-->
-                  <div class="grid-module-zone-3" style="background-image: url(images/water_therapy/bathing-zone-3.jpg);">
+                  <div class="grid-module-zone-3" style="background-image: url(images/water_therapy/bathing/looks/bathing-looks-incidental-02.jpg);">
                     <div class="box-border"></div>
                     <div class="box">
                       <div class="text">
@@ -557,7 +542,7 @@
                 <div class="grid-module-zone-wrap">
 
                   <!-- Zone 2: Title and image -->
-                  <div class="grid-module-zone-2" style="background-image: url(images/water_therapy/bathing-zone-2-image.jpg);">
+                  <div class="grid-module-zone-2" style="background-image: url(images/water_therapy/bathing/sensory/bathing-sensory-incidental-01.jpg);">
                     <div class="box">
                       <h3>Renew</h3>
                     </div>
@@ -568,7 +553,7 @@
                 <div class="grid-module-zone-wrap">
 
                   <!-- Zone 3: Text with bg and border-->
-                  <div class="grid-module-zone-3" style="background-image: url(images/water_therapy/bathing-zone-3.jpg);">
+                  <div class="grid-module-zone-3" style="background-image: url(images/water_therapy/bathing/sensory/bathing-sensory-incidental-02.jpg);">
                     <div class="box-border"></div>
                     <div class="box">
                       <div class="text">

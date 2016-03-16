@@ -1216,9 +1216,14 @@ body.water-therapy{
 		}//#bathing
 		#shower-technology{
 			background-image: url(../images/water_therapy/shower-technology.jpg);
-			background-position: top center;
-			background-size: cover;
+			background-position: center center;
+			background-size: contain;
+			background-repeat: no-repeat;
 			padding-top: 102px;
+			@media (min-width: $screen-sm-min){
+				background-position: top center;
+				background-size: cover;
+			}
 			.container-fluid{
 				max-width: 350px;
 				@media (min-width: $screen-sm-min){

@@ -6126,11 +6126,11 @@ body.water-therapy .main #shower-technology .shower-technology-description.activ
 @-webkit-keyframes slide_in {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(-1200px, 0, 0);
-    -moz-transform: translate3d(-1200px, 0, 0);
-    -ms-transform: translate3d(-1200px, 0, 0);
-    -o-transform: translate3d(-1200px, 0, 0);
-    transform: translate3d(-1200px, 0, 0);
+    -webkit-transform: translate3d(-738px, 0, 0);
+    -moz-transform: translate3d(-738px, 0, 0);
+    -ms-transform: translate3d(-738px, 0, 0);
+    -o-transform: translate3d(-738px, 0, 0);
+    transform: translate3d(-738px, 0, 0);
   }
   100% {
     opacity: 1;
@@ -6144,11 +6144,11 @@ body.water-therapy .main #shower-technology .shower-technology-description.activ
 @-moz-keyframes slide_in {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(-1200px, 0, 0);
-    -moz-transform: translate3d(-1200px, 0, 0);
-    -ms-transform: translate3d(-1200px, 0, 0);
-    -o-transform: translate3d(-1200px, 0, 0);
-    transform: translate3d(-1200px, 0, 0);
+    -webkit-transform: translate3d(-738px, 0, 0);
+    -moz-transform: translate3d(-738px, 0, 0);
+    -ms-transform: translate3d(-738px, 0, 0);
+    -o-transform: translate3d(-738px, 0, 0);
+    transform: translate3d(-738px, 0, 0);
   }
   100% {
     opacity: 1;
@@ -6162,11 +6162,11 @@ body.water-therapy .main #shower-technology .shower-technology-description.activ
 @-ms-keyframes slide_in {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(-1200px, 0, 0);
-    -moz-transform: translate3d(-1200px, 0, 0);
-    -ms-transform: translate3d(-1200px, 0, 0);
-    -o-transform: translate3d(-1200px, 0, 0);
-    transform: translate3d(-1200px, 0, 0);
+    -webkit-transform: translate3d(-738px, 0, 0);
+    -moz-transform: translate3d(-738px, 0, 0);
+    -ms-transform: translate3d(-738px, 0, 0);
+    -o-transform: translate3d(-738px, 0, 0);
+    transform: translate3d(-738px, 0, 0);
   }
   100% {
     opacity: 1;
@@ -6180,11 +6180,11 @@ body.water-therapy .main #shower-technology .shower-technology-description.activ
 @keyframes slide_in {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(-1200px, 0, 0);
-    -moz-transform: translate3d(-1200px, 0, 0);
-    -ms-transform: translate3d(-1200px, 0, 0);
-    -o-transform: translate3d(-1200px, 0, 0);
-    transform: translate3d(-1200px, 0, 0);
+    -webkit-transform: translate3d(-738px, 0, 0);
+    -moz-transform: translate3d(-738px, 0, 0);
+    -ms-transform: translate3d(-738px, 0, 0);
+    -o-transform: translate3d(-738px, 0, 0);
+    transform: translate3d(-738px, 0, 0);
   }
   100% {
     opacity: 1;
@@ -6206,11 +6206,11 @@ body.water-therapy .main #shower-technology .shower-technology-description.activ
   }
   100% {
     opacity: 0;
-    -webkit-transform: translate3d(1200px, 0, 0);
-    -moz-transform: translate3d(1200px, 0, 0);
-    -ms-transform: translate3d(1200px, 0, 0);
-    -o-transform: translate3d(1200px, 0, 0);
-    transform: translate3d(1200px, 0, 0);
+    -webkit-transform: translate3d(738px, 0, 0);
+    -moz-transform: translate3d(738px, 0, 0);
+    -ms-transform: translate3d(738px, 0, 0);
+    -o-transform: translate3d(738px, 0, 0);
+    transform: translate3d(738px, 0, 0);
   }
 }
 @-moz-keyframes slide_out {
@@ -6224,11 +6224,11 @@ body.water-therapy .main #shower-technology .shower-technology-description.activ
   }
   100% {
     opacity: 0;
-    -webkit-transform: translate3d(1200px, 0, 0);
-    -moz-transform: translate3d(1200px, 0, 0);
-    -ms-transform: translate3d(1200px, 0, 0);
-    -o-transform: translate3d(1200px, 0, 0);
-    transform: translate3d(1200px, 0, 0);
+    -webkit-transform: translate3d(738px, 0, 0);
+    -moz-transform: translate3d(738px, 0, 0);
+    -ms-transform: translate3d(738px, 0, 0);
+    -o-transform: translate3d(738px, 0, 0);
+    transform: translate3d(738px, 0, 0);
   }
 }
 @-ms-keyframes slide_out {
@@ -6242,11 +6242,11 @@ body.water-therapy .main #shower-technology .shower-technology-description.activ
   }
   100% {
     opacity: 0;
-    -webkit-transform: translate3d(1200px, 0, 0);
-    -moz-transform: translate3d(1200px, 0, 0);
-    -ms-transform: translate3d(1200px, 0, 0);
-    -o-transform: translate3d(1200px, 0, 0);
-    transform: translate3d(1200px, 0, 0);
+    -webkit-transform: translate3d(738px, 0, 0);
+    -moz-transform: translate3d(738px, 0, 0);
+    -ms-transform: translate3d(738px, 0, 0);
+    -o-transform: translate3d(738px, 0, 0);
+    transform: translate3d(738px, 0, 0);
   }
 }
 @keyframes slide_out {
@@ -6260,11 +6260,157 @@ body.water-therapy .main #shower-technology .shower-technology-description.activ
   }
   100% {
     opacity: 0;
-    -webkit-transform: translate3d(1200px, 0, 0);
-    -moz-transform: translate3d(1200px, 0, 0);
-    -ms-transform: translate3d(1200px, 0, 0);
-    -o-transform: translate3d(1200px, 0, 0);
-    transform: translate3d(1200px, 0, 0);
+    -webkit-transform: translate3d(738px, 0, 0);
+    -moz-transform: translate3d(738px, 0, 0);
+    -ms-transform: translate3d(738px, 0, 0);
+    -o-transform: translate3d(738px, 0, 0);
+    transform: translate3d(738px, 0, 0);
+  }
+}
+@media (min-width: 992px) {
+  @-webkit-keyframes slide_in {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(-1200px, 0, 0);
+      -moz-transform: translate3d(-1200px, 0, 0);
+      -ms-transform: translate3d(-1200px, 0, 0);
+      -o-transform: translate3d(-1200px, 0, 0);
+      transform: translate3d(-1200px, 0, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  @-moz-keyframes slide_in {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(-1200px, 0, 0);
+      -moz-transform: translate3d(-1200px, 0, 0);
+      -ms-transform: translate3d(-1200px, 0, 0);
+      -o-transform: translate3d(-1200px, 0, 0);
+      transform: translate3d(-1200px, 0, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  @-ms-keyframes slide_in {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(-1200px, 0, 0);
+      -moz-transform: translate3d(-1200px, 0, 0);
+      -ms-transform: translate3d(-1200px, 0, 0);
+      -o-transform: translate3d(-1200px, 0, 0);
+      transform: translate3d(-1200px, 0, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  @keyframes slide_in {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(-1200px, 0, 0);
+      -moz-transform: translate3d(-1200px, 0, 0);
+      -ms-transform: translate3d(-1200px, 0, 0);
+      -o-transform: translate3d(-1200px, 0, 0);
+      transform: translate3d(-1200px, 0, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  @-webkit-keyframes slide_out {
+    0% {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: translate3d(1200px, 0, 0);
+      -moz-transform: translate3d(1200px, 0, 0);
+      -ms-transform: translate3d(1200px, 0, 0);
+      -o-transform: translate3d(1200px, 0, 0);
+      transform: translate3d(1200px, 0, 0);
+    }
+  }
+  @-moz-keyframes slide_out {
+    0% {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: translate3d(1200px, 0, 0);
+      -moz-transform: translate3d(1200px, 0, 0);
+      -ms-transform: translate3d(1200px, 0, 0);
+      -o-transform: translate3d(1200px, 0, 0);
+      transform: translate3d(1200px, 0, 0);
+    }
+  }
+  @-ms-keyframes slide_out {
+    0% {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: translate3d(1200px, 0, 0);
+      -moz-transform: translate3d(1200px, 0, 0);
+      -ms-transform: translate3d(1200px, 0, 0);
+      -o-transform: translate3d(1200px, 0, 0);
+      transform: translate3d(1200px, 0, 0);
+    }
+  }
+  @keyframes slide_out {
+    0% {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: translate3d(1200px, 0, 0);
+      -moz-transform: translate3d(1200px, 0, 0);
+      -ms-transform: translate3d(1200px, 0, 0);
+      -o-transform: translate3d(1200px, 0, 0);
+      transform: translate3d(1200px, 0, 0);
+    }
   }
 }
 @-webkit-keyframes flip_top_in {

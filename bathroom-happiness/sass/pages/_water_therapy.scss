@@ -1602,7 +1602,7 @@ body.water-therapy{
 @include keyframes(slide_in){
 	0%{
 		opacity: 0;
-		@include transform(translate3d(-1200px,0,0));
+		@include transform(translate3d(-738px,0,0));
 	}
 	100%{
 		opacity: 1;
@@ -1616,7 +1616,29 @@ body.water-therapy{
 	}
 	100%{		
 		opacity: 0;
-		@include transform(translate3d(1200px,0,0));
+		@include transform(translate3d(738px,0,0));
+	}
+}
+@media (min-width:$screen-md) {
+	@include keyframes(slide_in){
+		0%{
+			opacity: 0;
+			@include transform(translate3d(-1200px,0,0));
+		}
+		100%{
+			opacity: 1;
+			@include transform(translate3d(0,0,0));
+		}
+	}
+	@include keyframes(slide_out){
+		0%{
+			opacity: 1;
+			@include transform(translate3d(0,0,0));
+		}
+		100%{		
+			opacity: 0;
+			@include transform(translate3d(1200px,0,0));
+		}
 	}
 }
 @include keyframes(flip_top_in){

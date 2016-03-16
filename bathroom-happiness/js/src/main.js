@@ -751,7 +751,9 @@ var bathroomHappiness = {
     $('#shower-technology .view-video').on('click', function(){
       var section = $(this).data('section');
       $('#shower-technology .st-'+section+' .shower-technology-description').toggleClass('active');
-      playerManager.play('st-'+section+'-video');
+      if(!deviceMobile){
+        playerManager.play('st-'+section+'-video');
+      }
       return false;
     });
     $('#shower-technology .close-video').on('click', function(){

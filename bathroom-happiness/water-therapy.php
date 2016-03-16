@@ -1263,7 +1263,7 @@
                         <div class="shower-technology-flip">
                           <div class="front">
                             <figure class="image">
-                              <img src="images/water_therapy/shower.png" alt="Shower">
+                              <img src="images/water_therapy/shower_technology/showering-technology-waterfall.jpg" alt="Waterfall Shower">
                             </figure>
                             <div class="icon-wrap">
                                 <svg class="icon shape-waterfall"><use xlink:href="#shape-waterfall"></use></svg>
@@ -1318,7 +1318,7 @@
                         <div class="shower-technology-flip">
                           <div class="front">
                             <figure class="image">
-                              <img src="images/water_therapy/shower.png" alt="Shower">
+                              <img src="images/water_therapy/shower_technology/showering-technology-led.jpg" alt="Led Shower">
                             </figure>
                             <div class="icon-wrap">
                                 <svg class="icon shape-led"><use xlink:href="#shape-led"></use></svg>
@@ -1374,7 +1374,7 @@
                         <div class="shower-technology-flip">
                           <div class="front">
                             <figure class="image">
-                              <img src="images/water_therapy/shower.png" alt="Shower">
+                              <img src="images/water_therapy/shower_technology/showering-technology-turbine.jpg" alt="Turbine Shower">
                             </figure>
                             <div class="icon-wrap">
                                 <svg class="icon shape-turbine"><use xlink:href="#shape-turbine"></use></svg>
@@ -1401,7 +1401,7 @@
                         <div class="shower-technology-flip">
                           <div class="front">
                             <figure class="image">
-                              <img src="images/water_therapy/shower.png" alt="Shower">
+                              <img src="images/water_therapy/shower_technology/showering-technology-raindance.jpg" alt="Raindance Shower">
                             </figure>
                             <div class="icon-wrap">
                                 <svg class="icon shape-raindance"><use xlink:href="#shape-raindance"></use></svg>
@@ -1429,7 +1429,7 @@
                         <div class="shower-technology-flip">
                           <div class="front">
                             <figure class="image">
-                              <img src="images/water_therapy/shower.png" alt="Shower">
+                              <img src="images/water_therapy/shower_technology/showering-technology-soft-rain.jpg" alt="Soft Rain Shower">
                             </figure>
                             <div class="icon-wrap">
                                 <svg class="icon shape-soft-rain"><use xlink:href="#shape-soft-rain"></use></svg>
@@ -1485,7 +1485,7 @@
                         <div class="shower-technology-flip">
                           <div class="front">
                             <figure class="image">
-                              <img src="images/water_therapy/shower.png" alt="Shower">
+                              <img src="images/water_therapy/shower_technology/showering-technology-massage.jpg" alt="Massage Shower">
                             </figure>
                             <div class="icon-wrap">
                                 <svg class="icon shape-massage"><use xlink:href="#shape-massage"></use></svg>

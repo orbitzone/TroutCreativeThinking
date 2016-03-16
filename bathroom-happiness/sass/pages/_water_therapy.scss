@@ -1370,6 +1370,27 @@ body.water-therapy{
 				@include perspective(1000);
 				color: white;
 				padding: 0;
+				.close-video{
+					position: absolute;
+					top: 0px;
+					right: 0px;
+					width: 40px;
+					height: 40px;
+					z-index: 10;
+					@include appearance(none);
+					outline: none;
+					border: none;
+					@include border-radius(0);
+					padding: 0;
+					background: transparent;
+					.icon{
+						fill: $water-therapy-green;
+						width: 32px;
+						height: 32px;
+						position: relative;
+						top: 2px;
+					}
+				}
 				.image{
 					text-align: center;
 					margin-bottom: -99px;
@@ -1534,28 +1555,7 @@ body.water-therapy{
 								z-index: 1;
 								cursor: pointer;
 							}	
-						}
-						.close-video{
-							position: absolute;
-							top: 0px;
-							right: 0px;
-							width: 40px;
-							height: 40px;
-							z-index: 10;
-							@include appearance(none);
-							outline: none;
-							border: none;
-							@include border-radius(0);
-							padding: 0;
-							background: transparent;
-							.icon{
-								fill: $water-therapy-green;
-								width: 32px;
-								height: 32px;
-								position: relative;
-								top: 2px;
-							}
-						}
+						}						
 					}
 				}//.shower-technology-flip
 

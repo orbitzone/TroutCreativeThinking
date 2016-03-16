@@ -1260,6 +1260,7 @@
                   <div class="shower-technology-cards">
                     <div class="shower-technology-card st-waterfall">
                       <div class="shower-technology-description">
+                        <button type="button" class="close-video" data-section="waterfall"><svg class="icon shape-close"><use xlink:href="#shape-close"></use></svg><span class="sr-only">Close</span></button>
                         <div class="shower-technology-flip">
                           <div class="front">
                             <figure class="image">
@@ -1281,13 +1282,13 @@
                             <div id="st-waterfall-video-wrap" class="video-iframe-wrap video" data-video="MhcBXnO-uHE">
                                 <figure id="st-waterfall-video"></figure>          
                             </div>
-                            <button type="button" class="close-video" data-section="waterfall"><svg class="icon shape-close"><use xlink:href="#shape-close"></use></svg><span class="sr-only">Close</span></button>
                           </div>                    
                         </div><!-- /.shower-technology-flip -->
                       </div><!-- /.shower-technology-description -->
                     </div><!-- /.shower-technology-card -->
                     <div class="shower-technology-card st-body-spray">
                       <div class="shower-technology-description">
+                        <button type="button" class="close-video" data-section="body-spray"><svg class="icon shape-close"><use xlink:href="#shape-close"></use></svg><span class="sr-only">Close</span></button>
                         <div class="shower-technology-flip">
                           <div class="front">
                             <figure class="image">
@@ -1308,13 +1309,13 @@
                             <div id="st-body-spray-video-wrap" class="video-iframe-wrap video" data-video="BIAWhMhhY58">
                                 <figure id="st-body-spray-video"></figure>          
                             </div>
-                            <button type="button" class="close-video" data-section="body-spray"><svg class="icon shape-close"><use xlink:href="#shape-close"></use></svg><span class="sr-only">Close</span></button>
                           </div>                    
                         </div><!-- /.shower-technology-flip -->
                       </div><!-- /.shower-technology-description -->
                     </div><!-- /.shower-technology-card -->
                     <div class="shower-technology-card st-led">
                       <div class="shower-technology-description">
+                        <button type="button" class="close-video" data-section="led"><svg class="icon shape-close"><use xlink:href="#shape-close"></use></svg><span class="sr-only">Close</span></button>
                         <div class="shower-technology-flip">
                           <div class="front">
                             <figure class="image">
@@ -1336,13 +1337,13 @@
                             <div id="st-led-video-wrap" class="video-iframe-wrap video" data-video="BIAWhMhhY58">
                                 <figure id="st-led-video"></figure>          
                             </div>
-                            <button type="button" class="close-video" data-section="led"><svg class="icon shape-close"><use xlink:href="#shape-close"></use></svg><span class="sr-only">Close</span></button>
                           </div>                    
                         </div><!-- /.shower-technology-flip -->
                       </div><!-- /.shower-technology-description -->
                     </div><!-- /.shower-technology-card -->
                     <div class="shower-technology-card st-airdrop">
                       <div class="shower-technology-description">
+                        <button type="button" class="close-video" data-section="airdrop"><svg class="icon shape-close"><use xlink:href="#shape-close"></use></svg><span class="sr-only">Close</span></button>
                         <div class="shower-technology-flip">
                           <div class="front">
                             <figure class="image">
@@ -1364,13 +1365,13 @@
                             <div id="st-airdrop-video-wrap" class="video-iframe-wrap video" data-video="J41VDO-aIVk">
                                 <figure id="st-airdrop-video"></figure>          
                             </div>
-                            <button type="button" class="close-video" data-section="airdrop"><svg class="icon shape-close"><use xlink:href="#shape-close"></use></svg><span class="sr-only">Close</span></button>
                           </div>                    
                         </div><!-- /.shower-technology-flip -->
                       </div><!-- /.shower-technology-description -->
                     </div><!-- /.shower-technology-card -->
                     <div class="shower-technology-card st-turbine">
                       <div class="shower-technology-description">
+                        <button type="button" class="close-video" data-section="turbine"><svg class="icon shape-close"><use xlink:href="#shape-close"></use></svg><span class="sr-only">Close</span></button>
                         <div class="shower-technology-flip">
                           <div class="front">
                             <figure class="image">
@@ -1391,13 +1392,13 @@
                             <div id="st-turbine-video-wrap" class="video-iframe-wrap video" data-video="BIAWhMhhY58">
                                 <figure id="st-turbine-video"></figure>          
                             </div>
-                            <button type="button" class="close-video" data-section="turbine"><svg class="icon shape-close"><use xlink:href="#shape-close"></use></svg><span class="sr-only">Close</span></button>
                           </div>                    
                         </div><!-- /.shower-technology-flip -->
                       </div><!-- /.shower-technology-description -->
                     </div><!-- /.shower-technology-card -->
                     <div class="shower-technology-card st-raindance">
                       <div class="shower-technology-description">
+                        <button type="button" class="close-video" data-section="raindance"><svg class="icon shape-close"><use xlink:href="#shape-close"></use></svg><span class="sr-only">Close</span></button>
                         <div class="shower-technology-flip">
                           <div class="front">
                             <figure class="image">
@@ -1419,13 +1420,13 @@
                             <div id="st-raindance-video-wrap" class="video-iframe-wrap video" data-video="LJdcp_pSvNk">
                                 <figure id="st-raindance-video"></figure>          
                             </div>
-                            <button type="button" class="close-video" data-section="raindance"><svg class="icon shape-close"><use xlink:href="#shape-close"></use></svg><span class="sr-only">Close</span></button>
                           </div>                    
                         </div><!-- /.shower-technology-flip -->
                       </div><!-- /.shower-technology-description -->
                     </div><!-- /.shower-technology-card -->
                     <div class="shower-technology-card st-soft-rain">
                       <div class="shower-technology-description">
+                        <button type="button" class="close-video" data-section="soft-rain"><svg class="icon shape-close"><use xlink:href="#shape-close"></use></svg><span class="sr-only">Close</span></button>
                         <div class="shower-technology-flip">
                           <div class="front">
                             <figure class="image">
@@ -1446,14 +1447,14 @@
                           <div class="back">
                             <div id="st-soft-rain-video-wrap" class="video-iframe-wrap video" data-video="RjsyLg2h9HA">
                                 <figure id="st-soft-rain-video"></figure>          
-                            </div>
-                            <button type="button" class="close-video" data-section="soft-rain"><svg class="icon shape-close"><use xlink:href="#shape-close"></use></svg><span class="sr-only">Close</span></button>
+                            </div>                            
                           </div>                    
                         </div><!-- /.shower-technology-flip -->
                       </div><!-- /.shower-technology-description -->
                     </div><!-- /.shower-technology-card -->
                     <div class="shower-technology-card st-intense-rain">
                       <div class="shower-technology-description">
+                        <button type="button" class="close-video" data-section="intense-rain"><svg class="icon shape-close"><use xlink:href="#shape-close"></use></svg><span class="sr-only">Close</span></button>
                         <div class="shower-technology-flip">
                           <div class="front">
                             <figure class="image">
@@ -1475,13 +1476,13 @@
                             <div id="st-intense-rain-video-wrap" class="video-iframe-wrap video" data-video="lTNu3YEdnnY">
                                 <figure id="st-intense-rain-video"></figure>          
                             </div>
-                            <button type="button" class="close-video" data-section="intense-rain"><svg class="icon shape-close"><use xlink:href="#shape-close"></use></svg><span class="sr-only">Close</span></button>
                           </div>                    
                         </div><!-- /.shower-technology-flip -->
                       </div><!-- /.shower-technology-description -->
                     </div><!-- /.shower-technology-card -->
                     <div class="shower-technology-card st-massage">
                       <div class="shower-technology-description">
+                        <button type="button" class="close-video" data-section="massage"><svg class="icon shape-close"><use xlink:href="#shape-close"></use></svg><span class="sr-only">Close</span></button>
                         <div class="shower-technology-flip">
                           <div class="front">
                             <figure class="image">
@@ -1503,7 +1504,6 @@
                             <div id="st-massage-video-wrap" class="video-iframe-wrap video" data-video="tBBetrW789I">
                                 <figure id="st-massage-video"></figure>          
                             </div>
-                            <button type="button" class="close-video" data-section="massage"><svg class="icon shape-close"><use xlink:href="#shape-close"></use></svg><span class="sr-only">Close</span></button>
                           </div>                    
                         </div><!-- /.shower-technology-flip -->
                       </div><!-- /.shower-technology-description -->

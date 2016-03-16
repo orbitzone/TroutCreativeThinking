@@ -244,15 +244,15 @@
                     </div>
                   </div>
                 </div>                             
-              </div>
-              <div class="shower-image">
-                <div class="row">
-                  <div class="col-xs-12">                
-                    <img src="images/water_therapy/hand.jpg" alt="Hand"/>
-                  </div>
-                </div>
-              </div>  <!-- /.shower-image -->
+              </div>              
             </div><!-- /.container-fluid-->
+            <div class="shower-image">
+              <div class="row">
+                <div class="col-xs-12">                
+                  <img src="images/water_therapy/hand.jpg" alt="Hand"/>
+                </div>
+              </div>
+            </div>  <!-- /.shower-image -->
           </div><!-- /#water-therapy -->
         </section>
         <section id="showering" class="grid-module">

@@ -339,6 +339,9 @@ body.water-therapy{
 					}					
 				}
 				.shower-image{
+					background-image: url(../images/water_therapy/showering/shower-image-bg.jpg);
+					background-repeat: repeat;
+					background-position: top left;
 					.col-xs-12{
 						padding: 0;
 					}					
@@ -914,6 +917,9 @@ body.water-therapy{
 					height: 360px;
 				}
 				@media (min-width: $screen-md){
+					height: 470px;
+				}
+				@media (min-width: $screen-lg){
 					height: 598px;
 				}
 				.box{
@@ -942,6 +948,9 @@ body.water-therapy{
 					height: 360px;
 				}
 				@media (min-width: $screen-md){
+					height: 470px;
+				}
+				@media (min-width: $screen-lg){
 					height: 598px;
 				}
 				.box-border{

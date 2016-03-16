@@ -3658,7 +3658,7 @@ body.water-therapy .main #banner .container-fluid {
 /* line 21, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #banner .container-fluid .banner {
   background-size: cover;
-  background-image: url(../images/water_therapy/banner.jpg);
+  background-image: url(../images/water_therapy/water-therapy-hero.jpg);
   background-position: center center;
   height: 514px;
   position: relative;

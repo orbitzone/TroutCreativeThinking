@@ -186,7 +186,9 @@ var player = function(){
       showinfo: 0,
       modestbranding: 0,
       rel: 0,
-      origin: 'http://reece-responsive.local'
+      origin: 'http://reece-responsive.trout.com.au',
+      wmode: 'transparent',
+      html5: 1
     },
     autoplay: false,
     loop: false,

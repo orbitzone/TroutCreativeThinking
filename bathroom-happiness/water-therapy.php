@@ -1291,7 +1291,7 @@
                         <div class="shower-technology-flip">
                           <div class="front">
                             <figure class="image">
-                              <img src="images/water_therapy/shower.png" alt="Shower">
+                              <img src="images/water_therapy/shower_technology/showering-technology-body-spray.jpg" alt="Body Spray Shower">
                             </figure>
                             <div class="icon-wrap">
                                 <svg class="icon shape-body-spray"><use xlink:href="#shape-body-spray"></use></svg>
@@ -1302,7 +1302,6 @@
                             </div>
                             <ul class="list-inline">
                               <li><a href="#" target="_blank" class="see-product">See Product</a></li>
-                              <li><a href="#" class="view-video" data-section="body-spray"><svg class="icon shape-play"><use xlink:href="#shape-play"></use></svg>View in Action</a></li>
                             </ul>
                           </div>
                           <div class="back">
@@ -1347,7 +1346,7 @@
                         <div class="shower-technology-flip">
                           <div class="front">
                             <figure class="image">
-                              <img src="images/water_therapy/shower.png" alt="Shower">
+                              <img src="images/water_therapy/shower_technology/showering-technology-air-drop.jpg" alt="Air Drop Shower">
                             </figure>
                             <div class="icon-wrap">
                                 <svg class="icon shape-airdrop"><use xlink:href="#shape-airdrop"></use></svg>
@@ -1386,7 +1385,6 @@
                             </div>
                             <ul class="list-inline">
                               <li><a href="#" target="_blank" class="see-product">See Product</a></li>
-                              <li><a href="#" class="view-video" data-section="turbine"><svg class="icon shape-play"><use xlink:href="#shape-play"></use></svg>View in Action</a></li>
                             </ul>
                           </div>
                           <div class="back">
@@ -1459,7 +1457,7 @@
                         <div class="shower-technology-flip">
                           <div class="front">
                             <figure class="image">
-                              <img src="images/water_therapy/shower.png" alt="Shower">
+                              <img src="images/water_therapy/shower_technology/showering-technology-intense-rain.jpg" alt="Intense Rain Shower">
                             </figure>
                             <div class="icon-wrap">
                                 <svg class="icon shape-intense-rain"><use xlink:href="#shape-intense-rain"></use></svg>

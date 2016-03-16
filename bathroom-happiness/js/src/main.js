@@ -612,7 +612,7 @@ var bathroomHappiness = {
       $('.submenu li').removeClass('active');
       $(this).parent().addClass('active');
       var section = $(this).text().toLowerCase();
-      
+      var topPosition = $('#intro .video-wrap').offset().top - 50;
       if(!deviceMobile){
         var player_container = 'water-therapy-'+section+'-video';
         var video = $('#'+player_container+'-wrap').data('video');
@@ -635,17 +635,17 @@ var bathroomHappiness = {
             });
           },10); 
         };
-        if($('#intro .video-wrap').offset().top == $(window).scrollTop()){
+        if(parseInt(topPosition) == parseInt($(window).scrollTop())){
           $('#water-therapy').attr('class',section);
           scrollMenuAnimation();          
         }else{
-          $('html, body').animate({scrollTop: $('#intro .video-wrap').offset().top},500, function(){
+          $('html, body').animate({scrollTop: topPosition},500, function(){
             $('#water-therapy').attr('class',section);
             scrollMenuAnimation();
           });
         }
       }else{
-        $('html, body').animate({scrollTop: $('#intro .video-wrap').offset().top},500, function(){
+        $('html, body').animate({scrollTop: topPosition},500, function(){
           $('#water-therapy').attr('class',section);
         });
       }      
@@ -692,10 +692,20 @@ var bathroomHappiness = {
       $('#shower-technology .shower-technology-description').removeClass('active');
       $(this).addClass('active');
       var section = $(this).data('section');
-      $('#shower-technology .shower-technology-card').removeClass('active');
-      $('#shower-technology .st-'+section).addClass('active'); 
-      if(windowWidth){
-        $('html, body').animate({scrollTop: $('#shower-technology .shower-technology-cards').offset().top - 20},500);         
+      var posTop = $('#shower-technology .shower-technology-cards').offset().top - 20;
+      if(windowWidth < 768){
+        if(parseInt(posTop) == parseInt($(window).scrollTop())){
+          $('#shower-technology .shower-technology-card').removeClass('active');
+          $('#shower-technology .st-'+section).addClass('active'); 
+        }else{
+          $('html, body').animate({scrollTop: posTop },500, function(){
+            $('#shower-technology .shower-technology-card').removeClass('active');
+            $('#shower-technology .st-'+section).addClass('active'); 
+          });           
+        }
+      }else{
+        $('#shower-technology .shower-technology-card').removeClass('active');
+        $('#shower-technology .st-'+section).addClass('active'); 
       }
       if(playerManager.active.substring(0,2) == 'st'){
         playerManager.stop(playerManager.active);
@@ -917,7 +927,7 @@ var bathroomHappiness = {
         }
       }
       $('.grid-module').each(function(){
-        var menuTopOffset = $(this).find('.grid-module-menu').offset().top + $(this).find('.grid-module-menu').height();
+        var menuTopOffset = $(this).find('.grid-module-menu').offset().top + $(this).find('.grid-module-menu').height() - 50;
         var maxScroll = ($(this).offset().top - 90 + $(this).outerHeight() );
         if(scrollTop >= menuTopOffset){
           if(scrollTop >= maxScroll){

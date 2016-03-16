@@ -645,7 +645,9 @@ var bathroomHappiness = {
           });
         }
       }else{
-        $('html, body').animate({scrollTop: $('#intro .video-wrap').offset().top},500);
+        $('html, body').animate({scrollTop: $('#intro .video-wrap').offset().top},500, function(){
+          $('#water-therapy').attr('class',section);
+        });
       }      
     });
     $('#water-therapy .slides').slick({

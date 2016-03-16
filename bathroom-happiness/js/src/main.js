@@ -612,30 +612,41 @@ var bathroomHappiness = {
       $('.submenu li').removeClass('active');
       $(this).parent().addClass('active');
       var section = $(this).text().toLowerCase();
-      $('#water-therapy').attr('class',section);
-
+      
       if(!deviceMobile){
         var player_container = 'water-therapy-'+section+'-video';
         var video = $('#'+player_container+'-wrap').data('video');
-        if(video){
-          var vars = {
-            showinfo: 0,
-            modestbranding: 0,
-            rel: 0,
-            controls: 0
-          };
-          playerManager.play(player_container, 0);                    
-        }
-        setTimeout(function(){ 
-          var sections = ['rejuvenation', 'relaxation','therapeutic'];
-          $.each(sections, function(key, val){
-            if(val !== section){
-              playerManager.pause('water-therapy-'+val+'-video');
-            }
+        var scrollMenuAnimation = function(){
+          if(video){
+            var vars = {
+              showinfo: 0,
+              modestbranding: 0,
+              rel: 0,
+              controls: 0
+            };
+            playerManager.play(player_container, 0);                    
+          }
+          setTimeout(function(){ 
+            var sections = ['rejuvenation', 'relaxation','therapeutic'];
+            $.each(sections, function(key, val){
+              if(val !== section){
+                playerManager.pause('water-therapy-'+val+'-video');
+              }
+            });
+          },10); 
+        };
+        if($('#intro .video-wrap').offset().top == $(window).scrollTop()){
+          $('#water-therapy').attr('class',section);
+          scrollMenuAnimation();          
+        }else{
+          $('html, body').animate({scrollTop: $('#intro .video-wrap').offset().top},500, function(){
+            $('#water-therapy').attr('class',section);
+            scrollMenuAnimation();
           });
-        },10); 
-      }
-      $('html, body').animate({scrollTop: $('#intro .video-wrap').offset().top},500);     
+        }
+      }else{
+        $('html, body').animate({scrollTop: $('#intro .video-wrap').offset().top},500);
+      }      
     });
     $('#water-therapy .slides').slick({
       arrows: false,
@@ -819,11 +830,6 @@ var bathroomHappiness = {
       var $module = $(this);
       $(this).find('.grid-module-menu a, .scrolling-menu-list a').on('click', function(){
         var section = $(this).data('section');
-        $module.find('.grid-module-menu a, .scrolling-menu-list a').removeClass('active');
-        $module.find('.scrolling-menu-list, .scrolling-menu-wrap').removeClass('active');
-        $module.find('.grid-module-menu a[data-section='+section+'], .scrolling-menu-list a[data-section='+section+']').addClass('active');
-        $module.find('.grid-module-description .box-content').removeClass('active');
-        $module.find('.grid-module-description .box-content-'+section).addClass('active');
         currentSection = section;
         var next = (section * 1) + 1;
         var prev = (section * 1) - 1;
@@ -835,14 +841,31 @@ var bathroomHappiness = {
         }
         var containerWidth = $module.find('.grid-module-intro-wrap').width();
         
-        $('html, body').animate({
-          scrollTop: $module.find('.grid-module-description').offset().top - 29,
-        },500, function(){
-          $module.find('.grid-module-zones-section').removeClass('current prev next');
-          $module.find('.grid-module-zones-section-'+section).addClass('current');
-          $module.find('.grid-module-zones-section-'+next).addClass('next');
-          $module.find('.grid-module-zones-section-'+prev).addClass('prev');          
-        });
+        if(parseInt(($module.find('.grid-module-description').offset().top - 29)) == parseInt($(window).scrollTop())){
+            $module.find('.grid-module-menu a, .scrolling-menu-list a').removeClass('active');
+            $module.find('.scrolling-menu-list, .scrolling-menu-wrap').removeClass('active');
+            $module.find('.grid-module-description .box-content').removeClass('active');
+            $module.find('.grid-module-zones-section').removeClass('current prev next');
+            $module.find('.grid-module-zones-section-'+section).addClass('current');
+            $module.find('.grid-module-zones-section-'+next).addClass('next');
+            $module.find('.grid-module-zones-section-'+prev).addClass('prev'); 
+            $module.find('.grid-module-menu a[data-section='+section+'], .scrolling-menu-list a[data-section='+section+']').addClass('active');
+            $module.find('.grid-module-description .box-content-'+section).addClass('active');                 
+        }else{
+          $('html, body').animate({
+            scrollTop: $module.find('.grid-module-description').offset().top - 29,
+          },500, function(){
+            $module.find('.grid-module-menu a, .scrolling-menu-list a').removeClass('active');
+            $module.find('.scrolling-menu-list, .scrolling-menu-wrap').removeClass('active');
+            $module.find('.grid-module-description .box-content').removeClass('active');
+            $module.find('.grid-module-zones-section').removeClass('current prev next');
+            $module.find('.grid-module-zones-section-'+section).addClass('current');
+            $module.find('.grid-module-zones-section-'+next).addClass('next');
+            $module.find('.grid-module-zones-section-'+prev).addClass('prev'); 
+            $module.find('.grid-module-menu a[data-section='+section+'], .scrolling-menu-list a[data-section='+section+']').addClass('active');
+            $module.find('.grid-module-description .box-content-'+section).addClass('active');                 
+          });
+        }
         return false;
       });
       $(this).find('.scrolling-menu-wrap .scrolling-menu').on('click', function(){

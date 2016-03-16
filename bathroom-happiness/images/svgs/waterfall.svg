@@ -3,6 +3,7 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="70px"
 	 height="70px" viewBox="0 0 70 70" enable-background="new 0 0 70 70" xml:space="preserve">
 <g id="waterfall">
-	<path d="M40.6,45.4L54.8,65H15.2l14.2-19.6L6.1,5h57.9L40.6,45.4z"/>
+	<path d="M41,36.5l13.8,24c0,0-14.7-5-19.8-5c-5.1,0-19.8,5-19.8,5l13.8-24L9.3,9.5c0,0,19.2,3.2,25.7,3.2
+		c6.5,0,25.7-3.2,25.7-3.2L41,36.5z"/>
 </g>
 </svg>

@@ -47,19 +47,19 @@
                     <div class="videos">
                       <div class="section-1 section">
                         <img src="images/water_therapy/video.jpg" alt="Video">
-                        <div id="water-therapy-rejuvenation-video-wrap" class="video-iframe-wrap video video-3" data-video="a0Qk-tsGY5Q">
+                        <div id="water-therapy-rejuvenation-video-wrap" class="video-iframe-wrap video video-3" data-video="afyJFg51iM4">
                           <figure id="water-therapy-rejuvenation-video"></figure>
                         </div>
                       </div>    
                       <div class="section-2 section">
                         <img src="images/water_therapy/video.jpg" alt="Video">                      
-                        <div id="water-therapy-relaxation-video-wrap" class="video-iframe-wrap video video-2" data-video="ZiWCFmto5UM">
+                        <div id="water-therapy-relaxation-video-wrap" class="video-iframe-wrap video video-2" data-video="TkHhV7WnyaY">
                           <figure id="water-therapy-relaxation-video"></figure>
                         </div>                    
                       </div>
                       <div class="section-3 section">
                         <img src="images/water_therapy/video.jpg" alt="Video">
-                        <div id="water-therapy-therapeutic-video-wrap" class="video-iframe-wrap video video-1" data-video="0X0_Kj8YiSA">
+                        <div id="water-therapy-therapeutic-video-wrap" class="video-iframe-wrap video video-1" data-video="Cm6vFVEct10">
                           <figure id="water-therapy-therapeutic-video"></figure>          
                         </div>                    
                       </div>                                        
@@ -127,7 +127,7 @@
                     <div class="col-sm-3">
                       <div class="section-content">
                       <figure class="slider-1 sensory-slider section" style="background-image: url(images/water_therapy/slider-1.jpg);">
-                          <h2>Sensory<br/>toolkit</h2>
+                          <h2>toolkit</h2>
                           <div class="slides">
                             <div class="slide">
                               <div class="icon-wrap">
@@ -165,7 +165,7 @@
                           </div><!-- /.slides -->
                         </figure>
                         <figure class="slider-2 sensory-slider section" style="background-image: url(images/water_therapy/slider-1.jpg);">
-                          <h2>Sensory<br/>toolkit</h2>
+                          <h2>toolkit</h2>
                           <div class="slides">
                             <div class="slide">
                               <div class="icon-wrap">
@@ -203,7 +203,7 @@
                           </div><!-- /.slides -->
                         </figure>
                         <figure class="slider-3 sensory-slider section" style="background-image: url(images/water_therapy/slider-1.jpg);">
-                          <h2>Sensory<br/>toolkit</h2>
+                          <h2>toolkit</h2>
                           <div class="slides">
                             <div class="slide">
                               <div class="icon-wrap">
@@ -1278,7 +1278,7 @@
                             </ul>
                           </div>
                           <div class="back">
-                            <div id="st-waterfall-video-wrap" class="video-iframe-wrap video" data-video="BIAWhMhhY58">
+                            <div id="st-waterfall-video-wrap" class="video-iframe-wrap video" data-video="MhcBXnO-uHE">
                                 <figure id="st-waterfall-video"></figure>          
                             </div>
                             <button type="button" class="close-video" data-section="waterfall"><svg class="icon shape-close"><use xlink:href="#shape-close"></use></svg><span class="sr-only">Close</span></button>
@@ -1362,7 +1362,7 @@
                             </ul>
                           </div>
                           <div class="back">
-                            <div id="st-airdrop-video-wrap" class="video-iframe-wrap video" data-video="BIAWhMhhY58">
+                            <div id="st-airdrop-video-wrap" class="video-iframe-wrap video" data-video="J41VDO-aIVk">
                                 <figure id="st-airdrop-video"></figure>          
                             </div>
                             <button type="button" class="close-video" data-section="airdrop"><svg class="icon shape-close"><use xlink:href="#shape-close"></use></svg><span class="sr-only">Close</span></button>
@@ -1418,7 +1418,7 @@
                             </ul>
                           </div>
                           <div class="back">
-                            <div id="st-raindance-video-wrap" class="video-iframe-wrap video" data-video="BIAWhMhhY58">
+                            <div id="st-raindance-video-wrap" class="video-iframe-wrap video" data-video="LJdcp_pSvNk">
                                 <figure id="st-raindance-video"></figure>          
                             </div>
                             <button type="button" class="close-video" data-section="raindance"><svg class="icon shape-close"><use xlink:href="#shape-close"></use></svg><span class="sr-only">Close</span></button>
@@ -1446,7 +1446,7 @@
                             </ul>
                           </div>
                           <div class="back">
-                            <div id="st-soft-rain-video-wrap" class="video-iframe-wrap video" data-video="BIAWhMhhY58">
+                            <div id="st-soft-rain-video-wrap" class="video-iframe-wrap video" data-video="RjsyLg2h9HA">
                                 <figure id="st-soft-rain-video"></figure>          
                             </div>
                             <button type="button" class="close-video" data-section="soft-rain"><svg class="icon shape-close"><use xlink:href="#shape-close"></use></svg><span class="sr-only">Close</span></button>
@@ -1474,7 +1474,7 @@
                             </ul>
                           </div>
                           <div class="back">
-                            <div id="st-intense-rain-video-wrap" class="video-iframe-wrap video" data-video="BIAWhMhhY58">
+                            <div id="st-intense-rain-video-wrap" class="video-iframe-wrap video" data-video="lTNu3YEdnnY">
                                 <figure id="st-intense-rain-video"></figure>          
                             </div>
                             <button type="button" class="close-video" data-section="intense-rain"><svg class="icon shape-close"><use xlink:href="#shape-close"></use></svg><span class="sr-only">Close</span></button>
@@ -1502,7 +1502,7 @@
                             </ul>
                           </div>
                           <div class="back">
-                            <div id="st-massage-video-wrap" class="video-iframe-wrap video" data-video="BIAWhMhhY58">
+                            <div id="st-massage-video-wrap" class="video-iframe-wrap video" data-video="tBBetrW789I">
                                 <figure id="st-massage-video"></figure>          
                             </div>
                             <button type="button" class="close-video" data-section="massage"><svg class="icon shape-close"><use xlink:href="#shape-close"></use></svg><span class="sr-only">Close</span></button>

@@ -402,6 +402,12 @@ body.water-therapy{
 				.slides{
 					color: white;
 					padding-bottom: 40px;
+					@media (min-width: $screen-sm){
+						padding-bottom: 25px;
+					}
+					@media (min-width: $screen-md){
+						padding-bottom: 40px;
+					}
 					.slick-dots{
 						bottom: 0;
 						margin-bottom: 0;

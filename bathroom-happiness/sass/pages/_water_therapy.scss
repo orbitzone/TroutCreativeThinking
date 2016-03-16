@@ -1383,12 +1383,19 @@ body.water-therapy{
 					@include border-radius(0);
 					padding: 0;
 					background: transparent;
+					opacity: 0;
+					@include transition(0.5s all ease-out);
 					.icon{
 						fill: $water-therapy-green;
 						width: 32px;
 						height: 32px;
 						position: relative;
 						top: 2px;
+					}
+				}
+				&.active{
+					.close-video{
+						opacity: 1;
 					}
 				}
 				.image{

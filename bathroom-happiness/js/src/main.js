@@ -597,7 +597,11 @@ var bathroomHappiness = {
                 $.magnificPopup.close();
               }
               var active = $('#water-therapy').attr('class');
-              playerManager.play('water-therapy-'+active+'-video');
+              var mute = 1;
+              if($('#water-therapy button.sound-on-off').hasClass('sound-on')){
+                mute = 0;
+              }
+              playerManager.play('water-therapy-'+active+'-video', mute);
               $('#banner .banner').removeClass('playing');
               $('#banner .stop-full-video').removeClass('show');
               $('#banner .play-full-video').removeClass('paused playing');
@@ -606,7 +610,11 @@ var bathroomHappiness = {
             onStop: function(){
               var active = $('#water-therapy').attr('class');
               $('#banner .banner').removeClass('playing');
-              playerManager.play('water-therapy-'+active+'-video');
+              var mute = 1;
+              if($('#water-therapy button.sound-on-off').hasClass('sound-on')){
+                mute = 0;
+              }
+              playerManager.play('water-therapy-'+active+'-video',mute);
             },
             onPaused: function(){
               $('#banner .play-full-video').removeClass('paused playing');
@@ -622,7 +630,7 @@ var bathroomHappiness = {
       $(this).toggleClass('sound-on sound-off');
       var section = $('.submenu li.active button').text().toLowerCase();
       var player_container = 'water-therapy-'+section+'-video';
-      console.log(player_container);
+      
       if($('#water-therapy button.sound-on-off').hasClass('sound-on')){
         playerManager.unmute(player_container);
       }else{
@@ -967,7 +975,11 @@ var bathroomHappiness = {
           if($('#water-therapy .videos').hasClass('paused')){
             $('#water-therapy .videos').removeClass('paused');
             var section = $('#water-therapy').attr('class');
-            playerManager.play('water-therapy-'+section+'-video',1);
+            var mute = 1;
+            if($('#water-therapy button.sound-on-off').hasClass('sound-on')){
+              mute = 0;
+            }
+            playerManager.play('water-therapy-'+section+'-video',mute);
           }
         }
       }

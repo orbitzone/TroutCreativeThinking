@@ -1,0 +1,756 @@
+//Bootstrap imports
+@import "bootstrap/bootstrap.less";
+//@import "bootstrap/responsive.less";
+  //Application imports
+@import "reece-variables.less";
+@import "legacy-bootstrap/variables.less";
+@import "legacy-bootstrap/mixins.less";
+@import "legacy-bootstrap/classes.less";
+
+// Pointer events My Account Invoice Search won't work with this disabled - reset to auto
+.form-control-feedback {
+  pointer-events: auto;
+}
+
+// Form
+form {
+  margin: 0 0 @baseLineHeight;
+}
+
+
+// Global Declarations
+//====================================================================================================================================
+//====================================================================================================================================
+
+a {
+  color: @linkDefault;
+  color: @linkDefault;
+  &:focus {
+    outline: none;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+// Utility Classes
+//====================================================================================================================================
+//====================================================================================================================================
+
+.bottom-space {
+  margin-bottom: @baseLineHeight;
+}
+
+.top-space {
+  margin-top: @baseLineHeight;
+}
+
+// Custom Carousel Arrows (Bootstrap Override)
+//====================================================================================================================================
+//====================================================================================================================================
+
+.carousel-control {
+  height: 80px;
+  margin-top: 0;
+  font-size: 120px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
+  background-color: transparent;
+  border: 0;
+  z-index: 10;
+  color: #555;
+}
+
+.carousel {
+  .background--dark {
+    &.carousel-control {
+      color: #fff;
+    }
+  }
+//  .background--light {
+//    &.carousel-control {
+//      color: #000;
+//    }
+//  }
+  .item {
+    img {
+      width: 100%;
+    }
+    .edge-fade:before{
+      box-shadow:inset 0px 1px 1px #888888;
+    }
+  }
+  &.opacity8 {
+    .carousel-control {
+      .opacity(80);
+    }
+  }
+  &.opacity9 {
+    .carousel-control {
+      .opacity(90);
+    }
+  }
+}
+
+// Custom Button Module
+//====================================================================================================================================
+//====================================================================================================================================
+
+.btn-highlight {
+  .buttonBackground(@warmHighlightBackground, @warmHighlightBackground);
+  .border-radius(0);
+}
+
+.btn-highlight-alternate {
+  .buttonBackground(lighten(@reeceGrey, 10%), lighten(@reeceGrey, 10%));
+  .border-radius(0);
+}
+
+// Read more link with animated arrow - copied from reece-aboutus.less
+//====================================================================================================================================
+//====================================================================================================================================
+
+.read-more,
+.more-articles {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.read-more i {
+  margin: 2px 0 2px 8px;
+  -webkit-transition: margin-left;
+  -moz-transition: margin-left;
+  -o-transition: margin-left;
+  transition: margin-left;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.read-more:hover {
+  text-decoration: none;
+}
+
+.read-more:hover i {
+  margin-left: 15px;
+}
+
+.download-pdf {
+  color: @reeceLightBlue;
+  text-transform: uppercase;
+  font-weight: bold;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.grey-bg {
+  background: @lightBackground;
+}
+
+.grey-bg + footer {
+  margin-top: 0
+}
+
+// Page Wrapper Module
+//====================================================================================================================================
+//====================================================================================================================================
+
+.ocnav-wrapper {
+  display: none;
+  position: fixed;
+  right: 0;
+  width: 280px;
+  padding: 5px 0 20px 30px;
+  top: 0;
+  bottom: 0;
+  overflow: auto;
+  z-index: 999;
+  background: @ocnavBackground;
+  box-shadow: inset 20px 0 15px -15px rgba(0, 0, 0, 0.8);
+  color: @ocnavTextColor;
+}
+
+.ocmain-wrapper {
+  -webkit-transition: 0.5s left ease-in-out;
+  -moz-transition: 0.5s left ease-in-out;
+  -o-transition: 0.5s left ease-in-out;
+  transition: 0.5s left ease-in-out;
+}
+
+.ocnav-wrapper {
+  -webkit-transition: 0.5s right ease-in-out;
+  -moz-transition: 0.5s right ease-in-out;
+  -o-transition: 0.5s right ease-in-out;
+  transition: 0.5s right ease-in-out;
+}
+
+.ocmain-wrapper {
+  width: 100%;
+  position: relative;
+  z-index: 1001;
+  left: 0;
+}
+
+.ui-loader {
+  display: none;
+}
+
+@media (max-width: 979px) {
+
+  .ocnav-wrapper {
+    display: block;
+  }
+
+  .off-canvas-open .ocnav-wrapper {
+    right: 0;
+  }
+
+  .off-canvas-open .ocmain-wrapper {
+    left: -280px;
+  }
+
+  .ocnav-wrapper .nav {
+    border-top: 1px solid @ocnavDarken;
+    border-bottom: 1px solid @ocnavHighlight;
+  }
+
+  .ocnav-wrapper .nav li {
+    border-top: 1px solid @ocnavHighlight;
+    border-bottom: 1px solid @ocnavDarken;
+  }
+
+  .ocnav-wrapper .nav li a {
+    color: @ocnavTextColor;
+    text-shadow: 0 -1px 1px @ocnavDarken;
+    padding: 10px 0;
+    font-size: @font-size-large;
+  }
+
+  .ocnav-wrapper .nav li a:hover, .ocnav-wrapper .nav li a:focus {
+    background: none;
+  }
+
+  .ocnav-wrapper .nav li > .nav li,
+  .ocnav-wrapper .nav li > .nav {
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .ocnav-wrapper .nav li > .nav li a {
+    padding: 7px 10px;
+    border-radius: 5px 0 0 5px;
+  }
+
+  .ocnav-wrapper .nav li > .nav li a:hover {
+    background: darken(@ocnavBackground, 3%);
+  }
+}
+
+// Breadcrumb Module
+//====================================================================================================================================
+//====================================================================================================================================
+
+.breadcrumb {
+  /* floating breadcrumb elements to add the search and location to it. */
+  .clearfix;
+  margin-top: 20px;
+  background-color: @lightBackground;
+  li {
+    display: block;
+    float: left;
+  }
+  a {
+    color: darken(@lightBackground, 20%);
+  }
+}
+
+// Content Wrapper Modules
+//====================================================================================================================================
+//====================================================================================================================================
+
+.main-header .header-container, .main-footer .footer-container, .masonry-container, .content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-header .title-wrapper, .content-container .inner-wrapper {
+  margin: 0 20px;
+}
+
+.main-header .title-wrapper a img {
+  margin: 0 0 11px;
+  padding: 0;
+  width: 381px !important;
+}
+
+.main-header .title-wrapper p {
+  margin: 0 0 10px;
+}
+
+// Main Header Module
+//====================================================================================================================================
+//====================================================================================================================================
+
+// Video Fix
+//====================================================================================================================================
+//====================================================================================================================================
+
+.flex-video {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 67.5%;
+  height: 0;
+  margin-bottom: 5px;
+  overflow: hidden;
+  text-indent: 100px;
+  width: 55px;
+  background-image: url('/images/logos/reece-logo-mobile.png');
+  background-color: #eee;
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  background-size: 80% auto;
+}
+
+.flex-video.widescreen {
+  padding-bottom: 57.25%;
+}
+
+.flex-video.vimeo {
+  padding-top: 0;
+}
+
+.flex-video iframe,
+.flex-video object,
+.flex-video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+// Navigation Modules
+//====================================================================================================================================
+//====================================================================================================================================
+@import "reece-navigation.less";
+
+.accountTools a, .accountTools a:hover {
+  color: #fff;
+  text-decoration: none
+}
+
+// Carousel Module
+//====================================================================================================================================
+//====================================================================================================================================
+
+#headCarousel {
+  max-width: 1500px;
+  margin: auto;
+}
+
+.carousel-control {
+  outline: none;
+}
+
+.carousel .item > img {
+  margin: auto;
+}
+
+.carousel-control {
+  top: 50%;
+}
+
+// Custom Carousel Control Module
+//====================================================================================================================================
+//====================================================================================================================================
+
+.custom-carousel-control {
+
+  //Need to use some magic numbers here as the layout does not accommodate 'special buttons' very well
+  .carousel-control {
+    width: auto;
+    top: auto;
+    font-size: 80px;
+    left: auto;
+    right: 0;
+
+    &.top {
+      top: -10px;
+    }
+
+    &.bottom {
+      bottom: -10px;
+    }
+
+    &.left {
+      right: 20px;
+    }
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+}
+
+// Footer Modules
+//====================================================================================================================================
+//====================================================================================================================================
+
+.site-footer {
+  background: white;
+  margin-top: 35px;
+}
+
+.social {
+  background: lighten(@reeceGrey, 50%);
+  padding: 15px 10px;
+}
+
+.social-footer {
+
+  li {
+    list-style: none;
+    display: block;
+    float: left;
+    margin: 0 10px 0 0;
+    padding: 0;
+    line-height: normal;
+
+    &.contact {
+      float: right;
+    }
+
+    i {
+
+    }
+
+    &.plumbing a:hover {
+      color: @brandingPlumbing;
+    }
+
+    @media (max-width: 480px) {
+      margin: 0 0 0 5px;
+
+      &:first-child {
+        margin: 0;
+      }
+    }
+  }
+
+  a {
+    font-size: 12px;
+    color: @grayDark;
+
+    &:hover {
+      text-decoration: none;
+      color: @brandingBathrooms;
+    }
+  }
+}
+
+.sitemap-footer {
+  padding-top: 20px;
+
+  ul {
+    margin: 0 50px 0 0;
+    padding: 0;
+  }
+
+  h4 {
+    margin: 0 50px 0 0;
+    padding: 0 0 5px 0;
+  }
+
+  li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    a {
+      display: block;
+      padding: 3px 0;
+      border-top: 1px solid #CCC;
+    }
+  }
+
+  a {
+    color: #454545;
+    font-size: 12px;
+    outline: none;
+    font-weight: normal;
+    text-transform: uppercase;
+
+    &:hover {
+      text-decoration: none;
+      color: #999;
+    }
+  }
+
+  .accordion-group {
+    border: none;
+  }
+
+  .accordion-heading {
+    border-bottom: 1px solid #CCC;
+    padding: 5px 0;
+
+    .accordion-toggle {
+      padding: 0;
+    }
+  }
+
+  .accordion-inner {
+    border: none;
+    padding: 0;
+
+    a {
+      border-top: none;
+      border-bottom: 1px solid #CCC;
+    }
+  }
+
+  .fa-plus {
+    float: right;
+    font-size: 11px;
+    color: #ccc;
+  }
+}
+
+.hvacr {
+  a {
+    &:hover, &:focus {
+      color: @brandingHvacr;
+    }
+  }
+  .page-branding {
+    &.text-brand {
+      color: @brandingHvacr;
+    }
+  }
+  .page {
+    h2,h3 {
+      color: @brandingHvacr;
+    }
+  }
+}
+
+.bathrooms {
+  a {
+    &:hover, &:focus {
+      color: @brandingBathrooms;
+    }
+  }
+  .page-branding {
+    &.text-brand {
+      color: @brandingBathrooms;
+    }
+  }
+  .page {
+    h2,h3 {
+      color: @brandingBathrooms;
+    }
+  }
+}
+
+.plumbing {
+  a {
+    &:hover, &:focus {
+      color: @brandingPlumbing;
+    }
+  }
+  .page-branding {
+    &.text-brand {
+      color: @brandingPlumbing;
+    }
+  }
+  .page {
+    h2,h3 {
+      color: @brandingPlumbing;
+    }
+  }
+}
+
+.irrigation {
+  a {
+    &:hover, &:focus {
+      color: @brandingIrrigation;
+    }
+  }
+  .page-branding {
+    &.text-brand {
+      color: @brandingIrrigation;
+    }
+  }
+  .page {
+    h2,h3 {
+      color: @brandingIrrigation;
+    }
+  }
+}
+
+.onsite {
+  a {
+    &:hover, &:focus {
+      color: @brandingOnsite;
+    }
+  }
+  .page-branding {
+    &.text-brand {
+      color: @brandingOnsite;
+    }
+  }
+  .page {
+    h2,h3 {
+      color: @brandingOnsite;
+    }
+  }
+}
+
+.civil {
+  a {
+    &:hover, &:focus {
+      color: @brandingCivil;
+    }
+  }
+  .page-branding {
+    &.text-brand {
+      color: @brandingCivil;
+    }
+  }
+  .page {
+    h2,h3 {
+      color: @brandingCivil;
+    }
+  }
+}
+
+/* Global Site Message */
+.site-message {
+  margin-bottom:0px;
+}
+.myaccount {
+  .site-message {
+    padding:8px 35px 8px 14px;
+  }
+}
+
+.menuButton {
+  .site-message-icon{
+    position: absolute;
+    right:5px;
+    top:5px;
+  }
+}
+
+/* Permission Denied */
+.no-access {
+  h3 {
+    font-size:24.5px;
+    margin-top:20px;
+  }
+  p {
+    font-size:14px;
+    margin-top:10px;
+  }
+}
+
+/* Browser Messages */
+
+.browser-message {
+  background-color:#fcf8e3;
+  .alert {
+    display:none;
+    border:none;
+    padding:8px 35px 8px 14px;
+    margin-bottom:0px;
+  }
+}
+
+/* Terms & Conditions */
+.terms {
+  li {
+    line-height:2em;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+
+/* Location Modal */
+.locationModal {
+  text-align: center;
+  max-width: 330px;
+  h3 {
+    color: #c91d1d;
+    font-weight: normal;
+    font-size: 20px;
+  }
+  .dropdown {
+    border: solid 1px @white;
+  }
+  a {
+    color: #333;
+  }
+  .open {
+    border: solid 1px rgba(0, 0, 0, 0.2);
+    border-botom: none;
+    .border-radius(10px 10px 0 0);
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+  }
+  .modal-body {
+    overflow-y: visible;
+    padding: 30px 15px 20px;
+  }
+  .btn-modal {
+    background: #c91d1d;
+    border: none;
+    padding: 5px 20px;
+    letter-spacing: 1px;
+    color: @white;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+
+  }
+  .actionWrap {
+    padding-top: 10px
+  }
+}
+
+@media (max-width: 767px) {
+
+  body {
+    padding: 0;
+  }
+}
+// Printing
+//====================================================================================================================================
+//====================================================================================================================================
+
+@media print {
+
+  .hidden-print,
+  // headers, footers
+  .navbar,
+  .ocnav-wrapper,
+  .main-header,
+  .breadcrumb,
+  .social,
+  .sitemap-footer {
+    display:none;
+  }
+
+}
+
+
+
+
+@import "reece-brands.less";
+@import "reece-ie.less";

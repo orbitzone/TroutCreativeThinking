@@ -835,6 +835,10 @@ var bathroomHappiness = {
         currentSection = section;
         var next = (section * 1) + 1;
         var prev = (section * 1) - 1;
+        $module.find('.grid-module-menu a, .scrolling-menu-list a').removeClass('active');
+        $module.find('.scrolling-menu-list, .scrolling-menu-wrap').removeClass('active');
+        $module.find('.grid-module-menu a[data-section='+section+'], .scrolling-menu-list a[data-section='+section+']').addClass('active');
+        
         if(next > $module.find('.grid-module-zones-section').length){
           next = 1;
         }
@@ -843,30 +847,26 @@ var bathroomHappiness = {
         }
         var containerWidth = $module.find('.grid-module-intro-wrap').width();
         
-        if(parseInt(($module.find('.grid-module-description').offset().top - 29)) == parseInt($(window).scrollTop())){
-            $module.find('.grid-module-menu a, .scrolling-menu-list a').removeClass('active');
-            $module.find('.scrolling-menu-list, .scrolling-menu-wrap').removeClass('active');
+        if(parseInt(($module.find('.grid-module-description').offset().top - 50)) == parseInt($(window).scrollTop())){
             $module.find('.grid-module-description .box-content').removeClass('active');
             $module.find('.grid-module-zones-section').removeClass('current prev next');
             $module.find('.grid-module-zones-section-'+section).addClass('current');
             $module.find('.grid-module-zones-section-'+next).addClass('next');
             $module.find('.grid-module-zones-section-'+prev).addClass('prev'); 
-            $module.find('.grid-module-menu a[data-section='+section+'], .scrolling-menu-list a[data-section='+section+']').addClass('active');
             $module.find('.grid-module-description .box-content-'+section).addClass('active');                 
         }else{
-          $('html, body').animate({
-            scrollTop: $module.find('.grid-module-description').offset().top - 29,
-          },500, function(){
-            $module.find('.grid-module-menu a, .scrolling-menu-list a').removeClass('active');
-            $module.find('.scrolling-menu-list, .scrolling-menu-wrap').removeClass('active');
-            $module.find('.grid-module-description .box-content').removeClass('active');
-            $module.find('.grid-module-zones-section').removeClass('current prev next');
-            $module.find('.grid-module-zones-section-'+section).addClass('current');
-            $module.find('.grid-module-zones-section-'+next).addClass('next');
-            $module.find('.grid-module-zones-section-'+prev).addClass('prev'); 
-            $module.find('.grid-module-menu a[data-section='+section+'], .scrolling-menu-list a[data-section='+section+']').addClass('active');
-            $module.find('.grid-module-description .box-content-'+section).addClass('active');                 
-          });
+          setTimeout(function(){
+            $('html, body').animate({
+              scrollTop: $module.find('.grid-module-description').offset().top - 50,
+            },500, function(){            
+              $module.find('.grid-module-description .box-content').removeClass('active');
+              $module.find('.grid-module-zones-section').removeClass('current prev next');
+              $module.find('.grid-module-zones-section-'+section).addClass('current');
+              $module.find('.grid-module-zones-section-'+next).addClass('next');
+              $module.find('.grid-module-zones-section-'+prev).addClass('prev'); 
+              $module.find('.grid-module-description .box-content-'+section).addClass('active');                 
+            });
+          },300);          
         }
         return false;
       });

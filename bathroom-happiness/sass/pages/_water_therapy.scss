@@ -1513,6 +1513,8 @@ body.water-therapy{
 								height: 555px;
 							}	
 							iframe{
+								position: relative;
+								z-index: 1;
 								width: 574.59px;
 								height: 325.87px;	
 								@media (min-width: $screen-sm){
@@ -1539,12 +1541,13 @@ body.water-therapy{
 							right: 0px;
 							width: 40px;
 							height: 40px;
-							z-index: 4;
+							z-index: 10;
 							@include appearance(none);
 							outline: none;
 							border: none;
 							@include border-radius(0);
-							background: black;
+							padding: 0;
+							background: transparent;
 							.icon{
 								fill: $water-therapy-green;
 								width: 32px;

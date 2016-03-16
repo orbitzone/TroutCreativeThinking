@@ -5770,10 +5770,10 @@ body.water-therapy .main #shower-technology .shower-technology-description .imag
 body.water-therapy .main #shower-technology .shower-technology-description .image:after {
   content: " ";
   display: block;
-  height: 39px;
+  height: 76px;
   background: url(../images/water_therapy/shower_technology/overlay.png) repeat-x;
   position: absolute;
-  bottom: -1px;
+  bottom: -30px;
   left: 0;
   width: 100%;
 }
@@ -5817,14 +5817,14 @@ body.water-therapy .main #shower-technology .shower-technology-description .icon
 body.water-therapy .main #shower-technology .shower-technology-description .icon-wrap .icon {
   width: 55px;
   height: 55px;
-  fill: white;
+  fill: #cacaca;
 }
 /* line 1422, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .icon-wrap:after {
   content: " ";
   width: 22px;
   height: 1px;
-  background: white;
+  background: #cacaca;
   position: absolute;
   bottom: 0px;
   left: 50%;

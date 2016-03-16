@@ -168,7 +168,8 @@
                 <div class="product">
                   <a href="#" target="_blank">
                     <figure class="image">
-                      <img src="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
+                      <img src="
+                      http://www.reece.com.au/assets/products/820000/9504464/_resampled/SetSize300225-LAUFEN-Solid-Surface-Bath-9504464-hero-2.jpg" alt="Laufen Solid Surface Bath">
                     </figure>
                     <div class="product-description">
                       <h5>LAUFEN Palomba Collection</h5>
@@ -184,11 +185,11 @@
                 <div class="product">
                   <a href="#" target="_blank">
                     <figure class="image">
-                      <img src="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
+                      <img src="http://www.reece.com.au/assets/products/143000/1771279/_resampled/SetSize300225-Kaldewei-Vaio-Freestanding-Oval-Bath-1771279-hero-2.jpg" alt="Laufen Solid Surface Bath">
                     </figure>
                     <div class="product-description">
-                      <h5>LAUFEN Palomba Collection</h5>
-                      <h4>Solid Surface Freestanding Bath</h4>
+                      <h5>Kaldewei Vaio</h5>
+                      <h4>Freestanding Oval bath</h4>
                     </div>
                     <div class="button">
                       Shop Now
@@ -200,11 +201,11 @@
                 <div class="product">
                   <a href="#" target="_blank">
                     <figure class="image">
-                      <img src="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
+                      <img src="http://www.reece.com.au/assets/products/142000/9504058/_resampled/SetSize300225-Kado-Lure-1500-Petite-Black-Freestanding-Bath-9504058-hero-1.jpg" alt="Laufen Solid Surface Bath">
                     </figure>
                     <div class="product-description">
-                      <h5>LAUFEN Palomba Collection</h5>
-                      <h4>Solid Surface Freestanding Bath</h4>
+                      <h5>Kado Lure</h5>
+                      <h4>1500 Petite Black Freestanding Bath</h4>
                     </div>
                     <div class="button">
                       Shop Now
@@ -304,7 +305,8 @@
                 <div class="product">
                   <a href="#" target="_blank">
                     <figure class="image">
-                      <img src="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
+                      <img src="
+                      http://www.reece.com.au/assets/products/820000/9504464/_resampled/SetSize300225-LAUFEN-Solid-Surface-Bath-9504464-hero-2.jpg" alt="Laufen Solid Surface Bath">
                     </figure>
                     <div class="product-description">
                       <h5>LAUFEN Palomba Collection</h5>
@@ -320,11 +322,11 @@
                 <div class="product">
                   <a href="#" target="_blank">
                     <figure class="image">
-                      <img src="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
+                      <img src="http://www.reece.com.au/assets/products/143000/1771279/_resampled/SetSize300225-Kaldewei-Vaio-Freestanding-Oval-Bath-1771279-hero-2.jpg" alt="Laufen Solid Surface Bath">
                     </figure>
                     <div class="product-description">
-                      <h5>LAUFEN Palomba Collection</h5>
-                      <h4>Solid Surface Freestanding Bath</h4>
+                      <h5>Kaldewei Vaio</h5>
+                      <h4>Freestanding Oval bath</h4>
                     </div>
                     <div class="button">
                       Shop Now
@@ -336,11 +338,11 @@
                 <div class="product">
                   <a href="#" target="_blank">
                     <figure class="image">
-                      <img src="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
+                      <img src="http://www.reece.com.au/assets/products/142000/9504058/_resampled/SetSize300225-Kado-Lure-1500-Petite-Black-Freestanding-Bath-9504058-hero-1.jpg" alt="Laufen Solid Surface Bath">
                     </figure>
                     <div class="product-description">
-                      <h5>LAUFEN Palomba Collection</h5>
-                      <h4>Solid Surface Freestanding Bath</h4>
+                      <h5>Kado Lure</h5>
+                      <h4>1500 Petite Black Freestanding Bath</h4>
                     </div>
                     <div class="button">
                       Shop Now
@@ -445,7 +447,8 @@
                 <div class="product">
                   <a href="#" target="_blank">
                     <figure class="image">
-                      <img src="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
+                      <img src="
+                      http://www.reece.com.au/assets/products/820000/9504464/_resampled/SetSize300225-LAUFEN-Solid-Surface-Bath-9504464-hero-2.jpg" alt="Laufen Solid Surface Bath">
                     </figure>
                     <div class="product-description">
                       <h5>LAUFEN Palomba Collection</h5>
@@ -461,11 +464,11 @@
                 <div class="product">
                   <a href="#" target="_blank">
                     <figure class="image">
-                      <img src="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
+                      <img src="http://www.reece.com.au/assets/products/143000/1771279/_resampled/SetSize300225-Kaldewei-Vaio-Freestanding-Oval-Bath-1771279-hero-2.jpg" alt="Laufen Solid Surface Bath">
                     </figure>
                     <div class="product-description">
-                      <h5>LAUFEN Palomba Collection</h5>
-                      <h4>Solid Surface Freestanding Bath</h4>
+                      <h5>Kaldewei Vaio</h5>
+                      <h4>Freestanding Oval bath</h4>
                     </div>
                     <div class="button">
                       Shop Now
@@ -477,11 +480,11 @@
                 <div class="product">
                   <a href="#" target="_blank">
                     <figure class="image">
-                      <img src="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
+                      <img src="http://www.reece.com.au/assets/products/142000/9504058/_resampled/SetSize300225-Kado-Lure-1500-Petite-Black-Freestanding-Bath-9504058-hero-1.jpg" alt="Laufen Solid Surface Bath">
                     </figure>
                     <div class="product-description">
-                      <h5>LAUFEN Palomba Collection</h5>
-                      <h4>Solid Surface Freestanding Bath</h4>
+                      <h5>Kado Lure</h5>
+                      <h4>1500 Petite Black Freestanding Bath</h4>
                     </div>
                     <div class="button">
                       Shop Now
@@ -581,7 +584,24 @@
                 <div class="product">
                   <a href="#" target="_blank">
                     <figure class="image">
-                      <img src="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
+                      <img src="http://www.reece.com.au/assets/products/142000/9504058/_resampled/SetSize300225-Kado-Lure-1500-Petite-Black-Freestanding-Bath-9504058-hero-1.jpg" alt="Laufen Solid Surface Bath">
+                    </figure>
+                    <div class="product-description">
+                      <h5>Kado Lure</h5>
+                      <h4>1500 Petite Black Freestanding Bath</h4>
+                    </div>
+                    <div class="button">
+                      Shop Now
+                    </div>
+                  </a>
+                </div><!-- /.product -->
+              </div>
+              <div class="col-sm-4">
+                <div class="product">
+                  <a href="#" target="_blank">
+                    <figure class="image">
+                      <img src="
+                      http://www.reece.com.au/assets/products/820000/9504464/_resampled/SetSize300225-LAUFEN-Solid-Surface-Bath-9504464-hero-2.jpg" alt="Laufen Solid Surface Bath">
                     </figure>
                     <div class="product-description">
                       <h5>LAUFEN Palomba Collection</h5>
@@ -597,27 +617,11 @@
                 <div class="product">
                   <a href="#" target="_blank">
                     <figure class="image">
-                      <img src="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
+                      <img src="http://www.reece.com.au/assets/products/143000/1771279/_resampled/SetSize300225-Kaldewei-Vaio-Freestanding-Oval-Bath-1771279-hero-2.jpg" alt="Laufen Solid Surface Bath">
                     </figure>
                     <div class="product-description">
-                      <h5>LAUFEN Palomba Collection</h5>
-                      <h4>Solid Surface Freestanding Bath</h4>
-                    </div>
-                    <div class="button">
-                      Shop Now
-                    </div>
-                  </a>
-                </div><!-- /.product -->
-              </div>
-              <div class="col-sm-4">
-                <div class="product">
-                  <a href="#" target="_blank">
-                    <figure class="image">
-                      <img src="images/products/laufen-solid-surface-bath.jpg" alt="Laufen Solid Surface Bath">
-                    </figure>
-                    <div class="product-description">
-                      <h5>LAUFEN Palomba Collection</h5>
-                      <h4>Solid Surface Freestanding Bath</h4>
+                      <h5>Kaldewei Vaio</h5>
+                      <h4>Freestanding Oval bath</h4>
                     </div>
                     <div class="button">
                       Shop Now

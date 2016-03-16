@@ -942,7 +942,7 @@ var bathroomHappiness = {
           if($('#water-therapy .videos').hasClass('paused')){
             $('#water-therapy .videos').removeClass('paused');
             var section = $('#water-therapy').attr('class');
-            playerManager.play('water-therapy-'+section+'-video');
+            playerManager.play('water-therapy-'+section+'-video',1);
           }
         }
       }

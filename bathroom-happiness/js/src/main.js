@@ -754,12 +754,16 @@ var bathroomHappiness = {
       if(!deviceMobile){
         playerManager.play('st-'+section+'-video');
       }
+      setTimeout(function(){
+        $('#shower-technology .st-'+section+' .shower-technology-description .close-video').addClass('active');
+      },500);
       return false;
     });
     $('#shower-technology .close-video').on('click', function(){
       var section = $(this).data('section');
-      $('#shower-technology .st-'+section+' .shower-technology-description').toggleClass('active');
       playerManager.stop('st-'+section+'-video');
+      $('#shower-technology .st-'+section+' .shower-technology-description .close-video').removeClass('active');
+      $('#shower-technology .st-'+section+' .shower-technology-description').toggleClass('active');
       return false;
     });    
     var currentSection = 1;

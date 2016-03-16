@@ -153,10 +153,10 @@
                             </div>
                             <div class="slide">
                               <div class="icon-wrap">
-                                <svg class="icon shape-scent"><use xlink:href="#shape-scent"></use></svg>
+                                <svg class="icon shape-colour"><use xlink:href="#shape-colour"></use></svg>
                               </div>
                               <div class="label">
-                                Scent
+                                Colour
                               </div>
                               <div class="text">
                                 Create visual energy with bright towels in your space.
@@ -186,18 +186,18 @@
                                 Lighting
                               </div>
                               <div class="text">
-                                Scented candles creates a sense of peaceful ambience.
+                                Scented candles create a sense of peaceful ambience.
                               </div>
                             </div>
                             <div class="slide">
                               <div class="icon-wrap">
-                                <svg class="icon shape-scent"><use xlink:href="#shape-scent"></use></svg>
+                                <svg class="icon shape-colour"><use xlink:href="#shape-colour"></use></svg>
                               </div>
                               <div class="label">
-                                Scent
+                                Colour
                               </div>
                               <div class="text">
-                                Epsom salts to the bath for total body relaxation.
+                                Add botanical oils to the bath for total body relaxation.
                               </div>
                             </div>                            
                           </div><!-- /.slides -->
@@ -229,10 +229,10 @@
                             </div>
                             <div class="slide">
                               <div class="icon-wrap">
-                                <svg class="icon shape-scent"><use xlink:href="#shape-scent"></use></svg>
+                                <svg class="icon shape-colour"><use xlink:href="#shape-colour"></use></svg>
                               </div>
                               <div class="label">
-                                Scent
+                                Colour
                               </div>
                               <div class="text">
                                 Stimulate blood flow with body balms and botanical oils.
@@ -399,32 +399,32 @@
 
                 <div class="grid-module-zones-4-5">
                   <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-md-6">
 
                       <!-- Zone 4: Create Your Own... -->
                       <div class="grid-module-zone-4">
                         <h3>Create your own wet zone</h3>
                         <div class="row">
-                          <div class="col-md-7">
+                          <div class="col-sm-5">
                             <figure class="image">
-                              <img src="images/water_therapy/showering-zone-4.jpg" alt="Showering"/>
+                              <img src="images/water_therapy/showering/wet-zone/showering-wet-zone-tile.jpg" alt="Wet Zone Showering"/>
                             </figure>
                           </div>
-                          <div class="col-md-5">
+                          <div class="col-sm-7">
                             <div class="text">
-                              <p>Statement to reference the different style of wet zone layouts.</p>
+                              <p>The open plan of a wet zones can make small bathrooms appear larger and create a more luxurious feel to larger bathrooms. </p>
                               <p><h4>TIPS FOR WET ZONE</h4>
-                              - Allow for drainage
-                              <br/>- Choosing the right tiles
-                              <br/>- Introducing light
+                              - Different tile patterns or colours help define zones 
+                              <br/>- Allow natural light to flow 
+                              <br/>- A central shower channel captures overflow
                               </p>
-                              <p><a href="http://www.reece.com.au/bathrooms/3d-bathroom-planner" target="_blank" class="btn">Plan in 3D</a></p>
+                              <p><a href="http://www.reece.com.au/bathrooms/3d-bathroom-planner" target="_blank" class="btn">Create A 3D Plan</a></p>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-md-6">
 
                       <!-- Zone 5: Products Sliders -->
                       <div class="grid-module-zone-5">
@@ -1313,7 +1313,7 @@
                             </div><!-- /.icon-wrap -->
                             <h3>Croma Intense Rain</h3>
                             <div class="text">
-                              <p>ntensive water spray for a full immersive cleanse.</p>
+                              <p>Intensive water spray for a full immersive cleanse.</p>
                             </div>
                             <ul class="list-inline">
                               <li><a href="#" target="_blank" class="see-product">See Product</a></li>

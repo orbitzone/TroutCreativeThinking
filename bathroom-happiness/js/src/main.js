@@ -527,12 +527,14 @@ var bathroomHappiness = {
       if(deviceMobile){
         $.magnificPopup.close();
       }
+      $('#banner .banner').removeClass('playing');
       $('#banner .stop-full-video').removeClass('show');
       $('#banner .play-full-video').removeClass('paused playing');
       $('#water-therapy-full-video').fadeOut(300, 0);
     });
     $('#banner .play-full-video').on('click', function(){
       var player_container = 'water-therapy-full-video';
+      $('#banner .banner').addClass('playing');
       if($(this).hasClass('playing')){
         $(this).removeClass('playing');
         $(this).addClass('paused');
@@ -550,6 +552,7 @@ var bathroomHappiness = {
             },
             callbacks: {
               afterClose: function(){
+                $('#banner .banner').removeClass('playing');
                 $('#banner .stop-full-video').removeClass('show');
                 $('#banner .play-full-video').removeClass('paused playing');
                 $('#full-video-popup').addClass('hide');
@@ -563,7 +566,8 @@ var bathroomHappiness = {
           var vars = {
             showinfo: 0,
             modestbranding: 0,
-            rel: 0         
+            rel: 0,
+            controls: 0         
           };
           var autoplay= 1;
           if($(window).width()<768 || deviceMobile){
@@ -590,12 +594,14 @@ var bathroomHappiness = {
               }
               var active = $('#water-therapy').attr('class');
               playerManager.play('water-therapy-'+active+'-video');
+              $('#banner .banner').removeClass('playing');
               $('#banner .stop-full-video').removeClass('show');
               $('#banner .play-full-video').removeClass('paused playing');
               $('#full-video-popup').addClass('hide');
             },
             onStop: function(){
               var active = $('#water-therapy').attr('class');
+              $('#banner .banner').removeClass('playing');
               playerManager.play('water-therapy-'+active+'-video');
             },
             onPaused: function(){

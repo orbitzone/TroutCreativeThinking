@@ -19,12 +19,27 @@ body.water-therapy{
 				padding: 0;
 				margin: 0 auto;
 				.banner{
+					@include transition(1s opacity ease-out);
 					background-size: cover;
 					background-image: url(../images/water_therapy/water-therapy-hero.jpg);
 					background-position: center center;
 					height: 514px;
 					position: relative;
 					overflow: hidden;
+					&.playing{
+						height: auto;
+						#water-therapy-video-wrap{
+							@media (min-width: $screen-sm){
+								display: block;
+								opacity: 0;
+								position: relative;
+								z-index: 1;
+								top: inherit;
+								left: inherit;
+								@include transform(none);
+							}
+						}
+					}
 					.banner-video-buttons{
 						position: absolute;
 						bottom: 20px;
@@ -36,7 +51,7 @@ body.water-therapy{
 					}
 					button{
 						@include appearance(none);
-						border: none;
+						border: 1px solid white;
 						@include border-radius(20px);
 						background: rgba(0,0,0,0.6);
 						color: white;
@@ -376,7 +391,7 @@ body.water-therapy{
 			      margin-bottom: 20px;
 					}
 					.rte{
-						max-width: 614px;
+						max-width: 635px;
 						margin: 0 auto;
 						font-size: 15px;
 						b{
@@ -794,6 +809,7 @@ body.water-therapy{
 					//opacity: 0;
 					float: left;
 					width: 100%;
+					height: 500px;
 					position: relative;
 					&.ie{
 						z-index: 1;
@@ -852,10 +868,11 @@ body.water-therapy{
 					.grid-module-zone-5,
 					{
 						opacity: 0;
-						@include transform(translateX(100%));
+						@include transform(translateX(200%));
 					}
 					&.current{
 						//opacity: 1;
+						height: auto;
 						z-index: 1;
 						@include animation(index_update_up 1s ease-out forwards);
 						&.ie{
@@ -899,7 +916,8 @@ body.water-therapy{
 			.grid-module-zones-4-5{
 				.row{
 					margin: 0;
-					.col-sm-6{
+					.col-sm-6,
+					.col-md-6{
 						padding: 0;
 					}
 				}
@@ -1243,6 +1261,13 @@ body.water-therapy{
 		  			}		  			
 		  		}
 		  	}
+		  }
+		  .grid-module-zones-4-5{
+		  	.grid-module-zone-4{
+		  		.text{
+		  			text-align: left;
+		  		}
+				}
 		  }
 		}//#bathing
 		#shower-technology{

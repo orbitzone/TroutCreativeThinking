@@ -194,6 +194,10 @@ body.water-therapy{
 							right: 20px;
 							z-index: 2;
 							margin: 0;
+							display: none;
+							@media (min-width: $screen-md){
+								display: block;
+							}
 							li{
 								margin: 0;
 								vertical-align: middle;
@@ -1337,9 +1341,10 @@ body.water-therapy{
 		  		text-align: center;
 		  	}
 		  	.product{
+		  		margin-bottom: 20px;
 		  		a{
 		  			display: block;
-		  			text-align: left;
+		  			text-align: center;
 		  			text-decoration: none;
 		  			h4{
 		  				font-family: $font-family-helvetica;
@@ -1916,21 +1921,25 @@ body.water-therapy{
 		@include filter(blur(7px));
 		@include transform(translate3d(0,100%,0));
 	}
+	99.99%{
+		opacity: 1;
+		@include filter(blur(0px));
+		@include transform(translate3d(0,-50%,0));
+	}
 	100%{
 		opacity: 1;
-		@include filter(blur(0));
 		@include transform(translate3d(0,-50%,0));
 	}
 }
 @include keyframes(slide_up_out){
 	0%{
 		opacity: 1;
-		@include filter(blur(0));
+		//@include filter(blur(0px));
 		@include transform(translate3d(0,-50%,0));
 	}
 	100%{		
 		opacity: 0;
-		@include filter(blur(7px));
+		//@include filter(blur(7px));
 		@include transform(translate3d(0,-100%,0));
 	}
 }

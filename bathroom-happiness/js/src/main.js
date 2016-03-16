@@ -641,7 +641,7 @@ var bathroomHappiness = {
       $('.submenu li').removeClass('active');
       $(this).parent().addClass('active');
       var section = $(this).text().toLowerCase();
-      var topPosition = $('#intro .video-wrap').offset().top - 50;
+      var topPosition = parseInt($('#intro .video-wrap').offset().top - 50);
       if(!deviceMobile){
         var player_container = 'water-therapy-'+section+'-video';
         var video = $('#'+player_container+'-wrap').data('video');
@@ -668,7 +668,7 @@ var bathroomHappiness = {
             });
           },10); 
         };
-        if(parseInt(topPosition) == parseInt($(window).scrollTop())){
+        if(topPosition == parseInt($(window).scrollTop())){
           $('#water-therapy').attr('class',section);
           scrollMenuAnimation();          
         }else{
@@ -743,9 +743,9 @@ var bathroomHappiness = {
       $('#shower-technology .shower-technology-description').removeClass('active');
       $(this).addClass('active');
       var section = $(this).data('section');
-      var posTop = $('#shower-technology .shower-technology-cards').offset().top - 20;
+      var posTop = parseInt($('#shower-technology .shower-technology-cards').offset().top - 20);
       if(windowWidth < 768){
-        if(parseInt(posTop) == parseInt($(window).scrollTop())){
+        if(posTop == parseInt($(window).scrollTop())){
           $('#shower-technology .shower-technology-card').removeClass('active');
           $('#shower-technology .st-'+section).addClass('active'); 
         }else{
@@ -930,7 +930,7 @@ var bathroomHappiness = {
         }else{
           setTimeout(function(){
             $('html, body').animate({
-              scrollTop: $module.find('.grid-module-description').offset().top - 50,
+              scrollTop: parseInt($module.find('.grid-module-description').offset().top - 50),
             },500, function(){            
               $module.find('.grid-module-description .box-content').removeClass('active');
               $module.find('.grid-module-zones-section').removeClass('current prev next');

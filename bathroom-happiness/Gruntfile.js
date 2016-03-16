@@ -82,9 +82,11 @@ module.exports = function (grunt) {
       dev: {
         options: {
           mangle: false,
-          compress: false,
+          compress: {
+            warnings: false
+          },
           preserveComments: 'all',
-          beautify: true
+          beautify: true,
         },
         files: {
           'js/main.min.js': [
@@ -95,7 +97,9 @@ module.exports = function (grunt) {
       dist: {
         options: {
           mangle: true,
-          compress: true
+          compress: {
+            warnings: false
+          }
         },
         files: {
           'js/main.min.js': [

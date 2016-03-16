@@ -1,0 +1,126 @@
+//typography classes
+h1, h2, h3, h4, h5, h6 {
+  margin: 10px 0;
+}
+
+
+.visible-phone {
+  &:extend(.visible-xs);
+}
+
+.visible-desktop {
+  &:extend(.visible-md, .visible-lg);
+}
+
+.hidden-phone {
+  &:extend(.hidden-xs);
+}
+
+.hidden-desktop {
+  &:extend(.hidden-md, .hidden-lg);
+  &:extend(.visible-sm, .visible-xs);
+}
+
+.topNav {
+  .row {
+     margin-left:0px;
+     margin-right: 0px;
+  }
+}
+
+
+.nav {
+  &> li {
+    &> a {
+      &:focus, &:hover {
+        background:none;
+      }
+    }
+  }
+}
+
+.fa {
+  &.fa-lg {
+    vertical-align:-10%;
+    line-height:normal;
+  }
+}
+
+.alert {
+  p{
+    margin-bottom:10px;
+  }
+}
+
+ul,
+ol {
+  padding:0px;
+}
+
+li {
+  line-height: 20px;
+}
+
+
+//accordian styling
+.accordion-heading .accordion-toggle {
+  display: block;
+}
+
+.panel-group {
+  .panel {
+    margin-bottom:2px;
+    box-shadow: none;
+
+    .panel-body {
+      padding:0px
+    }
+
+    & + .panel {
+      margin-top: 0px;
+    }
+  }
+}
+
+//navigation
+.navbar {
+  min-height:inherit!important;
+}
+
+.navbar .menuButton {
+  width:100px!important;
+}
+
+.navbar .navbar-btn {
+  padding: 7px 10px;
+  .box-shadow(~"inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.075)");
+}
+
+// Navbar
+.navbar .navbar-btn .icon-bar {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background-color: #f5f5f5;
+  .border-radius(1px);
+  .box-shadow(0 1px 0 rgba(0,0,0,.25));
+}
+.navbar-btn .icon-bar + .icon-bar {
+  margin-top: 3px;
+}
+
+/* Nav Bar */
+.navbar .navbar-btn, .navbar .navbar-btn:hover {
+  .icon-bar {
+    margin-left: 50px;
+    width: 30px;
+    height: 4px;
+    & + .icon-bar {
+      margin-top: 5px;
+    }
+  }
+}
+
+.dropdown-menu {
+  font-size:12px;
+}

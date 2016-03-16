@@ -1342,6 +1342,11 @@ body.water-therapy{
 		  	}
 		  	.product{
 		  		margin-bottom: 20px;
+		  		.image{
+		  			img{
+		  				margin: 0 auto;
+		  			}
+		  		}
 		  		a{
 		  			display: block;
 		  			text-align: center;
@@ -1379,12 +1384,12 @@ body.water-therapy{
 		  .grid-module-zones-4-5{
 		  	.grid-module-zone-4{
 		  		background: $water-therapy-grey;
-				color: $water-therapy-black;
+					color: $water-therapy-black;
 		  		.text{
 		  			text-align: left;
 		  		}
 				}
-				>.grid-module-zone-5{
+				.grid-module-zone-5{
 					.slide-text{
 						text-align: center;
 						padding-left: 0;

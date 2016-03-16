@@ -6000,8 +6000,10 @@ body.water-therapy .main #shower-technology .shower-technology-description .show
 /* line 1536, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip .back .close-video {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 0px;
+  right: 0px;
+  width: 40px;
+  height: 40px;
   z-index: 4;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -6014,15 +6016,17 @@ body.water-therapy .main #shower-technology .shower-technology-description .show
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   border-radius: 0;
-  background: none;
+  background: black;
 }
-/* line 1546, ../sass/pages/_water_therapy.scss */
+/* line 1548, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip .back .close-video .icon {
   fill: #39d8a9;
   width: 32px;
   height: 32px;
+  position: relative;
+  top: 2px;
 }
-/* line 1558, ../sass/pages/_water_therapy.scss */
+/* line 1562, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description.active .shower-technology-flip .back {
   -webkit-transform: rotateY(0deg);
   -moz-transform: rotateY(0deg);
@@ -6030,7 +6034,7 @@ body.water-therapy .main #shower-technology .shower-technology-description.activ
   -o-transform: rotateY(0deg);
   transform: rotateY(0deg);
 }
-/* line 1561, ../sass/pages/_water_therapy.scss */
+/* line 1565, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description.active .shower-technology-flip .front {
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);

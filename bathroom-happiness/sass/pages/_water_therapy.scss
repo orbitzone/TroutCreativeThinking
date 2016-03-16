@@ -971,9 +971,49 @@ body.water-therapy{
 						padding: 0;
 					}
 				}
+				.grid-module-zone-5{
+					.slide-text{
+						text-align: center;
+						padding-left: 0;
+					}
+				}
 			}//.grid-module-zones-2-3
 			.grid-module-zones-4-5{
 				margin-bottom: 80px;
+				/*.slideshow-buttons{
+					position: relative;
+					top: inherit;
+					left: inherit;
+					width: 100%;
+					text-align: center;
+					padding-top: 40px;
+					button{
+						display: inline-block;
+						position: relative;
+						top: inherit;
+						left: inherit;
+						margin-top: inherit;
+					}
+				}*/
+				.slick-dots{
+					position: relative;
+					bottom: inherit;
+					margin-top: 20px;
+						li{
+							button{
+								&:before{
+									color: $water-therapy-blue;
+								}
+							}
+							&.slick-active{
+								button{
+									&:before{
+										color: $water-therapy-green;
+									}		
+								}
+							}
+						}
+				}
 			}
 			.grid-module-zone-1{		
 			
@@ -1155,6 +1195,9 @@ body.water-therapy{
 						.slideshow-buttons{
 							top: 216px;
 						}
+						a{
+							margin-bottom: 20px;
+						}
 						.slide-image{
 							margin-bottom: 10px;
 							img{
@@ -1335,6 +1378,12 @@ body.water-therapy{
 		  		.text{
 		  			text-align: left;
 		  		}
+				}
+				>.grid-module-zone-5{
+					.slide-text{
+						text-align: center;
+						padding-left: 0;
+					}
 				}
 		  }
 		}//#bathing

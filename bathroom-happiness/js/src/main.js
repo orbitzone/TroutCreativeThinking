@@ -494,6 +494,10 @@ var bathroomHappiness = {
             autoplay = 1;
             mute =  1;
           }
+          if(initialVideoLoad[k] == 'water-therapy-rejuvenation'){
+            autoplay = 1;
+            mute =  1;
+          }
           var introPlayer = new player();
           introPlayer.init({
             container: player_container,
@@ -613,7 +617,18 @@ var bathroomHappiness = {
           $('#full-video-popup').removeClass('hide');
         }
       }       
-    }); 
+    });
+    $('#water-therapy button.sound-on-off').on('click', function(){
+      $(this).toggleClass('sound-on sound-off');
+      var section = $('.submenu li.active button').text().toLowerCase();
+      var player_container = 'water-therapy-'+section+'-video';
+      console.log(player_container);
+      if($('#water-therapy button.sound-on-off').hasClass('sound-on')){
+        playerManager.unmute(player_container);
+      }else{
+        playerManager.mute(player_container);
+      }
+    });
     $('.submenu button').on('click', function(){
       $('.submenu li').removeClass('active');
       $(this).parent().addClass('active');
@@ -622,6 +637,10 @@ var bathroomHappiness = {
       if(!deviceMobile){
         var player_container = 'water-therapy-'+section+'-video';
         var video = $('#'+player_container+'-wrap').data('video');
+        var mute = 1;
+        if($('#water-therapy button.sound-on-off').hasClass('sound-on')){
+          mute = 0;
+        }
         var scrollMenuAnimation = function(){
           if(video){
             var vars = {
@@ -630,7 +649,7 @@ var bathroomHappiness = {
               rel: 0,
               controls: 0
             };
-            playerManager.play(player_container, 0);                    
+            playerManager.play(player_container, mute);                    
           }
           setTimeout(function(){ 
             var sections = ['rejuvenation', 'relaxation','therapeutic'];

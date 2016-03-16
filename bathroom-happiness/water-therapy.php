@@ -46,24 +46,27 @@
                   <div class="video-wrap">
                     <div class="videos">
                       <div class="section-1 section">
-                        <img src="images/water_therapy/video.jpg" alt="Video">
+                        <img src="images/water_therapy/emotional/rejuvenation-image-holder.jpg" alt="Video">
                         <div id="water-therapy-rejuvenation-video-wrap" class="video-iframe-wrap video video-3" data-video="afyJFg51iM4">
                           <figure id="water-therapy-rejuvenation-video"></figure>
                         </div>
                       </div>    
                       <div class="section-2 section">
-                        <img src="images/water_therapy/video.jpg" alt="Video">                      
+                        <img src="images/water_therapy/emotional/relaxation-image-holder.jpg" alt="Video">                      
                         <div id="water-therapy-relaxation-video-wrap" class="video-iframe-wrap video video-2" data-video="TkHhV7WnyaY">
                           <figure id="water-therapy-relaxation-video"></figure>
                         </div>                    
                       </div>
                       <div class="section-3 section">
-                        <img src="images/water_therapy/video.jpg" alt="Video">
+                        <img src="images/water_therapy/emotional/therapeutic-image-holder.jpg" alt="Video">
                         <div id="water-therapy-therapeutic-video-wrap" class="video-iframe-wrap video video-1" data-video="Cm6vFVEct10">
                           <figure id="water-therapy-therapeutic-video"></figure>          
                         </div>                    
                       </div>                                        
                     </div>
+                    <ul class="videos-buttons list-inline">
+                      <li><button type="button" class="sound-on-off sound-off"><svg class="icon shape-sound-off"><use xlink:href="#shape-sound-off"></use></svg><svg class="icon shape-sound-on"><use xlink:href="#shape-sound-on"></use></svg></button></li>
+                    </ul>
                     <div class="submenu-wrap">
                       <div class="submenu">
                         <ul class="list-unstyled">

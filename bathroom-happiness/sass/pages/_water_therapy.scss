@@ -837,11 +837,11 @@ body.water-therapy{
 						top: 50%;
 						@include transform(translateY(-50%));
 						padding: 0 60px;
-						@include animation(slide_up_out 1s ease-out forwards);
+						@include animation(slide_up_out 1s ease-out both);
 						opacity: 0;
 						&.active{
 							opacity: 1;
-							@include animation(slide_up_in 1s ease-out forwards);
+							@include animation(slide_up_in 1s ease-out both);
 						}
 					}
 				}
@@ -868,7 +868,7 @@ body.water-therapy{
 					&.ie{
 						z-index: 1;
 					}
-					@include animation(index_update_down 1s ease-out forwards);
+					@include animation(index_update_down 1s ease-out both);
 					@include transform-style(preserve-3d);
 					@media (min-width: $screen-sm){
 						float: left;
@@ -896,14 +896,14 @@ body.water-therapy{
 						@include transform-style(preserve-3d);
 					}
 					.grid-module-zone-1{
-						@include animation(slide_out 1s ease-in-out forwards);
+						@include animation(slide_out 1s ease-in-out both);
 						&.ie{
 							opacity: 0;
 						}
 					}
 					.grid-module-zone-2{
-						opacity: 1;
-						@include animation(flip_left_out 1s ease-out 0.8s forwards);
+						//opacity: 1;
+						@include animation(flip_left_out 1s ease-out 0.5s both);
 						&.ie{
 							opacity: 0;
 							@include animation(none);
@@ -911,7 +911,7 @@ body.water-therapy{
 						}
 					}
 					.grid-module-zone-3{						
-						@include animation(flip_right_out 1s ease-out 0.5s forwards);						
+						@include animation(flip_right_out 1s ease-out 0.8s both);						
 						&.ie{
 							opacity: 0;
 							@include animation(none);
@@ -928,13 +928,13 @@ body.water-therapy{
 						//opacity: 1;
 						height: auto;
 						z-index: 1;
-						@include animation(index_update_up 1s ease-out forwards);
+						@include animation(index_update_up 1s ease-out both);
 						&.ie{
 							z-index: 5;
 						}
 						.grid-module-zone-1{
 							@include transform(translate3d(0,0,0));
-							@include animation(slide_in 1s ease-in-out forwards);
+							@include animation(slide_in 1s ease-in-out both);
 							&.ie{
 								opacity: 1;
 								@include animation(none);
@@ -942,8 +942,8 @@ body.water-therapy{
 						}
 						.grid-module-zone-2
 						{
-							opacity: 0;
-							@include animation(flip_left_in 1s ease-out 0.8s forwards);
+							//opacity: 0;
+							@include animation(flip_left_in 1s ease-out 0.5s both);
 							&.ie{
 								opacity: 1;
 								@include animation(none);
@@ -951,7 +951,7 @@ body.water-therapy{
 						}
 						.grid-module-zone-3
 						{
-							@include animation(flip_right_in 1s ease-out 0.5s forwards);
+							@include animation(flip_right_in 1s ease-out 0.8s both);
 							&.ie{
 								opacity: 1;
 								@include animation(none);
@@ -1519,7 +1519,7 @@ body.water-therapy{
 					left: 0;
 					z-index: 1;
 					//@include transition(1s all ease-in-out);
-					@include animation(card_out 1s ease-in-out forwards);
+					@include animation(card_out 1s ease-in-out both);
 					&.ie-lt{
 						@include animation(none);
 						opacity: 0;
@@ -1527,7 +1527,7 @@ body.water-therapy{
 					}
 					&.active{
 						@include transform(translateY(615px) translateZ(0) scale(1));
-						@include animation(card_in 1s ease-in-out 0.5s forwards);
+						@include animation(card_in 1s ease-in-out 0.5s both);
 						&.ie-lt{
 							@include animation(none);
 							opacity: 1;

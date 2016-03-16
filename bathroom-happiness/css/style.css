@@ -4872,22 +4872,22 @@ body.water-therapy .main #bathing .grid-module-description .box .box-content {
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
   padding: 0 60px;
-  -webkit-animation: slide_up_out 1s ease-out forwards;
-  -moz-animation: slide_up_out 1s ease-out forwards;
-  -ms-animation: slide_up_out 1s ease-out forwards;
-  -o-animation: slide_up_out 1s ease-out forwards;
-  animation: slide_up_out 1s ease-out forwards;
+  -webkit-animation: slide_up_out 1s ease-out both;
+  -moz-animation: slide_up_out 1s ease-out both;
+  -ms-animation: slide_up_out 1s ease-out both;
+  -o-animation: slide_up_out 1s ease-out both;
+  animation: slide_up_out 1s ease-out both;
   opacity: 0;
 }
 /* line 842, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-description .box .box-content.active,
 body.water-therapy .main #bathing .grid-module-description .box .box-content.active {
   opacity: 1;
-  -webkit-animation: slide_up_in 1s ease-out forwards;
-  -moz-animation: slide_up_in 1s ease-out forwards;
-  -ms-animation: slide_up_in 1s ease-out forwards;
-  -o-animation: slide_up_in 1s ease-out forwards;
-  animation: slide_up_in 1s ease-out forwards;
+  -webkit-animation: slide_up_in 1s ease-out both;
+  -moz-animation: slide_up_in 1s ease-out both;
+  -ms-animation: slide_up_in 1s ease-out both;
+  -o-animation: slide_up_in 1s ease-out both;
+  animation: slide_up_in 1s ease-out both;
 }
 /* line 849, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zones-sections,
@@ -4924,11 +4924,11 @@ body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones
   width: 100%;
   height: 500px;
   position: relative;
-  -webkit-animation: index_update_down 1s ease-out forwards;
-  -moz-animation: index_update_down 1s ease-out forwards;
-  -ms-animation: index_update_down 1s ease-out forwards;
-  -o-animation: index_update_down 1s ease-out forwards;
-  animation: index_update_down 1s ease-out forwards;
+  -webkit-animation: index_update_down 1s ease-out both;
+  -moz-animation: index_update_down 1s ease-out both;
+  -ms-animation: index_update_down 1s ease-out both;
+  -o-animation: index_update_down 1s ease-out both;
+  animation: index_update_down 1s ease-out both;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
@@ -5010,11 +5010,11 @@ body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones
 /* line 898, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zones-sections .grid-module-zones-section .grid-module-zone-1,
 body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones-section .grid-module-zone-1 {
-  -webkit-animation: slide_out 1s ease-in-out forwards;
-  -moz-animation: slide_out 1s ease-in-out forwards;
-  -ms-animation: slide_out 1s ease-in-out forwards;
-  -o-animation: slide_out 1s ease-in-out forwards;
-  animation: slide_out 1s ease-in-out forwards;
+  -webkit-animation: slide_out 1s ease-in-out both;
+  -moz-animation: slide_out 1s ease-in-out both;
+  -ms-animation: slide_out 1s ease-in-out both;
+  -o-animation: slide_out 1s ease-in-out both;
+  animation: slide_out 1s ease-in-out both;
 }
 /* line 900, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zones-sections .grid-module-zones-section .grid-module-zone-1.ie,
@@ -5024,12 +5024,11 @@ body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones
 /* line 904, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zones-sections .grid-module-zones-section .grid-module-zone-2,
 body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones-section .grid-module-zone-2 {
-  opacity: 1;
-  -webkit-animation: flip_left_out 1s ease-out 0.8s forwards;
-  -moz-animation: flip_left_out 1s ease-out 0.8s forwards;
-  -ms-animation: flip_left_out 1s ease-out 0.8s forwards;
-  -o-animation: flip_left_out 1s ease-out 0.8s forwards;
-  animation: flip_left_out 1s ease-out 0.8s forwards;
+  -webkit-animation: flip_left_out 1s ease-out 0.5s both;
+  -moz-animation: flip_left_out 1s ease-out 0.5s both;
+  -ms-animation: flip_left_out 1s ease-out 0.5s both;
+  -o-animation: flip_left_out 1s ease-out 0.5s both;
+  animation: flip_left_out 1s ease-out 0.5s both;
 }
 /* line 907, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zones-sections .grid-module-zones-section .grid-module-zone-2.ie,
@@ -5048,11 +5047,11 @@ body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones
 /* line 913, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zones-sections .grid-module-zones-section .grid-module-zone-3,
 body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones-section .grid-module-zone-3 {
-  -webkit-animation: flip_right_out 1s ease-out 0.5s forwards;
-  -moz-animation: flip_right_out 1s ease-out 0.5s forwards;
-  -ms-animation: flip_right_out 1s ease-out 0.5s forwards;
-  -o-animation: flip_right_out 1s ease-out 0.5s forwards;
-  animation: flip_right_out 1s ease-out 0.5s forwards;
+  -webkit-animation: flip_right_out 1s ease-out 0.8s both;
+  -moz-animation: flip_right_out 1s ease-out 0.8s both;
+  -ms-animation: flip_right_out 1s ease-out 0.8s both;
+  -o-animation: flip_right_out 1s ease-out 0.8s both;
+  animation: flip_right_out 1s ease-out 0.8s both;
 }
 /* line 915, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zones-sections .grid-module-zones-section .grid-module-zone-3.ie,
@@ -5085,11 +5084,11 @@ body.water-therapy .main #showering .grid-module-zones-sections .grid-module-zon
 body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones-section.current {
   height: auto;
   z-index: 1;
-  -webkit-animation: index_update_up 1s ease-out forwards;
-  -moz-animation: index_update_up 1s ease-out forwards;
-  -ms-animation: index_update_up 1s ease-out forwards;
-  -o-animation: index_update_up 1s ease-out forwards;
-  animation: index_update_up 1s ease-out forwards;
+  -webkit-animation: index_update_up 1s ease-out both;
+  -moz-animation: index_update_up 1s ease-out both;
+  -ms-animation: index_update_up 1s ease-out both;
+  -o-animation: index_update_up 1s ease-out both;
+  animation: index_update_up 1s ease-out both;
 }
 /* line 932, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zones-sections .grid-module-zones-section.current.ie,
@@ -5104,11 +5103,11 @@ body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones
   -ms-transform: translate3d(0, 0, 0);
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-  -webkit-animation: slide_in 1s ease-in-out forwards;
-  -moz-animation: slide_in 1s ease-in-out forwards;
-  -ms-animation: slide_in 1s ease-in-out forwards;
-  -o-animation: slide_in 1s ease-in-out forwards;
-  animation: slide_in 1s ease-in-out forwards;
+  -webkit-animation: slide_in 1s ease-in-out both;
+  -moz-animation: slide_in 1s ease-in-out both;
+  -ms-animation: slide_in 1s ease-in-out both;
+  -o-animation: slide_in 1s ease-in-out both;
+  animation: slide_in 1s ease-in-out both;
 }
 /* line 938, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zones-sections .grid-module-zones-section.current .grid-module-zone-1.ie,
@@ -5123,12 +5122,11 @@ body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones
 /* line 943, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zones-sections .grid-module-zones-section.current .grid-module-zone-2,
 body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones-section.current .grid-module-zone-2 {
-  opacity: 0;
-  -webkit-animation: flip_left_in 1s ease-out 0.8s forwards;
-  -moz-animation: flip_left_in 1s ease-out 0.8s forwards;
-  -ms-animation: flip_left_in 1s ease-out 0.8s forwards;
-  -o-animation: flip_left_in 1s ease-out 0.8s forwards;
-  animation: flip_left_in 1s ease-out 0.8s forwards;
+  -webkit-animation: flip_left_in 1s ease-out 0.5s both;
+  -moz-animation: flip_left_in 1s ease-out 0.5s both;
+  -ms-animation: flip_left_in 1s ease-out 0.5s both;
+  -o-animation: flip_left_in 1s ease-out 0.5s both;
+  animation: flip_left_in 1s ease-out 0.5s both;
 }
 /* line 947, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zones-sections .grid-module-zones-section.current .grid-module-zone-2.ie,
@@ -5143,11 +5141,11 @@ body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones
 /* line 952, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zones-sections .grid-module-zones-section.current .grid-module-zone-3,
 body.water-therapy .main #bathing .grid-module-zones-sections .grid-module-zones-section.current .grid-module-zone-3 {
-  -webkit-animation: flip_right_in 1s ease-out 0.5s forwards;
-  -moz-animation: flip_right_in 1s ease-out 0.5s forwards;
-  -ms-animation: flip_right_in 1s ease-out 0.5s forwards;
-  -o-animation: flip_right_in 1s ease-out 0.5s forwards;
-  animation: flip_right_in 1s ease-out 0.5s forwards;
+  -webkit-animation: flip_right_in 1s ease-out 0.8s both;
+  -moz-animation: flip_right_in 1s ease-out 0.8s both;
+  -ms-animation: flip_right_in 1s ease-out 0.8s both;
+  -o-animation: flip_right_in 1s ease-out 0.8s both;
+  animation: flip_right_in 1s ease-out 0.8s both;
 }
 /* line 955, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zones-sections .grid-module-zones-section.current .grid-module-zone-3.ie,
@@ -5924,11 +5922,11 @@ body.water-therapy .main #shower-technology .shower-technology-cards .shower-tec
   top: 30px;
   left: 0;
   z-index: 1;
-  -webkit-animation: card_out 1s ease-in-out forwards;
-  -moz-animation: card_out 1s ease-in-out forwards;
-  -ms-animation: card_out 1s ease-in-out forwards;
-  -o-animation: card_out 1s ease-in-out forwards;
-  animation: card_out 1s ease-in-out forwards;
+  -webkit-animation: card_out 1s ease-in-out both;
+  -moz-animation: card_out 1s ease-in-out both;
+  -ms-animation: card_out 1s ease-in-out both;
+  -o-animation: card_out 1s ease-in-out both;
+  animation: card_out 1s ease-in-out both;
 }
 /* line 1523, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-cards .shower-technology-card.ie-lt {
@@ -5950,11 +5948,11 @@ body.water-therapy .main #shower-technology .shower-technology-cards .shower-tec
   -ms-transform: translateY(615px) translateZ(0) scale(1);
   -o-transform: translateY(615px) translateZ(0) scale(1);
   transform: translateY(615px) translateZ(0) scale(1);
-  -webkit-animation: card_in 1s ease-in-out 0.5s forwards;
-  -moz-animation: card_in 1s ease-in-out 0.5s forwards;
-  -ms-animation: card_in 1s ease-in-out 0.5s forwards;
-  -o-animation: card_in 1s ease-in-out 0.5s forwards;
-  animation: card_in 1s ease-in-out 0.5s forwards;
+  -webkit-animation: card_in 1s ease-in-out 0.5s both;
+  -moz-animation: card_in 1s ease-in-out 0.5s both;
+  -ms-animation: card_in 1s ease-in-out 0.5s both;
+  -o-animation: card_in 1s ease-in-out 0.5s both;
+  animation: card_in 1s ease-in-out 0.5s both;
 }
 /* line 1531, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-cards .shower-technology-card.active.ie-lt {

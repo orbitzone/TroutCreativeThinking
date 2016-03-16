@@ -579,6 +579,16 @@
                             <img src="images/water_therapy/showering/enclosed/showering-slider-enclosed-01.jpg" alt="Enclosed">
                           </figure>
                         </div><!-- /.slide -->                        
+                        <div class="slide">
+                          <figure class="image">
+                            <img src="images/water_therapy/showering/enclosed/showering-slider-enclosed-02.jpg" alt="Enclosed">
+                          </figure>
+                        </div><!-- /.slide -->                        
+                        <div class="slide">
+                          <figure class="image">
+                            <img src="images/water_therapy/showering/enclosed/showering-slider-enclosed-03.jpg" alt="Enclosed">
+                          </figure>
+                        </div><!-- /.slide -->                        
                       </div><!-- /.grid-module-slider -->
                       <div class="showering-slider-buttons slideshow-buttons"></div>
                     </div><!-- /.panel-slideshow -->

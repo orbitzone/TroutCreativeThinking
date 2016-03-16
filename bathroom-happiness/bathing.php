@@ -350,9 +350,9 @@
               <div class="grid-module-zone-5-content">
                 <div class="row">
                   <div class="col-xs-12">
-                    <h3>Bathroom Inset</h3>
+                    <h3>Bathroom <br/>Inset Baths</h3>
                     <div class="text">
-                      <p>Statement about freestanding bathroom styles.</p>
+                      <p>Baths the whole family can enjoy.</p>
                     </div>
                   </div>
                 </div>

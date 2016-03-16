@@ -184,7 +184,7 @@ var player = function(){
     videoId: '',
     playerVars: {
       showinfo: 0,
-      modestbranding: 0,
+      modestbranding: 1,
       rel: 0,
       origin: 'http://reece-responsive.trout.com.au',
       wmode: 'transparent',
@@ -479,7 +479,7 @@ var bathroomHappiness = {
     // When the player is ready, add listeners for pause, finish, and playProgress
     var windowWidth = $(window).width();
     if(!deviceMobile){
-      var initialVideoLoad = ['water-therapy','water-therapy-rejuvenation','water-therapy-relaxation','water-therapy-therapeutic','st-waterfall'];
+      var initialVideoLoad = ['water-therapy','water-therapy-rejuvenation','water-therapy-relaxation','water-therapy-therapeutic'];
       for(var k = 0; k < initialVideoLoad.length; k++){
         var player_container = initialVideoLoad[k]+'-video';
         var video = $('#'+initialVideoLoad[k]+'-video-wrap').data('video');
@@ -800,7 +800,8 @@ var bathroomHappiness = {
       }      
       return false;
     });
-    $('#shower-technology .st-waterfall').addClass('active');
+    //$('#shower-technology .st-waterfall').addClass('active');
+    $('#shower-technology .shower-technology-menu a[data-section=waterfall]').trigger('click');
     $('#shower-technology .view-video').on('click', function(){
       var section = $(this).data('section');
       $('#shower-technology .st-'+section+' .shower-technology-description').toggleClass('active');

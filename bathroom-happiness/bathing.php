@@ -439,7 +439,7 @@
 
                 <!-- Zone 4: Create Your Own... -->
                 <div class="grid-module-zone-4">
-                  <h3>Create your looks</h3>
+                  <h3>Create your look</h3>
                   <div class="row">
                     <div class="col-sm-5">
                       <figure class="image">
@@ -667,7 +667,10 @@
 
                 <!-- Zone 4: Create Your Own... -->
                 <div class="grid-module-zone-4">
-                  <h3>Create your sensory zone</h3>
+                  <div class="intro-text">
+                    <h3>Create your sensory zone</h3>
+                    <p>Create a room to escape to, make your bathroom your personal sanctuary.</p>
+                  </div>
                   <div class="row">
                     <div class="col-sm-5">
                       <figure class="image">
@@ -676,12 +679,12 @@
                     </div>
                     <div class="col-sm-7">
                       <div class="text">
-                        <p>Create a room to escape to, make your bathroom your personal sanctuary.</p>
-                        <p><h4>TIPS FOR A SENSORY ZONE</h4></p>
-                        <p>- A deep freestanding bath to immerse yourself
-                        <br/>- Integrated LED lighting gets you in the right mood
-                        <br/>- Connect to nature with an outdoor shower  
-                        <br/>- Scented candles allow you to de-stress</p>
+                        <p><h4>TIPS</h4></p>
+                        <ul>
+                        <li>A deep freestanding bath to immerse yourself</li>
+                        <li>Integrated LED lighting gets you in the right mood</li>
+                        <li>Connect to nature with an outdoor shower</li>
+                        <li>Scented candles allow you to de-stress</li></ul>
                       </div>
                     </div>
                   </div>

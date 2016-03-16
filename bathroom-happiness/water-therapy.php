@@ -194,10 +194,10 @@
                             </div>
                             <div class="slide">
                               <div class="icon-wrap">
-                                <svg class="icon shape-colour"><use xlink:href="#shape-colour"></use></svg>
+                                <svg class="icon shape-scent"><use xlink:href="#shape-scent"></use></svg>
                               </div>
                               <div class="label">
-                                Colour
+                                Scent
                               </div>
                               <div class="text">
                                 Add botanical oils to the bath for total body relaxation.
@@ -232,10 +232,10 @@
                             </div>
                             <div class="slide">
                               <div class="icon-wrap">
-                                <svg class="icon shape-colour"><use xlink:href="#shape-colour"></use></svg>
+                                <svg class="icon shape-scent"><use xlink:href="#shape-scent"></use></svg>
                               </div>
                               <div class="label">
-                                Colour
+                                Scent
                               </div>
                               <div class="text">
                                 Stimulate blood flow with body balms and botanical oils.
@@ -406,7 +406,10 @@
 
                       <!-- Zone 4: Create Your Own... -->
                       <div class="grid-module-zone-4">
-                        <h3>Create your own wet zone</h3>
+                        <div class="intro-text">
+                          <h3>Create your own wet zone</h3>
+                          <p>The open plan of a wet zone can make small bathrooms appear larger, and also create a more luxurious feel for larger bathrooms.</p>                            
+                        </div>
                         <div class="row">
                           <div class="col-sm-5">
                             <figure class="image">
@@ -415,11 +418,13 @@
                           </div>
                           <div class="col-sm-7">
                             <div class="text">
-                              <p>The open plan of a wet zones can make small bathrooms appear larger and create a more luxurious feel to larger bathrooms. </p>
-                              <p><h4>TIPS FOR WET ZONE</h4>
-                              - Different tile patterns or colours help define zones 
-                              <br/>- Allow natural light to flow 
-                              <br/>- A central shower channel captures overflow
+                              
+                              <p><h4>TIPS</h4>
+                              <ul>
+                                <li>Different tile patterns or colours help define zones</li>
+                                <li> Allow natural light to flow</li>
+                                <li> A central shower channel captures overflow</li>
+                              </ul>
                               </p>
                               <p><a href="http://www.reece.com.au/bathrooms/3d-bathroom-planner" target="_blank" class="btn">Create A 3D Plan</a></p>
                             </div>

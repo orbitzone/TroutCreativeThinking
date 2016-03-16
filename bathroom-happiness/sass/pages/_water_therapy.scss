@@ -984,6 +984,13 @@ body.water-therapy{
 					left: inherit;
 					left: 30px;
 					bottom: 30px;					
+				}
+				.grid-module-slider{
+					.image{
+						img{
+							max-height: 658px;
+						}
+					}
 				}		
 				.grid-module-slider-buttons{
 					height: 40px;
@@ -1086,15 +1093,23 @@ body.water-therapy{
 					text-transform: uppercase;
 					color: $water-therapy-black;
 					max-width: 340px;
-					margin: 0 auto;
-					margin-bottom: 50px;
+					margin: 0 auto;					
+					margin-bottom: 25px;
+				}
+				.intro-text{
+			    max-width: 400px;
+			    margin: 0 auto;
+			    margin-bottom: 25px;
+				}
+				ul{
+					margin-left: 20px;
 				}
 				h4{
 					margin-top: 0;
 					font-weight: 400;
 					font-size: 15px;
 					letter-spacing: 0.13em;
-					margin-bottom: 5px;
+					margin-bottom: 10px;
 				}
 				.image{
 					margin-bottom: 20px;
@@ -1175,6 +1190,7 @@ body.water-therapy{
 				background-image: url(../images/water_therapy/bathing-bg.jpg);
 				background-size: cover;
 				background-position: bottom center;
+				background-repeat: no-repeat;
 				text-align: center;
 				img{
 					opacity: 0;
@@ -1314,6 +1330,8 @@ body.water-therapy{
 		  }
 		  .grid-module-zones-4-5{
 		  	.grid-module-zone-4{
+		  		background: $water-therapy-grey;
+				color: $water-therapy-black;
 		  		.text{
 		  			text-align: left;
 		  		}

@@ -1115,7 +1115,7 @@
                       <li><a href="#" data-section="led"><svg class="icon shape-led"><use xlink:href="#shape-led"></use></svg><span>Led</span></a></li>
                       <li><a href="#" data-section="airdrop"><svg class="icon shape-airdrop"><use xlink:href="#shape-airdrop"></use></svg><span>Air Drop</span></a></li>
                       <li><a href="#" data-section="turbine"><svg class="icon shape-turbine"><use xlink:href="#shape-turbine"></use></svg><span>Turbine</span></a></li>
-                      <li><a href="#" data-section="raindance"><svg class="icon shape-raindance"><use xlink:href="#shape-raindance"></use></svg><span>Raindance</span></a></li>
+                      <li><a href="#" data-section="raindance"><svg class="icon shape-raindance"><use xlink:href="#shape-raindance"></use></svg><span>Rain</span></a></li>
                       <li><a href="#" data-section="soft-rain"><svg class="icon shape-soft-rain"><use xlink:href="#shape-soft-rain"></use></svg><span>Croma Soft Rain</span></a></li>
                       <li><a href="#" data-section="intense-rain"><svg class="icon shape-intense-rain"><use xlink:href="#shape-intense-rain"></use></svg><span>Croma Intense Rain</span></a></li>
                       <li><a href="#" data-section="massage"><svg class="icon shape-massage"><use xlink:href="#shape-massage"></use></svg><span>Croma Massage</span></a></li>
@@ -1273,7 +1273,7 @@
                             <div class="icon-wrap">
                                 <svg class="icon shape-raindance"><use xlink:href="#shape-raindance"></use></svg>
                             </div><!-- /.icon-wrap -->
-                            <h3>Raindance</h3>
+                            <h3>Rain</h3>
                             <div class="text">
                               <p>A pure, soft, relaxing shower rain.</p>
                             </div>

@@ -110,12 +110,7 @@
                         <figure class="image">
                             <img src="images/water_therapy/bathing/freestanding/bathing-slider-freestanding-05.jpg" alt="bathing freestanding 05">
                         </figure>
-                    </div><!-- /.slide -->
-                    <div class="slide">
-                        <figure class="image">
-                            <img src="images/water_therapy/bathing/freestanding/bathing-slider-freestanding-06.jpg" alt="bathing freestanding 06">
-                        </figure>
-                    </div><!-- /.slide -->
+                    </div><!-- /.slide -->                    
                 </div><!-- /.grid-module-slider -->
                 <div class="grid-module-slider-buttons slideshow-buttons"></div>
               </div><!-- /.panel-slideshow -->                

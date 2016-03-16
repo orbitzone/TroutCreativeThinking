@@ -321,7 +321,7 @@ body.water-therapy{
 						margin: 0 auto;
 						position: relative;
 						@include perspective(1000);
-						@media (max-width: $screen-sm-max){
+						@media (min-width: 769px){
 							max-width: 738px;
 						}
 						@media (min-width: $screen-md){
@@ -1231,7 +1231,7 @@ body.water-therapy{
 			background-size: contain;
 			background-repeat: no-repeat;
 			padding-top: 102px;
-			@media (min-width: $screen-sm-min){
+			@media (min-width: $screen-md-min){
 				background-position: top center;
 				background-size: cover;
 			}

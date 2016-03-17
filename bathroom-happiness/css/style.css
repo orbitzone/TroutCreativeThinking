@@ -5478,6 +5478,7 @@ body.water-therapy .main #bathing .grid-module-zone-4 .btn:hover {
 body.water-therapy .main #showering .grid-module-zone-5,
 body.water-therapy .main #bathing .grid-module-zone-5 {
   padding-top: 58px;
+  padding-bottom: 30px;
   background: white;
   position: relative;
 }
@@ -5489,7 +5490,7 @@ body.water-therapy .main #bathing .grid-module-zone-5 {
     padding-top: 0;
   }
 }
-/* line 1189, ../sass/pages/_water_therapy.scss */
+/* line 1190, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zone-5 h3,
 body.water-therapy .main #bathing .grid-module-zone-5 h3 {
   margin-top: 0;
@@ -5502,7 +5503,7 @@ body.water-therapy .main #bathing .grid-module-zone-5 h3 {
   margin: 0 auto;
   margin-bottom: 25px;
 }
-/* line 1200, ../sass/pages/_water_therapy.scss */
+/* line 1201, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zone-5 .intro-text,
 body.water-therapy .main #bathing .grid-module-zone-5 .intro-text {
   max-width: 400px;
@@ -5510,13 +5511,13 @@ body.water-therapy .main #bathing .grid-module-zone-5 .intro-text {
   margin-bottom: 25px;
   color: #121a22;
 }
-/* line 1206, ../sass/pages/_water_therapy.scss */
+/* line 1207, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zone-5 .grid-module-zone-5-content,
 body.water-therapy .main #bathing .grid-module-zone-5 .grid-module-zone-5-content {
   padding-top: 60px;
 }
 @media (min-width: 992px) {
-  /* line 1206, ../sass/pages/_water_therapy.scss */
+  /* line 1207, ../sass/pages/_water_therapy.scss */
   body.water-therapy .main #showering .grid-module-zone-5 .grid-module-zone-5-content,
   body.water-therapy .main #bathing .grid-module-zone-5 .grid-module-zone-5-content {
     /*position: absolute;
@@ -5526,37 +5527,37 @@ body.water-therapy .main #bathing .grid-module-zone-5 .grid-module-zone-5-conten
     @include transform(translateY(-50%));*/
   }
 }
-/* line 1218, ../sass/pages/_water_therapy.scss */
+/* line 1219, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zone-5 .panel-slideshow .slide-content .slideshow-buttons,
 body.water-therapy .main #bathing .grid-module-zone-5 .panel-slideshow .slide-content .slideshow-buttons {
   top: 216px;
 }
-/* line 1221, ../sass/pages/_water_therapy.scss */
+/* line 1222, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zone-5 .panel-slideshow .slide-content a,
 body.water-therapy .main #bathing .grid-module-zone-5 .panel-slideshow .slide-content a {
   margin-bottom: 20px;
 }
-/* line 1224, ../sass/pages/_water_therapy.scss */
+/* line 1225, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zone-5 .panel-slideshow .slide-content .slide-image,
 body.water-therapy .main #bathing .grid-module-zone-5 .panel-slideshow .slide-content .slide-image {
   margin-bottom: 10px;
 }
-/* line 1226, ../sass/pages/_water_therapy.scss */
+/* line 1227, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zone-5 .panel-slideshow .slide-content .slide-image img,
 body.water-therapy .main #bathing .grid-module-zone-5 .panel-slideshow .slide-content .slide-image img {
   max-height: 180px;
 }
-/* line 1230, ../sass/pages/_water_therapy.scss */
+/* line 1231, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zone-5 .panel-slideshow .slide-content .slide-text,
 body.water-therapy .main #bathing .grid-module-zone-5 .panel-slideshow .slide-content .slide-text {
   margin-bottom: 30px;
 }
-/* line 1233, ../sass/pages/_water_therapy.scss */
+/* line 1234, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zone-5 .panel-slideshow .slide-content .slide-btn-wrap,
 body.water-therapy .main #bathing .grid-module-zone-5 .panel-slideshow .slide-content .slide-btn-wrap {
   text-align: center;
 }
-/* line 1236, ../sass/pages/_water_therapy.scss */
+/* line 1237, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zone-5 .panel-slideshow .slide-content .slide-btn,
 body.water-therapy .main #bathing .grid-module-zone-5 .panel-slideshow .slide-content .slide-btn {
   text-transform: uppercase;
@@ -5570,17 +5571,17 @@ body.water-therapy .main #bathing .grid-module-zone-5 .panel-slideshow .slide-co
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
-/* line 1244, ../sass/pages/_water_therapy.scss */
+/* line 1245, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #showering .grid-module-zone-5 .panel-slideshow .slide-content .slide-btn:hover,
 body.water-therapy .main #bathing .grid-module-zone-5 .panel-slideshow .slide-content .slide-btn:hover {
   background: #151d25;
 }
-/* line 1252, ../sass/pages/_water_therapy.scss */
+/* line 1253, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing {
   background: white;
   color: black;
 }
-/* line 1255, ../sass/pages/_water_therapy.scss */
+/* line 1256, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .bathing-image {
   background-image: url(../images/water_therapy/bathing-bg.jpg);
   background-size: cover;
@@ -5588,27 +5589,27 @@ body.water-therapy .main #bathing .bathing-image {
   background-repeat: no-repeat;
   text-align: center;
 }
-/* line 1261, ../sass/pages/_water_therapy.scss */
+/* line 1262, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .bathing-image img {
   opacity: 0;
   margin: 0 auto;
 }
-/* line 1266, ../sass/pages/_water_therapy.scss */
+/* line 1267, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .bathing-content {
   margin-top: -70px;
 }
 @media (min-width: 768px) {
-  /* line 1266, ../sass/pages/_water_therapy.scss */
+  /* line 1267, ../sass/pages/_water_therapy.scss */
   body.water-therapy .main #bathing .bathing-content {
     margin-top: -200px;
   }
 }
-/* line 1272, ../sass/pages/_water_therapy.scss */
+/* line 1273, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .grid-module-menu-wrap,
 body.water-therapy .main #bathing .grid-module-zones-sections {
   color: white;
 }
-/* line 1279, ../sass/pages/_water_therapy.scss */
+/* line 1280, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .grid-module-menu {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#37d1a4+0,41f3bf+100 */
   background: #1a1c24;
@@ -5622,18 +5623,18 @@ body.water-therapy .main #bathing .grid-module-menu {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a1c24', endColorstr='#161d23',GradientType=0 );
   /* IE6-9 */
 }
-/* line 1289, ../sass/pages/_water_therapy.scss */
+/* line 1290, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .grid-module-menu ul li a {
   color: white;
   border: 1px solid white;
 }
-/* line 1292, ../sass/pages/_water_therapy.scss */
+/* line 1293, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .grid-module-menu ul li a.active {
   border-color: #39d8a9;
   background: #39d8a9;
   color: #151d25;
 }
-/* line 1301, ../sass/pages/_water_therapy.scss */
+/* line 1302, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .grid-module-description {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1a1c24+0,161d23+100 */
   color: #151d25;
@@ -5648,7 +5649,7 @@ body.water-therapy .main #bathing .grid-module-description {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#37d1a4', endColorstr='#41f3bf',GradientType=0 );
   /* IE6-9 */
 }
-/* line 1310, ../sass/pages/_water_therapy.scss */
+/* line 1311, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .grid-module-description:before {
   content: " ";
   display: block;
@@ -5664,7 +5665,7 @@ body.water-therapy .main #bathing .grid-module-description:before {
   -o-transform: translateX(-50%) translateY(50%) rotate(45deg);
   transform: translateX(-50%) translateY(50%) rotate(45deg);
 }
-/* line 1323, ../sass/pages/_water_therapy.scss */
+/* line 1324, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .scrolling-menu-wrap .scrolling-menu-list {
   background: #1a1c24;
   /* Old browsers */
@@ -5677,57 +5678,57 @@ body.water-therapy .main #bathing .scrolling-menu-wrap .scrolling-menu-list {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a1c24', endColorstr='#161d23',GradientType=0 );
   /* IE6-9 */
 }
-/* line 1331, ../sass/pages/_water_therapy.scss */
+/* line 1332, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .scrolling-menu-wrap .scrolling-menu-list ul li a {
   color: white;
   border: 1px solid white;
 }
-/* line 1334, ../sass/pages/_water_therapy.scss */
+/* line 1335, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .scrolling-menu-wrap .scrolling-menu-list ul li a.active {
   border-color: #39d8a9;
   background: #39d8a9;
   color: #151d25;
 }
-/* line 1343, ../sass/pages/_water_therapy.scss */
+/* line 1344, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .scrolling-menu-wrap .scrolling-menu {
   background: #39d8a9;
 }
-/* line 1345, ../sass/pages/_water_therapy.scss */
+/* line 1346, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .scrolling-menu-wrap .scrolling-menu .icon {
   fill: #151d25;
 }
-/* line 1350, ../sass/pages/_water_therapy.scss */
+/* line 1351, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .grid-module-zones-2-3 {
   z-index: 1;
 }
-/* line 1353, ../sass/pages/_water_therapy.scss */
+/* line 1354, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .grid-module-zone-4 {
   z-index: 0;
   background: white;
 }
-/* line 1356, ../sass/pages/_water_therapy.scss */
+/* line 1357, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .grid-module-zone-4 h3 {
   margin-bottom: 20px;
 }
-/* line 1359, ../sass/pages/_water_therapy.scss */
+/* line 1360, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .grid-module-zone-4 .text {
   text-align: center;
 }
-/* line 1362, ../sass/pages/_water_therapy.scss */
+/* line 1363, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .grid-module-zone-4 .product {
   margin-bottom: 20px;
 }
-/* line 1365, ../sass/pages/_water_therapy.scss */
+/* line 1366, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .grid-module-zone-4 .product .image img {
   margin: 0 auto;
 }
-/* line 1369, ../sass/pages/_water_therapy.scss */
+/* line 1370, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .grid-module-zone-4 .product a {
   display: block;
   text-align: center;
   text-decoration: none;
 }
-/* line 1373, ../sass/pages/_water_therapy.scss */
+/* line 1374, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .grid-module-zone-4 .product a h4 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #4d4d4d;
@@ -5736,7 +5737,7 @@ body.water-therapy .main #bathing .grid-module-zone-4 .product a h4 {
   letter-spacing: 0;
   margin-bottom: 10px;
 }
-/* line 1381, ../sass/pages/_water_therapy.scss */
+/* line 1382, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .grid-module-zone-4 .product a h5 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #4d4d4d;
@@ -5744,7 +5745,7 @@ body.water-therapy .main #bathing .grid-module-zone-4 .product a h5 {
   letter-spacing: 0;
   margin-bottom: 5px;
 }
-/* line 1388, ../sass/pages/_water_therapy.scss */
+/* line 1389, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .grid-module-zone-4 .product a .button {
   text-align: center;
   display: inline-block;
@@ -5757,38 +5758,38 @@ body.water-therapy .main #bathing .grid-module-zone-4 .product a .button {
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
-/* line 1396, ../sass/pages/_water_therapy.scss */
+/* line 1397, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .grid-module-zone-4 .product a .button:hover {
   background: black;
 }
-/* line 1404, ../sass/pages/_water_therapy.scss */
+/* line 1405, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .grid-module-zone-5 h3 {
   margin-bottom: 20px;
 }
-/* line 1407, ../sass/pages/_water_therapy.scss */
+/* line 1408, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .grid-module-zone-5 .text {
   color: #121a22;
 }
-/* line 1410, ../sass/pages/_water_therapy.scss */
+/* line 1411, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .grid-module-zone-5 .slide-text {
   text-align: center;
   padding-left: 0;
 }
-/* line 1416, ../sass/pages/_water_therapy.scss */
+/* line 1417, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .grid-module-zones-4-5 .grid-module-zone-4 {
   background: #eeeeee;
   color: #121a22;
 }
-/* line 1419, ../sass/pages/_water_therapy.scss */
+/* line 1420, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .grid-module-zones-4-5 .grid-module-zone-4 .text {
   text-align: left;
 }
-/* line 1424, ../sass/pages/_water_therapy.scss */
+/* line 1425, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #bathing .grid-module-zones-4-5 .grid-module-zone-5 .slide-text {
   text-align: center;
   padding-left: 0;
 }
-/* line 1431, ../sass/pages/_water_therapy.scss */
+/* line 1432, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology {
   background-color: black;
   background-image: url(../images/water_therapy/shower-technology.jpg);
@@ -5798,38 +5799,38 @@ body.water-therapy .main #shower-technology {
   padding-top: 102px;
 }
 @media (min-width: 992px) {
-  /* line 1431, ../sass/pages/_water_therapy.scss */
+  /* line 1432, ../sass/pages/_water_therapy.scss */
   body.water-therapy .main #shower-technology {
     background-position: top center;
     background-size: cover;
   }
 }
-/* line 1442, ../sass/pages/_water_therapy.scss */
+/* line 1443, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .container-fluid {
   max-width: 350px;
 }
 @media (min-width: 768px) {
-  /* line 1442, ../sass/pages/_water_therapy.scss */
+  /* line 1443, ../sass/pages/_water_therapy.scss */
   body.water-therapy .main #shower-technology .container-fluid {
     max-width: 575px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 1442, ../sass/pages/_water_therapy.scss */
+  /* line 1443, ../sass/pages/_water_therapy.scss */
   body.water-therapy .main #shower-technology .container-fluid {
     max-width: 1230px;
   }
 }
-/* line 1451, ../sass/pages/_water_therapy.scss */
+/* line 1452, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-sections {
   max-width: 1055px;
   margin: 0 auto;
 }
-/* line 1455, ../sass/pages/_water_therapy.scss */
+/* line 1456, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-menu {
   margin-bottom: 30px;
 }
-/* line 1457, ../sass/pages/_water_therapy.scss */
+/* line 1458, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-menu h3 {
   color: #39d8a9;
   text-transform: uppercase;
@@ -5839,12 +5840,12 @@ body.water-therapy .main #shower-technology .shower-technology-menu h3 {
   margin-top: 35px;
   margin-bottom: 30px;
 }
-/* line 1466, ../sass/pages/_water_therapy.scss */
+/* line 1467, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-menu ul {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 1468, ../sass/pages/_water_therapy.scss */
+/* line 1469, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-menu ul li {
   float: left;
   width: 33.3333%;
@@ -5853,15 +5854,15 @@ body.water-therapy .main #shower-technology .shower-technology-menu ul li {
   border-bottom: 1px solid #373737;
   border-right: 1px solid #373737;
 }
-/* line 1475, ../sass/pages/_water_therapy.scss */
+/* line 1476, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-menu ul li:nth-child(3n) {
   border-right: none;
 }
-/* line 1478, ../sass/pages/_water_therapy.scss */
+/* line 1479, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-menu ul li:nth-child(7), body.water-therapy .main #shower-technology .shower-technology-menu ul li:nth-child(8), body.water-therapy .main #shower-technology .shower-technology-menu ul li:nth-child(9) {
   border-bottom: none;
 }
-/* line 1481, ../sass/pages/_water_therapy.scss */
+/* line 1482, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-menu ul li a {
   display: block;
   text-align: center;
@@ -5876,7 +5877,7 @@ body.water-therapy .main #shower-technology .shower-technology-menu ul li a {
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
-/* line 1491, ../sass/pages/_water_therapy.scss */
+/* line 1492, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-menu ul li a span {
   display: block;
   margin: 0 auto;
@@ -5885,7 +5886,7 @@ body.water-therapy .main #shower-technology .shower-technology-menu ul li a span
   max-width: 90px;
 }
 @media (min-width: 768px) {
-  /* line 1491, ../sass/pages/_water_therapy.scss */
+  /* line 1492, ../sass/pages/_water_therapy.scss */
   body.water-therapy .main #shower-technology .shower-technology-menu ul li a span {
     margin: 0 auto;
     margin-top: 20px;
@@ -5893,13 +5894,13 @@ body.water-therapy .main #shower-technology .shower-technology-menu ul li a span
   }
 }
 @media (min-width: 768px) {
-  /* line 1481, ../sass/pages/_water_therapy.scss */
+  /* line 1482, ../sass/pages/_water_therapy.scss */
   body.water-therapy .main #shower-technology .shower-technology-menu ul li a {
     height: 143px;
     font-size: 14px;
   }
 }
-/* line 1507, ../sass/pages/_water_therapy.scss */
+/* line 1508, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-menu ul li a .icon {
   display: block;
   width: 40px;
@@ -5912,31 +5913,31 @@ body.water-therapy .main #shower-technology .shower-technology-menu ul li a .ico
   transition: all 0.5s ease-out;
 }
 @media (min-width: 768px) {
-  /* line 1507, ../sass/pages/_water_therapy.scss */
+  /* line 1508, ../sass/pages/_water_therapy.scss */
   body.water-therapy .main #shower-technology .shower-technology-menu ul li a .icon {
     width: 55px;
     height: 55px;
   }
 }
-/* line 1519, ../sass/pages/_water_therapy.scss */
+/* line 1520, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-menu ul li a:hover {
   color: white;
   background: #151d25;
 }
-/* line 1522, ../sass/pages/_water_therapy.scss */
+/* line 1523, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-menu ul li a:hover .icon {
   fill: white;
 }
-/* line 1526, ../sass/pages/_water_therapy.scss */
+/* line 1527, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-menu ul li a.active {
   color: #151d25;
   background: #39d8a9;
 }
-/* line 1529, ../sass/pages/_water_therapy.scss */
+/* line 1530, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-menu ul li a.active .icon {
   fill: #151d25;
 }
-/* line 1537, ../sass/pages/_water_therapy.scss */
+/* line 1538, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-cards {
   overflow: hidden;
   position: relative;
@@ -5945,13 +5946,13 @@ body.water-therapy .main #shower-technology .shower-technology-cards {
   padding: 30px 0 0;
 }
 @media (min-width: 768px) {
-  /* line 1537, ../sass/pages/_water_therapy.scss */
+  /* line 1538, ../sass/pages/_water_therapy.scss */
   body.water-therapy .main #shower-technology .shower-technology-cards {
     width: 545px;
     height: 615px;
   }
 }
-/* line 1547, ../sass/pages/_water_therapy.scss */
+/* line 1548, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-cards .shower-technology-card {
   position: absolute;
   top: 30px;
@@ -5963,7 +5964,7 @@ body.water-therapy .main #shower-technology .shower-technology-cards .shower-tec
   -o-animation: card_out 1s ease-in-out both;
   animation: card_out 1s ease-in-out both;
 }
-/* line 1554, ../sass/pages/_water_therapy.scss */
+/* line 1555, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-cards .shower-technology-card.ie-lt {
   -webkit-animation: none;
   -moz-animation: none;
@@ -5976,7 +5977,7 @@ body.water-therapy .main #shower-technology .shower-technology-cards .shower-tec
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
-/* line 1559, ../sass/pages/_water_therapy.scss */
+/* line 1560, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-cards .shower-technology-card.active {
   -webkit-transform: translateY(615px) translateZ(0) scale(1);
   -moz-transform: translateY(615px) translateZ(0) scale(1);
@@ -5989,7 +5990,7 @@ body.water-therapy .main #shower-technology .shower-technology-cards .shower-tec
   -o-animation: card_in 1s ease-in-out 0.5s both;
   animation: card_in 1s ease-in-out 0.5s both;
 }
-/* line 1562, ../sass/pages/_water_therapy.scss */
+/* line 1563, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-cards .shower-technology-card.active.ie-lt {
   -webkit-animation: none;
   -moz-animation: none;
@@ -6003,7 +6004,7 @@ body.water-therapy .main #shower-technology .shower-technology-cards .shower-tec
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
-/* line 1572, ../sass/pages/_water_therapy.scss */
+/* line 1573, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description {
   text-align: center;
   -webkit-perspective: 1000px;
@@ -6015,7 +6016,7 @@ body.water-therapy .main #shower-technology .shower-technology-description {
   color: white;
   padding: 0;
 }
-/* line 1577, ../sass/pages/_water_therapy.scss */
+/* line 1578, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .close-video {
   position: absolute;
   top: 0px;
@@ -6042,7 +6043,7 @@ body.water-therapy .main #shower-technology .shower-technology-description .clos
   -webkit-transition: all 0s ease-out;
   transition: all 0s ease-out;
 }
-/* line 1592, ../sass/pages/_water_therapy.scss */
+/* line 1593, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .close-video.active {
   -moz-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
@@ -6050,7 +6051,7 @@ body.water-therapy .main #shower-technology .shower-technology-description .clos
   transition: all 0.5s ease-out;
   opacity: 1;
 }
-/* line 1596, ../sass/pages/_water_therapy.scss */
+/* line 1597, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .close-video .icon {
   fill: #39d8a9;
   width: 32px;
@@ -6058,13 +6059,13 @@ body.water-therapy .main #shower-technology .shower-technology-description .clos
   position: relative;
   top: 2px;
 }
-/* line 1604, ../sass/pages/_water_therapy.scss */
+/* line 1605, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .image {
   text-align: center;
   margin-bottom: -99px;
   position: relative;
 }
-/* line 1608, ../sass/pages/_water_therapy.scss */
+/* line 1609, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .image:after {
   content: " ";
   display: block;
@@ -6075,11 +6076,11 @@ body.water-therapy .main #shower-technology .shower-technology-description .imag
   left: 0;
   width: 100%;
 }
-/* line 1618, ../sass/pages/_water_therapy.scss */
+/* line 1619, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .image img {
   margin: 0 auto;
 }
-/* line 1622, ../sass/pages/_water_therapy.scss */
+/* line 1623, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description h3 {
   color: #39d8a9;
   text-transform: uppercase;
@@ -6088,36 +6089,36 @@ body.water-therapy .main #shower-technology .shower-technology-description h3 {
   letter-spacing: 0.17em;
   margin: 20px 0;
 }
-/* line 1630, ../sass/pages/_water_therapy.scss */
+/* line 1631, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description ul {
   padding-top: 20px;
 }
-/* line 1632, ../sass/pages/_water_therapy.scss */
+/* line 1633, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description ul li {
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 10px;
 }
-/* line 1638, ../sass/pages/_water_therapy.scss */
+/* line 1639, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .text {
   max-width: 305px;
   margin: 0 auto;
   padding: 0 20px;
 }
-/* line 1643, ../sass/pages/_water_therapy.scss */
+/* line 1644, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .icon-wrap {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 10px;
   position: relative;
 }
-/* line 1648, ../sass/pages/_water_therapy.scss */
+/* line 1649, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .icon-wrap .icon {
   width: 55px;
   height: 55px;
   fill: #cacaca;
 }
-/* line 1653, ../sass/pages/_water_therapy.scss */
+/* line 1654, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .icon-wrap:after {
   content: " ";
   width: 22px;
@@ -6128,7 +6129,7 @@ body.water-therapy .main #shower-technology .shower-technology-description .icon
   left: 50%;
   margin-left: -11px;
 }
-/* line 1664, ../sass/pages/_water_therapy.scss */
+/* line 1665, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .see-product {
   display: inline-block;
   padding: 5px 18px;
@@ -6137,17 +6138,17 @@ body.water-therapy .main #shower-technology .shower-technology-description .see-
   color: black;
   text-decoration: none;
 }
-/* line 1671, ../sass/pages/_water_therapy.scss */
+/* line 1672, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .see-product:hover {
   background: #39d8a9;
 }
-/* line 1675, ../sass/pages/_water_therapy.scss */
+/* line 1676, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .view-video {
   color: #39d8a9;
   text-transform: uppercase;
   font-weight: 400;
 }
-/* line 1679, ../sass/pages/_water_therapy.scss */
+/* line 1680, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .view-video .icon {
   vertical-align: middle;
   margin-right: 5px;
@@ -6155,7 +6156,7 @@ body.water-therapy .main #shower-technology .shower-technology-description .view
   height: 40px;
   fill: #39d8a9;
 }
-/* line 1687, ../sass/pages/_water_therapy.scss */
+/* line 1688, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip {
   -moz-transition: all 0.6s ease-out;
   -o-transition: all 0.6s ease-out;
@@ -6171,13 +6172,13 @@ body.water-therapy .main #shower-technology .shower-technology-description .show
   min-height: 325.87px;
 }
 @media (min-width: 768px) {
-  /* line 1687, ../sass/pages/_water_therapy.scss */
+  /* line 1688, ../sass/pages/_water_therapy.scss */
   body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip {
     width: 545px;
     height: 555px;
   }
 }
-/* line 1697, ../sass/pages/_water_therapy.scss */
+/* line 1698, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip .front,
 body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip .back {
   -webkit-backface-visibility: hidden;
@@ -6203,14 +6204,14 @@ body.water-therapy .main #shower-technology .shower-technology-description .show
   min-height: 325.87px;
 }
 @media (min-width: 768px) {
-  /* line 1697, ../sass/pages/_water_therapy.scss */
+  /* line 1698, ../sass/pages/_water_therapy.scss */
   body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip .front,
   body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip .back {
     width: 545px;
     height: 555px;
   }
 }
-/* line 1713, ../sass/pages/_water_therapy.scss */
+/* line 1714, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip .front {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,161c23+100 */
   background: #000000;
@@ -6231,7 +6232,7 @@ body.water-therapy .main #shower-technology .shower-technology-description .show
   -o-transform: rotateY(0deg);
   transform: rotateY(0deg);
 }
-/* line 1725, ../sass/pages/_water_therapy.scss */
+/* line 1726, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip .back {
   background: #000000;
   /* Old browsers */
@@ -6250,7 +6251,7 @@ body.water-therapy .main #shower-technology .shower-technology-description .show
   transform: rotateY(-180deg);
   overflow: hidden;
 }
-/* line 1734, ../sass/pages/_water_therapy.scss */
+/* line 1735, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip .back .video {
   overflow: hidden;
   position: absolute;
@@ -6265,13 +6266,13 @@ body.water-therapy .main #shower-technology .shower-technology-description .show
   height: 325.87px;
 }
 @media (min-width: 768px) {
-  /* line 1734, ../sass/pages/_water_therapy.scss */
+  /* line 1735, ../sass/pages/_water_therapy.scss */
   body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip .back .video {
     width: 978.6px;
     height: 555px;
   }
 }
-/* line 1746, ../sass/pages/_water_therapy.scss */
+/* line 1747, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip .back .video iframe {
   position: relative;
   z-index: 1;
@@ -6279,13 +6280,13 @@ body.water-therapy .main #shower-technology .shower-technology-description .show
   height: 325.87px;
 }
 @media (min-width: 768px) {
-  /* line 1746, ../sass/pages/_water_therapy.scss */
+  /* line 1747, ../sass/pages/_water_therapy.scss */
   body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip .back .video iframe {
     width: 978.6px;
     height: 555px;
   }
 }
-/* line 1756, ../sass/pages/_water_therapy.scss */
+/* line 1757, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description .shower-technology-flip .back .video:before {
   display: block;
   width: 100%;
@@ -6297,7 +6298,7 @@ body.water-therapy .main #shower-technology .shower-technology-description .show
   z-index: 1;
   cursor: pointer;
 }
-/* line 1775, ../sass/pages/_water_therapy.scss */
+/* line 1776, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description.active .shower-technology-flip .back {
   -webkit-transform: rotateY(0deg);
   -moz-transform: rotateY(0deg);
@@ -6305,7 +6306,7 @@ body.water-therapy .main #shower-technology .shower-technology-description.activ
   -o-transform: rotateY(0deg);
   transform: rotateY(0deg);
 }
-/* line 1778, ../sass/pages/_water_therapy.scss */
+/* line 1779, ../sass/pages/_water_therapy.scss */
 body.water-therapy .main #shower-technology .shower-technology-description.active .shower-technology-flip .front {
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);

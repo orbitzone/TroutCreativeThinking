@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="70px"
+	 height="70px" viewBox="0 0 70 70" enable-background="new 0 0 70 70" xml:space="preserve">
+<g id="airdrop">
+	<circle display="inline" cx="17.1" cy="61.9" r="3.1"/>
+	<circle display="inline" cx="17.1" cy="45.9" r="3.6"/>
+	<circle display="inline" cx="17.1" cy="28" r="4.1"/>
+	<circle display="inline" cx="17.1" cy="9.8" r="4.8"/>
+	<circle display="inline" cx="35" cy="61.9" r="3.1"/>
+	<circle display="inline" cx="35" cy="45.9" r="3.6"/>
+	<circle display="inline" cx="35" cy="28" r="4.1"/>
+	<circle display="inline" cx="35" cy="9.8" r="4.8"/>
+	<circle display="inline" cx="52.9" cy="61.9" r="3.1"/>
+	<circle display="inline" cx="52.9" cy="45.9" r="3.6"/>
+	<circle display="inline" cx="52.9" cy="28" r="4.1"/>
+	<circle display="inline" cx="52.9" cy="9.8" r="4.8"/>
+</g>
+</svg>

@@ -113,25 +113,6 @@ body.bathroom-happiness {
 	/* Slick Slide shows */
   .panel-slideshow {
     position: relative;
-    height: 335px;
-    @media (min-width: $screen-md-min) {
-    	height: 351px;
-    }
-		@media (min-width: $screen-lg-min) {
-			height: 335px;
-      	
-     }
-    .slideshow-container {
-      height: 273px;
-      @media (min-width: $screen-md-min) {
-      	height: 290px;
-      }
-      @media (min-width: $screen-lg-min) {
-      	height: 273px;
-      }
-      padding-top: 10px;
-    }
-
     .slide {
     	.slide-content {
     		a{
@@ -141,6 +122,7 @@ body.bathroom-happiness {
     		}
     		.slide-image {
     			text-align: center;
+    			padding: 0 20px 10px;
     			img{
     				margin: 0 auto;
     			}
@@ -176,7 +158,7 @@ body.bathroom-happiness {
 
     .slideshow-buttons {
       position: absolute;
-	    top: 180px;
+	    top: 212px;
 	    left: 10px;
 	    margin-left: 10px;
 	    width: 66px;

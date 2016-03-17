@@ -40,9 +40,9 @@
                       </div>
                     </div>
                     <div class="content">
-                      <div class="image" style="background-image: url(images/trends/day-spa.jpg);">
-                        <img src="images/trends/day-spa.jpg" alt="Day Spa">
-                        <div class="gif" style="background-image: url(images/trends/day-spa.gif);"></div>
+                      <div class="image day-spa">
+                        <img src="images/trends/day-spa-trend.jpg" alt="Day Spa">
+                        <div class="animation"></div>                        
                       </div>
                     </div>
                   </a>
@@ -60,9 +60,9 @@
                       </div>
                     </div>
                     <div class="content">
-                      <div class="image" style="background-image: url(images/trends/hotel-inspired.jpg);">
-                        <img src="images/trends/hotel-inspired.jpg" alt="Hotel Inspired">
-                        <div class="gif" style="background-image: url(images/trends/hotel-inspired.gif);"></div>
+                      <div class="image hotel-inspired">
+                        <img src="images/trends/hotel-inspired-trend.jpg" alt="Hotel Inspired">
+                        <div class="animation"></div>                        
                       </div>
                     </div>
                   </a>
@@ -80,9 +80,9 @@
                       </div>
                     </div>
                     <div class="content">
-                      <div class="image" style="background-image: url(images/trends/boho.jpg);">
-                        <img src="images/trends/boho.jpg" alt="Boho">
-                        <div class="gif" style="background-image: url(images/trends/boho.gif);"></div>
+                      <div class="image boho">
+                        <img src="images/trends/boho-trend.jpg" alt="Boho">                        
+                        <div class="animation"></div>
                       </div>
                     </div>
                   </a>
@@ -100,9 +100,9 @@
                       </div>
                     </div>
                     <div class="content">
-                      <div class="image" style="background-image: url(images/trends/neo-classic.jpg);">
-                        <img src="images/trends/neo-classic.jpg" alt="Boho">                        
-                        <div class="gif" style="background-image: url(images/trends/neo-classic.gif);"></div>
+                      <div class="image neo-classic">
+                        <img src="images/trends/neo-classic-trend.jpg" alt="Boho"/>
+                        <div class="animation"></div>                        
                       </div>
                     </div>
                   </a>
@@ -120,9 +120,9 @@
                       </div>
                     </div>
                     <div class="content">
-                      <div class="image" style="background-image: url(images/trends/material-crush.jpg);">
-                        <img src="images/trends/material-crush.jpg" alt="Material Crush">
-                        <div class="gif" style="background-image: url(images/trends/material-crush.gif);"></div>
+                      <div class="image material-crush">
+                        <img src="images/trends/material-crush-trend.jpg" alt="Material Crush">
+                        <div class="animation"></div>                        
                       </div>
                     </div>
                   </a>
@@ -140,9 +140,9 @@
                       </div>
                     </div>
                     <div class="content">
-                      <div class="image" style="background-image: url(images/trends/nordic-minimal.jpg);">
-                        <img src="images/trends/nordic-minimal.jpg" alt="Nordic Minimal">
-                        <div class="gif" style="background-image: url(images/trends/nordic-minimal.gif);"></div>
+                      <div class="image nordic-minimal">
+                        <img src="images/trends/nordic-minimal-trend.jpg" alt="Nordic Minimal">
+                        <div class="animation"></div>                       
                       </div>
                     </div>
                   </a>
@@ -160,9 +160,9 @@
                       </div>
                     </div>
                     <div class="content">
-                      <div class="image" style="background-image: url(images/trends/traditional.jpg);">
-                        <img src="images/trends/traditional.jpg" alt="Traditional">
-                        <div class="gif" style="background-image: url(images/trends/traditional.gif);"></div>
+                      <div class="image traditional">
+                        <img src="images/trends/traditional-trend.jpg" alt="Traditional">
+                        <div class="animation"></div>
                       </div>
                     </div>
                   </a>
@@ -180,9 +180,9 @@
                       </div>
                     </div>
                     <div class="content">
-                      <div class="image" style="background-image: url(images/trends/black-and-white.jpg);">
-                        <img src="images/trends/black-and-white.jpg" alt="Black &amp; White">
-                        <div class="gif" style="background-image: url(images/trends/black-and-white.gif);"></div>
+                      <div class="image black-and-white">
+                        <img src="images/trends/black-and-white-trend.jpg" alt="Black &amp; White">
+                        <div class="animation"></div>
                       </div>
                     </div>
                   </a>

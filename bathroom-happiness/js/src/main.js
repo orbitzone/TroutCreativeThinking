@@ -858,13 +858,14 @@ var bathroomHappiness = {
       if(deviceMobile){
         width = $(window).width();
         height = $(window).height();
+      }else{
+        if($('#banner .banner').hasClass('playing')){
+          $('#banner .banner').height(height);
+        }          
       }
 
       $('#water-therapy-full-video').height(height);
       $('#water-therapy-full-video').width(width);
-      if($('#banner .banner').hasClass('playing')){
-        $('#banner .banner').height(height);
-      }
       var width = $('#water-therapy .videos').width();
       var height = 9 * width / 16;
       $('#water-therapy .videos iframe').width(width);

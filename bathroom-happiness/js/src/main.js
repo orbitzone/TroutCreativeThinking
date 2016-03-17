@@ -669,46 +669,58 @@ var bathroomHappiness = {
       $(this).parent().addClass('active');
       var section = $(this).text().toLowerCase();
       var topPosition = parseInt($('#intro .video-wrap').offset().top - 50);
-      if(!deviceMobile){
-        var player_container = 'water-therapy-'+section+'-video';
-        var video = $('#'+player_container+'-wrap').data('video');
-        var mute = 1;
-        if($('#water-therapy button.sound-on-off').hasClass('sound-on')){
-          mute = 0;
-        }
-        var scrollMenuAnimation = function(){
-          if(video){
-            var vars = {
-              showinfo: 0,
-              modestbranding: 0,
-              rel: 0,
-              controls: 0
-            };
-            playerManager.play(player_container, mute);                    
+      var animateToPlay = function(){
+        topPosition = parseInt($('#intro .video-wrap').offset().top - 50);
+        if(!deviceMobile){
+          var player_container = 'water-therapy-'+section+'-video';
+          var video = $('#'+player_container+'-wrap').data('video');
+          var mute = 1;
+          if($('#water-therapy button.sound-on-off').hasClass('sound-on')){
+            mute = 0;
           }
-          setTimeout(function(){ 
-            var sections = ['rejuvenation', 'relaxation','therapeutic'];
-            $.each(sections, function(key, val){
-              if(val !== section){
-                playerManager.pause('water-therapy-'+val+'-video');
-              }
+          var scrollMenuAnimation = function(){
+            if(video){
+              var vars = {
+                showinfo: 0,
+                modestbranding: 0,
+                rel: 0,
+                controls: 0
+              };
+              playerManager.play(player_container, mute);                    
+            }
+            setTimeout(function(){ 
+              var sections = ['rejuvenation', 'relaxation','therapeutic'];
+              $.each(sections, function(key, val){
+                if(val !== section){
+                  console.log(val);
+                  playerManager.pause('water-therapy-'+val+'-video');
+                }
+              });
+            },10); 
+          };
+          if(topPosition == parseInt($(window).scrollTop())){
+            $('#water-therapy').attr('class',section);
+            scrollMenuAnimation();          
+          }else{
+            $('html, body').animate({scrollTop: topPosition},500, function(){
+              $('#water-therapy').attr('class',section);
+              scrollMenuAnimation();
             });
-          },10); 
-        };
-        if(topPosition == parseInt($(window).scrollTop())){
-          $('#water-therapy').attr('class',section);
-          scrollMenuAnimation();          
+          }
         }else{
           $('html, body').animate({scrollTop: topPosition},500, function(){
             $('#water-therapy').attr('class',section);
-            scrollMenuAnimation();
           });
-        }
+        } 
+      };
+      if($('#banner .banner').hasClass('playing')){
+        $('#banner .stop-full-video').trigger('click');        
+        setTimeout(function(){
+          animateToPlay();
+        },1000);
       }else{
-        $('html, body').animate({scrollTop: topPosition},500, function(){
-          $('#water-therapy').attr('class',section);
-        });
-      }      
+         animateToPlay();
+      }           
     });
     $('#water-therapy .slides').slick({
       arrows: false,

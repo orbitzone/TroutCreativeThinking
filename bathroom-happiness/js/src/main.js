@@ -89,6 +89,7 @@ var playerManager = {
     if(this.exists(container)){
       playerManager.activate(container);
       var video = this.players[container].player;
+      playerManager.quality(container,'hd1080');
       if(typeof mute !== "undefined"){
         this.players[container].settings.mute = mute;
       }
@@ -106,6 +107,12 @@ var playerManager = {
         }
       }
     }
+  },
+  quality: function(container, quality){
+    if(typeof quality === "undefined"){
+      quality = 'hd1080';
+    }
+    this.players[container].player.setPlaybackQuality(quality);
   },
   pause: function(container){
     if(this.exists(container)){
@@ -727,7 +734,7 @@ var bathroomHappiness = {
             slidesToShow: slidesToShow,
             slidesToScroll: slidesToShow,
             dots: true,
-            arrows: false,
+            arrows: true,
             responsive:[
             {
               breakpoint: 991,
@@ -851,6 +858,10 @@ var bathroomHappiness = {
       });
       var width = $('#banner .banner').width();
       var height = 9 * width/16;
+      if(height< 514){
+        height= 514;
+        width = 16 * height/9;
+      }
       $('#water-therapy-video').width(width);
       $('#water-therapy-video').height(height);          
       //height = $('#banner .banner').height();

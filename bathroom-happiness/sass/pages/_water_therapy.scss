@@ -19,7 +19,7 @@ body.water-therapy{
 				padding: 0;
 				margin: 0 auto;
 				.banner{
-					@include transition(1s all ease-out);
+					@include transition(1s opacity ease-out, 1s height ease-out);
 					background-size: cover;
 					background-image: url(../images/water_therapy/water-therapy-hero.jpg);
 					background-position: center center;
@@ -615,6 +615,9 @@ body.water-therapy{
 		  	}
 		  }
 		}//#water-therapy
+		#showering{
+			padding-bottom: 60px;
+		}
 		#showering,
 		#bathing{
 			background: black;
@@ -1001,22 +1004,20 @@ body.water-therapy{
 			}//.grid-module-zones-2-3
 			.grid-module-zones-4-5,
 			{
-				margin-bottom: 80px;
-				/*.slideshow-buttons{
-					position: relative;
-					top: inherit;
-					left: inherit;
+				margin-bottom: 20px;
+				.slideshow-buttons{
+					top: 50%;
+					left: 0;
 					width: 100%;
-					text-align: center;
-					padding-top: 40px;
-					button{
-						display: inline-block;
-						position: relative;
-						top: inherit;
-						left: inherit;
-						margin-top: inherit;
+					margin-top: -20px;
+					margin-left: 0;
+					.slick-prev{
+						left: 10px;
 					}
-				}*/
+					.slick-next{
+						right: 10px;
+					}					
+				}
 				.slick-dots{
 					position: relative;
 					bottom: inherit;
@@ -1199,7 +1200,7 @@ body.water-therapy{
 				padding-top: 58px;
 				padding-bottom: 30px;
 				@media (min-width: $screen-md){
-					height: 488px;					
+					min-height: 488px;					
 					padding-top: 0;
 				}
 				background: white;

@@ -609,7 +609,9 @@ var bathroomHappiness = {
     $('#banner .play-full-video').on('click', function(){
       var player_container = 'water-therapy-full-video';
       $('#banner .banner').addClass('playing');
-      $('#banner .banner').height($('#water-therapy-full-video').height());
+      if(!deviceMobile){
+        $('#banner .banner').height($('#water-therapy-full-video').height());
+      }
       if($(this).hasClass('playing')){
         $(this).removeClass('playing');
         $(this).addClass('paused');

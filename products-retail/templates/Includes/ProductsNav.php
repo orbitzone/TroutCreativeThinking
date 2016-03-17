@@ -1,4 +1,4 @@
-<div class="subnavbar visible-desktop">
+<div class="subnavbar reece-retail visible-desktop">
   <div class="navbar-container">
     <ul class="nav">
     <li class="active">

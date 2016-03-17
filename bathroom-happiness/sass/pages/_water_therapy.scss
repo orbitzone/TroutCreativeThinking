@@ -19,14 +19,31 @@ body.water-therapy{
 				padding: 0;
 				margin: 0 auto;
 				.banner{
-					@include transition(1s opacity ease-out);
+					@include transition(1s all ease-out);
 					background-size: cover;
 					background-image: url(../images/water_therapy/water-therapy-hero.jpg);
 					background-position: center center;
 					height: 514px;
 					position: relative;
 					overflow: hidden;
+					.full-video-iframe-wrap{
+						opacity: 0;
+						@media (min-width: $screen-sm){
+							position: absolute;
+							top: 0;
+							left: 0;
+						}
+					}
 					&.playing{
+						.full-video-iframe-wrap{
+							opacity: 1;
+							@media (min-width: $screen-md){
+								&.mfp-hide{
+									display: block !important;
+								}
+							}
+						}
+						background: black;
 						height: auto;
 						#water-therapy-video-wrap{
 							@media (min-width: $screen-sm){
@@ -140,7 +157,7 @@ body.water-therapy{
 							opacity: 1;
 						}
 					}
-				}
+				}				
 			}
 		}
 		#water-therapy{

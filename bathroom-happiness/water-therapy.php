@@ -16,7 +16,7 @@
                 <div id="water-therapy-video-wrap" class="video-iframe-wrap video" data-video="0X0_Kj8YiSA">
                   <figure id="water-therapy-video"></figure>
                 </div>
-                <div id="full-video-popup" class="video-iframe-wrap">
+                <div id="full-video-popup" class="full-video-iframe-wrap">
                   <figure id="water-therapy-full-video"></figure>
                 </div>
               </div>

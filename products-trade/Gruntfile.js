@@ -1,7 +1,7 @@
 module.exports = function(grunt) {
     grunt.initConfig({
         server: {
-            port: grunt.option('port') || 8000
+            port: grunt.option('port') || 80
         },
         less: {
             development: {
@@ -46,7 +46,7 @@ module.exports = function(grunt) {
         },
         watch: {
             options: {
-                livereload: 35728
+                livereload: true
             },
             less: {
                 files: ['less/products-page/*.less', 'javascript/products-page.js'],

@@ -1,0 +1,87 @@
+h1,h2,h3,h4,h5,h6{
+	margin-top:0;
+	padding-top:0;
+}
+h1{
+	font-size:35px;
+}
+h3{
+	font-size:22px;
+}
+h6{
+	font-size:15px;
+}
+
+.breadcrumbs{
+	min-height:40px;
+	p{
+		font-size:15px;
+		line-height: 15px;
+		padding: 12px 0;
+		margin-bottom:0;
+		color: @text-grey;		
+	}
+
+}
+
+.clear, .clear-fix{
+	clear:both;
+}
+.section-container{
+	max-width: 1200px;
+	.inner-container{
+		padding-left:15px;
+		padding-right:15px;
+	}
+}
+.bg-light-grey{
+	background: @bg-light-grey;
+}
+.bg-sm-blue{
+	@media (max-width: @screen-xs-max) { 
+		background:@bg-blue;
+	}
+}
+.bg-mid-grey{
+	background: @bg-mid-grey;
+}
+.text-blue{
+	color:@text-blue;
+}
+.text-left{
+	text-align: left;
+}
+.text-center{
+	text-align: center;
+}
+.text-right{
+	text-align: right;
+}
+.padding-top{
+	padding-top: 50px;
+}
+ul.inline-list{
+	padding:0;
+	margin:0;
+	li{
+		list-style: none;
+		float:left;
+		display:inline-block;
+		padding: 5px 20px;
+	}
+}
+.btn{
+	.border-radius (0px);
+	padding:20px 85px;
+	line-height:1em;
+	font-size:13px;
+	text-transform: uppercase;
+	&.blue-button{
+		background: @bg-blue;
+		color: @white;
+	}
+	&.grey-button{
+		background: @bg-button-grey;
+		color: @white;
+	}
+}

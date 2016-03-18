@@ -5,5 +5,6 @@
 <script type="text/javascript" src="javascript/reece-ocnav.js"></script>
 <!--END: FROM ORIGINAL TEMPLATE -->
 
-
+<script type="text/javascript" src="javascript/jquery.validate.min.js"></script>
+<script type="text/javascript" src="javascript/jquery-ui.min.js"></script>
 <script type="text/javascript" src="javascript/products-page.min.js"></script>

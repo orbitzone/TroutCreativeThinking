@@ -1,0 +1,167 @@
+#cart-sidebar{
+	header,section,footer{
+		.info-wrap{
+			padding:20px 10%;
+			.left-col{
+				width:70%;
+				float:left;
+			}
+			.right-col{
+				width:30%;
+				float:right;
+
+			}
+		}
+	}
+	ul.order-items{
+		li{
+			list-style: none;
+			margin:0;
+			border-bottom:solid 1px @border-grey;
+		}
+	}
+}
+#order-form{
+	padding-right:50px;
+
+
+#delivery-details{
+	.one-section{
+		display:none;
+	}
+
+	&.active{
+		.one-section{
+			display:none;
+		}
+	}
+}
+
+	form{
+
+
+		.form-group-wrap{
+			margin:30px -10px;
+			.inner-form-section{
+				padding:20px;
+				background: @bg-light-grey;
+			}
+			.form-group{
+				float:left;
+				padding:10px;
+				&.half{
+					width:50%;
+					@media (max-width: @screen-xs-max) {
+						width:100%;
+					}
+				}
+				&.full{
+					width:100%;
+					.inner-half{
+						width:50%;
+						padding-top:10px;
+						&.left{
+							float:left;
+						}
+						&.right{
+							float:right;
+						}
+					}
+				}
+				&.quarter-big{
+					width:30%;
+					@media (max-width: @screen-xs-max) {
+						width:60%;
+					}
+				}
+				&.quarter-small{
+					width:20%;
+					@media (max-width: @screen-xs-max) {
+						width:40%;
+					}
+				}
+				&.half-big{
+					width:60%;
+					@media (max-width: @screen-xs-max) {
+						width:100%;
+					}
+				}
+				&.half-small{
+					width:40%;
+					@media (max-width: @screen-xs-max) {
+						width:100%;
+					}
+				}
+				&.enter-new-address{
+					.or{
+						display:block;
+						float:left;
+						width:20%;
+						text-align:center;
+						font-weight:bold;
+						padding-right:20px;
+					}
+					.btn.new-address{
+						width:80%;
+						float:left;
+						padding:20px;
+						@media (max-width: @screen-xs-max) {
+							width:100%;
+						}
+					}
+				}
+				label{
+					display:block;
+					color: @text-grey;
+					font-size:15px;
+					font-weight:400;
+				}
+				.next-button{
+					display:inline-block;
+				}
+				.btn{
+					@media (max-width: @screen-xs-max) {
+							width:100%;
+					}
+				}
+				.pop-title{
+					background: @bg-mid-grey;
+					h6{
+						margin:0;
+						padding:0;
+						display:none;
+						&.active{
+							display:block;
+						}
+					}
+				}
+				.form-control{
+					.border-radius (0px);
+				}
+				textarea,input[type="text"]{
+					width:100%;
+					border:solid 1px @border-grey;
+				}
+				input,select{
+					height:55px;
+					font-size: 17px;
+				}
+				ul.radio-list{
+					padding:0;
+					margin:0;
+					li{
+						list-style: none;
+						float:left;
+						display:inline-block;
+						padding: 0 20px;
+						label{
+							display:inline-block;
+							padding-left:20px;
+						}
+					}
+				}
+			}			
+		}
+
+	}
+}

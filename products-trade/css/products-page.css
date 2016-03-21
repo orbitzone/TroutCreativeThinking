@@ -1,4 +1,5 @@
 #product-pages {
+  /*FONTS*/
   /*
 
 @media (max-width: @screen-xs-max) {  }
@@ -13,6 +14,42 @@
 @media (min-width: @screen-lg-min) {  }
 
 */
+  /* BODY FONT*/
+  font-family: "Gotham A", "Gotham B";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #404040;
+}
+#product-pages .gothamLight {
+  font-family: "Gotham A", "Gotham B";
+  font-style: normal;
+  font-weight: 300;
+}
+#product-pages .gothamBook {
+  font-family: "Gotham A", "Gotham B";
+  font-style: normal;
+  font-weight: 400;
+}
+#product-pages .gothamBookItalic {
+  font-family: "Gotham A", "Gotham B";
+  font-style: italic;
+  font-weight: 400;
+}
+#product-pages .gothamMedium {
+  font-family: "Gotham A", "Gotham B";
+  font-style: normal;
+  font-weight: 500;
+}
+#product-pages .gothamBold {
+  font-family: "Gotham A", "Gotham B";
+  font-style: normal;
+  font-weight: 700;
+}
+#product-pages .gothamBoldItalic {
+  font-family: "Gotham A", "Gotham B";
+  font-style: italic;
+  font-weight: 700;
 }
 #product-pages h1,
 #product-pages h2,
@@ -22,6 +59,9 @@
 #product-pages h6 {
   margin-top: 0;
   padding-top: 0;
+  font-family: "Gotham A", "Gotham B";
+  font-style: normal;
+  font-weight: 700;
 }
 #product-pages h1 {
   font-size: 35px;
@@ -109,9 +149,15 @@
   background: #999999;
   color: #ffffff;
 }
+#product-pages .btn-bhv:hover {
+  cursor: pointer;
+}
 #product-pages #cart-sidebar {
   padding-right: 35px;
   padding-left: 35px;
+}
+#product-pages #cart-sidebar header {
+  border-bottom: solid 1px #bfbfbf;
 }
 #product-pages #cart-sidebar header .info-wrap,
 #product-pages #cart-sidebar section .info-wrap,
@@ -149,6 +195,27 @@
   color: red;
   font-size: .8em;
   padding-top: 5px;
+}
+#product-pages #order-form form#checkout-cart #receiving-goods .header-section:hover {
+  cursor: pointer;
+}
+#product-pages #order-form form#checkout-cart #receiving-goods .form-section {
+  display: none;
+}
+#product-pages #order-form form#checkout-cart #delivery-address .inner-form-section {
+  display: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#product-pages #order-form form#checkout-cart #pickup-details,
+#product-pages #order-form form#checkout-cart #delivery-details,
+#product-pages #order-form form#checkout-cart #order-comments {
+  display: none;
+}
+#product-pages #order-form form#checkout-cart #pickup-details header,
+#product-pages #order-form form#checkout-cart #delivery-details header {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 #product-pages #order-form form#checkout-cart .form-group-wrap {
   margin: 30px -10px;
@@ -215,12 +282,21 @@
     width: 100%;
   }
 }
+#product-pages #order-form form#checkout-cart .form-group-wrap .form-group.no-space-bottom {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+#product-pages #order-form form#checkout-cart .form-group-wrap .form-group.select-previous-address.active .arrow-triangle {
+  height: 22px;
+  background: url("../templates/images/arrow-triangle.png") no-repeat center bottom;
+  width: 100%;
+  background-size: 24px 12px;
+}
 #product-pages #order-form form#checkout-cart .form-group-wrap .form-group.enter-new-address .or {
   display: block;
   float: left;
   width: 20%;
   text-align: center;
-  font-weight: bold;
   padding-right: 20px;
 }
 #product-pages #order-form form#checkout-cart .form-group-wrap .form-group.enter-new-address .btn.new-address {
@@ -233,11 +309,23 @@
     width: 100%;
   }
 }
+#product-pages #order-form form#checkout-cart .form-group-wrap .form-group.enter-new-address.active .arrow-triangle {
+  height: 22px;
+  background: url("../templates/images/arrow-triangle.png") no-repeat center bottom;
+  width: 80%;
+  float: right;
+  background-size: 24px 12px;
+}
+#product-pages #order-form form#checkout-cart .form-group-wrap .form-group.inner-form-header {
+  padding: 0;
+}
+#product-pages #order-form form#checkout-cart .form-group-wrap .form-group.inner-form-header .inner-form-section {
+  padding: 20px 30px;
+}
 #product-pages #order-form form#checkout-cart .form-group-wrap .form-group label {
   display: block;
   color: #404040;
   font-size: 15px;
-  font-weight: 400;
 }
 #product-pages #order-form form#checkout-cart .form-group-wrap .form-group .next-button {
   display: inline-block;
@@ -249,6 +337,9 @@
 }
 #product-pages #order-form form#checkout-cart .form-group-wrap .form-group .pop-title {
   background: #eaeaea;
+  padding: 20px 30px;
+  margin: 0 10px;
+  display: none;
 }
 #product-pages #order-form form#checkout-cart .form-group-wrap .form-group .pop-title h6 {
   margin: 0;
@@ -286,6 +377,9 @@
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   padding: 15px;
+}
+#product-pages #order-form form#checkout-cart .form-group-wrap .form-group input[type=radio]:hover {
+  cursor: pointer;
 }
 #product-pages #order-form form#checkout-cart .form-group-wrap .form-group ul.radio-list {
   padding: 0;

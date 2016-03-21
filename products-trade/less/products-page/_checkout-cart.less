@@ -1,6 +1,9 @@
 #cart-sidebar{
 	padding-right:35px;
 	padding-left:35px;
+	header{
+		border-bottom:solid 1px @border-grey;
+	}
 	header,section,footer{
 		.info-wrap{
 			padding:20px 10%;
@@ -39,6 +42,38 @@ span.error {
 
 
 	form#checkout-cart{
+
+#receiving-goods{
+	.header-section{
+		
+		&:hover{
+			cursor:pointer;
+		}
+	}
+	.form-section{
+		display:none;
+	}
+}
+
+#delivery-address{
+	.inner-form-section{
+		display:none;
+		margin-left:10px;
+		margin-right:10px;
+	}
+}
+
+#pickup-details,#delivery-details, #order-comments{
+	display:none;
+}
+#pickup-details,#delivery-details{
+	header{
+		padding-left:10px;
+		padding-right:10px;
+	}
+}
+
+
 
 
 		.form-group-wrap{
@@ -94,13 +129,26 @@ span.error {
 						width:100%;
 					}
 				}
+				&.no-space-bottom{
+					padding-bottom:0;
+					margin-bottom:0;
+				}
+				&.select-previous-address{
+					&.active{
+						.arrow-triangle{
+							height:22px;
+							background:url("../templates/images/arrow-triangle.png") no-repeat center bottom;
+							width:100%;
+							background-size: 24px 12px;
+						}						
+					}
+				}
 				&.enter-new-address{
 					.or{
 						display:block;
 						float:left;
 						width:20%;
 						text-align:center;
-						font-weight:bold;
 						padding-right:20px;
 					}
 					.btn.new-address{
@@ -111,12 +159,27 @@ span.error {
 							width:100%;
 						}
 					}
+					&.active{
+						.arrow-triangle{
+							height:22px;
+							background:url("../templates/images/arrow-triangle.png") no-repeat center bottom;
+							width:80%;
+							float:right;
+							background-size: 24px 12px;
+						}						
+					}
+
+				}
+				&.inner-form-header{
+					padding:0;
+					.inner-form-section{
+						padding:20px 30px;
+					}
 				}
 				label{
 					display:block;
 					color: @text-grey;
 					font-size:15px;
-					font-weight:400;
 				}
 				.next-button{
 					display:inline-block;
@@ -128,6 +191,9 @@ span.error {
 				}
 				.pop-title{
 					background: @bg-mid-grey;
+				    padding: 20px 30px;
+				    margin: 0 10px;
+				    display:none;
 					h6{
 						margin:0;
 						padding:0;
@@ -152,6 +218,11 @@ span.error {
 					border:solid 1px @border-grey;
 					.border-radius (0px);
 					padding:15px;
+				}
+				input[type=radio]{
+					&:hover{
+						cursor:pointer;
+					}
 				}
 				ul.radio-list{
 					padding:0;

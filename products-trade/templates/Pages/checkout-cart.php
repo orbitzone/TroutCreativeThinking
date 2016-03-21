@@ -18,8 +18,8 @@
 					<h1>Order Summary</h1>
 					<form id="checkout-cart">
 						<section id="order-details" class="section-box">
-							<header class="expand-collapse"><h3>1. Details</h3></header>
-							<div class="one-section">
+							<header class="header-section btn-bhv"><h3>1. Details</h3></header>
+							<div class="form-section">
 								<div class="form-group-wrap">
 									<div class="form-group half">
 										<label for="details_firstname">First Name</label>
@@ -65,15 +65,15 @@
 										<input name="details_postcode" type="text" class="" id="details_postcode" placeholder="Postcode" required>
 									</div>
 									<div class="form-group full text-right">
-										<div class="btn next-button blue-button">Next</div>
+										<div class="btn next-button blue-button" id="step1next">Next</div>
 									</div>
 									<div class="clear-fix"></div>
 								</div>
 							</div>
 						</section>
 						<section id="receiving-goods" class="section-box">
-							<header class="expand-collapse"><h3>2. Receiving Goods</h3></header>
-							<div class="one-section">
+							<header class="header-section btn-bhv"><h3>2. Receiving Goods</h3></header>
+							<div class="form-section">
 								<div class="form-group-wrap">
 									<div class="form-group half">
 										<label for="receiving_jobname">Job Name</label>
@@ -90,12 +90,12 @@
 										</div>
 										<div class="inner-half left text-center">
 											
-											<label for="receiving_receivegoods_delivery">[image]<br>Delivery</label><br>
-											<input type="radio" name="receiving_receivegoods" id="receiving_receivegoods_delivery" value="delivery" checked required>
+											<label for="receiving_receivegoods_delivery" class="btn-bhv">[image]<br>Delivery</label><br>
+											<input type="radio" name="receiving_receivegoods" id="receiving_receivegoods_delivery" value="delivery" required>
 										</div>
 										<div class="inner-half right text-center">
 											
-											<label for="receiving_receivegoods_pickup">[image]<br>Pick up</label><br>
+											<label for="receiving_receivegoods_pickup" class="btn-bhv">[image]<br>Pick up</label><br>
 											<input type="radio" name="receiving_receivegoods" id="receiving_receivegoods_pickup" value="pickup" required>
 										</div>
 										<div class="clear-fix">
@@ -129,7 +129,7 @@
 										<div class="form-group full">
 											<label for="receiving_previousaddress">Delivery Address</label>
 										</div>
-										<div class="form-group half">
+										<div class="form-group half select-previous-address no-space-bottom">
 											<select name="receiving_previousaddress" class="" id="receiving_previousaddress" required>
 												<option value="">Select previous address</option>
 												<option value="114">114 Burwood Hwy</option>
@@ -137,18 +137,26 @@
 												<option value="545">545 Burwood Hwy</option>
 												<option value="656">656 Burwood Hwy</option>
 											</select>
+											<div class="clear-fix"></div>
+											<div class="arrow-triangle"></div>
+											<div class="clear-fix"></div>
 										</div>
-										<div class="form-group half text-right enter-new-address">
+										<div class="form-group half text-right enter-new-address no-space-bottom">
 											<span class="or hidden-xs">OR</span>
-											<div class="btn blue-button new-address">Enter new address</div>
+											<div class="btn blue-button new-address" id="enter-new-address">Enter new address</div>
+											<div class="clear-fix"></div>
+											<div class="arrow-triangle"></div>
+											<div class="clear-fix"></div>
 										</div>
-										<div class="form-group full">
-											<div class="inner-form-section pop-title">
-												<h6 class="enter-new-address-text active">Enter New Address</h6>
-												<h6 class="previous-address-text active">Previous Address</h6>
+
+									<div id="delivery-address">
+										<div class="inner-form-header form-group full">
+											<div class="pop-title">
+												<h6 class="enter-new-address-text">Enter New Address</h6>
+												<h6 class="previous-address-text">Previous Address</h6>
 											</div>
 										</div>
-										<div class="clear-fix">
+										<div class="clear-fix"></div>
 										<div class="inner-form-section">
 											<div class="form-group full">
 												<label for="receiving_address">Street Address</label>
@@ -195,6 +203,7 @@
 											</div>
 											<div class="clear-fix"></div>
 										</div>
+									</div>
 										<div class="clear-fix">
 										</div>
 									</div>
@@ -238,8 +247,13 @@
 											<label for="pickup_phone">Phone</label>
 											<input name="pickup_phone" type="text" class="" id="pickup_phone" placeholder="Phone" required>
 										</div>
-										<div class="form-group full">
-											<label for="pickup_ordercomments">Order Comments</label>
+
+										<div class="clear-fix"></div>
+									</div>
+
+								<div id="order-comments">	
+									<div class="form-group full">
+											<label for="pickup_ordercomments"><h3>Order Comments</h3></label>
 											<textarea name="pickup_ordercomments" rows="8" id="pickup_ordercomments" required></textarea>
 										</div>
 										<div class="form-group full">
@@ -249,15 +263,16 @@
 												<li><input type="radio" name="pickup_notification" id="pickup_notification_sms" value="sms"> <label for="pickup_notification_sms">SMS</label></li>
 											</ul>
 										</div>
-										<div class="clear-fix"></div>
-									</div>
+								</div>
+
 									<div class="form-group half text-left">
-										<div class="btn next-button grey-button">Previous</div>
+										<div class="btn next-button grey-button" id="step2previous">Previous</div>
 									</div>
 									<div class="form-group half text-right">
 										<button class="btn next-button blue-button">Submit Order</button>
 									</div>
 									<div class="clear-fix"></div>
+
 								</div>
 							</div>
 						</section>

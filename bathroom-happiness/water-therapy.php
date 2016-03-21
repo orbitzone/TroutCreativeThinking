@@ -13,7 +13,7 @@
           <div class="container-fluid">
             <div class="banner">
               <div id="water-therapy-banner-videos">
-                <div id="water-therapy-video-wrap" class="video-iframe-wrap video" data-video="ntwhG-J6CEM">
+                <div id="water-therapy-video-wrap" class="video-iframe-wrap video" data-video="qzVYy8djxDo">
                   <figure id="water-therapy-video"></figure>
                 </div>
                 <div id="full-video-popup" class="full-video-iframe-wrap">

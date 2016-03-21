@@ -478,9 +478,6 @@ var bathroomHappiness = {
         }    
       });
     });
-    
-
-
   },
   waterTherapy: function(){
     // When the player is ready, add listeners for pause, finish, and playProgress

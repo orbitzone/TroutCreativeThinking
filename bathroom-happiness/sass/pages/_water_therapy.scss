@@ -857,6 +857,8 @@ body.water-therapy{
 						top: 50%;
 						@include transform(translateY(-50%));
 						padding: 0 60px;
+						@include backface-visibility(hidden);
+						@include perspective(1000);
 						@include animation(slide_up_out 1s ease-out both);
 						opacity: 0;
 						&.active{

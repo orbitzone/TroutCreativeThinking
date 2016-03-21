@@ -1,4 +1,6 @@
 #cart-sidebar{
+	padding-right:35px;
+	padding-left:35px;
 	header,section,footer{
 		.info-wrap{
 			padding:20px 10%;
@@ -23,21 +25,20 @@
 }
 #order-form{
 	padding-right:50px;
-
-
-#delivery-details{
-	.one-section{
-		display:none;
+	@media (max-width: @screen-xs-max) {
+		padding-right:20px;
+		padding-left:20px;
 	}
 
-	&.active{
-		.one-section{
-			display:none;
-		}
-	}
+span.error {
+    display: block;
+    color: red;
+    font-size: .8em;
+    padding-top:5px;
 }
 
-	form{
+
+	form#checkout-cart{
 
 
 		.form-group-wrap{
@@ -49,6 +50,7 @@
 			.form-group{
 				float:left;
 				padding:10px;
+				margin-bottom:0;
 				&.half{
 					width:50%;
 					@media (max-width: @screen-xs-max) {
@@ -135,16 +137,21 @@
 						}
 					}
 				}
-				.form-control{
-					.border-radius (0px);
-				}
-				textarea,input[type="text"]{
+				select, input[type=email],input[type=text],input[type=date]{
+					height:55px;
+					font-size: 14px;
 					width:100%;
 					border:solid 1px @border-grey;
+					.border-radius (0px);
+					padding:15px;
 				}
-				input,select{
-					height:55px;
-					font-size: 17px;
+				textarea{
+					height:150px;
+					font-size: 14px;
+					width:100%;
+					border:solid 1px @border-grey;
+					.border-radius (0px);
+					padding:15px;
 				}
 				ul.radio-list{
 					padding:0;

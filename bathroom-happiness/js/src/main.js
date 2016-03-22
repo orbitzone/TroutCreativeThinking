@@ -359,10 +359,10 @@ var bathroomHappiness = {
   inspiration: function(){
     var video = $('.block.water-therapy .video').data('video');
     $(window).on('resize', function(){
-      var height = $('.blocks .water-therapy .content').height();
+      var height = $('.blocks .water-therapy .content').height() + 10;
       var width = 16 * height/9;
       $('#water-therapy-video').width(width);
-      $('#water-therapy-video').height(height + 200);          
+      $('#water-therapy-video').height(height);          
     }).resize();
     // When the player is ready, add listeners for pause, finish, and playProgress
     if(!isMobile.any()){
@@ -372,6 +372,7 @@ var bathroomHappiness = {
           showinfo: 0,
           modestbranding: 0,
           rel: 0,
+          controls: 0
         };
         var inspPlayer = new player();
         inspPlayer.init({

@@ -185,6 +185,8 @@ body.water-therapy{
 			      -webkit-text-fill-color: transparent;
 			      margin-bottom: 20px;
 			      margin-top: 0;
+			      text-transform: lowercase;
+			      letter-spacing: inherit;
 			      @media (min-width: $screen-sm){
 			      	font-size: 68px;
 			      }
@@ -910,8 +912,8 @@ body.water-therapy{
 					.grid-module-zone-6
 					{
 						@include backface-visibility(hidden);
-						@include transform-style(preserve-3d);
-						@include transform(translateZ(0));
+						//@include transform-style(preserve-3d);
+						//@include transform(translateZ(0));
 					}
 					.grid-module-zone-wrap{
 						@include perspective(1000);

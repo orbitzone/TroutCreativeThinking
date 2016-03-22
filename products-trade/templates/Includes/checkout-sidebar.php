@@ -1,22 +1,27 @@
 <div id="cart-sidebar" class="padding-top">
-	<header>
+	<header class="mobile-open-cart-item">
 		<div class="info-wrap">
 			<div class="left-col">
-				<h3 class="text-blue">Shopping cart</h3>
+				<h3 class="text-blue">Shopping cart <span class="fa fa-angle-down"></span><span class="fa fa-angle-up"></span></h3>
 			</div>
-			<div class="right-col edit-link">
+			<div class="right-col">
+				<div class="edit-link hidden-xs">
 				<a href="#">Edit</a>
+				</div>
+				<div class="total-price-header visible-xs-block">
+				<p>$1155.00</p>
+				</div>
 			</div>
 			<div class="clear-fix"></div>
 		</div>
 	</header>
-	<div class="hidden-xs">
+	<div class="order-item-wrap">
 	<section class="orders-wrap">
 		<ul class="order-items">
 			<li>
 				<div class="info-wrap">
 					<div class="left-col">
-						<div class="quantity">1PKT</div>
+						<div class="quantity">1<span>PKT</span></div>
 						<div class="name">Lorem ipsum dolor sit amet</div>
 						<div class="description">Lorem ipsum dolor sit amet</div>
 						<div class="product-code">123456789</div>
@@ -30,7 +35,7 @@
 			<li>
 				<div class="info-wrap">
 					<div class="left-col">
-						<div class="quantity">1PKT</div>
+						<div class="quantity">1<span>PKT</span></div>
 						<div class="name">Lorem ipsum dolor sit amet</div>
 						<div class="description">Lorem ipsum dolor sit amet</div>
 						<div class="product-code">123456789</div>
@@ -44,7 +49,7 @@
 			<li>
 				<div class="info-wrap">
 					<div class="left-col">
-						<div class="quantity">1PKT</div>
+						<div class="quantity">1<span>PKT</span></div>
 						<div class="name">Lorem ipsum dolor sit amet</div>
 						<div class="description">Lorem ipsum dolor sit amet</div>
 						<div class="product-code">123456789</div>

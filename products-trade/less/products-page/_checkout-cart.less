@@ -3,13 +3,20 @@
 	padding-left:35px;
 	header{
 		border-bottom:solid 1px @border-grey;
+
 		h3{
 			font-size:23px;
 			text-transform: uppercase;
 			.gothamMedium;
 		}
-	}
 
+
+	}
+	.order-item-wrap{
+		@media (max-width: @screen-xs-max) {
+			display:none;
+		}
+	}
 	.edit-link{
 		text-align:right;
 		a{
@@ -20,8 +27,27 @@
 		}
 
 	}
+	.total-price-header{
+		color:@white;
+	}
 	.total-section{
 		border-bottom:solid 1px @border-grey;
+		@media (max-width: @screen-xs-max) {
+				border-bottom:solid 1px #8cc0ce;
+		}
+		@media (max-width: @screen-xs-max) {
+			.delivery,.gst, .total{
+				.left-col{
+					width:50%;
+					float:left;
+				}
+				.right-col{
+					width:50%;
+					float:right;
+				}				
+			}
+
+		}
 	}
 	.info-wrap{
 		.gothamBook;
@@ -81,6 +107,35 @@
 		.delivery,.gst{
 			padding-bottom:10px;
 		}
+		@media (max-width: @screen-xs-max) {
+			color:@white;
+			.quantity,.name,.description,.product-code, .price{
+				text-align:left;
+				padding-left:80px;
+			}
+			.heading-text,.heading-total{
+				text-align:left;
+			}
+			.heading-price{
+				text-align:right;
+			}
+			.price{
+				padding-top: 5px;
+				text-align: left;
+				padding-left:80px;
+			}
+			.quantity{
+				padding: 10px 20px;
+			    background: @bg-blue-item;
+			    display: inline-block;
+			    float: left;
+			    text-align:center;
+			    span{
+			    	display:block;
+			    }
+			}
+
+		}
 	}
 	header,section,footer{
 		.info-wrap{
@@ -88,10 +143,19 @@
 			.left-col{
 				width:65%;
 				float:left;
+				@media (max-width: @screen-xs-max) {
+					float:none;
+					width:100%;
+
+				}
 			}
 			.right-col{
 				width:30%;
 				float:right;
+				@media (max-width: @screen-xs-max) {
+					float:none;
+					width:100%;
+				}
 			}
 		}
 	}
@@ -101,11 +165,45 @@
 			color: @text-light-grey;
 		}
 	}
+
 	ul.order-items{
 		li{
 			list-style: none;
 			margin:0;
 			border-bottom:solid 1px @border-grey;
+
+			@media (max-width: @screen-xs-max) {
+				border-bottom:solid 1px #8cc0ce;
+			}
+		}
+	}
+	@media (max-width: @screen-xs-max) {
+		padding-top:0;
+		text-align:center;
+		header{
+			border-bottom:none;
+			.info-wrap{
+				padding:20px 5% 5px 5%;
+				.left-col{
+					float:none;
+					width:100%;
+				}
+				.right-col{
+					float:none;
+					width:100%;
+
+				}
+			}
+
+		}
+	}
+	@media (max-width: @screen-xs-max) {
+		padding-left:10px;
+		padding-right:10px;
+		.info-wrap{
+			padding-left:0;
+			padding-right:0;
+
 		}
 	}
 }
@@ -317,6 +415,9 @@ display:none;
 					}
 				}
 				&.enter-new-address{
+					&.enter-new-address-top{
+						display:none;
+					}
 					.or{
 						display:block;
 						float:left;
@@ -397,6 +498,18 @@ display:none;
 					border:solid 1px @border-grey;
 					.border-radius (0px);
 					padding:15px;
+				}
+				input[type=email],input[type=text],textarea{
+					&.error{
+						border:solid 1px red;
+					}
+					&.valid{
+
+background:url("../templates/images/icon-greentick.png") no-repeat;
+background-size:20px;
+background-position:right 12px top 16px;
+					}
+
 				}
 				input[type=radio]{
 					&:hover{

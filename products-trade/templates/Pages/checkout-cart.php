@@ -133,6 +133,12 @@
 										<div class="form-group full">
 											<label for="receiving_previousaddress">Delivery Address</label>
 										</div>
+										<div class="form-group half text-right enter-new-address no-space-bottom enter-new-address-top">
+											<div class="btn blue-button new-address action-enter-new-address">Enter new address</div>
+											<div class="clear-fix"></div>
+											<div class="arrow-triangle"></div>
+											<div class="clear-fix"></div>
+										</div>
 										<div class="form-group half select-previous-address no-space-bottom">
 											<select name="receiving_previousaddress" class="" id="receiving_previousaddress" required>
 												<option value="">Select previous address</option>
@@ -145,9 +151,9 @@
 											<div class="arrow-triangle"></div>
 											<div class="clear-fix"></div>
 										</div>
-										<div class="form-group half text-right enter-new-address no-space-bottom">
+										<div class="form-group half text-right enter-new-address no-space-bottom enter-new-address-bottom">
 											<span class="or hidden-xs hidden-sm">OR</span>
-											<div class="btn blue-button new-address" id="enter-new-address">Enter new address</div>
+											<div class="btn blue-button new-address action-enter-new-address">Enter new address</div>
 											<div class="clear-fix"></div>
 											<div class="arrow-triangle"></div>
 											<div class="clear-fix"></div>
@@ -216,12 +222,7 @@
 										<header><h3>Pick Up Details</h3></header>
 										<div class="form-group full">
 											<label for="pickup_branch">Pick Up Branch</label>
-											<select name="pickup_branch" class="" id="pickup_branch" required>
-												<option value="">Select</option>
-												<option value="collingwood">Plumbing Collingwood</option>
-												<option value="melbourne">Plumbing Melbourne</option>
-												<option value="etc">Etc</option>
-											</select>
+											<input name="pickup_branch" type="text" class="pickup_branch" id="pickup_branch" required>
 											<div class="info">
 												<div class="inner-half left text-left">
 													<h6>Branch Address</h6>

@@ -12,6 +12,5 @@
 <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6958312/6279352/css/fonts.css" />
 <!-- END: FONTS -->
 
-
 <link rel="stylesheet" type="text/css" href="javascript/selectric/public/selectric.css" />
 <link rel="stylesheet" type="text/css" href="css/products-page.css" />

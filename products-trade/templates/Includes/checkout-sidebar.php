@@ -4,8 +4,8 @@
 			<div class="left-col">
 				<h3 class="text-blue">Shopping cart</h3>
 			</div>
-			<div class="right-col">
-				<a href="btn bg-grey">Edit</a>
+			<div class="right-col edit-link">
+				<a href="#">Edit</a>
 			</div>
 			<div class="clear-fix"></div>
 		</div>
@@ -21,7 +21,7 @@
 						<div class="description">Lorem ipsum dolor sit amet</div>
 						<div class="product-code">123456789</div>
 					</div>
-					<div class="right-col">
+					<div class="right-col ">
 						<div class="price">$5465.45<span>inc.</span></div>
 					</div>
 					<div class="clear-fix"></div>
@@ -57,32 +57,32 @@
 			</li>
 		</ul>
 	</section>
-	<section class="total">
+	<section class="total-section">
 		<div class="info-wrap">
 			<div class="delivery">
 				<div class="left-col">
-					<p>Delivery fee</p>
+					<div class="heading-text">Delivery fee</div>
 				</div>
 				<div class="right-col">
-					<p>$5.00</p>
+					<div class="heading-price text-right">$5.00</div>
 				</div>
 				<div class="clear-fix"></div>
 			</div>
 			<div class="gst">
 				<div class="left-col">
-					<p>GST</p>
+					<div class="heading-text">GST</div>
 				</div>
 				<div class="right-col">
-					<p>$44.00</p>
+					<div class="heading-price text-right">$44.00</div>
 				</div>
 				<div class="clear-fix"></div>
 			</div>
 			<div class="total">
 				<div class="left-col">
-					<p>Total<span>inc. GST</span></p>
+					<div class="heading-total">Total<span>inc. GST</span></div>
 				</div>
 				<div class="right-col">
-					<p>$1155.00</p>
+					<div class="total text-right">$1155.00</div>
 				</div>
 				<div class="clear-fix"></div>
 			</div>

@@ -44,6 +44,9 @@ h6{
 .bg-light-grey{
 	background: @bg-light-grey;
 }
+.bg-dark-grey{
+	background: @bg-dark-grey;
+}
 .bg-sm-blue{
 	@media (max-width: @screen-xs-max) { 
 		background:@bg-blue;
@@ -90,6 +93,9 @@ ul.inline-list{
 	&.grey-button{
 		background: @bg-button-grey;
 		color: @white;
+	}
+	@media (max-width: @screen-sm-max) { 
+		padding:20px 35px;
 	}
 }
 .btn-bhv:hover{

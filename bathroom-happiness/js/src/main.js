@@ -193,7 +193,7 @@ var player = function(){
       showinfo: 0,
       modestbranding: 1,
       rel: 0,
-      origin: 'http://reece-responsive.trout.com.au',
+      origin: 'http://reece.com.au',
       wmode: 'transparent',
       html5: 1
     },

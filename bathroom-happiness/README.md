@@ -28,3 +28,10 @@ Note: grunt watch must be running in order to access the server. Add "keepalive"
 ## Production Build
 To build files in production mode (mangled JS files etc), use the following command:
   > grunt build
+
+
+#Youtube video playerManager.
+
+Please update the origin value on one 196 on the player variable to the live server.
+
+origin: 'http://reece-responsive.trout.com.au',

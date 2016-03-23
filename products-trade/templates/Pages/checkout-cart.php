@@ -222,7 +222,8 @@
 										<header><h3>Pick Up Details</h3></header>
 										<div class="form-group full">
 											<label for="pickup_branch">Pick Up Branch</label>
-											<input name="pickup_branch" type="text" class="pickup_branch" id="pickup_branch" required>
+											<input name="pickup_branch" type="text" class="pickup_branch search-box" id="pickup_branch" required>
+
 											<div class="info">
 												<div class="inner-half left text-left">
 													<h6>Branch Address</h6>
@@ -233,7 +234,9 @@
 													(03) 9270 1966
 												</div>
 											</div>
+											
 										</div>
+
 										<div class="form-group full">
 											<label for="pickup_previouscontact">Pick Up Contact</label>
 											<select name="pickup_previouscontact" class="" id="pickup_previouscontact" required>

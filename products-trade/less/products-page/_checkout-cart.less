@@ -26,16 +26,16 @@
 					display:inline;
 				}
 			}	
-&.active{
-			h3{
-				.fa.fa-angle-up{
-					display:inline;
-				}
-				.fa.fa-angle-down{
-					display:none;
-				}
-			}	
-}
+			&.active{
+				h3{
+					.fa.fa-angle-up{
+						display:inline;
+					}
+					.fa.fa-angle-down{
+						display:none;
+					}
+				}	
+			}
 
 		}
 	}
@@ -267,9 +267,9 @@
 
 
 
-input, textarea, select {
-   -webkit-appearance: none;
- }
+		input, textarea, select {
+			-webkit-appearance: none;
+		}
 
 
 
@@ -587,35 +587,35 @@ input, textarea, select {
 				}
 
 
-input[type=checkbox],
- input[type=radio] {
-   display: inline-block;
-   font-size: 15px;
-   line-height: 1em;
-   margin: 0 0.25em 0 0;
-   padding: 0;
-   width: 1.25em;
-   height: 1.25em;
-   -webkit-border-radius: 0.25em;
-   vertical-align: text-top;
- }
+				input[type=checkbox],
+				input[type=radio] {
+					display: inline-block;
+					font-size: 15px;
+					line-height: 1em;
+					margin: 0 0.25em 0 0;
+					padding: 0;
+					width: 1.25em;
+					height: 1.25em;
+					-webkit-border-radius: 0.25em;
+					vertical-align: text-top;
+				}
 
- input[type=radio] {
-    -webkit-border-radius: 2em; /* Make radios round */
-    background: @white;
-    border: solid 4px @icon-grey;
-  }
- input[type=radio]:checked {
-    -webkit-border-radius: 2em; /* Make radios round */
-    background: @white url("../templates/images/icon-dot.png") no-repeat center center;
-    background-size:cover;
-    border: solid 4px @icon-blue;
-  }
+				input[type=radio] {
+					-webkit-border-radius: 2em; /* Make radios round */
+					background: @white;
+					border: solid 4px @icon-grey;
+				}
+				input[type=radio]:checked {
+					-webkit-border-radius: 2em; /* Make radios round */
+					background: @white url("../templates/images/icon-dot.png") no-repeat center center;
+					background-size:cover;
+					border: solid 4px @icon-blue;
+				}
 
-  input[type=checkbox]:checked {
-   background: url("data:image/png,%89PNG[...]") no-repeat center center;
-   -webkit-background-size: 28px 28px; /* shrink high resolution background */
- }
+				input[type=checkbox]:checked {
+					background: url("data:image/png,%89PNG[...]") no-repeat center center;
+					-webkit-background-size: 28px 28px; /* shrink high resolution background */
+				}
 
 
 
@@ -676,6 +676,10 @@ input[type=checkbox],
 							.icon-delivery{
 								background-position:center bottom;
 							}
+							input[type=radio] {
+								border: solid 4px @icon-blue;
+							}
+
 						}	
 
 						@media (max-width: @screen-xs-max) {
@@ -700,6 +704,9 @@ input[type=checkbox],
 							.icon-pickup{
 								background-position:center bottom;
 							}
+							input[type=radio] {
+								border: solid 4px @icon-blue;
+							}
 						}	
 
 						@media (max-width: @screen-xs-max) {
@@ -708,6 +715,7 @@ input[type=checkbox],
 
 						}	
 					}	
+
 
 				}
 

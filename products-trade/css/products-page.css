@@ -160,6 +160,9 @@
 #product-pages .btn-bhv:hover {
   cursor: pointer;
 }
+#product-pages .ui-datepicker-div {
+  background: #ffffff;
+}
 #product-pages #cart-sidebar {
   padding-right: 35px;
   padding-left: 35px;
@@ -854,6 +857,10 @@
 #product-pages #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.delivery-button.active .icon-delivery {
   background-position: center bottom;
 }
+#product-pages #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.delivery-button:hover input[type=radio],
+#product-pages #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.delivery-button.active input[type=radio] {
+  border: solid 4px #0776aa;
+}
 @media (max-width: 767px) {
   #product-pages #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.delivery-button {
     margin: 10px 10px 10px 0;
@@ -875,6 +882,10 @@
 #product-pages #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.pickup-button:hover .icon-pickup,
 #product-pages #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.pickup-button.active .icon-pickup {
   background-position: center bottom;
+}
+#product-pages #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.pickup-button:hover input[type=radio],
+#product-pages #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.pickup-button.active input[type=radio] {
+  border: solid 4px #0776aa;
 }
 @media (max-width: 767px) {
   #product-pages #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.pickup-button {

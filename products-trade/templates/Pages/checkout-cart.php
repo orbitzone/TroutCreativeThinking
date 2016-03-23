@@ -223,7 +223,8 @@
 										<div class="form-group full">
 											<label for="pickup_branch">Pick Up Branch</label>
 											<input name="pickup_branch" type="text" class="pickup_branch search-box" id="pickup_branch" required>
-
+											<input name="pickup_branch_id" type="hidden" id="pickup_branch_id">
+<br><br><br><br><br><br><br><br><br><br><br><br>
 											<div class="info">
 												<div class="inner-half left text-left">
 													<h6>Branch Address</h6>

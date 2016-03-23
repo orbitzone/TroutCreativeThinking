@@ -6,31 +6,31 @@ $( document ).ready(function() {
 
  	// PICKUP BRANCH AUTO COMPLETE
  	//
-    // $( "#pickup_branch" ).autocomplete({
-    //   minLength: 0,
-    //   source: "http://reece-products-trade.local/data/pickupbranch.json",
-    //   focus: function( event, ui ) {
-    //     $( "#pickup_branch" ).val( ui.item.label );
-    //     return false;
-    //   },
-    //   select: function( event, ui ) {
-    //     $( "#pickup_branch" ).val( ui.item.label );
-    //     $( "#pickup_branch_address" ).val("<h6>Branch Address</h6>" + ui.item.address ); 
-    //     $( "#pickup_branch_phone" ).val("<h6>Branch Phone</h6>" + ui.item.phone ); 
-    //     return false;
-    //   }
-    // })
-    // .autocomplete( "instance" )._renderItem = function( ul, item ) {
-    //   return $( "<li class='searchresults'>" )
-    //     .append( "<a><h6>" 
-    //     	+ item.label 
-    //     	+ "</h6><div class='item-details'><span class='item-address'>" 
-    //     	+ item.address 
-    //     	+ "</span><span class='item-phone'>"
-    //     	+ item.phone 
-    //     	+ "</span></div></a>" )
-    //     .appendTo( ul );
-    // };
+    $( "#pickup_branch" ).autocomplete({
+      minLength: 3,
+      source: "http://reece-products-trade.local/data/pickupbranch.json",
+      focus: function( event, ui ) {
+        $( "#pickup_branch" ).val( ui.item.label );
+        return false;
+      },
+      select: function( event, ui ) {
+        $( "#pickup_branch_id" ).val( ui.item.label );
+        $( "#pickup_branch_address" ).val("<h6>Branch Address</h6>" + ui.item.address ); 
+        $( "#pickup_branch_phone" ).val("<h6>Branch Phone</h6>" + ui.item.phone ); 
+        return false;
+      }
+    })
+    .autocomplete( "instance" )._renderItem = function( ul, item ) {
+      return $( "<li class='searchresults'>" )
+        .append( "<a><h6>" 
+        	+ item.label 
+        	+ "</h6><div class='item-details'><span class='item-address'>" 
+        	+ item.address 
+        	+ "</span><span class='item-phone'>"
+        	+ item.phone 
+        	+ "</span></div></a>" )
+        .appendTo( ul );
+    };
 
 
 
@@ -40,7 +40,10 @@ $( document ).ready(function() {
 
 
 
-
+    $( "#receiving_date" ).datepicker();
+    $( "#anim" ).change(function() {
+      $( "#receiving_date" ).datepicker( "option", "showAnim", "fadeIn" );
+    });
 
 
 
@@ -100,7 +103,7 @@ $("#receiving_previousaddress").change(function(){
 
 
 
-$("input[name=receiving_receivegoods]").change(function(){
+$("input[name=receiving_receivegoods]").click(function(){
 
 if(this.value == 'delivery'){
 	$("#pickup-details").slideUp();
@@ -138,8 +141,6 @@ $( window ).resize(function() {
 
  if($( window ).width() > 757 && $( window ).width() < 777){
  if($( window ).width() > 767){
- 	$(".enter-new-address-bottom").slideDown();
-	$(".enter-new-address-top").slideUp();
 	$(".order-item-wrap").show();
  }
  else{
@@ -147,6 +148,12 @@ $( window ).resize(function() {
 	$(this).removeClass("active");
  }
 }
+
+ if($( window ).width() > 767){
+ 	$(".enter-new-address-bottom").slideDown();
+	$(".enter-new-address-top").slideUp();
+}
+
 
 
 });

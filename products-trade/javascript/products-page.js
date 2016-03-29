@@ -1,5 +1,29 @@
 $( document ).ready(function() {
 
+	//RADIO BUTTONS - ON LOAD
+	$("input[type=radio]:checked").each(
+		function(){
+		$("label[for='"+ $(this).attr("id") + "']").addClass("selected");		
+		}
+	);
+
+	//RADIO BUTTON - ON SELECTED
+	$("input[type=radio]").change(
+		function(){
+			$("input[type=radio][name=" + $(this).attr("name") + "]").each(
+				function(){
+					if($(this).is(':checked')){
+						$("label[for='"+ $(this).attr("id") + "']").addClass("selected");	
+					}
+					else{
+						$("label[for='"+ $(this).attr("id") + "']").removeClass("selected");
+						
+					}
+				}
+			);
+		}
+	);
+
 
 
 

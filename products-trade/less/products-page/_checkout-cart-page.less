@@ -1,245 +1,4 @@
-#cart-sidebar{
-	padding-right:35px;
-	padding-left:35px;
-	header{
-		border-bottom:solid 1px @border-grey;
-
-		h3{
-			font-size:23px;
-			text-transform: uppercase;
-			.gothamMedium;
-			.fa{
-				display:none;
-				float: right;
-				font-size: 55px;
-				position: relative;
-				top: -6px;
-
-			}
-		}
-		@media (max-width: @screen-xs-max) {
-			h3{
-				.fa.fa-angle-up{
-					display:none;
-				}
-				.fa.fa-angle-down{
-					display:inline;
-				}
-			}	
-			&.active{
-				h3{
-					.fa.fa-angle-up{
-						display:inline;
-					}
-					.fa.fa-angle-down{
-						display:none;
-					}
-				}	
-			}
-
-		}
-	}
-	.order-item-wrap{
-		@media (max-width: @screen-xs-max) {
-			display:none;
-		}
-	}
-	.edit-link{
-		text-align:right;
-		padding-top:5px;
-		a{
-			color: @link-blue;	
-			text-transform: uppercase;
-			font-size:15px;
-			.gothamBook;
-		}
-
-	}
-	.total-price-header{
-		color:@white;
-	}
-	.total-section{
-		border-bottom:solid 1px @border-grey;
-		@media (max-width: @screen-xs-max) {
-			border-bottom:solid 1px #8cc0ce;
-		}
-		@media (max-width: @screen-xs-max) {
-			.delivery,.gst, .total{
-				.left-col{
-					width:50%;
-					float:left;
-				}
-				.right-col{
-					width:50%;
-					float:right;
-				}				
-			}
-
-		}
-	}
-	.info-wrap{
-		.gothamBook;
-		.quantity{
-			font-size:10px;
-		}
-		.name{
-			font-size:16px;
-			.gothamBold;
-		}
-		.description{
-			font-size:14px;
-		}
-		.product-code{
-			font-size:12px;
-			color: @text-light-grey;
-		}
-		.price{
-			font-size:16px;
-			.gothamBold;
-			padding-top:18px;
-			text-align:right;
-			span{
-				font-size:10px;
-				.gothamBook;
-			}
-		}
-		.heading-text{
-			.gothamBook;
-			text-transform: uppercase;
-			font-size:20px;
-		}
-		.heading-price{			
-			.gothamBook;
-			text-transform: uppercase;
-			color:@black;
-			font-size:20px;
-
-		}
-		.heading-total{
-			.gothamBold;
-			text-transform: uppercase;
-			color:@text-blue;
-			font-size:20px;
-			span{
-				font-size:10px;
-				padding-left:5px;
-				text-transform: none;
-			}
-		}
-		.total{
-			.gothamBold;
-			text-transform: uppercase;
-			color:@text-blue;
-			font-size:20px;
-		}
-		.delivery,.gst{
-			padding-bottom:10px;
-		}
-		@media (max-width: @screen-xs-max) {
-			color:@white;
-			.quantity,.name,.description,.product-code, .price{
-				text-align:left;
-				padding-left:80px;
-			}
-			.heading-text,.heading-total{
-				text-align:left;
-			}
-			.heading-price{
-				text-align:right;
-			}
-			.price{
-				padding-top: 5px;
-				text-align: left;
-				padding-left:80px;
-			}
-			.quantity{
-				padding: 10px 20px;
-				background: @bg-blue-item;
-				display: inline-block;
-				float: left;
-				text-align:center;
-				span{
-					display:block;
-				}
-			}
-
-		}
-	}
-	header,section,footer{
-		.info-wrap{
-			padding:20px 5%;
-			.left-col{
-				width:65%;
-				float:left;
-				@media (max-width: @screen-xs-max) {
-					float:none;
-					width:100%;
-
-				}
-			}
-			.right-col{
-				width:30%;
-				float:right;
-				@media (max-width: @screen-xs-max) {
-					float:none;
-					width:100%;
-				}
-			}
-		}
-	}
-	footer{
-		p{
-			font-size: 12px;
-			color: @text-light-grey;
-		}
-	}
-
-	ul.order-items{
-		li{
-			list-style: none;
-			margin:0;
-			border-bottom:solid 1px @border-grey;
-
-			@media (max-width: @screen-xs-max) {
-				border-bottom:solid 1px #8cc0ce;
-			}
-		}
-	}
-	@media (max-width: @screen-xs-max) {
-		padding-top:0;
-		text-align:center;
-		header{
-			border-bottom:none;
-			.info-wrap{
-				padding:20px 5% 5px 5%;
-				.left-col{
-					float:none;
-					width:100%;
-				}
-				.right-col{
-					float:none;
-					width:100%;
-
-				}
-			}
-
-		}
-	}
-	@media (max-width: @screen-xs-max) {
-		padding-left:10px;
-		padding-right:10px;
-		.info-wrap{
-			padding-left:0;
-			padding-right:0;
-
-		}
-	}
-}
 .main-section{
-
-
-
-
 	.main-heading{
 		border-bottom:solid 1px @border-light-grey;
 		padding-bottom:25px;
@@ -262,25 +21,9 @@
 		padding-top:5px;
 	}
 	form#checkout-cart{
-
-
-
-
-
 		input, textarea, select {
 			-webkit-appearance: none;
 		}
-
-
-
-
-
-
-
-
-
-
-
 		.selectric{
 			height:55px;
 			background:@white;
@@ -295,13 +38,10 @@
 				background:url("../templates/images/icon-downarrow.png") no-repeat top center;
 				background-size:20px;
 				right:5px;
-
 				&:after{
 					display:none;
-
 				}
 			}
-
 		}
 		.selectric-items li{
 			background:@white;
@@ -372,14 +112,6 @@
 				padding-right:10px;
 			}
 		}
-
-
-		
-
-
-
-
-
 		.form-group-wrap{
 			margin:0 -15px;
 			padding-left:15px;
@@ -390,10 +122,7 @@
 			@media (max-width: @screen-xs-max) {
 				padding-left:0;
 				padding-right:0;
-
 			}
-
-
 			.inner-form-section{
 				padding:20px;
 				background: @bg-light-grey;
@@ -569,7 +298,6 @@
 						background-size:55px;
 						background-position:right 0px top 0px;
 					}
-
 				}
 				select{
 					top:18px;
@@ -580,50 +308,25 @@
 				}
 
 
-				input[type=radio]{
-					&:hover{
-						cursor:pointer;
-					}
-				}
 
+input[type=radio] {
+	display:none;
+}
 
-				input[type=checkbox],
-				input[type=radio] {
-					display: inline-block;
-					font-size: 15px;
-					line-height: 1em;
-					margin: 0 0.25em 0 0;
-					padding: 0;
-					width: 1.25em;
-					height: 1.25em;
-					-webkit-border-radius: 0.25em;
-					vertical-align: text-top;
-				}
-
-				input[type=radio] {
-					-webkit-border-radius: 2em; /* Make radios round */
+				label .radio-button{
+					.border-radius (2em);
 					background: @white;
 					border: solid 4px @icon-grey;
+					width:20px;
+					height:20px;
+					display:inline-block;
 				}
-				input[type=radio]:checked {
-					-webkit-border-radius: 2em; /* Make radios round */
+				label.selected .radio-button{
+					.border-radius (2em);
 					background: @white url("../templates/images/icon-dot.png") no-repeat center center;
 					background-size:cover;
-					border: solid 4px @icon-blue;
+					border: solid 4px @icon-blue;					
 				}
-
-				input[type=checkbox]:checked {
-					background: url("data:image/png,%89PNG[...]") no-repeat center center;
-					-webkit-background-size: 28px 28px; /* shrink high resolution background */
-				}
-
-
-
-
-
-
-
-
 
 
 				ul.radio-list{
@@ -631,7 +334,6 @@
 					margin:0;
 					li{
 						list-style: none;
-						float:left;
 						display:inline-block;
 						padding: 0 20px;
 						&:hover{
@@ -647,7 +349,9 @@
 							.gothamMedium;
 							position:relative;
 							top:2px;
-
+							.radio-button{
+								margin-right:10px;
+							}
 						}
 					}
 				}
@@ -655,7 +359,6 @@
 					border:solid 1px @border-grey;
 					padding:50px 30px 30px 30px;
 					margin:10px;
-
 					label{
 						text-transform: uppercase;
 						color:@icon-grey;
@@ -663,7 +366,6 @@
 					}
 					&.delivery-button{
 						margin-left:0;
-
 						.icon-delivery{
 							padding-bottom:41%;
 							background:url("../templates/images/icon-delivery.png") no-repeat center top;
@@ -679,15 +381,11 @@
 							input[type=radio] {
 								border: solid 4px @icon-blue;
 							}
-
 						}	
-
 						@media (max-width: @screen-xs-max) {
 							margin:10px 10px 10px 0;
 							padding: 30px 0;
 						}	
-
-
 					}
 					&.pickup-button{
 						margin-right:0;
@@ -695,7 +393,6 @@
 							padding-bottom:41%;
 							background:url("../templates/images/icon-pickup.png") no-repeat center top;
 							background-size:80%;
-
 						}	
 						&:hover,&.active{
 							label{
@@ -708,17 +405,12 @@
 								border: solid 4px @icon-blue;
 							}
 						}	
-
 						@media (max-width: @screen-xs-max) {
 							margin:10px 0 10px 10px;
 							padding: 30px 0;
-
 						}	
 					}	
-
-
 				}
-
 			}			
 		}
 	}

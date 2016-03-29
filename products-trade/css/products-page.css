@@ -772,38 +772,32 @@
   background-size: 20px;
   right: 5px;
 }
-#product-pages #order-form form#checkout-cart .form-group-wrap .form-group input[type=radio]:hover {
-  cursor: pointer;
-}
-#product-pages #order-form form#checkout-cart .form-group-wrap .form-group input[type=checkbox],
 #product-pages #order-form form#checkout-cart .form-group-wrap .form-group input[type=radio] {
-  display: inline-block;
-  font-size: 15px;
-  line-height: 1em;
-  margin: 0 0.25em 0 0;
-  padding: 0;
-  width: 1.25em;
-  height: 1.25em;
-  -webkit-border-radius: 0.25em;
-  vertical-align: text-top;
+  display: none;
 }
-#product-pages #order-form form#checkout-cart .form-group-wrap .form-group input[type=radio] {
+#product-pages #order-form form#checkout-cart .form-group-wrap .form-group label .radio-button {
   -webkit-border-radius: 2em;
-  /* Make radios round */
+  -moz-border-radius: 2em;
+  border-radius: 2em;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
   background: #ffffff;
   border: solid 4px #bfbfbf;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
 }
-#product-pages #order-form form#checkout-cart .form-group-wrap .form-group input[type=radio]:checked {
+#product-pages #order-form form#checkout-cart .form-group-wrap .form-group label.selected .radio-button {
   -webkit-border-radius: 2em;
-  /* Make radios round */
+  -moz-border-radius: 2em;
+  border-radius: 2em;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
   background: #ffffff url("../templates/images/icon-dot.png") no-repeat center center;
   background-size: cover;
   border: solid 4px #0776aa;
-}
-#product-pages #order-form form#checkout-cart .form-group-wrap .form-group input[type=checkbox]:checked {
-  background: url("data:image/png,%89PNG[...]") no-repeat center center;
-  -webkit-background-size: 28px 28px;
-  /* shrink high resolution background */
 }
 #product-pages #order-form form#checkout-cart .form-group-wrap .form-group ul.radio-list {
   padding: 0;
@@ -811,7 +805,6 @@
 }
 #product-pages #order-form form#checkout-cart .form-group-wrap .form-group ul.radio-list li {
   list-style: none;
-  float: left;
   display: inline-block;
   padding: 0 20px;
 }
@@ -828,6 +821,9 @@
   font-weight: 500;
   position: relative;
   top: 2px;
+}
+#product-pages #order-form form#checkout-cart .form-group-wrap .form-group ul.radio-list li label .radio-button {
+  margin-right: 10px;
 }
 #product-pages #order-form form#checkout-cart .form-group-wrap .form-group .picture-button {
   border: solid 1px #bdbdbd;

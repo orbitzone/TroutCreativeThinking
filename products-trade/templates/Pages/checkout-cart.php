@@ -92,14 +92,14 @@
 										<div class="inner-half left text-center">
 										<div class="delivery-button picture-button">
 											
-											<label for="receiving_receivegoods_delivery" class="btn-bhv"><div class="icon-delivery"></div><br>Delivery</label>
+											<label for="receiving_receivegoods_delivery" class="btn-bhv"><div class="icon-delivery"></div><br>Delivery<br><span class="radio-button"></span></label>
 											<input type="radio" name="receiving_receivegoods" id="receiving_receivegoods_delivery" value="delivery" required>
 											</div>
 										</div>
 										<div class="inner-half right text-center">
 										<div class="pickup-button picture-button">
 											
-											<label for="receiving_receivegoods_pickup" class="btn-bhv"><div class="icon-pickup"></div><br>Pick up</label>
+											<label for="receiving_receivegoods_pickup" class="btn-bhv"><div class="icon-pickup"></div><br>Pick up<br><span class="radio-button"></span></label>
 											<input type="radio" name="receiving_receivegoods" id="receiving_receivegoods_pickup" value="pickup" required>
 											</div>
 										</div>
@@ -266,9 +266,9 @@
 										</div>
 										<div class="form-group full space-below">
 											<ul class="radio-list">
-												<li><input type="radio" name="pickup_notification" id="pickup_notification_none" value="none" checked> <label for="pickup_notification_none">None</label></li>
-												<li><input type="radio" name="pickup_notification" id="pickup_notification_email" value="email"> <label for="pickup_notification_email">Email</label></li>
-												<li><input type="radio" name="pickup_notification" id="pickup_notification_sms" value="sms"> <label for="pickup_notification_sms">SMS</label></li>
+												<li><input type="radio" name="pickup_notification" id="pickup_notification_none" value="none" checked> <label for="pickup_notification_none"><span class="radio-button"></span>None</label></li>
+												<li><input type="radio" name="pickup_notification" id="pickup_notification_email" value="email"> <label for="pickup_notification_email"><span class="radio-button"></span>Email</label></li>
+												<li><input type="radio" name="pickup_notification" id="pickup_notification_sms" value="sms"> <label for="pickup_notification_sms"><span class="radio-button"></span>SMS</label></li>
 											</ul>
 										</div>
 								</div>

@@ -6,19 +6,13 @@
 <!--[if IE 10]>    <html class="no-js ie ie10" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-
   <?php include "templates/Includes/ProductsMeta.php" ?>
-
   <title>Reece Products</title>
   <?php include "templates/Includes/ProductsHeader.php" ?>
-
 </head>
-
 <body
 class="">
-
 <div class="ocmain-wrapper">
-
   <div class="browser-message">
     <div class="content-container">
       <div class="alert alert-warning" role="alert">
@@ -27,29 +21,18 @@ class="">
       </div>
     </div>
   </div>
-
   <?php include "templates/Includes/Navigation.php" ?>
   
   
   <section id="product-pages">
     <?php include "templates/Includes/ProductsNav.php" ?>
-    
-<h1>Product pages</h1>
-<ul>
-<li><a href="checkout-cart.php">Checkout Cart</a></li>
-<li><a href="checkout-cart-success.php">Checkout Cart - Success</a></li>
-</ul>
-
-
+    <?php include "templates/Pages/checkout-cart.php" ?>
   </section>
 
 
   <?php include "templates/Includes/Footer.php" ?>
 </div>
-
 <?php include "templates/Includes/MobileNavigation.php" ?>
 <?php include "templates/Includes/ProductsFooter.php" ?>
-
-
 </body>
 </html>

@@ -18,6 +18,18 @@ h3{
 h6{
 	font-size:15px;
 }
+p{
+	.gothamBook;
+	strong{
+		.gothamBold;
+	}
+	em{
+		.gothamBookItalic;
+	}
+	strong em, em strong{
+		.gothamBoldItalic
+	}
+}
 
 .breadcrumbs{
 	min-height:40px;
@@ -93,6 +105,14 @@ ul.inline-list{
 	&.grey-button{
 		background: @bg-button-grey;
 		color: @white;
+	}
+	&.full-width{
+		width:100%;
+		padding:20px 20px;
+		@media (max-width: @screen-xs-max) { 
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
 	}
 	@media (max-width: @screen-sm-max) { 
 		padding:20px 35px;

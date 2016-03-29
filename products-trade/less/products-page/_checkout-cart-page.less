@@ -1,4 +1,4 @@
-.main-section{
+.main-section#checkout-cart-section{
 	.main-heading{
 		border-bottom:solid 1px @border-light-grey;
 		padding-bottom:25px;
@@ -7,411 +7,435 @@
 		margin-left:-15px;
 		margin-right:-15px;
 	}
-}
-#order-form{
-	padding-right:50px;
-	@media (max-width: @screen-xs-max) {
-		padding-right:20px;
-		padding-left:20px;
-	}
-	span.error {
-		display: block;
-		color: red;
-		font-size: .8em;
-		padding-top:5px;
-	}
-	form#checkout-cart{
-		input, textarea, select {
-			-webkit-appearance: none;
+	#order-form{
+		padding-right:50px;
+		@media (max-width: @screen-xs-max) {
+			padding-right:20px;
+			padding-left:20px;
 		}
-		.selectric{
-			height:55px;
-			background:@white;
-			border:solid 1px @border-grey;
-			.label{
-				padding-top:8px;
-				.gothamBook;
-				font-size:14px;
-			}
-			.button{
-				top:18px;
-				background:url("../templates/images/icon-downarrow.png") no-repeat top center;
-				background-size:20px;
-				right:5px;
-				&:after{
-					display:none;
-				}
-			}
+		span.error {
+			display: block;
+			color: red;
+			font-size: .8em;
+			padding-top:5px;
 		}
-		.selectric-items li{
-			background:@white;
-			font-size:14px;
-			.gothamBook;
-			&:hover{
-				background:@bg-light-grey;
-				cursor:pointer;
+		form#checkout-cart{
+			input, textarea, select {
+				-webkit-appearance: none;
 			}
-		}
-		#order-details,#receiving-goods{
-			.header-section{
-				border-bottom:solid 1px @border-light-grey;
-				padding-top:40px;
-				padding-bottom:30px;
-				padding-left:15px;
-				padding-right:15px;
-				margin-left:-15px;
-				margin-right:-15px;
-				.fa{
-					color:@icon-grey;
-					float:right;
-					font-size:40px;
-					line-height:40px;
-					position:relative;
-					top:-14px;
+			.selectric{
+				height:55px;
+				background:@white;
+				border:solid 1px @border-grey;
+				.label{
+					padding-top:8px;
+					.gothamBook;
+					font-size:14px;
 				}
-				.fa.fa-angle-down{
-					display:inline;
-				}
-				.fa.fa-angle-up{
-					display:none;
-				}
-				&.active{
-					border-bottom:none;
-					.fa.fa-angle-down{
+				.button{
+					top:18px;
+					background:url("../templates/images/icon-downarrow.png") no-repeat top center;
+					background-size:20px;
+					right:5px;
+					&:after{
 						display:none;
 					}
-					.fa.fa-angle-up{
-						display:inline;
-					}
 				}
 			}
-		}
-		#receiving-goods{
-			.header-section{
+			.selectric-items li{
+				background:@white;
+				font-size:14px;
+				.gothamBook;
 				&:hover{
+					background:@bg-light-grey;
 					cursor:pointer;
 				}
 			}
-			.form-section{
-				display:none;
-			}
-		}
-		#delivery-address{
-			.inner-form-section{
-				display:none;
-				margin-left:10px;
-				margin-right:10px;
-			}
-		}
-		#pickup-details,#delivery-details, #order-comments{
-			display:none;
-		}
-		#pickup-details,#delivery-details{
-			header{
-				padding-left:10px;
-				padding-right:10px;
-			}
-		}
-		.form-group-wrap{
-			margin:0 -15px;
-			padding-left:15px;
-			padding-right:15px;
-			padding-top:10px;
-			padding-bottom:20px;
-			border-bottom:solid 1px @border-light-grey;
-			@media (max-width: @screen-xs-max) {
-				padding-left:0;
-				padding-right:0;
-			}
-			.inner-form-section{
-				padding:20px;
-				background: @bg-light-grey;
-			}
-			.form-group{
-				float:left;
-				padding:10px;
-				margin-bottom:0;
-				&.half{
-					width:50%;
-					@media (max-width: @screen-xs-max) {
-						width:100%;
-					}
-				}
-				&.full{
-					width:100%;
-					.inner-half{
-						width:50%;
-						padding-top:10px;
-						&.left{
-							float:left;
-						}
-						&.right{
-							float:right;
-						}
-					}
-				}
-				&.sm-full{
-					@media (max-width: @screen-sm-max) {
-						width:100%;
-					}
-				}
-				&.quarter-big{
-					width:30%;
-					@media (max-width: @screen-sm-max) {
-						width:60%;
-					}
-				}
-				&.quarter-small{
-					width:20%;
-					@media (max-width: @screen-sm-max) {
-						width:40%;
-					}
-				}
-				&.half-big{
-					width:60%;
-					@media (max-width: @screen-xs-max) {
-						width:100%;
-					}
-				}
-				&.half-small{
-					width:40%;
-					@media (max-width: @screen-xs-max) {
-						width:100%;
-					}
-				}
-				&.space-above{
-					padding-top:30px;
-				}
-				&.space-below{
+			#order-details,#receiving-goods{
+				.header-section{
+					border-bottom:solid 1px @border-light-grey;
+					padding-top:40px;
 					padding-bottom:30px;
-				}
-				&.no-space-bottom{
-					padding-bottom:0;
-					margin-bottom:0;
-				}
-				&.select-previous-address{
-					&.active{
-						.arrow-triangle{
-							height:22px;
-							background:url("../templates/images/arrow-triangle.png") no-repeat center bottom;
-							width:100%;
-							background-size: 24px 12px;
-						}						
+					padding-left:15px;
+					padding-right:15px;
+					margin-left:-15px;
+					margin-right:-15px;
+					.fa{
+						color:@icon-grey;
+						float:right;
+						font-size:40px;
+						line-height:40px;
+						position:relative;
+						top:-14px;
 					}
-				}
-				&.enter-new-address{
-					&.enter-new-address-top{
+					.fa.fa-angle-down{
+						display:inline;
+					}
+					.fa.fa-angle-up{
 						display:none;
 					}
-					.or{
-						display:block;
-						float:left;
-						width:20%;
-						text-align:center;
-						padding-right:20px;
-						font-size:18px;
-						padding-top:14px;
-						.gothamBold;
+					&.active{
+						border-bottom:none;
+						.fa.fa-angle-down{
+							display:none;
+						}
+						.fa.fa-angle-up{
+							display:inline;
+						}
 					}
-					.btn.new-address{
-						width:80%;
-						float:left;
-						padding:20px;
+				}
+			}
+			#receiving-goods{
+				.header-section{
+					&:hover{
+						cursor:pointer;
+					}
+				}
+				.form-section{
+					display:none;
+				}
+			}
+			#delivery-address{
+				.inner-form-section{
+					display:none;
+					margin-left:10px;
+					margin-right:10px;
+				}
+			}
+			#pickup-details,#delivery-details, #order-comments{
+				display:none;
+			}
+			#pickup-details,#delivery-details{
+				header{
+					padding-left:10px;
+					padding-right:10px;
+				}
+			}
+			#pickup-details{
+				.inner-section{
+					padding:30px;
+					background-color:@bg-dark-grey;
+				}
+			}
+			.bg-info-icon{
+				background: @bg-dark-grey url("../templates/images/icon-info.png") no-repeat;
+				padding:30px 30px 30px 85px;
+				background-size:33px;
+				background-position: top 30px left 30px;
+			}
+			.form-group-wrap{
+				margin:0 -15px;
+				padding-left:15px;
+				padding-right:15px;
+				padding-top:10px;
+				padding-bottom:20px;
+				border-bottom:solid 1px @border-light-grey;
+				@media (max-width: @screen-xs-max) {
+					padding-left:0;
+					padding-right:0;
+				}
+				.inner-form-section{
+					padding:20px;
+					background: @bg-light-grey;
+				}
+				.form-group{
+					float:left;
+					padding:10px;
+					margin-bottom:0;
+					&.half{
+						width:50%;
+						@media (max-width: @screen-xs-max) {
+							width:100%;
+						}
+					}
+					&.full{
+						width:100%;
+						.inner-half{
+							width:50%;
+							padding-top:10px;
+							&.left{
+								float:left;
+							}
+							&.right{
+								float:right;
+							}
+						}
+					}
+					&.sm-full{
 						@media (max-width: @screen-sm-max) {
 							width:100%;
 						}
 					}
-					&.active{
-						.arrow-triangle{
-							height:22px;
-							background:url("../templates/images/arrow-triangle.png") no-repeat center bottom;
+					&.quarter-big{
+						width:30%;
+						@media (max-width: @screen-sm-max) {
+							width:60%;
+						}
+					}
+					&.quarter-small{
+						width:20%;
+						@media (max-width: @screen-sm-max) {
+							width:40%;
+						}
+					}
+					&.half-big{
+						width:60%;
+						@media (max-width: @screen-xs-max) {
+							width:100%;
+						}
+					}
+					&.half-small{
+						width:40%;
+						@media (max-width: @screen-xs-max) {
+							width:100%;
+						}
+					}
+					&.space-above{
+						padding-top:30px;
+					}
+					&.space-below{
+						padding-bottom:30px;
+					}
+					&.no-space-bottom{
+						padding-bottom:0;
+						margin-bottom:0;
+					}
+					&.select-previous-address{
+						&.active{
+							.arrow-triangle{
+								height:22px;
+								background:url("../templates/images/arrow-triangle.png") no-repeat center bottom;
+								width:100%;
+								background-size: 24px 12px;
+							}						
+						}
+					}
+					&.enter-new-address{
+						&.enter-new-address-top{
+							display:none;
+						}
+						.or{
+							display:block;
+							float:left;
+							width:20%;
+							text-align:center;
+							padding-right:20px;
+							font-size:18px;
+							padding-top:14px;
+							.gothamBold;
+						}
+						.btn.new-address{
 							width:80%;
-							float:right;
-							background-size: 24px 12px;
-							@media (max-width: @screen-xs-max) {
+							float:left;
+							padding:20px;
+							@media (max-width: @screen-sm-max) {
 								width:100%;
 							}
-						}						
-					}
-				}
-				&.inner-form-header{
-					padding:0;
-					.inner-form-section{
-						padding:20px 30px;
-					}
-				}
-				label{
-					display:block;
-					color: @text-grey;
-					font-size:15px;
-					.gothamBook;
-				}
-				.next-button{
-					display:inline-block;
-				}
-				.btn{
-					@media (max-width: @screen-xs-max) {
-						width:100%;
-					}
-				}
-				.pop-title{
-					background: @bg-mid-grey;
-					padding: 20px 30px;
-					margin: 0 10px;
-					display:none;
-					h6{
-						margin:0;
-						padding:0;
-						display:none;
+						}
 						&.active{
-							display:block;
+							.arrow-triangle{
+								height:22px;
+								background:url("../templates/images/arrow-triangle.png") no-repeat center bottom;
+								width:80%;
+								float:right;
+								background-size: 24px 12px;
+								@media (max-width: @screen-xs-max) {
+									width:100%;
+								}
+							}						
 						}
 					}
-				}
-				select, input[type=email],input[type=text],input[type=date]{
-					height:55px;
-					font-size: 14px;
-					width:100%;
-					border:solid 1px @border-grey;
-					.border-radius (0px);
-					padding:15px;
-				}
-				textarea{
-					height:150px;
-					font-size: 14px;
-					width:100%;
-					border:solid 1px @border-grey;
-					.border-radius (0px);
-					padding:15px;
-				}
-				input[type=email],input[type=text],textarea{
-					&.error{
-						border:solid 1px red;
-					}
-					&.valid{
-						background:url("../templates/images/icon-greentick.png") no-repeat;
-						background-size:20px;
-						background-position:right 12px top 16px;
-					}
-					&.search-box{
-						background:url("../templates/images/icon-bluesearch.png") no-repeat;
-						background-size:55px;
-						background-position:right 0px top 0px;
-					}
-				}
-				select{
-					top:18px;
-					background:url("../templates/images/icon-downarrow.png") no-repeat top center;
-					background-position: right 10px top 15px;
-					background-size:20px;
-					right:5px;
-				}
-
-
-
-input[type=radio] {
-	display:none;
-}
-
-				label .radio-button{
-					.border-radius (2em);
-					background: @white;
-					border: solid 4px @icon-grey;
-					width:20px;
-					height:20px;
-					display:inline-block;
-				}
-				label.selected .radio-button{
-					.border-radius (2em);
-					background: @white url("../templates/images/icon-dot.png") no-repeat center center;
-					background-size:cover;
-					border: solid 4px @icon-blue;					
-				}
-
-
-				ul.radio-list{
-					padding:0;
-					margin:0;
-					li{
-						list-style: none;
-						display:inline-block;
-						padding: 0 20px;
-						&:hover{
-							label{
-								color:@icon-blue;
-								cursor:pointer;
-							}
-						}
-						label{
-							display:inline-block;
-							padding-left:20px;
-							text-transform: uppercase;
-							.gothamMedium;
-							position:relative;
-							top:2px;
-							.radio-button{
-								margin-right:10px;
-							}
+					&.inner-form-header{
+						padding:0;
+						.inner-form-section{
+							padding:20px 30px;
 						}
 					}
-				}
-				.picture-button{
-					border:solid 1px @border-grey;
-					padding:50px 30px 30px 30px;
-					margin:10px;
 					label{
-						text-transform: uppercase;
-						color:@icon-grey;
-						.gothamMedium;
+						display:block;
+						color: @text-grey;
+						font-size:15px;
+						.gothamBook;
 					}
-					&.delivery-button{
-						margin-left:0;
-						.icon-delivery{
-							padding-bottom:41%;
-							background:url("../templates/images/icon-delivery.png") no-repeat center top;
-							background-size:80%;
-						}	
-						&:hover,&.active{
-							label{
-								color:@icon-blue;
+					.next-button{
+						display:inline-block;
+					}
+					.btn{
+						@media (max-width: @screen-xs-max) {
+							width:100%;
+						}
+					}
+					.pop-title{
+						background: @bg-mid-grey;
+						padding: 20px 30px;
+						margin: 0 10px;
+						display:none;
+						h6{
+							margin:0;
+							padding:0;
+							display:none;
+							&.active{
+								display:block;
 							}
+						}
+					}
+					select, input[type=email],input[type=text],input[type=date]{
+						height:55px;
+						font-size: 14px;
+						width:100%;
+						border:solid 1px @border-grey;
+						.border-radius (0px);
+						padding:15px;
+					}
+					input[type=date]{
+						background:url("../templates/images/icon-calendar.png") no-repeat;
+						background-size:20px;
+						background-position:right 15px top 50%;
+					}
+					textarea{
+						height:150px;
+						font-size: 14px;
+						width:100%;
+						border:solid 1px @border-grey;
+						.border-radius (0px);
+						padding:15px;
+					}
+					input[type=email],input[type=text],textarea{
+						&.error{
+							border:solid 1px red;
+						}
+						&.valid{
+							background:url("../templates/images/icon-greentick.png") no-repeat;
+							background-size:15px;
+							background-position:right 12px top 50%;
+						}
+						&.search-box{
+							background:url("../templates/images/icon-bluesearch.png") no-repeat;
+							background-size:55px;
+							background-position:right 0px top 50%;
+							background-color:@white;
+						}
+					}
+					select{
+						top:18px;
+						background:url("../templates/images/icon-downarrow.png") no-repeat top center;
+						background-position: right 10px top 50%;
+						background-size:20px;
+						right:5px;
+					}
+
+
+
+					input[type=radio] {
+						display:none;
+					}
+
+					label .radio-button{
+						.border-radius (2em);
+						background: @white;
+						border: solid 4px @icon-grey;
+						width:20px;
+						height:20px;
+						display:inline-block;
+					}
+					label.selected .radio-button{
+						.border-radius (2em);
+						background: @white url("../templates/images/icon-dot.png") no-repeat center center;
+						background-size:cover;
+						border: solid 4px @icon-blue;					
+					}
+
+
+					ul.radio-list{
+						padding:0;
+						margin:0;
+						li{
+							list-style: none;
+							display:inline-block;
+							padding: 0 20px;
+							&:hover{
+								label{
+									color:@icon-blue;
+									cursor:pointer;
+									.radio-button{
+										border-color:@icon-blue;
+									}
+								}
+							}
+							label{
+								display:inline-block;
+								padding-left:20px;
+								text-transform: uppercase;
+								.gothamMedium;
+								position:relative;
+								top:2px;
+								.radio-button{
+									margin-right:10px;
+								}
+							}
+						}
+					}
+					.picture-button{
+						border:solid 1px @border-grey;
+						padding:50px 30px 30px 30px;
+						margin:10px;
+						label{
+							text-transform: uppercase;
+							color:@icon-grey;
+							.gothamMedium;
+							.radio-button{
+								margin-top:5px;
+							}
+						}
+						&.delivery-button{
+							margin-left:0;
 							.icon-delivery{
-								background-position:center bottom;
-							}
-							input[type=radio] {
-								border: solid 4px @icon-blue;
-							}
-						}	
-						@media (max-width: @screen-xs-max) {
-							margin:10px 10px 10px 0;
-							padding: 30px 0;
+								padding-bottom:41%;
+								background:url("../templates/images/icon-delivery.png") no-repeat center top;
+								background-size:80%;
+							}	
+							&:hover,&.active{
+								label{
+									color:@icon-blue;
+								}
+								.icon-delivery{
+									background-position:center bottom;
+								}
+								.radio-button{
+									border-color:@icon-blue;
+								}
+							}	
+							@media (max-width: @screen-xs-max) {
+								margin:10px 10px 10px 0;
+								padding: 30px 0;
+							}	
+						}
+						&.pickup-button{
+							margin-right:0;
+							.icon-pickup{
+								padding-bottom:41%;
+								background:url("../templates/images/icon-pickup.png") no-repeat center top;
+								background-size:80%;
+							}	
+							&:hover,&.active{
+								label{
+									color:@icon-blue;
+								}
+								.icon-pickup{
+									background-position:center bottom;
+								}
+								.radio-button{
+									border-color:@icon-blue;
+								}
+							}	
+							@media (max-width: @screen-xs-max) {
+								margin:10px 0 10px 10px;
+								padding: 30px 0;
+							}	
 						}	
 					}
-					&.pickup-button{
-						margin-right:0;
-						.icon-pickup{
-							padding-bottom:41%;
-							background:url("../templates/images/icon-pickup.png") no-repeat center top;
-							background-size:80%;
-						}	
-						&:hover,&.active{
-							label{
-								color:@icon-blue;
-							}
-							.icon-pickup{
-								background-position:center bottom;
-							}
-							input[type=radio] {
-								border: solid 4px @icon-blue;
-							}
-						}	
-						@media (max-width: @screen-xs-max) {
-							margin:10px 0 10px 10px;
-							padding: 30px 0;
-						}	
-					}	
-				}
-			}			
+				}			
+			}
 		}
 	}
 }

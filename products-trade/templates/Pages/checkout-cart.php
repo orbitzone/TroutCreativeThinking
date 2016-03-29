@@ -7,7 +7,7 @@
 		</div>
 	</div>
 </section>
-<section class="main-section">
+<section class="main-section" id="checkout-cart-section">
 	<div class="container-fluid section-container">
 		<div class="row">
 			<div class="col-sm-5 col-sm-push-7 bg-dark-grey bg-sm-blue">
@@ -18,7 +18,7 @@
 				<header class="main-heading">
 					<h1>Order Summary</h1>
 				</header>
-					<form id="checkout-cart">
+					<form id="checkout-cart" action="checkout-cart-success.php">
 						<section id="order-details" class="section-box">
 							<header class="header-section btn-bhv action-goto-step1 active"><h3>1. Details <span class="fa fa-angle-down"></span><span class="fa fa-angle-up"></span></h3></header>
 							<div class="form-section">
@@ -91,14 +91,12 @@
 										</div>
 										<div class="inner-half left text-center">
 										<div class="delivery-button picture-button">
-											
 											<label for="receiving_receivegoods_delivery" class="btn-bhv"><div class="icon-delivery"></div><br>Delivery<br><span class="radio-button"></span></label>
 											<input type="radio" name="receiving_receivegoods" id="receiving_receivegoods_delivery" value="delivery" required>
 											</div>
 										</div>
 										<div class="inner-half right text-center">
 										<div class="pickup-button picture-button">
-											
 											<label for="receiving_receivegoods_pickup" class="btn-bhv"><div class="icon-pickup"></div><br>Pick up<br><span class="radio-button"></span></label>
 											<input type="radio" name="receiving_receivegoods" id="receiving_receivegoods_pickup" value="pickup" required>
 											</div>
@@ -111,7 +109,7 @@
 									<div id="delivery-details">
 										<header><h3>Delivery Details</h3></header>
 										<div class="form-group full">
-											<div class="info">
+											<div class="info bg-info-icon">
 												<h6>Delivery Requirements</h6>
 												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque cum doloremque, necessitatibus et vero reiciendis voluptates dicta eos inventore blanditiis tempora soluta aut minima ullam voluptatem, unde, fugiat provident quidem nisi perspiciatis nihil incidunt! Natus, quas hic voluptatem delectus nobis.</p>
 											</div>
@@ -158,7 +156,6 @@
 											<div class="arrow-triangle"></div>
 											<div class="clear-fix"></div>
 										</div>
-
 									<div id="delivery-address">
 										<div class="inner-form-header form-group full">
 											<div class="pop-title">
@@ -220,11 +217,11 @@
 									<!-- START: PICK UP DETAILS -->
 									<div id="pickup-details">
 										<header><h3>Pick Up Details</h3></header>
+<div class="inner-section">
 										<div class="form-group full">
 											<label for="pickup_branch">Pick Up Branch</label>
 											<input name="pickup_branch" type="text" class="pickup_branch search-box" id="pickup_branch" required>
 											<input name="pickup_branch_id" type="hidden" id="pickup_branch_id">
-<br><br><br><br><br><br><br><br><br><br><br><br>
 											<div class="info">
 												<div class="inner-half left text-left">
 													<h6>Branch Address</h6>
@@ -235,9 +232,10 @@
 													(03) 9270 1966
 												</div>
 											</div>
-											
+											<div class="clear-fix"></div>
 										</div>
-
+										<div class="clear-fix"></div>
+</div>
 										<div class="form-group full">
 											<label for="pickup_previouscontact">Pick Up Contact</label>
 											<select name="pickup_previouscontact" class="" id="pickup_previouscontact" required>
@@ -255,10 +253,8 @@
 											<label for="pickup_phone">Phone</label>
 											<input name="pickup_phone" type="text" class="" id="pickup_phone"  required>
 										</div>
-
 										<div class="clear-fix"></div>
 									</div>
-
 								<div id="order-comments">	
 									<div class="form-group full space-above">
 											<label for="pickup_ordercomments"><h3>Order Comments</h3></label>
@@ -272,7 +268,6 @@
 											</ul>
 										</div>
 								</div>
-
 									<div class="form-group half text-left">
 										<div class="btn next-button grey-button action-goto-step1" id="step2previous">Previous</div>
 									</div>
@@ -280,7 +275,6 @@
 										<button class="btn next-button blue-button">Submit Order</button>
 									</div>
 									<div class="clear-fix"></div>
-
 								</div>
 							</div>
 						</section>

@@ -774,7 +774,7 @@ var bathroomHappiness = {
         });
       }
     });
-    
+    var initialLoad = true;
     $('#shower-technology .shower-technology-menu a').on('click', function(){
       $('#shower-technology .shower-technology-menu a').removeClass('active');
       $('#shower-technology .shower-technology-description').removeClass('active');
@@ -786,10 +786,14 @@ var bathroomHappiness = {
           $('#shower-technology .shower-technology-card').removeClass('active');
           $('#shower-technology .st-'+section).addClass('active'); 
         }else{
-          $('html, body').animate({scrollTop: posTop },500, function(){
-            $('#shower-technology .shower-technology-card').removeClass('active');
-            $('#shower-technology .st-'+section).addClass('active'); 
-          });           
+          if(initialLoad !== true){
+            $('html, body').animate({scrollTop: posTop },500, function(){
+              $('#shower-technology .shower-technology-card').removeClass('active');
+              $('#shower-technology .st-'+section).addClass('active'); 
+            });           
+          }else{
+            initialLoad = false;
+          }
         }
       }else{
         $('#shower-technology .shower-technology-card').removeClass('active');

@@ -87,21 +87,20 @@
 									<div class="form-group full">
 										<div class="info">
 											<h6>How would you like to recieve the goods? </h6>
-											<p>A Reece consultant will call you within 1 business day to confirm you delivery or  pickup time frame.Time frames will differ depending onthe type of product/s ordered.</p>
+											<p>A Reece consultant will call you within 1 business day to confirm your delivery or pickup time frame. Time frames will differ depending on the type of product/s ordered.</p>
 										</div>
 										<div class="inner-half left text-center">
 										<div class="delivery-button picture-button">
 											<label for="receiving_receivegoods_delivery" class="btn-bhv"><div class="icon-delivery"></div><br>Delivery<br><span class="radio-button"></span></label>
-											<input type="radio" name="receiving_receivegoods" id="receiving_receivegoods_delivery" value="delivery" required>
 											</div>
 										</div>
 										<div class="inner-half right text-center">
 										<div class="pickup-button picture-button">
 											<label for="receiving_receivegoods_pickup" class="btn-bhv"><div class="icon-pickup"></div><br>Pick up<br><span class="radio-button"></span></label>
-											<input type="radio" name="receiving_receivegoods" id="receiving_receivegoods_pickup" value="pickup" required>
 											</div>
 										</div>
-										<div class="clear-fix">
+										<div class="radio-inputs clear-fix">
+											<input type="radio" name="receiving_receivegoods" id="receiving_receivegoods_pickup" value="pickup" required><input type="radio" name="receiving_receivegoods" id="receiving_receivegoods_delivery" value="delivery" required>
 										</div>
 									</div>
 									<div class="clear-fix"></div>
@@ -116,7 +115,7 @@
 										</div>
 										<div class="form-group half-big">
 											<label for="receiving_date">Required By</label>
-											<input name="receiving_date" type="date" class="" id="receiving_date" placeholder="dd/mm/yyyy" required>
+											<input name="receiving_date" type="text" class="" id="receiving_date" placeholder="dd/mm/yyyy" value="" readonly="readonly" required>
 										</div>
 										<div class="form-group half-small">
 											<label for="receiving_time">Time</label>
@@ -188,7 +187,7 @@
 											</div>
 											<div class="form-group quarter-small">
 												<label for="receiving_postcode">Postcode</label>
-												<input name="receiving_postcode" type="text" class="" id="receiving_postcode"  required>
+												<input name="receiving_postcode" type="text" class="" id="receiving_postcode" required>
 											</div>
 											<div class="form-group full">
 												<label for="receiving_previouscontact">Site Contact</label>
@@ -218,31 +217,28 @@
 									<div id="pickup-details">
 										<header><h3>Pick Up Details</h3></header>
 <div class="inner-section">
-										<div class="form-group full">
-											<label for="pickup_branch">Pick Up Branch</label>
-											<input name="pickup_branch" type="text" class="pickup_branch search-box" id="pickup_branch" required>
-											<input name="pickup_branch_id" type="hidden" id="pickup_branch_id">
-											<div class="info">
-												<div class="inner-half left text-left">
-													<h6>Branch Address</h6>
-													2 Millicent St,<br>Burwood VIC 3125
-												</div>
-												<div class="inner-half right text-left">
-													<h6>Branch Phone</h6>
-													(03) 9270 1966
-												</div>
-											</div>
-											<div class="clear-fix"></div>
-										</div>
-										<div class="clear-fix"></div>
+	<div class="form-group full">
+		
+		<div class="info branch-info-autofill">
+			<div id="branchinfo-address" class="inner-half left text-left">
+			</div>
+			<div id="branchinfo-phone" class="inner-half right text-left">
+			</div>
+			<div class="clear-fix"></div>
+		</div>
+
+		<label for="pickup_branch">Pick Up Branch</label>
+		<input name="pickup_branch" type="text" class="pickup_branch search-box" id="pickup_branch" required>
+		<div class="clear-fix"></div>
+		<div id="pickupbranch-results">
+		</div>
+	</div>
+	<div class="clear-fix"></div>
 </div>
 										<div class="form-group full">
 											<label for="pickup_previouscontact">Pick Up Contact</label>
 											<select name="pickup_previouscontact" class="" id="pickup_previouscontact" required>
 												<option value="">Select previous contact</option>
-												<option value="johnsmith">John Smith</option>
-												<option value="janesmith">Jame Smith</option>
-												<option value="etc">Etc</option>
 											</select>
 										</div>
 										<div class="form-group half">
@@ -262,9 +258,9 @@
 										</div>
 										<div class="form-group full space-below">
 											<ul class="radio-list">
-												<li><input type="radio" name="pickup_notification" id="pickup_notification_none" value="none" checked> <label for="pickup_notification_none"><span class="radio-button"></span>None</label></li>
-												<li><input type="radio" name="pickup_notification" id="pickup_notification_email" value="email"> <label for="pickup_notification_email"><span class="radio-button"></span>Email</label></li>
-												<li><input type="radio" name="pickup_notification" id="pickup_notification_sms" value="sms"> <label for="pickup_notification_sms"><span class="radio-button"></span>SMS</label></li>
+												<li> <label for="pickup_notification_none"><span class="radio-button"><input type="radio" name="pickup_notification" id="pickup_notification_none" value="none" checked></span>None</label></li>
+												<li> <label for="pickup_notification_email"><span class="radio-button"><input type="radio" name="pickup_notification" id="pickup_notification_email" value="email"></span>Email</label></li>
+												<li><label for="pickup_notification_sms"><span class="radio-button"><input type="radio" name="pickup_notification" id="pickup_notification_sms" value="sms"> </span>SMS</label></li>
 											</ul>
 										</div>
 								</div>

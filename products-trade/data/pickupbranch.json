@@ -1,32 +1,32 @@
 [
     {
-        "value": "plumbing burwood",
-        "label": "Plumbing Burwood",
-        "address": "2 Millicent St, Burwood VIC 3025",
+        "searchvalue": "plumbing burwood",
+        "branchname": "Plumbing Burwood",
+        "address": "2 Burwood St, Burwood VIC 3025",
         "phone": "(03) 9270 1966"
     },
     {
-        "value": "plumbing melbourne",
-        "label": "Plumbing Melbourne",
-        "address": "2 Millicent St, Burwood VIC 3025",
+        "searchvalue": "plumbing melbourne",
+        "branchname": "Plumbing Melbourne",
+        "address": "2 Melbourne St, Melbourne VIC 3025",
         "phone": "(03) 9270 1966"
     },
     {
-        "value": "plumbing collingwood",
-        "label": "Plumbing Collingwood",
-        "address": "2 Millicent St, Burwood VIC 3025",
+        "searchvalue": "plumbing collingwood",
+        "branchname": "Plumbing Collingwood",
+        "address": "2 Collingwood St, Collingwood VIC 3025",
         "phone": "(03) 9270 1966"
     },
     {
-        "value": "plumbing northcote",
-        "label": "Plumbing Northcote",
-        "address": "2 Millicent St, Burwood VIC 3025",
+        "searchvalue": "plumbing northcote",
+        "branchname": "Plumbing Northcote",
+        "address": "2 Northcote St, Northcote VIC 3025",
         "phone": "(03) 9270 1966"
     },
     {
-        "value": "plumbing fitzroy",
-        "label": "Plumbing Fitzroy",
-        "address": "2 Millicent St, Burwood VIC 3025",
+        "searchvalue": "plumbing fitzroy",
+        "branchname": "Plumbing Fitzroy",
+        "address": "2 Fitzroy St, Fitzroy VIC 3025",
         "phone": "(03) 9270 1966"
     }
 ]

@@ -82,9 +82,11 @@ module.exports = function (grunt) {
       dev: {
         options: {
           mangle: false,
-          compress: false,
+          compress: {
+            warnings: false
+          },
           preserveComments: 'all',
-          beautify: true
+          beautify: true,
         },
         files: {
           'js/main.min.js': [
@@ -95,7 +97,9 @@ module.exports = function (grunt) {
       dist: {
         options: {
           mangle: true,
-          compress: true
+          compress: {
+            warnings: false
+          }
         },
         files: {
           'js/main.min.js': [
@@ -118,7 +122,16 @@ module.exports = function (grunt) {
         ]
       }
     },
-
+    svgstore: {
+      options: {
+        prefix : 'shape-', // This will prefix each <g> ID
+      },
+      default : {
+        files: {
+          'images/svg-defs.svg': ['images/svgs/*.svg'],
+        }
+      }      
+    }
   });
 
   grunt.loadNpmTasks('grunt-contrib-connect');
@@ -128,7 +141,8 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-copy');
-  
+  grunt.loadNpmTasks('grunt-svgstore');
+
   grunt.registerTask('build', [
     'jshint',
     'uglify:dist',
@@ -140,7 +154,8 @@ module.exports = function (grunt) {
     'uglify:dev',
     'compass:dev',
     'copy:js',
-    'watch'
+    'svgstore',
+    'watch'    
   ]);
 
 };

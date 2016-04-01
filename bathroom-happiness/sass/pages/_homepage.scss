@@ -1,4 +1,46 @@
 body.homepage {
+  .panel-slideshow{
+    height: auto;
+    @media (min-width: $screen-md-min) {
+      height: 295px;
+    }
+    @media (min-width: $screen-lg-min) {
+      height: 335px;
+        
+     }
+    .slideshow-container {
+      height: auto;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      @media (min-width: $screen-md-min) {
+        padding-top: 10px;
+        padding-bottom: 0;
+        height: 240px;
+      }
+      @media (min-width: $screen-lg-min) {
+        height: 273px;
+      }
+    }
+    .slideshow-buttons{
+      position: absolute;
+      top: 258px;
+      left: 10px;
+      margin-left: 10px;
+      width: 66px;
+      @media (min-width: $screen-md-min) {
+        top: 164px;
+      }
+      @media (min-width: $screen-lg-min) {
+        top: 212px;
+      }
+    }
+    .slideshow-label{
+      padding: 9px 9px 14px;
+      @media (min-width: $screen-md-min) {
+        padding: 9px 9px 24px;
+      }
+    }    
+  }
   .panel-search {
     height: 52px;
     line-height: 52px;
@@ -77,6 +119,12 @@ body.homepage {
         font-size: 44px;
         padding: 0 20px;
       }
+      @media (min-width: $screen-md-min) {
+        font-size: 34px;
+      }
+      @media (min-width: $screen-lg-min) {
+        font-size: 44px;        
+      }
     }
     .experience{
       font-weight: 300;
@@ -96,7 +144,7 @@ body.homepage {
         min-height: 597px;  
       }
       @media (min-width: $screen-md-min){
-        height: 708px;
+        height: 652px;
       }
       @media (min-width: $screen-lg-min){
         //min-height: 719px;  
@@ -104,8 +152,10 @@ body.homepage {
        height: 682px;
       }
       .image{
-        //max-height: 510px;
-        max-height: 390px;
+        max-height: 570px;
+        @media (min-width: $screen-md-min){
+          max-height: 390px;
+        }
         overflow: hidden;
       }
       img {
@@ -210,7 +260,7 @@ body.homepage {
       }
       .background-div {
         height: 100%;
-        background: url("../images/homepage/find-inspiration.jpg");
+        background: url("../images/homepage/find-bathroom-inspiration.png");
         background-size: cover;
       }      
     }
@@ -219,7 +269,7 @@ body.homepage {
       height: 285px;
       .background-div {
         height: 100%;
-        background: url("../images/homepage/shop-products.jpg");
+        background: url("../images/homepage/shop-bathroom-products.png");
         background-size: cover;
       }
       @media (min-width: $screen-lg-min){

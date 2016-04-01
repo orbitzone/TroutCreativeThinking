@@ -4,6 +4,9 @@ body.water-therapy{
 			padding:0;
 		}
 	}
+	.icons-hide{
+		display: none;
+	}
 	.main{
 		img{
 			display: block;
@@ -16,12 +19,44 @@ body.water-therapy{
 				padding: 0;
 				margin: 0 auto;
 				.banner{
+					@include transition(1s opacity ease-out, 1s height ease-out);
 					background-size: cover;
-					background-image: url(../images/water_therapy/banner.jpg);
+					background-image: url(../images/water_therapy/water-therapy-hero.jpg);
 					background-position: center center;
 					height: 514px;
 					position: relative;
 					overflow: hidden;
+					.full-video-iframe-wrap{
+						opacity: 0;
+						@media (min-width: $screen-sm){
+							position: absolute;
+							top: 0;
+							left: 0;
+						}
+					}
+					&.playing{
+						.full-video-iframe-wrap{
+							opacity: 1;
+							@media (min-width: $screen-md){
+								&.mfp-hide{
+									display: block !important;
+								}
+							}
+						}
+						background: black;
+						height: auto;
+						#water-therapy-video-wrap{
+							@media (min-width: $screen-sm){
+								display: block;
+								opacity: 0;
+								position: relative;
+								z-index: 1;
+								top: inherit;
+								left: inherit;
+								@include transform(none);
+							}
+						}
+					}
 					.banner-video-buttons{
 						position: absolute;
 						bottom: 20px;
@@ -33,7 +68,7 @@ body.water-therapy{
 					}
 					button{
 						@include appearance(none);
-						border: none;
+						border: 2px solid white;
 						@include border-radius(20px);
 						background: rgba(0,0,0,0.6);
 						color: white;
@@ -77,7 +112,9 @@ body.water-therapy{
 				}
 				#water-therapy-banner-videos{
 					height: 100%;
-					display: block;				
+					display: block;
+					position: relative;
+					z-index: 1;									
 				}
 				.video{
 					width: 100%;
@@ -120,7 +157,7 @@ body.water-therapy{
 							opacity: 1;
 						}
 					}
-				}
+				}				
 			}
 		}
 		#water-therapy{
@@ -148,6 +185,8 @@ body.water-therapy{
 			      -webkit-text-fill-color: transparent;
 			      margin-bottom: 20px;
 			      margin-top: 0;
+			      text-transform: lowercase;
+			      letter-spacing: inherit;
 			      @media (min-width: $screen-sm){
 			      	font-size: 68px;
 			      }
@@ -162,10 +201,66 @@ body.water-therapy{
 				}
 				.video-wrap{
 					position: relative;
+					z-index: 1;
 					.videos{
 						position: relative;
 						background: black;
+						overflow: hidden;												
 					}
+					.videos-buttons{
+							position: absolute;
+							bottom: 20px;
+							right: 20px;
+							z-index: 2;
+							margin: 0;
+							display: none;
+							@media (min-width: $screen-md){
+								display: block;
+							}
+							li{
+								margin: 0;
+								vertical-align: middle;
+								button{
+									@include appearance(none);
+									border: 2px solid white;
+									@include border-radius(24px);
+									background: rgba(0,0,0,0.6);
+									color: white;
+									padding: 5px 10px;
+									vertical-align: middle;
+									outline: none;
+									margin: 0;
+									span{
+										display: inline-block;
+										white-space: nowrap;
+										overflow: hidden;
+										width: 120px;
+										vertical-align: middle;
+										@include transition(0.5s all ease-out);
+									}
+									.icon{
+										width: 32px;
+										height: 32px;
+										fill: white;
+										display: none;
+									}								
+									&.sound-on{
+										.icon{
+											&.shape-sound-on{
+												display: block;
+											}
+										}
+									}	
+									&.sound-off{
+										.icon{
+											&.shape-sound-off{
+												display: block;
+											}
+										}
+									}	
+								}
+							}												
+						}
 					.video{
 						width: 100%;
 						height: 100%;
@@ -310,19 +405,31 @@ body.water-therapy{
 						z-index: 1;
 					}
 					.sections{
-						max-width: 1200px;
+						max-width: 100%;
 						margin: 0 auto;
 						position: relative;
-						perspective: 1000px;
+						@include perspective(1000);
+						@media (min-width: 769px){
+							max-width: 738px;
+						}
+						@media (min-width: $screen-md){
+							max-width: 940px;
+						}
+						@media (min-width: $screen-lg){
+							max-width: 1200px;
+						}
 	  				.section-content {
 	  					position: relative;
-	  					transform-style: preserve-3d;
+	  					@include transform-style(preserve-3d);
 						  //@include transform(translateZ( -100px ));
 						  @include transition(all 1s);						  
 						}
 					}					
 				}
 				.shower-image{
+					background-image: url(../images/water_therapy/showering/shower-image-bg.jpg);
+					background-repeat: repeat;
+					background-position: top left;
 					.col-xs-12{
 						padding: 0;
 					}					
@@ -335,8 +442,14 @@ body.water-therapy{
 					@media (min-width: $screen-sm){
 						height: 350px;
 					}
+					.incon-wrap{
+						text-align: center;
+					}
 					.icon{
 						margin-bottom: 15px;
+						width: 55px;
+						height: 55px;
+						fill: #faea8b;						
 					}
 					h2{
 						margin-top: 0;
@@ -351,7 +464,7 @@ body.water-therapy{
 			      margin-bottom: 20px;
 					}
 					.rte{
-						max-width: 614px;
+						max-width: 635px;
 						margin: 0 auto;
 						font-size: 15px;
 						b{
@@ -361,7 +474,7 @@ body.water-therapy{
 				}
 				.sensory-slider{
 					background-size: cover;			
-					padding-top: 28px;
+					padding-top: 50px;
 					height: 350px;
 					h2{
 						color: white;
@@ -377,28 +490,42 @@ body.water-therapy{
 				.slides{
 					color: white;
 					padding-bottom: 40px;
+					@media (min-width: $screen-sm){
+						padding-bottom: 25px;
+					}
+					@media (min-width: $screen-md){
+						padding-bottom: 40px;
+					}
 					.slick-dots{
 						bottom: 0;
 						margin-bottom: 0;
 					}					
 					.slide{
 						padding: 0 20px;
-						.icon{
+						cursor: pointer;
+						.icon-wrap{
 							text-align: center;
-							.label{
-								display: block;
-								font-size: 15px;
-								font-weight: 300;
-								text-transform: uppercase;							
-								padding-top: 18px;
-								padding-bottom: 20px;
+							padding-top: 20px;							
+							.icon{
+								fill: white;
+								width: 45px;
+								height: 45px;
 							}
+						}
+						.label{
+							display: block;
+							font-size: 15px;
+							font-weight: 300;
+							text-transform: uppercase;							
+							padding-top: 10px;
+							padding-bottom: 30px;
 						}
 						.text{
 							margin: 0 auto;
-							max-width: 168px;
+							max-width: 240px;
 							text-align: center;
 							font-size: 15px;
+							padding-bottom: 10px;
 						}
 					}
 				}//slides
@@ -417,7 +544,7 @@ body.water-therapy{
 		  .section{
 		  	@include transition(1.2s all ease-out);
 		  }
-			&.therapeutic{
+			&.rejuvenation{
 				.section-1{
 		  		@include transform(translateY(0));
 		  	}
@@ -465,7 +592,7 @@ body.water-therapy{
 		  		opacity: 0;
 		  	}
 		  }
-		  &.rejuvenation{
+		  &.therapeutic{
 		  	.section-1{
 		  		@include transform(translateY(100%) scale(0.9));
 		  		opacity: 0;
@@ -490,7 +617,1195 @@ body.water-therapy{
 		  	}
 		  }
 		}//#water-therapy
-	}
+		#showering{
+			padding-bottom: 60px;
+		}
+		#showering,
+		#bathing{
+			background: black;
+			color: white;
+			text-align: center;
+			overflow: hidden;
+			.container-fluid{
+				padding-left: 0;
+				padding-right: 0;
+				@media (min-width: $screen-sm){
+					padding-left: 15px;
+					padding-right: 15px;
+				}
+			}
+			.scrolling-menu-wrap{
+				position: fixed;
+	    	top: -90px;
+	    	left: 50%;
+	    	z-index: 10;		   
+	    	width: 320px;
+	    	margin-left: -160px;
+	    	@include transition(0.2s all ease-out);
+		    @include transform(scale(0));
+		    &.fixed{
+		    top: 10px;		    	
+					@include transform(scale(1));
+		    }
+		    &.active{
+		    	@include transition(0.5s all ease-out);		    	
+		    }
+		    .scrolling-menu-list{
+	    		background: #37d1a4; /* Old browsers */
+					background: -moz-linear-gradient(top,  #37d1a4 0%, #41f3bf 100%); /* FF3.6-15 */
+					background: -webkit-linear-gradient(top,  #37d1a4 0%,#41f3bf 100%); /* Chrome10-25,Safari5.1-6 */
+					background: linear-gradient(to bottom,  #37d1a4 0%,#41f3bf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#37d1a4', endColorstr='#41f3bf',GradientType=0 ); /* IE6-9 */
+
+					padding: 0;
+					max-width: 320px;
+					margin: 0 auto;
+					position: relative;
+					height: 0;
+					opacity: 0;
+					top: -20px;
+					@include transition(0.5s all cubic-bezier(0.68, -0.55, 0.265, 1.55));
+					&.active{
+						opacity: 1;
+						padding: 30px 20px 14px;
+						height: 160px;
+					}
+					ul{
+						margin: 0;
+						padding: 0;
+						@include clearfix();
+						margin-left: -7.5px;
+						margin-right: -7.5px;
+						@include transition(0.5s all ease-out);
+						height: 100%;
+						li{
+							float: left;
+							width: 50%;
+							padding: 0 7.5px;
+							a{
+								display: block;
+								text-transform: uppercase;
+								color: $water-therapy-blue;
+								border: 1px solid $water-therapy-blue;
+								padding: 10px;
+								margin-bottom: 16px;
+								@include transition(0.5s color ease-out, 0.5s background ease-out);
+								font-size: 12px;
+								overflow: hidden;
+								white-space: nowrap;
+								&.active{
+									text-decoration: none;
+									background: $water-therapy-blue;
+									color: $water-therapy-green;
+								}
+							}
+						}
+					}
+		    }
+			}
+			.scrolling-menu{
+				cursor: pointer;
+				border-radius: 100%;
+		    margin: 0 auto;
+		    text-align: center;
+		    background: $water-therapy-blue;
+		    margin: 0 auto;
+		    position: relative;
+		    z-index: 2;
+		    //width: 45px;
+		    //height: 45px;
+		    width: 90px;
+	    	height: 90px;
+		    @media (min-width: $screen-sm){
+		    	width: 90px;
+		    	height: 90px;
+		    }
+		    .icon{
+		    	fill: $water-therapy-green;
+		    	position: relative;
+		    	/*width: 20px;
+		    	height: 20px;
+		    	top: 15px;*/
+		    	width: 40px;
+	    		height: 40px;
+	    		top: 26px;
+		    	@media (min-width: $screen-sm){
+		    		width: 40px;
+		    		height: 40px;
+		    		top: 26px;
+		    	}
+		    }
+			}
+			.grid-module-intro{
+				max-width: 526px;
+				margin: 0 auto;
+				h2{
+					font-size: 50px;
+					@media (min-width: $screen-sm){
+						font-size: 68px;
+					}
+				}
+			}
+			.grid-module-menu-wrap{
+				max-width: 850px;
+				margin: 0 auto;
+				position: relative;
+				z-index: 3;
+				margin-top: 56px;
+				@media (min-width: $screen-md){
+					margin-top: 0;
+					@include transform(translateY(56px));
+				}
+				.row{
+					margin: 0;
+					.col-sm-6{
+						padding: 0;
+					}
+				}
+			}//.grid-module-menu-wrap
+			.grid-module-menu{
+				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#37d1a4+0,41f3bf+100 */
+				background: #37d1a4; /* Old browsers */
+				background: -moz-linear-gradient(top,  #37d1a4 0%, #41f3bf 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(top,  #37d1a4 0%,#41f3bf 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to bottom,  #37d1a4 0%,#41f3bf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#37d1a4', endColorstr='#41f3bf',GradientType=0 ); /* IE6-9 */
+
+				padding: 30px 20px 14px;
+				@include transition(0.5s all ease-out);
+		    margin: 0 20px;
+		    margin-bottom: -20px;
+		    position: relative;
+		    z-index: 2;
+				@media (min-width: $screen-sm){
+					margin: 0;
+					padding: 64px 40px 28px;
+					height: 232px;
+				}
+				@media (min-width: $screen-md){
+					padding: 64px 58px 28px;
+				}
+				ul{
+					margin: 0;
+					padding: 0;
+					@include clearfix();
+					margin-left: -7.5px;
+					margin-right: -7.5px;
+					@include transition(0.5s all ease-out);
+					height: 100%;
+					li{
+						float: left;
+						width: 50%;
+						padding: 0 7.5px;
+						a{
+							display: block;
+							text-transform: uppercase;
+							color: $water-therapy-blue;
+							border: 1px solid $water-therapy-blue;
+							padding: 10px;
+							margin-bottom: 16px;
+							@include transition(0.5s color ease-out, 0.5s background ease-out);
+							font-size: 12px;
+							@media (min-width: $screen-sm){
+								margin-bottom: 28px;
+								font-size: 14px;
+							}
+							&.active{
+								text-decoration: none;
+								background: $water-therapy-blue;
+								color: $water-therapy-green;
+							}
+						}
+					}
+				}
+			}//.grid-module-menu
+			.grid-module-description{
+				position: relative;
+				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1a1c24+0,161d23+100 */
+				background: #1a1c24; /* Old browsers */
+				background: -moz-linear-gradient(top,  #1a1c24 0%, #161d23 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(top,  #1a1c24 0%,#161d23 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to bottom,  #1a1c24 0%,#161d23 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a1c24', endColorstr='#161d23',GradientType=0 ); /* IE6-9 */
+
+				height: 232px;
+				&:before{
+					content: " ";
+			    display: block;
+			    background: $water-therapy-blue;
+			    width: 20px;
+			    height: 20px;
+			    position: absolute;
+			    bottom: 0px;
+			    left: 50%;
+			    @include transform(translateX(-50%) translateY(50%) rotate(45deg));
+				}
+				h3{
+					margin-top: 0;
+					font-weight: 300;
+					text-transform: uppercase;
+					letter-spacing: 0.17em;
+				}
+				.box{
+					height: 100%;
+					overflow: hidden;
+					position: relative;
+					.box-content{
+						//opacity: 0;
+						//display: none;
+						position: absolute;
+						width: 100%;
+						left: 0;
+						top: 50%;
+						@include transform(translateY(-50%));
+						padding: 0 60px;
+						@include backface-visibility(hidden);
+						@include perspective(1000);
+						@include animation(slide_up_out 1s ease-out both);
+						opacity: 0;
+						&.active{
+							opacity: 1;
+							@include animation(slide_up_in 1s ease-out both);
+						}
+					}
+				}
+			}//.grid-module-description
+			.grid-module-zones-sections{
+				width: 100%;
+				@media (min-width: $screen-sm){
+					width: 4428px;
+				}
+				@media (min-width: $screen-md){
+					width: 5640px;
+				}
+				@media (min-width: $screen-lg){
+					width: 7200px;
+				}
+				position: relative;
+				z-index: 1;
+				.grid-module-zones-section{
+					//opacity: 0;
+					float: left;
+					width: 100%;
+					height: 500px;
+					position: relative;
+					&.ie{
+						z-index: 1;
+					}
+					@include animation(index_update_down 1s ease-out both);
+					@include transform-style(preserve-3d);
+					@media (min-width: $screen-sm){
+						float: left;
+						width: 738px;
+					}
+					@media (min-width: $screen-md){
+						width: 940px;
+					}
+					@media (min-width: $screen-lg){
+						width: 1200px;
+					}
+					.grid-module-zone-1,
+					.grid-module-zone-2,
+					.grid-module-zone-3,
+					.grid-module-zone-4,
+					.grid-module-zone-5,
+					.grid-module-zone-6
+					{
+						@include backface-visibility(hidden);
+						//@include transform-style(preserve-3d);
+						//@include transform(translateZ(0));
+					}
+					.grid-module-zone-wrap{
+						@include perspective(1000);
+						@include transform-style(preserve-3d);
+					}
+					.grid-module-zone-1{
+						@include animation(slide_out 1s ease-in-out both);
+						&.ie{
+							opacity: 0;
+						}
+					}
+					.grid-module-zone-2{
+						//opacity: 1;
+						@include animation(flip_left_out 1s ease-out 0.5s both);
+						&.ie{
+							opacity: 0;
+							@include animation(none);
+							@include transition(1s all ease-out);
+						}
+					}
+					.grid-module-zone-3{						
+						@include animation(flip_right_out 1s ease-out 0.8s both);						
+						&.ie{
+							opacity: 0;
+							@include animation(none);
+							@include transition(1s all ease-out);
+						}
+					}
+					.grid-module-zone-4,
+					.grid-module-zone-5,
+					{
+						opacity: 0;
+						@include transform(translateX(200%));
+					}
+					&.current{
+						//opacity: 1;
+						height: auto;
+						z-index: 1;
+						@include animation(index_update_up 1s ease-out both);
+						&.ie{
+							z-index: 5;
+						}
+						.grid-module-zone-1{
+							@include transform(translate3d(0,0,0));
+							@include animation(slide_in 1s ease-in-out both);
+							&.ie{
+								opacity: 1;
+								@include animation(none);
+							}
+						}
+						.grid-module-zone-2
+						{
+							//opacity: 0;
+							@include animation(flip_left_in 1s ease-out 0.5s both);
+							&.ie{
+								opacity: 1;
+								@include animation(none);
+							}
+						}
+						.grid-module-zone-3
+						{
+							@include animation(flip_right_in 1s ease-out 0.8s both);
+							&.ie{
+								opacity: 1;
+								@include animation(none);
+							}
+						}
+						.grid-module-zone-4,
+						.grid-module-zone-5,
+						{
+							opacity: 1;
+							@include transform(translateX(0));
+						}
+					}
+				}
+			}
+			.grid-module-zones-2-3,
+			.grid-module-zones-4-5{
+				.row{
+					margin: 0;
+					.col-sm-6,
+					.col-md-6{
+						padding: 0;
+					}
+				}
+				.grid-module-zone-5{
+					.slide-text{
+						text-align: center;
+						padding-left: 0;
+					}
+				}
+			}//.grid-module-zones-2-3
+			.grid-module-zones-4-5,
+			{
+				margin-bottom: 20px;
+				.slideshow-buttons{
+					top: 50%;
+					left: 0;
+					width: 100%;
+					margin-top: -20px;
+					margin-left: 0;
+					.slick-prev{
+						left: 10px;
+					}
+					.slick-next{
+						right: 10px;
+					}					
+				}
+				.slick-dots{
+					position: relative;
+					bottom: inherit;
+					margin-top: 20px;
+						li{
+							button{
+								&:before{
+									color: $water-therapy-blue;
+								}
+							}
+							&.slick-active{
+								button{
+									&:before{
+										color: $water-therapy-green;
+									}		
+								}
+							}
+						}
+				}
+			}
+			.grid-module-zone-1{		
+			
+				.slideshow-buttons{
+					height: 40px;
+					@include clearfix();
+					top: inherit;
+					left: inherit;
+					left: 30px;
+					bottom: 30px;					
+				}
+				.grid-module-slider{
+					.image{
+						img{
+							max-height: 658px;
+						}
+					}
+				}		
+				.grid-module-slider-buttons{
+					height: 40px;
+					@include clearfix();
+					top: inherit;
+					left: inherit;
+					right: 30px;
+					bottom: 30px;					
+				}
+			}
+			.grid-module-zone-2{
+				background-size: cover;
+				background-position: center center;
+				position: relative;
+				padding: 40px;
+				height: 360px;
+				@media (min-width: $screen-sm){
+					height: 360px;
+				}
+				@media (min-width: $screen-md){
+					height: 470px;
+				}
+				@media (min-width: $screen-lg){
+					height: 598px;
+				}
+				.box{
+					position: absolute;
+					top: 50%;
+					left: 0;
+					width: 100%;
+					@include transform(translateY(-50%));
+					h3{
+						margin: 0;
+						font-size: 45px;
+						@media (min-width: $screen-md){
+							font-size: 68px;
+						}
+					}
+				}
+			}//.grid-module-zone-2
+			.grid-module-zone-3{
+				background-size: cover;
+				background-position: center center;
+				height: 360px;
+				position: relative;
+				padding: 25px;
+				@media (min-width: $screen-sm){
+					padding: 40px;
+					height: 360px;
+				}
+				@media (min-width: $screen-md){
+					height: 470px;
+				}
+				@media (min-width: $screen-lg){
+					height: 598px;
+				}
+				.box-border{
+					width: 100%;
+					height: 100%;	
+					border: 2px solid white;	
+					display: block;
+				}
+				.box{
+					position: absolute;
+					top: 50%;
+					left: 0;
+					width: 100%;
+					@include transform(translateY(-50%));
+					.text{
+						font-weight: bold;
+						font-size: 20px;
+						margin: 0 auto;
+						padding: 0 40px;
+						@media (min-width: $screen-sm){
+							padding: 0;
+							width: 270px;
+						}
+						@media (min-width: $screen-md){
+							font-size: 24px;
+							width: 314px;
+						}
+					}
+				}
+			}// .grid-module-zone-3
+			.grid-module-zone-4-5{
+
+			}
+			.grid-module-zone-4{
+				background: $water-therapy-grey;
+				color: $water-therapy-black;
+				padding: 58px 30px 34px;
+				@media (min-width: $screen-md){
+					height: 488px;					
+				}
+				h3{
+					margin-top: 0;
+					font-weight: 300;
+					font-size: 25px;
+					letter-spacing: 0.17em;
+					text-transform: uppercase;
+					color: $water-therapy-black;
+					max-width: 340px;
+					margin: 0 auto;					
+					margin-bottom: 25px;
+				}
+				.intro-text{
+			    max-width: 400px;
+			    margin: 0 auto;
+			    margin-bottom: 25px;
+				}
+				ul{
+					margin-left: 20px;
+				}
+				h4{
+					margin-top: 0;
+					font-weight: 400;
+					font-size: 15px;
+					letter-spacing: 0.13em;
+					margin-bottom: 10px;
+				}
+				.image{
+					margin-bottom: 20px;
+				}
+				.text{
+					font-size: 15px;
+					text-align: left;
+				}
+				.btn{
+					border: none;
+					@include border-radius(0);
+					background: $water-therapy-blue;
+					color: $water-therapy-green;
+					text-transform: uppercase;
+					font-size: 14.5px;
+					font-weight: 500;
+					@include transition(0.5s all ease-out);
+					&:hover{
+						background: $water-therapy-green;
+						color: $water-therapy-blue;
+					}
+				}
+			}//.grid-module-zone-4
+			.grid-module-zone-5{
+				padding-top: 58px;
+				padding-bottom: 30px;
+				@media (min-width: $screen-md){
+					min-height: 488px;					
+					padding-top: 0;
+				}
+				background: white;
+				position: relative;
+				h3{
+					margin-top: 0;
+					font-weight: 300;
+					font-size: 25px;
+					letter-spacing: 0.17em;
+					text-transform: uppercase;
+					color: $water-therapy-black;
+					max-width: 340px;
+					margin: 0 auto;					
+					margin-bottom: 25px;
+				}
+				.intro-text{
+			    max-width: 400px;
+			    margin: 0 auto;
+			    margin-bottom: 25px;
+			    color: $water-therapy-black;
+				}
+				.grid-module-zone-5-content{
+					padding-top: 60px;
+					@media (min-width: $screen-md){
+						/*position: absolute;
+						left: 0;
+						width: 100%;
+						top: 50%;
+						@include transform(translateY(-50%));*/
+					}
+				}
+				.panel-slideshow{
+					.slide-content{
+						.slideshow-buttons{
+							top: 216px;
+						}
+						a{
+							margin-bottom: 20px;
+						}
+						.slide-image{
+							margin-bottom: 10px;
+							img{
+								max-height: 180px;
+							}
+						}
+						.slide-text{
+							margin-bottom: 30px;
+						}
+						.slide-btn-wrap{
+							text-align: center;
+						}
+						.slide-btn{
+							text-transform: uppercase;
+							color: white;
+							display: inline-block;
+							padding: 9px 18px;
+							margin: 0 auto;
+							background: $water-therapy-green;
+							@include transition(0.5s all ease-out);
+							&:hover{
+								background: $water-therapy-blue;
+							}
+						}
+					}
+				}
+			}
+		}// #showering
+		#bathing{
+			background: white;
+			color: black;
+			.bathing-image{
+				background-image: url(../images/water_therapy/bathing-bg.jpg);
+				background-size: cover;
+				background-position: bottom center;
+				background-repeat: no-repeat;
+				text-align: center;
+				img{
+					opacity: 0;
+					margin: 0 auto;
+				}
+			}
+			.bathing-content{
+				margin-top: -70px;
+				@media (min-width: $screen-sm){
+					margin-top: -200px;
+				}
+			}
+			.grid-module-menu-wrap,
+			.grid-module-zones-sections{
+				color: white;
+				.grid-module-zones-section{
+
+				}
+			}
+			.grid-module-menu{
+				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#37d1a4+0,41f3bf+100 */
+				background: #1a1c24; /* Old browsers */
+				background: -moz-linear-gradient(top,  #1a1c24 0%, #161d23 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(top,  #1a1c24 0%,#161d23 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to bottom,  #1a1c24 0%,#161d23 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a1c24', endColorstr='#161d23',GradientType=0 ); /* IE6-9 */
+
+				ul{
+					li{
+						a{
+							color: white;
+							border: 1px solid white;
+							&.active{
+								border-color: $water-therapy-green;
+								background: $water-therapy-green;
+								color: $water-therapy-blue;
+							}
+						}
+					}
+				}
+			}//.grid-module-menu
+			.grid-module-description{
+				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1a1c24+0,161d23+100 */
+				color: $water-therapy-blue;
+
+				background: #37d1a4; /* Old browsers */
+				background: -moz-linear-gradient(top,  #37d1a4 0%, #41f3bf 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(top,  #37d1a4 0%,#41f3bf 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to bottom,  #37d1a4 0%,#41f3bf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#37d1a4', endColorstr='#41f3bf',GradientType=0 ); /* IE6-9 */
+				&:before{
+					content: " ";
+			    display: block;
+			    background: #41f3bf;
+			    width: 20px;
+			    height: 20px;
+			    position: absolute;
+			    bottom: 0px;
+			    left: 50%;
+			    @include transform(translateX(-50%) translateY(50%) rotate(45deg));
+				}
+			}//.grid-module-description
+			.scrolling-menu-wrap{
+				.scrolling-menu-list{
+	    		background: #1a1c24; /* Old browsers */
+					background: -moz-linear-gradient(top,  #1a1c24 0%, #161d23 100%); /* FF3.6-15 */
+					background: -webkit-linear-gradient(top,  #1a1c24 0%,#161d23 100%); /* Chrome10-25,Safari5.1-6 */
+					background: linear-gradient(to bottom,  #1a1c24 0%,#161d23 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a1c24', endColorstr='#161d23',GradientType=0 ); /* IE6-9 */
+					ul{
+						li{
+							a{
+								color: white;
+								border: 1px solid white;
+								&.active{
+									border-color: $water-therapy-green;
+									background: $water-therapy-green;
+									color: $water-therapy-blue;
+								}
+							}
+						}
+					}
+		    }//.scrolling-menu-list
+		    .scrolling-menu{
+		    	background: $water-therapy-green;
+		    	.icon{
+		    		fill: $water-therapy-blue;
+		    	}
+		    }
+		  }//.scrolling-menu-wrap
+		  .grid-module-zones-2-3{
+		  	z-index: 1;
+		  }
+		  .grid-module-zone-4{
+		  	z-index: 0;
+		  	background: white;
+		  	h3{
+		  		margin-bottom: 20px;
+		  	}
+		  	.text{
+		  		text-align: center;
+		  	}
+		  	.product{
+		  		margin-bottom: 20px;
+		  		.image{
+		  			img{
+		  				margin: 0 auto;
+		  			}
+		  		}
+		  		a{
+		  			display: block;
+		  			text-align: center;
+		  			text-decoration: none;
+		  			h4{
+		  				font-family: $font-family-helvetica;
+		  				color: #4d4d4d;
+		  				font-weight: 300;
+		  				font-size: 12px;
+		  				letter-spacing: 0;		  			
+		  				margin-bottom: 10px;
+		  			}
+		  			h5{
+		  				font-family: $font-family-helvetica;
+		  				color: #4d4d4d;
+		  				font-size: 12px;
+		  				letter-spacing: 0;		  					
+		  				margin-bottom: 5px;
+		  			}
+		  			.button{
+		  				text-align: center;
+		  				display: inline-block;
+		  				padding: 9px 18px;
+		  				background: #41f3bf;
+		  				color: white;
+		  				text-transform: uppercase;
+		  				@include transition(0.5s all ease-out);
+		  				&:hover{
+		  					background: black;
+			  			}
+		  			}		  			
+		  		}
+		  	}
+		  }
+		  .grid-module-zone-5{
+		  	h3{
+		  		margin-bottom: 20px;
+		  	}
+		  	.text{
+		  		color: $water-therapy-black;
+		  	}
+		  	.slide-text{
+		  		text-align: center;
+		  		padding-left: 0;
+		  	}
+		  }
+		  .grid-module-zones-4-5{
+		  	.grid-module-zone-4{
+		  		background: $water-therapy-grey;
+					color: $water-therapy-black;
+		  		.text{
+		  			text-align: left;
+		  		}
+				}
+				.grid-module-zone-5{
+					.slide-text{
+						text-align: center;
+						padding-left: 0;
+					}
+				}
+		  }
+		}//#bathing
+		#shower-technology{
+			background-color: black;
+			background-image: url(../images/water_therapy/shower-technology.jpg);
+			background-position: top center;
+			background-size: contain;
+			background-repeat: no-repeat;
+			padding-top: 102px;
+			@media (min-width: $screen-md-min){
+				background-position: top center;
+				background-size: cover;
+			}
+			.container-fluid{
+				max-width: 350px;
+				@media (min-width: $screen-sm-min){
+					max-width: 575px;
+				}
+				@media (min-width: $screen-lg-min){
+					max-width: 1230px;
+				}
+			}
+			.shower-technology-sections{
+				max-width: 1055px;
+				margin: 0 auto;
+			}
+			.shower-technology-menu{
+				margin-bottom: 30px;
+				h3{
+					color: $water-therapy-green;
+					text-transform: uppercase;
+					font-weight: 300;
+					text-align: center;
+					letter-spacing: 0.17em;
+					margin-top: 35px;
+					margin-bottom: 30px;
+				}
+				ul{
+					@include clearfix();
+					li{
+						float: left;
+						width: 33.3333%;
+						padding: 0;
+						color: white;
+						border-bottom: 1px solid #373737;
+						border-right: 1px solid #373737;
+						&:nth-child(3n) {
+							border-right: none;
+						}
+						&:nth-child(7),&:nth-child(8),&:nth-child(9) {
+							border-bottom: none;
+						}
+						a{
+							display: block;
+							text-align: center;
+							padding-top: 30px;
+							color: white;
+							text-decoration: none;
+							font-size: 10px;
+							height: 100px;
+							line-height: 1;
+							@include transition(0.5s all ease-out);
+							span{
+								display: block;
+								margin: 0 auto;
+								margin-top: 5px;
+								text-transform: uppercase;
+								max-width: 90px;								
+								@media (min-width: $screen-sm){
+									margin: 0 auto;
+									margin-top: 20px;
+									max-width: 115px;								
+								}
+							}
+							@media (min-width: $screen-sm){
+								height: 143px;
+								font-size: 14px;
+							}
+							.icon{
+							  display: block;
+							  width: 40px;
+							  height: 40px;
+							  fill: $water-therapy-green;
+							  margin: 0 auto;		
+							  @include transition(0.5s all ease-out);
+							  @media (min-width: $screen-sm){
+							  	width: 55px;
+							  	height: 55px;
+							  }						  
+							}
+							&:hover{
+								color: white;
+								background: $water-therapy-blue;
+								.icon{
+									fill: white;
+								}	
+							}
+							&.active{
+								color: $water-therapy-blue;
+								background: $water-therapy-green;
+								.icon{
+									fill: $water-therapy-blue;
+								}	
+							}
+						}
+					}
+				}
+			}//.shower-technology-menu
+			.shower-technology-cards{
+				overflow: hidden;
+				position: relative;
+				margin-bottom: 75px;
+				min-height: 385.87px;	
+				padding: 30px 0 0;
+				@media (min-width: $screen-sm){
+					width: 545px;
+					height: 615px;						
+				}
+				.shower-technology-card{
+					position: absolute;
+					top: 30px;
+					left: 0;
+					z-index: 1;
+					//@include transition(1s all ease-in-out);
+					@include animation(card_out 1s ease-in-out both);
+					&.ie-lt{
+						@include animation(none);
+						opacity: 0;
+						@include transition(1s all ease-in-out);
+					}
+					&.active{
+						@include transform(translateY(615px) translateZ(0) scale(1));
+						@include animation(card_in 1s ease-in-out 0.5s both);
+						&.ie-lt{
+							@include animation(none);
+							opacity: 1;
+							z-index: 5;
+							@include transition(1s all ease-in-out);
+						}
+						//@include transform(translateY(0) translateZ(0));
+					}
+				}
+			}
+			.shower-technology-description{
+				text-align: center;
+				@include perspective(1000);
+				color: white;
+				padding: 0;
+				.close-video{
+					position: absolute;
+					top: 0px;
+					right: 0px;
+					width: 40px;
+					height: 40px;
+					z-index: 10;
+					@include appearance(none);
+					outline: none;
+					border: none;
+					@include border-radius(0);
+					padding: 0;
+					background: transparent;
+					opacity: 0;
+					@include transition(0s all ease-out);
+					&.active{
+						@include transition(0.5s all ease-out);
+						opacity: 1;
+					}
+					.icon{
+						fill: $water-therapy-green;
+						width: 32px;
+						height: 32px;
+						position: relative;
+						top: 2px;
+					}
+				}
+				.image{
+					text-align: center;
+					margin-bottom: -99px;
+					position: relative;
+					&:after{
+						content: " ";
+						display: block;
+						height: 76px;
+						background: url(../images/water_therapy/shower_technology/overlay.png) repeat-x;
+						position: absolute;
+						bottom: -30px;
+						left: 0;
+						width: 100%;
+					}
+					img{
+						margin: 0 auto;
+					}
+				}
+				h3{
+					color: $water-therapy-green;
+					text-transform: uppercase;
+					font-weight: 300;
+					text-align: center;
+					letter-spacing: 0.17em;
+					margin: 20px 0;
+				}
+				ul{
+					padding-top: 20px;
+					li{
+						padding-left: 10px;
+						padding-right: 10px;
+						margin-bottom: 10px;
+					}
+				}
+				.text{
+					max-width: 305px;
+    			margin: 0 auto;
+    			padding: 0 20px;
+				}
+				.icon-wrap{
+					text-align: center;
+					padding-top: 30px;
+					padding-bottom: 10px;
+					position: relative;
+					.icon{
+						width: 55px;
+						height: 55px;
+						fill: #cacaca;
+					}
+					&:after{
+						content: " ";
+						width: 22px;
+						height: 1px;
+						background: #cacaca;
+						position: absolute;
+						bottom: 0px;
+						left: 50%;
+						margin-left: -11px;
+					}
+				}
+				.see-product{
+					display: inline-block;
+					padding: 5px 18px;
+					text-transform: uppercase;
+					background: white;
+					color: black;
+					text-decoration: none;
+					&:hover{
+						background: $water-therapy-green;						
+					}
+				}
+				.view-video{
+					color: $water-therapy-green;
+					text-transform: uppercase;
+					font-weight: 400;
+					.icon{
+						vertical-align: middle;
+						margin-right: 5px;
+						width: 40px;
+						height: 40px;
+						fill: $water-therapy-green;
+					}
+				}				
+				.shower-technology-flip{
+					@include transition(0.6s all ease-out);
+					@include transform-style(preserve-3d);
+					position: relative;
+					width: 320px;
+					min-height: 325.87px;	
+					@media (min-width: $screen-sm){
+						width: 545px;
+						height: 555px;						
+					}
+					.front,
+					.back{
+						@include backface-visibility(hidden);
+						@include transition(0.6s all ease-out);
+						@include transform-style(preserve-3d);
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 320px;
+						height: auto;
+						min-height: 325.87px;		
+						@media (min-width: $screen-sm){
+							width: 545px;
+							height: 555px;						
+						}
+					}
+					.front{
+						/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,161c23+100 */
+						background: #000000; /* Old browsers */
+						background: -moz-linear-gradient(top,  #000000 0%, #000000 50%, #10151B 100%); /* FF3.6-15 */
+						background: -webkit-linear-gradient(top,  #000000 0%, #000000 50%,#10151B 100%); /* Chrome10-25,Safari5.1-6 */
+						background: linear-gradient(to bottom,  #000000 0%, #000000 50%,#10151B 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#10151B',GradientType=0 ); /* IE6-9 */
+						
+						padding: 0 0 30px;
+						z-index: 2;
+						@include transform(rotateY(0deg));
+					}
+					.back{
+						background: #000000; /* Old browsers */
+						background: -moz-linear-gradient(top,  #000000 0%, #10151B 100%); /* FF3.6-15 */
+						background: -webkit-linear-gradient(top,  #000000 0%,#10151B 100%); /* Chrome10-25,Safari5.1-6 */
+						background: linear-gradient(to bottom,  #000000 0%,#10151B 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#10151B',GradientType=0 ); /* IE6-9 */
+
+						@include transform(rotateY(-180deg));
+						overflow: hidden;
+						.video{
+							overflow: hidden;
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							@include transform(translateX(-50%) translateY(-50%));
+							width: 574.59px;
+							height: 325.87px;	
+							@media (min-width: $screen-sm){
+								width: 978.6px;
+								height: 555px;
+							}	
+							iframe{
+								position: relative;
+								z-index: 1;
+								width: 574.59px;
+								height: 325.87px;	
+								@media (min-width: $screen-sm){
+									width: 978.6px;
+									height: 555px;
+								}								
+							}
+							&:before{
+								//content: " ";
+								display: block;
+								width: 100%;
+								height: 100%;
+								position: absolute;
+								top: 0;
+								left: 0;
+								opacity: 0;
+								z-index: 1;
+								cursor: pointer;
+							}	
+						}						
+					}
+				}//.shower-technology-flip
+
+				&.active{
+					.shower-technology-flip{
+						//@include transform(rotateY(180deg));
+						.back{
+							@include transform(rotateY(0deg));
+						}
+						.front{
+							@include transform(rotateY(180deg));										
+						}
+					}
+				}
+			}
+		}
+	}//.main
 }
 @include keyframes(video_hide){
 	0%{
@@ -503,5 +1818,222 @@ body.water-therapy{
 	100%{
 		opacity: 0;
 		visibility: hidden;
+	}
+}
+@include keyframes(slide_in){
+	0%{
+		opacity: 0;
+		@include transform(translate3d(-738px,0,0));
+	}
+	100%{
+		opacity: 1;
+		@include transform(translate3d(0,0,0));
+	}
+}
+@include keyframes(slide_out){
+	0%{
+		opacity: 1;
+		@include transform(translate3d(0,0,0));
+	}
+	100%{		
+		opacity: 0;
+		@include transform(translate3d(738px,0,0));
+	}
+}
+@media (min-width:$screen-md) {
+	@include keyframes(slide_in){
+		0%{
+			opacity: 0;
+			@include transform(translate3d(-1200px,0,0));
+		}
+		100%{
+			opacity: 1;
+			@include transform(translate3d(0,0,0));
+		}
+	}
+	@include keyframes(slide_out){
+		0%{
+			opacity: 1;
+			@include transform(translate3d(0,0,0));
+		}
+		100%{		
+			opacity: 0;
+			@include transform(translate3d(1200px,0,0));
+		}
+	}
+}
+@include keyframes(flip_top_in){
+	0%{
+		opacity: 0;
+		@include transform(rotateX(180deg));
+	}
+	50%{
+		opacity: 1;
+		@include transform(rotateX(74deg));
+	}
+	100%{
+		opacity: 1;
+		@include transform(rotateX(0deg));	
+	}
+}
+@include keyframes(flip_top_out){
+	0%{
+		opacity: 1;
+		@include transform(rotateX(0deg));	
+	}
+	50%{
+		opacity: 1;
+		@include transform(rotateX(-106deg));
+	}
+	100%{		
+		opacity: 0;
+		@include transform(rotateX(-180deg));
+	}
+}
+@include keyframes(flip_left_in){
+	0%{
+		opacity: 0;
+		@include transform(rotateY(180deg));
+	}
+	50%{
+		opacity: 1;
+		@include transform(rotateY(74deg));
+	}
+	100%{
+		opacity: 1;
+		@include transform(rotateY(0deg));	
+	}
+}
+@include keyframes(flip_left_out){
+	0%{
+		opacity: 1;
+		@include transform(rotateY(0deg));	
+	}
+	50%{
+		opacity: 1;
+		@include transform(rotateY(-106deg));
+	}
+	100%{		
+		opacity: 0;
+		@include transform(rotateY(-180deg));
+	}
+}
+@include keyframes(flip_right_in){
+	0%{
+		opacity: 0;
+		@include transform(rotateY(-180deg));
+	}
+	50%{
+		opacity: 1;
+		@include transform(rotateY(-106deg));
+	}
+	100%{
+		opacity: 1;
+		@include transform(rotateY(0deg));	
+	}
+}
+@include keyframes(flip_right_out){
+	0%{
+		opacity: 1;
+		@include transform(rotateY(0deg));	
+	}
+	50%{
+		opacity: 1;
+		@include transform(rotateY(74deg));
+	}
+	100%{		
+		opacity: 0;
+		@include transform(rotateY(180deg));
+	}
+}
+@include keyframes(index_update_up){
+	0%{
+		z-index: 1;		
+	}
+	50%{
+		z-index: 1;
+	}
+	51%{
+		z-index: 5;
+	}
+	100%{
+		z-index: 5;
+	}
+}
+@include keyframes(index_update_down){
+	0%{
+		z-index: 5;		
+	}
+	50%{
+		z-index: 5;
+	}
+	51%{
+		z-index: 1;
+	}
+	100%{
+		z-index: 1;
+	}
+}
+@include keyframes(slide_up_in){
+	0%{
+		opacity: 0;
+		@include filter(blur(7px));
+		@include transform(translate3d(0,100%,0));
+	}
+	99.99%{
+		opacity: 1;
+		@include filter(blur(0px));
+		@include transform(translate3d(0,-50%,0));
+	}
+	100%{
+		opacity: 1;
+		@include transform(translate3d(0,-50%,0));
+	}
+}
+@include keyframes(slide_up_out){
+	0%{
+		opacity: 1;
+		//@include filter(blur(0px));
+		@include transform(translate3d(0,-50%,0));
+	}
+	100%{		
+		opacity: 0;
+		//@include filter(blur(7px));
+		@include transform(translate3d(0,-100%,0));
+	}
+}
+@include keyframes(card_in){
+	0%{
+		opacity: 1;
+		@include filter(blur(7px));
+		@include transform(translateY(615px) translateZ(0) scale(0.8));
+	}
+	50%{
+		opacity: 1;
+		z-index: 1;
+		@include filter(blur(0));
+		@include transform(translateY(0) translateZ(0) scale(0.8));
+	}
+	100%{		
+		opacity: 1;
+		z-index: 2;
+		@include transform(translateY(0) translateZ(0) scale(1));
+	}
+}
+@include keyframes(card_out){
+	0%{
+		opacity: 1;
+		@include transform(translateY(0) translateZ(0) scale(1));		
+	}
+	50%{
+		opacity: 1;
+		@include filter(blur(0));
+		@include transform(translateY(0) translateZ(0) scale(0.8));
+	}
+	100%{		
+		opacity: 1;
+		z-index: 1;
+		@include filter(blur(7px));
+		@include transform(translateY(-615px) translateZ(0) scale(0.8));
 	}
 }

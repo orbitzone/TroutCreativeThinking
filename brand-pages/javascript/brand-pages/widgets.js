@@ -56,7 +56,9 @@ var player = {
       playerVars: {
         showinfo: 0,
         modestbranding: 0,
-        rel: 0
+        rel: 0,
+        html5: 1,
+        wmmode: 'transparent'
         /*controls: 0,
         modestbranding: 1,
         rel: 0,

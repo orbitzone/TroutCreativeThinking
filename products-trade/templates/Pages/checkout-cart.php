@@ -139,10 +139,6 @@
 										<div class="form-group half select-previous-address no-space-bottom">
 											<select name="receiving_previousaddress" class="" id="receiving_previousaddress" required>
 												<option value="">Select previous address</option>
-												<option value="114">114 Burwood Hwy</option>
-												<option value="434">434 Burwood Hwy</option>
-												<option value="545">545 Burwood Hwy</option>
-												<option value="656">656 Burwood Hwy</option>
 											</select>
 											<div class="clear-fix"></div>
 											<div class="arrow-triangle"></div>
@@ -254,7 +250,7 @@
 								<div id="order-comments">	
 									<div class="form-group full space-above">
 											<label for="pickup_ordercomments"><h3>Order Comments</h3></label>
-											<textarea name="pickup_ordercomments" rows="8" id="pickup_ordercomments" required></textarea>
+											<textarea name="pickup_ordercomments" rows="8" id="pickup_ordercomments"></textarea>
 										</div>
 										<div class="form-group full space-below">
 											<ul class="radio-list">

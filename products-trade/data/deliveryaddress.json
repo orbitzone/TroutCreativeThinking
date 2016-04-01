@@ -1,52 +1,52 @@
 [
 	{
-		"value": "144BurwoodHwy",
-		"name": "144 Burwood Hwy",
-		"streetaddress": "144 Burwood Hwy",
-		"suburb": "Burwood",
+		"value": "144ZZZHwy",
+		"name": "144 ZZZ Hwy",
+		"streetaddress": "144 ZZZ Hwy",
+		"suburb": "ZZZ",
 		"state": "VIC",
 		"postcode": "3030",
 		"contactname": "John Smith",
-		"phone": "(03) 9898 7878"
+		"phone": "(03) 1212 7878"
 	},
 	{
 		"value": "144AAAHwy",
 		"name": "144 AAA Hwy",
 		"streetaddress": "144 AAA Hwy",
 		"suburb": "AAA",
-		"state": "VIC",
+		"state": "TAS",
 		"postcode": "3030",
-		"contactname": "John Smith",
-		"phone": "(03) 9898 7878"
+		"contactname": "AAA Smith",
+		"phone": "(03) 2323 7878"
 	},
 	{
-		"value": "144BurwoodHwy",
-		"name": "144 Burwood Hwy",
-		"streetaddress": "144 Burwood Hwy",
-		"suburb": "Burwood",
-		"state": "VIC",
+		"value": "144BBBHwy",
+		"name": "144 BBB Hwy",
+		"streetaddress": "144 BBB Hwy",
+		"suburb": "BBB",
+		"state": "ACT",
 		"postcode": "3030",
-		"contactname": "John Smith",
-		"phone": "(03) 9898 7878"
+		"contactname": "BBB Smith",
+		"phone": "(03) 3434 7878"
 	},
 	{
-		"value": "144BurwoodHwy",
-		"name": "144 Burwood Hwy",
-		"streetaddress": "144 Burwood Hwy",
-		"suburb": "Burwood",
-		"state": "VIC",
+		"value": "144DDDHwy",
+		"name": "144 DDD Hwy",
+		"streetaddress": "144 DDD Hwy",
+		"suburb": "DDD",
+		"state": "QLD",
 		"postcode": "3030",
-		"contactname": "John Smith",
-		"phone": "(03) 9898 7878"
+		"contactname": "DDDDD Smith",
+		"phone": "(03) 4545 7878"
 	},
 	{
-		"value": "144BurwoodHwy",
-		"name": "144 Burwood Hwy",
-		"streetaddress": "144 Burwood Hwy",
-		"suburb": "Burwood",
-		"state": "VIC",
+		"value": "144EEEHwy",
+		"name": "144 EEE Hwy",
+		"streetaddress": "144 EEE Hwy",
+		"suburb": "EEE",
+		"state": "NSW",
 		"postcode": "3030",
-		"contactname": "John Smith",
-		"phone": "(03) 9898 7878"
+		"contactname": "EEE Smith",
+		"phone": "(03) 5656 7878"
 	}
 ]

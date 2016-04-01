@@ -96,6 +96,46 @@ $(document).ready(function() {
 		}
 		
 	);
+
+    /*
+    POPULATE DROP DOWN MENU - PICK UP CONTACT
+    */
+    $.getJSON('data/deliveryaddress.json', function(data) {
+        var alloptions = "";
+      $.each(data, function(key, val) {
+
+        alloptions += "<option value='" + val.value + "' ";
+        alloptions += "data-name='" + val.name + "' ";
+        alloptions += "data-streetaddress='" + val.streetaddress + "' ";
+        alloptions += "data-suburb='" + val.suburb + "' ";
+        alloptions += "data-state='" + val.state + "' ";
+        alloptions += "data-postcode='" + val.postcode + "' ";
+        alloptions += "data-contactname='" + val.contactname + "' ";
+        alloptions += "data-phone='" + val.phone + "' ";
+        alloptions += ">";
+        alloptions += val.name;
+        alloptions += "</option>";
+        
+      });
+      $("#receiving_previousaddress").append(alloptions).selectric();
+    });
+
+
+    /*
+    HANDLE SELECT - PREVIOUS DELIVERY ADDRESS
+    */
+    $("#receiving_previousaddress").change(
+        function(){
+            $("#receiving_address").val($(this).find(':selected').data('streetaddress'));
+            $("#receiving_suburb").val($(this).find(':selected').data('suburb'));
+            $("#receiving_state").val($(this).find(':selected').data('state')).selectric("refresh");;
+            $("#receiving_postcode").val($(this).find(':selected').data('postcode'));
+            $("#receiving_name").val($(this).find(':selected').data('contactname'));
+            $("#receiving_phone").val($(this).find(':selected').data('phone'));
+
+            $("#receiving_address,#receiving_suburb,#receiving_state,#receiving_postcode,#receiving_name,#receiving_phone").addClass("valid").removeClass("error")
+
+        });
     /*
     JQUERY VALIDATE
     */

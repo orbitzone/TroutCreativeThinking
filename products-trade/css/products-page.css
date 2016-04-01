@@ -922,6 +922,7 @@
 #product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group ul.radio-list li label .radio-button {
   margin-right: 10px;
   position: relative;
+  top: 4px;
 }
 #product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group ul.radio-list li label .radio-button input[type=radio] {
   -webkit-opacity: 0;

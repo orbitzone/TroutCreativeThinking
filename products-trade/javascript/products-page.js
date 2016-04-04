@@ -43,28 +43,37 @@ $(document).ready(function() {
                     }
                 });
                 if (totalresults) {
-                    output = '<header>' + totalresults + ' location/s found</header>' + output;
+                    output = '<header>Nearest Stores</header>' + output;
                 } else {
                     output = '<header>Nothing found</header>';
                 }
                 $('#pickupbranch-results').html(output);
+                $('#pickupbranch-results').addClass("active");
+
                 $(".one-result").click(function() {
-                    $("#branchinfo-address").html("<h6>Branch Address</h6>" + $(this).children(".branch-address").html());
-                    $("#branchinfo-phone").html("<h6>Branch Phone</h6>" + $(this).children(".branch-phone").html());
+                    $("#branchinfo-details").html("<h6>" + $(this).children(".branch-name").html() +  "</h6>" + $(this).children(".branch-address").html());
+                    $("#branchinfo-actions").addClass("action-change");
                     $("#pickup_branch").val($(this).children(".branch-name").html());
                     $(".branch-info-autofill").addClass("active");
                     $('#pickupbranch-results').html("");
+                    $('#pickupbranch-results').removeClass("active");
                 });
             });
-        } else {
-            $("#pickupbranch-results").html("min 3 characters required");
+        }
+        else if ($(this).val().length == 0) {
+            $('#pickupbranch-results').removeClass("active");
+        }
+
+         else {
+            $("#pickupbranch-results").html("<header>Min. 3 characters required</header>");
+            $('#pickupbranch-results').addClass("active");
         }
     });
     /*
     INIT DATE PICKER
     */
     $("#receiving_date").datepicker({
-        dateFormat: "dd/mm/yy"
+        dateFormat: "DD, dd M yy"
     });
     $("#anim").change(function() {
         $("#receiving_date").datepicker("option", "showAnim", "fadeIn");
@@ -76,48 +85,55 @@ $(document).ready(function() {
     /*
     POPULATE DROP DOWN MENU - PICK UP CONTACT
     */
-	$.getJSON('data/pickupcontacts.json', function(data) {
-		var alloptions = "";
-	  $.each(data, function(key, val) {
-	  	alloptions += "<option value='" + val.value + "' data-name='" + val.name + "' data-phone='" + val.phone + "'>";
-	  	alloptions += val.name;
-	  	alloptions += "</option>";
-	  	
-	  });
-	  $("#pickup_previouscontact").append(alloptions).selectric();
-	});
-	/*
-	HANDLE SELECT - PICK UP CONTACT
-	*/
-	$("#pickup_previouscontact").change(
-		function(){
-			$("#pickup_name").val($(this).find(':selected').data('name'));
-			$("#pickup_phone").val($(this).find(':selected').data('phone'));
-		}
-		
-	);
+    $.getJSON('data/pickupcontacts.json', function(data) {
+        var alloptions = "";
+        $.each(data, function(key, val) {
+            alloptions += "<option value='" + val.value + "' data-name='" + val.name + "' data-phone='" + val.phone + "'>";
+            alloptions += val.name;
+            alloptions += "</option>";
+
+        });
+        $("#pickup_previouscontact").append(alloptions).selectric();
+    });
+    /*
+    RECEIVING GOODS SECTION - HANDLE SELECT - PICK UP CONTACT
+    */
+    $("#pickup_previouscontact").change(
+        function() {
+            $("#pickup_name").val($(this).find(':selected').data('name'));
+            $("#pickup_phone").val($(this).find(':selected').data('phone'));
+        }
+
+    );
+    /*
+    RECEIVING GOODS SECTION - CLEAR VALUES WHEN "ENTER NEW CONTACT" IS CLICKED
+    */
+    $(".action-enter-new-contact").click(function() {
+        $("#pickup_name").val("");
+        $("#pickup_phone").val("");
+    });
 
     /*
     POPULATE DROP DOWN MENU - PICK UP CONTACT
     */
     $.getJSON('data/deliveryaddress.json', function(data) {
         var alloptions = "";
-      $.each(data, function(key, val) {
+        $.each(data, function(key, val) {
 
-        alloptions += "<option value='" + val.value + "' ";
-        alloptions += "data-name='" + val.name + "' ";
-        alloptions += "data-streetaddress='" + val.streetaddress + "' ";
-        alloptions += "data-suburb='" + val.suburb + "' ";
-        alloptions += "data-state='" + val.state + "' ";
-        alloptions += "data-postcode='" + val.postcode + "' ";
-        alloptions += "data-contactname='" + val.contactname + "' ";
-        alloptions += "data-phone='" + val.phone + "' ";
-        alloptions += ">";
-        alloptions += val.name;
-        alloptions += "</option>";
-        
-      });
-      $("#receiving_previousaddress").append(alloptions).selectric();
+            alloptions += "<option value='" + val.value + "' ";
+            alloptions += "data-name='" + val.name + "' ";
+            alloptions += "data-streetaddress='" + val.streetaddress + "' ";
+            alloptions += "data-suburb='" + val.suburb + "' ";
+            alloptions += "data-state='" + val.state + "' ";
+            alloptions += "data-postcode='" + val.postcode + "' ";
+            alloptions += "data-contactname='" + val.contactname + "' ";
+            alloptions += "data-phone='" + val.phone + "' ";
+            alloptions += ">";
+            alloptions += val.name;
+            alloptions += "</option>";
+
+        });
+        $("#receiving_previousaddress").append(alloptions).selectric();
     });
 
 
@@ -125,7 +141,7 @@ $(document).ready(function() {
     HANDLE SELECT - PREVIOUS DELIVERY ADDRESS
     */
     $("#receiving_previousaddress").change(
-        function(){
+        function() {
             $("#receiving_address").val($(this).find(':selected').data('streetaddress'));
             $("#receiving_suburb").val($(this).find(':selected').data('suburb'));
             $("#receiving_state").val($(this).find(':selected').data('state')).selectric("refresh");;
@@ -147,8 +163,18 @@ $(document).ready(function() {
     */
     $(".action-goto-step2").click(function() {
         //if($("#checkout-cart").valid()){
-        $("#receiving-goods .form-section").slideDown();
-        $("#order-details .form-section").slideUp();
+        $("#order-details .form-section").slideUp(
+            "slow",
+            function() {
+                $("#receiving-goods .form-section").slideDown("slow",
+                    function() {
+                        $('html, body').animate({
+                            scrollTop: $("#receiving-goods").offset().top
+                        }, 500);
+                    }
+                );
+            }
+        );
         $("#order-details .header-section").removeClass("active");
         $("#receiving-goods .header-section").addClass("active");
         //}
@@ -157,60 +183,71 @@ $(document).ready(function() {
     CLOSE STEP 2 AND OPEN STEP 1 
     */
     $(".action-goto-step1").click(function() {
-        $("#receiving-goods .form-section").slideUp();
-        $("#order-details .form-section").slideDown();
+
+        $("#order-details .form-section").slideDown("slow", function() {
+            $("#receiving-goods .form-section").slideUp("slow",           
+             function() {
+                $("#receiving-goods .form-section").slideUp("slow",
+                    function() {
+                        $('html, body').animate({
+                            scrollTop: $("#order-details").offset().top
+                        }, 500);
+                    }
+                );
+            });
+        });
         $("#order-details .header-section").addClass("active");
         $("#receiving-goods .header-section").removeClass("active");
     });
     /*
-    CLEAR VALUES 
+    RECEIVING GOODS SECTION - CLEAR VALUES WHEN "ENTER NEW ADDRESS" IS CLICKED
     */
     $(".action-enter-new-address").click(function() {
         $(".enter-new-address").addClass("active");
         $(".select-previous-address").removeClass("active");
         $("#delivery-address .enter-new-address-text").addClass("active");
         $("#delivery-address .previous-address-text").removeClass("active");
-        $("#delivery-address .inner-form-section").slideDown();
-        $("#delivery-address .pop-title").slideDown();
+        $("#delivery-address .inner-form-section").fadeIn("slow");
+        $("#delivery-address .pop-title").fadeIn("slow");
         $("#receiving_previousaddress,#receiving_address,#receiving_suburb,#receiving_postcode,#receiving_name,#receiving_phone").val("").removeClass("valid").removeClass("error");
         $("#receiving_state").val("VIC").selectric('refresh').removeClass("valid").removeClass("error");
         $("#receiving_previouscontact").val("").selectric('refresh').removeClass("valid").removeClass("error");
-        if ($(window).width() < 768) {
-            $(".enter-new-address-bottom").slideDown();
-            $(".enter-new-address-top").slideUp();
-        }
     });
+    /*
+    RECEIVING GOODS SECTION - PREVIOUS ADDRESS
+    */
     $("#receiving_previousaddress").change(function() {
         $(".select-previous-address").addClass("active");
         $(".enter-new-address").removeClass("active");
         $("#delivery-address .previous-address-text").addClass("active");
         $("#delivery-address .enter-new-address-text").removeClass("active");
-        $("#delivery-address .pop-title").slideDown();
-        $("#delivery-address .inner-form-section").slideDown();
-        if ($(window).width() < 768) {
-            $(".enter-new-address-bottom").slideUp();
-            $(".enter-new-address-top").slideDown();
-        }
+        $("#delivery-address .pop-title").fadeIn("slow");
+        $("#delivery-address .inner-form-section").fadeIn("slow");
     });
+    /*
+    RECEIVING GOOD SECTION - RADIO BUTTON - DELIVERY OR ORDER
+    */
     $("input[name=receiving_receivegoods]").click(function() {
         if (this.value == 'delivery') {
-            $("#pickup-details").slideUp();
-            $("#delivery-details").slideDown();
-            $("#order-comments").slideDown();
+            $("#pickup-details").fadeOut("normal", function() {
+                $("#delivery-details").fadeIn("normal");
+            });
+            $("#order-comments").fadeIn("slow");
             $(".delivery-button").addClass("active");
             $(".pickup-button").removeClass("active");
         }
         if (this.value == 'pickup') {
-            $("#pickup-details").slideDown();
-            $("#delivery-details").slideUp();
-            $("#order-comments").slideDown();
+            $("#delivery-details").fadeOut("normal", function() {
+                $("#pickup-details").fadeIn("normal");
+            });
+            $("#order-comments").fadeIn("slow");
             $(".delivery-button").removeClass("active");
             $(".pickup-button").addClass("active");
         }
     });
     $(".mobile-open-cart-item").click(function() {
         if ($(window).width() < 768) {
-            $(".order-item-wrap").slideToggle();
+            $(".order-item-wrap").fadeToggle("slow");
             $(this).toggleClass("active");
         }
     });
@@ -218,17 +255,11 @@ $(document).ready(function() {
     SET UP WHEN SCREEN RESIZES
     */
     $(window).resize(function() {
-        if ($(window).width() > 757 && $(window).width() < 777) {
-            if ($(window).width() > 767) {
-                $(".order-item-wrap").show();
-            } else {
-                $(".order-item-wrap").hide();
-                $(this).removeClass("active");
-            }
-        }
         if ($(window).width() > 767) {
-            $(".enter-new-address-bottom").slideDown();
-            $(".enter-new-address-top").slideUp();
+            $(".order-item-wrap").show();
+        } else {
+            $(".order-item-wrap").hide();
+            $(this).removeClass("active");
         }
     });
 });

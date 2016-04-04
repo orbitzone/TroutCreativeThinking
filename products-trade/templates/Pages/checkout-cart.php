@@ -15,9 +15,9 @@
 			</div>
 			<div class="col-sm-7 col-sm-pull-5">
 				<div id="order-form" class="padding-top">
-				<header class="main-heading">
-					<h1>Order Summary</h1>
-				</header>
+					<header class="main-heading">
+						<h1>Order Summary</h1>
+					</header>
 					<form id="checkout-cart" action="checkout-cart-success.php">
 						<section id="order-details" class="section-box">
 							<header class="header-section btn-bhv action-goto-step1 active"><h3>1. Details <span class="fa fa-angle-down"></span><span class="fa fa-angle-up"></span></h3></header>
@@ -90,13 +90,13 @@
 											<p>A Reece consultant will call you within 1 business day to confirm your delivery or pickup time frame. Time frames will differ depending on the type of product/s ordered.</p>
 										</div>
 										<div class="inner-half left text-center">
-										<div class="delivery-button picture-button">
-											<label for="receiving_receivegoods_delivery" class="btn-bhv"><div class="icon-delivery"></div><br>Delivery<br><span class="radio-button"></span></label>
+											<div class="delivery-button picture-button">
+												<label for="receiving_receivegoods_delivery" class="btn-bhv"><span class="icon-delivery div"></span><br>Delivery<br><span class="radio-button"></span></label>
 											</div>
 										</div>
 										<div class="inner-half right text-center">
-										<div class="pickup-button picture-button">
-											<label for="receiving_receivegoods_pickup" class="btn-bhv"><div class="icon-pickup"></div><br>Pick up<br><span class="radio-button"></span></label>
+											<div class="pickup-button picture-button">
+												<label for="receiving_receivegoods_pickup" class="btn-bhv"><span class="icon-pickup div"></span><br>Pick up<br><span class="radio-button"></span></label>
 											</div>
 										</div>
 										<div class="radio-inputs clear-fix">
@@ -106,59 +106,48 @@
 									<div class="clear-fix"></div>
 									<!-- START: DELIVERY DETAILS -->
 									<div id="delivery-details">
-										<header><h3>Delivery Details</h3></header>
-										<div class="form-group full">
-											<div class="info bg-info-icon">
-												<h6>Delivery Requirements</h6>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque cum doloremque, necessitatibus et vero reiciendis voluptates dicta eos inventore blanditiis tempora soluta aut minima ullam voluptatem, unde, fugiat provident quidem nisi perspiciatis nihil incidunt! Natus, quas hic voluptatem delectus nobis.</p>
+										<div class="form-group full no-space-top">
+											<div class="info text-light-grey">
+												<p>Your delivery will attract a cartage fee of $5.30</p>
 											</div>
 										</div>
-										<div class="form-group half-big">
-											<label for="receiving_date">Required By</label>
-											<input name="receiving_date" type="text" class="" id="receiving_date" placeholder="dd/mm/yyyy" value="" readonly="readonly" required>
+									<header><h3>Delivery Details</h3></header>
+									<div class="form-group full">
+										<div class="info bg-info-icon">
+											<h6>Delivery Requirements</h6>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque cum doloremque, necessitatibus et vero reiciendis voluptates dicta eos inventore blanditiis tempora soluta aut minima ullam voluptatem, unde, fugiat provident quidem nisi perspiciatis nihil incidunt! Natus, quas hic voluptatem delectus nobis.</p>
 										</div>
-										<div class="form-group half-small">
-											<label for="receiving_time">Time</label>
-											<select name="receiving_time" class="" id="receiving_time" required>
-												<option value="9:30" selected>9:30PM</option>
-												<option value="10:30">10:30PM</option>
-												<option value="11:30">11:30PM</option>
-												<option value="12:30">12:30PM</option>
-												<option value="etc">etc</option>
-											</select>
-										</div>
-										<div class="form-group full">
-											<label for="receiving_previousaddress">Delivery Address</label>
-										</div>
-										<div class="form-group half text-right enter-new-address no-space-bottom enter-new-address-top">
-											<div class="btn blue-button new-address action-enter-new-address">Enter new address</div>
-											<div class="clear-fix"></div>
-											<div class="arrow-triangle"></div>
-											<div class="clear-fix"></div>
-										</div>
-										<div class="form-group half select-previous-address no-space-bottom">
-											<select name="receiving_previousaddress" class="" id="receiving_previousaddress" required>
-												<option value="">Select previous address</option>
-											</select>
-											<div class="clear-fix"></div>
-											<div class="arrow-triangle"></div>
-											<div class="clear-fix"></div>
-										</div>
-										<div class="form-group half text-right enter-new-address no-space-bottom enter-new-address-bottom">
-											<span class="or hidden-xs hidden-sm">OR</span>
-											<div class="btn blue-button new-address action-enter-new-address">Enter new address</div>
-											<div class="clear-fix"></div>
-											<div class="arrow-triangle"></div>
-											<div class="clear-fix"></div>
-										</div>
-									<div id="delivery-address">
-										<div class="inner-form-header form-group full">
-											<div class="pop-title">
-												<h6 class="enter-new-address-text">Enter New Address</h6>
-												<h6 class="previous-address-text">Previous Address</h6>
-											</div>
-										</div>
+									</div>
+									<div class="form-group half-big">
+										<label for="receiving_date">Required By</label>
+										<input name="receiving_date" type="text" class="" id="receiving_date" placeholder="Select date" value="" readonly="readonly" required>
+									</div>
+									<div class="form-group half-small">
+										<label for="receiving_time">Time</label>
+										<select name="receiving_time" class="" id="receiving_time" required>
+											<option value="9:30" selected>9:30PM</option>
+											<option value="10:30">10:30PM</option>
+											<option value="11:30">11:30PM</option>
+											<option value="12:30">12:30PM</option>
+											<option value="etc">etc</option>
+										</select>
+									</div>
+									<div class="form-group full">
+										<label for="receiving_previousaddress">Delivery Address</label>
+									</div>
+									<div class="form-group half select-previous-address no-space-top">
+										<select name="receiving_previousaddress" class="" id="receiving_previousaddress" required>
+											<option value="">Select previous address</option>
+										</select>
 										<div class="clear-fix"></div>
+									</div>
+									<div class="form-group half text-right enter-new-address no-space-top enter-new-address-bottom">
+										<span class="or hidden-xs hidden-sm">OR</span>
+										<div class="btn blue-button new-address action-enter-new-address">Enter new address</div>
+										<div class="clear-fix"></div>
+									</div>
+									<div class="clear-fix"></div>
+									<div id="delivery-address">
 										<div class="inner-form-section">
 											<div class="form-group full">
 												<label for="receiving_address">Street Address</label>
@@ -185,94 +174,101 @@
 												<label for="receiving_postcode">Postcode</label>
 												<input name="receiving_postcode" type="text" class="" id="receiving_postcode" required>
 											</div>
-											<div class="form-group full">
-												<label for="receiving_previouscontact">Site Contact</label>
-												<select name="receiving_previouscontact" class="" id="receiving_previouscontact" required>
-													<option value="">Select previous contact</option>
-													<option value="johnsmith">John Smith</option>
-													<option value="janesmith">Jame Smith</option>
-													<option value="etc">Etc</option>
-												</select>
-											</div>
 											<div class="form-group half">
-												<label for="receiving_name">Name</label>
+												<label for="receiving_name">Site Contact Name</label>
 												<input name="receiving_name" type="text" class="" id="receiving_name"  required>
 											</div>
 											<div class="form-group half">
-												<label for="receiving_phone">Phone</label>
+												<label for="receiving_phone">Site Contact Phone</label>
 												<input name="receiving_phone" type="text" class="" id="receiving_phone"  required>
 											</div>
 											<div class="clear-fix"></div>
 										</div>
 									</div>
-										<div class="clear-fix">
-										</div>
-									</div>
-									<!-- END: DELIVERY DETAILS -->
-									<!-- START: PICK UP DETAILS -->
-									<div id="pickup-details">
-										<header><h3>Pick Up Details</h3></header>
-<div class="inner-section">
-	<div class="form-group full">
-		
-		<div class="info branch-info-autofill">
-			<div id="branchinfo-address" class="inner-half left text-left">
-			</div>
-			<div id="branchinfo-phone" class="inner-half right text-left">
-			</div>
-			<div class="clear-fix"></div>
-		</div>
-
-		<label for="pickup_branch">Pick Up Branch</label>
-		<input name="pickup_branch" type="text" class="pickup_branch search-box" id="pickup_branch" required>
-		<div class="clear-fix"></div>
-		<div id="pickupbranch-results">
-		</div>
-	</div>
-	<div class="clear-fix"></div>
-</div>
-										<div class="form-group full">
-											<label for="pickup_previouscontact">Pick Up Contact</label>
-											<select name="pickup_previouscontact" class="" id="pickup_previouscontact" required>
-												<option value="">Select previous contact</option>
-											</select>
-										</div>
-										<div class="form-group half">
-											<label for="pickup_name">Name</label>
-											<input name="pickup_name" type="text" class="" id="pickup_name"  required>
-										</div>
-										<div class="form-group half">
-											<label for="pickup_phone">Phone</label>
-											<input name="pickup_phone" type="text" class="" id="pickup_phone"  required>
-										</div>
-										<div class="clear-fix"></div>
-									</div>
-								<div id="order-comments">	
-									<div class="form-group full space-above">
-											<label for="pickup_ordercomments"><h3>Order Comments</h3></label>
-											<textarea name="pickup_ordercomments" rows="8" id="pickup_ordercomments"></textarea>
-										</div>
-										<div class="form-group full space-below">
-											<ul class="radio-list">
-												<li> <label for="pickup_notification_none"><span class="radio-button"><input type="radio" name="pickup_notification" id="pickup_notification_none" value="none" checked></span>None</label></li>
-												<li> <label for="pickup_notification_email"><span class="radio-button"><input type="radio" name="pickup_notification" id="pickup_notification_email" value="email"></span>Email</label></li>
-												<li><label for="pickup_notification_sms"><span class="radio-button"><input type="radio" name="pickup_notification" id="pickup_notification_sms" value="sms"> </span>SMS</label></li>
-											</ul>
-										</div>
+									<div class="clear-fix"></div>
 								</div>
-									<div class="form-group half text-left">
-										<div class="btn next-button grey-button action-goto-step1" id="step2previous">Previous</div>
+								<!-- END: DELIVERY DETAILS -->
+								<!-- START: PICK UP DETAILS -->
+								<div id="pickup-details">
+									<div class="form-group full no-space-top">
+										<div class="info text-light-grey">
+											<p>Your delivery will attract a cartage fee of $5.30</p>
+										</div>
 									</div>
-									<div class="form-group half text-right">
-										<button class="btn next-button blue-button">Submit Order</button>
+								<header><h3>Pick Up Details</h3></header>
+								<div class="inner-section transition-height">
+									<div class="form-group full transition-height">
+										
+										<div class="info branch-info-autofill transition-height">
+											<div id="branchinfo-details" class="inner-half left text-left">
+											</div>
+											<div id="branchinfo-actions" class="inner-half right text-left">
+											</div>
+											<div class="clear-fix"></div>
+										</div>
+										<label for="pickup_branch">Pick Up Branch</label>
+										<input name="pickup_branch" type="text" class="pickup_branch search-box" id="pickup_branch" required>
+										<div class="clear-fix"></div>
+										<div id="pickupbranch-results" class="transition-height">
+										</div>
+									</div>
+									<div class="clear-fix"></div>
+								</div>
+								<div class="form-group full no-space-bottom space-above">
+									<label>Pick Up Contact</label>
+								</div>
+								<div class="clear-fix"></div>
+								<div class="form-group half select-previous-address no-space-top">
+									<select name="pickup_previouscontact" class="" id="pickup_previouscontact" required>
+										<option value="">Select previous contact</option>
+									</select>
+									<div class="clear-fix"></div>
+								</div>
+								<div class="form-group half text-right enter-new-contact no-space-top">
+									<span class="or hidden-xs hidden-sm">OR</span>
+									<div class="btn blue-button new-contact action-enter-new-contact">Enter new contact</div>
+									<div class="clear-fix"></div>
+								</div>
+								<div class="clear-fix"></div>
+								<div class="inner-section">
+									<div class="form-group half">
+										<label for="pickup_name">Name</label>
+										<input name="pickup_name" type="text" class="" id="pickup_name"  required>
+									</div>
+									<div class="form-group half">
+										<label for="pickup_phone">Phone</label>
+										<input name="pickup_phone" type="text" class="" id="pickup_phone"  required>
 									</div>
 									<div class="clear-fix"></div>
 								</div>
 							</div>
-						</section>
-					</form>
-				</div>
-			</div>
+							<div id="order-comments">
+								<div class="form-group full space-above">
+									<label for="pickup_ordercomments"><h3>Order Comments</h3></label>
+									<textarea name="pickup_ordercomments" rows="8" id="pickup_ordercomments" placeholder="e.g. If I'm not at home, please leave goods in garage."></textarea>
+								</div>
+								<div class="form-group full space-below">
+									<label>Order Notification</label>
+									<ul class="radio-list">
+										<li> <label for="pickup_notification_none"><span class="radio-button"><input type="radio" name="pickup_notification" id="pickup_notification_none" value="none" checked></span>None</label></li>
+										<li> <label for="pickup_notification_email"><span class="radio-button"><input type="radio" name="pickup_notification" id="pickup_notification_email" value="email"></span>Email</label></li>
+										<li><label for="pickup_notification_sms"><span class="radio-button"><input type="radio" name="pickup_notification" id="pickup_notification_sms" value="sms"> </span>SMS</label></li>
+									</ul>
+								</div>
+							</div>
+							<div class="form-group half text-left">
+								<div class="btn next-button grey-button action-goto-step1" id="step2previous">Previous</div>
+							</div>
+							<div class="form-group half text-right">
+								<button class="btn next-button blue-button">Submit Order</button>
+							</div>
+							<div class="clear-fix"></div>
+						</div>
+					</div>
+				</section>
+			</form>
 		</div>
 	</div>
+</div>
+</div>
 </section>

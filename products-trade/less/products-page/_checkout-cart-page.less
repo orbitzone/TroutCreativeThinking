@@ -19,6 +19,9 @@
 			font-size: .8em;
 			padding-top:5px;
 		}
+		.transition-height{
+			.transition(height 1s ease);
+		}
 		form#checkout-cart{
 			select {
 				-webkit-appearance: none;
@@ -42,13 +45,16 @@
 					}
 				}
 			}
-			.selectric-items li{
-				background:@white;
-				font-size:14px;
-				.gothamBook;
-				&:hover{
-					background:@bg-light-grey;
-					cursor:pointer;
+			.selectric-items{
+				.box-shadow(@shadow);
+				li{
+					background:@white;
+					font-size:14px;
+					.gothamBook;
+					&:hover{
+						background:@bg-light-grey;
+						cursor:pointer;
+					}
 				}
 			}
 			#order-details,#receiving-goods{
@@ -123,26 +129,44 @@
 
 			}
 			#pickupbranch-results{
-				max-height:180px;
+				max-height:148px;
 				overflow-y: scroll;
+				border-left:solid 1px @border-grey;
+				border-right:solid 1px @border-grey;
+				border-bottom:solid 1px @border-grey;
+				.opacity(0);
+				.transition(opacity 1s ease);
+				&.active{
+					.opacity(1);
+				}
+				.box-shadow(@shadow);
 				header{
-					background:@bg-light-grey;
+					background:@bg-mid-grey;
+					color:@black;
+					font-size:13px;
+					padding:2px 15px;
 				}
 				.one-result{
 					background:@white;
-					padding:5px 15px;
+					padding:10px 15px;
+					border-bottom:solid 1px @border-light-grey;
 					.branch-name{
 						.gothamBold;
 						display:block;
+						color:@text-blue;
 					}
 					.branch-address{
 						display:inline-block;
 						width:70%;
+						color:@icon-grey;
+						font-size:13px;
 					}
 					.branch-phone{
 						display:inline-block;
 						width:30%;
 						text-align:right;
+						color:@icon-grey;
+						font-size:13px;
 					}
 					&:hover{
 						cursor:pointer;
@@ -169,7 +193,8 @@
 				}
 				.inner-form-section{
 					padding:20px;
-					background: @bg-light-grey;
+					background: @bg-dark-grey;
+					margin-top:20px;
 				}
 				.form-group{
 					float:left;
@@ -233,20 +258,11 @@
 						padding-bottom:0;
 						margin-bottom:0;
 					}
-					&.select-previous-address{
-						&.active{
-							.arrow-triangle{
-								height:22px;
-								background:url("../templates/images/arrow-triangle.png") no-repeat center bottom;
-								width:100%;
-								background-size: 24px 12px;
-							}						
-						}
+					&.no-space-top{
+						padding-top:0;
+						margin-top:0;
 					}
 					&.enter-new-address{
-						&.enter-new-address-top{
-							display:none;
-						}
 						.or{
 							display:block;
 							float:left;
@@ -265,17 +281,25 @@
 								width:100%;
 							}
 						}
-						&.active{
-							.arrow-triangle{
-								height:22px;
-								background:url("../templates/images/arrow-triangle.png") no-repeat center bottom;
-								width:80%;
-								float:right;
-								background-size: 24px 12px;
-								@media (max-width: @screen-xs-max) {
-									width:100%;
-								}
-							}						
+					}
+					&.enter-new-contact{
+						.or{
+							display:block;
+							float:left;
+							width:20%;
+							text-align:center;
+							padding-right:20px;
+							font-size:18px;
+							padding-top:14px;
+							.gothamBold;
+						}
+						.btn.new-contact{
+							width:80%;
+							float:left;
+							padding:20px;
+							@media (max-width: @screen-sm-max) {
+								width:100%;
+							}
 						}
 					}
 					&.inner-form-header{
@@ -313,8 +337,11 @@
 						}
 					}
 					input,textarea,select{
-						font-size:16px;
+						font-size:14px;
 						background-color: @white;
+						@media (max-width: @screen-xs-max) {
+							font-size:16px;
+						}
 					}
 					select, input[type=email],input[type=text],input[type=date]{
 						height:55px;
@@ -343,15 +370,14 @@
 							border:solid 1px red;
 						}
 						&.valid{
-							background:url("../templates/images/icon-greentick.png") no-repeat;
+							background:@white url("../templates/images/icon-greentick.png") no-repeat;
 							background-size:15px;
 							background-position:right 12px top 50%;
 						}
 						&.search-box{
-							background:url("../templates/images/icon-bluesearch.png") no-repeat;
+							background:@white url("../templates/images/icon-bluesearch.png") no-repeat;
 							background-size:55px;
 							background-position:right 0px top 50%;
-							background-color:@white;
 						}
 					}
 					textarea{
@@ -434,6 +460,7 @@
 						border:solid 1px @border-grey;
 						padding:50px 30px 30px 30px;
 						margin:10px;
+						margin-bottom:0;
 						label{
 							text-transform: uppercase;
 							color:@icon-grey;

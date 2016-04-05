@@ -34,12 +34,14 @@
 					padding-top:2px;
 					.gothamBook;
 					font-size:14px;
+					height:auto;
 				}
 				.button{
 					top:15px;
 					background:url("../templates/images/icon-downarrow.png") no-repeat top center;
 					background-size:15px;
 					right:5px;
+					height:16px;
 					&:after{
 						display:none;
 					}
@@ -119,6 +121,22 @@
 			}
 			#pickup-details{
 				.branch-info-autofill{
+					.inner-half.left{
+						width:70%;
+						@media (max-width: @screen-sm-max) {
+							width:100%;
+							float:none;
+						}
+					}
+					.inner-half.right{
+						width:30%;
+						@media (max-width: @screen-sm-max) {
+							width:100%;
+							float:none;
+							border-top:solid 1px @border-grey;
+							text-align: left;
+						}
+					}
 					#branchinfo-details{
 
 						padding-top:0;
@@ -131,7 +149,12 @@
 						p{
 							margin-bottom:0;
 							font-size:17px;
-						}					
+						}		
+						@media (max-width: @screen-sm-max) {
+							width:100%;
+							float:none;
+							padding-bottom:10px;
+						}	
 					}
 					#branch-info-actions{
 						.action-pickup-address{
@@ -151,7 +174,15 @@
 							&.active{
 									display:inline;
 							}
+							&.action-pickup-address-change{
+								text-decoration: underline;
 
+							}
+							@media (max-width: @screen-sm-max) {
+								width:100%;
+								float:none;
+								text-align:left;
+							}
 						}
 					}
 
@@ -200,6 +231,9 @@
 						width:70%;
 						color:@icon-grey;
 						font-size:13px;
+						@media (max-width: @screen-sm-max) {
+							width:100%;
+						}
 					}
 					.branch-phone{
 						display:inline-block;
@@ -207,11 +241,18 @@
 						text-align:right;
 						color:@icon-grey;
 						font-size:13px;
+						@media (max-width: @screen-sm-max) {
+							width:100%;
+							text-align:left;
+						}
 					}
 					&:hover{
 						cursor:pointer;
 						background:@bg-light-grey;
 					}
+				}
+				@media (max-width: @screen-sm-max) {
+					max-height: 190px;
 				}
 			}
 			.bg-info-icon{

@@ -218,32 +218,25 @@
 
 								<div class="inner-section transition-height">
 									<div class="form-group full transition-height">
-										
 										<div class="info branch-info-autofill transition-height">
 											<div id="branchinfo-details" class="inner-half left text-left">
-
 												<h6 class="branch-name">Plumbing Collingwood</h6>
-
 												<p>2 Collingwood St, Collingwood VIC 3025</p>
 												<p>(03) 1234 5678</p>
-
 											</div>
 											<div id="branch-info-actions" class="inner-half right text-right">
-											<span class="action-pickup-address action-pickup-address-change active">Change</span>
-											<span class="action-pickup-address action-pickup-address-cancel">Cancel <i class="fa fa-times"></i>   </span>
+												<span class="action-pickup-address action-pickup-address-change active">Change</span>
+												<span class="action-pickup-address action-pickup-address-cancel">Cancel <i class="fa fa-times"></i>   </span>
 											</div>
 											<div class="clear-fix"></div>
 										</div>
-
-<div class="branch-info-autocomplete">
-										<label for="pickup_branch">Pick Up Branch</label>
-										<input name="pickup_branch" type="text" class="pickup_branch search-box" id="pickup_branch" autocomplete="false" required>
-										<div class="clear-fix"></div>
-										<div id="pickupbranch-results" class="transition-height">
+										<div class="branch-info-autocomplete">
+											<label for="pickup_branch">Pick Up Branch</label>
+											<input name="pickup_branch" type="text" class="pickup_branch search-box" id="pickup_branch" autocomplete="false" required>
+											<div class="clear-fix"></div>
+											<div id="pickupbranch-results" class="transition-height">
+											</div>
 										</div>
-
-</div>
-
 									</div>
 									<div class="clear-fix"></div>
 								</div>

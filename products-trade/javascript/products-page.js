@@ -33,6 +33,27 @@ var product_pages = {
                     });
             });
         //
+        //BRING UP PICK UP AUTO COMPLETE INPUT FIELD
+        //
+        $(".action-pickup-address-change").click(function(){
+            $(".action-pickup-address-change").fadeOut("fast",
+                function(){ 
+                    $(".action-pickup-address-cancel").fadeIn("fast"); 
+                    $(".action-pickup-address-cancel").addClass("active"); 
+                    $(".action-pickup-address-change").removeClass("active");  
+                });
+            $(".branch-info-autocomplete").fadeIn("fast");
+        });
+        $(".action-pickup-address-cancel").click(function(){
+            $(".action-pickup-address-cancel").fadeOut("fast",
+                function(){ 
+                    $(".action-pickup-address-change").fadeIn("fast");
+                    $(".action-pickup-address-change").addClass("active"); 
+                    $(".action-pickup-address-cancel").removeClass("active");    
+                });
+            $(".branch-info-autocomplete").fadeOut("slow");
+        });
+        //
         //PICK UP BRACH SEARCH AUTO COMPLETE
         //
         $("#pickup_branch").keyup(function() {
@@ -66,12 +87,20 @@ var product_pages = {
                     $('#pickupbranch-results').html(output);
                     $('#pickupbranch-results').addClass("active");
                     $(".one-result").click(function() {
-                        $("#branchinfo-details").html("<h6>" + $(this).children(".branch-name").html() + "</h6>" + $(this).children(".branch-address").html());
+                        $("#branchinfo-details").html("<h6 class=\"branch-name\">" + $(this).children(".branch-name").html() + "</h6><p>" + $(this).children(".branch-address").html() + "</p><p>" + $(this).children(".branch-phone").html() + "</p>");
                         $("#branchinfo-actions").addClass("action-change");
                         $("#pickup_branch").val($(this).children(".branch-name").html());
                         $(".branch-info-autofill").addClass("active");
                         $('#pickupbranch-results').html("");
                         $('#pickupbranch-results').removeClass("active");
+                        $(".branch-info-autocomplete").fadeOut("slow");
+                        $(".action-pickup-address-cancel").fadeOut("fast",
+                            function(){ 
+                                $(".action-pickup-address-change").fadeIn("fast");
+                                $(".action-pickup-address-change").addClass("active"); 
+                                $(".action-pickup-address-cancel").removeClass("active");    
+                            });
+
                     });
                 });
             } else if ($(this).val().length == 0) {

@@ -678,8 +678,42 @@ BREADCRUMB
   padding-left: 10px;
   padding-right: 10px;
 }
-#product-pages .main-section#checkout-cart-section #order-form form#checkout-cart #pickup-details .branch-info-autofill.active {
-  padding-bottom: 15px;
+#product-pages .main-section#checkout-cart-section #order-form form#checkout-cart #pickup-details .branch-info-autofill #branchinfo-details {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#product-pages .main-section#checkout-cart-section #order-form form#checkout-cart #pickup-details .branch-info-autofill #branchinfo-details .branch-name {
+  color: #099ade;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+#product-pages .main-section#checkout-cart-section #order-form form#checkout-cart #pickup-details .branch-info-autofill #branchinfo-details p {
+  margin-bottom: 0;
+  font-size: 17px;
+}
+#product-pages .main-section#checkout-cart-section #order-form form#checkout-cart #pickup-details .branch-info-autofill #branch-info-actions .action-pickup-address {
+  padding-top: 1em;
+  text-transform: uppercase;
+  display: none;
+  color: #099ade;
+  font-family: "Gotham A", "Gotham B";
+  font-style: normal;
+  font-weight: 500;
+  text-align: right;
+}
+#product-pages .main-section#checkout-cart-section #order-form form#checkout-cart #pickup-details .branch-info-autofill #branch-info-actions .action-pickup-address:hover {
+  cursor: pointer;
+  color: #333333;
+}
+#product-pages .main-section#checkout-cart-section #order-form form#checkout-cart #pickup-details .branch-info-autofill #branch-info-actions .action-pickup-address.active {
+  display: inline;
+}
+#product-pages .main-section#checkout-cart-section #order-form form#checkout-cart #pickup-details .branch-info-autofill #branch-info-actions .action-pickup-address.active {
+  display: inline;
+}
+#product-pages .main-section#checkout-cart-section #order-form form#checkout-cart #pickup-details .branch-info-autocomplete {
+  padding-top: 20px;
+  display: none;
 }
 #product-pages .main-section#checkout-cart-section #order-form form#checkout-cart #pickup-details .inner-section {
   margin: 0 10px;
@@ -1074,7 +1108,7 @@ BREADCRUMB
   border: solid 1px #bdbdbd;
   padding: 50px 30px 30px 30px;
   margin: 10px;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 #product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group .picture-button label {
   text-transform: uppercase;

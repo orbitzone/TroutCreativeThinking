@@ -118,8 +118,48 @@
 				}
 			}
 			#pickup-details{
-				.branch-info-autofill.active{
-					padding-bottom:15px;
+				.branch-info-autofill{
+					#branchinfo-details{
+
+						padding-top:0;
+						padding-bottom:0;
+						.branch-name{
+							color:@text-blue;
+							margin-bottom:5px;
+							font-size:20px;
+						}	
+						p{
+							margin-bottom:0;
+							font-size:17px;
+						}					
+					}
+					#branch-info-actions{
+						.action-pickup-address{
+							padding-top:1em;
+							text-transform: uppercase;
+							display:none;
+							color:@text-blue;
+							.gothamMedium;
+							text-align:right;
+							&:hover{
+								cursor:pointer;
+								color:@black-grey;
+							}
+							&.active{
+									display:inline;
+							}
+							&.active{
+									display:inline;
+							}
+
+						}
+					}
+
+				}
+				.branch-info-autocomplete{
+					padding-top:20px;
+					display:none;
+
 				}
 				.inner-section{
 					margin:0 10px;
@@ -451,7 +491,7 @@
 						border:solid 1px @border-grey;
 						padding:50px 30px 30px 30px;
 						margin:10px;
-						margin-bottom:0;
+						margin-bottom:10px;
 						label{
 							text-transform: uppercase;
 							color:@icon-grey;

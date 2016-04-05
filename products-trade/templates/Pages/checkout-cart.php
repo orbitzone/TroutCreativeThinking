@@ -111,7 +111,8 @@
 												<label for="receiving_receivegoods_pickup" class="btn-bhv"><span class="icon-pickup div"></span><br>Pick up<br><span class="radio-button"></span></label>
 											</div>
 										</div>
-										<div class="radio-inputs clear-fix">
+										<div class="clear-fix"></div>
+										<div class="radio-inputs">
 											<input type="radio" name="receiving_receivegoods" id="receiving_receivegoods_pickup" value="pickup" required><input type="radio" name="receiving_receivegoods" id="receiving_receivegoods_delivery" value="delivery" required>
 										</div>
 									</div>
@@ -210,22 +211,39 @@
 											<p>Your delivery will attract a cartage fee of $5.30</p>
 										</div>
 									</div>
-								<header><h3>Pick Up Details</h3></header>
+								<header>
+								<h3>Pick Up Details</h3>
+								<p>Your order has been assigned to:</p>
+								</header>
+
 								<div class="inner-section transition-height">
 									<div class="form-group full transition-height">
 										
 										<div class="info branch-info-autofill transition-height">
 											<div id="branchinfo-details" class="inner-half left text-left">
+
+												<h6 class="branch-name">Plumbing Collingwood</h6>
+
+												<p>2 Collingwood St, Collingwood VIC 3025</p>
+												<p>(03) 1234 5678</p>
+
 											</div>
-											<div id="branchinfo-actions" class="inner-half right text-left">
+											<div id="branch-info-actions" class="inner-half right text-right">
+											<span class="action-pickup-address action-pickup-address-change active">Change</span>
+											<span class="action-pickup-address action-pickup-address-cancel">Cancel <i class="fa fa-times"></i>   </span>
 											</div>
 											<div class="clear-fix"></div>
 										</div>
+
+<div class="branch-info-autocomplete">
 										<label for="pickup_branch">Pick Up Branch</label>
 										<input name="pickup_branch" type="text" class="pickup_branch search-box" id="pickup_branch" autocomplete="false" required>
 										<div class="clear-fix"></div>
 										<div id="pickupbranch-results" class="transition-height">
 										</div>
+
+</div>
+
 									</div>
 									<div class="clear-fix"></div>
 								</div>

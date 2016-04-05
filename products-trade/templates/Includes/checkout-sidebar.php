@@ -1,4 +1,6 @@
-<div id="cart-sidebar" class="padding-top">
+<!--START OF SHOPPING CART SIDEBAR -->
+<div id="cart-sidebar" class="padding-top section">
+	<!--START OF MAIN HEADER -->
 	<header class="mobile-open-cart-item">
 		<div class="info-wrap">
 			<div class="left-col">
@@ -6,99 +8,83 @@
 			</div>
 			<div class="right-col">
 				<div class="edit-link hidden-xs">
-				<a href="#">Edit</a>
+					<a href="#">Edit</a>
 				</div>
 				<div class="total-price-header visible-xs-block">
-				<p>$1155.00</p>
+					<p>$1155.00</p>
 				</div>
 			</div>
 			<div class="clear-fix"></div>
 		</div>
 	</header>
-	<div class="order-item-wrap">
-	<section class="orders-wrap">
-		<ul class="order-items">
-			<li>
-				<div class="info-wrap">
-					<div class="left-col">
-						<div class="quantity">1<span>PKT</span></div>
-						<div class="name">Lorem ipsum dolor sit amet</div>
-						<div class="description">Lorem ipsum dolor sit amet</div>
-						<div class="product-code">123456789</div>
+	<!--END OF MAIN HEADER -->
+	<!--START OF MAIN BODY OF ORDER ITEMS -->
+	<div class="order-item-wrap section">
+		<div class="orders-wrap">
+			<ul class="order-items">
+				<!--LOOP THROUGH ITEMS-->
+				<?php for($i=0;$i<4;$i++){ ?>
+				<li>
+					<div class="info-wrap">
+						<div class="left-col">
+							
+							<div class="product-code">123456789</div>
+							<div class="name">Lorem ipsum dolor sit amet</div>
+							<div class="description">Lorem ipsum dolor sit amet</div>
+							
+						</div>
+						<div class="right-col text-right">
+							<div class="quantity">1<span>PKT</span></div>
+							<div class="price">$3458.45</div>
+						</div>
+						<div class="clear-fix"></div>
 					</div>
-					<div class="right-col ">
-						<div class="price">$5465.45<span>inc.</span></div>
-					</div>
-					<div class="clear-fix"></div>
-				</div>
-			</li>
-			<li>
-				<div class="info-wrap">
+				</li>
+				<?php } ?>
+				<!--END LOOP THROUGH ITEMS-->
+			</ul>
+		</div>
+		<!--START OF SUMMARY SECTION -->
+		<div class="total-section section">
+			<div class="info-wrap">
+				<div class="delivery">
 					<div class="left-col">
-						<div class="quantity">1<span>PKT</span></div>
-						<div class="name">Lorem ipsum dolor sit amet</div>
-						<div class="description">Lorem ipsum dolor sit amet</div>
-						<div class="product-code">123456789</div>
+						<div class="heading-text">Delivery fee</div>
 					</div>
 					<div class="right-col">
-						<div class="price">$5465.45<span>inc.</span></div>
+						<div class="heading-price text-right">$5.00</div>
 					</div>
 					<div class="clear-fix"></div>
 				</div>
-			</li>
-			<li>
-				<div class="info-wrap">
+				<div class="gst">
 					<div class="left-col">
-						<div class="quantity">1<span>PKT</span></div>
-						<div class="name">Lorem ipsum dolor sit amet</div>
-						<div class="description">Lorem ipsum dolor sit amet</div>
-						<div class="product-code">123456789</div>
+						<div class="heading-text">GST</div>
 					</div>
 					<div class="right-col">
-						<div class="price">$5465.45<span>inc.</span></div>
+						<div class="heading-price text-right">$44.00</div>
 					</div>
 					<div class="clear-fix"></div>
 				</div>
-			</li>
-		</ul>
-	</section>
-	<section class="total-section">
-		<div class="info-wrap">
-			<div class="delivery">
-				<div class="left-col">
-					<div class="heading-text">Delivery fee</div>
+				<div class="total">
+					<div class="left-col">
+						<div class="heading-total">Total<span>inc. GST</span></div>
+					</div>
+					<div class="right-col">
+						<div class="total text-right">$1155.00</div>
+					</div>
+					<div class="clear-fix"></div>
 				</div>
-				<div class="right-col">
-					<div class="heading-price text-right">$5.00</div>
-				</div>
-				<div class="clear-fix"></div>
-			</div>
-			<div class="gst">
-				<div class="left-col">
-					<div class="heading-text">GST</div>
-				</div>
-				<div class="right-col">
-					<div class="heading-price text-right">$44.00</div>
-				</div>
-				<div class="clear-fix"></div>
-			</div>
-			<div class="total">
-				<div class="left-col">
-					<div class="heading-total">Total<span>inc. GST</span></div>
-				</div>
-				<div class="right-col">
-					<div class="total text-right">$1155.00</div>
-				</div>
-				<div class="clear-fix"></div>
 			</div>
 		</div>
-	</section>
-	<footer>
-		<div class="info-wrap">
-			<p>Time frames will differ depending on the type of product/s ordered.</p>
-		</div>
-	</footer>
+		<!--END OF SUMMARY SECTION -->
+		<!--START OF FOOTER INFO -->
+		<footer>
+			<div class="info-wrap">
+				<p>Time frames will differ depending on the type of product/s ordered.</p>
+			</div>
+		</footer>
+		<!--END OF FOOTER INFO -->
 	</div>
+	<!--END OF MAIN BODY OF ORDER ITEMS -->
 </div>
-
-
+<!--END OF SHOPPING CART SIDEBAR -->

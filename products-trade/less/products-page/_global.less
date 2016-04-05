@@ -3,19 +3,21 @@
 font-size:15px;
 color: @text-grey;
 
-
-h1,h2,h3,h4,h5,h6{
+.h1,.h2,.h3,.h4,.h5,.h6{
+	display:block;
+}
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 	margin-top:0;
 	padding-top:0;
 	.gothamBold;
 }
-h1{
+h1,.h1{
 	font-size:35px;
 }
-h3{
+h3,.h3{
 	font-size:22px;
 }
-h6{
+h6,.h6{
 	font-size:15px;
 }
 span.div{
@@ -34,17 +36,6 @@ p{
 	}
 }
 
-.breadcrumbs{
-	min-height:40px;
-	p{
-		font-size:15px;
-		line-height: 15px;
-		padding: 12px 0;
-		margin-bottom:0;
-		color: @text-grey;		
-	}
-
-}
 
 .clear, .clear-fix{
 	clear:both;
@@ -100,7 +91,7 @@ ul.inline-list{
 }
 .btn{
 	.border-radius (0px);
-	padding:20px 85px;
+	padding:15px 85px;
 	line-height:1em;
 	font-size:13px;
 	text-transform: uppercase;
@@ -131,6 +122,44 @@ ul.inline-list{
 	background:@white;
 }
 
+/*
+NAVIGATION
+*/
+.subnavbar{
+	.nav{
+		a{
+			.gothamBook;
+			letter-spacing: 0;
+			font-size:13px;
+		}
+	}
+}
+/*
+BREADCRUMB
+*/
+.breadcrumb-section{
+	.breadcrumb-inner{
+	max-width: 1200px;
+    margin: 0 auto;
+	.breadcrumbs{
+		padding:10px 0;
+		margin:0;
+		.gothamBook;
+		li{
+			list-style: none;
+			padding:0;
+			margin:0;
+			a{
+				padding-left:7px;
+				padding-right:7px;
+				font-size:14px;
+				line-height:1em;
+				color:@text-grey;
+			}
+		}
+	}		
+	}
 
+}
 
 

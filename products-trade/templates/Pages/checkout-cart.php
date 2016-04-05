@@ -1,26 +1,33 @@
-<section class="breadcrumbs bg-mid-grey">
-	<div class="container-fluid section-container">
-		<div class="row">
-			<div class="col-xs-12">
-				<p>Checkout</p>
-			</div>
-		</div>
+<!--START BREAD CRUMB -->
+<div class="breadcrumb-section bg-mid-grey section">
+	<div class="breadcrumb-inner">
+		<ul class="breadcrumbs">
+			<li><a href="#">Checkout</a></li>
+		</ul>
 	</div>
-</section>
-<section class="main-section" id="checkout-cart-section">
+</div>
+<!--END BREAD CRUMB -->
+<!--START OF PAGE SECTION -->
+<div class="main-section section" id="checkout-cart-section">
 	<div class="container-fluid section-container">
 		<div class="row">
+			<!--START OF SIDEBAR SECTION -->
 			<div class="col-sm-5 col-sm-push-7 bg-dark-grey bg-sm-blue">
 				<?php include "templates/Includes/checkout-sidebar.php" ?>
 			</div>
-			<div class="col-sm-7 col-sm-pull-5">
+			<!--END OF SIDEBAR SECTION -->
+			<!--START OF MAIN FORM SECTION -->
+			<div class="col-sm-7 col-sm-pull-5 section">
 				<div id="order-form" class="padding-top">
 					<header class="main-heading">
 						<h1>Order Summary</h1>
 					</header>
 					<form id="checkout-cart" action="checkout-cart-success.php">
+						<!--START OF STEP 1 - DETAILS SECTION -->
 						<section id="order-details" class="section-box">
-							<header class="header-section btn-bhv action-goto-step1 active"><h3>1. Details <span class="fa fa-angle-down"></span><span class="fa fa-angle-up"></span></h3></header>
+							<header class="header-section btn-bhv action-goto-step1 active">
+								<h3>1. Details <span class="fa fa-angle-down"></span><span class="fa fa-angle-up"></span></h3>
+							</header>
 							<div class="form-section">
 								<div class="form-group-wrap">
 									<div class="form-group half">
@@ -51,13 +58,14 @@
 									<div class="form-group quarter-big" >
 										<label for="details_state">State</label>
 										<select name="details_state" id="details_state" class="" required>
+											<option value="" selected>State</option>
 											<option value="ACT">ACT</option>
 											<option value="NT">NT</option>
 											<option value="NSW">NSW</option>
 											<option value="Qld">Qld</option>
 											<option value="SA">SA</option>
 											<option value="Tas">Tas</option>
-											<option value="VIC" selected>VIC</option>
+											<option value="VIC">VIC</option>
 											<option value="WA">WA</option>
 										</select>
 									</div>
@@ -72,8 +80,12 @@
 								</div>
 							</div>
 						</section>
+						<!--END OF STEP 1 - DETAILS SECTION -->
+						<!--START OF STEP 2 - RECEIVING GOODS SECTION -->
 						<section id="receiving-goods" class="section-box">
-							<header class="header-section btn-bhv action-goto-step2"><h3>2. Receiving Goods <span class="fa fa-angle-down"></span><span class="fa fa-angle-up"></span></h3></header>
+							<header class="header-section btn-bhv action-goto-step2">
+								<h3>2. Receiving Goods <span class="fa fa-angle-down"></span><span class="fa fa-angle-up"></span></h3>
+							</header>
 							<div class="form-section">
 								<div class="form-group-wrap">
 									<div class="form-group half">
@@ -125,11 +137,13 @@
 									<div class="form-group half-small">
 										<label for="receiving_time">Time</label>
 										<select name="receiving_time" class="" id="receiving_time" required>
+
+											<option value="">Time</option>
 											<option value="9:30" selected>9:30PM</option>
 											<option value="10:30">10:30PM</option>
 											<option value="11:30">11:30PM</option>
 											<option value="12:30">12:30PM</option>
-											<option value="etc">etc</option>
+											
 										</select>
 									</div>
 									<div class="form-group full">
@@ -160,13 +174,14 @@
 											<div class="form-group quarter-big" >
 												<label for="receiving_state">State</label>
 												<select name="receiving_state" class="" id="receiving_state" required>
+													<option value="" selected>State</option>
 													<option value="ACT">ACT</option>
 													<option value="NT">NT</option>
 													<option value="NSW">NSW</option>
 													<option value="Qld">Qld</option>
 													<option value="SA">SA</option>
 													<option value="Tas">Tas</option>
-													<option value="VIC" selected>VIC</option>
+													<option value="VIC">VIC</option>
 													<option value="WA">WA</option>
 												</select>
 											</div>
@@ -244,7 +259,7 @@
 							</div>
 							<div id="order-comments">
 								<div class="form-group full space-above">
-									<label for="pickup_ordercomments"><h3>Order Comments</h3></label>
+									<label for="pickup_ordercomments"><span class="h3">Order Comments</span></label>
 									<textarea name="pickup_ordercomments" rows="8" id="pickup_ordercomments" placeholder="e.g. If I'm not at home, please leave goods in garage."></textarea>
 								</div>
 								<div class="form-group full space-below">
@@ -266,9 +281,12 @@
 						</div>
 					</div>
 				</section>
+				<!--END OF STEP 2 - RECEIVING GOODS SECTION -->
 			</form>
 		</div>
 	</div>
+	<!--END OF MAIN FORM SECTION -->
 </div>
 </div>
-</section>
+</div>
+<!--END OF PAGE SECTION -->

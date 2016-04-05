@@ -163,10 +163,9 @@ $(document).ready(function() {
     */
     $(".action-goto-step2").click(function() {
         //if($("#checkout-cart").valid()){
-        $("#order-details .form-section").slideUp(
-            "slow",
+        $("#receiving-goods .form-section").slideDown("slow",
             function() {
-                $("#receiving-goods .form-section").slideDown("slow",
+                $("#order-details .form-section").slideUp("slow",
                     function() {
                         $('html, body').animate({
                             scrollTop: $("#receiving-goods").offset().top
@@ -186,15 +185,13 @@ $(document).ready(function() {
 
         $("#order-details .form-section").slideDown("slow", function() {
             $("#receiving-goods .form-section").slideUp("slow",           
-             function() {
-                $("#receiving-goods .form-section").slideUp("slow",
                     function() {
                         $('html, body').animate({
                             scrollTop: $("#order-details").offset().top
                         }, 500);
                     }
                 );
-            });
+
         });
         $("#order-details .header-section").addClass("active");
         $("#receiving-goods .header-section").removeClass("active");

@@ -12,7 +12,7 @@
 	<div class="container-fluid section-container">
 		<div class="row">
 			<!--START OF SIDEBAR SECTION -->
-			<div class="col-sm-5 col-sm-push-7 bg-dark-grey bg-sm-blue">
+			<div class="col-sm-5 col-sm-push-7 bg-dark-grey">
 				<?php include "templates/Includes/checkout-sidebar.php" ?>
 			</div>
 			<!--END OF SIDEBAR SECTION -->
@@ -62,9 +62,9 @@
 											<option value="ACT">ACT</option>
 											<option value="NT">NT</option>
 											<option value="NSW">NSW</option>
-											<option value="Qld">Qld</option>
+											<option value="QLD">QLD</option>
 											<option value="SA">SA</option>
-											<option value="Tas">Tas</option>
+											<option value="TAS">TAS</option>
 											<option value="VIC">VIC</option>
 											<option value="WA">WA</option>
 										</select>
@@ -149,14 +149,14 @@
 									<div class="form-group full">
 										<label for="receiving_previousaddress">Delivery Address</label>
 									</div>
-									<div class="form-group half select-previous-address no-space-top">
+									<div class="form-group half full-sm select-previous-address no-space-top">
 										<select name="receiving_previousaddress" class="" id="receiving_previousaddress" required>
 											<option value="">Select previous address</option>
 										</select>
 										<div class="clear-fix"></div>
 									</div>
-									<div class="form-group half text-right enter-new-address no-space-top enter-new-address-bottom">
-										<span class="or hidden-xs hidden-sm">OR</span>
+									<div class="form-group half full-sm text-right enter-new-address no-space-top enter-new-address-bottom">
+										<span class="or">OR</span>
 										<div class="btn blue-button new-address action-enter-new-address">Enter new address</div>
 										<div class="clear-fix"></div>
 									</div>
@@ -178,9 +178,9 @@
 													<option value="ACT">ACT</option>
 													<option value="NT">NT</option>
 													<option value="NSW">NSW</option>
-													<option value="Qld">Qld</option>
+													<option value="QLD">QLD</option>
 													<option value="SA">SA</option>
-													<option value="Tas">Tas</option>
+													<option value="TAS">TAS</option>
 													<option value="VIC">VIC</option>
 													<option value="WA">WA</option>
 												</select>
@@ -222,7 +222,7 @@
 											<div class="clear-fix"></div>
 										</div>
 										<label for="pickup_branch">Pick Up Branch</label>
-										<input name="pickup_branch" type="text" class="pickup_branch search-box" id="pickup_branch" required>
+										<input name="pickup_branch" type="text" class="pickup_branch search-box" id="pickup_branch" autocomplete="false" required>
 										<div class="clear-fix"></div>
 										<div id="pickupbranch-results" class="transition-height">
 										</div>
@@ -233,14 +233,14 @@
 									<label>Pick Up Contact</label>
 								</div>
 								<div class="clear-fix"></div>
-								<div class="form-group half select-previous-address no-space-top">
+								<div class="form-group half full-sm select-previous-address no-space-top">
 									<select name="pickup_previouscontact" class="" id="pickup_previouscontact" required>
 										<option value="">Select previous contact</option>
 									</select>
 									<div class="clear-fix"></div>
 								</div>
-								<div class="form-group half text-right enter-new-contact no-space-top">
-									<span class="or hidden-xs hidden-sm">OR</span>
+								<div class="form-group half full-sm text-right enter-new-contact no-space-top">
+									<span class="or">OR</span>
 									<div class="btn blue-button new-contact action-enter-new-contact">Enter new contact</div>
 									<div class="clear-fix"></div>
 								</div>

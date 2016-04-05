@@ -24,7 +24,7 @@ class="">
   <?php include "templates/Includes/Navigation.php" ?>
   
   
-  <section id="product-pages">
+  <section id="product-pages" data-section="checkoutCart">
     <?php include "templates/Includes/ProductsNav.php" ?>
     <?php include "templates/Pages/checkout-cart.php" ?>
   </section>

@@ -11,7 +11,7 @@
 					<a href="#">Edit</a>
 				</div>
 				<div class="total-price-header visible-xs-block">
-					<p>$1155.00</p>
+					<p>Total: $1155.00</p>
 				</div>
 			</div>
 			<div class="clear-fix"></div>
@@ -27,15 +27,21 @@
 				<li>
 					<div class="info-wrap">
 						<div class="left-col">
-							
-							<div class="product-code">123456789</div>
-							<div class="name">Lorem ipsum dolor sit amet</div>
-							<div class="description">Lorem ipsum dolor sit amet</div>
-							
+								<div class="cart-thumbnail"><img src="templates/images/product1.jpg"></div>
 						</div>
-						<div class="right-col text-right">
-							<div class="quantity">1<span>PKT</span></div>
-							<div class="price">$3458.45</div>
+						<div class="right-col">
+							<div class="inner-right-col text-right">
+								<div class="quantity">1<span>PKT</span></div>
+							</div>
+							<div class="inner-left-col text-left">
+								<div class="product-code">123456789</div>
+								<div class="name">Lorem ipsum dolor sit amet</div>
+								<div class="description">Lorem ipsum dolor sit amet</div>
+							</div>
+							<div class="inner-right-col text-right">
+								<div class="price">$3458.45</div>
+							</div>
+							<div class="clear-fix"></div>
 						</div>
 						<div class="clear-fix"></div>
 					</div>

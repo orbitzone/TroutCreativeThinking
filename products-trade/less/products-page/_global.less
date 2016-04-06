@@ -10,6 +10,9 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 	margin-top:0;
 	padding-top:0;
 	.gothamBold;
+	&.normal-weight{
+		.gothamBook;
+	}
 }
 h1,.h1{
 	font-size:35px;
@@ -61,6 +64,9 @@ p{
 .bg-mid-grey{
 	background: @bg-mid-grey;
 }
+.bg-table-header-grey{
+	background: @bg-table-header-grey;
+}
 .text-blue{
 	color:@text-blue;
 }
@@ -78,6 +84,12 @@ p{
 }
 .padding-top{
 	padding-top: 50px;
+}
+.border-bottom{
+	border-bottom:solid 1px @border-grey;
+	&.border-light{
+		border-bottom:solid 1px @border-light-grey;
+	}
 }
 
 ul.inline-list{
@@ -104,9 +116,20 @@ ul.inline-list{
 		background: @bg-button-grey;
 		color: @white;
 	}
+	&.small-width{
+		padding:15px 45px;
+	}
+	&.xs-full{
+			margin-top: 5px;
+			margin-bottom: 5px;
+		@media (max-width: @screen-xs-max) { 
+			width:100%;
+		}
+
+	}
 	&.full-width{
 		width:100%;
-		padding:20px 20px;
+		padding:20px 8px;
 		@media (max-width: @screen-xs-max) { 
 			margin-top: 5px;
 			margin-bottom: 5px;
@@ -162,5 +185,9 @@ BREADCRUMB
 	}
 
 }
+/*
+MAIN TITLE
+*/
+
 
 

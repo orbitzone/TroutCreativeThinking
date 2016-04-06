@@ -41,7 +41,7 @@
 						<div class="col-md-5 col-md-offset-1 col-sm-6">
 							<div class="info bg-location-icon text-left">
 								<p>Your order has been assigned to:</p>
-								<p><strong>Reece Plumbing Centre Burwood<strong><br>
+								<p><strong>Reece Plumbing Centre Burwood</strong><br>
 								118 Burwood Hwy, Burwood VIC 3125</p>
 								<p>(03) 9274 0222</p>
 							</div>
@@ -69,4 +69,6 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
+	</div>
+</section>

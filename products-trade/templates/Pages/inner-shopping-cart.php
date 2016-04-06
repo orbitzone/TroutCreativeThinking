@@ -67,14 +67,13 @@
 			<!--START SHOPPING CART LISTING -->
 			<div class="shopping-cart-listing">
 				<div class="container-fluid section-container">
-					<div class="row">
-						<div class="col-xs-12">
+				<!--START LOOP CART ITEMS -->
+					<?php for($i=0;$i<4;$i++){ ?>
+					<div class="row border-bottom border-light">
+						<div class="col-xs-11 col-xs-offset-1 col-sm-12 col-sm-offset-0">
 							<div class="inner-wrap item-listing">
-								<?php for($i=0;$i<4;$i++){ ?>
-								<div class="one-product border-bottom border-light">
-									
+								<div class="one-product">
 									<div class="item-data item-thumbnail xs-left"><div class="item-inner"><div class="product-thumbnail"><img src="templates/images/product1.jpg"></div></div></div>
-									
 									<div class="item-data item-details xs-left">
 										<div class="item-inner">
 											<span class="product-code">45454545<?php echo $i ?></span>
@@ -82,32 +81,30 @@
 											<span class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
 										</div>
 									</div>
-									
 									<div class="item-data item-quantity xs-left">
 										<div class="item-inner">
 											<span class="quantity-input">
-												<input class="quantity-number" type="number" name="quantity-<?php echo $i ?>" min="1">
+												<input class="quantity-number" type="number" name="quantity-<?php echo $i ?>" min="1" value="1">
 											</span>
 											<span class="quantity-set">
-												<input class="quantity-radio" type="radio" name="<?php echo $i ?>" value="EA">
-												<input class="quantity-radio" type="radio" name="<?php echo $i ?>" value="PKT">
+
+											<label for=""> </label>
+												<input class="quantity-radio" type="radio" name="set-<?php echo $i ?>" value="EA">
+												<input class="quantity-radio" type="radio" name="set-<?php echo $i ?>" value="PKT">
 												<span class="quatity-details">Packet <span>12</span> Units</span>
 											</span>
 										</div>
 									</div>
-									
 									<div class="item-data item-unitprice xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Unit price</div>$444.99<span>inc</span></div></div>
-									
 									<div class="item-data item-subtotal xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Subtotal</div>$888.99<span>inc</span></div></div>
-									
-									<div class="item-data item-remove hidden-xs"><div class="item-inner"><span class="remove-button action-remove-<?php echo $i ?>"> <i class="fa fa-times"></i> </span></div></div>
-									
+									<div class="item-data item-remove"><div class="item-inner"><span class="remove-button action-remove-<?php echo $i ?>"> <i class="fa fa-times"></i> </span></div></div>
 									<div class="clear-fix"></div>
 								</div>
-								<?php } ?>
 							</div>
 						</div>
 					</div>
+					<?php } ?>
+					<!--END LOOP CART ITEMS -->
 				</div>
 			</div>
 			<!--END SHOPPING CART LISTING -->
@@ -198,12 +195,12 @@
 					<div class="row">
 						<div class="col-xs-6">
 							<div class="inner-wrap">
-SAVE AS
+								SAVE AS
 							</div>
 						</div>
 						<div class="col-xs-6">
 							<div class="inner-wrap">
-SUB TOTAL
+								SUB TOTAL
 							</div>
 						</div>
 					</div>

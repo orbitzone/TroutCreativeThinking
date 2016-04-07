@@ -30,34 +30,40 @@
 							</header>
 							<div class="form-section">
 								<div class="form-group-wrap">
+									<div class="form-group gen-error gen-error1">
+										<div class="info">
+											Please check that all fields are filled in correctly
+										</div>
+									</div>
+									<div class="clear-fix"></div>
 									<div class="form-group half">
 										<label for="details_firstname">First Name</label>
-										<input name="details_firstname" type="text" class="" id="details_firstname" required>
+										<input name="details_firstname" type="text" class="" id="details_firstname" required tabindex="1">
 									</div>
 									<div class="form-group half">
 										<label for="details_lastname">Last Name</label>
-										<input name="details_lastname" type="text" class="" id="details_lastname"  required>
+										<input name="details_lastname" type="text" class="" id="details_lastname"  required tabindex="2">
 									</div>
 									<div class="clear-fix"></div>
 									<div class="form-group half">
 										<label for="details_phone">Phone Number</label>
-										<input name="details_phone" type="text" class="" id="details_phone"  required>
+										<input name="details_phone" type="text" class="" id="details_phone"  required tabindex="3">
 									</div>
 									<div class="form-group full">
 										<label for="details_email">Email Address</label>
-										<input name="details_email" type="email" class="" id="details_email" required>
+										<input name="details_email" type="email" class="" id="details_email" required tabindex="4">
 									</div>
 									<div class="form-group full">
 										<label for="details_address">Street Address</label>
-										<input name="details_address" type="text" class="" id="details_address" required>
+										<input name="details_address" type="text" class="" id="details_address" required tabindex="5">
 									</div>
 									<div class="form-group half sm-full">
 										<label for="details_suburb">Suburb</label>
-										<input name="details_suburb" type="text" class="" id="details_suburb"  required>
+										<input name="details_suburb" type="text" class="" id="details_suburb"  required tabindex="6">
 									</div>
 									<div class="form-group quarter-big" >
 										<label for="details_state">State</label>
-										<select name="details_state" id="details_state" class="">
+										<select name="details_state" id="details_state" class="" tabindex="7">
 											<option value="ACT">ACT</option>
 											<option value="NT">NT</option>
 											<option value="NSW">NSW</option>
@@ -70,10 +76,10 @@
 									</div>
 									<div class="form-group quarter-small">
 										<label for="details_postcode">Postcode</label>
-										<input name="details_postcode" type="text" class="" id="details_postcode"  required>
+										<input name="details_postcode" type="number" class="" id="details_postcode" min="1000" max="9999" required tabindex="8">
 									</div>
 									<div class="form-group full text-right">
-										<div class="btn next-button blue-button action-goto-step2" id="step1next">Next</div>
+										<button type="button" class="btn next-button blue-button action-goto-step2" id="step1next" tabindex="9">Next</button>
 									</div>
 									<div class="clear-fix"></div>
 								</div>
@@ -87,22 +93,27 @@
 							</header>
 							<div class="form-section">
 								<div class="form-group-wrap">
+									<div class="form-group gen-error gen-error2">
+										<div class="info">
+											Please check that all fields are filled in correctly
+										</div>
+									</div>
+									<div class="clear-fix"></div>
 									<div class="form-group half">
 										<label for="receiving_jobname">Job Name</label>
-										<input  name="receiving_jobname"  type="text" class="" id="receiving_jobname"  required>
+										<input  name="receiving_jobname"  type="text" class="" id="receiving_jobname"  required tabindex="10">
 									</div>
 									<div class="form-group half">
 										<label for="receiving_ordernumber">Order Number</label>
-										<input  name="receiving_ordernumber"  type="text" class="" id="receiving_ordernumber"  required>
+										<input  name="receiving_ordernumber"  type="text" class="" id="receiving_ordernumber"  required tabindex="11">
 									</div>
 									<div class="form-group full">
 										<div class="info">
 											<h6>How would you like to recieve the goods? </h6>
-											<p>A Reece consultant will call you within 1 business day to confirm your delivery or pickup time frame. Time frames will differ depending on the type of product/s ordered.</p>
 										</div>
 										<div class="inner-half left text-center">
 											<div class="delivery-button picture-button">
-												<label for="receiving_receivegoods_delivery" class="btn-bhv"><span class="icon-delivery div"></span><br>Delivery<br><span class="radio-button"></span></label>
+												<label for="receiving_receivegoods_delivery" class="btn-bhv"><span class="icon-delivery div" ></span><br>Delivery<br><span class="radio-button"></span></label>
 											</div>
 										</div>
 										<div class="inner-half right text-center">
@@ -112,7 +123,7 @@
 										</div>
 										<div class="clear-fix"></div>
 										<div class="radio-inputs">
-											<input type="radio" name="receiving_receivegoods" id="receiving_receivegoods_pickup" value="pickup" required><input type="radio" name="receiving_receivegoods" id="receiving_receivegoods_delivery" value="delivery" required>
+											<input type="radio" name="receiving_receivegoods" id="receiving_receivegoods_pickup" value="pickup" required tabindex="12"><input type="radio" name="receiving_receivegoods" id="receiving_receivegoods_delivery" value="delivery" required tabindex="12">
 										</div>
 									</div>
 									<div class="clear-fix"></div>
@@ -132,11 +143,11 @@
 									</div>
 									<div class="form-group half-big">
 										<label for="receiving_date">Required By</label>
-										<input name="receiving_date" type="text" class="" id="receiving_date" placeholder="Select date" value="" readonly="readonly" required>
+										<input name="receiving_date" type="text" class="" id="receiving_date" placeholder="Select date" value="" readonly="readonly" required tabindex="14">
 									</div>
 									<div class="form-group half-small">
 										<label for="receiving_time">Time</label>
-										<select name="receiving_time" class="" id="receiving_time" required>
+										<select name="receiving_time" class="" id="receiving_time" required tabindex="15">
 
 											<option value="">Time</option>
 											<option value="9:30" selected>9:30PM</option>
@@ -150,14 +161,14 @@
 										<label for="receiving_previousaddress">Delivery Address</label>
 									</div>
 									<div class="form-group half full-sm select-previous-address no-space-top">
-										<select name="receiving_previousaddress" class="" id="receiving_previousaddress" required>
+										<select name="receiving_previousaddress" class="" id="receiving_previousaddress" required tabindex="16">
 											<option value="">Select previous address</option>
 										</select>
 										<div class="clear-fix"></div>
 									</div>
 									<div class="form-group half full-sm text-right enter-new-address no-space-top enter-new-address-bottom">
 										<span class="or">OR</span>
-										<div class="btn blue-button new-address action-enter-new-address">Enter new address</div>
+										<button type="button" class="btn blue-button new-address action-enter-new-address" tabindex="17">Enter new address</button>
 										<div class="clear-fix"></div>
 									</div>
 									<div class="clear-fix"></div>
@@ -165,15 +176,15 @@
 										<div class="inner-form-section">
 											<div class="form-group full">
 												<label for="receiving_address">Street Address</label>
-												<input name="receiving_address" type="text" class="" id="receiving_address"  required>
+												<input name="receiving_address" type="text" class="" id="receiving_address"  required tabindex="18">
 											</div>
 											<div class="form-group half sm-full">
 												<label for="receiving_suburb">Suburb</label>
-												<input name="receiving_suburb" type="text" class="" id="receiving_suburb"  required>
+												<input name="receiving_suburb" type="text" class="" id="receiving_suburb"  required tabindex="19">
 											</div>
 											<div class="form-group quarter-big" >
 												<label for="receiving_state">State</label>
-												<select name="receiving_state" class="" id="receiving_state">
+												<select name="receiving_state" class="" id="receiving_state" tabindex="20">
 													<option value="ACT">ACT</option>
 													<option value="NT">NT</option>
 													<option value="NSW">NSW</option>
@@ -186,15 +197,15 @@
 											</div>
 											<div class="form-group quarter-small">
 												<label for="receiving_postcode">Postcode</label>
-												<input name="receiving_postcode" type="text" class="" id="receiving_postcode" required>
+												<input name="receiving_postcode" type="number" class="" id="receiving_postcode" required tabindex="21" min="1000" max="9999">
 											</div>
 											<div class="form-group half">
 												<label for="receiving_name">Site Contact Name</label>
-												<input name="receiving_name" type="text" class="" id="receiving_name"  required>
+												<input name="receiving_name" type="text" class="" id="receiving_name"  required tabindex="22">
 											</div>
 											<div class="form-group half">
 												<label for="receiving_phone">Site Contact Phone</label>
-												<input name="receiving_phone" type="text" class="" id="receiving_phone"  required>
+												<input name="receiving_phone" type="text" class="" id="receiving_phone"  required tabindex="23">
 											</div>
 											<div class="clear-fix"></div>
 										</div>
@@ -204,11 +215,6 @@
 								<!-- END: DELIVERY DETAILS -->
 								<!-- START: PICK UP DETAILS -->
 								<div id="pickup-details">
-									<div class="form-group full no-space-top">
-										<div class="info text-light-grey">
-											<p>Your delivery will attract a cartage fee of $5.30</p>
-										</div>
-									</div>
 								<header>
 								<h3>Pick Up Details</h3>
 								<p>Your order has been assigned to:</p>
@@ -230,7 +236,7 @@
 										</div>
 										<div class="branch-info-autocomplete">
 											<label for="pickup_branch">Pick Up Branch</label>
-											<input name="pickup_branch" type="text" class="pickup_branch search-box" id="pickup_branch" autocomplete="false" required>
+											<input name="pickup_branch" type="text" class="pickup_branch search-box" id="pickup_branch" autocomplete="false" required tabindex="24">
 											<div class="clear-fix"></div>
 											<div id="pickupbranch-results" class="transition-height">
 											</div>
@@ -243,25 +249,25 @@
 								</div>
 								<div class="clear-fix"></div>
 								<div class="form-group half full-sm select-previous-address no-space-top">
-									<select name="pickup_previouscontact" class="" id="pickup_previouscontact" required>
+									<select name="pickup_previouscontact" class="" id="pickup_previouscontact" required tabindex="25">
 										<option value="">Select previous contact</option>
 									</select>
 									<div class="clear-fix"></div>
 								</div>
 								<div class="form-group half full-sm text-right enter-new-contact no-space-top">
 									<span class="or">OR</span>
-									<div class="btn blue-button new-contact action-enter-new-contact">Enter new contact</div>
-									<div class="clear-fix"></div>
+									<button type="button" class="btn blue-button new-contact action-enter-new-contact" tabindex="26">Enter new contact</div>
+									<div class="clear-fix"></button>
 								</div>
 								<div class="clear-fix"></div>
 								<div class="inner-section">
 									<div class="form-group half">
 										<label for="pickup_name">Name</label>
-										<input name="pickup_name" type="text" class="" id="pickup_name"  required>
+										<input name="pickup_name" type="text" class="" id="pickup_name"  required tabindex="27">
 									</div>
 									<div class="form-group half">
 										<label for="pickup_phone">Phone</label>
-										<input name="pickup_phone" type="text" class="" id="pickup_phone"  required>
+										<input name="pickup_phone" type="text" class="" id="pickup_phone"  required tabindex="28">
 									</div>
 									<div class="clear-fix"></div>
 								</div>
@@ -269,22 +275,22 @@
 							<div id="order-comments">
 								<div class="form-group full space-above">
 									<label for="pickup_ordercomments"><span class="h3">Order Comments</span></label>
-									<textarea name="pickup_ordercomments" rows="8" id="pickup_ordercomments" placeholder="e.g. If I'm not at home, please leave goods in garage."></textarea>
+									<textarea name="pickup_ordercomments" rows="8" id="pickup_ordercomments" placeholder="e.g. If I'm not at home, please leave goods in garage." tabindex="29"></textarea>
 								</div>
 								<div class="form-group full space-below">
 									<label>Order Notification</label>
 									<ul class="radio-list">
-										<li> <label for="pickup_notification_none"><span class="radio-button"><input type="radio" name="pickup_notification" id="pickup_notification_none" value="none" checked></span>None</label></li>
-										<li> <label for="pickup_notification_email"><span class="radio-button"><input type="radio" name="pickup_notification" id="pickup_notification_email" value="email"></span>Email</label></li>
-										<li><label for="pickup_notification_sms"><span class="radio-button"><input type="radio" name="pickup_notification" id="pickup_notification_sms" value="sms"> </span>SMS</label></li>
+										<li> <label for="pickup_notification_none"><span class="radio-button"><input type="radio" name="pickup_notification" id="pickup_notification_none" value="none" checked tabindex="30"></span>None</label></li>
+										<li> <label for="pickup_notification_email"><span class="radio-button"><input type="radio" name="pickup_notification" id="pickup_notification_email" value="email" tabindex="30"></span>Email</label></li>
+										<li><label for="pickup_notification_sms"><span class="radio-button"><input type="radio" name="pickup_notification" id="pickup_notification_sms" value="sms" tabindex="30"> </span>SMS</label></li>
 									</ul>
 								</div>
 							</div>
 							<div class="form-group half text-left">
-								<div class="btn next-button grey-button action-goto-step1" id="step2previous">Previous</div>
+								<button type="button" class="btn prev-button next-button grey-button action-goto-step1" id="step2previous" tabindex="31">Previous</button>
 							</div>
 							<div class="form-group half text-right">
-								<button class="btn next-button blue-button">Submit Order</button>
+								<button type="submit" class="btn next-button blue-button" id="final-submit-button" tabindex="32">Submit Order</button>
 							</div>
 							<div class="clear-fix"></div>
 						</div>

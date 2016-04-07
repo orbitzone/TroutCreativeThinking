@@ -300,20 +300,20 @@ var product_pages = {
         //======================================================================
         //======================================================================
     },
-    checkoutSidebarMatchHeight: function(){
+    shoppingCart: function(){
         //
-        //MATCH HEIGHT OF SIDEBAR WITH MAIN SECTION WHEN LOAD OR CHANGED
+        //RADIO BUTTONS
         //
-        if($("#cart-sidebar").height()  <   $("#checkout-cart-section").height()){
-                console.log("IN");
-                console.log("sidebar: " + $("#cart-sidebar").height());
-                console.log("container: " + $("#checkout-cart-section").height());
-                $("#cart-sidebar").height($("#checkout-cart-section").height());
-        }
-        else{
-                console.log("OUT");
-                console.log("sidebar: " + $("#cart-sidebar").height());
-                console.log("container: " + $("#checkout-cart-section").height());
-        }
+        $(".radio-button").click(
+            function(){
+                $(this).parent(".radiolabel-set").find(".radio-button").removeClass("active");
+                $(this).addClass("active");
+            });
+        //
+        //
+        //
+                //INIT ALL DROP DOWN MENUS
+        //
+        $('#product-pages select').selectric();
     }
 };

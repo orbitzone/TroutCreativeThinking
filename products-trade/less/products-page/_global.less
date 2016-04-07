@@ -85,6 +85,9 @@ p{
 .padding-top{
 	padding-top: 50px;
 }
+.padding-bottom{
+	padding-bottom: 50px;
+}
 .border-bottom{
 	border-bottom:solid 1px @border-grey;
 	&.border-light{
@@ -112,12 +115,16 @@ ul.inline-list{
 		background: @bg-blue;
 		color: @white;
 	}
+	&.light-blue-button{
+		background: @bg-button-light-blue;
+		color: @white;
+	}
 	&.grey-button{
-		background: @bg-button-grey;
+		background: @bg-button-light-grey;
 		color: @white;
 	}
 	&.small-width{
-		padding:15px 45px;
+		padding:15px 25px;
 	}
 	&.xs-full{
 			margin-top: 5px;
@@ -127,6 +134,7 @@ ul.inline-list{
 		}
 
 	}
+
 	&.full-width{
 		width:100%;
 		padding:20px 8px;

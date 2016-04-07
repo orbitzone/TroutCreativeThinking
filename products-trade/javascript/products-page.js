@@ -10,11 +10,11 @@ var product_pages = {
         }
     },
     checkoutCart: function() {
-        //
-        //==========================
+        //======================================================================
+        //======================================================================
         //START CHECKOUT CART
-        //==========================
-        //
+        //======================================================================
+        //======================================================================
         //RADIO BUTTONS - ON LOAD
         $("input[type=radio]:checked").each(
             function() {
@@ -278,7 +278,10 @@ var product_pages = {
                 $(this).toggleClass("active");
             }
         });
-        //
+
+
+
+
         //SET UP WHEN SCREEN RESIZES
         //
         $(window).resize(function() {
@@ -291,5 +294,26 @@ var product_pages = {
                 }
             }
         });
+        //======================================================================
+        //======================================================================
+        //END CHECKOUT CART
+        //======================================================================
+        //======================================================================
+    },
+    checkoutSidebarMatchHeight: function(){
+        //
+        //MATCH HEIGHT OF SIDEBAR WITH MAIN SECTION WHEN LOAD OR CHANGED
+        //
+        if($("#cart-sidebar").height()  <   $("#checkout-cart-section").height()){
+                console.log("IN");
+                console.log("sidebar: " + $("#cart-sidebar").height());
+                console.log("container: " + $("#checkout-cart-section").height());
+                $("#cart-sidebar").height($("#checkout-cart-section").height());
+        }
+        else{
+                console.log("OUT");
+                console.log("sidebar: " + $("#cart-sidebar").height());
+                console.log("container: " + $("#checkout-cart-section").height());
+        }
     }
 };

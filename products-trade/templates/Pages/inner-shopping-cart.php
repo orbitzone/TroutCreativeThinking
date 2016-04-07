@@ -122,66 +122,23 @@
 						<div class="col-sm-10 col-sm-offset-1">
 							<div class="inner-wrap">
 								<div class="row">
-									<div class="col-xs-3">
-										<div class="one-recommendation">
-											<div class="product-thumbnail">
-												<img src="templates/images/product1.jpg">
-											</div>
-											<div class="product-details">
-												<span class="product-code">45454545</span>
-												<span class="product-name">Thermann Electric Storage</span>
-												<span class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
-											</div>
-											<div class="add-button-wrap">
-												<span class="action-add-product"><i class="fa fa-plus"></i></span>
-											</div>
-										</div>
-									</div>
-									<div class="col-xs-3">
-										<div class="one-recommendation">
-											<div class="product-thumbnail">
-												<img src="templates/images/product1.jpg">
-											</div>
-											<div class="product-details">
-												<span class="product-code">45454545</span>
-												<span class="product-name">Thermann Electric Storage</span>
-												<span class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
-											</div>
-											<div class="add-button-wrap">
-												<span class="action-add-product"><i class="fa fa-plus"></i></span>
+									<?php for($i=0;$i<4;$i++){ ?>
+										<div class="col-xs-3">
+											<div class="one-recommendation">
+												<div class="product-thumbnail">
+													<img src="templates/images/product1.jpg">
+												</div>
+												<div class="product-details">
+													<span class="product-code">45454545</span>
+													<span class="product-name">Thermann Electric Storage</span>
+													<span class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+												</div>
+												<div class="add-button-wrap">
+													<span class="action-add-product"><i class="fa fa-plus"></i></span>
+												</div>
 											</div>
 										</div>
-									</div>
-									<div class="col-xs-3">
-										<div class="one-recommendation">
-											<div class="product-thumbnail">
-												<img src="templates/images/product1.jpg">
-											</div>
-											<div class="product-details">
-												<span class="product-code">45454545</span>
-												<span class="product-name">Thermann Electric Storage</span>
-												<span class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
-											</div>
-											<div class="add-button-wrap">
-												<span class="action-add-product"><i class="fa fa-plus"></i></span>
-											</div>
-										</div>
-									</div>
-									<div class="col-xs-3">
-										<div class="one-recommendation">
-											<div class="product-thumbnail">
-												<img src="templates/images/product1.jpg">
-											</div>
-											<div class="product-details">
-												<span class="product-code">45454545</span>
-												<span class="product-name">Thermann Electric Storage</span>
-												<span class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
-											</div>
-											<div class="add-button-wrap text-right">
-												<span class="action-add-product"><i class="fa fa-plus"></i></span>
-											</div>
-										</div>
-									</div>
+									<?php } ?>
 								</div>
 							</div>
 						</div>
@@ -193,14 +150,39 @@
 			<div class="shopping-cart-listing">
 				<div class="container-fluid section-container">
 					<div class="row">
+						<div class="col-xs-12">
+							<div class="inner-wrap">
+								<div class="shopping-cart-total">
+									<div class="left-col"><span class="subtotal-text">Subtotal</span></div>
+									<div class="right-col"><span class="subtotal-value">$1000.00</span></div>
+									<div class="clear-fix"></div>
+									<div class="left-col"><span class="deliveryfee-text">Delivery Fee</span></div>
+									<div class="right-col"><span class="deliveryfee-value">$85.00</span></div>
+									<div class="clear-fix"></div>
+									<div class="left-col"><span class="deliveryinfo-text"><a href="#">Delivery Information</a></span></div>
+									<div class="clear-fix"></div>
+									<div class="left-col"><span class="gst-text">GST</span></div>
+									<div class="right-col"><span class="gst-value">$8.50</span></div>
+									<div class="clear-fix"></div>
+									<div class="left-col"><span class="grandtotal-text">Total <span>inc. GST</span></span></div>
+									<div class="right-col"><span class="grandtotal-value">$1093.50</span></div>
+									<div class="clear-fix"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
 						<div class="col-xs-6">
 							<div class="inner-wrap">
-								SAVE AS
+
+								<a href="#" class="btn grey-button small-width"><i class="fa fa-chevron-left"></i> Continue shopping</a>
+								<div class="saveas-wrap"></div>
+
 							</div>
 						</div>
 						<div class="col-xs-6">
-							<div class="inner-wrap">
-								SUB TOTAL
+							<div class="inner-wrap text-right">
+								<input type="submit" value="Submit order" class="btn blue-button small-width">
 							</div>
 						</div>
 					</div>

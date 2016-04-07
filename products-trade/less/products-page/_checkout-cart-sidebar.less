@@ -1,8 +1,21 @@
 .main-section#checkout-cart-section{
+overflow:hidden;
 
 #cart-sidebar{
 	padding-right:5px;
 	padding-left:5px;
+
+	&:after{
+	    content: "";
+	    width: 100%;
+	    height: 10000px;
+	    display: block;
+	    position: absolute;
+	    z-index: -1000;
+	    background-color: @bg-dark-grey;
+	    left: 0;
+	    top:-5000px;
+	}
 	
 	header{
 		border-bottom:solid 1px @border-grey;

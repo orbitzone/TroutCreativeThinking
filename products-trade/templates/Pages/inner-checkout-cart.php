@@ -57,15 +57,14 @@
 									</div>
 									<div class="form-group quarter-big" >
 										<label for="details_state">State</label>
-										<select name="details_state" id="details_state" class="" required>
-											<option value="" selected>State</option>
+										<select name="details_state" id="details_state" class="">
 											<option value="ACT">ACT</option>
 											<option value="NT">NT</option>
 											<option value="NSW">NSW</option>
 											<option value="QLD">QLD</option>
 											<option value="SA">SA</option>
 											<option value="TAS">TAS</option>
-											<option value="VIC">VIC</option>
+											<option value="VIC" selected>VIC</option>
 											<option value="WA">WA</option>
 										</select>
 									</div>
@@ -174,15 +173,14 @@
 											</div>
 											<div class="form-group quarter-big" >
 												<label for="receiving_state">State</label>
-												<select name="receiving_state" class="" id="receiving_state" required>
-													<option value="" selected>State</option>
+												<select name="receiving_state" class="" id="receiving_state">
 													<option value="ACT">ACT</option>
 													<option value="NT">NT</option>
 													<option value="NSW">NSW</option>
 													<option value="QLD">QLD</option>
 													<option value="SA">SA</option>
 													<option value="TAS">TAS</option>
-													<option value="VIC">VIC</option>
+													<option value="VIC" selected>VIC</option>
 													<option value="WA">WA</option>
 												</select>
 											</div>

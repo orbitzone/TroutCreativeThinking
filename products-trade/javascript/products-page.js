@@ -194,7 +194,7 @@ var product_pages = {
         //CLOSE STEP 1 AND OPEN STEP 2 
         //
         $(".action-goto-step2").click(function() {
-            //if($("#checkout-cart").valid()){
+            if($("#checkout-cart").valid()){
             $("#receiving-goods .form-section").slideDown("slow",
                 function() {
                     $("#order-details .form-section").slideUp("slow",
@@ -208,7 +208,7 @@ var product_pages = {
             );
             $("#order-details .header-section").removeClass("active");
             $("#receiving-goods .header-section").addClass("active");
-            //}
+            }
         });
         //
         //CLOSE STEP 2 AND OPEN STEP 1 

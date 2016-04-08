@@ -51,18 +51,73 @@ var product_pages = {
                     $(".action-pickup-address-change").addClass("active"); 
                     $(".action-pickup-address-cancel").removeClass("active");    
                 });
-            $(".branch-info-autocomplete").fadeOut("slow");
+            $(".branch-info-autocomplete").fadeOut("slow",
+                function(){
+                    $("#pickupbranch-results").html("");
+                });
         });
         //
         //PICK UP BRACH SEARCH AUTO COMPLETE
         //
-        $("#pickup_branch").keyup(function() {
-            if ($(this).val().length > 2) {
+        $("#pickup_branch").focusin(function() {
+            if ($(this).val().length == 0) {
                 var searchField = $('#pickup_branch').val();
                 var regex = new RegExp(searchField, "i");
                 var output = '';
                 var totalresults = 0;
-                $.getJSON('data/pickupbranch.json', function(data) {
+                $("#pickup_branch").removeClass("error");
+                $.getJSON('data/nearestpickupbranch.json', function(data) {
+                    $.each(data, function(key, val) {
+                        if ((val.branchname.search(regex) != -1)) {
+                            output += '<div class="one-result">';
+                            output += '<span class="branch-name">';
+                            output += val.branchname;
+                            output += '</span>';
+                            output += '<span class="branch-address">';
+                            output += val.address;
+                            output += '</span>';
+                            output += '<span class="branch-phone">';
+                            output += val.phone;
+                            output += '</span>';
+                            output += '</div>';
+                            totalresults++;
+                        }
+                    });
+                    if (totalresults) {
+                        output = '<header>Nearest Stores</header>' + output;
+                    } else {
+                        output = '<header>Nothing found</header>';
+                    }
+                    $('#pickupbranch-results').html(output);
+                    $('#pickupbranch-results').addClass("active");
+                    $(".one-result").click(function() {
+                        $("#branchinfo-details").html("<h6 class=\"branch-name\">" + $(this).children(".branch-name").html() + "</h6><p>" + $(this).children(".branch-address").html() + "</p><p>" + $(this).children(".branch-phone").html() + "</p>");
+                        $("#branchinfo-actions").addClass("action-change");
+                        $("#pickup_branch").val($(this).children(".branch-name").html());
+                        $(".branch-info-autofill").addClass("active");
+                        $('#pickupbranch-results').html("");
+                        $('#pickupbranch-results').removeClass("active");
+                        $(".branch-info-autocomplete").fadeOut("slow");
+                        $(".action-pickup-address-cancel").fadeOut("fast",
+                            function(){ 
+                                $(".action-pickup-address-change").fadeIn("fast");
+                                $(".action-pickup-address-change").addClass("active"); 
+                                $(".action-pickup-address-cancel").removeClass("active");    
+                            });
+
+                    });
+                });
+            }
+        });
+
+        $("#pickup_branch").keyup(function() {
+            if ($(this).val().length > 0) {
+                var searchField = $('#pickup_branch').val();
+                var regex = new RegExp(searchField, "i");
+                var output = '';
+                var totalresults = 0;
+                $("#pickup_branch").removeClass("error");
+                $.getJSON('data/searchpickupbranch.json', function(data) {
                     $.each(data, function(key, val) {
                         if ((val.branchname.search(regex) != -1)) {
                             output += '<div class="one-result">';
@@ -105,9 +160,10 @@ var product_pages = {
                 });
             } else if ($(this).val().length == 0) {
                 $('#pickupbranch-results').removeClass("active");
+                $('#pickupbranch-results').html("");
             } else {
-                $("#pickupbranch-results").html("<header>Min. 3 characters required</header>");
                 $('#pickupbranch-results').addClass("active");
+                $('#pickupbranch-results').html("");
             }
         });
         //
@@ -219,7 +275,8 @@ var product_pages = {
         //CLOSE STEP 1 AND OPEN STEP 2 
         //
         $(".action-goto-step2").click(function() {
-            if($("#checkout-cart").valid()){
+            //if($("#checkout-cart").valid()){
+
                 $("#order-details .form-section").slideUp("slow",
                     function() {
                         $("#receiving-goods .form-section").slideDown("slow",
@@ -234,13 +291,14 @@ var product_pages = {
                 $("#order-details .header-section").removeClass("active");
                 $("#receiving-goods .header-section").addClass("active");
                 $(".gen-error.gen-error1").fadeOut();
-            }
+
+            /*}
             else{
                 $(".gen-error.gen-error1").fadeIn();
                 $('html, body').animate({
                     scrollTop: $("#order-details").offset().top
                 }, 500);
-            }
+            }*/
         });
         //
         //SUBMIT FORM

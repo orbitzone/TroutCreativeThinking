@@ -237,7 +237,7 @@
 										</div>
 										<div class="branch-info-autocomplete">
 											<label for="pickup_branch">Pick Up Branch</label>
-											<input name="pickup_branch" type="text" class="pickup_branch search-box" id="pickup_branch" autocomplete="false" required tabindex="24">
+											<input name="pickup_branch" type="text" class="pickup_branch search-box" id="pickup_branch" autocomplete="false" tabindex="24">
 											<div class="clear-fix"></div>
 											<div id="pickupbranch-results" class="transition-height">
 											</div>

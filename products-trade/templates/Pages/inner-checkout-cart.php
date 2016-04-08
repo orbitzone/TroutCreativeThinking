@@ -32,7 +32,7 @@
 								<div class="form-group-wrap">
 									<div class="form-group gen-error gen-error1">
 										<div class="info">
-											Please check that all fields are filled in correctly
+											Please check that all fields are filled in correctly.
 										</div>
 									</div>
 									<div class="clear-fix"></div>
@@ -95,7 +95,7 @@
 								<div class="form-group-wrap">
 									<div class="form-group gen-error gen-error2">
 										<div class="info">
-											Please check that all fields are filled in correctly
+											Please check that all fields are filled in correctly.
 										</div>
 									</div>
 									<div class="clear-fix"></div>
@@ -148,13 +148,26 @@
 									<div class="form-group half-small">
 										<label for="receiving_time">Time</label>
 										<select name="receiving_time" class="" id="receiving_time" required tabindex="15">
-
-											<option value="">Time</option>
-											<option value="9:30" selected>9:30PM</option>
-											<option value="10:30">10:30PM</option>
-											<option value="11:30">11:30PM</option>
-											<option value="12:30">12:30PM</option>
-											
+											<option value="9:30am" selected>9:30AM</option>
+											<option value="10am">10:00AM</option>
+											<option value="10:30am">10:30AM</option>
+											<option value="11am">11:00AM</option>
+											<option value="11:30am">11:30AM</option>
+											<option value="12pm">12:00PM</option>
+											<option value="12:30pm">12:30PM</option>
+											<option value="1pm">1:00PM</option>
+											<option value="1:30">1:30PM</option>
+											<option value="2pm">2:00PM</option>
+											<option value="2:30">2:30PM</option>
+											<option value="3pm">3:00PM</option>
+											<option value="3:30">3:30PM</option>
+											<option value="4pm">4:00PM</option>
+											<option value="4:30">4:30PM</option>
+											<option value="5pm">5:00PM</option>
+											<option value="5:30">5:30PM</option>
+											<option value="6pm">6:00PM</option>
+											<option value="6:30">6:30PM</option>
+										
 										</select>
 									</div>
 									<div class="form-group full">

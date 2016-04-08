@@ -36,16 +36,16 @@
 										</div>
 									</div>
 									<div class="clear-fix"></div>
-									<div class="form-group half">
+									<div class="form-group half sm-full">
 										<label for="details_firstname">First Name</label>
 										<input name="details_firstname" type="text" class="" id="details_firstname" required tabindex="1">
 									</div>
-									<div class="form-group half">
+									<div class="form-group half sm-full">
 										<label for="details_lastname">Last Name</label>
 										<input name="details_lastname" type="text" class="" id="details_lastname"  required tabindex="2">
 									</div>
 									<div class="clear-fix"></div>
-									<div class="form-group half">
+									<div class="form-group half sm-full">
 										<label for="details_phone">Phone Number</label>
 										<input name="details_phone" type="text" class="" id="details_phone"  required tabindex="3">
 									</div>
@@ -99,11 +99,11 @@
 										</div>
 									</div>
 									<div class="clear-fix"></div>
-									<div class="form-group half">
+									<div class="form-group half sm-full">
 										<label for="receiving_jobname">Job Name</label>
 										<input  name="receiving_jobname"  type="text" class="" id="receiving_jobname"  required tabindex="10">
 									</div>
-									<div class="form-group half">
+									<div class="form-group half sm-full">
 										<label for="receiving_ordernumber">Order Number</label>
 										<input  name="receiving_ordernumber"  type="text" class="" id="receiving_ordernumber"  required tabindex="11">
 									</div>

@@ -419,6 +419,11 @@ MAIN TITLE
   background-clip: padding-box;
   padding: 10px 25px 10px 15px;
 }
+#product-pages input[type=text],
+#product-pages input[type=date],
+#product-pages input[type=number] {
+  padding: auto 25px auto 15px;
+}
 #product-pages input[type=number] {
   padding-right: 15px;
 }
@@ -539,9 +544,13 @@ MAIN TITLE
   color: #0776aa;
   text-transform: uppercase;
   font-size: 15px;
+  text-decoration: underline;
   font-family: "Gotham A", "Gotham B";
   font-style: normal;
   font-weight: 400;
+}
+#product-pages .main-section#checkout-cart-section #cart-sidebar .edit-link a:hover {
+  color: #000000;
 }
 #product-pages .main-section#checkout-cart-section #cart-sidebar .total-price-header {
   color: #b4b4b4;
@@ -819,7 +828,6 @@ MAIN TITLE
   display: none;
 }
 #product-pages .main-section#checkout-cart-section #order-form form#checkout-cart #delivery-address .inner-form-section {
-  display: none;
   margin-left: 10px;
   margin-right: 10px;
 }

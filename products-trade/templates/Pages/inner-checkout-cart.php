@@ -199,11 +199,12 @@
 												<label for="receiving_postcode">Postcode</label>
 												<input name="receiving_postcode" type="number" class="" id="receiving_postcode" required tabindex="21" min="1000" max="9999">
 											</div>
-											<div class="form-group half">
+											<div class="clear-fix"></div>
+											<div class="form-group half sm-full">
 												<label for="receiving_name">Site Contact Name</label>
 												<input name="receiving_name" type="text" class="" id="receiving_name"  required tabindex="22">
 											</div>
-											<div class="form-group half">
+											<div class="form-group half sm-full">
 												<label for="receiving_phone">Site Contact Phone</label>
 												<input name="receiving_phone" type="text" class="" id="receiving_phone"  required tabindex="23">
 											</div>
@@ -261,11 +262,11 @@
 								</div>
 								<div class="clear-fix"></div>
 								<div class="inner-section">
-									<div class="form-group half">
+									<div class="form-group half full-sm">
 										<label for="pickup_name">Name</label>
 										<input name="pickup_name" type="text" class="" id="pickup_name"  required tabindex="27">
 									</div>
-									<div class="form-group half">
+									<div class="form-group half full-sm">
 										<label for="pickup_phone">Phone</label>
 										<input name="pickup_phone" type="text" class="" id="pickup_phone"  required tabindex="28">
 									</div>

@@ -60,7 +60,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-8 col-md-offset-2 col-sm-12">
+			<div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 col-sm-12">
 				<div class="row">
 					<div class="col-sm-4">
 						<a href="#" class="btn blue-button full-width">View previous orders</a>

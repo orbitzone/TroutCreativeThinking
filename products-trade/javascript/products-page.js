@@ -219,7 +219,7 @@ var product_pages = {
         //CLOSE STEP 1 AND OPEN STEP 2 
         //
         $(".action-goto-step2").click(function() {
-            //if($("#checkout-cart").valid()){
+            if($("#checkout-cart").valid()){
                 $("#order-details .form-section").slideUp("slow",
                     function() {
                         $("#receiving-goods .form-section").slideDown("slow",
@@ -234,13 +234,13 @@ var product_pages = {
                 $("#order-details .header-section").removeClass("active");
                 $("#receiving-goods .header-section").addClass("active");
                 $(".gen-error.gen-error1").fadeOut();
-            //}
-            /*else{
+            }
+            else{
                 $(".gen-error.gen-error1").fadeIn();
                 $('html, body').animate({
                     scrollTop: $("#order-details").offset().top
                 }, 500);
-            }*/
+            }
         });
         //
         //SUBMIT FORM

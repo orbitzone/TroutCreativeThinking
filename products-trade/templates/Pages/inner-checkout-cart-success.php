@@ -31,7 +31,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-sm-10 col-sm-offset-1">
+			<div class="col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-1">
 				<div class="info bg-light-grey text-center">
 					<p>Your reference number is:</p>
 					<p class="big-text">00000088415</p>
@@ -39,7 +39,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-sm-10 col-sm-offset-1">
+			<div class="col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-1">
 				<div class="icon-section border-bottom text-center">
 					<div class="row">
 						<div class="col-md-5 col-md-offset-1 col-sm-6">
@@ -60,7 +60,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+			<div class="col-md-8 col-md-offset-2 col-sm-12">
 				<div class="row">
 					<div class="col-sm-4">
 						<a href="#" class="btn blue-button full-width">View previous orders</a>

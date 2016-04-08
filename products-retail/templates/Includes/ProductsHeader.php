@@ -8,5 +8,12 @@
 <link rel="stylesheet" type="text/css" href="css/reece-global.css" />
 <!--END: FROM ORIGINAL TEMPLATE -->
 
+<!-- LOAD GOTHAM FONT FOR DEVELOPMENT-->
+<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6958312/6279352/css/fonts.css" />
+<!--END: LOAD GOTHAM FONT FOR DEVELOPMENT -->
 
+<link rel="stylesheet" href="css/base/jquery-ui.min.css">
+<link rel="stylesheet" href="css/base/jquery-ui.theme.min.css">
+
+<link rel="stylesheet" type="text/css" href="javascript/selectric/public/selectric.css" />
 <link rel="stylesheet" type="text/css" href="css/products-page.css" />

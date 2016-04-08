@@ -1,0 +1,42 @@
+[
+    {
+        "value":"JohnSmith",
+        "name": "John Smith",
+        "phone": "(03) 1111 2222"
+    },
+    {
+         "value":"NicoleGreen",
+         "name": "Nicole Green",
+        "phone": "(03) 3333 4444"
+    },
+    {
+         "value":"GrahamMorley",
+         "name": "Graham Morley",
+        "phone": "(03) 5555 6666"
+    },
+    {
+         "value":"NickGoers",
+         "name": "Nick Goers",
+        "phone": "(03) 7777 8888"
+    },
+    {
+         "value":"FredBrown",
+         "name": "Fred Brown",
+        "phone": "(03) 9999 0000"
+    },
+    {
+         "value":"PhilJones",
+         "name": "Phil Jones",
+        "phone": "(03) 1212 2323"
+    },
+    {
+         "value":"LarryWhite",
+         "name": "Larry White",
+        "phone": "(03) 4545 5656"
+    },
+    {
+         "value":"KatyBerry",
+         "name": "Katy Berry",
+        "phone": "(03) 7878 8989"
+    }
+]

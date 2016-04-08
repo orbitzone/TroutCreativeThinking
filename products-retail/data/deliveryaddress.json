@@ -1,0 +1,42 @@
+[
+	{
+		"value": "144WaltersStreetBrunswick",
+		"name": "144 Walters Street",
+		"streetaddress": "144 Walters Street",
+		"suburb": "Brunswick",
+		"state": "VIC",
+		"postcode": "3030",
+		"contactname": "John Yellow",
+		"phone": "(03) 1212 7878"
+	},
+	{
+		"value": "67GreenStreet",
+		"name": "67 Green Street",
+		"streetaddress": "67 Green Street",
+		"suburb": "Fairfield",
+		"state": "TAS",
+		"postcode": "3838",
+		"contactname": "Jack Gates",
+		"phone": "(03) 2323 7878"
+	},
+	{
+		"value": "88OxfordStreet",
+		"name": "80 Oxford Street",
+		"streetaddress": "80 Oxford Street",
+		"suburb": "Collingwood",
+		"state": "ACT",
+		"postcode": "3232",
+		"contactname": "Samantha Moore",
+		"phone": "(03) 3434 7878"
+	},
+	{
+		"value": "11StationStreet",
+		"name": "11 Station Street",
+		"streetaddress": "11 Station Street",
+		"suburb": "Burwood",
+		"state": "QLD",
+		"postcode": "8585",
+		"contactname": "Drew Graham",
+		"phone": "(03) 4545 7878"
+	}
+]

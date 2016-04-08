@@ -1,0 +1,211 @@
+/* BODY FONT*/
+.gothamBook;
+font-size:15px;
+color: @text-grey;
+
+.h1,.h2,.h3,.h4,.h5,.h6{
+	display:block;
+}
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
+	margin-top:0;
+	padding-top:0;
+	.gothamBold;
+	&.normal-weight{
+		.gothamBook;
+	}
+}
+h1,.h1{
+	font-size:35px;
+}
+h3,.h3{
+	font-size:22px;
+}
+h6,.h6{
+	font-size:15px;
+}
+span.div{
+	display:block;
+}
+p{
+	.gothamBook;
+	strong{
+		.gothamBold;
+	}
+	em{
+		.gothamBookItalic;
+	}
+	strong em, em strong{
+		.gothamBoldItalic
+	}
+}
+.nowrap{
+	white-space: nowrap;
+}
+.small-link{
+	font-size:.6em;
+	color:@text-grey;
+	text-decoration:underline;
+	&:hover{
+		color:@text-green;
+	}
+}
+
+.clear, .clear-fix{
+	clear:both;
+}
+.section-container{
+	max-width: 1216px;
+	.inner-container{
+		padding-left:15px;
+		padding-right:15px;
+	}
+}
+.bg-light-grey{
+	background: @bg-light-grey;
+}
+.bg-dark-grey{
+	background: @bg-dark-grey;
+}
+.bg-sm-green{
+	@media (max-width: @screen-xs-max) { 
+		background:@bg-green;
+	}
+}
+.bg-mid-grey{
+	background: @bg-mid-grey;
+}
+.bg-table-header-grey{
+	background: @bg-table-header-grey;
+}
+.text-green{
+	color:@text-green;
+}
+.text-light-grey{
+	color: @text-light-grey;
+}
+.text-left{
+	text-align: left;
+}
+.text-center{
+	text-align: center;
+}
+.text-right{
+	text-align: right;
+}
+.padding-top{
+	padding-top: 50px;
+}
+.padding-bottom{
+	padding-bottom: 50px;
+}
+.border-bottom{
+	border-bottom:solid 1px @border-grey;
+	&.border-light{
+		border-bottom:solid 1px @border-light-grey;
+	}
+}
+
+ul.inline-list{
+	padding:0;
+	margin:0;
+	li{
+		list-style: none;
+		float:left;
+		display:inline-block;
+		padding: 5px 20px;
+	}
+}
+.btn{
+	.border-radius (0px);
+	padding:15px 85px;
+	line-height:1em;
+	font-size:13px;
+	text-transform: uppercase;
+	&.green-button{
+		background: @bg-green;
+		color: @white;
+	}
+	&.light-green-button{
+		background: @bg-button-light-green;
+		color: @white;
+	}
+	&.grey-button{
+		background: @bg-button-light-grey;
+		color: @white;
+	}
+	&.small-width{
+		padding:15px 25px;
+	}
+	&.xs-full{
+			margin-top: 5px;
+			margin-bottom: 5px;
+		@media (max-width: @screen-xs-max) { 
+			width:100%;
+		}
+
+	}
+
+	&.full-width{
+		width:100%;
+		padding:20px 8px;
+		@media (max-width: @screen-xs-max) { 
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+	}
+	@media (max-width: @screen-sm-max) { 
+		padding:20px 35px;
+	}
+}
+.btn-bhv:hover{
+	cursor:pointer;
+}
+.ui-datepicker-div{
+	background:@white;
+}
+
+/*
+NAVIGATION
+*/
+.subnavbar{
+	.nav{
+		a{
+			.gothamBook;
+			letter-spacing: 0;
+			font-size:13px;
+		}
+	}
+}
+/*
+BREADCRUMB
+*/
+.breadcrumb-section{
+	.breadcrumb-inner{
+	max-width: 1200px;
+    margin: 0 auto;
+	.breadcrumbs{
+		padding:10px 0;
+		margin:0;
+		.gothamBook;
+		li{
+			list-style: none;
+			padding:0;
+			margin:0;
+			a{
+				padding-left:7px;
+				padding-right:7px;
+				font-size:14px;
+				line-height:1em;
+				color:@text-grey;
+			}
+		}
+	}		
+	}
+
+}
+/*
+MAIN TITLE
+*/
+
+
+

@@ -1,6 +1,21 @@
 $(document).ready(function() {
     product_pages.init();
 });
+var scrollAnimation = {
+  element: $('html, body'),
+  animate: function(top){
+    scrollAnimation.element.on("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove", function(){
+       scrollAnimation.element.stop();
+    });
+    scrollAnimation.element.stop().animate({
+      scrollTop: top
+    }, 500, function(){
+      scrollAnimation.element.off("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove");
+    });
+  },
+}
+
+
 
 var product_pages = {
     init: function() {
@@ -281,10 +296,9 @@ var product_pages = {
                     function() {
                         $("#receiving-goods .form-section").slideDown("slow",
                             function() {
-                                $('html, body').animate({
-                                    scrollTop: $("#receiving-goods").offset().top
-                                }, 500);
+                                scrollAnimation($("#receiving-goods").offset().top);
                             }
+
                             );
                     }
                     );
@@ -295,9 +309,7 @@ var product_pages = {
             }
             else{
                 $(".gen-error.gen-error1").fadeIn();
-                $('html, body').animate({
-                    scrollTop: $("#order-details").offset().top
-                }, 500);
+                scrollAnimation($("#order-details").offset().top);
             }
         });
         //
@@ -309,9 +321,7 @@ var product_pages = {
             }
             else{
                 $(".gen-error.gen-error2").fadeIn();
-                $('html, body').animate({
-                    scrollTop: $("#receiving-goods").offset().top
-                }, 500);
+                scrollAnimation($("#receiving-goods").offset().top);
             }
 
         });
@@ -425,8 +435,96 @@ var product_pages = {
         //
         //
         //
-                //INIT ALL DROP DOWN MENUS
+        //INIT ALL DROP DOWN MENUS
         //
         $('#product-pages select').selectric();
+        //
+        //ADD RECOMMENDED PRODUCT
+        //
+        $(".action-add-product").click(
+            function(){
+                var thisobject = $(this);
+
+                thisobject.find(".fa-plus").fadeOut("fast",
+                    function(){
+                        thisobject.find(".fa-check").fadeIn("fast",
+                            function(){
+                                thisobject.addClass("added");
+
+                                //IMPLEMENT ADD ITEM TO CART FUNCTION AND REFRESH WITH NEW SET
+
+
+                            });
+                    });
+
+            
+        });
+        //REMOVE A PRODUCT
+        $(".action-remove-item").click(
+            function(){
+                var productCode = $(this).data("productcode");
+                $(".one-product-wrapper[data-productcode='" + productCode + "']").fadeOut("slow",
+                    function(){
+                        $(".one-product-wrapper[data-productcode='" + productCode + "']").remove();
+
+                    }
+
+                    );
+            }
+        );
+        //CHANGE QUANTITY
+        $(".quantity-number").keyup(function(){
+            // var thisObject = $(this);
+            // var productCode = thisObject.data("productcode");
+            // var quantity = thisObject.val();
+            // var unitprice = $(".one-product-wrapper[data-productcode='" + productCode + "'] .item-unitprice .update-price").html();
+        });
+        //SAVE AS BUTTON
+        $("#save-as-section .save-as-main").click(function(){
+            
+        if($("#save-as-section").hasClass("opened")){
+            $("#save-as-section .list-form").slideUp("fast");
+            $("#save-as-section .list-group-wrap").slideUp("slow");
+            $("#save-as-section").removeClass("opened");
+        }
+        else{
+            $("#save-as-section .list-form").hide();
+            $("#save-as-section .list-group-wrap").slideDown("slow");
+            $("#save-as-section").addClass("opened");
+        }           
+            
+        });
+        $("#save-as-section .list-open").click(function(){
+            $(this).parent(".list-group-wrap").children(".list-form").slideToggle("slow");
+
+        });
     }
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

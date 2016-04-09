@@ -33,10 +33,10 @@
 							<div class="inner-wrap">
 								<div id="cart-view-options">
 
-<div class="one-option dropdown-option">
+								<div class="one-option dropdown-option">
 									<select id="cmp-option">
-										<option value="cmp1">CMP1</option>
-										<option value="cmp2">CMP2</option>
+										<option value="cmp1">CMP</option>
+										<option value="cmp2">MP</option>
 									</select>
 </div>
 <div class="one-option checkbox-option">
@@ -82,7 +82,7 @@
 				<div class="container-fluid section-container">
 					<!--START LOOP CART ITEMS -->
 					<?php for($i=0;$i<4;$i++){ ?>
-					<div class="row border-bottom border-light">
+					<div class="row border-bottom border-light one-product-wrapper" data-productcode="<?php echo $i ?>">
 						<div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0">
 							<div class="inner-wrap item-listing">
 								<div class="one-product">
@@ -96,23 +96,13 @@
 									</div>
 									<div class="item-data item-quantity xs-left">
 										<div class="item-inner">
-
-
-
 											<div class="quantity-wrap">
-
-
-
-
-
-
-
 											<span class="quantity-hidden">
 											<input class="quantity-radio" type="radio" id="set-<?php echo $i ?>-ea" name="set-<?php echo $i ?>" value="EA" checked>
-													<input class="quantity-radio" type="radio" id="set-<?php echo $i ?>-pkt" name="set-<?php echo $i ?>" value="PKT">
+													<input class="quantity-radio" data-productcode="<?php echo $i ?>" type="radio" id="set-<?php echo $i ?>-pkt" name="set-<?php echo $i ?>" value="PKT">
 											</span>
 												<span class="quantity-input">
-													<input class="quantity-number" type="number" name="quantity-<?php echo $i ?>" min="1" value="1">
+													<input class="quantity-number" data-productcode="<?php echo $i ?>" type="number" name="quantity-<?php echo $i ?>" min="1" value="1">
 												</span>
 
 												<span class="quantity-set">
@@ -123,21 +113,12 @@
 													</div>
 													<span class="quantity-details">Packet <span>12</span> Units</span>
 												</span>
-
-
-
-
-
-
-
-
-
 											</div>
 										</div>
 									</div>
-									<div class="item-data item-unitprice xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Unit price</div>$444.99<span>inc</span></div></div>
-									<div class="item-data item-subtotal xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Subtotal</div>$888.99<span>inc</span></div></div>
-									<div class="item-data item-remove"><div class="item-inner"><span class="remove-button action-remove-<?php echo $i ?>"> <i class="fa fa-times"></i> </span></div></div>
+									<div class="item-data item-unitprice xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Unit price</div><span class="update-price">$444.99</span><span class="gst">inc</span></div></div>
+									<div class="item-data item-subtotal xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Subtotal</div><span class="update-price">$888.99</span><span class="gst">inc</span></div></div>
+									<div class="item-data item-remove"><div class="item-inner"><span class="remove-button action-remove-item" data-productcode="<?php echo $i ?>"> <i class="fa fa-times"></i> </span></div></div>
 									<div class="clear-fix"></div>
 								</div>
 							</div>
@@ -171,10 +152,18 @@
 											<div class="product-details">
 												<span class="product-code">45454545</span>
 												<span class="product-name">Thermann Electric Storage</span>
-												<span class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+												<span class="product-description">Lorem ipsum dolor sit amet.</span>
 											</div>
 											<div class="add-button-wrap">
-												<span class="action-add-product"><i class="fa fa-plus"></i></span>
+												<span class="action-add-product" 
+												
+												data-productcode="45454545"
+												data-name="Thermann Electric Storage"
+												data-description="Lorem ipsum dolor sit amet."
+												data-image="templates/images/product1.jpg"
+												data-unitprice="$55.35"
+
+												><i class="fa fa-plus"></i><i class="fa fa-check"></i></span>
 											</div>
 										</div>
 									</div>
@@ -190,48 +179,7 @@
 			<div class="shopping-cart-summary padding-top padding-bottom">
 				<div class="container-fluid section-container">
 					<div class="row">
-						<div class="col-sm-6 col-xs-12">
-							<div class="inner-wrap" id="save-as-section">
-								<a href="#" class="btn grey-button small-width"><i class="fa fa-chevron-left"></i> Continue shopping</a>
-								<div class="save-as-wrap">
-									<div class="save-as-main">
-										<span class="btn light-blue-button full-width">Save as</span>
-									</div>
-									<div class="save-as-list">
-										<span class="btn light-grey-button full-width">List</span>
-										<div class="save-as-list-form">
-											<span class="btn light-grey-button full-width">Draft order</span>
-											<label for="save-as-list-name">Job Name</label>
-											<input type="text" name="save-as-list-name">
-											<label for="save-as-list-number">Order Number</label>
-											<input type="text" name="save-as-list-number">
-											<span class="btn blue-button">Save</span>
-										</div>
-									</div>
-									<div class="save-as-draft">
-										<span class="btn light-grey-button full-width">Draft order</span>
-										<div class="save-as-draft-form">
-											<label for="save-as-draft-name">Job Name</label>
-											<input type="text" name="save-as-draft-name">
-											<label for="save-as-draft-number">Order Number</label>
-											<input type="text" name="save-as-draft-number">
-											<span class="btn blue-button">Save</span>
-										</div>
-									</div>
-									<div class="save-as-quote">
-										<span class="btn light-grey-button full-width">Quote</span>
-										<div class="save-as-quote-form">
-											<label for="save-as-quote-name">Job Name</label>
-											<input type="text" name="save-as-quote-name">
-											<label for="save-as-quote-number">Order Number</label>
-											<input type="text" name="save-as-quote-number">
-											<span class="btn blue-button">Save</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-6 col-xs-12">
+						<div class="col-sm-6 col-xs-12 col-sm-push-6">
 							<div class="inner-wrap" id="total-summary-section">
 								<div class="shopping-cart-total">
 									<div class="left-col"><span class="subtotal-text">Subtotal</span></div>
@@ -250,10 +198,54 @@
 									<div class="left-col"><span class="grandtotal-text">Total <span>inc. GST</span></span></div>
 									<div class="right-col"><span class="grandtotal-value">$1093.50</span></div>
 									<div class="clear-fix"></div>
+									<div class="submit-button-wrap">
 									<input type="submit" value="Submit order" class="btn blue-button small-width">
+									</div>
 								</div>
 							</div>
 						</div>
+						<div class="col-sm-6 col-xs-12 col-sm-pull-6">
+							<div class="inner-wrap" id="save-as-section">
+								<a href="#" class="btn grey-button small-width continue-shopping-button"><i class="fa fa-chevron-left"></i> Continue shopping</a>
+								<div class="save-as-wrap">
+									<div class="save-as-main">
+										<span class="btn light-blue-button full-width">Save as</span>
+									</div>
+									<div class="save-as-list list-group-wrap">
+										<span class="btn light-grey-button full-width list-open">List</span>
+										<div class="save-as-list-form list-form">
+											<label for="save-as-list-name">Job Name</label>
+											<input type="text" name="save-as-list-name">
+											<label for="save-as-list-number">Order Number</label>
+											<input type="text" name="save-as-list-number">
+											<span class="btn blue-button">Save</span>
+										</div>
+									</div>
+									<div class="save-as-draft list-group-wrap">
+										<span class="btn light-grey-button full-width list-open">Draft order</span>
+										<div class="save-as-draft-form list-form">
+											<label for="save-as-draft-name">Job Name</label>
+											<input type="text" name="save-as-draft-name">
+											<label for="save-as-draft-number">Order Number</label>
+											<input type="text" name="save-as-draft-number">
+											<span class="btn blue-button">Save</span>
+										</div>
+									</div>
+									<div class="save-as-quote list-group-wrap">
+										<span class="btn light-grey-button full-width list-open">Quote</span>
+										<div class="save-as-quote-form list-form">
+											<label for="save-as-quote-name">Job Name</label>
+											<input type="text" name="save-as-quote-name">
+											<label for="save-as-quote-number">Order Number</label>
+											<input type="text" name="save-as-quote-number">
+											<span class="btn blue-button">Save</span>
+										</div>
+									</div>
+								</div>
+								<div class="clear-fix"></div>
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</div>

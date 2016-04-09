@@ -94,14 +94,74 @@
 				text-align: center;
 				width:35px;
 				height:35px;
+				.fa-plus{
+						display:inline;
+					}
+				.fa-check{
+					display:none;
+				}
+			}
+			&:hover{
+				cursor:pointer;
 			}
 		}
 	}
 }
 .shopping-cart-summary{
 	#save-as-section{
+
+		.continue-shopping-button,.save-as-wrap{
+			max-width:210px;
+			width:100%;
+			margin-bottom:10px;
+			float:left;
+			@media (max-width: @screen-xs-max) { 
+				max-width:100%;
+			}
+
+		}
+		.continue-shopping-button{
+			margin-right:10px;
+		}
+
+		.save-as-wrap{
+			background-color: @bg-light-grey;
+			padding:0;
+
+			label{
+				.gothamBook;
+			}
+			input{
+				margin-bottom:10px;
+			}
+			.list-group-wrap{
+				background:@bg-mid-grey;
+				border-bottom:solid 1px @white;
+			}
+		}
+		.save-as-list,.save-as-draft,.save-as-quote{
+			padding:0;
+			display:none;
+		}
+		.list-open{
+			color:@bg-button-light-blue;
+		}
+		.list-form{
+			padding:15px;
+			border-top:solid 1px @white;
+		}
+		.btn{
+			width:100%;
+			padding:15px;
+		}
+		@media (max-width: @screen-xs-max) { 
+			padding:30px 30px;
+		}
 	}
 	#total-summary-section{
+		.submit-button-wrap{
+			padding-top:30px;
+		}
 		.shopping-cart-total{
 			display:block;
 			margin:0 0 0 auto;
@@ -156,6 +216,12 @@
 					font-size:10px;
 					.gothamBook;
 				}
+			}
+			@media (max-width: @screen-xs-max) { 
+				max-width:100%;
+				background-color:@bg-light-grey;
+				padding:30px;
+				border-bottom:solid 1px @border-grey;
 			}
 		}
 	}
@@ -293,6 +359,7 @@
 						width:100px;
 						position:relative;
 						top:15px;
+
 						.radio-button{
 							text-align:center;
 							float:left;
@@ -302,6 +369,7 @@
 							font-size:14px;
 							.gothamBook;
 							padding: 10px 0;
+							.transition(.5s all ease-out );
 							&.active{
 								.gothamMedium;
 								background-color:@bg-button-light-blue;
@@ -357,7 +425,7 @@
 					.gothamBook;
 					color:@text-light-grey;
 				}
-				span{
+				.gst{
 					.gothamBook;
 					font-size:10px;
 				}
@@ -377,7 +445,7 @@
 					.gothamBook;
 					color:@text-light-grey;
 				}
-				span{
+				.gst{
 					.gothamBook;
 					font-size:10px;
 				}

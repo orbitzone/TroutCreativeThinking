@@ -17,35 +17,26 @@
 	.border-bottom{
 		border-bottom:solid 1px @border-light-grey;
 	}
-	.bg-location-icon{
-		background:url("../templates/images/icon-location.png") no-repeat top 30px left;
-		background-size:55px;
-		padding-left:75px;
-		min-height:120px;
-		@media (max-width: @screen-xs-max) { 
-			text-align:center;
-			padding-left:0;
-			background-position: top center;
-			min-height:0;
-			padding-top:92px;
-			margin-top:30px;
+	.icon-image{
+		max-width: 100px;
+		display:block;
+		margin:0 auto;
+		padding-bottom:15px;
+		&.icon-image-big{
+			max-width:120px;
 		}
-
-
-	}
-	.bg-mail-icon{
-		background:url("../templates/images/icon-mail.png") no-repeat top 30px left;
-		background-size:100px;
-		padding-left:120px;
-		min-height:120px;
-		@media (max-width: @screen-xs-max) { 
-			text-align:center;
-			padding-left:0;
-			background-position: top center;
-			min-height:0;
-			padding-top:80px;
+		img{
+			max-width:100%;
 		}
 	}
+	.button-section{
+		padding-top:20px;
+	}
+	.refnumber-section{
+		padding-bottom:60px;
+		border-bottom:solid 1px @border-light-grey;
+	}
+
 
 
 

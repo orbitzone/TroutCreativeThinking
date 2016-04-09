@@ -794,7 +794,7 @@ MAIN TITLE
 }
 #product-pages .main-section#checkout-cart-section .main-heading .left-col {
   float: left;
-  width: 60%;
+  width: 50%;
 }
 @media (max-width: 767px) {
   #product-pages .main-section#checkout-cart-section .main-heading .left-col {
@@ -804,7 +804,7 @@ MAIN TITLE
 }
 #product-pages .main-section#checkout-cart-section .main-heading .right-col {
   float: right;
-  width: 40%;
+  width: 50%;
 }
 #product-pages .main-section#checkout-cart-section .main-heading .right-col #steps-indicator {
   float: right;
@@ -1621,36 +1621,24 @@ MAIN TITLE
 #product-pages .main-section#checkout-success .border-bottom {
   border-bottom: solid 1px #eaeaea;
 }
-#product-pages .main-section#checkout-success .bg-location-icon {
-  background: url("../templates/images/icon-location.png") no-repeat top 30px left;
-  background-size: 55px;
-  padding-left: 75px;
-  min-height: 120px;
+#product-pages .main-section#checkout-success .icon-image {
+  max-width: 100px;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 15px;
 }
-@media (max-width: 767px) {
-  #product-pages .main-section#checkout-success .bg-location-icon {
-    text-align: center;
-    padding-left: 0;
-    background-position: top center;
-    min-height: 0;
-    padding-top: 92px;
-    margin-top: 30px;
-  }
+#product-pages .main-section#checkout-success .icon-image.icon-image-big {
+  max-width: 120px;
 }
-#product-pages .main-section#checkout-success .bg-mail-icon {
-  background: url("../templates/images/icon-mail.png") no-repeat top 30px left;
-  background-size: 100px;
-  padding-left: 120px;
-  min-height: 120px;
+#product-pages .main-section#checkout-success .icon-image img {
+  max-width: 100%;
 }
-@media (max-width: 767px) {
-  #product-pages .main-section#checkout-success .bg-mail-icon {
-    text-align: center;
-    padding-left: 0;
-    background-position: top center;
-    min-height: 0;
-    padding-top: 80px;
-  }
+#product-pages .main-section#checkout-success .button-section {
+  padding-top: 20px;
+}
+#product-pages .main-section#checkout-success .refnumber-section {
+  padding-bottom: 60px;
+  border-bottom: solid 1px #eaeaea;
 }
 #product-pages #shopping-cart #cart-view-options .one-option {
   display: inline-block;

@@ -115,14 +115,6 @@
 										</div>
 									</div>
 									<div class="clear-fix"></div>
-									<div class="form-group half sm-full">
-										<label for="receiving_jobname">Job Name</label>
-										<input  name="receiving_jobname"  type="text" class="" id="receiving_jobname"  required tabindex="10">
-									</div>
-									<div class="form-group half sm-full">
-										<label for="receiving_ordernumber">Order Number</label>
-										<input  name="receiving_ordernumber"  type="text" class="" id="receiving_ordernumber"  required tabindex="11">
-									</div>
 									<div class="form-group full">
 										<div class="info">
 											<h6>How would you like to recieve the goods? </h6>

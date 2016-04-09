@@ -2,6 +2,14 @@
 
 
 #cart-view-options{
+
+.xs-left-col{
+display:inline-block;
+}
+.xs-right-col{
+display:inline-block;
+}
+
 	.one-option{
 		display:inline-block;
 		width: 120px;
@@ -32,8 +40,30 @@
 		.one-option{
 			float:none;
 			&.checkbox-option{
-				position:relative;
-				top:-12px;
+				//position:relative;
+				//top:-12px;
+				display:block;
+				margin:0;
+			}
+			&.dropdown-option{
+				display:block;
+				margin:0;
+			}
+		}
+		.xs-left-col{
+			display:block;
+			width:49%;
+			float:left;
+			.one-option{
+				float:right;
+			}
+		}
+		.xs-right-col{
+			display:block;
+			width:49%;
+			float:right;
+			.one-option{
+				float:left;
 			}
 		}
 
@@ -277,7 +307,8 @@
 					}
 					@media (max-width: @screen-xs-max) { 
 						width:100%;
-						max-width:none;
+						max-width:150px;
+						margin:0 auto;
 					}
 				}
 				@media (max-width: @screen-xs-max) { 
@@ -317,6 +348,7 @@
 				}
 				@media (max-width: @screen-xs-max) { 
 					padding-bottom:5px;
+					padding-top:0;
 				}
 			}
 			&.item-quantity{
@@ -330,7 +362,8 @@
 					text-align:center;
 					font-size:16px;
 					@media (max-width: @screen-xs-max) { 
-						width:100px;
+						width:150px;
+						max-width:100%;
 					}
 				}
 				.quantity-hidden{
@@ -378,6 +411,8 @@
 						}
 						@media (max-width: @screen-xs-max) { 
 							top:0;
+							width:150px;
+							max-width:100%;
 						}
 					}
 					@media (max-width: @screen-xs-max) { 
@@ -455,8 +490,16 @@
 				text-align: center; 
 				.item-inner{
 					padding-top:25px;
+					.transition(all .2s ease-in);
 					@media (max-width: @screen-xs-max) { 
 						padding-top:0px;
+						border:solid 1px @border-light-grey;
+						background-color: @bg-light-grey;
+						margin-top:10px;
+						&:hover{
+							cursor:pointer;
+							background-color:@white;
+						}
 					}
 				}
 				.remove-button{
@@ -488,20 +531,9 @@
 					}
 				}
 			}
-			@media (max-width: @screen-xxs-max) { 
-				min-height: none;
-				&.item-thumbnail,&.item-details,&.item-quantity,&.item-unitprice,&.item-subtotal,&.item-remove{ 
-					&.xxs-full{
-						width:100%;
-						float:none;
-						&.item-thumbnail {
-							max-width:150px;
-						}
-					}
-				}
-			}
 			@media (max-width: @screen-xs-max) { 
 				min-height: auto;
+
 			}
 		}
 	}

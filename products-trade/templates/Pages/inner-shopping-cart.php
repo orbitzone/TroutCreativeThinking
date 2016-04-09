@@ -32,19 +32,23 @@
 						<div class="col-xs-12 col-sm-5">
 							<div class="inner-wrap">
 								<div id="cart-view-options">
+								<span class="xs-left-col">
+									<div class="one-option dropdown-option">
+										<select id="cmp-option">
+											<option value="cmp1">CMP</option>
+											<option value="cmp2">MP</option>
+										</select>
+									</div>
+									<div class="clear-fix"></div>
+								</span>
+								<span class="xs-right-col">
 
-								<div class="one-option dropdown-option">
-									<select id="cmp-option">
-										<option value="cmp1">CMP</option>
-										<option value="cmp2">MP</option>
-									</select>
-</div>
-<div class="one-option checkbox-option">
-
-									GST <input type="checkbox" name="gst" value"gst">
-</div>
-<div class="clear-fix"></div>
-
+									<div class="one-option checkbox-option">
+										GST <input type="checkbox" name="gst" value"gst">
+									</div>
+									<div class="clear-fix"></div>
+									</span>
+									<div class="clear-fix"></div>
 								</div>
 							</div>
 						</div>
@@ -90,21 +94,20 @@
 									<div class="item-data item-details xs-left xxs-full">
 										<div class="item-inner">
 											<span class="product-code">45454545<?php echo $i ?></span>
-											<span class="product-name">Thermann Electric Storage</span>
-											<span class="product-description">DWV 4 way riser M&F 555x22x22x333x22</span>
+											<span class="product-name">Armitage Shanks</span>
+											<span class="product-description">Portman21 600 Accessible Wall Basin No Taphole</span>
 										</div>
 									</div>
 									<div class="item-data item-quantity xs-left">
 										<div class="item-inner">
 											<div class="quantity-wrap">
-											<span class="quantity-hidden">
-											<input class="quantity-radio" type="radio" id="set-<?php echo $i ?>-ea" name="set-<?php echo $i ?>" value="EA" checked>
+												<span class="quantity-hidden">
+													<input class="quantity-radio" type="radio" id="set-<?php echo $i ?>-ea" name="set-<?php echo $i ?>" value="EA" checked>
 													<input class="quantity-radio" data-productcode="<?php echo $i ?>" type="radio" id="set-<?php echo $i ?>-pkt" name="set-<?php echo $i ?>" value="PKT">
-											</span>
+												</span>
 												<span class="quantity-input">
 													<input class="quantity-number" data-productcode="<?php echo $i ?>" type="number" name="quantity-<?php echo $i ?>" min="1" value="1">
 												</span>
-
 												<span class="quantity-set">
 													<div class="radiolabel-set">
 														<label for="set-<?php echo $i ?>-ea" class="radio-button active">EA</label>
@@ -155,14 +158,13 @@
 												<span class="product-description">Lorem ipsum dolor sit amet.</span>
 											</div>
 											<div class="add-button-wrap">
-												<span class="action-add-product" 
-												
-												data-productcode="45454545"
-												data-name="Thermann Electric Storage"
-												data-description="Lorem ipsum dolor sit amet."
-												data-image="templates/images/product1.jpg"
-												data-unitprice="$55.35"
-
+												<span class="action-add-product"
+													
+													data-productcode="45454545"
+													data-name="Thermann Electric Storage"
+													data-description="Lorem ipsum dolor sit amet."
+													data-image="templates/images/product1.jpg"
+													data-unitprice="$55.35"
 												><i class="fa fa-plus"></i><i class="fa fa-check"></i></span>
 											</div>
 										</div>
@@ -199,7 +201,7 @@
 									<div class="right-col"><span class="grandtotal-value">$1093.50</span></div>
 									<div class="clear-fix"></div>
 									<div class="submit-button-wrap">
-									<input type="submit" value="Submit order" class="btn blue-button small-width">
+										<input type="submit" value="Submit order" class="btn blue-button small-width">
 									</div>
 								</div>
 							</div>
@@ -245,7 +247,6 @@
 								<div class="clear-fix"></div>
 							</div>
 						</div>
-
 					</div>
 				</div>
 			</div>

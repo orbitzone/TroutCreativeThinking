@@ -131,7 +131,7 @@
 										</div>
 										<div class="clear-fix"></div>
 										<div class="radio-inputs">
-											<input type="radio" name="receiving_receivegoods" id="receiving_receivegoods_pickup" value="pickup" required tabindex="12"><input type="radio" name="receiving_receivegoods" id="receiving_receivegoods_delivery" value="delivery" required tabindex="12">
+											<input type="radio" name="receiving_receivegoods" id="receiving_receivegoods_pickup" value="pickup" required tabindex="10"><input type="radio" name="receiving_receivegoods" id="receiving_receivegoods_delivery" value="delivery" required tabindex="10">
 										</div>
 									</div>
 									<div class="clear-fix"></div>
@@ -151,11 +151,11 @@
 									</div>
 									<div class="form-group half-big">
 										<label for="receiving_date">Required By</label>
-										<input name="receiving_date" type="text" class="" id="receiving_date" placeholder="Select date" value="" readonly="readonly" required tabindex="14">
+										<input name="receiving_date" type="text" class="" id="receiving_date" placeholder="Select date" value="" readonly="readonly" required tabindex="11">
 									</div>
 									<div class="form-group half-small">
 										<label for="receiving_time">Time</label>
-										<select name="receiving_time" class="" id="receiving_time" required tabindex="15">
+										<select name="receiving_time" class="" id="receiving_time" required tabindex="12">
 											<option value="9:30am" selected>9:30AM</option>
 											<option value="10am">10:00AM</option>
 											<option value="10:30am">10:30AM</option>
@@ -182,14 +182,14 @@
 										<label for="receiving_previousaddress">Delivery Address</label>
 									</div>
 									<div class="form-group half full-sm select-previous-address no-space-top">
-										<select name="receiving_previousaddress" class="" id="receiving_previousaddress" required tabindex="16">
+										<select name="receiving_previousaddress" class="" id="receiving_previousaddress" required tabindex="13">
 											<option value="">Select previous address</option>
 										</select>
 										<div class="clear-fix"></div>
 									</div>
 									<div class="form-group half full-sm text-right enter-new-address no-space-top enter-new-address-bottom">
 										<span class="or">OR</span>
-										<button type="button" class="btn green-button new-address action-enter-new-address" tabindex="17">Enter new address</button>
+										<button type="button" class="btn green-button new-address action-enter-new-address" tabindex="14">Enter new address</button>
 										<div class="clear-fix"></div>
 									</div>
 									<div class="clear-fix"></div>
@@ -197,15 +197,15 @@
 										<div class="inner-form-section">
 											<div class="form-group full">
 												<label for="receiving_address">Street Address</label>
-												<input name="receiving_address" type="text" class="" id="receiving_address"  required tabindex="18">
+												<input name="receiving_address" type="text" class="" id="receiving_address"  required tabindex="15">
 											</div>
 											<div class="form-group half sm-full">
 												<label for="receiving_suburb">Suburb</label>
-												<input name="receiving_suburb" type="text" class="" id="receiving_suburb"  required tabindex="19">
+												<input name="receiving_suburb" type="text" class="" id="receiving_suburb"  required tabindex="16">
 											</div>
 											<div class="form-group quarter-big" >
 												<label for="receiving_state">State</label>
-												<select name="receiving_state" class="" id="receiving_state" tabindex="20">
+												<select name="receiving_state" class="" id="receiving_state" tabindex="17">
 													<option value="ACT">ACT</option>
 													<option value="NT">NT</option>
 													<option value="NSW">NSW</option>
@@ -218,16 +218,16 @@
 											</div>
 											<div class="form-group quarter-small">
 												<label for="receiving_postcode">Postcode</label>
-												<input name="receiving_postcode" type="number" class="" id="receiving_postcode" required tabindex="21" min="1000" max="9999">
+												<input name="receiving_postcode" type="number" class="" id="receiving_postcode" required tabindex="18" min="1000" max="9999">
 											</div>
 											<div class="clear-fix"></div>
 											<div class="form-group half sm-full">
 												<label for="receiving_name">Site Contact Name</label>
-												<input name="receiving_name" type="text" class="" id="receiving_name"  required tabindex="22">
+												<input name="receiving_name" type="text" class="" id="receiving_name"  required tabindex="19">
 											</div>
 											<div class="form-group half sm-full">
 												<label for="receiving_phone">Site Contact Phone</label>
-												<input name="receiving_phone" type="text" class="" id="receiving_phone"  required tabindex="23">
+												<input name="receiving_phone" type="text" class="" id="receiving_phone"  required tabindex="20">
 											</div>
 											<div class="clear-fix"></div>
 										</div>
@@ -257,7 +257,7 @@
 											</div>
 											<div class="branch-info-autocomplete">
 												<label for="pickup_branch">Pick Up Branch</label>
-												<input name="pickup_branch" type="text" class="pickup_branch search-box" id="pickup_branch" autocomplete="false" tabindex="24">
+												<input name="pickup_branch" type="text" class="pickup_branch search-box" id="pickup_branch" autocomplete="false" tabindex="21">
 												<div class="clear-fix"></div>
 												<div id="pickupbranch-results" class="transition-height">
 												</div>
@@ -270,25 +270,25 @@
 									</div>
 									<div class="clear-fix"></div>
 									<div class="form-group half full-sm select-previous-address no-space-top">
-										<select name="pickup_previouscontact" class="" id="pickup_previouscontact" required tabindex="25">
+										<select name="pickup_previouscontact" class="" id="pickup_previouscontact" required tabindex="22">
 											<option value="">Select previous contact</option>
 										</select>
 										<div class="clear-fix"></div>
 									</div>
 									<div class="form-group half full-sm text-right enter-new-contact no-space-top">
 										<span class="or">OR</span>
-									<button type="button" class="btn green-button new-contact action-enter-new-contact" tabindex="26">Enter new contact</div>
+									<button type="button" class="btn green-button new-contact action-enter-new-contact" tabindex="23">Enter new contact</div>
 									<div class="clear-fix"></button>
 									</div>
 									<div class="clear-fix"></div>
 									<div class="inner-section">
 										<div class="form-group half full-sm">
 											<label for="pickup_name">Name</label>
-											<input name="pickup_name" type="text" class="" id="pickup_name"  required tabindex="27">
+											<input name="pickup_name" type="text" class="" id="pickup_name"  required tabindex="24">
 										</div>
 										<div class="form-group half full-sm">
 											<label for="pickup_phone">Phone</label>
-											<input name="pickup_phone" type="text" class="" id="pickup_phone"  required tabindex="28">
+											<input name="pickup_phone" type="text" class="" id="pickup_phone"  required tabindex="25">
 										</div>
 										<div class="clear-fix"></div>
 									</div>
@@ -296,14 +296,14 @@
 								<div id="order-comments">
 									<div class="form-group full space-above">
 										<label for="pickup_ordercomments">Order Comments</label>
-										<textarea name="pickup_ordercomments" rows="8" id="pickup_ordercomments" placeholder="e.g. If I'm not at home, please leave goods in garage." tabindex="29"></textarea>
+										<textarea name="pickup_ordercomments" rows="8" id="pickup_ordercomments" placeholder="e.g. If I'm not at home, please leave goods in garage." tabindex="26"></textarea>
 									</div>
 								</div>
 								<div class="form-group half text-left">
-									<button type="button" class="btn prev-button next-button grey-button action-goto-step1 clickable" id="step2previous" tabindex="31">Previous</button>
+									<button type="button" class="btn prev-button next-button grey-button action-goto-step1 clickable" id="step2previous" tabindex="27">Previous</button>
 								</div>
 								<div class="form-group half text-right">
-									<button type="button" class="btn prev-button next-button green-button action-goto-step3 clickable" id="step3next" tabindex="31">Next</button>
+									<button type="button" class="btn prev-button next-button green-button action-goto-step3 clickable" id="step3next" tabindex="28">Next</button>
 								</div>
 								<div class="clear-fix"></div>
 							</div>
@@ -342,7 +342,7 @@
 								</div>
 								<div class="clear-fix"></div>
 								<div class="form-group half full-sm select-previous-address no-space-top">
-									<select name="payment_paymenttype" class="" id="payment_paymenttype" required tabindex="25">
+									<select name="payment_paymenttype" class="" id="payment_paymenttype" required tabindex="29">
 										<option value="creditcard" selected>Credit Card</option>
 										<option value="directdebit">Direct Credit</option>
 									</select>
@@ -369,26 +369,26 @@
 									</div>
 									<div class="clear-fix"></div>
 									<div class="radio-inputs">
-										<input type="radio" name="payment_card" id="payment_card_visa" value="visa" required tabindex="12">
-										<input type="radio" name="payment_card" id="payment_card_mastercard" value="mastercard" required tabindex="12">
-										<input type="radio" name="payment_card" id="payment_card_amex" value="amex" required tabindex="12">
+										<input type="radio" name="payment_card" id="payment_card_visa" value="visa" required tabindex="30">
+										<input type="radio" name="payment_card" id="payment_card_mastercard" value="mastercard" required tabindex="30">
+										<input type="radio" name="payment_card" id="payment_card_amex" value="amex" required tabindex="30">
 									</div>
 									<div class="clear-fix"></div>
 									</div>
 
 									<div class="form-group full">
 										<label for="payment_cardholdername">Cardholder Name</label>
-										<input  name="payment_cardholdername"  type="text" class="" id="payment_cardholdername"  required tabindex="10">
+										<input  name="payment_cardholdername"  type="text" class="" id="payment_cardholdername"  required tabindex="31">
 									</div>
 									<div class="form-group full">
 										<label for="payment_cardnumber">Cardholder Number</label>
-										<input  name="payment_cardnumber"  type="number" class="" id="payment_cardnumber"  required tabindex="10">
+										<input  name="payment_cardnumber"  type="number" class="" id="payment_cardnumber"  required tabindex="32">
 									</div>
 
 								<div class="form-group full">
 									<div class="inner-third-third left text-left">
 										<label for="creditcard_month">Expiry Month</label>
-										<select name="creditcard_month" class="" id="creditcard_month" required tabindex="25">
+										<select name="creditcard_month" class="" id="creditcard_month" required tabindex="33">
 											<option value="01" selected>01</option>
 											<option value="02">02</option>
 											<option value="03">03</option>
@@ -407,7 +407,7 @@
 
 									<div class="inner-third-third middle text-left">
 										<label for="creditcard_year">Expiry Year</label>
-										<select name="creditcard_year" class="" id="creditcard_year" required tabindex="25">
+										<select name="creditcard_year" class="" id="creditcard_year" required tabindex="34">
 											<option value="2016" selected>2016</option>
 											<option value="2017">2017</option>
 											<option value="2018">2018</option>
@@ -427,7 +427,7 @@
 									<div class="inner-third-small right text-left">
 										<label class="nowrap" for="payment_cvv">CVV <a class="small-link" href="">What is this?</a></label>
 										
-									<input  name="payment_cvv"  type="number" class="" id="payment_cvv"  required tabindex="10">
+									<input  name="payment_cvv"  type="number" class="" id="payment_cvv"  required tabindex="35">
 
 
 										<div class="clear-fix"></div>
@@ -457,10 +457,10 @@
 								</div>
 
 								<div class="form-group half text-left">
-									<button type="button" class="btn prev-button next-button grey-button action-goto-step2 clickable go-back" id="step3previous" tabindex="31">Previous</button>
+									<button type="button" class="btn prev-button next-button grey-button action-goto-step2 clickable go-back" id="step3previous" tabindex="36">Previous</button>
 								</div>
 								<div class="form-group half text-right">
-									<button type="submit" class="btn next-button green-button" id="final-submit-button" tabindex="32">Submit Order</button>
+									<button type="submit" class="btn next-button green-button" id="final-submit-button" tabindex="37">Submit Order</button>
 								</div>
 								<div class="clear-fix"></div>
 							</div>

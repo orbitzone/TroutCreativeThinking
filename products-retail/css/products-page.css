@@ -1199,7 +1199,8 @@ MAIN TITLE
 }
 @media (max-width: 767px) {
   #product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group.full .inner-third-small {
-    width: 100%;
+    width: 50%;
+    padding-right: 10px;
   }
 }
 @media (max-width: 991px) {

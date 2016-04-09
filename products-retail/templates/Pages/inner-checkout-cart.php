@@ -27,9 +27,9 @@
 						<div class="right-col">
 							<div id="steps-indicator">
 								<span id="steps-indicator1" class="indicator-button action-goto-step1 clickable">1</span>
-								<span class="dots"></span>
+								<span class="dots">....</span>
 								<span id="steps-indicator2" class="indicator-button action-goto-step2">2</span>
-								<span class="dots"></span>
+								<span class="dots">....</span>
 								<span id="steps-indicator3" class="indicator-button">3</span>
 
 							</div>

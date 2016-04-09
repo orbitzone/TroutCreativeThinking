@@ -2001,6 +2001,6 @@ MAIN TITLE
 }
 @media (max-width: 767px) {
   #product-pages #shopping-cart .shopping-cart-listing .inner-wrap .item-data {
-    min-height: auto;
+    min-height: 5px;
   }
 }

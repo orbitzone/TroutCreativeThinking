@@ -1,5 +1,33 @@
 .main-section#checkout-cart-section{
 
+#steps-indicator{
+	.indicator-button{
+		font-size:20px;
+		border:solid 2px @text-light-grey;
+		.border-radius(100px);
+		line-height:20px;
+		padding:9px 10px;
+		width:45px;
+		height:45px;
+		color:@text-light-grey;
+		.gothamMedium;
+		text-align:center;
+		display:inline-block;
+		&.clickable{
+			color:@text-green;
+			border:solid 2px @text-green;
+			&:hover{
+			cursor:pointer;
+			}
+		}
+		&:hover{
+			cursor:auto;
+		}
+	}
+
+}
+
+
 margin-bottom:-35px;
 
 	.main-heading{
@@ -29,7 +57,6 @@ margin-bottom:-35px;
 			
 			#order-details,#receiving-goods,#payment-checkout{
 				.header-section{
-					border-bottom:solid 1px @border-light-grey;
 					padding-top:40px;
 					padding-bottom:30px;
 					padding-left:15px;
@@ -77,7 +104,7 @@ margin-bottom:-35px;
 					margin-right:10px;
 				}
 			}
-			#pickup-details,#delivery-details, #order-comments{
+			#pickup-details,#delivery-details, #order-comments,#direct-debit-choice{
 				display:none;
 			}
 			#pickup-details,#delivery-details{
@@ -300,7 +327,7 @@ margin-bottom:-35px;
 
 						.inner-third-third{
 							width:33.3333%;
-							padding-top:10px;
+							padding-top:0;
 							float:left;
 							padding-right:10px;
 							@media (max-width: @screen-xs-max) {
@@ -309,7 +336,7 @@ margin-bottom:-35px;
 						}
 						.inner-third-small{
 							width:22%;
-							padding-top:10px;
+							padding-top:0;
 							float:left;
 							@media (max-width: @screen-xs-max) {
 								width:100%;
@@ -557,6 +584,14 @@ margin-bottom:-35px;
 								padding: 30px 0;
 							}	
 						}
+						&.visa-button, &.mastercard-button,&.amex-button{
+							label{
+								@media (max-width: @screen-xs-max) {
+									font-size:13px;
+								}
+							}
+
+						}
 						&.visa-button{
 							margin-left:0;
 							margin-right:6px;
@@ -615,6 +650,7 @@ margin-bottom:-35px;
 							}
 							@media (max-width: @screen-xs-max) {
 								padding: 15px 0;
+
 							}	
 						}
 						&.amex-button{

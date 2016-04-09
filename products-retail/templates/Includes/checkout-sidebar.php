@@ -86,7 +86,29 @@
 		<!--START OF FOOTER INFO -->
 		<footer>
 			<div class="info-wrap">
-				<p>Time frames will differ depending on the type of product/s ordered.</p>
+				<div class="one-icon-info">
+					<div class="icon-image"><img src="templates/images/icon-person.png" alt=""></div>
+					<p>A Reece consultant will be in touch within one working day.</p>
+				</div>
+				<div class="one-icon-info">
+					<div class="icon-image"><img src="templates/images/icon-clock.png" alt=""></div>
+					<p>Time frames will differ depending on product/s ordered.</p>
+				</div>
+				<div class="clear-fix"></div>
+				<div class="one-icon-info">
+					<div class="icon-image"><img src="templates/images/icon-return.png" alt=""></div>
+					<p><strong>EASY RETURNS</strong><br>400 locations</p>
+				</div>
+				<div class="one-icon-info">
+					<div class="icon-image"><img src="templates/images/icon-phone.png" alt=""></div>
+					<p><strong>NEED ASSISTANCE?</strong><br>Call 1800 032 566</p>
+				</div>
+				<div class="clear-fix"></div>
+
+
+
+
+
 			</div>
 		</footer>
 		<!--END OF FOOTER INFO -->

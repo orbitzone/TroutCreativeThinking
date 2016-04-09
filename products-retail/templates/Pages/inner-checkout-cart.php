@@ -20,7 +20,21 @@
 			<div class="col-sm-7 col-sm-pull-5 section">
 				<div id="order-form" class="padding-top">
 					<header class="main-heading">
-						<h1>Secure Checkout</h1>
+						
+						<div class="left-col">
+							<h1>Secure Checkout</h1>
+						</div>
+						<div class="right-col">
+							<div id="steps-indicator">
+								<span id="steps-indicator1" class="indicator-button action-goto-step1 clickable">1</span>
+								<span class="dots"></span>
+								<span id="steps-indicator2" class="indicator-button action-goto-step2">2</span>
+								<span class="dots"></span>
+								<span id="steps-indicator3" class="indicator-button">3</span>
+
+							</div>
+						</div>
+						<div class="clear-fix"></div>
 					</header>
 					<form id="checkout-cart" action="checkout-cart-success.php">
 						<!--START OF STEP 1 - DETAILS SECTION -->
@@ -28,7 +42,7 @@
 							
 							<div class="form-section">
 								<div class="form-group-wrap">
-									<header class="header-section btn-bhv action-goto-step1 active">
+									<header class="header-section">
 										<h3>1. Details</h3>
 									</header>
 									<div class="form-group gen-error gen-error1">
@@ -80,7 +94,7 @@
 										<input name="details_postcode" type="number" class="" id="details_postcode" min="1000" max="9999" required tabindex="8">
 									</div>
 									<div class="form-group full text-right">
-										<button type="button" class="btn next-button green-button action-goto-step2" id="step1next" tabindex="9">Next</button>
+										<button type="button" class="btn next-button green-button action-goto-step2 clickable" id="step1next" tabindex="9">Next</button>
 									</div>
 									<div class="clear-fix"></div>
 								</div>
@@ -92,7 +106,7 @@
 							
 							<div class="form-section">
 								<div class="form-group-wrap">
-									<header class="header-section btn-bhv action-goto-step2">
+									<header class="header-section">
 										<h3>2. Receiving Goods</h3>
 									</header>
 									<div class="form-group gen-error gen-error2">
@@ -289,23 +303,15 @@
 								</div>
 								<div id="order-comments">
 									<div class="form-group full space-above">
-										<label for="pickup_ordercomments"><span class="h3">Order Comments</span></label>
+										<label for="pickup_ordercomments">Order Comments</label>
 										<textarea name="pickup_ordercomments" rows="8" id="pickup_ordercomments" placeholder="e.g. If I'm not at home, please leave goods in garage." tabindex="29"></textarea>
-									</div>
-									<div class="form-group full space-below">
-										<label>Order Notification</label>
-										<ul class="radio-list">
-											<li> <label for="pickup_notification_none"><span class="radio-button"><input type="radio" name="pickup_notification" id="pickup_notification_none" value="none" checked tabindex="30"></span>None</label></li>
-											<li> <label for="pickup_notification_email"><span class="radio-button"><input type="radio" name="pickup_notification" id="pickup_notification_email" value="email" tabindex="30"></span>Email</label></li>
-											<li><label for="pickup_notification_sms"><span class="radio-button"><input type="radio" name="pickup_notification" id="pickup_notification_sms" value="sms" tabindex="30"> </span>SMS</label></li>
-										</ul>
 									</div>
 								</div>
 								<div class="form-group half text-left">
-									<button type="button" class="btn prev-button next-button grey-button action-goto-step1" id="step2previous" tabindex="31">Previous</button>
+									<button type="button" class="btn prev-button next-button grey-button action-goto-step1 clickable" id="step2previous" tabindex="31">Previous</button>
 								</div>
 								<div class="form-group half text-right">
-									<button type="button" class="btn prev-button next-button green-button action-goto-step3" id="step3next" tabindex="31">Next</button>
+									<button type="button" class="btn prev-button next-button green-button action-goto-step3 clickable" id="step3next" tabindex="31">Next</button>
 								</div>
 								<div class="clear-fix"></div>
 							</div>
@@ -330,7 +336,7 @@
 						
 						<div class="form-section">
 							<div class="form-group-wrap">
-								<header class="header-section btn-bhv action-goto-step2">
+								<header class="header-section btn-bhv">
 									<h3>3. Payment</h3>
 								</header>
 								<div class="form-group gen-error gen-error3">
@@ -344,7 +350,7 @@
 								</div>
 								<div class="clear-fix"></div>
 								<div class="form-group half full-sm select-previous-address no-space-top">
-									<select name="pickup_previouscontact" class="" id="pickup_previouscontact" required tabindex="25">
+									<select name="payment_paymenttype" class="" id="payment_paymenttype" required tabindex="25">
 										<option value="creditcard" selected>Credit Card</option>
 										<option value="directdebit">Direct Credit</option>
 									</select>
@@ -389,10 +395,9 @@
 
 								<div class="form-group full">
 									<div class="inner-third-third left text-left">
-										<label for="creditcard_month">Expiry Date</label>
+										<label for="creditcard_month">Expiry Month</label>
 										<select name="creditcard_month" class="" id="creditcard_month" required tabindex="25">
-											<option value="" selected>MONTH</option>
-											<option value="01">01</option>
+											<option value="01" selected>01</option>
 											<option value="02">02</option>
 											<option value="03">03</option>
 											<option value="04">04</option>
@@ -409,10 +414,9 @@
 									</div>
 
 									<div class="inner-third-third middle text-left">
-										<label for="creditcard_year">&nbsp;</label>
+										<label for="creditcard_year">Expiry Year</label>
 										<select name="creditcard_year" class="" id="creditcard_year" required tabindex="25">
-											<option value="" selected>YEAR</option>
-											<option value="2016">2016</option>
+											<option value="2016" selected>2016</option>
 											<option value="2017">2017</option>
 											<option value="2018">2018</option>
 											<option value="2019">2019</option>
@@ -446,7 +450,7 @@
 
 
 								<!-- START: DELIVERY DETAILS -->
-								<div id="credit-card-choice">
+								<div id="direct-debit-choice">
 								<div class="form-group full">
 									
 									<p><strong>Direct Debit Details</strong></p>
@@ -461,7 +465,7 @@
 								</div>
 
 								<div class="form-group half text-left">
-									<button type="button" class="btn prev-button next-button grey-button action-goto-step2" id="step3previous" tabindex="31">Previous</button>
+									<button type="button" class="btn prev-button next-button grey-button action-goto-step2 clickable go-back" id="step3previous" tabindex="31">Previous</button>
 								</div>
 								<div class="form-group half text-right">
 									<button type="submit" class="btn next-button green-button" id="final-submit-button" tabindex="32">Submit Order</button>

@@ -212,36 +212,38 @@
 								<a href="#" class="btn grey-button small-width continue-shopping-button"><i class="fa fa-chevron-left"></i> Continue shopping</a>
 								<div class="save-as-wrap">
 									<div class="save-as-main">
-										<span class="btn light-blue-button full-width">Save as</span>
+										<span class="btn light-blue-button full-width save-as-main-button">Save as</span>
 									</div>
-									<div class="save-as-list list-group-wrap">
-										<span class="btn light-grey-button full-width list-open">List</span>
-										<div class="save-as-list-form list-form">
-											<label for="save-as-list-name">List Name</label>
-											<input type="text" name="save-as-list-name">
-											<label for="save-as-list-number">Order Number</label>
-											<input type="text" name="save-as-list-number">
-											<button type="button" class="btn blue-button">Save</button>
+									<div class="save-inner-wrapper">
+										<div class="save-as-list list-group-wrap">
+											<span class="btn light-grey-button full-width list-open">List</span>
+											<div class="save-as-list-form list-form">
+												<label for="save-as-list-name">List Name</label>
+												<input type="text" name="save-as-list-name">
+												<label for="save-as-list-number">Order Number</label>
+												<input type="text" name="save-as-list-number">
+												<button type="button" class="btn blue-button">Save</button>
+											</div>
 										</div>
-									</div>
-									<div class="save-as-draft list-group-wrap">
-										<span class="btn light-grey-button full-width list-open">Draft order</span>
-										<div class="save-as-draft-form list-form">
-											<label for="save-as-draft-name">Order Name</label>
-											<input type="text" name="save-as-draft-name">
-											<label for="save-as-draft-number">Order Number</label>
-											<input type="text" name="save-as-draft-number">
-											<button type="button" class="btn blue-button">Save</button>
+										<div class="save-as-draft list-group-wrap">
+											<span class="btn light-grey-button full-width list-open">Draft order</span>
+											<div class="save-as-draft-form list-form">
+												<label for="save-as-draft-name">Order Name</label>
+												<input type="text" name="save-as-draft-name">
+												<label for="save-as-draft-number">Order Number</label>
+												<input type="text" name="save-as-draft-number">
+												<button type="button" class="btn blue-button">Save</button>
+											</div>
 										</div>
-									</div>
-									<div class="save-as-quote list-group-wrap">
-										<span class="btn light-grey-button full-width list-open">Quote</span>
-										<div class="save-as-quote-form list-form">
-											<label for="save-as-quote-name">Quote Name</label>
-											<input type="text" name="save-as-quote-name">
-											<label for="save-as-quote-number">Order Number</label>
-											<input type="text" name="save-as-quote-number">
-											<button type="button" class="btn blue-button">Save</button>
+										<div class="save-as-quote list-group-wrap">
+											<span class="btn light-grey-button full-width list-open">Quote</span>
+											<div class="save-as-quote-form list-form">
+												<label for="save-as-quote-name">Quote Name</label>
+												<input type="text" name="save-as-quote-name">
+												<label for="save-as-quote-number">Order Number</label>
+												<input type="text" name="save-as-quote-number">
+												<button type="button" class="btn blue-button">Save</button>
+											</div>
 										</div>
 									</div>
 								</div>

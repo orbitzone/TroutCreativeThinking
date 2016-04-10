@@ -444,6 +444,7 @@
 								<!-- START: DELIVERY DETAILS -->
 								<div id="direct-debit-choice">
 								<div class="form-group full">
+								<div class="direct-debit-info-box">
 									
 									<p><strong>Direct Debit Details</strong></p>
 									<table class="direct-debit-details">
@@ -452,6 +453,7 @@
 									<tr><td class="item-name">REF #</td><td class="item-detail">7888887</td></tr>
 									</table>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste minus, labore est vero, mollitia odio modi quas atque praesentium veniam fugiat, beatae incidunt rem recusandae suscipit.</p>
+								</div>
 
 								</div>
 								</div>

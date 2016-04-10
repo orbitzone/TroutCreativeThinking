@@ -31,9 +31,10 @@
 						</div>
 						<div class="right-col">
 							<div class="inner-right-col text-right">
-								<div class="quantity">1<span>PKT</span></div>
+								
 							</div>
 							<div class="inner-left-col text-left">
+								<div class="quantity">x1</div>
 								<div class="product-code">123456789</div>
 								<div class="name">Lorem ipsum dolor sit amet</div>
 								<div class="description">Lorem ipsum dolor sit amet</div>

@@ -483,7 +483,7 @@ var product_pages = {
         $(".product-suggestion .open-close-button").click(
             function() {
                 if ($(this).hasClass("opened")) {
-                    $(".product-suggestion .suggestion-item-content").fadeOut();
+                    $(".product-suggestion .suggestion-item-content").slideUp();
                     $(".product-suggestion .open-close-button .fa-minus").fadeOut("fast",
                         function() {
                             $(".product-suggestion .open-close-button .fa-plus").fadeIn("fast",
@@ -493,7 +493,7 @@ var product_pages = {
                         }
                     );
                 } else {
-                    $(".product-suggestion .suggestion-item-content").fadeIn();
+                    $(".product-suggestion .suggestion-item-content").slideDown();
                     $(".product-suggestion .open-close-button .fa-plus").fadeOut("fast",
                         function() {
                             $(".product-suggestion .open-close-button .fa-minus").fadeIn("fast",

@@ -626,7 +626,7 @@ MAIN TITLE
   }
 }
 #product-pages .main-section#checkout-cart-section #cart-sidebar .info-wrap .quantity {
-  font-size: 15px;
+  font-size: 12px;
   color: #333333;
 }
 #product-pages .main-section#checkout-cart-section #cart-sidebar .info-wrap .name {
@@ -648,7 +648,12 @@ MAIN TITLE
   font-family: "Gotham A", "Gotham B";
   font-style: normal;
   font-weight: 700;
-  padding-top: 8px;
+  padding-top: 40px;
+}
+@media (max-width: 991px) {
+  #product-pages .main-section#checkout-cart-section #cart-sidebar .info-wrap .price {
+    padding-top: 8px;
+  }
 }
 #product-pages .main-section#checkout-cart-section #cart-sidebar .info-wrap .heading-text {
   font-family: "Gotham A", "Gotham B";
@@ -870,6 +875,10 @@ MAIN TITLE
   color: red;
   font-size: .8em;
   padding-top: 5px;
+}
+#product-pages .main-section#checkout-cart-section #order-form .direct-debit-info-box {
+  background-color: #fafafa;
+  padding: 30px;
 }
 #product-pages .main-section#checkout-cart-section #order-form .transition-height {
   -webkit-transition: height 1s ease;
@@ -1506,15 +1515,18 @@ MAIN TITLE
   }
 }
 #product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.visa-button:hover label,
-#product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.visa-button.active label {
+#product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.visa-button.active label,
+#product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.visa-button.selected label {
   color: #6dc8b6;
 }
 #product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.visa-button:hover .icon-visa,
-#product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.visa-button.active .icon-visa {
+#product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.visa-button.active .icon-visa,
+#product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.visa-button.selected .icon-visa {
   background-position: center top;
 }
 #product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.visa-button:hover .radio-button,
-#product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.visa-button.active .radio-button {
+#product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.visa-button.active .radio-button,
+#product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.visa-button.selected .radio-button {
   border-color: #6dc8b6;
 }
 @media (max-width: 991px) {
@@ -1543,15 +1555,18 @@ MAIN TITLE
   }
 }
 #product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.mastercard-button:hover label,
-#product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.mastercard-button.active label {
+#product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.mastercard-button.active label,
+#product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.mastercard-button.selected label {
   color: #6dc8b6;
 }
 #product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.mastercard-button:hover .icon-mastercard,
-#product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.mastercard-button.active .icon-mastercard {
+#product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.mastercard-button.active .icon-mastercard,
+#product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.mastercard-button.selected .icon-mastercard {
   background-position: center top;
 }
 #product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.mastercard-button:hover .radio-button,
-#product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.mastercard-button.active .radio-button {
+#product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.mastercard-button.active .radio-button,
+#product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.mastercard-button.selected .radio-button {
   border-color: #6dc8b6;
 }
 @media (max-width: 991px) {
@@ -1580,15 +1595,18 @@ MAIN TITLE
   }
 }
 #product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.amex-button:hover label,
-#product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.amex-button.active label {
+#product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.amex-button.active label,
+#product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.amex-button.selected label {
   color: #6dc8b6;
 }
 #product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.amex-button:hover .icon-amex,
-#product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.amex-button.active .icon-amex {
+#product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.amex-button.active .icon-amex,
+#product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.amex-button.selected .icon-amex {
   background-position: center top;
 }
 #product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.amex-button:hover .radio-button,
-#product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.amex-button.active .radio-button {
+#product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.amex-button.active .radio-button,
+#product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group .picture-button.amex-button.selected .radio-button {
   border-color: #6dc8b6;
 }
 @media (max-width: 991px) {

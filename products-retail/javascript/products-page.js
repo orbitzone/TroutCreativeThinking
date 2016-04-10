@@ -286,12 +286,8 @@ $(".action-goto-step1.clickable").click(function() {
 //GO TO STEP 2
 //
 $(".action-goto-step2.clickable").click(function() {
-    
 
-
-
-
-if($(this).hasClass("go-back")){
+    if($(this).hasClass("go-back")){
 
         $("#order-details .form-section").hide();
         $("#receiving-goods .form-section").fadeIn("slow",
@@ -304,10 +300,10 @@ if($(this).hasClass("go-back")){
         $("#payment-checkout .form-section").hide();
         $("#steps-indicator2").addClass("clickable");
         $("#steps-indicator3").removeClass("clickable");
-        $(".gen-error.gen-error2").fadeOut();
+        $(".gen-error").fadeOut();
 
-}
-else if($("#checkout-cart").valid()){
+    }
+    else if($("#checkout-cart").valid()){
         $("#order-details .form-section").hide();
         $("#receiving-goods .form-section").fadeIn("slow",
             function(){
@@ -322,7 +318,7 @@ else if($("#checkout-cart").valid()){
         $(".gen-error").fadeOut();
     }
     else{
-        $(".gen-error.gen-error2").fadeIn();
+        $(".gen-error.gen-error1").fadeIn();
         $('html, body').animate({
             scrollTop: $("#order-details").offset().top
         }, 500);
@@ -348,7 +344,7 @@ $(".action-goto-step3.clickable").click(function() {
           $("#steps-indicator3").addClass("clickable");
     }
     else{
-        $(".gen-error.gen-error3").fadeIn();
+        $(".gen-error.gen-error2").fadeIn();
         $('html, body').animate({
             scrollTop: $("#order-details").offset().top
         }, 500);
@@ -371,38 +367,16 @@ $("#payment_paymenttype").change(function(){
 //
 $("#final-submit-button").click(function(){
     if($("#checkout-cart").valid()){
-        $(".gen-error.gen-error2").fadeOut();
+        $(".gen-error.gen-error3").fadeOut();
     }
     else{
-        $(".gen-error.gen-error2").fadeIn();
+        $(".gen-error.gen-error3").fadeIn();
         $('html, body').animate({
             scrollTop: $("#receiving-goods").offset().top
         }, 500);
     }
 });
-// //
-// //CLOSE STEP 2 AND OPEN STEP 1
-// //
-// $(".action-goto-step1").click(function() {
-//     $('html, body').animate({
-//         scrollTop: $("#order-details").offset().top
-//     }, 500,function(){
-//         $("#receiving-goods .form-section").slideUp("slow", function() {
-//             $("#order-details .form-section").slideDown("slow",
-//                 function() {
-//                     $('html, body').animate({
-//                         scrollTop: $("#order-details").offset().top
-//                     }, 500,function(){
-//                         $("#order-details .header-section").addClass("active");
-//                         $("#receiving-goods .header-section").removeClass("active");
-//                     });
-//                 });
-//         });
-//     });
-// });
-//
-//RECEIVING GOODS SECTION - CLEAR VALUES WHEN "ENTER NEW ADDRESS" IS CLICKED
-//
+
 $(".action-enter-new-address").click(function() {
     $(".enter-new-address").addClass("active");
     $(".select-previous-address").removeClass("active");
@@ -465,6 +439,26 @@ $(window).resize(function() {
                 $(".order-item-wrap").hide();
             }
         }
+    }
+});
+//
+//PAYMENT SECTION - RADIO BUTTON - CARD TYPE
+//
+$("input[name=payment_card]").click(function() {
+    if (this.value == 'visa') {
+        $(".mastercard-button").removeClass("active");
+        $(".amex-button").removeClass("active");
+        $(".visa-button").addClass("active");
+    }
+    if (this.value == 'mastercard') {
+        $(".mastercard-button").addClass("active");
+        $(".amex-button").removeClass("active");
+        $(".visa-button").removeClass("active");
+    }
+    if (this.value == 'amex') {
+        $(".mastercard-button").removeClass("active");
+        $(".amex-button").addClass("active");
+        $(".visa-button").removeClass("active");
     }
 });
 //======================================================================

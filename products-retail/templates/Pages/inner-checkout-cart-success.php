@@ -93,13 +93,13 @@
 			<div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 col-sm-12">
 				<div class="row">
 					<div class="col-sm-4">
-						<a href="#" class="btn green-button full-width">View previous orders</a>
+						<a href="#" class="btn grey-button full-width">View previous orders</a>
+					</div>
+					<div class="col-sm-4 hidden-xs">
+						<a href="#" class="btn grey-button full-width">Print order</a>
 					</div>
 					<div class="col-sm-4">
-						<a href="#" class="btn green-button full-width">Print order</a>
-					</div>
-					<div class="col-sm-4">
-						<a href="#" class="btn grey-button full-width">Continue shopping</a>
+						<a href="#" class="btn green-button full-width">Continue shopping</a>
 					</div>
 				</div>
 			</div>

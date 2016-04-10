@@ -457,16 +457,13 @@
 								<a href="#" class="btn grey-button small-width continue-shopping-button"><i class="fa fa-chevron-left"></i> Continue shopping</a>
 								<div class="save-as-wrap">
 									<div class="save-as-main">
-										<span class="btn orange-button full-width save-as-main-button">Save as</span>
+										<span class="btn orange-button full-width save-as-main-button">Save Wishlist</span>
 									</div>
 									<div class="save-inner-wrapper">
 										<div class="save-as-list list-group-wrap">
-											<span class="btn light-grey-button full-width list-open">List</span>
 											<div class="save-as-list-form list-form">
-												<label for="save-as-list-name">List Name</label>
+												<label for="save-as-list-name">Wishlist Name</label>
 												<input type="text" name="save-as-list-name">
-												<label for="save-as-list-number">Order Number</label>
-												<input type="text" name="save-as-list-number">
 												<button type="button" class="btn green-button">Save</button>
 											</div>
 										</div>

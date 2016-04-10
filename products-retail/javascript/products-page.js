@@ -525,34 +525,10 @@ $("input[name=payment_card]").click(function() {
             }
         );
         //SAVE AS BUTTON
-        $("#save-as-section .save-as-main").click(function() {
-            if ($("#save-as-section").hasClass("opened")) {
-                $("#save-as-section .list-form").slideUp("fast");
-                $("#save-as-section .list-group-wrap").slideUp("slow");
-                $("#save-as-section").removeClass("opened");
-            } else {
-                $("#save-as-section .list-form").hide();
-                $("#save-as-section .list-group-wrap").slideDown("slow");
-                $("#save-as-section").addClass("opened");
-            }
+        $("#save-as-section .save-as-main-button").click(function() {
+            $(".save-as-list").slideToggle("slow");
         });
-        $("#save-as-section .list-open").click(function() {
-            var thisobject = $(this);
-            thisobject.parent(".list-group-wrap").children(".list-form").addClass("current",
-                function() {
-                    $("#save-as-section .list-form").each(
-                        function() {
-                            if ($(this).hasClass("current")) {
-                                thisobject.parent(".list-group-wrap").children(".list-form").slideToggle("slow");
-                                thisobject.parent(".list-group-wrap").children(".list-form").removeClass("current");
-                            } else {
-                                $(this).parent(".list-group-wrap").children(".list-form").slideUp("slow");
-                            }
-                        });
-                }
-            );
-        });
-        //
+       //
         //MATCH HEIGHT FOR PRODUCT RECOMMENDATION
         //
         $(".one-recommendation .product-details").matchHeight();

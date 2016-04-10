@@ -15,7 +15,7 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<div class="inner-wrap border-bottom border-light padding-top">
-						<h1 class="text-blue">Shopping Cart</h1>
+						<h1 class="text-blue">Shopping Cart <span class="job-name">86 Castles Rd</span></h1>
 					</div>
 				</div>
 			</div>
@@ -136,15 +136,16 @@
 			<section class="product-suggestion hidden-xs bg-mid-grey">
 				<div class="container-fluid section-container">
 					<div class="row">
-						<div class="col-sm-10 col-sm-offset-1">
+						<div class="col-sm-12">
 							<div class="inner-wrap text-center">
-								<h3>You may also need</h3>
+
+								<h3>You may also need <span class="open-close-button opened"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span></h3>
 							</div>
 						</div>
 					</div>
-					<div class="row">
+					<div class="row" >
 						<div class="col-sm-10 col-sm-offset-1">
-							<div class="inner-wrap">
+							<div class="inner-wrap suggestion-item-content">
 								<div class="row">
 									<?php for($i=0;$i<4;$i++){ ?>
 									<div class="col-xs-3">
@@ -216,31 +217,31 @@
 									<div class="save-as-list list-group-wrap">
 										<span class="btn light-grey-button full-width list-open">List</span>
 										<div class="save-as-list-form list-form">
-											<label for="save-as-list-name">Job Name</label>
+											<label for="save-as-list-name">List Name</label>
 											<input type="text" name="save-as-list-name">
 											<label for="save-as-list-number">Order Number</label>
 											<input type="text" name="save-as-list-number">
-											<span class="btn blue-button">Save</span>
+											<button type="button" class="btn blue-button">Save</button>
 										</div>
 									</div>
 									<div class="save-as-draft list-group-wrap">
 										<span class="btn light-grey-button full-width list-open">Draft order</span>
 										<div class="save-as-draft-form list-form">
-											<label for="save-as-draft-name">Job Name</label>
+											<label for="save-as-draft-name">Order Name</label>
 											<input type="text" name="save-as-draft-name">
 											<label for="save-as-draft-number">Order Number</label>
 											<input type="text" name="save-as-draft-number">
-											<span class="btn blue-button">Save</span>
+											<button type="button" class="btn blue-button">Save</button>
 										</div>
 									</div>
 									<div class="save-as-quote list-group-wrap">
 										<span class="btn light-grey-button full-width list-open">Quote</span>
 										<div class="save-as-quote-form list-form">
-											<label for="save-as-quote-name">Job Name</label>
+											<label for="save-as-quote-name">Quote Name</label>
 											<input type="text" name="save-as-quote-name">
 											<label for="save-as-quote-number">Order Number</label>
 											<input type="text" name="save-as-quote-number">
-											<span class="btn blue-button">Save</span>
+											<button type="button" class="btn blue-button">Save</button>
 										</div>
 									</div>
 								</div>

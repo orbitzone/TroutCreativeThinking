@@ -10,6 +10,7 @@ display:inline-block;
 display:inline-block;
 }
 
+
 	.one-option{
 		display:inline-block;
 		width: 120px;
@@ -77,11 +78,39 @@ display:inline-block;
 }
 .product-suggestion{
 	padding-top:25px;
-	padding-bottom:65px;
+	padding-bottom:10px;
+	.open-close-button{
+		font-size:22px;
+		position:absolute;
+		top:0;
+		right:15px;
+		.fa-plus{
+			display:inline;
+		}
+		.fa-minus{
+			display:none;
+		}
+		&.opened{
+			.fa-plus{
+				display:none;
+			}
+			.fa-minus{
+				display:inline;
+			}
+		}
+		&:hover{
+			cursor:pointer;
+		}
+
+	}
 	h3{
 		font-size:26px;
 		.gothamBold;
 		padding-bottom:10px;
+		position:relative;
+	}
+	.suggestion-item-content{
+		padding-bottom:40px;
 	}
 	.one-recommendation{
 		background-color: @bg-box-grey;
@@ -370,7 +399,7 @@ display:inline-block;
 					display:none;
 				}
 				.quantity-wrap{
-					text-align:center;
+					text-align:left;
 					.quantity-input{
 						display:inline-block;
 						margin:0 auto;
@@ -380,6 +409,7 @@ display:inline-block;
 					}
 					@media (max-width: @screen-xs-max) { 
 						padding-top:0;
+						text-align:center;
 					}
 				}
 				.quantity-set{
@@ -490,17 +520,7 @@ display:inline-block;
 				text-align: center; 
 				.item-inner{
 					padding-top:25px;
-					.transition(all .2s ease-in);
-					@media (max-width: @screen-xs-max) { 
-						padding-top:0px;
-						border:solid 1px @border-light-grey;
-						background-color: @bg-light-grey;
-						margin-top:10px;
-						&:hover{
-							cursor:pointer;
-							background-color:@white;
-						}
-					}
+
 				}
 				.remove-button{
 					color: @pink;
@@ -513,6 +533,19 @@ display:inline-block;
 						color:@black;
 						cursor:pointer;
 					}						
+					.transition(all .2s ease-in);
+					@media (max-width: @screen-xs-max) { 
+						width:100%;
+						padding-top:3px;
+						padding-bottom:4px;
+						border:solid 1px @border-light-grey;
+						background-color: @bg-light-grey;
+						margin-top:10px;
+						&:hover{
+							cursor:pointer;
+							background-color:@white;
+						}
+					}
 				}
 				@media (max-width: @screen-xs-max) { 
 					width:100%;

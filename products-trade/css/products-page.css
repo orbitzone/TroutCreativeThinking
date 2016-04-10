@@ -353,6 +353,28 @@ MAIN TITLE
   line-height: 1em;
   color: #404040;
 }
+#product-pages .page-title h1 .job-name {
+  color: #333333;
+  margin-left: 15px;
+  padding-left: 15px;
+  border-left: solid 3px #eaeaea;
+  font-family: "Gotham A", "Gotham B";
+  font-style: normal;
+  font-weight: 400;
+}
+@media (max-width: 767px) {
+  #product-pages .page-title h1 .job-name {
+    display: none;
+    margin-left: 0;
+    padding-left: 0;
+    border-left: solid 0px #eaeaea;
+  }
+}
+@media (max-width: 767px) {
+  #product-pages .page-title h1 {
+    text-align: center;
+  }
+}
 #product-pages select {
   -webkit-appearance: none;
 }
@@ -1452,7 +1474,28 @@ MAIN TITLE
 }
 #product-pages #shopping-cart .product-suggestion {
   padding-top: 25px;
-  padding-bottom: 65px;
+  padding-bottom: 10px;
+}
+#product-pages #shopping-cart .product-suggestion .open-close-button {
+  font-size: 22px;
+  position: absolute;
+  top: 0;
+  right: 15px;
+}
+#product-pages #shopping-cart .product-suggestion .open-close-button .fa-plus {
+  display: inline;
+}
+#product-pages #shopping-cart .product-suggestion .open-close-button .fa-minus {
+  display: none;
+}
+#product-pages #shopping-cart .product-suggestion .open-close-button.opened .fa-plus {
+  display: none;
+}
+#product-pages #shopping-cart .product-suggestion .open-close-button.opened .fa-minus {
+  display: inline;
+}
+#product-pages #shopping-cart .product-suggestion .open-close-button:hover {
+  cursor: pointer;
 }
 #product-pages #shopping-cart .product-suggestion h3 {
   font-size: 26px;
@@ -1460,6 +1503,10 @@ MAIN TITLE
   font-style: normal;
   font-weight: 700;
   padding-bottom: 10px;
+  position: relative;
+}
+#product-pages #shopping-cart .product-suggestion .suggestion-item-content {
+  padding-bottom: 40px;
 }
 #product-pages #shopping-cart .product-suggestion .one-recommendation {
   background-color: #f6f6f6;
@@ -1780,7 +1827,7 @@ MAIN TITLE
   display: none;
 }
 #product-pages #shopping-cart .shopping-cart-listing .inner-wrap .item-data.item-quantity .quantity-wrap {
-  text-align: center;
+  text-align: left;
 }
 #product-pages #shopping-cart .shopping-cart-listing .inner-wrap .item-data.item-quantity .quantity-wrap .quantity-input {
   display: inline-block;
@@ -1794,6 +1841,7 @@ MAIN TITLE
 @media (max-width: 767px) {
   #product-pages #shopping-cart .shopping-cart-listing .inner-wrap .item-data.item-quantity .quantity-wrap {
     padding-top: 0;
+    text-align: center;
   }
 }
 #product-pages #shopping-cart .shopping-cart-listing .inner-wrap .item-data.item-quantity .quantity-set {
@@ -1937,23 +1985,6 @@ MAIN TITLE
 }
 #product-pages #shopping-cart .shopping-cart-listing .inner-wrap .item-data.item-remove .item-inner {
   padding-top: 25px;
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-@media (max-width: 767px) {
-  #product-pages #shopping-cart .shopping-cart-listing .inner-wrap .item-data.item-remove .item-inner {
-    padding-top: 0px;
-    border: solid 1px #eaeaea;
-    background-color: #fafafa;
-    margin-top: 10px;
-  }
-  #product-pages #shopping-cart .shopping-cart-listing .inner-wrap .item-data.item-remove .item-inner:hover {
-    cursor: pointer;
-    background-color: #ffffff;
-  }
 }
 #product-pages #shopping-cart .shopping-cart-listing .inner-wrap .item-data.item-remove .remove-button {
   color: #c68989;
@@ -1966,10 +1997,29 @@ MAIN TITLE
   -ms-transition: color 0.5s ease;
   -o-transition: color 0.5s ease;
   transition: color 0.5s ease;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 #product-pages #shopping-cart .shopping-cart-listing .inner-wrap .item-data.item-remove .remove-button:hover {
   color: #000000;
   cursor: pointer;
+}
+@media (max-width: 767px) {
+  #product-pages #shopping-cart .shopping-cart-listing .inner-wrap .item-data.item-remove .remove-button {
+    width: 100%;
+    padding-top: 3px;
+    padding-bottom: 4px;
+    border: solid 1px #eaeaea;
+    background-color: #fafafa;
+    margin-top: 10px;
+  }
+  #product-pages #shopping-cart .shopping-cart-listing .inner-wrap .item-data.item-remove .remove-button:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+  }
 }
 @media (max-width: 767px) {
   #product-pages #shopping-cart .shopping-cart-listing .inner-wrap .item-data.item-remove {

@@ -42,7 +42,6 @@
 									<div class="clear-fix"></div>
 								</span>
 								<span class="xs-right-col">
-
 									<div class="one-option checkbox-option">
 										GST <input type="checkbox" name="gst" value"gst">
 									</div>
@@ -84,34 +83,68 @@
 			<!--START SHOPPING CART LISTING -->
 			<div class="shopping-cart-listing">
 				<div class="container-fluid section-container">
-					<!--START LOOP CART ITEMS -->
-					<?php for($i=0;$i<4;$i++){ ?>
-					<div class="row border-bottom border-light one-product-wrapper" data-productcode="<?php echo $i ?>">
+					<!--START CART ITEMS 1-->
+					<div class="row border-bottom border-light one-product-wrapper" data-productcode="123123123">
 						<div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0">
 							<div class="inner-wrap item-listing">
 								<div class="one-product">
 									<div class="item-data item-thumbnail xs-left xxs-full"><div class="item-inner"><div class="product-thumbnail"><img src="templates/images/product1.jpg"></div></div></div>
 									<div class="item-data item-details xs-left xxs-full">
 										<div class="item-inner">
-											<span class="product-code">45454545<?php echo $i ?></span>
-											<span class="product-name">Armitage Shanks</span>
-											<span class="product-description">Portman21 600 Accessible Wall Basin No Taphole</span>
+											<span class="product-code">123123123</span>
+											<span class="product-name">Thermann Electric Storage</span>
+											<span class="product-description">Electric Hot Water Unit 250L</span>
+										</div>
+									</div>
+									<div class="item-data item-quantity xs-left">
+										<div class="item-inner">
+											<div class="quantity-wrap">
+												<span class="quantity-input">
+													<input class="quantity-number" data-productcode="123123123" type="number" name="quantity-123123123" min="1" value="1">
+												</span>
+												<span class="quantity-set no-choice">
+													<span class="set-name">EA</span>
+													<span class="quantity-details">Packet <span>12</span> Units</span>
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="item-data item-unitprice xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Unit price</div><span class="update-price">$444.99</span><span class="gst">inc</span></div></div>
+									<div class="item-data item-subtotal xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Subtotal</div><span class="update-price">$888.99</span><span class="gst">inc</span></div></div>
+									<div class="item-data item-remove"><div class="item-inner"><span class="remove-button action-remove-item" data-productcode="123123123"> <i class="fa fa-times"></i> </span></div></div>
+									<div class="clear-fix"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--END CART ITEMS 1-->
+					<!--START CART ITEMS 2-->
+					<div class="row border-bottom border-light one-product-wrapper" data-productcode="7845123">
+						<div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0">
+							<div class="inner-wrap item-listing">
+								<div class="one-product">
+									<div class="item-data item-thumbnail xs-left xxs-full"><div class="item-inner"><div class="product-thumbnail"><img src="templates/images/product2.jpg"></div></div></div>
+									<div class="item-data item-details xs-left xxs-full">
+										<div class="item-inner">
+											<span class="product-code">7845123</span>
+											<span class="product-name">Duopex Gas</span>
+											<span class="product-description">Duopex Jaw to suit Compact Press Tool</span>
 										</div>
 									</div>
 									<div class="item-data item-quantity xs-left">
 										<div class="item-inner">
 											<div class="quantity-wrap">
 												<span class="quantity-hidden">
-													<input class="quantity-radio" type="radio" id="set-<?php echo $i ?>-ea" name="set-<?php echo $i ?>" value="EA" checked>
-													<input class="quantity-radio" data-productcode="<?php echo $i ?>" type="radio" id="set-<?php echo $i ?>-pkt" name="set-<?php echo $i ?>" value="PKT">
+													<input class="quantity-radio" type="radio" id="set-7845123-ea" name="set-7845123" value="EA" checked>
+													<input class="quantity-radio" data-productcode="7845123" type="radio" id="set-7845123-pkt" name="set-7845123" value="PKT">
 												</span>
 												<span class="quantity-input">
-													<input class="quantity-number" data-productcode="<?php echo $i ?>" type="number" name="quantity-<?php echo $i ?>" min="1" value="1">
+													<input class="quantity-number" data-productcode="7845123" type="number" name="quantity-7845123" min="1" value="1">
 												</span>
 												<span class="quantity-set">
 													<div class="radiolabel-set">
-														<label for="set-<?php echo $i ?>-ea" class="radio-button active">EA</label>
-														<label for="set-<?php echo $i ?>-pkt" class="radio-button">PKT</label>
+														<label for="set-7845123-ea" class="radio-button active">EA</label>
+														<label for="set-7845123-pkt" class="radio-button">PKT</label>
 														<div class="clear-fix"></div>
 													</div>
 													<span class="quantity-details">Packet <span>12</span> Units</span>
@@ -121,14 +154,99 @@
 									</div>
 									<div class="item-data item-unitprice xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Unit price</div><span class="update-price">$444.99</span><span class="gst">inc</span></div></div>
 									<div class="item-data item-subtotal xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Subtotal</div><span class="update-price">$888.99</span><span class="gst">inc</span></div></div>
-									<div class="item-data item-remove"><div class="item-inner"><span class="remove-button action-remove-item" data-productcode="<?php echo $i ?>"> <i class="fa fa-times"></i> </span></div></div>
+									<div class="item-data item-remove"><div class="item-inner"><span class="remove-button action-remove-item" data-productcode="7845123"> <i class="fa fa-times"></i> </span></div></div>
 									<div class="clear-fix"></div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<?php } ?>
-					<!--END LOOP CART ITEMS -->
+					<!--END CART ITEMS 2-->
+					<!--START CART ITEMS 3-->
+					<div class="row border-bottom border-light one-product-wrapper" data-productcode="67564534">
+						<div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0">
+							<div class="inner-wrap item-listing">
+								<div class="one-product">
+									<div class="item-data item-thumbnail xs-left xxs-full"><div class="item-inner"><div class="product-thumbnail"><img src="templates/images/product3.jpg"></div></div></div>
+									<div class="item-data item-details xs-left xxs-full">
+										<div class="item-inner">
+											<span class="product-code">67564534</span>
+											<span class="product-name">Vada</span>
+											<span class="product-description">V60-J Jet Pump</span>
+										</div>
+									</div>
+									<div class="item-data item-quantity xs-left">
+										<div class="item-inner">
+											<div class="quantity-wrap">
+												<span class="quantity-hidden">
+													<input class="quantity-radio" type="radio" id="set-67564534-ea" name="set-67564534" value="EA" checked>
+													<input class="quantity-radio" data-productcode="67564534" type="radio" id="set-67564534-pkt" name="set-67564534" value="PKT">
+												</span>
+												<span class="quantity-input">
+													<input class="quantity-number" data-productcode="67564534" type="number" name="quantity-67564534" min="1" value="1">
+												</span>
+												<span class="quantity-set">
+													<div class="radiolabel-set">
+														<label for="set-67564534-ea" class="radio-button active">EA</label>
+														<label for="set-67564534-pkt" class="radio-button">PKT</label>
+														<div class="clear-fix"></div>
+													</div>
+													<span class="quantity-details">Packet <span>12</span> Units</span>
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="item-data item-unitprice xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Unit price</div><span class="update-price">$444.99</span><span class="gst">inc</span></div></div>
+									<div class="item-data item-subtotal xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Subtotal</div><span class="update-price">$888.99</span><span class="gst">inc</span></div></div>
+									<div class="item-data item-remove"><div class="item-inner"><span class="remove-button action-remove-item" data-productcode="67564534"> <i class="fa fa-times"></i> </span></div></div>
+									<div class="clear-fix"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--END CART ITEMS 3-->
+					<!--START CART ITEMS 4-->
+					<div class="row border-bottom border-light last-item one-product-wrapper" data-productcode="2698362">
+						<div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0">
+							<div class="inner-wrap item-listing">
+								<div class="one-product">
+									<div class="item-data item-thumbnail xs-left xxs-full"><div class="item-inner"><div class="product-thumbnail"><img src="templates/images/product4.jpg"></div></div></div>
+									<div class="item-data item-details xs-left xxs-full">
+										<div class="item-inner">
+											<span class="product-code">2698362</span>
+											<span class="product-name">Duopex Gas</span>
+											<span class="product-description">Duopex Jaw to suit Compact Press Tool</span>
+										</div>
+									</div>
+									<div class="item-data item-quantity xs-left">
+										<div class="item-inner">
+											<div class="quantity-wrap">
+												<span class="quantity-hidden">
+													<input class="quantity-radio" type="radio" id="set-2698362-ea" name="set-2698362" value="EA" checked>
+													<input class="quantity-radio" data-productcode="2698362" type="radio" id="set-2698362-pkt" name="set-2698362" value="PKT">
+												</span>
+												<span class="quantity-input">
+													<input class="quantity-number" data-productcode="2698362" type="number" name="quantity-2698362" min="1" value="1">
+												</span>
+												<span class="quantity-set">
+													<div class="radiolabel-set">
+														<label for="set-2698362-ea" class="radio-button active">EA</label>
+														<label for="set-2698362-pkt" class="radio-button">PKT</label>
+														<div class="clear-fix"></div>
+													</div>
+													<span class="quantity-details">Packet <span>12</span> Units</span>
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="item-data item-unitprice xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Unit price</div><span class="update-price">$444.99</span><span class="gst">inc</span></div></div>
+									<div class="item-data item-subtotal xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Subtotal</div><span class="update-price">$888.99</span><span class="gst">inc</span></div></div>
+									<div class="item-data item-remove"><div class="item-inner"><span class="remove-button action-remove-item" data-productcode="2698362"> <i class="fa fa-times"></i> </span></div></div>
+									<div class="clear-fix"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--END CART ITEMS 4-->
 				</div>
 			</div>
 			<!--END SHOPPING CART LISTING -->
@@ -138,7 +256,6 @@
 					<div class="row">
 						<div class="col-sm-12">
 							<div class="inner-wrap text-center">
-
 								<h3>You may also need <span class="open-close-button opened"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span></h3>
 							</div>
 						</div>
@@ -147,30 +264,78 @@
 						<div class="col-sm-10 col-sm-offset-1">
 							<div class="inner-wrap suggestion-item-content">
 								<div class="row">
-									<?php for($i=0;$i<4;$i++){ ?>
+									<!--START ITEM 1-->
 									<div class="col-xs-3">
 										<div class="one-recommendation">
 											<div class="product-thumbnail">
-												<img src="templates/images/product1.jpg">
+												<img src="templates/images/product5.jpg">
 											</div>
 											<div class="product-details">
-												<span class="product-code">45454545</span>
-												<span class="product-name">Thermann Electric Storage</span>
-												<span class="product-description">Lorem ipsum dolor sit amet.</span>
+												<span class="product-code">78787878</span>
+												<span class="product-name">2TUFF Safety Gear</span>
+												<span class="product-description">Ear Muffs</span>
 											</div>
 											<div class="add-button-wrap">
-												<span class="action-add-product"
-													
-													data-productcode="45454545"
-													data-name="Thermann Electric Storage"
-													data-description="Lorem ipsum dolor sit amet."
-													data-image="templates/images/product1.jpg"
-													data-unitprice="$55.35"
-												><i class="fa fa-plus"></i><i class="fa fa-check"></i></span>
+												<span class="action-add-product demo-item1">
+												<i class="fa fa-plus"></i><i class="fa fa-check"></i></span>
 											</div>
 										</div>
 									</div>
-									<?php } ?>
+									<!--END ITEM 1-->
+									<!--START ITEM 2-->
+									<div class="col-xs-3">
+										<div class="one-recommendation">
+											<div class="product-thumbnail">
+												<img src="templates/images/product6.jpg">
+											</div>
+											<div class="product-details">
+												<span class="product-code">63636363</span>
+												<span class="product-name">2TUFF Safety Gear</span>
+												<span class="product-description">Safety Vest</span>
+											</div>
+											<div class="add-button-wrap">
+												<span class="action-add-product demo-item2">
+												<i class="fa fa-plus"></i><i class="fa fa-check"></i></span>
+											</div>
+										</div>
+									</div>
+									<!--END ITEM 2-->
+									<!--START ITEM 3-->
+									<div class="col-xs-3">
+										<div class="one-recommendation">
+											<div class="product-thumbnail">
+												<img src="templates/images/product7.jpg">
+											</div>
+											<div class="product-details">
+												<span class="product-code">52525252</span>
+												<span class="product-name">Walraven</span>
+												<span class="product-description">BIS Starquick Pipe Clamp</span>
+											</div>
+											<div class="add-button-wrap">
+												<span class="action-add-product demo-item3">
+												<i class="fa fa-plus"></i><i class="fa fa-check"></i></span>
+											</div>
+										</div>
+									</div>
+									<!--END ITEM 3-->
+									<!--START ITEM 4-->
+									<div class="col-xs-3">
+										<div class="one-recommendation">
+											<div class="product-thumbnail">
+												<img src="templates/images/product8.jpg">
+											</div>
+											<div class="product-details">
+												<span class="product-code">14141414</span>
+												<span class="product-name">Duopex Gas</span>
+												<span class="product-description">Duopex Jaw to suit Compact Press Tool</span>
+											</div>
+											<div class="add-button-wrap">
+												<span class="action-add-product demo-item4">
+												<i class="fa fa-plus"></i><i class="fa fa-check"></i></span>
+											</div>
+										</div>
+									</div>
+									<!--END ITEM 4-->
 								</div>
 							</div>
 						</div>

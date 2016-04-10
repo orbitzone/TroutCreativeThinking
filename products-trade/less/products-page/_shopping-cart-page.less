@@ -129,16 +129,18 @@ display:inline-block;
 			display:block;
 			font-size: 12px;
 			color: @text-box-light-grey;
+			padding-bottom:4px;
 		}		
 		.product-name{
 			display:block;
-			font-size: 14px;
+			font-size: 15px;
 			line-height:1em;
 			.gothamBold;
+			padding-bottom:5px;
 		}
 		.product-description{
 			display:block;
-			font-size: 12px;
+			font-size: 15px;
 			line-height:1em;
 			color: @black;
 		}
@@ -415,9 +417,17 @@ display:inline-block;
 				.quantity-set{
 					padding-left:5px;
 					padding-top:15px;
+					label,.set-name{
+						color:@text-light-grey;
+					}
+					.set-name{
+						padding-top:10px;
+						padding-bottom:10px;
+						display:inline-block;
+					}
 					.radiolabel-set{
 						display:inline-block;
-						border:solid 1px @border-grey;
+						border:solid 1px @text-light-grey;
 						height:40px;
 						width:100px;
 						position:relative;

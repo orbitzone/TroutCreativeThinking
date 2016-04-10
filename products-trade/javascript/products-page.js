@@ -478,6 +478,9 @@ var product_pages = {
             );
         });
         //
+        //MATCH HEIGHT FOR PRODUCT RECOMMENDATION
+        //
+        $(".one-recommendation .product-details").matchHeight();
         //'YOU MAY ALSO NEED' CLOSE BUTTON
         //
         $(".product-suggestion .open-close-button").click(

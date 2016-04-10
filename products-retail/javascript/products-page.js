@@ -270,7 +270,7 @@ $("#checkout-cart").validate({
 //
 //GO TO STEP 1.
 //
-$(".action-goto-step1.clickable").click(function() {
+$(".action-goto-step1").click(function() {
     $("#order-details .form-section").fadeIn("slow",
         function(){
             $('html, body').animate({
@@ -285,7 +285,7 @@ $(".action-goto-step1.clickable").click(function() {
 //
 //GO TO STEP 2
 //
-$(".action-goto-step2.clickable").click(function() {
+$(".action-goto-step2").click(function() {
 
     if($(this).hasClass("go-back")){
 
@@ -304,6 +304,7 @@ $(".action-goto-step2.clickable").click(function() {
 
     }
     else if($("#checkout-cart").valid()){
+
         $("#order-details .form-section").hide();
         $("#receiving-goods .form-section").fadeIn("slow",
             function(){
@@ -318,16 +319,18 @@ $(".action-goto-step2.clickable").click(function() {
         $(".gen-error").fadeOut();
     }
     else{
+
         $(".gen-error.gen-error1").fadeIn();
         $('html, body').animate({
             scrollTop: $("#order-details").offset().top
         }, 500);
     }
+
 });
 //
 //GO TO STEP 3
 //
-$(".action-goto-step3.clickable").click(function() {
+$(".action-goto-step3").click(function() {
     if($("#checkout-cart").valid()){
         $("#order-details .form-section").hide();
         $("#receiving-goods .form-section").hide();

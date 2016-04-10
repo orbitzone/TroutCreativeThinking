@@ -245,7 +245,7 @@
 										<div class="form-group full transition-height">
 											<div class="info branch-info-autofill transition-height">
 												<div id="branchinfo-details" class="inner-half left text-left">
-													<h6 class="branch-name">Plumbing Collingwood</h6>
+													<h6 class="branch-name">Reece Collingwood</h6>
 													<p>2 Collingwood St, Collingwood VIC 3025</p>
 													<p>(03) 1234 5678</p>
 												</div>

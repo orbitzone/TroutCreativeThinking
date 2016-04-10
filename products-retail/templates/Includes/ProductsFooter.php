@@ -7,5 +7,6 @@
 
 <script type="text/javascript" src="javascript/jquery.validate.min.js"></script>
 <script type="text/javascript" src="javascript/jquery-ui.min.js"></script>
+<script type="text/javascript" src="javascript/jquery.matchHeight-min.js"></script>
 <script type="text/javascript" src="javascript/selectric/public/jquery.selectric.min.js"></script>
 <script type="text/javascript" src="javascript/products-page.min.js"></script>

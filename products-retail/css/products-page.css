@@ -292,6 +292,10 @@ MAIN TITLE
   background: #6dc8b6;
   color: #ffffff;
 }
+#product-pages .btn.orange-button {
+  background: #eeba90;
+  color: #ffffff;
+}
 #product-pages .btn.grey-button {
   background: #999999;
   color: #ffffff;
@@ -1999,6 +2003,8 @@ MAIN TITLE
   font-style: normal;
   font-weight: 400;
   color: #999999;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 #product-pages #shopping-cart .shopping-cart-listing .inner-wrap .one-product {
   padding-bottom: 20px;
@@ -2281,7 +2287,7 @@ MAIN TITLE
   padding-top: 25px;
 }
 #product-pages #shopping-cart .shopping-cart-listing .inner-wrap .item-data.item-remove .remove-button {
-  color: #c68989;
+  color: #999999;
   font-size: 22px;
   line-height: 22px;
   display: inline-block;

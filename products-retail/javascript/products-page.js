@@ -467,20 +467,127 @@ $("input[name=payment_card]").click(function() {
 //======================================================================
 //======================================================================
 },
-shoppingCart: function(){
-//
-//RADIO BUTTONS
-//
-$(".radio-button").click(
-    function(){
-        $(this).parent(".radiolabel-set").find(".radio-button").removeClass("active");
-        $(this).addClass("active");
-    });
-//
-//
-//
-//INIT ALL DROP DOWN MENUS
-//
-$('#product-pages select').selectric();
-}
+    shoppingCart: function() {
+        //
+        //RADIO BUTTONS
+        //
+        $(".radio-button").click(
+            function() {
+                $(this).parent(".radiolabel-set").find(".radio-button").removeClass("active");
+                $(this).addClass("active");
+            });
+        //
+        //
+        //
+        //INIT ALL DROP DOWN MENUS
+        //
+        $('#product-pages select').selectric();
+        //
+        //ADD RECOMMENDED PRODUCT
+        //
+        $(".demo-recommendation").hide();
+        $(".action-add-product").click(
+            function() {
+                var thisobject = $(this);
+                if (!thisobject.hasClass("added")) {
+                    thisobject.find(".fa-plus").fadeOut("fast",
+                        function() {
+                            thisobject.find(".fa-check").fadeIn("fast",
+                                function() {
+                                    thisobject.addClass("added");
+                                    //IMPLEMENT ADD ITEM TO CART FUNCTION AND REFRESH WITH NEW SET
+                                    //THIS IS A DEMO ONLY
+                                    if(thisobject.hasClass("demo-item1")){
+                                        $(".demo-recommendation1").fadeIn("slow");
+                                    }
+                                    else if(thisobject.hasClass("demo-item2")){
+                                        $(".demo-recommendation2").fadeIn("slow");
+                                    }
+                                    else if(thisobject.hasClass("demo-item3")){
+                                        $(".demo-recommendation3").fadeIn("slow");
+                                    }
+                                    else if(thisobject.hasClass("demo-item4")){
+                                        $(".demo-recommendation4").fadeIn("slow");
+                                    }
+                                });
+                        });
+                }
+            });
+        //REMOVE A PRODUCT
+        $(".action-remove-item").click(
+            function() {
+                var productCode = $(this).data("productcode");
+                $(".one-product-wrapper[data-productcode='" + productCode + "']").fadeOut("slow",
+                    function() {
+                        $(".one-product-wrapper[data-productcode='" + productCode + "']").remove();
+                    }
+                );
+            }
+        );
+        //SAVE AS BUTTON
+        $("#save-as-section .save-as-main").click(function() {
+            if ($("#save-as-section").hasClass("opened")) {
+                $("#save-as-section .list-form").slideUp("fast");
+                $("#save-as-section .list-group-wrap").slideUp("slow");
+                $("#save-as-section").removeClass("opened");
+            } else {
+                $("#save-as-section .list-form").hide();
+                $("#save-as-section .list-group-wrap").slideDown("slow");
+                $("#save-as-section").addClass("opened");
+            }
+        });
+        $("#save-as-section .list-open").click(function() {
+            var thisobject = $(this);
+            thisobject.parent(".list-group-wrap").children(".list-form").addClass("current",
+                function() {
+                    $("#save-as-section .list-form").each(
+                        function() {
+                            if ($(this).hasClass("current")) {
+                                thisobject.parent(".list-group-wrap").children(".list-form").slideToggle("slow");
+                                thisobject.parent(".list-group-wrap").children(".list-form").removeClass("current");
+                            } else {
+                                $(this).parent(".list-group-wrap").children(".list-form").slideUp("slow");
+                            }
+                        });
+                }
+            );
+        });
+        //
+        //MATCH HEIGHT FOR PRODUCT RECOMMENDATION
+        //
+        $(".one-recommendation .product-details").matchHeight();
+        //'YOU MAY ALSO NEED' CLOSE BUTTON
+        //
+        $(".product-suggestion .open-close-button").click(
+            function() {
+                if ($(this).hasClass("opened")) {
+                    $(".product-suggestion .suggestion-item-content").slideUp();
+                    $(".product-suggestion .open-close-button .fa-minus").fadeOut("fast",
+                        function() {
+                            $(".product-suggestion .open-close-button .fa-plus").fadeIn("fast",
+                                function() {
+                                    $(".product-suggestion .open-close-button").removeClass("opened");
+                                });
+                        }
+                    );
+                } else {
+                    $(".product-suggestion .suggestion-item-content").slideDown();
+                    $(".product-suggestion .open-close-button .fa-plus").fadeOut("fast",
+                        function() {
+                            $(".product-suggestion .open-close-button .fa-minus").fadeIn("fast",
+                                function() {
+                                    $(".product-suggestion .open-close-button").addClass("opened");
+                                });
+                        }
+                    );
+                }
+            }
+        );
+    }
 };
+
+
+
+
+
+

@@ -1,19 +1,7 @@
 $(document).ready(function() {
     product_pages.init();
 });
-var scrollAnimation = {
-    element: $('html, body'),
-    animate: function(top) {
-        scrollAnimation.element.on("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove", function() {
-            scrollAnimation.element.stop();
-        });
-        scrollAnimation.element.stop().animate({
-            scrollTop: top
-        }, 500, function() {
-            scrollAnimation.element.off("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove");
-        });
-    },
-}
+
 var product_pages = {
     init: function() {
         var section = $('#product-pages').data('section');
@@ -289,7 +277,9 @@ var product_pages = {
                     function() {
                         $("#receiving-goods .form-section").slideDown("slow",
                             function() {
-                                scrollAnimation($("#receiving-goods").offset().top);
+                                $('html, body').animate({
+                                    scrollTop: $("#receiving-goods").offset().top
+                                }, 500);
                             }
                         );
                     }
@@ -299,7 +289,10 @@ var product_pages = {
                 $(".gen-error.gen-error1").fadeOut();
             } else {
                 $(".gen-error.gen-error1").fadeIn();
-                scrollAnimation($("#order-details").offset().top);
+                    $('html, body').animate({
+                        scrollTop: $("#order-details").offset().top
+                    }, 500);
+
             }
         });
         //
@@ -310,7 +303,9 @@ var product_pages = {
                 $(".gen-error.gen-error2").fadeOut();
             } else {
                 $(".gen-error.gen-error2").fadeIn();
-                scrollAnimation($("#receiving-goods").offset().top);
+                    $('html, body').animate({
+                        scrollTop: $("#receiving-goods").offset().top
+                    }, 500);
             }
         });
         //

@@ -205,7 +205,7 @@
 					</div>
 					<!--END CART ITEMS 3-->
 					<!--START CART ITEMS 4-->
-					<div class="row border-bottom border-light last-item one-product-wrapper" data-productcode="2698362">
+					<div class="row border-bottom border-light one-product-wrapper" data-productcode="2698362">
 						<div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0">
 							<div class="inner-wrap item-listing">
 								<div class="one-product">
@@ -247,6 +247,191 @@
 						</div>
 					</div>
 					<!--END CART ITEMS 4-->
+
+
+					<!--START CART ITEMS 5-->
+					<div class="row border-bottom border-light one-product-wrapper demo-recommendation demo-recommendation1" data-productcode="78787878">
+						<div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0">
+							<div class="inner-wrap item-listing">
+								<div class="one-product">
+									<div class="item-data item-thumbnail xs-left xxs-full"><div class="item-inner"><div class="product-thumbnail"><img src="templates/images/product5.jpg"></div></div></div>
+									<div class="item-data item-details xs-left xxs-full">
+										<div class="item-inner">
+											<span class="product-code">78787878</span>
+											<span class="product-name">2TUFF Safety Gear</span>
+											<span class="product-description">Ear Muffs</span>
+										</div>
+									</div>
+									<div class="item-data item-quantity xs-left">
+										<div class="item-inner">
+											<div class="quantity-wrap">
+												<span class="quantity-hidden">
+													<input class="quantity-radio" type="radio" id="set-78787878-ea" name="set-78787878" value="EA" checked>
+													<input class="quantity-radio" data-productcode="78787878" type="radio" id="set-78787878-pkt" name="set-78787878" value="PKT">
+												</span>
+												<span class="quantity-input">
+													<input class="quantity-number" data-productcode="78787878" type="number" name="quantity-78787878" min="1" value="1">
+												</span>
+												<span class="quantity-set">
+													<div class="radiolabel-set">
+														<label for="set-78787878-ea" class="radio-button active">EA</label>
+														<label for="set-78787878-pkt" class="radio-button">PKT</label>
+														<div class="clear-fix"></div>
+													</div>
+													<span class="quantity-details">Packet <span>12</span> Units</span>
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="item-data item-unitprice xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Unit price</div><span class="update-price">$444.99</span><span class="gst">inc</span></div></div>
+									<div class="item-data item-subtotal xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Subtotal</div><span class="update-price">$888.99</span><span class="gst">inc</span></div></div>
+									<div class="item-data item-remove"><div class="item-inner"><span class="remove-button action-remove-item" data-productcode="78787878"> <i class="fa fa-times"></i> </span></div></div>
+									<div class="clear-fix"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--END CART ITEMS 5-->
+
+					<!--START CART ITEMS 6-->
+					<div class="row border-bottom border-light one-product-wrapper demo-recommendation demo-recommendation2" data-productcode="63636363">
+						<div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0">
+							<div class="inner-wrap item-listing">
+								<div class="one-product">
+									<div class="item-data item-thumbnail xs-left xxs-full"><div class="item-inner"><div class="product-thumbnail"><img src="templates/images/product6.jpg"></div></div></div>
+									<div class="item-data item-details xs-left xxs-full">
+										<div class="item-inner">
+											<span class="product-code">63636363</span>
+											<span class="product-name">2TUFF Safety Gear</span>
+											<span class="product-description">Safety Vest</span>
+										</div>
+									</div>
+									<div class="item-data item-quantity xs-left">
+										<div class="item-inner">
+											<div class="quantity-wrap">
+												<span class="quantity-hidden">
+													<input class="quantity-radio" type="radio" id="set-63636363-ea" name="set-63636363" value="EA" checked>
+													<input class="quantity-radio" data-productcode="63636363" type="radio" id="set-63636363-pkt" name="set-63636363" value="PKT">
+												</span>
+												<span class="quantity-input">
+													<input class="quantity-number" data-productcode="63636363" type="number" name="quantity-63636363" min="1" value="1">
+												</span>
+												<span class="quantity-set">
+													<div class="radiolabel-set">
+														<label for="set-63636363-ea" class="radio-button active">EA</label>
+														<label for="set-63636363-pkt" class="radio-button">PKT</label>
+														<div class="clear-fix"></div>
+													</div>
+													<span class="quantity-details">Packet <span>12</span> Units</span>
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="item-data item-unitprice xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Unit price</div><span class="update-price">$444.99</span><span class="gst">inc</span></div></div>
+									<div class="item-data item-subtotal xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Subtotal</div><span class="update-price">$888.99</span><span class="gst">inc</span></div></div>
+									<div class="item-data item-remove"><div class="item-inner"><span class="remove-button action-remove-item" data-productcode="63636363"> <i class="fa fa-times"></i> </span></div></div>
+									<div class="clear-fix"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--END CART ITEMS 6-->
+
+
+					<!--START CART ITEMS 7-->
+					<div class="row border-bottom border-light one-product-wrapper demo-recommendation demo-recommendation3" data-productcode="52525252">
+						<div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0">
+							<div class="inner-wrap item-listing">
+								<div class="one-product">
+									<div class="item-data item-thumbnail xs-left xxs-full"><div class="item-inner"><div class="product-thumbnail"><img src="templates/images/product7.jpg"></div></div></div>
+									<div class="item-data item-details xs-left xxs-full">
+										<div class="item-inner">
+											<span class="product-code">52525252</span>
+											<span class="product-name">Walraven</span>
+											<span class="product-description">BIS Starquick Pipe Clamp</span>
+										</div>
+									</div>
+									<div class="item-data item-quantity xs-left">
+										<div class="item-inner">
+											<div class="quantity-wrap">
+												<span class="quantity-hidden">
+													<input class="quantity-radio" type="radio" id="set-52525252-ea" name="set-52525252" value="EA" checked>
+													<input class="quantity-radio" data-productcode="52525252" type="radio" id="set-52525252-pkt" name="set-52525252" value="PKT">
+												</span>
+												<span class="quantity-input">
+													<input class="quantity-number" data-productcode="52525252" type="number" name="quantity-52525252" min="1" value="1">
+												</span>
+												<span class="quantity-set">
+													<div class="radiolabel-set">
+														<label for="set-52525252-ea" class="radio-button active">EA</label>
+														<label for="set-52525252-pkt" class="radio-button">PKT</label>
+														<div class="clear-fix"></div>
+													</div>
+													<span class="quantity-details">Packet <span>12</span> Units</span>
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="item-data item-unitprice xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Unit price</div><span class="update-price">$444.99</span><span class="gst">inc</span></div></div>
+									<div class="item-data item-subtotal xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Subtotal</div><span class="update-price">$888.99</span><span class="gst">inc</span></div></div>
+									<div class="item-data item-remove"><div class="item-inner"><span class="remove-button action-remove-item" data-productcode="52525252"> <i class="fa fa-times"></i> </span></div></div>
+									<div class="clear-fix"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--END CART ITEMS 7-->
+
+					<!--START CART ITEMS 8-->
+					<div class="row border-bottom border-light one-product-wrapper demo-recommendation demo-recommendation4" data-productcode="14141414">
+						<div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0">
+							<div class="inner-wrap item-listing">
+								<div class="one-product">
+									<div class="item-data item-thumbnail xs-left xxs-full"><div class="item-inner"><div class="product-thumbnail"><img src="templates/images/product8.jpg"></div></div></div>
+									<div class="item-data item-details xs-left xxs-full">
+										<div class="item-inner">
+											<span class="product-code">14141414</span>
+											<span class="product-name">Duopex Gas
+</span>
+											<span class="product-description">Duopex Jaw to suit Compact Press Tool
+</span>
+										</div>
+									</div>
+									<div class="item-data item-quantity xs-left">
+										<div class="item-inner">
+											<div class="quantity-wrap">
+												<span class="quantity-hidden">
+													<input class="quantity-radio" type="radio" id="set-14141414-ea" name="set-14141414" value="EA" checked>
+													<input class="quantity-radio" data-productcode="14141414" type="radio" id="set-14141414-pkt" name="set-14141414" value="PKT">
+												</span>
+												<span class="quantity-input">
+													<input class="quantity-number" data-productcode="14141414" type="number" name="quantity-14141414" min="1" value="1">
+												</span>
+												<span class="quantity-set">
+													<div class="radiolabel-set">
+														<label for="set-14141414-ea" class="radio-button active">EA</label>
+														<label for="set-14141414-pkt" class="radio-button">PKT</label>
+														<div class="clear-fix"></div>
+													</div>
+													<span class="quantity-details">Packet <span>12</span> Units</span>
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="item-data item-unitprice xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Unit price</div><span class="update-price">$444.99</span><span class="gst">inc</span></div></div>
+									<div class="item-data item-subtotal xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Subtotal</div><span class="update-price">$888.99</span><span class="gst">inc</span></div></div>
+									<div class="item-data item-remove"><div class="item-inner"><span class="remove-button action-remove-item" data-productcode="14141414"> <i class="fa fa-times"></i> </span></div></div>
+									<div class="clear-fix"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--END CART ITEMS 8-->
+
+
+
+
+
 				</div>
 			</div>
 			<!--END SHOPPING CART LISTING -->

@@ -424,6 +424,7 @@ var product_pages = {
         //
         //ADD RECOMMENDED PRODUCT
         //
+        $(".demo-recommendation").hide();
         $(".action-add-product").click(
             function() {
                 var thisobject = $(this);
@@ -434,6 +435,19 @@ var product_pages = {
                                 function() {
                                     thisobject.addClass("added");
                                     //IMPLEMENT ADD ITEM TO CART FUNCTION AND REFRESH WITH NEW SET
+                                    //THIS IS A DEMO ONLY
+                                    if(thisobject.hasClass("demo-item1")){
+                                        $(".demo-recommendation1").fadeIn("slow");
+                                    }
+                                    else if(thisobject.hasClass("demo-item2")){
+                                        $(".demo-recommendation2").fadeIn("slow");
+                                    }
+                                    else if(thisobject.hasClass("demo-item3")){
+                                        $(".demo-recommendation3").fadeIn("slow");
+                                    }
+                                    else if(thisobject.hasClass("demo-item4")){
+                                        $(".demo-recommendation4").fadeIn("slow");
+                                    }
                                 });
                         });
                 }

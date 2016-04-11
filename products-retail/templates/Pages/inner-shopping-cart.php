@@ -70,6 +70,7 @@
 									</div>
 									<div class="item-data item-quantity xs-left">
 										<div class="item-inner">
+
 											<div class="quantity-wrap">
 												<span class="quantity-input">
 													<input class="quantity-number" data-productcode="123123123" type="number" name="quantity-123123123" min="1" value="1">
@@ -447,7 +448,7 @@
 									<div class="right-col"><span class="grandtotal-value">$1093.50</span></div>
 									<div class="clear-fix"></div>
 									<div class="submit-button-wrap">
-										<input type="submit" value="Checkout" class="btn green-button">
+										<input type="submit" value="Checkout" class="btn green-button xs-full long-width">
 									</div>
 								</div>
 							</div>

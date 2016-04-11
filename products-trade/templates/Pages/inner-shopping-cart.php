@@ -68,7 +68,7 @@
 						<div class="col-xs-12">
 							<div class="inner-wrap item-heading">
 								<div class="item-data item-thumbnail">Item</div>
-								<div class="item-data item-details"></div>
+								<div class="item-data item-details">Description</div>
 								<div class="item-data item-quantity">Qty</div>
 								<div class="item-data item-unitprice">Unit price</div>
 								<div class="item-data item-subtotal">Subtotal</div>
@@ -98,13 +98,12 @@
 									</div>
 									<div class="item-data item-quantity xs-left">
 										<div class="item-inner">
-											<div class="quantity-wrap">
+											<div class="quantity-wrap no-choice">
 												<span class="quantity-input">
 													<input class="quantity-number" data-productcode="123123123" type="number" name="quantity-123123123" min="1" value="1">
 												</span>
 												<span class="quantity-set no-choice">
 													<span class="set-name">EA</span>
-													<span class="quantity-details">Packet <span>12</span> Units</span>
 												</span>
 											</div>
 										</div>

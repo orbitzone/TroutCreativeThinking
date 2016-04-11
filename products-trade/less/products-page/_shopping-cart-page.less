@@ -295,6 +295,8 @@ display:inline-block;
 				padding-bottom:5px;
 				min-height:1em;
 				&.item-thumbnail,&.item-details,&.item-quantity,&.item-unitprice,&.item-subtotal,&.item-remove{ 
+					padding-top:5px;
+					padding-bottom:5px;
 					text-transform: uppercase;
 					font-size:12px;
 					text-align:left;
@@ -402,6 +404,12 @@ display:inline-block;
 				}
 				.quantity-wrap{
 					text-align:left;
+					&.no-choice{
+						padding-top:20px;
+						@media (max-width: @screen-xs-max) { 
+							padding-top:0;
+						}
+					}
 					.quantity-input{
 						display:inline-block;
 						margin:0 auto;

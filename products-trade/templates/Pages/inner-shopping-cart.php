@@ -8,7 +8,7 @@
 </div>
 <!--END BREAD CRUMB -->
 <!--START SHOPPING CART -->
-<section class="main-section" id="shopping-cart">
+<div class="main-section" id="shopping-cart">
 	<!--START PAGE TITLE -->
 	<div class="section page-title bg-light-grey">
 		<div class="container-fluid section-container">
@@ -33,20 +33,20 @@
 							<div class="inner-wrap">
 								<div id="cart-view-options">
 								<span class="xs-left-col">
-									<div class="one-option dropdown-option">
+									<span class="one-option dropdown-option span-block">
 										<select id="cmp-option">
 											<option value="cmp1">CMP</option>
 											<option value="cmp2">MP</option>
 										</select>
-									</div>
-									<div class="clear-fix"></div>
+									</span>
+									<span class="clear-fix"></span>
 								</span>
 								<span class="xs-right-col">
-									<div class="one-option checkbox-option">
-										GST <input type="checkbox" name="gst" value"gst">
-									</div>
-									<div class="clear-fix"></div>
+									<span class="one-option checkbox-option">
+										GST <input type="checkbox" name="gst" value="gst">
 									</span>
+									<span class="clear-fix"></span>
+								</span>
 									<div class="clear-fix"></div>
 								</div>
 							</div>
@@ -88,7 +88,7 @@
 						<div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0">
 							<div class="inner-wrap item-listing">
 								<div class="one-product">
-									<div class="item-data item-thumbnail xs-left xxs-full"><div class="item-inner"><div class="product-thumbnail"><img src="templates/images/product1.jpg"></div></div></div>
+									<div class="item-data item-thumbnail xs-left xxs-full"><div class="item-inner"><div class="product-thumbnail"><img src="templates/images/product1.jpg" alt="item"></div></div></div>
 									<div class="item-data item-details xs-left xxs-full">
 										<div class="item-inner">
 											<span class="product-code">123123123</span>
@@ -122,7 +122,7 @@
 						<div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0">
 							<div class="inner-wrap item-listing">
 								<div class="one-product">
-									<div class="item-data item-thumbnail xs-left xxs-full"><div class="item-inner"><div class="product-thumbnail"><img src="templates/images/product2.jpg"></div></div></div>
+									<div class="item-data item-thumbnail xs-left xxs-full"><div class="item-inner"><div class="product-thumbnail"><img src="templates/images/product2.jpg" alt="item"></div></div></div>
 									<div class="item-data item-details xs-left xxs-full">
 										<div class="item-inner">
 											<span class="product-code">7845123</span>
@@ -141,11 +141,11 @@
 													<input class="quantity-number" data-productcode="7845123" type="number" name="quantity-7845123" min="1" value="1">
 												</span>
 												<span class="quantity-set">
-													<div class="radiolabel-set">
+													<span class="radiolabel-set span-block">
 														<label for="set-7845123-ea" class="radio-button active">EA</label>
 														<label for="set-7845123-pkt" class="radio-button">PKT</label>
-														<div class="clear-fix"></div>
-													</div>
+														<span class="clear-fix"></span>
+													</span>
 													<span class="quantity-details">Packet <span>12</span> Units</span>
 												</span>
 											</div>
@@ -165,7 +165,7 @@
 						<div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0">
 							<div class="inner-wrap item-listing">
 								<div class="one-product">
-									<div class="item-data item-thumbnail xs-left xxs-full"><div class="item-inner"><div class="product-thumbnail"><img src="templates/images/product3.jpg"></div></div></div>
+									<div class="item-data item-thumbnail xs-left xxs-full"><div class="item-inner"><div class="product-thumbnail"><img src="templates/images/product3.jpg" alt="item"></div></div></div>
 									<div class="item-data item-details xs-left xxs-full">
 										<div class="item-inner">
 											<span class="product-code">67564534</span>
@@ -184,11 +184,11 @@
 													<input class="quantity-number" data-productcode="67564534" type="number" name="quantity-67564534" min="1" value="1">
 												</span>
 												<span class="quantity-set">
-													<div class="radiolabel-set">
+													<span class="radiolabel-set span-block">
 														<label for="set-67564534-ea" class="radio-button active">EA</label>
 														<label for="set-67564534-pkt" class="radio-button">PKT</label>
-														<div class="clear-fix"></div>
-													</div>
+														<span class="clear-fix"></span>
+													</span>
 													<span class="quantity-details">Packet <span>12</span> Units</span>
 												</span>
 											</div>
@@ -208,7 +208,7 @@
 						<div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0">
 							<div class="inner-wrap item-listing">
 								<div class="one-product">
-									<div class="item-data item-thumbnail xs-left xxs-full"><div class="item-inner"><div class="product-thumbnail"><img src="templates/images/product4.jpg"></div></div></div>
+									<div class="item-data item-thumbnail xs-left xxs-full"><div class="item-inner"><div class="product-thumbnail"><img src="templates/images/product4.jpg" alt="item"></div></div></div>
 									<div class="item-data item-details xs-left xxs-full">
 										<div class="item-inner">
 											<span class="product-code">2698362</span>
@@ -227,11 +227,11 @@
 													<input class="quantity-number" data-productcode="2698362" type="number" name="quantity-2698362" min="1" value="1">
 												</span>
 												<span class="quantity-set">
-													<div class="radiolabel-set">
+													<span class="radiolabel-set span-block">
 														<label for="set-2698362-ea" class="radio-button active">EA</label>
 														<label for="set-2698362-pkt" class="radio-button">PKT</label>
-														<div class="clear-fix"></div>
-													</div>
+														<span class="clear-fix"></span>
+													</span>
 													<span class="quantity-details">Packet <span>12</span> Units</span>
 												</span>
 											</div>
@@ -253,7 +253,7 @@
 						<div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0">
 							<div class="inner-wrap item-listing">
 								<div class="one-product">
-									<div class="item-data item-thumbnail xs-left xxs-full"><div class="item-inner"><div class="product-thumbnail"><img src="templates/images/product5.jpg"></div></div></div>
+									<div class="item-data item-thumbnail xs-left xxs-full"><div class="item-inner"><div class="product-thumbnail"><img src="templates/images/product5.jpg" alt="item"></div></div></div>
 									<div class="item-data item-details xs-left xxs-full">
 										<div class="item-inner">
 											<span class="product-code">78787878</span>
@@ -272,11 +272,11 @@
 													<input class="quantity-number" data-productcode="78787878" type="number" name="quantity-78787878" min="1" value="1">
 												</span>
 												<span class="quantity-set">
-													<div class="radiolabel-set">
+													<span class="radiolabel-set span-block">
 														<label for="set-78787878-ea" class="radio-button active">EA</label>
 														<label for="set-78787878-pkt" class="radio-button">PKT</label>
-														<div class="clear-fix"></div>
-													</div>
+														<span class="clear-fix"></span>
+													</span>
 													<span class="quantity-details">Packet <span>12</span> Units</span>
 												</span>
 											</div>
@@ -297,7 +297,7 @@
 						<div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0">
 							<div class="inner-wrap item-listing">
 								<div class="one-product">
-									<div class="item-data item-thumbnail xs-left xxs-full"><div class="item-inner"><div class="product-thumbnail"><img src="templates/images/product6.jpg"></div></div></div>
+									<div class="item-data item-thumbnail xs-left xxs-full"><div class="item-inner"><div class="product-thumbnail"><img src="templates/images/product6.jpg" alt="item"></div></div></div>
 									<div class="item-data item-details xs-left xxs-full">
 										<div class="item-inner">
 											<span class="product-code">63636363</span>
@@ -316,11 +316,11 @@
 													<input class="quantity-number" data-productcode="63636363" type="number" name="quantity-63636363" min="1" value="1">
 												</span>
 												<span class="quantity-set">
-													<div class="radiolabel-set">
+													<span class="radiolabel-set span-block">
 														<label for="set-63636363-ea" class="radio-button active">EA</label>
 														<label for="set-63636363-pkt" class="radio-button">PKT</label>
-														<div class="clear-fix"></div>
-													</div>
+														<span class="clear-fix"></span>
+													</span>
 													<span class="quantity-details">Packet <span>12</span> Units</span>
 												</span>
 											</div>
@@ -342,7 +342,7 @@
 						<div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0">
 							<div class="inner-wrap item-listing">
 								<div class="one-product">
-									<div class="item-data item-thumbnail xs-left xxs-full"><div class="item-inner"><div class="product-thumbnail"><img src="templates/images/product7.jpg"></div></div></div>
+									<div class="item-data item-thumbnail xs-left xxs-full"><div class="item-inner"><div class="product-thumbnail"><img src="templates/images/product7.jpg" alt="item"></div></div></div>
 									<div class="item-data item-details xs-left xxs-full">
 										<div class="item-inner">
 											<span class="product-code">52525252</span>
@@ -361,11 +361,11 @@
 													<input class="quantity-number" data-productcode="52525252" type="number" name="quantity-52525252" min="1" value="1">
 												</span>
 												<span class="quantity-set">
-													<div class="radiolabel-set">
+													<span class="radiolabel-set span-block">
 														<label for="set-52525252-ea" class="radio-button active">EA</label>
 														<label for="set-52525252-pkt" class="radio-button">PKT</label>
-														<div class="clear-fix"></div>
-													</div>
+														<span class="clear-fix"></span>
+													</span>
 													<span class="quantity-details">Packet <span>12</span> Units</span>
 												</span>
 											</div>
@@ -386,7 +386,7 @@
 						<div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0">
 							<div class="inner-wrap item-listing">
 								<div class="one-product">
-									<div class="item-data item-thumbnail xs-left xxs-full"><div class="item-inner"><div class="product-thumbnail"><img src="templates/images/product8.jpg"></div></div></div>
+									<div class="item-data item-thumbnail xs-left xxs-full"><div class="item-inner"><div class="product-thumbnail"><img src="templates/images/product8.jpg" alt="item"></div></div></div>
 									<div class="item-data item-details xs-left xxs-full">
 										<div class="item-inner">
 											<span class="product-code">14141414</span>
@@ -407,11 +407,11 @@
 													<input class="quantity-number" data-productcode="14141414" type="number" name="quantity-14141414" min="1" value="1">
 												</span>
 												<span class="quantity-set">
-													<div class="radiolabel-set">
+													<span class="radiolabel-set span-block">
 														<label for="set-14141414-ea" class="radio-button active">EA</label>
 														<label for="set-14141414-pkt" class="radio-button">PKT</label>
-														<div class="clear-fix"></div>
-													</div>
+														<span class="clear-fix"></span>
+													</span>
 													<span class="quantity-details">Packet <span>12</span> Units</span>
 												</span>
 											</div>
@@ -452,7 +452,7 @@
 									<div class="col-xs-3">
 										<div class="one-recommendation">
 											<div class="product-thumbnail">
-												<img src="templates/images/product5.jpg">
+												<img src="templates/images/product5.jpg" alt="item">
 											</div>
 											<div class="product-details">
 												<span class="product-code">78787878</span>
@@ -470,7 +470,7 @@
 									<div class="col-xs-3">
 										<div class="one-recommendation">
 											<div class="product-thumbnail">
-												<img src="templates/images/product6.jpg">
+												<img src="templates/images/product6.jpg" alt="item">
 											</div>
 											<div class="product-details">
 												<span class="product-code">63636363</span>
@@ -488,7 +488,7 @@
 									<div class="col-xs-3">
 										<div class="one-recommendation">
 											<div class="product-thumbnail">
-												<img src="templates/images/product7.jpg">
+												<img src="templates/images/product7.jpg" alt="item">
 											</div>
 											<div class="product-details">
 												<span class="product-code">52525252</span>
@@ -506,7 +506,7 @@
 									<div class="col-xs-3">
 										<div class="one-recommendation">
 											<div class="product-thumbnail">
-												<img src="templates/images/product8.jpg">
+												<img src="templates/images/product8.jpg" alt="item">
 											</div>
 											<div class="product-details">
 												<span class="product-code">14141414</span>
@@ -568,9 +568,9 @@
 											<span class="btn light-grey-button full-width list-open">List</span>
 											<div class="save-as-list-form list-form">
 												<label for="save-as-list-name">List Name</label>
-												<input type="text" name="save-as-list-name">
+												<input type="text" name="save-as-list-name" id="save-as-list-name">
 												<label for="save-as-list-number">Order Number</label>
-												<input type="text" name="save-as-list-number">
+												<input type="text" name="save-as-list-number" id="save-as-list-number">
 												<button type="button" class="btn blue-button">Save</button>
 											</div>
 										</div>
@@ -578,9 +578,9 @@
 											<span class="btn light-grey-button full-width list-open">Draft order</span>
 											<div class="save-as-draft-form list-form">
 												<label for="save-as-draft-name">Order Name</label>
-												<input type="text" name="save-as-draft-name">
+												<input type="text" name="save-as-draft-name" id="save-as-draft-name">
 												<label for="save-as-draft-number">Order Number</label>
-												<input type="text" name="save-as-draft-number">
+												<input type="text" name="save-as-draft-number" id="save-as-draft-number">
 												<button type="button" class="btn blue-button">Save</button>
 											</div>
 										</div>
@@ -588,9 +588,9 @@
 											<span class="btn light-grey-button full-width list-open">Quote</span>
 											<div class="save-as-quote-form list-form">
 												<label for="save-as-quote-name">Quote Name</label>
-												<input type="text" name="save-as-quote-name">
+												<input type="text" name="save-as-quote-name" id="save-as-quote-name">
 												<label for="save-as-quote-number">Order Number</label>
-												<input type="text" name="save-as-quote-number">
+												<input type="text" name="save-as-quote-number" id="save-as-quote-number">
 												<button type="button" class="btn blue-button">Save</button>
 											</div>
 										</div>
@@ -606,5 +606,5 @@
 		</form>
 	</div>
 	<!--END SHOPPING CART LIST -->
-</section>
+</div>
 <!--END SHOPPING CART -->

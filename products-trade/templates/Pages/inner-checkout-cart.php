@@ -147,7 +147,7 @@
 									</div>
 									<div class="form-group half-small">
 										<label for="receiving_time">Time</label>
-										<select name="receiving_time" class="" id="receiving_time" required tabindex="15">
+										<select name="receiving_time" class="" id="receiving_time" tabindex="15">
 											<option value="9:30am" selected>9:30AM</option>
 											<option value="10am">10:00AM</option>
 											<option value="10:30am">10:30AM</option>
@@ -250,7 +250,7 @@
 										</div>
 										<div class="branch-info-autocomplete">
 											<label for="pickup_branch">Pick Up Branch</label>
-											<input name="pickup_branch" type="text" class="pickup_branch search-box" id="pickup_branch" autocomplete="false" tabindex="24">
+											<input name="pickup_branch" type="text" class="pickup_branch search-box" id="pickup_branch" autocomplete="off" tabindex="24">
 											<div class="clear-fix"></div>
 											<div id="pickupbranch-results" class="transition-height">
 											</div>
@@ -270,8 +270,10 @@
 								</div>
 								<div class="form-group half full-sm text-right enter-new-contact no-space-top">
 									<span class="or">OR</span>
-									<button type="button" class="btn blue-button new-contact action-enter-new-contact" tabindex="26">Enter new contact</div>
-									<div class="clear-fix"></button>
+									<button type="button" class="btn blue-button new-contact action-enter-new-contact" tabindex="26">Enter new contact
+									</button>
+									<div class="clear-fix"></div>
+
 								</div>
 								<div class="clear-fix"></div>
 								<div class="inner-section">

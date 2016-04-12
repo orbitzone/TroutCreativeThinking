@@ -7,7 +7,7 @@
 	</div>
 </div>
 <!--END BREAD CRUMB -->
-<section class="main-section" id="checkout-success">
+<div class="main-section" id="checkout-success">
 	<!--START PAGE TITLE -->
 	<div class="section page-title bg-light-grey">
 		<div class="container-fluid section-container">
@@ -63,16 +63,16 @@
 			<div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 col-sm-12">
 				<div class="row">
 					<div class="col-sm-4">
-						<a href="#" class="btn blue-button full-width">View previous orders</a>
+						<a href="#" class="btn grey-button full-width">View previous orders</a>
 					</div>
 					<div class="col-sm-4">
-						<a href="#" class="btn blue-button full-width">Print order</a>
+						<a href="#" class="btn grey-button full-width">Print order</a>
 					</div>
 					<div class="col-sm-4">
-						<a href="#" class="btn grey-button full-width">Continue shopping</a>
+						<a href="#" class="btn blue-button full-width">Continue shopping</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</section>
+</div>

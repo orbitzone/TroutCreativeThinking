@@ -27,7 +27,7 @@
 				<li>
 					<div class="info-wrap">
 						<div class="left-col">
-								<div class="cart-thumbnail"><img src="templates/images/product1.jpg"></div>
+								<div class="cart-thumbnail"><img src="templates/images/product1.jpg" alt="item"></div>
 						</div>
 						<div class="right-col">
 							<div class="inner-right-col text-right">

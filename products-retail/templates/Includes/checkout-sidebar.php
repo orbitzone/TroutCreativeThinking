@@ -27,7 +27,7 @@
 				<li>
 					<div class="info-wrap">
 						<div class="left-col">
-								<div class="cart-thumbnail"><img src="templates/images/product1.jpg"></div>
+								<div class="cart-thumbnail"><img src="templates/images/product1.jpg" alt="item"></div>
 						</div>
 						<div class="right-col">
 							<div class="inner-right-col text-right">
@@ -88,20 +88,20 @@
 		<footer>
 			<div class="info-wrap">
 				<div class="one-icon-info">
-					<div class="icon-image"><img src="templates/images/icon-person.png" alt=""></div>
+					<div class="icon-image"><img src="templates/images/icon-person.png" alt="icon"></div>
 					<p>A Reece consultant will be in touch within one working day.</p>
 				</div>
 				<div class="one-icon-info">
-					<div class="icon-image"><img src="templates/images/icon-clock.png" alt=""></div>
+					<div class="icon-image"><img src="templates/images/icon-clock.png" alt="icon"></div>
 					<p>Time frames will differ depending on product/s ordered.</p>
 				</div>
 				<div class="clear-fix"></div>
 				<div class="one-icon-info">
-					<div class="icon-image"><img src="templates/images/icon-return.png" alt=""></div>
+					<div class="icon-image"><img src="templates/images/icon-return.png" alt="icon"></div>
 					<p><strong>EASY RETURNS</strong><br>400 locations</p>
 				</div>
 				<div class="one-icon-info">
-					<div class="icon-image"><img src="templates/images/icon-phone.png" alt=""></div>
+					<div class="icon-image"><img src="templates/images/icon-phone.png" alt="icon"></div>
 					<p><strong>NEED ASSISTANCE?</strong><br>Call 1800 032 566</p>
 				</div>
 				<div class="clear-fix"></div>

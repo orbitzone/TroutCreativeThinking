@@ -155,7 +155,7 @@
 									</div>
 									<div class="form-group half-small">
 										<label for="receiving_time">Time</label>
-										<select name="receiving_time" class="" id="receiving_time" required tabindex="12">
+										<select name="receiving_time" class="" id="receiving_time" tabindex="12">
 											<option value="9:30am" selected>9:30AM</option>
 											<option value="10am">10:00AM</option>
 											<option value="10:30am">10:30AM</option>
@@ -257,7 +257,7 @@
 											</div>
 											<div class="branch-info-autocomplete">
 												<label for="pickup_branch">Pick Up Branch</label>
-												<input name="pickup_branch" type="text" class="pickup_branch search-box" id="pickup_branch" autocomplete="false" tabindex="21">
+												<input name="pickup_branch" type="text" class="pickup_branch search-box" id="pickup_branch" autocomplete="off" tabindex="21">
 												<div class="clear-fix"></div>
 												<div id="pickupbranch-results" class="transition-height">
 												</div>
@@ -277,8 +277,9 @@
 									</div>
 									<div class="form-group half full-sm text-right enter-new-contact no-space-top">
 										<span class="or">OR</span>
-									<button type="button" class="btn green-button new-contact action-enter-new-contact" tabindex="23">Enter new contact</div>
-									<div class="clear-fix"></button>
+									<button type="button" class="btn green-button new-contact action-enter-new-contact" tabindex="23">Enter new contact
+									</button>
+									<div class="clear-fix"></div>
 									</div>
 									<div class="clear-fix"></div>
 									<div class="inner-section">
@@ -342,7 +343,7 @@
 								</div>
 								<div class="clear-fix"></div>
 								<div class="form-group half full-sm select-previous-address no-space-top">
-									<select name="payment_paymenttype" class="" id="payment_paymenttype" required tabindex="29">
+									<select name="payment_paymenttype" class="" id="payment_paymenttype" tabindex="29">
 										<option value="creditcard" selected>Credit Card</option>
 										<option value="directdebit">Direct Credit</option>
 									</select>
@@ -388,7 +389,7 @@
 								<div class="form-group full">
 									<div class="inner-third-third left text-left">
 										<label for="creditcard_month">Expiry Month</label>
-										<select name="creditcard_month" class="" id="creditcard_month" required tabindex="33">
+										<select name="creditcard_month" class="" id="creditcard_month" tabindex="33">
 											<option value="01" selected>01</option>
 											<option value="02">02</option>
 											<option value="03">03</option>
@@ -407,7 +408,7 @@
 
 									<div class="inner-third-third middle text-left">
 										<label for="creditcard_year">Expiry Year</label>
-										<select name="creditcard_year" class="" id="creditcard_year" required tabindex="34">
+										<select name="creditcard_year" class="" id="creditcard_year" tabindex="34">
 											<option value="2016" selected>2016</option>
 											<option value="2017">2017</option>
 											<option value="2018">2018</option>

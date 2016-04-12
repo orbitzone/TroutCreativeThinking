@@ -58,7 +58,7 @@
 					<div class="icon-image">
 						<img src="templates/images/icon-person.png" alt="">
 						</div>
-					</p>A consultant will be in touch within one working day.</p>
+					<p>A consultant will be in touch within one working day.</p>
 				</div>
 			</div>
 

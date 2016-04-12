@@ -16,4 +16,7 @@
 <link rel="stylesheet" href="css/base/jquery-ui.theme.min.css">
 
 <link rel="stylesheet" type="text/css" href="javascript/selectric/public/selectric.css" />
+<link rel="stylesheet" type="text/css" href="javascript/slick/slick.css" />
+<link rel="stylesheet" type="text/css" href="javascript/slick/slick-theme.css" />
+
 <link rel="stylesheet" type="text/css" href="css/products-page.css" />

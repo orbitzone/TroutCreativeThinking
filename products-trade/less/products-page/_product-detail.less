@@ -1,0 +1,83 @@
+.main-section#product-detail{
+
+
+
+
+.file-download-list{
+	display:block;
+	padding:0;
+	margin:0;
+	overflow: auto;
+	li{
+		list-style:none;
+		margin:10px 0;
+		padding:0;
+		display:block;
+		float:left;
+		width:33.3333%;
+		.file-info{
+			display:block;
+			background-image:url("../templates/images/product-detail/icon-file-doc.png");
+			background-repeat: no-repeat;
+			background-position: left center;
+			background-size: 44px 60px;
+			padding:5px 10px 5px 65px;
+			&.file-cad{
+					background-image:url("../templates/images/product-detail/icon-file-cad.png");
+			}
+			@media (max-width: @screen-xs-max) {
+				background-position: center top;
+				padding:70px 10px 10px 10px;
+				text-align:center;
+			}
+		}
+		@media (max-width: @screen-xxs-max) {
+			width:50%;
+
+		}
+	}
+}
+
+.main-anchor-list{
+	display:block;
+	padding:0;
+	margin:0 -5px;
+	overflow: auto;
+	text-align:center;
+	li{
+		list-style:none;
+		margin:10px 0;
+		padding:0 5px;
+		display:inline-block;
+		width:19%;
+		@media (max-width: @screen-md-max) {
+			width:25%;
+		}
+	}
+}
+
+.verticle-table{
+	border-collapse: collapse;
+	th,td{
+		width:50%;
+		vertical-align: middle;
+		border: 1px solid @border-light-grey;
+		padding:10px;
+		.gothamBook;
+	}
+	th{
+		background-color:@bg-light-grey;
+	}
+}
+
+
+
+}
+
+
+
+
+
+
+
+

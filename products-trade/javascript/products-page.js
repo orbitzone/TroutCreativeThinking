@@ -517,5 +517,107 @@ var product_pages = {
                 }
             }
         );
+    },
+    productDetail: function(){
+        //
+        // INIITALISE VIDEO SLIDER
+        //
+        $(".video-slider").slick({
+          infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 3
+        });
+        //
+        // INIITALISE PRODUCT SUGGESTION SLIDER
+        //
+        $(".product-suggestion-slider").slick({
+          infinite: true,
+          slidesToShow: 4,
+          slidesToScroll: 4
+        });
+        //
+        // INIITALISE HERO GALLERY SLIDER
+        //
+        $(".hero-gallery-slider").slick({
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1
+        });
+        //
+        // INITIALISE FILE LIST AS SLIDER OF MOBILE
+        // 
+        if($(window).width() <= 767){
+            $(".file-download-list").slick({
+                responsive: [
+                {
+                    breakpoint: 767,
+                    settings:{
+                        infinite: true,
+                        slidesToShow: 3,
+                        slidesToScroll: 3
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings:{
+                        infinite: true,
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                }
+                ]
+            });
+        }
+        //CHECK SLICK ON WINDOW RESIZE
+        $( window ).resize(function() {
+          if($(".file-download-list").hasClass('slick-initialized')){
+                if($(window).width() > 767){
+                    $(".file-download-list").slick('unslick');
+                }
+          }
+          else{
+                if($(window).width() <= 767){
+                    $(".file-download-list").slick({
+                        infinite: true,
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        responsive: [
+                        {
+                            breakpoint: 767,
+                            settings:{
+                                infinite: true,
+                                slidesToShow: 3,
+                                slidesToScroll: 3
+                            }
+                        },
+                        {
+                            breakpoint: 576,
+                            settings:{
+                                infinite: true,
+                                slidesToShow: 2,
+                                slidesToScroll: 2
+                            }
+                        }
+                        ]
+                    });
+                }
+          }
+        });
+
+
     }
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+

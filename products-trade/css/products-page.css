@@ -2087,3 +2087,75 @@ MAIN TITLE
     min-height: 5px;
   }
 }
+#product-pages .main-section#product-detail .file-download-list {
+  display: block;
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+}
+#product-pages .main-section#product-detail .file-download-list li {
+  list-style: none;
+  margin: 10px 0;
+  padding: 0;
+  display: block;
+  float: left;
+  width: 33.3333%;
+}
+#product-pages .main-section#product-detail .file-download-list li .file-info {
+  display: block;
+  background-image: url("../templates/images/product-detail/icon-file-doc.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 44px 60px;
+  padding: 5px 10px 5px 65px;
+}
+#product-pages .main-section#product-detail .file-download-list li .file-info.file-cad {
+  background-image: url("../templates/images/product-detail/icon-file-cad.png");
+}
+@media (max-width: 767px) {
+  #product-pages .main-section#product-detail .file-download-list li .file-info {
+    background-position: center top;
+    padding: 70px 10px 10px 10px;
+    text-align: center;
+  }
+}
+@media (max-width: 510px) {
+  #product-pages .main-section#product-detail .file-download-list li {
+    width: 50%;
+  }
+}
+#product-pages .main-section#product-detail .main-anchor-list {
+  display: block;
+  padding: 0;
+  margin: 0 -5px;
+  overflow: auto;
+  text-align: center;
+}
+#product-pages .main-section#product-detail .main-anchor-list li {
+  list-style: none;
+  margin: 10px 0;
+  padding: 0 5px;
+  display: inline-block;
+  width: 19%;
+}
+@media (max-width: 1199px) {
+  #product-pages .main-section#product-detail .main-anchor-list li {
+    width: 25%;
+  }
+}
+#product-pages .main-section#product-detail .verticle-table {
+  border-collapse: collapse;
+}
+#product-pages .main-section#product-detail .verticle-table th,
+#product-pages .main-section#product-detail .verticle-table td {
+  width: 50%;
+  vertical-align: middle;
+  border: 1px solid #eaeaea;
+  padding: 10px;
+  font-family: "Gotham A", "Gotham B";
+  font-style: normal;
+  font-weight: 400;
+}
+#product-pages .main-section#product-detail .verticle-table th {
+  background-color: #fafafa;
+}

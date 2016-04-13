@@ -2159,3 +2159,37 @@ MAIN TITLE
 #product-pages .main-section#product-detail .verticle-table th {
   background-color: #fafafa;
 }
+#product-pages .main-section#product-detail .section.features-section .section-container,
+#product-pages .main-section#product-detail .section.technical-section .section-container,
+#product-pages .main-section#product-detail .section.warranty-section .section-container,
+#product-pages .main-section#product-detail .section.installation-section .section-container,
+#product-pages .main-section#product-detail .section.downloads-section .section-container {
+  border-top: solid 1px #eaeaea;
+  margin-top: 40px;
+  padding-top: 40px;
+}
+#product-pages .main-section#product-detail .section .section-title {
+  padding: 10px 0;
+  background-color: yellow;
+  margin-bottom: 40px;
+}
+#product-pages .main-section#product-detail .section .section-title .section-heading {
+  padding: 0;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  #product-pages .main-section#product-detail .section .section-title {
+    background-color: #fafafa;
+  }
+}
+#product-pages .main-section#product-detail .file-download-area {
+  padding-top: 40px;
+}
+#product-pages .main-section#product-detail .file-download-area .download-header {
+  padding: 6px 0;
+  background-color: red;
+}
+#product-pages .main-section#product-detail .file-download-area .download-header .download-heading {
+  padding: 0;
+  margin: 0;
+}

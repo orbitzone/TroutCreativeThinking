@@ -3,6 +3,9 @@
 
 
 
+
+
+
 .file-download-list{
 	display:block;
 	padding:0;
@@ -70,6 +73,43 @@
 	}
 }
 
+.section{
+	&.features-section,&.technical-section,&.warranty-section, &.installation-section, &.downloads-section{
+		.section-container{
+			border-top:solid 1px @border-light-grey;
+			margin-top:40px;
+			padding-top:40px;
+		}
+
+
+
+	}
+	.section-title{
+		padding:10px 0;
+		background-color:yellow;
+		margin-bottom:40px;
+		.section-heading{
+			padding:0;
+			margin:0; 
+		}
+		@media (max-width: @screen-xs-max) {
+			background-color: @bg-light-grey;
+
+		}
+	}
+}
+.file-download-area{
+	padding-top:40px;
+
+	.download-header{
+		padding:6px 0;
+		background-color:red;
+		.download-heading{
+			padding:0;
+			margin:0;
+		}
+	}
+}
 
 
 }

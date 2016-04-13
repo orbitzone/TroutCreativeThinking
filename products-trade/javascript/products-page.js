@@ -568,6 +568,40 @@ var product_pages = {
                 ]
             });
         }
+        //
+        // SECTION EXPAND AND COLLAPES
+        // The name for (.action-expand-button)"data-expandbutton" and (.expand-section)"data-expandsection" needs to be the same
+        //
+        $(".action-expand-button").click(function(){
+            var thisobject = $(this);
+            var thisname = thisobject.data("expandbutton");
+            var expandsection = $(".expand-section[data-expandsection='" + thisname + "']");
+
+            if(expandsection.hasClass("opened")){
+                expandsection.slideUp("slow",
+                    function(){
+                        expandsection.removeClass("opened");
+                        thisobject.removeClass("opened");
+                });
+            }
+            else{
+                expandsection.slideDown("slow",
+                    function(){
+                        expandsection.addClass("opened");
+                        thisobject.addClass("opened");
+                });
+            }
+
+        });
+        // SECTION EXPAND AND COLLAPES ON LOAD
+        $(".expand-section").each(
+            function(){
+                if($(this).hasClass("opened") === false){
+                    $(this).hide();
+                }
+            });
+
+
         //CHECK SLICK ON WINDOW RESIZE
         $( window ).resize(function() {
           if($(".file-download-list").hasClass('slick-initialized')){

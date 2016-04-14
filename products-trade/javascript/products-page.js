@@ -527,10 +527,8 @@ var product_pages = {
           infinite: true,
           slidesToShow: 3,
           slidesToScroll: 3,
-
-
-
-
+          prevArrow: '<span type="button" class="slick-prev">Previous</span>',
+          nextArrow: '<span type="button" class="slick-next">Next</span>',
             responsive: [
                 {
                     breakpoint: 767,
@@ -549,12 +547,6 @@ var product_pages = {
                     }
                 }
                 ]
-
-
-
-
-
-
         });
         //
         // INIITALISE PRODUCT SUGGESTION SLIDER

@@ -22,10 +22,10 @@ class="">
     </div>
   </div>
   <?php include "templates/Includes/Navigation.php" ?>
-  
+  <?php include "templates/Includes/ProductsNav.php" ?>
   
   <section id="product-pages" data-section="checkoutCart">
-    <?php include "templates/Includes/ProductsNav.php" ?>
+    
     <?php include "templates/Pages/inner-checkout-cart.php" ?>
   </section>
 

@@ -523,6 +523,7 @@ var product_pages = {
         // INIITALISE VIDEO SLIDER
         //
         $(".video-slider").slick({
+            dots: true,
           infinite: true,
           slidesToShow: 3,
           slidesToScroll: 3,
@@ -561,7 +562,30 @@ var product_pages = {
         $(".product-suggestion-slider").slick({
           infinite: true,
           slidesToShow: 4,
-          slidesToScroll: 4
+          slidesToScroll: 4,
+          dots: true,
+            responsive: [
+                {
+                    breakpoint: 767,
+                    settings:{
+                        infinite: true,
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings:{
+                        infinite: true,
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                ]
+
+
+
+
         });
         //
         // INIITALISE HERO GALLERY SLIDER
@@ -570,17 +594,17 @@ var product_pages = {
           infinite: true,
           slidesToShow: 1,
           slidesToScroll: 1,
-          asNavFor: '.hero-gallery-slider-thumb'
+          asNavFor: '.hero-gallery-slider-thumb',
         });
         
         $(".hero-gallery-slider-thumb").slick({
           infinite: true,
           slidesToShow: 4,
           slidesToScroll: 4,
-          centerPadding: '10px',
           asNavFor: '.hero-gallery-slider',
           focusOnSelect: true,
-          centerMode: true
+          centerMode: true,
+          arrows: false
         });
         //
         // INITIALISE FILE LIST AS SLIDER OF MOBILE

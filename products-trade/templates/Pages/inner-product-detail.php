@@ -146,11 +146,11 @@
 										<table class="verticle-table">
 											<tr>
 												<th>Heading</th>
-												<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, ipsam!</td>
+												<td>Lorem ipsum dolor sit !</td>
 											</tr>
 											<tr>
 												<th>Heading</th>
-												<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus excepturi fugiat, illo ut, recusandae corrupti.</td>
+												<td>Lorem ipsum dolor, recusandae corrupti.</td>
 											</tr>
 											<tr>
 												<th>Heading</th>
@@ -158,7 +158,7 @@
 											</tr>
 											<tr>
 												<th>Heading</th>
-												<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores hic fuga harum quisquam iste dolor repudiandae libero tenetur molestias rem.</td>
+												<td>Lorem iste dolor repudiandae libero tenetur molestias rem.</td>
 											</tr>
 											<tr>
 												<th>Heading</th>
@@ -169,11 +169,11 @@
 										<table class="verticle-table">
 											<tr>
 												<th>Heading</th>
-												<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, ipsam!</td>
+												<td>Lorem i ipsam!</td>
 											</tr>
 											<tr>
 												<th>Heading</th>
-												<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus excepturi fugiat, illo ut, recusandae corrupti.</td>
+												<td>Lorem ipsum  illo ut, recusandae corrupti.</td>
 											</tr>
 											<tr>
 												<th>Heading</th>
@@ -186,11 +186,11 @@
 										<table class="verticle-table">
 											<tr>
 												<th>Heading</th>
-												<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, ipsam!</td>
+												<td>Lorem i ipsam!</td>
 											</tr>
 											<tr>
 												<th>Heading</th>
-												<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus excepturi fugiat, illo ut, recusandae corrupti.</td>
+												<td>Lorem ipsum  corrupti.</td>
 											</tr>
 											<tr>
 												<th>Heading</th>
@@ -201,7 +201,7 @@
 								</div>
 								<!-- .row -->
 								<div class="row">
-									<div class="col-sm-10">
+									<div class="col-sm-10 col-md-10">
 										<div class="file-download-area">
 											<header class="action-expand-button download-header" data-expandbutton="feature-files"><h4 class="download-heading">Brochures</h4></header>
 											<div class="expand-section" data-expandsection="feature-files">
@@ -253,11 +253,11 @@
 										<table class="verticle-table">
 											<tr>
 												<th>Heading</th>
-												<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, ipsam!</td>
+												<td>Lorem iLaudantium, ipsam!</td>
 											</tr>
 											<tr>
 												<th>Heading</th>
-												<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus excepturi fugiat, illo ut, recusandae corrupti.</td>
+												<td>Lorem ipsum d recusandae corrupti.</td>
 											</tr>
 											<tr>
 												<th>Heading</th>
@@ -265,7 +265,7 @@
 											</tr>
 											<tr>
 												<th>Heading</th>
-												<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores hic fuga harum quisquam iste dolor repudiandae libero tenetur molestias rem.</td>
+												<td>Lorem iptias rem.</td>
 											</tr>
 											<tr>
 												<th>Heading</th>
@@ -276,11 +276,11 @@
 										<table class="verticle-table">
 											<tr>
 												<th>Heading</th>
-												<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, ipsam!</td>
+												<td>Lorem ipm, ipsam!</td>
 											</tr>
 											<tr>
 												<th>Heading</th>
-												<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus excepturi fugiat, illo ut, recusandae corrupti.</td>
+												<td>Lorem ipsum dolor lo ut, recusandae corrupti.</td>
 											</tr>
 											<tr>
 												<th>Heading</th>
@@ -297,7 +297,7 @@
 											</tr>
 											<tr>
 												<th>Heading</th>
-												<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus excepturi fugiat, illo ut, recusandae corrupti.</td>
+												<td>Lorem ipsum dolt, recusandae corrupti.</td>
 											</tr>
 											<tr>
 												<th>Heading</th>
@@ -307,7 +307,7 @@
 									</div>
 								</div><!-- .row -->
 								<div class="row">
-									<div class="col-sm-10">
+									<div class="col-sm-10 col-md-10">
 										<div class="file-download-area">
 											<header class="action-expand-button download-header" data-expandbutton="technical-files"><h4 class="download-heading">Technical Downloads</h4></header>
 											<div class="expand-section" data-expandsection="technical-files">
@@ -367,7 +367,7 @@
 											</tr>
 											<tr>
 												<th>Heading</th>
-												<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus excepturi fugiat, illo ut, recusandae corrupti.</td>
+												<td>Lorem ipsum docusandae corrupti.</td>
 											</tr>
 											<tr>
 												<th>Heading</th>
@@ -379,11 +379,11 @@
 										<table class="verticle-table">
 											<tr>
 												<th>Heading</th>
-												<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, ipsam!</td>
+												<td>Lorem ium, ipsam!</td>
 											</tr>
 											<tr>
 												<th>Heading</th>
-												<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus excepturi fugiat, illo ut, recusandae corrupti.</td>
+												<td>Lorem ipsum dot, recusandae corrupti.</td>
 											</tr>
 											<tr>
 												<th>Heading</th>
@@ -393,7 +393,7 @@
 									</div>
 								</div><!-- .row -->
 								<div class="row">
-									<div class="col-sm-10">
+									<div class="col-sm-10 col-md-10">
 										<div class="file-download-area">
 											<header class="action-expand-button download-header" data-expandbutton="warranty-files"><h4 class="download-heading">Warranty Downloads</h4></header>
 											<div class="expand-section" data-expandsection="warranty-files">
@@ -459,7 +459,7 @@
 									</div>
 								</div><!-- .row -->
 								<div class="row">
-									<div class="col-sm-10">
+									<div class="col-sm-10 col-md-10">
 										<div class="file-download-area">
 											<header class="action-expand-button download-header" data-expandbutton="installation-files"><h4 class="download-heading">Installation Downloads</h4></header>
 											<div class="expand-section" data-expandsection="installation-files">
@@ -500,9 +500,13 @@
 		<div class="container-fluid section-container">
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
+
+			<div class="row">
+				<div class="col-xs-12 col-sm-11">
+
 					<div class="inner-wrap">
-						<header data-expandbutton="all-downloads" class="section-title action-expand-section opened"><h3 class="section-heading">All Downloads</h3></header>
-						<div data-expandsection="all-downloads" class="expand-section opened">
+						<header data-expandbutton="alldownloads" class="section-title action-expand-section opened"><h3 class="section-heading">All Downloads</h3></header>
+						<div data-expandsection="alldownloads" class="expand-section opened">
 							<ul class="file-download-list">
 								<?php for($i = 0; $i<7;$i++){ ?>
 								<li class="one-file">
@@ -525,6 +529,11 @@
 							</ul>
 						</div>
 					</div>
+
+
+</div>
+</div>
+
 				</div>
 			</div>
 		</div>
@@ -595,9 +604,9 @@
 	<div class="section product-suggestion-section bg-light-stripes" id="people-also-bought">
 		<div class="container-fluid section-container">
 			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
+				<div class="col-xs-12 col-sm-11 col-md-10 col-md-offset-1">
 					<div class="inner-wrap">
-						<header class="section-title"><h3 class="section-heading">People also bought</h3></header>
+						<header class="section-title text-center"><h3 class="section-heading">People also bought</h3></header>
 						<div class="product-suggestion-slider">
 							<?php for($i = 0; $i<4;$i++){ ?>
 							<div class="one-slide">
@@ -625,7 +634,7 @@
 	<div class="section banner-section">
 		<div class="container-fluid section-container">
 			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-11 col-md-offset-1">
+				<div class="col-xs-12 col-sm-11 col-md-10 col-md-offset-1">
 					<div class="inner-wrap">
 						<img class="img-responsive" src="templates/images/product-detail/banner.jpg" alt="banner">
 					</div>
@@ -638,7 +647,7 @@
 	<div class="section footer-promo-section">
 		<div class="container-fluid section-container">
 			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-11 col-md-offset-1">
+				<div class="col-xs-12 col-sm-11 col-md-10 col-md-offset-1">
 					<div class="row">
 						<div class="col-sm-5">
 							<div class="inner-wrap">

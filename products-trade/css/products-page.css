@@ -301,6 +301,10 @@ MAIN TITLE
   background: #999999;
   color: #ffffff;
 }
+#product-pages .btn.black-button {
+  background: #333333;
+  color: #ffffff;
+}
 #product-pages .btn.small-width {
   padding: 15px 25px;
 }
@@ -2209,6 +2213,7 @@ MAIN TITLE
 #product-pages .main-section#product-detail .verticle-table {
   border-collapse: collapse;
   margin-bottom: 20px;
+  width: 100%;
 }
 #product-pages .main-section#product-detail .verticle-table th,
 #product-pages .main-section#product-detail .verticle-table td {
@@ -2249,6 +2254,15 @@ MAIN TITLE
   padding-top: 0;
   padding-bottom: 20px;
 }
+@media (max-width: 767px) {
+  #product-pages .main-section#product-detail .section.features-section .expand-section,
+  #product-pages .main-section#product-detail .section.technical-section .expand-section,
+  #product-pages .main-section#product-detail .section.warranty-section .expand-section,
+  #product-pages .main-section#product-detail .section.installation-section .expand-section,
+  #product-pages .main-section#product-detail .section.downloads-section .expand-section {
+    padding-top: 20px;
+  }
+}
 #product-pages .main-section#product-detail .section.features-section .table-heading,
 #product-pages .main-section#product-detail .section.technical-section .table-heading,
 #product-pages .main-section#product-detail .section.warranty-section .table-heading,
@@ -2275,15 +2289,14 @@ MAIN TITLE
 @media (max-width: 767px) {
   #product-pages .main-section#product-detail .section .section-title {
     margin-bottom: 0;
-    padding: 10px;
-    background: #f4f4f4;
+    padding: 10px 0;
   }
   #product-pages .main-section#product-detail .section .section-title .section-heading {
-    background: url('../templates/images/icon-downarrow-black.png') no-repeat right center;
+    background: url('../templates/images/icon-downarrow-grey.png') no-repeat right center;
     background-size: 20px 20px;
   }
   #product-pages .main-section#product-detail .section .section-title.opened .section-heading {
-    background: url('../templates/images/icon-uparrow-black.png') no-repeat right center;
+    background: url('../templates/images/icon-uparrow-grey.png') no-repeat right center;
     background-size: 20px 20px;
   }
 }
@@ -2303,6 +2316,31 @@ MAIN TITLE
 #product-pages .main-section#product-detail .file-download-area .download-header.opened .download-heading {
   background: url('../templates/images/icon-uparrow-black.png') no-repeat right center;
   background-size: 20px 20px;
+}
+#product-pages .main-section#product-detail .product-suggestion-slider .one-slide {
+  padding: 10px;
+  text-align: center;
+}
+#product-pages .main-section#product-detail .product-suggestion-slider .one-slide .product-thumbnail {
+  border: solid 1px #bfbfbf;
+}
+#product-pages .main-section#product-detail .product-suggestion-slider .one-slide .product-details {
+  padding: 10px;
+}
+#product-pages .main-section#product-detail .product-suggestion-slider .one-slide .product-details .product-name {
+  font-size: 22px;
+  font-family: "Gotham A", "Gotham B";
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+#product-pages .main-section#product-detail .product-suggestion-slider .one-slide .product-details .product-description {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+#product-pages .main-section#product-detail .product-suggestion-slider .one-slide .product-details .product-price {
+  font-size: 13px;
+  margin-bottom: 5px;
 }
 #product-pages .main-section#product-detail .video-thumbnail {
   position: relative;

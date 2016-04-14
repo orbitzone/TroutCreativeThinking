@@ -555,6 +555,8 @@ var product_pages = {
           infinite: true,
           slidesToShow: 4,
           slidesToScroll: 4,
+          prevArrow: '<span type="button" class="slick-prev">Previous</span>',
+          nextArrow: '<span type="button" class="slick-next">Next</span>',
           dots: true,
             responsive: [
                 {
@@ -586,7 +588,9 @@ var product_pages = {
           infinite: true,
           slidesToShow: 1,
           slidesToScroll: 1,
-          asNavFor: '.hero-gallery-slider-thumb',
+          prevArrow: '<span type="button" class="slick-prev">Previous</span>',
+          nextArrow: '<span type="button" class="slick-next">Next</span>',
+          asNavFor: '.hero-gallery-slider-thumb'
         });
         
         $(".hero-gallery-slider-thumb").slick({
@@ -596,13 +600,17 @@ var product_pages = {
           asNavFor: '.hero-gallery-slider',
           focusOnSelect: true,
           centerMode: true,
-          arrows: false
+          arrows: false,
+          prevArrow: '<span type="button" class="slick-prev">Previous</span>',
+          nextArrow: '<span type="button" class="slick-next">Next</span>'
         });
         //
         // INITIALISE FILE LIST AS SLIDER OF MOBILE
         // 
         if($(window).width() <= 767){
             $(".file-download-list").slick({
+                prevArrow: '<span type="button" class="slick-prev">Previous</span>',
+                nextArrow: '<span type="button" class="slick-next">Next</span>',
                 responsive: [
                 {
                     breakpoint: 767,

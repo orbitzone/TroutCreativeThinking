@@ -505,7 +505,7 @@
 				<div class="col-xs-12 col-sm-11">
 
 					<div class="inner-wrap">
-						<header data-expandbutton="alldownloads" class="section-title action-expand-section opened"><h3 class="section-heading">All Downloads</h3></header>
+						<header data-expandbutton="alldownloads" class="section-title action-expand-button opened"><h3 class="section-heading">All Downloads</h3></header>
 						<div data-expandsection="alldownloads" class="expand-section opened">
 							<ul class="file-download-list">
 								<?php for($i = 0; $i<7;$i++){ ?>
@@ -606,7 +606,8 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-11 col-md-10 col-md-offset-1">
 					<div class="inner-wrap">
-						<header class="section-title text-center"><h3 class="section-heading">People also bought</h3></header>
+						<header data-expandbutton="product-suggestion" class="section-title text-center action-expand-button"><h3 class="section-heading">People also bought</h3></header>
+						<div data-expandsection="product-suggestion" class="expand-section opened">
 						<div class="product-suggestion-slider">
 							<?php for($i = 0; $i<4;$i++){ ?>
 							<div class="one-slide">
@@ -623,6 +624,7 @@
 								</div>
 							</div>
 							<?php } ?>
+						</div>
 						</div>
 					</div>
 				</div>
@@ -644,7 +646,7 @@
 	</div>
 	<!--END BANNER SECTION -->
 	<!--START FOOTER PROMO SECTION -->
-	<div class="section footer-promo-section">
+	<div class="section footer-promo-section bg-extra-dark-grey">
 		<div class="container-fluid section-container">
 			<div class="row">
 				<div class="col-xs-12 col-sm-11 col-md-10 col-md-offset-1">
@@ -658,7 +660,7 @@
 							<div class="inner-wrap">
 								<h3>Learn more about Conex</h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus quo, optio nostrum! Alias unde nemo quasi obcaecati doloribus minus recusandae dolores incidunt debitis ea corporis ullam tenetur, magnam quos quibusdam vitae rem assumenda cum quam asperiores, ducimus libero, beatae totam ipsa! Iste fuga ipsa est aliquid modi porro illum eos?</p>
-								<a href="#" class="btn trans-blue-button">Conex brand pages</a>
+								<a href="#" class="btn blue-button small-width">Conex brand pages</a>
 							</div>
 						</div>
 					</div>

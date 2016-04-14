@@ -65,6 +65,9 @@ p{
 		background:@bg-blue;
 	}
 }
+.bg-extra-dark-grey{
+	background: @bg-extra-dark-grey;
+}
 .bg-mid-grey{
 	background: @bg-mid-grey;
 }
@@ -242,5 +245,31 @@ MAIN TITLE
 	}
 
 }
-
-
+/*
+Slick slider arrow
+*/
+.slick-next{
+	&:before{
+		content:'';
+		width:25px;
+		height:25px;
+		background: url('../templates/images/icon-nextarrow.png') no-repeat;
+		background-size:25px 25px;
+		display:block;
+		top:30%;
+	}
+}
+.slick-prev{
+	&:before{
+		content:'';
+		width:25px;
+		height:25px;
+		background: url('../templates/images/icon-prevarrow.png') no-repeat;
+		background-size:25px 25px;
+		display:block;
+		top:30%;
+	}
+}
+.slick-dots li button:before{
+	font-size:10px;
+}

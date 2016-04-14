@@ -525,7 +525,35 @@ var product_pages = {
         $(".video-slider").slick({
           infinite: true,
           slidesToShow: 3,
-          slidesToScroll: 3
+          slidesToScroll: 3,
+
+
+
+
+            responsive: [
+                {
+                    breakpoint: 767,
+                    settings:{
+                        infinite: true,
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings:{
+                        infinite: true,
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                ]
+
+
+
+
+
+
         });
         //
         // INIITALISE PRODUCT SUGGESTION SLIDER
@@ -541,7 +569,18 @@ var product_pages = {
         $(".hero-gallery-slider").slick({
           infinite: true,
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          asNavFor: '.hero-gallery-slider-thumb'
+        });
+        
+        $(".hero-gallery-slider-thumb").slick({
+          infinite: true,
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          centerPadding: '10px',
+          asNavFor: '.hero-gallery-slider',
+          focusOnSelect: true,
+          centerMode: true
         });
         //
         // INITIALISE FILE LIST AS SLIDER OF MOBILE

@@ -15,47 +15,93 @@
 	<div class="section product-hero-section">
 		<div class="container-fluid section-container">
 			<div class="row">
-				<div class="col-xs-6">
+				<div class="col-sm-6">
 					<div class="inner-wrap">
+						<!-- START HERO GALLERY -->
+						<!-- AND THUMBNAIL NEEDS TO BE THE SAME -->
 						<div class="hero-gallery-slider">
 							<div class="one-slide">
 								<img class="img-responsive" src="templates/images/product-detail/product-image1.jpg" alt="item">
 							</div>
 							<div class="one-slide">
-								<img class="img-responsive" src="templates/images/product-detail/product-image1.jpg" alt="item">
+								<img class="img-responsive" src="templates/images/product-detail/product-image2.jpg" alt="item">
+							</div>
+							<div class="one-slide">
+								<img class="img-responsive" src="templates/images/product-detail/product-image3.jpg" alt="item">
+							</div>
+							<div class="one-slide">
+								<img class="img-responsive" src="templates/images/product-detail/product-image4.jpg" alt="item">
 							</div>
 							<div class="one-slide">
 								<img class="img-responsive" src="templates/images/product-detail/product-image1.jpg" alt="item">
 							</div>
 							<div class="one-slide">
-								<img class="img-responsive" src="templates/images/product-detail/product-image1.jpg" alt="item">
+								<img class="img-responsive" src="templates/images/product-detail/product-image2.jpg" alt="item">
+							</div>
+							<div class="one-slide">
+								<img class="img-responsive" src="templates/images/product-detail/product-image3.jpg" alt="item">
+							</div>
+							<div class="one-slide">
+								<img class="img-responsive" src="templates/images/product-detail/product-image4.jpg" alt="item">
 							</div>
 						</div>
+						<div class="hero-gallery-slider-thumb">
+							<div class="one-slide">
+								<img class="img-responsive" src="templates/images/product-detail/product-image1.jpg" alt="item">
+							</div>
+							<div class="one-slide">
+								<img class="img-responsive" src="templates/images/product-detail/product-image2.jpg" alt="item">
+							</div>
+							<div class="one-slide">
+								<img class="img-responsive" src="templates/images/product-detail/product-image3.jpg" alt="item">
+							</div>
+							<div class="one-slide">
+								<img class="img-responsive" src="templates/images/product-detail/product-image4.jpg" alt="item">
+							</div>
+							<div class="one-slide">
+								<img class="img-responsive" src="templates/images/product-detail/product-image1.jpg" alt="item">
+							</div>
+							<div class="one-slide">
+								<img class="img-responsive" src="templates/images/product-detail/product-image2.jpg" alt="item">
+							</div>
+							<div class="one-slide">
+								<img class="img-responsive" src="templates/images/product-detail/product-image3.jpg" alt="item">
+							</div>
+							<div class="one-slide">
+								<img class="img-responsive" src="templates/images/product-detail/product-image4.jpg" alt="item">
+							</div>
+						</div>
+						<!-- END HERO GALLERY -->
 					</div>
 				</div>
-				<div class="col-xs-6">
+				<div class="col-sm-5">
 					<div class="inner-wrap">
 						<div class="hero-details">
-							<div class="hero-details-main">
-								<h1>Conex Dapibus Ullamcorp Fringilla</h1>
-							</div>
-							<div class="hero-details-price">
-								<p>Price</p>
-							</div>
-							<div class="hero-details-set">
-								<p>1 each</p>
-							</div>
-							<div class="hero-details-addbutton">
-								<p>add to list button</p>
-							</div>
-							<div class="hero-details-icons">
-								<p>list of icons</p>
-							</div>
-							<div class="hero-details-dropdown">
-								<p>availability and variations</p>
-							</div>
-							<div class="hero-details-actions">
-								<p>email and print</p>
+							<div class="row">
+								<div class="col-xs-12 col-sm-8 col-sm-offset-1">
+									<div class="hero-details-main">
+										<h1>Conex Dapibus Ullamcorp Fringilla</h1>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo.</p>
+									</div>
+									<div class="hero-details-price">
+										<p>Price</p>
+									</div>
+									<div class="hero-details-set">
+										<p>1 each</p>
+									</div>
+									<div class="hero-details-addbutton">
+										<p>add to list button</p>
+									</div>
+									<div class="hero-details-icons">
+										<p>list of icons</p>
+									</div>
+									<div class="hero-details-dropdown">
+										<p>availability and variations</p>
+									</div>
+									<div class="hero-details-actions">
+										<p>email and print</p>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -96,7 +142,7 @@
 							<div class="inner-info">
 								<div class="row">
 									<div class="col-sm-5">
-										<h6>Product Information</h6>
+										<h6 class="table-heading">Product Information</h6>
 										<table class="verticle-table">
 											<tr>
 												<th>Heading</th>
@@ -119,7 +165,7 @@
 												<td>Lorem ipsum dolor sit.</td>
 											</tr>
 										</table>
-										<h6>Finish</h6>
+										<h6 class="table-heading">Finish</h6>
 										<table class="verticle-table">
 											<tr>
 												<th>Heading</th>
@@ -136,7 +182,7 @@
 										</table>
 									</div>
 									<div class="col-sm-5">
-										<h6>Material</h6>
+										<h6 class="table-heading">Material</h6>
 										<table class="verticle-table">
 											<tr>
 												<th>Heading</th>
@@ -155,7 +201,7 @@
 								</div>
 								<!-- .row -->
 								<div class="row">
-									<div class="col-sm-12">
+									<div class="col-sm-10">
 										<div class="file-download-area">
 											<header class="action-expand-button download-header" data-expandbutton="feature-files"><h4 class="download-heading">Brochures</h4></header>
 											<div class="expand-section" data-expandsection="feature-files">
@@ -203,7 +249,7 @@
 							<div class="inner-info">
 								<div class="row">
 									<div class="col-sm-5">
-										<h6>Technical Information</h6>
+										<h6 class="table-heading">Technical Information</h6>
 										<table class="verticle-table">
 											<tr>
 												<th>Heading</th>
@@ -226,7 +272,7 @@
 												<td>Lorem ipsum dolor sit.</td>
 											</tr>
 										</table>
-										<h6>SIze and Dimension</h6>
+										<h6 class="table-heading">SIze and Dimension</h6>
 										<table class="verticle-table">
 											<tr>
 												<th>Heading</th>
@@ -243,7 +289,7 @@
 										</table>
 									</div>
 									<div class="col-sm-5">
-										<h6>WELs</h6>
+										<h6 class="table-heading">WELs</h6>
 										<table class="verticle-table">
 											<tr>
 												<th>Heading</th>
@@ -261,31 +307,31 @@
 									</div>
 								</div><!-- .row -->
 								<div class="row">
-									<div class="col-sm-12">
-									<div class="file-download-area">
-										<header class="action-expand-button download-header" data-expandbutton="technical-files"><h4 class="download-heading">Technical Downloads</h4></header>
-										<div class="expand-section" data-expandsection="technical-files">
-											<ul class="file-download-list">
-												<?php for($i = 0; $i<3;$i++){ ?>
-												<li class="one-file">
-													<div class="file-info file-doc">
-														<p class="file-name">Warranty</p>
-														<a href="#" class="file-download">
-															Download PDF
-														</a>
-													</div>
-												</li>
-												<li class="one-file">
-													<div class="file-info file-cad">
-														<p class="file-name">Warranty</p>
-														<a href="#" class="file-download">
-															Download CAD
-														</a>
-													</div>
-												</li>
-												<?php } ?>
-											</ul>
-										</div>
+									<div class="col-sm-10">
+										<div class="file-download-area">
+											<header class="action-expand-button download-header" data-expandbutton="technical-files"><h4 class="download-heading">Technical Downloads</h4></header>
+											<div class="expand-section" data-expandsection="technical-files">
+												<ul class="file-download-list">
+													<?php for($i = 0; $i<3;$i++){ ?>
+													<li class="one-file">
+														<div class="file-info file-doc">
+															<p class="file-name">Warranty</p>
+															<a href="#" class="file-download">
+																Download PDF
+															</a>
+														</div>
+													</li>
+													<li class="one-file">
+														<div class="file-info file-cad">
+															<p class="file-name">Warranty</p>
+															<a href="#" class="file-download">
+																Download CAD
+															</a>
+														</div>
+													</li>
+													<?php } ?>
+												</ul>
+											</div>
 										</div>
 									</div>
 								</div><!-- .row -->
@@ -308,7 +354,7 @@
 							<div class="inner-info">
 								<div class="row">
 									<div class="col-sm-5">
-										<h6>Product Information</h6>
+										<h6 class="table-heading">Product Information</h6>
 									</div>
 								</div><!-- .row -->
 								<div class="row">
@@ -347,31 +393,31 @@
 									</div>
 								</div><!-- .row -->
 								<div class="row">
-									<div class="col-sm-12">
-									<div class="file-download-area">
-										<header class="action-expand-button download-header" data-expandbutton="warranty-files"><h4 class="download-heading">Warranty Downloads</h4></header>
-										<div class="expand-section" data-expandsection="warranty-files">
-											<ul class="file-download-list">
-												<?php for($i = 0; $i<3;$i++){ ?>
-												<li class="one-file">
-													<div class="file-info file-doc">
-														<p class="file-name">Warranty</p>
-														<a href="#" class="file-download">
-															Download PDF
-														</a>
-													</div>
-												</li>
-												<li class="one-file">
-													<div class="file-info file-cad">
-														<p class="file-name">Warranty</p>
-														<a href="#" class="file-download">
-															Download CAD
-														</a>
-													</div>
-												</li>
-												<?php } ?>
-											</ul>
-										</div>
+									<div class="col-sm-10">
+										<div class="file-download-area">
+											<header class="action-expand-button download-header" data-expandbutton="warranty-files"><h4 class="download-heading">Warranty Downloads</h4></header>
+											<div class="expand-section" data-expandsection="warranty-files">
+												<ul class="file-download-list">
+													<?php for($i = 0; $i<3;$i++){ ?>
+													<li class="one-file">
+														<div class="file-info file-doc">
+															<p class="file-name">Warranty</p>
+															<a href="#" class="file-download">
+																Download PDF
+															</a>
+														</div>
+													</li>
+													<li class="one-file">
+														<div class="file-info file-cad">
+															<p class="file-name">Warranty</p>
+															<a href="#" class="file-download">
+																Download CAD
+															</a>
+														</div>
+													</li>
+													<?php } ?>
+												</ul>
+											</div>
 										</div>
 									</div>
 								</div><!-- .row -->
@@ -393,37 +439,51 @@
 						<div data-expandsection="installation" class="expand-section opened">
 							<div class="inner-info">
 								<div class="row">
-									<div class="col-sm-12">
+									<div class="col-lg-12 col-lg-pull-1 col-md-12 col-md-pull-1 col-sm-11 col-sm-pull-0  ">
 
-										Installation videos here: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat necessitatibus quia unde atque veniam? Cupiditate perferendis tenetur minima delectus, ratione, rerum commodi possimus mollitia cum quo ut. Dolor, fugit culpa velit, repudiandae nesciunt sit ex voluptate quaerat soluta perferendis. Natus velit repellendus recusandae, nobis sint nesciunt nam consequuntur non obcaecati quaerat quam libero quo possimus atque mollitia facilis aut. Provident.
+										<div class="video-slider">
+											<?php for($i = 0; $i<7;$i++){ ?>
+											<div class="one-slide">
+												<div class="video-thumbnail">
+													<a href="#" title="Watch video">
+														<span class="thumb-image"><img class="img-responsive" src="templates/images/product-detail/video-thumb<?php echo 1+$i%3 ?>.jpg" alt="item"></span>
+														<span class="play-button"></span>
+													</a>
+												</div>
+												<div class="video-details">
+													<p class="product-description">Water end cap</p>
+												</div>
+											</div>
+											<?php } ?>
+										</div>
 									</div>
 								</div><!-- .row -->
 								<div class="row">
-									<div class="col-sm-12">
-									<div class="file-download-area">
-										<header class="action-expand-button download-header" data-expandbutton="installation-files"><h4 class="download-heading">Installation Downloads</h4></header>
-										<div class="expand-section" data-expandsection="installation-files">
-											<ul class="file-download-list">
-												<?php for($i = 0; $i<3;$i++){ ?>
-												<li class="one-file">
-													<div class="file-info file-doc">
-														<p class="file-name">Warranty</p>
-														<a href="#" class="file-download">
-															Download PDF
-														</a>
-													</div>
-												</li>
-												<li class="one-file">
-													<div class="file-info file-cad">
-														<p class="file-name">Warranty</p>
-														<a href="#" class="file-download">
-															Download CAD
-														</a>
-													</div>
-												</li>
-												<?php } ?>
-											</ul>
-										</div>
+									<div class="col-sm-10">
+										<div class="file-download-area">
+											<header class="action-expand-button download-header" data-expandbutton="installation-files"><h4 class="download-heading">Installation Downloads</h4></header>
+											<div class="expand-section" data-expandsection="installation-files">
+												<ul class="file-download-list">
+													<?php for($i = 0; $i<3;$i++){ ?>
+													<li class="one-file">
+														<div class="file-info file-doc">
+															<p class="file-name">Warranty</p>
+															<a href="#" class="file-download">
+																Download PDF
+															</a>
+														</div>
+													</li>
+													<li class="one-file">
+														<div class="file-info file-cad">
+															<p class="file-name">Warranty</p>
+															<a href="#" class="file-download">
+																Download CAD
+															</a>
+														</div>
+													</li>
+													<?php } ?>
+												</ul>
+											</div>
 										</div>
 									</div>
 								</div><!-- .row -->
@@ -439,7 +499,7 @@
 	<div class="section downloads-section" id="downloads">
 		<div class="container-fluid section-container">
 			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-11 col-md-offset-1">
+				<div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
 					<div class="inner-wrap">
 						<header data-expandbutton="all-downloads" class="section-title action-expand-section opened"><h3 class="section-heading">All Downloads</h3></header>
 						<div data-expandsection="all-downloads" class="expand-section opened">
@@ -470,36 +530,72 @@
 		</div>
 	</div>
 	<!--END ALL DOWNLOADS SECTION -->
-	<!--START VIDEOS SECTION -->
-	<div class="section videos-section" id="videos">
+
+
+
+
+
+
+	<!--START VIDEO SECTION -->
+	<div class="section videos-section bg-dark-stripes" id="videos">
 		<div class="container-fluid section-container">
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-11 col-md-offset-1">
 					<div class="inner-wrap">
-						<header class="section-title"><h3 class="section-heading">Videos</h3></header>
-						<div class="video-slider">
-							<?php for($i = 0; $i<7;$i++){ ?>
-							<div class="one-slide">
-								<div class="video-thumbnail">
-									<img class="img-responsive" src="templates/images/product-detail/video-thumb<?php echo 1+$i%3 ?>.jpg" alt="item">
-								</div>
-								<div class="video-details">
-									<p class="product-description">Water end cap</p>
-								</div>
+						<header data-expandbutton="videos-area" class="section-title action-expand-button opened"><h3 class="section-heading">Videos</h3></header>
+						<div data-expandsection="videos-area" class="expand-section opened">
+							<div class="inner-info">
+								<div class="row">
+									<div class="col-lg-12 col-lg-pull-1 col-md-12 col-md-pull-1 col-sm-11 col-sm-pull-0  ">
+
+										<div class="video-slider">
+											<?php for($i = 0; $i<7;$i++){ ?>
+											<div class="one-slide">
+												<div class="video-thumbnail">
+													<a href="#" title="Watch video">
+														<span class="thumb-image"><img class="img-responsive" src="templates/images/product-detail/video-thumb<?php echo 1+$i%3 ?>.jpg" alt="item"></span>
+														<span class="play-button"></span>
+													</a>
+												</div>
+												<div class="video-details">
+													<p class="product-description">Water end cap</p>
+												</div>
+											</div>
+											<?php } ?>
+										</div>
+									</div>
+								</div><!-- .row -->
 							</div>
-							<?php } ?>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!--END VIDEOS SECTION -->
+	<!--END VIDEO SECTION -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	<!--START PEOPLE ALSO BOUGHT SECTION -->
-	<div class="section product-suggestion-section" id="people-also-bought">
+	<div class="section product-suggestion-section bg-light-stripes" id="people-also-bought">
 		<div class="container-fluid section-container">
 			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-11 col-md-offset-1">
+				<div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
 					<div class="inner-wrap">
 						<header class="section-title"><h3 class="section-heading">People also bought</h3></header>
 						<div class="product-suggestion-slider">

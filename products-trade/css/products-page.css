@@ -225,11 +225,20 @@ MAIN TITLE
 #product-pages .bg-mid-grey {
   background: #eaeaea;
 }
+#product-pages .bg-dark-stripes {
+  background: #e3e3e3 url('../templates/images/product-detail/bg-dark-stripes.png');
+}
+#product-pages .bg-light-stripes {
+  background: #fafafa url('../templates/images/product-detail/bg-light-stripes.png');
+}
 #product-pages .bg-table-header-grey {
   background: #f4f4f4;
 }
 #product-pages .text-blue {
   color: #099ade;
+}
+#product-pages .text-white {
+  color: #ffffff;
 }
 #product-pages .text-light-grey {
   color: #b4b4b4;
@@ -2087,11 +2096,37 @@ MAIN TITLE
     min-height: 5px;
   }
 }
+#product-pages .main-section#product-detail .product-hero-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+#product-pages .main-section#product-detail .product-hero-section .hero-gallery-slider {
+  border: solid 1px #eaeaea;
+}
+#product-pages .main-section#product-detail .product-hero-section .hero-gallery-slider-thumb .one-slide {
+  border: solid 1px #eaeaea;
+}
+#product-pages .main-section#product-detail .product-hero-section .hero-details .hero-details-main {
+  text-align: center;
+}
+#product-pages .main-section#product-detail .product-hero-section .hero-details .hero-details-main h1 {
+  font-size: 35px;
+  font-family: "Gotham A", "Gotham B";
+  font-style: normal;
+  font-weight: 700;
+}
+#product-pages .main-section#product-detail .product-hero-section .hero-details .hero-details-main p {
+  font-size: 22px;
+  font-family: "Gotham A", "Gotham B";
+  font-style: normal;
+  font-weight: 400;
+}
 #product-pages .main-section#product-detail .file-download-list {
   display: block;
-  padding: 0;
+  padding: 30px 40px;
   margin: 0;
   overflow: auto;
+  background-color: #fafafa;
 }
 #product-pages .main-section#product-detail .file-download-list li {
   list-style: none;
@@ -2108,9 +2143,37 @@ MAIN TITLE
   background-position: left center;
   background-size: 44px 60px;
   padding: 5px 10px 5px 65px;
+  font-size: 15px;
 }
 #product-pages .main-section#product-detail .file-download-list li .file-info.file-cad {
   background-image: url("../templates/images/product-detail/icon-file-cad.png");
+}
+#product-pages .main-section#product-detail .file-download-list li .file-info .file-name {
+  padding: 0;
+  margin: 0;
+}
+#product-pages .main-section#product-detail .file-download-list li .file-info .file-download {
+  color: #0776aa;
+  text-decoration: underline;
+  font-family: "Gotham A", "Gotham B";
+  font-style: normal;
+  font-weight: 500;
+  display: block;
+}
+#product-pages .main-section#product-detail .file-download-list li .file-info .file-download:hover {
+  color: #000000;
+}
+@media (max-width: 767px) {
+  #product-pages .main-section#product-detail .file-download-list li .file-info .file-download {
+    background-color: #0776aa;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 5px;
+    margin-top: 10px;
+    font-family: "Gotham A", "Gotham B";
+    font-style: normal;
+    font-weight: 400;
+  }
 }
 @media (max-width: 767px) {
   #product-pages .main-section#product-detail .file-download-list li .file-info {
@@ -2145,51 +2208,132 @@ MAIN TITLE
 }
 #product-pages .main-section#product-detail .verticle-table {
   border-collapse: collapse;
+  margin-bottom: 20px;
 }
 #product-pages .main-section#product-detail .verticle-table th,
 #product-pages .main-section#product-detail .verticle-table td {
   width: 50%;
   vertical-align: middle;
-  border: 1px solid #eaeaea;
+  border: 1px solid #bfbfbf;
   padding: 10px;
   font-family: "Gotham A", "Gotham B";
   font-style: normal;
   font-weight: 400;
 }
 #product-pages .main-section#product-detail .verticle-table th {
-  background-color: #fafafa;
+  background-color: #f4f4f4;
 }
 #product-pages .main-section#product-detail .section.features-section .section-container,
 #product-pages .main-section#product-detail .section.technical-section .section-container,
 #product-pages .main-section#product-detail .section.warranty-section .section-container,
 #product-pages .main-section#product-detail .section.installation-section .section-container,
 #product-pages .main-section#product-detail .section.downloads-section .section-container {
-  border-top: solid 1px #eaeaea;
-  margin-top: 40px;
-  padding-top: 40px;
+  border-top: solid 1px #bfbfbf;
+  margin-top: 20px;
+}
+@media (max-width: 767px) {
+  #product-pages .main-section#product-detail .section.features-section .section-container,
+  #product-pages .main-section#product-detail .section.technical-section .section-container,
+  #product-pages .main-section#product-detail .section.warranty-section .section-container,
+  #product-pages .main-section#product-detail .section.installation-section .section-container,
+  #product-pages .main-section#product-detail .section.downloads-section .section-container {
+    border-top: solid 0px #bfbfbf;
+    margin-top: 0;
+  }
+}
+#product-pages .main-section#product-detail .section.features-section .expand-section,
+#product-pages .main-section#product-detail .section.technical-section .expand-section,
+#product-pages .main-section#product-detail .section.warranty-section .expand-section,
+#product-pages .main-section#product-detail .section.installation-section .expand-section,
+#product-pages .main-section#product-detail .section.downloads-section .expand-section {
+  padding-top: 0;
+  padding-bottom: 20px;
+}
+#product-pages .main-section#product-detail .section.features-section .table-heading,
+#product-pages .main-section#product-detail .section.technical-section .table-heading,
+#product-pages .main-section#product-detail .section.warranty-section .table-heading,
+#product-pages .main-section#product-detail .section.installation-section .table-heading,
+#product-pages .main-section#product-detail .section.downloads-section .table-heading {
+  font-size: 15px;
+  font-family: "Gotham A", "Gotham B";
+  font-style: normal;
+  font-weight: 400;
 }
 #product-pages .main-section#product-detail .section .section-title {
   padding: 10px 0;
-  background-color: yellow;
-  margin-bottom: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 #product-pages .main-section#product-detail .section .section-title .section-heading {
   padding: 0;
   margin: 0;
+  font-size: 22px;
+  font-family: "Gotham A", "Gotham B";
+  font-style: normal;
+  font-weight: 700;
 }
 @media (max-width: 767px) {
   #product-pages .main-section#product-detail .section .section-title {
-    background-color: #fafafa;
+    margin-bottom: 0;
+    padding: 10px;
+    background: #f4f4f4;
+  }
+  #product-pages .main-section#product-detail .section .section-title .section-heading {
+    background: url('../templates/images/icon-downarrow-black.png') no-repeat right center;
+    background-size: 20px 20px;
+  }
+  #product-pages .main-section#product-detail .section .section-title.opened .section-heading {
+    background: url('../templates/images/icon-uparrow-black.png') no-repeat right center;
+    background-size: 20px 20px;
   }
 }
 #product-pages .main-section#product-detail .file-download-area {
-  padding-top: 40px;
+  padding-top: 20px;
 }
 #product-pages .main-section#product-detail .file-download-area .download-header {
-  padding: 6px 0;
-  background-color: red;
+  padding: 10px;
+  background-color: #f4f4f4;
 }
 #product-pages .main-section#product-detail .file-download-area .download-header .download-heading {
   padding: 0;
   margin: 0;
+  background: url('../templates/images/icon-downarrow-black.png') no-repeat right center;
+  background-size: 20px 20px;
+}
+#product-pages .main-section#product-detail .file-download-area .download-header.opened .download-heading {
+  background: url('../templates/images/icon-uparrow-black.png') no-repeat right center;
+  background-size: 20px 20px;
+}
+#product-pages .main-section#product-detail .video-thumbnail {
+  position: relative;
+  text-align: center;
+}
+#product-pages .main-section#product-detail .video-thumbnail a {
+  display: block;
+}
+#product-pages .main-section#product-detail .video-thumbnail a .thumb-image img {
+  width: 100%;
+}
+#product-pages .main-section#product-detail .video-thumbnail a .play-button {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url('../templates/images/product-detail/icon-play.png') no-repeat center center;
+}
+#product-pages .main-section#product-detail .video-slider {
+  text-align: center;
+}
+#product-pages .main-section#product-detail .video-slider .product-description {
+  padding: 10px;
+}
+#product-pages .main-section#product-detail #videos .section-heading {
+  color: #ffffff;
+}
+#product-pages .main-section#product-detail #videos .product-description {
+  color: #ffffff;
 }

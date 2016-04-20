@@ -1,0 +1,49 @@
+@breadcrumb-link-color: #c1c1c1;
+@breadcrumb-link-current-color: #2984cb;
+
+.breadcrumb-section{
+	.breadcrumb-inner{
+		max-width: 1200px;
+  	margin: 0 auto;
+		.breadcrumbs{
+			padding:10px 0;
+			margin:0;
+			list-style: none;
+			.gothamBook;
+			li{
+				display: inline-block;
+				list-style: none;
+				padding:0;
+				margin:0;
+				position: relative;
+				a{
+					display: block;
+					padding-left:7px;
+					padding-right:7px;
+					font-size:14px;
+					line-height:1em;
+					font-weight: 500;
+					color: @breadcrumb-link-color;
+				}
+				&:after{
+					content: " / ";
+					display: block;
+					position: absolute;
+					top: -3px;
+					right: -6px;
+					.gothamBook;
+					color: @breadcrumb-link-color;
+					font-weight: 500;
+				}
+				&:last-child{
+					a{
+						color: @breadcrumb-link-current-color;
+					}
+					&:after{
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}

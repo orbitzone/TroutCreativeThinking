@@ -24,9 +24,6 @@
 NAVIGATION
 */
   /*
-BREADCRUMB
-*/
-  /*
 MAIN TITLE
 */
   /*
@@ -356,29 +353,6 @@ Slick slider arrow
   letter-spacing: 0;
   font-size: 13px;
 }
-#product-pages .breadcrumb-section .breadcrumb-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-#product-pages .breadcrumb-section .breadcrumb-inner .breadcrumbs {
-  padding: 10px 0;
-  margin: 0;
-  font-family: "Gotham A", "Gotham B";
-  font-style: normal;
-  font-weight: 400;
-}
-#product-pages .breadcrumb-section .breadcrumb-inner .breadcrumbs li {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-#product-pages .breadcrumb-section .breadcrumb-inner .breadcrumbs li a {
-  padding-left: 7px;
-  padding-right: 7px;
-  font-size: 14px;
-  line-height: 1em;
-  color: #404040;
-}
 #product-pages .page-title h1 {
   font-family: "Gotham A", "Gotham B";
   font-style: normal;
@@ -454,8 +428,8 @@ Slick slider arrow
   display: none;
 }
 #product-pages .selectric-items {
-  -webkit-box-shadow: 0px 6px 33px -10px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 6px 33px -10px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 6px 33px -10px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 6px 33px -10px rgba(0, 0, 0, 0.75);
 }
 #product-pages .selectric-items li {
@@ -557,6 +531,88 @@ Slick slider arrow
   background-position: right 10px top 50%;
   background-size: 20px;
   right: 5px;
+}
+#product-pages #search {
+  padding-top: 30px;
+}
+#product-pages #search:before,
+#product-pages #search:after {
+  content: " ";
+  display: table;
+}
+#product-pages #search:after {
+  clear: both;
+}
+#product-pages #search input {
+  width: 37%;
+  height: 56px;
+  float: left;
+}
+#product-pages #search button {
+  width: 56px;
+  height: 56px;
+  text-align: center;
+  float: left;
+  border: none;
+  padding: 0;
+}
+#product-pages #search button svg circle,
+#product-pages #search button svg line {
+  stroke: white;
+}
+#product-pages .breadcrumb-section .breadcrumb-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#product-pages .breadcrumb-section .breadcrumb-inner .breadcrumbs {
+  padding: 10px 0;
+  margin: 0;
+  list-style: none;
+  font-family: "Gotham A", "Gotham B";
+  font-style: normal;
+  font-weight: 400;
+}
+#product-pages .breadcrumb-section .breadcrumb-inner .breadcrumbs li {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+#product-pages .breadcrumb-section .breadcrumb-inner .breadcrumbs li a {
+  display: block;
+  padding-left: 7px;
+  padding-right: 7px;
+  font-size: 14px;
+  line-height: 1em;
+  font-weight: 500;
+  color: #c1c1c1;
+}
+#product-pages .breadcrumb-section .breadcrumb-inner .breadcrumbs li:after {
+  content: " / ";
+  display: block;
+  position: absolute;
+  top: -3px;
+  right: -6px;
+  font-family: "Gotham A", "Gotham B";
+  font-style: normal;
+  font-weight: 400;
+  color: #c1c1c1;
+  font-weight: 500;
+}
+#product-pages .breadcrumb-section .breadcrumb-inner .breadcrumbs li:last-child a {
+  color: #2984cb;
+}
+#product-pages .breadcrumb-section .breadcrumb-inner .breadcrumbs li:last-child:after {
+  display: none;
+}
+#product-pages #shopping-cart-widget {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 83px;
+  height: 100vh;
+  background: #0776aa;
 }
 #product-pages .main-section#checkout-cart-section {
   overflow: hidden;
@@ -856,9 +912,9 @@ Slick slider arrow
   padding-top: 5px;
 }
 #product-pages .main-section#checkout-cart-section #order-form .transition-height {
-  -webkit-transition: height 1s ease;
   -moz-transition: height 1s ease;
   -ms-transition: height 1s ease;
+  -webkit-transition: height 1s ease;
   -o-transition: height 1s ease;
   transition: height 1s ease;
 }
@@ -1009,19 +1065,21 @@ Slick slider arrow
   -webkit-opacity: 0;
   -moz-opacity: 0;
   opacity: 0;
-  -webkit-transition: opacity 1s ease;
+  filter: alpha(opacity=0);
   -moz-transition: opacity 1s ease;
   -ms-transition: opacity 1s ease;
+  -webkit-transition: opacity 1s ease;
   -o-transition: opacity 1s ease;
   transition: opacity 1s ease;
-  -webkit-box-shadow: 0px 6px 33px -10px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 6px 33px -10px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 6px 33px -10px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 6px 33px -10px rgba(0, 0, 0, 0.75);
 }
 #product-pages .main-section#checkout-cart-section #order-form form#checkout-cart #pickupbranch-results.active {
   -webkit-opacity: 1;
   -moz-opacity: 1;
   opacity: 1;
+  filter: alpha(opacity=100);
 }
 #product-pages .main-section#checkout-cart-section #order-form form#checkout-cart #pickupbranch-results header {
   background: #eaeaea;
@@ -1272,6 +1330,7 @@ Slick slider arrow
   -webkit-opacity: 0;
   -moz-opacity: 0;
   opacity: 0;
+  filter: alpha(opacity=0);
   position: absolute;
 }
 #product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group label .radio-button {
@@ -1332,6 +1391,7 @@ Slick slider arrow
   -webkit-opacity: 0;
   -moz-opacity: 0;
   opacity: 0;
+  filter: alpha(opacity=0);
   position: absolute;
 }
 #product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group .picture-button {
@@ -1940,9 +2000,9 @@ Slick slider arrow
   font-style: normal;
   font-weight: 400;
   padding: 10px 0;
-  -webkit-transition: 0.5s all ease-out;
   -moz-transition: 0.5s all ease-out;
   -ms-transition: 0.5s all ease-out;
+  -webkit-transition: 0.5s all ease-out;
   -o-transition: 0.5s all ease-out;
   transition: 0.5s all ease-out;
 }
@@ -2065,14 +2125,14 @@ Slick slider arrow
   line-height: 22px;
   display: inline-block;
   padding: 5px;
-  -webkit-transition: color 0.5s ease;
   -moz-transition: color 0.5s ease;
   -ms-transition: color 0.5s ease;
+  -webkit-transition: color 0.5s ease;
   -o-transition: color 0.5s ease;
   transition: color 0.5s ease;
-  -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   -ms-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
@@ -2126,6 +2186,9 @@ Slick slider arrow
   #product-pages #shopping-cart .shopping-cart-listing .inner-wrap .item-data {
     min-height: 5px;
   }
+}
+#product-pages .main-section#product-detail {
+  position: relative;
 }
 #product-pages .main-section#product-detail .product-hero-section {
   padding-top: 40px;

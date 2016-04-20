@@ -677,5 +677,6 @@
 		</div>
 	</div>
 	<!--END FOOTER PROMO SECTION -->
+	<?php include "templates/Includes/Widget.php" ?>
 </div>
 <!--END SHOPPING CART -->

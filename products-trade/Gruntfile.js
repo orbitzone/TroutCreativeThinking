@@ -49,16 +49,20 @@ module.exports = function(grunt) {
                 livereload: true
             },
             less: {
-                files: ['less/products-page/*.less', 'javascript/products-page.js'],
+                files: ['less/products-page/**/*.less', 'javascript/products-page.js'],
                 tasks: ['less', 'uglify'],
                 //options: {
                 //  spawn: false //important so that the task runs in the same context
                 //}
             }
+        },
+        svgstore: {
+            
         }
     });
     //  grunt.loadNpmTasks('grunt-newer');
     grunt.loadNpmTasks('grunt-notify');
+    grunt.loadNpmTasks('grunt-svgstore');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-copy');

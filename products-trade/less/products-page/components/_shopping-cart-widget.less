@@ -1,8 +1,43 @@
 #shopping-cart-widget{
 	position: absolute;
 	top: 0;
-	right: 0;
-	width: 83px;
+	right: -502px;
+	width: 585px;
 	height: 100vh;
 	background: #0776aa;
+	.transition(0.3s all ease-out);
+	.clearfix();
+	aside{
+		width: 83px;
+		height: 100%;
+		float: left;
+		text-align: center;
+		padding-top: 10px;
+		button{
+			border: none;
+			.border-radius(0);
+			background: none;
+			.appearance(none);
+			outline: none;
+			svg{
+				width: 44px;
+				height: 35px;
+				fill: white;
+			}
+			&:focus{
+				svg{
+					fill: yellow;
+				}
+			}
+		}		
+	}
+	.shopping-cart-content{
+		width: 502px;
+		height: 100%;
+		float: left;
+		background: #066693;
+	}
+	&.open{
+		right: 0;
+	}
 }

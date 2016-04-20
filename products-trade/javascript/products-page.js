@@ -8,6 +8,9 @@ var product_pages = {
         if (typeof this[section] === 'function') {
             this[section]();
         }
+        if($('#shopping-cart-widget').length > 0){
+            this.widget();
+        }
     },
     checkoutCart: function() {
         //======================================================================
@@ -517,6 +520,11 @@ var product_pages = {
                 }
             }
         );
+    },
+    widget: function(){
+        $('#shopping-cart-widget').find('button').on('click', function(){
+            $('#shopping-cart-widget').toggleClass('open');
+        });
     },
     productDetail: function(){
         //

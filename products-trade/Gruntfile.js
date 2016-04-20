@@ -57,15 +57,22 @@ module.exports = function(grunt) {
             }
         },
         svgstore: {
-            
+          options: {
+            prefix : 'shape-', // This will prefix each <g> ID
+          },
+          default : {
+            files: {
+              'templates/images/IconsSvg.svg': ['templates/images/svgs/*.svg'],
+            }
+          }      
         }
     });
     //  grunt.loadNpmTasks('grunt-newer');
     grunt.loadNpmTasks('grunt-notify');
-    grunt.loadNpmTasks('grunt-svgstore');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-svgstore');
     grunt.registerTask('default', ['copy', 'less', 'watch']);
 };

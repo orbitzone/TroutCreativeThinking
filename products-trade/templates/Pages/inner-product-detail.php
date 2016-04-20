@@ -15,6 +15,14 @@
 	<div class="section product-hero-section">
 		<div class="container-fluid section-container">
 			<div class="row">
+				<div class="col-xs-12">
+					<form action="http://reece.com.au/bathrooms/products/" method="get" id="search">
+						<input type="text" name="keyword" placeholder="Search Product">
+						<button type="button" class="btn blue-button">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="20px" height="20px"><title>search</title> <circle fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="2.5" stroke-miterlimit="10" cx="14.6" cy="14.6" r="13.3"/> <line fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-miterlimit="10" x1="24.1" y1="24" x2="38.8" y2="38.8"/></svg>
+						</button>
+					</form>
+				</div>
 				<div class="col-sm-6">
 					<div class="inner-wrap">
 						<!-- START HERO GALLERY -->

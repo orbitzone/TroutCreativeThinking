@@ -48,7 +48,7 @@ p{
 	display:block;
 }
 .section-container{
-	max-width: 1216px;
+	max-width: 1230px;
 	.inner-container{
 		padding-left:15px;
 		padding-right:15px;
@@ -222,25 +222,30 @@ MAIN TITLE
 Slick slider arrow
 */
 .slick-next{
+	width: auto;
+	height: auto;
+	right: 20px;
+	svg{
+		width: 20px;
+		height: 40px;
+		fill: #eaeaea;
+	}	
 	&:before{
-		content:'';
-		width:25px;
-		height:25px;
-		background: url('../templates/images/icon-nextarrow.png') no-repeat;
-		background-size:25px 25px;
-		display:block;
-		top:30%;
+		display: none;
 	}
 }
 .slick-prev{
+	width: auto;
+	height: auto;
+	left: 20px;
+	z-index: 2;
+	svg{
+		width: 20px;
+		height: 40px;
+		fill: #eaeaea;
+	}
 	&:before{
-		content:'';
-		width:25px;
-		height:25px;
-		background: url('../templates/images/icon-prevarrow.png') no-repeat;
-		background-size:25px 25px;
-		display:block;
-		top:30%;
+		display: none;
 	}
 }
 .slick-dots li button:before{

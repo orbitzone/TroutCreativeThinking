@@ -11,6 +11,7 @@
 <!--END BREAD CRUMB -->
 <!--START SHOPPING CART -->
 <div class="main-section" id="product-detail">
+	<?php include "templates/Includes/Widget.php" ?>
 	<!--START PRODUCT HERO SECTION -->
 	<div class="section product-hero-section">
 		<div class="container-fluid section-container">
@@ -23,7 +24,9 @@
 						</button>
 					</form>
 				</div>
-				<div class="col-sm-6">
+			</div>
+			<div class="product-content-wrapper">
+				<div class="product-content-left">
 					<div class="inner-wrap">
 						<!-- START HERO GALLERY -->
 						<!-- AND THUMBNAIL NEEDS TO BE THE SAME -->
@@ -82,34 +85,58 @@
 						<!-- END HERO GALLERY -->
 					</div>
 				</div>
-				<div class="col-sm-5">
+				<div class="product-content-right">
 					<div class="inner-wrap">
 						<div class="hero-details">
-							<div class="row">
-								<div class="col-xs-12 col-sm-8 col-sm-offset-1">
-									<div class="hero-details-main">
-										<h1>Conex Dapibus Ullamcorp Fringilla</h1>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo.</p>
-									</div>
-									<div class="hero-details-price">
-										<p>Price</p>
-									</div>
-									<div class="hero-details-set">
-										<p>1 each</p>
-									</div>
-									<div class="hero-details-addbutton">
-										<p>add to list button</p>
-									</div>
-									<div class="hero-details-icons">
-										<p>list of icons</p>
-									</div>
-									<div class="hero-details-dropdown">
-										<p>availability and variations</p>
-									</div>
-									<div class="hero-details-actions">
-										<p>email and print</p>
-									</div>
+							<div class="hero-details-main">
+								<h1>Conex Dapibus Ullamcorp Fringilla</h1>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							</div>
+							<div class="hero-details-code">
+								2259656
+							</div>
+							<div class="hero-details-price-box">
+								<ul class="list-inline hero-details-titles">
+									<li class="hero-details-price-my-title">Your Price</li>
+									<li class="hero-details-price-cmp-title">CMP</li>
+								</ul>	
+								<div class="hero-details-price">
+									<ul class="list-inline">
+										<li><span class="hero-details-price-my">$4.17<small>inc.</small></span></li>
+										<li><span class="hero-details-price-cmp">$3.98<small>exc.</small></span></li>
+									</ul>
+								</div>	
+							</div>
+							<div class="hero-details-quantity">
+								<div class="quantity-wrap">
+									<span class="quantity-hidden">
+										<input class="quantity-radio" type="radio" id="set-7845123-ea" name="set-7845123" value="EA" checked>
+										<input class="quantity-radio" data-productcode="7845123" type="radio" id="set-7845123-pkt" name="set-7845123" value="PKT">
+									</span>
+									<span class="quantity-input">
+										<input class="quantity-number" data-productcode="7845123" type="number" name="quantity-7845123" min="1" value="1">
+									</span>
+									<span class="quantity-set">
+										<span class="radiolabel-set span-block">
+											<label for="set-7845123-ea" class="radio-button active">EA</label>
+											<label for="set-7845123-pkt" class="radio-button">PKT</label>
+											<span class="clear-fix"></span>
+										</span>
+										<span class="quantity-details">Packet <span>12</span> Units</span>
+									</span>
 								</div>
+							</div>
+							<div class="hero-details-addbutton">
+								<button type="button" class="btn btn-blue">add to list</button>
+							</div>
+							<div class="hero-details-icons">
+								<p>list of icons</p>
+							</div>
+							<div class="hero-details-dropdown">
+								<p>availability and variations</p>
+							</div>
+							<div class="hero-details-actions">
+								<p>email and print</p>
 							</div>
 						</div>
 					</div>
@@ -676,7 +703,6 @@
 			</div>
 		</div>
 	</div>
-	<!--END FOOTER PROMO SECTION -->
-	<?php include "templates/Includes/Widget.php" ?>
+	<!--END FOOTER PROMO SECTION -->	
 </div>
 <!--END SHOPPING CART -->

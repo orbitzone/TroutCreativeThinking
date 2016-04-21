@@ -159,6 +159,36 @@
 		font-size: @target;
 	}
 }
+.setWidth(@width){
+	.getVW(@width, @screen-xs);
+	width: @getVW;
+	@media (min-width: @screen-xs){
+		.getVW(@width, @screen-sm);
+		width: @getVW;
+	}
+	@media (min-width: @screen-sm){
+		.getVW(@width, @screen-lg);
+		width: @getVW;
+	}
+	@media (min-width: @screen-lg){
+		width: @width;
+	}
+}
+.setRight(@right){
+	.getVW(@right, @screen-xs);
+	right: @getVW;
+	@media (min-width: @screen-xs){
+		.getVW(@right, @screen-sm);
+		right: @getVW;
+	}
+	@media (min-width: @screen-sm){
+		.getVW(@right, @screen-lg);
+		right: @getVW;
+	}
+	@media (min-width: @screen-lg){
+		right: @right;
+	}
+}
 .setPadding(@top; @right; @bottom: @top; @left: @right){
 	@newtop: (@top / ((@screen-xs * 0.01) * 1px)) * 1vw;
 	@newright:  (@right / ((@screen-xs * 0.01) * 1px)) * 1vw;

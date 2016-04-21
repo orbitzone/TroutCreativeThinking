@@ -708,9 +708,39 @@ Slick slider arrow
   outline: none;
 }
 #product-pages #shopping-cart-widget aside button svg {
-  width: 44px;
-  height: 35px;
+  width: 9.16666667vw;
+  height: 7.29166667vw;
   fill: white;
+}
+@media (min-width: 480px) {
+  #product-pages #shopping-cart-widget aside button svg {
+    width: 5.72916667vw;
+  }
+}
+@media (min-width: 768px) {
+  #product-pages #shopping-cart-widget aside button svg {
+    width: 3.66666667vw;
+  }
+}
+@media (min-width: 1200px) {
+  #product-pages #shopping-cart-widget aside button svg {
+    width: 44px;
+  }
+}
+@media (min-width: 480px) {
+  #product-pages #shopping-cart-widget aside button svg {
+    height: 4.55729167vw;
+  }
+}
+@media (min-width: 768px) {
+  #product-pages #shopping-cart-widget aside button svg {
+    height: 2.91666667vw;
+  }
+}
+@media (min-width: 1200px) {
+  #product-pages #shopping-cart-widget aside button svg {
+    height: 35px;
+  }
 }
 #product-pages #shopping-cart-widget aside button:focus svg {
   fill: white;

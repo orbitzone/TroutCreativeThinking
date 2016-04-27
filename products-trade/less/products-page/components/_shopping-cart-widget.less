@@ -8,7 +8,7 @@
 		top: 0;
 		.setRight(-502px);
 		.setWidth(585px);
-		height: 100vh;
+		min-height: 100vh;
 	}
 	aside{
 		.setWidth(83px);
@@ -39,8 +39,137 @@
 		height: 100%;
 		float: left;
 		background: #066693;
+		.main-title{
+			font-size:30px;
+			color:@white;
+			text-align:center;
+			.gothamMedium;
+			padding: 20px 10px;
+			border-bottom:solid 1px @text-light-blue;
+			@media (max-width: @screen-xs-max) {
+				font-size:20px;
+			}
+		}
+		.tour-info{
+			padding:20px;
+			text-align:center;
+			.tour-intro{
+				color: @text-light-blue;
+				.gothamBook;
+				font-size:20px;
+			}
+			.tour-popout{
+				background: @bg-light-blue;
+				color:@white;
+				padding:20px;
+				margin:35px 0;
+				.gothamBook;
+				font-size:15px;
+				h4{
+					.gothamMedium;
+					font-size:14px;
+					text-transform: uppercase;
+				}
+				.tour-button{
+					color:@white;
+					.gothamMedium;
+					text-transform: uppercase;
+					font-size:19px;
+					background: #287aa1;
+				}
+			}
+			.tour-extra{
+				color: @white;
+				.gothamBook;
+				font-size:20px;
+			}
+		}
+		.itemlist-section{
+			color:@white;
+			.item-list{
+				padding:20px;
+				margin:0;
+				.left-col{
+					float:left;
+					width:50%;
+					display:block;
+				}
+				.right-col{
+					float:right;
+					width:50%;
+					text-align: right;
+					display:block;
+				}
+
+				.one-item{
+					padding:0;
+					margin:10px;
+					list-style: none;
+					.item-block{
+						background: #0776aa;
+						.item-info{
+							padding:10px 20px;
+							.edit-item,.product-thumbnail,.item-details,.remove-from-list{
+								float:left;
+								display:block;
+							}
+							.edit-item{
+								width:10%;
+							}
+							.product-thumbnail{
+								width:25%;
+							}
+							.item-details{
+								width:55%;
+							}
+							.remove-from-list{
+								width:10%;
+							}
+						}
+						.item-details{
+							p{
+								line-height: 1em;
+								margin-bottom:3px;
+							}
+							.product-code{
+								.gothamMedium;
+								font-size:12px;
+							}
+							.product-name{
+								.gothamBold;
+								font-size:18px;
+							}
+							.product-description{
+								.gothamBook;
+								font-size:16px;
+							}
+						}
+						.item-footer{
+							background: #0070a4;
+							.info-state{
+								padding:10px 20px;
+							}
+							.edit-state{
+								padding:0;
+								.edit-set{
+									background: #e2e2e2;
+								}
+								.price{
+									background: #f4f4f4;
+								}
+
+							}
+
+						}
+					}
+				}
+
+
+			}
+		}
 	}
 	&.open{
 		right: 0;
 	}
+
 }

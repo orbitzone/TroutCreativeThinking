@@ -552,13 +552,19 @@ var product_pages = {
         $(window).on('scroll touchmove', function(){
         }); 
         $('#shopping-cart-widget').find('button').on('click', function(){
+            var top = $(window).scrollTop() - $('.main-section').offset().top();
+            var height = $(window).height();
+            $('#shopping-cart-widget .shopping-cart-content').css({
+                top: top,
+                height: height
+            });
             $('#shopping-cart-widget').toggleClass('open');
-        });
-        $('#shopping-cart-widget').mouseenter(function(event) {
-            $('html,body').addClass('overflow-hidden');
-        }).mouseleave(function(event) {
-            $('html, body').removeClass('overflow-hidden');
-        });
+            if($(this).hasClass('open')){
+                $('html,body').addClass('overflow-hidden');
+            }else{
+                $('html, body').removeClass('overflow-hidden');    
+            }
+        });        
     },
     productDetail: function(){
         //

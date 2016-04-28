@@ -542,7 +542,7 @@ var product_pages = {
         if(deviceMobile){
             $('#shopping-cart-widget').addClass('mobile');            
         }
-        $(window).on('scroll', function(){
+        $(window).on('scroll touchmove', function(){
             if($(window).scrollTop() > $('.main-section').offset().top){
                 $('#shopping-cart-widget').addClass('fixed');
             }else{

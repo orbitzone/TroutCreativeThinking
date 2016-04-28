@@ -644,6 +644,9 @@ Slick slider arrow
     position: fixed;
     top: 0;
   }
+  #product-pages #shopping-cart-widget.mobile {
+    position: fixed;
+  }
 }
 @media (min-width: 768px) and (min-width: 480px) {
   #product-pages #shopping-cart-widget {

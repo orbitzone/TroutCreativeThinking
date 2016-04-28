@@ -1,7 +1,24 @@
 $(document).ready(function() {
     product_pages.init();
 });
-
+var isMobile = {
+    Windows: function() {
+        return /IEMobile/i.test(navigator.userAgent);
+    },
+    Android: function() {
+        return /Android/i.test(navigator.userAgent);
+    },
+    BlackBerry: function() {
+        return /BlackBerry/i.test(navigator.userAgent);
+    },
+    iOS: function() {
+        return /iPhone|iPad|iPod/i.test(navigator.userAgent);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
+    }
+};
+var deviceMobile = isMobile.any();
 var product_pages = {
     init: function() {
         var section = $('#product-pages').data('section');
@@ -522,6 +539,9 @@ var product_pages = {
         );
     },
     widget: function(){
+        if(deviceMobile){
+            $('#shopping-cart-widget').addClass('mobile');
+        }
         $(window).on('scroll', function(){
             if($(window).scrollTop() > $('.main-section').offset().top){
                 $('#shopping-cart-widget').addClass('fixed');

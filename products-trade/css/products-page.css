@@ -617,11 +617,11 @@ Slick slider arrow
 }
 #product-pages #shopping-cart-widget {
   background: #0776aa;
-  -moz-transition: 0.3s width ease-out;
-  -ms-transition: 0.3s width ease-out;
-  -webkit-transition: 0.3s width ease-out;
-  -o-transition: 0.3s width ease-out;
-  transition: 0.3s width ease-out;
+  -moz-transition: 0.3s right ease-out;
+  -ms-transition: 0.3s right ease-out;
+  -webkit-transition: 0.3s right ease-out;
+  -o-transition: 0.3s right ease-out;
+  transition: 0.3s right ease-out;
   z-index: 2;
 }
 #product-pages #shopping-cart-widget:before,
@@ -643,12 +643,6 @@ Slick slider arrow
   #product-pages #shopping-cart-widget.fixed {
     position: fixed;
     top: 0;
-  }
-  #product-pages #shopping-cart-widget.mobile {
-    position: fixed;
-  }
-  #product-pages #shopping-cart-widget.mobile.fixed {
-    top: 0 !important;
   }
 }
 @media (min-width: 768px) and (min-width: 480px) {

@@ -540,10 +540,7 @@ var product_pages = {
     },
     widget: function(){
         if(deviceMobile){
-            $('#shopping-cart-widget').addClass('mobile');
-            $('#shopping-cart-widget').css({
-                top: $('.main-section').offset().top
-            });
+            $('#shopping-cart-widget').addClass('mobile');            
         }
         $(window).on('scroll', function(){
             if($(window).scrollTop() > $('.main-section').offset().top){

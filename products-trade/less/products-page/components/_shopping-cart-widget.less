@@ -1,6 +1,6 @@
 #shopping-cart-widget{
 	background: #0776aa;
-	.transition(0.3s width ease-out);
+	.transition(0.3s right ease-out);
 	.clearfix();
 	z-index: 2;
 	@media (min-width: @screen-sm){
@@ -12,12 +12,6 @@
 		&.fixed{
 			position: fixed;
 			top: 0;
-		}
-		&.mobile{
-			position: fixed;
-			&.fixed{
-				top: 0 !important;
-			}
 		}
 	}	
 	aside{

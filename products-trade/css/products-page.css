@@ -1,3 +1,4 @@
+html.overflow-hidden,
 body.overflow-hidden {
   height: 100%;
   overflow: hidden;
@@ -621,6 +622,7 @@ Slick slider arrow
 }
 #product-pages #shopping-cart-widget {
   background: #0776aa;
+  -webkit-transform: translate3d(0, 0, 0);
   -moz-transition: 0.3s right ease-out;
   -ms-transition: 0.3s right ease-out;
   -webkit-transition: 0.3s right ease-out;
@@ -754,6 +756,17 @@ Slick slider arrow
   fill: white;
 }
 #product-pages #shopping-cart-widget .shopping-cart-content {
+  -webkit-transform: translateX(100px);
+  -moz-transform: translateX(100px);
+  -ms-transform: translateX(100px);
+  -o-transform: translateX(100px);
+  transform: translateX(100px);
+  -webkit-transform: translate3d(100px, 0, 0);
+  -moz-transform: translate3d(100px, 0, 0);
+  -ms-transform: translate3d(100px, 0, 0);
+  -o-transform: translate3d(100px, 0, 0);
+  transform: translate3d(100px, 0, 0);
+  opacity: 0;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   width: 104.58333333vw;
@@ -762,6 +775,11 @@ Slick slider arrow
   position: absolute;
   top: 0;
   right: 0;
+  -moz-transition: 0.3s all ease-out;
+  -ms-transition: 0.3s all ease-out;
+  -webkit-transition: 0.3s all ease-out;
+  -o-transition: 0.3s all ease-out;
+  transition: 0.3s all ease-out;
 }
 @media (min-width: 480px) {
   #product-pages #shopping-cart-widget .shopping-cart-content {
@@ -924,6 +942,19 @@ Slick slider arrow
 }
 #product-pages #shopping-cart-widget.open {
   right: 0;
+}
+#product-pages #shopping-cart-widget.open .shopping-cart-content {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 #product-pages .main-section#checkout-cart-section {
   overflow: hidden;

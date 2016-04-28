@@ -548,14 +548,16 @@ var product_pages = {
             }else{
                 $('#shopping-cart-widget').removeClass('fixed');
             }
+        });
+        $(window).on('scroll touchmove', function(){
         }); 
         $('#shopping-cart-widget').find('button').on('click', function(){
             $('#shopping-cart-widget').toggleClass('open');
         });
         $('#shopping-cart-widget').mouseenter(function(event) {
-            $('body').addClass('overflow-hidden');
+            $('html,body').addClass('overflow-hidden');
         }).mouseleave(function(event) {
-            $('body').removeClass('overflow-hidden');
+            $('html, body').removeClass('overflow-hidden');
         });
     },
     productDetail: function(){

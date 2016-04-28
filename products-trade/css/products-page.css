@@ -647,6 +647,9 @@ Slick slider arrow
   #product-pages #shopping-cart-widget.mobile {
     position: fixed;
   }
+  #product-pages #shopping-cart-widget.mobile.fixed {
+    top: 0 !important;
+  }
 }
 @media (min-width: 768px) and (min-width: 480px) {
   #product-pages #shopping-cart-widget {

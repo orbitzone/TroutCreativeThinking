@@ -552,6 +552,11 @@ var product_pages = {
         $('#shopping-cart-widget').find('button').on('click', function(){
             $('#shopping-cart-widget').toggleClass('open');
         });
+        $('#shopping-cart-widget').mouseenter(function(event) {
+            $('body').addClass('overflow-hidden');
+        }).mouseleave(function(event) {
+            $('body').removeClass('overflow-hidden');
+        });
     },
     productDetail: function(){
         //

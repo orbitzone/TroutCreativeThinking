@@ -755,6 +755,7 @@ Slick slider arrow
 }
 #product-pages #shopping-cart-widget .shopping-cart-content {
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   width: 104.58333333vw;
   height: 100%;
   background: #066693;

@@ -2494,6 +2494,9 @@ Slick slider arrow
   position: relative;
   overflow: hidden;
 }
+#product-pages .main-section#product-detail .product-detail-wrap {
+  -webkit-overflow-scrolling: touch;
+}
 #product-pages .main-section#product-detail img {
   max-width: 100%;
 }

@@ -3,12 +3,16 @@
  @text-my-price-title: #0776aa;
  @text-my-price: #646464;
  @text-cmp-price: #b4b4b4;
+ @text-icons: #bababa;
  @text-price-divider: #eaeaea;
  @bg-cmp: #c8c8c8;
 .main-section#product-detail{
 
 position: relative;
 overflow: hidden;
+img{
+	max-width: 100%;
+}
 .product-hero-section{
 	padding-bottom:40px;
 	.product-content-wrapper{
@@ -135,11 +139,17 @@ overflow: hidden;
 						}
 					}
 				}
-			}
+			}			
 			.hero-details-price-my{
 				
 			}			
 		}//.price-box
+		.hero-details-icons{
+				.item{
+					color: @text-icons;
+					text-align: center;
+				}
+			}
 		.hero-details-quantity{
 			.quantity-number{
 				width: 50px;

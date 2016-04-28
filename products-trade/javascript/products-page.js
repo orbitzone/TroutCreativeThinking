@@ -522,6 +522,13 @@ var product_pages = {
         );
     },
     widget: function(){
+        $(window).on('scroll', function(){
+            if($(window).scrollTop() > $('.main-section').offset().top){
+                $('#shopping-cart-widget').addClass('fixed');
+            }else{
+                $('#shopping-cart-widget').removeClass('fixed');
+            }
+        }); 
         $('#shopping-cart-widget').find('button').on('click', function(){
             $('#shopping-cart-widget').toggleClass('open');
         });

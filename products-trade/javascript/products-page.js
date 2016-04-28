@@ -552,7 +552,7 @@ var product_pages = {
         $(window).on('scroll touchmove', function(){
         }); 
         $('#shopping-cart-widget').find('button').on('click', function(){
-            var top = $(window).scrollTop() - $('.main-section').offset().top();
+            var top = $(window).scrollTop() - $('.main-section').offset().top;
             var height = $(window).height();
             $('#shopping-cart-widget .shopping-cart-content').css({
                 top: top,

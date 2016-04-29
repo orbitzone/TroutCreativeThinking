@@ -93,6 +93,13 @@
 	-o-transition:      @transition;  
 	transition:      @transition;  
 }
+.transition-special (@duration, @property, @ease) {
+	-webkit-transition: @duration ~"-webkit-@{property}" @ease;  
+	-moz-transition:    @duration ~"-moz-@{property}" @ease;
+	-ms-transition:     @duration ~"-ms-@{property}" @ease; 
+	-o-transition:      @duration ~"-o-@{property}" @ease;  
+	transition:      @duration ~"@{property}" @ease;  
+}
 .transform(@string){
 	-webkit-transform: @string;
 	-moz-transform: 	 @string;

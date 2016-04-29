@@ -1,6 +1,5 @@
 html.overflow-hidden,
 body.overflow-hidden {
-  height: 100%;
   overflow: hidden;
 }
 #product-pages {
@@ -648,7 +647,12 @@ Slick slider arrow
   #product-pages #shopping-cart-widget.fixed button {
     position: fixed;
     top: 10px;
-    right: 13px;
+    right: 2.70833333vw;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
 @media (min-width: 768px) and (min-width: 480px) {
@@ -681,12 +685,30 @@ Slick slider arrow
     width: 585px;
   }
 }
+@media (min-width: 768px) and (min-width: 480px) {
+  #product-pages #shopping-cart-widget.fixed button {
+    right: 1.69270833vw;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  #product-pages #shopping-cart-widget.fixed button {
+    right: 1.08333333vw;
+  }
+}
+@media (min-width: 768px) and (min-width: 1200px) {
+  #product-pages #shopping-cart-widget.fixed button {
+    right: 13px;
+  }
+}
 #product-pages #shopping-cart-widget aside {
   width: 17.29166667vw;
   height: 100%;
-  float: left;
+  position: absolute;
+  top: 0;
+  left: 0;
   text-align: center;
   padding-top: 10px;
+  cursor: pointer;
 }
 @media (min-width: 480px) {
   #product-pages #shopping-cart-widget aside {
@@ -716,6 +738,7 @@ Slick slider arrow
   -moz-appearance: none;
   appearance: none;
   outline: none;
+  right: 10px;
 }
 #product-pages #shopping-cart-widget aside button svg {
   width: 9.16666667vw;
@@ -756,16 +779,16 @@ Slick slider arrow
   fill: white;
 }
 #product-pages #shopping-cart-widget .shopping-cart-content {
-  -webkit-transform: translateX(100px);
-  -moz-transform: translateX(100px);
-  -ms-transform: translateX(100px);
-  -o-transform: translateX(100px);
-  transform: translateX(100px);
-  -webkit-transform: translate3d(100px, 0, 0);
-  -moz-transform: translate3d(100px, 0, 0);
-  -ms-transform: translate3d(100px, 0, 0);
-  -o-transform: translate3d(100px, 0, 0);
-  transform: translate3d(100px, 0, 0);
+  -webkit-transform: translateX(200px);
+  -moz-transform: translateX(200px);
+  -ms-transform: translateX(200px);
+  -o-transform: translateX(200px);
+  transform: translateX(200px);
+  -webkit-transform: translate3d(200px, 0, 0);
+  -moz-transform: translate3d(200px, 0, 0);
+  -ms-transform: translate3d(200px, 0, 0);
+  -o-transform: translate3d(200px, 0, 0);
+  transform: translate3d(200px, 0, 0);
   opacity: 0;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
@@ -775,11 +798,11 @@ Slick slider arrow
   position: absolute;
   top: 0;
   right: 0;
-  -moz-transition: 0.3s all ease-out;
-  -ms-transition: 0.3s all ease-out;
-  -webkit-transition: 0.3s all ease-out;
-  -o-transition: 0.3s all ease-out;
-  transition: 0.3s all ease-out;
+  -webkit-transition: 0.5s -webkit-transform ease-out;
+  -moz-transition: 0.5s -moz-transform ease-out;
+  -ms-transition: 0.5s -ms-transform ease-out;
+  -o-transition: 0.5s -o-transform ease-out;
+  transition: 0.5s transform ease-out;
 }
 @media (min-width: 480px) {
   #product-pages #shopping-cart-widget .shopping-cart-content {

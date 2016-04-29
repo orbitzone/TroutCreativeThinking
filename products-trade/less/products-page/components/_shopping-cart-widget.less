@@ -13,22 +13,27 @@
 			button{
 				position: fixed;
 				top: 10px;
-				right: 13px;
+				.setRight(13px);
+				.transform(translate3d(0,0,0));
 			}
 		}
 	}	
 	aside{
 		.setWidth(83px);
 		height: 100%;
-		float: left;
+		position: absolute;
+		top: 0;
+		left: 0;
 		text-align: center;
 		padding-top: 10px;
+		cursor: pointer;
 		button{
 			border: none;
 			.border-radius(0);
 			background: none;
 			.appearance(none);
 			outline: none;
+			right: 10px;
 			svg{
 				.setWidth(44px);
 				.setHeight(35px);
@@ -42,8 +47,8 @@
 		}		
 	}
 	.shopping-cart-content{
-		.transform(translateX(100px));
-		.transform(translate3d(100px,0,0));
+		.transform(translateX(200px));
+		.transform(translate3d(200px,0,0));
 		opacity: 0;
 		overflow-y: auto;
 		-webkit-overflow-scrolling: touch;
@@ -53,7 +58,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    .transition(0.3s all ease-out);
+    .transition-special(0.5s, transform, ease-out);
     .main-title{
 			font-size:30px;
 			color:@white;

@@ -1,6 +1,5 @@
 #shopping-cart-widget{
 	background: #0776aa;
-	-webkit-transform: translate3d(0,0,0);
 	.transition(0.3s right ease-out);
 	.clearfix();
 	z-index: 2;
@@ -9,10 +8,13 @@
 		top: 0;
 		.setRight(-502px);
 		.setWidth(585px);
-		min-height: 100vh;
+		min-height: 100%;
 		&.fixed{
-			position: fixed;
-			top: 0;
+			button{
+				position: fixed;
+				top: 10px;
+				right: 13px;
+			}
 		}
 	}	
 	aside{

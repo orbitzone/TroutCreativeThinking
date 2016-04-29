@@ -622,7 +622,6 @@ Slick slider arrow
 }
 #product-pages #shopping-cart-widget {
   background: #0776aa;
-  -webkit-transform: translate3d(0, 0, 0);
   -moz-transition: 0.3s right ease-out;
   -ms-transition: 0.3s right ease-out;
   -webkit-transition: 0.3s right ease-out;
@@ -644,11 +643,12 @@ Slick slider arrow
     top: 0;
     right: -104.58333333vw;
     width: 121.875vw;
-    min-height: 100vh;
+    min-height: 100%;
   }
-  #product-pages #shopping-cart-widget.fixed {
+  #product-pages #shopping-cart-widget.fixed button {
     position: fixed;
-    top: 0;
+    top: 10px;
+    right: 13px;
   }
 }
 @media (min-width: 768px) and (min-width: 480px) {

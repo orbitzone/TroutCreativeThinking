@@ -1,26 +1,24 @@
 #shopping-cart-widget{
 	background: #0776aa;
+	.transform(translate3d(0,0,0));
+	will-change: transform;
 	.transition(0.3s right ease-out);
-	.clearfix();
 	z-index: 2;
 	@media (min-width: @screen-sm){
-		position: absolute;
+		position: fixed;
 		top: 0;
 		.setRight(-502px);
-		.setWidth(585px);
+		.setWidth(585px, 585px);
 		min-height: 100%;
-		&.fixed{
-			button{
-				position: fixed;
-				top: 10px;
-				.setRight(13px);
-				.transform(translate3d(0,0,0));
-			}
-		}
+		height: calc(~"100% + 120px");		
 	}	
 	aside{
-		.setWidth(83px);
-		height: 100%;
+		touch-action: manipulation;
+		background: #0776aa;
+		.setWidth(83px,83px);
+		height: 200%;
+		overflow: scroll;
+		-webkit-overflow-scrolling: touch;
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -35,7 +33,7 @@
 			outline: none;
 			right: 10px;
 			svg{
-				.setWidth(44px);
+				.setWidth(44px, 44px);
 				.setHeight(35px);
 				fill: white;
 			}
@@ -47,18 +45,20 @@
 		}		
 	}
 	.shopping-cart-content{
-		.transform(translateX(200px));
-		.transform(translate3d(200px,0,0));
+		will-change: transform;
+		.transform(translateX(100px));
+		.transform(translate3d(100px,0,0));
 		opacity: 0;
-		overflow-y: auto;
+		overflow: scroll;
 		-webkit-overflow-scrolling: touch;
-		.setWidth(502px);
-		height: 100%;
+		.setWidth(502px,502px);
+		height: calc(~"100% - 120px");		
 		background: #066693;
     position: absolute;
     top: 0;
     right: 0;
-    .transition-special(0.5s, transform, ease-out);
+    //.transition-special(0.5s, transform, ease-out);
+    .transition(0.3s all ease-out);
     .main-title{
 			font-size:30px;
 			color:@white;

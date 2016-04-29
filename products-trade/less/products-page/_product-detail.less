@@ -11,6 +11,7 @@
 position: relative;
 overflow: hidden;
 .product-detail-wrap{
+	overflow: scroll; 
 	-webkit-overflow-scrolling : touch;
 }
 img{
@@ -20,11 +21,15 @@ img{
 	padding-bottom:40px;
 	.product-content-wrapper{
 		.clearfix();
+
+		//.getVW(90px, 320px);
+		padding-right: 0;
 		@media (min-width: @screen-sm){
-			padding-right: 90px;
+			.getVW(90px, 1333px);
+			padding-right: @getVW;
 		}
 		@media (min-width: 1280px){
-			padding-right: 0;	
+			padding-right: 0;				
 		}		
 		.product-content-left{
 			float: none;
@@ -48,12 +53,17 @@ img{
 		}
 	}
 	.hero-gallery-slider{
-		border:solid 1px @border-light-grey;
+		border: solid 1px @border-light-grey;
+		img{
+			max-height: calc(~"100vh - 20px");
+			margin: 0 auto;
+		}
 	}
 	.hero-gallery-slider-thumb{
 		.setMargin(0px,-15px);
 		.clearfix();
 		.one-slide{
+			cursor: pointer;
 			.setPadding(0px,15px);
 			.setMargin(0px,0px,30px,0px);
 			width: percentage(1/5);
@@ -61,10 +71,24 @@ img{
 			img{
 				border: solid 1px @border-light-grey;
 			}
+			&.current{
+				img{
+					border: solid 1px black;
+				}	
+			}
 		}
 	}
 	.hero-details{
-		.setPadding(0px,70px,0px,70px);
+		//.setPadding(0px,70px,0px,70px);
+		.getVW(30px, @screen-sm);
+		padding: 0 @getVW;
+		@media (min-width: @screen-sm){
+			.getVW(70px, 1333px);
+			padding:0 @getVW;
+		}
+		@media (min-width: 1280px){
+			padding: 0 70px;
+		}
 		.hero-details-main{
 			text-align:center;
 			h1{
@@ -85,18 +109,26 @@ img{
 		.hero-details-price-box{
 			background: @bg-price-box;
 			text-align: center;
-			max-width: 80%;
-			margin: 0 auto;
+			.getVW(28px, 320px);
+				margin: 0 @getVW;
+				@media (min-width: @screen-sm){
+					.getVW(50px, 1333px);
+					margin: 0 @getVW;
+				}
+				@media (min-width: 1280px){
+					margin: 0 50px;
+				}	
 			.hero-details-titles{
 				.clearfix();
 				li{
 					width: 50%;
 					float: left;
-					.setPadding(5px,0,5px,0);
 					display: block;
-					.setFontSize(12px);
 					text-transform: uppercase;
-					font-weight: bold;	
+					font-weight: bold;
+
+					.getVW(10px, 320px);
+					font-size: @getVW;
 					&.hero-details-price-my-title{
 						color: @text-my-price-title;				
 					}
@@ -114,13 +146,29 @@ img{
 				}
 				li{
 					color: @text-my-price;				
-					.setFontSize(30px);
 					font-weight: bold;
 					padding: 0 14px;
-					.setPadding(0,14px,0,14px);				
+					.setPadding(0,14px,0,14px);
+					.getVW(30px, 320px);
+					font-size: @getVW;
+					@media (min-width: @screen-sm){
+						.getVW(30px, 1333px);
+						font-size: @getVW;
+					}
+					@media (min-width: 1280px){
+						font-size: 30px;				
+					}				
 					small{
 						font-weight: normal;
-						.setFontSize(10px);
+						.getVW(10px, 320px);
+						font-size: @getVW;
+						@media (min-width: @screen-sm){
+							.getVW(10px, 1333px);
+							font-size: @getVW;
+						}
+						@media (min-width: 1280px){
+							font-size: 10px;				
+						}		
 					}
 					.hero-details-price-cmp{
 						color: @text-cmp-price;				
@@ -148,11 +196,16 @@ img{
 			}			
 		}//.price-box
 		.hero-details-icons{
-				.item{
-					color: @text-icons;
-					text-align: center;
-				}
+			padding-top: 40px;
+			.item{
+				color: @text-icons;
+				text-align: center;
 			}
+		}
+		.hero-details-quantity-wrap{
+			max-width: 80%;
+			margin: 0 auto;
+		}
 		.hero-details-quantity{
 			.quantity-number{
 				width: 50px;
@@ -258,6 +311,55 @@ img{
 				.item-inner{
 					max-width:250px;
 					margin:0 auto;
+				}
+			}
+		}
+		.hero-details-dropdown{
+			padding-top: 40px;
+			.list-inline{
+				margin: 0;
+				.clearfix();
+				li{
+					width: 50%;
+					float: left;
+				}
+			}
+			.options{
+				.name{
+					padding: 10px 20px;
+					border: 1px solid @border-grey;
+					text-transform: uppercase;
+				}
+				.options-list{
+					display: none;
+					ul{
+						list-style: none;
+						li{
+							display: block;
+
+						}
+					}
+				}
+			}
+		}
+		.hero-details-actions{
+			padding-top: 20px;
+			text-align: center;
+			b{
+				color: @text-blue;
+				display: block;
+			}
+			.btn{
+				padding: 15px;
+				border: 1px solid  @border-grey;
+			}
+			ul{
+				display: inline-block;
+				text-align: center;
+				.clearfix();
+				li{
+					float: left;
+					padding: 0;
 				}
 			}
 		}

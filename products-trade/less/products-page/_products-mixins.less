@@ -71,6 +71,7 @@
 	background: -ms-linear-gradient(top, @startColor, @endColor);
 	background: -o-linear-gradient(top, @startColor, @endColor);
 }
+
 .horizontal-gradient (@startColor: #eee, @endColor: white) {
  	background-color: @startColor;
 	background-image: -webkit-gradient(linear, left top, right top, from(@startColor), to(@endColor));
@@ -93,6 +94,7 @@
 	-o-transition:      @transition;  
 	transition:      @transition;  
 }
+
 .transition-special (@duration, @property, @ease) {
 	-webkit-transition: @duration ~"-webkit-@{property}" @ease;  
 	-moz-transition:    @duration ~"-moz-@{property}" @ease;
@@ -100,6 +102,7 @@
 	-o-transition:      @duration ~"-o-@{property}" @ease;  
 	transition:      @duration ~"@{property}" @ease;  
 }
+
 .transform(@string){
 	-webkit-transform: @string;
 	-moz-transform: 	 @string;
@@ -159,83 +162,46 @@
   @getVW: (@target / ((@width * 0.01) * 1px)) * 1vw;
 }
 .setFontSize(@target){
-	.getVW(@target, @screen-xs);
-	font-size: @getVW;
-	@media (min-width: @screen-xs){
-		.getVW(@target, @screen-sm);
-		font-size: @getVW;
-	}
+	.getVW(@target, 320px);
+	font-size: @getVW -20px;
 	@media (min-width: @screen-sm){
-		.getVW(@target, @screen-lg);
+		.getVW(@target, 1333px);
 		font-size: @getVW;
 	}
 	@media (min-width: @screen-lg){
 		font-size: @target;
 	}
 }
-.setWidth(@width){
-	.getVW(@width, @screen-xs);
+.setWidth(@smWidth, @lgWidth){
+	.getVW(@smWidth, 320px);
 	width: @getVW;
-	@media (min-width: @screen-xs){
-		.getVW(@width, @screen-sm);
-		width: @getVW;
-	}
 	@media (min-width: @screen-sm){
-		.getVW(@width, @screen-lg);
+		.getVW(@lgWidth, 1333px);
 		width: @getVW;
 	}
 	@media (min-width: @screen-lg){
-		width: @width;
+		width: @lgWidth;
 	}
 }
 .setHeight(@height){
 	.getVW(@height, @screen-xs);
 	height: @getVW;
-	@media (min-width: @screen-xs){
-		.getVW(@height, @screen-sm);
-		height: @getVW;
-	}
-	@media (min-width: @screen-sm){
-		.getVW(@height, @screen-lg);
-		height: @getVW;
-	}
-	@media (min-width: @screen-lg){
-		height: @height;
-	}
 }
 .setRight(@right){
 	.getVW(@right, @screen-xs);
 	right: @getVW;
-	@media (min-width: @screen-xs){
-		.getVW(@right, @screen-sm);
-		right: @getVW;
-	}
-	@media (min-width: @screen-sm){
-		.getVW(@right, @screen-lg);
-		right: @getVW;
-	}
-	@media (min-width: @screen-lg){
-		right: @right;
-	}
 }
 .setPadding(@top; @right; @bottom: @top; @left: @right){
-	@newtop: (@top / ((@screen-xs * 0.01) * 1px)) * 1vw;
-	@newright:  (@right / ((@screen-xs * 0.01) * 1px)) * 1vw;
-	@newbottom:  (@bottom / ((@screen-xs * 0.01) * 1px)) * 1vw;
-	@newleft:  (@left / ((@screen-xs * 0.01) * 1px)) * 1vw;
+	@newtop: (@top - 20px / ((320px * 0.01) * 1px)) * 1vw;
+	@newright:  (@right - 20px / ((320px * 0.01) * 1px)) * 1vw;
+	@newbottom:  (@bottom - 20px / ((320px * 0.01) * 1px)) * 1vw;
+	@newleft:  (@left - 20px / ((320px * 0.01) * 1px)) * 1vw;
 	padding: @newtop @newright @newbottom @newleft;
-	@media (min-width: @screen-xs){
-		@newtop: (@top / ((@screen-sm * 0.01) * 1px)) * 1vw;
-		@newright:  (@right / ((@screen-sm * 0.01) * 1px)) * 1vw;
-		@newbottom:  (@bottom / ((@screen-sm * 0.01) * 1px)) * 1vw;
-		@newleft:  (@left / ((@screen-sm * 0.01) * 1px)) * 1vw;
-		padding: @newtop @newright @newbottom @newleft;
-	}
 	@media (min-width: @screen-sm){
-		@newtop: (@top / ((@screen-lg * 0.01) * 1px)) * 1vw;
-		@newright:  (@right / ((@screen-lg * 0.01) * 1px)) * 1vw;
-		@newbottom:  (@bottom / ((@screen-lg * 0.01) * 1px)) * 1vw;
-		@newleft:  (@left / ((@screen-lg * 0.01) * 1px)) * 1vw;
+		@newtop: (@top / ((1333px * 0.01) * 1px)) * 1vw;
+		@newright:  (@right / ((1333px * 0.01) * 1px)) * 1vw;
+		@newbottom:  (@bottom / ((1333px * 0.01) * 1px)) * 1vw;
+		@newleft:  (@left / ((1333px * 0.01) * 1px)) * 1vw;
 		padding: @newtop @newright @newbottom @newleft;
 	}
 	@media (min-width: @screen-lg){
@@ -243,23 +209,16 @@
 	}
 }
 .setMargin(@top; @right; @bottom: @top; @left: @right){
-	@newtop: (@top / ((@screen-xs * 0.01) * 1px)) * 1vw;
-	@newright:  (@right / ((@screen-xs * 0.01) * 1px)) * 1vw;
-	@newbottom:  (@bottom / ((@screen-xs * 0.01) * 1px)) * 1vw;
-	@newleft:  (@left / ((@screen-xs * 0.01) * 1px)) * 1vw;
+	@newtop: (@top - 20px / ((320px * 0.01) * 1px)) * 1vw;
+	@newright:  (@right - 20px / ((320px * 0.01) * 1px)) * 1vw;
+	@newbottom:  (@bottom - 20px / ((320px * 0.01) * 1px)) * 1vw;
+	@newleft:  (@left - 20px / ((320px * 0.01) * 1px)) * 1vw;
 	margin: @newtop @newright @newbottom @newleft;
-	@media (min-width: @screen-xs){
-		@newtop: (@top / ((@screen-sm * 0.01) * 1px)) * 1vw;
-		@newright:  (@right / ((@screen-sm * 0.01) * 1px)) * 1vw;
-		@newbottom:  (@bottom / ((@screen-sm * 0.01) * 1px)) * 1vw;
-		@newleft:  (@left / ((@screen-sm * 0.01) * 1px)) * 1vw;
-		margin: @newtop @newright @newbottom @newleft;
-	}
 	@media (min-width: @screen-sm){
-		@newtop: (@top / ((@screen-lg * 0.01) * 1px)) * 1vw;
-		@newright:  (@right / ((@screen-lg * 0.01) * 1px)) * 1vw;
-		@newbottom:  (@bottom / ((@screen-lg * 0.01) * 1px)) * 1vw;
-		@newleft:  (@left / ((@screen-lg * 0.01) * 1px)) * 1vw;
+		@newtop: (@top / ((1333px * 0.01) * 1px)) * 1vw;
+		@newright:  (@right / ((1333px * 0.01) * 1px)) * 1vw;
+		@newbottom:  (@bottom / ((1333px * 0.01) * 1px)) * 1vw;
+		@newleft:  (@left / ((1333px * 0.01) * 1px)) * 1vw;
 		margin: @newtop @newright @newbottom @newleft;
 	}
 	@media (min-width: @screen-lg){

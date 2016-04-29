@@ -32,7 +32,7 @@
 							<!-- START HERO GALLERY -->
 							<!-- AND THUMBNAIL NEEDS TO BE THE SAME -->
 							<div class="hero-gallery-slider">
-								<div class="one-slide">
+								<div class="one-slide current">
 									<img class="img-responsive" src="templates/images/product-detail/product-image1.jpg" alt="item">
 								</div>
 								<div class="one-slide">
@@ -57,8 +57,8 @@
 									<img class="img-responsive" src="templates/images/product-detail/product-image4.jpg" alt="item">
 								</div>
 							</div>
-							<div class="hero-gallery-slider-thumb">
-								<div class="one-slide">
+							<div class="hero-gallery-slider-thumb hidden-xs">
+								<div class="one-slide current">
 									<img class="img-responsive" src="templates/images/product-detail/product-image1.jpg" alt="item">
 								</div>
 								<div class="one-slide">
@@ -108,46 +108,68 @@
 										</ul>
 									</div>	
 								</div>
-								<div class="hero-details-quantity">
-									<div class="quantity-wrap">
-										<span class="quantity-hidden">
-											<input class="quantity-radio" type="radio" id="set-7845123-ea" name="set-7845123" value="EA" checked>
-											<input class="quantity-radio" data-productcode="7845123" type="radio" id="set-7845123-pkt" name="set-7845123" value="PKT">
-										</span>
-										<span class="quantity-input">
-											<input class="quantity-number" data-productcode="7845123" type="number" name="quantity-7845123" min="1" value="1">
-										</span>
-										<span class="quantity-set">
-											<span class="radiolabel-set span-block">
-												<label for="set-7845123-ea" class="radio-button active">EA</label>
-												<label for="set-7845123-pkt" class="radio-button">PKT</label>
-												<span class="clear-fix"></span>
+								<div class="hero-details-quantity-wrap">
+									<div class="hero-details-quantity">
+										<div class="quantity-wrap">
+											<span class="quantity-hidden">
+												<input class="quantity-radio" type="radio" id="set-7845123-ea" name="set-7845123" value="EA" checked>
+												<input class="quantity-radio" data-productcode="7845123" type="radio" id="set-7845123-pkt" name="set-7845123" value="PKT">
 											</span>
-											<span class="quantity-details">Packet <span>12</span> Units</span>
-										</span>
+											<span class="quantity-input">
+												<input class="quantity-number" data-productcode="7845123" type="number" name="quantity-7845123" min="1" value="1">
+											</span>
+											<span class="quantity-set">
+												<span class="radiolabel-set span-block">
+													<label for="set-7845123-ea" class="radio-button active">EA</label>
+													<label for="set-7845123-pkt" class="radio-button">PKT</label>
+													<span class="clear-fix"></span>
+												</span>
+												<span class="quantity-details">Packet <span>12</span> Units</span>
+											</span>
+										</div>
 									</div>
-								</div>
-								<div class="hero-details-addbutton">
-									<button type="button" class="btn blue-button full-width">add to list</button>
-								</div>
-								<div class="hero-details-icons">
-									<div class="row">
-										<div class="col-sm-6">
-											<div class="item">
-													<img src="templates/images/product-detail/seven-years-quality-guarantee.jpg" alt="Seven years Quality Guarantee"/>
-													<span>Domestic Use</span>											
+									<div class="hero-details-addbutton">
+										<button type="button" class="btn blue-button full-width">add to list</button>
+									</div>
+									<div class="hero-details-icons">
+										<div class="row">
+											<div class="col-sm-6">
+												<div class="item">
+														<img src="templates/images/product-detail/seven-years-quality-guarantee.jpg" alt="Seven years Quality Guarantee"/>
+														<span>Domestic Use</span>											
+												</div>
 											</div>
 										</div>
 									</div>
-								</div>
+								</div>								
 								<div class="hero-details-dropdown">
 									<ul class="list-inline">
 										<li>
-											<select name="" id="">
-												<option value=""></option>
-											</select>
+											<div class="options">
+												<div class="name">Availability</div>
+												<div class="options-list">
+													<ul>
+														<li>
+															<b>12 Available</b>
+															at Brunswick East
+														</li>
+													</ul>
+												</div>
+											</div>
 										</li>
-										<li></li>
+										<li>
+											<div class="options">
+												<div class="name">Variations</div>
+												<div class="options-list">
+													<ul>
+														<li>
+															<b>12 Available</b>
+															at Brunswick East
+														</li>
+													</ul>
+												</div>
+											</div>
+										</li>
 									</ul>
 								</div>
 								<div class="hero-details-actions">

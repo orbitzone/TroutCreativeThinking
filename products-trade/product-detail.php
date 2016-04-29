@@ -8,7 +8,7 @@
 <head>
   <?php include "templates/Includes/ProductsMeta.php" ?>
   <title>Reece Products</title>
-  <?php include "templates/Includes/ProductsHeader.php" ?>
+  <?php include "templates/Includes/ProductsHeader.php" ?>  
 </head>
 <body
 class="">

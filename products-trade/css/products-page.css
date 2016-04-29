@@ -2,6 +2,10 @@ html.overflow-hidden,
 body.overflow-hidden {
   overflow: hidden;
 }
+html.overflow-hidden.mobile,
+body.overflow-hidden.mobile {
+  height: 100vh;
+}
 #product-pages {
   /*FONTS*/
   /*

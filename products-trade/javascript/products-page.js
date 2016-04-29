@@ -541,6 +541,7 @@ var product_pages = {
     widget: function(){
         if(deviceMobile){
             $('#shopping-cart-widget').addClass('mobile');            
+            $('html').addClass('mobile');
         }
         $(window).on('scroll touchmove', function(){
             if($(window).scrollTop() > $('.main-section').offset().top){

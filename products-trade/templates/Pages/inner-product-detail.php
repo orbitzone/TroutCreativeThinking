@@ -108,34 +108,34 @@
 									</ul>	
 									<div class="tab-content">
 										<div role="tabpanel" class="tab-pane active" id="product-price-my">
-											<div class="product-price-inc">$4.17<small>inc.</small></div>
-											<div class="product-price-exc">$3.98<small>exc.</small></div>
+											<div class="product-price-inc">$942.99<small>inc.</small></div>
+											<div class="product-price-exc">$857.26<small>exc.</small></div>
 										</div>
 										<div role="tabpanel" class="tab-pane" id="product-price-cmp">
-											<div class="product-price-inc">$5.20<small>inc.</small></div>
-											<div class="product-price-exc">$4.16<small>exc.</small></div>
+											<div class="product-price-inc">$1230.89<small>inc.</small></div>
+											<div class="product-price-exc">$118.99<small>exc.</small></div>
 										</div>
 										
 									</div>	
 								</div>
-								<div class="hero-details-quantity-wrap">
-									<div class="hero-details-quantity">
+								<div class="product-quantity-wrap">
+									<div class="product-quantity">
 										<div class="quantity-wrap">
-											<span class="quantity-hidden">
+											<div class="quantity-hidden">
 												<input class="quantity-radio" type="radio" id="set-7845123-ea" name="set-7845123" value="EA" checked>
 												<input class="quantity-radio" data-productcode="7845123" type="radio" id="set-7845123-pkt" name="set-7845123" value="PKT">
-											</span>
-											<span class="quantity-input">
+											</div>
+											<div class="quantity-input">
 												<input class="quantity-number" data-productcode="7845123" type="number" name="quantity-7845123" min="1" value="1">
-											</span>
-											<span class="quantity-set">
+											</div>
+											<div class="quantity-set">
 												<span class="radiolabel-set span-block">
 													<label for="set-7845123-ea" class="radio-button active">EA</label>
 													<label for="set-7845123-pkt" class="radio-button">PKT</label>
 													<span class="clear-fix"></span>
-												</span>
-												<span class="quantity-details">Packet <span>12</span> Units</span>
-											</span>
+												</span>												
+											</div>											
+											<div class="quantity-details">Packet <span>12</span> Units</div>
 										</div>
 									</div>
 									<div class="hero-details-addbutton">

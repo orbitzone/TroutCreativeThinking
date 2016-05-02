@@ -108,6 +108,7 @@
 				.setProperty(margin-bottom, 60px, 20px);
 			}
 			.product-prices{
+				.setProperty(margin-bottom, 40px, 20px);
 				.nav-tabs{
 					li{
 						width: 50%;
@@ -116,7 +117,7 @@
 						background: @bg-cmp;
 						text-transform: uppercase;
 						.setProperty(font-size,20px,10px);
-						font-weight: normal;
+						.gothamBook;
 						a{
 							.border-radius(0);
 							border: none;
@@ -124,7 +125,7 @@
 							color: black;
 						}
 						&.active{
-							font-weight: bold;
+							.gothamBold;
 							border: none;
 							background: @bg-price-box;
 							a{
@@ -135,12 +136,12 @@
 				}
 				.tab-pane{
 					background:  @bg-price-box;
-					font-weight: bold;
+					.gothamBold;
 					.setProperty(padding-top,40px, 20px);
 					.setProperty(padding-bottom,40px, 20px);
 					.setProperty(font-size, 60px, 30px);
 					small{
-						font-weight: normal;
+						.gothamBook;
 						.setProperty(font-size,20px,10px);
 					}
 					.product-price-inc{
@@ -150,6 +151,80 @@
 						color: @text-price-exc;
 					}
 				}
+			}
+			.product-quantity{
+				.quantity-wrap{
+					text-align:center;
+					.clearfix();					
+				}
+				.quantity-hidden{
+					display:none;
+				}
+				.quantity-input{
+					width: 50%;
+					display: block;
+					float: left;
+					margin:0 auto;
+					.setProperty(padding-right,10px,6px);
+				}
+				.quantity-number{
+					width: 100%;
+					.setProperty(height,112px,60px);
+					.setProperty(font-size,40px,21px);					
+					border:solid 1px @border-grey;
+					background-color: @bg-table-header-grey;
+					text-align:center;					
+				}				
+
+				.quantity-set{
+					float: right;
+					width: 50%;
+					.setProperty(padding-left,10px,6px);
+					label,.set-name{
+						color:@text-light-grey;
+					}
+					.set-name{
+						padding-top:10px;
+						padding-bottom:10px;
+						display:inline-block;
+					}
+					.radiolabel-set{
+						.clearfix();
+						display: block;
+						border:solid 1px @text-light-grey;
+						position:relative;
+						.setProperty(margin-bottom,27px,15px);
+						.setProperty(height,112px,60px);
+						.radio-button{
+							text-align:center;
+							float: left;
+							width: 50%;
+							.gothamBook;
+							margin: 0;
+							height: 100%;
+							.setProperty(font-size,40px,22px);
+							.setProperty(line-height,112px,60px);
+							.transition(.5s all ease-out );
+							&.active{
+								.gothamMedium;
+								background-color:@bg-button-light-blue;
+								color:@white;
+							}
+						}
+					}
+				}
+				.quantity-details{
+					display:block;
+					clear: both;
+					.setProperty(font-size,24px,13px);
+					.setProperty(margin-bottom,27px,15px);
+					text-transform: uppercase;
+					color: @text-light-grey;
+					span{
+						color: @text-blue;
+						.gothamBold;
+					}					
+				}				
 			}
 		}
 	}

@@ -7,15 +7,15 @@
 	@media (min-width: @screen-sm-custom){
 		position: fixed;
 		top: 0;
-		.setProperty(right,-502px,-502px);
-		.setProperty(width, 585px, 585px);
+		right: -502px;
+		width: 585px;
 		min-height: 100%;
 		height: calc(~"100% + 120px");		
 	}	
 	aside{
 		touch-action: manipulation;
 		background: #0776aa;
-		.setProperty(width, 100%, 83px);
+		width: 83px;
 		height: 200%;
 		overflow: scroll;
 		-webkit-overflow-scrolling: touch;
@@ -35,8 +35,8 @@
 			outline: none;
 			right: 10px;
 			svg{
-				.setProperty(width,90px,44px);
-				.setProperty(height,70px,35px);
+				width: 44px;
+				height: 35px;
 				fill: white;
 			}
 			&:focus{
@@ -52,7 +52,7 @@
 		.transform(translate3d(100px,0,0));
 		overflow: scroll;
 		-webkit-overflow-scrolling: touch;
-		.setProperty(width,100%,502px);
+		width: 502px;
 		height: calc(~"100% - 120px");		
 		background: #066693;
     .transition(0.3s all ease-out);

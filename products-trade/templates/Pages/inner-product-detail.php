@@ -57,7 +57,7 @@
 									<img class="img-responsive" src="templates/images/product-detail/product-image4.jpg" alt="item">
 								</div>
 							</div>
-							<div class="product-thumbs hidden-xs hidden-sm">
+							<div class="product-thumbs hidden-xs">
 								<div class="product-thumb current">
 									<img class="img-responsive" src="templates/images/product-detail/product-image1.jpg" alt="item">
 								</div>

@@ -786,30 +786,36 @@ var product_pages = {
         // SECTION EXPAND AND COLLAPES
         // The name for (.action-expand-button)"data-expandbutton" and (.expand-section)"data-expandsection" needs to be the same
         //
-        $(".action-expand-button").on(event,function(){
+        $(".action-expand-button").on(event,function(e){
             var thisobject = $(this);
             var thisname = thisobject.data("expandbutton");
             var expandsection = $(".expand-section[data-expandsection='" + thisname + "']");
 
-            if(expandsection.hasClass("opened")){
-                thisobject.removeClass('opened');
-                expandsection.removeClass("opened");
-                        
-                expandsection.slideUp("slow");
+            if(thisobject.hasClass('section-title') && $(window).width() > 767){
+                e.stopPropagation();
+                return false;
+            }else{
+                if(expandsection.hasClass("opened")){
+                    thisobject.removeClass('opened');
+                    expandsection.removeClass("opened");
+                            
+                    expandsection.slideUp("slow");
+                }
+                else{
+                    thisobject.addClass('opened');
+                    expandsection.css({
+                        display: 'block'
+                    });
+                    if(thisobject.parent().find('.file-download-list').hasClass('slick-initialized')){
+                        thisobject.parent().find('.file-download-list').slick('setPosition');
+                    }
+                    expandsection.css({
+                        display: 'none'
+                    });
+                    expandsection.addClass("opened");
+                    expandsection.slideDown("slow");
+                }
             }
-            else{
-                thisobject.addClass('opened');
-                expandsection.css({
-                    display: 'block'
-                });
-                thisobject.parent().find('.file-download-list').slick('setPosition');
-                expandsection.css({
-                    display: 'none'
-                });
-                expandsection.addClass("opened");
-                expandsection.slideDown("slow");
-            }
-
         });
         // SECTION EXPAND AND COLLAPES ON LOAD
         $(".expand-section").each(

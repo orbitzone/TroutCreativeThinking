@@ -161,6 +161,15 @@
 .getVW(@target; @width) {
   @getVW: (@target / ((@width * 0.01) * 1px)) * 1vw;
 }
+.setPropertySM(@property, @smWidth){
+	& when (ispixel(@smWidth)){
+  	.getVW(@smWidth, 640px);
+		@{property}: @getVW;		
+	}
+  & when (ispercentage(@smWidth)){
+   	@{property}: @smWidth;
+  }
+}
 .setProperty(@property, @smWidth, @lgWidth){
 	& when (ispixel(@smWidth)){
   	.getVW(@smWidth, 640px);

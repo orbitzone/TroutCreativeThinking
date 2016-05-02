@@ -165,6 +165,40 @@
 	& when (ispixel(@smWidth)){
   	.getVW(@smWidth, 640px);
 		@{property}: @getVW;
+		@media (min-width: 640px){
+			.getVW(@smWidth, 1200px);
+			@{property}: @getVW;
+		}
+	}
+  & when (ispercentage(@smWidth)){
+   	@{property}: @smWidth;
+  }
+  & when (ispixel(@lgWidth)){
+  	@media (min-width: @screen-sm){
+  		.getVW(@lgWidth, 1370px);
+			@{property}: @lgWidth;
+		}
+		@media (min-width: @screen-md){
+  		.getVW(@lgWidth, 1370px);
+			@{property}: @getVW;
+		}
+		@media (min-width: 1280px){
+			@{property}: @lgWidth;
+		}
+	}
+  & when (ispercentage(@lgWidth)){
+   	@media (min-width: @screen-sm-custom){
+  		@{property}: @lgWidth;
+		}
+		@media (min-width: 1280px){
+			@{property}: @lgWidth;
+		}
+  }
+}
+.setPropertyoo(@property, @smWidth, @lgWidth){
+	& when (ispixel(@smWidth)){
+  	.getVW(@smWidth, 640px);
+		@{property}: @getVW;
 	}
   & when (ispercentage(@smWidth)){
    	@{property}: @smWidth;

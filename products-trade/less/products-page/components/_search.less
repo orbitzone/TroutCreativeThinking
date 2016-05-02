@@ -5,21 +5,27 @@
 	input{
 		width: 100%;
 		height: 56px;
+		.setProperty(height,104px, 54px);
 		float: left;
-		@media (min-width: @screen-sm){
+		.setProperty(font-size, 27px, 16px);
+		@media (min-width: @screen-sm-custom){
 			width: 37%;
 		}
 	}
 	button{
-		width: 56px;
-		height: 56px;
+		.setProperty(width,104px, 54px);
+		.setProperty(height,104px, 54px);
 		text-align: center;
 		border: none;
 		padding: 0;
 		position: absolute;
 		top: 0;
 		right: 0;
-		@media (min-width: @screen-sm){
+		svg{
+			.setProperty(width,40px, 20px);
+			.setProperty(height,40px, 20px);
+		}
+		@media (min-width: @screen-sm-custom){
 			float: left;	
 			position: relative;		
 			top: inherit;

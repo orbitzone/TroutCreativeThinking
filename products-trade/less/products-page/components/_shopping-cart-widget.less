@@ -4,7 +4,7 @@
 	z-index: 2;
 	.transform(translate3d(0,0,0));
 	.transition(0.3s right ease-out);
-	@media (min-width: @screen-sm){
+	@media (min-width: @screen-sm-custom){
 		position: fixed;
 		top: 0;
 		.setProperty(right,-502px,-502px);
@@ -22,7 +22,7 @@
 		text-align: center;
 		padding-top: 10px;
 		cursor: pointer;
-		@media (min-width: @screen-sm){
+		@media (min-width: @screen-sm-custom){
 			position: absolute;
 			top: 0;
 			left: 0;			
@@ -35,8 +35,8 @@
 			outline: none;
 			right: 10px;
 			svg{
-				.setProperty(width,44px,44px);
-				.setProperty(height,35px,35px);
+				.setProperty(width,90px,44px);
+				.setProperty(height,70px,35px);
 				fill: white;
 			}
 			&:focus{
@@ -57,7 +57,7 @@
 		background: #066693;
     .transition(0.3s all ease-out);
     display: none;
-    @media (min-width: @screen-sm){
+    @media (min-width: @screen-sm-custom){
     	position: absolute;
 	    top: 0;
 	    right: 0;	    	

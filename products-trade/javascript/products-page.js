@@ -539,6 +539,7 @@ var product_pages = {
         );
     },
     widget: function(){
+        $('body').addClass('widget');
         document.ontouchmove = function ( event ) {
 
             var isTouchMoveAllowed = true, target = event.target;
@@ -598,7 +599,7 @@ var product_pages = {
                        
         }
         
-        $('#shopping-cart-widget').find('aside').on(event, function(){
+        $('#shopping-cart-widget').find('aside').on(event, function(e){
             var diff = $('.main-section').offset().top;
             var top = $(window).scrollTop() - diff;
             var height = $(window).height();
@@ -763,7 +764,9 @@ var product_pages = {
                     settings:{
                         infinite: true,
                         slidesToShow: 3,
-                        slidesToScroll: 3
+                        slidesToScroll: 3,
+                        dots: true,
+                        arrows: false,
                     }
                 },
                 {
@@ -771,7 +774,9 @@ var product_pages = {
                     settings:{
                         infinite: true,
                         slidesToShow: 2,
-                        slidesToScroll: 2
+                        slidesToScroll: 2,
+                        dots: true,
+                        arrows: false,
                     }
                 }
                 ]
@@ -781,34 +786,38 @@ var product_pages = {
         // SECTION EXPAND AND COLLAPES
         // The name for (.action-expand-button)"data-expandbutton" and (.expand-section)"data-expandsection" needs to be the same
         //
-        $(".action-expand-button").click(function(){
+        $(".action-expand-button").on(event,function(){
             var thisobject = $(this);
             var thisname = thisobject.data("expandbutton");
             var expandsection = $(".expand-section[data-expandsection='" + thisname + "']");
 
             if(expandsection.hasClass("opened")){
-                expandsection.slideUp("slow",
-                    function(){
-                        expandsection.removeClass("opened");
-                        thisobject.removeClass("opened");
-                });
+                thisobject.removeClass('opened');
+                expandsection.removeClass("opened");
+                        
+                expandsection.slideUp("slow");
             }
             else{
-                expandsection.slideDown("slow",
-                    function(){
-                        expandsection.addClass("opened");
-                        thisobject.addClass("opened");
+                thisobject.addClass('opened');
+                expandsection.css({
+                    display: 'block'
                 });
+                thisobject.parent().find('.file-download-list').slick('setPosition');
+                expandsection.css({
+                    display: 'none'
+                });
+                expandsection.addClass("opened");
+                expandsection.slideDown("slow");
             }
 
         });
         // SECTION EXPAND AND COLLAPES ON LOAD
         $(".expand-section").each(
-            function(){
-                if($(this).hasClass("opened") === false){
-                    $(this).hide();
-                }
-            });
+        function(){
+            if($(this).hasClass("opened") === false){
+                $(this).hide();
+            }
+        });
 
 
         //CHECK SLICK ON WINDOW RESIZE
@@ -824,13 +833,17 @@ var product_pages = {
                         infinite: true,
                         slidesToShow: 3,
                         slidesToScroll: 3,
+                        dots: true,
+                        arrows: false,
                         responsive: [
                         {
                             breakpoint: 767,
                             settings:{
                                 infinite: true,
                                 slidesToShow: 3,
-                                slidesToScroll: 3
+                                slidesToScroll: 3,
+                                dots: true,
+                                arrows: false,
                             }
                         },
                         {
@@ -838,7 +851,9 @@ var product_pages = {
                             settings:{
                                 infinite: true,
                                 slidesToShow: 2,
-                                slidesToScroll: 2
+                                slidesToScroll: 2,
+                                dots: true,
+                                arrows: false
                             }
                         }
                         ]

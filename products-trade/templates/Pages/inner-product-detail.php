@@ -87,13 +87,15 @@
 						</div>
 					</div>
 					<div class="product-content-right">
-						<div class="inner-wrap">
-							<div class="hero-details">
-								<div class="hero-details-main">
-									<h1>Conex Dapibus Ullamcorp Fringilla</h1>
+						<div class="product-description-wrap">
+							<div class="product-intro">
+								<h1>Conex Dapibus Ullamcorp Fringilla</h1>
+								<div class="product-description">
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 								</div>
-								<div class="hero-details-code">
+							</div>
+							<div class="product-details">
+								<div class="product-code">
 									2259656
 								</div>
 								<div class="hero-details-price-box">

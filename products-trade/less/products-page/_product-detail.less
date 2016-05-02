@@ -85,7 +85,28 @@
 		}
 	}
 	.product-description-wrap{
-
+		text-align: center;
+		.setProperty(padding-left, 50px, 60px);
+		.setProperty(padding-right, 50px, 60px);
+		.product-intro{
+			margin: 0 auto;
+			.setProperty(width,536px,348px);
+			h1{
+				.setProperty(font-size,55px,35.5px);
+			}
+			.product-description{
+				.setProperty(font-size, 35px, 22px);
+			}
+		}
+		.product-details{
+			margin: 0 auto;
+			.setProperty(width,536px,293px);
+			.product-code{
+				color: @text-code;
+				.setProperty(font-size, 30px, 15px);
+				.setProperty(margin-bottom, 60px, 20px);
+			}
+		}
 	}
 }
 

@@ -1,0 +1,28 @@
+@dot-bg: #eaeaea;
+@dot-active-bg: #0776aa;
+.slick-dots{
+	position: relative;
+	bottom: inherit;
+	li{
+		.setProperty(width, 20px, 10px);
+		.setProperty(height, 20px, 10px);
+		.setProperty(padding-right, 5px, 5px);
+		.setProperty(padding-left, 5px, 5px);
+		button{
+			.setProperty(width, 20px, 10px);
+			.setProperty(height, 20px, 10px);
+			.border-radius(50%);
+			border: none;
+			background: @dot-bg;
+			&:before{
+				display: none;
+				content: "";
+			}
+		}
+		&.slick-active{
+			button{
+				background: @dot-active-bg; 
+			}		
+		}
+	}	
+}

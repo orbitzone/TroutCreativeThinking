@@ -28,58 +28,58 @@
 				</div>
 				<div class="product-content-wrapper">
 					<div class="product-content-left">
-						<div class="inner-wrap">
+						<div class="product-images inner-wrap">
 							<!-- START HERO GALLERY -->
 							<!-- AND THUMBNAIL NEEDS TO BE THE SAME -->
-							<div class="hero-gallery-slider">
-								<div class="one-slide current">
+							<div class="product-images-slider">
+								<div class="current">
 									<img class="img-responsive" src="templates/images/product-detail/product-image1.jpg" alt="item">
 								</div>
-								<div class="one-slide">
+								<div>
 									<img class="img-responsive" src="templates/images/product-detail/product-image2.jpg" alt="item">
 								</div>
-								<div class="one-slide">
+								<div>
 									<img class="img-responsive" src="templates/images/product-detail/product-image3.jpg" alt="item">
 								</div>
-								<div class="one-slide">
+								<div>
 									<img class="img-responsive" src="templates/images/product-detail/product-image4.jpg" alt="item">
 								</div>
-								<div class="one-slide">
+								<div>
 									<img class="img-responsive" src="templates/images/product-detail/product-image1.jpg" alt="item">
 								</div>
-								<div class="one-slide">
+								<div>
 									<img class="img-responsive" src="templates/images/product-detail/product-image2.jpg" alt="item">
 								</div>
-								<div class="one-slide">
+								<div>
 									<img class="img-responsive" src="templates/images/product-detail/product-image3.jpg" alt="item">
 								</div>
-								<div class="one-slide">
+								<div>
 									<img class="img-responsive" src="templates/images/product-detail/product-image4.jpg" alt="item">
 								</div>
 							</div>
-							<div class="hero-gallery-slider-thumb hidden-xs">
-								<div class="one-slide current">
+							<div class="product-thumbs hidden-xs">
+								<div class="product-thumb current">
 									<img class="img-responsive" src="templates/images/product-detail/product-image1.jpg" alt="item">
 								</div>
-								<div class="one-slide">
+								<div class="product-thumb">
 									<img class="img-responsive" src="templates/images/product-detail/product-image2.jpg" alt="item">
 								</div>
-								<div class="one-slide">
+								<div class="product-thumb">
 									<img class="img-responsive" src="templates/images/product-detail/product-image3.jpg" alt="item">
 								</div>
-								<div class="one-slide">
+								<div class="product-thumb">
 									<img class="img-responsive" src="templates/images/product-detail/product-image4.jpg" alt="item">
 								</div>
-								<div class="one-slide">
+								<div class="product-thumb">
 									<img class="img-responsive" src="templates/images/product-detail/product-image1.jpg" alt="item">
 								</div>
-								<div class="one-slide">
+								<div class="product-thumb">
 									<img class="img-responsive" src="templates/images/product-detail/product-image2.jpg" alt="item">
 								</div>
-								<div class="one-slide">
+								<div class="product-thumb">
 									<img class="img-responsive" src="templates/images/product-detail/product-image3.jpg" alt="item">
 								</div>
-								<div class="one-slide">
+								<div class="product-thumb">
 									<img class="img-responsive" src="templates/images/product-detail/product-image4.jpg" alt="item">
 								</div>
 							</div>
@@ -97,15 +97,22 @@
 									2259656
 								</div>
 								<div class="hero-details-price-box">
-									<ul class="list-inline hero-details-titles">
-										<li class="hero-details-price-my-title">Your Price</li>
-										<li class="hero-details-price-cmp-title">CMP</li>
+									<ul class="nav nav-tabs hero-details-titles" role="tablist">
+										<li  class="active hero-details-price-my-title" role="presentation">
+										<a href="#hero-details-my-price" aria-controls="hero-details-my-price" role="tab" data-toggle="tab">Your Price</a></li>
+										<li class="hero-details-price-cmp-title" role="presentation">
+											<a href="#hero-details-my-cmp" aria-controls="hero-details-my-cmp" role="tab" data-toggle="tab">CMP</a>
+										</li>
 									</ul>	
-									<div class="hero-details-price">
-										<ul class="list-inline">
-											<li><span class="hero-details-price-my">$4.17<small>inc.</small></span></li>
-											<li><span class="hero-details-price-cmp">$3.98<small>exc.</small></span></li>
-										</ul>
+									<div class="tab-content">
+										<div role="tabpanel" class="tab-pane active" id="hero-details-my-price">
+											<div class="hero-details-price-my">$4.17<small>inc.</small></div>
+											<div class="hero-details-price-cmp">$3.98<small>exc.</small></div>											
+										</div>
+										<div role="panel" class="tab-pane" id="hero-details-my-cmp">
+											<div class="hero-details-price-my">$5.20<small>inc.</small></div><div class="hero-details-price-cmp">$4.16<small>exc.</small></div>
+										</div>
+										
 									</div>	
 								</div>
 								<div class="hero-details-quantity-wrap">

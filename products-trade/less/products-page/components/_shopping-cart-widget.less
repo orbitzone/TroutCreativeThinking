@@ -1,30 +1,32 @@
 #shopping-cart-widget{
 	background: #0776aa;
-	.transform(translate3d(0,0,0));
 	will-change: transform;
-	.transition(0.3s right ease-out);
 	z-index: 2;
+	.transform(translate3d(0,0,0));
+	.transition(0.3s right ease-out);
 	@media (min-width: @screen-sm){
 		position: fixed;
 		top: 0;
-		.setRight(-502px);
-		.setWidth(585px, 585px);
+		.setProperty(right,-502px,-502px);
+		.setProperty(width, 585px, 585px);
 		min-height: 100%;
 		height: calc(~"100% + 120px");		
 	}	
 	aside{
 		touch-action: manipulation;
 		background: #0776aa;
-		.setWidth(83px,83px);
+		.setProperty(width, 100%, 83px);
 		height: 200%;
 		overflow: scroll;
 		-webkit-overflow-scrolling: touch;
-		position: absolute;
-		top: 0;
-		left: 0;
 		text-align: center;
 		padding-top: 10px;
 		cursor: pointer;
+		@media (min-width: @screen-sm){
+			position: absolute;
+			top: 0;
+			left: 0;			
+		}
 		button{
 			border: none;
 			.border-radius(0);
@@ -33,8 +35,8 @@
 			outline: none;
 			right: 10px;
 			svg{
-				.setWidth(44px, 44px);
-				.setHeight(35px);
+				.setProperty(width,44px,44px);
+				.setProperty(height,35px,35px);
 				fill: white;
 			}
 			&:focus{
@@ -48,17 +50,20 @@
 		will-change: transform;
 		.transform(translateX(100px));
 		.transform(translate3d(100px,0,0));
-		opacity: 0;
 		overflow: scroll;
 		-webkit-overflow-scrolling: touch;
-		.setWidth(502px,502px);
+		.setProperty(width,100%,502px);
 		height: calc(~"100% - 120px");		
 		background: #066693;
-    position: absolute;
-    top: 0;
-    right: 0;
-    //.transition-special(0.5s, transform, ease-out);
     .transition(0.3s all ease-out);
+    display: none;
+    @media (min-width: @screen-sm){
+    	position: absolute;
+	    top: 0;
+	    right: 0;	    	
+	    opacity: 0;
+	    display: block;		
+    }
     .main-title{
 			font-size:30px;
 			color:@white;
@@ -195,6 +200,9 @@
 			.transform(translateX(0));
 			.transform(translate3d(0,0,0));
 		}
+		.shopping-cart-content{
+			display: block;
+		}		
 	}
 
 }

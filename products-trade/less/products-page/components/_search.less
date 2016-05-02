@@ -1,18 +1,30 @@
 #search{
-	padding-top: 30px;
+	margin-top: 30px;
+	position: relative;
 	.clearfix();
 	input{
-		width: 37%;
+		width: 100%;
 		height: 56px;
 		float: left;
+		@media (min-width: @screen-sm){
+			width: 37%;
+		}
 	}
 	button{
 		width: 56px;
 		height: 56px;
 		text-align: center;
-		float: left;
 		border: none;
 		padding: 0;
+		position: absolute;
+		top: 0;
+		right: 0;
+		@media (min-width: @screen-sm){
+			float: left;	
+			position: relative;		
+			top: inherit;
+			right: inherit;
+		}
 		svg{
 			circle,
 			line{

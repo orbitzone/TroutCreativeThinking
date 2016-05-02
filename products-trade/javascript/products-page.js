@@ -580,24 +580,6 @@ var product_pages = {
             $('#shopping-cart-widget').addClass('mobile');            
             $('html').addClass('mobile');
         }
-        var slide = null;
-        $('.hero-gallery-slider-thumb .one-slide').on(event, function(){
-            var $this = $(this);
-            var time = 0;
-            if($('.hero-gallery-slider').hasClass('animating')){
-                time = 300;
-            }
-            if(slide){
-                clearTimeout(slide);
-            }
-            slide = setTimeout( function(){
-                $('.hero-gallery-slider-thumb .one-slide').removeClass('current');
-                $this.addClass('current');
-                var index = $this.index();
-                $('.hero-gallery-slider').slick('slickGoTo',index, false);
-            },time);
-            return false;
-        });
         
         $(window).on('scroll', function(){
             if($(window).scrollTop() > $('.main-section').offset().top){
@@ -650,6 +632,12 @@ var product_pages = {
         });        
     },
     productDetail: function(){
+        var event = 'click';
+        if(deviceMobile){
+            event = 'touchend';
+            $('#shopping-cart-widget').addClass('mobile');            
+            $('html').addClass('mobile');
+        }
         //
         // INIITALISE VIDEO SLIDER
         //
@@ -715,7 +703,7 @@ var product_pages = {
         //
         // INIITALISE HERO GALLERY SLIDER
         //
-        $(".hero-gallery-slider").slick({
+        $(".product-images-slider").slick({
           infinite: true,
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -733,11 +721,29 @@ var product_pages = {
             }
           ]
         });
-        $(".hero-gallery-slider").on('afterChange', function(){
-            $(".hero-gallery-slider").removeClass('animating');
+        $(".product-images-slider").on('afterChange', function(){
+            $(".product-images-slider").removeClass('animating');
         });
-        $(".hero-gallery-slider").on('beforeChange', function(){
-            $(".hero-gallery-slider").addClass('animating');
+        $(".product-images-slider").on('beforeChange', function(){
+            $(".product-images-slider").addClass('animating');
+        });
+        var slide = null;
+        $('.product-thumbs .product-thumb').on(event, function(){
+            var $this = $(this);
+            var time = 0;
+            if($('.hero-gallery-slider').hasClass('animating')){
+                time = 300;
+            }
+            if(slide){
+                clearTimeout(slide);
+            }
+            slide = setTimeout( function(){
+                $('.product-thumbs .product-thumb').removeClass('current');
+                $this.addClass('current');
+                var index = $this.index();
+                $('.product-images-slider').slick('slickGoTo',index, false);
+            },time);
+            return false;
         });
         //
         // INITIALISE FILE LIST AS SLIDER OF MOBILE

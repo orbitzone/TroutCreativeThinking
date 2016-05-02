@@ -667,6 +667,11 @@ var product_pages = {
                 }
                 ]
         });
+        $(".radio-button").click(
+        function() {
+            $(this).parent(".radiolabel-set").find(".radio-button").removeClass("active");
+            $(this).addClass("active");
+        });
         //
         // INIITALISE PRODUCT SUGGESTION SLIDER
         //

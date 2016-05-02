@@ -135,68 +135,75 @@
 													<span class="clear-fix"></span>
 												</span>												
 											</div>											
-											<div class="quantity-details">Packet <span>12</span> Units</div>
+											<div class="quantity-details">Packet Contains <span>100</span> Units</div>
 										</div>
-									</div>
-									<div class="hero-details-addbutton">
-										<button type="button" class="btn blue-button full-width">add to list</button>
-									</div>
-									<div class="hero-details-icons">
-										<div class="row">
-											<div class="col-sm-6">
-												<div class="item">
-														<img src="templates/images/product-detail/seven-years-quality-guarantee.jpg" alt="Seven years Quality Guarantee"/>
-														<span>Domestic Use</span>											
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>								
-								<div class="hero-details-dropdown">
-									<ul class="list-inline">
-										<li>
-											<div class="options">
-												<div class="name">Availability</div>
-												<div class="options-list">
-													<ul>
-														<li>
-															<b>12 Available</b>
-															at Brunswick East
-														</li>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li>
-											<div class="options">
-												<div class="name">Variations</div>
-												<div class="options-list">
-													<ul>
-														<li>
-															<b>12 Available</b>
-															at Brunswick East
-														</li>
-													</ul>
-												</div>
-											</div>
-										</li>
-									</ul>
+									</div>									
 								</div>
-								<div class="hero-details-actions">
-									<b>Send this product</b>
-									<ul class="list-inline">
-										<li><a href="" class="btn"><svg width="12px" height="9.4px" viewBox="0 0 12 9.4"><path d="M10.9,2.9c-1,0.7-2.1,1.4-3.1,2.2C7.3,5.4,6.6,6,6,6h0h0C5.5,6,4.7,5.4,4.3,5.1c-1-0.7-2.1-1.5-3.1-2.2C0.7,2.6,0,1.8,0,1.2
+								<div class="product-addbutton">
+									<button type="button" class="btn blue-button full-width">add to list</button>
+								</div>
+								<div class="product-icons">
+									<div class="row">
+										<div class="col-xs-6">
+											<div class="item">
+													<img src="templates/images/product-detail/seven-years-quality-guarantee.jpg" alt="Seven years Quality Guarantee"/>
+													<span>Domestic Use</span>											
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>								
+							<div class="product-availability-variations">
+								<ul class="list-inline">
+									<li>
+										<div class="options-dropdown">
+											<div class="options-name">Availability</div>
+											<ul class="options-list">
+												<li class="none-available">
+													None available at your closest Reece
+												</li>
+												<li>
+													<b>12 Available</b>
+													<div>at Brunswick East</div>
+												</li>
+												<li>
+													<b>12 Available</b>
+													<div>at Brunswick East</div>
+												</li>
+												<li>
+													<b>12 Available</b>
+													<div>at Brunswick East</div>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="options-dropdown">
+											<div class="options-name">Variations</div>
+											<ul class="options-list">
+												<li>
+													<b>Green</b>
+													<div>at Brunswick East</div>
+												</li>
+											</ul>											
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="product-share">
+								<b>Send this product</b>
+								<div class="product-share-buttons">
+									<a href="" class="share-btn"><svg width="12px" height="9.4px" viewBox="0 0 12 9.4"><path d="M10.9,2.9c-1,0.7-2.1,1.4-3.1,2.2C7.3,5.4,6.6,6,6,6h0h0C5.5,6,4.7,5.4,4.3,5.1c-1-0.7-2.1-1.5-3.1-2.2C0.7,2.6,0,1.8,0,1.2
 		C0,0.6,0.4,0,1.1,0h9.9C11.5,0,12,0.5,12,1.1C12,1.8,11.4,2.5,10.9,2.9z M12,8.4c0,0.6-0.5,1.1-1.1,1.1H1.1C0.5,9.4,0,8.9,0,8.4V3
 		c0.2,0.2,0.4,0.4,0.7,0.6C1.8,4.4,2.9,5.1,4,5.9c0.6,0.4,1.3,0.9,2,0.9h0h0c0.7,0,1.4-0.5,2-0.9c1.1-0.8,2.2-1.6,3.3-2.3
-		C11.6,3.5,11.8,3.3,12,3V8.4z"/></svg><span class="sr-only">Email</span></a></li>
-										<li><a href="" class="btn"><svg width="12px" height="11.1px" viewBox="0 0 12 11.1">
-		<path d="M12,9c0,0.1-0.1,0.2-0.2,0.2h-1.6v1.2c0,0.4-0.3,0.7-0.7,0.7H2.5c-0.4,0-0.7-0.3-0.7-0.7V9.2H0.2C0.1,9.2,0,9.1,0,9V6
-			c0-0.8,0.6-1.4,1.4-1.4h0.5V0.7C1.8,0.3,2.2,0,2.5,0h4.8c0.4,0,0.9,0.2,1.2,0.5l1.1,1.1c0.3,0.3,0.5,0.8,0.5,1.2v1.8h0.5
-			C11.4,4.6,12,5.2,12,6V9z M9.2,5.5V2.8H8.1c-0.4,0-0.7-0.3-0.7-0.7V0.9H2.8v4.6H9.2z M9.2,10.2V8.3H2.8v1.8H9.2z M10.6,5.5
-			c-0.3,0-0.5,0.2-0.5,0.5s0.2,0.5,0.5,0.5c0.3,0,0.5-0.2,0.5-0.5S10.9,5.5,10.6,5.5z"/>
-	</svg><span class="sr-only">Print</span></a></li>
-									</ul>
-								</div>
+		C11.6,3.5,11.8,3.3,12,3V8.4z"/></svg><span class="sr-only">Email</span></a>
+			<a href="" class="share-btn"><svg width="12px" height="11.1px" viewBox="0 0 12 11.1">
+	<path d="M12,9c0,0.1-0.1,0.2-0.2,0.2h-1.6v1.2c0,0.4-0.3,0.7-0.7,0.7H2.5c-0.4,0-0.7-0.3-0.7-0.7V9.2H0.2C0.1,9.2,0,9.1,0,9V6
+		c0-0.8,0.6-1.4,1.4-1.4h0.5V0.7C1.8,0.3,2.2,0,2.5,0h4.8c0.4,0,0.9,0.2,1.2,0.5l1.1,1.1c0.3,0.3,0.5,0.8,0.5,1.2v1.8h0.5
+		C11.4,4.6,12,5.2,12,6V9z M9.2,5.5V2.8H8.1c-0.4,0-0.7-0.3-0.7-0.7V0.9H2.8v4.6H9.2z M9.2,10.2V8.3H2.8v1.8H9.2z M10.6,5.5
+		c-0.3,0-0.5,0.2-0.5,0.5s0.2,0.5,0.5,0.5c0.3,0,0.5-0.2,0.5-0.5S10.9,5.5,10.6,5.5z"/>
+</svg><span class="sr-only">Print</span></a>
+								</div>									
 							</div>
 						</div>
 					</div>
@@ -208,10 +215,10 @@
 		<div class="section main-anchor-section">
 			<div class="container-fluid section-container">
 				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-11 col-md-offset-1">
+					<div class="col-xs-12">
 						<div class="inner-wrap">
 							<div class="main-anchor-wrap">
-								<ul class="main-anchor-list hidden-xs">
+								<ul class="main-anchor-list list-inline hidden-xs">
 									<li><a class="btn blue-button full-width" href="#features">Features</a></li>
 									<li><a class="btn blue-button full-width" href="#technical-specification">Specifications</a></li>
 									<li><a class="btn blue-button full-width" href="#downloads">Downloads</a></li>

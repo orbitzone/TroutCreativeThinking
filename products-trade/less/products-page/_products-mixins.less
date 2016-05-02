@@ -88,11 +88,11 @@
 }
 
 .transition (@transition) {
-	-webkit-transition: @transition;  
-	-moz-transition:    @transition;
-	-ms-transition:     @transition; 
-	-o-transition:      @transition;  
-	transition:      @transition;  
+	-webkit-transition: ~"@{transition}";  
+	-moz-transition:    ~"@{transition}";
+	-ms-transition:     ~"@{transition}"; 
+	-o-transition:      ~"@{transition}";  
+	transition:      ~"@{transition}";  
 }
 
 .transition-special (@duration, @property, @ease) {
@@ -165,18 +165,12 @@
 	& when (ispixel(@smWidth)){
   	.getVW(@smWidth, 640px);
 		@{property}: @getVW;
-		@media (min-width: 640px){
-			@{property}: @smWidth;
-		}
 	}
   & when (ispercentage(@smWidth)){
    	@{property}: @smWidth;
-   	@media (min-width: 640px){
-			@{property}: @smWidth;
-		}
   }
   & when (ispixel(@lgWidth)){
-  	@media (min-width: @screen-sm){
+  	@media (min-width: @screen-sm-custom){
   		.getVW(@lgWidth, 1333px);
 			@{property}: @getVW;
 		}
@@ -185,7 +179,7 @@
 		}
 	}
   & when (ispercentage(@lgWidth)){
-   	@media (min-width: @screen-sm){
+   	@media (min-width: @screen-sm-custom){
   		@{property}: @lgWidth;
 		}
 		@media (min-width: 1280px){

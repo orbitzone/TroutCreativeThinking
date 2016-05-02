@@ -2703,6 +2703,9 @@ Slick slider arrow
     border: none;
   }
 }
+#product-pages .main-section#product-detail .product-images img {
+  max-height: calc(100vh - 20px);
+}
 #product-pages .main-section#product-detail .product-images .product-thumbs:before,
 #product-pages .main-section#product-detail .product-images .product-thumbs:after {
   content: " ";

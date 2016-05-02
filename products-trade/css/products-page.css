@@ -2855,11 +2855,111 @@ Slick slider arrow
 }
 @media (min-width: 768px) {
   #product-pages .main-section#product-detail .product-description-wrap .product-details .product-code {
-    margin-bottom: 1.42535634vw;
+    margin-bottom: 1.50037509vw;
   }
 }
 @media (min-width: 1280px) {
   #product-pages .main-section#product-detail .product-description-wrap .product-details .product-code {
-    margin-bottom: 19px;
+    margin-bottom: 20px;
   }
+}
+#product-pages .main-section#product-detail .product-description-wrap .product-details .product-prices .nav-tabs li {
+  width: 50%;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: none;
+  background: #c8c8c8;
+  text-transform: uppercase;
+  font-size: 3.125vw;
+  font-weight: normal;
+}
+@media (min-width: 768px) {
+  #product-pages .main-section#product-detail .product-description-wrap .product-details .product-prices .nav-tabs li {
+    font-size: 0.75018755vw;
+  }
+}
+@media (min-width: 1280px) {
+  #product-pages .main-section#product-detail .product-description-wrap .product-details .product-prices .nav-tabs li {
+    font-size: 10px;
+  }
+}
+#product-pages .main-section#product-detail .product-description-wrap .product-details .product-prices .nav-tabs li a {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: none;
+  background: none;
+  color: black;
+}
+#product-pages .main-section#product-detail .product-description-wrap .product-details .product-prices .nav-tabs li.active {
+  font-weight: bold;
+  border: none;
+  background: #f4f4f4;
+}
+#product-pages .main-section#product-detail .product-description-wrap .product-details .product-prices .nav-tabs li.active a {
+  color: #0776aa;
+}
+#product-pages .main-section#product-detail .product-description-wrap .product-details .product-prices .tab-pane {
+  background: #f4f4f4;
+  font-weight: bold;
+  padding-top: 6.25vw;
+  padding-bottom: 6.25vw;
+  font-size: 9.375vw;
+}
+@media (min-width: 768px) {
+  #product-pages .main-section#product-detail .product-description-wrap .product-details .product-prices .tab-pane {
+    padding-top: 1.50037509vw;
+  }
+}
+@media (min-width: 1280px) {
+  #product-pages .main-section#product-detail .product-description-wrap .product-details .product-prices .tab-pane {
+    padding-top: 20px;
+  }
+}
+@media (min-width: 768px) {
+  #product-pages .main-section#product-detail .product-description-wrap .product-details .product-prices .tab-pane {
+    padding-bottom: 1.50037509vw;
+  }
+}
+@media (min-width: 1280px) {
+  #product-pages .main-section#product-detail .product-description-wrap .product-details .product-prices .tab-pane {
+    padding-bottom: 20px;
+  }
+}
+@media (min-width: 768px) {
+  #product-pages .main-section#product-detail .product-description-wrap .product-details .product-prices .tab-pane {
+    font-size: 2.25056264vw;
+  }
+}
+@media (min-width: 1280px) {
+  #product-pages .main-section#product-detail .product-description-wrap .product-details .product-prices .tab-pane {
+    font-size: 30px;
+  }
+}
+#product-pages .main-section#product-detail .product-description-wrap .product-details .product-prices .tab-pane small {
+  font-weight: normal;
+  font-size: 3.125vw;
+}
+@media (min-width: 768px) {
+  #product-pages .main-section#product-detail .product-description-wrap .product-details .product-prices .tab-pane small {
+    font-size: 0.75018755vw;
+  }
+}
+@media (min-width: 1280px) {
+  #product-pages .main-section#product-detail .product-description-wrap .product-details .product-prices .tab-pane small {
+    font-size: 10px;
+  }
+}
+#product-pages .main-section#product-detail .product-description-wrap .product-details .product-prices .tab-pane .product-price-inc {
+  color: #646464;
+}
+#product-pages .main-section#product-detail .product-description-wrap .product-details .product-prices .tab-pane .product-price-exc {
+  color: #b4b4b4;
 }

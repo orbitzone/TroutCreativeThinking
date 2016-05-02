@@ -1,11 +1,12 @@
- @bg-price-box: #f4f4f4;
- @text-code: #bababa;
- @text-my-price-title: #0776aa;
- @text-my-price: #646464;
- @text-cmp-price: #b4b4b4;
- @text-icons: #bababa;
- @text-price-divider: #eaeaea;
- @bg-cmp: #c8c8c8;
+@bg-price-box: #f4f4f4;
+@bg-cmp: #c8c8c8;
+@text-code: #bababa;
+@text-price: #0776aa;
+@text-price-inc: #646464;
+@text-price-exc: #b4b4b4;
+@text-icons: #bababa;
+@text-price-divider: #eaeaea;
+
 .main-section#product-detail{
 	img{
 		max-width: 100%;
@@ -105,6 +106,50 @@
 				color: @text-code;
 				.setProperty(font-size, 30px, 15px);
 				.setProperty(margin-bottom, 60px, 20px);
+			}
+			.product-prices{
+				.nav-tabs{
+					li{
+						width: 50%;
+						.border-radius(0);
+						border: none;
+						background: @bg-cmp;
+						text-transform: uppercase;
+						.setProperty(font-size,20px,10px);
+						font-weight: normal;
+						a{
+							.border-radius(0);
+							border: none;
+							background: none;
+							color: black;
+						}
+						&.active{
+							font-weight: bold;
+							border: none;
+							background: @bg-price-box;
+							a{
+								color: @text-price;
+							}
+						}
+					}
+				}
+				.tab-pane{
+					background:  @bg-price-box;
+					font-weight: bold;
+					.setProperty(padding-top,40px, 20px);
+					.setProperty(padding-bottom,40px, 20px);
+					.setProperty(font-size, 60px, 30px);
+					small{
+						font-weight: normal;
+						.setProperty(font-size,20px,10px);
+					}
+					.product-price-inc{
+						color: @text-price-inc;
+					}
+					.product-price-exc{
+						color: @text-price-exc;
+					}
+				}
 			}
 		}
 	}

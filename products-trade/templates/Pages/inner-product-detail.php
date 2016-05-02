@@ -98,21 +98,22 @@
 								<div class="product-code">
 									2259656
 								</div>
-								<div class="hero-details-price-box">
+								<div class="product-prices">
 									<ul class="nav nav-tabs hero-details-titles" role="tablist">
-										<li  class="active hero-details-price-my-title" role="presentation">
-										<a href="#hero-details-my-price" aria-controls="hero-details-my-price" role="tab" data-toggle="tab">Your Price</a></li>
-										<li class="hero-details-price-cmp-title" role="presentation">
-											<a href="#hero-details-my-cmp" aria-controls="hero-details-my-cmp" role="tab" data-toggle="tab">CMP</a>
+										<li  class="active" role="presentation">
+										<a href="#product-price-my" aria-controls="product-price-my" role="tab" data-toggle="tab">Your Price</a></li>
+										<li role="presentation">
+											<a href="#product-price-cmp" aria-controls="product-price-cmp" role="tab" data-toggle="tab">CMP</a>
 										</li>
 									</ul>	
 									<div class="tab-content">
-										<div role="tabpanel" class="tab-pane active" id="hero-details-my-price">
-											<div class="hero-details-price-my">$4.17<small>inc.</small></div>
-											<div class="hero-details-price-cmp">$3.98<small>exc.</small></div>											
+										<div role="tabpanel" class="tab-pane active" id="product-price-my">
+											<div class="product-price-inc">$4.17<small>inc.</small></div>
+											<div class="product-price-exc">$3.98<small>exc.</small></div>
 										</div>
-										<div role="panel" class="tab-pane" id="hero-details-my-cmp">
-											<div class="hero-details-price-my">$5.20<small>inc.</small></div><div class="hero-details-price-cmp">$4.16<small>exc.</small></div>
+										<div role="tabpanel" class="tab-pane" id="product-price-cmp">
+											<div class="product-price-inc">$5.20<small>inc.</small></div>
+											<div class="product-price-exc">$4.16<small>exc.</small></div>
 										</div>
 										
 									</div>	

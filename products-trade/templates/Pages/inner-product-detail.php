@@ -578,7 +578,12 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 									<div class="row">
 										<div class="col-xs-12">
 											<div class="file-download-area">
-												<header class="action-expand-button download-header" data-expandbutton="installation-files"><h4 class="download-heading">Installation Downloads</h4></header>
+												<header class="action-expand-button download-header" data-expandbutton="installation-files"><h4 class="download-heading">Installation Downloads
+												<svg xmlns="http://www.w3.org/2000/svg" width="46px" height="25px" viewBox="0 0 46 25">
+						<path d="M0.6,0.6C0.2,1,0,1.5,0,2c0,0.5,0.2,1,0.6,1.4l21,21c0.8,0.8,2.1,0.8,2.8,0l21-21c0.8-0.8,0.8-2.1,0-2.8
+		c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
+					</svg>
+												</h4></header>
 												<div class="expand-section" data-expandsection="installation-files">
 													<div class="file-download-list">
 														<?php for($i = 0; $i<3;$i++){ ?>

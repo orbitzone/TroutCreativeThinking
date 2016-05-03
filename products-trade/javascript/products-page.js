@@ -630,7 +630,16 @@ var product_pages = {
             }
             e.stopPropagation();
                         
-        });        
+        });
+        $(document).on('click','#shopping-cart-widget .edit-item, #shopping-cart-widget .product-thumbnail, #shopping-cart-widget .item-details',function(e){
+            if($(this).parent().parent().parent().hasClass('editing')){
+                $('#shopping-cart-widget .one-item').removeClass('editing');
+                $(this).parent().parent().parent().removeClass('editing');
+            }else{
+                $('#shopping-cart-widget .one-item').removeClass('editing');
+                $(this).parent().parent().parent().addClass('editing');
+            }        
+        });     
     },
     productDetail: function(){
         var event = 'click';

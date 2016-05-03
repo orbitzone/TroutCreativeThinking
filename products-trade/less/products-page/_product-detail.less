@@ -15,6 +15,7 @@
 	}
 	position: relative;
 	overflow: hidden;
+	margin-bottom: -35px;
 	.product-detail-wrap{
 		overflow: scroll; 
 		-webkit-overflow-scrolling : touch;
@@ -396,6 +397,13 @@
 	.section{
 		.section-content{
 			border-top:solid 1px @border-ruler-grey;
+			padding: 0 30px;
+			&.no-border{
+				border-top: none;
+			}
+			@media (min-width: @screen-sm){
+				padding: 0;
+			}
 			@media (min-width: @screen-lg){
 				padding: 0 11%;
 			}
@@ -477,14 +485,89 @@
 					}	
 				}
 			}
+		}
+		&.videos-section{
+			.section-heading{
+				color: white;
+			}
+			.video-details{
+				color: white;
+				text-align: center;
+				padding: 20px 0;
+			}
+			.section-content{
+				border-top: none;
+			}
 		}		
+	}
+	.video-slider,
+	.product-suggestion-slider{
+		margin-bottom: 20px;
+		@media (min-width: @screen-sm) {
+			margin: 0 -15px;
+			margin-bottom: 20px;
+			.one-slide{
+				padding: 0 15px;
+			}
+		}
+	}
+	.product-suggestion-slider{
+		margin-bottom: 50px;
+		.product-details{
+			text-align: center;
+			padding: 20px 0;
+			h5{
+				font-size: 22px;
+				margin-bottom: 0;
+			}
+			.product-description{
+				font-size: 14px;
+				margin-bottom: 0;
+			}
+			.product-price{
+				font-size: 14px;
+				.gothamBold;
+				small{
+					font-size: 8px;
+					.gothamBook;
+				}
+			}
+		}
+		.view-button{
+			text-align: center;
+		}
+	}
+	.banner-section{
+		.banner{
+			padding: 60px 0;
+		}
+	}
+	.footer-promo-section{
+		padding: 60px 0;
+		color: white;
+		h3{
+			font-size: 35px;
+			margin: 14px 0 40px;
+		}
+		.blue-button{
+			margin-top: 50px;
+		}
 	}
 .file-download-list{
 	display:block;
-	padding:30px 40px;
+	padding: 30px 20px;
 	margin:0;
 	overflow: auto;
 	background-color: @bg-light-grey;
+	@media (min-width: @screen-sm) {
+		padding: 30px 40px;
+	}
+	&.all-downloads{
+		background: none;
+		@media (min-width: @screen-sm) {
+			padding: 0px 0px 30px;
+		}	
+	}
 	.one-file{
 		list-style:none;
 		margin:10px 0;
@@ -514,14 +597,6 @@
 				display:block;
 				&:hover{
 					color:@black;
-				}
-				@media (max-width: @screen-xs-max) {
-					background-color: @link-blue;
-					color: @white;
-					text-decoration:none;
-					padding:10px 5px;
-					margin-top:10px;
-					.gothamBook;
 				}
 			}
 			@media (max-width: @screen-xs-max) {

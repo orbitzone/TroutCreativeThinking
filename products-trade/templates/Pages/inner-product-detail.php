@@ -545,7 +545,14 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 		<section class="section installation-section" id="installation">
 			<div class="container-fluid section-container">
 				<div class="section-content">
-							<header data-expandbutton="installation" class="section-title action-expand-button opened"><h3 class="section-heading">Installation</h3></header>
+							<header data-expandbutton="installation" class="section-title action-expand-button opened">
+							<h3 class="section-heading">Installation
+							<svg xmlns="http://www.w3.org/2000/svg" width="46px" height="25px" viewBox="0 0 46 25">
+						<path d="M0.6,0.6C0.2,1,0,1.5,0,2c0,0.5,0.2,1,0.6,1.4l21,21c0.8,0.8,2.1,0.8,2.8,0l21-21c0.8-0.8,0.8-2.1,0-2.8
+		c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
+					</svg>
+							</h3>
+							</header>
 							<div data-expandsection="installation" class="expand-section opened">
 								<div class="inner-info">
 									<div class="row">
@@ -607,9 +614,14 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 		<section class="section downloads-section" id="downloads">
 			<div class="container-fluid section-container">
 				<div class="section-content">
-							<header data-expandbutton="alldownloads" class="section-title action-expand-button opened"><h3 class="section-heading">All Downloads</h3></header>
+							<header data-expandbutton="alldownloads" class="section-title action-expand-button opened"><h3 class="section-heading">All Downloads
+							<svg xmlns="http://www.w3.org/2000/svg" width="46px" height="25px" viewBox="0 0 46 25">
+						<path d="M0.6,0.6C0.2,1,0,1.5,0,2c0,0.5,0.2,1,0.6,1.4l21,21c0.8,0.8,2.1,0.8,2.8,0l21-21c0.8-0.8,0.8-2.1,0-2.8
+		c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
+					</svg>
+							</h3></header>
 							<div data-expandsection="alldownloads" class="expand-section opened">
-								<div class="file-download-list">
+								<div class="file-download-list all-downloads">
 									<?php for($i = 0; $i<7;$i++){ ?>
 									<div class="one-file">
 										<div class="file-info file-doc">
@@ -643,10 +655,10 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 		<!--START VIDEO SECTION -->
 		<section class="section videos-section bg-dark-stripes" id="videos">
 			<div class="container-fluid section-container">
-				<div class="section-content">
+				<div class="section-content no-border">
 							<header data-expandbutton="videos-area" class="section-title opened">
 								<h3 class="section-heading">Videos</h3>
-								</header>
+							</header>
 							<div data-expandsection="videos-area" class="expand-section opened">
 								<div class="inner-info">
 									<div class="row">
@@ -696,28 +708,30 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 		<!--START PEOPLE ALSO BOUGHT SECTION -->
 		<div class="section product-suggestion-section bg-light-stripes" id="people-also-bought">
 			<div class="container-fluid section-container">
-				<div class="row">
-					<div class="col-xs-12 col-sm-11 col-md-10 col-md-offset-1">
-						<div class="inner-wrap">
-							<header data-expandbutton="product-suggestion" class="section-title text-center"><h3 class="section-heading">People also bought</h3></header>
-							<div data-expandsection="product-suggestion" class="expand-section opened">
-							<div class="product-suggestion-slider">
-								<?php for($i = 0; $i<4;$i++){ ?>
-								<div class="one-slide">
-									<div class="product-thumbnail">
-										<img class="img-responsive" src="templates/images/product-detail/product-suggestion<?php echo 1+$i%4 ?>.jpg" alt="item">
+				<div class="section-content no-border">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="inner-wrap">
+								<header data-expandbutton="product-suggestion" class="section-title text-center"><h3 class="section-heading">People also bought</h3></header>
+								<div data-expandsection="product-suggestion" class="expand-section opened">
+								<div class="product-suggestion-slider">
+									<?php for($i = 0; $i<4;$i++){ ?>
+									<div class="one-slide">
+										<div class="product-thumbnail">
+											<img class="img-responsive" src="templates/images/product-detail/product-suggestion<?php echo 1+$i%4 ?>.jpg" alt="item">
+										</div>
+										<div class="product-details">
+											<h5 class="product-name">Conex</h5>
+											<p class="product-description">Water end cap</p>
+											<p class="product-price">$XXX <small class="gst">gst inc.</small></p>
+										</div>
+										<div class="view-button">
+											<a href="#" class="btn black-button view-button">View</a>
+										</div>
 									</div>
-									<div class="product-details">
-										<h5 class="product-name">Conex</h5>
-										<p class="product-description">Water end cap</p>
-										<p class="product-price">$XXX<span class="gst">gst inc.</span></p>
-									</div>
-									<div class="view-button">
-										<a href="#" class="btn black-button view-button">View</a>
-									</div>
+									<?php } ?>
 								</div>
-								<?php } ?>
-							</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -728,10 +742,12 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 		<!--START BANNER SECTION -->
 		<div class="section banner-section">
 			<div class="container-fluid section-container">
-				<div class="row">
-					<div class="col-xs-12 col-sm-11 col-md-10 col-md-offset-1">
-						<div class="inner-wrap">
-							<img class="img-responsive" src="templates/images/product-detail/banner.jpg" alt="banner">
+				<div class="section-content no-border">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="inner-wrap banner">
+								<img class="img-responsive" src="templates/images/product-detail/banner.jpg" alt="banner">
+							</div>
 						</div>
 					</div>
 				</div>
@@ -741,20 +757,18 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 		<!--START FOOTER PROMO SECTION -->
 		<div class="section footer-promo-section bg-extra-dark-grey">
 			<div class="container-fluid section-container">
-				<div class="row">
-					<div class="col-xs-12 col-sm-11 col-md-10 col-md-offset-1">
-						<div class="row">
-							<div class="col-sm-6">
-								<div class="inner-wrap">
-									<img class="img-responsive" src="templates/images/product-detail/product-suggestion2.jpg" alt="banner">
-								</div>
+				<div class="section-content no-border">
+					<div class="row">
+						<div class="col-sm-5">
+							<div class="inner-wrap">
+								<img class="img-responsive" src="templates/images/product-detail/product-suggestion2.jpg" alt="banner">
 							</div>
-							<div class="col-sm-7">
-								<div class="inner-wrap">
-									<h3>Learn more about Conex</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus quo, optio nostrum! Alias unde nemo quasi obcaecati doloribus minus recusandae dolores incidunt debitis ea corporis ullam tenetur, magnam quos quibusdam vitae rem assumenda cum quam asperiores, ducimus libero, beatae totam ipsa! Iste fuga ipsa est aliquid modi porro illum eos?</p>
-									<a href="#" class="btn blue-button small-width">Conex brand pages</a>
-								</div>
+						</div>
+						<div class="col-sm-7">
+							<div class="inner-wrap">
+								<h3>Learn more about Conex</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus quo, optio nostrum! Alias unde nemo quasi obcaecati doloribus minus recusandae dolores incidunt debitis ea corporis ullam tenetur, magnam quos quibusdam vitae rem assumenda cum quam asperiores, ducimus libero, beatae totam ipsa! Iste fuga ipsa est aliquid modi porro illum eos?</p>
+								<a href="#" class="btn blue-button small-width">Conex brand pages</a>
 							</div>
 						</div>
 					</div>

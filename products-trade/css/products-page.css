@@ -146,6 +146,8 @@ body.widget .site-footer .contact {
   }
 }
 #product-pages {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   /* BODY FONT*/
   font-family: "Gotham A", "Gotham B";
   font-style: normal;
@@ -2667,6 +2669,7 @@ Slick slider arrow
 #product-pages .main-section#product-detail {
   position: relative;
   overflow: hidden;
+  margin-bottom: -35px;
 }
 #product-pages .main-section#product-detail img {
   max-width: 100%;
@@ -3163,6 +3166,15 @@ Slick slider arrow
 }
 #product-pages .main-section#product-detail .section .section-content {
   border-top: solid 1px #bfbfbf;
+  padding: 0 30px;
+}
+#product-pages .main-section#product-detail .section .section-content.no-border {
+  border-top: none;
+}
+@media (min-width: 768px) {
+  #product-pages .main-section#product-detail .section .section-content {
+    padding: 0;
+  }
 }
 @media (min-width: 1200px) {
   #product-pages .main-section#product-detail .section .section-content {
@@ -3262,12 +3274,95 @@ Slick slider arrow
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
 }
+#product-pages .main-section#product-detail .section.videos-section .section-heading {
+  color: white;
+}
+#product-pages .main-section#product-detail .section.videos-section .video-details {
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+#product-pages .main-section#product-detail .section.videos-section .section-content {
+  border-top: none;
+}
+#product-pages .main-section#product-detail .video-slider,
+#product-pages .main-section#product-detail .product-suggestion-slider {
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  #product-pages .main-section#product-detail .video-slider,
+  #product-pages .main-section#product-detail .product-suggestion-slider {
+    margin: 0 -15px;
+    margin-bottom: 20px;
+  }
+  #product-pages .main-section#product-detail .video-slider .one-slide,
+  #product-pages .main-section#product-detail .product-suggestion-slider .one-slide {
+    padding: 0 15px;
+  }
+}
+#product-pages .main-section#product-detail .product-suggestion-slider {
+  margin-bottom: 50px;
+}
+#product-pages .main-section#product-detail .product-suggestion-slider .product-details {
+  text-align: center;
+  padding: 20px 0;
+}
+#product-pages .main-section#product-detail .product-suggestion-slider .product-details h5 {
+  font-size: 22px;
+  margin-bottom: 0;
+}
+#product-pages .main-section#product-detail .product-suggestion-slider .product-details .product-description {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+#product-pages .main-section#product-detail .product-suggestion-slider .product-details .product-price {
+  font-size: 14px;
+  font-family: "Gotham A", "Gotham B";
+  font-style: normal;
+  font-weight: 700;
+}
+#product-pages .main-section#product-detail .product-suggestion-slider .product-details .product-price small {
+  font-size: 8px;
+  font-family: "Gotham A", "Gotham B";
+  font-style: normal;
+  font-weight: 400;
+}
+#product-pages .main-section#product-detail .product-suggestion-slider .view-button {
+  text-align: center;
+}
+#product-pages .main-section#product-detail .banner-section .banner {
+  padding: 60px 0;
+}
+#product-pages .main-section#product-detail .footer-promo-section {
+  padding: 60px 0;
+  color: white;
+}
+#product-pages .main-section#product-detail .footer-promo-section h3 {
+  font-size: 35px;
+  margin: 14px 0 40px;
+}
+#product-pages .main-section#product-detail .footer-promo-section .blue-button {
+  margin-top: 50px;
+}
 #product-pages .main-section#product-detail .file-download-list {
   display: block;
-  padding: 30px 40px;
+  padding: 30px 20px;
   margin: 0;
   overflow: auto;
   background-color: #fafafa;
+}
+@media (min-width: 768px) {
+  #product-pages .main-section#product-detail .file-download-list {
+    padding: 30px 40px;
+  }
+}
+#product-pages .main-section#product-detail .file-download-list.all-downloads {
+  background: none;
+}
+@media (min-width: 768px) {
+  #product-pages .main-section#product-detail .file-download-list.all-downloads {
+    padding: 0px 0px 30px;
+  }
 }
 #product-pages .main-section#product-detail .file-download-list .one-file {
   list-style: none;
@@ -3303,18 +3398,6 @@ Slick slider arrow
 }
 #product-pages .main-section#product-detail .file-download-list .one-file .file-info .file-download:hover {
   color: #000000;
-}
-@media (max-width: 767px) {
-  #product-pages .main-section#product-detail .file-download-list .one-file .file-info .file-download {
-    background-color: #0776aa;
-    color: #ffffff;
-    text-decoration: none;
-    padding: 10px 5px;
-    margin-top: 10px;
-    font-family: "Gotham A", "Gotham B";
-    font-style: normal;
-    font-weight: 400;
-  }
 }
 @media (max-width: 767px) {
   #product-pages .main-section#product-detail .file-download-list .one-file .file-info {

@@ -643,7 +643,8 @@ var product_pages = {
         // INIITALISE VIDEO SLIDER
         //
         $(".video-slider").slick({
-            dots: true,
+            arrows: true,
+            dots: false,
           infinite: true,
           slidesToShow: 3,
           slidesToScroll: 3,
@@ -727,8 +728,10 @@ var product_pages = {
             }
           ]
         });
-        $(".product-images-slider").on('afterChange', function(){
+        $(".product-images-slider").on('afterChange', function(event, slick, currentSlide){
             $(".product-images-slider").removeClass('animating');
+            $('.product-thumbs .product-thumb').removeClass('current');
+            $('.product-thumbs .product-thumb:eq('+currentSlide+')').addClass('current');
         });
         $(".product-images-slider").on('beforeChange', function(){
             $(".product-images-slider").addClass('animating');
@@ -737,7 +740,7 @@ var product_pages = {
         $('.product-thumbs .product-thumb').on(event, function(){
             var $this = $(this);
             var time = 0;
-            if($('.hero-gallery-slider').hasClass('animating')){
+            if($('.product-images-slider').hasClass('animating')){
                 time = 300;
             }
             if(slide){

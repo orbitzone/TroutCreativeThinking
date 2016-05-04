@@ -56,6 +56,12 @@
 .col-lg-12 {
   padding: 0 15px;
 }
+/*.animation (@name, @duration: 300ms, @delay: 0, @ease: ease) {
+	-webkit-animation: @name @duration @delay @ease;
+	-moz-animation:    @name @duration @delay @ease;
+	-ms-animation:     @name @duration @delay @ease;
+	animation:     @name @duration @delay @ease;
+}*/
 /*FONTS*/
 .gothamLight {
   font-family: "Gotham A", "Gotham B";
@@ -2866,7 +2872,6 @@ Slick slider arrow
 #product-pages #shopping-cart .shopping-cart-listing .inner-wrap .item-data.item-quantity .quantity-set .radiolabel-set .radio-button {
   text-align: center;
   float: left;
-  font-weight: 300;
   width: 50%;
   height: 38px;
   font-size: 14px;
@@ -3068,6 +3073,227 @@ Slick slider arrow
 }
 #product-pages .main-section#product-detail img {
   max-width: 100%;
+}
+#product-pages .main-section#product-detail .btn {
+  font-size: 15px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border: 2px solid #0776aa;
+  -moz-transition: 0.2s all ease-out;
+  -ms-transition: 0.2s all ease-out;
+  -webkit-transition: 0.2s all ease-out;
+  -o-transition: 0.2s all ease-out;
+  transition: 0.2s all ease-out;
+}
+#product-pages .main-section#product-detail .btn:before {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: -1;
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -moz-transition: 0.2s all ease-out;
+  -ms-transition: 0.2s all ease-out;
+  -webkit-transition: 0.2s all ease-out;
+  -o-transition: 0.2s all ease-out;
+  transition: 0.2s all ease-out;
+}
+#product-pages .main-section#product-detail .btn:hover {
+  color: #0776aa;
+}
+#product-pages .main-section#product-detail .btn:hover:before {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+#product-pages .main-section#product-detail .progress-button {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
+#product-pages .main-section#product-detail .progress-button button {
+  width: 100%;
+  height: 56px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transition: "all 0.3s";
+  -o-transition: "all 0.3s";
+  transition: "all 0.3s";
+}
+#product-pages .main-section#product-detail .progress-button button:focus {
+  outline: none;
+}
+#product-pages .main-section#product-detail .progress-button span {
+  -moz-transition: opacity 0.3s 0.1s;
+  -ms-transition: opacity 0.3s 0.1s;
+  -webkit-transition: opacity 0.3s 0.1s;
+  -o-transition: opacity 0.3s 0.1s;
+  transition: opacity 0.3s 0.1s;
+}
+#product-pages .main-section#product-detail .progress-button svg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 1;
+  margin-left: -28px;
+  pointer-events: none;
+  opacity: 0;
+}
+#product-pages .main-section#product-detail .progress-button svg path {
+  opacity: 0;
+  fill: none;
+}
+#product-pages .main-section#product-detail .progress-button svg.progress-circle {
+  width: 56px;
+  height: 56px;
+  stroke: #0776aa;
+  stroke-width: 5;
+  stroke-dasharray: 204px;
+  stroke-dashoffset: 204px;
+}
+#product-pages .main-section#product-detail .progress-button svg.check {
+  width: 30px;
+  height: 23px;
+  top: 18px;
+  margin-left: -15px;
+}
+#product-pages .main-section#product-detail .progress-button svg.check path {
+  stroke: #1ECD97;
+}
+#product-pages .main-section#product-detail .progress-button svg.check .short {
+  stroke-dasharray: 22px;
+  stroke-dashoffset: 24px;
+  -moz-transition: stroke-dashoffset 0.2s 0.3s ease-out;
+  -ms-transition: stroke-dashoffset 0.2s 0.3s ease-out;
+  -webkit-transition: stroke-dashoffset 0.2s 0.3s ease-out;
+  -o-transition: stroke-dashoffset 0.2s 0.3s ease-out;
+  transition: stroke-dashoffset 0.2s 0.3s ease-out;
+}
+#product-pages .main-section#product-detail .progress-button svg.check .long {
+  stroke-dasharray: 55px;
+  stroke-dashoffset: 56px;
+  -moz-transition: stroke-dashoffset 0.1s 0.5s ease-out;
+  -ms-transition: stroke-dashoffset 0.1s 0.5s ease-out;
+  -webkit-transition: stroke-dashoffset 0.1s 0.5s ease-out;
+  -o-transition: stroke-dashoffset 0.1s 0.5s ease-out;
+  transition: stroke-dashoffset 0.1s 0.5s ease-out;
+}
+#product-pages .main-section#product-detail .progress-button svg.cross {
+  opacity: 0;
+}
+#product-pages .main-section#product-detail .progress-button svg.cross {
+  opacity: 0;
+}
+#product-pages .main-section#product-detail .progress-button svg.check path,
+#product-pages .main-section#product-detail .progress-button svg.cross path {
+  stroke: #fff;
+  stroke-linecap: round;
+  stroke-width: 4;
+  -moz-transition: opacity 0.1s;
+  -ms-transition: opacity 0.1s;
+  -webkit-transition: opacity 0.1s;
+  -o-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+}
+#product-pages .main-section#product-detail .progress-button.loading {
+  border-width: 5px;
+  border-color: #ddd;
+  background-color: transparent;
+  color: #fff;
+}
+#product-pages .main-section#product-detail .progress-button.loading button {
+  width: 56px;
+  border-width: 5px;
+  border-color: #ddd;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: transparent;
+  color: white;
+}
+#product-pages .main-section#product-detail .progress-button.loading span {
+  -moz-transition: opacity 0.15s;
+  -ms-transition: opacity 0.15s;
+  -webkit-transition: opacity 0.15s;
+  -o-transition: opacity 0.15s;
+  transition: opacity 0.15s;
+}
+#product-pages .main-section#product-detail .progress-button.loading svg.progress-circle {
+  opacity: 1;
+  -moz-animation: spin 1s 0.3s infinite linear both;
+  -ms-animation: spin 1s 0.3s infinite linear both;
+  -webkit-animation: spin 1s 0.3s infinite linear both;
+  -o-animation: spin 1s 0.3s infinite linear both;
+  animation: spin 1s 0.3s infinite linear both;
+  stroke-dashoffset: 150px;
+  -moz-transition: stroke-dashoffset 0.3s;
+  -ms-transition: stroke-dashoffset 0.3s;
+  -webkit-transition: stroke-dashoffset 0.3s;
+  -o-transition: stroke-dashoffset 0.3s;
+  transition: stroke-dashoffset 0.3s;
+}
+#product-pages .main-section#product-detail .progress-button.loading span,
+#product-pages .main-section#product-detail .progress-button.success span,
+#product-pages .main-section#product-detail .progress-button.error span {
+  opacity: 0;
+  /* keep it hidden in all states */
+}
+#product-pages .main-section#product-detail .progress-button.loading svg path,
+#product-pages .main-section#product-detail .progress-button.success svg path,
+#product-pages .main-section#product-detail .progress-button.error svg path {
+  opacity: 1;
+}
+#product-pages .main-section#product-detail .progress-button.success button,
+#product-pages .main-section#product-detail .progress-button.error button {
+  -webkit-transition: background-color 0.3s, width 0.3s, border-width 0.3s;
+  -moz-transition: background-color 0.3s, width 0.3s, border-width 0.3s;
+  -ms-transition: background-color 0.3s, width 0.3s, border-width 0.3s;
+  -o-transition: background-color 0.3s, width 0.3s, border-width 0.3s;
+  transition: background-color 0.3s, width 0.3s, border-width 0.3s;
+  -webkit-transition: "background-color 0.3s, width 0.3s, border-width 0.3s";
+  -o-transition: "background-color 0.3s, width 0.3s, border-width 0.3s";
+  transition: "background-color 0.3s, width 0.3s, border-width 0.3s";
+}
+#product-pages .main-section#product-detail .progress-button.success svg.progress-circle {
+  stroke: #1ECD97;
+  opacity: 1;
+  -webkit-animation-play-state: paused;
+  /* Chrome, Safari, Opera */
+  animation-play-state: paused;
+  stroke-dashoffset: 0;
+}
+#product-pages .main-section#product-detail .progress-button.success svg.check {
+  opacity: 1;
+  -moz-animation: zoom-jump 0.4s 0.7s 1 ease-out;
+  -ms-animation: zoom-jump 0.4s 0.7s 1 ease-out;
+  -webkit-animation: zoom-jump 0.4s 0.7s 1 ease-out;
+  -o-animation: zoom-jump 0.4s 0.7s 1 ease-out;
+  animation: zoom-jump 0.4s 0.7s 1 ease-out;
+}
+#product-pages .main-section#product-detail .progress-button.success svg.check .short,
+#product-pages .main-section#product-detail .progress-button.success svg.check .long {
+  stroke: #1ECD97;
+  stroke-dashoffset: 0;
+}
+#product-pages .main-section#product-detail .progress-button.error button {
+  border-color: #FB797E;
+  background-color: #FB797E;
 }
 #product-pages .main-section#product-detail .product-detail-wrap {
   overflow: scroll;
@@ -3809,5 +4035,152 @@ Slick slider arrow
 @media (max-width: 510px) {
   #product-pages .main-section#product-detail .file-download-list .one-file {
     width: 50%;
+  }
+}
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  50% {
+    -moz-transform: rotate(180deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spin-end {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+@-webkit-keyframes spin-end {
+  from {
+    stroke-dashoffset: 204px;
+  }
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+@keyframes spin-end {
+  from {
+    stroke-dashoffset: 204px;
+  }
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+@-moz-keyframes check {
+  from {
+    stroke-dashoffset: 204px;
+  }
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+@-webkit-keyframes check {
+  from {
+    stroke-dashoffset: 204px;
+  }
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+@keyframes check {
+  from {
+    stroke-dashoffset: 204px;
+  }
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+@-moz-keyframes zoom-jump {
+  0% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes zoom-jump {
+  0% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes zoom-jump {
+  0% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
   }
 }

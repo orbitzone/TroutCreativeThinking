@@ -13,9 +13,176 @@
 	img{
 		max-width: 100%;
 	}
+	.btn{
+		font-size: 15px;
+		position: relative;
+		z-index: 1;
+		overflow: hidden;
+		border: 2px solid @main-blue;
+		.transition(0.2s all ease-out);
+		&:before{
+			content: " ";
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background: white;
+			z-index: -1;
+			.transform(translateX(-100%));
+			.transition(0.2s all ease-out);
+		}
+		&:hover{
+			color: @main-blue;
+			&:before{
+				.transform(translateX(0));
+			}
+		}
+	}
 	position: relative;
 	overflow: hidden;
 	margin-bottom: -35px;
+	.progress-button {
+		position: relative;
+		margin: 0 auto; 
+		text-align: center;
+		button{
+			width: 100%;
+			height: 56px;
+			.transition("all 0.3s");
+			&:focus{
+				outline: none;
+			}
+		}
+		span{
+			.transition(opacity 0.3s 0.1s);
+		}
+		svg{
+			position: absolute;
+			top: 0;
+			left: 50%;
+			z-index: 1;
+			margin-left: -28px;
+			pointer-events: none;
+			opacity: 0;
+			path{
+				opacity: 0;
+				fill: none;
+			}
+			&.progress-circle{
+				width: 56px;
+				height: 56px;
+				stroke: @main-blue;
+				stroke-width: 5;
+				stroke-dasharray: 204px;
+				stroke-dashoffset: 204px;				
+			}
+			&.check{
+				width: 30px;
+				height: 23px;
+				top: 18px;
+				margin-left: -15px;
+				path{
+					stroke: #1ECD97;
+				}
+				.short{
+					stroke-dasharray: 22px;
+					stroke-dashoffset: 24px;
+					.transition(stroke-dashoffset .2s 0.3s ease-out);
+				}
+				.long{
+					stroke-dasharray: 55px;
+					stroke-dashoffset: 56px;
+					.transition(stroke-dashoffset .1s .5s ease-out);
+				}
+			}
+			&.cross{
+				opacity: 0;
+			}
+			&.cross{
+				opacity: 0;	
+			}
+			&.check,
+			&.cross{
+				path{
+					stroke: #fff;
+					stroke-linecap: round;
+					stroke-width: 4;
+					.transition(opacity 0.1s);
+				}
+			}
+		}
+		&.loading{
+			border-width: 5px;
+			border-color: #ddd;
+			background-color: transparent;
+			color: #fff;
+			button{
+				width: 56px;
+				border-width: 5px;
+				border-color: #ddd;
+				.border-radius(50%);
+				background-color: transparent;
+				color: white;
+			}
+			span{
+				.transition(opacity 0.15s);
+			}
+			svg{
+				&.progress-circle{
+					opacity: 1;
+					.animation(spin 1s 0.3s infinite linear both;);
+					stroke-dashoffset: 150px;
+					.transition(stroke-dashoffset 0.3s);
+				}
+			}			
+		}
+		&.loading,
+		&.success,
+		&.error{
+			span{
+				opacity: 0; /* keep it hidden in all states */
+			}
+			svg{
+				path{
+					opacity: 1;
+					//.transition(stroke-dashoffset 0.8s 0.2s);
+				}
+			}
+		}
+		&.success,
+		&.error{
+			button{
+				.transition("background-color 0.3s, width 0.3s, border-width 0.3s");
+			}						
+		}
+		&.success{
+			svg{
+				&.progress-circle{
+					stroke: #1ECD97;
+					opacity: 1;
+			  	-webkit-animation-play-state: paused; /* Chrome, Safari, Opera */
+    			animation-play-state: paused;
+					stroke-dashoffset: 0;
+				}
+				&.check{
+					opacity: 1;
+					.animation(zoom-jump 0.4s .7s 1 ease-out);
+					.short,
+					.long{
+						stroke: #1ECD97;
+						stroke-dashoffset: 0;
+					}
+				}
+			}	
+		}
+		&.error{
+			button{
+				border-color: #FB797E;
+				background-color: #FB797E;
+			}
+		}
+	}
 	.product-detail-wrap{
 		overflow: scroll; 
 		-webkit-overflow-scrolling : touch;
@@ -614,6 +781,60 @@
 		}
 	}
 }
+	@-moz-keyframes spin {
+	    0% { -moz-transform: rotate(0deg);}
+	    50% { -moz-transform: rotate(180deg);}
+	    100% { -moz-transform: rotate(360deg); }
+	}
+	@-webkit-keyframes spin {
+	    0% {  -webkit-transform: rotate(0deg); }
+	    50% {  -webkit-transform: rotate(180deg); }
+	    100% {  -webkit-transform: rotate(360deg); }
+	}
+	@keyframes spin {
+	    0% { transform:rotate(0deg);}
+	    50% { transform:rotate(180deg);}
+	    100% { transform:rotate(360deg);}
+	}
+	@-moz-keyframes spin-end {
+		from {  }
+	    to { stroke-dashoffset: 0px;  }	    
+	}
+	@-webkit-keyframes spin-end {
+		from { stroke-dashoffset: 204px;  }
+	    to { stroke-dashoffset: 0px;  }	    
+	}
+	@keyframes spin-end {
+		from { stroke-dashoffset: 204px;  }
+	    to { stroke-dashoffset: 0px;  }	
+	}
+	@-moz-keyframes check{
+		from { stroke-dashoffset: 204px;  }
+    to { stroke-dashoffset: 0px;  }	    
+	}
+	@-webkit-keyframes check{
+		from { stroke-dashoffset: 204px;  }
+	  to { stroke-dashoffset: 0px;  }	    
+	}
+	@keyframes check{
+		from { stroke-dashoffset: 204px;  }
+	  to { stroke-dashoffset: 0px;  }	
+	}
+	@-moz-keyframes zoom-jump{
+		0% { .transform(scale(1)); }
+    50% { .transform(scale(1.2));  }	    
+    100% { .transform(scale(1));  }	    
+	}
+	@-webkit-keyframes zoom-jump{
+	0% { .transform(scale(1)); }
+	    50% { .transform(scale(1.2));  }	    
+	    100% { .transform(scale(1));  }	    
+	}
+	@keyframes zoom-jump{
+		0% { .transform(scale(1)); }
+    50% { .transform(scale(1.2));  }	    
+    100% { .transform(scale(1));  }	    
+	}
 }
 
 

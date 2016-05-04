@@ -140,7 +140,30 @@
 									</div>									
 								</div>
 								<div class="product-addbutton">
-									<button type="button" class="btn blue-button full-width">add to list</button>
+									<div class="progress-button">
+										<!-- button with text -->
+										<button type="button" class="btn blue-button full-width">add to list</button>
+
+										<!-- svg circle for progress indication -->
+										<svg class="progress-circle" width="70" height="70"  viewBox="0 0 70 70">
+											<path d="m35,2.5c17.955803,0 32.5,14.544199 32.5,32.5c0,17.955803 -14.544197,32.5 -32.5,32.5c-17.955803,0 -32.5,-14.544197 -32.5,-32.5c0,-17.955801 14.544197,-32.5 32.5,-32.5z"/>
+										</svg>
+
+										<!-- checkmark to show on success -->
+										<svg class="check" width="51.4px" height="38.5px" viewBox="0 0 51.4 38.5">
+											<path class="short" fill="none" stroke="#010202" stroke-width="2" stroke-miterlimit="10" d="M0.7,23.7l14.1,14.1"/>
+											<path class="long" fill="none" stroke="#010202" stroke-width="2" stroke-miterlimit="10" d="M13.5,37.8L50.7,0.7"/>
+										</svg>
+
+										<!-- cross to show on error -->
+										<svg class="cross" width="70" height="70">
+											<path d="m35,35l-9.3,-9.3"/>
+											<path d="m35,35l9.3,9.3"/>
+											<path d="m35,35l-9.3,9.3"/>
+											<path d="m35,35l9.3,-9.3"/>
+										</svg>
+
+									</div><!-- /progress-button -->									
 								</div>
 								<div class="product-icons">
 									<div class="row">

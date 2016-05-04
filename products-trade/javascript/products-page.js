@@ -583,10 +583,12 @@ var product_pages = {
         }
         
         $(window).on('scroll', function(){
-            if($(window).scrollTop() > $('.main-section').offset().top){
+            if($(window).scrollTop() > $('.main-section').offset().top && $(window).width()<768){
                 $('#shopping-cart-widget').addClass('fixed');
+                $('#product-detail').addClass('fixed');
             }else{
                 $('#shopping-cart-widget').removeClass('fixed');
+                $('#product-detail').removeClass('fixed');
             }
         });
         function preventEvents(e){
@@ -737,6 +739,38 @@ var product_pages = {
             }
           ]
         });
+        $('.product-images-slider-wrap .zoom').on('click', function(){
+            var height = $('.product-content-left').height();
+            $('.product-content-left').css({
+                height: height
+            });
+            $(".product-images-slider-wrap").addClass('hide-bx');
+            setTimeout(function(){ 
+                $('.product-content-left').addClass('lightbox');
+                setTimeout(function(){                
+                   $(".product-images-slider").slick('setPosition');
+                   setTimeout(function(){
+                        $(".product-images-slider-wrap").removeClass('hide-bx');
+                   },300);               
+                },300);
+            },100);            
+        });
+        $('.product-images-wrap').on('click', function(event){
+            if($(event.target).parents('.product-images').length == 0){
+                $(".product-images-slider-wrap").addClass('hide-bx');
+                 setTimeout(function(){ 
+                    $('.product-content-left').removeClass('lightbox');
+                
+                    setTimeout(function(){
+                        $('.product-content-left').height('');
+                       $(".product-images-slider").slick('setPosition');
+                       setTimeout(function(){
+                            $(".product-images-slider-wrap").removeClass('hide-bx');
+                        },30);               
+                    },300);
+                },100);
+            }            
+        });
         $(".product-images-slider").on('afterChange', function(event, slick, currentSlide){
             $(".product-images-slider").removeClass('animating');
             $('.product-thumbs .product-thumb').removeClass('current');
@@ -770,9 +804,39 @@ var product_pages = {
                 obj.toggleClass('loading');
                 setTimeout(function(){
                     obj.toggleClass('success');
-                     setTimeout(function(){
-                        obj.removeClass('loading success');
-                     },1600);
+                    var img = $('.product-images-slider .slick-current img').attr("src");
+                        var added = $('<div class="added-to-cart" style="background-image:url('+img+')"></div>');
+                        var top = obj.find("button").offset().top - $(window).scrollTop();
+                        var left = obj.find("button").offset().left;
+                        added.css({
+                            top: top,
+                            left: left
+                        });
+                        var finaltop = $('#shopping-cart-widget aside button').offset().top  - $(window).scrollTop() - 25;
+                        var finalleft = $('#shopping-cart-widget aside button').offset().left;
+                        /*added.animate({
+                            top: finaltop,
+                            left: finalleft
+                        },{
+                            duration: 600,
+                            complete: function(){
+                                added.addClass('added');
+                                setTimeout(function(){
+                                    added.remove();
+                                }, 500);
+                            }
+                        });*/
+                        TweenMax.to(added, 0.3, {bezier:{type:"cubic", values:[{x:0, y:0}, {x:0, y: finaltop - top}, {x: finalleft - left, y: finaltop - top}, {x: finalleft - left, y: finaltop - top }], autoRotate:["x","y","rotation", 0, true]}, scale:0.5, ease:Power1.easeInOut, onComplete: function(){ 
+                                TweenMax.to(added, 1,{ scale: 0, ease: Elastic.easeInOut, onComplete: function(){
+                                    added.remove();
+                                }});
+                            }});
+                        $('#product-detail').append(added);
+                        added.addClass('loaded');
+                         setTimeout(function(){
+                            obj.removeClass('loading success');
+                            obj.find('button').blur();                        
+                         },1600);
                 }, 1200);
             }
         });

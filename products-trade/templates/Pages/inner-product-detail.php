@@ -28,62 +28,75 @@
 				</div>
 				<div class="product-content-wrapper">
 					<div class="product-content-left">
-						<div class="product-images inner-wrap">
-							<!-- START HERO GALLERY -->
-							<!-- AND THUMBNAIL NEEDS TO BE THE SAME -->
-							<div class="product-images-slider">
-								<div class="current">
-									<img class="img-responsive" src="templates/images/product-detail/product-image1.jpg" alt="item">
+						<div class="product-images-wrap inner-wrap">
+							<div class="product-images">
+								<!-- START HERO GALLERY -->
+								<!-- AND THUMBNAIL NEEDS TO BE THE SAME -->
+								<div class="product-images-slider-wrap">
+									<div class="product-images-slider">
+										<div class="current">
+											<img class="img-responsive" src="templates/images/product-detail/product-image1.jpg" alt="item">
+										</div>
+										<div>
+											<img class="img-responsive" src="templates/images/product-detail/product-image2.jpg" alt="item">
+										</div>
+										<div>
+											<img class="img-responsive" src="templates/images/product-detail/product-image3.jpg" alt="item">
+										</div>
+										<div>
+											<img class="img-responsive" src="templates/images/product-detail/product-image4.jpg" alt="item">
+										</div>
+										<div>
+											<img class="img-responsive" src="templates/images/product-detail/product-image1.jpg" alt="item">
+										</div>
+										<div>
+											<img class="img-responsive" src="templates/images/product-detail/product-image2.jpg" alt="item">
+										</div>
+										<div>
+											<img class="img-responsive" src="templates/images/product-detail/product-image3.jpg" alt="item">
+										</div>
+										<div>
+											<img class="img-responsive" src="templates/images/product-detail/product-image4.jpg" alt="item">
+										</div>
+									</div>
+									<div class="zoom">
+										<svg width="71px" height="70px" viewBox="0 0 71 70">
+										<path d="M42.5,57.6c-15.7,0-28.5-12.9-28.5-28.8C14.1,12.9,26.8,0,42.5,0S71,12.9,71,28.8C71,44.6,58.2,57.6,42.5,57.6z M42.5,3.6
+											c-13.7,0-24.9,11.3-24.9,25.2C17.6,42.7,28.8,54,42.5,54s24.9-11.3,24.9-25.2C67.4,14.9,56.3,3.6,42.5,3.6z"/>
+										<polygon points="55.1,27.8 44.4,27.8 44.4,17 40.8,17 40.8,27.8 30.2,27.8 30.2,31.4 40.8,31.4 40.8,42.2 44.4,42.2 44.4,31.4 
+											55.1,31.4 "/>
+										<path d="M5,70l-5-5.1l15.1-15.3l5,5.1L5,70z"/>
+										</svg>
+									</div>
+								</div>							
+								<div class="product-thumbs hidden-xs">
+									<div class="product-thumb current">
+										<img class="img-responsive" src="templates/images/product-detail/product-image1.jpg" alt="item">
+									</div>
+									<div class="product-thumb">
+										<img class="img-responsive" src="templates/images/product-detail/product-image2.jpg" alt="item">
+									</div>
+									<div class="product-thumb">
+										<img class="img-responsive" src="templates/images/product-detail/product-image3.jpg" alt="item">
+									</div>
+									<div class="product-thumb">
+										<img class="img-responsive" src="templates/images/product-detail/product-image4.jpg" alt="item">
+									</div>
+									<div class="product-thumb">
+										<img class="img-responsive" src="templates/images/product-detail/product-image1.jpg" alt="item">
+									</div>
+									<div class="product-thumb">
+										<img class="img-responsive" src="templates/images/product-detail/product-image2.jpg" alt="item">
+									</div>
+									<div class="product-thumb">
+										<img class="img-responsive" src="templates/images/product-detail/product-image3.jpg" alt="item">
+									</div>
+									<div class="product-thumb">
+										<img class="img-responsive" src="templates/images/product-detail/product-image4.jpg" alt="item">
+									</div>
 								</div>
-								<div>
-									<img class="img-responsive" src="templates/images/product-detail/product-image2.jpg" alt="item">
-								</div>
-								<div>
-									<img class="img-responsive" src="templates/images/product-detail/product-image3.jpg" alt="item">
-								</div>
-								<div>
-									<img class="img-responsive" src="templates/images/product-detail/product-image4.jpg" alt="item">
-								</div>
-								<div>
-									<img class="img-responsive" src="templates/images/product-detail/product-image1.jpg" alt="item">
-								</div>
-								<div>
-									<img class="img-responsive" src="templates/images/product-detail/product-image2.jpg" alt="item">
-								</div>
-								<div>
-									<img class="img-responsive" src="templates/images/product-detail/product-image3.jpg" alt="item">
-								</div>
-								<div>
-									<img class="img-responsive" src="templates/images/product-detail/product-image4.jpg" alt="item">
-								</div>
+								<!-- END HERO GALLERY -->
 							</div>
-							<div class="product-thumbs hidden-xs">
-								<div class="product-thumb current">
-									<img class="img-responsive" src="templates/images/product-detail/product-image1.jpg" alt="item">
-								</div>
-								<div class="product-thumb">
-									<img class="img-responsive" src="templates/images/product-detail/product-image2.jpg" alt="item">
-								</div>
-								<div class="product-thumb">
-									<img class="img-responsive" src="templates/images/product-detail/product-image3.jpg" alt="item">
-								</div>
-								<div class="product-thumb">
-									<img class="img-responsive" src="templates/images/product-detail/product-image4.jpg" alt="item">
-								</div>
-								<div class="product-thumb">
-									<img class="img-responsive" src="templates/images/product-detail/product-image1.jpg" alt="item">
-								</div>
-								<div class="product-thumb">
-									<img class="img-responsive" src="templates/images/product-detail/product-image2.jpg" alt="item">
-								</div>
-								<div class="product-thumb">
-									<img class="img-responsive" src="templates/images/product-detail/product-image3.jpg" alt="item">
-								</div>
-								<div class="product-thumb">
-									<img class="img-responsive" src="templates/images/product-detail/product-image4.jpg" alt="item">
-								</div>
-							</div>
-							<!-- END HERO GALLERY -->
 						</div>
 					</div>
 					<div class="product-content-right">

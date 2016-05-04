@@ -860,6 +860,12 @@ Slick slider arrow
     padding: 0 24px;
   }
 }
+#product-pages #shopping-cart-widget.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
 #product-pages #shopping-cart-widget .close {
   position: absolute;
   top: 0;
@@ -3071,8 +3077,45 @@ Slick slider arrow
   overflow: hidden;
   margin-bottom: -35px;
 }
+#product-pages .main-section#product-detail.fixed {
+  margin-top: 44px;
+}
 #product-pages .main-section#product-detail img {
   max-width: 100%;
+}
+#product-pages .main-section#product-detail .added-to-cart {
+  position: fixed;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 2px solid #0776aa;
+  background-color: white;
+  background-size: cover;
+  -moz-transition: -moz-transform 0.3s ease-out, -webkit-transform 0.3s ease-out, -ms-transform 0.3s ease-out, transform 0.3s ease-out;
+  -ms-transition: -moz-transform 0.3s ease-out, -webkit-transform 0.3s ease-out, -ms-transform 0.3s ease-out, transform 0.3s ease-out;
+  -webkit-transition: -moz-transform 0.3s ease-out, -webkit-transform 0.3s ease-out, -ms-transform 0.3s ease-out, transform 0.3s ease-out;
+  -o-transition: -moz-transform 0.3s ease-out, -webkit-transform 0.3s ease-out, -ms-transform 0.3s ease-out, transform 0.3s ease-out;
+  transition: -moz-transform 0.3s ease-out, -webkit-transform 0.3s ease-out, -ms-transform 0.3s ease-out, transform 0.3s ease-out;
+}
+#product-pages .main-section#product-detail .added-to-cart.loaded {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+#product-pages .main-section#product-detail .added-to-cart.added {
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
 }
 #product-pages .main-section#product-detail .btn {
   font-size: 15px;
@@ -3086,35 +3129,39 @@ Slick slider arrow
   -o-transition: 0.2s all ease-out;
   transition: 0.2s all ease-out;
 }
-#product-pages .main-section#product-detail .btn:before {
-  content: " ";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: white;
-  z-index: -1;
-  -webkit-transform: translateX(-100%);
-  -moz-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
-  -o-transform: translateX(-100%);
-  transform: translateX(-100%);
-  -moz-transition: 0.2s all ease-out;
-  -ms-transition: 0.2s all ease-out;
-  -webkit-transition: 0.2s all ease-out;
-  -o-transition: 0.2s all ease-out;
-  transition: 0.2s all ease-out;
+@media (min-width: 768px) {
+  #product-pages .main-section#product-detail .btn:before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: -1;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -moz-transition: 0.2s all ease-out;
+    -ms-transition: 0.2s all ease-out;
+    -webkit-transition: 0.2s all ease-out;
+    -o-transition: 0.2s all ease-out;
+    transition: 0.2s all ease-out;
+  }
 }
-#product-pages .main-section#product-detail .btn:hover {
-  color: #0776aa;
-}
-#product-pages .main-section#product-detail .btn:hover:before {
-  -webkit-transform: translateX(0);
-  -moz-transform: translateX(0);
-  -ms-transform: translateX(0);
-  -o-transform: translateX(0);
-  transform: translateX(0);
+@media (min-width: 768px) {
+  #product-pages .main-section#product-detail .btn:hover {
+    color: #0776aa;
+  }
+  #product-pages .main-section#product-detail .btn:hover:before {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
 }
 #product-pages .main-section#product-detail .progress-button {
   position: relative;
@@ -3124,6 +3171,7 @@ Slick slider arrow
 #product-pages .main-section#product-detail .progress-button button {
   width: 100%;
   height: 56px;
+  margin: 0;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
   -webkit-transition: all 0.3s;
@@ -3211,6 +3259,7 @@ Slick slider arrow
 }
 #product-pages .main-section#product-detail .progress-button.loading button {
   width: 56px;
+  height: 56px;
   border-width: 2px;
   border-color: #ddd;
   -webkit-border-radius: 50%;
@@ -3230,18 +3279,18 @@ Slick slider arrow
   transition: opacity 0.15s;
 }
 #product-pages .main-section#product-detail .progress-button.loading svg.progress-circle {
+  -moz-animation: spin 1s 0.35s infinite linear both;
+  -ms-animation: spin 1s 0.35s infinite linear both;
+  -webkit-animation: spin 1s 0.35s infinite linear both;
+  -o-animation: spin 1s 0.35s infinite linear both;
+  animation: spin 1s 0.35s infinite linear both;
   opacity: 1;
-  -moz-animation: spin 1s 0.3s infinite linear both;
-  -ms-animation: spin 1s 0.3s infinite linear both;
-  -webkit-animation: spin 1s 0.3s infinite linear both;
-  -o-animation: spin 1s 0.3s infinite linear both;
-  animation: spin 1s 0.3s infinite linear both;
   stroke-dashoffset: 150px;
-  -moz-transition: stroke-dashoffset 0.3s;
-  -ms-transition: stroke-dashoffset 0.3s;
-  -webkit-transition: stroke-dashoffset 0.3s;
-  -o-transition: stroke-dashoffset 0.3s;
-  transition: stroke-dashoffset 0.3s;
+  -moz-transition: stroke-dashoffset 0.3s 0.35s;
+  -ms-transition: stroke-dashoffset 0.3s 0.35s;
+  -webkit-transition: stroke-dashoffset 0.3s 0.35s;
+  -o-transition: stroke-dashoffset 0.3s 0.35s;
+  transition: stroke-dashoffset 0.3s 0.35s;
 }
 #product-pages .main-section#product-detail .progress-button.loading span,
 #product-pages .main-section#product-detail .progress-button.success span,
@@ -3254,18 +3303,15 @@ Slick slider arrow
 #product-pages .main-section#product-detail .progress-button.error svg path {
   opacity: 1;
 }
-#product-pages .main-section#product-detail .progress-button.success button,
-#product-pages .main-section#product-detail .progress-button.error button {
-  -webkit-transition: background-color 0.3s, width 0.3s, border-width 0.3s;
-  -moz-transition: background-color 0.3s, width 0.3s, border-width 0.3s;
-  -ms-transition: background-color 0.3s, width 0.3s, border-width 0.3s;
-  -o-transition: background-color 0.3s, width 0.3s, border-width 0.3s;
-  transition: background-color 0.3s, width 0.3s, border-width 0.3s;
-  -webkit-transition: "background-color 0.3s, width 0.3s, border-width 0.3s";
-  -o-transition: "background-color 0.3s, width 0.3s, border-width 0.3s";
-  transition: "background-color 0.3s, width 0.3s, border-width 0.3s";
+#product-pages .main-section#product-detail .progress-button.success button {
+  border-color: white;
 }
 #product-pages .main-section#product-detail .progress-button.success svg.progress-circle {
+  -moz-transition: stroke-dashoffset 0.3s;
+  -ms-transition: stroke-dashoffset 0.3s;
+  -webkit-transition: stroke-dashoffset 0.3s;
+  -o-transition: stroke-dashoffset 0.3s;
+  transition: stroke-dashoffset 0.3s;
   stroke: #1ECD97;
   opacity: 1;
   -webkit-animation-play-state: paused;
@@ -3416,6 +3462,46 @@ Slick slider arrow
     float: left;
   }
 }
+#product-pages .main-section#product-detail .product-content-wrapper .product-content-left .product-images-wrap {
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+#product-pages .main-section#product-detail .product-content-wrapper .product-content-left.lightbox:before {
+  content: " ";
+  display: block;
+  position: relative;
+}
+#product-pages .main-section#product-detail .product-content-wrapper .product-content-left.lightbox .product-images-wrap {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  padding-top: 40px;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+#product-pages .main-section#product-detail .product-content-wrapper .product-content-left.lightbox .product-images-wrap .product-images {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+}
+#product-pages .main-section#product-detail .product-content-wrapper .product-content-left.lightbox .product-images-wrap .product-images .product-thumbs {
+  padding: 0 20px;
+  text-align: center;
+}
+#product-pages .main-section#product-detail .product-content-wrapper .product-content-left.lightbox .product-images-wrap .product-images .product-thumbs .product-thumb {
+  float: none;
+  width: auto;
+  display: inline-block;
+  width: 55px;
+  padding: 0;
+}
 #product-pages .main-section#product-detail .product-content-wrapper .product-content-right {
   /*@media (min-width: @screen-md){
 				width: 44.70%;
@@ -3435,6 +3521,35 @@ Slick slider arrow
   #product-pages .main-section#product-detail .product-images .slick-dots {
     padding-bottom: 0;
     border: none;
+  }
+}
+#product-pages .main-section#product-detail .product-images .product-images-slider-wrap {
+  position: relative;
+  -moz-transition: opacity 0.1s;
+  -ms-transition: opacity 0.1s;
+  -webkit-transition: opacity 0.1s;
+  -o-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+}
+#product-pages .main-section#product-detail .product-images .product-images-slider-wrap.hide-bx {
+  opacity: 0;
+}
+#product-pages .main-section#product-detail .product-images .product-images-slider-wrap .zoom {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  cursor: pointer;
+  display: none;
+}
+#product-pages .main-section#product-detail .product-images .product-images-slider-wrap .zoom svg {
+  display: block;
+  width: 36px;
+  height: 35.48px;
+  fill: grey;
+}
+@media (min-width: 768px) {
+  #product-pages .main-section#product-detail .product-images .product-images-slider-wrap .zoom {
+    display: block;
   }
 }
 @media (min-width: 768px) {
@@ -3870,6 +3985,7 @@ Slick slider arrow
 #product-pages .main-section#product-detail .section .file-download-area .download-header {
   background-color: #f4f4f4;
   padding: 15px;
+  cursor: pointer;
 }
 #product-pages .main-section#product-detail .section .file-download-area .download-header h4.download-heading {
   padding: 0;

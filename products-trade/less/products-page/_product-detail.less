@@ -10,8 +10,28 @@
 @share-icon-color: #7f7f7f;
 @arrow-down-color: #a6a6a6;
 .main-section#product-detail{
+	&.fixed{
+		margin-top: 44px;
+	}
 	img{
 		max-width: 100%;
+	}
+	.added-to-cart{
+		position: fixed;
+		z-index: 10;
+		width: 50px;
+		height: 50px;
+		.border-radius(50%);
+		border: 2px solid @main-blue;
+		background-color: white;
+		background-size: cover;
+		.transition(-moz-transform 0.3s ease-out,-webkit-transform 0.3s ease-out,-ms-transform 0.3s ease-out,transform 0.3s ease-out;);
+		&.loaded{
+			.transform(scale(1));
+		}
+		&.added{
+			.transform(scale(0));
+		}		
 	}
 	.btn{
 		font-size: 15px;
@@ -21,6 +41,7 @@
 		border: 2px solid @main-blue;
 		.transition(0.2s all ease-out);
 		&:before{
+			@media (min-width: @screen-sm){
 			content: " ";
 			position: absolute;
 			width: 100%;
@@ -32,10 +53,13 @@
 			.transform(translateX(-100%));
 			.transition(0.2s all ease-out);
 		}
+		}
 		&:hover{
-			color: @main-blue;
-			&:before{
-				.transform(translateX(0));
+			@media (min-width: @screen-sm){
+				color: @main-blue;
+				&:before{
+					.transform(translateX(0));
+				}
 			}
 		}
 	}
@@ -49,6 +73,7 @@
 		button{
 			width: 100%;
 			height: 56px;
+			margin: 0;
 			.transition(all 0.3s;);
 			&:focus{
 				outline: none;
@@ -117,6 +142,7 @@
 			color: #fff;
 			button{
 				width: 56px;
+				height: 56px;
 				border-width: 2px;
 				border-color: #ddd;
 				.border-radius(50%);
@@ -128,10 +154,10 @@
 			}
 			svg{
 				&.progress-circle{
+					.animation(spin 1s 0.35s infinite linear both;);
 					opacity: 1;
-					.animation(spin 1s 0.3s infinite linear both;);
 					stroke-dashoffset: 150px;
-					.transition(stroke-dashoffset 0.3s;);
+					.transition(stroke-dashoffset 0.3s 0.35s;);
 				}
 			}			
 		}
@@ -150,13 +176,15 @@
 		}
 		&.success,
 		&.error{
-			button{
-				.transition("background-color 0.3s, width 0.3s, border-width 0.3s");
-			}						
+									
 		}
 		&.success{
+			button{
+				border-color: white;
+			}
 			svg{
 				&.progress-circle{
+					.transition(stroke-dashoffset 0.3s;);
 					stroke: #1ECD97;
 					opacity: 1;
 			  	-webkit-animation-play-state: paused; /* Chrome, Safari, Opera */
@@ -278,6 +306,46 @@
 				width: 55%;
 				float: left;
 			}
+			.product-images-wrap{
+				.transition(all .3s ease-out );
+			}
+			&.lightbox{
+				&:before{
+					content: " ";
+					display: block;
+					position: relative;
+				}
+				.product-images-wrap{
+					
+					position: fixed;
+					z-index: 10;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background: rgba(0,0,0,0.8);
+					padding-top: 40px;
+					overflow: scroll; 
+					-webkit-overflow-scrolling : touch;
+
+					.product-images{
+						max-width: 1200px;
+						margin: 0 auto;
+						background-color: white;
+						.product-thumbs{
+							padding: 0 20px;
+							text-align: center;
+							.product-thumb{
+								float: none;
+								width: auto;
+								display: inline-block;
+								width: 55px;
+								padding: 0;
+							}
+						}
+					}
+				}
+			}
 		}
 		.product-content-right{
 			@media (min-width: @screen-sm){
@@ -298,10 +366,33 @@
 				border: none;
 			}
 		}//END slick-dots
+		.product-images-slider-wrap{
+			position: relative;
+			.transition(opacity .1s);
+			&.hide-bx{
+				opacity: 0;
+			}
+			.zoom{
+				position: absolute;
+				bottom: 25px;
+				right: 25px;
+				cursor: pointer;
+				svg{
+					display: block;
+					width: 36px;
+					height: 35.48px;
+					fill: grey;
+				}
+				display: none;
+				@media (min-width: @screen-sm){
+					display: block;
+				}
+			}
+		}
 		.product-images-slider{
 			@media (min-width: @screen-sm){
 				border: solid 1px @border-light-grey;
-			}
+			}			
 		}
 		img{
 			max-height: calc(~"100vh - 40px");
@@ -632,6 +723,7 @@
 			.download-header{
 				background-color:@bg-section-header-grey;
 				padding: 15px;
+				cursor: pointer;
 				h4.download-heading{
 					padding:0;
 					margin:0;

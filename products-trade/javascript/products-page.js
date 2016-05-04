@@ -618,6 +618,8 @@ var product_pages = {
             });*/
             $('#shopping-cart-widget').toggleClass('open');
             if($('#shopping-cart-widget').hasClass('open')){
+                TweenMax.to($('#shopping-cart-widget'),0.5,{right: 0});
+                TweenMax.to($('#shopping-cart-widget .shopping-cart-content'),0.5,{x: 0, opacity: 1});
                 $('.product-detail-wrap, aside').addClass('disable-scrolling');
                /* $('#shopping-cart-widget aside button').css({
                     'position': 'absolute',
@@ -626,6 +628,12 @@ var product_pages = {
                 $('html,body').addClass('overflow-hidden');                
               //  $('body').on('scroll mousedown touchdown mousemove click touchstop touchstart touchmove', preventEvents); 
             }else{
+                var right = -535;
+                if($(window).width()> 1199){
+                    right = -502;
+                }
+                TweenMax.to($('#shopping-cart-widget'),0.5,{right: right});
+                TweenMax.to($('#shopping-cart-widget .shopping-cart-content'),0.5,{x: 100, opacity: 0});
                 $('.product-detail-wrap, aside').removeClass('disable-scrolling');
                 $('html, body').removeClass('overflow-hidden');    
                 //$('body').off('scroll mousedown touchdown mousemove click touchstop touchstart touchmove', preventEvents); 
@@ -850,7 +858,7 @@ var product_pages = {
         // SECTION EXPAND AND COLLAPES
         // The name for (.action-expand-button)"data-expandbutton" and (.expand-section)"data-expandsection" needs to be the same
         //
-        $(".action-expand-button").on('click',function(e){
+        $(".action-expand-button").on('click'          ,function(e){
             var thisobject = $(this);
             var thisname = thisobject.data("expandbutton");
             var expandsection = $(".expand-section[data-expandsection='" + thisname + "']");

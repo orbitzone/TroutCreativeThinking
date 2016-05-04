@@ -3124,14 +3124,11 @@ Slick slider arrow
 #product-pages .main-section#product-detail .progress-button button {
   width: 100%;
   height: 56px;
-  -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  -webkit-transition: "all 0.3s";
-  -o-transition: "all 0.3s";
-  transition: "all 0.3s";
 }
 #product-pages .main-section#product-detail .progress-button button:focus {
   outline: none;
@@ -3160,7 +3157,7 @@ Slick slider arrow
   width: 56px;
   height: 56px;
   stroke: #0776aa;
-  stroke-width: 5;
+  stroke-width: 2;
   stroke-dasharray: 204px;
   stroke-dashoffset: 204px;
 }
@@ -3200,8 +3197,6 @@ Slick slider arrow
 #product-pages .main-section#product-detail .progress-button svg.check path,
 #product-pages .main-section#product-detail .progress-button svg.cross path {
   stroke: #fff;
-  stroke-linecap: round;
-  stroke-width: 4;
   -moz-transition: opacity 0.1s;
   -ms-transition: opacity 0.1s;
   -webkit-transition: opacity 0.1s;
@@ -3216,7 +3211,7 @@ Slick slider arrow
 }
 #product-pages .main-section#product-detail .progress-button.loading button {
   width: 56px;
-  border-width: 5px;
+  border-width: 2px;
   border-color: #ddd;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;

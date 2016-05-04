@@ -765,13 +765,16 @@ var product_pages = {
         });
         $('.product-addbutton button').on('click', function(){
             var obj = $(this).parent();
-            obj.toggleClass('loading');
-            setTimeout(function(){
-                obj.toggleClass('success');
-                 setTimeout(function(){
-                    obj.removeClass('loading success');
-                 },1600);
-            }, 1200);
+            if(!obj.hasClass('loading')){
+            
+                obj.toggleClass('loading');
+                setTimeout(function(){
+                    obj.toggleClass('success');
+                     setTimeout(function(){
+                        obj.removeClass('loading success');
+                     },1600);
+                }, 1200);
+            }
         });
         //
         // INITIALISE FILE LIST AS SLIDER OF MOBILE

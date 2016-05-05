@@ -18,6 +18,60 @@ var isMobile = {
         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
     }
 };
+
+
+/* Youtube API code for channel page */
+// 1. This code gets GET parameters for us (in case we wish a
+// specific video to autoplay.
+var $_GET = {};
+
+document.location.search.replace(/\??(?:([^=]+)=([^&]*)&?)/g, function () {
+    function decode(s) {
+        return decodeURIComponent(s.split("+").join(" "));
+    }
+
+    $_GET[decode(arguments[1])] = decode(arguments[2]);
+});
+
+// 2. This code loads the IFrame Player API code asynchronously.
+var tag = document.createElement('script');
+
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+// 3. This function creates an <iframe> (and YouTube player)
+//    after the API code downloads.
+var player;
+function onYouTubeIframeAPIReady() {
+    playerDivID = 'video-lightbox-container';
+    $playerDiv = $('#'+playerDivID);
+    player = new YT.Player(playerDivID, {
+        height: '500',
+        width: '640',
+        videoId: $playerDiv.attr('data-video-id'),
+        playerVars: {
+            'showinfo': 0,
+            'rel': 0,
+            'controls': 1,
+            'modestbranding': 1,
+            'color': 'white',
+            'theme': 'light',
+            'autohide': 1,
+            'wmode':'opaque'
+        },
+        events: {
+            'onReady': onPlayerReady
+        }
+    });
+}
+
+// 4. The API will call this function when the video player is ready.
+function onPlayerReady(event) {
+    
+}
+
+
 var deviceMobile = isMobile.any();
 var product_pages = {
     init: function() {
@@ -731,19 +785,28 @@ var product_pages = {
             $('html').addClass('mobile');
         }
         //ADD Slider lightbox
-        var lightbox = $('<div class="lightbox slider-lightbox"><div class="lightbox-actions"><button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="67.5px" height="67.5px" viewBox="0 0 67.5 67.5"><path d="M64.8,67.5c-0.7,0-1.4-0.3-1.9-0.8L0.8,4.6c-1.1-1.1-1.1-2.8,0-3.9c1.1-1.1,2.8-1.1,3.9,0l62.1,62.1c1.1,1.1,1.1,2.8,0,3.9C66.2,67.2,65.5,67.5,64.8,67.5z"/><path d="M2.7,67.5c-0.7,0-1.4-0.3-1.9-0.8c-1.1-1.1-1.1-2.8,0-3.9L62.9,0.8c1.1-1.1,2.8-1.1,3.9,0c1.1,1.1,1.1,2.8,0,3.9L4.6,66.7C4.1,67.2,3.4,67.5,2.7,67.5z"/></svg></button></div></div>');
-        var slider = $('.product-images-wrap').clone();
-        lightbox.append(slider);
-        $('#product-detail').append(lightbox);
+        var slider = $('.product-images').clone();
+        $('#slider-lightbox .lightbox-content').append(slider);
+        
+        $('.lightbox-video').on('click', function(){
+            var video = $(this).data('video');
+            player.loadVideoById(
+                {'videoId': video,
+               'suggestedQuality': 'large'
+            });
+            $('#video-lightbox').addClass('show');
+            return false;
+        });
         //
         // INIITALISE HERO GALLERY SLIDER
         //
-        $(".product-images-slider").each(function(){
-            var $this = $(this);
-            $this.slick({
+        $(".product-images-wrap").each(function(){
+            var $mainSlider = $(this).find('.product-images-slider');
+            $mainSlider.slick({
               infinite: true,
               slidesToShow: 1,
               slidesToScroll: 1,
+              asNavFor: '.product-images-wrap .product-images .product-thumbs-slider',
               prevArrow: '<button type="button" class="slick-prev"><svg viewBox="0 0 26 46" id="shape-arrow-left"><title>arrow-left</title> <g id="arrow-left-arrow-left"> <path d="M24.4,0.6C24.1,0.2,23.5,0,23,0c-0.5,0-1,0.2-1.4,0.6l-21,21c-0.8,0.8-0.8,2.1,0,2.8l21,21c0.8,0.8,2.1,0.8,2.8,0c0.8-0.8,0.8-2.1,0-2.8L4.9,23L24.4,3.4C25.2,2.6,25.2,1.4,24.4,0.6z"/> </g> </svg></button>',
               nextArrow: '<button type="button" class="slick-next"><svg viewBox="0 0 26 46" id="shape-arrow-right"><title>arrow-right</title> <g id="arrow-right-arrow-right"> <path d="M1.6,45.4C2,45.8,2.5,46,3,46c0.5,0,1-0.2,1.4-0.6l21-21c0.8-0.8,0.8-2.1,0-2.8l-21-21c-0.8-0.8-2.1-0.8-2.8,0c-0.8,0.8-0.8,2.1,0,2.8L21.2,23L1.6,42.6C0.8,43.4,0.8,44.7,1.6,45.4z"/> </g> </svg></button>',
               responsive: [
@@ -758,45 +821,97 @@ var product_pages = {
                 }
               ]
             });
-            $this.on('afterChange', function(event, slick, currentSlide){
-                if($('.product-content-left .product-images-slider').hasClass('animating')){
-                    console.log(currentSlide);
-                    $('.product-thumbs .product-thumb').removeClass('current');
-                    $('.product-content-left .product-thumbs .product-thumb:eq('+currentSlide+')').addClass('current');
-                    $('.slider-lightbox .product-thumbs .product-thumb:eq('+currentSlide+')').addClass('current');
-                    $(".product-content-left .product-images-slider").removeClass('animating');
+            $mainSlider.on('afterChange', function(event, slick, currentSlide){
+                $('.slider-lightbox .product-images-slider').slick('slickGoTo',currentSlide);
+            });
+            $mainSlider.on('beforeChange', function(){
+                
+            });
+            var $thumbsSlider = $(this).find('.product-thumbs-slider');
+            $thumbsSlider.slick({
+              infinite: true,
+              slidesToShow: 4,
+              slidesToScroll: 1,
+              prevArrow: '<button type="button" class="slick-prev"><svg viewBox="0 0 26 46" id="shape-arrow-left"><title>arrow-left</title> <g id="arrow-left-arrow-left"> <path d="M24.4,0.6C24.1,0.2,23.5,0,23,0c-0.5,0-1,0.2-1.4,0.6l-21,21c-0.8,0.8-0.8,2.1,0,2.8l21,21c0.8,0.8,2.1,0.8,2.8,0c0.8-0.8,0.8-2.1,0-2.8L4.9,23L24.4,3.4C25.2,2.6,25.2,1.4,24.4,0.6z"/> </g> </svg></button>',
+              nextArrow: '<button type="button" class="slick-next"><svg viewBox="0 0 26 46" id="shape-arrow-right"><title>arrow-right</title> <g id="arrow-right-arrow-right"> <path d="M1.6,45.4C2,45.8,2.5,46,3,46c0.5,0,1-0.2,1.4-0.6l21-21c0.8-0.8,0.8-2.1,0-2.8l-21-21c-0.8-0.8-2.1-0.8-2.8,0c-0.8,0.8-0.8,2.1,0,2.8L21.2,23L1.6,42.6C0.8,43.4,0.8,44.7,1.6,45.4z"/> </g> </svg></button>',
+              dots: false,
+              arrows: true,
+              asNavFor: '.product-images-wrap .product-images .product-images-slider',
+              centerMode: true,
+              focusOnSelect: true,
+              responsive: [
+                {
+                  breakpoint: 768,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: false,
+                    arrows: true
+                  }
                 }
-            });
-            $this.on('beforeChange', function(){
-                $(".product-content-left .product-images-slider").addClass('animating');
-            });
-            
+              ]
+            })
         });
+        $(".slider-lightbox").each(function(){
+            var $mainSlider = $(this).find('.product-images-slider');
+            $mainSlider.slick({
+              infinite: true,
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              asNavFor: '.slider-lightbox .product-images .product-thumbs-slider',
+              prevArrow: '<button type="button" class="slick-prev"><svg viewBox="0 0 26 46" id="shape-arrow-left"><title>arrow-left</title> <g id="arrow-left-arrow-left"> <path d="M24.4,0.6C24.1,0.2,23.5,0,23,0c-0.5,0-1,0.2-1.4,0.6l-21,21c-0.8,0.8-0.8,2.1,0,2.8l21,21c0.8,0.8,2.1,0.8,2.8,0c0.8-0.8,0.8-2.1,0-2.8L4.9,23L24.4,3.4C25.2,2.6,25.2,1.4,24.4,0.6z"/> </g> </svg></button>',
+              nextArrow: '<button type="button" class="slick-next"><svg viewBox="0 0 26 46" id="shape-arrow-right"><title>arrow-right</title> <g id="arrow-right-arrow-right"> <path d="M1.6,45.4C2,45.8,2.5,46,3,46c0.5,0,1-0.2,1.4-0.6l21-21c0.8-0.8,0.8-2.1,0-2.8l-21-21c-0.8-0.8-2.1-0.8-2.8,0c-0.8,0.8-0.8,2.1,0,2.8L21.2,23L1.6,42.6C0.8,43.4,0.8,44.7,1.6,45.4z"/> </g> </svg></button>',
+              responsive: [
+                {
+                  breakpoint: 768,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true,
+                    arrows: false
+                  }
+                }
+              ]
+            });
+            $mainSlider.on('afterChange', function(event, slick, currentSlide){
+                $('.product-images-wrap .product-images-slider').slick('slickGoTo',currentSlide);
+            });
+            $mainSlider.on('beforeChange', function(){
+                
+            });
+            var $thumbsSlider = $(this).find('.product-thumbs-slider');
+            $thumbsSlider.slick({
+              infinite: true,
+              slidesToShow: 4,
+              slidesToScroll: 1,
+              prevArrow: '<button type="button" class="slick-prev"><svg viewBox="0 0 26 46" id="shape-arrow-left"><title>arrow-left</title> <g id="arrow-left-arrow-left"> <path d="M24.4,0.6C24.1,0.2,23.5,0,23,0c-0.5,0-1,0.2-1.4,0.6l-21,21c-0.8,0.8-0.8,2.1,0,2.8l21,21c0.8,0.8,2.1,0.8,2.8,0c0.8-0.8,0.8-2.1,0-2.8L4.9,23L24.4,3.4C25.2,2.6,25.2,1.4,24.4,0.6z"/> </g> </svg></button>',
+              nextArrow: '<button type="button" class="slick-next"><svg viewBox="0 0 26 46" id="shape-arrow-right"><title>arrow-right</title> <g id="arrow-right-arrow-right"> <path d="M1.6,45.4C2,45.8,2.5,46,3,46c0.5,0,1-0.2,1.4-0.6l21-21c0.8-0.8,0.8-2.1,0-2.8l-21-21c-0.8-0.8-2.1-0.8-2.8,0c-0.8,0.8-0.8,2.1,0,2.8L21.2,23L1.6,42.6C0.8,43.4,0.8,44.7,1.6,45.4z"/> </g> </svg></button>',
+              dots: false,
+              arrows: true,
+              asNavFor: '.slider-lightbox .product-images .product-images-slider',
+              centerMode: true,
+              focusOnSelect: true,
+              responsive: [
+                {
+                  breakpoint: 768,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: false,
+                    arrows: true
+                  }
+                }
+              ]
+            })
+        });        
         $('.product-images-slider-wrap .zoom').on('click', function(e){
             $('.slider-lightbox').addClass('show');
         });
-        $('.slider-lightbox').on(event, function(e){
-            if($(e.target).parents('.product-images').length == 0){
-                $('.slider-lightbox').removeClass('show');
+        $('.lightbox').on(event, function(e){
+            if($(e.target).parents('.lightbox-content').length == 0){
+                $('.lightbox').removeClass('show');
             }
-        });
-        var slide = null;
-        $('.product-thumbs .product-thumb').on(event, function(){
-            var $this = $(this);
-            var time = 0;
-            if($('.product-content-left .product-images-slider').hasClass('animating')){
-                time = 300;
-            }
-            if(slide){
-                clearTimeout(slide);
-            }
-            slide = setTimeout( function(){
-                var index = $this.index();
-                $('.product-images-slider').slick('slickGoTo',index, false);
-            },time);
-            return false;
-        });
-
+        });        
         //
         // INIITALISE VIDEO SLIDER
         //

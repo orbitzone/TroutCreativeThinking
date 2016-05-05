@@ -540,6 +540,41 @@ var product_pages = {
     },
     widget: function(){
         $('body').addClass('widget');
+        if(deviceMobile){
+            $('#shopping-cart-widget').addClass('mobile');
+        }
+        function calculateWidgetContentHeight(){
+            var windowWidth = $(window).width();
+            var windowHeight = $(window).height();
+            var scrollTop = $(window).scrollTop();
+            var height = windowHeight;
+
+            $('#shopping-cart-widget').height('');
+            //content height on mobile
+            
+                if(windowWidth < 768){
+                    if(scrollTop < $('#shopping-cart-widget aside').offset().top){
+                        height = windowHeight - ($('#shopping-cart-widget aside').offset().top - scrollTop ) - $('#shopping-cart-widget aside').height();
+                    }else{
+                        height = windowHeight - $('#shopping-cart-widget aside').height();
+                    }
+                }else{
+                    if(scrollTop > $('.main-section').offset().top){
+                        if(scrollTop > ($('.site-footer').offset().top - windowHeight)){
+                            height = $('.site-footer').offset().top - scrollTop;
+                            if(windowWidth > 767){
+                                $('#shopping-cart-widget').height(height);
+                            }
+                        }
+                    }else{
+                        height = (windowHeight - $('.main-section').offset().top) + scrollTop;
+                    }
+                }
+            if(!$('#shopping-cart-widget').hasClass('open')){
+                height = 0;
+            }
+            return height;            
+        }
         document.ontouchmove = function ( event ) {
 
             var isTouchMoveAllowed = true, target = event.target;
@@ -581,52 +616,71 @@ var product_pages = {
             $('#shopping-cart-widget').addClass('mobile');            
             $('html').addClass('mobile');
         }
-        
+        $('#shopping-cart-widget select').selectric();
         $(window).on('scroll', function(){
-            if($(window).scrollTop() > $('.main-section').offset().top && $(window).width()<768){
-                $('#shopping-cart-widget').addClass('fixed');
-                $('#product-detail').addClass('fixed');
+            var width = $(window).width();
+            var windowHeight = $(window).height();
+            if($(window).scrollTop() > $('.main-section').offset().top){
+                    $('#shopping-cart-widget').height('');
+                    $('#shopping-cart-widget').addClass('fixed');                    
+                    if($(window).scrollTop() > ($('.site-footer').offset().top - windowHeight)){
+                        if(!deviceMobile){
+                            if(width > 767){
+                                calculateWidgetContentHeight();
+                            }
+                        }
+                    }
             }else{
+                $('#shopping-cart-widget').height('');
                 $('#shopping-cart-widget').removeClass('fixed');
-                $('#product-detail').removeClass('fixed');
-            }
-        });
+            }            
+        }).scroll();
         function preventEvents(e){
-            console.log($(e.target).parents('.shopping-cart-content').length);
-                if($(e.target).parents('.shopping-cart-content').length !== 1 && e.type == 'touchmove'){
-                    e.preventDefault();
-                }else{
-                    console.log(e);
-                }
-                       
+            e.stopPropagation();                  
         }
-        
-        $('#shopping-cart-widget').find('aside').on(event, function(e){
+        if(!deviceMobile){
+            var scrollTopOnHover = 0;
+            $('#shopping-cart-widget').on('mouseover', function(){
+                $('html,body').addClass('overflow-hidden');
+                scrollTopOnHover = $(window).scrollTop();
+            }).on('mouseout', function(){
+                $('html,body').removeClass('overflow-hidden');
+                setTimeout( function(){ $(window).scrollTop(scrollTopOnHover)}, 100);
+            });
+        }
+        $('.product-availability-variations .options-dropdown').on('click', function(e){
+            $(this).toggleClass('open');
+            e.stopPropagation();
+        });
+        $('#product-detail').on('click', function(){
+            $('.product-availability-variations .options-dropdown').removeClass('open');    
+        });
+        $('#shopping-cart-widget').find('header .close').on('click', function(e){
+            $('#shopping-cart-widget').find('aside').trigger('click');
+        });
+        $('#shopping-cart-widget .shopping-cart-content').height(0);
+        $('#shopping-cart-widget').find('aside').on('click', function(e){
             var diff = $('.main-section').offset().top;
             var top = $(window).scrollTop() - diff;
-            var height = $(window).height();
-            if(top < 0){
-                height = height - diff;
-                top = 0;
-            }
-            if( ($('.site-footer').offset().top - parseFloat($('.site-footer').css('marginTop'))) - $(window).scrollTop() < height){
-                height = ($('.site-footer').offset().top - parseFloat($('.site-footer').css('marginTop'))) - $(window).scrollTop();
-            }
-            /*$('#shopping-cart-widget .shopping-cart-content').css({
-                top: top,
-                height: height
-            });*/
+            var width = $(window).width();
+            var windowHeight = $(window).height();
+            var height = windowHeight;
+            
             $('#shopping-cart-widget').toggleClass('open');
             if($('#shopping-cart-widget').hasClass('open')){
                 TweenMax.to($('#shopping-cart-widget'),0.5,{right: 0});
-                TweenMax.to($('#shopping-cart-widget .shopping-cart-content'),0.5,{x: 0, opacity: 1});
+                height = calculateWidgetContentHeight();
+                TweenMax.to($('#shopping-cart-widget .shopping-cart-content'),0.5,{x: 0, opacity: 1, height: height});
                 $('.product-detail-wrap, aside').addClass('disable-scrolling');
                /* $('#shopping-cart-widget aside button').css({
                     'position': 'absolute',
-                    'top': top + 10
+                    'top': top + 10`
                 });*/
-                $('html,body').addClass('overflow-hidden');                
-              //  $('body').on('scroll mousedown touchdown mousemove click touchstop touchstart touchmove', preventEvents); 
+                $('.shopping-cart-content').on('scroll', preventEvents);   
+                if($(window).width() > 768 && !deviceMobile){
+                  
+                }
+                //$('html,body').addClass('overflow-hidden');
             }else{
                 var right = -535;
                 if($(window).width()> 1199){
@@ -634,8 +688,18 @@ var product_pages = {
                 }
                 TweenMax.to($('#shopping-cart-widget'),0.5,{right: right});
                 TweenMax.to($('#shopping-cart-widget .shopping-cart-content'),0.5,{x: 100, opacity: 0});
+                if(width > 767){
+                    TweenMax.to($('#shopping-cart-widget'),0.5,{right: right});
+                    TweenMax.to($('#shopping-cart-widget .shopping-cart-content'),0.5,{x: 100, opacity: 0});
+                }else{
+                    TweenMax.to($('#shopping-cart-widget'),0.5,{right: right, height: ''});
+                    TweenMax.to($('#shopping-cart-widget .shopping-cart-content'),0.5,{x: 100, opacity: 0, height: 0});
+                }
                 $('.product-detail-wrap, aside').removeClass('disable-scrolling');
-                $('html, body').removeClass('overflow-hidden');    
+                //$('html, body').removeClass('overflow-hidden');    
+                if($(window).width() > 768 && !deviceMobile){
+                  $('.shopping-cart-content').off('scroll', preventEvents);   
+                }
                 //$('body').off('scroll mousedown touchdown mousemove click touchstop touchstart touchmove', preventEvents); 
             }
             e.stopPropagation();
@@ -645,6 +709,8 @@ var product_pages = {
             if(!$('#shopping-cart-widget').hasClass('open')){
                 $('#shopping-cart-widget').css('right','');
             }
+            height = calculateWidgetContentHeight();
+            $('#shopping-cart-widget .shopping-cart-content').height(height);
         });
         $(document).on('click','#shopping-cart-widget .edit-item, #shopping-cart-widget .product-thumbnail, #shopping-cart-widget .item-details',function(e){
             if($(this).parent().parent().parent().hasClass('editing')){
@@ -665,7 +731,7 @@ var product_pages = {
             $('html').addClass('mobile');
         }
         //ADD Slider lightbox
-        var lightbox = $('<div class="lightbox slider-lightbox"><div class="lightbox-actions"><button type="button">close</button></div></div>');
+        var lightbox = $('<div class="lightbox slider-lightbox"><div class="lightbox-actions"><button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="67.5px" height="67.5px" viewBox="0 0 67.5 67.5"><path d="M64.8,67.5c-0.7,0-1.4-0.3-1.9-0.8L0.8,4.6c-1.1-1.1-1.1-2.8,0-3.9c1.1-1.1,2.8-1.1,3.9,0l62.1,62.1c1.1,1.1,1.1,2.8,0,3.9C66.2,67.2,65.5,67.5,64.8,67.5z"/><path d="M2.7,67.5c-0.7,0-1.4-0.3-1.9-0.8c-1.1-1.1-1.1-2.8,0-3.9L62.9,0.8c1.1-1.1,2.8-1.1,3.9,0c1.1,1.1,1.1,2.8,0,3.9L4.6,66.7C4.1,67.2,3.4,67.5,2.7,67.5z"/></svg></button></div></div>');
         var slider = $('.product-images-wrap').clone();
         lightbox.append(slider);
         $('#product-detail').append(lightbox);
@@ -740,8 +806,8 @@ var product_pages = {
             infinite: true,
             slidesToShow: 3,
             slidesToScroll: 3,
-            prevArrow: '<span type="button" class="slick-prev">Previous</span>',
-            nextArrow: '<span type="button" class="slick-next">Next</span>',
+            prevArrow: '<button type="button" class="slick-prev"><svg viewBox="0 0 26 46" id="shape-arrow-left"><title>arrow-left</title> <g id="arrow-left-arrow-left"> <path d="M24.4,0.6C24.1,0.2,23.5,0,23,0c-0.5,0-1,0.2-1.4,0.6l-21,21c-0.8,0.8-0.8,2.1,0,2.8l21,21c0.8,0.8,2.1,0.8,2.8,0c0.8-0.8,0.8-2.1,0-2.8L4.9,23L24.4,3.4C25.2,2.6,25.2,1.4,24.4,0.6z"/> </g> </svg></button>',
+            nextArrow: '<button type="button" class="slick-next"><svg viewBox="0 0 26 46" id="shape-arrow-right"><title>arrow-right</title> <g id="arrow-right-arrow-right"> <path d="M1.6,45.4C2,45.8,2.5,46,3,46c0.5,0,1-0.2,1.4-0.6l21-21c0.8-0.8,0.8-2.1,0-2.8l-21-21c-0.8-0.8-2.1-0.8-2.8,0c-0.8,0.8-0.8,2.1,0,2.8L21.2,23L1.6,42.6C0.8,43.4,0.8,44.7,1.6,45.4z"/> </g> </svg></button>',
             responsive: [
                 {
                     breakpoint: 767,
@@ -863,7 +929,7 @@ var product_pages = {
         // SECTION EXPAND AND COLLAPES
         // The name for (.action-expand-button)"data-expandbutton" and (.expand-section)"data-expandsection" needs to be the same
         //
-        $(".action-expand-button").on('click'          ,function(e){
+        $(".action-expand-button").on('click',function(e){
             var thisobject = $(this);
             var thisname = thisobject.data("expandbutton");
             var expandsection = $(".expand-section[data-expandsection='" + thisname + "']");
@@ -883,8 +949,8 @@ var product_pages = {
                     expandsection.css({
                         display: 'block'
                     });
-                    if(thisobject.parent().find('.file-download-list').hasClass('slick-initialized')){
-                        thisobject.parent().find('.file-download-list').slick('setPosition');
+                    if(thisobject.parent().find('.slick-slider').hasClass('slick-initialized')){
+                        thisobject.parent().find('.slick-slider').slick('setPosition');
                     }
                     expandsection.css({
                         display: 'none'

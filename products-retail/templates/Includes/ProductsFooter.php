@@ -9,4 +9,6 @@
 <script type="text/javascript" src="javascript/jquery-ui.min.js"></script>
 <script type="text/javascript" src="javascript/jquery.matchHeight-min.js"></script>
 <script type="text/javascript" src="javascript/selectric/public/jquery.selectric.min.js"></script>
-<script type="text/javascript" src="javascript/products-page.min.js"></script>
+<script type="text/javascript" src="javascript/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+<script type="text/javascript" src="javascript/products-page.js"></script>

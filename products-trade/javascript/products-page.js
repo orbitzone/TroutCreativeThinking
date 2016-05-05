@@ -641,6 +641,11 @@ var product_pages = {
             e.stopPropagation();
                         
         });
+        $(window).on('resize', function(){
+            if(!$('#shopping-cart-widget').hasClass('open')){
+                $('#shopping-cart-widget').css('right','');
+            }
+        });
         $(document).on('click','#shopping-cart-widget .edit-item, #shopping-cart-widget .product-thumbnail, #shopping-cart-widget .item-details',function(e){
             if($(this).parent().parent().parent().hasClass('editing')){
                 $('#shopping-cart-widget .one-item').removeClass('editing');

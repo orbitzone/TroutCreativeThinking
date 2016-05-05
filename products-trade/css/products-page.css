@@ -848,6 +848,12 @@ Slick slider arrow
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
+#product-pages #shopping-cart-widget.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
 #product-pages #shopping-cart-widget .shopping-cart-content {
   padding: 0 10px;
 }
@@ -855,12 +861,6 @@ Slick slider arrow
   #product-pages #shopping-cart-widget .shopping-cart-content {
     padding: 0 24px;
   }
-}
-#product-pages #shopping-cart-widget.fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
 }
 #product-pages #shopping-cart-widget .close {
   position: absolute;
@@ -893,6 +893,15 @@ Slick slider arrow
     width: 585px;
     min-height: 100%;
     height: calc(100% + 120px);
+  }
+}
+@media (min-width: 1310px) {
+  #product-pages #shopping-cart-widget {
+    position: absolute;
+    top: 0;
+    right: -502px;
+    width: 585px;
+    height: 100%;
   }
 }
 #product-pages #shopping-cart-widget aside {
@@ -3195,7 +3204,7 @@ Slick slider arrow
   #product-pages .main-section#product-detail .btn:before {
     content: " ";
     position: absolute;
-    width: 100%;
+    width: 0;
     height: 100%;
     top: 0;
     left: 0;
@@ -3218,6 +3227,7 @@ Slick slider arrow
     color: #0776aa;
   }
   #product-pages .main-section#product-detail .btn:hover:before {
+    width: 100%;
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -3413,7 +3423,7 @@ Slick slider arrow
     padding-right: 83px;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1400px) {
   #product-pages .main-section#product-detail .product-detail-wrap {
     padding-right: 0;
   }
@@ -3895,7 +3905,7 @@ Slick slider arrow
   margin: 0 -5px;
   overflow: auto;
   text-align: center;
-  margin-bottom: 48px;
+  margin-bottom: 38px;
 }
 #product-pages .main-section#product-detail .main-anchor-list:before,
 #product-pages .main-section#product-detail .main-anchor-list:after {
@@ -3915,8 +3925,14 @@ Slick slider arrow
   margin: 0;
   padding: 0 5px;
   display: inline-block;
-  width: 20%;
-  float: left;
+  width: 32%;
+  margin-bottom: 10px;
+}
+@media (min-width: 992px) {
+  #product-pages .main-section#product-detail .main-anchor-list li {
+    width: 20%;
+    float: left;
+  }
 }
 #product-pages .main-section#product-detail .main-anchor-list li a {
   font-size: 15px;

@@ -7,18 +7,18 @@
 	will-change: transform;
 	z-index: 2;
 	.transform(translate3d(0,0,0));
+	&.fixed{
+		position: fixed;
+		top: 0;
+		left: 0;		
+		width: 100%;
+	}
 	//.transition(0.3s right ease-out);
 	.shopping-cart-content{
 		padding: 0 10px;
 		@media (min-width: @screen-sm){
 			padding: 0 24px;
 		}
-	}
-	&.fixed{
-		position: fixed;
-		top: 0;
-		left: 0;		
-		width: 100%;
 	}
 	.close{
 		position: absolute;
@@ -49,6 +49,13 @@
 		min-height: 100%;
 		height: calc(~"100% + 120px");		
 	}	
+	@media (min-width: 1310px){
+		position: absolute;
+		top: 0;
+		right: -502px;
+		width: 585px;
+		height: 100%;		
+	}
 	aside{
 		touch-action: manipulation;
 		background: #0776aa;

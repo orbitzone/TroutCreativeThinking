@@ -19,7 +19,7 @@
 		</div>
 		
 		<!--START TAKE A TOUR SECTION -->
-		<div class="tour-info">
+		<div class="tour-info out">
 		<header><h3 class="main-title">Your List Toolbar</h3>
 		</header>
 
@@ -170,7 +170,7 @@
 
 
 		<!--START PRODUCT LIST-->
-		<div class="shopping-cart-product-list out">
+		<div class="shopping-cart-product-list">
 			<!--START LIST HEADER-->
 			<div class="list-header">
 				<div class="title">
@@ -263,9 +263,9 @@
 											<div class="quantity-details">Packet Contains <span>100</span> Units</div>
 										</div>
 									</div>
-									<div class="price right-col">
-										<div>YOUR PRICE <span class="price-my">$406.32</span></div>
-										<div>CMP <span class="price-cmp">$444.17</span></div>
+									<div class="prices right-col">
+										<div class="price price-my"><span class="label">YOUR PRICE</span> <span class="value">$406.32</span></div>
+										<div class="price price-cmp"><span class="label">CMP </span><span class="value">$444.17</span></div>
 									</div>
 									<div class="clear-fix"></div>
 								</div>

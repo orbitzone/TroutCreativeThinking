@@ -67,7 +67,20 @@
 											<img class="img-responsive" src="templates/images/product-detail/product-image3.jpg" alt="item">
 										</div>
 										<div>
-											<img class="img-responsive" src="templates/images/product-detail/product-image4.jpg" alt="item">
+											<a href="#" title="Watch video"  class="lightbox-video" data-video="F-kP7xe9j70">
+												<img class="img-responsive" src="templates/images/product-detail/product-image4.jpg" alt="item">
+												<span class="play-button">
+													<svg width="46.5px" height="46.5px" viewBox="0 0 46.5 46.5">
+														<path class="ring" d="M23.2,46.5C10.4,46.5,0,36.1,0,23.3S10.4,0,23.2,0c12.8,0,23.2,10.4,23.2,23.3S36.1,46.5,23.2,46.5z M23.2,1
+															C11,1,1,11,1,23.3c0,12.3,10,22.3,22.2,22.3c12.3,0,22.2-10,22.2-22.3C45.5,11,35.5,1,23.2,1z"/>
+														<path class="circle" fill-rule="evenodd" clip-rule="evenodd" d="M23,5.2c10.1,0,18.3,8.2,18.3,18.3c0,10.1-8.2,18.3-18.3,18.3
+															c-10.1,0-18.3-8.2-18.3-18.3C4.7,13.3,12.9,5.2,23,5.2z"/>
+														<path class="icon" d="M18.2,31.8c0.1,0,0.2,0,0.3-0.1l12-7.5c0.1-0.1,0.2-0.3,0.2-0.4c0-0.2-0.1-0.3-0.2-0.4l-12-7.5
+															c-0.2-0.1-0.3-0.1-0.5,0c-0.2,0.1-0.3,0.3-0.3,0.4v15c0,0.2,0.1,0.3,0.3,0.4C18.1,31.8,18.2,31.8,18.2,31.8z M18.7,17.2l10.6,6.6
+															l-10.6,6.6V17.2z"/>
+														</svg>
+												</span>
+											</a>
 										</div>
 									</div>
 									<div class="zoom">
@@ -80,19 +93,7 @@
 										</svg>
 									</div>
 								</div>							
-								<div class="product-thumbs hidden-xs">
-									<div class="product-thumb current">
-										<img class="img-responsive" src="templates/images/product-detail/product-image1.jpg" alt="item">
-									</div>
-									<div class="product-thumb">
-										<img class="img-responsive" src="templates/images/product-detail/product-image2.jpg" alt="item">
-									</div>
-									<div class="product-thumb">
-										<img class="img-responsive" src="templates/images/product-detail/product-image3.jpg" alt="item">
-									</div>
-									<div class="product-thumb">
-										<img class="img-responsive" src="templates/images/product-detail/product-image4.jpg" alt="item">
-									</div>
+								<div class="product-thumbs-slider product-thumbs hidden-xs">
 									<div class="product-thumb">
 										<img class="img-responsive" src="templates/images/product-detail/product-image1.jpg" alt="item">
 									</div>
@@ -104,6 +105,29 @@
 									</div>
 									<div class="product-thumb">
 										<img class="img-responsive" src="templates/images/product-detail/product-image4.jpg" alt="item">
+									</div>
+									<div class="product-thumb">
+										<img class="img-responsive" src="templates/images/product-detail/product-image1.jpg" alt="item">
+									</div>
+									<div class="product-thumb">
+										<img class="img-responsive" src="templates/images/product-detail/product-image2.jpg" alt="item">
+									</div>
+									<div class="product-thumb">
+										<img class="img-responsive" src="templates/images/product-detail/product-image3.jpg" alt="item">
+									</div>
+									<div class="product-thumb">
+										<img class="img-responsive" src="templates/images/product-detail/product-image4.jpg" alt="item">
+										<span class="play-button">
+											<svg width="46.5px" height="46.5px" viewBox="0 0 46.5 46.5">
+												<path class="ring" d="M23.2,46.5C10.4,46.5,0,36.1,0,23.3S10.4,0,23.2,0c12.8,0,23.2,10.4,23.2,23.3S36.1,46.5,23.2,46.5z M23.2,1
+													C11,1,1,11,1,23.3c0,12.3,10,22.3,22.2,22.3c12.3,0,22.2-10,22.2-22.3C45.5,11,35.5,1,23.2,1z"/>
+												<path class="circle" fill-rule="evenodd" clip-rule="evenodd" d="M23,5.2c10.1,0,18.3,8.2,18.3,18.3c0,10.1-8.2,18.3-18.3,18.3
+													c-10.1,0-18.3-8.2-18.3-18.3C4.7,13.3,12.9,5.2,23,5.2z"/>
+												<path class="icon" d="M18.2,31.8c0.1,0,0.2,0,0.3-0.1l12-7.5c0.1-0.1,0.2-0.3,0.2-0.4c0-0.2-0.1-0.3-0.2-0.4l-12-7.5
+													c-0.2-0.1-0.3-0.1-0.5,0c-0.2,0.1-0.3,0.3-0.3,0.4v15c0,0.2,0.1,0.3,0.3,0.4C18.1,31.8,18.2,31.8,18.2,31.8z M18.7,17.2l10.6,6.6
+													l-10.6,6.6V17.2z"/>
+												</svg>
+										</span>
 									</div>
 								</div>
 								<!-- END HERO GALLERY -->
@@ -123,8 +147,7 @@
 									2259656
 								</div>
 								<div class="product-prices">
-											<div class="product-price-inc">$942.99<small>inc.</small></div>
-											<div class="product-price-exc">$857.26<small>exc.</small></div>
+										<div class="product-price">$942.99<small>gst inc.</small></div>											
 								</div>
 								<div class="product-postcode-input">
 									<div class="product-postcode-overlay"></div>
@@ -601,7 +624,7 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 												<?php for($i = 0; $i<7;$i++){ ?>
 												<div class="one-slide">
 													<div class="video-thumbnail">
-														<a href="#" title="Watch video">
+														<a href="#" title="Watch video"  class="lightbox-video" data-video="Etkva-n4_4s">
 															<span class="thumb-image"><img class="img-responsive" src="templates/images/product-detail/video-thumb<?php echo 1+$i%3 ?>.jpg" alt="item"></span>
 															<span class="play-button">
 																<svg width="46.5px" height="46.5px" viewBox="0 0 46.5 46.5">
@@ -722,7 +745,7 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 												<?php for($i = 0; $i<7;$i++){ ?>
 												<div class="one-slide">
 													<div class="video-thumbnail">
-														<a href="#" title="Watch video">
+														<a href="#" title="Watch video" class="lightbox-video" data-video="Etkva-n4_4s">
 															<span class="thumb-image"><img class="img-responsive" src="templates/images/product-detail/video-thumb<?php echo 1+$i%3 ?>.jpg" alt="item"></span>
 															<span class="play-button">
 																<svg width="46.5px" height="46.5px" viewBox="0 0 46.5 46.5">
@@ -841,4 +864,18 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 		</div>
 		<!--END FOOTER PROMO SECTION -->	
 	</div>
+	<!-- START Slider Lightbox -->
+	<div id="slider-lightbox" class="lightbox slider-lightbox"><div class="lightbox-actions"><button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="67.5px" height="67.5px" viewBox="0 0 67.5 67.5"><path d="M64.8,67.5c-0.7,0-1.4-0.3-1.9-0.8L0.8,4.6c-1.1-1.1-1.1-2.8,0-3.9c1.1-1.1,2.8-1.1,3.9,0l62.1,62.1c1.1,1.1,1.1,2.8,0,3.9C66.2,67.2,65.5,67.5,64.8,67.5z"/><path d="M2.7,67.5c-0.7,0-1.4-0.3-1.9-0.8c-1.1-1.1-1.1-2.8,0-3.9L62.9,0.8c1.1-1.1,2.8-1.1,3.9,0c1.1,1.1,1.1,2.8,0,3.9L4.6,66.7C4.1,67.2,3.4,67.5,2.7,67.5z"/></svg></button></div>
+	<div class="lightbox-content"></div></div>
+	<!-- END Slider Lightbox -->
+	<!-- START Videos Lightbox -->
+	<div id="video-lightbox" class="lightbox">
+			<div class="lightbox-actions"><button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="67.5px" height="67.5px" viewBox="0 0 67.5 67.5"><path d="M64.8,67.5c-0.7,0-1.4-0.3-1.9-0.8L0.8,4.6c-1.1-1.1-1.1-2.8,0-3.9c1.1-1.1,2.8-1.1,3.9,0l62.1,62.1c1.1,1.1,1.1,2.8,0,3.9C66.2,67.2,65.5,67.5,64.8,67.5z"/><path d="M2.7,67.5c-0.7,0-1.4-0.3-1.9-0.8c-1.1-1.1-1.1-2.8,0-3.9L62.9,0.8c1.1-1.1,2.8-1.1,3.9,0c1.1,1.1,1.1,2.8,0,3.9L4.6,66.7C4.1,67.2,3.4,67.5,2.7,67.5z"/></svg></button></div>
+			<div class="video-lightbox-container lightbox-content">
+			<div class="embed-responsive embed-responsive-16by9">
+				<div id="video-lightbox-container" class="embed-responsive-item"></div>
+			</div>
+		</div>		
+	</div>
+	<!-- END Videos Lightbox -->
 </div><!--END PRODUCT DETAIL -->

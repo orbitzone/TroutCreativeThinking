@@ -1,24 +1,28 @@
 <div id="shopping-cart-widget">
 	<aside>
-		<button type="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 34" id="shape-cart"><title>cart</title> <path d="M34.2,33.5c2,0,3.7-1.7,3.7-3.7c0-2.1-1.7-3.7-3.7-3.7c-2,0-3.7,1.7-3.7,3.7S32.2,33.5,34.2,33.5"/> <path d="M13.8,33.5c2,0,3.7-1.7,3.7-3.7c0-2.1-1.7-3.7-3.7-3.7c-2,0-3.7,1.7-3.7,3.7S11.8,33.5,13.8,33.5"/> <path d="M13.8,28h20.4c0.5,0,0.9-0.4,0.9-0.9s-0.4-0.9-0.9-0.9H14.6L8.8,1.2C8.7,0.8,8.3,0.5,7.9,0.5H1.4c-0.5,0-0.9,0.4-0.9,0.9
+		<button type="button">
+		<span class="cart-items-wrap">
+			<span class="cart-items">1</span>
+		</span>
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 34" id="shape-cart"><title>cart</title> <path d="M34.2,33.5c2,0,3.7-1.7,3.7-3.7c0-2.1-1.7-3.7-3.7-3.7c-2,0-3.7,1.7-3.7,3.7S32.2,33.5,34.2,33.5"/> <path d="M13.8,33.5c2,0,3.7-1.7,3.7-3.7c0-2.1-1.7-3.7-3.7-3.7c-2,0-3.7,1.7-3.7,3.7S11.8,33.5,13.8,33.5"/> <path d="M13.8,28h20.4c0.5,0,0.9-0.4,0.9-0.9s-0.4-0.9-0.9-0.9H14.6L8.8,1.2C8.7,0.8,8.3,0.5,7.9,0.5H1.4c-0.5,0-0.9,0.4-0.9,0.9
 	c0,0.5,0.4,0.9,0.9,0.9h5.8l5.7,24.9C13,27.7,13.4,28,13.8,28z"/> <path d="M12.9,24.2H37c0.4,0,0.8-0.3,0.9-0.6l5.6-16.8c0.1-0.3,0-0.6-0.1-0.8c-0.2-0.2-0.5-0.4-0.8-0.4H9.2C8.7,5.6,8.3,6,8.3,6.6
 	c0,0.5,0.4,0.9,0.9,0.9h32.1l-4.9,14.9H12.9c-0.5,0-0.9,0.4-0.9,0.9C12,23.8,12.4,24.2,12.9,24.2z"/></svg></button>
 	</aside>
 	<section class="shopping-cart-content scrollable">
-		<header><h3 class="main-title">Your List Toolbar</h3>
-		<div class="close">
+		<div class="close close-widget">
 			<svg xmlns="http://www.w3.org/2000/svg" width="67.5px" height="67.5px" viewBox="0 0 67.5 67.5">
-<path d="M64.8,67.5c-0.7,0-1.4-0.3-1.9-0.8L0.8,4.6c-1.1-1.1-1.1-2.8,0-3.9c1.1-1.1,2.8-1.1,3.9,0l62.1,62.1c1.1,1.1,1.1,2.8,0,3.9
-	C66.2,67.2,65.5,67.5,64.8,67.5z"/>
-<path d="M2.7,67.5c-0.7,0-1.4-0.3-1.9-0.8c-1.1-1.1-1.1-2.8,0-3.9L62.9,0.8c1.1-1.1,2.8-1.1,3.9,0c1.1,1.1,1.1,2.8,0,3.9L4.6,66.7
-	C4.1,67.2,3.4,67.5,2.7,67.5z"/>
-</svg>
+			<path d="M64.8,67.5c-0.7,0-1.4-0.3-1.9-0.8L0.8,4.6c-1.1-1.1-1.1-2.8,0-3.9c1.1-1.1,2.8-1.1,3.9,0l62.1,62.1c1.1,1.1,1.1,2.8,0,3.9
+				C66.2,67.2,65.5,67.5,64.8,67.5z"/>
+			<path d="M2.7,67.5c-0.7,0-1.4-0.3-1.9-0.8c-1.1-1.1-1.1-2.8,0-3.9L62.9,0.8c1.1-1.1,2.8-1.1,3.9,0c1.1,1.1,1.1,2.8,0,3.9L4.6,66.7
+				C4.1,67.2,3.4,67.5,2.7,67.5z"/>
+		</svg>
 		</div>
+		
+		<!--START TAKE A TOUR SECTION -->
+		<div class="tour-info out">
+		<header><h3 class="main-title">Your List Toolbar</h3>
 		</header>
 
-
-		<!--START TAKE A TOUR SECTION -->
-		<div class="tour-info">
 			<div class="tour-intro">
 				<p>Welcome to the new toolbar that allows you to create product lists easily.<br/> You can import products from saved lists or create a completly new one. Then convert the list to a quote or order.</p>
 			</div>
@@ -42,8 +46,11 @@
 		</div>
 		<!--END TAKE A TOUR SECTION -->
 		
+
+
+
 		<!--START SEARCH LIST-->
-		<div class="shopping-cart-search-list">
+		<div class="shopping-cart-search-list out">
 			<!--START LIST HEADER-->
 			<div class="list-header">
 				<div class="title">
@@ -157,33 +164,18 @@
 			</div>
 		</div>
 		<!--END SEARCH LIST -->
-		<!--START LIST HEADER-->
+
+
+
+
+
+		<!--START PRODUCT LIST-->
 		<div class="shopping-cart-product-list">
 			<!--START LIST HEADER-->
 			<div class="list-header">
 				<div class="title">
-					<h3>123 Newry Street</h3>
-				</div>
-				<button type="button" class="switch-btn">
-					<svg width="25" height="19" viewBox="0 0 25 19">
-  <path d="M213.873,434.7a0.413,0.413,0,0,0-.3-0.127H195.143V432a0.434,0.434,0,0,0-.429-0.428,0.419,0.419,0,0,0-.308.12l-4.285,4.286a0.414,0.414,0,0,0-.121.308,0.4,0.4,0,0,0,.121.3l4.272,4.285a0.5,0.5,0,0,0,.321.134,0.434,0.434,0,0,0,.429-0.428V438h18.428a0.434,0.434,0,0,0,.429-0.428V435A0.411,0.411,0,0,0,213.873,434.7Zm0.006-7.292-4.272-4.273a0.5,0.5,0,0,0-.321-0.134,0.414,0.414,0,0,0-.429.429V426H190.429a0.434,0.434,0,0,0-.429.429V429a0.434,0.434,0,0,0,.429.429h18.428V432a0.436,0.436,0,0,0,.737.308l4.285-4.285a0.452,0.452,0,0,0,0-.616h0Z" transform="translate(-189.5 -422.5)"/>
-</svg> Switch <b>toolbar</b> list
-				</button>
-				<div class="options">
-					<div class="one-option dropdown-option">
-						<select id="cmp-option">
-							<option value="cmp1">CMP</option>
-							<option value="cmp2">MP</option>
-						</select>
-					</div>
-					<div class="one-option checkbox-option">
-						<label for="shopping-cart-include-gst">GST <input type="checkbox" id="shopping-cart-include-gst" name="gst" value="gst"><div class="icon">
-										<svg xmlns="http://www.w3.org/2000/svg" width="20px" height="14.8px" viewBox="0 0 20 14.8">
-											<path d="M2.5,4.9l7.5,7.4l-2.5,2.5L0,7.4L2.5,4.9z M17.5,0L20,2.5L7.5,14.8L5,12.3L17.5,0z"/>
-										</svg>
-									</div></label>
-					</div>
-				</div>
+					<h3>Shopping Cart</h3>
+				</div>				
 			</div>
 			<!--END LIST HEADER -->
 			<!--START TOOL BAR ITEMLIST-->
@@ -224,7 +216,7 @@
 							<footer class="item-footer">
 								<div class="info-state">
 									<span class="quantity left-col">
-										<span class="number">1</span> <span class="set">Pkt</span>
+										<span class="set">Qty</span> <span class="number">1</span>
 									</span>
 									<span class="price right-col">
 										$406.32
@@ -241,19 +233,10 @@
 											<div class="quantity-input">
 												<input class="quantity-number" data-productcode="7845123" type="number" name="quantity-7845123" min="1" value="1">
 											</div>
-											<div class="quantity-set">
-												<span class="radiolabel-set span-block">
-													<label for="set-7845123-ea" class="radio-button active">EA</label>
-													<label for="set-7845123-pkt" class="radio-button">PKT</label>
-													<span class="clear-fix"></span>
-												</span>												
-											</div>											
-											<div class="quantity-details">Packet Contains <span>100</span> Units</div>
 										</div>
 									</div>
-									<div class="price right-col">
-										<div>YOUR PRICE <span class="price-my">$406.32</span></div>
-										<div>CMP <span class="price-cmp">$444.17</span></div>
+									<div class="prices right-col">
+										<div class="price price-my"><span class="value">$406.32</span></div>										
 									</div>
 									<div class="clear-fix"></div>
 								</div>
@@ -280,7 +263,7 @@
 				</button>
 			</div>
 		</div>
-		<!--END LIST HEADER-->
+		<!--END PRODUCT LIST-->
 
 		
 

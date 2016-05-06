@@ -1,9 +1,67 @@
-@take-a-tour-btn-bg: #39a6d8;
+@widget-bar-bg: @main-color;
+@widget-content-bg: #066693;
+
+
+//Buttons and form fields
+@select-bg: #0776AA;
+@select-color: white;
+
+@checkbox-icon-square-bg: #066693;
+@checkbox-icon-color: white;
+
+@switch-toolbar-btn-bg: @widget-content-bg;
+@switch-toolbar-btn-color: #54F276;
+@switch-toolbar-btn-border: #54F276;
+
+@checkout-btn-bg: #54f276;
+@checkout-btn-color: @main-color;
+
+//Section Titles
+@main-title-color: white;
+@main-title-border: @text-light-blue;
+
+//Product list
+@product-item-info-bg: #0776aa;
+@product-item-info-edit-bg: white;
+@product-item-footer-bg: #0070a4;
+@product-item-footer-edit-bg: #f4f4f4;
+
+@product-code-color: #cbcbcb;
+@product-code-edit-color: #cbcbcb;
+
+@product-name-color: white;
+@product-name-edit-color: @main-color;
+
+@product-description-color: white;
+@product-description-edit-color: @main-color;
+
+@edit-icon-color: #099ade;
+@remove-icon-color: #099ade;
+@edit-icon-active-color: white;
+@remove-icon-active-color: #d46363;
+
+@product-item-footer-quantity-color: white;
+@product-item-footer-price-color: white;
+
+@product-item-footer-quantity-edit-color: @main-color;
+@product-item-footer-quantity-edit-bg: #e2e2e2;
+
+@product-item-footer-price-edit-label-color: #066693;
+@product-item-footer-price-edit-value-color: #2aa9e3;
+
+@list-divider-color: #2178a0;
+@subtotal-color:#8fbed4;
+@total-color: white;
+
+@take-a-tour-btn-bg: #3ba8da;
+
 @icon-color: #099ade;
 @image-border: #bfbfbf;
-@product-code: #cbcbcb;
+
+
+
 #shopping-cart-widget{
-	background: #0776aa;
+	background: @widget-content-bg;
 	will-change: transform;
 	z-index: 2;
 	position: absolute;
@@ -14,8 +72,8 @@
 	.transform(translate3d(0,0,0));
 	select{
 	  height: 66px;
-	  background-color: #0776AA;
-	  color: white;
+	  background-color: @select-bg;
+	  color: @select-color;
 	  font-size: 14px;
 	  line-height: 66px;
 	  padding: 0;
@@ -26,9 +84,9 @@
 		border: none;
 		width: 100%;
 		height: 66px;
-		color: white;
+		color: @select-color;
 		display: block;
-		background: @main-blue;
+		background: @select-bg;
 		line-height: 66px;
 		cursor: pointer;
 		.gothamBook;
@@ -36,7 +94,7 @@
 			line-height: 66px;
 			padding: 0;
 			display: block;
-			color: white;
+			color: @select-color;
 		}
 		.button{
 			top: 25px;
@@ -62,11 +120,12 @@
 		padding: 0;
 		will-change: transform;
 		overflow: scroll;
+		overflow-x: hidden;
 		-webkit-overflow-scrolling: touch;
 		width: 100%;
 		height: 0;
 		opacity: 0;
-		background: #066693;
+		background: @widget-content-bg;
     @media (min-width: @screen-sm){
     	.transform(translateX(100px));
     	.transform(translate3d(100px,0,0));
@@ -142,15 +201,16 @@
 	}
 	aside{
 		touch-action: manipulation;
-		background: #0776aa;
+		background: @widget-bar-bg;
 		overflow: scroll;
 		-webkit-overflow-scrolling: touch;
 		text-align: center;
 		cursor: pointer;
 		padding: 10px 0;
+		-ms-overflow-style: none;
 		@media (min-width: @screen-sm){
 			padding-top: 15px;
-			position: fixed;
+			position: absolute;
 			top: 0;
 			left: 0;			
 			width: 50px;
@@ -222,17 +282,18 @@
 		}
 	}	
 	.shopping-cart-content{
+		-ms-overflow-style: -ms-autohiding-scrollbar;
 		header{
     	position: relative;    	
     }
     .main-title{
 			font-size:30px;
-			color:@white;
+			color: @main-title-color;
 			text-align:center;
 			position: relative;
 			.gothamMedium;
 			padding: 30px 10px 28px;
-			border-bottom:solid 1px @text-light-blue;
+			border-bottom:solid 1px @main-title-border;
 	    @media (max-width: @screen-xs-max) {
 				font-size:20px;
 			}			
@@ -277,7 +338,7 @@
 					border-color: transparent; 
 					background: @take-a-tour-btn-bg url(../templates/images/product-detail/bg-dark-blue-stripes.jpg);
 					&:hover{
-						color: @main-blue;
+						color: @main-color;
 					}
 				}
 			}
@@ -309,7 +370,7 @@
 					margin-bottom: 15px;
 					list-style: none;
 					.item-block{
-						background: #0776aa;
+						background: @product-item-info-bg;
 						position: relative;
 						.transform(translateZ(0));
 						.transform(translate3d(0,0,0));
@@ -320,7 +381,7 @@
 							position: absolute;
 							opacity: 0;
 							width: 100%;
-							background: white;
+							background: @product-item-info-edit-bg;
 							height: 0;
 							bottom: 0;
 							left: 0;
@@ -343,7 +404,7 @@
 									.transition(0.3s fill ease-out);
 									width: 100%;
 									height: 26px;
-									fill: @icon-color;
+									fill: @edit-icon-color;
 								}
 							}
 							.product-thumbnail{
@@ -369,7 +430,7 @@
 									.transition(0.3s fill ease-out);
 									width: 100%;
 									height: 26px;
-									fill: @icon-color;
+									fill: @remove-icon-color;
 								}
 							}
 						}
@@ -387,6 +448,7 @@
 							}
 							.product-name{
 								.gothamBold;
+								color: @product-name-color;
 								font-size: 16px;
 								@media (min-width: @screen-sm){
 								 	font-size: 18px;
@@ -394,6 +456,7 @@
 							}
 							.product-description{
 								.gothamBook;
+								color: @product-description-color;
 								font-size: 14px;
 								@media (min-width: @screen-sm){
 								 	font-size: 16px;
@@ -402,7 +465,7 @@
 						}
 						.item-footer{
 							position: relative;
-							background: #0070a4;
+							background: @product-item-footer-bg;
 							.info-state{
 								padding: 10px 20px;
 								font-size: 18px;
@@ -428,24 +491,31 @@
 								max-height: 0;
 								overflow: hidden;
 								display: block;
-								display: -ms-flexbox;
-								display: -webkit-flex;
-								display: flex;
-
-								-ms-flex-align: center;
-								-webkit-align-items: center;
-								-webkit-box-align: center;
-								background: #f4f4f4;
+								background: @product-item-footer-edit-bg;
 								.transition(0.3s max-height ease-out);
 								.clearfix();
 								.edit-set{
-									background: #e2e2e2;
+									background: @product-item-footer-quantity-edit-bg;
 								}
-								.price{
-									background: #f4f4f4;
+								.prices{
+									background: @product-item-footer-edit-bg;
 									padding: 10px;
-									font-size: 9px;
-									span{
+									@media (min-width: @screen-sm){
+										padding: 15px 0;
+									}
+									.price{
+										margin-bottom: 12px;
+										&:last-child{
+											margin-bottom: 0;
+										}
+									}			
+									.label{
+										color: @product-item-footer-price-edit-label-color;
+										.gothamBook;
+										font-size: 9px;
+									}									
+									.value{
+										color: @product-item-footer-price-edit-value-color;
 										.gothamBold;
 										font-size: 18px;
 										vertical-align: middle;
@@ -453,8 +523,10 @@
 									}
 									@media (min-width: @screen-sm){
 										padding: 20px 10px;
-										font-size: 12px;
-										span{
+										.label{
+											font-size: 12px;
+										}
+										.value{
 											font-size: 20px;
 										}
 									}
@@ -464,24 +536,21 @@
 									text-align:center;
 									.clearfix();
 									@media (min-width: @screen-sm){
-										padding: 20px 10px;
+										padding: 15px 10px;
 									}					
 								}//END quantity-wrap
 								.quantity-hidden{
 									display:none;
 								}//END quantity-hidden
 								.quantity-input{
-									width: 30%;
+									width: 27.9070%;
 									display: block;
 									float: left;
 									margin:0 auto;
-									padding-right: 0.02%;
-									@media (min-width: @screen-sm){
-										width: 50%;
-										padding-right: 6px;
-									}
+									margin-right: 2.3256%;									
 								}//END quantity-input
 								.quantity-number{
+									color: @product-item-footer-quantity-edit-color;
 									width: 100%;
 									height: 35px;
 									font-size: 12px;
@@ -493,7 +562,7 @@
 										font-size: 16px;
 									}
 									@media (min-width: @screen-sm){
-										height: 60px;
+										height: 48px;
 									 	font-size: 21px;
 									 	&:focus{
 									 		font-size: 21px;
@@ -503,11 +572,7 @@
 
 								.quantity-set{
 									float: left;
-									width: 50%;
-									padding-left: 6px;
-									@media (min-width: @screen-sm){
-										float: right;
-									}
+									width: 50.2326%;
 									label,.set-name{
 										color:@text-light-grey;
 										background: white;
@@ -525,8 +590,8 @@
 										margin-bottom: 0;
 										height: 35px;
 										@media (min-width: @screen-sm){
-											margin-bottom: 15px;
-											height: 60px;
+											margin-bottom: 2px;
+											height: 48px;
 										}
 										.radio-button{
 											cursor: pointer;
@@ -540,8 +605,8 @@
 											line-height: 35px;
 											.transition(.5s all ease-out );
 											@media (min-width: @screen-sm){
-												font-size: 22px;
-												line-height: 60px;
+												font-size: 14px;
+												line-height: 48px;
 											}
 											&.active{
 												.gothamMedium;
@@ -563,7 +628,7 @@
 										.gothamBold;
 									}
 									@media (min-width: @screen-sm){
-										font-size: 13px;
+										font-size: 10px;
 									}
 								}//END quantity-details
 							}
@@ -571,9 +636,9 @@
 						}
 					}
 					&.editing{
+						background: @product-item-info-edit-bg; 
 						.box-shadow(3px 4px 5px 0px rgba(0, 0, 0, 0.12));
 						.item-block{
-							color: @main-blue;
 							position: relative;
 							&:before{
 								height: 100%;
@@ -583,13 +648,19 @@
 								position: relative;
 								.remove-from-list{
 									svg{
-										fill: #d46363;
+										fill: @remove-icon-active-color;
 									}
 								}
 							}
 							.item-details{
 								.product-code{
-									color: @product-code;
+									color: @product-code-color;
+								}
+								.product-name{
+									color: @product-name-edit-color;
+								}
+								.product-description{
+									color: @product-description-edit-color;
 								}
 							}
 							.product-thumbnail{
@@ -602,7 +673,7 @@
 							}							
 						}
 						.item-footer{
-							background: #f4f4f4;
+							background: @product-item-footer-edit-bg;
 							.info-state{
 								padding: 0px 20px;
 								max-height: 0;
@@ -651,12 +722,12 @@
 				.gothamMedium;				
 			}
 			.switch-btn{
-				border: 1px solid #2aa785;
+				border: 1px solid @switch-toolbar-btn-border;
 				font-size: 14px;
 				text-transform: uppercase;
 				padding: 15px;
 				line-height: 1;
-				color: #54f276;
+				color: @switch-toolbar-btn-color;
 				background: none;
 				.appearance(none);
 				.border-radius(50%);
@@ -665,7 +736,7 @@
 		    top: -24px;
 		    left: 50%;
 		    margin-left: -24px;
-		    background: #066693;
+		    background: @switch-toolbar-btn-bg;
 				svg{
 			    display: inline-block;
 			    width: 16px;
@@ -703,7 +774,7 @@
 					.icon{
 						width: 30px;
 				    height: 30px;
-				    background: @main-blue;
+				    background: @main-color;
 				    display: block;
 				    position: relative;
 				    margin: 0 auto;
@@ -755,7 +826,7 @@
 							svg{
 								circle,
 								line{
-									stroke: @main-blue;
+									stroke: @main-color;
 								}		
 							}
 						}
@@ -802,7 +873,7 @@
 				}
 			}
 			.list{
-				background: @main-blue;
+				background: @main-color;
 				padding: 20px;
 				display: block;
 				color: #8fbed4;
@@ -867,13 +938,13 @@
 				margin-bottom: 12px;
 			}
 			.switch-btn{
-				border: 1px solid #2aa785;
+				border: 1px solid @switch-toolbar-btn-border;
 				font-size: 14px;
 				text-transform: uppercase;
 				padding: 15px;
 				line-height: 1;
-				color: #54f276;
-				background: none;
+				color: @switch-toolbar-btn-color;
+				background: @switch-toolbar-btn-bg;
 				.appearance(none);
 				.border-radius(0);
 				margin-bottom: 16px;
@@ -882,7 +953,7 @@
 			    width: 16px;
 			    height: 13px;
 			    vertical-align: middle;
-			    fill: #54F276;
+			    fill: @switch-toolbar-btn-color;
 				}
 				b{
 					font-style: italic;
@@ -905,7 +976,7 @@
 						height: 66px;
 						color: white;
 						display: block;
-						background: @main-blue;
+						background: @main-color;
 						line-height: 66px;
 						cursor: pointer;
 						.gothamBook;
@@ -959,17 +1030,17 @@
 				padding: 40px 0;
 			}
 			.values{
-				border-top: 1px solid #2178a0;
-				border-bottom: 1px solid #2178a0;
+				border-top: 1px solid @list-divider-color;
+				border-bottom: 1px solid @list-divider-color;
 				padding: 38px 0;
 				margin-bottom: 20px;
 				.subtotal,
 				.total{
-					color: white;
+					color: @total-color;
 					.clearfix();
 				}	
 				.subtotal{
-					color: #8fbed4;				
+					color: @subtotal-color;				
 				}		
 				.total{
 					font-weight: bold;
@@ -992,9 +1063,9 @@
 				}
 			}
 			.checkout-btn{
-				color: @main-blue;
+				color: @checkout-btn-color;
 				border: none;
-				background-color: #54f276;
+				background-color: @checkout-btn-bg;
 				text-transform: uppercase;
 				font-size: 21px;
 				line-height: 1;
@@ -1029,7 +1100,7 @@
   	}
 		.tour-info-small{
 			position: relative;
-			background: #3ba8da;
+			background: @take-a-tour-btn-bg;
 			text-align: center;
 			color: white;
 			padding: 20px;

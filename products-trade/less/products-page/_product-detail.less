@@ -1,14 +1,18 @@
 @bg-price-box: #f4f4f4;
 @bg-cmp: #c8c8c8;
 @text-code: #bababa;
-@text-price: @main-blue;
+@text-price: @main-color;
 @text-price-inc: #646464;
 @text-price-exc: #b4b4b4;
 @text-icons: #bababa;
 @text-price-divider: #eaeaea;
 @dropdown-border: #bfbfbf;
+@postcode-input-bg: #f1f1f1;
 @share-icon-color: #7f7f7f;
 @arrow-down-color: #a6a6a6;
+@images-folder: "/templates/images";
+
+
 .main-section#product-detail{
 	padding-top: 44px;
 	img{
@@ -141,7 +145,7 @@
 		width: 50px;
 		height: 50px;
 		.border-radius(50%);
-		border: 2px solid @main-blue;
+		border: 2px solid @main-color;
 		background-color: white;
 		background-size: cover;
 		.transition(-moz-transform 0.3s ease-out,-webkit-transform 0.3s ease-out,-ms-transform 0.3s ease-out,transform 0.3s ease-out;);
@@ -157,7 +161,7 @@
 		position: relative;
 		z-index: 1;
 		overflow: hidden;
-		border: 2px solid @main-blue;
+		border: 2px solid @main-color;
 		.transition(0.2s all ease-out);
 		&:before{
 			@media (min-width: @screen-sm){
@@ -175,7 +179,7 @@
 		}
 		&:hover{
 			@media (min-width: @screen-sm){
-				color: @main-blue;
+				color: @main-color;
 				&:before{
 					width: 100%;
 					.transform(translateX(0));
@@ -217,7 +221,7 @@
 			&.progress-circle{
 				width: 56px;
 				height: 56px;
-				stroke: @main-blue;
+				stroke: @main-color;
 				stroke-width: 2;
 				stroke-dasharray: 204px;
 				stroke-dashoffset: 204px;				
@@ -371,7 +375,7 @@
 			position: relative;
 			.transition("0.3s color ease-out, 0.3s background ease-out");
 			&:hover{
-				color: @main-blue;
+				color: @main-color;
 				background: @bg-price-box;
 			}
 			svg{
@@ -419,11 +423,11 @@
 		}
 		&.open{
 			.options-name{
-				color: @main-blue;
+				color: @main-color;
 				background: @bg-price-box;
 				svg{
 					.transform(rotate(180deg));
-					fill: @main-blue;
+					fill: @main-color;
 				}
 			}
 			.options-list{
@@ -612,6 +616,61 @@
 					}
 				}//END tab-pane
 			}//END product-prices
+			.product-postcode-input{
+				background: @postcode-input-bg url("@{images-folder}/product-detail/bg-light-green-stripes.jpg");
+				padding: 14px 10px 34px;
+				position: relative;
+				.clearfix();
+				.product-postcode-input-text{
+					float: left;
+					width: 50%;
+					font-size: 12px;
+					text-align: left;
+					b{
+						font-size: 22px;
+						display: block;
+					}
+					p{
+						margin: 0;
+					}
+				}
+				.product-postcode-input-field{
+					float: left;
+					width: 50%;
+					position: relative;
+				}
+				.product-postcode-overlay{
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					&:after{
+						content: " ";
+						position: absolute;
+						background: white;
+						height: 10px;
+						bottom: 0;
+						right: 0;
+						display: block;
+						width: 30%;
+				    .transform(skew(-45deg));
+				    .transform-origin(bottom right;);
+					}
+					&:before{
+						content: " ";
+						position: absolute;
+						background: white;
+						height: 10px;
+						bottom: 0;
+						left: 0;
+						display: block;
+						width: 70%;
+						.transform(skew(45deg));
+						.transform-origin(bottom left;);
+					}
+				}
+			}//End product-postcode-input
 			.product-quantity{
 				.quantity-wrap{
 					text-align:center;
@@ -724,7 +783,7 @@
 		.product-share{
 			margin-bottom: 48px;
 			b{
-				color: @main-blue;
+				color: @main-color;
 				display: block;
 				margin-bottom: 16px;
 			}
@@ -915,7 +974,7 @@
 			svg{
 				width: 14px;
 				height: 14px;
-				fill: @main-blue;
+				fill: @main-color;
 			}
 		}			
 		.slick-prev{
@@ -924,7 +983,7 @@
 			svg{
 				width: 14px;
 				height: 14px;
-				fill: @main-blue;
+				fill: @main-color;
 			}
 		}			
 	}

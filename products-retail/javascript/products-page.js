@@ -19,7 +19,23 @@ var isMobile = {
     }
 };
 
+var isIE = function(){
+  var sAgent = window.navigator.userAgent;
+  var Idx = sAgent.indexOf("MSIE");
 
+  // If IE, return version number.
+  if (Idx > 0){
+    return parseInt(sAgent.substring(Idx+ 5, sAgent.indexOf(".", Idx)));
+  }
+  // If IE 11 then look for Updated user agent string.
+  else if (!!navigator.userAgent.match(/Trident\/7\./)){
+    return 11;
+  }
+  else{
+    return false; //It is not IE
+  }
+};
+var ieV = isIE();
 /* Youtube API code for channel page */
 // 1. This code gets GET parameters for us (in case we wish a
 // specific video to autoplay.
@@ -661,7 +677,13 @@ var product_pages = {
             } );
 
         }
-
+        var shopping_cart_content_height = $('#shopping-cart-widget .shopping-cart-content').height();
+        var shopping_cart_content_scrollHeight = $('#shopping-cart-widget .shopping-cart-content').get(0).scrollHeight;
+        $('#shopping-cart-widget .shopping-cart-content').on('mousewheel', function(e,d){
+                if((this.scrollTop === (shopping_cart_content_scrollHeight - shopping_cart_content_height) && d < 0) || (this.scrollTop === 0 && d > 0)) {
+                  e.preventDefault();
+                }
+        });
         removeIOSRubberEffect( document.querySelector( ".scrollable" ) );
         var event = 'click';
         if(deviceMobile){
@@ -694,10 +716,14 @@ var product_pages = {
         if(!deviceMobile){
             var scrollTopOnHover = 0;
             $('#shopping-cart-widget').on('mouseover', function(){
-                $('html,body').addClass('overflow-hidden');
+                if(isIE==0){
+                    $('html,body').addClass('overflow-hidden');
+                }
                 scrollTopOnHover = $(window).scrollTop();
             }).on('mouseout', function(){
-                $('html,body').removeClass('overflow-hidden');
+                if(isIE==0){
+                    $('html,body').removeClass('overflow-hidden');
+                }
                 setTimeout( function(){ $(window).scrollTop(scrollTopOnHover)}, 100);
             });
         }

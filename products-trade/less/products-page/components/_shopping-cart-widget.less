@@ -101,7 +101,7 @@
 		}
 	}
 	@media (min-width: @screen-sm){
-		position: absolute;
+		position: fixed;
 		top: 0;
 		left: inherit;
 		right: -535px;
@@ -129,7 +129,7 @@
     @media (min-width: @screen-sm){
     	.transform(translateX(100px));
     	.transform(translate3d(100px,0,0));
-    	height: calc(~"100vh - 185px");		
+    	height: 100vh;		
     	width: 535px;
     	position: absolute;
 	    top: 0;
@@ -143,21 +143,13 @@
 	}
 	&.open{
 		.shopping-cart-content{
-			height: calc(~"100vh - 120px");		
+			height: 100vh;		
 			@media (min-width: @screen-sm){
-				height: calc(~"100vh - 90px");
 				.transform(translateX(0));
-			}
-			@media (min-width: @screen-md){
-				height: calc(~"100vh - 185px");
-			}
-			@media (min-width: @screen-lg){
-				height: calc(~"100vh - 185px");
-			}
+			}			
 		}
 		&.fixed{
 			.shopping-cart-content{
-				height: calc(~"100vh - 44px");		
 				@media (min-width: @screen-sm){
 					height: 100vh;
 					.transform(translateX(0));
@@ -202,8 +194,8 @@
 	aside{
 		touch-action: manipulation;
 		background: @widget-bar-bg;
-		overflow: scroll;
-		-webkit-overflow-scrolling: touch;
+		/*overflow: scroll;
+		-webkit-overflow-scrolling: touch;*/
 		text-align: center;
 		cursor: pointer;
 		padding: 10px 0;

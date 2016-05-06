@@ -19,6 +19,23 @@ var isMobile = {
     }
 };
 
+var isIE = function(){
+  var sAgent = window.navigator.userAgent;
+  var Idx = sAgent.indexOf("MSIE");
+
+  // If IE, return version number.
+  if (Idx > 0){
+    return parseInt(sAgent.substring(Idx+ 5, sAgent.indexOf(".", Idx)));
+  }
+  // If IE 11 then look for Updated user agent string.
+  else if (!!navigator.userAgent.match(/Trident\/7\./)){
+    return 11;
+  }
+  else{
+    return false; //It is not IE
+  }
+};
+var ieV = isIE();
 
 /* Youtube API code for channel page */
 // 1. This code gets GET parameters for us (in case we wish a
@@ -597,7 +614,7 @@ var product_pages = {
             $('#shopping-cart-widget').addClass('mobile');
         }
         function calculateWidgetContentHeight(){
-            var windowWidth = $(window).width();
+            /*var windowWidth = $(window).width();
             var windowHeight = $(window).height();
             var scrollTop = $(window).scrollTop();
             var height = windowHeight;
@@ -625,7 +642,8 @@ var product_pages = {
                 }
             if(!$('#shopping-cart-widget').hasClass('open')){
                 height = 0;
-            }
+            }*/
+            height = '';
             return height;            
         }
         document.ontouchmove = function ( event ) {
@@ -661,7 +679,13 @@ var product_pages = {
             } );
 
         }
-
+        var shopping_cart_content_height = $('#shopping-cart-widget .shopping-cart-content').height();
+        var shopping_cart_content_scrollHeight = $('#shopping-cart-widget .shopping-cart-content').get(0).scrollHeight;
+        $('#shopping-cart-widget .shopping-cart-content').on('mousewheel', function(e,d){
+                if((this.scrollTop === (shopping_cart_content_scrollHeight - shopping_cart_content_height) && d < 0) || (this.scrollTop === 0 && d > 0)) {
+                  e.preventDefault();
+                }
+        });
         removeIOSRubberEffect( document.querySelector( ".scrollable" ) );
         var event = 'click';
         if(deviceMobile){
@@ -688,16 +712,18 @@ var product_pages = {
                 $('#shopping-cart-widget').removeClass('fixed');
             }            
         }).scroll();
-        function preventEvents(e){
-            e.stopPropagation();                  
-        }
         if(!deviceMobile){
             var scrollTopOnHover = 0;
             $('#shopping-cart-widget').on('mouseover', function(){
-                $('html,body').addClass('overflow-hidden');
+                if(!isIE){
+                    $('html,body').addClass('overflow-hidden');
+                }
                 scrollTopOnHover = $(window).scrollTop();
             }).on('mouseout', function(){
-                $('html,body').removeClass('overflow-hidden');
+                if(!isIE){
+                    $('html,body').removeClass('overflow-hidden');
+                }
+               // $(window).scroll(function() { return false; });
                 setTimeout( function(){ $(window).scrollTop(scrollTopOnHover)}, 100);
             });
         }
@@ -725,15 +751,6 @@ var product_pages = {
                 height = calculateWidgetContentHeight();
                 TweenMax.to($('#shopping-cart-widget .shopping-cart-content'),0.5,{x: 0, opacity: 1, height: height});
                 $('.product-detail-wrap, aside').addClass('disable-scrolling');
-               /* $('#shopping-cart-widget aside button').css({
-                    'position': 'absolute',
-                    'top': top + 10`
-                });*/
-                $('.shopping-cart-content').on('scroll', preventEvents);   
-                if($(window).width() > 768 && !deviceMobile){
-                  
-                }
-                //$('html,body').addClass('overflow-hidden');
             }else{
                 var right = -535;
                 if($(window).width()> 1199){
@@ -748,15 +765,9 @@ var product_pages = {
                     TweenMax.to($('#shopping-cart-widget'),0.5,{right: right, height: ''});
                     TweenMax.to($('#shopping-cart-widget .shopping-cart-content'),0.5,{x: 100, opacity: 0, height: 0});
                 }
-                $('.product-detail-wrap, aside').removeClass('disable-scrolling');
-                //$('html, body').removeClass('overflow-hidden');    
-                if($(window).width() > 768 && !deviceMobile){
-                  $('.shopping-cart-content').off('scroll', preventEvents);   
-                }
-                //$('body').off('scroll mousedown touchdown mousemove click touchstop touchstart touchmove', preventEvents); 
+                $('.product-detail-wrap, aside').removeClass('disable-scrolling');                
             }
-            e.stopPropagation();
-                        
+            e.stopPropagation();                        
         });
         $('#shopping-cart-widget .shopping-cart-product-list .switch-btn').on('click', function(){
             $('#shopping-cart-widget .shopping-cart-product-list').addClass('out');

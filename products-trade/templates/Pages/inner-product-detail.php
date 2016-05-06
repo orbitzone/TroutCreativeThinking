@@ -56,7 +56,7 @@
 											<img class="img-responsive" src="templates/images/product-detail/product-image3.jpg" alt="item">
 										</div>
 										<div>
-											<a href="#" title="Watch video"  class="lightbox-video" data-video="Etkva-n4_4s">
+											<a href="#" title="Watch video"  class="lightbox-video" data-video="F-kP7xe9j70">
 												<img class="img-responsive" src="templates/images/product-detail/product-image4.jpg" alt="item">
 												<span class="play-button">
 													<svg width="46.5px" height="46.5px" viewBox="0 0 46.5 46.5">

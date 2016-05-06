@@ -45,11 +45,10 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 var player;
 function onYouTubeIframeAPIReady() {
     playerDivID = 'video-lightbox-container';
-    $playerDiv = $('#'+playerDivID);
     player = new YT.Player(playerDivID, {
         height: '500',
         width: '640',
-        videoId: $playerDiv.attr('data-video-id'),
+        videoId: 'F-kP7xe9j70',
         playerVars: {
             'showinfo': 0,
             'rel': 0,
@@ -811,10 +810,14 @@ var product_pages = {
         
         $('.lightbox-video').on('click', function(){
             var video = $(this).data('video');
-            player.loadVideoById(
-                {'videoId': video,
-               'suggestedQuality': 'large'
-            });
+            if(!deviceMobile){
+                player.loadVideoById(
+                    {'videoId': video,
+                   'suggestedQuality': 'large'
+                });
+            }else{
+                player.cueVideoByUrl('http://www.youtube.com/v/'+video+'?version=3',0,"medium");                
+            }
             $('#video-lightbox').addClass('show');
             return false;
         });
@@ -931,6 +934,9 @@ var product_pages = {
                     $(".product-images-wrap .product-thumb").removeClass('slick-current');
                     $(".product-images-wrap .product-thumb:eq("+current+")").addClass('slick-current');
                 }
+            }
+            if($('#video-lightbox').hasClass('show')){
+                player.stopVideo();
             }
             if($(e.target).parents('.lightbox-content').length == 0){
                 $('.lightbox').removeClass('show');

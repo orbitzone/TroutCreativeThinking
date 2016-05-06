@@ -113,14 +113,6 @@
 			}
 			.product-thumbs{
 				text-align: center;
-				padding: 0 20px;
-				.product-thumb{
-					padding: 0;
-					display: inline-block;
-					float: none;
-					width: 56px;
-
-				}
 			}			
 		}
 	}
@@ -443,6 +435,7 @@
 		}
 	}//END product-content-wrap
 	.product-images{
+		padding-bottom: 30px;
 		.slick-dots{
 			border-bottom: 1px solid #dcdcdc;
 			padding-bottom: 30px;
@@ -499,21 +492,13 @@
 		}
 		.product-thumbs{
 			padding: 0 30px;
+			margin-bottom: 0;
 			.clearfix();
 			.product-thumb{
 				margin: 0 10px;
 				outline: none;
 				cursor: pointer;
-				margin-bottom: 30px;
-				width: percentage(1/5);
-				float: left;
 				position: relative;
-				@media (min-width: @screen-sm){
-					width: percentage(1/3);				
-				}
-				@media (min-width: @screen-md){
-					width: percentage(1/5);				
-				}
 				img{
 					.transition(0.3s border ease-out);
 					border: solid 1px @border-light-grey;
@@ -524,6 +509,13 @@
 					}	
 				}
 			}
+			.slick-next{
+				right: 0;
+			}
+			.slick-prev{
+				left: 0;
+			}
+
 		}//END product-thumbs
 	}//END product-images
 	.product-description-wrap{
@@ -873,8 +865,46 @@
 			}
 			.section-content{
 				border-top: none;
+			}
+			.slick-next{
+				top: 37%;
+				right: -20px;
+				svg{
+					width: 14px;
+					height: 14px;
+					fill: white;
+				}
+			}			
+			.slick-prev{
+				top: 37%;
+				left: -20px;
+				svg{
+					width: 14px;
+					height: 14px;
+					fill: white;
+				}
 			}			
 		}		
+	}
+	.installation-section{
+		.slick-next{
+			top: 37%;
+			right: -20px;
+			svg{
+				width: 14px;
+				height: 14px;
+				fill: @main-blue;
+			}
+		}			
+		.slick-prev{
+			top: 37%;
+			left: -20px;
+			svg{
+				width: 14px;
+				height: 14px;
+				fill: @main-blue;
+			}
+		}			
 	}
 	.video-slider{
 		.video-thumbnail{
@@ -906,13 +936,11 @@
 	.video-slider,
 	.product-suggestion-slider{
 		margin-bottom: 20px;
-		@media (min-width: @screen-sm) {
-			margin: 0 -15px;
-			margin-bottom: 20px;
-			.one-slide{
-				padding: 0 15px;
-			}
-		}
+		margin: 0 -15px;
+		margin-bottom: 20px;
+		.one-slide{
+			padding: 0 15px;
+		}		
 	}
 	.product-suggestion-slider{
 		margin-bottom: 50px;

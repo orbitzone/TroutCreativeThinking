@@ -821,12 +821,6 @@ var product_pages = {
                 }
               ]
             });
-            $mainSlider.on('afterChange', function(event, slick, currentSlide){
-                $('.slider-lightbox .product-images-slider').slick('slickGoTo',currentSlide);
-            });
-            $mainSlider.on('beforeChange', function(){
-                
-            });
             var $thumbsSlider = $(this).find('.product-thumbs-slider');
             $thumbsSlider.slick({
               infinite: true,
@@ -837,7 +831,6 @@ var product_pages = {
               dots: false,
               arrows: true,
               asNavFor: '.product-images-wrap .product-images .product-images-slider',
-              centerMode: true,
               focusOnSelect: true,
               responsive: [
                 {
@@ -873,23 +866,17 @@ var product_pages = {
                 }
               ]
             });
-            $mainSlider.on('afterChange', function(event, slick, currentSlide){
-                $('.product-images-wrap .product-images-slider').slick('slickGoTo',currentSlide);
-            });
-            $mainSlider.on('beforeChange', function(){
-                
-            });
             var $thumbsSlider = $(this).find('.product-thumbs-slider');
             $thumbsSlider.slick({
               infinite: true,
-              slidesToShow: 4,
+              slidesToShow: 8,
               slidesToScroll: 1,
               prevArrow: '<button type="button" class="slick-prev"><svg viewBox="0 0 26 46" id="shape-arrow-left"><title>arrow-left</title> <g id="arrow-left-arrow-left"> <path d="M24.4,0.6C24.1,0.2,23.5,0,23,0c-0.5,0-1,0.2-1.4,0.6l-21,21c-0.8,0.8-0.8,2.1,0,2.8l21,21c0.8,0.8,2.1,0.8,2.8,0c0.8-0.8,0.8-2.1,0-2.8L4.9,23L24.4,3.4C25.2,2.6,25.2,1.4,24.4,0.6z"/> </g> </svg></button>',
               nextArrow: '<button type="button" class="slick-next"><svg viewBox="0 0 26 46" id="shape-arrow-right"><title>arrow-right</title> <g id="arrow-right-arrow-right"> <path d="M1.6,45.4C2,45.8,2.5,46,3,46c0.5,0,1-0.2,1.4-0.6l21-21c0.8-0.8,0.8-2.1,0-2.8l-21-21c-0.8-0.8-2.1-0.8-2.8,0c-0.8,0.8-0.8,2.1,0,2.8L21.2,23L1.6,42.6C0.8,43.4,0.8,44.7,1.6,45.4z"/> </g> </svg></button>',
               dots: false,
               arrows: true,
               asNavFor: '.slider-lightbox .product-images .product-images-slider',
-              centerMode: true,
+              //centerMode: true,
               focusOnSelect: true,
               responsive: [
                 {
@@ -905,12 +892,28 @@ var product_pages = {
             })
         });        
         $('.product-images-slider-wrap .zoom').on('click', function(e){
+            var current = $(".product-images-wrap .product-images-slider").slick('slickCurrentSlide');
+            $(".slider-lightbox .product-images-slider").slick('slickGoTo',current, true);
+            $(".slider-lightbox .product-thumbs-slider").slick('slickGoTo',current, true);
+            if($(".slider-lightbox .product-thumb.slick-cloned").length == 0){
+                $(".slider-lightbox .product-thumb").removeClass('slick-current');
+                $(".slider-lightbox .product-thumb:eq("+current+")").addClass('slick-current');
+            }
             $('.slider-lightbox').addClass('show');
         });
         $('.lightbox').on(event, function(e){
+            if($('.slider-lightbox').hasClass('show')){
+                var current = $(".slider-lightbox .product-images-slider").slick('slickCurrentSlide');
+                $(".product-images-wrap .product-images-slider").slick('slickGoTo',current, true);
+                $(".product-images-wrap .product-thumbs-slider").slick('slickGoTo',current, true);
+                if($(".product-images-wrap .product-thumb.slick-cloned").length == 0){
+                    $(".product-images-wrap .product-thumb").removeClass('slick-current');
+                    $(".product-images-wrap .product-thumb:eq("+current+")").addClass('slick-current');
+                }
+            }
             if($(e.target).parents('.lightbox-content').length == 0){
                 $('.lightbox').removeClass('show');
-            }
+            }            
         });        
         //
         // INIITALISE VIDEO SLIDER
@@ -924,12 +927,24 @@ var product_pages = {
             prevArrow: '<button type="button" class="slick-prev"><svg viewBox="0 0 26 46" id="shape-arrow-left"><title>arrow-left</title> <g id="arrow-left-arrow-left"> <path d="M24.4,0.6C24.1,0.2,23.5,0,23,0c-0.5,0-1,0.2-1.4,0.6l-21,21c-0.8,0.8-0.8,2.1,0,2.8l21,21c0.8,0.8,2.1,0.8,2.8,0c0.8-0.8,0.8-2.1,0-2.8L4.9,23L24.4,3.4C25.2,2.6,25.2,1.4,24.4,0.6z"/> </g> </svg></button>',
             nextArrow: '<button type="button" class="slick-next"><svg viewBox="0 0 26 46" id="shape-arrow-right"><title>arrow-right</title> <g id="arrow-right-arrow-right"> <path d="M1.6,45.4C2,45.8,2.5,46,3,46c0.5,0,1-0.2,1.4-0.6l21-21c0.8-0.8,0.8-2.1,0-2.8l-21-21c-0.8-0.8-2.1-0.8-2.8,0c-0.8,0.8-0.8,2.1,0,2.8L21.2,23L1.6,42.6C0.8,43.4,0.8,44.7,1.6,45.4z"/> </g> </svg></button>',
             responsive: [
+            {
+                    breakpoint: 1200,
+                    settings:{
+                        arrows: false,
+                        dots: true,
+                        infinite: true,
+                        slidesToShow: 3,
+                        slidesToScroll: 3
+                    }
+                },
                 {
                     breakpoint: 767,
                     settings:{
                         infinite: true,
                         slidesToShow: 2,
-                        slidesToScroll: 2
+                        slidesToScroll: 2,
+                        arrows: false,
+                        dots: true
                     }
                 },
                 {
@@ -937,7 +952,9 @@ var product_pages = {
                     settings:{
                         infinite: true,
                         slidesToShow: 1,
-                        slidesToScroll: 1
+                        slidesToScroll: 1,
+                        arrows: false,
+                        dots: true
                     }
                 }
             ]

@@ -3726,13 +3726,6 @@ Slick slider arrow
 }
 #product-pages .main-section#product-detail .lightbox .lightbox-content .product-thumbs {
   text-align: center;
-  padding: 0 20px;
-}
-#product-pages .main-section#product-detail .lightbox .lightbox-content .product-thumbs .product-thumb {
-  padding: 0;
-  display: inline-block;
-  float: none;
-  width: 56px;
 }
 #product-pages .main-section#product-detail .added-to-cart {
   position: fixed;
@@ -4153,6 +4146,9 @@ Slick slider arrow
     float: left;
   }
 }
+#product-pages .main-section#product-detail .product-images {
+  padding-bottom: 30px;
+}
 #product-pages .main-section#product-detail .product-images .slick-dots {
   border-bottom: 1px solid #dcdcdc;
   padding-bottom: 30px;
@@ -4217,6 +4213,7 @@ Slick slider arrow
 }
 #product-pages .main-section#product-detail .product-images .product-thumbs {
   padding: 0 30px;
+  margin-bottom: 0;
 }
 #product-pages .main-section#product-detail .product-images .product-thumbs:before,
 #product-pages .main-section#product-detail .product-images .product-thumbs:after {
@@ -4230,20 +4227,7 @@ Slick slider arrow
   margin: 0 10px;
   outline: none;
   cursor: pointer;
-  margin-bottom: 30px;
-  width: 20%;
-  float: left;
   position: relative;
-}
-@media (min-width: 768px) {
-  #product-pages .main-section#product-detail .product-images .product-thumbs .product-thumb {
-    width: 33.33333333%;
-  }
-}
-@media (min-width: 992px) {
-  #product-pages .main-section#product-detail .product-images .product-thumbs .product-thumb {
-    width: 20%;
-  }
 }
 #product-pages .main-section#product-detail .product-images .product-thumbs .product-thumb img {
   -moz-transition: 0.3s border ease-out;
@@ -4255,6 +4239,12 @@ Slick slider arrow
 }
 #product-pages .main-section#product-detail .product-images .product-thumbs .product-thumb.slick-current img {
   border: solid 1px black;
+}
+#product-pages .main-section#product-detail .product-images .product-thumbs .slick-next {
+  right: 0;
+}
+#product-pages .main-section#product-detail .product-images .product-thumbs .slick-prev {
+  left: 0;
 }
 #product-pages .main-section#product-detail .product-description-wrap {
   text-align: center;
@@ -4695,6 +4685,42 @@ Slick slider arrow
 #product-pages .main-section#product-detail .section.videos-section .section-content {
   border-top: none;
 }
+#product-pages .main-section#product-detail .section.videos-section .slick-next {
+  top: 37%;
+  right: -20px;
+}
+#product-pages .main-section#product-detail .section.videos-section .slick-next svg {
+  width: 14px;
+  height: 14px;
+  fill: white;
+}
+#product-pages .main-section#product-detail .section.videos-section .slick-prev {
+  top: 37%;
+  left: -20px;
+}
+#product-pages .main-section#product-detail .section.videos-section .slick-prev svg {
+  width: 14px;
+  height: 14px;
+  fill: white;
+}
+#product-pages .main-section#product-detail .installation-section .slick-next {
+  top: 37%;
+  right: -20px;
+}
+#product-pages .main-section#product-detail .installation-section .slick-next svg {
+  width: 14px;
+  height: 14px;
+  fill: #0776aa;
+}
+#product-pages .main-section#product-detail .installation-section .slick-prev {
+  top: 37%;
+  left: -20px;
+}
+#product-pages .main-section#product-detail .installation-section .slick-prev svg {
+  width: 14px;
+  height: 14px;
+  fill: #0776aa;
+}
 #product-pages .main-section#product-detail .video-slider .video-thumbnail {
   position: relative;
 }
@@ -4722,18 +4748,12 @@ Slick slider arrow
 }
 #product-pages .main-section#product-detail .video-slider,
 #product-pages .main-section#product-detail .product-suggestion-slider {
+  margin: 0 -15px;
   margin-bottom: 20px;
 }
-@media (min-width: 768px) {
-  #product-pages .main-section#product-detail .video-slider,
-  #product-pages .main-section#product-detail .product-suggestion-slider {
-    margin: 0 -15px;
-    margin-bottom: 20px;
-  }
-  #product-pages .main-section#product-detail .video-slider .one-slide,
-  #product-pages .main-section#product-detail .product-suggestion-slider .one-slide {
-    padding: 0 15px;
-  }
+#product-pages .main-section#product-detail .video-slider .one-slide,
+#product-pages .main-section#product-detail .product-suggestion-slider .one-slide {
+  padding: 0 15px;
 }
 #product-pages .main-section#product-detail .product-suggestion-slider {
   margin-bottom: 50px;

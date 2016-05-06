@@ -801,6 +801,12 @@ var product_pages = {
             $('#video-lightbox').addClass('show');
             return false;
         });
+        $('input[name=userpostcode]').on('change', function(){
+            $('.product-price').html('$942.99<small>gst inc.</small>');
+            $('.product-prices, .product-code').removeClass('hidden');
+            $('.product-postcode-input').slideUp();
+            $('button.add-to-cart').removeAttr('disabled');
+        });
         //
         // INIITALISE HERO GALLERY SLIDER
         //

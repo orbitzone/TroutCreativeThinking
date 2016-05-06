@@ -551,6 +551,10 @@
 			&.hide-bx{
 				opacity: 0;
 			}
+			
+				.image{
+					cursor: pointer;
+				}
 			.zoom{
 				position: absolute;
 				bottom: 25px;
@@ -681,6 +685,16 @@
 						}
 					}
 				}//END nav-tabs
+				.product-price{
+					font-size: 22px;
+					.gothamBold;
+					line-height: 1;
+					small{
+						font-size: 13px;
+						.gothamBook;
+						display: block;
+					}
+				}
 				.tab-pane{
 					background:  @bg-price-box;
 					.gothamBold;
@@ -702,6 +716,7 @@
 				background: @postcode-input-bg url("@{images-folder}/product-detail/bg-light-green-stripes.jpg");
 				padding: 14px 10px 34px;
 				position: relative;
+				margin-bottom: 10px;
 				.clearfix();
 				.product-postcode-input-text{
 					float: left;
@@ -756,7 +771,25 @@
 			.product-quantity{
 				.quantity-wrap{
 					text-align:center;
-					.clearfix();					
+					.clearfix();
+					&.with-button{
+						.quantity-input{
+							width: 20.60%;
+							margin-right: 4.68%;
+							padding-right: 0;
+							.quantity-number{
+								height: 55px;
+							}
+						}
+						.product-addbutton{
+							width: 74.72%;
+							float: left;
+							.add-to-cart{
+								height: 55px;
+							}	
+						}
+						
+					}
 				}//END quantity-wrap
 				.quantity-hidden{
 					display:none;
@@ -781,7 +814,7 @@
 					background-color: @bg-table-header-grey;
 					text-align:center;					
 				}//END quantity-number
-
+				
 				.quantity-set{
 					float: right;
 					width: 50%;
@@ -850,11 +883,21 @@
 				width: 100%;
 				.clearfix();
 				> li{
-					display: block;
 					margin-bottom: 25px;
 					@media (min-width: @screen-md){
-						width: 50%;
-						float: left;
+						&:nth-child(1):nth-last-child(1) {
+							width: 100%;
+							.options-dropdown{
+								max-width: 293px;
+								margin: 0 auto;
+							}
+						}
+						li:nth-child(1):nth-last-child(2),
+						li:nth-child(2):nth-last-child(1) {
+							display: block;
+							width: 50%;
+							float: left;
+						}
 					}
 					li{
 							text-align: left;
@@ -922,15 +965,42 @@
 		background: grey url("@{images-folder}/product-detail/bg-light-stripes.png");
 	}
 	#product-summary{
+		padding-bottom: 35px;
+		.section-content{
+			padding-top: 40px;
+		}
 		h3{
 			padding-bottom: 0;
 		}
 	}
 	#product-highlights{
-		.section-content{
-			border-top: none;
-		}		
+		border-top: 1px solid @section-border;
+		padding: 55px 0 25px;
+		text-align: center;
+		ul{
+			.clearfix();
+			li{
+				padding: 0 20px;
+				max-width: 152px;
+				margin: 0 auto;
+				margin-bottom: 30px;
+				font-size: 15px;
+				@media (min-width: @screen-lg){
+					max-width: 100%;
+					float: left;
+					width: percentage(1/5);
+				}
+			}
+		}
+		.icon{
+			margin-bottom: 20px;
+			img{
+				margin: 0 auto;
+				height: 25px;
+			}
+		}
 	}
+
 	#product-display{
 		padding: 85px 0;
 		margin-bottom: 40px;

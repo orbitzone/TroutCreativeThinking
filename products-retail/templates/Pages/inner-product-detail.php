@@ -143,11 +143,11 @@
 								</div>
 							</div>
 							<div class="product-details">
-								<div class="product-code">
+								<div class="product-code hidden">
 									2259656
 								</div>
-								<div class="product-prices">
-										<div class="product-price">$942.99<small>gst inc.</small></div>											
+								<div class="product-prices hidden">
+										<div class="product-price"></div>											
 								</div>
 								<div class="product-postcode-input">
 									<div class="product-postcode-overlay"></div>
@@ -161,39 +161,39 @@
 								</div>
 								<div class="product-quantity-wrap">
 									<div class="product-quantity">
-										<div class="quantity-wrap">
+										<div class="quantity-wrap with-button">
 											<div class="quantity-input">
 												<input class="quantity-number" data-productcode="7845123" inputmode="numeric" type="text" name="quantity" min="1" value="1">
-											</div>											
+											</div>
+											<div class="product-addbutton">
+												<div class="progress-button">
+													<!-- button with text -->
+													<button type="button" class="btn add-to-cart full-width" disabled>add to cart</button>
+
+													<!-- svg circle for progress indication -->
+													<svg class="progress-circle" width="70" height="70"  viewBox="0 0 70 70">
+														<path d="m35,2.5c17.955803,0 32.5,14.544199 32.5,32.5c0,17.955803 -14.544197,32.5 -32.5,32.5c-17.955803,0 -32.5,-14.544197 -32.5,-32.5c0,-17.955801 14.544197,-32.5 32.5,-32.5z"/>
+													</svg>
+
+													<!-- checkmark to show on success -->
+													<svg class="check" width="51.4px" height="38.5px" viewBox="0 0 51.4 38.5">
+														<path class="short" fill="none" stroke="#010202" stroke-width="2" stroke-miterlimit="10" d="M0.7,23.7l14.1,14.1"/>
+														<path class="long" fill="none" stroke="#010202" stroke-width="2" stroke-miterlimit="10" d="M13.5,37.8L50.7,0.7"/>
+													</svg>
+
+													<!-- cross to show on error -->
+													<svg class="cross" width="70" height="70">
+														<path d="m35,35l-9.3,-9.3"/>
+														<path d="m35,35l9.3,9.3"/>
+														<path d="m35,35l-9.3,9.3"/>
+														<path d="m35,35l9.3,-9.3"/>
+													</svg>
+
+												</div><!-- /progress-button -->									
+											</div>
 										</div>
 									</div>									
-								</div>
-								<div class="product-addbutton">
-									<div class="progress-button">
-										<!-- button with text -->
-										<button type="button" class="btn add-to-cart full-width">add to cart</button>
-
-										<!-- svg circle for progress indication -->
-										<svg class="progress-circle" width="70" height="70"  viewBox="0 0 70 70">
-											<path d="m35,2.5c17.955803,0 32.5,14.544199 32.5,32.5c0,17.955803 -14.544197,32.5 -32.5,32.5c-17.955803,0 -32.5,-14.544197 -32.5,-32.5c0,-17.955801 14.544197,-32.5 32.5,-32.5z"/>
-										</svg>
-
-										<!-- checkmark to show on success -->
-										<svg class="check" width="51.4px" height="38.5px" viewBox="0 0 51.4 38.5">
-											<path class="short" fill="none" stroke="#010202" stroke-width="2" stroke-miterlimit="10" d="M0.7,23.7l14.1,14.1"/>
-											<path class="long" fill="none" stroke="#010202" stroke-width="2" stroke-miterlimit="10" d="M13.5,37.8L50.7,0.7"/>
-										</svg>
-
-										<!-- cross to show on error -->
-										<svg class="cross" width="70" height="70">
-											<path d="m35,35l-9.3,-9.3"/>
-											<path d="m35,35l9.3,9.3"/>
-											<path d="m35,35l-9.3,9.3"/>
-											<path d="m35,35l9.3,-9.3"/>
-										</svg>
-
-									</div><!-- /progress-button -->									
-								</div>
+								</div>								
 								<div class="product-icons">
 									<div class="row">
 										<div class="col-xs-6">
@@ -315,7 +315,7 @@
 		<!-- START PRODUCT HIGHLIGHTS -->
 		<section id="product-highlights" class="section">
 			<div class="container-fluid section-container">
-				<div class="section-content">
+				<div class="section-content no-border">
 					<div class="row">
 						<div class="col-xs-12">
 							<ul class="list-inline">

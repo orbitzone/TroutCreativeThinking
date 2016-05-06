@@ -679,16 +679,19 @@ var product_pages = {
             } );
 
         }
+        removeIOSRubberEffect( document.querySelector( ".scrollable" ) );
+        //Prevent body scrolling when on widget on IE
         if(ieV){
             var shopping_cart_content_height = $('#shopping-cart-widget .shopping-cart-content').height();
             var shopping_cart_content_scrollHeight = $('#shopping-cart-widget .shopping-cart-content').get(0).scrollHeight;
             $('#shopping-cart-widget .shopping-cart-content').on('mousewheel', function(e,d){
                 if((this.scrollTop === (shopping_cart_content_scrollHeight - shopping_cart_content_height) && d < 0) || (this.scrollTop === 0 && d > 0)) {
                   e.preventDefault();
+                  e.stopPropagation();
                 }
             });
         }
-        removeIOSRubberEffect( document.querySelector( ".scrollable" ) );
+        
         var event = 'click';
         if(deviceMobile){
             event = 'touchend';

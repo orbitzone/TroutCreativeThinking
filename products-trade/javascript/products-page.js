@@ -613,39 +613,6 @@ var product_pages = {
         if(deviceMobile){
             $('#shopping-cart-widget').addClass('mobile');
         }
-        function calculateWidgetContentHeight(){
-            /*var windowWidth = $(window).width();
-            var windowHeight = $(window).height();
-            var scrollTop = $(window).scrollTop();
-            var height = windowHeight;
-
-            $('#shopping-cart-widget').height('');
-            //content height on mobile
-            
-                if(windowWidth < 768){
-                    if(scrollTop < $('#shopping-cart-widget aside').offset().top){
-                        height = windowHeight - ($('#shopping-cart-widget aside').offset().top - scrollTop ) - $('#shopping-cart-widget aside').height();
-                    }else{
-                        height = windowHeight - $('#shopping-cart-widget aside').height();
-                    }
-                }else{
-                    if(scrollTop > $('.main-section').offset().top){
-                        if(scrollTop > ($('.site-footer').offset().top - windowHeight)){
-                            height = $('.site-footer').offset().top - scrollTop;
-                            if(windowWidth > 767){
-                                $('#shopping-cart-widget').height(height);
-                            }
-                        }
-                    }else{
-                        height = (windowHeight - $('.main-section').offset().top) + scrollTop;
-                    }
-                }
-            if(!$('#shopping-cart-widget').hasClass('open')){
-                height = 0;
-            }*/
-            height = '';
-            return height;            
-        }
         document.ontouchmove = function ( event ) {
 
             var isTouchMoveAllowed = true, target = event.target;
@@ -734,8 +701,13 @@ var product_pages = {
             
             $('#shopping-cart-widget').toggleClass('open');
             if($('#shopping-cart-widget').hasClass('open')){
+                $('#shopping-cart-widget .shopping-cart-content').height('');
+                $('#shopping-cart-widget .shopping-cart-content').css({
+                    display: 'block'
+                });
+                height = $('#shopping-cart-widget .shopping-cart-content').height();
+                $('#shopping-cart-widget .shopping-cart-content').height(0);
                 TweenMax.to($('#shopping-cart-widget'),0.5,{right: 0});
-                height = calculateWidgetContentHeight();
                 TweenMax.to($('#shopping-cart-widget .shopping-cart-content'),0.5,{x: 0, opacity: 1, height: height});
                 $('.product-detail-wrap, aside').addClass('disable-scrolling');
             }else{
@@ -747,7 +719,7 @@ var product_pages = {
                 TweenMax.to($('#shopping-cart-widget .shopping-cart-content'),0.5,{x: 100, opacity: 0});
                 if(width > 767){
                     TweenMax.to($('#shopping-cart-widget'),0.5,{right: right});
-                    TweenMax.to($('#shopping-cart-widget .shopping-cart-content'),0.5,{x: 100, opacity: 0});
+                    TweenMax.to($('#shopping-cart-widget .shopping-cart-content'),0.5,{x: 100, opacity: 0, height: 0});
                 }else{
                     TweenMax.to($('#shopping-cart-widget'),0.5,{right: right, height: ''});
                     TweenMax.to($('#shopping-cart-widget .shopping-cart-content'),0.5,{x: 100, opacity: 0, height: 0});
@@ -772,9 +744,19 @@ var product_pages = {
         $(window).on('resize', function(){
             if(!$('#shopping-cart-widget').hasClass('open')){
                 $('#shopping-cart-widget').css('right','');
+            }            
+            if($('#shopping-cart-widget').hasClass('open') && $(window).width()<768){
+                $('#shopping-cart-widget .shopping-cart-content').height('');
+                height = $('#shopping-cart-widget .shopping-cart-content').height();
+                $('#shopping-cart-widget .shopping-cart-content').height(height);                
             }
-            height = calculateWidgetContentHeight();
-            $('#shopping-cart-widget .shopping-cart-content').height(height);
+        });
+        $(window).on('scroll', function(){
+            if($(window).scrollTop() > $('.main-section').offset().top){
+                $('#shopping-cart-widget').addClass('fixed');
+            }else{
+                $('#shopping-cart-widget').removeClass('fixed');
+            }
         });
         //Edit item action
         $(document).on('click','#shopping-cart-widget .edit-item, #shopping-cart-widget .product-thumbnail, #shopping-cart-widget .item-details',function(e){
@@ -1105,31 +1087,26 @@ var product_pages = {
             var thisname = thisobject.data("expandbutton");
             var expandsection = $(".expand-section[data-expandsection='" + thisname + "']");
 
-            if(thisobject.hasClass('section-title') && $(window).width() > 767){
-                e.stopPropagation();
-                return false;
-            }else{
-                if(expandsection.hasClass("opened")){
-                    thisobject.removeClass('opened');
-                    expandsection.removeClass("opened");
-                            
-                    expandsection.slideUp("slow");
-                }
-                else{
-                    thisobject.addClass('opened');
-                    expandsection.css({
-                        display: 'block'
-                    });
-                    if(thisobject.parent().find('.slick-slider').hasClass('slick-initialized')){
-                        thisobject.parent().find('.slick-slider').slick('setPosition');
-                    }
-                    expandsection.css({
-                        display: 'none'
-                    });
-                    expandsection.addClass("opened");
-                    expandsection.slideDown("slow");
-                }
+            if(expandsection.hasClass("opened")){
+                thisobject.removeClass('opened');
+                expandsection.removeClass("opened");
+                expandsection.slideUp("slow");
             }
+            else{
+                thisobject.addClass('opened');
+                expandsection.css({
+                    display: 'block'
+                });
+                if(thisobject.parent().find('.slick-slider').hasClass('slick-initialized')){
+                    thisobject.parent().find('.slick-slider').slick('setPosition');
+                }
+                expandsection.css({
+                    display: 'none'
+                });
+                expandsection.addClass("opened");
+                expandsection.slideDown("slow");
+            }
+            
         });
         // SECTION EXPAND AND COLLAPES ON LOAD
         $(".expand-section").each(

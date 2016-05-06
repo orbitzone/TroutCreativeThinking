@@ -808,7 +808,7 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 						<div class="col-xs-12">
 							<div class="inner-wrap">
 								<header data-expandbutton="product-suggestion" class="section-title text-center"><h3 class="section-heading">People also bought</h3></header>
-								<div data-expandsection="product-suggestion" class="expand-section">
+								<div data-expandsection="product-suggestion">
 								<div class="product-suggestion-slider">
 									<?php for($i = 0; $i<4;$i++){ ?>
 									<div class="one-slide">

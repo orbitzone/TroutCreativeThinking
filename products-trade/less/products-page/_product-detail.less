@@ -849,14 +849,13 @@
 			&.opened{
 				display: block;
 			}
-			@media (min-width: @screen-sm){
-				display: block !important;
-			}
 		}
 		.section-title{
 			padding: 10px 0;
 			margin: 20px 0;
-			cursor: pointer;
+			&.action-expand-button{
+				cursor: pointer;
+			}
 			h3.section-heading{
 				padding:0;
 				margin:0; 
@@ -869,12 +868,7 @@
 					height: 11px;
 					fill: @arrow-down-color;
 					float: right;
-				}
-				@media (min-width: @screen-sm){
-					svg{
-						display: none;						
-					}
-				}			
+				}		
 			}
 			&.opened{
 				.section-heading{

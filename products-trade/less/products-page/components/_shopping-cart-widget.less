@@ -142,10 +142,12 @@
     }
 	}
 	&.open{
+		position: fixed;
 		.shopping-cart-content{
-			height: 100vh;		
+			height: calc(~"100vh - 44px");		
 			@media (min-width: @screen-sm){
 				.transform(translateX(0));
+				height: 100vh;
 			}			
 		}
 		&.fixed{

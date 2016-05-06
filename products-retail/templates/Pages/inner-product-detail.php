@@ -14,7 +14,7 @@
 	<div class="container-fluid section-container">
 		<div class="row">
 			<div class="col-xs-12">
-				<b>Pricing</b> Enter your postcode for current pricing. <input type="number" name="userpostcode" placeholder="Postcode" class="input-medium" minlength="4" maxlength="4" min="0" max="9999" pattern="[0-9]*">
+				<b>Pricing</b> Enter your postcode for current pricing. <input type="number" name="userpostcode" placeholder="Postcode" class="input-medium" inputmode="numeric" minlength="4" maxlength="4" min="0" max="9999" pattern="[0-9]*">
 			</div>
 		</div>
 	</div>	
@@ -170,7 +170,7 @@
 										<p>Enter your postcode for current pricing</p>	
 									</div>
 									<div class="product-postcode-input-field">
-										<input type="number" name="userpostcode" placeholder="Postcode" class="input-medium" minlength="4" maxlength="4" min="0" max="9999" pattern="[0-9]*">
+										<input type="number" name="userpostcode" placeholder="Postcode" class="input-medium" inputmode="numeric" minlength="4" maxlength="4" min="0" max="9999" pattern="[0-9]*">
 									</div>
 								</div>
 								<div class="product-quantity-wrap">
@@ -269,14 +269,17 @@
 							<div class="product-share">
 								<b class="text-cursive">Share this product</b>
 								<div class="product-share-buttons">
-								<a href="" class="share-btn"><svg width="12px" height="9.4px" viewBox="0 0 12 9.4"><path d="M10.9,2.9c-1,0.7-2.1,1.4-3.1,2.2C7.3,5.4,6.6,6,6,6h0h0C5.5,6,4.7,5.4,4.3,5.1c-1-0.7-2.1-1.5-3.1-2.2C0.7,2.6,0,1.8,0,1.2
-		C0,0.6,0.4,0,1.1,0h9.9C11.5,0,12,0.5,12,1.1C12,1.8,11.4,2.5,10.9,2.9z M12,8.4c0,0.6-0.5,1.1-1.1,1.1H1.1C0.5,9.4,0,8.9,0,8.4V3
-		c0.2,0.2,0.4,0.4,0.7,0.6C1.8,4.4,2.9,5.1,4,5.9c0.6,0.4,1.3,0.9,2,0.9h0h0c0.7,0,1.4-0.5,2-0.9c1.1-0.8,2.2-1.6,3.3-2.3
-		C11.6,3.5,11.8,3.3,12,3V8.4z"/></svg><span class="sr-only">Facebook</span></a>
-		<a href="" class="share-btn"><svg width="12px" height="9.4px" viewBox="0 0 12 9.4"><path d="M10.9,2.9c-1,0.7-2.1,1.4-3.1,2.2C7.3,5.4,6.6,6,6,6h0h0C5.5,6,4.7,5.4,4.3,5.1c-1-0.7-2.1-1.5-3.1-2.2C0.7,2.6,0,1.8,0,1.2
-		C0,0.6,0.4,0,1.1,0h9.9C11.5,0,12,0.5,12,1.1C12,1.8,11.4,2.5,10.9,2.9z M12,8.4c0,0.6-0.5,1.1-1.1,1.1H1.1C0.5,9.4,0,8.9,0,8.4V3
-		c0.2,0.2,0.4,0.4,0.7,0.6C1.8,4.4,2.9,5.1,4,5.9c0.6,0.4,1.3,0.9,2,0.9h0h0c0.7,0,1.4-0.5,2-0.9c1.1-0.8,2.2-1.6,3.3-2.3
-		C11.6,3.5,11.8,3.3,12,3V8.4z"/></svg><span class="sr-only">Twitter</span></a>
+								<a href="" class="share-btn"><svg width="20px" height="20px" viewBox="0 0 20 20">
+<path d="M15.2,3.3h-1.9c-1.5,0-1.8,0.7-1.8,1.7v2.3h3.5l-0.5,3.6h-3.1V20H7.9v-9.1H4.8V7.3h3.1V4.7
+	c0-3,1.9-4.7,4.6-4.7c1.3,0,2.4,0.1,2.7,0.1V3.3z"/>
+</svg><span class="sr-only">Facebook</span></a>
+		<a href="" class="share-btn"><svg width="20px" height="20px" viewBox="0 0 20 20">
+<path d="M17.5,6.1c0,0.2,0,0.3,0,0.5c0,5.1-3.9,11-11,11c-2.2,0-4.2-0.6-6-1.7c0.3,0,0.6,0,0.9,0
+	c1.8,0,3.5-0.6,4.8-1.7c-1.7,0-3.1-1.2-3.6-2.7c0.2,0,0.5,0.1,0.7,0.1c0.3,0,0.7,0,1-0.1c-1.8-0.4-3.1-1.9-3.1-3.8c0,0,0,0,0,0
+	C1.8,8,2.4,8.2,3.1,8.2C2,7.5,1.3,6.3,1.3,5c0-0.7,0.2-1.4,0.5-2c1.9,2.4,4.8,3.9,8,4.1C9.8,6.8,9.8,6.5,9.8,6.2
+	c0-2.1,1.7-3.9,3.9-3.9c1.1,0,2.1,0.5,2.8,1.2c0.9-0.2,1.7-0.5,2.5-0.9c-0.3,0.9-0.9,1.7-1.7,2.1c0.8-0.1,1.5-0.3,2.2-0.6
+	C18.9,4.9,18.3,5.6,17.5,6.1z"/>
+</svg><span class="sr-only">Twitter</span></a>
 									<a href="" class="share-btn"><svg width="12px" height="9.4px" viewBox="0 0 12 9.4"><path d="M10.9,2.9c-1,0.7-2.1,1.4-3.1,2.2C7.3,5.4,6.6,6,6,6h0h0C5.5,6,4.7,5.4,4.3,5.1c-1-0.7-2.1-1.5-3.1-2.2C0.7,2.6,0,1.8,0,1.2
 		C0,0.6,0.4,0,1.1,0h9.9C11.5,0,12,0.5,12,1.1C12,1.8,11.4,2.5,10.9,2.9z M12,8.4c0,0.6-0.5,1.1-1.1,1.1H1.1C0.5,9.4,0,8.9,0,8.4V3
 		c0.2,0.2,0.4,0.4,0.7,0.6C1.8,4.4,2.9,5.1,4,5.9c0.6,0.4,1.3,0.9,2,0.9h0h0c0.7,0,1.4-0.5,2-0.9c1.1-0.8,2.2-1.6,3.3-2.3
@@ -390,20 +393,23 @@
 							<div class="postcode-wrap">
 								<form action="#" method="POST">
 									<label for="display-postcode">Enter your postcode</label>
-									<input type="number" name="display-postcode" id="display-postcode"/>
-									<button type="submit">Go</button>
+									<input type="number" name="display-postcode" id="display-postcode" placeholder="Postcode" inputmode="numeric" minlength="4" maxlength="4" min="0" max="9999" pattern="[0-9]*"/>
+									<button type="submit" class="btn call-to-action">Go</button>
 								</form>
 							</div>
 						</div>					
 					</div>
 					<div class="row">
 						<div class="col-sm-6">
-							<h4>Reece Plumbing Centre Brunswick</h4>
-							<p>Mon-Fri 7am-5pm<br/>Saturday 8am-12pm<br><a href="#">more information</a></p>
+							<div class="address">
+								<p><b>Reece Plumbing Centre Brunswick</b><br/>
+								Mon-Fri 7am-5pm<br/>Saturday 8am-12pm<br><a href="#">more information</a></p>
+							</div>
 						</div>
 						<div class="col-sm-6">
-							<h4>Reece Plumbing Centre Brunswick</h4>
-							<p>Mon-Fri 7am-5pm<br/>Saturday 8am-12pm<br><a href="#">more information</a></p>
+							<div class="address">
+								<p><b>Reece Plumbing Centre Brunswick</b><br/>Mon-Fri 7am-5pm<br/>Saturday 8am-12pm<br><a href="#">more information</a></p>
+							</div>
 						</div>
 					</div>
 				</div>				
@@ -430,7 +436,7 @@
 								<table class="verticle-table">
 									<tr>
 										<th>Heading</th>
-										<td>Lorem ipsum dolor sit !</td>
+										<td><a href="#">Lorem ipsum dolor sit !</a></td>
 									</tr>
 									<tr>
 										<th>Heading</th>
@@ -1044,12 +1050,12 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 											<img class="img-responsive" src="templates/images/product-detail/product-suggestion<?php echo 1+$i%4 ?>.jpg" alt="item">
 										</div>
 										<div class="product-details">
-											<h5 class="product-name">Conex</h5>
-											<p class="product-description">Water end cap</p>
-											<p class="product-price">$XXX <small class="gst">gst inc.</small></p>
+											<h5 class="product-name">ISSY</h5>
+											<p class="product-description">Glide Vanity</p>
+											<p class="product-price">$1099.99 <small class="gst">gst inc.</small></p>
 										</div>
 										<div class="view-button">
-											<a href="#" class="btn black-button view-button">View</a>
+											<a href="#" class="btn black-button view-button">View</a> <a href="#" class="btn add-to-cart">+</a>
 										</div>
 									</div>
 									<?php } ?>

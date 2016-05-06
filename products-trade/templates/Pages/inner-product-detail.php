@@ -339,7 +339,7 @@
 								<table class="verticle-table">
 									<tr>
 										<th>Heading</th>
-										<td>Lorem ipsum dolor sit !</td>
+										<td><a href="#">Lorem ipsum dolor sit !</a></td>
 									</tr>
 									<tr>
 										<th>Heading</th>
@@ -958,7 +958,7 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 											<p class="product-price">$XXX <small class="gst">gst inc.</small></p>
 										</div>
 										<div class="view-button">
-											<a href="#" class="btn black-button view-button">View</a>
+											<a href="#" class="btn black-button view-button full-width">View</a>
 										</div>
 									</div>
 									<?php } ?>

@@ -87,6 +87,19 @@ function onPlayerReady(event) {
     
 }
 
+var scrollAnimation = {
+  element: $('html, body'),
+  animate: function(top){
+    scrollAnimation.element.on("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove", function(){
+       scrollAnimation.element.stop();
+    });
+    scrollAnimation.element.stop().animate({
+      scrollTop: top
+    }, 500, function(){
+      scrollAnimation.element.off("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove");
+    });
+  },
+};
 
 var deviceMobile = isMobile.any();
 var product_pages = {
@@ -778,12 +791,36 @@ var product_pages = {
     },
     productDetail: function(){
         //Detect if mobile to ouse touchend instead of click to fire actions faster
+        //if ( window.location.hash ) $(window).scrollTop(0);
+        // void some browsers issue
+        //setTimeout( function() { $(window).scrollTop(0); }, 1);
+        $(window).on('load', function(){
+            var hash = window.location.hash.replace('#','');
+            if(hash) {
+
+                if($('#section-'+hash).length > 0){
+                // smooth scroll to the anchor id
+                    scrollAnimation.animate($('#section-'+hash).offset().top);
+                }
+            }
+            
+        });
         var event = 'click';
         if(deviceMobile){
             event = 'touchend';
             $('#shopping-cart-widget').addClass('mobile');            
             $('html').addClass('mobile');
         }
+        $('.main-anchor-list a[href*=#]').on('click', function(e) {
+            e.preventDefault(); //prevent the "normal" behaviour which would be a "hard" jump
+
+            var target = $(this).attr("href"); //Get the target
+
+            // perform animated scrolling by getting top-position of target-element and set it as scroll target
+            scrollAnimation.animate($(target).offset().top);
+            window.location.hash = $(this).attr("href");
+            return false;
+        });
         //ADD Slider lightbox
         var slider = $('.product-images').clone();
         $('#slider-lightbox .lightbox-content').append(slider);
@@ -1006,16 +1043,19 @@ var product_pages = {
           infinite: true,
           slidesToShow: 4,
           slidesToScroll: 4,
-          prevArrow: '<span type="button" class="slick-prev">Previous</span>',
-          nextArrow: '<span type="button" class="slick-next">Next</span>',
-          dots: true,
+          prevArrow: '<button type="button" class="slick-prev"><svg viewBox="0 0 26 46" id="shape-arrow-left"><title>arrow-left</title> <g id="arrow-left-arrow-left"> <path d="M24.4,0.6C24.1,0.2,23.5,0,23,0c-0.5,0-1,0.2-1.4,0.6l-21,21c-0.8,0.8-0.8,2.1,0,2.8l21,21c0.8,0.8,2.1,0.8,2.8,0c0.8-0.8,0.8-2.1,0-2.8L4.9,23L24.4,3.4C25.2,2.6,25.2,1.4,24.4,0.6z"/> </g> </svg></button>',
+          nextArrow: '<button type="button" class="slick-next"><svg viewBox="0 0 26 46" id="shape-arrow-right"><title>arrow-right</title> <g id="arrow-right-arrow-right"> <path d="M1.6,45.4C2,45.8,2.5,46,3,46c0.5,0,1-0.2,1.4-0.6l21-21c0.8-0.8,0.8-2.1,0-2.8l-21-21c-0.8-0.8-2.1-0.8-2.8,0c-0.8,0.8-0.8,2.1,0,2.8L21.2,23L1.6,42.6C0.8,43.4,0.8,44.7,1.6,45.4z"/> </g> </svg></button>',
+          dots: false,
+          arrows: true,
             responsive: [
                 {
                     breakpoint: 767,
                     settings:{
                         infinite: true,
                         slidesToShow: 2,
-                        slidesToScroll: 2
+                        slidesToScroll: 2,
+                        dots: true,
+                        arrows: false
                     }
                 },
                 {

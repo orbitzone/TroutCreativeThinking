@@ -93,9 +93,9 @@
   font-style: italic;
   font-weight: 700;
 }
-.libreBaskervilleBold {
-  font-family: 'Libre Baskerville', serif;
-  font-style: normal;
+.caslonBold {
+  font-family: "adobe-caslon-pro", serif;
+  font-style: italic;
   font-weight: bold;
 }
 /*
@@ -3706,13 +3706,37 @@ Slick slider arrow
   }
 }
 #product-pages .main-section#product-detail {
+  color: black;
   padding-top: 44px;
   position: relative;
   overflow: hidden;
   margin-bottom: -35px;
 }
+#product-pages .main-section#product-detail :focus::-webkit-input-placeholder {
+  color: transparent;
+}
+#product-pages .main-section#product-detail :focus::-moz-placeholder {
+  color: transparent;
+}
+#product-pages .main-section#product-detail :focus:-moz-placeholder {
+  color: transparent;
+}
+#product-pages .main-section#product-detail :focus:-ms-input-placeholder {
+  color: transparent;
+}
 #product-pages .main-section#product-detail img {
   max-width: 100%;
+}
+#product-pages .main-section#product-detail a {
+  color: #0776aa;
+  text-decoration: underline;
+  font-family: "Gotham A", "Gotham B";
+  font-style: normal;
+  font-weight: 500;
+  font-weight: 400;
+}
+#product-pages .main-section#product-detail a:hover {
+  color: #0776aa;
 }
 #product-pages .main-section#product-detail .btn {
   font-size: 15px;
@@ -3720,6 +3744,8 @@ Slick slider arrow
   z-index: 1;
   overflow: hidden;
   border: 2px solid #0776aa;
+  padding: 15px 20px;
+  text-decoration: none;
   -moz-transition: 0.2s all ease-out;
   -ms-transition: 0.2s all ease-out;
   -webkit-transition: 0.2s all ease-out;
@@ -3774,10 +3800,17 @@ Slick slider arrow
   color: #0776aa;
 }
 #product-pages .main-section#product-detail .black-button {
+  background: #333;
   border-color: #333333;
+  color: white;
 }
-#product-pages .main-section#product-detail .black-button:hover {
-  color: #333;
+@media (min-width: 768px) {
+  #product-pages .main-section#product-detail .black-button:hover {
+    color: #333;
+  }
+  #product-pages .main-section#product-detail .black-button:hover:before {
+    background: white;
+  }
 }
 #product-pages .main-section#product-detail .add-to-cart {
   padding: 15px 20px;
@@ -3796,6 +3829,12 @@ Slick slider arrow
   border-color: #bfbfbf;
   background: #bfbfbf;
   color: white;
+}
+#product-pages .main-section#product-detail .slick-dots li button {
+  background-color: #eaeaea;
+}
+#product-pages .main-section#product-detail .slick-dots li.slick-active button {
+  background-color: #0776aa;
 }
 #product-pages .main-section#product-detail .play-button {
   position: absolute;
@@ -4501,6 +4540,7 @@ Slick slider arrow
   transition: "0.3s background ease-out, 0.3s color ease-out";
 }
 #product-pages .main-section#product-detail .product-description-wrap .product-details .product-prices .nav-tabs li a {
+  text-decoration: none;
   -webkit-transition: 0.3s background ease-out, 0.3s color ease-out;
   -moz-transition: 0.3s background ease-out, 0.3s color ease-out;
   -ms-transition: 0.3s background ease-out, 0.3s color ease-out;
@@ -4594,6 +4634,43 @@ Slick slider arrow
   float: left;
   width: 50%;
   position: relative;
+}
+#product-pages .main-section#product-detail .product-description-wrap .product-details .product-postcode-input .product-postcode-input-field input {
+  font-size: 25px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#product-pages .main-section#product-detail .product-description-wrap .product-details .product-postcode-input .product-postcode-input-field input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  line-height: 45px;
+  font-size: 16px;
+  position: relative;
+  top: -4px;
+}
+#product-pages .main-section#product-detail .product-description-wrap .product-details .product-postcode-input .product-postcode-input-field input:-ms-input-placeholder {
+  /* IE 10+ */
+  line-height: 45px;
+  font-size: 16px;
+  position: relative;
+  top: -4px;
+}
+#product-pages .main-section#product-detail .product-description-wrap .product-details .product-postcode-input .product-postcode-input-field input::-moz-placeholder {
+  line-height: 45px;
+  font-size: 16px;
+  position: relative;
+  top: -4px;
+}
+#product-pages .main-section#product-detail .product-description-wrap .product-details .product-postcode-input .product-postcode-input-field input:-moz-placeholder {
+  line-height: 45px;
+  font-size: 16px;
+  position: relative;
+  top: -4px;
+}
+#product-pages .main-section#product-detail .product-description-wrap .product-details .product-postcode-input .product-postcode-input-field input::placeholder {
+  line-height: 45px;
+  font-size: 16px;
+  position: relative;
+  top: -4px;
 }
 #product-pages .main-section#product-detail .product-description-wrap .product-details .product-postcode-input .product-postcode-overlay {
   position: absolute;
@@ -4691,6 +4768,7 @@ Slick slider arrow
   height: 60px;
   font-size: 16px;
   float: left;
+  padding: 0;
   border: solid 1px #bdbdbd;
   background-color: #f4f4f4;
   text-align: center;
@@ -4822,6 +4900,12 @@ Slick slider arrow
   display: block;
   margin-bottom: 16px;
 }
+#product-pages .main-section#product-detail .product-description-wrap .product-share b.text-cursive {
+  font-family: "adobe-caslon-pro", serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 16px;
+}
 #product-pages .main-section#product-detail .product-description-wrap .product-share .product-share-buttons .share-btn {
   width: 57px;
   line-height: 50px;
@@ -4877,8 +4961,17 @@ Slick slider arrow
   font-size: 15px;
   padding: 15px 0;
 }
-#product-pages .main-section#product-detail .grey-stripes-bg {
+#product-pages .main-section#product-detail .grey-stripes-bg,
+#product-pages .main-section#product-detail .bg-light-stripes {
   background: grey url("/templates/images/product-detail/bg-light-stripes.png");
+}
+#product-pages .main-section#product-detail .grey-stripes-bg .slick-dots li button,
+#product-pages .main-section#product-detail .bg-light-stripes .slick-dots li button {
+  background-color: #bfbebe;
+}
+#product-pages .main-section#product-detail .grey-stripes-bg .slick-dots li.slick-active button,
+#product-pages .main-section#product-detail .bg-light-stripes .slick-dots li.slick-active button {
+  background-color: #0776aa;
 }
 #product-pages .main-section#product-detail #product-summary {
   padding-bottom: 35px;
@@ -4933,13 +5026,132 @@ Slick slider arrow
 #product-pages .main-section#product-detail #product-display + .section .section-content {
   border-top: none;
 }
+#product-pages .main-section#product-detail #product-display .postcode-wrap {
+  padding: 25px 0 40px;
+}
+#product-pages .main-section#product-detail #product-display .postcode-wrap form {
+  margin: 0;
+}
+#product-pages .main-section#product-detail #product-display .postcode-wrap label {
+  font-family: "Gotham A", "Gotham B";
+  font-style: normal;
+  font-weight: 400;
+  margin-right: 30px;
+}
+#product-pages .main-section#product-detail #product-display .postcode-wrap input {
+  display: inline-block;
+  max-width: 144px;
+  height: 55px;
+  vertical-align: middle;
+  font-size: 25px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#product-pages .main-section#product-detail #product-display .postcode-wrap input::placeholder {
+  line-height: 45px;
+  font-size: 16px;
+  position: relative;
+  top: -4px;
+}
+#product-pages .main-section#product-detail #product-display .postcode-wrap input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  line-height: 45px;
+  font-size: 16px;
+  position: relative;
+  top: -4px;
+}
+#product-pages .main-section#product-detail #product-display .postcode-wrap input::-moz-placeholder {
+  /* Firefox 19+ */
+  line-height: 45px;
+  font-size: 16px;
+  position: relative;
+  top: -4px;
+}
+#product-pages .main-section#product-detail #product-display .postcode-wrap input:-ms-input-placeholder {
+  /* IE 10+ */
+  line-height: 45px;
+  font-size: 16px;
+  position: relative;
+  top: -4px;
+}
+#product-pages .main-section#product-detail #product-display .postcode-wrap input:-moz-placeholder {
+  line-height: 45px;
+  font-size: 16px;
+  position: relative;
+  top: -4px;
+}
+#product-pages .main-section#product-detail #product-display .postcode-wrap button {
+  background: #6dc8b6;
+  color: white;
+  border-color: #6dc8b6;
+  height: 55px;
+  vertical-align: middle;
+}
+#product-pages .main-section#product-detail #product-display .postcode-wrap button:hover {
+  color: #6dc8b6;
+}
+#product-pages .main-section#product-detail #product-display .address a {
+  color: #888888;
+  text-decoration: underline;
+  font-family: "Gotham A", "Gotham B";
+  font-style: normal;
+  font-weight: 700;
+}
+#product-pages .main-section#product-detail #product-display .address a:hover {
+  color: #6dc8b6;
+}
+#product-pages .main-section#product-detail #complete-the-look .slick-next,
+#product-pages .main-section#product-detail #complete-the-look .slick-prev {
+  top: 30%;
+}
+#product-pages .main-section#product-detail #complete-the-look .btn {
+  height: 55px;
+  line-height: 55px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+#product-pages .main-section#product-detail #complete-the-look .add-to-cart {
+  font-size: 30px;
+}
+#product-pages .main-section#product-detail #powder-room {
+  padding: 65px 0 15px;
+}
+@media (min-width: 1200px) {
+  #product-pages .main-section#product-detail #powder-room .section-content {
+    padding: 0;
+  }
+}
+#product-pages .main-section#product-detail #powder-room .story {
+  margin-bottom: 30px;
+}
+#product-pages .main-section#product-detail #powder-room .story .btn {
+  margin-top: 30px;
+}
+#product-pages .main-section#product-detail #powder-room .title {
+  position: relative;
+  padding-bottom: 23px;
+  padding-left: 120px;
+}
+#product-pages .main-section#product-detail #powder-room .icon {
+  position: absolute;
+  top: -50px;
+  left: -20px;
+  z-index: 2;
+  width: 125px;
+  height: 125px;
+}
+#product-pages .main-section#product-detail #powder-room .icon svg {
+  width: 125px;
+  height: 125px;
+  display: block;
+}
 #product-pages .main-section#product-detail .section .slick-next {
   top: 37%;
   right: -20px;
 }
 #product-pages .main-section#product-detail .section .slick-next svg {
-  width: 14px;
-  height: 14px;
+  width: 23px;
+  height: 23px;
   fill: #bfbfbf;
 }
 #product-pages .main-section#product-detail .section .slick-prev {
@@ -4947,8 +5159,8 @@ Slick slider arrow
   left: -20px;
 }
 #product-pages .main-section#product-detail .section .slick-prev svg {
-  width: 14px;
-  height: 14px;
+  width: 23px;
+  height: 23px;
   fill: #bfbfbf;
 }
 #product-pages .main-section#product-detail .section .section-content {
@@ -4995,6 +5207,12 @@ Slick slider arrow
   font-family: "Gotham A", "Gotham B";
   font-style: normal;
   font-weight: 700;
+}
+#product-pages .main-section#product-detail .section .section-title h3.section-heading.text-cursive {
+  font-family: "adobe-caslon-pro", serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 26px;
 }
 #product-pages .main-section#product-detail .section .section-title h3.section-heading svg {
   display: block;
@@ -5094,24 +5312,6 @@ Slick slider arrow
 #product-pages .main-section#product-detail .section.bg-dark-stripes .section-content {
   border-top: none;
 }
-#product-pages .main-section#product-detail .installation-section .slick-next {
-  top: 37%;
-  right: -20px;
-}
-#product-pages .main-section#product-detail .installation-section .slick-next svg {
-  width: 14px;
-  height: 14px;
-  fill: #0776aa;
-}
-#product-pages .main-section#product-detail .installation-section .slick-prev {
-  top: 37%;
-  left: -20px;
-}
-#product-pages .main-section#product-detail .installation-section .slick-prev svg {
-  width: 14px;
-  height: 14px;
-  fill: #0776aa;
-}
 #product-pages .main-section#product-detail .video-slider .video-thumbnail {
   position: relative;
 }
@@ -5175,7 +5375,6 @@ Slick slider arrow
 }
 #product-pages .main-section#product-detail .product-suggestion-slider .view-button {
   text-align: center;
-  display: block;
 }
 #product-pages .main-section#product-detail .banner-section .banner {
   padding: 60px 0;

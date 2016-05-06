@@ -715,12 +715,12 @@ var product_pages = {
         if(!deviceMobile){
             var scrollTopOnHover = 0;
             $('#shopping-cart-widget').on('mouseover', function(){
-                if(!isIE){
+                if(!ieV){
                     $('html,body').addClass('overflow-hidden');
                 }
                 scrollTopOnHover = $(window).scrollTop();
             }).on('mouseout', function(){
-                if(!isIE){
+                if(!ieV){
                     $('html,body').removeClass('overflow-hidden');
                 }
                // $(window).scroll(function() { return false; });

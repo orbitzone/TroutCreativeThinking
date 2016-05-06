@@ -4023,7 +4023,6 @@ Slick slider arrow
   z-index: 1;
   overflow: hidden;
   border: 2px solid #6dc8b6;
-  padding: 15px;
   -moz-transition: 0.2s all ease-out;
   -ms-transition: 0.2s all ease-out;
   -webkit-transition: 0.2s all ease-out;
@@ -4078,17 +4077,10 @@ Slick slider arrow
   color: #eeba90;
 }
 #product-pages .main-section#product-detail .black-button {
-  background: #333;
   border-color: #333333;
-  color: white;
 }
-@media (min-width: 768px) {
-  #product-pages .main-section#product-detail .black-button:hover {
-    color: #333;
-  }
-  #product-pages .main-section#product-detail .black-button:hover:before {
-    background: white;
-  }
+#product-pages .main-section#product-detail .black-button:hover {
+  color: #333;
 }
 #product-pages .main-section#product-detail .add-to-cart {
   padding: 15px 20px;
@@ -4136,7 +4128,14 @@ Slick slider arrow
   }
 }
 #product-pages .main-section#product-detail #search button {
+  background: #969696;
+  color: white;
   padding: 0;
+  border-color: #969696;
+}
+#product-pages .main-section#product-detail #search button:hover svg circle,
+#product-pages .main-section#product-detail #search button:hover svg line {
+  stroke: #969696;
 }
 #product-pages .main-section#product-detail .lightbox {
   position: fixed;
@@ -4608,6 +4607,25 @@ Slick slider arrow
 }
 #product-pages .main-section#product-detail .product-images {
   padding-bottom: 30px;
+  opacity: 0;
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
+  transform: translateY(-20px);
+  -moz-transition: opacity 0.5s ease-out, transform 0.5s ease-out, -webkit-transform 0.5s ease-out, -moz-transform 0.5s ease-out;
+  -ms-transition: opacity 0.5s ease-out, transform 0.5s ease-out, -webkit-transform 0.5s ease-out, -moz-transform 0.5s ease-out;
+  -webkit-transition: opacity 0.5s ease-out, transform 0.5s ease-out, -webkit-transform 0.5s ease-out, -moz-transform 0.5s ease-out;
+  -o-transition: opacity 0.5s ease-out, transform 0.5s ease-out, -webkit-transform 0.5s ease-out, -moz-transform 0.5s ease-out;
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out, -webkit-transform 0.5s ease-out, -moz-transform 0.5s ease-out;
+}
+#product-pages .main-section#product-detail .product-images.loaded {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
 }
 #product-pages .main-section#product-detail .product-images .slick-dots {
   border-bottom: 1px solid #dcdcdc;
@@ -5065,12 +5083,6 @@ Slick slider arrow
   display: block;
   margin-bottom: 16px;
 }
-#product-pages .main-section#product-detail .product-description-wrap .product-share b.text-cursive {
-  font-family: "adobe-caslon-pro", serif;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 15px;
-}
 #product-pages .main-section#product-detail .product-description-wrap .product-share .product-share-buttons .share-btn {
   width: 57px;
   line-height: 50px;
@@ -5129,51 +5141,11 @@ Slick slider arrow
 #product-pages .main-section#product-detail .grey-stripes-bg {
   background: grey url("/templates/images/product-detail/bg-light-stripes.png");
 }
-#product-pages .main-section#product-detail #product-summary {
-  padding-bottom: 35px;
-}
-#product-pages .main-section#product-detail #product-summary .section-content {
-  padding-top: 40px;
-}
 #product-pages .main-section#product-detail #product-summary h3 {
   padding-bottom: 0;
 }
 #product-pages .main-section#product-detail #product-highlights .section-content {
   border-top: none;
-}
-#product-pages .main-section#product-detail #product-highlights {
-  border-top: 1px solid #e8e8e8;
-  padding: 55px 0 25px;
-  text-align: center;
-}
-#product-pages .main-section#product-detail #product-highlights ul:before,
-#product-pages .main-section#product-detail #product-highlights ul:after {
-  content: " ";
-  display: table;
-}
-#product-pages .main-section#product-detail #product-highlights ul:after {
-  clear: both;
-}
-#product-pages .main-section#product-detail #product-highlights ul li {
-  padding: 0 20px;
-  max-width: 152px;
-  margin: 0 auto;
-  margin-bottom: 30px;
-  font-size: 15px;
-}
-@media (min-width: 1200px) {
-  #product-pages .main-section#product-detail #product-highlights ul li {
-    max-width: 100%;
-    float: left;
-    width: 20%;
-  }
-}
-#product-pages .main-section#product-detail #product-highlights .icon {
-  margin-bottom: 20px;
-}
-#product-pages .main-section#product-detail #product-highlights .icon img {
-  margin: 0 auto;
-  height: 25px;
 }
 #product-pages .main-section#product-detail #product-display {
   padding: 85px 0;
@@ -5247,12 +5219,6 @@ Slick slider arrow
   font-family: "Gotham A", "Gotham B";
   font-style: normal;
   font-weight: 700;
-}
-#product-pages .main-section#product-detail .section .section-title h3.section-heading.text-cursive {
-  font-family: "adobe-caslon-pro", serif;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 30px;
 }
 #product-pages .main-section#product-detail .section .section-title h3.section-heading svg {
   display: block;
@@ -5352,34 +5318,23 @@ Slick slider arrow
 #product-pages .main-section#product-detail .section.bg-dark-stripes .section-content {
   border-top: none;
 }
-#product-pages .main-section#product-detail #powder-room {
-  padding: 65px 0 15px;
+#product-pages .main-section#product-detail .installation-section .slick-next {
+  top: 37%;
+  right: -20px;
 }
-@media (min-width: 1200px) {
-  #product-pages .main-section#product-detail #powder-room .section-content {
-    padding: 0;
-  }
+#product-pages .main-section#product-detail .installation-section .slick-next svg {
+  width: 14px;
+  height: 14px;
+  fill: #6dc8b6;
 }
-#product-pages .main-section#product-detail #powder-room .story {
-  margin-bottom: 30px;
-}
-#product-pages .main-section#product-detail #powder-room .title {
-  position: relative;
-  padding-bottom: 23px;
-  padding-left: 120px;
-}
-#product-pages .main-section#product-detail #powder-room .icon {
-  position: absolute;
+#product-pages .main-section#product-detail .installation-section .slick-prev {
+  top: 37%;
   left: -20px;
-  top: -50px;
-  z-index: 2;
-  width: 125px;
-  height: 125px;
 }
-#product-pages .main-section#product-detail #powder-room .icon svg {
-  width: 125px;
-  height: 125px;
-  display: block;
+#product-pages .main-section#product-detail .installation-section .slick-prev svg {
+  width: 14px;
+  height: 14px;
+  fill: #6dc8b6;
 }
 #product-pages .main-section#product-detail .video-slider .video-thumbnail {
   position: relative;

@@ -894,7 +894,8 @@ var product_pages = {
                 }
               ]
             })
-        });        
+        }); 
+        $('.product-images').addClass('loaded');       
         $('.product-images-slider-wrap .zoom').on('click', function(e){
             var current = $(".product-images-wrap .product-images-slider").slick('slickCurrentSlide');
             $(".slider-lightbox .product-images-slider").slick('slickGoTo',current, true);

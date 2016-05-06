@@ -65,7 +65,7 @@ function onYouTubeIframeAPIReady() {
     player = new YT.Player(playerDivID, {
         height: '500',
         width: '640',
-        videoId: 'F-kP7xe9j70',
+        videoId: '',
         playerVars: {
             'showinfo': 0,
             'rel': 0,
@@ -810,6 +810,7 @@ var product_pages = {
               infinite: true,
               slidesToShow: 1,
               slidesToScroll: 1,
+              swipe: false,
               asNavFor: '.product-images-wrap .product-images .product-thumbs-slider',
               prevArrow: '<button type="button" class="slick-prev"><svg viewBox="0 0 26 46" id="shape-arrow-left"><title>arrow-left</title> <g id="arrow-left-arrow-left"> <path d="M24.4,0.6C24.1,0.2,23.5,0,23,0c-0.5,0-1,0.2-1.4,0.6l-21,21c-0.8,0.8-0.8,2.1,0,2.8l21,21c0.8,0.8,2.1,0.8,2.8,0c0.8-0.8,0.8-2.1,0-2.8L4.9,23L24.4,3.4C25.2,2.6,25.2,1.4,24.4,0.6z"/> </g> </svg></button>',
               nextArrow: '<button type="button" class="slick-next"><svg viewBox="0 0 26 46" id="shape-arrow-right"><title>arrow-right</title> <g id="arrow-right-arrow-right"> <path d="M1.6,45.4C2,45.8,2.5,46,3,46c0.5,0,1-0.2,1.4-0.6l21-21c0.8-0.8,0.8-2.1,0-2.8l-21-21c-0.8-0.8-2.1-0.8-2.8,0c-0.8,0.8-0.8,2.1,0,2.8L21.2,23L1.6,42.6C0.8,43.4,0.8,44.7,1.6,45.4z"/> </g> </svg></button>',
@@ -819,6 +820,7 @@ var product_pages = {
                   settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
+                    swipe: true,
                     dots: true,
                     arrows: false
                   }
@@ -855,6 +857,7 @@ var product_pages = {
               infinite: true,
               slidesToShow: 1,
               slidesToScroll: 1,
+              swipe: false,
               asNavFor: '.slider-lightbox .product-images .product-thumbs-slider',
               prevArrow: '<button type="button" class="slick-prev"><svg viewBox="0 0 26 46" id="shape-arrow-left"><title>arrow-left</title> <g id="arrow-left-arrow-left"> <path d="M24.4,0.6C24.1,0.2,23.5,0,23,0c-0.5,0-1,0.2-1.4,0.6l-21,21c-0.8,0.8-0.8,2.1,0,2.8l21,21c0.8,0.8,2.1,0.8,2.8,0c0.8-0.8,0.8-2.1,0-2.8L4.9,23L24.4,3.4C25.2,2.6,25.2,1.4,24.4,0.6z"/> </g> </svg></button>',
               nextArrow: '<button type="button" class="slick-next"><svg viewBox="0 0 26 46" id="shape-arrow-right"><title>arrow-right</title> <g id="arrow-right-arrow-right"> <path d="M1.6,45.4C2,45.8,2.5,46,3,46c0.5,0,1-0.2,1.4-0.6l21-21c0.8-0.8,0.8-2.1,0-2.8l-21-21c-0.8-0.8-2.1-0.8-2.8,0c-0.8,0.8-0.8,2.1,0,2.8L21.2,23L1.6,42.6C0.8,43.4,0.8,44.7,1.6,45.4z"/> </g> </svg></button>',
@@ -864,6 +867,7 @@ var product_pages = {
                   settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
+                    swipe: true,
                     dots: true,
                     arrows: false
                   }
@@ -897,6 +901,16 @@ var product_pages = {
         }); 
         $('.product-images').addClass('loaded');       
         $('.product-images-slider-wrap .zoom').on('click', function(e){
+            var current = $(".product-images-wrap .product-images-slider").slick('slickCurrentSlide');
+            $(".slider-lightbox .product-images-slider").slick('slickGoTo',current, true);
+            $(".slider-lightbox .product-thumbs-slider").slick('slickGoTo',current, true);
+            if($(".slider-lightbox .product-thumb.slick-cloned").length == 0){
+                $(".slider-lightbox .product-thumb").removeClass('slick-current');
+                $(".slider-lightbox .product-thumb:eq("+current+")").addClass('slick-current');
+            }
+            $('.slider-lightbox').addClass('show');
+        });
+        $('.product-images-slider-wrap .product-images-slider .image').on('click', function(e){
             var current = $(".product-images-wrap .product-images-slider").slick('slickCurrentSlide');
             $(".slider-lightbox .product-images-slider").slick('slickGoTo',current, true);
             $(".slider-lightbox .product-thumbs-slider").slick('slickGoTo',current, true);

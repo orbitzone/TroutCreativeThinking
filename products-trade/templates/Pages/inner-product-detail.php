@@ -35,25 +35,39 @@
 								<div class="product-images-slider-wrap">
 									<div class="product-images-slider">
 										<div class="current">
-											<img class="img-responsive" src="templates/images/product-detail/product-image1.jpg" alt="item">
+											<div class="image">
+												<img class="img-responsive" src="templates/images/product-detail/product-image1.jpg" alt="item">
+											</div>
 										</div>
 										<div>
-											<img class="img-responsive" src="templates/images/product-detail/product-image2.jpg" alt="item">
+											<div class="image">
+												<img class="img-responsive" src="templates/images/product-detail/product-image2.jpg" alt="item">
+											</div>
 										</div>
 										<div>
-											<img class="img-responsive" src="templates/images/product-detail/product-image3.jpg" alt="item">
+											<div class="image">
+												<img class="img-responsive" src="templates/images/product-detail/product-image3.jpg" alt="item">
+											</div>
 										</div>
 										<div>
-											<img class="img-responsive" src="templates/images/product-detail/product-image4.jpg" alt="item">
+											<div class="image">
+												<img class="img-responsive" src="templates/images/product-detail/product-image4.jpg" alt="item">
+											</div>
 										</div>
 										<div>
-											<img class="img-responsive" src="templates/images/product-detail/product-image1.jpg" alt="item">
+											<div class="image">
+												<img class="img-responsive" src="templates/images/product-detail/product-image1.jpg" alt="item">
+											</div>
 										</div>
 										<div>
-											<img class="img-responsive" src="templates/images/product-detail/product-image2.jpg" alt="item">
+											<div class="image">
+												<img class="img-responsive" src="templates/images/product-detail/product-image2.jpg" alt="item">
+											</div>
 										</div>
 										<div>
-											<img class="img-responsive" src="templates/images/product-detail/product-image3.jpg" alt="item">
+											<div class="image">
+												<img class="img-responsive" src="templates/images/product-detail/product-image3.jpg" alt="item">
+											</div>
 										</div>
 										<div>
 											<a href="#" title="Watch video"  class="lightbox-video" data-video="F-kP7xe9j70">

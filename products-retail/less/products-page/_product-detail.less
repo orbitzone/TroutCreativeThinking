@@ -231,6 +231,11 @@
 		    	max-width: 1200px;
 		    }
 		}
+		&.show{
+			.embed-responsive{
+				visibility: visible;
+			}
+		}
 	}
 	.slider-lightbox{
 		.lightbox-content{
@@ -401,7 +406,7 @@
 		}
 	}
 	.product-detail-wrap{
-		overflow: scroll; 
+		overflow-y: scroll; 
 		-webkit-overflow-scrolling : touch;
 		padding-right: 0;
 		@media (min-width: @screen-sm){

@@ -4230,6 +4230,9 @@ Slick slider arrow
     max-width: 1200px;
   }
 }
+#product-pages .main-section#product-detail #video-lightbox.show .embed-responsive {
+  visibility: visible;
+}
 #product-pages .main-section#product-detail .slider-lightbox .lightbox-content {
   background: white;
 }
@@ -4441,7 +4444,7 @@ Slick slider arrow
   background-color: #FB797E;
 }
 #product-pages .main-section#product-detail .product-detail-wrap {
-  overflow: scroll;
+  overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   padding-right: 0;
 }

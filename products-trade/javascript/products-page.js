@@ -709,7 +709,7 @@ var product_pages = {
         $('#product-detail').on('click', function(){
             $('.product-availability-variations .options-dropdown').removeClass('open');    
         });
-        $('#shopping-cart-widget').find('header .close').on('click', function(e){
+        $('#shopping-cart-widget').find('.close-widget').on('click', function(e){
             $('#shopping-cart-widget').find('aside').trigger('click');
         });
         $('#shopping-cart-widget .shopping-cart-content').height(0);
@@ -759,6 +759,19 @@ var product_pages = {
             e.stopPropagation();
                         
         });
+        $('#shopping-cart-widget .shopping-cart-product-list .switch-btn').on('click', function(){
+            $('#shopping-cart-widget .shopping-cart-product-list').addClass('out');
+            $('#shopping-cart-widget .shopping-cart-search-list').removeClass('out');
+        });
+        $('#shopping-cart-widget .shopping-cart-search-list .switch-btn').on('click', function(){
+            $('#shopping-cart-widget .shopping-cart-product-list').removeClass('out');
+            $('#shopping-cart-widget .shopping-cart-search-list').addClass('out');
+        });
+        $('.take-a-tour-box .close').on('click', function(){
+            $('.take-a-tour-box').slideUp('slow', function(){
+                $('.take-a-tour-box').remove();
+            })
+        });
         $(window).on('resize', function(){
             if(!$('#shopping-cart-widget').hasClass('open')){
                 $('#shopping-cart-widget').css('right','');
@@ -766,6 +779,7 @@ var product_pages = {
             height = calculateWidgetContentHeight();
             $('#shopping-cart-widget .shopping-cart-content').height(height);
         });
+        //Edit item action
         $(document).on('click','#shopping-cart-widget .edit-item, #shopping-cart-widget .product-thumbnail, #shopping-cart-widget .item-details',function(e){
             if($(this).parent().parent().parent().hasClass('editing')){
                 $('#shopping-cart-widget .one-item').removeClass('editing');
@@ -774,6 +788,13 @@ var product_pages = {
                 $('#shopping-cart-widget .one-item').removeClass('editing');
                 $(this).parent().parent().parent().addClass('editing');
             }        
+        });
+        //Delete item action
+        $(document).on('click','#shopping-cart-widget .remove-from-list',function(e){
+            var $elem = $(this).parent().parent().parent();
+            $elem.slideUp('slow', function(){
+                $elem.remove();
+            });
         });     
     },
     productDetail: function(){
@@ -994,35 +1015,49 @@ var product_pages = {
             ]
         });
         
-        
+        //Add to cart action
         $('.product-addbutton button').on('click', function(){
             var obj = $(this).parent();
             if(!obj.hasClass('loading')){
-            
                 obj.toggleClass('loading');
-                setTimeout(function(){
-                    obj.toggleClass('success');
-                    var img = $('.product-images-slider .slick-current img').attr("src");
-                        var added = $('<div class="added-to-cart" style="background-image:url('+img+')"></div>');
-                        var top = obj.find("button").offset().top - $(window).scrollTop();
-                        var left = obj.find("button").offset().left;
-                        added.css({
-                            top: top,
-                            left: left
-                        });
-                        var finaltop = $('#shopping-cart-widget aside button').offset().top  - $(window).scrollTop() - 25;
-                        var finalleft = $('#shopping-cart-widget aside button').offset().left;
-                        TweenMax.to(added, 0.3, {bezier:{type:"cubic", values:[{x:0, y:0}, {x:0, y: finaltop - top}, {x: finalleft - left, y: finaltop - top}, {x: finalleft - left, y: finaltop - top }], autoRotate:["x","y","rotation", 0, true]}, scale:0.5, ease:Power1.easeInOut, onComplete: function(){ 
-                            TweenMax.to(added, 1,{ scale: 0, ease: Elastic.easeInOut, onComplete: function(){
-                                added.remove();
+                setTimeout(function(){ // REMOVE THIS TIMEOUT, THIS IS TO SHOW THE LOADING STATE PREVIEW IN THE DESIGN
+                    $.ajax({
+                        url: '',
+                        success:function(){
+                            //do something here
+
+                            //Animation
+
+                            obj.toggleClass('success');
+                            var img = $('.product-images-slider .slick-current img').attr("src");
+                            var added = $('<div class="added-to-cart" style="background-image:url('+img+')"></div>');
+                            var top = obj.find("button").offset().top - $(window).scrollTop();
+                            var left = obj.find("button").offset().left;
+                            added.css({
+                                top: top,
+                                left: left
+                            });
+                            var finaltop = $('#shopping-cart-widget aside button').offset().top  - $(window).scrollTop() - 25;
+                            var finalleft = $('#shopping-cart-widget aside button').offset().left;
+                            TweenMax.to(added, 0.3, {bezier:{type:"cubic", values:[{x:0, y:0}, {x:0, y: finaltop - top}, {x: finalleft - left, y: finaltop - top}, {x: finalleft - left, y: finaltop - top }], autoRotate:["x","y","rotation", 0, true]}, scale:0.5, ease:Power1.easeInOut, onComplete: function(){ 
+                                TweenMax.to(added, 1,{ scale: 0, ease: Elastic.easeInOut, onComplete: function(){
+                                    $('#shopping-cart-widget .tour-info').hide();
+                                    $('#shopping-cart-widget .shopping-cart-product-list').removeClass('out');
+                                    $('#shopping-cart-widget .take-a-tour-box').show();
+                                    added.remove();
+                                }});
                             }});
-                        }});
-                        $('#product-detail').append(added);
-                        added.addClass('loaded');
-                         setTimeout(function(){
-                            obj.removeClass('loading success');
-                            obj.find('button').blur();                        
-                         },1600);
+                            $('#product-detail').append(added);
+                            added.addClass('loaded');
+                            setTimeout(function(){
+                                obj.removeClass('loading success');
+                                obj.find('button').blur();                        
+                            },1600);                            
+                        },
+                        error: function(){
+
+                        }
+                    });                
                 }, 1200);
             }
         });

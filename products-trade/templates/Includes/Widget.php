@@ -5,20 +5,20 @@
 	c0,0.5,0.4,0.9,0.9,0.9h32.1l-4.9,14.9H12.9c-0.5,0-0.9,0.4-0.9,0.9C12,23.8,12.4,24.2,12.9,24.2z"/></svg></button>
 	</aside>
 	<section class="shopping-cart-content scrollable">
-		<header><h3 class="main-title">Your List Toolbar</h3>
-		<div class="close">
+		<div class="close close-widget">
 			<svg xmlns="http://www.w3.org/2000/svg" width="67.5px" height="67.5px" viewBox="0 0 67.5 67.5">
-<path d="M64.8,67.5c-0.7,0-1.4-0.3-1.9-0.8L0.8,4.6c-1.1-1.1-1.1-2.8,0-3.9c1.1-1.1,2.8-1.1,3.9,0l62.1,62.1c1.1,1.1,1.1,2.8,0,3.9
-	C66.2,67.2,65.5,67.5,64.8,67.5z"/>
-<path d="M2.7,67.5c-0.7,0-1.4-0.3-1.9-0.8c-1.1-1.1-1.1-2.8,0-3.9L62.9,0.8c1.1-1.1,2.8-1.1,3.9,0c1.1,1.1,1.1,2.8,0,3.9L4.6,66.7
-	C4.1,67.2,3.4,67.5,2.7,67.5z"/>
-</svg>
+			<path d="M64.8,67.5c-0.7,0-1.4-0.3-1.9-0.8L0.8,4.6c-1.1-1.1-1.1-2.8,0-3.9c1.1-1.1,2.8-1.1,3.9,0l62.1,62.1c1.1,1.1,1.1,2.8,0,3.9
+				C66.2,67.2,65.5,67.5,64.8,67.5z"/>
+			<path d="M2.7,67.5c-0.7,0-1.4-0.3-1.9-0.8c-1.1-1.1-1.1-2.8,0-3.9L62.9,0.8c1.1-1.1,2.8-1.1,3.9,0c1.1,1.1,1.1,2.8,0,3.9L4.6,66.7
+				C4.1,67.2,3.4,67.5,2.7,67.5z"/>
+		</svg>
 		</div>
-		</header>
-
-
+		
 		<!--START TAKE A TOUR SECTION -->
 		<div class="tour-info">
+		<header><h3 class="main-title">Your List Toolbar</h3>
+		</header>
+
 			<div class="tour-intro">
 				<p>Welcome to the new toolbar that allows you to create product lists easily.<br/> You can import products from saved lists or create a completly new one. Then convert the list to a quote or order.</p>
 			</div>
@@ -42,8 +42,11 @@
 		</div>
 		<!--END TAKE A TOUR SECTION -->
 		
+
+
+
 		<!--START SEARCH LIST-->
-		<div class="shopping-cart-search-list">
+		<div class="shopping-cart-search-list out">
 			<!--START LIST HEADER-->
 			<div class="list-header">
 				<div class="title">
@@ -157,8 +160,13 @@
 			</div>
 		</div>
 		<!--END SEARCH LIST -->
-		<!--START LIST HEADER-->
-		<div class="shopping-cart-product-list">
+
+
+
+
+
+		<!--START PRODUCT LIST-->
+		<div class="shopping-cart-product-list out">
 			<!--START LIST HEADER-->
 			<div class="list-header">
 				<div class="title">
@@ -280,7 +288,7 @@
 				</button>
 			</div>
 		</div>
-		<!--END LIST HEADER-->
+		<!--END PRODUCT LIST-->
 
 		
 

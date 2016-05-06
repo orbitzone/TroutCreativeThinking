@@ -5180,6 +5180,9 @@ Slick slider arrow
     padding: 0 11%;
   }
 }
+#product-pages .main-section#product-detail .section .expand-section {
+  display: none;
+}
 #product-pages .main-section#product-detail .section .expand-section.opened {
   display: block;
 }

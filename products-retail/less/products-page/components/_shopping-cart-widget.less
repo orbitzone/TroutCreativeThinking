@@ -1,6 +1,8 @@
 @widget-bar-bg: @main-color;
 @widget-content-bg: #4faa98;
 
+@widget-aside-button-color: white;
+@widget-aside-button-active-color: #4c9d8d;
 
 //Buttons and form fields
 @select-bg: #0776AA;
@@ -57,8 +59,9 @@
 
 @image-border: #bfbfbf;
 
-@tour-box-bg: url("../templates/images/product-detail/bg-light-green-stripes.jpg");
-@tour-box-button-bg: @take-a-tour-btn-bg url("../templates/images/product-detail/bg-dark-green-stripes.jpg");
+@tour-box-intro-color: white;
+@tour-box-bg: url("../templates/images/product-detail/bg-dark-green-stripes.jpg");
+@tour-box-button-bg: @take-a-tour-btn-bg;
 
 
 #shopping-cart-widget{
@@ -223,20 +226,45 @@
 			.appearance(none);
 			outline: none;
 			padding: 0;
-			display: block;
-			width: 100%;
-			padding: 30px 0 0;
-			&:after{
+			
+	    display: inline-block;
+    	width: 70px;
+    	padding: 5px 0 0px;
+    	height: 56px;
+    	&:after{
 				content: " ";
-				width: 59.35%;
-				margin: 0 auto;
+				width: 1px;
 				display: block;
-				position: relative;
+				position: absolute;
 				background: white;
-				margin-top: 30px;
-				height: 2px;
+				height: 50px;
+				right: -2px;
+				top: 50%;
+				margin-top: -25px;				
 			}
-			&:last-child{
+			@media (min-width: @screen-sm){
+    		display: block;
+				width: 100%;
+				padding: 25px 0 0;
+				height: auto;
+				&:after{
+					content: " ";
+					width: 59.35%;
+					margin: 0 auto;
+					display: block;
+					position: relative;
+					background: white;
+					margin-top: 15px;
+					height: 2px;
+				}
+    	}
+    	@media (min-width: @screen-lg){
+    		padding: 30px 0 0;
+    		&:after{
+    			margin-top: 30px;
+    		}
+    	}
+    	&:last-child{
 				&:after{
 					content: "";
 					display: none;
@@ -247,6 +275,12 @@
 				margin: 0 auto;
 				position: relative;
 				display: block;
+				@media (min-width: @screen-sm){
+					width: 30px;
+				}
+				@media (min-width: @screen-lg){
+					width: 45px;
+				}
 			}
 			.cart-items-wrap{
 		    display: block;
@@ -262,6 +296,14 @@
 		    opacity: 1;
 		    width: 17px;
 		    height: 17px;
+		    @media (min-width: @screen-sm){
+		    	top: -5px;
+		    right: -4px;
+		    }
+		    @media (min-width: @screen-lg){
+		    	top: -2px;
+		    right: -7px;
+		    }
 		    .cart-items{
 		    	position: absolute;
 			    left: 0;
@@ -273,15 +315,46 @@
 			svg{
 				width: 35px;
 				height: 28px;
-				fill: white;
+				fill: @widget-aside-button-color;
+				@media (min-width: @screen-sm){
+					width: 30px;
+					height: 25px;
+				}
 				@media (min-width: @screen-lg){
 					width: 44px;
 					height: 35px;
 				}
 			}
-			&:focus{
+			&.open{
+				&:before{
+					content: " ";
+					display: block;
+					width: 20px;
+					height: 20px;
+					.transform(rotate(45deg));
+					position: absolute;
+					left: 50%;
+					bottom: -16px;
+					margin-left: -10px;
+					background: @widget-content-bg;
+					@media (min-width: @screen-sm){
+						top: 50%;
+						left: inherit;
+						bottom: inherit;
+						margin-left: 0;
+						right: -18px;
+					}
+					@media (min-width: @screen-lg){
+						right: -14px;
+					}
+				}
+				&:first-child{
+					&:before{
+						margin-top: -10px;
+					}
+				}
 				svg{
-					fill: white;
+					fill: @widget-aside-button-active-color;
 				}
 			}
 		}		
@@ -324,10 +397,7 @@
 			.gothamMedium;
 			padding: 30px 10px 28px;
 			border-bottom:solid 1px @main-title-border;
-	    @media (max-width: @screen-xs-max) {
-				font-size:20px;
-			}
-			&.no-border{
+	    &.no-border{
 				border-bottom: none;				
 			}			
 		}
@@ -356,7 +426,7 @@
 			}
 			text-align:center;
 			.tour-intro{
-				color: @text-light-blue;
+				color: @tour-box-intro-color;
 				.gothamBook;
 				font-size:20px;
 				margin-bottom: 30px;
@@ -761,17 +831,6 @@
 			.transform(translateX(0));
 		}
 		.list-header{
-			text-align: center;
-			margin-bottom: 30px;
-			.title{
-				padding: 30px 0;
-			}
-			h3{
-				color: white;
-				font-size: 31px;
-				margin-bottom: 0;
-				.gothamMedium;				
-			}
 			.switch-btn{
 				border: 1px solid @switch-toolbar-btn-border;
 				font-size: 14px;
@@ -967,16 +1026,6 @@
 	}
 	.shopping-cart-product-list{
 		.list-header{
-			text-align: center;
-			margin-bottom: 14px;
-			.title{
-				padding-top: 30px;
-			}
-			h3{
-				color: white;
-				font-size: 31px;
-				margin-bottom: 12px;
-			}
 			.switch-btn{
 				border: 1px solid @switch-toolbar-btn-border;
 				font-size: 14px;

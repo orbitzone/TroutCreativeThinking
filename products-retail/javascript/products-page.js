@@ -705,7 +705,8 @@ var product_pages = {
             $('#shopping-cart-widget').find('aside').trigger('click');
         });
         $('#shopping-cart-widget .shopping-cart-content').height(0);
-        $('#shopping-cart-widget').find('aside').on('click', function(e){
+
+        function toggleWidget(){
             var diff = $('.main-section').offset().top;
             var top = $(window).scrollTop() - diff;
             var width = $(window).width();
@@ -738,6 +739,54 @@ var product_pages = {
                     TweenMax.to($('#shopping-cart-widget .shopping-cart-content'),0.5,{x: 100, opacity: 0, height: 0});
                 }
                 $('.product-detail-wrap, aside').removeClass('disable-scrolling');                
+            }
+        }
+        $('#shopping-cart-widget').find('aside').on('click', function(e){
+            $('#shopping-cart-widget aside .wishlist').removeClass('open');
+            $('#shopping-cart-widget aside .shopping-cart').removeClass('open');
+            if(!$('#shopping-cart-widget').hasClass('open')){
+                if($('#shopping-cart-widget .shopping-cart-product-list').hasClass('out')){
+                    if(!$('#shopping-cart-widget .shopping-cart-wishlist').hasClass('out')){
+                        $('#shopping-cart-widget aside .wishlist').addClass('open');
+                    }
+                }else{
+                    $('#shopping-cart-widget aside .shopping-cart').addClass('open');                    
+                }
+            }
+            toggleWidget();
+            e.stopPropagation();                        
+        });
+        $('#shopping-cart-widget').find('aside .shopping-cart').on('click', function(e){
+            $('#shopping-cart-widget .shopping-cart-wishlist').addClass('out');
+            $('#shopping-cart-widget .tour-info').addClass('out');
+            $('#shopping-cart-widget aside .wishlist').removeClass('open');
+            if($(this).hasClass('open')){
+                $(this).removeClass('open');
+            }else{
+                $(this).addClass('open');
+            }
+            if($('#shopping-cart-widget').hasClass('open') && $('#shopping-cart-widget .shopping-cart-product-list').hasClass('out')){
+                $('#shopping-cart-widget .shopping-cart-product-list').removeClass('out');
+            }else{
+                $('#shopping-cart-widget .shopping-cart-product-list').removeClass('out');
+                toggleWidget();
+            }
+            e.stopPropagation();                        
+        });
+        $('#shopping-cart-widget').find('aside .wishlist').on('click', function(e){
+            if($(this).hasClass('open')){
+                $(this).removeClass('open');
+            }else{
+                $(this).addClass('open');
+            }
+            $('#shopping-cart-widget aside .shopping-cart').removeClass('open');
+            $('#shopping-cart-widget .shopping-cart-product-list').addClass('out');
+            $('#shopping-cart-widget .tour-info').addClass('out');
+            if($('#shopping-cart-widget').hasClass('open') && $('#shopping-cart-widget .shopping-cart-wishlist').hasClass('out')){
+                $('#shopping-cart-widget .shopping-cart-wishlist').removeClass('out');
+            }else{
+                $('#shopping-cart-widget .shopping-cart-wishlist').removeClass('out');
+                toggleWidget();
             }
             e.stopPropagation();                        
         });

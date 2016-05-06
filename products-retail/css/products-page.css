@@ -1104,19 +1104,47 @@ Slick slider arrow
   appearance: none;
   outline: none;
   padding: 0;
-  display: block;
-  width: 100%;
-  padding: 30px 0 0;
+  display: inline-block;
+  width: 70px;
+  padding: 5px 0 0px;
+  height: 56px;
 }
 #product-pages #shopping-cart-widget aside button:after {
   content: " ";
-  width: 59.35%;
-  margin: 0 auto;
+  width: 1px;
   display: block;
-  position: relative;
+  position: absolute;
   background: white;
-  margin-top: 30px;
-  height: 2px;
+  height: 50px;
+  right: -2px;
+  top: 50%;
+  margin-top: -25px;
+}
+@media (min-width: 768px) {
+  #product-pages #shopping-cart-widget aside button {
+    display: block;
+    width: 100%;
+    padding: 25px 0 0;
+    height: auto;
+  }
+  #product-pages #shopping-cart-widget aside button:after {
+    content: " ";
+    width: 59.35%;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    background: white;
+    margin-top: 15px;
+    height: 2px;
+  }
+}
+@media (min-width: 1200px) {
+  #product-pages #shopping-cart-widget aside button {
+    padding: 30px 0 0;
+  }
+  #product-pages #shopping-cart-widget aside button:after {
+    margin-top: 30px;
+  }
 }
 #product-pages #shopping-cart-widget aside button:last-child:after {
   content: "";
@@ -1127,6 +1155,16 @@ Slick slider arrow
   margin: 0 auto;
   position: relative;
   display: block;
+}
+@media (min-width: 768px) {
+  #product-pages #shopping-cart-widget aside button .icon {
+    width: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  #product-pages #shopping-cart-widget aside button .icon {
+    width: 45px;
+  }
 }
 #product-pages #shopping-cart-widget aside button .cart-items-wrap {
   display: block;
@@ -1148,6 +1186,18 @@ Slick slider arrow
   width: 17px;
   height: 17px;
 }
+@media (min-width: 768px) {
+  #product-pages #shopping-cart-widget aside button .cart-items-wrap {
+    top: -5px;
+    right: -4px;
+  }
+}
+@media (min-width: 1200px) {
+  #product-pages #shopping-cart-widget aside button .cart-items-wrap {
+    top: -2px;
+    right: -7px;
+  }
+}
 #product-pages #shopping-cart-widget aside button .cart-items-wrap .cart-items {
   position: absolute;
   left: 0;
@@ -1160,14 +1210,53 @@ Slick slider arrow
   height: 28px;
   fill: white;
 }
+@media (min-width: 768px) {
+  #product-pages #shopping-cart-widget aside button svg {
+    width: 30px;
+    height: 25px;
+  }
+}
 @media (min-width: 1200px) {
   #product-pages #shopping-cart-widget aside button svg {
     width: 44px;
     height: 35px;
   }
 }
-#product-pages #shopping-cart-widget aside button:focus svg {
-  fill: white;
+#product-pages #shopping-cart-widget aside button.open:before {
+  content: " ";
+  display: block;
+  width: 20px;
+  height: 20px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  left: 50%;
+  bottom: -16px;
+  margin-left: -10px;
+  background: #4faa98;
+}
+@media (min-width: 768px) {
+  #product-pages #shopping-cart-widget aside button.open:before {
+    top: 50%;
+    left: inherit;
+    bottom: inherit;
+    margin-left: 0;
+    right: -18px;
+  }
+}
+@media (min-width: 1200px) {
+  #product-pages #shopping-cart-widget aside button.open:before {
+    right: -14px;
+  }
+}
+#product-pages #shopping-cart-widget aside button.open:first-child:before {
+  margin-top: -10px;
+}
+#product-pages #shopping-cart-widget aside button.open svg {
+  fill: #4c9d8d;
 }
 #product-pages #shopping-cart-widget .close {
   position: absolute;
@@ -1225,11 +1314,6 @@ Slick slider arrow
   padding: 30px 10px 28px;
   border-bottom: solid 1px #439182;
 }
-@media (max-width: 767px) {
-  #product-pages #shopping-cart-widget .shopping-cart-view h3 {
-    font-size: 20px;
-  }
-}
 #product-pages #shopping-cart-widget .shopping-cart-view h3.no-border {
   border-bottom: none;
 }
@@ -1265,7 +1349,7 @@ Slick slider arrow
   }
 }
 #product-pages #shopping-cart-widget .shopping-cart-content .tour-info .tour-intro {
-  color: #8fbed4;
+  color: white;
   font-family: "Gotham A", "Gotham B";
   font-style: normal;
   font-weight: 400;
@@ -1273,7 +1357,7 @@ Slick slider arrow
   margin-bottom: 30px;
 }
 #product-pages #shopping-cart-widget .shopping-cart-content .tour-info .tour-popout {
-  background: url("../templates/images/product-detail/bg-light-green-stripes.jpg");
+  background: url("../templates/images/product-detail/bg-dark-green-stripes.jpg");
   padding: 25px 25px 20px;
   color: white;
   margin-bottom: 30px;
@@ -1301,7 +1385,7 @@ Slick slider arrow
   padding: 18px 40px;
   margin: 20px 0 0;
   border-color: transparent;
-  background: #64b8a8 url("../templates/images/product-detail/bg-dark-green-stripes.jpg");
+  background: #64b8a8;
 }
 #product-pages #shopping-cart-widget .shopping-cart-content .tour-info .tour-popout .tour-button:hover {
   color: #6dc8b6;
@@ -1789,21 +1873,6 @@ Slick slider arrow
   -o-transform: translateX(0);
   transform: translateX(0);
 }
-#product-pages #shopping-cart-widget .shopping-cart-search-list .list-header {
-  text-align: center;
-  margin-bottom: 30px;
-}
-#product-pages #shopping-cart-widget .shopping-cart-search-list .list-header .title {
-  padding: 30px 0;
-}
-#product-pages #shopping-cart-widget .shopping-cart-search-list .list-header h3 {
-  color: white;
-  font-size: 31px;
-  margin-bottom: 0;
-  font-family: "Gotham A", "Gotham B";
-  font-style: normal;
-  font-weight: 500;
-}
 #product-pages #shopping-cart-widget .shopping-cart-search-list .list-header .switch-btn {
   border: 1px solid #54f276;
   font-size: 14px;
@@ -1995,18 +2064,6 @@ Slick slider arrow
   font-weight: 700;
   color: white;
   margin-bottom: 6px;
-}
-#product-pages #shopping-cart-widget .shopping-cart-product-list .list-header {
-  text-align: center;
-  margin-bottom: 14px;
-}
-#product-pages #shopping-cart-widget .shopping-cart-product-list .list-header .title {
-  padding-top: 30px;
-}
-#product-pages #shopping-cart-widget .shopping-cart-product-list .list-header h3 {
-  color: white;
-  font-size: 31px;
-  margin-bottom: 12px;
 }
 #product-pages #shopping-cart-widget .shopping-cart-product-list .list-header .switch-btn {
   border: 1px solid #54f276;
@@ -5522,6 +5579,9 @@ Slick slider arrow
   #product-pages .main-section#product-detail .section .section-content {
     padding: 0 11%;
   }
+}
+#product-pages .main-section#product-detail .section .expand-section {
+  display: none;
 }
 #product-pages .main-section#product-detail .section .expand-section.opened {
   display: block;

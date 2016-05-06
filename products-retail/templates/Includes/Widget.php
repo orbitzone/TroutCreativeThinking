@@ -10,7 +10,7 @@
 			c0,0.5,0.4,0.9,0.9,0.9h32.1l-4.9,14.9H12.9c-0.5,0-0.9,0.4-0.9,0.9C12,23.8,12.4,24.2,12.9,24.2z"/></svg>
 			</span>
 	</button>
-	<button type="button" class="shopping-list">
+	<button type="button" class="wishlist">
 		<span class="icon">
 			<span class="cart-items-wrap">
 				<span class="cart-items">1</span>
@@ -34,7 +34,7 @@
 		<!--START TAKE A TOUR SECTION -->
 		<div class="tour-info shopping-cart-view">
 			<header>
-				<h3>Your List Toolbar</h3>
+				<h3>Welcome !</h3>
 			</header>
 			<div class="tour-intro">
 				<p><b>Welcome to your shopping cart and wishlist.</b><br/> Close and add products to create your first order or wishlist.</p>
@@ -194,22 +194,7 @@
 				<?php } ?>
 				</ul>
 			</div>
-			<!--END TOOL BAR ITEMLIST-->
-			<div class="list-totals">
-				<div class="values">
-					<div class="subtotal">
-						<span class="text">Subtotal</span>
-						<span class="value">$444.17</span>
-					</div>
-					<div class="total">
-						<span class="text">Total <small>inc. GST</small></span>
-						<span class="value">$488.87</span>
-					</div>
-				</div>
-				<button type="submit" class="checkout-btn">
-					Checkout
-				</button>
-			</div>
+			<!--END TOOL BAR ITEMLIST-->			
 		</div>
 		<!--END PRODUCT LIST-->
 

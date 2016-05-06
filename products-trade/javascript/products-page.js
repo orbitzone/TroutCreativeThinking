@@ -679,13 +679,15 @@ var product_pages = {
             } );
 
         }
-        var shopping_cart_content_height = $('#shopping-cart-widget .shopping-cart-content').height();
-        var shopping_cart_content_scrollHeight = $('#shopping-cart-widget .shopping-cart-content').get(0).scrollHeight;
-        $('#shopping-cart-widget .shopping-cart-content').on('mousewheel', function(e,d){
+        if(ieV){
+            var shopping_cart_content_height = $('#shopping-cart-widget .shopping-cart-content').height();
+            var shopping_cart_content_scrollHeight = $('#shopping-cart-widget .shopping-cart-content').get(0).scrollHeight;
+            $('#shopping-cart-widget .shopping-cart-content').on('mousewheel', function(e,d){
                 if((this.scrollTop === (shopping_cart_content_scrollHeight - shopping_cart_content_height) && d < 0) || (this.scrollTop === 0 && d > 0)) {
                   e.preventDefault();
                 }
-        });
+            });
+        }
         removeIOSRubberEffect( document.querySelector( ".scrollable" ) );
         var event = 'click';
         if(deviceMobile){
@@ -694,24 +696,6 @@ var product_pages = {
             $('html').addClass('mobile');
         }
         $('#shopping-cart-widget select').selectric();
-        $(window).on('scroll', function(){
-            var width = $(window).width();
-            var windowHeight = $(window).height();
-            if($(window).scrollTop() > $('.main-section').offset().top){
-                    $('#shopping-cart-widget').height('');
-                    $('#shopping-cart-widget').addClass('fixed');                    
-                    if($(window).scrollTop() > ($('.site-footer').offset().top - windowHeight)){
-                        if(!deviceMobile){
-                            if(width > 767){
-                                calculateWidgetContentHeight();
-                            }
-                        }
-                    }
-            }else{
-                $('#shopping-cart-widget').height('');
-                $('#shopping-cart-widget').removeClass('fixed');
-            }            
-        }).scroll();
         if(!deviceMobile){
             var scrollTopOnHover = 0;
             $('#shopping-cart-widget').on('mouseover', function(){

@@ -1690,7 +1690,11 @@ Slick slider arrow
   font-style: normal;
   font-weight: 500;
 }
-#product-pages #shopping-cart-widget .shopping-cart-search-list .list-header .switch-btn {
+#product-pages #shopping-cart-widget .shopping-cart-search-list .list-header h3 a {
+  color: white;
+  text-decoration: none;
+}
+#product-pages #shopping-cart-widget .shopping-cart-search-list .list-header button.switch-btn {
   border: 1px solid #54f276;
   font-size: 14px;
   text-transform: uppercase;
@@ -1714,14 +1718,14 @@ Slick slider arrow
   margin-left: -24px;
   background: #066693;
 }
-#product-pages #shopping-cart-widget .shopping-cart-search-list .list-header .switch-btn svg {
+#product-pages #shopping-cart-widget .shopping-cart-search-list .list-header button.switch-btn svg {
   display: inline-block;
   width: 16px;
   height: 13px;
   vertical-align: middle;
   fill: #54F276;
 }
-#product-pages #shopping-cart-widget .shopping-cart-search-list .list-header .switch-btn b {
+#product-pages #shopping-cart-widget .shopping-cart-search-list .list-header button.switch-btn b {
   font-style: italic;
 }
 #product-pages #shopping-cart-widget .shopping-cart-search-list .list-header .current-list {
@@ -1928,7 +1932,11 @@ Slick slider arrow
   font-size: 31px;
   margin-bottom: 12px;
 }
-#product-pages #shopping-cart-widget .shopping-cart-product-list .list-header .switch-btn {
+#product-pages #shopping-cart-widget .shopping-cart-product-list .list-header h3 a {
+  color: white;
+  text-decoration: none;
+}
+#product-pages #shopping-cart-widget .shopping-cart-product-list .list-header button.switch-btn {
   border: 1px solid #54f276;
   font-size: 14px;
   text-transform: uppercase;
@@ -1947,14 +1955,14 @@ Slick slider arrow
   background-clip: padding-box;
   margin-bottom: 16px;
 }
-#product-pages #shopping-cart-widget .shopping-cart-product-list .list-header .switch-btn svg {
+#product-pages #shopping-cart-widget .shopping-cart-product-list .list-header button.switch-btn svg {
   display: inline-block;
   width: 16px;
   height: 13px;
   vertical-align: middle;
   fill: #54f276;
 }
-#product-pages #shopping-cart-widget .shopping-cart-product-list .list-header .switch-btn b {
+#product-pages #shopping-cart-widget .shopping-cart-product-list .list-header button.switch-btn b {
   font-style: italic;
 }
 #product-pages #shopping-cart-widget .shopping-cart-product-list .list-header .options {
@@ -3918,6 +3926,9 @@ Slick slider arrow
   #product-pages .main-section#product-detail #video-lightbox .lightbox-content {
     max-width: 1200px;
   }
+}
+#product-pages .main-section#product-detail #video-lightbox .embed-responsive {
+  visibility: visible;
 }
 #product-pages .main-section#product-detail .slider-lightbox .lightbox-content {
   background: white;

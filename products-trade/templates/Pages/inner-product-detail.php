@@ -293,7 +293,7 @@
 							<div class="main-anchor-wrap">
 								<ul class="main-anchor-list list-inline hidden-xs">
 									<li><a class="btn call-to-action full-width" href="#features">Features</a></li>
-									<li><a class="btn call-to-action full-width" href="#technical-specification">Specifications</a></li>
+									<li><a class="btn call-to-action full-width" href="#technical-specification">Technical</a></li>
 									<li><a class="btn call-to-action full-width" href="#downloads">Downloads</a></li>
 									<li><a class="btn call-to-action full-width" href="#videos">Videos</a></li>
 									<li><a class="btn call-to-action full-width" href="#people-also-bought">People also bought</a></li>

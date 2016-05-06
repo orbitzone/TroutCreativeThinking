@@ -54,7 +54,7 @@
 			<!--START LIST HEADER-->
 			<div class="list-header">
 				<div class="title">
-					<h3>Switch Product List</h3>
+					<h3><a href="#" class="switch-btn">Switch Product List</a></h3>
 				</div>
 				<div class="current-list">
 				<button type="button" class="switch-btn">

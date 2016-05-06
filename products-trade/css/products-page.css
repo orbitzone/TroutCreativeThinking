@@ -857,6 +857,16 @@ Slick slider arrow
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
+#product-pages #shopping-cart-widget select {
+  height: 66px;
+  background-color: #0776AA;
+  color: white;
+  font-size: 14px;
+  line-height: 66px;
+  padding: 0;
+  padding-left: 15px;
+  border: none;
+}
 #product-pages #shopping-cart-widget .selectric {
   border: none;
   width: 100%;

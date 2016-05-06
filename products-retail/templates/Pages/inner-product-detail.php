@@ -163,7 +163,7 @@
 									<div class="product-quantity">
 										<div class="quantity-wrap">
 											<div class="quantity-input">
-												<input class="quantity-number" data-productcode="7845123" type="number" name="quantity-7845123" min="1" value="1">
+												<input class="quantity-number" data-productcode="7845123" inputmode="numeric" type="text" name="quantity" min="1" value="1">
 											</div>											
 										</div>
 									</div>									

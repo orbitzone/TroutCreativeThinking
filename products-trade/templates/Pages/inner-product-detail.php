@@ -155,6 +155,8 @@
 										
 									</div>	
 								</div>
+								<form action="#" method="get" id="product-123123">
+
 								<div class="product-quantity-wrap">
 									<div class="product-quantity">
 										<div class="quantity-wrap">
@@ -163,7 +165,7 @@
 												<input class="quantity-radio" data-productcode="7845123" type="radio" id="set-7845123-pkt" name="set-7845123" value="PKT">
 											</div>
 											<div class="quantity-input">
-												<input class="quantity-number" data-productcode="7845123" type="number" name="quantity-7845123" min="1" value="1">
+												<input class="quantity-number" data-productcode="7845123" inputmode="numeric" type="number" name="quantity" min="1" value="1">
 											</div>
 											<div class="quantity-set">
 												<span class="radiolabel-set span-block">
@@ -202,6 +204,7 @@
 
 									</div><!-- /progress-button -->									
 								</div>
+								</form>
 								<div class="product-icons">
 									<div class="row">
 										<div class="col-xs-6">

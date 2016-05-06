@@ -36,6 +36,7 @@ var isIE = function(){
   }
 };
 var ieV = isIE();
+
 /* Youtube API code for channel page */
 // 1. This code gets GET parameters for us (in case we wish a
 // specific video to autoplay.
@@ -612,38 +613,6 @@ var product_pages = {
         if(deviceMobile){
             $('#shopping-cart-widget').addClass('mobile');
         }
-        function calculateWidgetContentHeight(){
-            var windowWidth = $(window).width();
-            var windowHeight = $(window).height();
-            var scrollTop = $(window).scrollTop();
-            var height = windowHeight;
-
-            $('#shopping-cart-widget').height('');
-            //content height on mobile
-            
-                if(windowWidth < 768){
-                    if(scrollTop < $('#shopping-cart-widget aside').offset().top){
-                        height = windowHeight - ($('#shopping-cart-widget aside').offset().top - scrollTop ) - $('#shopping-cart-widget aside').height();
-                    }else{
-                        height = windowHeight - $('#shopping-cart-widget aside').height();
-                    }
-                }else{
-                    if(scrollTop > $('.main-section').offset().top){
-                        if(scrollTop > ($('.site-footer').offset().top - windowHeight)){
-                            height = $('.site-footer').offset().top - scrollTop;
-                            if(windowWidth > 767){
-                                $('#shopping-cart-widget').height(height);
-                            }
-                        }
-                    }else{
-                        height = (windowHeight - $('.main-section').offset().top) + scrollTop;
-                    }
-                }
-            if(!$('#shopping-cart-widget').hasClass('open')){
-                height = 0;
-            }
-            return height;            
-        }
         document.ontouchmove = function ( event ) {
 
             var isTouchMoveAllowed = true, target = event.target;
@@ -677,14 +646,19 @@ var product_pages = {
             } );
 
         }
-        var shopping_cart_content_height = $('#shopping-cart-widget .shopping-cart-content').height();
-        var shopping_cart_content_scrollHeight = $('#shopping-cart-widget .shopping-cart-content').get(0).scrollHeight;
-        $('#shopping-cart-widget .shopping-cart-content').on('mousewheel', function(e,d){
+        removeIOSRubberEffect( document.querySelector( ".scrollable" ) );
+        //Prevent body scrolling when on widget on IE
+        if(ieV){
+            var shopping_cart_content_height = $('#shopping-cart-widget .shopping-cart-content').height();
+            var shopping_cart_content_scrollHeight = $('#shopping-cart-widget .shopping-cart-content').get(0).scrollHeight;
+            $('#shopping-cart-widget .shopping-cart-content').on('mousewheel', function(e,d){
                 if((this.scrollTop === (shopping_cart_content_scrollHeight - shopping_cart_content_height) && d < 0) || (this.scrollTop === 0 && d > 0)) {
                   e.preventDefault();
+                  e.stopPropagation();
                 }
-        });
-        removeIOSRubberEffect( document.querySelector( ".scrollable" ) );
+            });
+        }
+        
         var event = 'click';
         if(deviceMobile){
             event = 'touchend';
@@ -692,38 +666,18 @@ var product_pages = {
             $('html').addClass('mobile');
         }
         $('#shopping-cart-widget select').selectric();
-        $(window).on('scroll', function(){
-            var width = $(window).width();
-            var windowHeight = $(window).height();
-            if($(window).scrollTop() > $('.main-section').offset().top){
-                    $('#shopping-cart-widget').height('');
-                    $('#shopping-cart-widget').addClass('fixed');                    
-                    if($(window).scrollTop() > ($('.site-footer').offset().top - windowHeight)){
-                        if(!deviceMobile){
-                            if(width > 767){
-                                calculateWidgetContentHeight();
-                            }
-                        }
-                    }
-            }else{
-                $('#shopping-cart-widget').height('');
-                $('#shopping-cart-widget').removeClass('fixed');
-            }            
-        }).scroll();
-        function preventEvents(e){
-            e.stopPropagation();                  
-        }
         if(!deviceMobile){
             var scrollTopOnHover = 0;
             $('#shopping-cart-widget').on('mouseover', function(){
-                if(isIE==0){
+                if(!ieV){
                     $('html,body').addClass('overflow-hidden');
                 }
                 scrollTopOnHover = $(window).scrollTop();
             }).on('mouseout', function(){
-                if(isIE==0){
+                if(!ieV){
                     $('html,body').removeClass('overflow-hidden');
                 }
+               // $(window).scroll(function() { return false; });
                 setTimeout( function(){ $(window).scrollTop(scrollTopOnHover)}, 100);
             });
         }
@@ -747,19 +701,15 @@ var product_pages = {
             
             $('#shopping-cart-widget').toggleClass('open');
             if($('#shopping-cart-widget').hasClass('open')){
+                $('#shopping-cart-widget .shopping-cart-content').height('');
+                $('#shopping-cart-widget .shopping-cart-content').css({
+                    display: 'block'
+                });
+                height = $('#shopping-cart-widget .shopping-cart-content').height();
+                $('#shopping-cart-widget .shopping-cart-content').height(0);
                 TweenMax.to($('#shopping-cart-widget'),0.5,{right: 0});
-                height = calculateWidgetContentHeight();
                 TweenMax.to($('#shopping-cart-widget .shopping-cart-content'),0.5,{x: 0, opacity: 1, height: height});
                 $('.product-detail-wrap, aside').addClass('disable-scrolling');
-               /* $('#shopping-cart-widget aside button').css({
-                    'position': 'absolute',
-                    'top': top + 10`
-                });*/
-                $('.shopping-cart-content').on('scroll', preventEvents);   
-                if($(window).width() > 768 && !deviceMobile){
-                  
-                }
-                //$('html,body').addClass('overflow-hidden');
             }else{
                 var right = -535;
                 if($(window).width()> 1199){
@@ -769,20 +719,14 @@ var product_pages = {
                 TweenMax.to($('#shopping-cart-widget .shopping-cart-content'),0.5,{x: 100, opacity: 0});
                 if(width > 767){
                     TweenMax.to($('#shopping-cart-widget'),0.5,{right: right});
-                    TweenMax.to($('#shopping-cart-widget .shopping-cart-content'),0.5,{x: 100, opacity: 0});
+                    TweenMax.to($('#shopping-cart-widget .shopping-cart-content'),0.5,{x: 100, opacity: 0, height: 0});
                 }else{
                     TweenMax.to($('#shopping-cart-widget'),0.5,{right: right, height: ''});
                     TweenMax.to($('#shopping-cart-widget .shopping-cart-content'),0.5,{x: 100, opacity: 0, height: 0});
                 }
-                $('.product-detail-wrap, aside').removeClass('disable-scrolling');
-                //$('html, body').removeClass('overflow-hidden');    
-                if($(window).width() > 768 && !deviceMobile){
-                  $('.shopping-cart-content').off('scroll', preventEvents);   
-                }
-                //$('body').off('scroll mousedown touchdown mousemove click touchstop touchstart touchmove', preventEvents); 
+                $('.product-detail-wrap, aside').removeClass('disable-scrolling');                
             }
-            e.stopPropagation();
-                        
+            e.stopPropagation();                        
         });
         $('#shopping-cart-widget .shopping-cart-product-list .switch-btn').on('click', function(){
             $('#shopping-cart-widget .shopping-cart-product-list').addClass('out');
@@ -800,9 +744,19 @@ var product_pages = {
         $(window).on('resize', function(){
             if(!$('#shopping-cart-widget').hasClass('open')){
                 $('#shopping-cart-widget').css('right','');
+            }            
+            if($('#shopping-cart-widget').hasClass('open') && $(window).width()<768){
+                $('#shopping-cart-widget .shopping-cart-content').height('');
+                height = $('#shopping-cart-widget .shopping-cart-content').height();
+                $('#shopping-cart-widget .shopping-cart-content').height(height);                
             }
-            height = calculateWidgetContentHeight();
-            $('#shopping-cart-widget .shopping-cart-content').height(height);
+        });
+        $(window).on('scroll', function(){
+            if($(window).scrollTop() > $('.main-section').offset().top){
+                $('#shopping-cart-widget').addClass('fixed');
+            }else{
+                $('#shopping-cart-widget').removeClass('fixed');
+            }
         });
         //Edit item action
         $(document).on('click','#shopping-cart-widget .edit-item, #shopping-cart-widget .product-thumbnail, #shopping-cart-widget .item-details',function(e){
@@ -1132,15 +1086,16 @@ var product_pages = {
             var thisobject = $(this);
             var thisname = thisobject.data("expandbutton");
             var expandsection = $(".expand-section[data-expandsection='" + thisname + "']");
-
-            if(thisobject.hasClass('section-title') && $(window).width() > 767){
-                e.stopPropagation();
-                return false;
+            var open = true;
+            if($(window).width() > 768 && $(this).hasClass('section-title')){
+                open = false;
             }else{
+                open = true;
+            }
+            if(open){
                 if(expandsection.hasClass("opened")){
                     thisobject.removeClass('opened');
                     expandsection.removeClass("opened");
-                            
                     expandsection.slideUp("slow");
                 }
                 else{

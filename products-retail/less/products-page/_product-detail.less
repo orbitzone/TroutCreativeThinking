@@ -11,6 +11,8 @@
 @share-icon-color: #7f7f7f;
 @arrow-down-color: #a6a6a6;
 @images-folder: "/templates/images";
+
+
 .main-section#product-detail{
 	padding-top: 44px;
 	img{
@@ -597,17 +599,6 @@
 						}
 					}
 				}//END nav-tabs
-				.product-price{
-					color: @text-price-inc;
-					font-size: 22px;
-					.gothamBold;
-					small{
-						.gothamBook;
-						display: block;
-						text-align: center;
-						font-size: 13px;
-					}
-				}
 				.tab-pane{
 					background:  @bg-price-box;
 					.gothamBold;
@@ -858,14 +849,21 @@
 			&.opened{
 				display: block;
 			}
-			@media (min-width: @screen-sm){
-				display: block !important;
+			&.expanded-desktop{
+				@media (min-width: @screen-sm){
+					display: block !important;
+				}
 			}
 		}
 		.section-title{
 			padding: 10px 0;
 			margin: 20px 0;
-			cursor: pointer;
+			&.action-expand-button{
+				cursor: pointer;
+				@media (min-width: @screen-sm){
+					cursor: default;
+				}
+			}
 			h3.section-heading{
 				padding:0;
 				margin:0; 
@@ -878,12 +876,12 @@
 					height: 11px;
 					fill: @arrow-down-color;
 					float: right;
-				}
+				}		
 				@media (min-width: @screen-sm){
 					svg{
-						display: none;						
+						display: none;
 					}
-				}			
+				}
 			}
 			&.opened{
 				.section-heading{
@@ -891,7 +889,7 @@
 						.transform(rotate(180deg));
 					}
 				}
-			}
+			}			
 		}		
 		.table-heading{
 			font-size: 15px;
@@ -1188,6 +1186,9 @@
     100% { .transform(scale(1));  }	    
 	}
 }
+
+
+
 
 
 

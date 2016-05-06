@@ -294,7 +294,7 @@
 			</div>
 		</div>
 		<!--END PRODUCT HERO SECTION -->
-		<!--START FEATURES SECTION -->
+			<!--START FEATURES SECTION -->
 		<section class="section features-section" id="features">
 			<div class="container-fluid section-container">
 				<div class="section-content">
@@ -306,7 +306,7 @@
 					</svg>
 				</h3>
 			</header>
-			<div data-expandsection="features" class="expand-section">
+			<div data-expandsection="features" class="expand-section expanded-desktop">
 					<div class="inner-info">
 						<div class="row">
 							<div class="col-sm-6">
@@ -416,7 +416,7 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 <path d="M0.6,0.6C0.2,1,0,1.5,0,2c0,0.5,0.2,1,0.6,1.4l21,21c0.8,0.8,2.1,0.8,2.8,0l21-21c0.8-0.8,0.8-2.1,0-2.8
 	c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 </svg></h3></header>
-				<div data-expandsection="technical" class="expand-section">
+				<div data-expandsection="technical" class="expand-section expanded-desktop">
 					<div class="inner-info">
 						<div class="row">
 							<div class="col-sm-6">
@@ -523,7 +523,7 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 	<path d="M0.6,0.6C0.2,1,0,1.5,0,2c0,0.5,0.2,1,0.6,1.4l21,21c0.8,0.8,2.1,0.8,2.8,0l21-21c0.8-0.8,0.8-2.1,0-2.8
 		c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 	</svg></h3></header>
-						<div data-expandsection="warranty" class="expand-section">
+						<div data-expandsection="warranty" class="expand-section expanded-desktop">
 								<div class="inner-info">
 									<div class="row">
 										<div class="col-sm-6">
@@ -615,7 +615,7 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 					</svg>
 							</h3>
 							</header>
-							<div data-expandsection="installation" class="expand-section">
+							<div data-expandsection="installation" class="expand-section expanded-desktop">
 								<div class="inner-info">
 									<div class="row">
 										<div class="col-xs-12">

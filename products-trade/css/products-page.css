@@ -1592,9 +1592,8 @@ Slick slider arrow
 #product-pages #shopping-cart-widget .shopping-cart-search-list {
   margin-bottom: 14px;
   padding: 0 10px;
-  position: absolute;
   width: 100%;
-  opacity: 1;
+  display: block;
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
   -ms-transform: translateX(0);
@@ -1613,7 +1612,6 @@ Slick slider arrow
 }
 #product-pages #shopping-cart-widget .shopping-cart-search-list.out {
   display: none;
-  opacity: 0;
   -webkit-transform: translateX(-100%);
   -moz-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
@@ -1633,7 +1631,7 @@ Slick slider arrow
   margin-bottom: 30px;
 }
 #product-pages #shopping-cart-widget .shopping-cart-search-list .list-header .title {
-  padding: 25px 0 30px;
+  padding: 30px 0;
 }
 #product-pages #shopping-cart-widget .shopping-cart-search-list .list-header h3 {
   color: white;
@@ -1837,7 +1835,7 @@ Slick slider arrow
 }
 #product-pages #shopping-cart-widget .shopping-cart-product-list {
   padding: 0 10px;
-  opacity: 1;
+  display: block;
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
   -ms-transform: translateX(0);
@@ -1855,7 +1853,7 @@ Slick slider arrow
   }
 }
 #product-pages #shopping-cart-widget .shopping-cart-product-list.out {
-  opacity: 0;
+  display: none;
   -webkit-transform: translateX(-100%);
   -moz-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
@@ -1863,7 +1861,6 @@ Slick slider arrow
   transform: translateX(-100%);
 }
 #product-pages #shopping-cart-widget .shopping-cart-product-list.in {
-  opacity: 1;
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
   -ms-transform: translateX(0);

@@ -4770,12 +4770,22 @@ Slick slider arrow
 #product-pages .main-section#product-detail .section .expand-section.opened {
   display: block;
 }
+@media (min-width: 768px) {
+  #product-pages .main-section#product-detail .section .expand-section.expanded-desktop {
+    display: block !important;
+  }
+}
 #product-pages .main-section#product-detail .section .section-title {
   padding: 10px 0;
   margin: 20px 0;
 }
 #product-pages .main-section#product-detail .section .section-title.action-expand-button {
   cursor: pointer;
+}
+@media (min-width: 768px) {
+  #product-pages .main-section#product-detail .section .section-title.action-expand-button {
+    cursor: default;
+  }
 }
 #product-pages .main-section#product-detail .section .section-title h3.section-heading {
   padding: 0;
@@ -4796,6 +4806,11 @@ Slick slider arrow
   height: 11px;
   fill: #a6a6a6;
   float: right;
+}
+@media (min-width: 768px) {
+  #product-pages .main-section#product-detail .section .section-title h3.section-heading svg {
+    display: none;
+  }
 }
 #product-pages .main-section#product-detail .section .section-title.opened .section-heading svg {
   -webkit-transform: rotate(180deg);

@@ -849,12 +849,20 @@
 			&.opened{
 				display: block;
 			}
+			&.expanded-desktop{
+				@media (min-width: @screen-sm){
+					display: block !important;
+				}
+			}
 		}
 		.section-title{
 			padding: 10px 0;
 			margin: 20px 0;
 			&.action-expand-button{
 				cursor: pointer;
+				@media (min-width: @screen-sm){
+					cursor: default;
+				}
 			}
 			h3.section-heading{
 				padding:0;
@@ -869,6 +877,11 @@
 					fill: @arrow-down-color;
 					float: right;
 				}		
+				@media (min-width: @screen-sm){
+					svg{
+						display: none;
+					}
+				}
 			}
 			&.opened{
 				.section-heading{
@@ -876,7 +889,7 @@
 						.transform(rotate(180deg));
 					}
 				}
-			}
+			}			
 		}		
 		.table-heading{
 			font-size: 15px;

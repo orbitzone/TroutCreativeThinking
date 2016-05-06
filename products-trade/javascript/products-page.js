@@ -1086,27 +1086,33 @@ var product_pages = {
             var thisobject = $(this);
             var thisname = thisobject.data("expandbutton");
             var expandsection = $(".expand-section[data-expandsection='" + thisname + "']");
-
-            if(expandsection.hasClass("opened")){
-                thisobject.removeClass('opened');
-                expandsection.removeClass("opened");
-                expandsection.slideUp("slow");
+            var open = true;
+            if($(window).width() > 768 && $(this).hasClass('section-title')){
+                open = false;
+            }else{
+                open = true;
             }
-            else{
-                thisobject.addClass('opened');
-                expandsection.css({
-                    display: 'block'
-                });
-                if(thisobject.parent().find('.slick-slider').hasClass('slick-initialized')){
-                    thisobject.parent().find('.slick-slider').slick('setPosition');
+            if(open){
+                if(expandsection.hasClass("opened")){
+                    thisobject.removeClass('opened');
+                    expandsection.removeClass("opened");
+                    expandsection.slideUp("slow");
                 }
-                expandsection.css({
-                    display: 'none'
-                });
-                expandsection.addClass("opened");
-                expandsection.slideDown("slow");
+                else{
+                    thisobject.addClass('opened');
+                    expandsection.css({
+                        display: 'block'
+                    });
+                    if(thisobject.parent().find('.slick-slider').hasClass('slick-initialized')){
+                        thisobject.parent().find('.slick-slider').slick('setPosition');
+                    }
+                    expandsection.css({
+                        display: 'none'
+                    });
+                    expandsection.addClass("opened");
+                    expandsection.slideDown("slow");
+                }
             }
-            
         });
         // SECTION EXPAND AND COLLAPES ON LOAD
         $(".expand-section").each(

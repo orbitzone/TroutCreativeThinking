@@ -10,8 +10,7 @@
   <title>Reece Products</title>
   <?php include "templates/Includes/ProductsHeader.php" ?>  
 </head>
-<body
-class="">
+<body class="">
 <div class="ocmain-wrapper">
   <div class="browser-message">
     <div class="content-container">

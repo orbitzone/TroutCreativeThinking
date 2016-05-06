@@ -4023,6 +4023,7 @@ Slick slider arrow
   z-index: 1;
   overflow: hidden;
   border: 2px solid #6dc8b6;
+  padding: 15px 20px;
   -moz-transition: 0.2s all ease-out;
   -ms-transition: 0.2s all ease-out;
   -webkit-transition: 0.2s all ease-out;
@@ -4077,10 +4078,17 @@ Slick slider arrow
   color: #eeba90;
 }
 #product-pages .main-section#product-detail .black-button {
+  background: #333;
   border-color: #333333;
+  color: white;
 }
-#product-pages .main-section#product-detail .black-button:hover {
-  color: #333;
+@media (min-width: 768px) {
+  #product-pages .main-section#product-detail .black-button:hover {
+    color: #333;
+  }
+  #product-pages .main-section#product-detail .black-button:hover:before {
+    background: white;
+  }
 }
 #product-pages .main-section#product-detail .add-to-cart {
   padding: 15px 20px;
@@ -5237,6 +5245,38 @@ Slick slider arrow
 }
 #product-pages .main-section#product-detail #product-display + .section .section-content {
   border-top: none;
+}
+#product-pages .main-section#product-detail #powder-room {
+  padding: 65px 0 15px;
+}
+@media (min-width: 1200px) {
+  #product-pages .main-section#product-detail #powder-room .section-content {
+    padding: 0;
+  }
+}
+#product-pages .main-section#product-detail #powder-room .story {
+  margin-bottom: 30px;
+}
+#product-pages .main-section#product-detail #powder-room .story .btn {
+  margin-top: 30px;
+}
+#product-pages .main-section#product-detail #powder-room .title {
+  position: relative;
+  padding-bottom: 23px;
+  padding-left: 120px;
+}
+#product-pages .main-section#product-detail #powder-room .icon {
+  position: absolute;
+  top: -50px;
+  left: -20px;
+  z-index: 2;
+  width: 125px;
+  height: 125px;
+}
+#product-pages .main-section#product-detail #powder-room .icon svg {
+  width: 125px;
+  height: 125px;
+  display: block;
 }
 #product-pages .main-section#product-detail .section .slick-next {
   top: 37%;

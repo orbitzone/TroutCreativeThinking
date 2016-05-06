@@ -34,6 +34,7 @@
             <br><br><br>
               <h1>Product pages</h1>
               <ul style="padding-left:16px;">
+                <li><a href="product-detail.php">Product Detail and Widget</a></li>
                 <li><a href="shopping-cart.php">Shopping Cart</a></li>
                 <li><a href="checkout-cart.php">Checkout Cart</a></li>
                 <li><a href="checkout-cart-success.php">Checkout Cart - Success</a></li>

@@ -54,6 +54,7 @@
 		z-index: 1;
 		overflow: hidden;
 		border: 2px solid @main-color;
+		padding: 15px 20px;
 		.transition(0.2s all ease-out);
 		&:before{
 			@media (min-width: @screen-sm){
@@ -92,9 +93,16 @@
 		}
 	}
 	.black-button{
+		background: #333;
 		border-color: #333333;
+		color: white;
 		&:hover{
-			color: #333;
+			@media (min-width: @screen-sm){
+				color: #333;
+				&:before{
+					background: white;
+				}				
+			}
 		}
 	}	
 	.add-to-cart{
@@ -1014,7 +1022,38 @@
 			}
 		}
 	}
-
+	#powder-room{
+		padding: 65px 0 15px;
+		.section-content{
+			@media (min-width: @screen-lg){
+				padding: 0;
+			}
+		}			
+		.story{
+			margin-bottom: 30px;
+			.btn{
+				margin-top: 30px;
+			}
+		}
+		.title{
+			position: relative;
+			padding-bottom: 23px;
+			padding-left: 120px;
+		}
+		.icon{
+			position: absolute;
+			top: -50px;
+			left: -20px;
+			z-index: 2;
+			width: 125px;
+			height: 125px;
+			svg{
+				width: 125px;
+				height: 125px;
+				display: block;
+			}
+		}
+	}
 	.section{
 		.slick-next{
 			top: 37%;

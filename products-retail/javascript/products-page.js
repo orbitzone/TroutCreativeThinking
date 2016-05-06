@@ -942,7 +942,12 @@ var product_pages = {
                 player.stopVideo();
             }
             if($(e.target).parents('.lightbox-content').length == 0){
-                $('.lightbox').removeClass('show');
+                if($(e.target).parents('.slider-lightbox').length > 0 || $(e.target).hasClass('slider-lightbox')){
+                    $('#slider-lightbox').removeClass('show');
+                }else{
+                    $('#video-lightbox').removeClass('show');
+                }
+                
             }            
         });        
         //

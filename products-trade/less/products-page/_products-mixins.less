@@ -203,7 +203,7 @@
 		}
 	}
   & when (ispercentage(@lgWidth)){
-   	@media (min-width: @screen-sm-custom){
+   	@media (min-width: @screen-sm){
   		@{property}: @lgWidth;
 		}
 		@media (min-width: 1280px){
@@ -220,7 +220,7 @@
    	@{property}: @smWidth;
   }
   & when (ispixel(@lgWidth)){
-  	@media (min-width: @screen-sm-custom){
+  	@media (min-width: @screen-sm){
   		.getVW(@lgWidth, 1370px);
 			@{property}: @getVW;
 		}
@@ -229,7 +229,7 @@
 		}
 	}
   & when (ispercentage(@lgWidth)){
-   	@media (min-width: @screen-sm-custom){
+   	@media (min-width: @screen-sm){
   		@{property}: @lgWidth;
 		}
 		@media (min-width: 1280px){

@@ -1115,7 +1115,7 @@ var product_pages = {
             }
         });
         // SECTION EXPAND AND COLLAPES ON LOAD
-        $(".expand-section").each(
+        $(".internal-expand-body").each(
         function(){
             if($(this).hasClass("opened") === false){
                 $(this).hide();

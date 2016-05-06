@@ -8,6 +8,7 @@
 <link rel="stylesheet" type="text/css" href="css/reece-global.css" />
 <!--END: FROM ORIGINAL TEMPLATE -->
 
+<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
 <!-- LOAD GOTHAM FONT FOR DEVELOPMENT-->
 <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6958312/6279352/css/fonts.css" />
 <!--END: LOAD GOTHAM FONT FOR DEVELOPMENT -->
@@ -20,3 +21,6 @@
 <link rel="stylesheet" type="text/css" href="javascript/slick/slick-theme.css" />
 
 <link rel="stylesheet" type="text/css" href="css/products-page.css" />
+
+<script src="https://use.typekit.net/pnf5gmp.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>

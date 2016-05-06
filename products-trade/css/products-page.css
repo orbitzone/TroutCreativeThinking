@@ -93,6 +93,11 @@
   font-style: italic;
   font-weight: 700;
 }
+.libreBaskervilleBold {
+  font-family: 'Libre Baskerville', serif;
+  font-style: normal;
+  font-weight: bold;
+}
 /*
 
 @media (max-width: @screen-xs-max) {  }
@@ -111,17 +116,17 @@ html.overflow-hidden,
 body.overflow-hidden {
   overflow: hidden;
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   body.widget.off-canvas-open .ocmain-wrapper {
-    left: calc(-280px + -6.0583941605839415vw);
+    left: calc(-280px + 83px);
   }
 }
 body.widget .ocnav-wrapper {
   margin-right: 0;
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   body.widget .ocnav-wrapper {
-    margin-right: 6.05839416vw;
+    margin-right: 83px;
   }
 }
 @media (min-width: 1280px) {
@@ -132,9 +137,9 @@ body.widget .ocnav-wrapper {
 body.widget .navbar .menuButton {
   margin-right: 5px;
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   body.widget .navbar .menuButton {
-    margin-right: 7.51824818vw;
+    margin-right: 103px;
   }
 }
 @media (min-width: 1280px) {
@@ -145,9 +150,9 @@ body.widget .navbar .menuButton {
 body.widget .site-footer .contact {
   margin-right: 5px;
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   body.widget .site-footer .contact {
-    margin-right: 7.51824818vw;
+    margin-right: 103px;
   }
 }
 @media (min-width: 1280px) {
@@ -764,7 +769,7 @@ Slick slider arrow
   float: left;
   font-size: 16px;
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   #product-pages #search input {
     width: 37%;
   }
@@ -783,7 +788,7 @@ Slick slider arrow
   width: 20px;
   height: 20px;
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   #product-pages #search button {
     float: left;
     position: relative;
@@ -3702,13 +3707,87 @@ Slick slider arrow
   max-width: 100%;
 }
 #product-pages .main-section#product-detail .btn {
-  padding: 15px 20px;
+  font-size: 15px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border: 2px solid #0776aa;
+  -moz-transition: 0.2s all ease-out;
+  -ms-transition: 0.2s all ease-out;
+  -webkit-transition: 0.2s all ease-out;
+  -o-transition: 0.2s all ease-out;
+  transition: 0.2s all ease-out;
 }
-#product-pages .main-section#product-detail .btn.black-button {
+@media (min-width: 768px) {
+  #product-pages .main-section#product-detail .btn:before {
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: -1;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -moz-transition: 0.2s all ease-out;
+    -ms-transition: 0.2s all ease-out;
+    -webkit-transition: 0.2s all ease-out;
+    -o-transition: 0.2s all ease-out;
+    transition: 0.2s all ease-out;
+  }
+}
+@media (min-width: 768px) {
+  #product-pages .main-section#product-detail .btn:hover {
+    color: #0776aa;
+  }
+  #product-pages .main-section#product-detail .btn:hover:before {
+    width: 100%;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+#product-pages .main-section#product-detail .call-to-action {
+  padding: 15px 20px;
+  background: #0776aa;
+  color: white;
+  border: 2px solid #0776aa;
+}
+#product-pages .main-section#product-detail .call-to-action:after {
+  background: white;
+}
+#product-pages .main-section#product-detail .call-to-action:hover {
+  color: #0776aa;
+}
+#product-pages .main-section#product-detail .black-button {
   border-color: #333333;
 }
-#product-pages .main-section#product-detail .btn.black-button:hover {
+#product-pages .main-section#product-detail .black-button:hover {
   color: #333;
+}
+#product-pages .main-section#product-detail .add-to-cart {
+  padding: 15px 20px;
+  background: #0776aa;
+  color: white;
+  border-color: #0776aa;
+}
+#product-pages .main-section#product-detail .add-to-cart:after {
+  background: #bfbfbf;
+}
+#product-pages .main-section#product-detail .add-to-cart:hover {
+  color: white;
+}
+#product-pages .main-section#product-detail .add-to-cart:disabled,
+#product-pages .main-section#product-detail .add-to-cart[disabled] {
+  border-color: #bfbfbf;
+  background: #bfbfbf;
+  color: white;
 }
 #product-pages .main-section#product-detail .play-button {
   position: absolute;
@@ -3869,53 +3948,6 @@ Slick slider arrow
   -ms-transform: scale(0);
   -o-transform: scale(0);
   transform: scale(0);
-}
-#product-pages .main-section#product-detail .btn {
-  font-size: 15px;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  border: 2px solid #0776aa;
-  -moz-transition: 0.2s all ease-out;
-  -ms-transition: 0.2s all ease-out;
-  -webkit-transition: 0.2s all ease-out;
-  -o-transition: 0.2s all ease-out;
-  transition: 0.2s all ease-out;
-}
-@media (min-width: 768px) {
-  #product-pages .main-section#product-detail .btn:before {
-    content: " ";
-    position: absolute;
-    width: 0;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: white;
-    z-index: -1;
-    -webkit-transform: translateX(-100%);
-    -moz-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    -o-transform: translateX(-100%);
-    transform: translateX(-100%);
-    -moz-transition: 0.2s all ease-out;
-    -ms-transition: 0.2s all ease-out;
-    -webkit-transition: 0.2s all ease-out;
-    -o-transition: 0.2s all ease-out;
-    transition: 0.2s all ease-out;
-  }
-}
-@media (min-width: 768px) {
-  #product-pages .main-section#product-detail .btn:hover {
-    color: #0776aa;
-  }
-  #product-pages .main-section#product-detail .btn:hover:before {
-    width: 100%;
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    -o-transform: translateX(0);
-    transform: translateX(0);
-  }
 }
 #product-pages .main-section#product-detail .progress-button {
   position: relative;
@@ -4767,8 +4799,45 @@ Slick slider arrow
   font-size: 15px;
   padding: 15px 0;
 }
+#product-pages .main-section#product-detail .grey-stripes-bg {
+  background: grey url("/templates/images/product-detail/bg-light-stripes.png");
+}
+#product-pages .main-section#product-detail #product-summary h3 {
+  padding-bottom: 0;
+}
+#product-pages .main-section#product-detail #product-highlights .section-content {
+  border-top: none;
+}
+#product-pages .main-section#product-detail #product-display {
+  padding: 85px 0;
+  margin-bottom: 40px;
+}
+#product-pages .main-section#product-detail #product-display .section-content {
+  border-top: none;
+}
+#product-pages .main-section#product-detail #product-display + .section .section-content {
+  border-top: none;
+}
+#product-pages .main-section#product-detail .section .slick-next {
+  top: 37%;
+  right: -20px;
+}
+#product-pages .main-section#product-detail .section .slick-next svg {
+  width: 14px;
+  height: 14px;
+  fill: #bfbfbf;
+}
+#product-pages .main-section#product-detail .section .slick-prev {
+  top: 37%;
+  left: -20px;
+}
+#product-pages .main-section#product-detail .section .slick-prev svg {
+  width: 14px;
+  height: 14px;
+  fill: #bfbfbf;
+}
 #product-pages .main-section#product-detail .section .section-content {
-  border-top: solid 1px #bfbfbf;
+  border-top: 1px solid #bfbfbf;
   padding: 0 30px;
 }
 #product-pages .main-section#product-detail .section .section-content.no-border {
@@ -4865,17 +4934,20 @@ Slick slider arrow
   padding-top: 20px;
   margin-bottom: 78px;
 }
-#product-pages .main-section#product-detail .section .file-download-area .download-header {
+#product-pages .main-section#product-detail .section .file-download-area .internal-expand-body {
+  background: #fbfbfb;
+}
+#product-pages .main-section#product-detail .section .file-download-area .internal-expand-header {
   background-color: #f4f4f4;
   padding: 15px;
   cursor: pointer;
 }
-#product-pages .main-section#product-detail .section .file-download-area .download-header h4.download-heading {
+#product-pages .main-section#product-detail .section .file-download-area .internal-expand-header h4.download-heading {
   padding: 0;
   margin: 0;
-  font-size: 15px;
+  font-size: 22px;
 }
-#product-pages .main-section#product-detail .section .file-download-area .download-header h4.download-heading svg {
+#product-pages .main-section#product-detail .section .file-download-area .internal-expand-header h4.download-heading svg {
   display: block;
   -moz-transition: 0.3s all ease-out;
   -ms-transition: 0.3s all ease-out;
@@ -4887,7 +4959,7 @@ Slick slider arrow
   fill: #a6a6a6;
   float: right;
 }
-#product-pages .main-section#product-detail .section .file-download-area .download-header.opened .download-heading svg {
+#product-pages .main-section#product-detail .section .file-download-area .internal-expand-header.opened .download-heading svg {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -4898,32 +4970,14 @@ Slick slider arrow
   text-align: center;
   padding: 20px 0;
 }
-#product-pages .main-section#product-detail .section.videos-section .section-heading {
+#product-pages .main-section#product-detail .section.bg-dark-stripes .section-heading {
   color: white;
 }
-#product-pages .main-section#product-detail .section.videos-section .video-details {
+#product-pages .main-section#product-detail .section.bg-dark-stripes .video-details {
   color: white;
 }
-#product-pages .main-section#product-detail .section.videos-section .section-content {
+#product-pages .main-section#product-detail .section.bg-dark-stripes .section-content {
   border-top: none;
-}
-#product-pages .main-section#product-detail .section.videos-section .slick-next {
-  top: 37%;
-  right: -20px;
-}
-#product-pages .main-section#product-detail .section.videos-section .slick-next svg {
-  width: 14px;
-  height: 14px;
-  fill: white;
-}
-#product-pages .main-section#product-detail .section.videos-section .slick-prev {
-  top: 37%;
-  left: -20px;
-}
-#product-pages .main-section#product-detail .section.videos-section .slick-prev svg {
-  width: 14px;
-  height: 14px;
-  fill: white;
 }
 #product-pages .main-section#product-detail .installation-section .slick-next {
   top: 37%;
@@ -5027,7 +5081,6 @@ Slick slider arrow
   padding: 30px 20px;
   margin: 0;
   overflow: auto;
-  background-color: #fafafa;
 }
 @media (min-width: 768px) {
   #product-pages .main-section#product-detail .file-download-list {
@@ -5052,15 +5105,43 @@ Slick slider arrow
 }
 #product-pages .main-section#product-detail .file-download-list .one-file .file-info {
   display: block;
-  background-image: url("../templates/images/product-detail/icon-file-doc.png");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: 44px 60px;
-  padding: 5px 10px 5px 65px;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px 5px 0;
   font-size: 15px;
+  position: relative;
+  max-width: 210px;
 }
-#product-pages .main-section#product-detail .file-download-list .one-file .file-info.file-cad {
-  background-image: url("../templates/images/product-detail/icon-file-cad.png");
+#product-pages .main-section#product-detail .file-download-list .one-file .file-info .icon {
+  position: relative;
+  float: left;
+  margin-right: 10px;
+  width: 44px;
+  height: 51px;
+  background: blue;
+}
+#product-pages .main-section#product-detail .file-download-list .one-file .file-info .icon svg {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 27px;
+  margin-left: -10px;
+  margin-top: -14px;
+  fill: white;
+}
+#product-pages .main-section#product-detail .file-download-list .one-file .file-info.file-doc .icon {
+  background: #0776aa;
+}
+#product-pages .main-section#product-detail .file-download-list .one-file .file-info.file-cad .icon {
+  background: #565c68;
+}
+#product-pages .main-section#product-detail .file-download-list .one-file .file-info.file-cad .file-download {
+  color: #565c68;
+}
+#product-pages .main-section#product-detail .file-download-list .one-file .file-info.file-cad .file-download:hover {
+  color: black;
 }
 #product-pages .main-section#product-detail .file-download-list .one-file .file-info .file-name {
   padding: 0;
@@ -5075,7 +5156,7 @@ Slick slider arrow
   display: block;
 }
 #product-pages .main-section#product-detail .file-download-list .one-file .file-info .file-download:hover {
-  color: #000000;
+  color: black;
 }
 @media (max-width: 767px) {
   #product-pages .main-section#product-detail .file-download-list .one-file .file-info {

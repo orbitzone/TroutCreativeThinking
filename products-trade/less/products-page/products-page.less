@@ -12,17 +12,15 @@
 		&.widget{
 			&.off-canvas-open{
 				.ocmain-wrapper{
-					@media (min-width: @screen-sm-custom){
-						.getVW(-83px, 1370px);
-						left: calc(~"-280px + @{getVW}");
+					@media (min-width: @screen-sm){
+						left: calc(~"-280px + 83px");
 					}
 				}
 			} 
 			.ocnav-wrapper{
 				margin-right: 0;
-					@media (min-width: @screen-sm-custom){
-						.getVW(83px, 1370px);
-						margin-right: @getVW;
+					@media (min-width: @screen-sm){
+						margin-right: 83px;
 					}
 					@media (min-width: 1280px){
 						margin-right: 0;				
@@ -31,9 +29,8 @@
 			.navbar{
 				.menuButton{
 					margin-right: 5px;
-					@media (min-width: @screen-sm-custom){
-						.getVW(103px, 1370px);
-						margin-right: @getVW;
+					@media (min-width: @screen-sm){
+						margin-right: 103px;
 					}
 					@media (min-width: 1280px){
 						margin-right: 5px;				
@@ -43,9 +40,8 @@
 			.site-footer{
 				.contact{
 					margin-right: 5px;
-					@media (min-width: @screen-sm-custom){
-						.getVW(103px, 1370px);
-						margin-right: @getVW;
+					@media (min-width: @screen-sm){
+						margin-right: 103px;
 					}
 					@media (min-width: 1280px){
 						margin-right: 5px;

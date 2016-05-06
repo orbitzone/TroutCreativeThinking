@@ -14,13 +14,13 @@
 	<?php include "templates/Includes/Widget.php" ?>
 	<div class="product-detail-wrap">
 		<!--START PRODUCT HERO SECTION -->
-		<div class="section product-hero-section">
+		<div class="product-hero-section">
 			<div class="container-fluid section-container">
 				<div class="row">
 					<div class="col-xs-12">
 						<form action="http://reece.com.au/bathrooms/products/" method="get" id="search">
 							<input type="text" name="keyword" placeholder="Search Product">
-							<button type="button" class="btn blue-button">
+							<button type="button" class="btn call-to-action">
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="20px" height="20px"><title>search</title> <circle fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="2.5" stroke-miterlimit="10" cx="14.6" cy="14.6" r="13.3"/> <line fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-miterlimit="10" x1="24.1" y1="24" x2="38.8" y2="38.8"/></svg>
 							</button>
 						</form>
@@ -181,7 +181,7 @@
 								<div class="product-addbutton">
 									<div class="progress-button">
 										<!-- button with text -->
-										<button type="button" class="btn blue-button full-width">add to list</button>
+										<button type="button" class="btn add-to-cart full-width">add to list</button>
 
 										<!-- svg circle for progress indication -->
 										<svg class="progress-circle" width="70" height="70"  viewBox="0 0 70 70">
@@ -292,11 +292,11 @@
 						<div class="inner-wrap">
 							<div class="main-anchor-wrap">
 								<ul class="main-anchor-list list-inline hidden-xs">
-									<li><a class="btn blue-button full-width" href="#features">Features</a></li>
-									<li><a class="btn blue-button full-width" href="#technical-specification">Specifications</a></li>
-									<li><a class="btn blue-button full-width" href="#downloads">Downloads</a></li>
-									<li><a class="btn blue-button full-width" href="#videos">Videos</a></li>
-									<li><a class="btn blue-button full-width" href="#people-also-bought">People also bought</a></li>
+									<li><a class="btn call-to-action full-width" href="#features">Features</a></li>
+									<li><a class="btn call-to-action full-width" href="#technical-specification">Specifications</a></li>
+									<li><a class="btn call-to-action full-width" href="#downloads">Downloads</a></li>
+									<li><a class="btn call-to-action full-width" href="#videos">Videos</a></li>
+									<li><a class="btn call-to-action full-width" href="#people-also-bought">People also bought</a></li>
 								</ul>
 							</div>
 						</div>
@@ -305,17 +305,17 @@
 			</div>
 		</div>
 		<!--END PRODUCT HERO SECTION -->
-		<!--START FEATURES SECTION -->
+			<!--START FEATURES SECTION -->
 		<section class="section features-section" id="features">
 			<div class="container-fluid section-container">
 				<div class="section-content">
 					<header data-expandbutton="features" class="section-title action-expand-button">
-				<h3 class="section-heading">Features 
-					<svg xmlns="http://www.w3.org/2000/svg" width="46px" height="25px" viewBox="0 0 46 25">
-						<path d="M0.6,0.6C0.2,1,0,1.5,0,2c0,0.5,0.2,1,0.6,1.4l21,21c0.8,0.8,2.1,0.8,2.8,0l21-21c0.8-0.8,0.8-2.1,0-2.8
-		c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
-					</svg>
-				</h3>
+						<h3 class="section-heading">Features 
+							<svg xmlns="http://www.w3.org/2000/svg" width="46px" height="25px" viewBox="0 0 46 25">
+								<path d="M0.6,0.6C0.2,1,0,1.5,0,2c0,0.5,0.2,1,0.6,1.4l21,21c0.8,0.8,2.1,0.8,2.8,0l21-21c0.8-0.8,0.8-2.1,0-2.8
+				c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
+							</svg>
+						</h3>
 			</header>
 			<div data-expandsection="features" class="expand-section expanded-desktop">
 					<div class="inner-info">
@@ -382,7 +382,7 @@
 						<div class="row">
 							<div class="col-xs-12">
 								<div class="file-download-area">
-									<header class="action-expand-button download-header" data-expandbutton="feature-files">
+									<header class="action-expand-button internal-expand-header" data-expandbutton="feature-files">
 									<h4 class="download-heading">Brochures
 										<svg xmlns="http://www.w3.org/2000/svg" width="46px" height="25px" viewBox="0 0 46 25">
 											<path d="M0.6,0.6C0.2,1,0,1.5,0,2c0,0.5,0.2,1,0.6,1.4l21,21c0.8,0.8,2.1,0.8,2.8,0l21-21c0.8-0.8,0.8-2.1,0-2.8
@@ -390,23 +390,48 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 										</svg>
 										</h4>
 									</header>
-									<div class="expand-section" data-expandsection="feature-files">
+									<div class="expand-section internal-expand-body" data-expandsection="feature-files">
 										<div class="file-download-list">
 											<?php for($i = 0; $i<3;$i++){ ?>
 											<div class="one-file">
 												<div class="file-info file-doc">
+													<div class="icon">
+														<svg width="20px" height="27px" viewBox="0 0 20 27">
+<path d="M17.7,5h-2.1C15.3,5,15,4.7,15,4.3V2.4C15,1.1,14,0,12.7,0H2.3C1,0,0,1.1,0,2.4v21.9c0,1.3,1,2.4,2.3,2.4h15.4
+	c1.3,0,2.3-1.1,2.3-2.4V7.4C20,6.1,19,5,17.7,5 M18.3,24.3c0,0.4-0.3,0.7-0.6,0.7H2.3c-0.3,0-0.6-0.3-0.6-0.7V2.4
+	c0-0.4,0.3-0.7,0.6-0.7h10.4c0.3,0,0.6,0.3,0.6,0.7v1.9c0,1.3,1,2.4,2.3,2.4h2.1c0.3,0,0.6,0.3,0.6,0.7V24.3z M4.2,8.3h6.7
+	c0.5,0,0.8-0.4,0.8-0.8c0-0.5-0.4-0.8-0.8-0.8H4.2C3.7,6.7,3.3,7,3.3,7.5C3.3,8,3.7,8.3,4.2,8.3 M15.8,10H4.2
+	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,10.4,16.3,10,15.8,10 M15.8,13.3H4.2
+	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,13.7,16.3,13.3,15.8,13.3 M15.8,16.7H4.2
+	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,17,16.3,16.7,15.8,16.7 M15.8,20H4.2
+	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,20.4,16.3,20,15.8,20"/>
+</svg>
+													</div>
+													<div class="file-description">
 													<p class="file-name">Warranty</p>
 													<a href="#" class="file-download">
 														Download PDF
 													</a>
+													</div>
 												</div>
 											</div>
 											<div class="one-file">
 												<div class="file-info file-cad">
+													<div class="icon">
+														<svg width="20px" height="27px" viewBox="0 0 20 27">
+														<path d="M10,24.6c-0.3,0-0.7-0.1-1.1-0.2c0,0-0.1,0-0.1,0l-7.5-3.7C0.6,20.2,0,19.3,0,18.3c0,0,0,0,0-0.1v-9c0,0,0,0,0,0
+															C0,9.2,0,9,0,8.9C0.2,8.1,0.7,7.3,1.3,7l7.5-3.7c0.6-0.3,1.6-0.5,2.4,0L18.7,7c0.7,0.3,1.2,1.1,1.3,1.9c0,0.1,0,0.3,0,0.4
+															c0,0,0,0,0,0v9c0,0,0,0,0,0.1c0,1-0.6,1.9-1.3,2.3l0,0l-7.5,3.7c-0.1,0-0.2,0.1-0.3,0.1C10.6,24.5,10.3,24.6,10,24.6z M11.3,13.5
+															C11.3,13.6,11.3,13.6,11.3,13.5l0,7.8l6.1-3c0,0,0-0.1,0-0.1v-7.7L11.3,13.5z M2.6,18.3l6.1,3v-7.7c0,0,0-0.1,0-0.1l-6.1-3L2.6,18.3
+															C2.6,18.3,2.6,18.3,2.6,18.3z M4.3,8.4l5.7,2.8c0,0,0,0,0,0c0,0,0,0,0,0l5.7-2.8L10,5.6c0,0-0.1,0-0.1,0L4.3,8.4z"/>
+														</svg>
+													</div>
+													<div class="file-description">
 													<p class="file-name">Warranty</p>
 													<a href="#" class="file-download">
 														Download CAD
 													</a>
+													</div>
 												</div>
 											</div>
 											<?php } ?>
@@ -491,27 +516,52 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 						<div class="row">
 							<div class="col-xs-12">
 								<div class="file-download-area">
-									<header class="action-expand-button download-header" data-expandbutton="technical-files"><h4 class="download-heading">Technical Downloads <svg xmlns="http://www.w3.org/2000/svg" width="46px" height="25px" viewBox="0 0 46 25">
+									<header class="action-expand-button internal-expand-header" data-expandbutton="technical-files"><h4 class="download-heading">Technical Downloads <svg xmlns="http://www.w3.org/2000/svg" width="46px" height="25px" viewBox="0 0 46 25">
 <path d="M0.6,0.6C0.2,1,0,1.5,0,2c0,0.5,0.2,1,0.6,1.4l21,21c0.8,0.8,2.1,0.8,2.8,0l21-21c0.8-0.8,0.8-2.1,0-2.8
 c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 </svg></h4></header>
-									<div class="expand-section" data-expandsection="technical-files">
+									<div class="expand-section internal-expand-body" data-expandsection="technical-files">
 										<div class="file-download-list">
 											<?php for($i = 0; $i<3;$i++){ ?>
 											<div class="one-file">
 												<div class="file-info file-doc">
+												<div class="icon">
+														<svg width="20px" height="27px" viewBox="0 0 20 27">
+<path d="M17.7,5h-2.1C15.3,5,15,4.7,15,4.3V2.4C15,1.1,14,0,12.7,0H2.3C1,0,0,1.1,0,2.4v21.9c0,1.3,1,2.4,2.3,2.4h15.4
+	c1.3,0,2.3-1.1,2.3-2.4V7.4C20,6.1,19,5,17.7,5 M18.3,24.3c0,0.4-0.3,0.7-0.6,0.7H2.3c-0.3,0-0.6-0.3-0.6-0.7V2.4
+	c0-0.4,0.3-0.7,0.6-0.7h10.4c0.3,0,0.6,0.3,0.6,0.7v1.9c0,1.3,1,2.4,2.3,2.4h2.1c0.3,0,0.6,0.3,0.6,0.7V24.3z M4.2,8.3h6.7
+	c0.5,0,0.8-0.4,0.8-0.8c0-0.5-0.4-0.8-0.8-0.8H4.2C3.7,6.7,3.3,7,3.3,7.5C3.3,8,3.7,8.3,4.2,8.3 M15.8,10H4.2
+	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,10.4,16.3,10,15.8,10 M15.8,13.3H4.2
+	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,13.7,16.3,13.3,15.8,13.3 M15.8,16.7H4.2
+	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,17,16.3,16.7,15.8,16.7 M15.8,20H4.2
+	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,20.4,16.3,20,15.8,20"/>
+</svg>
+													</div>
+													<div class="file-description">
 													<p class="file-name">Warranty</p>
 													<a href="#" class="file-download">
 														Download PDF
 													</a>
+													</div>
 												</div>
 											</div>
 											<div class="one-file">
 												<div class="file-info file-cad">
+												<div class="icon">
+														<svg width="20px" height="27px" viewBox="0 0 20 27">
+														<path d="M10,24.6c-0.3,0-0.7-0.1-1.1-0.2c0,0-0.1,0-0.1,0l-7.5-3.7C0.6,20.2,0,19.3,0,18.3c0,0,0,0,0-0.1v-9c0,0,0,0,0,0
+															C0,9.2,0,9,0,8.9C0.2,8.1,0.7,7.3,1.3,7l7.5-3.7c0.6-0.3,1.6-0.5,2.4,0L18.7,7c0.7,0.3,1.2,1.1,1.3,1.9c0,0.1,0,0.3,0,0.4
+															c0,0,0,0,0,0v9c0,0,0,0,0,0.1c0,1-0.6,1.9-1.3,2.3l0,0l-7.5,3.7c-0.1,0-0.2,0.1-0.3,0.1C10.6,24.5,10.3,24.6,10,24.6z M11.3,13.5
+															C11.3,13.6,11.3,13.6,11.3,13.5l0,7.8l6.1-3c0,0,0-0.1,0-0.1v-7.7L11.3,13.5z M2.6,18.3l6.1,3v-7.7c0,0,0-0.1,0-0.1l-6.1-3L2.6,18.3
+															C2.6,18.3,2.6,18.3,2.6,18.3z M4.3,8.4l5.7,2.8c0,0,0,0,0,0c0,0,0,0,0,0l5.7-2.8L10,5.6c0,0-0.1,0-0.1,0L4.3,8.4z"/>
+														</svg>
+													</div>
+													<div class="file-description">
 													<p class="file-name">Warranty</p>
 													<a href="#" class="file-download">
 														Download CAD
 													</a>
+													</div>
 												</div>
 											</div>
 											<?php } ?>
@@ -579,24 +629,43 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 									<div class="row">
 										<div class="col-xs-12">
 											<div class="file-download-area">
-												<header class="action-expand-button download-header" data-expandbutton="warranty-files"><h4 class="download-heading">Warranty Downloads <svg xmlns="http://www.w3.org/2000/svg" width="46px" height="25px" viewBox="0 0 46 25">
+												<header class="action-expand-button internal-expand-header" data-expandbutton="warranty-files"><h4 class="download-heading">Warranty Downloads <svg xmlns="http://www.w3.org/2000/svg" width="46px" height="25px" viewBox="0 0 46 25">
 <path d="M0.6,0.6C0.2,1,0,1.5,0,2c0,0.5,0.2,1,0.6,1.4l21,21c0.8,0.8,2.1,0.8,2.8,0l21-21c0.8-0.8,0.8-2.1,0-2.8
 	c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 </svg></h4></header>
-												<div class="expand-section" data-expandsection="warranty-files">
+												<div class="expand-section internal-expand-body" data-expandsection="warranty-files">
 													<div class="file-download-list">
 														<?php for($i = 0; $i<3;$i++){ ?>
 														<div class="one-file">
 															<div class="file-info file-doc">
-																<p class="file-name">Warranty</p>
+															<div class="icon">
+														<svg width="20px" height="27px" viewBox="0 0 20 27">
+<path d="M17.7,5h-2.1C15.3,5,15,4.7,15,4.3V2.4C15,1.1,14,0,12.7,0H2.3C1,0,0,1.1,0,2.4v21.9c0,1.3,1,2.4,2.3,2.4h15.4
+	c1.3,0,2.3-1.1,2.3-2.4V7.4C20,6.1,19,5,17.7,5 M18.3,24.3c0,0.4-0.3,0.7-0.6,0.7H2.3c-0.3,0-0.6-0.3-0.6-0.7V2.4
+	c0-0.4,0.3-0.7,0.6-0.7h10.4c0.3,0,0.6,0.3,0.6,0.7v1.9c0,1.3,1,2.4,2.3,2.4h2.1c0.3,0,0.6,0.3,0.6,0.7V24.3z M4.2,8.3h6.7
+	c0.5,0,0.8-0.4,0.8-0.8c0-0.5-0.4-0.8-0.8-0.8H4.2C3.7,6.7,3.3,7,3.3,7.5C3.3,8,3.7,8.3,4.2,8.3 M15.8,10H4.2
+	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,10.4,16.3,10,15.8,10 M15.8,13.3H4.2
+	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,13.7,16.3,13.3,15.8,13.3 M15.8,16.7H4.2
+	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,17,16.3,16.7,15.8,16.7 M15.8,20H4.2
+	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,20.4,16.3,20,15.8,20"/>
+</svg>
+													</div>
 																<a href="#" class="file-download">
-																	Download PDF
+																	Technical &amp; Warranty Sheet
 																</a>
 															</div>
 														</div>
 														<div class="one-file">
 															<div class="file-info file-cad">
-																<p class="file-name">Warranty</p>
+															<div class="icon">
+														<svg width="20px" height="27px" viewBox="0 0 20 27">
+														<path d="M10,24.6c-0.3,0-0.7-0.1-1.1-0.2c0,0-0.1,0-0.1,0l-7.5-3.7C0.6,20.2,0,19.3,0,18.3c0,0,0,0,0-0.1v-9c0,0,0,0,0,0
+															C0,9.2,0,9,0,8.9C0.2,8.1,0.7,7.3,1.3,7l7.5-3.7c0.6-0.3,1.6-0.5,2.4,0L18.7,7c0.7,0.3,1.2,1.1,1.3,1.9c0,0.1,0,0.3,0,0.4
+															c0,0,0,0,0,0v9c0,0,0,0,0,0.1c0,1-0.6,1.9-1.3,2.3l0,0l-7.5,3.7c-0.1,0-0.2,0.1-0.3,0.1C10.6,24.5,10.3,24.6,10,24.6z M11.3,13.5
+															C11.3,13.6,11.3,13.6,11.3,13.5l0,7.8l6.1-3c0,0,0-0.1,0-0.1v-7.7L11.3,13.5z M2.6,18.3l6.1,3v-7.7c0,0,0-0.1,0-0.1l-6.1-3L2.6,18.3
+															C2.6,18.3,2.6,18.3,2.6,18.3z M4.3,8.4l5.7,2.8c0,0,0,0,0,0c0,0,0,0,0,0l5.7-2.8L10,5.6c0,0-0.1,0-0.1,0L4.3,8.4z"/>
+														</svg>
+													</div>
 																<a href="#" class="file-download">
 																	Download CAD
 																</a>
@@ -661,29 +730,55 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 									<div class="row">
 										<div class="col-xs-12">
 											<div class="file-download-area">
-												<header class="action-expand-button download-header" data-expandbutton="installation-files"><h4 class="download-heading">Installation Downloads
+												<header class="action-expand-button internal-expand-header" data-expandbutton="installation-files"><h4 class="download-heading">Installation Downloads
 												<svg xmlns="http://www.w3.org/2000/svg" width="46px" height="25px" viewBox="0 0 46 25">
 						<path d="M0.6,0.6C0.2,1,0,1.5,0,2c0,0.5,0.2,1,0.6,1.4l21,21c0.8,0.8,2.1,0.8,2.8,0l21-21c0.8-0.8,0.8-2.1,0-2.8
 		c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 					</svg>
 												</h4></header>
-												<div class="expand-section" data-expandsection="installation-files">
+												<div class="expand-section internal-expand-body" data-expandsection="installation-files">
 													<div class="file-download-list">
 														<?php for($i = 0; $i<3;$i++){ ?>
 														<div class="one-file">
 															<div class="file-info file-doc">
+															<div class="icon">
+														<svg width="20px" height="27px" viewBox="0 0 20 27">
+<path d="M17.7,5h-2.1C15.3,5,15,4.7,15,4.3V2.4C15,1.1,14,0,12.7,0H2.3C1,0,0,1.1,0,2.4v21.9c0,1.3,1,2.4,2.3,2.4h15.4
+	c1.3,0,2.3-1.1,2.3-2.4V7.4C20,6.1,19,5,17.7,5 M18.3,24.3c0,0.4-0.3,0.7-0.6,0.7H2.3c-0.3,0-0.6-0.3-0.6-0.7V2.4
+	c0-0.4,0.3-0.7,0.6-0.7h10.4c0.3,0,0.6,0.3,0.6,0.7v1.9c0,1.3,1,2.4,2.3,2.4h2.1c0.3,0,0.6,0.3,0.6,0.7V24.3z M4.2,8.3h6.7
+	c0.5,0,0.8-0.4,0.8-0.8c0-0.5-0.4-0.8-0.8-0.8H4.2C3.7,6.7,3.3,7,3.3,7.5C3.3,8,3.7,8.3,4.2,8.3 M15.8,10H4.2
+	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,10.4,16.3,10,15.8,10 M15.8,13.3H4.2
+	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,13.7,16.3,13.3,15.8,13.3 M15.8,16.7H4.2
+	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,17,16.3,16.7,15.8,16.7 M15.8,20H4.2
+	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,20.4,16.3,20,15.8,20"/>
+</svg>
+													</div>
+													<div class="file-description">
 																<p class="file-name">Warranty</p>
 																<a href="#" class="file-download">
 																	Download PDF
 																</a>
+																</div>
 															</div>
 														</div>
 														<div class="one-file">
 															<div class="file-info file-cad">
+															<div class="icon">
+														<svg width="20px" height="27px" viewBox="0 0 20 27">
+														<path d="M10,24.6c-0.3,0-0.7-0.1-1.1-0.2c0,0-0.1,0-0.1,0l-7.5-3.7C0.6,20.2,0,19.3,0,18.3c0,0,0,0,0-0.1v-9c0,0,0,0,0,0
+															C0,9.2,0,9,0,8.9C0.2,8.1,0.7,7.3,1.3,7l7.5-3.7c0.6-0.3,1.6-0.5,2.4,0L18.7,7c0.7,0.3,1.2,1.1,1.3,1.9c0,0.1,0,0.3,0,0.4
+															c0,0,0,0,0,0v9c0,0,0,0,0,0.1c0,1-0.6,1.9-1.3,2.3l0,0l-7.5,3.7c-0.1,0-0.2,0.1-0.3,0.1C10.6,24.5,10.3,24.6,10,24.6z M11.3,13.5
+															C11.3,13.6,11.3,13.6,11.3,13.5l0,7.8l6.1-3c0,0,0-0.1,0-0.1v-7.7L11.3,13.5z M2.6,18.3l6.1,3v-7.7c0,0,0-0.1,0-0.1l-6.1-3L2.6,18.3
+															C2.6,18.3,2.6,18.3,2.6,18.3z M4.3,8.4l5.7,2.8c0,0,0,0,0,0c0,0,0,0,0,0l5.7-2.8L10,5.6c0,0-0.1,0-0.1,0L4.3,8.4z"/>
+														</svg>
+													</div>
+														<div class="file-description">
 																<p class="file-name">Warranty</p>
 																<a href="#" class="file-download">
 																	Download CAD
 																</a>
+														</div>
+															
 															</div>
 														</div>
 														<?php } ?>
@@ -713,18 +808,43 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 									<?php for($i = 0; $i<7;$i++){ ?>
 									<div class="one-file">
 										<div class="file-info file-doc">
+										<div class="icon">
+														<svg width="20px" height="27px" viewBox="0 0 20 27">
+<path d="M17.7,5h-2.1C15.3,5,15,4.7,15,4.3V2.4C15,1.1,14,0,12.7,0H2.3C1,0,0,1.1,0,2.4v21.9c0,1.3,1,2.4,2.3,2.4h15.4
+	c1.3,0,2.3-1.1,2.3-2.4V7.4C20,6.1,19,5,17.7,5 M18.3,24.3c0,0.4-0.3,0.7-0.6,0.7H2.3c-0.3,0-0.6-0.3-0.6-0.7V2.4
+	c0-0.4,0.3-0.7,0.6-0.7h10.4c0.3,0,0.6,0.3,0.6,0.7v1.9c0,1.3,1,2.4,2.3,2.4h2.1c0.3,0,0.6,0.3,0.6,0.7V24.3z M4.2,8.3h6.7
+	c0.5,0,0.8-0.4,0.8-0.8c0-0.5-0.4-0.8-0.8-0.8H4.2C3.7,6.7,3.3,7,3.3,7.5C3.3,8,3.7,8.3,4.2,8.3 M15.8,10H4.2
+	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,10.4,16.3,10,15.8,10 M15.8,13.3H4.2
+	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,13.7,16.3,13.3,15.8,13.3 M15.8,16.7H4.2
+	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,17,16.3,16.7,15.8,16.7 M15.8,20H4.2
+	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,20.4,16.3,20,15.8,20"/>
+</svg>
+													</div>
+													<div class="file-description">
 											<p class="file-name">Warranty</p>
 											<a href="#" class="file-download">
 												Download PDF
 											</a>
+											</div>
 										</div>
 									</div>
 									<div class="one-file">
 										<div class="file-info file-cad">
+										<div class="icon">
+														<svg width="20px" height="27px" viewBox="0 0 20 27">
+														<path d="M10,24.6c-0.3,0-0.7-0.1-1.1-0.2c0,0-0.1,0-0.1,0l-7.5-3.7C0.6,20.2,0,19.3,0,18.3c0,0,0,0,0-0.1v-9c0,0,0,0,0,0
+															C0,9.2,0,9,0,8.9C0.2,8.1,0.7,7.3,1.3,7l7.5-3.7c0.6-0.3,1.6-0.5,2.4,0L18.7,7c0.7,0.3,1.2,1.1,1.3,1.9c0,0.1,0,0.3,0,0.4
+															c0,0,0,0,0,0v9c0,0,0,0,0,0.1c0,1-0.6,1.9-1.3,2.3l0,0l-7.5,3.7c-0.1,0-0.2,0.1-0.3,0.1C10.6,24.5,10.3,24.6,10,24.6z M11.3,13.5
+															C11.3,13.6,11.3,13.6,11.3,13.5l0,7.8l6.1-3c0,0,0-0.1,0-0.1v-7.7L11.3,13.5z M2.6,18.3l6.1,3v-7.7c0,0,0-0.1,0-0.1l-6.1-3L2.6,18.3
+															C2.6,18.3,2.6,18.3,2.6,18.3z M4.3,8.4l5.7,2.8c0,0,0,0,0,0c0,0,0,0,0,0l5.7-2.8L10,5.6c0,0-0.1,0-0.1,0L4.3,8.4z"/>
+														</svg>
+													</div>
+													<div class="file-description">
 											<p class="file-name">Warranty</p>
 											<a href="#" class="file-download">
 												Download CAD
 											</a>
+											</div>
 										</div>
 									</div>
 									<?php } ?>
@@ -866,7 +986,7 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 							<div class="inner-wrap">
 								<h3>Learn more about Conex</h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus quo, optio nostrum! Alias unde nemo quasi obcaecati doloribus minus recusandae dolores incidunt debitis ea corporis ullam tenetur, magnam quos quibusdam vitae rem assumenda cum quam asperiores, ducimus libero, beatae totam ipsa! Iste fuga ipsa est aliquid modi porro illum eos?</p>
-								<a href="#" class="btn blue-button small-width">Conex brand pages</a>
+								<a href="#" class="btn call-to-action small-width">Conex brand pages</a>
 							</div>
 						</div>
 					</div>

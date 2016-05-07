@@ -168,7 +168,118 @@
 		<!--END SEARCH LIST -->
 
 
-
+		<!--START RETURN USER LIST-->
+		<div class="shopping-cart-return-user out shopping-cart-view">
+			<!--START LIST HEADER-->
+			<div class="list-header">
+				<div class="title">
+					<h3>Product Toolbar</h3>
+				</div>
+				<div class="new-list-wrap">
+					<button class="btn new-list-btn">New List</button>
+				</div>
+				<div class="search-box">
+					<h4>Saved Lists</h4>
+					<form action="" class="search-form">
+						<div class="search-input">
+							<input type="text" name="search-list" autocomplete="off" placeholder="Search List" />
+							<button type="button" class="btn blue-button">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="20px" height="20px"><title>search</title> <circle fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="2.5" stroke-miterlimit="10" cx="14.6" cy="14.6" r="13.3"></circle> <line fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-miterlimit="10" x1="24.1" y1="24" x2="38.8" y2="38.8"></line></svg>
+							</button>
+						</div>						
+						<div class="checkbox-options-set">
+							<ul class="list-inline">
+								<li>
+									<input type="checkbox" name="order" id="search-list-order-2"/>
+									<label for="search-list-order-2"><div class="icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20px" height="14.8px" viewBox="0 0 20 14.8">
+											<path d="M2.5,4.9l7.5,7.4l-2.5,2.5L0,7.4L2.5,4.9z M17.5,0L20,2.5L7.5,14.8L5,12.3L17.5,0z"/>
+										</svg>
+									</div>
+									Orders</label>
+								</li>
+								<li>
+									<input type="checkbox" name="quotes" id="search-list-quotes-2"/>
+									<label for="search-list-quotes-2"><div class="icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20px" height="14.8px" viewBox="0 0 20 14.8">
+											<path d="M2.5,4.9l7.5,7.4l-2.5,2.5L0,7.4L2.5,4.9z M17.5,0L20,2.5L7.5,14.8L5,12.3L17.5,0z"/>
+										</svg>
+									</div>
+									Quotes</label>
+								</li>
+								<li>
+									<input type="checkbox" name="lists" id="search-list-lists-2"/>
+									<label for="search-list-lists-2"><div class="icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20px" height="14.8px" viewBox="0 0 20 14.8">
+											<path d="M2.5,4.9l7.5,7.4l-2.5,2.5L0,7.4L2.5,4.9z M17.5,0L20,2.5L7.5,14.8L5,12.3L17.5,0z"/>
+										</svg>
+									</div>
+									Lists</label>
+								</li>
+							</ul>
+						</div>
+					</form>
+				</div>
+			</div>
+			<!--END LIST HEADER -->
+			<div class="recent-lists">
+				<div class="recent-list-option">
+					<div class="title">
+						Recent Lists
+					</div>
+					<div class="sort-by">
+						<select name="" id="">
+							<option value="">Sort By</option>
+							<option value="">Name</option>
+							<option value="">Date</option>
+						</select>
+					</div>
+				</div>
+				<ul>
+					<li>
+						<a href="#" class="list">
+							<h5>Product List</h5>
+							<h4>123 Newry St</h4>
+							<p>Job number: <span class="job-number">0062547</span></p>
+							<p>Date created: <span class="date-created">20th March 2016</span></p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="list">
+							<h5>Quote</h5>
+							<h4>55 Lee Street</h4>
+							<p>Job number: <span class="job-number">0062547</span></p>
+							<p>Date created: <span class="date-created">20th March 2016</span></p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="list">
+							<h5>Draft Order</h5>
+							<h4>123 Newry St</h4>
+							<p>Job number: <span class="job-number">0062547</span></p>
+							<p>Date created: <span class="date-created">20th March 2016</span></p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="list">
+							<h5>Product List</h5>
+							<h4>55 Lee Street</h4>
+							<p>Job number: <span class="job-number">0062547</span></p>
+							<p>Date created: <span class="date-created">20th March 2016</span></p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="list">
+							<h5>Quote</h5>
+							<h4>123 Newry St</h4>
+							<p>Job number: <span class="job-number">0062547</span></p>
+							<p>Date created: <span class="date-created">20th March 2016</span></p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--END SEARCH LIST -->
 
 
 		<!--START PRODUCT LIST-->

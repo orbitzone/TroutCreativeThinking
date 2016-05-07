@@ -102,6 +102,21 @@
 	  padding-left: 15px;
 	  border: none;
 	}
+
+	.checkout-btn,
+	.new-list-btn{
+		color: @checkout-btn-color;
+		border: none;
+		background-color: @checkout-btn-bg;
+		text-transform: uppercase;
+		font-size: 15px;
+		line-height: 1;
+		padding: 0 20px;
+		max-width: 252px;
+		width: 100%;
+		height: 56px;
+		margin: 0 auto;
+	}
 	.selectric{
 		border: none;
 		width: 100%;
@@ -145,6 +160,13 @@
 					color: @select-color;
 					background: @select-bg;					
 				}
+			}
+			.caret{
+				border: none;
+				background: url('../templates/images/product-detail/dropdown-arrow.svg');
+				width: 16px;
+				height: 9px;
+				background-repeat: no-repeat;
 			}			
 		}
 		.dropdown-menu{
@@ -859,13 +881,13 @@
 										padding: 15px 0;
 									}
 									.price{
+										padding-right: 20px;
 										margin-bottom: 12px;
 										&:last-child{
 											margin-bottom: 0;
 										}
 										&.price-only{
-											line-height: 47px;
-											padding-right: 20px;											
+											line-height: 47px;																						
 										}
 									}			
 									.label{
@@ -1177,25 +1199,12 @@
 					float: right;
 				}
 			}
-			.checkout-btn,
-			.new-list-btn{
-				color: @checkout-btn-color;
-				border: none;
-				background-color: @checkout-btn-bg;
-				text-transform: uppercase;
-				font-size: 15px;
-				line-height: 1;
-				padding: 0 20px;
-				max-width: 252px;
-				width: 100%;
-				height: 56px;
-				margin: 0 auto;
-			}
 		}
 	}//End product list
 
 	//Search list
-	.shopping-cart-search-list{
+	.shopping-cart-search-list,
+	.shopping-cart-return-user{
 		margin-bottom: 14px;
 		padding: 0 10px;
 		width: 100%;
@@ -1213,6 +1222,20 @@
 			opacity: 1;
 			.transform(translateX(0));
 		}
+		.list-header{
+			h4{
+				border-top: 1px solid @list-divider-color;
+				color: white;
+				padding: 40px 0 30px;
+				margin: 0;
+			}
+		}
+		.new-list-wrap{
+			padding: 40px 0;
+			margin-top: 40px;
+			border-top: 1px solid @list-divider-color;
+			border-bottom: 1px solid @list-divider-color;
+		}		
 		button.switch-btn{
 			border: 1px solid @switch-toolbar-btn-border;
 			font-size: 14px;

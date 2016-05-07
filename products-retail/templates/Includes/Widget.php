@@ -33,9 +33,11 @@
 		
 		<!--START TAKE A TOUR SECTION -->
 		<div class="tour-info shopping-cart-view">
-			<header>
-				<h3>Welcome !</h3>
-			</header>
+			<div class="list-header">
+				<div class="title">
+					<h3>Welcome!</h3>
+				</div>
+			</div>
 			<div class="tour-intro">
 				<p><b>Welcome to your shopping cart and wishlist.</b><br/> Close and add products to create your first order or wishlist.</p>
 			</div>
@@ -123,10 +125,16 @@
 											<div class="quantity-input">
 												<input class="quantity-number" data-productcode="7845123" type="number" name="quantity-7845123" min="1" value="1">
 											</div>
+											<div class="quantity-updated">
+												<svg class="check" width="51.4px" height="38.5px" viewBox="0 0 51.4 38.5">
+													<path class="short" fill="none" stroke="#010202" stroke-width="2" stroke-miterlimit="10" d="M0.7,23.7l14.1,14.1"/>
+													<path class="long" fill="none" stroke="#010202" stroke-width="2" stroke-miterlimit="10" d="M13.5,37.8L50.7,0.7"/>
+												</svg>
+											</div>
 										</div>
 									</div>
 									<div class="prices right-col">
-										<div class="price price-my"><span class="value">$406.32</span></div>										
+										<div class="price price-only"><span class="value">$406.32</span></div>										
 									</div>
 									<div class="clear-fix"></div>
 								</div>
@@ -203,7 +211,7 @@
 
 
 		<!--START TAKE A TOUR FOOTER-->
-		<div class="take-a-tour-box shopping-cart-view">
+		<div class="take-a-tour-box out shopping-cart-view">
 			<div class="tour-info-small">
 			<div class="close">
 				<svg xmlns="http://www.w3.org/2000/svg" width="67.5px" height="67.5px" viewBox="0 0 67.5 67.5">

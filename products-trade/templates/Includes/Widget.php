@@ -262,7 +262,13 @@
 													<label for="set-7845123-pkt" class="radio-button">PKT</label>
 													<span class="clear-fix"></span>
 												</span>												
-											</div>											
+											</div>
+											<div class="quantity-updated">
+												<svg class="check" width="51.4px" height="38.5px" viewBox="0 0 51.4 38.5">
+													<path class="short" fill="none" stroke="#010202" stroke-width="2" stroke-miterlimit="10" d="M0.7,23.7l14.1,14.1"/>
+													<path class="long" fill="none" stroke="#010202" stroke-width="2" stroke-miterlimit="10" d="M13.5,37.8L50.7,0.7"/>
+												</svg>
+											</div>
 											<div class="quantity-details">Packet Contains <span>100</span> Units</div>
 										</div>
 									</div>

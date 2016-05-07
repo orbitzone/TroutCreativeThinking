@@ -70,6 +70,7 @@
 @table-border: #bfbfbf;
 @table-header-bg: #f4f4f4;
 
+@we-love-color: #6dc8b6;
 .main-section#product-detail{
 	color: @body-color;
 	padding-top: 44px;
@@ -89,7 +90,14 @@
 			color: @section-link-hover-color;
 		}
 	}
-	
+	a[x-apple-data-detectors] {
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
 	.btn{
 		font-size: 15px;
 		position: relative;
@@ -766,7 +774,11 @@
 			.product-code{
 				color: @text-code;
 				font-size: 15px;
-				margin-bottom: 20px;				
+				margin-bottom: 20px;	
+				a{
+					color: @text-code;
+					text-decoration: none;
+				}			
 			}//END product-code
 			.product-prices{
 				margin-bottom: 20px;
@@ -1620,6 +1632,11 @@
 		top: -46px;
 		left: 0;
 		width: 83px;
+		svg{
+			width: 83px;
+			height: 83px;
+			fill: @we-love-color;
+		}
 	}
 .file-download-list{
 	display:block;
@@ -1651,6 +1668,9 @@
 				&:nth-child(4n+1){
 					clear: left;
 				}
+				&.show{
+					clear: none;
+				}
 			}
 		}
 	}
@@ -1668,6 +1688,9 @@
 			&:nth-child(3n+1){
 				clear: left;
 			}
+			&.show{
+				clear: none;
+			}
 		}
 		.file-info{
 			display: block;
@@ -1677,6 +1700,7 @@
 			max-width: 210px;
 			text-align: center;
 			@media (min-width: @screen-sm) {
+				max-width: 100%;
 				display: flex;
 				align-items: center;
 				text-align: left;
@@ -1731,7 +1755,7 @@
 			}
 			.file-description{
 				@media (min-width: @screen-sm) {
-					width: 140px;
+					width: 210px;
 				}
 			}
 			.file-name{

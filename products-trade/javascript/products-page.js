@@ -90,15 +90,20 @@ function onPlayerReady(event) {
 var scrollAnimation = {
   element: $('html, body'),
   animate: function(top){
+    scrollAnimation.animating= true;
     scrollAnimation.element.on("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove", function(){
+        scrollAnimation.animating= false;
        scrollAnimation.element.stop();
     });
     scrollAnimation.element.stop().animate({
       scrollTop: top
     }, 500, function(){
       scrollAnimation.element.off("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove");
+      scrollAnimation.animating= false;
     });
+
   },
+  animating: false
 };
 
 var deviceMobile = isMobile.any();
@@ -621,6 +626,28 @@ var product_pages = {
             }
         );
     },
+    animateAddToCart: function(img, element){
+        var $added = $('<div class="added-to-cart" style="background-image:url('+img+')"></div>');
+        var top = element.offset().top - $(window).scrollTop();
+        var left = element.offset().left;
+        $added.css({
+            top: top,
+            left: left,
+            zIndex: 99
+        });
+        var finaltop = $('#shopping-cart-widget aside button .cart-items').offset().top  - $(window).scrollTop() - 20;
+        var finalleft = $('#shopping-cart-widget aside button .cart-items').offset().left -20;
+        TweenMax.to($added, 0.6, {bezier:{type:"cubic", values:[{x:0, y:0}, {x:0, y: finaltop - top}, {x: finalleft - left, y: finaltop - top}, {x: finalleft - left, y: finaltop - top }], autoRotate:["x","y","rotation", 0, true]}, scale:0.5, ease:Power1.easeInOut, onComplete: function(){ 
+            TweenMax.to($added, 0.4,{ scale: 0, ease: Elastic.easeInOut, onComplete: function(){
+                var items = parseInt($('#shopping-cart-widget aside .shopping-cart .cart-items').text());
+                items=items+1;
+                $('#shopping-cart-widget aside .shopping-cart .cart-items').text(items);
+                $added.remove();
+            }});
+        }});
+        $('#product-detail').append($added);
+        $added.addClass('loaded');
+    },
     widget: function(){
         $('body').addClass('widget');
         if(deviceMobile){
@@ -691,7 +718,9 @@ var product_pages = {
             $('#shopping-cart-widget').addClass('mobile');            
             $('html').addClass('mobile');
         }
-        $('#shopping-cart-widget select').selectric();
+        //$('#shopping-cart-widget select').selectric();
+        $('#shopping-cart-widget select').selectpicker();
+
         if(!deviceMobile){
             var scrollTopOnHover = 0;
             $('#shopping-cart-widget').on('mouseover', function(){
@@ -718,6 +747,10 @@ var product_pages = {
             $('#shopping-cart-widget').find('aside').trigger('click');
         });
         $('#shopping-cart-widget .shopping-cart-content').height(0);
+
+        $('#shopping-cart-widget select').on('change', function(){
+            $('#shopping-cart-widget .shopping-cart-content').focus();
+        });
 
         $('#shopping-cart-widget .shopping-cart-product-list .editable-text').on('click',function(){
             $(this).hide();
@@ -790,6 +823,13 @@ var product_pages = {
             toggleWidget();
             e.stopPropagation();                        
         });
+        $('#shopping-cart-widget').find('input.quantity-number').on('change', function(){
+            var $updated = $(this).parent().parent().find('.quantity-updated');
+            $updated.addClass('show');
+            setTimeout(function(){
+                $updated.removeClass('show');
+            }, 1200);
+        });
         $('#shopping-cart-widget').find('aside .shopping-cart').on('click', function(e){
             $('#shopping-cart-widget .take-a-tour-box').removeClass('out').addClass('in');
             $('#shopping-cart-widget .shopping-cart-wishlist').addClass('out').removeClass('in');
@@ -849,20 +889,28 @@ var product_pages = {
                 $('#shopping-cart-widget .shopping-cart-content').height(height);                
             }
         });
-        $('.back-to-top').hide();
         $(window).on('scroll', function(){
-            if($(window).scrollTop() > $('.main-section').offset().top){
-                $('#shopping-cart-widget').addClass('fixed');
-                $('.back-to-top').fadeIn();
-            }else{
-                $('#shopping-cart-widget').removeClass('fixed');
-                $('.back-to-top').fadeOut();
+            if(!scrollAnimation.animating){
+                if($(window).scrollTop() > $('.main-section').offset().top){
+                    $('#shopping-cart-widget').addClass('fixed');
+                    $('.back-to-top').fadeIn();
+                }else{
+                    $('#shopping-cart-widget').removeClass('fixed');
+                    $('.back-to-top').fadeOut();
+                }
             }
         });
-        $('.back-to-top').on('click', function(e){
-            e.preventDefault();
-            scrollAnimation.animate(0);
-            return;
+        $('#shopping-cart-widget .shopping-cart-wishlist .add-to-cart-btn').on('click', function(){
+            var img = $(this).parent().find('.product-thumbnail img').attr('src');
+            product_pages.animateAddToCart(img,$(this));
+            return false;
+        });
+        $('#shopping-cart-widget .shopping-cart-wishlist  .add-all-to-cart').on('click', function(){
+            $('#shopping-cart-widget .shopping-cart-wishlist .add-to-cart-btn').each(function(){
+                var img = $(this).parent().find('.product-thumbnail img').attr('src');
+                product_pages.animateAddToCart(img,$(this));
+            });
+            return false;
         });
         //Edit item action
         $(document).on('click','#shopping-cart-widget .edit-item, #shopping-cart-widget .product-thumbnail, #shopping-cart-widget .item-details',function(e){
@@ -872,6 +920,7 @@ var product_pages = {
             }else{
                 $('#shopping-cart-widget .one-item').removeClass('editing');
                 $(this).parent().parent().parent().addClass('editing');
+                $(this).parent().parent().parent().find('.quantity-number').focus();
             }        
         });
         //Delete item action
@@ -889,6 +938,14 @@ var product_pages = {
         });     
     },
     productDetail: function(){
+        $('.back-to-top').hide();
+        $('.back-to-top').on('click', function(e){
+            $('.back-to-top').fadeOut();
+            $('#shopping-cart-widget').removeClass('fixed');
+            e.preventDefault();
+            scrollAnimation.animate(0);
+            return;
+        });
         //Detect if mobile to ouse touchend instead of click to fire actions faster
         //if ( window.location.hash ) $(window).scrollTop(0);
         // void some browsers issue
@@ -952,7 +1009,7 @@ var product_pages = {
               infinite: true,
               slidesToShow: 1,
               slidesToScroll: 1,
-              swipe: false,
+              //swipe: false,
               asNavFor: '.product-images-wrap .product-images .product-thumbs-slider',
               prevArrow: '<button type="button" class="slick-prev"><svg viewBox="0 0 26 46" id="shape-arrow-left"><title>arrow-left</title> <g id="arrow-left-arrow-left"> <path d="M24.4,0.6C24.1,0.2,23.5,0,23,0c-0.5,0-1,0.2-1.4,0.6l-21,21c-0.8,0.8-0.8,2.1,0,2.8l21,21c0.8,0.8,2.1,0.8,2.8,0c0.8-0.8,0.8-2.1,0-2.8L4.9,23L24.4,3.4C25.2,2.6,25.2,1.4,24.4,0.6z"/> </g> </svg></button>',
               nextArrow: '<button type="button" class="slick-next"><svg viewBox="0 0 26 46" id="shape-arrow-right"><title>arrow-right</title> <g id="arrow-right-arrow-right"> <path d="M1.6,45.4C2,45.8,2.5,46,3,46c0.5,0,1-0.2,1.4-0.6l21-21c0.8-0.8,0.8-2.1,0-2.8l-21-21c-0.8-0.8-2.1-0.8-2.8,0c-0.8,0.8-0.8,2.1,0,2.8L21.2,23L1.6,42.6C0.8,43.4,0.8,44.7,1.6,45.4z"/> </g> </svg></button>',
@@ -999,7 +1056,6 @@ var product_pages = {
               infinite: true,
               slidesToShow: 1,
               slidesToScroll: 1,
-              swipe: false,
               asNavFor: '.slider-lightbox .product-images .product-thumbs-slider',
               prevArrow: '<button type="button" class="slick-prev"><svg viewBox="0 0 26 46" id="shape-arrow-left"><title>arrow-left</title> <g id="arrow-left-arrow-left"> <path d="M24.4,0.6C24.1,0.2,23.5,0,23,0c-0.5,0-1,0.2-1.4,0.6l-21,21c-0.8,0.8-0.8,2.1,0,2.8l21,21c0.8,0.8,2.1,0.8,2.8,0c0.8-0.8,0.8-2.1,0-2.8L4.9,23L24.4,3.4C25.2,2.6,25.2,1.4,24.4,0.6z"/> </g> </svg></button>',
               nextArrow: '<button type="button" class="slick-next"><svg viewBox="0 0 26 46" id="shape-arrow-right"><title>arrow-right</title> <g id="arrow-right-arrow-right"> <path d="M1.6,45.4C2,45.8,2.5,46,3,46c0.5,0,1-0.2,1.4-0.6l21-21c0.8-0.8,0.8-2.1,0-2.8l-21-21c-0.8-0.8-2.1-0.8-2.8,0c-0.8,0.8-0.8,2.1,0,2.8L21.2,23L1.6,42.6C0.8,43.4,0.8,44.7,1.6,45.4z"/> </g> </svg></button>',
@@ -1053,7 +1109,7 @@ var product_pages = {
             $('.slider-lightbox').addClass('show');
         });
         $('.product-images-slider-wrap .product-images-slider .image').on('click', function(e){
-            if($(window).width()>768){
+            if($(window).width()>767){
                 var current = $(".product-images-wrap .product-images-slider").slick('slickCurrentSlide');
                 $(".slider-lightbox .product-images-slider").slick('slickGoTo',current, true);
                 $(".slider-lightbox .product-thumbs-slider").slick('slickGoTo',current, true);
@@ -1147,6 +1203,16 @@ var product_pages = {
           dots: false,
           arrows: true,
             responsive: [
+             {
+                    breakpoint: 990,
+                    settings:{
+                        infinite: true,
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        dots: true,
+                        arrows: false
+                    }
+                },
                 {
                     breakpoint: 767,
                     settings:{
@@ -1185,28 +1251,7 @@ var product_pages = {
 
                             obj.toggleClass('success');
                             var img = $('.product-images-slider .slick-current img').attr("src");
-                            var $added = $('<div class="added-to-cart" style="background-image:url('+img+')"></div>');
-                            var top = obj.find("button").offset().top - $(window).scrollTop();
-                            var left = obj.find("button").offset().left;
-                            $added.css({
-                                top: top,
-                                left: left,
-                                zIndex: 99
-                            });
-                            var finaltop = $('#shopping-cart-widget aside button .cart-items').offset().top  - $(window).scrollTop() - 20;
-                            var finalleft = $('#shopping-cart-widget aside button .cart-items').offset().left -20;
-                            TweenMax.to($added, 0.6, {bezier:{type:"cubic", values:[{x:0, y:0}, {x:0, y: finaltop - top}, {x: finalleft - left, y: finaltop - top}, {x: finalleft - left, y: finaltop - top }], autoRotate:["x","y","rotation", 0, true]}, scale:0.5, ease:Power1.easeInOut, onComplete: function(){ 
-                                TweenMax.to($added, 0.4,{ scale: 0, ease: Elastic.easeInOut, onComplete: function(){
-                                    $('#shopping-cart-widget .tour-info').hide();
-                                    $('#shopping-cart-widget .shopping-cart-product-list').removeClass('out');
-                                    $('#shopping-cart-widget .take-a-tour-box').show();
-                                    items=items+1;
-                                    $('#shopping-cart-widget aside button .cart-items').text(items);
-                                    $added.remove();
-                                }});
-                            }});
-                            $('#product-detail').append($added);
-                            $added.addClass('loaded');
+                            product_pages.animateAddToCart(img,obj.find('button'));
                             setTimeout(function(){
                                 obj.removeClass('loading success');
                                 obj.find('button').blur();                        
@@ -1219,11 +1264,16 @@ var product_pages = {
                 }, 1200);
             }
         });
+        $('a.add-to-cart').on('click', function(){
+            var img = $(this).parent().parent().find('.product-thumbnail img').attr('src');
+            product_pages.animateAddToCart(img,$(this));
+            return false;
+        });
         //Filtering all documents
         $('.downloads-section .filter').on('click', function(){
             if($(this).hasClass('filtered')){
                 $('.downloads-section .filter').removeClass('filtered');
-                $('.all-downloads').find('.one-file').show();
+                $('.all-downloads').find('.one-file').removeClass('hide').addClass('show');
                 if($(window).width() < 768){
                     $('.all-downloads').slick('slickUnfilter');                    
                 }
@@ -1232,8 +1282,8 @@ var product_pages = {
                 $(this).addClass('filtered');
                 var filter = $(this).data('filter');
                 if($(window).width() > 767){
-                    $('.all-downloads').find('.one-file').hide();
-                    $('.all-downloads').find('[data-group='+filter+']').show();
+                    $('.all-downloads').find('.one-file').addClass('hide').removeClass('show');
+                    $('.all-downloads').find('[data-group='+filter+']').removeClass('hide').addClass('show');
                 }else{
                     $('.all-downloads').slick('slickUnfilter');      
                     $('.all-downloads').slick('slickFilter','[data-group='+filter+']');
@@ -1299,8 +1349,8 @@ var product_pages = {
                     $(".file-download-list").slick('unslick');
                     var filter = $('.downloads-section .filters .filtered').data('filter');
                     if(filter){
-                        $('.all-downloads').find('.one-file').hide();
-                        $('.all-downloads').find('[data-group='+filter+']').show();
+                        $('.all-downloads').find('.one-file').addClass('hide').removeClass('show');
+                        $('.all-downloads').find('[data-group='+filter+']').removeClass('hide').addClass('show');
                     }
                 }
           }
@@ -1342,17 +1392,3 @@ var product_pages = {
 
     }
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-

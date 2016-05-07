@@ -14,7 +14,8 @@
 	<div class="container-fluid section-container">
 		<div class="row">
 			<div class="col-xs-12">
-				<b>Pricing</b> Enter your postcode for current pricing. <input type="number" name="userpostcode" placeholder="Postcode" class="input-medium" inputmode="numeric" minlength="4" maxlength="4" min="0" max="9999" pattern="[0-9]*">
+				<span class="text"><b>Pricing</b> Enter your postcode for current pricing. </span>
+				<input type="number" name="userpostcode" placeholder="Postcode" class="input-medium" inputmode="numeric" minlength="4" maxlength="4" min="0" max="9999" pattern="[0-9]*">
 			</div>
 		</div>
 	</div>	
@@ -46,26 +47,6 @@
 								<div class="product-images-slider-wrap">
 									<div class="product-images-slider">
 										<div class="current">
-											<div class="image">
-												<img class="img-responsive" src="templates/images/product-detail/product-image1.jpg" alt="item">
-											</div>
-										</div>
-										<div>
-											<div class="image">
-												<img class="img-responsive" src="templates/images/product-detail/product-image2.jpg" alt="item">
-											</div>
-										</div>
-										<div>
-											<div class="image">
-												<img class="img-responsive" src="templates/images/product-detail/product-image3.jpg" alt="item">
-											</div>
-										</div>
-										<div>
-											<div class="image">
-												<img class="img-responsive" src="templates/images/product-detail/product-image4.jpg" alt="item">
-											</div>
-										</div>
-										<div>
 											<div class="image">
 												<img class="img-responsive" src="templates/images/product-detail/product-image1.jpg" alt="item">
 											</div>
@@ -119,18 +100,6 @@
 									</div>
 									<div class="product-thumb">
 										<img class="img-responsive" src="templates/images/product-detail/product-image4.jpg" alt="item">
-									</div>
-									<div class="product-thumb">
-										<img class="img-responsive" src="templates/images/product-detail/product-image1.jpg" alt="item">
-									</div>
-									<div class="product-thumb">
-										<img class="img-responsive" src="templates/images/product-detail/product-image2.jpg" alt="item">
-									</div>
-									<div class="product-thumb">
-										<img class="img-responsive" src="templates/images/product-detail/product-image3.jpg" alt="item">
-									</div>
-									<div class="product-thumb">
-										<img class="img-responsive" src="templates/images/product-detail/product-image4.jpg" alt="item">
 										<span class="play-button">
 											<svg width="46.5px" height="46.5px" viewBox="0 0 46.5 46.5">
 												<path class="ring" d="M23.2,46.5C10.4,46.5,0,36.1,0,23.3S10.4,0,23.2,0c12.8,0,23.2,10.4,23.2,23.3S36.1,46.5,23.2,46.5z M23.2,1
@@ -150,10 +119,13 @@
 					</div>
 					<div class="product-content-right">
 						<div class="product-description-wrap">
+						<div class="we-love">
+							<img class="img-responsive" src="templates/images/product-detail/we-love.png" alt="We love">
+						</div>
 							<div class="product-intro">
-								<h1>Conex Dapibus Ullamcorp Fringilla</h1>
+								<h1>Milli Axon</h1>
 								<div class="product-description">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac posuere arcu. Fusce et leo.</p>
 								</div>
 							</div>
 							<div class="product-details">
@@ -182,7 +154,10 @@
 											<div class="product-addbutton">
 												<div class="progress-button">
 													<!-- button with text -->
-													<button type="button" class="btn add-to-cart full-width" disabled>add to cart</button>
+													<button type="button" class="btn add-to-cart full-width" disabled>add to cart 
+													<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 34" id="shape-cart"><title>cart</title> <path d="M34.2,33.5c2,0,3.7-1.7,3.7-3.7c0-2.1-1.7-3.7-3.7-3.7c-2,0-3.7,1.7-3.7,3.7S32.2,33.5,34.2,33.5"/> <path d="M13.8,33.5c2,0,3.7-1.7,3.7-3.7c0-2.1-1.7-3.7-3.7-3.7c-2,0-3.7,1.7-3.7,3.7S11.8,33.5,13.8,33.5"/> <path d="M13.8,28h20.4c0.5,0,0.9-0.4,0.9-0.9s-0.4-0.9-0.9-0.9H14.6L8.8,1.2C8.7,0.8,8.3,0.5,7.9,0.5H1.4c-0.5,0-0.9,0.4-0.9,0.9
+			c0,0.5,0.4,0.9,0.9,0.9h5.8l5.7,24.9C13,27.7,13.4,28,13.8,28z"/> <path d="M12.9,24.2H37c0.4,0,0.8-0.3,0.9-0.6l5.6-16.8c0.1-0.3,0-0.6-0.1-0.8c-0.2-0.2-0.5-0.4-0.8-0.4H9.2C8.7,5.6,8.3,6,8.3,6.6
+			c0,0.5,0.4,0.9,0.9,0.9h32.1l-4.9,14.9H12.9c-0.5,0-0.9,0.4-0.9,0.9C12,23.8,12.4,24.2,12.9,24.2z"/></svg></button>
 
 													<!-- svg circle for progress indication -->
 													<svg class="progress-circle" width="70" height="70"  viewBox="0 0 70 70">
@@ -216,12 +191,27 @@
 													<span>Domestic Use</span>											
 											</div>
 										</div>
+										<div class="col-xs-6">
+											<div class="item">
+													<img src="templates/images/product-detail/promo.jpg" alt="Promo"/>
+													<span>PROMO</span>											
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>								
 							<div class="product-availability-variations">
 								<ul class="list-inline">
 									<li>
+										<div class="options-dropdown">
+											<div class="options-name">Variations
+											<svg width="50px" height="27.2px" viewBox="0 0 50 27.2">
+<path d="M0.6,0.6c-0.8,0.8-0.9,2.2,0,3.1c0,0,0,0,0,0l22.8,22.8c0.9,0.8,2.2,0.8,3.1,0L49.4,3.7
+	c0.8-0.9,0.8-2.2,0-3.1c-0.9-0.8-2.2-0.8-3.1,0L25,21.9L3.7,0.6C2.9-0.2,1.5-0.2,0.6,0.6C0.6,0.6,0.6,0.6,0.6,0.6z"/>
+</svg>
+											</div>
+											<ul class="options-list">
+											<!--<li>
 										<div class="options-dropdown">
 											<div class="options-name">Availability
 											<svg width="50px" height="27.2px" viewBox="0 0 50 27.2">
@@ -247,16 +237,7 @@
 												</li>
 											</ul>
 										</div>
-									</li>
-									<li>
-										<div class="options-dropdown">
-											<div class="options-name">Variations
-											<svg width="50px" height="27.2px" viewBox="0 0 50 27.2">
-<path d="M0.6,0.6c-0.8,0.8-0.9,2.2,0,3.1c0,0,0,0,0,0l22.8,22.8c0.9,0.8,2.2,0.8,3.1,0L49.4,3.7
-	c0.8-0.9,0.8-2.2,0-3.1c-0.9-0.8-2.2-0.8-3.1,0L25,21.9L3.7,0.6C2.9-0.2,1.5-0.2,0.6,0.6C0.6,0.6,0.6,0.6,0.6,0.6z"/>
-</svg>
-											</div>
-											<ul class="options-list">
+									</li>-->
 												<li>
 													<b>Green</b>
 													<div>at Brunswick East</div>
@@ -387,32 +368,41 @@
 		<section id="product-display" class="grey-stripes-bg section">
 			<div class="container-fluid section-container">
 				<div class="section-content">
-					<div class="row">
-						<div class="col-xs-12">
-							<h3>See this product on display at</h3>
-							<div class="postcode-wrap">
-								<form action="#" method="POST">
-									<label for="display-postcode">Enter your postcode</label>
-									<input type="number" name="display-postcode" id="display-postcode" placeholder="Postcode" inputmode="numeric" minlength="4" maxlength="4" min="0" max="9999" pattern="[0-9]*"/>
-									<button type="submit" class="btn call-to-action">Go</button>
-								</form>
+					<header data-expandbutton="product-on-display" class="section-title action-expand-button">
+							<h3 class="section-heading">See this product on display at 
+								<svg xmlns="http://www.w3.org/2000/svg" width="46px" height="25px" viewBox="0 0 46 25">
+									<path d="M0.6,0.6C0.2,1,0,1.5,0,2c0,0.5,0.2,1,0.6,1.4l21,21c0.8,0.8,2.1,0.8,2.8,0l21-21c0.8-0.8,0.8-2.1,0-2.8
+					c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
+								</svg>
+							</h3>
+					</header>
+					<div data-expandsection="product-on-display" class="expand-section expanded-desktop">
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="postcode-wrap">
+									<form action="#" method="POST">
+										<label for="display-postcode">Enter your postcode</label>
+										<input type="number" name="display-postcode" id="display-postcode" placeholder="Postcode" inputmode="numeric" minlength="4" maxlength="4" min="0" max="9999" pattern="[0-9]*"/>
+										<button type="submit" class="btn call-to-action">Go</button>
+									</form>
+								</div>
+							</div>					
+						</div>
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="address">
+									<p><b>Reece Plumbing Centre Brunswick</b><br/>
+									Mon-Fri 7am-5pm<br/>Saturday 8am-12pm<br><a href="#">more information</a></p>
+								</div>
 							</div>
-						</div>					
-					</div>
-					<div class="row">
-						<div class="col-sm-6">
-							<div class="address">
-								<p><b>Reece Plumbing Centre Brunswick</b><br/>
-								Mon-Fri 7am-5pm<br/>Saturday 8am-12pm<br><a href="#">more information</a></p>
+							<div class="col-sm-6">
+								<div class="address">
+									<p><b>Reece Plumbing Centre Brunswick</b><br/>Mon-Fri 7am-5pm<br/>Saturday 8am-12pm<br><a href="#">more information</a></p>
+								</div>
 							</div>
 						</div>
-						<div class="col-sm-6">
-							<div class="address">
-								<p><b>Reece Plumbing Centre Brunswick</b><br/>Mon-Fri 7am-5pm<br/>Saturday 8am-12pm<br><a href="#">more information</a></p>
-							</div>
-						</div>
-					</div>
-				</div>				
+					</div>	
+					</div>			
 			</div>			
 		</section>
 		<!-- END PRODUCT DISPLAY -->
@@ -435,39 +425,43 @@
 								<h6 class="table-heading">Product Information</h6>
 								<table class="verticle-table">
 									<tr>
-										<th>Heading</th>
-										<td><a href="#">Lorem ipsum dolor sit !</a></td>
+										<th>Trend</th>
+										<td><a href="#">Hotel inspired</a></td>
 									</tr>
 									<tr>
-										<th>Heading</th>
-										<td>Lorem ipsum dolor, recusandae corrupti.</td>
+										<th>Designer</th>
+										<td>Zuster</td>
 									</tr>
 									<tr>
-										<th>Heading</th>
-										<td>Lorem ipsum dolor sit.</td>
+										<th>Mounting</th>
+										<td>Floor Staning</td>
 									</tr>
 									<tr>
-										<th>Heading</th>
-										<td>Lorem iste dolor repudiandae libero tenetur molestias rem.</td>
+										<th>Number of Drawers</th>
+										<td>0 Drawers</td>
 									</tr>
 									<tr>
-										<th>Heading</th>
-										<td>Lorem ipsum dolor sit.</td>
+										<th>Vanity Top</th>
+										<td>Corian top with Sharknose edge (less basin)</td>
+									</tr>
+									<tr>
+										<th>Basin</th>
+										<td>Sold Separately</td>
 									</tr>
 								</table>
 								<h6 class="table-heading">Finish</h6>
 								<table class="verticle-table">
 									<tr>
-										<th>Heading</th>
-										<td>Lorem i ipsam!</td>
+										<th>Benchtop Colour</th>
+										<td>Glacia White</td>
 									</tr>
 									<tr>
-										<th>Heading</th>
-										<td>Lorem ipsum  illo ut, recusandae corrupti.</td>
+										<th>Cabinet Finish</th>
+										<td>Satin 5% gloss polyurethane</td>
 									</tr>
 									<tr>
-										<th>Heading</th>
-										<td>Lorem ipsum dolor sit.</td>
+										<th>Cabinet Colour Variations</th>
+										<td>America Oak, Charcoal Oak, Hazelnut Oak, Pony Oak</td>
 									</tr>
 								</table>
 							</div>
@@ -475,16 +469,12 @@
 								<h6 class="table-heading">Material</h6>
 								<table class="verticle-table">
 									<tr>
-										<th>Heading</th>
-										<td>Lorem i ipsam!</td>
+										<th>Benchtop Material</th>
+										<td>Corian</td>
 									</tr>
 									<tr>
-										<th>Heading</th>
-										<td>Lorem ipsum  corrupti.</td>
-									</tr>
-									<tr>
-										<th>Heading</th>
-										<td>Lorem ipsum dolor sit.</td>
+										<th>Cabinet Mterial</th>
+										<td>Solid American Oak</td>
 									</tr>
 								</table>
 							</div>
@@ -502,7 +492,7 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 										</h4>
 									</header>
 									<div class="expand-section internal-expand-body" data-expandsection="feature-files">
-										<div class="file-download-list">
+										<div class="file-download-list four-per-row">
 											<?php for($i = 0; $i<3;$i++){ ?>
 											<div class="one-file">
 												<div class="file-info file-doc">
@@ -519,9 +509,8 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 </svg>
 													</div>
 													<div class="file-description">
-													<p class="file-name">Warranty</p>
 													<a href="#" class="file-download">
-														Download PDF
+														Milli Brand Brochure
 													</a>
 													</div>
 												</div>
@@ -540,7 +529,7 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 													<div class="file-description">
 													<p class="file-name">Warranty</p>
 													<a href="#" class="file-download">
-														Download CAD
+														Milli Brand Brochure
 													</a>
 													</div>
 												</div>
@@ -570,56 +559,36 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 								<h6 class="table-heading">Technical Information</h6>
 								<table class="verticle-table">
 									<tr>
-										<th>Heading</th>
-										<td>Lorem iLaudantium, ipsam!</td>
+										<th>Min Continuous Working Pressure</th>
+										<td>150 kPa</td>
 									</tr>
 									<tr>
-										<th>Heading</th>
-										<td>Lorem ipsum d recusandae corrupti.</td>
+										<th>Max Continuous Working Pressure</th>
+										<td>500 kPa</td>
 									</tr>
 									<tr>
-										<th>Heading</th>
-										<td>Lorem ipsum dolor sit.</td>
+										<th>Min Continuous Working Temperature</th>
+										<td>1 deg C</td>
 									</tr>
 									<tr>
-										<th>Heading</th>
-										<td>Lorem iptias rem.</td>
-									</tr>
-									<tr>
-										<th>Heading</th>
-										<td>Lorem ipsum dolor sit.</td>
+										<th>Max Continuous Working Temperature</th>
+										<td>75 deg C</td>
 									</tr>
 								</table>
-								<h6 class="table-heading">SIze and Dimension</h6>
+								<h6 class="table-heading">Size and Dimension</h6>
 								<table class="verticle-table">
 									<tr>
-										<th>Heading</th>
-										<td>Lorem ipm, ipsam!</td>
-									</tr>
-									<tr>
-										<th>Heading</th>
-										<td>Lorem ipsum dolor lo ut, recusandae corrupti.</td>
-									</tr>
-									<tr>
-										<th>Heading</th>
-										<td>Lorem ipsum dolor sit.</td>
-									</tr>
+										<th>Projection</th>
+										<td>200 mm</td>
+									</tr>									
 								</table>
 							</div>
 							<div class="col-sm-6">
-								<h6 class="table-heading">WELs</h6>
+								<h6 class="table-heading">WELS</h6>
 								<table class="verticle-table">
 									<tr>
-										<th>Heading</th>
-										<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, ipsam!</td>
-									</tr>
-									<tr>
-										<th>Heading</th>
-										<td>Lorem ipsum dolt, recusandae corrupti.</td>
-									</tr>
-									<tr>
-										<th>Heading</th>
-										<td>Lorem ipsum dolor sit.</td>
+										<th>Rating</th>
+										<td>6 Star</td>
 									</tr>
 								</table>
 							</div>
@@ -632,7 +601,7 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 </svg></h4></header>
 									<div class="expand-section internal-expand-body" data-expandsection="technical-files">
-										<div class="file-download-list">
+										<div class="file-download-list four-per-row">
 											<?php for($i = 0; $i<3;$i++){ ?>
 											<div class="one-file">
 												<div class="file-info file-doc">
@@ -649,9 +618,8 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 </svg>
 													</div>
 													<div class="file-description">
-													<p class="file-name">Warranty</p>
 													<a href="#" class="file-download">
-														Download PDF
+														Technical &amp; Warranty Sheet
 													</a>
 													</div>
 												</div>
@@ -670,7 +638,7 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 													<div class="file-description">
 													<p class="file-name">Warranty</p>
 													<a href="#" class="file-download">
-														Download CAD
+														CAD Drawing
 													</a>
 													</div>
 												</div>
@@ -707,32 +675,32 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 
 											<table class="verticle-table">
 												<tr>
-													<th>Heading</th>
-													<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, ipsam!</td>
+													<th>Domestic Use</th>
+													<td>7 Years</td>
 												</tr>
 												<tr>
-													<th>Heading</th>
-													<td>Lorem ipsum docusandae corrupti.</td>
+													<th>Spare Parts and labour</th>
+													<td>12 Months</td>
 												</tr>
 												<tr>
-													<th>Heading</th>
-													<td>Lorem ipsum dolor sit.</td>
+													<th>Cartridge - Domestic Use</th>
+													<td>7 Years</td>
 												</tr>
 											</table>
 										</div>
 										<div class="col-sm-6">
 											<table class="verticle-table">
 												<tr>
-													<th>Heading</th>
-													<td>Lorem ium, ipsam!</td>
+													<th>Domestic Use</th>
+													<td>7 Years</td>
 												</tr>
 												<tr>
-													<th>Heading</th>
-													<td>Lorem ipsum dot, recusandae corrupti.</td>
+													<th>Spare Parts and Labour</th>
+													<td>12 Months</td>
 												</tr>
 												<tr>
-													<th>Heading</th>
-													<td>Lorem ipsum dolor sit.</td>
+													<th>Cartridge - Domesic Use</th>
+													<td>7 Years</td>
 												</tr>
 											</table>
 										</div>
@@ -745,7 +713,7 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 	c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 </svg></h4></header>
 												<div class="expand-section internal-expand-body" data-expandsection="warranty-files">
-													<div class="file-download-list">
+													<div class="file-download-list four-per-row">
 														<?php for($i = 0; $i<3;$i++){ ?>
 														<div class="one-file">
 															<div class="file-info file-doc">
@@ -761,9 +729,12 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,20.4,16.3,20,15.8,20"/>
 </svg>
 													</div>
-																<a href="#" class="file-download">
-																	Technical &amp; Warranty Sheet
-																</a>
+													<div class="file-description">
+													<a href="#" class="file-download">
+														Technical &amp; Warranty Sheet
+													</a>
+													</div>
+																
 															</div>
 														</div>
 														<div class="one-file">
@@ -777,9 +748,11 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 															C2.6,18.3,2.6,18.3,2.6,18.3z M4.3,8.4l5.7,2.8c0,0,0,0,0,0c0,0,0,0,0,0l5.7-2.8L10,5.6c0,0-0.1,0-0.1,0L4.3,8.4z"/>
 														</svg>
 													</div>
-																<a href="#" class="file-download">
-																	Download CAD
-																</a>
+																<div class="file-description">
+													<a href="#" class="file-download">
+														Technical &amp; Warranty Sheet
+													</a>
+													</div>
 															</div>
 														</div>
 														<?php } ?>
@@ -794,6 +767,250 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 			</div>
 		</section>
 		<!--END WARRANTY SECTION -->
+		<!--START ALL DOWNLOADS SECTION -->
+		<section class="section downloads-section" id="downloads">
+			<div class="container-fluid section-container">
+				<div class="section-content">
+							<header data-expandbutton="alldownloads" class="section-title action-expand-button"><h3 class="section-heading">All Downloads
+							<svg xmlns="http://www.w3.org/2000/svg" width="46px" height="25px" viewBox="0 0 46 25">
+						<path d="M0.6,0.6C0.2,1,0,1.5,0,2c0,0.5,0.2,1,0.6,1.4l21,21c0.8,0.8,2.1,0.8,2.8,0l21-21c0.8-0.8,0.8-2.1,0-2.8
+		c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
+					</svg>
+							</h3></header>
+							<div data-expandsection="alldownloads" class="expand-section expanded-desktop">
+								<div class="file-download-list four-per-row all-downloads">
+									<div class="one-file">
+										<div class="file-info file-doc">
+										<div class="icon">
+														<svg width="20px" height="27px" viewBox="0 0 20 27">
+<path d="M17.7,5h-2.1C15.3,5,15,4.7,15,4.3V2.4C15,1.1,14,0,12.7,0H2.3C1,0,0,1.1,0,2.4v21.9c0,1.3,1,2.4,2.3,2.4h15.4
+	c1.3,0,2.3-1.1,2.3-2.4V7.4C20,6.1,19,5,17.7,5 M18.3,24.3c0,0.4-0.3,0.7-0.6,0.7H2.3c-0.3,0-0.6-0.3-0.6-0.7V2.4
+	c0-0.4,0.3-0.7,0.6-0.7h10.4c0.3,0,0.6,0.3,0.6,0.7v1.9c0,1.3,1,2.4,2.3,2.4h2.1c0.3,0,0.6,0.3,0.6,0.7V24.3z M4.2,8.3h6.7
+	c0.5,0,0.8-0.4,0.8-0.8c0-0.5-0.4-0.8-0.8-0.8H4.2C3.7,6.7,3.3,7,3.3,7.5C3.3,8,3.7,8.3,4.2,8.3 M15.8,10H4.2
+	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,10.4,16.3,10,15.8,10 M15.8,13.3H4.2
+	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,13.7,16.3,13.3,15.8,13.3 M15.8,16.7H4.2
+	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,17,16.3,16.7,15.8,16.7 M15.8,20H4.2
+	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,20.4,16.3,20,15.8,20"/>
+</svg>
+													</div>
+													<div class="file-description">
+											<p class="file-name">Warranty</p>
+											<a href="#" class="file-download">
+												Milli Brochure
+											</a>
+											</div>
+										</div>
+									</div>
+									<div class="one-file">
+										<div class="file-info file-doc">
+										<div class="icon">
+														<svg width="20px" height="27px" viewBox="0 0 20 27">
+<path d="M17.7,5h-2.1C15.3,5,15,4.7,15,4.3V2.4C15,1.1,14,0,12.7,0H2.3C1,0,0,1.1,0,2.4v21.9c0,1.3,1,2.4,2.3,2.4h15.4
+	c1.3,0,2.3-1.1,2.3-2.4V7.4C20,6.1,19,5,17.7,5 M18.3,24.3c0,0.4-0.3,0.7-0.6,0.7H2.3c-0.3,0-0.6-0.3-0.6-0.7V2.4
+	c0-0.4,0.3-0.7,0.6-0.7h10.4c0.3,0,0.6,0.3,0.6,0.7v1.9c0,1.3,1,2.4,2.3,2.4h2.1c0.3,0,0.6,0.3,0.6,0.7V24.3z M4.2,8.3h6.7
+	c0.5,0,0.8-0.4,0.8-0.8c0-0.5-0.4-0.8-0.8-0.8H4.2C3.7,6.7,3.3,7,3.3,7.5C3.3,8,3.7,8.3,4.2,8.3 M15.8,10H4.2
+	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,10.4,16.3,10,15.8,10 M15.8,13.3H4.2
+	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,13.7,16.3,13.3,15.8,13.3 M15.8,16.7H4.2
+	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,17,16.3,16.7,15.8,16.7 M15.8,20H4.2
+	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,20.4,16.3,20,15.8,20"/>
+</svg>
+													</div>
+													<div class="file-description">
+											<a href="#" class="file-download">
+												Warranty Sheet
+											</a>
+											</div>
+										</div>
+									</div>
+									<div class="one-file">
+										<div class="file-info file-doc">
+										<div class="icon">
+														<svg width="20px" height="27px" viewBox="0 0 20 27">
+<path d="M17.7,5h-2.1C15.3,5,15,4.7,15,4.3V2.4C15,1.1,14,0,12.7,0H2.3C1,0,0,1.1,0,2.4v21.9c0,1.3,1,2.4,2.3,2.4h15.4
+	c1.3,0,2.3-1.1,2.3-2.4V7.4C20,6.1,19,5,17.7,5 M18.3,24.3c0,0.4-0.3,0.7-0.6,0.7H2.3c-0.3,0-0.6-0.3-0.6-0.7V2.4
+	c0-0.4,0.3-0.7,0.6-0.7h10.4c0.3,0,0.6,0.3,0.6,0.7v1.9c0,1.3,1,2.4,2.3,2.4h2.1c0.3,0,0.6,0.3,0.6,0.7V24.3z M4.2,8.3h6.7
+	c0.5,0,0.8-0.4,0.8-0.8c0-0.5-0.4-0.8-0.8-0.8H4.2C3.7,6.7,3.3,7,3.3,7.5C3.3,8,3.7,8.3,4.2,8.3 M15.8,10H4.2
+	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,10.4,16.3,10,15.8,10 M15.8,13.3H4.2
+	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,13.7,16.3,13.3,15.8,13.3 M15.8,16.7H4.2
+	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,17,16.3,16.7,15.8,16.7 M15.8,20H4.2
+	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,20.4,16.3,20,15.8,20"/>
+</svg>
+													</div>
+													<div class="file-description">
+											<a href="#" class="file-download">
+												Warranty Sheet
+											</a>
+											</div>
+										</div>
+									</div>
+									<div class="one-file">
+										<div class="file-info file-cad">
+										<div class="icon">
+														<svg width="20px" height="27px" viewBox="0 0 20 27">
+														<path d="M10,24.6c-0.3,0-0.7-0.1-1.1-0.2c0,0-0.1,0-0.1,0l-7.5-3.7C0.6,20.2,0,19.3,0,18.3c0,0,0,0,0-0.1v-9c0,0,0,0,0,0
+															C0,9.2,0,9,0,8.9C0.2,8.1,0.7,7.3,1.3,7l7.5-3.7c0.6-0.3,1.6-0.5,2.4,0L18.7,7c0.7,0.3,1.2,1.1,1.3,1.9c0,0.1,0,0.3,0,0.4
+															c0,0,0,0,0,0v9c0,0,0,0,0,0.1c0,1-0.6,1.9-1.3,2.3l0,0l-7.5,3.7c-0.1,0-0.2,0.1-0.3,0.1C10.6,24.5,10.3,24.6,10,24.6z M11.3,13.5
+															C11.3,13.6,11.3,13.6,11.3,13.5l0,7.8l6.1-3c0,0,0-0.1,0-0.1v-7.7L11.3,13.5z M2.6,18.3l6.1,3v-7.7c0,0,0-0.1,0-0.1l-6.1-3L2.6,18.3
+															C2.6,18.3,2.6,18.3,2.6,18.3z M4.3,8.4l5.7,2.8c0,0,0,0,0,0c0,0,0,0,0,0l5.7-2.8L10,5.6c0,0-0.1,0-0.1,0L4.3,8.4z"/>
+														</svg>
+													</div>
+													<div class="file-description">
+											<a href="#" class="file-download">
+												CAD Drawing
+											</a>
+											</div>
+										</div>
+									</div>
+									<div class="one-file">
+										<div class="file-info file-cad">
+										<div class="icon">
+														<svg width="20px" height="27px" viewBox="0 0 20 27">
+														<path d="M10,24.6c-0.3,0-0.7-0.1-1.1-0.2c0,0-0.1,0-0.1,0l-7.5-3.7C0.6,20.2,0,19.3,0,18.3c0,0,0,0,0-0.1v-9c0,0,0,0,0,0
+															C0,9.2,0,9,0,8.9C0.2,8.1,0.7,7.3,1.3,7l7.5-3.7c0.6-0.3,1.6-0.5,2.4,0L18.7,7c0.7,0.3,1.2,1.1,1.3,1.9c0,0.1,0,0.3,0,0.4
+															c0,0,0,0,0,0v9c0,0,0,0,0,0.1c0,1-0.6,1.9-1.3,2.3l0,0l-7.5,3.7c-0.1,0-0.2,0.1-0.3,0.1C10.6,24.5,10.3,24.6,10,24.6z M11.3,13.5
+															C11.3,13.6,11.3,13.6,11.3,13.5l0,7.8l6.1-3c0,0,0-0.1,0-0.1v-7.7L11.3,13.5z M2.6,18.3l6.1,3v-7.7c0,0,0-0.1,0-0.1l-6.1-3L2.6,18.3
+															C2.6,18.3,2.6,18.3,2.6,18.3z M4.3,8.4l5.7,2.8c0,0,0,0,0,0c0,0,0,0,0,0l5.7-2.8L10,5.6c0,0-0.1,0-0.1,0L4.3,8.4z"/>
+														</svg>
+													</div>
+													<div class="file-description">
+											<a href="#" class="file-download">
+												CAD Drawing
+											</a>
+											</div>
+										</div>
+									</div>
+									<div class="one-file">
+										<div class="file-info file-cad">
+										<div class="icon">
+														<svg width="20px" height="27px" viewBox="0 0 20 27">
+														<path d="M10,24.6c-0.3,0-0.7-0.1-1.1-0.2c0,0-0.1,0-0.1,0l-7.5-3.7C0.6,20.2,0,19.3,0,18.3c0,0,0,0,0-0.1v-9c0,0,0,0,0,0
+															C0,9.2,0,9,0,8.9C0.2,8.1,0.7,7.3,1.3,7l7.5-3.7c0.6-0.3,1.6-0.5,2.4,0L18.7,7c0.7,0.3,1.2,1.1,1.3,1.9c0,0.1,0,0.3,0,0.4
+															c0,0,0,0,0,0v9c0,0,0,0,0,0.1c0,1-0.6,1.9-1.3,2.3l0,0l-7.5,3.7c-0.1,0-0.2,0.1-0.3,0.1C10.6,24.5,10.3,24.6,10,24.6z M11.3,13.5
+															C11.3,13.6,11.3,13.6,11.3,13.5l0,7.8l6.1-3c0,0,0-0.1,0-0.1v-7.7L11.3,13.5z M2.6,18.3l6.1,3v-7.7c0,0,0-0.1,0-0.1l-6.1-3L2.6,18.3
+															C2.6,18.3,2.6,18.3,2.6,18.3z M4.3,8.4l5.7,2.8c0,0,0,0,0,0c0,0,0,0,0,0l5.7-2.8L10,5.6c0,0-0.1,0-0.1,0L4.3,8.4z"/>
+														</svg>
+													</div>
+													<div class="file-description">
+											<a href="#" class="file-download">
+												CAD Drawing
+											</a>
+											</div>
+										</div>
+									</div>
+									<div class="one-file">
+										<div class="file-info file-cad">
+										<div class="icon">
+														<svg width="20px" height="27px" viewBox="0 0 20 27">
+														<path d="M10,24.6c-0.3,0-0.7-0.1-1.1-0.2c0,0-0.1,0-0.1,0l-7.5-3.7C0.6,20.2,0,19.3,0,18.3c0,0,0,0,0-0.1v-9c0,0,0,0,0,0
+															C0,9.2,0,9,0,8.9C0.2,8.1,0.7,7.3,1.3,7l7.5-3.7c0.6-0.3,1.6-0.5,2.4,0L18.7,7c0.7,0.3,1.2,1.1,1.3,1.9c0,0.1,0,0.3,0,0.4
+															c0,0,0,0,0,0v9c0,0,0,0,0,0.1c0,1-0.6,1.9-1.3,2.3l0,0l-7.5,3.7c-0.1,0-0.2,0.1-0.3,0.1C10.6,24.5,10.3,24.6,10,24.6z M11.3,13.5
+															C11.3,13.6,11.3,13.6,11.3,13.5l0,7.8l6.1-3c0,0,0-0.1,0-0.1v-7.7L11.3,13.5z M2.6,18.3l6.1,3v-7.7c0,0,0-0.1,0-0.1l-6.1-3L2.6,18.3
+															C2.6,18.3,2.6,18.3,2.6,18.3z M4.3,8.4l5.7,2.8c0,0,0,0,0,0c0,0,0,0,0,0l5.7-2.8L10,5.6c0,0-0.1,0-0.1,0L4.3,8.4z"/>
+														</svg>
+													</div>
+													<div class="file-description">
+											<a href="#" class="file-download">
+												CAD Drawing
+											</a>
+											</div>
+										</div>
+									</div>
+									<div class="one-file">
+										<div class="file-info file-cad">
+										<div class="icon">
+														<svg width="20px" height="27px" viewBox="0 0 20 27">
+														<path d="M10,24.6c-0.3,0-0.7-0.1-1.1-0.2c0,0-0.1,0-0.1,0l-7.5-3.7C0.6,20.2,0,19.3,0,18.3c0,0,0,0,0-0.1v-9c0,0,0,0,0,0
+															C0,9.2,0,9,0,8.9C0.2,8.1,0.7,7.3,1.3,7l7.5-3.7c0.6-0.3,1.6-0.5,2.4,0L18.7,7c0.7,0.3,1.2,1.1,1.3,1.9c0,0.1,0,0.3,0,0.4
+															c0,0,0,0,0,0v9c0,0,0,0,0,0.1c0,1-0.6,1.9-1.3,2.3l0,0l-7.5,3.7c-0.1,0-0.2,0.1-0.3,0.1C10.6,24.5,10.3,24.6,10,24.6z M11.3,13.5
+															C11.3,13.6,11.3,13.6,11.3,13.5l0,7.8l6.1-3c0,0,0-0.1,0-0.1v-7.7L11.3,13.5z M2.6,18.3l6.1,3v-7.7c0,0,0-0.1,0-0.1l-6.1-3L2.6,18.3
+															C2.6,18.3,2.6,18.3,2.6,18.3z M4.3,8.4l5.7,2.8c0,0,0,0,0,0c0,0,0,0,0,0l5.7-2.8L10,5.6c0,0-0.1,0-0.1,0L4.3,8.4z"/>
+														</svg>
+													</div>
+													<div class="file-description">
+											<a href="#" class="file-download">
+												CAD Drawing
+											</a>
+											</div>
+										</div>
+									</div>
+									<div class="one-file">
+										<div class="file-info file-cad">
+										<div class="icon">
+														<svg width="20px" height="27px" viewBox="0 0 20 27">
+														<path d="M10,24.6c-0.3,0-0.7-0.1-1.1-0.2c0,0-0.1,0-0.1,0l-7.5-3.7C0.6,20.2,0,19.3,0,18.3c0,0,0,0,0-0.1v-9c0,0,0,0,0,0
+															C0,9.2,0,9,0,8.9C0.2,8.1,0.7,7.3,1.3,7l7.5-3.7c0.6-0.3,1.6-0.5,2.4,0L18.7,7c0.7,0.3,1.2,1.1,1.3,1.9c0,0.1,0,0.3,0,0.4
+															c0,0,0,0,0,0v9c0,0,0,0,0,0.1c0,1-0.6,1.9-1.3,2.3l0,0l-7.5,3.7c-0.1,0-0.2,0.1-0.3,0.1C10.6,24.5,10.3,24.6,10,24.6z M11.3,13.5
+															C11.3,13.6,11.3,13.6,11.3,13.5l0,7.8l6.1-3c0,0,0-0.1,0-0.1v-7.7L11.3,13.5z M2.6,18.3l6.1,3v-7.7c0,0,0-0.1,0-0.1l-6.1-3L2.6,18.3
+															C2.6,18.3,2.6,18.3,2.6,18.3z M4.3,8.4l5.7,2.8c0,0,0,0,0,0c0,0,0,0,0,0l5.7-2.8L10,5.6c0,0-0.1,0-0.1,0L4.3,8.4z"/>
+														</svg>
+													</div>
+													<div class="file-description">
+											<a href="#" class="file-download">
+												CAD Drawing
+											</a>
+											</div>
+										</div>
+									</div>
+									<div class="one-file">
+										<div class="file-info file-cad">
+										<div class="icon">
+														<svg width="20px" height="27px" viewBox="0 0 20 27">
+														<path d="M10,24.6c-0.3,0-0.7-0.1-1.1-0.2c0,0-0.1,0-0.1,0l-7.5-3.7C0.6,20.2,0,19.3,0,18.3c0,0,0,0,0-0.1v-9c0,0,0,0,0,0
+															C0,9.2,0,9,0,8.9C0.2,8.1,0.7,7.3,1.3,7l7.5-3.7c0.6-0.3,1.6-0.5,2.4,0L18.7,7c0.7,0.3,1.2,1.1,1.3,1.9c0,0.1,0,0.3,0,0.4
+															c0,0,0,0,0,0v9c0,0,0,0,0,0.1c0,1-0.6,1.9-1.3,2.3l0,0l-7.5,3.7c-0.1,0-0.2,0.1-0.3,0.1C10.6,24.5,10.3,24.6,10,24.6z M11.3,13.5
+															C11.3,13.6,11.3,13.6,11.3,13.5l0,7.8l6.1-3c0,0,0-0.1,0-0.1v-7.7L11.3,13.5z M2.6,18.3l6.1,3v-7.7c0,0,0-0.1,0-0.1l-6.1-3L2.6,18.3
+															C2.6,18.3,2.6,18.3,2.6,18.3z M4.3,8.4l5.7,2.8c0,0,0,0,0,0c0,0,0,0,0,0l5.7-2.8L10,5.6c0,0-0.1,0-0.1,0L4.3,8.4z"/>
+														</svg>
+													</div>
+													<div class="file-description">
+											<a href="#" class="file-download">
+												CAD Drawing
+											</a>
+											</div>
+										</div>
+									</div>
+									<div class="one-file">
+										<div class="file-info file-cad">
+										<div class="icon">
+														<svg width="20px" height="27px" viewBox="0 0 20 27">
+														<path d="M10,24.6c-0.3,0-0.7-0.1-1.1-0.2c0,0-0.1,0-0.1,0l-7.5-3.7C0.6,20.2,0,19.3,0,18.3c0,0,0,0,0-0.1v-9c0,0,0,0,0,0
+															C0,9.2,0,9,0,8.9C0.2,8.1,0.7,7.3,1.3,7l7.5-3.7c0.6-0.3,1.6-0.5,2.4,0L18.7,7c0.7,0.3,1.2,1.1,1.3,1.9c0,0.1,0,0.3,0,0.4
+															c0,0,0,0,0,0v9c0,0,0,0,0,0.1c0,1-0.6,1.9-1.3,2.3l0,0l-7.5,3.7c-0.1,0-0.2,0.1-0.3,0.1C10.6,24.5,10.3,24.6,10,24.6z M11.3,13.5
+															C11.3,13.6,11.3,13.6,11.3,13.5l0,7.8l6.1-3c0,0,0-0.1,0-0.1v-7.7L11.3,13.5z M2.6,18.3l6.1,3v-7.7c0,0,0-0.1,0-0.1l-6.1-3L2.6,18.3
+															C2.6,18.3,2.6,18.3,2.6,18.3z M4.3,8.4l5.7,2.8c0,0,0,0,0,0c0,0,0,0,0,0l5.7-2.8L10,5.6c0,0-0.1,0-0.1,0L4.3,8.4z"/>
+														</svg>
+													</div>
+													<div class="file-description">
+											<a href="#" class="file-download">
+												CAD Drawing
+											</a>
+											</div>
+										</div>
+									</div>
+									<div class="one-file">
+										<div class="file-info file-cad">
+										<div class="icon">
+														<svg width="20px" height="27px" viewBox="0 0 20 27">
+														<path d="M10,24.6c-0.3,0-0.7-0.1-1.1-0.2c0,0-0.1,0-0.1,0l-7.5-3.7C0.6,20.2,0,19.3,0,18.3c0,0,0,0,0-0.1v-9c0,0,0,0,0,0
+															C0,9.2,0,9,0,8.9C0.2,8.1,0.7,7.3,1.3,7l7.5-3.7c0.6-0.3,1.6-0.5,2.4,0L18.7,7c0.7,0.3,1.2,1.1,1.3,1.9c0,0.1,0,0.3,0,0.4
+															c0,0,0,0,0,0v9c0,0,0,0,0,0.1c0,1-0.6,1.9-1.3,2.3l0,0l-7.5,3.7c-0.1,0-0.2,0.1-0.3,0.1C10.6,24.5,10.3,24.6,10,24.6z M11.3,13.5
+															C11.3,13.6,11.3,13.6,11.3,13.5l0,7.8l6.1-3c0,0,0-0.1,0-0.1v-7.7L11.3,13.5z M2.6,18.3l6.1,3v-7.7c0,0,0-0.1,0-0.1l-6.1-3L2.6,18.3
+															C2.6,18.3,2.6,18.3,2.6,18.3z M4.3,8.4l5.7,2.8c0,0,0,0,0,0c0,0,0,0,0,0l5.7-2.8L10,5.6c0,0-0.1,0-0.1,0L4.3,8.4z"/>
+														</svg>
+													</div>
+													<div class="file-description">
+											<a href="#" class="file-download">
+												CAD Drawing
+											</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+			</div>
+		</section>
+		<!--END ALL DOWNLOADS SECTION -->
 		<!--START INSTALLATION SECTION -->
 		<section class="section installation-section" id="installation">
 			<div class="container-fluid section-container">
@@ -848,7 +1065,7 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 					</svg>
 												</h4></header>
 												<div class="expand-section internal-expand-body" data-expandsection="installation-files">
-													<div class="file-download-list">
+													<div class="file-download-list four-per-row">
 														<?php for($i = 0; $i<3;$i++){ ?>
 														<div class="one-file">
 															<div class="file-info file-doc">
@@ -865,31 +1082,10 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 </svg>
 													</div>
 													<div class="file-description">
-																<p class="file-name">Warranty</p>
 																<a href="#" class="file-download">
-																	Download PDF
+																	Installation Sheet
 																</a>
 																</div>
-															</div>
-														</div>
-														<div class="one-file">
-															<div class="file-info file-cad">
-															<div class="icon">
-														<svg width="20px" height="27px" viewBox="0 0 20 27">
-														<path d="M10,24.6c-0.3,0-0.7-0.1-1.1-0.2c0,0-0.1,0-0.1,0l-7.5-3.7C0.6,20.2,0,19.3,0,18.3c0,0,0,0,0-0.1v-9c0,0,0,0,0,0
-															C0,9.2,0,9,0,8.9C0.2,8.1,0.7,7.3,1.3,7l7.5-3.7c0.6-0.3,1.6-0.5,2.4,0L18.7,7c0.7,0.3,1.2,1.1,1.3,1.9c0,0.1,0,0.3,0,0.4
-															c0,0,0,0,0,0v9c0,0,0,0,0,0.1c0,1-0.6,1.9-1.3,2.3l0,0l-7.5,3.7c-0.1,0-0.2,0.1-0.3,0.1C10.6,24.5,10.3,24.6,10,24.6z M11.3,13.5
-															C11.3,13.6,11.3,13.6,11.3,13.5l0,7.8l6.1-3c0,0,0-0.1,0-0.1v-7.7L11.3,13.5z M2.6,18.3l6.1,3v-7.7c0,0,0-0.1,0-0.1l-6.1-3L2.6,18.3
-															C2.6,18.3,2.6,18.3,2.6,18.3z M4.3,8.4l5.7,2.8c0,0,0,0,0,0c0,0,0,0,0,0l5.7-2.8L10,5.6c0,0-0.1,0-0.1,0L4.3,8.4z"/>
-														</svg>
-													</div>
-														<div class="file-description">
-																<p class="file-name">Warranty</p>
-																<a href="#" class="file-download">
-																	Download CAD
-																</a>
-														</div>
-															
 															</div>
 														</div>
 														<?php } ?>
@@ -904,69 +1100,7 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 			</div>
 		</section>
 		<!--END INSTALLATION SECTION -->
-		<!--START ALL DOWNLOADS SECTION -->
-		<section class="section downloads-section" id="downloads">
-			<div class="container-fluid section-container">
-				<div class="section-content">
-							<header data-expandbutton="alldownloads" class="section-title action-expand-button"><h3 class="section-heading">All Downloads
-							<svg xmlns="http://www.w3.org/2000/svg" width="46px" height="25px" viewBox="0 0 46 25">
-						<path d="M0.6,0.6C0.2,1,0,1.5,0,2c0,0.5,0.2,1,0.6,1.4l21,21c0.8,0.8,2.1,0.8,2.8,0l21-21c0.8-0.8,0.8-2.1,0-2.8
-		c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
-					</svg>
-							</h3></header>
-							<div data-expandsection="alldownloads" class="expand-section">
-								<div class="file-download-list all-downloads">
-									<?php for($i = 0; $i<7;$i++){ ?>
-									<div class="one-file">
-										<div class="file-info file-doc">
-										<div class="icon">
-														<svg width="20px" height="27px" viewBox="0 0 20 27">
-<path d="M17.7,5h-2.1C15.3,5,15,4.7,15,4.3V2.4C15,1.1,14,0,12.7,0H2.3C1,0,0,1.1,0,2.4v21.9c0,1.3,1,2.4,2.3,2.4h15.4
-	c1.3,0,2.3-1.1,2.3-2.4V7.4C20,6.1,19,5,17.7,5 M18.3,24.3c0,0.4-0.3,0.7-0.6,0.7H2.3c-0.3,0-0.6-0.3-0.6-0.7V2.4
-	c0-0.4,0.3-0.7,0.6-0.7h10.4c0.3,0,0.6,0.3,0.6,0.7v1.9c0,1.3,1,2.4,2.3,2.4h2.1c0.3,0,0.6,0.3,0.6,0.7V24.3z M4.2,8.3h6.7
-	c0.5,0,0.8-0.4,0.8-0.8c0-0.5-0.4-0.8-0.8-0.8H4.2C3.7,6.7,3.3,7,3.3,7.5C3.3,8,3.7,8.3,4.2,8.3 M15.8,10H4.2
-	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,10.4,16.3,10,15.8,10 M15.8,13.3H4.2
-	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,13.7,16.3,13.3,15.8,13.3 M15.8,16.7H4.2
-	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,17,16.3,16.7,15.8,16.7 M15.8,20H4.2
-	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,20.4,16.3,20,15.8,20"/>
-</svg>
-													</div>
-													<div class="file-description">
-											<p class="file-name">Warranty</p>
-											<a href="#" class="file-download">
-												Download PDF
-											</a>
-											</div>
-										</div>
-									</div>
-									<div class="one-file">
-										<div class="file-info file-cad">
-										<div class="icon">
-														<svg width="20px" height="27px" viewBox="0 0 20 27">
-														<path d="M10,24.6c-0.3,0-0.7-0.1-1.1-0.2c0,0-0.1,0-0.1,0l-7.5-3.7C0.6,20.2,0,19.3,0,18.3c0,0,0,0,0-0.1v-9c0,0,0,0,0,0
-															C0,9.2,0,9,0,8.9C0.2,8.1,0.7,7.3,1.3,7l7.5-3.7c0.6-0.3,1.6-0.5,2.4,0L18.7,7c0.7,0.3,1.2,1.1,1.3,1.9c0,0.1,0,0.3,0,0.4
-															c0,0,0,0,0,0v9c0,0,0,0,0,0.1c0,1-0.6,1.9-1.3,2.3l0,0l-7.5,3.7c-0.1,0-0.2,0.1-0.3,0.1C10.6,24.5,10.3,24.6,10,24.6z M11.3,13.5
-															C11.3,13.6,11.3,13.6,11.3,13.5l0,7.8l6.1-3c0,0,0-0.1,0-0.1v-7.7L11.3,13.5z M2.6,18.3l6.1,3v-7.7c0,0,0-0.1,0-0.1l-6.1-3L2.6,18.3
-															C2.6,18.3,2.6,18.3,2.6,18.3z M4.3,8.4l5.7,2.8c0,0,0,0,0,0c0,0,0,0,0,0l5.7-2.8L10,5.6c0,0-0.1,0-0.1,0L4.3,8.4z"/>
-														</svg>
-													</div>
-													<div class="file-description">
-											<p class="file-name">Warranty</p>
-											<a href="#" class="file-download">
-												Download CAD
-											</a>
-											</div>
-										</div>
-									</div>
-									<?php } ?>
-								</div>
-							</div>
-						</div>
-			</div>
-		</section>
-		<!--END ALL DOWNLOADS SECTION -->
-
-
+		
 
 
 
@@ -975,10 +1109,14 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 		<section class="section videos-section" id="videos">
 			<div class="container-fluid section-container">
 				<div class="section-content">
-							<header data-expandbutton="videos-area" class="section-title">
-								<h3 class="section-heading">Videos</h3>
-							</header>
-							<div data-expandsection="videos-area">
+				<header data-expandbutton="videos-area" class="section-title action-expand-button">
+				<h3 class="section-heading">Videos
+							<svg xmlns="http://www.w3.org/2000/svg" width="46px" height="25px" viewBox="0 0 46 25">
+						<path d="M0.6,0.6C0.2,1,0,1.5,0,2c0,0.5,0.2,1,0.6,1.4l21,21c0.8,0.8,2.1,0.8,2.8,0l21-21c0.8-0.8,0.8-2.1,0-2.8
+		c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
+					</svg>
+							</h3></header>
+							<div data-expandsection="videos-area" class="expand-section expanded-desktop">
 								<div class="inner-info">
 									<div class="row">
 										<div class="col-xs-12">
@@ -1042,7 +1180,7 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 						<div class="col-xs-12">
 							<div class="inner-wrap">
 								<header data-expandbutton="product-suggestion" class="section-title text-center"><h3 class="section-heading text-cursive">Complete the look</h3></header>
-								<div data-expandsection="product-suggestion" class="expand-section">
+								<div data-expandsection="product-suggestion" class="">
 								<div class="product-suggestion-slider">
 									<?php for($i = 0; $i<7;$i++){ ?>
 									<div class="one-slide">
@@ -1280,4 +1418,8 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 		</div>		
 	</div>
 	<!-- END Videos Lightbox -->
+	<a href="#back-to-top" class="back-to-top"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="46px" height="25px" viewBox="0 0 46 25">
+						<path d="M0.6,0.6C0.2,1,0,1.5,0,2c0,0.5,0.2,1,0.6,1.4l21,21c0.8,0.8,2.1,0.8,2.8,0l21-21c0.8-0.8,0.8-2.1,0-2.8
+		c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
+					</svg></div><span class="sr-only">Back to top</span></a>
 </div><!--END PRODUCT DETAIL -->

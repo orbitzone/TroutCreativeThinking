@@ -664,9 +664,12 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,20.4,16.3,20,15.8,20"/>
 </svg>
 													</div>
-																<a href="#" class="file-download">
-																	Technical &amp; Warranty Sheet
-																</a>
+													<div class="file-description">
+													<a href="#" class="file-download">
+														Technical &amp; Warranty Sheet
+													</a>
+													</div>
+																
 															</div>
 														</div>
 														<div class="one-file">
@@ -680,9 +683,11 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 															C2.6,18.3,2.6,18.3,2.6,18.3z M4.3,8.4l5.7,2.8c0,0,0,0,0,0c0,0,0,0,0,0l5.7-2.8L10,5.6c0,0-0.1,0-0.1,0L4.3,8.4z"/>
 														</svg>
 													</div>
-																<a href="#" class="file-download">
-																	Download CAD
-																</a>
+																<div class="file-description">
+													<a href="#" class="file-download">
+														Technical &amp; Warranty Sheet
+													</a>
+													</div>
 															</div>
 														</div>
 														<?php } ?>
@@ -817,10 +822,15 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 		c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 					</svg>
 							</h3></header>
-							<div data-expandsection="alldownloads" class="expand-section">
+							<div data-expandsection="alldownloads" class="expand-section expanded-desktop">
+							<div class="filters-wrap">
+								<div class="filters">
+									<a href="#" data-filter="brochure" class="filter">Brochures &amp; Forms</a> <a href="#" class="filter" data-filter="technical">Technical</a>
+								</div>
+							</div>
 								<div class="file-download-list all-downloads">
 									<?php for($i = 0; $i<7;$i++){ ?>
-									<div class="one-file">
+									<div class="one-file" data-group="technical">
 										<div class="file-info file-doc">
 										<div class="icon">
 														<svg width="20px" height="27px" viewBox="0 0 20 27">
@@ -842,7 +852,7 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 											</div>
 										</div>
 									</div>
-									<div class="one-file">
+									<div class="one-file" data-group="brochure">
 										<div class="file-info file-cad">
 										<div class="icon">
 														<svg width="20px" height="27px" viewBox="0 0 20 27">
@@ -1023,4 +1033,9 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 		</div>		
 	</div>
 	<!-- END Videos Lightbox -->
+
+	<a href="#back-to-top" class="back-to-top"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="46px" height="25px" viewBox="0 0 46 25">
+						<path d="M0.6,0.6C0.2,1,0,1.5,0,2c0,0.5,0.2,1,0.6,1.4l21,21c0.8,0.8,2.1,0.8,2.8,0l21-21c0.8-0.8,0.8-2.1,0-2.8
+		c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
+					</svg></div><span class="sr-only">Back to top</span></a>
 </div><!--END PRODUCT DETAIL -->

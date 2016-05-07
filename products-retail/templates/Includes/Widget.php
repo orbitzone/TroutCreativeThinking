@@ -169,30 +169,29 @@
 			<div class="itemlist-section">
 				<ul class="item-list">
 				<?php for($i=1;$i<5;$i++){ ?>
-					<li class="one-item">
-						<div class="item-block">
-							<div class="item-info">
-								<span class="product-thumbnail">
-									<img class="img-responsive" src="templates/images/product-detail/product-image<?php echo $i ?>.jpg" alt="item">
-								</span>
-								<span class="item-details">
-									<p class="product-name">Thermann Electical Storage</p>
-									<p class="product-code">0000000<?php echo $i ?></p>
-									<p class="product-description">Electric Hot Water Unit 250L</p>
-									<div class="price price-my"><span class="value">$406.32</span></div>									
-								</span>
-								<span class="remove-from-list">
-									<svg xmlns="http://www.w3.org/2000/svg" width="35.5px" height="50px" viewBox="0 0 35.5 50">
-										<path d="M11.6,0h12.2v2.1H11.6V0z"/>
-										<path d="M33.3,4.4h-31H0v2.1h2.2V50h31V6.5h2.2V4.4H33.3z M13.8,38h-2.1V14.9h2.1V38z M23.8,38h-2.1V14.9h2.1V38z"/>
-									</svg>
-								</span>
-								<div class="clear-fix"></div>
+					<li>
+						<div class="product">
+							<div class="product-thumbnail">
+								<img class="img-responsive" src="templates/images/product-detail/product-image<?php echo $i ?>.jpg" alt="item">
 							</div>
+							<div class="product-details">
+								<div class="product-name">AXA Cento</div>
+								<div class="product-code">0000000<?php echo $i ?></div>
+								<div class="product-description">Electric Hot Water Unit 250L</div>
+								<div class="product-price">$406.32</div>
+							</div>
+							<button class="remove" type="button"><svg width="10px" height="10px" viewBox="0 0 10 10">
+	<path d="M9.8,8.6L8.6,9.8C8.5,9.9,8.3,10,8,10c-0.2,0-0.4-0.1-0.6-0.2L5,7.3L2.5,9.8C2.4,9.9,2.2,10,2,10S1.5,9.9,1.4,9.8L0.2,8.6
+		C0.1,8.5,0,8.3,0,8c0-0.2,0.1-0.4,0.2-0.6L2.7,5L0.2,2.5C0.1,2.4,0,2.2,0,2s0.1-0.4,0.2-0.6l1.1-1.1C1.5,0.1,1.7,0,2,0
+		s0.4,0.1,0.6,0.2L5,2.7l2.5-2.5C7.6,0.1,7.8,0,8,0c0.2,0,0.4,0.1,0.6,0.2l1.1,1.1C9.9,1.5,10,1.7,10,2S9.9,2.4,9.8,2.5L7.3,5
+		l2.5,2.5C9.9,7.6,10,7.8,10,8C10,8.3,9.9,8.5,9.8,8.6z"/>
+</svg><span class="sr-only">close</span></button>
+							<button type="button" class="btn add-to-cart-btn">ADD</button>							
 						</div>
 					</li>
 				<?php } ?>
 				</ul>
+				<div class="actions"><button type="button" class="btn add-all-to-cart">Add all to cart</button></div>				
 			</div>
 			<!--END TOOL BAR ITEMLIST-->			
 		</div>
@@ -204,15 +203,7 @@
 
 
 		<!--START TAKE A TOUR FOOTER-->
-		<div class="take-a-tour-box">
-		<div class="close">
-			<svg xmlns="http://www.w3.org/2000/svg" width="67.5px" height="67.5px" viewBox="0 0 67.5 67.5">
-<path d="M64.8,67.5c-0.7,0-1.4-0.3-1.9-0.8L0.8,4.6c-1.1-1.1-1.1-2.8,0-3.9c1.1-1.1,2.8-1.1,3.9,0l62.1,62.1c1.1,1.1,1.1,2.8,0,3.9
-	C66.2,67.2,65.5,67.5,64.8,67.5z"/>
-<path d="M2.7,67.5c-0.7,0-1.4-0.3-1.9-0.8c-1.1-1.1-1.1-2.8,0-3.9L62.9,0.8c1.1-1.1,2.8-1.1,3.9,0c1.1,1.1,1.1,2.8,0,3.9L4.6,66.7
-	C4.1,67.2,3.4,67.5,2.7,67.5z"/>
-</svg>
-		</div>
+		<div class="take-a-tour-box shopping-cart-view">
 			<div class="tour-info-small">
 			<div class="close">
 				<svg xmlns="http://www.w3.org/2000/svg" width="67.5px" height="67.5px" viewBox="0 0 67.5 67.5">

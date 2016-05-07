@@ -1,12 +1,15 @@
 <div id="shopping-cart-widget">
 	<aside>
-		<button type="button">
-		<span class="cart-items-wrap">
-			<span class="cart-items">1</span>
-		</span>
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 34" id="shape-cart"><title>cart</title> <path d="M34.2,33.5c2,0,3.7-1.7,3.7-3.7c0-2.1-1.7-3.7-3.7-3.7c-2,0-3.7,1.7-3.7,3.7S32.2,33.5,34.2,33.5"/> <path d="M13.8,33.5c2,0,3.7-1.7,3.7-3.7c0-2.1-1.7-3.7-3.7-3.7c-2,0-3.7,1.7-3.7,3.7S11.8,33.5,13.8,33.5"/> <path d="M13.8,28h20.4c0.5,0,0.9-0.4,0.9-0.9s-0.4-0.9-0.9-0.9H14.6L8.8,1.2C8.7,0.8,8.3,0.5,7.9,0.5H1.4c-0.5,0-0.9,0.4-0.9,0.9
-	c0,0.5,0.4,0.9,0.9,0.9h5.8l5.7,24.9C13,27.7,13.4,28,13.8,28z"/> <path d="M12.9,24.2H37c0.4,0,0.8-0.3,0.9-0.6l5.6-16.8c0.1-0.3,0-0.6-0.1-0.8c-0.2-0.2-0.5-0.4-0.8-0.4H9.2C8.7,5.6,8.3,6,8.3,6.6
-	c0,0.5,0.4,0.9,0.9,0.9h32.1l-4.9,14.9H12.9c-0.5,0-0.9,0.4-0.9,0.9C12,23.8,12.4,24.2,12.9,24.2z"/></svg></button>
+		<button type="button" class="shopping-cart">
+			<span class="icon">
+				<span class="cart-items-wrap">
+					<span class="cart-items">1</span>
+				</span>
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 34" id="shape-cart"><title>cart</title> <path d="M34.2,33.5c2,0,3.7-1.7,3.7-3.7c0-2.1-1.7-3.7-3.7-3.7c-2,0-3.7,1.7-3.7,3.7S32.2,33.5,34.2,33.5"/> <path d="M13.8,33.5c2,0,3.7-1.7,3.7-3.7c0-2.1-1.7-3.7-3.7-3.7c-2,0-3.7,1.7-3.7,3.7S11.8,33.5,13.8,33.5"/> <path d="M13.8,28h20.4c0.5,0,0.9-0.4,0.9-0.9s-0.4-0.9-0.9-0.9H14.6L8.8,1.2C8.7,0.8,8.3,0.5,7.9,0.5H1.4c-0.5,0-0.9,0.4-0.9,0.9
+			c0,0.5,0.4,0.9,0.9,0.9h5.8l5.7,24.9C13,27.7,13.4,28,13.8,28z"/> <path d="M12.9,24.2H37c0.4,0,0.8-0.3,0.9-0.6l5.6-16.8c0.1-0.3,0-0.6-0.1-0.8c-0.2-0.2-0.5-0.4-0.8-0.4H9.2C8.7,5.6,8.3,6,8.3,6.6
+			c0,0.5,0.4,0.9,0.9,0.9h32.1l-4.9,14.9H12.9c-0.5,0-0.9,0.4-0.9,0.9C12,23.8,12.4,24.2,12.9,24.2z"/></svg>
+			</span>
+	</button>
 	</aside>
 	<section class="shopping-cart-content scrollable">
 		<div class="close close-widget">
@@ -19,10 +22,8 @@
 		</div>
 		
 		<!--START TAKE A TOUR SECTION -->
-		<div class="tour-info out">
-		<header><h3 class="main-title">Your List Toolbar</h3>
-		</header>
-
+		<div class="tour-info shopping-cart-view">
+			<div class="list-header"><h3 class="main-title">Your List Toolbar</h3></div>
 			<div class="tour-intro">
 				<p>Welcome to the new toolbar that allows you to create product lists easily.<br/> You can import products from saved lists or create a completly new one. Then convert the list to a quote or order.</p>
 			</div>
@@ -50,11 +51,11 @@
 
 
 		<!--START SEARCH LIST-->
-		<div class="shopping-cart-search-list out">
+		<div class="shopping-cart-search-list out shopping-cart-view">
 			<!--START LIST HEADER-->
 			<div class="list-header">
 				<div class="title">
-					<h3><a href="#" class="switch-btn">Switch Product List</a></h3>
+					<h3 class="switch-btn">Switch Product List</h3>
 				</div>
 				<div class="current-list">
 				<button type="button" class="switch-btn">
@@ -67,12 +68,12 @@
 				<div class="search-box">
 					<form action="" class="search-form">
 						<div class="search-input">
-							<input type="text" name="search-list" placeholder="Search List" />
+							<input type="text" name="search-list" autocomplete="off" placeholder="Search List" />
 							<button type="button" class="btn blue-button">
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="20px" height="20px"><title>search</title> <circle fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="2.5" stroke-miterlimit="10" cx="14.6" cy="14.6" r="13.3"></circle> <line fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-miterlimit="10" x1="24.1" y1="24" x2="38.8" y2="38.8"></line></svg>
 							</button>
 						</div>						
-						<div class="options">
+						<div class="checkbox-options-set">
 							<ul class="list-inline">
 								<li>
 									<input type="checkbox" name="order" id="search-list-order"/>
@@ -114,6 +115,7 @@
 					</div>
 					<div class="sort-by">
 						<select name="" id="">
+							<option value="">Sort By</option>
 							<option value="">Name</option>
 							<option value="">Date</option>
 						</select>
@@ -170,11 +172,12 @@
 
 
 		<!--START PRODUCT LIST-->
-		<div class="shopping-cart-product-list">
+		<div class="shopping-cart-product-list out shopping-cart-view">
 			<!--START LIST HEADER-->
 			<div class="list-header">
 				<div class="title">
-					<h3>123 Newry Street</h3>
+					<h3 class="no-border editable-text">123 Newry Street</h3>
+					<input type="text" name="listName" class="editable-text-field" value="123 Newry Street"/>
 				</div>
 				<button type="button" class="switch-btn">
 					<svg width="25" height="19" viewBox="0 0 25 19">
@@ -295,12 +298,8 @@
 		<!--END PRODUCT LIST-->
 
 		
-
-		
-
-
 		<!--START TAKE A TOUR FOOTER-->
-		<div class="take-a-tour-box">
+		<div class="take-a-tour-box out shopping-cart-view">
 		<div class="close">
 			<svg xmlns="http://www.w3.org/2000/svg" width="67.5px" height="67.5px" viewBox="0 0 67.5 67.5">
 <path d="M64.8,67.5c-0.7,0-1.4-0.3-1.9-0.8L0.8,4.6c-1.1-1.1-1.1-2.8,0-3.9c1.1-1.1,2.8-1.1,3.9,0l62.1,62.1c1.1,1.1,1.1,2.8,0,3.9

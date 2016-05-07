@@ -2073,30 +2073,34 @@ Slick slider arrow
   -webkit-transition: 0.3s max-height ease-out;
   -o-transition: 0.3s max-height ease-out;
   transition: 0.3s max-height ease-out;
+  position: relative;
+  z-index: 1;
 }
-#product-pages #shopping-cart-widget .shopping-cart-content .itemlist-section .item-list .one-item .item-block .item-footer .edit-state:before,
-#product-pages #shopping-cart-widget .shopping-cart-content .itemlist-section .item-list .one-item .item-block .item-footer .edit-state:after {
+#product-pages #shopping-cart-widget .shopping-cart-content .itemlist-section .item-list .one-item .item-block .item-footer .edit-state:before {
+  position: absolute;
   content: " ";
-  display: table;
-}
-#product-pages #shopping-cart-widget .shopping-cart-content .itemlist-section .item-list .one-item .item-block .item-footer .edit-state:after {
-  clear: both;
+  width: 50%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #e2e2e2;
+  z-index: -1;
 }
 #product-pages #shopping-cart-widget .shopping-cart-content .itemlist-section .item-list .one-item .item-block .item-footer .edit-state .edit-set {
   background: #e2e2e2;
 }
 #product-pages #shopping-cart-widget .shopping-cart-content .itemlist-section .item-list .one-item .item-block .item-footer .edit-state .prices {
   background: #f4f4f4;
-  padding: 10px;
-}
-@media (min-width: 768px) {
-  #product-pages #shopping-cart-widget .shopping-cart-content .itemlist-section .item-list .one-item .item-block .item-footer .edit-state .prices {
-    padding: 15px 0;
-  }
+  padding: 15px 0;
 }
 #product-pages #shopping-cart-widget .shopping-cart-content .itemlist-section .item-list .one-item .item-block .item-footer .edit-state .prices .price {
-  padding-right: 20px;
+  padding-right: 10px;
   margin-bottom: 12px;
+}
+@media (min-width: 321px) {
+  #product-pages #shopping-cart-widget .shopping-cart-content .itemlist-section .item-list .one-item .item-block .item-footer .edit-state .prices .price {
+    adding-right: 20px;
+  }
 }
 #product-pages #shopping-cart-widget .shopping-cart-content .itemlist-section .item-list .one-item .item-block .item-footer .edit-state .prices .price:last-child {
   margin-bottom: 0;
@@ -2109,16 +2113,26 @@ Slick slider arrow
   font-family: "Gotham A", "Gotham B";
   font-style: normal;
   font-weight: 400;
-  font-size: 9px;
+  font-size: 8px;
+}
+@media (min-width: 321px) {
+  #product-pages #shopping-cart-widget .shopping-cart-content .itemlist-section .item-list .one-item .item-block .item-footer .edit-state .prices .label {
+    font-size: 9px;
+  }
 }
 #product-pages #shopping-cart-widget .shopping-cart-content .itemlist-section .item-list .one-item .item-block .item-footer .edit-state .prices .value {
   color: #2aa9e3;
   font-family: "Gotham A", "Gotham B";
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   vertical-align: middle;
   margin-left: 0.02%;
+}
+@media (min-width: 321px) {
+  #product-pages #shopping-cart-widget .shopping-cart-content .itemlist-section .item-list .one-item .item-block .item-footer .edit-state .prices .value {
+    font-size: 18px;
+  }
 }
 @media (min-width: 768px) {
   #product-pages #shopping-cart-widget .shopping-cart-content .itemlist-section .item-list .one-item .item-block .item-footer .edit-state .prices .label {
@@ -2159,7 +2173,7 @@ Slick slider arrow
   color: #0776aa;
   width: 100%;
   height: 35px;
-  font-size: 12px;
+  font-size: 16px;
   border: solid 1px #bdbdbd;
   background-color: #f4f4f4;
   text-align: center;
@@ -2179,7 +2193,12 @@ Slick slider arrow
 }
 #product-pages #shopping-cart-widget .shopping-cart-content .itemlist-section .item-list .one-item .item-block .item-footer .edit-state .quantity-set {
   float: left;
-  width: 50.2326%;
+  width: 49%;
+}
+@media (min-width: 768px) {
+  #product-pages #shopping-cart-widget .shopping-cart-content .itemlist-section .item-list .one-item .item-block .item-footer .edit-state .quantity-set {
+    width: 50.2326%;
+  }
 }
 #product-pages #shopping-cart-widget .shopping-cart-content .itemlist-section .item-list .one-item .item-block .item-footer .edit-state .quantity-set label,
 #product-pages #shopping-cart-widget .shopping-cart-content .itemlist-section .item-list .one-item .item-block .item-footer .edit-state .quantity-set .set-name {
@@ -2222,7 +2241,7 @@ Slick slider arrow
   font-weight: 400;
   margin: 0;
   height: 100%;
-  font-size: 12px;
+  font-size: 11px;
   line-height: 35px;
   -moz-transition: 0.5s all ease-out;
   -ms-transition: 0.5s all ease-out;
@@ -2258,8 +2277,13 @@ Slick slider arrow
   transition: 0.3s opacity ease-out;
 }
 #product-pages #shopping-cart-widget .shopping-cart-content .itemlist-section .item-list .one-item .item-block .item-footer .edit-state .quantity-updated svg {
-  width: 30px;
+  width: 20px;
   height: 24px;
+}
+@media (min-width: 768px) {
+  #product-pages #shopping-cart-widget .shopping-cart-content .itemlist-section .item-list .one-item .item-block .item-footer .edit-state .quantity-updated svg {
+    width: 30px;
+  }
 }
 #product-pages #shopping-cart-widget .shopping-cart-content .itemlist-section .item-list .one-item .item-block .item-footer .edit-state .quantity-updated svg path {
   stroke: #54f276;
@@ -2281,6 +2305,7 @@ Slick slider arrow
   display: block;
   clear: both;
   font-size: 9px;
+  line-height: 1;
   text-transform: uppercase;
   color: #b4b4b4;
   text-align: left;
@@ -6041,12 +6066,7 @@ Slick slider arrow
 }
 #product-pages .main-section#product-detail .section .filters-wrap {
   position: relative;
-  padding: 0 30px;
-}
-@media (min-width: 768px) {
-  #product-pages .main-section#product-detail .section .filters-wrap {
-    padding: 0;
-  }
+  padding: 0;
 }
 @media (min-width: 1200px) {
   #product-pages .main-section#product-detail .section .filters-wrap {
@@ -6068,11 +6088,16 @@ Slick slider arrow
   text-transform: uppercase;
   display: inline-block;
   padding: 0 10px;
-  font-size: 15px;
+  font-size: 13px;
   color: #888888;
   font-family: "Gotham A", "Gotham B";
   font-style: normal;
   font-weight: 500;
+}
+@media (min-width: 768px) {
+  #product-pages .main-section#product-detail .section .filters .filter {
+    font-size: 15px;
+  }
 }
 #product-pages .main-section#product-detail .section .filters .filter.filtered {
   color: #0776aa;

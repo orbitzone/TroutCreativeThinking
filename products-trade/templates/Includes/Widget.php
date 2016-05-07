@@ -22,7 +22,7 @@
 		</div>
 		
 		<!--START TAKE A TOUR SECTION -->
-		<div class="tour-info shopping-cart-view">
+		<div class="tour-info shopping-cart-view in">
 			<div class="list-header"><h3 class="main-title">Your List Toolbar</h3></div>
 			<div class="tour-intro">
 				<p>Welcome to the new toolbar that allows you to create product lists easily.<br/> You can import products from saved lists or create a completly new one. Then convert the list to a quote or order.</p>

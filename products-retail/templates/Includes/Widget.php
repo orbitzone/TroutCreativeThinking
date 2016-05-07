@@ -32,7 +32,7 @@
 		</div>
 		
 		<!--START TAKE A TOUR SECTION -->
-		<div class="tour-info shopping-cart-view">
+		<div class="tour-info shopping-cart-view in">
 			<div class="list-header">
 				<div class="title">
 					<h3>Welcome!</h3>

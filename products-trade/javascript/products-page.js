@@ -677,9 +677,14 @@ var product_pages = {
             if(!$(e.target).parents('#shopping-cart-widget .shopping-cart-content') && !$(e.target).attr('id')=='#shopping-cart-widget'){
                 e.preventDefault();
             }else{                
-             if($('#shopping-cart-widget .shopping-cart-content .in').height() < $(window).height()){
+                var height = window.innerHeight ? window.innerHeight : $(window).height();
+                if($(window).width() < 768){
+                    height = height - $('#shopping-cart-widget aside').height();
+                }
+             if($('#shopping-cart-widget .shopping-cart-content .in').height() < height){
                  e.preventDefault();
-               }
+                
+                }
             }
 
         });
@@ -755,7 +760,7 @@ var product_pages = {
         $('#shopping-cart-widget .shopping-cart-product-list .editable-text').on('click',function(){
             $(this).hide();
             var text = $(this).text();
-            $(this).parent().find('.editable-text-field').val(text).show().focus();
+            $(this).parent().find('.editable-text-field').val(text).show().focus();            
         });
         $('#shopping-cart-widget .shopping-cart-product-list .editable-text-field').on('change focusout', function(){
             $(this).hide();
@@ -780,7 +785,8 @@ var product_pages = {
                 //TweenMax.to($('#shopping-cart-widget .shopping-cart-content'),0.5,{x: 0, opacity: 1, height: height});
                 $('.product-detail-wrap, aside').addClass('disable-scrolling');
                 if(width < 768){
-                    height =  $(window).height() - $('#shopping-cart-widget aside').height();
+                    height = window.innerHeight ? window.innerHeight : $(window).height();
+                    height = height - $('#shopping-cart-widget aside').height();
                     $('#shopping-cart-widget .shopping-cart-content').height(0);
                     TweenMax.to($('#shopping-cart-widget .shopping-cart-content'),0.5,{x: 0, opacity: 1, height: height});
                 }else{
@@ -920,7 +926,9 @@ var product_pages = {
             }else{
                 $('#shopping-cart-widget .one-item').removeClass('editing');
                 $(this).parent().parent().parent().addClass('editing');
-                $(this).parent().parent().parent().find('.quantity-number').focus();
+                if(!deviceMobile){
+                    $(this).parent().parent().parent().find('.quantity-number').focus();
+                }
             }        
         });
         //Delete item action

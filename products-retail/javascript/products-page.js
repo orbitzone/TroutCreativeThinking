@@ -677,9 +677,14 @@ var product_pages = {
             if(!$(e.target).parents('#shopping-cart-widget .shopping-cart-content') && !$(e.target).attr('id')=='#shopping-cart-widget'){
                 e.preventDefault();
             }else{                
-             if($('#shopping-cart-widget .shopping-cart-content .in').height() < $(window).height()){
+                var height = window.innerHeight ? window.innerHeight : $(window).height();
+                if($(window).width() < 768){
+                    height = height - $('#shopping-cart-widget aside').height();
+                }
+             if($('#shopping-cart-widget .shopping-cart-content .in').height() < height){
                  e.preventDefault();
-               }
+                
+                }
             }
 
         });
@@ -755,7 +760,7 @@ var product_pages = {
         $('#shopping-cart-widget .shopping-cart-product-list .editable-text').on('click',function(){
             $(this).hide();
             var text = $(this).text();
-            $(this).parent().find('.editable-text-field').val(text).show().focus();
+            $(this).parent().find('.editable-text-field').val(text).show().focus();            
         });
         $('#shopping-cart-widget .shopping-cart-product-list .editable-text-field').on('change focusout', function(){
             $(this).hide();
@@ -780,7 +785,8 @@ var product_pages = {
                 //TweenMax.to($('#shopping-cart-widget .shopping-cart-content'),0.5,{x: 0, opacity: 1, height: height});
                 $('.product-detail-wrap, aside').addClass('disable-scrolling');
                 if(width < 768){
-                    height =  $(window).height() - $('#shopping-cart-widget aside').height();
+                    height = window.innerHeight ? window.innerHeight : $(window).height();
+                    height = height - $('#shopping-cart-widget aside').height();
                     $('#shopping-cart-widget .shopping-cart-content').height(0);
                     TweenMax.to($('#shopping-cart-widget .shopping-cart-content'),0.5,{x: 0, opacity: 1, height: height});
                 }else{
@@ -920,7 +926,9 @@ var product_pages = {
             }else{
                 $('#shopping-cart-widget .one-item').removeClass('editing');
                 $(this).parent().parent().parent().addClass('editing');
-                $(this).parent().parent().parent().find('.quantity-number').focus();
+                if(!deviceMobile){
+                    $(this).parent().parent().parent().find('.quantity-number').focus();
+                }
             }        
         });
         //Delete item action
@@ -1273,7 +1281,7 @@ var product_pages = {
         $('.downloads-section .filter').on('click', function(){
             if($(this).hasClass('filtered')){
                 $('.downloads-section .filter').removeClass('filtered');
-                $('.all-downloads').find('.one-file').show();
+                $('.all-downloads').find('.one-file').removeClass('hide').addClass('show');
                 if($(window).width() < 768){
                     $('.all-downloads').slick('slickUnfilter');                    
                 }
@@ -1282,8 +1290,8 @@ var product_pages = {
                 $(this).addClass('filtered');
                 var filter = $(this).data('filter');
                 if($(window).width() > 767){
-                    $('.all-downloads').find('.one-file').hide();
-                    $('.all-downloads').find('[data-group='+filter+']').show();
+                    $('.all-downloads').find('.one-file').addClass('hide').removeClass('show');
+                    $('.all-downloads').find('[data-group='+filter+']').removeClass('hide').addClass('show');
                 }else{
                     $('.all-downloads').slick('slickUnfilter');      
                     $('.all-downloads').slick('slickFilter','[data-group='+filter+']');
@@ -1349,8 +1357,8 @@ var product_pages = {
                     $(".file-download-list").slick('unslick');
                     var filter = $('.downloads-section .filters .filtered').data('filter');
                     if(filter){
-                        $('.all-downloads').find('.one-file').hide();
-                        $('.all-downloads').find('[data-group='+filter+']').show();
+                        $('.all-downloads').find('.one-file').addClass('hide').removeClass('show');
+                        $('.all-downloads').find('[data-group='+filter+']').removeClass('hide').addClass('show');
                     }
                 }
           }

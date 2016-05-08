@@ -255,8 +255,52 @@
 				}
 			}	
 		}
-		.close{
-			opacity: 1;
+		.shopping-cart-content{
+			@media (min-width: @screen-sm){
+				.close{
+					opacity: 1;
+				}
+			}
+		}
+		aside{
+		 border-bottom: 1px solid @widget-content-bg;
+		 .close{
+		 	top: 12px;
+    	right: 10px;
+		 	opacity: 1;
+		 	@media (min-width: @screen-sm){
+		 		display: none;
+		 	}
+		 }
+		 button.open{
+			&:before{
+					content: " ";
+					display: block;
+					width: 20px;
+					height: 20px;
+					.transform(rotate(45deg));
+					position: absolute;
+					left: 50%;
+					bottom: -16px;
+					margin-left: -10px;
+					background: @widget-content-bg;
+					@media (min-width: @screen-sm){
+						top: 50%;
+						left: inherit;
+						bottom: inherit;
+						margin-left: 0;
+						right: -18px;
+					}
+					@media (min-width: @screen-lg){
+						right: -14px;
+					}
+				}
+				&:first-child{
+					&:before{
+						margin-top: -10px;
+					}
+				}
+			}
 		}		
 	}
 	&.fixed{
@@ -310,6 +354,7 @@
 			overflow: hidden;
 		}
 		@media (min-width: @screen-sm){
+			border-bottom: none;
 			padding-top: 0;
 			position: absolute;
 			top: 0;
@@ -402,6 +447,7 @@
 		    opacity: 1;
 		    width: 17px;
 		    height: 17px;
+		    .transition(.3s opacity);
 		    @media (min-width: @screen-sm){
 		    	top: -5px;
 		    right: -4px;
@@ -409,6 +455,9 @@
 		    @media (min-width: @screen-lg){
 		    	top: -2px;
 		    right: -7px;
+		    }
+		    &.no-items{
+		    	opacity: 0;
 		    }
 		    .cart-items{
 		    	position: absolute;
@@ -432,33 +481,6 @@
 				}
 			}
 			&.open{
-				&:before{
-					content: " ";
-					display: block;
-					width: 20px;
-					height: 20px;
-					.transform(rotate(45deg));
-					position: absolute;
-					left: 50%;
-					bottom: -16px;
-					margin-left: -10px;
-					background: @widget-content-bg;
-					@media (min-width: @screen-sm){
-						top: 50%;
-						left: inherit;
-						bottom: inherit;
-						margin-left: 0;
-						right: -18px;
-					}
-					@media (min-width: @screen-lg){
-						right: -14px;
-					}
-				}
-				&:first-child{
-					&:before{
-						margin-top: -10px;
-					}
-				}
 				svg{
 					fill: @widget-aside-button-active-color;
 				}

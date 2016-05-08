@@ -1146,8 +1146,56 @@ Slick slider arrow
     transform: translateX(0);
   }
 }
-#product-pages #shopping-cart-widget.open .close {
+@media (min-width: 768px) {
+  #product-pages #shopping-cart-widget.open .shopping-cart-content .close {
+    opacity: 1;
+  }
+}
+#product-pages #shopping-cart-widget.open aside {
+  border-bottom: 1px solid #4faa98;
+}
+#product-pages #shopping-cart-widget.open aside .close {
+  top: 12px;
+  right: 10px;
   opacity: 1;
+}
+@media (min-width: 768px) {
+  #product-pages #shopping-cart-widget.open aside .close {
+    display: none;
+  }
+}
+#product-pages #shopping-cart-widget.open aside button.open:before {
+  content: " ";
+  display: block;
+  width: 20px;
+  height: 20px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  left: 50%;
+  bottom: -16px;
+  margin-left: -10px;
+  background: #4faa98;
+}
+@media (min-width: 768px) {
+  #product-pages #shopping-cart-widget.open aside button.open:before {
+    top: 50%;
+    left: inherit;
+    bottom: inherit;
+    margin-left: 0;
+    right: -18px;
+  }
+}
+@media (min-width: 1200px) {
+  #product-pages #shopping-cart-widget.open aside button.open:before {
+    right: -14px;
+  }
+}
+#product-pages #shopping-cart-widget.open aside button.open:first-child:before {
+  margin-top: -10px;
 }
 #product-pages #shopping-cart-widget.fixed {
   position: fixed;
@@ -1205,6 +1253,7 @@ Slick slider arrow
 }
 @media (min-width: 768px) {
   #product-pages #shopping-cart-widget aside {
+    border-bottom: none;
     padding-top: 0;
     position: absolute;
     top: 0;
@@ -1318,6 +1367,11 @@ Slick slider arrow
   opacity: 1;
   width: 17px;
   height: 17px;
+  -moz-transition: 0.3s opacity;
+  -ms-transition: 0.3s opacity;
+  -webkit-transition: 0.3s opacity;
+  -o-transition: 0.3s opacity;
+  transition: 0.3s opacity;
 }
 @media (min-width: 768px) {
   #product-pages #shopping-cart-widget aside button .cart-items-wrap {
@@ -1330,6 +1384,9 @@ Slick slider arrow
     top: -2px;
     right: -7px;
   }
+}
+#product-pages #shopping-cart-widget aside button .cart-items-wrap.no-items {
+  opacity: 0;
 }
 #product-pages #shopping-cart-widget aside button .cart-items-wrap .cart-items {
   position: absolute;
@@ -1354,39 +1411,6 @@ Slick slider arrow
     width: 44px;
     height: 35px;
   }
-}
-#product-pages #shopping-cart-widget aside button.open:before {
-  content: " ";
-  display: block;
-  width: 20px;
-  height: 20px;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-  position: absolute;
-  left: 50%;
-  bottom: -16px;
-  margin-left: -10px;
-  background: #4faa98;
-}
-@media (min-width: 768px) {
-  #product-pages #shopping-cart-widget aside button.open:before {
-    top: 50%;
-    left: inherit;
-    bottom: inherit;
-    margin-left: 0;
-    right: -18px;
-  }
-}
-@media (min-width: 1200px) {
-  #product-pages #shopping-cart-widget aside button.open:before {
-    right: -14px;
-  }
-}
-#product-pages #shopping-cart-widget aside button.open:first-child:before {
-  margin-top: -10px;
 }
 #product-pages #shopping-cart-widget aside button.open svg {
   fill: white;
@@ -4918,8 +4942,18 @@ Slick slider arrow
   position: relative;
   top: -4px;
 }
-#product-pages .main-section#product-detail .progress-button button:hover svg {
-  fill: #6dc8b6;
+#product-pages .main-section#product-detail .progress-button button:hover {
+  color: white;
+}
+@media (min-width: 768px) {
+  #product-pages .main-section#product-detail .progress-button button:hover {
+    color: #6dc8b6;
+  }
+}
+@media (min-width: 768px) {
+  #product-pages .main-section#product-detail .progress-button button:hover svg {
+    fill: #6dc8b6;
+  }
 }
 #product-pages .main-section#product-detail .progress-button span {
   -moz-transition: opacity 0.3s 0.1s;
@@ -5076,6 +5110,18 @@ Slick slider arrow
 #product-pages .main-section#product-detail .progress-button.error button {
   border-color: #FB797E;
   background-color: #FB797E;
+}
+#product-pages .main-section#product-detail .add-to-cart .add-to-cart-text {
+  display: block;
+}
+#product-pages .main-section#product-detail .add-to-cart .add-to-wishlist-text {
+  display: none;
+}
+#product-pages .main-section#product-detail .add-to-cart.add-to-wishlist .add-to-cart-text {
+  display: none;
+}
+#product-pages .main-section#product-detail .add-to-cart.add-to-wishlist .add-to-wishlist-text {
+  display: block;
 }
 #product-pages .main-section#product-detail .product-detail-wrap {
   overflow-y: scroll;

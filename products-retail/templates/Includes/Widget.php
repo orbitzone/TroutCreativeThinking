@@ -1,12 +1,33 @@
 <div id="shopping-cart-widget">
 	<aside>
-		<button type="button">
-		<span class="cart-items-wrap">
-			<span class="cart-items">1</span>
+		<button type="button" id="scw-shopping-cart-section" class="shopping-cart open">
+			<span class="icon">
+				<span class="cart-items-wrap no-items">
+					<span class="cart-items">0</span>
+				</span>
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 34" id="shape-cart"><title>cart</title> <path d="M34.2,33.5c2,0,3.7-1.7,3.7-3.7c0-2.1-1.7-3.7-3.7-3.7c-2,0-3.7,1.7-3.7,3.7S32.2,33.5,34.2,33.5"/> <path d="M13.8,33.5c2,0,3.7-1.7,3.7-3.7c0-2.1-1.7-3.7-3.7-3.7c-2,0-3.7,1.7-3.7,3.7S11.8,33.5,13.8,33.5"/> <path d="M13.8,28h20.4c0.5,0,0.9-0.4,0.9-0.9s-0.4-0.9-0.9-0.9H14.6L8.8,1.2C8.7,0.8,8.3,0.5,7.9,0.5H1.4c-0.5,0-0.9,0.4-0.9,0.9
+			c0,0.5,0.4,0.9,0.9,0.9h5.8l5.7,24.9C13,27.7,13.4,28,13.8,28z"/> <path d="M12.9,24.2H37c0.4,0,0.8-0.3,0.9-0.6l5.6-16.8c0.1-0.3,0-0.6-0.1-0.8c-0.2-0.2-0.5-0.4-0.8-0.4H9.2C8.7,5.6,8.3,6,8.3,6.6
+			c0,0.5,0.4,0.9,0.9,0.9h32.1l-4.9,14.9H12.9c-0.5,0-0.9,0.4-0.9,0.9C12,23.8,12.4,24.2,12.9,24.2z"/></svg>
+			</span>
+	</button>
+	<button type="button" id="scw-wishlist-section" class="wishlist">
+		<span class="icon">
+			<span class="cart-items-wrap no-items">
+				<span class="cart-items">0</span>
+			</span>
+			<svg width="71.68" height="53.124" viewBox="0 0 71.68 53.124">
+	  <path d="M1644.29,629.674a1.048,1.048,0,0,0-1.12,1.107v4.43a1.047,1.047,0,0,0,1.12,1.1h4.48a1.052,1.052,0,0,0,1.12-1.1v-4.43a1.053,1.053,0,0,0-1.12-1.107h-4.48Zm12.31,0v6.641h58.23v-6.641H1656.6Zm-12.31,15.5a1.048,1.048,0,0,0-1.12,1.107v4.429a1.048,1.048,0,0,0,1.12,1.106h4.48a1.053,1.053,0,0,0,1.12-1.106V646.28a1.053,1.053,0,0,0-1.12-1.107h-4.48Zm12.31,0v6.642h44.8v-6.642h-44.8Zm-12.31,15.5a1.048,1.048,0,0,0-1.12,1.107v4.427a1.049,1.049,0,0,0,1.12,1.109h4.48a1.054,1.054,0,0,0,1.12-1.109v-4.427a1.053,1.053,0,0,0-1.12-1.107h-4.48Zm12.31,0v6.643h58.23v-6.643H1656.6Zm-12.31,15.5a1.046,1.046,0,0,0-1.12,1.1v4.43a1.048,1.048,0,0,0,1.12,1.107h4.48a1.053,1.053,0,0,0,1.12-1.107v-4.43a1.052,1.052,0,0,0-1.12-1.1h-4.48Zm12.31,0v6.642h53.75v-6.642H1656.6Z" transform="translate(-1643.16 -629.688)"/>
+	</svg>
 		</span>
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 34" id="shape-cart"><title>cart</title> <path d="M34.2,33.5c2,0,3.7-1.7,3.7-3.7c0-2.1-1.7-3.7-3.7-3.7c-2,0-3.7,1.7-3.7,3.7S32.2,33.5,34.2,33.5"/> <path d="M13.8,33.5c2,0,3.7-1.7,3.7-3.7c0-2.1-1.7-3.7-3.7-3.7c-2,0-3.7,1.7-3.7,3.7S11.8,33.5,13.8,33.5"/> <path d="M13.8,28h20.4c0.5,0,0.9-0.4,0.9-0.9s-0.4-0.9-0.9-0.9H14.6L8.8,1.2C8.7,0.8,8.3,0.5,7.9,0.5H1.4c-0.5,0-0.9,0.4-0.9,0.9
-	c0,0.5,0.4,0.9,0.9,0.9h5.8l5.7,24.9C13,27.7,13.4,28,13.8,28z"/> <path d="M12.9,24.2H37c0.4,0,0.8-0.3,0.9-0.6l5.6-16.8c0.1-0.3,0-0.6-0.1-0.8c-0.2-0.2-0.5-0.4-0.8-0.4H9.2C8.7,5.6,8.3,6,8.3,6.6
-	c0,0.5,0.4,0.9,0.9,0.9h32.1l-4.9,14.9H12.9c-0.5,0-0.9,0.4-0.9,0.9C12,23.8,12.4,24.2,12.9,24.2z"/></svg></button>
+	</button>
+		<div class="close close-widget">
+			<svg xmlns="http://www.w3.org/2000/svg" width="67.5px" height="67.5px" viewBox="0 0 67.5 67.5">
+			<path d="M64.8,67.5c-0.7,0-1.4-0.3-1.9-0.8L0.8,4.6c-1.1-1.1-1.1-2.8,0-3.9c1.1-1.1,2.8-1.1,3.9,0l62.1,62.1c1.1,1.1,1.1,2.8,0,3.9
+				C66.2,67.2,65.5,67.5,64.8,67.5z"/>
+			<path d="M2.7,67.5c-0.7,0-1.4-0.3-1.9-0.8c-1.1-1.1-1.1-2.8,0-3.9L62.9,0.8c1.1-1.1,2.8-1.1,3.9,0c1.1,1.1,1.1,2.8,0,3.9L4.6,66.7
+				C4.1,67.2,3.4,67.5,2.7,67.5z"/>
+		</svg>
+		</div>
 	</aside>
 	<section class="shopping-cart-content scrollable">
 		<div class="close close-widget">
@@ -19,12 +40,14 @@
 		</div>
 		
 		<!--START TAKE A TOUR SECTION -->
-		<div class="tour-info out">
-		<header><h3 class="main-title">Your List Toolbar</h3>
-		</header>
-
+		<div class="tour-info shopping-cart-view in">
+			<div class="list-header">
+				<div class="title">
+					<h3>Welcome!</h3>
+				</div>
+			</div>
 			<div class="tour-intro">
-				<p>Welcome to the new toolbar that allows you to create product lists easily.<br/> You can import products from saved lists or create a completly new one. Then convert the list to a quote or order.</p>
+				<p><b>Welcome to your shopping cart and wishlist.</b><br/> Close and add products to create your first order or wishlist.</p>
 			</div>
 			<div class="tour-popout">
 				<div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="51.6px" height="51.6px" viewBox="0 0 51.6 51.6">
@@ -37,11 +60,8 @@
 	<path d="M22.5,22.5L37.6,14l-8.5,15.1L22.5,22.5z M14,37.7l15.1-8.6l-1.8-1.8l-8.1,5.2l5.2-8.1l-1.8-1.8L14,37.7z"/>
 	</svg></div>
 					<h5>Take a tour</h5>
-				<p>There’s a whole lot of new stuff we would love to show you <p>
+				<p>There’s a whole lot of new stuff we would love to show you.<p>
 				<a class="btn tour-button" href="#">Take a tour</a>
-			</div>
-			<div class="tour-extra">
-				<p>Add products from the window on the left to create your first list.</p>
 			</div>
 		</div>
 		<!--END TAKE A TOUR SECTION -->
@@ -49,133 +69,13 @@
 
 
 
-		<!--START SEARCH LIST-->
-		<div class="shopping-cart-search-list out">
-			<!--START LIST HEADER-->
-			<div class="list-header">
-				<div class="title">
-					<h3>Switch Product List</h3>
-				</div>
-				<div class="current-list">
-				<button type="button" class="switch-btn">
-					<svg width="25" height="19" viewBox="0 0 25 19">
-				  	<path d="M213.873,434.7a0.413,0.413,0,0,0-.3-0.127H195.143V432a0.434,0.434,0,0,0-.429-0.428,0.419,0.419,0,0,0-.308.12l-4.285,4.286a0.414,0.414,0,0,0-.121.308,0.4,0.4,0,0,0,.121.3l4.272,4.285a0.5,0.5,0,0,0,.321.134,0.434,0.434,0,0,0,.429-0.428V438h18.428a0.434,0.434,0,0,0,.429-0.428V435A0.411,0.411,0,0,0,213.873,434.7Zm0.006-7.292-4.272-4.273a0.5,0.5,0,0,0-.321-0.134,0.414,0.414,0,0,0-.429.429V426H190.429a0.434,0.434,0,0,0-.429.429V429a0.434,0.434,0,0,0,.429.429h18.428V432a0.436,0.436,0,0,0,.737.308l4.285-4.285a0.452,0.452,0,0,0,0-.616h0Z" transform="translate(-189.5 -422.5)"/>
-					</svg>
-					</button>
-					123 Newry Street
-				</div>
-				<div class="search-box">
-					<form action="" class="search-form">
-						<div class="search-input">
-							<input type="text" name="search-list" placeholder="Search List" />
-							<button type="button" class="btn blue-button">
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="20px" height="20px"><title>search</title> <circle fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="2.5" stroke-miterlimit="10" cx="14.6" cy="14.6" r="13.3"></circle> <line fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-miterlimit="10" x1="24.1" y1="24" x2="38.8" y2="38.8"></line></svg>
-							</button>
-						</div>						
-						<div class="options">
-							<ul class="list-inline">
-								<li>
-									<input type="checkbox" name="order" id="search-list-order"/>
-									<label for="search-list-order"><div class="icon">
-										<svg xmlns="http://www.w3.org/2000/svg" width="20px" height="14.8px" viewBox="0 0 20 14.8">
-											<path d="M2.5,4.9l7.5,7.4l-2.5,2.5L0,7.4L2.5,4.9z M17.5,0L20,2.5L7.5,14.8L5,12.3L17.5,0z"/>
-										</svg>
-									</div>
-									Orders</label>
-								</li>
-								<li>
-									<input type="checkbox" name="quotes" id="search-list-quotes"/>
-									<label for="search-list-quotes"><div class="icon">
-										<svg xmlns="http://www.w3.org/2000/svg" width="20px" height="14.8px" viewBox="0 0 20 14.8">
-											<path d="M2.5,4.9l7.5,7.4l-2.5,2.5L0,7.4L2.5,4.9z M17.5,0L20,2.5L7.5,14.8L5,12.3L17.5,0z"/>
-										</svg>
-									</div>
-									Quotes</label>
-								</li>
-								<li>
-									<input type="checkbox" name="lists" id="search-list-lists"/>
-									<label for="search-list-lists"><div class="icon">
-										<svg xmlns="http://www.w3.org/2000/svg" width="20px" height="14.8px" viewBox="0 0 20 14.8">
-											<path d="M2.5,4.9l7.5,7.4l-2.5,2.5L0,7.4L2.5,4.9z M17.5,0L20,2.5L7.5,14.8L5,12.3L17.5,0z"/>
-										</svg>
-									</div>
-									Lists</label>
-								</li>
-							</ul>
-						</div>
-					</form>
-				</div>
-			</div>
-			<!--END LIST HEADER -->
-			<div class="recent-lists">
-				<div class="recent-list-option">
-					<div class="title">
-						Recent Lists
-					</div>
-					<div class="sort-by">
-						<select name="" id="">
-							<option value="">Name</option>
-							<option value="">Date</option>
-						</select>
-					</div>
-				</div>
-				<ul>
-					<li>
-						<a href="#" class="list">
-							<h5>Product List</h5>
-							<h4>123 Newry St</h4>
-							<p>Job number: <span class="job-number">0062547</span></p>
-							<p>Date created: <span class="date-created">20th March 2016</span></p>
-						</a>
-					</li>
-					<li>
-						<a href="#" class="list">
-							<h5>Quote</h5>
-							<h4>55 Lee Street</h4>
-							<p>Job number: <span class="job-number">0062547</span></p>
-							<p>Date created: <span class="date-created">20th March 2016</span></p>
-						</a>
-					</li>
-					<li>
-						<a href="#" class="list">
-							<h5>Draft Order</h5>
-							<h4>123 Newry St</h4>
-							<p>Job number: <span class="job-number">0062547</span></p>
-							<p>Date created: <span class="date-created">20th March 2016</span></p>
-						</a>
-					</li>
-					<li>
-						<a href="#" class="list">
-							<h5>Product List</h5>
-							<h4>55 Lee Street</h4>
-							<p>Job number: <span class="job-number">0062547</span></p>
-							<p>Date created: <span class="date-created">20th March 2016</span></p>
-						</a>
-					</li>
-					<li>
-						<a href="#" class="list">
-							<h5>Quote</h5>
-							<h4>123 Newry St</h4>
-							<p>Job number: <span class="job-number">0062547</span></p>
-							<p>Date created: <span class="date-created">20th March 2016</span></p>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<!--END SEARCH LIST -->
-
-
-
-
-
 		<!--START PRODUCT LIST-->
-		<div class="shopping-cart-product-list">
-			<!--START LIST HEADER-->
+		<div class="shopping-cart-product-list shopping-cart-view out">
+			<!--START LIST HEADER-->			
 			<div class="list-header">
 				<div class="title">
 					<h3>Shopping Cart</h3>
-				</div>				
+				</div>
 			</div>
 			<!--END LIST HEADER -->
 			<!--START TOOL BAR ITEMLIST-->
@@ -219,7 +119,7 @@
 										<span class="set">Qty</span> <span class="number">1</span>
 									</span>
 									<span class="price right-col">
-										$406.32
+										$406.32 <small>inc. GST</small>
 									</span>
 									<div class="clear-fix"></div>
 								</div>
@@ -233,10 +133,16 @@
 											<div class="quantity-input">
 												<input class="quantity-number" data-productcode="7845123" type="number" name="quantity-7845123" min="1" value="1">
 											</div>
+											<div class="quantity-updated">
+												<svg class="check" width="51.4px" height="38.5px" viewBox="0 0 51.4 38.5">
+													<path class="short" fill="none" stroke="#010202" stroke-width="2" stroke-miterlimit="10" d="M0.7,23.7l14.1,14.1"/>
+													<path class="long" fill="none" stroke="#010202" stroke-width="2" stroke-miterlimit="10" d="M13.5,37.8L50.7,0.7"/>
+												</svg>
+											</div>
 										</div>
 									</div>
 									<div class="prices right-col">
-										<div class="price price-my"><span class="value">$406.32</span></div>										
+										<div class="price price-only"><span class="value">$406.32 <small>inc. GST</small></span></div>										
 									</div>
 									<div class="clear-fix"></div>
 								</div>
@@ -265,21 +171,55 @@
 		</div>
 		<!--END PRODUCT LIST-->
 
+
+		<!--START PRODUCT LIST-->
+		<div class="shopping-cart-wishlist shopping-cart-view out">
+			<!--START LIST HEADER-->			
+			<div class="list-header">
+				<div class="title">
+					<h3>Wishlist</h3>
+				</div>
+			</div>
+			<!--END LIST HEADER -->
+			<!--START TOOL BAR ITEMLIST-->
+			<div class="itemlist-section">
+				<ul class="item-list">
+				<?php for($i=1;$i<5;$i++){ ?>
+					<li>
+						<div class="product">
+							<div class="product-thumbnail">
+								<img class="img-responsive" src="templates/images/product-detail/product-image<?php echo $i ?>.jpg" alt="item">
+							</div>
+							<div class="product-details">
+								<div class="product-name">AXA Cento</div>
+								<div class="product-code">0000000<?php echo $i ?></div>
+								<div class="product-description">Electric Hot Water Unit 250L</div>
+								<div class="product-price">$406.32</div>
+							</div>
+							<button class="remove" type="button"><svg width="10px" height="10px" viewBox="0 0 10 10">
+	<path d="M9.8,8.6L8.6,9.8C8.5,9.9,8.3,10,8,10c-0.2,0-0.4-0.1-0.6-0.2L5,7.3L2.5,9.8C2.4,9.9,2.2,10,2,10S1.5,9.9,1.4,9.8L0.2,8.6
+		C0.1,8.5,0,8.3,0,8c0-0.2,0.1-0.4,0.2-0.6L2.7,5L0.2,2.5C0.1,2.4,0,2.2,0,2s0.1-0.4,0.2-0.6l1.1-1.1C1.5,0.1,1.7,0,2,0
+		s0.4,0.1,0.6,0.2L5,2.7l2.5-2.5C7.6,0.1,7.8,0,8,0c0.2,0,0.4,0.1,0.6,0.2l1.1,1.1C9.9,1.5,10,1.7,10,2S9.9,2.4,9.8,2.5L7.3,5
+		l2.5,2.5C9.9,7.6,10,7.8,10,8C10,8.3,9.9,8.5,9.8,8.6z"/>
+</svg><span class="sr-only">close</span></button>
+							<button type="button" class="btn add-to-cart-btn" data-code="2259656">ADD</button>							
+						</div>
+					</li>
+				<?php } ?>
+				</ul>
+				<div class="actions"><button type="button" class="btn add-all-to-cart">Add all to cart</button></div>				
+			</div>
+			<!--END TOOL BAR ITEMLIST-->			
+		</div>
+		<!--END PRODUCT LIST-->
+
 		
 
 		
 
 
 		<!--START TAKE A TOUR FOOTER-->
-		<div class="take-a-tour-box">
-		<div class="close">
-			<svg xmlns="http://www.w3.org/2000/svg" width="67.5px" height="67.5px" viewBox="0 0 67.5 67.5">
-<path d="M64.8,67.5c-0.7,0-1.4-0.3-1.9-0.8L0.8,4.6c-1.1-1.1-1.1-2.8,0-3.9c1.1-1.1,2.8-1.1,3.9,0l62.1,62.1c1.1,1.1,1.1,2.8,0,3.9
-	C66.2,67.2,65.5,67.5,64.8,67.5z"/>
-<path d="M2.7,67.5c-0.7,0-1.4-0.3-1.9-0.8c-1.1-1.1-1.1-2.8,0-3.9L62.9,0.8c1.1-1.1,2.8-1.1,3.9,0c1.1,1.1,1.1,2.8,0,3.9L4.6,66.7
-	C4.1,67.2,3.4,67.5,2.7,67.5z"/>
-</svg>
-		</div>
+		<div class="take-a-tour-box out shopping-cart-view">
 			<div class="tour-info-small">
 			<div class="close">
 				<svg xmlns="http://www.w3.org/2000/svg" width="67.5px" height="67.5px" viewBox="0 0 67.5 67.5">

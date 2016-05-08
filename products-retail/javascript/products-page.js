@@ -1422,7 +1422,7 @@ var product_pages = {
             var thisname = thisobject.data("expandbutton");
             var expandsection = $(".expand-section[data-expandsection='" + thisname + "']");
             var open = true;
-            if($(window).width() > 768 && $(this).hasClass('section-title')){
+            if($(window).width() > 767 && $(this).hasClass('section-title')){
                 open = false;
             }else{
                 open = true;

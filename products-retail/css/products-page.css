@@ -1298,7 +1298,7 @@ Slick slider arrow
   position: absolute;
   background: white;
   height: 50px;
-  right: -2px;
+  left: -2px;
   top: 50%;
   margin-top: -25px;
 }
@@ -1328,7 +1328,7 @@ Slick slider arrow
     margin-top: 30px;
   }
 }
-#product-pages #shopping-cart-widget aside button:last-child:after {
+#product-pages #shopping-cart-widget aside button:first-child:after {
   content: "";
   display: none;
 }

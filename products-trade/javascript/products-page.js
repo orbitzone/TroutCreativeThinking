@@ -950,7 +950,7 @@ var product_pages = {
             }else{
                 $('#shopping-cart-widget .one-item').removeClass('editing');
                 $(this).parent().parent().parent().addClass('editing');
-                $(this).parent().parent().parent().find('.quantity-number').focus();                
+                //$(this).parent().parent().parent().find('.quantity-number').focus();                
             }        
         });
         //Delete item action

@@ -1,6 +1,6 @@
 <div id="shopping-cart-widget">
 	<aside>
-		<button type="button" id="scw-shopping-cart-section" class="shopping-cart">
+		<button type="button" id="scw-shopping-cart-section" class="shopping-cart open">
 			<span class="icon">
 				<span class="cart-items-wrap no-items">
 					<span class="cart-items">0</span>
@@ -119,7 +119,7 @@
 										<span class="set">Qty</span> <span class="number">1</span>
 									</span>
 									<span class="price right-col">
-										$406.32
+										$406.32 <small>inc. GST</small>
 									</span>
 									<div class="clear-fix"></div>
 								</div>
@@ -142,7 +142,7 @@
 										</div>
 									</div>
 									<div class="prices right-col">
-										<div class="price price-only"><span class="value">$406.32</span></div>										
+										<div class="price price-only"><span class="value">$406.32 <small>inc. GST</small></span></div>										
 									</div>
 									<div class="clear-fix"></div>
 								</div>
@@ -202,7 +202,7 @@
 		s0.4,0.1,0.6,0.2L5,2.7l2.5-2.5C7.6,0.1,7.8,0,8,0c0.2,0,0.4,0.1,0.6,0.2l1.1,1.1C9.9,1.5,10,1.7,10,2S9.9,2.4,9.8,2.5L7.3,5
 		l2.5,2.5C9.9,7.6,10,7.8,10,8C10,8.3,9.9,8.5,9.8,8.6z"/>
 </svg><span class="sr-only">close</span></button>
-							<button type="button" class="btn add-to-cart-btn">ADD</button>							
+							<button type="button" class="btn add-to-cart-btn" data-code="2259656">ADD</button>							
 						</div>
 					</li>
 				<?php } ?>

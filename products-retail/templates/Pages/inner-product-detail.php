@@ -192,7 +192,7 @@
 											<div class="product-addbutton">
 												<div class="progress-button">
 													<!-- button with text -->
-													<button type="button" class="btn add-to-cart full-width" disabled>
+													<button type="button" class="btn add-to-cart full-width" data-code="2259656" disabled>
 														<span class="add-to-cart-text">add to cart 
 													<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 34" id="shape-cart"><title>cart</title> <path d="M34.2,33.5c2,0,3.7-1.7,3.7-3.7c0-2.1-1.7-3.7-3.7-3.7c-2,0-3.7,1.7-3.7,3.7S32.2,33.5,34.2,33.5"/> <path d="M13.8,33.5c2,0,3.7-1.7,3.7-3.7c0-2.1-1.7-3.7-3.7-3.7c-2,0-3.7,1.7-3.7,3.7S11.8,33.5,13.8,33.5"/> <path d="M13.8,28h20.4c0.5,0,0.9-0.4,0.9-0.9s-0.4-0.9-0.9-0.9H14.6L8.8,1.2C8.7,0.8,8.3,0.5,7.9,0.5H1.4c-0.5,0-0.9,0.4-0.9,0.9
 			c0,0.5,0.4,0.9,0.9,0.9h5.8l5.7,24.9C13,27.7,13.4,28,13.8,28z"/> <path d="M12.9,24.2H37c0.4,0,0.8-0.3,0.9-0.6l5.6-16.8c0.1-0.3,0-0.6-0.1-0.8c-0.2-0.2-0.5-0.4-0.8-0.4H9.2C8.7,5.6,8.3,6,8.3,6.6
@@ -1237,7 +1237,7 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 											<p class="product-price">$1099.99 <small class="gst">gst inc.</small></p>
 										</div>
 										<div class="view-button">
-											<a href="#" class="btn black-button view-button">View</a> <a href="#" class="btn add-to-cart">+</a>
+											<a href="#" class="btn black-button view-button">View</a> <a href="#"  data-code="2259656" class="btn add-to-cart">+</a>
 										</div>
 									</div>
 									<?php } ?>

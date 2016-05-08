@@ -1372,7 +1372,7 @@ Slick slider arrow
     display: none;
   }
 }
-#product-pages #shopping-cart-widget.open aside button.open:before {
+#product-pages #shopping-cart-widget.open aside button.open:after {
   content: " ";
   display: block;
   width: 20px;
@@ -1385,11 +1385,12 @@ Slick slider arrow
   position: absolute;
   left: 50%;
   bottom: -16px;
+  margin-top: -10px;
   margin-left: -10px;
   background: #066693;
 }
 @media (min-width: 768px) {
-  #product-pages #shopping-cart-widget.open aside button.open:before {
+  #product-pages #shopping-cart-widget.open aside button.open:after {
     top: 50%;
     left: inherit;
     bottom: inherit;
@@ -1398,12 +1399,9 @@ Slick slider arrow
   }
 }
 @media (min-width: 1200px) {
-  #product-pages #shopping-cart-widget.open aside button.open:before {
+  #product-pages #shopping-cart-widget.open aside button.open:after {
     right: -14px;
   }
-}
-#product-pages #shopping-cart-widget.open aside button.open:first-child:before {
-  margin-top: -10px;
 }
 #product-pages #shopping-cart-widget.fixed {
   position: fixed;
@@ -1499,7 +1497,7 @@ Slick slider arrow
   padding: 5px 0 0px;
   height: 56px;
 }
-#product-pages #shopping-cart-widget aside button:after {
+#product-pages #shopping-cart-widget aside button:before {
   content: " ";
   width: 1px;
   display: block;
@@ -1514,17 +1512,19 @@ Slick slider arrow
   #product-pages #shopping-cart-widget aside button {
     display: block;
     width: 100%;
-    padding: 25px 0 0;
+    padding: 15px 0;
     height: auto;
   }
-  #product-pages #shopping-cart-widget aside button:after {
+  #product-pages #shopping-cart-widget aside button:before {
     content: " ";
     width: 59.35%;
     margin: 0 auto;
     display: block;
-    position: relative;
-    background: white;
-    margin-top: 15px;
+    left: 50%;
+    margin-left: -30%;
+    top: -1px;
+    margin-top: 0;
+    margin-bottom: 15px;
     height: 2px;
   }
 }
@@ -1532,11 +1532,11 @@ Slick slider arrow
   #product-pages #shopping-cart-widget aside button {
     padding: 30px 0 0;
   }
-  #product-pages #shopping-cart-widget aside button:after {
+  #product-pages #shopping-cart-widget aside button:before {
     margin-top: 30px;
   }
 }
-#product-pages #shopping-cart-widget aside button:first-child:after {
+#product-pages #shopping-cart-widget aside button:first-child:before {
   content: "";
   display: none;
 }
@@ -2085,6 +2085,12 @@ Slick slider arrow
     font-size: 15px;
   }
 }
+#product-pages #shopping-cart-widget .shopping-cart-content .itemlist-section .item-list .one-item .item-block .item-footer .info-state .price small {
+  font-size: 8px;
+  font-family: "Gotham A", "Gotham B";
+  font-style: normal;
+  font-weight: 400;
+}
 #product-pages #shopping-cart-widget .shopping-cart-content .itemlist-section .item-list .one-item .item-block .item-footer .edit-state {
   opacity: 0;
   padding: 0;
@@ -2131,6 +2137,12 @@ Slick slider arrow
 }
 #product-pages #shopping-cart-widget .shopping-cart-content .itemlist-section .item-list .one-item .item-block .item-footer .edit-state .prices .price.price-only {
   line-height: 47px;
+}
+#product-pages #shopping-cart-widget .shopping-cart-content .itemlist-section .item-list .one-item .item-block .item-footer .edit-state .prices .price small {
+  font-size: 8px;
+  font-family: "Gotham A", "Gotham B";
+  font-style: normal;
+  font-weight: 400;
 }
 #product-pages #shopping-cart-widget .shopping-cart-content .itemlist-section .item-list .one-item .item-block .item-footer .edit-state .prices .label {
   color: #066693;
@@ -2725,11 +2737,13 @@ Slick slider arrow
 }
 #product-pages #shopping-cart-widget .shopping-cart-wishlist ul li {
   margin-bottom: 10px;
+  overflow: hidden;
 }
 #product-pages #shopping-cart-widget .shopping-cart-wishlist .product {
   background: #6dc8b6;
   padding: 15px;
   position: relative;
+  overflow: hidden;
 }
 #product-pages #shopping-cart-widget .shopping-cart-wishlist .product:before,
 #product-pages #shopping-cart-widget .shopping-cart-wishlist .product:after {
@@ -5062,6 +5076,29 @@ Slick slider arrow
 }
 #product-pages .main-section#product-detail .add-to-cart.add-to-wishlist .add-to-wishlist-text {
   display: block;
+  font-size: 15px;
+}
+#product-pages .main-section#product-detail .add-to-cart.add-to-wishlist .add-to-wishlist-text svg {
+  width: 30px;
+  height: 25px;
+}
+@media (min-width: 768px) {
+  #product-pages .main-section#product-detail .add-to-cart.add-to-wishlist .add-to-wishlist-text {
+    font-size: 13px;
+  }
+  #product-pages .main-section#product-detail .add-to-cart.add-to-wishlist .add-to-wishlist-text svg {
+    width: 24px;
+    height: 20px;
+  }
+}
+@media (min-width: 992px) {
+  #product-pages .main-section#product-detail .add-to-cart.add-to-wishlist .add-to-wishlist-text {
+    font-size: 15px;
+  }
+  #product-pages .main-section#product-detail .add-to-cart.add-to-wishlist .add-to-wishlist-text svg {
+    width: 30px;
+    height: 25px;
+  }
 }
 #product-pages .main-section#product-detail .product-detail-wrap {
   overflow-y: scroll;

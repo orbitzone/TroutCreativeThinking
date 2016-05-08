@@ -273,7 +273,7 @@
 		 	}
 		 }
 		 button.open{
-			&:before{
+			&:after{
 					content: " ";
 					display: block;
 					width: 20px;
@@ -282,6 +282,7 @@
 					position: absolute;
 					left: 50%;
 					bottom: -16px;
+					margin-top: -10px;
 					margin-left: -10px;
 					background: @widget-content-bg;
 					@media (min-width: @screen-sm){
@@ -293,11 +294,6 @@
 					}
 					@media (min-width: @screen-lg){
 						right: -14px;
-					}
-				}
-				&:first-child{
-					&:before{
-						margin-top: -10px;
 					}
 				}
 			}
@@ -377,12 +373,11 @@
 			.appearance(none);
 			outline: none;
 			padding: 0;
-			
-	    display: inline-block;
+			display: inline-block;
     	width: 70px;
     	padding: 5px 0 0px;
     	height: 56px;
-    	&:after{
+    	&:before{
 				content: " ";
 				width: 1px;
 				display: block;
@@ -396,27 +391,29 @@
 			@media (min-width: @screen-sm){
     		display: block;
 				width: 100%;
-				padding: 25px 0 0;
+				padding: 15px 0;
 				height: auto;
-				&:after{
+				&:before{
 					content: " ";
 					width: 59.35%;
 					margin: 0 auto;
 					display: block;
-					position: relative;
-					background: white;
-					margin-top: 15px;
+					left: 50%;
+					margin-left: -30%;
+					top: -1px;
+					margin-top: 0;
+					margin-bottom: 15px;
 					height: 2px;
 				}
     	}
     	@media (min-width: @screen-lg){
     		padding: 30px 0 0;
-    		&:after{
+    		&:before{
     			margin-top: 30px;
     		}
     	}
     	&:first-child{
-				&:after{
+    		&:before{
 					content: "";
 					display: none;
 				}
@@ -883,6 +880,12 @@
 										font-size: 15px;
 									}
 								}
+								.price{									
+										small{
+											font-size: 8px;
+											.gothamBook;
+										}
+								}
 							}
 							.edit-state{
 								opacity: 0;
@@ -921,6 +924,10 @@
 										}
 										&.price-only{
 											line-height: 47px;																						
+										}
+										small{
+											font-size: 8px;
+											.gothamBook;
 										}
 									}			
 									.label{
@@ -1406,12 +1413,14 @@
 			list-style: none;
 			li{
 				margin-bottom: 10px;
+				overflow: hidden;				
 			}
 		}
 		.product{
 			background: @wishlist-product-bg;
 			padding: 15px;
 			position: relative;
+			overflow: hidden;
 			.clearfix;
 		}
 		.product-thumbnail{

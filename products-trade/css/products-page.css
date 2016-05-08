@@ -1530,10 +1530,10 @@ Slick slider arrow
 }
 @media (min-width: 1200px) {
   #product-pages #shopping-cart-widget aside button {
-    padding: 30px 0 0;
+    padding: 30px 0;
   }
   #product-pages #shopping-cart-widget aside button:before {
-    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 #product-pages #shopping-cart-widget aside button:first-child:before {

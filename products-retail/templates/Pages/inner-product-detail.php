@@ -822,8 +822,13 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 					</svg>
 							</h3></header>
 							<div data-expandsection="alldownloads" class="expand-section expanded-desktop">
+							<div class="filters-wrap">
+								<div class="filters">
+									<a href="#" data-filter="brochure" class="filter">Brochures &amp; Forms</a> <a href="#" class="filter" data-filter="technical">Technical</a>
+								</div>
+							</div>
 								<div class="file-download-list four-per-row all-downloads">
-									<div class="one-file">
+									<div class="one-file" data-group="technical">
 										<div class="file-info file-doc">
 										<div class="icon">
 														<svg width="20px" height="27px" viewBox="0 0 20 27">
@@ -845,7 +850,28 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 											</div>
 										</div>
 									</div>
-									<div class="one-file">
+									<div class="one-file" data-group="technical">
+										<div class="file-info file-doc">
+										<div class="icon">
+														<svg width="20px" height="27px" viewBox="0 0 20 27">
+<path d="M17.7,5h-2.1C15.3,5,15,4.7,15,4.3V2.4C15,1.1,14,0,12.7,0H2.3C1,0,0,1.1,0,2.4v21.9c0,1.3,1,2.4,2.3,2.4h15.4
+	c1.3,0,2.3-1.1,2.3-2.4V7.4C20,6.1,19,5,17.7,5 M18.3,24.3c0,0.4-0.3,0.7-0.6,0.7H2.3c-0.3,0-0.6-0.3-0.6-0.7V2.4
+	c0-0.4,0.3-0.7,0.6-0.7h10.4c0.3,0,0.6,0.3,0.6,0.7v1.9c0,1.3,1,2.4,2.3,2.4h2.1c0.3,0,0.6,0.3,0.6,0.7V24.3z M4.2,8.3h6.7
+	c0.5,0,0.8-0.4,0.8-0.8c0-0.5-0.4-0.8-0.8-0.8H4.2C3.7,6.7,3.3,7,3.3,7.5C3.3,8,3.7,8.3,4.2,8.3 M15.8,10H4.2
+	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,10.4,16.3,10,15.8,10 M15.8,13.3H4.2
+	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,13.7,16.3,13.3,15.8,13.3 M15.8,16.7H4.2
+	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,17,16.3,16.7,15.8,16.7 M15.8,20H4.2
+	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,20.4,16.3,20,15.8,20"/>
+</svg>
+													</div>
+													<div class="file-description">
+											<a href="#" class="file-download">
+												Warranty Sheet
+											</a>
+											</div>
+										</div>
+									</div>
+									<div class="one-file" data-group="technical">
 										<div class="file-info file-doc">
 										<div class="icon">
 														<svg width="20px" height="27px" viewBox="0 0 20 27">
@@ -867,27 +893,6 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 										</div>
 									</div>
 									<div class="one-file">
-										<div class="file-info file-doc">
-										<div class="icon">
-														<svg width="20px" height="27px" viewBox="0 0 20 27">
-<path d="M17.7,5h-2.1C15.3,5,15,4.7,15,4.3V2.4C15,1.1,14,0,12.7,0H2.3C1,0,0,1.1,0,2.4v21.9c0,1.3,1,2.4,2.3,2.4h15.4
-	c1.3,0,2.3-1.1,2.3-2.4V7.4C20,6.1,19,5,17.7,5 M18.3,24.3c0,0.4-0.3,0.7-0.6,0.7H2.3c-0.3,0-0.6-0.3-0.6-0.7V2.4
-	c0-0.4,0.3-0.7,0.6-0.7h10.4c0.3,0,0.6,0.3,0.6,0.7v1.9c0,1.3,1,2.4,2.3,2.4h2.1c0.3,0,0.6,0.3,0.6,0.7V24.3z M4.2,8.3h6.7
-	c0.5,0,0.8-0.4,0.8-0.8c0-0.5-0.4-0.8-0.8-0.8H4.2C3.7,6.7,3.3,7,3.3,7.5C3.3,8,3.7,8.3,4.2,8.3 M15.8,10H4.2
-	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,10.4,16.3,10,15.8,10 M15.8,13.3H4.2
-	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,13.7,16.3,13.3,15.8,13.3 M15.8,16.7H4.2
-	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,17,16.3,16.7,15.8,16.7 M15.8,20H4.2
-	c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h11.7c0.5,0,0.8-0.4,0.8-0.8C16.7,20.4,16.3,20,15.8,20"/>
-</svg>
-													</div>
-													<div class="file-description">
-											<a href="#" class="file-download">
-												Warranty Sheet
-											</a>
-											</div>
-										</div>
-									</div>
-									<div class="one-file">
 										<div class="file-info file-cad">
 										<div class="icon">
 														<svg width="20px" height="27px" viewBox="0 0 20 27">
@@ -905,7 +910,7 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 											</div>
 										</div>
 									</div>
-									<div class="one-file">
+									<div class="one-file" data-group="brochure">
 										<div class="file-info file-cad">
 										<div class="icon">
 														<svg width="20px" height="27px" viewBox="0 0 20 27">
@@ -923,7 +928,7 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 											</div>
 										</div>
 									</div>
-									<div class="one-file">
+									<div class="one-file" data-group="brochure">
 										<div class="file-info file-cad">
 										<div class="icon">
 														<svg width="20px" height="27px" viewBox="0 0 20 27">
@@ -941,7 +946,7 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 											</div>
 										</div>
 									</div>
-									<div class="one-file">
+									<div class="one-file" data-group="technical">
 										<div class="file-info file-cad">
 										<div class="icon">
 														<svg width="20px" height="27px" viewBox="0 0 20 27">
@@ -959,7 +964,7 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 											</div>
 										</div>
 									</div>
-									<div class="one-file">
+									<div class="one-file" data-group="technical">
 										<div class="file-info file-cad">
 										<div class="icon">
 														<svg width="20px" height="27px" viewBox="0 0 20 27">
@@ -977,7 +982,7 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 											</div>
 										</div>
 									</div>
-									<div class="one-file">
+									<div class="one-file" data-group="brochure">
 										<div class="file-info file-cad">
 										<div class="icon">
 														<svg width="20px" height="27px" viewBox="0 0 20 27">
@@ -995,7 +1000,7 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 											</div>
 										</div>
 									</div>
-									<div class="one-file">
+									<div class="one-file" data-group="technical">
 										<div class="file-info file-cad">
 										<div class="icon">
 														<svg width="20px" height="27px" viewBox="0 0 20 27">
@@ -1013,7 +1018,7 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 											</div>
 										</div>
 									</div>
-									<div class="one-file">
+									<div class="one-file" data-group="technical">
 										<div class="file-info file-cad">
 										<div class="icon">
 														<svg width="20px" height="27px" viewBox="0 0 20 27">
@@ -1031,7 +1036,7 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 											</div>
 										</div>
 									</div>
-									<div class="one-file">
+									<div class="one-file" data-group="brochure">
 										<div class="file-info file-cad">
 										<div class="icon">
 														<svg width="20px" height="27px" viewBox="0 0 20 27">

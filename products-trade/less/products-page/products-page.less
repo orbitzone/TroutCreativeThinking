@@ -3,6 +3,9 @@
 @import "../bootstrap/variables.less";
 @import "../bootstrap/mixins.less";
 @import "_variables.less";
+@-ms-viewport {
+  width: device-width;
+}
 	html,body{
 		&.overflow-hidden{
 		 	overflow: hidden;		 	
@@ -54,6 +57,7 @@
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 @import "components/_slick.less";
+@import "components/_bootstrap-select.less";
 @import "_global.less";
 @import "_global-forms.less";
 @import "components/_search.less";

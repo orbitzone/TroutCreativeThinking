@@ -1,13 +1,48 @@
 .postcode-input{
 	background: @postcode-input-bg url("@{images-folder}/product-detail/bg-grey-stripes.jpg");
-	padding: 9px 0;
-	font-size: 15px;
+	padding: 20px 0;
+	font-size: 12px;
+	position: relative;
+	line-height: 14px;
 	b{
+		display: block;
 		font-size: 22px;
+		line-height: 1;
+		margin-bottom: 4px;
 	}
 	input{
 		max-width: 150px;
 		height: 38px;
-		margin-left: 18px;
+		float: right;
+		width: 40%;
+		position: absolute;
+		right: 20px;
+		bottom: 0;
+	}
+	.text{
+		width: 50%;
+		float: left;
+		padding-right: 10px;
+	}
+	@media (min-width: @screen-sm){
+		padding: 9px 0;
+		font-size: 15px;
+		.text{
+			width: auto;
+			float: none;
+			b{
+				display: inline;
+				margin-bottom: 0;
+			}
+		}
+		input{
+			position: relative;
+			right: inherit;
+			bottom: inherit;
+			margin-top: 0;
+			margin-left: 18px;
+			width: 100%;
+			float: none;
+		}
 	}
 }

@@ -646,7 +646,7 @@ var product_pages = {
                 $added.remove();
             }});
         }});
-        $('#product-detail').append($added);
+        $('.main-section').append($added);
         $added.addClass('loaded');
     },
     addToCart: function(code,quantity, element, img){
@@ -1036,6 +1036,57 @@ var product_pages = {
                 }
             }
         });        
+    },
+    productsCategory: function(){
+        function updateSliders(){
+            $('#products .product-images-slider').slick({
+                slidesToShow:1,
+                slidesToScroll:1,
+                'dots': true,
+                'arrows':false
+            });
+        }
+        $.ajax({
+            url: 'templates/Ajax/category-product.php',
+            dataType: 'html',
+            success: function(data){
+                $('#products').append(data);
+                updateSliders();
+            },
+            error: function(){
+
+            }
+        });
+
+        $(document).on('click','.product .add-to-cart', function(){
+            var obj = $(this).parent();
+            var quantity = obj.parent().find('input.quantity-number').val();
+                            
+            if(!obj.hasClass('loading')){
+                obj.toggleClass('loading');
+
+                    var img = obj.parent().parent().find('.product-image img').first().attr("src");
+                    var code = $(this).data('code');
+                    if($('#scw-wishlist-section').hasClass('open')){
+                        
+                        //THIS TIMEOUT IT JUST TO SHOW THE LOADING ON DEMO PLEASE REMOVE 
+                        //BUT LEAVE ITS CONTENT
+
+                        setTimeout(function(){                 
+                            product_pages.addToWishlist(code,quantity,obj.find('button'), img);    
+                        }, 1200);                                
+                    }else{
+                        
+                        //THIS TIMEOUT IT JUST TO SHOW THE LOADING ON DEMO PLEASE REMOVE 
+                        //BUT LEAVE ITS CONTENT
+
+                        setTimeout(function(){                                         
+                        product_pages.addToCart(code,quantity,obj.find('button'), img);
+                        }, 1200);                                
+                    }
+                
+            }
+        });
     },
     productDetail: function(){
         //Detect if device is mobile to use touch event in some actions for a fast load.

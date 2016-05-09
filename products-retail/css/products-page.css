@@ -1251,12 +1251,14 @@ Slick slider arrow
 }
 @media (min-width: 768px) {
   #product-pages #shopping-cart-widget aside {
+    overflow: hidden;
     border-bottom: none;
     padding-top: 0;
     position: absolute;
     top: 0;
     left: 0;
     width: 50px;
+    height: 100%;
   }
   #product-pages #shopping-cart-widget aside.ie {
     height: 100%;

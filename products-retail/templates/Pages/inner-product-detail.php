@@ -599,7 +599,7 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 										</h4>
 									</header>
 									<div class="expand-section internal-expand-body" data-expandsection="feature-files">
-										<div class="file-download-list four-per-row">
+										<div class="file-download-list">
 											<?php for($i = 0; $i<3;$i++){ ?>
 											<div class="one-file">
 												<div class="file-info file-doc">
@@ -708,7 +708,7 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 </svg></h4></header>
 									<div class="expand-section internal-expand-body" data-expandsection="technical-files">
-										<div class="file-download-list four-per-row">
+										<div class="file-download-list">
 											<?php for($i = 0; $i<3;$i++){ ?>
 											<div class="one-file">
 												<div class="file-info file-doc">
@@ -820,7 +820,7 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 	c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 </svg></h4></header>
 												<div class="expand-section internal-expand-body" data-expandsection="warranty-files">
-													<div class="file-download-list four-per-row">
+													<div class="file-download-list">
 														<?php for($i = 0; $i<3;$i++){ ?>
 														<div class="one-file">
 															<div class="file-info file-doc">
@@ -890,7 +890,7 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 									<a href="#" data-filter="brochure" class="filter">Brochures &amp; Forms</a> <a href="#" class="filter" data-filter="technical">Technical</a>
 								</div>
 							</div>
-								<div class="file-download-list four-per-row all-downloads">
+								<div class="file-download-list all-downloads">
 									<div class="one-file" data-group="technical">
 										<div class="file-info file-doc">
 										<div class="icon">
@@ -1177,7 +1177,7 @@ c-0.8-0.8-2.1-0.8-2.8,0L23,20.2L3.4,0.6C2.6-0.2,1.3-0.2,0.6,0.6z"/>
 					</svg>
 												</h4></header>
 												<div class="expand-section internal-expand-body" data-expandsection="installation-files">
-													<div class="file-download-list four-per-row">
+													<div class="file-download-list">
 														<?php for($i = 0; $i<3;$i++){ ?>
 														<div class="one-file">
 															<div class="file-info file-doc">

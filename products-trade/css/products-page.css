@@ -2855,6 +2855,7 @@ Slick slider arrow
 #product-pages #shopping-cart-widget .take-a-tour-box .close {
   top: 18px;
   right: 10px;
+  opacity: 1;
 }
 @media (min-width: 768px) {
   #product-pages #shopping-cart-widget .take-a-tour-box .close {

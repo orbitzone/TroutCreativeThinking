@@ -5901,6 +5901,15 @@ Slick slider arrow
   font-weight: bold;
   font-size: 16px;
 }
+#product-pages .main-section#product-detail .product-description-wrap .product-share b .text-as-svg svg {
+  width: 138px;
+  height: 15px;
+  fill: black;
+}
+#product-pages .main-section#product-detail .product-description-wrap .product-share b .text-as-svg svg text {
+  opacity: 0;
+  font-size: 15px;
+}
 #product-pages .main-section#product-detail .product-description-wrap .product-share .product-share-buttons .share-btn {
   width: 57px;
   line-height: 50px;
@@ -6309,6 +6318,19 @@ Slick slider arrow
   position: absolute;
   right: 0;
   top: 4px;
+}
+#product-pages .main-section#product-detail .section .section-title h3.section-heading .text-as-svg svg {
+  display: block;
+  width: 222px;
+  height: 35px;
+  margin: 0 auto;
+  position: relative;
+  top: inherit;
+  right: inherit;
+  fill: black;
+}
+#product-pages .main-section#product-detail .section .section-title h3.section-heading .text-as-svg svg text {
+  opacity: 0;
 }
 @media (min-width: 768px) {
   #product-pages .main-section#product-detail .section .section-title h3.section-heading svg {

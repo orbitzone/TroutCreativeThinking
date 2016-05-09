@@ -1131,6 +1131,17 @@
 					.caslonBold;
 					font-size: 16px;
 				}
+				.text-as-svg{
+					svg{
+						width: 138px;
+						height: 15px;
+						fill: black;
+						text{
+								opacity: 0;
+								font-size: 15px;
+						}
+					}
+				}
 			}
 			.product-share-buttons{
 				.share-btn{
@@ -1500,6 +1511,21 @@
 					position: absolute;
 					right: 0;
 					top: 4px;
+				}
+				.text-as-svg{
+					svg{
+				    display: block;
+				    width: 222px;
+				    height: 35px;
+				    margin: 0 auto;
+				    position: relative;
+				    top: inherit;
+				    right: inherit;
+				    fill: black;
+				    text{
+				    	opacity: 0;
+				    }
+				  }
 				}		
 				@media (min-width: @screen-sm){
 					svg{

@@ -770,7 +770,10 @@
 			}			
 		}
 		img{
-			//max-height: calc(~"100vh - 40px");
+			max-height: calc(~"100vh - 44px");
+			@media (min-width: @screen-sm){
+				max-height: 100%;
+			}
 			margin: 0 auto;
 		}
 		.product-thumbs{

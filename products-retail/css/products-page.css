@@ -5432,7 +5432,13 @@ Slick slider arrow
   }
 }
 #product-pages .main-section#product-detail .product-images img {
+  max-height: calc(100vh - 44px);
   margin: 0 auto;
+}
+@media (min-width: 768px) {
+  #product-pages .main-section#product-detail .product-images img {
+    max-height: 100%;
+  }
 }
 #product-pages .main-section#product-detail .product-images .product-thumbs {
   padding: 0 30px;

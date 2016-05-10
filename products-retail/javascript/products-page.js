@@ -856,7 +856,9 @@ var product_pages = {
         }
         //Close widget when click on body
         function clickOutsideWidget(e){
-            console.log('inside');
+            console.log($(e.target).parents('#shopping-cart-widget .shopping-cart-content').length);
+            console.log($(e.target).attr('id'));
+            console.log($(e.target).hasClass('shopping-cart-content'));
             if($(e.target).parents('#shopping-cart-widget .shopping-cart-content').length == 0 && $(e.target).attr('id') != 'shopping-cart-widget' && !$(e.target).hasClass('shopping-cart-content')){
                 toggleWidget();
                 e.preventDefault();
@@ -869,23 +871,23 @@ var product_pages = {
         $('#shopping-cart-widget select').selectpicker();
 
         //Trigger action on close button
-        $('#shopping-cart-widget').find('.close-widget').on('click', function(e){
-            $('#shopping-cart-widget').find('aside').trigger('click');
+        $('#shopping-cart-widget').find('.close-widget').on(event, function(e){
+            $('#shopping-cart-widget').find('aside').trigger(event);
             e.preventDefault();
             e.stopPropagation();
         });
 
         //Actions when click on the Widget bar and icons.
-        $('#shopping-cart-widget').find('aside').on('click', function(e){
+        $('#shopping-cart-widget').find('aside').on(event, function(e){
            if($('#scw-wishlist-section').hasClass('open')){
-                $('#scw-wishlist-section').trigger('click');
+                $('#scw-wishlist-section').trigger(event);
             }else{
-                $('#scw-shopping-cart-section').trigger('click');                    
+                $('#scw-shopping-cart-section').trigger(event);                    
             }
             e.stopPropagation();                      
         });
         //Actions when click on shopping cart icon
-        $('#scw-shopping-cart-section').on('click', function(e){
+        $('#scw-shopping-cart-section').on(event, function(e){
             $('.add-to-cart').removeClass('add-to-wishlist');
             if(product_pages.itemsInCart > 0){
                 $('#shopping-cart-widget .shopping-cart-view').removeClass('in').addClass('out');
@@ -903,7 +905,7 @@ var product_pages = {
             e.stopPropagation();                        
         });
         //Actions when click on wishlist icon
-        $('#scw-wishlist-section').on('click', function(e){
+        $('#scw-wishlist-section').on(event, function(e){
             $('.add-to-cart').addClass('add-to-wishlist');
             if(product_pages.itemsInWishlist > 0){
                 $('#shopping-cart-widget .shopping-cart-view').removeClass('in').addClass('out');
@@ -927,7 +929,7 @@ var product_pages = {
 
         //The following actions will be added to any async element added
         //Edit item action
-        $(document).on('click','#shopping-cart-widget .edit-item, #shopping-cart-widget .product-thumbnail, #shopping-cart-widget .item-details',function(e){
+        $(document).on('click','#shopping-cart-widget .edit-item, #shopping-cart-widget .product-thumbnail, #shopping-cart-widget .item-details, #shopping-cart-widget .info-state',function(e){
             if($(this).parent().parent().parent().hasClass('editing')){
                 $('#shopping-cart-widget .one-item').removeClass('editing');
                 $(this).parent().parent().parent().removeClass('editing');
@@ -1368,6 +1370,7 @@ var product_pages = {
         //Main Add to cart action
         $('.product-addbutton button').on('click', function(){
             var quantity = $('.quantity-input input[name=quantity]').val();
+                            
             var obj = $(this).parent();
             if(!obj.hasClass('loading')){
                 obj.toggleClass('loading');

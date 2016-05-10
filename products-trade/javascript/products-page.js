@@ -929,7 +929,7 @@ var product_pages = {
 
         //The following actions will be added to any async element added
         //Edit item action
-        $(document).on('click','#shopping-cart-widget .edit-item, #shopping-cart-widget .product-thumbnail, #shopping-cart-widget .item-details',function(e){
+        $(document).on('click','#shopping-cart-widget .edit-item, #shopping-cart-widget .product-thumbnail, #shopping-cart-widget .item-details, #shopping-cart-widget .info-state',function(e){
             if($(this).parent().parent().parent().hasClass('editing')){
                 $('#shopping-cart-widget .one-item').removeClass('editing');
                 $(this).parent().parent().parent().removeClass('editing');

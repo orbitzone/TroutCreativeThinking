@@ -1875,6 +1875,7 @@ Slick slider arrow
   max-height: 200px;
   overflow: hidden;
   height: auto;
+  cursor: pointer;
   font-family: "Gotham A", "Gotham B";
   font-style: normal;
   font-weight: 700;
@@ -5369,6 +5370,16 @@ Slick slider arrow
     border: none;
   }
 }
+#product-pages .main-section#product-detail .product-images .slick-next {
+  height: 100%;
+  width: 44px;
+  right: 0;
+}
+#product-pages .main-section#product-detail .product-images .slick-prev {
+  height: 100%;
+  width: 44px;
+  left: 0;
+}
 #product-pages .main-section#product-detail .product-images .product-images-slider-wrap {
   position: relative;
   -moz-transition: opacity 0.1s;
@@ -5421,7 +5432,6 @@ Slick slider arrow
   }
 }
 #product-pages .main-section#product-detail .product-images img {
-  max-height: calc(100vh - 40px);
   margin: 0 auto;
 }
 #product-pages .main-section#product-detail .product-images .product-thumbs {

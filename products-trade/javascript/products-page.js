@@ -871,23 +871,23 @@ var product_pages = {
         $('#shopping-cart-widget select').selectpicker();
 
         //Trigger action on close button
-        $('#shopping-cart-widget').find('.close-widget').on('click', function(e){
-            $('#shopping-cart-widget').find('aside').trigger('click');
+        $('#shopping-cart-widget').find('.close-widget').on(event, function(e){
+            $('#shopping-cart-widget').find('aside').trigger(event);
             e.preventDefault();
             e.stopPropagation();
         });
 
         //Actions when click on the Widget bar and icons.
-        $('#shopping-cart-widget').find('aside').on('click', function(e){
+        $('#shopping-cart-widget').find('aside').on(event, function(e){
            if($('#scw-wishlist-section').hasClass('open')){
-                $('#scw-wishlist-section').trigger('click');
+                $('#scw-wishlist-section').trigger(event);
             }else{
-                $('#scw-shopping-cart-section').trigger('click');                    
+                $('#scw-shopping-cart-section').trigger(event);                    
             }
             e.stopPropagation();                      
         });
         //Actions when click on shopping cart icon
-        $('#scw-shopping-cart-section').on('click', function(e){
+        $('#scw-shopping-cart-section').on(event, function(e){
             $('.add-to-cart').removeClass('add-to-wishlist');
             if(product_pages.itemsInCart > 0){
                 $('#shopping-cart-widget .shopping-cart-view').removeClass('in').addClass('out');
@@ -905,7 +905,7 @@ var product_pages = {
             e.stopPropagation();                        
         });
         //Actions when click on wishlist icon
-        $('#scw-wishlist-section').on('click', function(e){
+        $('#scw-wishlist-section').on(event, function(e){
             $('.add-to-cart').addClass('add-to-wishlist');
             if(product_pages.itemsInWishlist > 0){
                 $('#shopping-cart-widget .shopping-cart-view').removeClass('in').addClass('out');

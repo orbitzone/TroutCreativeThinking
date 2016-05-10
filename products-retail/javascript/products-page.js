@@ -856,9 +856,7 @@ var product_pages = {
         }
         //Close widget when click on body
         function clickOutsideWidget(e){
-            console.log($(e.target).parents('#shopping-cart-widget .shopping-cart-content').length);
-            console.log($(e.target).attr('id'));
-            console.log($(e.target).hasClass('shopping-cart-content'));
+            console.log('inside');
             if($(e.target).parents('#shopping-cart-widget .shopping-cart-content').length == 0 && $(e.target).attr('id') != 'shopping-cart-widget' && !$(e.target).hasClass('shopping-cart-content')){
                 toggleWidget();
                 e.preventDefault();
@@ -1370,7 +1368,6 @@ var product_pages = {
         //Main Add to cart action
         $('.product-addbutton button').on('click', function(){
             var quantity = $('.quantity-input input[name=quantity]').val();
-                            
             var obj = $(this).parent();
             if(!obj.hasClass('loading')){
                 obj.toggleClass('loading');

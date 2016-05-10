@@ -10,24 +10,24 @@
 			c0,0.5,0.4,0.9,0.9,0.9h32.1l-4.9,14.9H12.9c-0.5,0-0.9,0.4-0.9,0.9C12,23.8,12.4,24.2,12.9,24.2z"/></svg>
 			</span>
 	</button>
-	<div class="close close-widget">
+	<button class="close close-widget">
 			<svg xmlns="http://www.w3.org/2000/svg" width="67.5px" height="67.5px" viewBox="0 0 67.5 67.5">
 			<path d="M64.8,67.5c-0.7,0-1.4-0.3-1.9-0.8L0.8,4.6c-1.1-1.1-1.1-2.8,0-3.9c1.1-1.1,2.8-1.1,3.9,0l62.1,62.1c1.1,1.1,1.1,2.8,0,3.9
 				C66.2,67.2,65.5,67.5,64.8,67.5z"/>
 			<path d="M2.7,67.5c-0.7,0-1.4-0.3-1.9-0.8c-1.1-1.1-1.1-2.8,0-3.9L62.9,0.8c1.1-1.1,2.8-1.1,3.9,0c1.1,1.1,1.1,2.8,0,3.9L4.6,66.7
 				C4.1,67.2,3.4,67.5,2.7,67.5z"/>
 		</svg>
-		</div>
+		</button>
 	</aside>
 	<section class="shopping-cart-content scrollable">
-		<div class="close close-widget">
+		<button class="close close-widget">
 			<svg xmlns="http://www.w3.org/2000/svg" width="67.5px" height="67.5px" viewBox="0 0 67.5 67.5">
 			<path d="M64.8,67.5c-0.7,0-1.4-0.3-1.9-0.8L0.8,4.6c-1.1-1.1-1.1-2.8,0-3.9c1.1-1.1,2.8-1.1,3.9,0l62.1,62.1c1.1,1.1,1.1,2.8,0,3.9
 				C66.2,67.2,65.5,67.5,64.8,67.5z"/>
 			<path d="M2.7,67.5c-0.7,0-1.4-0.3-1.9-0.8c-1.1-1.1-1.1-2.8,0-3.9L62.9,0.8c1.1-1.1,2.8-1.1,3.9,0c1.1,1.1,1.1,2.8,0,3.9L4.6,66.7
 				C4.1,67.2,3.4,67.5,2.7,67.5z"/>
 		</svg>
-		</div>
+		</button>
 		
 		<!--START TAKE A TOUR SECTION -->
 		<div class="tour-info shopping-cart-view in">
@@ -347,12 +347,12 @@
 									<p class="product-name">Thermann Electical Storage</p>
 									<p class="product-description">Electric Hot Water Unit 250L</p>
 								</span>
-								<span class="remove-from-list">
+								<button class="remove-from-list">
 									<svg xmlns="http://www.w3.org/2000/svg" width="35.5px" height="50px" viewBox="0 0 35.5 50">
 										<path d="M11.6,0h12.2v2.1H11.6V0z"/>
 										<path d="M33.3,4.4h-31H0v2.1h2.2V50h31V6.5h2.2V4.4H33.3z M13.8,38h-2.1V14.9h2.1V38z M23.8,38h-2.1V14.9h2.1V38z"/>
 									</svg>
-								</span>
+								</button>
 								<div class="clear-fix"></div>
 							</div>
 							<footer class="item-footer">
@@ -425,23 +425,15 @@
 		
 		<!--START TAKE A TOUR FOOTER-->
 		<div class="take-a-tour-box out shopping-cart-view">
-		<div class="close">
+		<button class="close">
 			<svg xmlns="http://www.w3.org/2000/svg" width="67.5px" height="67.5px" viewBox="0 0 67.5 67.5">
 <path d="M64.8,67.5c-0.7,0-1.4-0.3-1.9-0.8L0.8,4.6c-1.1-1.1-1.1-2.8,0-3.9c1.1-1.1,2.8-1.1,3.9,0l62.1,62.1c1.1,1.1,1.1,2.8,0,3.9
 	C66.2,67.2,65.5,67.5,64.8,67.5z"/>
 <path d="M2.7,67.5c-0.7,0-1.4-0.3-1.9-0.8c-1.1-1.1-1.1-2.8,0-3.9L62.9,0.8c1.1-1.1,2.8-1.1,3.9,0c1.1,1.1,1.1,2.8,0,3.9L4.6,66.7
 	C4.1,67.2,3.4,67.5,2.7,67.5z"/>
 </svg>
-		</div>
+		</button>
 			<div class="tour-info-small">
-			<div class="close">
-				<svg xmlns="http://www.w3.org/2000/svg" width="67.5px" height="67.5px" viewBox="0 0 67.5 67.5">
-				<path d="M64.8,67.5c-0.7,0-1.4-0.3-1.9-0.8L0.8,4.6c-1.1-1.1-1.1-2.8,0-3.9c1.1-1.1,2.8-1.1,3.9,0l62.1,62.1c1.1,1.1,1.1,2.8,0,3.9
-					C66.2,67.2,65.5,67.5,64.8,67.5z"/>
-				<path d="M2.7,67.5c-0.7,0-1.4-0.3-1.9-0.8c-1.1-1.1-1.1-2.8,0-3.9L62.9,0.8c1.1-1.1,2.8-1.1,3.9,0c1.1,1.1,1.1,2.8,0,3.9L4.6,66.7
-					C4.1,67.2,3.4,67.5,2.7,67.5z"/>
-				</svg>
-			</div>
 				<div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="51.6px" height="51.6px" viewBox="0 0 51.6 51.6">
 <path d="M25.8,0C11.6,0,0,11.6,0,25.8s11.6,25.8,25.8,25.8c14.3,0,25.8-11.6,25.8-25.8S40.1,0,25.8,0z M25.8,48.7
 	C13.2,48.7,3,38.4,3,25.8S13.2,3,25.8,3c12.6,0,22.9,10.2,22.9,22.9S38.4,48.7,25.8,48.7z M24.8,11.1V8.3c0-0.6,0.5-1.1,1.1-1.1

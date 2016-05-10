@@ -795,7 +795,9 @@ var product_pages = {
             $('#shopping-cart-widget').toggleClass('open');
             if($('#shopping-cart-widget').hasClass('open')){
                  //Close widget when click outside
-                $('.main-section').on('click', clickOutsideWidget);
+                 if(!deviceMobile){
+                    $('.main-section').on('click', clickOutsideWidget);
+                }
                 $('html,body').addClass('overflow-hidden');
                 $('#shopping-cart-widget .shopping-cart-content').height('');
                 $('#shopping-cart-widget .shopping-cart-content').css({
@@ -813,7 +815,9 @@ var product_pages = {
                     TweenMax.to($('#shopping-cart-widget .shopping-cart-content'),0.5,{x: 0, opacity: 1});
                 }
             }else{
-                $('.main-section').off('click', clickOutsideWidget);
+                if(!deviceMobile){
+                    $('.main-section').off('click', clickOutsideWidget);
+                }
                 $('html,body').removeClass('overflow-hidden');
                 var right = -535;
                 if($(window).width()> 1199){

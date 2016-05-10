@@ -1095,15 +1095,41 @@ var product_pages = {
         //Copy Product Images slider into the lightbox
         var slider = $('.product-images').clone();
         $('#slider-lightbox .lightbox-content').append(slider);
-        
-        //Actions to the postcode input to show prices.
-        $('input[name=userpostcode]').on('change', function(){
-
-            //TO_UPDATE: This needs to be updated with your code to load the real information of the product
+        function updatePostcode(val){
+            $('.postcode-input input, .postcode-input .enter-your-postcode').hide();
+            $('.postcode-input .postcode-text').text(val);
+            $('.postcode-input .postcode-text-wrap').show();
             $('.product-price').html('$942.99<small>gst inc.</small>');
             $('.product-prices, .product-code').removeClass('hidden');
             $('.product-postcode-input').slideUp();
             $('button.add-to-cart').removeAttr('disabled');
+        }
+
+        //Actions to the postcode input to show prices.
+        $('input[name=userpostcode]').on('change blur', function(){
+            var val = $(this).val();
+            if(val != ""){
+                updatePostcode(val);
+            }else{
+                if($('.postcode-input .postcode-text').text()!=""){
+                  updatePostcode($('.postcode-input .postcode-text').text());  
+                }
+            }
+            //TO_UPDATE: This needs to be updated with your code to load the real information of the product
+           
+        });
+         $('input[name=userpostcode]').on('keyup', function(e){
+            var val = $(this).val();
+            if(val != "" && e.keyCode == 13){
+                updatePostcode(val);
+            }
+         });
+        $('.postcode-input .postcode-link a').on('click', function(){
+            $('.postcode-input input, .postcode-input .enter-your-postcode').show();
+            $('.postcode-input .postcode-text-wrap').hide();
+            $('.postcode-input input').focus();
+            $('.postcode-input input').val($('.postcode-input input').val());            
+            return false;
         });
 
         //Fire lighbox with video from elements with the lightbox-video class.

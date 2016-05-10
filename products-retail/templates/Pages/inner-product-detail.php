@@ -14,8 +14,11 @@
 	<div class="container-fluid section-container">
 		<div class="row">
 			<div class="col-xs-12">
-				<span class="text"><b>Pricing</b> Enter your postcode for current pricing. </span>
-				<input type="number" name="userpostcode" placeholder="Postcode" class="input-medium" inputmode="numeric" minlength="4" maxlength="4" min="0" max="9999" pattern="[0-9]*">
+				<span class="text"><b>Pricing</b>
+					<span class="enter-your-postcode">Enter your postcode for current pricing. </span>
+					<span class="postcode-text-wrap">Current postcode <span class="postcode-text"></span> <span class="postcode-link">(<a href="#">change</a>)</span></span>
+				</span>
+				<input type="text" name="userpostcode" placeholder="Postcode" class="input-medium" inputmode="numeric" minlength="4" maxlength="4" min="0" max="9999" pattern="[0-9]*">				
 			</div>
 		</div>
 	</div>	
@@ -180,7 +183,7 @@
 										<p>Enter your postcode for current pricing</p>	
 									</div>
 									<div class="product-postcode-input-field">
-										<input type="number" name="userpostcode" placeholder="Postcode" class="input-medium" inputmode="numeric" minlength="4" maxlength="4" min="0" max="9999" pattern="[0-9]*">
+										<input type="text" name="userpostcode" placeholder="Postcode" class="input-medium" inputmode="numeric" minlength="4" maxlength="4" min="0" max="9999" pattern="[0-9]*">
 									</div>
 								</div>
 								<div class="product-quantity-wrap">
@@ -489,7 +492,7 @@
 								<div class="postcode-wrap">
 									<form action="#" method="POST">
 										<label for="display-postcode">Enter your postcode</label>
-										<input type="number" name="display-postcode" id="display-postcode" placeholder="Postcode" inputmode="numeric" minlength="4" maxlength="4" min="0" max="9999" pattern="[0-9]*"/>
+										<input type="text" name="display-postcode" id="display-postcode" placeholder="Postcode" inputmode="numeric" minlength="4" maxlength="4" min="0" max="9999" pattern="[0-9]*"/>
 										<button type="submit" class="btn call-to-action">Go</button>
 									</form>
 								</div>

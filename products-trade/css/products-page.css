@@ -1140,6 +1140,106 @@ Slick slider arrow
 #product-pages .breadcrumb-section .breadcrumb-inner .breadcrumbs li:last-child:after {
   display: none;
 }
+#product-pages .postcode-input {
+  background: #f1f1f1 url("/templates/images/product-detail/bg-grey-stripes.jpg");
+  padding: 20px 0;
+  font-size: 12px;
+  position: relative;
+  line-height: 14px;
+}
+#product-pages .postcode-input b {
+  display: block;
+  font-size: 22px;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+#product-pages .postcode-input input {
+  max-width: 150px;
+  height: 38px;
+  float: right;
+  width: 40%;
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  font-size: 25px;
+  max-width: 120px;
+  text-align: center;
+}
+#product-pages .postcode-input input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  line-height: 45px;
+  font-size: 16px;
+  position: relative;
+  top: -4px;
+}
+#product-pages .postcode-input input:-ms-input-placeholder {
+  /* IE 10+ */
+  line-height: 45px;
+  font-size: 16px;
+  position: relative;
+}
+#product-pages .postcode-input input::-moz-placeholder {
+  line-height: 45px;
+  font-size: 16px;
+  position: relative;
+  top: -4px;
+}
+#product-pages .postcode-input input:-moz-placeholder {
+  line-height: 45px;
+  font-size: 16px;
+  position: relative;
+  top: -4px;
+}
+#product-pages .postcode-input input::placeholder {
+  line-height: 45px;
+  font-size: 16px;
+  position: relative;
+  top: -4px;
+}
+#product-pages .postcode-input .text {
+  width: 50%;
+  float: left;
+  padding-right: 10px;
+  line-height: 38px;
+}
+#product-pages .postcode-input .postcode-text-wrap {
+  display: none;
+}
+#product-pages .postcode-input .postcode-text {
+  font-weight: bold;
+  font-size: 16px;
+  color: #0776aa;
+}
+#product-pages .postcode-input .postcode-link {
+  font-size: 10px;
+  line-height: 10px;
+}
+#product-pages .postcode-input .postcode-link a {
+  color: black;
+}
+@media (min-width: 768px) {
+  #product-pages .postcode-input {
+    padding: 9px 0;
+    font-size: 15px;
+  }
+  #product-pages .postcode-input .text {
+    width: auto;
+    float: none;
+  }
+  #product-pages .postcode-input .text b {
+    display: inline;
+    margin-bottom: 0;
+  }
+  #product-pages .postcode-input input {
+    position: relative;
+    right: inherit;
+    bottom: inherit;
+    margin-top: 0;
+    margin-left: 18px;
+    width: 100%;
+    float: none;
+  }
+}
 #product-pages #shopping-cart-widget {
   background: #066693;
   will-change: transform;
@@ -4580,8 +4680,10 @@ Slick slider arrow
   font-weight: 500;
   font-weight: 400;
 }
-#product-pages .main-section#product-detail a:hover {
-  color: #0776aa;
+@media (min-width: 768px) {
+  #product-pages .main-section#product-detail a:hover {
+    color: #0776aa;
+  }
 }
 #product-pages .main-section#product-detail a[x-apple-data-detectors] {
   color: inherit !important;
@@ -6090,8 +6192,11 @@ Slick slider arrow
   height: 55px;
   vertical-align: middle;
 }
-#product-pages .main-section#product-detail #product-display .postcode-wrap button:hover {
-  color: #6dc8b6;
+@media (min-width: 768px) {
+  #product-pages .main-section#product-detail #product-display .postcode-wrap button:hover {
+    color: #6dc8b6;
+    background: white;
+  }
 }
 #product-pages .main-section#product-detail #product-display .address a {
   color: #888888;
@@ -6100,8 +6205,10 @@ Slick slider arrow
   font-style: normal;
   font-weight: 700;
 }
-#product-pages .main-section#product-detail #product-display .address a:hover {
-  color: #6dc8b6;
+@media (min-width: 768px) {
+  #product-pages .main-section#product-detail #product-display .address a:hover {
+    color: #6dc8b6;
+  }
 }
 #product-pages .main-section#product-detail #complete-the-look .slick-next,
 #product-pages .main-section#product-detail #complete-the-look .slick-prev {

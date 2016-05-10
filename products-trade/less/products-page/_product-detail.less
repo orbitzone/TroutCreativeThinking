@@ -89,7 +89,9 @@
 		.gothamMedium;
 		font-weight: @section-link-font-weight;
 		&:hover{
-			color: @section-link-hover-color;
+			@media (min-width: @screen-sm){
+				color: @section-link-hover-color;
+			}
 		}
 	}
 	a[x-apple-data-detectors] {
@@ -1345,7 +1347,10 @@
 				height: 55px;
 				vertical-align: middle;
 				&:hover{
-					color: @product-display-button-bg;				
+					@media (min-width: @screen-sm){
+						color: @product-display-button-bg;
+						background: white;									
+					}
 				}
 			}
 		}
@@ -1355,7 +1360,9 @@
 				text-decoration: underline;
 				.gothamBold;
 				&:hover{
-					color: @product-display-address-link-hover-color;
+					@media (min-width: @screen-sm){
+						color: @product-display-address-link-hover-color;
+					}
 				}
 			}
 		}		

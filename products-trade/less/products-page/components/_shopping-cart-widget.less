@@ -209,7 +209,7 @@
 		-ms-overflow-style: -ms-autohiding-scrollbar;
 		
 		padding: 0;
-		overflow: scroll;
+		overflow-y: auto;
 		overflow-x: hidden;
 		-webkit-overflow-scrolling: touch;
 		width: 100%;
@@ -337,8 +337,8 @@
 		-ms-overflow-style: -ms-autohiding-scrollbar;
 		touch-action: manipulation;
 		background: @widget-bar-bg;
-		overflow: scroll;
-		-webkit-overflow-scrolling: touch;
+		/*overflow: scroll;
+		-webkit-overflow-scrolling: touch;*/
 		text-align: center;
 		cursor: pointer;
 		padding: 0 0;
@@ -347,13 +347,14 @@
 			overflow: hidden;
 		}
 		@media (min-width: @screen-sm){
+			overflow: hidden;
 			border-bottom: none;
 			padding-top: 0;
 			position: absolute;
 			top: 0;
 			left: 0;			
 			width: 50px;
-			//height: 200%;
+			height: 100%;
 			&.ie{
 				height: 100%;
 			}

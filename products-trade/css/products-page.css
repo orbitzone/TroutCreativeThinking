@@ -1290,7 +1290,7 @@ Slick slider arrow
 #product-pages #shopping-cart-widget .shopping-cart-content {
   -ms-overflow-style: -ms-autohiding-scrollbar;
   padding: 0;
-  overflow: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
   width: 100%;
@@ -1447,8 +1447,8 @@ Slick slider arrow
   -ms-overflow-style: -ms-autohiding-scrollbar;
   touch-action: manipulation;
   background: #0776aa;
-  overflow: scroll;
-  -webkit-overflow-scrolling: touch;
+  /*overflow: scroll;
+		-webkit-overflow-scrolling: touch;*/
   text-align: center;
   cursor: pointer;
   padding: 0 0;
@@ -1459,12 +1459,14 @@ Slick slider arrow
 }
 @media (min-width: 768px) {
   #product-pages #shopping-cart-widget aside {
+    overflow: hidden;
     border-bottom: none;
     padding-top: 0;
     position: absolute;
     top: 0;
     left: 0;
     width: 50px;
+    height: 100%;
   }
   #product-pages #shopping-cart-widget aside.ie {
     height: 100%;

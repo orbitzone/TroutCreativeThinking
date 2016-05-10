@@ -1082,7 +1082,7 @@ Slick slider arrow
 #product-pages #shopping-cart-widget .shopping-cart-content {
   -ms-overflow-style: -ms-autohiding-scrollbar;
   padding: 0;
-  overflow: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
   width: 100%;
@@ -1239,8 +1239,8 @@ Slick slider arrow
   -ms-overflow-style: -ms-autohiding-scrollbar;
   touch-action: manipulation;
   background: #6dc8b6;
-  overflow: scroll;
-  -webkit-overflow-scrolling: touch;
+  /*overflow: scroll;
+		-webkit-overflow-scrolling: touch;*/
   text-align: center;
   cursor: pointer;
   padding: 0 0;
@@ -5163,12 +5163,12 @@ Slick slider arrow
   }
 }
 #product-pages .main-section#product-detail .product-detail-wrap {
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
   padding-right: 0;
 }
 @media (min-width: 768px) {
   #product-pages .main-section#product-detail .product-detail-wrap {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
     padding-right: 50px;
   }
 }

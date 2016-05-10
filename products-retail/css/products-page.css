@@ -182,6 +182,11 @@ MAIN TITLE
 Slick slider arrow
 */
 }
+#product-pages .slick-slider {
+  -ms-touch-action: inherit;
+  touch-action: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
 #product-pages .slick-dots {
   position: relative;
   bottom: inherit;

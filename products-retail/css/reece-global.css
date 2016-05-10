@@ -6813,6 +6813,7 @@ h6 {
 @media (max-width: 979px) {
   .ocnav-wrapper {
     display: block;
+    right: -280px;
   }
   .off-canvas-open .ocnav-wrapper {
     right: 0;

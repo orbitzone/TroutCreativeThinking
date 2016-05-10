@@ -71,7 +71,17 @@
 @table-header-bg: #f4f4f4;
 
 @we-love-color: #6dc8b6;
-
+/*a{
+	color: @section-link-color;
+	text-decoration: underline;
+	.gothamMedium;
+	font-weight: @section-link-font-weight;
+	&:hover{
+		@media (min-width: @screen-sm){
+			color: @section-link-hover-color;
+		}
+	}
+}*/
 .main-section#product-detail{
 	color: @body-color;
 	padding-top: 44px;
@@ -81,18 +91,7 @@
   :focus:-ms-input-placeholder      {color: transparent}
 	img{
 		max-width: 100%;
-	}
-	a{
-		color: @section-link-color;
-		text-decoration: underline;
-		.gothamMedium;
-		font-weight: @section-link-font-weight;
-		&:hover{
-			@media (min-width: @screen-sm){
-				color: @section-link-hover-color;
-			}
-		}
-	}
+	}	
 	a[x-apple-data-detectors] {
   color: inherit !important;
   text-decoration: none !important;

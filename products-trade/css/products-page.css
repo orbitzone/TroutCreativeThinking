@@ -758,19 +758,6 @@ Slick slider arrow
 #product-pages .call-to-action:hover:hover {
   color: #0776aa;
 }
-#product-pages .black-button {
-  background: #333;
-  border-color: #333333;
-  color: white;
-}
-@media (min-width: 768px) {
-  #product-pages .black-button:hover {
-    color: #333;
-  }
-  #product-pages .black-button:hover:before {
-    background: white;
-  }
-}
 #product-pages .add-to-cart {
   padding: 15px 20px;
   background: #0776aa;
@@ -922,21 +909,81 @@ Slick slider arrow
   font-size: 13px;
   text-transform: uppercase;
 }
-#product-pages .btn.blue-button {
-  background: #0776aa;
+#product-pages .btn.green-button {
+  background: #6dc8b6;
   color: #ffffff;
 }
-#product-pages .btn.light-blue-button {
-  background: #099ade;
+@media (min-width: 768px) {
+  #product-pages .btn.green-button:hover {
+    color: #333333;
+    background: white;
+  }
+}
+#product-pages .btn.light-green-button {
+  background: #6dc8b6;
+  border-color: #6dc8b6;
   color: #ffffff;
+}
+@media (min-width: 768px) {
+  #product-pages .btn.light-green-button:hover {
+    color: #6dc8b6;
+    background: white;
+  }
+}
+#product-pages .btn.orange-button {
+  background: #eeba90;
+  border-color: #eeba90;
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  #product-pages .btn.orange-button:hover {
+    color: #eeba90;
+    background: white;
+  }
 }
 #product-pages .btn.grey-button {
   background: #999999;
+  border-color: #999999;
   color: #ffffff;
+}
+@media (min-width: 768px) {
+  #product-pages .btn.grey-button:hover {
+    color: #999999;
+    background: white;
+  }
 }
 #product-pages .btn.black-button {
   background: #333333;
+  border-color: #333333;
   color: #ffffff;
+}
+@media (min-width: 768px) {
+  #product-pages .btn.black-button:hover {
+    color: #333333;
+    background: white;
+  }
+}
+#product-pages .btn.blue-button {
+  background: #066794;
+  border-color: #066794;
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  #product-pages .btn.blue-button:hover {
+    color: #066794;
+    background: white;
+  }
+}
+#product-pages .btn.light-blue-button {
+  background: #099ade;
+  border-color: #099ade;
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  #product-pages .btn.light-blue-button:hover {
+    color: #099ade;
+    background: white;
+  }
 }
 #product-pages .btn.small-width {
   padding: 15px 25px;
@@ -1008,41 +1055,6 @@ Slick slider arrow
 @media (max-width: 767px) {
   #product-pages .page-title h1 {
     text-align: center;
-  }
-}
-#product-pages .add-to-cart .add-to-cart-text {
-  display: block;
-}
-#product-pages .add-to-cart .add-to-wishlist-text {
-  display: none;
-}
-#product-pages .add-to-cart.add-to-wishlist .add-to-cart-text {
-  display: none;
-}
-#product-pages .add-to-cart.add-to-wishlist .add-to-wishlist-text {
-  display: block;
-  font-size: 15px;
-}
-#product-pages .add-to-cart.add-to-wishlist .add-to-wishlist-text svg {
-  width: 30px;
-  height: 25px;
-}
-@media (min-width: 768px) {
-  #product-pages .add-to-cart.add-to-wishlist .add-to-wishlist-text {
-    font-size: 13px;
-  }
-  #product-pages .add-to-cart.add-to-wishlist .add-to-wishlist-text svg {
-    width: 24px;
-    height: 20px;
-  }
-}
-@media (min-width: 992px) {
-  #product-pages .add-to-cart.add-to-wishlist .add-to-wishlist-text {
-    font-size: 15px;
-  }
-  #product-pages .add-to-cart.add-to-wishlist .add-to-wishlist-text svg {
-    width: 30px;
-    height: 25px;
   }
 }
 #product-pages .progress-button {
@@ -5044,6 +5056,19 @@ Slick slider arrow
     min-height: 5px;
   }
 }
+#product-pages a {
+  color: #0776aa;
+  text-decoration: underline;
+  font-family: "Gotham A", "Gotham B";
+  font-style: normal;
+  font-weight: 500;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  #product-pages a:hover {
+    color: #0776aa;
+  }
+}
 #product-pages .main-section#product-detail {
   color: black;
   padding-top: 44px;
@@ -5065,19 +5090,6 @@ Slick slider arrow
 }
 #product-pages .main-section#product-detail img {
   max-width: 100%;
-}
-#product-pages .main-section#product-detail a {
-  color: #0776aa;
-  text-decoration: underline;
-  font-family: "Gotham A", "Gotham B";
-  font-style: normal;
-  font-weight: 500;
-  font-weight: 400;
-}
-@media (min-width: 768px) {
-  #product-pages .main-section#product-detail a:hover {
-    color: #0776aa;
-  }
 }
 #product-pages .main-section#product-detail a[x-apple-data-detectors] {
   color: inherit !important;

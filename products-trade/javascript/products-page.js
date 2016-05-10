@@ -35,6 +35,34 @@ var isIE = function(){
     return false; //It is not IE
   }
 };
+var sameHeight = function(obj){
+  var currentTallest = 0,
+   currentRowStart = 0,
+   rowDivs = new Array(),
+   $el,
+   topPosition = 0;
+   $(obj).height('auto');
+   $(obj).each(function() {
+    $el = $(this);
+    topPosition = $el.offset().top;
+     
+    if (currentRowStart != topPosition) {
+      for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+        rowDivs[currentDiv].height(currentTallest);
+      }
+      rowDivs.length = 0;
+      currentRowStart = topPosition;
+      currentTallest = $el.height();
+      rowDivs.push($el);
+    } else {
+     rowDivs.push($el);
+     currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
+    }
+    for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+     rowDivs[currentDiv].height(currentTallest);
+    }            
+  });    
+};
 var ieV = isIE();
 
 /* Youtube API code for channel page */
@@ -640,7 +668,7 @@ var product_pages = {
         var finaltop = $('#shopping-cart-widget aside '+section+' .cart-items').offset().top  - $(window).scrollTop() - 20;
         var finalleft = $('#shopping-cart-widget aside '+section+' .cart-items').offset().left -20;
         TweenMax.to($added, 0.6, {bezier:{type:"cubic", values:[{x:0, y:0}, {x:0, y: finaltop - top}, {x: finalleft - left, y: finaltop - top}, {x: finalleft - left, y: finaltop - top }], autoRotate:["x","y","rotation", 0, true]}, scale:0.5, ease:Power1.easeInOut, onComplete: function(){ 
-            TweenMax.to($added, 0.4,{ scale: 0, ease: Elastic.easeInOut, onComplete: function(){
+            TweenMax.to($added, 0.4,{ scale: 0, ease: Back.easeIn, onComplete: function(){
                 $(section+' .cart-items-wrap').removeClass('no-items');
                 $(section+' .cart-items').text(items);
                 $added.remove();
@@ -1064,6 +1092,9 @@ var product_pages = {
                 'dots': true,
                 'arrows':false
             });
+            $('#products .product-images-slider').on('setPosition', function(){
+                $(window).resize();
+            });
         }
         $.ajax({
             url: 'templates/Ajax/category-product.php',
@@ -1076,15 +1107,25 @@ var product_pages = {
 
             }
         });
+        //Initialise radio button
+        $(document).on('click','.quantity-units.multiple-units .radio-button', function() {
+            $(this).parent(".radiolabel-set").find(".radio-button").removeClass("active");
+            $(this).addClass("active");
+            var id = $(this).attr('for');
+            var unit = $('#'+id).val();
+            console.log($(this).parents(".product-content").length);
+            $(this).parents(".product-content").find('.product-price-cmp, .product-price-my').addClass('hide');
+            $(this).parents(".product-content").find('.price-'+unit).removeClass('hide');
+        });
 
         $(document).on('click','.product .add-to-cart', function(){
             var obj = $(this).parent();
-            var quantity = obj.parent().find('input.quantity-number').val();
+            var quantity = obj.parents('.product-content').find('input.quantity-number').val();
                             
             if(!obj.hasClass('loading')){
                 obj.toggleClass('loading');
 
-                    var img = obj.parent().parent().find('.product-image img').first().attr("src");
+                    var img = obj.parents('.product-content').find('.product-image img').first().attr("src");
                     var code = $(this).data('code');
                     if($('#scw-wishlist-section').hasClass('open')){
                         
@@ -1106,6 +1147,11 @@ var product_pages = {
                 
             }
         });
+        $(window).on('resize', function(){
+            sameHeight('#products .product-image');
+            sameHeight('#products .product-details');
+            sameHeight('#products .product');
+        }).resize();
     },
     productDetail: function(){
         //Detect if device is mobile to use touch event in some actions for a fast load.

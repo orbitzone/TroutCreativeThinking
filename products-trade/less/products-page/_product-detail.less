@@ -89,7 +89,9 @@
 		.gothamMedium;
 		font-weight: @section-link-font-weight;
 		&:hover{
-			color: @section-link-hover-color;
+			@media (min-width: @screen-sm){
+				color: @section-link-hover-color;
+			}
 		}
 	}
 	a[x-apple-data-detectors] {
@@ -108,8 +110,9 @@
 		border: 2px solid @main-color;
 		padding: 15px 20px;
 		text-decoration: none;
+		.box-shadow(none);
 		.transition(0.2s all ease-out);
-		&:before{
+		/*&:before{
 			@media (min-width: @screen-sm){
 				content: " ";
 				position: absolute;
@@ -122,14 +125,15 @@
 				.transform(translateX(-100%));
 				.transition(0.2s all ease-out);
 			}
-		}
+		}*/
 		&:hover{
 			@media (min-width: @screen-sm){
 				color: @main-color;
-				&:before{
+				background: white;
+				/*&:before{
 					width: 100%;
 					.transform(translateX(0));
-				}
+				}*/
 			}
 		}
 	}
@@ -142,7 +146,9 @@
 			background: @call-to-action-hover-bg;
 		}
 		&:hover{
-			color: @call-to-action-hover-color;
+			&:hover{
+				color: @call-to-action-hover-color;
+			}
 		}
 	}
 	.black-button{
@@ -167,12 +173,47 @@
 			background: @add-to-cart-hover-bg;
 		}
 		&:hover{
-			color: @add-to-cart-hover-color;
+			@media (min-width: @screen-sm){
+				color: @add-to-cart-hover-color;
+			}
 		}
 		&:disabled, &[disabled]{
 			border-color: @add-to-cart-disabled-bg;
 			background: @add-to-cart-disabled-bg;
 			color: @add-to-cart-disabled-color;
+		}
+		.add-to-cart-text{
+			display: block;
+		}
+		.add-to-wishlist-text{
+			display: none;
+		}
+		&.add-to-wishlist{
+			.add-to-cart-text{
+				display: none;
+			}
+			.add-to-wishlist-text{
+				display: block;
+				font-size: 15px;
+				svg{
+					width: 30px;
+  				height: 25px;
+				}
+				@media (min-width: @screen-sm){
+					font-size: 13px;
+					svg{
+						width: 24px;
+    				height: 20px;
+					}
+				}
+				@media (min-width: @screen-md){
+					font-size: 15px;
+					svg{
+						width: 30px;
+    				height: 25px;
+					}
+				}
+			}	
 		}
 	}
 	.slick-dots{
@@ -390,7 +431,7 @@
 				top: -4px;
 			}
 			&:hover{
-				color: @add-to-cart-color;	
+				color: @add-to-cart-color;
 				@media (min-width: @screen-sm){
 					color: @add-to-cart-hover-color;	
 				}
@@ -531,46 +572,11 @@
 			}
 		}
 	}//End progress button
-	.add-to-cart{
-		.add-to-cart-text{
-			display: block;
-		}
-		.add-to-wishlist-text{
-			display: none;
-		}
-		&.add-to-wishlist{
-			.add-to-cart-text{
-				display: none;
-			}
-			.add-to-wishlist-text{
-				display: block;
-				font-size: 15px;
-				svg{
-					width: 30px;
-  				height: 25px;
-				}
-				@media (min-width: @screen-sm){
-					font-size: 13px;
-					svg{
-						width: 24px;
-    				height: 20px;
-					}
-				}
-				@media (min-width: @screen-md){
-					font-size: 15px;
-					svg{
-						width: 30px;
-    				height: 25px;
-					}
-				}
-			}	
-		}
-	}
 	.product-detail-wrap{
-		overflow-y: scroll; 
-		-webkit-overflow-scrolling : touch;
 		padding-right: 0;
 		@media (min-width: @screen-sm){
+		overflow-y: scroll; 
+		-webkit-overflow-scrolling : touch;
 			padding-right: 50px;
 		}
 		@media (min-width: @screen-lg){
@@ -707,6 +713,16 @@
 				border: none;
 			}
 		}//END slick-dots
+		.slick-next{
+			height: 100%;
+			width: 44px;
+			right: 0;
+		}
+		.slick-prev{
+			height: 100%;
+			width: 44px;
+			left: 0;
+		}
 		.product-images-slider-wrap{
 			position: relative;
 			.transition(opacity .1s);
@@ -714,9 +730,9 @@
 				opacity: 0;
 			}
 			
-				.image{
-					cursor: pointer;
-				}
+			.image{
+				cursor: pointer;
+			}
 			.zoom{
 				position: absolute;
 				bottom: 25px;
@@ -754,7 +770,10 @@
 			}			
 		}
 		img{
-			max-height: calc(~"100vh - 40px");
+			max-height: calc(~"100vh - 44px");
+			@media (min-width: @screen-sm){
+				max-height: 100%;
+			}
 			margin: 0 auto;
 		}
 		.product-thumbs{
@@ -1328,7 +1347,10 @@
 				height: 55px;
 				vertical-align: middle;
 				&:hover{
-					color: @product-display-button-bg;				
+					@media (min-width: @screen-sm){
+						color: @product-display-button-bg;
+						background: white;									
+					}
 				}
 			}
 		}
@@ -1338,7 +1360,9 @@
 				text-decoration: underline;
 				.gothamBold;
 				&:hover{
-					color: @product-display-address-link-hover-color;
+					@media (min-width: @screen-sm){
+						color: @product-display-address-link-hover-color;
+					}
 				}
 			}
 		}		

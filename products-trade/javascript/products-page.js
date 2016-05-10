@@ -750,7 +750,7 @@ var product_pages = {
         removeIOSRubberEffect( document.querySelector( ".scrollable" ));
         //Prevent body scroll when scrolling on widget on touch devices.
         $('#shopping-cart-widget').on('touchmove', function(e) {
-            if(!$(e.target).parents('#shopping-cart-widget .shopping-cart-content') && !$(e.target).attr('id')=='#shopping-cart-widget'){
+            if($(e.target).parents('#shopping-cart-widget .shopping-cart-content').length == 0 && $(e.target).attr('id')!='shopping-cart-widget' && !$(e.target).hasClass('shopping-cart-content')){
                 e.preventDefault();
             }else{                
                 var height = window.innerHeight ? window.innerHeight : $(window).height();
@@ -771,7 +771,7 @@ var product_pages = {
         //Prevent body scroll when mouse over the widget on desktop.
         if(!deviceMobile){
             var scrollTopOnHover = 0;
-            $('#shopping-cart-widget').on('mouseover', function(){
+            /*$('#shopping-cart-widget').on('mouseover', function(){
                 if(!ieV || ieV > 9){
                     $('html,body').addClass('overflow-hidden');
                 }
@@ -781,7 +781,7 @@ var product_pages = {
                     $('html,body').removeClass('overflow-hidden');
                 }
                 setTimeout( function(){ $(window).scrollTop(scrollTopOnHover)}, 100);
-            });
+            });*/
         }
 
         //Animate Widget when open and close.
@@ -794,6 +794,11 @@ var product_pages = {
             
             $('#shopping-cart-widget').toggleClass('open');
             if($('#shopping-cart-widget').hasClass('open')){
+                 //Close widget when click outside
+                 if(!deviceMobile){
+                    $('.main-section').on('click', clickOutsideWidget);
+                }
+                $('html,body').addClass('overflow-hidden');
                 $('#shopping-cart-widget .shopping-cart-content').height('');
                 $('#shopping-cart-widget .shopping-cart-content').css({
                     display: 'block'
@@ -810,6 +815,10 @@ var product_pages = {
                     TweenMax.to($('#shopping-cart-widget .shopping-cart-content'),0.5,{x: 0, opacity: 1});
                 }
             }else{
+                if(!deviceMobile){
+                    $('.main-section').off('click', clickOutsideWidget);
+                }
+                $('html,body').removeClass('overflow-hidden');
                 var right = -535;
                 if($(window).width()> 1199){
                     right = -502;
@@ -845,6 +854,16 @@ var product_pages = {
                 }
             }
         }
+        //Close widget when click on body
+        function clickOutsideWidget(e){
+            console.log($(e.target).parents('#shopping-cart-widget .shopping-cart-content').length);
+            console.log($(e.target).attr('id'));
+            console.log($(e.target).hasClass('shopping-cart-content'));
+            if($(e.target).parents('#shopping-cart-widget .shopping-cart-content').length == 0 && $(e.target).attr('id') != 'shopping-cart-widget' && !$(e.target).hasClass('shopping-cart-content')){
+                toggleWidget();
+                e.preventDefault();
+            }
+        }
 
         //START INITIALIZATION AND ASIDE ACTIONS
 
@@ -852,23 +871,23 @@ var product_pages = {
         $('#shopping-cart-widget select').selectpicker();
 
         //Trigger action on close button
-        $('#shopping-cart-widget').find('.close-widget').on('click', function(e){
-            $('#shopping-cart-widget').find('aside').trigger('click');
+        $('#shopping-cart-widget').find('.close-widget').on(event, function(e){
+            $('#shopping-cart-widget').find('aside').trigger(event);
             e.preventDefault();
             e.stopPropagation();
         });
 
         //Actions when click on the Widget bar and icons.
-        $('#shopping-cart-widget').find('aside').on('click', function(e){
+        $('#shopping-cart-widget').find('aside').on(event, function(e){
            if($('#scw-wishlist-section').hasClass('open')){
-                $('#scw-wishlist-section').trigger('click');
+                $('#scw-wishlist-section').trigger(event);
             }else{
-                $('#scw-shopping-cart-section').trigger('click');                    
+                $('#scw-shopping-cart-section').trigger(event);                    
             }
             e.stopPropagation();                      
         });
         //Actions when click on shopping cart icon
-        $('#scw-shopping-cart-section').on('click', function(e){
+        $('#scw-shopping-cart-section').on(event, function(e){
             $('.add-to-cart').removeClass('add-to-wishlist');
             if(product_pages.itemsInCart > 0){
                 $('#shopping-cart-widget .shopping-cart-view').removeClass('in').addClass('out');
@@ -886,7 +905,7 @@ var product_pages = {
             e.stopPropagation();                        
         });
         //Actions when click on wishlist icon
-        $('#scw-wishlist-section').on('click', function(e){
+        $('#scw-wishlist-section').on(event, function(e){
             $('.add-to-cart').addClass('add-to-wishlist');
             if(product_pages.itemsInWishlist > 0){
                 $('#shopping-cart-widget .shopping-cart-view').removeClass('in').addClass('out');
@@ -910,7 +929,7 @@ var product_pages = {
 
         //The following actions will be added to any async element added
         //Edit item action
-        $(document).on('click','#shopping-cart-widget .edit-item, #shopping-cart-widget .product-thumbnail, #shopping-cart-widget .item-details',function(e){
+        $(document).on('click','#shopping-cart-widget .edit-item, #shopping-cart-widget .product-thumbnail, #shopping-cart-widget .item-details, #shopping-cart-widget .info-state',function(e){
             if($(this).parent().parent().parent().hasClass('editing')){
                 $('#shopping-cart-widget .one-item').removeClass('editing');
                 $(this).parent().parent().parent().removeClass('editing');
@@ -1127,15 +1146,41 @@ var product_pages = {
         //Copy Product Images slider into the lightbox
         var slider = $('.product-images').clone();
         $('#slider-lightbox .lightbox-content').append(slider);
-        
-        //Actions to the postcode input to show prices.
-        $('input[name=userpostcode]').on('change', function(){
-
-            //TO_UPDATE: This needs to be updated with your code to load the real information of the product
+        function updatePostcode(val){
+            $('.postcode-input input, .postcode-input .enter-your-postcode').hide();
+            $('.postcode-input .postcode-text').text(val);
+            $('.postcode-input .postcode-text-wrap').show();
             $('.product-price').html('$942.99<small>gst inc.</small>');
             $('.product-prices, .product-code').removeClass('hidden');
             $('.product-postcode-input').slideUp();
             $('button.add-to-cart').removeAttr('disabled');
+        }
+
+        //Actions to the postcode input to show prices.
+        $('input[name=userpostcode]').on('change blur', function(){
+            var val = $(this).val();
+            if(val != ""){
+                updatePostcode(val);
+            }else{
+                if($('.postcode-input .postcode-text').text()!=""){
+                  updatePostcode($('.postcode-input .postcode-text').text());  
+                }
+            }
+            //TO_UPDATE: This needs to be updated with your code to load the real information of the product
+           
+        });
+         $('input[name=userpostcode]').on('keyup', function(e){
+            var val = $(this).val();
+            if(val != "" && e.keyCode == 13){
+                updatePostcode(val);
+            }
+         });
+        $('.postcode-input .postcode-link a').on('click', function(){
+            $('.postcode-input input, .postcode-input .enter-your-postcode').show();
+            $('.postcode-input .postcode-text-wrap').hide();
+            $('.postcode-input input').focus();
+            $('.postcode-input input').val($('.postcode-input input').val());            
+            return false;
         });
 
         //Fire lighbox with video from elements with the lightbox-video class.

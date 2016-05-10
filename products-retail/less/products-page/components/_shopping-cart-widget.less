@@ -154,8 +154,10 @@
 						background: @select-bg;
 					}
 				&:hover{
-					color: @select-color;
-					background: @select-bg;					
+					&:hover{
+						color: @select-color;
+						background: @select-bg;					
+					}
 				}
 			}
 			.caret{
@@ -209,7 +211,7 @@
 		-ms-overflow-style: -ms-autohiding-scrollbar;
 		
 		padding: 0;
-		overflow: scroll;
+		overflow-y: auto;
 		overflow-x: hidden;
 		-webkit-overflow-scrolling: touch;
 		width: 100%;
@@ -262,8 +264,8 @@
 		aside{
 		 border-bottom: 1px solid @widget-content-bg;
 		 .close{
-		 	top: 12px;
-    	right: 10px;
+		 	top: 5px;
+    	right: 2px;
 		 	opacity: 1;
 		 	@media (min-width: @screen-sm){
 		 		display: none;
@@ -337,8 +339,8 @@
 		-ms-overflow-style: -ms-autohiding-scrollbar;
 		touch-action: manipulation;
 		background: @widget-bar-bg;
-		overflow: scroll;
-		-webkit-overflow-scrolling: touch;
+		/*overflow: scroll;
+		-webkit-overflow-scrolling: touch;*/
 		text-align: center;
 		cursor: pointer;
 		padding: 0 0;
@@ -347,13 +349,14 @@
 			overflow: hidden;
 		}
 		@media (min-width: @screen-sm){
+			overflow: hidden;
 			border-bottom: none;
 			padding-top: 0;
 			position: absolute;
 			top: 0;
 			left: 0;			
 			width: 50px;
-			height: 200%;
+			height: 100%;
 			&.ie{
 				height: 100%;
 			}
@@ -409,7 +412,7 @@
     			margin-bottom: 30px;
     		}
     	}
-    	&:first-child{
+    	&:first-child, &.close{
     		&:before{
 					content: "";
 					display: none;
@@ -484,10 +487,10 @@
 	.close{
 		opacity: 0;
 		position: absolute;
-		top: 28px;
+		top: 24px;
 		right: 20px;
-		width: 31px;
-		height: 29px;
+		width: 44px;
+		height: 44px;
 		cursor: pointer;
 		z-index: 2;
 		svg{
@@ -724,7 +727,9 @@
 				border-color: transparent; 
 				background: @tour-box-button-bg;
 				&:hover{
-					color: @main-color;
+					&:hover{
+						color: @main-color;
+					}
 				}
 			}
 		}
@@ -811,10 +816,16 @@
 								width: 56.58%;
 							}
 							.remove-from-list{
-								margin-top: 22px;
 								text-align: center;
 								width: 10.53%;
 								cursor: pointer;
+								padding: 18px 0;
+								min-height: 44px;
+								border: none;
+								.border-radius(0);
+								.box-shadow(none);
+								background: none;
+								.appearance(none);
 								svg{
 									.transition(0.3s fill ease-out);
 									width: 100%;
@@ -865,6 +876,7 @@
 								max-height: 200px;
 								overflow: hidden;
 								height: auto;
+								cursor: pointer;
 								.gothamBold;
 								@media (min-width: @screen-sm){
 									font-size: 20px;
@@ -1429,6 +1441,7 @@
 			width: 55.57%;
 			float: left;
 			line-height: 1;
+			padding-right: 4%;
 			.product-name{
 				font-size: 16px;
 				.gothamBold;
@@ -1473,10 +1486,10 @@
 		}
 		.remove{
 			position: absolute;
-			width: 15px;
-			height: 15px;
-			top: 15px;
-			right: 15px;
+			width: 44px;
+			height: 44px;
+			top: 0px;
+			right: 0px;
 			display: block;
 			padding: 0;
 			.border-radius(0);
@@ -1484,6 +1497,7 @@
 			background: none;
 			border: none;
 			svg{
+				margin: 0 auto;
 				display: block;
 				width: 15px;
 				height: 15px;

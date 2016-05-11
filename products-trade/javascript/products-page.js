@@ -1113,13 +1113,44 @@ var product_pages = {
             showContent: true,
             template:{caret:'<svg width="28" height="15" viewBox="0 0 28 15"><path d="M0.4,0.4c-0.5,0.5-0.5,1.2,0,1.7c0,0,0,0,0,0l12.8,12.6c0.5,0.5,1.2,0.5,1.7,0L27.6,2.1c0.5-0.5,0.5-1.2,0-1.7c-0.5-0.5-1.2-0.5-1.7,0L14,12.1L2.1,0.4C1.6-0.1,0.8-0.1,0.4,0.4z"/></svg>'}
         });
+
+        $('.view-bar .btn-icon').on('click', function(){
+            $('.view-bar .btn-icon').removeClass('active');
+            var obj = $(this);
+            obj.addClass('active');
+            obj.blur();
+            TweenMax.staggerTo($('#products .product'),0.1,{y: 100, opacity: 0},0.03,function(){
+                $('#products').attr('class','products');
+                $('#products').addClass(obj.data('option'));
+                $(window).resize();
+                $('#products .product-images-slider').slick('setPosition');
+                TweenMax.staggerFromTo($('#products .product'),0.3,{y:100, opacity:0},{y: 0, opacity: 1},0.03,function(){
+                });
+            });            
+        });
+        $('#price-option').on('change', function(){
+            var option = $(this).val();
+            if(option == 'both'){
+                $('#products .product-price-my, #products .product-price-cmp').show();
+            }else{
+                $('#products .product-price-my, #products .product-price-cmp').hide();
+                $('#products .product-price-'+option).show();
+            }
+            $(window).resize();
+        });
+        $('#show-gst').on('change', function(){
+            if($(this).is(':checked')){
+                $('#products .product-price small').text('exc.');
+            }else{
+                $('#products .product-price small').text('incl.');
+            }
+        });
         //Initialise radio button
         $(document).on('click','.quantity-units.multiple-units .radio-button', function() {
             $(this).parent(".radiolabel-set").find(".radio-button").removeClass("active");
             $(this).addClass("active");
             var id = $(this).attr('for');
             var unit = $('#'+id).val();
-            console.log($(this).parents(".product-content").length);
             $(this).parents(".product-content").find('.product-price-cmp, .product-price-my').addClass('hide');
             $(this).parents(".product-content").find('.price-'+unit).removeClass('hide');
         });

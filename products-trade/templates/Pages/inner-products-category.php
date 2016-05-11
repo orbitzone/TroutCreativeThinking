@@ -75,10 +75,18 @@
 							<div class="filter">
 								<h3>Filters</h3>
 								<ul class="list-links list-unstyled">
-									<li><a href="#" class="current"><svg class="icon"><use xlink:href="/images/IconsSvg.svg#shape-checkbox" /></svg>Valves</a></li>
-									<li><a href="#" class="current"><svg class="icon"><use xlink:href="/images/IconsSvg.svg#shape-checkbox" /></svg>Pumps</a></li>
-									<li><a href="#"><svg class="icon"><use xlink:href="/images/IconsSvg.svg#shape-checkbox" /></svg>Pipes &amp; Fittings</a></li>
-									<li><a href="#"><svg class="icon"><use xlink:href="/images/IconsSvg.svg#shape-checkbox" /></svg>Hot Water Units</a></li>					
+									<li><a href="#" class="current"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="14.8px" viewBox="0 0 20 14.8">
+											<path d="M2.5,4.9l7.5,7.4l-2.5,2.5L0,7.4L2.5,4.9z M17.5,0L20,2.5L7.5,14.8L5,12.3L17.5,0z"/>
+										</svg></span>Valves</a></li>
+									<li><a href="#" class="current"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="14.8px" viewBox="0 0 20 14.8">
+											<path d="M2.5,4.9l7.5,7.4l-2.5,2.5L0,7.4L2.5,4.9z M17.5,0L20,2.5L7.5,14.8L5,12.3L17.5,0z"/>
+										</svg></span>Pumps</a></li>
+									<li><a href="#"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="14.8px" viewBox="0 0 20 14.8">
+											<path d="M2.5,4.9l7.5,7.4l-2.5,2.5L0,7.4L2.5,4.9z M17.5,0L20,2.5L7.5,14.8L5,12.3L17.5,0z"/>
+										</svg></span>Pipes &amp; Fittings</a></li>
+									<li><a href="#"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="14.8px" viewBox="0 0 20 14.8">
+											<path d="M2.5,4.9l7.5,7.4l-2.5,2.5L0,7.4L2.5,4.9z M17.5,0L20,2.5L7.5,14.8L5,12.3L17.5,0z"/>
+										</svg></span>Hot Water Units</a></li>					
 
 								</ul>
 								<ul class="list-actions list-unstyled">
@@ -88,12 +96,24 @@
 							<div class="filter">
 								<h3>Brand</h3>
 								<ul class="list-links list-unstyled">
-									<li><a href="#" class="current"><svg class="icon"><use xlink:href="/images/IconsSvg.svg#shape-checkbox" /></svg>Therman</a></li>
-									<li><a href="#"><svg class="icon"><use xlink:href="/images/IconsSvg.svg#shape-checkbox" /></svg>Auspex</a></li>
-									<li><a href="#"><svg class="icon"><use xlink:href="/images/IconsSvg.svg#shape-checkbox" /></svg>Rehau</a></li>
-									<li><a href="#"><svg class="icon"><use xlink:href="/images/IconsSvg.svg#shape-checkbox" /></svg>Conex</a></li>
-									<li><a href="#"><svg class="icon"><use xlink:href="/images/IconsSvg.svg#shape-checkbox" /></svg>Wolfen</a></li>
-									<li><a href="#"><svg class="icon"><use xlink:href="/images/IconsSvg.svg#shape-checkbox" /></svg>Vada</a></li>
+									<li><a href="#" class="current"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="14.8px" viewBox="0 0 20 14.8">
+											<path d="M2.5,4.9l7.5,7.4l-2.5,2.5L0,7.4L2.5,4.9z M17.5,0L20,2.5L7.5,14.8L5,12.3L17.5,0z"/>
+										</svg></span>Therman</a></li>
+									<li><a href="#"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="14.8px" viewBox="0 0 20 14.8">
+											<path d="M2.5,4.9l7.5,7.4l-2.5,2.5L0,7.4L2.5,4.9z M17.5,0L20,2.5L7.5,14.8L5,12.3L17.5,0z"/>
+										</svg></span>Auspex</a></li>
+									<li><a href="#"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="14.8px" viewBox="0 0 20 14.8">
+											<path d="M2.5,4.9l7.5,7.4l-2.5,2.5L0,7.4L2.5,4.9z M17.5,0L20,2.5L7.5,14.8L5,12.3L17.5,0z"/>
+										</svg></span>Rehau</a></li>
+									<li><a href="#"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="14.8px" viewBox="0 0 20 14.8">
+											<path d="M2.5,4.9l7.5,7.4l-2.5,2.5L0,7.4L2.5,4.9z M17.5,0L20,2.5L7.5,14.8L5,12.3L17.5,0z"/>
+										</svg></span>Conex</a></li>
+									<li><a href="#"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="14.8px" viewBox="0 0 20 14.8">
+											<path d="M2.5,4.9l7.5,7.4l-2.5,2.5L0,7.4L2.5,4.9z M17.5,0L20,2.5L7.5,14.8L5,12.3L17.5,0z"/>
+										</svg></span>Wolfen</a></li>
+									<li><a href="#"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="14.8px" viewBox="0 0 20 14.8">
+											<path d="M2.5,4.9l7.5,7.4l-2.5,2.5L0,7.4L2.5,4.9z M17.5,0L20,2.5L7.5,14.8L5,12.3L17.5,0z"/>
+										</svg></span>Vada</a></li>
 								</ul>
 								<ul class="list-actions list-unstyled">
 									<li><a href="#" class="show-more">Show More</a></li>
@@ -103,10 +123,18 @@
 							<div class="filter">
 								<h3>Sub-Brand</h3>
 								<ul class="list-links list-unstyled">
-									<li><a href="#"><svg class="icon"><use xlink:href="/images/IconsSvg.svg#shape-checkbox" /></svg>Arc</a></li>
-									<li><a href="#"><svg class="icon"><use xlink:href="/images/IconsSvg.svg#shape-checkbox" /></svg>Lorem</a></li>
-									<li><a href="#"><svg class="icon"><use xlink:href="/images/IconsSvg.svg#shape-checkbox" /></svg>Ipsum</a></li>
-									<li><a href="#"><svg class="icon"><use xlink:href="/images/IconsSvg.svg#shape-checkbox" /></svg>Dolor</a></li>
+									<li><a href="#"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="14.8px" viewBox="0 0 20 14.8">
+											<path d="M2.5,4.9l7.5,7.4l-2.5,2.5L0,7.4L2.5,4.9z M17.5,0L20,2.5L7.5,14.8L5,12.3L17.5,0z"/>
+										</svg></span>Arc</a></li>
+									<li><a href="#"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="14.8px" viewBox="0 0 20 14.8">
+											<path d="M2.5,4.9l7.5,7.4l-2.5,2.5L0,7.4L2.5,4.9z M17.5,0L20,2.5L7.5,14.8L5,12.3L17.5,0z"/>
+										</svg></span>Lorem</a></li>
+									<li><a href="#"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="14.8px" viewBox="0 0 20 14.8">
+											<path d="M2.5,4.9l7.5,7.4l-2.5,2.5L0,7.4L2.5,4.9z M17.5,0L20,2.5L7.5,14.8L5,12.3L17.5,0z"/>
+										</svg></span>Ipsum</a></li>
+									<li><a href="#"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="14.8px" viewBox="0 0 20 14.8">
+											<path d="M2.5,4.9l7.5,7.4l-2.5,2.5L0,7.4L2.5,4.9z M17.5,0L20,2.5L7.5,14.8L5,12.3L17.5,0z"/>
+										</svg></span>Dolor</a></li>
 								</ul>
 								<ul class="list-actions list-unstyled">
 									<li><a href="#" class="show-more">Show More</a></li>
@@ -116,10 +144,18 @@
 							<div class="filter">
 								<h3>Filter</h3>
 								<ul class="list-links list-unstyled">
-									<li><a href="#"><svg class="icon"><use xlink:href="/images/IconsSvg.svg#shape-checkbox" /></svg>Mollis</a></li>
-									<li><a href="#"><svg class="icon"><use xlink:href="/images/IconsSvg.svg#shape-checkbox" /></svg>Pharetra</a></li>
-									<li><a href="#"><svg class="icon"><use xlink:href="/images/IconsSvg.svg#shape-checkbox" /></svg>Adipiscing</a></li>
-									<li><a href="#"><svg class="icon"><use xlink:href="/images/IconsSvg.svg#shape-checkbox" /></svg>Bidendum</a></li>
+									<li><a href="#"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="14.8px" viewBox="0 0 20 14.8">
+											<path d="M2.5,4.9l7.5,7.4l-2.5,2.5L0,7.4L2.5,4.9z M17.5,0L20,2.5L7.5,14.8L5,12.3L17.5,0z"/>
+										</svg></span>Mollis</a></li>
+									<li><a href="#"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="14.8px" viewBox="0 0 20 14.8">
+											<path d="M2.5,4.9l7.5,7.4l-2.5,2.5L0,7.4L2.5,4.9z M17.5,0L20,2.5L7.5,14.8L5,12.3L17.5,0z"/>
+										</svg></span>Pharetra</a></li>
+									<li><a href="#"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="14.8px" viewBox="0 0 20 14.8">
+											<path d="M2.5,4.9l7.5,7.4l-2.5,2.5L0,7.4L2.5,4.9z M17.5,0L20,2.5L7.5,14.8L5,12.3L17.5,0z"/>
+										</svg></span>Adipiscing</a></li>
+									<li><a href="#"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="14.8px" viewBox="0 0 20 14.8">
+											<path d="M2.5,4.9l7.5,7.4l-2.5,2.5L0,7.4L2.5,4.9z M17.5,0L20,2.5L7.5,14.8L5,12.3L17.5,0z"/>
+										</svg></span>Bidendum</a></li>
 								</ul>
 								<ul class="list-actions list-unstyled">
 									<li><a href="#" class="show-more">Show More</a></li>
@@ -130,14 +166,33 @@
 					</aside><!-- END SIDEBAR -->
 						<div class="view-bar">
 							<ul class="flex list-inline">
-								<li>
+								<li class="view-options">
 									<ul class="list-inline">
-										<li>View</li>
+										<li>View
+										<button type="button" data-option="grid" class="btn btn-icon active">
+											<svg width="66" height="66" viewBox="0 0 66 66">
+											<text x="0" y="0">Grid view</text>
+											<path id="grid" d="M5,0h19c2.8,0,5,2.2,5,5v19c0,2.8-2.2,5-5,5H5c-2.8,0-5-2.2-5-5V5C0,2.2,2.2,0,5,0z M42,0h19c2.8,0,5,2.2,5,5v19
+												c0,2.8-2.2,5-5,5H42c-2.8,0-5-2.2-5-5V5C37,2.2,39.2,0,42,0z M5,37h19c2.8,0,5,2.2,5,5v19c0,2.8-2.2,5-5,5H5c-2.8,0-5-2.2-5-5V42
+												C0,39.2,2.2,37,5,37z M42,37h19c2.8,0,5,2.2,5,5v19c0,2.8-2.2,5-5,5H42c-2.8,0-5-2.2-5-5V42C37,39.2,39.2,37,42,37z"/>
+											</svg>
+										</button>
+										<button type="button" data-option="list" class="btn btn-icon">
+											<svg width="66" height="66" viewBox="0 0 66 66">
+											<text x="0" y="0">List view</text>
+											<path d="M3,0h60c1.7,0,3,1.3,3,3v6c0,1.7-1.3,3-3,3H3c-1.7,0-3-1.3-3-3V3C0,1.3,1.3,0,3,0z M3,18h60c1.7,0,3,1.3,3,3v6
+												c0,1.7-1.3,3-3,3H3c-1.7,0-3-1.3-3-3v-6C0,19.4,1.3,18,3,18z M3,54h60c1.7,0,3,1.3,3,3v6c0,1.7-1.3,3-3,3H3c-1.7,0-3-1.3-3-3v-6
+												C0,55.3,1.3,54,3,54z M3,36h60c1.7,0,3,1.3,3,3v6c0,1.7-1.3,3-3,3H3c-1.7,0-3-1.3-3-3v-6C0,37.3,1.3,36,3,36z"/>
+											</svg>
+										</button>
+										</li>
 										<li><svg class="icon grid active"><use xlink:href="/images/IconsSvg.svg#shape-grid" /></svg></li>
 										<li><svg class="icon list"><use xlink:href="/images/IconsSvg.svg#shape-list" /></svg></li>
 									</ul>
 								</li>
-								<li><label for="show-gst">Show GST <input type="checkbox" id="show-gst" /><svg class="icon"><use xlink:href="/images/IconsSvg.svg#shape-checkbox" /></svg></label></li>
+								<li><label for="show-gst">Show GST <input type="checkbox" id="show-gst" /><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="14.8px" viewBox="0 0 20 14.8">
+											<path d="M2.5,4.9l7.5,7.4l-2.5,2.5L0,7.4L2.5,4.9z M17.5,0L20,2.5L7.5,14.8L5,12.3L17.5,0z"/>
+										</svg></span></label></li>
 								<li>
 								<select id="price-option" data-default="Show price">
 										<option value="my" data-content="<span class='text'>Show: </span>My Price">My Price</option>
@@ -147,7 +202,7 @@
 									</li>
 								<li>
 									<span class="one-option dropdown-option span-block">
-										<select id="sort-by-option" data-default="Sort" data-style="grey-button">
+										<select id="sort-by-option" data-default="Sort">
 											<option value="popularity" data-content="<span class='text'>Sort: </span>Popularity">Popularity</option>
 											<option value="product-code" data-content="<span class='text'>Sort: </span>Product Code">Product Code</option>
 											<option value="description" data-content="<span class='text'>Sort: </span>Description">Description</option>

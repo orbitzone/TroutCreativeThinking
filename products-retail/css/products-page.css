@@ -1773,6 +1773,11 @@ Slick slider arrow
     margin-bottom: 30px;
   }
 }
+@media (min-width: 768px) {
+  #product-pages #shopping-cart-widget aside button.close {
+    display: none;
+  }
+}
 #product-pages #shopping-cart-widget aside button:first-child:before,
 #product-pages #shopping-cart-widget aside button.close:before {
   content: "";

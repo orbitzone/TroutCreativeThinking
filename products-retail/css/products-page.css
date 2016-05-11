@@ -1283,17 +1283,15 @@ Slick slider arrow
 }
 #product-pages .postcode-input input {
   max-width: 150px;
-  height: 45px;
+  height: 38px;
   float: right;
   width: 40%;
   position: absolute;
   right: 20px;
   bottom: 0;
   font-size: 25px;
-  line-height: 45px;
   max-width: 120px;
   text-align: center;
-  padding: 0;
 }
 #product-pages .postcode-input input::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
@@ -1307,7 +1305,6 @@ Slick slider arrow
   line-height: 45px;
   font-size: 16px;
   position: relative;
-  padding: 0;
 }
 #product-pages .postcode-input input::-moz-placeholder {
   line-height: 45px;
@@ -1331,7 +1328,11 @@ Slick slider arrow
   width: 50%;
   float: left;
   padding-right: 10px;
-  line-height: 38px;
+}
+@media (min-width: 768px) {
+  #product-pages .postcode-input .text {
+    line-height: 38px;
+  }
 }
 #product-pages .postcode-input .postcode-text-wrap {
   display: none;

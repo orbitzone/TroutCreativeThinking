@@ -1623,7 +1623,11 @@ Slick slider arrow
   width: 50%;
   float: left;
   padding-right: 10px;
-  line-height: 38px;
+}
+@media (min-width: 768px) {
+  #product-pages .postcode-input .text {
+    line-height: 38px;
+  }
 }
 #product-pages .postcode-input .postcode-text-wrap {
   display: none;

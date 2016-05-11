@@ -72,17 +72,6 @@
 
 
 @we-love-color: #6dc8b6;
-a{
-	color: @section-link-color;
-	text-decoration: underline;
-	.gothamMedium;
-	font-weight: @section-link-font-weight;
-	&:hover{
-		@media (min-width: @screen-sm){
-			color: @section-link-hover-color;
-		}
-	}
-}
 .main-section#product-detail{
 	color: @body-color;
 	padding-top: 44px;
@@ -92,15 +81,15 @@ a{
   :focus:-ms-input-placeholder      {color: transparent}
 	img{
 		max-width: 100%;
-	}
+	}	
 	a[x-apple-data-detectors] {
-  color: inherit !important;
-  text-decoration: none !important;
-  font-size: inherit !important;
-  font-family: inherit !important;
-  font-weight: inherit !important;
-  line-height: inherit !important;
-}
+	  color: inherit !important;
+	  text-decoration: none !important;
+	  font-size: inherit !important;
+	  font-family: inherit !important;
+	  font-weight: inherit !important;
+	  line-height: inherit !important;
+	}
 	.slick-dots{
 		li{
 			button{
@@ -602,11 +591,15 @@ a{
 			height: 100%;
 			width: 44px;
 			right: 0;
+			margin-top: 0;
+			background: rgba(255,255,255,0.01);
 		}
 		.slick-prev{
 			height: 100%;
 			width: 44px;
 			left: 0;
+			margin-top: 0;
+			background: rgba(255,255,255,0.01);
 		}
 		.product-images-slider-wrap{
 			position: relative;

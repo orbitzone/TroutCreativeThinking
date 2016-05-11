@@ -38,8 +38,19 @@ p{
 		.gothamBoldItalic
 	}
 }
-
-.btn{
+.main-section{
+	a{
+		color: @section-link-color;
+		text-decoration: underline;
+		.gothamMedium;
+		font-weight: @section-link-font-weight;
+		&:hover{
+			@media (min-width: @screen-sm){
+				color: @section-link-hover-color;
+			}
+		}
+	}
+	.btn{
 		font-size: 15px;
 		position: relative;
 		z-index: 1;
@@ -60,7 +71,7 @@ p{
 			}
 		}
 	}
-.call-to-action{
+	.call-to-action{
 		padding: 15px 20px;
 		background: @call-to-action-bg;
 		color: @call-to-action-color;
@@ -126,6 +137,7 @@ p{
 			}	
 		}
 	}
+}
 .nowrap{
 	white-space: nowrap;
 }

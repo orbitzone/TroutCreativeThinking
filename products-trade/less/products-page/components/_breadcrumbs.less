@@ -19,6 +19,7 @@
 				margin:0;
 				position: relative;
 				a{
+					text-decoration: none;
 					display: block;
 					padding-left:7px;
 					padding-right:7px;
@@ -26,6 +27,9 @@
 					line-height:1em;
 					font-weight: 500;
 					color: @breadcrumb-link-color;
+					&:hover{
+						text-decoration: underline;
+					}
 				}
 				&:after{
 					content: " / ";
@@ -44,6 +48,14 @@
 					&:after{
 						display: none;
 					}
+				}
+				&.active{
+					.gothamBold;
+					padding-left:7px;
+					padding-right:7px;
+					color: @breadcrumb-link-current-color;
+					font-size:14px;
+					line-height:1em;					
 				}
 			}
 		}

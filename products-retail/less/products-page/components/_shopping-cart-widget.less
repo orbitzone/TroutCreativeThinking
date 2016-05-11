@@ -412,6 +412,11 @@
     			margin-bottom: 30px;
     		}
     	}
+    	&.close{
+    		@media (min-width: @screen-sm){
+    			display: none;
+    		}
+    	}
     	&:first-child, &.close{
     		&:before{
 					content: "";
@@ -1481,6 +1486,7 @@
 			&:hover{
 				@media (min-width: @screen-sm){
 					color: @wishlist-add-to-cart-btn-bg;	
+					background: white;
 				}				
 			}
 		}
@@ -1515,6 +1521,7 @@
 			&:hover{
 				@media (min-width: @screen-sm){
 					color:  @wishlist-add-all-to-cart-btn-bg;
+					background: @wishlist-add-all-to-cart-btn-color;
 				}
 			}
 		}

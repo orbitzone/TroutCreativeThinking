@@ -138,12 +138,19 @@
 									</ul>
 								</li>
 								<li><label for="show-gst">Show GST <input type="checkbox" id="show-gst" /><svg class="icon"><use xlink:href="/images/IconsSvg.svg#shape-checkbox" /></svg></label></li>
-								<li><label for="show-my-price">Show My Price <input type="checkbox" id="show-my-price" /><svg class="icon"><use xlink:href="/images/IconsSvg.svg#shape-checkbox" /></svg></label></li>
+								<li>
+								<select id="price-option" data-default="Show price">
+										<option value="my" data-content="<span class='text'>Show: </span>My Price">My Price</option>
+										<option value="cmp" data-content="<span class='text'>Show: </span>CMP Price">CMP Price</option>
+										<option value="both" data-content="<span class='text'>Show: </span>Both">Both</option>
+									</select>
+									</li>
 								<li>
 									<span class="one-option dropdown-option span-block">
-										<select id="cmp-option">
-											<option value="cmp1">Default</option>
-											<option value="cmp2">MP</option>
+										<select id="sort-by-option" data-default="Sort" data-style="grey-button">
+											<option value="popularity" data-content="<span class='text'>Sort: </span>Popularity">Popularity</option>
+											<option value="product-code" data-content="<span class='text'>Sort: </span>Product Code">Product Code</option>
+											<option value="description" data-content="<span class='text'>Sort: </span>Description">Description</option>
 										</select>
 									</span>
 									<span class="clear-fix"></span>

@@ -2365,10 +2365,17 @@ Slick slider arrow
   padding: 0;
   top: 0;
   border: none;
+  background: #0776aa;
+  border-color: #0776aa;
+  color: white;
 }
 #product-pages #shopping-cart-widget .shopping-cart-view .search-box form .search-input button svg circle,
 #product-pages #shopping-cart-widget .shopping-cart-view .search-box form .search-input button svg line {
   stroke: white;
+}
+#product-pages #shopping-cart-widget .shopping-cart-view .search-box form .search-input button:hover {
+  background: white;
+  color: #0776aa;
 }
 #product-pages #shopping-cart-widget .shopping-cart-view .search-box form .search-input button:hover svg circle,
 #product-pages #shopping-cart-widget .shopping-cart-view .search-box form .search-input button:hover svg line {

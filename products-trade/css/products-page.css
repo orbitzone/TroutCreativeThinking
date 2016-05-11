@@ -3353,6 +3353,7 @@ Slick slider arrow
 @media (min-width: 768px) {
   #product-pages #shopping-cart-widget .shopping-cart-wishlist .btn.add-to-cart-btn:hover {
     color: #4faa98;
+    background: white;
   }
 }
 #product-pages #shopping-cart-widget .shopping-cart-wishlist .remove {
@@ -3394,6 +3395,7 @@ Slick slider arrow
 @media (min-width: 768px) {
   #product-pages #shopping-cart-widget .shopping-cart-wishlist .btn.add-all-to-cart:hover {
     color: #54f276;
+    background: #4faa98;
   }
 }
 #product-pages #shopping-cart-widget .take-a-tour-box {

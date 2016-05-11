@@ -12,17 +12,15 @@
 	}
 	input{
 		max-width: 150px;
-		height: 45px;
+		height: 38px;
 		float: right;
 		width: 40%;
 		position: absolute;
 		right: 20px;
 		bottom: 0;
 		font-size: 25px;
-		line-height: 45px;
 		max-width: 120px;
 		text-align: center;
-		padding: 0;
 		&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 			line-height: 45px;
 		  font-size: 16px;
@@ -33,7 +31,6 @@
 			line-height: 45px;
 		  font-size: 16px;
 		  position: relative;
-		  padding: 0;
 		  //top: -4px;						  
 		}
 		&::-moz-placeholder{
@@ -59,7 +56,10 @@
 		width: 50%;
 		float: left;
 		padding-right: 10px;
-		line-height: 38px;
+		
+		@media (min-width: @screen-sm){
+			line-height: 38px;
+		}
 	}
 	.enter-your-postcode{
 					

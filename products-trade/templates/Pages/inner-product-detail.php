@@ -4,7 +4,7 @@
 		<ul class="breadcrumbs">
 			<li><a href="#">Products</a></li>
 			<li><a href="#">Hot Water</a></li>
-			<li class="active"><a href="#">B-press Water 90deg X 15mm</a></li>
+			<li class="active">B-press Water 90deg X 15mm</li>
 		</ul>
 	</div>
 </div>

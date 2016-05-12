@@ -55,13 +55,14 @@
 @subtotal-color:#8fbed4;
 @total-color: white;
 
-@take-a-tour-btn-bg: #3ba8da;
+@take-a-tour-btn-bg: @bg-light-blue-stripes;
 
 @image-border: #bfbfbf;
 
 @tour-box-intro-color: white;
-@tour-box-bg: url("../templates/images/product-detail/bg-light-blue-stripes.jpg");
-@tour-box-button-bg: @take-a-tour-btn-bg;
+@tour-box-bg: @bg-light-blue-stripes;
+@tour-box-bg-svg: @bg-light-blue-stripes-svg;
+@tour-box-button-bg: @bg-dark-blue-stripes;
 
 @wishlist-add-to-cart-btn-color: white;
 @wishlist-add-to-cart-btn-bg: #4faa98;
@@ -77,6 +78,14 @@
 
 @editable-text-field-bg: #0776aa; 
 @quantity-updated-check-color: #54f276;
+
+@current-list-color: #46abdb;
+@current-list-border: #61a1be;
+
+@checkbox-icon-bg: #066693;
+@product-list-title-color: #46abdb;
+@product-list-title-border: #46abdb;
+@product-list-description-color:#8fbed4;
 
 #shopping-cart-widget{
 	background: @widget-content-bg;
@@ -162,7 +171,7 @@
 			}
 			.caret{
 				border: none;
-				background: url('../templates/images/product-detail/dropdown-arrow.svg');
+				background: @dropdown-arrow-blue;
 				width: 16px;
 				height: 9px;
 				background-repeat: no-repeat;
@@ -550,14 +559,14 @@
 		}
 		.current-list{
 			position: relative;
-			color: #46abdb;
+			color: @current-list-color;
 			font-size: 15px;
 			text-transform: uppercase;
 			padding: 35px 0 15px;
-			border-top: 1px solid #61a1be;
-			border-bottom: 1px solid #61a1be;
+			border-top: 1px solid @current-list-border;
+			border-bottom: 1px solid @current-list-border;
 			margin-bottom: 15px;
-			margin-top: 30px;
+			margin-top: 30px;			
 		}
 		button.switch-btn{
 			border: 1px solid @switch-toolbar-btn-border;
@@ -711,6 +720,7 @@
 		}
 		.tour-popout{
 			background: @tour-box-bg;
+			background-image: @tour-box-bg-svg;
 			padding: 25px 25px 20px;
 			color: white;
 			margin-bottom: 30px;
@@ -736,10 +746,10 @@
 				margin: 20px 0 0;
 				border-color: transparent; 
 				background: @tour-box-button-bg;
+				background-image: @bg-dark-blue-stripes-svg;
 				&:hover{
-					&:hover{
-						color: @main-color;
-					}
+					background: white;
+					color: @main-color;
 				}
 			}
 		}
@@ -1213,7 +1223,7 @@
 						.icon{
 							width: 20px;
 					    height: 20px;
-					    background: #066693;
+					    background: @checkbox-icon-bg;
 					    display: inline-block;
 					    top: 5px;
 					    position: relative;
@@ -1387,7 +1397,7 @@
 				background: @main-color;
 				padding: 20px;
 				display: block;
-				color: #8fbed4;
+				color: @product-list-description-color;
 				margin-bottom: 10px;
 				text-decoration: none;
 				@media (min-width: @screen-sm){
@@ -1401,7 +1411,7 @@
 				}
 				h5{
 					font-size: 14px;
-					color: #46abdb;
+					color: @product-list-title-color;
 					display: inline-block;
 					position: relative;
 					&:after{
@@ -1411,7 +1421,7 @@
 						width: 100%;
 						margin-top: 7px;
 						height: 1px;
-						background: #46abdb;
+						background: @product-list-title-border;
 					}
 				}
 				h4{
@@ -1558,6 +1568,7 @@
 		.tour-info-small{
 			position: relative;
 			background: @take-a-tour-btn-bg;
+			background-image: @bg-light-blue-stripes-svg;
 			text-align: center;
 			color: white;
 			padding: 20px;

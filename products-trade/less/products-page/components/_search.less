@@ -9,14 +9,17 @@
 		font-size: 16px;
 		@media (min-width: @screen-sm){
 			width: 37%;
+			max-width: 296px;
 		}
 	}
 	button{
 		width: 54px;
 		height: 54px;
 		text-align: center;
-		border: none;
+		background: @search-button-bg;
+		color: @search-button-color;
 		padding: 0;
+		border-color: @search-button-bg;
 		position: absolute !important;
 		top: 0;
 		right: 0;
@@ -34,6 +37,15 @@
 			top: inherit;
 			right: inherit;
 			margin-left: -1px;
-		}
+			&:hover{
+				background: white;
+				svg{
+					circle,
+					line{
+						stroke: @search-button-bg;
+					}
+				}
+			}
+		}		
 	}
 }

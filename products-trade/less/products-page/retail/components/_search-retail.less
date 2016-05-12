@@ -1,0 +1,18 @@
+#search{
+	button{
+		background: @retail-search-button-bg;
+		color: @retail-search-button-color;
+		border-color: @retail-search-button-bg;
+		@media (min-width: @screen-sm){
+			&:hover{
+				background: white;
+				svg{
+					circle,
+					line{
+						stroke: @retail-search-button-bg;
+					}
+				}
+			}
+		}		
+	}
+}

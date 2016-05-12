@@ -1345,7 +1345,7 @@ var product_pages = {
         });
 
         //Initialise radio button
-        $(".radio-button").on('click', function() {
+        $(document).on('click','.radio-button', function() {
             $(this).parent(".radiolabel-set").find(".radio-button").removeClass("active");
             $(this).addClass("active");
         });

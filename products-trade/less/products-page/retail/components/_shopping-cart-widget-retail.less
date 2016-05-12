@@ -1,0 +1,484 @@
+@retail-widget-bar-bg: @retail-main-color;
+@retail-widget-content-bg: #4faa98;
+
+@retail-widget-aside-button-color: #4c9d8d;
+@retail-widget-aside-button-active-color: white;
+
+//Buttons and form fields
+@retail-select-bg: #6dc8b6;
+@retail-select-color: white;
+
+@retail-checkbox-icon-square-bg: #64b8a7;
+@retail-checkbox-icon-color: white;
+  
+@retail-switch-toolbar-btn-bg: @retail-widget-content-bg;
+@retail-switch-toolbar-btn-color: #54F276;
+@retail-switch-toolbar-btn-border: #54F276;
+
+@retail-checkout-btn-bg: #3f3f3f;
+@retail-checkout-btn-color: white;
+
+//Section Titles
+@retail-main-title-color: white;
+@retail-main-title-border: #439182;
+
+//Product list
+@retail-product-item-info-bg: #6dc8b6;
+@retail-product-item-info-edit-bg: white;
+@retail-product-item-footer-bg: #64b8a7;
+@retail-product-item-footer-edit-bg: #f4f4f4;
+
+@retail-product-code-color: white;
+@retail-product-code-edit-color: #cbcbcb;
+
+@retail-product-name-color: white;
+@retail-product-name-edit-color: @retail-widget-content-bg;
+
+@retail-product-description-color: white;
+@retail-product-description-edit-color: @retail-widget-content-bg;
+
+@retail-edit-icon-color: #d1e3e0;
+@retail-remove-icon-color: #d1e3e0;
+@retail-edit-icon-active-color: white;
+@retail-remove-icon-active-color: #c91d1d;
+
+@retail-product-item-footer-quantity-color: white;
+@retail-product-item-footer-price-color: white;
+
+@retail-product-item-footer-quantity-edit-color: @retail-main-color;
+@retail-product-item-footer-quantity-edit-bg: #e2e2e2;
+
+@retail-product-item-footer-price-edit-label-color: #64b8a7;
+@retail-product-item-footer-price-edit-value-color: #50aa98;
+
+@retail-list-divider-color: #439182;
+@retail-subtotal-color:#e2e2e2;
+@retail-total-color: white;
+
+@retail-take-a-tour-btn-bg: @bg-dark-green-stripes;
+
+@retail-image-border: #bfbfbf;
+
+@retail-tour-box-intro-color: white;
+@retail-tour-box-bg: @bg-dark-green-stripes;
+@retail-tour-box-bg-svg: @bg-dark-green-stripes-svg;
+@retail-tour-box-button-bg: #4faa98;
+
+@retail-wishlist-add-to-cart-btn-color: white;
+@retail-wishlist-add-to-cart-btn-bg: #4faa98;
+
+@retail-wishlist-product-bg: #6dc8b6;
+@retail-wishlist-product-code-color: #439182;
+@retail-wishlist-product-name-color: white;
+@retail-wishlist-product-description-color: white;
+@retail-wishlist-close-btn-color: #d5e3e0;
+
+@retail-wishlist-add-all-to-cart-btn-color: #4faa98;
+@retail-wishlist-add-all-to-cart-btn-bg: #54f276;
+
+@retail-editable-text-field-bg: #6dc8b6; 
+@retail-quantity-updated-check-color: #54f276;
+
+@retail-current-list-color: white;
+@retail-current-list-border: #439182;
+
+@retail-checkbox-icon-bg: #64b8a7;
+@retail-product-list-title-color: #439182;
+@retail-product-list-title-border: #439182;
+@retail-product-list-description-color: #439182;
+
+#shopping-cart-widget{
+	background: @retail-widget-content-bg;
+	select{
+	  background-color: @retail-select-bg;
+	  color: @retail-select-color;
+	}
+
+	.checkout-btn,
+	.new-list-btn{
+		color: @retail-checkout-btn-color;
+		background-color: @retail-checkout-btn-bg;
+	}
+	.selectric{
+		color: @retail-select-color;
+		background: @retail-select-bg;
+		.label{
+			color: @retail-select-color;
+		}
+	}
+	.bootstrap-select{
+		button{
+			color: @retail-select-color;
+			background: @retail-select-bg;
+			&.btn{
+				&:before{
+					background: @retail-select-bg;
+				}
+				&:hover{
+					&:hover{
+						color: @retail-select-color;
+						background: @retail-select-bg;					
+					}
+				}
+			}
+			.caret{
+				background: @dropdown-arrow-white;			
+			}	
+		}
+		.dropdown-menu{
+			.box-shadow(@retail-shadow);
+			li{
+				background:@retail-white;
+				&:hover{
+					background:@retail-bg-light-grey;
+				}
+			}
+		}
+	}
+	.shopping-cart-content{
+		background: @retail-widget-content-bg;
+	}//End .shopping-cart-content
+	&.open{
+		aside{
+		 border-bottom-color: @retail-widget-content-bg;
+		 button.open{
+			&:after{
+					background: @retail-widget-content-bg;
+				}
+			}
+		}		
+	}
+	aside{
+		background: @retail-widget-bar-bg;
+		button{
+			svg{
+				fill: @retail-widget-aside-button-color;
+			}
+			&.open{
+				svg{
+					fill: @retail-widget-aside-button-active-color;
+				}
+			}
+		}		
+	}
+	.shopping-cart-view{
+    h3{
+			color: @retail-main-title-color;
+		}
+		.list-header{
+			border-bottom-color: @retail-main-title-border;
+		}
+		.editable-text-field{
+			color: @retail-main-title-color;
+			background: @retail-editable-text-field-bg;
+		}
+		.current-list{
+			color: @retail-current-list-color;
+			border-top: 1px solid @retail-current-list-border;
+			border-bottom: 1px solid @retail-current-list-border;			
+		}
+		button.switch-btn{
+			border-color: @retail-switch-toolbar-btn-border;
+			color: @retail-switch-toolbar-btn-color;
+			background: @retail-switch-toolbar-btn-bg;
+			svg{
+		    fill: @retail-switch-toolbar-btn-color;
+			}
+		}
+		.checkbox-options-set{
+			li{
+				.icon{
+			    background: @retail-main-color;
+				}
+			}
+		}
+		.search-box{
+			form{
+				.search-input{
+					button{
+						background: @retail-main-color;
+						border-color: @retail-main-color;
+						&:hover{
+							color: @retail-main-color;
+							svg{
+								circle,
+								line{
+									stroke: @retail-main-color;
+								}		
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	//Tour info section
+	.tour-info{
+		.tour-intro{
+			color: @retail-tour-box-intro-color;
+		}
+		.tour-popout{
+			background: @retail-tour-box-bg;
+			background-image: @retail-tour-box-bg-svg;
+			.tour-button{
+				color: @retail-white;
+				background: @retail-tour-box-button-bg;
+				&:hover{
+					background: white;
+					color: @retail-main-color;
+				}
+			}
+		}		
+	}// End tour info section
+
+	.shopping-cart-content{
+		
+		.itemlist-section{
+			color:@retail-white;
+			.item-list{
+				.one-item{
+					.item-block{
+						background: @retail-product-item-info-bg;
+						&:before{
+							background: @retail-product-item-info-edit-bg;
+						}
+						.item-info{
+							.edit-item{
+								svg{
+									fill: @retail-edit-icon-color;
+								}
+							}
+							.product-thumbnail{
+								img{
+									border-color: @retail-image-border;
+								}
+							}
+							.remove-from-list{
+								svg{
+									fill: @retail-remove-icon-color;
+								}
+							}
+						}
+						.item-details{
+							span{
+								display: block;
+							}
+							.product-code{
+								a{
+									color: @retail-product-code-color;
+								}
+							}
+							.product-name{
+								color: @retail-product-name-color;
+							}
+							.product-description{
+								color: @retail-product-description-color;
+							}
+						}
+						.item-footer{
+							background: @retail-product-item-footer-bg;
+							.edit-state{
+								background: @retail-product-item-footer-edit-bg;
+								&:before{
+									background: @retail-product-item-footer-quantity-edit-bg;
+								}
+								.edit-set{
+									background: @retail-product-item-footer-quantity-edit-bg;
+								}
+								.prices{
+									background: @retail-product-item-footer-edit-bg;
+									.label{
+										color: @retail-product-item-footer-price-edit-label-color;
+									}									
+									.value{
+										color: @retail-product-item-footer-price-edit-value-color;
+									}
+								}
+								.quantity-number{
+									color: @retail-product-item-footer-quantity-edit-color;
+									border-color:@retail-border-grey;
+									background-color: @retail-bg-table-header-grey;
+								}//END quantity-number
+									
+								.quantity-set{
+									label,.set-name{
+										color:@retail-text-light-grey;
+									}
+									.radiolabel-set{
+										border-color: @retail-text-light-grey;
+										.radio-button{
+											&.active{
+												background-color:@retail-bg-button-light-blue;
+												color:@retail-white;
+											}
+										}
+									}
+								}//END quantity-set
+								.quantity-updated{
+							    svg{
+										path{
+											stroke: @retail-quantity-updated-check-color;
+										}
+									}
+								}
+								.quantity-details{
+									color: @retail-text-light-grey;
+									span{
+										color: @retail-text-blue;
+									}
+								}//END quantity-details
+							}
+
+						}
+					}
+					&.editing{
+						background: @retail-product-item-info-edit-bg; 
+						.item-block{
+							.item-info{
+								.remove-from-list{
+									svg{
+										fill: @retail-remove-icon-active-color;
+									}
+								}
+							}
+							.item-details{
+								.product-code{
+									color: @retail-product-code-edit-color;
+									a{
+										color: @retail-product-code-edit-color;
+									}
+								}
+								.product-name{
+									color: @retail-product-name-edit-color;
+								}
+								.product-description{
+									color: @retail-product-description-edit-color;
+								}
+							}
+						}
+						.item-footer{
+							background: @retail-product-item-footer-edit-bg;
+						}						
+					}
+				}
+			}
+		}
+	}
+	.shopping-cart-product-list{
+		.list-header{
+			.options{
+				.one-option{
+					.selectric,
+					label{
+						background: @retail-main-color;
+					}
+					label{
+						.icon{
+						  background: @retail-checkbox-icon-bg;					
+						}
+					}
+				}
+			}
+		}
+		.list-totals{
+			.values{
+				border-top-color: @retail-list-divider-color;
+				border-bottom-color: @retail-list-divider-color;
+				.subtotal,
+				.total{
+					color: @retail-total-color;
+				}	
+				.subtotal{
+					color: @retail-subtotal-color;				
+				}		
+			}
+		}
+	}//End product list
+
+	//Search list
+	.shopping-cart-search-list,
+	.shopping-cart-return-user{
+		.list-header{
+			h4{
+				border-top-color: @retail-list-divider-color;
+			}
+		}
+		.new-list-wrap{
+			border-top-color: @retail-list-divider-color;
+			border-bottom-color: @retail-list-divider-color;
+		}		
+		button.switch-btn{
+			border-color: @retail-switch-toolbar-btn-border;
+			color: @retail-switch-toolbar-btn-color;
+	    background: @retail-switch-toolbar-btn-bg;
+		}
+		.recent-lists{
+			.list{
+				background: @retail-main-color;
+				color: @retail-product-list-description-color;
+				h5{
+					color: @retail-product-list-title-color;
+					&:after{
+						background: @retail-product-list-title-border;
+					}
+				}
+			}
+		}
+	}//End Search list
+
+	//Wishlist
+	.shopping-cart-wishlist{
+		.product{
+			background: @retail-wishlist-product-bg;
+		}
+		.product-details{
+			.product-name{
+				color: @retail-wishlist-product-name-color;
+			}
+			.product-code{
+				color: @retail-wishlist-product-code-color;
+				a{
+					color: @retail-wishlist-product-code-color;
+				}
+			}
+			.product-description{
+				color: @retail-wishlist-product-description-color;
+			}
+		}
+		.btn.add-to-cart-btn{
+			color: @retail-wishlist-add-to-cart-btn-color;
+			background: @retail-wishlist-add-to-cart-btn-bg;
+			border-color: @retail-wishlist-add-to-cart-btn-bg;
+			&:hover{
+				@media (min-width: @screen-sm){
+					color: @retail-wishlist-add-to-cart-btn-bg;	
+				}				
+			}
+		}
+		.remove{
+			svg{
+				fill: @retail-wishlist-close-btn-color;
+			}
+		}
+		.btn.add-all-to-cart{
+			color: @retail-wishlist-add-all-to-cart-btn-color;
+			background: @retail-wishlist-add-all-to-cart-btn-bg;
+			border-color: @retail-wishlist-add-all-to-cart-btn-bg;
+			&:hover{
+				@media (min-width: @screen-sm){
+					color:  @retail-wishlist-add-all-to-cart-btn-bg;
+					background: @retail-wishlist-add-all-to-cart-btn-color;
+				}
+			}
+		}
+	}// End Wishlist	
+	
+	//Take a tour 
+	.take-a-tour-box{
+		.tour-info-small{
+			background: @retail-take-a-tour-btn-bg;
+			background-image: @bg-dark-green-stripes-svg;
+		}
+	}// End take a tour
+}

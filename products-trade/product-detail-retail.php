@@ -24,8 +24,8 @@ class="">
   <?php include "templates/Includes/Navigation.php" ?>
   <?php include "templates/Includes/ProductsNav.php" ?>
   
-  <div id="product-pages" data-section="productDetail" class="retail">
-    <?php include "templates/Pages/inner-product-detail.php" ?>
+  <div id="product-pages" data-section="productDetail" class="">
+    <?php include "templates/Pages/retail/inner-product-detail.php" ?>
   </div>
 
 

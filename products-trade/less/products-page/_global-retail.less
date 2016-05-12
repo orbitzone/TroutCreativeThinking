@@ -1,0 +1,101 @@
+/* BODY FONT*/
+.gothamBook;
+color: @retail-text-grey;
+
+.main-section{
+	a{
+		color: @retail-section-link-color;
+		font-weight: @retail-section-link-font-weight;
+		&:hover{
+			@media (min-width: @screen-sm){
+				color: @retail-section-link-hover-color;
+			}
+		}
+	}
+	.btn{
+			border-color: @retail-main-color;
+			&:hover{
+				@media (min-width: @screen-sm){
+					color: @retail-main-color;
+				}
+			}
+		}
+	.call-to-action{
+		background: @retail-call-to-action-bg;
+		color: @retail-call-to-action-color;
+		border-color: @retail-call-to-action-bg;
+		&:after{
+			background: @retail-call-to-action-hover-bg;
+		}
+		&:hover{
+			@media (min-width: @screen-sm){
+				background: white;
+				color: @retail-call-to-action-hover-color;
+			}
+		}
+	}
+	.add-to-cart{
+		background: @retail-add-to-cart-bg;
+		color: @retail-add-to-cart-color;
+		border-color: @retail-add-to-cart-bg;
+		&:after{
+			background: @retail-add-to-cart-hover-bg;
+		}
+		&:hover{
+			@media (min-width: @screen-sm){
+				background: white;
+				color: @retail-add-to-cart-hover-color;
+			}
+		}
+		&:disabled, &[disabled]{
+			border-color: @retail-add-to-cart-disabled-bg;
+			background: @retail-add-to-cart-disabled-bg;
+			color: @retail-add-to-cart-disabled-color;
+		}
+	}
+}
+.border-bottom{
+	border-bottom-color: @retail-border-grey;
+	&.border-light{
+		border-bottom-color: @retail-border-light-grey;
+	}
+	&.last-item{
+		border-bottom-color: @retail-border-grey;
+	}
+}
+.ui-datepicker-div{
+	background: @retail-white;
+}
+
+/*
+MAIN TITLE
+*/
+.page-title{
+	h1{
+		color:@retail-black-grey;
+		border-left:solid 3px @retail-border-light-grey;
+		.gothamBook;
+		@media (max-width: @screen-xs-max) { 
+			border-left:solid 0px @retail-border-light-grey;
+		}
+	}
+}
+.progress-button {
+	button{
+		&:hover{
+			color: @retail-add-to-cart-color;	
+			@media (min-width: @screen-sm){
+				color: @retail-add-to-cart-hover-color;	
+			}
+			svg{
+				@media (min-width: @screen-sm){
+					fill: @retail-add-to-cart-bg;	
+				}					
+			}
+		}
+	}		
+}//End progress button
+.added-to-cart{
+	border-color: @retail-main-color;
+	background-size: cover;
+}

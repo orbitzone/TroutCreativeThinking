@@ -90,12 +90,10 @@ p{
 		background: @call-to-action-bg;
 		color: @call-to-action-color;
 		border: 2px solid @call-to-action-bg;
-		&:after{
-			background: @call-to-action-hover-bg;
-		}
 		&:hover{
-			&:hover{
-				color: @call-to-action-hover-color;
+			@media (min-width: @screen-sm){
+				background: white;
+				color: @call-to-action-hover-color;			
 			}
 		}
 	}
@@ -110,6 +108,7 @@ p{
 		&:hover{
 			@media (min-width: @screen-sm){
 				color: @add-to-cart-hover-color;
+				background: white;
 			}
 		}
 		&:disabled, &[disabled]{
@@ -184,10 +183,12 @@ p{
 	background: @bg-mid-grey;
 }
 .bg-dark-stripes{
-	background: @bg-dark-grey url('../templates/images/product-detail/bg-dark-stripes.png');
+	background: @bg-dark-stripes;
+	background-image: @bg-dark-stripes-svg;
 }
 .bg-light-stripes{
-	background:@bg-light-grey url('../templates/images/product-detail/bg-light-stripes.png');
+	background: @bg-light-stripes;
+	background-image: @bg-light-stripes-svg;
 }
 .bg-table-header-grey{
 	background: @bg-table-header-grey;
@@ -286,13 +287,13 @@ ul.inline-list{
 		}
 	}
 	&.black-button{
-		background: @bg-button-black;
-		border-color: @bg-button-black;
-		color: @white;
+		background: @bg-button-black !important;
+		border-color: @bg-button-black !important;
+		color: @white !important;
 		&:hover{
 			@media (min-width: @screen-sm){
-				color: @bg-button-black;
-				background: white;								
+				color: @bg-button-black !important;
+				background: white !important;								
 			}
 		}
 	}

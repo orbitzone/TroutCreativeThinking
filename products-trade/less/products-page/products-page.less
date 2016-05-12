@@ -3,6 +3,7 @@
 @import "../bootstrap/variables.less";
 @import "../bootstrap/mixins.less";
 @import "_variables.less";
+@import "_variables-retail.less";
 @-ms-viewport {
   width: device-width;
 }
@@ -54,20 +55,30 @@
 		}
 	}
 #product-pages{
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-@import "components/_slick.less";
-@import "components/_bootstrap-select.less";
-@import "_global.less";
-@import "_global-forms.less";
-@import "components/_search.less";
-@import "components/_breadcrumbs.less";
-@import "components/_postcode-input.less";
-@import "components/_shopping-cart-widget.less";
-@import "_product-toolbar.less";
-@import "_checkout-cart-sidebar.less";
-@import "_checkout-cart-page.less";
-@import "_checkout-cart-success.less";
-@import "_shopping-cart-page.less";
-@import "_product-detail.less";
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	@import "components/_slick.less";
+	@import "components/_bootstrap-select.less";
+	@import "_global.less";
+	@import "_global-forms.less";
+	@import "components/_search.less";
+	@import "components/_breadcrumbs.less";
+	@import "components/_postcode-input.less";
+	@import "components/_shopping-cart-widget.less";
+	@import "_product-toolbar.less";
+	@import "_checkout-cart-sidebar.less";
+	@import "_checkout-cart-page.less";
+	@import "_checkout-cart-success.less";
+	@import "_shopping-cart-page.less";
+
+	@import "pages/_product-detail-main.less";
+	&.retail{
+		@import "_global-retail.less";
+		@import "retail/components/_search-retail.less";
+		@import "retail/components/_slick-retail.less";
+		@import "retail/components/_breadcrumbs-retail.less";
+		@import "retail/components/_postcode-input-retail.less";
+		@import "retail/components/_shopping-cart-widget-retail.less";
+		@import "retail/pages/_product-detail-retail.less";
+	}
 }

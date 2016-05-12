@@ -74,7 +74,7 @@
 					123 Newry Street
 				</div>
 				<div class="search-box">
-					<form action="" class="search-form">
+					<form action="/" class="search-form">
 						<div class="search-input">
 							<input type="text" name="search-list" autocomplete="off" placeholder="Search List" />
 							<button type="button" class="btn blue-button">
@@ -85,29 +85,29 @@
 							<ul class="list-inline">
 								<li>
 									<input type="checkbox" name="order" id="search-list-order"/>
-									<label for="search-list-order"><div class="icon">
+									<label for="search-list-order"><span class="icon">
 										<svg xmlns="http://www.w3.org/2000/svg" width="20px" height="14.8px" viewBox="0 0 20 14.8">
 											<path d="M2.5,4.9l7.5,7.4l-2.5,2.5L0,7.4L2.5,4.9z M17.5,0L20,2.5L7.5,14.8L5,12.3L17.5,0z"/>
 										</svg>
-									</div>
+									</span>
 									Orders</label>
 								</li>
 								<li>
 									<input type="checkbox" name="quotes" id="search-list-quotes"/>
-									<label for="search-list-quotes"><div class="icon">
+									<label for="search-list-quotes"><span class="icon">
 										<svg xmlns="http://www.w3.org/2000/svg" width="20px" height="14.8px" viewBox="0 0 20 14.8">
 											<path d="M2.5,4.9l7.5,7.4l-2.5,2.5L0,7.4L2.5,4.9z M17.5,0L20,2.5L7.5,14.8L5,12.3L17.5,0z"/>
 										</svg>
-									</div>
+									</span>
 									Quotes</label>
 								</li>
 								<li>
 									<input type="checkbox" name="lists" id="search-list-lists"/>
-									<label for="search-list-lists"><div class="icon">
+									<label for="search-list-lists"><span class="icon">
 										<svg xmlns="http://www.w3.org/2000/svg" width="20px" height="14.8px" viewBox="0 0 20 14.8">
 											<path d="M2.5,4.9l7.5,7.4l-2.5,2.5L0,7.4L2.5,4.9z M17.5,0L20,2.5L7.5,14.8L5,12.3L17.5,0z"/>
 										</svg>
-									</div>
+									</span>
 									Lists</label>
 								</li>
 							</ul>
@@ -122,7 +122,7 @@
 						Recent Lists
 					</div>
 					<div class="sort-by">
-						<select name="" id="">
+						<select name="sort-by-list" id="shopping-cart-sort-by-list">
 							<option value="">Sort By</option>
 							<option value="">Name</option>
 							<option value="">Date</option>
@@ -188,7 +188,7 @@
 				</div>
 				<div class="search-box">
 					<h4>Saved Lists</h4>
-					<form action="" class="search-form">
+					<form action="/" class="search-form">
 						<div class="search-input">
 							<input type="text" name="search-list" autocomplete="off" placeholder="Search List" />
 							<button type="button" class="btn blue-button">
@@ -199,29 +199,29 @@
 							<ul class="list-inline">
 								<li>
 									<input type="checkbox" name="order" id="search-list-order-2"/>
-									<label for="search-list-order-2"><div class="icon">
+									<label for="search-list-order-2"><span class="icon">
 										<svg xmlns="http://www.w3.org/2000/svg" width="20px" height="14.8px" viewBox="0 0 20 14.8">
 											<path d="M2.5,4.9l7.5,7.4l-2.5,2.5L0,7.4L2.5,4.9z M17.5,0L20,2.5L7.5,14.8L5,12.3L17.5,0z"/>
 										</svg>
-									</div>
+									</span>
 									Orders</label>
 								</li>
 								<li>
 									<input type="checkbox" name="quotes" id="search-list-quotes-2"/>
-									<label for="search-list-quotes-2"><div class="icon">
+									<label for="search-list-quotes-2"><span class="icon">
 										<svg xmlns="http://www.w3.org/2000/svg" width="20px" height="14.8px" viewBox="0 0 20 14.8">
 											<path d="M2.5,4.9l7.5,7.4l-2.5,2.5L0,7.4L2.5,4.9z M17.5,0L20,2.5L7.5,14.8L5,12.3L17.5,0z"/>
 										</svg>
-									</div>
+									</span>
 									Quotes</label>
 								</li>
 								<li>
 									<input type="checkbox" name="lists" id="search-list-lists-2"/>
-									<label for="search-list-lists-2"><div class="icon">
+									<label for="search-list-lists-2"><span class="icon">
 										<svg xmlns="http://www.w3.org/2000/svg" width="20px" height="14.8px" viewBox="0 0 20 14.8">
 											<path d="M2.5,4.9l7.5,7.4l-2.5,2.5L0,7.4L2.5,4.9z M17.5,0L20,2.5L7.5,14.8L5,12.3L17.5,0z"/>
 										</svg>
-									</div>
+									</span>
 									Lists</label>
 								</li>
 							</ul>
@@ -236,7 +236,7 @@
 						Recent Lists
 					</div>
 					<div class="sort-by">
-						<select name="" id="">
+						<select name="sort-by-list" id="return-user-sort-by-list">
 							<option value="">Sort By</option>
 							<option value="">Name</option>
 							<option value="">Date</option>
@@ -311,11 +311,11 @@
 						</select>
 					</div>
 					<div class="one-option checkbox-option">
-						<label for="shopping-cart-include-gst">GST <input type="checkbox" id="shopping-cart-include-gst" name="gst" value="gst"><div class="icon">
+						<label for="shopping-cart-include-gst">GST <input type="checkbox" id="shopping-cart-include-gst" name="gst" value="gst"><span class="icon">
 										<svg xmlns="http://www.w3.org/2000/svg" width="20px" height="14.8px" viewBox="0 0 20 14.8">
 											<path d="M2.5,4.9l7.5,7.4l-2.5,2.5L0,7.4L2.5,4.9z M17.5,0L20,2.5L7.5,14.8L5,12.3L17.5,0z"/>
 										</svg>
-									</div></label>
+									</span></label>
 					</div>
 				</div>
 			</div>
@@ -323,84 +323,7 @@
 			<!--START TOOL BAR ITEMLIST-->
 			<div class="itemlist-section">
 				<ul class="item-list">
-				<?php for($i=1;$i<5;$i++){ ?>
-					<li class="one-item">
-						<div class="item-block">
-							<div class="item-info">
-								<span class="edit-item">
-									<svg xmlns="http://www.w3.org/2000/svg" width="24.9px" height="24.1px" viewBox="0 0 24.9 24.1">
-										<path d="M0.6,22.4c0.6-0.2,5.9-1.6,7.4-2c0.3-0.1,0.5-0.2,0.7-0.4l3.2-3.4l8.7-9.1l0,0l0,0c0.9-1,0.9-2.7,0-3.7l-2.8-2.9
-											c-1-1-2.5-1-3.5,0l0,0l0,0L5.5,9.9l-3.2,3.4C2.1,13.5,2,13.7,1.9,14c-0.3,1.6-1.7,7.1-1.9,7.8c0,0.1,0,0.2,0,0.2
-											C0.1,22.3,0.3,22.4,0.6,22.4z M18.2,6.4c0.2-0.2,0.4-0.2,0.6,0l0.1,0.1C19,6.7,19,7,18.9,7.1L8.6,17.9c-0.2,0.2-0.4,0.2-0.6,0
-											l-0.1-0.1c-0.2-0.2-0.2-0.5,0-0.6L18.2,6.4z M16.3,4.5c0.2-0.2,0.4-0.2,0.6,0L17,4.6c0.2,0.2,0.2,0.5,0,0.6L6.8,16
-											c-0.2,0.2-0.4,0.2-0.6,0l-0.1-0.1c-0.2-0.2-0.2-0.5,0-0.6L16.3,4.5z M4.2,13.3L14.5,2.6c0.2-0.2,0.4-0.2,0.6,0l0.1,0.1
-											c0.2,0.2,0.2,0.5,0,0.6L4.9,14.1c-0.2,0.2-0.4,0.2-0.6,0L4.2,14C4.1,13.8,4.1,13.5,4.2,13.3z M2.7,14.8l4.5,4.7l-3.4,0.9l-2-2.1
-											L2.7,14.8z"/>
-										<rect x="0.2" y="22.8" width="24.7" height="1.3"/>
-									</svg>
-								</span>
-								<span class="product-thumbnail">
-									<img class="img-responsive" src="templates/images/product-detail/product-image<?php echo $i ?>.jpg" alt="item">
-								</span>
-								<span class="item-details">
-									<p class="product-code">0000000<?php echo $i ?></p>
-									<p class="product-name">Thermann Electical Storage</p>
-									<p class="product-description">Electric Hot Water Unit 250L</p>
-								</span>
-								<button class="remove-from-list">
-									<svg xmlns="http://www.w3.org/2000/svg" width="35.5px" height="50px" viewBox="0 0 35.5 50">
-										<path d="M11.6,0h12.2v2.1H11.6V0z"/>
-										<path d="M33.3,4.4h-31H0v2.1h2.2V50h31V6.5h2.2V4.4H33.3z M13.8,38h-2.1V14.9h2.1V38z M23.8,38h-2.1V14.9h2.1V38z"/>
-									</svg>
-								</button>
-								<div class="clear-fix"></div>
-							</div>
-							<footer class="item-footer">
-								<div class="info-state">
-									<span class="quantity left-col">
-										<span class="number">1</span> <span class="set">Pkt</span>
-									</span>
-									<span class="price right-col">
-										$406.32
-									</span>
-									<div class="clear-fix"></div>
-								</div>
-								<div class="edit-state">
-									<div class="edit-set left-col">
-										<div class="quantity-wrap">
-											<div class="quantity-hidden">
-												<input class="quantity-radio" type="radio" id="set-7845123-ea" name="set-7845123" value="EA" checked>
-												<input class="quantity-radio" data-productcode="7845123" type="radio" id="set-7845123-pkt" name="set-7845123" value="PKT">
-											</div>
-											<div class="quantity-input">
-												<input class="quantity-number" data-productcode="7845123" type="number" name="quantity-7845123" min="1" value="1">
-											</div>
-											<div class="quantity-set">
-												<span class="radiolabel-set span-block">
-													<label for="set-7845123-ea" class="radio-button active">EA</label>
-													<label for="set-7845123-pkt" class="radio-button">PKT</label>
-													<span class="clear-fix"></span>
-												</span>												
-											</div>
-											<div class="quantity-updated">
-												<svg class="check" width="51.4px" height="38.5px" viewBox="0 0 51.4 38.5">
-													<path class="short" fill="none" stroke="#010202" stroke-width="2" stroke-miterlimit="10" d="M0.7,23.7l14.1,14.1"/>
-													<path class="long" fill="none" stroke="#010202" stroke-width="2" stroke-miterlimit="10" d="M13.5,37.8L50.7,0.7"/>
-												</svg>
-											</div>
-											<div class="quantity-details">Packet Contains <span>100</span> Units</div>
-										</div>
-									</div>
-									<div class="prices right-col">
-										<div class="price price-my"><span class="label">YOUR PRICE</span> <span class="value">$406.32</span></div>
-										<div class="price price-cmp"><span class="label">CMP </span><span class="value">$444.17</span></div>
-									</div>
-									<div class="clear-fix"></div>
-								</div>
-							</footer>
-						</div>
-					</li>
-				<?php } ?>
+				
 				</ul>
 			</div>
 			<!--END TOOL BAR ITEMLIST-->

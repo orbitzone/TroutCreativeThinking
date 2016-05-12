@@ -315,7 +315,10 @@ ul.inline-list{
 		&:hover{
 			@media (min-width: @screen-sm){
 				color: @bg-blue;
-				background: white;								
+				background: white;
+				svg{
+					fill: @bg-blue;
+				}
 			}
 		}
 	}
@@ -585,6 +588,59 @@ MAIN TITLE
 		&.added{
 			.transform(scale(0));
 		}		
+	}
+	.main-section{
+		.dropdown-toggle{
+		  border-color: @view-bar-border;
+		  border-width: 1px;
+		  background: @view-bar-dropdown-bg;
+		  color: @view-bar-dropdown-color;
+		  font-size: 15px;
+		  padding-right: 40px;
+
+		  .text{
+		    color: @view-bar-dropdown-label-color;
+		  }
+		  .bs-caret{
+		    position: absolute;
+		    right: 0;
+		    top: 0;
+		    padding-right: 10px;
+		    svg{
+		      position: relative;
+		      top: 2px;
+          width: 23px;
+    			height: 13px;
+		      display: inline-block;
+		      fill: @view-bar-dropdown-arrow-color;
+		    }
+		  }
+		}
+		.dropdown-menu{
+		  .text-label{
+		    display: none;
+		  }
+		  a{
+		    padding: 10px 20px;
+		    text-decoration: none;
+		    color: black;
+		  }
+		}
+		.btn-icon{
+		  margin-left: 20px;
+		  svg{
+		    .transition(.3s fill ease-out);
+		    display: block;
+		    width: 33px;
+		    height: 33px;
+		    fill: @view-bar-icon-color;
+		  }
+		  &.active{
+		    svg{
+		      fill: @view-bar-icon-active-color;  
+		    }
+		  }
+		}
 	}
 /*
 Slick slider arrow

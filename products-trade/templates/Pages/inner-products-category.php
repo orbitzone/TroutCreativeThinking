@@ -185,9 +185,7 @@
 												C0,55.3,1.3,54,3,54z M3,36h60c1.7,0,3,1.3,3,3v6c0,1.7-1.3,3-3,3H3c-1.7,0-3-1.3-3-3v-6C0,37.3,1.3,36,3,36z"/>
 											</svg>
 										</button>
-										</li>
-										<li><svg class="icon grid active"><use xlink:href="/images/IconsSvg.svg#shape-grid" /></svg></li>
-										<li><svg class="icon list"><use xlink:href="/images/IconsSvg.svg#shape-list" /></svg></li>
+										</li>										
 									</ul>
 								</li>
 								<li><label for="show-gst">Show GST <input type="checkbox" id="show-gst" /><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="14.8px" viewBox="0 0 20 14.8">
@@ -195,17 +193,17 @@
 										</svg></span></label></li>
 								<li>
 								<select id="price-option" data-default="Show price">
-										<option value="my" data-content="<span class='text'>Show: </span>My Price">My Price</option>
-										<option value="cmp" data-content="<span class='text'>Show: </span>CMP Price">CMP Price</option>
-										<option value="both" data-content="<span class='text'>Show: </span>Both">Both</option>
+										<option value="my" data-content="<span class='text-label'>Show: </span>My Price">My Price</option>
+										<option value="cmp" data-content="<span class='text-label'>Show: </span>CMP Price">CMP Price</option>
+										<option value="both" data-content="<span class='text-label'>Show: </span>Both">Both</option>
 									</select>
 									</li>
 								<li>
 									<span class="one-option dropdown-option span-block">
 										<select id="sort-by-option" data-default="Sort">
-											<option value="popularity" data-content="<span class='text'>Sort: </span>Popularity">Popularity</option>
-											<option value="product-code" data-content="<span class='text'>Sort: </span>Product Code">Product Code</option>
-											<option value="description" data-content="<span class='text'>Sort: </span>Description">Description</option>
+											<option value="popularity" data-content="<span class='text-label'>Sort: </span>Popularity">Popularity</option>
+											<option value="product-code" data-content="<span class='text-label'>Sort: </span>Product Code">Product Code</option>
+											<option value="description" data-content="<span class='text-label'>Sort: </span>Description">Description</option>
 										</select>
 									</span>
 									<span class="clear-fix"></span>
@@ -216,12 +214,47 @@
 						<div id="products" class="products">
 							
 						</div>
+						<nav class="pagination-wrap">
+							<ul class="pagination">
+								<li>
+						      <a href="#" aria-label="Previous">
+						        <span aria-hidden="true">&laquo;</span>
+						      </a>
+						    </li>
+						    <li><a href="#">1</a></li>
+						    <li><span>...</span></li>
+						    <li><a href="#">5</a></li>
+						    <li class="active"><a href="#">6 <span class="sr-only">(current)</span></a></li>
+						    <li><a href="#">7</a></li>
+						    <li><span>...</span></li>
+						    <li><a href="#">10</a></li>
+						    <li>
+						      <a href="#" aria-label="Next">
+						        <span aria-hidden="true">&raquo;</span>
+						      </a>
+						    </li>
+							</ul>
+						</nav>
+						<div class="results">
+							<ul class="list-inline">
+								<li><span class="total-results">10,086</span> Products found</li>
+								<li>View 
+									<select name="products_per_page" id="products-per-page">
+										<option value="12">12</option>
+										<option value="24">24</option>
+										<option value="36">36</option>
+										<option value="48">48</option>
+									</select>
+									Product per page
+								</li>								
+							</ul>
+						</div>
 					</section><!-- END MAIN -->
 				</div><!-- END CONTENT WRAPPER -->
 			</div>
 		</div>
 		<!--END PRODUCT HERO SECTION -->
-		</div>	
+	</div>	
 	<script id="product-template" type="text/template">
 		<div class="product">
 			<div class="product-image">

@@ -5,12 +5,12 @@
 @bg-checkbox: #f4f4f4;
 @bg-checkbox-checked: #dcdcdc;
 @border-product: #e6e6e6;
-@border-view-bar: #e4e4e4;
 @border-radio-box: #f6f6f6;
 @bg-product-price: #f4f4f4;
 @text-my-price: #9b9b9b;
 @text-cmp-grey: #c6c6c6;
 
+@view-bar-border: #e4e4e4;
 @view-bar-icon-color: #eaeaea;
 @view-bar-icon-active-color: #0776aa;
 @view-bar-dropdown-bg: #f4f4f4;
@@ -86,8 +86,8 @@
 		position: relative;
 	}
 	.product-category-wrap{
-		overflow-y: scroll; 
-		-webkit-overflow-scrolling : touch;
+		/*overflow-y: scroll; 
+		-webkit-overflow-scrolling : touch;*/
 		padding-top: 30px;
 		padding-right: 0;
 		@media (min-width: @screen-sm){
@@ -187,8 +187,8 @@
 	}
 
 	.view-bar{
-		border-top: 1px solid @border-view-bar;
-		border-bottom: 1px solid @border-view-bar;
+		border-top: 1px solid @view-bar-border;
+		border-bottom: 1px solid @view-bar-border;
 		text-transform: uppercase;
 		margin-bottom: 30px;
 		padding: 10px 0;
@@ -263,58 +263,7 @@
 					}
 				}
 			}
-		}
-		.dropdown-toggle{
-			border-color: @border-view-bar;
-			border-width: 1px;
-			background: @view-bar-dropdown-bg;
-			color: @view-bar-dropdown-color;
-			font-size: 15px;
-			padding-right: 40px;
-
-			.text{
-				color: @view-bar-dropdown-label-color;
-			}
-			.bs-caret{
-				position: absolute;
-				right: 0;
-				top: 0;
-				padding-right: 10px;
-				svg{
-					position: relative;
-					top: 2px;
-			    width: 25px;
-	    		height: 14px;
-	    		display: inline-block;
-	    		fill: @view-bar-dropdown-arrow-color;
-    		}
-			}
-		}
-		.dropdown-menu{
-			.text{
-				display: none;
-			}
-			a{
-				padding: 10px 20px;
-				text-decoration: none;
-				color: black;
-			}
-		}
-		.btn-icon{
-			margin-left: 20px;
-			svg{
-				.transition(.3s fill ease-out);
-				display: block;
-				width: 33px;
-				height: 33px;
-				fill: @view-bar-icon-color;
-			}
-			&.active{
-				svg{
-					fill: @view-bar-icon-active-color;	
-				}
-			}
-		}
+		}		
 	}
 	img{
 		max-width: 100%;
@@ -646,6 +595,43 @@
 			}
 		}
 	}//end #products
+	.pagination-wrap{
+		text-align: center;
+	}
+	.pagination{
+		li{
+			a, span{
+				background: none;
+				border: none;
+				text-decoration: none;
+				color: black;
+			}
+			&.active{
+				a, span{
+					background: none;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+	.results{
+		text-transform: uppercase;
+		text-align: center;
+		.btn-group{
+			width: auto;			
+		}
+		.total-results{
+			color: @main-color;
+		}
+		.dropdown-toggle{
+		  .bs-caret{
+		    svg{
+		      width: 16px;
+		      height: 9px;
+		    }
+		  }
+		}
+	}
 }
 
 .keyframes(pulse,{ 

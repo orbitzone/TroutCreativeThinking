@@ -1,3 +1,4 @@
+@search-border: #e4e4e4;
 #search{
 	margin-top: 30px;
 	position: relative;
@@ -7,6 +8,7 @@
 		height: 54px;
 		float: left;
 		font-size: 16px;
+		border-color: @search-border;
 		@media (min-width: @screen-sm){
 			width: 37%;
 		}
@@ -14,8 +16,8 @@
 	button{
 		width: 54px;
 		height: 54px;
+		line-height: 50px;
 		text-align: center;
-		border: none;
 		padding: 0;
 		position: absolute !important;
 		top: 0;
@@ -23,6 +25,7 @@
 		svg{
 			width: 20px;
 			height: 20px;
+			vertical-align: middle;
 			circle,
 			line{
 				stroke: white;
@@ -34,6 +37,14 @@
 			top: inherit;
 			right: inherit;
 			margin-left: -1px;
+			&:hover{
+				svg{
+					circle,
+					line{
+						stroke: @main-color;
+					}
+				}
+			}
 		}
 	}
 }

@@ -1113,6 +1113,10 @@ var product_pages = {
             showContent: true,
             template:{caret:'<svg width="28" height="15" viewBox="0 0 28 15"><path d="M0.4,0.4c-0.5,0.5-0.5,1.2,0,1.7c0,0,0,0,0,0l12.8,12.6c0.5,0.5,1.2,0.5,1.7,0L27.6,2.1c0.5-0.5,0.5-1.2,0-1.7c-0.5-0.5-1.2-0.5-1.7,0L14,12.1L2.1,0.4C1.6-0.1,0.8-0.1,0.4,0.4z"/></svg>'}
         });
+        $('.results select').selectpicker({
+            noneSelectedText: 'Select an option',
+            template:{caret:'<svg width="28" height="15" viewBox="0 0 28 15"><path d="M0.4,0.4c-0.5,0.5-0.5,1.2,0,1.7c0,0,0,0,0,0l12.8,12.6c0.5,0.5,1.2,0.5,1.7,0L27.6,2.1c0.5-0.5,0.5-1.2,0-1.7c-0.5-0.5-1.2-0.5-1.7,0L14,12.1L2.1,0.4C1.6-0.1,0.8-0.1,0.4,0.4z"/></svg>'}
+        });
 
         $('.view-bar .btn-icon').on('click', function(){
             $('.view-bar .btn-icon').removeClass('active');

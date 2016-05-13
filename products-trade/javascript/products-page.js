@@ -515,17 +515,16 @@ var product_pages = {
         //
         //RADIO BUTTONS
         //
-        $(".radio-button").click(
-            function() {
+        $(document).on('click','.radio-button', function() {
                 $(this).parent(".radiolabel-set").find(".radio-button").removeClass("active");
                 $(this).addClass("active");
-            });
+        });
         //
         //
         //
         //INIT ALL DROP DOWN MENUS
         //
-        $('#product-pages select').selectric();
+        $('#product-pages select').selectpicker();
         //
         //ADD RECOMMENDED PRODUCT
         //

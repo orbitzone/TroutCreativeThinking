@@ -88,7 +88,7 @@
 						<div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0">
 							<div class="inner-wrap item-listing">
 								<div class="one-product">
-									<div class="item-data item-thumbnail xs-left xxs-full"><div class="item-inner"><div class="product-thumbnail"><img src="templates/images/product1.jpg" alt="item"></div></div></div>
+									<div class="item-data item-thumbnail xs-left xxs-full"><div class="item-inner"><div class="product-thumbnail"><img src="templates/images/trade/shopping-cart/product1.jpg" alt="item"></div></div></div>
 									<div class="item-data item-details xs-left xxs-full">
 										<div class="item-inner">
 											<span class="product-code">123123123</span>
@@ -122,7 +122,7 @@
 						<div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0">
 							<div class="inner-wrap item-listing">
 								<div class="one-product">
-									<div class="item-data item-thumbnail xs-left xxs-full"><div class="item-inner"><div class="product-thumbnail"><img src="templates/images/product2.jpg" alt="item"></div></div></div>
+									<div class="item-data item-thumbnail xs-left xxs-full"><div class="item-inner"><div class="product-thumbnail"><img src="templates/images/trade/shopping-cart/product2.jpg" alt="item"></div></div></div>
 									<div class="item-data item-details xs-left xxs-full">
 										<div class="item-inner">
 											<span class="product-code">7845123</span>
@@ -165,7 +165,7 @@
 						<div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0">
 							<div class="inner-wrap item-listing">
 								<div class="one-product">
-									<div class="item-data item-thumbnail xs-left xxs-full"><div class="item-inner"><div class="product-thumbnail"><img src="templates/images/product3.jpg" alt="item"></div></div></div>
+									<div class="item-data item-thumbnail xs-left xxs-full"><div class="item-inner"><div class="product-thumbnail"><img src="templates/images/trade/shopping-cart/product3.jpg" alt="item"></div></div></div>
 									<div class="item-data item-details xs-left xxs-full">
 										<div class="item-inner">
 											<span class="product-code">67564534</span>
@@ -208,7 +208,7 @@
 						<div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0">
 							<div class="inner-wrap item-listing">
 								<div class="one-product">
-									<div class="item-data item-thumbnail xs-left xxs-full"><div class="item-inner"><div class="product-thumbnail"><img src="templates/images/product4.jpg" alt="item"></div></div></div>
+									<div class="item-data item-thumbnail xs-left xxs-full"><div class="item-inner"><div class="product-thumbnail"><img src="templates/images/trade/shopping-cart/product4.jpg" alt="item"></div></div></div>
 									<div class="item-data item-details xs-left xxs-full">
 										<div class="item-inner">
 											<span class="product-code">2698362</span>
@@ -253,7 +253,7 @@
 						<div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0">
 							<div class="inner-wrap item-listing">
 								<div class="one-product">
-									<div class="item-data item-thumbnail xs-left xxs-full"><div class="item-inner"><div class="product-thumbnail"><img src="templates/images/product5.jpg" alt="item"></div></div></div>
+									<div class="item-data item-thumbnail xs-left xxs-full"><div class="item-inner"><div class="product-thumbnail"><img src="templates/images/trade/shopping-cart/product5.jpg" alt="item"></div></div></div>
 									<div class="item-data item-details xs-left xxs-full">
 										<div class="item-inner">
 											<span class="product-code">78787878</span>
@@ -297,7 +297,7 @@
 						<div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0">
 							<div class="inner-wrap item-listing">
 								<div class="one-product">
-									<div class="item-data item-thumbnail xs-left xxs-full"><div class="item-inner"><div class="product-thumbnail"><img src="templates/images/product6.jpg" alt="item"></div></div></div>
+									<div class="item-data item-thumbnail xs-left xxs-full"><div class="item-inner"><div class="product-thumbnail"><img src="templates/images/trade/shopping-cart/product6.jpg" alt="item"></div></div></div>
 									<div class="item-data item-details xs-left xxs-full">
 										<div class="item-inner">
 											<span class="product-code">63636363</span>
@@ -342,7 +342,7 @@
 						<div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0">
 							<div class="inner-wrap item-listing">
 								<div class="one-product">
-									<div class="item-data item-thumbnail xs-left xxs-full"><div class="item-inner"><div class="product-thumbnail"><img src="templates/images/product7.jpg" alt="item"></div></div></div>
+									<div class="item-data item-thumbnail xs-left xxs-full"><div class="item-inner"><div class="product-thumbnail"><img src="templates/images/trade/shopping-cart/product7.jpg" alt="item"></div></div></div>
 									<div class="item-data item-details xs-left xxs-full">
 										<div class="item-inner">
 											<span class="product-code">52525252</span>
@@ -386,7 +386,7 @@
 						<div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0">
 							<div class="inner-wrap item-listing">
 								<div class="one-product">
-									<div class="item-data item-thumbnail xs-left xxs-full"><div class="item-inner"><div class="product-thumbnail"><img src="templates/images/product8.jpg" alt="item"></div></div></div>
+									<div class="item-data item-thumbnail xs-left xxs-full"><div class="item-inner"><div class="product-thumbnail"><img src="templates/images/trade/shopping-cart/product8.jpg" alt="item"></div></div></div>
 									<div class="item-data item-details xs-left xxs-full">
 										<div class="item-inner">
 											<span class="product-code">14141414</span>
@@ -452,7 +452,7 @@
 									<div class="col-xs-3">
 										<div class="one-recommendation">
 											<div class="product-thumbnail">
-												<img src="templates/images/product5.jpg" alt="item">
+												<img src="templates/images/trade/shopping-cart/product5.jpg" alt="item">
 											</div>
 											<div class="product-details">
 												<span class="product-code">78787878</span>
@@ -470,7 +470,7 @@
 									<div class="col-xs-3">
 										<div class="one-recommendation">
 											<div class="product-thumbnail">
-												<img src="templates/images/product6.jpg" alt="item">
+												<img src="templates/images/trade/shopping-cart/product6.jpg" alt="item">
 											</div>
 											<div class="product-details">
 												<span class="product-code">63636363</span>
@@ -488,7 +488,7 @@
 									<div class="col-xs-3">
 										<div class="one-recommendation">
 											<div class="product-thumbnail">
-												<img src="templates/images/product7.jpg" alt="item">
+												<img src="templates/images/trade/shopping-cart/product7.jpg" alt="item">
 											</div>
 											<div class="product-details">
 												<span class="product-code">52525252</span>
@@ -506,7 +506,7 @@
 									<div class="col-xs-3">
 										<div class="one-recommendation">
 											<div class="product-thumbnail">
-												<img src="templates/images/product8.jpg" alt="item">
+												<img src="templates/images/trade/shopping-cart/product8.jpg" alt="item">
 											</div>
 											<div class="product-details">
 												<span class="product-code">14141414</span>

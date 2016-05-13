@@ -45,7 +45,7 @@
 @retail-product-item-footer-quantity-color: white;
 @retail-product-item-footer-price-color: white;
 
-@retail-product-item-footer-quantity-edit-color: @retail-main-color;
+@retail-product-item-footer-quantity-edit-color: black;
 @retail-product-item-footer-quantity-edit-bg: #e2e2e2;
 
 @retail-product-item-footer-price-edit-label-color: #64b8a7;
@@ -66,15 +66,13 @@
 
 @retail-wishlist-add-to-cart-btn-color: white;
 @retail-wishlist-add-to-cart-btn-bg: #4faa98;
-
 @retail-wishlist-product-bg: #6dc8b6;
 @retail-wishlist-product-code-color: #439182;
 @retail-wishlist-product-name-color: white;
 @retail-wishlist-product-description-color: white;
 @retail-wishlist-close-btn-color: #d5e3e0;
-
-@retail-wishlist-add-all-to-cart-btn-color: #4faa98;
-@retail-wishlist-add-all-to-cart-btn-bg: #54f276;
+@retail-wishlist-add-all-to-cart-btn-color: white;
+@retail-wishlist-add-all-to-cart-btn-bg: #3f3f3f;
 
 @retail-editable-text-field-bg: #6dc8b6; 
 @retail-quantity-updated-check-color: #54f276;
@@ -93,11 +91,18 @@
 	  background-color: @retail-select-bg;
 	  color: @retail-select-color;
 	}
-
 	.checkout-btn,
 	.new-list-btn{
 		color: @retail-checkout-btn-color;
+		border-color: @retail-checkout-btn-bg;
 		background-color: @retail-checkout-btn-bg;
+		&:hover{
+			@media (min-width: @screen-sm){
+				background-color: @retail-checkout-btn-color;
+				color: @retail-checkout-btn-bg;
+				border-color: @retail-checkout-btn-bg; 
+			}
+		}
 	}
 	.selectric{
 		color: @retail-select-color;

@@ -687,6 +687,7 @@
 			.product-postcode-input{
 				background: @bg-light-blue-stripes;
 				background-image: @bg-light-blue-stripes-svg;
+				color: @postcode-input-color;
 				padding: 14px 10px 34px;
 				position: relative;
 				margin-bottom: 10px;
@@ -712,6 +713,7 @@
 						font-size: 25px;
 						padding-top: 0;
 						padding-bottom: 0;
+						color: black;
 						&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 							line-height: 45px;
 							font-size: 16px;
@@ -1128,15 +1130,16 @@
 				}
 			}
 			button{
-				background: @product-display-button-bg;
-				color: @product-display-button-color;
-				border-color: @product-display-button-bg;
 				height: 55px;
 				vertical-align: middle;
+				background: @product-display-button-bg;
+				border-color: @product-display-button-bg;
+				color: @product-display-button-color;
 				&:hover{
 					@media (min-width: @screen-sm){
 						color: @product-display-button-bg;
-						background: white;									
+						background: @product-display-button-color;
+						border-color: @product-display-button-bg;
 					}
 				}
 			}

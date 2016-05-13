@@ -55,33 +55,17 @@ p{
 			position: relative;
 			z-index: 1;
 			overflow: hidden;
+			background: white;
+			color: @main-color;
 			border: 2px solid @main-color;
 			padding: 15px 20px;
 			text-decoration: none;
 			.box-shadow(none);
 			.transition(0.2s all ease-out);
-			/*&:before{
-				@media (min-width: @screen-sm){
-					content: " ";
-					position: absolute;
-					width: 0;
-					height: 100%;
-					top: 0;
-					left: 0;
-					background: white;
-					z-index: -1;
-					.transform(translateX(-100%));
-					.transition(0.2s all ease-out);
-				}
-			}*/
 			&:hover{
 				@media (min-width: @screen-sm){
-					color: @main-color;
-					background: white;
-					/*&:before{
-						width: 100%;
-						.transform(translateX(0));
-					}*/
+					color: white;
+					background: @main-color;
 				}
 			}
 		}
@@ -246,10 +230,12 @@ ul.inline-list{
 	&.green-button{
 		background: @bg-green;
 		color: @white;
+		border-color: @bg-green;
 		&:hover{
 			@media (min-width: @screen-sm){
 				color: @bg-button-black;
 				background: white;								
+				border-color: @bg-green;
 			}
 		}
 	}

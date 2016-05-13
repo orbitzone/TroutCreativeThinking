@@ -113,6 +113,7 @@
 			.product-postcode-input{
 				background: @retail-postcode-input-bg;
 				background-image: @bg-light-green-stripes-svg;
+				color: @retail-postcode-input-color;
 			}//End product-postcode-input
 			.product-quantity{
 				.quantity-number{
@@ -197,12 +198,13 @@
 		.postcode-wrap{
 			button{
 				background: @retail-product-display-button-bg;
-				color: @retail-product-display-button-color;
 				border-color: @retail-product-display-button-bg;
+				color: @retail-product-display-button-color;
 				&:hover{
 					@media (min-width: @screen-sm){
 						color: @retail-product-display-button-bg;
-						background: white;									
+						background: @retail-product-display-button-color;
+						border-color: @retail-product-display-button-bg;
 					}
 				}
 			}

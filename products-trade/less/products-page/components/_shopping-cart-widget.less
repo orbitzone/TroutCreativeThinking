@@ -1,14 +1,14 @@
 @widget-bar-bg: @main-color;
 @widget-content-bg: #066693;
 
-@widget-aside-button-color: white;
+@widget-aside-button-color: @widget-content-bg;
 @widget-aside-button-active-color: white;
 
 //Buttons and form fields
 @select-bg: #0776AA;
 @select-color: white;
 
-@checkbox-icon-square-bg: #066693;
+@checkbox-icon-square-bg: @widget-content-bg;
 @checkbox-icon-color: white;
 
 @switch-toolbar-btn-bg: @widget-content-bg;
@@ -16,7 +16,7 @@
 @switch-toolbar-btn-border: #54F276;
 
 @checkout-btn-bg: #54f276;
-@checkout-btn-color: @main-color;
+@checkout-btn-color: @widget-content-bg;
 
 //Section Titles
 @main-title-color: white;
@@ -45,10 +45,10 @@
 @product-item-footer-quantity-color: white;
 @product-item-footer-price-color: white;
 
-@product-item-footer-quantity-edit-color: @main-color;
+@product-item-footer-quantity-edit-color: black;
 @product-item-footer-quantity-edit-bg: #e2e2e2;
 
-@product-item-footer-price-edit-label-color: #066693;
+@product-item-footer-price-edit-label-color: @widget-content-bg;
 @product-item-footer-price-edit-value-color: #2aa9e3;
 
 @list-divider-color: #2178a0;
@@ -65,15 +65,14 @@
 @tour-box-button-bg: @bg-dark-blue-stripes;
 
 @wishlist-add-to-cart-btn-color: white;
-@wishlist-add-to-cart-btn-bg: #4faa98;
-
-@wishlist-product-bg: #6dc8b6;
-@wishlist-product-code-color: #439182;
+@wishlist-add-to-cart-btn-bg: #56B3DE;
+@wishlist-product-bg: #0776AA;
+@wishlist-product-code-color: #56B3DE;
 @wishlist-product-name-color: white;
 @wishlist-product-description-color: white;
 @wishlist-close-btn-color: #d5e3e0;
 
-@wishlist-add-all-to-cart-btn-color: #4faa98;
+@wishlist-add-all-to-cart-btn-color: @widget-content-bg;
 @wishlist-add-all-to-cart-btn-bg: #54f276;
 
 @editable-text-field-bg: #0776aa; 
@@ -82,7 +81,7 @@
 @current-list-color: #46abdb;
 @current-list-border: #61a1be;
 
-@checkbox-icon-bg: #066693;
+@checkbox-icon-bg: @widget-content-bg;
 @product-list-title-color: #46abdb;
 @product-list-title-border: #46abdb;
 @product-list-description-color:#8fbed4;
@@ -112,7 +111,7 @@
 	.checkout-btn,
 	.new-list-btn{
 		color: @checkout-btn-color;
-		border: none;
+		border: 2px solid @checkout-btn-bg;
 		background-color: @checkout-btn-bg;
 		text-transform: uppercase;
 		font-size: 15px;
@@ -122,6 +121,13 @@
 		width: 100%;
 		height: 56px;
 		margin: 0 auto;
+		&:hover{
+			@media (min-width: @screen-sm){
+				background-color: @checkout-btn-color;
+				color: @checkout-btn-bg;
+				border-color: @checkout-btn-bg; 
+			}
+		}
 	}
 	.selectric{
 		border: none;

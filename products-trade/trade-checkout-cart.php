@@ -6,9 +6,9 @@
 <!--[if IE 10]>    <html class="no-js ie ie10" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-  <?php include "templates/Includes/ProductsMeta.php" ?>
+  <?php include "templates/includes/ProductsMeta.php" ?>
   <title>Reece Products</title>
-  <?php include "templates/Includes/ProductsHeader.php" ?>
+  <?php include "templates/includes/ProductsHeader.php" ?>
 </head>
 <body
 class="">
@@ -21,18 +21,17 @@ class="">
       </div>
     </div>
   </div>
-  <?php include "templates/Includes/Navigation.php" ?>
-  <?php include "templates/Includes/ProductsNav.php" ?>
+  <?php include "templates/includes/Navigation.php" ?>
+  <?php include "templates/includes/ProductsNav.php" ?>
   
-  <section id="product-pages" data-section="checkoutCart">
-    
-    <?php include "templates/Pages/inner-checkout-cart.php" ?>
-  </section>
+  <div id="product-pages" data-section="checkoutCart" class="trade">  
+    <?php include "templates/pages/trade/inner-checkout-cart.php" ?>
+  </div>
 
 
-  <?php include "templates/Includes/Footer.php" ?>
+  <?php include "templates/includes/Footer.php" ?>
 </div>
-<?php include "templates/Includes/MobileNavigation.php" ?>
-<?php include "templates/Includes/ProductsFooter.php" ?>
+<?php include "templates/includes/MobileNavigation.php" ?>
+<?php include "templates/includes/ProductsFooter.php" ?>
 </body>
 </html>

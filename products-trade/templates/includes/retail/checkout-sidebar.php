@@ -4,7 +4,7 @@
 	<header class="mobile-open-cart-item">
 		<div class="info-wrap">
 			<div class="left-col">
-				<h3 class="text-blue">Shopping cart <span class="fa fa-angle-down"></span><span class="fa fa-angle-up"></span></h3>
+				<h3 class="text-green">Shopping cart <span class="fa fa-angle-down"></span><span class="fa fa-angle-up"></span></h3>
 			</div>
 			<div class="right-col">
 				<div class="edit-link hidden-xs">
@@ -27,13 +27,14 @@
 				<li>
 					<div class="info-wrap">
 						<div class="left-col">
-								<div class="cart-thumbnail"><img src="templates/images/product1.jpg" alt="item"></div>
+								<div class="cart-thumbnail"><img src="templates/images/retail/shopping-cart/product1.jpg" alt="item"></div>
 						</div>
 						<div class="right-col">
 							<div class="inner-right-col text-right">
-								<div class="quantity">1<span>PKT</span></div>
+								
 							</div>
 							<div class="inner-left-col text-left">
+								<div class="quantity">x1</div>
 								<div class="product-code">123456789</div>
 								<div class="name">Lorem ipsum dolor sit amet</div>
 								<div class="description">Lorem ipsum dolor sit amet</div>
@@ -86,7 +87,29 @@
 		<!--START OF FOOTER INFO -->
 		<footer>
 			<div class="info-wrap">
-				<p>Time frames will differ depending on the type of product/s ordered.</p>
+				<div class="one-icon-info">
+					<div class="icon-image"><img src="templates/images/icon-person.png" alt="icon"></div>
+					<p>A Reece consultant will be in touch within one working day.</p>
+				</div>
+				<div class="one-icon-info">
+					<div class="icon-image"><img src="templates/images/icon-clock.png" alt="icon"></div>
+					<p>Time frames will differ depending on product/s ordered.</p>
+				</div>
+				<div class="clear-fix"></div>
+				<div class="one-icon-info">
+					<div class="icon-image"><img src="templates/images/icon-return.png" alt="icon"></div>
+					<p><strong>EASY RETURNS</strong><br>400 locations</p>
+				</div>
+				<div class="one-icon-info">
+					<div class="icon-image"><img src="templates/images/icon-phone.png" alt="icon"></div>
+					<p><strong>NEED ASSISTANCE?</strong><br>Call 1800 032 566</p>
+				</div>
+				<div class="clear-fix"></div>
+
+
+
+
+
 			</div>
 		</footer>
 		<!--END OF FOOTER INFO -->

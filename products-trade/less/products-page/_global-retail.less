@@ -1,7 +1,4 @@
 /* BODY FONT*/
-.gothamBook;
-color: @retail-text-grey;
-
 .main-section{
 	a{
 		color: @retail-section-link-color;
@@ -12,14 +9,28 @@ color: @retail-text-grey;
 			}
 		}
 	}
-	.btn{
-			border-color: @retail-main-color;
-			&:hover{
-				@media (min-width: @screen-sm){
-					color: @retail-main-color;
-				}
+	.main-button{
+		background: @retail-main-button-bg;
+		border-color: @retail-main-button-bg;
+		color: white;
+		&:hover{
+			@media (min-width: @screen-sm) { 
+				background: white;
+				color: @retail-main-button-bg;
 			}
 		}
+	}
+	.secondary-button{
+		background: @retail-secondary-button-bg;
+		border-color: @retail-secondary-button-bg;
+		color: white;
+		&:hover{
+			@media (min-width: @screen-sm) { 
+				background: white;
+				color: @retail-secondary-button-bg;
+			}
+		}
+	}
 	.call-to-action{
 		background: @retail-call-to-action-bg;
 		color: @retail-call-to-action-color;
@@ -71,12 +82,15 @@ color: @retail-text-grey;
 MAIN TITLE
 */
 .page-title{
+
 	h1{
-		color:@retail-black-grey;
-		border-left:solid 3px @retail-border-light-grey;
-		.gothamBook;
-		@media (max-width: @screen-xs-max) { 
-			border-left:solid 0px @retail-border-light-grey;
+		.gothamMedium;
+		.job-name{
+			color: @black-grey;
+			border-left: solid 3px @border-light-grey;
+			@media (max-width: @screen-xs-max) { 
+				border-left:solid 0px @border-light-grey;
+			}
 		}
 	}
 }

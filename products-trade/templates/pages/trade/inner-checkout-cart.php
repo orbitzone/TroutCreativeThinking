@@ -13,7 +13,7 @@
 		<div class="row">
 			<!--START OF SIDEBAR SECTION -->
 			<div class="col-sm-5 col-sm-push-7 bg-dark-grey">
-				<?php include "templates/Includes/checkout-sidebar.php" ?>
+				<?php include "templates/includes/trade/checkout-sidebar.php" ?>
 			</div>
 			<!--END OF SIDEBAR SECTION -->
 			<!--START OF MAIN FORM SECTION -->
@@ -79,7 +79,7 @@
 										<input name="details_postcode" type="number" class="" id="details_postcode" min="1000" max="9999" required tabindex="8">
 									</div>
 									<div class="form-group full text-right">
-										<button type="button" class="btn next-button blue-button action-goto-step2" id="step1next" tabindex="9">Next</button>
+										<button type="button" class="btn next-button main-button action-goto-step2" id="step1next" tabindex="9">Next</button>
 									</div>
 									<div class="clear-fix"></div>
 								</div>
@@ -181,7 +181,7 @@
 									</div>
 									<div class="form-group half full-sm text-right enter-new-address no-space-top enter-new-address-bottom">
 										<span class="or">OR</span>
-										<button type="button" class="btn blue-button new-address action-enter-new-address" tabindex="17">Enter new address</button>
+										<button type="button" class="btn main-button new-address action-enter-new-address" tabindex="17">Enter new address</button>
 										<div class="clear-fix"></div>
 									</div>
 									<div class="clear-fix"></div>
@@ -270,7 +270,7 @@
 								</div>
 								<div class="form-group half full-sm text-right enter-new-contact no-space-top">
 									<span class="or">OR</span>
-									<button type="button" class="btn blue-button new-contact action-enter-new-contact" tabindex="26">Enter new contact
+									<button type="button" class="btn main-button new-contact action-enter-new-contact" tabindex="26">Enter new contact
 									</button>
 									<div class="clear-fix"></div>
 
@@ -303,10 +303,10 @@
 								</div>
 							</div>
 							<div class="form-group half text-left">
-								<button type="button" class="btn prev-button next-button grey-button action-goto-step1" id="step2previous" tabindex="31">Previous</button>
+								<button type="button" class="btn prev-button next-button secondary-button action-goto-step1" id="step2previous" tabindex="31">Previous</button>
 							</div>
 							<div class="form-group half text-right">
-								<button type="submit" class="btn next-button blue-button" id="final-submit-button" tabindex="32">Submit Order</button>
+								<button type="submit" class="btn next-button main-button" id="final-submit-button" tabindex="32">Submit Order</button>
 							</div>
 							<div class="clear-fix"></div>
 						</div>

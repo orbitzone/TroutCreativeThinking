@@ -1,7 +1,7 @@
 /* BODY FONT*/
 .gothamBook;
 font-size:15px;
-color: @text-grey;
+color: black;
 
 .h1,.h2,.h3,.h4,.h5,.h6{
 	display:block;
@@ -51,17 +51,24 @@ p{
 		}
 	}
 	.btn{
-			font-size: 15px;
-			position: relative;
-			z-index: 1;
-			overflow: hidden;
+		font-size: 15px;
+		position: relative;
+		z-index: 1;
+		overflow: hidden;
+		padding: 0 20px;
+		text-decoration: none;
+		border-width: 2px;
+		border-style: solid;
+		.box-shadow(none);
+		.transition(0.2s all ease-out);
+		.border-radius (0px);
+		height: 45px;
+		line-height: 41px;
+		text-transform: uppercase;
+		&.main-button{
 			background: white;
 			color: @main-color;
 			border: 2px solid @main-color;
-			padding: 15px 20px;
-			text-decoration: none;
-			.box-shadow(none);
-			.transition(0.2s all ease-out);
 			&:hover{
 				@media (min-width: @screen-sm){
 					color: white;
@@ -69,8 +76,134 @@ p{
 				}
 			}
 		}
+		&.main-button{
+			background: @main-button-bg;
+			border-color: @main-button-bg;
+			color: white;
+			&:hover{
+				@media (min-width: @screen-sm) { 
+					background: white;
+					color: @main-button-bg;
+				}
+			}
+		}
+		&.secondary-button{
+			background: @secondary-button-bg;
+			border-color: @secondary-button-bg;
+			color: white;
+			&:hover{
+				@media (min-width: @screen-sm) { 
+					background: white;
+					color: @secondary-button-bg;
+				}
+			}
+		}
+		&.green-button{
+			background: @bg-green;
+			color: @white;
+			border-color: @bg-green;
+			&:hover{
+				@media (min-width: @screen-sm){
+					color: @bg-button-black;
+					background: white;								
+					border-color: @bg-green;
+				}
+			}
+		}
+		&.light-green-button{
+			background: @bg-button-light-green;
+			border-color: @bg-button-light-green;
+			color: @white;
+			&:hover{
+				@media (min-width: @screen-sm){
+					color: @bg-button-light-green;
+					background: white;								
+				}
+			}
+		}
+		&.orange-button{
+			background: @bg-orange;
+			border-color: @bg-orange;
+			color: @white;
+			&:hover{
+				@media (min-width: @screen-sm){
+					color: @bg-orange;
+					background: white;								
+				}
+			}
+		}
+		&.grey-button{
+			background: @bg-button-light-grey;
+			border-color: @bg-button-light-grey;
+			color: @white;
+			&:hover{
+				@media (min-width: @screen-sm){
+					color: @bg-button-light-grey;
+					background: white;								
+				}
+			}
+		}
+		&.black-button{
+			background: @bg-button-black !important;
+			border-color: @bg-button-black !important;
+			color: @white !important;
+			&:hover{
+				@media (min-width: @screen-sm){
+					color: @bg-button-black !important;
+					background: white !important;								
+				}
+			}
+		}
+		&.blue-button{
+			background: @bg-blue;
+			border-color: @bg-blue;
+			color: @white;
+			&:hover{
+				@media (min-width: @screen-sm){
+					color: @bg-blue;
+					background: white;								
+				}
+			}
+		}
+		&.light-blue-button{
+			background: @bg-button-light-blue;
+			border-color: @bg-button-light-blue;
+			color: @white;
+			&:hover{
+				@media (min-width: @screen-sm){
+					color: @bg-button-light-blue;
+					background: white;								
+				}
+			}
+		}
+		&.small-width{
+			padding: 0 25px;
+			@media (max-width: @screen-xs-max) { 
+				width:100%;
+			}
+		}
+		&.xs-full{
+				margin-top: 5px;
+				margin-bottom: 5px;
+			@media (max-width: @screen-xs-max) { 
+				width:100%;
+			}
+
+		}
+
+		&.full-width{
+			width:100%;
+			padding:0  8px;
+			@media (max-width: @screen-xs-max) { 
+				margin-top: 5px;
+				margin-bottom: 5px;
+			}
+		}
+		@media (max-width: @screen-sm-max) { 
+			padding: 0 35px;
+		}
+	}
 	.call-to-action{
-		padding: 15px 20px;
 		background: @call-to-action-bg;
 		color: @call-to-action-color;
 		border: 2px solid @call-to-action-bg;
@@ -82,7 +215,6 @@ p{
 		}
 	}
 	.add-to-cart{
-		padding: 15px 20px;
 		background: @add-to-cart-bg;
 		color: @add-to-cart-color;
 		border-color: @add-to-cart-bg;
@@ -221,124 +353,62 @@ ul.inline-list{
 		padding: 5px 20px;
 	}
 }
-.btn{
-	.border-radius (0px);
-	padding:15px 85px;
-	line-height:1em;
-	font-size:13px;
-	text-transform: uppercase;
-	&.green-button{
-		background: @bg-green;
-		color: @white;
-		border-color: @bg-green;
-		&:hover{
-			@media (min-width: @screen-sm){
-				color: @bg-button-black;
-				background: white;								
-				border-color: @bg-green;
-			}
-		}
-	}
-	&.light-green-button{
-		background: @bg-button-light-green;
-		border-color: @bg-button-light-green;
-		color: @white;
-		&:hover{
-			@media (min-width: @screen-sm){
-				color: @bg-button-light-green;
-				background: white;								
-			}
-		}
-	}
-	&.orange-button{
-		background: @bg-orange;
-		border-color: @bg-orange;
-		color: @white;
-		&:hover{
-			@media (min-width: @screen-sm){
-				color: @bg-orange;
-				background: white;								
-			}
-		}
-	}
-	&.grey-button{
-		background: @bg-button-light-grey;
-		border-color: @bg-button-light-grey;
-		color: @white;
-		&:hover{
-			@media (min-width: @screen-sm){
-				color: @bg-button-light-grey;
-				background: white;								
-			}
-		}
-	}
-	&.black-button{
-		background: @bg-button-black !important;
-		border-color: @bg-button-black !important;
-		color: @white !important;
-		&:hover{
-			@media (min-width: @screen-sm){
-				color: @bg-button-black !important;
-				background: white !important;								
-			}
-		}
-	}
-	&.blue-button{
-		background: @bg-blue;
-		border-color: @bg-blue;
-		color: @white;
-		&:hover{
-			@media (min-width: @screen-sm){
-				color: @bg-blue;
-				background: white;								
-			}
-		}
-	}
-	&.light-blue-button{
-		background: @bg-button-light-blue;
-		border-color: @bg-button-light-blue;
-		color: @white;
-		&:hover{
-			@media (min-width: @screen-sm){
-				color: @bg-button-light-blue;
-				background: white;								
-			}
-		}
-	}
-	&.small-width{
-		padding:15px 25px;
-		@media (max-width: @screen-xs-max) { 
-			width:100%;
-		}
-	}
-	&.xs-full{
-			margin-top: 5px;
-			margin-bottom: 5px;
-		@media (max-width: @screen-xs-max) { 
-			width:100%;
-		}
-
-	}
-
-	&.full-width{
-		width:100%;
-		padding:15px 8px;
-		@media (max-width: @screen-xs-max) { 
-			margin-top: 5px;
-			margin-bottom: 5px;
-		}
-	}
-	@media (max-width: @screen-sm-max) { 
-		padding:15px 35px;
-	}
-}
 .btn-bhv:hover{
 	cursor:pointer;
 }
 .ui-datepicker-div{
 	background:@white;
 }
-
+.checkbox-option{
+	border: solid 1px @checkbox-border;
+	text-align:center;
+	padding: 0;
+	.gothamBook;
+	font-size:16px;
+	padding-left: 20px;
+	padding-right: 20px;
+	line-height: 42px;
+	height: 44px;		
+	label{
+		vertical-align: top;
+		font-weight: normal;
+		cursor: pointer;
+		margin-bottom: 0;
+		.icon{
+			vertical-align: top;
+			width: 18px;
+			height: 18px;
+			margin-left: 15px;
+			background: @checkbox-bg;
+			.transition(0.3s all ease-out);
+			display: inline-block;
+			text-align: center;
+			line-height: 18px;
+			vertical-align: middle;
+			position: relative;
+			top: -2px;
+			svg{
+				width: 12.5px;
+				height: 9.25px;
+				opacity: 0;
+				fill: @checkbox-checked-arrow;								
+				.animation (pulse-back 0.2s ease-out 1);
+			}
+		}
+		input{
+			display: none;
+			&:checked{
+				+ .icon{
+					background: @checkbox-checked-bg;
+					svg{
+						opacity: 1;
+						.animation (pulse 0.2s ease-out 1);
+					}							
+				}
+			}
+		}
+	}
+}
 /*
 NAVIGATION
 */

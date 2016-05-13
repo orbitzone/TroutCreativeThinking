@@ -113,12 +113,32 @@
 										</div>
 										<div class="inner-half left text-center">
 											<div class="delivery-button picture-button">
-												<label for="receiving_receivegoods_delivery" class="btn-bhv"><span class="icon-delivery div" ></span><br>Delivery<br><span class="radio-button"></span></label>
+												<label for="receiving_receivegoods_delivery" class="btn-bhv">
+												<span class="icon icon-delivery" >
+													<svg width="124.1px" height="80px" viewBox="0 0 124.1 80">
+														<path d="M124.1,40.7v28.1h-13C110.4,75,104.8,80,98.3,80c-6.5,0-12-5-12.8-11.3h-3.4h-3.8H34.7C34,75,28.4,80,22,80
+														c-6.5,0-12-5-12.8-11.3H0V0h82.1v11.5h20L124.1,40.7z M31.1,67c0-5.2-4-9.2-9.2-9.2s-9.2,4-9.2,9.2s4.2,9.2,9.2,9.2
+														C26.9,76.2,31.1,72.2,31.1,67z M78.3,3.8H3.8v61.1h5.5c1-6.1,6.3-10.7,12.6-10.7s11.6,4.6,12.6,10.7h43.7V11.5V3.8z M106,22.9H93.6
+														v9.5h19.7L106,22.9z M107.5,67c0-5.2-4-9.2-9.2-9.2s-9.2,4-9.2,9.2s4.2,9.2,9.2,9.2C103.3,76.2,107.5,72.2,107.5,67z M120.3,50.4
+														c-1.1,0.6-1.9,1.9-1.9,3.2c0,1.3,0.8,2.7,1.9,3.2V50.4z M120.3,42l-4.2-5.7H89.7V19.1h13.4l-2.9-3.8H82.1v49.8h3.6
+														c1-6.1,6.3-10.7,12.6-10.7S110,59,110.9,65.1h9.4v-3.8c-3.2-1-5.7-3.8-5.7-7.4c0-3.6,2.5-6.7,5.7-7.4V42z"/>
+													</svg>
+												</span>
+												<br>Delivery<br><span class="radio-button"></span></label>
 											</div>
 										</div>
 										<div class="inner-half right text-center">
 											<div class="pickup-button picture-button">
-												<label for="receiving_receivegoods_pickup" class="btn-bhv"><span class="icon-pickup div"></span><br>Pick up<br><span class="radio-button"></span></label>
+												<label for="receiving_receivegoods_pickup" class="btn-bhv">
+													<span class="icon icon-pickup">
+														<svg width="159.1px" height="80px" viewBox="0 0 159.1 80">
+															<path d="M158.1,80H1v-2h157.2V80z M147.5,77.9h-2V37.3h-23.6v40.1h-2V35.4h25.6v-10H13.7v10h77.3v42.1h-2V37.3H13.7
+															v40.1h-2V25.4H0V13.5h48.4V0h62.5v13.5h48.3v11.9h-11.6V77.9z M110.9,23.4h46.3v-8h-46.3V23.4z M50.3,23.4h58.6V2H50.3V23.4z
+															 M2,23.4h46.4v-8H2V23.4z"/>
+														</svg>
+													</span>
+													<br>Pick up<br><span class="radio-button"></span>
+													</label>
 											</div>
 										</div>
 										<div class="clear-fix"></div>

@@ -387,9 +387,7 @@ var product_pages = {
                     function() {
                         $("#receiving-goods .form-section").slideDown("slow",
                             function() {
-                                $('html, body').animate({
-                                    scrollTop: $("#receiving-goods").offset().top
-                                }, 500);
+                                scrollAnimation.animate($("#receiving-goods").offset().top);                                
                             }
                         );
                     }
@@ -399,12 +397,67 @@ var product_pages = {
                 $(".gen-error.gen-error1").fadeOut();
             } else {
                 $(".gen-error.gen-error1").fadeIn();
-                    $('html, body').animate({
-                        scrollTop: $("#order-details").offset().top
-                    }, 500);
-
+                scrollAnimation.animate($("#order-details").offset().top);
             }
         });
+        //
+            //GO TO STEP 2
+            //
+            $(".action-goto-step2").click(function() {
+
+                if($(this).hasClass("go-back")){
+
+                    $("#order-details .form-section").hide();
+                    $("#receiving-goods .form-section").fadeIn("slow",
+                        function(){
+                            scrollAnimation.animate($("#checkout-cart").offset().top);                            
+                        });
+                    $("#payment-checkout .form-section").hide();
+                    $("#steps-indicator2").addClass("clickable");
+                    $("#steps-indicator3").removeClass("clickable");
+                    $(".gen-error").fadeOut();
+
+                }
+                else if($("#checkout-cart").valid()){
+
+                    $("#order-details .form-section").hide();
+                    $("#receiving-goods .form-section").fadeIn("slow",
+                        function(){
+                            scrollAnimation.animate($("#checkout-cart").offset().top);
+                        });
+                    $("#payment-checkout .form-section").hide();
+                    $("#steps-indicator2").addClass("clickable");
+                    $("#steps-indicator3").removeClass("clickable");
+                    $(".gen-error").fadeOut();
+                }
+                else{
+                    $(".gen-error.gen-error1").fadeIn();
+                    scrollAnimation.animate($("#order-details").offset().top);                    
+                }
+
+            });
+            //
+            //GO TO STEP 3
+            //
+            $(".action-goto-step3").click(function() {
+                if($("#checkout-cart").valid()){
+                    $("#order-details .form-section").hide();
+                    $("#receiving-goods .form-section").hide();
+                    $("#payment-checkout .form-section").fadeIn("slow",
+                        function(){
+                            scrollAnimation.animate($("#checkout-cart").offset().top);                            
+                        });
+                    $("#steps-indicator3").addClass("clickable");
+                    $(".gen-error").fadeOut();
+                    $("#steps-indicator2").addClass("clickable");
+                    $("#steps-indicator2").addClass("go-back");
+                    $("#steps-indicator3").addClass("clickable");
+                }
+                else{
+                    $(".gen-error.gen-error2").fadeIn();
+                    scrollAnimation.animate($("#order-details").offset().top);                    
+                }
+            });
         //
         //SUBMIT FORM
         //
@@ -413,30 +466,26 @@ var product_pages = {
                 $(".gen-error.gen-error2").fadeOut();
             } else {
                 $(".gen-error.gen-error2").fadeIn();
-                    $('html, body').animate({
-                        scrollTop: $("#receiving-goods").offset().top
-                    }, 500);
+                scrollAnimation.animate($("#receiving-goods").offset().top);                
             }
         });
         //
         //CLOSE STEP 2 AND OPEN STEP 1 
         //
         $(".action-goto-step1").click(function() {
-            $('html, body').animate({
-                scrollTop: $("#order-details").offset().top
-            }, 500, function() {
-                $("#receiving-goods .form-section").slideUp("slow", function() {
+            scrollAnimation.animate($("#order-details").offset().top);
+            setTimeout(function(){
+            $("#receiving-goods .form-section").slideUp("slow", function() {
                     $("#order-details .form-section").slideDown("slow",
                         function() {
-                            $('html, body').animate({
-                                scrollTop: $("#order-details").offset().top
-                            }, 500, function() {
+                            scrollAnimation.animate($("#order-details").offset().top);
+                            setTimeout(function(){
                                 $("#order-details .header-section").addClass("active");
                                 $("#receiving-goods .header-section").removeClass("active");
-                            });
+                            },500);                            
                         });
                 });
-            });
+            },500);            
         });
         //
         //RECEIVING GOODS SECTION - CLEAR VALUES WHEN "ENTER NEW ADDRESS" IS CLICKED

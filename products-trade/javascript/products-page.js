@@ -286,7 +286,10 @@ var product_pages = {
         //
         //INIT ALL DROP DOWN MENUS
         //
-        $('#product-pages select').selectric();
+        $('#product-pages select').selectpicker({
+            noneSelectedText: 'Select an option',
+            template:{caret:'<svg width="28" height="15" viewBox="0 0 28 15"><path d="M0.4,0.4c-0.5,0.5-0.5,1.2,0,1.7c0,0,0,0,0,0l12.8,12.6c0.5,0.5,1.2,0.5,1.7,0L27.6,2.1c0.5-0.5,0.5-1.2,0-1.7c-0.5-0.5-1.2-0.5-1.7,0L14,12.1L2.1,0.4C1.6-0.1,0.8-0.1,0.4,0.4z"/></svg>'}
+        });
         //
         //POPULATE DROP DOWN MENU - PICK UP CONTACT
         //
@@ -297,17 +300,18 @@ var product_pages = {
                 alloptions += val.name;
                 alloptions += "</option>";
             });
-            $("#pickup_previouscontact").append(alloptions).selectric();
+            $("#pickup_previouscontact").append(alloptions).selectpicker({
+                noneSelectedText: 'Select an option',
+                template:{caret:'<svg width="28" height="15" viewBox="0 0 28 15"><path d="M0.4,0.4c-0.5,0.5-0.5,1.2,0,1.7c0,0,0,0,0,0l12.8,12.6c0.5,0.5,1.2,0.5,1.7,0L27.6,2.1c0.5-0.5,0.5-1.2,0-1.7c-0.5-0.5-1.2-0.5-1.7,0L14,12.1L2.1,0.4C1.6-0.1,0.8-0.1,0.4,0.4z"/></svg>'}
+            }).selectpicker('refresh');
         });
         //
         //RECEIVING GOODS SECTION - HANDLE SELECT - PICK UP CONTACT
         //
-        $("#pickup_previouscontact").change(
-            function() {
-                $("#pickup_name").val($(this).find(':selected').data('name'));
-                $("#pickup_phone").val($(this).find(':selected').data('phone'));
-            }
-        );
+        $("#pickup_previouscontact").change(function() {
+            $("#pickup_name").val($(this).find(':selected').data('name'));
+            $("#pickup_phone").val($(this).find(':selected').data('phone'));
+        });
         //
         //RECEIVING GOODS SECTION - CLEAR VALUES WHEN "ENTER NEW CONTACT" IS CLICKED
         //
@@ -333,7 +337,10 @@ var product_pages = {
                 alloptions += val.name;
                 alloptions += "</option>";
             });
-            $("#receiving_previousaddress").append(alloptions).selectric();
+            $("#receiving_previousaddress").append(alloptions).selectpicker({
+                noneSelectedText: 'Select an option',
+                template:{caret:'<svg width="28" height="15" viewBox="0 0 28 15"><path d="M0.4,0.4c-0.5,0.5-0.5,1.2,0,1.7c0,0,0,0,0,0l12.8,12.6c0.5,0.5,1.2,0.5,1.7,0L27.6,2.1c0.5-0.5,0.5-1.2,0-1.7c-0.5-0.5-1.2-0.5-1.7,0L14,12.1L2.1,0.4C1.6-0.1,0.8-0.1,0.4,0.4z"/></svg>'}
+            }).selectpicker('refresh');
         });
         //
         //HANDLE SELECT - PREVIOUS DELIVERY ADDRESS
@@ -342,7 +349,7 @@ var product_pages = {
             function() {
                 $("#receiving_address").val($(this).find(':selected').data('streetaddress'));
                 $("#receiving_suburb").val($(this).find(':selected').data('suburb'));
-                $("#receiving_state").val($(this).find(':selected').data('state')).selectric("refresh");;
+                $("#receiving_state").val($(this).find(':selected').data('state')).selectpicker("refresh");;
                 $("#receiving_postcode").val($(this).find(':selected').data('postcode'));
                 $("#receiving_name").val($(this).find(':selected').data('contactname'));
                 $("#receiving_phone").val($(this).find(':selected').data('phone'));
@@ -381,30 +388,21 @@ var product_pages = {
         //
         //CLOSE STEP 1 AND OPEN STEP 2 
         //
-        $(".action-goto-step2").click(function() {
-            if ($("#checkout-cart").valid()) {
-                $("#order-details .form-section").slideUp("slow",
-                    function() {
-                        $("#receiving-goods .form-section").slideDown("slow",
-                            function() {
-                                $('html, body').animate({
-                                    scrollTop: $("#receiving-goods").offset().top
-                                }, 500);
-                            }
-                        );
-                    }
-                );
+        /*$(".action-goto-step2").click(function() {
+            if (!$("#checkout-cart").valid()) {
+                $("#order-details .form-section").slideUp("slow", function() {
+                    $("#receiving-goods .form-section").slideDown("slow", function() {
+                        scrollAnimation.animate($("#receiving-goods").offset().top);                                
+                    });
+                });
                 $("#order-details .header-section").removeClass("active");
                 $("#receiving-goods .header-section").addClass("active");
                 $(".gen-error.gen-error1").fadeOut();
             } else {
                 $(".gen-error.gen-error1").fadeIn();
-                    $('html, body').animate({
-                        scrollTop: $("#order-details").offset().top
-                    }, 500);
-
+                scrollAnimation.animate($("#order-details").offset().top);
             }
-        });
+        });*/
         //
         //SUBMIT FORM
         //
@@ -413,31 +411,74 @@ var product_pages = {
                 $(".gen-error.gen-error2").fadeOut();
             } else {
                 $(".gen-error.gen-error2").fadeIn();
-                    $('html, body').animate({
-                        scrollTop: $("#receiving-goods").offset().top
-                    }, 500);
+                scrollAnimation.animate($("#receiving-goods").offset().top);                    
             }
         });
-        //
+         //
         //CLOSE STEP 2 AND OPEN STEP 1 
         //
         $(".action-goto-step1").click(function() {
-            $('html, body').animate({
-                scrollTop: $("#order-details").offset().top
-            }, 500, function() {
-                $("#receiving-goods .form-section").slideUp("slow", function() {
-                    $("#order-details .form-section").slideDown("slow",
-                        function() {
-                            $('html, body').animate({
-                                scrollTop: $("#order-details").offset().top
-                            }, 500, function() {
-                                $("#order-details .header-section").addClass("active");
-                                $("#receiving-goods .header-section").removeClass("active");
-                            });
-                        });
+            scrollAnimation.animate($("#order-details").offset().top);
+            $("#receiving-goods .form-section").slideUp("fast", function() {
+                $("#order-details .form-section").slideDown("fast",function() {
+                    scrollAnimation.animate($("#order-details").offset().top);
+                    $("#order-details .header-section").addClass("active");
+                    $("#receiving-goods .header-section").removeClass("active");
+                    $("#steps-indicator2").removeClass("clickable");
+                    $("#steps-indicator3").removeClass("clickable");                            
                 });
-            });
+            });            
         });
+        //GO TO STEP 2
+        //
+         $(".action-goto-step2").click(function() {
+            if($(this).hasClass("go-back")){
+                $("#order-details .form-section").hide();
+                $("#receiving-goods .form-section").fadeIn("fast",function(){
+                    scrollAnimation.animate($("#checkout-cart").offset().top);                            
+                });
+                $("#payment-checkout .form-section").hide();
+                $("#steps-indicator2").addClass("clickable");
+                $("#steps-indicator3").removeClass("clickable");
+                $(".gen-error").fadeOut();
+
+            }
+            else if($("#checkout-cart").valid()){
+                $("#order-details .form-section").hide();
+                $("#receiving-goods .form-section").fadeIn("fast", function(){
+                    scrollAnimation.animate($("#checkout-cart").offset().top);                            
+                });
+                $("#payment-checkout .form-section").hide();
+                $("#steps-indicator2").addClass("clickable");
+                $("#steps-indicator3").removeClass("clickable");
+                $(".gen-error").fadeOut();
+            }
+            else{
+                $(".gen-error.gen-error1").fadeIn();
+                scrollAnimation.animate($("#order-details").offset().top);                    
+            }
+        });
+         //
+            //GO TO STEP 3
+            //
+            $(".action-goto-step3").click(function() {
+                if($("#checkout-cart").valid()){
+                    $("#order-details .form-section").hide();
+                    $("#receiving-goods .form-section").hide();
+                    $("#payment-checkout .form-section").fadeIn("slow",function(){
+                        scrollAnimation.animate($("#checkout-cart").offset().top);                            
+                    });
+                    $("#steps-indicator3").addClass("clickable");
+                    $(".gen-error").fadeOut();
+                      $("#steps-indicator2").addClass("clickable");
+                      $("#steps-indicator2").addClass("go-back");
+                      $("#steps-indicator3").addClass("clickable");
+                }
+                else{
+                    $(".gen-error.gen-error2").fadeIn();
+                    scrollAnimation.animate($("#order-details").offset().top);                    
+                }
+            });
         //
         //RECEIVING GOODS SECTION - CLEAR VALUES WHEN "ENTER NEW ADDRESS" IS CLICKED
         //
@@ -449,8 +490,8 @@ var product_pages = {
             $("#delivery-address .inner-form-section").fadeIn("slow");
             $("#delivery-address .pop-title").fadeIn("slow");
             $("#receiving_previousaddress,#receiving_address,#receiving_suburb,#receiving_postcode,#receiving_name,#receiving_phone").val("").removeClass("valid").removeClass("error");
-            $("#receiving_state").val("VIC").selectric('refresh').removeClass("valid").removeClass("error");
-            $("#receiving_previouscontact").val("").selectric('refresh').removeClass("valid").removeClass("error");
+            $("#receiving_state").val("VIC").selectpicker('refresh').removeClass("valid").removeClass("error");
+            $("#receiving_previouscontact").val("").selectpicker('refresh').removeClass("valid").removeClass("error");            
         });
         //
         //RECEIVING GOODS SECTION - PREVIOUS ADDRESS

@@ -574,39 +574,37 @@ var product_pages = {
         //
         $(".demo-recommendation").hide();
         $(document).on('click','.add-to-cart', function() {
-                var thisobject = $(this);
-                if (!thisobject.hasClass("added")) {
-                    thisobject.find(".plus").fadeOut("fast",
-                        function() {
-                            thisobject.find(".check").fadeIn("fast",
-                                function() {
-                                    thisobject.addClass("added");
-                                    //IMPLEMENT ADD ITEM TO CART FUNCTION AND REFRESH WITH NEW SET
-                                    //THIS IS A DEMO ONLY
-                                    if(thisobject.hasClass("demo-item1")){
-                                        $(".demo-recommendation1").fadeIn("slow");
-                                    }
-                                    else if(thisobject.hasClass("demo-item2")){
-                                        $(".demo-recommendation2").fadeIn("slow");
-                                    }
-                                    else if(thisobject.hasClass("demo-item3")){
-                                        $(".demo-recommendation3").fadeIn("slow");
-                                    }
-                                    else if(thisobject.hasClass("demo-item4")){
-                                        $(".demo-recommendation4").fadeIn("slow");
-                                    }
-                                });
-                        });
-                }
-            });
+            var thisobject = $(this);
+            if (!thisobject.hasClass("added")) {
+                thisobject.find(".plus").fadeOut("fast",
+                    function() {
+                        thisobject.find(".check").fadeIn("fast",
+                            function() {
+                                thisobject.addClass("added");
+                                //IMPLEMENT ADD ITEM TO CART FUNCTION AND REFRESH WITH NEW SET
+                                //THIS IS A DEMO ONLY
+                                if(thisobject.hasClass("demo-item1")){
+                                    $(".demo-recommendation1").fadeIn("slow");
+                                }
+                                else if(thisobject.hasClass("demo-item2")){
+                                    $(".demo-recommendation2").fadeIn("slow");
+                                }
+                                else if(thisobject.hasClass("demo-item3")){
+                                    $(".demo-recommendation3").fadeIn("slow");
+                                }
+                                else if(thisobject.hasClass("demo-item4")){
+                                    $(".demo-recommendation4").fadeIn("slow");
+                                }
+                            });
+                    });
+            }
+        });
         //REMOVE A PRODUCT
         $(document).on('click','.action-remove-item', function() {
                 var productCode = $(this).data("productcode");
-                $(".one-product-wrapper[data-productcode='" + productCode + "']").fadeOut("slow",
-                    function() {
-                        $(".one-product-wrapper[data-productcode='" + productCode + "']").remove();
-                    }
-                );
+                $(".one-product-wrapper[data-productcode='" + productCode + "']").fadeOut("slow",function() {
+                    $(".one-product-wrapper[data-productcode='" + productCode + "']").remove();
+                });
             }
         );
         //SAVE AS BUTTON

@@ -6359,6 +6359,11 @@ Slick slider arrow
   -webkit-transition: color 0.5s ease;
   -o-transition: color 0.5s ease;
   transition: color 0.5s ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  border: none;
   -moz-transition: all 0.2s ease-in;
   -ms-transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
@@ -8261,7 +8266,7 @@ MAIN TITLE
     color: #6dc8b6;
   }
   #product-pages.retail #shopping-cart .product-suggestion .suggestion-item-content .btn.add-to-cart:hover svg {
-    fill: white;
+    fill: #6dc8b6;
   }
 }
 #product-pages.retail #shopping-cart .product-suggestion .one-recommendation {

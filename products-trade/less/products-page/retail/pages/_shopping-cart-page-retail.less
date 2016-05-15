@@ -45,17 +45,23 @@
 			    background: @retail-shopping-cart-suggestion-add-to-cart-button-bg;
 			    border-color: @retail-shopping-cart-suggestion-add-to-cart-button-bg;
 			    color: @retail-shopping-cart-suggestion-add-to-cart-button-color;
-			    &:hover{
+			    .check{
+						display: none;
+						svg{
+							display: inline-block;
+							vertical-align: middle;
+							fill: @retail-shopping-cart-suggestion-add-to-cart-button-color;
+						}					
+					}
+					&:hover{
 			    	@media (min-width: @screen-sm) { 
 			    		background: @retail-shopping-cart-suggestion-add-to-cart-button-color;
 			    		color: @retail-shopping-cart-suggestion-add-to-cart-button-bg;
+			    		svg{
+			    			fill: @retail-shopping-cart-suggestion-add-to-cart-button-color;
+			    		}
 			    	}
 			    }
-				}
-				.check{
-					svg{
-						fill: @retail-shopping-cart-suggestion-add-to-cart-button-color;
-					}
 				}
 			}			
 		}

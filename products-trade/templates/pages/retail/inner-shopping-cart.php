@@ -16,14 +16,14 @@
 			<div class="shopping-cart-options bg-light-grey">
 				<div class="container-fluid section-container">
 					<div class="row">
-						<div class="col-sm-6 ">
+						<div class="col-sm-5 ">
 							<div class="page-title">
 								<div class="inner-wrap">
 									<h1>Shopping Cart</h1>
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-6 hidden-xs">
+						<div class="col-sm-7 hidden-xs">
 							<div class="inner-wrap text-right">
 								<a href="#" class="btn secondary-button small-width"><i class="fa fa-chevron-left"></i> Continue shopping</a>
 								<input type="submit" value="Checkout" class="btn main-button small-width">
@@ -342,7 +342,7 @@
 						</div>
 					</div>
 					<div class="row" >
-						<div class="col-sm-10 col-sm-offset-1">
+						<div class="col-md-10 col-md-offset-1">
 							<div class="inner-wrap suggestion-item-content">
 								<div class="row">
 									<!--START ITEM 1-->

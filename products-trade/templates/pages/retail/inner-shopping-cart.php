@@ -11,7 +11,7 @@
 <section class="main-section" id="shopping-cart">
 	<!--START SHOPPING CART LIST -->
 	<div class="section shopping-cart-list">
-		<form id="shopping-cart-form" action="checkout-cart.php">
+		<form id="shopping-cart-form" action="retail-checkout-cart.php">
 			<!--START SHOPPING CART OPTIONS -->
 			<div class="shopping-cart-options bg-light-grey">
 				<div class="container-fluid section-container">

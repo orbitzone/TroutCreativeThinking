@@ -24,7 +24,7 @@
 	<!--END PAGE TITLE -->
 	<!--START SHOPPING CART LIST -->
 	<div class="section shopping-cart-list">
-		<form id="shopping-cart-form" action="checkout-cart.php">
+		<form id="shopping-cart-form" action="trade-checkout-cart.php">
 			<!--START SHOPPING CART OPTIONS -->
 			<div class="shopping-cart-options bg-light-grey">
 				<div class="container-fluid section-container">
@@ -115,7 +115,7 @@
 									</div>
 									<div class="item-data item-unitprice xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Unit price</div><span class="update-price">$444.99</span><span class="gst">inc</span></div></div>
 									<div class="item-data item-subtotal xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Subtotal</div><span class="update-price">$888.99</span><span class="gst">inc</span></div></div>
-									<div class="item-data item-remove"><div class="item-inner"><span class="remove-button action-remove-item" data-productcode="123123123"> <i class="fa fa-times"></i> </span></div></div>
+									<div class="item-data item-remove"><div class="item-inner"><button type="button" class="remove-button action-remove-item" data-productcode="123123123"> <i class="fa fa-times"></i> </button></div></div>
 									<div class="clear-fix"></div>
 								</div>
 							</div>
@@ -158,7 +158,7 @@
 									</div>
 									<div class="item-data item-unitprice xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Unit price</div><span class="update-price">$444.99</span><span class="gst">inc</span></div></div>
 									<div class="item-data item-subtotal xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Subtotal</div><span class="update-price">$888.99</span><span class="gst">inc</span></div></div>
-									<div class="item-data item-remove"><div class="item-inner"><span class="remove-button action-remove-item" data-productcode="7845123"> <i class="fa fa-times"></i> </span></div></div>
+									<div class="item-data item-remove"><div class="item-inner"><button type="button" class="remove-button action-remove-item" data-productcode="7845123"> <i class="fa fa-times"></i> </button></div></div>
 									<div class="clear-fix"></div>
 								</div>
 							</div>
@@ -201,7 +201,7 @@
 									</div>
 									<div class="item-data item-unitprice xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Unit price</div><span class="update-price">$444.99</span><span class="gst">inc</span></div></div>
 									<div class="item-data item-subtotal xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Subtotal</div><span class="update-price">$888.99</span><span class="gst">inc</span></div></div>
-									<div class="item-data item-remove"><div class="item-inner"><span class="remove-button action-remove-item" data-productcode="67564534"> <i class="fa fa-times"></i> </span></div></div>
+									<div class="item-data item-remove"><div class="item-inner"><button type="button" class="remove-button action-remove-item" data-productcode="67564534"> <i class="fa fa-times"></i> </button></div></div>
 									<div class="clear-fix"></div>
 								</div>
 							</div>
@@ -244,7 +244,7 @@
 									</div>
 									<div class="item-data item-unitprice xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Unit price</div><span class="update-price">$444.99</span><span class="gst">inc</span></div></div>
 									<div class="item-data item-subtotal xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Subtotal</div><span class="update-price">$888.99</span><span class="gst">inc</span></div></div>
-									<div class="item-data item-remove"><div class="item-inner"><span class="remove-button action-remove-item" data-productcode="2698362"> <i class="fa fa-times"></i> </span></div></div>
+									<div class="item-data item-remove"><div class="item-inner"><button type="button" class="remove-button action-remove-item" data-productcode="2698362"> <i class="fa fa-times"></i> </button></div></div>
 									<div class="clear-fix"></div>
 								</div>
 							</div>
@@ -289,7 +289,7 @@
 									</div>
 									<div class="item-data item-unitprice xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Unit price</div><span class="update-price">$444.99</span><span class="gst">inc</span></div></div>
 									<div class="item-data item-subtotal xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Subtotal</div><span class="update-price">$888.99</span><span class="gst">inc</span></div></div>
-									<div class="item-data item-remove"><div class="item-inner"><span class="remove-button action-remove-item" data-productcode="78787878"> <i class="fa fa-times"></i> </span></div></div>
+									<div class="item-data item-remove"><div class="item-inner"><button type="button" class="remove-button action-remove-item" data-productcode="78787878"> <i class="fa fa-times"></i> </button></div></div>
 									<div class="clear-fix"></div>
 								</div>
 							</div>
@@ -333,7 +333,7 @@
 									</div>
 									<div class="item-data item-unitprice xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Unit price</div><span class="update-price">$444.99</span><span class="gst">inc</span></div></div>
 									<div class="item-data item-subtotal xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Subtotal</div><span class="update-price">$888.99</span><span class="gst">inc</span></div></div>
-									<div class="item-data item-remove"><div class="item-inner"><span class="remove-button action-remove-item" data-productcode="63636363"> <i class="fa fa-times"></i> </span></div></div>
+									<div class="item-data item-remove"><div class="item-inner"><button type="button" class="remove-button action-remove-item" data-productcode="63636363"> <i class="fa fa-times"></i> </button></div></div>
 									<div class="clear-fix"></div>
 								</div>
 							</div>
@@ -378,7 +378,7 @@
 									</div>
 									<div class="item-data item-unitprice xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Unit price</div><span class="update-price">$444.99</span><span class="gst">inc</span></div></div>
 									<div class="item-data item-subtotal xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Subtotal</div><span class="update-price">$888.99</span><span class="gst">inc</span></div></div>
-									<div class="item-data item-remove"><div class="item-inner"><span class="remove-button action-remove-item" data-productcode="52525252"> <i class="fa fa-times"></i> </span></div></div>
+									<div class="item-data item-remove"><div class="item-inner"><button type="button" class="remove-button action-remove-item" data-productcode="52525252"> <i class="fa fa-times"></i> </button></div></div>
 									<div class="clear-fix"></div>
 								</div>
 							</div>
@@ -424,7 +424,7 @@
 									</div>
 									<div class="item-data item-unitprice xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Unit price</div><span class="update-price">$444.99</span><span class="gst">inc</span></div></div>
 									<div class="item-data item-subtotal xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Subtotal</div><span class="update-price">$888.99</span><span class="gst">inc</span></div></div>
-									<div class="item-data item-remove"><div class="item-inner"><span class="remove-button action-remove-item" data-productcode="14141414"> <i class="fa fa-times"></i> </span></div></div>
+									<div class="item-data item-remove"><div class="item-inner"><button type="button" class="remove-button action-remove-item" data-productcode="14141414"> <i class="fa fa-times"></i> </button></div></div>
 									<div class="clear-fix"></div>
 								</div>
 							</div>

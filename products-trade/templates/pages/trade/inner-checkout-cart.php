@@ -22,7 +22,7 @@
 					<header class="main-heading">
 						<h1>Order Summary</h1>
 					</header>
-					<form id="checkout-cart" action="checkout-cart-success.php">
+					<form id="checkout-cart" action="trade-checkout-cart-success.php">
 						<!--START OF STEP 1 - DETAILS SECTION -->
 						<section id="order-details" class="section-box">
 							<header class="header-section btn-bhv action-goto-step1 active">

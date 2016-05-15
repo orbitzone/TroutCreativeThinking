@@ -36,7 +36,7 @@
 						</div>
 						<div class="clear-fix"></div>
 					</header>
-					<form id="checkout-cart" action="checkout-cart-success.php">
+					<form id="checkout-cart" action="retail-checkout-cart-success.php">
 						<!--START OF STEP 1 - DETAILS SECTION -->
 						<section id="order-details" class="section-box">
 							

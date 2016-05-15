@@ -115,19 +115,21 @@
 		button{
 			color: @retail-select-color;
 			background: @retail-select-bg;
+			border-color: @retail-select-bg;
 			&.btn{
 				&:before{
 					background: @retail-select-bg;
 				}
 				&:hover{
-					&:hover{
-						color: @retail-select-color;
-						background: @retail-select-bg;					
-					}
+					color: @retail-select-color;
+					background: @retail-select-bg;
+					border-color: @retail-select-bg;
 				}
 			}
-			.caret{
-				background: @dropdown-arrow-white;			
+			.bs-caret{
+				svg{
+					fill: white;
+				}				
 			}	
 		}
 		.dropdown-menu{
@@ -374,16 +376,12 @@
 		.list-header{
 			.options{
 				.one-option{
-					.selectric,
-					label{
-						background: @retail-main-color;
-					}
-					label{
-						.icon{
-						  background: @retail-checkbox-icon-bg;					
-						}
-					}
-				}
+					background: @retail-main-color;
+					border-color: @retail-main-color;
+					.icon{
+						background: @retail-checkbox-icon-bg;
+					}					
+				}				
 			}
 		}
 		.list-totals{

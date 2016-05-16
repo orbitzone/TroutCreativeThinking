@@ -254,50 +254,6 @@
 			</div>
 		</div>
 		<!--END PRODUCT HERO SECTION -->
-	</div>	
-	<script id="product-template" type="text/template">
-		<div class="product">
-			<div class="product-image">
-				<img src="{{image}}" alt="{{alt}}"/>	
-			</div>
-			<div class="product-details-wrap">
-				<div class="product-details">
-					<h3>{{name}}</h3>
-					<div class="product-code">{{code}}</div>
-					<div class="product-description">{{description}}</div>	
-				</div>
-				<div class="product-price">
-					{{#price}}
-						<div class="product-price-my-{{unit}}">My Price <span class="value">${{value}}<small>inc.</small></span></div>
-					{{/price}}
-					{{#cmp}}
-					<div class="product-price-cmp-{{unit}}">CMP <span class="value">${{value}}<small>inc.</small></span></div>
-					{{/cmp}}
-				</div>
-				<div class="product-quantity">
-					<div class="quantity-wrap">
-						<span class="quantity-hidden">
-							{{#price}}
-							<input id="set-{{code}}-{{unit}}" class="quantity-radio" type="radio" name="set-{{code}}" value="{{unit}}" checked="">
-							{{/price}}
-						</span>
-						<span class="quantity-input">
-							<input class="quantity-number" data-productcode="{{code}}" type="number" name="quantity-{{code}}" min="1" value="1">
-						</span>
-						<span class="quantity-set">
-							<span class="radiolabel-set span-block">
-								{{#price}}
-									<label for="set-{{code}}-{{unit}}" class="radio-button active">{{unit}}</label>
-								{{/price}}
-								<span class="clear-fix"></span>
-								<span class="quantity-details">Packet Contains <span>{{pack}}</span> units</span>
-							</span>													
-						</span>
-					</div>
-				</div>
-				<button type="button" class="btn blue-button full-width add-to-cart" data-code="{{code}}">ADD</button>
-			</div>
-		</div>
-	</script>
+	</div>
 </div>
 <!--END PRODUCTS CATEGORY -->

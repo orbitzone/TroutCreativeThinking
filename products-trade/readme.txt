@@ -28,3 +28,14 @@ TweenMax: To implement javascript based animations and interactions.
 Main js is products-page.js
 
 Trade and Retail share the same scripts.
+
+/**
+Styles
+**/
+
+The main less file is less/products-page.less
+
+Notice that from line 15 to 56 we added some css to move the content on the footer an menu as the widget will cover part of it. 
+
+We suggest to remove the cart icon on the header, at least on the pages that include the widget.
+

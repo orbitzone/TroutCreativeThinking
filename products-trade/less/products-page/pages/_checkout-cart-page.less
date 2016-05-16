@@ -285,11 +285,18 @@
 					max-height: 190px;
 				}
 			}
-			.bg-info-icon{
-				background: @bg-dark-grey url("../templates/images/icon-info.png") no-repeat;
+			.delivery-requirements{
+				background: @bg-dark-grey;
+				position: relative;
 				padding:30px 30px 30px 85px;
-				background-size:33px;
-				background-position: top 30px left 30px;
+				.info-icon{
+					position: absolute;
+					top: 30px;
+					left: 30px;
+					svg{
+						fill: black;
+					}
+				}	
 			}
 			.form-group-wrap{
 				margin:0 -15px;

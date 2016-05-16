@@ -1450,7 +1450,7 @@ Slick slider arrow
 }
 #product-pages .selectric .button {
   top: 15px;
-  background: url("../templates/images/icon-downarrow.png") no-repeat top center;
+  background: url("../templates/images/general/icon-downarrow.png") no-repeat top center;
   background-size: 15px;
   right: 5px;
   height: 16px;
@@ -1511,13 +1511,25 @@ Slick slider arrow
 #product-pages input[type=number] {
   padding-right: 15px;
 }
-#product-pages input#receiving_date {
-  background: url("../templates/images/icon-calendar.png") no-repeat;
-  background-size: 20px;
-  background-position: right 15px top 50%;
+#product-pages .datepicker-wrap {
+  position: relative;
 }
-#product-pages input#receiving_date:hover {
-  cursor: pointer;
+#product-pages .datepicker-wrap #receiving_date_icon {
+  position: absolute;
+  right: 0;
+  width: 45px;
+  height: 100%;
+  top: 0;
+  background: white;
+  border: 1px solid #e4e4e4;
+  border-left: none;
+}
+#product-pages .datepicker-wrap #receiving_date_icon svg {
+  display: inline-block;
+  width: 28px;
+  height: 26px;
+  fill: #bfbfbf;
+  vertical-align: middle;
 }
 #product-pages textarea {
   height: 150px;
@@ -1541,7 +1553,8 @@ Slick slider arrow
 #product-pages input[type=text].valid,
 #product-pages textarea.valid,
 #product-pages input[type=number].valid {
-  background: #ffffff url("../templates/images/icon-greentick.png") no-repeat;
+  background: #ffffff url("../templates/images/general/icon-greentick.png") no-repeat;
+  background-image: url("../templates/images/general/icon-greentick.svg");
   background-size: 15px;
   background-position: right 12px top 50%;
 }
@@ -1550,7 +1563,7 @@ Slick slider arrow
 }
 #product-pages select {
   top: 18px;
-  background: url("../templates/images/icon-downarrow.png") no-repeat top center;
+  background: url("../templates/images/general/icon-downarrow.png") no-repeat top center;
   background-position: right 10px top 50%;
   background-size: 20px;
   right: 5px;
@@ -7118,11 +7131,18 @@ Slick slider arrow
     max-height: 190px;
   }
 }
-#product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .bg-info-icon {
-  background: #e3e3e3 url("../templates/images/icon-info.png") no-repeat;
+#product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .delivery-requirements {
+  background: #e3e3e3;
+  position: relative;
   padding: 30px 30px 30px 85px;
-  background-size: 33px;
-  background-position: top 30px left 30px;
+}
+#product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .delivery-requirements .info-icon {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+#product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .delivery-requirements .info-icon svg {
+  fill: black;
 }
 #product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap {
   margin: 0 -15px;

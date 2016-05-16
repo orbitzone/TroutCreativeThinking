@@ -156,14 +156,38 @@
 										</div>
 									<header><h3>Delivery Details</h3></header>
 									<div class="form-group full">
-										<div class="info bg-info-icon">
+										<div class="info delivery-requirements">
+											<div class="info-icon">
+												<svg width="33px" height="33px" viewBox="0 0 33 33">
+													<path d="M16.5,2C24.5,2,31,8.5,31,16.5S24.5,31,16.5,31S2,24.5,2,16.5S8.5,2,16.5,2 M16.5,0
+													C7.4,0,0,7.4,0,16.5S7.4,33,16.5,33S33,25.6,33,16.5S25.6,0,16.5,0L16.5,0z"/>
+													<path d="M13.7,21.4c0.1-0.2,0.1-0.6,0.2-1l1.5-5.4c0-0.1,0-0.1,0-0.2s0-0.1,0-0.2c0-0.3-0.1-0.5-0.3-0.6s-0.6-0.1-1.1-0.2
+													v-0.6c0.5,0,1.1-0.1,2-0.2s1.5-0.2,1.8-0.3l1-0.2L17,19.5c-0.2,0.6-0.3,1-0.3,1.2c-0.1,0.6-0.2,1-0.2,1.1s0,0.3,0.1,0.3
+													s0.2,0.1,0.3,0.1c0.2,0,0.5-0.2,0.9-0.6s0.7-0.8,1-1.3l0.5,0.3c-0.8,1.1-1.4,1.9-1.8,2.3c-0.7,0.7-1.4,1-2.2,1
+													c-0.4,0-0.8-0.1-1.2-0.4c-0.3-0.3-0.5-0.7-0.5-1.2C13.6,22.1,13.6,21.8,13.7,21.4z M19.4,7.8c0.3,0.3,0.5,0.7,0.5,1.1
+													s-0.2,0.8-0.5,1.1s-0.7,0.5-1.1,0.5s-0.8-0.2-1.1-0.5c-0.3-0.3-0.5-0.7-0.5-1.1s0.2-0.8,0.5-1.1c0.3-0.3,0.7-0.5,1.1-0.5
+													S19.1,7.5,19.4,7.8z"/>
+												</svg>
+											</div>
 											<h6>Delivery Requirements</h6>
 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque cum doloremque, necessitatibus et vero reiciendis voluptates dicta eos inventore blanditiis tempora soluta aut minima ullam voluptatem, unde, fugiat provident quidem nisi perspiciatis nihil incidunt! Natus, quas hic voluptatem delectus nobis.</p>
 										</div>
 									</div>
 									<div class="form-group half-big">
 										<label for="receiving_date">Required By</label>
-										<input name="receiving_date" type="text" class="" id="receiving_date" placeholder="Select date" value="" readonly="readonly" required tabindex="14">
+										<div class="datepicker-wrap">
+											<input name="receiving_date" type="text" class="" id="receiving_date" placeholder="Select date" value="" readonly="readonly" required tabindex="14">
+											<button type="button" id="receiving_date_icon">
+												<svg width="74.9px" height="70px" viewBox="0 0 74.9 70">
+													<path d="M72.6,8.9H57V2.2C57,1,56,0,54.8,0c-1.2,0-2.2,1-2.2,2.2v6.6H22.1V2.2c0-1.2-1-2.2-2.2-2.2s-2.2,1-2.2,2.2v6.6H2.2
+													C1,8.9,0,9.9,0,11.1v56.7C0,69,1,70,2.2,70h70.5c1.2,0,2.2-1,2.2-2.2V11.1C74.8,9.9,73.8,8.9,72.6,8.9z M70.5,38.3H57v-8.7h13.5
+													V38.3z M52.6,38.3h-13v-8.7h13V38.3z M35.3,38.3H22.2v-8.7h13L35.3,38.3L35.3,38.3z M17.8,38.3H4.3v-8.7h13.5V38.3z M4.3,42.7h13.5
+													v8.7H4.3V42.7z M22.2,42.7h13v8.7h-13V42.7z M35.3,55.8v9.9H22.2v-9.9H35.3z M39.6,55.8h13v9.9h-13V55.8z M39.6,51.4v-8.7h13v8.7
+													L39.6,51.4z M57,42.7h13.5v8.7H57V42.7z M17.8,13.2v4.1c0,1.2,1,2.2,2.2,2.2s2.2-1,2.2-2.2v-4.1h30.5v4.1c0,1.2,1,2.2,2.2,2.2
+													s2.2-1,2.2-2.2v-4.1h13.5v12.1H4.3V13.2H17.8z M4.3,55.8h13.5v9.9H4.3V55.8z M57,65.6v-9.8h13.5v9.9L57,65.6L57,65.6z"/>
+												</svg>
+											</button>
+										</div>
 									</div>
 									<div class="form-group half-small">
 										<label for="receiving_time">Time</label>

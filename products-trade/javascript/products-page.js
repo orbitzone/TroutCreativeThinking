@@ -278,7 +278,22 @@ var product_pages = {
         //
         $("#receiving_date").datepicker({
             dateFormat: "DD, dd M yy",
-            minDate: 0
+            minDate: 0,
+            beforeShow: function(){
+                $("#receiving_date_icon").removeClass('closed opened');
+                $("#receiving_date_icon").addClass('opened');
+            },
+            onClose: function(){
+                $("#receiving_date_icon").removeClass('closed opened');
+                $("#receiving_date_icon").addClass('closed');        
+            }
+        });
+        $("#receiving_date_icon").on('click', function(){
+            if($(this).hasClass('opened')){
+                $("#receiving_date").datepicker('hide');
+            }else{
+                $("#receiving_date").datepicker('show');    
+            }            
         });
         $("#anim").change(function() {
             $("#receiving_date").datepicker("option", "showAnim", "fadeIn");

@@ -1714,6 +1714,8 @@ Slick slider arrow
   font-size: 25px;
   max-width: 120px;
   text-align: center;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 #product-pages .postcode-input input::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
@@ -4976,7 +4978,7 @@ Slick slider arrow
 }
 #product-pages .main-section#product-detail #product-display .postcode-wrap input::-moz-placeholder {
   /* Firefox 19+ */
-  line-height: 45px;
+  line-height: 53px;
   font-size: 16px;
   position: relative;
   top: -4px;

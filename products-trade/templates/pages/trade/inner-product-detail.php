@@ -11,7 +11,7 @@
 <!--END BREAD CRUMB -->
 <!--START PRODUCT DETAIL -->
 <div class="main-section" id="product-detail">
-	<?php include "templates/Includes/Widget.php" ?>
+	<?php include "templates/includes/trade/Widget.php" ?>
 	<div class="product-detail-wrap">
 		<!--START PRODUCT HERO SECTION -->
 		<div class="product-hero-section">

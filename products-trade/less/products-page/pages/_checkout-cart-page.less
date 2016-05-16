@@ -356,7 +356,7 @@
 							&.right{
 								float:right;
 							}
-							@media (max-width: @screen-sm-max) {
+							/*@media (max-width: @screen-sm-max) {
 								width:50%;
 								&.left,&.right{
 									float:left;
@@ -364,16 +364,22 @@
 								&.midle{
 									float:right;
 								}
-							}
+							}*/
 						}
 						.inner-third-third{
 							width:33.3333%;
 							padding-top:0;
 							float:left;
 							padding-right:10px;
-							@media (max-width: @screen-xs-max) {
+							/*@media (max-width: @screen-xs-max) {
 								width:50%;
-							}
+							}*/
+						}
+						#payment_cvv{
+							max-width: 107px;
+						}
+						.small-link{
+							font-size: 10px;
 						}
 						.inner-third-small{
 							width:22%;
@@ -520,12 +526,25 @@
 						width:20px;
 						height:20px;
 						display:inline-block;
+						position: relative;
+						&:before{
+					    content: " ";
+					    position: absolute;
+					    top: 50%;
+					    width: 6px;
+					    height: 6px;
+					    background: @main-color;
+					    border-radius: 50%;
+					    margin-top: -3px;
+					    margin-left: -3px;
+					    left: 50%;
+					    opacity: 0;
+						}
 					}
 					label.selected .radio-button{
-						.border-radius (2em);
-						background: @white url("../templates/images/icon-dot.png") no-repeat center center;
-						background-size:cover;
-						border: solid 4px @icon-blue;					
+						&:before{
+							opacity: 1;
+						}			
 					}
 					ul.radio-list{
 						padding:0;
@@ -621,6 +640,19 @@
 						}
 						&.visa-button, &.mastercard-button,&.amex-button{
 							label{
+								.icon{
+									padding-top: 30px;
+									@media (min-width: @screen-sm) {
+										padding-top: 50px;
+									}
+									svg{
+										width: 85.25px;
+										height: 50px;
+										@media (min-width: (@screen-md)) {
+											height: 80px;
+										}
+									}		
+								}
 								@media (max-width: @screen-xs-max) {
 									font-size:13px;
 								}
@@ -628,30 +660,15 @@
 						}
 						&.visa-button{
 							margin-left:0;
-							margin-right:6px;
-							.icon-visa{
-								height: 80px;
-								svg{
-									height: 80px;									
-								}
-								@media (max-width: @screen-xs-max) {
-									display:none;
-								}
-							}									
+							margin-right:6px;																
 						}
 						&.mastercard-button{
 							margin-left:3px;
 							margin-right:3px;
-							.icon-mastercard{
-								
-							}								
 						}
 						&.amex-button{
 							margin-right:0;
 							margin-left:6px;
-							.icon-amex{
-								
-							}	
 						}
 					}
 				}			

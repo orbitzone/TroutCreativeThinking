@@ -42,7 +42,7 @@
 							
 							<div class="form-section">
 								<div class="form-group-wrap">
-									<header class="header-section">
+									<header class="header-section active">
 										<h3>1. Details</h3>
 									</header>
 									<div class="form-group gen-error gen-error1">
@@ -571,7 +571,7 @@
 										<div class="clear-fix"></div>
 									</div>
 
-									<div class="inner-third-small right text-left">
+									<div class="inner-third-third right text-left">
 										<label class="nowrap" for="payment_cvv">CVV <a class="small-link" href="">What is this?</a></label>
 										
 									<input  name="payment_cvv"  type="number" class="" id="payment_cvv"  required tabindex="35">

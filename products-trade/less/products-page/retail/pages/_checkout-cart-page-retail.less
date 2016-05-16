@@ -307,247 +307,25 @@
 					margin-top:20px;
 				}
 				.form-group{
-					float:left;
-					padding:10px;
-					margin-bottom:0;
-					&.gen-error{
-						color:red;
-						font-size:.8em;
-						display:none;
-					}
-					&.half{
-						width:50%;
-						&.full-sm{
-							@media (max-width: @screen-sm-max) {
-								width:100%;
-							}
-						}
-						@media (max-width: @screen-xs-max) {
-							width:100%;
-						}
-
-					}
-					&.full{
-						width:100%;
-						.inner-half{
-							width:50%;
-							padding-top:10px;
-							&.left{
-								float:left;
-							}
-							&.right{
-								float:right;
-							}
-						}
-						.inner-third{
-							width:33.3333%;
-							padding-top:10px;
-							&.left,&.middle{
-								float:left;
-							}
-							&.right{
-								float:right;
-							}
-							@media (max-width: @screen-sm-max) {
-								width:50%;
-								&.left,&.right{
-									float:left;
-								}
-								&.midle{
-									float:right;
-								}
-							}
-						}
-						.inner-third-third{
-							width:33.3333%;
-							padding-top:0;
-							float:left;
-							padding-right:10px;
-							@media (max-width: @screen-xs-max) {
-								width:50%;
-							}
-						}
-						.inner-third-small{
-							width:22%;
-							padding-top:0;
-							float:left;
-							@media (max-width: @screen-xs-max) {
-								width:50%;
-								padding-right:10px;
-							}
-						}
-					}
-					&.sm-full{
-						@media (max-width: @screen-sm-max) {
-							width:100%;
-						}
-					}
-					&.quarter-big{
-						width:25%;
-						@media (max-width: @screen-sm-max) {
-							width:50%;
-						}
-					}
-					&.quarter-small{
-						width:25%;
-						@media (max-width: @screen-sm-max) {
-							width:50%;
-						}
-					}
-					&.half-big{
-						width:60%;
-						@media (max-width: @screen-xs-max) {
-							width:100%;
-						}
-					}
-					&.half-small{
-						width:40%;
-						@media (max-width: @screen-xs-max) {
-							width:100%;
-						}
-					}
-					&.space-above{
-						padding-top:30px;
-					}
-					&.space-below{
-						padding-bottom:30px;
-					}
-					&.no-space-bottom{
-						padding-bottom:0;
-						margin-bottom:0;
-					}
-					&.no-space-top{
-						padding-top:0;
-						margin-top:0;
-					}
-					&.enter-new-address, &.enter-new-contact{
-						.or{
-							display:block;
-							float:left;
-							width:20%;
-							text-align:center;
-							padding-right:20px;
-							font-size:18px;
-							padding-top:10px;
-							.gothamBold;
-							@media (max-width: @screen-sm-max) {
-								width:100%;
-								padding-top:0;
-								padding-bottom:10px;
-							}
-						}
-						.btn.new-address,.btn.new-contact{
-							width:80%;
-							float:left;
-							@media (max-width: @screen-sm-max) {
-								width:100%;
-							}
-						}
-					}
-					&.inner-form-header{
-						padding:0;
-						.inner-form-section{
-							padding:20px 30px;
-						}
-					}
-					.direct-debit-details{
-						margin-left:20px;
-						margin-bottom:10px;
-						td{
-							&.item-name{
-								width:80px;
-								.gothamBold;
-							}
-							&.item-detail{
-								width:150px;
-							}
-						}
-					}
 					label{
-						display:block;
 						color: @text-grey;
-						font-size:15px;
-						.gothamBook;
-					}
-					.next-button{
-						display:inline-block;
-					}
-					.prev-button{
-						@media (min-width: @screen-lg-min) {
-							width:275px;
-						}
-					}
-					.btn{
-						@media (max-width: @screen-xs-max) {
-							width:100%;
-						}
 					}
 					.pop-title{
 						background: @bg-mid-grey;
-						padding: 20px 30px;
-						margin: 0 10px;
-						display:none;
-						h6{
-							margin:0;
-							padding:0;
-							display:none;
-							&.active{
-								display:block;
-							}
-						}
-					}
-
-					.radio-inputs{
-						position:relative;
-						top:-10px;
-						input[type=radio] {
-						.opacity(0);
-						position:absolute;
-						}
 					}
 					label .radio-button{
-						.border-radius (2em);
-						background: @white;
-						border: solid 4px @icon-grey;
-						width:20px;
-						height:20px;
-						display:inline-block;
-					}
-					label.selected .radio-button{
-						.border-radius (2em);
-						background: @white url("../templates/images/icon-dot.png") no-repeat center center;
-						background-size:cover;
-						border: solid 4px @icon-blue;					
+						border-color: @retail-main-color;
+						&:before{
+							background: @retail-main-color;
+						}
 					}
 					ul.radio-list{
-						padding:0;
-						margin:0;
 						li{
-							list-style: none;
-							display:inline-block;
-							padding: 0 10px;
 							&:hover{
 								label{
 									color:@icon-blue;
-									cursor:pointer;
 									.radio-button{
 										border-color:@icon-blue;
-									}
-								}
-							}
-							label{
-								display:inline-block;
-								text-transform: uppercase;
-								.gothamMedium;
-								position:relative;
-								top:2px;
-								.radio-button{
-									margin-right:10px;
-									position:relative;
-									top:4px;
-									input[type=radio]{
-										.opacity(0);
-										position:absolute;
 									}
 								}
 							}
@@ -556,24 +334,13 @@
 					.picture-button{
 						background-color:@white;
 						border:solid 1px @border-grey;
-						padding: 25px 0;
-						margin: 10px;
-						margin-bottom:10px;
 						label{
-							text-transform: uppercase;
 							color: @retail-checkout-cart-option-label-color;
-							.gothamMedium;
-							margin-bottom: 0;
-							.radio-button{
-								margin-top:5px;
-							}
 							.radio-button{
 								border-color: @retail-checkout-cart-option-radio-color;
 							}	
 							.icon{
 								svg{
-									display: inline-block;
-									vertical-align: middle;
 									fill: @retail-checkout-cart-option-icon-color;
 									.brand{
 										fill: white;
@@ -590,60 +357,6 @@
 								.radio-button{
 									border-color: @retail-checkout-cart-option-radio-active-color;
 								}
-							}	
-						}						
-						&.delivery-button{
-							margin-left:0;
-							.icon-delivery{
-								height: 200px;
-								line-height: 200px;
-								svg{
-									height: 79px;
-								}											
-							}									
-						}
-						&.pickup-button{
-							margin-right:0;
-							.icon-pickup{
-								height: 200px;
-								line-height: 200px;
-								svg{
-									height: 98px;
-								}
-							}								
-						}
-						&.visa-button, &.mastercard-button,&.amex-button{
-							label{
-								@media (max-width: @screen-xs-max) {
-									font-size:13px;
-								}
-							}
-						}
-						&.visa-button{
-							margin-left:0;
-							margin-right:6px;
-							.icon-visa{
-								height: 80px;
-								svg{
-									height: 80px;									
-								}
-								@media (max-width: @screen-xs-max) {
-									display:none;
-								}
-							}									
-						}
-						&.mastercard-button{
-							margin-left:3px;
-							margin-right:3px;
-							.icon-mastercard{
-								
-							}								
-						}
-						&.amex-button{
-							margin-right:0;
-							margin-left:6px;
-							.icon-amex{
-								
 							}	
 						}
 					}

@@ -464,6 +464,8 @@ var product_pages = {
                     scrollAnimation.animate($("#checkout-cart").offset().top);                            
                 });
                 $("#payment-checkout .form-section").hide();
+                $("#order-details .header-section").removeClass("active");
+                $("#receiving-goods .header-section").addClass("active");
                 $("#steps-indicator2").addClass("clickable");
                 $("#steps-indicator3").removeClass("clickable");
                 $(".gen-error").fadeOut();
@@ -477,7 +479,7 @@ var product_pages = {
             //GO TO STEP 3
             //
             $(".action-goto-step3").click(function() {
-                if($("#checkout-cart").valid()){
+                if(!$("#checkout-cart").valid()){
                     $("#order-details .form-section").hide();
                     $("#receiving-goods .form-section").hide();
                     $("#payment-checkout .form-section").fadeIn("slow",function(){
@@ -485,9 +487,11 @@ var product_pages = {
                     });
                     $("#steps-indicator3").addClass("clickable");
                     $(".gen-error").fadeOut();
-                      $("#steps-indicator2").addClass("clickable");
-                      $("#steps-indicator2").addClass("go-back");
-                      $("#steps-indicator3").addClass("clickable");
+                    $("#order-details .header-section").removeClass("active");
+                    $("#receiving-goods .header-section").removeClass("active");
+                    $("#steps-indicator2").addClass("clickable");
+                    $("#steps-indicator2").addClass("go-back");
+                    $("#steps-indicator3").addClass("clickable");
                 }
                 else{
                     $(".gen-error.gen-error2").fadeIn();

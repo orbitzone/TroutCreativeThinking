@@ -1518,11 +1518,10 @@ Slick slider arrow
   position: absolute;
   right: 0;
   width: 45px;
-  height: 45px;
-  top: 0;
+  height: 43px;
+  top: 1px;
   background: white;
-  border: 1px solid #e4e4e4;
-  border-left: none;
+  border: none;
   padding: 0;
   text-align: center;
 }

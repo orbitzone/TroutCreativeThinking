@@ -6900,6 +6900,10 @@ Slick slider arrow
   font-size: .8em;
   padding-top: 5px;
 }
+#product-pages .main-section#checkout-cart-section #order-form .direct-debit-info-box {
+  background-color: #fafafa;
+  padding: 30px;
+}
 #product-pages .main-section#checkout-cart-section #order-form .transition-height {
   -moz-transition: height 1s ease;
   -ms-transition: height 1s ease;

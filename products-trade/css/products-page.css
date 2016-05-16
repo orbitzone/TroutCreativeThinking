@@ -8233,6 +8233,9 @@ MAIN TITLE
 #product-pages.retail .main-section#product-detail .section .section-title h3.section-heading svg {
   fill: #a6a6a6;
 }
+#product-pages.retail .main-section#product-detail .section .section-title h3.section-heading .text-as-svg svg {
+  fill: black;
+}
 #product-pages.retail .main-section#product-detail .section .verticle-table th,
 #product-pages.retail .main-section#product-detail .section .verticle-table td {
   border-color: #bfbfbf;

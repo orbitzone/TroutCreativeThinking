@@ -1516,7 +1516,7 @@ Slick slider arrow
 }
 #product-pages .datepicker-wrap #receiving_date_icon {
   position: absolute;
-  right: 0;
+  right: 1px;
   width: 45px;
   height: 43px;
   top: 1px;

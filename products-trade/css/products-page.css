@@ -5938,6 +5938,7 @@ Slick slider arrow
   margin-right: 10px;
 }
 #product-pages #shopping-cart .shopping-cart-summary #save-as-section .save-as-wrap {
+  max-width: 230px;
   background-color: #fafafa;
   padding: 0;
 }

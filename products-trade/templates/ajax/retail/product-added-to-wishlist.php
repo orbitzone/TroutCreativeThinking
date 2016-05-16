@@ -1,5 +1,5 @@
 <?php 
-    $string = file_get_contents("../../data/productinfo.json");
+    $string = file_get_contents("../../../data/retail/product-info.json");
     $product = json_decode($string, true);    
 ?>
 <li>

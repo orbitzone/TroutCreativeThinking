@@ -1523,6 +1523,8 @@ Slick slider arrow
   background: white;
   border: 1px solid #e4e4e4;
   border-left: none;
+  padding: 0;
+  text-align: center;
 }
 #product-pages .datepicker-wrap #receiving_date_icon svg {
   display: inline-block;
@@ -7499,9 +7501,9 @@ Slick slider arrow
   height: 50px;
   fill: #999999;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group .picture-button label .icon svg {
-    height: 98px;
+    height: 80px;
   }
 }
 #product-pages .main-section#checkout-cart-section #order-form form#checkout-cart .form-group-wrap .form-group .picture-button label .icon svg .brand {

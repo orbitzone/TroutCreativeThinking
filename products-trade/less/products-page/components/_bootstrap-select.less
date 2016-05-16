@@ -1,8 +1,19 @@
 @color-red-error: rgb(185, 74, 72);
 @color-grey-arrow: rgba(204, 204, 204, 0.2);
-@width-default: 220px; // 3 960px-grid columns
+@width-default: auto; // 3 960px-grid columns
 @zindex-select-dropdown: 1060; // must be higher than a modal background (1050)
 
+@bootstrap-select-border: #e4e4e4;
+@bootstrap-select-bg: white;
+@bootstrap-select-label-color: #b7b7b7;
+@bootstrap-select-color: black;
+@bootstrap-select-arrow-color: #bfbfbf;
+
+@bootstrap-select-hover-border: #e4e4e4;
+@bootstrap-select-hover-bg: #f4f4f4;
+@bootstrap-select-hover-label-color: #b7b7b7;
+@bootstrap-select-hover-color: black;
+@bootstrap-select-hover-arrow-color: #bfbfbf;
 // Mixins
 .cursor-disabled() {
   cursor: not-allowed;
@@ -355,4 +366,57 @@ select.selectpicker {
     width: 100%;
     float: none;
   }
+}
+.bootstrap-select{
+  .btn.dropdown-toggle{
+      border-color: @bootstrap-select-border;
+      border-width: 1px;
+      background: @bootstrap-select-bg;
+      color: @bootstrap-select-color;
+      font-size: 15px;
+      padding-right: 40px;
+      height: 44px;
+      line-height: 42px;
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-left: 20px;
+      &:hover{
+        @media (min-width: @screen-sm){
+          border-color: @bootstrap-select-hover-border;
+          background: @bootstrap-select-hover-bg;
+          color: @bootstrap-select-hover-color;
+        }
+      }
+      .text{
+        color: @bootstrap-select-label-color;
+      }
+      .bs-caret{
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding-right: 10px;
+        svg{
+          position: relative;
+          /*width: 23px;
+          height: 13px;*/
+          width: 16px;
+          height: 9px;
+          display: inline-block;
+          fill: @bootstrap-select-arrow-color;
+        }
+      }       
+    }
+    .dropdown-menu{
+      padding: 0;
+      .border-radius(0);
+      margin: 0;
+      .text-label{
+        display: none;
+      }
+      a{
+        padding: 10px 20px;
+        text-decoration: none;
+        color: black;
+      }
+    }
 }

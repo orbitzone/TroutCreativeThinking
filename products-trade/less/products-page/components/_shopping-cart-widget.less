@@ -1,14 +1,15 @@
 @widget-bar-bg: @main-color;
 @widget-content-bg: #066693;
 
-@widget-aside-button-color: white;
+@widget-aside-button-color: @widget-content-bg;
 @widget-aside-button-active-color: white;
 
 //Buttons and form fields
 @select-bg: #0776AA;
 @select-color: white;
+@select-icon-color: #71aac8;
 
-@checkbox-icon-square-bg: #066693;
+@checkbox-icon-square-bg: @widget-content-bg;
 @checkbox-icon-color: white;
 
 @switch-toolbar-btn-bg: @widget-content-bg;
@@ -16,7 +17,7 @@
 @switch-toolbar-btn-border: #54F276;
 
 @checkout-btn-bg: #54f276;
-@checkout-btn-color: @main-color;
+@checkout-btn-color: @widget-content-bg;
 
 //Section Titles
 @main-title-color: white;
@@ -45,38 +46,46 @@
 @product-item-footer-quantity-color: white;
 @product-item-footer-price-color: white;
 
-@product-item-footer-quantity-edit-color: @main-color;
+@product-item-footer-quantity-edit-color: black;
 @product-item-footer-quantity-edit-bg: #e2e2e2;
 
-@product-item-footer-price-edit-label-color: #066693;
+@product-item-footer-price-edit-label-color: @widget-content-bg;
 @product-item-footer-price-edit-value-color: #2aa9e3;
 
 @list-divider-color: #2178a0;
 @subtotal-color:#8fbed4;
 @total-color: white;
 
-@take-a-tour-btn-bg: #3ba8da;
+@take-a-tour-btn-bg: @bg-light-blue-stripes;
 
 @image-border: #bfbfbf;
 
 @tour-box-intro-color: white;
-@tour-box-bg: url("../templates/images/product-detail/bg-light-blue-stripes.jpg");
-@tour-box-button-bg: @take-a-tour-btn-bg;
+@tour-box-bg: @bg-light-blue-stripes;
+@tour-box-bg-svg: @bg-light-blue-stripes-svg;
+@tour-box-button-bg: @bg-dark-blue-stripes;
 
 @wishlist-add-to-cart-btn-color: white;
-@wishlist-add-to-cart-btn-bg: #4faa98;
-
-@wishlist-product-bg: #6dc8b6;
-@wishlist-product-code-color: #439182;
+@wishlist-add-to-cart-btn-bg: #56B3DE;
+@wishlist-product-bg: #0776AA;
+@wishlist-product-code-color: #56B3DE;
 @wishlist-product-name-color: white;
 @wishlist-product-description-color: white;
 @wishlist-close-btn-color: #d5e3e0;
 
-@wishlist-add-all-to-cart-btn-color: #4faa98;
+@wishlist-add-all-to-cart-btn-color: @widget-content-bg;
 @wishlist-add-all-to-cart-btn-bg: #54f276;
 
 @editable-text-field-bg: #0776aa; 
 @quantity-updated-check-color: #54f276;
+
+@current-list-color: #46abdb;
+@current-list-border: #61a1be;
+
+@checkbox-icon-bg: @widget-content-bg;
+@product-list-title-color: #46abdb;
+@product-list-title-border: #46abdb;
+@product-list-description-color:#8fbed4;
 
 #shopping-cart-widget{
 	background: @widget-content-bg;
@@ -103,7 +112,7 @@
 	.checkout-btn,
 	.new-list-btn{
 		color: @checkout-btn-color;
-		border: none;
+		border: 2px solid @checkout-btn-bg;
 		background-color: @checkout-btn-bg;
 		text-transform: uppercase;
 		font-size: 15px;
@@ -113,6 +122,13 @@
 		width: 100%;
 		height: 56px;
 		margin: 0 auto;
+		&:hover{
+			@media (min-width: @screen-sm){
+				background-color: @checkout-btn-color;
+				color: @checkout-btn-bg;
+				border-color: @checkout-btn-bg; 
+			}
+		}
 	}
 	.selectric{
 		border: none;
@@ -126,7 +142,7 @@
 		.gothamBook;
 		.label{
 			line-height: 66px;
-			padding: 0;
+			padding: 0;one-option
 			display: block;
 			color: @select-color;
 		}
@@ -135,37 +151,29 @@
 		}
 	}
 	.bootstrap-select{
-		border: none;
+		border-color: @select-bg;
 		width: 100%;
-		display: block;
 		cursor: pointer;
-		position: relative;
-		.gothamBook;
-		height: 66px;
 		button{
 			color: @select-color;
 			background: @select-bg;
-			height: 66px;
-			line-height: 66px;
+			border-color: @select-bg;
 			.box-shadow(none);
 			&.btn{
-				padding: 0 10px;
 				&:before{
 						background: @select-bg;
+						border-color: @select-bg;
 					}
 				&:hover{
-					&:hover{
-						color: @select-color;
-						background: @select-bg;					
-					}
+					color: @select-color;
+					background: @select-bg;	
+					border-color: @select-bg;									
 				}
 			}
-			.caret{
-				border: none;
-				background: url('../templates/images/product-detail/dropdown-arrow.svg');
-				width: 16px;
-				height: 9px;
-				background-repeat: no-repeat;
+			.bs-caret{
+				svg{
+					fill: @select-icon-color;
+				}
 			}			
 		}
 		.dropdown-menu{
@@ -550,14 +558,14 @@
 		}
 		.current-list{
 			position: relative;
-			color: #46abdb;
+			color: @current-list-color;
 			font-size: 15px;
 			text-transform: uppercase;
 			padding: 35px 0 15px;
-			border-top: 1px solid #61a1be;
-			border-bottom: 1px solid #61a1be;
+			border-top: 1px solid @current-list-border;
+			border-bottom: 1px solid @current-list-border;
 			margin-bottom: 15px;
-			margin-top: 30px;
+			margin-top: 30px;			
 		}
 		button.switch-btn{
 			border: 1px solid @switch-toolbar-btn-border;
@@ -711,6 +719,7 @@
 		}
 		.tour-popout{
 			background: @tour-box-bg;
+			background-image: @tour-box-bg-svg;
 			padding: 25px 25px 20px;
 			color: white;
 			margin-bottom: 30px;
@@ -728,20 +737,20 @@
 				text-transform: uppercase;
 			}
 			.tour-button{
+				height: 56px;
+				line-height: 52px;
 				color:@white;
 				.gothamMedium;
 				text-transform: uppercase;
 				font-size: 20px;
-				height: 56px;
-				line-height: 56px;
 				padding: 0 40px;
 				margin: 20px 0 0;
 				border-color: transparent; 
 				background: @tour-box-button-bg;
+				background-image: @bg-dark-blue-stripes-svg;
 				&:hover{
-					&:hover{
-						color: @main-color;
-					}
+					background: white;
+					color: @main-color;
 				}
 			}
 		}
@@ -1176,61 +1185,18 @@
 				text-align: center;
 				.one-option{
 					display: inline-block;
-					padding: 0 5px;
 					vertical-align: top;
 					width: 100px;
-					.selectric,
-					label{
-						border: none;
-						max-width: 100px;
-						width: 100%;
-						height: 66px;
-						color: white;
-						display: block;
-						background: @main-color;
-						line-height: 66px;
-						cursor: pointer;
-						.gothamBook;
-						.label{
-							line-height: 66px;
-							padding: 0;
-							display: block;
-							color: white;
-						}
-						.button{
-							top: 25px;
-						}
+					color: white;
+					background: @main-color;
+					border-color: @main-color;
+					&.checkbox-option{
+						padding-left: 10px;
+						padding-right: 10px;
 					}
-					label{
-						input{
-							display: none;
-							&:checked{
-								+ .icon{
-									svg{
-										opacity: 1;
-									}
-								}
-							}
-						}
-						.icon{
-							width: 20px;
-					    height: 20px;
-					    background: #066693;
-					    display: inline-block;
-					    top: 5px;
-					    position: relative;
-					    margin-left: 8px;
-							svg{
-								width: 12px;
-								height: 10px;
-								fill: white;
-								position: absolute;
-								top: 5px;
-								left: 4px;
-								opacity: 0;
-							}
-						}
-					}
+					.icon{
+						background: @checkbox-icon-bg;
+					}					
 				}
 			}
 		}
@@ -1375,13 +1341,7 @@
 					}
 					.bootstrap-select{
 						max-width: 130px;
-						height: 38px;
-						line-height: 38px;
-						float: right;						
-						button{
-							height: 38px;
-							line-height: 38px;
-						}
+						float: right;												
 					}
 				}
 			}
@@ -1389,7 +1349,7 @@
 				background: @main-color;
 				padding: 20px;
 				display: block;
-				color: #8fbed4;
+				color: @product-list-description-color;
 				margin-bottom: 10px;
 				text-decoration: none;
 				@media (min-width: @screen-sm){
@@ -1403,7 +1363,7 @@
 				}
 				h5{
 					font-size: 14px;
-					color: #46abdb;
+					color: @product-list-title-color;
 					display: inline-block;
 					position: relative;
 					&:after{
@@ -1413,7 +1373,7 @@
 						width: 100%;
 						margin-top: 7px;
 						height: 1px;
-						background: #46abdb;
+						background: @product-list-title-border;
 					}
 				}
 				h4{
@@ -1560,6 +1520,7 @@
 		.tour-info-small{
 			position: relative;
 			background: @take-a-tour-btn-bg;
+			background-image: @bg-light-blue-stripes-svg;
 			text-align: center;
 			color: white;
 			padding: 20px;

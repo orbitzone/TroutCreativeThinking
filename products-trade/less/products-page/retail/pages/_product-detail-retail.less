@@ -1,0 +1,374 @@
+@retail-body-color: black;
+
+@retail-bg-price-box: #f4f4f4;
+@retail-bg-cmp: #c8c8c8;
+@retail-text-code: #bababa;
+@retail-text-price: @retail-main-color;
+@retail-text-price-inc: black;
+@retail-text-price-exc: #b4b4b4;
+@retail-text-icons: #bababa;
+@retail-text-price-divider: #eaeaea;
+@retail-dropdown-border: #bfbfbf;
+@retail-share-icon-color: #7f7f7f;
+@retail-arrow-down-color: #a6a6a6;
+@retail-arrow-down-internal-color: black;
+
+
+@retail-search-button-bg: #969696;
+@retail-search-button-color: white;
+
+@retail-section-border: #E8E8E8;
+@retail-section-internal-expand-header-bg: #f4f4f4;
+@retail-section-internal-expand-body-bg: #fbfbfb;
+
+@retail-file-icon-cad-bg: #888888;
+@retail-file-icon-doc-bg: #eeba90;
+@retail-file-link-color: #888888;
+@retail-file-link-hover-color: #6dc8b6;
+
+@retail-file-cad-link-color: #888888;
+@retail-file-cad-link-hover-color: #6dc8b6;
+
+@retail-slider-arrow-default-color: #bfbfbf;
+
+@retail-product-display-button-bg: #6dc8b6;
+@retail-product-display-button-color: white;
+
+@retail-product-display-address-link-color: #888;
+@retail-product-display-address-link-hover-color: #6dc8b6;
+
+@retail-slider-dots-bg: #eaeaea;
+@retail-slider-dots-current-bg: #6dc8b6;
+
+@retail-section-grey-slider-dots-bg: #bfbebe;
+@retail-section-grey-slider-dots-current-bg: #6dc8b6;
+
+@retail-section-filters-link-color: #888;
+@retail-section-filters-link-filtered-color: @retail-main-color;
+
+@retail-back-to-top-btn-bg: #ccc;
+@retail-back-to-top-btn-color: black;
+
+@retail-table-border: #bfbfbf;
+@retail-table-header-bg: #f4f4f4;
+
+@retail-we-love-color: #6dc8b6;
+
+@retail-postcode-input-color: black;
+
+.main-section#product-detail{
+	color: @retail-body-color;
+	.slick-dots{
+		li{
+			button{
+				background-color: @retail-slider-dots-bg;
+			}
+			&.slick-active{
+				button{
+					background-color: @retail-slider-dots-current-bg;	
+				}				
+			}
+		}
+	}
+	.back-to-top{
+		background: @retail-back-to-top-btn-bg;
+		.icon{
+			svg{
+				fill: @retail-back-to-top-btn-color;
+			}
+		}
+	}
+	.added-to-cart{
+		border-color: @retail-main-color;
+	}
+	.progress-button {
+		button{
+			&:hover{
+				color: @retail-add-to-cart-color;
+				@media (min-width: @screen-sm){
+					color: @retail-add-to-cart-hover-color;	
+				}
+				svg{
+					@media (min-width: @screen-sm){
+						fill: @retail-add-to-cart-bg;	
+					}					
+				}
+			}
+		}
+		.progress-circle{
+			stroke: @retail-main-color;
+		}		
+	}//End progress button
+	.options-dropdown{
+		.options-name{
+			border-color: @retail-dropdown-border;
+			&:hover{
+				color: @retail-main-color;
+				background: @retail-bg-price-box;
+			}
+		}
+		.options-list{
+			border-color: @retail-dropdown-border;
+			li{
+				border-bottom-color: @retail-dropdown-border;
+			}
+		}
+		&.open{
+			.options-name{
+				color: @retail-main-color;
+				background: @retail-bg-price-box;
+				svg{
+					fill: @retail-main-color;
+				}
+			}
+		}
+	}
+	.product-images{
+		.product-images-slider{
+			@media (min-width: @screen-sm){
+				border-color: @retail-border-light-grey;
+			}			
+		}
+		.product-thumbs{
+			.product-thumb{
+				img{
+					border-color: @retail-border-light-grey;
+				}
+			}
+		}//END product-thumbs
+	}//END product-images
+	.product-description-wrap{
+		.product-details{
+			.product-code{
+				color: @retail-text-code;
+				a{
+					color: @retail-text-code;
+				}			
+			}//END product-code
+			.product-prices{
+				.nav-tabs{
+					li{
+						background: @retail-bg-cmp;
+						&.active{
+							background: @retail-bg-price-box;
+							a{
+								color: @retail-text-price;
+							}
+						}
+					}
+				}//END nav-tabs
+				.tab-pane{
+					background:  @retail-bg-price-box;
+					.product-price-inc{
+						color: @retail-text-price-inc;
+					}
+					.product-price-exc{
+						color: @retail-text-price-exc;
+					}
+				}//END tab-pane
+			}//END product-prices
+			.product-postcode-input{
+				background: @retail-postcode-input-bg;
+				background-image: @bg-light-green-stripes-svg;
+				color: @retail-postcode-input-color;
+			}//End product-postcode-input
+			.product-quantity{
+				.quantity-number{
+					border-color: @retail-border-grey;
+					background-color: @retail-bg-table-header-grey;
+				}//END quantity-number
+				
+				.quantity-set{
+					label,.set-name{
+						color:@retail-text-light-grey;
+					}
+					.radiolabel-set{
+						border-color: @retail-text-light-grey;
+						.radio-button{
+							&.active{
+								background-color:@retail-bg-button-light-blue;
+								color:@retail-white;
+							}
+						}
+					}
+				}//END quantity-set
+				.quantity-details{
+					color: @retail-text-light-grey;
+					span{
+						color: @retail-text-blue;
+					}					
+				}//END quantity-details
+			}//END product-quantity
+			.product-icons{
+				.item{
+					color: @retail-text-icons;
+				}
+			}//END product-icons		
+		}//END product-details		
+		.product-availability-variations{
+			> ul{
+				> li{
+					li{
+						&.none-available{
+							color: @retail-dropdown-border;
+						}
+					}
+				}
+			}
+		}//END product-availability-variations
+		.product-share{
+			b{
+				color: @retail-main-color;
+			}
+			.product-share-buttons{
+				.share-btn{
+					border-color: @retail-dropdown-border;
+					svg{
+						fill: @retail-share-icon-color;
+					}
+				}
+			}
+		}//END product-share	
+	}//END product-description-wrap
+	.grey-stripes-bg,
+	.bg-light-stripes{
+		background: grey @bg-light-stripes;
+		background-image: @bg-light-stripes-svg;
+		.slick-dots{
+			li{
+				button{
+					background-color: @retail-section-grey-slider-dots-bg;
+				}
+				&.slick-active{
+					button{
+						background-color: @retail-section-grey-slider-dots-current-bg;
+					}
+				}
+			}
+		}
+	}
+	#product-highlights{
+		border-top-color: @retail-section-border;
+	}
+
+	#product-display{
+		.postcode-wrap{
+			button{
+				background: @retail-product-display-button-bg;
+				border-color: @retail-product-display-button-bg;
+				color: @retail-product-display-button-color;
+				&:hover{
+					@media (min-width: @screen-sm){
+						color: @retail-product-display-button-bg;
+						background: @retail-product-display-button-color;
+						border-color: @retail-product-display-button-bg;
+					}
+				}
+			}
+		}
+		.address{
+			a{
+				color: @retail-product-display-address-link-color;
+				&:hover{
+					@media (min-width: @screen-sm){
+						color: @retail-product-display-address-link-hover-color;
+					}
+				}
+			}
+		}		
+	}
+	.section{
+		.slick-next{
+			svg{
+				fill: @retail-slider-arrow-default-color;
+			}
+		}			
+		.slick-prev{
+			svg{
+				fill: @retail-slider-arrow-default-color;
+			}
+		}	
+		.section-content{
+			border-top-color: @retail-section-border;
+		}
+		.filters{
+			.filter{
+				color: @retail-section-filters-link-color;
+				&.filtered{
+					color: @retail-section-filters-link-filtered-color;
+				}
+				&:last-child{
+					&:before{
+						background: @retail-section-filters-link-color;
+					}
+				}
+			}
+		}
+		.section-title{
+			h3.section-heading{
+				svg{
+					fill: @retail-arrow-down-color;
+				}
+				.text-as-svg{
+					svg{
+						fill: black;
+					}
+				}		
+			}
+		}		
+		.verticle-table{
+			th,td{
+				border-color: @retail-table-border;
+			}
+			th{
+				background-color:@retail-table-header-bg;
+			}
+		}
+		.file-download-area{
+			.internal-expand-body{
+				background: @retail-section-internal-expand-body-bg;				
+			}
+			.internal-expand-header{
+				background-color: @retail-section-internal-expand-header-bg;
+				h4.download-heading{
+					svg{
+						fill: @retail-arrow-down-internal-color;
+					}
+				}
+			}
+		}
+	}
+	.we-love{
+		svg{
+			fill: @retail-we-love-color;
+		}
+	}
+	.file-download-list{
+		.one-file{
+			.file-info{
+				&.file-doc{
+						.icon{
+							background: @retail-file-icon-doc-bg;
+						}
+				}
+				&.file-cad{
+						.icon{
+							background: @retail-file-icon-cad-bg;
+						}
+						.file-download{
+							color: @retail-file-cad-link-color;
+							&:hover{
+								color: @retail-file-cad-link-hover-color;
+							}
+						}
+				}
+				.file-download{
+					color: @retail-file-link-color;
+					&:hover{
+						color: @retail-file-link-hover-color;
+					}
+				}
+			}
+		}
+	}
+}

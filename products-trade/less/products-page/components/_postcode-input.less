@@ -1,5 +1,6 @@
 .postcode-input{
-	background: @postcode-input-bg url("@{images-folder}/product-detail/bg-grey-stripes.jpg");
+	background: @postcode-input-bg;
+	background-image: @bg-light-grey-stripes-svg;
 	padding: 20px 0;
 	font-size: 12px;
 	position: relative;
@@ -21,32 +22,34 @@
 		font-size: 25px;
 		max-width: 120px;
 		text-align: center;
+		padding-top: 0;
+		padding-bottom: 0;
 		&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-			line-height: 45px;
+			line-height: 36px;
 		  font-size: 16px;
 		  position: relative;
 		  top: -4px;						  
 		}
 		&:-ms-input-placeholder { /* IE 10+ */
-			line-height: 45px;
+			line-height: 36px;
 		  font-size: 16px;
 		  position: relative;
 		  //top: -4px;						  
 		}
 		&::-moz-placeholder{
-			line-height: 45px;
+			line-height: 36px;
 		  font-size: 16px;
 		  position: relative;
 		  top: -4px;						  
 		}
 		&:-moz-placeholder { 
-			line-height: 45px;
+			line-height: 36px;
 		  font-size: 16px;
 		  position: relative;
 		  top: -4px;						  
 		}
 		&::placeholder{
-			line-height: 45px;
+			line-height: 36px;
 			font-size: 16px;
 			position: relative;
 			top: -4px;							

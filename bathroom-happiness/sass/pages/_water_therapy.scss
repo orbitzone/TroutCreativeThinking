@@ -1709,7 +1709,7 @@ body.water-therapy{
 				}				
 				.shower-technology-flip{
 					@include transition(0.6s all ease-out);
-					@include transform-style(preserve-3d);
+					//@include transform-style(preserve-3d);
 					position: relative;
 					width: 320px;
 					min-height: 325.87px;	
@@ -1721,7 +1721,7 @@ body.water-therapy{
 					.back{
 						@include backface-visibility(hidden);
 						@include transition(0.6s all ease-out);
-						@include transform-style(preserve-3d);
+						//@include transform-style(preserve-3d);
 						position: absolute;
 						top: 0;
 						left: 0;

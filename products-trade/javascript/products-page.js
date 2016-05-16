@@ -550,6 +550,18 @@ var product_pages = {
                 $(this).toggleClass("active");
             }
         });
+        //PAYMENT TYPE CHANGE
+        $("#payment_paymenttype").on('change',function(){
+            if($(this).find(':selected').val() === 'directdebit'){
+                $("#credit-card-choice").hide();
+                $("#direct-debit-choice").fadeIn("slow")
+            }
+            else if($(this).find(':selected').val() === 'creditcard'){
+                $("#direct-debit-choice").hide();
+                $("#credit-card-choice").fadeIn("slow")
+            }
+        });
+
         //
         //SET UP WHEN SCREEN RESIZES
         //

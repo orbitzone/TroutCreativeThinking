@@ -7,7 +7,7 @@
 		'CARD'=>'CARD',
 		'KIT'=>'KIT'
 	);
-    $string = file_get_contents("../../data/productscategory.json");
+    $string = file_get_contents("../../../data/trade/products-category.json");
     $products = json_decode($string, true);  
 ?>
 <?php foreach($products as $product){ 

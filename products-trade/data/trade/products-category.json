@@ -1,0 +1,297 @@
+[
+  {
+    "code": "404914",
+    "name": "Conex Banninger XL >B< Press Gas",
+    "images": [{
+	    "url": "templates/images/products-category/404914.jpg",
+	    "alt":"Alt image 1"
+    },{
+    	"url":"templates/images/products-category/404914.jpg",
+    	"alt":"Alt image 2"
+    }],
+    "description": "45 deg M&F Elbow",
+    "price": [
+      {
+        "unit": "EA",
+        "value": "77.55"
+      }
+    ],
+    "cmp": [
+      {
+        "unit": "EA",
+        "value": "103.40"
+      }
+    ],
+    "unit": "EA",
+    "pack": ""
+  },
+  {
+    "code": "1435050",
+    "name": "Duopex Gas Fittings",
+    "images": [{
+    	"url": "templates/images/products-category/1435050.jpg",
+    	"alt": "Alt image 1"
+    }],
+    "description": "Elbow",
+    "price": [
+      {
+        "unit": "EA",
+        "value": "12.69"
+      }
+    ],
+    "cmp": [
+      {
+        "unit": "EA",
+        "value": "16.92"
+      }
+    ],
+    "unit": "EA",
+    "pack": ""
+  },
+  {
+    "code": "4912020",
+    "name": "Dura",
+    "images": [{
+    	"url": "templates/images/products-category/4912020.jpg",
+    	"alt": "Product image"
+    }],
+    "description": "Dura Sink Mixer with Pot Filler 4*",
+    "price": [
+      {
+        "unit": "PKT",
+        "value": "7.89"
+      }
+    ],
+    "cmp": [
+      {
+        "unit": "PKT",
+        "value": "8.97"
+      }
+    ],
+    "unit": "PKT",
+    "pack": "100"
+  },
+  {
+    "code": "1907890",
+    "name": "Backwash Filters Mains Water Filters",
+    "images": [{
+    "url": "templates/images/products-category/1907890.jpg",
+    "alt": "Product image"
+    }],
+    "description": "Cillit Eurofiltro Manual Filter 50mm",
+    "price": [
+      {
+        "unit": "EA",
+        "value": "902.64"
+      }
+    ],
+    "cmp": [
+      {
+        "unit": "EA",
+        "value": "1002.93"
+      }
+    ],
+    "unit": "EA",
+    "pack": "100"
+  },
+  {
+    "code": "7701222",
+    "name": "Rothenberger Press",
+    "images": [{
+    "url": "templates/images/products-category/7701222.jpg",
+    "alt": "Product image"
+    }],
+    "description": "Duopex Jaw to suit Compact Press Tool",
+    "price": [
+      {
+        "unit": "EA",
+        "value": "198.34"
+      }
+    ],
+    "cmp": [
+      {
+        "unit": "EA",
+        "value": "199.34"
+      }
+    ],
+    "unit": "EA",
+    "pack": ""
+  },
+  {
+    "code": "108372",
+    "name": "Hydroseal Tap Valve 1/2\"",
+    "images": [{
+    "url": "templates/images/products-category/108372.jpg",
+    "alt": "Product image"
+    }],
+    "description": "12mm",
+    "price": [
+      {
+        "unit": "PKT",
+        "value": "189.70"
+      },
+      {
+        "unit": "EA",
+        "value": "2.98"
+      }
+    ],
+    "cmp": [
+      {
+        "unit": "PKT",
+        "value": "208.45"
+      },
+      {
+        "unit": "EA",
+        "value": "3.28"
+      }
+    ],
+    "unit": "EA",
+    "pack": "100"
+  },
+  {
+    "code": "9500734",
+    "name": "Vada",
+    "images": [{
+    "url": "templates/images/products-category/9500734.jpg",
+    "alt": "Product image"
+    }],
+    "description": "V-PC Auto Pressure Control",
+    "price": [
+      {
+        "unit": "EA",
+        "value": "159.96"
+      }
+    ],
+    "cmp": [
+      {
+        "unit": "EA",
+        "value": "175.78"
+      }
+    ],
+    "unit": "EA",
+    "pack": ""
+  },
+  {
+    "code": "100265",
+    "name": "Standard Diecast H&B C/P",
+    "images": [{
+    "url": "templates/images/products-category/100265.jpg",
+    "alt": "Product image"
+    }],
+    "description": "",
+    "price": [
+      {
+        "unit": "PR",
+        "value": "12.17"
+      },
+      {
+        "unit": "EA",
+        "value": "6.46"
+      }
+    ],
+    "cmp": [
+      {
+        "unit": "PR",
+        "value": "13.37"
+      },
+      {
+        "unit": "EA",
+        "value": "7.10"
+      }
+    ],
+    "unit": "EA",
+    "pack": ""
+  },
+  {
+    "code": "1903692",
+    "name": "Bridgland Gas Ptfe Tape",
+    "images": [{
+    "url": "templates/images/products-category/1903692.jpg",
+    "alt": "Product image"
+    }],
+    "description": "Bridgland Gas Ptfe Tape",
+    "price": [
+      {
+        "unit": "ROLL",
+        "value": "4.73"
+      }
+    ],
+    "cmp": [
+      {
+        "unit": "ROLL",
+        "value": "5.50"
+      }
+    ],
+    "unit": "ROLL",
+    "pack": ""
+  },
+  {
+    "code": "9500738",
+    "name": "Vada",
+    "images": [{
+    "url": "templates/images/products-category/9500738.jpg",
+    "alt": "Product image"
+    }],
+    "description": "V110-H Horizontal Multi Stage",
+    "price": [
+      {
+        "unit": "KIT",
+        "value": "1048.80"
+      }
+    ],
+    "cmp": [
+      {
+        "unit": "KIT",
+        "value": "1152.53"
+      }
+    ],
+    "unit": "KIT",
+    "pack": ""
+  },
+  {
+    "code": "9504421",
+    "name": "Thermann Electric Storage",
+    "images": [{
+    "url": "templates/images/products-category/9504421.jpg",
+    "alt": "Product image"
+    }],
+    "description": "Electric Hot Water System 250L",
+    "price": [
+      {
+        "unit": "EA",
+        "value": "798.88"
+      }
+    ],
+    "cmp": [
+      {
+        "unit": "EA",
+        "value": "859.00"
+      }
+    ],
+    "unit": "EA",
+    "pack": ""
+  },
+  {
+    "code": "9502193",
+    "name": "Dura",
+    "images": [{
+    "url": "templates/images/products-category/9502193.jpg",
+    "alt": "Product image"
+    }],
+    "description": "Dura Sink Mixer with Pot Filler 4*",
+    "price": [
+      {
+        "unit": "EA",
+        "value": "531.73"
+      }
+    ],
+    "cmp": [
+      {
+        "unit": "EA",
+        "value": "584.32"
+      }
+    ],
+    "unit": "EA",
+    "pack": ""
+  }
+]

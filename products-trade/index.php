@@ -36,6 +36,7 @@
             <div class="col-sm-push-1 col-sm-5 text-center">
               <h2 style="color:#0776aa; padding: 20px 0;">Trade</h2>
               <ul class="list-unstyled">
+                <li style="padding: 10px 0;"><a href="trade-products-category.php" class="btn full-width blue-button">Products Category</a></li>
                 <li style="padding: 10px 0;"><a href="trade-product-detail.php" class="btn full-width blue-button">Product Detail and Widget</a></li>
                 <li style="padding: 10px 0;"><a href="trade-shopping-cart.php" class="btn full-width blue-button">Shopping Cart</a></li>
                 <li style="padding: 10px 0;"><a href="trade-checkout-cart.php" class="btn full-width blue-button">Checkout Cart</a></li>
@@ -45,6 +46,7 @@
             <div class="col-sm-push-1 col-sm-5 text-center">
               <h2 style="color: #6dc8b6; padding: 20px 0;">Retail</h2>
               <ul class="list-unstyled">
+                <li style="padding: 10px 0;"><a href="retail-products-category.php" class="btn full-width green-button">Products Category</a></li>
                 <li style="padding: 10px 0;"><a href="retail-product-detail.php" class="btn full-width green-button">Product Detail and Widget</a></li>
                 <li style="padding: 10px 0;"><a href="retail-shopping-cart.php" class="btn full-width green-button">Shopping Cart</a></li>
                 <li style="padding: 10px 0;"><a href="retail-checkout-cart.php" class="btn full-width green-button">Checkout Cart</a></li>

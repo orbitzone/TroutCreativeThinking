@@ -95,6 +95,9 @@ MAIN TITLE
 	}
 }
 .progress-button {
+	.progress-circle{
+		stroke: @retail-main-color;
+	}
 	button{
 		&:hover{
 			color: @retail-add-to-cart-color;	
@@ -107,6 +110,17 @@ MAIN TITLE
 				}					
 			}
 		}
+	}
+	&.loading{
+		border-color: #ddd;
+		background-color: transparent;
+		color: #fff;
+		button{
+			border-color: #ddd;
+			.border-radius(50%);
+			background-color: transparent;
+			color: white;
+		}					
 	}		
 }//End progress button
 .added-to-cart{

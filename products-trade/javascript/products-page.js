@@ -140,6 +140,12 @@ var product_pages = {
     itemsInWishlist: 0,
     type: '',
     init: function() {
+
+        if($('#product-pages').hasClass('retail')){
+            this.type = 'retail'; 
+        }else{
+            this.type = 'trade';
+        }
         var section = $('#product-pages').data('section');
         if (typeof this[section] === 'function') {
             this[section]();
@@ -147,10 +153,8 @@ var product_pages = {
         if($('#shopping-cart-widget').length > 0){
             this.widget();
         }
-        if($('#product-pages').hasClass('retail')){
-            this.type = 'retail'; 
-        }else{
-            this.type = 'trade';
+        if($('input[name=userpostcode]').length > 0){
+            this.inputPostcode();
         }
     },
     checkoutCart: function() {
@@ -856,6 +860,43 @@ var product_pages = {
             }
         });
     },
+    inputPostcode: function(){
+        function updatePostcode(val){
+            $('.postcode-input input, .postcode-input .enter-your-postcode').hide();
+            $('.postcode-input .postcode-text').text(val);
+            $('.postcode-input .postcode-text-wrap').show();
+            $('#productDetail .product-price').html('$942.99<small>gst inc.</small>');
+            $('.product-prices, .product-code').removeClass('hidden');
+            $('.product-postcode-input').slideUp();
+            $('button.add-to-cart').removeAttr('disabled');
+        }
+        //Actions to the postcode input to show prices.
+        $('input[name=userpostcode]').on('change blur', function(){
+            var val = $(this).val();
+            if(val != ""){
+                updatePostcode(val);
+            }else{
+                if($('.postcode-input .postcode-text').text()!=""){
+                  updatePostcode($('.postcode-input .postcode-text').text());  
+                }
+            }
+            //TO_UPDATE: This needs to be updated with your code to load the real information of the product
+           
+        });
+         $('input[name=userpostcode]').on('keyup', function(e){
+            var val = $(this).val();
+            if(val != "" && e.keyCode == 13){
+                updatePostcode(val);
+            }
+         });
+        $('.postcode-input .postcode-link a').on('click', function(){
+            $('.postcode-input input, .postcode-input .enter-your-postcode').show();
+            $('.postcode-input .postcode-text-wrap').hide();
+            $('.postcode-input input').focus();
+            $('.postcode-input input').val($('.postcode-input input').val());            
+            return false;
+        });
+    },
     widget: function(){
         $('body').addClass('widget');
         //Add classes to add hacks on browsers
@@ -1222,7 +1263,7 @@ var product_pages = {
             });
         }
         $.ajax({
-            url: 'templates/Ajax/category-product.php',
+            url: 'templates/ajax/'+product_pages.type+'/category-product.php',
             dataType: 'html',
             success: function(data){
                 $('#products').append(data);
@@ -1248,12 +1289,12 @@ var product_pages = {
             var obj = $(this);
             obj.addClass('active');
             obj.blur();
-            TweenMax.staggerTo($('#products .product'),0.1,{y: 100, opacity: 0},0.03,function(){
+            TweenMax.staggerTo($('#products .product, #products .banner'),0.1,{y: 100, opacity: 0},0.03,function(){
                 $('#products').attr('class','products');
                 $('#products').addClass(obj.data('option'));
                 $(window).resize();
                 $('#products .product-images-slider').slick('setPosition');
-                TweenMax.staggerFromTo($('#products .product'),0.3,{y:100, opacity:0},{y: 0, opacity: 1},0.03,function(){
+                TweenMax.staggerFromTo($('#products .product, #products .banner'),0.3,{y:100, opacity:0},{y: 0, opacity: 1},0.03,function(){
                 });
             });            
         });
@@ -1269,9 +1310,9 @@ var product_pages = {
         });
         $('#show-gst').on('change', function(){
             if($(this).is(':checked')){
-                $('#products .product-price small').text('exc.');
+                $('#products .product-price small').text('inc.');
             }else{
-                $('#products .product-price small').text('incl.');
+                $('#products .product-price small').text('exc.');
             }
         });
         //Initialise radio button
@@ -1358,43 +1399,7 @@ var product_pages = {
         //Copy Product Images slider into the lightbox
         var slider = $('.product-images').clone();
         $('#slider-lightbox .lightbox-content').append(slider);
-        function updatePostcode(val){
-            $('.postcode-input input, .postcode-input .enter-your-postcode').hide();
-            $('.postcode-input .postcode-text').text(val);
-            $('.postcode-input .postcode-text-wrap').show();
-            $('.product-price').html('$942.99<small>gst inc.</small>');
-            $('.product-prices, .product-code').removeClass('hidden');
-            $('.product-postcode-input').slideUp();
-            $('button.add-to-cart').removeAttr('disabled');
-        }
-
-        //Actions to the postcode input to show prices.
-        $('input[name=userpostcode]').on('change blur', function(){
-            var val = $(this).val();
-            if(val != ""){
-                updatePostcode(val);
-            }else{
-                if($('.postcode-input .postcode-text').text()!=""){
-                  updatePostcode($('.postcode-input .postcode-text').text());  
-                }
-            }
-            //TO_UPDATE: This needs to be updated with your code to load the real information of the product
-           
-        });
-         $('input[name=userpostcode]').on('keyup', function(e){
-            var val = $(this).val();
-            if(val != "" && e.keyCode == 13){
-                updatePostcode(val);
-            }
-         });
-        $('.postcode-input .postcode-link a').on('click', function(){
-            $('.postcode-input input, .postcode-input .enter-your-postcode').show();
-            $('.postcode-input .postcode-text-wrap').hide();
-            $('.postcode-input input').focus();
-            $('.postcode-input input').val($('.postcode-input input').val());            
-            return false;
-        });
-
+        
         //Fire lighbox with video from elements with the lightbox-video class.
         $('.lightbox-video').on('click', function(){
             var video = $(this).data('video');

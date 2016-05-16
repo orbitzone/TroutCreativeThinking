@@ -103,6 +103,7 @@
 	.trade-lists{
 		background: @bg-mid-grey;
 		padding: 0 10px;
+		margin-bottom: 30px;
 		@media (max-width: @screen-sm-max){
 			.clearfix();
 		}
@@ -133,10 +134,32 @@
 		}
 	}
 	.filters{
-		margin-top: 30px;
+		margin-bottom: 30px;
+		@media (max-width: @screen-sm-max){
+			overflow-x: scroll;
+	    overflow-y: hidden;
+	    white-space:nowrap
+	  }
 		.filter{
 			padding: 30px 0;
-			border-bottom: 1px solid @border-filters;
+			display: inline-block;
+			width: 50%;
+			vertical-align: top;
+			border: none;
+			@media (min-width: @screen-sm){				
+				width: 33.33%;				
+			}
+			@media (min-width: @screen-md){
+				width: auto;
+				display: block;
+				border-bottom: 1px solid @border-filters;
+			}
+			&:first-child{
+				padding-top: 0;
+			}
+			h3{
+				margin-bottom: 18px;
+			}
 			a{
 				display: block;
 				margin-bottom: 10px;
@@ -220,6 +243,22 @@
 					display: none;
 				}
 			}
+		.btn-icon{
+			margin-left: 20px;
+			svg{
+				.transition(.3s fill ease-out);
+				display: block;
+				width: 33px;
+				height: 33px;
+				fill: @view-bar-icon-color;
+			}
+			&.active{
+				svg{
+					fill: @view-bar-icon-active-color;	
+				}
+			}
+		}
+
 			.icon{
 				width: 35px;
 				height: 35px;
@@ -275,6 +314,13 @@
 		margin-left: -7.5px;
 		margin-right: -7.5px;
 		.clearfix();
+		.banner{
+			float: none;
+			width: 100%;
+			padding: 0 7.5px;
+			margin-bottom: 30px;
+			clear: both;
+		}
 		.product{
 			margin-bottom: 30px;
 			float: none;
@@ -283,30 +329,30 @@
 			@media (min-width: 420px) and (max-width: @screen-xs-max){
 				float: left;
 				width: 50%;
-				&:nth-child(2n){
+				&:nth-of-type(2n){
 					clear: right;
 				}
-				&:nth-child(2n+1){
+				&:nth-of-type(2n+1){
 					clear: left;
 				}	
 			}
 			@media (min-width: @screen-sm) and (max-width: @screen-md-max){
 				float: left;
 				width: percentage(1/3);
-				&:nth-child(3n){
+				&:nth-of-type(3n){
 					clear: right;
 				}
-				&:nth-child(3n+1){
+				&:nth-of-type(3n+1){
 					clear: left;
 				}
 			}
 			@media (min-width: @screen-lg){
 				float: left;
 				width: 25%;
-				&:nth-child(4n){
+				&:nth-of-type(4n){
 					clear: right;
 				}
-				&:nth-child(4n+1){
+				&:nth-of-type(4n+1){
 					clear: left;
 				}	
 			}
@@ -333,14 +379,16 @@
 				h3{
 					font-size: 18px;
 					margin: 0;
+					margin-bottom: 6px;
 				}
 				.product-details{
-					padding: 20px;
+					padding: 20px 10px;
 				}
 			}
 			.product-code{
 				color: @text-box-light-grey;
 				font-size: 12px;
+				margin-bottom: 6px;
 			}
 			.product-price{
 				background: @bg-product-price;
@@ -348,9 +396,6 @@
 				padding: 10px 20px;
 				text-transform: uppercase;
 				text-align: center;
-				.value{
-					
-				}
 				.product-price-my{
 					.value{
 						color: @text-blue;
@@ -377,8 +422,12 @@
 					}
 				}
 			}
+			.product-description{
+				font-size: 15px;
+				line-height: 1;
+			}
 			.product-quantity{
-				padding: 10px 20px 0;
+				padding: 10px 10px 0;
 				.clearfix();
 				.quantity-input{
 					vertical-align: top;
@@ -460,6 +509,17 @@
 						border-top:solid 0px @border-grey;
 					}
 				}
+				.product-price{
+					float: left;
+					width: 58.64%;
+					background: none;
+					text-align: right;
+					padding: 0;
+					line-height: 40px;
+					.value{
+						font-size: 24px;
+					}
+				}
 				@media (max-width: @screen-xs-max) { 
 					clear:left;
 					.item-inner{
@@ -495,7 +555,13 @@
 				button{
 					padding: 0;
 					span{
-						line-height: 1;
+						svg{
+							margin-left: 10px;
+							display: inline-block;
+							width: 26px;
+							height: 20px;
+							top: -2px;
+						}
 					}
 				}
 			}
@@ -506,7 +572,7 @@
 				.product{
 					float: none;
 					width: 100%;
-					padding: 0;
+					padding: 0 7.5px;
 					position: relative;
 					.product-content{
 						padding: 0;
@@ -610,6 +676,7 @@
 				a, span{
 					background: none;
 					font-weight: bold;
+					color: black;
 				}
 			}
 		}
@@ -617,6 +684,9 @@
 	.results{
 		text-transform: uppercase;
 		text-align: center;
+		.bootstrap-select{
+			margin: 0 10px;
+		}
 		.btn-group{
 			width: auto;			
 		}

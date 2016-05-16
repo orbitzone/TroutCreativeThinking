@@ -443,7 +443,7 @@ var product_pages = {
                 $(".gen-error").fadeOut();
 
             }
-            else if($("#checkout-cart").valid()){
+            else if(!$("#checkout-cart").valid()){
                 $("#order-details .form-section").hide();
                 $("#receiving-goods .form-section").fadeIn("fast", function(){
                     scrollAnimation.animate($("#checkout-cart").offset().top);                            

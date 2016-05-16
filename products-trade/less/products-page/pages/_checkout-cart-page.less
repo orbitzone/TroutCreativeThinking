@@ -557,14 +557,18 @@
 					.picture-button{
 						background-color:@white;
 						border:solid 1px @border-grey;
-						padding: 25px 0;
+						padding: 0;
 						margin: 10px;
 						margin-bottom:10px;
 						label{
 							text-transform: uppercase;
 							color: @checkout-cart-option-label-color;
+							padding-bottom: 25px;
 							.gothamMedium;
 							margin-bottom: 0;
+							@media (min-width: @screen-sm) {
+								padding-bottom: 30px;							
+							}
 							.radio-button{
 								margin-top:5px;
 							}
@@ -572,10 +576,19 @@
 								border-color: @checkout-cart-option-radio-color;
 							}	
 							.icon{
+								padding-top: 50px;
+								display: block;
+								@media (min-width: @screen-sm) {
+									padding-top: 60px;
+								}
 								svg{
 									display: inline-block;
 									vertical-align: middle;
+									height: 50px;
 									fill: @checkout-cart-option-icon-color;
+									@media (min-width: @screen-sm) {
+										height: 98px;
+									}
 									.brand{
 										fill: white;
 									}
@@ -594,24 +607,10 @@
 							}	
 						}						
 						&.delivery-button{
-							margin-left:0;
-							.icon-delivery{
-								height: 200px;
-								line-height: 200px;
-								svg{
-									height: 79px;
-								}											
-							}									
+							margin-left:0;												
 						}
 						&.pickup-button{
-							margin-right:0;
-							.icon-pickup{
-								height: 200px;
-								line-height: 200px;
-								svg{
-									height: 98px;
-								}
-							}								
+							margin-right:0;															
 						}
 						&.visa-button, &.mastercard-button,&.amex-button{
 							label{

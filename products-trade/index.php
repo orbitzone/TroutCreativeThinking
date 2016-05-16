@@ -33,7 +33,7 @@
             <div class="col-xs-12">
               <h1 style="display:block; text-align: center; padding: 40px 0 20px;">Product Pages</h1>
             </div>
-            <div class="col-sm-push-1 col-sm-4 text-center">
+            <div class="col-sm-push-1 col-sm-5 text-center">
               <h2 style="color:#0776aa; padding: 20px 0;">Trade</h2>
               <ul class="list-unstyled">
                 <li style="padding: 10px 0;"><a href="trade-product-detail.php" class="btn full-width blue-button">Product Detail and Widget</a></li>
@@ -42,7 +42,7 @@
                 <li style="padding: 10px 0;"><a href="trade-checkout-cart-success.php" class="btn full-width blue-button">Checkout Cart - Success</a></li>
               </ul>
             </div>
-            <div class="col-sm-push-2 col-sm-4 text-center">
+            <div class="col-sm-push-1 col-sm-5 text-center">
               <h2 style="color: #6dc8b6; padding: 20px 0;">Retail</h2>
               <ul class="list-unstyled">
                 <li style="padding: 10px 0;"><a href="retail-product-detail.php" class="btn full-width green-button">Product Detail and Widget</a></li>

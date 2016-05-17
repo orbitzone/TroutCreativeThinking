@@ -149,28 +149,31 @@ var playerManager = {
   },
   onChangeState: function(event){
     var id = event.target.c.id;
+    console.log(id);
     var current = this.players[id];
-    if (event.data === YT.PlayerState.ENDED && current.settings.loop == 1) {
-      this.players[current.settings.container].player.playVideo(); 
-    }
-    if (event.data === YT.PlayerState.PLAYING){
-      if(typeof current.settings.onPlaying === 'function'){
-        current.settings.onPlaying();
+    if(typeof current.settings !== 'undefined'){
+      if (event.data === YT.PlayerState.ENDED && current.settings.loop == 1) {
+        this.players[current.settings.container].player.playVideo(); 
       }
-    }
-    if (event.data === YT.PlayerState.PAUSED){
-      if(typeof current.settings.onPaused === 'function'){
-        current.settings.onPaused();            
+      if (event.data === YT.PlayerState.PLAYING){
+        if(typeof current.settings.onPlaying === 'function'){
+          current.settings.onPlaying();
+        }
       }
-    }
-    if (event.data === YT.PlayerState.BUFFERING){
-      if(typeof current.settings.onBuffering === 'function'){
-        current.settings.onBuffering();            
+      if (event.data === YT.PlayerState.PAUSED){
+        if(typeof current.settings.onPaused === 'function'){
+          current.settings.onPaused();            
+        }
       }
-    }
-    if (event.data === YT.PlayerState.ENDED){
-      if(typeof current.settings.onEnded === 'function'){
-        current.settings.onEnded();
+      if (event.data === YT.PlayerState.BUFFERING){
+        if(typeof current.settings.onBuffering === 'function'){
+          current.settings.onBuffering();            
+        }
+      }
+      if (event.data === YT.PlayerState.ENDED){
+        if(typeof current.settings.onEnded === 'function'){
+          current.settings.onEnded();
+        }
       }
     }
   },

@@ -1525,7 +1525,9 @@ var product_pages = {
             var obj = $(this).parent();
             if(!obj.hasClass('loading')){
                 obj.toggleClass('loading');
-
+                if(ieV < 10){
+                    TweenMax.to(obj.find('.progress-circle'), 1, {rotation:"360", ease:Linear.easeNone, repeat:-1});
+                }
                     var img = $('.product-images-slider .slick-current img').attr("src");
                     var code = $(this).data('code');
                     if($('#scw-wishlist-section').hasClass('open')){

@@ -51,164 +51,16 @@
 	}
 }
 .main-section#products-category{
-	position: relative;
-	padding-top: 44px;
 	:focus::-webkit-input-placeholder {color: transparent}
   :focus::-moz-placeholder          {color: transparent}
   :focus:-moz-placeholder           {color: transparent}
   :focus:-ms-input-placeholder      {color: transparent}
-  @media (min-width: @screen-sm){
-  	padding-top: 0;
-  }
-	aside.sidebar{
-		@media (min-width: @screen-md){
-			position: absolute;
-			left: 0;
-			top: 0;
-			width: 181px;
-			display: block;
-		}
-	}
-	section.category-content{
-		@media (min-width: @screen-md){
-			width: 100%;
-			//width: calc(~"100% - 181px");
-			padding-left: calc(181px + 40px);
-		}
-		@media (min-width: @screen-lg){
-			padding-left: calc(181px + 90px);
-		}
-	}
-	#search{
+  #search{
 		margin-top: 0;		
 	}
 	.content-wrapper{
 		position: relative;
 	}
-	.product-category-wrap{
-		/*overflow-y: scroll; 
-		-webkit-overflow-scrolling : touch;*/
-		padding-top: 30px;
-		padding-right: 0;
-		@media (min-width: @screen-sm){
-			padding-right: 50px;
-		}
-		@media (min-width: @screen-lg){
-			padding-right: 83px;
-		}
-		@media (min-width: 1400px){
-			padding-right: 0;				
-		}
-	}
-	.trade-lists{
-		background: @bg-mid-grey;
-		padding: 0 10px;
-		margin-bottom: 30px;
-		@media (max-width: @screen-sm-max){
-			.clearfix();
-		}
-		h3{
-			color: @link-blue;
-		}
-		a{
-			color: @link-dark-blue;
-			text-decoration: underline;
-			display: block;
-			margin-bottom: 10px;
-		}
-		.list{
-			@media (max-width: @screen-sm-max){
-				float: left;
-				width: 50%;
-			}
-			padding: 40px 15px 40px;
-			border-bottom: 1px solid @border-filters;
-			&:last-child{
-				border-bottom: 0;
-			}
-		}
-	}
-	.list-actions{
-		a{
-			color: @link-list-link;
-		}
-	}
-	.filters{
-		margin-bottom: 30px;
-		@media (max-width: @screen-sm-max){
-			overflow-x: scroll;
-	    overflow-y: hidden;
-	    white-space:nowrap
-	  }
-		.filter{
-			padding: 30px 0;
-			display: inline-block;
-			width: 50%;
-			vertical-align: top;
-			border: none;
-			@media (min-width: @screen-sm){				
-				width: 33.33%;				
-			}
-			@media (min-width: @screen-md){
-				width: auto;
-				display: block;
-				border-bottom: 1px solid @border-filters;
-			}
-			&:first-child{
-				padding-top: 0;
-			}
-			h3{
-				margin-bottom: 18px;
-			}
-			a{
-				display: block;
-				margin-bottom: 10px;
-				text-decoration: none;	
-				.icon{
-					vertical-align: top;
-					width: 18px;
-					height: 18px;
-					margin-right: 15px;
-					background: @checkbox-bg;
-					.transition(0.3s all ease-out);
-					display: inline-block;
-					text-align: center;
-					line-height: 18px;
-					svg{
-						width: 12.5px;
-						height: 9.25px;
-						opacity: 0;
-						fill: @checkbox-checked-arrow;								
-						.animation (pulse-back 0.2s ease-out 1);
-					}
-				}
-				&.current{
-					.icon{
-						background: @checkbox-checked-bg;
-						svg{
-							opacity: 1;
-							.animation (pulse 0.2s ease-out 1);
-						}		
-					}
-				}
-			}
-			.list-links{
-				a{
-					color: @text-grey;
-				}
-			}
-			&:last-child{
-				border-bottom: none;
-			}
-		}
-		.list-actions{
-			padding-left: 28px;
-			a{
-				text-decoration: underline;
-			}
-		}
-	}
-
 	.view-bar{
 		border-top: 1px solid @view-bar-border;
 		border-bottom: 1px solid @view-bar-border;
@@ -326,6 +178,15 @@
 			float: none;
 			width: 100%;
 			padding: 0 7.5px;
+			a{
+				text-decoration: none;
+				color: black;
+				&:hover{
+					@media (min-width: @screen-sm){
+						color: @main-color;
+					}
+				}
+			}
 			@media (min-width: 420px) and (max-width: @screen-xs-max){
 				float: left;
 				width: 50%;

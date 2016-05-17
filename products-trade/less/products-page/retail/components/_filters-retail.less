@@ -1,0 +1,45 @@
+@retail-list-title-color: #7f7f7f;
+@retail-list-link-color: @retail-main-color;
+ @retail-link-list-link: #7f7f7f;
+aside{
+	.trade-lists{
+		background: @bg-mid-grey;
+		h3{
+			color: @retail-list-title-color;
+		}
+		a{
+			color: @retail-list-link-color;
+		}
+		.list{
+			border-bottom-color: @border-filters;			
+		}
+	}
+	.list-actions{
+		a{
+			color: @retail-link-list-link;
+		}
+	}
+	.filters{
+		.filter{
+			border-bottom-color: @border-filters;
+			a{
+				.icon{
+					background: @checkbox-bg;
+					svg{
+						fill: @checkbox-checked-arrow;								
+					}
+				}
+				&.current{
+					.icon{
+						background: @checkbox-checked-bg;
+					}
+				}
+			}
+			.list-links{
+				a{
+					color: @text-grey;
+				}
+			}
+		}		
+	}
+}

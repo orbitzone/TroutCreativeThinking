@@ -20,18 +20,22 @@
 					<div class="product-images-slider">
 				<?php }?>
 			<?php foreach($product['images'] as $image):?>
+			<a href="trade-product-detail.php" tabindex="-1">
 			<img src="<?php echo $image['url']; ?>" alt="<?php echo (isset($image['alt']))?$image['alt']:$product['name']; ?>"/>	
+			</a>
 			<?php endforeach;?>		
 			<?php if(count($product['images'])>1){?>
 			</div>
 			<?php }?>
-		</div>
+		</div>		
 		<div class="product-details-wrap">
-			<div class="product-details">
-				<h3><?php echo $product['name']; ?></h3>
-				<div class="product-code"><?php echo $product['code']; ?></div>
-				<div class="product-description"><?php echo $product['description']; ?></div>	
-			</div>
+			<a href="trade-product-detail.php">
+				<div class="product-details">
+					<h3><?php echo $product['name']; ?></h3>
+					<div class="product-code"><?php echo $product['code']; ?></div>
+					<div class="product-description"><?php echo $product['description']; ?></div>	
+				</div>
+			</a>
 			<div class="product-price">
 					<?php $p = 0; foreach($product['price'] as $key => $price): ?>
 						<div class="product-price-my price-<?php echo $price['unit']; ?> <?php if($p>0){ echo 'hide'; }?>" title="<?php echo $units[$price['unit']];?> price">My Price <span class="value"><?php echo $price['value']; ?><small>inc.</small></span></div>

@@ -156,6 +156,20 @@ var product_pages = {
         if($('input[name=userpostcode]').length > 0){
             this.inputPostcode();
         }
+        this.filters();
+        $('.main-section').imagesLoaded().always(function(){
+            $(window).resize();
+        });
+    },
+    filters: function(){
+        if($('.with-filters').length > 0){
+            $(window).on('resize', function(){
+                $('.with-filters').height('');
+                if($('.with-filters').height() < $('.with-filters aside.sidebar').height() ){
+                    $('.with-filters').height($('.with-filters aside.sidebar').height());
+                }
+            }).resize();
+        }
     },
     checkoutCart: function() {
         //======================================================================
@@ -898,7 +912,7 @@ var product_pages = {
         });
     },
     widget: function(){
-        $('body').addClass('widget');
+        $('body, .main-section').addClass('widget');
         //Add classes to add hacks on browsers
         var event = 'click';
         if(deviceMobile){
@@ -1249,6 +1263,59 @@ var product_pages = {
                 }
             }
         });        
+    },
+    productsLanding: function(){
+        $('.slider').each(function(){
+            var slidesToShow = $(this).data('slides-to-show');
+            if(!slidesToShow){
+                slidesToShow =  4;
+            }
+            $(this).slick({
+                infinite: true,
+                slidesToShow: slidesToShow,
+                slidesToScroll: slidesToShow,
+                prevArrow: '<button type="button" class="slick-prev"><svg viewBox="0 0 26 46" id="shape-arrow-left"><title>arrow-left</title> <g id="arrow-left-arrow-left"> <path d="M24.4,0.6C24.1,0.2,23.5,0,23,0c-0.5,0-1,0.2-1.4,0.6l-21,21c-0.8,0.8-0.8,2.1,0,2.8l21,21c0.8,0.8,2.1,0.8,2.8,0c0.8-0.8,0.8-2.1,0-2.8L4.9,23L24.4,3.4C25.2,2.6,25.2,1.4,24.4,0.6z"/> </g> </svg></button>',
+                nextArrow: '<button type="button" class="slick-next"><svg viewBox="0 0 26 46" id="shape-arrow-right"><title>arrow-right</title> <g id="arrow-right-arrow-right"> <path d="M1.6,45.4C2,45.8,2.5,46,3,46c0.5,0,1-0.2,1.4-0.6l21-21c0.8-0.8,0.8-2.1,0-2.8l-21-21c-0.8-0.8-2.1-0.8-2.8,0c-0.8,0.8-0.8,2.1,0,2.8L21.2,23L1.6,42.6C0.8,43.4,0.8,44.7,1.6,45.4z"/> </g> </svg></button>',
+                dots: false,
+                arrows: true,
+                responsive: [
+                 {
+                        breakpoint: 990,
+                        settings:{
+                            infinite: true,
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            dots: true,
+                            arrows: false
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings:{
+                            infinite: true,
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                            dots: true,
+                            arrows: false
+                        }
+                    },
+                    {
+                        breakpoint: 576,
+                        settings:{
+                            infinite: true,
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            dots: true,
+                            arrows: false
+                        }
+                    }
+                ]
+            });
+        });
+        $(window).on('resize', function(){
+            sameHeight('.category .title');
+            sameHeight('.latest-releases-slider .product');
+        });
     },
     productsCategory: function(){
         function updateSliders(){

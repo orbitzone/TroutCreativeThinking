@@ -23,23 +23,27 @@
 	?>
 <div class="product">
 	<div class="product-content">
-		<div class="product-image">
-			<?php if(count($product['images'])>1){?>
-					<div class="product-images-slider">
+			<div class="product-image">
+				<?php if(count($product['images'])>1){?>
+						<div class="product-images-slider">
+					<?php }?>
+				<?php foreach($product['images'] as $image):?>
+				<a href="retail-product-detail.php" tabindex="-1">
+					<img src="<?php echo $image['url']; ?>" alt="<?php echo (isset($image['alt']))?$image['alt']:$product['name']; ?>"/>	
+				</a>
+				<?php endforeach;?>		
+				<?php if(count($product['images'])>1){?>
+				</div>
 				<?php }?>
-			<?php foreach($product['images'] as $image):?>
-			<img src="<?php echo $image['url']; ?>" alt="<?php echo (isset($image['alt']))?$image['alt']:$product['name']; ?>"/>	
-			<?php endforeach;?>		
-			<?php if(count($product['images'])>1){?>
 			</div>
-			<?php }?>
-		</div>
 		<div class="product-details-wrap">
-			<div class="product-details">
-				<h3><?php echo $product['name']; ?></h3>
-				<div class="product-code"><?php echo $product['code']; ?></div>
-				<div class="product-description"><?php echo $product['description']; ?></div>	
-			</div>
+			<a href="retail-product-detail.php">
+				<div class="product-details">
+					<h3><?php echo $product['name']; ?></h3>
+					<div class="product-code"><?php echo $product['code']; ?></div>
+					<div class="product-description"><?php echo $product['description']; ?></div>	
+				</div>
+			</a>
 			<div class="product-quantity">
 				<span class="quantity-input">
 					<input class="quantity-number" data-productcode="<?php echo $product['code'];?>" type="number" name="quantity-<?php echo $product['code'];?>" min="1" value="1"/>

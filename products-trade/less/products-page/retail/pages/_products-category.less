@@ -17,8 +17,6 @@
 @checkbox-bg: #f4f4f4;
 @checkbox-checked-bg:#dcdcdc;
 @checkbox-checked-arrow:black;
-@retail-list-title-color: @retail-main-color;
-@retail-list-link-color: @retail-main-color;
 
 .main-section#products-category{
 	.category-content{
@@ -26,47 +24,6 @@
 			color: @retail-main-color;
 		}
 	}
-	.trade-lists{
-		background: @bg-mid-grey;
-		h3{
-			color: @retail-list-title-color;
-		}
-		a{
-			color: @retail-list-link-color;
-		}
-		.list{
-			border-bottom-color: @border-filters;
-		}
-	}
-	.list-actions{
-		a{
-			color: @link-list-link;
-		}
-	}
-	.filters{
-		.filter{
-			border-bottom-color: @border-filters;
-			a{
-				.icon{
-					background: @checkbox-bg;
-					svg{
-						fill: @checkbox-checked-arrow;								
-					}
-				}
-				&.current{
-					.icon{
-						background: @checkbox-checked-bg;
-					}
-				}
-			}
-			.list-links{
-				a{
-					color: @text-grey;
-				}
-			}
-		}
-	}
-
 	.view-bar{
 		border-top-color: @view-bar-border;
 		border-bottom-color: @view-bar-border;
@@ -144,7 +101,7 @@
 						background-color: @retail-units-bg;
 						.radio-button{
 							&.active{
-								background-color:@retail-units-activebg;
+								background-color:@retail-units-active-bg;
 								color: @retail-units-active-color;
 							}
 						}

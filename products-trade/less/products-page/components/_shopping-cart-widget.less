@@ -87,6 +87,27 @@
 @product-list-title-border: #46abdb;
 @product-list-description-color:#8fbed4;
 
+.main-section{
+	&.widget{
+		padding-top: 71px;
+		padding-right: 0;
+		@media (min-width: @screen-sm){
+			padding-top: 30px;
+			padding-right: 50px;
+		}
+		@media (min-width: @screen-md){
+			//padding-right: 50px;
+			padding-right: 75px;
+		}
+		@media (min-width: @screen-lg){
+			//padding-right: 83px;
+			padding-right: 108px;
+		}
+		@media (min-width: 1400px){
+			padding-right: 0;				
+		}
+	}
+}
 #shopping-cart-widget{
 	background: @widget-content-bg;
 	will-change: transform;

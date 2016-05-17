@@ -159,7 +159,7 @@
 					</div>
 					<!--END CART ITEMS 3-->
 					<!--START CART ITEMS 4-->
-					<div class="row border-bottom border-light last-item one-product-wrapper" data-productcode="2698362">
+					<div class="row border-bottom border-light one-product-wrapper" data-productcode="2698362">
 						<div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0">
 							<div class="inner-wrap item-listing">
 								<div class="one-product">
@@ -193,7 +193,7 @@
 					</div>
 					<!--END CART ITEMS 4-->
 					<!--START CART ITEMS 5-->
-					<div class="row border-bottom border-light last-item one-product-wrapper demo-recommendation demo-recommendation1" data-productcode="78787878">
+					<div class="row border-bottom border-light one-product-wrapper demo-recommendation demo-recommendation1" data-productcode="78787878">
 						<div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0">
 							<div class="inner-wrap item-listing">
 								<div class="one-product">
@@ -261,7 +261,7 @@
 					</div>
 					<!--END CART ITEMS 6-->
 					<!--START CART ITEMS 7-->
-					<div class="row border-bottom border-light last-item one-product-wrapper demo-recommendation demo-recommendation3" data-productcode="52525252">
+					<div class="row border-bottom border-light one-product-wrapper demo-recommendation demo-recommendation3" data-productcode="52525252">
 						<div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0">
 							<div class="inner-wrap item-listing">
 								<div class="one-product">

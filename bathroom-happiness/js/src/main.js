@@ -148,8 +148,14 @@ var playerManager = {
     }
   },
   onChangeState: function(event){
-    var id = event.target.c.id;
-    console.log(id);
+    var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t","u", "v", "w", "x", "y", "z" ];
+    var id;
+    for(var i = 0; i < alphabet.length; i++){
+       if(typeof event.target[alphabet[i]].id !== 'undefined'){
+          id = event.target[alphabet[i]].id;
+          break;
+       }
+    }
     var current = this.players[id];
     if(typeof current.settings !== 'undefined'){
       if (event.data === YT.PlayerState.ENDED && current.settings.loop == 1) {

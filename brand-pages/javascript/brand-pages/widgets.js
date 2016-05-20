@@ -74,7 +74,15 @@ var player = {
       	'onStateChange': function(event){
       		if(event.data == YT.PlayerState.PLAYING){
     				$.each(player.obj, function(key){
-    					if(key != event.target.c.id){
+    					var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t","u", "v", "w", "x", "y", "z" ];
+					    var id;
+					    for(var i = 0; i < alphabet.length; i++){
+					       if(typeof event.target[alphabet[i]].id !== 'undefined'){
+					          id = event.target[alphabet[i]].id;
+					          break;
+					       }
+					    }
+    					if(key != id){
 								if(typeof player.obj[key].stopVideo !== "undefined"){
 							  	player.obj[key].stopVideo();		  	      
 								}
@@ -88,7 +96,6 @@ var player = {
 	play: function(id){
 		var video = player.obj[id];
 		if(typeof video.playVideo !== "undefined"){
-			console.log('play');
 			video.playVideo();
 		}
 	},

@@ -129,7 +129,7 @@ body.widget .ocnav-wrapper {
 }
 @media (min-width: 768px) {
   body.widget .ocnav-wrapper {
-    margin-right: 50px;
+    margin-right: 60px;
   }
 }
 @media (min-width: 1280px) {
@@ -142,7 +142,7 @@ body.widget .navbar .menuButton {
 }
 @media (min-width: 768px) {
   body.widget .navbar .menuButton {
-    margin-right: 103px;
+    margin-right: 80px;
   }
 }
 @media (min-width: 1280px) {
@@ -155,7 +155,7 @@ body.widget .site-footer .contact {
 }
 @media (min-width: 768px) {
   body.widget .site-footer .contact {
-    margin-right: 103px;
+    margin-right: 60px;
   }
 }
 @media (min-width: 1280px) {

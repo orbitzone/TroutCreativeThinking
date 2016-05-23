@@ -28,7 +28,7 @@
 		<!--START PRODUCT HERO SECTION -->
 		<div class="section product-category-wrap">
 			<div class="container-fluid section-container">
-				<div class="content-wrapper">
+				<div class="content-wrapper with-filters">
 					<section class="category-content" role="main">
 						<form action="" id="search">
 							<input type="text" name="search" placeholder="Search Product">

@@ -129,7 +129,7 @@ body.widget .ocnav-wrapper {
 }
 @media (min-width: 768px) {
   body.widget .ocnav-wrapper {
-    margin-right: 60px;
+    margin-right: 50px;
   }
 }
 @media (min-width: 1280px) {
@@ -142,7 +142,7 @@ body.widget .navbar .menuButton {
 }
 @media (min-width: 768px) {
   body.widget .navbar .menuButton {
-    margin-right: 80px;
+    margin-right: 60px;
   }
 }
 @media (min-width: 1280px) {

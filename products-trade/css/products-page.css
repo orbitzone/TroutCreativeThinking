@@ -121,7 +121,7 @@ body.overflow-hidden {
 }
 @media (min-width: 768px) {
   body.widget.off-canvas-open .ocmain-wrapper {
-    left: calc(-280px + 83px);
+    left: calc(-280px - 50px);
   }
 }
 body.widget .ocnav-wrapper {
@@ -129,7 +129,7 @@ body.widget .ocnav-wrapper {
 }
 @media (min-width: 768px) {
   body.widget .ocnav-wrapper {
-    margin-right: 83px;
+    margin-right: 50px;
   }
 }
 @media (min-width: 1280px) {

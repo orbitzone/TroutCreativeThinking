@@ -55,6 +55,7 @@
   :focus::-moz-placeholder          {color: transparent}
   :focus:-moz-placeholder           {color: transparent}
   :focus:-ms-input-placeholder      {color: transparent}
+  @import "_products-list.less";
   #search{
 		margin-top: 0;		
 	}
@@ -67,6 +68,70 @@
 		text-transform: uppercase;
 		margin-bottom: 30px;
 		padding: 10px 0;
+		.clearfix();
+		.bootstrap-select{
+			.dropdown-toggle{
+				background: @view-bar-dropdown-bg;
+				color: @view-bar-dropdown-color;
+				.text-label{
+					color: @view-bar-dropdown-label-color;
+				}
+				.bs-caret{
+					svg{
+						fill: @view-bar-dropdown-arrow-color;
+					}
+				}
+			}
+		}
+		.view-bar-left,
+		{
+			text-align: center;
+			.clearfix();
+			li.show-gst{
+				padding: 10px 0 0;
+			}
+			@media (min-width: @screen-sm){
+				width: 45%;
+				float: left;
+				text-align: left;
+				li.show-gst{
+					padding: 0;
+				}
+			}
+			@media (min-width: @screen-lg){
+				width: 40%;
+			}
+		}
+		.view-bar-right
+		{
+			.clearfix();
+			.list-inline{
+				> li{
+					width: 50%;
+					float: left;
+					&:first-child:last-child{
+						float: none;
+					}
+					.bootstrap-select{
+						width: 100%;
+						max-width: 100%;
+					}
+					@media (max-width: @screen-xs-max){
+						&:first-child:last-child{
+							width: 100%;
+						}
+					}
+				}
+			}
+			@media (min-width: @screen-sm){
+				text-align: right;
+				width: 55%;
+				float: right;
+			}
+			@media (min-width: @screen-lg){
+				width: 60%;
+			}
+		}
 		ul{
 			&.flex{
 				padding: 0;
@@ -95,22 +160,27 @@
 					display: none;
 				}
 			}
-		.btn-icon{
-			margin-left: 20px;
-			svg{
-				.transition(.3s fill ease-out);
-				display: block;
-				width: 33px;
-				height: 33px;
-				fill: @view-bar-icon-color;
-			}
-			&.active{
+			.btn-icon{
+				margin-left: 20px;
+				@media (min-width: @screen-sm){
+					margin-left: 10px;
+				}
+				@media (min-width: @screen-lg){
+					margin-left: 20px;
+				}
 				svg{
-					fill: @view-bar-icon-active-color;	
+					.transition(.3s fill ease-out);
+					display: block;
+					width: 33px;
+					height: 33px;
+					fill: @view-bar-icon-color;
+				}
+				&.active{
+					svg{
+						fill: @view-bar-icon-active-color;	
+					}
 				}
 			}
-		}
-
 			.icon{
 				width: 35px;
 				height: 35px;
@@ -417,7 +487,7 @@
 					padding: 0;
 					span{
 						svg{
-							margin-left: 10px;
+							margin-left: 0;
 							display: inline-block;
 							width: 26px;
 							height: 20px;
@@ -522,26 +592,6 @@
 			}
 		}
 	}//end #products
-	.pagination-wrap{
-		text-align: center;
-	}
-	.pagination{
-		li{
-			a, span{
-				background: none;
-				border: none;
-				text-decoration: none;
-				color: black;
-			}
-			&.active{
-				a, span{
-					background: none;
-					font-weight: bold;
-					color: black;
-				}
-			}
-		}
-	}
 	.results{
 		text-transform: uppercase;
 		text-align: center;

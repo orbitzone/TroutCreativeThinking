@@ -1,0 +1,22 @@
+@results-dropdown-bg: #f4f4f4;
+@results-dropdown-label-color: #b7b7b7;
+@results-dropdown-color: black;
+@results-dropdown-arrow-color: #bfbfbf;
+
+.results{
+	.bootstrap-select{
+		.dropdown-toggle{
+			background: @results-dropdown-bg;
+			color: @results-dropdown-color;
+			.text-label{
+				color: @results-dropdown-label-color;
+			}
+			.bs-caret{
+				svg{
+					fill: @results-dropdown-arrow-color;
+				}
+			}
+		}
+	}
+}
+		

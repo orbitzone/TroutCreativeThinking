@@ -19,8 +19,9 @@
 @checkbox-checked-arrow:black;
 
 .main-section#products-category{
-	.category-content{
+	.intro{
 		a{
+			.gothamMedium();
 			color: @retail-main-color;
 		}
 	}
@@ -64,6 +65,13 @@
 	}
 	#products{
 		.product{
+			a{
+				&:hover{
+					@media (min-width: @screen-sm){
+						color: @retail-main-color;
+					}
+				}
+			}
 			.product-content{
 				border-color: @border-product;
 			}
@@ -127,20 +135,6 @@
 			}
 		}
 	}//end #products
-	.pagination{
-		li{
-			a, span{
-				background: none;
-				color: black;
-			}
-			&.active{
-				a, span{
-					background: none;
-					color: black;
-				}
-			}
-		}
-	}
 	.results{
 		.total-results{
 			color: @retail-main-color;

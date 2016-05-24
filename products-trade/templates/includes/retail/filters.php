@@ -44,7 +44,7 @@
 					</svg></span>Vada</a></li>
 			</ul>
 			<ul class="list-actions list-unstyled">
-				<li><a href="#" class="show-more">Show More</a></li>
+				<li><a href="#" class="show-more-less show-more"><span class="show-more-text">Show More</span><span class="show-less-text">Show Less</span></a></li>
 				<li><a href="#" class="clear-all">Clear All</a></li>
 			</ul>
 		</div>
@@ -65,7 +65,7 @@
 					</svg></span>Dolor</a></li>
 			</ul>
 			<ul class="list-actions list-unstyled">
-				<li><a href="#" class="show-more">Show More</a></li>
+				<li><a href="#" class="show-more-less show-more"><span class="show-more-text">Show More</span><span class="show-less-text">Show Less</span></a></li>
 				<li><a href="#" class="clear-all">Clear All</a></li>
 			</ul>
 		</div>
@@ -86,7 +86,7 @@
 					</svg></span>Bidendum</a></li>
 			</ul>
 			<ul class="list-actions list-unstyled">
-				<li><a href="#" class="show-more">Show More</a></li>
+				<li><a href="#" class="show-more-less show-more"><span class="show-more-text">Show More</span><span class="show-less-text">Show Less</span></a></li>
 				<li><a href="#" class="clear-all">Clear All</a></li>
 			</ul>
 		</div>

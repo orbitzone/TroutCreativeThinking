@@ -7,46 +7,46 @@
 	</div>
 </div>
 <!--END BREAD CRUMB -->
-<!--START POSTCODE INPUT -->
-<div class="postcode-input">
-	<div class="container-fluid section-container">
-		<div class="row">
-			<div class="col-xs-12">
-				<span class="text"><b>Pricing</b>
-					<span class="enter-your-postcode">Enter your postcode for current pricing. </span>
-					<span class="postcode-text-wrap">Current postcode <span class="postcode-text"></span> <span class="postcode-link">(<a href="#">change</a>)</span></span>
-				</span>
-				<input type="text" name="userpostcode" placeholder="Postcode" class="input-medium" inputmode="numeric" minlength="4" maxlength="4" min="0" max="9999" pattern="[0-9]*">				
-			</div>
-		</div>
-	</div>	
-</div>
-<!--END POSTCODE INPUT -->
+<!--START PRICING BAR -->
+<!--<div class="bg-light-blue section pricing">
+	<div class="pricing-inner">
+		<ul class="list-inline">
+			<li><b>Pricing</b> Enter your postcode for current pricing. </li>
+			<li class="postcode"><input type="number" name="userpostcode" placeholder="Postcode" minlength="4" maxlength="4" min="0" max="9999" pattern="[0-9]*" /></li>
+		</ul>		
+	</div>
+</div>-->
+<!--END PRICING BAR -->
 <!--START PRODUCTS CATEGORY -->
 <div class="main-section" id="products-category">
-	<?php include "templates/includes/retail/Widget.php" ?>
+	<?php include "templates/includes/trade/Widget.php" ?>
 		<!--START PRODUCT HERO SECTION -->
-		<div class="section product-category-wrap">
+		<div class="product-category-wrap">
 			<div class="container-fluid section-container">
 				<div class="content-wrapper with-filters">
-					<section class="category-content" role="main">
+						<div class="list-details">
+							<div class="list-saved">Saved List:</div>
+							<h1 class="list-name">86 Castles Rd</h1>
+							<div class="list-info">Order number: <span class="list-order-number">00654</span> Created: <span class="list-created">12th Jan 2016</span></div>
+						</div>
 						<form action="" id="search">
 							<input type="text" name="search" placeholder="Search Product">
 							<button type="button" class="btn blue-button">
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="20px" height="20px"><title>search</title> <circle fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="2.5" stroke-miterlimit="10" cx="14.6" cy="14.6" r="13.3"/> <line fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-miterlimit="10" x1="24.1" y1="24" x2="38.8" y2="38.8"/></svg>
 							</button>
 						</form>
-						<div class="banner">
-							<img src="templates/images/products-category/banner.jpg" alt="reece"/>
-						</div>
-						<div class="intro">
-							<p>Introduction to product category copy. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida sodales aliquet. Proin nec risus sit amet nunc sollicitudin ultrices ut vel nulla. Curabitur eu dignissim velit.</p>
-							<a href="#">Learn More</a>
-						</div>					
-						<?php include "templates/includes/retail/filters.php"; ?>
+						<?php $list = 2;
+						include 'templates/includes/trade/filters.php';?>
 						<div class="view-bar">
 							<div class="view-bar-right">
 								<ul class="list-inline">
+									<li>
+										<select id="price-option" data-default="Show price">
+											<option value="my" data-content="<span class='text-label'>Show: </span>My Price">My Price</option>
+											<option value="cmp" data-content="<span class='text-label'>Show: </span>CMP Price">CMP Price</option>
+											<option value="both" data-content="<span class='text-label'>Show: </span>Both">Both</option>
+										</select>
+									</li>
 									<li>
 										<span class="one-option dropdown-option span-block">
 											<select id="sort-by-option" data-default="Sort">
@@ -83,17 +83,42 @@
 											</li>										
 										</ul>
 									</li>
-									
+									<li class="show-gst">
+										<label for="show-gst">Show GST <input type="checkbox" id="show-gst" checked="checked" /><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="14.8px" viewBox="0 0 20 14.8">
+												<path d="M2.5,4.9l7.5,7.4l-2.5,2.5L0,7.4L2.5,4.9z M17.5,0L20,2.5L7.5,14.8L5,12.3L17.5,0z"/>
+											</svg></span>
+										</label>
+									</li>								
 								</ul>
-							</div>
+							</div>							
 						</div>					
 						<div id="products" class="products">
 							
 						</div>
-						<?php include('templates/includes/Pagination.php');?>
+						<nav class="pagination-wrap">
+							<ul class="pagination">
+								<li>
+						      <a href="#" aria-label="Previous">
+						        <span aria-hidden="true">&laquo;</span>
+						      </a>
+						    </li>
+						    <li><a href="#">1</a></li>
+						    <li><span>...</span></li>
+						    <li><a href="#">5</a></li>
+						    <li class="active"><a href="#">6 <span class="sr-only">(current)</span></a></li>
+						    <li><a href="#">7</a></li>
+						    <li><span>...</span></li>
+						    <li><a href="#">10</a></li>
+						    <li>
+						      <a href="#" aria-label="Next">
+						        <span aria-hidden="true">&raquo;</span>
+						      </a>
+						    </li>
+							</ul>
+						</nav>
 						<div class="results">
 							<ul class="list-inline">
-								<li><span class="total-results">10,086</span> Products found</li>
+								<li><span class="total-results">286</span> Products found</li>
 								<li>View 
 									<select name="products_per_page" id="products-per-page">
 										<option value="12">12</option>
@@ -105,7 +130,6 @@
 								</li>								
 							</ul>
 						</div>
-					</section><!-- END MAIN -->
 				</div><!-- END CONTENT WRAPPER -->
 			</div>
 		<!--END PRODUCT HERO SECTION -->

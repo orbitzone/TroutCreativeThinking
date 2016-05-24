@@ -1,0 +1,46 @@
+@pagination-arrow-color: #bfbfbf;
+@pagination-arrow-hover-color: @main-color;
+
+.pagination-wrap{
+	text-align: center;
+}
+.pagination{
+	li{
+		a, span{
+			background: none;
+			border: none;
+			text-decoration: none;
+			color: black;
+			line-height: 25px;
+		}
+		svg{
+			width: 14px;
+			height: 25px;
+			fill: @pagination-arrow-color;
+		}
+		a{
+			&:hover{
+				svg{
+					fill: @pagination-arrow-hover-color;
+				}
+			}
+		}
+		&.active{
+			a, span{
+				background: none;
+				font-weight: bold;
+				color: black;
+				&:after{
+					content: " ";
+					display: block;
+					border-bottom: 1px solid black;
+					position: relative;
+					top: -5px;
+				}
+				&:hover{
+					color: black;
+				}
+			}
+		}
+	}
+}

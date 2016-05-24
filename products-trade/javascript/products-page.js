@@ -163,6 +163,28 @@ var product_pages = {
     },
     filters: function(){
         if($('.with-filters').length > 0){
+            $('aside .filter .show-more-less').on('click', function(){
+                var $list = $(this).parents('.filter').find('.list-links');
+                if($(this).hasClass('show-more')){
+                    $(this).removeClass('show-more');
+                    $list.addClass('see-all');
+                }else{
+                    $(this).addClass('show-more');
+                    $list.removeClass('see-all');
+                }
+                return false;
+            });
+            $('aside .list .show-more-less').on('click', function(){
+                var $list = $(this).parents('.list').find('.list-links');
+                if($(this).hasClass('show-more')){
+                    $(this).removeClass('show-more');
+                    $list.addClass('see-all');
+                }else{
+                    $(this).addClass('show-more');
+                    $list.removeClass('see-all');
+                }
+                return false;
+            });
             $(window).on('resize', function(){
                 $('.with-filters').height('');
                 if($('.with-filters').height() < $('.with-filters aside.sidebar').height() ){
@@ -1312,6 +1334,9 @@ var product_pages = {
                 ]
             });
         });
+        $('.slider').on('setPosition', function(){
+            $(window).resize();
+        });
         $(window).on('resize', function(){
             sameHeight('.category .title');
             sameHeight('.latest-releases-slider .product');
@@ -1382,6 +1407,8 @@ var product_pages = {
                 $('#products .product-price small').text('exc.');
             }
         });
+
+
         //Initialise radio button
         $(document).on('click','.quantity-units.multiple-units .radio-button', function() {
             $(this).parent(".radiolabel-set").find(".radio-button").removeClass("active");

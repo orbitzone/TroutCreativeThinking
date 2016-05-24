@@ -45,6 +45,46 @@ aside{
 			&:last-child{
 				border-bottom: 0;
 			}
+			li{
+				&.active{
+					a{
+						text-decoration: none;
+						.gothamMedium();
+						color: black;
+					}
+				}
+			}
+			.list-links{
+				li{
+					overflow-y: hidden;
+					.transition(.3s height ease-out, .3s opacity ease-out;);
+					&:nth-child(n+4) {
+						opacity: 0;
+						height: 0;
+					}
+				}
+				&.see-all{
+					li{
+						&:nth-child(n+4) {
+							opacity: 1;
+							height: auto;
+						}
+					}	
+				}
+			}
+			.show-more-less{
+				.show-more-text{
+					display: none;
+				}
+				&.show-more{
+					.show-more-text{
+						display: block;
+					}
+					.show-less-text{
+						display:  none;
+					}
+				}
+			}
 		}
 	}
 	.list-actions{
@@ -117,6 +157,35 @@ aside{
 			.list-links{
 				a{
 					color: @text-grey;
+				}
+				li{
+					overflow-y: hidden;
+					.transition(.3s height ease-out, .3s opacity ease-out;);
+					&:nth-child(n+4) {
+						opacity: 0;
+						height: 0;
+					}
+				}
+				&.see-all{
+					li{
+						&:nth-child(n+4) {
+							opacity: 1;
+							height: auto;
+						}
+					}	
+				}
+			}
+			.show-more-less{
+				.show-more-text{
+					display: none;
+				}
+				&.show-more{
+					.show-more-text{
+						display: block;
+					}
+					.show-less-text{
+						display:  none;
+					}
 				}
 			}
 			&:last-child{

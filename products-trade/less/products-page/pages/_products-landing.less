@@ -7,6 +7,8 @@
 @brand-color: black;
 @brand-dark-bg-color: white;
 
+@category-dark-bg-color: white;
+
 .main-section#products-landing{
 	#search{
 		margin-bottom: 50px;
@@ -23,7 +25,7 @@
 		.product{
 			position: relative;
 			text-align: center;
-			padding-bottom: 75px;
+			padding-bottom: 55px;
 			text-decoration: none;
 			display: block;
 			color: @latest-releases-color;
@@ -44,7 +46,7 @@
 			.view-button{
 				position: absolute;
 				width: 100%;
-				bottom: 30px;
+				bottom: 0;
 				left: 0;
 				text-align: center;
 			}
@@ -53,6 +55,10 @@
 					.transform(scale(1.1));
 				}
 			}
+		}
+		.slick-dots{
+			padding-top: 20px;
+			margin-bottom: 0;
 		}
 		.slick-next,
 		.slick-prev{
@@ -70,6 +76,34 @@
 		}
 	}
 	.articles{
+		.title{
+			position: relative;
+			z-index: 2;
+			padding-left: 130px;
+			@media (min-width: @screen-md){
+				padding-left: 100px;
+			}
+			@media (min-width: @screen-lg){
+				padding-left: 75px;
+			}
+			.icon{
+				position: absolute;
+				top: -45px;
+				left: -10px;
+				@media (min-width: @screen-md){
+					top: -45px;
+					left: -35px;
+				}
+				@media (min-width: @screen-lg){
+					top: -45px;
+					left: -65px;
+				}
+				svg{
+					width: 126px;
+					height: 126px;
+				}
+			}
+		}
 		.article-thumbnail{
 			margin-bottom: 24px;
 		}
@@ -130,6 +164,32 @@
 					color: @category-color;
 					display: table-cell;
 					vertical-align: middle;
+				}
+				&.dark-bg{
+					span{
+						color: @category-dark-bg-color;
+					}
+				}
+			}
+		}
+		&.absolute-title{
+			.category{
+				position: relative;
+				.title{
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					width: 100%;
+				}
+				a{
+					span{
+						font-size: 25px;
+					}
+					&:hover{
+						span{
+							color: @category-color;
+						}
+					}
 				}
 			}
 		}

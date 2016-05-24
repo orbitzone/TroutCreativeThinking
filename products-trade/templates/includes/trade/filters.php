@@ -3,30 +3,30 @@
 		<div class="list">
 			<h2>Hot Lists</h2>
 			<ul class="list-links list-unstyled">
-				<li><a href="">Last 30 Days</a></li>
-				<li><a href="">Top Rated</a></li>
-				<li><a href="">Most Popular</a></li>
-				<li><a href="">Last 60 Days</a></li>
-				<li><a href="">Last 90 Days</a></li>
-				<li><a href="">Top 5</a></li>
-				<li><a href="">Top 100</a></li>
+				<li><a href="trade-products-list.php">Last 30 Days</a></li>
+				<li><a href="trade-products-list.php">Top Rated</a></li>
+				<li><a href="trade-products-list.php">Most Popular</a></li>
+				<li><a href="trade-products-list.php">Last 60 Days</a></li>
+				<li><a href="trade-products-list.php">Last 90 Days</a></li>
+				<li><a href="trade-products-list.php">Top 5</a></li>
+				<li><a href="trade-products-list.php">Top 100</a></li>
 			</ul>
 			<ul class="list-actions list-unstyled">
-				<li><a href="#" class="see-all">See All</a></li>
+				<li><a href="#" class="show-more-less show-more"><span class="show-more-text">See All</span><span class="show-less-text">See Less</span></a></li>
 			</ul>
 		</div>
 		<div class="list">
 			<h2>Your Lists</h2>
-			<ul class="list-unstyled">
-				<li><a href="">123 Newry St</a></li>
-				<li><a href="">86 Castles Rd</a></li>
-				<li><a href="">Most Popular</a></li>
-				<li><a href="">Plumbing Ideas</a></li>
-				<li><a href="">160 Oxford St</a></li>
-				<li><a href="">Client name</a></li>
+			<ul class="list-links list-unstyled">
+				<li><a href="trade-products-list.php">123 Newry St</a></li>
+				<li<?php if($list==2){ echo ' class="active"';}?>><a href="trade-products-list.php">86 Castles Rd</a></li>
+				<li><a href="trade-products-list.php">Most Popular</a></li>
+				<li><a href="trade-products-list.php">Plumbing Ideas</a></li>
+				<li><a href="trade-products-list.php">160 Oxford St</a></li>
+				<li><a href="trade-products-list.php">Client name</a></li>
 			</ul>
 			<ul class="list-actions list-unstyled">
-				<li><a href="#" class="see-all">See All</a></li>
+				<li><a href="#" class="show-more-less show-more"><span class="show-more-text">See All</span><span class="show-less-text">See Less</span></a></li>
 			</ul>
 		</div>						
 	</div>
@@ -75,7 +75,7 @@
 					</svg></span>Vada</a></li>
 			</ul>
 			<ul class="list-actions list-unstyled">
-				<li><a href="#" class="show-more">Show More</a></li>
+				<li><a href="#" class="show-more-less show-more"><span class="show-more-text">Show More</span><span class="show-less-text">Show Less</span></a></li>
 				<li><a href="#" class="clear-all">Clear All</a></li>
 			</ul>
 		</div>
@@ -96,7 +96,7 @@
 					</svg></span>Dolor</a></li>
 			</ul>
 			<ul class="list-actions list-unstyled">
-				<li><a href="#" class="show-more">Show More</a></li>
+				<li><a href="#" class="show-more-less show-more"><span class="show-more-text">Show More</span><span class="show-less-text">Show Less</span></a></li>
 				<li><a href="#" class="clear-all">Clear All</a></li>
 			</ul>
 		</div>
@@ -117,7 +117,7 @@
 					</svg></span>Bidendum</a></li>
 			</ul>
 			<ul class="list-actions list-unstyled">
-				<li><a href="#" class="show-more">Show More</a></li>
+				<li><a href="#" class="show-more-less show-more"><span class="show-more-text">Show More</span><span class="show-less-text">Show Less</span></a></li>
 				<li><a href="#" class="clear-all">Clear All</a></li>
 			</ul>
 		</div>

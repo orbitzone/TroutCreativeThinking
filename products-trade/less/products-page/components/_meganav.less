@@ -52,8 +52,15 @@
 			padding: 10px 0;
 			position: relative;
 			z-index: 1;
-			//float: left;
-			//width: calc(~"100% - 300px");			
+			@media (min-width: @screen-sm){
+				padding-right: 50px;
+			}
+			@media (min-width: @screen-md){
+				padding-right: 50px;
+			}
+			@media (min-width: @screen-lg){
+				padding-right: 80px;
+			}
 		}
 		li{
 			&:last-child{
@@ -93,9 +100,11 @@
 			color: white;
 			padding: 20px 0;
 			min-height: 60px;
-			padding-left: 85px;
 			border-bottom: 1px solid #c4c4c4;
 			line-height: 1;
+			&.with-icon{
+				padding-left: 75px;
+			}
 		}
 		.icon{
 			position: absolute;

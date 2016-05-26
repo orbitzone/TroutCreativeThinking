@@ -23,7 +23,7 @@
             <div class="meganav-column">
               <ul class="list-unstyled">
                 <li>
-                  <a href="#">
+                  <a href="#" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                         <g id="homewares">
@@ -39,7 +39,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="#" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                         <g id="basins">
@@ -55,7 +55,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="#" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                         <g id="baths">
@@ -70,7 +70,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="#" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                         <g id="towel">
@@ -86,7 +86,7 @@
             <div class="meganav-column">
             <ul class="list-unstyled">
               <li>
-                <a href="#">
+                <a href="#" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                         <g id="showers">
@@ -106,7 +106,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="#" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                         <g id="tapware">
@@ -126,7 +126,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="#" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                         <g id="toilets">
@@ -143,7 +143,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="#" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                         <g id="heating">
@@ -166,7 +166,7 @@
             <div class="meganav-column">
               <ul class="list-unstyled">
                 <li>
-                  <a href="#">
+                  <a href="#" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                         <g id="vanity">
@@ -179,7 +179,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="#" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                         <g id="wastes">

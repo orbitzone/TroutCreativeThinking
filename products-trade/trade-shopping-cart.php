@@ -23,9 +23,9 @@ class="">
   </div>
   <?php include "templates/includes/Navigation.php" ?>
   <?php include "templates/includes/ProductsNav.php" ?>
-  <?php include "templates/includes/trade/MegaNav.php" ?>
-  
+    
   <div id="product-pages" data-section="shoppingCart" class="trade">
+    <?php include "templates/includes/trade/MegaNav.php" ?>
     <?php include "templates/pages/trade/inner-shopping-cart.php" ?>
   </div>
 

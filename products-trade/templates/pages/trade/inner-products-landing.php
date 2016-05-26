@@ -148,24 +148,28 @@
 						<h2>Venenatis Euismod Condimentum</h2>
 						<div class="row">
 							<div class="col-sm-6">
-								<div class="article-thumbnail">
-									<img src="templates/images/trade/products-landing/article.jpg" alt="Article"/>
+								<div class="article">
+									<div class="article-thumbnail">
+										<img src="templates/images/trade/products-landing/article.jpg" alt="Article"/>
+									</div>
+									<div class="article-description">
+										<h3>Headline</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tristique nisl nec ornare scelerisque. Nullam ullamcorper ornare urna non commodo.</p>
+									</div>
+									<a href="#" class="btn black-button">Read More</a>
 								</div>
-								<div class="article-description">
-									<h3>Headline</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tristique nisl nec ornare scelerisque. Nullam ullamcorper ornare urna non commodo.</p>
-								</div>
-								<a href="#" class="btn black-button">Read More</a>
 							</div>
 							<div class="col-sm-6">
-								<div class="article-thumbnail">
-									<img src="templates/images/trade/products-landing/article.jpg" alt="Article"/>
+								<div class="article">
+									<div class="article-thumbnail">
+										<img src="templates/images/trade/products-landing/article.jpg" alt="Article"/>
+									</div>
+									<div class="article-description">
+										<h3>Headline</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tristique nisl nec ornare scelerisque. Nullam ullamcorper ornare urna non commodo.</p>
+									</div>
+									<a href="#" class="btn black-button">Read More</a>
 								</div>
-								<div class="article-description">
-									<h3>Headline</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tristique nisl nec ornare scelerisque. Nullam ullamcorper ornare urna non commodo.</p>
-								</div>
-								<a href="#" class="btn black-button">Read More</a>
 							</div>
 						</div>						
 					</div>

@@ -32,7 +32,7 @@
 		margin: 0 auto;
 		padding: 9px 0 10px;
 		font-size: 15px;
-		b{dropdown-menu
+		b{
 			font-size: 22px;
 			margin-right: 3px;
 		}
@@ -580,6 +580,13 @@
 						.value{
 							font-size: 17px;
 						}
+                      @media (min-width: @screen-sm-min) and (max-width:@screen-sm-max) {
+                        .product-price-my {
+                          width: 70%;
+                          text-align: right;
+                          margin-left: 25%;
+                        }
+                      }
 					}
 					.product-quantity{
 						display: inline-block;
@@ -634,7 +641,7 @@
 	}
 }
 
-.keyframes(pulse,{ 
+.keyframes(pulse,{
 	0% { .transform(scale(1.1)); }
   50% { .transform(scale(1.2)); }
   100% { .transform(scale(1.1)); }});

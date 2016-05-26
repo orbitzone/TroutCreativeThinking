@@ -2284,7 +2284,7 @@ MAIN TITLE
 #product-pages #shopping-cart-widget .selectric .label {
   line-height: 66px;
   padding: 0;
-  one-optiondisplay: block;
+  display: block;
   color: white;
 }
 #product-pages #shopping-cart-widget .selectric .button {
@@ -7960,7 +7960,7 @@ MAIN TITLE
   font-size: 15px;
 }
 #product-pages .pricing .pricing-inner b {
-  dropdown-menufont-size: 22px;
+  font-size: 22px;
   margin-right: 3px;
 }
 #product-pages .pricing .pricing-inner ul {
@@ -8623,6 +8623,13 @@ MAIN TITLE
     width: 17.45%;
     padding: 0;
     padding-left: 10px;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) and (max-width: 991px) {
+  #product-pages .main-section#products-category #products.list .product .product-price .product-price-my {
+    width: 70%;
+    text-align: right;
+    margin-left: 25%;
   }
 }
 #product-pages .main-section#products-category .results {
@@ -10340,7 +10347,7 @@ MAIN TITLE
   padding-bottom: 0;
 }
 #product-pages.retail .main-section#checkout-cart-section #order-form form#checkout-cart #pickup-details .branch-info-autofill #branchinfo-details .branch-name {
-  color: #099ade;
+  color: #6dc8b6;
   margin-bottom: 5px;
   font-size: 20px;
 }
@@ -10359,7 +10366,7 @@ MAIN TITLE
   padding-top: 1em;
   text-transform: uppercase;
   display: none;
-  color: #099ade;
+  color: #6dc8b6;
   font-family: "Gotham A", "Gotham B";
   font-style: normal;
   font-weight: 500;
@@ -10435,7 +10442,7 @@ MAIN TITLE
   font-style: normal;
   font-weight: 700;
   display: block;
-  color: #099ade;
+  color: #6dc8b6;
 }
 #product-pages.retail .main-section#checkout-cart-section #order-form form#checkout-cart #pickupbranch-results .one-result .branch-address {
   display: inline-block;

@@ -173,7 +173,7 @@ html.ie9 #product-pages .main-section#product-detail .lightbox.show {
 }
 .meganav-wrap {
   position: relative;
-  z-index: 2;
+  z-index: 10;
 }
 .meganav {
   position: absolute;
@@ -199,16 +199,6 @@ html.ie9 #product-pages .main-section#product-detail .lightbox.show {
 .meganav .meganav-content:after {
   clear: both;
 }
-.meganav .meganav-content:before {
-  content: " ";
-  display: block;
-  position: absolute;
-  background: #858585;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  left: calc(50% - 300px);
-}
 .meganav .meganav-content .meganav-main {
   padding: 10px 0;
   float: left;
@@ -232,7 +222,6 @@ html.ie9 #product-pages .main-section#product-detail .lightbox.show {
   width: 0;
   height: 0;
   border-top: 8px solid transparent;
-  border-right: 14px solid #858585;
   border-bottom: 8px solid transparent;
   margin-top: -8px;
 }
@@ -240,9 +229,6 @@ html.ie9 #product-pages .main-section#product-detail .lightbox.show {
   padding: 10px 0;
   position: relative;
   z-index: 1;
-  background: #858585;
-  float: left;
-  width: calc(100% - 300px);
 }
 .meganav .meganav-content li:last-child a {
   border-bottom: none;
@@ -250,6 +236,7 @@ html.ie9 #product-pages .main-section#product-detail .lightbox.show {
 .meganav .meganav-submenu {
   display: none;
   position: relative;
+  padding: 0 10px;
 }
 .meganav .meganav-submenu:before,
 .meganav .meganav-submenu:after {
@@ -264,30 +251,55 @@ html.ie9 #product-pages .main-section#product-detail .lightbox.show {
 }
 .meganav .meganav-submenu .meganav-column {
   float: left;
-  width: 33.33333333%;
-  padding: 0 50px;
+  width: 20%;
+  padding: 0 10px;
 }
 .meganav .meganav-submenu .meganav-column:first-child {
-  padding-left: 35px;
+  padding-left: 0;
+}
+.meganav .meganav-submenu .meganav-column:last-child {
+  padding-right: 0;
+}
+.meganav .meganav-submenu li {
+  width: 100%;
+  display: table;
 }
 .meganav .meganav-submenu a {
-  display: block;
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
   color: white;
-  padding: 10px 0;
+  padding: 20px 0;
+  min-height: 60px;
+  padding-left: 85px;
   border-bottom: 1px solid #c4c4c4;
+  line-height: 1;
 }
 .meganav .meganav-submenu .icon {
-  width: 30px;
-  height: 30px;
-  margin-right: 15px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  margin-top: -30px;
   display: inline-block;
   vertical-align: middle;
 }
 .meganav .meganav-submenu .icon svg {
   display: block;
-  width: 30px;
-  height: 30px;
-  fill: #6dc8b6;
+  width: 60px;
+  height: 60px;
+}
+.meganav .meganav-submenu .icon svg path {
+  fill: #0776aa;
+}
+.meganav .meganav-submenu .icon svg path.line {
+  fill: none;
+  stroke: #0776aa;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
 }
 #product-pages {
   -webkit-font-smoothing: antialiased;

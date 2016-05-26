@@ -7465,6 +7465,9 @@ h6 {
   left: 0px;
   z-index: 9999;
 }
+.tradebar {
+  background: #969696;
+}
 .subnavbar ul.nav {
   margin: 0;
 }

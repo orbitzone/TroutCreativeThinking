@@ -3931,6 +3931,7 @@ MAIN TITLE
   padding: 10px 0;
   float: left;
   width: 228px;
+  padding-left: 10px;
 }
 #product-pages .meganav .meganav-content .meganav-main a {
   display: block;
@@ -9805,11 +9806,6 @@ MAIN TITLE
   height: 100%;
   width: 100%;
   left: calc(50% - 300px);
-}
-#product-pages.retail .meganav .meganav-content .meganav-main {
-  padding: 10px 0;
-  float: left;
-  width: 228px;
 }
 #product-pages.retail .meganav .meganav-content .meganav-main a {
   display: block;

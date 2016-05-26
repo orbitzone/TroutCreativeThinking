@@ -4,7 +4,7 @@
       <div class="meganav-content">
         <div class="meganav-main meganav-section">
           <ul class="list-unstyled">
-            <li>
+            <li class="open">
               <a href="#" data-submenu="bathroom">Bathroom</a>              
             </li>
             <li>

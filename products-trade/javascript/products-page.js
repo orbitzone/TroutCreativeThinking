@@ -164,7 +164,6 @@ var product_pages = {
     navigation: function(){
         sameHeight('.meganav-section');
         $(window).on('resize', function(){
-            sameHeight('.meganav-section');
             $('.meganav-submenu a').height('auto');
             var maxHeight = $('.meganav-submenu a').first().height();
             $('.meganav-submenu a').each(function(){
@@ -173,24 +172,31 @@ var product_pages = {
                 }
             });
             $('.meganav-submenu a').height(maxHeight);
+            sameHeight('.meganav-section');
         });
+        function closeNavigation(){
+            $('.meganav').removeClass('open'); 
+            $('.meganav .meganav-submenu').removeClass('open');
+            $('.meganav .meganav-main li').removeClass('open');
+            $('.meganav .meganav-main li').first().addClass('open');
+            $('.meganav .meganav-submenu').first().addClass('open');
+        }
         var menuover = false;
         $('.subnavbar a[title=Products]').on('mouseover', function(){
             $('.meganav').addClass('open');
             $(window).resize();
         }).on('mouseout', function(){
-           // menuover = setTimeout(function(){$('.meganav').removeClass('open')},10);
+            menuover = setTimeout(function(){
+                closeNavigation();
+            },20);
         });
         $('.meganav').on('mouseover', function(){
             clearTimeout(menuover);
             $('.meganav').addClass('open');
+            $(window).resize();
         }).on('mouseout', function(){
            menuover = setTimeout(function(){ 
-                $('.meganav').removeClass('open'); 
-                $('.meganav .meganav-submenu').removeClass('open');
-                $('.meganav .meganav-main li').removeClass('open');
-                $('.meganav .meganav-main li').first().addClass('open');
-                $('.meganav .meganav-submenu').first().addClass('open');
+                closeNavigation();
             },10);            
         });
         $('.meganav .meganav-main a').on('mouseover', function(){

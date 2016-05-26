@@ -20,7 +20,6 @@
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="20px" height="20px"><title>search</title> <circle fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="2.5" stroke-miterlimit="10" cx="14.6" cy="14.6" r="13.3"/> <line fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-miterlimit="10" x1="24.1" y1="24" x2="38.8" y2="38.8"/></svg>
 						</button>
 					</form>
-					<?php include 'templates/includes/trade/filters.php';?>
 					<!--START PEOPLE ALSO BOUGHT SECTION -->
 					<div class="section latest-releases">
 						<h2>Latest Releases</h2>
@@ -140,6 +139,7 @@
 						</div>						
 					</div>
 					<!--END PEOPLE ALSO BOUGHT SECTION -->
+					<?php include 'templates/includes/trade/filters.php';?>
 					<div class="section video">
 						<a href="#" title="Watch video"  class="lightbox-video" data-video="F-kP7xe9j70">
 							<img class="img-responsive" src="templates/images/trade/products-landing/video.jpg" alt="Video">

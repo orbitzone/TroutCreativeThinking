@@ -5,16 +5,16 @@
         <div class="meganav-main meganav-section">
           <ul class="list-unstyled">
             <li class="open">
-              <a href="#" data-submenu="bathroom">Bathroom</a>              
+              <a href="retail-products-category.php" data-submenu="bathroom">Bathroom</a>              
             </li>
             <li>
-              <a href="#" data-submenu="kitchen">Kitchen</a>        
+              <a href="retail-products-category.php" data-submenu="kitchen">Kitchen</a>        
             </li>
             <li>
-              <a href="#" data-submenu="laundry">Laundry</a>            
+              <a href="retail-products-category.php" data-submenu="laundry">Laundry</a>            
             </li>
             <li>
-              <a href="#" data-submenu="commercial">Commercial</a>            
+              <a href="retail-products-category.php" data-submenu="commercial">Commercial</a>            
             </li>
           </ul>
         </div>
@@ -23,7 +23,7 @@
             <div class="meganav-column">
               <ul class="list-unstyled">
                 <li>
-                  <a href="#" class="with-icon">
+                  <a href="retail-products-category.php" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                         <g id="homewares">
@@ -39,7 +39,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="with-icon">
+                  <a href="retail-products-category.php" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                         <g id="basins">
@@ -55,7 +55,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="with-icon">
+                  <a href="retail-products-category.php" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                         <g id="baths">
@@ -70,7 +70,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="with-icon">
+                  <a href="retail-products-category.php" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                         <g id="towel">
@@ -86,7 +86,7 @@
             <div class="meganav-column">
             <ul class="list-unstyled">
               <li>
-                <a href="#" class="with-icon">
+                <a href="retail-products-category.php" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                         <g id="showers">
@@ -106,7 +106,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="with-icon">
+                  <a href="retail-products-category.php" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                         <g id="tapware">
@@ -126,7 +126,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="with-icon">
+                  <a href="retail-products-category.php" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                         <g id="toilets">
@@ -143,7 +143,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="with-icon">
+                  <a href="retail-products-category.php" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                         <g id="heating">
@@ -166,7 +166,7 @@
             <div class="meganav-column">
               <ul class="list-unstyled">
                 <li>
-                  <a href="#" class="with-icon">
+                  <a href="retail-products-category.php" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                         <g id="vanity">
@@ -179,7 +179,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="with-icon">
+                  <a href="retail-products-category.php" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                         <g id="wastes">
@@ -203,42 +203,42 @@
           <div class="meganav-submenu" data-submenu-for="kitchen">
             <div class="meganav-column">
             <ul class="list-unstyled">
-              <li><a href="#">Sink Tapwate</a></li>
-              <li><a href="#">Sinks</a></li>
-              <li><a href="#">Sink Accessories</a></li>
-              <li><a href="#">Kitchen Appliances</a></li>
+              <li><a href="retail-products-category.php">Sink Tapwate</a></li>
+              <li><a href="retail-products-category.php">Sinks</a></li>
+              <li><a href="retail-products-category.php">Sink Accessories</a></li>
+              <li><a href="retail-products-category.php">Kitchen Appliances</a></li>
             </ul>
             </div>
           </div> 
           <div class="meganav-submenu" data-submenu-for="laundry">
             <div class="meganav-column">
               <ul class="list-unstyled">
-                <li><a href="#">Laundy Tapwate</a></li>
-                <li><a href="#">Laundry Troughs</a></li>
-                <li><a href="#">Laundry Troughs with Cabinet</a></li>          
+                <li><a href="retail-products-category.php">Laundy Tapwate</a></li>
+                <li><a href="retail-products-category.php">Laundry Troughs</a></li>
+                <li><a href="retail-products-category.php">Laundry Troughs with Cabinet</a></li>          
               </ul>
             </div>
           </div> 
           <div class="meganav-submenu" data-submenu-for="commercial">
             <div class="meganav-column">
               <ul class="list-unstyled">
-                <li><a href="#">Hospital and Health Care</a></li>
-                <li><a href="#">Education</a></li>
-                <li><a href="#">Public Spaces</a></li>
-                <li><a href="#">Aged Care</a></li>                
+                <li><a href="retail-products-category.php">Hospital and Health Care</a></li>
+                <li><a href="retail-products-category.php">Education</a></li>
+                <li><a href="retail-products-category.php">Public Spaces</a></li>
+                <li><a href="retail-products-category.php">Aged Care</a></li>                
               </ul>
             </div>
             <div class="meganav-column">
               <ul class="list-unstyled">
-                <li><a href="#">Safety and Environmental</a></li>                
-                <li><a href="#">Security</a></li>
-                <li><a href="#">Commercial Food Premises</a></li>
-                <li><a href="#">Sports and Leisure</a></li>
+                <li><a href="retail-products-category.php">Safety and Environmental</a></li>                
+                <li><a href="retail-products-category.php">Security</a></li>
+                <li><a href="retail-products-category.php">Commercial Food Premises</a></li>
+                <li><a href="retail-products-category.php">Sports and Leisure</a></li>
               </ul>
             </div>
             <div class="meganav-column">
               <ul class="list-unstyled">
-                <li><a href="#">AS1428.1/Ambulant</a></li>
+                <li><a href="retail-products-category.php">AS1428.1/Ambulant</a></li>
               </ul>
             </div>
           </div>  

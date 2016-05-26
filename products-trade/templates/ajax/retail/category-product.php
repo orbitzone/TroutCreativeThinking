@@ -71,15 +71,15 @@
 				<?php if(count($product['images'])>1){?>
 						<div class="product-images-slider">
 				<?php }?>
-				<?php $n=0; foreach($product['images'] as $image):?>
+				<?php $lazy_img=0; foreach($product['images'] as $image):?>
 				<a href="retail-product-detail.php" tabindex="-1">
-					<?php if($n == 0){?>
+					<?php if($lazy_img == 0){?>
 						<img src="<?php echo $image['url']; ?>" alt="<?php echo (isset($image['alt']))?$image['alt']:$product['name']; ?>"/>	
 					<?php }else{?>
 						<img data-lazy="<?php echo $image['url']; ?>" alt="<?php echo (isset($image['alt']))?$image['alt']:$product['name']; ?>"/>	
 					<?php }?>
 				</a>
-				<?php $n++; if($n == 3){ break;} endforeach;?>		
+				<?php $lazy_img++; if($lazy_img == 3){ break;} endforeach;?>		
 				<?php if(count($product['images'])>1){?>
 				</div>
 				<?php }?>

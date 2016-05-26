@@ -165,7 +165,35 @@ var product_pages = {
         sameHeight('.meganav-section');
         $(window).on('resize', function(){
             sameHeight('.meganav-section');
-        });        
+        });
+        var menuover = false;
+        $('.subnavbar a[title=Products]').on('mouseover', function(){
+            $('.meganav').addClass('open');
+            sameHeight('.meganav-section');
+        }).on('mouseout', function(){
+           // menuover = setTimeout(function(){$('.meganav').removeClass('open')},10);
+        });
+        $('.meganav').on('mouseover', function(){
+            clearTimeout(menuover);
+            $('.meganav').addClass('open');
+        }).on('mouseout', function(){
+           menuover = setTimeout(function(){ 
+                $('.meganav').removeClass('open'); 
+                $('.meganav .meganav-submenu').removeClass('open');
+                $('.meganav .meganav-main li').removeClass('open');
+                $('.meganav .meganav-main li').first().addClass('open');
+                $('.meganav .meganav-submenu').first().addClass('open');
+            },10);            
+        });
+        $('.meganav .meganav-main a').on('mouseover', function(){
+            clearTimeout(menuover);
+            $('.meganav .meganav-main li').removeClass('open');
+            $('.meganav .meganav-submenu').removeClass('open');
+            $(this).parent().addClass('open');
+            var option = $(this).data('submenu');
+            $('.meganav .meganav-submenu[data-submenu-for="'+option+'"]').addClass('open');
+            sameHeight('.meganav-section');
+        });
     },
     lightboxes: function(){
         //Fire lighbox with video from elements with the lightbox-video class.

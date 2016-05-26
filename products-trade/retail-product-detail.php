@@ -23,6 +23,7 @@ class="">
   </div>
   <?php include "templates/includes/Navigation.php" ?>
   <?php include "templates/includes/ProductsNav.php" ?>
+  <?php include "templates/includes/retail/MegaNav.php" ?>
   
   <div id="product-pages" data-section="productDetail" class="retail">
     <?php include "templates/pages/retail/inner-product-detail.php" ?>

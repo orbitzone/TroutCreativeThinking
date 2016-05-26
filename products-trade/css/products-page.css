@@ -186,6 +186,10 @@ html.ie9 #product-pages .main-section#product-detail .lightbox.show {
   font-weight: bold;
   font-size: 12px;
   letter-spacing: 0.01em;
+  display: none;
+}
+.meganav.open {
+  display: block;
 }
 .meganav .meganav-content:before,
 .meganav .meganav-content:after {
@@ -217,6 +221,21 @@ html.ie9 #product-pages .main-section#product-detail .lightbox.show {
   padding: 15px 0;
   border-bottom: 1px solid #c4c4c4;
 }
+.meganav .meganav-content .meganav-main li {
+  position: relative;
+}
+.meganav .meganav-content .meganav-main li.open:before {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-right: 14px solid #858585;
+  border-bottom: 8px solid transparent;
+  margin-top: -8px;
+}
 .meganav .meganav-content .meganav-submenus {
   padding: 10px 0;
   position: relative;
@@ -230,22 +249,26 @@ html.ie9 #product-pages .main-section#product-detail .lightbox.show {
 }
 .meganav .meganav-submenu {
   display: none;
+  position: relative;
+}
+.meganav .meganav-submenu:before,
+.meganav .meganav-submenu:after {
+  content: " ";
+  display: table;
+}
+.meganav .meganav-submenu:after {
+  clear: both;
 }
 .meganav .meganav-submenu.open {
   display: block;
 }
-.meganav .meganav-submenu ul:before,
-.meganav .meganav-submenu ul:after {
-  content: " ";
-  display: table;
-}
-.meganav .meganav-submenu ul:after {
-  clear: both;
-}
-.meganav .meganav-submenu ul li {
+.meganav .meganav-submenu .meganav-column {
   float: left;
   width: 33.33333333%;
-  padding: 0 20px;
+  padding: 0 50px;
+}
+.meganav .meganav-submenu .meganav-column:first-child {
+  padding-left: 35px;
 }
 .meganav .meganav-submenu a {
   display: block;

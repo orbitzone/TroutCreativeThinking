@@ -6254,9 +6254,13 @@ MAIN TITLE
   margin-right: 10px;
 }
 #product-pages #shopping-cart .shopping-cart-summary #save-as-section .save-as-wrap {
-  max-width: 230px;
   background-color: #fafafa;
   padding: 0;
+}
+@media (min-width: 768px) {
+  #product-pages #shopping-cart .shopping-cart-summary #save-as-section .save-as-wrap {
+    max-width: 230px;
+  }
 }
 #product-pages #shopping-cart .shopping-cart-summary #save-as-section .save-as-wrap label {
   font-family: "Gotham A", "Gotham B";

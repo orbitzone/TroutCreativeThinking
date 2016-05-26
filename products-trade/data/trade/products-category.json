@@ -3,10 +3,10 @@
     "code": "404914",
     "name": "Conex Banninger XL >B< Press Gas",
     "images": [{
-	    "url": "templates/images/products-category/404914.jpg",
+	    "url": "templates/images/trade/products-category/404914.jpg",
 	    "alt":"Alt image 1"
     },{
-    	"url":"templates/images/products-category/404914.jpg",
+    	"url":"templates/images/trade/products-category/404914.jpg",
     	"alt":"Alt image 2"
     }],
     "description": "45 deg M&F Elbow",
@@ -29,7 +29,7 @@
     "code": "1435050",
     "name": "Duopex Gas Fittings",
     "images": [{
-    	"url": "templates/images/products-category/1435050.jpg",
+    	"url": "templates/images/trade/products-category/1435050.jpg",
     	"alt": "Alt image 1"
     }],
     "description": "Elbow",
@@ -52,8 +52,11 @@
     "code": "4912020",
     "name": "Dura",
     "images": [{
-    	"url": "templates/images/products-category/4912020.jpg",
+    	"url": "templates/images/trade/products-category/4912020.jpg",
     	"alt": "Product image"
+    },{
+      "url": "templates/images/trade/products-category/4912020.jpg",
+      "alt": "Product image"
     }],
     "description": "Dura Sink Mixer with Pot Filler 4*",
     "price": [
@@ -75,7 +78,7 @@
     "code": "1907890",
     "name": "Backwash Filters Mains Water Filters",
     "images": [{
-    "url": "templates/images/products-category/1907890.jpg",
+    "url": "templates/images/trade/products-category/1907890.jpg",
     "alt": "Product image"
     }],
     "description": "Cillit Eurofiltro Manual Filter 50mm",
@@ -98,7 +101,7 @@
     "code": "7701222",
     "name": "Rothenberger Press",
     "images": [{
-    "url": "templates/images/products-category/7701222.jpg",
+    "url": "templates/images/trade/products-category/7701222.jpg",
     "alt": "Product image"
     }],
     "description": "Duopex Jaw to suit Compact Press Tool",
@@ -121,7 +124,7 @@
     "code": "108372",
     "name": "Hydroseal Tap Valve 1/2\"",
     "images": [{
-    "url": "templates/images/products-category/108372.jpg",
+    "url": "templates/images/trade/products-category/108372.jpg",
     "alt": "Product image"
     }],
     "description": "12mm",
@@ -152,7 +155,13 @@
     "code": "9500734",
     "name": "Vada",
     "images": [{
-    "url": "templates/images/products-category/9500734.jpg",
+    "url": "templates/images/trade/products-category/9500734.jpg",
+    "alt": "Product image"
+    },{
+    "url": "templates/images/trade/products-category/9500734.jpg",
+    "alt": "Product image"
+    },{
+    "url": "templates/images/trade/products-category/9500734.jpg",
     "alt": "Product image"
     }],
     "description": "V-PC Auto Pressure Control",
@@ -175,7 +184,7 @@
     "code": "100265",
     "name": "Standard Diecast H&B C/P",
     "images": [{
-    "url": "templates/images/products-category/100265.jpg",
+    "url": "templates/images/trade/products-category/100265.jpg",
     "alt": "Product image"
     }],
     "description": "",
@@ -206,7 +215,7 @@
     "code": "1903692",
     "name": "Bridgland Gas Ptfe Tape",
     "images": [{
-    "url": "templates/images/products-category/1903692.jpg",
+    "url": "templates/images/trade/products-category/1903692.jpg",
     "alt": "Product image"
     }],
     "description": "Bridgland Gas Ptfe Tape",
@@ -229,7 +238,7 @@
     "code": "9500738",
     "name": "Vada",
     "images": [{
-    "url": "templates/images/products-category/9500738.jpg",
+    "url": "templates/images/trade/products-category/9500738.jpg",
     "alt": "Product image"
     }],
     "description": "V110-H Horizontal Multi Stage",
@@ -252,7 +261,7 @@
     "code": "9504421",
     "name": "Thermann Electric Storage",
     "images": [{
-    "url": "templates/images/products-category/9504421.jpg",
+    "url": "templates/images/trade/products-category/9504421.jpg",
     "alt": "Product image"
     }],
     "description": "Electric Hot Water System 250L",
@@ -275,7 +284,7 @@
     "code": "9502193",
     "name": "Dura",
     "images": [{
-    "url": "templates/images/products-category/9502193.jpg",
+    "url": "templates/images/trade/products-category/9502193.jpg",
     "alt": "Product image"
     }],
     "description": "Dura Sink Mixer with Pot Filler 4*",

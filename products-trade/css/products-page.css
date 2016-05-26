@@ -174,7 +174,6 @@ html.ie9 #product-pages .main-section#product-detail .lightbox.show {
 .meganav-wrap {
   position: relative;
   z-index: 2;
-  display: none;
 }
 .meganav {
   position: absolute;
@@ -2792,6 +2791,9 @@ MAIN TITLE
 }
 #product-pages #shopping-cart-widget .shopping-cart-view button.switch-btn b {
   font-style: italic;
+}
+#product-pages #shopping-cart-widget .shopping-cart-view .checkbox-option .icon svg {
+  fill: white;
 }
 #product-pages #shopping-cart-widget .shopping-cart-view .checkbox-options-set ul {
   margin-bottom: 0;

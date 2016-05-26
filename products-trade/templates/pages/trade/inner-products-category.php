@@ -31,7 +31,7 @@
 							</button>
 						</form>
 						<div class="banner">
-							<img src="templates/images/products-category/banner.jpg" alt="reece"/>
+							<img src="templates/images/trade/products-category/banner.jpg" alt="reece"/>
 						</div>
 						<div class="intro">
 							<p>Introduction to product category copy. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida sodales aliquet. Proin nec risus sit amet nunc sollicitudin ultrices ut vel nulla. Curabitur eu dignissim velit.</p>

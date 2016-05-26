@@ -38,8 +38,8 @@
 			</a>
 			<div class="product-price">
 					<?php $p = 0; foreach($product['price'] as $key => $price): ?>
-						<div class="product-price-my price-<?php echo $price['unit']; ?> <?php if($p>0){ echo 'hide'; }?>" title="<?php echo $units[$price['unit']];?> price">My Price <span class="value"><?php echo $price['value']; ?><small>inc.</small></span></div>
-						<div class="product-price-cmp price-<?php echo $price['unit']; ?> <?php if($p>0){ echo 'hide'; }?>" title="<?php echo $units[$price['unit']];?> compare price">CMP <span class="value"><?php echo $product['cmp'][$key]['value']; ?><small>inc.</small></span></div>	
+						<div class="product-price-my price-<?php echo $price['unit']; ?> <?php if($p>0){ echo 'hide'; }?>" title="<?php echo $units[$price['unit']];?> price">My Price <span class="value">$<?php echo $price['value']; ?><small>inc.</small></span></div>
+						<div class="product-price-cmp price-<?php echo $price['unit']; ?> <?php if($p>0){ echo 'hide'; }?>" title="<?php echo $units[$price['unit']];?> compare price">CMP <span class="value">$<?php echo $product['cmp'][$key]['value']; ?><small>inc.</small></span></div>	
 					<?php $p=$p+1; endforeach;?>				
 			</div>
 			<div class="product-quantity">

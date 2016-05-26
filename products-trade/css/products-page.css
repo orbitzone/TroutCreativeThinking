@@ -1759,6 +1759,9 @@ MAIN TITLE
   margin-bottom: 30px;
 }
 @media (max-width: 991px) {
+  #product-pages aside .trade-lists {
+    text-align: center;
+  }
   #product-pages aside .trade-lists:before,
   #product-pages aside .trade-lists:after {
     content: " ";

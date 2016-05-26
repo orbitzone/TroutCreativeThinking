@@ -3911,8 +3911,10 @@ MAIN TITLE
   background: #969696;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: bold;
-  font-size: 12px;
+  font-family: "Gotham A", "Gotham B";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
   letter-spacing: 0.01em;
   display: none;
 }
@@ -9808,8 +9810,12 @@ MAIN TITLE
 #product-pages.retail .meganav .meganav-submenu .meganav-column:first-child {
   padding-left: 35px;
 }
+#product-pages.retail .meganav .meganav-submenu a {
+  padding: 16px 0;
+  min-height: 30px;
+}
 #product-pages.retail .meganav .meganav-submenu a.with-icon {
-  padding-left: 45px;
+  padding-left: 35px;
 }
 #product-pages.retail .meganav .meganav-submenu .icon {
   top: 50%;

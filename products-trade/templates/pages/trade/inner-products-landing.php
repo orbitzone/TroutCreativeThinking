@@ -13,7 +13,6 @@
 	<div class="products-landing-wrap">
 		<div class="container-fluid section-container">
 			<div class="content-wrapper with-filters">
-				<?php include 'templates/includes/trade/filters.php';?>
 				<div class="content-main">
 					<form action="" id="search">
 						<input type="text" name="search" placeholder="Search Product">
@@ -21,6 +20,7 @@
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="20px" height="20px"><title>search</title> <circle fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="2.5" stroke-miterlimit="10" cx="14.6" cy="14.6" r="13.3"/> <line fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-miterlimit="10" x1="24.1" y1="24" x2="38.8" y2="38.8"/></svg>
 						</button>
 					</form>
+					<?php include 'templates/includes/trade/filters.php';?>
 					<!--START PEOPLE ALSO BOUGHT SECTION -->
 					<div class="section latest-releases">
 						<h2>Latest Releases</h2>
@@ -141,7 +141,20 @@
 					</div>
 					<!--END PEOPLE ALSO BOUGHT SECTION -->
 					<div class="section video">
-						<img src="templates/images/trade/products-landing/video.jpg" alt="reece"/>
+						<a href="#" title="Watch video"  class="lightbox-video" data-video="F-kP7xe9j70">
+							<img class="img-responsive" src="templates/images/trade/products-landing/video.jpg" alt="Video">
+							<span class="play-button">
+								<svg width="46.5px" height="46.5px" viewBox="0 0 46.5 46.5">
+									<path class="ring" d="M23.2,46.5C10.4,46.5,0,36.1,0,23.3S10.4,0,23.2,0c12.8,0,23.2,10.4,23.2,23.3S36.1,46.5,23.2,46.5z M23.2,1
+										C11,1,1,11,1,23.3c0,12.3,10,22.3,22.2,22.3c12.3,0,22.2-10,22.2-22.3C45.5,11,35.5,1,23.2,1z"/>
+									<path class="circle" fill-rule="evenodd" clip-rule="evenodd" d="M23,5.2c10.1,0,18.3,8.2,18.3,18.3c0,10.1-8.2,18.3-18.3,18.3
+										c-10.1,0-18.3-8.2-18.3-18.3C4.7,13.3,12.9,5.2,23,5.2z"/>
+									<path class="icon" d="M18.2,31.8c0.1,0,0.2,0,0.3-0.1l12-7.5c0.1-0.1,0.2-0.3,0.2-0.4c0-0.2-0.1-0.3-0.2-0.4l-12-7.5
+										c-0.2-0.1-0.3-0.1-0.5,0c-0.2,0.1-0.3,0.3-0.3,0.4v15c0,0.2,0.1,0.3,0.3,0.4C18.1,31.8,18.2,31.8,18.2,31.8z M18.7,17.2l10.6,6.6
+										l-10.6,6.6V17.2z"/>
+									</svg>
+							</span>
+						</a>					
 					</div>
 					<!--START PEOPLE ALSO BOUGHT SECTION -->
 					<div class="section articles">
@@ -334,4 +347,14 @@
 		</div>
 	</div>
 </div>
+<!-- START Videos Lightbox -->
+	<div id="video-lightbox" class="lightbox">
+			<div class="lightbox-actions"><button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="67.5px" height="67.5px" viewBox="0 0 67.5 67.5"><path d="M64.8,67.5c-0.7,0-1.4-0.3-1.9-0.8L0.8,4.6c-1.1-1.1-1.1-2.8,0-3.9c1.1-1.1,2.8-1.1,3.9,0l62.1,62.1c1.1,1.1,1.1,2.8,0,3.9C66.2,67.2,65.5,67.5,64.8,67.5z"/><path d="M2.7,67.5c-0.7,0-1.4-0.3-1.9-0.8c-1.1-1.1-1.1-2.8,0-3.9L62.9,0.8c1.1-1.1,2.8-1.1,3.9,0c1.1,1.1,1.1,2.8,0,3.9L4.6,66.7C4.1,67.2,3.4,67.5,2.7,67.5z"/></svg></button></div>
+			<div class="video-lightbox-container lightbox-content">
+			<div class="embed-responsive embed-responsive-16by9">
+				<div id="video-lightbox-container" class="embed-responsive-item"></div>
+			</div>
+		</div>		
+	</div>
+	<!-- END Videos Lightbox -->
 <!--END PRODUCTS LANDING -->

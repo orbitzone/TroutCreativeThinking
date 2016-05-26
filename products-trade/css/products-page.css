@@ -5118,7 +5118,7 @@ MAIN TITLE
 }
 @media (min-width: 1200px) {
   #product-pages .main-section#product-detail .main-anchor-list {
-    padding-left: 11%;
+    padding: 0 4%;
   }
 }
 #product-pages .main-section#product-detail .main-anchor-list li {

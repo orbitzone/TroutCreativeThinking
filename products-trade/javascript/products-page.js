@@ -1394,7 +1394,8 @@ var product_pages = {
                 slidesToShow:1,
                 slidesToScroll:1,
                 'dots': true,
-                'arrows':false
+                'arrows':false,
+                lazyLoad: 'ondemand'
             });
             $('#products .product-images-slider').on('setPosition', function(){
                 $(window).resize();

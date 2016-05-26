@@ -22,7 +22,7 @@
 						</button>
 					</form>
 					<div class="banner">
-						<img src="templates/images/retail/products-category/hero.jpg" alt="Hero"/>
+						<img src="templates/images/retail/products-landing/hero.jpg" alt="Hero"/>
 					</div>
 					<div class="intro">
 						<p>Introduction to product category copy. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida sodales aliquet. Proin nec risus sit amet nunc sollicitudin ultrices ut vel nulla. Curabitur eu dignissim velit. Praesent tincidunt non diam sit amet mattis. Nam in volutpat dui. Proin ex urna, tempor in finibus eget, convallis eu mi.</p>						

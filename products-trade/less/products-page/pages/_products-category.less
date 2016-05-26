@@ -21,6 +21,9 @@
 @checkbox-bg: #f4f4f4;
 @checkbox-checked-bg:#dcdcdc;
 @checkbox-checked-arrow:black;
+
+@we-love-color: @main-color;
+
 .pricing{
 	background: url(../images/pricing-bg.jpg) repeat;
 	color: white;
@@ -305,6 +308,22 @@
 			}
 			.product-image{
 				border-bottom: 1px solid @border-product;
+				img[data-lazy]{
+					opacity: 0;
+				}
+			}
+			.we-love{
+				position: absolute;
+				top: 0;
+				right: 0;
+				z-index: 2;
+				margin-top: -15px;
+				margin-right: -15px;
+				svg{
+					fill: @we-love-color;
+					width: 60px;
+					height: 60px;
+				}
 			}
 			.product-details-wrap{
 				h3{

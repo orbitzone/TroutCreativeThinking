@@ -225,15 +225,19 @@
                 <li><a href="#">Hospital and Health Care</a></li>
                 <li><a href="#">Education</a></li>
                 <li><a href="#">Public Spaces</a></li>
-                <li><a href="#">Aged Care</a></li>
-                <li><a href="#">Safety and Environmental</a></li>                
+                <li><a href="#">Aged Care</a></li>                
               </ul>
             </div>
             <div class="meganav-column">
               <ul class="list-unstyled">
+                <li><a href="#">Safety and Environmental</a></li>                
                 <li><a href="#">Security</a></li>
                 <li><a href="#">Commercial Food Premises</a></li>
                 <li><a href="#">Sports and Leisure</a></li>
+              </ul>
+            </div>
+            <div class="meganav-column">
+              <ul class="list-unstyled">
                 <li><a href="#">AS1428.1/Ambulant</a></li>
               </ul>
             </div>

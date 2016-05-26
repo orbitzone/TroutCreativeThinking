@@ -574,6 +574,9 @@
 		position: relative;
 		text-align: center;
 		padding: 0 11%;
+		@media (min-width: @screen-sm){
+			padding: 0 0 0 15px;
+		}
 		@media (min-width: @screen-md){
 			padding: 0 11%;
 		}
@@ -583,8 +586,8 @@
 				font-size: 35px;				
 			}
 			.product-description{
-				font-size: 22px;
-				@media (min-width: @screen-sm){
+				font-size: 18px;
+				@media (min-width: @screen-md){
 					font-size: 22px;
 				}
 			}
@@ -1212,6 +1215,25 @@
 			}
 			@media (min-width: @screen-lg){
 				padding: 0 11%;
+			}
+		}
+		&.installation-section,
+		&.videos-section,
+		&.product-suggestion-section{
+			.section-content{
+				padding: 0 30px;
+				@media (min-width: @screen-sm){
+					padding: 0;
+				}
+				@media (min-width: @screen-lg){
+					padding: 0 5%;
+				}
+			}
+		}
+		&.installation-section{
+			.file-download-area{
+				margin-left: 7%;
+				margin-right: 7%;
 			}
 		}
 		.expand-section{

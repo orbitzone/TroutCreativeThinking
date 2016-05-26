@@ -4627,6 +4627,11 @@ MAIN TITLE
   text-align: center;
   padding: 0 11%;
 }
+@media (min-width: 768px) {
+  #product-pages .main-section#product-detail .product-description-wrap {
+    padding: 0 0 0 15px;
+  }
+}
 @media (min-width: 992px) {
   #product-pages .main-section#product-detail .product-description-wrap {
     padding: 0 11%;
@@ -4639,9 +4644,9 @@ MAIN TITLE
   font-size: 35px;
 }
 #product-pages .main-section#product-detail .product-description-wrap .product-intro .product-description {
-  font-size: 22px;
+  font-size: 18px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #product-pages .main-section#product-detail .product-description-wrap .product-intro .product-description {
     font-size: 22px;
   }
@@ -5389,6 +5394,29 @@ MAIN TITLE
   #product-pages .main-section#product-detail .section .section-content {
     padding: 0 11%;
   }
+}
+#product-pages .main-section#product-detail .section.installation-section .section-content,
+#product-pages .main-section#product-detail .section.videos-section .section-content,
+#product-pages .main-section#product-detail .section.product-suggestion-section .section-content {
+  padding: 0 30px;
+}
+@media (min-width: 768px) {
+  #product-pages .main-section#product-detail .section.installation-section .section-content,
+  #product-pages .main-section#product-detail .section.videos-section .section-content,
+  #product-pages .main-section#product-detail .section.product-suggestion-section .section-content {
+    padding: 0;
+  }
+}
+@media (min-width: 1200px) {
+  #product-pages .main-section#product-detail .section.installation-section .section-content,
+  #product-pages .main-section#product-detail .section.videos-section .section-content,
+  #product-pages .main-section#product-detail .section.product-suggestion-section .section-content {
+    padding: 0 5%;
+  }
+}
+#product-pages .main-section#product-detail .section.installation-section .file-download-area {
+  margin-left: 7%;
+  margin-right: 7%;
 }
 #product-pages .main-section#product-detail .section .expand-section.opened {
   display: block;

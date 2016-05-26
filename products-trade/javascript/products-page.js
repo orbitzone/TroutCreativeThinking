@@ -167,6 +167,45 @@ var product_pages = {
             sameHeight('.meganav-section');
         });        
     },
+    lightboxes: function(){
+        //Fire lighbox with video from elements with the lightbox-video class.
+        $('.lightbox-video').on('click', function(){
+            var video = $(this).data('video');
+            if(!deviceMobile){
+                player.loadVideoById(
+                    {'videoId': video,
+                   'suggestedQuality': 'large'
+                });
+            }else{
+                player.cueVideoByUrl('http://www.youtube.com/v/'+video+'?version=3',0,"medium");                
+            }
+            $('#video-lightbox').addClass('show');
+            return false;
+        });
+        //Actions to close the lightbox (video and slider) when click on background or X icon.
+        $('.lightbox').on('click', function(e){
+            if($('.slider-lightbox').hasClass('show')){
+                var current = $(".slider-lightbox .product-images-slider").slick('slickCurrentSlide');
+                $(".product-images-wrap .product-images-slider").slick('slickGoTo',current, true);
+                $(".product-images-wrap .product-thumbs-slider").slick('slickGoTo',current, true);
+                if($(".product-images-wrap .product-thumb.slick-cloned").length == 0){
+                    $(".product-images-wrap .product-thumb").removeClass('slick-current');
+                    $(".product-images-wrap .product-thumb:eq("+current+")").addClass('slick-current');
+                }
+            }
+            if($('#video-lightbox').hasClass('show')){
+                player.stopVideo();
+            }
+            if($(e.target).parents('.lightbox-content').length == 0){
+                if($(e.target).parents('.slider-lightbox').length > 0 || $(e.target).hasClass('slider-lightbox')){
+                    $('#slider-lightbox').removeClass('show');
+                }else{
+                    $('#video-lightbox').removeClass('show');
+                }
+                
+            }            
+        });
+    },
     filters: function(){
         if($('.with-filters').length > 0){
             $('aside .filter .show-more-less').on('click', function(){
@@ -1293,6 +1332,7 @@ var product_pages = {
         });        
     },
     productsLanding: function(){
+        this.lightboxes();
         $('.slider').each(function(){
             var slidesToShow = $(this).data('slides-to-show');
             if(!slidesToShow){
@@ -1466,7 +1506,7 @@ var product_pages = {
         if(deviceMobile){
             event = 'touchend';
         }
-        
+        this.lightboxes();
         //Add action to back to top button
         $('.back-to-top').hide();
         $('.back-to-top').on('click', function(e){
@@ -1499,22 +1539,6 @@ var product_pages = {
         //Copy Product Images slider into the lightbox
         var slider = $('.product-images').clone();
         $('#slider-lightbox .lightbox-content').append(slider);
-        
-        //Fire lighbox with video from elements with the lightbox-video class.
-        $('.lightbox-video').on('click', function(){
-            var video = $(this).data('video');
-            if(!deviceMobile){
-                player.loadVideoById(
-                    {'videoId': video,
-                   'suggestedQuality': 'large'
-                });
-            }else{
-                player.cueVideoByUrl('http://www.youtube.com/v/'+video+'?version=3',0,"medium");                
-            }
-            $('#video-lightbox').addClass('show');
-            return false;
-        });
-        
         
         //Initialize product images sliders
         $(".product-images-wrap").each(function(){
@@ -1643,31 +1667,6 @@ var product_pages = {
                 $('.slider-lightbox').addClass('show');
             }
         });
-
-        //Actions to close the lightbox (video and slider) when click on background or X icon.
-        $('.lightbox').on(event, function(e){
-            if($('.slider-lightbox').hasClass('show')){
-                var current = $(".slider-lightbox .product-images-slider").slick('slickCurrentSlide');
-                $(".product-images-wrap .product-images-slider").slick('slickGoTo',current, true);
-                $(".product-images-wrap .product-thumbs-slider").slick('slickGoTo',current, true);
-                if($(".product-images-wrap .product-thumb.slick-cloned").length == 0){
-                    $(".product-images-wrap .product-thumb").removeClass('slick-current');
-                    $(".product-images-wrap .product-thumb:eq("+current+")").addClass('slick-current');
-                }
-            }
-            if($('#video-lightbox').hasClass('show')){
-                player.stopVideo();
-            }
-            if($(e.target).parents('.lightbox-content').length == 0){
-                if($(e.target).parents('.slider-lightbox').length > 0 || $(e.target).hasClass('slider-lightbox')){
-                    $('#slider-lightbox').removeClass('show');
-                }else{
-                    $('#video-lightbox').removeClass('show');
-                }
-                
-            }            
-        });
-
 
         //Initialise video slider
         $(".video-slider").slick({

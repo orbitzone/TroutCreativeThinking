@@ -3939,7 +3939,8 @@ MAIN TITLE
   display: block;
   max-width: 90%;
   color: white;
-  padding: 15px 0;
+  padding: 16px 0;
+  line-height: 1;
   border-bottom: 1px solid #c4c4c4;
 }
 #product-pages .meganav .meganav-content .meganav-main li {

@@ -162,8 +162,7 @@ var product_pages = {
         });
     },
     navigation: function(){
-        sameHeight('.meganav-section');
-        $(window).on('resize', function(){
+        function calculateHeights(){
             $('.meganav-submenu a').height('auto');
             var maxHeight = $('.meganav-submenu a').first().height();
             $('.meganav-submenu a').each(function(){
@@ -173,7 +172,8 @@ var product_pages = {
             });
             $('.meganav-submenu a').height(maxHeight);
             sameHeight('.meganav-section');
-        });
+        };
+        calculateHeights();
         function closeNavigation(){
             $('.meganav').removeClass('open'); 
             $('.meganav .meganav-submenu').removeClass('open');
@@ -184,7 +184,8 @@ var product_pages = {
         var menuover = false;
         $('.subnavbar a[title=Products]').on('mouseover', function(){
             $('.meganav').addClass('open');
-            $(window).resize();
+            calculateHeights();
+            //$(window).resize();
         }).on('mouseout', function(){
             menuover = setTimeout(function(){
                 closeNavigation();
@@ -193,11 +194,12 @@ var product_pages = {
         $('.meganav').on('mouseover', function(){
             clearTimeout(menuover);
             $('.meganav').addClass('open');
-            $(window).resize();
+            calculateHeights();
+            //$(window).resize();
         }).on('mouseout', function(){
            menuover = setTimeout(function(){ 
                 closeNavigation();
-            },10);            
+            },10);           
         });
         $('.meganav .meganav-main a').on('mouseover', function(){
             clearTimeout(menuover);
@@ -206,7 +208,8 @@ var product_pages = {
             $(this).parent().addClass('open');
             var option = $(this).data('submenu');
             $('.meganav .meganav-submenu[data-submenu-for="'+option+'"]').addClass('open');
-            $(window).resize();
+            calculateHeights();
+            //$(window).resize();
         });
     },
     lightboxes: function(){

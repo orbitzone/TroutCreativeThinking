@@ -169,7 +169,7 @@ var product_pages = {
     },
     lightboxes: function(){
         //Fire lighbox with video from elements with the lightbox-video class.
-        $('.lightbox-video').on('click', function(){
+        $(document).on('click','.lightbox-video', function(){
             var video = $(this).data('video');
             if(!deviceMobile){
                 player.loadVideoById(
@@ -183,7 +183,7 @@ var product_pages = {
             return false;
         });
         //Actions to close the lightbox (video and slider) when click on background or X icon.
-        $('.lightbox').on('click', function(e){
+        $(document).on('click','.lightbox', function(e){
             if($('.slider-lightbox').hasClass('show')){
                 var current = $(".slider-lightbox .product-images-slider").slick('slickCurrentSlide');
                 $(".product-images-wrap .product-images-slider").slick('slickGoTo',current, true);

@@ -7,13 +7,27 @@
 	</div>
 </div>
 <!--END BREAD CRUMB -->
+<!--START POSTCODE INPUT -->
+<div class="postcode-input">
+	<div class="container-fluid section-container">
+		<div class="row">
+			<div class="col-xs-12">
+				<span class="text"><b>Pricing</b>
+					<span class="enter-your-postcode">Enter your postcode for current pricing. </span>
+					<span class="postcode-text-wrap">Current postcode <span class="postcode-text"></span> <span class="postcode-link">(<a href="#">change</a>)</span></span>
+				</span>
+				<input type="text" name="userpostcode" placeholder="Postcode" class="input-medium" inputmode="numeric" minlength="4" maxlength="4" min="0" max="9999" pattern="[0-9]*">				
+			</div>
+		</div>
+	</div>	
+</div>
+<!--END POSTCODE INPUT -->
 <!--START PRODUCTS LANDING -->
 <div class="main-section" id="products-landing">
 	<?php include "templates/includes/retail/Widget.php" ?>
 	<div class="products-landing-wrap">
 		<div class="container-fluid section-container">
 			<div class="content-wrapper with-filters">						
-				<?php include 'templates/includes/retail/filters.php';?>
 				<div class="content-main">
 					<form action="" id="search">
 						<input type="text" name="search" placeholder="Search Product">
@@ -27,6 +41,7 @@
 					<div class="intro">
 						<p>Introduction to product category copy. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida sodales aliquet. Proin nec risus sit amet nunc sollicitudin ultrices ut vel nulla. Curabitur eu dignissim velit. Praesent tincidunt non diam sit amet mattis. Nam in volutpat dui. Proin ex urna, tempor in finibus eget, convallis eu mi.</p>						
 					</div>
+					<?php include 'templates/includes/retail/filters.php';?>
 					<!--START PEOPLE ALSO BOUGHT SECTION -->
 					<div class="section latest-releases">
 						<h2>Latest Releases</h2>
@@ -163,7 +178,7 @@
 						</a>					
 					</div>
 					<!--START PEOPLE ALSO BOUGHT SECTION -->
-					<div class="section articles">
+					<div class="section articles with-icon">
 						<div class="title">
 							<div class="icon">
 									<svg width="220px" height="220px" viewBox="0 0 220 220">									 

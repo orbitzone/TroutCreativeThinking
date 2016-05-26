@@ -8935,6 +8935,9 @@ MAIN TITLE
 #product-pages .main-section#products-landing .articles {
   margin-bottom: 30px;
 }
+#product-pages .main-section#products-landing .articles.with-icon {
+  padding-top: 60px;
+}
 #product-pages .main-section#products-landing .articles .article {
   margin-bottom: 30px;
 }

@@ -12,7 +12,7 @@
 	<?php include "templates/includes/retail/Widget.php" ?>
 	<div class="products-landing-wrap">
 		<div class="container-fluid section-container">
-			<div class="content-wrapper with-filters">
+			<div class="content-wrapper with-filters">						
 				<?php include 'templates/includes/retail/filters.php';?>
 				<div class="content-main">
 					<form action="" id="search">
@@ -21,6 +21,12 @@
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="20px" height="20px"><title>search</title> <circle fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="2.5" stroke-miterlimit="10" cx="14.6" cy="14.6" r="13.3"/> <line fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-miterlimit="10" x1="24.1" y1="24" x2="38.8" y2="38.8"/></svg>
 						</button>
 					</form>
+					<div class="banner">
+						<img src="templates/images/retail/products-category/hero.jpg" alt="Hero"/>
+					</div>
+					<div class="intro">
+						<p>Introduction to product category copy. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida sodales aliquet. Proin nec risus sit amet nunc sollicitudin ultrices ut vel nulla. Curabitur eu dignissim velit. Praesent tincidunt non diam sit amet mattis. Nam in volutpat dui. Proin ex urna, tempor in finibus eget, convallis eu mi.</p>						
+					</div>
 					<!--START PEOPLE ALSO BOUGHT SECTION -->
 					<div class="section latest-releases">
 						<h2>Latest Releases</h2>
@@ -132,7 +138,6 @@
 					<!--START PEOPLE ALSO BOUGHT SECTION -->
 					<div class="section articles">
 						<div class="title">
-							<h2>Stories from The Powder Room</h2>
 							<div class="icon">
 									<svg width="220px" height="220px" viewBox="0 0 220 220">									 
 	<path fill="#E50066" d="M110,0c60.8,0,110,49.2,110,110s-49.2,110-110,110S0,170.8,0,110S49.2,0,110,0"/>
@@ -250,27 +255,33 @@
 	</svg>
 
 								</div>
+								<h2>Stories from The Powder Room</h2>
+							
 						</div>						
 						<div class="row">
 							<div class="col-sm-6">
-								<div class="article-thumbnail">
-									<img src="templates/images/retail/products-landing/article.jpg" alt="Article"/>
+								<div class="article">
+									<div class="article-thumbnail">
+										<img src="templates/images/retail/products-landing/article.jpg" alt="Article"/>
+									</div>
+									<div class="article-description">
+										<h3>Article Title</h3>
+										<p>Sassy and chic, Milli embodies fashion - setting the standard for in Vogue  tapware design. Inspired by the beauty.</p>
+									</div>
+									<a href="#" class="btn black-button">Read More</a>
 								</div>
-								<div class="article-description">
-									<h3>Article Title</h3>
-									<p>Sassy and chic, Milli embodies fashion - setting the standard for in Vogue  tapware design. Inspired by the beauty.</p>
-								</div>
-								<a href="#" class="btn black-button">Read More</a>
 							</div>
 							<div class="col-sm-6">
-								<div class="article-thumbnail">
-									<img src="templates/images/retail/products-landing/article.jpg" alt="Article"/>
+								<div class="article">
+									<div class="article-thumbnail">
+										<img src="templates/images/retail/products-landing/article.jpg" alt="Article"/>
+									</div>
+									<div class="article-description">
+										<h3>Article Title</h3>
+										<p>Sassy and chic, Milli embodies fashion - setting the standard for in Vogue  tapware design. Inspired by the beauty.</p>
+									</div>
+									<a href="#" class="btn black-button">Read More</a>
 								</div>
-								<div class="article-description">
-									<h3>Article Title</h3>
-									<p>Sassy and chic, Milli embodies fashion - setting the standard for in Vogue  tapware design. Inspired by the beauty.</p>
-								</div>
-								<a href="#" class="btn black-button">Read More</a>
 							</div>
 						</div>						
 					</div>

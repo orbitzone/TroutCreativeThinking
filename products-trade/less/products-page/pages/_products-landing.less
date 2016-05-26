@@ -11,13 +11,51 @@
 
 .main-section#products-landing{
 	#search{
-		margin-bottom: 50px;
+		margin-bottom: 25px;
+	}
+	.banner{
+		margin-bottom: 25px;
+	}
+	.intro{
+		margin-bottom: 40px;
+		@media (min-width: @screen-sm){
+			margin-bottom: 60px;
+		}
 	}
 	.section{
-		margin-bottom: 60px;
+		margin-bottom: 40px;
+		@media (min-width: @screen-sm){
+			margin-bottom: 60px;
+		}
+	}
+
+	.slider{
+		padding: 0 20px;
+		.slick-next{
+			right: 0;
+		}
+		.slick-prev{
+			left: 0;
+		}
+		.slick-next,
+		.slick-prev{
+			svg{
+				width: 15px;
+				height: 25px;
+			}
+		}
+		@media (min-width: @screen-lg){
+			margin: 0 -7px;
+			padding: 0;	
+			.slick-next{
+				right: -20px;
+			}
+			.slick-prev{
+				left: -20px;
+			}
+		}
 	}
 	.latest-releases-slider{
-		margin: 0 -7px;
 		margin-bottom: 30px;
 		.slide{
 			padding: 0 7px;
@@ -63,23 +101,25 @@
 		.slick-next,
 		.slick-prev{
 			margin-top: -65px;
-			svg{
-				width: 13px;
-				height: 23px;
-			}
-		}
-		.slick-next{
-			right: -20px;
-		}
-		.slick-prev{
-			left: -20px;
 		}
 	}
 	.articles{
+		margin-bottom: 30px;
+		.article{
+			margin-bottom: 30px;			
+		}
 		.title{
 			position: relative;
 			z-index: 2;
-			padding-left: 130px;
+			h2{
+				max-width: 230px;
+				@media (min-width: @screen-sm){
+					max-width: inherit;
+				}
+			}
+			@media (min-width: @screen-sm){
+				padding-left: 130px;				
+			}
 			@media (min-width: @screen-md){
 				padding-left: 100px;
 			}
@@ -87,9 +127,15 @@
 				padding-left: 75px;
 			}
 			.icon{
-				position: absolute;
-				top: -45px;
-				left: -10px;
+				text-align: center;
+				display: block;
+				margin: 0 auto;
+				margin-bottom: 20px;
+				@media (min-width: @screen-sm){
+					position: absolute;
+					top: -45px;
+					left: -10px;
+				}
 				@media (min-width: @screen-md){
 					top: -45px;
 					left: -35px;
@@ -112,8 +158,8 @@
 		margin: 0 -5px;
 		.clearfix();
 		.category{
-			padding: 0 5px;
-			margin-bottom: 10px;
+			padding: 0 10px;
+			margin-bottom: 20px;
 			float: left;
 			width: 50%;
 			@media (max-width: @screen-xs-max){
@@ -125,6 +171,8 @@
 				}
 			}
 			@media (min-width: @screen-sm){
+				padding: 0 5px;
+				margin-bottom: 10px;
 				width: 25%;
 				&:nth-child(4n){
 					clear: right;
@@ -195,22 +243,6 @@
 		}
 	}
 	.brands{
-		.brands-slider{
-			margin: 0 -7px;
-			.slick-next,
-			.slick-prev{
-				svg{
-					width: 13px;
-					height: 23px;
-				}
-			}
-			.slick-next{
-				right: -20px;
-			}
-			.slick-prev{
-				left: -20px;
-			}
-		}
 		.brand{
 			padding: 0 7px;
 			a{

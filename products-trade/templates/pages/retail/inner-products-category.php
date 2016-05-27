@@ -3,6 +3,7 @@
 	<div class="breadcrumb-inner">
 		<ul class="breadcrumbs">
 			<li><a href="#">Products</a></li>
+            <li><a href="#">Pumps</a></li>
 		</ul>
 	</div>
 </div>

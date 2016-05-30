@@ -139,6 +139,7 @@ var product_pages = {
     itemsInCart: 0,
     itemsInWishlist: 0,
     type: '',
+
     init: function() {
         this.navigation();
         if($('#product-pages').hasClass('retail')){
@@ -161,6 +162,7 @@ var product_pages = {
             $(window).resize();
         });
     },
+
     navigation: function(){
         function calculateHeights(){
             $('.meganav-submenu a').height('auto');
@@ -209,6 +211,8 @@ var product_pages = {
         }
         $('.subnavbar a[title=Products]').on(action, function(e){
             e.stopPropagation();
+            console.log('hover on products');
+            console.log($(this).data('times'));
             if($(this).data('times') != 1){
                 if(deviceMobile && $('.meganav').hasClass('open')){
                     closeNavigation();
@@ -221,6 +225,12 @@ var product_pages = {
                 }
             }                
             //$(window).resize();
+        });
+        $('.subnavbar a[title=Products]').on('mouseout', function(e){
+            // fix for meganav not opening
+            // resetting the data times to 0 on mouseout
+            e.stopPropagation();
+            $(this).data('times',0);
         });
         $('.meganav').on(action, function(e){
             e.stopPropagation();
@@ -248,6 +258,7 @@ var product_pages = {
             //$(window).resize();
         });  
     },
+
     lightboxes: function(){
         //Fire lighbox with video from elements with the lightbox-video class.
         $(document).on('click','.lightbox-video', function(){

@@ -13,7 +13,8 @@ module.exports = function(grunt) {
         files: [
           {
               "css/reece-global.css": "less/reece-global.less",
-              "css/font-awesome.css": "less/font-awesome/font-awesome.less"
+              "css/font-awesome.css": "less/font-awesome/font-awesome.less",
+              "css/name-plumber.css": "less/name-plumber.less",
           }
         ]
       }
@@ -31,6 +32,13 @@ module.exports = function(grunt) {
           ]
       }
     },
+    uglify: {
+        my_target: {
+            files: {
+                'javascript/name-plumber.min.js': ['javascript/name-plumber.js']
+            }
+        }
+    },
     watch: {
       options: {
         livereload: 35728
@@ -42,6 +50,10 @@ module.exports = function(grunt) {
         options: {
           spawn: false //important so that the task runs in the same context
         }
+      },
+      javascript: {
+        files : ['javascript/name-plumber.js'],
+        tasks: ['uglify']
       }
     }
   });
@@ -50,6 +62,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.registerTask('default', ['copy', 'less', 'watch']);
 };
 

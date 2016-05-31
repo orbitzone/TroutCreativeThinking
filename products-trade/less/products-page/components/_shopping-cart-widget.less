@@ -881,9 +881,17 @@
 									height: 26px;
 									fill: @remove-icon-color;
 								}
+								&:hover{
+									svg{
+										fill: @pink;
+									}
+								}
 							}
 						}
 						.item-details{
+							span{
+								display: block;
+							}
 							p{
 								line-height: 1em;
 								margin-bottom:3px;
@@ -1162,6 +1170,11 @@
 								.remove-from-list{
 									svg{
 										fill: @remove-icon-active-color;
+									}
+									&:hover{
+										svg{
+											fill: black;
+										}
 									}
 								}
 							}

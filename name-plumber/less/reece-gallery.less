@@ -1,0 +1,406 @@
+/* GALLERY TEMPLATE */
+@import "../bower_components/slick-carousel/slick/slick-theme.less";
+@import "../bower_components/slick-carousel/slick/slick.less";
+      
+// gallery page container
+.reece-b3-gallery {
+    
+    margin-bottom: 40px;
+
+    // reece styles
+    h1 {
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 1;
+    }
+    
+    h3 {
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 1;
+    }
+    
+    h4 {
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 1;
+    }
+    
+    h6 {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    
+    p {
+      font-size: 15px;
+      font-weight: 300;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+      vertical-align: middle;
+      border: 0;
+    } 
+    
+    .button.button-dark {
+      background: #3F3F3F;
+      color: #FFF;
+      cursor: hand;
+      .transition(background 0.5s ease-in-out);
+      
+      &:hover,&:active,&:focus {
+        background: #999;
+        color: #FFF;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      
+    }
+
+    .button {
+      padding: 10px 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      display: inline-block;
+      font-size: 14px;
+      .border-radius(3px);
+    }
+    
+    .article-gallery {
+      
+      .gallery-thumb {
+        margin: 20px -11px;
+        .image-wrap {
+          margin: 0 10px;
+          cursor: pointer;
+        }
+      } 
+      
+      .slick-next.large-icon {
+        right: 30px;
+      }
+      
+      .slick-prev.large-icon {
+        left: 30px;
+      }
+
+      .slick-next {
+        right: 20px;
+      }
+      
+      .slick-prev {
+        left: 20px;
+      }
+      
+      .large-icon {
+        line-height: 40px;
+      }
+      .slick-next,.slick-prev {
+        z-index: 100;
+      }
+      
+      .slick-prev:before {
+        font-family: FontAwesome;
+        content: "\f053";
+      }
+      .slick-next:before {
+        font-family: FontAwesome;
+        content: "\f054";
+      }
+      .large-icon:before {
+        font-size: 40px;
+        line-height: 40px;
+        position: relative;
+        top: -10px;
+      }
+      
+    } 
+    
+    // overrides
+    
+    .well {
+      border-radius: 1px;
+      border: none;
+      box-shadow: none;
+      background-color: #F1F2F2;
+      padding: 12px;
+    }
+    
+    .thumbnail {
+      border: none;
+      padding: 0;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      background-color: transparent;
+      
+      .caption {
+        padding-left: 0;
+      }
+      
+      .caption h4,.caption p {
+        
+        text-decoration: none !important;
+        .transition(all 0.2s linear);
+      }
+      
+      &:hover,&:focus,&:active{
+        
+        text-decoration: none !important;
+        
+        .caption h4,.caption p {
+          text-decoration: none !important;
+          color:#666;
+        }
+        
+        .mask img {
+          .scale(1.3);
+        }
+        
+      }
+      
+      .mask {
+        display: block;
+        overflow: hidden;
+        
+        img {
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 100%;
+          height: auto;
+          transform: scale(1.2);
+          -webkit-backface-visibility: hidden;
+          -webkit-transform: translateZ(0) scale(1.0, 1.0);
+          .transition(all 0.4s ease-out);
+          
+        }
+        
+      }
+      
+    }
+    
+    // galery header / social share
+    .reece-b3-gallery-header {
+        
+        margin-top: 35px;
+        margin-bottom: 20px;
+        
+        h1 {
+          float: left;
+        }
+        
+        .social-share{
+        	
+          display: block;
+          width: 100%;
+          clear: both;
+          float: left;
+          height: 33px;
+          position: relative;
+          margin-top: 10px;
+          
+          @media (min-width: 768px) {
+            float: right;
+            width: 82px;
+            clear: none;
+          }
+          
+        	a{
+
+        		font-size:28px;
+            color: @grayDarker;
+            .transition(all 0.2s linear);
+              
+        		&:hover,&:focus,&:active{
+        			text-decoration: none;
+        			color:@grayLight;
+        		}
+        	}
+        }
+    }
+    
+    /* Bootstrap 3 Carousel with thumbnail navigation */
+    /* index-old.php */
+    /*.carousel {
+      
+      .item .thumb img,.item img {
+        width: 100%;
+      }
+    
+      .carousel-control {
+        background: none;
+        filter: none;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 10%;
+        height: 100%;
+        .opacity(0.7);
+        .transition(all 0.2s linear);
+        
+        &:hover,&:active,&:focus {
+          .opacity(1);
+        }
+        
+        .glyphicon-chevron-right,
+        .glyphicon-chevron-left {
+          width: 40px;
+          height: 40px;
+          margin-top: -20px;
+          font-size: 40px;
+        }
+        
+        .glyphicon-chevron-right:before,
+        .glyphicon-chevron-left:before {
+          color: white;
+          font-size: 40px;
+        }
+        
+      }
+      
+    }
+      
+    #carousel {
+      
+      margin-bottom: 10px;
+      
+      @media (min-width: @navbarCollapseWidth) {
+        margin-bottom: 20px;
+      }
+      
+    }
+    
+    #thumbcarousel {
+        margin-bottom: 40px;
+        
+        .carousel-control {
+          
+          .glyphicon-chevron-right,
+          .glyphicon-chevron-left {
+            width: 20px;
+            height: 20px;
+            font-size: 20px;
+            margin-top: -10px;
+          }
+          
+          .glyphicon-chevron-right:before,
+          .glyphicon-chevron-left:before {
+            font-size: 20px;
+          }
+          
+        }
+  
+        
+        .item {
+          
+          .thumb {
+            
+            position: relative;
+            width:  23.330%;
+          	cursor: pointer;
+          	float: left;
+            margin-right: 2.22222222%;
+            
+            &.last {
+              margin-right: 0;
+            }
+            
+          }
+          
+        }
+        
+        @media (max-width: 320px) {
+          display: none;
+        }
+    }*/
+    
+    // gallery details
+    .gallery-details {
+      margin-bottom: 40px;
+      
+      h4 {
+        margin-bottom: 0;
+      }
+      
+    }
+    
+    // related products
+    .related-products {
+      
+      h4 {
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 1.2;
+      }
+      
+    }
+    
+    // inspiration plans
+    .inspiration-plans {
+      
+      .display-plans {
+        
+        .view-plan {
+          display: block;
+        }
+        
+        .hide-plan {
+          display: none;
+        }
+        
+        &.active {
+          .view-plan {
+            display: none;
+          }
+          
+          .hide-plan {
+            display: block;
+          }
+        }
+        
+      }
+      
+      .plans-wrapper {
+          
+          margin-top: 10px;
+          
+          img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+          }
+          
+      }
+      
+      .plans-wrapper {
+        display: none;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      
+    }
+    
+    // products used container
+    .products-used {
+      
+      border-top: solid 1px #d9d9d9;
+      
+      .products-used-header {
+          margin-bottom: 20px;
+          margin-top: 30px;
+      }
+      
+      h4 {
+        font-size: 15px;
+        text-transform: none;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      
+    }
+    
+} /* /.reece-b3-gallery */

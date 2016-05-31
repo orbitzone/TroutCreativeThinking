@@ -171,6 +171,12 @@ html.ie9 #product-pages .main-section#product-detail .lightbox.show {
   display: block;
   visibility: visible;
 }
+html.ie {
+  overflow-y: scroll;
+}
+@-ms-viewport {
+  width: auto !important;
+}
 #product-pages {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

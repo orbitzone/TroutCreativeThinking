@@ -141,6 +141,10 @@ var product_pages = {
     type: '',
     init: function() {
         this.navigation();
+        if(ieV){
+            $('html').addClass('ie');
+            $('html').addClass('ie'+ieV);
+        }
         if($('#product-pages').hasClass('retail')){
             this.type = 'retail'; 
         }else{

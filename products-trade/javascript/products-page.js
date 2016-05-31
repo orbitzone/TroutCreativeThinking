@@ -215,8 +215,6 @@ var product_pages = {
         }
         $('.subnavbar a[title=Products]').on(action, function(e){
             e.stopPropagation();
-            console.log('hover on products');
-            console.log($(this).data('times'));
             if($(this).data('times') != 1){
                 if(deviceMobile && $('.meganav').hasClass('open')){
                     closeNavigation();

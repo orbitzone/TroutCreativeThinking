@@ -39,3 +39,17 @@ Notice that from line 15 to 56 we added some css to move the content on the foot
 
 We suggest to remove the cart icon on the header, at least on the pages that include the widget.
 
+
+/** 
+IE Issues 
+**/
+
+Using boostrap there is an issue on IE 10 and 11 were the scrollbar overlaps the content on the page, you have this bug currently on your live site, you can notice how the scrollbar overlaps the cart(0) on the header. This is something related with how bootstrap manage the responsive with on IE, to fix this you need to add a hack adding a class to the html tag inlcuding ie when the browser is ie. Then on the css you need to add this:
+
+html.ie{
+	overflow-y: scroll;
+	@-ms-viewport { width: auto !important; }
+}
+
+You can see this on this project code under the file less/_ie.less
+

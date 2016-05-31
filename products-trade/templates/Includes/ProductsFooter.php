@@ -14,5 +14,5 @@
 <script type="text/javascript" src="javascript/bootstrap3-typeahead.min.js"></script>
 <script type="text/javascript" src="javascript/imagesloaded.pkgd.min.js"></script>
 <script type="text/javascript" src="javascript/mustache.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
-<script type="text/javascript" src="javascript/products-page.js"></script>
+<script src="javascript/TweenMax.min.js"></script>
+<script type="text/javascript" src="javascript/products-page.min.js"></script>

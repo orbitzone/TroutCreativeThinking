@@ -7,7 +7,7 @@
             <div class="meganav-column">
               <ul class="list-unstyled">
                 <li>
-                  <a href="#">
+                  <a href="trade-products-category.php" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                           <path id="bathroom" class="line" d="M36,19h22.5c0,10-8.7,22-19.3,22H20.7C10.2,41,1.5,29,1.5,19H16H36z M56.4,27.2
@@ -18,7 +18,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="trade-products-category.php" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                           <path id="civil" class="line" d="M17.9,34.1H9V8.9h8.9V34.1z M51,51.1v-34c0-1.6-1.3-3-3-3H18.7 M43.1,51.1V24.7c0-1.6-1.3-3-3-3
@@ -29,7 +29,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="trade-products-category.php" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                           <path id="commercial" class="line" d="M48,55.7H12V4.3H48V55.7z M11.9,34.5h36.3 M11.9,24.2h36.3 M11.9,14h36.3 M36,44.4H24v11.3h12
@@ -40,7 +40,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="trade-products-category.php" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                         <g id="fire">
@@ -64,7 +64,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="trade-products-category.php" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                         <path id="gas" class="line" d="M30,52c-9,0-16.4-7.3-16.4-16.4c0-11.4,12.2-18.1,14-27.7c3.7,2.2,18.7,14.2,18.7,27.7
@@ -79,7 +79,7 @@
             <div class="meganav-column">
               <ul class="list-unstyled">
                 <li>
-                  <a href="#">
+                  <a href="trade-products-category.php" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                         <g id="heating-cooling">
@@ -96,7 +96,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="trade-products-category.php" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                        <path id="hot-water-systems" class="line" d="M40.1,45H20.2c-1.6,0-3-1.3-3-3V9.5c0-1.7,1.4-3,3-3h19.8c1.6,0,3,1.3,3,3V42
@@ -110,7 +110,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="trade-products-category.php" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                         <path id="irrigation" class="line" d="M47.7,35.9c0,9.7-7.9,17.7-17.7,17.7s-17.7-7.9-17.7-17.7c0-7.7,11-18.7,15.6-27.9
@@ -122,7 +122,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="trade-products-category.php" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                         <path id="kitchen" class="line" d="M37,49V22.9c0-4.3-3.7-7.7-8-7.7s-8,3.5-8,7.8V30h-4v-7.1c0-6.9,4.8-12.5,11.7-12.5S41,16,41,22.8
@@ -133,7 +133,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="trade-products-category.php" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                         <g id="laundry">
@@ -154,7 +154,7 @@
             <div class="meganav-column">
               <ul class="list-unstyled">
                 <li>
-                  <a href="#">
+                  <a href="trade-products-category.php" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                        <path id="pipe-fittings" class="line" d="M46.1,15.7h5.3v15.2h-5.3V15.7z M22.1,39v5.3h16.6V39H22.1z M8.5,30.9h5.3V15.7H8.5V30.9z
@@ -165,7 +165,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="trade-products-category.php" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                        <path id="plumbing" class="line" d="M40.1,16.8c2.5,1.7,4.1,3.5,5.1,5c3.7,5.5,3.8,12.7,0.4,18.7c-3.1,5.5-8.4,8.6-14.3,8.6
@@ -179,7 +179,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="trade-products-category.php" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                        <path id="pool-spa" class="line" d="M18.5,40.2 M18.5,41.4 M9.5,40.2 M9.5,41.4 M46.3,16.5v-2.7c0-2.7-2.2-5-5-5h0c-2.7,0-5,2.2-5,5
@@ -195,7 +195,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="trade-products-category.php" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                       <path id="pumps" class="line" d="M35.5,48.5l-21.8-0.4c-3.9,0-7.2-3.2-7.2-7.2v-1.1c0-3.9,3.2-7.2,7.2-7.2l21.7-0.4 M35.6,48.5
@@ -208,7 +208,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="trade-products-category.php" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                        <path id="refrigeration" class="line" d="M29.9,30.4c5.2,0,7.2-6.9,13.7-6.9c2.4,0,4.3,2.8,4.3,6.2v0c0,3.4-1.9,6.2-4.3,6.2
@@ -226,7 +226,7 @@
             <div class="meganav-column">
               <ul class="list-unstyled">
                 <li>
-                  <a href="#">
+                  <a href="trade-products-category.php" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                        <path id="roofing" class="line" d="M21.5,18.3l2.9,2.9l16.6,16.6l-3,3L21.5,24.3L4.9,40.9l-3-3l16.6-16.6L21.5,18.3z M36,17.7
@@ -237,7 +237,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="trade-products-category.php" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                        <path id="surface-drainage" class="line" d="M4.7,15.4h50.6 M4.7,22.7h50.6 M4.7,30h50.6 M4.7,37.3h50.6 M4.7,44.6h50.6 M33.6,44.5
@@ -249,7 +249,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="trade-products-category.php" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                        <path id="tools" class="line" d="M30.9,27.5l6.9-6.9c-1-2.2-0.8-5.6,1.3-7.7c2.1-2.1,4.9-2.8,7.7-1.3l-3.9,3.9
@@ -266,7 +266,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="trade-products-category.php" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                      <path id="valves" class="line" d="M39.1,40.5H21.3c-1.1,0-2-0.9-2-2V26.2c0-1.1,0.9-2,2-2h17.8c1.1,0,2,0.9,2,2v12.3
@@ -278,7 +278,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="trade-products-category.php" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                        <path id="wastewater" class="line" d="M50.4,33.1h-1.4c-3.1,0-5.7-2.6-5.7-5.7V12.3c0-3.1,2.6-5.7,5.7-5.7h1.4c3.1,0,5.7,2.6,5.7,5.7
@@ -295,7 +295,7 @@
             <div class="meganav-column">
               <ul class="list-unstyled">
                 <li>
-                  <a href="#">
+                  <a href="trade-products-category.php" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                        <path id="water-filtration" class="line" d="M18.6,23.5c0.6,0.3,1.2,0.4,1.9,0.4c2.5,0,4.6-2.3,4.6-5.1c0,2.8,2.1,5.1,4.6,5.1
@@ -306,7 +306,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="trade-products-category.php" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                       <path id="water-services" class="line" d="M46.6,35.5c0,9.2-7.4,16.6-16.6,16.6s-16.6-7.4-16.6-16.6c0-7.2,10.3-17.6,14.7-26.2
@@ -317,7 +317,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="trade-products-category.php" class="with-icon">
                     <span class="icon">
                       <svg width="60px" height="60px" viewBox="0 0 60 60">
                        <path id="water-tanks" class="line" d="M45.3,18.3c0,2.3-1.7,4.2-3.8,4.2c-2.1,0-3.8-1.9-3.8-4.2c0,2.3-1.7,4.2-3.8,4.2

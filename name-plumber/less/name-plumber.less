@@ -89,7 +89,7 @@
   .card-wrap{
     width: 50%;
     float: left;
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       width: 25%;
     }
   }
@@ -98,10 +98,13 @@
     background: white;
     margin: 4rem 2rem;
     border: solid 3px white;
-    padding: 1.5rem;
+    padding: 6rem 1.5rem 1.5rem;
     position: relative;
     cursor: default;
     .transition(.3s ease all);
+    .img-responsive{
+      margin: auto;
+    }
     .name-option {
       background: @grayLight;
       display: block;
@@ -114,8 +117,15 @@
     .chosen-text{
       position: absolute;
       top: 100%;
+      left: 0;
+      right: 0;
       padding-top: 2rem;
       color: @reeceBlue;
+      text-align: center;
+      strong {
+        display: block;
+        font-size: 1.3em;
+      }
     }
   }
   .clickable-card {
@@ -138,7 +148,7 @@
         content: '%';
         font-size: 1rem;
         position: relative;
-        top: -.7em;
+        top: -7px;
       }
     }
     &:before {

@@ -17,12 +17,10 @@ var productChooser = {
 	hasUserVoted: parseInt(localStorage.reecePlumberVoted),
 
 	attachEvent: function () {
-		console.log(productChooser.hasUserVoted);
 		if (!productChooser.hasUserVoted) {
 			$('#name-chooser .name-card').addClass('clickable-card').click(productChooser.clickHandler);
 		}
 		else {
-			console.log('localstorage is set')
 			productChooser.displayActive(localStorage.votedID, localStorage.votedName);
 		}
 	},
@@ -49,7 +47,7 @@ var productChooser = {
 		item.addClass('active');
 		var img = item.find('img');
 		img.attr('src', img.data('alt'));
-		item.append('<strong class="chosen-text">Nice work</br> You\'ve chosen '+ name +'</strong>');
+		item.append('<span class="chosen-text"><strong>Nice work!</strong> You\'ve chosen '+ name +'</span>');
 		var data = (!productChooser.hasUserVoted)? { 'voteID': id } : {};
 		$.getJSON(productChooser.ajaxURL, data, productChooser.handleAjax)
 	},

@@ -83,7 +83,16 @@
 									</div>
 									<div class="item-data item-unitprice xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Unit price</div><span class="update-price">$444.99</span><span class="gst">inc</span></div></div>
 									<div class="item-data item-subtotal xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Subtotal</div><span class="update-price">$888.99</span><span class="gst">inc</span></div></div>
-									<div class="item-data item-remove"><div class="item-inner"><button type="button" class="remove-button action-remove-item" data-productcode="123123123"> <i class="fa fa-times"></i> </button></div></div>
+									<div class="item-data item-remove">
+										<div class="item-inner">
+											<button class="remove-button action-remove-item" type="button" data-productcode="123123123">
+				                <svg xmlns="http://www.w3.org/2000/svg" width="35.5px" height="50px" viewBox="0 0 35.5 50">
+				                    <path d="M11.6,0h12.2v2.1H11.6V0z"/>
+				                    <path d="M33.3,4.4h-31H0v2.1h2.2V50h31V6.5h2.2V4.4H33.3z M13.8,38h-2.1V14.9h2.1V38z M23.8,38h-2.1V14.9h2.1V38z"/>
+				                </svg>
+				            	</button>											
+										</div>
+									</div>
 									<div class="clear-fix"></div>
 								</div>
 							</div>
@@ -117,7 +126,14 @@
 									</div>
 									<div class="item-data item-unitprice xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Unit price</div><span class="update-price">$444.99</span><span class="gst">inc</span></div></div>
 									<div class="item-data item-subtotal xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Subtotal</div><span class="update-price">$888.99</span><span class="gst">inc</span></div></div>
-									<div class="item-data item-remove"><div class="item-inner"><button type="button" class="remove-button action-remove-item" data-productcode="7845123"> <i class="fa fa-times"></i> </button></div></div>
+									<div class="item-data item-remove"><div class="item-inner">
+										<button class="remove-button action-remove-item" type="button" data-productcode="7845123">
+				                <svg xmlns="http://www.w3.org/2000/svg" width="35.5px" height="50px" viewBox="0 0 35.5 50">
+				                    <path d="M11.6,0h12.2v2.1H11.6V0z"/>
+				                    <path d="M33.3,4.4h-31H0v2.1h2.2V50h31V6.5h2.2V4.4H33.3z M13.8,38h-2.1V14.9h2.1V38z M23.8,38h-2.1V14.9h2.1V38z"/>
+				                </svg>
+				            	</button>
+									</div></div>
 									<div class="clear-fix"></div>
 								</div>
 							</div>
@@ -151,7 +167,14 @@
 									</div>
 									<div class="item-data item-unitprice xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Unit price</div><span class="update-price">$444.99</span><span class="gst">inc</span></div></div>
 									<div class="item-data item-subtotal xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Subtotal</div><span class="update-price">$888.99</span><span class="gst">inc</span></div></div>
-									<div class="item-data item-remove"><div class="item-inner"><button type="button" class="remove-button action-remove-item" data-productcode="67564534"> <i class="fa fa-times"></i> </button></div></div>
+									<div class="item-data item-remove"><div class="item-inner">
+										<button class="remove-button action-remove-item" type="button" data-productcode="67564534">
+				                <svg xmlns="http://www.w3.org/2000/svg" width="35.5px" height="50px" viewBox="0 0 35.5 50">
+				                    <path d="M11.6,0h12.2v2.1H11.6V0z"/>
+				                    <path d="M33.3,4.4h-31H0v2.1h2.2V50h31V6.5h2.2V4.4H33.3z M13.8,38h-2.1V14.9h2.1V38z M23.8,38h-2.1V14.9h2.1V38z"/>
+				                </svg>
+				            	</button>
+									</div></div>
 									<div class="clear-fix"></div>
 								</div>
 							</div>
@@ -185,7 +208,14 @@
 									</div>
 									<div class="item-data item-unitprice xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Unit price</div><span class="update-price">$444.99</span><span class="gst">inc</span></div></div>
 									<div class="item-data item-subtotal xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Subtotal</div><span class="update-price">$888.99</span><span class="gst">inc</span></div></div>
-									<div class="item-data item-remove"><div class="item-inner"><button type="button" class="remove-button action-remove-item" data-productcode="2698362"> <i class="fa fa-times"></i> </button></div></div>
+									<div class="item-data item-remove"><div class="item-inner">
+										<button class="remove-button action-remove-item" type="button" data-productcode="2698362">
+				                <svg xmlns="http://www.w3.org/2000/svg" width="35.5px" height="50px" viewBox="0 0 35.5 50">
+				                    <path d="M11.6,0h12.2v2.1H11.6V0z"/>
+				                    <path d="M33.3,4.4h-31H0v2.1h2.2V50h31V6.5h2.2V4.4H33.3z M13.8,38h-2.1V14.9h2.1V38z M23.8,38h-2.1V14.9h2.1V38z"/>
+				                </svg>
+				            	</button>
+									</div></div>
 									<div class="clear-fix"></div>
 								</div>
 							</div>
@@ -219,7 +249,14 @@
 									</div>
 									<div class="item-data item-unitprice xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Unit price</div><span class="update-price">$444.99</span><span class="gst">inc</span></div></div>
 									<div class="item-data item-subtotal xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Subtotal</div><span class="update-price">$888.99</span><span class="gst">inc</span></div></div>
-									<div class="item-data item-remove"><div class="item-inner"><button type="button" class="remove-button action-remove-item" data-productcode="78787878"> <i class="fa fa-times"></i> </button></div></div>
+									<div class="item-data item-remove"><div class="item-inner">
+										<button class="remove-button action-remove-item" type="button" data-productcode="78787878">
+				                <svg xmlns="http://www.w3.org/2000/svg" width="35.5px" height="50px" viewBox="0 0 35.5 50">
+				                    <path d="M11.6,0h12.2v2.1H11.6V0z"/>
+				                    <path d="M33.3,4.4h-31H0v2.1h2.2V50h31V6.5h2.2V4.4H33.3z M13.8,38h-2.1V14.9h2.1V38z M23.8,38h-2.1V14.9h2.1V38z"/>
+				                </svg>
+				            	</button>
+									</div></div>
 									<div class="clear-fix"></div>
 								</div>
 							</div>
@@ -253,7 +290,14 @@
 									</div>
 									<div class="item-data item-unitprice xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Unit price</div><span class="update-price">$444.99</span><span class="gst">inc</span></div></div>
 									<div class="item-data item-subtotal xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Subtotal</div><span class="update-price">$888.99</span><span class="gst">inc</span></div></div>
-									<div class="item-data item-remove"><div class="item-inner"><button type="button" class="remove-button action-remove-item" data-productcode="63636363"> <i class="fa fa-times"></i> </button></div></div>
+									<div class="item-data item-remove"><div class="item-inner">
+										<button class="remove-button action-remove-item" type="button" data-productcode="63636363">
+				                <svg xmlns="http://www.w3.org/2000/svg" width="35.5px" height="50px" viewBox="0 0 35.5 50">
+				                    <path d="M11.6,0h12.2v2.1H11.6V0z"/>
+				                    <path d="M33.3,4.4h-31H0v2.1h2.2V50h31V6.5h2.2V4.4H33.3z M13.8,38h-2.1V14.9h2.1V38z M23.8,38h-2.1V14.9h2.1V38z"/>
+				                </svg>
+				            	</button>
+									</div></div>
 									<div class="clear-fix"></div>
 								</div>
 							</div>
@@ -287,7 +331,14 @@
 									</div>
 									<div class="item-data item-unitprice xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Unit price</div><span class="update-price">$444.99</span><span class="gst">inc</span></div></div>
 									<div class="item-data item-subtotal xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Subtotal</div><span class="update-price">$888.99</span><span class="gst">inc</span></div></div>
-									<div class="item-data item-remove"><div class="item-inner"><button type="button" class="remove-button action-remove-item" data-productcode="52525252"> <i class="fa fa-times"></i> </button></div></div>
+									<div class="item-data item-remove"><div class="item-inner">
+										<button class="remove-button action-remove-item" type="button" data-productcode="52525252">
+				                <svg xmlns="http://www.w3.org/2000/svg" width="35.5px" height="50px" viewBox="0 0 35.5 50">
+				                    <path d="M11.6,0h12.2v2.1H11.6V0z"/>
+				                    <path d="M33.3,4.4h-31H0v2.1h2.2V50h31V6.5h2.2V4.4H33.3z M13.8,38h-2.1V14.9h2.1V38z M23.8,38h-2.1V14.9h2.1V38z"/>
+				                </svg>
+				            	</button>
+									</div></div>
 									<div class="clear-fix"></div>
 								</div>
 							</div>
@@ -321,7 +372,14 @@
 									</div>
 									<div class="item-data item-unitprice xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Unit price</div><span class="update-price">$444.99</span><span class="gst">inc</span></div></div>
 									<div class="item-data item-subtotal xs-right"><div class="item-inner"><div class="sub-heading visible-xs-block">Subtotal</div><span class="update-price">$888.99</span><span class="gst">inc</span></div></div>
-									<div class="item-data item-remove"><div class="item-inner"><button type="button" class="remove-button action-remove-item" data-productcode="14141414"> <i class="fa fa-times"></i> </button></div></div>
+									<div class="item-data item-remove"><div class="item-inner">
+										<button class="remove-button action-remove-item" type="button" data-productcode="14141414">
+				                <svg xmlns="http://www.w3.org/2000/svg" width="35.5px" height="50px" viewBox="0 0 35.5 50">
+				                    <path d="M11.6,0h12.2v2.1H11.6V0z"/>
+				                    <path d="M33.3,4.4h-31H0v2.1h2.2V50h31V6.5h2.2V4.4H33.3z M13.8,38h-2.1V14.9h2.1V38z M23.8,38h-2.1V14.9h2.1V38z"/>
+				                </svg>
+				            	</button>
+									</div></div>
 									<div class="clear-fix"></div>
 								</div>
 							</div>

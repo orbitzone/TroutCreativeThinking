@@ -223,6 +223,7 @@ div.brand-pages .hey-inox .widget-html-image h3 {
   color: white;
   max-width: 150px;
   margin: 0 auto;
+  margin-bottom: -40px;
   -webkit-transform: translateY(-150%);
   -moz-transform: translateY(-150%);
   -ms-transform: translateY(-150%);
@@ -323,7 +324,7 @@ div.brand-pages .video .play .rbp-icon:before {
 }
 @media (min-width: 992px) {
   div.brand-pages .magic-metallics .image img {
-    max-width: 760px;
+    max-width: 700px;
   }
 }
 div.brand-pages .magic-metallics-intro h3,

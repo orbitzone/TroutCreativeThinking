@@ -138,7 +138,12 @@ div.brand-pages .intro h2 {
 div.brand-pages .intro .rte {
   max-width: 970px;
   margin: 0 auto;
-  padding: 0 80px;
+  padding: 0 20px;
+}
+@media (min-width: 768px) {
+  div.brand-pages .intro .rte {
+    padding: 0 80px;
+  }
 }
 div.brand-pages .homewares-accessories {
   margin-top: 10px;

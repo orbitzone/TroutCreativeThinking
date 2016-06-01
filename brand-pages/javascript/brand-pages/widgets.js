@@ -197,6 +197,15 @@ var widgets = {
 				 infinite: false,
 				 responsive: [
 				 {
+				 	breakpoint: 991,
+				 	settings: {
+				 		slidesToShow: ($(this).data('slides-to-show') > 3) ? 3: $(this).data('slides-to-show'),
+				 		slidesToScroll: ($(this).data('slides-to-scroll') > 3) ? 3: $(this).data('slides-to-scroll'),
+				 		arrows: false,
+				 		dots: true
+				 	}
+				 },
+				 {
 				 	breakpoint: 768,
 				 	settings: {
 				 		slidesToShow: ($(this).data('slides-to-show') == 1) ? 1: 2,

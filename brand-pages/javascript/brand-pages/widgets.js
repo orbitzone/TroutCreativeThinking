@@ -104,7 +104,7 @@ var player = {
 		if(typeof id !== "undefined"){
 			var video = player.obj[id];
 			if(typeof video.stopVideo !== "undefined"){
-		  	video.stopVideo();		  	      
+		  	video.stopVideo();
 			}else{
 				player.autoplay = false;
 			}

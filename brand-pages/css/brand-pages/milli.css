@@ -43,6 +43,9 @@ div.brand-pages p {
     line-height: 1.5;
   }
 }
+div.brand-pages h2 {
+  line-height: 1;
+}
 div.brand-pages h3 {
   letter-spacing: 0.07em;
   text-transform: uppercase;

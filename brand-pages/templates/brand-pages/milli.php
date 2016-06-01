@@ -5,7 +5,7 @@
       <header role="banner">
         <h1>
           <a href="/">
-           <img src="images/brand-pages/milli/milli-logo.png" width="184" alt="Milli"><!-- Set the image width-->
+           <img src="images/brand-pages/milli/milli-logo.png" width="177" alt="Milli"><!-- Set the image width-->
           </a>
         </h1> 
       </header>

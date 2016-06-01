@@ -301,6 +301,9 @@ div.brand-pages .video-intro .widget-html-image:after {
   height: 1px;
   background: #888;
 }
+div.brand-pages .video-intro .rte {
+  padding: 0 40px;
+}
 div.brand-pages .video .widget-video {
   background: #f3f3f3;
 }

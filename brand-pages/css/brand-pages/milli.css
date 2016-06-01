@@ -112,7 +112,7 @@ div.brand-pages .shop-the-range .content .widget-link {
   padding: 5px 20px;
   margin-top: 15px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   div.brand-pages .shop-the-range .content {
     position: absolute;
     top: 50%;
@@ -124,7 +124,7 @@ div.brand-pages .shop-the-range .content .widget-link {
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
   }
-  div.brand-pages .shop-the-range .content.col-sm-pull-6 {
+  div.brand-pages .shop-the-range .content.col-md-pull-6 {
     left: 0;
   }
 }

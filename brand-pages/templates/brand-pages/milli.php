@@ -94,7 +94,7 @@
 
   <div class="container-fluid shop-the-range bg-green">
     <div class="row no-padding">
-      <div class="col-sm-6 no-padding">
+      <div class="col-md-6 no-padding">
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image">
           <figure class="image">
@@ -103,7 +103,7 @@
         </div>
         <!-- End: HTML Widget-->
       </div>
-      <div class="col-sm-6 no-padding content">
+      <div class="col-md-6 no-padding content">
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image">
           <div class="rte">
@@ -118,7 +118,7 @@
   </div>
   <div class="container-fluid shop-the-range bg-light-grey">
     <div class="row no-padding">
-      <div class="col-sm-push-6 col-sm-6 no-padding">
+      <div class="col-md-push-6 col-md-6 no-padding">
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image">
           <figure class="image">
@@ -127,7 +127,7 @@
         </div>
         <!-- End: HTML Widget-->
       </div>  
-      <div class="col-sm-pull-6 col-sm-6 no-padding content">
+      <div class="col-md-pull-6 col-md-6 no-padding content">
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image">
           <div class="rte">
@@ -142,7 +142,7 @@
   </div>
   <div class="container-fluid shop-the-range bg-purple">
     <div class="row no-padding">
-      <div class="col-sm-6 no-padding">
+      <div class="col-md-6 no-padding">
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image">
           <figure class="image">
@@ -151,7 +151,7 @@
         </div>
         <!-- End: HTML Widget-->
       </div>
-      <div class="col-sm-6 no-padding content">
+      <div class="col-md-6 no-padding content">
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image">
           <div class="rte">
@@ -166,7 +166,7 @@
   </div>
   <div class="container-fluid shop-the-range bg-dark-grey">
     <div class="row no-padding">
-      <div class="col-sm-push-6 col-sm-6 no-padding">
+      <div class="col-md-push-6 col-md-6 no-padding">
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image">
           <figure class="image">
@@ -175,7 +175,7 @@
         </div>
         <!-- End: HTML Widget-->
       </div>      
-      <div class="col-sm-pull-6 col-sm-6 no-padding content">
+      <div class="col-md-pull-6 col-md-6 no-padding content">
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image">
           <div class="rte">
@@ -294,7 +294,7 @@
                 <img src="images/brand-pages/milli/more-about-milli.jpg" alt="More About Milli">
               </figure>
               <div class="slide-content">
-                <button type="button" class="play" data-video="231_3HKnAl4">
+                <button type="button" class="play" data-video="djRjypaigQ0">
                   <i class="rbp-icon"></i>                  
                 </button>  
               </div>

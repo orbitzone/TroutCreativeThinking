@@ -228,11 +228,15 @@ div.brand-pages .hey-inox .widget-html-image .rte {
   }
 }
 div.brand-pages .reading-material-intro h3 {
+  padding-top: 30px;
   color: black;
 }
-div.brand-pages .reading-material .widget-slider {
+div.brand-pages .reading-material {
   max-width: 600px;
   margin: 0 auto;
+}
+div.brand-pages .reading-material .widget-html-image {
+  margin-bottom: 60px;
 }
 div.brand-pages .video-intro {
   margin-bottom: 0;

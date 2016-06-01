@@ -4,7 +4,7 @@
     <div class="widget-logo">
       <header role="banner">
         <h1>
-          <a href="/">
+          <a target="_blank" href="/">
            <img src="images/brand-pages/milli/milli-logo.png" width="177" alt="Milli"><!-- Set the image width-->
           </a>
         </h1> 
@@ -109,7 +109,7 @@
           <div class="rte">
             <h3>Hello Axon</h3>
             <p>Inspired by the perfection of a blade, Axon is a revolution in design. The juxtaposition of bold metallic and black finishes seamlessly embodied.</p>
-            <p><a href="" class="widget-link">Shop the axon range</a></p>
+            <p><a target="_blank" href="http://www.reece.com.au/bathrooms/products/?keyword=milli+axon" class="widget-link">Shop the axon range</a></p>
           </div>                   
         </div>
         <!-- End: HTML Widget-->
@@ -133,7 +133,7 @@
           <div class="rte">
             <h3>Welcome Pure</h3>
             <p>Stripped of detail. Leaving only the essential. Pure is the very essence of great design. Effortless forms that perfectly embody the concept of understated luxury.</p>
-            <p><a href="" class="widget-link">Shop the pure range</a></p>
+            <p><a target="_blank" href="http://www.reece.com.au/bathrooms/products/?keyword=milli+pure" class="widget-link">Shop the pure range</a></p>
           </div>                   
         </div>
         <!-- End: HTML Widget-->
@@ -157,7 +157,7 @@
           <div class="rte">
             <h3>Hey Glance</h3>
             <p>The convergence of crisp lines and gentle arcs, Glance is a new expression of beauty. Grace and presence coming together with organic simplicity.</p>
-            <p><a href="" class="widget-link">Shop the glance range</a></p>
+            <p><a target="_blank" href="http://www.reece.com.au/bathrooms/products/?keyword=milli+glance" class="widget-link">Shop the glance range</a></p>
           </div>                   
         </div>
         <!-- End: HTML Widget-->
@@ -181,7 +181,7 @@
           <div class="rte">
             <h3>Enter Edge</h3>
             <p>Embracing modernist design principles, Edge is a geometric advenature. A bold interplay of angles bring emotion and energy to the space.</p>
-            <p><a href="" class="widget-link">Shop the edge range</a></p>
+            <p><a target="_blank" href="http://www.reece.com.au/bathrooms/products/?keyword=milli+edge" class="widget-link">Shop the edge range</a></p>
           </div>
         </div>
         <!-- End: HTML Widget-->
@@ -199,7 +199,7 @@
           <div class="rte">
             <h3>Homewares<br/>&amp; Accessories</h3>
             <p>Capturing the innovative aesthetic of Milli tapware, our homewares collection allows you to extend your chosen look throughout every element of the bathroom.</p>
-            <p><a href="" class="widget-link">Shop the range</a></p>
+            <p><a target="_blank" href="http://www.reece.com.au/bathrooms/products/?keyword=milli+homewares" class="widget-link">Shop the range</a></p>
           </div>                
         </div>
         <!-- End: HTML Widget-->
@@ -217,7 +217,7 @@
           <div class="rte">
             <h3>Hey Inox</h3>
             <p>Live a beautiful life <br/>outdoors. The Milli Inox.</p>
-            <p><a href="" class="widget-link">Take me there</a></p>
+            <p><a target="_blank" href="http://www.reece.com.au/bathrooms/products/?keyword=milli+inox" class="widget-link">Take me there</a></p>
           </div>                
         </div>
         <!-- End: HTML Widget-->
@@ -241,37 +241,33 @@
   </div>
   <div class="container-fluid reading-material">
     <div class="row">
-      <div class="col-xs-12">
-        <!-- Begin: Slider/Carousel Widget Start-->
-        <div class="widget-slider carousel">
-          <div class="slides" data-slides-to-show="2" data-slides-to-scroll="2">
-            <div class="slide">
-              <figure class="image">
-                <a href="http://www.reece.com.au/assets/brands/820000/laufen-bathroom-products.pdf">
-                  <img src="images/brand-pages/milli/milli-bathroom-living.jpg" alt="Milli Bathroom Living PDF">  
-                </a>
-              </figure>
-              <div class="text">
-               <p>Download the Milli<br/>Bathroom Living PDF</p>
-               <a href="http://www.reece.com.au/assets/brands/820000/laufen-bathroom-products.pdf" class="widget-link">Download</a>
-              </div>
-            </div>
-            <div class="slide">
-              <figure class="image">
-                <a href="http://www.reece.com.au/assets/brands/820000/Laufen-SaphirKeramik.pdf">
-                  <img src="images/brand-pages/milli/milli-outdoor-living.jpg" alt="Milli Outdoor Living PDF">  
-                </a>
-              </figure>
-              <div class="text">
-                <p>Download the Milli<br/>Outdoor Living PDF</p>
-                <a href="http://www.reece.com.au/assets/brands/820000/Laufen-SaphirKeramik.pdf" class="widget-link">Download</a>
-              </div>
-            </div>    
-          </div>
-        </div>    
-        <!-- End: Slider/Carousel Widget-->   
-      </div>
-    </div>        
+      <div class="col-sm-6">
+        <!-- Begin: HTML Widget-->  
+        <div class="widget-html-image">
+          <figure class="image">
+            <img src="images/brand-pages/milli/milli-bathroom-living.jpg" alt="Milli Bathroom Living PDF"/>
+          </figure>
+          <div class="rte">
+            <p>Download the Milli<br/>Bathroom Living PDF</p>
+            <p><a target="_blank" href="files/brand-pages/milli/Milli_Bathroom_Livingl_Brochure_230516.pdf" class="widget-link">Download</a></p>
+          </div>               
+        </div>
+        <!-- End: HTML Widget-->
+      </div>      
+      <div class="col-sm-6">
+        <!-- Begin: HTML Widget-->  
+        <div class="widget-html-image">
+           <figure class="image">
+            <img src="images/brand-pages/milli/milli-outdoor-living.jpg" alt="Milli Outdoor Living PDF"/>
+          </figure>
+          <div class="rte">
+            <p>Download the Milli<br/>Outdoor Living PDF</p>
+            <p><a target="_blank" href="files/brand-pages/milli/Milli_Outdoor_Living_Brochure_010316.pdf" class="widget-link">Download</a></p>
+          </div>            
+        </div>
+        <!-- End: HTML Widget-->
+      </div>      
+    </div>
   </div>
   <div class="container-fluid video-intro">
     <div class="row">
@@ -370,7 +366,7 @@
           </figure>
           <div class="rte">
              <h4>Find inspiration on Instagram</h4>
-            <p><a href="http://www.reece.com.au/assets/brands/820000/laufen-bathroom-products.pdf" class="widget-link">Instagram</a></p>
+            <p><a target="_blank" href="https://www.instagram.com/reecebathrooms" class="widget-link">Instagram</a></p>
           </div>               
         </div>
         <!-- End: HTML Widget-->
@@ -383,7 +379,7 @@
           </figure>
           <div class="rte">
             <h4>Find inspiration on Instagram</h4>
-            <p><a href="http://www.reece.com.au/assets/brands/820000/laufen-bathroom-products.pdf" class="widget-link">Instagram</a></p>
+            <p><a target="_blank" href="https://au.pinterest.com/reecebathrooms/" class="widget-link">Instagram</a></p>
           </div>            
         </div>
         <!-- End: HTML Widget-->

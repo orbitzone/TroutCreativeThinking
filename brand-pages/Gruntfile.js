@@ -22,6 +22,7 @@ module.exports = function(grunt) {
               "css/brand-pages/armitage-shanks.css": "less/brand-pages/armitage-shanks/armitage-shanks.less",
               "css/brand-pages/rehau.css": "less/brand-pages/rehau/rehau.less",
               "css/brand-pages/roca.css": "less/brand-pages/roca/roca.less",
+              "css/brand-pages/milli.css": "less/brand-pages/milli/milli.less",
               "css/brand-pages/mizu.css": "less/brand-pages/mizu/mizu.less",
               "css/brand-pages/auspex.css": "less/brand-pages/auspex/auspex.less"
           }

@@ -318,8 +318,10 @@ div.brand-pages .video .play .rbp-icon:before {
   display: none;
   content: "";
 }
-div.brand-pages .magic-metallics .image img {
-  max-width: 760px;
+@media (min-width: 992px) {
+  div.brand-pages .magic-metallics .image img {
+    max-width: 760px;
+  }
 }
 div.brand-pages .magic-metallics-intro h3,
 div.brand-pages .daily-inspiration h3 {

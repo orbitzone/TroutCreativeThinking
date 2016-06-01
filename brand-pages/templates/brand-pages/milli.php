@@ -316,7 +316,7 @@
       </div>
     </div>
   </div>
-   <div class="container-fluid magic-metallics">
+   <div class="container-fluid magic-metallics-intro">
     <div class="row">
       <div class="col-xs-12">
         <!-- Begin: HTML Widget-->  
@@ -330,7 +330,7 @@
       </div>      
     </div>
   </div>       
-  <div class="container-fluid">
+  <div class="container-fluid magic-metallics">
     <div class="row">
       <div class="col-xs-12">
         <!-- Begin: HTML Widget-->  
@@ -365,7 +365,7 @@
             <img src="images/brand-pages/milli/find-inspiration-on-instagram.jpg" alt="Instagram inspiration"/> 
           </figure>
           <div class="rte">
-             <h4>Find inspiration on Instagram</h4>
+             <h4>Find inspiration<br/>on Instagram</h4>
             <p><a target="_blank" href="https://www.instagram.com/reecebathrooms" class="widget-link">Instagram</a></p>
           </div>               
         </div>
@@ -378,8 +378,8 @@
            <img src="images/brand-pages/milli/meet-milli-on-pinterest.jpg" alt="Milli on Pinterest"/>
           </figure>
           <div class="rte">
-            <h4>Find inspiration on Instagram</h4>
-            <p><a target="_blank" href="https://au.pinterest.com/reecebathrooms/" class="widget-link">Instagram</a></p>
+            <h4>Meet milli<br/>on Pinterest</h4>
+            <p><a target="_blank" href="https://au.pinterest.com/reecebathrooms/" class="widget-link">Pinterest</a></p>
           </div>            
         </div>
         <!-- End: HTML Widget-->

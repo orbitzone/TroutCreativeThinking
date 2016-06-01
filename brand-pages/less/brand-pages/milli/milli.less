@@ -22,13 +22,20 @@ div.brand-pages{
 		}
 	}
 	h2{
+		font-size: 28px;
 		line-height: 1;
+		@media (min-width: @screen-sm){
+			font-size: 36px;
+		}
 	}
 	h3{
+		font-size: 28px;
 		letter-spacing: 0.07em;
 		text-transform: uppercase;
-		font-size: 36px;
 		line-height: 1;
+		@media (min-width: @screen-sm){
+			font-size: 36px;
+		}
 	}
 	.rte{
 		text-align: center;
@@ -180,8 +187,21 @@ div.brand-pages{
 		}
 		.widget-html-image{
 			position: relative;
+			h3{
+				color: white;
+				max-width: 150px;
+				margin: 0 auto;
+				.transform(translateY(-150%));
+				@media (min-width: @screen-sm){
+					color: inherit;
+					margin-bottom: 25px;
+					max-width: 100%;
+					.transform(translateY(0));
+				}
+			}
 			.rte{
-				padding: 40px 80px;
+				position: relative;
+				padding: 0px 40px 40px;
 				@media (min-width: @screen-sm){
 					position: absolute;
 			    top: 50%;
@@ -206,6 +226,14 @@ div.brand-pages{
 		margin: 0 auto;
 		.widget-html-image{
 			margin-bottom: 60px;
+		}
+		.image{
+			img{
+				max-width: 200px;
+				@media (min-width: @screen-sm){
+					max-width: 100%;
+				}
+			}
 		}
 	}
 	.video-intro{
@@ -250,7 +278,14 @@ div.brand-pages{
 			}
 		}
 	}
-	.magic-metallics,
+	.magic-metallics{
+		.image{
+			img{
+				max-width: 760px;
+			}
+		}
+	}
+	.magic-metallics-intro,
 	.daily-inspiration{
 		h3{
 			padding-top: 30px;

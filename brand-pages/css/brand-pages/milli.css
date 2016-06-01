@@ -44,13 +44,24 @@ div.brand-pages p {
   }
 }
 div.brand-pages h2 {
+  font-size: 28px;
   line-height: 1;
 }
+@media (min-width: 768px) {
+  div.brand-pages h2 {
+    font-size: 36px;
+  }
+}
 div.brand-pages h3 {
+  font-size: 28px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  font-size: 36px;
   line-height: 1;
+}
+@media (min-width: 768px) {
+  div.brand-pages h3 {
+    font-size: 36px;
+  }
 }
 div.brand-pages .rte {
   text-align: center;
@@ -208,8 +219,31 @@ div.brand-pages .hey-inox .widget-link {
 div.brand-pages .hey-inox .widget-html-image {
   position: relative;
 }
+div.brand-pages .hey-inox .widget-html-image h3 {
+  color: white;
+  max-width: 150px;
+  margin: 0 auto;
+  -webkit-transform: translateY(-150%);
+  -moz-transform: translateY(-150%);
+  -ms-transform: translateY(-150%);
+  -o-transform: translateY(-150%);
+  transform: translateY(-150%);
+}
+@media (min-width: 768px) {
+  div.brand-pages .hey-inox .widget-html-image h3 {
+    color: inherit;
+    margin-bottom: 25px;
+    max-width: 100%;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
 div.brand-pages .hey-inox .widget-html-image .rte {
-  padding: 40px 80px;
+  position: relative;
+  padding: 0px 40px 40px;
 }
 @media (min-width: 768px) {
   div.brand-pages .hey-inox .widget-html-image .rte {
@@ -237,6 +271,14 @@ div.brand-pages .reading-material {
 }
 div.brand-pages .reading-material .widget-html-image {
   margin-bottom: 60px;
+}
+div.brand-pages .reading-material .image img {
+  max-width: 200px;
+}
+@media (min-width: 768px) {
+  div.brand-pages .reading-material .image img {
+    max-width: 100%;
+  }
 }
 div.brand-pages .video-intro {
   margin-bottom: 0;
@@ -276,7 +318,10 @@ div.brand-pages .video .play .rbp-icon:before {
   display: none;
   content: "";
 }
-div.brand-pages .magic-metallics h3,
+div.brand-pages .magic-metallics .image img {
+  max-width: 760px;
+}
+div.brand-pages .magic-metallics-intro h3,
 div.brand-pages .daily-inspiration h3 {
   padding-top: 30px;
   color: black;

@@ -100,7 +100,6 @@ var player = {
 		}
 	},
 	stop: function(id){
-		console.log('stop');
 		if(typeof id !== "undefined"){
 			var video = player.obj[id];
 			if(typeof video.stopVideo !== "undefined"){

@@ -58,13 +58,13 @@
         <div class="inner-wrapper">
           <div class="row intro-section">
             <div class="intro-image">
-              <img src="images/animated-bloke.gif" alt="Animated bloke" />
+              <img class="img-responsive" src="images/animated-bloke-new.gif" alt="Animated bloke" />
             </div>
             <div class="col-sm-push-6 col-sm-6 col-xs-12">
               <div class="intro-text">
                 <h2>There's no doubt you've all seen this little bloke appear here and there over the years.</h2>
                 <p>He’s been the face of My Account, he’s told you about our delivery app and of course for the past few years he’s promoted the footy tipping competition across the country. And they’re just the highlights. But even after all those achievements there is one thing missing for our mate—a name.</p>
-                <p class="blue-text"><strong>Now it's time to correct that wrong and give him a name that suit his status.</strong></p>
+                <h4 class="blue-text">Now it's time to correct that wrong and give him a name that suit his status.</h4>
               </div>
             </div>
           </div>

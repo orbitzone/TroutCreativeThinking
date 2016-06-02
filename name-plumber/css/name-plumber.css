@@ -4,9 +4,6 @@
   /* Intro Section */
   /* Blue ribbon heading */
 }
-#reece-name-plumber .blue-text {
-  color: #003767;
-}
 #reece-name-plumber .name-plumber-hero {
   background-color: #e7e7e9;
 }
@@ -36,21 +33,25 @@
 #reece-name-plumber .intro-section {
   position: relative;
 }
-#reece-name-plumber .intro-image {
-  text-align: center;
+#reece-name-plumber .intro-image .img-responsive {
+  margin: auto;
 }
 @media (min-width: 768px) {
   #reece-name-plumber .intro-image {
     position: absolute;
-    bottom: 0;
+    bottom: 4em;
     right: 50%;
   }
 }
 #reece-name-plumber .intro-text {
   color: #343434;
-  padding: 2em 0;
-  max-width: 30em;
+  padding: 4em 0;
+  max-width: 32em;
   margin: auto;
+}
+#reece-name-plumber .intro-text .blue-text {
+  margin-bottom: 0;
+  color: #003767;
 }
 @media (min-width: 768px) {
   #reece-name-plumber .intro-text {

@@ -10560,7 +10560,7 @@ MAIN TITLE
   }
 }
 #product-pages.retail .main-section#checkout-cart-section #order-form form#checkout-cart .bg-info-icon {
-  background: #e3e3e3 url("../templates/images/icon-info.png") no-repeat;
+  background: #e3e3e3 no-repeat;
   padding: 30px 30px 30px 85px;
   background-size: 33px;
   background-position: top 30px left 30px;

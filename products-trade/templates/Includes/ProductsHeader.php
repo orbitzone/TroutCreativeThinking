@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="css/reece-global.css" />
 <!--END: FROM ORIGINAL TEMPLATE -->
 
-<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6958312/6279352/css/fonts.css" />
+<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6958312/662428/css/fonts.css" />
 <!--END: LOAD GOTHAM FONT FOR DEVELOPMENT -->
 
 <link rel="stylesheet" href="css/base/jquery-ui.min.css">

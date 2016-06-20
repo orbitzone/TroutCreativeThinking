@@ -174,7 +174,10 @@
 									2259656
 								</div>
 								<div class="product-prices hidden">
-										<div class="product-price"></div>											
+										<div class="product-price">
+										$ 1099.99
+											<small>gst incl.</small>
+										</div>
 								</div>
 								<div class="product-postcode-input">
 									<div class="product-postcode-overlay"></div>

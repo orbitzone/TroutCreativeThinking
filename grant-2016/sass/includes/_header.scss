@@ -1,0 +1,15 @@
+header{
+	height: 419px;
+	background: url(../img/main-banner.png) center center no-repeat;
+	background-size: cover;
+	.logo{
+		position: absolute;
+		top: 0;
+		right: 0;
+		svg{
+			display: block;
+			width: 178px;
+			height: 234px;
+		}
+	}
+}

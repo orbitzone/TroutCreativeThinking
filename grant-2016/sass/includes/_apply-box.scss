@@ -1,0 +1,22 @@
+.apply-reece-grant{
+	width: 100%;
+	background: white;
+	margin: 20px 0;
+	float: right;
+	@include box-shadow(0 0 10px 0 rgba(0,0,0,0.2));
+	@include border-radius(em(20));
+	text-align: center;
+	.top-section{
+		padding: em(30);
+		@include border-radius(em(20) em(20) 0 0);
+	}
+	.wave{
+		background: url(../img/apply-box-wave.png) center center repeat-x;
+		height: 20px;
+	}
+	.bottom-section{
+		padding: em(30);
+		background: #179cb4;
+		@include border-radius(0 0 em(20) em(20));
+	}
+}

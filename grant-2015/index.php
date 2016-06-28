@@ -18,6 +18,7 @@
   <script src='javascript/modernizr-2.6.2.js' type='text/javascript'></script>
   <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
   <link rel="stylesheet" type="text/css" href="css/reece-global.css" />
+  <script type="text/javascript" src="//fast.fonts.net/jsapi/1f7f4144-4dc0-499d-b958-cf8a6622dad4.js"></script>
   <?php include "templates/Includes/Grant2015CSS.php" ?>
 </head>
 <body class="grant-2015">

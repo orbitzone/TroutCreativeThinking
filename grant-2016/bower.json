@@ -1,0 +1,17 @@
+{
+  "name": "grant-2016",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Diego Pelaez <diego@trout.com.au>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/TroutCreativeThinking/reece-responsive",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

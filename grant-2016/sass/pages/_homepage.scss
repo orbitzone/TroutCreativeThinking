@@ -1,0 +1,166 @@
+.grid-item{
+	width: 100%;
+	@media (min-width: 420px){
+		width: percentage(1/2);
+	}
+	@media (min-width: 768px){
+		width: percentage(1/3);
+	}
+}
+.main-inner{
+	h2{
+		font-size: em(18);
+	}
+	.intro-left{
+		padding: 0 15px;
+		@media (min-width: 420px){
+			width: 64.53%;
+			float: left;
+			padding: em(90) em(70) em(90) 0;			
+		}
+	}
+	.intro-right{
+		padding: 0 15px;
+		@media (min-width: 420px){
+			padding: 0;
+			width: 35.47%;
+			float: left;			
+		}
+	}
+}
+#feed{
+	padding: 40px 0;
+	max-width: 1057px;
+	margin: 0 auto;
+	.item{
+		position: relative;
+		background: white;
+		padding: 40px 40px 20px;
+		background-size: cover;
+		background-position: center center;
+		height: 266px;
+		text-align: center;
+		h2{
+			margin-top: 0;
+		}
+		&.bg-blue{
+			background: $dark-blue;
+			color: white;
+		}
+		&.color-blue{
+			color: $dark-blue;
+		}
+		&.color-light-blue{
+			color: $light-blue;	
+		}
+	}
+	.featured-project,
+	.project{
+		color: white;
+		height: 532px;
+		&:before{
+			content: " ";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: url(../img/feed/light-blue-gradient.png) top center repeat-x;
+		}
+		&.dark-blue{
+			&:before{
+				background: url(../img/feed/dark-blue-gradient.png) top center repeat-x;
+			}	
+		}
+		.details{
+			position: relative;
+			padding-bottom: em(60);
+		}
+		.link{
+			position: absolute;
+			bottom: em(30);
+			left: 0;
+			width: 100%;
+		}
+	}
+	.featured-project{
+		.details{
+			text-align: left;
+			h2{
+				font-size: em(48);
+				line-height: em(44,48);
+			}
+		}
+	}
+	.news-article{
+		h3{
+			text-transform: uppercase;
+			font-size: em(12);
+			line-height: em(26,12);
+			margin-bottom: 0;
+		}
+		h2{
+			font-size: em(24);
+			font-weight: 400;
+			line-height: em(26,24);
+		}
+		.details{
+			margin-bottom: em(30);
+		}
+	}
+	.info{
+		h2{
+			font-size: em(42);
+			line-height: em(38,42);
+		}
+		.details{
+			margin-bottom: em(20);
+		}
+	}
+	.btn{
+		background: $light-blue;
+		color: white;
+		font-size: em(14);
+		line-height: em(45,14);
+		height: em(45,14);
+		font-weight: 600;
+		padding: 0 em(30,14);
+		border: none;
+		@include border-radius(em(20,14));
+		@include transition(.3s color ease-out, .3s background ease-out);
+		&:hover{
+			background: $dark-blue;
+			color: $light-blue;
+		}
+		&.bg-dark-blue{
+			background: $dark-blue;
+			&:hover{
+				color: $dark-blue; 
+			}
+		}
+		&.bg-white{
+			background: white;
+			&:hover{
+				color: white; 
+			}
+		}
+		&.color-dark-blue{
+			color: $dark-blue;
+			&:hover{
+				background: $dark-blue; 
+			}
+		}
+		&.color-light-blue{
+			color: $light-blue;
+			&:hover{
+				background: $light-blue; 
+			}
+		}
+		&.color-white{
+			color: white;
+			&:hover{
+				color: $dark-blue;
+			}
+		}
+	}
+}

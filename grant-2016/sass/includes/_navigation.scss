@@ -1,0 +1,54 @@
+nav{
+	background: #009cb6;
+	position: relative;
+	.container{
+		position: relative;
+	}
+	&:after{
+		background: url(../img/menu-bg-out.png) top center repeat-x;
+		content: " ";
+		height: 6px;
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: 0;
+	}
+	ul{
+		margin: 0 -30px;
+		padding: 0;
+		position: relative;
+		height: 100%;
+		list-style: none;
+		li{
+			display: inline-block;
+			padding: 0;
+			a{
+				color: white;
+				display: block;
+				height: 100%;
+				font-size: 18px;
+				font-weight: bold;
+				padding: 30px 30px 36px;
+				&:hover{
+					color: white;
+					text-decoration: none;
+					background: #007495;
+				}					
+			}
+		}		
+	}
+	.bg-wrap{
+		position: relative;
+	}
+	.bg-in{
+		background: url(../img/menu-bg-in.png) top center repeat-x;
+		content: " ";
+		height: 6px;
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: 1;
+	}	
+}

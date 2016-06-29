@@ -7,13 +7,19 @@
                 <span class="icon-bar"></span>
             </div>
             Menu
+
+        </a>
+
+        <a href="/cart" class="hidden-desktop mobile-cart">
+            <i class="fa fa-shopping-cart">&nbsp;</i> (<span class="cart-count">0</span>)
         </a>
 
         <a class="navbar-brand brand hidden-desktop mobile-logo" href="/"></a>
 
         <div class="visible-desktop">
+
             <div class="row">
-                <a href="/" class="navbar-brand brand"></a>
+                <a class="navbar-brand brand" href="http://www.reece.com.au/"></a>
 
                 <div class="headerUtilityLinks">
                     <ul class="navbar-nav nav">
@@ -35,11 +41,10 @@
 
                     <div class="desktop-cart">
                         <a href="/myaccount/cart">
-                            <i class="fa fa-shopping-cart">&nbsp;</i><span class="only-icon">Cart</span> (<span class="cart-count">0</span>)
+                            <i class="fa fa-shopping-cart">&nbsp;</i><span class="only-icon">Cart</span> (<span
+                                class="cart-count">0</span>)
                         </a>
                     </div>
-
-
 
                 </div>
 
@@ -51,7 +56,7 @@
 
                     <ul class="nav navbar-nav">
 
-                        <li class="link first active">
+                        <li class="link first">
                             <a href="/bathrooms">Bathrooms</a>
                         </li>
 

@@ -8,12 +8,21 @@ h1, h2, h3, h4, h5, h6 {
   &:extend(.visible-xs);
 }
 
+.visible-tablet {
+  &:extend(.visible-sm);
+}
+
 .visible-desktop {
   &:extend(.visible-md, .visible-lg);
 }
 
 .hidden-phone {
   &:extend(.hidden-xs);
+}
+
+.hidden-tablet {
+  &:extend(.hidden-sm, .hidden-md, .hidden-lg);
+  &:extend(.visible-xs);
 }
 
 .hidden-desktop {
@@ -23,8 +32,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .topNav {
   .row {
-     margin-left:0px;
-     margin-right: 0px;
+     margin-left:0px !important;
+     margin-right: 0px !important;
   }
 }
 
@@ -123,4 +132,21 @@ li {
 
 .dropdown-menu {
   font-size:12px;
+}
+
+.btn-inverse {
+  .buttonBackground(@btnInverseBackground, @btnInverseBackgroundHighlight);
+  .caret {
+    border-top-color: @white;
+    border-bottom-color: @white;
+  }
+}
+.btn-inverse.active {
+  color: rgba(255,255,255,.75);
+}
+
+.btn-group.open {
+  .btn-inverse.dropdown-toggle {
+    background-color: @btnInverseBackgroundHighlight;
+  }
 }

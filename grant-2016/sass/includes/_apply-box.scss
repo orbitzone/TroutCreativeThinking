@@ -1,14 +1,22 @@
 .apply-reece-grant{
 	width: 100%;
 	background: white;
-	margin: 20px 0;
+	margin: 0;
 	float: right;
 	@include box-shadow(0 0 10px 0 rgba(0,0,0,0.2));
 	@include border-radius(em(20));
 	text-align: center;
 	.top-section{
-		padding: em(30);
+		padding: em(50) em(30) em(20);
 		@include border-radius(em(20) em(20) 0 0);
+	}
+	.content{
+		max-width: em(200);
+		margin: 0 auto;
+		color: #3f3f3f;
+		h3{
+			color: #3f3f3f;
+		}
 	}
 	.wave{
 		background: url(../img/apply-box-wave.png) center center repeat-x;
@@ -18,5 +26,13 @@
 		padding: em(30);
 		background: #179cb4;
 		@include border-radius(0 0 em(20) em(20));
+	}
+	.btn{
+		background: white;
+		color: #3f3f3f;
+		&:hover{
+			background: $dark-blue;
+			color: white;
+		}
 	}
 }

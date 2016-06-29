@@ -4,35 +4,126 @@
 }
 h1,h2,h3,h4,h5,h6,b, strong{
 	font-weight: 600;
+	margin-top: 0;	
+}
+h1,h2,h3,h4,h5,h6{
+	color: $light-blue;
+}
+h1{
+	font-size: em(35);
+	line-height: 1;
+	@media (min-width: $screen-sm){
+		font-size: em(52);
+		line-height: em(52,52);
+	}
+}
+h2{
+	font-size: em(30);
+	line-height: 1;
+	@media (min-width: $screen-sm){
+		font-size: em(36);
+	}
+}
+h3{
+	font-size: em(25);
+	line-height: 1;
+	@media (min-width: $screen-sm){
+		font-size: em(32);
+	}	
+}
+h4{
+	font-size: em(20);
+	line-height: 1;
+	@media (min-width: $screen-sm){
+		font-size: em(24);
+		line-height: em(22,24);
+		margin-bottom: em(14, 24);
+	}
+}
+.title{
+	margin-bottom: em(30);
+}
+img{
+	max-width: 100%;
+}
+.image{
+	margin-bottom: em(20);
+}
+.date{
+	color: $light-blue;
+	font-size: em(15);
+	margin-bottom: em(12,15);
+}
+.btn{
+	background: $light-blue;
+	color: white;
+	font-size: em(14);
+	line-height: em(45,14);
+	height: em(45,14);
+	font-weight: 600;
+	padding: 0 em(30,14);
+	border: none;
+	@include border-radius(em(20,14));
+	@include transition(.3s color ease-out, .3s background ease-out);
+	&:hover{
+		background: $dark-blue;
+		color: $light-blue;
+	}
+	&.bg-dark-blue{
+		background: $dark-blue;
+		&:hover{
+			color: $dark-blue; 
+		}
+	}
+	&.bg-white{
+		background: white;
+		&:hover{
+			color: white; 
+		}
+	}
+	&.color-dark-blue{
+		color: $dark-blue;
+		&:hover{
+			background: $dark-blue; 
+		}
+	}
+	&.color-light-blue{
+		color: $light-blue;
+		&:hover{
+			background: $light-blue; 
+		}
+	}
+	&.color-white{
+		color: white;
+		&:hover{
+			color: $dark-blue;
+		}
+	}
 }
 .color-ligh-blue{
 	color: $light-blue;
 }
-.row{
-	margin: 0 -20px;
-	.col-3{
-		width: percentage(3/8);
-		padding: 0 em(20);
-		float: left;
-	}
-	.col-5{
-		width: percentage(5/8);
-		padding: 0 em(20);
-		float: left;
-	}		
-}
 #main{
 	.container{
-		.main-inner{
-			background: white;
+		background: white;		
+		&.no-padding{
+			padding: 0;
+		}
+		&.grey{
+			background: #f1f2f2;
+		}
+		&.first{
+			padding-top: 50px;			
 		}
 	}
 }
-.inner-content{
+.container-small{
 	position: relative;
-	max-width: 795px;
+	max-width: 790px;
 	margin: 0 auto;
-	.row{
-		margin: 0 -15px;
-	}
+}
+.container-medium{
+	position: relative;
+	max-width: 995px;
+	margin: 0 auto;
 }

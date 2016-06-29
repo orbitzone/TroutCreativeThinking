@@ -1,6 +1,6 @@
 <header>
 	<div class="container">
-		<div class="inner-content">
+		<div class="container-small">
 			<div class="logo">
 				<svg width="105.2px" height="138px" viewBox="0 0 105.2 138">
 			<path fill="#FFFFFF" d="M0,0h105.2v101.9H0V0z"/>

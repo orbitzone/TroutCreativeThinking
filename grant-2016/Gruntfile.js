@@ -37,8 +37,8 @@ module.exports = function(grunt) {
         files: [
           // includes files within path
          // {expand: true,cwd: 'bower_components/scrollmagic/scrollmagic/minified/', src: '**', dest: 'js/libs/'},
-          //{expand: true,cwd: 'bower_components/slick-carousel/slick/', src: '**.js', dest: 'js/libs/'},
-          //{expand: true,cwd: 'bower_components/imagesloaded', src: 'imagesloaded.pkgd.min.js', dest: 'js/libs/'},
+          {expand: true,cwd: 'bower_components/slick-carousel/slick/', src: '**.js', dest: 'js/libs/'},
+          {expand: true,cwd: 'bower_components/imagesloaded', src: 'imagesloaded.pkgd.min.js', dest: 'js/libs/'}
          // {expand: true,cwd: 'bower_components/bootstrap-sass/assets/javascripts/', src: ['bootstrap.js','bootstrap.min.js'], dest: 'js/libs/'},
           //{expand: true,cwd: 'bower_components/font-awesome/fonts/', src: '**', dest: 'fonts/'},
         ],

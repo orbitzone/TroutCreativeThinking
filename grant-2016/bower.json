@@ -16,5 +16,9 @@
   ],
   "devDependencies": {
     "modernizr": "^2.8.3"
+  },
+  "dependencies": {
+    "slick-carousel": "^1.6.0",
+    "imagesloaded": "^4.1.0"
   }
 }

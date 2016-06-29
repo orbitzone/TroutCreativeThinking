@@ -1,4 +1,6 @@
-nav{
+$apply-now-bg: #2bb1c7;
+$apply-now-hover-bg: #003964;
+nav.menu{
 	background: #009cb6;
 	position: relative;
 	.container{
@@ -20,6 +22,10 @@ nav{
 		position: relative;
 		height: 100%;
 		list-style: none;
+		text-align: center;
+		@media (min-width: $screen-sm){
+			text-align: left;
+		}
 		li{
 			display: inline-block;
 			padding: 0;
@@ -27,19 +33,51 @@ nav{
 				color: white;
 				display: block;
 				height: 100%;
-				font-size: 18px;
+				font-size: 16px;
 				font-weight: bold;
-				padding: 30px 30px 36px;
+				padding: 30px 15px 36px;
+				@media (min-width: $screen-sm){
+					font-size: 18px;
+					padding: 30px 30px 36px;
+				}
 				&:hover{
 					color: white;
 					text-decoration: none;
 					background: #007495;
-				}					
+				}
+				&.active{
+					background: #007495;	
+				}									
+			}
+			&.apply-now{
+				padding: em(10);
+				text-align: center;
+				a{
+					padding: 0 em(15);
+					line-height: em(50);
+					background: $apply-now-bg;
+					@include border-radius(em(18));
+					@media (min-width: $screen-sm){
+						padding: 0 em(30);
+						@include border-radius(em(20));
+					}
+					&:hover{
+						color: $light-blue;
+						background: $apply-now-hover-bg;
+					}
+					&.active{
+						color: white;
+						background: $apply-now-hover-bg;
+					}
+				}
 			}
 		}		
 	}
 	.bg-wrap{
-		position: relative;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
 	}
 	.bg-in{
 		background: url(../img/menu-bg-in.png) top center repeat-x;

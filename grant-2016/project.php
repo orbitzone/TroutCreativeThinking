@@ -8,7 +8,7 @@
 <head>
   <?php include_once "themes/templates/includes/Meta.php" ?>
   <?php include_once('templates/includes/meta.php');?><!-- New meta-->
-  <title>News</title>  
+  <title>Projects</title>  
 </head>
 <body>
 <div class="ocmain-wrapper">
@@ -21,13 +21,13 @@
     </div>
   </div>
   <?php 
-  $current='news';
+  $current='projects';
   include_once("themes/templates/includes/Navigation.php"); ?>
   <div id="grant" class="<?php echo $current;?>">
     <?php include_once('templates/includes/header.php');?>
 		<?php include_once('templates/includes/navigation.php');?>
 		<div id="main">
-			<?php include_once('templates/pages/news.php');?>		
+			<?php include_once('templates/pages/project.php');?>		
 		</div>
   </div>
   <?php include_once("themes/templates/includes/Footer.php"); ?>

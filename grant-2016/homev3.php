@@ -8,9 +8,10 @@
 <head>
   <?php include_once "themes/templates/includes/Meta.php" ?>
   <?php include_once('templates/includes/meta.php');?><!-- New meta-->
-  <title>News</title>  
+  <title>Reece Grant 2016</title>  
 </head>
-<body>
+<body
+class="">
 <div class="ocmain-wrapper">
   <div class="browser-message">
     <div class="content-container">
@@ -21,13 +22,13 @@
     </div>
   </div>
   <?php 
-  $current='news';
+  $current = 'homepage';
   include_once("themes/templates/includes/Navigation.php"); ?>
   <div id="grant" class="<?php echo $current;?>">
     <?php include_once('templates/includes/header.php');?>
 		<?php include_once('templates/includes/navigation.php');?>
 		<div id="main">
-			<?php include_once('templates/pages/news.php');?>		
+			<?php include_once('templates/pages/homev3.php');?>		
 		</div>
   </div>
   <?php include_once("themes/templates/includes/Footer.php"); ?>

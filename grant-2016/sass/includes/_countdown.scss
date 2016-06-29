@@ -17,27 +17,20 @@ $flip-label-color: white;
 	opacity: 0;
   margin: 0 auto;
   text-align: center;
-  margin-bottom: 40px;
-  padding-top: 40px;
+  margin-bottom: 30px;
+  padding-top: 10px;
   font-family: $font-special;
   @media (min-width: $screen-sm){
-  	margin-bottom: 80px;
+  	margin-bottom: 30px;
   }
   .countdown-container {
 	  height: 130px;
 	}
 	.time{
 		margin-right: 13px;
-		@include border-radius($flip-border-radius);
-	  display: inline-block;
+		display: inline-block;
 	  text-align: center;
 	  position: relative;
-	  @include perspective(479px);
-	  
-	  @include backface-visibility(hidden);
-	  
-	  @include transform(translateZ(0));
-	  @include transform(translate3d(0,0,0));
 	  &:last-child{
 	  	margin-right: 0;
 	  }
@@ -45,12 +38,25 @@ $flip-label-color: white;
 	  	text-transform: uppercase;
 	  	color: $flip-label-color;
 	  	font-weight: bold;
+	  	text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.9);
+  		font-size: normal;
+		  margin-top: 15px;
+		  display: block;
+		  text-align: centerl
 	  }
 	  margin-right: $flip-box-margin;
 	  .flip-inner{
 			position: relative;
 			height: 48px;
 	  	width: 54px;
+	  	@include border-radius($flip-border-radius);
+		  @include perspective(479px);
+		  @include backface-visibility(hidden);
+		  @include box-shadow(0px 5px 5px 0px rgba(0, 0, 0, 0.75));
+		  
+		  @include transform(translateZ(0));
+		  @include transform(translate3d(0,0,0));
+		  
 		  @media (min-width: $screen-sm){
 		  	height: $flip-box-height;
 		  	width: $flip-box-width;
@@ -205,7 +211,6 @@ $flip-label-color: white;
 	  display: block;
 	  font-size: 2.5em;
 	  line-height: 48px;
-	  font-weight: bold;
 	  overflow: hidden;
 	  position: absolute;
 	  text-align: center;
@@ -279,11 +284,4 @@ $flip-label-color: white;
 			}
 		}
 	}	
-	.label{
-		font-size: normal;
-	  margin-top: 15px;
-	  display: block;
-	  position: absolute;
-	  width: 100%;		  
-	}
 }

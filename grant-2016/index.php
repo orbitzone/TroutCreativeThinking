@@ -8,7 +8,7 @@
 <head>
   <?php include_once "themes/templates/includes/Meta.php" ?>
   <?php include_once('templates/includes/meta.php');?><!-- New meta-->
-  <title>Reece Base Template</title>  
+  <title>Reece Grant 2016</title>  
 </head>
 <body
 class="">
@@ -21,18 +21,20 @@ class="">
       </div>
     </div>
   </div>
-  <?php include "themes/templates/includes/Navigation.php" ?>
-  <div id="grant">
+  <?php 
+  $current = 'homepage';
+  include_once("themes/templates/includes/Navigation.php"); ?>
+  <div id="grant" class="<?php echo $current;?>">
     <?php include_once('templates/includes/header.php');?>
 		<?php include_once('templates/includes/navigation.php');?>
 		<div id="main">
 			<?php include_once('templates/pages/homepage.php');?>		
 		</div>
   </div>
-  <?php include "themes/templates/includes/Footer.php" ?>
+  <?php include_once("themes/templates/includes/Footer.php"); ?>
 </div>
-<?php include "themes/templates/includes/MobileNavigation.php" ?>
-<?php include "themes/templates/includes/Scripts.php" ?>
+<?php include_once("themes/templates/includes/MobileNavigation.php"); ?>
+<?php include_once("themes/templates/includes/Scripts.php"); ?>
 <?php include_once('templates/includes/scripts.php');?><!-- New scripts-->
 </body>
 </html>

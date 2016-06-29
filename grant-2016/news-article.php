@@ -27,7 +27,7 @@
     <?php include_once('templates/includes/header.php');?>
 		<?php include_once('templates/includes/navigation.php');?>
 		<div id="main">
-			<?php include_once('templates/pages/news.php');?>		
+			<?php include_once('templates/pages/news-article.php');?>		
 		</div>
   </div>
   <?php include_once("themes/templates/includes/Footer.php"); ?>

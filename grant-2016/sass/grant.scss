@@ -1,9 +1,19 @@
 @import "variables";
 @import "mixins";
-@import "main";
-@import "includes/header";
-@import "includes/navigation";
-@import "includes/apply-box";
-@import "includes/countdown";
+#grant{
+	line-height: em(20);
+	-webkit-font-smoothing: antialiased; 
+	-moz-osx-font-smoothing: grayscale;
+	font-family: $font-main;
+	background: #edebec;
+	min-height: 100%;
+	font-size: 16px;
+	
+	@import "main";
+	@import "includes/header";
+	@import "includes/navigation";
+	@import "includes/apply-box";
+	@import "includes/countdown";
 
-@import "pages/homepage";
+	@import "pages/homepage";
+}

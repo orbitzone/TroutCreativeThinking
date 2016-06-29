@@ -1,94 +1,85 @@
-/* line 1, ../sass/_main.scss */
-body {
-  background: #edebec;
-  min-height: 100%;
-  font-size: 16px;
+/* line 3, ../sass/grant.scss */
+#grant {
+  line-height: 1.25em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "Neue Helvetica W01", "Helvetica Neue", helvetica, sans-serif;
+  background: #edebec;
+  min-height: 100%;
+  font-size: 16px;
 }
-
-/* line 9, ../sass/_main.scss */
-.container {
+/* line 1, ../sass/_main.scss */
+#grant .container {
   max-width: 1440px;
   width: 100%;
 }
-
-/* line 13, ../sass/_main.scss */
-#grant {
-  line-height: 1.25em;
-}
-/* line 15, ../sass/_main.scss */
+/* line 5, ../sass/_main.scss */
 #grant h1, #grant h2, #grant h3, #grant h4, #grant h5, #grant h6, #grant b, #grant strong {
   font-weight: 600;
 }
-/* line 18, ../sass/_main.scss */
+/* line 8, ../sass/_main.scss */
 #grant .color-ligh-blue {
   color: #009cb6;
 }
-/* line 21, ../sass/_main.scss */
+/* line 11, ../sass/_main.scss */
 #grant .row {
   margin: 0 -20px;
 }
-/* line 23, ../sass/_main.scss */
+/* line 13, ../sass/_main.scss */
 #grant .row .col-3 {
   width: 37.5%;
   padding: 0 1.25em;
   float: left;
 }
-/* line 28, ../sass/_main.scss */
+/* line 18, ../sass/_main.scss */
 #grant .row .col-5 {
   width: 62.5%;
   padding: 0 1.25em;
   float: left;
 }
-
-/* line 37, ../sass/_main.scss */
-#main .container .main-inner {
+/* line 26, ../sass/_main.scss */
+#grant #main .container .main-inner {
   background: white;
 }
-
-/* line 42, ../sass/_main.scss */
-.inner-content {
+/* line 31, ../sass/_main.scss */
+#grant .inner-content {
   position: relative;
   max-width: 795px;
   margin: 0 auto;
 }
-/* line 46, ../sass/_main.scss */
-.inner-content .row {
+/* line 35, ../sass/_main.scss */
+#grant .inner-content .row {
   margin: 0 -15px;
 }
-
 /* line 1, ../sass/includes/_header.scss */
-header {
+#grant header {
   height: 419px;
   background: url(../img/main-banner.png) center center no-repeat;
   background-size: cover;
 }
 /* line 5, ../sass/includes/_header.scss */
-header .logo {
+#grant header .logo {
   position: absolute;
   top: 0;
   right: 0;
 }
 /* line 9, ../sass/includes/_header.scss */
-header .logo svg {
+#grant header .logo svg {
   display: block;
   width: 178px;
   height: 234px;
 }
-
 /* line 1, ../sass/includes/_navigation.scss */
-nav {
+#grant nav {
   background: #009cb6;
   position: relative;
 }
 /* line 4, ../sass/includes/_navigation.scss */
-nav .container {
+#grant nav .container {
   position: relative;
 }
 /* line 7, ../sass/includes/_navigation.scss */
-nav:after {
+#grant nav:after {
   background: url(../img/menu-bg-out.png) top center repeat-x;
   content: " ";
   height: 6px;
@@ -99,7 +90,7 @@ nav:after {
   z-index: 0;
 }
 /* line 17, ../sass/includes/_navigation.scss */
-nav ul {
+#grant nav ul {
   margin: 0 -30px;
   padding: 0;
   position: relative;
@@ -107,12 +98,12 @@ nav ul {
   list-style: none;
 }
 /* line 23, ../sass/includes/_navigation.scss */
-nav ul li {
+#grant nav ul li {
   display: inline-block;
   padding: 0;
 }
 /* line 26, ../sass/includes/_navigation.scss */
-nav ul li a {
+#grant nav ul li a {
   color: white;
   display: block;
   height: 100%;
@@ -121,17 +112,17 @@ nav ul li a {
   padding: 30px 30px 36px;
 }
 /* line 33, ../sass/includes/_navigation.scss */
-nav ul li a:hover {
+#grant nav ul li a:hover {
   color: white;
   text-decoration: none;
   background: #007495;
 }
 /* line 41, ../sass/includes/_navigation.scss */
-nav .bg-wrap {
+#grant nav .bg-wrap {
   position: relative;
 }
 /* line 44, ../sass/includes/_navigation.scss */
-nav .bg-in {
+#grant nav .bg-in {
   background: url(../img/menu-bg-in.png) top center repeat-x;
   content: " ";
   height: 6px;
@@ -141,9 +132,8 @@ nav .bg-in {
   left: 0;
   z-index: 1;
 }
-
 /* line 1, ../sass/includes/_apply-box.scss */
-.apply-reece-grant {
+#grant .apply-reece-grant {
   width: 100%;
   background: white;
   margin: 20px 0;
@@ -159,7 +149,7 @@ nav .bg-in {
   text-align: center;
 }
 /* line 9, ../sass/includes/_apply-box.scss */
-.apply-reece-grant .top-section {
+#grant .apply-reece-grant .top-section {
   padding: 1.875em;
   -webkit-border-radius: 1.25em 1.25em 0 0;
   -moz-border-radius: 1.25em 1.25em 0 0;
@@ -167,12 +157,12 @@ nav .bg-in {
   border-radius: 1.25em 1.25em 0 0;
 }
 /* line 13, ../sass/includes/_apply-box.scss */
-.apply-reece-grant .wave {
+#grant .apply-reece-grant .wave {
   background: url(../img/apply-box-wave.png) center center repeat-x;
   height: 20px;
 }
 /* line 17, ../sass/includes/_apply-box.scss */
-.apply-reece-grant .bottom-section {
+#grant .apply-reece-grant .bottom-section {
   padding: 1.875em;
   background: #179cb4;
   -webkit-border-radius: 0 0 1.25em 1.25em;
@@ -180,9 +170,8 @@ nav .bg-in {
   -ms-border-radius: 0 0 1.25em 1.25em;
   border-radius: 0 0 1.25em 1.25em;
 }
-
 /* line 16, ../sass/includes/_countdown.scss */
-#countdown {
+#grant #countdown {
   opacity: 0;
   margin: 0 auto;
   text-align: center;
@@ -192,16 +181,16 @@ nav .bg-in {
 }
 @media (min-width: 768px) {
   /* line 16, ../sass/includes/_countdown.scss */
-  #countdown {
+  #grant #countdown {
     margin-bottom: 80px;
   }
 }
 /* line 26, ../sass/includes/_countdown.scss */
-#countdown .countdown-container {
+#grant #countdown .countdown-container {
   height: 130px;
 }
 /* line 29, ../sass/includes/_countdown.scss */
-#countdown .time {
+#grant #countdown .time {
   margin-right: 13px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -235,30 +224,30 @@ nav .bg-in {
   margin-right: 15px;
 }
 /* line 41, ../sass/includes/_countdown.scss */
-#countdown .time:last-child {
+#grant #countdown .time:last-child {
   margin-right: 0;
 }
 /* line 44, ../sass/includes/_countdown.scss */
-#countdown .time .label {
+#grant #countdown .time .label {
   text-transform: uppercase;
   color: white;
   font-weight: bold;
 }
 /* line 50, ../sass/includes/_countdown.scss */
-#countdown .time .flip-inner {
+#grant #countdown .time .flip-inner {
   position: relative;
   height: 48px;
   width: 54px;
 }
 @media (min-width: 768px) {
   /* line 50, ../sass/includes/_countdown.scss */
-  #countdown .time .flip-inner {
+  #grant #countdown .time .flip-inner {
     height: 55px;
     width: 58px;
   }
 }
 /* line 61, ../sass/includes/_countdown.scss */
-#countdown .time .count.top:before {
+#grant #countdown .time .count.top:before {
   content: " ";
   position: absolute;
   left: 7px;
@@ -267,7 +256,7 @@ nav .bg-in {
   bottom: 0px;
 }
 /* line 69, ../sass/includes/_countdown.scss */
-#countdown .time .count.top:after {
+#grant #countdown .time .count.top:after {
   content: " ";
   position: absolute;
   right: 7px;
@@ -276,7 +265,7 @@ nav .bg-in {
   bottom: 0px;
 }
 /* line 79, ../sass/includes/_countdown.scss */
-#countdown .time .count.bottom:before {
+#grant #countdown .time .count.bottom:before {
   content: " ";
   position: absolute;
   left: 7px;
@@ -285,7 +274,7 @@ nav .bg-in {
   top: 0px;
 }
 /* line 87, ../sass/includes/_countdown.scss */
-#countdown .time .count.bottom:after {
+#grant #countdown .time .count.bottom:after {
   content: " ";
   position: absolute;
   right: 7px;
@@ -294,136 +283,136 @@ nav .bg-in {
   top: 0px;
 }
 /* line 99, ../sass/includes/_countdown.scss */
-#countdown .days .count {
+#grant #countdown .days .count {
   background: #1d1d1d;
   border-bottom: 1px solid #272727;
 }
 /* line 102, ../sass/includes/_countdown.scss */
-#countdown .days .count.top {
+#grant #countdown .days .count.top {
   border-bottom-color: #272727;
 }
 /* line 104, ../sass/includes/_countdown.scss */
-#countdown .days .count.top:before {
+#grant #countdown .days .count.top:before {
   background: #272727;
 }
 /* line 107, ../sass/includes/_countdown.scss */
-#countdown .days .count.top:after {
+#grant #countdown .days .count.top:after {
   background: #272727;
 }
 /* line 111, ../sass/includes/_countdown.scss */
-#countdown .days .count.bottom {
+#grant #countdown .days .count.bottom {
   border-top-color: #272727;
   border-bottom: 2px solid #272727;
 }
 /* line 114, ../sass/includes/_countdown.scss */
-#countdown .days .count.bottom:before {
+#grant #countdown .days .count.bottom:before {
   background: #272727;
 }
 /* line 117, ../sass/includes/_countdown.scss */
-#countdown .days .count.bottom:after {
+#grant #countdown .days .count.bottom:after {
   background: #272727;
 }
 /* line 124, ../sass/includes/_countdown.scss */
-#countdown .hours .count {
+#grant #countdown .hours .count {
   background: #1d1d1d;
 }
 /* line 126, ../sass/includes/_countdown.scss */
-#countdown .hours .count.top {
+#grant #countdown .hours .count.top {
   border-bottom-color: #272727;
 }
 /* line 128, ../sass/includes/_countdown.scss */
-#countdown .hours .count.top:before {
+#grant #countdown .hours .count.top:before {
   background: #272727;
 }
 /* line 131, ../sass/includes/_countdown.scss */
-#countdown .hours .count.top:after {
+#grant #countdown .hours .count.top:after {
   background: #272727;
 }
 /* line 135, ../sass/includes/_countdown.scss */
-#countdown .hours .count.bottom {
+#grant #countdown .hours .count.bottom {
   border-top-color: #272727;
   border-bottom: 2px solid #272727;
 }
 /* line 138, ../sass/includes/_countdown.scss */
-#countdown .hours .count.bottom:before {
+#grant #countdown .hours .count.bottom:before {
   background: #272727;
 }
 /* line 141, ../sass/includes/_countdown.scss */
-#countdown .hours .count.bottom:after {
+#grant #countdown .hours .count.bottom:after {
   background: #272727;
 }
 /* line 148, ../sass/includes/_countdown.scss */
-#countdown .minutes {
+#grant #countdown .minutes {
   margin-right: 0;
 }
 /* line 150, ../sass/includes/_countdown.scss */
-#countdown .minutes .count {
+#grant #countdown .minutes .count {
   background: #1d1d1d;
 }
 /* line 152, ../sass/includes/_countdown.scss */
-#countdown .minutes .count.top {
+#grant #countdown .minutes .count.top {
   border-bottom-color: #272727;
 }
 /* line 154, ../sass/includes/_countdown.scss */
-#countdown .minutes .count.top:before {
+#grant #countdown .minutes .count.top:before {
   background: #272727;
 }
 /* line 157, ../sass/includes/_countdown.scss */
-#countdown .minutes .count.top:after {
+#grant #countdown .minutes .count.top:after {
   background: #272727;
 }
 /* line 161, ../sass/includes/_countdown.scss */
-#countdown .minutes .count.bottom {
+#grant #countdown .minutes .count.bottom {
   border-top-color: #272727;
   border-bottom: 2px solid #272727;
 }
 /* line 164, ../sass/includes/_countdown.scss */
-#countdown .minutes .count.bottom:before {
+#grant #countdown .minutes .count.bottom:before {
   background: #272727;
 }
 /* line 167, ../sass/includes/_countdown.scss */
-#countdown .minutes .count.bottom:after {
+#grant #countdown .minutes .count.bottom:after {
   background: #272727;
 }
 /* line 173, ../sass/includes/_countdown.scss */
-#countdown .seconds {
+#grant #countdown .seconds {
   display: none;
 }
 /* line 176, ../sass/includes/_countdown.scss */
-#countdown .seconds {
+#grant #countdown .seconds {
   margin-right: 0;
 }
 /* line 178, ../sass/includes/_countdown.scss */
-#countdown .seconds .count {
+#grant #countdown .seconds .count {
   background: #1d1d1d;
 }
 /* line 180, ../sass/includes/_countdown.scss */
-#countdown .seconds .count.top {
+#grant #countdown .seconds .count.top {
   border-bottom-color: #272727;
 }
 /* line 182, ../sass/includes/_countdown.scss */
-#countdown .seconds .count.top:before {
+#grant #countdown .seconds .count.top:before {
   background: #272727;
 }
 /* line 185, ../sass/includes/_countdown.scss */
-#countdown .seconds .count.top:after {
+#grant #countdown .seconds .count.top:after {
   background: #272727;
 }
 /* line 189, ../sass/includes/_countdown.scss */
-#countdown .seconds .count.bottom {
+#grant #countdown .seconds .count.bottom {
   border-top-color: #272727;
   border-bottom: 2px solid #272727;
 }
 /* line 192, ../sass/includes/_countdown.scss */
-#countdown .seconds .count.bottom:before {
+#grant #countdown .seconds .count.bottom:before {
   background: #272727;
 }
 /* line 195, ../sass/includes/_countdown.scss */
-#countdown .seconds .count.bottom:after {
+#grant #countdown .seconds .count.bottom:after {
   background: #272727;
 }
 /* line 201, ../sass/includes/_countdown.scss */
-#countdown .count {
+#grant #countdown .count {
   position: relative;
   background: #202020;
   color: white;
@@ -449,20 +438,20 @@ nav .bg-in {
 }
 @media (min-width: 768px) {
   /* line 201, ../sass/includes/_countdown.scss */
-  #countdown .count {
+  #grant #countdown .count {
     font-size: 2.625em;
     line-height: 55px;
   }
 }
 /* line 221, ../sass/includes/_countdown.scss */
-#countdown .count span {
+#grant #countdown .count span {
   position: absolute;
   left: 0;
   display: block;
   width: 100%;
 }
 /* line 227, ../sass/includes/_countdown.scss */
-#countdown .count.top {
+#grant #countdown .count.top {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   -webkit-border-radius: 3px 3px 0 0;
@@ -477,7 +466,7 @@ nav .bg-in {
   transform-origin: 50% 100%;
 }
 /* line 233, ../sass/includes/_countdown.scss */
-#countdown .count.top.curr {
+#grant #countdown .count.top.curr {
   -webkit-transform: rotateX(0deg);
   -moz-transform: rotateX(0deg);
   -ms-transform: rotateX(0deg);
@@ -486,11 +475,11 @@ nav .bg-in {
   z-index: 3;
 }
 /* line 237, ../sass/includes/_countdown.scss */
-#countdown .count.top span {
+#grant #countdown .count.top span {
   top: -3px;
 }
 /* line 241, ../sass/includes/_countdown.scss */
-#countdown .count.bottom {
+#grant #countdown .count.bottom {
   background-image: linear-gradient(rgba(255, 255, 255, 0.1), transparent);
   background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.1), transparent);
   background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.1), transparent);
@@ -511,7 +500,7 @@ nav .bg-in {
   transform-origin: 50% 0;
 }
 /* line 254, ../sass/includes/_countdown.scss */
-#countdown .count.bottom.next {
+#grant #countdown .count.bottom.next {
   -webkit-transform: rotateX(90deg);
   -moz-transform: rotateX(90deg);
   -ms-transform: rotateX(90deg);
@@ -520,7 +509,7 @@ nav .bg-in {
   z-index: 2;
 }
 /* line 258, ../sass/includes/_countdown.scss */
-#countdown .count.bottom span {
+#grant #countdown .count.bottom span {
   top: -6px;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -529,7 +518,7 @@ nav .bg-in {
   transform: translateY(-50%);
 }
 /* line 267, ../sass/includes/_countdown.scss */
-#countdown .flip .count.curr.top {
+#grant #countdown .flip .count.curr.top {
   -webkit-transition: all 250ms ease-in-out;
   -moz-transition: all 250ms ease-in-out;
   -ms-transition: all 250ms ease-in-out;
@@ -542,7 +531,7 @@ nav .bg-in {
   transform: rotateX(-90deg);
 }
 /* line 274, ../sass/includes/_countdown.scss */
-#countdown .flip .count.next.bottom {
+#grant #countdown .flip .count.next.bottom {
   -webkit-transition: all 250ms ease-in-out 250ms;
   -moz-transition: all 250ms ease-in-out 250ms;
   -ms-transition: all 250ms ease-in-out 250ms;
@@ -555,68 +544,65 @@ nav .bg-in {
   transform: rotateX(0deg);
 }
 /* line 282, ../sass/includes/_countdown.scss */
-#countdown .label {
+#grant #countdown .label {
   font-size: normal;
   margin-top: 15px;
   display: block;
   position: absolute;
   width: 100%;
 }
-
 /* line 1, ../sass/pages/_homepage.scss */
-.grid-item {
+#grant .grid-item {
   width: 100%;
 }
 @media (min-width: 420px) {
   /* line 1, ../sass/pages/_homepage.scss */
-  .grid-item {
+  #grant .grid-item {
     width: 50%;
   }
 }
 @media (min-width: 768px) {
   /* line 1, ../sass/pages/_homepage.scss */
-  .grid-item {
+  #grant .grid-item {
     width: 33.33333%;
   }
 }
-
 /* line 11, ../sass/pages/_homepage.scss */
-.main-inner h2 {
+#grant .main-inner h2 {
   font-size: 1.125em;
 }
 /* line 14, ../sass/pages/_homepage.scss */
-.main-inner .intro-left {
+#grant .main-inner .intro-left {
   padding: 0 15px;
 }
 @media (min-width: 420px) {
   /* line 14, ../sass/pages/_homepage.scss */
-  .main-inner .intro-left {
+  #grant .main-inner .intro-left {
     width: 64.53%;
     float: left;
     padding: 5.625em 4.375em 5.625em 0;
   }
 }
 /* line 22, ../sass/pages/_homepage.scss */
-.main-inner .intro-right {
+#grant .main-inner .intro-right {
   padding: 0 15px;
 }
 @media (min-width: 420px) {
   /* line 22, ../sass/pages/_homepage.scss */
-  .main-inner .intro-right {
+  #grant .main-inner .intro-right {
     padding: 0;
     width: 35.47%;
     float: left;
   }
 }
-
 /* line 31, ../sass/pages/_homepage.scss */
-#feed {
+#grant #feed {
   padding: 40px 0;
   max-width: 1057px;
   margin: 0 auto;
 }
 /* line 35, ../sass/pages/_homepage.scss */
-#feed .item {
+#grant #feed .item {
   position: relative;
   background: white;
   padding: 40px 40px 20px;
@@ -626,31 +612,31 @@ nav .bg-in {
   text-align: center;
 }
 /* line 43, ../sass/pages/_homepage.scss */
-#feed .item h2 {
+#grant #feed .item h2 {
   margin-top: 0;
 }
 /* line 46, ../sass/pages/_homepage.scss */
-#feed .item.bg-blue {
+#grant #feed .item.bg-blue {
   background: #003964;
   color: white;
 }
 /* line 50, ../sass/pages/_homepage.scss */
-#feed .item.color-blue {
+#grant #feed .item.color-blue {
   color: #003964;
 }
 /* line 53, ../sass/pages/_homepage.scss */
-#feed .item.color-light-blue {
+#grant #feed .item.color-light-blue {
   color: #009cb6;
 }
 /* line 57, ../sass/pages/_homepage.scss */
-#feed .featured-project,
-#feed .project {
+#grant #feed .featured-project,
+#grant #feed .project {
   color: white;
   height: 532px;
 }
 /* line 61, ../sass/pages/_homepage.scss */
-#feed .featured-project:before,
-#feed .project:before {
+#grant #feed .featured-project:before,
+#grant #feed .project:before {
   content: " ";
   position: absolute;
   top: 0;
@@ -660,61 +646,61 @@ nav .bg-in {
   background: url(../img/feed/light-blue-gradient.png) top center repeat-x;
 }
 /* line 71, ../sass/pages/_homepage.scss */
-#feed .featured-project.dark-blue:before,
-#feed .project.dark-blue:before {
+#grant #feed .featured-project.dark-blue:before,
+#grant #feed .project.dark-blue:before {
   background: url(../img/feed/dark-blue-gradient.png) top center repeat-x;
 }
 /* line 75, ../sass/pages/_homepage.scss */
-#feed .featured-project .details,
-#feed .project .details {
+#grant #feed .featured-project .details,
+#grant #feed .project .details {
   position: relative;
   padding-bottom: 3.75em;
 }
 /* line 79, ../sass/pages/_homepage.scss */
-#feed .featured-project .link,
-#feed .project .link {
+#grant #feed .featured-project .link,
+#grant #feed .project .link {
   position: absolute;
   bottom: 1.875em;
   left: 0;
   width: 100%;
 }
 /* line 87, ../sass/pages/_homepage.scss */
-#feed .featured-project .details {
+#grant #feed .featured-project .details {
   text-align: left;
 }
 /* line 89, ../sass/pages/_homepage.scss */
-#feed .featured-project .details h2 {
+#grant #feed .featured-project .details h2 {
   font-size: 3em;
   line-height: 0.91667em;
 }
 /* line 96, ../sass/pages/_homepage.scss */
-#feed .news-article h3 {
+#grant #feed .news-article h3 {
   text-transform: uppercase;
   font-size: 0.75em;
   line-height: 2.16667em;
   margin-bottom: 0;
 }
 /* line 102, ../sass/pages/_homepage.scss */
-#feed .news-article h2 {
+#grant #feed .news-article h2 {
   font-size: 1.5em;
   font-weight: 400;
   line-height: 1.08333em;
 }
 /* line 107, ../sass/pages/_homepage.scss */
-#feed .news-article .details {
+#grant #feed .news-article .details {
   margin-bottom: 1.875em;
 }
 /* line 112, ../sass/pages/_homepage.scss */
-#feed .info h2 {
+#grant #feed .info h2 {
   font-size: 2.625em;
   line-height: 0.90476em;
 }
 /* line 116, ../sass/pages/_homepage.scss */
-#feed .info .details {
+#grant #feed .info .details {
   margin-bottom: 1.25em;
 }
 /* line 120, ../sass/pages/_homepage.scss */
-#feed .btn {
+#grant #feed .btn {
   background: #009cb6;
   color: white;
   font-size: 0.875em;
@@ -734,47 +720,47 @@ nav .bg-in {
   transition: 0.3s color ease-out, 0.3s background ease-out;
 }
 /* line 131, ../sass/pages/_homepage.scss */
-#feed .btn:hover {
+#grant #feed .btn:hover {
   background: #003964;
   color: #009cb6;
 }
 /* line 135, ../sass/pages/_homepage.scss */
-#feed .btn.bg-dark-blue {
+#grant #feed .btn.bg-dark-blue {
   background: #003964;
 }
 /* line 137, ../sass/pages/_homepage.scss */
-#feed .btn.bg-dark-blue:hover {
+#grant #feed .btn.bg-dark-blue:hover {
   color: #003964;
 }
 /* line 141, ../sass/pages/_homepage.scss */
-#feed .btn.bg-white {
+#grant #feed .btn.bg-white {
   background: white;
 }
 /* line 143, ../sass/pages/_homepage.scss */
-#feed .btn.bg-white:hover {
+#grant #feed .btn.bg-white:hover {
   color: white;
 }
 /* line 147, ../sass/pages/_homepage.scss */
-#feed .btn.color-dark-blue {
+#grant #feed .btn.color-dark-blue {
   color: #003964;
 }
 /* line 149, ../sass/pages/_homepage.scss */
-#feed .btn.color-dark-blue:hover {
+#grant #feed .btn.color-dark-blue:hover {
   background: #003964;
 }
 /* line 153, ../sass/pages/_homepage.scss */
-#feed .btn.color-light-blue {
+#grant #feed .btn.color-light-blue {
   color: #009cb6;
 }
 /* line 155, ../sass/pages/_homepage.scss */
-#feed .btn.color-light-blue:hover {
+#grant #feed .btn.color-light-blue:hover {
   background: #009cb6;
 }
 /* line 159, ../sass/pages/_homepage.scss */
-#feed .btn.color-white {
+#grant #feed .btn.color-white {
   color: white;
 }
 /* line 161, ../sass/pages/_homepage.scss */
-#feed .btn.color-white:hover {
+#grant #feed .btn.color-white:hover {
   color: #003964;
 }

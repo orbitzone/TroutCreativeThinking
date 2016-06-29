@@ -1,36 +1,25 @@
-body{
-	background: #edebec;
-	min-height: 100%;
-	font-size: 16px;
-	-webkit-font-smoothing: antialiased; 
-  -moz-osx-font-smoothing: grayscale;
-  font-family: $font-main;
-}
 .container{
 	max-width: 1440px;
-		width: 100%;
+	width: 100%;
 }
-#grant{
-	line-height: em(20);
-	h1,h2,h3,h4,h5,h6,b, strong{
-		font-weight: 600;
+h1,h2,h3,h4,h5,h6,b, strong{
+	font-weight: 600;
+}
+.color-ligh-blue{
+	color: $light-blue;
+}
+.row{
+	margin: 0 -20px;
+	.col-3{
+		width: percentage(3/8);
+		padding: 0 em(20);
+		float: left;
 	}
-	.color-ligh-blue{
-		color: $light-blue;
-	}
-	.row{
-		margin: 0 -20px;
-		.col-3{
-			width: percentage(3/8);
-			padding: 0 em(20);
-			float: left;
-		}
-		.col-5{
-			width: percentage(5/8);
-			padding: 0 em(20);
-			float: left;
-		}		
-	}
+	.col-5{
+		width: percentage(5/8);
+		padding: 0 em(20);
+		float: left;
+	}		
 }
 #main{
 	.container{

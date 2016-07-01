@@ -3,7 +3,7 @@
 			  <div class="grid-item">
 			  	<div class="featured-project item double" style="background-image: url(img/feed/feed1.png);">
 			  		<div class="details">
-			  			<h2>"Praesent commodo cursus magna, vel scele risque"</h2>
+			  			<h2>"Our main goal was to give the children an future"</h2>
 			  		</div>					  		
 				  	<div class="link"><a href="project-justin.php" class="btn bg-white color-light-blue">Find out more</a></div>
 			  	</div>				  	

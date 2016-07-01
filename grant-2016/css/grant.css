@@ -637,9 +637,8 @@
 /* line 6, ../sass/includes/_navigation.scss */
 #grant nav.menu .container {
   position: relative;
-  padding: 0;
 }
-/* line 10, ../sass/includes/_navigation.scss */
+/* line 9, ../sass/includes/_navigation.scss */
 #grant nav.menu:after {
   background: url(../img/menu-bg-out.png) top center repeat-x;
   content: " ";
@@ -650,7 +649,7 @@
   left: 0;
   z-index: 0;
 }
-/* line 20, ../sass/includes/_navigation.scss */
+/* line 19, ../sass/includes/_navigation.scss */
 #grant nav.menu ul {
   margin: 0 -30px;
   padding: 0;
@@ -660,17 +659,17 @@
   text-align: center;
 }
 @media (min-width: 768px) {
-  /* line 20, ../sass/includes/_navigation.scss */
+  /* line 19, ../sass/includes/_navigation.scss */
   #grant nav.menu ul {
     text-align: left;
   }
 }
-/* line 30, ../sass/includes/_navigation.scss */
+/* line 29, ../sass/includes/_navigation.scss */
 #grant nav.menu ul li {
   display: inline-block;
   padding: 0;
 }
-/* line 33, ../sass/includes/_navigation.scss */
+/* line 32, ../sass/includes/_navigation.scss */
 #grant nav.menu ul li a {
   color: white;
   display: block;
@@ -680,28 +679,28 @@
   padding: 30px 10px 36px;
 }
 @media (min-width: 768px) {
-  /* line 33, ../sass/includes/_navigation.scss */
+  /* line 32, ../sass/includes/_navigation.scss */
   #grant nav.menu ul li a {
     font-size: 18px;
     padding: 30px 30px 36px;
   }
 }
-/* line 44, ../sass/includes/_navigation.scss */
+/* line 43, ../sass/includes/_navigation.scss */
 #grant nav.menu ul li a:hover {
   color: white;
   text-decoration: none;
   background: #007495;
 }
-/* line 49, ../sass/includes/_navigation.scss */
+/* line 48, ../sass/includes/_navigation.scss */
 #grant nav.menu ul li a.active {
   background: #007495;
 }
-/* line 53, ../sass/includes/_navigation.scss */
+/* line 52, ../sass/includes/_navigation.scss */
 #grant nav.menu ul li.apply-now {
   padding: 0.625em;
   text-align: center;
 }
-/* line 56, ../sass/includes/_navigation.scss */
+/* line 55, ../sass/includes/_navigation.scss */
 #grant nav.menu ul li.apply-now a {
   padding: 0 0.9375em;
   line-height: 3.125em;
@@ -712,7 +711,7 @@
   border-radius: 1.125em;
 }
 @media (min-width: 768px) {
-  /* line 56, ../sass/includes/_navigation.scss */
+  /* line 55, ../sass/includes/_navigation.scss */
   #grant nav.menu ul li.apply-now a {
     padding: 0 1.875em;
     -webkit-border-radius: 1.25em;
@@ -721,24 +720,24 @@
     border-radius: 1.25em;
   }
 }
-/* line 65, ../sass/includes/_navigation.scss */
+/* line 64, ../sass/includes/_navigation.scss */
 #grant nav.menu ul li.apply-now a:hover {
   color: #009cb6;
   background: #003964;
 }
-/* line 69, ../sass/includes/_navigation.scss */
+/* line 68, ../sass/includes/_navigation.scss */
 #grant nav.menu ul li.apply-now a.active {
   color: white;
   background: #003964;
 }
-/* line 77, ../sass/includes/_navigation.scss */
+/* line 76, ../sass/includes/_navigation.scss */
 #grant nav.menu .bg-wrap {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
 }
-/* line 83, ../sass/includes/_navigation.scss */
+/* line 82, ../sass/includes/_navigation.scss */
 #grant nav.menu .bg-in {
   background: url(../img/menu-bg-in.png) top center repeat-x;
   content: " ";

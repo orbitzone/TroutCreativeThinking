@@ -1,4 +1,4 @@
-<div id="countdown" data-date="2016-11-03 12:01:00" class="countdown-container">
+<div id="countdown" data-date="2016-09-30 00:00:00" class="countdown-container">
   <div class="time days flip">
     <div class="flip-inner">
       <span class="count curr top"><span>00</span></span>

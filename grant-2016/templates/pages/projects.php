@@ -3288,33 +3288,27 @@
 	h0.1h0.1h0.1h0.2l0.2,0.1h0.1h0.2h0.1h0.1l0.1,0.1l0.1,0.4v0.3l-0.1,0.2l-0.1,0.2l-0.1,0.3v0.1v0.3v0.2l0.2,0.5l0.2,0.3l0.1,0.3v0.1
 	l0,0l-0.1-0.3l0.1-0.5V116l-0.1-0.1l0.2-0.4l0.1-0.2l0.2-0.2h0.1h0.2l0.4-0.1h0.2h0.2h0.1l0.1,0.1l0.2,0.4l0.1,0.2l0.1,0.3l0.1,0.2
 	l0.1,0.2l0.2,0.1l0.5,0.3l0.1,0.1l0.1,0.1L395,117.2L395,117.2L395,117.2z"/>
-	<g id="tacloban" class="dot">
+	<g id="tacloban" class="dot" data-person="james">
 		<g>
 			<path d="M509.9,160.3c3.6,0,6.6,3,6.6,6.6s-3,6.6-6.6,6.6s-6.6-3-6.6-6.6S506.3,160.3,509.9,160.3
 				 M509.9,159.8c-3.9,0-7.1,3.2-7.1,7.1l0,0c0,3.9,3.2,7.1,7.1,7.1s7.1-3.2,7.1-7.1l0,0C517.1,163,513.9,159.8,509.9,159.8
 				L509.9,159.8z"/>
-		</g>
-		<g>
 			<circle cx="509.9" cy="167" r="4.4"/>
 		</g>		
 	</g>
-	<g id="nasik" class="dot active">
+	<g id="nasik" class="dot active" data-person="justin">
 		<g>
 			<path d="M423.1,143.2c3.6,0,6.6,3,6.6,6.6s-3,6.6-6.6,6.6s-6.6-3-6.6-6.6S419.5,143.2,423.1,143.2
 				 M423.1,142.7c-3.9,0-7.1,3.2-7.1,7.1l0,0c0,3.9,3.2,7.1,7.1,7.1s7.1-3.2,7.1-7.1l0,0C430.2,145.9,427,142.7,423.1,142.7
 				L423.1,142.7z"/>
-		</g>
-		<g>
 			<circle cx="423.1" cy="149.8" r="4.4"/>
 		</g>	
 	</g>
-	<g id="manuto" class="dot">
+	<g id="manuto" class="dot" data-person="tim">
 		<g>
 			<path d="M514.1,198.1c3.6,0,6.6,3,6.6,6.6s-3,6.6-6.6,6.6c-3.6,0-6.6-3-6.6-6.6S510.5,198.1,514.1,198.1
 				 M514.1,197.6c-3.9,0-7.1,3.2-7.1,7.1l0,0c0,3.9,3.2,7.1,7.1,7.1c3.9,0,7.1-3.2,7.1-7.1l0,0C521.3,200.8,518.1,197.6,514.1,197.6
 				L514.1,197.6z"/>
-		</g>
-		<g>
 			<circle cx="514.1" cy="204.7" r="4.4"/>
 		</g>	
 	</g>
@@ -3323,7 +3317,7 @@
 	</div>
 	<div class="container-medium">
 		<div class="cards-slider">
-			<div class="card active">
+			<div class="card active justin">
 				<div class="row">
 					<div class="col-5">
 						&nbsp;
@@ -3341,7 +3335,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="card">
+			<div class="card james">
 				<div class="row">
 					<div class="col-5">
 						&nbsp;
@@ -3358,7 +3352,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="card">
+			<div class="card tim">
 				<div class="row">
 					<div class="col-5">
 						&nbsp;
@@ -3396,7 +3390,7 @@
 		</div>
 		<div class="winners-slider-wrap">
 			<div class="winners-slider">
-				<div class="slide item-slide">
+				<div class="slide item-slide" data-person="justin">
 					<div class="image">
 						<img src="img/winners/justin-circle.png" alt="Justin Morris">
 					</div>
@@ -3410,14 +3404,14 @@
 						</div>
 					</div>
 				</div>
-				<div class="slide item-slide">
+				<div class="slide item-slide" data-person="james">
 					<div class="image">
 						<img src="img/winners/james-circle.png" alt="James Mills">
 					</div>
 					<h3>James Mills</h3>
 					<p>Toclobam, Philipines</p>
 				</div>
-				<div class="slide item-slide">
+				<div class="slide item-slide" data-person="tim">
 					<div class="image">
 						<img src="img/winners/tim-circle.png" alt="Timothy Brideson">
 					</div>

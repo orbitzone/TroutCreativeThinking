@@ -7,7 +7,7 @@
 		</ol>
 	</div>
 </div>
-<div class="news-article">
+<div class="project">
 	<div class="container first">
 		<div class="container-small">
 			<div class="title">
@@ -120,4 +120,5 @@
 			</div>		
 		</div>		
 	</div>
+	<?php include_once('templates/includes/aside.php');?>
 </div>

@@ -219,4 +219,41 @@ $make-a-difference-border: #e6e7e8;
 			}
 		}
 	}
+	.slider{
+		margin: 0 -6px;
+		.slick-slide{
+			padding: 0 6px;
+		}
+		.slider-main{
+			margin-bottom: 12px;
+		}
+		.slick-next{
+			right: -15px;
+			@media (min-width: $screen-sm){
+				right: -25px;
+			}
+		}
+		.slick-prev{
+			left: -15px;
+			@media (min-width: $screen-sm){
+				left: -25px;
+			}
+		}
+	}
+	.slider-thumbs{
+		.image{
+			height: 144px;
+			background-size: cover;
+			background-position: center center;
+			img{
+				opacity: 0;
+			}
+		}
+	}
+	.related-stories{
+		padding-top: em(50);
+		h3{
+			margin-bottom: em(30,32);
+		}
+	}
 }

@@ -779,6 +779,7 @@
   background: white;
   margin: 0;
   float: right;
+  margin-bottom: 1.25em;
   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   -ms-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
@@ -789,7 +790,7 @@
   border-radius: 1.25em;
   text-align: center;
 }
-/* line 9, ../sass/includes/_apply-box.scss */
+/* line 10, ../sass/includes/_apply-box.scss */
 #grant .apply-reece-grant .top-section {
   padding: 3.125em 1.875em 1.25em;
   -webkit-border-radius: 1.25em 1.25em 0 0;
@@ -797,22 +798,22 @@
   -ms-border-radius: 1.25em 1.25em 0 0;
   border-radius: 1.25em 1.25em 0 0;
 }
-/* line 13, ../sass/includes/_apply-box.scss */
+/* line 14, ../sass/includes/_apply-box.scss */
 #grant .apply-reece-grant .content {
   max-width: 12.5em;
   margin: 0 auto;
   color: #3f3f3f;
 }
-/* line 17, ../sass/includes/_apply-box.scss */
+/* line 18, ../sass/includes/_apply-box.scss */
 #grant .apply-reece-grant .content h3 {
   color: #3f3f3f;
 }
-/* line 21, ../sass/includes/_apply-box.scss */
+/* line 22, ../sass/includes/_apply-box.scss */
 #grant .apply-reece-grant .wave {
   background: url(../img/apply-box-wave.png) center center repeat-x;
   height: 20px;
 }
-/* line 25, ../sass/includes/_apply-box.scss */
+/* line 26, ../sass/includes/_apply-box.scss */
 #grant .apply-reece-grant .bottom-section {
   padding: 1.875em;
   background: #179cb4;
@@ -821,12 +822,12 @@
   -ms-border-radius: 0 0 1.25em 1.25em;
   border-radius: 0 0 1.25em 1.25em;
 }
-/* line 30, ../sass/includes/_apply-box.scss */
+/* line 31, ../sass/includes/_apply-box.scss */
 #grant .apply-reece-grant .btn {
   background: white;
   color: #3f3f3f;
 }
-/* line 33, ../sass/includes/_apply-box.scss */
+/* line 34, ../sass/includes/_apply-box.scss */
 #grant .apply-reece-grant .btn:hover {
   background: #003964;
   color: white;
@@ -1510,21 +1511,33 @@
 }
 /* line 5, ../sass/pages/_projects.scss */
 #grant.projects #main .container.first {
-  padding-top: 80px;
+  padding-top: 30px;
 }
-/* line 10, ../sass/pages/_projects.scss */
+@media (min-width: 768px) {
+  /* line 5, ../sass/pages/_projects.scss */
+  #grant.projects #main .container.first {
+    padding-top: 80px;
+  }
+}
+/* line 13, ../sass/pages/_projects.scss */
 #grant.projects .map {
   position: relative;
   max-width: 995px;
   margin: 0 auto;
 }
-/* line 14, ../sass/pages/_projects.scss */
+/* line 17, ../sass/pages/_projects.scss */
 #grant.projects .map svg {
   display: block;
   width: 100%;
-  height: 480px;
+  height: 200px;
 }
-/* line 19, ../sass/pages/_projects.scss */
+@media (min-width: 768px) {
+  /* line 17, ../sass/pages/_projects.scss */
+  #grant.projects .map svg {
+    height: 480px;
+  }
+}
+/* line 25, ../sass/pages/_projects.scss */
 #grant.projects .map svg .dot path, #grant.projects .map svg .dot circle {
   -webkit-transform-origin: center center;
   -moz-transform-origin: center center;
@@ -1533,7 +1546,7 @@
   transform-origin: center center;
   fill: #009cb6;
 }
-/* line 23, ../sass/pages/_projects.scss */
+/* line 29, ../sass/pages/_projects.scss */
 #grant.projects .map svg .dot path {
   -webkit-animation: pulse 1s ease-out infinite;
   -moz-animation: pulse 1s ease-out infinite;
@@ -1541,7 +1554,7 @@
   -o-animation: pulse 1s ease-out infinite;
   animation: pulse 1s ease-out infinite;
 }
-/* line 26, ../sass/pages/_projects.scss */
+/* line 32, ../sass/pages/_projects.scss */
 #grant.projects .map svg .dot circle {
   -webkit-animation: circle_pulse 1s ease-out infinite;
   -moz-animation: circle_pulse 1s ease-out infinite;
@@ -1549,11 +1562,26 @@
   -o-animation: circle_pulse 1s ease-out infinite;
   animation: circle_pulse 1s ease-out infinite;
 }
-/* line 29, ../sass/pages/_projects.scss */
+/* line 35, ../sass/pages/_projects.scss */
 #grant.projects .map svg .dot.d2016 {
   fill: #003964;
 }
-/* line 33, ../sass/pages/_projects.scss */
+/* line 38, ../sass/pages/_projects.scss */
+#grant.projects .map svg .dot g {
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  display: block;
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -ms-transform-origin: center center;
+  -o-transform-origin: center center;
+  transform-origin: center center;
+}
+/* line 45, ../sass/pages/_projects.scss */
 #grant.projects .map svg .dot.active path, #grant.projects .map svg .dot.active circle {
   -webkit-animation: none;
   -moz-animation: none;
@@ -1566,11 +1594,11 @@
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-/* line 37, ../sass/pages/_projects.scss */
+/* line 49, ../sass/pages/_projects.scss */
 #grant.projects .map svg .dot.active path {
   opacity: 0;
 }
-/* line 40, ../sass/pages/_projects.scss */
+/* line 52, ../sass/pages/_projects.scss */
 #grant.projects .map svg .dot.active circle {
   fill: #009cb6 !important;
   -webkit-transform: scale(2);
@@ -1579,12 +1607,21 @@
   -o-transform: scale(2);
   transform: scale(2);
 }
-/* line 47, ../sass/pages/_projects.scss */
+/* line 58, ../sass/pages/_projects.scss */
+#grant.projects .map svg .dot:hover g {
+  -webkit-transform: scale(2);
+  -moz-transform: scale(2);
+  -ms-transform: scale(2);
+  -o-transform: scale(2);
+  transform: scale(2);
+}
+/* line 64, ../sass/pages/_projects.scss */
 #grant.projects .map h1 {
   max-width: 440px;
+  width: 100%;
   position: absolute;
   left: 50%;
-  top: -10px;
+  top: 30px;
   text-align: center;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
@@ -1592,8 +1629,15 @@
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
 }
-/* line 56, ../sass/pages/_projects.scss */
+@media (min-width: 768px) {
+  /* line 64, ../sass/pages/_projects.scss */
+  #grant.projects .map h1 {
+    top: -10px;
+  }
+}
+/* line 77, ../sass/pages/_projects.scss */
 #grant.projects .cards-slider {
+  margin-top: -20px;
   background: white;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -1604,68 +1648,76 @@
   -ms-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
 }
-/* line 60, ../sass/pages/_projects.scss */
+/* line 82, ../sass/pages/_projects.scss */
 #grant.projects .cards-slider .card {
-  padding: 30px;
+  padding: 0 30px 30px;
   display: none;
 }
-/* line 63, ../sass/pages/_projects.scss */
+@media (min-width: 768px) {
+  /* line 82, ../sass/pages/_projects.scss */
+  #grant.projects .cards-slider .card {
+    padding: 30px;
+  }
+}
+/* line 88, ../sass/pages/_projects.scss */
 #grant.projects .cards-slider .card.active {
   display: block;
   position: relative;
 }
-/* line 67, ../sass/pages/_projects.scss */
-#grant.projects .cards-slider .card .image {
-  margin: 0;
-  position: absolute;
-  bottom: 0;
+@media (min-width: 768px) {
+  /* line 92, ../sass/pages/_projects.scss */
+  #grant.projects .cards-slider .card .image {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+  }
 }
-/* line 75, ../sass/pages/_projects.scss */
+/* line 101, ../sass/pages/_projects.scss */
 #grant.projects .winners-slider-wrap {
   padding: 0 1.875em;
 }
-/* line 78, ../sass/pages/_projects.scss */
+/* line 104, ../sass/pages/_projects.scss */
 #grant.projects .winners-slider {
   padding: 1.875em 0;
   text-align: center;
 }
-/* line 81, ../sass/pages/_projects.scss */
+/* line 107, ../sass/pages/_projects.scss */
 #grant.projects .winners-slider .slide {
   padding: 0 1.875em;
 }
-/* line 84, ../sass/pages/_projects.scss */
+/* line 110, ../sass/pages/_projects.scss */
 #grant.projects .winners-slider .image {
   max-width: 178px;
   margin: 0 auto;
   margin-bottom: 10px;
 }
-/* line 89, ../sass/pages/_projects.scss */
+/* line 115, ../sass/pages/_projects.scss */
 #grant.projects .winners-slider .slick-next {
   right: -30px;
 }
-/* line 92, ../sass/pages/_projects.scss */
+/* line 118, ../sass/pages/_projects.scss */
 #grant.projects .winners-slider .slick-prev {
   left: -30px;
 }
-/* line 95, ../sass/pages/_projects.scss */
+/* line 121, ../sass/pages/_projects.scss */
 #grant.projects .winners-slider h3 {
   font-size: 0.875em;
   text-align: center;
   margin-bottom: 0;
 }
-/* line 100, ../sass/pages/_projects.scss */
+/* line 126, ../sass/pages/_projects.scss */
 #grant.projects .winners-slider p {
   text-align: center;
   font-size: 0.625em;
 }
-/* line 104, ../sass/pages/_projects.scss */
+/* line 130, ../sass/pages/_projects.scss */
 #grant.projects .winners-slider .year-wrap {
   position: relative;
   width: 30px;
   height: 178px;
   display: inline-block;
 }
-/* line 109, ../sass/pages/_projects.scss */
+/* line 135, ../sass/pages/_projects.scss */
 #grant.projects .winners-slider .year-wrap:before {
   content: " ";
   width: 1px;
@@ -1675,7 +1727,7 @@
   left: 50%;
   background: #e5ebef;
 }
-/* line 119, ../sass/pages/_projects.scss */
+/* line 145, ../sass/pages/_projects.scss */
 #grant.projects .winners-slider .year {
   position: absolute;
   top: 50%;
@@ -2088,6 +2140,56 @@
 #grant .project .other-participants a:hover h3 {
   color: #003964;
 }
+/* line 222, ../sass/pages/_project.scss */
+#grant .project .slider {
+  margin: 0 -6px;
+}
+/* line 224, ../sass/pages/_project.scss */
+#grant .project .slider .slick-slide {
+  padding: 0 6px;
+}
+/* line 227, ../sass/pages/_project.scss */
+#grant .project .slider .slider-main {
+  margin-bottom: 12px;
+}
+/* line 230, ../sass/pages/_project.scss */
+#grant .project .slider .slick-next {
+  right: -15px;
+}
+@media (min-width: 768px) {
+  /* line 230, ../sass/pages/_project.scss */
+  #grant .project .slider .slick-next {
+    right: -25px;
+  }
+}
+/* line 236, ../sass/pages/_project.scss */
+#grant .project .slider .slick-prev {
+  left: -15px;
+}
+@media (min-width: 768px) {
+  /* line 236, ../sass/pages/_project.scss */
+  #grant .project .slider .slick-prev {
+    left: -25px;
+  }
+}
+/* line 244, ../sass/pages/_project.scss */
+#grant .project .slider-thumbs .image {
+  height: 144px;
+  background-size: cover;
+  background-position: center center;
+}
+/* line 248, ../sass/pages/_project.scss */
+#grant .project .slider-thumbs .image img {
+  opacity: 0;
+}
+/* line 253, ../sass/pages/_project.scss */
+#grant .project .related-stories {
+  padding-top: 3.125em;
+}
+/* line 255, ../sass/pages/_project.scss */
+#grant .project .related-stories h3 {
+  margin-bottom: 0.9375em;
+}
 /* line 4, ../sass/pages/_news.scss */
 #grant.news #main .container.first {
   padding-top: 5.625em;
@@ -2109,57 +2211,61 @@
 #grant.news article .details {
   margin-bottom: 1.25em;
 }
-/* line 27, ../sass/pages/_news.scss */
+/* line 26, ../sass/pages/_news.scss */
+#grant.news article .image img {
+  width: 100%;
+}
+/* line 32, ../sass/pages/_news.scss */
 #grant.news .title h1 {
   max-width: 560px;
 }
-/* line 31, ../sass/pages/_news.scss */
+/* line 36, ../sass/pages/_news.scss */
 #grant.news .slider {
   margin: 0 -6px;
 }
-/* line 33, ../sass/pages/_news.scss */
+/* line 38, ../sass/pages/_news.scss */
 #grant.news .slider .slick-slide {
   padding: 0 6px;
 }
-/* line 36, ../sass/pages/_news.scss */
+/* line 41, ../sass/pages/_news.scss */
 #grant.news .slider .slider-main {
   margin-bottom: 12px;
 }
-/* line 39, ../sass/pages/_news.scss */
+/* line 44, ../sass/pages/_news.scss */
 #grant.news .slider .slick-next {
   right: -15px;
 }
 @media (min-width: 768px) {
-  /* line 39, ../sass/pages/_news.scss */
+  /* line 44, ../sass/pages/_news.scss */
   #grant.news .slider .slick-next {
     right: -25px;
   }
 }
-/* line 45, ../sass/pages/_news.scss */
+/* line 50, ../sass/pages/_news.scss */
 #grant.news .slider .slick-prev {
   left: -15px;
 }
 @media (min-width: 768px) {
-  /* line 45, ../sass/pages/_news.scss */
+  /* line 50, ../sass/pages/_news.scss */
   #grant.news .slider .slick-prev {
     left: -25px;
   }
 }
-/* line 53, ../sass/pages/_news.scss */
+/* line 58, ../sass/pages/_news.scss */
 #grant.news .slider-thumbs .image {
   height: 144px;
   background-size: cover;
   background-position: center center;
 }
-/* line 57, ../sass/pages/_news.scss */
+/* line 62, ../sass/pages/_news.scss */
 #grant.news .slider-thumbs .image img {
   opacity: 0;
 }
-/* line 62, ../sass/pages/_news.scss */
+/* line 67, ../sass/pages/_news.scss */
 #grant.news .related-stories {
   padding-top: 3.125em;
 }
-/* line 64, ../sass/pages/_news.scss */
+/* line 69, ../sass/pages/_news.scss */
 #grant.news .related-stories h3 {
   margin-bottom: 0.9375em;
 }
@@ -2192,9 +2298,20 @@
 }
 /* line 23, ../sass/pages/_apply-now.scss */
 #grant.apply-now .form {
-  padding: 3.125em 0;
+  padding: 3.125em 1.875em;
 }
-/* line 27, ../sass/pages/_apply-now.scss */
+/* line 26, ../sass/pages/_apply-now.scss */
+#grant.apply-now .error {
+  color: #FC0000;
+  font-size: 0.75em;
+  margin-top: -0.83333em;
+  margin-bottom: 1.66667em;
+}
+/* line 32, ../sass/pages/_apply-now.scss */
+#grant.apply-now input[type=checkbox] {
+  margin-left: 0;
+}
+/* line 36, ../sass/pages/_apply-now.scss */
 #grant.apply-now .steps-list button {
   padding: 0;
   width: 2.77778em;
@@ -2219,13 +2336,13 @@
   -o-transition: color 0.3s ease-out, background 0.3s ease-out, border-color 0.3s ease-out;
   transition: color 0.3s ease-out, background 0.3s ease-out, border-color 0.3s ease-out;
 }
-/* line 40, ../sass/pages/_apply-now.scss */
+/* line 49, ../sass/pages/_apply-now.scss */
 #grant.apply-now .steps-list button:hover {
   background: white;
   color: #003964;
   border-color: #003964;
 }
-/* line 45, ../sass/pages/_apply-now.scss */
+/* line 54, ../sass/pages/_apply-now.scss */
 #grant.apply-now .steps-list button.active {
   width: 2.08333em;
   height: 2.08333em;
@@ -2235,20 +2352,20 @@
   color: white;
   border: 1px solid white;
 }
-/* line 57, ../sass/pages/_apply-now.scss */
+/* line 66, ../sass/pages/_apply-now.scss */
 #grant.apply-now .steps label {
   color: #009cb6;
   font-weight: 600;
 }
-/* line 61, ../sass/pages/_apply-now.scss */
+/* line 70, ../sass/pages/_apply-now.scss */
 #grant.apply-now .steps .step {
   display: none;
 }
-/* line 63, ../sass/pages/_apply-now.scss */
+/* line 72, ../sass/pages/_apply-now.scss */
 #grant.apply-now .steps .step.active {
   display: block;
 }
-/* line 68, ../sass/pages/_apply-now.scss */
+/* line 77, ../sass/pages/_apply-now.scss */
 #grant.apply-now .steps-navigation {
   text-align: right;
 }
@@ -2261,11 +2378,11 @@
 #grant.apply-now .steps-navigation:after {
   clear: both;
 }
-/* line 71, ../sass/pages/_apply-now.scss */
+/* line 80, ../sass/pages/_apply-now.scss */
 #grant.apply-now .steps-navigation .submit {
   display: none;
 }
-/* line 74, ../sass/pages/_apply-now.scss */
+/* line 83, ../sass/pages/_apply-now.scss */
 #grant.apply-now .steps-navigation .previous {
   display: none;
   float: left;

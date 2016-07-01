@@ -40,26 +40,44 @@
 			</div>
 			<div class="steps">
 				<div class="step step1 active">
-					<label for="first-name">First Name</label>
-					<input type="text" name="first-name" id="first-name" class="form-control" placeholder="First name"/>
-					<label for="last-name">Last Name</label>
-					<input type="text" name="last-name" id="last-name" class="form-control" placeholder="Last name"/>
-					<label for="account-number">Reece Account Number</label>
-					<input type="text" name="account-number" id="account-number" class="form-control" placeholder="Reece Account Number"/>
-					<label for="email">Email</label>
-					<input type="email" name="email" id="email"  class="form-control" placeholder="Email Address"/>
+					<div class="field">
+						<label for="first-name">First Name</label>
+						<input type="text" name="first-name" id="first-name" class="form-control" placeholder="First name" required/>
+					</div>
+					<div class="field">
+						<label for="last-name">Last Name</label>
+						<input type="text" name="last-name" id="last-name" class="form-control" placeholder="Last name" required/>
+					</div>
+					<div class="field">
+						<label for="account-number">Reece Account Number</label>
+						<input type="text" name="account-number" id="account-number" class="form-control" placeholder="Reece Account Number" required/>
+					</div>
+					<div class="field">
+						<label for="email">Email</label>
+						<input type="email" name="email" id="email"  class="form-control" placeholder="Email Address" required/>	
+					</div>					
 				</div>
 				<div class="step step2">
-					<label for="name-and-location">Describe the name and location of your project</label>
-					<textarea rows="3" class="form-control" name="name-and-location" id="name-and-location"></textarea>
-					<label for="beneficiaries-of-the-project">Decribe the beneficiaries of the project</label>
-					<textarea rows="3" class="form-control" name="beneficiaries-of-the-project" id="beneficiaries-of-the-project" cols="30" rows="10"></textarea>
-					<label for="date-of-planned-work">Date of planned work and length</label>
-					<textarea rows="3" class="form-control" name="date-of-planned-work" id="date-of-planned-work"></textarea>
-					<label for="reason-for-the-project">Reason for the project?</label>
-					<textarea rows="3" class="form-control" name="reason-for-the-project" id="reason-for-the-project"></textarea>
-					<label for="what-is-the-desired-outcome">What is the desired outcome?</label>
-					<textarea rows="3" class="form-control" name="what-is-the-desired-outcome" id="what-is-the-desired-outcome"></textarea>
+					<div class="field">
+						<label for="name-and-location">Describe the name and location of your project</label>
+						<textarea rows="3" class="form-control" name="name-and-location" id="name-and-location" required></textarea>
+					</div>
+					<div class="field">
+						<label for="beneficiaries-of-the-project">Decribe the beneficiaries of the project</label>
+						<textarea rows="3" class="form-control" name="beneficiaries-of-the-project" id="beneficiaries-of-the-project" required></textarea>
+					</div>
+					<div class="field">
+						<label for="date-of-planned-work">Date of planned work and length</label>
+						<textarea rows="3" class="form-control" name="date-of-planned-work" id="date-of-planned-work" required></textarea>
+					</div>
+					<div class="field">
+						<label for="reason-for-the-project">Reason for the project?</label>
+						<textarea rows="3" class="form-control" name="reason-for-the-project" id="reason-for-the-project" required></textarea>
+					</div>
+					<div class="field">
+						<label for="what-is-the-desired-outcome">What is the desired outcome?</label>
+						<textarea rows="3" class="form-control" name="what-is-the-desired-outcome" id="what-is-the-desired-outcome" required></textarea>	
+					</div>
 				</div>
 				<div class="step step3">
 					<input type="file" class="form-control" name="upload-file-1" id="upload-file-1">

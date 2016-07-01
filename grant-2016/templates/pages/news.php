@@ -19,7 +19,7 @@
 						<h4>Reece Grant: an inspiring beginning</h4>
 						<div class="date">14th June 2016</div>
 						<div class="details">
-							<p>The Reece Grtant recipient and aditional grant recipients have just been announced.</p>
+							<p>The Reece Grant recipient and additional grant recipients have just been announced.</p>
 						</div>
 						<a href="news-article.php" class="btn">Read more</a>						
 					</article>

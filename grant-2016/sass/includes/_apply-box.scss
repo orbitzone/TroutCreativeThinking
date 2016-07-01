@@ -3,6 +3,7 @@
 	background: white;
 	margin: 0;
 	float: right;
+	margin-bottom: em(20);
 	@include box-shadow(0 0 10px 0 rgba(0,0,0,0.2));
 	@include border-radius(em(20));
 	text-align: center;

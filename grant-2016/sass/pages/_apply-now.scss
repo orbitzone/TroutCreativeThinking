@@ -21,7 +21,16 @@
 		margin: 0 auto;
 	}
 	.form{
-		padding: em(50) 0;
+		padding: em(50) em(30);
+	}
+	.error{
+		color: #FC0000;
+		font-size: em(12);
+		margin-top: em(-10,12);
+		margin-bottom: em(20,12);
+	}
+	input[type=checkbox]{
+		margin-left: 0;
 	}
 	.steps-list{
 		button{

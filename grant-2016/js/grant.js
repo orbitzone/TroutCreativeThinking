@@ -147,7 +147,8 @@ var grant = {
     });       
   },
   projects: function(){
-    $('aside a').on('click', function(){
+    this.news();
+    $('aside a.top-link').on('click', function(){
       //$(this).parent().addClass('active');
       if($(this).hasClass('active')){
         $(this).parent().find('ul').slideUp();
@@ -169,6 +170,13 @@ var grant = {
         }
       });
     }
+    $(document).on('click','.map .dot', function(){
+      var person = $(this).data('person');
+      $('.cards-slider .card').removeClass('active');
+      $('.cards-slider .'+person).addClass('active');
+      $('.map .dot').attr('class','dot');
+      $(this).attr('class','dot active');
+    });
     var filtered = false
     $(window).on('resize', function(){
       if($(window).width()<768){
@@ -186,6 +194,15 @@ var grant = {
         $(window).resize();
       }
     );
+    $('.winners-slider .slide').on('click', function(){
+      var person = $(this).data('person');
+      if(person){
+        $('.cards-slider .card').removeClass('active');
+        $('.cards-slider .'+person).addClass('active');
+        $('.map .dot').attr('class','dot');
+        $('.map .dot[data-person='+person+']').attr('class','dot active');
+      }
+    });
   },
   news: function(){
     $('.slider-thumbs').slick({
@@ -240,25 +257,73 @@ var grant = {
     });
   },
   applyNow: function(){
+    function validateStep1(){
+        var errors = false;
+        $('.step1 .error').remove();
+        $('.step1 input[required]').each(function(){
+          if($(this).val() == ""){
+            $(this).parent().append('<div class="error">This field is required</div>');
+            errors = true;
+          }
+        });
+        return !errors;
+    }
+    function validateStep2(){
+        var errors = false;
+        $('.step2 .error').remove();
+        $('.step2 textarea[required]').each(function(){
+          if($(this).val() == ""){
+            $(this).parent().append('<div class="error">This field is required</div>');
+            errors = true;
+          }
+        });
+        return !errors;
+    }
+    function validateStep3(){
+        var errors = false;
+        $('.step3 .error').remove();
+        $('.step3 input[required]').each(function(){
+          if($(this).val() == ""){
+            $(this).parent().append('<div class="error">This field is required</div>');
+            errors = true;
+          }
+        });
+        return !errors;
+    }
     function gotoStep(step){
-      $('.steps-list button, .steps .step').removeClass('active');
-      $('.steps-list button[data-step='+step+']').addClass('active');
-      $('.steps .step'+step).addClass('active');      
-      $('.steps-navigation .previous').hide();
-      $('.steps-navigation .next').hide();
-      $('.steps-navigation .submit').hide();
-      if(step == 1){
-        $('.steps-navigation .next').show();
+      var prev_step = (step * 1) -1;
+      var validated = false;
+      if(prev_step == 1){
+        validated = validateStep1();
       }else{
-        if(step == 2){
-          $('.steps-navigation .previous').show();
-          $('.steps-navigation .next').show();
+        if(prev_step == 2){
+          validated = validateStep2();
         }else{
-          $('.steps-navigation .previous').show();
-          $('.steps-navigation .submit').show();
+          validated = validateStep3(); 
         }
+      }
+      if(validated){
+        $('.steps-list button, .steps .step').removeClass('active');
+        $('.steps-list button[data-step='+step+']').addClass('active');
+        $('.steps-navigation .previous').hide();
+        $('.steps-navigation .next').hide();
+        $('.steps-navigation .submit').hide();
+        
+        if(step == 1){
+            $('.steps-navigation .next').show();        
+        }else{
+          if(step == 2){
+              $('.steps-navigation .previous').show();
+              $('.steps-navigation .next').show();
+          }else{
+            $('.steps-navigation .previous').show();
+            $('.steps-navigation .submit').show();
+          }
+        }
+        $('.steps .step'+step).addClass('active'); 
       }      
     }
+    
     $('.steps-list button').on('click', function(){
       var step=$(this).data('step');
       gotoStep(step);

@@ -9,6 +9,10 @@ var grant = {
     if($('#grant').hasClass('news')){
       this.news();
     }
+    if($('.winners-slider').length> 0){
+      this.winnersSlider();
+    }
+    this.applyNow();
 	},
   news: function(){
     $('.slider-thumbs').slick({
@@ -24,6 +28,59 @@ var grant = {
       nextArrow: '<button type="button" class="slick-next"><svg viewBox="0 0 26 46" id="shape-arrow-right"><title>arrow-right</title> <g id="arrow-right-arrow-right"> <path d="M1.6,45.4C2,45.8,2.5,46,3,46c0.5,0,1-0.2,1.4-0.6l21-21c0.8-0.8,0.8-2.1,0-2.8l-21-21c-0.8-0.8-2.1-0.8-2.8,0c-0.8,0.8-0.8,2.1,0,2.8L21.2,23L1.6,42.6C0.8,43.4,0.8,44.7,1.6,45.4z"/> </g> </svg></button>',
       focusOnSelect: true
     });    
+  },
+  winnersSlider: function(){
+    $('.cards-slider').slick({
+      prevArrow: '<button type="button" class="slick-prev"><svg viewBox="0 0 26 46" id="shape-arrow-left"><title>arrow-left</title> <g id="arrow-left-arrow-left"> <path d="M24.4,0.6C24.1,0.2,23.5,0,23,0c-0.5,0-1,0.2-1.4,0.6l-21,21c-0.8,0.8-0.8,2.1,0,2.8l21,21c0.8,0.8,2.1,0.8,2.8,0c0.8-0.8,0.8-2.1,0-2.8L4.9,23L24.4,3.4C25.2,2.6,25.2,1.4,24.4,0.6z"/> </g> </svg></button>',
+      nextArrow: '<button type="button" class="slick-next"><svg viewBox="0 0 26 46" id="shape-arrow-right"><title>arrow-right</title> <g id="arrow-right-arrow-right"> <path d="M1.6,45.4C2,45.8,2.5,46,3,46c0.5,0,1-0.2,1.4-0.6l21-21c0.8-0.8,0.8-2.1,0-2.8l-21-21c-0.8-0.8-2.1-0.8-2.8,0c-0.8,0.8-0.8,2.1,0,2.8L21.2,23L1.6,42.6C0.8,43.4,0.8,44.7,1.6,45.4z"/> </g> </svg></button>',
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: false,
+      arrows: false,
+      infinite: false
+    });
+    $('.winners-slider').slick({
+      prevArrow: '<button type="button" class="slick-prev"><svg viewBox="0 0 26 46" id="shape-arrow-left"><title>arrow-left</title> <g id="arrow-left-arrow-left"> <path d="M24.4,0.6C24.1,0.2,23.5,0,23,0c-0.5,0-1,0.2-1.4,0.6l-21,21c-0.8,0.8-0.8,2.1,0,2.8l21,21c0.8,0.8,2.1,0.8,2.8,0c0.8-0.8,0.8-2.1,0-2.8L4.9,23L24.4,3.4C25.2,2.6,25.2,1.4,24.4,0.6z"/> </g> </svg></button>',
+      nextArrow: '<button type="button" class="slick-next"><svg viewBox="0 0 26 46" id="shape-arrow-right"><title>arrow-right</title> <g id="arrow-right-arrow-right"> <path d="M1.6,45.4C2,45.8,2.5,46,3,46c0.5,0,1-0.2,1.4-0.6l21-21c0.8-0.8,0.8-2.1,0-2.8l-21-21c-0.8-0.8-2.1-0.8-2.8,0c-0.8,0.8-0.8,2.1,0,2.8L21.2,23L1.6,42.6C0.8,43.4,0.8,44.7,1.6,45.4z"/> </g> </svg></button>',
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      infinite: false,
+      variableWidth: true
+    });
+  },
+  applyNow: function(){
+    function gotoStep(step){
+      $('.steps-list button, .steps .step').removeClass('active');
+      $('.steps-list button[data-step='+step+']').addClass('active');
+      $('.steps .step'+step).addClass('active');      
+      $('.steps-navigation .previous').hide();
+      $('.steps-navigation .next').hide();
+      $('.steps-navigation .submit').hide();
+      if(step == 1){
+        $('.steps-navigation .next').show();
+      }else{
+        if(step == 2){
+          $('.steps-navigation .previous').show();
+          $('.steps-navigation .next').show();
+        }else{
+          $('.steps-navigation .previous').show();
+          $('.steps-navigation .submit').show();
+        }
+      }      
+    }
+    $('.steps-list button').on('click', function(){
+      var step=$(this).data('step');
+      gotoStep(step);
+    });
+    $('.steps-navigation button[type=button]').on('click', function(){
+      var step = $('.steps-list button.active').data('step');
+      if($(this).hasClass('previous')){
+        step = step - 1;
+      }else{
+        step = step + 1;
+      }
+      gotoStep(step);
+    });
   },
 	countdown: function(){
 		var labels = ['days', 'hours', 'minutes', 'seconds'],

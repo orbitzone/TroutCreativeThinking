@@ -1,6 +1,79 @@
 &.apply-now{
+	h1{
+		margin-bottom: em(48,52)
+	}
 	h4{
 		font-size: em(18);
 		line-height: em(18,18);
+	}
+	.intro{
+		padding-bottom: em(50);
+		.right-content{
+			margin-top: em(48);
+		}
+	}
+	.form-control{
+		border: none;
+		margin-bottom: em(20);
+	}
+	form{
+		max-width: 543px;
+		margin: 0 auto;
+	}
+	.form{
+		padding: em(50) 0;
+	}
+	.steps-list{
+		button{
+			padding: 0;
+			width: em(50,18);
+			height: em(50,18);
+			line-height: em(50,18);
+			font-size: em(18);
+			font-weight: 600;
+			@include box-shadow(none);
+			@include border-radius(50%);
+			background: rgba(255,255,255,0);
+			border: 1px solid $light-blue;
+			color: $light-blue;
+			@include transition(color .3s ease-out, background .3s ease-out, border-color .3s ease-out);
+			&:hover{
+				background: white;
+				color: $dark-blue;
+				border-color: $dark-blue;
+			}
+			&.active{
+				width: em(50,24);
+				height: em(50,24);
+				line-height: em(50,24);
+				font-size: em(24);
+				background: $light-blue;
+				color: white;
+				border: 1px solid white;
+			}
+		}
+	}
+	.steps{
+		label{
+			color: $light-blue;
+			font-weight: 600;
+		}
+		.step{
+			display: none;
+			&.active{
+				display: block;
+			}
+		}
+	}
+	.steps-navigation{
+		text-align: right;
+		@include clearfix();
+		.submit{
+			display: none;
+		}
+		.previous{
+			display: none;
+			float: left;
+		}
 	}
 }

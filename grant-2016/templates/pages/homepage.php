@@ -3,11 +3,11 @@
 		<div class="row">
 			<div class="col-5">
 				<div class="intro">
-					<h2 class="color-ligh-blue">The Reece Grant awards up to $15,000 to support community water projects here and abroad.</h2>
-					<p>Clean water supply and sanitation are fundamental for a healthy and safe community, as they play a vital role in reducing disease and improving the quality of life.</p>
+					<h2 class="color-ligh-blue">The Reece Grant awards up to $25,000 to support community water projects here and abroad.</h2>
 					<p>The Reece Grant is an initiative that aims to improve the quality of life within underprivileged communities by supporting our customers in undertaking projects to provide clean water or improve sanitation.</p>
-					<p>If you're a Reece account customer and you want to make a diﬀerence through a water related project, then we can help you make it happen.</p>
-					<p>The grant can take the form of funds or products, so if you are currently undertaking a project or if you have a project in mind, then it's time to apply.</p>
+					<p>In its first year, 2015 saw three plumbers receive grants to help fund international projects in East Timor, India and the Philippines. The projects were a life-changing experience for both the local communities and plumbers involved.</p>
+					<p>If you’re a Reece account customer and want to make a difference through a water related project, then we can help you make it happen.</p>
+					<p>The grant can take the form of funds or products, so if you are currently undertaking a project or if you have a project in mind, then it’s time to apply.</p>
 				</div>					
 			</div>
 			<div class="col-3">
@@ -15,7 +15,7 @@
 					<div class="top-section">
 						<div class="content">
 							<h3>Apply for the Reece Grant</h3>
-							<p>Fusce dapibus, tellus ac cursus commodo</p>
+							<p>Join other plumbers in making a difference to water health and sanitation around the world.</p>
 						</div>							
 					</div>
 					<div class="wave"></div>
@@ -72,7 +72,7 @@
 			  	<div class="project item dark-blue" style="background-image: url(img/feed/feed2.png);">
 			  		<div class="details">
 			  			<h2>Tim's Project</h2>
-				  		<p><b>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</b></p>
+				  		<p><b>Tim spent 14-days in Tacloban, Phillippines constructing toilet facilities in a school heavily damaged by Typhoon Haiyan in 2013.</b></p>
 			  		</div>						  	
 			  	</div>
 		  	</div>
@@ -89,7 +89,7 @@
 			  	<div class="project item" style="background-image: url(img/feed/feed3.png);">
 			  		<div class="details">
 			  			<h2>Jame's Project</h2>
-				  		<p><b>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</b></p>
+				  		<p><b>James worked with the Red Cross and the Friends for the Manatuto to restore remote villages in East Timor prone to landslide and flooding.</b></p>
 			  		</div>						  	
 				  	<div class="link"><a href="#" class="btn bg-white color-light-blue">Find out more</a></div>
 			  	</div>

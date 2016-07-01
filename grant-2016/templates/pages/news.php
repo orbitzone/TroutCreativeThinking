@@ -4,7 +4,7 @@
 			<div class="col-8">
 				<div class="intro">
 					<div class="title"><h1>World Water, Health and Sanitation News</h1></div>
-					<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod. Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+					<p>Check out the latest international news on water health and sanitation issues and projects working to make a difference.</p>
 				</div>		
 			</div>			
 		</div>

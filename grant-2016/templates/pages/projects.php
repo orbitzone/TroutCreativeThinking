@@ -3323,9 +3323,10 @@
 	</div>
 	<div class="container-medium">
 		<div class="cards-slider">
-			<div class="card">
+			<div class="card active">
 				<div class="row">
 					<div class="col-5">
+						&nbsp;
 						<div class="image">
 							<img src="img/winners/justin.png" alt="Justin Morris">
 						</div>
@@ -3343,6 +3344,7 @@
 			<div class="card">
 				<div class="row">
 					<div class="col-5">
+						&nbsp;
 						<div class="image">
 							<img src="img/winners/james.png" alt="James Mills">
 						</div>
@@ -3359,6 +3361,7 @@
 			<div class="card">
 				<div class="row">
 					<div class="col-5">
+						&nbsp;
 						<div class="image">
 							<img src="img/winners/tim.png" alt="Timothy Brideson">
 						</div>
@@ -3376,6 +3379,7 @@
 			<div class="card">
 				<div class="row">
 					<div class="col-5">
+						&nbsp;
 						<div class="image">
 							<img src="img/winners/tim.png" alt="Timothy Brideson">
 						</div>
@@ -3389,49 +3393,51 @@
 					</div>
 				</div>
 			</div>
-		</div>		
-		<div class="winners-slider">
-			<div class="slide">
-				<div class="image">
-					<img src="img/winners/justin-circle.png" alt="Justin Morris">
+		</div>
+		<div class="winners-slider-wrap">
+			<div class="winners-slider">
+				<div class="slide item-slide">
+					<div class="image">
+						<img src="img/winners/justin-circle.png" alt="Justin Morris">
+					</div>
+					<h3>Justin Morris</h3>
+					<p>Nasik, India</p>
 				</div>
-				<h3>Justin Morris</h3>
-				<p>Nasik, India</p>
-			</div>
-			<div class="slide">
-				<div class="year-wrap">
-					<div class="year">
-						2015
+				<div class="slide year-slide">
+					<div class="year-wrap">
+						<div class="year">
+							2015
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="slide">
-				<div class="image">
-					<img src="img/winners/james-circle.png" alt="James Mills">
-				</div>
-				<h3>James Mills</h3>
-				<p>Toclobam, Philipines</p>
-			</div>
-			<div class="slide">
-				<div class="image">
-					<img src="img/winners/tim-circle.png" alt="Timothy Brideson">
-				</div>
-				<h3>Timothy Brideson</h3>
-				<p>Manauto, East Timor</p>
-			</div>
-			<div class="slide">
-				<div class="year-wrap">
-					<div class="year">
-						2016
+				<div class="slide item-slide">
+					<div class="image">
+						<img src="img/winners/james-circle.png" alt="James Mills">
 					</div>
-				</div>			
-			</div>
-			<div class="slide">
-				<div class="image">
-					<img src="img/winners/justin-circle.png" alt="New Winner">
+					<h3>James Mills</h3>
+					<p>Toclobam, Philipines</p>
 				</div>
-				<h3>New Winner</h3>
-				<p>Location</p>
+				<div class="slide item-slide">
+					<div class="image">
+						<img src="img/winners/tim-circle.png" alt="Timothy Brideson">
+					</div>
+					<h3>Timothy Brideson</h3>
+					<p>Manauto, East Timor</p>
+				</div>
+				<div class="slide year-slide">
+					<div class="year-wrap">
+						<div class="year">
+							2016
+						</div>
+					</div>			
+				</div>
+				<div class="slide item-slide">
+					<div class="image">
+						<img src="img/winners/justin-circle.png" alt="New Winner">
+					</div>
+					<h3>New Winner</h3>
+					<p>Location</p>
+				</div>
 			</div>
 		</div>
 	</div>	

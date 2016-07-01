@@ -56,8 +56,24 @@ $winner-line-color: #e5ebef;
 	.cards-slider{
 		background: white;
 		@include border-radius(10px);
-		padding: 30px;
 		@include box-shadow(0px 0px 20px 0px rgba(0, 0, 0, 0.2));
+		.card{
+			padding: 30px;
+			display: none;
+			&.active{
+				display: block;
+				position: relative;
+			}
+			.image{
+				margin: 0;
+				position: absolute;
+				bottom: 0;
+
+			}
+		}
+	}
+	.winners-slider-wrap{
+		padding: 0 em(30);
 	}
 	.winners-slider{
 		padding: em(30) 0;
@@ -67,6 +83,8 @@ $winner-line-color: #e5ebef;
 		}
 		.image{
 			max-width: 178px;
+			margin: 0 auto;
+			margin-bottom: 10px;
 		}
 		.slick-next{
 			right: -30px;

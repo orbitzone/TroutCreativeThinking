@@ -75,7 +75,7 @@
 			  		<div class="details">
 			  			<h2>"Praesent commodo cursus magna, vel scele risque"</h2>
 			  		</div>					  		
-				  	<div class="link"><a href="#" class="btn bg-white color-light-blue">Find out more</a></div>
+				  	<div class="link"><a href="project-justin.php" class="btn bg-white color-light-blue">Find out more</a></div>
 			  	</div>				  	
 			  </div>
 			  <div class="grid-item">
@@ -84,7 +84,7 @@
 			  			<h2>1 in 5 child deaths</h2>
 				  		<p><b>(1.5 million each year) are due to water-related illness</b></p>
 			  		</div>					  		
-				  	<a href="#" class="btn bg-white color-light-blue">Apply now</a>
+				  	<a href="apply-now.php" class="btn bg-white color-light-blue">Apply now</a>
 			  	</div>				  	
 			  </div>
 			  <div class="grid-item">
@@ -101,14 +101,14 @@
 			  			<h3>News</h3>
 				  		<h2>New toilets could save lives in Haiti</h2>
 			  		</div>					  		
-				  	<a href="#" class="btn">Water news</a>
+				  	<a href="news-article.php" class="btn">Water news</a>
 			  	</div>				  	
 			  </div>
 			  <div class="grid-item">
 			  	<div class="project item dark-blue" style="background-image: url(img/feed/feed2.png);">
 			  		<div class="details">
 			  			<h2>Tim's Project</h2>
-				  		<p><b>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</b></p>
+				  		<p><b>Tim spent 14-days in Tacloban, Phillippines constructing toilet facilities in a school heavily damaged by Typhoon Haiyan in 2013.</b></p>
 			  		</div>						  	
 			  	</div>
 		  	</div>
@@ -116,16 +116,16 @@
 			  	<div class="news-article item bg-blue">
 			  		<div class="details">
 			  			<h3>News</h3>
-				  		<h2>New toilets could save lives in Haiti</h2>
+				  		<h2>The Future Water Shortage, Sustainability and avoiding Mad Max</h2>
 			  		</div>						  	
-				  	<a href="#" class="btn bg-white color-dark-blue">Water news</a>
+				  	<a href="news-article.php" class="btn bg-white color-dark-blue">Water news</a>
 			  	</div>
 			  </div>
 			  <div class="grid-item">
 			  	<div class="project item" style="background-image: url(img/feed/feed3.png);">
 			  		<div class="details">
 			  			<h2>Jame's Project</h2>
-				  		<p><b>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</b></p>
+				  		<p><b>James worked with the Red Cross and the Friends for the Manatuto to restore remote villages in East Timor prone to landslide and flooding.</b></p>
 			  		</div>						  	
 				  	<div class="link"><a href="#" class="btn bg-white color-light-blue">Find out more</a></div>
 			  	</div>
@@ -142,9 +142,9 @@
 			  	<div class="news-article item color-blue">
 			  		<div class="details">
 			  			<h3>News</h3>
-				  		<h2>New toilets could save lives in Haiti</h2>
+				  		<h2>Water demand to increase 55% globally by 2050</h2>
 			  		</div>						  	
-				  	<a href="#" class="btn bg-dark-blue color-white">Water news</a>
+				  	<a href="news-article.php" class="btn bg-dark-blue color-white">Water news</a>
 			  	</div>
 			  </div>
 			</div>

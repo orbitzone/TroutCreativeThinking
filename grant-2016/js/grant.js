@@ -1,19 +1,62 @@
 var grant = {
 	init: function(){
 		this.countdown();
-    if($('.grid').length > 0){
-  		var masonry = new Masonry( '.grid', {
-  			itemSelector: '.grid-item'  		
-  		});
-    }
     if($('#grant').hasClass('news')){
       this.news();
+    }
+    if($('#grant').hasClass('homepage')){
+      this.homepage();
+    }
+    if($('#grant').hasClass('projects')){
+      this.projects();
     }
     if($('.winners-slider').length> 0){
       this.winnersSlider();
     }
     this.applyNow();
 	},
+  homepage: function(){
+    if($('.grid').length > 0){
+      var masonry = new Masonry( '.grid', {
+        itemSelector: '.grid-item'      
+      });
+    }
+    $('#feed').imagesLoaded()
+      .always( function( instance ) {
+        $(window).resize();
+      }
+    );
+    $(window).on('resize', function(){
+      var double = 0;
+      var single = 0;
+      $('#feed .item').height('');
+      $('#feed .item').each(function(){
+        if($(this).hasClass('double')){
+          if($(this).height() > double){
+            double = $(this).height();
+          }
+        }else{
+          if($(this).height() > single){
+            single = $(this).height();
+          }
+        }
+      });
+      if(double > (single * 2)){
+        $('#feed .item.double').height(double);
+        $('#feed .item.single').height(double/2);
+      }else{
+        $('#feed .item.double').height(single*2);
+        $('#feed .item.single').height(single);
+      }
+      masonry.layout();
+    });       
+  },
+  projects: function(){
+    $('aside a').on('click', function(){
+      $(this).parent().addClass('active');
+      return false;
+    });
+  },
   news: function(){
     $('.slider-thumbs').slick({
       prevArrow: '<button type="button" class="slick-prev"><svg viewBox="0 0 26 46" id="shape-arrow-left"><title>arrow-left</title> <g id="arrow-left-arrow-left"> <path d="M24.4,0.6C24.1,0.2,23.5,0,23,0c-0.5,0-1,0.2-1.4,0.6l-21,21c-0.8,0.8-0.8,2.1,0,2.8l21,21c0.8,0.8,2.1,0.8,2.8,0c0.8-0.8,0.8-2.1,0-2.8L4.9,23L24.4,3.4C25.2,2.6,25.2,1.4,24.4,0.6z"/> </g> </svg></button>',

@@ -46,6 +46,9 @@ h4{
 img{
 	max-width: 100%;
 }
+.list-unstyled{
+	margin: 0;
+}
 .form-control{
 	min-height: 50px;
 	@include box-shadow(none);
@@ -58,6 +61,12 @@ img{
 	color: $light-blue;
 	font-size: em(15);
 	margin-bottom: em(12,15);
+}
+.color-dark-blue{
+	color: $dark-blue;
+}
+.color-light-blue{
+	color: $light-blue;
 }
 .btn{
 	background: $light-blue;

@@ -13,8 +13,7 @@
 			  		<div class="details">
 			  			<h2>1 in 5 child deaths</h2>
 				  		<p><b>(1.5 million each year) are due to water-related illness</b></p>
-			  		</div>					  		
-				  	<a href="apply-now.php" class="btn bg-white color-light-blue">Apply now</a>
+			  		</div>				  	
 			  	</div>				  	
 			  </div>
 			  <div class="grid-item">

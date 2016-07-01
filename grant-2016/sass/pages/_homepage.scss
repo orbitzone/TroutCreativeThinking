@@ -69,6 +69,8 @@
 		padding: 40px 40px 20px;
 		background-size: cover;
 		background-position: center center;
+		display: table-cell;
+		vertical-align: middle;
 		//height: 266px;
 		text-align: center;
 		h2{
@@ -101,6 +103,7 @@
 	.featured-project,
 	.project{
 		color: white;
+		display: block;
 		//height: 532px;
 		&:before{
 			content: " ";

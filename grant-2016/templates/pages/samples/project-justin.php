@@ -10,9 +10,31 @@
 	<div class="container first">
 		<div class="container-small">
 			<div class="title">
-				<h1>Jila Parishad Prthamik School</h1>				
-				<img src="http://reece-responsive.local/grant-2015/images/justin/justin-video.jpg" alt="Justin video">
-			</div>		
+				<h1>Jila Parishad Prthamik School</h1>								
+			</div>
+			<div class="video">
+				<div class="slider person-video">
+	        <div class="slide">
+	          <div class="video-image">
+	            <img src="http://reece-responsive.local/grant-2015/images/justin/justin-video.jpg" alt="James Video">
+	            <div class="play-button-wrapper" data-video="person-video">
+	              <img class="play-button" src="images/homepage/play-button.png">
+	            </div>
+	          </div>                        
+	        </div>
+	        <div class="slide">
+	        <div class="video-wrapper">
+	          <div class="video">
+	            <figure class="player" id="the-player" data-video="Gh18sVLetRE">
+	            </figure>
+	          </div>
+	        </div>
+	        <button type="button" class="close">
+	          <i class="rbp-close-icon"></i>               
+	        </button>                        
+	        </div>
+	      </div>  
+			</div>			
 			<div class="project-details">
 				<div class="row">
 					<div class="col-4">

@@ -49,6 +49,16 @@
 			}
 		}
 	}
+	.slider-thumbs{
+		.image{
+			height: 144px;
+			background-size: cover;
+			background-position: center center;
+			img{
+				opacity: 0;
+			}
+		}
+	}
 	.related-stories{
 		padding-top: em(50);
 		h3{

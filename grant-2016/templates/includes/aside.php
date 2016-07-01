@@ -1,5 +1,5 @@
 <aside>
-		<ul class="list-unstyled">
+		<ul class="main-aside list-unstyled">
 			<li class="year color-dark-blue">2016</li>
 			<li>
 				<a href="#">

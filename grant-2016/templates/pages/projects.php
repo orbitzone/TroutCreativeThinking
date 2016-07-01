@@ -3327,7 +3327,7 @@
 				<div class="row">
 					<div class="col-5">
 						<div class="image">
-							<img src="img/winners/tim.png" alt="Justin">
+							<img src="img/winners/justin.png" alt="Justin Morris">
 						</div>
 					</div>
 					<div class="col-3">
@@ -3335,7 +3335,7 @@
 							<h2>Jila Parishad Prthamik School</h2>
 							<p>Justin and the We Can’t Wait team will head to Nasik, India for a 10 day assignment to rebuild toilet and sanitation facilities.</p>
 							<p>The majority of Indian children are missing out on an education due to the lack of usable toilets. With the help of Justin and the We Can’t Wait team, the project will help improve health and sanitation standards, keeping the students at school for longer.</p>
-							<a href="project-justin.php" class="btn">Read more</a>
+							<a href="project.php" class="btn">Read more</a>
 						</div>
 					</div>
 				</div>
@@ -3344,14 +3344,14 @@
 				<div class="row">
 					<div class="col-5">
 						<div class="image">
-							<img src="img/winners/tim.png" alt="James Mills">
+							<img src="img/winners/james.png" alt="James Mills">
 						</div>
 					</div>
 					<div class="col-3">
 						<div class="content">
 							<h2>Restoring remote villages in East Timor, prone to landslides and flooding</h2>
 							<p>James Millis is partnering with Red Cross and Friends of Manatuto, to restore water and sanitation facilities in remote villages in East Timor. The new dad will be cheering on the project from his home in Edithvale, Victoria, and plans to visit the villages in 2016.</p>
-							<a href="project-james.php" class="btn">Read more</a>
+							<a href="project.php" class="btn">Read more</a>
 						</div>
 					</div>
 				</div>
@@ -3368,7 +3368,7 @@
 							<h2>Jila Parishad Prthamik School</h2>
 							<p>Justin and the We Can’t Wait team will head to Nasik, India for a 10 day assignment to rebuild toilet and sanitation facilities.</p>
 							<p>The majority of Indian children are missing out on an education due to the lack of usable toilets. With the help of Justin and the We Can’t Wait team, the project will help improve health and sanitation standards, keeping the students at school for longer.</p>
-							<a href="project-tim.php" class="btn">Read more</a>
+							<a href="project.php" class="btn">Read more</a>
 						</div>
 					</div>
 				</div>
@@ -3393,10 +3393,10 @@
 		<div class="winners-slider">
 			<div class="slide">
 				<div class="image">
-					<img src="img/winners/tim.png" alt="James Mills">
+					<img src="img/winners/justin-circle.png" alt="Justin Morris">
 				</div>
-				<h3>James Mills</h3>
-				<p>Toclobam, Philipines</p>
+				<h3>Justin Morris</h3>
+				<p>Nasik, India</p>
 			</div>
 			<div class="slide">
 				<div class="year-wrap">
@@ -3407,14 +3407,14 @@
 			</div>
 			<div class="slide">
 				<div class="image">
-					<img src="img/winners/tim.png" alt="James Mills">
+					<img src="img/winners/james-circle.png" alt="James Mills">
 				</div>
 				<h3>James Mills</h3>
 				<p>Toclobam, Philipines</p>
 			</div>
 			<div class="slide">
 				<div class="image">
-					<img src="img/winners/tim.png" alt="Timothy Brideson">
+					<img src="img/winners/tim-circle.png" alt="Timothy Brideson">
 				</div>
 				<h3>Timothy Brideson</h3>
 				<p>Manauto, East Timor</p>
@@ -3428,10 +3428,10 @@
 			</div>
 			<div class="slide">
 				<div class="image">
-					<img src="img/winners/tim.png" alt="Timothy Brideson">
+					<img src="img/winners/justin-circle.png" alt="New Winner">
 				</div>
-				<h3>James Mills</h3>
-				<p>Toclobam, Philipines</p>
+				<h3>New Winner</h3>
+				<p>Location</p>
 			</div>
 		</div>
 	</div>	

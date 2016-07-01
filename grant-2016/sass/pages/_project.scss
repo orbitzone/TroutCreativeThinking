@@ -2,75 +2,142 @@ $about-border: #e6e7e8;
 $aside-bold-color: #999;
 $aside-description-color: #3f3f3f;
 $aside-sublis-bg: #f1f2f2;
+$make-a-difference-border: #e6e7e8;
 .project{
 	position: relative;
 	max-width: 1440px;
 	margin: 0 auto;
 	aside{
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: em(174);
+		position: relative;
+		padding: em(20) em(10);
 		background: white;
-		@include box-shadow(0px 0px 20px 0px rgba(0, 0, 0, 0.2));
-		@include border-radius(0 em(20) em(20) 0);
-		padding: em(20) 0;
-		li{
-			padding: 0;
-			h3{
-				font-size: em(18);
-				line-height: em(24,18);
-				padding: 0 em(20,18);
-				padding-top: em(36,18);
-			}
-			a{
-				font-size: em(13);
-				display: block;
-				color: $aside-description-color;
-				padding: em(12,13) em(20,13);
-				line-height: 1;
-				text-decoration: none;
-				@include transition(color .3s ease-out, background .3s ease-out);
-				b{
-					display: block;
-					color: $aside-bold-color;
+		@media (min-width: 1200px){
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: em(174);			
+			padding: em(20) 0;
+			@include box-shadow(0px 0px 20px 0px rgba(0, 0, 0, 0.2));
+			@include border-radius(0 em(20) em(20) 0);			
+		}
+		.main-aside{
+			> li{
+				padding: 0;
+				h3{
+					font-size: em(18);
+					line-height: em(24,18);
+					padding: 0 em(20,18);
+					padding-top: em(36,18);
 				}
-				&:hover{
-					background: $light-blue;
-					color: white;
+				> a{
+					font-size: em(13);
+					display: block;
+					color: $aside-description-color;
+					padding: em(12,13) em(20,13);
+					line-height: 1;
+					text-decoration: none;
+					@include transition(color .3s ease-out, background .3s ease-out);
 					b{
+						display: block;
+						color: $aside-bold-color;
+					}
+					&:hover,
+					&.active{
+						position: relative;
+						background: $light-blue;
 						color: white;
+						b{
+							color: white;
+						}
+					}
+					&.active{
+						font-weight: 600;
+						&:after{
+							content: " ";
+							position: absolute;
+							bottom: -8px;
+							left: 10px;
+							width: 0px;
+							height: 0px;
+							border-right: 8px solid transparent;
+							border-top: 8px solid $light-blue;
+						  border-bottom: none;
+						  border-left: 8px solid transparent;
+						}
+					}
+				}
+				ul{
+					display: none;
+					background: $aside-sublis-bg;
+					li{
+						a{
+							font-size: em(13);
+							display: block;
+							color: $aside-description-color;
+							padding: em(12,13) em(20,13);
+							line-height: 1;
+							text-decoration: none;
+							@include transition(color .3s ease-out, background .3s ease-out);
+							b{
+								display: block;
+								color: $aside-bold-color;
+							}
+							&:hover{
+								position: relative;
+								background: $light-blue;
+								color: white;
+								b{
+									color: white;
+								}
+							}	
+						}
+						&.more{
+							a{
+								color: $light-blue;
+								&:hover{
+									color: white;
+								}
+							}
+						}
+					}
+				}				
+				&.active{
+					ul{
+						display: block;
 					}
 				}
 			}
-			ul{
-				display: none;
-				background: $aside-sublis-bg;
-				li{
-					
-				}
+			.year{
+				font-size: em(24);
+				line-height: em(16,24);
+				font-weight: 600;
+				padding: em(12,24) em(20, 24);
 			}
-			&.more{
-				a{
-					color: $light-blue;
-				}
-			}
-			&.active{
-				ul{
-					display: block;
-				}
-			}
-		}
-		.year{
-			font-size: em(24);
-			line-height: em(16,24);
-			font-weight: 600;
-			padding: em(12,24) em(20, 24);
 		}
 	}
 	h1{
 		margin-bottom: em(60,52);
 		max-width: em(420, 52);
+	}
+	.person-video{
+		.video-image{
+			img{
+				width: 100%;
+			}
+			position: relative;
+		}
+		.play-button{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			display: block;
+			cursor: pointer;
+			@include transform(translateX(-50%) translateY(-50%));
+			svg{
+				display: block;
+				fill: $light-blue;
+			}
+		}
 	}
 	.project-details{
 		padding: em(40) 0 em(60);
@@ -110,6 +177,45 @@ $aside-sublis-bg: #f1f2f2;
 			}
 			h3{
 				padding-top: em(20,32);
+			}
+		}
+	}
+	.bottom-container{
+		padding-top: em(50);
+	}
+	.make-a-difference{
+		padding: em(30) 0;
+		border-top: 1px solid $make-a-difference-border;
+		border-bottom: 1px solid $make-a-difference-border;		
+	}
+	.donate{
+		padding-top: em(30);
+		.btn{
+			font-size: em(16);
+		}
+	}
+	.other-participants{
+		padding: em(30) 0 em(90);
+		h2{
+			font-size: em(36);
+			margin-bottom: em(30,36);
+		}
+		h3{
+			font-size: em(24);
+			text-align: center;
+			@include transition(color .3s ease-out);
+		}
+		.col-2{
+			@media (min-width: $screen-sm){
+				width: 30%;
+			}			
+		}
+		a{
+			text-decoration: none;
+			&:hover{
+				h3{
+					color: $dark-blue;
+				}
 			}
 		}
 	}

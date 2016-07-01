@@ -68,6 +68,12 @@ $winner-line-color: #e5ebef;
 		.image{
 			max-width: 178px;
 		}
+		.slick-next{
+			right: -30px;
+		}
+		.slick-prev{
+			left: -30px;	
+		}
 		h3{
 			font-size: em(14);
 			text-align: center;

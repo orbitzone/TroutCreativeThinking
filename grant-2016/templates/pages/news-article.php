@@ -35,30 +35,38 @@
 			<div class="slider">
 				<div class="slider-main">
 					<div class="slide">
-						<img src="img/slider-image-placeholder.jpg" alt="Image placeholder">
+						<img src="img/news-article/haiti-1.jpg" alt="Haiti">
 					</div>
 					<div class="slide">
-						<img src="img/slider-image-placeholder.jpg" alt="Image placeholder">
+						<img src="img/news-article/haiti-2.jpg" alt="Haiti">
 					</div>
 					<div class="slide">
-						<img src="img/slider-image-placeholder.jpg" alt="Image placeholder">
+						<img src="img/news-article/haiti-3.jpg" alt="Haiti">
 					</div>
 					<div class="slide">
-						<img src="img/slider-image-placeholder.jpg" alt="Image placeholder">
+						<img src="img/news-article/haiti-4.jpg" alt="Haiti">
 					</div>
 				</div>
 				<div class="slider-thumbs">
 					<div class="slide">
-						<img src="img/slider-image-placeholder.jpg" alt="Image placeholder">
+						<div class="image" style="background-image: url(img/news-article/haiti-1.jpg);">
+							<img src="img/news-article/haiti-1.jpg" alt="Haiti">	
+						</div>						
 					</div>
 					<div class="slide">
-						<img src="img/slider-image-placeholder.jpg" alt="Image placeholder">
+						<div class="image" style="background-image: url(img/news-article/haiti-2.jpg);">
+						<img src="img/news-article/haiti-2.jpg" alt="Haiti">
+						</div>
 					</div>
 					<div class="slide">
-						<img src="img/slider-image-placeholder.jpg" alt="Image placeholder">
+						<div class="image" style="background-image: url(img/news-article/haiti-3.jpg);">
+							<img src="img/news-article/haiti-3.jpg" alt="Haiti">
+						</div>
 					</div>
 					<div class="slide">
-						<img src="img/slider-image-placeholder.jpg" alt="Image placeholder">
+						<div class="image" style="background-image: url(img/news-article/haiti-4.jpg);">
+							<img src="img/news-article/haiti-4.jpg" alt="Haiti">
+						</div>
 					</div>
 				</div>	
 			</div>			

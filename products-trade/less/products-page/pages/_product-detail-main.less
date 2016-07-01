@@ -248,6 +248,16 @@
 		}
 		.cross{
 			opacity: 0;
+			.short{
+				stroke-dasharray: 22px;
+				stroke-dashoffset: 24px;
+				.transition(stroke-dashoffset .2s 0.3s ease-out;);
+			}
+			.long{
+				stroke-dasharray: 55px;
+				stroke-dashoffset: 56px;
+				.transition(stroke-dashoffset .1s .5s ease-out;);
+			}
 		}
 		.check,
 		.cross{
@@ -328,6 +338,19 @@
 			button{
 				border-color: #FB797E;
 				background-color: #FB797E;
+				width: 56px;
+				height: 56px;
+				border-width: 2px;
+				.border-radius(50%);
+			}
+			.cross{
+				opacity: 1;
+				.animation(zoom-jump 0.4s .7s 1 ease-out);
+				.short,
+				.long{
+					stroke: white;
+					stroke-dashoffset: 0;
+				}
 			}
 		}
 	}//End progress button

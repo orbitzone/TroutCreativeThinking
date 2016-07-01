@@ -174,7 +174,10 @@
 									2259656
 								</div>
 								<div class="product-prices hidden">
-										<div class="product-price"></div>											
+										<div class="product-price">
+										$ 1099.99
+											<small>gst incl.</small>
+										</div>
 								</div>
 								<div class="product-postcode-input">
 									<div class="product-postcode-overlay"></div>
@@ -218,11 +221,11 @@
 													</svg>
 
 													<!-- cross to show on error -->
-													<svg class="cross" width="70" height="70">
-														<path d="m35,35l-9.3,-9.3"/>
-														<path d="m35,35l9.3,9.3"/>
-														<path d="m35,35l-9.3,9.3"/>
-														<path d="m35,35l9.3,-9.3"/>
+													<svg class="cross" width="56" height="56" viewBox="0 0 70 70">
+														<path class="short" d="m35,35l-9.3,-9.3"/>
+														<path class="short" d="m35,35l9.3,9.3"/>
+														<path class="long" d="m35,35l-9.3,9.3"/>
+														<path class="long" d="m35,35l9.3,-9.3"/>
 													</svg>
 
 												</div><!-- /progress-button -->									

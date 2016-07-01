@@ -4305,6 +4305,24 @@ MAIN TITLE
 #product-pages .main-section#product-detail .progress-button .cross {
   opacity: 0;
 }
+#product-pages .main-section#product-detail .progress-button .cross .short {
+  stroke-dasharray: 22px;
+  stroke-dashoffset: 24px;
+  -moz-transition: stroke-dashoffset 0.2s 0.3s ease-out;
+  -ms-transition: stroke-dashoffset 0.2s 0.3s ease-out;
+  -webkit-transition: stroke-dashoffset 0.2s 0.3s ease-out;
+  -o-transition: stroke-dashoffset 0.2s 0.3s ease-out;
+  transition: stroke-dashoffset 0.2s 0.3s ease-out;
+}
+#product-pages .main-section#product-detail .progress-button .cross .long {
+  stroke-dasharray: 55px;
+  stroke-dashoffset: 56px;
+  -moz-transition: stroke-dashoffset 0.1s 0.5s ease-out;
+  -ms-transition: stroke-dashoffset 0.1s 0.5s ease-out;
+  -webkit-transition: stroke-dashoffset 0.1s 0.5s ease-out;
+  -o-transition: stroke-dashoffset 0.1s 0.5s ease-out;
+  transition: stroke-dashoffset 0.1s 0.5s ease-out;
+}
 #product-pages .main-section#product-detail .progress-button .check path,
 #product-pages .main-section#product-detail .progress-button .cross path {
   stroke: #fff;
@@ -4398,6 +4416,28 @@ MAIN TITLE
 #product-pages .main-section#product-detail .progress-button.error button {
   border-color: #FB797E;
   background-color: #FB797E;
+  width: 56px;
+  height: 56px;
+  border-width: 2px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+#product-pages .main-section#product-detail .progress-button.error .cross {
+  opacity: 1;
+  -moz-animation: zoom-jump 0.4s 0.7s 1 ease-out;
+  -ms-animation: zoom-jump 0.4s 0.7s 1 ease-out;
+  -webkit-animation: zoom-jump 0.4s 0.7s 1 ease-out;
+  -o-animation: zoom-jump 0.4s 0.7s 1 ease-out;
+  animation: zoom-jump 0.4s 0.7s 1 ease-out;
+}
+#product-pages .main-section#product-detail .progress-button.error .cross .short,
+#product-pages .main-section#product-detail .progress-button.error .cross .long {
+  stroke: white;
+  stroke-dashoffset: 0;
 }
 #product-pages .main-section#product-detail .product-detail-wrap {
   /*padding-right: 0;

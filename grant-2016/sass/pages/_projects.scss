@@ -90,12 +90,29 @@ $winner-line-color: #e5ebef;
 				position: relative;
 			}
 			.image{
+				img{
+					max-width: 100%;
+				}
 				@media (min-width: $screen-sm){
 					margin: 0;
 					position: absolute;
 					bottom: 0;					
 				}
+				@media (min-width: $screen-sm) and (max-width: 991px){
+					width: 50%;
+					padding-right: 30px;
+				}
 			}
+			.col-5{
+				@media (min-width: $screen-sm) and (max-width: 991px){
+					width: 50%;
+				}
+			}
+			.col-3{
+				@media (min-width: $screen-sm) and (max-width: 991px){
+					width: 50%;
+				}
+			}			
 		}
 	}
 	.winners-slider-wrap{

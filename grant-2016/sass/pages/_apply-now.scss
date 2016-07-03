@@ -6,6 +6,20 @@
 		font-size: em(18);
 		line-height: em(18,18);
 	}
+	.container{
+		&.first{
+			.col-5{
+				@media (min-width: $screen-sm) and (max-width: 991px){
+					width: 58%;
+				}
+			}
+			.col-3{
+				@media (min-width: $screen-sm) and (max-width: 991px){
+					width: 41%;
+				}
+			}
+		}
+	}
 	.intro{
 		padding-bottom: em(50);
 		.right-content{

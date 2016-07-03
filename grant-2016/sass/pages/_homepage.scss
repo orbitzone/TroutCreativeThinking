@@ -3,6 +3,20 @@
 		padding-top: em(45);
 		margin-bottom: em(50);
 	}
+	.container{
+		&.first{
+			.col-5{
+				@media (min-width: $screen-sm) and (max-width: 991px){
+					width: 58%;
+				}
+			}
+			.col-3{
+				@media (min-width: $screen-sm) and (max-width: 991px){
+					width: 41%;
+				}
+			}
+		}
+	}		
 	.homev3{
 		padding: em(50) 0 em(60);
 		.intro{

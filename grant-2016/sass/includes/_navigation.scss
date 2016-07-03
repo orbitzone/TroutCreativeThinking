@@ -15,6 +15,7 @@ nav.menu{
 		bottom: 0;
 		left: 0;
 		z-index: 0;
+		background-size: 138px 13px;
 	}
 	ul{
 		margin: 0 -30px;
@@ -82,6 +83,7 @@ nav.menu{
 	}
 	.bg-in{
 		background: url(../img/menu-bg-in.svg) top center repeat-x;
+		background-size: 138px 13px;
 		content: " ";
 		height: 6px;
 		width: 100%;

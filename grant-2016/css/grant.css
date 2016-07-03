@@ -758,8 +758,9 @@
   bottom: 0;
   left: 0;
   z-index: 0;
+  background-size: 138px 13px;
 }
-/* line 19, ../sass/includes/_navigation.scss */
+/* line 20, ../sass/includes/_navigation.scss */
 #grant nav.menu ul {
   margin: 0 -30px;
   padding: 0;
@@ -769,17 +770,17 @@
   text-align: center;
 }
 @media (min-width: 768px) {
-  /* line 19, ../sass/includes/_navigation.scss */
+  /* line 20, ../sass/includes/_navigation.scss */
   #grant nav.menu ul {
     text-align: left;
   }
 }
-/* line 29, ../sass/includes/_navigation.scss */
+/* line 30, ../sass/includes/_navigation.scss */
 #grant nav.menu ul li {
   display: inline-block;
   padding: 0;
 }
-/* line 32, ../sass/includes/_navigation.scss */
+/* line 33, ../sass/includes/_navigation.scss */
 #grant nav.menu ul li a {
   color: white;
   display: block;
@@ -794,28 +795,28 @@
   transition: background 0.3s ease-out;
 }
 @media (min-width: 768px) {
-  /* line 32, ../sass/includes/_navigation.scss */
+  /* line 33, ../sass/includes/_navigation.scss */
   #grant nav.menu ul li a {
     font-size: 18px;
     padding: 30px 30px 36px;
   }
 }
-/* line 44, ../sass/includes/_navigation.scss */
+/* line 45, ../sass/includes/_navigation.scss */
 #grant nav.menu ul li a:hover {
   color: white;
   text-decoration: none;
   background: #007495;
 }
-/* line 49, ../sass/includes/_navigation.scss */
+/* line 50, ../sass/includes/_navigation.scss */
 #grant nav.menu ul li a.active {
   background: #007495;
 }
-/* line 53, ../sass/includes/_navigation.scss */
+/* line 54, ../sass/includes/_navigation.scss */
 #grant nav.menu ul li.apply-now {
   padding: 0.625em;
   text-align: center;
 }
-/* line 56, ../sass/includes/_navigation.scss */
+/* line 57, ../sass/includes/_navigation.scss */
 #grant nav.menu ul li.apply-now a {
   padding: 0 0.9375em;
   line-height: 3.125em;
@@ -826,7 +827,7 @@
   border-radius: 1.125em;
 }
 @media (min-width: 768px) {
-  /* line 56, ../sass/includes/_navigation.scss */
+  /* line 57, ../sass/includes/_navigation.scss */
   #grant nav.menu ul li.apply-now a {
     padding: 0 1.875em;
     -webkit-border-radius: 1.25em;
@@ -835,26 +836,27 @@
     border-radius: 1.25em;
   }
 }
-/* line 65, ../sass/includes/_navigation.scss */
+/* line 66, ../sass/includes/_navigation.scss */
 #grant nav.menu ul li.apply-now a:hover {
   color: #009cb6;
   background: #003964;
 }
-/* line 69, ../sass/includes/_navigation.scss */
+/* line 70, ../sass/includes/_navigation.scss */
 #grant nav.menu ul li.apply-now a.active {
   color: white;
   background: #003964;
 }
-/* line 77, ../sass/includes/_navigation.scss */
+/* line 78, ../sass/includes/_navigation.scss */
 #grant nav.menu .bg-wrap {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
 }
-/* line 83, ../sass/includes/_navigation.scss */
+/* line 84, ../sass/includes/_navigation.scss */
 #grant nav.menu .bg-in {
   background: url(../img/menu-bg-in.svg) top center repeat-x;
+  background-size: 138px 13px;
   content: " ";
   height: 6px;
   width: 100%;
@@ -1066,9 +1068,10 @@
 /* line 22, ../sass/includes/_apply-box.scss */
 #grant .apply-reece-grant .wave {
   background: url(../img/apply-box-wave.svg) top center repeat-x;
+  background-size: 138px 13px;
   height: 6px;
 }
-/* line 26, ../sass/includes/_apply-box.scss */
+/* line 27, ../sass/includes/_apply-box.scss */
 #grant .apply-reece-grant .bottom-section {
   padding: 1.875em;
   background: #179cb4;
@@ -1077,12 +1080,12 @@
   -ms-border-radius: 0 0 1.25em 1.25em;
   border-radius: 0 0 1.25em 1.25em;
 }
-/* line 31, ../sass/includes/_apply-box.scss */
+/* line 32, ../sass/includes/_apply-box.scss */
 #grant .apply-reece-grant .btn {
   background: white;
   color: #3f3f3f;
 }
-/* line 34, ../sass/includes/_apply-box.scss */
+/* line 35, ../sass/includes/_apply-box.scss */
 #grant .apply-reece-grant .btn:hover {
   background: #003964;
   color: white;

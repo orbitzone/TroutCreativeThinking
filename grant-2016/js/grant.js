@@ -122,6 +122,7 @@ var grant = {
     $('#feed').imagesLoaded()
       .always( function( instance ) {
         $(window).resize();
+         masonry.layout();
       }
     );
     if($('.homepage-video').length > 0){

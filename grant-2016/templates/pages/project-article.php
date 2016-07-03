@@ -123,8 +123,8 @@
 						</div>
 					</div>
 				</div>		
-			</div>		
-			<?php include_once('templates/includes/aside.php');?>
+			</div>					
 		</div>	
+		<?php include_once('templates/includes/aside.php');?>
 	</div>	
 </div>

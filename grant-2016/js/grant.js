@@ -163,11 +163,15 @@ var grant = {
       return false;
     });
     if($('.person-video').length > 0){
-      $('.person-video').slick();
+      $('.person-video').slick({
+        swipe: false,
+        swipeToSlide: false,
+        touchMove: false
+      });
       $('.video .play-pause-video').on('click', function(){
         $('.person-video').parent().toggleClass('active');
         if($('.person-video').parent().hasClass('active')){
-          $('.person-video').slick('slickNext');
+          $('.person-video').slick('slickGoTo',1);
           var player_container = $('#the-player');
           var video = player_container.data('video');
           if(video){
@@ -175,7 +179,7 @@ var grant = {
             player.init('the-player',video);
           }  
         }else{
-          $('.person-video').slick('slickPrev');
+          $('.person-video').slick('slickGoTo',0);
           player.stop();          
         }
         

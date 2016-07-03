@@ -104,7 +104,18 @@ $make-a-difference-border: #e6e7e8;
 	.make-a-difference{
 		padding: em(30) 0;
 		border-top: 1px solid $make-a-difference-border;
-		border-bottom: 1px solid $make-a-difference-border;		
+		border-bottom: 1px solid $make-a-difference-border;
+		text-align: center;
+		img{
+			margin: 0 auto;
+			margin-bottom: 20px;
+		}
+		@media (min-width: $screen-sm){
+			text-align: left;
+			img{
+				margin-bottom: 0;
+			}
+		}		
 	}
 	.donate{
 		padding-top: em(30);

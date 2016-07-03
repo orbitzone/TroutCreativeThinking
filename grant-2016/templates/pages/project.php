@@ -21,7 +21,7 @@
 					<div class="slider person-video">
 				        <div class="slide">
 				          <div class="video-image">
-				            <img src="http://reece-responsive.local/grant-2015/images/justin/justin-video.jpg" alt="James Video">
+				            <img src="../grant-2015/images/justin/justin-video.jpg" alt="James Video">
 				          </div>                        
 				        </div>
 				        <div class="slide">

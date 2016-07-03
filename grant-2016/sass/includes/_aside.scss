@@ -1,0 +1,117 @@
+$aside-bold-color: #999;
+$aside-description-color: #3f3f3f;
+$aside-sublis-bg: #f1f2f2;
+aside{
+	position: relative;
+	padding: em(20) em(10);
+	background: white;
+	border-top: 1px solid #efefef;
+	@media (min-width: 1200px){
+		border: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: em(174);			
+		padding: em(20) 0;
+		@include box-shadow(0px 0px 20px 0px rgba(0, 0, 0, 0.2));
+		@include border-radius(0 em(20) em(20) 0);			
+	}
+	.main-aside{
+		> li{
+			padding: 0;
+			h3{
+				font-size: em(18);
+				line-height: em(24,18);
+				padding: 0 em(20,18);
+				padding-top: em(36,18);
+			}
+			> a{
+				font-size: em(13);
+				display: block;
+				color: $aside-description-color;
+				padding: em(12,13) em(20,13);
+				line-height: 1;
+				text-decoration: none;
+				@include transition(color .3s ease-out, background .3s ease-out);
+				b{
+					display: block;
+					color: $aside-bold-color;
+				}
+				&:hover,
+				&.active,
+				&.open{
+					position: relative;
+					background: $light-blue;
+					color: white;
+					b{
+						color: white;
+					}
+				}
+				&.active,
+				&.open{
+					font-weight: 600;						
+				}
+				&.open{
+					&:after{
+						content: " ";
+						position: absolute;
+						bottom: -8px;
+						left: 10px;
+						width: 0px;
+						height: 0px;
+						border-right: 8px solid transparent;
+						border-top: 8px solid $light-blue;
+						border-bottom: none;
+						border-left: 8px solid transparent;
+					}
+				}
+			}
+			ul{
+				display: none;
+				background: $aside-sublis-bg;
+				li{
+					a{
+						font-size: em(13);
+						display: block;
+						color: $aside-description-color;
+						padding: em(12,13) em(20,13);
+						line-height: 1;
+						text-decoration: none;
+						@include transition(color .3s ease-out, background .3s ease-out);
+						b{
+							display: block;
+							color: $aside-bold-color;
+						}
+						&:hover{
+							position: relative;
+							background: $light-blue;
+							color: white;
+							b{
+								color: white;
+							}
+						}	
+					}
+					&.more{
+						a{
+							color: $light-blue;
+							&:hover{
+								color: white;
+							}
+						}
+					}
+				}
+			}				
+			&.active{
+				ul{
+					display: block;
+				}
+			}
+		}
+		.year{
+			font-size: em(24);
+			line-height: em(16,24);
+			font-weight: 600;
+			padding: em(12,24) em(20, 24);
+		}
+	}
+}

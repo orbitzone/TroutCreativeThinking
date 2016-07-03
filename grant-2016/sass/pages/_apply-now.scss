@@ -85,4 +85,70 @@
 			float: left;
 		}
 	}
+	.upload-input{
+	    height: 50px;
+	    background: white;
+	    position: relative;
+	    @include transition(all 0.5s ease-out);
+	    @include transform(translateX(-100px));
+	    opacity: 0;
+	    margin-bottom: 10px;
+	    @include border-radius(20px);
+	    .inputFile{
+    	    position: absolute;
+		   left: -9999px;
+	    }
+	    &.error{
+	    	border: 1px solid red;
+	    }
+	    &.added{
+	    	opacity: 1;
+	    	@include transform(translateX(0));
+	    }
+	    .upload-button{
+				background: none;
+				position: absolute;
+				top: 0;
+				right: 10px;
+				height: 100%;
+				width: 100px;
+				color: $light-blue;
+				@include appearance(none);
+				border:none;
+				border-left: 1px solid #f1f2f2;
+				font-weight: 600;
+				text-transform: uppercase;							
+			}
+			.upload-remove-button{
+				background: none;
+				position: absolute;
+				top: 0;
+				right: 0;
+				height: 100%;
+				width: 50px;
+				color: $dark-blue;
+				@include appearance(none);
+				border:none;
+				border-left: 1px solid #f1f2f2;
+				font-weight: 700;
+				text-transform: uppercase;	
+			}
+			.upload-filename{
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 50px;
+				line-height: 50px;
+				font-style: italic;
+				padding-left: 24px;
+				text-align: left;
+				padding-right: 170px;
+				color: black;
+				overflow: hidden;
+				color: $dark-blue;
+				font-size: 16px;
+			}
+			
+
+		}
 }

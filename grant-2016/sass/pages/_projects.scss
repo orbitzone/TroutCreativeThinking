@@ -106,11 +106,31 @@ $winner-line-color: #e5ebef;
 		text-align: center;
 		.slide{
 			padding: 0 em(30);
+			color: #999999;
+			cursor: pointer;
+			@include transition(color .3s ease-out);
+			&:hover,
+			&.active{
+				color: $light-blue;
+				.image{
+					/*-webkit-filter: none;
+    				filter: none;*/
+    				opacity: 1;
+				}
+			}
 		}
 		.image{
 			max-width: 178px;
 			margin: 0 auto;
 			margin-bottom: 10px;
+			height: 130px;
+			overflow: hidden;
+		    /*filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id…0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+		    -webkit-filter: grayscale(100%);
+		    filter: grayscale(100%);
+		    filter: gray;*/
+		    opacity: 0.3;
+		    @include transition(all 0.2s ease-in);		    
 		}
 		.slick-next{
 			right: -30px;
@@ -118,10 +138,16 @@ $winner-line-color: #e5ebef;
 		.slick-prev{
 			left: -30px;	
 		}
+		.slick-arrow{
+			svg{
+				fill: #e6e7e8;
+			}		
+		}
 		h3{
 			font-size: em(14);
 			text-align: center;
 			margin-bottom: 0;
+			color: inherit;
 		}
 		p{
 			text-align: center;
@@ -141,11 +167,45 @@ $winner-line-color: #e5ebef;
 				left: 50%;
 				background: $winner-line-color;
 			}
+			.arrow-right{
+				position: absolute;
+				top: 50%;
+				left: 100%;
+				@include transform(translateY(-50%));
+				svg{
+					width: 4px;
+					height: 8px;
+					fill: $dark-blue;
+				}
+			}
+			.arrow-left{
+				position: absolute;
+				top: 50%;
+				left: 0;
+				@include transform(translateY(-50%));
+				svg{
+					width: 4px;
+					height: 8px;
+					fill: $dark-blue;
+				}
+			}
+			&.dark-blue{
+				color: $dark-blue;
+			}
+			&.light-blue{
+				color: $light-blue;
+				.arrow-left,
+				.arrow-right{
+					svg{
+						fill: $light-blue;
+					}
+				}
+			}
 		}
 		.year{
 			position: absolute;
-		  top: 50%;
-		  left: 50%;
+		    top: 50%;
+		    left: 50%;
 			font-weight: 600;
 			text-align: center;
 			background: white;

@@ -3390,44 +3390,47 @@
 		</div>
 		<div class="winners-slider-wrap">
 			<div class="winners-slider">
-				<div class="slide item-slide" data-person="justin">
+				<div class="slide item-slide active" data-person="justin">
 					<div class="image">
-						<img src="img/winners/justin-circle.png" alt="Justin Morris">
+						<img src="img/winners/justin.png" alt="Justin Morris">
 					</div>
 					<h3>Justin Morris</h3>
 					<p>Nasik, India</p>
 				</div>
 				<div class="slide year-slide">
-					<div class="year-wrap">
+					<div class="year-wrap light-blue">
+						<div class="arrow-left"><svg viewBox="0 0 26 46" id="shape-arrow-left"><title>arrow-left</title> <g id="arrow-left-arrow-left"> <path d="M24.4,0.6C24.1,0.2,23.5,0,23,0c-0.5,0-1,0.2-1.4,0.6l-21,21c-0.8,0.8-0.8,2.1,0,2.8l21,21c0.8,0.8,2.1,0.8,2.8,0c0.8-0.8,0.8-2.1,0-2.8L4.9,23L24.4,3.4C25.2,2.6,25.2,1.4,24.4,0.6z"/> </g> </svg></div>
 						<div class="year">
 							2015
 						</div>
+						<div class="arrow-right"><svg viewBox="0 0 26 46" id="shape-arrow-right"><title>arrow-right</title> <g id="arrow-right-arrow-right"> <path d="M1.6,45.4C2,45.8,2.5,46,3,46c0.5,0,1-0.2,1.4-0.6l21-21c0.8-0.8,0.8-2.1,0-2.8l-21-21c-0.8-0.8-2.1-0.8-2.8,0c-0.8,0.8-0.8,2.1,0,2.8L21.2,23L1.6,42.6C0.8,43.4,0.8,44.7,1.6,45.4z"/> </g></svg></div>
 					</div>
 				</div>
 				<div class="slide item-slide" data-person="james">
 					<div class="image">
-						<img src="img/winners/james-circle.png" alt="James Mills">
+						<img src="img/winners/james.png" alt="James Mills">
 					</div>
 					<h3>James Mills</h3>
 					<p>Toclobam, Philipines</p>
 				</div>
 				<div class="slide item-slide" data-person="tim">
 					<div class="image">
-						<img src="img/winners/tim-circle.png" alt="Timothy Brideson">
+						<img src="img/winners/tim.png" alt="Timothy Brideson">
 					</div>
 					<h3>Timothy Brideson</h3>
 					<p>Manauto, East Timor</p>
 				</div>
 				<div class="slide year-slide">
-					<div class="year-wrap">
+					<div class="year-wrap dark-blue">
 						<div class="year">
 							2016
-						</div>
+						</div>						
+						<div class="arrow-right"><svg viewBox="0 0 26 46" id="shape-arrow-right"><title>arrow-right</title> <g id="arrow-right-arrow-right"> <path d="M1.6,45.4C2,45.8,2.5,46,3,46c0.5,0,1-0.2,1.4-0.6l21-21c0.8-0.8,0.8-2.1,0-2.8l-21-21c-0.8-0.8-2.1-0.8-2.8,0c-0.8,0.8-0.8,2.1,0,2.8L21.2,23L1.6,42.6C0.8,43.4,0.8,44.7,1.6,45.4z"/> </g></svg></div>
 					</div>			
 				</div>
 				<div class="slide item-slide">
 					<div class="image">
-						<img src="img/winners/justin-circle.png" alt="New Winner">
+						<img src="img/winners/justin.png" alt="New Winner">
 					</div>
 					<h3>New Winner</h3>
 					<p>Location</p>

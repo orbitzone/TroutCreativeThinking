@@ -7,7 +7,7 @@ nav.menu{
 		position: relative;
 	}
 	&:after{
-		background: url(../img/menu-bg-out.png) top center repeat-x;
+		background: url(../img/menu-bg-out.svg) top center repeat-x;
 		content: " ";
 		height: 6px;
 		width: 100%;
@@ -36,6 +36,7 @@ nav.menu{
 				font-size: 14px;
 				font-weight: bold;
 				padding: 30px 10px 36px;
+				@include transition(background .3s ease-out);
 				@media (min-width: $screen-sm){
 					font-size: 18px;
 					padding: 30px 30px 36px;
@@ -80,7 +81,7 @@ nav.menu{
 		width: 100%;
 	}
 	.bg-in{
-		background: url(../img/menu-bg-in.png) top center repeat-x;
+		background: url(../img/menu-bg-in.svg) top center repeat-x;
 		content: " ";
 		height: 6px;
 		width: 100%;

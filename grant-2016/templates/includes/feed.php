@@ -5,7 +5,7 @@
 			  		<div class="details">
 			  			<h2>"Our main goal was to give the children an future"</h2>
 			  		</div>					  		
-				  	<div class="link"><a href="project-justin.php" class="btn bg-white color-light-blue">Find out more</a></div>
+				  	<div class="link"><a href="project.php" class="btn bg-white color-light-blue">Find out more</a></div>
 			  	</div>				  	
 			  </div>
 			  <div class="grid-item">

@@ -105,12 +105,15 @@ var grant = {
     if($('#grant').hasClass('projects')){
       this.projects();
     }
+    if($('#grant').hasClass('apply-now')){
+      this.applyNow();
+    }
     if($('.winners-slider').length> 0){
       this.winnersSlider();
-    }
-    this.applyNow();
+    }    
 	},
   homepage: function(){
+    
     if($('.grid').length > 0){
       var masonry = new Masonry( '.grid', {
         itemSelector: '.grid-item'      
@@ -122,13 +125,13 @@ var grant = {
       }
     );
     $(window).on('resize', function(){
-      var double = 0;
+      var doubleS = 0;
       var single = 0;
       $('#feed .item').height('');
       $('#feed .item').each(function(){
         if($(this).hasClass('double')){
-          if($(this).height() > double){
-            double = $(this).height();
+          if($(this).height() > doubleS){
+            doubleS = $(this).height();
           }
         }else{
           if($(this).height() > single){
@@ -136,9 +139,9 @@ var grant = {
           }
         }
       });
-      if(double > (single * 2)){
-        $('#feed .item.double').height(double);
-        $('#feed .item.single').height(double/2);
+      if(doubleS > (single * 2)){
+        $('#feed .item.double').height(doubleS);
+        $('#feed .item.single').height(doubleS/2);
       }else{
         $('#feed .item.double').height(single*2);
         $('#feed .item.single').height(single);
@@ -150,24 +153,32 @@ var grant = {
     this.news();
     $('aside a.top-link').on('click', function(){
       //$(this).parent().addClass('active');
-      if($(this).hasClass('active')){
+      if($(this).hasClass('open')){
+        $(this).removeClass('open');
         $(this).parent().find('ul').slideUp();
       }else{
+        $(this).addClass('open');
         $(this).parent().find('ul').slideDown();  
-      }
-      $(this).toggleClass('active');
+      }      
       return false;
     });
     if($('.person-video').length > 0){
       $('.person-video').slick();
-      $('.person-video .play-button').on('click', function(){
-        $('.person-video').slick('slickNext');
-        var player_container = $('#the-player');
-        var video = player_container.data('video');
-        if(video){
-          player.autoplay = true;
-          player.init('the-player',video);
+      $('.video .play-pause-video').on('click', function(){
+        $('.person-video').parent().toggleClass('active');
+        if($('.person-video').parent().hasClass('active')){
+          $('.person-video').slick('slickNext');
+          var player_container = $('#the-player');
+          var video = player_container.data('video');
+          if(video){
+            player.autoplay = true;
+            player.init('the-player',video);
+          }  
+        }else{
+          $('.person-video').slick('slickPrev');
+          player.stop();          
         }
+        
       });
     }
     $(document).on('click','.map .dot', function(){
@@ -195,6 +206,8 @@ var grant = {
       }
     );
     $('.winners-slider .slide').on('click', function(){
+      $('.winners-slider .slide').removeClass('active');
+      $(this).addClass('active');
       var person = $(this).data('person');
       if(person){
         $('.cards-slider .card').removeClass('active');
@@ -323,7 +336,42 @@ var grant = {
         $('.steps .step'+step).addClass('active'); 
       }      
     }
-    
+    $(document).on('click','.upload-button', function(){
+      $(this).parent().find('input').focus().trigger('click');
+    });
+
+    var app={};
+    $(document).on('change','.upload-input input',function(e) {
+          // reset
+        $(this).parent().parent().find('.error').remove();
+        app.fileName = null;
+        // file type?
+        if($('html').hasClass('lt-ie9') || $('html').hasClass('lt-ie8') || (navigator.appVersion.indexOf("MSIE 9.")!=-1))
+        {
+          $(this).parent().find('.upload-filename').text('Image added');
+          app.fileType = "image";
+          $(this).addClass('uploaded');
+        }
+        else
+        {
+              // video or image or invalid file type
+            app.fileType = $(this)[0].files[0].type;
+            app.fileName = $(this)[0].files[0].name;
+            
+            //if(app.fileType.indexOf("video") > -1) app.fileType = "video";
+            if(app.fileType.indexOf("image") > -1) app.fileType = "image";
+            else app.fileType = "invalid";
+            if(app.fileType != "invalid")
+            {
+              $(this).parent().find('.upload-filename').text(app.fileName );
+              $(this).addClass('uploaded');
+            }
+            else
+            {
+              $(this).parent().parent().append('<div class="error" style="display:block;" data-num="'+app.numberFiles+'">Invalid file type selected: ' + app.fileName + '</div>');              
+            }             
+        }
+    });
     $('.steps-list button').on('click', function(){
       var step=$(this).data('step');
       gotoStep(step);

@@ -25,7 +25,7 @@
 								<img src="img/person.jpg" alt="Steve Hanson">
 							</div>
 							<div class="details">
-								<h2>Steve Hanson</h2>
+								<h3>Steve Hanson</h3>
 								<p>Etiam porta sem malesuada magna</p>
 							</div>							
 						</a>
@@ -38,7 +38,7 @@
 								<img src="img/person.jpg" alt="Steve Hanson">
 							</div>
 							<div class="details">
-								<h2>Richie Mc Caw</h2>
+								<h3>Richie Mc Caw</h3>
 								<p>Aenean lacinia bibendum nulla sed consecteur</p>
 							</div>							
 						</a>
@@ -51,8 +51,8 @@
 								<img src="img/person.jpg" alt="Steve Hanson">
 							</div>
 							<div class="details">
-								<h2>Zin Zan Brook</h2>
-								<p>Maecenas faucubus mollis interdum usce dapibus.</p>
+								<h3>Zin Zan Brook</h3>
+								<p>Maecenas faucibus mollis interdum usce dapibus.</p>
 							</div>							
 						</a>
 					</div>
@@ -68,86 +68,6 @@
 </div>
 <div class="container grey">
 	<div class="container-medium">
-		<div id="feed">
-			<div class="grid">
-			  <div class="grid-item">
-			  	<div class="featured-project item" style="background-image: url(img/feed/feed1.png);">
-			  		<div class="details">
-			  			<h2>"Praesent commodo cursus magna, vel scele risque"</h2>
-			  		</div>					  		
-				  	<div class="link"><a href="project-justin.php" class="btn bg-white color-light-blue">Find out more</a></div>
-			  	</div>				  	
-			  </div>
-			  <div class="grid-item">
-			  	<div class="info item bg-blue">
-			  		<div class="details">
-			  			<h2>1 in 5 child deaths</h2>
-				  		<p><b>(1.5 million each year) are due to water-related illness</b></p>
-			  		</div>					  		
-				  	<a href="apply-now.php" class="btn bg-white color-light-blue">Apply now</a>
-			  	</div>				  	
-			  </div>
-			  <div class="grid-item">
-			  	<div class="info item color-light-blue">
-			  		<div class="details">
-			  			<h2>443 school days</h2>
-			  			<p><b>are lost each year due to water-related diseases</b></p>	
-			  		</div>					  		
-			  	</div>				  	
-			  </div>
-			  <div class="grid-item">
-			  	<div class="news-article item color-light-blue">
-			  		<div class="details">
-			  			<h3>News</h3>
-				  		<h2>New toilets could save lives in Haiti</h2>
-			  		</div>					  		
-				  	<a href="news-article.php" class="btn">Water news</a>
-			  	</div>				  	
-			  </div>
-			  <div class="grid-item">
-			  	<div class="project item dark-blue" style="background-image: url(img/feed/feed2.png);">
-			  		<div class="details">
-			  			<h2>Tim's Project</h2>
-				  		<p><b>Tim spent 14-days in Tacloban, Phillippines constructing toilet facilities in a school heavily damaged by Typhoon Haiyan in 2013.</b></p>
-			  		</div>						  	
-			  	</div>
-		  	</div>
-			  <div class="grid-item">
-			  	<div class="news-article item bg-blue">
-			  		<div class="details">
-			  			<h3>News</h3>
-				  		<h2>The Future Water Shortage, Sustainability and avoiding Mad Max</h2>
-			  		</div>						  	
-				  	<a href="news-article.php" class="btn bg-white color-dark-blue">Water news</a>
-			  	</div>
-			  </div>
-			  <div class="grid-item">
-			  	<div class="project item" style="background-image: url(img/feed/feed3.png);">
-			  		<div class="details">
-			  			<h2>Jame's Project</h2>
-				  		<p><b>James worked with the Red Cross and the Friends for the Manatuto to restore remote villages in East Timor prone to landslide and flooding.</b></p>
-			  		</div>						  	
-				  	<div class="link"><a href="#" class="btn bg-white color-light-blue">Find out more</a></div>
-			  	</div>
-			  </div>
-			  <div class="grid-item">
-			  	<div class="info item color-blue">
-			  		<div class="details">
-			  			<h2>1 billion people</h2>
-				  		<p><b>in developing regions still have no access to clean and safe water</b></p>
-			  		</div>					  		
-			  	</div>				  	
-			  </div>
-			  <div class="grid-item">
-			  	<div class="news-article item color-blue">
-			  		<div class="details">
-			  			<h3>News</h3>
-				  		<h2>Water demand to increase 55% globally by 2050</h2>
-			  		</div>						  	
-				  	<a href="news-article.php" class="btn bg-dark-blue color-white">Water news</a>
-			  	</div>
-			  </div>
-			</div>
-		</div>
+		<?php include_once('templates/includes/feed.php'); ?>
 	</div>
 </div>	

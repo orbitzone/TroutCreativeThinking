@@ -69,6 +69,12 @@
 						</div>
 					</div>
 				</div>	
+			</div>
+			<div class="share-this">
+				<a href="http://www.facebook.com/sharer.php?u={url}&title={text}" target="_blank">Share this article<span class="icon"><svg width="20px" height="20px" viewBox="0 0 20 20">
+<path d="M15.2,3.3h-1.9c-1.5,0-1.8,0.7-1.8,1.7v2.3h3.5l-0.5,3.6h-3.1V20H7.9v-9.1H4.8V7.3h3.1V4.7
+	c0-3,1.9-4.7,4.6-4.7c1.3,0,2.4,0.1,2.7,0.1V3.3z"></path>
+</svg></span></a>
 			</div>			
 		</div>
 		<div class="container-medium">

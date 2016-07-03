@@ -7,6 +7,9 @@
 		padding: em(50) 0 em(60);
 		.intro{
 			padding-top: 0;
+		}
+		h2{
+			font-size: em(24);
 		}				
 	}
 	h2{
@@ -40,13 +43,38 @@
 		h3{
 			font-size: em(24);
 			line-height: 1;
+			@include transition(color .3s ease-out);
 		}
 		.image{
 			max-width: em(181);
+			margin: 0 auto;
+			margin-bottom: em(20);
+			@include transition(all .3s ease-out);
 		}
 		.details{
-			max-width: em(181);	
+			max-width: em(185);
+			margin: 0 auto;
 			text-align: center;
+			@include transition(all .3s ease-out);
+		}
+		.person{
+			margin-bottom: em(20);
+			a{
+				color: #3f3f3f;
+				font-size: em(15);
+				text-decoration: none;
+				&:hover{
+					.image{
+						@include transform(translateY(10px));
+					}
+					.details{
+						@include transform(translateY(-10px));
+						h3{
+							color: $dark-blue;
+						}
+					}
+				}
+			}
 		}
 	}
 }

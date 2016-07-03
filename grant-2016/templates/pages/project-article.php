@@ -1,8 +1,8 @@
 <div class="container no-padding">
 	<div class="container-medium">
 		<ol class="breadcrumb">
-		  <li><a href="index.php">Home</a></li>
-		  <li><a href="news.php">News</a></li>
+		  <li><a href="projects.php">Projects</a></li>
+		  <li><a href="project.php">Jila Parishad Prthamik School</a></li>
 		  <li class="active">New toilets could save lives in Haiti</li>
 		</ol>
 	</div>

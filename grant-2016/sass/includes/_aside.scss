@@ -51,7 +51,8 @@ aside{
 				&.open{
 					font-weight: 600;						
 				}
-				&.open{
+				&.open,
+				&.active{
 					&:after{
 						content: " ";
 						position: absolute;
@@ -64,6 +65,11 @@ aside{
 						border-bottom: none;
 						border-left: 8px solid transparent;
 					}
+				}
+			}
+			&.active{
+				ul{
+					display: block;
 				}
 			}
 			ul{

@@ -28,7 +28,7 @@ class="">
     <?php include_once('templates/includes/header.php');?>
 		<?php include_once('templates/includes/navigation.php');?>
 		<div id="main">
-			<?php include_once('templates/pages/homev3.php');?>		
+			<?php include_once('templates/pages/homepagev3.php');?>		
 		</div>
   </div>
   <?php include_once("themes/templates/includes/Footer.php"); ?>

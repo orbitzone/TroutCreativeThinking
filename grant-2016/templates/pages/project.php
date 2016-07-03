@@ -1,7 +1,7 @@
 <div class="container no-padding">
 	<div class="container-medium">
 		<ol class="breadcrumb">
-			<li><a href="index.php">Projects</a></li>
+			<li><a href="projects.php">Projects</a></li>
 			<li class="active">Jila Parishad Prthamik School</li>
 		</ol>
 	</div>

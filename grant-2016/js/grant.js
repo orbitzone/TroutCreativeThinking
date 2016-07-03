@@ -124,6 +124,30 @@ var grant = {
         $(window).resize();
       }
     );
+    if($('.homepage-video').length > 0){
+      $('.homepage-video').slick({
+        swipe: false,
+        swipeToSlide: false,
+        touchMove: false
+      });
+      $('.video .play-pause-video').on('click', function(){
+        $('.homepage-video').parent().toggleClass('active');
+        if($('.homepage-video').parent().hasClass('active')){
+          $('.homepage-video').slick('slickGoTo',1);
+          var player_container = $('#the-player');
+          var video = player_container.data('video');
+          if(video){
+            player.autoplay = true;
+            player.init('the-player',video);
+          }  
+        }else{
+          $('.homepage-video').slick('slickGoTo',0);
+          player.stop();          
+        }
+        
+      });
+      $('.video-slider-wrap').css({ opacity: 1});
+    }
     $(window).on('resize', function(){
       var doubleS = 0;
       var single = 0;
@@ -151,7 +175,7 @@ var grant = {
   },
   projects: function(){
     this.news();
-    $('aside a.top-link').on('click', function(){
+    /*$('aside a.top-link').on('click', function(){
       //$(this).parent().addClass('active');
       if($(this).hasClass('open')){
         $(this).removeClass('open');
@@ -161,7 +185,7 @@ var grant = {
         $(this).parent().find('ul').slideDown();  
       }      
       return false;
-    });
+    });*/
     if($('.person-video').length > 0){
       $('.person-video').slick({
         swipe: false,
@@ -247,8 +271,8 @@ var grant = {
       prevArrow: '<button type="button" class="slick-prev"><svg viewBox="0 0 26 46" id="shape-arrow-left"><title>arrow-left</title> <g id="arrow-left-arrow-left"> <path d="M24.4,0.6C24.1,0.2,23.5,0,23,0c-0.5,0-1,0.2-1.4,0.6l-21,21c-0.8,0.8-0.8,2.1,0,2.8l21,21c0.8,0.8,2.1,0.8,2.8,0c0.8-0.8,0.8-2.1,0-2.8L4.9,23L24.4,3.4C25.2,2.6,25.2,1.4,24.4,0.6z"/> </g> </svg></button>',
       nextArrow: '<button type="button" class="slick-next"><svg viewBox="0 0 26 46" id="shape-arrow-right"><title>arrow-right</title> <g id="arrow-right-arrow-right"> <path d="M1.6,45.4C2,45.8,2.5,46,3,46c0.5,0,1-0.2,1.4-0.6l21-21c0.8-0.8,0.8-2.1,0-2.8l-21-21c-0.8-0.8-2.1-0.8-2.8,0c-0.8,0.8-0.8,2.1,0,2.8L21.2,23L1.6,42.6C0.8,43.4,0.8,44.7,1.6,45.4z"/> </g> </svg></button>',
       slidesToShow: 5,
-      slidesToScroll: 1,
-      infinite: false,
+      slidesToScroll: 4,
+      infinite: true,
       variableWidth: true,
       responsive:[
       {

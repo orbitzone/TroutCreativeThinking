@@ -122,7 +122,6 @@ $winner-line-color: #e5ebef;
 		padding: em(30) 0;
 		text-align: center;
 		.slide{
-			padding: 0 em(30);
 			color: #999999;
 			cursor: pointer;
 			@include transition(color .3s ease-out);
@@ -134,6 +133,9 @@ $winner-line-color: #e5ebef;
     				filter: none;*/
     				opacity: 1;
 				}
+			}
+			.item{
+				padding: 0 em(30);
 			}
 		}
 		.image{

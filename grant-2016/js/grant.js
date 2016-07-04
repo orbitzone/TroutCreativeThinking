@@ -116,13 +116,14 @@ var grant = {
     
     if($('.grid').length > 0){
       var masonry = new Masonry( '.grid', {
-        itemSelector: '.grid-item'      
+        itemSelector: '.grid-item',
+        transitionDuration: 0        
       });
     }
+    $(window).resize();
     $('#feed').imagesLoaded()
       .always( function( instance ) {
-        $(window).resize();
-         masonry.layout();
+        $(window).resize();         
       }
     );
     if($('.homepage-video').length > 0){
@@ -155,21 +156,21 @@ var grant = {
       $('#feed .item').height('');
       $('#feed .item').each(function(){
         if($(this).hasClass('double')){
-          if($(this).height() > doubleS){
-            doubleS = $(this).height();
+          if($(this).outerHeight() > doubleS){
+            doubleS = $(this).outerHeight();
           }
         }else{
-          if($(this).height() > single){
-            single = $(this).height();
+          if($(this).outerHeight() > single){
+            single = $(this).outerHeight();
           }
         }
       });
       if(doubleS > (single * 2)){
-        $('#feed .item.double').height(doubleS);
-        $('#feed .item.single').height(doubleS/2);
+        $('#feed .item.double').outerHeight(doubleS);
+        $('#feed .item.single').outerHeight(doubleS/2);
       }else{
-        $('#feed .item.double').height(single*2);
-        $('#feed .item.single').height(single);
+        $('#feed .item.double').outerHeight(single*2);
+        $('#feed .item.single').outerHeight(single);
       }
       masonry.layout();
     });       

@@ -1802,7 +1802,7 @@
     width: 50%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   /* line 164, ../sass/pages/_homepage.scss */
   #grant #feed .grid-item {
     width: 33.33333%;

@@ -21,9 +21,23 @@ $winner-line-color: #e5ebef;
 			@media (min-width: $screen-sm){
 				height: 480px;
 			}
+			#manuto{
+					g,path,circle{
+						@include transform-origin(514.1px 204.7px);
+					}
+				}
+				#nasik{
+					g,path,circle{
+						@include transform-origin(423.1px 149.8px);
+					}
+				}
+				#tacloban{
+					g,path,circle{
+						@include transform-origin(509.9px 167px);
+					}
+				}
 			.dot{
 				path, circle{
-					@include transform-origin(center center);
 					fill: $light-blue;
 				}
 				path{
@@ -38,8 +52,7 @@ $winner-line-color: #e5ebef;
 				g{
 					cursor: pointer;
 					@include transition(all .3s ease-out);
-					display: block;
-					@include transform-origin(center center);
+					display: block;					
 				}
 				&.active{
 					path, circle{

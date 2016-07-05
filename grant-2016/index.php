@@ -10,8 +10,7 @@
   <?php include_once('templates/includes/meta.php');?><!-- New meta-->
   <title>Reece Grant 2016</title>  
 </head>
-<body
-class="">
+<body>
 <div class="ocmain-wrapper">
   <div class="browser-message">
     <div class="content-container">

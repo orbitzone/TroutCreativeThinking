@@ -19,30 +19,30 @@
 			<div class="container-small">
 				<div class="video-slider-wrap">
 					<div class="slider person-video">
-				        <div class="slide">
-				          <div class="video-image">
-				            <img src="../grant-2015/images/justin/justin-video.jpg" alt="James Video">
-				          </div>                        
-				        </div>
-				        <div class="slide">
-				        	<div class="video-wrapper">
-					          	<div class="video">
-					            	<figure class="player" id="the-player" data-video="Gh18sVLetRE"></figure>
-					          	</div>
-				        	</div>	        
-		        		</div>
-		      		</div>  
-		      		<div class="play-button" data-video="person-video">
-	      				<button type="button" class="play-pause-video">
-	      					<svg width="50px" height="50px" viewBox="0 0 50 50">
-	<path class="play" d="M19.4,36.2l17.4-11.3L19.4,13.6V36.2z M21.4,17.3l11.7,7.6l-11.7,7.6V17.3z"/>
-	<path class="close" d="M27.1,25l8.9,8.9l-2.1,2.1L25,27.1l-8.9,8.9l-2.1-2.1l8.9-8.9l-8.9-8.9l2.1-2.1l8.9,8.9l8.9-8.9l2.1,2.1
-		L27.1,25z"/>
-	<path class="circle" d="M25,0C11.2,0,0,11.2,0,25s11.2,25,25,25s25-11.2,25-25S38.8,0,25,0z M25,48
-		C12.3,48,2,37.7,2,25S12.3,2,25,2s23,10.3,23,23S37.7,48,25,48z"/>
-	</svg>
-	      				</button>	              
-		            </div>
+		        <div class="slide">
+		          <div class="video-image">
+		            <img src="../grant-2015/images/justin/justin-video.jpg" alt="James Video">
+		          </div>                        
+		        </div>
+		        <div class="slide">
+		        	<div class="video-wrapper">
+			          	<div class="video">
+			            	<figure class="player" id="the-player" data-video="Gh18sVLetRE"></figure>
+			          	</div>
+		        	</div>	        
+        		</div>
+      		</div>  
+      		<div class="play-button" data-video="person-video">
+    				<button type="button" class="play-pause-video">
+    					<svg width="50px" height="50px" viewBox="0 0 50 50">
+								<path class="play" d="M19.4,36.2l17.4-11.3L19.4,13.6V36.2z M21.4,17.3l11.7,7.6l-11.7,7.6V17.3z"/>
+								<path class="close" d="M27.1,25l8.9,8.9l-2.1,2.1L25,27.1l-8.9,8.9l-2.1-2.1l8.9-8.9l-8.9-8.9l2.1-2.1l8.9,8.9l8.9-8.9l2.1,2.1
+									L27.1,25z"/>
+								<path class="circle" d="M25,0C11.2,0,0,11.2,0,25s11.2,25,25,25s25-11.2,25-25S38.8,0,25,0z M25,48
+									C12.3,48,2,37.7,2,25S12.3,2,25,2s23,10.3,23,23S37.7,48,25,48z"/>
+								</svg>
+    				</button>	              
+          </div>
 				</div>			
 				<div class="project-details">
 					<div class="row">

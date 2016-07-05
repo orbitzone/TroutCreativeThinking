@@ -13,3 +13,18 @@ header{
 		}
 	}
 }
+&.projects{
+	header{
+		background-image: url(../img/banner-2.jpg);
+	}
+}
+&.news{
+	header{
+		background-image: url(../img/banner-3.jpg);
+	}
+}
+&.apply-now{
+	header{
+		background-image: url(../img/banner-4.jpg);
+	}
+}

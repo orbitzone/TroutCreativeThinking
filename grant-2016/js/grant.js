@@ -257,12 +257,16 @@ var grant = {
         $('.map .dot[data-person='+person+']').attr('class','dot active');
       }
     });
+    var timeout1 = null;
+    var timeout2 = null;
     function show_person(person){
-      $('.cards-slider .card.active').addClass('leave').removeClass('active');
-        setTimeout(function(){
+      $('.cards-slider .card.active,.cards-slider .card.show').addClass('leave').removeClass('active').removeClass('show');
+        clearTimeout(timeout1);
+        clearTimeout(timeout2);
+        timeout1 = setTimeout(function(){
           $('.cards-slider .card.leave').removeClass('leave');
           $('.cards-slider .'+person).addClass('show');
-          setTimeout(function(){
+          timeout2 = setTimeout(function(){
             $('.cards-slider .show').addClass('active').removeClass('show');
           },300);
         },300);

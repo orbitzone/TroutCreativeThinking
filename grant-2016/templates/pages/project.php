@@ -142,7 +142,7 @@
 							<div class="person">
 								<a href="project.php">
 									<div class="image">
-										<img src="img/person.jpg" alt="Steve Hanson">
+										<img src="img/winners/tim-circle.png" alt="Timothy Brideson">
 									</div>
 									<div class="details">
 										<h3>Timothy Brideson</h3>									
@@ -157,7 +157,7 @@
 							<div class="person">
 								<a href="project.php">
 									<div class="image">
-										<img src="img/person.jpg" alt="Steve Hanson">
+										<img src="img/winners/james-circle.png" alt="James Millis">
 									</div>
 									<div class="details">
 										<h3>James Millis</h3>

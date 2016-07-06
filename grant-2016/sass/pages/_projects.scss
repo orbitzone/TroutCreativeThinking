@@ -98,11 +98,44 @@ $winner-line-color: #e5ebef;
 			@media (min-width: $screen-sm){
 				padding: 30px;
 			}
+			&.show{
+				display: block;
+				position: relative;
+				.image{
+					opacity: 0;
+					@include transform(translateX(-50px));
+				}
+				.content{
+					opacity: 0;
+					@include transform(translateY(50px));	
+				}
+			}
 			&.active{
 				display: block;
 				position: relative;
+				.image{
+					opacity: 1;
+					@include transform(translateX(0));
+				}
+				.content{
+					opacity: 1;
+					@include transform(translateY(0));	
+				}
+			}
+			&.leave{
+				display: block;
+				position: relative;
+				.image{
+					opacity: 0;
+					@include transform(translateX(-50px));
+				}
+				.content{
+					opacity: 0;
+					@include transform(translateY(50px));	
+				}
 			}
 			.image{
+				@include transition(all .3s ease-out);
 				img{
 					max-width: 100%;
 				}
@@ -115,6 +148,9 @@ $winner-line-color: #e5ebef;
 					width: 50%;
 					padding-right: 30px;
 				}
+			}
+			.content{
+				@include transition(all .3s ease-out);
 			}
 			.col-5{
 				@media (min-width: $screen-sm) and (max-width: 991px){

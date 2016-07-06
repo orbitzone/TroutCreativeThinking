@@ -188,6 +188,11 @@ var grant = {
       }      
       return false;
     });*/
+    $('.cards-slider').imagesLoaded()
+      .always( function( instance ) {
+        $(window).resize();         
+      }
+    );
     if($('.person-video').length > 0){
       $('.person-video').slick({
         swipe: false,
@@ -213,8 +218,7 @@ var grant = {
     }
     $(document).on('click','.map .dot', function(){
       var person = $(this).data('person');
-      $('.cards-slider .card').removeClass('active');
-      $('.cards-slider .'+person).addClass('active');
+      show_person(person);
       $('.map .dot').attr('class','dot');
       $(this).attr('class','dot active');
     });
@@ -229,6 +233,14 @@ var grant = {
         $('.winners-slider').slick('slickUnfilter');
         filtered = false;
       }
+      $('.card').height('');
+      var maxheight = 0;
+      $('.card').each(function(){
+        if($(this).outerHeight() > maxheight){
+          maxheight = $(this).outerHeight();
+        }
+      });
+      $('.card').outerHeight(maxheight);
     });
     $('.winners-slider').imagesLoaded()
       .always( function( instance ) {
@@ -240,12 +252,21 @@ var grant = {
       $(this).addClass('active');
       var person = $(this).data('person');
       if(person){
-        $('.cards-slider .card').removeClass('active');
-        $('.cards-slider .'+person).addClass('active');
+        show_person(person);
         $('.map .dot').attr('class','dot');
         $('.map .dot[data-person='+person+']').attr('class','dot active');
       }
     });
+    function show_person(person){
+      $('.cards-slider .card.active').addClass('leave').removeClass('active');
+        setTimeout(function(){
+          $('.cards-slider .card.leave').removeClass('leave');
+          $('.cards-slider .'+person).addClass('show');
+          setTimeout(function(){
+            $('.cards-slider .show').addClass('active').removeClass('show');
+          },300);
+        },300);
+    }
   },
   news: function(){
     $('.slider-thumbs').slick({

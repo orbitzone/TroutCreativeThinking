@@ -3,7 +3,7 @@
 			  <div class="grid-item">
 			  	<div class="featured-project item double" style="background-image: url(img/feed/feed1.png);">
 			  		<div class="details">
-			  			<h2>"Our main goal was to give the children an future"</h2>
+			  			<h2>"Our main goal was to give the children a future"</h2>
 			  		</div>					  		
 				  	<div class="link"><a href="project.php" class="btn bg-white color-light-blue">Find out more</a></div>
 			  	</div>				  	
@@ -37,7 +37,7 @@
 			  	<div class="project item double dark-blue" style="background-image: url(img/feed/feed2.png);">
 			  		<div class="details">
 			  			<h2>Tim's Project</h2>
-				  		<p><b>Tim spent 14-days in Tacloban, Phillippines constructing toilet facilities in a school heavily damaged by Typhoon Haiyan in 2013.</b></p>
+				  		<p><b>Tim spent 14-days in Tacloban, Philippines constructing toilet facilities in a school heavily damaged by Typhoon Haiyan in 2013.</b></p>
 			  		</div>						  	
 			  	</div>
 		  	</div>
@@ -53,7 +53,7 @@
 			  <div class="grid-item">
 			  	<div class="project item double" style="background-image: url(img/feed/feed3.png);">
 			  		<div class="details">
-			  			<h2>Jame's Project</h2>
+			  			<h2>James' Project</h2>
 				  		<p><b>James worked with the Red Cross and the Friends for the Manatuto to restore remote villages in East Timor prone to landslide and flooding.</b></p>
 			  		</div>						  	
 				  	<div class="link"><a href="#" class="btn bg-white color-light-blue">Find out more</a></div>

@@ -3327,8 +3327,8 @@
 					</div>
 					<div class="col-3">
 						<div class="content">
-							<h2>Jila Parishad Prthamik School</h2>
-							<p>Justin and the We Can’t Wait team will head to Nasik, India for a 10 day assignment to rebuild toilet and sanitation facilities.</p>
+							<h2>Toilet facilities for a rural school in India.</h2>
+							<p>Justin and the We Can’t Wait team headed to Nasik, India for a 10 day assignment to rebuild toilet and sanitation facilities at Jila Parishad Prathamik School.</p>
 							<p>The majority of Indian children are missing out on an education due to the lack of usable toilets. With the help of Justin and the We Can’t Wait team, the project will help improve health and sanitation standards, keeping the students at school for longer.</p>
 							<a href="project.php" class="btn">Read more</a>
 						</div>
@@ -3345,8 +3345,8 @@
 					</div>
 					<div class="col-3">
 						<div class="content">
-							<h2>Restoring remote villages in East Timor, prone to landslides and flooding</h2>
-							<p>James Millis is partnering with Red Cross and Friends of Manatuto, to restore water and sanitation facilities in remote villages in East Timor. The new dad will be cheering on the project from his home in Edithvale, Victoria, and plans to visit the villages in 2016.</p>
+							<h2>Water access for remote villages in East Timor.</h2>
+							<p>James Millis partnered with Red Cross and Friends of Manatuto, to restore water and sanitation facilities in remote villages in East Timor. The new dad cheered on the project from his home in Edithvale, Victoria, and plans to visit the villages in 2016.</p>
 							<a href="project.php" class="btn">Read more</a>
 						</div>
 					</div>
@@ -3362,9 +3362,8 @@
 					</div>
 					<div class="col-3">
 						<div class="content">
-							<h2>Tacloban, Philippines</h2>
-							<p>Justin and the We Can’t Wait team will head to Nasik, India for a 10 day assignment to rebuild toilet and sanitation facilities.</p>
-							<p>Timothy Brideson from Mount Waverley, Victoria is teaming up with a group of Aussie tradies, led by Queensland builder John Tucker, to rebuild toilet facilities at a damaged school in Tacloban. The father of two is excited to put his skills to helping those in need.</p>
+							<h2>New toilets for a typhoon damaged school in Tacloban.</h2>
+							<p>Timothy Brideson from Mount Waverley, Victoria teamed up with a group of Aussie tradies, led by Queensland builder John Tucker, to rebuild toilet facilities at a damaged school in Tacloban. The father of two was excited to put his skills to helping those in need.</p>
 							<a href="project.php" class="btn">Read more</a>
 						</div>
 					</div>
@@ -3375,7 +3374,7 @@
 					<div class="col-5">
 						&nbsp;
 						<div class="image">
-							<img src="img/winners/tim.png" alt="Winner 2016">
+							<img src="img/winners/winner.png" alt="Winner 2016">
 						</div>
 					</div>
 					<div class="col-3">
@@ -3440,7 +3439,7 @@
 				<div class="slide item-slide" data-person="winner-2016">
 					<div class="item">
 					<div class="image">
-						<img src="img/winners/justin.png" alt="New Winner">
+						<img src="img/winners/winner.png" alt="New Winner">
 					</div>
 					<h3>New Winner</h3>
 					<p>Location</p>

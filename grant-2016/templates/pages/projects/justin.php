@@ -1,9 +1,10 @@
+<?php $side_selected = 'justin';?>
 <div class="container no-padding">
 	<div class="container-medium">
 		<ol class="breadcrumb">
 			<li><a href="index.php">Home</a></li>
 			<li><a href="projects.php">Projects</a></li>
-			<li class="active">Jila Parishad Prthamik School</li>
+			<li class="active">Toilet facilities for a rural school in India.</li>
 		</ol>
 	</div>
 </div>
@@ -11,7 +12,7 @@
 	<div class="container first">
 		<div class="container-small">
 			<div class="title">
-				<h1>Jila Parishad Prthamik School</h1>								
+				<h1>Toilet facilities for a rural school in India.</h1>								
 			</div>
 		</div>
 	</div>
@@ -28,7 +29,7 @@
 		        <div class="slide">
 		        	<div class="video-wrapper">
 			          	<div class="video">
-			            	<figure class="player" id="the-player" data-video="Gh18sVLetRE"></figure>
+			            	<figure class="player" id="the-player" data-video="OAdkAA4f8Ro"></figure>
 			          	</div>
 		        	</div>	        
         		</div>
@@ -59,7 +60,7 @@
 							</div>
 						</div>
 						<div class="col-3">
-							<img src="img/nasik-india.jpg" alt="Nasik India">
+							<img src="img/sinnar-india.jpg" alt="Sinnar India">
 						</div>
 					</div>				
 				</div>
@@ -67,7 +68,7 @@
 					<div class="row">
 						<div class="col-2">
 							<div class="image">
-								<img src="img/justin-circle.jpg" alt="About Justin">
+								<img src="img/winners/justin-circle.png" alt="About Justin">
 							</div>
 						</div>
 						<div class="col-6">
@@ -130,7 +131,7 @@
 					</div>				
 				</div>
 				<div class="donate text-right">
-					<a href="#" class="btn">Donate to the project</a>
+					<a href="http://wecannotwait.org" target="_blank" class="btn">Donate to the project</a>
 				</div>
 				<div class="other-participants">
 					<div class="row">

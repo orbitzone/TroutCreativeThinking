@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="container-small">
 			<div class="logo">
-				<svg width="105.2px" height="138px" viewBox="0 0 105.2 138">
+				<a href="index.php"><svg width="105.2px" height="138px" viewBox="0 0 105.2 138">
 					<path fill="#FFFFFF" d="M0,0h105.2v101.9H0V0z"/>
 					<path fill="#009CB6" d="M105.1,130.5c0,2.7,0,5.3,0,7.5c-5.3,0-5.3-2.1-10.5-2.1c-5.3,0-5.3,2.1-10.5,2.1c-5.3,0-5.3-2.1-10.5-2.1
 					c-5.3,0-5.3,2.1-10.5,2.1c-5.3,0-5.3-2.1-10.5-2.1s-5.3,2.1-10.5,2.1s-5.3-2.1-10.5-2.1s-5.3,2.1-10.5,2.1c-5.3,0-5.3-2.1-10.5-2.1
@@ -121,7 +121,7 @@
 					h0v9h-2.8V74.4H64.6z M76.1,76.9v-2.5h11v2.5h-4v11h-3v-11H76.1z"/>
 					<text x="0" y="15" style="display: none;">Reece Grant</text>
 					<text x="0" y="40" style="display: none;">A community water initiative</text>
-				</svg>
+				</svg></a>
 			</div>
 		</div>			
 	</div>		

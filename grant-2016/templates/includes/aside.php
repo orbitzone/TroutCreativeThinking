@@ -1,3 +1,4 @@
+<?php if(!isset($side_selected)){ $side_selected = 'justin';}?>
 <aside>
 	<ul class="main-aside list-unstyled">
 		<li class="year color-dark-blue">2016</li>
@@ -41,10 +42,10 @@
 			</ul>	
 		</li>
 		<li class="year color-light-blue">2015</li>
-		<li class="active">
-			<a href="project.php" class="top-link active">
+		<li <?php if($side_selected == 'justin'){?>class="active"<?php }?>>
+			<a href="project-justin.php" class="top-link <?php if($side_selected == 'justin'){?>active<?php }?>">
 				<b>India</b>
-				<p>Toilet facilities at Jila Parishad Prathamik School.</p>
+				<p>Toilet facilities for a rural school in India.</p>
 			</a>
 			<ul class="list-unstyled">
 				<li><h3>Previous posts</h3></li>
@@ -54,8 +55,8 @@
 				<li class="more"><a href="project.php">More</a></li>
 			</ul>	
 		</li>
-		<li>
-			<a href="project.php" class="top-link">
+		<li <?php if($side_selected == 'james'){?>class="active"<?php }?>>
+			<a href="project-james.php" class="top-link <?php if($side_selected == 'james'){?>active<?php }?>">
 				<b>East Timor</b>
 				<p>Water access for remote villages in East Timor.</p>
 			</a>
@@ -67,12 +68,13 @@
 				<li class="more"><a href="project.php">More</a></li>
 			</ul>	
 		</li>
-		<li>
-			<a href="project.php" class="top-link">
+		<li <?php if($side_selected == 'tim'){?>class="active"<?php }?>>
+			<a href="project-tim.php" class="top-link <?php if($side_selected == 'tim'){?>active<?php }?>">
 				<b>Phillipines</b>
-				<p>Rebuild toilets at a damaged school in Tacloban.</p>
+				<p>New toilets for a typhoon damaged school in Tacloban.</p>
 			</a>
 			<ul class="list-unstyled">
+				<li><h3>Previous posts</h3></li>
 				<li><a href="project-article.php">The Future Water Shortage, Sustainability and avoiding Mad Max</a></li>
 				<li><a href="project-article.php">Water demand to increase 55% globally by 2050</a></li>
 				<li><a href="project-article.php">Securing Melbourne’s water supply</a></li>

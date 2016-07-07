@@ -1,9 +1,10 @@
+<?php $side_selected = 'james';?>
 <div class="container no-padding">
 	<div class="container-medium">
 		<ol class="breadcrumb">
 			<li><a href="index.php">Home</a></li>
 			<li><a href="projects.php">Projects</a></li>
-			<li class="active">Jila Parishad Prthamik School</li>
+			<li class="active">Water access for remote villages in East Timor.</li>
 		</ol>
 	</div>
 </div>
@@ -11,7 +12,7 @@
 	<div class="container first">
 		<div class="container-small">
 			<div class="title">
-				<h1>Jila Parishad Prthamik School</h1>								
+				<h1>Water access for remote villages in East Timor.</h1>								
 			</div>
 		</div>
 	</div>
@@ -22,7 +23,7 @@
 					<div class="slider person-video">
 		        <div class="slide">
 		          <div class="video-image">
-		            <img src="../grant-2015/images/justin/justin-video.jpg" alt="James Video">
+		            <img src="http://www.reece.com.au/assets/images/videopage/4881/james-video.jpg" alt="James Video">
 		          </div>                        
 		        </div>
 		        <div class="slide">
@@ -50,16 +51,16 @@
 						<div class="col-4">
 							<h2>Project Details</h2>
 							<ul class="list-unstyled">
-								<li><b>Location</b> Nasik, India</li>
-								<li><b>Starting</b> October 2015</li>
-								<li><b>Duration</b> 10 days</li>			
+								<li><b>Location</b> Manatuto, East Timor</li>
+								<li><b>Starting</b> September 2015</li>
+								<li><b>Duration</b> 2 – 3 months</li>			
 							</ul>
 							<div class="description">
-								Justin and the We Can’t Wait team will head to Nasik, India for a 10 day assignment to rebuild toilet and sanitation facilities at Jila Parishad Prathamik School. The majority of Indian children are missing out on an education due to the lack of usable toilets. With the help of Justin and the We Can’t Wait team, the project will help improve health and sanitation standards, keeping the students at school for longer.
+								Spring water is the main water source for the communities living in the mountains, however keeping the water clean and transporting it is a major challenge. James is putting the Reece Grant funds towards restoring two remote villages with proper facilities to access spring water, water filtration and toilet facilities.
 							</div>
 						</div>
 						<div class="col-3">
-							<img src="img/nasik-india.jpg" alt="Nasik India">
+							<img src="img/manatuto-east-timor.jpg" alt="Manatuto, East Timor">
 						</div>
 					</div>				
 				</div>
@@ -67,13 +68,12 @@
 					<div class="row">
 						<div class="col-2">
 							<div class="image">
-								<img src="img/justin-circle.jpg" alt="About Justin">
+								<img src="img/winners/james-circle.png" alt="About James">
 							</div>
 						</div>
 						<div class="col-6">
-							<h2>About Justin</h2>
-							<p>Justin Morris from Notting Hill, Victoria has been granted $15,000 for his submission to improve India’s complex sanitation issues. For his project, Justin is partnering with the We Can’t Wait foundation and putting the money towards the construction of toilet facilities and sanitation education in schools in Nasik, India.</p>
-							<p>The father of four is thrilled to dedicate the Reece Grant to help students (some the same age as his own) complete their education and teach them the importance of proper sanitation.</p>
+							<h2>About James</h2>
+							<p>James Millis is partnering with Red Cross and Friends of Manatuto, to restore water and sanitation facilities in remote villages in East Timor. The new dad will be cheering on the project from his home in Edithvale, Victoria, and plans to visit the villages in 2016.</p>							
 						</div>
 					</div>
 				</div>					
@@ -86,13 +86,13 @@
 						<div class="row">
 							<div class="col-4">
 								<div class="image">
-									<img src="http://www.reece.com.au/assets/images/magazinearticle/5058/_resampled/CroppedImage400300-justin-morris-part3-2.jpg" alt="Justin's Video Part 3">
+									<img src="http://www.reece.com.au/assets/images/magazinearticle/4888/_resampled/CroppedImage400300-article2-photo2.jpg" alt="Reece Grant “hits the ground running” in East Timor">
 								</div>
 							</div>
 							<div class="col-4">
-								<h3>Justin's Video Part 3</h3>
+								<h3>Reece Grant “hits the ground running” in East Timor</h3>
 								<div class="details">
-									<p>Justin Morris is partnering with the We Can’t Wait foundation and putting the money towards the construction of toilet facilities and sanitation education in schools in Nasik, India.</p>
+									<p>Reece Grant recipient, James Millis’ project in East Timor is underway.</p>
 								</div>
 								<a href="project-article.php" class="btn">Read more</a>						
 							</div>
@@ -102,13 +102,13 @@
 						<div class="row">
 							<div class="col-4">
 								<div class="image">
-									<img src="http://www.reece.com.au/assets/images/magazinearticle/4968/_resampled/CroppedImage400300-justin-morris-part2-2.jpg" alt="Justin's Video Part 2">
+									<img src="http://www.reece.com.au/assets/images/magazinearticle/4889/_resampled/CroppedImage400300-article1-photo1.jpg" alt="Grant recipient: James Millis">
 								</div>
 							</div>
 							<div class="col-4">
-								<h3>Justin's Video Part 2</h3>
+								<h3>Grant recipient: James Millis</h3>
 								<div class="details">
-									<p>Justin Morris from Notting Hill shares his experiences as he navigates his way through India's school's sanitation and clean water issues. View Part 2 of his journey below.</p>
+									<p>Villages in the hills of East Timor are prone to landslides and flooding, and they’re also one of the hardest areas to access, making recovery a slow and lengthy process.</p>
 								</div>
 								<a href="project-article.php" class="btn">Read more</a>						
 							</div>
@@ -122,15 +122,15 @@
 				<div class="make-a-difference">
 					<div class="row">
 						<div class="col-2">
-							<img src="img/we-cant-wait.jpg" alt="we cant wait">
+							<img src="img/redcross-logo.png" alt="Red cross">
 						</div>
 						<div class="col-6">
-							<p>Want to make a difference? Visit <a href="#" target="_blank">we can't wait</a> to see how you can.<br/>Or get connect by visiting their <a href="#" target="_blank">Facebook</a></p>
+							<p>Want to make a difference? Visit <a href="http://www.redcross.org.au/east-timor.aspx/" target="_blank">Red Cross </a> to see how you can.<br/>Or get connect by visiting their <a href="http://www.facebook.com/AustralianRedCross" target="_blank">Facebook</a></p>
 						</div>
 					</div>				
 				</div>
 				<div class="donate text-right">
-					<a href="#" class="btn">Donate to the project</a>
+					<a href="http://www.redcross.org.au/east-timor.aspx" target="_blank" class="btn">Donate to the project</a>
 				</div>
 				<div class="other-participants">
 					<div class="row">
@@ -156,12 +156,12 @@
 						</div>
 						<div class="col-2">
 							<div class="person">
-								<a href="project-james.php">
+								<a href="project-justin.php">
 									<div class="image">
-										<img src="img/winners/james-circle.png" alt="James Millis">
+										<img src="img/winners/justin-circle.png" alt="Justin Morris">
 									</div>
 									<div class="details">
-										<h3>James Millis</h3>
+										<h3>Justin Morris</h3>
 									</div>							
 								</a>
 							</div>

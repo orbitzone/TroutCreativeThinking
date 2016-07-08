@@ -200,6 +200,11 @@ var grant = {
         'transform-origin':       cx+'px '+cy+'px'  
       });
     });
+    $('.map svg .dot.active').each(function(){
+      var cx = $(this).find('circle').attr('cx');
+      var cy = $(this).find('circle').attr('cy');
+      $(this).find('circle').attr('transform','translate('+cx+' '+cy+') scale(2) translate(-'+cx+' -'+cy+')');
+    });
     $('.cards-slider').imagesLoaded()
       .always( function( instance ) {
         $(window).resize();         
@@ -232,7 +237,11 @@ var grant = {
       var person = $(this).data('person');
       show_person(person);
       $('.map .dot').attr('class','dot');
+      $('.map .dot circle').attr('transform','');
       $(this).attr('class','dot active');
+      var cx = $(this).find('circle').attr('cx');
+      var cy = $(this).find('circle').attr('cy');
+      $(this).find('circle').attr('transform','translate('+cx+' '+cy+') scale(2) translate(-'+cx+' -'+cy+')');
     });
     var filtered = false
     $(window).on('resize', function(){

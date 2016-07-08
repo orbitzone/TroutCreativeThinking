@@ -3329,7 +3329,7 @@
 						<div class="content">
 							<h2>Toilet facilities for a rural school in India.</h2>
 							<p>Justin and the We Can’t Wait team headed to Nasik, India for a 10 day assignment to rebuild toilet and sanitation facilities at Jila Parishad Prathamik School.</p>
-							<p>The majority of Indian children are missing out on an education due to the lack of usable toilets. With the help of Justin and the We Can’t Wait team, the project will help improve health and sanitation standards, keeping the students at school for longer.</p>
+							<p>The majority of Indian children are missing out on an education due to the lack of usable toilets. With the help of Justin and the We Can’t Wait team, the project improved health and sanitation standards, keeping the students at school for longer.</p>
 							<a href="project-justin.php" class="btn">Read more</a>
 						</div>
 					</div>

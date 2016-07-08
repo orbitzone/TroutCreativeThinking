@@ -2778,20 +2778,24 @@
 #grant .project-article #main .news-article .container.first {
   padding-top: 3.125em;
 }
-/* line 22, ../sass/pages/_project-article.scss */
+/* line 23, ../sass/pages/_project-article.scss */
+#grant .project-article .slide img {
+  width: 100%;
+}
+/* line 27, ../sass/pages/_project-article.scss */
 #grant .project-article .intro {
   max-width: 789px;
   margin-bottom: 3.75em;
 }
-/* line 26, ../sass/pages/_project-article.scss */
+/* line 31, ../sass/pages/_project-article.scss */
 #grant .project-article article {
   margin-bottom: 3.125em;
 }
-/* line 28, ../sass/pages/_project-article.scss */
+/* line 33, ../sass/pages/_project-article.scss */
 #grant .project-article article .details {
   margin-bottom: 1.25em;
 }
-/* line 32, ../sass/pages/_project-article.scss */
+/* line 37, ../sass/pages/_project-article.scss */
 #grant .project-article article .image img {
   width: 100%;
 }
@@ -2811,16 +2815,24 @@
 /* line 20, ../sass/pages/_news.scss */
 #grant.news article {
   margin-bottom: 3.125em;
+  padding-bottom: 3.125em;
+  position: relative;
 }
-/* line 22, ../sass/pages/_news.scss */
+/* line 24, ../sass/pages/_news.scss */
 #grant.news article .details {
   margin-bottom: 1.25em;
 }
-/* line 26, ../sass/pages/_news.scss */
+/* line 28, ../sass/pages/_news.scss */
 #grant.news article .image img {
   width: 100%;
 }
 /* line 32, ../sass/pages/_news.scss */
+#grant.news article .btn {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+/* line 39, ../sass/pages/_news.scss */
 #grant.news .title h1 {
   max-width: 560px;
 }

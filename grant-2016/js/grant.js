@@ -1,3 +1,31 @@
+var sameHeight = function(obj){
+  var currentTallest = 0,
+   currentRowStart = 0,
+   rowDivs = new Array(),
+   $el,
+   topPosition = 0;
+   $(obj).height('auto');
+   $(obj).each(function() {
+    $el = $(this);
+    topPosition = $el.offset().top;
+     
+    if (currentRowStart != topPosition) {
+      for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+        rowDivs[currentDiv].height(currentTallest);
+      }
+      rowDivs.length = 0;
+      currentRowStart = topPosition;
+      currentTallest = $el.height();
+      rowDivs.push($el);
+    } else {
+     rowDivs.push($el);
+     currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
+    }
+    for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+     rowDivs[currentDiv].height(currentTallest);
+    }            
+  });    
+};
 var player = {
   autoplay: false,
   active: '',
@@ -307,10 +335,19 @@ var grant = {
       nextArrow: '<button type="button" class="slick-next"><svg viewBox="0 0 26 46" id="shape-arrow-right"><title>arrow-right</title> <g id="arrow-right-arrow-right"> <path d="M1.6,45.4C2,45.8,2.5,46,3,46c0.5,0,1-0.2,1.4-0.6l21-21c0.8-0.8,0.8-2.1,0-2.8l-21-21c-0.8-0.8-2.1-0.8-2.8,0c-0.8,0.8-0.8,2.1,0,2.8L21.2,23L1.6,42.6C0.8,43.4,0.8,44.7,1.6,45.4z"/> </g> </svg></button>',
       focusOnSelect: true
     });
+    $('.news').imagesLoaded()
+      .always( function( instance ) {
+        $(window).resize();         
+      }
+    );
+    $(window).on('resize', function(){
+      sameHeight('.news article');
+    });
     if($('.slider-thumbs').length>0){
       $(window).on('resize', function(){
         var height = $('.slider-thumbs .slide').width()/ 189 * 144;
         $('.slider-thumbs .slide').height(height);
+
       }).resize();
     }
   },

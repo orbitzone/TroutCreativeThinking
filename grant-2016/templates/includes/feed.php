@@ -39,14 +39,14 @@
 			  			<h2>Tim's Project</h2>
 				  		<p><b>Tim spent 14-days in Tacloban, Philippines constructing toilet facilities in a school heavily damaged by Typhoon Haiyan in 2013.</b></p>				  		
 			  		</div>						  	
-			  		<div class="link"><a href="project-tim.php" class="btn bg-white color-light-blue">Find out more</a></div>
+			  		
 			  	</div>
 		  	</div>
 			  <div class="grid-item">
 			  	<div class="news-article item single bg-blue">
 			  		<div class="details">
 			  			<h3>News</h3>
-				  		<h2>The Future Water Shortage, Sustainability and avoiding Mad Max</h2>
+				  		<h2>WorldSkills winner says WASSUP to South Africa</h2>
 			  		</div>						  	
 				  	<a href="news-article.php" class="btn bg-white color-dark-blue">Water news</a>
 			  	</div>
@@ -55,7 +55,7 @@
 			  	<div class="project item double" style="background-image: url(img/feed/feed3.png);">
 			  		<div class="details">
 			  			<h2>James' Project</h2>
-				  		<p><b>James worked with the Red Cross and the Friends for the Manatuto to restore remote villages in East Timor prone to landslide and flooding.</b></p>
+				  		<p><b>James worked with the Red Cross and the Friends for the Manatuto to restore remote villages in East Timor prone to landslides and flooding.</b></p>
 			  		</div>						  	
 				  	<div class="link"><a href="project-james.php" class="btn bg-white color-light-blue">Find out more</a></div>
 			  	</div>

@@ -100,22 +100,7 @@
 						</div>
 						<a href="news-article.php" class="btn">Read more</a>						
 					</article>
-				</div>
-				<?php for($n=0; $n<5; $n++){?>
-				<div class="col-3-3">
-					<article>
-						<div class="image">
-							<img src="img/placeholder.png" alt="Placeholder">
-						</div>
-						<h4>Reece Grant: an inspiring beginning</h4>
-						<div class="date">14th June 2016</div>
-						<div class="details">
-							<p>The Reece Grant recipient and additional grant recipients have just been announced.</p>
-						</div>
-						<a href="news-article.php" class="btn">Read more</a>						
-					</article>
-				</div>
-				<?php }?>			
+				</div>					
 			</div>
 		</div>
 		<nav class="pagination-wrap">

@@ -2789,15 +2789,23 @@
 }
 /* line 31, ../sass/pages/_project-article.scss */
 #grant .project-article article {
+  position: relative;
   margin-bottom: 3.125em;
+  padding-bottom: 3.125em;
 }
-/* line 33, ../sass/pages/_project-article.scss */
+/* line 35, ../sass/pages/_project-article.scss */
 #grant .project-article article .details {
   margin-bottom: 1.25em;
 }
-/* line 37, ../sass/pages/_project-article.scss */
+/* line 39, ../sass/pages/_project-article.scss */
 #grant .project-article article .image img {
   width: 100%;
+}
+/* line 43, ../sass/pages/_project-article.scss */
+#grant .project-article article .btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 /* line 4, ../sass/pages/_news.scss */
 #grant.news #main .container.first {

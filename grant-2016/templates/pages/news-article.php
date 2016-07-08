@@ -84,42 +84,42 @@
 					<div class="row">
 						<div class="col-3-3">
 							<article>
-								<div class="image">
-									<img src="img/placeholder.png" alt="Placeholder">
-								</div>
-								<h4>The Future Water Shortage, Sustainability and avoiding Mad Max</h4>
-								<div class="date">5th April 2016</div>
-								<div class="details">
-									<p>Last year’s reboot of the Mad Max franchise, may have hit a little too close to home, coinciding with the California’s worst drought to date.</p>
-								</div>
-								<a href="#" class="btn">Read more</a>						
-							</article>
-						</div>
-						<div class="col-3-3">
-							<article>
-								<div class="image">
-									<img src="img/placeholder.png" alt="Placeholder">
-								</div>
-								<h4>Water demand to increase 55% globally by 2050</h4>
-								<div class="date">21th August 2015</div>
-								<div class="details">
-									<p>Water demand around the world is projected to rise by 55% between 2000 and 2050, according to the Global Water Forum. This is a scary statistic considering one billion people in the developing regions still have no access to clean and safe water..</p>
-								</div>
-								<a href="#" class="btn">Read more</a>						
-							</article>
-						</div>
-						<div class="col-3-3">
-							<article>
-								<div class="image">
-									<img src="img/placeholder.png" alt="Placeholder">
-								</div>
-								<h4>Securing Melbourne’s water supply</h4>
-								<div class="date">25th April 2016</div>
-								<div class="details">
-									<p>Fifty billion litres of water has been ordered from the Victorian Desalination Plant to help restore recent storage losses and protect future supplies in Melbourne.</p>
-								</div>
-								<a href="#" class="btn">Read more</a>						
-							</article>
+									<div class="image">
+										<img src="http://www.reece.com.au/assets/Uploads/_resampled/SetWidth862-WASSUP-hero.jpg" alt="WorldSkills winner says WASSUP to South Africa">
+									</div>
+									<h4>WorldSkills winner says WASSUP to South Africa</h4>
+									<div class="date">3th August 2015</div>
+									<div class="details">
+										<p>Young Australian Plumbing and Heating 2013 WorldSkills winner Alex de Koeyer has spent the time since his win putting his worldly skills to good use.</p>
+									</div>
+									<a href="#" class="btn">Read more</a>						
+								</article>
+							</div>
+							<div class="col-3-3">
+								<article>
+									<div class="image">
+										<img src="http://www.reece.com.au/assets/Uploads/_resampled/SetWidth862-Water-demand-to-increase-55-globally-by-2050-hero.jpg" alt="Water demand to increase 55% globally by 2050">
+									</div>
+									<h4>Water demand to increase 55% globally by 2050</h4>
+									<div class="date">31th August 2015</div>
+									<div class="details">
+										<p>Water demand around the world is projected to rise by 55% between 2000 and 2050, according to the Global Water Forum. This is a scary statistic considering one billion people in the developing regions still have no access to clean and safe water..</p>
+									</div>
+									<a href="#" class="btn">Read more</a>						
+								</article>
+							</div>
+							<div class="col-3-3">
+								<article>
+									<div class="image">
+										<img src="http://www.reece.com.au/assets/Uploads/_resampled/SetWidth862-Clean-Water-Inventions-Series-Lifestraw-hero.jpg" alt="Lifestraw - it’s a real lifesaver">
+									</div>
+									<h4>Lifestraw - it’s a real lifesaver</h4>
+									<div class="date">31th August 2015</div>
+									<div class="details">
+										<p>A look at an incredible portable water purifier designed to give the world’s poorest populations access to clean water.</p>
+									</div>
+									<a href="#" class="btn">Read more</a>						
+								</article>
 						</div>
 					</div>
 				</div>

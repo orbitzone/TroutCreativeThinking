@@ -1964,34 +1964,10 @@
   }
 }
 /* line 25, ../sass/pages/_projects.scss */
-#grant.projects .map svg #manuto g, #grant.projects .map svg #manuto path, #grant.projects .map svg #manuto circle {
-  -webkit-transform-origin: 514.1px 204.7px;
-  -moz-transform-origin: 514.1px 204.7px;
-  -ms-transform-origin: 514.1px 204.7px;
-  -o-transform-origin: 514.1px 204.7px;
-  transform-origin: 514.1px 204.7px;
-}
-/* line 30, ../sass/pages/_projects.scss */
-#grant.projects .map svg #nasik g, #grant.projects .map svg #nasik path, #grant.projects .map svg #nasik circle {
-  -webkit-transform-origin: 423.1px 149.8px;
-  -moz-transform-origin: 423.1px 149.8px;
-  -ms-transform-origin: 423.1px 149.8px;
-  -o-transform-origin: 423.1px 149.8px;
-  transform-origin: 423.1px 149.8px;
-}
-/* line 35, ../sass/pages/_projects.scss */
-#grant.projects .map svg #tacloban g, #grant.projects .map svg #tacloban path, #grant.projects .map svg #tacloban circle {
-  -webkit-transform-origin: 509.9px 167px;
-  -moz-transform-origin: 509.9px 167px;
-  -ms-transform-origin: 509.9px 167px;
-  -o-transform-origin: 509.9px 167px;
-  transform-origin: 509.9px 167px;
-}
-/* line 40, ../sass/pages/_projects.scss */
 #grant.projects .map svg .dot path, #grant.projects .map svg .dot circle {
   fill: #009cb6;
 }
-/* line 43, ../sass/pages/_projects.scss */
+/* line 28, ../sass/pages/_projects.scss */
 #grant.projects .map svg .dot path {
   -webkit-animation: pulse 1s ease-out infinite;
   -moz-animation: pulse 1s ease-out infinite;
@@ -1999,7 +1975,7 @@
   -o-animation: pulse 1s ease-out infinite;
   animation: pulse 1s ease-out infinite;
 }
-/* line 46, ../sass/pages/_projects.scss */
+/* line 31, ../sass/pages/_projects.scss */
 #grant.projects .map svg .dot circle {
   -webkit-animation: circle_pulse 1s ease-out infinite;
   -moz-animation: circle_pulse 1s ease-out infinite;
@@ -2007,11 +1983,11 @@
   -o-animation: circle_pulse 1s ease-out infinite;
   animation: circle_pulse 1s ease-out infinite;
 }
-/* line 49, ../sass/pages/_projects.scss */
+/* line 34, ../sass/pages/_projects.scss */
 #grant.projects .map svg .dot.d2016 {
   fill: #003964;
 }
-/* line 52, ../sass/pages/_projects.scss */
+/* line 37, ../sass/pages/_projects.scss */
 #grant.projects .map svg .dot g {
   cursor: pointer;
   -webkit-transition: all 0.3s ease-out;
@@ -2021,7 +1997,7 @@
   transition: all 0.3s ease-out;
   display: block;
 }
-/* line 58, ../sass/pages/_projects.scss */
+/* line 43, ../sass/pages/_projects.scss */
 #grant.projects .map svg .dot.active path, #grant.projects .map svg .dot.active circle {
   -webkit-animation: none;
   -moz-animation: none;
@@ -2034,11 +2010,11 @@
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-/* line 62, ../sass/pages/_projects.scss */
+/* line 47, ../sass/pages/_projects.scss */
 #grant.projects .map svg .dot.active path {
   opacity: 0;
 }
-/* line 65, ../sass/pages/_projects.scss */
+/* line 50, ../sass/pages/_projects.scss */
 #grant.projects .map svg .dot.active circle {
   fill: #009cb6 !important;
   -webkit-transform: scale(2);
@@ -2047,7 +2023,7 @@
   -o-transform: scale(2);
   transform: scale(2);
 }
-/* line 71, ../sass/pages/_projects.scss */
+/* line 56, ../sass/pages/_projects.scss */
 #grant.projects .map svg .dot:hover g {
   -webkit-transform: scale(2);
   -moz-transform: scale(2);
@@ -2055,7 +2031,7 @@
   -o-transform: scale(2);
   transform: scale(2);
 }
-/* line 77, ../sass/pages/_projects.scss */
+/* line 62, ../sass/pages/_projects.scss */
 #grant.projects .map h1 {
   max-width: 440px;
   width: 100%;
@@ -2070,12 +2046,12 @@
   transform: translateX(-50%);
 }
 @media (min-width: 768px) {
-  /* line 77, ../sass/pages/_projects.scss */
+  /* line 62, ../sass/pages/_projects.scss */
   #grant.projects .map h1 {
     top: -10px;
   }
 }
-/* line 90, ../sass/pages/_projects.scss */
+/* line 75, ../sass/pages/_projects.scss */
 #grant.projects .cards-slider {
   margin-top: -20px;
   background: white;
@@ -2088,23 +2064,23 @@
   -ms-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
 }
-/* line 95, ../sass/pages/_projects.scss */
+/* line 80, ../sass/pages/_projects.scss */
 #grant.projects .cards-slider .card {
   padding: 0 30px 30px;
   display: none;
 }
 @media (min-width: 768px) {
-  /* line 95, ../sass/pages/_projects.scss */
+  /* line 80, ../sass/pages/_projects.scss */
   #grant.projects .cards-slider .card {
     padding: 30px;
   }
 }
-/* line 101, ../sass/pages/_projects.scss */
+/* line 86, ../sass/pages/_projects.scss */
 #grant.projects .cards-slider .card.show {
   display: block;
   position: relative;
 }
-/* line 104, ../sass/pages/_projects.scss */
+/* line 89, ../sass/pages/_projects.scss */
 #grant.projects .cards-slider .card.show .image {
   opacity: 0;
   -webkit-transform: translateX(-50px);
@@ -2113,7 +2089,7 @@
   -o-transform: translateX(-50px);
   transform: translateX(-50px);
 }
-/* line 108, ../sass/pages/_projects.scss */
+/* line 93, ../sass/pages/_projects.scss */
 #grant.projects .cards-slider .card.show .content {
   opacity: 0;
   -webkit-transform: translateY(50px);
@@ -2122,12 +2098,12 @@
   -o-transform: translateY(50px);
   transform: translateY(50px);
 }
-/* line 113, ../sass/pages/_projects.scss */
+/* line 98, ../sass/pages/_projects.scss */
 #grant.projects .cards-slider .card.active {
   display: block;
   position: relative;
 }
-/* line 116, ../sass/pages/_projects.scss */
+/* line 101, ../sass/pages/_projects.scss */
 #grant.projects .cards-slider .card.active .image {
   opacity: 1;
   -webkit-transform: translateX(0);
@@ -2136,7 +2112,7 @@
   -o-transform: translateX(0);
   transform: translateX(0);
 }
-/* line 120, ../sass/pages/_projects.scss */
+/* line 105, ../sass/pages/_projects.scss */
 #grant.projects .cards-slider .card.active .content {
   opacity: 1;
   -webkit-transform: translateY(0);
@@ -2145,12 +2121,12 @@
   -o-transform: translateY(0);
   transform: translateY(0);
 }
-/* line 125, ../sass/pages/_projects.scss */
+/* line 110, ../sass/pages/_projects.scss */
 #grant.projects .cards-slider .card.leave {
   display: block;
   position: relative;
 }
-/* line 128, ../sass/pages/_projects.scss */
+/* line 113, ../sass/pages/_projects.scss */
 #grant.projects .cards-slider .card.leave .image {
   opacity: 0;
   -webkit-transform: translateX(-50px);
@@ -2159,7 +2135,7 @@
   -o-transform: translateX(-50px);
   transform: translateX(-50px);
 }
-/* line 132, ../sass/pages/_projects.scss */
+/* line 117, ../sass/pages/_projects.scss */
 #grant.projects .cards-slider .card.leave .content {
   opacity: 0;
   -webkit-transform: translateY(50px);
@@ -2168,7 +2144,7 @@
   -o-transform: translateY(50px);
   transform: translateY(50px);
 }
-/* line 137, ../sass/pages/_projects.scss */
+/* line 122, ../sass/pages/_projects.scss */
 #grant.projects .cards-slider .card .image {
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
@@ -2176,12 +2152,12 @@
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-/* line 139, ../sass/pages/_projects.scss */
+/* line 124, ../sass/pages/_projects.scss */
 #grant.projects .cards-slider .card .image img {
   max-width: 100%;
 }
 @media (min-width: 768px) {
-  /* line 137, ../sass/pages/_projects.scss */
+  /* line 122, ../sass/pages/_projects.scss */
   #grant.projects .cards-slider .card .image {
     margin: 0;
     position: absolute;
@@ -2189,13 +2165,13 @@
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 137, ../sass/pages/_projects.scss */
+  /* line 122, ../sass/pages/_projects.scss */
   #grant.projects .cards-slider .card .image {
     width: 50%;
     padding-right: 30px;
   }
 }
-/* line 152, ../sass/pages/_projects.scss */
+/* line 137, ../sass/pages/_projects.scss */
 #grant.projects .cards-slider .card .content {
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
@@ -2204,27 +2180,27 @@
   transition: all 0.3s ease-out;
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 155, ../sass/pages/_projects.scss */
+  /* line 140, ../sass/pages/_projects.scss */
   #grant.projects .cards-slider .card .col-5 {
     width: 50%;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 160, ../sass/pages/_projects.scss */
+  /* line 145, ../sass/pages/_projects.scss */
   #grant.projects .cards-slider .card .col-3 {
     width: 50%;
   }
 }
-/* line 167, ../sass/pages/_projects.scss */
+/* line 152, ../sass/pages/_projects.scss */
 #grant.projects .winners-slider-wrap {
   padding: 0 1.875em;
 }
-/* line 170, ../sass/pages/_projects.scss */
+/* line 155, ../sass/pages/_projects.scss */
 #grant.projects .winners-slider {
   padding: 1.875em 0;
   text-align: center;
 }
-/* line 173, ../sass/pages/_projects.scss */
+/* line 158, ../sass/pages/_projects.scss */
 #grant.projects .winners-slider .slide {
   color: #999999;
   cursor: pointer;
@@ -2234,21 +2210,21 @@
   -o-transition: color 0.3s ease-out;
   transition: color 0.3s ease-out;
 }
-/* line 177, ../sass/pages/_projects.scss */
+/* line 162, ../sass/pages/_projects.scss */
 #grant.projects .winners-slider .slide:hover, #grant.projects .winners-slider .slide.active {
   color: #009cb6;
 }
-/* line 180, ../sass/pages/_projects.scss */
+/* line 165, ../sass/pages/_projects.scss */
 #grant.projects .winners-slider .slide:hover .image, #grant.projects .winners-slider .slide.active .image {
   					/*-webkit-filter: none;
       				filter: none;*/
   opacity: 1;
 }
-/* line 186, ../sass/pages/_projects.scss */
+/* line 171, ../sass/pages/_projects.scss */
 #grant.projects .winners-slider .slide .item {
   padding: 0 1.875em;
 }
-/* line 190, ../sass/pages/_projects.scss */
+/* line 175, ../sass/pages/_projects.scss */
 #grant.projects .winners-slider .image {
   max-width: 178px;
   margin: 0 auto;
@@ -2266,38 +2242,38 @@
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-/* line 203, ../sass/pages/_projects.scss */
+/* line 188, ../sass/pages/_projects.scss */
 #grant.projects .winners-slider .slick-next {
   right: -30px;
 }
-/* line 206, ../sass/pages/_projects.scss */
+/* line 191, ../sass/pages/_projects.scss */
 #grant.projects .winners-slider .slick-prev {
   left: -30px;
 }
-/* line 210, ../sass/pages/_projects.scss */
+/* line 195, ../sass/pages/_projects.scss */
 #grant.projects .winners-slider .slick-arrow svg {
   fill: #e6e7e8;
 }
-/* line 214, ../sass/pages/_projects.scss */
+/* line 199, ../sass/pages/_projects.scss */
 #grant.projects .winners-slider h3 {
   font-size: 0.875em;
   text-align: center;
   margin-bottom: 0;
   color: inherit;
 }
-/* line 220, ../sass/pages/_projects.scss */
+/* line 205, ../sass/pages/_projects.scss */
 #grant.projects .winners-slider p {
   text-align: center;
   font-size: 0.625em;
 }
-/* line 224, ../sass/pages/_projects.scss */
+/* line 209, ../sass/pages/_projects.scss */
 #grant.projects .winners-slider .year-wrap {
   position: relative;
   width: 30px;
   height: 178px;
   display: inline-block;
 }
-/* line 229, ../sass/pages/_projects.scss */
+/* line 214, ../sass/pages/_projects.scss */
 #grant.projects .winners-slider .year-wrap:before {
   content: " ";
   width: 1px;
@@ -2307,7 +2283,7 @@
   left: 50%;
   background: #e5ebef;
 }
-/* line 238, ../sass/pages/_projects.scss */
+/* line 223, ../sass/pages/_projects.scss */
 #grant.projects .winners-slider .year-wrap .arrow-right {
   position: absolute;
   top: 50%;
@@ -2318,13 +2294,13 @@
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 243, ../sass/pages/_projects.scss */
+/* line 228, ../sass/pages/_projects.scss */
 #grant.projects .winners-slider .year-wrap .arrow-right svg {
   width: 4px;
   height: 8px;
   fill: #003964;
 }
-/* line 249, ../sass/pages/_projects.scss */
+/* line 234, ../sass/pages/_projects.scss */
 #grant.projects .winners-slider .year-wrap .arrow-left {
   position: absolute;
   top: 50%;
@@ -2335,26 +2311,26 @@
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 254, ../sass/pages/_projects.scss */
+/* line 239, ../sass/pages/_projects.scss */
 #grant.projects .winners-slider .year-wrap .arrow-left svg {
   width: 4px;
   height: 8px;
   fill: #003964;
 }
-/* line 260, ../sass/pages/_projects.scss */
+/* line 245, ../sass/pages/_projects.scss */
 #grant.projects .winners-slider .year-wrap.dark-blue {
   color: #003964;
 }
-/* line 263, ../sass/pages/_projects.scss */
+/* line 248, ../sass/pages/_projects.scss */
 #grant.projects .winners-slider .year-wrap.light-blue {
   color: #009cb6;
 }
-/* line 267, ../sass/pages/_projects.scss */
+/* line 252, ../sass/pages/_projects.scss */
 #grant.projects .winners-slider .year-wrap.light-blue .arrow-left svg,
 #grant.projects .winners-slider .year-wrap.light-blue .arrow-right svg {
   fill: #009cb6;
 }
-/* line 273, ../sass/pages/_projects.scss */
+/* line 258, ../sass/pages/_projects.scss */
 #grant.projects .winners-slider .year {
   position: absolute;
   top: 50%;

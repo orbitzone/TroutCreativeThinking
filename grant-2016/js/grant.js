@@ -188,6 +188,18 @@ var grant = {
       }      
       return false;
     });*/
+    $('.map svg .dot').each(function(){
+      var $circle = $(this).find('circle');
+      var cx = $circle.attr('cx');
+      var cy = $circle.attr('cy');
+      $(this).find('g,circle,path').css({
+        '-webkit-transform-origin':   cx+'px '+cy+'px',
+        '-moz-transform-origin':       cx+'px '+cy+'px',
+        '-ms-transform-origin':     cx+'px '+cy+'px',
+        '-o-transform-origin':     cx+'px '+cy+'px',
+        'transform-origin':       cx+'px '+cy+'px'  
+      });
+    });
     $('.cards-slider').imagesLoaded()
       .always( function( instance ) {
         $(window).resize();         

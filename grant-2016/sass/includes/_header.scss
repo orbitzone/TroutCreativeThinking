@@ -1,0 +1,30 @@
+header{
+	height: 419px;
+	background: url(../img/main-banner.png) center center no-repeat;
+	background-size: cover;
+	.logo{
+		position: absolute;
+		top: 0;
+		right: 0;
+		svg{
+			display: block;
+			width: 178px;
+			height: 233px;
+		}
+	}
+}
+&.projects{
+	header{
+		background-image: url(../img/banner-2.jpg);
+	}
+}
+&.news{
+	header{
+		background-image: url(../img/banner-3.jpg);
+	}
+}
+&.apply-now{
+	header{
+		background-image: url(../img/banner-4.jpg);
+	}
+}

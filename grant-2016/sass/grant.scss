@@ -1,0 +1,32 @@
+@import "variables";
+@import "mixins";
+@import "includes/slick";
+#grant{
+	line-height: em(20);
+	-webkit-font-smoothing: antialiased; 
+	-moz-osx-font-smoothing: grayscale;
+	font-family: $font-main;
+	background: #edebec;
+	min-height: 100%;
+	font-size: 16px;
+	margin-bottom: -35px;
+	padding: 0;
+
+	@import "reset";
+	@import "main";
+	@import "includes/header";
+	@import "includes/navigation";
+	@import "includes/aside";
+	@import "includes/breadcrumbs";
+	@import "includes/apply-box";
+	@import "includes/countdown";
+	@import "includes/typography";
+	@import "includes/pagination";
+
+	@import "pages/homepage";
+	@import "pages/projects";
+	@import "pages/project";
+	@import "pages/project-article";
+	@import "pages/news";
+	@import "pages/apply-now";
+}

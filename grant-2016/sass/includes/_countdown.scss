@@ -1,0 +1,287 @@
+$days-bg-color:  #1d1d1d;
+$days-border-color:  #272727;
+$hours-bg-color:  #1d1d1d;
+$hours-border-color:  #272727;
+$minutes-bg-color:  #1d1d1d;
+$minutes-border-color:  #272727;
+$seconds-bg-color:  #1d1d1d;
+$seconds-border-color:  #272727;
+
+$flip-box-font-size: em(42);
+$flip-box-width: 58px;
+$flip-box-height: 55px;
+$flip-box-margin: 15px;
+$flip-border-radius: 3px;
+$flip-label-color: white;
+#countdown {
+	opacity: 0;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  font-family: $font-special;
+  @media (min-width: $screen-sm){
+  	margin-bottom: 30px;
+  }
+  .countdown-container {
+	  height: 130px;
+	}
+	.time{
+		margin-right: 13px;
+		display: inline-block;
+	  text-align: center;
+	  position: relative;
+	  &:last-child{
+	  	margin-right: 0;
+	  }
+	  .label{
+	  	text-transform: uppercase;
+	  	color: $flip-label-color;
+	  	font-weight: bold;
+	  	text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.9);
+  		font-size: normal;
+		  margin-top: 15px;
+		  display: block;
+		  text-align: centerl
+	  }
+	  margin-right: $flip-box-margin;
+	  .flip-inner{
+			position: relative;
+			height: 48px;
+	  	width: 54px;
+	  	@include border-radius($flip-border-radius);
+		  @include perspective(479px);
+		  @include backface-visibility(hidden);
+		  @include box-shadow(0px 5px 5px 0px rgba(0, 0, 0, 0.75));
+		  
+		  @include transform(translateZ(0));
+		  @include transform(translate3d(0,0,0));
+		  
+		  @media (min-width: $screen-sm){
+		  	height: $flip-box-height;
+		  	width: $flip-box-width;
+		  }
+		}
+	  .count{
+	  	&.top{
+				&:before{
+					content: " ";
+					position: absolute;
+					left: 7px;
+					width: 4px;
+					height: 3px;
+					bottom: 0px;
+				}
+				&:after{
+					content: " ";
+					position: absolute;
+					right: 7px;
+					width: 4px;
+					height: 3px;
+					bottom: 0px;
+				}
+			}
+			&.bottom{
+				&:before{
+					content: " ";
+					position: absolute;
+					left: 7px;
+					width: 4px;
+					height: 3px;
+					top: 0px;
+				}
+				&:after{
+					content: " ";
+					position: absolute;
+					right: 7px;
+					width: 4px;
+					height: 3px;
+					top: 0px;
+				}	
+			}
+		}
+	}
+	.days{
+		.count{
+			background: $days-bg-color;
+			border-bottom: 1px solid $days-border-color;
+			&.top{
+				border-bottom-color: $days-border-color;
+				&:before{
+					background: $days-border-color;
+				}
+				&:after{
+					background: $days-border-color;
+				}
+			}
+			&.bottom{
+				border-top-color: $days-border-color;
+				border-bottom: 2px solid $days-border-color;
+				&:before{
+					background: $days-border-color;;
+				}
+				&:after{
+					background: $days-border-color;;
+				}	
+			}
+		}
+	}
+	.hours{
+		.count{
+			background: $hours-bg-color;
+			&.top{
+				border-bottom-color: $hours-border-color;
+				&:before{
+					background: $hours-border-color;;
+				}
+				&:after{
+					background: $hours-border-color;;
+				}
+			}
+			&.bottom{
+				border-top-color: $hours-border-color;
+				border-bottom: 2px solid $hours-border-color;
+				&:before{
+					background: $hours-border-color;;
+				}
+				&:after{
+					background: $hours-border-color;;
+				}	
+			}
+		}
+	}
+	
+	.minutes{
+		margin-right: 0;
+		.count{
+			background: $minutes-bg-color;
+			&.top{
+				border-bottom-color: $minutes-border-color;
+				&:before{
+					background: $minutes-border-color;;
+				}
+				&:after{
+					background: $minutes-border-color;;
+				}
+			}
+			&.bottom{
+				border-top-color: $minutes-border-color;
+				border-bottom: 2px solid $minutes-border-color;
+				&:before{
+					background: $minutes-border-color;;
+				}
+				&:after{
+					background: $minutes-border-color;;
+				}	
+			}
+		}
+	}
+	.seconds{
+		display: none;
+	}
+	.seconds{
+		margin-right: 0;
+		.count{
+			background: $seconds-bg-color;
+			&.top{
+				border-bottom-color: $seconds-border-color;
+				&:before{
+					background: $seconds-border-color;;
+				}
+				&:after{
+					background: $seconds-border-color;;
+				}
+			}
+			&.bottom{
+				border-top-color: $seconds-border-color;
+				border-bottom: 2px solid $seconds-border-color;
+				&:before{
+					background: $seconds-border-color;;
+				}
+				&:after{
+					background: $seconds-border-color;;
+				}	
+			}
+		}
+	}
+	.count{
+		position: relative;
+		background: #202020;
+	  color: white;
+	  display: block;
+	  font-size: 2.5em;
+	  line-height: 48px;
+	  overflow: hidden;
+	  position: absolute;
+	  text-align: center;
+	  top: 0;
+	  width: 100%;
+		@media (min-width: $screen-sm){
+			font-size: $flip-box-font-size;
+			line-height: $flip-box-height;	  
+		}
+	  @include transform(translateZ(0));
+		@include transform-style(flat);
+
+		span{
+	  	position: absolute;
+	  	left: 0;
+	  	display: block;
+	  	width: 100%;	  	
+	  }
+	  &.top{
+			border-top: 1px solid rgba(255,255,255,0.2);
+		  border-bottom: 1px solid rgba(255,255,255,0.1);
+		  @include border-radius($flip-border-radius $flip-border-radius 0 0);
+		  height: 50%;		  
+		  @include transform-origin(50% 100%);
+		  &.curr{
+				@include transform(rotateX(0deg));
+			  z-index: 3;
+		  }
+		  span{
+		  	top: -3px;
+		  }
+	  }	  
+	  &.bottom{
+			background-image: linear-gradient(rgba(255,255,255,0.1), transparent);
+		  background-image: -webkit-linear-gradient(rgba(255,255,255,0.1), transparent);
+		  background-image: -moz-linear-gradient(rgba(255,255,255,0.1), transparent);
+		  background-image: -ms-linear-gradient(rgba(255,255,255,0.1), transparent);
+		  background-image: -o-linear-gradient(rgba(255,255,255,0.1), transparent);
+		  border-top: 1px solid #000;
+		  border-bottom: 1px solid #000;
+		  @include border-radius(0 0 $flip-border-radius $flip-border-radius);
+		  height: 50%;
+		  top: 50%;
+
+		  @include transform-origin(50% 0);
+		  &.next{
+			  @include transform(rotateX(90deg));
+			  z-index: 2;
+		  }
+		  span{
+		  	top: -6px;
+		  	@include transform(translateY(-50%));		  	
+		  }		  
+		}
+	}
+	.flip{
+		.count{
+			&.curr{
+				&.top{
+				  @include transition(all 250ms ease-in-out);
+
+				  @include transform(rotateX(-90deg));
+				}
+			}
+			&.next{
+				&.bottom{
+				 @include transition(all 250ms ease-in-out 250ms);
+				  
+				  @include transform(rotateX(0deg));
+				}
+			}
+		}
+	}	
+}

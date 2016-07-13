@@ -1,0 +1,274 @@
+&.homepage{
+	.intro{
+		padding-top: em(45);
+		margin-bottom: em(50);
+	}
+	.container{
+		&.first{
+			.col-5{
+				@media (min-width: $screen-sm) and (max-width: 991px){
+					width: 58%;
+				}
+			}
+			.col-3{
+				@media (min-width: $screen-sm) and (max-width: 991px){
+					width: 41%;
+				}
+			}
+		}
+	}		
+	.homev3{
+		padding: em(50) 0 em(60);
+		.intro{
+			padding-top: 0;
+		}
+		h2{
+			font-size: em(24);
+		}				
+	}
+	h2{
+		font-size: em(18);
+	}
+	.intro-left{
+		padding: 0 15px;
+		@media (min-width: 420px){
+			width: 64.53%;
+			float: left;
+			padding: em(90) em(70) em(90) 0;			
+		}
+	}
+	.intro-right{
+		padding: 0 15px;
+		@media (min-width: 420px){
+			padding: 0;
+			width: 35.47%;
+			float: left;			
+		}
+	}
+	.apply-reece-grant{
+		margin-bottom: em(50);
+	}
+	.latest-projects{
+		h2{
+			font-size: em(32);
+			line-height: 1;
+			margin-bottom: em(35,32);
+		}
+		h3{
+			font-size: em(24);
+			line-height: 1;
+			@include transition(color .3s ease-out);
+		}
+		.image{
+			max-width: em(181);
+			margin: 0 auto;
+			margin-bottom: em(20);
+			@include transition(all .3s ease-out);
+		}
+		.details{
+			max-width: em(185);
+			margin: 0 auto;
+			text-align: center;
+			@include transition(all .3s ease-out);
+		}
+		.person{
+			margin-bottom: em(20);
+			a{
+				color: #3f3f3f;
+				font-size: em(15);
+				text-decoration: none;
+				&:hover{
+					.image{
+						@include transform(translateY(10px));
+					}
+					.details{
+						@include transform(translateY(-10px));
+						h3{
+							color: $dark-blue;
+						}
+					}
+				}
+			}
+		}
+	}
+	.container-video{
+		padding: em(70) 0;
+	}
+	.video-slider-wrap{
+		position: relative;
+		background: $dark-blue;
+		opacity: 0;
+		iframe{
+			display: block;
+		}
+		.play-pause-video{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			display: block;
+			cursor: pointer;
+			@include transform(translateX(-50%) translateY(-50%));
+			@include appearance(none);
+			background: none;
+			border:none;
+			@include transition(all .3s ease-out);
+			svg{
+				display: block;
+				fill: $light-blue;
+				.close{
+					opacity: 0;
+				}
+			}
+		}
+		&.active{
+			.play-pause-video{
+				top: 0;
+				left: 100%;
+				@include transform(translateX(-100%) translateY(-100%) scale(0.8));
+				svg{
+					.play{
+						opacity: 0;
+					}
+					.close{
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+	.homepage-video{
+		.video-image{
+			img{
+				width: 100%;
+			}
+			position: relative;
+		}
+		.video{
+		    position: relative;
+		    padding-bottom: 56.25%;
+		    height: 0;
+		    iframe{
+	    	    position: absolute;
+			    width: 100%;
+			    height: 100%;
+			    left: 0;
+			    top: 0;
+		    }
+		}		
+	}
+}
+#feed{
+	padding: 80px 0;
+	max-width: 1057px;
+	margin: 0 auto;
+	.grid-item{
+		width: 100%;
+		@media (min-width: 420px){
+			width: percentage(1/2);
+		}
+		@media (min-width: 769px){
+			width: percentage(1/3);
+		}
+	}
+	.item{
+		position: relative;
+		background: white;
+		padding: 40px 40px 20px;
+		background-size: cover;
+		background-position: center center;
+		display: table-cell;
+		vertical-align: middle;
+		//height: 266px;
+		text-align: center;
+		h2{
+			margin-top: 0;
+		}
+		h2,h3{
+			color: white;
+		}
+		&.bg-blue{
+			background: $dark-blue;
+			color: white;
+			h2,h3{
+				color: white;
+			}
+		}
+		&.color-blue{
+			color: $dark-blue;
+			h2,h3{
+				color: $dark-blue;
+			}
+			
+		}
+		&.color-light-blue{
+			color: $light-blue;	
+			h2,h3{
+				color: $light-blue;
+			}		
+		}
+	}
+	.featured-project,
+	.project{
+		color: white;
+		display: block;
+		//height: 532px;
+		&:before{
+			content: " ";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: url(../img/feed/light-blue-gradient.png) top center repeat-x;
+		}
+		&.dark-blue{
+			&:before{
+				background: url(../img/feed/dark-blue-gradient.png) top center repeat-x;
+			}	
+		}
+		.details{
+			position: relative;
+			padding-bottom: em(60);
+		}
+		.link{
+			position: absolute;
+			bottom: em(30);
+			left: 0;
+			width: 100%;
+		}
+	}
+	.featured-project{
+		.details{
+			text-align: left;
+			h2{
+				font-size: em(48);
+				line-height: em(44,48);
+			}
+		}
+	}
+	.news-article{
+		h3{
+			text-transform: uppercase;
+			font-size: em(12);
+			line-height: em(26,12);
+			margin-bottom: 0;
+		}
+		h2{
+			font-size: em(24);
+			font-weight: 400;
+			line-height: em(26,24);
+		}
+		.details{
+			margin-bottom: em(30);
+		}
+	}
+	.info{
+		h2{
+			font-size: em(42);
+			line-height: em(38,42);
+		}
+		.details{
+			margin-bottom: em(20);
+		}
+	}		
+}

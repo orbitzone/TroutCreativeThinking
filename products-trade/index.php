@@ -6,9 +6,9 @@
 <!--[if IE 10]>    <html class="no-js ie ie10" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-  <?php include "templates/Includes/ProductsMeta.php" ?>
+  <?php include "templates/includes/ProductsMeta.php" ?>
   <title>Reece Products</title>
-  <?php include "templates/Includes/ProductsHeader.php" ?>
+  <?php include "templates/includes/ProductsHeader.php" ?>
 </head>
 <body
   class="">
@@ -21,11 +21,11 @@
         </div>
       </div>
     </div>
-    <?php include "templates/Includes/Navigation.php" ?>
+    <?php include "templates/includes/Navigation.php" ?>
     
     
     <section id="product-pages">
-      <?php include "templates/Includes/ProductsNav.php" ?>
+      <?php include "templates/includes/ProductsNav.php" ?>
       
       <section class="main-section" id="checkout-success">
         <div class="container-fluid section-container">
@@ -36,6 +36,8 @@
             <div class="col-sm-push-1 col-sm-5 text-center">
               <h2 style="color:#0776aa; padding: 20px 0;">Trade</h2>
               <ul class="list-unstyled">
+                <li style="padding: 10px 0;"><a href="trade-products-landing.php" class="btn full-width blue-button">Products Landing</a></li>
+                <li style="padding: 10px 0;"><a href="trade-products-category.php" class="btn full-width blue-button">Products Category</a></li>
                 <li style="padding: 10px 0;"><a href="trade-product-detail.php" class="btn full-width blue-button">Product Detail and Widget</a></li>
                 <li style="padding: 10px 0;"><a href="trade-shopping-cart.php" class="btn full-width blue-button">Shopping Cart</a></li>
                 <li style="padding: 10px 0;"><a href="trade-checkout-cart.php" class="btn full-width blue-button">Checkout Cart</a></li>
@@ -45,6 +47,8 @@
             <div class="col-sm-push-1 col-sm-5 text-center">
               <h2 style="color: #6dc8b6; padding: 20px 0;">Retail</h2>
               <ul class="list-unstyled">
+                <li style="padding: 10px 0;"><a href="retail-products-landing.php" class="btn full-width green-button">Products Landing</a></li>
+                <li style="padding: 10px 0;"><a href="retail-products-category.php" class="btn full-width green-button">Products Category</a></li>
                 <li style="padding: 10px 0;"><a href="retail-product-detail.php" class="btn full-width green-button">Product Detail and Widget</a></li>
                 <li style="padding: 10px 0;"><a href="retail-shopping-cart.php" class="btn full-width green-button">Shopping Cart</a></li>
                 <li style="padding: 10px 0;"><a href="retail-checkout-cart.php" class="btn full-width green-button">Checkout Cart</a></li>
@@ -54,9 +58,9 @@
           </div>
         </div>
       </section>
-      <?php include "templates/Includes/Footer.php" ?>
+      <?php include "templates/includes/Footer.php" ?>
     </div>
-    <?php include "templates/Includes/MobileNavigation.php" ?>
-    <?php include "templates/Includes/ProductsFooter.php" ?>
+    <?php include "templates/includes/MobileNavigation.php" ?>
+    <?php include "templates/includes/ProductsFooter.php" ?>
   </body>
 </html>

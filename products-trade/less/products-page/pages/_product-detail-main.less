@@ -57,14 +57,10 @@
 
 .main-section#product-detail{
 	color: @body-color;
-	padding-top: 44px;
 	:focus::-webkit-input-placeholder {color: transparent}
 	:focus::-moz-placeholder          {color: transparent}
 	:focus:-moz-placeholder           {color: transparent}
 	:focus:-ms-input-placeholder      {color: transparent}
-	img{
-		max-width: 100%;
-	}	
 	a[x-apple-data-detectors] {
 		color: inherit !important;
 		text-decoration: none !important;
@@ -140,94 +136,16 @@
 			}
 		}
 	}
-	.lightbox{
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: 10;
-		background: rgba(0,0,0,0.8);
-		padding: 60px 20px 20px;
-		overflow: auto;
-		opacity: 0;
-		display: block;
-		visibility: hidden;
-		.transition(opacity 0.3s, visibility 0s 0.3s;);
-		.lightbox-actions{
-			button{
-				svg{
-					width: 20px;
-					height: 20px;
-					fill: white;
-				}
-			}
-		}
-		.lightbox-actions{
-			max-width: 1200px;
-			margin: 0 auto;
-			text-align: right;
-			button{
-				.appearance(none);
-				outline: none;
-				background: none;
-				border: none;
-				color: white;
-			}
-		}
-		.lightbox-content{
-			max-width: 1200px;
-			margin: 0 auto;
-			background:none;
-			.transform(translateY(-100%));
-			.transition(all 0.3s);
-			.product-images-slider{
-				border-bottom: none;
-			}
-			.product-images-slider-wrap{
-				.zoom{
-					display: none;
-				}
-			}
-			.product-thumbs{
-				text-align: center;
-			}			
-		}
-		.embed-responsive{
-			height: auto;
-		}
-		&.show{
-			display: block;
-			opacity: 1;
-			visibility: visible;
-			.transition(opacity 0.3s, visibility 0s;);
-			.lightbox-content{
-				.transform(translateY(0));
-			}
-		}
-	}
-	#video-lightbox{
-		.lightbox-actions{
-			max-width: calc(~"100vh * 1.4");
-			@media (min-width: 1200px){
-				max-width: 1200px;
-			}
-		}
-		.lightbox-content{
-			max-width: calc(~"100vh * 1.4");
-			@media (min-width: 1200px){
-				max-width: 1200px;
-			}
-		}
-		&.show{
-			.embed-responsive{
-				visibility: visible;				
-			}
-		}
-	}
 	.slider-lightbox{
+		padding-top: 20px;
 		.lightbox-content{
 			background:white;
+			.product-images-slider{
+				img{
+					min-height: 270px;
+					max-height: calc(~"100vh - 270px");
+				}
+			}
 		}		
 	}
 	.added-to-cart{
@@ -330,6 +248,16 @@
 		}
 		.cross{
 			opacity: 0;
+			.short{
+				stroke-dasharray: 22px;
+				stroke-dashoffset: 24px;
+				.transition(stroke-dashoffset .2s 0.3s ease-out;);
+			}
+			.long{
+				stroke-dasharray: 55px;
+				stroke-dashoffset: 56px;
+				.transition(stroke-dashoffset .1s .5s ease-out;);
+			}
 		}
 		.check,
 		.cross{
@@ -410,11 +338,24 @@
 			button{
 				border-color: #FB797E;
 				background-color: #FB797E;
+				width: 56px;
+				height: 56px;
+				border-width: 2px;
+				.border-radius(50%);
+			}
+			.cross{
+				opacity: 1;
+				.animation(zoom-jump 0.4s .7s 1 ease-out);
+				.short,
+				.long{
+					stroke: white;
+					stroke-dashoffset: 0;
+				}
 			}
 		}
 	}//End progress button
 	.product-detail-wrap{
-		padding-right: 0;
+		/*padding-right: 0;
 		@media (min-width: @screen-sm){
 			overflow-y: scroll; 
 			-webkit-overflow-scrolling : touch;
@@ -425,7 +366,7 @@
 		}
 		@media (min-width: 1400px){
 			padding-right: 0;				
-		}	
+		}	*/
 		.section-container{
 			padding: 0;
 			@media (min-width: @screen-sm){
@@ -656,6 +597,9 @@
 		position: relative;
 		text-align: center;
 		padding: 0 11%;
+		@media (min-width: @screen-sm){
+			padding: 0 0 0 15px;
+		}
 		@media (min-width: @screen-md){
 			padding: 0 11%;
 		}
@@ -665,8 +609,8 @@
 				font-size: 35px;				
 			}
 			.product-description{
-				font-size: 22px;
-				@media (min-width: @screen-sm){
+				font-size: 18px;
+				@media (min-width: @screen-md){
 					font-size: 22px;
 				}
 			}
@@ -1036,7 +980,8 @@
 		.clearfix();
 		margin-bottom: 38px;
 		@media (min-width: @screen-lg){
-			padding-left: 11%;
+			//padding-left: 11%;
+			padding: 0 4%;
 		}
 		li{
 			list-style:none;
@@ -1293,6 +1238,25 @@
 			}
 			@media (min-width: @screen-lg){
 				padding: 0 11%;
+			}
+		}
+		&.installation-section,
+		&.videos-section,
+		&.product-suggestion-section{
+			.section-content{
+				padding: 0 30px;
+				@media (min-width: @screen-sm){
+					padding: 0;
+				}
+				@media (min-width: @screen-lg){
+					padding: 0 5%;
+				}
+			}
+		}
+		&.installation-section{
+			.file-download-area{
+				margin-left: 7%;
+				margin-right: 7%;
 			}
 		}
 		.expand-section{

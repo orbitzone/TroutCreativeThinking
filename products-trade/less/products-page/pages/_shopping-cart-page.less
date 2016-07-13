@@ -242,10 +242,11 @@
 			}
 
 			.save-as-wrap{
-				max-width: 230px;
 				background-color: @bg-light-grey;
 				padding:0;
-
+				@media (min-width: @screen-sm) {
+					max-width: 230px;
+				}
 				label{
 					.gothamBook;
 				}
@@ -373,13 +374,13 @@
 			.item-data{
 				float:left;
 				min-height:86px;
-				position:relative;
+			//	position:relative;
 				.item-inner{
 					// position: absolute;
 					// top: 50%;
 					// transform: translateY(-50%);
 					@media (max-width: @screen-xs-max) { 
-						position:relative;
+				//		position:relative;
 						top:auto;
 						transform: initial;
 						padding-left:10px;
@@ -442,6 +443,7 @@
 					@media (max-width: @screen-xs-max) { 
 						padding-bottom:5px;
 						padding-top:0;
+						padding-right: 45px;
 					}
 				}
 				&.item-quantity{
@@ -607,30 +609,36 @@
 						line-height:22px;
 						display:inline-block;
 						padding:5px;
-						.transition(color .5s ease);
 						.appearance(none);
 						background: none;
 						border: none;
+						.transition(all .2s ease-in);
+						svg{
+							width: 22px;
+							height: 22px;
+							fill: @pink;
+						}						
 						&:hover{
 							color:@black;
 							cursor:pointer;
-						}						
-						.transition(all .2s ease-in);
-						@media (max-width: @screen-xs-max) { 
-							width:100%;
-							padding-top:3px;
-							padding-bottom:4px;
-							border:solid 1px @border-light-grey;
-							background-color: @bg-light-grey;
-							margin-top:10px;
-							&:hover{
-								cursor:pointer;
-								background-color:@white;
+							svg{
+								fill: @black;
 							}
+						}
+						@media (max-width: @screen-xs-max) { 
+							position: absolute;
+							top: 10px;
+							right: 0;
+							width: 45px;
+							height: 45px;
 						}
 					}
 					@media (max-width: @screen-xs-max) { 
 						width:100%;
+						padding: 0;
+						.item-inner{
+							padding: 0;
+						}
 					}
 				}
 				@media (max-width: @screen-xs-max) { 

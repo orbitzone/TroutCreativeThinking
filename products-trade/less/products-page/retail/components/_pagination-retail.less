@@ -1,0 +1,31 @@
+@retail-pagination-arrow-color: #bfbfbf;
+@retail-pagination-arrow-hover-color: @retail-main-color;
+
+.pagination{
+	li{
+		a, span{
+			color: black;
+		}
+		svg{
+			fill: @retail-pagination-arrow-color;
+		}
+		a{
+			&:hover{
+				svg{
+					fill: @retail-pagination-arrow-hover-color;
+				}
+			}
+		}
+		&.active{
+			a, span{
+				color: black;
+				&:after{
+					border-bottom-color: black;
+				}
+				&:hover{
+					color: black;
+				}
+			}
+		}
+	}
+}

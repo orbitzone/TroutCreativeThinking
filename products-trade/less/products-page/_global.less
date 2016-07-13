@@ -6,6 +6,9 @@ color: black;
 .h1,.h2,.h3,.h4,.h5,.h6{
 	display:block;
 }
+img{
+	max-width: 100%;
+}
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 	margin-top:0;
 	padding-top:0;
@@ -17,8 +20,12 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 h1,.h1{
 	font-size:35px;
 }
-h3,.h3{
+h2,.h2{
 	font-size:22px;
+	margin-bottom: 30px;
+}
+h3,.h3{
+	font-size:18px;	
 }
 h6,.h6{
 	font-size:15px;
@@ -39,6 +46,7 @@ p{
 	}
 }
 .main-section{
+	position: relative;
 	a{
 		color: @section-link-color;
 		text-decoration: underline;
@@ -65,6 +73,12 @@ p{
 		height: 45px;
 		line-height: 41px;
 		text-transform: uppercase;
+		&.btn-icon{
+			background: rgba(0,0,0,0.01);
+			border: none;
+			padding: 0;
+		}
+
 		&.main-button{
 			background: white;
 			color: @main-color;
@@ -447,6 +461,91 @@ MAIN TITLE
 	}
 
 }
+.lightbox{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 10;
+		background: rgba(0,0,0,0.8);
+		padding: 60px 20px 20px;
+		overflow: auto;
+		opacity: 0;
+		display: block;
+		visibility: hidden;
+		.transition(opacity 0.3s, visibility 0s 0.3s;);
+		.lightbox-actions{
+			button{
+				svg{
+					width: 20px;
+					height: 20px;
+					fill: white;
+				}
+			}
+		}
+		.lightbox-actions{
+			max-width: 1200px;
+			margin: 0 auto;
+			text-align: right;
+			button{
+				.appearance(none);
+				outline: none;
+				background: none;
+				border: none;
+				color: white;
+			}
+		}
+		.lightbox-content{
+			max-width: 1200px;
+			margin: 0 auto;
+			background:none;
+			.transform(translateY(-100%));
+			.transition(all 0.3s);
+			.product-images-slider{
+				border-bottom: none;
+			}
+			.product-images-slider-wrap{
+				.zoom{
+					display: none;
+				}
+			}
+			.product-thumbs{
+				text-align: center;
+			}			
+		}
+		.embed-responsive{
+			height: auto;
+		}
+		&.show{
+			display: block;
+			opacity: 1;
+			visibility: visible;
+			.transition(opacity 0.3s, visibility 0s;);
+			.lightbox-content{
+				.transform(translateY(0));
+			}
+		}
+	}
+#video-lightbox{
+		.lightbox-actions{
+			max-width: calc(~"100vh * 1.4");
+			@media (min-width: 1200px){
+				max-width: 1200px;
+			}
+		}
+		.lightbox-content{
+			max-width: calc(~"100vh * 1.4");
+			@media (min-width: 1200px){
+				max-width: 1200px;
+			}
+		}
+		&.show{
+			.embed-responsive{
+				visibility: visible;				
+			}
+		}
+	}
 .progress-button {
 		position: relative;
 		margin: 0 auto; 
@@ -631,38 +730,3 @@ MAIN TITLE
 			.transform(scale(0));
 		}		
 	}
-/*
-Slick slider arrow
-*/
-.slick-next{
-	width: auto;
-	height: auto;
-	right: 20px;
-	background: rgba(255,255,255,0.01);
-	svg{
-		width: 20px;
-		height: 40px;
-		fill: #eaeaea;
-	}	
-	&:before{
-		display: none;
-	}
-}
-.slick-prev{
-	width: auto;
-	height: auto;
-	left: 20px;
-	z-index: 2;
-	background: rgba(255,255,255,0.01);
-	svg{
-		width: 20px;
-		height: 40px;
-		fill: #eaeaea;
-	}
-	&:before{
-		display: none;
-	}
-}
-.slick-dots li button:before{
-	font-size:10px;
-}

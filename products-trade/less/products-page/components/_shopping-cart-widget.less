@@ -87,10 +87,31 @@
 @product-list-title-border: #46abdb;
 @product-list-description-color:#8fbed4;
 
+.main-section{
+	&.widget{
+		padding-top: 80px;
+		padding-right: 0;
+		@media (min-width: @screen-sm){
+			padding-top: 25px;
+			padding-right: 50px;
+		}
+		@media (min-width: @screen-md){
+			//padding-right: 50px;
+			padding-right: 75px;
+		}
+		@media (min-width: @screen-lg){
+			//padding-right: 83px;
+			padding-right: 108px;
+		}
+		@media (min-width: 1400px){
+			padding-right: 0;				
+		}
+	}
+}
 #shopping-cart-widget{
 	background: @widget-content-bg;
 	will-change: transform;
-	z-index: 2;
+	z-index: 10;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -142,7 +163,7 @@
 		.gothamBook;
 		.label{
 			line-height: 66px;
-			padding: 0;one-option
+			padding: 0;
 			display: block;
 			color: @select-color;
 		}
@@ -589,6 +610,13 @@
 				font-style: italic;
 			}
 		}
+		.checkbox-option{
+			.icon{
+				svg{
+					fill: white;
+				}
+			}
+		}
 		.checkbox-options-set{
 			ul{
 				margin-bottom: 0;
@@ -853,9 +881,17 @@
 									height: 26px;
 									fill: @remove-icon-color;
 								}
+								&:hover{
+									svg{
+										fill: @pink;
+									}
+								}
 							}
 						}
 						.item-details{
+							span{
+								display: block;
+							}
 							p{
 								line-height: 1em;
 								margin-bottom:3px;
@@ -1134,6 +1170,11 @@
 								.remove-from-list{
 									svg{
 										fill: @remove-icon-active-color;
+									}
+									&:hover{
+										svg{
+											fill: black;
+										}
 									}
 								}
 							}

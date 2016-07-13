@@ -1,0 +1,25 @@
+@retail-breadcrumb-link-color: #c1c1c1;
+@retail-breadcrumb-link-current-color: #6dc8b6;
+
+.breadcrumb-section{
+	.breadcrumb-inner{
+		.breadcrumbs{
+			li{
+				a{
+					color: @retail-breadcrumb-link-color;
+				}
+				&:after{
+					color: @retail-breadcrumb-link-color;
+				}
+				&:last-child{
+					a{
+						color: @retail-breadcrumb-link-current-color;
+					}
+				}
+				&.active{
+					color: @retail-breadcrumb-link-current-color;
+				}
+			}
+		}
+	}
+}

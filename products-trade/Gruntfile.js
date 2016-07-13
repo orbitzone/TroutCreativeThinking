@@ -46,15 +46,25 @@ module.exports = function(grunt) {
         },
         watch: {
             options: {
-                livereload: true
+                livereload: false
             },
             less: {
-                files: ['less/products-page/*.less', 'javascript/products-page.js'],
+                files: ['less/products-page/**/*.less', 'javascript/products-page.js'],
                 tasks: ['less', 'uglify'],
                 //options: {
                 //  spawn: false //important so that the task runs in the same context
                 //}
             }
+        },
+        svgstore: {
+          options: {
+            prefix : 'shape-', // This will prefix each <g> ID
+          },
+          default : {
+            files: {
+              'templates/images/IconsSvg.svg': ['templates/images/svgs/*.svg'],
+            }
+          }      
         }
     });
     //  grunt.loadNpmTasks('grunt-newer');
@@ -63,5 +73,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-svgstore');
     grunt.registerTask('default', ['copy', 'less', 'watch']);
 };

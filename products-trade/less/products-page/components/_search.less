@@ -1,0 +1,53 @@
+#search{
+	margin-top: 30px;
+	position: relative;
+	.clearfix();
+	input{
+		width: 100%;
+		height: 54px;
+		float: left;
+		font-size: 16px;
+		@media (min-width: @screen-sm){
+			width: 37%;
+			max-width: 296px;
+		}
+	}
+	button{
+		width: 54px;
+		height: 54px;
+		line-height: 50px;
+		text-align: center;
+		background: @search-button-bg;
+		color: @search-button-color;
+		padding: 0;
+		border-color: @search-button-bg;
+		position: absolute !important;
+		top: 0;
+		right: 0;
+		svg{
+			vertical-align: middle;
+			width: 20px;
+			height: 20px;
+			circle,
+			line{
+				stroke: white;
+			}			
+		}
+		@media (min-width: @screen-sm){
+			float: left;	
+			position: relative;		
+			top: inherit;
+			right: inherit;
+			margin-left: -1px;
+			&:hover{
+				background: white;
+				svg{
+					circle,
+					line{
+						stroke: @search-button-bg;
+					}
+				}
+			}
+		}		
+	}
+}

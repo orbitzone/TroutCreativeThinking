@@ -148,29 +148,38 @@ var playerManager = {
     }
   },
   onChangeState: function(event){
-    var id = event.target.c.id;
+    var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t","u", "v", "w", "x", "y", "z" ];
+    var id;
+    for(var i = 0; i < alphabet.length; i++){
+       if(typeof event.target[alphabet[i]].id !== 'undefined'){
+          id = event.target[alphabet[i]].id;
+          break;
+       }
+    }
     var current = this.players[id];
-    if (event.data === YT.PlayerState.ENDED && current.settings.loop == 1) {
-      this.players[current.settings.container].player.playVideo(); 
-    }
-    if (event.data === YT.PlayerState.PLAYING){
-      if(typeof current.settings.onPlaying === 'function'){
-        current.settings.onPlaying();
+    if(typeof current.settings !== 'undefined'){
+      if (event.data === YT.PlayerState.ENDED && current.settings.loop == 1) {
+        this.players[current.settings.container].player.playVideo(); 
       }
-    }
-    if (event.data === YT.PlayerState.PAUSED){
-      if(typeof current.settings.onPaused === 'function'){
-        current.settings.onPaused();            
+      if (event.data === YT.PlayerState.PLAYING){
+        if(typeof current.settings.onPlaying === 'function'){
+          current.settings.onPlaying();
+        }
       }
-    }
-    if (event.data === YT.PlayerState.BUFFERING){
-      if(typeof current.settings.onBuffering === 'function'){
-        current.settings.onBuffering();            
+      if (event.data === YT.PlayerState.PAUSED){
+        if(typeof current.settings.onPaused === 'function'){
+          current.settings.onPaused();            
+        }
       }
-    }
-    if (event.data === YT.PlayerState.ENDED){
-      if(typeof current.settings.onEnded === 'function'){
-        current.settings.onEnded();
+      if (event.data === YT.PlayerState.BUFFERING){
+        if(typeof current.settings.onBuffering === 'function'){
+          current.settings.onBuffering();            
+        }
+      }
+      if (event.data === YT.PlayerState.ENDED){
+        if(typeof current.settings.onEnded === 'function'){
+          current.settings.onEnded();
+        }
       }
     }
   },

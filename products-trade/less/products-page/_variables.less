@@ -1,39 +1,94 @@
+@main-color: #0776aa;
+@images-folder: "../templates/images";
+@bg-dark-blue-stripes-svg: url("@{images-folder}/general/bg-dark-blue-stripes.svg");
+@bg-dark-green-stripes-svg: url("@{images-folder}/general/bg-dark-green-stripes.svg");
+@bg-dark-stripes-svg: url("@{images-folder}/general/bg-dark-stripes.svg");
+@bg-light-stripes-svg: url("@{images-folder}/general/bg-grey-stripes.svg");
+@bg-light-grey-stripes-svg: url("@{images-folder}/general/bg-light-grey-stripes.svg");
+@bg-light-blue-stripes-svg: url("@{images-folder}/general/bg-light-blue-stripes.svg");
+@bg-light-green-stripes-svg: url("@{images-folder}/general/bg-light-green-stripes.svg");
+
+@bg-dark-blue-stripes: #297ba1 url("@{images-folder}/general/bg-dark-blue-stripes.jpg");
+@bg-dark-green-stripes: #80cebe url("@{images-folder}/general/bg-dark-green-stripes.jpg");
+@bg-dark-stripes: #515351 url("@{images-folder}/general/bg-dark-stripes.jpg");
+@bg-light-stripes: #f0eeee url("@{images-folder}/general/bg-grey-stripes.jpg");
+@bg-light-grey-stripes: #f0eeee url("@{images-folder}/general/bg-light-grey-stripes.jpg");
+@bg-light-blue-stripes: #56b3de url("@{images-folder}/general/bg-light-blue-stripes.jpg");
+@bg-light-green-stripes: #c6fcef url("@{images-folder}/general/bg-light-green-stripes.jpg");
+@dropdown-arrow-blue:  url('@{images-folder}/general/dropdown-arrow-blue.svg') no-repeat;
+@dropdown-arrow-white:  url('@{images-folder}/general/dropdown-arrow-white.svg') no-repeat;
+
 @bg-light-grey: 			#fafafa;
 @bg-box-grey: 				#f6f6f6;
 @bg-mid-grey: 				#eaeaea;
 @bg-dark-grey:				#e3e3e3;
+@bg-extra-dark-grey:        #4e4e4e;
 @bg-table-header-grey: 		#f4f4f4;
 @bg-section-header-grey: 	#f4f4f4;
+@bg-green: 					#6dc8b6;
+@bg-orange: 				#eeba90;
 @bg-blue: 					#066794;
-@bg-blue-item:				#0776ab;
+@bg-blue-item:				@main-color;
 @bg-button-grey:			#999999;
+@bg-button-light-green:		#6dc8b6;
 @bg-button-light-blue:		#099ade;
 @bg-button-light-grey:		#999999;
 @bg-button-black:           #333333;
 @text-blue: 				#099ade;
-@link-blue:					#0776aa;
+@text-green: 				#6dc8b6;
+@link-blue:					@main-color;
+@link-green:				#4faa98;
 @text-grey:         		#404040;
 @text-box-light-grey:		#bababa;
 @text-light-grey: 			#b4b4b4;
 @text-mid-grey:   			#999999;
 @text-dark-grey:			#585858;
-@table-border-grey:			#bfbfbf;
-@border-ruler-grey:			#bfbfbf;
-@border-grey:   		    #bdbdbd;
-@border-light-grey:		 	#eaeaea;
+@table-border-grey:			#e4e4e4;
+@border-ruler-grey:			#e4e4e4;
+@border-grey:   		    #e4e4e4;
+@border-light-grey:		 	#e4e4e4;
 @icon-grey:					#bfbfbf;
-@icon-blue:					#0776aa;
+@icon-blue:					@main-color;
+@icon-green:				#6dc8b6;
 @white: 					#ffffff;
 @black-grey:				#333333;
 @black: 					#000000;
 @pink:						#c68989;
+@text-light-blue:			#8fbed4;
+@bg-light-blue:				#56b3de;
+
+@postcode-input-bg: @bg-light-grey-stripes;
+
+
+@add-to-cart-bg: #0776aa;
+@add-to-cart-color: white;
+@add-to-cart-hover-bg: #bfbfbf;
+@add-to-cart-hover-color: #0776aa;
+@add-to-cart-disabled-bg: #bfbfbf;
+@add-to-cart-disabled-color: white;
+
+@call-to-action-bg: #0776aa;
+@call-to-action-color: white;
+@call-to-action-hover-bg: white;
+@call-to-action-hover-color: #0776aa;
+
+@section-link-color: #0776aa;
+@section-link-font-weight: 400;
+@section-link-hover-color:  #0776aa;
 
 @shadow: 0px 6px 33px -10px rgba(0,0,0,0.75);
 
+@checkbox-bg: #f4f4f4;
+@checkbox-border: #e4e4e4;
+@checkbox-checked-bg:#bfbfbf;
+@checkbox-checked-arrow: white;
 
 
+@main-button-bg: @main-color;
+@main-button-color: white;
 
-
+@secondary-button-bg: @bg-button-grey;
+@secondary-button-color: white;
 /*FONTS*/
 .gothamLight{
 	font-family: "Gotham A", "Gotham B";
@@ -70,6 +125,11 @@
 	font-weight: 700;
 }
 
+.caslonBold{
+	font-family: "adobe-caslon-pro", serif;
+	font-style: italic;
+	font-weight: bold;
+}
 //*{outline: solid 1px #f4f4f4;}
 
 

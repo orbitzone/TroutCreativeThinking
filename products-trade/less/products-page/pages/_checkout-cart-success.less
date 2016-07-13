@@ -1,0 +1,77 @@
+@checkout-cart-success-icon-color: #8fbed4; 
+.main-section#checkout-success{
+	.main-heading{
+		padding-top:30px;
+		padding-bottom:30px;
+	}
+	.info{		
+		padding-top: 30px;
+		padding-bottom: 20px;
+	}
+	.big-text{
+		font-size: 35px;
+		.gothamBold;
+	}
+	.reference-title{
+		font-size: 22px;
+		.gothamBold;
+	}
+	.button-section{
+		padding: 10px 0;
+	}
+	.border-bottom{
+		border-bottom:solid 1px @border-light-grey;
+	}
+	.info-wrap{
+		position: relative;
+		text-align: center;
+		@media (min-width: @screen-sm){
+			text-align: left;
+			&.location{
+				padding-left: 100px;
+			}
+			&.mail{
+				padding-left: 120px;
+			}
+		}
+	}
+	.icon{
+		height: 136px;
+		line-height: 136px;
+		svg{
+			display: inline-block;
+			vertical-align: middle;
+			fill: @checkout-cart-success-icon-color;
+		}
+	}
+	.location-icon{
+		padding-top: 30px;
+		svg{
+			display: inline-block;
+			width: 57px;
+			height: 87.2px;
+			fill: @checkout-cart-success-icon-color;
+		}
+		@media (min-width: @screen-sm){
+			padding-top: 0;
+			position: absolute;
+			left: 0;
+			top: 30px;			
+		}
+	}
+	.mail-icon{
+		padding-top: 30px;
+		svg{
+			display: inline-block;
+			width: 98px;
+			height: 60.63px;
+			fill: @checkout-cart-success-icon-color;
+		}
+		@media (min-width: @screen-sm){
+			padding-top: 0;
+			position: absolute;
+			left: 0;
+			top: 30px;			
+		}
+	}
+}

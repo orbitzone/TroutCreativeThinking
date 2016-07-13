@@ -1,0 +1,106 @@
+.postcode-input{
+	background: @postcode-input-bg;
+	background-image: @bg-light-grey-stripes-svg;
+	padding: 20px 0;
+	font-size: 12px;
+	position: relative;
+	line-height: 14px;
+	b{
+		display: block;
+		font-size: 22px;
+		line-height: 1;
+		margin-bottom: 4px;
+	}
+	input{
+		max-width: 150px;
+		height: 38px;
+		float: right;
+		width: 40%;
+		position: absolute;
+		right: 20px;
+		bottom: 0;
+		font-size: 25px;
+		max-width: 120px;
+		text-align: center;
+		padding-top: 0;
+		padding-bottom: 0;
+		&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+			line-height: 36px;
+		  font-size: 16px;
+		  position: relative;
+		  top: -4px;						  
+		}
+		&:-ms-input-placeholder { /* IE 10+ */
+			line-height: 36px;
+		  font-size: 16px;
+		  position: relative;
+		  //top: -4px;						  
+		}
+		&::-moz-placeholder{
+			line-height: 36px;
+		  font-size: 16px;
+		  position: relative;
+		  top: -4px;						  
+		}
+		&:-moz-placeholder { 
+			line-height: 36px;
+		  font-size: 16px;
+		  position: relative;
+		  top: -4px;						  
+		}
+		&::placeholder{
+			line-height: 36px;
+			font-size: 16px;
+			position: relative;
+			top: -4px;							
+		}
+	}
+	.text{
+		width: 50%;
+		float: left;
+		padding-right: 10px;
+		
+		@media (min-width: @screen-sm){
+			line-height: 38px;
+		}
+	}
+	.enter-your-postcode{
+					
+	}
+	.postcode-text-wrap{
+		display: none;		
+	}
+	.postcode-text{
+		font-weight: bold;
+		font-size: 16px;
+		color: @main-color;		
+	}
+	.postcode-link{
+		font-size: 10px;
+		line-height: 10px;
+		a{
+			color: black;
+		}
+	}
+	@media (min-width: @screen-sm){
+		padding: 9px 0;
+		font-size: 15px;
+		.text{
+			width: auto;
+			float: none;
+			b{
+				display: inline;
+				margin-bottom: 0;
+			}
+		}
+		input{
+			position: relative;
+			right: inherit;
+			bottom: inherit;
+			margin-top: 0;
+			margin-left: 18px;
+			width: 100%;
+			float: none;
+		}
+	}
+}

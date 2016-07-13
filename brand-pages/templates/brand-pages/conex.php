@@ -61,7 +61,7 @@
                 <img src="images/brand-pages/conex/video-placeholder.jpg" alt=">B< Press Press Fit System">
               </div>
               <div class="slide-content">
-                <button type="button" class="play" data-video="bum8SI1FsDs">
+                <button type="button" class="play" data-video="_0TBVfMLoc8">
                   <i class="rbp-icon"></i>
                   <!--<span class="label"></span>  -->
                 </button>  
@@ -108,10 +108,10 @@
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image">
           <figure class="image">
-            <!--<a href="#">-->
+            <a href="http://www.reece.com.au/new/pdf/products/Conex-Banninger-technical-guide.pdf">
             <img src="images/brand-pages/conex/b-press.jpg" alt="B Press 15-50mm"/>
             <figcaption>B Press 15-50mm</figcaption>
-            <!--</a>-->
+            </a>
           </figure>          
         </div>
         <!-- End: HTML Widget-->

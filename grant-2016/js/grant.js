@@ -516,7 +516,7 @@ var grant = {
       $('#apply-form .the-form').slideUp();
       $('#apply-form .loading').slideDown();
 
-      setTimeout(function(){
+      setTimeout(function(){ //Please remove this timeout on production, this is to show the loading animation during test.
           $.ajax({
             url: '',
             data: data,

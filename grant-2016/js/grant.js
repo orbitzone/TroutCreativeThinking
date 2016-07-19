@@ -498,6 +498,51 @@ var grant = {
       }
       gotoStep(step);
     });
+    $('.form form').on('submit', function(e){
+      e.preventDefault();
+
+      var data={
+        "first-name": $('#apply-form input[name=first-name]').val(),
+        "last-name": $('#apply-form input[name=last-name]').val(),
+        "account-number": $('#apply-form input[name=account-number]').val(),
+        "email": $('#apply-form input[name=email]').val(),
+        "name-and-location": $('#apply-form textarea[name=name-and-location]').val(),
+        "beneficiaries-of-the-project": $('#apply-form textarea[name=beneficiaries-of-the-project]').val(),
+        "date-of-planned-work": $('#apply-form textarea[name=date-of-planned-work]').val(),
+        "reason-for-the-project": $('#apply-form textarea[name=reason-for-the-project]').val(),
+        "what-is-the-desired-outcome": $('#apply-form textarea[name=what-is-the-desired-outcome]').val()
+      };
+
+      $('#apply-form .the-form').slideUp();
+      $('#apply-form .loading').slideDown();
+
+      setTimeout(function(){
+          $.ajax({
+            url: '',
+            data: data,
+            success: function(){
+              $('#apply-form').find('input[type=text], input[type=email], textarea').each(function(){
+                var name = $(this).attr('name');
+                $('.details-'+name).html($(this).val());
+              });
+              var file = 1;
+              $('#apply-form').find('.upload-filename').each(function(){
+                $('.details-file-'+file).html($(this).html());
+                file=file+1;
+              });
+              $('#apply-form .loading').slideUp();
+              $('#apply-intro').slideUp();
+              $('#apply-form').slideUp();
+              $('#thank-you').slideDown();
+
+            },
+            error: function(){
+
+            }
+          });   
+      }, 2000);         
+      return false;
+    });
   },
 	countdown: function(){
 		var labels = ['days', 'hours', 'minutes', 'seconds'],

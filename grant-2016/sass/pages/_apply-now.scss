@@ -46,6 +46,15 @@
 	input[type=checkbox]{
 		margin-left: 0;
 	}
+	.loading{
+		text-align: center;
+		display: none;
+		svg{
+			path{
+				fill: $light-blue;
+			}
+		}
+	}
 	.steps-list{
 		button{
 			padding: 0;
@@ -161,8 +170,67 @@
 				overflow: hidden;
 				color: $dark-blue;
 				font-size: 16px;
+			}			
+		}
+		#thank-you{
+			display: none;
+			padding: 84px 0 40px;
+			.thank-you-intro{
+				text-align: center;
+				margin-bottom: 63px;				
 			}
-			
-
+			h2{
+				font-size: 52px;
+				line-height: 52px;
+				margin-bottom: 0;
+			}
+			h3{
+				font-size: 32px;
+				line-height: 34px;
+				color: #3f3f3f;
+			}
+			.card{
+				max-width: 587px;
+				margin: 0 auto;
+				@include border-radius(20px);
+				@include box-shadow(0px 0px 20px 0px rgba(0, 0, 0, 0.2)); 				
+			}
+			.thank-you-footer{
+				max-width: 587px;
+				margin: 0 auto;
+				padding: 30px 45px;
+				b{
+					display: block;
+					color: $light-blue;
+					margin-bottom: 20px;
+				}
+			}
+			.card-header{
+				background: #f8f8f8;
+				padding: 32px 45px 15px;
+				.image{
+					svg{
+						display: block;
+						width: 79px;
+						height: 76px;
+					}
+				}
+				.data-item{
+					color: $light-blue;
+					font-weight: bold;
+					margin-bottom: 15px;
+				}
+			}
+			.card-body{
+				padding: 45px;
+				h4{
+					color: $dark-blue;
+					font-size: 16px;
+					line-height: 1;
+				}
+				.data-item{
+					margin-bottom: 37px;
+				}				
+			}
 		}
 }

@@ -111,6 +111,7 @@
 						<div class="upload-input added"><input type="file" name="inputFile[]" class="inputFile"><span class="upload-filename"></span><button type="button" class="upload-button">Browse</button></div>	
 					</div>
 					<div class="field checkbox requiredField">
+						<p>View the <a href="#">Terms and conditions</a></p>
 						<input type="checkbox" name="accept-terms" value="1" class="checkbox" id="accept-terms" required="required" aria-required="true"><label class="right" for="accept-terms">I accept the Terms and Conditions</label>
 					</div>
 				</div>

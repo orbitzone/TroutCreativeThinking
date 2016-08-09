@@ -15,11 +15,12 @@
     <link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-icon-114x114.png">
     <script src='javascript/modernizr-2.6.2.js' type='text/javascript'></script>
+    <link rel="stylesheet" type="text/css" href="css/brand-pages/american-standard.css" />
     <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6958312/662428/css/fonts.css" />
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
     <link rel="stylesheet" type="text/css" href="css/reece-global.css" />
     <link rel="stylesheet" type="text/css" href="css/brand-pages/widgets.css" />
-    <link rel="stylesheet" type="text/css" href="css/brand-pages/american-standard.css" />
+    
   </head>
   <body class="brand-pages">
     <div class="ocmain-wrapper">

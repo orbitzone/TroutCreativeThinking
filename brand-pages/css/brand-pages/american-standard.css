@@ -33,6 +33,9 @@ div.brand-pages .videos {
 div.brand-pages .videos img {
   width: 100%;
 }
+div.brand-pages .tabs-list li {
+  line-height: 100px;
+}
 div.brand-pages .widget-block-five .text {
   font-size: 20px;
 }
@@ -97,8 +100,10 @@ div.brand-pages .designers .widget-html-image .image figcaption {
   transform: translateX(-50%) translateY(-50%);
 }
 div.brand-pages .tabs-content h1 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 40px;
   color: black;
+  font-weight: 700;
 }
 div.brand-pages .tabs-content .intro {
   font-size: 16px;

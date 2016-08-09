@@ -1,5 +1,5 @@
 <div class="meganav-wrap">
-  <div class="meganav retail">
+  <div class="meganav trade">
     <div class="navbar-container">
       <div class="meganav-content">
         <div class="meganav-submenus meganav-section">

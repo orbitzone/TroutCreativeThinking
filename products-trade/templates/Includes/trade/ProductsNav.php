@@ -3,6 +3,7 @@
     <ul class="nav">
       <li class="active">
         <a title="Products" href="/plumbing/products">Products</a>
+        <?php include "MegaNav.php" ?>
       </li>
       <li class="link">
         <a title="DIY Disasters" href="/plumbing/diy-disasters/index.html">DIY Disasters</a>

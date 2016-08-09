@@ -25,7 +25,6 @@ class="">
     <?php include "templates/includes/trade/ProductsNav.php" ?>
     
   <div id="product-pages" data-section="productsCategory" class="trade">
-    <?php include "templates/includes/trade/MegaNav.php" ?>
     <?php include "templates/pages/trade/inner-products-list.php" ?>
   </div>
 

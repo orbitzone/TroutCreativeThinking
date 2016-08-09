@@ -25,7 +25,6 @@ class="">
   <?php include "templates/includes/retail/ProductsNav.php" ?>
   
   <section id="product-pages" data-section="shoppingCart" class="retail">
-    <?php include "templates/includes/retail/MegaNav.php" ?>
     <?php include "templates/pages/retail/inner-shopping-cart.php" ?>
   </section>
 

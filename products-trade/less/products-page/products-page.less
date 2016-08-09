@@ -54,8 +54,17 @@
 			}
 		}
 	}
-	@import "_ie.less";
-	
+	@import "_ie.less";	
+/*THIS NEEDS TO BE ADDED TO THE MANIN REECE TEMPLATE */
+.nav > li{
+	position: initial;
+}
+.subnavbar{
+	position: relative;
+	z-index: 3;
+}
+@import "components/_meganav.less";
+@import "retail/components/_meganav-retail.less";
 #product-pages{
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -70,7 +79,6 @@
 	@import "components/_breadcrumbs.less";
 	@import "components/_postcode-input.less";
 	@import "components/_shopping-cart-widget.less";
-	@import "components/_meganav.less";
 	@import "_product-toolbar.less";
 	
 	@import "pages/_product-detail-main.less";
@@ -89,7 +97,6 @@
 		@import "retail/components/_breadcrumbs-retail.less";
 		@import "retail/components/_postcode-input-retail.less";
 		@import "retail/components/_shopping-cart-widget-retail.less";
-		@import "retail/components/_meganav-retail.less";
 		@import "retail/pages/_product-detail-retail.less";
 		@import "retail/pages/_shopping-cart-page-retail.less";
 		@import "retail/pages/_checkout-cart-page-retail.less";

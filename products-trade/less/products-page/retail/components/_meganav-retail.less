@@ -1,66 +1,71 @@
 @meganav-bg: #969696;
 @meganav-submenu-bg: #858585;
 @meganav-divider-color: #c4c4c4;
-
-.meganav{
-	.meganav-content{
-		&:before{
-			content: " ";
-			display: block;
-			position: absolute;
-			background: @meganav-submenu-bg;
-			top: 0;
-			height: 100%;
-			width: 100%;
-			left: calc(~"50% - 228px");			
-		}
-		.meganav-main{
-			a{
-				border-bottom: 1px solid @meganav-divider-color;				
+.subnavbar ul.nav li{
+	.meganav.retail{
+		.meganav-content{
+			&:before{
+				content: " ";
+				display: block;
+				position: absolute;
+				background: @meganav-submenu-bg;
+				top: 0;
+				height: 100%;
+				width: 100%;
+				left: calc(~"50% - 228px");			
 			}
-			li{
-				&.open{
-					&:before{
-						border-right: 14px solid @meganav-submenu-bg;
+			.meganav-main{
+				a{
+					border-bottom: 1px solid @meganav-divider-color;				
+					font-size: 11px;
+					font-weight:500;
+					letter-spacing: 0.01em;
+				}
+				li{
+					display: block;
+					&.open{
+						&:before{
+							border-right: 14px solid @meganav-submenu-bg;
+						}
 					}
 				}
 			}
-		}
-		.meganav-submenus{
-			background: @meganav-submenu-bg;
-			float: left;
-			width: calc(~"100% - 228px");			
-		}
-	}
-	.meganav-submenu{
-		.meganav-column{
-			width: percentage(1/3);
-			padding: 0 50px;
-			&:first-child{
-				padding-left: 35px;
+			.meganav-submenus{
+				background: @meganav-submenu-bg;
+				float: left;
+				width: calc(~"100% - 228px");			
 			}
 		}
-		a{
-			padding: 16px 0;
-			min-height: 30px;
-			&.with-icon{
-				padding-left: 35px;
+		.meganav-submenu{
+			.meganav-column{
+				width: percentage(1/3);
+				padding: 0 50px;
+				&:first-child{
+					padding-left: 35px;
+				}
 			}
-		}
-		.icon{
-			top: 50%;
-			margin-top: -15px;
-			width: 30px;
-			height: 30px;
-			margin-right: 15px;
-			svg{
-				display: block;
+			a{
+				padding: 16px 0;
+				min-height: 30px;
+				&.with-icon{
+					padding-left: 35px;
+				}
+			}
+			.icon{
+				top: 50%;
+				margin-top: -15px;
 				width: 30px;
 				height: 30px;
-				path{
-					fill: @retail-main-color;
-				}				
+				margin-right: 15px;
+				svg{
+					display: block;
+					width: 30px;
+					height: 30px;
+					path{
+						fill: @retail-main-color;
+					}				
+				}
 			}
-		}
-	}	
+		}	
+	}
 }

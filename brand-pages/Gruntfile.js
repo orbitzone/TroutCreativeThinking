@@ -25,7 +25,8 @@ module.exports = function(grunt) {
               "css/brand-pages/milli.css": "less/brand-pages/milli/milli.less",
               "css/brand-pages/mizu.css": "less/brand-pages/mizu/mizu.less",
               "css/brand-pages/auspex.css": "less/brand-pages/auspex/auspex.less",
-              "css/brand-pages/conex.css": "less/brand-pages/conex/conex.less"
+              "css/brand-pages/conex.css": "less/brand-pages/conex/conex.less",
+              "css/brand-pages/american-standard.css": "less/brand-pages/american-standard/american-standard.less"
           }
         ]
       }

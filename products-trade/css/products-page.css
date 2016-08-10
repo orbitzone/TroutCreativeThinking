@@ -179,7 +179,7 @@ html.ie {
 }
 /*THIS NEEDS TO BE ADDED TO THE MANIN REECE TEMPLATE */
 .nav > li {
-  position: initial;
+  position: static;
 }
 .subnavbar {
   position: relative;

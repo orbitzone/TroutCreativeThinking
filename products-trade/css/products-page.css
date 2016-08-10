@@ -308,9 +308,9 @@ html.ie {
 .subnavbar ul.nav li .meganav .meganav-submenu li {
   width: 100%;
   display: table;
+  position: relative;
 }
 .subnavbar ul.nav li .meganav .meganav-submenu a {
-  position: relative;
   display: table-cell;
   vertical-align: middle;
   color: white;

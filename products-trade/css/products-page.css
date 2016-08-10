@@ -9122,7 +9122,7 @@ MAIN TITLE
   border: 1px solid #eaeaea;
   margin-bottom: 18px;
   overflow: hidden;
-  z-index: 10;
+  z-index: 2;
   position: relative;
 }
 #product-pages .main-section#products-landing .latest-releases-slider .product .product-thumbnail img {

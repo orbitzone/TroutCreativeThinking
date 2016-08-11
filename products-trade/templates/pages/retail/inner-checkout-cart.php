@@ -12,7 +12,7 @@
 	<div class="container-fluid section-container">
 		<div class="row">
 			<!--START OF SIDEBAR SECTION -->
-			<div class="col-sm-5 col-sm-push-7 bg-dark-grey">
+			<div class="col-sm-5 col-sm-push-7 bg-dark-grey-v2">
 				<?php include "templates/includes/retail/checkout-sidebar.php" ?>
 			</div>
 			<!--END OF SIDEBAR SECTION -->

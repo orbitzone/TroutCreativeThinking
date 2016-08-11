@@ -1,0 +1,16 @@
+#codekit editor settings
+codekit-config.json
+ecommerce-ck.js
+
+spring-2015/.sass-cache
+spring-2015/bower_components
+spring-2015/node_modules
+assets/less/node_modules
+smart-irrigation-2015/.sass-cache
+smart-irrigation-2015/node_modules
+smart-irrigation-2015/bower_components
+smart-irrigation-2015-old
+bootstrap3-template/node_modules
+bootstrap3-template/bower_components
+products-trade/node_modules
+products-retail/node_modules

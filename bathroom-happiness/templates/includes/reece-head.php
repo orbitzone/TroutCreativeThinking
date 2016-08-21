@@ -16,4 +16,16 @@
     <script src='js/vendor/jquery.validate.min.js' type='text/javascript'></script>
     <?php if(isset($extra_javascript)){ echo $extra_javascript;}?>
     <script src='js/src/main.js' type='text/javascript'></script>
+    <script type="text/javascript">
+    (function() {
+        var path = '//easy.myfonts.net/v2/js?sid=289419(font-family=Handelson+Three)&key=EtuFBAx1Ax',
+            protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
+            trial = document.createElement('script');
+        trial.type = 'text/javascript';
+        trial.async = true;
+        trial.src = protocol + path;
+        var head = document.getElementsByTagName("head")[0];
+        head.appendChild(trial);
+    })();
+    </script>
   </head>

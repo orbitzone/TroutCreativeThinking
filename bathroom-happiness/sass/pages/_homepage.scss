@@ -1,4 +1,9 @@
+$thp-colour: #c049c5;
 body.homepage {
+  .title-a{
+    @include handelson();
+    text-transform: lowercase;
+  }
   .panel-slideshow{
     height: auto;
     @media (min-width: $screen-md-min) {
@@ -197,7 +202,128 @@ body.homepage {
         
       }
     }
-
+    .panel-hero-happiness{
+      padding: 0;
+      @media (min-width: $screen-sm){
+        background-image: url(../images/homepage/the-happiness-project.jpg);
+        background-size: cover;
+        background-position: center center;
+      }
+      a{
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;        
+      }
+      .border-top{
+        &:before{
+          content: " ";
+          display: block;
+          height: 3px;
+          width: 20%;
+          background: $thp-colour;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+        &:after{
+          content: " ";
+          display: block;
+          height: 3px;
+          width: 20%;
+          background: $thp-colour;
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+      }
+      .borders{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        border-right: 3px solid $thp-colour;
+        border-left: 3px solid $thp-colour;
+        border-bottom: 3px solid $thp-colour;
+      }
+      .text-content{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 100%;
+        @include transform(translateX(-50%));
+      }
+      .the-happiness-project-logo{
+        @include transform(translateY(-21px));
+        svg{
+          width: 160px;
+          height: 66px;
+          fill: white;
+          @media (min-width: $screen-sm){
+            width: 269.4px;
+            height: 111.4px;
+          }
+          @media (min-width: $screen-md){
+            width: 200px;
+            height: 84px;
+          }
+          @media (min-width: $screen-lg){
+            width: 269.4px;
+            height: 111.4px;
+          }
+        }
+      }
+      .image{
+        @media (min-width: $screen-sm){
+          display: none;
+        }
+      }
+      .content-wrap{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 50px 30px;        
+      }
+      .intro-text{
+        padding: 0;
+        margin: 0;
+        font-weight: 500;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-size: 18px;
+        line-height: 19px;
+        background: none;
+        max-width: 270px;
+        -webkit-background-clip: initial;
+        -webkit-text-fill-color: initial;
+      }
+      .arrow-link{
+        .arrow-link-label{
+          display: inline-block;
+          background: $thp-colour;
+          margin: 0;
+          @include transform(translateY(50%));
+          color: white;
+          padding: 0 40px;
+          line-height: 40px;
+          height: 40px;
+          font-size: 16px;
+          letter-spacing: 0.12em;
+          @media (min-width: $screen-md){
+            padding: 0 20px;
+          }
+          @media (min-width: $screen-lg){
+            padding: 0 40px;
+          }
+        }
+      }
+    }
     .panel-link {
       display: block;
       overflow: hidden;
@@ -227,6 +353,10 @@ body.homepage {
           }
         }
         .text-overlay{
+          .text-overlay-line-0{
+            @include animation(exit-left-green 0.5s forwards ease-out);
+            color: $green;
+          }
           .text-overlay-line-1{
             @include animation(exit-right-green 0.5s forwards ease-out);
             color: $green;
@@ -264,7 +394,55 @@ body.homepage {
         background-size: cover;
       }      
     }
-
+    .panel-luxe-on-a-budget{
+      height: 300px;
+      @media (min-width: $screen-md-min) {
+        height: 347px;
+      }
+      @media (min-width: $screen-lg-min){
+        height: 337px;        
+      }
+      .text-overlay{
+        height: 100%;
+        margin: 0;
+        @include transform(translateY(-50%));
+      }
+      .text-overlay-image{
+        margin-bottom: 15px;
+        img{
+          width: 116px;
+          margin: 0 auto;
+        }
+      }
+      .title-a{
+        font-size:  45px;
+        line-height: 19px;
+        margin-bottom: 5px;
+      }
+      .background-div {
+        height: 100%;
+        background: url("../images/homepage/luxe-on-a-budget.jpg");
+        background-size: cover;
+      }  
+      &:hover{
+        .text-overlay{
+          .text-overlay-line-0{
+            color: white;
+          }
+          .text-overlay-line-1{
+            color: white;
+          }
+          .text-overlay-line-2{
+            color: $thp-colour;
+          }
+        }
+        .arrow-link{
+          i{
+            color: white;
+          }
+        }
+      }   
+    }
     .panel-shop-products {
       height: 285px;
       .background-div {
@@ -274,6 +452,54 @@ body.homepage {
       }
       @media (min-width: $screen-lg-min){
         height: 275px;         
+      }
+    }
+    .panel-crushing-on-tapware {
+      position: relative;
+      height: 300px;
+      .text-overlay{
+        top: 40px;
+        @include transform(none);
+        .title-a{
+          font-size: 30px;
+          line-height: 20px;
+          color: black;
+        }
+        .text-overlay-line-2{
+          color: $thp-colour;
+        }
+      }
+      .arrow-link{
+        line-height: 1;
+        i{
+          color: black;
+        }
+      }
+      .background-div {
+        height: 100%;
+        background: url("../images/homepage/crushing-on-tapware.jpg");
+        background-size: cover;
+      }
+      @media (min-width: $screen-lg-min){
+        height: 275px;         
+      }
+      &:hover{
+        .text-overlay{
+          .text-overlay-line-0{
+            color: white;
+          }
+          .text-overlay-line-1{
+            color: white;
+          }
+          .text-overlay-line-2{
+            color: #c049c5;
+          }
+        }
+        .arrow-link{
+          i{
+            color: white;
+          }
+        }
       }
     }
 
@@ -290,7 +516,9 @@ body.homepage {
       color: $white;
       text-transform: uppercase;
       @include transform(translateY(-50%));
-      
+      .text-overlay-line-0 {
+        @include transition(0.5s color ease-out);
+      }      
       .text-overlay-line-1 {
         font-size: 14px;
         line-height: 14px;

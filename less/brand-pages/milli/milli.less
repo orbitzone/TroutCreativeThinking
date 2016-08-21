@@ -1,0 +1,382 @@
+@import "../widgets/_mixins.less";
+@import "../widgets/_variables.less";
+@import "../../../bower_components/bootstrap/less/variables.less";
+@import "_variables.less";
+
+
+div.brand-pages{
+	text-align: center;
+	color: @grey;
+	font-size: 16px;
+	line-height: 2;
+	font-weight: 300;
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  h1,h2,h3,h4,h5,h6,a,button,input,textarea,select,p{
+		font-family: "Gotham A", "Gotham B";
+		-webkit-font-smoothing: antialiased;
+	  -moz-osx-font-smoothing: grayscale;	
+	  line-height: 1.4;
+	  @media (min-width: @screen-sm){
+			line-height: 1.5;
+		}
+	}
+	h2{
+		font-size: 28px;
+		line-height: 1;
+		@media (min-width: @screen-sm){
+			font-size: 36px;
+		}
+	}
+	h3{
+		font-size: 28px;
+		letter-spacing: 0.07em;
+		text-transform: uppercase;
+		line-height: 1;
+		@media (min-width: @screen-sm){
+			font-size: 36px;
+		}
+	}
+	.rte{
+		text-align: center;
+	}
+	a{
+		color: black;
+	}
+	.half{
+		margin-bottom: 30px;	
+	}
+	.bg-grey{
+		.widget-slider{
+			background: @lightGrey;
+			padding: 30px 0;
+			margin: 0;
+		}
+	}
+	.widget-link{
+		text-transform: uppercase;
+		font-weight: 300;
+		padding: 5px 20px;
+		margin-top: 10px;
+		text-transform: uppercase;
+	}
+		
+	.shop-the-range{
+		margin-bottom: 0;
+		.image{
+			margin-bottom: 0;
+			img{
+				width: 100%;
+			}
+		}
+		.row{
+			position: relative;
+		}
+		.content{
+			color: white;
+			.widget-html-image{
+				padding: 40px;
+				h3{
+					text-transform: uppercase;
+					letter-spacing: 0.07em;
+				}
+			}
+			.widget-link{
+				color: white;
+				border-color: white;
+				font-weight: 300;
+				padding: 5px 20px;
+				margin-top: 15px;
+			}
+			@media (min-width: @screen-md){
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				width: 50%;
+				&.col-md-pull-6{
+					left: 0;
+				}
+				.transform(translateY(-50%));
+			}
+		}
+	}
+	.bg-green{
+		.row{
+			background: @bg-green;
+		}
+	}
+	.bg-light-grey{
+		.row{
+			background: @bg-grey;
+		}
+	}
+	.bg-purple{
+		.row{
+			background: @bg-purple;
+		}
+	}
+	.bg-dark-grey{
+		.row{
+			background: @bg-dark-grey;
+		}
+	}
+	.intro{
+		h2{
+			color: black;
+			font-size: 36px;
+			text-transform: uppercase;
+			padding-top: 80px;
+		}
+		.rte{
+			max-width: 970px;
+			margin: 0 auto;
+			padding: 0 20px;
+			@media (min-width: @screen-sm){
+				padding: 0 80px;
+			}
+		}
+	}
+	.homewares-accessories{
+		margin-top: 10px;
+		margin-bottom: 0;
+		@media (min-width: @screen-md){
+			color: white;
+		}
+		.image{
+			margin-bottom: 0;
+		}
+		.widget-link{
+			color: @grey;
+			border-color: @grey;
+			@media (min-width: @screen-md){
+				color: white;
+				border-color: white;
+			}
+		}
+		.widget-html-image{
+			position: relative;
+			.rte{
+				padding: 40px 20px;
+				@media (min-width: @screen-md){
+					position: absolute;
+			    top: 0;
+			    left: 6%;
+			    width: 385px;
+			    text-align: left;
+			    padding: 0;
+			    padding-top: 6%;
+			  }
+			}
+		}
+	}
+	.hey-inox{
+		margin-top: 10px;
+		@media (min-width: @screen-sm){
+			color: white;
+		}
+		.image{
+			margin-bottom: 0;
+		}
+		.widget-link{
+			color: @grey;
+			border-color: @grey;
+			@media (min-width: @screen-sm){
+				color: white;
+				border-color: white;
+			}
+		}
+		.widget-html-image{
+			position: relative;
+			h3{
+				color: white;
+				max-width: 150px;
+				margin: 0 auto;
+				margin-bottom: -40px;
+				.transform(translateY(-150%));
+				@media (min-width: @screen-sm){
+					color: inherit;
+					margin-bottom: 25px;
+					max-width: 100%;
+					.transform(translateY(0));
+				}
+			}
+			.rte{
+				position: relative;
+				padding: 0px 40px 40px;
+				@media (min-width: @screen-sm){
+					position: absolute;
+			    top: 50%;
+			    left: 50%;
+			    width: 33%;
+			    margin: 0 -16.5%; 
+			    text-align: center;
+			    padding: 40px 0;
+			    .transform(translateY(-50%));
+			  }
+			}
+		}
+	}
+	.reading-material-intro{
+		h3{
+			padding-top: 30px;
+			color: black;
+		}
+	}
+	.reading-material{
+		max-width: 600px;
+		margin: 0 auto;
+		.widget-html-image{
+			margin-bottom: 60px;
+		}
+		.image{
+			img{
+				max-width: 200px;
+				@media (min-width: @screen-sm){
+					max-width: 100%;
+				}
+			}
+		}
+	}
+	.video-intro{
+		margin-bottom: 0;
+		h3{
+			color: black;
+		}
+		.widget-html-image{
+			padding-bottom: 1px;
+			padding-top: 60px;
+			background: @lightGrey;
+			padding-bottom: 40px;
+			&:after{
+				display: block;
+				content: " ";
+				max-width: 138px;
+				margin: 0 auto;
+				margin-top: 25px;
+				height: 1px;
+				background: #888;
+			}
+		}
+		.rte{
+			padding: 0 40px;
+		}
+	}
+	.video{
+		.widget-video{
+			background: @lightGrey;
+		}
+		.video-slides{
+			padding: 10px 5.5% 60px;
+		}
+		.play{
+			.rbp-icon{
+				background: url(../../images/brand-pages/milli/fa-play-circle.svg);
+				width: 116px;
+				height: 116px;
+				opacity: 0.9;
+				display: block;
+				&:before{
+					display: none;
+					content: "";
+				}
+			}
+		}
+	}
+	.magic-metallics{
+		.image{
+			img{
+				@media (min-width: @screen-md){
+					max-width: 700px;
+				}
+			}
+		}
+	}
+	.magic-metallics-intro,
+	.daily-inspiration{
+		h3{
+			padding-top: 30px;
+			color: black;
+		}
+	}
+	.find-inspiration{
+		h4{
+			letter-spacing: 0.07em;
+			max-width: 200px;
+			margin: 0 auto;
+			color: black;
+			text-transform: uppercase;
+			margin-bottom: 10px;
+		}
+		.widget-html-image{
+			margin-bottom: 30px;
+		}
+	}
+	.widget-slider{
+		.slick-slider{
+			.slick-next,
+			.slick-prev{
+				&:before{
+					font-size: 80px;
+				}
+			}
+			.slick-prev{
+				left: 0;
+				.transform(translateY(-50%) translateX(-50%));
+			}
+			.slick-next{
+				right: 0;
+				.transform(translateY(-50%) translateX(50%));
+			}
+			.slick-prev:before
+			{
+			    content: 'h';
+			}
+			[dir='rtl'] .slick-prev:before
+			{
+			    content: 'h';
+			}
+			.slick-next:before
+			{
+			    content: 'i';
+			}
+			[dir='rtl'] .slick-next:iefore
+			{
+			    content: 'i';
+			}
+		}
+		&.carousel{
+			h3{
+				color: #a5a5a5;
+				margin-bottom: 30px;
+				line-height: 1;
+				text-transform: uppercase;
+				letter-spacing: 0.07em;
+				font-size: 24px;
+			}
+			.slick-slider{
+				max-width: 100%;
+			}
+			.slick-slide{
+				padding: 0 28px;
+
+				.text{
+					color: @grey;
+				}
+			}
+		}
+	}
+	.widget-video-tabs{
+		.video{
+			.description{
+				line-height: 1;
+				color: black;
+				font-size: 14px;
+			}
+		}
+		.rbp-icon{
+			&:before{
+				content: "g";
+			}
+		}
+	}
+}

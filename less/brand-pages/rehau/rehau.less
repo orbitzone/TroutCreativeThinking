@@ -1,0 +1,322 @@
+@import "../widgets/_mixins.less";
+@import "../widgets/_variables.less";
+@import "../../../bower_components/bootstrap/less/variables.less";
+@import "_variables.less";
+
+
+div.brand-pages{
+	text-align: left;
+	color: @grey;
+	font-size: 16px;
+	line-height: 1.8;
+	font-weight: 300;
+	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;	    
+	@media (min-width: @screen-sm){
+		font-size: 20px;
+	}
+	h2{
+		color: black;
+		position: relative;
+		font-size: 33px;
+		margin-bottom: 31px;
+		&:after{
+			position: absolute;
+			bottom: -18px;
+			left: 0;
+			content: " ";
+			display: block;
+			height: 4px;
+			width: 21px;
+			background: black;
+		}
+		span{
+			font-weight: 300;
+		}
+		strong{
+			display: block;
+			font-size: 28px;
+			margin-top: 10px;
+		}
+	}
+	h3{
+		color: white;
+		font-size: 25px;
+		margin-bottom: 4px;
+		a{
+			color: white;
+
+		}
+	}
+	h4{
+		color: @green;
+		position: relative;
+		font-size: 25px;
+		font-weight: 300;
+		&:after{
+			content: " ";
+			display: block;
+			width: 10px;
+			height: 3px;
+			background: white;
+			position: absolute;
+			bottom: -10px;
+			left: 0;
+		}
+	}
+	p{
+		margin: 0 0 24px;
+    letter-spacing: 0.05px;
+	}
+	.container{
+		margin-bottom: 30px;
+		@media (min-width: @screen-sm){
+			margin-bottom: 60px;
+		}
+	}
+	.padding-less{
+		.row{
+			margin: 0 auto;
+			.col-sm-6,
+			.col-sm-4,
+			.col-sm-3,
+			.col-sm-12,
+			.col-sm-2{
+				padding: 0;
+			}
+		}
+	}
+	.bg-grey{
+		.widget-video{
+			padding: 10px;
+			@media (min-width: @screen-sm){
+				padding: 60px;
+			}
+			background: @lighterGrey;
+		}
+	}
+	.rte{
+		text-align: left;
+	}
+	.widget-logo{
+		background: @darkGrey;
+		padding-bottom: 40px;
+	}
+	.widget-video{
+		.rbp-icon{
+			&:before{
+				content: "c";
+			}
+		}
+		.slick-slider{
+			.slide-video{
+				background: black;
+				button.close{
+					i.rbp-close-icon{
+						color: white;
+					}
+				}				
+			}
+		}
+	}
+	.intro-text{
+		color: #7d8c93;
+		font-size: 18px;
+	}
+	.case-studies-title{
+		margin-bottom: 30px;
+	}
+	.intro{
+		@media (min-width: @screen-sm){
+			padding-top: 40px;
+		}
+		h2{
+			font-size: 33px;
+			line-height: 1.1;
+			@media (min-width: @screen-sm){
+				padding-left: 20px;
+				&:after{
+					left: 20px;
+				}
+			}
+			@media (min-width: @screen-md){
+				padding-left: 120px;
+				&:after{
+					left: 120px;
+				}
+			}
+			@media (min-width: @screen-lg){
+				padding-left: 173px;
+				&:after{
+					left: 173px;
+				}
+			}
+		}
+	}
+	.intro-copy{
+		color: #7d8c93;
+		padding-right: 40px;
+		padding-top: 26px;
+		.rte{
+	    font-size: 18px;
+	    line-height: 1.6;
+	    @media (min-width: @screen-sm){
+	    	padding-right: 64px;
+	    }
+		}
+	}
+	.product-profiles-title{
+		margin-bottom: 30px;
+	}
+	.product-profiles{
+		margin-bottom: 0;
+		.row{
+			margin-left: -27px;
+			margin-right: -27px;
+			.col-sm-6{
+				padding-right: 27px;
+				padding-left: 27px;
+			}
+		}
+		.product-profile{
+			margin-bottom: 25px;
+			@media (min-width: @screen-sm){
+				margin-bottom: 54px;
+			}
+			.image{
+				margin-bottom: 0;
+				figcaption{
+					.transform(none);
+					top: 20px;
+					left: 0;
+					text-align: right;
+					font-size: 25px;
+					padding-right: 20px;
+				}
+			}
+			&.first{
+				.image{
+					margin-bottom: 0;
+					figcaption{
+						.transform(none);
+						top: 20px;
+						left: 0;
+						text-align: left;
+						padding-right: 0;
+						padding-left: 20px;
+					}
+				}	
+			}
+		}
+	}
+	.case-studies{
+		margin-bottom: 0;
+		.row{
+			margin-left: -27px;
+			margin-right: -27px;
+			.col-sm-6{
+				padding-right: 27px;
+				padding-left: 27px;
+			}
+		}
+		.case-study{
+			padding: 64px 40px 14px 40px;
+			background: @darkGrey;
+			color: white;
+			margin-bottom: 60px;
+			.button{
+				color: @green;
+				font-size: 45px;
+			}
+			p{
+		    font-size: 18px;
+		    @media (min-width: @screen-lg){
+		    	padding-right: 180px;
+		  	}
+		    line-height: 1.5;
+		    margin-bottom: 10px;
+			}
+		}
+	}
+	
+	.main-video{
+		.play{
+			i{
+				display: block;
+				width: (148px/2);
+				height: (148px/2);
+				background-size: (148px/2) (148px/2);
+				background-image: url(../../images/brand-pages/rehau/play.png);
+				@media (min-width: @screen-md){
+					width: 148px;
+					height: 148px;
+					background-size: 148px 148px;
+				}
+				&:before{
+					display: none;
+					content: " ";
+				}
+			}
+			.label{
+				display: none;
+			}
+		}
+	}
+	.manufacturing-title{
+		margin-bottom: 30px;
+	}
+	.manufacturing{
+		.row{
+			margin-left: -8px;
+			margin-right: -8px;
+			.col-xs-4{
+				padding: 0 8px;
+			}
+		}		
+	}
+	.bottom-links{
+		.slide-front{
+			background: @green;
+			.play{
+				i{
+					color: white;
+					font-size: 40px;
+				}
+			}
+			.label{
+				font-size: 20px;
+			}
+		}
+		.image{
+			figcaption{
+				font-size: 20px;
+				font-weight: 500;
+				i{
+					font-size: 30px;
+				}
+			}
+		}
+		.widget-html-image{
+			.rbp-icon{
+				&:before{
+					content: "\6c";
+				}
+			}
+		}
+	}
+	.button{
+		color: @green;
+		display: block;
+		.transform(scale(1));
+		.transition(0.5s all ease-out);
+		i{
+			font-size: 30px;
+			vertical-align: middle;
+		}
+		&:hover{
+			text-decoration: none;
+			.transform(scale(1.02));
+		}
+	}
+}

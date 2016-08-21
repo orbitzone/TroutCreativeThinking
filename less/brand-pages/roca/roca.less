@@ -1,0 +1,257 @@
+@import "../widgets/_mixins.less";
+@import "../widgets/_variables.less";
+@import "../../../bower_components/bootstrap/less/variables.less";
+@import "_variables.less";
+
+
+div.brand-pages{
+	text-align: center;
+	color: @grey;
+	font-size: 16px;
+	line-height: 2;
+	font-weight: 300;
+	overflow-x: hidden;
+	.container{
+		@media (min-width: 768px) {
+			padding-right: 0;
+			padding-left: 0;
+		}
+	}
+	h2{
+		font-size: 40px;
+		line-height: 1.2;
+		color: black;
+	}
+	h3{
+		font-size: 23px;
+		line-height: 1.2;
+		color: black;
+	}
+	h4{
+		font-size: 16px;
+		line-height: 1.2;
+		color: black;	
+	}
+
+	.bg-grey{
+		background: @greyBackground;
+	}
+	.rte{
+		text-align: center;
+	}
+	a{
+		color: black;
+	}
+	.half{
+		margin-bottom: 30px;	
+	}
+	.bathroom-innovation-video{
+		padding: 40px;
+		margin-bottom: 0;
+		.rte{
+			text-align: left;
+			font-size: 20px;
+			line-height: 1.5;
+		}
+		.widget-video{
+			margin-bottom: 20px;
+		}
+		h3{
+			margin-bottom: 10px;
+		}
+	}
+	.brochure{
+		background: @blue;
+		padding: 30px 0;
+		.widget-link{
+			color: white;
+			border-color: white;
+			font-weight: 500;
+		}
+	}
+	.designers-header{
+		.rte{
+			font-size: 20px;
+			line-height: 1.5;	
+		}		
+	}
+	.roca-design-centre{
+		padding: 104px 60px 60px;
+		h2{
+			color: @blue;
+		}
+		.rte{
+			font-size: 20px;
+			line-height: 1.5;
+		}
+		.widget-html-image{
+			margin-bottom: 40px;
+		}
+		.widget-slider{
+			overflow: inherit;
+			margin: 0;
+			.slick-slider{
+				.text{
+					.transform(none);
+					left: 20px;
+					bottom: 20px;
+					font-size: 16px;
+					color: white;
+					top: inherit;
+				}
+				.slick-next{
+					right: -25px;
+				}
+				.slick-prev{
+					left: -25px;
+				}
+			}
+		} 
+	}
+	.widget-block-five{
+		.text{
+			font-size: 20px;
+		}
+	}
+	.widget-video{
+		overflow: hidden;
+		.rbp-icon{
+			color: white;
+			&:before{
+				content: "g";
+			}
+		}
+		.slick-slider{
+			.slick-slide{
+				&.slide-video{
+					background: black;
+				}
+				button.close{
+					i{
+						color: white;
+					}
+				}
+				.play{
+					&:hover{
+						.text,
+						.label{
+							text-decoration: underline;
+						}
+					}
+				}	
+			}
+		}		
+	}
+	.designers-header{
+		margin-bottom: 0;
+		.rte{
+			max-width: 620px;
+			margin: 0 auto;
+		}
+		.widget-html-image{
+			margin-bottom: 50px;
+		}
+	}
+	.product-range{
+		.widget-link{
+			text-transform: none;
+		}
+	}
+	.designers{
+		.widget-html-image{
+			padding: 0 20px;
+			margin-bottom: 30px;
+			.rte{
+				padding: 0 20px;
+				margin: 0 auto;
+				margin-top: 30px;
+				color: @grey;
+				font-weight: 300;
+				font-size: 19px;
+				line-height: 1.5;
+			}
+			.image{
+				img{
+					width: 100%;
+				}
+				figcaption{
+					max-width: 260px;
+					margin: 0 auto;
+					left: 30px;
+					bottom: 20px;
+					top: inherit;
+					text-align: left;					
+					font-size: 39px;
+					.transform(none);
+				}
+			}			
+		}
+	}
+	.widget-slider{
+		.slick-slider{
+			.slick-next,
+			.slick-prev{
+				&:before{
+					font-size: 80px;
+				}
+			}
+			.slick-prev{
+				left: 0;
+				.transform(translateY(-50%) translateX(-50%));
+			}
+			.slick-next{
+				right: 0;
+				.transform(translateY(-50%) translateX(50%));
+			}
+			.slick-prev:before
+			{
+			    content: 'h';
+			}
+			[dir='rtl'] .slick-prev:before
+			{
+			    content: 'h';
+			}
+			.slick-next:before
+			{
+			    content: 'i';
+			}
+			[dir='rtl'] .slick-next:iefore
+			{
+			    content: 'i';
+			}
+		}
+		&.carousel{
+			.widget-link{
+				text-transform: none;
+				padding: 8px 10px;
+			}
+			.slick-slide{
+				padding: 0 38px;
+			}
+		}
+	}
+	.widget-video-tabs{
+		.intro{
+			.rte{
+				font-size: 20px;
+				line-height: 1.5;
+				color: black;
+			}
+		}
+		.rbp-icon{
+			&:before{
+				content: "g";
+			}
+		}
+		.moodboard{
+			margin-bottom: 40px;
+		}
+		.video{
+			.description{
+				line-height: 1;
+				color: black;
+				font-size: 14px;
+			}
+		}
+	}
+}

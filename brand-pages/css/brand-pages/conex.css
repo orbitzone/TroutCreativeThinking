@@ -2,7 +2,7 @@
 /* Big button Widget */
 div.brand-pages {
   text-align: center;
-  color: #7d8c93;
+  color: #1d1d1d;
   font-size: 18px;
   line-height: 27px;
   font-weight: 300;
@@ -28,9 +28,6 @@ div.brand-pages .container-fluid {
   div.brand-pages .container-fluid {
     margin-bottom: 60px;
   }
-}
-div.brand-pages .rte {
-  text-align: left;
 }
 div.brand-pages .half {
   margin-bottom: 30px;
@@ -97,8 +94,49 @@ div.brand-pages .products .row .col-sm-6 {
   padding: 0 25px;
 }
 div.brand-pages .products h3 {
-  font-size: 34px;
-  margin-bottom: 50px;
+  font-size: 30px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+div.brand-pages .products h4 {
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 1em;
+}
+div.brand-pages .products p {
+  color: #1d1d1d;
+  font-weight: 300;
+}
+div.brand-pages .products .odd {
+  display: inline-block;
+  height: 270px;
+  text-align: right;
+}
+div.brand-pages .products .even {
+  margin: 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+div.brand-pages .products .ctaBox {
+  margin-top: 40px;
+  height: 30px;
+  width: 145px;
+  background-color: transparent;
+  outline: 1px solid #dcdcdc;
+  outline-offset: 10px;
+}
+div.brand-pages .products .ctaBox .viewBtn {
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+div.brand-pages .products .widget-html-image .image {
+  width: 575px;
+  height: 330px;
+  border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  border: 1px solid #dcdcdc;
 }
 div.brand-pages .products .widget-html-image .image figcaption {
   top: inherit;
@@ -107,6 +145,7 @@ div.brand-pages .products .widget-html-image .image figcaption {
   font-weight: bold;
 }
 div.brand-pages .downloads {
+  border: solid 1px red;
   margin-bottom: 0;
   text-align: center;
 }
@@ -120,6 +159,9 @@ div.brand-pages .downloads .row .col-sm-4 {
 div.brand-pages .downloads .rte {
   text-align: center;
   font-weight: bold;
+}
+div.brand-pages .downloads .rte .img {
+  min-height: 400px;
 }
 div.brand-pages .downloads .rbp-icon {
   background: transparent url(../../images/brand-pages/conex/download.svg) no-repeat;

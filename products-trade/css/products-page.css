@@ -2167,7 +2167,7 @@ MAIN TITLE
   font-size: 14px;
   line-height: 1em;
   font-weight: 500;
-  color: #c1c1c1;
+  color: #2c2c2c;
 }
 #product-pages .breadcrumb-section .breadcrumb-inner .breadcrumbs li a:hover {
   text-decoration: underline;
@@ -2181,7 +2181,7 @@ MAIN TITLE
   font-family: "Gotham A", "Gotham B";
   font-style: normal;
   font-weight: 400;
-  color: #c1c1c1;
+  color: #2c2c2c;
   font-weight: 500;
 }
 #product-pages .breadcrumb-section .breadcrumb-inner .breadcrumbs li:last-child a {

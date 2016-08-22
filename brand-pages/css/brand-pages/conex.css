@@ -109,7 +109,7 @@ div.brand-pages .products p {
 }
 div.brand-pages .products .odd {
   display: inline-block;
-  height: 270px;
+  height: 330px;
   text-align: right;
 }
 div.brand-pages .products .even {
@@ -131,11 +131,10 @@ div.brand-pages .products .ctaBox .viewBtn {
   text-transform: uppercase;
 }
 div.brand-pages .products .widget-html-image .image {
-  width: 575px;
   height: 330px;
-  border-radius: 3px 3px 3px 3px;
-  -moz-border-radius: 3px 3px 3px 3px;
-  -webkit-border-radius: 3px 3px 3px 3px;
+  border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
   border: 1px solid #dcdcdc;
 }
 div.brand-pages .products .widget-html-image .image figcaption {
@@ -145,7 +144,8 @@ div.brand-pages .products .widget-html-image .image figcaption {
   font-weight: bold;
 }
 div.brand-pages .downloads {
-  border: solid 1px red;
+  background-color: #F0F0F0;
+  padding: 20px 0 20px 0;
   margin-bottom: 0;
   text-align: center;
 }
@@ -155,6 +155,7 @@ div.brand-pages .downloads .row {
 }
 div.brand-pages .downloads .row .col-sm-4 {
   padding: 0 8px;
+  background-color: #F0F0F0;
 }
 div.brand-pages .downloads .rte {
   text-align: center;

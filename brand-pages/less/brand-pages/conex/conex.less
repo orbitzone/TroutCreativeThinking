@@ -13,12 +13,12 @@ div.brand-pages{
 	overflow-x: hidden;
 	font-family: 'Neue Helvetica W01', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 	-webkit-font-smoothing: antialiased; 
-  font-smoothing: antialiased; 
-  text-rendering: optimizeLegibility;
+	font-smoothing: antialiased; 
+	text-rendering: optimizeLegibility;
 
-  h1,h2,h3,h4,h5,h6{
-  	color: @titles;
-  }
+	h1,h2,h3,h4,h5,h6{
+		color: @titles;
+	}
 	.container-fluid{
 		margin-bottom: 30px;
 		@media (min-width: 768px){
@@ -68,7 +68,7 @@ div.brand-pages{
 				}
 			}
 			button.close{
-				i{
+				i {
 					color: @titles;
 				}
 			}
@@ -95,7 +95,7 @@ div.brand-pages{
 				padding: 0 25px;
 			}
 		}
-		h3{
+		h3 {
 			font-size: 30px;
 			margin-bottom: 60px;
 			text-align: center;
@@ -112,7 +112,7 @@ div.brand-pages{
 
 		.odd {
 			display:inline-block;
-			height:270px;
+			height:330px;
 			text-align: right;
 		}
 		.even {
@@ -122,12 +122,12 @@ div.brand-pages{
 		}
 
 		.ctaBox {
-				margin-top: 40px;
-			    height:30px;
-			    width:145px;
-			    background-color:transparent;
-			    outline: 1px solid #dcdcdc;
-			    outline-offset:10px;
+			margin-top: 40px;
+			height:30px;
+			width:145px;
+			background-color:transparent;
+			outline: 1px solid #dcdcdc;
+			outline-offset:10px;
 
 			.viewBtn {
 				text-align: center;
@@ -136,15 +136,15 @@ div.brand-pages{
 			}
 		}		
 
-		.widget-html-image{
+		.widget-html-image {
 			.image {
-				width:575px;
+				// width:575px;
 				height:330px;
-				border-radius: 3px 3px 3px 3px;
-					-moz-border-radius: 3px 3px 3px 3px;
-					-webkit-border-radius: 3px 3px 3px 3px;
+				border-radius: 2px 2px 2px 2px;
+				-moz-border-radius: 2px 2px 2px 2px;
+				-webkit-border-radius: 2px 2px 2px 2px;
 				border: 1px solid #dcdcdc; 
-			
+
 				figcaption{
 					top: inherit;
 					bottom: 30px;
@@ -155,7 +155,8 @@ div.brand-pages{
 		}
 	}		
 	.downloads { 
-		border: solid 1px red;
+		background-color: #F0F0F0;
+		padding: 20px 0 20px 0;
 		margin-bottom: 0;
 		text-align: center;
 		.row {
@@ -163,13 +164,15 @@ div.brand-pages{
 			margin-right: -8px;
 			.col-sm-4{
 				padding: 0 8px;
+				background-color: #F0F0F0;
 			}
 		}
+
 		.rte {
 			text-align: center;
 			font-weight: bold;
-				.img {
-					min-height: 400px;
+			.img {
+				min-height: 400px;
 			}
 		}
 		.rbp-icon{
@@ -197,59 +200,59 @@ div.brand-pages{
 			}
 		}
 		.widget-big-button{
-				background: @bigButtonBg;
-				text-align: center;
-				padding: 40px;
-				margin-bottom: 10px;
-				.rte{
-					margin-bottom: 0 !important;
+			background: @bigButtonBg;
+			text-align: center;
+			padding: 40px;
+			margin-bottom: 10px;
+			.rte{
+				margin-bottom: 0 !important;
+			}
+			h3{
+				color: @bigButtonColor;
+			}
+			a{
+				display: block;
+				color: @bigButtonColor;
+				.text{
+					text-transform: @bigButtonTextTransform;
+					font-weight: bold;
+					line-height: 1;
+					@media (min-width: @screen-sm){
+						font-size: @bigButtonFontSize;
+					}
 				}
-				h3{
-					color: @bigButtonColor;
+				.icon{
+					margin-bottom: 15px;
+					i{
+						.transition(all .3s ease-out);
+						.transform(translateY(0));
+					}
+					&:after{
+						.transition(all .3s ease-out);
+						.transform(scale(1));
+						content: " ";
+						display: block;
+						background: transparent url(../../images/brand-pages/conex/shadow.png) no-repeat;
+						width: 76px;
+						height: 14px;
+						margin: 0 auto;
+						margin-top: 15px;
+					}
 				}
-				a{
-					display: block;
-					color: @bigButtonColor;
+				&:hover{
 					.text{
-						text-transform: @bigButtonTextTransform;
-						font-weight: bold;
-						line-height: 1;
-						@media (min-width: @screen-sm){
-							font-size: @bigButtonFontSize;
-						}
+						text-decoration: underline;
 					}
 					.icon{
-						margin-bottom: 15px;
 						i{
-							.transition(all .3s ease-out);
-							.transform(translateY(0));
+							.transform(translateY(-10px));
 						}
 						&:after{
-							.transition(all .3s ease-out);
-							.transform(scale(1));
-							content: " ";
-					    display: block;
-					    background: transparent url(../../images/brand-pages/conex/shadow.png) no-repeat;
-					    width: 76px;
-					    height: 14px;
-					    margin: 0 auto;
-					    margin-top: 15px;
-						}
-					}
-					&:hover{
-						.text{
-							text-decoration: underline;
-						}
-						.icon{
-							i{
-								.transform(translateY(-10px));
-							}
-							&:after{
-								.transform(scale(0.75));
-							}
+							.transform(scale(0.75));
 						}
 					}
 				}
 			}
+		}
 	}
 }

@@ -1,0 +1,280 @@
+@import "../widgets/_mixins.less";
+@import "../widgets/_variables.less";
+@import "../../../bower_components/bootstrap/less/variables.less";
+@import "_variables.less";
+
+div.brand-pages{
+	text-align: center;
+	color: @body;
+	font-size: 16px;
+	line-height: 27px;
+	font-weight: 300;
+	letter-spacing: -0.01em;
+	overflow-x: hidden;
+	font-family: 'Neue Helvetica W01', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	-webkit-font-smoothing: antialiased; 
+	font-smoothing: antialiased; 
+	text-rendering: optimizeLegibility;
+
+	h1,h2,h3,h4,h5,h6{
+		color: @titles;
+	}
+	.container-fluid {
+		/*border: solid 1px;*/
+		margin-bottom: 30px;
+		@media (min-width: 768px){
+			margin-bottom: 60px;
+		}
+	}
+	.half {
+		margin-bottom: 30px;	
+	}
+
+	.intro {
+		max-width: 900px;
+		h3 {
+			font-size: 28px;
+			margin: 0 auto;
+			margin-bottom: 30px;
+			text-transform: uppercase;
+			text-align: center;
+			@media (min-width: @screen-sm){
+				max-width: 100%;
+				text-align: left;				
+			}
+			@media (min-width: @screen-md){
+				padding-left: 34%;
+			}
+		}
+		p {
+			line-height: 200%;
+			text-align: center;
+			max-width: 900px;
+			margin: 0 auto;
+			margin-bottom: 10px;
+			@media (min-width: @screen-sm){
+				text-align: center;
+			}
+		}
+	}
+	.walraven-video{
+		.widget-video{
+			.slide-front{
+				&:before{
+					content: " ";
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background: rgba(0,0,0,0.5);
+				}
+			}
+			button.close{
+				i {
+					color: @titles;
+				}
+			}
+			.play{
+				.rbp-icon{
+					background: transparent url(../../images/brand-pages/walraven/play.svg) no-repeat;
+					width: 117px;
+					height: 117px;
+					display: block;
+					&:before{
+						content: "";
+					}
+				}
+			}
+		}
+	}
+	.products{
+		margin-bottom: 50px;
+		.row {
+			margin-left: -25px;
+			margin-right: -25px;
+			.col-sm-12,
+			.col-sm-6{
+				padding: 0 25px;
+			}
+		}
+		h3 {
+			font-size: 30px;
+			margin-bottom: 60px;
+			text-align: center;
+			text-transform: uppercase;
+		}
+		h4 {
+			text-transform: uppercase;
+			color: #313131;
+			margin-top: 1em;
+			font-size: 18px;
+		}
+		p {
+			color: #313131;
+			font-weight: 300;
+			font-size: 16px;
+		}
+
+		.left {
+			float: left;
+		}
+
+		.right {
+			float: right;
+		}
+
+		.odd {
+			position: relative;
+			height:330px;
+			text-align: right;
+		}
+		.even {
+			position: relative;
+			height:330px;
+			text-align: left;
+		}
+		.inner {
+		    vertical-align: middle;
+		    position: absolute;
+		    left: 0;
+		    width: 100%;
+		    top: 50%;
+		    transform: translateY(-50%);
+		}
+
+		.ctaBox {
+			margin-top: 40px;
+			height:30px;
+			width:145px;
+			background-color:transparent;
+			outline: 1px solid #dcdcdc;
+			outline-offset:10px;
+
+			.viewBtn {
+				text-align: center;
+				font-weight: 700;
+				text-transform: uppercase;
+			}
+		}		
+
+		.widget-html-image {
+			.image {
+				/*width:575px;*/
+				
+				border-radius: 2px 2px 2px 2px;
+				-moz-border-radius: 2px 2px 2px 2px;
+				-webkit-border-radius: 2px 2px 2px 2px;
+				border: 1px solid #dcdcdc; 
+
+				figcaption{
+					top: inherit;
+					bottom: 30px;
+					font-size: 25px;
+					font-weight: bold;
+				}
+			}
+		}
+	}		
+	.downloads { 
+		background-color: #F0F0F0;
+		padding: 20px 0 20px 0;
+		margin-bottom: 0;
+		text-align: center;
+		.row {
+			margin-left: -8px;
+			margin-right: -8px;
+			.col-sm-4{
+				padding: 0 8px;
+				background-color: #F0F0F0;
+			}
+		}
+
+		.rte {
+			text-align: center;
+			font-weight: bold;
+			.img {
+				min-height: 400px;
+			}
+		}
+		.rbp-icon{
+			background: transparent url(../../images/brand-pages/walraven/download.svg) no-repeat;
+			width: 75px;
+			height: 75px;
+			display: inline-block;
+			&:before{
+				content: "";
+			}
+		}
+		.download{
+			.rbp-icon{
+				background-image: url(../../images/brand-pages/walraven/download.svg);
+			}
+		}
+		.videos{
+			.rbp-icon{
+				background-image: url(../../images/brand-pages/walraven/video.svg);
+			}
+		}
+		.website{
+			.rbp-icon{
+				background-image: url(../../images/brand-pages/walraven/website.svg);
+			}
+		}
+		.widget-big-button{
+			background: @bigButtonBg;
+			text-align: center;
+			padding: 40px;
+			margin-bottom: 10px;
+			.rte{
+				margin-bottom: 0 !important;
+			}
+			h3{
+				color: @bigButtonColor;
+			}
+			a{
+				display: block;
+				color: @bigButtonColor;
+				.text{
+					text-transform: @bigButtonTextTransform;
+					font-weight: bold;
+					line-height: 1;
+					@media (min-width: @screen-sm){
+						font-size: @bigButtonFontSize;
+					}
+				}
+				.icon{
+					margin-bottom: 15px;
+					i{
+						.transition(all .3s ease-out);
+						.transform(translateY(0));
+					}
+					&:after{
+						.transition(all .3s ease-out);
+						.transform(scale(1));
+						content: " ";
+						display: block;
+						background: transparent url(../../images/brand-pages/walraven/shadow.png) no-repeat;
+						width: 76px;
+						height: 14px;
+						margin: 0 auto;
+						margin-top: 15px;
+					}
+				}
+				&:hover{
+					.text{
+						text-decoration: underline;
+					}
+					.icon{
+						i{
+							.transform(translateY(-10px));
+						}
+						&:after{
+							.transform(scale(0.75));
+						}
+					}
+				}
+			}
+		}
+	}
+}

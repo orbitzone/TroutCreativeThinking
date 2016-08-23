@@ -1,5 +1,5 @@
 <!--START BREAD CRUMB -->
-<div class="breadcrumb-section bg-mid-grey section">
+<div class="breadcrumb-section bg-green section">
 	<div class="breadcrumb-inner">
 		<ul class="breadcrumbs">
 			<li>Checkout</li>
@@ -9,7 +9,7 @@
 <!--END BREAD CRUMB -->
 <div class="main-section" id="checkout-success">
 	<!--START PAGE TITLE -->
-	<div class="section page-title bg-light-grey">
+	<div class="section page-title main-retail-color;">
 		<div class="container-fluid section-container">
 			<div class="row">
 				<div class="col-xs-12">

@@ -4,7 +4,8 @@
 <!--[if IE 8]>     <html class="no-js ie ie8 lt-ie10 lt-ie9" lang="en"> <![endif]-->
 <!--[if IE 9]>     <html class="no-js ie ie9 lt-ie10" lang="en"> <![endif]-->
 <!--[if IE 10]>    <html class="no-js ie ie10" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js" lang="en"> <!--<![endif]-->
 <head>
   <?php include "templates/includes/ProductsMeta.php" ?>
   <title>Reece Products</title>

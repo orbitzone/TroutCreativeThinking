@@ -1,5 +1,5 @@
 <!--START BREAD CRUMB -->
-<div class="breadcrumb-section bg-mid-grey section">
+<div class="breadcrumb-section bg-green section">
 	<div class="breadcrumb-inner">
 		<ul class="breadcrumbs">
 			<li>Shopping Cart</li>
@@ -13,7 +13,7 @@
 	<div class="section shopping-cart-list">
 		<form id="shopping-cart-form" action="retail-checkout-cart.php">
 			<!--START SHOPPING CART OPTIONS -->
-			<div class="shopping-cart-options bg-light-grey">
+			<div class="shopping-cart-options main-retail-color;">
 				<div class="container-fluid section-container">
 					<div class="row">
 						<div class="col-sm-5 ">

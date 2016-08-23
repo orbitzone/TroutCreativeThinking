@@ -248,54 +248,53 @@
           </div>
           <!-- End: Video Widget-->
         </div>
-
       </div>
     </div>
-  </div>
 
-  <!-- DOWNLOADS SECTION -->  
-  <div class="container-fluid downloads">
-    <div class="row">
-      <div class="col-xs-12">
-        <div class="widget-html-image">
-          <div class="rte">
-            <h3><!--<a href="#">-->DOWNLOAD<!--</a>--></h3>
+        <!-- DOWNLOADS SECTION -->  
+        <div class="container-fluid downloads">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="widget-html-image">
+                <div class="rte">
+                  <h3><!--<a href="#">-->DOWNLOAD<!--</a>--></h3>
+                </div>
+              </div>
+              <!-- End: HTML Widget-->
+            </div>
           </div>
+          
+          <div class="row">
+            <div class="col-sm-4 ">
+              <!-- Begin: HTML Widget-->  
+              <div class="widget-html-image">
+                <figure class="image">
+                  <a href="#"><!-- Link Optional-->
+                    <img src="images/brand-pages/conex/download-thumb1.jpg" height="240px" alt="download">
+                  </a>
+                </figure>
+              </div>
+            </div>
+             <div class="col-sm-4 ">
+              <div class="widget-html-image">
+                <figure class="image">
+                  <a href="#"><!-- Link Optional-->
+                    <img src="images/brand-pages/conex/download-thumb2.jpg" height="240px" alt="download">
+                  </a>
+                </figure>
+              </div>
+            </div>
+             <div class="col-sm-4 ">
+              <div class="widget-html-image">
+              <figure class="image">
+                <a href="#"><!-- Link Optional-->
+                  <img src="images/brand-pages/conex/download-thumb3.jpg" height="240px" alt="download">
+                </a>
+              </figure>
+            </div>
+          </div>
+          <!-- End: HTML Widget-->
         </div>
-        <!-- End: HTML Widget-->
       </div>
     </div>
   </div>
-
- <div class="container-fluid downloads">
-    <div class="row">
-      <div class="col-xs-12 ">
-        <!-- Begin: HTML Widget-->  
-        <div class="widget-html-image">
-          <figure class="image">
-            <a href="#"><!-- Link Optional-->
-              <img src="images/brand-pages/conex/download-thumb1.jpg" height="240px" alt="download">
-            </a>
-          </figure>
-        </div>
-
-        <div class="widget-html-image">
-          <figure class="image">
-            <a href="#"><!-- Link Optional-->
-              <img src="images/brand-pages/conex/download-thumb2.jpg" height="240px" alt="download">
-            </a>
-          </figure>
-        </div>
-
-          <figure class="image">
-            <a href="#"><!-- Link Optional-->
-              <img src="images/brand-pages/conex/download-thumb3.jpg" height="240px" alt="download">
-            </a>
-          </figure>
-        </div>
-      </div>
-        <!-- End: HTML Widget-->
-    </div>
-  </div>
-</div>
-</div>

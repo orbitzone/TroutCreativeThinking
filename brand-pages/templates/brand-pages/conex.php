@@ -271,7 +271,7 @@
             <div class="slides" data-slides-to-show="3" data-slides-to-scroll="3">
               <div class="slide">
                 <figure class="image">
-                  <a href="http://www.reece.com.au/assets/brands/820000/laufen-bathroom-products.pdf" target="_blank">
+                  <a href="http://www.reece.com.au/new/pdf/products/conex-high-temperature-fittings.pdf" target="_blank">
                     <img src="images/brand-pages/conex/download-thumb1.jpg" alt="Brochure 1">  
                   </a>
                 </figure>

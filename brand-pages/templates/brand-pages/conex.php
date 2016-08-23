@@ -5,7 +5,7 @@
       <header role="banner">
         <h1>
           <a href="/">
-            <img src="images/brand-pages/conex/conex-banner.jpg" alt="conex"><!-- Set the image width-->
+            <img src="images/brand-pages/conex/conex-banner-resized.jpg" alt="conex"><!-- Set the image width-->
           </a>
         </h1> 
       </header>
@@ -84,78 +84,70 @@
   </div>
 </div>
 
-<div class="container-fluid products">
+<div class="container-fluid products-intro">
   <div class="row">
     <div class="col-sm-12">
       <!-- Begin: HTML Widget-->  
       <div class="widget-html-image">
-<!-- If no image dont show
-<figure class="image">
-<a href="#">
-<img />
-</a>
-</figure>
--->
-<div class="rte">
-  <h3><!--<a href="#">-->PRODUCT PROFILES<!--</a>--></h3>
-</div>
-</div>
-<!-- End: HTML Widget-->
-</div>
-</div>
-<div class="row">
-  <div class="col-sm-6">
-    <!-- Begin: HTML Widget-->  
-    <div class="widget-html-image">
-      <figure class="image">
-        <img src="images/brand-pages/conex/parallax-bpress-500x450.png" width="300px" alt="B Press 15-50mm"/>
-      </figure>          
-    </div>
-    <!-- End: HTML Widget-->
-  </div>
-  <div class="col-sm-6">
-    <!-- Begin: HTML Widget-->
-    <div class="even"> 
-      <h4>B PRESS 15-50mm</h4>
-      <p>Conex Bänninger is an ISO 9000 quality &gt;B&lt; Press is a versatile press fitting system for use with hard, half hard or soft 
-        copper tube pro assured company, which assures you the very best in quality. 
-        Conex Bänningerviding a secure, life long, leak-proof joint.</p>
-        <div class="ctaBox">
-          <div class="viewBtn">view range</div>
+        <div class="rte">
+          <h2><!--<a href="#">-->PRODUCT PROFILES<!--</a>--></h2>
         </div>
       </div>
       <!-- End: HTML Widget-->
     </div>
   </div>
 </div>
-<!-- ./end row -->
-
 <div class="container-fluid products">
   <div class="row">
     <div class="col-sm-6">
       <!-- Begin: HTML Widget-->  
-      <div class="odd">
-        <h4>B Press XL 65-100mm</h4>
-        <p>&gt;B&lt; Press XL has only two internal parts, the grip ring and the O-ring. 
-          Both parts have an internal diameter larger than the tube, which allows for easy tube insertion and pre press leak indication.</p>
-          <div class="ctaBox odd">
-            <div class="viewBtn odd">view range</div>
-          </div>
-        </div>
+      <div class="widget-html-image">
+        <figure class="image">
+          <img src="images/brand-pages/conex/parallax-bpress-500x450.png" width="300px" alt="B Press 15-50mm"/>
+        </figure>          
       </div>
       <!-- End: HTML Widget-->
-      <div class="col-sm-6">
-        <!-- Begin: HTML Widget-->
-        <div class="widget-html-image">
-          <figure class="image">
-            <img src="images/brand-pages/conex/parallax-bpress-XL-500x450.png" width="300px" alt="B Press 15-50mm"/>
-          </figure>
-        </div>
-        <!-- End: HTML Widget-->
-      </div>
     </div>
-  </div>
-  <!-- ./end row -->
+    <div class="col-sm-6">
+      <!-- Begin: HTML Widget-->
+      <div class="widget-html-image">
+        <div class="rte">
+          <h3>B PRESS 15-50mm</h3>
+          <p>Conex Bänninger is an ISO 9000 quality &gt;B&lt; Press is a versatile press fitting system for use with hard, half hard or soft copper tube pro assured company, which assures you the very best in quality. 
+        Conex Bänningerviding a secure, life long, leak-proof joint.</p>
+          <p><a href="#">View range</a></p>
+        </div>  
+      </div>
+      <!-- End: HTML Widget-->    
+    </div>
+  </div><!-- ./end row -->
+</div>
+<div class="container-fluid products align-right">
+  <div class="row">
+    <div class="col-sm-6 col-sm-push-6">
+      <!-- Begin: HTML Widget-->
+      <div class="widget-html-image">
+        <figure class="image">
+          <img src="images/brand-pages/conex/parallax-bpress-XL-500x450.png" width="300px" alt="B Press 15-50mm"/>
+        </figure>
+      </div>
+      <!-- End: HTML Widget-->
+    </div>
+    <div class="col-sm-6 col-sm-pull-6">
+      <!-- Begin: HTML Widget-->
+      <div class="widget-html-image">
+        <div class="rte">
+          <h3>B Press XL 65-100mm</h3>
+          <p>&gt;B&lt; Press XL has only two internal parts, the grip ring and the O-ring. 
+        Both parts have an internal diameter larger than the tube, which allows for easy tube insertion and pre press leak indication.</p>
+          <p><a href="#">View range</a></p>
+        </div>  
+      </div>
+    <!-- End: HTML Widget-->
+    </div>    
+  </div><!-- ./end row -->
+</div>
+  
 
   <div class="container-fluid products">
     <div class="row">
@@ -170,21 +162,31 @@
       </div>
       <div class="col-sm-6">
         <!-- Begin: HTML Widget-->
-        <div class="even"> 
-          <h4>Maxipro</h4>
-          <p>MaxiPro press fittings use a high-quality HNBR O-ring that forms a secure leak-free joint when pressed. 
+        <div class="widget-html-image">
+          <div class="rte">
+            <h3>Maxipro</h3>
+            <p>MaxiPro press fittings use a high-quality HNBR O-ring that forms a secure leak-free joint when pressed. 
             The innovative lead-in edge design grips the pipe to aid installation while helping to protect the O-ring 
             from damage or displacement.</p>
-            <div class="ctaBox">
-              <div class="viewBtn">view range</div>
-            </div>
+            <p><a href="#">View range</a></p>
+          </div>  
+        </div>
+        <!-- End: HTML Widget-->
+      </div>
+    </div><!-- ./end row -->
+  </div>
+  
+  <div class="container-fluid separator">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="widget-html-image">
+          <div class="rte">
+            <hr>
           </div>
-          <!-- End: HTML Widget-->
         </div>
       </div>
     </div>
-    <!-- ./end row -->
-
+  </div>
     <!-- left side video 1 of 2 -->
     <div class="container-fluid conex-video">
       <div class="row">
@@ -199,7 +201,7 @@
                 <div class="slide-content">
                   <button type="button" class="play" data-video="_0TBVfMLoc8">
                     <i class="rbp-icon"></i>
-                    <!--<span class="label"></span>  -->
+                    <span class="label">Conex Bänninger - Installation process</span>
                   </button>  
                 </div>
               </div>
@@ -230,7 +232,7 @@
                 <div class="slide-content">
                   <button type="button" class="play" data-video="_0TBVfMLoc8">
                     <i class="rbp-icon"></i>
-                    <!--<span class="label"></span>  -->
+                    <span class="label">Conex Bänninger - Specialist o-ring</span>
                   </button>  
                 </div>
               </div>
@@ -251,50 +253,78 @@
       </div>
     </div>
 
-        <!-- DOWNLOADS SECTION -->  
-        <div class="container-fluid downloads">
-          <div class="row">
-            <div class="col-xs-12">
-              <div class="widget-html-image">
-                <div class="rte">
-                  <h3><!--<a href="#">-->DOWNLOAD<!--</a>--></h3>
+    <!-- DOWNLOADS SECTION -->  
+    <div class="container-fluid downloads">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="widget-html-image">
+            <div class="rte">
+              <h2>Download</h2>              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <!-- Begin: Slider/Carousel Widget Start-->
+          <div class="widget-slider carousel">
+            <div class="slides" data-slides-to-show="3" data-slides-to-scroll="3">
+              <div class="slide">
+                <figure class="image">
+                  <a href="http://www.reece.com.au/assets/brands/820000/laufen-bathroom-products.pdf">
+                    <img src="images/brand-pages/conex/download-thumb1.jpg" alt="Brochure 1">  
+                  </a>
+                </figure>
+                <div class="text">
+                 <a href="http://www.reece.com.au/assets/brands/820000/laufen-bathroom-products.pdf" class="widget-link">Download</a>
                 </div>
               </div>
-              <!-- End: HTML Widget-->
-            </div>
-          </div>
-          
-          <div class="row">
-            <div class="col-sm-4 ">
-              <!-- Begin: HTML Widget-->  
-              <div class="widget-html-image">
+              <div class="slide">
                 <figure class="image">
-                  <a href="#"><!-- Link Optional-->
-                    <img src="images/brand-pages/conex/download-thumb1.jpg" height="240px" alt="download">
+                  <a href="http://www.reece.com.au/assets/brands/820000/Laufen-SaphirKeramik.pdf">
+                    <img src="images/brand-pages/conex/download-thumb2.jpg" alt="Brochure 2">  
                   </a>
                 </figure>
+                <div class="text">
+                  <a href="http://www.reece.com.au/assets/brands/820000/Laufen-SaphirKeramik.pdf" class="widget-link">Download</a>
+                </div>
               </div>
-            </div>
-             <div class="col-sm-4 ">
-              <div class="widget-html-image">
+              <div class="slide">
                 <figure class="image">
-                  <a href="#"><!-- Link Optional-->
-                    <img src="images/brand-pages/conex/download-thumb2.jpg" height="240px" alt="download">
+                  <a href="http://www.reece.com.au/assets/brands/820000/kartell-by-laufen-bathroom.pdf">
+                    <img src="images/brand-pages/conex/download-thumb3.jpg" alt="Brochure 3">  
                   </a>
                 </figure>
-              </div>
+                <div class="text">
+                  <a href="http://www.reece.com.au/assets/brands/820000/kartell-by-laufen-bathroom.pdf" class="widget-link">Download</a>
+                </div>
+              </div>        
             </div>
-             <div class="col-sm-4 ">
-              <div class="widget-html-image">
-              <figure class="image">
-                <a href="#"><!-- Link Optional-->
-                  <img src="images/brand-pages/conex/download-thumb3.jpg" height="240px" alt="download">
-                </a>
-              </figure>
-            </div>
-          </div>
-          <!-- End: HTML Widget-->
+          </div>    
+          <!-- End: Slider/Carousel Widget-->   
+        </div>
+      </div>        
+    </div>
+    
+    <div class="container-fluid footer-ad">
+      <div class="row">
+        <div class="col-xs-12">
+          <!-- Begin: HTML Widget-->
+        <div class="widget-html-image">
+          <figure class="image">
+            <img src="images/brand-pages/conex/conex-footer.jpg" width="1200px" alt="B Press 15-50mm"/>
+          </figure> 
+          <div class="rte">
+            <h3>Conexbanninger.com.au</h3>
+            <p>Want to find out more about the<br>Conex Bänninger range?</p>
+            <p><a href="http://conexbanninger.com.au">Visit website</a></p>
+          </div>  
+        </div>
+        <!-- End: HTML Widget-->
         </div>
       </div>
     </div>
+
+
   </div>
+</div>

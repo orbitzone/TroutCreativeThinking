@@ -29,8 +29,9 @@
                   <div class="image">
                     <img src="images/homepage/the-happiness-project.jpg" alt="The Happiness project">
                   </div>
-                  <div class="content-wrap">
-                    <a href="inspiration.php">
+                  <a href="inspiration.php">
+                    <div class="content-wrap">
+                      <div class="content-inner">
                       <span class="border-top"></span>
                       <span class="borders"></span>
                       <div class="the-happiness-project-logo">
@@ -67,8 +68,9 @@
                             <div class="arrow-link-label">Get Started</div>                        
                         </div>
                       </div>
-                    </a>
-                  </div>                  
+                    </div>   
+                    </div>               
+                  </a>
                 </div>
               </div>
               <!-- left col (find inspiration img) -->
@@ -273,11 +275,13 @@
                 <a href="http://www.reece.com.au/bathrooms/3d-bathroom-planner" class="nav-link">
                   <div class="nav-block planning">
                   </div>
-                  <div class="nav-block-label">Start Planning</div>
+                  <div class="nav-block-label">
+                    Bathroom Envy
+                  </div>
                   <div class="overlay">
                     <div class="overlay-text">
-                      <div class="overlay-text-1">Start</div>
-                      <div class="overlay-text-2">Planning</div>  
+                      <div class="overlay-text-1">Bathroom</div>
+                      <div class="overlay-text-2">envy</div>  
                       <div class="arrow-link">
                           <span class="arrow-link-icon"><i class="arrow-link-icon icon-arrow-right"></i></span>
                       </div>

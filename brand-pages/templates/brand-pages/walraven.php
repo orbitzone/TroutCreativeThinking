@@ -50,7 +50,7 @@
                                 <img src="images/brand-pages/walraven/video-thumb.png" alt=">Walraven">
                             </div>
                             <div class="slide-content">
-                                <button type="button" class="play" data-video="#">
+                                <button type="button" class="play" data-video="pXKQL_McEc0?">
                                     <i class="rbp-icon"></i>
                                     <!--<span class="label"></span>  -->
                                 </button>
@@ -111,7 +111,7 @@
                             making
                             installation quicker and easier.</p>
 
-                        <p><a href="#">View range</a></p>
+                        <p><a href="http://www.reece.com.au/plumbing/products/clips_%26_pipe_supports/rubber_lined_clips">View range</a></p>
                     </div>
                 </div>
                 <!-- End: HTML Widget-->
@@ -136,7 +136,7 @@
                             a starQuick&reg;
                             clip to suit most jobs.</p>
 
-                        <p><a href="#">View range</a></p>
+                        <p><a href="http://www.reece.com.au/plumbing/products/clips_%26_pipe_supports/rubber_lined_clips">View range</a></p>
                     </div>
                 </div>
             </div>
@@ -177,7 +177,7 @@
                             features a
                             range of accessories that are pre-assembled to save up to 40% on installation time.</p>
 
-                        <p><a href="#">View range</a></p>
+                        <p><a href="http://www.reece.com.au/plumbing/products/clips_%26_pipe_supports/rapidrail">View range</a></p>
                     </div>
                 </div>
                 <!-- End: HTML Widget-->
@@ -199,7 +199,7 @@
                             pre-assembled to save up to
                             40% on installation time.</p>
 
-                        <p><a href="#">View range</a></p>
+                        <p><a href="http://www.reece.com.au/plumbing/products/clips_%26_pipe_supports/rapidstrut">View range</a></p>
                     </div>
                 </div>
             </div>
@@ -240,7 +240,7 @@
                             applications, with a broad range of fixing accessories designed to make your job quicker and
                             easier.</p>
 
-                        <p><a href="#">View range</a></p>
+                        <p><a href="http://www.reece.com.au/plumbing/products/clips_%26_pipe_supports/fixing_accessories">View range</a></p>
                     </div>
                 </div>
                 <!-- End: HTML Widget-->
@@ -408,7 +408,7 @@
                         </a>
                     </figure>
                     <div class="brochure" data-width="174">
-                        <a href="#" class="widget-link" tabindex="0">Download</a>
+                        <a href="http://www.reece.com.au/new/pdf/products/walraven-brochure.pdf" class="widget-link" tabindex="0">Download</a>
                     </div>
                 </div>
             </div>

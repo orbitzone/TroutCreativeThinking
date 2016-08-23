@@ -19,7 +19,7 @@
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image">
           <div class="rte">
-            <h3>Hole Saw Systems</h3>            
+            <h2>Hole Saw Systems</h2>
           </div>
         </div>
         <!-- End: HTML Widget-->
@@ -88,25 +88,7 @@
   </div>
 
 
-  <div class="container-fluid products">
-    <div class="row">
-      <div class="col-sm-12">
-        <!-- Begin: HTML Widget-->  
-        <div class="widget-html-image">
-<!-- If no image dont show
-<figure class="image">
-<a href="#">
-<img />
-</a>
-</figure>
--->
-<div class="rte">
-  <h3><!--<a href="#">-->Feature products<!--</a>--></h3>
-</div>
-</div>
-<!-- End: HTML Widget-->
-</div>
-</div>
+    <div class="container-fluid products">
 <div class="row">
   <div class="col-sm-6">
     <!-- Begin: HTML Widget-->  
@@ -119,14 +101,12 @@
   </div>
   <div class="col-sm-6">
     <!-- Begin: HTML Widget-->
-    <div class="even">
-      <div class="inner">
-        <h4>MORSE 11 PIECE PLUMBER’S HOLE SAW KIT</h4>
+    <div class="widget-html-image">
+      <div class="rte">
+        <h3>MORSE 11 PIECE PLUMBER’S HOLE SAW KIT</h3>
         <p>The ultimate hole saw kit features 8 Advanced Edge hole saw sizes, a Fast Adapt Universal Arbor, 
           8 adaptors to suit, 3 pilot drills and a handy carry case. </p>
-          <div class="ctaBox left">
-            <div class="viewBtn">view range</div>
-          </div>
+          <p><a href="#">View product</a></p>
         </div>
       </div>
       <!-- End: HTML Widget-->
@@ -140,15 +120,13 @@
   <div class="row">
     <div class="col-sm-6">
       <!-- Begin: HTML Widget-->  
-      <div class="odd">
-        <div class="inner">
-          <h4>Fast Adapt Starter Pack</h4>
+      <div class="widget-html-image">
+        <div class="rte">
+          <h3>Fast Adapt Starter Pack</h3>
           <p>This starter pack kit comes with a Fast Adapt Universal Arbor and 5 adaptors to suit. The Fast 
             Adapt system saves you time by allowing you to change hole saws in seconds. They are interchangeable 
             with any hole saw and feature a precision locking system for safety and ease of use.</p>
-            <div class="ctaBox right">
-              <div class="viewBtn ">view product</div>
-            </div>
+            <p><a href="#">View product</a></p>
           </div>
         </div>
       </div>
@@ -179,15 +157,13 @@
       </div>
       <div class="col-sm-6">
         <!-- Begin: HTML Widget-->
-        <div class="even">
-          <div class="inner">
-          <h4>The Advanced Edge Bi-Metal Hole Saw</h4>
+        <div class="widget-html-image">
+          <div class="rte">
+          <h3>The Advanced Edge Bi-Metal Hole Saw</h3>
           <p>Engineered with the strongest tooth profile in the market, Advanced Edge delivers unrivalled performance and 
             durability for long life. Boasting more teeth and a deeper gullet in the cutting action increases material 
             removal and results in more efficient cutting.</p>
-            <div class="ctaBox left">
-              <div class="viewBtn">view product</div>
-            </div>
+              <p><a href="#">View product</a></p>
           </div>
           </div>
           <!-- End: HTML Widget-->

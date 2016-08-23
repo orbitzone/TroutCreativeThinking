@@ -82,8 +82,12 @@ div.brand-pages .feature-icons .widget-html-image {
   }
 }
 div.brand-pages .feature-icons .widget-html-image .image {
-  /*border: 1px solid #b3b4b7;*/
   overflow: hidden;
+  border: 0px solid #dcdcdc;
+}
+div.brand-pages .widget-html-image .image {
+  overflow: hidden;
+  border: 1px solid #dcdcdc;
 }
 div.brand-pages .morse-video .widget-video .slide-front:before {
   content: " ";
@@ -106,9 +110,11 @@ div.brand-pages .morse-video .widget-video button.close i {
   color: #000000;
 }
 div.brand-pages .morse-video .widget-video .play .rbp-icon {
-  background: transparent url(../../images/brand-pages/morse/play.svg) no-repeat;
+  background: url(../../images/brand-pages/morse/play-btn.png) no-repeat;
+  display: block;
   width: 117px;
   height: 117px;
+  background-size: 117px 117px;
   display: inline-block;
 }
 div.brand-pages .morse-video .widget-video .play .rbp-icon:before {
@@ -147,12 +153,12 @@ div.brand-pages .products .right {
 }
 div.brand-pages .products .odd {
   position: relative;
-  height: 330px;
+  height: 335px;
   text-align: right;
 }
 div.brand-pages .products .even {
   position: relative;
-  height: 330px;
+  height: 335px;
   text-align: left;
 }
 div.brand-pages .products .inner {
@@ -189,6 +195,9 @@ div.brand-pages .downloads .row {
 div.brand-pages .downloads .row .col-sm-4 {
   padding: 0 8px;
   background-color: #F0F0F0;
+}
+div.brand-pages .downloads .row .image {
+  border: 0px solid #dcdcdc;
 }
 div.brand-pages .downloads .rte {
   text-align: center;

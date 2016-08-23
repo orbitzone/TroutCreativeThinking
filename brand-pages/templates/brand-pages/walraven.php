@@ -189,7 +189,7 @@
                 2 meter lengths, this unique rail system features a range of accessories that are pre-assembled to save up to 
                 40% on installation time.</p>
                 <div class="ctaBox right">
-                  <div class="viewBtn odd">view range</div>
+                  <div class="viewBtn">view range</div>
                 </div>
               </div>
             </div>
@@ -251,9 +251,9 @@
                       <img src="images/brand-pages/walraven/video-thumb-1.png" alt=">bis starquick">
                     </div>
                     <div class="slide-content">
-                      <button type="button" class="play" data-video="_0TBVfMLoc8">
+                      <button type="button" class="play" data-video="Df5BOPuPrhQ">
                         <i class="rbp-icon"></i>
-                        <!--<span class="label"></span>  -->
+                        <span class="label">BIS STARQUICK</span>
                       </button>  
                     </div>
                   </div>
@@ -282,9 +282,9 @@
                       <img src="images/brand-pages/walraven/video-thumb-2.png" alt="Arco grifo garden taps">
                     </div>
                     <div class="slide-content">
-                      <button type="button" class="play" data-video="_0TBVfMLoc8">
+                      <button type="button" class="play" data-video="BcMfpxxPj84">
                         <i class="rbp-icon"></i>
-                        <!--<span class="label"></span>  -->
+                        <span class="label">ARCO GRIFO GARDEN TAPS</span>
                       </button>  
                     </div>
                   </div>
@@ -317,10 +317,11 @@
                       <img src="images/brand-pages/walraven/video-thumb-3.png" alt=">noise and vibration tests">
                     </div>
                     <div class="slide-content">
-                      <button type="button" class="play" data-video="_0TBVfMLoc8">
+                      <button type="button" class="play" data-video="_qHCcltLjgY">
                         <i class="rbp-icon"></i>
-                        <!--<span class="label"></span>  -->
-                      </button>  
+                          <span class="label">WALRAVEN NOISE AND VIBRATION TESTS</span>
+                      </button>
+
                     </div>
                   </div>
                   <div class="slide slide-video">
@@ -348,10 +349,11 @@
                       <img src="images/brand-pages/walraven/video-thumb-4.png" alt="Abis rapid fixing systems">
                     </div>
                     <div class="slide-content">
-                      <button type="button" class="play" data-video="_0TBVfMLoc8">
+                      <button type="button" class="play" data-video="Y1N54NTncJg">
                         <i class="rbp-icon"></i>
-                        <!--<span class="label"></span>  -->
-                      </button>  
+                          <span class="label">BIS RAPID FIXING SYSTEMS </span>
+                      </button>
+
                     </div>
                   </div>
                   <div class="slide slide-video">
@@ -393,6 +395,9 @@
                     <img src="images/brand-pages/walraven/download-pdf.jpg" height="240px" alt="download">
                   </a>
                 </figure>
+                  <div class="brochure" data-width="174">
+                      <a href="#" class="widget-link" tabindex="0">Download</a>
+                  </div>
               </div>
             </div>
 

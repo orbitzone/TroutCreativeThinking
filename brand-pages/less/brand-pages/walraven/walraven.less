@@ -77,10 +77,12 @@ div.brand-pages{
 			}
 			.play{
 				.rbp-icon{
-					background: transparent url(../../images/brand-pages/walraven/play.svg) no-repeat;
+                    background: url(../../images/brand-pages/morse/play-btn.png) no-repeat;
+                    background-size: 117px 117px;
 					width: 117px;
 					height: 117px;
 					display: block;
+                    margin: auto;
 					&:before{
 						content: "";
 					}
@@ -109,6 +111,7 @@ div.brand-pages{
 			color: #313131;
 			margin-top: 1em;
 			font-size: 18px;
+            margin-bottom: 10px;
 		}
 		p {
 			color: #313131;
@@ -117,40 +120,72 @@ div.brand-pages{
 		}
 
 		.left {
-			float: left;
+			float: none;
+            @media (min-width: @screen-sm){
+            float: left;
+            }
 		}
 
 		.right {
-			float: right;
+			float: none;
+            @media (min-width: @screen-sm){
+              float: right;
+            }
 		}
 
 		.odd {
 			position: relative;
-			height:330px;
-			text-align: right;
+            height:auto;
+			text-align:center;
+            @media (min-width: @screen-sm){
+              text-align:right;
+              height:330px;
+            }
+
+          .inner{
+            padding-left: 0px;
+            @media (min-width: @screen-sm){
+              text-align:right;
+              padding-left: 60px;
+            }
+          }
 		}
 		.even {
 			position: relative;
-			height:330px;
-			text-align: left;
+			text-align: center;
+            height:auto;
+            @media (min-width: @screen-sm){
+              text-align: left;
+              height:330px;
+            }
+          .inner{
+            padding-right: 0px;
+            @media (min-width: @screen-sm){
+              padding-right: 60px;
+            }
+            }
 		}
 		.inner {
 		    vertical-align: middle;
-		    position: absolute;
 		    left: 0;
 		    width: 100%;
 		    top: 50%;
-		    transform: translateY(-50%);
+            @media (min-width: @screen-sm){
+            transform: translateY(-50%);
+              position: absolute;
+          }
 		}
 
 		.ctaBox {
-			margin-top: 40px;
+            margin: 40px auto 10px auto;
 			height:30px;
 			width:145px;
 			background-color:transparent;
 			outline: 1px solid #dcdcdc;
 			outline-offset:10px;
-
+            @media (min-width: @screen-sm){
+              margin: 40px auto 0px auto;
+            }
 			.viewBtn {
 				text-align: center;
 				font-weight: 700;
@@ -161,11 +196,10 @@ div.brand-pages{
 		.widget-html-image {
 			.image {
 				/*width:575px;*/
-				
-				border-radius: 2px 2px 2px 2px;
-				-moz-border-radius: 2px 2px 2px 2px;
-				-webkit-border-radius: 2px 2px 2px 2px;
-				border: 1px solid #dcdcdc; 
+				border: 1px solid #dcdcdc;
+              img{
+                vertical-align: baseline;
+              }
 
 				figcaption{
 					top: inherit;

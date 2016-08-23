@@ -70,12 +70,17 @@ div.brand-pages{
 				margin-bottom: 0;
 			}
 			.image{
-				/*border: 1px solid #b3b4b7;*/
 				overflow: hidden;
+                border: 0px solid #dcdcdc;
 			}
 		}
 	}
-
+    .widget-html-image{
+      .image{
+        overflow: hidden;
+        border: 1px solid #dcdcdc;
+      }
+    }
 	.morse-video {
 		.widget-video{
 			.slide-front{
@@ -104,9 +109,11 @@ div.brand-pages{
 			}
 			.play {
 				.rbp-icon{
-					background: transparent url(../../images/brand-pages/morse/play.svg) no-repeat;
+                    background: url(../../images/brand-pages/morse/play-btn.png) no-repeat;
+                    display: block;
 					width: 117px;
 					height: 117px;
+                    background-size: 117px 117px;
 					display: inline-block;
 					&:before{
 						content: "";
@@ -151,12 +158,12 @@ div.brand-pages{
 
 		.odd {
 			position: relative;
-			height:330px;
+			height:335px;
 			text-align: right;
 		}
 		.even {
 			position: relative;
-			height:330px;
+			height:335px;
 			text-align: left;
 		}
 		.inner {
@@ -195,6 +202,9 @@ div.brand-pages{
 				padding: 0 8px;
 				background-color: #F0F0F0;
 			}
+          .image{
+            border: 0px solid #dcdcdc;
+          }
 		}
 
 		.rte {

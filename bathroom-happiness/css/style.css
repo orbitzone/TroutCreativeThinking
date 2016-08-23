@@ -1548,7 +1548,7 @@ body.homepage .section-intro .panel-hero-happiness a:before {
 }
 /* line 233, ../sass/pages/_homepage.scss */
 body.homepage .section-intro .panel-hero-happiness a:hover:before {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 /* line 236, ../sass/pages/_homepage.scss */
 body.homepage .section-intro .panel-hero-happiness a:hover .content-wrap {
@@ -1841,7 +1841,7 @@ body.homepage .section-intro .panel-luxe-on-a-budget .text-overlay-image {
 }
 /* line 438, ../sass/pages/_homepage.scss */
 body.homepage .section-intro .panel-luxe-on-a-budget .text-overlay-image img {
-  width: 116px;
+  width: 115px;
   margin: 0 auto;
 }
 /* line 443, ../sass/pages/_homepage.scss */

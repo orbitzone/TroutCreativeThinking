@@ -29,7 +29,7 @@
                   <div class="image">
                     <img src="images/homepage/the-happiness-project.jpg" alt="The Happiness project">
                   </div>
-                  <a href="inspiration.php">
+                  <a href="http://reece-spring.trout.com.au/the-happiness-project">
                     <div class="content-wrap">
                       <div class="content-inner">
                       <span class="border-top"></span>

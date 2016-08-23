@@ -141,47 +141,80 @@ div.brand-pages{
 			text-transform: uppercase;
 			color: #000000;
 			margin-top: 1em;
+            margin-bottom: 10px;
 		}
 		p {
 			color: #1d1d1d;
 			font-weight: 300;
 		}
 
+        .left {
+          float: none;
+          @media (min-width: @screen-sm){
+            float: left;
+          }
+        }
 
-		.left {
-			float: left;
-		}
+        .right {
+          float: none;
+          @media (min-width: @screen-sm){
+            float: right;
+          }
+        }
 
-		.right {
-			float: right;
-		}
+        .odd {
+          position: relative;
+          height:auto;
+          text-align:center;
+          @media (min-width: @screen-sm){
+            text-align:right;
+            height:330px;
+          }
+          .inner{
+            padding-left: 0px;
+            @media (min-width: @screen-sm){
+              text-align:right;
+              padding-left: 60px;
+            }
+          }
+        }
+        .even {
+          position: relative;
+          text-align: center;
+          height:auto;
+          @media (min-width: @screen-sm){
+            text-align: left;
+            height:330px;
+          }
+          .inner{
+            padding-right: 0px;
+            @media (min-width: @screen-sm){
+              padding-right: 60px;
+            }
+          }
+        }
+        .inner {
+          vertical-align: middle;
+          left: 0;
+          width: 100%;
+          top: 50%;
+          @media (min-width: @screen-sm){
+            transform: translateY(-50%);
+            position: absolute;
+          }
+        }
 
-		.odd {
-			position: relative;
-			height:335px;
-			text-align: right;
-		}
-		.even {
-			position: relative;
-			height:335px;
-			text-align: left;
-		}
-		.inner {
-		    vertical-align: middle;
-		    position: absolute;
-		    left: 0;
-		    width: 100%;
-		    top: 50%;
-		    transform: translateY(-50%);
-		}
 
 		.ctaBox {
-			margin-top: 40px;
+            margin: 40px auto 10px auto;
 			height:30px;
 			width:145px;
 			background-color:transparent;
 			outline: 1px solid #dcdcdc;
 			outline-offset:10px;
+            @media (min-width: @screen-sm){
+              margin: 40px auto 0px auto;
+            }
 
 			.viewBtn {
 				text-align: center;

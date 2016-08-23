@@ -115,7 +115,7 @@
           <h3>B PRESS 15-50mm</h3>
           <p>Conex Bänninger is an ISO 9000 quality &gt;B&lt; Press is a versatile press fitting system for use with hard, half hard or soft copper tube pro assured company, which assures you the very best in quality. 
         Conex Bänningerviding a secure, life long, leak-proof joint.</p>
-          <p><a href="#">View range</a></p>
+          <p><a href="http://www.reece.com.au/plumbing/products/pipe_%26_fittings/conex_banninger">View range</a></p>
         </div>  
       </div>
       <!-- End: HTML Widget-->    
@@ -140,7 +140,7 @@
           <h3>B Press XL 65-100mm</h3>
           <p>&gt;B&lt; Press XL has only two internal parts, the grip ring and the O-ring. 
         Both parts have an internal diameter larger than the tube, which allows for easy tube insertion and pre press leak indication.</p>
-          <p><a href="#">View range</a></p>
+          <p><a href="http://www.reece.com.au/plumbing/products/pipe_%26_fittings/conex_banninger_xl">View range</a></p>
         </div>  
       </div>
     <!-- End: HTML Widget-->

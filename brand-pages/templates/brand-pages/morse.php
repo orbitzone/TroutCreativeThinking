@@ -268,6 +268,9 @@
                 <img src="images/brand-pages/walraven/download-pdf.jpg" height="240px" alt="download">
               </a>
             </figure>
+              <div class="brochure" data-width="174">
+                  <a href="#" class="widget-link" tabindex="0">Download</a>
+              </div>
           </div>
         </div>
 

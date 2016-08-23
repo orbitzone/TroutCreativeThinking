@@ -106,7 +106,7 @@
         <h3>MORSE 11 PIECE PLUMBER’S HOLE SAW KIT</h3>
         <p>The ultimate hole saw kit features 8 Advanced Edge hole saw sizes, a Fast Adapt Universal Arbor, 
           8 adaptors to suit, 3 pilot drills and a handy carry case. </p>
-          <p><a href="#">View product</a></p>
+          <p><a href="http://www.reece.com.au/plumbing/products/7100521">View product</a></p>
         </div>
       </div>
       <!-- End: HTML Widget-->
@@ -126,7 +126,7 @@
           <p>This starter pack kit comes with a Fast Adapt Universal Arbor and 5 adaptors to suit. The Fast 
             Adapt system saves you time by allowing you to change hole saws in seconds. They are interchangeable 
             with any hole saw and feature a precision locking system for safety and ease of use.</p>
-            <p><a href="#">View product</a></p>
+            <p><a href="http://www.reece.com.au/plumbing/products/7100305">View product</a></p>
           </div>
         </div>
       </div>
@@ -163,7 +163,7 @@
           <p>Engineered with the strongest tooth profile in the market, Advanced Edge delivers unrivalled performance and 
             durability for long life. Boasting more teeth and a deeper gullet in the cutting action increases material 
             removal and results in more efficient cutting.</p>
-              <p><a href="#">View product</a></p>
+              <p><a href="http://www.reece.com.au/plumbing/products/7100474">View product</a></p>
           </div>
           </div>
           <!-- End: HTML Widget-->
@@ -198,7 +198,7 @@
                   <img src="images/brand-pages/morse/video-thumb.jpg" alt=">video">
                 </div>
                 <div class="slide-content">
-                  <button type="button" class="play" data-video="_0TBVfMLoc8">
+                  <button type="button" class="play" data-video="B20kAOVdelA">
                     <i class="rbp-icon"></i>
                     <!--<span class="label"></span>  -->
                     <figcaption>Morse Fast Adapt QR Hole Saw System</figcaption>
@@ -241,11 +241,11 @@
           <div class="widget-html-image">
             <figure class="image">
               <a href="#"><!-- Link Optional-->
-                <img src="images/brand-pages/walraven/download-pdf.jpg" height="240px" alt="download">
+                <img src="images/brand-pages/walraven/download-pdf.png" height="240px" alt="download">
               </a>
             </figure>
               <div class="brochure" data-width="174">
-                  <a href="#" class="widget-link" tabindex="0">Download</a>
+                  <a href="http://www.reece.com.au/new/pdf/products/morse-holesaw-promotion.pdf" class="widget-link" tabindex="0">Download</a>
               </div>
           </div>
         </div>

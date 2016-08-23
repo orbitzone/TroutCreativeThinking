@@ -188,7 +188,7 @@
     </div>
   </div>
     <!-- left side video 1 of 2 -->
-    <div class="container-fluid conex-video">
+    <div class="container-fluid conex-video conex-video-small-btn">
       <div class="row">
         <div class="col-sm-6">
           <!-- Begin: Video Widget-->  

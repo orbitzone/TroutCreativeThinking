@@ -85,9 +85,9 @@ div.brand-pages .conex-video .widget-video .play .rbp-icon {
 }
 @media (min-width: 768px) {
   div.brand-pages .conex-video .widget-video .play .rbp-icon {
-    width: 110px;
-    height: 110px;
-    background-size: 110px 110px;
+    width: 138px;
+    height: 138px;
+    background-size: 138px 138px;
   }
 }
 div.brand-pages .conex-video .widget-video .play .rbp-icon:before {
@@ -111,6 +111,24 @@ div.brand-pages .conex-video .widget-video .play .label {
   div.brand-pages .conex-video .widget-video .play .label {
     font-size: 18px;
   }
+}
+div.brand-pages .conex-video-small-btn .widget-video .play .rbp-icon {
+  width: 69px;
+  height: 69px;
+  margin: 0 auto;
+  display: block;
+  background-image: url(../../images/brand-pages/auspex/play-btn.png);
+  background-size: 69px 69px;
+}
+@media (min-width: 768px) {
+  div.brand-pages .conex-video-small-btn .widget-video .play .rbp-icon {
+    width: 110px;
+    height: 110px;
+    background-size: 110px 110px;
+  }
+}
+div.brand-pages .conex-video-small-btn .widget-video .play .rbp-icon:before {
+  content: " ";
 }
 div.brand-pages .products-intro {
   margin-bottom: 56px;

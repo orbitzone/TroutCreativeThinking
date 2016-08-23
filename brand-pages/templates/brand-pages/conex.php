@@ -199,7 +199,7 @@
                   <img src="images/brand-pages/conex/video-placeholder-1.jpg" alt=">Installation Process">
                 </div>
                 <div class="slide-content">
-                  <button type="button" class="play" data-video="_0TBVfMLoc8">
+                  <button type="button" class="play" data-video="9sm8LrmucmU">
                     <i class="rbp-icon"></i>
                     <span class="label">Conex Bänninger - Installation process</span>
                   </button>  
@@ -230,7 +230,7 @@
                   <img src="images/brand-pages/conex/video-placeholder-2.jpg" alt="Specialist O-ring">
                 </div>
                 <div class="slide-content">
-                  <button type="button" class="play" data-video="_0TBVfMLoc8">
+                  <button type="button" class="play" data-video="U4VC61_jAAk">
                     <i class="rbp-icon"></i>
                     <span class="label">Conex Bänninger - Specialist o-ring</span>
                   </button>  
@@ -271,32 +271,32 @@
             <div class="slides" data-slides-to-show="3" data-slides-to-scroll="3">
               <div class="slide">
                 <figure class="image">
-                  <a href="http://www.reece.com.au/assets/brands/820000/laufen-bathroom-products.pdf">
+                  <a href="http://www.reece.com.au/assets/brands/820000/laufen-bathroom-products.pdf" target="_blank">
                     <img src="images/brand-pages/conex/download-thumb1.jpg" alt="Brochure 1">  
                   </a>
                 </figure>
                 <div class="text">
-                 <a href="http://www.reece.com.au/assets/brands/820000/laufen-bathroom-products.pdf" class="widget-link">Download</a>
+                 <a href="http://www.reece.com.au/assets/brands/820000/laufen-bathroom-products.pdf" target="_blank" class="widget-link">Download</a>
                 </div>
               </div>
               <div class="slide">
                 <figure class="image">
-                  <a href="http://www.reece.com.au/assets/brands/820000/Laufen-SaphirKeramik.pdf">
-                    <img src="images/brand-pages/conex/download-thumb2.jpg" alt="Brochure 2">  
+                  <a href="http://www.conexbanninger.com.au/assets/Uploads/WM-022197-Certificate.pdf" target="_blank">
+                    <img src="images/brand-pages/conex/download-thumb2.jpg" alt="Watermark Licence">  
                   </a>
                 </figure>
                 <div class="text">
-                  <a href="http://www.reece.com.au/assets/brands/820000/Laufen-SaphirKeramik.pdf" class="widget-link">Download</a>
+                  <a href="http://www.conexbanninger.com.au/assets/Uploads/WM-022197-Certificate.pdf" target="_blank" class="widget-link">Download</a>
                 </div>
               </div>
               <div class="slide">
                 <figure class="image">
-                  <a href="http://www.reece.com.au/assets/brands/820000/kartell-by-laufen-bathroom.pdf">
-                    <img src="images/brand-pages/conex/download-thumb3.jpg" alt="Brochure 3">  
+                  <a href="http://www.conexbanninger.com.au/assets/Uploads/Conex-Banninger-technical-guide.pdf" target="_blank">
+                    <img src="images/brand-pages/conex/download-thumb3.jpg" alt="Conex Banninger Technical Guide">  
                   </a>
                 </figure>
                 <div class="text">
-                  <a href="http://www.reece.com.au/assets/brands/820000/kartell-by-laufen-bathroom.pdf" class="widget-link">Download</a>
+                  <a href="http://www.conexbanninger.com.au/assets/Uploads/Conex-Banninger-technical-guide.pdf" target="_blank" class="widget-link">Download</a>
                 </div>
               </div>        
             </div>
@@ -317,7 +317,7 @@
           <div class="rte">
             <h3>Conexbanninger.com.au</h3>
             <p>Want to find out more about the<br>Conex Bänninger range?</p>
-            <p><a href="http://conexbanninger.com.au">Visit website</a></p>
+            <p><a href="http://conexbanninger.com.au" target="_blank">Visit website</a></p>
           </div>  
         </div>
         <!-- End: HTML Widget-->

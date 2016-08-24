@@ -1,3 +1,22 @@
+.happiness-subNav {
+    background: #c91d1d;
+    .navbar-container{
+    	background: none !important;
+    }
+}
+.subnavbar{
+	.navbar-container{
+		position: relative;
+		background: none;
+	}
+ .the-happiness-project{
+		position: absolute;
+		top: 50%;
+	  right: 0;
+	  z-index: 2;
+	  @include transform(translateY(-50%));
+	}
+}
 html.bathroom-happiness {
 	height: 100%;
 }

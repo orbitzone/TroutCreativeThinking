@@ -13,7 +13,7 @@
     <!-- End:  Logo widget -->
   </div>
 
-  <div class="container-fluid discover intro">
+  <div class="container-fluid intro">
     <div class="row">
       <div class="col-sm-12">
         <!-- Begin: HTML Widget-->  

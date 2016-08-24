@@ -36,25 +36,15 @@ div.brand-pages .half {
 }
 div.brand-pages .intro {
   max-width: 900px;
+  margin-bottom: 50px;
 }
-div.brand-pages .intro h3 {
+div.brand-pages .intro h2 {
   font-size: 28px;
   text-transform: uppercase;
   max-width: 360px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-align: center;
-}
-@media (min-width: 768px) {
-  div.brand-pages .intro h3 {
-    max-width: 100%;
-    text-align: left;
-  }
-}
-@media (min-width: 992px) {
-  div.brand-pages .intro h3 {
-    padding-left: 34%;
-  }
 }
 div.brand-pages .intro p {
   line-height: 200%;

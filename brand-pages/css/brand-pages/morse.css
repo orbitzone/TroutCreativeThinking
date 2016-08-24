@@ -178,6 +178,16 @@ div.brand-pages .products h3 {
   margin-bottom: 8px;
   font-size: 18px;
 }
+@media (min-width: 768px) {
+  div.brand-pages .products h3 {
+    margin-top: 0px;
+  }
+}
+@media (min-width: 992px) {
+  div.brand-pages .products h3 {
+    margin-top: 60px;
+  }
+}
 div.brand-pages .products p {
   color: #1d1d1d;
   font-weight: 300;

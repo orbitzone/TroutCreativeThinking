@@ -123,7 +123,7 @@
       </li>
     </ul>
     <div class="the-happiness-project">
-      <a href="the-happiness-project">
+      <a href="http://reece-spring.trout.com.au/the-happiness-project">
       <svg width="78px" height="78px" viewBox="0 0 78 78" enable-background="new 0 0 78 78" xml:space="preserve">
         <path id="bg" fill="#FFFFFF" d="M39,1.5c20.7,0,37.5,16.8,37.5,37.5S59.7,76.5,39,76.5S1.5,59.7,1.5,39S18.3,1.5,39,1.5z"/>
         <path id="border" fill="#0333AF" d="M39,78C17.5,78,0,60.5,0,39S17.5,0,39,0s39,17.5,39,39S60.5,78,39,78z M39,3C19.1,3,3,19.1,3,39

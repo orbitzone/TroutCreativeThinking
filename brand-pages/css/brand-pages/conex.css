@@ -238,6 +238,11 @@ div.brand-pages .downloads .widget-slider {
 div.brand-pages .downloads .widget-slider.carousel .slick-slider .slick-slide {
   padding: 0 15px;
 }
+@media (min-width: 768px) {
+  div.brand-pages .downloads .widget-slider.carousel .slick-slider .slick-slide {
+    padding: 0 38px;
+  }
+}
 div.brand-pages .downloads .widget-html-image,
 div.brand-pages .downloads .widget-slider {
   background-color: #F0F0F0;

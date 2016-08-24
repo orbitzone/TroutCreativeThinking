@@ -70,11 +70,18 @@ div.brand-pages .intro p {
 }
 div.brand-pages .feature-icons {
   max-width: 960px;
-  padding: 0;
+  padding: 0 15px;
+}
+div.brand-pages .feature-icons .row {
+  margin: 0 -6px;
+}
+div.brand-pages .feature-icons .row .col-xs-6,
+div.brand-pages .feature-icons .row .col-sm-3 {
+  padding: 0 6px;
 }
 div.brand-pages .feature-icons .widget-html-image {
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 6px;
 }
 @media (min-width: 992px) {
   div.brand-pages .feature-icons .widget-html-image {
@@ -175,31 +182,7 @@ div.brand-pages .products p {
   color: #1d1d1d;
   font-weight: 300;
 }
-div.brand-pages .products .odd {
-  display: inline-block;
-  height: 330px;
-  text-align: right;
-}
-div.brand-pages .products .even {
-  margin: 0 auto;
-  text-align: left;
-  display: inline-block;
-}
-div.brand-pages .products .ctaBox {
-  margin-top: 40px;
-  height: 30px;
-  width: 145px;
-  background-color: transparent;
-  outline: 1px solid #dcdcdc;
-  outline-offset: 10px;
-}
-div.brand-pages .products .ctaBox .viewBtn {
-  text-align: center;
-  font-weight: 700;
-  text-transform: uppercase;
-}
 div.brand-pages .products .widget-html-image .image {
-  height: 330px;
   border-radius: 2px 2px 2px 2px;
   -moz-border-radius: 2px 2px 2px 2px;
   -webkit-border-radius: 2px 2px 2px 2px;
@@ -211,22 +194,47 @@ div.brand-pages .products .widget-html-image .image figcaption {
   font-size: 25px;
   font-weight: bold;
 }
-div.brand-pages .downloads {
+div.brand-pages .discover {
+  margin-bottom: 30px;
+}
+div.brand-pages .discover h2 {
+  font-size: 30px;
+  margin: 0;
+}
+div.brand-pages .downloads-title {
+  margin-bottom: 0;
+}
+div.brand-pages .downloads-title h2 {
+  font-size: 30px;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+div.brand-pages .downloads-title .widget-html-image {
   background-color: #F0F0F0;
-  padding: 20px 0 20px 0;
+}
+div.brand-pages .downloads {
   margin-bottom: 0;
   text-align: center;
 }
-div.brand-pages .downloads .row {
-  margin-left: -8px;
-  margin-right: -8px;
-}
-div.brand-pages .downloads .row .col-sm-4 {
-  padding: 0 8px;
+div.brand-pages .downloads .widget-html-image {
+  padding: 0 0 20px;
   background-color: #F0F0F0;
 }
-div.brand-pages .downloads .row .image {
-  border: 0px solid #dcdcdc;
+div.brand-pages .downloads .widget-html-image .brochure {
+  max-width: 170px;
+  margin: 0 auto;
+}
+div.brand-pages .downloads .image {
+  border: none;
+}
+div.brand-pages .downloads .widget-link {
+  border: 1px solid #c2c2c2;
+  padding: 0 26px;
+  height: 43px;
+  line-height: 41px;
+  display: block;
+  font-size: 16px;
 }
 div.brand-pages .downloads .rte {
   text-align: center;

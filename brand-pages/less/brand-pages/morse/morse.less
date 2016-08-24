@@ -62,10 +62,16 @@ div.brand-pages{
 
 	.feature-icons {
 		max-width: 960px;
-		padding: 0;
+		padding: 0 15px;
+		.row{
+			margin: 0 -6px;
+			.col-xs-6, .col-sm-3{
+				padding: 0 6px;
+			}
+		}
 		.widget-html-image{
 			padding: 0;
-			margin-bottom: 30px;
+			margin-bottom: 6px;
 			@media (min-width: @screen-md-min){
 				margin-bottom: 0;
 			}
@@ -177,36 +183,9 @@ div.brand-pages{
       font-weight: 300;
     }
 
-    .odd {
-      display:inline-block;
-      height:330px;
-      text-align: right;
-    }
-    .even {
-      margin: 0 auto;
-      text-align: left;
-      display:inline-block;
-    }
-
-    .ctaBox {
-      margin-top: 40px;
-      height:30px;
-      width:145px;
-      background-color:transparent;
-      outline: 1px solid #dcdcdc;
-      outline-offset:10px;
-
-      .viewBtn {
-        text-align: center;
-        font-weight: 700;
-        text-transform: uppercase;
-      }
-    }
-
     .widget-html-image {
       .image {
         // width:575px;
-        height:330px;
         border-radius: 2px 2px 2px 2px;
         -moz-border-radius: 2px 2px 2px 2px;
         -webkit-border-radius: 2px 2px 2px 2px;
@@ -221,23 +200,48 @@ div.brand-pages{
       }
     }
   }
+  .discover{
+  	margin-bottom: 30px;
+  	h2{
+  		font-size: 30px;
+  		margin: 0;
+  	}
+  }
+  .downloads-title{
+  	margin-bottom: 0;
+  	h2{
+  		font-size: 30px;
+  		margin: 0;
+  		padding-top: 30px;
+  		padding-bottom: 30px;
+  	}
+  	.widget-html-image{
+  		background-color: #F0F0F0;  	
+  	}
+  }
 	.downloads { 
-		background-color: #F0F0F0;
-		padding: 20px 0 20px 0;
+
 		margin-bottom: 0;
 		text-align: center;
-		.row {
-			margin-left: -8px;
-			margin-right: -8px;
-			.col-sm-4{
-				padding: 0 8px;
-				background-color: #F0F0F0;
+		.widget-html-image{
+			padding: 0 0 20px;
+			background-color: #F0F0F0;
+			.brochure{
+				max-width: 170px;
+				margin: 0 auto;				
 			}
-          .image{
-            border: 0px solid #dcdcdc;
-          }
 		}
-
+		.image{
+			border: none;
+		}
+		.widget-link{
+			border: 1px solid #c2c2c2;
+			padding: 0 26px;
+			height: 43px;
+			line-height: 41px;
+			display: block;
+			font-size: 16px;
+		}
 		.rte {
 			text-align: center;
 			font-weight: bold;

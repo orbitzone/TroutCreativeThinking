@@ -31,10 +31,11 @@ div.brand-pages{
 	}
 
 	.intro {
-		max-width: 900px;
+		max-width: 1050px;
 		h2 {
 			font-size: 28px;
 			margin: 0 auto;
+			margin-bottom: 15px;
 			text-transform: uppercase;
 			text-align: center;
 			@media (min-width: @screen-sm){
@@ -46,7 +47,8 @@ div.brand-pages{
 			}
 		}
 		p {
-			line-height: 200%;
+			font-size: 16px;
+			line-height: 24px;
 			text-align: center;
 			max-width: 900px;
 			margin: 0 auto;
@@ -57,7 +59,9 @@ div.brand-pages{
 		}
 	}
 	.walraven-video{
+		margin-bottom: 0;
 		.widget-video{
+			margin-bottom: 30px;
 			.slide-front{
 				&:before{
 					content: " ";
@@ -75,21 +79,32 @@ div.brand-pages{
 				}
 			}
 			.play{
+				.label{
+					font-weight: bold;
+					.transform(translateY(10px));
+				}
+				
 				.rbp-icon{
-                    background: url(../../images/brand-pages/morse/play-btn.png) no-repeat;
-                    background-size: 117px 117px;
-					width: 117px;
-					height: 117px;
+					width: 69px;
+					height: 69px;
+					margin: 0 auto;
 					display: block;
-                    margin: auto;
+					background-image: url(../../images/brand-pages/walraven/play-btn.png);
+					background-size: 69px 69px;
+					@media (min-width: @screen-sm){
+						width: 110px;
+						height: 110px;
+						background-size: 110px 110px;
+					}
 					&:before{
-						content: "";
+						content: " ";
 					}
 				}
 			}
 		}
 	}
   .products-intro{
+  	margin-top: 50px;
     margin-bottom: 56px;
     h2 {
       font-size: 29px;
@@ -144,36 +159,9 @@ div.brand-pages{
       font-weight: 300;
     }
 
-    .odd {
-      display:inline-block;
-      height:330px;
-      text-align: right;
-    }
-    .even {
-      margin: 0 auto;
-      text-align: left;
-      display:inline-block;
-    }
-
-    .ctaBox {
-      margin-top: 40px;
-      height:30px;
-      width:145px;
-      background-color:transparent;
-      outline: 1px solid #dcdcdc;
-      outline-offset:10px;
-
-      .viewBtn {
-        text-align: center;
-        font-weight: 700;
-        text-transform: uppercase;
-      }
-    }
-
     .widget-html-image {
       .image {
         // width:575px;
-        height:330px;
         border-radius: 2px 2px 2px 2px;
         -moz-border-radius: 2px 2px 2px 2px;
         -webkit-border-radius: 2px 2px 2px 2px;
@@ -188,20 +176,42 @@ div.brand-pages{
       }
     }
   }
-  .downloads {
-		background-color: #F0F0F0;
-		padding: 20px 0 20px 0;
+  .downloads-title{
+  	margin-top: 30px;
+  	margin-bottom: 0;
+  	h2{
+  		font-size: 30px;
+  		margin: 0;
+  		padding-top: 30px;
+  		padding-bottom: 30px;
+  	}
+  	.widget-html-image{
+  		background-color: #F0F0F0;  	
+  	}
+  }
+	.downloads { 
 		margin-bottom: 0;
 		text-align: center;
-		.row {
-			margin-left: -8px;
-			margin-right: -8px;
-			.col-sm-4{
-				padding: 0 8px;
-				background-color: #F0F0F0;
+		.widget-html-image{
+			padding: 0 0 20px;
+			background-color: #F0F0F0;
+			.brochure{
+				max-width: 170px;
+				margin: 0 auto;				
 			}
 		}
-
+		.image{
+			border: none;
+			margin-bottom: 15px;
+		}
+		.widget-link{
+			border: 1px solid #c2c2c2;
+			padding: 0 26px;
+			height: 43px;
+			line-height: 41px;
+			display: block;
+			font-size: 16px;
+		}
 		.rte {
 			text-align: center;
 			font-weight: bold;
@@ -210,82 +220,12 @@ div.brand-pages{
 			}
 		}
 		.rbp-icon{
-			background: transparent url(../../images/brand-pages/walraven/download.svg) no-repeat;
+			background: transparent url(../../images/brand-pages/morse/download.svg) no-repeat;
 			width: 75px;
 			height: 75px;
 			display: inline-block;
 			&:before{
 				content: "";
-			}
-		}
-		.download{
-			.rbp-icon{
-				background-image: url(../../images/brand-pages/walraven/download.svg);
-			}
-		}
-		.videos{
-			.rbp-icon{
-				background-image: url(../../images/brand-pages/walraven/video.svg);
-			}
-		}
-		.website{
-			.rbp-icon{
-				background-image: url(../../images/brand-pages/walraven/website.svg);
-			}
-		}
-		.widget-big-button{
-			background: @bigButtonBg;
-			text-align: center;
-			padding: 40px;
-			margin-bottom: 10px;
-			.rte{
-				margin-bottom: 0 !important;
-			}
-			h3{
-				color: @bigButtonColor;
-			}
-			a{
-				display: block;
-				color: @bigButtonColor;
-				.text{
-					text-transform: @bigButtonTextTransform;
-					font-weight: bold;
-					line-height: 1;
-					@media (min-width: @screen-sm){
-						font-size: @bigButtonFontSize;
-					}
-				}
-				.icon{
-					margin-bottom: 15px;
-					i{
-						.transition(all .3s ease-out);
-						.transform(translateY(0));
-					}
-					&:after{
-						.transition(all .3s ease-out);
-						.transform(scale(1));
-						content: " ";
-						display: block;
-						background: transparent url(../../images/brand-pages/walraven/shadow.png) no-repeat;
-						width: 76px;
-						height: 14px;
-						margin: 0 auto;
-						margin-top: 15px;
-					}
-				}
-				&:hover{
-					.text{
-						text-decoration: underline;
-					}
-					.icon{
-						i{
-							.transform(translateY(-10px));
-						}
-						&:after{
-							.transform(scale(0.75));
-						}
-					}
-				}
 			}
 		}
 	}

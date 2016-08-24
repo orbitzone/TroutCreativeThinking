@@ -37,10 +37,9 @@
     </div>
   </div>
 
-  <!-- Begin: HTML Widget-->  
   <div class="container-fluid feature-icons">
     <div class="row">
-      <div class="col-sm-4 col-md-3">
+      <div class="col-xs-6 col-sm-3">
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image">
           <figure class="image">
@@ -51,7 +50,7 @@
         </div>
         <!-- End: HTML Widget-->
       </div>
-      <div class="col-sm-6 col-md-3">
+      <div class="col-xs-6 col-sm-3">
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image">
           <figure class="image">
@@ -62,7 +61,7 @@
         </div>
         <!-- End: HTML Widget-->
       </div>
-      <div class="col-sm-6 col-md-3">
+      <div class="col-xs-6 col-sm-3">
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image">
           <figure class="image">
@@ -73,7 +72,7 @@
         </div>
         <!-- End: HTML Widget-->
       </div>
-      <div class="col-sm-6 col-md-3">
+      <div class="col-xs-6 col-sm-3">
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image">
           <figure class="image">
@@ -88,50 +87,35 @@
   </div>
 
 
-    <div class="container-fluid products">
-<div class="row">
-  <div class="col-sm-6">
-    <!-- Begin: HTML Widget-->  
-    <div class="widget-html-image">
-      <figure class="image">
-        <img src="images/brand-pages/morse/product-1.jpg" alt="MORSE 11 PIECE PLUMBER’S HOLE SAW KIT"/>
-      </figure>          
-    </div>
-    <!-- End: HTML Widget-->
-  </div>
-  <div class="col-sm-6">
-    <!-- Begin: HTML Widget-->
-    <div class="widget-html-image">
-      <div class="rte">
-        <h3>MORSE 11 PIECE PLUMBER’S HOLE SAW KIT</h3>
-        <p>The ultimate hole saw kit features 8 Advanced Edge hole saw sizes, a Fast Adapt Universal Arbor, 
-          8 adaptors to suit, 3 pilot drills and a handy carry case. </p>
-          <p><a href="http://www.reece.com.au/plumbing/products/7100521">View product</a></p>
+  <div class="container-fluid products">
+    <div class="row">
+      <div class="col-sm-6">
+        <!-- Begin: HTML Widget-->  
+        <div class="widget-html-image">
+          <figure class="image">
+            <img src="images/brand-pages/morse/product-1.jpg" alt="MORSE 11 PIECE PLUMBER’S HOLE SAW KIT"/>
+          </figure>          
         </div>
+        <!-- End: HTML Widget-->
       </div>
-      <!-- End: HTML Widget-->
-    </div>
-  </div>
-</div>
-<!-- ./end row -->
-
-
-<div class="container-fluid products">
-  <div class="row">
-    <div class="col-sm-6">
-      <!-- Begin: HTML Widget-->  
-      <div class="widget-html-image">
-        <div class="rte">
-          <h3>Fast Adapt Starter Pack</h3>
-          <p>This starter pack kit comes with a Fast Adapt Universal Arbor and 5 adaptors to suit. The Fast 
-            Adapt system saves you time by allowing you to change hole saws in seconds. They are interchangeable 
-            with any hole saw and feature a precision locking system for safety and ease of use.</p>
-            <p><a href="http://www.reece.com.au/plumbing/products/7100305">View product</a></p>
+      <div class="col-sm-6">
+        <!-- Begin: HTML Widget-->
+        <div class="widget-html-image">
+          <div class="rte">
+            <h3>MORSE 11 PIECE PLUMBER’S HOLE SAW KIT</h3>
+            <p>The ultimate hole saw kit features 8 Advanced Edge hole saw sizes, a Fast Adapt Universal Arbor, 8 adaptors to suit, 3 pilot drills and a handy carry case. </p>
+            <p><a href="http://www.reece.com.au/plumbing/products/7100521">View product</a></p>
           </div>
         </div>
+        <!-- End: HTML Widget-->
       </div>
-      <!-- End: HTML Widget-->
-      <div class="col-sm-6">
+    </div><!-- ./end row -->
+  </div>
+
+
+  <div class="container-fluid products align-right">
+    <div class="row">
+      <div class="col-sm-6 col-sm-push-6">
         <!-- Begin: HTML Widget-->
         <div class="widget-html-image">
           <figure class="image">
@@ -140,9 +124,21 @@
         </div>
         <!-- End: HTML Widget-->
       </div>
-    </div>
+      <div class="col-sm-6 col-sm-pull-6">
+        <!-- Begin: HTML Widget-->  
+        <div class="widget-html-image">
+          <div class="rte">
+            <h3>Fast Adapt Starter Pack</h3>
+            <p>This starter pack kit comes with a Fast Adapt Universal Arbor and 5 adaptors to suit. The Fast 
+              Adapt system saves you time by allowing you to change hole saws in seconds. They are interchangeable 
+              with any hole saw and feature a precision locking system for safety and ease of use.</p>
+              <p><a href="http://www.reece.com.au/plumbing/products/7100305">View product</a></p>
+            </div>
+        </div>
+        <!-- End: HTML Widget-->      
+      </div>      
+    </div><!-- ./end row -->
   </div>
-  <!-- ./end row -->
 
   <div class="container-fluid products">
     <div class="row">
@@ -150,7 +146,7 @@
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image">
           <figure class="image">
-            <img src="images/brand-pages/morse/product-3.jpg" width="330px" alt="The Advanced Edge Bi-Metal Hole Saw"/>
+            <img src="images/brand-pages/morse/product-3.jpg" alt="The Advanced Edge Bi-Metal Hole Saw"/>
           </figure>          
         </div>
         <!-- End: HTML Widget-->
@@ -165,93 +161,93 @@
             removal and results in more efficient cutting.</p>
               <p><a href="http://www.reece.com.au/plumbing/products/7100474">View product</a></p>
           </div>
-          </div>
-          <!-- End: HTML Widget-->
         </div>
+        <!-- End: HTML Widget-->
+      </div>
+    </div><!-- ./end row -->
+  </div>
+    
+
+
+  <div class="container-fluid discover videos">
+    <div class="row">
+      <div class="col-sm-12">
+        <!-- Begin: HTML Widget-->  
+        <div class="widget-html-image">
+          <div class="rte">
+            <h2>Watch our video</h2>            
+          </div>
+        </div>
+        <!-- End: HTML Widget-->
       </div>
     </div>
-    <!-- ./end row -->
+  </div>
 
-
-    <div class="container-fluid discover videos">
-      <div class="row">
-        <div class="col-sm-12">
-          <!-- Begin: HTML Widget-->  
-          <div class="widget-html-image">
-            <div class="rte">
-              <h3>Watch our video</h3>            
-            </div>
-          </div>
-          <!-- End: HTML Widget-->
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid morse-video">
-      <div class="row">
-        <div class="col-xs-12">
-          <!-- Begin: Video Widget-->  
-          <div class="widget-video">
-            <div class="video-slides">
-              <div class="slide slide-front">
-                <div class="image">
-                  <img src="images/brand-pages/morse/video-thumb.jpg" alt=">video">
-                </div>
-                <div class="slide-content">
-                  <button type="button" class="play" data-video="B20kAOVdelA">
-                    <i class="rbp-icon"></i>
-                    <!--<span class="label"></span>  -->
-                    <figcaption>Morse Fast Adapt QR Hole Saw System</figcaption>
-                  </button>  
-                </div>
+  <div class="container-fluid morse-video">
+    <div class="row">
+      <div class="col-xs-12">
+        <!-- Begin: Video Widget-->  
+        <div class="widget-video">
+          <div class="video-slides">
+            <div class="slide slide-front">
+              <div class="image">
+                <img src="images/brand-pages/morse/video-thumb.jpg" alt=">video">
               </div>
-              <div class="slide slide-video">
-                <div class="video-wrapper">
-                  <div class="video">
-                    <figure class="player"></figure>
-                  </div>
-                </div>
-                <button type="button" class="close">
-                  <i class="rbp-close-icon"></i>               
+              <div class="slide-content">
+                <button type="button" class="play" data-video="B20kAOVdelA">
+                  <i class="rbp-icon"></i>
+                  <!--<span class="label"></span>  -->
+                  <figcaption>Morse Fast Adapt QR Hole Saw System</figcaption>
                 </button>  
               </div>
-            </div>    
-          </div>
-          <!-- End: Video Widget-->
-        </div>
-      </div>
-    </div>
-
-    <!-- DOWNLOADS SECTION -->  
-    <div class="container-fluid downloads">
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="widget-html-image">
-            <div class="rte">
-              <h3><!--<a href="#">-->DOWNLOAD<!--</a>--></h3>
             </div>
-          </div>
-          <!-- End: HTML Widget-->
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-sm-12 ">
-          <!-- Begin: HTML Widget-->  
-          <div class="widget-html-image">
-            <figure class="image">
-              <a href="#"><!-- Link Optional-->
-                <img src="images/brand-pages/walraven/download-pdf.png" height="240px" alt="download">
-              </a>
-            </figure>
-              <div class="brochure" data-width="174">
-                  <a href="http://www.reece.com.au/new/pdf/products/morse-holesaw-promotion.pdf" class="widget-link" tabindex="0">Download</a>
+            <div class="slide slide-video">
+              <div class="video-wrapper">
+                <div class="video">
+                  <figure class="player"></figure>
+                </div>
               </div>
+              <button type="button" class="close">
+                <i class="rbp-close-icon"></i>               
+              </button>  
+            </div>
+          </div>    
+        </div>
+        <!-- End: Video Widget-->
+      </div>
+    </div>
+  </div>
+      
+  <div class="container-fluid downloads-title">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="widget-html-image">
+          <div class="rte">
+            <h2><!--<a href="#">-->DOWNLOAD<!--</a>--></h2>
           </div>
         </div>
-
+        <!-- End: HTML Widget-->
       </div>
-      <!-- End: HTML Widget-->
+    </div>      
+  </div>
+  <!-- DOWNLOADS SECTION -->  
+  <div class="container-fluid downloads">
+    <div class="row">
+      <div class="col-sm-12 ">
+        <!-- Begin: HTML Widget-->  
+        <div class="widget-html-image">
+          <figure class="image">
+            <a href="#"><!-- Link Optional-->
+              <img src="images/brand-pages/morse/download-pdf.jpg" height="240px" alt="download">
+            </a>
+          </figure>
+            <div class="brochure" data-width="174">
+                <a href="http://www.reece.com.au/new/pdf/products/morse-holesaw-promotion.pdf" class="widget-link" tabindex="0">Download</a>
+            </div>
+        </div>
+      </div>
+
     </div>
+    <!-- End: HTML Widget-->
   </div>
 </div>

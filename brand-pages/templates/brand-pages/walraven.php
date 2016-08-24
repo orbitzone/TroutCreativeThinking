@@ -397,12 +397,12 @@
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image">
             <figure class="image">
-                <a href="#"><!-- Link Optional-->
+                <a href="http://www.reece.com.au/new/pdf/products/walraven-brochure.pdf" target="_blank"><!-- Link Optional-->
                     <img src="images/brand-pages/walraven/download-pdf.jpg" height="240px" alt="download">
                 </a>
             </figure>
             <div class="brochure" data-width="174">
-                <a href="http://www.reece.com.au/new/pdf/products/walraven-brochure.pdf" class="widget-link" tabindex="0">Download</a>
+                <a href="http://www.reece.com.au/new/pdf/products/walraven-brochure.pdf" target="_blank" class="widget-link" tabindex="0">Download</a>
             </div>
         </div>
       </div>

@@ -242,7 +242,7 @@
             </a>
           </figure>
             <div class="brochure" data-width="174">
-                <a href="http://www.reece.com.au/new/pdf/products/morse-holesaw-promotion.pdf" class="widget-link" tabindex="0">Download</a>
+                <a href="http://www.reece.com.au/new/pdf/products/morse-holesaw-promotion.pdf" target="_blank" class="widget-link" tabindex="0">Download</a>
             </div>
         </div>
       </div>

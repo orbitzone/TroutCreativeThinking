@@ -43,17 +43,6 @@ div.brand-pages .intro h2 {
   text-transform: uppercase;
   text-align: center;
 }
-@media (min-width: 768px) {
-  div.brand-pages .intro h2 {
-    max-width: 100%;
-    text-align: left;
-  }
-}
-@media (min-width: 992px) {
-  div.brand-pages .intro h2 {
-    padding-left: 34%;
-  }
-}
 div.brand-pages .intro p {
   font-size: 16px;
   line-height: 24px;

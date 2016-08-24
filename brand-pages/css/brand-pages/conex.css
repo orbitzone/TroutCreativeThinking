@@ -63,6 +63,9 @@ div.brand-pages .discover p {
     text-align: left;
   }
 }
+div.brand-pages .conex-video {
+  margin-bottom: 60px;
+}
 div.brand-pages .conex-video .widget-video .slide-front:before {
   content: " ";
   position: absolute;

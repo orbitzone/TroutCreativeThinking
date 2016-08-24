@@ -35,6 +35,7 @@ div.brand-pages .half {
 }
 div.brand-pages img {
   display: block;
+  margin: 0 auto;
 }
 div.brand-pages .intro {
   max-width: 1050px;

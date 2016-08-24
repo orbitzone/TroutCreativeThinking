@@ -23,6 +23,7 @@ div.brand-pages h6 {
 }
 div.brand-pages img {
   display: block;
+  margin: 0 auto;
 }
 div.brand-pages .container-fluid {
   margin-bottom: 30px;

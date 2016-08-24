@@ -21,6 +21,9 @@ div.brand-pages h5,
 div.brand-pages h6 {
   color: #014587;
 }
+div.brand-pages img {
+  display: block;
+}
 div.brand-pages .container-fluid {
   margin-bottom: 30px;
 }

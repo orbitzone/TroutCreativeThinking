@@ -90,7 +90,7 @@
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image">
           <figure class="image">
-            <img src="images/brand-pages/conex/parallax-bpress-500x450.png" width="300px" alt="B Press 15-50mm"/>
+            <img src="images/brand-pages/conex/b-press.jpg" alt="B Press 15-50mm"/>
           </figure>          
         </div>
         <!-- End: HTML Widget-->
@@ -116,7 +116,7 @@
         <!-- Begin: HTML Widget-->
         <div class="widget-html-image">
           <figure class="image">
-            <img src="images/brand-pages/conex/parallax-bpress-XL-500x450.png" width="300px" alt="B Press 15-50mm"/>
+            <img src="images/brand-pages/conex/b-press-xl.jpg" alt="B Press 15-50mm"/>
           </figure>
         </div>
         <!-- End: HTML Widget-->
@@ -143,7 +143,7 @@
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image">
           <figure class="image">
-            <img src="images/brand-pages/conex/maxipro.jpg" width="300px" alt="B Press 15-50mm"/>
+            <img src="images/brand-pages/conex/maxipro.jpg" alt="B Press 15-50mm"/>
           </figure>          
         </div>
         <!-- End: HTML Widget-->

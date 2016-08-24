@@ -33,6 +33,9 @@ div.brand-pages .container-fluid {
 div.brand-pages .half {
   margin-bottom: 30px;
 }
+div.brand-pages img {
+  display: block;
+}
 div.brand-pages .intro {
   max-width: 1050px;
 }

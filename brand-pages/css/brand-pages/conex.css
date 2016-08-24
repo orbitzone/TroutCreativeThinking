@@ -112,6 +112,12 @@ div.brand-pages .conex-video .widget-video .play .label {
     font-size: 18px;
   }
 }
+div.brand-pages .conex-video-small-btn {
+  margin-bottom: 0;
+}
+div.brand-pages .conex-video-small-btn .widget-video {
+  margin-bottom: 30px;
+}
 div.brand-pages .conex-video-small-btn .widget-video .play .rbp-icon {
   width: 69px;
   height: 69px;
@@ -226,6 +232,9 @@ div.brand-pages .downloads .widget-html-image h2 {
 div.brand-pages .downloads .widget-slider {
   padding-bottom: 15px;
 }
+div.brand-pages .downloads .widget-slider.carousel .slick-slider .slick-slide {
+  padding: 0 15px;
+}
 div.brand-pages .downloads .widget-html-image,
 div.brand-pages .downloads .widget-slider {
   background-color: #F0F0F0;
@@ -339,13 +348,13 @@ div.brand-pages .downloads .widget-big-button a:hover .icon:after {
   transform: scale(0.75);
 }
 div.brand-pages .footer-ad {
-  margin-bottom: 100px;
+  margin-bottom: 0;
 }
 div.brand-pages .footer-ad .widget-html-image .image {
   margin: 0;
 }
 div.brand-pages .footer-ad .widget-html-image .rte {
-  padding: 20px 0;
+  padding: 30px 0;
   color: white;
   background: #003a6e;
 }
@@ -369,10 +378,12 @@ div.brand-pages .footer-ad .widget-html-image h3 {
   color: white;
   text-transform: uppercase;
   margin-bottom: 10px;
+  font-size: 20px;
 }
 @media (min-width: 768px) {
   div.brand-pages .footer-ad .widget-html-image h3 {
     margin-top: -15px;
+    font-size: 30px;
   }
 }
 div.brand-pages .footer-ad .widget-html-image a {
@@ -390,4 +401,10 @@ div.brand-pages .footer-ad .widget-html-image a {
   -ms-transform: translateY(10px);
   -o-transform: translateY(10px);
   transform: translateY(10px);
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  div.brand-pages .footer-ad .widget-html-image a {
+    font-size: 16px;
+  }
 }

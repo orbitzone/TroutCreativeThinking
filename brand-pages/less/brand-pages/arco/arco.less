@@ -29,6 +29,47 @@ div.brand-pages{
 			margin-bottom: 60px;
 		}
 	}
+		.arco-container {
+			border: solid 1px;
+			background-color: #eeeeee;
+			padding: 40px 20px;
+			text-align: center;
+			@media (min-width: @screen-md){
+				padding: 40px 90px;
+			}
+			h1 { 
+				font-size: 48px;
+				margin-bottom: 0px;
+				padding-bottom: 0;
+				font-weight: normal;
+				line-height: 58px;
+				&.strong {
+					font-weight: 700;
+				}
+			}
+			p {
+				margin-top: 13px;
+			}
+			.image{
+				text-align: center;
+				width:230px;
+				@media (min-width: @screen-md){
+					text-align: left;
+				}
+			}
+			a {
+				display: inline-block;
+				border: 1px solid #c2c2c2;
+				text-transform: uppercase;
+				font-weight: bold;
+				color: black;
+				height: 40px;
+				line-height: 38px;
+				padding: 0 26px;
+				margin-top: 22px;
+				font-size: 15px;			
+			}
+		}
 	.half {
 		margin-bottom: 30px;	
 	}
@@ -59,7 +100,7 @@ div.brand-pages{
 			}
 		}
 	}
-	.conex-video{
+	.arco-video{
 		margin-bottom: 60px;
 		.widget-video{
 			.slide-front{
@@ -84,7 +125,7 @@ div.brand-pages{
 					height: 69px;
 					margin: 0 auto;
 					display: block;
-					background-image: url(../../images/brand-pages/auspex/play-btn.png);
+					background-image: url(../../images/brand-pages/arco/play-btn.png);
 					background-size: 69px 69px;
 					@media (min-width: @screen-sm){
 						width: 138px;
@@ -113,7 +154,7 @@ div.brand-pages{
 			}
 		}
 	}
-	.conex-video-small-btn{
+	.arco-video-small-btn{
 		margin-bottom: 0;
 		.widget-video{
 			margin-bottom: 30px;
@@ -123,7 +164,7 @@ div.brand-pages{
 					height: 69px;
 					margin: 0 auto;
 					display: block;
-					background-image: url(../../images/brand-pages/auspex/play-btn.png);
+					background-image: url(../../images/brand-pages/arco/play-btn.png);
 					background-size: 69px 69px;
 					@media (min-width: @screen-md){
 						width: 110px;
@@ -200,7 +241,6 @@ div.brand-pages{
 
 		.widget-html-image {
 			.image {
-				// width:575px;
 				border-radius: 2px 2px 2px 2px;
 				-moz-border-radius: 2px 2px 2px 2px;
 				-webkit-border-radius: 2px 2px 2px 2px;
@@ -237,6 +277,8 @@ div.brand-pages{
 		.widget-slider{
 			padding-bottom: 15px;
 			&.carousel{
+				img { width:165px;
+						height: 240px;}
 			 .slick-slider{ 
 				 	.slick-slide{
 						padding: 0 15px;
@@ -264,7 +306,7 @@ div.brand-pages{
 			}
 		}
 		.rbp-icon{
-			background: transparent url(../../images/brand-pages/conex/download.svg) no-repeat;
+			background: transparent url(../../images/brand-pages/arco/download.svg) no-repeat;
 			width: 75px;
 			height: 75px;
 			display: inline-block;
@@ -274,17 +316,17 @@ div.brand-pages{
 		}
 		.download{
 			.rbp-icon{
-				background-image: url(../../images/brand-pages/conex/download.svg);
+				background-image: url(../../images/brand-pages/arco/download.svg);
 			}
 		}
 		.videos{
 			.rbp-icon{
-				background-image: url(../../images/brand-pages/conex/video.svg);
+				background-image: url(../../images/brand-pages/arco/video.svg);
 			}
 		}
 		.website{
 			.rbp-icon{
-				background-image: url(../../images/brand-pages/conex/website.svg);
+				background-image: url(../../images/brand-pages/arco/website.svg);
 			}
 		}
 		.widget-big-button{
@@ -320,7 +362,7 @@ div.brand-pages{
 						.transform(scale(1));
 						content: " ";
 						display: block;
-						background: transparent url(../../images/brand-pages/conex/shadow.png) no-repeat;
+						background: transparent url(../../images/brand-pages/arco/shadow.png) no-repeat;
 						width: 76px;
 						height: 14px;
 						margin: 0 auto;

@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0">
-    <title>Conex</title>
+    <title>Arco</title>
     <link rel="shortcut icon" href="images/icons/favicon.ico">
     <link rel="apple-touch-icon" href="images/icons/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-touch-icon-72x72.png">
@@ -19,7 +19,7 @@
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
     <link rel="stylesheet" type="text/css" href="css/reece-global.css" />
     <link rel="stylesheet" type="text/css" href="css/brand-pages/widgets.css" />
-    <link rel="stylesheet" type="text/css" href="css/brand-pages/conex.css" />
+    <link rel="stylesheet" type="text/css" href="css/brand-pages/arco.css" />
     <script type="text/javascript" src="http://fast.fonts.net/jsapi/f6c4cea9-439f-4621-a51a-4d6e6dfc74b7.js"></script>
   </head>
   <body class="brand-pages">
@@ -33,7 +33,7 @@
         </div>
       </div>
       <?php include "templates/Includes/Navigation.php" ?>
-      <?php include "templates/brand-pages/conex.php" ?>  
+      <?php include "templates/brand-pages/arco.php" ?>  
       <?php include "templates/Includes/Footer.php" ?>
     </div>
     <?php include "templates/Includes/MobileNavigation.php" ?>

@@ -3,9 +3,10 @@
     <!-- Begin: Logo Widget Start -->
     <div class="widget-logo">
       <header role="banner">
+        <img src="images/brand-pages/arco/arco-logo.jpg" alt="arco made in spain" />
         <h1>
           <a href="/">
-            <img src="images/brand-pages/conex/conex-banner-resized.jpg" alt="conex"><!-- Set the image width-->
+            <img src="images/brand-pages/arco/header-arco.jpg" alt="arco" /><!-- Set the image width-->
           </a>
         </h1> 
       </header>
@@ -19,7 +20,7 @@
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image">
           <div class="rte">
-            <h3>Discover what makes us the industry leader.</h3>            
+            <h3>Quality by Tradition</h3>            
           </div>
         </div>
         <!-- End: HTML Widget-->
@@ -28,7 +29,8 @@
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image">
           <div class="rte">
-            <p>Passionate about excellence, Conex Bänninger is the name professionals trust for domestic, commercial, industrial, air conditioning and refrigeration applications worldwide. Conex Bänninger is an ISO 9000 assured company, which assures you the very best in quality.</p>
+            <p>Since 1973, Arco has been a family operated business heavily invested in innovation and quality. 
+              With a focus on tailoring products to suit each and every market that they work with, Arco are dedicated to providing products of the highest quality to suit any home.</p>
           </div>
         </div>
         <!-- End: HTML Widget-->
@@ -36,7 +38,7 @@
     </div>
   </div>
 
-  <div class="container-fluid conex-video">
+  <div class="container-fluid arco-video">
     <div class="row">
       <div class="col-xs-12">
         <!-- Begin: Video Widget-->  
@@ -44,10 +46,10 @@
           <div class="video-slides">
             <div class="slide slide-front">
               <div class="image">
-                <img src="images/brand-pages/conex/video-placeholder.jpg" alt=">B< Press Press Fit System">
+                <img src="images/brand-pages/arco/video-placeholder.jpg" alt="a tradition of innovation">
               </div>
               <div class="slide-content">
-                <button type="button" class="play" data-video="_0TBVfMLoc8">
+                <button type="button" class="play" data-video="">
                   <i class="rbp-icon"></i>
                   <!--<span class="label"></span>  -->
                 </button>  
@@ -70,13 +72,59 @@
     </div>
   </div>
 
+  <!-- DOWNLOADS SECTION -->  
+  <div class="container-fluid arco-container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="widget-html-image">
+          <div class="rte">
+            <h1 class="strong">Twice as nice.</h1>
+              <h1>Quarter turn Double Grifo garden taps.</h1> 
+              <p>Arco Grifo’s innovative tap range delivers full water flow in just a quarter turn with the Arco Double Grifo <br> 
+                Ideal for installations which require 2 independent outlets from a single connection.
+              </p>
+              <p><a href="#">View range</a></p>         
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <!-- Begin: Slider/Carousel Widget Start-->
+        <div class="widget-slider carousel">
+          <div class="slides" data-slides-to-show="3" data-slides-to-scroll="3">
+            <div class="slide">
+              <figure class="image">
+                  <img src="images/brand-pages/arco/garden-tap-left.jpg" alt="garden tap">  
+                </a>
+              </figure>
+            </div>
+            <div class="slide">
+              <figure class="image">
+                <img src="images/brand-pages/arco/arrow-icon.jpg" alt="quarter turn grifo"> 
+              </figure>
+            </div>
+            <div class="slide">
+              <figure class="image">
+                  <img src="images/brand-pages/arco/garden-tap-right.jpg" alt="garden tap">
+              </figure>
+            </div>        
+          </div>
+        </div>    
+        <!-- End: Slider/Carousel Widget-->   
+      </div>
+    </div>        
+  </div>
+
+
+
   <div class="container-fluid products-intro">
     <div class="row">
       <div class="col-sm-12">
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image">
           <div class="rte">
-            <h2><!--<a href="#">-->PRODUCT PROFILES<!--</a>--></h2>
+            <h2><!--<a href="#">-->FEATURE PRODUCTS<!--</a>--></h2>
           </div>
         </div>
         <!-- End: HTML Widget-->
@@ -90,7 +138,7 @@
         <!-- Begin: HTML Widget-->  
         <div class="widget-html-image">
           <figure class="image">
-            <img src="images/brand-pages/conex/b-press.jpg" alt="B Press 15-50mm"/>
+            <img src="images/brand-pages/arco/product-1.jpg" alt="mini stop"/>
           </figure>          
         </div>
         <!-- End: HTML Widget-->
@@ -99,10 +147,9 @@
         <!-- Begin: HTML Widget-->
         <div class="widget-html-image">
           <div class="rte">
-            <h3>B PRESS 15-50mm</h3>
-            <p>Conex Bänninger is an ISO 9000 quality &gt;B&lt; Press is a versatile press fitting system for use with hard, half hard or soft copper tube pro assured company, which assures you the very best in quality. 
-          Conex Bänningerviding a secure, life long, leak-proof joint.</p>
-            <p><a href="http://www.reece.com.au/plumbing/products/pipe_%26_fittings/conex_banninger">View range</a></p>
+            <h3>Mini Stop</h3>
+            <p>The range of Arco stops are a stylish addition to any bathroom or laundry. The Arco Mini Stops, enable you to add a similar finishing touch to a toilet and washing machine installation.</p>
+            <p><a href="#">View range</a></p>
           </div>  
         </div>
         <!-- End: HTML Widget-->    
@@ -116,7 +163,7 @@
         <!-- Begin: HTML Widget-->
         <div class="widget-html-image">
           <figure class="image">
-            <img src="images/brand-pages/conex/b-press-xl.jpg" alt="B Press 15-50mm"/>
+            <img src="images/brand-pages/arco/product-2.jpg" alt="combi valve"/>
           </figure>
         </div>
         <!-- End: HTML Widget-->
@@ -125,10 +172,9 @@
         <!-- Begin: HTML Widget-->
         <div class="widget-html-image">
           <div class="rte">
-            <h3>B Press XL 65-100mm</h3>
-            <p>&gt;B&lt; Press XL has only two internal parts, the grip ring and the O-ring. 
-          Both parts have an internal diameter larger than the tube, which allows for easy tube insertion and pre press leak indication.</p>
-            <p><a href="http://www.reece.com.au/plumbing/products/pipe_%26_fittings/conex_banninger_xl">View range</a></p>
+            <h3>Combi valve</h3>
+            <p>The Combi valve has ¼ turn isolation with a compact design. It enables you to connect taps and dishwashers with a single fitting.  The Combi Valve range are European design and manufactured.</p>
+            <p><a href="#">View range</a></p>
           </div>  
         </div>
       <!-- End: HTML Widget-->
@@ -136,33 +182,6 @@
     </div><!-- ./end row -->
   </div>
   
-
-  <div class="container-fluid products">
-    <div class="row">
-      <div class="col-sm-6">
-        <!-- Begin: HTML Widget-->  
-        <div class="widget-html-image">
-          <figure class="image">
-            <img src="images/brand-pages/conex/maxipro.jpg" alt="B Press 15-50mm"/>
-          </figure>          
-        </div>
-        <!-- End: HTML Widget-->
-      </div>
-      <div class="col-sm-6">
-        <!-- Begin: HTML Widget-->
-        <div class="widget-html-image">
-          <div class="rte">
-            <h3>Maxipro</h3>
-            <p>MaxiPro press fittings use a high-quality HNBR O-ring that forms a secure leak-free joint when pressed. 
-            The innovative lead-in edge design grips the pipe to aid installation while helping to protect the O-ring 
-            from damage or displacement.</p>
-            <p><a href="#">View range</a></p>
-          </div>  
-        </div>
-        <!-- End: HTML Widget-->
-      </div>
-    </div><!-- ./end row -->
-  </div>
   
   <div class="container-fluid separator">
     <div class="row">
@@ -176,7 +195,7 @@
     </div>
   </div>
   <!-- left side video 1 of 2 -->
-  <div class="container-fluid conex-video conex-video-small-btn">
+  <div class="container-fluid arco-video arco-video-small-btn">
     <div class="row">
       <div class="col-sm-6">
         <!-- Begin: Video Widget-->  
@@ -184,12 +203,12 @@
           <div class="video-slides">
             <div class="slide slide-front">
               <div class="image">
-                <img src="images/brand-pages/conex/video-placeholder-1.jpg" alt=">Installation Process">
+                <img src="images/brand-pages/arco/video-thumb1.jpg" alt=">Dura Arco">
               </div>
               <div class="slide-content">
                 <button type="button" class="play" data-video="9sm8LrmucmU">
                   <i class="rbp-icon"></i>
-                  <span class="label">Conex Bänninger - Installation process</span>
+                  <span class="label">learn about dura arco</span>
                 </button>  
               </div>
             </div>
@@ -215,12 +234,12 @@
           <div class="video-slides">
             <div class="slide slide-front">
               <div class="image">
-                <img src="images/brand-pages/conex/video-placeholder-2.jpg" alt="Specialist O-ring">
+                <img src="images/brand-pages/arco/video-thumb2.jpg" alt="Arco Grifo garden taps">
               </div>
               <div class="slide-content">
-                <button type="button" class="play" data-video="U4VC61_jAAk">
+                <button type="button" class="play" data-video="#">
                   <i class="rbp-icon"></i>
-                  <span class="label">Conex Bänninger - Specialist o-ring</span>
+                  <span class="label">arco grifo garden taps</span>
                 </button>  
               </div>
             </div>
@@ -256,37 +275,28 @@
       <div class="col-xs-12">
         <!-- Begin: Slider/Carousel Widget Start-->
         <div class="widget-slider carousel">
-          <div class="slides" data-slides-to-show="3" data-slides-to-scroll="3">
+          <div class="slides" data-slides-to-show="2" data-slides-to-scroll="2">
             <div class="slide">
               <figure class="image">
-                <a href="http://www.reece.com.au/new/pdf/products/conex-high-temperature-fittings.pdf" target="_blank">
-                  <img src="images/brand-pages/conex/download-thumb1.jpg" alt="Brochure 1">  
+                <a href="#" target="_blank">
+                  <img src="images/brand-pages/arco/download-thumb1.jpg" alt="Brochure 1">  
                 </a>
               </figure>
               <div class="text">
-               <a href="http://www.reece.com.au/assets/brands/820000/laufen-bathroom-products.pdf" target="_blank" class="widget-link">Download</a>
+               <a href="#" target="_blank" class="widget-link">Download</a>
               </div>
             </div>
             <div class="slide">
               <figure class="image">
-                <a href="http://www.conexbanninger.com.au/assets/Uploads/WM-022197-Certificate.pdf" target="_blank">
-                  <img src="images/brand-pages/conex/download-thumb2.jpg" alt="Watermark Licence">  
+                <a href="#" target="_blank">
+                  <img src="images/brand-pages/arco/download-thumb2.jpg" alt="Watermark Licence">  
                 </a>
               </figure>
               <div class="text">
-                <a href="http://www.conexbanninger.com.au/assets/Uploads/WM-022197-Certificate.pdf" target="_blank" class="widget-link">Download</a>
+                <a href="#" target="_blank" class="widget-link">Download</a>
               </div>
             </div>
-            <div class="slide">
-              <figure class="image">
-                <a href="http://www.conexbanninger.com.au/assets/Uploads/Conex-Banninger-technical-guide.pdf" target="_blank">
-                  <img src="images/brand-pages/conex/download-thumb3.jpg" alt="Conex Banninger Technical Guide">  
-                </a>
-              </figure>
-              <div class="text">
-                <a href="http://www.conexbanninger.com.au/assets/Uploads/Conex-Banninger-technical-guide.pdf" target="_blank" class="widget-link">Download</a>
-              </div>
-            </div>        
+                  
           </div>
         </div>    
         <!-- End: Slider/Carousel Widget-->   
@@ -300,12 +310,12 @@
         <!-- Begin: HTML Widget-->
       <div class="widget-html-image">
         <figure class="image">
-          <img src="images/brand-pages/conex/conex-footer.jpg" width="1200px" alt="B Press 15-50mm"/>
+          <img src="images/brand-pages/arco/arco-footer.jpg" width="1200px" alt="B Press 15-50mm"/>
         </figure> 
         <div class="rte">
-          <h3>Conexbanninger.com.au</h3>
-          <p>Want to find out more about the<br>Conex Bänninger range?</p>
-          <p><a href="http://conexbanninger.com.au" target="_blank">Visit website</a></p>
+          <h3>arcobanninger.com.au</h3>
+          <p>Want to find out more about the<br>arco Bänninger range?</p>
+          <p><a href="http://arcobanninger.com.au" target="_blank">Visit website</a></p>
         </div>  
       </div>
       <!-- End: HTML Widget-->

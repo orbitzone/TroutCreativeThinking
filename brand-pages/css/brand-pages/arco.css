@@ -1,0 +1,471 @@
+/* Video Widget*/
+/* Big button Widget */
+div.brand-pages {
+  text-align: center;
+  color: #7d8c93;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  overflow-x: hidden;
+  font-family: 'Neue Helvetica W01', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+div.brand-pages h1,
+div.brand-pages h2,
+div.brand-pages h3,
+div.brand-pages h4,
+div.brand-pages h5,
+div.brand-pages h6 {
+  color: #57585d;
+}
+div.brand-pages img {
+  display: block;
+  margin: 0 auto;
+}
+div.brand-pages .container-fluid {
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  div.brand-pages .container-fluid {
+    margin-bottom: 60px;
+  }
+}
+div.brand-pages .arco-container {
+  border: solid 1px;
+  background-color: #eeeeee;
+  padding: 40px 20px;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  div.brand-pages .arco-container {
+    padding: 40px 90px;
+  }
+}
+div.brand-pages .arco-container h1 {
+  font-size: 48px;
+  margin-bottom: 0px;
+  padding-bottom: 0;
+  font-weight: normal;
+  line-height: 58px;
+}
+div.brand-pages .arco-container h1.strong {
+  font-weight: 700;
+}
+div.brand-pages .arco-container p {
+  margin-top: 13px;
+}
+div.brand-pages .arco-container .image {
+  text-align: center;
+  width: 230px;
+}
+@media (min-width: 992px) {
+  div.brand-pages .arco-container .image {
+    text-align: left;
+  }
+}
+div.brand-pages .arco-container a {
+  display: inline-block;
+  border: 1px solid #c2c2c2;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+  height: 40px;
+  line-height: 38px;
+  padding: 0 26px;
+  margin-top: 22px;
+  font-size: 15px;
+}
+div.brand-pages .half {
+  margin-bottom: 30px;
+}
+div.brand-pages .widget-logo {
+  padding: 0;
+}
+div.brand-pages .discover h3 {
+  font-size: 34px;
+  max-width: 360px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  div.brand-pages .discover h3 {
+    max-width: 100%;
+    text-align: left;
+  }
+}
+@media (min-width: 992px) {
+  div.brand-pages .discover h3 {
+    padding-left: 34%;
+  }
+}
+div.brand-pages .discover p {
+  text-align: center;
+  max-width: 445px;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  div.brand-pages .discover p {
+    text-align: left;
+  }
+}
+div.brand-pages .arco-video {
+  margin-bottom: 60px;
+}
+div.brand-pages .arco-video .widget-video .slide-front:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+div.brand-pages .arco-video .widget-video button.close i {
+  color: #57585d;
+}
+div.brand-pages .arco-video .widget-video .play .rbp-icon {
+  width: 69px;
+  height: 69px;
+  margin: 0 auto;
+  display: block;
+  background-image: url(../../images/brand-pages/arco/play-btn.png);
+  background-size: 69px 69px;
+}
+@media (min-width: 768px) {
+  div.brand-pages .arco-video .widget-video .play .rbp-icon {
+    width: 138px;
+    height: 138px;
+    background-size: 138px 138px;
+  }
+}
+div.brand-pages .arco-video .widget-video .play .rbp-icon:before {
+  content: " ";
+}
+div.brand-pages .arco-video .widget-video .play .label {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  position: absolute;
+  left: 50%;
+  bottom: -34px;
+  transform: translateX(-50%);
+}
+@media (min-width: 768px) {
+  div.brand-pages .arco-video .widget-video .play .label {
+    font-size: 15px;
+  }
+}
+@media (min-width: 992px) {
+  div.brand-pages .arco-video .widget-video .play .label {
+    font-size: 18px;
+  }
+}
+div.brand-pages .arco-video-small-btn {
+  margin-bottom: 0;
+}
+div.brand-pages .arco-video-small-btn .widget-video {
+  margin-bottom: 30px;
+}
+div.brand-pages .arco-video-small-btn .widget-video .play .rbp-icon {
+  width: 69px;
+  height: 69px;
+  margin: 0 auto;
+  display: block;
+  background-image: url(../../images/brand-pages/arco/play-btn.png);
+  background-size: 69px 69px;
+}
+@media (min-width: 992px) {
+  div.brand-pages .arco-video-small-btn .widget-video .play .rbp-icon {
+    width: 110px;
+    height: 110px;
+    background-size: 110px 110px;
+  }
+}
+div.brand-pages .arco-video-small-btn .widget-video .play .rbp-icon:before {
+  content: " ";
+}
+div.brand-pages .products-intro {
+  margin-bottom: 56px;
+}
+div.brand-pages .products-intro h2 {
+  font-size: 29px;
+  margin-bottom: 0;
+  text-align: center;
+}
+div.brand-pages .products {
+  margin-bottom: 48px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  div.brand-pages .products {
+    text-align: left;
+  }
+  div.brand-pages .products.align-right .rte {
+    text-align: right;
+  }
+}
+div.brand-pages .products .image {
+  margin-bottom: 0;
+  text-align: center;
+}
+div.brand-pages .products .row {
+  margin-left: -25px;
+  margin-right: -25px;
+}
+div.brand-pages .products .row .col-sm-12,
+div.brand-pages .products .row .col-sm-6 {
+  padding: 0 25px;
+}
+div.brand-pages .products a {
+  display: inline-block;
+  border: 1px solid #c2c2c2;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+  height: 40px;
+  line-height: 38px;
+  padding: 0 26px;
+  margin-top: 22px;
+  font-size: 15px;
+}
+div.brand-pages .products h3 {
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 60px;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+@media (min-width: 768px) {
+  div.brand-pages .products h3 {
+    margin-top: 0px;
+  }
+}
+@media (min-width: 992px) {
+  div.brand-pages .products h3 {
+    margin-top: 60px;
+  }
+}
+div.brand-pages .products p {
+  color: #1d1d1d;
+  font-weight: 300;
+}
+div.brand-pages .products .widget-html-image .image {
+  border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
+  border: 1px solid #dcdcdc;
+}
+div.brand-pages .products .widget-html-image .image figcaption {
+  top: inherit;
+  bottom: 30px;
+  font-size: 25px;
+  font-weight: bold;
+}
+div.brand-pages .separator hr {
+  border-color: #dcdcdc;
+  margin-top: 11px;
+  margin-bottom: 0;
+}
+div.brand-pages .downloads {
+  margin-bottom: 60px;
+  text-align: center;
+}
+div.brand-pages .downloads .widget-html-image h2 {
+  margin-bottom: 0;
+  padding: 25px 0 32px;
+  color: black;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+div.brand-pages .downloads .widget-slider {
+  padding-bottom: 15px;
+}
+div.brand-pages .downloads .widget-slider.carousel img {
+  width: 165px;
+  height: 240px;
+}
+div.brand-pages .downloads .widget-slider.carousel .slick-slider .slick-slide {
+  padding: 0 15px;
+}
+@media (min-width: 768px) {
+  div.brand-pages .downloads .widget-slider.carousel .slick-slider .slick-slide {
+    padding: 0 38px;
+  }
+}
+div.brand-pages .downloads .widget-html-image,
+div.brand-pages .downloads .widget-slider {
+  background-color: #F0F0F0;
+}
+div.brand-pages .downloads .widget-link {
+  border: 1px solid #c2c2c2;
+  display: block;
+  padding: 0;
+  line-height: 42px;
+}
+div.brand-pages .downloads .rte {
+  text-align: center;
+  font-weight: bold;
+}
+div.brand-pages .downloads .rte .img {
+  min-height: 400px;
+}
+div.brand-pages .downloads .rbp-icon {
+  background: transparent url(../../images/brand-pages/arco/download.svg) no-repeat;
+  width: 75px;
+  height: 75px;
+  display: inline-block;
+}
+div.brand-pages .downloads .rbp-icon:before {
+  content: "";
+}
+div.brand-pages .downloads .download .rbp-icon {
+  background-image: url(../../images/brand-pages/arco/download.svg);
+}
+div.brand-pages .downloads .videos .rbp-icon {
+  background-image: url(../../images/brand-pages/arco/video.svg);
+}
+div.brand-pages .downloads .website .rbp-icon {
+  background-image: url(../../images/brand-pages/arco/website.svg);
+}
+div.brand-pages .downloads .widget-big-button {
+  background: black;
+  text-align: center;
+  padding: 40px;
+  margin-bottom: 10px;
+}
+div.brand-pages .downloads .widget-big-button .rte {
+  margin-bottom: 0 !important;
+}
+div.brand-pages .downloads .widget-big-button h3 {
+  color: white;
+}
+div.brand-pages .downloads .widget-big-button a {
+  display: block;
+  color: white;
+}
+div.brand-pages .downloads .widget-big-button a .text {
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1;
+}
+@media (min-width: 768px) {
+  div.brand-pages .downloads .widget-big-button a .text {
+    font-size: 32px;
+  }
+}
+div.brand-pages .downloads .widget-big-button a .icon {
+  margin-bottom: 15px;
+}
+div.brand-pages .downloads .widget-big-button a .icon i {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+div.brand-pages .downloads .widget-big-button a .icon:after {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  content: " ";
+  display: block;
+  background: transparent url(../../images/brand-pages/arco/shadow.png) no-repeat;
+  width: 76px;
+  height: 14px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+div.brand-pages .downloads .widget-big-button a:hover .text {
+  text-decoration: underline;
+}
+div.brand-pages .downloads .widget-big-button a:hover .icon i {
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+div.brand-pages .downloads .widget-big-button a:hover .icon:after {
+  -webkit-transform: scale(0.75);
+  -moz-transform: scale(0.75);
+  -ms-transform: scale(0.75);
+  -o-transform: scale(0.75);
+  transform: scale(0.75);
+}
+div.brand-pages .footer-ad {
+  margin-bottom: 0;
+}
+div.brand-pages .footer-ad .widget-html-image .image {
+  margin: 0;
+}
+div.brand-pages .footer-ad .widget-html-image .rte {
+  padding: 30px 0;
+  color: white;
+  background: #003a6e;
+}
+@media (min-width: 768px) {
+  div.brand-pages .footer-ad .widget-html-image .rte {
+    padding: 0;
+    max-width: 440px;
+    background: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-left: -220px;
+  }
+}
+div.brand-pages .footer-ad .widget-html-image h3 {
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+@media (min-width: 768px) {
+  div.brand-pages .footer-ad .widget-html-image h3 {
+    margin-top: -15px;
+    font-size: 30px;
+  }
+}
+div.brand-pages .footer-ad .widget-html-image a {
+  text-transform: uppercase;
+  color: white;
+  background: #004785;
+  height: 43px;
+  line-height: 41px;
+  padding: 0 17px;
+  display: inline-block;
+  font-weight: bold;
+  border: 1px solid white;
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  -o-transform: translateY(10px);
+  transform: translateY(10px);
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  div.brand-pages .footer-ad .widget-html-image a {
+    font-size: 16px;
+  }
+}

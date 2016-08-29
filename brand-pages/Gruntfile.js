@@ -28,7 +28,9 @@ module.exports = function(grunt) {
               "css/brand-pages/conex.css": "less/brand-pages/conex/conex.less",
               "css/brand-pages/american-standard.css": "less/brand-pages/american-standard/american-standard.less",
               "css/brand-pages/morse.css": "less/brand-pages/morse/morse.less",
-              "css/brand-pages/walraven.css": "less/brand-pages/walraven/walraven.less"
+              "css/brand-pages/walraven.css": "less/brand-pages/walraven/walraven.less",
+              "css/brand-pages/thermann.css": "less/brand-pages/thermann/thermann.less",
+              "css/brand-pages/arco.css": "less/brand-pages/arco/arco.less"
           }
         ]
       }

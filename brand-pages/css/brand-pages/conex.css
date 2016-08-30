@@ -239,6 +239,10 @@ div.brand-pages .downloads .widget-html-image h2 {
 div.brand-pages .downloads .widget-slider {
   padding-bottom: 15px;
 }
+div.brand-pages .downloads .widget-slider.carousel img {
+  width: 165px;
+  height: 240px;
+}
 div.brand-pages .downloads .widget-slider.carousel .slick-slider .slick-slide {
   padding: 0 15px;
 }

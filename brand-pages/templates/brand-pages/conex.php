@@ -256,17 +256,8 @@
       <div class="col-xs-12">
         <!-- Begin: Slider/Carousel Widget Start-->
         <div class="widget-slider carousel">
-          <div class="slides" data-slides-to-show="3" data-slides-to-scroll="3">
-            <div class="slide">
-              <figure class="image">
-                <a href="http://www.reece.com.au/new/pdf/products/conex-high-temperature-fittings.pdf" target="_blank">
-                  <img src="images/brand-pages/conex/download-thumb1.jpg" alt="Brochure 1">  
-                </a>
-              </figure>
-              <div class="text">
-               <a href="http://www.reece.com.au/assets/brands/820000/laufen-bathroom-products.pdf" target="_blank" class="widget-link">Download</a>
-              </div>
-            </div>
+          <div class="slides" data-slides-to-show="2" data-slides-to-scroll="2">
+            
             <div class="slide">
               <figure class="image">
                 <a href="http://www.conexbanninger.com.au/assets/Uploads/WM-022197-Certificate.pdf" target="_blank">

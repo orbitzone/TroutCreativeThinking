@@ -92,6 +92,7 @@
     <li class="wip"><a href="brand-pages/index-rehau-orrong-road.php" target="_blank">Rehau - Orrong Road</a></li>
     <li class="wip"><a href="brand-pages/index-rehau.php" target="_blank">Rehau</a></li>
     <li class="wip"><a href="brand-pages/index-roca.php" target="_blank">Roca</a></li>
+    <li class="wip"><a href="brand-pages/index-thermann.php" target="_blank">Thermann</a></li>
     <li class="wip"><a href="brand-pages/index-walraven.php" target="_blank">Walraven</a></li>
     <li class="wip"><a href="brand-pages/index-wolfen.php" target="_blank">Wolfen</a></li>
   </ul>

@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0">
-    <title>Conex</title>
+    <title>Thermann</title>
     <link rel="shortcut icon" href="images/icons/favicon.ico">
     <link rel="apple-touch-icon" href="images/icons/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-touch-icon-72x72.png">

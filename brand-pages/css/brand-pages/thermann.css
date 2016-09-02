@@ -3,8 +3,8 @@
 div.brand-pages {
   text-align: center;
   color: #3a3a3a;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 300;
   letter-spacing: -0.01em;
   overflow-x: hidden;
@@ -30,7 +30,7 @@ div.brand-pages .container-fluid {
 }
 @media (min-width: 768px) {
   div.brand-pages .container-fluid {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
 }
 div.brand-pages .half {
@@ -39,11 +39,14 @@ div.brand-pages .half {
 div.brand-pages .widget-logo {
   padding: 0;
 }
+div.brand-pages .discover .rte {
+  margin: 0 73px 0 73px;
+  text-align: center;
+}
 div.brand-pages .discover h3 {
-  font-size: 34px;
-  max-width: 360px;
-  margin: 0 auto;
-  margin-bottom: 30px;
+  font-size: 28px;
+  width: 100%;
+  margin-bottom: 10px;
   text-align: center;
 }
 @media (min-width: 768px) {
@@ -54,17 +57,18 @@ div.brand-pages .discover h3 {
 }
 @media (min-width: 992px) {
   div.brand-pages .discover h3 {
-    padding-left: 34%;
+    text-align: center;
   }
 }
 div.brand-pages .discover p {
   text-align: center;
-  max-width: 445px;
+  width: 100%;
   margin-bottom: 10px;
+  line-height: 28px;
 }
 @media (min-width: 768px) {
   div.brand-pages .discover p {
-    text-align: left;
+    text-align: center;
   }
 }
 div.brand-pages .thermann-video {
@@ -184,7 +188,6 @@ div.brand-pages .products a {
   height: 40px;
   line-height: 38px;
   padding: 0 26px;
-  margin-top: 22px;
   font-size: 15px;
 }
 div.brand-pages .products h3 {
@@ -201,7 +204,7 @@ div.brand-pages .products h3 {
 }
 @media (min-width: 992px) {
   div.brand-pages .products h3 {
-    margin-top: 60px;
+    margin-top: 30px;
   }
 }
 div.brand-pages .products p {

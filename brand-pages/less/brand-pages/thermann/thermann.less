@@ -6,8 +6,8 @@
 div.brand-pages{
 	text-align: center;
 	color: @body;
-	font-size: 18px;
-	line-height: 27px;
+	font-size: 16px;
+	line-height: 24px;
 	font-weight: 300;
 	letter-spacing: -0.01em;
 	overflow-x: hidden;
@@ -26,7 +26,7 @@ div.brand-pages{
 	.container-fluid{
 		margin-bottom: 30px;
 		@media (min-width: 768px){
-			margin-bottom: 60px;
+			margin-bottom: 50px;
 		}
 	}
 	.half {
@@ -36,26 +36,31 @@ div.brand-pages{
 		padding: 0;
 	}
 	.discover{
+		.rte {
+			margin: 0 73px 0 73px;
+			text-align: center;
+		}
+
 		h3 {
-			font-size: 34px;
-			max-width: 360px;
-			margin: 0 auto;
-			margin-bottom: 30px;
+			font-size: 28px;
+			width: 100%;
+			margin-bottom: 10px;
 			text-align: center;
 			@media (min-width: @screen-sm){
 				max-width: 100%;
 				text-align: left;				
 			}
 			@media (min-width: @screen-md){
-				padding-left: 34%;
+				text-align: center;
 			}
 		}
 		p {
 			text-align: center;
-			max-width: 445px;
+			width: 100%;
 			margin-bottom: 10px;
+			line-height: 28px;
 			@media (min-width: @screen-sm){
-				text-align: left;
+				text-align: center;
 			}
 		}
 	}
@@ -177,7 +182,7 @@ div.brand-pages{
 			height: 40px;
 			line-height: 38px;
 			padding: 0 26px;
-			margin-top: 22px;
+			// margin-top: 22px;
 			font-size: 15px;			
 		}
 		h3 {
@@ -190,7 +195,7 @@ div.brand-pages{
 				margin-top: 0px;
       }
       @media (min-width: @screen-md){
-      	margin-top: 60px;
+      	margin-top: 30px;
       }
 		}
 		p {
@@ -206,7 +211,7 @@ div.brand-pages{
 				-webkit-border-radius: 2px 2px 2px 2px;
 				border: 1px solid #dcdcdc; 
 
-				figcaption{
+				figcaption {
 					top: inherit;
 					bottom: 30px;
 					font-size: 25px;
@@ -214,7 +219,8 @@ div.brand-pages{
 				}
 			}
 		}
-	}	
+	}
+
 	.separator{
 		hr{
 			border-color: #dcdcdc;

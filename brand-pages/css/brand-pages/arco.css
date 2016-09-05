@@ -34,7 +34,6 @@ div.brand-pages .container-fluid {
   }
 }
 div.brand-pages .arco-container {
-  border: solid 1px;
   background-color: #eeeeee;
   padding: 40px 20px;
   text-align: center;
@@ -57,15 +56,6 @@ div.brand-pages .arco-container h1.strong {
 div.brand-pages .arco-container p {
   margin-top: 13px;
 }
-div.brand-pages .arco-container .image {
-  text-align: center;
-  width: 230px;
-}
-@media (min-width: 992px) {
-  div.brand-pages .arco-container .image {
-    text-align: left;
-  }
-}
 div.brand-pages .arco-container a {
   display: inline-block;
   border: 1px solid #c2c2c2;
@@ -77,6 +67,30 @@ div.brand-pages .arco-container a {
   padding: 0 26px;
   margin-top: 22px;
   font-size: 15px;
+}
+div.brand-pages .arco-container .widget-slider {
+  padding-bottom: 15px;
+}
+div.brand-pages .arco-container .widget-slider.carousel img {
+  width: 100%;
+}
+div.brand-pages .arco-container .widget-slider.carousel .slick-slider .slick-slide {
+  padding: 30px 15px;
+}
+@media (min-width: 992px) {
+  div.brand-pages .arco-container .widget-slider.carousel .slick-slider .slick-slide {
+    padding: 10px 38px;
+  }
+}
+div.brand-pages .arco-container .widget-html-image,
+div.brand-pages .arco-container .widget-slider {
+  background-color: #eeeeee;
+}
+div.brand-pages .arco-container .widget-link {
+  border: 1px solid #c2c2c2;
+  display: block;
+  padding: 0;
+  line-height: 42px;
 }
 div.brand-pages .half {
   margin-bottom: 30px;

@@ -5,9 +5,7 @@
       <header role="banner">
         <img src="images/brand-pages/arco/arco-logo.jpg" alt="arco made in spain" />
         <h1>
-          <a href="/">
             <img src="images/brand-pages/arco/header-arco.jpg" alt="arco" /><!-- Set the image width-->
-          </a>
         </h1> 
       </header>
     </div>      
@@ -49,7 +47,7 @@
                 <img src="images/brand-pages/arco/video-placeholder.jpg" alt="a tradition of innovation">
               </div>
               <div class="slide-content">
-                <button type="button" class="play" data-video="">
+                <button type="button" class="play" data-video="xl3aYwvwGZ8">
                   <i class="rbp-icon"></i>
                   <!--<span class="label"></span>  -->
                 </button>  
@@ -72,18 +70,18 @@
     </div>
   </div>
 
-  <!-- DOWNLOADS SECTION -->  
+  <!-- VIEW RANGE SECTION -->  
   <div class="container-fluid arco-container">
     <div class="row">
       <div class="col-xs-12">
         <div class="widget-html-image">
           <div class="rte">
-            <h1 class="strong">Twice as nice.</h1>
-              <h1>Quarter turn Double Grifo garden taps.</h1> 
-              <p>Arco Grifo’s innovative tap range delivers full water flow in just a quarter turn with the Arco Double Grifo <br> 
-                Ideal for installations which require 2 independent outlets from a single connection.
-              </p>
-              <p><a href="#">View range</a></p>         
+            <h1 class="strong">Twice as nice.</h1>    
+            <h1>Quarter turn Double Grifo garden taps.</h1> 
+            <p>Arco Grifo’s innovative tap range delivers full water flow in just a quarter turn with the Arco Double Grifo <br> 
+              Ideal for installations which require 2 independent outlets from a single connection.
+            </p>
+            <p><a href="http://www.reece.com.au/plumbing/products/valves/arco">View range</a></p>         
           </div>
         </div>
       </div>
@@ -95,28 +93,28 @@
           <div class="slides" data-slides-to-show="3" data-slides-to-scroll="3">
             <div class="slide">
               <figure class="image">
-                  <img src="images/brand-pages/arco/garden-tap-left.jpg" alt="garden tap">  
-                </a>
+                <img src="images/brand-pages/arco/garden-tap-left.jpg" alt="garden tap">  
               </figure>
             </div>
+
             <div class="slide">
               <figure class="image">
-                <img src="images/brand-pages/arco/arrow-icon.jpg" alt="quarter turn grifo"> 
-              </figure>
-            </div>
-            <div class="slide">
-              <figure class="image">
-                  <img src="images/brand-pages/arco/garden-tap-right.jpg" alt="garden tap">
-              </figure>
-            </div>        
-          </div>
-        </div>    
-        <!-- End: Slider/Carousel Widget-->   
-      </div>
-    </div>        
-  </div>
+               <img src="images/brand-pages/arco/arrow-icon.jpg" alt="quarter turn grifo"> 
+             </figure>
+           </div>
 
+           <div class="slide">              
+            <figure class="image">
+              <img src="images/brand-pages/arco/garden-tap-right.jpg" alt="garden tap">
+            </figure>
+          </div>   
 
+        </div>
+      </div>    
+      <!-- End: Slider/Carousel Widget-->   
+    </div>
+  </div>        
+</div>
 
   <div class="container-fluid products-intro">
     <div class="row">
@@ -149,7 +147,7 @@
           <div class="rte">
             <h3>Mini Stop</h3>
             <p>The range of Arco stops are a stylish addition to any bathroom or laundry. The Arco Mini Stops, enable you to add a similar finishing touch to a toilet and washing machine installation.</p>
-            <p><a href="#">View range</a></p>
+            <p><a href="http://www.reece.com.au/plumbing/products/103511">View range</a></p>
           </div>  
         </div>
         <!-- End: HTML Widget-->    
@@ -174,7 +172,7 @@
           <div class="rte">
             <h3>Combi valve</h3>
             <p>The Combi valve has ¼ turn isolation with a compact design. It enables you to connect taps and dishwashers with a single fitting.  The Combi Valve range are European design and manufactured.</p>
-            <p><a href="#">View range</a></p>
+            <p><a href="http://www.reece.com.au/plumbing/products/100833">View range</a></p>
           </div>  
         </div>
       <!-- End: HTML Widget-->
@@ -206,7 +204,7 @@
                 <img src="images/brand-pages/arco/video-thumb1.jpg" alt=">Dura Arco">
               </div>
               <div class="slide-content">
-                <button type="button" class="play" data-video="9sm8LrmucmU">
+                <button type="button" class="play" data-video="1eL3mXaf9d4">
                   <i class="rbp-icon"></i>
                   <span class="label">learn about dura arco</span>
                 </button>  
@@ -237,7 +235,7 @@
                 <img src="images/brand-pages/arco/video-thumb2.jpg" alt="Arco Grifo garden taps">
               </div>
               <div class="slide-content">
-                <button type="button" class="play" data-video="#">
+                <button type="button" class="play" data-video="KV-xkDbc3W4">
                   <i class="rbp-icon"></i>
                   <span class="label">arco grifo garden taps</span>
                 </button>  
@@ -278,8 +276,8 @@
           <div class="slides" data-slides-to-show="2" data-slides-to-scroll="2">
             <div class="slide">
               <figure class="image">
-                <a href="#" target="_blank">
-                  <img src="images/brand-pages/arco/download-thumb1.jpg" alt="Brochure 1">  
+                <a href="http://www.reece.com.au/new/pdf/products/dura_arco_combi.pdf" target="_blank">
+                  <img src="images/brand-pages/arco/download-thumb1.jpg" alt="Dura Arco Combi valve">  
                 </a>
               </figure>
               <div class="text">
@@ -288,8 +286,8 @@
             </div>
             <div class="slide">
               <figure class="image">
-                <a href="#" target="_blank">
-                  <img src="images/brand-pages/arco/download-thumb2.jpg" alt="Watermark Licence">  
+                <a href="http://www.reece.com.au/new/pdf/products/arco-grifo-garden-taps.pdf" target="_blank">
+                  <img src="images/brand-pages/arco/download-thumb2.jpg" alt="Arco Grifo Garden taps">  
                 </a>
               </figure>
               <div class="text">
@@ -302,24 +300,5 @@
         <!-- End: Slider/Carousel Widget-->   
       </div>
     </div>        
-  </div>
-    
-  <div class="container-fluid footer-ad">
-    <div class="row">
-      <div class="col-xs-12">
-        <!-- Begin: HTML Widget-->
-      <div class="widget-html-image">
-        <figure class="image">
-          <img src="images/brand-pages/arco/arco-footer.jpg" width="1200px" alt="B Press 15-50mm"/>
-        </figure> 
-        <div class="rte">
-          <h3>arcobanninger.com.au</h3>
-          <p>Want to find out more about the<br>arco Bänninger range?</p>
-          <p><a href="http://arcobanninger.com.au" target="_blank">Visit website</a></p>
-        </div>  
-      </div>
-      <!-- End: HTML Widget-->
-      </div>
-    </div>
   </div>
 </div>

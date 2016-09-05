@@ -30,45 +30,63 @@ div.brand-pages{
 		}
 	}
 		.arco-container {
-			border: solid 1px;
 			background-color: #eeeeee;
 			padding: 40px 20px;
 			text-align: center;
 			@media (min-width: @screen-md){
 				padding: 40px 90px;
 			}
-			h1 { 
-				font-size: 48px;
-				margin-bottom: 0px;
-				padding-bottom: 0;
-				font-weight: normal;
-				line-height: 58px;
-				&.strong {
-					font-weight: 700;
+				h1 { 
+					font-size: 48px;
+					margin-bottom: 0px;
+					padding-bottom: 0;
+					font-weight: normal;
+					line-height: 58px;
+					&.strong {
+						font-weight: 700;
+					}
 				}
-			}
-			p {
-				margin-top: 13px;
-			}
-			.image{
-				text-align: center;
-				width:230px;
-				@media (min-width: @screen-md){
-					text-align: left;
+				p {
+					margin-top: 13px;
 				}
-			}
-			a {
-				display: inline-block;
-				border: 1px solid #c2c2c2;
-				text-transform: uppercase;
-				font-weight: bold;
-				color: black;
-				height: 40px;
-				line-height: 38px;
-				padding: 0 26px;
-				margin-top: 22px;
-				font-size: 15px;			
-			}
+				a {
+					display: inline-block;
+					border: 1px solid #c2c2c2;
+					text-transform: uppercase;
+					font-weight: bold;
+					color: black;
+					height: 40px;
+					line-height: 38px;
+					padding: 0 26px;
+					margin-top: 22px;
+					font-size: 15px;			
+				}
+
+				.widget-slider{
+					padding-bottom: 15px;
+					&.carousel{
+						img { width:100%; }
+					 .slick-slider{ 
+						 	.slick-slide{
+								padding: 30px 15px;
+								@media (min-width: @screen-md){
+									padding: 10px 38px;
+								}
+							}
+						}
+					}
+				}
+				.widget-html-image, .widget-slider{
+					background-color: #eeeeee;			
+				}
+				.widget-link{
+					border: 1px solid #c2c2c2;
+					display: block;
+					padding: 0;
+					line-height: 42px;
+				}
+
+
 		}
 	.half {
 		margin-bottom: 30px;	

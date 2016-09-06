@@ -33,48 +33,46 @@ div.brand-pages .container-fluid {
     margin-bottom: 60px;
   }
 }
-div.brand-pages .white {
+div.brand-pages .container-fluid .white {
   color: #ffffff;
 }
-div.brand-pages .half {
+div.brand-pages .container-fluid .half {
   margin-bottom: 30px;
 }
-div.brand-pages .widget-logo {
+div.brand-pages .container-fluid .widget-logo {
   padding: 0;
 }
-div.brand-pages .discover {
+div.brand-pages .container-fluid .discover {
+  border: solid 1px;
   background-color: #113e1d;
+  padding-bottom: 30px;
 }
-div.brand-pages .discover h1 {
+div.brand-pages .container-fluid .discover h1 {
   font-size: 30px;
-  color: white;
+  color: #ffffff;
   font-weight: 700;
-  max-width: 360px;
   margin: 0 auto;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin: 10px;
   text-align: center;
 }
 @media (min-width: 768px) {
-  div.brand-pages .discover h1 {
+  div.brand-pages .container-fluid .discover h1 {
     max-width: 100%;
-    text-align: left;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
   }
 }
-@media (min-width: 992px) {
-  div.brand-pages .discover h1 {
-    padding-left: 34%;
-  }
-}
-div.brand-pages .discover h1 p {
-  text-align: center;
-  color: white;
-  max-width: 445px;
-  margin-bottom: 10px;
+div.brand-pages .container-fluid .discover .rte p {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 20px;
 }
 @media (min-width: 768px) {
-  div.brand-pages .discover h1 p {
-    text-align: left;
+  div.brand-pages .container-fluid .discover .rte p {
+    text-align: center;
   }
 }
 div.brand-pages .graf-video {
@@ -375,7 +373,6 @@ div.brand-pages .downloads .widget-big-button a:hover .icon:after {
   transform: scale(0.75);
 }
 div.brand-pages .visit-website {
-  border: solid 1px;
   margin-top: 66px;
   margin-bottom: 40px;
 }
@@ -383,7 +380,6 @@ div.brand-pages .visit-website .widget-html-image .image {
   margin: 0;
 }
 div.brand-pages .visit-website .widget-html-image .rte {
-  border: solid 1px;
   padding: 30px 0;
   color: white;
   background: #113e1d;

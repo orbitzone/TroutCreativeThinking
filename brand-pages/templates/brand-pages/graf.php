@@ -16,11 +16,11 @@
 <!-- End: HTML Widget-->
     <div class="widget-html-image discover">
           <div class="rte">
-            <h1>Graf Underground Systems</h1>
+              <h1>Graf Underground Systems</h1>
 
-            <p>There is one problem with traditional tanks. The space they take up in a backyard. The Graf water harvesting 
-            systems are the smartest way to collect rainwater for use around the home. Whether you simply require extra garden 
-            water or a water saving solution for your toilet and laundry, the design of the Graf system makes it easy.</p> 
+              <p>There is one problem with traditional tanks. The space they take up in a backyard. The Graf water harvesting 
+              systems are the smartest way to collect rainwater for use around the home. Whether you simply require extra garden 
+              water or a water saving solution for your toilet and laundry, the design of the Graf system makes it easy.</p> 
           </div>
         </div>
 
@@ -76,8 +76,9 @@
       <div class="col-xs-12">
         <!-- Begin: HTML Widget-->
         <div class="widget-html-image">
-          <figure class="image"><img src="images/brand-pages/graf/rainwater-tank-selector.jpg" width="1200px" alt="rainwater tank selector"/></figure> 
-          <div class="rte"><img src="images/brand-pages/graf/monitor-icon.png" alt="selector icon" ></div>
+          <figure class="image">
+            <img src="images/brand-pages/graf/rainwater-tank-selector.jpg" width="1200px" alt="rainwater tank selector"/>
+          </figure> 
           <div class="rte">
             <h3>Rainwater Tank Selector</h3>
             <p>How to choose your tank in<br> 5 easy steps</p>
@@ -289,3 +290,4 @@
       </div>
     </div>        
   </div>
+</div>

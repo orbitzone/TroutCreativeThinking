@@ -30,11 +30,11 @@ div.brand-pages .container-fluid {
 }
 @media (min-width: 768px) {
   div.brand-pages .container-fluid {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
 }
 div.brand-pages .header {
-  margin: 30px 0 20px 0;
+  margin-top: 30px;
 }
 div.brand-pages .half {
   margin-bottom: 30px;
@@ -157,6 +157,7 @@ div.brand-pages .products-intro h2 {
   text-align: center;
 }
 div.brand-pages .products {
+  width: 960px;
   margin-bottom: 48px;
   text-align: center;
 }

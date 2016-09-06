@@ -7,7 +7,7 @@ div.brand-pages{
 	text-align: center;
 	color: @body;
 	font-size: 15px;
-	line-height: 27px;
+	line-height: 24px;
 	font-weight: 300;
 	letter-spacing: -0.01em;
 	overflow-x: hidden;
@@ -41,27 +41,29 @@ div.brand-pages{
 	}
 	.discover{
 		background: black;
-		padding-bottom: 50px;
+		padding: 20px;
 		h3 {
-			width: 50%;
 			color: white;
 			font-size: 32px;
 			text-transform: uppercase;
 			margin: 0 auto;
 			margin-bottom: 30px;
-			margin-top: 100px;
+			margin-top: 50px;
 			@media (min-width: @screen-sm){
 				max-width: 100%;
-				text-align: center;				
+				text-align: center;	
+				margin-top:100px;
+				margin-bottom: 30px;
+				width: 50%;		
 			}
 		}
 		p {
-			width: 50%;
 			margin: 0 auto;
 			color: white;
 			margin-bottom: 10px;
 			@media (min-width: @screen-sm){
 				text-align: center;
+				width: 50%;	
 			}
 		}
 	}
@@ -143,20 +145,12 @@ div.brand-pages{
 			}
 		}
 	}
-	.products-intro{
-		margin-bottom: 56px;
-		h2 {
-			font-size: 29px;
-			margin-bottom: 0;
-			text-align: center;
-		}
-	}
+
 	.products{
-		width:960px;
-		// border:solid 1px;
 		margin-bottom: 48px;
 		text-align: center;
 		@media (min-width: @screen-sm){
+			max-width: 960px;
 			text-align: left;
 			&.align-right{
 				.rte{
@@ -165,7 +159,7 @@ div.brand-pages{
 			}
 		}
 		.image{
-			margin-bottom: 0;
+			margin: 0 auto;
 			text-align: center;
 		}
 		.row {
@@ -177,8 +171,8 @@ div.brand-pages{
 			}
 		}
 		ul li {
-			margin-left: 10px;
-			line-height: 26px;
+			margin-left: 20px;
+			line-height: 22px;
 		}
 		a{
 			display: inline-block;
@@ -196,7 +190,7 @@ div.brand-pages{
 			text-transform: uppercase;
 			color: #000000;
 			margin-top: 60px;
-			margin-bottom: 8px;
+			margin-bottom: 15px;
 			font-size: 30px;
 			@media (min-width: @screen-sm){
 				margin-top: 0px;

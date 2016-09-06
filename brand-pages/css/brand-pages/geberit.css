@@ -4,7 +4,7 @@ div.brand-pages {
   text-align: center;
   color: #000000;
   font-size: 15px;
-  line-height: 27px;
+  line-height: 24px;
   font-weight: 300;
   letter-spacing: -0.01em;
   overflow-x: hidden;
@@ -44,25 +44,26 @@ div.brand-pages .widget-logo {
 }
 div.brand-pages .discover {
   background: black;
-  padding-bottom: 50px;
+  padding: 20px;
 }
 div.brand-pages .discover h3 {
-  width: 50%;
   color: white;
   font-size: 32px;
   text-transform: uppercase;
   margin: 0 auto;
   margin-bottom: 30px;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 @media (min-width: 768px) {
   div.brand-pages .discover h3 {
     max-width: 100%;
     text-align: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    width: 50%;
   }
 }
 div.brand-pages .discover p {
-  width: 50%;
   margin: 0 auto;
   color: white;
   margin-bottom: 10px;
@@ -70,6 +71,7 @@ div.brand-pages .discover p {
 @media (min-width: 768px) {
   div.brand-pages .discover p {
     text-align: center;
+    width: 50%;
   }
 }
 div.brand-pages .geberit-video {
@@ -148,21 +150,13 @@ div.brand-pages .geberit-video-small-btn .widget-video .play .rbp-icon {
 div.brand-pages .geberit-video-small-btn .widget-video .play .rbp-icon:before {
   content: " ";
 }
-div.brand-pages .products-intro {
-  margin-bottom: 56px;
-}
-div.brand-pages .products-intro h2 {
-  font-size: 29px;
-  margin-bottom: 0;
-  text-align: center;
-}
 div.brand-pages .products {
-  width: 960px;
   margin-bottom: 48px;
   text-align: center;
 }
 @media (min-width: 768px) {
   div.brand-pages .products {
+    max-width: 960px;
     text-align: left;
   }
   div.brand-pages .products.align-right .rte {
@@ -170,7 +164,7 @@ div.brand-pages .products {
   }
 }
 div.brand-pages .products .image {
-  margin-bottom: 0;
+  margin: 0 auto;
   text-align: center;
 }
 div.brand-pages .products .row {
@@ -182,8 +176,8 @@ div.brand-pages .products .row .col-sm-6 {
   padding: 0 25px;
 }
 div.brand-pages .products ul li {
-  margin-left: 10px;
-  line-height: 26px;
+  margin-left: 20px;
+  line-height: 22px;
 }
 div.brand-pages .products a {
   display: inline-block;
@@ -201,7 +195,7 @@ div.brand-pages .products h3 {
   text-transform: uppercase;
   color: #000000;
   margin-top: 60px;
-  margin-bottom: 8px;
+  margin-bottom: 15px;
   font-size: 30px;
 }
 @media (min-width: 768px) {

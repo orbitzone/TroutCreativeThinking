@@ -81,7 +81,7 @@
         <div class="widget-html-image">
           <figure class="image">
             <img src="images/brand-pages/geberit/product-fittings.jpg" alt="Fittings"/>
-          </figure>          
+          </figure>     
         </div>
         <!-- End: HTML Widget-->
       </div>
@@ -98,7 +98,7 @@
               <li>Small fitting dimensions allow installation where space is limited</li>
               <li>Easy removal of a component of the system (for repair / replacement / maintenance)</li>
             </ul>
-            <p><a href="#">View range</a></p>
+            <p><a href="http://www.reece.com.au/plumbing/products/pipe_%26_fittings/geberit" target="_blank">View range</a></p>
           </div>  
         </div>
         <!-- End: HTML Widget-->    
@@ -194,7 +194,7 @@
                 <img src="images/brand-pages/geberit/video-thumb-1.jpg" alt=">Geberit Media Welder Assembly">
               </div>
               <div class="slide-content">
-                <button type="button" class="play" data-video="9sm8LrmucmU">
+                <button type="button" class="play" data-video="VfCSHXZGeT4">
                   <i class="rbp-icon"></i>
                   <span class="label">Geberit Media Welder Assembly</span>
                 </button>  
@@ -225,7 +225,7 @@
                 <img src="images/brand-pages/geberit/video-thumb-2.jpg" alt="Geberit Universal Welder Assembly">
               </div>
               <div class="slide-content">
-                <button type="button" class="play" data-video="#">
+                <button type="button" class="play" data-video="TVprDaARUVM">
                   <i class="rbp-icon"></i>
                   <span class="label">Geberit Universal Welder Assembly</span>
                 </button>  
@@ -266,33 +266,33 @@
           <div class="slides" data-slides-to-show="3" data-slides-to-scroll="3">
             <div class="slide">
               <figure class="image">
-                <a href="#" target="_blank">
+                <a href="http://www.reece.com.au/new/pdf/products/Geberit_Pluvia_installation_guide.pdf" target="_blank">
                   <img src="images/brand-pages/geberit/download-thumb-1.jpg" alt="Installation Guide">  
                 </a>
               </figure>
               <div class="text">
-                <a href="3" target="_blank" class="widget-link">Download</a>
+                <a href="http://www.reece.com.au/new/pdf/products/Geberit_Pluvia_installation_guide.pdf" target="_blank" class="widget-link">Download</a>
               </div>
             </div>             
             
             <div class="slide">
               <figure class="image">
-                <a href="#" target="_blank">
+                <a href="http://www.reece.com.au/new/pdf/products/Geberit_HDPE_catalogue_installation.pdf" target="_blank">
                   <img src="images/brand-pages/geberit/download-thumb-2.jpg" alt="Geberit HDPE">  
                 </a>
               </figure>
               <div class="text">
-                <a href="#" target="_blank" class="widget-link">Download</a>
+                <a href="http://www.reece.com.au/new/pdf/products/Geberit_HDPE_catalogue_installation.pdf" target="_blank" class="widget-link">Download</a>
               </div>
             </div>
             <div class="slide">
               <figure class="image">
-                <a href="#f" target="_blank">
+                <a href="http://www.reece.com.au/new/pdf/products/Geberit_Solvent_installation_guide.pdf" target="_blank">
                   <img src="images/brand-pages/geberit/download-thumb-3.jpg" alt="Sovent Installation Guide">  
                 </a>
               </figure>
               <div class="text">
-                <a href="http://www.geberitbanninger.com.au/assets/Uploads/geberit-Banninger-technical-guide.pdf" target="_blank" class="widget-link">Download</a>
+                <a href="http://www.reece.com.au/new/pdf/products/Geberit_Solvent_installation_guide.pdf" target="_blank" class="widget-link">Download</a>
               </div>
             </div>        
           </div>

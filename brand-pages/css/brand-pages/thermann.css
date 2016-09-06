@@ -189,7 +189,7 @@ div.brand-pages .products h3 {
 }
 @media (min-width: 768px) {
   div.brand-pages .products h3 {
-    margin-top: 0px;
+    margin-top: 15px;
   }
 }
 @media (min-width: 992px) {
@@ -365,8 +365,7 @@ div.brand-pages .thermann-container .widget-html-image .image {
 }
 div.brand-pages .thermann-container .widget-html-image .rte {
   padding: 30px 0;
-  color: white;
-  background: #e41b13;
+  color: black;
 }
 @media (min-width: 768px) {
   div.brand-pages .thermann-container .widget-html-image .rte {
@@ -382,10 +381,11 @@ div.brand-pages .thermann-container .widget-html-image .rte {
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
     margin-left: -220px;
+    color: white;
   }
 }
 div.brand-pages .thermann-container .widget-html-image h3 {
-  color: white;
+  color: black;
   text-transform: uppercase;
   margin-bottom: 10px;
   font-size: 20px;
@@ -394,6 +394,7 @@ div.brand-pages .thermann-container .widget-html-image h3 {
   div.brand-pages .thermann-container .widget-html-image h3 {
     margin-top: -15px;
     font-size: 30px;
+    color: white;
   }
 }
 div.brand-pages .thermann-container .widget-html-image a {

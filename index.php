@@ -81,6 +81,8 @@
     <li class="wip"><a href="brand-pages/index-auspex.php" target="_blank">Auspex</a></li>
     <li class="wip"><a href="brand-pages/index-conex.php" target="_blank">Conex</a></li>
     <li class="wip"><a href="brand-pages/index-friatec.php" target="_blank">Friatec</a></li>
+    <li class="wip"><a href="brand-pages/index-geberit.php" target="_blank">Geberit</a></li>
+    <li class="wip"><a href="brand-pages/index-graf.php" target="_blank">Graf</a></li>
     <li class="wip"><a href="brand-pages/index-kado.php" target="_blank">Kado</a></li>
     <li class="wip"><a href="brand-pages/index-laufen.php" target="_blank">Laufen</a></li>
     <li class="wip"><a href="brand-pages/index-milli.php" target="_blank">Milli</a></li>

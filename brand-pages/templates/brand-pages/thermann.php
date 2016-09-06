@@ -167,7 +167,7 @@
                 <img src="images/brand-pages/thermann/video-placeholder.jpg" alt="">
               </div>
               <div class="slide-content">
-                <button type="button" class="play" data-video="">
+                <button type="button" class="play" data-video="_21QGePhWgU?">
                   <i class="rbp-icon"></i>
                   <!--<span class="label"></span>  -->
                 </button>  
@@ -210,17 +210,18 @@
 
             <div class="slide">
               <figure class="image">
-                <a href="" target="_blank">
-                  <img src="images/brand-pages/thermann/download-thumb-1.jpg" alt="Operating Instructions">  
+                <a href="http://www.thermann.com.au/support" target="_blank">
+                  <img src="images/brand-pages/thermann/download-thumb-1.jpg" alt="Operating Instructionss">  
                 </a>
+              </figure>
               <div class="text">
-               <a href="#" target="_blank" class="widget-link">Download</a>
+                <a href="http://www.thermann.com.au/support" target="_blank" class="widget-link">Download</a>
               </div>
-            </div>
+            </div> 
 
             <div class="slide">
               <figure class="image">
-                <a href="" target="_blank">
+                <a href="http://www.reece.com.au/new/pdf/products/Thermann-hot-water-units-brochure.pdf" target="_blank">
                   <img src="images/brand-pages/thermann/download-thumb-2.jpg" alt="Hot water systems">  
                 </a>
               </figure>
@@ -231,12 +232,12 @@
 
             <div class="slide">
               <figure class="image">
-                <a href="" target="_blank">
+                <a href="http://www.thermann.com.au/support" target="_blank">
                   <img src="images/brand-pages/thermann/download-thumb-3.jpg" alt="Installation Instructions">  
                 </a>
               </figure>
               <div class="text">
-                <a href="" target="_blank" class="widget-link">Download</a>
+                <a href="http://www.thermann.com.au/support" target="_blank" class="widget-link">Download</a>
               </div>
             </div>        
           </div>

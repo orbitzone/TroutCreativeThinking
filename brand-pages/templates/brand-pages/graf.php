@@ -62,7 +62,7 @@
           <h3>Graf Platin</h3>
           <p>The Platin tank doesn’t require a large excavation, so you don’t have to allow for a deep hole - perfect for rocky areas. 
             In fact it requires up to 80% less digging for the same volume of water (that equates to a saving of more than 100 wheelbarrow loads of soil).</p>
-            <p><a href="#">View Product</a></p>
+            <p><a href="http://www.reece.com.au/plumbing/products/rainwater_tanks/graf" target="_blank">View Product</a></p>
           </div>  
         </div>
         <!-- End: HTML Widget-->
@@ -81,8 +81,8 @@
           </figure> 
           <div class="rte">
             <h3>Rainwater Tank Selector</h3>
-            <p>How to choose your tank in<br> 5 easy steps</p>
-            <p><a href="http://conexbanninger.com.au" target="_blank">Get started</a></p>
+            <p>How to choose your tank in<br><span class="orange">5 easy steps</span></p>
+            <p><a href="http://www.reece.com.au/plumbing/products/rainwater_tanks/graf" target="_blank">Get started</a></p>
           </div> 
         </div>
         <!-- End: HTML Widget-->
@@ -105,7 +105,7 @@
                             <div class="slide-content">
                                 <button type="button" class="play" data-video="crpYoHk8nwQ">
                                     <i class="rbp-icon"></i>
-                                    <span class="label">Graf Underground Rain Water Tanks</span>
+                                    <span class="label">Graf Underground <br>Rain Water Tanks</span>
                                 </button>
                             </div>
                         </div>
@@ -136,7 +136,7 @@
                             <div class="slide-content">
                                 <button type="button" class="play" data-video="frRY26o7lu8">
                                     <i class="rbp-icon"></i>
-                                    <span class="label">Graf Underground Rain Water Tank Installation</span>
+                                    <span class="label">Graf Underground Rain Water<br> Tank Installation</span>
                                 </button>
                             </div>
                         </div>
@@ -171,7 +171,7 @@
                             <div class="slide-content">
                                 <button type="button" class="play" data-video="9Q4ii7dFvDA">
                                     <i class="rbp-icon"></i>
-                                    <span class="label">Graf Rain Harvesting Assembly</span>
+                                    <span class="label">Graf Rain <br>Harvesting Assembly</span>
                                 </button>
 
                             </div>
@@ -203,7 +203,7 @@
                             <div class="slide-content">
                                 <button type="button" class="play" data-video="4399WX-nfZ4">
                                     <i class="rbp-icon"></i>
-                                    <span class="label">A chat with Luc Maingard from Graf Australia</span>
+                                    <span class="label">A chat with Luc Maingard <br>from Graf Australia</span>
                                 </button>
 
                             </div>

@@ -51,8 +51,7 @@ div.brand-pages .container-fluid .discover h1 {
   font-size: 30px;
   color: #ffffff;
   font-weight: 700;
-  margin: 0 auto;
-  margin: 10px;
+  margin-top: 20px;
   text-align: center;
 }
 @media (min-width: 768px) {
@@ -73,6 +72,7 @@ div.brand-pages .container-fluid .discover .rte p {
 @media (min-width: 768px) {
   div.brand-pages .container-fluid .discover .rte p {
     text-align: center;
+    padding: 10px 50px 10px 50px;
   }
 }
 div.brand-pages .graf-video {
@@ -85,7 +85,7 @@ div.brand-pages .graf-video .widget-video .slide-front:before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(72, 114, 76, 0.1);
 }
 div.brand-pages .graf-video .widget-video button.close i {
   color: #113e1d;
@@ -109,7 +109,7 @@ div.brand-pages .graf-video .widget-video .play .rbp-icon:before {
   content: " ";
 }
 div.brand-pages .graf-video .widget-video .play .label {
-  text-transform: uppercase;
+  text-transform: sentence;
   font-weight: bold;
   font-size: 15px;
   position: absolute;
@@ -188,7 +188,7 @@ div.brand-pages .products a {
   border: 1px solid #c2c2c2;
   text-transform: uppercase;
   font-weight: bold;
-  color: black;
+  color: #113e1d;
   height: 40px;
   line-height: 38px;
   padding: 0 26px;
@@ -197,7 +197,7 @@ div.brand-pages .products a {
 }
 div.brand-pages .products h3 {
   text-transform: uppercase;
-  color: #000000;
+  color: #113e1d;
   margin-top: 60px;
   margin-bottom: 8px;
   font-size: 18px;
@@ -220,7 +220,7 @@ div.brand-pages .products .widget-html-image .image {
   border-radius: 2px 2px 2px 2px;
   -moz-border-radius: 2px 2px 2px 2px;
   -webkit-border-radius: 2px 2px 2px 2px;
-  border: 1px solid #dcdcdc;
+  border: 1px solid #113e1d;
 }
 div.brand-pages .products .widget-html-image .image figcaption {
   top: inherit;
@@ -260,7 +260,7 @@ div.brand-pages .downloads .widget-slider.carousel .slick-slider .slick-slide {
 }
 div.brand-pages .downloads .widget-html-image,
 div.brand-pages .downloads .widget-slider {
-  background-color: #F0F0F0;
+  background-color: #ffffff;
 }
 div.brand-pages .downloads .widget-link {
   border: 1px solid #004811;
@@ -296,7 +296,7 @@ div.brand-pages .downloads .website .rbp-icon {
   background-image: url(../../images/brand-pages/graf/website.svg);
 }
 div.brand-pages .downloads .widget-big-button {
-  background: black;
+  background: #ffffff;
   text-align: center;
   padding: 40px;
   margin-bottom: 10px;
@@ -312,13 +312,13 @@ div.brand-pages .downloads .widget-big-button a {
   color: white;
 }
 div.brand-pages .downloads .widget-big-button a .text {
-  text-transform: uppercase;
+  text-transform: none;
   font-weight: bold;
   line-height: 1;
 }
 @media (min-width: 768px) {
   div.brand-pages .downloads .widget-big-button a .text {
-    font-size: 32px;
+    font-size: 18px;
   }
 }
 div.brand-pages .downloads .widget-big-button a .icon {
@@ -417,6 +417,9 @@ div.brand-pages .visit-website .widget-html-image p {
   color: white;
   font-size: 18px;
   font-weight: 600;
+}
+div.brand-pages .visit-website .widget-html-image p .orange {
+  color: #f58f31;
 }
 div.brand-pages .visit-website .widget-html-image a {
   color: #004811;

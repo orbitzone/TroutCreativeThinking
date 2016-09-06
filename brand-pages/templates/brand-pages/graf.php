@@ -103,7 +103,7 @@
                                 <img src="images/brand-pages/graf/video-thumb-1.jpg" alt=">Graf Underground Rain Water Tanks">
                             </div>
                             <div class="slide-content">
-                                <button type="button" class="play" data-video="#">
+                                <button type="button" class="play" data-video="crpYoHk8nwQ">
                                     <i class="rbp-icon"></i>
                                     <span class="label">Graf Underground Rain Water Tanks</span>
                                 </button>
@@ -134,7 +134,7 @@
                                 <img src="images/brand-pages/graf/video-thumb-2.jpg" alt="Graf Underground Rain Water Tank Installation">
                             </div>
                             <div class="slide-content">
-                                <button type="button" class="play" data-video="#">
+                                <button type="button" class="play" data-video="frRY26o7lu8">
                                     <i class="rbp-icon"></i>
                                     <span class="label">Graf Underground Rain Water Tank Installation</span>
                                 </button>
@@ -169,7 +169,7 @@
                                 <img src="images/brand-pages/graf/video-thumb-3.jpg" alt=">Graf Rain Harvesting Assembly">
                             </div>
                             <div class="slide-content">
-                                <button type="button" class="play" data-video="#">
+                                <button type="button" class="play" data-video="9Q4ii7dFvDA">
                                     <i class="rbp-icon"></i>
                                     <span class="label">Graf Rain Harvesting Assembly</span>
                                 </button>
@@ -201,7 +201,7 @@
                                 <img src="images/brand-pages/graf/video-thumb-4.jpg" alt="A chat with Luc Maingard from Graf Australia">
                             </div>
                             <div class="slide-content">
-                                <button type="button" class="play" data-video="#">
+                                <button type="button" class="play" data-video="4399WX-nfZ4">
                                     <i class="rbp-icon"></i>
                                     <span class="label">A chat with Luc Maingard from Graf Australia</span>
                                 </button>
@@ -244,47 +244,82 @@
           <div class="slides" data-slides-to-show="4" data-slides-to-scroll="4">
             <div class="slide">
               <figure class="image">
-                <a href="#" target="_blank">
-                  <img src="images/brand-pages/graf/download-thumb-1.jpg" alt="Graf under ground rainw ater tanks">  
+                <a href="http://www.reece.com.au/new/pdf/products/GrafBrochure.pdf" target="_blank">
+                  <img src="images/brand-pages/graf/download-thumb-1.jpg" alt="Graf under ground rainwater tanks">
                 </a>
               </figure>
               <div class="text">
-               <a href="#" target="_blank" class="widget-link">Download</a>
+               <a href="http://www.reece.com.au/new/pdf/products/GrafBrochure.pdf" target="_blank" class="widget-link">Download</a>
               </div>
             </div>
 
             <div class="slide">
               <figure class="image">
-                <a href="#" target="_blank">
-                  <img src="images/brand-pages/graf/download-thumb-2.jpg" alt="Graf under ground storm water tanks">  
+                <a href="http://www.reece.com.au/new/pdf/products/graf-stormwater-brochure.pdf" target="_blank">
+                  <img src="images/brand-pages/graf/download-thumb-2.jpg" alt="Graf underground storm water tanks">
                 </a>
               </figure>
               <div class="text">
-                <a href="#" target="_blank" class="widget-link">Download</a>
+                <a href="http://www.reece.com.au/new/pdf/products/graf-stormwater-brochure.pdf" target="_blank" class="widget-link">Download</a>
               </div>
             </div>
 
           <div class="slide">
               <figure class="image">
-                <a href="#" target="_blank">
+                <a href="http://www.reece.com.au/new/pdf/products/GRAF_Carat_Installation_Instructions.pdf" target="_blank">
                   <img src="images/brand-pages/graf/download-thumb-3.jpg" alt="Graf Carat installation tanks">  
                 </a>
               </figure>
               <div class="text">
-                <a href="#" target="_blank" class="widget-link">Download</a>
+                <a href="http://www.reece.com.au/new/pdf/products/GRAF_Carat_Installation_Instructions.pdf" target="_blank" class="widget-link">Download</a>
               </div>
             </div>
 
             <div class="slide">
               <figure class="image">
-                <a href="#" target="_blank">
-                  <img src="images/brand-pages/graf/download-thumb-4.jpg" alt="Graf under groung rainwater tanks">  
+                <a href="http://www.reece.com.au/new/pdf/products/graf-platin-installation.pdf" target="_blank">
+                  <img src="images/brand-pages/graf/download-thumb-4.jpg" alt="Graf underground rainwater tanks">
                 </a>
               </figure>
               <div class="text">
-                <a href="#" target="_blank" class="widget-link">Download</a>
+                <a href="http://www.reece.com.au/new/pdf/products/graf-platin-installation.pdf" target="_blank" class="widget-link">Download</a>
               </div>
             </div>
+
+              <div class="slide">
+                  <figure class="image">
+                      <a href="http://www.reece.com.au/new/pdf/products/stormwater-retention-instructions.pdf" target="_blank">
+                          <img src="images/brand-pages/graf/download-thumb-5.jpg" alt="Graf underground Storm Water tanks">
+                      </a>
+                  </figure>
+                  <div class="text">
+                      <a href="http://www.reece.com.au/new/pdf/products/stormwater-retention-instructions.pdf" target="_blank" class="widget-link">Download</a>
+                  </div>
+              </div>
+
+
+              <div class="slide">
+                  <figure class="image">
+                      <a href="http://www.reece.com.au/new/pdf/products/Universal_External_Filter_Instructions.pdf" target="_blank">
+                          <img src="images/brand-pages/graf/download-thumb-6.jpg" alt="Graf Universal filter">
+                      </a>
+                  </figure>
+                  <div class="text">
+                      <a href="http://www.reece.com.au/new/pdf/products/Universal_External_Filter_Instructions.pdf" target="_blank" class="widget-link">Download</a>
+                  </div>
+              </div>
+
+              <div class="slide">
+                  <figure class="image">
+                      <a href="http://www.reece.com.au/new/pdf/products/Optimax_Pro_External_Filter_Instructions.pdf" target="_blank">
+                          <img src="images/brand-pages/graf/download-thumb-7.jpg" alt="Graf Optimax pro - external filter">
+                      </a>
+                  </figure>
+                  <div class="text">
+                      <a href="http://www.reece.com.au/new/pdf/products/Optimax_Pro_External_Filter_Instructions.pdf" target="_blank" class="widget-link">Download</a>
+                  </div>
+              </div>
+
           </div>
         </div><!-- End: Slider/Carousel Widget-->   
       </div>

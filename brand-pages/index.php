@@ -81,10 +81,13 @@
 	<h2>Brand Pages</h2>
 	<ul>
 		<li class="wip"><a href="brand-pages/index-american-standard.php" target="_blank">American Standard</a></li>
+		<li class="wip"><a href="brand-pages/index-arco.php" target="_blank">Arco</a></li>
 		<li class="wip"><a href="brand-pages/index-armitage-shanks.php" target="_blank">Armitage Shanks</a></li>
 		<li class="wip"><a href="brand-pages/index-auspex.php" target="_blank">Auspex</a></li>
 		<li class="wip"><a href="brand-pages/index-conex.php" target="_blank">Conex</a></li>
 		<li class="wip"><a href="brand-pages/index-friatec.php" target="_blank">Friatec</a></li>
+		<li class="wip"><a href="brand-pages/index-geberit.php" target="_blank">Geberit</a></li>
+		<li class="wip"><a href="brand-pages/index-graf.php" target="_blank">Graf</a></li>
 		<li class="wip"><a href="brand-pages/index-kado.php" target="_blank">Kado</a></li>
 		<li class="wip"><a href="brand-pages/index-laufen.php" target="_blank">Laufen</a></li>
 		<li class="wip"><a href="brand-pages/index-milli.php" target="_blank">Milli</a></li>
@@ -96,6 +99,7 @@
 		<li class="wip"><a href="brand-pages/index-rehau-orrong-road.php" target="_blank">Rehau - Orrong Road</a></li>
 		<li class="wip"><a href="brand-pages/index-rehau.php" target="_blank">Rehau</a></li>
 		<li class="wip"><a href="brand-pages/index-roca.php" target="_blank">Roca</a></li>
+		<li class="wip"><a href="brand-pages/index-thermann.php" target="_blank">Thermann</a></li>
 		<li class="wip"><a href="brand-pages/index-wolfen.php" target="_blank">Wolfen</a></li>
 	</ul>	
 	<h2>Plumbing/Trade</h2>

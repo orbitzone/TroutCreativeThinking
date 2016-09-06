@@ -281,7 +281,7 @@
                 </a>
               </figure>
               <div class="text">
-               <a href="#" target="_blank" class="widget-link">Download</a>
+               <a href="http://www.reece.com.au/new/pdf/products/dura_arco_combi.pdf" target="_blank" class="widget-link">Download</a>
               </div>
             </div>
             <div class="slide">
@@ -291,7 +291,7 @@
                 </a>
               </figure>
               <div class="text">
-                <a href="#" target="_blank" class="widget-link">Download</a>
+                <a href="http://www.reece.com.au/new/pdf/products/arco-grifo-garden-taps.pdf" target="_blank" class="widget-link">Download</a>
               </div>
             </div>
                   

@@ -3,8 +3,8 @@
 div.brand-pages {
   text-align: center;
   color: #3a3a3a;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 300;
   letter-spacing: -0.01em;
   overflow-x: hidden;
@@ -19,7 +19,7 @@ div.brand-pages h3,
 div.brand-pages h4,
 div.brand-pages h5,
 div.brand-pages h6 {
-  color: #000000;
+  color: #113e1d;
 }
 div.brand-pages img {
   display: block;
@@ -30,8 +30,11 @@ div.brand-pages .container-fluid {
 }
 @media (min-width: 768px) {
   div.brand-pages .container-fluid {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
+}
+div.brand-pages .white {
+  color: #ffffff;
 }
 div.brand-pages .half {
   margin-bottom: 30px;
@@ -39,30 +42,45 @@ div.brand-pages .half {
 div.brand-pages .widget-logo {
   padding: 0;
 }
-div.brand-pages .discover h3 {
-  font-size: 34px;
+div.brand-pages .discover {
+  background-color: #113e1d;
+}
+div.brand-pages .discover h1 {
+  font-size: 30px;
+  color: white;
+  font-weight: 700;
+  max-width: 360px;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-align: center;
 }
 @media (min-width: 768px) {
-  div.brand-pages .discover h3 {
+  div.brand-pages .discover h1 {
     max-width: 100%;
-    text-align: center;
+    text-align: left;
   }
 }
-div.brand-pages .discover p {
+@media (min-width: 992px) {
+  div.brand-pages .discover h1 {
+    padding-left: 34%;
+  }
+}
+div.brand-pages .discover h1 p {
   text-align: center;
+  color: white;
+  max-width: 445px;
   margin-bottom: 10px;
 }
 @media (min-width: 768px) {
-  div.brand-pages .discover p {
-    text-align: center;
+  div.brand-pages .discover h1 p {
+    text-align: left;
   }
 }
-div.brand-pages .thermann-video {
-  margin-bottom: 60px;
+div.brand-pages .graf-video {
+  margin-bottom: 40px;
 }
-div.brand-pages .thermann-video .widget-video .slide-front:before {
+div.brand-pages .graf-video .widget-video .slide-front:before {
   content: " ";
   position: absolute;
   top: 0;
@@ -71,28 +89,28 @@ div.brand-pages .thermann-video .widget-video .slide-front:before {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
 }
-div.brand-pages .thermann-video .widget-video button.close i {
-  color: #000000;
+div.brand-pages .graf-video .widget-video button.close i {
+  color: #113e1d;
 }
-div.brand-pages .thermann-video .widget-video .play .rbp-icon {
+div.brand-pages .graf-video .widget-video .play .rbp-icon {
   width: 69px;
   height: 69px;
   margin: 0 auto;
   display: block;
-  background-image: url(../../images/brand-pages/thermann/play-btn.png);
+  background-image: url(../../images/brand-pages/graf/play-btn.png);
   background-size: 69px 69px;
 }
 @media (min-width: 768px) {
-  div.brand-pages .thermann-video .widget-video .play .rbp-icon {
+  div.brand-pages .graf-video .widget-video .play .rbp-icon {
     width: 138px;
     height: 138px;
     background-size: 138px 138px;
   }
 }
-div.brand-pages .thermann-video .widget-video .play .rbp-icon:before {
+div.brand-pages .graf-video .widget-video .play .rbp-icon:before {
   content: " ";
 }
-div.brand-pages .thermann-video .widget-video .play .label {
+div.brand-pages .graf-video .widget-video .play .label {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 15px;
@@ -102,41 +120,40 @@ div.brand-pages .thermann-video .widget-video .play .label {
   transform: translateX(-50%);
 }
 @media (min-width: 768px) {
-  div.brand-pages .thermann-video .widget-video .play .label {
+  div.brand-pages .graf-video .widget-video .play .label {
     font-size: 15px;
   }
 }
 @media (min-width: 992px) {
-  div.brand-pages .thermann-video .widget-video .play .label {
+  div.brand-pages .graf-video .widget-video .play .label {
     font-size: 18px;
   }
 }
-div.brand-pages .thermann-video-small-btn {
+div.brand-pages .graf-video-small-btn {
   margin-bottom: 0;
 }
-div.brand-pages .thermann-video-small-btn .widget-video {
+div.brand-pages .graf-video-small-btn .widget-video {
   margin-bottom: 30px;
 }
-div.brand-pages .thermann-video-small-btn .widget-video .play .rbp-icon {
+div.brand-pages .graf-video-small-btn .widget-video .play .rbp-icon {
   width: 69px;
   height: 69px;
   margin: 0 auto;
   display: block;
-  background-image: url(../../images/brand-pages/thermann/play-btn.png);
+  background-image: url(../../images/brand-pages/graf/play-btn.png);
   background-size: 69px 69px;
 }
 @media (min-width: 992px) {
-  div.brand-pages .thermann-video-small-btn .widget-video .play .rbp-icon {
+  div.brand-pages .graf-video-small-btn .widget-video .play .rbp-icon {
     width: 110px;
     height: 110px;
     background-size: 110px 110px;
   }
 }
-div.brand-pages .thermann-video-small-btn .widget-video .play .rbp-icon:before {
+div.brand-pages .graf-video-small-btn .widget-video .play .rbp-icon:before {
   content: " ";
 }
 div.brand-pages .products-intro {
-  margin-top: 60px;
   margin-bottom: 56px;
 }
 div.brand-pages .products-intro h2 {
@@ -145,7 +162,7 @@ div.brand-pages .products-intro h2 {
   text-align: center;
 }
 div.brand-pages .products {
-  margin-bottom: 40px;
+  margin-bottom: 48px;
   text-align: center;
 }
 @media (min-width: 768px) {
@@ -183,7 +200,7 @@ div.brand-pages .products a {
 div.brand-pages .products h3 {
   text-transform: uppercase;
   color: #000000;
-  margin-top: 20px;
+  margin-top: 60px;
   margin-bottom: 8px;
   font-size: 18px;
 }
@@ -194,7 +211,7 @@ div.brand-pages .products h3 {
 }
 @media (min-width: 992px) {
   div.brand-pages .products h3 {
-    margin-top: 20px;
+    margin-top: 60px;
   }
 }
 div.brand-pages .products p {
@@ -223,18 +240,17 @@ div.brand-pages .downloads {
   text-align: center;
 }
 div.brand-pages .downloads .widget-html-image h2 {
+  text-align: center;
   margin-bottom: 0;
   padding: 25px 0 32px;
-  color: black;
+  color: #113e1d;
   font-size: 30px;
-  text-transform: uppercase;
 }
 div.brand-pages .downloads .widget-slider {
   padding-bottom: 15px;
 }
 div.brand-pages .downloads .widget-slider.carousel img {
   width: 165px;
-  height: 240px;
 }
 div.brand-pages .downloads .widget-slider.carousel .slick-slider .slick-slide {
   padding: 0 15px;
@@ -249,7 +265,9 @@ div.brand-pages .downloads .widget-slider {
   background-color: #F0F0F0;
 }
 div.brand-pages .downloads .widget-link {
-  border: 1px solid #c2c2c2;
+  border: 1px solid #004811;
+  background-color: #ffffff;
+  color: #004811;
   display: block;
   padding: 0;
   line-height: 42px;
@@ -262,7 +280,7 @@ div.brand-pages .downloads .rte .img {
   min-height: 400px;
 }
 div.brand-pages .downloads .rbp-icon {
-  background: transparent url(../../images/brand-pages/thermann/download.svg) no-repeat;
+  background: transparent url(../../images/brand-pages/graf/download.svg) no-repeat;
   width: 75px;
   height: 75px;
   display: inline-block;
@@ -271,16 +289,16 @@ div.brand-pages .downloads .rbp-icon:before {
   content: "";
 }
 div.brand-pages .downloads .download .rbp-icon {
-  background-image: url(../../images/brand-pages/thermann/download.svg);
+  background-image: url(../../images/brand-pages/graf/download.svg);
 }
 div.brand-pages .downloads .videos .rbp-icon {
-  background-image: url(../../images/brand-pages/thermann/video.svg);
+  background-image: url(../../images/brand-pages/graf/video.svg);
 }
 div.brand-pages .downloads .website .rbp-icon {
-  background-image: url(../../images/brand-pages/thermann/website.svg);
+  background-image: url(../../images/brand-pages/graf/website.svg);
 }
 div.brand-pages .downloads .widget-big-button {
-  background: #269a7b;
+  background: black;
   text-align: center;
   padding: 40px;
   margin-bottom: 10px;
@@ -296,13 +314,13 @@ div.brand-pages .downloads .widget-big-button a {
   color: white;
 }
 div.brand-pages .downloads .widget-big-button a .text {
-  text-transform: none;
+  text-transform: uppercase;
   font-weight: bold;
   line-height: 1;
 }
 @media (min-width: 768px) {
   div.brand-pages .downloads .widget-big-button a .text {
-    font-size: 25px;
+    font-size: 32px;
   }
 }
 div.brand-pages .downloads .widget-big-button a .icon {
@@ -333,7 +351,7 @@ div.brand-pages .downloads .widget-big-button a .icon:after {
   transform: scale(1);
   content: " ";
   display: block;
-  background: transparent url(../../images/brand-pages/thermann/shadow.png) no-repeat;
+  background: transparent url(../../images/brand-pages/graf/shadow.png) no-repeat;
   width: 76px;
   height: 14px;
   margin: 0 auto;
@@ -356,20 +374,22 @@ div.brand-pages .downloads .widget-big-button a:hover .icon:after {
   -o-transform: scale(0.75);
   transform: scale(0.75);
 }
-div.brand-pages .thermann-container {
-  margin-top: 50px;
-  margin-bottom: 0;
+div.brand-pages .visit-website {
+  border: solid 1px;
+  margin-top: 66px;
+  margin-bottom: 40px;
 }
-div.brand-pages .thermann-container .widget-html-image .image {
+div.brand-pages .visit-website .widget-html-image .image {
   margin: 0;
 }
-div.brand-pages .thermann-container .widget-html-image .rte {
+div.brand-pages .visit-website .widget-html-image .rte {
+  border: solid 1px;
   padding: 30px 0;
   color: white;
-  background: #e41b13;
+  background: #113e1d;
 }
 @media (min-width: 768px) {
-  div.brand-pages .thermann-container .widget-html-image .rte {
+  div.brand-pages .visit-website .widget-html-image .rte {
     padding: 0;
     max-width: 440px;
     background: none;
@@ -384,22 +404,27 @@ div.brand-pages .thermann-container .widget-html-image .rte {
     margin-left: -220px;
   }
 }
-div.brand-pages .thermann-container .widget-html-image h3 {
-  color: white;
+div.brand-pages .visit-website .widget-html-image h3 {
+  color: #f58f31;
   text-transform: uppercase;
   margin-bottom: 10px;
-  font-size: 20px;
+  font-size: 32px;
+  font-weight: 700;
 }
 @media (min-width: 768px) {
-  div.brand-pages .thermann-container .widget-html-image h3 {
+  div.brand-pages .visit-website .widget-html-image h3 {
     margin-top: -15px;
     font-size: 30px;
   }
 }
-div.brand-pages .thermann-container .widget-html-image a {
-  text-transform: uppercase;
+div.brand-pages .visit-website .widget-html-image p {
   color: white;
-  background: #e41b13;
+  font-size: 18px;
+  font-weight: 600;
+}
+div.brand-pages .visit-website .widget-html-image a {
+  color: #004811;
+  background: white;
   height: 43px;
   line-height: 41px;
   padding: 0 17px;
@@ -414,7 +439,13 @@ div.brand-pages .thermann-container .widget-html-image a {
   font-size: 14px;
 }
 @media (min-width: 768px) {
-  div.brand-pages .thermann-container .widget-html-image a {
+  div.brand-pages .visit-website .widget-html-image a {
     font-size: 16px;
   }
+}
+div.brand-pages .visit-website .widget-html-image .right {
+  left: 50;
+  border: solid 1px;
+  padding-left: 30px;
+  padding-top: 50px;
 }

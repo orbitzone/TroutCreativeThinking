@@ -30,7 +30,9 @@ module.exports = function(grunt) {
               "css/brand-pages/morse.css": "less/brand-pages/morse/morse.less",
               "css/brand-pages/walraven.css": "less/brand-pages/walraven/walraven.less",
               "css/brand-pages/thermann.css": "less/brand-pages/thermann/thermann.less",
-              "css/brand-pages/arco.css": "less/brand-pages/arco/arco.less"
+              "css/brand-pages/arco.css": "less/brand-pages/arco/arco.less",
+              "css/brand-pages/graf.css": "less/brand-pages/graf/graf.less",
+              "css/brand-pages/geberit.css": "less/brand-pages/geberit/geberit.less"
           }
         ]
       }

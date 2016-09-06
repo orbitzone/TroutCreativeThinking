@@ -6,12 +6,12 @@
 div.brand-pages{
 	text-align: center;
 	color: @body;
-	font-size: 18px;
+	font-size: 15px;
 	line-height: 27px;
 	font-weight: 300;
 	letter-spacing: -0.01em;
 	overflow-x: hidden;
-	font-family: 'Neue Helvetica W01', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-family: "Gotham A", "Gotham B";
 	-webkit-font-smoothing: antialiased; 
 	font-smoothing: antialiased; 
 	text-rendering: optimizeLegibility;
@@ -24,11 +24,16 @@ div.brand-pages{
 		margin: 0 auto;
 	}
 	.container-fluid{
+		// border:solid 1px;
 		margin-bottom: 30px;
 		@media (min-width: 768px){
-			margin-bottom: 30px;
+			margin-bottom: 60px;
 		}
 	}
+	.header {
+		margin: 30px 0 20px 0;
+	}
+
 	.half {
 		margin-bottom: 30px;	
 	}
@@ -36,25 +41,33 @@ div.brand-pages{
 		padding: 0;
 	}
 	.discover{
+		background: black;
+		padding-bottom: 50px;
+		// border:solid 1px red;
 		h3 {
-			font-size: 34px;
+			width: 50%;
+			color: white;
+			font-size: 32px;
+			text-transform: uppercase;
 			margin: 0 auto;
-			margin-bottom: 20px;
-			
+			margin-bottom: 30px;
+			margin-top: 100px;
 			@media (min-width: @screen-sm){
 				max-width: 100%;
 				text-align: center;				
 			}
 		}
 		p {
-			text-align: center;
+			width: 50%;
+			margin: 0 auto;
+			color: white;
 			margin-bottom: 10px;
 			@media (min-width: @screen-sm){
 				text-align: center;
 			}
 		}
 	}
-	.thermann-video{
+	.geberit-video{
 		margin-bottom: 60px;
 		.widget-video{
 			.slide-front{
@@ -75,12 +88,12 @@ div.brand-pages{
 			}
 			.play{
 				.rbp-icon{
-					width: 69px;
-					height: 69px;
+					width: 130px;
+					height: 130px;
 					margin: 0 auto;
 					display: block;
-					background-image: url(../../images/brand-pages/thermann/play-btn.png);
-					background-size: 69px 69px;
+					background-image: url(../../images/brand-pages/geberit/play-btn.png);
+					background-size: 130px 130px;
 					@media (min-width: @screen-sm){
 						width: 138px;
 						height: 138px;
@@ -108,7 +121,7 @@ div.brand-pages{
 			}
 		}
 	}
-	.thermann-video-small-btn{
+	.geberit-video-small-btn{
 		margin-bottom: 0;
 		.widget-video{
 			margin-bottom: 30px;
@@ -118,7 +131,7 @@ div.brand-pages{
 					height: 69px;
 					margin: 0 auto;
 					display: block;
-					background-image: url(../../images/brand-pages/thermann/play-btn.png);
+					background-image: url(../../images/brand-pages/geberit/play-btn.png);
 					background-size: 69px 69px;
 					@media (min-width: @screen-md){
 						width: 110px;
@@ -133,7 +146,6 @@ div.brand-pages{
 		}
 	}
 	.products-intro{
-		margin-top:60px;
 		margin-bottom: 56px;
 		h2 {
 			font-size: 29px;
@@ -142,7 +154,7 @@ div.brand-pages{
 		}
 	}
 	.products{
-		margin-bottom: 40px;
+		margin-bottom: 48px;
 		text-align: center;
 		@media (min-width: @screen-sm){
 			text-align: left;
@@ -164,6 +176,10 @@ div.brand-pages{
 				padding: 0 25px;
 			}
 		}
+		ul li {
+			margin-left: 10px;
+			line-height: 26px;
+		}
 		a{
 			display: inline-block;
 			border: 1px solid #c2c2c2;
@@ -179,14 +195,14 @@ div.brand-pages{
 		h3 {
 			text-transform: uppercase;
 			color: #000000;
-			margin-top: 20px;
+			margin-top: 60px;
 			margin-bottom: 8px;
-			font-size: 18px;
+			font-size: 30px;
 			@media (min-width: @screen-sm){
 				margin-top: 0px;
       }
       @media (min-width: @screen-md){
-      	margin-top: 20px;
+      	margin-top: 60px;
       }
 		}
 		p {
@@ -194,22 +210,6 @@ div.brand-pages{
 			font-weight: 300;
 		}
 
-		.widget-html-image {
-			.image {
-				// width:575px;
-				border-radius: 2px 2px 2px 2px;
-				-moz-border-radius: 2px 2px 2px 2px;
-				-webkit-border-radius: 2px 2px 2px 2px;
-				border: 1px solid #dcdcdc; 
-
-				figcaption{
-					top: inherit;
-					bottom: 30px;
-					font-size: 25px;
-					font-weight: bold;
-				}
-			}
-		}
 	}	
 	.separator{
 		hr{
@@ -262,7 +262,7 @@ div.brand-pages{
 			}
 		}
 		.rbp-icon{
-			background: transparent url(../../images/brand-pages/thermann/download.svg) no-repeat;
+			background: transparent url(../../images/brand-pages/geberit/download.svg) no-repeat;
 			width: 75px;
 			height: 75px;
 			display: inline-block;
@@ -272,17 +272,17 @@ div.brand-pages{
 		}
 		.download{
 			.rbp-icon{
-				background-image: url(../../images/brand-pages/thermann/download.svg);
+				background-image: url(../../images/brand-pages/geberit/download.svg);
 			}
 		}
 		.videos{
 			.rbp-icon{
-				background-image: url(../../images/brand-pages/thermann/video.svg);
+				background-image: url(../../images/brand-pages/geberit/video.svg);
 			}
 		}
 		.website{
 			.rbp-icon{
-				background-image: url(../../images/brand-pages/thermann/website.svg);
+				background-image: url(../../images/brand-pages/geberit/website.svg);
 			}
 		}
 		.widget-big-button{
@@ -318,7 +318,7 @@ div.brand-pages{
 						.transform(scale(1));
 						content: " ";
 						display: block;
-						background: transparent url(../../images/brand-pages/thermann/shadow.png) no-repeat;
+						background: transparent url(../../images/brand-pages/geberit/shadow.png) no-repeat;
 						width: 76px;
 						height: 14px;
 						margin: 0 auto;
@@ -337,56 +337,6 @@ div.brand-pages{
 							.transform(scale(0.75));
 						}
 					}
-				}
-			}
-		}
-	}
-	.thermann-container{
-		margin-top: 50px;
-		margin-bottom: 0;
-		.widget-html-image{
-			.image{
-				margin: 0;
-			}
-			.rte{
-				padding: 30px 0;
-				color: white;
-				background: #e41b13;
-				@media (min-width: @screen-sm){
-					padding: 0;
-					max-width: 440px;
-					background: none;
-					position: absolute;
-					top: 50%;
-					left: 50%;
-					.transform(translateY(-50%));
-					margin-left: -220px;
-				}
-			}
-			h3{
-				color: white;
-				text-transform: uppercase;
-				margin-bottom: 10px;
-				font-size: 20px;
-				@media (min-width: @screen-sm){
-			    	margin-top: -15px;				
-			    	font-size: 30px;
-				}
-			}
-			a{
-				text-transform: uppercase;
-				color: white;
-				background: #e41b13;
-				height: 43px;
-				line-height: 41px;
-				padding: 0 17px;
-				display: inline-block;
-				font-weight: bold;
-				border: 1px solid white;
-				.transform(translateY(10px));
-				font-size: 14px;
-				@media (min-width: @screen-sm){
-					font-size: 16px;
 				}
 			}
 		}

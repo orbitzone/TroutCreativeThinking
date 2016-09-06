@@ -6,8 +6,8 @@
 div.brand-pages{
 	text-align: center;
 	color: @body;
-	font-size: 18px;
-	line-height: 27px;
+	font-size: 16px;
+	line-height: 24px;
 	font-weight: 300;
 	letter-spacing: -0.01em;
 	overflow-x: hidden;
@@ -23,11 +23,16 @@ div.brand-pages{
 		display: block;
 		margin: 0 auto;
 	}
-	.container-fluid{
+	.container-fluid {
+		// border:solid 1px;
 		margin-bottom: 30px;
 		@media (min-width: 768px){
-			margin-bottom: 30px;
+			margin-bottom: 60px;
 		}
+	}
+
+	.white {
+		color: #ffffff;
 	}
 	.half {
 		margin-bottom: 30px;	
@@ -35,27 +40,38 @@ div.brand-pages{
 	.widget-logo{
 		padding: 0;
 	}
-	.discover{
-		h3 {
-			font-size: 34px;
+	.discover {
+		background-color: #113e1d;
+		h1 {
+			font-size: 30px;
+			color: white;
+			font-weight: 700;
+			max-width: 360px;
 			margin: 0 auto;
-			margin-bottom: 20px;
-			
+			margin-bottom: 30px;
+			margin-top: 30px;
+			text-align: center;
 			@media (min-width: @screen-sm){
 				max-width: 100%;
-				text-align: center;				
+				text-align: left;				
 			}
-		}
+			@media (min-width: @screen-md){
+				padding-left: 34%;
+			}
 		p {
 			text-align: center;
+			color: white;
+			max-width: 445px;
 			margin-bottom: 10px;
 			@media (min-width: @screen-sm){
-				text-align: center;
+				text-align: left;
 			}
 		}
 	}
-	.thermann-video{
-		margin-bottom: 60px;
+}
+	
+	.graf-video{
+		margin-bottom: 40px;
 		.widget-video{
 			.slide-front{
 				&:before{
@@ -79,7 +95,7 @@ div.brand-pages{
 					height: 69px;
 					margin: 0 auto;
 					display: block;
-					background-image: url(../../images/brand-pages/thermann/play-btn.png);
+					background-image: url(../../images/brand-pages/graf/play-btn.png);
 					background-size: 69px 69px;
 					@media (min-width: @screen-sm){
 						width: 138px;
@@ -108,7 +124,7 @@ div.brand-pages{
 			}
 		}
 	}
-	.thermann-video-small-btn{
+	.graf-video-small-btn{
 		margin-bottom: 0;
 		.widget-video{
 			margin-bottom: 30px;
@@ -118,7 +134,7 @@ div.brand-pages{
 					height: 69px;
 					margin: 0 auto;
 					display: block;
-					background-image: url(../../images/brand-pages/thermann/play-btn.png);
+					background-image: url(../../images/brand-pages/graf/play-btn.png);
 					background-size: 69px 69px;
 					@media (min-width: @screen-md){
 						width: 110px;
@@ -133,7 +149,6 @@ div.brand-pages{
 		}
 	}
 	.products-intro{
-		margin-top:60px;
 		margin-bottom: 56px;
 		h2 {
 			font-size: 29px;
@@ -142,7 +157,7 @@ div.brand-pages{
 		}
 	}
 	.products{
-		margin-bottom: 40px;
+		margin-bottom: 48px;
 		text-align: center;
 		@media (min-width: @screen-sm){
 			text-align: left;
@@ -179,14 +194,14 @@ div.brand-pages{
 		h3 {
 			text-transform: uppercase;
 			color: #000000;
-			margin-top: 20px;
+			margin-top: 60px;
 			margin-bottom: 8px;
 			font-size: 18px;
 			@media (min-width: @screen-sm){
 				margin-top: 0px;
       }
       @media (min-width: @screen-md){
-      	margin-top: 20px;
+      	margin-top: 60px;
       }
 		}
 		p {
@@ -196,7 +211,6 @@ div.brand-pages{
 
 		.widget-html-image {
 			.image {
-				// width:575px;
 				border-radius: 2px 2px 2px 2px;
 				-moz-border-radius: 2px 2px 2px 2px;
 				-webkit-border-radius: 2px 2px 2px 2px;
@@ -223,18 +237,18 @@ div.brand-pages{
 		text-align: center;
 		.widget-html-image{
 			h2{
+				text-align: center;
 				margin-bottom: 0;
 				padding: 25px 0 32px;
-				color: black;
+				color: #113e1d;
 				font-size: 30px;
-				text-transform: uppercase;
 			}
 		}
 		.widget-slider{
 			padding-bottom: 15px;
 			&.carousel{
 				img { width:165px;
-						height: 240px;}
+					}
 			 .slick-slider{ 
 				 	.slick-slide{
 						padding: 0 15px;
@@ -249,7 +263,9 @@ div.brand-pages{
 			background-color: #F0F0F0;			
 		}
 		.widget-link{
-			border: 1px solid #c2c2c2;
+			border: 1px solid #004811;
+			background-color: #ffffff;
+			color:#004811;
 			display: block;
 			padding: 0;
 			line-height: 42px;
@@ -262,7 +278,7 @@ div.brand-pages{
 			}
 		}
 		.rbp-icon{
-			background: transparent url(../../images/brand-pages/thermann/download.svg) no-repeat;
+			background: transparent url(../../images/brand-pages/graf/download.svg) no-repeat;
 			width: 75px;
 			height: 75px;
 			display: inline-block;
@@ -272,17 +288,17 @@ div.brand-pages{
 		}
 		.download{
 			.rbp-icon{
-				background-image: url(../../images/brand-pages/thermann/download.svg);
+				background-image: url(../../images/brand-pages/graf/download.svg);
 			}
 		}
 		.videos{
 			.rbp-icon{
-				background-image: url(../../images/brand-pages/thermann/video.svg);
+				background-image: url(../../images/brand-pages/graf/video.svg);
 			}
 		}
 		.website{
 			.rbp-icon{
-				background-image: url(../../images/brand-pages/thermann/website.svg);
+				background-image: url(../../images/brand-pages/graf/website.svg);
 			}
 		}
 		.widget-big-button{
@@ -318,7 +334,7 @@ div.brand-pages{
 						.transform(scale(1));
 						content: " ";
 						display: block;
-						background: transparent url(../../images/brand-pages/thermann/shadow.png) no-repeat;
+						background: transparent url(../../images/brand-pages/graf/shadow.png) no-repeat;
 						width: 76px;
 						height: 14px;
 						margin: 0 auto;
@@ -341,17 +357,19 @@ div.brand-pages{
 			}
 		}
 	}
-	.thermann-container{
-		margin-top: 50px;
-		margin-bottom: 0;
+	.visit-website {
+		border:solid 1px;
+		margin-top: 66px;
+		margin-bottom: 40px;
 		.widget-html-image{
 			.image{
 				margin: 0;
 			}
 			.rte{
+				border:solid 1px;
 				padding: 30px 0;
 				color: white;
-				background: #e41b13;
+				background: #113e1d;
 				@media (min-width: @screen-sm){
 					padding: 0;
 					max-width: 440px;
@@ -363,20 +381,25 @@ div.brand-pages{
 					margin-left: -220px;
 				}
 			}
-			h3{
-				color: white;
+			h3 {
+				color: #f58f31;
 				text-transform: uppercase;
 				margin-bottom: 10px;
-				font-size: 20px;
+				font-size: 32px;
+				font-weight: 700;
 				@media (min-width: @screen-sm){
 			    	margin-top: -15px;				
 			    	font-size: 30px;
 				}
 			}
-			a{
-				text-transform: uppercase;
+			p {
 				color: white;
-				background: #e41b13;
+				font-size: 18px;
+				font-weight: 600;
+			}
+			a {
+				color: #004811;
+				background: white;
 				height: 43px;
 				line-height: 41px;
 				padding: 0 17px;
@@ -388,6 +411,12 @@ div.brand-pages{
 				@media (min-width: @screen-sm){
 					font-size: 16px;
 				}
+			}
+			.right {
+				left:50;
+				border:solid 1px;
+				padding-left: 30px;
+				padding-top: 50px;
 			}
 		}
 	}

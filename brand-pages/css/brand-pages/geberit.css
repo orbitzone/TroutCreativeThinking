@@ -2,13 +2,13 @@
 /* Big button Widget */
 div.brand-pages {
   text-align: center;
-  color: #3a3a3a;
-  font-size: 18px;
+  color: #000000;
+  font-size: 15px;
   line-height: 27px;
   font-weight: 300;
   letter-spacing: -0.01em;
   overflow-x: hidden;
-  font-family: 'Neue Helvetica W01', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Gotham A", "Gotham B";
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -19,7 +19,7 @@ div.brand-pages h3,
 div.brand-pages h4,
 div.brand-pages h5,
 div.brand-pages h6 {
-  color: #000000;
+  color: #313131;
 }
 div.brand-pages img {
   display: block;
@@ -30,8 +30,11 @@ div.brand-pages .container-fluid {
 }
 @media (min-width: 768px) {
   div.brand-pages .container-fluid {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
+}
+div.brand-pages .header {
+  margin: 30px 0 20px 0;
 }
 div.brand-pages .half {
   margin-bottom: 30px;
@@ -39,10 +42,18 @@ div.brand-pages .half {
 div.brand-pages .widget-logo {
   padding: 0;
 }
+div.brand-pages .discover {
+  background: black;
+  padding-bottom: 50px;
+}
 div.brand-pages .discover h3 {
-  font-size: 34px;
+  width: 50%;
+  color: white;
+  font-size: 32px;
+  text-transform: uppercase;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  margin-top: 100px;
 }
 @media (min-width: 768px) {
   div.brand-pages .discover h3 {
@@ -51,7 +62,9 @@ div.brand-pages .discover h3 {
   }
 }
 div.brand-pages .discover p {
-  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  color: white;
   margin-bottom: 10px;
 }
 @media (min-width: 768px) {
@@ -59,10 +72,10 @@ div.brand-pages .discover p {
     text-align: center;
   }
 }
-div.brand-pages .thermann-video {
+div.brand-pages .geberit-video {
   margin-bottom: 60px;
 }
-div.brand-pages .thermann-video .widget-video .slide-front:before {
+div.brand-pages .geberit-video .widget-video .slide-front:before {
   content: " ";
   position: absolute;
   top: 0;
@@ -71,28 +84,28 @@ div.brand-pages .thermann-video .widget-video .slide-front:before {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
 }
-div.brand-pages .thermann-video .widget-video button.close i {
-  color: #000000;
+div.brand-pages .geberit-video .widget-video button.close i {
+  color: #313131;
 }
-div.brand-pages .thermann-video .widget-video .play .rbp-icon {
-  width: 69px;
-  height: 69px;
+div.brand-pages .geberit-video .widget-video .play .rbp-icon {
+  width: 130px;
+  height: 130px;
   margin: 0 auto;
   display: block;
-  background-image: url(../../images/brand-pages/thermann/play-btn.png);
-  background-size: 69px 69px;
+  background-image: url(../../images/brand-pages/geberit/play-btn.png);
+  background-size: 130px 130px;
 }
 @media (min-width: 768px) {
-  div.brand-pages .thermann-video .widget-video .play .rbp-icon {
+  div.brand-pages .geberit-video .widget-video .play .rbp-icon {
     width: 138px;
     height: 138px;
     background-size: 138px 138px;
   }
 }
-div.brand-pages .thermann-video .widget-video .play .rbp-icon:before {
+div.brand-pages .geberit-video .widget-video .play .rbp-icon:before {
   content: " ";
 }
-div.brand-pages .thermann-video .widget-video .play .label {
+div.brand-pages .geberit-video .widget-video .play .label {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 15px;
@@ -102,41 +115,40 @@ div.brand-pages .thermann-video .widget-video .play .label {
   transform: translateX(-50%);
 }
 @media (min-width: 768px) {
-  div.brand-pages .thermann-video .widget-video .play .label {
+  div.brand-pages .geberit-video .widget-video .play .label {
     font-size: 15px;
   }
 }
 @media (min-width: 992px) {
-  div.brand-pages .thermann-video .widget-video .play .label {
+  div.brand-pages .geberit-video .widget-video .play .label {
     font-size: 18px;
   }
 }
-div.brand-pages .thermann-video-small-btn {
+div.brand-pages .geberit-video-small-btn {
   margin-bottom: 0;
 }
-div.brand-pages .thermann-video-small-btn .widget-video {
+div.brand-pages .geberit-video-small-btn .widget-video {
   margin-bottom: 30px;
 }
-div.brand-pages .thermann-video-small-btn .widget-video .play .rbp-icon {
+div.brand-pages .geberit-video-small-btn .widget-video .play .rbp-icon {
   width: 69px;
   height: 69px;
   margin: 0 auto;
   display: block;
-  background-image: url(../../images/brand-pages/thermann/play-btn.png);
+  background-image: url(../../images/brand-pages/geberit/play-btn.png);
   background-size: 69px 69px;
 }
 @media (min-width: 992px) {
-  div.brand-pages .thermann-video-small-btn .widget-video .play .rbp-icon {
+  div.brand-pages .geberit-video-small-btn .widget-video .play .rbp-icon {
     width: 110px;
     height: 110px;
     background-size: 110px 110px;
   }
 }
-div.brand-pages .thermann-video-small-btn .widget-video .play .rbp-icon:before {
+div.brand-pages .geberit-video-small-btn .widget-video .play .rbp-icon:before {
   content: " ";
 }
 div.brand-pages .products-intro {
-  margin-top: 60px;
   margin-bottom: 56px;
 }
 div.brand-pages .products-intro h2 {
@@ -145,7 +157,7 @@ div.brand-pages .products-intro h2 {
   text-align: center;
 }
 div.brand-pages .products {
-  margin-bottom: 40px;
+  margin-bottom: 48px;
   text-align: center;
 }
 @media (min-width: 768px) {
@@ -168,6 +180,10 @@ div.brand-pages .products .row .col-sm-12,
 div.brand-pages .products .row .col-sm-6 {
   padding: 0 25px;
 }
+div.brand-pages .products ul li {
+  margin-left: 10px;
+  line-height: 26px;
+}
 div.brand-pages .products a {
   display: inline-block;
   border: 1px solid #c2c2c2;
@@ -183,9 +199,9 @@ div.brand-pages .products a {
 div.brand-pages .products h3 {
   text-transform: uppercase;
   color: #000000;
-  margin-top: 20px;
+  margin-top: 60px;
   margin-bottom: 8px;
-  font-size: 18px;
+  font-size: 30px;
 }
 @media (min-width: 768px) {
   div.brand-pages .products h3 {
@@ -194,24 +210,12 @@ div.brand-pages .products h3 {
 }
 @media (min-width: 992px) {
   div.brand-pages .products h3 {
-    margin-top: 20px;
+    margin-top: 60px;
   }
 }
 div.brand-pages .products p {
   color: #1d1d1d;
   font-weight: 300;
-}
-div.brand-pages .products .widget-html-image .image {
-  border-radius: 2px 2px 2px 2px;
-  -moz-border-radius: 2px 2px 2px 2px;
-  -webkit-border-radius: 2px 2px 2px 2px;
-  border: 1px solid #dcdcdc;
-}
-div.brand-pages .products .widget-html-image .image figcaption {
-  top: inherit;
-  bottom: 30px;
-  font-size: 25px;
-  font-weight: bold;
 }
 div.brand-pages .separator hr {
   border-color: #dcdcdc;
@@ -262,7 +266,7 @@ div.brand-pages .downloads .rte .img {
   min-height: 400px;
 }
 div.brand-pages .downloads .rbp-icon {
-  background: transparent url(../../images/brand-pages/thermann/download.svg) no-repeat;
+  background: transparent url(../../images/brand-pages/geberit/download.svg) no-repeat;
   width: 75px;
   height: 75px;
   display: inline-block;
@@ -271,13 +275,13 @@ div.brand-pages .downloads .rbp-icon:before {
   content: "";
 }
 div.brand-pages .downloads .download .rbp-icon {
-  background-image: url(../../images/brand-pages/thermann/download.svg);
+  background-image: url(../../images/brand-pages/geberit/download.svg);
 }
 div.brand-pages .downloads .videos .rbp-icon {
-  background-image: url(../../images/brand-pages/thermann/video.svg);
+  background-image: url(../../images/brand-pages/geberit/video.svg);
 }
 div.brand-pages .downloads .website .rbp-icon {
-  background-image: url(../../images/brand-pages/thermann/website.svg);
+  background-image: url(../../images/brand-pages/geberit/website.svg);
 }
 div.brand-pages .downloads .widget-big-button {
   background: #269a7b;
@@ -333,7 +337,7 @@ div.brand-pages .downloads .widget-big-button a .icon:after {
   transform: scale(1);
   content: " ";
   display: block;
-  background: transparent url(../../images/brand-pages/thermann/shadow.png) no-repeat;
+  background: transparent url(../../images/brand-pages/geberit/shadow.png) no-repeat;
   width: 76px;
   height: 14px;
   margin: 0 auto;
@@ -355,66 +359,4 @@ div.brand-pages .downloads .widget-big-button a:hover .icon:after {
   -ms-transform: scale(0.75);
   -o-transform: scale(0.75);
   transform: scale(0.75);
-}
-div.brand-pages .thermann-container {
-  margin-top: 50px;
-  margin-bottom: 0;
-}
-div.brand-pages .thermann-container .widget-html-image .image {
-  margin: 0;
-}
-div.brand-pages .thermann-container .widget-html-image .rte {
-  padding: 30px 0;
-  color: white;
-  background: #e41b13;
-}
-@media (min-width: 768px) {
-  div.brand-pages .thermann-container .widget-html-image .rte {
-    padding: 0;
-    max-width: 440px;
-    background: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
-    margin-left: -220px;
-  }
-}
-div.brand-pages .thermann-container .widget-html-image h3 {
-  color: white;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  font-size: 20px;
-}
-@media (min-width: 768px) {
-  div.brand-pages .thermann-container .widget-html-image h3 {
-    margin-top: -15px;
-    font-size: 30px;
-  }
-}
-div.brand-pages .thermann-container .widget-html-image a {
-  text-transform: uppercase;
-  color: white;
-  background: #e41b13;
-  height: 43px;
-  line-height: 41px;
-  padding: 0 17px;
-  display: inline-block;
-  font-weight: bold;
-  border: 1px solid white;
-  -webkit-transform: translateY(10px);
-  -moz-transform: translateY(10px);
-  -ms-transform: translateY(10px);
-  -o-transform: translateY(10px);
-  transform: translateY(10px);
-  font-size: 14px;
-}
-@media (min-width: 768px) {
-  div.brand-pages .thermann-container .widget-html-image a {
-    font-size: 16px;
-  }
 }

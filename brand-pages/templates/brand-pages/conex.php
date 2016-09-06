@@ -285,7 +285,7 @@
     </div>        
   </div>
     
-  <div class="container-fluid footer-ad">
+  <div class="container-fluid footer-section">
     <div class="row">
       <div class="col-xs-12">
         <!-- Begin: HTML Widget-->

@@ -258,6 +258,22 @@ div.brand-pages .downloads .widget-slider.carousel .slick-slider .slick-slide {
     padding: 0 38px;
   }
 }
+div.brand-pages .downloads .widget-slider.carousel .slick-slider .slick-prev {
+  left: -50px;
+  -webkit-transform: translateY(-50%) translateX(0);
+  -moz-transform: translateY(-50%) translateX(0);
+  -ms-transform: translateY(-50%) translateX(0);
+  -o-transform: translateY(-50%) translateX(0);
+  transform: translateY(-50%) translateX(0);
+}
+div.brand-pages .downloads .widget-slider.carousel .slick-slider .slick-next {
+  right: -50px;
+  -webkit-transform: translateY(-50%) translateX(0);
+  -moz-transform: translateY(-50%) translateX(0);
+  -ms-transform: translateY(-50%) translateX(0);
+  -o-transform: translateY(-50%) translateX(0);
+  transform: translateY(-50%) translateX(0);
+}
 div.brand-pages .downloads .widget-html-image,
 div.brand-pages .downloads .widget-slider {
   background-color: #ffffff;

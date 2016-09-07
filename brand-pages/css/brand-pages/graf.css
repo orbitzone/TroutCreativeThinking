@@ -255,8 +255,41 @@ div.brand-pages .downloads .widget-slider.carousel .slick-slider .slick-slide {
 }
 @media (min-width: 768px) {
   div.brand-pages .downloads .widget-slider.carousel .slick-slider .slick-slide {
-    padding: 0 38px;
+    padding: 0 20px;
   }
+}
+div.brand-pages .downloads .widget-slider.carousel .slick-slider .slick-prev,
+div.brand-pages .downloads .widget-slider.carousel .slick-slider .slick-next {
+  width: auto;
+  height: auto;
+  z-index: 999;
+  margin-top: 5px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+div.brand-pages .downloads .widget-slider.carousel .slick-slider .slick-prev:before,
+div.brand-pages .downloads .widget-slider.carousel .slick-slider .slick-next:before {
+  color: black;
+  font-size: 80px;
+}
+div.brand-pages .downloads .widget-slider.carousel .slick-slider .slick-prev {
+  left: -60px;
+  -webkit-transform: translateY(-50%) translateX(0);
+  -moz-transform: translateY(-50%) translateX(0);
+  -ms-transform: translateY(-50%) translateX(0);
+  -o-transform: translateY(-50%) translateX(0);
+  transform: translateY(-50%) translateX(0);
+}
+div.brand-pages .downloads .widget-slider.carousel .slick-slider .slick-next {
+  right: -60px;
+  -webkit-transform: translateY(-50%) translateX(0);
+  -moz-transform: translateY(-50%) translateX(0);
+  -ms-transform: translateY(-50%) translateX(0);
+  -o-transform: translateY(-50%) translateX(0);
+  transform: translateY(-50%) translateX(0);
 }
 div.brand-pages .downloads .widget-html-image,
 div.brand-pages .downloads .widget-slider {

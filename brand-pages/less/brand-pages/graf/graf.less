@@ -260,7 +260,7 @@ div.brand-pages{
 					.slick-slide{
 						padding: 0 15px;
 						@media (min-width: @screen-sm){
-							padding: 0 38px;
+							padding: 0 20px;
 						}
 					}
 					.slick-prev{
@@ -271,6 +271,29 @@ div.brand-pages{
 						right: -50px;
 						.transform(translateY(-50%) translateX(0));
 					}
+// arrow buttons
+				.slick-prev,
+				.slick-next{
+					width: auto;
+					height: auto;
+					z-index: 999;
+					margin-top: 5px;
+					.transform(translateY(-50%));
+					&:before{
+						color: @sliderArrowsColor;
+						font-size: 80px;
+					}
+				}
+				.slick-prev{
+					left: -60px;
+					.transform(translateY(-50%) translateX(0));
+				}
+				.slick-next{
+					right: -60px;
+					.transform(translateY(-50%) translateX(0));
+				}
+// . end arrows
+
 				}
 			}
 		}

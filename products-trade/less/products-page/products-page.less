@@ -56,8 +56,13 @@
 	}
 	@import "_ie.less";	
 /*THIS NEEDS TO BE ADDED TO THE MAIN REECE TEMPLATE */
-.nav > li{
-	position: static;
+.nav {
+	 > li{
+		position: static;
+		&.userDropDown{
+			position: relative;
+		}
+	}	
 }
 .subnavbar{
 	position: relative;

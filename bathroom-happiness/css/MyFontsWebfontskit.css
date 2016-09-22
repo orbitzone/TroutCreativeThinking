@@ -1,0 +1,28 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3276631, 2016-08-30T21:49:50-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Handelson-Three by Mika Melvas
+ * URL: http://www.myfonts.com/fonts/mika-melvas/handelson/three/
+ * Copyright: Copyright &#x00A9; 2016 by Mika Melvas. All rights reserved.
+ * Licensed pageviews: 1,000,000
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3276631
+ * 
+ * © 2016 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/31ff57");
+
+  
+@font-face {font-family: 'Handelson Three';src: url('../fonts/31FF57_0_0.eot');src: url('../fonts/31FF57_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/31FF57_0_0.woff2') format('woff2'),url('../fonts/31FF57_0_0.woff') format('woff'),url('../fonts/31FF57_0_0.ttf') format('truetype');}
+ 

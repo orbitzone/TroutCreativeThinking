@@ -123,6 +123,9 @@ div.brand-pages .discover p {
     text-align: left;
   }
 }
+div.brand-pages .discover .col-sm-6 + .col-sm-6 .rte {
+  max-width: 450px;
+}
 div.brand-pages .arco-video {
   margin-bottom: 60px;
 }

@@ -11,9 +11,9 @@ div.brand-pages{
 	font-weight: 300;
 	letter-spacing: -0.01em;
 	overflow-x: hidden;
-	font-family: 'Neue Helvetica W01', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-	-webkit-font-smoothing: antialiased; 
-	font-smoothing: antialiased; 
+	font-family: 'Neue Helvetica W01', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
 
 	h1,h2,h3,h4,h5,h6{
@@ -24,10 +24,14 @@ div.brand-pages{
 		margin-bottom: 30px;
 		@media (min-width: 768px){
 			margin-bottom: 60px;
+
+			.container-fluid {
+				margin-bottom: 0;
+			}
 		}
 	}
 	.half {
-		margin-bottom: 30px;	
+		margin-bottom: 30px;
 	}
 	img{
 		display: block;
@@ -40,7 +44,7 @@ div.brand-pages{
 			margin: 0 auto;
 			margin-bottom: 15px;
 			text-transform: uppercase;
-			text-align: center;			
+			text-align: center;
 		}
 		p {
 			font-size: 16px;
@@ -79,13 +83,13 @@ div.brand-pages{
 					font-weight: bold;
 					.transform(translateY(10px));
 				}
-				
+
 				.rbp-icon{
 					width: 69px;
 					height: 69px;
 					margin: 0 auto;
 					display: block;
-					background-image: url(../../images/brand-pages/walraven/play-btn.png);
+					background-image: url(../../brand-pages/walraven/play-btn.png);
 					background-size: 69px 69px;
 					@media (min-width: @screen-sm){
 						width: 110px;
@@ -109,9 +113,11 @@ div.brand-pages{
     }
   }
   .products{
+		padding-top: 48px;
     margin-bottom: 48px;
     text-align: center;
     @media (min-width: @screen-sm){
+			padding-top: 0;
       text-align: left;
       &.align-right{
         .rte{
@@ -146,7 +152,7 @@ div.brand-pages{
     h3 {
       text-transform: uppercase;
       color: #000000;
-      margin-top: 60px;
+			margin-top: 10px;
       margin-bottom: 8px;
       font-size: 18px;
       @media (min-width: @screen-sm){
@@ -181,6 +187,8 @@ div.brand-pages{
   .downloads-title{
   	margin-top: 30px;
   	margin-bottom: 0;
+		padding-left: 0;
+		padding-right: 0;
   	h2{
   		font-size: 30px;
   		margin: 0;
@@ -188,18 +196,22 @@ div.brand-pages{
   		padding-bottom: 30px;
   	}
   	.widget-html-image{
-  		background-color: #F0F0F0;  	
+  		background-color: #F0F0F0;
   	}
   }
-	.downloads { 
+	.downloads {
 		margin-bottom: 0;
 		text-align: center;
+		background-color: #F0F0F0;
+		padding-top: 30px;
+		padding-bottom: 30px;
+
 		.widget-html-image{
 			padding: 0 0 20px;
 			background-color: #F0F0F0;
 			.brochure{
 				max-width: 170px;
-				margin: 0 auto;				
+				margin: 0 auto;
 			}
 		}
 		.image{
@@ -230,5 +242,21 @@ div.brand-pages{
 				content: "";
 			}
 		}
+	}
+}
+
+.widget-logo {
+	padding-top: 0;
+}
+
+.brand-pages .downloads .widget-link{
+	height: 45px;
+	overflow: hidden;
+}
+
+.downloads .slick-slide {
+	.image, .text {
+		max-width: 240px;
+		margin: 0 auto;
 	}
 }

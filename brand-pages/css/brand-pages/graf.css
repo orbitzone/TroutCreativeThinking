@@ -95,7 +95,7 @@ div.brand-pages .graf-video .widget-video .play .rbp-icon {
   height: 69px;
   margin: 0 auto;
   display: block;
-  background-image: url(../../images/brand-pages/graf/play-btn.png);
+  background-image: url(../../brand-pages/graf/play-btn.png);
   background-size: 69px 69px;
 }
 @media (min-width: 768px) {
@@ -138,7 +138,7 @@ div.brand-pages .graf-video-small-btn .widget-video .play .rbp-icon {
   height: 69px;
   margin: 0 auto;
   display: block;
-  background-image: url(../../images/brand-pages/graf/play-btn.png);
+  background-image: url(../../brand-pages/graf/play-btn.png);
   background-size: 69px 69px;
 }
 @media (min-width: 992px) {
@@ -152,7 +152,12 @@ div.brand-pages .graf-video-small-btn .widget-video .play .rbp-icon:before {
   content: " ";
 }
 div.brand-pages .products-intro {
-  margin-bottom: 56px;
+  margin-bottom: 10px;
+}
+@media (min-width: 992px) {
+  div.brand-pages .products-intro {
+    margin-bottom: 56px;
+  }
 }
 div.brand-pages .products-intro h2 {
   font-size: 29px;
@@ -185,10 +190,9 @@ div.brand-pages .products .row .col-sm-6 {
 }
 div.brand-pages .products a {
   display: inline-block;
-  border: 1px solid #c2c2c2;
-  text-transform: uppercase;
+  border: 1px solid #004923;
   font-weight: bold;
-  color: #113e1d;
+  color: #004923;
   height: 40px;
   line-height: 38px;
   padding: 0 26px;
@@ -220,7 +224,7 @@ div.brand-pages .products .widget-html-image .image {
   border-radius: 2px 2px 2px 2px;
   -moz-border-radius: 2px 2px 2px 2px;
   -webkit-border-radius: 2px 2px 2px 2px;
-  border: 1px solid #113e1d;
+  border: 1px solid #c2c2c2;
 }
 div.brand-pages .products .widget-html-image .image figcaption {
   top: inherit;
@@ -496,4 +500,20 @@ div.brand-pages .visit-website .widget-html-image .right {
   border: solid 1px;
   padding-left: 30px;
   padding-top: 50px;
+}
+.top-banner .image {
+  margin-bottom: 0;
+}
+div.brand-pages .discover .rte h1:first-child {
+  margin-bottom: 5px;
+}
+div.brand-pages .discover .rte h1:first-child + p {
+  margin-top: 5px;
+}
+.brand-pages .widget-slider.carousel .slick-slider {
+  max-width: 900px;
+}
+.brand-pages .downloads .widget-link {
+  height: 45px;
+  overflow: hidden;
 }

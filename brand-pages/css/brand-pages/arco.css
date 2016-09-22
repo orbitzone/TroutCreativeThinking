@@ -100,14 +100,12 @@ div.brand-pages .widget-logo {
 }
 div.brand-pages .discover h3 {
   font-size: 34px;
-  max-width: 360px;
   margin: 0 auto;
   margin-bottom: 30px;
   text-align: center;
 }
 @media (min-width: 768px) {
   div.brand-pages .discover h3 {
-    max-width: 100%;
     text-align: left;
   }
 }
@@ -118,7 +116,6 @@ div.brand-pages .discover h3 {
 }
 div.brand-pages .discover p {
   text-align: center;
-  max-width: 445px;
   margin-bottom: 10px;
 }
 @media (min-width: 768px) {
@@ -146,7 +143,7 @@ div.brand-pages .arco-video .widget-video .play .rbp-icon {
   height: 69px;
   margin: 0 auto;
   display: block;
-  background-image: url(../../images/brand-pages/arco/play-btn.png);
+  background-image: url(../../brand-pages/arco/play-btn.png);
   background-size: 69px 69px;
 }
 @media (min-width: 768px) {
@@ -189,7 +186,7 @@ div.brand-pages .arco-video-small-btn .widget-video .play .rbp-icon {
   height: 69px;
   margin: 0 auto;
   display: block;
-  background-image: url(../../images/brand-pages/arco/play-btn.png);
+  background-image: url(../../brand-pages/arco/play-btn.png);
   background-size: 69px 69px;
 }
 @media (min-width: 992px) {
@@ -212,10 +209,12 @@ div.brand-pages .products-intro h2 {
 }
 div.brand-pages .products {
   margin-bottom: 48px;
+  padding-top: 48px;
   text-align: center;
 }
 @media (min-width: 768px) {
   div.brand-pages .products {
+    padding-top: 0;
     text-align: left;
   }
   div.brand-pages .products.align-right .rte {
@@ -249,7 +248,7 @@ div.brand-pages .products a {
 div.brand-pages .products h3 {
   text-transform: uppercase;
   color: #000000;
-  margin-top: 60px;
+  margin-top: 10px;
   margin-bottom: 8px;
   font-size: 18px;
 }
@@ -482,4 +481,27 @@ div.brand-pages .footer-ad .widget-html-image a {
   div.brand-pages .footer-ad .widget-html-image a {
     font-size: 16px;
   }
+}
+div.brand-pages .arco-logo {
+  margin-bottom: 0;
+}
+div.brand-pages .discover .col-sm-6 h3:first-child {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  div.brand-pages .discover .col-sm-6 h3:first-child {
+    text-align: right;
+  }
+}
+div.brand-pages .arco-tan-images img {
+  display: inline;
+}
+@media (min-width: 768px) {
+  div.brand-pages .arco-container p {
+    line-height: 0.9;
+  }
+}
+.brand-pages .downloads .widget-link {
+  height: 45px;
+  overflow: hidden;
 }

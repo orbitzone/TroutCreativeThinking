@@ -3,21 +3,30 @@
 @import "../../../bower_components/bootstrap/less/variables.less";
 @import "_variables.less";
 
+@import 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
+@font-special: Montserrat, 'Neue Helvetica W01', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
 div.brand-pages{
 	text-align: center;
 	color: @body;
+	background-color: @geberit-grey;
 	font-size: 15px;
 	line-height: 24px;
 	font-weight: 300;
 	letter-spacing: -0.01em;
 	overflow-x: hidden;
 	font-family: "Gotham A", "Gotham B";
-	-webkit-font-smoothing: antialiased; 
-	font-smoothing: antialiased; 
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
+
+	+ .site-footer {
+		margin-top: 0;
+	}
 
 	h1,h2,h3,h4,h5,h6{
 		color: @titles;
+		font-family: @font-special;
 	}
 	img{
 		display: block;
@@ -30,18 +39,49 @@ div.brand-pages{
 		}
 	}
 	.header {
-		margin-top: 30px;
+		padding-top: 30px;
+		padding-bottom: 0;
+		margin-bottom: 0;
+		max-width: none;
+		background-color: #ffffff;
+
+		> .row:first-child {
+			max-width: 1230px;
+			margin:0 auto;
+		}
 	}
 
 	.half {
-		margin-bottom: 30px;	
+		margin-bottom: 30px;
 	}
 	.widget-logo{
 		padding: 0;
 	}
 	.discover{
-		background: black;
 		padding: 20px;
+		max-width: none;
+		position: relative;
+
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 50%;
+			z-index: 1;
+			background-color: #ffffff;
+		}
+
+		> .row:first-child {
+			background-color: black;
+			max-width: 1230px;
+			position: relative;
+			z-index: 2;
+			margin:0 auto;
+		}
+
 		h3 {
 			color: white;
 			font-size: 32px;
@@ -51,10 +91,10 @@ div.brand-pages{
 			margin-top: 50px;
 			@media (min-width: @screen-sm){
 				max-width: 100%;
-				text-align: center;	
+				text-align: center;
 				margin-top:100px;
 				margin-bottom: 30px;
-				width: 50%;		
+				width: 50%;
 			}
 		}
 		p {
@@ -63,12 +103,29 @@ div.brand-pages{
 			margin-bottom: 10px;
 			@media (min-width: @screen-sm){
 				text-align: center;
-				width: 50%;	
+				width: 50%;
 			}
 		}
 	}
 	.geberit-video{
+		margin-top: 70px;
 		margin-bottom: 60px;
+
+		> .row:first-child {
+			padding-top: 30px;
+			position: relative;
+
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				top:0;
+				left:15px;
+				right:15px;
+				border-top: 1px solid @geberit-grey-border;
+			}
+		}
+
 		.widget-video{
 			.slide-front{
 				&:before{
@@ -92,7 +149,7 @@ div.brand-pages{
 					height: 130px;
 					margin: 0 auto;
 					display: block;
-					background-image: url(../../images/brand-pages/geberit/play-btn.png);
+					background-image: url(../../brand-pages/geberit/play-btn.png);
 					background-size: 130px 130px;
 					@media (min-width: @screen-sm){
 						width: 138px;
@@ -131,7 +188,7 @@ div.brand-pages{
 					height: 69px;
 					margin: 0 auto;
 					display: block;
-					background-image: url(../../images/brand-pages/geberit/play-btn.png);
+					background-image: url(../../brand-pages/geberit/play-btn.png);
 					background-size: 69px 69px;
 					@media (min-width: @screen-md){
 						width: 110px;
@@ -147,9 +204,14 @@ div.brand-pages{
 	}
 
 	.products{
-		margin-bottom: 48px;
+		margin-top: 35px;
+		padding-top: 35px;
 		text-align: center;
+		margin-bottom: 100px;
+
 		@media (min-width: @screen-sm){
+			padding-top: 0;
+			margin-top: 70px;
 			max-width: 960px;
 			text-align: left;
 			&.align-right{
@@ -173,6 +235,11 @@ div.brand-pages{
 		ul li {
 			margin-left: 20px;
 			line-height: 22px;
+			text-align: left;
+
+			@media (min-width: @screen-sm){
+				text-align: inherit;
+			}
 		}
 		a{
 			display: inline-block;
@@ -184,19 +251,19 @@ div.brand-pages{
 			line-height: 38px;
 			padding: 0 26px;
 			margin-top: 22px;
-			font-size: 15px;			
+			font-size: 15px;
 		}
 		h3 {
 			text-transform: uppercase;
 			color: #000000;
-			margin-top: 60px;
+			margin-top: 10px;
 			margin-bottom: 15px;
 			font-size: 30px;
 			@media (min-width: @screen-sm){
-				margin-top: 0px;
+				margin-top: 0;
       }
       @media (min-width: @screen-md){
-      	margin-top: 60px;
+      	margin-top: 0;
       }
 		}
 		p {
@@ -204,17 +271,20 @@ div.brand-pages{
 			font-weight: 300;
 		}
 
-	}	
+	}
 	.separator{
 		hr{
 			border-color: #dcdcdc;
 			margin-top: 11px;
 			margin-bottom: 0;
 		}
-	}	
-	.downloads { 
+	}
+	.downloads {
 		margin-bottom: 60px;
 		text-align: center;
+		background-color: @geberit-grey-light;
+		padding-top: 30px;
+		padding-bottom: 30px;
 		.widget-html-image{
 			h2{
 				margin-bottom: 0;
@@ -229,7 +299,7 @@ div.brand-pages{
 			&.carousel{
 				img { width:165px;
 						height: 240px;}
-			 .slick-slider{ 
+			 .slick-slider{
 				 	.slick-slide{
 						padding: 0 15px;
 						@media (min-width: @screen-sm){
@@ -240,7 +310,7 @@ div.brand-pages{
 			}
 		}
 		.widget-html-image, .widget-slider{
-			background-color: #F0F0F0;			
+			background-color: #F0F0F0;
 		}
 		.widget-link{
 			border: 1px solid #c2c2c2;
@@ -335,4 +405,14 @@ div.brand-pages{
 			}
 		}
 	}
+}
+
+.discover + .products {
+	margin-bottom: 0;
+}
+
+.brand-pages .downloads .widget-link{
+	height: 45px;
+	overflow: hidden;
+	font-family: @font-special;
 }

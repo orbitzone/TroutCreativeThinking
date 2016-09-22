@@ -29,6 +29,9 @@ div.brand-pages .container-fluid {
   div.brand-pages .container-fluid {
     margin-bottom: 60px;
   }
+  div.brand-pages .container-fluid .container-fluid {
+    margin-bottom: 0;
+  }
 }
 div.brand-pages .half {
   margin-bottom: 30px;
@@ -91,7 +94,7 @@ div.brand-pages .walraven-video .widget-video .play .rbp-icon {
   height: 69px;
   margin: 0 auto;
   display: block;
-  background-image: url(../../images/brand-pages/walraven/play-btn.png);
+  background-image: url(../../brand-pages/walraven/play-btn.png);
   background-size: 69px 69px;
 }
 @media (min-width: 768px) {
@@ -114,11 +117,13 @@ div.brand-pages .products-intro h2 {
   text-align: center;
 }
 div.brand-pages .products {
+  padding-top: 48px;
   margin-bottom: 48px;
   text-align: center;
 }
 @media (min-width: 768px) {
   div.brand-pages .products {
+    padding-top: 0;
     text-align: left;
   }
   div.brand-pages .products.align-right .rte {
@@ -152,7 +157,7 @@ div.brand-pages .products a {
 div.brand-pages .products h3 {
   text-transform: uppercase;
   color: #000000;
-  margin-top: 60px;
+  margin-top: 10px;
   margin-bottom: 8px;
   font-size: 18px;
 }
@@ -185,6 +190,8 @@ div.brand-pages .products .widget-html-image .image figcaption {
 div.brand-pages .downloads-title {
   margin-top: 30px;
   margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 div.brand-pages .downloads-title h2 {
   font-size: 30px;
@@ -198,6 +205,9 @@ div.brand-pages .downloads-title .widget-html-image {
 div.brand-pages .downloads {
   margin-bottom: 0;
   text-align: center;
+  background-color: #F0F0F0;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 div.brand-pages .downloads .widget-html-image {
   padding: 0 0 20px;
@@ -234,4 +244,16 @@ div.brand-pages .downloads .rbp-icon {
 }
 div.brand-pages .downloads .rbp-icon:before {
   content: "";
+}
+.widget-logo {
+  padding-top: 0;
+}
+.brand-pages .downloads .widget-link {
+  height: 45px;
+  overflow: hidden;
+}
+.downloads .slick-slide .image,
+.downloads .slick-slide .text {
+  max-width: 240px;
+  margin: 0 auto;
 }

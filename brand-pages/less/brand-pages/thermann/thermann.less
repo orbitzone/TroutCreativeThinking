@@ -3,6 +3,9 @@
 @import "../../../bower_components/bootstrap/less/variables.less";
 @import "_variables.less";
 
+@import 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
+@font-special: Montserrat, 'Neue Helvetica W01', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
 div.brand-pages{
 	text-align: center;
 	color: @body;
@@ -11,13 +14,14 @@ div.brand-pages{
 	font-weight: 300;
 	letter-spacing: -0.01em;
 	overflow-x: hidden;
-	font-family: 'Neue Helvetica W01', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-	-webkit-font-smoothing: antialiased; 
-	font-smoothing: antialiased; 
+	font-family: 'Neue Helvetica W01', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
 
 	h1,h2,h3,h4,h5,h6{
 		color: @titles;
+		font-family: @font-special;
 	}
 	img{
 		display: block;
@@ -30,7 +34,7 @@ div.brand-pages{
 		}
 	}
 	.half {
-		margin-bottom: 30px;	
+		margin-bottom: 30px;
 	}
 	.widget-logo{
 		padding: 0;
@@ -40,10 +44,10 @@ div.brand-pages{
 			font-size: 34px;
 			margin: 0 auto;
 			margin-bottom: 20px;
-			
+
 			@media (min-width: @screen-sm){
 				max-width: 100%;
-				text-align: center;				
+				text-align: center;
 			}
 		}
 		p {
@@ -79,7 +83,7 @@ div.brand-pages{
 					height: 69px;
 					margin: 0 auto;
 					display: block;
-					background-image: url(../../images/brand-pages/thermann/play-btn.png);
+					background-image: url(../../brand-pages/thermann/play-btn.png);
 					background-size: 69px 69px;
 					@media (min-width: @screen-sm){
 						width: 138px;
@@ -118,7 +122,7 @@ div.brand-pages{
 					height: 69px;
 					margin: 0 auto;
 					display: block;
-					background-image: url(../../images/brand-pages/thermann/play-btn.png);
+					background-image: url(../../brand-pages/thermann/play-btn.png);
 					background-size: 69px 69px;
 					@media (min-width: @screen-md){
 						width: 110px;
@@ -174,7 +178,7 @@ div.brand-pages{
 			line-height: 38px;
 			padding: 0 26px;
 			margin-top: 22px;
-			font-size: 15px;			
+			font-size: 15px;
 		}
 		h3 {
 			text-transform: uppercase;
@@ -199,7 +203,7 @@ div.brand-pages{
 				border-radius: 2px 2px 2px 2px;
 				-moz-border-radius: 2px 2px 2px 2px;
 				-webkit-border-radius: 2px 2px 2px 2px;
-				border: 1px solid #dcdcdc; 
+				border: 1px solid #dcdcdc;
 
 				figcaption{
 					top: inherit;
@@ -209,17 +213,21 @@ div.brand-pages{
 				}
 			}
 		}
-	}	
+	}
 	.separator{
 		hr{
 			border-color: #dcdcdc;
 			margin-top: 11px;
 			margin-bottom: 0;
 		}
-	}	
-	.downloads { 
+	}
+	.downloads {
 		margin-bottom: 60px;
 		text-align: center;
+		background-color: #F0F0F0;
+		padding-top: 30px;
+		padding-bottom: 50px;
+
 		.widget-html-image{
 			h2{
 				margin-bottom: 0;
@@ -234,7 +242,7 @@ div.brand-pages{
 			&.carousel{
 				img { width:165px;
 						height: 240px;}
-			 .slick-slider{ 
+			 .slick-slider{
 				 	.slick-slide{
 						padding: 0 15px;
 						@media (min-width: @screen-sm){
@@ -245,7 +253,7 @@ div.brand-pages{
 			}
 		}
 		.widget-html-image, .widget-slider{
-			background-color: #F0F0F0;			
+			background-color: #F0F0F0;
 		}
 		.widget-link{
 			border: 1px solid #c2c2c2;
@@ -368,7 +376,7 @@ div.brand-pages{
 				margin-bottom: 10px;
 				font-size: 20px;
 				@media (min-width: @screen-sm){
-			    	margin-top: -15px;				
+			    	margin-top: -15px;
 			    	font-size: 30px;
 			    	color: white;
 				}
@@ -391,4 +399,15 @@ div.brand-pages{
 			}
 		}
 	}
+}
+
+.thermann-initial-content h3:first-child {
+	margin-bottom: 5px;
+	margin-top: 10px;
+}
+
+.brand-pages .downloads .widget-link{
+	height: 45px;
+	overflow: hidden;
+	font-family: @font-special;
 }

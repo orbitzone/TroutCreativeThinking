@@ -1,8 +1,10 @@
 /* Video Widget*/
 /* Big button Widget */
+@import 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
 div.brand-pages {
   text-align: center;
   color: #000000;
+  background-color: #E1E1E0;
   font-size: 15px;
   line-height: 24px;
   font-weight: 300;
@@ -13,6 +15,9 @@ div.brand-pages {
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
+div.brand-pages + .site-footer {
+  margin-top: 0;
+}
 div.brand-pages h1,
 div.brand-pages h2,
 div.brand-pages h3,
@@ -20,6 +25,7 @@ div.brand-pages h4,
 div.brand-pages h5,
 div.brand-pages h6 {
   color: #313131;
+  font-family: Montserrat, 'Neue Helvetica W01', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 div.brand-pages img {
   display: block;
@@ -34,7 +40,15 @@ div.brand-pages .container-fluid {
   }
 }
 div.brand-pages .header {
-  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  max-width: none;
+  background-color: #ffffff;
+}
+div.brand-pages .header > .row:first-child {
+  max-width: 1230px;
+  margin: 0 auto;
 }
 div.brand-pages .half {
   margin-bottom: 30px;
@@ -43,8 +57,27 @@ div.brand-pages .widget-logo {
   padding: 0;
 }
 div.brand-pages .discover {
-  background: black;
   padding: 20px;
+  max-width: none;
+  position: relative;
+}
+div.brand-pages .discover:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 50%;
+  z-index: 1;
+  background-color: #ffffff;
+}
+div.brand-pages .discover > .row:first-child {
+  background-color: black;
+  max-width: 1230px;
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
 }
 div.brand-pages .discover h3 {
   color: white;
@@ -75,7 +108,21 @@ div.brand-pages .discover p {
   }
 }
 div.brand-pages .geberit-video {
+  margin-top: 70px;
   margin-bottom: 60px;
+}
+div.brand-pages .geberit-video > .row:first-child {
+  padding-top: 30px;
+  position: relative;
+}
+div.brand-pages .geberit-video > .row:first-child:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 15px;
+  right: 15px;
+  border-top: 1px solid #B6B6B6;
 }
 div.brand-pages .geberit-video .widget-video .slide-front:before {
   content: " ";
@@ -94,7 +141,7 @@ div.brand-pages .geberit-video .widget-video .play .rbp-icon {
   height: 130px;
   margin: 0 auto;
   display: block;
-  background-image: url(../../images/brand-pages/geberit/play-btn.png);
+  background-image: url(../../brand-pages/geberit/play-btn.png);
   background-size: 130px 130px;
 }
 @media (min-width: 768px) {
@@ -137,7 +184,7 @@ div.brand-pages .geberit-video-small-btn .widget-video .play .rbp-icon {
   height: 69px;
   margin: 0 auto;
   display: block;
-  background-image: url(../../images/brand-pages/geberit/play-btn.png);
+  background-image: url(../../brand-pages/geberit/play-btn.png);
   background-size: 69px 69px;
 }
 @media (min-width: 992px) {
@@ -151,11 +198,15 @@ div.brand-pages .geberit-video-small-btn .widget-video .play .rbp-icon:before {
   content: " ";
 }
 div.brand-pages .products {
-  margin-bottom: 48px;
+  margin-top: 35px;
+  padding-top: 35px;
   text-align: center;
+  margin-bottom: 100px;
 }
 @media (min-width: 768px) {
   div.brand-pages .products {
+    padding-top: 0;
+    margin-top: 70px;
     max-width: 960px;
     text-align: left;
   }
@@ -178,6 +229,12 @@ div.brand-pages .products .row .col-sm-6 {
 div.brand-pages .products ul li {
   margin-left: 20px;
   line-height: 22px;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  div.brand-pages .products ul li {
+    text-align: inherit;
+  }
 }
 div.brand-pages .products a {
   display: inline-block;
@@ -194,18 +251,18 @@ div.brand-pages .products a {
 div.brand-pages .products h3 {
   text-transform: uppercase;
   color: #000000;
-  margin-top: 60px;
+  margin-top: 10px;
   margin-bottom: 15px;
   font-size: 30px;
 }
 @media (min-width: 768px) {
   div.brand-pages .products h3 {
-    margin-top: 0px;
+    margin-top: 0;
   }
 }
 @media (min-width: 992px) {
   div.brand-pages .products h3 {
-    margin-top: 60px;
+    margin-top: 0;
   }
 }
 div.brand-pages .products p {
@@ -220,6 +277,9 @@ div.brand-pages .separator hr {
 div.brand-pages .downloads {
   margin-bottom: 60px;
   text-align: center;
+  background-color: #F0F0F0;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 div.brand-pages .downloads .widget-html-image h2 {
   margin-bottom: 0;
@@ -354,4 +414,12 @@ div.brand-pages .downloads .widget-big-button a:hover .icon:after {
   -ms-transform: scale(0.75);
   -o-transform: scale(0.75);
   transform: scale(0.75);
+}
+.discover + .products {
+  margin-bottom: 0;
+}
+.brand-pages .downloads .widget-link {
+  height: 45px;
+  overflow: hidden;
+  font-family: Montserrat, 'Neue Helvetica W01', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }

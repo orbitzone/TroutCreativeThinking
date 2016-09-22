@@ -971,6 +971,10 @@
 .widget-big-button a:hover .text {
   text-decoration: none;
 }
+@media (min-width: 768px) {
+}
+@media (min-width: 768px) {
+}
 .widget-block-five {
   clear: both;
 }

@@ -1,5 +1,6 @@
 /* Video Widget*/
 /* Big button Widget */
+@import 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
 div.brand-pages {
   text-align: center;
   color: #3a3a3a;
@@ -20,6 +21,7 @@ div.brand-pages h4,
 div.brand-pages h5,
 div.brand-pages h6 {
   color: #000000;
+  font-family: Montserrat, 'Neue Helvetica W01', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 div.brand-pages img {
   display: block;
@@ -79,7 +81,7 @@ div.brand-pages .thermann-video .widget-video .play .rbp-icon {
   height: 69px;
   margin: 0 auto;
   display: block;
-  background-image: url(../../images/brand-pages/thermann/play-btn.png);
+  background-image: url(../../brand-pages/thermann/play-btn.png);
   background-size: 69px 69px;
 }
 @media (min-width: 768px) {
@@ -122,7 +124,7 @@ div.brand-pages .thermann-video-small-btn .widget-video .play .rbp-icon {
   height: 69px;
   margin: 0 auto;
   display: block;
-  background-image: url(../../images/brand-pages/thermann/play-btn.png);
+  background-image: url(../../brand-pages/thermann/play-btn.png);
   background-size: 69px 69px;
 }
 @media (min-width: 992px) {
@@ -221,6 +223,9 @@ div.brand-pages .separator hr {
 div.brand-pages .downloads {
   margin-bottom: 60px;
   text-align: center;
+  background-color: #F0F0F0;
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
 div.brand-pages .downloads .widget-html-image h2 {
   margin-bottom: 0;
@@ -418,4 +423,13 @@ div.brand-pages .thermann-container .widget-html-image a {
   div.brand-pages .thermann-container .widget-html-image a {
     font-size: 16px;
   }
+}
+.thermann-initial-content h3:first-child {
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+.brand-pages .downloads .widget-link {
+  height: 45px;
+  overflow: hidden;
+  font-family: Montserrat, 'Neue Helvetica W01', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }

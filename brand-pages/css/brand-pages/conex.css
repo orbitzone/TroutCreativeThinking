@@ -59,7 +59,6 @@ div.brand-pages .discover h3 {
 }
 div.brand-pages .discover p {
   text-align: center;
-  max-width: 445px;
   margin-bottom: 10px;
 }
 @media (min-width: 768px) {
@@ -87,7 +86,7 @@ div.brand-pages .conex-video .widget-video .play .rbp-icon {
   height: 69px;
   margin: 0 auto;
   display: block;
-  background-image: url(../../images/brand-pages/auspex/play-btn.png);
+  background-image: url(../../brand-pages/conex/play-btn.png);
   background-size: 69px 69px;
 }
 @media (min-width: 768px) {
@@ -130,7 +129,7 @@ div.brand-pages .conex-video-small-btn .widget-video .play .rbp-icon {
   height: 69px;
   margin: 0 auto;
   display: block;
-  background-image: url(../../images/brand-pages/auspex/play-btn.png);
+  background-image: url(../../brand-pages/conex/play-btn.png);
   background-size: 69px 69px;
 }
 @media (min-width: 992px) {
@@ -144,7 +143,12 @@ div.brand-pages .conex-video-small-btn .widget-video .play .rbp-icon:before {
   content: " ";
 }
 div.brand-pages .products-intro {
-  margin-bottom: 56px;
+  margin-bottom: 0;
+}
+@media (min-width: 992px) {
+  div.brand-pages .products-intro {
+    margin-bottom: 56px;
+  }
 }
 div.brand-pages .products-intro h2 {
   font-size: 29px;
@@ -152,11 +156,13 @@ div.brand-pages .products-intro h2 {
   text-align: center;
 }
 div.brand-pages .products {
+  padding-top: 48px;
   margin-bottom: 48px;
   text-align: center;
 }
 @media (min-width: 768px) {
   div.brand-pages .products {
+    padding-top: 0;
     text-align: left;
   }
   div.brand-pages .products.align-right .rte {
@@ -190,7 +196,7 @@ div.brand-pages .products a {
 div.brand-pages .products h3 {
   text-transform: uppercase;
   color: #000000;
-  margin-top: 60px;
+  margin-top: 10px;
   margin-bottom: 8px;
   font-size: 18px;
 }
@@ -228,6 +234,9 @@ div.brand-pages .separator hr {
 div.brand-pages .downloads {
   margin-bottom: 60px;
   text-align: center;
+  background-color: #F0F0F0;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 div.brand-pages .downloads .widget-html-image h2 {
   margin-bottom: 0;
@@ -422,5 +431,17 @@ div.brand-pages .footer-ad .widget-html-image a {
 @media (min-width: 768px) {
   div.brand-pages .footer-ad .widget-html-image a {
     font-size: 16px;
+  }
+}
+.brand-pages .downloads .widget-link {
+  height: 45px;
+  overflow: hidden;
+}
+.conex-video .slide {
+  border-bottom: 15px solid #ffffff;
+}
+@media (min-width: 768px) {
+  .conex-video .slide {
+    border-bottom-width: 0;
   }
 }
